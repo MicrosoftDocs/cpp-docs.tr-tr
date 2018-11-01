@@ -1,28 +1,17 @@
 ---
-title: 'SQL: SQL ve C++ veri türleri (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'SQL: SQL ve C++ Veri Türleri (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data types [C++], SQL vs. C++
 - SQL data types [C++]
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a84bfcf4e942b96b063c1036ecca7042c552d79a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6767d009ca376d8e8579baf32f2c9af1e282abce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064348"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649507"
 ---
 # <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ Veri Türleri (ODBC)
 

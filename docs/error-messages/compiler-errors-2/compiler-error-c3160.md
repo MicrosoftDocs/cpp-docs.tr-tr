@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3160 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3160
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3160
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3160
 ms.assetid: a250c433-8adf-43b9-8dee-c3794e09b0a5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf3ecc18e1afc9b13e47ad8b20bb92f7686d0cfc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 96fd97aa5021b7e1bc5226162f9c54ff4d6211b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649754"
 ---
 # <a name="compiler-error-c3160"></a>Derleyici Hatası C3160
 

@@ -1,10 +1,6 @@
 ---
-title: CConnectionPoint sınıfı | Microsoft Docs
-ms.custom: ''
+title: CConnectionPoint sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CConnectionPoint
 - AFXDISP/CConnectionPoint
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXDISP/CConnectionPoint::GetStartPosition
 - AFXDISP/CConnectionPoint::OnAdvise
 - AFXDISP/CConnectionPoint::QuerySinkInterface
-dev_langs:
-- C++
 helpviewer_keywords:
 - CConnectionPoint [MFC], CConnectionPoint
 - CConnectionPoint [MFC], GetConnections
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a762ddfa7a724b392910e681a5ec569dc8b2652
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: efa8a7bf9e14bd93682fcc2d5802a84f1bdb1e96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407941"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629937"
 ---
 # <a name="cconnectionpoint-class"></a>CConnectionPoint sınıfı
 

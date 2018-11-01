@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK2013 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK2013
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2013
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK2013
 ms.assetid: 21408e2d-3f56-4d1f-a031-00df70785ed4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d04ce4ca8079317da090cf05d43f41e4e40a6b19
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4d932a89f1b0bde27f6de2f84b2ed103dab1b1b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041746"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620736"
 ---
 # <a name="linker-tools-error-lnk2013"></a>Bağlayıcı Araçları Hatası LNK2013
 

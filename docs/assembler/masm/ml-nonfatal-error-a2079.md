@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2079 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2079
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2079
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2079
 ms.assetid: 87003fa1-ce71-4572-9efc-06a4404860ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c5b97e515f916ea9ecc53d51d7146d50f1319f3
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 03bbb9d275f974f242eeb3ce990b56ab9f5e50ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682922"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649091"
 ---
 # <a name="ml-nonfatal-error-a2079"></a>ML Önemli Olmayan Hatası A2079
 

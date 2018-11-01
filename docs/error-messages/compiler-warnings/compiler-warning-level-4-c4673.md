@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4673 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4673
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4673
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4673
 ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ab61a71a747b1fd917db579a57700107d12da87
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ceaa5cd647dfb527713613b9ce3b5cd81a780fd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657736"
 ---
 # <a name="compiler-warning-level-4-c4673"></a>Derleyici Uyarısı (düzey 4) C4673
 

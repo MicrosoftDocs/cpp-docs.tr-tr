@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4251 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4251
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4251
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4251
 ms.assetid: a9992038-f0c2-4fc4-a9be-4509442cbc1e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d964c375adf80caef3bb5a6eb06c67ef8e3e7200
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: d2fff1d2f30c4ac80af6d5b9ca452fa5f30f5a15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649663"
 ---
 # <a name="compiler-warning-level-1-c4251"></a>Derleyici Uyarısı (düzey 1) C4251
 

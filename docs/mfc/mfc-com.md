@@ -1,14 +1,8 @@
 ---
-title: MFC COM | Microsoft Docs
-ms.custom: ''
+title: MFC COM
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - MFC COM (MFC)
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, COM support
 - MFC ActiveX controls [MFC], COM support in MFC
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ae1ccdcda4fac1cbd0660b054d792999ae449fc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a3da9e437dc9ca20aa2a02977b1c8653d68930f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079295"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645165"
 ---
 # <a name="mfc-com"></a>MFC COM
 

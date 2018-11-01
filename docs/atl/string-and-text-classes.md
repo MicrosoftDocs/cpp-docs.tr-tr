@@ -1,26 +1,17 @@
 ---
-title: ATL dize ve metin sınıfları | Microsoft Docs
-ms.custom: ''
+title: ATL dize ve metin sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - string conversion, ATL
 - string classes [ATL]
 ms.assetid: aa0cdc41-c953-4b17-82b6-59b908545571
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee52c8cd0c6259f9ad5d0aae23eb03188417057c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5fc4203c3d1c9ee975618b3df799a5dc6bde1c82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657788"
 ---
 # <a name="string-and-text-classes"></a>Dize ve metin sınıfları
 

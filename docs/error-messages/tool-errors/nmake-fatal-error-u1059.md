@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1059 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1059
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1059
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1059
 ms.assetid: b21d9198-9c63-40d0-b589-80e17294ce24
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b54919398c757bfe05f747ff57341f31decfc61
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3c148bf2feb7ba12686e00b29f5bf90cb9f2f2d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645035"
 ---
 # <a name="nmake-fatal-error-u1059"></a>NMAKE Önemli Hatası U1059
 

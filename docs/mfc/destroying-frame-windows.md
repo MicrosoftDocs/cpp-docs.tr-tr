@@ -1,14 +1,8 @@
 ---
-title: Çerçeve Windows yok etme | Microsoft Docs
-ms.custom: ''
+title: Çerçeve Pencerelerini Yok Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - PostNcDestroy
-dev_langs:
-- C++
 helpviewer_keywords:
 - Default method [MFC]
 - DestroyWindow method [MFC]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - OnClose method [MFC]
 - PostNcDestroy method [MFC]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 742ea2fedff2e4f044e46242a4152c12855ab15e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f3b3e022f869a3019f80ba5ee082ce5a959853a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645412"
 ---
 # <a name="destroying-frame-windows"></a>Çerçeve Pencerelerini Yok Etme
 

@@ -1,28 +1,17 @@
 ---
-title: implements_category (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: implements_category (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.implements_category
-dev_langs:
-- C++
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 3f56562621d217e577abcf694fccb7de14fc4b56
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a63504ce327bc2f1996c74dba9c51dc345e15abd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647167"
 ---
 # <a name="implementscategory"></a>implements_category
 

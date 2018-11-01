@@ -1,9 +1,6 @@
 ---
-title: EventTargetArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: EventTargetArray Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Details::EventTargetArray
@@ -13,8 +10,6 @@ f1_keywords:
 - event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray
 - event/Microsoft::WRL::Details::EventTargetArray::Length
 - event/Microsoft::WRL::Details::EventTargetArray::~EventTargetArray
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::EventTargetArray class
 - Microsoft::WRL::Details::EventTargetArray::AddTail method
@@ -24,17 +19,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::EventTargetArray::Length method
 - Microsoft::WRL::Details::EventTargetArray::~EventTargetArray, destructor
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 36fe16e59edbead54b01ed14dfc08699b526a03a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e4973a8bc3d7a3f5fb6a9dcb76f79d55a05456f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648034"
 ---
 # <a name="eventtargetarray-class"></a>EventTargetArray Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1168 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1168
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1168
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1168
 ms.assetid: 97ead151-fd99-46fe-9a1d-7e84dc0b8cc8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8b9f8614feb98f7e21392565aa610b7d42cd512
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: d18aacd23a7ce9ed49f12a62f8358bb6d668c778
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622124"
 ---
 # <a name="linker-tools-error-lnk1168"></a>Bağlayıcı Araçları Hatası LNK1168
 

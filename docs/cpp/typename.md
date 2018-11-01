@@ -1,27 +1,17 @@
 ---
-title: TypeName | Microsoft Docs
-ms.custom: ''
+title: typename
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - typename_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - typename template specifier
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 77e3cc6f9691cf071a420ee2659c713f9e28036f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7dbe4381465036bdd102b3be753a18451886a3d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665861"
 ---
 # <a name="typename"></a>typename
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCEditBrowseCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCEditBrowseCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCEditBrowseCtrl
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], EnableBrowseButton
 - CMFCEditBrowseCtrl [MFC], EnableFileBrowseButton
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a81275fbff7773e253bfc01d62972b340fac61c5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a16d7508f273fc444be65c1e6cc176911fd28e03
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083171"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643307"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 

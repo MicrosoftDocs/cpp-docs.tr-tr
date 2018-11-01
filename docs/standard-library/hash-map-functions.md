@@ -1,18 +1,16 @@
 ---
-title: '&lt;hash_map&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;hash_map&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - hash_map/std::swap
 - hash_map/std::swap (hash_map)
 ms.assetid: 28748cd0-71f7-41b9-b068-579183645fba
-ms.openlocfilehash: 12ceb799ccf0944b8f0e8d48975da25c39f22505
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dae2c47ef3b84247ab1747e37719a23b220b5d08
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100956"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627428"
 ---
 # <a name="lthashmapgt-functions"></a>&lt;hash_map&gt; işlevleri
 

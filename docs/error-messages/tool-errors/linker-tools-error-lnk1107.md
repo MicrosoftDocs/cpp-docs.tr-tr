@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1107 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1107
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1107
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1107
 ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73a1643d10ea9adc6ac6979eb2de023593ba8d01
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 68048d9f824283d002a4ea8b64d88f37bbeefc48
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646569"
 ---
 # <a name="linker-tools-error-lnk1107"></a>Bağlayıcı Araçları Hatası LNK1107
 

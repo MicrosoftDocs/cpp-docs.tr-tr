@@ -1,10 +1,6 @@
 ---
-title: _RTC_SetErrorType | Microsoft Docs
-ms.custom: ''
+title: _RTC_SetErrorType
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_SetErrorType
 apilocation:
@@ -22,27 +18,21 @@ apitype: DLLExport
 f1_keywords:
 - RTC_SetErrorType
 - _RTC_SetErrorType
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors
 - RTC_SetErrorType function
 - _RTC_SetErrorType function
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83395727b37ea3901e2e3c28d7adb6663f043d12
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 022079bd199477c8bca92e853ed66879c96428db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635684"
 ---
 # <a name="rtcseterrortype"></a>_RTC_SetErrorType
 
-Bir türüyle çalışma zamanı hata denetimleri (RTCs) tarafından algılanan hata ilişkilendirir. Hata işleyicinizi hataları belirtilen türe ait çıktı nasıl işler.
+Bir tür ile çalışma zamanı hata denetimleri (RTCs) tarafından algılanan bir hata ilişkilendirir. Hata işleyicinizi hata belirtilen türe ait çıktı nasıl işler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,22 +46,22 @@ int _RTC_SetErrorType(
 ### <a name="parameters"></a>Parametreler
 
 *errnum*<br/>
-Sıfır ve bir tarafından döndürülen değeri,'den arasında bir sayı [_RTC_NumErrors](rtc-numerrors.md).
+Sıfır ile bir döndürdüğü değerden daha az arasında bir sayı [_RTC_NumErrors](rtc-numerrors.md).
 
 *ErrType*<br/>
-Bu atama için bir değer *errnum*. Örneğin, kullanabilirsiniz **_CRT_ERROR**. Kullanıyorsanız **_CrtDbgReport** hata işleyicinizi olarak *ErrType* yalnızca biri tanımlanmış semboller olabilir [_CrtSetReportMode](crtsetreportmode.md). Kendi hata işleyicisine varsa ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)), kadar olabilir *ErrType*orada olarak s *errnum*s.
+Bu atama için bir değer *errnum*. Örneğin, kullanabileceğinize **_CRT_ERROR**. Kullanıyorsanız **_CrtDbgReport** işleyicinizi hata olarak *ErrType* yalnızca tanımlanmış semboller biri olabilir [_CrtSetReportMode](crtsetreportmode.md). Kendi hata işleyicisi varsa ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)), kadar olabilir *ErrType*orada olarak s *errnum*s.
 
-Bir *ErrType* _RTC_ERRTYPE_IGNORE özel bir anlamı olan **_CrtSetReportMode**; hatayı göz ardı edilir.
+Bir *ErrType* _RTC_ERRTYPE_IGNORE özel anlamı **_CrtSetReportMode**; hata yoksayıldı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Hata türü için önceki değeri *türü*.
+Hata türü için önceki değer *türü*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, tüm hataları ayarlamak *ErrType* karşılık gelen 1 = **_CRT_ERROR**. Varsayılan hata hakkında daha fazla bilgi türleri gibi **_CRT_ERROR**, bkz: [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
+Varsayılan olarak, tüm hataları kümesine *ErrType* = 1, karşılık gelen **_CRT_ERROR**. Varsayılan hata hakkında daha fazla bilgi türleri gibi **_CRT_ERROR**, bkz: [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
 
-Bu işlev çağrısı önce çalışma zamanı hata denetimi başlatma işlevlerinden birini ilk çağırmalısınız; bkz: [C çalışma zamanı kitaplığı olmadan kullanarak çalışma zamanı denetler](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
+Bu işlev çağrı yapmadan önce ilk çalışma zamanı hata denetimi başlatma işlevlerden birini çağırmanız gerekir; bkz: [kullanarak çalışma zamanı denetimleri olmadan C çalışma zamanı kitaplığı](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -79,7 +69,7 @@ Bu işlev çağrısı önce çalışma zamanı hata denetimi başlatma işlevler
 |-------------|---------------------|
 |**_RTC_SetErrorType**|\<rtcapi.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

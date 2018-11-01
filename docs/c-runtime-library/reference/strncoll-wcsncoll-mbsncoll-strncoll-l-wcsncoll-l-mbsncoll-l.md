@@ -1,10 +1,6 @@
 ---
-title: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l | Microsoft Docs
-ms.custom: ''
+title: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strncoll
 - _mbsncoll_l
@@ -40,8 +36,6 @@ f1_keywords:
 - _strncoll
 - _tcsncoll
 - mbsncoll
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strncoll_l function
 - code pages, using for string comparisons
@@ -66,23 +60,19 @@ helpviewer_keywords:
 - ftcsnccoll function
 - _wcsncoll_l function
 ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 888484a80cc7c39921b973450afdaa361518432a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fe6c3283c9379b370911cc63184535e813b96d8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658542"
 ---
 # <a name="strncoll-wcsncoll-mbsncoll-strncolll-wcsncolll-mbsncolll"></a>_strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 
-Yerel ayarlara özgü bilgileri kullanarak dizeleri karşılaştırır.
+Yerel ayara özgü bilgileri kullanarak dizeleri karşılaştırır.
 
 > [!IMPORTANT]
-> **_mbsncoll** ve **_mbsncoll_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncoll** ve **_mbsncoll_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -125,7 +115,7 @@ int _mbsncoll_l(
 ### <a name="parameters"></a>Parametreler
 
 *Dize1*, *dize2*<br/>
-Karşılaştırılacak null ile sonlandırılmış dizeler.
+Karşılaştırmak için null ile sonlandırılmış dizeler.
 
 *Sayısı*<br/>
 Karşılaştırılacak karakter sayısı.
@@ -137,19 +127,19 @@ Kullanılacak yerel ayar.
 
 Bu işlevlerin her biri alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür *Dize1* ve *dize2*aşağıdaki gibi.
 
-|Dönüş değeri|Dize2 Dize1 ilişkisi|
+|Dönüş değeri|Dize1 dize2 ile ilişkisi|
 |------------------|----------------------------------------|
-|< 0|*Dize1* olan değerinden *dize2*.|
+|< 0|*Dize1* olduğu küçüktür *dize2*.|
 |0|*Dize1* aynıdır *dize2*.|
-|> 0|*Dize1* değerinden daha büyük *dize2*.|
+|> 0|*Dize1* büyüktür *dize2*.|
 
-Bunların her biri döndürür işlevleri **_NLSCMPERROR**. Kullanılacak **_NLSCMPERROR**, STRING.h veya MBSTRING.h içerir. **_wcsncoll** ya da başarısız *Dize1* veya *dize2* harmanlama sırası etki alanının dışında olan joker karakter kodları içerir. Hata oluştuğunda **_wcsncoll** ayarlayabilir **errno** için **EINVAL**. Çağrı sırasında bir hata olup olmadığını denetlemek için **_wcsncoll**ayarlayın **errno** 0 ve denetleyin **errno** çağırdıktan sonra **_wcsncoll**.
+Bu işlevlerin her biri döndürür **_NLSCMPERROR**. Kullanılacak **_NLSCMPERROR**, STRING.h veya Mbstrıng.h ekleyin. **_wcsncoll** ya da devredebilirsiniz *Dize1* veya *dize2* harmanlama sırasının etki alanı geniş karakter kodlarını içerirse. Bir hata oluştuğunda **_wcsncoll** ayarlayabilir **errno** için **EINVAL**. Çağrı sırasında bir hata olup olmadığını denetlemek için **_wcsncoll**ayarlayın **errno** 0 ve **errno** çağırdıktan sonra **_wcsncoll**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri büyük küçük harfe duyarlı karşılaştırma ilk gerçekleştirir *sayısı* içinde karakterleri *Dize1* ve *dize2*, şu anda kullanımda kod sayfasına göre kullanın. Bu işlevler yalnızca kod sayfası karakter kümesi sırasını ve lexicographic karakter sırası arasında bir fark olduğunda ve bu fark dize karşılaştırma için ilgi olduğunda kullanın. Karakter kümesi yerel ayara bağımlı sırasıdır. Yoksa bu işlevlerin sürümleri **_l** soneki kullanım geçerli yerel ancak olan sürümleri **_l** soneki geçirilen yerel kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Bu işlevlerin her biri ilk büyük küçük harfe duyarlı bir karşılaştırmasını yapar *sayısı* öğesindeki karakterler *Dize1* ve *dize2*, şu anda kullanımda kod sayfasına göre kullanın. Bu işlevler yalnızca kod sayfasında karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda ve bu fark, dize karşılaştırması için olduğunda kullanın. Yerel ayara bağımlı karakter kümesi sırası. Sahip olmayan bu işlevlerin sürümleri **_l** soneki, geçerli yerel ayarları kullanır, ancak sahip sürümler **_l** soneki, geçirilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Tüm bu işlevlerin kendi parametreleri doğrulayın. Her iki *Dize1* veya *dize2* null işaretçinin veya *sayısı* değerinden daha büyük **INT_MAX**, geçersiz parametre işleyicisi çağrılır, bölümünde açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **_NLSCMPERROR** ve **errno** için **EINVAL**.
+Bu işlevlerin tümü kendi parametrelerini doğrular. Ya da *Dize1* veya *dize2* null bir işaretçiyse veya *sayısı* büyüktür **INT_MAX**, geçersiz parametre işleyicisi çağrılır, bölümünde anlatıldığı gibi [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **_NLSCMPERROR** ayarlayıp **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -166,7 +156,7 @@ Tüm bu işlevlerin kendi parametreleri doğrulayın. Her iki *Dize1* veya *dize
 |**_wcsncoll**, **_wcsncoll_l**|\<wchar.h > veya \<string.h >|
 |**_mbsncoll**, **_mbsncoll_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

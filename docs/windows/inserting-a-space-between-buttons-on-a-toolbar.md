@@ -1,27 +1,16 @@
 ---
-title: (C++) araç çubuğundaki düğmeler arasına boşluk koyma | Microsoft Docs
-ms.custom: ''
+title: (C++) araç çubuğundaki düğmeler arasına boşluk koyma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Toolbar editor [C++], spacing toolbar buttons
 - toolbar buttons [C++], space between buttons
 ms.assetid: 4925ea6b-5d3a-4949-a920-bf371a37e529
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c4c205d6f800682cb67749a73f57b1c35d03de61
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e60587dbbb616150f1f5d5002cb19661d938dcad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668903"
 ---
 # <a name="inserting-a-space-between-buttons-on-a-toolbar-c"></a>(C++) araç çubuğundaki düğmeler arasına boşluk koyma
 

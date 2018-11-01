@@ -1,30 +1,20 @@
 ---
-title: Görüntüleme sınıfları (Mimari) | Microsoft Docs
-ms.custom: ''
+title: Görünüm Sınıfları (Mimari)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.view
-dev_langs:
-- C++
 helpviewer_keywords:
 - form and record views [MFC]
 - view classes [MFC]
 - control views [MFC]
 - view classes [MFC], architecture
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12987a7563b685018de64201d60d0447d3a5d4cc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7855f152e340b488d64f01dbf290034e1bdbc9b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393827"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647311"
 ---
 # <a name="view-classes-architecture"></a>Görünüm Sınıfları (Mimari)
 

@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: gecikmeyi dengelemek için aşırı aboneliği kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - oversubscription, using [Concurrency Runtime]
 - using oversubscription [Concurrency Runtime]
 ms.assetid: a1011329-2f0a-4afb-b599-dd4043009a10
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24e1113dac068a20e535bee3e8fd5fa9dcfb9064
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: fc16fa5cfeddf82b9fcb0164796fb7f4c90aef15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653082"
 ---
 # <a name="how-to-use-oversubscription-to-offset-latency"></a>Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma
 

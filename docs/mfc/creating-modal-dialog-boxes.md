@@ -1,27 +1,17 @@
 ---
-title: Kalıcı iletişim kutuları oluşturma | Microsoft Docs
-ms.custom: ''
+title: Kalıcı İletişim Kutuları Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - modal dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], modal
 ms.assetid: 26c7a68c-79f6-4862-a5a8-6024984644d2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fcc449a376091c07a7fb26b81fe19752bc3bcd6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eb9aab7e8579fbbbfdf5d0f2dca9b6e6abea0066
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376650"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657355"
 ---
 # <a name="creating-modal-dialog-boxes"></a>Kalıcı İletişim Kutuları Oluşturma
 

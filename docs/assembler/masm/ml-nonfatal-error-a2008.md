@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2008 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2008
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2008
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2008
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 774cf4c2a51bf084fb63e572cc99b0c8e3cba26f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7f85a3aabb7b1955cede912168dfc04618b8f2b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630379"
 ---
 # <a name="ml-nonfatal-error-a2008"></a>ML Önemli Olmayan Hatası A2008
 

@@ -1,26 +1,16 @@
 ---
-title: Derleyici COM desteği | Microsoft Docs
-ms.custom: ''
+title: Derleyici COM Desteği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: faab8e0dafdf9121ab694c409500c08aabbb1bc8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f0b1d6280dc27641287de8fe539cd3a148048245
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646049"
 ---
 # <a name="compiler-com-support"></a>Derleyici COM Desteği
 

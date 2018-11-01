@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3211 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3211
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3211
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3211
 ms.assetid: 85e33fed-3b59-4315-97e6-20d31c6a985a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ed045d1941db85bf0c1a8bbf8d94bf0c9c08ed6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6de2129a1cdd6391245148816b29faa65d7e8721
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043436"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661231"
 ---
 # <a name="compiler-error-c3211"></a>Derleyici Hatası C3211
 

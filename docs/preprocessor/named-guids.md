@@ -1,27 +1,17 @@
 ---
-title: named_guids | Microsoft Docs
-ms.custom: ''
+title: named_guids
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - named_guids
-dev_langs:
-- C++
 helpviewer_keywords:
 - named_guids attribute
 ms.assetid: b905e5e5-07fe-4874-8993-e05b9d639045
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5eba42cd2884c233ac25a24176f7653fd1d6c257
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 93b8dd33b7c9b3ce7e9de80497dda3162507e366
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50051972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643540"
 ---
 # <a name="namedguids"></a>named_guids
 **C++ özgü**

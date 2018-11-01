@@ -1,10 +1,6 @@
 ---
-title: Cmfctoolbarınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfctoolbarınfo sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarInfo
 - AFXTOOLBAR/CMFCToolBarInfo
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID
 - AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID
 - AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarInfo [MFC], m_uiColdResID
 - CMFCToolBarInfo [MFC], m_uiDisabledResID
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CMFCToolBarInfo [MFC], m_uiMenuDisabledResID
 - CMFCToolBarInfo [MFC], m_uiMenuResID
 ms.assetid: 6dc84482-eaaa-491f-aa5d-dd7a57886b46
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7825983fbc70dafbbcc96221b8a38c3ae4e939c5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e1e460fe3efb5401227e91f49d8f7c4f6689fa27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435447"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651171"
 ---
 # <a name="cmfctoolbarinfo-class"></a>Cmfctoolbarınfo sınıfı
 

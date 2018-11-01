@@ -1,10 +1,6 @@
 ---
-title: concurrent_unordered_set sınıfı | Microsoft Docs
-ms.custom: ''
+title: concurrent_unordered_set Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_unordered_set
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set
@@ -14,21 +10,15 @@ f1_keywords:
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase
-dev_langs:
-- C++
 helpviewer_keywords:
 - concurrent_unordered_set class
 ms.assetid: c61f9a9a-4fd9-491a-9251-e300737ecf4b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b8d1e80103784260250c396fceeb7032f6414b9
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: c7a00cbb68d24cb515384645e943414b29549536
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652692"
 ---
 # <a name="concurrentunorderedset-class"></a>concurrent_unordered_set Sınıfı
 

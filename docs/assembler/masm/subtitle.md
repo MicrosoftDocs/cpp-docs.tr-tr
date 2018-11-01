@@ -1,27 +1,17 @@
 ---
-title: ALT BAŞLIK | Microsoft Docs
-ms.custom: ''
+title: SUBTITLE
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - SUBTITLE
-dev_langs:
-- C++
 helpviewer_keywords:
 - SUBTITLE directive
 ms.assetid: b882ae31-9998-46ed-bd88-6656263143e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c81bb3da0ecc73cd7634141a8c5df0cb18318ec
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8029e66b8a8c9c3b274c925c756ebca5a5ef0bf5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654161"
 ---
 # <a name="subtitle"></a>SUBTITLE
 

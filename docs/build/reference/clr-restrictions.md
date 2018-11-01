@@ -1,55 +1,45 @@
 ---
-title: / CLR kısıtlamalar | Microsoft Docs
-ms.custom: ''
+title: /clr Kısıtlamalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34d21939f51fc3d4800d5cdd887b283b7e690db6
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 205345a4261f5db8eb80b3bda6e5ea55544a33d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639357"
 ---
 # <a name="clr-restrictions"></a>/clr Kısıtlamalar
 
-Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
+Kullanımı ile ilgili aşağıdaki kısıtlamalara dikkat edin **/CLR**:
 
-- Yapılandırılmış özel durum işleyici, kullanılmasındaki kısıtlamalar vardır `_alloca` ile derleme yapılırken **/CLR**. Daha fazla bilgi için bkz: [_alloca](../../c-runtime-library/reference/alloca.md).
+- Yapılandırılmış özel durum işleyici, kullanılmasındaki kısıtlamalar vardır `_alloca` ile derleme yaparken **/CLR**. Daha fazla bilgi için [_alloca](../../c-runtime-library/reference/alloca.md).
 
-- Çalışma zamanı hata denetimleri kullanımı geçerli değil **/CLR**. Daha fazla bilgi için bkz: [nasıl yapılır: çalışma zamanı kullanmak yerel denetler](/visualstudio/debugger/how-to-use-native-run-time-checks).
+- Çalışma zamanı hata denetimleri kullanımı ile geçerli değil **/CLR**. Daha fazla bilgi için [nasıl yapılır: yerel çalışma zamanı denetimleri kullanın](/visualstudio/debugger/how-to-use-native-run-time-checks).
 
-- Zaman **/CLR** olduğundan yalnızca standart C++ söz dizimini kullanan bir program derlemek için kullanılan, satır içi derleme kullanmak için aşağıdaki yönergeleri uygulayın:
+- Zaman **/CLR** olduğundan yalnızca standart C++ söz dizimini kullanan bir programı derlemek için kullanılan, satır içi derlemenin kullanılması için aşağıdaki kurallar uygulanır:
 
-  - Yerel yığın düzeni bilgisi varsayan satır içi derleme kodu çağırma kuralları geçerli işlevi veya bilgisayarla ilgili diğer alt düzey bilgiler dışında bilgi yönetilen bir işlev için yığın çerçevesi uygulanan başarısız olabilir. Satır içi derleme kodu içeren işlevleri, yönetilmeyen işlevler oluşturulur, olmadan derlenen ayrı bir modül olarak yerleştirildi sanki **/CLR**.
+  - Yerel yığın düzeni bilgi varsayar satır içi derleme kodu, çağırma kuralları geçerli işlev veya diğer alt düzey bilgisayar bilgileri dışında bilgi yönetilen bir işlev için yığın çerçevesinin uygulanan başarısız olabilir. Satır içi derleme kodu içeren İşlevler, yönetilmeyen işlevleri oluşturulur, sanki olmadan derlendi ayrı bir modül içindeki verildikleri **/CLR**.
 
-  - Satır içi derleme kodunda kopyalama oluşturulan işlev parametreleri işlevleri desteklenmez.
+  - Satır içi derleme kodu kopyalama oluşturulmuş işlevi parametreleri işlevlerde desteklenmiyor.
 
-- [Vprintf işlevleri](../../c-runtime-library/vprintf-functions.md) ile derlenen bir programdan çağrılamaz **/CLR**.
+- [Vprintf işlevleri](../../c-runtime-library/vprintf-functions.md) ile derlenmiş bir programdan çağrılamaz **/CLR**.
 
-- [Naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) değiştiricisi/CLR altında göz ardı edilir.
+- [Naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) değiştiricisi, / CLR altında yoksayılır.
 
-- Set Çeviricisi işlevi [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) yalnızca önbellek yönetilmeyen kodunda etkiler. Bkz: [özel durum işleme](../../windows/exception-handling-cpp-component-extensions.md) daha fazla bilgi için.
+- Translator işlevi belirlediği [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) yalnızca yönetilmeyen kodda Özek durumları yakalayan etkiler. Bkz: [özel durum işleme](../../windows/exception-handling-cpp-component-extensions.md) daha fazla bilgi için.
 
 - İşlev işaretçileri karşılaştırma altında izin verilmiyor **/CLR**.
 
-- Tam olarak örneklenmiş olmayan işlevleri kullanımını altında izin verilmiyor **/CLR**.
+- Tam prototipi oluşturulmuş olmayan işlevlerin kullanımını altında izin verilmiyor **/CLR**.
 
-- Aşağıdaki derleyici seçenekleri ile desteklenmez **/CLR**:
+- Aşağıdaki derleyici seçeneklerinin ile desteklenmez **/CLR**:
 
-  - **/ EHsc** ve **/EHs** (**/CLR** gelir **/EHa** (bkz [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md))
+  - **/ EHsc** ve **EHS** (**/CLR** gelir **/eha** (bkz [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md))
 
-  - **/FP: katı** ve **/fp: dışında** (bkz [/fp (Floating-Point davranış belirtin)](../../build/reference/fp-specify-floating-point-behavior.md))
+  - **/ FP: katı** ve **/FP: except** (bkz [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md))
 
   - [/Zd](../../build/reference/z7-zi-zi-debug-information-format.md)
 
@@ -61,40 +51,40 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
 
   - [/ZI](../../build/reference/z7-zi-zi-debug-information-format.md)
 
-- Birleşimi `_STATIC_CPPLIB` önişlemci tanımı (`/D_STATIC_CPPLIB`) ve **/CLR** derleyici seçeneği desteklenmez. Tanımı statik birden çok iş parçacıklı C++ Standart desteklenmeyen kitaplığı ile bağlantı için uygulamanızı neden olacağından bunu olmasıdır. Daha fazla bilgi için bkz: [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md) konu.
+- Birleşimi `_STATIC_CPPLIB` önişlemci tanımı (`/D_STATIC_CPPLIB`) ve **/CLR** derleyici seçeneği desteklenmiyor. Uygulamanızın statik birden çok iş parçacıklı C++ Standart desteklenmeyen kitaplığı ile bağlantı tanımı neden bunu olmasıdır. Daha fazla bilgi için [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md) konu.
 
-- Kullanırken **/zı** ile **/CLR**, performans etkileri vardır. Daha fazla bilgi için bkz: [/zı](../../build/reference/z7-zi-zi-debug-information-format.md).
+- Kullanırken **/zi** ile **/CLR**, performans etkileri vardır. Daha fazla bilgi için [/zi](../../build/reference/z7-zi-zi-debug-information-format.md).
 
-- .NET Framework için geniş karakter geçirme çıktı yordamı da belirtilmeden [/ZC: wchar_t](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) veya karakter atama olmadan `__wchar_t` olarak görünmesi çıktı neden olacak bir `unsigned short int`. Örneğin:
+- Bir geniş karakter için bir .NET Framework geçirme çıkış yordamı da belirtmeden [/ZC: wchar_t](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) veya karakter atama olmadan `__wchar_t` çıkış olarak görünmesi neden olacak bir `unsigned short int`. Örneğin:
 
     ```cpp
     Console::WriteLine(L' ')              // Will output 32.
     Console::WriteLine((__wchar_t)L' ')   // Will output a space.
     ```
 
-- [/GS](../../build/reference/gs-buffer-security-check.md) ile derleme yapılırken dikkate **/CLR**, altında bir işlev olmadığı sürece `#pragma` [yönetilmeyen](../../preprocessor/managed-unmanaged.md) veya işlevi için yerel olarak derlenmelidir varsa, bu durumda derleyici üretir Varsayılan olarak kapalıdır C4793 uyarı.
+- [/GS](../../build/reference/gs-buffer-security-check.md) ile derleme yaparken göz ardı edilir **/CLR**, altında bir işlev olmadığı sürece `#pragma` [yönetilmeyen](../../preprocessor/managed-unmanaged.md) veya işlevi için yerel olarak derlenmelidir ise bu durumda derleyici üretir Varsayılan olarak kapalıdır C4793, uyarı.
 
-- Bkz: [/Entry](../../build/reference/entry-entry-point-symbol.md) yönetilen bir uygulamanın işlevi imza gereksinimlerini için.
+- Bkz: [/Entry](../../build/reference/entry-entry-point-symbol.md) işlev imzası gereksinimlerini yönetilen bir uygulama için.
 
-- Uygulamaları derlenmiş ile **/OpenMP** ve **/CLR** yalnızca bir tek appdomain işlemde çalıştırılabilir.  Bkz: [/OpenMP (OpenMP 2.0 desteğini etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md) daha fazla bilgi için.
+- İle derlenmiş uygulamaları **/OpenMP** ve **/CLR** yalnızca tek bir appdomain işleminde çalıştırılabilir.  Bkz: [/OpenMP (OpenMP 2.0 desteğini etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md) daha fazla bilgi için.
 
-- Değişken sayıda bağımsız değişkenler (varargs) almayan işlevleri yerel işlevler oluşturulur. Değişken bağımsız değişken konumda herhangi bir yönetilen veri türleri için yerel türleri başvuruya. Unutmayın <xref:System.String?displayProperty=fullName> türleridir gerçekte joker karakter dizeleri, ancak tek baytlı karakter dizeleri hazırlanırlar. Printf belirleyici %S (wchar_t *) ise, bu nedenle, %s dizeye yerine sıralama.
+- Değişken sayıda bağımsız değişkenler (varargs) almayan işlevleri yerel işlevleri oluşturulur. Değişken bağımsız değişken konumu içindeki herhangi bir yönetilen veri türleri için yerel türler sıralanacağını. Unutmayın <xref:System.String?displayProperty=fullName> türleri gerçekten geniş karakterli dizelerdir, ancak tek baytlı karakter dizeleri için hazırlanırlar. Printf belirticisi %S (wchar_t *) ise, bu nedenle, %s dizeye yerine sıralama.
 
-- Va_arg makrosu kullanırken ile derleme yapılırken beklenmeyen sonuçlar alabilirsiniz **/CLR: pure**. Daha fazla bilgi için bkz: [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. "Saf" veya "safe" olmalıdır kod C# için bağlantı noktası kurulmuş.
+- Va_arg makrosu kullanırken ile derlerken beklenmeyen sonuçlar alabilirsiniz **/CLR: pure**. Daha fazla bilgi için [va_copy, olan va_arg, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. "Saf" veya "güvenli" olmalıdır kod unity'nin için C#.
 
-- Yönetilen koddan parametre bilgilerini (işlev bağımsız değişkenleri); almak için yığın yol işlevleri çağırmalısınız değil P/Invoke katman yığın başka olması bu bilgileri neden olur.  Örneğin, proxy/stub ile derleme değil **/CLR**.
+- Size, yönetilen koddan (işlev bağımsız değişkenleri); parametre bilgilerini almak için stack size yol gösteren tüm işlevleri çağırmalıdır değil P/Invoke katmanı yığın ayırabilir, bu bilgileri neden olur.  Örneğin, proxy/saplama derlenmiyor **/CLR**.
 
-- Yönetilen kod için mümkün olduğunca derlenmiş İşlevler, ancak tüm C++ yapıları yönetilen koda çevrilebilir.  Bu belirleme, bir işlev tarafından işlevi temelinde yapılır. Yönetilen kod için işlev herhangi bir kısmını dönüştürülemiyorsa tüm işlevi yerel koda yerine dönüştürülür. Aşağıdaki durumlarda, yönetilen kod oluşturma derleyici engeller.
+- Yönetilen kod için mümkün olduğunca derlenmiş İşlevler, ancak tüm C++ yapıları yönetilen koda çevrilebilir.  Bu belirleme işlev tarafından işlevi olarak yapılır. Yönetilen kod için işlev herhangi bir bölümünü döndürülemezse tüm işlevi yerine yerel koda dönüştürülür. Aşağıdaki durumlarda derleyici, yönetilen kodu oluşturmasını engeller.
 
-  - Derleyicinin ürettiği dönüştürücüler veya yardımcı işlevleri. Yerel dönüştürücüler sanal işlev çağrıları dahil olmak üzere bir işlev işaretçisi aracılığıyla herhangi bir işlev çağrısı için oluşturulur.
+  - Derleyicinin ürettiği dönüştürücüleri veya yardımcı işlevler. Yerel dönüştürücüleri sanal işlev çağrıları dahil olmak üzere bir işlev işaretçisi aracılığıyla herhangi bir işlev çağrısı için oluşturulur.
 
   - Bu çağrı işlevleri `setjmp` veya `longjmp`.
 
-  - İşlevler doğrudan makine kaynakları yönetmek için belirli iç yordamları kullanın. Örneğin, kullanımını `__enable` ve `__disable`, `_ReturnAddress` ve `_AddressOfReturnAddress`, veya multimedya iç bilgileri yerel kod tüm sonuçlanır.
+  - Makine kaynakları doğrudan yönetmek için bazı iç yordamlar kullanan işlevler. Örneğin, kullanımını `__enable` ve `__disable`, `_ReturnAddress` ve `_AddressOfReturnAddress`, veya multimedya yapı içleri yerel kodda tüm sonuç olur.
 
   - Bu izleme işlevleri `#pragma unmanaged` yönergesi. (Unutmayın ters `#pragma managed`, ayrıca desteklenir.)
 
-  - Başvuruları içeren bir işlev hizalı türleri, diğer bir deyişle, türleri kullanılarak bildirilen `__declspec(align(...))`.
+  - Başvurular içeren bir işlev hizalanmış türler, diğer bir deyişle, türleri kullanılarak bildirilen `__declspec(align(...))`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

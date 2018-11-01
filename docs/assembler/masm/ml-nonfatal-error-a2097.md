@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2097 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2097
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2097
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2097
 ms.assetid: 52f6f1f8-4eb4-4264-8619-7b9ccb20c0c7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8951a1164aee405b510f3b51a4ad2cbb103a01ec
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a617c9002e49c15105470cf85803f3edcc34e76c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626765"
 ---
 # <a name="ml-nonfatal-error-a2097"></a>ML Önemli Olmayan Hatası A2097
 

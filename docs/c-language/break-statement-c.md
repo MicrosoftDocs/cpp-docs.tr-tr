@@ -1,27 +1,17 @@
 ---
-title: Statement (C) kesme | Microsoft Docs
-ms.custom: ''
+title: break Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - break
-dev_langs:
-- C++
 helpviewer_keywords:
 - break keyword [C]
 ms.assetid: 015627c7-0924-49b2-a4d1-c77edf5eae6a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 008f45375a85a2fc62604885b850f21116c85137
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 54ece86d629fdaff0113c6f4cebaed7d1b46bb5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080382"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646985"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C)
 

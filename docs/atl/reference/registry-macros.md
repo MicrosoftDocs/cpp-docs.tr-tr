@@ -1,10 +1,6 @@
 ---
-title: Kayıt defteri makroları | Microsoft Docs
-ms.custom: ''
+title: Kayıt defteri makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcom/ATL::_ATL_STATIC_REGISTRY
 - atlcom/ATL::DECLARE_LIBID
@@ -13,21 +9,15 @@ f1_keywords:
 - atlcom/ATL::DECLARE_REGISTRY_APPID_RESOURCEID
 - atlcom/ATL::DECLARE_REGISTRY_RESOURCE
 - atlcom/ATL::DECLARE_REGISTRY_RESOURCEID
-dev_langs:
-- C++
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c10908454252b1ae381a2b96835ce09f3aa6db6f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bced900cd7bac666daf415d91a4540828c769025
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053662"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660388"
 ---
 # <a name="registry-macros"></a>Kayıt defteri makroları
 

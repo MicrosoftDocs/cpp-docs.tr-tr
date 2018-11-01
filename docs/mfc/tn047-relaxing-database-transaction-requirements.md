@@ -1,27 +1,17 @@
 ---
-title: 'TN047: Veritabanı işlem gereksinimlerini gevşetme | Microsoft Docs'
-ms.custom: ''
+title: 'TN047: Veritabanı İşlem Gereksinimlerini Gevşetme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.data
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN047
 ms.assetid: f93c51cf-a8c0-43d0-aa47-7bcb8333d693
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96f3116f503ffa0ffc461ea2c1a0bdaf8947a0be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d609576c5ffda1a3ba8021e6a459943092c40e98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427023"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658841"
 ---
 # <a name="tn047-relaxing-database-transaction-requirements"></a>TN047: Veritabanı İşlem Gereksinimlerini Gevşetme
 

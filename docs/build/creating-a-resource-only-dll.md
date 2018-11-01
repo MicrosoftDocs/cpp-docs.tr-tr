@@ -1,26 +1,16 @@
 ---
-title: Yalnızca kaynak DLL oluşturma | Microsoft Docs
-ms.custom: ''
+title: Yalnızca Kaynak DLL Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource-only DLLs [C++], creating
 - DLLs [C++], creating
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ea6590a57a336740be0a9439c959ebe32239d4e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9a31d4197e71fb6cf20a0ecfce778552357d7e06
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612920"
 ---
 # <a name="creating-a-resource-only-dll"></a>Yalnızca Kaynak DLL Oluşturma
 

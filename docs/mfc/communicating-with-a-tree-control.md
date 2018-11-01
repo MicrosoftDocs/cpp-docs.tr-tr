@@ -1,28 +1,18 @@
 ---
-title: Ağaç denetimi ile iletişim | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetimi ile İletişim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - tree controls [MFC], communicating with
 - CTreeCtrl class [MFC], calling member functions
 - communications, tree controls
 - tree controls
 ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 78bb6a6d6421a5336f8efbffc7d24a6121e208e6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a5749b76468a7ba30cd48dc3a9b61f2de7ac67b9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654196"
 ---
 # <a name="communicating-with-a-tree-control"></a>Ağaç Denetimi ile İletişim
 

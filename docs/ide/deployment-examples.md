@@ -1,27 +1,17 @@
 ---
-title: Dağıtım örnekleri | Microsoft Docs
-ms.custom: ''
+title: Dağıtım Örnekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - application deployment [C++], examples
 - deploying applications [C++], examples
 - examples [C++], deployment
 ms.assetid: a2904fea-2703-48dc-881b-5bfc1f11b67f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eebcb272a07b225aaa249e986f8fac69d0c7edf8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ad60966ca97d2c997856801c0a97c3d187538a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405534"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653917"
 ---
 # <a name="deployment-examples"></a>Dağıtım Örnekleri
 

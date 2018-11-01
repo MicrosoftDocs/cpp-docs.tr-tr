@@ -1,27 +1,17 @@
 ---
-title: _com_error::Source | Microsoft Docs
-ms.custom: ''
+title: _com_error::Source
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_error::Source
-dev_langs:
-- C++
 helpviewer_keywords:
 - Source method [C++]
 ms.assetid: 55353741-fabc-4b0c-9787-b5a69bb189f2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69baf10012a461d60c6e7ae2d95a523ec725c255
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 682070877f269967405677d027b20707c8366f61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116549"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644437"
 ---
 # <a name="comerrorsource"></a>_com_error::Source
 

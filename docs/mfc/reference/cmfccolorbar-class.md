@@ -1,10 +1,6 @@
 ---
-title: CMFCColorBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCColorBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCColorBar
 - AFXCOLORBAR/CMFCColorBar
@@ -42,8 +38,6 @@ f1_keywords:
 - AFXCOLORBAR/CMFCColorBar::SelectPalette
 - AFXCOLORBAR/CMFCColorBar::SetPropList
 - AFXCOLORBAR/CMFCColorBar::ShowCommandMessageString
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCColorBar [MFC], CMFCColorBar
 - CMFCColorBar [MFC], ContextToSize
@@ -80,16 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 309d3eb7c7bdfffed387293835926e549c00cfcd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6dc3044d1ca402ca099184eced2e5615ff161804
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054351"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636884"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 

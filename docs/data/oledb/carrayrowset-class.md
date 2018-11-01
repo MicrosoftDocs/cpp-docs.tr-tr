@@ -1,10 +1,6 @@
 ---
-title: CArrayRowset sınıfı | Microsoft Docs
-ms.custom: ''
+title: CArrayRowset Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.CArrayRowset<TAccessor>
 - ATL.CArrayRowset
@@ -38,8 +34,6 @@ f1_keywords:
 - m_nRowsRead
 - ATL.CArrayRowset.m_nRowsRead
 - CArrayRowset::m_nRowsRead
-dev_langs:
-- C++
 helpviewer_keywords:
 - CArrayRowset class
 - CArrayRowset class, constructor
@@ -49,17 +43,12 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 5b8613372b84423a14fd995d78ca9d4c0dd1c1ae
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 39e1a6add012097fad72e05a57cc76df72e83cc8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070386"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644853"
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset Sınıfı
 

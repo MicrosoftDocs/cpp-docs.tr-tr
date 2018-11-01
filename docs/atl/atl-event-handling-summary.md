@@ -1,25 +1,15 @@
 ---
-title: ATL olay işleme özeti | Microsoft Docs
-ms.custom: ''
+title: ATL olay işleme özeti
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling, implementing
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf676dfdc197d756a8a8e46b9a68ce4de2136284
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e2b17e7b6849163ee0e8e12696df25169e2773cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654876"
 ---
 # <a name="atl-event-handling-summary"></a>ATL olay işleme özeti
 

@@ -1,28 +1,17 @@
 ---
-title: v1_enum (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: v1_enum (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.v1_enum
-dev_langs:
-- C++
 helpviewer_keywords:
 - v1_enum attribute
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c1deb68164cdcbd93b6c4992f1c2a19b01095d57
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9771181399a1abaef2e273665e8b267a2065efea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058421"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632433"
 ---
 # <a name="v1enum"></a>v1_enum
 

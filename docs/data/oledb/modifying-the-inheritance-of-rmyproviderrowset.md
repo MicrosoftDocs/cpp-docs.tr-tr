@@ -1,28 +1,17 @@
 ---
-title: RCustomRowset devralmayı değiştirme | Microsoft Docs
-ms.custom: ''
+title: RCustomRowset devralmayı değiştirme
 ms.date: 10/26/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - RMyProviderRowset
 - inheritance [C++]
 - RCustomRowset
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 13e15b470be6f6a5af4f8012e3a70896f648e665
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 51cca65b6b55de8b628cb5d233ab06f0101f466d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216519"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637963"
 ---
 # <a name="modifying-the-inheritance-of-rcustomrowset"></a>RCustomRowset devralmayı değiştirme
 

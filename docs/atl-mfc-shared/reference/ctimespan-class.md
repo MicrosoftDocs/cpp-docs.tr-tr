@@ -1,10 +1,6 @@
 ---
-title: CTimeSpan sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTimeSpan sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTimeSpan
 - ATLTIME/ATL::CTimeSpan
@@ -19,8 +15,6 @@ f1_keywords:
 - ATLTIME/ATL::CTimeSpan::GetTotalMinutes
 - ATLTIME/ATL::CTimeSpan::GetTotalSeconds
 - ATLTIME/ATL::CTimeSpan::Serialize64
-dev_langs:
-- C++
 helpviewer_keywords:
 - elapsed time, CTimeSpan object
 - timespan
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32e6599fa19c23751beaf3545696a90a2d117248
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 6ab22b9a093a1aa9c8ae0249c036ea2bf89065f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809089"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641878"
 ---
 # <a name="ctimespan-class"></a>CTimeSpan sınıfı
 

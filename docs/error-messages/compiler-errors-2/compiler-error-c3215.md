@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3215 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3215
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3215
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3215
 ms.assetid: d0d16007-8885-42e0-b086-2d3a61f348c5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ea9b7cb22f5a3d61a661d7344673bf567f7d629
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b9a6d9cd57572f65b24656fa527725c9c605143d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093902"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628273"
 ---
 # <a name="compiler-error-c3215"></a>Derleyici Hatası C3215
 

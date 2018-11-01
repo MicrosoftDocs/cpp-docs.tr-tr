@@ -1,26 +1,16 @@
 ---
-title: NMAKE makrosu kullanma | Microsoft Docs
-ms.custom: ''
+title: NMAKE Makrosu Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros, NMAKE
 - NMAKE macros, using
 ms.assetid: 95c87fbc-76e6-48c0-8536-9bfe179f328e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0b68a5f3128b5d3780895f8080411819ed9b538
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9d8ff76e1e730b65db363749797ef9ae2062adab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645087"
 ---
 # <a name="using-an-nmake-macro"></a>NMAKE Makrosu Kullanma
 

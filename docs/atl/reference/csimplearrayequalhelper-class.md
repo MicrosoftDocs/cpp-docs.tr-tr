@@ -1,29 +1,19 @@
 ---
-title: CSimpleArrayEqualHelper sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSimpleArrayEqualHelper sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSimpleArrayEqualHelper
 - ATLSIMPCOLL/ATL::CSimpleArrayEqualHelper
 - ATLSIMPCOLL/ATL::CSimpleArrayEqualHelper::IsEqual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSimpleArrayEqualHelper class
 ms.assetid: a2b55d89-78c9-42ef-842c-5304c6d20ad6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2613a885dd5399c3655ecb853f3977be71928526
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e677a5d12918649597db9614b965118f8d6b7da6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656229"
 ---
 # <a name="csimplearrayequalhelper-class"></a>CSimpleArrayEqualHelper sınıfı
 

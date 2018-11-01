@@ -1,27 +1,17 @@
 ---
-title: geçersiz kılma (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: geçersiz kılma (C + +/ CLI ve C + +/ CX)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - overriding, override keyword [C++]
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1d97558dc50adc0bac8758d0821badff14707c04
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: be7a347e4ddc700acaf4c5a968af648195445485
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056145"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647375"
 ---
 # <a name="override--ccli-and-ccx"></a>geçersiz kılma (C + +/ CLI ve C + +/ CX)
 

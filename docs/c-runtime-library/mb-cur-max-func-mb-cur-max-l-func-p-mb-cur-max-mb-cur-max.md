@@ -1,10 +1,6 @@
 ---
-title: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max | Microsoft Docs
-ms.custom: ''
+title: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
@@ -24,24 +20,18 @@ f1_keywords:
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
 - __mb_cur_max
-dev_langs:
-- C++
 helpviewer_keywords:
 - __mb_cur_max
 - ___mb_cur_max_func
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7eb9682a648f8e302a620e3c2e0dc1631abf7945
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cb84c77ebafc7fb53c1544f9ec07db3fba6f02d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657047"
 ---
 # <a name="mbcurmaxfunc-mbcurmaxlfunc-pmbcurmax-mbcurmax"></a>___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 

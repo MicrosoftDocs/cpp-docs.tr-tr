@@ -1,29 +1,19 @@
 ---
-title: 'TN043: RFX rutinleri | Microsoft Docs'
-ms.custom: ''
+title: 'TN043: RFX Rutinleri'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - RFX
-dev_langs:
-- C++
 helpviewer_keywords:
 - RFX (record field exchange), architecture
 - TN043
 - RFX (record field exchange)
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a35fc217b6600fd701dcc1750c327ffc7f241e8e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 278351ad1cf81215f4c6033f4cff0b100adedf23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658867"
 ---
 # <a name="tn043-rfx-routines"></a>TN043: RFX Rutinleri
 

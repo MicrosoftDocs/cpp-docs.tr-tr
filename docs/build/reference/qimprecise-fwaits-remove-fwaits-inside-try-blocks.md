@@ -1,28 +1,18 @@
 ---
-title: -Qimprecise_fwaits (Try blokları içindeki fwaits'i Kaldır) | Microsoft Docs
-ms.custom: ''
+title: /Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Qimprecise_fwaits
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Qimprecise_fwaits compiler option (C++)
 - /Qimprecise_fwaits compiler option (C++)
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cad23ebdd2289791b50b0e956368b934fe0f1087
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eb01d39ccbbdac60d629f95b9eb821ca0f2f5731
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385202"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662403"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
 
@@ -50,7 +40,7 @@ Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. B
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

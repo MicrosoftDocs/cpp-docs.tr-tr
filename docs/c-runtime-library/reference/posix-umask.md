@@ -1,10 +1,6 @@
 ---
-title: umask | Microsoft Docs
-ms.custom: ''
+title: umask
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - umask
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - umask
-dev_langs:
-- C++
 helpviewer_keywords:
 - umask function
 ms.assetid: d2f697fc-08d5-4b70-9dd5-df3f5bb8b754
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ccfda3a8d6fa834984624444e33018463a5be3c3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e939282057fee1aa39fb09a4c28cc91278989827
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637170"
 ---
 # <a name="umask"></a>umask
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_umask](umask.md) veya Gelişmiş Güvenlik [_umask_s](umask-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_umask](umask.md) veya Gelişmiş güvenlikli [_umask_s](umask-s.md) yerine.

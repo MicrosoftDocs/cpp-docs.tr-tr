@@ -1,25 +1,15 @@
 ---
-title: atexit Function (C) | Microsoft Docs
-ms.custom: ''
+title: atexit İşlevi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - atexit function
 ms.assetid: 9e1a761d-52f7-4581-a790-3ff97c80f931
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64f1ac2b736a7aec440ee649fb5685199b687e9d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f2abcb3c2bfb5d0b25630832b0648787a5ee5fda
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054967"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621331"
 ---
 # <a name="atexit-function-c"></a>atexit İşlevi (C)
 

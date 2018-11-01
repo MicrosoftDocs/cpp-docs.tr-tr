@@ -1,28 +1,18 @@
 ---
-title: Özyinelemeli İşlevler | Microsoft Docs
-ms.custom: ''
+title: Özyinelemeli İşlevler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C], recursive
 - function calls, recursive
 - functions [C], calling recursively
 - recursive function calls
 ms.assetid: 59739040-3081-4006-abbc-9d8423992bce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 187c176aa90997e4841bc22e468fab079f9e8b2a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 69d7a1c82b7efb215b941aa5a6e9d94276bed529
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062767"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630132"
 ---
 # <a name="recursive-functions"></a>Özyinelemeli İşlevler
 

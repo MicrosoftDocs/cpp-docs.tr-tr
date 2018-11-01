@@ -1,9 +1,6 @@
 ---
-title: multimap (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: çoklu eşleme (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multimap
@@ -51,8 +48,6 @@ f1_keywords:
 - cliext::mutlimap::operator==
 - cliext::mutlimap::operator>
 - cliext::mutlimap::operator>=
-dev_langs:
-- C++
 helpviewer_keywords:
 - <map> header [STL/CLR]
 - <cliext/map> header [STL/CLR]
@@ -102,17 +97,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: a2bff83bd59cf4a0346c4d1b2bb6f5e39a1f47e0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9cc7dd32f222e68abb45fe8c518d9f378453b372
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419678"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641538"
 ---
 # <a name="multimap-stlclr"></a>çoklu eşleme (STL/CLR)
 

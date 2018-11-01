@@ -1,31 +1,21 @@
 ---
-title: '&lt;Harita&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Harita&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <map>
-dev_langs:
-- C++
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac523342cc175721b9c1ef33a3d8ac4cad83033b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 727938b09ae60fd72a2421c2b800d8910f82934e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659855"
 ---
-# <a name="ltmapgt"></a>&lt;eşleme&gt;
+# <a name="ltmapgt"></a>&lt;Harita&gt;
 
-Kapsayıcı şablon sınıfları harita ve multimap ve bunların destekleyen şablonları tanımlar.
+Kapsayıcı şablon sınıfları harita ve multimap ve kendi destek şablonları tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,28 +28,28 @@ Kapsayıcı şablon sınıfları harita ve multimap ve bunların destekleyen şa
 
 ### <a name="operators"></a>İşleçler
 
-|Harita sürümü|Multimap sürüm|Açıklama|
+|Harita sürümü|Multimap sürümü|Açıklama|
 |-----------------|----------------------|-----------------|
-|[operator! = (map)](../standard-library/map-operators.md#op_neq)|[operator! = (multimap)](../standard-library/map-operators.md#op_neq)|Testleri işlecinin sol tarafındaki harita veya birden çok eşleme nesnesi sağ tarafında harita veya birden çok eşleme nesnesine eşit değil.|
-|[operator < (map)](../standard-library/map-operators.md#op_eq_eq)|[operator < (multimap)](../standard-library/map-operators.md#op_eq_eq)|Testleri işlecinin sol tarafındaki harita veya birden çok eşleme nesnesi sağ tarafında harita veya birden çok eşleme nesnesi'dan küçük.|
-|[operator < = (map)](../standard-library/map-operators.md#op_lt)|[İşleç\<= (multimap)](../standard-library/map-operators.md#op_lt)|Harita veya multimap nesne işlecinin sol tarafındaki harita veya sağ tarafında multimap nesneye eşit veya daha az ise testleri.|
-|[operator == (map)](../standard-library/map-operators.md#op_eq_eq)|[operator == (multimap)](../standard-library/map-operators.md#op_eq_eq_multimap)|İşlecinin sol tarafındaki harita veya birden çok eşleme nesnesi sağ tarafında harita veya birden çok eşleme nesnesine eşitse testleri.|
-|[operator > (map)](../standard-library/map-operators.md#op_gt)|[operator > (multimap)](../standard-library/map-operators.md#op_gt_multimap)|Testleri işlecinin sol tarafındaki harita veya birden çok eşleme nesnesi sağ tarafında harita veya birden çok eşleme nesnesi değerinden daha büyük.|
-|[operator > = (map)](../standard-library/map-operators.md#op_gt_eq)|[operator > = (multimap)](../standard-library/map-operators.md#op_gt_eq_multimap)|Harita veya multimap nesne işlecinin sol tarafındaki sağ tarafında harita veya birden çok eşleme nesnesine eşit veya daha büyük ise testleri.|
+|[işleç! = (map)](../standard-library/map-operators.md#op_neq)|[işleç! = (multimap)](../standard-library/map-operators.md#op_neq)|İşlecin sol tarafındaki eşlemesi veya multimap nesne eşlemesi veya multimap nesnesinin işlecin sağ tarafındaki eşit olup olmadığını sınar.|
+|[operator < (map)](../standard-library/map-operators.md#op_eq_eq)|[operator < (multimap)](../standard-library/map-operators.md#op_eq_eq)|İşlecin sol tarafındaki eşlemesi veya multimap nesne işlecin sağ tarafındaki eşlemesi veya multimap nesneden küçük olup olmadığını sınar.|
+|[operator < = (map)](../standard-library/map-operators.md#op_lt)|[İşleç\<= (multimap)](../standard-library/map-operators.md#op_lt)|Harita veya multimap nesne işlecinin sol tarafındaki küçüktür veya eşittir harita veya işlecin sağ tarafındaki multimap nesne olup olmadığını sınar.|
+|[işleç == (map)](../standard-library/map-operators.md#op_eq_eq)|[işleç == (multimap)](../standard-library/map-operators.md#op_eq_eq_multimap)|İşlecin sol tarafındaki eşlemesi veya multimap nesnesinin işlecin sağ tarafındaki eşlemesi veya multimap nesneye eşitse olup olmadığını sınar.|
+|[operator > (map)](../standard-library/map-operators.md#op_gt)|[operator > (multimap)](../standard-library/map-operators.md#op_gt_multimap)|İşlecin sol tarafındaki eşlemesi veya multimap nesne eşlemesi veya multimap nesnesinin işlecin sağ tarafındaki büyük olup olmadığını sınar.|
+|[operator > = (map)](../standard-library/map-operators.md#op_gt_eq)|[operator > = (multimap)](../standard-library/map-operators.md#op_gt_eq_multimap)|Harita veya multimap nesne işlecinin sol tarafındaki büyük veya işlecin sağ tarafındaki eşlemesi veya multimap nesneye eşit olup olmadığını sınar.|
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
-|Harita sürümü|Multimap sürüm|Açıklama|
+|Harita sürümü|Multimap sürümü|Açıklama|
 |-----------------|----------------------|-----------------|
-|[Swap (map)](../standard-library/map-functions.md#swap)|[Swap (multimap)](../standard-library/map-functions.md#swap_multimap)|İki eşlemeleri veya multimaps öğelerini değiş tokuş eder.|
+|[Swap (map)](../standard-library/map-functions.md#swap)|[Swap (multimap)](../standard-library/map-functions.md#swap_multimap)|İki haritalar veya multimaps öğelerini birbiriyle değiştirir.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[value_compare Sınıfı](../standard-library/value-compare-class-map.md)|Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.|
-|[map Sınıfı](../standard-library/map-class.md)|Depolama ve alma verilerini öğelerin her biri benzersiz bir anahtar ile veriler otomatik olarak sıralanır sahip bir koleksiyon için kullanılır.|
-|[multimap Sınıfı](../standard-library/multimap-class.md)|Depolama ve alma verilerini öğelerin her biri hangi verileri otomatik olarak sıralanır ve anahtarları, benzersiz değerlere sahip olması gerekmez. bir anahtarı olan bir koleksiyon için kullanılır.|
+|[value_compare Sınıfı](../standard-library/value-compare-class-map.md)|Bir eşlemin öğelerini haritadaki kendi göreli sıralarını belirlemek için anahtarlarına değerlerini karşılaştırarak karşılaştıran bir işlev nesnesi sağlar.|
+|[map Sınıfı](../standard-library/map-class.md)|Öğelerin her biri benzersiz bir anahtar ile verilerin otomatik sıralamasına sahip bir koleksiyondaki verileri alma ve depolama için kullanılır.|
+|[multimap Sınıfı](../standard-library/multimap-class.md)|Öğelerin her biri hangi verileri otomatik olarak sıralanır ve anahtarları, benzersiz değerlere sahip gerekmez. bir anahtarı olan bir koleksiyondaki verileri alma ve depolama için kullanılır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

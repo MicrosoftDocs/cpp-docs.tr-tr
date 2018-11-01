@@ -1,10 +1,6 @@
 ---
-title: longjmp | Microsoft Docs
-ms.custom: ''
+title: longjmp
 ms.date: 08/14/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - longjmp
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - longjmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - restoring stack environment and execution locale
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 196f95ae134458f2eaf00ab037c3a560d1317515
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56f050b5f59767fff04586d7d985cafe6d529b83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626713"
 ---
 # <a name="longjmp"></a>longjmp
 

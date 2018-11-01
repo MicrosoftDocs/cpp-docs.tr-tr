@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3665 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3665
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3665
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3665
 ms.assetid: 893bb47e-8de1-43aa-af7d-fa47ad149ee9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16d7f64bebfda41a958edf9759359bc38352c086
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 30aaf67ac9f912059bb5726681e61feabc1e557d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644125"
 ---
 # <a name="compiler-error-c3665"></a>Derleyici Hatası C3665
 

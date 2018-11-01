@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonColorButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonColorButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonColorButton
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetDocumentColors
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetPalette
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::UpdateColor
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], CMFCRibbonColorButton
 - CMFCRibbonColorButton [MFC], AddColorsGroup
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], SetPalette
 - CMFCRibbonColorButton [MFC], UpdateColor
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca18f54cc38c81e7b78f0afe4d1bba99029404b8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f0a55fa9cb431900a0454d481a77efc4e63372ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644840"
 ---
 # <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton sınıfı
 

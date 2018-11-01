@@ -1,10 +1,6 @@
 ---
-title: CMFCMaskedEdit sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCMaskedEdit sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCMaskedEdit
 - AFXMASKEDEDIT/CMFCMaskedEdit
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars
 - AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText
 - AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCMaskedEdit [MFC], DisableMask
 - CMFCMaskedEdit [MFC], EnableGetMaskedCharsOnly
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CMFCMaskedEdit [MFC], SetWindowText
 - CMFCMaskedEdit [MFC], IsMaskedChar
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84d33c99e2b9b41a5dfca4eec08a9868190ba633
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c5625c60d6c3c5037c1ef63719c63371b0ff7934
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375600"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615078"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
 

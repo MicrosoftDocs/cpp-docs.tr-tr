@@ -1,27 +1,17 @@
 ---
-title: Komut satırı uyarısı D9025 | Microsoft Docs
-ms.custom: ''
+title: Komut Satırı Uyarısı D9025
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - D9025
-dev_langs:
-- C++
 helpviewer_keywords:
 - D9025
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5bcc7cbe6fcd8a61e15e80c43f27703957a1e88
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fb9ab3152efe565501e91fbad5ebb279c4396968
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083093"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652432"
 ---
 # <a name="command-line-warning-d9025"></a>Komut Satırı Uyarısı D9025
 

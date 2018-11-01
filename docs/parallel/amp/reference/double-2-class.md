@@ -1,10 +1,6 @@
 ---
-title: double_2 sınıfı | Microsoft Docs
-ms.custom: ''
+title: double_2 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_2::set_x
 - amp_short_vectors/Concurrency::graphics::double_2::operator+=
@@ -31,19 +27,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_2::operator-
 - amp_short_vectors/Concurrency::graphics::double_2::g
 - amp_short_vectors/Concurrency::graphics::double_2::set_y
-dev_langs:
-- C++
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2091c6d76cfd139d9e842c26bfbffb3e556b050
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1c23906c3d7bcad0e538cea8484e42ea8e89400e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649078"
 ---
 # <a name="double2-class"></a>double_2 Sınıfı
 

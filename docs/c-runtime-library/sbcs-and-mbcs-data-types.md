@@ -1,29 +1,19 @@
 ---
-title: SBCS ve MBCS veri türleri | Microsoft Docs
-ms.custom: ''
+title: SBCS ve MBCS Veri Türleri
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - MBCS
 - SBCS
-dev_langs:
-- C++
 helpviewer_keywords:
 - SBCS and MBCS data types
 - data types [C], MBCS and SBCS
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8cd45a20557eb3a7b2af3b1c2ecba3cc858af503
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9f45d888e10ad1f86d0ba395155c7fd5c6c1bf0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205266"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633460"
 ---
 # <a name="sbcs-and-mbcs-data-types"></a>SBCS ve MBCS Veri Türleri
 

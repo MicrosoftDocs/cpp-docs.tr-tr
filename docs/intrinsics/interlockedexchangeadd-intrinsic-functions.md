@@ -1,10 +1,6 @@
 ---
-title: _Interlockedexchangeadd iç işlevleri | Microsoft Docs
-ms.custom: ''
+title: _InterlockedExchangeAdd İç İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedExchangeAdd64_nf
 - _InterlockedExchangeAdd64_rel
@@ -31,8 +27,6 @@ f1_keywords:
 - _InterlockedExchangeAdd_HLEAcquire
 - _InterlockedExchangeAdd64_HLEAcquire
 - _InterlockedExchangeAdd
-dev_langs:
-- C++
 helpviewer_keywords:
 - _InterlockedExchangeAdd8_nf intrinsic
 - InterlockedExchangeAdd64_acq intrinsic
@@ -61,16 +55,12 @@ helpviewer_keywords:
 - _InterlockedExchangeAdd16_nf intrinsic
 - _InterlockedExchangeAdd64_rel intrinsic
 ms.assetid: 25809e1f-9c60-4492-9f7c-0fb59c8d13d2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ce2417af10ba5f76c1d4170e41e0c037b07419c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffdeec13f3f99e5ef3595cbfec4a66f2099cd1a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647180"
 ---
 # <a name="interlockedexchangeadd-intrinsic-functions"></a>_InterlockedExchangeAdd İç İşlevleri
 

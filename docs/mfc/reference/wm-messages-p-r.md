@@ -1,10 +1,6 @@
 ---
-title: 'WM_ iletileri: P - R | Microsoft Docs'
-ms.custom: ''
+title: 'WM_ İletileri: P - R'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ON_WM_RBUTTONUP
 - ON_WM_PALETTECHANGED
@@ -20,8 +16,6 @@ f1_keywords:
 - ON_WM_PAINTCLIPBOARD
 - ON_WM_RENDERFORMAT
 - ON_WM_QUERYDRAGICON
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_WM_RENDERFORMAT [MFC]
 - ON_WM_QUERYOPEN [MFC]
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - ON_WM_QUERYENDSESSION [MFC]
 - WM_ messages
 ms.assetid: f46962e5-8329-4f1f-9b4d-fdad2a5ce1f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd4ccbe0d27d0828f8aa54406918612778f942f4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff34f8d25a48cffd75bed6b13c5811a6cabd9c53
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636624"
 ---
 # <a name="wm-messages-p---r"></a>WM_ İletileri: P - R
 

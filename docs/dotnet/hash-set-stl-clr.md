@@ -1,9 +1,6 @@
 ---
-title: hash_set (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: hash_set (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_set
@@ -50,8 +47,6 @@ f1_keywords:
 - cliext::hash_set::value_comp
 - cliext::hash_set::value_compare
 - cliext::hash_set::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - <cliext/hash_set> header [STL/CLR]
 - hash_set class [STL/CLR]
@@ -100,17 +95,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: ef1769ae1a25907a6e9e70f3967b9ced9c5439a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3cfd4e97af8b5abf163ce88eb81b438ef4737ed5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636169"
 ---
 # <a name="hashset-stlclr"></a>hash_set (STL/CLR)
 

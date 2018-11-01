@@ -1,10 +1,6 @@
 ---
-title: j0, j1, jn | Microsoft Docs
-ms.custom: ''
+title: j0, j1, jn
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - jn
 - j0
@@ -25,24 +21,18 @@ f1_keywords:
 - jn
 - j1
 - j0
-dev_langs:
-- C++
 helpviewer_keywords:
 - jn function
 - j1 function
 - j0 function
 ms.assetid: ec8a9512-aacb-423c-a845-fc8927e6e21d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fe5f93e7e9b6e345e6a2ac4c6d348ca362ed8c2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dad9d045468a0e9d8d63565fb1480da948ac2287
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395961"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665471"
 ---
 # <a name="j0-j1-jn"></a>j0, j1, jn
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.

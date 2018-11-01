@@ -1,28 +1,18 @@
 ---
-title: Kaydırıcı bildirim iletileri | Microsoft Docs
-ms.custom: ''
+title: Kaydırıcı Bildirim İletileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSliderCtrl class [MFC], notifications
 - slider controls [MFC], notification messages
 - messages, notification
 - notifications [MFC], CSliderCtrl
 ms.assetid: b9121104-3889-4a10-92bf-f3723f1af9d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 775ca98ff19266343631ff54bac16bebfff9e264
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 250170d99bfb73c21c6288e0c2b6c31adf4dcefc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399541"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656042"
 ---
 # <a name="slider-notification-messages"></a>Kaydırıcı Bildirim İletileri
 

@@ -1,28 +1,17 @@
 ---
-title: Durum (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Durum (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.case
-dev_langs:
-- C++
 helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1e7a15d81c8efd5320cf142faa3e3f381f81abd7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1ed107b78ea5638d93a773e19de13b4c1fe1036c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648415"
 ---
 # <a name="case-c"></a>durum (C++)
 

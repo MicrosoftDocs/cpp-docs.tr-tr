@@ -1,10 +1,6 @@
 ---
-title: Zamanlayıcı sınıfı | Microsoft Docs
-ms.custom: ''
+title: süreölçer Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - timer
 - AGENTS/concurrency::timer
@@ -19,21 +15,15 @@ f1_keywords:
 - AGENTS/concurrency::timer::release_message
 - AGENTS/concurrency::timer::reserve_message
 - AGENTS/concurrency::timer::resume_propagation
-dev_langs:
-- C++
 helpviewer_keywords:
 - timer class
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e37348fe92354d2ea7be3168dc5b3c9aee9fcd63
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: beb374efe26c25fed490b7407e087e2cc46043c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163110"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659842"
 ---
 # <a name="timer-class"></a>süreölçer Sınıfı
 

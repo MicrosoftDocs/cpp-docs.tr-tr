@@ -1,31 +1,20 @@
 ---
-title: CCustomWindowsFile | Microsoft Docs
-ms.custom: ''
+title: CCustomWindowsFile
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - cmyproviderwindowsfile
 - ccustomwindowsfile
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMyProviderWindowsFile class
 - OLE DB providers, wizard-generated files
 - CCustomWindowsFile class
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: bbbde895c7c83264d0ad77bf50bfc14428cdb99f
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 008fe318ee96248dfca0c3c87bf660726beb3092
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660839"
 ---
 # <a name="ccustomwindowsfile"></a>CCustomWindowsFile
 

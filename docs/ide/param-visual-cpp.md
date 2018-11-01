@@ -1,29 +1,19 @@
 ---
-title: '&lt;param&gt; (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;param&gt; (Visual C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - param
 - <param>
-dev_langs:
-- C++
 helpviewer_keywords:
 - param C++ XML tag
 - <param> C++ XML tag
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94382cb1f2bab59fae6c397f8ad6dadee221c96b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ec570a1c8b66e12474a2d960ed1b4f4b5e21b219
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434849"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651341"
 ---
 # <a name="ltparamgt-visual-c"></a>&lt;param&gt; (Visual C++)
 

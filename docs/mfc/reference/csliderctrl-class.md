@@ -1,10 +1,6 @@
 ---
-title: CSliderCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSliderCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSliderCtrl
 - AFXCMN/CSliderCtrl
@@ -42,8 +38,6 @@ f1_keywords:
 - AFXCMN/CSliderCtrl::SetTicFreq
 - AFXCMN/CSliderCtrl::SetTipSide
 - AFXCMN/CSliderCtrl::SetToolTips
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSliderCtrl [MFC], CSliderCtrl
 - CSliderCtrl [MFC], ClearSel
@@ -80,16 +74,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b47205528006554b1bf9a38684f3573745cac113
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c8c8971e467b2b8063bb5bb5d8e953fc48bcc42e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435642"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666108"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl sınıfı
 

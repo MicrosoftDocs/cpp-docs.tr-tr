@@ -1,29 +1,19 @@
 ---
-title: __tanımlayıcı (c + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: __tanımlayıcı (C++/CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - __identifier
 - __identifier_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __identifier keyword [C++]
 ms.assetid: 348428af-afa7-4ff3-b571-acf874301cf2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ee4aa1686980d2baecd0b261a615818fc5a6c0ee
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b63b7f6fe83c7761846d1d0c70de8b1665ad2f22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082599"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641044"
 ---
 # <a name="identifier-ccli"></a>__tanımlayıcı (C++/CLI)
 

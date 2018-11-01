@@ -1,27 +1,17 @@
 ---
-title: codecvt_utf8_utf16 | Microsoft Docs
-ms.custom: ''
+title: codecvt_utf8_utf16
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - codecvt/std::cvt_utf8_utf16
-dev_langs:
-- C++
 helpviewer_keywords:
 - codecvt_utf8_utf16 class
 ms.assetid: 4c12c881-5dba-4e39-b338-0b9caff5af29
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 272e4007c3421613acfecc95fdd9548663dfceeb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 42c9c8643edc795748c1f12c5180471f281c4142
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630678"
 ---
 # <a name="codecvtutf8utf16"></a>codecvt_utf8_utf16
 

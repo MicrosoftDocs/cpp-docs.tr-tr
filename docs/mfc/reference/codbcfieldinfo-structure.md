@@ -1,28 +1,18 @@
 ---
-title: Codbcfieldınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CODBCFieldInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CODBCFieldInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC [MFC], data source information
 - CODBCFieldInfo structure [MFC]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f178791bdaf57e5678f2e30d8994c2ffd140ffc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5ad7d8f710c763b25771e3d1fa8839b5b64802ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055803"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655279"
 ---
 # <a name="codbcfieldinfo-structure"></a>CODBCFieldInfo Yapısı
 

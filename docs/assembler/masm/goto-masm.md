@@ -1,27 +1,17 @@
 ---
-title: GOTO (MASM) | Microsoft Docs
-ms.custom: ''
+title: GOTO (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - goto
-dev_langs:
-- C++
 helpviewer_keywords:
 - GOTO directive
 ms.assetid: 6a5f73e7-6784-4eae-ac52-4fc77a7f369f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0be678e2d39389cbc551c386c1890f799124b5b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a03cbda5a8ff64f6c167766f416e7744a5382ad5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654686"
 ---
 # <a name="goto-masm"></a>GOTO (MASM)
 

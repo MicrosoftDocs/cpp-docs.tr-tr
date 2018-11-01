@@ -1,25 +1,15 @@
 ---
-title: task_options sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs
-ms.custom: ''
+title: task_options Sınıfı (Eşzamanlılık Çalışma Zamanı)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - ppltasks/concurrency::task_options
-dev_langs:
-- C++
 ms.assetid: f93d146b-70f7-46ec-8c2f-c33b8bb0af69
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7dccc4fec79ad11d7d4667c93b1b9ae8362ed92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 78005e500e9fefae7fed6085e061af7ee4264d14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633109"
 ---
 # <a name="taskoptions-class-concurrency-runtime"></a>task_options Sınıfı (Eşzamanlılık Çalışma Zamanı)
 

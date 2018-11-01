@@ -1,29 +1,19 @@
 ---
-title: CMFCToolBarComboBoxEdit sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarComboBoxEdit sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarComboBoxEdit
 - AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit
 - AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarComboBoxEdit [MFC], CMFCToolBarComboBoxEdit
 ms.assetid: 4789c34a-ce58-48ba-a26f-38748b601352
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01d04960adf8de43c72972e5c46d6f549003c6e7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 317fe870c9a56a8b79307212225dbb0a0eb50324
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378962"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658412"
 ---
 # <a name="cmfctoolbarcomboboxedit-class"></a>CMFCToolBarComboBoxEdit sınıfı
 

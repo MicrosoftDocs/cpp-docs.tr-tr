@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2279 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2279
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2279
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2279
 ms.assetid: 1b5c88ef-2336-49b8-9ddb-d61f97c73e14
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d1b194476e6400618045324a14c9e4781f9ec8f0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f35e384a5b242eb28427e1ff62ac55a3e9b206c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067954"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666234"
 ---
 # <a name="compiler-error-c2279"></a>Derleyici Hatası C2279
 

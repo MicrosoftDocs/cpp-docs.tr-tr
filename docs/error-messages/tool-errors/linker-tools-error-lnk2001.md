@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK2001 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK2001
 ms.date: 05/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2001
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3da81f46514fbdd7d01ce9c2a9d8be6007301b45
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: dba197be71fc77af6d95c2ec62053928ac1627cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631666"
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 

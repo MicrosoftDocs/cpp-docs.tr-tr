@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3222 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3222
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3222
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3222
 ms.assetid: 5624bde8-2fd0-4b8b-92ce-5dfbaf91cf93
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30231f74b379cd9d69806fbd4b49ba0cb55ad871
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9f2c245e98609c8da8f5f89902d5c51bbf9d2b4f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638678"
 ---
 # <a name="compiler-error-c3222"></a>Derleyici Hatası C3222
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3662 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3662
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3662
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3662
 ms.assetid: 61bd3e41-a86b-42c0-be89-d992d3906ff1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d04705d588e22c22e607bc6e1010eeec0d9c3f41
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c8f2252c05e3e264740004f4126c7557f30b126a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657348"
 ---
 # <a name="compiler-error-c3662"></a>Derleyici Hatası C3662
 

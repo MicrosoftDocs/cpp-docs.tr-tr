@@ -1,29 +1,19 @@
 ---
-title: (C/C++) kullanım dışı | Microsoft Docs
-ms.custom: ''
+title: deprecated (C/C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.deprecated
 - deprecated_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f248c6bad724b716f38a3bc7e91677efe5ccfe9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: edbad2f666ac0c6546f03da0ffbdb87f19b7e4e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066142"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642825"
 ---
 # <a name="deprecated-cc"></a>deprecated (C/C++)
 

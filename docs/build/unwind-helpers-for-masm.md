@@ -1,23 +1,13 @@
 ---
-title: MASM için Yardımcıları Bırakma | Microsoft Docs
-ms.custom: ''
+title: MASM için Yardımcıları Bırakma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 36591f9d-43d5-47b1-ae09-e45cf127204c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dd43318d19bafa2f69514f81e82da6d303528d2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 619b0ad4927becbc90beeef514da4480a144e5e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639224"
 ---
 # <a name="unwind-helpers-for-masm"></a>MASM için Yardımcıları Bırakma
 

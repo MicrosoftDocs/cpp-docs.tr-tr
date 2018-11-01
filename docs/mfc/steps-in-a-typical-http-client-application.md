@@ -1,12 +1,6 @@
 ---
-title: Tipik bir HTTP istemci uygulamasında adımlar | Microsoft Docs
-ms.custom: ''
+title: Tipik Bir HTTP İstemci Uygulamasındaki Adımlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - HTTP client applications [MFC]
 - client applications [MFC], HTTP
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - Internet client applications [MFC], HTTP table
 - WinInet classes [MFC], HTTP
 ms.assetid: f86552e8-8acd-4b23-bdc5-0c3a247ebd74
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7d6abb44aa9c4a59c23d8dbe8d957a32dfa4cc85
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a73d220f4ab7f58960ccfe4b09f98f0cd0956406
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630795"
 ---
 # <a name="steps-in-a-typical-http-client-application"></a>Tipik Bir HTTP İstemci Uygulamasındaki Adımlar
 

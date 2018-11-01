@@ -1,10 +1,6 @@
 ---
-title: CAsyncSocket sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAsyncSocket sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAsyncSocket
 - AFXSOCK/CAsyncSocket
@@ -42,8 +38,6 @@ f1_keywords:
 - AFXSOCK/CAsyncSocket::OnReceive
 - AFXSOCK/CAsyncSocket::OnSend
 - AFXSOCK/CAsyncSocket::m_hSocket
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAsyncSocket [MFC], CAsyncSocket
 - CAsyncSocket [MFC], Accept
@@ -80,16 +74,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 562f4920da6eff5af665b8424471ca847de169c7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 29fe705292b223a0ae367d34d67a99aa60fb719c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082280"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660024"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Liste Denetim stillerini değiştirme | Microsoft Docs
-ms.custom: ''
+title: Liste Denetim Stillerini Değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - styles [MFC], CListCtrl
 - CListCtrl class [MFC], styles
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dfe08e9e1be0c7473cdf9a5ca040730423006906
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cfaae07d0bb96cbdf40de5afa701b73ae82485e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427062"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645152"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 

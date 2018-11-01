@@ -1,17 +1,11 @@
 ---
-title: _environ, _wenviron | Microsoft Docs
-ms.custom: ''
+title: _environ, _wenviron
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - environ
 - wenviron
 - _wenviron
 - _environ
-dev_langs:
-- C++
 helpviewer_keywords:
 - environ function
 - _environ function
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - process environment
 - wenviron function
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59ec0a0279c0b43b6ffdc1e5f25616c916624be2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5982aa367aa043dbe7a5c41128c3646f520d3b4a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018359"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666914"
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
 

@@ -1,14 +1,8 @@
 ---
-title: event_receiver (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: event_receiver (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.event_receiver
-dev_langs:
-- C++
 helpviewer_keywords:
 - event_receiver attribute
 - event receivers
@@ -18,17 +12,12 @@ helpviewer_keywords:
 - event sinks, creating
 - event sinks
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 95e5d65d437b60f6421978682997067d8f53a3d5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e483ece1019d4a8203215eddbc4d3b9d545328a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073961"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663209"
 ---
 # <a name="eventreceiver"></a>event_receiver
 

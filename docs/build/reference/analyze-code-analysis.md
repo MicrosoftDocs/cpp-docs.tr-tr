@@ -1,32 +1,22 @@
 ---
-title: -analyze (kod çözümleme) | Microsoft Docs
-ms.custom: ''
+title: /analyze (Kod Çözümleme)
 ms.date: 04/26/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnablePREfast
 - /analyze
 - VC.Project.VCCLCompilerTool.PREfastAdditionalOptions
 - VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins
-dev_langs:
-- C++
 helpviewer_keywords:
 - /analyze compiler option [C++]
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89f0402eedbe6e49d6ce4095dc8c91ec69e15447
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a43cce2633fc2f54374bee6b5ef7196dbb87ad55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723612"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663781"
 ---
 # <a name="analyze-code-analysis"></a>/analyze (Kod Çözümleme)
 
@@ -101,7 +91,7 @@ Daha fazla bilgi için [C/C++ genel bakış için Kod Analizi](/visualstudio/cod
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnablePREfast%2A>.
+1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnablePREfast%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

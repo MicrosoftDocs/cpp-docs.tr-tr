@@ -1,26 +1,16 @@
 ---
-title: Toplama | Microsoft Docs
-ms.custom: ''
+title: Toplama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregation [C++]
 - aggregate objects [C++]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce2fbe4a2dd566541a637459510ec8422b318c47
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d5a09dcd8c289447491ebc7111a77549166a7d00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070925"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633424"
 ---
 # <a name="aggregation"></a>Toplama
 
