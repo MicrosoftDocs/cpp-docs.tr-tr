@@ -1,14 +1,8 @@
 ---
-title: MFC'de durum çubuğu uygulaması | Microsoft Docs
-ms.custom: ''
+title: MFC'de Durum Çubuğu Uygulaması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - COldStatusBar
-dev_langs:
-- C++
 helpviewer_keywords:
 - status bars [MFC], implementing in MFC
 - CStatusBarCtrl class [MFC], and MFC status bars
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - status indicators
 - status bars [MFC], Windows 95 implementation
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e593227daabb2d2c25d593cfb58ef23ba7855be7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 25848e4467a0d767c40ffb00a1bd4d50a062d3a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496291"
 ---
 # <a name="status-bar-implementation-in-mfc"></a>MFC'de Durum Çubuğu Uygulaması
 

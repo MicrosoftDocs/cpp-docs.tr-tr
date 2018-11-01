@@ -1,10 +1,6 @@
 ---
-title: ___setlc_active_func, ___unguarded_readlc_active_add_func | Microsoft Docs
-ms.custom: ''
+title: ___setlc_active_func, ___unguarded_readlc_active_add_func
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - ___setlc_active_func
 - ___unguarded_readlc_active_add_func
@@ -20,22 +16,16 @@ apitype: DLLExport
 f1_keywords:
 - ___unguarded_readlc_active_add_func
 - ___setlc_active_func
-dev_langs:
-- C++
 helpviewer_keywords:
 - ___setlc_active_func
 - ___unguarded_readlc_active_add_func
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59ec444ae81d680bf57aa4542f231c021f1abddc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 23095bb13108ec9fde2b168035009f440e9d96f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525790"
 ---
 # <a name="setlcactivefunc-unguardedreadlcactiveaddfunc"></a>___setlc_active_func, ___unguarded_readlc_active_add_func
 

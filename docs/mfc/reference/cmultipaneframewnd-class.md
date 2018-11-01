@@ -1,10 +1,6 @@
 ---
-title: CMultiPaneFrameWnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMultiPaneFrameWnd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMultiPaneFrameWnd
 - AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd
@@ -45,8 +41,6 @@ f1_keywords:
 - AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetPreDockState
 - AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::StoreRecentDockSiteInfo
 - AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMultiPaneFrameWnd [MFC], AddPane
 - CMultiPaneFrameWnd [MFC], AddRecentPane
@@ -86,16 +80,12 @@ helpviewer_keywords:
 - CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo
 - CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ceb88a5d9ceb0265e3c86737cbe2ff27e6a34cf5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: edd7fcf24302de8ded4f3adda933c783c6997757
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504357"
 ---
 # <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd sınıfı
 

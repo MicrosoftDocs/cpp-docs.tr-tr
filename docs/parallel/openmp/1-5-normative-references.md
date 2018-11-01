@@ -1,23 +1,13 @@
 ---
-title: 1.5 örnek oluşturan başvurular | Microsoft Docs
-ms.custom: ''
+title: 1.5 Örnek Oluşturan Başvurular
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: d95e51f9-94da-4150-8e28-85d8fe24bd5f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1be82b922d673d173daabf9185b6936111abc3b8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80b1e004376d9836a561c013855e6f41d4b50620
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505293"
 ---
 # <a name="15-normative-references"></a>1.5 Örnek Oluşturan Başvurular
 

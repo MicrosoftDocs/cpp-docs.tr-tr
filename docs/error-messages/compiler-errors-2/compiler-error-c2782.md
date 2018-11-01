@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2782 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2782
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2782
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2782
 ms.assetid: 8b685422-294d-4f64-9f3d-c14eaf03a93d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01d6b5abebb765642046f2ad6e9d5f342af8e3d4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 58fb298ef188c37ebebea6b5c87fe84daeea8aa6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501393"
 ---
 # <a name="compiler-error-c2782"></a>Derleyici Hatası C2782
 

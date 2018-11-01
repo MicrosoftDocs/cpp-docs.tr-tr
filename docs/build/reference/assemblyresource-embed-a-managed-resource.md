@@ -1,15 +1,9 @@
 ---
-title: -ASSEMBLYRESOURCE (yönetilen kaynağı katıştır) | Microsoft Docs
-ms.custom: ''
+title: /ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.EmbedManagedResourceFile
 - /ASSEMBLYRESOURCE
-dev_langs:
-- C++
 helpviewer_keywords:
 - ASSEMBLYRESOURCE linker option
 - assemblies [C++]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - assemblies [C++], linking resource files
 - /ASSEMBLYRESOURCE linker option
 ms.assetid: 0ce6e1fb-921b-4b1b-a59c-d35388d789f2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec883aa1b6d9fb6ea354e218f5924e9c3562c585
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 566a667ababaa67c7aff71861b111416abbbd878
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486613"
 ---
 # <a name="assemblyresource-embed-a-managed-resource"></a>/ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)
 
@@ -80,7 +70,7 @@ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekler
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EmbedManagedResourceFile%2A>.
+1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EmbedManagedResourceFile%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

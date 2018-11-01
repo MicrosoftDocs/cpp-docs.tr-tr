@@ -1,14 +1,8 @@
 ---
-title: Bağlantı noktaları | Microsoft Docs
-ms.custom: ''
+title: Bağlantı Noktaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - IConnectionPoint
-dev_langs:
-- C++
 helpviewer_keywords:
 - IConnectionPoint interface
 - connections, connection points
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0df8ed5dd3cb918c8735f5249a08d3e0d83af61
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cddbdb30cbc5f5ddb5fa98524ad067655f262be1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517643"
 ---
 # <a name="connection-points"></a>Bağlantı Noktaları
 

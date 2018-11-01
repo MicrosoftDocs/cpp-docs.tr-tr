@@ -1,14 +1,8 @@
 ---
-title: Simge veya başka görüntü (simgeler için görüntü Düzenleyicisi) oluşturma | Microsoft Docs
-ms.custom: ''
+title: Simge veya Başka Görüntü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.bitmap
-dev_langs:
-- C++
 helpviewer_keywords:
 - bitmaps [C++]
 - images [C++], creating
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - graphics [C++], creating
 - Image editor [C++], creating images
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 43ba8086481ea2a8dde20d06b1dc143b297138f8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45a119114c26513788b2cdc134e4258e42cf896d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503308"
 ---
 # <a name="creating-an-icon-or-other-image-image-editor-for-icons"></a>Simge veya Başka Görüntü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

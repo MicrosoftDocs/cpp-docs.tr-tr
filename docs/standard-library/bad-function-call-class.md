@@ -1,27 +1,17 @@
 ---
-title: bad_function_call sınıfı | Microsoft Docs
-ms.custom: ''
+title: bad_function_call Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - functional/std::bad_function_call
-dev_langs:
-- C++
 helpviewer_keywords:
 - bad_function_call class
 ms.assetid: b70a0268-43ff-4f3b-a283-faf1cb172d4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b6a450d26480a0e89a115efc5731725f8f8b913
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6d0a3f5f5b6ac48d23b937b04b4521799ba31502
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714200"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523832"
 ---
 # <a name="badfunctioncall-class"></a>bad_function_call Sınıfı
 

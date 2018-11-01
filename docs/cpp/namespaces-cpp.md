@@ -1,15 +1,9 @@
 ---
-title: Ad alanları (C++) | Microsoft Docs
-ms.custom: ''
+title: Ad Alanları (C++)
 ms.date: 08/30/2017
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - namespace_CPP
 - using_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - namespaces [C++], C++
 - namespaces [C++]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - global namespace
 - Visual C++, namespaces
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7992402d13535e2b57516e5a3481aad16256fe29
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 532fdcb5de179bd2fdeb25091ace7210d55a2658
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508858"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 

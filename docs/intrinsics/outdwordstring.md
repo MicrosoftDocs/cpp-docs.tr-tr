@@ -1,29 +1,19 @@
 ---
-title: __outdwordstring | Microsoft Docs
-ms.custom: ''
+title: __outdwordstring
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __outdwordstring
-dev_langs:
-- C++
 helpviewer_keywords:
 - outsd instruction
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f81b423838d2daa9915dc5330d23e4ef69273bc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d94db2f59f9a3a8074331054b04cef59cebac0dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395069"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502602"
 ---
 # <a name="outdwordstring"></a>__outdwordstring
 
@@ -34,10 +24,10 @@ Oluşturur `rep outsd` gönderen yönerge `Count` başlayan doublewords `Buffer`
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outdwordstring( 
-   unsigned short Port, 
-   unsigned long* Buffer, 
-   unsigned long Count 
+void __outdwordstring( 
+   unsigned short Port, 
+   unsigned long* Buffer, 
+   unsigned long Count 
 );
 ```
 

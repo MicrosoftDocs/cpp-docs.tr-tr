@@ -1,14 +1,8 @@
 ---
-title: Süreç ve ortam denetimi | Microsoft Docs
-ms.custom: ''
+title: Süreç ve Ortam Denetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.programs
-dev_langs:
-- C++
 helpviewer_keywords:
 - processes, stopping
 - processes, administrative tasks
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - environment control routines
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0c314decf15886f8d99ed8be3b7bafe4fff3e36b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 74194311eb33a23de5643b3cb956c2e3f752dea0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085764"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525625"
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 

@@ -1,28 +1,18 @@
 ---
-title: --Öznitelikleri açıklama | Microsoft Docs
-ms.custom: ''
+title: --Özniteliklerle ilgili açıklama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - comments, Attributes
 - Attributes comment in MFC source files
 - MFC source files, Attributes comment
 - public attributes comment
 ms.assetid: 96388e11-42df-4994-aedf-decd152961a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04288cb4482ad477d0ddf69f621afc0b12b3bf93
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 33ee18400e03b55a26c4ad17e8d1ba6853ccda88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486079"
 ---
 # <a name="-attributes-comment"></a>// Özniteliklerle İlgili Açıklama
 

@@ -1,23 +1,13 @@
 ---
-title: MASM Makroları | Microsoft Docs
-ms.custom: ''
+title: MASM Makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 21410432-72fc-4795-bc93-e78123f9f14f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb436acae117c78bfa5c752b905bd3f4f910e9da
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 837541706c69f86e376463c373c070316134ebca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707856"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523255"
 ---
 # <a name="masm-macros"></a>MASM Makroları
 
@@ -39,7 +29,7 @@ Kullanımını kolaylaştırmak için [ham sözde işlemler](../build/raw-pseudo
 
 ```asm
 SkFrame struct
-Fill    dq ?; fill to 8 mod 16
+Fill    dq ?; fill to 8 mod 16
 SavedRdi dq ?; saved register RDI
 SavedRsi dq ?; saved register RSI
 SkFrame ends

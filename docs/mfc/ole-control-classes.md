@@ -1,14 +1,8 @@
 ---
-title: OLE denetim sınıfları | Microsoft Docs
-ms.custom: ''
+title: OLE Denetim Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX classes [MFC]
 - custom controls [MFC], classes
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - OLE control classes [MFC]
 - reusable component classes [MFC]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ad9ab489506964266b28a38563c366db2b0d54fa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 909da3dc7b4f0298e6e5476ed7716257cc4d101d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439087"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509576"
 ---
 # <a name="ole-control-classes"></a>OLE Denetim Sınıfları
 

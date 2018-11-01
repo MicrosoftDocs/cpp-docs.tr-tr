@@ -1,27 +1,17 @@
 ---
-title: Olay Ekleme Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Olay Ekleme Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.event.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - Add Event Wizard [C++]
 ms.assetid: bdd2a7bb-13d5-44d7-abc9-e785ba4e05ce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f83ff02329a373e6ba65315cf33f7cb21145eb48
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e8e78dce3f3f4ec9412be910cde5e0468ce533bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510779"
 ---
 # <a name="add-event-wizard"></a>Olay Ekleme Sihirbazı
 

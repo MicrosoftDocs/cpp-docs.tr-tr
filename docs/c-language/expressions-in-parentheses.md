@@ -1,28 +1,18 @@
 ---
-title: Parantezlerdeki ifadeler | Microsoft Docs
-ms.custom: ''
+title: Parantezlerdeki İfadeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - parentheses
 - expression evaluation, evaluation order
 - expressions [C++], evaluating
 - parentheses, expressions
 ms.assetid: b8636147-6982-408c-9e64-29e40678ee43
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a052dbc666be05d05753c7408b1d09643f09dc8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b58ed2483b404df957b8e9e95e41442403036c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022883"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505553"
 ---
 # <a name="expressions-in-parentheses"></a>Parantezlerdeki İfadeler
 

@@ -1,28 +1,18 @@
 ---
-title: 'Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, parallel for loops
 - converting from OpenMP to the Concurrency Runtime, parallel loops
 - parallel for loops, converting from OpenMP to the Concurrency Runtime
 - parallel loops, converting from OpenMP to the Concurrency Runtime
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5295a7e38ef511cd2703961ffe8fe6f22faa74ae
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ab80df8bfe4c06ee36e0a60db4800be68576909
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488571"
 ---
 # <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme
 

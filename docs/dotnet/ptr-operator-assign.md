@@ -1,31 +1,21 @@
 ---
-title: PTR::operator = | Microsoft Docs
-ms.custom: ''
+title: ptr::operator=
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr.operator=
 - msclr.com.ptr.operator=
 - msclr::com::ptr::operator=
 - ptr::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator=
 ms.assetid: 58619910-46c0-4db8-b183-c811b23b2df1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 54d4a0865f8570249e8130dfe85fc7be91f4270b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c127d2d599be48d4dc406f6e326211591cc8bc66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409817"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527926"
 ---
 # <a name="ptroperator"></a>ptr::operator=
 

@@ -1,10 +1,6 @@
 ---
-title: CComMultiThreadModel sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComMultiThreadModel sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComMultiThreadModel
 - ATLBASE/ATL::CComMultiThreadModel
@@ -13,23 +9,17 @@ f1_keywords:
 - ATLBASE/ATL::CComMultiThreadModel::ThreadModelNoCS
 - ATLBASE/ATL::CComMultiThreadModel::Decrement
 - ATLBASE/ATL::CComMultiThreadModel::Increment
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, multithreading
 - CComMultiThreadModel class
 - threading [ATL]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 85d36b329a28ddac09e981fa9ca0a01cb8b0bedf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ae341763ef40125057b815d2071abbebdcf08f2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060383"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508907"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel sınıfı
 

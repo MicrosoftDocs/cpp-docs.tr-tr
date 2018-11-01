@@ -1,27 +1,17 @@
 ---
-title: İşlev şablonları | Microsoft Docs
-ms.custom: ''
+title: İşlev Şablonları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function templates
 - templates, function
 - function templates, about function templates
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82c68fa22f8acda313510cf1cf18e48332576e53
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 77f3d1ee704c8094fd3bd94597311976e54ba6a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493528"
 ---
 # <a name="function-templates"></a>İşlev Şablonları
 

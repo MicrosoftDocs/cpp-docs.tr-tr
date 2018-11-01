@@ -1,29 +1,19 @@
 ---
-title: CMutex sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMutex sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMutex
 - AFXMT/CMutex
 - AFXMT/CMutex::CMutex
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23270275103faac3af48a3627a5f5833140645e2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 823f38a6292152774f72c97963b9add5d429d2f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066759"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508790"
 ---
 # <a name="cmutex-class"></a>CMutex sınıfı
 

@@ -1,27 +1,19 @@
 ---
-title: Platform::ıboxarray arabirimi | Microsoft Docs
-ms.custom: ''
+title: Platform::ıboxarray arabirimi
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Namespace not found::Platform
 - VCCORLIB/Namespace not found::Platform::Value
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::IBoxArray
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 66e3ff5a2daf0ddef41ea478b55ca2fc67298c01
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a35a8b7d9f23bcb624755353e27e52de4b873c5d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497050"
 ---
 # <a name="platformiboxarray-interface"></a>Platform::ıboxarray arabirimi
 

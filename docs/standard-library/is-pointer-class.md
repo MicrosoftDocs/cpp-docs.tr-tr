@@ -1,28 +1,18 @@
 ---
-title: is_pointer sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_pointer Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_pointer
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_pointer class
 - is_pointer
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a61276cc47e13205f0076789049881305faf0760
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 8616f0a626b12b0f7f5e515524d3087318ddcefd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492332"
 ---
 # <a name="ispointer-class"></a>is_pointer Sınıfı
 

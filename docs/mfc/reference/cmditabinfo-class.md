@@ -1,10 +1,6 @@
 ---
-title: Cmdıtabınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmdıtabınfo sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMDITabInfo
 - AFXMDICLIENTAREAWND/CMDITabInfo
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXMDICLIENTAREAWND/CMDITabInfo::m_nTabBorderSize
 - AFXMDICLIENTAREAWND/CMDITabInfo::m_style
 - AFXMDICLIENTAREAWND/CMDITabInfo::m_tabLocation
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMDITabInfo [MFC], Serialize
 - CMDITabInfo [MFC], m_bAutoColor
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 615b38cdf60b8c7756d2e822b3afdb321b541d9f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b9b45142d0fb1d53ccecad31ace7ad1a6dd4ee40
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524715"
 ---
 # <a name="cmditabinfo-class"></a>Cmdıtabınfo sınıfı
 
