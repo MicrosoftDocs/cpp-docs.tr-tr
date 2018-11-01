@@ -1,10 +1,6 @@
 ---
-title: Cmfcımagepaintarea sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfcımagepaintarea sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCImagePaintArea
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCImagePaintArea [MFC], CMFCImagePaintArea
 - CMFCImagePaintArea [MFC], GetMode
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetColor
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4de97b23f0dc41220eac03f084fed37b2d9af671
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: af1d485d6d6281e909e33176ee1ae2b736c76600
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382849"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641395"
 ---
 # <a name="cmfcimagepaintarea-class"></a>Cmfcımagepaintarea sınıfı
 

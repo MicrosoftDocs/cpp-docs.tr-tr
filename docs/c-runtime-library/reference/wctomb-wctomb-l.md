@@ -1,10 +1,6 @@
 ---
-title: wctomb, _wctomb_l | Microsoft Docs
-ms.custom: ''
+title: wctomb, _wctomb_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wctomb_l
 - wctomb
@@ -23,8 +19,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wctomb
-dev_langs:
-- C++
 helpviewer_keywords:
 - string conversion, wide characters
 - wide characters, converting
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f10422d8efcebec62e77a495a6fb04c980da6060
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b7d7907d14052aead789471bf80f0bc17a457d0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215167"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652159"
 ---
 # <a name="wctomb-wctombl"></a>wctomb, _wctomb_l
 

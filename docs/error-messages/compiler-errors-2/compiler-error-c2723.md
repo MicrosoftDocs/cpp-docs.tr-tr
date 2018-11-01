@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2723 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2723
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2723
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2723
 ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b1be2d81ecec7eb96fd9c1cd7e9938ce509f71e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bc07a99f12ed0e447427990969e54f7f3d3d3b7f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072023"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635401"
 ---
 # <a name="compiler-error-c2723"></a>Derleyici Hatası C2723
 

@@ -1,27 +1,17 @@
 ---
-title: WCHAR_MIN | Microsoft Docs
-ms.custom: ''
+title: WCHAR_MIN
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - WCHAR_MIN
-dev_langs:
-- C++
 helpviewer_keywords:
 - WCHAR_MIN constant
 ms.assetid: f2d192d7-4412-483f-9839-c29e4f174b83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a82c06f290eeec0d5e2d5bb7fbf2f166265a4fb3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5643899ff01c5a1ffec8a3ac2ff49d53e96ea893
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602663"
 ---
 # <a name="wcharmin"></a>WCHAR_MIN
 

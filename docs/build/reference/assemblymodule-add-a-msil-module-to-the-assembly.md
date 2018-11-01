@@ -1,15 +1,9 @@
 ---
-title: -ASSEMBLYMODULE (derlemeye MSIL Modülü Ekle) | Microsoft Docs
-ms.custom: ''
+title: /ASSEMBLYMODULE (Derlemeye MSIL Modülü Ekle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /assemblymodule
 - VC.Project.VCLinkerTool.AddModuleNamesToAssembly
-dev_langs:
-- C++
 helpviewer_keywords:
 - ASSEMBLYMODULE linker option
 - assemblies [C++], adding modules to
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - /ASSEMBLYMODULE linker option
 - -ASSEMBLYMODULE linker option
 ms.assetid: 67357da8-e4b6-49fd-932c-329a5777f143
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c1b5104a264a3fbeeada080b6c34a6b1c5e23ca
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d08b5bca38f4ff590a0e1bfb8d8693c374a43444
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703943"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621513"
 ---
 # <a name="assemblymodule-add-a-msil-module-to-the-assembly"></a>/ASSEMBLYMODULE (Derlemeye MSIL Modülü Ekle)
 
@@ -83,7 +73,7 @@ Visual C++ bağlayıcı girişi .netmodule dosyaları kabul eder ve bağlayıcı
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AddModuleNamesToAssembly%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AddModuleNamesToAssembly%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

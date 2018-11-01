@@ -1,23 +1,13 @@
 ---
-title: alignof ve alignas (C++) | Microsoft Docs
-ms.custom: ''
+title: alignof ve alignas (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 1d18aa8a-9621-4fb5-86e5-4cc86d5187f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96dd03d8aebb8860d5a16c8d08bb35dd8a7d8b48
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e5d023d7969764bdd36030a508abdd94068e48b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065810"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493658"
 ---
 # <a name="alignof-and-alignas-c"></a>alignof ve alignas (C++)
 

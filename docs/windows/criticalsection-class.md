@@ -1,9 +1,6 @@
 ---
-title: CriticalSection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CriticalSection Sınıfı
 ms.date: 09/24/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::CriticalSection
@@ -13,8 +10,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::CriticalSection::~CriticalSection
 - corewrappers/Microsoft::WRL::Wrappers::CriticalSection::CriticalSection
 - corewrappers/Microsoft::WRL::Wrappers::CriticalSection::TryLock
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::CriticalSection class
 - Microsoft::WRL::Wrappers::CriticalSection::cs_ data member
@@ -24,17 +19,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::CriticalSection::CriticalSection, constructor
 - Microsoft::WRL::Wrappers::CriticalSection::TryLock method
 ms.assetid: f2e0a024-71a3-4f6b-99ea-d93a4a608ac4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c4b543d3436f04d1a8aaa92647449854831002a6
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: dd34206741ba8fee8b283e22b6e8eefb3b3efb0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651158"
 ---
 # <a name="criticalsection-class"></a>CriticalSection Sınıfı
 

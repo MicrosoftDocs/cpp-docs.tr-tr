@@ -1,8 +1,6 @@
 ---
-title: '&lt;yardımcı programı&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;yardımcı programı&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - utility/std::operator!=
 - utility/std::operator&gt;
@@ -10,8 +8,6 @@ f1_keywords:
 - utility/std::operator&lt;
 - utility/std::operator&lt;=
 - utility/std::operator==
-dev_langs:
-- C++
 ms.assetid: a6617109-2cec-4a69-948f-6c87116eda5f
 helpviewer_keywords:
 - std::operator!= (utility)
@@ -20,12 +16,12 @@ helpviewer_keywords:
 - std::operator&lt; (utility)
 - std::operator&lt;= (utility)
 - std::operator== (utility)
-ms.openlocfilehash: 304aba4513ceb526f9a288db6f255b4c47f5c593
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 418b18851aaf8da44ee0ed2df7ff9e60a0b5ef1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653693"
 ---
 # <a name="ltutilitygt-operators"></a>&lt;yardımcı programı&gt; işleçleri
 

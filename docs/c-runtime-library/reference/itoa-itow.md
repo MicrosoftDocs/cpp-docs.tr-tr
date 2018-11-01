@@ -1,10 +1,6 @@
 ---
-title: _itoa, _itow işlevleri | Microsoft Docs
-ms.custom: ''
+title: _itoa, _itow işlevleri
 ms.date: 03/21/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - itoa
 - _itoa
@@ -83,8 +79,6 @@ f1_keywords:
 - _MAX_U64TOSTR_BASE10_COUNT
 - _MAX_U64TOSTR_BASE8_COUNT
 - _MAX_U64TOSTR_BASE2_COUNT
-dev_langs:
-- C++
 helpviewer_keywords:
 - _itot function
 - ui64toa function
@@ -104,20 +98,16 @@ helpviewer_keywords:
 - converting numbers, to strings
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95aa140eae6d8a06eff84d03cbb562444c3bd552
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 182e7190554382f56d43f94fefe209fd38a7b78b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405542"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464099"
 ---
 # <a name="itoa-itoa-ltoa-ltoa-ultoa-ultoa-i64toa-ui64toa-itow-ltow-ultow-i64tow-ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
-Tamsayı bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_itoa_s, _itow_s işlevler](itoa-s-itow-s.md).
+Bir tamsayı, bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -178,39 +168,39 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 Dönüştürülecek sayı.
 
 *Arabellek*<br/>
-Dönüştürme işleminin sonucu tutan bir arabellek.
+Dönüştürme sonucunu tutacak arabelleği.
 
 *radix*<br/>
-Dönüştürme işlemi için kullanılacak olan temeli *değeri*, 2-36 aralığında olmalıdır.
+Dönüştürme için kullanılacak temel *değer*, 2-36 aralığında olması gerekir.
 
 *Boyutu*<br/>
-Karakter türü birimlerinde arabellek uzunluğu. Bu parametre gelen çıkarımı yapılan *arabellek* C++ bağımsız değişkeni.
+Karakter türü birimlik arabellek uzunluğu. Bu parametre içinden gösterilen *arabellek* c++ bağımsız değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri için bir işaretçi döndürür *arabellek*. Döndürülen hata yoktur.
+Bu işlevlerin her biri işaretçi döndürür *arabellek*. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_İtoa**, **_ltoa**, **_ultoa**, **_i64toa**, ve **_ui64toa** işlevleri rakamı Dönüştür verilen *değeri* bağımsız değişkeni null olarak sonlandırılan bir karakter dizesi ve sonuç deposu (en fazla 33 karakterler için **_itoa**, **_ltoa**, ve  **_ultoa**ve 65 için **_i64toa** ve **_ui64toa**) içinde *arabellek*. Varsa *taban* eşittir 10 ve *değeri* olan negatif saklı dizenin ilk karakter eksi işareti'dir (**-**). **_İtow**, **_ltow**, **_ultow**, **_i64tow**, ve **_ui64tow** işlevleri joker karakter sürümleri **_itoa**, **_ltoa**, **_ultoa**, **_i64toa**, ve **_ui64toa**, sırasıyla.
+**_İtoa**, **_ltoa**, **_ultoa**, **_i64toa**, ve **_ui64toa** işlevleri rakamı Dönüştür verilen *değer* bağımsız değişkeni null ile sonlandırılmış dize ve sonuç deposu (en fazla 33 karakterleri **_itoa**, **_ltoa**, ve  **_ultoa**ve 65 için **_i64toa** ve **_ui64toa**) içinde *arabellek*. Varsa *taban* 10 eşittir ve *değer* olan negatif saklı dizenin ilk karakteri eksi işareti olan (**-**). **_İtow**, **_ltow**, **_ultow**, **_i64tow**, ve **_ui64tow** geniş karakter işlevleri sürümleri **_itoa**, **_ltoa**, **_ultoa**, **_i64toa**, ve **_ui64toa**, sırasıyla.
 
 > [!IMPORTANT]
-> Bu işlevler çok küçük bir arabellek sonunun yazabilirsiniz. Arabellek aşırı çalıştırmaları önlemek için emin *arabellek* dönüştürülmüş basamak artı sonunda null karakteri ve bir oturum karakter tutmak için büyük. Bu işlevlerin kötüye önemli güvenlik sorunları kodunuzda neden olabilir.
+> Bu işlevler, çok küçük bir arabellek sonunun yazabilirsiniz. Arabellek Taşması önlemek için emin olun *arabellek* dönüştürülmüş basamakların yanı sıra sondaki null karakteri ve işaret karakterinin tutabilecek kadar büyük olduğundan. Bu işlevlerin kötüye kodunuzda ciddi güvenlik sorunlarına neden olabilir.
 
-Kendi olası varsayılan olarak, güvenlik sorunları nedeniyle bu işlevler kullanımdan kaldırma uyarısı neden [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **bu işlev veya değişken güvenli olmayabilir. Kullanmayı** *safe_function* **yerine. Kullanımdan kaldırma devre dışı bırakmak için _CRT_SECURE_NO_WARNINGS kullanın.** Kullanmak için kaynak kodunuzu değiştirmek öneririz *safe_function* uyarı iletisi tarafından önerilen. Belirtilen arabellek boyutu daha fazla karakterden daha güvenli işlevler yazma. Daha fazla bilgi için bkz: [_itoa_s, _itow_s işlevler](itoa-s-itow-s.md).
+Bu işlevler, potansiyellerini varsayılan olarak, güvenlik sorunları nedeniyle kullanımdan kaldırılma uyarısı neden [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **bu işlev veya değişken güvenli olmayabilir. Kullanmayı** *safe_function* **yerine. Kullanımdan kaldırma devre dışı bırakmak için _crt_secure_no_warnıngs kullanın.** Kullanılacak kaynak kodunuzu değiştirmeniz önerilir *safe_function* uyarı iletisi tarafından önerilen. Belirtilen arabellek boyutu daha fazla karakterden daha güvenli işlevler yazma. Daha fazla bilgi için [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
 
-Kullanımdan kaldırma uyarısı olmadan bu işlevleri kullanmak için tanımlamanız **_CRT_SECURE_NO_WARNINGS** tüm CRT üstbilgileri eklemeden önce önişlemci makrosu. Bir geliştirici komut istemi komut satırında ekleyerek bunu yapabilirsiniz **/D_CRT_SECURE_NO_WARNINGS** derleyici seçeneği **cl** komutu. Aksi halde, Kaynak dosyalarınız makrosu tanımlayın. Önceden derlenmiş üstbilgiler kullanırsanız, önceden derlenmiş üst bilgi üstündeki makrosu tanımlama dosyası, genellikle stdafx.h içerir. Kaynak kodunuz makrosu tanımlamak için bir **#define** Bu örnekte olduğu gibi herhangi bir CRT başlığını dahil etmeden önce yönergesi:
+Kullanımdan kaldırılma uyarısı olmadan bu işlevler için tanımladığınız **_crt_secure_no_warnıngs** CRT üst bilgileri de dahil olmak üzere önce önişlemci makrosu. Komut satırında bir geliştirici komut istemi ekleyerek bunu yapabilirsiniz **/D_CRT_SECURE_NO_WARNINGS** derleyici seçeneği **cl** komutu. Aksi takdirde, kaynak dosyalarınızda makro tanımlayın. Önceden derlenmiş üstbilgileri kullanmak, önceden derlenmiş üst bilgi üst kısmındaki makro tanımlayın. genellikle stdafx.h dosyası bulunur. Kaynak kodunuzu makro tanımlamak için bir **#define** Bu örnekte olduğu gibi herhangi bir CRT başlığını dahil etmeden önce yönergesi:
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdlib.h>
 ```
 
-C++'da, bu işlevler daha güvenli dekiler çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevlerin daha güvenli karşılıkları çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-POSIX adlarını **itoa**, **ltoa**, ve **ultoa** için diğer adlar mevcut **_itoa**, **_ltoa**, ve **_ultoa** işlevleri. ISO C. uygulamaya özel işlevi adı kuralları izlemeyin çünkü POSIX adlarını kullanım dışı bırakılmıştır Varsayılan olarak, bu işlevler kullanımdan kaldırma uyarısı neden [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **POSIX adı bu öğe için kullanım dışıdır. Bunun yerine, ISO C ve C++ uyumluluğunu adını kullanın:** *new_name*. Bu işlevlerin güvenli sürümlerini kullanmak için kaynak kodunuzu değiştirmek öneririz **_itoa_s**, **_ltoa_s**, veya **_ultoa_s**. Daha fazla bilgi için bkz: [_itoa_s, _itow_s işlevler](itoa-s-itow-s.md).
+POSIX adları **itoa**, **ltoa**, ve **ultoa** için diğer ad olarak mevcut **_itoa**, **_ltoa**, ve **_ultoa** işlevleri. ISO c uygulamaya özel işlev adı kurallarını izlemeyin çünkü POSIX adları kullanım dışıdır Varsayılan olarak, bu işlevler, kullanımdan kaldırılma uyarısı neden [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **POSIX adı bu öğe için kullanım dışı bırakılmıştır. Bunun yerine ISO C ve C++ uyumluluğunu adını kullanın:** *new_name*. Bu işlevlerin daha güvenli sürümleri kullanmak için kaynak kodunuzu değiştirmeniz önerilir **_itoa_s**, **_ltoa_s**, veya **_ultoa_s**. Daha fazla bilgi için [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
 
-Kaynak kodu taşınabilirlik için kodunuzu POSIX adlarında korumak tercih edebilirsiniz. Kullanımdan kaldırma uyarısı olmadan bu işlevleri kullanmak için her ikisi de tanımlamak **_CRT_NONSTDC_NO_WARNINGS** ve **_CRT_SECURE_NO_WARNINGS** tüm CRT üstbilgileri eklemeden önce Önişlemci makroları. Bir geliştirici komut istemi komut satırında ekleyerek bunu yapabilirsiniz **/D_CRT_SECURE_NO_WARNINGS** ve **/D_CRT_NONSTDC_NO_WARNINGS** derleyici seçenekleri için **cl**komutu. Aksi halde, Kaynak dosyalarınız makrolar tanımlayın. Önceden derlenmiş üstbilgiler kullanırsanız, tanımlama dosyası, genellikle stdafx.h önceden derlenmiş üst bilgi üstündeki makrolar şunlardır. Kaynak kodunuz makrolar tanımlamak için **#define** Bu örnekte olduğu gibi herhangi bir CRT başlığını dahil etmeden önce yönergeleri:
+Kaynak kodu taşınabilirlik için kodunuzda POSIX adlarını korumak isteyebilirsiniz. Bu işlevler kullanımdan kaldırılma uyarısı olmadan kullanmak için her ikisi de tanımlamak **_CRT_NONSTDC_NO_WARNINGS** ve **_crt_secure_no_warnıngs** Önişlemci makroları CRT üst bilgileri de dahil olmak üzere önce. Komut satırında bir geliştirici komut istemi ekleyerek bunu yapabilirsiniz **/D_CRT_SECURE_NO_WARNINGS** ve **/D_CRT_NONSTDC_NO_WARNINGS** derleyici seçenekleri için **cl**komutu. Aksi takdirde, kaynak dosyalarınızda makroları tanımlar. Önceden derlenmiş üstbilgileri kullanmak, tanımlama dosyası, genellikle stdafx.h önceden derlenmiş üst bilgi üst kısmındaki makrolar şunlardır. Kaynak kodunuzu makroları tanımlamak için **#define** Bu örnekte olduğu gibi herhangi bir CRT başlığını dahil etmeden önce yönergeleri:
 
 ```C
 #define _CRT_NONSTDC_NO_WARNINGS 1
@@ -218,22 +208,22 @@ Kaynak kodu taşınabilirlik için kodunuzu POSIX adlarında korumak tercih edeb
 #include <stdlib.h>
 ```
 
-### <a name="maximum-conversion-count-macros"></a>En fazla dönüştürme sayısı makroları
+### <a name="maximum-conversion-count-macros"></a>En fazla dönüşüme sayısı makroları
 
-Dönüştürmeleri için güvenli arabellekleri oluşturmanıza yardımcı olması için bazı kullanışlı makrolar CRT içerir. Bu en uzun olası değeri null Sonlandırıcı dahil olmak üzere her Tamsayı türünde dönüştürmek için gerekli olan arabellek boyutunu tanımlamak ve birkaç ortak temelleri için karakter imzalayın. Dönüştürme arabellek tarafından belirtilen Base herhangi bir dönüştürmeye almak için yeterince büyük olduğundan emin olmak için *taban*, bunlardan birini tanımlı makrolar arabellek ayıramadı olduğunda. Bu, tam sayı türleri dizelere dönüştürürken arabellek taşması hataları önlemeye yardımcı olur. Kaynak stdlib.h veya wchar.h eklediğinizde bu makroları tanımlanır.
+Dönüştürmeler için güvenli arabellek oluşturmanıza yardımcı olacak bazı kullanışlı makroları CRT içerir. Bu null Sonlandırıcı dahil olmak üzere, her bir tamsayı türü olası en uzun değerini dönüştürmek için gerekli arabellek boyutu tanımlayın ve karakter, birkaç ortak temelleri için oturum açın. Dönüştürme arabelleğin herhangi bir dönüştürmeyi tarafından belirtilen tabanda almak büyük olduğundan emin olmak için *taban*, bunlardan birini tanımlı makroları olduğunda arabelleği ayrılamadı. Bu, tam sayı türleri için dizeleri dönüştürdüğünüzde, arabellek taşma hataları önlemeye yardımcı olur. Kaynağınızda stdlıb.h veya wchar.h eklediğinizde bu makrolar tanımlanır.
 
-Dize dönüştürme işlevinde bu makroları birini kullanmak için uygun karakter türü, dönüştürme arabelleği bildirme ve makrosu değeri tamsayı türü ve temel için arabellek boyutu olarak kullanın. Bu tablo her işlevi listelenen temelleri için uygun olan makroları listelenmektedir:
+Bu makrolar bir dize dönüştürme işlevini kullanmak için uygun bir karakter türü dönüştürme arabelleğin bildirme ve makrosu değeri tamsayı türü ve temel için arabellek boyutu olarak kullanın. Bu tablo, her işlevin listelenen temelleri için uygun olan makroları listeler:
 
 ||||
 |-|-|-|
-|İşlevler|sayı tabanını|Makrolar|
+|İşlevler|sayı tabanı|Makrolar|
 |**_itoa**, **_itow**|16<br/>10<br/>8<br/>2|**_MAX_ITOSTR_BASE16_COUNT**<br/>**_MAX_ITOSTR_BASE10_COUNT**<br/>**_MAX_ITOSTR_BASE8_COUNT**<br/>**_MAX_ITOSTR_BASE2_COUNT**|
 |**_ltoa**, **_ltow**|16<br/>10<br/>8<br/>2|**_MAX_LTOSTR_BASE16_COUNT**<br/>**_MAX_LTOSTR_BASE10_COUNT**<br/>**_MAX_LTOSTR_BASE8_COUNT**<br/>**_MAX_LTOSTR_BASE2_COUNT**|
 |**_ultoa**, **_ultow**|16<br/>10<br/>8<br/>2|**_MAX_ULTOSTR_BASE16_COUNT**<br/>**_MAX_ULTOSTR_BASE10_COUNT**<br/>**_MAX_ULTOSTR_BASE8_COUNT**<br/>**_MAX_ULTOSTR_BASE2_COUNT**|
 |**_i64toa**, **_i64tow**|16<br/>10<br/>8<br/>2|**_MAX_I64TOSTR_BASE16_COUNT**<br/>**_MAX_I64TOSTR_BASE10_COUNT**<br/>**_MAX_I64TOSTR_BASE8_COUNT**<br/>**_MAX_I64TOSTR_BASE2_COUNT**|
 |**_ui64toa**, **_ui64tow**|16<br/>10<br/>8<br/>2|**_MAX_U64TOSTR_BASE16_COUNT**<br/>**_MAX_U64TOSTR_BASE10_COUNT**<br/>**_MAX_U64TOSTR_BASE8_COUNT**<br/>**_MAX_U64TOSTR_BASE2_COUNT**|
 
-Bu örnek bir dönüştürme sayısı makro alabilecek kadar büyük bir arabellek tanımlamak için kullanır. bir **uzun uzun imzasız** temel 2:
+Bu örnek bir dönüştürme sayısı makrosu içerecek şekilde büyük bir arabellek tanımlamak için kullanır. bir **işaretsiz long long** taban 2'de:
 
 ```cpp
 #include <wchar.h>
@@ -263,11 +253,11 @@ int main()
 |**_itoa**, **_ltoa**, **_ultoa**, **_i64toa**, **_ui64toa**|\<stdlib.h >|
 |**_itow**, **_ltow**, **_ultow**, **_i64tow**, **_ui64tow**|\<stdlib.h > veya \<wchar.h >|
 
-Bu işlevler ve makrolar Microsoft özgüdür. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevlerle makrolar Microsoft özgüdür. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek bazı tamsayı dönüştürme işlevleri kullanımını göstermektedir. Kullanımına dikkat edin **_CRT_SECURE_NO_WARNINGS** uyarı C4996 sessiz makrosu.
+Bu örnek, tamsayı dönüştürme işlevleri bazıları kullanımını gösterir. Kullanımına dikkat edin **_crt_secure_no_warnıngs** uyarı C4996 sessiz makrosu.
 
 ```C
 // crt_itoa.c

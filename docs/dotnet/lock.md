@@ -1,29 +1,19 @@
 ---
-title: Kilit | Microsoft Docs
-ms.custom: ''
+title: lock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - lock
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock
 - synchronization
 ms.assetid: 48c90da6-d6fb-4710-9c7c-2b9c9344bda1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 4d276419c4eaa517fe80dc7688dc138ea57744ee
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 117af1c5fd4266116310c0ebb797ae51210f1b9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622774"
 ---
 # <a name="lock"></a>lock
 

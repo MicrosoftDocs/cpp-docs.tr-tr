@@ -1,12 +1,6 @@
 ---
-title: Satır kümesi nesnesi arabirimleri | Microsoft Docs
-ms.custom: ''
+title: Satır Kümesi Nesnesi Arabirimleri
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - interfaces, OLE DB
 - OLE DB, interfaces
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: dc9ec134321b2acf9994ad7dfb43c5b14bf0e75f
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 739c7d94e5df2d5edddc00bd3ae2703e07435c23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641018"
 ---
 # <a name="rowset-object-interfaces"></a>Satır Kümesi Nesnesi Arabirimleri
 

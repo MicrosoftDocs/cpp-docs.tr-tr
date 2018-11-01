@@ -1,23 +1,13 @@
 ---
-title: Uzaktan derleme olaylarını (Linux C++) | Microsoft Docs
-ms.custom: ''
+title: Uzak derleme olayları (Linux C++)
 ms.date: 9/26/2017
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: 2ea01c5d92cbdb6066dc87675221eae6865af354
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 87647948b641fff7370003a59775a5680c176fb3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070991"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653875"
 ---
 # <a name="build-event-properties-linux-c"></a>Derleme olay özellikleri (Linux C++)
 

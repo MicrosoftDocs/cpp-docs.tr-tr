@@ -1,10 +1,6 @@
 ---
-title: set sınıfı | Microsoft Docs
-ms.custom: ''
+title: set Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - set/std::set
 - set/std::set::allocator_type
@@ -47,8 +43,6 @@ f1_keywords:
 - set/std::set::swap
 - set/std::set::upper_bound
 - set/std::set::value_comp
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::set [C++]
 - std::set [C++], allocator_type
@@ -92,16 +86,12 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc57c1667fd9cfd6d3236fbd1891dc1444912c3c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 694ef08582409117b898d173e7647d59effc30e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077445"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605510"
 ---
 # <a name="set-class"></a>set Sınıfı
 

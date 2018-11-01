@@ -1,30 +1,20 @@
 ---
-title: /ZC (Uyumluluk) | Microsoft Docs
-ms.custom: ''
+title: /Zc (Uyumluluk)
 ms.date: 03/06/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /zc
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Zc compiler options [C++]
 - -Zc compiler options [C++]
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fd2ec208e872e05f8329bf5e077a74403d0c612
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b1f612040eea0078b0f27cf72327db94fe9e2939
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716059"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665445"
 ---
 # <a name="zc-conformance"></a>/Zc (Uyumluluk)
 

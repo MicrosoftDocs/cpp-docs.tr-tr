@@ -1,31 +1,21 @@
 ---
-title: -FIXED (sabit temel adres) | Microsoft Docs
-ms.custom: ''
+title: /FIXED (Sabit Temel Adres)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /fixed
 - VC.Project.VCLinkerTool.FixedBaseAddress
-dev_langs:
-- C++
 helpviewer_keywords:
 - preferred base address for loading program
 - /FIXED linker option
 - -FIXED linker option
 - FIXED linker option
 ms.assetid: 929bba5e-b7d8-40ed-943e-056aa3710fc5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 697f6ccfd98059175311cd04e4e82038877b2110
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 12ba2d977ecca4805aa01ade1a6ea8239e07716e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723404"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523038"
 ---
 # <a name="fixed-fixed-base-address"></a>/FIXED (Sabit Temel Adres)
 
@@ -55,7 +45,7 @@ Programda bir yeniden konumlandırma bölümü oluşturmak için/FIXED: No belir
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

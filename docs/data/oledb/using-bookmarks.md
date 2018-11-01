@@ -1,29 +1,18 @@
 ---
-title: Yer işaretlerini kullanma | Microsoft Docs
-ms.custom: ''
+title: Yer İşaretlerini Kullanma
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - rowsets, bookmarks
 - OLE DB provider templates, bookmarks
 - bookmarks, OLE DB
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 6eeb2b6d0c9aa82a6304225b4de14c4d387bfc96
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1f8ef4c25ad921dad66e5587f4005585b3e017f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635662"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 

@@ -1,29 +1,21 @@
 ---
-title: Platform::Exception sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::Exception sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Exception::Exception
 - VCCORLIB/Platform::Exception::CreateException
 - VCCORLIB/Platform::Exception::HResult
 - VCCORLIB/Platform::Exception::Message
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e79788815a240a026da3121432ea688a2507fdf
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 8579b3506d727f5c4faeb56a9c1f3ea88b7a4b6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464967"
 ---
 # <a name="platformexception-class"></a>Platform::Exception sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCToolBarFontSizeComboBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarFontSizeComboBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarFontSizeComboBox
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::GetTwipSize
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::RebuildFontSizes
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::SetTwipSize
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarFontSizeComboBox [MFC], CMFCToolBarFontSizeComboBox
 - CMFCToolBarFontSizeComboBox [MFC], GetTwipSize
 - CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes
 - CMFCToolBarFontSizeComboBox [MFC], SetTwipSize
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca2a8f0a2a7a1b6c8be91902f3a239c34857252e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3344687e678f298aa6953fa36514d392251fd2fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440397"
 ---
 # <a name="cmfctoolbarfontsizecombobox-class"></a>CMFCToolBarFontSizeComboBox sınıfı
 

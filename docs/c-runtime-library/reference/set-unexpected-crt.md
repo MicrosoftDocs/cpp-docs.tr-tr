@@ -1,10 +1,6 @@
 ---
-title: set_unexpected (CRT) | Microsoft Docs
-ms.custom: ''
+title: set_unexpected (CRT)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - set_unexpected
 apilocation:
@@ -21,27 +17,21 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - set_unexpected
-dev_langs:
-- C++
 helpviewer_keywords:
 - set_unexpected function
 - unexpected function
 - exception handling, termination
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7af5cce0b17747beb8c136f75489025d741f864a
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 6c38421e447ca7b3f263148f51f0ade5c59e2804
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484233"
 ---
 # <a name="setunexpected-crt"></a>set_unexpected (CRT)
 
-Çağrılacak kendi sonlandırma işlev yükler **beklenmeyen**.
+Kendi sonlandırma işlevi çağrılacak yükler **beklenmeyen**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,29 +42,29 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 ### <a name="parameters"></a>Parametreler
 
 *unexpFunction*<br/>
-Değiştirmek için yazma bir işlev işaretçisi **beklenmeyen** işlevi.
+Değiştirilecek yazan bir işlev işaretçisi **beklenmeyen** işlevi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki sonlandırma işlevi için bir işaretçi kayıtlı tarafından döndürür **_set_unexpected** böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız varsayılan davranışı geri dönüş değeri kullanılabilir; Bu değer olabilir **NULL**.
+Önceki sonlandırma işlevi işaretçisi kayıtlı tarafından döndürür **_set_unexpected** böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız dönüş değeri, varsayılan davranışı geri yüklemek için kullanılabilir; Bu değer olabilir **NULL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Set_unexpected** işlev yükler *unexpFunction* çağrılan işlev olarak **beklenmeyen**. **Beklenmeyen** geçerli C++ özel durum işleme uygulamasında kullanılmaz. **Unexpected_function** türü EH içinde tanımlanmıştır. Bir kullanıcı tanımlı beklenmeyen işlev işaretçisi olarak H *unexpFunction* döndüren **void**. Özel *unexpFunction* işlevi çağırıcısına döndürmemelidir.
+**Set_unexpected** işlev yükler *unexpFunction* çağrılan işlev olarak **beklenmeyen**. **Beklenmeyen** geçerli C++ özel durum işleme uygulamada kullanılmaz. **Unexpected_function** türü EH içinde tanımlanmıştır. Bir kullanıcı tanımlı beklenmeyen işlev işaretçisi olarak H *unexpFunction* döndüren **void**. Kendi özel *unexpFunction* işlevi arayanına döndürmemelidir.
 
 ```cpp
 typedef void ( *unexpected_function )( );
 ```
 
-Varsayılan olarak, **beklenmeyen** çağrıları **sonlandırmak**. Kendi sonlandırma işlevi yazma ve arama bu varsayılan davranışı değiştirebilirsiniz **set_unexpected** işlevinizi bağımsız değişkeni olarak adı. **Beklenmeyen** bağımsız değişken olarak verilen son işlevi çağırır **set_unexpected**.
+Varsayılan olarak, **beklenmeyen** çağrıları **sonlandırmak**. Kendi sonlandırma işlevi yazma ve arama bu varsayılan davranışı değiştirebilirsiniz **set_unexpected** bağımsız değişken olarak işlevinizi adı. **Beklenmeyen** bağımsız değişkeni olarak verilen son işlevi çağırır **set_unexpected**.
 
-Bir çağrı tarafından yüklenen özel sonlandırma işlevi aksine **set_terminate**, bir özel durum içinden atılabilen *unexpFunction*.
+Farklı bir çağrı tarafından yüklenen özel sonlandırma işlevi **set_terminate**, içinden bir özel durum *unexpFunction*.
 
-Birden çok iş parçacıklı bir ortamda, beklenmeyen işlevleri her iş parçacığı için ayrı ayrı tutulur. Her yeni bir iş parçacığı beklenmeyen işlevini yüklemesi gerekir. Bu nedenle, her iş parçacığı beklenmeyen kendi işleme sorumlu olur.
+Çok iş parçacıklı bir ortamda, beklenmeyen işlevleri her bir iş parçacığı için ayrı olarak korunur. Her yeni bir iş parçacığı beklenmeyen kendi işlevine yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi beklenmeyen işleme sorumlu olduğu.
 
-C++ özel durum işleme, geçerli Microsoft uygulamasındaki **beklenmeyen** çağrıları **sonlandırmak** varsayılan ve özel durum işleme çalışma zamanı kitaplığı tarafından hiçbir zaman çağrılır. Arama için belirli bir avantajı vardır **beklenmeyen** yerine **sonlandırmak**.
+C++ özel durum işleme, geçerli Microsoft uygulamasındaki **beklenmeyen** çağrıları **sonlandırmak** varsayılan ve özel durum işleme çalışma zamanı kitaplığı tarafından hiçbir zaman çağrılır. Arama için belirli bir avantajı yoktur **beklenmeyen** yerine **sonlandırmak**.
 
-Tek bir yoktur **set_unexpected** işleyicisi tüm dinamik olarak bağlı dll veya exe; bile çağırırsanız **set_unexpected** işleyiciniz başka tarafından değiştirilebilir veya tarafından belirlenen bir işleyici değiştirme başka bir DLL veya EXE.
+Tek bir yoktur **set_unexpected** işleyicisi için tüm dinamik olarak bağlı dll veya exe; çağırsanız bile **set_unexpected** işleyicinizi bir başkası tarafından değiştirilebilir veya belirlediği bir işleyici değiştirmediğiniz başka bir DLL veya EXE.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -82,7 +72,7 @@ Tek bir yoktur **set_unexpected** işleyicisi tüm dinamik olarak bağlı dll ve
 |-------------|---------------------|
 |**set_unexpected**|\<EH.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -90,5 +80,5 @@ Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibil
 [abort](abort.md)<br/>
 [_get_unexpected](get-unexpected.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>
-[Sonlandırma](terminate-crt.md)<br/>
+[sonlandırma](terminate-crt.md)<br/>
 [beklenmeyen](unexpected-crt.md)<br/>

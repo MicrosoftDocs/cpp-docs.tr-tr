@@ -1,27 +1,17 @@
 ---
-title: . KESME | Microsoft Docs
-ms.custom: ''
+title: .BREAK
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .BREAK
-dev_langs:
-- C++
 helpviewer_keywords:
 - .BREAK directive
 ms.assetid: 4f55dfce-ff41-4a68-9423-b0077dfc9206
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d9521c9771452d435a93248afd0e968e4cce734
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ebf5bc74eb8e639d97762b64a15d3049b898160b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610684"
 ---
 # <a name="break"></a>.BREAK
 

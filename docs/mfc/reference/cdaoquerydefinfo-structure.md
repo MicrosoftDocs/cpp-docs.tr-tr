@@ -1,28 +1,18 @@
 ---
-title: Cdaoquerydefınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoQueryDefInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoQueryDefInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - DAO (Data Access Objects), QueryDefs collection
 - CDaoQueryDefInfo structure [MFC]
 ms.assetid: e20837dc-e78d-4171-a195-1b4075fb5d2a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 930626a2c28009f8f0174069a88a59a12c9059af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f3c8b464a84bd33d15a19f24010b942bdea59620
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418547"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603001"
 ---
 # <a name="cdaoquerydefinfo-structure"></a>CDaoQueryDefInfo Yapısı
 

@@ -1,24 +1,13 @@
 ---
-title: Evrensel Windows uygulamaları (C++) | Microsoft Docs
-ms.custom: ''
+title: Evrensel Windows Uygulamaları (C++)
 ms.date: 03/30/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7ba556ee3803bb00f07032e0589209af2d32addf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e6e294b45e183e5e8baebcaad65cece846adb07e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591759"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481906"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 

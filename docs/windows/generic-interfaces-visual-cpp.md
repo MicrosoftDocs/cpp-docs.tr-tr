@@ -1,27 +1,17 @@
 ---
-title: Genel arabirimler (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Genel arabirimler (C + +/ CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - generic interfaces
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: cce40d1ae7dedbc9a8aee07bfeff5339a6692f1d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 68c5a53d3de38479adbdcb49e823513f295a2095
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493957"
 ---
 # <a name="generic-interfaces-ccli"></a>Genel arabirimler (C + +/ CLI)
 

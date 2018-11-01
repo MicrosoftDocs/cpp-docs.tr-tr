@@ -1,9 +1,6 @@
 ---
-title: Tür özellikleri için derleyici desteği (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Tür özellikleri için derleyici desteği (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - __is_simple_value_class
@@ -34,8 +31,6 @@ f1_keywords:
 - __is_empty
 - __is_pod
 - __has_user_destructor
-dev_langs:
-- C++
 helpviewer_keywords:
 - __is_class keyword [C++]
 - __is_pod keyword [C++]
@@ -66,17 +61,12 @@ helpviewer_keywords:
 - __is_simple_value_class keyword [C++]
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bef92e7315418e13b660f655a54f20e8696c7590
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5cd4d7feef01d1b7bedd407357c618ba208d06f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536194"
 ---
 # <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>Tür özellikleri için derleyici desteği (C + +/ CLI ve C + +/ CX)
 

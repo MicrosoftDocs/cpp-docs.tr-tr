@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1352 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1352
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1352
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1352
 ms.assetid: d044e8b0-b6ef-4d57-8eb5-6254071be707
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f4f1f062e11651e4d851231e16569412f95b90d4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fbba87cea05d666d6dc3a385ca1fe52e143fdb5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042942"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648688"
 ---
 # <a name="fatal-error-c1352"></a>Önemli hata C1352
 

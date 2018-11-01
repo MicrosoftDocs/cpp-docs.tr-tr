@@ -1,27 +1,17 @@
 ---
-title: Cmfcdragframeımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfcdragframeımpl sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDragFrameImpl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDragFrameImpl class [MFC]
 ms.assetid: 500cd824-8188-43c2-8754-b7bb46b5648a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fa4846ec2d6263e353dec05d145f6e2e33a59eb4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2769b52e03d8d3de14fdbf431279dd9226323b0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062385"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640706"
 ---
 # <a name="cmfcdragframeimpl-class"></a>Cmfcdragframeımpl sınıfı
 

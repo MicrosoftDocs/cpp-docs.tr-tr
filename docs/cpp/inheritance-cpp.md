@@ -1,27 +1,17 @@
 ---
-title: Devralma (C++) | Microsoft Docs
-ms.custom: ''
+title: Devralma (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - derived classes [C++]
 - derived classes [C++], about derived classes
 - classes [C++], derived
 ms.assetid: 3534ca19-d9ed-4a40-be1b-b921ad0e6956
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2e49e115f6ef4269ddfc7169add6a88e3bb0c54f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0180a2f7b41e3169bc9e25d8b598dbe2b84be088
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064561"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508048"
 ---
 # <a name="inheritance--c"></a>Devralma (C++)
 

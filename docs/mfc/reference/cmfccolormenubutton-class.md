@@ -1,10 +1,6 @@
 ---
-title: CMFCColorMenuButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCColorMenuButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCColorMenuButton
 - AFXCOLORMENUBUTTON/CMFCColorMenuButton
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXCOLORMENUBUTTON/CMFCColorMenuButton::IsEmptyMenuAllowed
 - AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDraw
 - AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDrawOnCustomizeList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCColorMenuButton [MFC], CMFCColorMenuButton
 - CMFCColorMenuButton [MFC], EnableAutomaticButton
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CMFCColorMenuButton [MFC], OnDraw
 - CMFCColorMenuButton [MFC], OnDrawOnCustomizeList
 ms.assetid: 42685704-e994-4f7b-9553-62283c27b754
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f307a5c0d1c1666c4d8a016496d9a6bf717c6d48
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: adb0cdbdde90ad7bdd6aef42c1e83c7ba3fd28b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624893"
 ---
 # <a name="cmfccolormenubutton-class"></a>CMFCColorMenuButton sınıfı
 

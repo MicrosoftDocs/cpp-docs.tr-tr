@@ -1,10 +1,6 @@
 ---
-title: Ithreadproxy yapısı | Microsoft Docs
-ms.custom: ''
+title: IThreadProxy Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - IThreadProxy
 - CONCRTRM/concurrency::IThreadProxy
@@ -12,21 +8,15 @@ f1_keywords:
 - CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchOut
 - CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchTo
 - CONCRTRM/concurrency::IThreadProxy::IThreadProxy::YieldToSystem
-dev_langs:
-- C++
 helpviewer_keywords:
 - IThreadProxy structure
 ms.assetid: feb89241-a555-4e61-ad48-40add54daeca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6c7b60ed7f3fef39d7ecd9a7bb9580acc6b1cf91
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 606adf0e6984ebe93951c80620407f9f1c8775f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533984"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 

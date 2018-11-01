@@ -1,12 +1,6 @@
 ---
-title: __Asm bloklarında C veya C++ kullanma | Microsoft Docs
-ms.custom: ''
+title: __asm Bloklarında C veya C++ Kullanma
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inline assembly, mixing instructions with C/C++ statements
 - symbols, in __asm blocks
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - typedef names, used in __asm blocks
 - __asm keyword [C++], C/C++ elements in
 ms.assetid: ae8b2b52-6b75-42e3-ac0c-ad02d922ed97
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14b91a7925089f6a6ab747a9fd6a5813f9a14693
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0949eba769bed33da8fe39bb41500a2ba02af224
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602156"
 ---
 # <a name="using-c-or-c-in-asm-blocks"></a>__asm Bloklarında C veya C++ Kullanma
 

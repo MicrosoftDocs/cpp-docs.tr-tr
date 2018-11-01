@@ -1,29 +1,18 @@
 ---
-title: Palet Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++) renkler | Microsoft Docs
-ms.custom: ''
+title: Palet renkleri Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.loadcolorpalette
-dev_langs:
-- C++
 helpviewer_keywords:
 - color palettes
 - Load Palette Colors dialog box [C++]
 ms.assetid: a1b17203-3e02-4498-91de-4ed089156df1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 24eb04dc07ced27d5ba24e1c8a567facff47bf98
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: f6ff30dce37dc250536eea313d26a4cde5ab6c32
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316334"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537611"
 ---
 # <a name="load-palette-colors-dialog-box-c-image-editor-for-icons"></a>Palet renkleri Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 

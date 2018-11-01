@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4733 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4733
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4733
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4733
 ms.assetid: 7ef4f577-772d-4b66-a7bf-8958a6b250bc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75b4aac2d71267b4ba012384fe83f167f44ec2d2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0d0b0b912ef15294f9a4362a79dffd6d7eeabed8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474926"
 ---
 # <a name="compiler-warning-level-1-c4733"></a>Derleyici Uyarısı (düzey 1) C4733
 

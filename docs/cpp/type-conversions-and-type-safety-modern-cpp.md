@@ -1,23 +1,14 @@
 ---
-title: Tür dönüştürmeleri ve tür güvenliği (Modern C++) | Microsoft Docs
-ms.custom: ''
+title: Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fb13c8c4ce2705d3e7af8ca5b4cd0e4b97b13ca
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ae3b2d89c06d0e7b17b648907fa3d7734b51205c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471350"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 

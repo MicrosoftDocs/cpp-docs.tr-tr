@@ -1,25 +1,15 @@
 ---
-title: İşleç aşırı yüklemesi genel kuralları | Microsoft Docs
-ms.custom: ''
+title: İşleç Aşırı Yüklemesi Genel Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator overloading [C++], rules
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a6eb1b97acfe2fa41511433de3990da8923de7d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1eceb26a244bc6dd2d5243e54f5e3b8391d88ed1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059551"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668162"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 

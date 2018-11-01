@@ -1,27 +1,17 @@
 ---
-title: Matematik hatası M6201 | Microsoft Docs
-ms.custom: ''
+title: Matematik Hatası M6201
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - M6201
-dev_langs:
-- C++
 helpviewer_keywords:
 - M6201
 ms.assetid: 4041c331-d9aa-4dd4-b565-7dbe0218538c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87d2c09d6448bcf7fb0557fa3a174c60205a34ea
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6d3f107de7e45653374036ecafaa864cb3eff5b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099401"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622111"
 ---
 # <a name="math-error-m6201"></a>Matematik Hatası M6201
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4540 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4540
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4540
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4540
 ms.assetid: 8085e748-5f4d-43c2-b06d-eaf794edbf72
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4e3f553bd1f910c7b17e079dc1f03664c78383e3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 86f6cd866f7708277ebba436ba7c076086dc9c8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473677"
 ---
 # <a name="compiler-warning-level-1-c4540"></a>Derleyici Uyarısı (düzey 1) C4540
 

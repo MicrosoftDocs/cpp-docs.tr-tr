@@ -1,29 +1,19 @@
 ---
-title: 'TN017: Pencere nesnelerini yok etme | Microsoft Docs'
-ms.custom: ''
+title: 'TN017: Pencere Nesnelerini Yok Etme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.objects
-dev_langs:
-- C++
 helpviewer_keywords:
 - destroying windows
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8286622ec8e7cb739e55a39ce42ed658395551ba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 06553677e67a4314116077e7942381bd847c64d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502238"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: Pencere Nesnelerini Yok Etme
 

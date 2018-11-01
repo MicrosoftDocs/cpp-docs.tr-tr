@@ -1,27 +1,17 @@
 ---
-title: _com_error::_com_error | Microsoft Docs
-ms.custom: ''
+title: _com_error::_com_error
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_error::_com_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - _com_error method [C++]
 ms.assetid: 0a69e46c-caab-49ef-b091-eee401253ce6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89377e33e56b0796fc850c050c8e79eac86ee07d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8856289605cce430fdab36d6e3e8b743190e02ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631744"
 ---
 # <a name="comerrorcomerror"></a>_com_error::_com_error
 

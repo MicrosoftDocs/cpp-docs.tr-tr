@@ -1,10 +1,6 @@
 ---
-title: tiled_index sınıfı | Microsoft Docs
-ms.custom: ''
+title: tiled_index Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - tiled_index
 - AMP/tiled_index
@@ -20,21 +16,15 @@ f1_keywords:
 - AMP/Concurrency::tiled_index::tile_dim2
 - AMP/Concurrency::tiled_index::tile_origin
 - AMP/Concurrency::tiled_index::tile_extent
-dev_langs:
-- C++
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f266efa2fb6de580bc1af04bdee6f80e2244fa23
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 11faec19160ccc6028bdb294f37a51d7fe26dc15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619836"
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 

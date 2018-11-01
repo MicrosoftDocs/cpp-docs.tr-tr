@@ -1,10 +1,6 @@
 ---
-title: _dup, _dup2 | Microsoft Docs
-ms.custom: ''
+title: _dup, _dup2
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _dup
 - _dup2
@@ -24,8 +20,6 @@ apitype: DLLExport
 f1_keywords:
 - _dup2
 - _dup
-dev_langs:
-- C++
 helpviewer_keywords:
 - _dup2 function
 - dup function
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - dup2 function
 - _dup function
 ms.assetid: 4d07e92c-0d76-4832-a770-dfec0e7a0cfa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 820172e1e6ab4ad007c89b2b40f03512134f0f0d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a00b9506102e6b274a9aa87c33c144d75cfc2508
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668188"
 ---
 # <a name="dup-dup2"></a>_dup, _dup2
 

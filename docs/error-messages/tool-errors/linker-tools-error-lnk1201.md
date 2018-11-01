@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1201 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1201
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1201
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1201
 ms.assetid: 64c3f496-a428-4b54-981e-faa82ef9c8a1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c133748f95846160e1387e31e023d9ce459b281
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c5cbb9a7159a976ad0f96f46462669cff7b19f26
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055282"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653732"
 ---
 # <a name="linker-tools-error-lnk1201"></a>Bağlayıcı Araçları Hatası LNK1201
 

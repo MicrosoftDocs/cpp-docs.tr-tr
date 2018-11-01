@@ -1,33 +1,23 @@
 ---
-title: rts_alloc sınıfı | Microsoft Docs
-ms.custom: ''
+title: rts_alloc Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::rts_alloc
 - allocators/stdext::rts_alloc::allocate
 - allocators/stdext::rts_alloc::deallocate
 - allocators/stdext::rts_alloc::equals
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::rts_alloc
 - stdext::rts_alloc [C++], allocate
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4bff519ea12646e94e92cde219fa38e4009a767
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2c77f93a2311dbf21959b0d2a7830c20ba6dce96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956465"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587271"
 ---
 # <a name="rtsalloc-class"></a>rts_alloc Sınıfı
 

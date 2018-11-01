@@ -1,24 +1,14 @@
 ---
-title: Alfabetik olarak listelenen derleyici seçenekleri | Microsoft Docs
-ms.custom: ''
+title: Alfabetik Listelenmiş Derleyici Seçenekleri
 ms.date: 08/20/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - compiler options, C++
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f99df40d5718a450019fb7cd26aa0c00a59c0a48
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fa5ae089e112c147fb5e18b13af2ef5b95a7fda3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646738"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
 

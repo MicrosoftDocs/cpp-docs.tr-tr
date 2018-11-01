@@ -1,29 +1,19 @@
 ---
-title: detect_mismatch | Microsoft Docs
-ms.custom: ''
+title: detect_mismatch
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.detect_mismatch
 - detect_mismatch_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, detect_mismatch
 - detect_mismatch pragma
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55d7c3b81b3b8c43fb9024f2a58c27028950b144
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2973a4738aa54e9f454190b18bcabff92077b284
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064179"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633330"
 ---
 # <a name="detectmismatch"></a>detect_mismatch
 Bir nesneyi bir kayıt yerleştirir. Bağlayıcı, bu kayıtları olası uyuşmazlıkları denetler.

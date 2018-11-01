@@ -1,10 +1,6 @@
 ---
-title: OpenMP yan tümceleri | Microsoft Docs
-ms.custom: ''
+title: OpenMP yan tümceleri
 ms.date: 10/22/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
 f1_keywords:
 - OpenMP clauses
 - copyin
@@ -20,8 +16,6 @@ f1_keywords:
 - reduction
 - schedule
 - shared
-dev_langs:
-- C++
 helpviewer_keywords:
 - OpenMP clauses
 - copyin OpenMP clause
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - schedule OpenMP clause
 - shared OpenMP clause
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea394ca09a086229a8718f4e7e1bfa55115652bc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 12a29630d49051ff036dbabb7f9a181667934858
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056229"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451190"
 ---
 # <a name="openmp-clauses"></a>OpenMP yan tümceleri
 

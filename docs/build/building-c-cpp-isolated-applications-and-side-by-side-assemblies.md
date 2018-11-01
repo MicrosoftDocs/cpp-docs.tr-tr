@@ -1,12 +1,6 @@
 ---
-title: Derleme C/C++ yalıtılmış uygulamalar ve yan yana derlemeler | Microsoft Docs
-ms.custom: ''
+title: C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - isolated applications [C++]
 - WinSxS [C++]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - side-by-side applications [C++]
 - builds [C++], side-by-side assemblies
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b3327f4d0ae20b13c97ea0916e7a2c86e7006dd
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: da8bd6d583d6f9d714853e545979d54ddcb79ce5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429177"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 

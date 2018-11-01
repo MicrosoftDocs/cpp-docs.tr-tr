@@ -1,10 +1,6 @@
 ---
-title: CProgressCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CProgressCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CProgressCtrl
 - AFXCMN/CProgressCtrl
@@ -26,8 +22,6 @@ f1_keywords:
 - AFXCMN/CProgressCtrl::SetState
 - AFXCMN/CProgressCtrl::SetStep
 - AFXCMN/CProgressCtrl::StepIt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CProgressCtrl [MFC], CProgressCtrl
 - CProgressCtrl [MFC], Create
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b14a3e4fcfbd8287440dddf9a3f660b3bd47911
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ba97dd27fbf70c34461d45755fd008e6ad9099b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585906"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 

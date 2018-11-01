@@ -1,12 +1,6 @@
 ---
-title: 'İşlem: İşlemlerin güncelleştirmeleri (ODBC) etkilemesi | Microsoft Docs'
-ms.custom: ''
+title: 'İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - transactions, updating recordsets
 - ODBC recordsets, transactions
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - CommitTrans method
 - Rollback method, ODBC transactions
 ms.assetid: 9e00bbf4-e9fb-4332-87fc-ec8ac61b3f68
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: c83b7683e843be1f7e5f8d935fcaf9d6141aa214
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 68ff6970243b36b56ab206b16bb2c3608cef71e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066766"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437862"
 ---
 # <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)
 

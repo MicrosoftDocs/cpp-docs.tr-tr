@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2364 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2364
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2364
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2364
 ms.assetid: 4f550571-94b5-42ca-84cb-663fecbead44
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d35701eb47bdf633377652094b847ccdfb31e59
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 051468ea861190dd3f6a28dc272f1bab155145af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100636"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558905"
 ---
 # <a name="compiler-error-c2364"></a>Derleyici Hatası C2364
 

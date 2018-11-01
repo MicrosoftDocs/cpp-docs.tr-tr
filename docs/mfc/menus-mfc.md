@@ -1,28 +1,18 @@
 ---
-title: Menüler (MFC) | Microsoft Docs
-ms.custom: ''
+title: Menüler (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - menus [MFC], updating as context changes
 - menus [MFC], MFC resources for working with
 - menus [MFC], manipulating during execution
 - menus [MFC]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04b6aa92937ce2c7a0b94c5e5b796b0bf8581626
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b0eae559fd15b7b19867cef9f785f7c70f782c30
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385137"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621786"
 ---
 # <a name="menus-mfc"></a>Menüler (MFC)
 

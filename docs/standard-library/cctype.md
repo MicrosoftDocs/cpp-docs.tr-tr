@@ -1,31 +1,21 @@
 ---
-title: '&lt;cctype&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cctype&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cctype>
-dev_langs:
-- C++
 helpviewer_keywords:
 - cctype header
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a41e73b63d6df63d3008c4301e98127ad08fe1c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ce46247d84259998d614fb8ed336231a1c4a91d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841372"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467853"
 ---
 # <a name="ltcctypegt"></a>&lt;cctype&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<ctype.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<ctype.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +26,7 @@ Standart C Kitaplığı üstbilgi içeren \<ctype.h > ve ilişkili adlarıyla ek
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

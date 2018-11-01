@@ -1,10 +1,6 @@
 ---
-title: _tell, _telli64 | Microsoft Docs
-ms.custom: ''
+title: _tell, _telli64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _telli64
 - _tell
@@ -26,8 +22,6 @@ f1_keywords:
 - telli64
 - _telli64
 - _tell
-dev_langs:
-- C++
 helpviewer_keywords:
 - tell function
 - file pointers [C++], getting
@@ -36,20 +30,16 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c47958fdb3723c16f8f2dce03ace54c75ce6176
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 628f37d3b8a39a75fb2329a1b2805426f15e821f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660154"
 ---
 # <a name="tell-telli64"></a>_tell, _telli64
 
-Dosya işaretçisini konumunu alın.
+Dosya işaretçisi konumunu alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,20 +54,20 @@ __int64 _telli64(
 
 ### <a name="parameters"></a>Parametreler
 
-*İşleme*<br/>
-Dosyayı açmak için başvuran tanımlayıcısı dosya.
+*Tanıtıcı*<br/>
+Dosya dosya açmak için başvuran tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisini geçerli konumu. Cihazlarda aramayı kuramadığı dönüş değeri tanımlanmamıştır.
+Dosya işaretçisini geçerli konumu. Cihazlarda arama özelliğine sahip olmayan, dönüş değeri tanımsızdır.
 
-Dönüş değeri-1 m bir hata gösterir. Varsa *işlemek* geçersiz dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EBADF** ve -1 M döndürür.
+-1 L dönüş değeri bir hata gösterir. Varsa *işlemek* bir geçersiz dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EBADF** ve -1 L döndürür.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Tell** işlevi alır (varsa) dosya işaretçisini geçerli konumunu ilişkili *işlemek* bağımsız değişkeni. Konumu dosya başından itibaren bayt sayısı olarak ifade edilir. İçin **_telli64** işlevi, bu değeri bir 64-bit tamsayı olarak ifade edilir.
+**_Tell** işlevi alır (varsa) dosya işaretçisini geçerli konumu ile ilişkili *işlemek* bağımsız değişken. Konum, dosyanın başından itibaren bayt sayısı olarak ifade edilir. İçin **_telli64** işlevi, bu değer, bir 64-bit tamsayı olarak ifade edilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,7 +75,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |-------------|---------------------|
 |**_tell**, **_telli64**|\<io.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

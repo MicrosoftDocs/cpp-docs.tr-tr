@@ -1,27 +1,17 @@
 ---
-title: Sonlandırma işleyicileri kısıtlamaları | Microsoft Docs
-ms.custom: ''
+title: Sonlandırma İşleyicileri Kısıtlamaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - termination handlers [C++], limitations
 - restrictions, termination handlers
 - try-catch keyword [C++], termination handlers
 ms.assetid: 8b1cb481-303f-4e79-b409-57a002a9fa9e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ab3e361fb8d1c0478ec019a9ed0a6ea4fec704e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7b092ee8682dfeef0c8151c56544e36427f40da0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628234"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 

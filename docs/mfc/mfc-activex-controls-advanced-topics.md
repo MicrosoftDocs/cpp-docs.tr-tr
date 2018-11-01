@@ -1,12 +1,6 @@
 ---
-title: 'MFC ActiveX denetimleri: Gelişmiş konular | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Gelişmiş Konular'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], error codes
 - MFC ActiveX controls [MFC], accessing invisible dialog controls
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: defc160b2b45185031160e0ba3dd553f8896e372
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 607fd1c0ee5ae35f46ef26584f7f8e3ac2f1c32f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204697"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645594"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 

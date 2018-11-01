@@ -1,28 +1,18 @@
 ---
-title: short_vector_traits yapısı | Microsoft Docs
-ms.custom: ''
+title: short_vector_traits Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - short_vector_traits
 - AMP_SHORT_VECTORS/short_vector_traits
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant
-dev_langs:
-- C++
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 414231e0a11c7f06c333f0b08c4363ebf5b2dbe5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fd86228417234f705d3f765624cd942c982df875
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456192"
 ---
 # <a name="shortvectortraits-structure"></a>short_vector_traits Yapısı
 

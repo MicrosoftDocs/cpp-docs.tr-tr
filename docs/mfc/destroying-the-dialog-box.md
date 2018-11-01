@@ -1,12 +1,6 @@
 ---
-title: İletişim kutusunu yok etme | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusunu Yok Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog boxes [MFC], deleting
 - destruction, dialog box
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], destroying
 - modal dialog boxes [MFC], destroying
 ms.assetid: dabceee7-3639-4d85-bf34-73515441b3d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 863b70f3bf4e9828d69024b838dce43abbba26be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f84e36a2a002610c294653012c40707fddcaba54
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425918"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607473"
 ---
 # <a name="destroying-the-dialog-box"></a>İletişim Kutusunu Yok Etme
 

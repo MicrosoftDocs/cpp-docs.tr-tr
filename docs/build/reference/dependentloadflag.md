@@ -1,31 +1,21 @@
 ---
 title: / DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük bayrakları)
 description: /DEPENDENTLOADFLAG seçeneği varsayılan bayrakları LoadLibrary kullanılarak yüklenen DLL'ler için ayarlar.
-ms.custom: ''
 ms.date: 05/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - dependentloadflag
-dev_langs:
-- C++
 helpviewer_keywords:
 - LINK tool [C++], dependent load flags
 - -DEPENDENTLOADFLAG linker option
 - linker [C++], DEPENDENTLOADFLAG
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b6d5099e90e4a4bf83874fe8e761280bc277830
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 80065bb4e67674c49761d0832395ae535bbfbf24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688123"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604300"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük bayrakları)
 
@@ -61,7 +51,7 @@ Bağlantı seçeneğini belirtirseniz `/DEPENDENTLOADFLAG:0xA00` (Birleşik bayr
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4557 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4557
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4557
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4557
 ms.assetid: 7d9db716-03b2-4ee5-9b09-ba8aa5aa7e4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97423da084c005e427b21043e75ebe850623c63b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5b236559708759cb30487ef9a8fde92cc42889c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055318"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608633"
 ---
 # <a name="compiler-warning-level-3-c4557"></a>Derleyici Uyarısı (Düzey 3) C4557
 

@@ -1,28 +1,18 @@
 ---
-title: common_type sınıfı | Microsoft Docs
-ms.custom: ''
+title: common_type Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::common_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - common_type class
 - common_type
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53ea9683576e891d120ce17651ed853a0f101780
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f627705109315d3fee84c1777390f00e1e2010ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850033"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605237"
 ---
 # <a name="commontype-class"></a>common_type Sınıfı
 
@@ -53,15 +43,15 @@ struct common_type<T, U, V...> {
 
 ### <a name="parameters"></a>Parametreler
 
-Olan türlerinin listesi [tamamlamak türleri](../c-language/incomplete-types.md) veya geçersiz.
+Olan türlerinin listesi [tamamlamak türleri](../c-language/incomplete-types.md) veya void.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`type` Üye olduğu tüm hangi türlerine parametresinde listesi dönüştürülebilir ortak türü.
+`type` Parametresinde tüm türlerin listesi dönüştürülebileceği ortak tür üyesidir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki programı bazı doğru kullanım senaryoları ve testleri için sonuçları gösterir.
+Aşağıdaki program, bazı doğru kullanım senaryolarını ve sonuçlar için testleri göstermektedir.
 
 ```cpp
 // Compile using cl.exe /EHsc

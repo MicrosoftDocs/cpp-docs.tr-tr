@@ -1,23 +1,13 @@
 ---
-title: ASCII karakter kümesi | Microsoft Docs
-ms.custom: ''
+title: ASCII Karakter Kümesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 2390fd40-5fe2-4410-a06c-ccc0fea2709b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1df65608e22d5d034a66a9259f237c2300649162
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 85ec88af65a1a719da1871c2c64409f9a918a03f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098480"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661570"
 ---
 # <a name="ascii-character-set"></a>ASCII Karakter Kümesi
 

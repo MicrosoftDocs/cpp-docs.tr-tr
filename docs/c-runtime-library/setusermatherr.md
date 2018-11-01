@@ -1,10 +1,6 @@
 ---
-title: __setusermatherr | Microsoft Docs
-ms.custom: ''
+title: __setusermatherr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __setusermatherr
 apilocation:
@@ -19,21 +15,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - __setusermatherr
-dev_langs:
-- C++
 helpviewer_keywords:
 - __setusermatherr
 ms.assetid: f306818d-381a-4d68-8739-71b92bacb5ea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c118cc5537690e8978ed2fd96b7727054ce5920
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 116abd203cc289c63535a8e41a005a6fd248b08b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640472"
 ---
 # <a name="setusermatherr"></a>__setusermatherr
 

@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2063 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2063
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2063
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2063
 ms.assetid: 12976b25-2159-4e0c-9df3-dcfac61091ee
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5ce02fcbab6452b45f38d7d8becff64a880d403
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d10117948690b88eebdc2b3ce0bf8c360f6220f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514354"
 ---
 # <a name="ml-nonfatal-error-a2063"></a>ML Önemli Olmayan Hatası A2063
 

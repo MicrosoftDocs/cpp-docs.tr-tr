@@ -1,28 +1,18 @@
 ---
-title: auto_handle | Microsoft Docs
-ms.custom: ''
+title: auto_handle
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_handle
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle
 ms.assetid: 505e967a-b75f-4bd8-8f46-57eb66c53538
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: b609645c9a65429cdf67bb001e1c4a81b12c4f10
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 24b068df7ef34854bb8b1c0504fd5b4dcaaea799
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382329"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498111"
 ---
 # <a name="autohandle"></a>auto_handle
 

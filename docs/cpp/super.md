@@ -1,27 +1,17 @@
 ---
-title: __super | Microsoft Docs
-ms.custom: ''
+title: __super
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __super_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __super keyword [C++]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db00272a6fa779458871814bd51ccab7b3e309c6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 778ed2d80aa926c7282073a99898a6aa355a3379
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602624"
 ---
 # <a name="super"></a>__super
 

@@ -1,10 +1,6 @@
 ---
-title: _getws alır | Microsoft Docs
-ms.custom: ''
+title: gets, _getws
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _getws
 - gets
@@ -21,8 +17,6 @@ f1_keywords:
 - _getts
 - gets
 - _getws
-dev_langs:
-- C++
 helpviewer_keywords:
 - getws function
 - getts function
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - gets function
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 354678a99ec4c0abf172ff182f6f3f8b439448ff
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c0133832142f49cfe3674cf651173f1c30dfc0cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662845"
 ---
 # <a name="gets-getws"></a>gets, _getws
 

@@ -1,28 +1,18 @@
 ---
-title: ATL uygulamasını yeniden dağıtma | Microsoft Docs
-ms.custom: ''
+title: ATL uygulamasını yeniden dağıtma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, redistributing
 - redistributing ATL
 - redistributing OLE DB templates
 - OLE DB templates, redistributing
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6db7e553d2f9e268b39bb9c02e70bb59815aef3a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 183363f7e69fc6d14ce3f9e681992e774b198928
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405943"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517110"
 ---
 # <a name="redistributing-an-atl-application"></a>ATL uygulamasını yeniden dağıtma
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCTasksPane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCTasksPane sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCTasksPane
 - AFXTASKSPANE/CMFCTasksPane
@@ -102,8 +98,6 @@ f1_keywords:
 - AFXTASKSPANE/CMFCTasksPane::ShowTaskByCmdId
 - AFXTASKSPANE/CMFCTasksPane::Update
 - AFXTASKSPANE/CMFCTasksPane::OnActivateTasksPanePage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCTasksPane [MFC], CMFCTasksPane
 - CMFCTasksPane [MFC], AddGroup
@@ -200,16 +194,12 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1dcf14a23331ef783a25d75ed167703dcd4ffd7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e11d1f95cf44756a39ab52fcd4dfeb87addc6e17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563663"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane sınıfı
 

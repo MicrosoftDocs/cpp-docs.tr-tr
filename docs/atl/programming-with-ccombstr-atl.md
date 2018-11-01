@@ -1,26 +1,16 @@
 ---
-title: CComBSTR (ATL) ile programlama | Microsoft Docs
-ms.custom: ''
+title: CComBSTR (ATL) ile programlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComBSTR class, programming with
 - Unicode, using CComBSTR [ATL]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6a2e6c334016c79f02dc43e9790d7dfc4645212
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 44689b45d567c524d6db1446cd65201c21499c91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633122"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR (ATL) ile programlama
 

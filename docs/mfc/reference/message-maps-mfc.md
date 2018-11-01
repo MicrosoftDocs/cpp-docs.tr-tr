@@ -1,30 +1,20 @@
 ---
-title: İleti eşlemeleri (MFC) | Microsoft Docs
-ms.custom: ''
+title: İleti Eşlemeleri (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.messages
-dev_langs:
-- C++
 helpviewer_keywords:
 - message maps [MFC], MFC
 - Windows messages [MFC], message maps
 - messages [MFC], Windows
 - MFC, messages
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9d8953d637275ab44c43a58a15553f8e4284f84
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dda989318d6c6915ef8bc4e668fd238e8167de08
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374255"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599192"
 ---
 # <a name="message-maps-mfc"></a>İleti Eşlemeleri (MFC)
 

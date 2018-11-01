@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4365 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4365
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4365
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4365
 ms.assetid: af4b4191-bdfd-4dbb-8229-3ba4405df257
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b8188e3fc861573025a4855102e3ced14d3136fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f9f6df9f72608f0c1197e0602c3f54548f8efcb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600752"
 ---
 # <a name="compiler-warning-level-4-c4365"></a>Derleyici Uyarısı (düzey 4) C4365
 

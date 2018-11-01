@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::reverse_iterator | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::reverse_iterator
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - reverse_iterator method
 ms.assetid: 1d190c41-56b1-462e-b564-793b2a883c26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d09513fa0f8b53c13ad1302533d4c0606b28743c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 529c31ca960c2c7aee70c901bc1c1e0bd5d6e466
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537182"
 ---
 # <a name="container-classreverseiterator"></a>Kapsayıcı Sınıfı::reverse_iterator
 

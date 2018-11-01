@@ -1,14 +1,8 @@
 ---
-title: -SYMBOLS | Microsoft Docs
-ms.custom: ''
+title: /SYMBOLS
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /symbols
-dev_langs:
-- C++
 helpviewer_keywords:
 - symbols, dumping
 - public symbols
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - /SYMBOLS dumpbin option
 - -SYMBOLS dumpbin option
 ms.assetid: 34bcae90-4561-4c77-a80c-065508dec39a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8759ac9ae4de33862c8f0fa698faecc7b14ff1e7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d71f0e0ce02bca1e50d177ffbfd7ffe61e9e8998
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667612"
 ---
 # <a name="symbols"></a>/SYMBOLS
 

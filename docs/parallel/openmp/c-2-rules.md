@@ -1,23 +1,13 @@
 ---
-title: C.2 kurallar | Microsoft Docs
-ms.custom: ''
+title: C.2 Kurallar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4d52fef7-3eb7-4480-a335-8ed48681092b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c5845a9125bb32254fc0c03b03e9b6076a086d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7c0de4c14e229716bcf764d9859be439090368b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404780"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642812"
 ---
 # <a name="c2-rules"></a>C.2 Kurallar
 
@@ -199,18 +189,18 @@ Gösterimi, standart C 6.1 bölümünde açıklanmıştır. Bu dil bilgisi ek Op
 &nbsp;&nbsp;&nbsp;&nbsp;*threadprivate yönergesi*
 
 *threadprivate yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**# pragma omp threadprivate (** *değişken listesi***)** *yeni satır* 
+&nbsp;&nbsp;&nbsp;&nbsp;**# pragma omp threadprivate (** *değişken listesi***)** *yeni satır*
 
 *Veri yan*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Özel (** *değişken listesi* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**copyprivate (***değişken listesi***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**firstprivate (***değişken listesi***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**lastprivate (** *değişken listesi***)** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**copyprivate (***değişken listesi***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**firstprivate (***değişken listesi***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**lastprivate (** *değişken listesi***)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Paylaşılan (** *değişken listesi* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan (paylaşılan)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan (hiçbiri)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**azaltma (***azaltma işleci***:***değişken listesi***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**copyin (***değişken listesi***)** 
+&nbsp;&nbsp;&nbsp;&nbsp;**azaltma (***azaltma işleci***:***değişken listesi***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**copyin (***değişken listesi***)**
 
 *Azaltma işleci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Şunlardan biri:  **+  \* -& ^ &#124; & &&#124;&#124;**

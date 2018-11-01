@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2911 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2911
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2911
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2911
 ms.assetid: 83c7c01a-ab6a-4179-9fb0-289a9ec8d44e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c242e72ab4f13f56644b9ab73c2a168e0591012d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56977f481a77c1f5865bec5d6ecc01c99d8224cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657268"
 ---
 # <a name="compiler-error-c2911"></a>Derleyici Hatası C2911
 

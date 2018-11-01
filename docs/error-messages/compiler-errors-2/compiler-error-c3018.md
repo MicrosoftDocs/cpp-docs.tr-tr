@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3018 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3018
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3018
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3018
 ms.assetid: 685be45f-f116-43a8-a88d-05ab6616e2f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9813bd92834a2bc421b55c60eda2220ea14c7d97
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7a16c81cf2b9c2a815d2e35d10ae82d5a75547b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586972"
 ---
 # <a name="compiler-error-c3018"></a>Derleyici Hatası C3018
 

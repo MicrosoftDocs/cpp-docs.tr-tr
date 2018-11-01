@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1076 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1076
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1076
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1076
 ms.assetid: 84ac1180-3e8a-48e8-9f77-7f18a778b964
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b7ec56c0e3d9cdbd954e9277a63d45f2ee42435
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 70525426182a923de85eecbd5a3335693d6e8949
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644697"
 ---
 # <a name="fatal-error-c1076"></a>Önemli hata C1076
 

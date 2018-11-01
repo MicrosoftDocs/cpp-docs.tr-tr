@@ -1,10 +1,6 @@
 ---
-title: CStatusBarCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStatusBarCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStatusBarCtrl
 - AFXCMN/CStatusBarCtrl
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXCMN/CStatusBarCtrl::SetSimple
 - AFXCMN/CStatusBarCtrl::SetText
 - AFXCMN/CStatusBarCtrl::SetTipText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStatusBarCtrl [MFC], CStatusBarCtrl
 - CStatusBarCtrl [MFC], Create
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0dc416c47634de522a20f81d7240cc1ea5797551
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 71ae39cb62da7938880973dc48b65ed69b9c8b92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392066"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569743"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 

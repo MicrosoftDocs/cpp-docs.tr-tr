@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4742 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4742
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4742
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4742
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 622a1b1cd62024da58191ce1312c391dd39e0d28
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 00ac67fec3aafa5a259b5222bd6bb8654210fa61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088598"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436368"
 ---
 # <a name="compiler-warning-level-1-c4742"></a>Derleyici Uyarısı (düzey 1) C4742
 

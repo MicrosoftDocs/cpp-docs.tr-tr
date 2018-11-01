@@ -1,31 +1,21 @@
 ---
-title: auto_handle::operator! | Microsoft Docs
-ms.custom: ''
+title: auto_handle::operator!
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr.auto_handle.operator!
 - msclr::auto_handle::operator!
 - auto_handle.operator!
 - auto_handle::operator!
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator!
 ms.assetid: 3f6c7729-3260-4842-87f9-c491c140b299
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 57f342fb8a948a3523626ff1de8a31de35b897de
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 37c5a35d2cecd3e2e6bc58994fc54704f9169200
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558177"
 ---
 # <a name="autohandleoperator"></a>auto_handle::operator!
 

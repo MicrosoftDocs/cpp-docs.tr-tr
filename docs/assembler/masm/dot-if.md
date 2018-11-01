@@ -1,27 +1,17 @@
 ---
-title: . EĞER | Microsoft Docs
-ms.custom: ''
+title: .IF
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .IF
-dev_langs:
-- C++
 helpviewer_keywords:
 - .IF directive
 ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7bd5ba5821b4dcfb2d088e31816f50540445018
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cf9c594d843c937dd2191bee2a7cebadbc615c82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691550"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483648"
 ---
 # <a name="if"></a>.IF
 

@@ -1,27 +1,17 @@
 ---
-title: Satır içi dosya belirtme | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Dosya Belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, inline files
 - inline files [C++], specifying NMAKE
 - files [C++], inline
 ms.assetid: 393eccfb-3fc9-4bac-a30c-8ac8d221cca3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73983094f10088920100b4fbbb8d870aee13f05e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8f8868ce3755bd47f779576a7e44125f53314606
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720570"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648707"
 ---
 # <a name="specifying-an-inline-file"></a>Satır İçi Dosya Belirtme
 

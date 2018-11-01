@@ -1,23 +1,13 @@
 ---
-title: 3.1.6 omp_in_parallel işlevi | Microsoft Docs
-ms.custom: ''
+title: 3.1.6 omp_in_parallel İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: db6e3a63-2a0a-4b8e-8cc6-c6b49edca5fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ba6c35d42f8497869894bd5ec95b83f0c8793f1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2f251cb994771278c7f4e3f50f01e02126f6f88d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482049"
 ---
 # <a name="316-ompinparallel-function"></a>3.1.6 omp_in_parallel İşlevi
 

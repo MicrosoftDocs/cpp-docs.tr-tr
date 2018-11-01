@@ -1,29 +1,19 @@
 ---
-title: bad_typeid özel durumu | Microsoft Docs
-ms.custom: ''
+title: bad_typeid Özel Durumu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - bad_typeid
 - bad_typeid_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - bad_typeid exception
 - exceptions [C++], bad_typeid
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9cc93ab5a0f2d7fce12e926d571881ccb9c070fd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5d53d2e25b56aa78edaebcd4be0e468993ebb8f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092212"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514042"
 ---
 # <a name="badtypeid-exception"></a>bad_typeid Özel Durumu
 
@@ -33,7 +23,7 @@ ms.locfileid: "46092212"
 
 ```
 catch (bad_typeid)
-   statement
+   statement
 ```
 
 ## <a name="remarks"></a>Açıklamalar

@@ -1,25 +1,17 @@
 ---
-title: Platform::ıbox arabirimi | Microsoft Docs
-ms.custom: ''
+title: Platform::ıbox arabirimi
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Namespace not found::Platform
 - VCCORLIB/Namespace not found::Platform::Value
-dev_langs:
-- C++
 ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 540b759153b8fac0532a8817d89e704d55fbffd3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 4cca648b3b81dbf0d9f8d3e5f87625464f1d8385
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102084"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625054"
 ---
 # <a name="platformibox-interface"></a>Platform::ıbox arabirimi
 

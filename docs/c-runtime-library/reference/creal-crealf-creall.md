@@ -1,11 +1,6 @@
 ---
-title: creal, crealf, creall | Microsoft Docs
-ms.custom: ''
+title: creal, crealf, creall
 ms.date: 03/30/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - creal
 - crealf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/creal
 - complex/crealf
 - complex/creall
-dev_langs:
-- C++
 helpviewer_keywords:
 - creal function
 - crealf function
 - creall function
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b8d3ca02aeb0f3f9b12c8b82cbb27d9bd3ad3aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 32fd0898ccac80b74b467dbfe0a136eef139e642
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400866"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604314"
 ---
 # <a name="creal-crealf-creall"></a>creal, crealf, creall
 
-Karmaşık bir sayının gerçek bölüm alır.
+Karmaşık bir sayıyı gerçek kısmını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,23 +57,23 @@ long double creal( _Lcomplex z );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Bir karmaşık sayı.
+Karmaşık bir sayıyı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Gerçek parçası *z*.
+Gerçek bir parçası *z*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **creal** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve return **float** veya **uzun çift** değerleri. Bir C programı **creal** her zaman alan bir **_Dcomplex** değeri ve döndürür bir **çift** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **creal** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float** veya **uzun çift** değerleri. C programında **creal** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**creal**, **crealf**, **creall**|\<Complex.h >|\<ccomplex >|
 
-**_Fcomplex**, **_Dcomplex**, ve **_Lcomplex** türleridir uygulanmayan yerel C99 türleri Microsoft'a özgü eşdeğerlerini **_Complex float** , **çift _Complex**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Fcomplex**, **_Dcomplex**, ve **_Lcomplex** türleridir Microsoft'a özgü eşdeğerleri uygulanmayan yerel C99 türlerinin **_Complex Kaydır** , **çift _Complex**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

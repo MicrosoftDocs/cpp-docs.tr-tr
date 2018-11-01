@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1002 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1002
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1002
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1002
 ms.assetid: bd6d274a-c7b4-43af-8bf2-23c5e442aa22
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82f08255484b11f9f5d87fb67ac8ac7b401d4f6e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0588da99994be547742cc530ba435002a2d73359
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044151"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640511"
 ---
 # <a name="fatal-error-c1002"></a>Önemli hata C1002
 

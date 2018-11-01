@@ -1,31 +1,21 @@
 ---
-title: CCachedDataPathProperty sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCachedDataPathProperty sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCachedDataPathProperty
 - AFXCTL/CCachedDataPathProperty
 - AFXCTL/CCachedDataPathProperty::CCachedDataPathProperty
 - AFXCTL/CCachedDataPathProperty::m_Cache
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCachedDataPathProperty [MFC], CCachedDataPathProperty
 - CCachedDataPathProperty [MFC], m_Cache
 ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06a35f51b821d7c8e5b31806a96ac2bde0d0474a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1605d5fe1549ba5172f61583cce586a353c2ab56
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485663"
 ---
 # <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty sınıfı
 

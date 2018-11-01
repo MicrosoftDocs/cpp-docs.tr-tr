@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2120 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2120
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2120
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2120
 ms.assetid: b0f3f66c-6cd2-4f48-9ea3-c270b53c2b8c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d4f4247d8e752e71b86829ea61756f2f04d26762
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 699a80b2cdb1de175c78efb918ba9389ec3695f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106005"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486300"
 ---
 # <a name="compiler-error-c2120"></a>Derleyici Hatası C2120
 

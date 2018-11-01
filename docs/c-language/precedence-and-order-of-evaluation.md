@@ -1,28 +1,18 @@
 ---
-title: Öncelik ve değerlendirme sırası | Microsoft Docs
-ms.custom: ''
+title: Öncelik ve Değerlendirme Sırası
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - associativity of operators [C++]
 - precedence [C++], operators
 - data binding [C++], operator precedence
 - operators [C++], precedence
 ms.assetid: 201f7864-0c51-4c55-9d6f-39c5d013bcb0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 953473102a42792dc3ae3afa3b1a8caf507e5648
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 1b14f7a7d0c1d682c641ab441dc3e40c23688392
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463264"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve Değerlendirme Sırası
 

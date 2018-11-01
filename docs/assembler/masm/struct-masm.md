@@ -1,27 +1,17 @@
 ---
-title: YAPI (MASM) | Microsoft Docs
-ms.custom: ''
+title: STRUCT (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - struct
-dev_langs:
-- C++
 helpviewer_keywords:
 - STRUCT directive
 ms.assetid: 70c3ba6b-00db-461e-8dd9-eafd3ae5b3c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbec69cc35d95ab42008dce19a432f28f847bd06
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b64e6adbabe847600147dbd773328aadf4225cb2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525690"
 ---
 # <a name="struct-masm"></a>STRUCT (MASM)
 

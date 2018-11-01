@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1197 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1197
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1197
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1197
 ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 58561e7bd906fc750779ef53a4f68ec27088a3b7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e1c00a001c807b0cc6a5946b61ca4e9d5dc0167a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604158"
 ---
 # <a name="fatal-error-c1197"></a>Önemli hata C1197
 

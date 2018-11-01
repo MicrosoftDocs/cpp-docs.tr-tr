@@ -1,29 +1,19 @@
 ---
-title: 'Nasıl yapılır: PInvoke kullanarak dizileri sıralama | Microsoft Docs'
+title: 'Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - marshaling [C++], arrays
 - platform invoke [C++], arrays
 - interop [C++], arrays
 - data marshaling [C++], arrays
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 9c07aba54f621011d2dd4831d7dfb6b536073fa9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bd349fb1eca63fc336a30f4f23ae337d1191bb26
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628520"
 ---
 # <a name="how-to-marshal-arrays-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama
 

@@ -1,29 +1,19 @@
 ---
-title: '&lt;bellek&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Bellek&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::<memory>
 - <memory>
 - std::<memory>
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory header
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b90a96816855e08610d0f63f3ab5c237d564453
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: def0b5560abe3ad6d1a0777e2878d9a3030c44ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217955"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538456"
 ---
 # <a name="ltmemorygt"></a>&lt;Bellek&gt;
 

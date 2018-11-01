@@ -1,12 +1,6 @@
 ---
-title: C ek işleçleri | Microsoft Docs
-ms.custom: ''
+title: C Ek İşleçleri
 ms.date: 10/18/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - usual arithmetic conversions
 - operators [C], addition
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - additive operators
 - arithmetic operators [C++], additive operators
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 339904e3fe75c712254f3a7802fc76a0e283c8e5
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: af7302adaafc3a91287f6d15a11c8e784f35c33d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808361"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650722"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 

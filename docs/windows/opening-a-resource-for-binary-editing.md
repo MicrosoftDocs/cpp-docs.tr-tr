@@ -1,29 +1,18 @@
 ---
-title: Bir kaynağı (C++) ikili düzenleme için açma | Microsoft Docs
-ms.custom: ''
+title: Bir kaynağı (C++) ikili düzenleme için açma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.binary
-dev_langs:
-- C++
 helpviewer_keywords:
 - binary data, editing
 - resources [C++], opening for binary editing
 ms.assetid: d3cdb0e4-da66-410d-8e49-b29073ff2929
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 256ceee14f38885259da11453efef8451d34248c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cc66c9d06a8549984e9347af776c56883f8e22f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491188"
 ---
 # <a name="opening-a-resource-for-binary-editing-c"></a>Bir kaynağı (C++) ikili düzenleme için açma
 

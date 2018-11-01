@@ -1,10 +1,6 @@
 ---
-title: CD2DGradientBrush sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DGradientBrush sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DGradientBrush
 - AFXRENDERTARGET/CD2DGradientBrush
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma
 - AFXRENDERTARGET/CD2DGradientBrush::m_extendMode
 - AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DGradientBrush [MFC], CD2DGradientBrush
 - CD2DGradientBrush [MFC], Destroy
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CD2DGradientBrush [MFC], m_extendMode
 - CD2DGradientBrush [MFC], m_pGradientStops
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4332bd4f49dad6faadcf7faea511417fdd633644
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bc26dd495fb9bd91aaf5eac192011faad80bc668
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506060"
 ---
 # <a name="cd2dgradientbrush-class"></a>CD2DGradientBrush sınıfı
 

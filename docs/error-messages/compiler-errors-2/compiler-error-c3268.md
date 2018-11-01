@@ -1,41 +1,31 @@
 ---
-title: Derleyici Hatası C3268 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3268
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3268
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3268
 ms.assetid: d74a630c-daea-4e29-9759-83efef7fb184
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eac0c4e7c25df466ecf1e7e28bccf9ee2a2e2953
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c766488b29273f321feffa8e38a97e54454db7b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480541"
 ---
 # <a name="compiler-error-c3268"></a>Derleyici Hatası C3268
 
-> '*işlevi*': genel bir işlevi veya genel bir sınıf işlevinin üye değişken parametre listesine sahip olamaz
+> '*işlevi*': genel bir işlev veya bir genel sınıfın üye işlevi bir değişken parametre listesine sahip olamaz
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 Bkz: [genel türler](../../windows/generics-cpp-component-extensions.md) daha fazla bilgi için.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3268 oluşturur.
+Aşağıdaki örnek, C3268 oluşturur.
 
 ```cpp
 // C3268.cpp

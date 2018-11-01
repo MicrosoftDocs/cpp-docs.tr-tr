@@ -1,29 +1,19 @@
 ---
-title: -HIGHENTROPYVA | Microsoft Docs
-ms.custom: ''
+title: /HIGHENTROPYVA
 ms.date: 06/12/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /HIGHENTROPYVA
-dev_langs:
-- C++
 helpviewer_keywords:
 - HIGHENTROPYVA editbin option
 - -HIGHENTROPYVA editbin option
 - /HIGHENTROPYVA editbin option
 ms.assetid: ef4b7c63-440d-40ca-b39d-edefb3217505
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fec9314be9d69e2cb0af2a98884bd78de1ff679
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 90d3c868eaab85e3b1a2a416c9aa14b0e27ec8f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603989"
 ---
 # <a name="highentropyva"></a>/HIGHENTROPYVA
 

@@ -1,32 +1,22 @@
 ---
-title: CComSimpleThreadAllocator sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComSimpleThreadAllocator sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComSimpleThreadAllocator
 - ATLBASE/ATL::CComSimpleThreadAllocator
 - ATLBASE/ATL::CComSimpleThreadAllocator::GetThread
-dev_langs:
-- C++
 helpviewer_keywords:
 - threading [ATL], selecting threads
 - ATL threads
 - CComSimpleThreadAllocator class
 - ATL threads, allocating
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1538d5148eeb1eb95c51150a43ef5dd7b107cae3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1644014048b27b7ab6076783c5025140527a7ff5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033556"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637547"
 ---
 # <a name="ccomsimplethreadallocator-class"></a>CComSimpleThreadAllocator sınıfı
 

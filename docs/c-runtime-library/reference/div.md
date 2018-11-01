@@ -1,10 +1,6 @@
 ---
-title: div, ldiv, lldiv | Microsoft Docs
-ms.custom: ''
+title: div ldiv, lldiv
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - div
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - div
-dev_langs:
-- C++
 helpviewer_keywords:
 - div function
 - quotients, computing
@@ -31,20 +25,16 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ba1625105adf6edbc6419bd4fdabc8bda5d0e98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0ee1b3b6a5d7b15470ffe1e667b4077d1f9581e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396598"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653433"
 ---
-# <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
+# <a name="div-ldiv-lldiv"></a>div ldiv, lldiv
 
-Sayının ve iki tamsayı değerleri geri kalanı hesaplar.
+Bölümü ve iki tamsayı değerinin kalanını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,17 +70,17 @@ lldiv_t div(
 Pay.
 
 *denom*<br/>
-Payda değeri.
+Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**div** bağımsız değişken türü kullanarak adında **int** türü yapısını döndürür **div_t**, sayının ve kalanı oluşur. Dönüş değeri türü bağımsız değişkenleri ile **uzun** olan **ldiv_t**ve dönüş değeri türü bağımsız değişkenleri ile **uzun** **uzun** olan**lldiv_t**. **div_t**, **ldiv_t**, ve **lldiv_t** tanımlanan \<stdlib.h >.
+**div** türünde bağımsız değişkenler kullanarak çağrılır **int** türünden bir yapıyı döndürür **div_t**, bölümü ve kalanı içerir. Dönüş değeri türü bağımsız değişkenler ile **uzun** olduğu **ldiv_t**ve dönüş değeri türü bağımsız değişkenler ile **uzun** **uzun** olan**lldiv_t**. **div_t**, **ldiv_t**, ve **lldiv_t** tanımlanan \<stdlib.h >.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Div** işlev böler *numarası* tarafından *denom* ve böylece sayının ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) yapısı içeren sayının **quot**ve kalan **rem**. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.
+**Div** işlev böler *numarası* tarafından *denom* ve böylece bölümü ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) yapısı kalanını içerir **quot**ve kalanı **rem**. Bölüm işareti matematiksel olarak aynıdır. Mutlak değeri matematiksel sayının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisi ile sona erer.
 
-Aşırı **div** bağımsız değişken türü yararlanma **uzun** veya **uzun** **uzun** yalnızca C++ kodu için kullanılabilir. Dönüş türleri [ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) üyeleri içeren **quot** ve **rem**, üyeleriolarakaynıanlamasahip**div_t**.
+Aşırı Yüklemeleri **div** türünde bağımsız değişkenler ele **uzun** veya **uzun** **uzun** yalnızca C++ kodu için mevcuttur. Dönüş türleri [ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) üyeleri içeren **quot** ve **rem**, üyeleriileaynıanlamasahiptir**div_t**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -98,7 +88,7 @@ Aşırı **div** bağımsız değişken türü yararlanma **uzun** veya **uzun**
 |-------------|---------------------|
 |**div**, **ldiv**, **lldiv**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

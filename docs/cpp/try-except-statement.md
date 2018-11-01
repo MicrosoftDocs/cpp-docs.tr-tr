@@ -1,10 +1,6 @@
 ---
-title: deneyin-except deyimi | Microsoft Docs
-ms.custom: ''
+title: try-except Deyimi
 ms.date: 10/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _abnormal_termination_cpp
 - _exception_code_cpp
@@ -18,8 +14,6 @@ f1_keywords:
 - _exception_info_cpp
 - EXCEPTION_EXECUTE_HANDLER
 - _abnormal_termination
-dev_langs:
-- C++
 helpviewer_keywords:
 - __try keyword [C++]
 - EXCEPTION_CONTINUE_EXECUTION macro
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af4d14eb3fad691a5ff10665a83879ae4319a3d9
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 0a243225d1569bd203090085e1817bef7094f1e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162041"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614727"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
@@ -51,7 +41,7 @@ ms.locfileid: "49162041"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **__try** <br/>
+> **__try** <br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;Korumalı kod<br/>
 > }<br/>

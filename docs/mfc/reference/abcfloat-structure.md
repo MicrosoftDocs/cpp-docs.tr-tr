@@ -1,27 +1,17 @@
 ---
-title: ABCFLOAT yapısı | Microsoft Docs
-ms.custom: ''
+title: ABCFLOAT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ABCFLOAT
-dev_langs:
-- C++
 helpviewer_keywords:
 - ABCFLOAT structure [MFC]
 ms.assetid: 338e7e15-9d2c-42d0-aa80-273acfde5cc5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a9bbece0773c14a4a8b545bc56209bf682e22c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b9e3923e8c70e38fe5efe959db8da43118cc6445
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443672"
 ---
 # <a name="abcfloat-structure"></a>ABCFLOAT Yapısı
 

@@ -1,28 +1,18 @@
 ---
-title: __svm_clgi | Microsoft Docs
-ms.custom: ''
+title: __svm_clgi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __svm_clgi
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLGI instruction
 - __svm_clgi intrinsic
 ms.assetid: 6640f5ab-9472-46f9-a042-e15c4f1ff858
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 378dd025b4db769645ca53a01504c195c1265ac6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9f3484cc5cbffea1315d546ced317dfdfceee9e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618896"
 ---
 # <a name="svmclgi"></a>__svm_clgi
 

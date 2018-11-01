@@ -1,26 +1,16 @@
 ---
-title: Ayrı bir öğe için görüntüleri ayarlama | Microsoft Docs
-ms.custom: ''
+title: Ayrı Bir Öğe için Görüntüleri Ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - extended combo boxes [MFC], images
 - images [MFC], combo box items
 ms.assetid: bde83db8-23a7-4e35-837a-c86447d2c0af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ddf2f3a57511e227a934f11262f46b528dc20aa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 61e152534dbea09fbca0af819b0847e82a1c4146
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373496"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512079"
 ---
 # <a name="setting-the-images-for-an-individual-item"></a>Ayrı Bir Öğe için Görüntüleri Ayarlama
 

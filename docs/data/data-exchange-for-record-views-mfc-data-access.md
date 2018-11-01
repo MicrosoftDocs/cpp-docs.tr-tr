@@ -1,12 +1,6 @@
 ---
-title: Kayıt görünümleri (MFC veri erişimi) için veri değişimi | Microsoft Docs
-ms.custom: ''
+title: Kayıt görünümleri (MFC veri erişimi) için veri değişimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - RFX (record field exchange), data exchange mechanism
 - RFX (record field exchange), record views
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), record views
 - RFX (record field exchange)
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 6b6b0109baaf17f804a0ea15eff2e9e766196b86
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d3b1c5b997baa0938c532c7a2806d5e65eb125a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546486"
 ---
 # <a name="data-exchange-for-record-views---mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için veri değişimi
 

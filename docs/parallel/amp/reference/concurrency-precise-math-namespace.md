@@ -1,10 +1,6 @@
 ---
-title: CONCURRENCY::precise_math Namespace | Microsoft Docs
-ms.custom: ''
+title: Concurrency::precise_math Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - AMP_MATH/Concurrency::acos
 - AMP_MATH/Concurrency::acosf
@@ -136,19 +132,13 @@ f1_keywords:
 - AMP_MATH/Concurrency::tgammaf
 - AMP_MATH/Concurrency::trunc
 - AMP_MATH/Concurrency::truncf
-dev_langs:
-- C++
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d89e725b1aa517fe7a9f37cc948bb560e8e8ee24
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6d4f05595f1501fb55938d6875f21b9a9079d043
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462341"
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math Ad Alanı
 

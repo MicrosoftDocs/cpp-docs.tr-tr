@@ -1,10 +1,6 @@
 ---
-title: Irunnableobjectımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Irunnableobjectımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IRunnableObjectImpl
 - ATLCTL/ATL::IRunnableObjectImpl
@@ -13,8 +9,6 @@ f1_keywords:
 - ATLCTL/ATL::IRunnableObjectImpl::LockRunning
 - ATLCTL/ATL::IRunnableObjectImpl::Run
 - ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - containers, running controls
 - IRunnableObjectImpl class
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - controls [ATL], running
 - controls [C++], container running in ATL
 ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ad1efa3badf310a78b69d3abba5b9874e01daf7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ebee914ffb9caea905b9bf2daab87dc379ab20e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646530"
 ---
 # <a name="irunnableobjectimpl-class"></a>Irunnableobjectımpl sınıfı
 

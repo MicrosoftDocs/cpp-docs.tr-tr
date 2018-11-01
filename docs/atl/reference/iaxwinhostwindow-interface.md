@@ -1,10 +1,6 @@
 ---
-title: Iaxwinhostwindow arabirimi | Microsoft Docs
-ms.custom: ''
+title: Iaxwinhostwindow arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IAxWinHostWindow
 - ATLIFACE/ATL::IAxWinHostWindow
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLIFACE/ATL::QueryControl
 - ATLIFACE/ATL::SetExternalDispatch
 - ATLIFACE/ATL::SetExternalUIHandler
-dev_langs:
-- C++
 helpviewer_keywords:
 - IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bee312cd5e7a88dd0798778d5f8385df265d78a1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e389dc253f24eed2fee7e1d552be931a23f5e3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099784"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637326"
 ---
 # <a name="iaxwinhostwindow-interface"></a>Iaxwinhostwindow arabirimi
 

@@ -1,10 +1,6 @@
 ---
-title: _getw | Microsoft Docs
-ms.custom: ''
+title: _getw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getw
 apilocation:
@@ -22,27 +18,21 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _getw
-dev_langs:
-- C++
 helpviewer_keywords:
 - _getw function
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3caffb90252780b833b80e3e5d1cd6d5ef6b0fcb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 615d3ac9bdc73ad200368eaeabf7c84951bc91ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487613"
 ---
 # <a name="getw"></a>_getw
 
-Tamsayı bir akıştan alır.
+Bir akıştan tamsayı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,16 +44,16 @@ int _getw(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_getw** okuma Integer değeri döndürür. Dönüş değeri **EOF** bir hata veya dosya sonu gösterir. Ancak, çünkü **EOF** değeri de yasal tamsayı değeri, kullanın **feof** veya **ferror** bir dosya sonu veya hata durumu doğrulanamadı. Varsa *akış* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **EOF**.
+**_getw** okuma Integer değeri döndürür. Dönüş değeri **EOF** bir hata veya dosya sonunu gösterir. Ancak, çünkü **EOF** değeri de yasal bir tamsayı, kullanın **feof** veya **ferror** bir dosya sonu veya hata durumu doğrulamak için. Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **EOF**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getw** işlevi türü sonraki ikili değeri okuyan **int** ilişkili dosyasından *akış* ve (varsa), ilişkili dosya işaretçisi işaret edecek şekilde artırır Sonraki okunmamış karakter. **_getw** akış öğelerini özel herhangi hizalamasını varsaymaz. Bağlantı noktası oluşturma sorunları meydana gelebilir **_getw** çünkü boyutunu **int** türü ve baytları sipariş **int** türü sistemlerden farklılık gösterir.
+**_Getw** işlevi türü sonraki ikili değeri okuyan **int** ilişkili dosyasından *stream* ve (varsa) ilgili dosya işaretleyicisini işaret etmek üzere artırır Sonraki okunmamış karaktere. **_getw** akışındaki öğelerin herhangi özel hizalama varsaymaz. Bağlantı noktası oluşturma sorunları meydana gelebilir **_getw** çünkü boyutunu **int** türü ve bayt sıralama **int** türü sistemler arasında farklılık gösterir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,7 +61,7 @@ int _getw(
 |-------------|---------------------|
 |**_getw**|\<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -123,5 +113,5 @@ First data word in file: 0x656e694c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_putw](putw.md)<br/>

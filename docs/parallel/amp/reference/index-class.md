@@ -1,29 +1,19 @@
 ---
-title: index sınıfı | Microsoft Docs
-ms.custom: ''
+title: index Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - AMP/index
 - AMP/Concurrency::index::index
 - AMP/Concurrency::index::rank
-dev_langs:
-- C++
 helpviewer_keywords:
 - index structure
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f9cd49a0083081ff7152c92b731e02cfe50c7ff0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 921d87de72c13e1971d9b40474bf3d91033c0580
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529317"
 ---
 # <a name="index-class"></a>index Sınıfı
 

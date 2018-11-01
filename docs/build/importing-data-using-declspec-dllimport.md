@@ -1,30 +1,20 @@
 ---
-title: __Declspec(dllimport) kullanarak veriyi içeri aktarma | Microsoft Docs
-ms.custom: ''
+title: __declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - dllimport
-dev_langs:
-- C++
 helpviewer_keywords:
 - importing data [C++]
 - dllimport attribute [C++], data imports
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a024d7488eb1683f40548839ab843da1e56f65e8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bc1b21bad1f7d4515774dbe76c2567280cdbf1f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710222"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620577"
 ---
 # <a name="importing-data-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
 

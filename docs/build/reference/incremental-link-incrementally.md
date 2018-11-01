@@ -1,15 +1,9 @@
 ---
-title: -INCREMENTAL (artımlı Bağla) | Microsoft Docs
-ms.custom: ''
+title: /INCREMENTAL (Artımlı Bağla)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /incremental
 - VC.Project.VCLinkerTool.LinkIncremental
-dev_langs:
-- C++
 helpviewer_keywords:
 - /INCREMENTAL linker option
 - -INCREMENTAL linker option
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - LINK tool [C++], options for full linking
 - incremental linking
 ms.assetid: 135656ff-94fa-4ad4-a613-22e1a2a5d16b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02ba96a810703f653b101839d4c9b965da735588
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0ef6e8c7fed2c58e8fc2949a84483015bbc9d6bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642035"
 ---
 # <a name="incremental-link-incrementally"></a>/INCREMENTAL (Artımlı Bağla)
 
@@ -92,7 +82,7 @@ Ayrıca, aşağıdaki durumlardan herhangi biri söz konusu olursa LINK tam bağ
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkIncremental%2A>.
+1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkIncremental%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

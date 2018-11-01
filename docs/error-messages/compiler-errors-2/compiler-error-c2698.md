@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2698 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2698
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2698
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2698
 ms.assetid: 3ebfe395-c20b-4c56-9980-ca9ed8653382
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7ca3e7568640aabd2b7960d97ea94a11a1d5d59
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f643b7d8c035b4d1d7d8806feb5b121cf76d7796
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651921"
 ---
 # <a name="compiler-error-c2698"></a>Derleyici Hatası C2698
 

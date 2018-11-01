@@ -1,10 +1,6 @@
 ---
-title: CDockablePane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDockablePane sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDockablePane
 - AFXDOCKABLEPANE/CDockablePane
@@ -71,8 +67,6 @@ f1_keywords:
 - AFXDOCKABLEPANE/CDockablePane::m_bDisableAnimation
 - AFXDOCKABLEPANE/CDockablePane::m_bHideInAutoHideMode
 - AFXDOCKABLEPANE/CDockablePane::m_nSlideSteps
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDockablePane [MFC], CDockablePane
 - CDockablePane [MFC], AttachToTabWnd
@@ -138,16 +132,12 @@ helpviewer_keywords:
 - CDockablePane [MFC], m_bHideInAutoHideMode
 - CDockablePane [MFC], m_nSlideSteps
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91058da47a97098826939be2248d81ba657f3cbb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 657f71e5d89f7d91d8b44836b4d478b41d041f88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078316"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623021"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Birden çok satır içi dosyalar | Microsoft Docs
-ms.custom: ''
+title: Birden Çok Satır İçi Dosya
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inline files, multiple NMAKE
 - multiple inline files
 - NMAKE program, inline files
 ms.assetid: 6d381dcf-0ed8-45d1-8df3-b4598d860b99
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87d68034c4f0018d65020915d24d0b5c2ec5d61a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ec531e5716098725782010927201ef57e2a8aa24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558164"
 ---
 # <a name="multiple-inline-files"></a>Birden Çok Satır İçi Dosya
 

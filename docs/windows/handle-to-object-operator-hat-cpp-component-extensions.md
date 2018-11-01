@@ -1,26 +1,16 @@
 ---
-title: Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5fe5bf67df643f83d555d3f2d6fc9a0aadf84b01
-ms.sourcegitcommit: 68cd127a6606f0aed2eb1bc9a75cdfb95b9b6526
+ms.openlocfilehash: 6f61a6b95ba8f9a059606376696fd1d8d64030db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204896"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625738"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
 

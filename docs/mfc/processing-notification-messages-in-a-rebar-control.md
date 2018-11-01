@@ -1,28 +1,18 @@
 ---
-title: Bir Rebar denetiminde bildirim iletilerini işleme | Microsoft Docs
-ms.custom: ''
+title: Bir Rebar Denetiminde Bildirim İletilerini İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - RBN_ notification messages, description of
 - CReBarCtrl class [MFC], notification messages sent by
 - RBN_ notification messages [MFC]
 - notifications [MFC], CReBarCtrl
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4532206be5787266df470dedceda0880222b675f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8cbe9849e16e8bfa9c0d0ce1f96e846bffaab2ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621838"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Bir Rebar Denetiminde Bildirim İletilerini İşleme
 

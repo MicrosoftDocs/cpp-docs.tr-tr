@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2389 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2389
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2389
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2389
 ms.assetid: 6122dc81-4ee3-49a5-a67d-d867808c9bac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73809d0fdd94871ad282042cef22a233ced19a32
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cb58ed0af3fda7ecbf399ac37758a688f014b826
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113246"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664600"
 ---
 # <a name="compiler-error-c2389"></a>Derleyici Hatası C2389
 

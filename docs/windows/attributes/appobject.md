@@ -1,28 +1,17 @@
 ---
-title: appobject (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: appobject (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.appobject
-dev_langs:
-- C++
 helpviewer_keywords:
 - appobject attribute
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: afe00a3c531e39c1d8afb7339fef431e8f240860
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 269c5bd3b51e2cc65fbb9c1c7766613595f8b547
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061423"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486417"
 ---
 # <a name="appobject"></a>appobject
 

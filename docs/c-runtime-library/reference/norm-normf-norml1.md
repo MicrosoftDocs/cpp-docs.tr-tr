@@ -1,11 +1,6 @@
 ---
-title: Norm, normf, norml | Microsoft Docs
-ms.custom: ''
+title: Norm, normf, norml
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - norm
 - normf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/norm
 - complex/normf
 - complex/norml
-dev_langs:
-- C++
 helpviewer_keywords:
 - norm function
 - normf function
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 272f43a7b92c069da8fc4eda64a678ff38efd6ab
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c1803a54f0dfc27975af5bb0eeb7e5c042b2579
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628117"
 ---
 # <a name="norm-normf-norml"></a>Norm, normf, norml
 
-Karmaşık bir sayının kare büyüklük alır.
+Karmaşık bir sayıyı karesini büyüklüğünü alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,7 +57,7 @@ long double norm( _Lcomplex z );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Bir karmaşık sayı.
+Karmaşık bir sayıyı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -76,15 +65,15 @@ Kare büyüklüğünü *z*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **norm** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve return **float** veya **uzun çift** değerleri. Bir C programı **norm** her zaman alan bir **_Dcomplex** değeri ve döndürür bir **çift** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **norm** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float** veya **uzun çift** değerleri. C programında **norm** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**Norm**, **normf**, **norml**|\<Complex.h >|\<Complex.h >|
 
-**_Fcomplex**, **_Dcomplex**, ve **_Lcomplex** türleridir uygulanmayan yerel C99 türleri Microsoft'a özgü eşdeğerlerini **_Complex float** , **çift _Complex**, ve **uzun çift _Complex**sırasıyla.  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Fcomplex**, **_Dcomplex**, ve **_Lcomplex** türleridir Microsoft'a özgü eşdeğerleri uygulanmayan yerel C99 türlerinin **_Complex Kaydır** , **çift _Complex**, ve **uzun çift _Complex**sırasıyla.  Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

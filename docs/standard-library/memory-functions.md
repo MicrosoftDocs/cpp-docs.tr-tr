@@ -1,8 +1,6 @@
 ---
-title: '&lt;bellek&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;bellek&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - memory/std::addressof
 - memory/std::align
@@ -29,11 +27,7 @@ f1_keywords:
 - memory/std::uninitialized_fill_n
 - memory/std::get_temporary_buffer
 - memory/std::return_temporary_buffer
-dev_langs:
-- C++
 ms.assetid: 3e1898c2-44b7-4626-87ce-84962e4c6f1a
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::addressof [C++]
 - std::align [C++]
@@ -80,14 +74,12 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b740613666c7e4e1b5cc2c1b14c5cbf04b0fe6ef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2b7f65e2bca728ccde50cdee503f920291aa3ee4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702877"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619069"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 

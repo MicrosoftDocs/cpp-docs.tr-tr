@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4522 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4522
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4522
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4522
 ms.assetid: 7065dc27-0b6c-4e68-a345-c51cdb99a20b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65662d3e62abbeb06127c7b5a49479a23fb20a7a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: de163f0a3925b711f2f3437b700f75bbe994b3e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622969"
 ---
 # <a name="compiler-warning-level-3-c4522"></a>Derleyici Uyarısı (Düzey 3) C4522
 

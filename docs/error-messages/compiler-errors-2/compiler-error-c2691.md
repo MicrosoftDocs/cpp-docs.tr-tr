@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2691 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2691
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2691
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2691
 ms.assetid: 6925f8f3-ea60-4909-91e6-b781492c645d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fe048537ca1d504587fe64fdd5f9b5a43af7c6e3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 34287b785532394d33e94e37e7a6a9955d935f14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100571"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502004"
 ---
 # <a name="compiler-error-c2691"></a>Derleyici Hatası C2691
 

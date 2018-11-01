@@ -1,26 +1,16 @@
 ---
-title: Geri çağrı öğeleri ve geri çağrı maskesi | Microsoft Docs
-ms.custom: ''
+title: Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - callback items in CListCtrl class [MFC]
 - CListCtrl class [MFC], callback item and callback mask
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0711fccb142d9774c37f2cb2d8f576bf7fddd128
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b48f203ae2f0ac0089e30c77e529c6a5eec8822b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659660"
 ---
 # <a name="callback-items-and-the-callback-mask"></a>Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
 

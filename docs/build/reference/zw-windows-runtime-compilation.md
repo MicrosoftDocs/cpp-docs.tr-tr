@@ -1,15 +1,9 @@
 ---
-title: -ZW (Windows çalışma zamanı derlemesi) | Microsoft Docs
-ms.custom: ''
+title: /ZW (Windows Çalışma Zamanı Derlemesi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.CompileAsWinRT
 - /zw
-dev_langs:
-- C++
 helpviewer_keywords:
 - /ZW
 - -ZW compiler option
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f793db1bf227006c4278eff55ce53092a864aa83
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 297697d215a78cbf1aefef30df53f6956c4e16b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700953"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629768"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW (Windows Çalışma Zamanı Derlemesi)
 

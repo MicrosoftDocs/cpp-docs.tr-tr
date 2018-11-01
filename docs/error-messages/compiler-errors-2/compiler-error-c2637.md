@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2637 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2637
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2637
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2637
 ms.assetid: 58d94447-eb96-4d8f-a690-dd78d322462e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6242183e1510565ece7d75085657764b1ddc4081
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4231a811911fdf600b47962e929f6f3cff1f1bca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602546"
 ---
 # <a name="compiler-error-c2637"></a>Derleyici Hatası C2637
 

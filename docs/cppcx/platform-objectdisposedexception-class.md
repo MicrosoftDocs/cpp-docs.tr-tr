@@ -1,27 +1,19 @@
 ---
-title: Platform::ObjectDisposedException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::ObjectDisposedException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::ObjectDisposedException
 - VCCORLIB/Platform::ObjectDisposedException::ObjectDisposedException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::ObjectDisposedException
 ms.assetid: 68506fe4-d09c-4407-999f-1e3edb261d41
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f0574885fb404572052fbf5066b522ed0208eba
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 41afe11efa23a3418ec9629a3c6f5a45015e2aa2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106931"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612959"
 ---
 # <a name="platformobjectdisposedexception-class"></a>Platform::ObjectDisposedException sınıfı
 

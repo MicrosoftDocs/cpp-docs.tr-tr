@@ -1,28 +1,17 @@
 ---
-title: iş parçacığı oluşturma (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: iş parçacığı oluşturma (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.threading
-dev_langs:
-- C++
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 85ffa775fd18b6979fccf4354ce243f017634d02
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0feb258941993ff9776bb9f94f61a556d7d4caec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449848"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 

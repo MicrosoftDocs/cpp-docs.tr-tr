@@ -1,9 +1,6 @@
 ---
-title: eşleme (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: eşle (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::map
@@ -52,8 +49,6 @@ f1_keywords:
 - cliext::operator== (map)
 - cliext::operator> (map)
 - cliext::operator>= (map)
-dev_langs:
-- C++
 helpviewer_keywords:
 - <map> header [STL/CLR]
 - map class [STL/CLR]
@@ -104,17 +99,12 @@ helpviewer_keywords:
 - operator> (map) member [STL/CLR]
 - operator>= (map) member [STL/CLR]
 ms.assetid: 8b0a7764-b5e4-4175-a802-82b72eb8662a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 2d1a47c8fe8d1fc00b78a67d3b2f5fdf111fd458
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9150d603f67051df4a6f182366623935e59fe9ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506814"
 ---
 # <a name="map-stlclr"></a>eşle (STL/CLR)
 

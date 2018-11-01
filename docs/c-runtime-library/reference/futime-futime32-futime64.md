@@ -1,10 +1,6 @@
 ---
-title: _futime, _futime32, _futime64 | Microsoft Docs
-ms.custom: ''
+title: _futime, _futime32, _futime64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _futime64
 - _futime32
@@ -27,8 +23,6 @@ f1_keywords:
 - _futime
 - futime64
 - _futime64
-dev_langs:
-- C++
 helpviewer_keywords:
 - _futime function
 - futime32 function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - futime function
 - _futime32 function
 ms.assetid: b942ce8f-5cc7-4fa8-ab47-de5965eded53
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdd7b68ac9e3bf55f64b9a68f7b8075eab640faa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f21e394acdcc7fbf8a91c5450a4c04daa050db21
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056826"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652510"
 ---
 # <a name="futime-futime32-futime64"></a>_futime, _futime32, _futime64
 

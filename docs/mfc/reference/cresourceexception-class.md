@@ -1,29 +1,19 @@
 ---
-title: CResourceException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CResourceException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CResourceException
 - AFXWIN/CResourceException
 - AFXWIN/CResourceException::CResourceException
-dev_langs:
-- C++
 helpviewer_keywords:
 - CResourceException [MFC], CResourceException
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2e1fea7db1ef79eed2bc2678bd1e9283c71bb161
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: aa7fd6e2caa15a256cec2eae5ede6c6e47cd1518
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071868"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632702"
 ---
 # <a name="cresourceexception-class"></a>CResourceException sınıfı
 

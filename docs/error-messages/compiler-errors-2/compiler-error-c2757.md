@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2757 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2757
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2757
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2757
 ms.assetid: 421f102f-8a32-4d47-a109-811ddf2c909d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ff853ad499a9d50cc1c5c168ac13a570453dcba
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 98b43a2f3c0888fc385226cd80889b9911c84690
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668526"
 ---
 # <a name="compiler-error-c2757"></a>Derleyici Hatası C2757
 

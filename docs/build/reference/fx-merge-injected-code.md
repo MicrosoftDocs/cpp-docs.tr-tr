@@ -1,16 +1,10 @@
 ---
-title: -Fx (eklenen kodu Birleştir) | Microsoft Docs
-ms.custom: ''
+title: /Fx (Eklenen Kodu Birleştir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.ExpandAttributedSource
 - /Fx
 - VC.Project.VCCLCompilerTool.ExpandAttributedSource
-dev_langs:
-- C++
 helpviewer_keywords:
 - Fx compiler option [C++]
 - -Fx compiler option [C++]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - merging injected code
 - /Fx compiler option [C++]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca8522f85a8ce10bc694ab1144e7f24ed3fca6fa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3a8bb0a6607542b325cdfeb0909bcea4a01fa0f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425762"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646322"
 ---
 # <a name="fx-merge-injected-code"></a>/Fx (Eklenen Kodu Birleştir)
 
@@ -82,7 +72,7 @@ Programınızı eklenen kodu kullanan bir üstbilgi dosyası içeriyorsa **/Fx**
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

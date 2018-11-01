@@ -1,32 +1,22 @@
 ---
-title: _bittest, _bittest64 | Microsoft Docs
-ms.custom: ''
+title: _bittest, _bittest64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _bittest64
 - _bittest_cpp
 - _bittest64_cpp
 - _bittest
-dev_langs:
-- C++
 helpviewer_keywords:
 - _bittest intrinsic
 - _bittest64 intrinsic
 - bt instruction
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8057653188d46fd627ba5d031be8b50d2d8e7108
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 170979b5cf463d72f645599e146d1e8e2a10154d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645408"
 ---
 # <a name="bittest-bittest64"></a>_bittest, _bittest64
 

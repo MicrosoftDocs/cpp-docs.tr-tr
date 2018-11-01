@@ -1,28 +1,17 @@
 ---
-title: propget (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: propget (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.propget
-dev_langs:
-- C++
 helpviewer_keywords:
 - propget attribute
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0afbd6943808099be62545cd872002040f03064b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 495c6e974bbe226a77d5685c7d1d8adb29e30830
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646011"
 ---
 # <a name="propget"></a>propget
 

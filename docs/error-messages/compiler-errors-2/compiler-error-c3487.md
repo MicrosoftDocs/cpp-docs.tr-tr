@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3487 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3487
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3487
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3487
 ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: acd0dad31a565b9e75741e3a66a5d48dfedec69f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a1c4b667e23ff167b28b9f22f93b0930545c915c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087116"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492621"
 ---
 # <a name="compiler-error-c3487"></a>Derleyici Hatası C3487
 

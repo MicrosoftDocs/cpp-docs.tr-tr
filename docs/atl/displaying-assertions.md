@@ -1,28 +1,18 @@
 ---
-title: Onaylamaları görüntüleme | Microsoft Docs
-ms.custom: ''
+title: Onaylamaları görüntüleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - debugging [ATL], displaying assertions
 - assertions, displaying
 - debugging assertions
 - assertions, debugging
 ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ff7b9b29808e310be2d5568add64a0294bc67e7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e183f782d488c2e5b92f61cfd63627f056e1f588
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616480"
 ---
 # <a name="displaying-assertions"></a>Onaylamaları görüntüleme
 

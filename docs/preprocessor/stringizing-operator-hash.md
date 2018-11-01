@@ -1,14 +1,8 @@
 ---
-title: Dizeleyen işleç (#) | Microsoft Docs
-ms.custom: ''
+title: Dizeleyen İşleç (#)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '#'
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessor, operators
 - arguments [C++], converting to strings
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - macros [C++], converting parameters to strings
 - '# preprocessor operator'
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ec731bec319003432cbf70da635ea351001ed15
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4fcf94c7501156d84e80d4cc4ff0d5ea8659b45e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061046"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532047"
 ---
 # <a name="stringizing-operator-"></a>Dizeleyen İşleç (#)
 

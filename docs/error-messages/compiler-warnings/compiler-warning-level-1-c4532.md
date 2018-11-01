@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4532 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4532
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4532
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4532
 ms.assetid: 4e2a286a-d233-4106-9f65-29be1a94ca02
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 717af9626866fb20e92342fe90f4dde2b5030774
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bcadf31eda079ebb8ea7a496efe4c945e16b1ab7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025483"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622852"
 ---
 # <a name="compiler-warning-level-1-c4532"></a>Derleyici Uyarısı (düzey 1) C4532
 

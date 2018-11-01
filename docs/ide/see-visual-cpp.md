@@ -1,29 +1,19 @@
 ---
-title: '&lt;bkz:&gt; (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;bkz:&gt; (Visual C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - <see>
 - see
-dev_langs:
-- C++
 helpviewer_keywords:
 - <see> C++ XML tag
 - see C++ XML tag
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 909177f7b3b475bd049ca311fc3c12c840422cde
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f5fa63f2dbd97f0a2da98a5a31a1192e40599738
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461366"
 ---
 # <a name="ltseegt-visual-c"></a>&lt;bkz:&gt; (Visual C++)
 

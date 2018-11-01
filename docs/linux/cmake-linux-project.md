@@ -1,26 +1,14 @@
 ---
-title: Visual Studio'da bir Linux CMake projesi yapılandırma | Microsoft Docs
+title: Visual Studio'da bir Linux CMake projesi yapılandırma
 description: Visual Studio'da bir Linux CMake projesi yapılandırma
-ms.custom: ''
 ms.date: 07/20/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- cpp-linux
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: b7c28a8e67ef2731d26071262383e93d32be9583
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 32d69e28c0991adc6117b7f9496eeb1022943ef2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585048"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 

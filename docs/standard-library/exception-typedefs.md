@@ -1,21 +1,17 @@
 ---
-title: '&lt;özel durum&gt; typedefs | Microsoft Docs'
-ms.custom: ''
+title: '&lt;özel durum&gt; tür tanımları'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - exception/std::exception_ptr
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-author: corob-msft
-ms.author: corob
-ms.openlocfilehash: 93feda8c6359c5ec24fd4fd9dd38c632726b676b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 98a7e8197a0d729ab3a4e9ec0daf55a28cdaeb2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197031"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641486"
 ---
 # <a name="ltexceptiongt-typedefs"></a>&lt;özel durum&gt; tür tanımları
 

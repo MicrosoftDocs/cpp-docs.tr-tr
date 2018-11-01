@@ -1,10 +1,6 @@
 ---
-title: _getche, _getwche | Microsoft Docs
-ms.custom: ''
+title: _getche, _getwche
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getwche
 - _getche
@@ -25,8 +21,6 @@ f1_keywords:
 - getwche
 - _getche
 - _getwche
-dev_langs:
-- C++
 helpviewer_keywords:
 - characters, getting from console
 - _getwche function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - getwche function
 - _getche function
 ms.assetid: eac978a8-c43a-4130-938f-54f12e2a0fda
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bfd791eb0ac022cfd13de74ca902ef45565ac16
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 87e9173e21ea51281276601b6fc5e3b73e244fca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465159"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612842"
 ---
 # <a name="getche-getwche"></a>_getche, _getwche
 

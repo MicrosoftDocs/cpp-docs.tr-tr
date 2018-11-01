@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2881 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2881
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2881
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2881
 ms.assetid: b49c63c2-b064-4d4b-a75e-ddd2af947522
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7f74a4336af3b8ce8bfe0fa87f7f1a84746ff11
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 82a4fbe94bc7250244d57f549e52037d6a54c784
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610528"
 ---
 # <a name="compiler-error-c2881"></a>Derleyici Hatası C2881
 

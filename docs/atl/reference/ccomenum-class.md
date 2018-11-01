@@ -1,28 +1,18 @@
 ---
-title: CComEnum sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComEnum sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComEnum
 - atlcom/ATL::CComEnum
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f9dff61a62eec37a503b1c0018ead6dce33065a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8e0bf49b48c2c0f1a202231e67364637375f9342
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077119"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623541"
 ---
 # <a name="ccomenum-class"></a>CComEnum sınıfı
 
@@ -50,7 +40,7 @@ Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
 *T*<br/>
 Numaralandırıcı arabirim tarafından sunulan öğe türü.
 
-*kopyalama*<br/>
+*Kopyala*<br/>
 Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
 *ThreadModel*<br/>

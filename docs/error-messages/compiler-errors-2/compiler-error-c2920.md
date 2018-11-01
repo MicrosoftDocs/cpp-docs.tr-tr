@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2920 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2920
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2920
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2920
 ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd8d28cf0f201b3042fe3d7a13d28e56150c976e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 28bbbd30bcb16e2ea5fc14fe0f48f86814ee13c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616484"
 ---
 # <a name="compiler-error-c2920"></a>Derleyici Hatası C2920
 

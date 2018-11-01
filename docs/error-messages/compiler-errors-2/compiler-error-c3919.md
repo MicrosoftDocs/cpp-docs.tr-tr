@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3919 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3919
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3919
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3919
 ms.assetid: 5f8eddda-d751-478b-930d-e18f7191ddfb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 565146e714e0aa9a3598e4fe5fdeea361454ec78
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0fe7e61c28ad2688a6d97b4164c2b5cfa81a37b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136120"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474873"
 ---
 # <a name="compiler-error-c3919"></a>Derleyici Hatası C3919
 

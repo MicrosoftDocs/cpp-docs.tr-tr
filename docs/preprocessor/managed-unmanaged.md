@@ -1,33 +1,23 @@
 ---
-title: yönetilen, yönetilmeyen | Microsoft Docs
-ms.custom: ''
+title: managed, unmanaged
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.unmanaged
 - managed_CPP
 - unmanaged_CPP
 - vc-pragma.managed
-dev_langs:
-- C++
 helpviewer_keywords:
 - managed pragma
 - pragmas, unmanaged
 - pragmas, managed
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2fdfcf65280f3be639da8f6e49f3d93a498478dd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0cc253ad7d0d4529340a13546f931075b0c7dfdc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473833"
 ---
 # <a name="managed-unmanaged"></a>managed, unmanaged
 Derleme yönetilen veya yönetilmeyen olarak işlevler için işlev düzeyi denetimi etkinleştirin.

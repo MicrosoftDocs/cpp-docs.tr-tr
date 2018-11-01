@@ -1,10 +1,6 @@
 ---
-title: Irowsetcreatorımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetCreatorImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::IRowsetCreatorImpl
 - ATL.IRowsetCreatorImpl
@@ -19,23 +15,16 @@ f1_keywords:
 - ATL::IRowsetCreatorImpl<T>::SetSite
 - ATL::IRowsetCreatorImpl::SetSite
 - ATL.IRowsetCreatorImpl<T>.SetSite
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRowsetCreatorImpl class
 - SetSite method
 ms.assetid: 92cc950f-7978-4754-8d9a-defa63867d82
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 34fc1304fe4fad1196b5f204e6ba241093e03f32
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8e3d5b3ff01dd37eec9f00dac2f2ce28013fc258
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066220"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659686"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl Sınıfı
 

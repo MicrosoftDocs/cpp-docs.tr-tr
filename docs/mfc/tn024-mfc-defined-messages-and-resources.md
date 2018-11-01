@@ -1,30 +1,20 @@
 ---
-title: 'TN024: MFC tanımlı iletiler ve kaynaklar | Microsoft Docs'
-ms.custom: ''
+title: 'TN024: MFC Tanımlı İletiler ve Kaynaklar'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.messages
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [MFC]
 - Windows messages [MFC], MFC-defined
 - messages [MFC], MFC
 - TN024
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74cd25bb4ee8ce4379a48927594a7f66c61ec317
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 26f6effbafd8136661f0b1dc9a6b22138a23e547
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443208"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639640"
 ---
 # <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC Tanımlı İletiler ve Kaynaklar
 

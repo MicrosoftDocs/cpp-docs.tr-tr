@@ -1,10 +1,6 @@
 ---
-title: CDockablePaneAdapter sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDockablePaneAdapter sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDockablePaneAdapter
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDockablePaneAdapter [MFC], GetWrappedWnd
 - CDockablePaneAdapter [MFC], LoadState
 - CDockablePaneAdapter [MFC], SaveState
 - CDockablePaneAdapter [MFC], SetWrappedWnd
 ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1cec0a5c40d7937e8df20b5437b6dcc83b1b9ec1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6088d7ed9f4d8f54bfe5ea7f7b77cdabfd11768f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441184"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522960"
 ---
 # <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter sınıfı
 

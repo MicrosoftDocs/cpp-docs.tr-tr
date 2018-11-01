@@ -1,26 +1,16 @@
 ---
-title: Yineleme deyimleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Yineleme Deyimleri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - iteration statements
 - loop structures, iteration statements
 ms.assetid: bf6d75f7-ead2-426a-9c47-33847f59b8c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 604534a30d9d6dfbc9cc38825413f98af5435cf6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 72f81e2fc58a31db0c4cd3f77ba182bd8b8152a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040654"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644945"
 ---
 # <a name="iteration-statements-c"></a>Yineleme Deyimleri (C++)
 

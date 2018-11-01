@@ -1,10 +1,6 @@
 ---
-title: Csmartdockingınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: Csmartdockingınfo sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSmartDockingInfo
 - AFXDOCKINGMANAGER/CSmartDockingInfo
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal
 - AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID
 - AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSmartDockingInfo [MFC], CopyTo
 - CSmartDockingInfo [MFC], m_bUseThemeColorInShading
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 691ca4cd03865b348a17e56787c419cbd222fb4f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 885af55987c2d1e78cd0145fcee5ca0f4ef67dc5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524672"
 ---
 # <a name="csmartdockinginfo-class"></a>Csmartdockingınfo sınıfı
 

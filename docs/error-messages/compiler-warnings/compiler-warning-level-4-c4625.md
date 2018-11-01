@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4625 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4625
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4625
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4625
 ms.assetid: 4cc99e50-846c-4784-97da-48b977067851
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 970321370aeeea0ca4324f9a25d3ee1d8e54e15e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: edcb43bf11c073e6ce721ba999fd99d28a8df15d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069111"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563079"
 ---
 # <a name="compiler-warning-level-4-c4625"></a>Derleyici Uyarısı (düzey 4) C4625
 

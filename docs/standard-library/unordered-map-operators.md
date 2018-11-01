@@ -1,20 +1,16 @@
 ---
-title: '&lt;unordered_map&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;unordered_map&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - unordered_map/std::operator!=
 - unordered_map/std::operator==
-dev_langs:
-- C++
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
-ms.openlocfilehash: d74eaf0c0f2a431bc481341ce5160d07ee0a4bb5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 280b9c866c17d69bca21ed6685f67f9fe986d45a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480411"
 ---
 # <a name="ltunorderedmapgt-operators"></a>&lt;unordered_map&gt; işleçleri
 

@@ -1,10 +1,6 @@
 ---
-title: move_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: move_iterator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iterator/std::move_iterator
 - iterator/std::move_iterator::iterator_type
@@ -14,8 +10,6 @@ f1_keywords:
 - iterator/std::move_iterator::pointer
 - iterator/std::move_iterator::reference
 - iterator/std::move_iterator::base
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::move_iterator [C++]
 - std::move_iterator [C++], iterator_type
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ffd7a429bbddc81458538ace0ccc138dec65b9aa
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c9ff9385d43ac1c53f91a548ea01c04c1c67dc18
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656167"
 ---
 # <a name="moveiterator-class"></a>move_iterator Sınıfı
 

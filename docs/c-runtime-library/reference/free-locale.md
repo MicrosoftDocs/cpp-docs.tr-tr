@@ -1,10 +1,6 @@
 ---
-title: _free_locale | Microsoft Docs
-ms.custom: ''
+title: _free_locale
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _free_locale
 apilocation:
@@ -24,24 +20,18 @@ f1_keywords:
 - __free_locale
 - free_locale
 - _free_locale
-dev_langs:
-- C++
 helpviewer_keywords:
 - __free_locale function
 - free_locale function
 - locales, freeing
 - _free_locale function
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce945499505b7efcaaf010585f27fbfaf42a06b8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 92dc8cd711087e8e797b484d6c7e3c6c3b031b5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537390"
 ---
 # <a name="freelocale"></a>_free_locale
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonMiniToolBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonMiniToolBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonMiniToolBar
 - AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands
 - AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show
 - AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonMiniToolBar [MFC], IsContextMenuMode
 - CMFCRibbonMiniToolBar [MFC], IsRibbonMiniToolBar
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMFCRibbonMiniToolBar [MFC], Show
 - CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 738327ac44f7d2e28250c19eecdd64e8b761a361
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 665de65d64262415e20ca5ac05e1e06b2c1862c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573387"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: Isource sınıfı | Microsoft Docs
-ms.custom: ''
+title: ISource Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - ISource
 - AGENTS/concurrency::ISource
@@ -17,21 +13,15 @@ f1_keywords:
 - AGENTS/concurrency::ISource::reserve
 - AGENTS/concurrency::ISource::unlink_target
 - AGENTS/concurrency::ISource::unlink_targets
-dev_langs:
-- C++
 helpviewer_keywords:
 - ISource class
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e53f8999b4559a221b335528ec20b6034de269d3
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 4e96dc11455015a83af9be545ba15c96b5e2f779
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620525"
 ---
 # <a name="isource-class"></a>ISource Sınıfı
 

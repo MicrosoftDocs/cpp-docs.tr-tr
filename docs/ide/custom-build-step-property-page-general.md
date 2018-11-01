@@ -1,10 +1,6 @@
 ---
-title: 'Özel derleme adımı özellik sayfası: Genel | Microsoft Docs'
-ms.custom: ''
+title: 'Özel Derleme Adımı Özellik Sayfası: Genel'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCCustomBuildStep.AdditionalInputs
 - VC.Project.VCCustomBuildStep.CustomBuildAfterTargets
@@ -12,22 +8,16 @@ f1_keywords:
 - VC.Project.VCCustomBuildStep.Outputs
 - VC.Project.VCCustomBuildStep.Message
 - VC.Project.VCCustomBuildStep.Command
-dev_langs:
-- C++
 helpviewer_keywords:
 - project properties, custom build step
 - custom build step (general)
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f34628ddd11c8cefdd00553f779a22448c2ec99d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc6765c9519c6cdb4245afa2f07079548a07e1fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404806"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621760"
 ---
 # <a name="custom-build-step-property-page-general"></a>Özel Derleme Adımı Özellik Sayfası: Genel
 

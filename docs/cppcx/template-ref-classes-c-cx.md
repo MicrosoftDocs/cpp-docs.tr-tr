@@ -1,20 +1,13 @@
 ---
-title: Şablon başvuru sınıfları (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Şablon başvuru sınıfları (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: a24d5f45-8dbb-4540-958f-c76c90d8ed93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd720c2bdcc9bd0baab2606e473858450508feff
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a128b9fcc7b37ad2cf7c7a17abb24c8074952501
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642217"
 ---
 # <a name="template-ref-classes-ccx"></a>Şablon başvuru sınıfları (C + +/ CX)
 

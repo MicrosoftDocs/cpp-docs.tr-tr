@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::const_reference | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::const_reference
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_reference method
 ms.assetid: 7a5cfddb-3abf-4c98-b4ad-bbe4da9a5c1b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cabc805f826c0e4d89fc9506e6a019632bdcd8c8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0e4ff9c1ada05dadc7efa468073406a1313af6be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956252"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604296"
 ---
 # <a name="container-classconstreference"></a>Kapsayıcı Sınıfı::const_reference
 

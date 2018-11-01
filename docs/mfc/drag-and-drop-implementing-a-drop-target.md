@@ -1,27 +1,17 @@
 ---
-title: 'Sürükle ve bırak: bir bırakma hedefi uygulama | Microsoft Docs'
-ms.custom: ''
+title: 'Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE drag and drop [MFC], implementing drop targets
 - OLE drag and drop [MFC], drop target
 - drag and drop [MFC], drop target
 ms.assetid: 0689f1ec-5326-4008-b226-4b373c881358
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fae6a5ef0e25b0e81b21dce9069c599e59e1c431
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 55c8bbe9484a71ee95d43609b29a055b4177914b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599881"
 ---
 # <a name="drag-and-drop-implementing-a-drop-target"></a>Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama
 

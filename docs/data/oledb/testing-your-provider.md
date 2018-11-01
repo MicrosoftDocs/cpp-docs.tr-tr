@@ -1,28 +1,17 @@
 ---
-title: Sağlayıcınızı test etme | Microsoft Docs
-ms.custom: ''
+title: Sağlayıcınızı Test Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - testing, OLE DB providers
 - testing providers
 - OLE DB providers, testing
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 1c99a881dd90d94c87de98239a7de1a2b49be020
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ca1eaed3baf8e0ee4adad4968f7ecd176533ede3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060233"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430881"
 ---
 # <a name="testing-your-provider"></a>Sağlayıcınızı Test Etme
 

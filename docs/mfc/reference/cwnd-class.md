@@ -1,10 +1,6 @@
 ---
-title: CWnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWnd sınıfı
 ms.date: 08/27/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CWnd
 - AFXWIN/CWnd
@@ -414,8 +410,6 @@ f1_keywords:
 - AFXWIN/CWnd::ResizeDynamicLayout
 - AFXWIN/CWnd::WindowProc
 - AFXWIN/CWnd::m_hWnd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWnd [MFC], CWnd
 - CWnd [MFC], accDoDefaultAction
@@ -824,16 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f619eeba8f239b145ceb44485a9cc1eadd2cc82d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3d54da2b3907110d8c08480dbeef76e252cc55d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083613"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488432"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 

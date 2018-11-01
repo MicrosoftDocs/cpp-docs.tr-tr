@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3380 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3380
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3380
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3380
 ms.assetid: 86f1f4ec-4ad8-4a1a-9b6c-2d9b6129df6b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e35c4edaf24aacbd7eb9938a1dea2c470d32caae
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e03212c3148ba7f5c445dfee02ee32629ab5d373
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062598"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668591"
 ---
 # <a name="compiler-error-c3380"></a>Derleyici Hatası C3380
 

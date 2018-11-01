@@ -1,27 +1,17 @@
 ---
-title: SUBTTL | Microsoft Docs
-ms.custom: ''
+title: SUBTTL
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - SUBTTL
-dev_langs:
-- C++
 helpviewer_keywords:
 - SUBTTL directive
 ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f04d901f2d15f6cda9ee8e6c55225094d5f6c05e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ca0dfe4382e56edd157c0669fb5a2b591f6abb02
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608900"
 ---
 # <a name="subttl"></a>SUBTTL
 

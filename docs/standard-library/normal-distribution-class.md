@@ -1,10 +1,6 @@
 ---
-title: normal_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: normal_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::normal_distribution
 - random/std::normal_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::normal_distribution::param_type::stddev
 - random/std::normal_distribution::param_type::operator==
 - random/std::normal_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::normal_distribution [C++]
 - std::normal_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d298da140955c809db5e6128df3bf712838446e0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7fdb2f8b6674326ff6e37efa222483e859b3500f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067741"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604327"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution Sınıfı
 

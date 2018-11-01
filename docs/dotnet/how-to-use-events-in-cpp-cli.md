@@ -1,26 +1,15 @@
 ---
-title: 'Nasıl yapılır: olayları kullanmak C + +/ CLI | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: C++/CLI Üzerinde Olayları Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - events [C++], accessing in interfaces
 ms.assetid: fbf452dc-2dd7-4322-adc0-656512d654d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: df6fb831b6a5644b56781cc199f0f0d38ebbcd41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eb18922b998db6b959921c8d786e0d558a9c5ce1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513912"
 ---
 # <a name="how-to-use-events-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Olayları Kullanma
 

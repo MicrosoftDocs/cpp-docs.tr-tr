@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2654 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2654
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2654
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2654
 ms.assetid: ca7de1bd-576b-40bf-96fc-a91984827d20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1181cbab40739617343f8d2a2e5e26540f01e82f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31bd7cb3d6566b7a0cb1d7f264a2f88f9811ef46
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662975"
 ---
 # <a name="compiler-error-c2654"></a>Derleyici Hatası C2654
 

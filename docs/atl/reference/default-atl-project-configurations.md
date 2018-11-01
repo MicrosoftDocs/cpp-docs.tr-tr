@@ -1,25 +1,15 @@
 ---
-title: Varsayılan ATL projesi yapılandırmaları | Microsoft Docs
-ms.custom: ''
+title: Varsayılan ATL projesi yapılandırmaları
 ms.date: 10/20/2017
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, default configurations
 ms.assetid: 7e272722-41af-4330-b965-a6d74ec16880
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 788188814de37214f397632161de55b54a28421e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cf8cb07200db59068e5eb28f7fedf47a6cd1ab01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536710"
 ---
 # <a name="default-atl-project-configurations"></a>Varsayılan ATL projesi yapılandırmaları
 

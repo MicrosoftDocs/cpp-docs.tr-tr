@@ -1,29 +1,19 @@
 ---
-title: CAnimateCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CAnimateCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CAnimateCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - animation controls [MFC], CAnimateCtrl class
 - controls [MFC], animation
 - CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b02a07b1f5a433ffa9525da8e8a7f942c9034d54
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 00b285ba2ec1bcd7fa524d5e20190f806819947f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398462"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449234"
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 

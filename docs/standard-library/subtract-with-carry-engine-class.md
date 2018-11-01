@@ -1,10 +1,6 @@
 ---
-title: subtract_with_carry_engine sınıfı | Microsoft Docs
-ms.custom: ''
+title: subtract_with_carry_engine Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::subtract_with_carry_engine
 - random/std::subtract_with_carry_engine::default_seed
@@ -12,8 +8,6 @@ f1_keywords:
 - random/std::subtract_with_carry_engine::min
 - random/std::subtract_with_carry_engine::max
 - random/std::subtract_with_carry_engine::seed
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::subtract_with_carry_engine [C++]
 - std::subtract_with_carry_engine [C++], default_seed
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], max
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a956212df2579298f1f947bf2388dec1532dff10
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 76981df1f4a642cca1a57a9619f20aa4cebd63bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501409"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine Sınıfı
 

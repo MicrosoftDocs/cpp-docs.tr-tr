@@ -1,12 +1,6 @@
 ---
-title: Eşleme iletileri | Microsoft Docs
-ms.custom: ''
+title: Eşleme İletileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message maps [MFC], about message maps
 - mappings [MFC], commands
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - mappings [MFC], messages
 - messages [MFC], mapping
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7324da5eaff15d240cabbaede2c2982021361257
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f31bc2e3c6af9c4b899167ba99c152a231a929d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665848"
 ---
 # <a name="mapping-messages"></a>Eşleme İletileri
 

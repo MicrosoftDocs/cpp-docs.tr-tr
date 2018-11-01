@@ -1,28 +1,18 @@
 ---
-title: _mm_cvtss_si64x | Microsoft Docs
-ms.custom: ''
+title: _mm_cvtss_si64x
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _mm_cvtss_si64x
-dev_langs:
-- C++
 helpviewer_keywords:
 - cvtss2si intrinsic
 - _mm_cvtss_si64x intrinsic
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 928cd812df87fef20a6ba551bd596c4214bfdd9f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 259e3933c831ba685fa9d00d0f6471975a31f2cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606849"
 ---
 # <a name="mmcvtsssi64x"></a>_mm_cvtss_si64x
 
@@ -33,8 +23,8 @@ Genişletilmiş x64 oluşturur Dönüştür skaler tek duyarlıklı kayan nokta 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__int64 _mm_cvtss_si64x( 
-   __m128 value 
+__int64 _mm_cvtss_si64x( 
+   __m128 value 
 );
 ```
 

@@ -1,26 +1,15 @@
 ---
-title: İletişim kutusu Düzenleyicisi durumları (Kılavuzlar ve Izgaralar) (C++) | Microsoft Docs
-ms.custom: ''
+title: İletişim kutusu Düzenleyicisi durumları (Kılavuzlar ve Izgaralar) (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Dialog Editor [C++], guides and margins
 ms.assetid: dbacf9ef-e8b0-4125-a7ce-84911c482e98
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4a362404cc92a147b0517b394c3923e0c9924ca3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a07c3c91551acadf8fc548efd816b48bcb3125e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059343"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461834"
 ---
 # <a name="dialog-editor-states-guides-and-grids-c"></a>İletişim kutusu Düzenleyicisi durumları (Kılavuzlar ve Izgaralar) (C++)
 

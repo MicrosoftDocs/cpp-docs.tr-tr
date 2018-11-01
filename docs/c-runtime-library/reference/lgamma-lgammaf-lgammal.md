@@ -1,11 +1,6 @@
 ---
-title: lgamma, lgammaf, lgammal | Microsoft Docs
-ms.custom: ''
+title: lgamma, lgammaf, lgammal
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - lgamma
 - lgammaf
@@ -30,27 +25,21 @@ f1_keywords:
 - math/lgamma
 - math/lgammaf
 - math/lgammal
-dev_langs:
-- C++
 helpviewer_keywords:
 - lgamma function
 - lgammal function
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fb668e1c24d3f24331e0892002530192afdaeb6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 43ce1599ab9161b9fadf5643ddd2ec739ab2d8b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400258"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533490"
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 
-Mutlak değeri belirtilen değere Gama işlevinin doğal logaritmasını belirler.
+Belirtilen değerin gama fonksiyonu mutlak değerini doğal logaritmasını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,32 +61,32 @@ long double lgamma( long double x ); //C++ only
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, mutlak değeri Gama işlevinin doğal logaritmasını Döndür *x*.
+Başarılı olursa, gama işlevi mutlak değerini doğal logaritmasını Döndür *x*.
 
-|Sorun|Döndür|
+|Sorun|döndürülecek|
 |-----------|------------|
 |*x* NaN =|NaN|
-|*x* ±0 =|+ SONSUZ|
-|*x*= negatif tamsayı|+ SONSUZ|
-|±INFINITY|+ SONSUZ|
-|kutbu'na hata|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
-|taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
+|*x* ±0 =|+ INFİNİTY|
+|*x*negatif tamsayı =|+ INFİNİTY|
+|±INFINITY|+ INFİNİTY|
+|kutup hata|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
+|Taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
 
-Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+Hatalar rapor, belirtilen [_matherr](matherr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **lgamma** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **lgamma** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **lgamma** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **lgamma** her zaman alan ve döndüren bir **çift**.
 
-X bir rasyonel sayı ise, bu işlevi (x - 1) çarpımını logaritmasını döndürür.
+X bir rasyonel sayı ise, bu işlev faktöriyelini (x - 1) logaritmasını döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**lgamma**, **lgammaf**, **lgammal**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

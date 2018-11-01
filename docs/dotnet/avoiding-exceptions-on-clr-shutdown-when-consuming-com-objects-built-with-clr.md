@@ -1,12 +1,6 @@
 ---
-title: -Clr ile oluşturulan COM nesnelerini tarafından oluşturulan özel durumları önleme | Microsoft Docs
-ms.custom: ''
+title: -Clr ile oluşturulan COM nesnelerini tarafından oluşturulan özel durumları önleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interop [C++], CLR shutdown exceptions
 - /clr compiler option [C++], CLR shutdown exceptions
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - interoperability [C++], CLR shutdown exceptions
 - CLR shutdown exceptions [C++]
 ms.assetid: 41249d83-4b51-4e46-866f-27f475f2498c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 687585d0b25c64f5575646de3cd4823e0a89988e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 23af1d8b48a6579b8cc20261691c1f090dc858a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633447"
 ---
 # <a name="avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr"></a>CLR Kapatmasında /clr ile Oluşturulan COM Nesnelerini Tüketirken Özel Durumları Önleme
 

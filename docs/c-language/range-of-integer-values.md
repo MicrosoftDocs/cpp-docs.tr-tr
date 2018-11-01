@@ -1,23 +1,13 @@
 ---
-title: Aralığı, tamsayı değerlerini | Microsoft Docs
-ms.custom: ''
+title: Tamsayı Değerleri Aralığı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 0e9c6161-8f3f-4bfb-9fcc-a6c8dc97d702
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d940824e6bb1dc728cb999c1e820cb7adcedf8ce
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bcf79877ed1bbd261a70b56d60df86adc31c897b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092654"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632056"
 ---
 # <a name="range-of-integer-values"></a>Tamsayı Değerleri Aralığı
 

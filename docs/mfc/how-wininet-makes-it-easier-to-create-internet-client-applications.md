@@ -1,27 +1,17 @@
 ---
-title: Winınet'in Internet istemci uygulamaları oluşturmayı kolaylaştırması | Microsoft Docs
-ms.custom: ''
+title: WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows Sockets [MFC], vs. WinInet
 - WinInet classes [MFC], vs. WinSock
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 847ad295956cafa12e3793dc68d663f005da095a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2bca338aa2a1b18e8c9ab41a887678767cf6c8c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636871"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 

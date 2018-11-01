@@ -1,12 +1,6 @@
 ---
-title: Veri türü aralıkları | Microsoft Docs
-ms.custom: ''
+title: Veri Türü Aralıkları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - float keyword [C++]
 - char keyword [C++]
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - long int keyword [C++]
 - unsigned long int [C++]
 ms.assetid: 3691ceca-05fb-4b82-b1ae-5c4618cda91a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa0efd3fa89ad10809217a0e484d3776d3c0ea5b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 88fbb128d995338e5976fbb3df939524f3ef8b63
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052159"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495036"
 ---
 # <a name="data-type-ranges"></a>Veri Türü Aralıkları
 

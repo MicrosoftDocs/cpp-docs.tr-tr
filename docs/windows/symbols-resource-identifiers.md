@@ -1,14 +1,8 @@
 ---
-title: 'Semboller: Kaynak Tanımlayıcıları (C++) | Microsoft Docs'
-ms.custom: ''
+title: 'Semboller: Kaynak Tanımlayıcıları (C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.identifiers
-dev_langs:
-- C++
 helpviewer_keywords:
 - symbols [C++], resource identifiers
 - symbols [C++], creating
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - symbols [C++], editing
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c3bbcc774115311cd4ed0f302e4d9812ecfc6505
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: abe6297d74df4941328d3e606fb3b0f646d36265
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530006"
 ---
 # <a name="symbols-resource-identifiers-c"></a>Semboller: Kaynak Tanımlayıcıları (C++)
 

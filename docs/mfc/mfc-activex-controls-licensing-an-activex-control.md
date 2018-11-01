@@ -1,14 +1,8 @@
 ---
-title: 'MFC ActiveX denetimleri: ActiveX denetimini lisanslama | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - COleObjectFactory
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleObjectFactory class [MFC], licensing controls
 - MFC ActiveX controls [MFC], licensing
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - GetLicenseKey method [MFC]
 - licensing ActiveX controls
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d7f9c3eeda36c6894103c96f1031f6770daf0c71
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 4001d49da8477ab9dd481d0eb3ee02cb10e1e18b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204723"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465630"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama
 

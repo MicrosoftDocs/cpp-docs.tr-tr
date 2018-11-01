@@ -1,16 +1,11 @@
 ---
-title: Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama | Microsoft Docs
+title: Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama
 ms.custom: conceptual
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - include
 - Lib
 - Path
-dev_langs:
-- C++
 helpviewer_keywords:
 - environment variables [C++]
 - VCVARS32.bat file
@@ -23,16 +18,12 @@ helpviewer_keywords:
 - compiling source code [C++], from command line
 - environment variables [C++], CL compiler
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3e4b24e3ec209273b0f547c99685e8e804a74bc0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 256d62ef480e8d67f3861b3b8233c45fc6a95a4f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547192"
 ---
 # <a name="set-the-path-and-environment-variables-for-command-line-builds"></a>Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama
 

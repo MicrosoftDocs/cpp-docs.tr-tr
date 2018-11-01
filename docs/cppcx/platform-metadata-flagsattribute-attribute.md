@@ -1,26 +1,18 @@
 ---
-title: 'Platform::metadata:: FlagsAttribute özniteliği | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::metadata:: FlagsAttribute özniteliği'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Metadata::FlagsAttribute
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Metadata::FlagsAttribute Attribute
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 049b8afe83209412391dd41c39d62d02512ab382
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 871e9fd1ec095331a895cee72e5e8472962f2b1a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621383"
 ---
 # <a name="platformmetadataflagsattribute-attribute"></a>Platform::metadata:: FlagsAttribute özniteliği
 

@@ -1,29 +1,19 @@
 ---
-title: __stosw | Microsoft Docs
-ms.custom: ''
+title: __stosw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __stosw
-dev_langs:
-- C++
 helpviewer_keywords:
 - stosw instruction
 - __stosw intrinsic
 - rep stosw instruction
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 41f086c2427d8147014bb6df25f3923d3ab4b84c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b635bb17949c14c8c18da256475b4fc03a161248
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401335"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587934"
 ---
 # <a name="stosw"></a>__stosw
 
@@ -34,10 +24,10 @@ Bir depolama dize yönergesi oluşturur (`rep stosw`).
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __stosw( 
-   unsigned short* Dest, 
-   unsigned short Data, 
-   size_t Count 
+void __stosw( 
+   unsigned short* Dest, 
+   unsigned short Data, 
+   size_t Count 
 );
 ```
 

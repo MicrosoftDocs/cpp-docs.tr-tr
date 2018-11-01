@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3269 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3269
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3269
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3269
 ms.assetid: c575f067-244d-4dd5-bf58-9e7630ea58b7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84cb9acdd6444b934e7ec51691d87a6912880de2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 406b388460b3d449471c884dd6461f2ce59a10f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061818"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622956"
 ---
 # <a name="compiler-error-c3269"></a>Derleyici Hatası C3269
 

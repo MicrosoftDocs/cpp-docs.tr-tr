@@ -1,29 +1,19 @@
 ---
-title: __outbytestring | Microsoft Docs
-ms.custom: ''
+title: __outbytestring
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __outbytestring
-dev_langs:
-- C++
 helpviewer_keywords:
 - rep outsb instruction
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ef1bb6e4804fc71531f694a3dac4c5504941bf0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 89d2964fbc3e0d7858ec662fb55511c090036ad8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393769"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530937"
 ---
 # <a name="outbytestring"></a>__outbytestring
 
@@ -34,10 +24,10 @@ Oluşturur `rep outsb` gönderen ilk yönerge `Count` verileri baytlık tarafın
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outbytestring( 
-   unsigned short Port, 
-   unsigned char* Buffer, 
-   unsigned long Count 
+void __outbytestring( 
+   unsigned short Port, 
+   unsigned char* Buffer, 
+   unsigned long Count 
 );
 ```
 

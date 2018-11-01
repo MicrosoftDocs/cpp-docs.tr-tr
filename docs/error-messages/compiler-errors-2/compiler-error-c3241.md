@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3241 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3241
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3241
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3241
 ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f78346c91d7f103d1392081a90d982f3d99b493
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6eab22a8627b817b7a31e4bd34aad86d1f274615
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020244"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533438"
 ---
 # <a name="compiler-error-c3241"></a>Derleyici Hatası C3241
 

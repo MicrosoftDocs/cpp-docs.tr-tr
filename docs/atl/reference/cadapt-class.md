@@ -1,33 +1,23 @@
 ---
-title: CAdapt sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAdapt sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAdapt
 - ATLCOMCLI/ATL::CAdapt
 - ATLCOMCLI/ATL::CAdapt::CAdapt
 - ATLCOMCLI/ATL::CAdapt::m_T
-dev_langs:
-- C++
 helpviewer_keywords:
 - address-of operator
 - adapter objects
 - '& operator, address-of operator'
 - CAdapt class
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9292c354b630ca5aea8bda7c88f5beab6691ba08
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ec42ab7a9dd36648b1405859cf02bc194f75a73c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614740"
 ---
 # <a name="cadapt-class"></a>CAdapt sınıfı
 

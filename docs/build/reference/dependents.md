@@ -1,29 +1,19 @@
 ---
-title: -DEPENDENTS | Microsoft Docs
-ms.custom: ''
+title: /DEPENDENTS
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /dependents
-dev_langs:
-- C++
 helpviewer_keywords:
 - -DEPENDENTS dumpbin option
 - /DEPENDENTS dumpbin option
 - DEPENDENTS dumpbin option
 ms.assetid: 9b31da2a-75ac-4bbf-a3f1-adf8b0ecbbb4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6b9a9ffad3511d01cfc18187d80d1844f040719
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 31f1d34ac548dd583ea8dac15420252b1b10940f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631887"
 ---
 # <a name="dependents"></a>/DEPENDENTS
 

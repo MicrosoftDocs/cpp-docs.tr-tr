@@ -1,14 +1,8 @@
 ---
-title: Bir araç çubuğu denetiminin görünümünü özelleştirme | Microsoft Docs
-ms.custom: ''
+title: Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - TBSTYLE_
-dev_langs:
-- C++
 helpviewer_keywords:
 - flat toolbars
 - CToolBar class [MFC], styles
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], object styles
 - toolbar controls [MFC], style
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c8c66990335e2925e6edd7a884b119df3fc9f88
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ba1ff18d9b9a4d98b60cf7c30e21c56976325403
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565197"
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme
 

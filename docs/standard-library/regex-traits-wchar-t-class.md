@@ -1,27 +1,17 @@
 ---
-title: regex_traits&lt;wchar_t&gt; sınıfı | Microsoft Docs
-ms.custom: ''
+title: regex_traits&lt;wchar_t&gt; sınıfı
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - regex/std::regex_traits<wchar_t>
-dev_langs:
-- C++
 helpviewer_keywords:
 - regex_traits<wchar_t> class
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ff84c0d8b3da721c5d5830be798e2ff03947a16a
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: cba5a7a036806f244f45a2d3b7a6317393f7a196
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645139"
 ---
 # <a name="regextraitsltwchartgt-class"></a>regex_traits&lt;wchar_t&gt; sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: İleti eşleme makroları (ATL) | Microsoft Docs
-ms.custom: ''
+title: İleti eşleme makroları (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlwin/ATL::ALT_MSG_MAP
 - atlwin/ATL::BEGIN_MSG_MAP
@@ -40,19 +36,13 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_ID_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
-dev_langs:
-- C++
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fbfd58491981cdba1b3aa3002736f49a7c09038c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5502dae40392679f47b691a822260accbf597dc0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054482"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555109"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 

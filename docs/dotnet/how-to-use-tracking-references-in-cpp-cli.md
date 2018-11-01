@@ -1,26 +1,15 @@
 ---
-title: 'Nasıl yapılır: kullanın izleme başvurularını C + +/ CLI | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: C++/CLI Üzerinde İzleme Başvurularını Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: bd62cf1cee23ef3f9d52234eb3754528ec1108ad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b95f6e3a5d98676134622e5c8805c6c031a1a80
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389577"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454802"
 ---
 # <a name="how-to-use-tracking-references-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde İzleme Başvurularını Kullanma
 

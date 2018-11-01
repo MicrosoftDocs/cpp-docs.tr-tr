@@ -1,30 +1,20 @@
 ---
-title: init_seg | Microsoft Docs
-ms.custom: ''
+title: init_seg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.init_seg
 - init_seg_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, init_seg
 - init_seg pragma
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8ec7a8d184ac8b62f6f75946d243873e0800072
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: f11ec6d3cee7af2ce785555af9b73d8c0eb58638
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808816"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532641"
 ---
 # <a name="initseg"></a>init_seg
 

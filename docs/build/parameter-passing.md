@@ -1,23 +1,13 @@
 ---
-title: Parametre geçirme | Microsoft Docs
-ms.custom: ''
+title: Parametre Geçirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: e838ee5f-c2fe-40b0-9a23-8023c949c820
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8db6b61936b2122cd984e594c1ff3f162fa3dfe
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1b7fb126ab3b140d0ab672067df35c5fc8df926e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648753"
 ---
 # <a name="parameter-passing"></a>Parametre Geçirme
 

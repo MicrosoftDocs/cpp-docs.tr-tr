@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3347 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3347
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3347
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3347
 ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 824d2e787ae613636c20c0cc79ae3167431a8fe7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8b1c4ea76f65b9f07a96177d2e481d1abeba0927
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46015734"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643118"
 ---
 # <a name="compiler-error-c3347"></a>Derleyici Hatası C3347
 

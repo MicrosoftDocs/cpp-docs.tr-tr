@@ -1,12 +1,6 @@
 ---
-title: XML verilerine erişme | Microsoft Docs
-ms.custom: ''
+title: XML Verilerine Erişme
 ms.date: 10/18/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - data access [C++], XML data
 - XML [C++], accessing data
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - rowsets [C++], retrieving XML data
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: e8b6950e07b349ae8b0ae2abf6a9c3de8c797faa
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8f77ebf41e741d74443fbae3398589c77fbf6c01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665549"
 ---
 # <a name="accessing-xml-data"></a>XML Verilerine Erişme
 

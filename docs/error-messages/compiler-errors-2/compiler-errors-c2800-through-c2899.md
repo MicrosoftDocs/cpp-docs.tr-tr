@@ -1,10 +1,6 @@
 ---
-title: Derleyici hataları C2800 C2899 aracılığıyla | Microsoft Docs
-ms.custom: ''
+title: Derleyici hataları C2800 ile c2899 arasındaki
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2816
 - C2820
@@ -45,23 +41,17 @@ helpviewer_keywords:
 - C2889
 - C2895
 - C2899
-dev_langs:
-- C++
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc85ab15a262a5f4976fcdc7278401a0d9a128d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c1b001e4d55c913cd2b9a50ee2e4bb4d2915523
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283510"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601116"
 ---
-# <a name="compiler-errors-c2800-through-c2899"></a>Derleyici hataları C2800 C2899 aracılığıyla
+# <a name="compiler-errors-c2800-through-c2899"></a>Derleyici hataları C2800 ile c2899 arasındaki
 
-Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata iletileri kümesini açıklayın.
+Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -69,103 +59,103 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata ile
 
 |Hata|İleti|
 |-----------|-------------|
-|[Derleyici Hatası C2800](compiler-error-c2800.md)|' işleci *işleci*' aşırı yüklenemez|
-|[Derleyici Hatası C2801](compiler-error-c2801.md)|'*üye*' statik olmayan üye olmalıdır|
-|[Derleyici Hatası C2802](compiler-error-c2802.md)|statik üye ' işleci *işleci*' biçimsel parametresi yok|
-|[Derleyici Hatası C2803](compiler-error-c2803.md)|' işleci *işleci*' en az bir biçimsel parametresi sınıf türü olması gerekir|
-|[Derleyici Hatası C2804](compiler-error-c2804.md)|İkili ' işleci *işleci*' çok fazla parametre yok|
-|[Derleyici Hatası C2805](compiler-error-c2805.md)|İkili ' işleci *işleci*' çok az sayıda parametre yok|
-|[Derleyici Hatası C2806](compiler-error-c2806.md)|' işleci *işleci*' çok fazla biçimsel parametrelerine sahip|
-|[Derleyici Hatası C2807](compiler-error-c2807.md)|sonek için ikinci biçimsel parametresi ' işleci *işleci*' 'int' olmalıdır|
-|[Derleyici Hatası C2808](compiler-error-c2808.md)|birli ' işleci *işleci*' çok fazla biçimsel parametrelerine sahip|
-|[Derleyici Hatası C2809](compiler-error-c2809.md)|' işleci *işleci*' biçimsel parametresi yok|
-|[Derleyici Hatası C2810](compiler-error-c2810.md)|'*arabirimi*': Arabirim yalnızca başka bir arabirimden devralan|
-|[Derleyici Hatası C2811](compiler-error-c2811.md)|'*type1*': devralınan olamaz '*type2*', ref sınıfı yalnızca bir ref sınıf veya arabirim sınıfı devralabilirsiniz|
-|[Derleyici Hatası C2812](compiler-error-c2812.md)|#import/CLR ile desteklenmiyor: saf ve/CLR: safe|
+|[Derleyici Hatası C2800](compiler-error-c2800.md)|' operator *işleci*' aşırı yüklenemez|
+|[Derleyici Hatası C2801](compiler-error-c2801.md)|'*üye*' statik olmayan üye olmanız gerekir|
+|[Derleyici Hatası C2802](compiler-error-c2802.md)|statik üye ' işleci *işleci*' hiç biçimsel parametresi yok|
+|[Derleyici Hatası C2803](compiler-error-c2803.md)|' operator *işleci*' sınıf türünde en az bir biçimsel parametreye sahip olmalıdır|
+|[Derleyici Hatası C2804](compiler-error-c2804.md)|İkili ' operator *işleci*' çok fazla sayıda parametre içeriyor|
+|[Derleyici Hatası C2805](compiler-error-c2805.md)|İkili ' operator *işleci*' çok az sayıda parametre içeriyor|
+|[Derleyici Hatası C2806](compiler-error-c2806.md)|' operator *işleci*' çok fazla sayıda biçimsel parametre içeriyor|
+|[Derleyici Hatası C2807](compiler-error-c2807.md)|sonekinin ikinci biçimsel parametre ' işleci *işleci*' 'int' olmalıdır|
+|[Derleyici Hatası C2808](compiler-error-c2808.md)|birli ' operator *işleci*' çok fazla sayıda biçimsel parametre içeriyor|
+|[Derleyici Hatası C2809](compiler-error-c2809.md)|' operator *işleci*' hiç biçimsel parametresi yok|
+|[Derleyici Hatası C2810](compiler-error-c2810.md)|'*arabirimi*': Arabirim yalnızca başka bir arabirimden devralabilir|
+|[Derleyici Hatası C2811](compiler-error-c2811.md)|'*type1*': devralamaz '*type2*', başvuru sınıfı, yalnızca bir başvuru sınıfı veya arabirim sınıfından devralabilir|
+|[Derleyici Hatası C2812](compiler-error-c2812.md)|#import ile/CLR desteklenmiyor: pure ve/CLR: safe|
 |[Derleyici Hatası C2813](compiler-error-c2813.md)|#import ile /MP desteklenmiyor|
-|[Derleyici Hatası C2814](compiler-error-c2814.md)|'*üye*': yerel tür içinde yönetilen WinRT tür yerleştirilemez '*sınıfı*'|
-|[Derleyici Hatası C2815](compiler-error-c2815.md)|'delete' işleci: ilk biçimsel parametresi olmalıdır ' void *', ancak '* türü *' kullanıldı|
+|[Derleyici Hatası C2814](compiler-error-c2814.md)|'*üye*': yerel bir tür bir yönetilen/WinRT türü içinde iç içe olamaz '*sınıfı*'|
+|[Derleyici Hatası C2815](compiler-error-c2815.md)|'operator delete': ilk biçimsel parametre olmalıdır ' void *', ancak '* türü *' kullanıldı|
 |Derleyici Hatası C2816|Kullanımdan kalktı.|
-|[Derleyici Hatası C2817](compiler-error-c2817.md)|dönüş türü 'işleci Sil' için 'void' olmalıdır|
-|[Derleyici Hatası C2818](compiler-error-c2818.md)|uygulamasının aşırı '-> işleci' türü aracılığıyla yinelemelidir '*sınıfı*'|
-|[Derleyici Hatası C2819](compiler-error-c2819.md)|türü '*sınıfı*' 'bir aşırı yüklenmiş üye işleci ->' yok|
+|[Derleyici Hatası C2817](compiler-error-c2817.md)|'operator delete' için dönüş türü 'void' olmalıdır|
+|[Derleyici Hatası C2818](compiler-error-c2818.md)|Uygulama, aşırı yüklenmiş 'operator ->' türü üzerinden özyinelemeli '*sınıfı*'|
+|[Derleyici Hatası C2819](compiler-error-c2819.md)|türü '*sınıfı*' 'bir aşırı yüklü üye operator ->' yok|
 |Derleyici Hatası C2820|Kullanımdan kalktı.|
-|[Derleyici Hatası C2821](compiler-error-c2821.md)|'yeni işleç' ilk biçimsel parametresi 'size_t' olmalıdır|
-|Derleyici Hatası C2822|Yerel bırakma bu platformda desteklenmiyor|
-|[Derleyici Hatası C2823](compiler-error-c2823.md)|typedef şablon/genel geçersiz|
-|[Derleyici Hatası C2824](compiler-error-c2824.md)|dönüş türü 'new işleci' olmalıdır ' void *'|
-|[Derleyici Hatası C2825](compiler-error-c2825.md)|'*tanımlayıcısı*': bir sınıf veya tarafından izlendiğinde ad olmalıdır '::'|
+|[Derleyici Hatası C2821](compiler-error-c2821.md)|'operator new' için ilk biçimsel parametre 'size_t' olmalıdır|
+|Derleyici Hatası C2822|Yerel geriye doğru izleme bu platformda desteklenmiyor|
+|[Derleyici Hatası C2823](compiler-error-c2823.md)|şablonu/genel tür tanımı geçersiz|
+|[Derleyici Hatası C2824](compiler-error-c2824.md)|'operator new' için dönüş türü ' void *'|
+|[Derleyici Hatası C2825](compiler-error-c2825.md)|'*tanımlayıcı*': bir sınıf ya da ardından, ad alanı olmalıdır '::'|
 |Derleyici Hatası C2826|Kullanımdan kalktı.|
-|[Derleyici Hatası C2827](compiler-error-c2827.md)|' işleci *işleci*' birli formla genel değiştirilemiyor|
-|[Derleyici Hatası C2828](compiler-error-c2828.md)|' işleci *işleci*' ile ikili biçimini genel değiştirilemiyor|
-|[Derleyici Hatası C2829](compiler-error-c2829.md)|' işleci *işleci*' değişken parametre listesine sahip olamaz|
-|[Derleyici Hatası C2830](compiler-error-c2830.md)|yalnızca 'yeni işleç' yerleştirme parametreleri varsayılan değerlere sahip olabilir|
-|[Derleyici Hatası C2831](compiler-error-c2831.md)|' işleci *işleci*' varsayılan parametreleri olamaz|
-|Derleyici Hatası C2832|'*tanımlayıcısı*': değer başlatılmış bir başvuru türü olamaz|
-|[Derleyici Hatası C2833](compiler-error-c2833.md)|' işleci *belirteci*' tanınan işleci veya türü değil|
-|[Derleyici Hatası C2834](compiler-error-c2834.md)|' işleci *işleci*' genel olarak nitelenmiş olmalıdır|
-|[Derleyici Hatası C2835](compiler-error-c2835.md)|Kullanıcı tanımlı dönüştürme '*türü*' biçimsel parametre almayan|
-|Derleyici Hatası C2836|'*tanımlayıcısı*': UNION yalnızca bir statik olmayan veri üyesi varsayılan üye başlatıcıdan olabilir|
-|Derleyici Hatası C2837|'*işlevi*': OpenMP yönergeleri ve #pragma loop(hint_parallel) aynı işlevinde kullanamazsınız|
-|[Derleyici Hatası C2838](compiler-error-c2838.md)|'*tanımlayıcısı*': üye bildiriminde geçersiz tam ad|
-|[Derleyici Hatası C2839](compiler-error-c2839.md)|geçersiz dönüş türü '*türü*' aşırı için '-> işleci'|
-|Derleyici Hatası C2840|yönerge word bağımsız değişkeni sabit değil|
-|Derleyici Hatası C2841|bağımsız değişken değil sabit kaydetme|
-|[Derleyici Hatası C2842](compiler-error-c2842.md)|'*sınıfı*': yönetilen WinRT türü kendi 'new işleci' tanımlayamaz veya 'delete işleci|
-|[Derleyici Hatası C2843](compiler-error-c2843.md)|'*üye*': statik olmayan veri üyesi adresini ya da yönetilen WinRT türü yöntemi alamıyor|
-|[Derleyici Hatası C2844](compiler-error-c2844.md)|'*tanımlayıcısı*': arabirim üyesi olamaz '*arabirimi*'|
-|[Derleyici Hatası C2845](compiler-error-c2845.md)|'*türü*': işaretçi aritmetiği bu türüne izin verilmiyor|
-|[Derleyici Hatası C2846](compiler-error-c2846.md)|'*arabirimi*': arabirim bir oluşturucuya sahip olamaz|
-|[Derleyici Hatası C2847](compiler-error-c2847.md)|sizeof yönetilen WinRT türüne uygulanamıyor '*sınıfı*'|
-|Derleyici Hatası C2848|'*sınıfı*': yönetilen WinRT türü UNION üyesi olamaz|
-|[Derleyici Hatası C2849](compiler-error-c2849.md)|'*arabirimi*': yıkıcı bir arabirim olamaz|
-|[Derleyici Hatası C2850](compiler-error-c2850.md)|'*oluşturmak*': yalnızca dosya kapsamda; izin verilen bir iç içe geçmiş yapısı olmayabilir|
-|Derleyici Hatası C2851|'*enum*': ortak WinRT enum yalnızca 'int' veya 'imzasız int' temel türü olarak kullanabilirsiniz|
-|Derleyici Hatası C2852|'*tanımlayıcısı*': yalnızca veri üyeleri bir sınıf içinde başlatılabilir|
-|Derleyici Hatası C2853|'*tanımlayıcısı*': statik olmayan veri üyesi 'auto' içeren bir türe sahip olamaz|
-|[Derleyici Hatası C2854](compiler-error-c2854.md)|#pragma hdrstop sözdizimi hatası|
-|[Derleyici Hatası C2855](compiler-error-c2855.md)|komut satırı seçeneği '*seçeneği*' önceden derlenmiş üst bilgi ile tutarsız|
-|[Derleyici Hatası C2856](compiler-error-c2856.md)|#pragma hdrstop #if bloğunun içine olamaz|
-|[Derleyici Hatası C2857](compiler-error-c2857.md)|' #include ' /Yc ile belirtilen deyim*filename* komut satırı seçeneği kaynak dosyasında bulunamadı|
-|[Derleyici Hatası C2858](compiler-error-c2858.md)|komut satırı seçeneği ' /Yc (/Fd*filename*)' kullanılan önceden derlenmiş üst bilgi tutarsız ' /Fd*filename*'|
-|[Derleyici Hatası C2859](compiler-error-c2859.md)|*Dosya adı* değil *dosya türü* bu önceden derlenmiş üst bilgi oluşturulurken kullanılan dosyası önceden derlenmiş üst bilgi yeniden oluşturun.|
-|[Derleyici Hatası C2860](compiler-error-c2860.md)|'void' dışında (boş) bir bağımsız değişken türü olamaz|
+|[Derleyici Hatası C2827](compiler-error-c2827.md)|' operator *işleci*' birli biçim ile genel olarak geçersiz kılınamaz|
+|[Derleyici Hatası C2828](compiler-error-c2828.md)|' operator *işleci*' ikili biçim ile genel olarak geçersiz kılınamaz|
+|[Derleyici Hatası C2829](compiler-error-c2829.md)|' operator *işleci*' değişken parametre listesine sahip olamaz|
+|[Derleyici Hatası C2830](compiler-error-c2830.md)|yalnızca 'operator new' öğesine yönelik yerleştirme parametrelerinin varsayılan değerleri olabilir|
+|[Derleyici Hatası C2831](compiler-error-c2831.md)|' operator *işleci*' varsayılan parametrelere sahip olamaz|
+|Derleyici Hatası C2832|'*tanımlayıcı*': bir başvuru türü değerle başlatılan olamaz|
+|[Derleyici Hatası C2833](compiler-error-c2833.md)|' operator *belirteci*' tanınan bir işleç veya tür değil|
+|[Derleyici Hatası C2834](compiler-error-c2834.md)|' operator *işleci*' genel olarak nitelenmiş olmalıdır|
+|[Derleyici Hatası C2835](compiler-error-c2835.md)|Kullanıcı tanımlı dönüştürme '*türü*' hiç biçimsel parametre almıyor|
+|Derleyici Hatası C2836|'*tanımlayıcı*': birleşimin yalnızca bir statik olmayan veri üyesi varsayılan üye Başlatıcı olabilir|
+|Derleyici Hatası C2837|'*işlevi*': aynı işlevde OpenMP yönergeleri ve #pragma loop(hint_parallel) kullanılamaz|
+|[Derleyici Hatası C2838](compiler-error-c2838.md)|'*tanımlayıcı*': üye bildiriminde geçersiz nitelenmiş ad|
+|[Derleyici Hatası C2839](compiler-error-c2839.md)|geçersiz dönüş türü '*türü*' için aşırı yüklenmiş 'operator ->'|
+|Derleyici Hatası C2840|yönerge sözcük bağımsız değişkeni sabit değil|
+|Derleyici Hatası C2841|YAZMAÇ bağımsız değişkeni sabit değil|
+|[Derleyici Hatası C2842](compiler-error-c2842.md)|'*sınıfı*': bir yönetilen/WinRT türü kendi 'operator new' tanımlayamaz veya 'operator delete'|
+|[Derleyici Hatası C2843](compiler-error-c2843.md)|'*üye*': statik olmayan veri üyesi adresini veya yönetilen/WinRT türü yöntemi alınamıyor|
+|[Derleyici Hatası C2844](compiler-error-c2844.md)|'*tanımlayıcı*': arabirimin üyesi olamaz '*arabirimi*'|
+|[Derleyici Hatası C2845](compiler-error-c2845.md)|'*türü*': işaretçi aritmetik bu türüne izin verilmiyor|
+|[Derleyici Hatası C2846](compiler-error-c2846.md)|'*arabirimi*': arabirimin Oluşturucusu olamaz|
+|[Derleyici Hatası C2847](compiler-error-c2847.md)|Yönetilen/WinRT türü için sizeof uygulanamaz '*sınıfı*'|
+|Derleyici Hatası C2848|'*sınıfı*': bir yönetilen/WinRT türü bir birleşimin üyesi olamaz|
+|[Derleyici Hatası C2849](compiler-error-c2849.md)|'*arabirimi*': arabirimin yok Edicisi olamaz|
+|[Derleyici Hatası C2850](compiler-error-c2850.md)|'*oluşturmak*': yalnızca dosya kapsamında; izin verilen bir iç içe geçmiş yapısı içinde olmayabilir|
+|Derleyici Hatası C2851|'*enum*': ortak bir WinRT numaralandırma yalnızca 'int' veya 'unsigned int' temel tür olarak kullanabilirsiniz|
+|Derleyici Hatası C2852|'*tanımlayıcı*': bir sınıf içinde yalnızca veri üyeleri başlatılabilir|
+|Derleyici Hatası C2853|'*tanımlayıcı*': statik olmayan veri üyesinde 'auto' içeren bir tür olamaz|
+|[Derleyici Hatası C2854](compiler-error-c2854.md)|#pragma hdrstop içinde sözdizimi hatası|
+|[Derleyici Hatası C2855](compiler-error-c2855.md)|komut satırı seçeneği '*seçeneği*' önceden derlenmiş üstbilgiyle tutarsız|
+|[Derleyici Hatası C2856](compiler-error-c2856.md)|#pragma hdrstop bir #if bloğu içinde yer alamaz|
+|[Derleyici Hatası C2857](compiler-error-c2857.md)|' #include ' ifade /Yc ile belirtilen*filename* komut satırı seçeneği kaynak dosyasında bulunamadı|
+|[Derleyici Hatası C2858](compiler-error-c2858.md)|komut satırı seçeneği ' /Yc (/Fd*filename*)' kullanılan önceden derlenmiş üstbilgiyle tutarsız ' /Fd*filename*'|
+|[Derleyici Hatası C2859](compiler-error-c2859.md)|*filename* değil *filetype* bu ön derlenmiş üstbilgi oluşturulduğunda kullanılan dosyası Ön derlenmiş üstbilgiyi yeniden oluşturun.|
+|[Derleyici Hatası C2860](compiler-error-c2860.md)|'void', '(void)' dışında bir bağımsız değişken türü olamaz|
 |[Derleyici Hatası C2861](compiler-error-c2861.md)|'*bildirimi*': bir arabirim üye işlevi tanımlanamıyor|
-|[Derleyici Hatası C2862](compiler-error-c2862.md)|'*arabirimi*': Arabirim yalnızca Genel üyeler olabilir|
-|[Derleyici Hatası C2863](compiler-error-c2863.md)|'*arabirimi*': arabirim arkadaş sahip olamaz|
-|[Derleyici Hatası C2864](compiler-error-c2864.md)|'*tanımlayıcısı*': bir sınıf Başlatıcısı ile bir statik veri üyesi/Şablon değişkeni geçici olmayan const Tamsayı türünde olmalıdır|
+|[Derleyici Hatası C2862](compiler-error-c2862.md)|'*arabirimi*': arabirimin yalnızca genel üyeleri olabilir|
+|[Derleyici Hatası C2863](compiler-error-c2863.md)|'*arabirimi*': arabirimin arkadaş öğeleri olamaz|
+|[Derleyici Hatası C2864](compiler-error-c2864.md)|'*tanımlayıcı*': sınıf içi Başlatıcısı olan bir statik veri üyesi/Şablon değişkeni geçici olmayan sabit tamsayı türü olmalıdır|
 |[Derleyici Hatası C2865](compiler-error-c2865.md)|'*işleci*': nesne işaretçisi/tanıtıcısı için geçersiz karşılaştırma|
 |Derleyici Hatası C2866|Kullanımdan kalktı.|
-|[Derleyici Hatası C2867](compiler-error-c2867.md)|'*tanımlayıcısı*': bir ad değil|
-|[Derleyici Hatası C2868](compiler-error-c2868.md)|'*tanımlayıcısı*': kullanarak bildirimi için geçersiz sözdizimi; beklenen tam adı|
-|[Derleyici Hatası C2869](compiler-error-c2869.md)|'*tanımlayıcısı*': zaten bir ad alanı olarak tanımlanan|
-|[Derleyici Hatası C2870](compiler-error-c2870.md)|'*tanımlayıcısı*': ad alanı tanımını dosya kapsamda ya da hemen başka bir ad alanı tanımını içinde gösterilmesi gerekir|
-|[Derleyici Hatası C2871](compiler-error-c2871.md)|'*tanımlayıcısı*': Bu ada sahip bir ad alanı yok|
-|[Derleyici Hatası C2872](compiler-error-c2872.md)|'*tanımlayıcısı*': belirsiz simgesi|
-|[Derleyici Hatası C2873](compiler-error-c2873.md)|'*sembol*': sembol bir kullanarak-bildiriminde kullanılamaz|
-|[Derleyici Hatası C2874](compiler-error-c2874.md)|using bildirimi neden olan birden çok bildirimini '*tanımlayıcısı*'|
-|[Derleyici Hatası C2875](compiler-error-c2875.md)|using bildirimi neden olan birden çok bildirimini '*sınıfı*::*tanımlayıcısı*'|
-|[Derleyici Hatası C2876](compiler-error-c2876.md)|'*sınıfı*::*üye*': tüm aşırı erişilebilir|
-|[Derleyici Hatası C2877](compiler-error-c2877.md)|'*üye*'erişilemiyor'*sınıfı*'|
-|[Derleyici Hatası C2878](compiler-error-c2878.md)|'*tanımlayıcısı*': bir ad alanı veya sınıf adı yok|
-|[Derleyici Hatası C2879](compiler-error-c2879.md)|'*tanımlayıcısı*': varolan bir ad bir diğer ad ad alanı diğer ad tanımı verilebilir yalnızca|
-|Derleyici Hatası C2880|Geçerli bir sabit __swi veya __hvc (SWI numarası) ilk bağımsız değişken olarak gerektirir|
-|[Derleyici Hatası C2881](compiler-error-c2881.md)|'*tanımlayıcısı*': için diğer ad olarak kullanılıyor '*sınıfı*'|
-|[Derleyici Hatası C2882](compiler-error-c2882.md)|'*tanımlayıcısı*': ifade ad alanı tanımlayıcıda geçersiz kullanımı|
-|[Derleyici Hatası C2883](compiler-error-c2883.md)|'*işlevi*': işlev bildirimi çakışıyor '*tanımlayıcısı*' using bildirimi tarafından sunulan|
-|[Derleyici Hatası C2884](compiler-error-c2884.md)|'*tanımlayıcısı*': yerel işlevi kullanarak bildirimi çakışıyor tarafından sunulan '*işlevi*'|
-|[Derleyici Hatası C2885](compiler-error-c2885.md)|'*sınıfı*::*tanımlayıcısı*': olmayan bir geçerli using bildirimi sınıfı olmayan kapsamda|
-|[Derleyici Hatası C2886](compiler-error-c2886.md)|'*sınıfı*::*tanımlayıcısı*': sembol bir üye kullanarak-bildiriminde kullanılamaz|
-|Derleyici Hatası C2887|__swi veya __hvc beşten fazla bağımsız değişkenleri (SWI sayı, r0 - r3) sahip olamaz|
-|[Derleyici Hatası C2888](compiler-error-c2888.md)|'*tanımlayıcısı*': sembol ad alanı içinde tanımlanamaz '*ad alanı*'|
-|Derleyici Hatası C2889|'*sınıfı*': yönetilen WinRT sınıf türü sanal bir temel sınıf olamaz|
-|[Derleyici Hatası C2890](compiler-error-c2890.md)|'*sınıfı*': ref sınıfı yalnızca bir arabirim olmayan taban sınıf olabilir|
-|[Derleyici Hatası C2891](compiler-error-c2891.md)|'*parametresi*': bir şablon parametresini adresi alınamıyor|
-|[Derleyici Hatası C2892](compiler-error-c2892.md)|Yerel sınıf üye şablonları olmaması|
-|[Derleyici Hatası C2893](compiler-error-c2893.md)|İşlev şablonu özelleştirmek üzere başarısız '*şablonu*'|
-|[Derleyici Hatası C2894](compiler-error-c2894.md)|'C' bağlantı sağlamak için şablonlar bildirilemez|
-|Derleyici Hatası C2895|'*bildirimi*': açıkça dllimport ile bildirilmiş bir işlev şablon örneği oluşturulamıyor|
-|[Derleyici Hatası C2896](compiler-error-c2896.md)|'*function1*': işlevi şablon/genel kullanamazsınız '*function2*' işlevi bağımsız değişken olarak|
-|[Derleyici Hatası C2897](compiler-error-c2897.md)|yok Edicisi/Sonlandırıcı işlevi şablonu olamaz|
+|[Derleyici Hatası C2867](compiler-error-c2867.md)|'*tanımlayıcı*': bir ad alanı değil|
+|[Derleyici Hatası C2868](compiler-error-c2868.md)|'*tanımlayıcı*': kullanma bildirimi için geçersiz sözdizimi; tam ad bekleniyor|
+|[Derleyici Hatası C2869](compiler-error-c2869.md)|'*tanımlayıcı*': bir ad alanı olarak zaten tanımlandı|
+|[Derleyici Hatası C2870](compiler-error-c2870.md)|'*tanımlayıcı*': bir ad alanı tanımı dosya kapsamında veya hemen başka bir ad alanı tanımı içinde yer almalıdır|
+|[Derleyici Hatası C2871](compiler-error-c2871.md)|'*tanımlayıcı*': Bu ada sahip bir ad alanı yok|
+|[Derleyici Hatası C2872](compiler-error-c2872.md)|'*tanımlayıcı*': belirsiz simge|
+|[Derleyici Hatası C2873](compiler-error-c2873.md)|'*sembol*': simge bir bildirim kullanımı içinde kullanılamaz|
+|[Derleyici Hatası C2874](compiler-error-c2874.md)|using bildirimi neden birden çok bildirimi '*tanımlayıcı*'|
+|[Derleyici Hatası C2875](compiler-error-c2875.md)|using bildirimi neden birden çok bildirimi '*sınıfı*::*tanımlayıcı*'|
+|[Derleyici Hatası C2876](compiler-error-c2876.md)|'*sınıfı*::*üye*': tüm aşırı yüklemeler erişilebilir değil|
+|[Derleyici Hatası C2877](compiler-error-c2877.md)|'*üye*'erişilebilir değil'*sınıfı*'|
+|[Derleyici Hatası C2878](compiler-error-c2878.md)|'*tanımlayıcı*': bir ad alanı veya sınıf adı yok|
+|[Derleyici Hatası C2879](compiler-error-c2879.md)|'*tanımlayıcı*': yalnızca var olan bir ad alanı ad alanı diğer ad tanımıyla alternatif ad verilebilir|
+|Derleyici Hatası C2880|__swi veya __hvc ilk bağımsız değişken (SWI numarası) olarak geçerli bir sabit gerektirir.|
+|[Derleyici Hatası C2881](compiler-error-c2881.md)|'*tanımlayıcı*': zaten için bir diğer ad olarak kullanılan '*sınıfı*'|
+|[Derleyici Hatası C2882](compiler-error-c2882.md)|'*tanımlayıcı*': ad alanı tanımlayıcısının ifade içinde geçersiz kullanımı|
+|[Derleyici Hatası C2883](compiler-error-c2883.md)|'*işlevi*': işlev bildirimi ile çelişiyor '*tanımlayıcı*' using bildirimi tarafından sunulan|
+|[Derleyici Hatası C2884](compiler-error-c2884.md)|'*tanımlayıcı*': yerel işlev kullanma bildirimiyle çakışıyor tarafından tanıtılan '*işlevi*'|
+|[Derleyici Hatası C2885](compiler-error-c2885.md)|'*sınıfı*::*tanımlayıcı*': değil bir geçerli using bildirimi sınıf olmayan kapsamda|
+|[Derleyici Hatası C2886](compiler-error-c2886.md)|'*sınıfı*::*tanımlayıcı*': simge bir üye bildirim kullanımı içinde kullanılamaz|
+|Derleyici Hatası C2887|__swi veya __hvc beşten fazla bağımsız değişken (SWI numarası, r0 - r3) sahip olamaz|
+|[Derleyici Hatası C2888](compiler-error-c2888.md)|'*tanımlayıcı*': simge ad alanı içinde tanımlanamaz '*ad alanı*'|
+|Derleyici Hatası C2889|'*sınıfı*': sanal bir temel sınıf/WinRT yönetilen sınıf türü olamaz|
+|[Derleyici Hatası C2890](compiler-error-c2890.md)|'*sınıfı*': başvuru sınıfı yalnızca arabirim olmayan bir taban sınıfı olabilir|
+|[Derleyici Hatası C2891](compiler-error-c2891.md)|'*parametre*': bir şablon parametresinin adresi alınamaz|
+|[Derleyici Hatası C2892](compiler-error-c2892.md)|Yerel sınıfın üye şablonları olamaz|
+|[Derleyici Hatası C2893](compiler-error-c2893.md)|İşlev şablonu özelleştirilemedi '*şablon*'|
+|[Derleyici Hatası C2894](compiler-error-c2894.md)|Şablonlar 'C' bağlaması olacak şekilde bildirilemez|
+|Derleyici Hatası C2895|'*bildirimi*': dllimport ile bildirimi yapılmış bir işlev şablonunun açıkça örneği oluşturulamıyor|
+|[Derleyici Hatası C2896](compiler-error-c2896.md)|'*işlev1*': işlev şablonu/genel kullanamazsınız '*function2*' işlevi bağımsız değişken olarak|
+|[Derleyici Hatası C2897](compiler-error-c2897.md)|bir yok edici/Sonlandırıcı bir işlev şablonu olamaz|
 |[Derleyici Hatası C2898](compiler-error-c2898.md)|'*bildirimi*': üye işlev şablonları sanal olamaz|
-|Derleyici Hatası C2899|Kullanımdan kalktı.|
+|Derleyici Hatası c2899 arasındaki|Kullanımdan kalktı.|

@@ -1,27 +1,17 @@
 ---
-title: 'Biçimlendirilen zaman: Otomasyon sınıfları | Microsoft Docs'
-ms.custom: ''
+title: 'Biçimlendirilen zaman: Otomasyon sınıfları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Automation classes, formatting time
 - time [C++], formatting
 - formatting [C++], time
 ms.assetid: 155c5bef-b555-4bed-9545-29afc49715f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6dc5ecb7460e5813779cef8c9359983ae1007edf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2d08adcc03c7b9f46f6b6bd290b02ff5f22029f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429711"
 ---
 # <a name="formatting-time-automation-classes"></a>Biçimlendirilen zaman: Otomasyon sınıfları
 

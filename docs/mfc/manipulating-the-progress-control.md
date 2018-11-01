@@ -1,12 +1,6 @@
 ---
-title: İlerleme durumu denetimini düzenleme | Microsoft Docs
-ms.custom: ''
+title: İlerleme Durumu Denetimini Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CProgressCtrl class [MFC], working with
 - progress controls [MFC], manipulating
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fe784dfd63ec5c27a3695df3e6bc42ae0de2f7f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c7c602dcdd70a3539f9137589d31820ee5470e49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461587"
 ---
 # <a name="manipulating-the-progress-control"></a>İlerleme Durumu Denetimini Düzenleme
 

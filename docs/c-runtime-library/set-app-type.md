@@ -1,8 +1,6 @@
 ---
-title: _set_app_type | Microsoft Docs
-ms.custom: ''
+title: _set_app_type
 ms.date: 11/04/2016
-ms.topic: conceptual
 apiname:
 - _set_app_type
 apilocation:
@@ -11,19 +9,13 @@ apitype: DLLExport
 f1_keywords:
 - _set_app_type
 - corecrt_startup/_set_app_type
-dev_langs:
-- C++
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b2ad7e22bf6ba366a33dd44ce49c1a384f88b87
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f12e409355fcd10ece474103109286925b1f3a8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041265"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569825"
 ---
 # <a name="setapptype"></a>_set_app_type
 

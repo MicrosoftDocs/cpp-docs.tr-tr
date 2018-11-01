@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4194 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4194
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4194
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4194
 ms.assetid: a45f437e-33b5-487e-b3cd-ff1560041e7e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 530bcc0dab9182d0c194f23f6aa5575e431edb03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 800f9c501363b4c0f5534817e0860d34b116b45c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581278"
 ---
 # <a name="linker-tools-warning-lnk4194"></a>Bağlayıcı Araçları Uyarısı LNK4194
 

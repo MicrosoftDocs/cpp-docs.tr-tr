@@ -1,10 +1,6 @@
 ---
-title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l | Microsoft Docs
-ms.custom: ''
+title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _atoldbl
 - _atoldbl_l
@@ -38,8 +34,6 @@ f1_keywords:
 - atoflt
 - atoldbl_l
 - _atodbl
-dev_langs:
-- C++
 helpviewer_keywords:
 - _atodbl function
 - _atoldbl_l function
@@ -55,20 +49,16 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da36dfae81f33f5fb30a1a4bc93a57437980d720
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb8d711dc8dfa912333f34603ad607f0a74143bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393595"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552041"
 ---
 # <a name="atodbl-atodbll-atoldbl-atoldbll-atoflt-atofltl"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
-Bir dizeyi bir double dönüştürür (**_atodbl**), uzun çift (**_atoldbl**), veya float (**_atoflt**).
+Bir dizeyi, double'dönüştürür (**_atodbl**), long double (**_atoldbl**), veya float (**_atoflt**).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,10 +74,10 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 ### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-Çift çift uzun veya dize kayan noktalı bir sayıyı dönüştürme tarafından üretilen değeri float. Bu değerleri bir yapısında sarılır.
+Double, long double veya kayan dizeyi bir kayan nokta değerine dönüştürmenin ortaya çıkardığı değer. Bu değerleri bir yapıya sarılır.
 
 *str*<br/>
-Kayan nokta bir değere dönüştürmek için ayrıştırılması dize.
+Bir kayan nokta değerine dönüştürülmesi için ayrıştırılacak dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
@@ -98,15 +88,15 @@ Başarılı olursa 0 döndürür. Olası hata kodları **_UNDERFLOW** veya **_OV
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev bir dize kayan nokta değerine dönüştürür. Bu işlevler arasındaki farkı ve **atof** ailesi işlevlerini olduğundan bu işlevler kayan nokta kodu oluşturmaz ve donanım özel durumları neden olmaz. Bunun yerine, hata koşullarını hata kodları raporlanır.
+Bu işlevler bir dizeyi bir kayan noktalı değere dönüştürür. Bu işlevler arasındaki farkı ve **atof** işlevleri ailesidir bu işlevlerin kayan nokta kodu üretmemesi ve donanım özel durumları neden olmaz. Bunun yerine, hata durumları hata kodu olarak rapor edilir.
 
-Bir dizeyi bir kayan noktalı değeri, geçerli bir yorumlama yoksa *değeri* sıfır olarak ve dönüş sıfır bir değerdir.
+Bir dizeyi bir kayan nokta değeri olarak geçerli bir yoruma sahip değilse *değer* sıfır ve dönüş değeri de sıfırdır.
 
-Bu işlevleri sürümlerini **_l** soneki aynı kullandıkları dışında son ekine sahip olmayan sürümleri *yerel* geçerli iş parçacığının yerine geçirilen parametre yerel ayar.
+Sahip bu işlevlerin sürümleri **_l** sonekine kullanmaları hariç, soneke sahip olmayan sürümler *yerel ayar* geçerli iş parçacığı yerine geçirilen parametre yerel ayar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordamları|Gerekli başlık|
+|Rutinleri|Gerekli başlık|
 |--------------|---------------------|
 |**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h >|
 

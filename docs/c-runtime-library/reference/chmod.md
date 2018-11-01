@@ -1,10 +1,6 @@
 ---
-title: chmod | Microsoft Docs
-ms.custom: ''
+title: chmod
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - chmod
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - chmod
-dev_langs:
-- C++
 helpviewer_keywords:
 - chmod function
 ms.assetid: c3294722-2194-4ff4-ac87-d69f155e279b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e973f3ff76814265de0c246547a99730e2f6e452
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a9a86ec70ef1518ccb287b6cda2054edd2ecaf46
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392945"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615405"
 ---
 # <a name="chmod"></a>chmod
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_chmod](chmod-wchmod.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_chmod](chmod-wchmod.md) yerine.

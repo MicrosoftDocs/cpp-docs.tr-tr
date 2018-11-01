@@ -1,28 +1,18 @@
 ---
-title: Öznitelik programlama SSS | Microsoft Docs
-ms.custom: ''
+title: Öznitelik Programlama SSS
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
 ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributed programming
 - attributes [C++/CLI], frequently asked questions
 - FAQs (frequently asked questions), attributed programming [C++]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: cf9d80d5256a72ae55fa5539664adf0545df0924
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b273ad71c3c6eaed69fc715401219200f26f87eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434989"
 ---
 # <a name="attribute-programming-faq"></a>Öznitelik Programlama SSS
 

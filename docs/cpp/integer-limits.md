@@ -1,28 +1,18 @@
 ---
-title: Tamsayı sınırları | Microsoft Docs
-ms.custom: ''
+title: Tamsayı Sınırları
 ms.date: 01/29/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - integral limits
 - limits, integer
 - limits.h header file
 - integer limits
 ms.assetid: 6922bdbf-0f49-443b-bc03-ee182e4cbd57
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f49e224520751e08ba6aa7e37932314e11ef8a5
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0d14f6246dd2ec71c4e0b2286bb1f2b3325085b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315195"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522973"
 ---
 # <a name="integer-limits"></a>Tamsayı Sınırları
 

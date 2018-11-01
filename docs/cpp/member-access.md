@@ -1,12 +1,6 @@
 ---
-title: Üye erişimi | Microsoft Docs
-ms.custom: ''
+title: Üye Erişimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - member-selection operators [C++]
 - pointers, smart
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - smart pointers, definition
 - smart pointers
 ms.assetid: 8c7b2c43-eb92-4d42-9a8e-61aa37d71333
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2aadccd883738fe2e6e9f57cc63f67cde6d6a6c4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 34527f818b135fd5af629ebb69feaffd03b715fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099947"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617304"
 ---
 # <a name="member-access"></a>Üye Erişimi
 

@@ -1,27 +1,17 @@
 ---
-title: 'Windows Yuvaları: Yuva sınıflarından türetme | Microsoft Docs'
-ms.custom: ''
+title: 'Windows Yuvaları: Yuva Sınıflarından Türetme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - derived classes [MFC], from socket classes
 - Windows Sockets [MFC], deriving from socket classes
 - sockets [MFC], deriving from socket classes
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c562a8d6bf1c3f00f3812f6c25a4afd70276c64f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d860aacef164155f87db33355211b1a8e598c91b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648818"
 ---
 # <a name="windows-sockets-deriving-from-socket-classes"></a>Windows Yuvaları: Yuva Sınıflarından Türetme
 

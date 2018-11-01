@@ -1,10 +1,6 @@
 ---
-title: CDumpContext sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDumpContext sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDumpContext
 - AFX/CDumpContext
@@ -14,8 +10,6 @@ f1_keywords:
 - AFX/CDumpContext::GetDepth
 - AFX/CDumpContext::HexDump
 - AFX/CDumpContext::SetDepth
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDumpContext [MFC], CDumpContext
 - CDumpContext [MFC], DumpAsHex
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CDumpContext [MFC], HexDump
 - CDumpContext [MFC], SetDepth
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 332b67d5eb4bcd3bb6c3d47fa5692a7b3ef81531
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 391804d05800e3979add7bee6342308de4253602
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410409"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668825"
 ---
 # <a name="cdumpcontext-class"></a>CDumpContext sınıfı
 

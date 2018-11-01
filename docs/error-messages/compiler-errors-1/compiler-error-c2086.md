@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2086 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2086
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2086
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2086
 ms.assetid: 4329bf72-90c8-444c-8524-4ef75e6b2139
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0e0d8b105d58b0585bc31b8d340d3d7ba5fb29e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 094a794627b886abc7db5ba4d74c6fe97ff82461
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649750"
 ---
 # <a name="compiler-error-c2086"></a>Derleyici Hatası C2086
 

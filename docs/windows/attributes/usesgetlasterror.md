@@ -1,28 +1,17 @@
 ---
-title: usesgetlasterror (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: usesgetlasterror (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.usesgetlasterror
-dev_langs:
-- C++
 helpviewer_keywords:
 - usesgetlasterror attribute
 ms.assetid: d149e33d-35a7-46cb-9137-ae6883d86122
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bb08e2442e34c4d579e568c68d240accdfdbde59
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 44a1a55114bcf2466aa5b084f2b53c5457f1a0aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074247"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487028"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 

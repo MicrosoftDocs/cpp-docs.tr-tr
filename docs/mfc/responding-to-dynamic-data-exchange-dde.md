@@ -1,12 +1,6 @@
 ---
-title: Dinamik veri değişimine (DDE) yanıt verme | Microsoft Docs
-ms.custom: ''
+title: Dinamik Veri Değişimine Yanıt Verme (DDE)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - registry [MFC], most recently used files
 - frame windows [MFC], dynamic data exchange (DDE)
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - responding to dynamic data exchange (DDE)
 - frame windows [MFC], shell registration
 ms.assetid: 4db838d5-62cf-4123-915a-66e514155c0c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f55836f013ffb85bb1d490190dc5c0d196cffcf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b18e4e48e79afa549fbc3be08b4bf6947449f972
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423474"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470661"
 ---
 # <a name="responding-to-dynamic-data-exchange-dde"></a>Dinamik Veri Değişimine Yanıt Verme (DDE)
 

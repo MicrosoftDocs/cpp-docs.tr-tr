@@ -1,28 +1,18 @@
 ---
-title: İşlevlerle makrolar arasında seçim önerileri | Microsoft Docs
-ms.custom: ''
+title: İşlevlerle Makrolar Arasında Seçim Önerileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.functions
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [CRT], vs. macros
 - macros, vs. functions
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e347da977b58621529564f6e6d8646bd72063a0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ab3ac2e59e61e15ae1f309ac26fe30d1557185c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023273"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637703"
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>İşlevlerle Makrolar Arasında Seçim Önerileri
 

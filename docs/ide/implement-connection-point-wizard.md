@@ -1,27 +1,17 @@
 ---
-title: Uygulama bağlantı noktası Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Bağlantı Noktası Uygulama Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.impl.cp.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - Implement Connection Point Wizard [C++]
 ms.assetid: c117f6c6-30f0-4adb-82b4-b1f34e0f0fa8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92312bc130ed24f2aafe2e4b95e2c4bcf6381215
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b818a1a149e95805a8694f6c8d8d1325b33211b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531540"
 ---
 # <a name="implement-connection-point-wizard"></a>Bağlantı Noktası Uygulama Sihirbazı
 

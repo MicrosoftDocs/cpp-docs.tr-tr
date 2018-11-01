@@ -1,28 +1,17 @@
 ---
-title: uidefault (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: uidefault (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.uidefault
-dev_langs:
-- C++
 helpviewer_keywords:
 - uidefault attribute
 ms.assetid: 200de0e0-2e34-40a2-bae4-8d485a62264d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8dc31a65b53f29a4e4f00d5c580baf89059493ef
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 61297ecea1137c2247077e3d3ac2f3c4718b13a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056119"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608724"
 ---
 # <a name="uidefault"></a>uidefault
 

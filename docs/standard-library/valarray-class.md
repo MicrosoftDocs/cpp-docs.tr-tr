@@ -1,10 +1,6 @@
 ---
-title: valarray sınıfı | Microsoft Docs
-ms.custom: ''
+title: valarray Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - valarray/std::valarray
 - valarray/std::valarray::value_type
@@ -18,8 +14,6 @@ f1_keywords:
 - valarray/std::valarray::size
 - valarray/std::valarray::sum
 - valarray/std::valarray::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::valarray [C++]
 - std::valarray [C++], value_type
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b33f5f96704d80ea7c8a73fd2f392742d1a801c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: abfac363388fc86a8b9c68df149bbe65fdd1d427
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482725"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 

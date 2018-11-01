@@ -1,29 +1,19 @@
 ---
-title: '&lt;değer&gt; (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;değer&gt; (Visual C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - value
 - <value>
-dev_langs:
-- C++
 helpviewer_keywords:
 - value C++ XML tag
 - <value> C++ XML tag
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9bd811080e3a5587056d67a45fce345b0a2b4d37
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 84a19c96e3e7024dbb891c6bde91646d4731b2be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599296"
 ---
 # <a name="ltvaluegt-visual-c"></a>&lt;değer&gt; (Visual C++)
 

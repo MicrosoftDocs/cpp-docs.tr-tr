@@ -1,20 +1,17 @@
 ---
-title: Visual C++ Visual Studio'daki yenilikler | Microsoft Docs
+title: Visual Studio'da Visual C++ yenilikleri
 ms.date: 11/15/2017
 ms.technology:
 - cpp-ide
-ms.topic: conceptual
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f2b4dddd77b245de307173fbc2496181658be78
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5a9bbf86d6febfdec5ab5cbd9969cd5076672c52
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620149"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 

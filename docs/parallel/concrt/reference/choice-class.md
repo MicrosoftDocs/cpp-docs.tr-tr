@@ -1,10 +1,6 @@
 ---
-title: choice sınıfı | Microsoft Docs
-ms.custom: ''
+title: seçenek Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - choice
 - AGENTS/concurrency::choice
@@ -21,21 +17,15 @@ f1_keywords:
 - AGENTS/concurrency::choice::unlink_target
 - AGENTS/concurrency::choice::unlink_targets
 - AGENTS/concurrency::choice::value
-dev_langs:
-- C++
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d38b8415b5ca214800c968d186f37c020dce6dc
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 7ec574a1f7fce7ab435e2b35b7c3fe9002c3821c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436302"
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 

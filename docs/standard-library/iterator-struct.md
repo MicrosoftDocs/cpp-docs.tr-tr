@@ -1,28 +1,18 @@
 ---
-title: iterator yapısı | Microsoft Docs
-ms.custom: ''
+title: iterator Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xutility/std::iterator
-dev_langs:
-- C++
 helpviewer_keywords:
 - iterator class
 - iterator struct
 ms.assetid: c74c8000-8b18-4829-9b71-6103c4229b74
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a399fa8a9f8fc9a73d75605f31245e42a2154b7c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 1dd62a6141e690d3bd4dcad69aa107c126a0f386
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631406"
 ---
 # <a name="iterator-struct"></a>iterator Yapısı
 

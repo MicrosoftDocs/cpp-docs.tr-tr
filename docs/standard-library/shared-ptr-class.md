@@ -1,10 +1,6 @@
 ---
-title: shared_ptr sınıfı | Microsoft Docs
-ms.custom: ''
+title: shared_ptr Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::shared_ptr
 - memory/std::shared_ptr::element_type
@@ -18,8 +14,6 @@ f1_keywords:
 - memory/std::shared_ptr::operator*
 - memory/std::shared_ptr::operator=
 - memory/std::shared_ptr::operator->
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::shared_ptr [C++]
 - std::shared_ptr [C++], element_type
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 999b4bcee00c633184795e22865bc5c75ee64846
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 57874a87dcd7102c98ec5a387f1d3346bfa00195
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627558"
 ---
 # <a name="sharedptr-class"></a>shared_ptr Sınıfı
 
@@ -158,7 +148,7 @@ Birden çok iş parçacığı okuma ve yazma farklı `shared_ptr` nesneler bu pa
 |[owner_before](#owner_before)|Bu, true döndürür `shared_ptr` önceyse (veya küçüktür) sağlanan işaretçi.|
 |[Sıfırlama](#reset)|Sahip olunan Kaynağı Değiştir.|
 |[değiştirme](#swap)|İki değiştirir `shared_ptr` nesneleri.|
-|[benzersiz](#unique)|Sahip olunan kaynağın benzersiz olup olmadığını sınar.|
+|[unique](#unique)|Sahip olunan kaynağın benzersiz olup olmadığını sınar.|
 |[use_count](#use_count)|Kaynak sahiplerinin sayısını sayar.|
 
 ### <a name="operators"></a>İşleçler

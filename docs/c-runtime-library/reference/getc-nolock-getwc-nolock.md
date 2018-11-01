@@ -1,10 +1,6 @@
 ---
-title: _getc_nolock, _getwc_nolock | Microsoft Docs
-ms.custom: ''
+title: _getc_nolock, _getwc_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getc_nolock
 - _getwc_nolock
@@ -28,8 +24,6 @@ f1_keywords:
 - getwc_nolock
 - gettc_nolock
 - _getwc_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - characters, reading
 - _getc_nolock function
@@ -41,20 +35,16 @@ helpviewer_keywords:
 - gettc_nolock function
 - _gettc_nolock function
 ms.assetid: eb37b272-e177-41c9-b077-12ce7ffd3b88
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c727f43748be8beb327115350923ee3ea9994db
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 82c7e1f44dc3177985560319067f9114964218bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399215"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465357"
 ---
 # <a name="getcnolock-getwcnolock"></a>_getc_nolock, _getwc_nolock
 
-Bir karakterin bir akıştan okur.
+Bir karakter, bir akıştan okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,7 +59,7 @@ wint_t _getwc_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 Giriş akışı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -78,7 +68,7 @@ Bkz: [getc, getwc](getc-getwc.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler özdeş **getc** ve **getwc** çağıran iş parçacığı kilitlemeyin dışında. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+Bu işlevler özdeş **getc** ve **getwc** çağıran iş parçacığını kilitlemez hariç aynıdırlar. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -93,7 +83,7 @@ Bu işlevler özdeş **getc** ve **getwc** çağıran iş parçacığı kilitlem
 |**getc_nolock**|\<stdio.h >|
 |**getwc_nolock**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -146,7 +136,7 @@ Input was: Line the first.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

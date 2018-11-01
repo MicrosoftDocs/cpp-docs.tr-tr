@@ -1,27 +1,17 @@
 ---
-title: regex_traits&lt;char&gt; sınıfı | Microsoft Docs
-ms.custom: ''
+title: regex_traits&lt;char&gt; sınıfı
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - regex/std::regex_traits<char>
-dev_langs:
-- C++
 helpviewer_keywords:
 - regex_traits<char> class
 ms.assetid: ce95ebcd-3687-4ad5-bf1d-b89fdc633675
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f5d02ebae152a78bfc99682afc20e33ba71b015
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 6a685dfa00b49ecfa7c2da2a8618b49cbc38cc01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607447"
 ---
 # <a name="regextraitsltchargt-class"></a>regex_traits&lt;char&gt; sınıfı
 

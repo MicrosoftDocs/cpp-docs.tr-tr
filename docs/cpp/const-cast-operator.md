@@ -1,27 +1,17 @@
 ---
-title: const_cast işleci | Microsoft Docs
-ms.custom: ''
+title: const_cast İşleci
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - const_cast_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_cast keyword [C++]
 ms.assetid: 4d8bb203-ef33-4a10-9f9f-c64d4fbc1687
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 314e8363fafa4f2a6649055f2c608cd5b7edd18c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 389ef84149031fd602ff9ded15d34869258ffd52
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070086"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613999"
 ---
 # <a name="constcast-operator"></a>const_cast İşleci
 

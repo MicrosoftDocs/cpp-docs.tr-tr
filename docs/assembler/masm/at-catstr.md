@@ -1,27 +1,17 @@
 ---
-title: '@CatStr | Microsoft Docs'
-ms.custom: ''
+title: '@CatStr'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@CatStr'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@CatStr symbol'
 ms.assetid: 01fcc590-1ec2-42f6-b868-ed0433297c26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8b6b1a8cdc5f76f7cb55fa2ff3d506da1b340f7
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7c314ee362132da75a6024b76b011963fe6ce3db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692953"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499651"
 ---
 # <a name="catstr"></a>@CatStr
 

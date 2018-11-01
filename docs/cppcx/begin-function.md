@@ -1,26 +1,17 @@
 ---
-title: begin işlevi | Microsoft Docs
-ms.custom: ''
+title: begin işlevi
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 f1_keywords:
 - collection/Windows::Foundation::Collections::begin
-dev_langs:
-- C++
 helpviewer_keywords:
 - begin Function
 ms.assetid: 5a44fb33-e247-49fd-b7a1-4a5b42e9e1e4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ad73daba0bce57a19c512a53747cf8ac804e929d
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5ff8765d759a14cab63e3c8ae0ba2bc419b00775
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101761"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628533"
 ---
 # <a name="begin-function"></a>begin işlevi
 

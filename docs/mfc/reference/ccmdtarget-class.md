@@ -1,10 +1,6 @@
 ---
-title: CCmdTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCmdTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCmdTarget
 - AFXWIN/CCmdTarget
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXWIN/CCmdTarget::OnCmdMsg
 - AFXWIN/CCmdTarget::OnFinalRelease
 - AFXWIN/CCmdTarget::RestoreWaitCursor
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCmdTarget [MFC], CCmdTarget
 - CCmdTarget [MFC], BeginWaitCursor
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 13b71838bb4db152fb76fa1115a426e2711422ea
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 4d69b0b262ec53460d655a19cd421051f7177636
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890590"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498876"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 

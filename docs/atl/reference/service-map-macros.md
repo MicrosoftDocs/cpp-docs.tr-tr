@@ -1,28 +1,18 @@
 ---
-title: Hizmet eşleme makroları | Microsoft Docs
-ms.custom: ''
+title: Hizmet eşleme makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcom/ATL::BEGIN_SERVICE_MAP
 - atlcom/ATL::END_SERVICE_MAP
 - atlcom/ATL::SERVICE_ENTRY
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
-dev_langs:
-- C++
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30715cffb42c1dbf92512fa7314bf70f46f300a3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 14e543946be50c39020d46ab00e702a4f2b7a815
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079941"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618185"
 ---
 # <a name="service-map-macros"></a>Hizmet eşleme makroları
 

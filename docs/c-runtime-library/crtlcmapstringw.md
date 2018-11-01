@@ -1,10 +1,6 @@
 ---
-title: __crtLCMapStringW | Microsoft Docs
-ms.custom: ''
+title: __crtLCMapStringW
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __crtLCMapStringW
 apilocation:
@@ -18,21 +14,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - __crtLCMapStringW
-dev_langs:
-- C++
 helpviewer_keywords:
 - __crtLCMapStringW
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c17669c4c229622008f96eaf94814a5736a7965
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0c3752baba05e18903c32919505d702081d09dca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038613"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468425"
 ---
 # <a name="crtlcmapstringw"></a>__crtLCMapStringW
 

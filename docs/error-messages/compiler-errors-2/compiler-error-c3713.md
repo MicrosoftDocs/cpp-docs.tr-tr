@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3713 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3713
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3713
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3713
 ms.assetid: 75c6b9b6-955b-49bd-9bc8-ced88b496a1f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8028a82895d9194a44ca844b628e6a0d96ef4811
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8c8c3b5e6016c7f4af471a163463c91d478fea91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444570"
 ---
 # <a name="compiler-error-c3713"></a>Derleyici Hatası C3713
 

@@ -1,25 +1,15 @@
 ---
-title: C pragmaları | Microsoft Docs
-ms.custom: ''
+title: C Pragmaları
 ms.date: 01/29/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, C/C++
 ms.assetid: 3d6d36b4-d565-4632-a4cd-e39aeaded5ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 70a31d32ce7bdf89cd0216926c6628b4fa7bdd27
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f0517e83c36f97af35dab7d4be85be5aee1b01af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027358"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650729"
 ---
 # <a name="c-pragmas"></a>C Pragmaları
 

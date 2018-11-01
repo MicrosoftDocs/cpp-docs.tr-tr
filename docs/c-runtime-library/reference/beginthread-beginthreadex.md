@@ -1,10 +1,6 @@
 ---
-title: _beginthread, _beginthreadex | Microsoft Docs
-ms.custom: ''
+title: _beginthread, _beginthreadex
 ms.date: 02/27/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _beginthread
 - _beginthreadex
@@ -26,8 +22,6 @@ f1_keywords:
 - _beginthread
 - beginthreadex
 - _beginthreadex
-dev_langs:
-- C++
 helpviewer_keywords:
 - _beginthread function
 - threading [C++], creating threads
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e4bdae31c3a2f84dd959baf49fae7e43a6cc9eb0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d7e98ae38d91fbc0c1d428e94c6fa29fd8651e85
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626791"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 

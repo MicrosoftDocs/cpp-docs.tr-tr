@@ -1,23 +1,13 @@
 ---
-title: OpenMP Kitaplık Başvurusu | Microsoft Docs
-ms.custom: ''
+title: OpenMP Kitaplık Başvurusu
 ms.date: 10/24/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce6c10802f470e3416d0db9aca5b66db9064ade3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d43ee44157f16c1012667f5529f983036f4dfd8f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491604"
 ---
 # <a name="openmp-library-reference"></a>OpenMP Kitaplık Başvurusu
 

@@ -1,10 +1,6 @@
 ---
-title: _set_fmode | Microsoft Docs
-ms.custom: ''
+title: _set_fmode
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_fmode
 apilocation:
@@ -23,24 +19,18 @@ apitype: DLLExport
 f1_keywords:
 - _set_fmode
 - set_fmode
-dev_langs:
-- C++
 helpviewer_keywords:
 - file translation [C++], default mode
 - _set_fmode function
 - file translation [C++], setting mode
 - set_fmode function
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64b8be6d678a6907fc63018c99dd38d2fc8407ea
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: df6efcf3fd89ec87ad098200d1d9ba3d6b52c7e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406400"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500366"
 ---
 # <a name="setfmode"></a>_set_fmode
 
@@ -49,8 +39,8 @@ Dosya g/ç işlemleri için varsayılan dosya çevirisi modu ayarlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _set_fmode( 
-   int mode 
+errno_t _set_fmode( 
+   int mode 
 );
 ```
 
@@ -61,21 +51,21 @@ errno_t _set_fmode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür, hatasında bir hata kodu. Varsa *modu* değil **_O_TEXT** veya **_o_bınary** veya **_O_WTEXT**, anlatıldığıgibigeçersizparametreişleyicisiçağrılır[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+İade başarılı olursa sıfır, bir hata kodu. Varsa *modu* değil **_O_TEXT** veya **_o_bınary** veya **_O_WTEXT**, içindeaçıklananşekildegeçersizparametreişleyicisiçağrılır[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev kümeleri [_fmode](../../c-runtime-library/fmode.md) genel değişkeni. Bu değişkeni, dosya g/ç işlemleri için varsayılan dosya çevirisi modu belirtir **_kurulum Aç** ve **_pipe**.
+İşlev kümeleri [_fmode](../../c-runtime-library/fmode.md) genel değişkeni. Bu değişkeni, dosya g/ç işlemleri için varsayılan dosya çevirisi modu belirtir **_aç** ve **_pipe**.
 
-**_O_TEXT** ve **_o_bınary** Fcntl.h tanımlanır. **EINVAL** Errno.h içinde tanımlanır.
+**_O_TEXT** ve **_o_bınary** Fcntl.h içinde tanımlanır. **EINVAL** Errno.h içinde tanımlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_set_fmode**|\<stdlib.h >|\<fcntl.h >, \<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

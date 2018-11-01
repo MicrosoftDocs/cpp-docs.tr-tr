@@ -1,27 +1,17 @@
 ---
-title: nullptr | Microsoft Docs
-ms.custom: ''
+title: nullptr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - nullptr_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06586d7d4374ec1763e43a1eaf3235c37dc72cd1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fc210679553c393143c7e94121dd75e19b934dd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637118"
 ---
 # <a name="nullptr"></a>nullptr
 

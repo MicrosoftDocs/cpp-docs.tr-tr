@@ -1,27 +1,17 @@
 ---
-title: BSCMAKE hatası BK1504 | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Hatası BK1504
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - BK1504
-dev_langs:
-- C++
 helpviewer_keywords:
 - BK1504
 ms.assetid: e6d1a171-1472-4b7e-a04b-1a68a561675f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 70ae80cc0b7bf1725dc0b91f9d74ecfd87358886
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b213944f26932ec3b3934e82953573c1b8050532
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016877"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562103"
 ---
 # <a name="bscmake-error-bk1504"></a>BSCMAKE Hatası BK1504
 

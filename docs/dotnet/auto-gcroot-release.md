@@ -1,31 +1,21 @@
 ---
-title: auto_gcroot::Release | Microsoft Docs
-ms.custom: ''
+title: auto_gcroot::release
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::auto_gcroot::release
 - auto_gcroot::release
 - auto_gcroot.release
 - msclr.auto_gcroot.release
-dev_langs:
-- C++
 helpviewer_keywords:
 - release method
 ms.assetid: 40b253f0-154e-4d79-80a4-ff13199c3ff0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f2902f7e62c8907549fe802f4f8c2e66e230d0af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f895595f3f3a4ef3dcfba82e4f48a30bc11b6310
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437992"
 ---
 # <a name="autogcrootrelease"></a>auto_gcroot::release
 

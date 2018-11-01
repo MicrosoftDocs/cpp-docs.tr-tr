@@ -1,10 +1,6 @@
 ---
-title: join sınıfı | Microsoft Docs
-ms.custom: ''
+title: join Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - join
 - AGENTS/concurrency::join
@@ -17,21 +13,15 @@ f1_keywords:
 - AGENTS/concurrency::join::release_message
 - AGENTS/concurrency::join::reserve_message
 - AGENTS/concurrency::join::resume_propagation
-dev_langs:
-- C++
 helpviewer_keywords:
 - join class
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 045cdeab321e9e3f88ee9bd50d337101e8512718
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 23fc005a0c679576507c3a39ae37ce6c4545036b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668265"
 ---
 # <a name="join-class"></a>join Sınıfı
 

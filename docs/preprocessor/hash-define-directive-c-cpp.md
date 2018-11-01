@@ -1,14 +1,8 @@
 ---
-title: '#yönergesi (C/C++) | Microsoft Docs'
-ms.custom: ''
+title: '#yönergesi (C/C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '#define'
-dev_langs:
-- C++
 helpviewer_keywords:
 - define directive (#define), syntax
 - preprocessor, directives
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e24c7e020f0008a78d4595577c656003bad359c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: dec555de64a3ebd166bdff5558957f09e1c2755e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653758"
 ---
 # <a name="define-directive-cc"></a>#define Yönergesi (C/C++)
 

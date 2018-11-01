@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1083 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1083
 ms.date: 09/01/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1083
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c29fa07d13eb8d0a18491cb67b65fe4ad2d87de6
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: ae4c6a9f6c41d94aa1e36ba4a79226b49df08b49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628013"
 ---
 # <a name="fatal-error-c1083"></a>Önemli hata C1083
 

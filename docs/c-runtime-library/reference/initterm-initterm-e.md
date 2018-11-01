@@ -1,10 +1,6 @@
 ---
-title: _initterm, _initterm_e | Microsoft Docs
-ms.custom: ''
+title: _initterm, _initterm_e
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _initterm_e
 - _initterm
@@ -26,30 +22,24 @@ f1_keywords:
 - initterm
 - _initterm
 - initterm_e
-dev_langs:
-- C++
 helpviewer_keywords:
 - initterm function
 - initterm_e function
 - _initterm function
 - _initterm_e function
 ms.assetid: 85131efe-c747-429a-8897-bcdedb000172
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 470ad6cbf13efb170f61aa12f7859f2baa248c2b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 65963e95507d4d6444ebcc9038b5b8cf797f9feb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395841"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620720"
 ---
 # <a name="initterm-initterme"></a>_initterm, _initterm_e
 
-İşlev işaretçileri tablosu yol ve bunları başlatma iç yöntemleri.
+İşlev işaretçileri tablosu izlemek ve bunları başlatmak iç yöntemler.
 
-Başlangıç konumu tablosundaki ilk işaretçidir ve ikinci işaretçisi bitiş konumu.
+İlk işaretçi tablosundaki Başlangıç konumu ve ikinci işaretçi bitiş konumu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,13 +57,13 @@ int __cdecl _initterm_e(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir başlatma başarısız olduğunda ve bir hata oluşturur sıfır olmayan bir hata kodu; 0 hata oluşmaz.
+Bir sıfır olmayan hata kodu; bir başlatma başarısız olursa ve bir hata oluşturur Eğer hiç Hata oluşmazsa 0.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntemleri yalnızca bir C++ program başlatma sırasında dahili olarak adlandırılır. Bu yöntemler bir programda çağırmayın.
+Bu yöntemler, yalnızca C++ program başlatma sırasında dahili olarak adlandırılır. Bu yöntemler bir programda çağırmayın.
 
-Bu yöntemler bir tablosu işlevi girdileri yol, bunlar atla **NULL** girişleri ve devam edin.
+Bu yöntemler bir tablo işlevi girişlerinin yol, bunlar atla **NULL** girişleri ve devam edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

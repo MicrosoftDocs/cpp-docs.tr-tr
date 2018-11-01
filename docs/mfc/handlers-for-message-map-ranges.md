@@ -1,12 +1,6 @@
 ---
-title: İleti eşleme aralıkları için işleyiciler | Microsoft Docs
-ms.custom: ''
+title: İleti Eşleme Aralıkları için İşleyiciler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message handlers [MFC]
 - handlers [MFC], message-map ranges
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - handler functions [MFC], declaring
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 738d441cf88b41740cb0cff933916489cac683f2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd10b143753bf908a7a30f8675998e355f331b64
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073103"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601090"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 

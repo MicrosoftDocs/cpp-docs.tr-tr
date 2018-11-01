@@ -1,8 +1,6 @@
 ---
-title: Platform::metadata::RuntimeClassName | Microsoft Docs
-ms.custom: ''
+title: Platform::Metadata::RuntimeClassName
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Metadata::RuntimeClassName
@@ -10,16 +8,12 @@ helpviewer_keywords:
 - RuntimeClassName
 - Platform::Metadata::RuntimeClassName
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7f81397be93de0080f2d6e8668d3cd5880ecc38
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 09641f55e27ab00fc941d85d4d09d6a7784e2d8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104060"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668279"
 ---
 # <a name="platformmetadataruntimeclassname"></a>Platform::Metadata::RuntimeClassName
 

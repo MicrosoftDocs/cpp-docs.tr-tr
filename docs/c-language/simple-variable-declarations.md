@@ -1,26 +1,16 @@
 ---
-title: Basit değişken bildirimler | Microsoft Docs
-ms.custom: ''
+title: Basit Değişken Bildirimler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - untyped variables
 - declaring variables, simple
 ms.assetid: b07adf9d-9e79-4b64-8a34-e6fe1c7eccec
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7216a4a470b6293a31d6f364626188e41351b5cb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: be6a60d5765954efbc4a1cc6b991ac989e20b8f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763145"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615325"
 ---
 # <a name="simple-variable-declarations"></a>Basit Değişken Bildirimler
 

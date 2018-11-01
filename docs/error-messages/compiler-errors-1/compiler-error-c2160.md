@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2160 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2160
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2160
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2160
 ms.assetid: a1f694a7-fb16-4437-b7f5-a1af6da94bc5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e823d841eabb4494d549721320f8f29d5cd8774
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bd0c49f44bce09958541a47db0c66bc22d7f2b76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454515"
 ---
 # <a name="compiler-error-c2160"></a>Derleyici Hatası C2160
 

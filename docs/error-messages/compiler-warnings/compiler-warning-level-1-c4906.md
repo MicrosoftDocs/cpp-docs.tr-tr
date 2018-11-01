@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4906 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4906
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4906
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4906
 ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6bdcd726fc8597f1bdaadd2633d6c564b66280f1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a62b10ca96dc9c27e57eafdcc87cf0d5e0605b4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444752"
 ---
 # <a name="compiler-warning-level-1-c4906"></a>Derleyici Uyarısı (düzey 1) C4906
 
