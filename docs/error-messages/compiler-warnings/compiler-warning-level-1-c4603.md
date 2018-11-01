@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4603 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4603
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4603
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4603
 ms.assetid: f065994e-e3e5-4694-b868-c124472b3342
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c5100bdac5589747d948597baa35658df9da4ff
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6d5d5b1d2d959c8c2da87f1cad949895be7331b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087870"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608461"
 ---
 # <a name="compiler-warning-level-1-c4603"></a>Derleyici Uyarısı (düzey 1) C4603
 

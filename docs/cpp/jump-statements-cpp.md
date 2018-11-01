@@ -1,25 +1,15 @@
 ---
-title: Atlama deyimleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Atlama Deyimleri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - jump statements
 ms.assetid: 7d8ff59c-b1bd-4164-85e9-f508851ed62c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 326318ddc8bc55bcdcd2939bfa00626b22d2a96c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6207b500e643179bd3ce064e62effc01b93c6612
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083918"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576559"
 ---
 # <a name="jump-statements-c"></a>Atlama Deyimleri (C++)
 

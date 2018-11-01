@@ -1,10 +1,6 @@
 ---
-title: Csnapınpropertypageımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Csnapınpropertypageımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSnapInPropertyPageImpl
 - ATLSNAP/ATL::CSnapInPropertyPageImpl
@@ -23,24 +19,18 @@ f1_keywords:
 - ATLSNAP/ATL::CSnapInPropertyPageImpl::QuerySiblings
 - ATLSNAP/ATL::CSnapInPropertyPageImpl::SetModified
 - ATLSNAP/ATL::CSnapInPropertyPageImpl::m_psp
-dev_langs:
-- C++
 helpviewer_keywords:
 - snap-ins, property pages
 - snap-ins
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c89f577168593dcb22570af63801fc05654eb4b3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ea79a5624937b27fe69be2c15bac3a0c40592252
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100703"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575753"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>Csnapınpropertypageımpl sınıfı
 

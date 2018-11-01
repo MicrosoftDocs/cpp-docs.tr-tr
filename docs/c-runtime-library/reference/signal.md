@@ -1,10 +1,6 @@
 ---
-title: Sinyal | Microsoft Docs
-ms.custom: ''
+title: sinyal
 ms.date: 04/12/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - signal
 apilocation:
@@ -22,20 +18,14 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - signal
-dev_langs:
-- C++
 helpviewer_keywords:
 - signal function
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f4e349707c22d8c252f56c08ea45fc78609e557
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1a0f9f8448149ce18155e0f5b88343c56d9b3d7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660713"
 ---
 # <a name="signal"></a>sinyal
 
@@ -129,30 +119,30 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 Aşağıdaki örnek nasıl kullanılacağını gösterir **sinyal** bazı özel davranışların eklenmesi için **SIGABRT** sinyal. İptal davranışını hakkında ek bilgi için bkz: [_set_abort_behavior](set-abort-behavior.md).
 
 ```C
-// crt_signal.c
-// compile with: /EHsc /W4
-// Use signal to attach a signal handler to the abort routine
-#include <stdlib.h>
-#include <signal.h>
-#include <tchar.h>
+// crt_signal.c
+// compile with: /EHsc /W4
+// Use signal to attach a signal handler to the abort routine
+#include <stdlib.h>
+#include <signal.h>
+#include <tchar.h>
 
-void SignalHandler(int signal)
+void SignalHandler(int signal)
 {
-    if (signal == SIGABRT) {
-        // abort signal handler code
-    } else {
-        // ...
-    }
+    if (signal == SIGABRT) {
+        // abort signal handler code
+    } else {
+        // ...
+    }
 }
 
-int main()
+int main()
 {
-    typedef void (*SignalHandlerPointer)(int);
+    typedef void (*SignalHandlerPointer)(int);
 
-    SignalHandlerPointer previousHandler;
-    previousHandler = signal(SIGABRT, SignalHandler);
+    SignalHandlerPointer previousHandler;
+    previousHandler = signal(SIGABRT, SignalHandler);
 
-    abort();
+    abort();
 }
 ```
 

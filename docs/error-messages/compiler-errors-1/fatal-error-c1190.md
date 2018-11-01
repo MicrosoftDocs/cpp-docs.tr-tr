@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1190 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1190
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1190
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1190
 ms.assetid: dee2266d-6c40-4f6e-91db-f01e65f8d2bc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96e1ab464199466a5df13362f40ac9143be49a68
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8bd0332770dd0771ac7a02574185a506cf6fd416
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084958"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621344"
 ---
 # <a name="fatal-error-c1190"></a>Önemli hata C1190
 

@@ -1,10 +1,6 @@
 ---
-title: CAnimationStoryboardEventHandler sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationStoryboardEventHandler sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationStoryboardEventHandler
 - AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardStatusChanged
 - AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardUpdated
 - AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::SetAnimationController
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationStoryboardEventHandler [MFC], CAnimationStoryboardEventHandler
 - CAnimationStoryboardEventHandler [MFC], CreateInstance
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated
 - CAnimationStoryboardEventHandler [MFC], SetAnimationController
 ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1235ff529a39f84923b1bf08880c72c94f53abc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b5dbe10f0fd80956b395ec385969750c3ee0c05b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632875"
 ---
 # <a name="canimationstoryboardeventhandler-class"></a>CAnimationStoryboardEventHandler sınıfı
 

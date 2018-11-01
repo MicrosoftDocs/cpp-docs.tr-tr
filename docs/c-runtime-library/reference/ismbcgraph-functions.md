@@ -1,10 +1,6 @@
 ---
-title: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l | Microsoft Docs
-ms.custom: ''
+title: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbcpunct_l
 - _ismbcblank
@@ -42,8 +38,6 @@ f1_keywords:
 - ismbcgraph_l
 - ismbcspace
 - ismbcpunct
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbcspace_l function
 - _ismbcprint_l function
@@ -62,23 +56,19 @@ helpviewer_keywords:
 - _ismbcgraph_l function
 - _ismbcspace function
 ms.assetid: 8e0a5f47-ba64-4411-92a3-3c525d16e3be
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da9231dcf64222aa075194f72892896972e2abf7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 05946def8c4d832751554a1653afa98c9965fee9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405503"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626219"
 ---
 # <a name="ismbcgraph-ismbcgraphl-ismbcprint-ismbcprintl-ismbcpunct-ismbcpunctl-ismbcblank-ismbcblankl-ismbcspace-ismbcspacel"></a>_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 
-Karakter grafik karakter, bir görüntü karakter, bir noktalama karakteri veya bir boşluk karakteri olup olmadığını belirler.
+Karakterin grafik karakteri, görüntü karakter, noktalama karakteri veya bir boşluk karakteri olup olmadığını belirler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -130,21 +120,21 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter test durumu ya da 0 uymazsa mevcut değilse bu yordamlar her sıfır olmayan bir değer döndürür. Varsa *c* < = 255 ve karşılık gelen **_ismbb** yordamına (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Buna karşılık gelen dönüş değeri sonucudur **_ismbb** yordamı.
+Karakter test koşulunu ya da 0 karşılıyorsa mevcut değilse, bu yordamların her biri sıfır dışında bir değeri döndürür. Varsa *c* < = 255 ve karşılık gelen **_ismbb** yordamı (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Sonuç, karşılık gelen dönüş değeri olduğu **_ismbb** yordamı.
 
-Ayarlara sahip dışında bu işlevler sürümleri özdeş **_l** soneki geçerli yerel yerine yerel ayara bağımlı davranışlarını için geçirilen yerel kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip olanlar dışında bu işlevlerin sürümleri özdeş **_l** soneki geçerli yerel ayarı yerine yerel ayara bağlı davranışları için geçirilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri belirli bir birden çok baytlı karakter verilen bir koşul için sınar.
+Bu işlevlerin her biri, belirli bir koşul için belirli bir çok baytlı karakteri test eder.
 
-|Yordam|Test durumu|Kod sayfası 932 örneği|
+|Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
-|**_ismbcgraph**|Grafiği|Sıfır olmayan ve yalnız döndürür *c* ASCII veya katakana yazdırılabilir dışında herhangi bir karakter boşluk () tek baytlı gösterimidir.|
-|**_ismbcprint**|Yazdırılabilir|Sıfır olmayan ve yalnız döndürür *c* boşluk () dahil olmak üzere tüm ASCII veya katakana yazdırılabilir karakter tek baytlı gösterimidir.|
-|**_ismbcpunct**|Noktalama işaretleri|Sıfır olmayan ve yalnız döndürür *c* ASCII veya katakana herhangi bir noktalama karakteri tek baytlı gösterimidir.|
-|**_ismbcblank**|Boşluk veya yatay sekme|Sıfır olmayan ve yalnız döndürür *c* bir alanı ya da yatay sekme karakteri: *c*0x20 = veya *c*0x09 =.|
-|**_ismbcspace**|Beyaz alan|Sıfır olmayan ve yalnız döndürür *c* bir boşluk karakteri: *c*0x20 veya 0x09 = < =*c*< = 0x0D.|
+|**_ismbcgraph**|Grafiği|Yalnız ve yalnızca döndürür *c* boşluk () dışında bir ASCII veya katakana yazdırılabilir karakter tek bayt gösterimidir.|
+|**_ismbcprint**|Yazdırılabilir|Yalnız ve yalnızca döndürür *c* tek baytlık bir gösterimiyse herhangi bir karakterin boşluk () dahil olmak üzere ASCII veya katakana yazdırılabilir.|
+|**_ismbcpunct**|Noktalama işaretleri|Yalnız ve yalnızca döndürür *c* herhangi bir ASCII veya katakana noktalama karakterinin tek baytlık gösterimidir.|
+|**_ismbcblank**|Boşluk veya yatay sekme|Yalnız ve yalnızca döndürür *c* bir boşluk veya yatay sekme karakterinin: *c*= 0x20 veya *c*= 0x09.|
+|**_ismbcspace**|Boşluk|Yalnız ve yalnızca döndürür *c* bir boşluk karakteri: *c*= 0x20 veya 0x09 < =*c*< = 0x0D.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -161,7 +151,7 @@ Bu işlevlerin her biri belirli bir birden çok baytlı karakter verilen bir ko�
 |**_ismbcspace**|\<Mbstring.h >|
 |**_ismbcspace_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

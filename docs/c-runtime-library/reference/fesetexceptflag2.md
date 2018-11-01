@@ -1,11 +1,6 @@
 ---
-title: fesetexceptflag | Microsoft Docs
-ms.custom: ''
+title: fesetexceptflag
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fesetexceptflag
 apilocation:
@@ -24,25 +19,19 @@ apitype: DLLExport
 f1_keywords:
 - fesetexceptflag
 - fenv/fesetexceptflag
-dev_langs:
-- C++
 helpviewer_keywords:
 - fesetexceptflag function
 ms.assetid: 2f7dad77-9e54-4097-a3e3-35176ace4de5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eef8ba1c91e6db4f0d620ef820a6487b3b17e649
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9ac79e790f0b1e7a89413a0d4974f6053c95616e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398614"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615884"
 ---
 # <a name="fesetexceptflag"></a>fesetexceptflag
 
-Belirtilen kayan nokta durumu bayrakları geçerli kayan nokta ortamında ayarlar.
+Kayan nokta geçerli ortamda belirtilen bir kayan nokta durumu bayrakları ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,39 +45,39 @@ int fesetexceptflag(
 ### <a name="parameters"></a>Parametreler
 
 *pstatus*<br/>
-İşaretçi bir **fexcept_t** özel durumu bayrakları ayarlamak için değerleri içeren nesne. Nesne için önceki bir çağrı tarafından ayarlanabilir [fegetexceptflag](fegetexceptflag2.md).
+İşaretçi bir **fexcept_t** özel durumu bayrakları ayarlanmış değerleri içeren nesne. Nesne için bir çağrı tarafından ayarlanabilir [fegetexceptflag](fegetexceptflag2.md).
 
 *excepts*<br/>
-Kayan nokta özel durumu ayarlamak için bayraklar.
+Kayan nokta özel durum durumu ayarlamak için bayrakları.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tüm belirtilen özel durumu bayrakları başarılı bir şekilde ayarlarsanız, 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
+Belirtilen özel durumu bayrakları başarılı bir şekilde ayarlarsanız, 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fesetexceptflag** işlevi tarafından belirtilen kayan nokta özel durumu bayrakları durumunu ayarlar *excepts* kümesinde karşılık gelen değerler için **fexcept_t** tarafından için nesne işaret *pstatus*.  Özel durumları oluşturmaz. *Pstatus* işaretçi işaret etmelidir geçerli bir **fexcept_t** nesne ya da sonraki davranış tanımlanmadı. **Fesetexceptflag** işlevi destekler bu özel durum makrosu değerleri *excepts*, içinde tanımlı \<fenv.h >:
+**Fesetexceptflag** işlevi tarafından belirtilen kayan nokta özel durum durumu bayrakları durumuna ayarlar *excepts* kümesindeki karşılık gelen değerlere **fexcept_t** nesne tarafından işaret edilen *pstatus*.  Özel durum oluşturmaz. *Pstatus* işaretçi işaret etmelidir geçerli bir **fexcept_t** nesne veya sonraki davranışı tanımsızdır. **Fesetexceptflag** işlevi destekler, bu özel durum makrosu değerleri *excepts*içinde tanımlanmış \<fenv.h >:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|İçinde bir önceki kayan nokta işlemi singularity veya kutbu'na bir hata oluştu; sonsuz değerle oluşturuldu.|
-|FE_INEXACT|İşlev, bir önceki kayan nokta işlemi depolanmış sonucu yuvarlanacak zorlandı.|
+|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
+|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
 |FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Bir aralık hata oluştu; önceki bir kayan nokta işlemi sonuç gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlem sonucu tam duyarlık gösterilemeyecek kadar çok küçüktü; denormal değeri oluşturuldu.|
-|FE_ALLEXCEPT|Tüm Bitsel veya kayan nokta özel durumlar desteklenir.|
+|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
+|FE_ALLEXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
 
-*Excepts* bağımsız değişkeni sıfır olabilir bir desteklenen kayan nokta özel durum makroları veya Bitsel veya iki veya daha fazla makrolar. Herhangi bir bağımsız değişken değeri etkisini tanımlanmamıştır.
+*Excepts* sıfır bağımsız değişken olabilir desteklenen kayan nokta özel durum makroları veya bit ya da iki veya daha fazla makroları. Herhangi bir bağımsız değişken değeri etkisini tanımsızdır.
 
-Bu işlevi kullanmak için erişim kullanarak önleyebilir kayan nokta iyileştirmeler kapatmanız gerekir `#pragma fenv_access(on)` çağrı önce yönergesi. Daha fazla bilgi için bkz: [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**fesetexceptflag**|\<fenv.h >|\<cfenv >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,25 +1,15 @@
 ---
-title: Olay işleme ve ATL | Microsoft Docs
-ms.custom: ''
+title: Olay İşleme ve ATL
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling, about event handling
 ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3069762810aebae516d6d02ce69da215a2847c1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8634765bcfdc483e014b8552c67a57a11236f426
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667733"
 ---
 # <a name="event-handling-and-atl"></a>Olay İşleme ve ATL
 

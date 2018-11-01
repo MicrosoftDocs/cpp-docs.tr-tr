@@ -1,28 +1,18 @@
 ---
-title: kısıtlama (C++ AMP) | Microsoft Docs
-ms.custom: ''
+title: restrict (C++ AMP)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - cpu_CPP
 - amp_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - restrict clause (C++ AMP)
 ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 77ca639b5eaf6a0569f1fe678af741ccad58c0d0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3609e3f0541cfd8a8af8559d8d49e6a77c00d91c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116691"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660011"
 ---
 # <a name="restrict-c-amp"></a>restrict (C++ AMP)
 

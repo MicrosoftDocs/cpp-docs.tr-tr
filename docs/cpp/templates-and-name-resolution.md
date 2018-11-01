@@ -1,23 +1,13 @@
 ---
-title: Şablonlar ve ad çözümü | Microsoft Docs
-ms.custom: ''
+title: Şablonlar ve Ad Çözümü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 519ba7b5-cd25-4549-865a-9a7b9dffdc28
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ddd2a7229f1d94a48c9b370bec448331aa71548
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e4a53df0a192c1d7b7f376e4401eb99fcbf7d481
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611932"
 ---
 # <a name="templates-and-name-resolution"></a>Şablonlar ve Ad Çözümü
 

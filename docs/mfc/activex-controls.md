@@ -1,25 +1,15 @@
 ---
-title: ActiveX denetimleri | Microsoft Docs
-ms.custom: ''
+title: ActiveX Denetimleri
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX controls [MFC]
 ms.assetid: 52aaec4d-3889-402e-b57d-758078f8ac57
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd4507fbe22f19844c900751320d735b507a4267
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f08c3113f3b8e85da9705b7951297722af95a40b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576936"
 ---
 # <a name="activex-controls"></a>ActiveX Denetimleri
 

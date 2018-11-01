@@ -1,10 +1,6 @@
 ---
-title: Idbpropertiesımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IDBPropertiesImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IDBPropertiesImpl
 - ATL.IDBPropertiesImpl
@@ -20,25 +16,18 @@ f1_keywords:
 - IDBPropertiesImpl.SetProperties
 - SetProperties
 - IDBPropertiesImpl::SetProperties
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDBPropertiesImpl class
 - GetProperties method
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: fc27506657e1e2eeb7fdb7d0d5ef9147d5442dbc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 77385fc8b2869cc59c7a0061951c76a431490efe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638054"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl Sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: Bir ortak denetimi alt pencere olarak kullanma | Microsoft Docs
-ms.custom: ''
+title: Bir Ortak Denetimi Alt Pencere Olarak Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [MFC], using as child windows
 - windows [MFC], common controls as
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - common controls [MFC], child windows
 - Windows common controls [MFC], child windows
 ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73ddb010aeb8190c063d2691806e3ebd89d0f744
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 690b48cf50e95265aaf5bdd454e2881b8f5fab3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417975"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655136"
 ---
 # <a name="using-a-common-control-as-a-child-window"></a>Bir Ortak Denetimi Alt Pencere Olarak Kullanma
 

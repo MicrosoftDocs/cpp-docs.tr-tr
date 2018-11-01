@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2092 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2092
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2092
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2092
 ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a0b8f65f58ffe65abee0f15eb511f7857657597
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d3d0b0e62fbc5f8ad90b3fee5fe39c6bdaba7c2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644619"
 ---
 # <a name="compiler-error-c2092"></a>Derleyici Hatası C2092
 

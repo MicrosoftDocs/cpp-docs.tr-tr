@@ -1,10 +1,6 @@
 ---
-title: _cputs, _cputws | Microsoft Docs
-ms.custom: ''
+title: _cputs, _cputws
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cputws
 - _cputs
@@ -25,8 +21,6 @@ f1_keywords:
 - cputws
 - _cputs
 - _cputws
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], writing
 - _cputs function
@@ -36,23 +30,19 @@ helpviewer_keywords:
 - console, sending strings to
 - cputws function
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c192adccb6fe0e0cee66f03b5d85d89fc2e446a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 81d2364cd1fc409ca3267bc416bd3cbd16c62a15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399770"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601181"
 ---
 # <a name="cputs-cputws"></a>_cputs, _cputws
 
 Bir dize konsola koyar.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,13 +62,13 @@ int _cputws(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_cputs** 0 döndürür. İşlev başarısız olursa, sıfır olmayan bir değer döndürür.
+Başarılı olursa, **_cputs** 0 döndürür. İşlev başarısız olursa sıfır olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cputs** işlevi Yazar işaret ediyor null ile sonlandırılmış dize *str* doğrudan konsola. Bir satır başı satır besleme (CR-LF) birleşimi dizeye otomatik olarak eklenmez.
+**_Cputs** işlevi tarafından işaret edilen null ile sonlandırılmış bir dize Yazar *str* doğrudan konsola. Bir satır başı satır besleme (CR-LF) birleşimi, otomatik olarak dizeye eklenmez.
 
-Bu işlev, parametre doğrular. Varsa *str* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve -1 döndürülür.
+Bu işlev, parametresini doğrular. Varsa *str* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve -1 döndürülür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -88,12 +78,12 @@ Bu işlev, parametre doğrular. Varsa *str* olan **NULL**, açıklandığı gibi
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_cputs**|\<conio.h >|\<errno.h >|
 |**_cputws**|\<conio.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

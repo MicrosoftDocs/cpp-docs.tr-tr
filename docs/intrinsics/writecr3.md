@@ -1,27 +1,17 @@
 ---
-title: __writecr3 | Microsoft Docs
-ms.custom: ''
+title: __writecr3
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _writecr3
-dev_langs:
-- C++
 helpviewer_keywords:
 - _writecr3 intrinsic
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e0f7e648a4d3c985d5fb33660248eea7c54ed97
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2046e3b2014bd17e74e880e8dbd0fcdc0a65021c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391559"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592571"
 ---
 # <a name="writecr3"></a>__writecr3
 
@@ -32,8 +22,8 @@ Değeri Yazar `Data` CR3 kaydı.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void writecr3( 
-   unsigned __int64 Data 
+void writecr3( 
+   unsigned __int64 Data 
 );
 ```
 

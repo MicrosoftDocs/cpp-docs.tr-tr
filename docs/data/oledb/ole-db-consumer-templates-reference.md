@@ -1,10 +1,6 @@
 ---
-title: OLE DB Tüketici Şablonları başvurusu | Microsoft Docs
-ms.custom: ''
+title: OLE DB Tüketici Şablonları Başvurusu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_param
 - vc-attr.db_column
@@ -13,22 +9,15 @@ f1_keywords:
 - vc-attr.db_table
 - vc.templates.ole
 - vc-attr.db_source
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB consumer templates, classes
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a1aed8d2e00631ccd02a7ef3a966b8fd8a279938
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a476fefa4338e73bf6eaf70fa16a5328a427b56d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649247"
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB Tüketici Şablonları Başvurusu
 

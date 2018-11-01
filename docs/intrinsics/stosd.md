@@ -1,29 +1,19 @@
 ---
-title: __stosd | Microsoft Docs
-ms.custom: ''
+title: __stosd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __stosd
-dev_langs:
-- C++
 helpviewer_keywords:
 - stosd instruction
 - rep stosd instruction
 - __stosd intrinsic
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bb0d75cc4af033bf1bc942a918beecf2aedf911
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5dc5e9703f81cd843e34d6df4b05133660c48c54
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396148"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563754"
 ---
 # <a name="stosd"></a>__stosd
 
@@ -34,10 +24,10 @@ Bir depolama dize yönergesi oluşturur (`rep stosd`).
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __stosd( 
-   unsigned long* Dest, 
-   unsigned long Data, 
-   size_t Count 
+void __stosd( 
+   unsigned long* Dest, 
+   unsigned long Data, 
+   size_t Count 
 );
 ```
 

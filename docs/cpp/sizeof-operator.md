@@ -1,27 +1,17 @@
 ---
-title: sizeof işleci | Microsoft Docs
-ms.custom: ''
+title: sizeof İşleci
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - sizeof_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6445fb834982cd13348c9e94def4b75fe31c02e9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9edd6420193fbc1ff6013c545b294851ce105848
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058827"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628806"
 ---
 # <a name="sizeof-operator"></a>sizeof İşleci
 

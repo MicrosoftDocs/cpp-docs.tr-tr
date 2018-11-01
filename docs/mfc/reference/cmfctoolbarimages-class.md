@@ -1,10 +1,6 @@
 ---
-title: Cmfctoolbarımages sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfctoolbarımages sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarImages
 - AFXTOOLBARIMAGES/CMFCToolBarImages
@@ -75,8 +71,6 @@ f1_keywords:
 - AFXTOOLBARIMAGES/CMFCToolBarImages::UpdateImage
 - AFXTOOLBARIMAGES/CMFCToolBarImages::PreMultiplyAlpha
 - AFXTOOLBARIMAGES/CMFCToolBarImages::m_bDisableTrueColorAlpha
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarImages [MFC], CMFCToolBarImages
 - CMFCToolBarImages [MFC], AdaptColors
@@ -146,16 +140,12 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ecb54aab57449b59231fcfe03fdbb6c6e8e2b4b4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 21a8e6ed28498756130e6ddb418e93b0e9ad86cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055183"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662780"
 ---
 # <a name="cmfctoolbarimages-class"></a>Cmfctoolbarımages sınıfı
 

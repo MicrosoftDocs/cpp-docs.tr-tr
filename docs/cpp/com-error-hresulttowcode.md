@@ -1,27 +1,17 @@
 ---
-title: _com_error::HRESULTToWCode | Microsoft Docs
-ms.custom: ''
+title: _com_error::HRESULTToWCode
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_error::HRESULTToWCode
-dev_langs:
-- C++
 helpviewer_keywords:
 - HRESULTToWCode method [C++]
 ms.assetid: ff3789f5-1047-41a0-b7e3-86dd8f638dba
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c39b638451aa8ea89191e323eae5f2c140563990
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d89503e822d92bf6a1fcb2b6bb658d532af32c5d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581239"
 ---
 # <a name="comerrorhresulttowcode"></a>_com_error::HRESULTToWCode
 

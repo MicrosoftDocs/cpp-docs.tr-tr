@@ -1,14 +1,10 @@
 ---
-title: ATL-MFC paylaşılan sınıfları | Microsoft Docs
+title: ATL-MFC paylaşılan sınıfları
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
 ms.topic: conceptual
 f1_keywords:
 - vc.classes.shared
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPoint class, shared class
 - CFileTimeSpan class, shared class
@@ -27,16 +23,12 @@ helpviewer_keywords:
 - CString objects, shared class
 - shared classes
 ms.assetid: e13aaac3-21ec-4f4d-8834-432b40fde544
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d6feb80c93298d5fe3d2cb23f9b34727bced57d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5632de3d248ded83c1db2c0b469de165e676bf9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442233"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619708"
 ---
 # <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 

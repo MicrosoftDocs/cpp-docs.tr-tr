@@ -1,23 +1,13 @@
 ---
-title: A.31 iş parçacığı güvenli kilit işlevleri | Microsoft Docs
-ms.custom: ''
+title: A.31   İş Parçacığı Güvenli Kilit İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 3ad89eb8-076c-405a-be5e-88d3d707a832
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c25e88b115cb1f82268040a8d17e0dc9eaed3fee
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ad0116dbb3491058e81fd271f4917f7eb7bff460
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408986"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613596"
 ---
 # <a name="a31---thread-safe-lock-functions"></a>A.31   İş Parçacığı Güvenli Kilit İşlevleri
 

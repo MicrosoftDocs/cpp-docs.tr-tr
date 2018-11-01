@@ -1,28 +1,17 @@
 ---
-title: salt okunur (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: salt okunur (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.readonly
-dev_langs:
-- C++
 helpviewer_keywords:
 - readonly attribute
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 297b457bdf2c70a75b9abdc433c87381fd115037
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d174399b213bc6c8dbaeb0a01f3e457cfcf3a3e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653043"
 ---
 # <a name="readonly-c"></a>readonly (C++)
 

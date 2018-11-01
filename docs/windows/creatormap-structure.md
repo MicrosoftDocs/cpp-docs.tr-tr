@@ -1,9 +1,6 @@
 ---
-title: CreatorMap yapısı | Microsoft Docs
-ms.custom: ''
+title: CreatorMap Yapısı
 ms.date: 09/21/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Details::CreatorMap
@@ -12,8 +9,6 @@ f1_keywords:
 - module/Microsoft::WRL::Details::CreatorMap::factoryCache
 - module/Microsoft::WRL::Details::CreatorMap::factoryCreator
 - module/Microsoft::WRL::Details::CreatorMap::serverName
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::CreatorMap structure
 - Microsoft::WRL::Details::CreatorMap::activationId data member
@@ -21,17 +16,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::CreatorMap::factoryCreator data member
 - Microsoft::WRL::Details::CreatorMap::serverName data member
 ms.assetid: 94e40927-90c3-4107-bca3-3ad2dc4beda9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a7bf4ec2132e19989c5f1ae7c47003056928d0fd
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 98afce8096ee514fc8576bb80074b73acdd658e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582458"
 ---
 # <a name="creatormap-structure"></a>CreatorMap Yapısı
 

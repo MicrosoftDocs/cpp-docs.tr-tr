@@ -1,25 +1,15 @@
 ---
-title: Çıkış dosya Stream üye işlevleri | Microsoft Docs
-ms.custom: ''
+title: Çıkış Dosya Akışı Üye İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - output streams [C++], member functions
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab1d229f2c1933025993aa1bc3a3a8b91b41a2cc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: eba627c69437754a9c0a819167443aa00c025fef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621773"
 ---
 # <a name="output-file-stream-member-functions"></a>Çıkış Dosya Akışı Üye İşlevleri
 

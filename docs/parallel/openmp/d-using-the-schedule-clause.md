@@ -1,23 +1,13 @@
 ---
-title: D. Schedule yan tümcesini kullanarak | Microsoft Docs
-ms.custom: ''
+title: D. Schedule yan tümcesini kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d40b22a5e724f8d8b587e2928d3d1305a7fa807a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 85386c913a6e447ba9e71231be8b951eef504fea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446150"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627532"
 ---
 # <a name="d-using-the-schedule-clause"></a>D. Schedule yan tümcesini kullanma
 

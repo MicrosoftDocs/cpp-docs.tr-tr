@@ -1,14 +1,8 @@
 ---
-title: '@ (Bağlayıcı yanıt dosyasını belirt) | Microsoft Docs'
-ms.custom: ''
+title: '@ (Bağlayıcı Yanıt Dosyasını Belirt)'
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '@'
-dev_langs:
-- C++
 helpviewer_keywords:
 - linker [C++], response files
 - command files [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - '@ linker option'
 - response files, C/C++ linker
 ms.assetid: 5530014f-17d0-4f6b-a6b0-a6ba34f34cfd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f692dd8006618661d6710ee6e8e681047fea3b1f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e253381cef2fc46cf40792be85ad8367d75eef70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595763"
 ---
 # <a name="-specify-a-linker-response-file"></a>@ (Bağlayıcı Yanıt Dosyasını Belirt)
 

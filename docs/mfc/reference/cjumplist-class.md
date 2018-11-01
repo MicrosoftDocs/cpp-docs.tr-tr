@@ -1,10 +1,6 @@
 ---
-title: CJumpList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CJumpList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CJumpList
 - AFXADV/CJumpList
@@ -23,8 +19,6 @@ f1_keywords:
 - AFXADV/CJumpList::GetRemovedItems
 - AFXADV/CJumpList::InitializeList
 - AFXADV/CJumpList::SetAppID
-dev_langs:
-- C++
 helpviewer_keywords:
 - CJumpList [MFC], CJumpList
 - CJumpList [MFC], AbortList
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - CJumpList [MFC], InitializeList
 - CJumpList [MFC], SetAppID
 ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 518712dd4d52673ad88dffc0ffa76c9e0281642a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7248c86f71780ef1867a1ce7edf871f27fc67643
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642188"
 ---
 # <a name="cjumplist-class"></a>CJumpList sınıfı
 

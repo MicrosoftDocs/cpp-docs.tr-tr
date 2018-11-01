@@ -1,31 +1,21 @@
 ---
-title: CA2WEX sınıfı | Microsoft Docs
-ms.custom: ''
+title: CA2WEX sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CA2WEX
 - ATLCONV/ATL::CA2WEX
 - ATLCONV/ATL::CA2WEX::CA2WEX
 - ATLCONV/ATL::CA2WEX::m_psz
 - ATLCONV/ATL::CA2WEX::m_szBuffer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CA2WEX class
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eff9e2211d0ddf9cf2d9c4bb0c10040ae20a53e6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 96769c0012b1271263d2217fe9b5ea1a36ec8446
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020270"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629951"
 ---
 # <a name="ca2wex-class"></a>CA2WEX sınıfı
 

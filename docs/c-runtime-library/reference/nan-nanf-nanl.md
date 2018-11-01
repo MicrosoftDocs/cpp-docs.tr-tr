@@ -1,10 +1,6 @@
 ---
-title: NaN, nanf, nanl | Microsoft Docs
-ms.custom: ''
+title: nan, nanf, nanl
 ms.date: 94/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - nanf
 - nan
@@ -26,27 +22,21 @@ f1_keywords:
 - nan
 - nanl
 - nanf
-dev_langs:
-- C++
 helpviewer_keywords:
 - nan function
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 204d59d88c97d9b0fa161fda6f64f31267c73fd5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22b0e14094a0b6f0f3571c4d7551552210177a22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610268"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
-Sessiz NaN değerini döndürür.
+Sessiz bir NaN değerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,15 +53,15 @@ Bir dize değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Nan** işlevler sessiz NaN değerini döndürür.
+**Nan** işlevleri sessiz bir NaN değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nan** işlevler quiet (sinyali gönderiliyor) NaN için karşılık gelen bir kayan nokta değeri döndürür. *Giriş* değeri yoksayılır. Bir NaN çıktı için nasıl temsil hakkında daha fazla bilgi için bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+**Nan** işlevler (sinyali gönderiliyor) sessiz bir NaN karşılık gelen bir kayan nokta değeri döndürür. *Giriş* değer yoksayılır. Çıkış için bir NaN nasıl temsil edildiğini hakkında daha fazla bilgi için bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**NaN**, **nanf**, **nanl**|\<Math.h >|\<cmath > veya \<math.h >|
 

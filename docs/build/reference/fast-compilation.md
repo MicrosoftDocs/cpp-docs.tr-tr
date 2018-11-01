@@ -1,28 +1,18 @@
 ---
-title: Hızlı derleme | Microsoft Docs
-ms.custom: ''
+title: Hızlı Derleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - performance, cle.exe compiler
 - compilation, performance
 - cl.exe compiler, performance
 - fast compiling
 ms.assetid: 5fead136-ba69-40c8-8e25-236f89d5990a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 926c63d3d556d1aa9b85a7ce97e93b60e7c2ea23
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ab3171d7bb6d85cbe010e0efce39eda14b166527
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667664"
 ---
 # <a name="fast-compilation"></a>Hızlı Derleme
 

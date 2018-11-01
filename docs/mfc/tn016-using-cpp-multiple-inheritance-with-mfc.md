@@ -1,29 +1,19 @@
 ---
-title: "TN016: MFC'de C++ birden çok devralmayı kullanma | Microsoft Docs"
-ms.custom: ''
+title: "TN016: MFC'de C++ Birden Çok Devralmayı Kullanma"
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.inheritance
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN016
 - MI (Multiple Inheritance)
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c0ed5c1bc73f58bec1f9ad0d6a790fe3d3c0239
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 76dc2e856ca7db783ee542aa2dbb498fd4c1a769
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444692"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668877"
 ---
 # <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC'de C++ Birden Çok Devralmayı Kullanma
 

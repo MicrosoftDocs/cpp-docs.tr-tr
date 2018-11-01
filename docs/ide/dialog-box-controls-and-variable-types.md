@@ -1,27 +1,17 @@
 ---
-title: İletişim kutusu denetimleri ve değişken türleri | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusu Denetimleri ve Değişken Türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog box controls, member variables
 - dialog box controls, variable types
 - variables, dialog box control member variables
 ms.assetid: f9cd9cea-45a6-4349-8358-e5efbcdcff76
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6914ab8b5838ee6bc5bb7a74004ed986efe2fcda
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: efacd6382d5773c4c47896a99910d9fe9934397a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373993"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600134"
 ---
 # <a name="dialog-box-controls-and-variable-types"></a>İletişim Kutusu Denetimleri ve Değişken Türleri
 

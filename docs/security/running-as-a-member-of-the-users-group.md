@@ -1,15 +1,9 @@
 ---
-title: Kullanıcılar grubunun bir üyesi olarak çalıştırma | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı Grubu Üyesi Olarak Çalıştırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - PRJ0050
 - VCD0047
-dev_langs:
-- C++
 helpviewer_keywords:
 - Users Group [C++]
 - security [C++], Users Group
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - administrator (not running as) [C++]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34028aa243f4c767751da758e43dab5ecf71c110
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bb67c4cf2f166a8dd67d14b9f61b23241fe442fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431807"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607890"
 ---
 # <a name="running-as-a-member-of-the-users-group"></a>Kullanıcı Grubu Üyesi Olarak Çalıştırma
 

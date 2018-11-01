@@ -1,28 +1,18 @@
 ---
-title: Microsoft::WRL::Wrappers::HandleTraits Namespace | Microsoft Docs
-ms.custom: ''
+title: Microsoft::WRL::Wrappers::HandleTraits Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits
-dev_langs:
-- C++
 helpviewer_keywords:
 - HandleTraits namespace
 ms.assetid: 2fb5c6d1-bfc2-4e09-91eb-31705064ffb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 683759c3bf0b2152ee6fadbb638cd2398daecccd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e558838ca9cd06fb5529f689d45a920db151d272
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643254"
 ---
 # <a name="microsoftwrlwrappershandletraits-namespace"></a>Microsoft::WRL::Wrappers::HandleTraits Ad Alanı
 

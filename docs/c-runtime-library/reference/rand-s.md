@@ -1,10 +1,6 @@
 ---
-title: rand_s | Microsoft Docs
-ms.custom: ''
+title: rand_s
 ms.date: 1/02/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rand_s
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - rand_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - generating pseudorandom numbers
 - random numbers, cryptographically secure
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c75b2988dd00d8141c25e67c29bcc0b082270ffe
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d196a6f5d7483deb9a7e1b8d7fa929532b6197db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572724"
 ---
 # <a name="rands"></a>rand_s
 

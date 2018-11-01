@@ -1,29 +1,19 @@
 ---
-title: LROFFSET işleci | Microsoft Docs
-ms.custom: ''
+title: LROFFSET işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - LROFFSET
 - operator LROFFSET
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator LROFFSET
 - LROFFSET operator
 ms.assetid: 61ab45d4-7a30-440d-9c11-2a9dfa6ae565
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd04a306e85fbb3627729355dc05d55197d91134
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1ed1fc7c3a927dc7899804e697e948736afb1567
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678538"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638912"
 ---
 # <a name="operator-lroffset"></a>LROFFSET işleci
 

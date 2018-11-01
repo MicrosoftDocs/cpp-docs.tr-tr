@@ -1,30 +1,20 @@
 ---
-title: MFC Masaüstü uygulamaları | Microsoft Docs
-ms.custom: ''
+title: MFC Masaüstü Uygulamaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - MFC
 - mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - libraries, MFC
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3168057527eb1df6d87bd8f5aefe3403b7467bd9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9c72e9b4964aa76631b1b9d42bfbd158a2ae8fc8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406704"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604210"
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4174 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4174
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4174
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4174
 ms.assetid: 63301e51-24bc-43c4-bb11-252f7d513e9e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16556d197c39ef0c5a8c974103535a7bc875671a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cc55318c8ef54f7d7f69e93d72717f54578ba576
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622579"
 ---
 # <a name="compiler-warning-level-1-c4174"></a>Derleyici Uyarısı (düzey 1) C4174
 

@@ -1,29 +1,19 @@
 ---
-title: __Declspec(dllimport) kullanarak bir uygulamaya aktarma | Microsoft Docs
-ms.custom: ''
+title: __declspec(dllimport) Kullanarak Bir Uygulamaya Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - __declspec
 - dllimport
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08a406c8884cdcb9d4b2ead2e61d416ac580fd73
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 925cd588c1851c6fb135fffbb83e9cfd680bea28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610484"
 ---
 # <a name="importing-into-an-application-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Bir Uygulamaya Aktarma
 

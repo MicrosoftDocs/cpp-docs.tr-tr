@@ -1,9 +1,6 @@
 ---
-title: hash_map (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: hash_map (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map
@@ -52,8 +49,6 @@ f1_keywords:
 - cliext::hash_map::value_comp
 - cliext::hash_map::value_compare
 - cliext::hash_map::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - <cliext/hash_map> header [STL/CLR]
 - <hash_map> header [STL/CLR]
@@ -104,17 +99,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: c3cfc69b-04c6-42ae-a30e-0eda953fe883
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 6c36f47f37809ff7e1aef6bf26b5c02043153ac3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fb7db25785d041786f5dfc0d2c3986a76d776d5d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658516"
 ---
 # <a name="hashmap-stlclr"></a>hash_map (STL/CLR)
 

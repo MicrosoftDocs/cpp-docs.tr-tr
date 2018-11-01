@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Hakkında daha fazla bilgi (ODBC) güncelleştirmeleri | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - records, updating
 - transactions, updating recordsets
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 187971adef984ab35299970ce23cb4332c9fb070
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b34f6f51c6ff3a0995f4cf6044ddd7949644f42c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665302"
 ---
 # <a name="recordset-more-about-updates-odbc"></a>Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)
 

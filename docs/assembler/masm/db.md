@@ -1,27 +1,17 @@
 ---
-title: DB | Microsoft Docs
-ms.custom: ''
+title: DB
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - DB
-dev_langs:
-- C++
 helpviewer_keywords:
 - DB directive
 ms.assetid: 0c69ccaa-043f-46e1-9f95-dc76d9bc87c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 229e92a8ab3b057a96dfdf05c715c0216bb5f6fe
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0dd3a4e06b19c04a495c5c30f5d10405ddfea57e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590001"
 ---
 # <a name="db"></a>DB
 

@@ -1,26 +1,16 @@
 ---
-title: 'CONCURRENCY::Graphics:: Direct3D Namespace | Microsoft Docs'
-ms.custom: ''
+title: Concurrency::graphics::direct3d Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d
 - amp_short_vectors/Concurrency::graphics::direct3d
-dev_langs:
-- C++
 ms.assetid: be283331-07cf-46e4-91a1-e8aa85d4ec8e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01d029b528280a89b2bc60639b47a23c5df6ffbc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2a07aeab410750e38684f564df4cb89c1846b95e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405247"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626830"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace"></a>Concurrency::graphics::direct3d Ad Alanı
 

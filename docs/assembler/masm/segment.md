@@ -1,27 +1,17 @@
 ---
-title: SEGMENT | Microsoft Docs
-ms.custom: ''
+title: SEGMENT
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - SEGMENT
-dev_langs:
-- C++
 helpviewer_keywords:
 - SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87c5f37d24ce8f8ae34bbc403fcf39515cd6cba2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f37be47b92a71e20821cd1e40f8cf1350dfedaff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686446"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615429"
 ---
 # <a name="segment"></a>SEGMENT
 

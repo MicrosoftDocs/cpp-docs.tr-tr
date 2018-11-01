@@ -1,10 +1,6 @@
 ---
-title: CControlBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CControlBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CControlBar
 - AFXEXT/CControlBar
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXEXT/CControlBar::SetInPlaceOwner
 - AFXEXT/CControlBar::m_bAutoDelete
 - AFXEXT/CControlBar::m_pInPlaceOwner
-dev_langs:
-- C++
 helpviewer_keywords:
 - CControlBar [MFC], CControlBar
 - CControlBar [MFC], CalcDynamicLayout
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CControlBar [MFC], m_bAutoDelete
 - CControlBar [MFC], m_pInPlaceOwner
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27121334345556a744a6fc838c238352ccc36621
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: e9fba929017edfe547f2cc20105ea4f4bcdc9c33
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644398"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar sınıfı
 

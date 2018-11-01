@@ -1,27 +1,18 @@
 ---
-title: CommandHandler | Microsoft Docs
-ms.custom: ''
+title: CommandHandler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - CommandHandler
-dev_langs:
-- C++
 helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 841630266778389969ead9191f7a2a31e20e7975
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fe0871f9778d7a1f74bf74af6030d7f8162d3b79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611854"
 ---
 # <a name="commandhandler"></a>CommandHandler
 

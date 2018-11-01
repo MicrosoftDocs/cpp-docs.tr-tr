@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3280 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3280
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3280
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3280
 ms.assetid: 86dc5bbc-8818-4786-a728-9334268d308b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed102abc0f46b896b70cb4681db4b0924b6c5822
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b43ea73a626ba35f58054a94046915d4eba97181
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085127"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566250"
 ---
 # <a name="compiler-error-c3280"></a>Derleyici Hatası C3280
 

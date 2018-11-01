@@ -1,28 +1,18 @@
 ---
-title: / INTEGRITYCHECK | Microsoft Docs
-ms.custom: ''
+title: /INTEGRITYCHECK
 ms.date: 12/28/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /INTEGRITYCHECK
-dev_langs:
-- C++
 helpviewer_keywords:
 - -INTEGRITYCHECK editbin options
 - /INTEGRITYCHECK editbin options
 - INTEGRITYCHECK editbin options
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 062ce019fe1b622661be880d8a06eac9c5971103
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b3f6622e3628db53c363b239c59accd94f708ab0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617284"
 ---
 # <a name="integritycheck"></a>/INTEGRITYCHECK
 

@@ -1,10 +1,6 @@
 ---
-title: max_none sınıfı | Microsoft Docs
-ms.custom: ''
+title: max_none Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::max_none
 - allocators/stdext::max_none::allocated
@@ -12,8 +8,6 @@ f1_keywords:
 - allocators/stdext::max_none::full
 - allocators/stdext::max_none::released
 - allocators/stdext::max_none::saved
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::max_none
 - stdext::max_none [C++], allocated
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - stdext::max_none [C++], released
 - stdext::max_none [C++], saved
 ms.assetid: 12ab5376-412e-479c-86dc-2c3d6a3559b6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 44981141be5bfb4f18cb278e724ab905aebcc5cf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 20191b84e4bbad760de1035fdb027fcbe827c874
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964177"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566263"
 ---
 # <a name="maxnone-class"></a>max_none Sınıfı
 

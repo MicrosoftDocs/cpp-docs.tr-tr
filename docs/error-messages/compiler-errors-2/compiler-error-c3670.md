@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3670 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3670
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3670
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3670
 ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1129a25e628710121d667a44022eec5a0450b092
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d3acfd9d4d09c53fac0b2c5a2462c56dfd54e6d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115339"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598558"
 ---
 # <a name="compiler-error-c3670"></a>Derleyici Hatası C3670
 

@@ -1,25 +1,15 @@
 ---
-title: Ara düğmesi | Microsoft Docs
-ms.custom: ''
+title: Ara Düğmesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Look Up button
 ms.assetid: 61da61ec-5bb5-462a-85ef-501df5e93551
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7dc18065499773d0646bde2bc63cb5c8e1d6076
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 827f7ac2196616af4405d3ffca5819b4b63b02d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717957"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602247"
 ---
 # <a name="look-up-button"></a>Ara Düğmesi
 

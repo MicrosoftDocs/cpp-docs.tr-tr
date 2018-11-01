@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4062 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4062
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4062
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4062
 ms.assetid: 36d1c6ae-c917-4b08-bf30-2eb49ee94169
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9632c6b6259d67a8c3ad02f39dc5e61425550e4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6a7129f71eebb33e7bde333dfd90ed4ca173d44c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602650"
 ---
 # <a name="compiler-warning-level-4-c4062"></a>Derleyici Uyarısı (düzey 4) C4062
 

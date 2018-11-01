@@ -1,29 +1,19 @@
 ---
-title: float_control | Microsoft Docs
-ms.custom: ''
+title: float_control
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.float_control
 - float_control_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - float_control pragma
 - pragmas, float_control
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 958aef828d857b0e8d4043be0e2417cd8a349512
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 63e27e992778776e186345da07937d1a88844e5d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611022"
 ---
 # <a name="floatcontrol"></a>float_control
 

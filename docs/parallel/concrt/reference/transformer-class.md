@@ -1,10 +1,6 @@
 ---
-title: Transformer sınıfı | Microsoft Docs
-ms.custom: ''
+title: transformer Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - transformer
 - AGENTS/concurrency::transformer
@@ -19,21 +15,15 @@ f1_keywords:
 - AGENTS/concurrency::transformer::resume_propagation
 - AGENTS/concurrency::transformer::send_message
 - AGENTS/concurrency::transformer::supports_anonymous_source
-dev_langs:
-- C++
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e5c6b9d15ef2ca456fd91dbd7829d94e33e2c0a
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: cc35a4e2de2b29bb6d437dfcbf48ef361fefdfa3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618289"
 ---
 # <a name="transformer-class"></a>transformer Sınıfı
 

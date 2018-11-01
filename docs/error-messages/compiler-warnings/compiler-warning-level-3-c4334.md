@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4334 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4334
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4334
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4334
 ms.assetid: d845857f-bc95-4faf-a079-626a0cf935ba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b7bb16ea38b2c2112c12c561398341a7d1adbfc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 55512bf28c8c20512d0d245810d3e5c1fec36939
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600700"
 ---
 # <a name="compiler-warning-level-3-c4334"></a>Derleyici Uyarısı (Düzey 3) C4334
 

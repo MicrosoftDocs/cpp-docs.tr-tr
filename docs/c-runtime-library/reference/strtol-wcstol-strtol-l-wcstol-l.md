@@ -1,10 +1,6 @@
 ---
-title: strtol, wcstol, _strtol_l, _wcstol_l | Microsoft Docs
-ms.custom: ''
+title: strtol, wcstol, _strtol_l, _wcstol_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strtol
 - wcstol
@@ -30,8 +26,6 @@ f1_keywords:
 - wcstol
 - _strtol_l
 - _tcstol_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcstol function
 - wcstol_l function
@@ -43,20 +37,16 @@ helpviewer_keywords:
 - _strtol_l function
 - strtol function
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 70f854e9bb78932f5d9fc102c835476e6b52d68b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5aa69a44a2ce8bde0ee16b02ecd9923f247c7e65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416333"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617470"
 ---
 # <a name="strtol-wcstol-strtoll-wcstoll"></a>strtol, wcstol, _strtol_l, _wcstol_l
 
-Dizeleri uzun tamsayı değerine dönüştürür.
+Dizeleri bir uzun tamsayı değerine dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,25 +81,25 @@ long _wcstol_l(
 Dönüştürülecek null ile sonlandırılmış dize.
 
 *endptr*<br/>
-Tarama durdurur karakter işaretçi.
+Taramayı durduran karakter işaretçisi.
 
 *base*<br/>
-Kullanılacak sayı temel.
+Kullanılacak sayı tabanı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtol** dizesinde gösterilen değerini verir *strSource*, temsili taşma neden olacağından, içinde bu döndürür durumda dışında **LONG_MAX** veya **LONG_ MIN**. **strtol** dönüştürme gerçekleştirilebiliyorsa 0 döndürür. **wcstol** değerleri analogously çok döndürür **strtol**. Her iki işlevler için **errno** ayarlanır **ERANGE** taşma veya yetersiz olduğunda.
+**strtol** dizesinde temsil edilen değeri döndürür *strSource*gösterimin bir taşma neden olduğu zaman, o verir durumda dışında **LONG_MAX** veya **LONG_ MIN**. **strtol** dönüştürme gerçekleştirilemiyorsa 0 döndürür. **wcstol** çok öğesine değerleri döndürür **strtol**. Her iki işlev için **errno** ayarlanır **ERANGE** taşma veya yetersiz gelme oluşması durumunda.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.
+Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtol** işlev dönüştürür *strSource* için bir **uzun**. **strtol** dize okumayı durdurur *strSource* ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir ya da sıfırdan büyük veya eşit ilk sayısal karakter olabilir *temel*.
+**Strtol** işlev dönüştürür *strSource* için bir **uzun**. **strtol** dizesini okumayı durdurur *strSource* bir sayının parçası olarak tanıyamadığı ilk karakterde. Bu sondaki boş karakter olabilir veya daha büyük veya eşit ilk sayısal karakter olabilir *temel*.
 
-**wcstol** bir joker karakter sürümü **strtol**; kendi *strSource* bağımsız değişkeni olan bir joker karakter dizesi. Bu işlevler aynı şekilde aksi davranır.
+**wcstol** geniş karakterli sürümüdür **strtol**; *strSource* geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -118,15 +108,15 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |**_tcstol**|**strtol**|**strtol**|**wcstol**|
 |**_tcstol_l**|**_strtol_l**|**_strtol_l**|**_wcstol_l**|
 
-Geçerli yerel **lc_numerıc** kategori ayarı belirler tanıma taban karakterinin *strSource **;* daha fazla bilgi için bkz: [setlocale](setlocale-wsetlocale.md). Olmadan çalışır **_l** sonekini kullan geçerli yerel; **_strtol_l** ve **_wcstol_l** ilgili işlevleri aynıdır **_l** yerine geçirilen yerel ayar kullanmasını dışında soneki. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Geçerli yerel ayarın **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource **;* daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). İşlevlerin **_l** soneki geçerli yerel ayarı kullanır; **_strtol_l** ve **_wcstol_l** olmayan ilgili işlevlerle aynıdır **_l** bunun yerine iletilmiş yerel ayarı kullanmaları dışında soneki. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Varsa *endptr* değil **NULL**, tarama durduruldu karakteri gösteren bir işaretçi işaret konumunda depolanan *endptr*. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri *strSource* gösterdiği konumunda depolanan *endptr*.
+Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 
-**strtol** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret etmek için:
+**strtol** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret edecek şekilde:
 
 > [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*basamak* &#124; *harf*]  
 
-A *boşluk* , göz ardı edilir; boşluk ve sekme karakterlerden oluşabilir *basamak* bir veya daha fazla ondalık basamakların; *harf* 'a' ile 'z' (veya 'A'-'Z') bir veya daha fazla harf şunlardır.  Bu form sığmayan ilk karakter tarama durdurur. Varsa *temel* sayısı temel olarak kullanılan sonra 2 ile 36, arasındadır. Varsa *temel* gösterdiği dizenin ilk karakter 0'dır ve *strSource* temel belirlemek için kullanılır. İlk karakter 0 ve ikinci karakter 'x' veya 'X' değil, dize sekizlik tamsayı olarak yorumlanır. İlk karakter '0' dir ve ikinci karakteri 'x' veya 'X', dize onaltılık bir tamsayı olarak yorumlanır. İlk karakteri ' 1' üzerinden ' 9'. dize ondalık bir tamsayı olarak yorumlanır. 'A' ile 'z' harf (veya 'A'-'Z') 35 10 değerler atanır; yalnızca atanan değerleri olan harf değerinden *temel* izin verilir. İlk karakter taban izin verilen aralığın dışında tarama durdurur. Örneğin, varsa *temel* 0'dır ve taranan ilk karakter '0', tamsayı sekizli kabul edilir ve bir '8' veya '9' karakter tarama durdurur.
+A *boşluk* yoksayılan boşluk ve sekme karakterlerinden oluşabilir *basamak* bir veya daha fazla ondalık basamaktır; *harf* 'a' ila 'z' (veya 'A'-'Z') bir veya daha fazla harf olan.  Bu forma uymayan ilk karakter taramayı durdurur. Varsa *temel* 2 ile 36 arasındaysa sayının tabanı kullanılır olduğu. Varsa *temel* tarafından işaret edilen dizenin ilk karakterleri 0'dır *strSource* tabanı belirlemek için kullanılır. İlk karakter 0 ise ve ikinci karakter 'x' veya 'X' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter '0' ise ve ikinci karakter 'x' veya 'X' dize onaltılık bir tamsayı olarak yorumlanır. İlk karakter ' 1'-' 9' ise, dize ondalık bir tamsayı olarak yorumlanır. Harfler 'bir'-'z' (ya da 'A'-'Z'), 10-35 arasında değerler atanır; yalnızca atanan değerleri olan harf küçüktür *temel* izin verilir. Tabanın aralığının dışındaki ilk karakter taramayı durdurur. Örneğin, varsa *temel* 0 ise ve taranan ilk karakter '0' ise, sekizlik bir tamsayı olduğu varsayılır ve bir '8' veya '9' karakteri taramayı durduracaktır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -136,11 +126,11 @@ A *boşluk* , göz ardı edilir; boşluk ve sekme karakterlerden oluşabilir *ba
 |**wcstol**|\<stdlib.h > veya \<wchar.h >|
 |**_strtol_l**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [strtod](strtod-strtod-l-wcstod-wcstod-l.md).
+Örneğin bakın [strtod](strtod-strtod-l-wcstod-wcstod-l.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

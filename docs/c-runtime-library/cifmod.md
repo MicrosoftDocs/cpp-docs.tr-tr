@@ -1,10 +1,6 @@
 ---
-title: _Cıfmod | Microsoft Docs
-ms.custom: ''
+title: _CIfmod
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _CIfmod
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - _CIfmod
 - CIfmod
-dev_langs:
-- C++
 helpviewer_keywords:
 - CIfmod intrinsic
 - _CIfmod intrinsic
 ms.assetid: 7c050653-7ec6-4810-b3a7-7a0057ea65ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 605febb4ad76051ca79e0b03388fbb7739ebb076
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 4f0ad84d61153c81e1e4ef6bc804a3ad498f854f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234612"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601142"
 ---
 # <a name="cifmod"></a>_CIfmod
 

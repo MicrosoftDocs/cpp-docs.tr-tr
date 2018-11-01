@@ -1,25 +1,15 @@
 ---
-title: Devre dışı iken fare etkileşimi sağlama | Microsoft Docs
-ms.custom: ''
+title: Devre Dışı İken Fare Etkileşimi Sağlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], mouse interaction
 ms.assetid: b09106bf-44c7-4b9b-a6d9-0d624f16f5b3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9394a3c161b82fa95de0e2ae0c590aec87493a85
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bb4b5059e9a3a712a63d5693f3f3ffe95d14ecf0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584671"
 ---
 # <a name="providing-mouse-interaction-while-inactive"></a>Devre Dışı İken Fare Etkileşimi Sağlama
 

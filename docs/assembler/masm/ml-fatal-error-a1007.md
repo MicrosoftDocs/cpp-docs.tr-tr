@@ -1,27 +1,18 @@
 ---
-title: ML önemli hatası A1007 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Hatası A1007
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A1007
-dev_langs:
-- C++
 helpviewer_keywords:
 - A1007
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 539ab431510d5dc721e6531c11069a87e27c287a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 98933c3a24da22f447174a3b51c4855690aba83e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603404"
 ---
 # <a name="ml-fatal-error-a1007"></a>ML Önemli Hatası A1007
 

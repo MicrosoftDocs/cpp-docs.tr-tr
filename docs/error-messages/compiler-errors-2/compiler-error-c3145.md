@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3145 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3145
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3145
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3145
 ms.assetid: f165c874-0f51-45c7-85e8-ebe321cbc168
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb79487c2b0ea4d80d72ba04663543662e4f298c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e425402bcea3e08764a9a89abfbd9316ca254a83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117419"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598542"
 ---
 # <a name="compiler-error-c3145"></a>Derleyici Hatası C3145
 

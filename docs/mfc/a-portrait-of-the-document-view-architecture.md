@@ -1,12 +1,6 @@
 ---
-title: Belge-görünüm mimarisinin bir özeti | Microsoft Docs
-ms.custom: ''
+title: Belge-görünüm mimarisinin bir özeti
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - documents [MFC], views
 - multiple views [MFC], updating from document
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - document/view architecture [MFC], about document/view architecture
 - views [MFC], accessing document data from
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4bd07bf521e1dcfc59b1d3f213f513b1d361b8a6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a4d89189b5389685be6b69c8502ffedb8aa731e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409525"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567108"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Bir Özeti
 

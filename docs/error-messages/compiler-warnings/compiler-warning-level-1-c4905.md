@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4905 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4905
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4905
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4905
 ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dffc6c0f2e4ed5e70e5c8f6689b257a66dec72b6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c1d201eb7d3eee322a1aa1e598eeb24928e361a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584541"
 ---
 # <a name="compiler-warning-level-1-c4905"></a>Derleyici Uyarısı (düzey 1) C4905
 

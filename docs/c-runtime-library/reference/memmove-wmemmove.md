@@ -1,10 +1,6 @@
 ---
-title: memmove, wmemmove | Microsoft Docs
-ms.custom: ''
+title: memmove, wmemmove
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memmove
 - wmemmove
@@ -24,22 +20,16 @@ apitype: DLLExport
 f1_keywords:
 - memmove
 - wmemmove
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemmove function
 - memmove function
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11f474675d8ba5b370b1f13f048e989d9c283bde
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8801e43ee10f99b5c18a6b2340449da7a433aaf1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599868"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 

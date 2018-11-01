@@ -1,10 +1,6 @@
 ---
-title: CDiscreteTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDiscreteTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDiscreteTransition
 - AFXANIMATIONCONTROLLER/CDiscreteTransition
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay
 - AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDiscreteTransition [MFC], CDiscreteTransition
 - CDiscreteTransition [MFC], Create
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CDiscreteTransition [MFC], m_delay
 - CDiscreteTransition [MFC], m_hold
 ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9384fbc79137807015b5b18092806e2a67577b88
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6092e805516d242daf6149615a8ef72df334dfd5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073883"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656709"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition sınıfı
 

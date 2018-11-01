@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3510 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3510
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3510
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3510
 ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5cc134823abf2657426b0c1be9cfbe6d92a74035
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dbb65628aa6e0da94a91a59724ca8e1cd5b56491
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620887"
 ---
 # <a name="compiler-error-c3510"></a>Derleyici Hatası C3510
 

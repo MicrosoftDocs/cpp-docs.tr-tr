@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1085 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1085
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1085
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1085
 ms.assetid: f2766365-d09b-4299-8a98-12e5aca98568
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab28c633ac7579e39f89d94d1c50e20cc156004a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d3060d01beb7ce8fda3890186b1a891fb33e1021
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043735"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637495"
 ---
 # <a name="fatal-error-c1085"></a>Önemli hata C1085
 

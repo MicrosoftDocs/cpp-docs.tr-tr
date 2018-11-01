@@ -1,10 +1,6 @@
 ---
-title: uniform_real_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: uniform_real_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::uniform_real_distribution
 - random/std::uniform_real_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::uniform_real_distribution::param_type::b
 - random/std::uniform_real_distribution::param_type::operator==
 - random/std::uniform_real_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::uniform_real_distribution [C++]
 - std::uniform_real_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24a750afa3f4cbc84b4fbfe306c1f97be23200d7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 07dcf7da97a815cce29a2978a001cafab0581451
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710807"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655422"
 ---
 # <a name="uniformrealdistribution-class"></a>uniform_real_distribution Sınıfı
 

@@ -1,28 +1,18 @@
 ---
-title: Sınıf üyelerine genel bakış | Microsoft Docs
-ms.custom: ''
+title: Sınıf Üyelerine Genel bakış
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - members [C++], types of class members
 - members [C++]
 - class members [C++], types of
 - class members
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fa736315554786435ec8a8eca453df9de79e2bd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8edfadefdacf94685952d31f2eaf83e8593eaef8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033907"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637924"
 ---
 # <a name="class-member-overview"></a>Sınıf Üyelerine Genel bakış
 

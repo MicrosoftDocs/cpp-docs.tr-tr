@@ -1,10 +1,6 @@
 ---
-title: messages sınıfı | Microsoft Docs
-ms.custom: ''
+title: messages Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocmes/std::messages
 - xlocmes/std::messages::char_type
@@ -15,8 +11,6 @@ f1_keywords:
 - xlocmes/std::messages::do_open
 - xlocmes/std::messages::get
 - xlocmes/std::messages::open
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::messages [C++]
 - std::messages [C++], char_type
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - std::messages [C++], get
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f6b4faf2ac5f04a2dcc9e1e9112016038fa2fcec
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7a024a8cad8c536b25127d033468874de5ebd8af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568538"
 ---
 # <a name="messages-class"></a>messages Sınıfı
 

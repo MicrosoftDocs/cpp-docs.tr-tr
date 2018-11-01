@@ -1,10 +1,6 @@
 ---
-title: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l | Microsoft Docs
-ms.custom: ''
+title: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _iswxdigit_l
 - iswxdigit
@@ -27,8 +23,6 @@ f1_keywords:
 - iswxdigit
 - isxdigit
 - _istxdigit
-dev_langs:
-- C++
 helpviewer_keywords:
 - isxdigit function
 - istxdigit function
@@ -40,20 +34,16 @@ helpviewer_keywords:
 - hexadecimal characters
 - iswxdigit function
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92908e6d4c39f990da6fba5008c7ffe8af40ccc9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1c7f70fedb19cca746ffb1e276c69b5fc98388b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403345"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659712"
 ---
 # <a name="isxdigit-iswxdigit-isxdigitl-iswxdigitl"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 
-Tamsayı onaltılık bir sayıdır bir karakteri temsil edip etmediğini belirler.
+Tamsayının onaltılık basamak olan bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,20 +67,20 @@ int _iswxdigit_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* onaltılık basamak belirli bir gösterimidir. **isxdigit** sıfır olmayan bir değer döndürür *c* onaltılık bir sayıdır (A - F, a - f veya 0 - 9). **iswxdigit** sıfır olmayan bir değer döndürür *c* bir onaltılık karakter karşılık gelen bir geniş karakter. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan *c* onaltılık basamak belirli bir gösterimidir. **isxdigit** sıfır olmayan bir değer döndürür *c* onaltılık bir sayıysa (A - F, a - f veya 0 - 9). **iswxdigit** sıfır olmayan bir değer döndürür *c* bir onaltılık basamak karakterine karşılık gelen bir geniş karakterse. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
 
-"C" yerel ayar için **iswxdigit** işlevi Unicode tam genişlikli onaltılık karakterler desteklemez.
+"C" yerel ayar için **iswxdigit** işlevi Unicode tam genişlikli onaltılık karakterleri desteklemez.
 
-Bu işlevleri sürümlerini **_l** soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **isxdigit** ve **_isxdigit_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **isxdigit** ve **_isxdigit_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -107,7 +97,7 @@ Davranışını **isxdigit** ve **_isxdigit_l** tanımsız ise *c* EOF değil ve
 |**_isxdigit_l**|\<CType.h >|
 |**_iswxdigit_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

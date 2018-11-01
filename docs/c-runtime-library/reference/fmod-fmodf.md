@@ -1,10 +1,6 @@
 ---
-title: fmodf, fmodl fmod | Microsoft Docs
-ms.custom: ''
+title: fmodf, fmodl fmod
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fmod
 - fmodf
@@ -26,8 +22,6 @@ f1_keywords:
 - fmod
 - _fmodl
 - fmodf
-dev_langs:
-- C++
 helpviewer_keywords:
 - calculating floating-point remainders
 - fmodf function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - fmod function
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c473b5cb6822df07f4972ff2c964c828b14b5966
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 78677be1a0c9921c35e54d43a00b8956a9d858b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605353"
 ---
 # <a name="fmod-fmodf-fmodl"></a>fmodf, fmodl fmod
 

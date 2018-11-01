@@ -1,27 +1,17 @@
 ---
-title: public (C++) | Microsoft Docs
-ms.custom: ''
+title: public (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - public_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - public keyword [C++]
 ms.assetid: f3e10a59-39f6-4bcd-827e-3e99f8f89497
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ec52069f55ad742bab8378be2aa33d2616244a7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 24cc4dd3cd7e0c893664339e7ad83383839b0b11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110815"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600378"
 ---
 # <a name="public-c"></a>public (C++)
 

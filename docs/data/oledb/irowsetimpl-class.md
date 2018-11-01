@@ -1,10 +1,6 @@
 ---
-title: Irowsetımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IRowsetImpl
 - IRowsetImpl::AddRefRows
@@ -77,8 +73,6 @@ f1_keywords:
 - m_rgRowHandles
 - ATL::IRowsetImpl::m_rgRowHandles
 - ATL.IRowsetImpl.m_rgRowHandles
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRowsetImpl class
 - AddRefRows method
@@ -97,17 +91,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 7f3a31b2df0e781cb707d8d2a20c725b28be5404
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 744614dac72a96da2de8722d98789ab5babb170d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077159"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646696"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 

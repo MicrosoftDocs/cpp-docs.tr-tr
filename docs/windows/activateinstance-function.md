@@ -1,29 +1,19 @@
 ---
-title: Activateınstance işlevi | Microsoft Docs
-ms.custom: ''
+title: ActivateInstance İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/Windows::Foundation::ActivateInstance
 - client/ABI::Windows::Foundation::ActivateInstance
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActivateInstance function
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ebebe0bbceafe82c41ec99b2532c965670776127
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 65648d62657bf989d4a08660e0fd7724511350c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666303"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance İşlevi
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonBar
 - AFXRIBBONBAR/CMFCRibbonBar
@@ -99,8 +95,6 @@ f1_keywords:
 - AFXRIBBONBAR/CMFCRibbonBar::ShowKeyTips
 - AFXRIBBONBAR/CMFCRibbonBar::ToggleMimimizeState
 - AFXRIBBONBAR/CMFCRibbonBar::TranslateChar
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonBar [MFC], ActivateContextCategory
 - CMFCRibbonBar [MFC], AddCategory
@@ -194,16 +188,12 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], ToggleMimimizeState
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c8d337fdf6b861b4a64cba2876de33cc65d89b6b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 78566eaa15eb695d892471925a9dadcad9655c5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070341"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640251"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar sınıfı
 

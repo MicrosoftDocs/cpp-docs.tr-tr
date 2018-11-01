@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2728 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2728
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2728
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2728
 ms.assetid: 65635f91-1cd1-46e4-9ad7-14726d0546af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fe901a5798028378e6d84a807826b42cae0d64d8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3e3584d5e9166bb57e3be56e33f0198cacace7c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036175"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615182"
 ---
 # <a name="compiler-error-c2728"></a>Derleyici Hatası C2728
 

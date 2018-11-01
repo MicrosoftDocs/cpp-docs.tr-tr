@@ -1,26 +1,16 @@
 ---
-title: Metin ve ikili akışlar | Microsoft Docs
-ms.custom: ''
+title: Metin ve İkili Akışlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - binary streams
 - text streams
 ms.assetid: 57035e4a-955d-4e04-a560-fcf67ce68b4e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 106e02de80c3132846d7b88161637a37f74a59ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a47c0b79b10f685c1f43ae4bfbfc6e1b9ea2b508
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664912"
 ---
 # <a name="text-and-binary-streams"></a>Metin ve İkili Akışlar
 

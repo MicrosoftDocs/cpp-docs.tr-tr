@@ -1,14 +1,8 @@
 ---
-title: Düşük düzey g/ç | Microsoft Docs
-ms.custom: ''
+title: Düşük Düzey G/Ç
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.io
-dev_langs:
-- C++
 helpviewer_keywords:
 - I/O [CRT], low-level
 - I/O [CRT], functions
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - file handles [C++]
 - file handles [C++], I/O functions
 ms.assetid: 53e11bdd-6720-481c-8b2b-3a3a569ed534
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8134ea416f94def7e985a4d63cc61d740924317a
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 25a61fd7bd033accbbae11fafbd44a0282649e8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235301"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656930"
 ---
 # <a name="low-level-io"></a>Düşük Düzey G/Ç
 

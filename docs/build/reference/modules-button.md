@@ -1,25 +1,15 @@
 ---
-title: Modüller düğmesi | Microsoft Docs
-ms.custom: ''
+title: Modüller Düğmesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Modules button
 ms.assetid: 51552765-865a-4acc-aeae-f78afb73289a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6d8bc890bba56835455960e706dea23c80cf395
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7e013e6ee42086f1b52d49c34e01bf18f27e0da4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663846"
 ---
 # <a name="modules-button"></a>Modüller Düğmesi
 

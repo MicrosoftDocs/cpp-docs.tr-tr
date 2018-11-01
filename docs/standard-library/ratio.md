@@ -1,10 +1,6 @@
 ---
-title: '&lt;Oran&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Oranı&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - ratio/std::mega
 - ratio/std::peta
@@ -34,19 +30,13 @@ f1_keywords:
 - ratio/std::exa
 - ratio/std::deci
 - ratio/std::deca
-dev_langs:
-- C++
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53f3e618378abd70506e2fed45767c7c856320b0
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 4279aa75bf4e9b8a0c7a86f102f70164bbb620e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609010"
 ---
 # <a name="ltratiogt"></a>&lt;Oranı&gt;
 

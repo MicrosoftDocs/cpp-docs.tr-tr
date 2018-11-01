@@ -1,15 +1,9 @@
 ---
-title: Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;) | Microsoft Docs
-ms.custom: ''
+title: Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 ms.date: 08/13/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - <<
 - '>>'
-dev_langs:
-- C++
 helpviewer_keywords:
 - << operator [C++], with specific objects
 - left shift operators [C++]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3500c2bd8a0245f0ecf5db1337502f05699a6509
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2f118c11aab9fb2bbdd6cfa4f23425077b382b23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565854"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 

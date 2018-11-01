@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4439 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4439
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4439
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4439
 ms.assetid: 9449958f-f407-4824-829b-9e092f2af97d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 646b057f3f25bec8b686b08d50f0e473542ddcfc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d604c234b9445a7e5304118124620f0057f30975
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541745"
 ---
 # <a name="compiler-warning-c4439"></a>Derleyici Uyarısı C4439
 

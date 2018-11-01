@@ -1,27 +1,17 @@
 ---
-title: = | Microsoft Docs
-ms.custom: ''
+title: =
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - =
-dev_langs:
-- C++
 helpviewer_keywords:
 - = directive
 ms.assetid: 285fa799-28d2-49f2-9a80-d701185f4f7b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cfa60cf90d5a28acee467887ede2810cdef0bef5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c0698b1f41a51873a5ed143bdc86f2d85ac12f37
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616361"
 ---
 # <a name=""></a>=
 

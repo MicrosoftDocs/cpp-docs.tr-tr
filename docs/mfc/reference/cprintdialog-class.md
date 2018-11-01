@@ -1,10 +1,6 @@
 ---
-title: CPrintDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPrintDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPrintDialog
 - AFXDLGS/CPrintDialog
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXDLGS/CPrintDialog::PrintRange
 - AFXDLGS/CPrintDialog::PrintSelection
 - AFXDLGS/CPrintDialog::m_pd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPrintDialog [MFC], CPrintDialog
 - CPrintDialog [MFC], CreatePrinterDC
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CPrintDialog [MFC], PrintSelection
 - CPrintDialog [MFC], m_pd
 ms.assetid: 5bdb2424-adf8-433d-a97c-df11a83bc4e4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61e2ea655c25b15982f3434437bc3bdc3eaf310f
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 3e86ce3e0179ff7c7a47a7083b6c168fea91ccbc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204658"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662442"
 ---
 # <a name="cprintdialog-class"></a>CPrintDialog sınıfı
 

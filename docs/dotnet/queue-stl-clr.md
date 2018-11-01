@@ -1,9 +1,6 @@
 ---
-title: Kuyruk (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: sıraya al (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::queue
@@ -34,8 +31,6 @@ f1_keywords:
 - cliext::queue::size_type
 - cliext::queue::to_array
 - cliext::queue::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - <queue> header [STL/CLR]
 - queue class [STL/CLR]
@@ -68,17 +63,12 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: e3339a678e7d2443702995d09837c7efbb40005d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2cf0467c2b4799c2009f866b7aa22be5e421f762
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569623"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 

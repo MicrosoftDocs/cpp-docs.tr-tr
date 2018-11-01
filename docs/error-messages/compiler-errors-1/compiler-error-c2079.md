@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2079 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2079
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2079
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2079
 ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ddea9a8651a62f7cbb857e1d53962142471c2cb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 68435610680e3b21415a1d9439a8133fd1e2557f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032191"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621669"
 ---
 # <a name="compiler-error-c2079"></a>Derleyici Hatası C2079
 

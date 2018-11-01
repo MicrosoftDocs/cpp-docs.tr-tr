@@ -1,20 +1,13 @@
 ---
-title: Arabirimler (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Arabirimler (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c09bcf1bd6ce612df9d87483ae594729419d87ee
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 33fe0df457a4f1bab3a7cffab585501364d5750c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107482"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626635"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C + +/ CX)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2162 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2162
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2162
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2162
 ms.assetid: 34923628-d35e-48ab-9072-b95e3b5f6b45
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48d59ed5f0bf85befac0f8c462620a23faa08f98
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 02c0101324b28ebe548c38c6dc617faaa62315b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054005"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602412"
 ---
 # <a name="compiler-error-c2162"></a>Derleyici Hatası C2162
 

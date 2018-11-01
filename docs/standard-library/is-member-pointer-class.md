@@ -1,28 +1,18 @@
 ---
-title: is_member_pointer sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_member_pointer Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_member_pointer
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_member_pointer class
 - is_member_pointer
 ms.assetid: da07ff4e-9ee0-4baa-ad93-1741f10913d1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bdc179413b3e5d77646be4ccb98f23bcff407fb7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 34a89f508e0dfa8b31f4e811e8edb3a0a4ba0eaf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633557"
 ---
 # <a name="ismemberpointer-class"></a>is_member_pointer Sınıfı
 

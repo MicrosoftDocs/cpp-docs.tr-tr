@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2066 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2066
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2066
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2066
 ms.assetid: f1efc63f-948a-410b-bf6e-ba250d52cd38
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc9945cfd938b79784b3e29b484133365176e758
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b8576614e76ddad06fa579c442032e0a5105afe3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086999"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610359"
 ---
 # <a name="compiler-error-c2066"></a>Derleyici Hatası C2066
 

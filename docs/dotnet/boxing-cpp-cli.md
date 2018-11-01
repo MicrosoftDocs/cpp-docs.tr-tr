@@ -1,24 +1,13 @@
 ---
-title: Kutulama (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Kutulama (C++/CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f4ee27a8-6a34-432d-b9ec-39285d513b23
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 4c513b0148e2553440e02f9b0d255a0d5750e2d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3f756eaef59c24ca5b82c485bd8352dffe9fb1db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614506"
 ---
 # <a name="boxing-ccli"></a>Kutulama (C++/CLI)
 

@@ -1,26 +1,16 @@
 ---
-title: Dosyaları kapatma | Microsoft Docs
-ms.custom: ''
+title: Dosyaları Kapatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, file operations
 - files [MFC], closing
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c392ef728e1d796a02cfa32edc2c3e8c74d083b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 04e5084615b1f1cf85d9f41e2c4dcc84910b9d05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426243"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636273"
 ---
 # <a name="closing-files"></a>Dosyaları Kapatma
 

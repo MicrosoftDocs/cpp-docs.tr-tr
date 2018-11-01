@@ -1,29 +1,19 @@
 ---
-title: __rdtsc | Microsoft Docs
-ms.custom: ''
+title: __rdtsc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __rdtsc
-dev_langs:
-- C++
 helpviewer_keywords:
 - __rdtsc intrinsic
 - rdtsc instruction
 - Read Time Stamp Counter instruction
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d10bf2392d7e469f8f9a8a113b96e0cf2be88a50
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5f058eaf6587b74f5a75044416d23ac6b64fb415
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582071"
 ---
 # <a name="rdtsc"></a>__rdtsc
 

@@ -1,28 +1,17 @@
 ---
-title: Varolan ADO kayıt kümesini kullanma | Microsoft Docs
-ms.custom: ''
+title: Varolan ADO Kayıt Kümesini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ADO recordsets [C++]
 - OLE DB consumer templates, ADO recordsets
 - recordsets [C++], using in OLE DB
 ms.assetid: a9b1de8a-d379-49b1-a26e-578741e9f6a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 1433b51a6dfe6f558b98360812e694d42ebfb9f5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 62e56b818a766bf3b7efddf9243ffd47ad2cb46f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50051959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610606"
 ---
 # <a name="using-an-existing-ado-recordset"></a>Varolan ADO Kayıt Kümesini Kullanma
 

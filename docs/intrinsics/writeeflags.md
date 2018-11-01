@@ -1,27 +1,17 @@
 ---
-title: __writeeflags | Microsoft Docs
-ms.custom: ''
+title: __writeeflags
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __writeeflags
-dev_langs:
-- C++
 helpviewer_keywords:
 - __writeeflags intrinsics
 ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 875945c4116f99a0a7e8ef53666f432987ba0deb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8509bf37019d1525cdaca33bf1819d85ace7d75a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600050"
 ---
 # <a name="writeeflags"></a>__writeeflags
 

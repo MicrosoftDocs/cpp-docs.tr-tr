@@ -1,25 +1,15 @@
 ---
-title: İşlev işaretçileri | Microsoft Docs
-ms.custom: ''
+title: İşlev İşaretçileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - function pointers, x64
 ms.assetid: 874839ac-ffcd-419f-bcbe-6d492a5c3a61
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96bca27f56122f677eb790e4fbc9140a27b01668
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 79db5219cc448eb660f6d4f4234521ac864a47f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703475"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656020"
 ---
 # <a name="function-pointers"></a>İşlev İşaretçileri
 

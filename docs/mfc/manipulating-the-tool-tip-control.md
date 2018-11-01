@@ -1,26 +1,16 @@
 ---
-title: Araç ipucunu denetimini düzenleme | Microsoft Docs
-ms.custom: ''
+title: Araç İpucunu Denetimini Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CToolTipCtrl class [MFC], manipulating tool tip attributes
 - tool tips [MFC], attributes
 ms.assetid: 3600afe5-712a-4b56-8456-96e85fe879af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 336ba8466e1d1eefbd07d35c4856b273faea7537
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2624f6c1da0e771b34d590d787c00e53ee6ff62e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377376"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625933"
 ---
 # <a name="manipulating-the-tool-tip-control"></a>Araç İpucunu Denetimini Düzenleme
 

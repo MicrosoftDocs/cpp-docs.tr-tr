@@ -1,28 +1,18 @@
 ---
-title: Bir MFC sınıfı ekleme | Microsoft Docs
-ms.custom: ''
+title: MFC Sınıfı Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.classes.adding.mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [MFC], adding MFC
 - MFC, adding classes
 ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86e42ab5c2e8e15f5f56687b5ca99d160270017b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f9bed3814c4489cf3850ccab97efb23caeb51730
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436370"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640810"
 ---
 # <a name="adding-an-mfc-class"></a>MFC Sınıfı Ekleme
 

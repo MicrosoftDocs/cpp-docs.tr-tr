@@ -1,10 +1,6 @@
 ---
-title: CAnimateCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimateCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimateCtrl
 - AFXCMN/CAnimateCtrl
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXCMN/CAnimateCtrl::Play
 - AFXCMN/CAnimateCtrl::Seek
 - AFXCMN/CAnimateCtrl::Stop
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimateCtrl [MFC], CAnimateCtrl
 - CAnimateCtrl [MFC], Close
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4e52ff062f8ba22eddc7a87e182b267b006f3094
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5bbd59101815d18cae92b9996aff54f0cadaf9ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608435"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 

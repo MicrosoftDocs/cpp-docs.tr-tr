@@ -1,28 +1,18 @@
 ---
-title: greater yapısı | Microsoft Docs
-ms.custom: ''
+title: greater Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::greater
-dev_langs:
-- C++
 helpviewer_keywords:
 - greater struct
 - greater function
 ms.assetid: ebc348e1-edcd-466b-b21a-db95bd8f9079
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e467f150135fd9960747ec6bb25fd44fd8ae7e7b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c6c47ae6511f815fe31f02c08e94b23b6f78f27c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106128"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613115"
 ---
 # <a name="greater-struct"></a>greater Yapısı
 

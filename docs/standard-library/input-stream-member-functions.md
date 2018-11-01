@@ -1,26 +1,16 @@
 ---
-title: Üye işlevleri Stream giriş | Microsoft Docs
-ms.custom: ''
+title: Giriş Akışı Üye İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - input stream objects
 - input streams, member functions
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57288e7eb85e3d23fe8790ac3097cab82acdcf8b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b046ea1995d5a8eaa39dced9feb7a5e4c422c253
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663989"
 ---
 # <a name="input-stream-member-functions"></a>Giriş Akışı Üye İşlevleri
 

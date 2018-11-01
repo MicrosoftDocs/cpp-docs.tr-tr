@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2050 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2050
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2050
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2050
 ms.assetid: 66aaed7d-00db-4ce1-a9d6-4447c1cf07ce
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3bae3c9478d83693ecab77cdde724a1f0ef6772
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 99091452c2fc845ba396d7a8b290c2c857146257
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106031"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644869"
 ---
 # <a name="compiler-error-c2050"></a>Derleyici Hatası C2050
 

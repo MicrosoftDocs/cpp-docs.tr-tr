@@ -1,23 +1,13 @@
 ---
-title: Örnek Program | Microsoft Docs
-ms.custom: ''
+title: Örnek Program
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: fc22ef82-9caa-425f-b201-2891bc123d1f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42bf8199ecb75f6bd4b1a0281d81b7ef2841123a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31e8f822462dad7b3935548c9c25e7334a82b377
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608629"
 ---
 # <a name="example-program"></a>Örnek Program
 

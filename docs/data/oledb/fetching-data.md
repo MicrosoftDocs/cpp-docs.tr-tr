@@ -1,29 +1,18 @@
 ---
-title: Veri getirme | Microsoft Docs
-ms.custom: ''
+title: Veri Getirme
 ms.date: 10/19/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - data [C++], fetching
 - rowsets [C++], fetching
 - fetching
 - OLE DB consumer templates [C++], fetching data
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4f0467d322242bb222e5365b45a57e1aa2fe2943
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 441f036d1677806e81bc419ec6a45e810e63a34f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49807477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651925"
 ---
 # <a name="fetching-data"></a>Veri Getirme
 

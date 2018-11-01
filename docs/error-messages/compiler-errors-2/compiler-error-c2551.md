@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2551 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2551
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2551
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2551
 ms.assetid: 6f48b91d-635b-4eef-b13c-1bf2056c1053
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f5570c0cd7e8bcaf464c840f0fc71dbcfd44556
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 945062d7723d2c9879aa87eaccf7855d63920a6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108644"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611152"
 ---
 # <a name="compiler-error-c2551"></a>Derleyici Hatası C2551
 

@@ -1,23 +1,13 @@
 ---
-title: Ham sözde işlemler | Microsoft Docs
-ms.custom: ''
+title: Ham Sözde İşlemler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4def1a0e-ec28-4736-91fb-fac95fba1f36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7b05a4f9d109809161df7cde643439c281121f62
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 04dfe4d59c05dfcf22d0e64063fbc4953cbcb2f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703267"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538040"
 ---
 # <a name="raw-pseudo-operations"></a>Ham Sözde İşlemler
 

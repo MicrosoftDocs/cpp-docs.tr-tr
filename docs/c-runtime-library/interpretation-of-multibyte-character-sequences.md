@@ -1,27 +1,17 @@
 ---
-title: Çok baytlı karakter sıralarının yorumu | Microsoft Docs
-ms.custom: ''
+title: Çok Baytlı Karakter Sıralarının Yorumu
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - c.character.multibyte
-dev_langs:
-- C++
 helpviewer_keywords:
 - MBCS [C++], locale code page
 ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86fc93b74f661ac0829c0ed5925cb9cf78a8876e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 79d053029edcb357f791dade1ec20f562dce3c16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615006"
 ---
 # <a name="interpretation-of-multibyte-character-sequences"></a>Çok Baytlı Karakter Sıralarının Yorumu
 

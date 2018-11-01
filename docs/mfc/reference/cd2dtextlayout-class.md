@@ -1,10 +1,6 @@
 ---
-title: CD2DTextLayout sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DTextLayout sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DTextLayout
 - AFXRENDERTARGET/CD2DTextLayout
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DTextLayout::SetFontFamilyName
 - AFXRENDERTARGET/CD2DTextLayout::SetLocaleName
 - AFXRENDERTARGET/CD2DTextLayout::m_pTextLayout
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DTextLayout [MFC], CD2DTextLayout
 - CD2DTextLayout [MFC], Create
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CD2DTextLayout [MFC], SetLocaleName
 - CD2DTextLayout [MFC], m_pTextLayout
 ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a699744955088ad49c0e701166cf368695354fac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 378c96622144a4acac27785cef844f0c1d21b98b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402206"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630951"
 ---
 # <a name="cd2dtextlayout-class"></a>CD2DTextLayout sınıfı
 

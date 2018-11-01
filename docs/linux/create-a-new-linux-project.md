@@ -1,23 +1,13 @@
 ---
-title: Visual Studio'da yeni bir C++ Linux projesi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'da yeni bir C++ Linux projesi oluşturma
 ms.date: 09/12/2018
-ms.technology:
-- cpp-linux
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: 71faf00e5acb980b9ab6f5cafa6a81bb360e7ea2
-ms.sourcegitcommit: 8c2de32e96c84d0147af3cce1e89e4f28707ff12
+ms.openlocfilehash: 394fc5727035dd5a65b67ebf26a925fd3484582e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623034"
 ---
 # <a name="create-a-new-linux-project"></a>Yeni Linux projesi oluşturma
 

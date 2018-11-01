@@ -1,27 +1,17 @@
 ---
-title: Etkin belge sunucuları | Microsoft Docs
-ms.custom: ''
+title: Etkin Belge Sunucuları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - active documents [MFC], servers
 - servers [MFC], active document
 - active document servers [MFC]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2eca3352a6f72435a2dc18b2a7c3993836d7d9f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ad9b43444cfa18698371d93acb858c0d929c30bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657678"
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 

@@ -1,20 +1,13 @@
 ---
-title: Visual C++ Dil Başvurusu (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Dil Başvurusu (C + +/ CX)
 ms.date: 09/15/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 578df738d2c601c82f530ee32ae30284f6dac5ef
-ms.sourcegitcommit: e462e78a2dac06a0a539299facf34cdaeaf4d08c
+ms.openlocfilehash: 97d4f6391a02dd88e15c8fa4145539ab41a4dae3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49401415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600011"
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ Dil Başvurusu (C + +/ CX)
 

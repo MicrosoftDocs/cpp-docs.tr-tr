@@ -1,29 +1,19 @@
 ---
-title: -ALLOWISOLATION | Microsoft Docs
-ms.custom: ''
+title: /ALLOWISOLATION
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /ALLOWISOLATION
-dev_langs:
-- C++
 helpviewer_keywords:
 - -ALLOWISOLATION editbin option
 - /ALLOWISOLATION editbin option
 - ALLOWISOLATION editbin option
 ms.assetid: 91430344-f64f-491a-a5a5-7ea3b21cbe68
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 07414c86663ea6143a471691b01e584cdc033258
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ab07e3ac3f8c154ffa62a25ab8bad967b255e2e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604980"
 ---
 # <a name="allowisolation"></a>/ALLOWISOLATION
 

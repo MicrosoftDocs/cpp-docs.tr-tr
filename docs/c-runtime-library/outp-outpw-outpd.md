@@ -1,10 +1,6 @@
 ---
-title: _outp, _outpw, _outpd | Microsoft Docs
-ms.custom: ''
+title: _outp, _outpw, _outpd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _outpd
 - _outp
@@ -23,8 +19,6 @@ f1_keywords:
 - _outpd
 - _outp
 - outpd
-dev_langs:
-- C++
 helpviewer_keywords:
 - outpw function
 - words
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 604fe4a5fd3daa2cfef7698cd044c7edc56232b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cb3e0c9fefd62b1af3c7dd6dda01278206d1bf49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069645"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595526"
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
 

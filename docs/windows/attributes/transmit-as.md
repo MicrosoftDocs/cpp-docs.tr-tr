@@ -1,28 +1,17 @@
 ---
-title: transmit_as (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: transmit_as (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.transmit_as
-dev_langs:
-- C++
 helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 28b95974379a01b4ecd1a07edeb2da35562d82df
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 546b4c4b32837b46c48eafbe12e991bb6c1630ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079694"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573269"
 ---
 # <a name="transmitas"></a>transmit_as
 

@@ -1,12 +1,6 @@
 ---
-title: Veri yönergeleri ve işleçler satır içi bütünleştirilmiş kodda | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Derlemede Veri Yönergeleri ve İşleçler
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data directives [C++]
 - __asm keyword [C++], referencing limitations
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), operators
 - structures [C++], MASM
 ms.assetid: fb7410c7-156a-4131-bcfc-211aa70533e3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6aff2f4c5ce5e7f5592aa9ec707d002c57f0eac0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 52e20c37f3066122a062e3fc9c64ced576b6c302
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577989"
 ---
 # <a name="data-directives-and-operators-in-inline-assembly"></a>Satır İçi Derlemede Veri Yönergeleri ve İşleçler
 

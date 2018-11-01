@@ -1,27 +1,17 @@
 ---
-title: unary_negate sınıfı | Microsoft Docs
-ms.custom: ''
+title: unary_negate Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::unary_negate
-dev_langs:
-- C++
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 883bc55cc9b820c95a98e1fcc235fb53f22d7e9d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: acb0eaa446bf21a014d8be8c4dbeaedf0f282a1a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716201"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648194"
 ---
 # <a name="unarynegate-class"></a>unary_negate Sınıfı
 

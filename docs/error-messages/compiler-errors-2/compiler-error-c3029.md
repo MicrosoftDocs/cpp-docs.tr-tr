@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3029 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3029
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3029
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3029
 ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dfeacd011f4df88820de6746707ec6b1300795c3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a003a0b8fcba3609c355ae467a11b4024a0529d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658386"
 ---
 # <a name="compiler-error-c3029"></a>Derleyici Hatası C3029
 

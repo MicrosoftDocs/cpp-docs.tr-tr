@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3206 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3206
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3206
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3206
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2eb61c47b4366dd1ece4060937fa15fcab43fc3d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 665244cbfc87f32274f9eaf9afacfb1caad50659
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640056"
 ---
 # <a name="compiler-error-c3206"></a>Derleyici Hatası C3206
 

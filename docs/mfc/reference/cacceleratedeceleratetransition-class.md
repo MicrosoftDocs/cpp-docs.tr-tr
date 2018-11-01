@@ -1,28 +1,18 @@
 ---
-title: CAccelerateDecelerateTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAccelerateDecelerateTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAccelerateDecelerateTransition
 - afxanimationcontroller/CAccelerateDecelerateTransition
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAccelerateDecelerateTransition class [MFC]
 ms.assetid: b1f31ee8-bb11-4ccc-b124-365fb02b025c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0133a24b5253baa4d7292cc54d02df5201abd63
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: f37670d6e965cb034b81a6fb9ec8cc252bd5ee31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614701"
 ---
 # <a name="cacceleratedeceleratetransition-class"></a>CAccelerateDecelerateTransition sınıfı
 

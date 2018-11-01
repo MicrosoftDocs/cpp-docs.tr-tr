@@ -1,10 +1,6 @@
 ---
-title: CMFCBaseTabCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCBaseTabCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCBaseTabCtrl
 - AFXBASETABCTRL/CMFCBaseTabCtrl
@@ -124,8 +120,6 @@ f1_keywords:
 - AFXBASETABCTRL/CMFCBaseTabCtrl::CreateWrapper
 - AFXBASETABCTRL/CMFCBaseTabCtrl::m_bActivateTabOnRightClick
 - AFXBASETABCTRL/CMFCBaseTabCtrl::m_bAutoDestroyWindow
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], AddIcon
 - CMFCBaseTabCtrl [MFC], AddTab
@@ -244,16 +238,12 @@ helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], m_bActivateTabOnRightClick
 - CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1ef6e0c0df01807d23b89bc8cf9f6a35035b6f2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b01802439a7f7335561e331f87ad770d4e5313fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056093"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574297"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 

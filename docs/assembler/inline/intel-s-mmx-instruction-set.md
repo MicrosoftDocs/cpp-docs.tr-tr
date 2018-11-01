@@ -1,25 +1,16 @@
 ---
-title: Intel&#39;s MMX yönerge kümesi | Microsoft Docs
-ms.custom: ''
+title: Intel&#39;s MMX yönerge kümesi
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - MMX instruction set
 ms.assetid: 705deb2d-c3fd-4696-9e22-8bcf25866daf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95f3cb57fc5c046057a5efa568ce930f13ca3256
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3b2de7896c4a688c3428cddc13144a838f906557
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688359"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603872"
 ---
 # <a name="intel39s-mmx-instruction-set"></a>Intel&#39;s MMX yönerge kümesi
 

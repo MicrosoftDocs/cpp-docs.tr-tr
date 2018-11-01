@@ -1,29 +1,19 @@
 ---
-title: __Event | Microsoft Docs
-ms.custom: ''
+title: __event
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __event_cpp
 - __event
-dev_langs:
-- C++
 helpviewer_keywords:
 - __event keyword [C++]
 - events [C++], __event
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 393e6cca6db88dc4c5545b86b3ca9e39b75a6bc9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bd5f53e5d2b80b22c3a38f413c4fa79b27fa7026
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082316"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606485"
 ---
 # <a name="event"></a>__event
 

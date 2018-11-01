@@ -1,26 +1,18 @@
 ---
-title: 'Platform::Runtime:: InteropServices Namespace | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::Runtime:: InteropServices Namespace'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Runtime::InteropServices
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Runtime::InteropServices Namespace
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8345a8418a2ff08b8909a7c01bd177afa426709b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 42d2dd6978fda7a88459c015b86ad8c02fdfd06d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104101"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636572"
 ---
 # <a name="platformruntimeinteropservices-namespace"></a>Platform::Runtime:: InteropServices Namespace
 

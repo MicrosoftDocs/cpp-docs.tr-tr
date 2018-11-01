@@ -1,31 +1,21 @@
 ---
-title: CHeapPtr sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHeapPtr sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CHeapPtr
 - ATLCORE/ATL::CHeapPtr
 - ATLCORE/ATL::CHeapPtr::CHeapPtr
 - ATLCORE/ATL::CHeapPtr::Allocate
 - ATLCORE/ATL::CHeapPtr::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHeapPtr class
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ea4fd429395fc78f36d1f9b3244068c737be49a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8373d7ee0fc32b89891281e0fbd4b685ce40f0e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632381"
 ---
 # <a name="cheapptr-class"></a>CHeapPtr sınıfı
 

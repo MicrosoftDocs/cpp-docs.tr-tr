@@ -1,12 +1,6 @@
 ---
-title: 'Geçerli zaman: Otomasyon sınıfları | Microsoft Docs'
-ms.custom: ''
+title: 'Geçerli zaman: Otomasyon sınıfları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - time, setting current
 - current time, COleDateTime object
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - Automation classes, current time
 - time, getting current
 ms.assetid: cc967f17-1189-4cf3-85f9-1969462d5f72
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ead35da3c20630e93757787f54755dd383264d2
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 97984376057462daaebbf949e96131e91928a1ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596579"
 ---
 # <a name="current-time-automation-classes"></a>Geçerli zaman: Otomasyon sınıfları
 

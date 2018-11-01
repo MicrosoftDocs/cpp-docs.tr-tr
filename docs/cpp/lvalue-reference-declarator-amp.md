@@ -1,28 +1,18 @@
 ---
-title: 'Lvalue başvuru Bildirimcisi: &amp; | Microsoft Docs'
-ms.custom: ''
+title: 'Lvalue başvuru Bildirimcisi: &amp;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '&'
-dev_langs:
-- C++
 helpviewer_keywords:
 - reference operator
 - '& operator [C++], reference operator'
 ms.assetid: edf0513d-3dcc-4663-b276-1269795dda51
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28e5d247c866247b42da8937894fed878985be44
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7710b6f1efc2de770b26ad50923bde2ee5200f61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568176"
 ---
 # <a name="lvalue-reference-declarator-amp"></a>Lvalue başvuru Bildirimcisi: &amp;
 

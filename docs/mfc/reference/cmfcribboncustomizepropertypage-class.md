@@ -1,33 +1,23 @@
 ---
-title: CMFCRibbonCustomizePropertyPage sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonCustomizePropertyPage sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonCustomizePropertyPage
 - AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage
 - AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage
 - AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory
 - AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonCustomizePropertyPage [MFC], CMFCRibbonCustomizePropertyPage
 - CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory
 - CMFCRibbonCustomizePropertyPage [MFC], OnOK
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42c57d8ba06e5678b8385c102c70a23dcf12b18f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f667310208d88dff39364de480309b4bfea71d16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406724"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648090"
 ---
 # <a name="cmfcribboncustomizepropertypage-class"></a>CMFCRibbonCustomizePropertyPage sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CStringData sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStringData sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStringData
 - ATLSIMPSTR/ATL::CStringData
@@ -19,22 +15,16 @@ f1_keywords:
 - ATLSIMPSTR/ATL::nDataLength
 - ATLSIMPSTR/ATL::nRefs
 - ATLSIMPSTR/ATL::pStringMgr
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStringData class
 - shared classes, CStringData
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: effc4166fa25cec03ea62a5dd35a5396d2d2a3f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 24d1321c66fb6cebbd2e86da3e85fdb8e1a3d33d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589533"
 ---
 # <a name="cstringdata-class"></a>CStringData sınıfı
 

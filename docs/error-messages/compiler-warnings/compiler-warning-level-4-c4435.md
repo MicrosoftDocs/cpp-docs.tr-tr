@@ -1,23 +1,13 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4435 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4435
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 ms.assetid: a04524af-2b71-4ff9-9729-d9d1d1904ed7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c9a69e0d899e1a79c1d91b7c18c0eacaf66d32a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7db1d483f571289c5b890c223ba1e59ba3d1f41e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027303"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572334"
 ---
 # <a name="compiler-warning-level-4-c4435"></a>Derleyici Uyarısı (düzey 4) C4435
 

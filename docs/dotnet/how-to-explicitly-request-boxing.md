@@ -1,26 +1,15 @@
 ---
-title: 'Nasıl yapılır: açık şekilde istek paketleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Açık Şekilde İstek Paketleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - boxing, explicitly requesting
 ms.assetid: 1359e6e5-162d-4f5d-9b6a-1690d93df3ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 14155973da6c733fba375300fd3e29ca3a8762ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ae0d26157bce1892888ea64d953d4c020c0bec87
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636338"
 ---
 # <a name="how-to-explicitly-request-boxing"></a>Nasıl yapılır: Açık Şekilde İstek Paketleme
 

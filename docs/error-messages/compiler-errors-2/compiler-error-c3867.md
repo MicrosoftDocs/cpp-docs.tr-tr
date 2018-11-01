@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3867 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3867
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3867
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55545c0353b6d7442bcf3c4721053a60dd2bb6a5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9308e238c86c7b8a957720228a823688fac289d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571203"
 ---
 # <a name="compiler-error-c3867"></a>Derleyici Hatası C3867
 

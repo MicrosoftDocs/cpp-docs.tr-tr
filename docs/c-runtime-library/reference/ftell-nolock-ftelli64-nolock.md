@@ -1,10 +1,6 @@
 ---
-title: _ftell_nolock, _ftelli64_nolock | Microsoft Docs
-ms.custom: ''
+title: _ftell_nolock, _ftelli64_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ftelli64_nolock
 - _ftell_nolock
@@ -26,8 +22,6 @@ f1_keywords:
 - ftelli64_nolock
 - ftell_nolock
 - _ftell_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - ftelli64_nolock function
 - _ftelli64_nolock function
@@ -35,20 +29,16 @@ helpviewer_keywords:
 - ftell_nolock function
 - file pointers [C++], getting current position
 ms.assetid: 84e68b0a-32f8-4c4a-90ad-3f2387685ede
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 15d1001b1f0465273771649404de306153edf920
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 58bfc8c7a8b8e820fdec09d52e24dfcb07f328f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398464"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580849"
 ---
 # <a name="ftellnolock-ftelli64nolock"></a>_ftell_nolock, _ftelli64_nolock
 
-İş parçacığı kilitlemeden dosya işaretçisini geçerli konumunu alır.
+İş parçacığını kilitlemeden, bir dosya işaretçisiyse, geçerli konumunu alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,29 +53,29 @@ __int64 _ftelli64_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 Hedef **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Aynı **ftell** ve **_ftelli64**. Daha fazla bilgi için bkz: [ftell, _ftelli64](ftell-ftelli64.md).
+Aynı **ftell** ve **_ftelli64**. Daha fazla bilgi için [ftell, _ftelli64](ftell-ftelli64.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler kilitleme olmayan sürümleri **ftell** ve **_ftelli64**sırasıyla. Aynı **ftell** ve **_ftelli64** dışında diğer iş parçacıkları tarafından girişime korunmaz. Bunlar başka bir iş parçacığı kilitleme zahmetine değil çünkü bu işlevler daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+Kilitleme olmayan bu işlevlerin sürümleri **ftell** ve **_ftelli64**sırasıyla. Bunlar aynı olan **ftell** ve **_ftelli64** hariç, bunlar başka iş parçacıklarının engellemelerinden korunmamaları. Bu işlevler, diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
+|İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
 |**ftell_nolock**|\<stdio.h >|\<errno.h >|
 |**_ftelli64_nolock**|\<stdio.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetpos](fgetpos.md)<br/>
 [fseek, _fseeki64](fseek-fseeki64.md)<br/>
 [_lseek, _lseeki64](lseek-lseeki64.md)<br/>

@@ -1,29 +1,19 @@
 ---
-title: (C++) bool | Microsoft Docs
-ms.custom: ''
+title: bool (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - bool_cpp
 - __BOOL_DEFINED
-dev_langs:
-- C++
 helpviewer_keywords:
 - bool keyword [C++]
 - __BOOL_DEFINED macro
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce07cfce4b7361486489c2f00c3e4b395c71e200
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e481cb9de7c80d147179efceab2fda9b160f3c21
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058516"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638132"
 ---
 # <a name="bool-c"></a>bool (C++)
 

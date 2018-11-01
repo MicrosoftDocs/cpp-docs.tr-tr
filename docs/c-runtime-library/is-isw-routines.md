@@ -1,10 +1,6 @@
 ---
-title: is, isw rutinleri | Microsoft Docs
-ms.custom: ''
+title: is, isw Rutinleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr110_clr0400.dll
 - msvcr90.dll
@@ -16,22 +12,16 @@ apitype: DLLExport
 f1_keywords:
 - isw
 - is
-dev_langs:
-- C++
 helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db047c2b16eb67f086bc26976783e829189d4266
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 65dc5bbfbaeab59e91cdca23c4f0f01b5ef7ebbb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095111"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620180"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 

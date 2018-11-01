@@ -1,27 +1,17 @@
 ---
-title: WORD | Microsoft Docs
-ms.custom: ''
+title: WORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - WORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - WORD directive
 ms.assetid: 36f7ac49-480d-4d67-8967-3a62acb8f4df
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50cb0f9748d5c6d1bdae07b5671c79c6794a371c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a707c1623c6aaab854790dccd444e854687b30ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687766"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638652"
 ---
 # <a name="word"></a>WORD
 

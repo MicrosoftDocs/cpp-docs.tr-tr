@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3538 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3538
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3538
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3538
 ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2034ebfcdf6a6d0ca37f649223f632fc1bbcd51
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 50c6d108c8f2bc42a624ce6376d66111df00478b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043163"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608920"
 ---
 # <a name="compiler-error-c3538"></a>Derleyici Hatası C3538
 

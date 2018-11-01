@@ -1,12 +1,6 @@
 ---
-title: 'Nasıl yapılır: tür kullanımı uyumlu koleksiyon yapma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - type-safe collections [MFC]
 - serializing collection-class elements [MFC]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7368e067e1324c3263440a7a6b165099c870735
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 12ecec7562a9241fab30b859727a22e467e6eeb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581798"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
 

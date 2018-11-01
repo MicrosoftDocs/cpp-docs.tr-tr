@@ -1,31 +1,21 @@
 ---
-title: -ENTRY (giriş noktası simgesi) | Microsoft Docs
-ms.custom: ''
+title: /ENTRY (Giriş Noktası Simgesi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /entry
 - VC.Project.VCLinkerTool.EntryPointSymbol
-dev_langs:
-- C++
 helpviewer_keywords:
 - starting address
 - -ENTRY linker option
 - /ENTRY linker option
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53f5a18b061cbd956731ced6788e86f871ea97bd
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 21e17d9ec9c4b145af8909730e5f799de9b72ce2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719582"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615533"
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY (Giriş Noktası Simgesi)
 
@@ -72,7 +62,7 @@ Kendi ölçümünüzü tanımlayın hakkında bilgi için `DllMain` giriş nokta
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EntryPointSymbol%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EntryPointSymbol%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

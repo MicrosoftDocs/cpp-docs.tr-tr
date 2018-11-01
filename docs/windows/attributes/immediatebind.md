@@ -1,28 +1,17 @@
 ---
-title: immediatebind (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: immediatebind (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.immediatebind
-dev_langs:
-- C++
 helpviewer_keywords:
 - immediatebind attribute
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 76a0a6baec4f775d2ec4f7ca0236530125fe7973
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 35e8ea4a761fd3cf36da335dc8519ba71772b4e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647736"
 ---
 # <a name="immediatebind"></a>immediatebind
 

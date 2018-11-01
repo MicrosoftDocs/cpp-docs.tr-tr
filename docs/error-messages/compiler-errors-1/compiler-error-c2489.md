@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2489 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2489
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2489
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2489
 ms.assetid: 67d8cd98-db7e-4f7f-86b4-4af7bc89ec8b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 633a15cfdc05ec2691570b5ecdd91eaf8af9ca78
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e4024455e17956fc67917e92a3ca531eca5c5e04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652770"
 ---
 # <a name="compiler-error-c2489"></a>Derleyici Hatası C2489
 

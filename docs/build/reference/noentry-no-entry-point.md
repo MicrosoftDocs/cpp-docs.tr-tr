@@ -1,15 +1,9 @@
 ---
-title: -NOENTRY (giriş noktası yok) | Microsoft Docs
-ms.custom: ''
+title: /NOENTRY (Giriş Noktası Yok)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ResourceOnlyDLL
 - /noentry
-dev_langs:
-- C++
 helpviewer_keywords:
 - entry points [C++], linker specifying
 - -NOENTRY linker option
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - /NOENTRY linker option [C++]
 - DLLs [C++], creating
 ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd90cb7824050e9bd0110e75f7120c4f004b8b47
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fef4340fa4bb130ac54f4d5e66d4cd4d2f2a3049
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607371"
 ---
 # <a name="noentry-no-entry-point"></a>/NOENTRY (Giriş Noktası Yok)
 
@@ -53,7 +43,7 @@ BAĞLANTI bir başvuru önleme için bu seçeneği kullanın `_main` DLL içine.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.
+1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

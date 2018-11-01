@@ -1,10 +1,6 @@
 ---
-title: exp, expf, expl | Microsoft Docs
-ms.custom: ''
+title: exp, expf, expl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - expf
 - expl
@@ -27,8 +23,6 @@ f1_keywords:
 - expf
 - expl
 - exp
-dev_langs:
-- C++
 helpviewer_keywords:
 - exponential calculations
 - expf function
@@ -36,20 +30,16 @@ helpviewer_keywords:
 - calculating exponentials
 - exp function
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9569eee475a80fc5c08c2ec1d099cf627c7b5fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b9fb38adcc442e60864ec632cd92793f16e47502
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596761"
 ---
 # <a name="exp-expf-expl"></a>exp, expf, expl
 
-Üstel hesaplar.
+Üssünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,32 +64,32 @@ long double expl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Kayan nokta exponentiate için Doğal logaritmanın tabanı değer *e* tarafından.
+Kayan nokta exponentiate için doğal logaritma tabanı değer *e* tarafından.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Exp** işlevler döndürür üstel parametresinin değeri kayan nokta, *x*, başarılı olursa. Diğer bir deyişle, sonucu olan *e*<sup>*x*</sup>, burada *e* ve Doğal logaritmanın tabanıdır. Taşma, işlev dönüşleri INF (sonsuz) ve underflow, **exp** 0 döndürür.
+**Exp** işlevler kayan nokta parametresi üstel değerini döndürür *x*, başarılı olursa. Diğer bir deyişle, sonucudur *e*<sup>*x*</sup>burada *e* ve Doğal logaritmanın tabanıdır. Taşmada, INF (sonsuz) işlevi döndürür ve taşma, **exp** 0 döndürür.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± Sessiz NaN, belirsiz|Yok.|_DOMAIN|
 |± Sonsuz|GEÇERSİZ|_DOMAIN|
-|x ≥ 7.097827e + 002|KESİN OLMAYAN + TAŞMASI|TAŞMA|
-|X ≤-7.083964e + 002|INEXACT+UNDERFLOW|UNDERFLOW|
+|x ≥ 7.097827e + 002|FİLTRESİNİN + TAŞMASI|TAŞMA|
+|X ≤-7.083964e + 002|INEXACT+UNDERFLOW|YETERSİZ KALMASI|
 
-**Exp** işlevi Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. Bkz: [_set_SSE2_enable](set-sse2-enable.md) ilgili bilgileri ve SSE2 uygulama kullanılmasındaki kısıtlamalar.
+**Exp** işlevi, Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulaması vardır. Bkz: [_set_SSE2_enable](set-sse2-enable.md) bilgi ve SSE2 uygulama kullanılmasındaki kısıtlamalar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ verir aşırı yüklemesi, aşırı çağırması **exp** süren bir **float** veya **uzun çift** bağımsız değişkeni. Bir C programı **exp** her zaman alan ve döndüren bir **çift**.
+C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **exp** süren bir **float** veya **uzun çift** bağımsız değişken. C programında **exp** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
+|İşlev|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
 |--------------|---------------------|---|
 |**exp**, **expf**, **expl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

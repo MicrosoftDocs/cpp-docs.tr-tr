@@ -1,28 +1,18 @@
 ---
-title: remove_cv sınıfı | Microsoft Docs
-ms.custom: ''
+title: remove_cv Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::remove_cv
-dev_langs:
-- C++
 helpviewer_keywords:
 - remove_cv class
 - remove_cv
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 139526c689a54929d9e77b9c23c6ea34f2cc8449
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dcabf9b4687d473898dea98f1001647299a40b76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105815"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660687"
 ---
 # <a name="removecv-class"></a>remove_cv Sınıfı
 

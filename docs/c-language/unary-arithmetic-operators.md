@@ -1,12 +1,6 @@
 ---
-title: Birli aritmetik işleçler | Microsoft Docs
-ms.custom: ''
+title: Birli Aritmetik İşleçler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C], unary
 - tilde (~) one's complement operator
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - logical negation
 - '! operator, unary arithmetic operators'
 ms.assetid: 78c91415-d469-499e-9dfe-4435350fd333
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b16d68b6a787dac8c55fcb68190195e66013f980
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fb10bac4a7c0299bccd98249e08a6e270c2c5ffe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625010"
 ---
 # <a name="unary-arithmetic-operators"></a>Birli Aritmetik İşleçler
 

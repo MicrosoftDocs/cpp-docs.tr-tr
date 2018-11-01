@@ -1,10 +1,6 @@
 ---
-title: CMultiLock sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMultiLock sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMultiLock
 - AFXMT/CMultiLock
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXMT/CMultiLock::IsLocked
 - AFXMT/CMultiLock::Lock
 - AFXMT/CMultiLock::Unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMultiLock [MFC], CMultiLock
 - CMultiLock [MFC], IsLocked
 - CMultiLock [MFC], Lock
 - CMultiLock [MFC], Unlock
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 097f6173faad4f99f64c5dac45e2a0d1292a07eb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 27c0eb396ac1384b691f51bf7089f6820157cf8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613427"
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 

@@ -1,29 +1,19 @@
 ---
-title: ATL denetimi Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL Denetim Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.control.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding controls
 - controls [ATL], adding to projects
 - ATL Control Wizard
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dfadbfb887959aaad01c88cba7c3c04ef5f27873
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a7fd85263531968aeb4dd86534b4e67ddc553629
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066141"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598831"
 ---
 # <a name="atl-control-wizard"></a>ATL Denetim Sihirbazı
 

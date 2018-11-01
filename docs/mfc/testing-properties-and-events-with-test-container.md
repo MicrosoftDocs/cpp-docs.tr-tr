@@ -1,12 +1,6 @@
 ---
-title: Test kapsayıcısı ile özellikleri ve olayları test etme | Microsoft Docs
-ms.custom: ''
+title: Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - testing, test containers
 - tstcon32.exe
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], testing
 - properties [MFC], testing
 ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b00eb755ef0fba0037df8c6d1e99bfd25d13b263
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cf36514c6ce2cd25a49901165fcf919cffd5da7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633373"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme
 

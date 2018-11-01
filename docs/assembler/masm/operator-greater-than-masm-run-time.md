@@ -1,28 +1,18 @@
 ---
-title: İşleç &gt; (MASM çalışma zamanı) | Microsoft Docs
-ms.custom: ''
+title: İşleç &gt; (MASM çalışma zamanı)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator >
-dev_langs:
-- C++
 helpviewer_keywords:
 - '> operator, comparing specific objects'
 - operator >
 ms.assetid: f2244900-8ddf-4e8c-9ab0-68b9118a6f75
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae90dcacdbb32aefd0beaae8916a8d0da6b0a00c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c080609889093ac048b6f486d880701cd85f1c3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679689"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664756"
 ---
 # <a name="operator-gt-masm-run-time"></a>İşleç &gt; (MASM çalışma zamanı)
 

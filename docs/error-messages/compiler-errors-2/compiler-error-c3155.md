@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3155 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3155
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3155
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3155
 ms.assetid: b04a42e1-64e7-40f8-81fe-c7945348b2cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b4000c9e7d3f175c243d4d3761216f4acface8f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 85ee53dff7ae50717eabfd1ac6504ebb74deaa2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076482"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644370"
 ---
 # <a name="compiler-error-c3155"></a>Derleyici Hatası C3155
 

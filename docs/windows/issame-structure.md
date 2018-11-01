@@ -1,30 +1,20 @@
 ---
-title: Issame yapısı | Microsoft Docs
-ms.custom: ''
+title: IsSame Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::IsSame
 - internal/Microsoft::WRL::Details::IsSame::value
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::IsSame structure
 - Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2af59860016835f8e8dfddc9d0a77204ff866bd3
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b659f832756b79289181db34fa8d6fc0d974609d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161859"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610641"
 ---
 # <a name="issame-structure"></a>IsSame Yapısı
 

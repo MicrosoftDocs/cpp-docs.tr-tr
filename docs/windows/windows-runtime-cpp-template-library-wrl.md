@@ -1,24 +1,14 @@
 ---
-title: Windows çalışma zamanı C++ Şablon kitaplığı (WRL) | Microsoft Docs
-ms.custom: ''
+title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 541a9d5064e9bdf9c4ddb9b410ab4dc0277626b0
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 777e8226a12b3e57c136ea54d301ff7c9eb890a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204619"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641941"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 

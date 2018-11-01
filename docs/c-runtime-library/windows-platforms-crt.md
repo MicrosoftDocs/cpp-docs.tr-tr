@@ -1,14 +1,8 @@
 ---
-title: Windows platformları (CRT) | Microsoft Docs
-ms.custom: ''
+title: Windows Platformları (CRT)
 ms.date: 02/02/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.programs
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRT, compatibility
 - backward compatibility [C++], C run-time libraries
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - operating systems [C++]
 - Unicode [C++], Win32 platforms
 ms.assetid: 0aacaf45-6dc4-4908-bd52-57abac7b39f6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29976d0535d29fce926d7a12b920234548c8a98d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6f84922f8d477d3c45ba80d14049e81655890d53
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017295"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638405"
 ---
 # <a name="windows-platforms-crt"></a>Windows Platformları (CRT)
 

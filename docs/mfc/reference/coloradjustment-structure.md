@@ -1,27 +1,17 @@
 ---
-title: COLORADJUSTMENT yapısı | Microsoft Docs
-ms.custom: ''
+title: COLORADJUSTMENT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COLORADJUSTMENT
-dev_langs:
-- C++
 helpviewer_keywords:
 - COLORADJUSTMENT structure [MFC]
 ms.assetid: 67fc4e63-0e0e-4fcb-8c45-aa5ebfefa013
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 682bbe2e9a4987ca30614e9210198193de977e3e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4f25b8241c1862a9c12d405ee5d47d5553dd6e29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066298"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623515"
 ---
 # <a name="coloradjustment-structure"></a>COLORADJUSTMENT Yapısı
 

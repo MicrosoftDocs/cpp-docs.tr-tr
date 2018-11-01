@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2585 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2585
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2585
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2585
 ms.assetid: 05bb1a9c-28fb-4a88-a1b5-aea85ebdee1c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ec7b1e9c1e5e7894740cc80f9c030fa1ee26ec0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 812ab15aacd1f6a215c6a5beb7781983859fe858
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593264"
 ---
 # <a name="compiler-error-c2585"></a>Derleyici Hatası C2585
 

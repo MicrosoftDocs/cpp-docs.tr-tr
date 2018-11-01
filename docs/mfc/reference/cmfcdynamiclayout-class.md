@@ -1,10 +1,6 @@
 ---
-title: CMFCDynamicLayout sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDynamicLayout sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDynamicLayout
 - AFXLAYOUT/CMFCDynamicLayout
@@ -18,19 +14,13 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::IsEmpty
 - AFXLAYOUT/CMFCDynamicLayout::LoadResource
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
-dev_langs:
-- C++
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1313c50682a2d2baad124db512e7e0ad4b441284
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: da512b5e05f3d5ff0229cc44a0a8268148a43f82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640641"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout sınıfı
 

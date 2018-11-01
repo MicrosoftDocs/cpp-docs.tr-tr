@@ -1,30 +1,20 @@
 ---
-title: safe_cast (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: safe_cast (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - safe_cast
 - safe_cast_cpp
 - stdcli::language::safe_cast
-dev_langs:
-- C++
 helpviewer_keywords:
 - safe_cast keyword [C++]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2b8f9b1e40deadbc23fe19f02bf2aaef899c52a6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a65b39cbd658787324c1951fd1a53e4257f33a4a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056703"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443751"
 ---
 # <a name="safecast-ccli-and-ccx"></a>safe_cast (C + +/ CLI ve C + +/ CX)
 

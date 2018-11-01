@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2655 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2655
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2655
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2655
 ms.assetid: beaefa6e-51b3-4df9-9150-960f3fbf40e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 456fd31e6d618774bff13c9800d6a44ffd3deb73
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 094dabb5ad07796194ae391000ca1e9025602d93
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078692"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506775"
 ---
 # <a name="compiler-error-c2655"></a>Derleyici Hatası C2655
 

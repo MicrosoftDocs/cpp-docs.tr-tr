@@ -1,27 +1,16 @@
 ---
-title: Eklerken denetimi boyutlandırma | Microsoft Docs
-ms.custom: ''
+title: Eklerken Denetimi Boyutlandırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog box controls [C++], size
 - controls [C++], sizing
 ms.assetid: 06b1dd2b-0ba1-4e1f-adc3-cb73679f765e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e60803ec9696e541376aa8530cb4c01d32b9e569
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 205dd196d427e06abc36e4684533b8b1b66dc742
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418869"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607590"
 ---
 # <a name="sizing-a-control-while-you-add-it"></a>Eklerken Denetimi Boyutlandırma
 

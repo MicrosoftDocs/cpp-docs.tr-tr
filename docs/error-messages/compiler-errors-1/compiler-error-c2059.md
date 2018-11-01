@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2059 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2059
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2059
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2059
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 78640f61cb1d0f81fc405cbc3cfce16be0de5022
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 915121b28adbc97032d5949726dc6fd5d3ab5091
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632485"
 ---
 # <a name="compiler-error-c2059"></a>Derleyici Hatası C2059
 

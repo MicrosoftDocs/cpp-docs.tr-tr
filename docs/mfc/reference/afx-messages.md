@@ -1,10 +1,6 @@
 ---
-title: AFX iletileri | Microsoft Docs
-ms.custom: ''
+title: AFX İletileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - SB_LINELEFT
 - SB_THUMBTRACK
@@ -65,21 +61,15 @@ f1_keywords:
 - AFX_WM_CREATETOOLBAR
 - SB_THUMBPOSITION
 - AFX_WM_POSTSETPREVIEWFRAME
-dev_langs:
-- C++
 helpviewer_keywords:
 - AFX messages [MFC]
 ms.assetid: 3d601f3c-af6d-47d3-8553-34f1318fa74f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92f24c18de594cfe734b703ec13c3116b7b5d31b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45c6a9174cbd39c4c0c24ffbdfdefb9d184a3cc1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594694"
 ---
 # <a name="afx-messages"></a>AFX İletileri
 

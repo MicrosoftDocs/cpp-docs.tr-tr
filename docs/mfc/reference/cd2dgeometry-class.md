@@ -1,10 +1,6 @@
 ---
-title: CD2DGeometry sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DGeometry sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DGeometry
 - AFXRENDERTARGET/CD2DGeometry
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DGeometry::Tessellate
 - AFXRENDERTARGET/CD2DGeometry::Widen
 - AFXRENDERTARGET/CD2DGeometry::m_pGeometry
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DGeometry [MFC], CD2DGeometry
 - CD2DGeometry [MFC], Attach
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CD2DGeometry [MFC], Widen
 - CD2DGeometry [MFC], m_pGeometry
 ms.assetid: 3f95054b-fdb8-4e87-87f2-9fc3df7279ec
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50ec35fd568031e7e30ee7412fcf078be1088906
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 929926129ddee0efdee4f1b02494b503755811d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397097"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610697"
 ---
 # <a name="cd2dgeometry-class"></a>CD2DGeometry sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3386 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3386
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3386
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3386
 ms.assetid: 93fa8c33-0f10-402b-8eec-b0a217a1f8dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a68f047309d0a83bc1e0eb86f0651c3f20f310c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a9183e1f62e7ebaf5db04a35a45806ec02169e69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637482"
 ---
 # <a name="compiler-error-c3386"></a>Derleyici Hatası C3386
 

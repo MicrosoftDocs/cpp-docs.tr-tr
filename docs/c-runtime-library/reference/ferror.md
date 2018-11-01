@@ -1,10 +1,6 @@
 ---
-title: ferror | Microsoft Docs
-ms.custom: ''
+title: ferror
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - ferror
 apilocation:
@@ -22,27 +18,21 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - ferror
-dev_langs:
-- C++
 helpviewer_keywords:
 - ferror function
 - streams, testing for errors
 - errors [C++], testing for stream
 ms.assetid: 528a34bc-f2aa-4c3f-b89a-5b148e6864f7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49aaff776a90dd687ee4dae1902903ed01b83e20
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2be90ffe8a135b4108abd9504099bd2f6c28f249
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397375"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587895"
 ---
 # <a name="ferror"></a>ferror
 
-Testler için bir akış üzerinde bir hata oluştu.
+Akışı ile ilgili bir hata sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,18 +44,18 @@ int ferror(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir hata oluştu, *akış*, **ferror** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür. Akış ise **NULL**, **ferror** açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve 0 döndürür.
+Üzerinde herhangi bir hata oluştuysa *stream*, **ferror** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür. Akış ise **NULL**, **ferror** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve 0 döndürür.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ferror** yordamına (işlev olarak hem bir makrosu olarak uygulanan) testleri bir okuma veya hata ile ilişkili dosya yazma için *akış*. Bir hata oluştu, akış için hata göstergesi Akış kapalı veya rewound kadar veya kadar ayarlanmış kalır **clearerr** karşı çağrılır.
+**Ferror** (hem bir işlev ve makro olarak uygulanmış) rutini bir okuma veya yazma ile ilişkili dosya çubuğunda hata *stream*. Bir hata oluştu, akış için hata göstergesi Akış kapalı veya rewound kadar veya kadar ayarlanmış kalır **clearerr** göre adlandırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,16 +63,16 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |--------------|---------------------|
 |**ferror**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [feof](feof.md).
+Örneğin bakın [feof](feof.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>

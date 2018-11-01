@@ -1,28 +1,17 @@
 ---
-title: idl_module (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: idl_module (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.idl_module
-dev_langs:
-- C++
 helpviewer_keywords:
 - idl_module attribute
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 54fcef3c7b2ef86273a570e483f65b34b3b2efc2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c58997928fb3121c1ab8e277790969a93d9066de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608698"
 ---
 # <a name="idlmodule"></a>idl_module
 

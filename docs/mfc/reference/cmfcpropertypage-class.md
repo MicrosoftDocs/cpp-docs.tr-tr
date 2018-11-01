@@ -1,29 +1,19 @@
 ---
-title: CMFCPropertyPage sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyPage sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyPage
 - AFXPROPERTYPAGE/CMFCPropertyPage
 - AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyPage [MFC], CMFCPropertyPage
 ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 583bb644a50bf1bfbd6b17393fbf86ef1963adc4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a55a1a8cd5d63a9e775038824a7bbbe91adbae01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566744"
 ---
 # <a name="cmfcpropertypage-class"></a>CMFCPropertyPage sınıfı
 

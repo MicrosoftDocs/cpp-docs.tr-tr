@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4175 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4175
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4175
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4175
 ms.assetid: 11407a07-127c-4d0d-b262-61f9f2b035ba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61cf0471bd4308feb7be3a789f03e4355d6f7366
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0422e31e6f02995404ff6edeb82f3f6c0b1af65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617028"
 ---
 # <a name="compiler-warning-level-1-c4175"></a>Derleyici Uyarısı (düzey 1) C4175
 

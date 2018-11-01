@@ -1,10 +1,6 @@
 ---
-title: 'WM_ ileti işleyicileri: N - O | Microsoft Docs'
-ms.custom: ''
+title: 'WM_ İleti İşleyicileri: N - O'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ON_WM_NCHITTEST
 - ON_WM_NCLBUTTONDOWN
@@ -22,8 +18,6 @@ f1_keywords:
 - ON_WM_NCRBUTTONDOWN
 - ON_WM_NCRBUTTONUP
 - ON_WM_NCMBUTTONDOWN
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_WM_NCCALCSIZE [MFC]
 - ON_WM_NCMBUTTONDOWN [MFC]
@@ -43,16 +37,12 @@ helpviewer_keywords:
 - ON_WM_NCMBUTTONUP [MFC]
 - WM_ messages
 ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 52ad1893397c87f1d0e604f55b2758c5ba69f994
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 21c1ea3dfee864a4e28a0cbadfdfb73744e2d7da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619784"
 ---
 # <a name="wm-message-handlers-n---o"></a>WM_ İleti İşleyicileri: N - O
 

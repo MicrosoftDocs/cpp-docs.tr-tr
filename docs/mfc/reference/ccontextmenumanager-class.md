@@ -1,10 +1,6 @@
 ---
-title: CContextMenuManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CContextMenuManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CContextMenuManager
 - AFXCONTEXTMENUMANAGER/CContextMenuManager
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu
 - AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu
 - AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu
-dev_langs:
-- C++
 helpviewer_keywords:
 - CContextMenuManager [MFC], CContextMenuManager
 - CContextMenuManager [MFC], AddMenu
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CContextMenuManager [MFC], ShowPopupMenu
 - CContextMenuManager [MFC], TrackPopupMenu
 ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0890b18316a9b61c3e86858e76176a8d68501852
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 49e9b1cd12bee562daaf4ffb40492c80d8549ec3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082145"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639352"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager sınıfı
 

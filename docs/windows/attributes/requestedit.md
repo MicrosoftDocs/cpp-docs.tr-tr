@@ -1,28 +1,17 @@
 ---
-title: requestedit (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: requestedit (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.requestedit
-dev_langs:
-- C++
 helpviewer_keywords:
 - requestedit attribute
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 27b584f4f73e3509a5e7c907193f73e98b0b2811
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 27e6190cbb5908d46150acb758e2b4d5efaff1bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066909"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611595"
 ---
 # <a name="requestedit"></a>requestedit
 

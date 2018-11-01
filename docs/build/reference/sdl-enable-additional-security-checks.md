@@ -1,25 +1,15 @@
 ---
-title: -sdl (ek güvenlik denetimlerini etkinleştir) | Microsoft Docs
-ms.custom: ''
+title: /sdl (Ek Güvenlik Denetimlerini Etkinleştir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
-dev_langs:
-- C++
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fda6d2c3a608050906626e499b1ddaa48ddd82b9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 84e3b7b80727c359e711f182e2f06a7332989549
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587466"
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/sdl (Ek Güvenlik Denetimlerini Etkinleştir)
 

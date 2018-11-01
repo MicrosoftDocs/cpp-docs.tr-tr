@@ -1,30 +1,20 @@
 ---
-title: CSecurityAttributes sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSecurityAttributes sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSecurityAttributes
 - ATLSECURITY/ATL::CSecurityAttributes
 - ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes
 - ATLSECURITY/ATL::CSecurityAttributes::Set
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 672da1c98ebc51a7440e29234950be2adb5e1c0e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b39109bd97e2bb83b7a51fdd6e626b63c4c8798
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604993"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes sınıfı
 

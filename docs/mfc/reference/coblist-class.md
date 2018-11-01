@@ -1,10 +1,6 @@
 ---
-title: CObList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CObList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CObList
 - AFXCOLL/CObList
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXCOLL/CObList::RemoveHead
 - AFXCOLL/CObList::RemoveTail
 - AFXCOLL/CObList::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObList [MFC], CObList
 - CObList [MFC], AddHead
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fbf635b2f6d07486a6a8961305e0b218b3c24926
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 66cc4d28e20ced498e4a434efbe41c3f5db59370
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605211"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 

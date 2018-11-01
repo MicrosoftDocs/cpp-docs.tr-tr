@@ -1,28 +1,17 @@
 ---
-title: db_source (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: db_source (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_source
-dev_langs:
-- C++
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bd8facb38bc4d71445674eb64ad09ab14d0b636a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2bb15597be5ac4e1bb5f37fb2f12b74631e5a354
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592723"
 ---
 # <a name="dbsource"></a>db_source
 

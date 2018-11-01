@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2904 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2904
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2904
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2904
 ms.assetid: d5802f2e-d3fc-473d-aa04-36957b4eaca5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76f305ccab68a5b0d59cb3d4246b51fed61c6bf7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 90e0ae54e9d3c218040cfa8665f742be92ad7487
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061571"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641528"
 ---
 # <a name="compiler-error-c2904"></a>Derleyici Hatası C2904
 

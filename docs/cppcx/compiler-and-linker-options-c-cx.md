@@ -1,20 +1,13 @@
 ---
-title: Derleyici ve bağlayıcı seçenekleri (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61b9943488a9d6a720e8d86750b14ad044677112
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2165d802e6ff4bd530acac7c1ba6185c732a6499
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577298"
 ---
 # <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 

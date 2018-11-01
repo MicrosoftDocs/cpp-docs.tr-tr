@@ -1,10 +1,6 @@
 ---
-title: Ipropertypageımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ipropertypageımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IPropertyPageImpl
 - ATLCTL/ATL::IPropertyPageImpl
@@ -30,23 +26,17 @@ f1_keywords:
 - ATLCTL/ATL::IPropertyPageImpl::m_pPageSite
 - ATLCTL/ATL::IPropertyPageImpl::m_ppUnk
 - ATLCTL/ATL::IPropertyPageImpl::m_size
-dev_langs:
-- C++
 helpviewer_keywords:
 - property pages
 - IPropertyPage ATL implementation
 - IPropertyPageImpl class
 ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fa1e519c9891f0717ec1b69e1f506652250400e4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bf97699917732f8ce94d1541b6a93e00325b28c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057620"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605822"
 ---
 # <a name="ipropertypageimpl-class"></a>Ipropertypageımpl sınıfı
 

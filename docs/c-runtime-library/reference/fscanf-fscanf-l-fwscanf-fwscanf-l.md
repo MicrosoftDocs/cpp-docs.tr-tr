@@ -1,10 +1,6 @@
 ---
-title: fscanf, _fscanf_l, fwscanf, _fwscanf_l | Microsoft Docs
-ms.custom: ''
+title: fscanf, _fscanf_l, fwscanf, _fwscanf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fscanf
 - _fwscanf_l
@@ -29,8 +25,6 @@ f1_keywords:
 - _fwscanf_l
 - _ftscanf
 - _fscanf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - fscanf function
 - fwscanf function
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - _ftscanf function
 - fwscanf_l function
 ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 825a63b38f443ce770739fe614ab6a4a44b8de39
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 5be3f4107d2f05c1863c9c8303ac89e184590baa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594521"
 ---
 # <a name="fscanf-fscanfl-fwscanf-fwscanfl"></a>fscanf, _fscanf_l, fwscanf, _fwscanf_l
 

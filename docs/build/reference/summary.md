@@ -1,29 +1,19 @@
 ---
-title: -SUMMARY | Microsoft Docs
-ms.custom: ''
+title: /SUMMARY
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /summary
-dev_langs:
-- C++
 helpviewer_keywords:
 - -SUMMARY dumpbin option
 - /SUMMARY dumpbin option
 - SUMMARY dumpbin option
 ms.assetid: f33f244c-1f23-4e94-bd85-b26c97a19e6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b960387aad13744ed8e0a83b10348e6e314c1d35
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2e4be42cda198f84fec46bd65d913236a2887577
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593589"
 ---
 # <a name="summary"></a>/SUMMARY
 

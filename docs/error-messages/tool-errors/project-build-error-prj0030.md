@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0030 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0030
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0030
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0030
 ms.assetid: c48b3727-e166-46e7-bcd7-3e5b2ac5c1d4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 964fedd40f577a8b337c4ad0c20ba80d33ed2a23
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2a6cde4ca48acb9aadfe3109084483dbb554e1e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488081"
 ---
 # <a name="project-build-error-prj0030"></a>Proje Derleme Hatası PRJ0030
 

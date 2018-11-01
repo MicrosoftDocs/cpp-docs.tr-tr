@@ -1,27 +1,17 @@
 ---
-title: Uygulama türü, MFC Uygulama Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Uygulama Türü, MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.exe.apptype
-dev_langs:
-- C++
 helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df0b938186716ab86b8eaeadd69d123ff14e57e0
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 285760f71e0dfad0a6ef6011d79e0f3f2ce6760d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808777"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642310"
 ---
 # <a name="application-type-mfc-application-wizard"></a>Uygulama Türü, MFC Uygulama Sihirbazı
 

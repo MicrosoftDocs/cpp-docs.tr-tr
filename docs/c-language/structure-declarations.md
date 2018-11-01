@@ -1,12 +1,6 @@
 ---
-title: Yapı bildirimleri | Microsoft Docs
-ms.custom: ''
+title: Yapı Bildirimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - structure declarations
 - anonymous structures
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - structure members
 - embedded structures
 ms.assetid: 5be3be77-a236-4153-b574-7aa77675df7f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aff6a7e81fcefe6b469b58fa72504664c8ee2a55
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5c557b3db2e58001fa0b7a1a5bef5b1043e2cd86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607291"
 ---
 # <a name="structure-declarations"></a>Yapı Bildirimleri
 

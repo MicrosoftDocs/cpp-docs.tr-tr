@@ -1,17 +1,11 @@
 ---
-title: LIB çalıştırma | Microsoft Docs
-ms.custom: ''
+title: LIB Çalıştırma
 ms.date: 09/28/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.TargetMachine
 - Lib
 - VC.Project.VCLibrarianTool.PrintProgress
 - VC.Project.VCLibrarianTool.SuppressStartupBanner
-dev_langs:
-- C++
 helpviewer_keywords:
 - -MACHINE target platform option
 - command files, LIB
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - semicolon, command files
 - / command files
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5d8a221a829d3cded8d974c608bdd27edab07f60
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 73a259faa57d74fbe535bfa329dfc2a39cb6bbad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656982"
 ---
 # <a name="running-lib"></a>LIB Çalıştırma
 

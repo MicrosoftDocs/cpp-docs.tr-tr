@@ -1,32 +1,22 @@
 ---
-title: duration_values yapısı | Microsoft Docs
-ms.custom: ''
+title: duration_values Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::duration_values
 - chrono/std::chrono::duration_values::max
 - chrono/std::chrono::duration_values::min
 - chrono/std::chrono::duration_values::zero
-dev_langs:
-- C++
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d781d04097b205750e7ac65529cfa8ad7b37f9c7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bc382bbc408b11cbc18210f3ab944dda39adc8f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846018"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653394"
 ---
 # <a name="durationvalues-structure"></a>duration_values Yapısı
 
-Belirli değerleri sağlar [süresi](../standard-library/duration-class.md) şablon parametresi `Rep`.
+İçin belirli değerler sağlar [süresi](../standard-library/duration-class.md) şablon parametresi `Rep`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,8 +31,8 @@ struct duration_values;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[max](#max)|Statik. Türünde bir değer üst sınırını belirtir `Rep`.|
-|[Min](#min)|Statik. Türünde bir değer alt sınırı belirtir `Rep`.|
+|[en fazla](#max)|Statik. Türünde bir değer üst sınırını belirtir `Rep`.|
+|[Min](#min)|Statik. Türündeki bir değerin alt sınırını belirtir `Rep`.|
 |[Sıfır](#zero)|Statik. Döndürür `Rep(0)`.|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -53,7 +43,7 @@ struct duration_values;
 
 ## <a name="max"></a>  duration_values::Max
 
-Türü değerleri için üst sınır döndüren statik yöntem `Ref`.
+Türündeki değerlerin üst sınırını döndüren statik yöntem `Ref`.
 
 ```cpp
 static constexpr Rep max();
@@ -61,15 +51,15 @@ static constexpr Rep max();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulamada döndürür `numeric_limits<Rep>::max()`.
+Aslında döndürür `numeric_limits<Rep>::max()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `Rep` bir kullanıcı tanımlı tür dönüş değeri büyük olmalı [duration_values::zero](#zero).
+Zaman `Rep` bir kullanıcı tanımlı tür olduğunda döndürülen değer değerinden büyük olmalıdır [duration_values::zero](#zero).
 
 ## <a name="min"></a>  duration_values::Min
 
-Alt sınır türü değerleri için döndüren statik yöntem `Ref`.
+Türündeki değerlerin alt sınırını döndüren statik yöntem `Ref`.
 
 ```cpp
 static constexpr Rep min();
@@ -77,11 +67,11 @@ static constexpr Rep min();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulamada döndürür `numeric_limits<Rep>::lowest()`.
+Aslında döndürür `numeric_limits<Rep>::lowest()`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `Rep` bir kullanıcı tanımlı tür dönüş değeri küçük veya eşit olmalıdır [duration_values::zero](#zero).
+Zaman `Rep` bir kullanıcı tanımlı tür olduğunda döndürülen değer veya buna eşit olmalıdır [duration_values::zero](#zero).
 
 ## <a name="zero"></a>  duration_values::Zero
 
@@ -93,7 +83,7 @@ static constexpr Rep zero();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `Rep` bir kullanıcı tanımlı tür eklenebilir sonsuz dönüş değerini temsil etmelidir.
+Zaman `Rep` bir kullanıcı tanımlı tür olduğunda döndürülen değer artırıcı sonsuzu göstermelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

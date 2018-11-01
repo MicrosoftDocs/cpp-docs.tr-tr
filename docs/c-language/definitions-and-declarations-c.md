@@ -1,25 +1,15 @@
 ---
-title: Declarations (C) ve tanımları | Microsoft Docs
-ms.custom: ''
+title: Bildirimler ve Tanımlar (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - export functions
 ms.assetid: d150395a-89d4-4298-9ac4-08f84fe1261c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ae97ecc055ed7e6a448f2f820e762cafb2c5798
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1ec42f17d22b24aac3d19a3b129babe723930ae7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620239"
 ---
 # <a name="definitions-and-declarations-c"></a>Bildirimler ve Tanımlar (C)
 

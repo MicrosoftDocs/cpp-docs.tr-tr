@@ -1,26 +1,16 @@
 ---
-title: ATL makroları | Microsoft Docs
-ms.custom: ''
+title: ATL makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, macros
 - macros, ATL
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b78110e8b79b6d82089c69fecbedfa7842e98f31
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9523ceef462dc0fbf7669467a72749a8cbd83617
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624955"
 ---
 # <a name="atl-macros"></a>ATL makroları
 

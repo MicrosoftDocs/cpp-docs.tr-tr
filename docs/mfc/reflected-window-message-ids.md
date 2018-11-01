@@ -1,10 +1,6 @@
 ---
-title: Yansımış pencere iletisi kimlikleri | Microsoft Docs
-ms.custom: ''
+title: Yansımış Pencere İletisi Kimlikleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - OCM_CTLCOLORBTN
 - OCM_PARENTNOTIFY
@@ -25,8 +21,6 @@ f1_keywords:
 - OCM_CTLCOLORSCROLLBAR
 - OCM_VSCROLL
 - OCM_CTLCOLOR
-dev_langs:
-- C++
 helpviewer_keywords:
 - OCM_HSCROLL message [MFC]
 - OCM_PARENTNOTIFY message [MFC]
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - OCM_NOTIFY message [MFC]
 - reflected messages
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac529c3084917bd43fbb0a9fd51f1f0e3942447b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80cc7c6190a9467ca64bd0df7e55b6385a38ce5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588464"
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 

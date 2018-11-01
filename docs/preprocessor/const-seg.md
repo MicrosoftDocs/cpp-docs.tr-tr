@@ -1,29 +1,19 @@
 ---
-title: const_seg | Microsoft Docs
-ms.custom: ''
+title: const_seg
 ms.date: 09/17/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.const_seg
 - const_seg_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, const_seg
 - const_seg pragma
 ms.assetid: 1eb58ee2-fb0e-4a39-9621-699c8f5ef957
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b700b1e1b83586635f0628c9b2b6be7377315b27
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ce932b068f5751b7cf1ceab969312defd18336f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648350"
 ---
 # <a name="constseg"></a>const_seg
 Segmenti belirtir burada [const](../cpp/const-cpp.md) değişkenlerin .obj dosyasında depolanır.

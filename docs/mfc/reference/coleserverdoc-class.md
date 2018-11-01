@@ -1,10 +1,6 @@
 ---
-title: COleServerDoc sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleServerDoc sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleServerDoc
 - AFXOLE/COleServerDoc
@@ -46,8 +42,6 @@ f1_keywords:
 - AFXOLE/COleServerDoc::OnSetHostNames
 - AFXOLE/COleServerDoc::OnSetItemRects
 - AFXOLE/COleServerDoc::OnShowDocument
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleServerDoc [MFC], COleServerDoc
 - COleServerDoc [MFC], ActivateDocObject
@@ -88,16 +82,12 @@ helpviewer_keywords:
 - COleServerDoc [MFC], OnSetItemRects
 - COleServerDoc [MFC], OnShowDocument
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 350ad7f66054f2df2d1cc7bb21fefed0b71616e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b9d339b11b3e1fa8452c845cfa8a8f41c5194f8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604953"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc sınıfı
 

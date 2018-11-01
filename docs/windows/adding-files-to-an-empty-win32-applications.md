@@ -1,29 +1,18 @@
 ---
-title: Bir boş Win32 uygulamalarına dosya ekleme | Microsoft Docs
-ms.custom: ''
+title: Boş Win32 Uygulamalarına Dosya Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - empty projects [C++], adding files
 - projects [C++], adding items
 - blank projects
 - files [C++], adding to projects
 ms.assetid: 070098e8-0396-49fe-a697-3daa2f1be6de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e7ed87390608c05a215caf9c9991c286e5fb0be4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d5347a0693619e5db44b1087fc249c68b9227fb2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060981"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568664"
 ---
 # <a name="adding-files-to-an-empty-win32-applications"></a>Boş Win32 Uygulamalarına Dosya Ekleme
 

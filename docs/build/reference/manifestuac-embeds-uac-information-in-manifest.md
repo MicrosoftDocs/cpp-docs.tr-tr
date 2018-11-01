@@ -1,31 +1,21 @@
 ---
-title: -MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır) | Microsoft Docs
-ms.custom: ''
+title: /MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.UACUIAccess
 - VC.Project.VCLinkerTool.UACExecutionLevel
 - VC.Project.VCLinkerTool.EnableUAC
-dev_langs:
-- C++
 helpviewer_keywords:
 - /MANIFESTUAC linker option
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8c8c3cc219f0cf658dc2669ccc10adf3aba55bd
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 702dae41f873218dab0d3fb24e46dacd710bc20f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163536"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625101"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 

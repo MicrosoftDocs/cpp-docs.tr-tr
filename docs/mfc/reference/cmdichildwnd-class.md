@@ -1,10 +1,6 @@
 ---
-title: Cmdıchildwnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmdıchildwnd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMDIChildWnd
 - AFXWIN/CMDIChildWnd
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXWIN/CMDIChildWnd::MDIMaximize
 - AFXWIN/CMDIChildWnd::MDIRestore
 - AFXWIN/CMDIChildWnd::SetHandles
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMDIChildWnd [MFC], CMDIChildWnd
 - CMDIChildWnd [MFC], Create
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 995e0ed8dc9d04dd67cd1f4521d4550ccdad36fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffe7b975443b8bdc050bcb19af4f990b2e5ffafa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390193"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576637"
 ---
 # <a name="cmdichildwnd-class"></a>Cmdıchildwnd sınıfı
 
