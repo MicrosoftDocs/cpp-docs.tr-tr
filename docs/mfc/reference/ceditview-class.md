@@ -1,10 +1,6 @@
 ---
-title: CEditView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CEditView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CEditView
 - AFXEXT/CEditView
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXEXT/CEditView::OnReplaceSel
 - AFXEXT/CEditView::OnTextNotFound
 - AFXEXT/CEditView::dwStyleDefault
-dev_langs:
-- C++
 helpviewer_keywords:
 - CEditView [MFC], CEditView
 - CEditView [MFC], FindText
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 450f2444279847a7d537fe8fc48f8e4b09f04168
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e0095f2c490ebde10d20ec0705b1297b976b76b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528667"
 ---
 # <a name="ceditview-class"></a>CEditView sınıfı
 

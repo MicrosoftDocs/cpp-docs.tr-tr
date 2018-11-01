@@ -1,14 +1,8 @@
 ---
-title: -DLL (DLL derleme) | Microsoft Docs
-ms.custom: ''
+title: /DLL (DLL Derleme)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /dll
-dev_langs:
-- C++
 helpviewer_keywords:
 - -DLL linker option
 - /DLL linker option [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - DLLs [C++], building
 - DLL linker option [C++]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec5beed66de3834759f35a5021d0155eab0a066e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 71696e4ffae91ed1fa8a13e69e75523ce66e8361
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546350"
 ---
 # <a name="dll-build-a-dll"></a>/DLL (DLL Derleme)
 
@@ -63,7 +53,7 @@ Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığın�
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

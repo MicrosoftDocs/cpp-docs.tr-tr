@@ -1,16 +1,10 @@
 ---
-title: -Showıncludes (liste dosyaları içerir) | Microsoft Docs
-ms.custom: ''
+title: /showIncludes (Liste Dosyaları İçerir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.ShowIncludes
 - VC.Project.VCCLCompilerTool.ShowIncludes
 - /showincludes
-dev_langs:
-- C++
 helpviewer_keywords:
 - include files
 - /showIncludes compiler option [C++]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - -showIncludes compiler option [C++]
 - showIncludes compiler option [C++]
 ms.assetid: 0b74b052-f594-45a6-a7c7-09e1a319547d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 51305212f97482c6963ee2ba0d272c5c4692416e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7be3d93f91133ad1a29e6b4d6d2c50157a3376b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523051"
 ---
 # <a name="showincludes-list-include-files"></a>/showIncludes (Liste Dosyaları İçerir)
 
@@ -70,7 +60,7 @@ Bu durumda, `2.h` gelen içinde gelen `1.h`, bu nedenle girinti.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

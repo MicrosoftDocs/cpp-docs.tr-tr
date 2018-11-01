@@ -1,26 +1,16 @@
 ---
-title: Tümcecik yapısı dil bilgisi | Microsoft Docs
-ms.custom: ''
+title: Tümcecik Yapısı Dil Bilgisi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - phrase structure grammar
 - grammar, phrase structure
 ms.assetid: 546c2961-5d37-4ef9-a0ce-74e7550e3899
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d215bd4dc33a0bd471555232e4f2714eaeb914c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 500bc949c93003bdd3d025d1dfaee071929a1812
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058204"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537949"
 ---
 # <a name="phrase-structure-grammar"></a>Tümcecik Yapısı Dil Bilgisi
 

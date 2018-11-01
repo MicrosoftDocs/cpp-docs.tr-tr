@@ -1,28 +1,18 @@
 ---
-title: Cloakedıid yapısı | Microsoft Docs
-ms.custom: ''
+title: CloakedIid Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::CloakedIid
-dev_langs:
-- C++
 helpviewer_keywords:
 - CloakedIid structure
 ms.assetid: 82e0e377-ca3a-46bc-b850-ae2c46c15bb5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5f289403172ed5815ac5babbef3e7551da59ae1c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7340032e91a9b30b72099477b55b88740b3eb68f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405183"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535310"
 ---
 # <a name="cloakediid-structure"></a>CloakedIid Yapısı
 

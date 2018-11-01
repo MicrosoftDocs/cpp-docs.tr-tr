@@ -1,27 +1,17 @@
 ---
-title: _com_error::ErrorMessage | Microsoft Docs
-ms.custom: ''
+title: _com_error::ErrorMessage
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_error::ErrorMessage
-dev_langs:
-- C++
 helpviewer_keywords:
 - ErrorMessage method [C++]
 ms.assetid: e47335b6-01af-4975-a841-121597479eb7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: afe11d570658ee077e8fdffe925349731f1921fd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b1c1b5a79cdf5ee2a4a17d969d23ce0d0d85ab54
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111374"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504500"
 ---
 # <a name="comerrorerrormessage"></a>_com_error::ErrorMessage
 

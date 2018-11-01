@@ -1,32 +1,22 @@
 ---
-title: _bittestandset, _bittestandset64 | Microsoft Docs
-ms.custom: ''
+title: _bittestandset, _bittestandset64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _bittestandset_cpp
 - _bittestandset64_cpp
 - _bittestandset64
 - _bittestandset
-dev_langs:
-- C++
 helpviewer_keywords:
 - bts instruction
 - _bittestandset intrinsic
 - _bittestandset64 intrinsic
 ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc8b2d48a1d6970f52d33b00201600c65acf9f2a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 95acb833b05b67e7781973d6b3bd6fdcfe97615b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383349"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513028"
 ---
 # <a name="bittestandset-bittestandset64"></a>_bittestandset, _bittestandset64
 

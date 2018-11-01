@@ -1,29 +1,19 @@
 ---
-title: missing_wait sınıfı | Microsoft Docs
-ms.custom: ''
+title: missing_wait Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - missing_wait
 - CONCRT/concurrency::missing_wait
 - CONCRT/concurrency::missing_wait::missing_wait
-dev_langs:
-- C++
 helpviewer_keywords:
 - missing_wait class
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0363b7dd1e4840b7afb6c013c5d439e64fbbb2ef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7e515a33bfa827bba5329182cd3b79764495d728
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425905"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531124"
 ---
 # <a name="missingwait-class"></a>missing_wait Sınıfı
 

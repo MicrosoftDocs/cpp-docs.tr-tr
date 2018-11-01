@@ -1,27 +1,17 @@
 ---
-title: ENDM | Microsoft Docs
-ms.custom: ''
+title: ENDM
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - ENDM
-dev_langs:
-- C++
 helpviewer_keywords:
 - ENDM directive
 ms.assetid: 697ea303-1e47-4ee9-9e67-77b83c3fe35a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a584d95e37b26ebed13a9380628b08af4e922f72
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 709892c5b60864eafcb4a351c0d775e81597333a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517841"
 ---
 # <a name="endm"></a>ENDM
 

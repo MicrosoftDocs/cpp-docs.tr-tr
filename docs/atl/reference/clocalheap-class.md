@@ -1,10 +1,6 @@
 ---
-title: CLocalHeap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CLocalHeap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CLocalHeap
 - ATLMEM/ATL::CLocalHeap
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLMEM/ATL::CLocalHeap::Free
 - ATLMEM/ATL::CLocalHeap::GetSize
 - ATLMEM/ATL::CLocalHeap::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLocalHeap class
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c28a979c96a7523d2fb282a05eb2816f149b4fe2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7f4fa6b6035b9f0dda35a8e989192505ccf126d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087545"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515472"
 ---
 # <a name="clocalheap-class"></a>CLocalHeap sınıfı
 

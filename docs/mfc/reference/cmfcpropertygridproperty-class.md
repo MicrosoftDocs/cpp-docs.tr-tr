@@ -1,10 +1,6 @@
 ---
-title: CMFCPropertyGridProperty sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyGridProperty sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty
@@ -88,8 +84,6 @@ f1_keywords:
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatFloat
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatLong
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatShort
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], CMFCPropertyGridProperty
 - CMFCPropertyGridProperty [MFC], AddOption
@@ -172,16 +166,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6430e65e15458eec3a0591168ba7717e1236c089
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f7a8cca3da85e3ac0b7b7e63e83d394a0e8a9899
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524741"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty sınıfı
 

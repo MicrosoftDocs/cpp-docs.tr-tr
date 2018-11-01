@@ -1,12 +1,6 @@
 ---
-title: Takvim denetimlerinde bildirim iletilerini işleme ayda | Microsoft Docs
-ms.custom: ''
+title: Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMonthCalCtrl class [MFC], notifications
 - CMonthCalCtrl class [MFC], day states
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - notifications [MFC], for CMonthCalCtrl
 - notifications [MFC], month calendar control
 ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5bbdb3728009cdee978bb08ef8df8817f1ef5e41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3dbf50080bea59c4df4a9c92a135a65b093f7674
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511936"
 ---
 # <a name="processing-notification-messages-in-month-calendar-controls"></a>Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme
 

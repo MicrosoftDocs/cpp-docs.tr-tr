@@ -1,28 +1,18 @@
 ---
-title: is_fundamental sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_fundamental Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_fundamental
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_fundamental class
 - is_fundamental
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d27d141b4ec475f3df6e4bf56dba80850767beb0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9bdf9a7ba95bb097a5df6f5f0270eace599eda6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106775"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542258"
 ---
 # <a name="isfundamental-class"></a>is_fundamental Sınıfı
 

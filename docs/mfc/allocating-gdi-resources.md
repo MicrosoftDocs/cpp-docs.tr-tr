@@ -1,27 +1,17 @@
 ---
-title: GDI kaynaklarını ayırma | Microsoft Docs
-ms.custom: ''
+title: GDI Kaynaklarını Ayırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [MFC], printing
 - GDI objects [MFC], allocating during printing
 - printing [MFC], allocating GDI resources
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae677a7d56eabba25de6124919eb226786174574
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d637d524d37dc466e15aed3b571cccf24c18216d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505735"
 ---
 # <a name="allocating-gdi-resources"></a>GDI Kaynaklarını Ayırma
 

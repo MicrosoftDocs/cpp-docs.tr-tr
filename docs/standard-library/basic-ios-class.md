@@ -1,10 +1,6 @@
 ---
-title: basic_ios sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_ios Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - ios/std::basic_ios
 - ios/std::basic_ios::char_type
@@ -32,8 +28,6 @@ f1_keywords:
 - ios/std::basic_ios::tie
 - ios/std::basic_ios::widen
 - ios/std::basic_ios::explicit operator bool
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_ios [C++]
 - std::basic_ios [C++], char_type
@@ -61,16 +55,12 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 175d7895331ec960244354870c6bd6845baf37d1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9787775acec6ffeb8eaeaad96af6e152d8cb1bac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725328"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537237"
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 

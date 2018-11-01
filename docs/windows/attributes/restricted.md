@@ -1,28 +1,17 @@
 ---
-title: kısıtlı (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: kısıtlı (C++ COM özniteliği)
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.restricted
-dev_langs:
-- C++
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bb13132c651323fcdffef2c06215314ad193c91d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1aa18255f7d7a0740494050a149d436fb167fe8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071108"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521059"
 ---
 # <a name="restricted"></a>kısıtlı
 

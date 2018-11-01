@@ -1,10 +1,6 @@
 ---
-title: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l | Microsoft Docs
-ms.custom: ''
+title: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strlwr_l
 - _strlwr
@@ -35,8 +31,6 @@ f1_keywords:
 - strlwr_l
 - _tcslwr
 - mbslwr
-dev_langs:
-- C++
 helpviewer_keywords:
 - tcslwr function
 - _strlwr function
@@ -61,23 +55,19 @@ helpviewer_keywords:
 - strings [C++], converting case
 - _mbslwr_l function
 ms.assetid: d279181d-2e7d-401f-ab44-6e7c2786a046
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3468795c1f99bd6e79f9b10aae2a220a1876f4c7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a442afd0ede8d9c6e892f50c12153b22f80733b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505697"
 ---
 # <a name="strlwr-wcslwr-mbslwr-strlwrl-wcslwrl-mbslwrl"></a>_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 
-Bir dizeyi küçük harflere dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
+Bir dizeyi küçük harfe dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
 
 > [!IMPORTANT]
-> **_mbslwr** ve **_mbslwr_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbslwr** ve **_mbslwr_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -135,24 +125,24 @@ unsigned char *_mbslwr_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Küçük harfe dönüştürmek için null ile sonlandırılmış dize.
+Küçük harfe dönüştürülecek null ile sonlandırılmış dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri bir işaretçi dönüştürülmüş dizeyi döndürür. Değişikliği yerinde yapıldığından, işaretçi aynı giriş bağımsız değişken olarak geçirilen işaretçi döndürdü. Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.
+Bu işlevlerin her biri dönüştürülmüş dizeye bir işaretçi döndürür. Değişiklik yerinde yapıldığı için aynı işaretçi giriş bağımsız değişkeni geçirilir işaretçi döndürdü. Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strlwr** işlevi dönüştürür tüm büyük harflerle *str* tarafından belirlenen küçük **LC_CTYPE** yerel kategori ayarı. Diğer karakterler etkilenmez. Daha fazla bilgi için **LC_CTYPE**, bkz: [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** yerel ayara bağımlı davranışlarını geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, geçirilen yerel ayar kullanmasını dışında aynıdır Bunun yerine. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_Strlwr** işlevi dönüştürür dizesindeki tüm büyük harfleri *str* tarafından harflere **LC_CTYPE** yerel ayarının kategori ayarına. Diğer karakterler etkilenmez. Daha fazla bilgi için **LC_CTYPE**, bkz: [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayar için yerel ayara bağlı davranışları; sürümleriyle **_l** sonekine geçirilen yerel ayarı kullanmaları dışında Bunun yerine. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-**_Wcslwr** ve **_mbslwr** işlevlerdir joker karakter ve çok baytlı karakter sürümleri **_strlwr**. YAZMAÇ değerini **_wcslwr** joker karakter olan dizeleri; bu **_mbslwr** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**_Wcslwr** ve **_mbslwr** işlevleri olan geniş karakter ve çok baytlı karakter sürümleri **_strlwr**. Bağımsız değişkenin ve dönüş değeri **_wcslwr** geniş karakterli dizelerdir; **_mbslwr** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
 
-Varsa *str* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için bu işlevler dönüş özgün dizeye ve kümesi yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+Varsa *str* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Devam etmek için bu işlevler orijinal dizeyi döndürür ve kümesi yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
 
-C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -169,7 +159,7 @@ C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon a�
 |**_wcslwr**, **_wcslwr_l**|\<String.h > veya \<wchar.h >|
 |**_mbslwr**, **_mbslwr_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,10 +1,6 @@
 ---
-title: mbtowc, _mbtowc_l | Microsoft Docs
-ms.custom: ''
+title: mbtowc, _mbtowc_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - mbtowc
 - _mbtowc_l
@@ -24,23 +20,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - mbtowc
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbtowc function
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6600706690dea3573f8eb1aa47f68b592b3bff1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e5ef6db0f0986b102214229155e1c43c5d029284
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200313"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506203"
 ---
 # <a name="mbtowc-mbtowcl"></a>mbtowc, _mbtowc_l
 

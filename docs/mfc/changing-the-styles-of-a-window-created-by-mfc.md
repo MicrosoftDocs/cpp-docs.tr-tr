@@ -1,12 +1,6 @@
 ---
-title: MFC tarafından oluşturulan pencerenin stillerini değiştirme | Microsoft Docs
-ms.custom: ''
+title: MFC Tarafından Oluşturulan Pencerenin Stillerini Değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - window styles [MFC]
 - WS_OVERLAPPEDWINDOW macro [MFC]
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - CMainFrame class [MFC]
 - styles [MFC], windows
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98bcf57cc3a4697fc035fad73d8faf4e577a84b5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8ee18cd311d9ab304a3096f8e8dcbb2c7edf42f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420137"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508002"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC Tarafından Oluşturulan Pencerenin Stillerini Değiştirme
 

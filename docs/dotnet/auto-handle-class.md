@@ -1,29 +1,19 @@
 ---
-title: auto_handle sınıfı | Microsoft Docs
-ms.custom: ''
+title: auto_handle Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_handle, msclr::auto_handle
 - msclr.auto_handle
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle class
 ms.assetid: a65604d1-ecbb-44fd-ae2f-696ddeeed9d6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 6509eaf8797d20303100c9886590bb2971e6c640
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0f4139e4ed2ebcb2cf753c13821178ac8ff6172b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524016"
 ---
 # <a name="autohandle-class"></a>auto_handle Sınıfı
 

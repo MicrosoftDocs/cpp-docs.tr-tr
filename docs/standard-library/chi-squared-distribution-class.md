@@ -1,10 +1,6 @@
 ---
-title: chi_squared_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: chi_squared_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::chi_squared_distribution
 - random/std::chi_squared_distribution::reset
@@ -17,8 +13,6 @@ f1_keywords:
 - random/std::chi_squared_distribution::param_type::n
 - random/std::chi_squared_distribution::param_type::operator==
 - random/std::chi_squared_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::chi_squared_distribution [C++]
 - std::chi_squared_distribution [C++], reset
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74b230aca540f03bf8c9e94fe65ede3ac4ae8681
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9b37212d97644c42b9048a5c74cf15ee745564b9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531934"
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution Sınıfı
 

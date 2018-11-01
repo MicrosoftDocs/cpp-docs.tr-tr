@@ -1,26 +1,16 @@
 ---
-title: 'Değer kategoriler: Lvalues ve Rvalues (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: 'Değer kategoriler: Lvalues ve Rvalues (Visual C++)'
 ms.date: 04/06/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f19a06ac0583dd4cb911818787408aeca30b2ec
-ms.sourcegitcommit: 2f84d56b6ab19ba745b32ecd96b193c73cd62adf
+ms.openlocfilehash: 261453d5640c122f23491304b71e53e27c06eb7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546360"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalues ve Rvalues (Visual C++)
 
@@ -30,7 +20,7 @@ C ++ 17 standardına ifade değeri kategorileri gibi tanımlar:
 
 - A *glvalue* bir ifadedir, değerlendirme, bir nesne, bit alanı veya işlev kimliğini belirler.
 - A *prvalue* ifade, değerlendirme nesneyi ya da bir bit alanına başlatır veya görünür durumda bağlam tarafından belirtildiği gibi bir işlecinin işleneni değerini hesaplar.
-- Bir *xvalue* bir nesne veya bit alanı (genellikle yaşam sonuna yakın olduğundan) kaynaklarını yeniden kullanılabilir gösteren bir glvalue olduğu. [Örnek: belirli türde bir rvalue başvuruları (8.3.2) içeren ifadeler yield, dönüş türü bir rvalue başvurusu olan bir işlev çağrısı veya rvalue başvuru türüne atamak gibi x değerleri. ]
+- Bir *xvalue* bir nesne veya bit alanı (genellikle yaşam sonuna yakın olduğundan) kaynaklarını yeniden kullanılabilir gösteren bir glvalue olduğu. [Örnek: belirli türde bir rvalue başvuruları (8.3.2) içeren ifadeler yield, dönüş türü bir rvalue başvurusu olan bir işlev çağrısı veya rvalue başvuru türüne atamak gibi x değerleri. ]
 - Bir *lvalue* bir xvalue değil bir glvalue olduğu.
 - Bir *rvalue* bir prvalue veya bir xvalue.
 

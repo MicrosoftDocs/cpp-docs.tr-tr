@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2433 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2433
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2433
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2433
 ms.assetid: 7079fedd-6059-4125-82ef-ebe275f1f9d1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 081e63c83909319164a2903d8277a0b26a1e6901
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a98fcf7570605694569b7ae466ae0a3c7cf14bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512065"
 ---
 # <a name="compiler-error-c2433"></a>Derleyici Hatası C2433
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCPopupMenuBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPopupMenuBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPopupMenuBar
 - AFXPOPUPMENUBAR/CMFCPopupMenuBar
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetOffset
 - AFXPOPUPMENUBAR/CMFCPopupMenuBar::StartPopupMenuTimer
 - AFXPOPUPMENUBAR/CMFCPopupMenuBar::m_bDisableSideBarInXPMode
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPopupMenuBar [MFC], AdjustSizeImmediate
 - CMFCPopupMenuBar [MFC], BuildOrigItems
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CMFCPopupMenuBar [MFC], StartPopupMenuTimer
 - CMFCPopupMenuBar [MFC], m_bDisableSideBarInXPMode
 ms.assetid: 4c93c459-7f70-4240-8c63-280bb811e374
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed0c8bdc50dd1033d89ae2dd87fdc925c05328b3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 931404412d3b30d5352ecd2fabe30f9ec30f2e3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436188"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511835"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar sınıfı
 

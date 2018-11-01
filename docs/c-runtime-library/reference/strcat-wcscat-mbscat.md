@@ -1,10 +1,6 @@
 ---
-title: strcat, wcscat, _mbscat | Microsoft Docs
-ms.custom: ''
+title: strcat, wcscat, _mbscat
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbscat
 - wcscat
@@ -29,8 +25,6 @@ f1_keywords:
 - _tcscat
 - strcat
 - wcscat
-dev_langs:
-- C++
 helpviewer_keywords:
 - concatenating strings
 - mbscat function
@@ -45,23 +39,19 @@ helpviewer_keywords:
 - appending strings
 - wcscat function
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2daf6621cb2e72c38212227da20f6b847bb08e9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b49e2e39fb0acd9128a52e83bf704567bb82d532
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546399"
 ---
 # <a name="strcat-wcscat-mbscat"></a>strcat, wcscat, _mbscat
 
-Bir dize ekler. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md).
+Bir dize ekler. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md).
 
 > [!IMPORTANT]
-> **_mbscat_s** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -98,25 +88,25 @@ unsigned char *_mbscat(
 ### <a name="parameters"></a>Parametreler
 
 *strDestination*<br/>
-Sonlandırılmış hedef dizesi.
+Null ile sonlandırılmış hedef dize.
 
 *strSource*<br/>
-Sonlandırılmış kaynak dizesi.
+Null ile sonlandırılmış kaynak dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri hedef dizesini döndürür (*strDestination*). Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.
+Bu işlevlerin her biri hedef dizesini getirir (*strDestination*). Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcat** işlevi ekler *strSource* için *strDestination* ve sonuçta elde edilen bir null karakter dizesiyle sonlandırır. İlk karakteri *strSource* sonlandırma null karakterinin üzerine yazar *strDestination*. Davranışını **strcat** kaynak ve hedef dizeleri çakışırsa tanımlanmadı.
+**Strcat** işlevi ekler *strSource* için *strDestination* ve sonuç dizesini null karakteri ile sona erer. İlk karakteri *strSource* Sonlandırıcı null karakterinin üzerine yazar *strDestination*. Davranışını **strcat** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
 
 > [!IMPORTANT]
-> Çünkü **strcat** yeterli alana denetlemez *strDestination* eklenmesinden önce *strSource*, onu bir arabellek taşmaları olası nedeni. Kullanmayı [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) yerine.
+> Çünkü **strcat** içinde yeterli yer denetlemez *strDestination* eklemeden denetlemediğinden *strSource*, olduğu arabellek taşmalarına neden olabilir. Kullanmayı [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) yerine.
 
-**wcscat** ve **_mbscat** joker karakter ve çok baytlı karakter sürümleri **strcat**. Bağımsız değişkenleri ve dönüş değerini **wcscat** joker karakter olan dizeleri; bu **_mbscat** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**wcscat** ve **_mbscat** geniş karakter ve çok baytlı karakter sürümleridir **strcat**. Bağımsız değişkenler ve dönüş değeri **wcscat** geniş karakterli dizelerdir; **_mbscat** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
 
-C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -132,11 +122,11 @@ C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon a�
 |**wcscat**|\<String.h > veya \<wchar.h >|
 |**_mbscat**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [strcpy](strcpy-wcscpy-mbscpy.md).
+Örneğin bakın [strcpy](strcpy-wcscpy-mbscpy.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 2 ve 4) C4200 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 2 ve 4) C4200
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4200
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4200
 ms.assetid: e44d6073-937f-42b7-acc1-65e802b475c6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34e0befb93db742bb2d132b2092414a1a167b87b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56a2ba641df610519949f64f6feeca18d9a99e93
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519814"
 ---
 # <a name="compiler-warning-levels-2-and-4-c4200"></a>Derleyici Uyarısı (Düzey 2 ve 4) C4200
 

@@ -1,12 +1,6 @@
 ---
-title: Menüler ve kaynaklar (OLE) | Microsoft Docs
-ms.custom: ''
+title: Menüler ve Kaynaklar (OLE)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE visual editing servers [MFC]
 - status bars [MFC], OLE document applications
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - OLE menus and resources [MFC]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ada8731be176368e1503118597fa4d6df38e3ef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b8e278564c2c293cabfcd56ab9ce2cdb4807e19
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511741"
 ---
 # <a name="menus-and-resources-ole"></a>Menüler ve Kaynaklar (OLE)
 

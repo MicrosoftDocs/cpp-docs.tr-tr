@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3812 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3812
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3812
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3812
 ms.assetid: 326ac706-9a5f-4851-b9d2-b90c64c75532
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83de08dfb0ea42e99a7ef7185fb3b8fc492bdec8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4f372b5fd8533ffacbe0dcd33b3449e44b1cc362
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528017"
 ---
 # <a name="compiler-error-c3812"></a>Derleyici Hatası C3812
 

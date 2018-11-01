@@ -1,10 +1,6 @@
 ---
-title: _CrtDoForAllClientObjects | Microsoft Docs
-ms.custom: ''
+title: _CrtDoForAllClientObjects
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtDoForAllClientObjects
 apilocation:
@@ -23,22 +19,16 @@ f1_keywords:
 - _CrtDoForAllClientObjects
 - CrtDoForAllClientObjects
 - crtdbg/_CrdDoForAllClientObjects
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CrtDoForAllClientObjects function
 - CrtDoForAllClientObjects function
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 378ef3c6218d1f57cd1d817d8895b3ff8b081ecb
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 86268bd9ac49c8ea27f715404236bcb9291f5d8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105349"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521197"
 ---
 # <a name="crtdoforallclientobjects"></a>_CrtDoForAllClientObjects
 

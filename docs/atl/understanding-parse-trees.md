@@ -1,25 +1,15 @@
 ---
-title: ATL Kaydedicisi ve ayrıştırma ağaçlarını | Microsoft Docs
-ms.custom: ''
+title: ATL Kaydedicisi ve ayrıştırma ağaçlarını
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - parse trees
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ab66fa38898c302c180be841d7e06133ee22638
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 11625ebda2e84d4a738a2d54e849e3406a5c4f70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078134"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510883"
 ---
 # <a name="understanding-parse-trees"></a>Ayrıştırma ağaçlarını anlama
 

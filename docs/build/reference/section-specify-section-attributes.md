@@ -1,29 +1,19 @@
 ---
-title: / SECTION (bölüm özniteliklerini belirt) | Microsoft Docs
-ms.custom: ''
+title: /SECTION (Bölüm Özniteliklerini Belirt)
 ms.date: 12/29/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /section
-dev_langs:
-- C++
 helpviewer_keywords:
 - SECTION linker option
 - -SECTION linker option
 - section attributes
 - /SECTION linker option
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf762718e507309e47d36b06baacf54c6cb01e3e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d86dca297940da4978fe42270f444acc5f11fd82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543708"
 ---
 # <a name="section-specify-section-attributes"></a>/SECTION (Bölüm Özniteliklerini Belirt)
 
@@ -97,7 +87,7 @@ Büyük olasılıkla E, R ya da ayarlanmış W yok PE dosyasının bir bölümü
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

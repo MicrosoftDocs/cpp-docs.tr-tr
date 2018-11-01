@@ -1,27 +1,17 @@
 ---
-title: .SAVEXMM128 | Microsoft Docs
-ms.custom: ''
+title: .SAVEXMM128
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .SAVEXMM128
-dev_langs:
-- C++
 helpviewer_keywords:
 - .SAVEXMM128 directive
 ms.assetid: 551eb472-b8d0-47b1-8d82-995d1f485723
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d44855d3449000c588f7e840753bd734af4b1af
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c29ec47170c5e0f46f02d53f23ab477a79bbdc32
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507909"
 ---
 # <a name="savexmm128"></a>.SAVEXMM128
 

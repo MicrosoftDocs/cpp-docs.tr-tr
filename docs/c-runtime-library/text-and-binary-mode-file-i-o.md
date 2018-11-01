@@ -1,14 +1,8 @@
 ---
-title: Metin ve ikili mod dosyası g/ç | Microsoft Docs
-ms.custom: ''
+title: Metin ve İkili Mod Dosyası G/Ç
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.io
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], open functions
 - I/O [CRT], text files
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - translation modes (file I/O)
 - binary access
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 133f62347998ad8238c3136c3de03b08ba41346d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 54b095913ea4ec25fe5bd077d38a6bba303a7b72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546295"
 ---
 # <a name="text-and-binary-mode-file-io"></a>Metin ve İkili Mod Dosyası G/Ç
 

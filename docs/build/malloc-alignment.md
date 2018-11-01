@@ -1,23 +1,13 @@
 ---
-title: malloc hizalaması | Microsoft Docs
-ms.custom: ''
+title: malloc Hizalaması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: a8d1d1b4-5122-456f-9a64-a50e105e55a5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa6e2748691eeb8a11834bcf8e6962252be7ab3f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 436033d4e99d42d0a1a9366377f928bc402ac974
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712068"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533555"
 ---
 # <a name="malloc-alignment"></a>malloc Hizalaması
 

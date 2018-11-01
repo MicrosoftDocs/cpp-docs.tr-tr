@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2989 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2989
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2989
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2989
 ms.assetid: 936303d8-eb3b-4746-82ec-2f18020a6f64
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79da071b592a31ea3fe7ca486a7e02abc770f08e
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: e5f03d644ab6c25b7eb0da0dc1684c7de5c2e6a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517903"
 ---
 # <a name="compiler-error-c2989"></a>Derleyici Hatası C2989
 

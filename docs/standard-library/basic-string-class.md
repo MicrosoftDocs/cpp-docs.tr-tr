@@ -1,10 +1,6 @@
 ---
-title: basic_string sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_string Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xstring/std::basic_string
 - xstring/std::basic_string::allocator_type
@@ -62,8 +58,6 @@ f1_keywords:
 - xstring/std::basic_string::size
 - xstring/std::basic_string::substr
 - xstring/std::basic_string::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_string [C++]
 - std::basic_string [C++], allocator_type
@@ -122,16 +116,12 @@ helpviewer_keywords:
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61c7b7c5a8e1df8f22140bcd4debab3504144032
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ab93f8b225e27c0cf4d294d176c566bd6f2b5d02
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082436"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518582"
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 

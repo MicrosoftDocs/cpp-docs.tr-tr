@@ -1,28 +1,18 @@
 ---
-title: CHeaderCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CHeaderCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CHeaderCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - header controls [MFC], using
 - CHeaderCtrl class [MFC]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f7c25b77b3154b70ce5f6291d85c96283064aa0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fde3596ef244afd611f790d62570b1ee4ba6f7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540471"
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl Kullanma
 

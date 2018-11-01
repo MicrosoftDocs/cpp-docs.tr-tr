@@ -1,12 +1,6 @@
 ---
-title: Özel fırça (simgeler için görüntü Düzenleyicisi) oluşturma | Microsoft Docs
-ms.custom: ''
+title: Özel Fırça Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - colors [C++], brush
 - brushes, colors
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 750881aa-6f47-4de9-8ca6-a7a12afc6383
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bd4a25b208232c8a0923e33156730fc5612219a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 01d5badc70aac3e51a8731c5ea62b30a27d2962a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502862"
 ---
 # <a name="creating-a-custom-brush-image-editor-for-icons"></a>Özel Fırça Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

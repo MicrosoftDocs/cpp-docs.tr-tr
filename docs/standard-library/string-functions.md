@@ -1,8 +1,6 @@
 ---
-title: '&lt;dize&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;dize&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - string/std::getline
 - string/std::stod
@@ -17,8 +15,6 @@ f1_keywords:
 - string/std::to_string
 - string/std::to_wstring
 ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::getline [C++]
 - std::stod [C++]
@@ -32,14 +28,12 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::to_string [C++]
 - std::to_wstring [C++]
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 102cdab95808fa39855ad1397248b782e12fdd8c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7707f1239bb8612b1c454997a98d134165f09b75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544293"
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize&gt; işlevleri
 

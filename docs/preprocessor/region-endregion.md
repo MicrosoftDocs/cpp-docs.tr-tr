@@ -1,33 +1,23 @@
 ---
-title: bölge, endregion | Microsoft Docs
-ms.custom: ''
+title: region, endregion
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.endregion
 - endregion_CPP
 - region_CPP
 - vc-pragma.region
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, region
 - pragmas, endregion
 - endregion pragma
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2e360009eb9126604d4466daed2445c7dfc582d4
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: efc5f9c09449ff2fefff41261fe8b0eb0be80278
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808075"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512821"
 ---
 # <a name="region-endregion"></a>region, endregion
 

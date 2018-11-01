@@ -1,10 +1,6 @@
 ---
-title: Iopenrowsetımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IOpenRowsetImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IOpenRowsetImpl
 - IOpenRowsetImpl.CreateRowset
@@ -13,24 +9,17 @@ f1_keywords:
 - OpenRowset
 - IOpenRowsetImpl::OpenRowset
 - IOpenRowsetImpl.OpenRowset
-dev_langs:
-- C++
 helpviewer_keywords:
 - IOpenRowsetImpl class
 - CreateRowset method
 - OpenRowset method
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 72ca35ad6f2246a517c8a8d103c1a7f37e142534
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1535c6beeaed9aadad89f06dbcbaf8ad38ddcc94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512781"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl Sınıfı
 

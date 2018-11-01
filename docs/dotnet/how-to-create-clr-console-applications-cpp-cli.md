@@ -1,27 +1,16 @@
 ---
-title: 'Nasıl yapılır: CLR konsol uygulamaları oluşturma (C + +/ CLI) | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - console applications, templates
 - CLR console applications, project template
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 446ed0c6fb84990db572e1e1ead5c2ab5094ec70
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fa45578b1e773e954fe692bd1c49e311626c35de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525686"
 ---
 # <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2073 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2073
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2073
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2073
 ms.assetid: 57908234-be7a-4ce9-b0a7-8b1ad621865e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 950ca9551a605da392c1f033cb1784ff43a7fefc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b45d512224ec32459e6da040a6abb0211278e78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112375"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523294"
 ---
 # <a name="compiler-error-c2073"></a>Derleyici Hatası C2073
 

@@ -1,27 +1,17 @@
 ---
-title: Çerçeve Windows neler | Microsoft Docs
-ms.custom: ''
+title: Çerçeve Pencerelerinin Görevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - frame windows [MFC], about frame windows
 - frame windows [MFC], tasks
 - MFC, frame windows
 ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf97fb086f9ede43f9679e66a7c917b800f97dc8
-ms.sourcegitcommit: e4a690bf33b44432179de0bc537e26616d13c553
+ms.openlocfilehash: ea35b98e5234c10a10143bad1d35fdd1b4510ced
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892195"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508777"
 ---
 # <a name="what-frame-windows-do"></a>Çerçeve Pencerelerinin Görevi
 
