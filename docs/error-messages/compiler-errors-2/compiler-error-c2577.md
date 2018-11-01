@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2577 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2577
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2577
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2577
 ms.assetid: fc79ef83-8362-40a2-9257-8037c3195ce4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5d9a2b09fc9b8b15c4fc21f5eb537f18f5d3b03e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4406aa90b26bc517308132ae9cccd003d44a9aad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530552"
 ---
 # <a name="compiler-error-c2577"></a>Derleyici Hatası C2577
 

@@ -1,29 +1,19 @@
 ---
-title: inline_recursion | Microsoft Docs
-ms.custom: ''
+title: inline_recursion
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - inline_recursion_CPP
 - vc-pragma.inline_recursion
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, inline_recursion
 - inline_recursion pragma
 ms.assetid: cfef5791-63b7-45ac-9574-623747b9b9c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a51428d32c1e7e5863e777302c3c55b728ce11f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 635d33d91e779d88b56e353d0cddf6b34b313855
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523861"
 ---
 # <a name="inlinerecursion"></a>inline_recursion
 Doğrudan veya karşılıklı özyinelemeli işlev çağrıları satır içi genişlemeyi denetler.

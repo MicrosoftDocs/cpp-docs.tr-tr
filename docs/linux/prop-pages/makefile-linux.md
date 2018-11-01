@@ -1,45 +1,35 @@
 ---
 title: Genel Özellikler (Linux C++ derleme görevleri dosyası projesi) | Microsoft Docs
-ms.custom: ''
 ms.date: 9/26/2017
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: 6fb23d2c7275788b05fe4450613770c268ca6c64
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: fb742d552d0b70ba5f5c406dd43bdf4cf8d1914b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524598"
 ---
-# <a name="makefile-project-properties-linux-c"></a>Derleme görevleri dosyası proje özellikleri (Linux C++)
+# <a name="makefile-project-properties-linux-c"></a>Derleme görevleri dosyası özellikleri (Linux C++)
 
-Bu bir Linux Makefile proje ile kullanılabilen özellikleri kısmi bir listesidir. Birçok Makefile proje özelliklerini Linux C++ konsol uygulaması proje özelliklerini aynıdır.
+Bu Linux Makefile projesi içinde mevcut olan özelliklerin kısmi bir listesidir. Çok sayıda derleme görevleri dosyası proje özellikleri için Linux C++ konsol uygulaması projesi özellikleri aynıdır.
 
 ## <a name="general"></a>Genel
 
-Özellik | Açıklama | Seçenekler
+Özellik | Açıklama | Seçenekleri
 --- | ---| ---
-Çıktı dizini | Çıktı dosyası dizini için göreli bir yol belirtir; ortam değişkenleri içerebilir.
-Ara dizini | Ara dosyası dizine göreli bir yol belirtir; ortam değişkenleri içerebilir.
-Günlük dosyası oluşturma | Günlük ne zaman oluşturulacağını etkin yazmak için yapılandırma günlük dosyasını belirtir.
-Yapılandırma türü | Bu yapılandırma oluşturur çıktı türünü belirtir. | **Dinamik kitaplığı (.so)** -dinamik kitaplığı (.so)<br>**Statik kitaplık (bir)** -statik kitaplık (bir)<br>**Uygulama (.out)** -uygulama (.out)<br>**Derleme görevleri dosyası** -derleme görevleri dosyası<br>
-Uzak yapı makinesi | Hedef makine ya da uzak yapı için kullanmak üzere cihaz dağıtmak ve hata ayıklama.
-Uzak derleme kök dizini | Uzak makinenin veya cihazın bir dizin yolunu belirtir.
-Uzak derleme proje dizini | Uzak makinede veya aygıt proje için bir dizin yolunu belirtir.
+Çıkış dizini | Çıkış dosyası dizinine göreli bir yol belirtir; ortam değişkenleri içerebilir.
+Ara dizin | Ara dosya dizinine göreli bir yol belirtir; ortam değişkenleri içerebilir.
+Derleme günlüğü dosyası | Günlük kaydı ne zaman oluşturulacağını yazılacak derleme günlüğü dosyasını belirtir.
+Yapılandırma türü | Bu yapılandırmanın oluşturduğu çıkışın türünü belirtir. | **Dinamik kitaplık (.so)** -dinamik kitaplık (.so)<br>**Statik kitaplık (.a)** -statik kitaplık (.a)<br>**Uygulama (.out)** -uygulama (.out)<br>**Derleme görevleri dosyası** -derleme görevleri dosyası<br>
+Uzaktan derleme makinesi | Dağıtma ve hata ayıklama hedef makine veya uzak derleme için kullanılacak cihaz.
+Uzaktan derleme kök dizini | Uzak makine veya cihazdaki bir dizinin yolunu belirtir.
+Uzaktan derleme proje dizini | Uzak makine veya cihaz projesi için bir dizinin yolunu belirtir.
 
 ## <a name="debugging"></a>Hata Ayıklama
 
-Bkz: [hata ayıklayıcı özellikleri (Linux C++)](debugging-linux.md)
+Bkz: [hata ayıklayıcı, özellikleri (Linux C++)](debugging-linux.md)
 
-## <a name="copy-sources"></a>Kaynakları kopyalama
+## <a name="copy-sources"></a>Kaynakları Kopyala
 
 Bkz: [kopyalama kaynakları proje özellikleri (Linux C++)](copy-sources-project.md).
 
@@ -49,65 +39,65 @@ Bkz: [kopyalama kaynakları proje özellikleri (Linux C++)](copy-sources-project
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Oluşturma öncesi olay aracını çalıştırmak için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma öncesi olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzak sisteme kopyalama için ek dosyalar belirtir. İsteğe bağlı olarak listesi yerel bir uzak eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: fullremotepath1; = fulllocalpath2: yerel bir dosya kopyalanabildiği belirtilen uzak konuma uzak sistem üzerindeki fullremotepath2 =.
+Komut satırı | Derleme öncesi olay aracının çalıştırması için bir komut satırı belirtir.
+Açıklama | Derleme öncesi olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sisteme kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste yerel için eşleme çiftlerine şunun gibi bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: = fullremotepath1; fulllocalpath2: = fulllocalpath2, burada bir yerel dosya kopyalanabilir uzak sistemde belirtilen uzak konuma.
 
 ### <a name="post-build-event"></a>Derleme sonrası olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Oluşturma sonrası olay aracını çalıştırmak için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma sonrası olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzak sisteme kopyalama için ek dosyalar belirtir. İsteğe bağlı olarak listesi yerel bir uzak eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: fullremotepath1; = fulllocalpath2: yerel bir dosya kopyalanabildiği belirtilen uzak konuma uzak sistem üzerindeki fullremotepath2 =.
+Komut satırı | Derleme sonrası olay aracının çalıştırması için bir komut satırı belirtir.
+Açıklama | Derleme sonrası olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sisteme kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste yerel için eşleme çiftlerine şunun gibi bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: = fullremotepath1; fulllocalpath2: = fulllocalpath2, burada bir yerel dosya kopyalanabilir uzak sistemde belirtilen uzak konuma.
 
-### <a name="remote-pre-build-event"></a>Uzak oluşturma öncesi olay
-
-Özellik | Açıklama
---- | ---
-Komut satırı | Uzak sistemde çalıştırmak oluşturma öncesi olay aracı için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma öncesi olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzaktaki sistemden kopyalamak için ek dosyalar belirtir. İsteğe bağlı olarak listeden uzak olarak yerel eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fullremotepath1: fulllocalpath1; = fullremotepath2: Uzak bir dosya kopyalanabildiği yerel makine üzerinde belirtilen konuma fulllocalpath2 =.
-
-### <a name="remote-post-build-event"></a>Uzak oluşturma sonrası olay
+### <a name="remote-pre-build-event"></a>Uzaktan derleme öncesi olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Uzak sistemde çalıştırmak oluşturma sonrası olay aracı için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma sonrası olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzaktaki sistemden kopyalamak için ek dosyalar belirtir. İsteğe bağlı olarak listeden uzak olarak yerel eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fullremotepath1: fulllocalpath1; = fullremotepath2: Uzak bir dosya kopyalanabildiği yerel makine üzerinde belirtilen konuma fulllocalpath2 =.
+Komut satırı | Derleme öncesi olay aracının uzak sistemde çalıştırılması bir komut satırı belirtir.
+Açıklama | Derleme öncesi olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sistemden kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste olarak şunun gibi bir söz dizimi kullanılarak yerel eşleme çiftlerine için sağlanabilir: fullremotepath1: = fulllocalpath1; fulllocalpath2: = fulllocalpath2, burada bir uzak dosya kopyalanabilir yerel makinede belirtilen konuma.
+
+### <a name="remote-post-build-event"></a>Uzaktan derleme sonrası olay
+
+Özellik | Açıklama
+--- | ---
+Komut satırı | Derleme sonrası olay aracının uzak sistemde çalıştırılması için bir komut satırı belirtir.
+Açıklama | Derleme sonrası olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sistemden kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste olarak şunun gibi bir söz dizimi kullanılarak yerel eşleme çiftlerine için sağlanabilir: fullremotepath1: = fulllocalpath1; fulllocalpath2: = fulllocalpath2, burada bir uzak dosya kopyalanabilir yerel makinede belirtilen konuma.
 
 ## <a name="cc"></a>C/C++
 
 ### <a name="intellisense"></a>IntelliSense
 
-IntelliSense özellikleri ipuçları için IntelliSense altyapısı sağlamak üzere proje veya dosya düzeyinde ayarlanabilir. Derleme etkilemez.
+IntelliSense özelliklerini ipuçları IntelliSense altyapısı sağlamak için proje veya dosya düzeyinde ayarlanabilir. Derleme etkilemez.
 
 Özellik | Açıklama
 --- | ---
-Arama Yolu Ekle | Eklenen dosyalar çözmek için Include arama yolu belirtir.
-Zorlanan içerir | Dahil edilen zorlanır dosyalarını belirtir.
-Önişlemci tanımları | Ön İşlemci kaynak dosyalar tarafından kullanılan tanımlar belirtir.
-Önişlemci tanımları tanımlarını Kaldır | Bir veya daha fazla önişlemci undefines belirtir.     (/U[macro])
-Ek Seçenekler | C++ dosyalarını ayrıştırırken IntelliSense tarafından kullanılacak ek derleyici anahtarları belirtir.
+Arama Yolu Ekle | Eklenen dosyaların çözümlenmesi için ekleme kodu arama yolunu belirtir.
+Zorlanmış içerir | Dahil edilen zorlanarak eklenmiş dosyaları belirtir.
+Önişlemci tanımları | Kullanılan kaynak kodları tarafından önişlemci tanımlarını belirtir.
+Ön İşlemci tanımlarını Kaldır | Bir veya daha çok önişlemci tanımsızı belirtir.     (/U[makro]))
+Ek Seçenekler | C++ dosyaları ayrıştırılırken IntelliSense tarafından kullanılacak ek derleyici anahtarlarını belirtir.
 
 ### <a name="build"></a>Derleme
 
 Özellik | Açıklama
 --- | ---
-Komut satırı derleme | 'Derleme' komutunu çalıştırmak için komut satırını belirtir.
-Tüm komut satırı yeniden oluşturma | 'Rebuild All' komutunu çalıştırmak için komut satırını belirtir.
-Komut satırı Temizle | 'Temiz' komutunu çalıştırmak için komut satırını belirtir.
+Komut satırı derleme | 'Build' komutu için çalıştırılacak komut satırını belirtir.
+Rebuild all komut satırı | 'Tümünü yeniden derle' komutu için çalıştırılacak komut satırını belirtir.
+Temizle komut satırı | 'Temizle' komutu için çalıştırılacak komut satırını belirtir.
 
 ### <a name="remote-build"></a>Uzak derleme
 
 Özellik | Açıklama
 --- | ---
-Komut satırı derleme | 'Derleme' komutunu çalıştırmak için komut satırını belirtir. Bu uzak sistemde yürütülür.
-Tüm komut satırı yeniden oluşturma | 'Rebuild All' komutunu çalıştırmak için komut satırını belirtir. Bu uzak sistemde yürütülür.
-Komut satırı Temizle | 'Temiz' komutunu çalıştırmak için komut satırını belirtir. Bu uzak sistemde yürütülür.
-Çıktılar | Uzak sistem üzerindeki uzak yapı tarafından oluşturulan çıkış belirtir.
+Komut satırı derleme | 'Build' komutu için çalıştırılacak komut satırını belirtir. Bu, uzak sistemde çalıştırılır.
+Rebuild all komut satırı | 'Tümünü yeniden derle' komutu için çalıştırılacak komut satırını belirtir. Bu, uzak sistemde çalıştırılır.
+Temizle komut satırı | 'Temizle' komutu için çalıştırılacak komut satırını belirtir. Bu, uzak sistemde çalıştırılır.
+Çıktılar | Uzak sistemdeki Uzak derleme tarafından oluşturulan çıkışları belirtir.

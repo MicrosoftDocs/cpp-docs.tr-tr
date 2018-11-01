@@ -1,29 +1,20 @@
 ---
-title: Arabirim işaretçisi sınıfları (ATL) | Microsoft Docs
-ms.custom: ''
+title: Arabirim işaretçisi sınıfları (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.pointers.interface
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointers, to interfaces
 - interfaces, pointers classes
 - interface pointers classes
 ms.assetid: 712617a1-17ae-4b5c-a32c-a48b758df7a6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 19c3dd32a99eee7b2bb460598de5b5edeb03aeda
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 06879b4d638c0072b1e0a1c8cc70b2918cb67266
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761741"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524546"
 ---
 # <a name="interface-pointers-classes"></a>Arabirim işaretçisi sınıfları
 

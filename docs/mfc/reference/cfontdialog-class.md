@@ -1,10 +1,6 @@
 ---
-title: CFontDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFontDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFontDialog
 - AFXDLGS/CFontDialog
@@ -22,8 +18,6 @@ f1_keywords:
 - AFXDLGS/CFontDialog::IsStrikeOut
 - AFXDLGS/CFontDialog::IsUnderline
 - AFXDLGS/CFontDialog::m_cf
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFontDialog [MFC], CFontDialog
 - CFontDialog [MFC], DoModal
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - CFontDialog [MFC], IsUnderline
 - CFontDialog [MFC], m_cf
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fb03a63b922a2718c1b17fdb4970f80da3b8b5a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5c9e3a7de10b6ba0913b02c5f79dcc63c89adce5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054845"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525183"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: _commit | Microsoft Docs
-ms.custom: ''
+title: _commit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _commit
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _commit
 - commit
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], flushing
 - flushing files to disk
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - _commit function
 - committing files to disk
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3e9bc746c347bfb60fb78edbf025b676f8218c66
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8408158cb3d4ef0d29d9af24d8a2acbd28e00192
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523077"
 ---
 # <a name="commit"></a>_commit
 
@@ -58,25 +48,25 @@ int _commit(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan dosyaya başvuran dosya tanımlayıcısı.
+Açık dosyaya başvuran dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_commit** başarıyla dosyasıysa 0 döndürür diske temizlendi. Dönüş değeri-1 hata gösterir.
+**_commit** dosya başarılı olursa 0 döndürür. diske temizlendi. -1 dönüş değeri bir hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Commit** işlevi ile ilişkili dosya yazmak için işletim sistemi zorlar *fd* diske. Bu çağrı, belirtilen dosya hemen değil işletim sisteminin istediğiniz kadar Temizlenen sağlar.
+**_Commit** işlevi, ilişkili dosya yazmak için işletim sistemi zorlar *fd* diske. Bu çağrı, belirtilen dosya değil işletim sisteminin kararımıza hemen temizlenir sağlar.
 
-Varsa *fd* geçersiz dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi -1 döndürür ve **errno** ayarlanır **EBADF**.
+Varsa *fd* bir geçersiz dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** ayarlanır **EBADF**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
 |-------------|---------------------|----------------------|
 |**_commit**|\<io.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

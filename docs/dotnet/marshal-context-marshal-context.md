@@ -1,31 +1,21 @@
 ---
-title: marshal_context::marshal_context | Microsoft Docs
-ms.custom: ''
+title: marshal_context::marshal_context
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::interop::marshal_context::marshal_context
 - marshal_context::marshal_context
 - msclr.interop.marshal_context.marshal_context
 - marshal_context.marshal_context
-dev_langs:
-- C++
 helpviewer_keywords:
 - marshal_context class [C++], operations
 ms.assetid: 5f08c895-60b0-4f72-97ff-7ae37c68e853
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 02f238a8d9b9d484073794b9a75888325d95107b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a1a62c47450224aa2bcacde75038adf7a8cfbb9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399450"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532593"
 ---
 # <a name="marshalcontextmarshalcontext"></a>marshal_context::marshal_context
 

@@ -1,28 +1,17 @@
 ---
-title: 'Nasıl yapılır: bir kaynak (C++) oluştur | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: bir kaynak (C++) oluştur'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - toolbars [C++], resources
 - resource toolbars
 - resources [C++], creating
 ms.assetid: aad44914-9145-45a3-a7d8-9de89b366716
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 23717c35d0590c88a4904e5b6b6ddb0e4c7ccffc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 75f7f722b354e60b86abdeb9a3f9a01469aefcf8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513711"
 ---
 # <a name="how-to-create-a-resource"></a>Nasıl Yapılır: Kaynak Oluşturma
 

@@ -1,10 +1,6 @@
 ---
-title: _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _vfprintf_p
 - _vfwprintf_p
@@ -32,8 +28,6 @@ f1_keywords:
 - _vftprintf_p
 - _vfprintf_p_l
 - vfprintf_p
-dev_langs:
-- C++
 helpviewer_keywords:
 - vfprintf_p_l function
 - _vftprintf_p_l function
@@ -49,16 +43,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vfwprintf_p function
 ms.assetid: 4d4a0914-4175-4b65-9ca1-037c4ef29147
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e4e7776688fa95a81cd76e6db48f38f82bc076d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7e93972ccd77d730d873177fe92f958877c83fe4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195300"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515316"
 ---
 # <a name="vfprintfp-vfprintfpl-vfwprintfp-vfwprintfpl"></a>_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 

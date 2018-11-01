@@ -1,14 +1,8 @@
 ---
-title: OLE kapsayıcı sınıfları | Microsoft Docs
-ms.custom: ''
+title: OLE Kapsayıcı Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX classes [MFC]
 - container classes [MFC]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - OLE [MFC], classes
 - containers [MFC], OLE container applications
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e17161340881bb53601bc04dce6f5e375f746b02
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 518ae4889a2c5d9dae10e5b5cba6845010ba883c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404715"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517149"
 ---
 # <a name="ole-container-classes"></a>OLE Kapsayıcı Sınıfları
 

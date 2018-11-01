@@ -1,23 +1,13 @@
 ---
-title: İşlev türleri | Microsoft Docs
-ms.custom: ''
+title: İşlev Türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 7e33d5f4-dabb-406d-afb3-13777b995028
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6dfb36dc9e177fdb9ad196c0e2a8ad0f352d5f2d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 22778f3eaefa6dbcf5f85e54c0940867ef52ab72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709572"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526413"
 ---
 # <a name="function-types"></a>İşlev Türleri
 

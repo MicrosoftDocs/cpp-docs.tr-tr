@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Kayıtları Güncelleştirmesi (ODBC) nasıl kaydeder. | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - records, updating
 - ODBC recordsets, updating
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: bafc3a47b02fc73a3252d0a7830fc989015a0628
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3b9bea1cc8fc0a11773d2392f88fff333eb7084f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510012"
 ---
 # <a name="recordset-how-recordsets-update-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)
 
