@@ -1,10 +1,6 @@
 ---
-title: CWin32Heap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWin32Heap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CWin32Heap
 - ATLMEM/ATL::CWin32Heap
@@ -17,21 +13,15 @@ f1_keywords:
 - ATLMEM/ATL::CWin32Heap::Reallocate
 - ATLMEM/ATL::CWin32Heap::m_bOwnHeap
 - ATLMEM/ATL::CWin32Heap::m_hHeap
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWin32Heap class
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3b10648a3251a705085e31559a98b6ee4957c72
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8ab0d7b8a0eda44adc900884ef5337b22e621806
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508322"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap sınıfı
 

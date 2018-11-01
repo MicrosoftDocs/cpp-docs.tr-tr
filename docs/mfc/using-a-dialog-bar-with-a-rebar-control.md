@@ -1,29 +1,19 @@
 ---
-title: Rebar denetimiyle birlikte bir iletişim çubuğu kullanma | Microsoft Docs
-ms.custom: ''
+title: Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - WM_EX_TRANSPARENT
-dev_langs:
-- C++
 helpviewer_keywords:
 - WS_EX_TRANSPARENT style
 - rebar controls [MFC], dialog bars
 - dialog bars [MFC], using with rebar bands
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f9d4155fec333061c65f148f29e849dc4717f0d2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fdef763db5085d6419f082ecd4dddca27a5b39b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073767"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554394"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 

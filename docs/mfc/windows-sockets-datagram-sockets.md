@@ -1,12 +1,6 @@
 ---
-title: 'Windows Yuvaları: Veri birimi yuvaları | Microsoft Docs'
-ms.custom: ''
+title: 'Windows Yuvaları: Veri Birimi Yuvaları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - sockets [MFC], datagram
 - Windows Sockets [MFC], bi-directional data flow
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - Windows Sockets [MFC], datagram
 - sockets [MFC], bi-directional data flow
 ms.assetid: bec16a1c-74c0-4ff9-8c18-c2d87897d264
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a63caa786ce5198fb902b8d48101507fb2b4113
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 886409d4072a77244cff415c6f0a6a3f533e42d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444222"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462133"
 ---
 # <a name="windows-sockets-datagram-sockets"></a>Windows Yuvaları: Veri Birimi Yuvaları
 

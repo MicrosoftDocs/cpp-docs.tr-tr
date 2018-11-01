@@ -1,27 +1,17 @@
 ---
-title: Pencere sınıfı makroları | Microsoft Docs
-ms.custom: ''
+title: Pencere sınıfı makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlwin/ATL::DECLARE_WND_CLASS
 - atlwin/ATL::DECLARE_WND_SUPERCLASS
 - atlwin/ATL::DECLARE_WND_CLASS_EX
-dev_langs:
-- C++
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e151ba4fc2adbe6dab2397d68658b0cb1eb5ef1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 75a6a769770c9de8b26c08fae852197cdb99248e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503161"
 ---
 # <a name="window-class-macros"></a>Pencere sınıfı makroları
 

@@ -1,30 +1,20 @@
 ---
-title: CPrimitiveElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPrimitiveElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CPrimitiveElementTraits
 - ATLCOLL/ATL::CPrimitiveElementTraits
 - ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE
 - ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPrimitiveElementTraits class
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa5f96b8937168126509025735d20fab7b35c2b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7173cb5d28f574043710dffe91057f73358770e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444804"
 ---
 # <a name="cprimitiveelementtraits-class"></a>CPrimitiveElementTraits sınıfı
 

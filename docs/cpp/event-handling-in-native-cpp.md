@@ -1,25 +1,15 @@
 ---
-title: Yerel C++ dilinde olay işleme | Microsoft Docs
-ms.custom: ''
+title: Yerel C++'da Olay İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling [C++], Visual C++
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89f6ab1bd378309750984a466c30c224bee89ca7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 210eea760e80814041b4e97f50c4164ef98d75e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060037"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457557"
 ---
 # <a name="event-handling-in-native-c"></a>Yerel C++'da Olay İşleme
 

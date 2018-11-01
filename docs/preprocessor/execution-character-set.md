@@ -1,29 +1,18 @@
 ---
-title: execution_character_set | Microsoft Docs
-ms.custom: ''
+title: execution_character_set
 ms.date: 10/18/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - execution_character_set
 - vc-pragma.execution_character_set
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragma execution_character_set
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b81832ba31fc8ef36510ce4f35c9fb1a5f3426b9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ff6ff550f39dc746bb687d8d3147baa0837a6cff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075027"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472676"
 ---
 # <a name="executioncharacterset"></a>execution_character_set
 

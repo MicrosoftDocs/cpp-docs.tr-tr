@@ -1,12 +1,6 @@
 ---
-title: Framework'ün kodunuzu çağırması | Microsoft Docs
-ms.custom: ''
+title: Framework'ün Kodunuzu Çağırması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - control flow [MFC], MFC framework and your code
 - events [MFC], command routing in MFC
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - application-specific events [MFC]
 - command routing [MFC], MFC
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68db9107a8d2d113e9118c9cf125acb2798edcd4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fd9dbc58c4887a1ad62d5690ec38ed96cf77feac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444544"
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
 

@@ -1,27 +1,17 @@
 ---
-title: XMMWORD | Microsoft Docs
-ms.custom: ''
+title: XMMWORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - XMMWORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - XMMWORD directive
 ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fbb578c5e168f53bc1b4e217713efa1ea329743
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a248c9318764cd632fed2afd8481ee2b2102fe31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689220"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479788"
 ---
 # <a name="xmmword"></a>XMMWORD
 
@@ -38,5 +28,5 @@ ms.locfileid: "43689220"
 ## <a name="example"></a>Örnek
 
 ```asm
-    movdqa   xmm0, xmmword ptr [ebx]
+    movdqa   xmm0, xmmword ptr [ebx]
 ```

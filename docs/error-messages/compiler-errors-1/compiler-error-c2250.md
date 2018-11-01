@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2250 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2250
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2250
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2250
 ms.assetid: f990986f-5c7d-4af4-a25c-b35540f1e217
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bee638b3e716460f54def3dc347810c874706708
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ea426e071eecb09359c3a99a6f569f628595784a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438057"
 ---
 # <a name="compiler-error-c2250"></a>Derleyici Hatası C2250
 

@@ -1,10 +1,6 @@
 ---
-title: CAnimationGroup sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationGroup sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationGroup
 - AFXANIMATIONCONTROLLER/CAnimationGroup
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationGroup::m_pStoryboard
 - AFXANIMATIONCONTROLLER/CAnimationGroup::m_nGroupID
 - AFXANIMATIONCONTROLLER/CAnimationGroup::m_pParentController
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationGroup [MFC], CAnimationGroup
 - CAnimationGroup [MFC], Animate
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 803df920e40683d3fd2f3920e2fb3471d7b4483d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b05de00697aa019382014402f7701a8341da5198
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381357"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512924"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
 

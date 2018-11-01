@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2383 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2383
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2383
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2383
 ms.assetid: 6696221d-879c-477a-a0f3-a6edc15fd3d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c529c22636f112291fa53b852899cad78dac589
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 06d4c19208bd242169e1cd07a71e8a568f46f7b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113233"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466098"
 ---
 # <a name="compiler-error-c2383"></a>Derleyici Hatası C2383
 

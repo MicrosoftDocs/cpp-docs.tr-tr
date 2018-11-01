@@ -1,10 +1,6 @@
 ---
-title: Catlpreviewctrlımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Catlpreviewctrlımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlPreviewCtrlImpl
 - ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl
@@ -21,21 +17,15 @@ f1_keywords:
 - ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_plf
 - ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrBack
 - ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlPreviewCtrlImpl class
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 575af8c372e0d935e1ca7c262a70466a97885648
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ffa2613909145bffaf901b2d5bae4129e6d434c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053961"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505059"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>Catlpreviewctrlımpl sınıfı
 

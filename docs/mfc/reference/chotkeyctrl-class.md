@@ -1,10 +1,6 @@
 ---
-title: CHotKeyCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHotKeyCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHotKeyCtrl
 - AFXCMN/CHotKeyCtrl
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXCMN/CHotKeyCtrl::GetKeyName
 - AFXCMN/CHotKeyCtrl::SetHotKey
 - AFXCMN/CHotKeyCtrl::SetRules
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHotKeyCtrl [MFC], CHotKeyCtrl
 - CHotKeyCtrl [MFC], Create
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12aa039e0beede4f395da3de6eea4e6c956f9373
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1ab89c860813996360cddbf0caf5d4ebc395603d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452721"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 

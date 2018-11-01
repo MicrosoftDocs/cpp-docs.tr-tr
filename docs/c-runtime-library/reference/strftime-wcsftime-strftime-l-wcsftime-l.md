@@ -1,10 +1,6 @@
 ---
-title: strftime, wcsftime, _strftime_l, _wcsftime_l | Microsoft Docs
-ms.custom: ''
+title: strftime, wcsftime, _strftime_l, _wcsftime_l
 ms.date: 03/22/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strftime
 - _wcsftime_l
@@ -29,8 +25,6 @@ f1_keywords:
 - wcsftime
 - _strftime_l
 - _wcsftime_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strftime_l function
 - strftime function
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 573e89b7be9818ac45f70c7c614e3bf7869c95f7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 932a7827ef61a5e111f86f8bc44291827843b76e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505670"
 ---
 # <a name="strftime-wcsftime-strftimel-wcsftimel"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 
@@ -91,10 +81,10 @@ size_t _wcsftime_l(
 *strDest*<br/>
 Çıkış dizesi.
 
-*MaxSize*<br/>
-Boyutunu *strDest* karakter cinsinden arabellek (**char** veya **wchar_t**).
+*maxsıze*<br/>
+Boyutu *strDest* arabelleğinin karakter cinsinden ölçülen (**char** veya **wchar_t**).
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *timeptr*<br/>
@@ -105,17 +95,17 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strftime** yerleştirilen karakterlerin sayısını döndürür *strDest* ve **wcsftime** karşılık gelen geniş karakter sayısını verir.
+**strftime** yerleştirilen karakter sayısını döndürür *strDest* ve **wcsftime** karşılık gelen geniş karakter sayısını döndürür.
 
-Sonlandırma null gibi karakterler toplam sayısı ise birden fazla *maxsize*, her iki **strftime** ve **wcsftime** 0 ve içeriğini döndürmek  *strDest* belirsiz olduğundan.
+Toplam sayısı dahil, sonlandırıcı null karakter ise birden fazla *maxsıze*hem **strftime** ve **wcsftime** 0 ve içeriğini döndürmek  *strDest* belirsiz olduğundan.
 
-Karakter sayısını *strDest* değişmez değer karakter sayısına eşittir *biçimi* eklenebilir herhangi bir karakteri yanı sıra *biçimi* biçimlendirme kodları aracılığıyla. Bir dizenin sonlandırma null dönüş değeri sayılmaz.
+Karakter sayısı *strDest* değişmez karakter sayısına eşittir *biçimi* eklenebilir herhangi bir karakter yanı sıra *biçimi* biçimlendirme kodları aracılığıyla. Bir dizenin Sonlandırıcı null dönüş değeri katılmaz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strftime** ve **wcsftime** işlevleri biçimi **tm** saat değerinde *timeptr* sağlanan göre  *Biçim* bağımsız değişkeni ve deposu sonuç arabelleği *strDest*. En fazla *maxsize* karakter dizesini yerleştirilir. Alanları açıklaması *timeptr* yapısı için bkz: [asctime](asctime-wasctime.md). **wcsftime** joker karakter eşdeğerdir **strftime**; dize işaretçisi bağımsız değişkeni bir joker karakter dizesi işaret eder. Bu işlevler aynı şekilde aksi davranır.
+**Strftime** ve **wcsftime** işlevleri biçimi **tm** saat değerinde *timeptr* sağlanan göre  *Biçim* bağımsız değişkeni ve depolama arabelleğinde sonucu *strDest*. En fazla *maxsıze* karakter dizesini yerleştirilir. Alanları açıklamasını *timeptr* yapısı için bkz: [asctime](asctime-wasctime.md). **wcsftime** geniş karakter eşdeğerdir **strftime**; dize işaretçisi bağımsız değişkeni bir geniş karakter dizesine işaret eder. Bu işlevler, aynı şekilde davranır.
 
-Bu işlev parametrelerini doğrular. Varsa *strDest*, *biçimi*, veya *timeptr* null işaretçinin veya **tm** veri yapısı tarafından ele *timeptr* (örneğin, tarih veya saat dışında aralık değerleri içeriyorsa), geçersiz veya *biçimi* anlatıldığıgibigeçersizparametreişleyicisiçağrılır,dizegeçersizbirbiçimlendirmekoduiçerir[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için 0 işlevi döndürür ve kümelerini yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+Bu işlev, parametrelerini doğrular. Varsa *strDest*, *biçimi*, veya *timeptr* null bir işaretçiyse veya **tm** veri yapısı tarafından ele *timeptr* (örneğin, tarih veya saat aralık değerleri içeriyorsa), geçersiz veya *biçimi* dizesi geçersiz biçimlendirme kodu içerir, içindeaçıklananşekildegeçersizparametreişleyicisiçağrılır[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev 0 döndürür yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -123,76 +113,76 @@ Bu işlev parametrelerini doğrular. Varsa *strDest*, *biçimi*, veya *timeptr* 
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsftime**|**strftime**|**strftime**|**wcsftime**|
 
-*Biçimi* bağımsız değişkeni oluşan bir veya daha fazla kodları; içinde **printf**, biçimlendirme kodları yüzde işaretiyle öncesinde (**%**). İle başlamayan karakter **%** için değişmeden kopyalanır *strDest*. **Lc_tıme** geçerli yerel ayar kategorisi etkiler çıktı biçimlendirmesi **strftime**. (Daha fazla bilgi için **lc_tıme**, bkz: [setlocale](setlocale-wsetlocale.md).) **Strftime** ve **wcsftime** işlevlerini kullanan ayarlanmış yerel ayar. **_Strftime_l** ve **_wcsftime_l** yerel bir parametre olarak geçirmesine ve ayarlanmış yerine kullanan dışında bu işlevlerin sürümleri aynı yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+*Biçimi* bağımsız değişkeni, bir veya daha fazla kodlarının; görüldüğü oluşur **printf**, biçimlendirme kodlarını yüzde işareti tarafından öncelenen (**%**). İle başlamayan karakter **%** için değişmeden kopyalanır *strDest*. **Lc_tıme** geçerli yerel ayarının kategori etkiler çıkış biçimini **strftime**. (Daha fazla bilgi için **lc_tıme**, bkz: [setlocale](setlocale-wsetlocale.md).) **Strftime** ve **wcsftime** işlevleri kullanmak şu anda ayarlanmış yerel ayar. **_Strftime_l** ve **_wcsftime_l** bu işlevlerin sürümleri, yerel ayar bir parametre olarak almak ve ayarlanmış yerine kullanan hariç, aynıdır yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-**Strftime** bu biçimlendirme kodları desteği çalışır:
+**Strftime** işlevleri bu kodları biçimlendirme desteği:
 
 |||
 |-|-|
 |Kod|Değiştirme dizesi|
-|**%a**|Yerel kısaltılmış haftanın günü adı|
-|**%A**|Tam haftanın günü adı yerel|
-|**%b**|Yerel kısaltılmış ay adı|
-|**%B**|Yerel tam ay adı|
-|**%c**|Yerel ayarlar için uygun tarih ve saat gösterimi|
-|**%C**|100 ile ayrılmış ve bir tamsayı olarak ondalık bir sayı (00−99) kısaltılır yıl|
-|**%d**|Ondalık bir sayı (01-31) olarak ayın günü|
+|**%a**|Kısaltılmış gün adını yerel|
+|**%A**|Yerel ayarında tam haftanın günü adı|
+|**%b**|Yerel ayar kısaltılmış ay adı|
+|**%B**|Tam ay adını yerel|
+|**%c**|Tarih ve saat temsili yerel ayar için uygun|
+|**%C**|100 ile ayrılmış ve bir tamsayı değerine kesilmiş (00−99) ondalık sayı olarak yıl|
+|**%d**|(01-31) ondalık sayı olarak ayın günü|
 |**%D**|Eşdeğer **%m/%d/%y**|
-|**%e**|Tek basamaklı boşlukla burada öncesinde ondalık bir sayı (1-31) olarak ayın günü|
+|**%e**|Tek basamaklı bir boşluk ile burada öncelenen (1-31) ondalık sayı olarak ayın günü|
 |**%F**|Eşdeğer **%Y-%m-%d**|
-|**%g**|Son 2 basamaklı bir ondalık sayı olarak ISO 8601 haftanın tabanlı yılın (00 - 99)|
-|**%G**|Ondalık bir sayı olarak ISO 8601 haftanın tabanlı yıl|
-|**%h**|Kısaltılmış ay adı (eşdeğer **%b**)|
-|**%H**|24 saat biçiminde saat (00 - 23)|
-|**%I**|Saat 12 saat biçiminde (01-12)|
-|**%j**|Ondalık bir sayı (001-366) olarak yılın günü|
-|**%m**|Ondalık bir sayı (01-12) olarak ay|
+|**%g**|Son 2 basamaklı bir ondalık sayı olarak ISO 8601 hafta tabanlı yılın (00 - 99)|
+|**%G**|ISO 8601 yıl hafta tabanlı bir ondalık sayı olarak|
+|**%h**|Kısaltılmış ay adını (eşdeğer **%b**)|
+|**%H**|Saat, 24 saat biçiminde (00 - 23)|
+|**%I**|Saat 12 saatlik biçimde (01-12)|
+|**%j**|Bir ondalık sayı (001-366) olarak yılın günü|
+|**%m**|(01-12) bir ondalık sayı olarak ayı|
 |**%M**|Ondalık sayı olarak dakika (00 - 59)|
 |**%n**|Yeni satır karakteri (**\n**)|
-|**%p**|Yerel dakikaları. 12 saatlik göstergesi|
+|**%p**|Yerel dakikaları. 12 saatlik düzende göstergesi|
 |**%r**|Yerel 12 saatlik zaman|
-|**%R**|Eşdeğer **% y: %M**|
+|**%R**|Eşdeğer **% H: %M**|
 |**%S**|İkinci bir ondalık sayı olarak (00 - 59)|
-|**%t**|Yatay sekme karakteri (**\t**)|
-|**%T**|Eşdeğer **y: % M: %s**, ISO 8601 saat biçimi|
-|**%u**|(1-7; ondalık bir sayı olarak ISO 8601 haftanın günü Pazartesi 1.)|
-|**%U**|Ondalık bir sayı olarak yılın hafta numarasını (00 - 53), ilk Pazar 1 haftanın ilk günü|
-|**%V**|ISO 8601 haftanın sayı ondalık bir sayı olarak (00 - 53)|
-|**%w**|Haftanın günü ondalık bir sayı olarak (0 - 6; Pazar 0'dır)|
-|**%W**|Ondalık bir sayı olarak yılın hafta numarasını (00 - 53), ilk Pazartesi günü 1 haftanın ilk günü|
+|**%t**|Yatay sekme karakterinin (**\t**)|
+|**%T**|Eşdeğer **% H: % M: %S**, ISO 8601 zaman biçimi|
+|**%u**|(1-7; ondalık sayı olarak ISO 8601 haftanın günü Pazartesi 1'dir)|
+|**%U**|Bir ondalık sayı olarak yıl hafta sayısı (00 - 53), ilk Pazar 1 haftanın ilk günü olduğu|
+|**%V**|ISO 8601 hafta numarası bir ondalık sayı olarak (00 - 53)|
+|**%w**|Ondalık sayı olarak haftanın günü (0 - 6; Pazar 0'dır)|
+|**%W**|Bir ondalık sayı olarak yıl hafta sayısı (00 - 53), ilk Pazartesi 1 haftanın ilk günü olduğu|
 |**%x**|Yerel ayar için tarih gösterimi|
-|**%X**|Yerel saat gösterimi|
-|**%y**|Ondalık sayı olarak century olmadan yıl (00 - 99)|
-|**%Y**|Ondalık sayı olarak century yıl|
-|**%z**|UTC uzaklığı ISO 8601 biçiminde; saat dilimi bilinmiyorsa herhangi bir karakter|
-|**%Z**|Yerel saat dilimi adı ya da kayıt defteri ayarlarına bağlı olarak, saat dilimi kısaltması; saat dilimi bilinmiyorsa herhangi bir karakter|
+|**%X**|Yerel ayar için zaman gösterimi|
+|**%y**|Olmadan century, ondalık sayı olarak yıl (00 - 99)|
+|**%Y**|Century, ondalık sayı olarak yılı|
+|**%z**|ISO 8601 biçimli UTC uzaklığı; saat dilimi bilinmiyorsa, herhangi bir karakter|
+|**%Z**|Yerel saat dilimi adını veya kayıt defteri ayarlarına bağlı olarak saat dilimi kısaltması; saat dilimi bilinmiyorsa, herhangi bir karakter|
 |**%%**|Yüzde işareti|
 
-Olarak **printf** işlevi, **#** bayrağı herhangi bir biçimlendirme kodu önek. Bu durumda, biçim kodu anlamını şu şekilde değiştirilir.
+Olarak **printf** işlevi **#** bayrağı biçimlendirme kodlar önek. Bu durumda, biçim kodu anlamı şu şekilde değiştirilir.
 
-|Biçim Kodu|Açıklama|
+|Kodu biçimlendirme|Açıklama|
 |-----------------|-------------|
-|**% #a**, **%#A**, **%#b**, **%#B**, **%#g**, **%#G**, **%#h**, **%#n**, **%#p**, **%#t**, **%#u**, **%#w**, **%#X** , **%#z**, **%#Z**, **%#%**|**#** Bayrak göz ardı edilir.|
-|**%#c**|Uzun tarih ve saat gösterimi, yerel uygun. Örneğin: "Salı, 14 Mart 1995, 12:41:29".|
-|**%#x**|Uzun tarih gösterimi, yerel ayar için uygun. Örneğin: "Salı, 14 Mart 1995".|
-|**%#d**, **%#D**, **%#e**, **%#F**, **%#H**, **% #I**, **%#j**, **%#m**, **%#M**, **%#r**, **%#R**, **%#S**, **%#T** , **%#U**, **%#V**, **%#W**, **%#y**, **%#Y**|Öndeki sıfırların veya alanları (varsa) kaldırın.|
+|**% #a**, **%#A**, **%#b**, **%#B**, **%#g**, **%#G**, **%#h**, **%#n**, **%#p**, **%#t**, **%#u**, **%#w**, **%#X** , **%#z**, **%#Z**, **%#%**|**#** bayrağı yok sayılır.|
+|**%#c**|Uzun tarih ve saat gösterimi, yerel ayar için uygun. Örneğin: "Salı, 14 Mart 1995, 12:41:29".|
+|**%#x**|Uzun tarih gösterimi, yerel ayara uygun. Örneğin: "Salı, 14 Mart 1995".|
+|**%#d**, **%#D**, **%#e**, **%#F**, **%#H**, **% #I**, **%#j**, **%#m**, **%#M**, **%#r**, **%#R**, **%#S**, **%#T** , **%#U**, **%#V**, **%#W**, **%#y**, **%#Y**|Baştaki sıfırlar veya alanları (varsa) kaldırın.|
 
-ISO 8601 haftanın günü ve yıl hafta tabanlı üretilen **%V**, **%g**, ve **%G**, Pazartesi günü başlar haftada bir hafta 1 Ocak ilk olan 4, içeren hafta olduğu kullanır en az dört gün yılı içeren haftadır. Yılın ilk Pazartesi 2, 3 veya 4, önceki gün önceki yılın son haftanın bir parçasıdır. Bu gün **%V** 53 ve her iki tarafından değiştirilir **%g** ve **%G** önceki yıl basamak tarafından değiştirilir.
+ISO 8601 haftanın günü ve hafta tabanlı yıl tarafından üretilen **%V**, **%g**, ve **%G**, Pazartesi günü başlayan bir hafta hafta 1 Ocak, ilk 4, içeren hafta olduğu kullanır. Bu hafta yılın en az dört günü içerir. Yılın ilk Pazartesi 2, 3 veya 4, önceki gün önceki yılın geçen hafta parçasıdır. Söz konusu gün için **%V** 53 hem de tarafından değiştirilir **%g** ve **%G** önceki yılın basamak değiştirilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strftime**|\<time.h >|
-|**wcsftime**|\<time.h > veya \<wchar.h >|
-|**_strftime_l**|\<time.h >|
-|**_wcsftime_l**|\<time.h > veya \<wchar.h >|
+|**strftime**|\<TIME.h >|
+|**wcsftime**|\<TIME.h > veya \<wchar.h >|
+|**_strftime_l**|\<TIME.h >|
+|**_wcsftime_l**|\<TIME.h > veya \<wchar.h >|
 
-**_Strftime_l** ve **_wcsftime_l** Microsoft'a özgü işlevlerdir. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Strftime_l** ve **_wcsftime_l** Microsoft'a özgü işlevlerdir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [zaman](time-time32-time64.md).
+Örneğin bakın [zaman](time-time32-time64.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

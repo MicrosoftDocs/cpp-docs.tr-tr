@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3418 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3418
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3418
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3418
 ms.assetid: 54042c04-3c45-41c1-bad7-90f9ee05a21b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 26fa67da6f24e578319660c17cb48d7d715be408
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8456e9b17b72cd4ac98349d2f2871a1c59f56911
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033283"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482778"
 ---
 # <a name="compiler-error-c3418"></a>Derleyici Hatası C3418
 

@@ -1,28 +1,18 @@
 ---
-title: CDefaultElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDefaultElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CDefaultElementTraits
 - atlcoll/ATL::CDefaultElementTraits
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDefaultElementTraits class
 ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 44822df983021846e9b4168343252affd971accd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2cf93adc5b78a8fa31a603d58f0e4dbe1efb0d6d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097282"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494694"
 ---
 # <a name="cdefaultelementtraits-class"></a>CDefaultElementTraits sınıfı
 

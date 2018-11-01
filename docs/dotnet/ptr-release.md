@@ -1,31 +1,21 @@
 ---
-title: PTR::Release | Microsoft Docs
-ms.custom: ''
+title: ptr::Release
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr.Release
 - ptr::Release
 - msclr.com.ptr.Release
 - msclr::com::ptr::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - Release method
 ms.assetid: 7855781e-e4f6-4ad5-86a5-a81e2c3d90db
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: b2cd8578aee71f35755c277ae01c9e692a6e9dbb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 276d79688213864c31cf04a59f48a8799bf84371
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437059"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544930"
 ---
 # <a name="ptrrelease"></a>ptr::Release
 

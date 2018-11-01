@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4534 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4534
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - c4534
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4534
 ms.assetid: ec2adf3b-d7a1-4005-bb0c-5d219df78dc8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ad85a6b9dff1715cbdce9738608f26c8680319d0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a2af04502082f7fb30d59af5e6434161227c6d30
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099817"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437283"
 ---
 # <a name="compiler-warning-level-3-c4534"></a>Derleyici Uyarısı (Düzey 3) C4534
 

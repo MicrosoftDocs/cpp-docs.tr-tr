@@ -1,10 +1,6 @@
 ---
-title: putchar, putwchar | Microsoft Docs
-ms.custom: ''
+title: putchar, putwchar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - putchar
 - putwchar
@@ -25,8 +21,6 @@ f1_keywords:
 - putchar
 - putwchar
 - _puttchar
-dev_langs:
-- C++
 helpviewer_keywords:
 - putchar function
 - _puttchar function
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - standard output, writing to
 - putwchar function
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 00016bb191cc3a4d7b4df47f5252706a129c3583
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 69ae5d7a24d7cf440d1dfb5ad716ee106f91576c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199737"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483365"
 ---
 # <a name="putchar-putwchar"></a>putchar, putwchar
 

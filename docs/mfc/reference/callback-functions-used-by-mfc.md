@@ -1,30 +1,20 @@
 ---
-title: MFC tarafından kullanılan geri çağırma işlevleri | Microsoft Docs
-ms.custom: ''
+title: MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.functions
-dev_langs:
-- C++
 helpviewer_keywords:
 - callback functions [MFC], MFC
 - MFC, callback functions
 - functions [MFC], callback
 - callback functions [MFC]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3093ca60b222512e517400f478fc9d635a6f867
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 17078bd9d916aac2676180f8854d93a4de92aa4a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555616"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 

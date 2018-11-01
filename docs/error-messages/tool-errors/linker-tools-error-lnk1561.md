@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1561 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1561
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1561
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1561
 ms.assetid: cb0b709b-7c9c-4496-8a4e-9e1e4aefe447
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac24ed0c4aff4cbd7f0ea95ff71d0b8c4b3be09c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ad216c7b7a09b8dd5d2ca2b86bc3a386fa18a552
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552821"
 ---
 # <a name="linker-tools-error-lnk1561"></a>Bağlayıcı Araçları Hatası LNK1561
 

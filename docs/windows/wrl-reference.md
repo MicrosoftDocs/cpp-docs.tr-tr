@@ -1,24 +1,14 @@
 ---
-title: WRL başvurusu | Microsoft Docs
-ms.custom: ''
+title: WRL Başvurusu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 5779dae8-8634-4c77-aa8b-9a348692a2bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0b8911ae7d9519e0c8a5e06a9223c337963c850c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a72ab15bcfa56ab55401943b99bc1f623c9f1e9a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061488"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455698"
 ---
 # <a name="wrl-reference"></a>WRL Başvurusu
 

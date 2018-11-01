@@ -1,27 +1,16 @@
 ---
-title: MFC veritabanı sınıfları (ODBC ve DAO) | Microsoft Docs
-ms.custom: ''
+title: MFC Veritabanı Sınıfları (ODBC ve DAO)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC, ODBC classes
 - MFC, database applications
 ms.assetid: 88aabe65-84e3-4122-b636-5d334a5fe570
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: da3f1e77d1750c587078d15030f75b491e0ec88a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c6baa07b5bc5e63927f00ecf912c69f8c96a34f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520386"
 ---
 # <a name="mfc-database-classes"></a>MFC veritabanı sınıfları
 

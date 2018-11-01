@@ -1,10 +1,6 @@
 ---
-title: 'Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn | Microsoft Docs'
-ms.custom: ''
+title: 'Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn'
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _j0
 - _j1
@@ -33,8 +29,6 @@ f1_keywords:
 - _y0
 - _y1
 - _yn
-dev_langs:
-- C++
 helpviewer_keywords:
 - Bessel functions
 - _j0 function
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cf461a7737ee1f23650ff80f203524c427fb644d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 682eaa99d0be1b959152ff94cc10a86aa68d988d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531869"
 ---
 # <a name="bessel-functions-j0-j1-jn-y0-y1-yn"></a>Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn
 
-Birinci veya ikinci türünü, siparişler Bessel işlevinin hesaplar 0, 1 veya n. Bessel işlevleri elektromanyetik dalga teorik matematik içinde yaygın olarak kullanılır.
+İlk veya ikinci tür, siparişler Bessel işlevi hesaplar 0, 1 veya n. Bessel işlevleri elektromanyetik dalga teorik Matematikte yaygın olarak kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -90,27 +80,27 @@ double _yn(
 Kayan nokta değeri.
 
 *n*<br/>
-Bessel işlevi sırasını tamsayı.
+Bessel işlevinin tamsayı sırası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamlar her Bessel işlevi döndürür *x*. Varsa *x* negatif **_y0**, **_y1**, veya **_yn** İşlevler, rutin kümeleri **errno** için **EDOM**, yazdırır bir **_domaın** hata iletisi **stderr**ve döndürür **_HUGE_VAL**. Hata işleme kullanarak değiştirebilirsiniz **_matherr**.
+Bu yordamların her biri Bessel işlevi döndürür *x*. Varsa *x* negatif **_y0**, **_y1**, veya **_yn** İşlevler, rutin kümeleri **errno** için **EDOM**, yazdırır bir **_etki alanı** hata iletisi **stderr**ve döndürür **_HUGE_VAL**. Hata işleme kullanarak değiştirebileceğiniz **_matherr**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_J0**, **_j1**, ve **_jn** yordamları dönüş Bessel işlevleri ilk tür: 0, 1 ve n, sırasıyla sıralar.
+**_J0**, **_j1**, ve **_jn** yordamları Bessel işlevleri ilk tür dönmek: 0, 1 ile n, sırasıyla sıralar.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **UL**|**GEÇERSİZ**|**_DOMAIN**|
+|± **QNAN**, **ONRAKİNİ BUL**|**GEÇERSİZ**|**_ETKİ ALANI**|
 
-**_Y0**, **_y1**, ve **_yn** yordamları dönüş Bessel işlevleri ikinci bir türde: 0, 1 ve n, sırasıyla sıralar.
+**_Y0**, **_y1**, ve **_yn** yordamları Bessel işlevleri ikinci tür dönmek: 0, 1 ile n, sırasıyla sıralar.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **UL**|**GEÇERSİZ**|**_DOMAIN**|
+|± **QNAN**, **ONRAKİNİ BUL**|**GEÇERSİZ**|**_ETKİ ALANI**|
 |± 0|**ZERODIVIDE**|**_SING**|
-|&#124;x&#124; < 0,0|**GEÇERSİZ**|**_DOMAIN**|
+|&#124;x&#124; < 0,0|**GEÇERSİZ**|**_ETKİ ALANI**|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -118,7 +108,7 @@ Bu yordamlar her Bessel işlevi döndürür *x*. Varsa *x* negatif **_y0**, **_y
 |-------------|---------------------|
 |**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath > (C++) \<math.h > (C, C++)|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

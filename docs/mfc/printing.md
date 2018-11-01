@@ -1,28 +1,18 @@
 ---
-title: Yazdırma | Microsoft Docs
-ms.custom: ''
+title: Yazdırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - view classes [MFC], print operations
 - documents [MFC], printing
 - printing [MFC], from framework
 - printing [MFC]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e03e750941be02385ac4d5b7463d5b6f32997b6a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 88b89ee54ec6270b01859d0f0baeea0efebd9ad6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373954"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589403"
 ---
 # <a name="printing"></a>Yazdırma
 

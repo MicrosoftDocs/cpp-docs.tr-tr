@@ -1,27 +1,17 @@
 ---
-title: WSADATA yapısı | Microsoft Docs
-ms.custom: ''
+title: WSADATA Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - WSADATA
-dev_langs:
-- C++
 helpviewer_keywords:
 - WSADATA structure [MFC]
 ms.assetid: 80cc60e5-f9ae-4290-8ed5-07003136627d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75baf04ff1a380af8371f2d44a5295a3be65dc7e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 06e8423a00ecfe5179dbfe3e03f61dbf1ef870b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446663"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474028"
 ---
 # <a name="wsadata-structure"></a>WSADATA Yapısı
 

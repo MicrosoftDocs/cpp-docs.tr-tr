@@ -1,25 +1,15 @@
 ---
-title: 'Nasıl yapılır: taşıma oluşturucuları ve taşıma atama işleçleri (C++) tanımlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: taşıma oluşturucuları ve taşıma atama işleçleri (C++) tanımlayın'
 ms.date: 03/05/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b097e1d3c7d26c51283d4f63bb2bae14059f21cc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b601c53c01940fe110036d569e0be9d43a123a91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504526"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)
 

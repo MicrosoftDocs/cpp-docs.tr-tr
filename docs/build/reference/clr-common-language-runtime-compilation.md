@@ -1,16 +1,10 @@
 ---
-title: -clr (ortak dil çalışma zamanı derlemesi) | Microsoft Docs
-ms.custom: ''
+title: /clr (Ortak Dil Çalışma Zamanı Derlemesi)
 ms.date: 09/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /CLR
 - VC.Project.VCNMakeTool.CompileAsManaged
 - VC.Project.VCCLCompilerTool.CompileAsManaged
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, common language runtime option
 - -clr compiler option [C++]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dcd5739f2fb0663609ce7bcabc920cc3aa20d8e1
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 9e9867e5cea8d45aefa0901798b86557b05693f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494419"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528043"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3467 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3467
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3467
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3467
 ms.assetid: e2b844d0-4920-412f-99fd-cd8051c4aa41
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4482aea590b255300a08b5072444b6fabfc5a2eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 73e646c386d5c9b8b43d86ab743989b2525f76a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026445"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460937"
 ---
 # <a name="compiler-error-c3467"></a>Derleyici Hatası C3467
 

@@ -1,12 +1,6 @@
 ---
-title: Unicode desteği | Microsoft Docs
-ms.custom: ''
+title: Unicode Desteği
 ms.date: 1/09/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - globalization [C++], character sets
 - portable data types [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4ed04c30eb71086f57cc9a782c320c06a301485
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fea49bff2a4563b8617e19636e27afbae1c55811
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501692"
 ---
 # <a name="support-for-unicode"></a>Unicode Desteği
 

@@ -1,10 +1,6 @@
 ---
-title: asin, asinf, asinl | Microsoft Docs
-ms.custom: ''
+title: asin, asinf, asinl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - asinf
 - asinl
@@ -26,8 +22,6 @@ f1_keywords:
 - asin
 - asinl
 - asinf
-dev_langs:
-- C++
 helpviewer_keywords:
 - asin function
 - asinl function
@@ -35,20 +29,16 @@ helpviewer_keywords:
 - trigonometric functions
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee65e4c8ce884ac42de35a23c81dbf5009dd1185
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 20a2ffc37ea666207b9558cb5c282c414cfd4838
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393283"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476056"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
-Arksinüsünü hesaplar.
+Ark sinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,33 +56,33 @@ long double asin( long double x );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Hesaplanacak olan arksinüsünü olduğu değeri.
+Arksinüsü hesaplanacak olan değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Asin** işlevi (ters sinüsünü işlevi) sinüsünü döndürür *x* π/2 radyan için aralığı - π/2.
+**Asin** işlevi döndürür (ters sinüsünü işlevi) sinüsünü *x* π/2 radyan için aralığı - π/2.
 
-Varsayılan olarak, varsa *x* -1 veya 1 ' den büyük küçük **asin** bir belirsiz döndürür.
+Varsayılan olarak, *x* -1'den küçük veya 1 ' den büyük olan **asin** bir sonsuz döndürür.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± ∞|**GEÇERSİZ**|**_DOMAIN**|
-|± **QNAN**, **UL**|yok|**_DOMAIN**|
-|&#124;x&#124;>1|**GEÇERSİZ**|**_DOMAIN**|
+|± ∞|**GEÇERSİZ**|**_ETKİ ALANI**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
+|&#124;x&#124;>1|**GEÇERSİZ**|**_ETKİ ALANI**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **asin** ile **float** ve **uzun** **çift** değerleri. Bir C programı **asin** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **asin** ile **float** ve **uzun** **çift** değerleri. C programında **asin** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-------------|---------------------|-|
 |**asin**, **asinf**, **asinl**|\<Math.h >|\<cmath > veya \<math.h >|
 
 ## <a name="example"></a>Örnek
 
-Daha fazla bilgi için bkz: [acos, acosf, acosl](acos-acosf-acosl.md).
+Daha fazla bilgi için [acos, acosf, acosl](acos-acosf-acosl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

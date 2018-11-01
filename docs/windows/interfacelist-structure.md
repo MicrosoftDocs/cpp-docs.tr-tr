@@ -1,28 +1,18 @@
 ---
-title: Interfacelist yapısı | Microsoft Docs
-ms.custom: ''
+title: InterfaceList Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceList
-dev_langs:
-- C++
 helpviewer_keywords:
 - InterfaceList structure
 ms.assetid: 6ec3228d-eb3e-4b7e-aef1-7dcf17bdf61a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 3d9cbc1dfb31d744086e7a138521ae24f58e693f
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e0dd2a39e4764d6d33c824ca0bd1e0976fbb6ee3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788662"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472456"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList Yapısı
 

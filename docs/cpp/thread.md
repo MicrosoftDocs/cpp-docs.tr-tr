@@ -1,30 +1,20 @@
 ---
-title: iş parçacığı | Microsoft Docs
-ms.custom: ''
+title: thread
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - thread_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - thread local storage (TLS)
 - thread __declspec keyword
 - TLS (thread local storage), compiler implementation
 - __declspec keyword [C++], thread
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80ea212f8c888680edf50e269c89e62988a0ee36
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 089f339e5d203fe44789a7df1607f73ab13b8a24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440085"
 ---
 # <a name="thread"></a>thread
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3370 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3370
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3370
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3370
 ms.assetid: ee6d4c85-78fc-42b2-836e-5cc491a3b2ba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0dfd3ed72e379af754af53422842f88911916a79
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0dbc95fcb26354b0f963d1844ddd6a43783c532a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466176"
 ---
 # <a name="compiler-error-c3370"></a>Derleyici Hatası C3370
 

@@ -1,28 +1,18 @@
 ---
-title: Otomatik (C++) | Microsoft Docs
-ms.custom: ''
+title: Otomatik (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 f1_keywords:
 - auto_CPP
 - auto
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f38c4cdfcbb75cd4c2df4fadd10cfcaccda4540e
-ms.sourcegitcommit: a88d228480d4bb5834e985d7b3ead2760be95572
+ms.openlocfilehash: f396d95d08a435ac3d85e214226921ce468a2259
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50203072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447456"
 ---
 # <a name="auto-c"></a>Otomatik (C++)
 

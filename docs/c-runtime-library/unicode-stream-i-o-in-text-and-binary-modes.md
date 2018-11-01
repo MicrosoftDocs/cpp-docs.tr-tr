@@ -1,40 +1,30 @@
 ---
-title: Metin ve ikili modlarda Unicode akışı g/ç | Microsoft Docs
-ms.custom: ''
+title: Metin ve İkili Modlarda Unicode Akışı G/Ç
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.io
-dev_langs:
-- C++
 helpviewer_keywords:
 - stream I/O routines
 - I/O [CRT], unicode stream
 - Unicode, stream I/O routines
 - Unicode stream I/O
 ms.assetid: 68be0c3e-a9e6-4fd5-b34a-1b5207f0e7d6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b89ff3fc752901e9b3cf30c305110b387dc04562
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e54f29292ae9e202cf27c354374132dda267aff8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409059"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469793"
 ---
 # <a name="unicode-stream-io-in-text-and-binary-modes"></a>Metin ve İkili Modlarda Unicode Akışı G/Ç
 
-Ne zaman bir Unicode akışı g/ç yordamı (gibi **fwprintf**, **fwscanf**, **fgetwc**, **fputwc**, **fgetws**, veya **fputws**) metin modunda (varsayılan), iki tür karakter dönüştürme gerçekleşmesi açık olan bir dosya çalıştırır:
+Ne zaman bir Unicode akışı g/ç yordamına (gibi **fwprintf**, **fwscanf**, **fgetwc**, **fputwc**, **fgetws**, veya **fputws**) metin modunda (varsayılan), iki tür karakter dönüştürme gerçekleşmesi açık olan bir dosya üzerinde çalışır:
 
-- Unicode ve MBCS veya MBCS Unicode dönüştürme. Ne zaman bir Unicode akışı-g/Ç işlev metin modunda, kaynak çalışır veya hedef akışı birden çok baytlı karakter dizisi olarak kabul edilir. Bu nedenle, Unicode akışı giriş işlevleri birden çok baytlı karakterler geniş karakter dönüştürme (olarak varsa çağrısı ile **mbtowc** işlevi). Aynı nedenden dolayı Unicode akışı çıkış işlevleri geniş karakterler birden çok baytlı karakterleri dönüştürme (olarak varsa çağrısı ile **wctomb** işlevi).
+- Unicode MBCS veya MBCS-Unicode dönüştürme. Ne zaman bir Unicode akışı g/Ç işlevi metin modunda, kaynak çalışır veya hedef akışın bir dizi çok baytlı karakter olduğu varsayılır. Bu nedenle Unicode akışı girdi işlevleri çok baytlı karakter geniş karakterlere dönüştürür (bir çağrıda olduğu gibi **mbtowc** işlevi). Aynı nedenden dolayı Unicode akış çıkışı işlevleri geniş karakterleri çok baytlı karakterlere dönüştürür (bir çağrıda olduğu gibi **wctomb** işlevi).
 
-- Satır başı - yeni satır (CR-LF) çeviri. MBCS - Unicode dönüştürme (Unicode akışı giriş işlevleri için) önce bu çevirmesinin sonra Unicode - MBCS dönüştürme (için Unicode akışı çıkış işlevleri). Giriş sırasında her satır başı - satır besleme bileşimi tek satır besleme karakter çevrilir. Çıkış sırasında her bir satır besleme karakteri satır başı - satır besleme birleşimi çevrilir.
+- Satır başı - satır besleme (CR-LF) çeviri. MBCS - Unicode dönüştürme (Unicode akışı girdi işlevleri için) önce bu çeviri oluşur ve Unicode - MBCS dönüştürme (için Unicode akış çıkışı işlevleri) sonra. Giriş sırasında her satır başı - satır besleme birleşimi bir tek satır besleme karakteri ile çevrilmiştir. Çıkış sırasında her bir satır besleme karakteri bir satır başı - satır besleme bileşimi çevrilir.
 
-Ancak, bir Unicode akışı-g/Ç işlevi İkili modda çalıştığında, dosya Unicode olduğu varsayılır ve CR LF çeviri veya karakter dönüştürme giriş veya çıkış sırasında oluşur. _Setmode (_fileno (stdin), _o_bınary); kullanın wcin bir UNICODE metin dosyası doğru şekilde kullanmak için yönerge.
+Ancak, bir Unicode akışı g/Ç işlevi İkili modda çalışırken, dosya Unicode olarak kabul edilir ve CR-LF çeviri veya karakter dönüştürme giriş veya çıkış sırasında oluşur. _Setmode (_fileno (stdin), _o_bınary) kullanın wcin UNICODE metin dosyası üzerinde doğru şekilde kullanmak için yönerge.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

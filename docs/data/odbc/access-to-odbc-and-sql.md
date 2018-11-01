@@ -1,12 +1,6 @@
 ---
-title: ODBC'ye ve SQL'e erişim | Microsoft Docs
-ms.custom: ''
+title: ODBC'ye ve SQL'e Erişim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - API calls [C++], calling DAO or ODBC directly
 - Windows API [C++], calling from MFC
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - SQL [C++], calling ODBC API functions
 - ODBC [C++], API functions
 ms.assetid: 5613d7dc-00b7-4646-99ae-1116c05c52b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4635d482a08c486c1cf3259ae642fd82eb4bae82
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 97aa0f6318a47a93b0079a81dea772b900b5484b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441775"
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC'ye ve SQL'e Erişim
 

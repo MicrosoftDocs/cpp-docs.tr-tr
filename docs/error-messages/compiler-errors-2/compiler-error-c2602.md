@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2602 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2602
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2602
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2602
 ms.assetid: 6c07a40e-537e-4954-b5c5-1e0e58fe1952
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22c4b2ec765259aa7797b49c003f1b2e2860226f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da38600ea099c9b0d73e929a100a8c338bd3388f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466358"
 ---
 # <a name="compiler-error-c2602"></a>Derleyici Hatası C2602
 

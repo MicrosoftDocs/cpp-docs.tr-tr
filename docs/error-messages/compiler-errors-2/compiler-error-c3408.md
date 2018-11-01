@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3408 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3408
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3408
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3408
 ms.assetid: 1f5ea979-fb1e-4214-b310-6fd6ca8249b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a9c73e09dff4a7d0c54e028f477b790bc565f1f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c374ea60129b315caf4b72dbf2917a9f4c4ba2ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095189"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428217"
 ---
 # <a name="compiler-error-c3408"></a>Derleyici Hatası C3408
 

@@ -1,27 +1,17 @@
 ---
-title: EQU | Microsoft Docs
-ms.custom: ''
+title: EQU
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - EQU
-dev_langs:
-- C++
 helpviewer_keywords:
 - EQU directive
 ms.assetid: 96db466a-1eab-45bd-a3c2-5a59bd754eab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37509a39d2247649c2971932f402a18f3ac667d4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bae2cbae412433c4e6cc8a05c46a692891dfad0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681313"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448509"
 ---
 # <a name="equ"></a>EQU
 

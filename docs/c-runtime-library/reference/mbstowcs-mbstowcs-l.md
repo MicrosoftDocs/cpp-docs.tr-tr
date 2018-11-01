@@ -1,10 +1,6 @@
 ---
-title: mbstowcs, _mbstowcs_l | Microsoft Docs
-ms.custom: ''
+title: mbstowcs, _mbstowcs_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - mbstowcs
 - _mbstowcs_l
@@ -23,23 +19,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - mbstowcs
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbstowcs_l function
 - mbstowcs_l function
 - mbstowcs function
 ms.assetid: 96696b27-e068-4eeb-8006-3f7a0546ae6d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d179e53967817bb622074987e3309e159547e819
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b788cd820f1297c563f3db739173162bb4983758
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218111"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500977"
 ---
 # <a name="mbstowcs-mbstowcsl"></a>mbstowcs, _mbstowcs_l
 

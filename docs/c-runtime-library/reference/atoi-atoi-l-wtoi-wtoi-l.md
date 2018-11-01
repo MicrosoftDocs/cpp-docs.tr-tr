@@ -1,10 +1,6 @@
 ---
-title: atoi, _atoi_l, _wtoi, _wtoi_l | Microsoft Docs
-ms.custom: ''
+title: atoi, _atoi_l, _wtoi, _wtoi_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wtoi
 - _wtoi_l
@@ -30,8 +26,6 @@ f1_keywords:
 - atoi
 - _atoi_l
 - _wtoi_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _atoi_l function
 - ttoi function
@@ -46,20 +40,16 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ec426518aed278f98ca334ba4ed34830f5836a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b54c0a58a070fa42218a7b048d9eb57b05040738
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452253"
 ---
 # <a name="atoi-atoil-wtoi-wtoil"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
-Bir dize tamsayıya dönüştürür.
+Bir dizeyi tamsayıya dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,28 +73,28 @@ int _wtoi_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Dönüştürülecek dizesi.
+Dönüştürülecek dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlevi döndürür **int** değeri bir sayı olarak giriş karakter yorumlama tarafından üretilen. Dönüş değeri için 0'dır **atoi** ve **_wtoi**, giriş türü değerine dönüştürülemiyor.
+Her işlev **int** değeri, giriş karakterlerinin sayı olarak yorumlanmasıyla üretilen. Dönüş değeri için 0'dır **atoi** ve **_wtoi**, giriş türü bir değere dönüştürülemez.
 
-Taşma büyük negatif tamsayı değer ile söz konusu olduğunda **long_mın** döndürülür. **atoi** ve **_wtoi** dönmek **INT_MAX** ve **ınt_mın** bu koşullara. Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Geçirilen parametre ise **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
+Büyük negatif tam sayı değerleri içeren taşma durumunda **long_mın** döndürülür. **atoi** ve **_wtoi** dönüş **INT_MAX** ve **ınt_mın** bu koşullara bağlı. Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Parametre geçirilen ise **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin bir karakter dizesi tamsayı değerine dönüştürmek (**atoi** ve **_wtoi**). Giriş dizesi belirtilen türde bir sayısal değer yorumlanan karakterden oluşan bir dizidir. İşlevi, giriş dizesi bir sayı bir parçası olarak tanıyamıyor ilk karakterinde okuma durdurur. Bu karakteri ('\0' veya '\0' L) null karakter olabilir dize sonlandırılıyor.
+Bu işlevler bir karakter dizesi tamsayı değerine dönüştürme (**atoi** ve **_wtoi**). Giriş dizesi belirtilen türde bir sayısal değer olarak yorumlanabilecek bir karakter dizisi ' dir. İşlev bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durdurur. Bu karakteri null karakteri ('\0' veya '\0' L) olabilir. dize sonlandırılıyor.
 
 *Str* bağımsız değişkeni **atoi** ve **_wtoi** aşağıdaki biçime sahiptir:
 
 > [*boşluk*] [*oturum*] [*basamak*]]
 
-A *boşluk* , göz ardı edilir; boşluk veya sekmesinde karakterlerden oluşur *oturum* da artı (+) veya eksi (-); ve *basamak* bir veya daha fazla basamakların.
+A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşur *oturum* ya da artı (+) veya eksidir (–); ve *basamak* bir veya daha fazla rakamdır.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -115,14 +105,14 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yere
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordamları|Gerekli başlık|
+|Rutinleri|Gerekli başlık|
 |--------------|---------------------|
 |**atoi**|\<stdlib.h >|
 |**_atoi_l**, **_wtoi**, **_wtoi_l**|\<stdlib.h > veya \<wchar.h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dize olarak depolanan sayılar kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **atoi** işlevleri.
+Bu program, dizeler olarak saklanan numaralarını kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **atoi** işlevleri.
 
 ```C
 // crt_atoi.c

@@ -1,29 +1,19 @@
 ---
-title: _DEBUG | Microsoft Docs
-ms.custom: ''
+title: _DEBUG
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _DEBUG
 - DEBUG
-dev_langs:
-- C++
 helpviewer_keywords:
 - DEBUG macro
 - _DEBUG macro
 ms.assetid: a9901568-4846-4731-a404-399d947e2e7a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50ab066219832258965ec96477a2ef268e127c53
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eeffbd207c4e5b4fdcaaca6f47a2b69ba641a46e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510831"
 ---
 # <a name="debug"></a>_DEBUG
 

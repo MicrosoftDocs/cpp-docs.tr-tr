@@ -1,10 +1,6 @@
 ---
-title: _isctype, iswctype, _isctype_l, _iswctype_l | Microsoft Docs
-ms.custom: ''
+title: _isctype, iswctype, _isctype_l, _iswctype_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _isctype_l
 - iswctype
@@ -32,8 +28,6 @@ f1_keywords:
 - iswctype_l
 - isctype_l
 - _iswctype_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - isctype_l function
 - iswctype_l function
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - isctype function
 - _iswctype function
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a9ca4580ba19c4efc342186c0c3b348d76ce94e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c5eb0b51cf0371100ed884221ee04885dfbe9ad9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563169"
 ---
 # <a name="isctype-iswctype-isctypel-iswctypel"></a>_isctype, iswctype, _isctype_l, _iswctype_l
 
-Testleri *c* tarafından belirtilen ctype özelliği için *desc* bağımsız değişkeni. Her geçerli değeri için *desc*, bir eşdeğer joker karakter sınıflandırması yordamı yok.
+Testleri *c* ctype özelliği tarafından belirtilen *desc* bağımsız değişken. Her bir geçerli değerini *desc*, bir eşdeğer bir geniş karakter sınıflandırma rutini vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -85,19 +75,19 @@ int _iswctype_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *desc*<br/>
-Sınamak için özellik. Bu ctype kullanarak normalde alınır veya [wctype](wctype.md).
+Sınanacak özellik. Bu normalde ctype kullanarak alınan veya [wctype](wctype.md).
 
 *Yerel ayar*<br/>
-Herhangi bir yerel ayara bağımlı test için kullanılacak yerel ayar.
+Herhangi bir yerel ayara bağlı test için kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_isctype** ve **iswctype** sıfır olmayan bir değer döndürür *c* tarafından belirtilen özelliği *desc* geçerli yerel ya da mevcut değilse 0. Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_isctype** ve **iswctype** sıfır olmayan bir değer döndürür *c* tarafından belirtilen özelliğe sahip *desc* geçerli yerel ayarı veya yoksa 0. Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **_isctype** ve **_isctype_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **_isctype** ve **_isctype_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -115,7 +105,7 @@ Davranışını **_isctype** ve **_isctype_l** tanımsız ise *c* EOF değil vey
 |**_isctype_l**|\<CType.h >|
 |**_iswctype_l**|\<CType.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

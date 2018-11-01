@@ -1,10 +1,6 @@
 ---
-title: CMFCColorDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCColorDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCColorDialog
 - AFXCOLORDIALOG/CMFCColorDialog
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXCOLORDIALOG/CMFCColorDialog::SetNewColor
 - AFXCOLORDIALOG/CMFCColorDialog::SetPageOne
 - AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCColorDialog [MFC], CMFCColorDialog
 - CMFCColorDialog [MFC], GetColor
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9f02441bceb2b608c960df858c4d4068e858c51
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a786579797b9ffacca5b338e4cfd6991965704e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490378"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı
 

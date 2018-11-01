@@ -1,12 +1,6 @@
 ---
-title: İç içe geçmiş sınıf bildirimleri | Microsoft Docs
-ms.custom: ''
+title: İç İçe Geçmiş Sınıf Bildirimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [C++], declaring
 - declarations, class
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - declaring classes [C++]
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 870245fa8a13ac4950a7940fcb4738bd1f50ebe1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0ffe1077da76d7524ce99d825e97f68a031ca315
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448159"
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 

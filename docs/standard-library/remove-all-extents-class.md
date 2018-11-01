@@ -1,28 +1,18 @@
 ---
-title: remove_all_extents sınıfı | Microsoft Docs
-ms.custom: ''
+title: remove_all_extents Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::remove_all_extents
-dev_langs:
-- C++
 helpviewer_keywords:
 - remove_all_extents class
 - remove_all_extents
 ms.assetid: 548dc536-82e7-423a-b8c1-443d66d9632e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e3af150fc4b7af05f9650906d6b6596e8f9661cc
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 1c8972889272a4621d6357758cde6d174bb2abd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108385"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568084"
 ---
 # <a name="removeallextents-class"></a>remove_all_extents Sınıfı
 

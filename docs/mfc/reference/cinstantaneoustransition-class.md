@@ -1,33 +1,23 @@
 ---
-title: Cınstantaneoustransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cınstantaneoustransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CInstantaneousTransition
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInstantaneousTransition [MFC], CInstantaneousTransition
 - CInstantaneousTransition [MFC], Create
 - CInstantaneousTransition [MFC], m_dblFinalValue
 ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46fe01c3382f5f3667cbe909a5fb796bbb8ccc6f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5195677f741f69517a7f33b8f53ae4efd22919b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486066"
 ---
 # <a name="cinstantaneoustransition-class"></a>Cınstantaneoustransition sınıfı
 

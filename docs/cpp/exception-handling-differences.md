@@ -1,12 +1,6 @@
 ---
-title: Yapılandırılmış özel durumları C++'ta işlemek | Microsoft Docs
-ms.custom: ''
+title: C++'ta yapılandırılmış özel durumları işleme
 ms.date: 08/14/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - structured exception handling [C++], vs. C++ exception handling
 - structured exception handling [C++], vs. unstructured
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - C++ exception handling [C++], vs. structured exception handling
 - wrapper classes [C++], C exception
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48acd13aced14bfd8acbeb4c306a5749010636d7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c4f1a8c3729e2b4d49a0152425e57717f7e9997
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482855"
 ---
 # <a name="handle-structured-exceptions-in-c"></a>C++'ta yapılandırılmış özel durumları işleme
 

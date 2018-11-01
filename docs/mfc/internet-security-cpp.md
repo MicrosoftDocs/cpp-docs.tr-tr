@@ -1,12 +1,6 @@
 ---
-title: Internet güvenliği (C++) | Microsoft Docs
-ms.custom: ''
+title: Internet Güvenliği (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - code signing [MFC], Internet security
 - sandboxing [MFC]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - Internet applications [MFC], security
 - Web application security [MFC], Internet security approaches
 ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b61df9a17903f50ea922edf9c29eee926063254
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e7892793a82f2b030a99465a712e33e1b9ef4673
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486105"
 ---
 # <a name="internet-security-c"></a>Internet Güvenliği (C++)
 

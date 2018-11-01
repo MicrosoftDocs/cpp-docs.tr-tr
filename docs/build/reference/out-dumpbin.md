@@ -1,29 +1,19 @@
 ---
-title: -OUT (DUMPBIN) | Microsoft Docs
-ms.custom: ''
+title: /OUT (DUMPBIN)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /out
-dev_langs:
-- C++
 helpviewer_keywords:
 - /OUT dumpbin option
 - OUT dumpbin option
 - -OUT dumpbin option
 ms.assetid: 984f9ab6-685f-480b-a515-69abe9d83a65
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ec74f33bf275afc102ddf3913ca8fc480617dc8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: be88bfe232d3c4cb0aa296f9180cfd8ff8e7e6ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556383"
 ---
 # <a name="out-dumpbin"></a>/OUT (DUMPBIN)
 

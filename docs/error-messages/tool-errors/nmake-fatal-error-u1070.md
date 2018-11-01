@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1070 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1070
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1070
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1070
 ms.assetid: 8639fc39-b4b1-48f5-ac91-0e9fb61680fd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6eb462e5c3c7e497cde55151bf92c62ffb2afcd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 35bea47f6626dfe283a537d3d96340921c37f3f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484220"
 ---
 # <a name="nmake-fatal-error-u1070"></a>NMAKE Önemli Hatası U1070
 

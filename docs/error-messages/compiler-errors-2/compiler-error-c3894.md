@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3894 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3894
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3894
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3894
 ms.assetid: 6d5ac903-1dea-431d-8e3a-cebca4342983
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 373da78257ee0f5ce7307ab521cccb0297933240
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4d935e140d89cb5c3714450597677a7a02a245e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496050"
 ---
 # <a name="compiler-error-c3894"></a>Derleyici Hatası C3894
 

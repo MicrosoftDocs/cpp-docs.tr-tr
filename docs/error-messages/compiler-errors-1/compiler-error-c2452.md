@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2452 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2452
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2452
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2452
 ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c8785a8ce77849805d9620b412493accd8b8690
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9b9f2c41da1eb36aceece7f14ad5c33b38404bb3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523712"
 ---
 # <a name="compiler-error-c2452"></a>Derleyici Hatası C2452
 

@@ -1,14 +1,8 @@
 ---
-title: -H (Dış adların uzunluğunu kısıtla) | Microsoft Docs
-ms.custom: ''
+title: /H (Dış Adların Uzunluğunu Kısıtla)
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /h
-dev_langs:
-- C++
 helpviewer_keywords:
 - public name length
 - /H compiler option [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4881ba20e999b13e2a7841161a775eac69638f6
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 194f8d2c87eb6aa307f417ff022e7975edf2ccc9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861024"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489836"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H (Dış Adların Uzunluğunu Kısıtla)
 
@@ -92,7 +82,7 @@ Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](../../build/
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

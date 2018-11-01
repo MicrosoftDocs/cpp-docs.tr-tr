@@ -1,27 +1,17 @@
 ---
-title: Statements (C) | Microsoft Docs
-ms.custom: ''
+title: Deyimler (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - statements, C
 - Visual C, statements
 - statements
 ms.assetid: df3891cd-6195-4663-aecf-7fe7dc3ed9c3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa05dc3a75c029ff5dfe93b2affa182e39c5735e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b9fafec9b37499551943b51f55172cf64c97636e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070567"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463732"
 ---
 # <a name="statements-c"></a>Deyimler (C)
 

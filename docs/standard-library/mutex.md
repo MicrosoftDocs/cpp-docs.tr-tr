@@ -1,25 +1,15 @@
 ---
-title: '&lt;Mutex&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Mutex&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <mutex>
-dev_langs:
-- C++
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9cd4f968543ff777b9178c8f6fa6b3c1699ee465
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4655278e312647f4e69cf48cb772df854260ce57
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965662"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482569"
 ---
 # <a name="ltmutexgt"></a>&lt;Mutex&gt;
 

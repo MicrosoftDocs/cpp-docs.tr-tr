@@ -1,10 +1,6 @@
 ---
-title: '&lt;dosya sistemi&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;dosya sistemi&gt; işlevleri'
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::absolute
 - FILESYSTEM/std::experimental::filesystem::canonical
@@ -46,11 +42,7 @@ f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::system_complete
 - FILESYSTEM/std::experimental::filesystem::temp_directory_path
 - FILESYSTEM/std::experimental::filesystem::u8path
-dev_langs:
-- C++
 ms.assetid: be3cb821-4728-4d47-ab78-858fa8aa5045
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::experimental::filesystem::absolute
 - std::experimental::filesystem::canonical
@@ -92,14 +84,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8fcf7260b6bb10e317a3244ee11b4a92658daf45
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ff908ab57b1130f959e5e9818e4185a8b3cfd348
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063308"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473586"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 

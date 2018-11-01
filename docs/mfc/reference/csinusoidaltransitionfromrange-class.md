@@ -1,10 +1,6 @@
 ---
-title: CSinusoidalTransitionFromRange sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSinusoidalTransitionFromRange sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSinusoidalTransitionFromRange
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_duration
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_period
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_slope
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSinusoidalTransitionFromRange [MFC], CSinusoidalTransitionFromRange
 - CSinusoidalTransitionFromRange [MFC], Create
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CSinusoidalTransitionFromRange [MFC], m_period
 - CSinusoidalTransitionFromRange [MFC], m_slope
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fe31f54a15f897cd14c16ee3061e1f1a7d45584c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 20e910dfa34e90af2c8a2765947ad85a2465c596
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422395"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477590"
 ---
 # <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange sınıfı
 

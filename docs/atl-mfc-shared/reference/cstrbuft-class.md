@@ -1,10 +1,6 @@
 ---
-title: CStrBufT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStrBufT sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStrBufT
 - ATLSIMPSTR/ATL::CStrBufT
@@ -12,23 +8,17 @@ f1_keywords:
 - ATLSIMPSTR/ATL::CStrBufT::SetLength
 - ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH
 - ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], custom memory management
 - CStrBufT class
 - shared classes, CStrBufT
 ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82152ea3df6bb21ee1405790acf9d3fb2c9630c5
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: e33bea159d2915b86fc77381f69dc2a745af68f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492827"
 ---
 # <a name="cstrbuft-class"></a>CStrBufT sınıfı
 

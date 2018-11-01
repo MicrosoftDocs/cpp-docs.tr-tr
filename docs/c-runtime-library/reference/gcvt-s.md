@@ -1,10 +1,6 @@
 ---
-title: _gcvt_s | Microsoft Docs
-ms.custom: ''
+title: _gcvt_s
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _gcvt_s
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _gcvt_s
 - gcvt_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _gcvt_s function
 - _CVTBUFSIZE
@@ -35,20 +29,16 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a2bd12a63db064bca0c880484f99a2df9d210f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 168e0657150d072bbe41cd0ad6e914ca1f53e512
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403774"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554974"
 ---
 # <a name="gcvts"></a>_gcvt_s
 
-Kayan nokta değeri dizeye dönüştürür. Bu bir sürümüdür [_gcvt](gcvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir kayan nokta değeri, bir dizeye dönüştürür. Bu bir sürümüdür [_gcvt](gcvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,7 +60,7 @@ errno_t _gcvt_s(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Dönüştürme işleminin sonucu depolamak için bir arabellek.
+Dönüştürme sonucu olarak depolayan arabellek.
 
 *sizeInBytes*<br/>
 Arabellek boyutu.
@@ -79,39 +69,39 @@ Arabellek boyutu.
 Dönüştürülecek değer.
 
 *basamak*<br/>
-Depolanan basamak sayısı.
+Depolanan anlamlı basamak sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır. Bir hata nedeniyle geçersiz bir parametre oluşursa (geçersiz değerler için aşağıdaki tabloya bakın), geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu döndürdü. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Başarılıysa sıfır. Geçersiz bir parametre nedeniyle bir hata oluşursa (geçersiz değerler için aşağıdaki tabloya bakın), açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin, bir hata kodu döndürülür. Hata kodları Errno.h içinde tanımlanır. Bu hataların bir listesi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Arabellek*|*sizeInBytes*|*value*|*basamak*|Döndür|Değer *arabellek*|
+|*Arabellek*|*sizeInBytes*|*value*|*basamak*|döndürülecek|Değerini *arabelleği*|
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
-|**NULL**|tüm|tüm|tüm|**EINVAL**|Değiştirilmedi.|
-|Değil **NULL** (noktaları için geçerli bellek)|sıfır|tüm|tüm|**EINVAL**|Değiştirilmedi.|
-|Değil **NULL** (noktaları için geçerli bellek)|tüm|tüm|>= *sizeInBytes*|**EINVAL**|Değiştirilmedi.|
+|**NULL**|Tüm|Tüm|Tüm|**EINVAL**|Değiştirilmedi.|
+|Değil **NULL** (geçerli bellek noktaları)|sıfır|Tüm|Tüm|**EINVAL**|Değiştirilmedi.|
+|Değil **NULL** (geçerli bellek noktaları)|Tüm|Tüm|>= *sizeInBytes*|**EINVAL**|Değiştirilmedi.|
 
 **Güvenlik Sorunları**
 
-**_gcvt_s** bir erişim ihlali durumunda oluşturabilir *arabellek* geçerli bellek göstermiyor ve değil **NULL**.
+**_gcvt_s** bir erişim ihlali durumunda oluşturabilirsiniz *arabellek* değil ve geçerli bellek işaret etmiyor **NULL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gcvt_s** işlevin bir kayan nokta dönüştürür *değeri* (, ondalık ayırıcıdan ve olası oturum bayt içeren) bir karakter dizesine ve dizesinde depolar *arabellek* . *Arabellek* dönüştürülen değer artı bir sonlandırma null otomatik olarak eklenir karakteri uyabilecek kadar büyük olmalıdır. Arabellek uzunluğu **_CVTBUFSIZE** herhangi bir değişken için yeterliyse noktası değeri. Arabellek boyutu, *basamak* + 1 kullanılır, işlevi son üzerine yazmaz arabelleği, bu nedenle bu işlem için yeterli arabellek sağladığınızdan emin olun. **_gcvt_s** üretmek çalışır *basamak* onlu basamak. Başaramazsa üreten *basamak* üstel biçimdeki rakamları. Sondaki sıfırlar dönüştürmede gizlenebilir.
+**_Gcvt_s** işlevi dönüştürür bir kayan nokta *değer* (kod bir ondalık noktası ve olası oturum bayt içerir) bir karakter dizesine ve dizesini depolar *arabellek* . *Arabellek* dönüştürülen değeri ayrıca otomatik olarak eklenir, sonlandırıcı null karakterini, tutabilecek kadar büyük olmalıdır. Arabellek uzunluğu **_CVTBUFSIZE** herhangi bir değişken için yeterliyse noktası değeri. Arabellek boyutu, *basamak* + 1 kullanılır, işlev sona üzerine yazmaz arabelleği, bu nedenle bu işlem için yeterli arabellek sağladığınızdan emin olun. **_gcvt_s** üretir *basamak* onlu basamak. Erişilemiyorsa ürettiği *basamak* üstel biçimde basamak. Sondaki sıfırları dönüştürme gizlenebilir.
 
-C++'da, bu işlev tarafından bir şablon aşırı basitleştirilmiştir; aşırı yük, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevi kullanarak bir şablon aşırı yük tarafından basitleştirilmiştir; aşırı yükleme arabellek uzunluğunu otomatik olarak, bir boyut bağımsız değişkeni belirtme gereksinimi ortadan çıkarabilir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlev hata ayıklama sürümü ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Hata ayıklama sürümü, bu işlevin ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_gcvt_s**|\<stdlib.h >|\<Error.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,27 +1,17 @@
 ---
-title: NMAKE makrosu tanımlama | Microsoft Docs
-ms.custom: ''
+title: NMAKE Makrosu Tanımlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros, NMAKE
 - defining NMAKE macros
 - NMAKE macros, defining
 ms.assetid: 45aae451-9d33-4a3d-8799-2e0cae17070d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c266a0be1c5ff16b719e9055f79b377d13ffbf3c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 860a5766e0d766f7426cb6c1a7eaf5db02686aa4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499037"
 ---
 # <a name="defining-an-nmake-macro"></a>NMAKE Makrosu Tanımlama
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3650 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3650
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3650
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3650
 ms.assetid: ca4d8de4-b027-4d13-9b9f-03ca62905c33
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ee7477acc26621a13a1a1d3b4f2d0d0f563c665
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 52d30f3ddee8b25ea54e799cfcb984bdffa80726
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508881"
 ---
 # <a name="compiler-error-c3650"></a>Derleyici Hatası C3650
 

@@ -1,27 +1,17 @@
 ---
-title: nullptr (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: nullptr (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 25ecf09d4794500bbc53f7f555380b050d394c71
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5d2a2a679beca3929622c93d71412661713859f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056613"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474015"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr (C + +/ CLI ve C + +/ CX)
 

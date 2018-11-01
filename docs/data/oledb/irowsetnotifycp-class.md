@@ -1,10 +1,6 @@
 ---
-title: IRowsetNotifyCP sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetNotifyCP Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IRowsetNotifyCP
 - Fire_OnFieldChange
@@ -22,25 +18,18 @@ f1_keywords:
 - IRowsetNotifyCP.Fire_OnRowsetChange
 - ATL::IRowsetNotifyCP::Fire_OnRowsetChange
 - ATL.IRowsetNotifyCP.Fire_OnRowsetChange
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRowsetNotifyCP class
 - Fire_OnFieldChange method
 - Fire_OnRowChange method
 - Fire_OnRowsetChange method
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: efd643414085ee71c48e3d4a5654dac82b74b030
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: de27bef1131081ddfc244fe0d787a85b468cc7e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081293"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523688"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
 

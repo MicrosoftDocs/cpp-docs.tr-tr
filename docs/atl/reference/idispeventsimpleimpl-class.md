@@ -1,10 +1,6 @@
 ---
-title: Idispeventsimpleımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Idispeventsimpleımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IDispEventSimpleImpl
 - ATLCOM/ATL::IDispEventSimpleImpl
@@ -16,21 +12,15 @@ f1_keywords:
 - ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount
 - ATLCOM/ATL::IDispEventSimpleImpl::Invoke
 - ATLCOM/ATL::IDispEventSimpleImpl::Unadvise
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDispEventSimpleImpl class
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9eb111b3fa1376be8a43bfc9a04c7865164bff76
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a0be64cca6725c0ad0852752e6c6c440377c9e7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084581"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447911"
 ---
 # <a name="idispeventsimpleimpl-class"></a>Idispeventsimpleımpl sınıfı
 

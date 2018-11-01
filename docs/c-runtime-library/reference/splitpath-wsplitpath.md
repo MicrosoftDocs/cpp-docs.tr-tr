@@ -1,10 +1,6 @@
 ---
-title: _splitpath, _wsplitpath | Microsoft Docs
-ms.custom: ''
+title: _splitpath, _wsplitpath
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wsplitpath
 - _splitpath
@@ -27,8 +23,6 @@ f1_keywords:
 - splitpath
 - _wsplitpath
 - _tsplitpath
-dev_langs:
-- C++
 helpviewer_keywords:
 - _splitpath function
 - pathnames
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - path names
 - _tsplitpath function
 ms.assetid: 32bd76b5-1385-4ee8-a64c-abcb541cd2e4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46d29b55e215ce426bbfd465b3d54e1d267a1bb1
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: d079bd17912c0711a4e1fbadadf12430520f2c96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103924"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465188"
 ---
 # <a name="splitpath-wsplitpath"></a>_splitpath, _wsplitpath
 

@@ -1,30 +1,20 @@
 ---
-title: CProgressCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CProgressCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CProgressCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - progress controls [MFC]
 - CProgressCtrl class [MFC], using
 - progress controls [MFC], CProgressCtrl
 - progress controls [MFC], using
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04fdca189d31c5a13712a65780025fd9d8aa9123
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 796eeb13a210bfbfd859e20dcdd001c502560483
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372450"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528788"
 ---
 # <a name="using-cprogressctrl"></a>CProgressCtrl Kullanma
 

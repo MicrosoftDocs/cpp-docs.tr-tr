@@ -1,23 +1,13 @@
 ---
-title: Değerleri | Microsoft Docs
-ms.custom: ''
+title: Değerler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 24003f89-220f-4f93-be7a-b650c26157d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bef044535d2f5a5b337823b1798feaea48745d7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0a200bfea8c0a0a06f064b280dad320da25550c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534062"
 ---
 # <a name="values"></a>Değerler
 

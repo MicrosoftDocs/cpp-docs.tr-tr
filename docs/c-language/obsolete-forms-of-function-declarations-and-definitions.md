@@ -1,25 +1,15 @@
 ---
-title: İşlev bildirimleri ve tanımlarının kullanılmayan formları | Microsoft Docs
-ms.custom: ''
+title: İşlev Bildirimlerinin ve Tanımlarının Kullanılmayan Formları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - old style function declarations
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: edd33a59c5ae5120d8c9cdc15f32171b7df4993a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4822ee75c9a1112aff7c7b54dffb745325f56001
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109866"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444245"
 ---
 # <a name="obsolete-forms-of-function-declarations-and-definitions"></a>İşlev Bildirimlerinin ve Tanımlarının Kullanılmayan Formları
 

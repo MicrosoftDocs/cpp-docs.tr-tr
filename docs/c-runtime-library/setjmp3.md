@@ -1,10 +1,6 @@
 ---
-title: _setjmp3 | Microsoft Docs
-ms.custom: ''
+title: _setjmp3
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _setjmp3
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - setjmp3
 - _setjmp3
-dev_langs:
-- C++
 helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22416f4036d79f9e9b7c95f1cf9098e450533f39
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4509738f8e0128e2f9277e744a5965f557f65439
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564017"
 ---
 # <a name="setjmp3"></a>_setjmp3
 

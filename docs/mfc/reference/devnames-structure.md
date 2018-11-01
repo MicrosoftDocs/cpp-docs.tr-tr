@@ -1,27 +1,17 @@
 ---
-title: DEVNAMES yapısı | Microsoft Docs
-ms.custom: ''
+title: DEVNAMES Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - DEVNAMES
-dev_langs:
-- C++
 helpviewer_keywords:
 - DEVNAMES [MFC]
 ms.assetid: aac97f60-2169-471a-ba5d-c0baed9eed9a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d91a44a38d331a49927d5129c5002eef53c224ad
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1fe553401ccf7a054ba7a19642aca2882bfa8fac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441982"
 ---
 # <a name="devnames-structure"></a>DEVNAMES Yapısı
 

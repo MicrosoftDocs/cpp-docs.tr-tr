@@ -1,28 +1,18 @@
 ---
-title: less yapısı | Microsoft Docs
-ms.custom: ''
+title: less Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::less
-dev_langs:
-- C++
 helpviewer_keywords:
 - less struct
 - less function
 ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 231b3f0267f50f68452d4ba0b6cb2f186a07e3e5
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 60a78859a9d218afa11174ef4117e86cbd2edea3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100943"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475133"
 ---
 # <a name="less-struct"></a>less Yapısı
 

@@ -1,29 +1,19 @@
 ---
-title: -DYNAMICBASE | Microsoft Docs
-ms.custom: ''
+title: /DYNAMICBASE
 ms.date: 06/12/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /dynamicbase
-dev_langs:
-- C++
 helpviewer_keywords:
 - -DYNAMICBASE editbin option
 - DYNAMICBASE editbin option
 - /DYNAMICBASE editbin option
 ms.assetid: edb3df90-7b07-42fb-a94a-f5a4c1d325d6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 255123157da3f802eafaf26206598d54fea02335
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fb8bfd4f4b11d14dbbc605f4366cf1cd5446a319
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211691"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430805"
 ---
 # <a name="dynamicbase"></a>/DYNAMICBASE
 

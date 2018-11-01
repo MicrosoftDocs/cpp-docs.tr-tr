@@ -1,32 +1,22 @@
 ---
-title: -Zp (yapı üyesi hizalama) | Microsoft Docs
-ms.custom: ''
+title: /Zp (Yapı Üyesi Hizalama)
 ms.date: 04/30/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /zp
 - VC.Project.VCCLCompilerTool.StructMemberAlignment
 - VC.Project.VCCLWCECompilerTool.StructMemberAlignment
-dev_langs:
-- C++
 helpviewer_keywords:
 - Struct Member Alignment compiler option
 - Zp compiler option
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0268f5c5d5d34d8fa244dc6260889bea6b1e837a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7b9176d42b2dac0082b6627f5338799660ded1f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715916"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518228"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Yapı Üyesi Hizalama)
 
@@ -75,7 +65,7 @@ Ayrıca [paketi](../../preprocessor/pack.md) denetim yapısı paketleme için. H
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

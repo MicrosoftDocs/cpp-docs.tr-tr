@@ -1,23 +1,13 @@
 ---
-title: X86 çakışıyor derleyici | Microsoft Docs
-ms.custom: ''
+title: x86 Derleyicisi ile Çakışma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 8e47f0d3-afe0-42d9-9efa-de239ddd3a05
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f01e65adfb42a5fb3361e75ce34060f7dc1b9f9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e56ebc5631ac5c96a9cdd2dfc2b8e81cdeed9769
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709678"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614272"
 ---
 # <a name="conflicts-with-the-x86-compiler"></a>x86 Derleyicisi ile Çakışma
 

@@ -1,10 +1,6 @@
 ---
-title: CTaskDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTaskDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTaskDialog
 - AFXTASKDIALOG/CTaskDialog
@@ -63,8 +59,6 @@ f1_keywords:
 - AFXTASKDIALOG/CTaskDialog::SetWindowTitle
 - AFXTASKDIALOG/CTaskDialog::ShowDialog
 - AFXTASKDIALOG/CTaskDialog::TaskDialogCallback
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTaskDialog [MFC], CTaskDialog
 - CTaskDialog [MFC], AddCommandControl
@@ -122,16 +116,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83b56c82248397c3d355fb365ccb630760a4a741
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cbfb0a355b4901907b5df0a0b42ac28d5a76c551
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076054"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441957"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 

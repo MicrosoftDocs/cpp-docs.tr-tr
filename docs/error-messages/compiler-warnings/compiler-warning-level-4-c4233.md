@@ -1,35 +1,25 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4233 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4233
 ms.date: 10/25/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4233
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4233
 ms.assetid: 9aa51fc6-8ef3-43b5-bafb-c9333cf60de3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a933d41fd8e7cf3b94e458efff72193b8ce5e187
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 361e00b7361aab51ea077d7e248503f3654e5e58
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516525"
 ---
 # <a name="compiler-warning-level-4-c4233"></a>Derleyici Uyarısı (düzey 4) C4233
 
-> kullanılan standart olmayan uzantısı: '*anahtar sözcüğü*' C++, C değil yalnızca desteklenen anahtar sözcüğü
+> Standart olmayan uzantı kullanıldı: '*anahtar sözcüğü*' anahtar sözcüğü yalnızca C++, C'değil ' da desteklenir.
 
-C++ yerine C olarak kaynak kodunuzu derleyici derlenmiş ve yalnızca C++'da geçerli bir anahtar sözcüğü kullanılır. Kaynak dosya uzantısını .c veya kullandığınız kaynak dosyanızı derleyici C derler [tp](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md).
+C++ yerine C olarak derleyici kaynak kodunuzu derlediği ve yalnızca C++'da geçerli bir anahtar sözcüğü kullanılır. Kaynak dosyasının uzantısı .c veya kullandığınız kaynak dosyanızı derleyici C derler [/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md).
 
-Bu uyarı için bir hata otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, kullanmak [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 4 uyarı sorunu yaşayıp C4233 yapmak için kaynak kodu dosyasına bu satırı ekleyin:
+Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 4 uyarısı sorunu C4233 yapmak için kaynak kodu dosyanızda bu satırı ekleyin:
 
 ```cpp
 #pragma warning(4:4233)

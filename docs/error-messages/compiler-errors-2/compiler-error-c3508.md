@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3508 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3508
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3508
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3508
 ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b417673dc88ee6fda769630282ee5d4ff2ca365
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d868a8f7ab8a69054844c5c8e101d661e295a37
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538963"
 ---
 # <a name="compiler-error-c3508"></a>Derleyici Hatası C3508
 

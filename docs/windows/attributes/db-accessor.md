@@ -1,28 +1,17 @@
 ---
-title: db_accessor (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: db_accessor (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_accessor
-dev_langs:
-- C++
 helpviewer_keywords:
 - db_accessor attribute
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: aa63ca982f436b49787e542c4789390faa1d16a0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3ab2e720e5bab834f76b755336b9ad9170d086b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495270"
 ---
 # <a name="dbaccessor"></a>db_accessor
 

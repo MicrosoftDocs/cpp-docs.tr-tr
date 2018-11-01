@@ -1,26 +1,16 @@
 ---
-title: C/C++ programını derleme | Microsoft Docs
-ms.custom: ''
+title: C/C++ Programını Derleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler
 - cl.exe compiler, setting options
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5923cad13464317f98d5500cb244449aa8537b63
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4dacbe7979b70edb942d4ed5c6f5f37f6c439a70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721233"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502771"
 ---
 # <a name="compiling-a-cc-program"></a>C/C++ Programını Derleme
 

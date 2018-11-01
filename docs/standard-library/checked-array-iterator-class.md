@@ -1,34 +1,24 @@
 ---
-title: checked_array_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: checked_array_iterator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iterator/checked_array_iterator
 - iterator/stdext::checked_array_iterator::difference_type
 - iterator/stdext::checked_array_iterator::pointer
 - iterator/stdext::checked_array_iterator::reference
 - iterator/stdext::checked_array_iterator::base
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::checked_array_iterator [C++], difference_type
 - stdext::checked_array_iterator [C++], pointer
 - stdext::checked_array_iterator [C++], reference
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b7c8f9e29cc71cd12c04d4135e4f02d273ab4725
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2d7788a33321f794af6b395de3188bc51f662ad0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476622"
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator Sınıfı
 

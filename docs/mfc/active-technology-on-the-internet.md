@@ -1,25 +1,15 @@
 ---
-title: Internet'te etkin teknoloji | Microsoft Docs
-ms.custom: ''
+title: Internet'te Etkin Teknoloji
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30aef153dc99c0cbdc4de537496e42ab2bb0459f
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 04444ca1318eaf52f05c05a251baf120c16eec29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204515"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453406"
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 

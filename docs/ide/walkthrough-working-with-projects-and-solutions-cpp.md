@@ -1,28 +1,18 @@
 ---
-title: 'İzlenecek yol: Projeler ve çözümler (C++) ile çalışma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)'
 ms.date: 09/14/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - solutions [C++]
 - projects [C++], about projects
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56b5e41872ebe4b3cdc4800d7818cceb05f03dd1
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 6cbd4cf86e6828d637430c468afd1306665746a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459741"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)
 

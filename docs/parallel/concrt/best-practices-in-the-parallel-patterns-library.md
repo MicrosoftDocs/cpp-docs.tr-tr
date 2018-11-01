@@ -1,28 +1,18 @@
 ---
-title: En iyi uygulamalar paralel desen Kitaplığı'ndaki | Microsoft Docs
-ms.custom: ''
+title: Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Parallel Patterns Library, practices to avoid
 - practices to avoid, Parallel Patterns Library
 - best practices, Parallel Patterns Library
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5ad7d0210f99b1b1aa5c481ed1b8695c68fb311
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 153dbf461176ee62f42dbe41a1c426a8c34ae716
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503326"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 

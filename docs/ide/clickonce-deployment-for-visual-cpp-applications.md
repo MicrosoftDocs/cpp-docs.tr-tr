@@ -1,27 +1,17 @@
 ---
-title: Visual C++ uygulamaları için ClickOnce dağıtımı | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Uygulamaları için ClickOnce Dağıtımı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - deploying applications [C++], ClickOnce
 - application deployment [C++], ClickOnce
 - ClickOnce deployment [C++], C++ applications
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fabce61d84072cd27482f94fa32c8fd91850b797
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 29395e5d7e4ba9e2c582d9e5c081a4f667dcaafa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467819"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>Visual C++ Uygulamaları için ClickOnce Dağıtımı
 

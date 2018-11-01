@@ -1,25 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4838 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4838
 ms.date: 11/04/2016
-ms.topic: error-reference
 f1_keywords:
 - C4838
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4838
 ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1335d9c36f6764b54689a8334a91f11275ee3265
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dcb7062c751320a9f9c612b42caf6d018047d8d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532970"
 ---
 # <a name="compiler-warning-level-1-c4838"></a>Derleyici Uyarısı (düzey 1) C4838
 

@@ -1,26 +1,18 @@
 ---
-title: Platform::Enum sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::Enum sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Enum
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0568fba448d6f6976df466c46569e5059fb11ddf
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 4431f21fe71bd7b6376f2f530b844077bc1fda6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469621"
 ---
 # <a name="platformenum-class"></a>Platform::Enum sınıfı
 

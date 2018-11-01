@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4091 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4091
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4091
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7b8fd377ed8b1f6425f0a1c13a83531fca1b797f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 87432a74dfe7c09a52f436d4e91b3f70eb66856b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491747"
 ---
 # <a name="compiler-warning-level-1-c4091"></a>Derleyici Uyarısı (düzey 1) C4091
 

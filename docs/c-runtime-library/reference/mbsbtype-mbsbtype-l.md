@@ -1,10 +1,6 @@
 ---
-title: _mbsbtype, _mbsbtype_l | Microsoft Docs
-ms.custom: ''
+title: _mbsbtype, _mbsbtype_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsbtype_l
 - _mbsbtype
@@ -26,31 +22,25 @@ f1_keywords:
 - mbsbtype_l
 - _mbsbtype_l
 - _mbsbtype
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsbtype function
 - mbsbtype function
 - _mbsbtype_l function
 - mbsbtype_l function
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be098cb1fe53e1345f0c4f40212657f4bfd97f4f
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 5c2927b4e4b68b1284341fe7e767ec50feb21a44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566809"
 ---
 # <a name="mbsbtype-mbsbtypel"></a>_mbsbtype, _mbsbtype_l
 
-Dize içinde bayt türünü döndürür.
+Bir dizedeki bayt türünü döndürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,43 +59,43 @@ int _mbsbtype_l(
 ### <a name="parameters"></a>Parametreler
 
 *mbstr*<br/>
-Birden çok baytlı karakter dizisi adresidir.
+Çok baytlı bir karakter dizisi adresi.
 
 *Sayısı*<br/>
-Dize başından uzaklık bayt.
+Baytı dize başından uzaklığı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsbtype** ve **_mbsbtype_l** belirtilen bayt sınama sonucu gösteren bir Integer değeri döndürür. Aşağıdaki tabloda bildirim sabitleri Mbctype.h içinde tanımlanmıştır.
+**_mbsbtype** ve **_mbsbtype_l** belirtilen bayttaki test sonucunu gösteren bir Integer değeri döndürür. Mbctype.h içindeki bildirim sabitleri aşağıdaki tabloda tanımlanır.
 
 |Dönüş değeri|Byte türü|
 |------------------|---------------|
-|**_MBC_SINGLE** (0)|Tek baytlı karakter. Örneğin, kod sayfası 932, içinde **_mbsbtype** belirtilen bayt 0xDF 0x20-0x7E veya 0xA1 - aralığında ise 0 döndürür.|
-|**_MBC_LEAD** (1)|Birden çok baytlı karakter baytını yol açar. Örneğin, kod sayfası 932, içinde **_mbsbtype** belirtilen bayt 0xFC 0x81-0x9F veya 0xE0 - aralığında ise 1 döndürür.|
-|**_MBC_TRAIL** (2)|Birden çok baytlı karakter izleyen baytı. Örneğin, kod sayfası 932, içinde **_mbsbtype** belirtilen bayt 0xFC 0x40-0x7E veya 0x80 - aralığında varsa 2 değerini döndürür.|
-|**_MBC_ILLEGAL** (-1)|**NULL** dize, geçersiz bir karakter ya da null bayt uzaklığındaki bayt önce bulunan *sayısı* içinde *mbstr*.|
+|**_MBC_SINGLE** (0)|Tek baytlı karakter. Örneğin, kod sayfası 932'de, içinde **_mbsbtype** 0xDF belirtilen bayt 0x20-0x7E veya 0xA1 - aralığında ise 0 değerini döndürür.|
+|**_MBC_LEAD** (1)|Çok baytlı karakterin ön baytı. Örneğin, kod sayfası 932'de, içinde **_mbsbtype** belirtilen bayt 0x81-0x9F veya 0xE0 - aralığında 0xfc aralığında ise, 1 döndürür.|
+|**_MBC_TRAIL** (2)|Çok baytlı karakterin sondaki baytı. Örneğin, kod sayfası 932'de, içinde **_mbsbtype** belirtilen bayt 0x40-0x7E veya 0x80 – 0xFC aralığındaysa 2 döndürür.|
+|**_MBC_ILLEGAL** (-1)|**NULL** dize, geçersiz karakter veya boş bayt uzaklığındaki baytı önce bulunan *sayısı* içinde *mbstr*.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsbtype** fonksiyonu byte birden çok baytlı karakter dizesi içinde türünü belirler. İşlevi yalnızca bayt uzaklığındaki inceler *sayısı* içinde *mbstr*, belirtilen bayt önce geçersiz karakterler yoksayılıyor.
+**_Mbsbtype** işlevi çok baytlı karakter dizesindeki bir baytın türünü belirler. İşlevi yalnızca uzaklığındaki baytı inceler *sayısı* içinde *mbstr*, belirlenen bayttan önceki geçersiz karakterleri yok sayılıyor.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlev olmadan sürümü **_l** soneki için bu yerel ayara bağımlı davranışı; geçerli yerel ayarı kullanır sürümüyle **_l** soneki olduğunu aynı kullanmak dışında geçirilen yerel ayar parametresi Bunun yerine. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevin sürümünü **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır sürümüyle **_l** soneki, onu kullanmalarıdır iletilmiş yerel ayar parametresini aynıdır Bunun yerine. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Giriş dizesi ise **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **_MBC_ILLEGAL**.
+Giriş dizesi **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **_MBC_ILLEGAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_mbsbtype**|\<Mbstring.h >|\<Mbctype.h > *|
 |**_mbsbtype_l**|\<Mbstring.h >|\<Mbctype.h > *|
 
-\* Dönüş değerleri olarak kullanılan bildirim sabitler için.
+\* Dönüş değerleri kullanılan bildirim sabitleri için.
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

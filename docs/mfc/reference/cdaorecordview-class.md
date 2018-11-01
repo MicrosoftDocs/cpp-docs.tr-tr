@@ -1,10 +1,6 @@
 ---
-title: CDaoRecordView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoRecordView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoRecordView
 - AFXDAO/CDaoRecordView
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXDAO/CDaoRecordView::IsOnLastRecord
 - AFXDAO/CDaoRecordView::OnGetRecordset
 - AFXDAO/CDaoRecordView::OnMove
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoRecordView [MFC], CDaoRecordView
 - CDaoRecordView [MFC], IsOnFirstRecord
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CDaoRecordView [MFC], OnGetRecordset
 - CDaoRecordView [MFC], OnMove
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 78d0dd3715ceb6a366ae1ab9ef2c2104432b30af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: db1636bebd0cc29124018b5fad2c0535079706d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541212"
 ---
 # <a name="cdaorecordview-class"></a>CDaoRecordView sınıfı
 

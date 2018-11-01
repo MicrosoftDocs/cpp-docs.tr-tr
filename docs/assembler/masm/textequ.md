@@ -1,27 +1,17 @@
 ---
-title: TEXTEQU | Microsoft Docs
-ms.custom: ''
+title: TEXTEQU
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - TEXTEQU
-dev_langs:
-- C++
 helpviewer_keywords:
 - TEXTEQU directive
 ms.assetid: 7c01df77-10d6-4555-8fe0-c5f7762df86d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d0626caca0a7af4b2cb420fef85963f59e1b64f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 34d408bbe4234e004df50905e2cf881616af719a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487678"
 ---
 # <a name="textequ"></a>TEXTEQU
 

@@ -1,10 +1,6 @@
 ---
-title: fread | Microsoft Docs
-ms.custom: ''
+title: fread
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fread
 apilocation:
@@ -22,24 +18,18 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fread
-dev_langs:
-- C++
 helpviewer_keywords:
 - reading data [C++], from input streams
 - fread function
 - data [C++], reading from input stream
 - streams [C++], reading data from
 ms.assetid: 9a3c1538-93dd-455e-ae48-77c1e23c53f0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 819ec0b494b6e800f858e2e5647164567531ab0b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d3516dc67047064b9293b1bb289888596736ed47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400934"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468841"
 ---
 # <a name="fread"></a>fread
 
@@ -59,28 +49,28 @@ size_t fread(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Verileri için depolama konumu.
+Veri için depolama konumu.
 
 *Boyutu*<br/>
-Öğe boyutunu bayt cinsinden.
+Bayt olarak öğe boyutu.
 
 *Sayısı*<br/>
 Okunacak öğe maksimum sayısı.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fread** olabilen tam öğe sayısı gerçekte okuma, döndürür değerinden *sayısı* bir hata oluşursa veya dosyanın sonuna ulaşmadan önce karşılaşılırsa *sayısı*. Kullanım **feof** veya **ferror** okuma hatası bir dosya sonu durumundan ayırt etmek için işlev. Varsa *boyutu* veya *sayısı* 0 ' dır **fread** 0 ve arabellek içeriği değişmeden döndürür. Varsa *akış* veya *arabellek* null işaretçi **fread** açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve 0 döndürür.
+**fread** olabilecek tam öğe sayısını aslında okumak, döndürür küçüktür *sayısı* bir hata oluşursa veya dosya sonuna ulaşmadan önce karşılaşılırsa *sayısı*. Kullanım **feof** veya **ferror** okuma hatası bir dosya sonu koşulunu ayırt etmek için işlevi. Varsa *boyutu* veya *sayısı* 0 ' dır **fread** 0 ve arabellek içeriği değişmeden döndürür. Varsa *stream* veya *arabellek* null bir işaretçiyse, **fread** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve 0 döndürür.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fread** işlevi okur kadar *sayısı* öğelerin *boyutu* bayt girdisinden *akış* ve *arabellek* . İle ilişkili dosya işaretçisini *akış* (varsa) tarafından gerçekten okunan bayt sayısı artar. Belirtilen akışa metin modunda açıldıysa, satır başı satır besleme çiftleri tek satır besleme karakterlerle değiştirilir. Değiştirilen dosya işaretçisini veya dönüş değeri üzerinde etkisi yoktur. Bir hata oluşursa belirsiz dosya işaretçisini konumdur. Kısmen okuma öğesinin değeri belirlenemiyor.
+**Fread** işlevi okur kadar *sayısı* öğelerin *boyutu* girdisinden bayt *stream* ve depolar *arabelleği* . İle ilişkili dosya işaretçisini *stream* (varsa) tarafından gerçekten okunan bayt sayısı artar. Belirtilen akış metin modunda açılırsa, satır başı satır besleme çiftleri tek bir satır başı besleme karakterleri ile değiştirilir. Değiştirilen dosya işaretçisini ya da dönüş değeri üzerinde etkisi yoktur. Dosya işaretçisi olarak bir hata oluşursa belirsiz konumdur. Kısmen okuma öğesinin değeri belirlenemiyor.
 
-Bu işlevi başka bir iş parçacığı kilitler. Kilitleme olmayan bir sürüm gerekiyorsa kullanın **_fread_nolock**.
+Bu işlev, diğer iş parçacıklarını kilitler. Kilitleme yapılmayan bir sürüm ihtiyacınız varsa, **_fread_nolock**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -88,7 +78,7 @@ Bu işlevi başka bir iş parçacığı kilitler. Kilitleme olmayan bir sürüm 
 |--------------|---------------------|
 |**fread**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -142,6 +132,6 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

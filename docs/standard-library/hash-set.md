@@ -1,28 +1,18 @@
 ---
-title: '&lt;hash_set&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;hash_set&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <hash_set>
 - std::<hash_set>
-dev_langs:
-- C++
 helpviewer_keywords:
 - hash_set header
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f163ef7d0e5ec05dd0f41c11ea77c558cfef4919
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a9ed3cf90c4650683eac1c198a8b57614e96d759
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955712"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449471"
 ---
 # <a name="lthashsetgt"></a>&lt;hash_set&gt;
 

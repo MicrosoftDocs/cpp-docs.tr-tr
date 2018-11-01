@@ -1,28 +1,18 @@
 ---
-title: Ağaç denetim öğesi seçimi | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetim Öğesi Seçimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - tree controls [MFC], item selection
 - controls [MFC], selecting items in
 - CTreeCtrl class [MFC], item selection
 - item selection in tree controls
 ms.assetid: 7bcb3b16-b9c8-4c06-9350-7bc3c1c5009b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9aa9c82a57ff8504c8e3eba7becff1e1cdccaae2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bd3ade31ce1e41481943659ba9a8ef8dd77117fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592731"
 ---
 # <a name="tree-control-item-selection"></a>Ağaç Denetim Öğesi Seçimi
 

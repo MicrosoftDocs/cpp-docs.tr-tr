@@ -1,10 +1,6 @@
 ---
-title: _Interlockedcompareexchange iç işlevleri | Microsoft Docs
-ms.custom: ''
+title: _Interlockedcompareexchange iç işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedCompareExchange_HLERelease
 - _InterlockedCompareExchange8_nf
@@ -36,8 +32,6 @@ f1_keywords:
 - _InterlockedCompareExchange64
 - _InterlockedCompareExchange16
 - _InterlockedCompareExchange
-dev_langs:
-- C++
 helpviewer_keywords:
 - _InterlockedCompareExchange16 intrinsic
 - _InterlockedCompareExchange_acq intrinsic
@@ -54,16 +48,12 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c7a62ba6e87348e78efe7def75b89fbc19e9320
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2a583c953c98df49b45eecd2040905b253567cfe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418703"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577247"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_Interlockedcompareexchange iç işlevleri
 

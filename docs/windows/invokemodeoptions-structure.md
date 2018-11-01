@@ -1,28 +1,18 @@
 ---
-title: Invokemodeoptions yapısı | Microsoft Docs
-ms.custom: ''
+title: Invokemodeoptions yapısı
 ms.date: 03/22/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::InvokeModeOptions
-dev_langs:
-- C++
 helpviewer_keywords:
 - InvokeModeOptions structure
 - InvokeMode enum
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ea549db29f7fcb67e4d59e341bf7d5ad085b6d7f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 315f1f0c49c4222bf525bbaf25c9ad0de8b9c7d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511708"
 ---
 # <a name="invokemodeoptions-structure"></a>Invokemodeoptions yapısı
 

@@ -1,30 +1,20 @@
 ---
-title: UNIX | Microsoft Docs
-ms.custom: ''
+title: UNIX
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - unix
-dev_langs:
-- C++
 helpviewer_keywords:
 - UNIX
 - POSIX compatibility
 - POSIX file names
 - UNIX, compatibility
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d0343a7a508e09e3bd7779308cb40972965a716
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7f0cc1f9bbbfb1f950c7efc1371587d805d1e9e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032958"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480190"
 ---
 # <a name="unix"></a>UNIX
 

@@ -1,28 +1,18 @@
 ---
-title: Ağaç denetimi üst ve alt öğeleri | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetimi Üst ve Alt Öğeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - parent items in CTreeCtrl [MFC]
 - child items in tree control [MFC]
 - CTreeCtrl class [MFC], parent and child items
 - tree controls [MFC], parent and child items
 ms.assetid: abcea1e4-fe9b-40d9-86dc-1db235f8f103
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94bae5d06dd5b0e072d17588af045ec87a33fcc7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ca74f85228a7b428d277395dfdd1d7172f8247f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544982"
 ---
 # <a name="tree-control-parent-and-child-items"></a>Ağaç Denetimi Üst ve Alt Öğeleri
 

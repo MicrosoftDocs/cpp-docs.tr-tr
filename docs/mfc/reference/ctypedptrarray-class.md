@@ -1,10 +1,6 @@
 ---
-title: CTypedPtrArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTypedPtrArray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTypedPtrArray
 - AFXTEMPL/CTypedPtrArray
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXTEMPL/CTypedPtrArray::InsertAt
 - AFXTEMPL/CTypedPtrArray::SetAt
 - AFXTEMPL/CTypedPtrArray::SetAtGrow
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTypedPtrArray [MFC], Add
 - CTypedPtrArray [MFC], Append
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f8cb8da3eaae08eeb694deaad6c3f4f6a71e7dc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: da31f6eef95364ad010d9c9aeb19225d42a42283
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054994"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452331"
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray sınıfı
 

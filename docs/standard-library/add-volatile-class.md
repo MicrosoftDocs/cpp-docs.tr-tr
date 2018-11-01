@@ -1,28 +1,18 @@
 ---
-title: add_volatile sınıfı | Microsoft Docs
-ms.custom: ''
+title: add_volatile Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::add_volatile
-dev_langs:
-- C++
 helpviewer_keywords:
 - add_volatile class
 - add_volatile
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39740894e9422c2aec90c3598b0e45965e8ddba7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ff48b1848e2d7631d789621a5ef845d04d8e8821
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495946"
 ---
 # <a name="addvolatile-class"></a>add_volatile Sınıfı
 

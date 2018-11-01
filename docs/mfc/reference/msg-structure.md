@@ -1,27 +1,17 @@
 ---
-title: MSG yapısı | Microsoft Docs
-ms.custom: ''
+title: MSG Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - MSG
-dev_langs:
-- C++
 helpviewer_keywords:
 - MSG structure [MFC]
 ms.assetid: dc166d27-9423-41f1-9599-5ba76d2f0138
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b2f58af3bcf3eef524b95d25579e5bc233f9108
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 1a953f8d0d685e25beedd2d401e227c934414208
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499821"
 ---
 # <a name="msg-structure"></a>MSG Yapısı
 

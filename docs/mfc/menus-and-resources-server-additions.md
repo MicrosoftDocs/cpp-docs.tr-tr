@@ -1,14 +1,8 @@
 ---
-title: 'Menüler ve kaynaklar: sunucu ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Menüler ve Kaynaklar: Sunucu Ekleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - IDP_OLE_INIT_FAILED
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE visual editing servers [MFC]
 - accelerator tables [MFC], server applications
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14a7ae414c9cd3015d1f70b779a2c19ea1329ed4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b4e7787029fc9401ece02860f09b8159f086afe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388062"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592601"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
 

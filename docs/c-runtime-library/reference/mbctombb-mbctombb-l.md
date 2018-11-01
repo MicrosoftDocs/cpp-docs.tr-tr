@@ -1,10 +1,6 @@
 ---
-title: _mbctombb, _mbctombb_l | Microsoft Docs
-ms.custom: ''
+title: _mbctombb, _mbctombb_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbctombb_l
 - _mbctombb
@@ -26,31 +22,25 @@ f1_keywords:
 - _mbctombb
 - mbctombb_l
 - mbctombb
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbctombb function
 - mbctombb_l function
 - mbctombb function
 - _mbctombb_l function
 ms.assetid: d90970b8-71ff-4586-b6a2-f9ceb811f776
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: adb233b489b5f4c190a4015805b07ab36770a283
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7395d94a6ec18f989d4a7153425b7af406a0bf45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519840"
 ---
 # <a name="mbctombb-mbctombbl"></a>_mbctombb, _mbctombb_l
 
-Çift baytlık birden çok baytlı karakter karşılık gelen bir tek baytlı birden çok baytlı karakter dönüştürür.
+Çift baytlık çok baytlı bir karakterin ilgili tek baytlık çok baytlı karaktere dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,20 +57,20 @@ unsigned int _mbctombb_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Dönüştürmek için birden çok baytlı karakter.
+Dönüştürülecek çok baytlı karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_mbctombb** ve **_mbctombb_l** karşılık gelen tek baytlı karakter döndürür *c*; Aksi halde döner *c* .
+Başarılı olursa, **_mbctombb** ve **_mbctombb_l** karşılık gelen tek baytlık karakteri döndürür *c*; Aksi halde döndürür *c* .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbctombb** ve **_mbctombb_l** işlevler belirli bir birden çok baytlı karakter karşılık gelen bir tek baytlı birden çok baytlı karakter Dönüştür. Karakter tek baytlık karakterler 0x20-0x7E veya 0xA1 - aralıkta dönüştürülecek 0xDF karşılık gelmelidir.
+**_Mbctombb** ve **_mbctombb_l** işlevleri karşılık gelen bir tek baytlık çok baytlı karakterin çok baytlı bir karakteri dönüştürür. Karakterler tek baytlık karakter 0x20-0x7E veya 0xA1 - aralık içinde dönüştürülecek 0xDF karşılık gelmelidir.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlev olmadan sürümü **_l** soneki için bu yerel ayara bağımlı davranışı; geçerli yerel ayarı kullanır sürümüyle **_l** soneki olduğunu aynı kullanmak dışında geçirilen yerel ayar parametresi Bunun yerine. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevin sürümünü **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır sürümüyle **_l** soneki, onu kullanmalarıdır iletilmiş yerel ayar parametresini aynıdır Bunun yerine. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 Önceki sürümlerde, **_mbctombb** çağrıldı **zentohan**. Kullanım **_mbctombb** yerine.
 
@@ -91,7 +81,7 @@ Başarılı olursa, **_mbctombb** ve **_mbctombb_l** karşılık gelen tek baytl
 |**_mbctombb**|\<Mbstring.h >|
 |**_mbctombb_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

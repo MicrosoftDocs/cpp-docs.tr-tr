@@ -1,26 +1,16 @@
 ---
-title: C öğeleri | Microsoft Docs
-ms.custom: ''
+title: C Öğeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - lexical conventions
 - conventions, lexical
 ms.assetid: 20668a49-cab7-4153-a6d9-7439aac3ff3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e460160f0f08444ac22775e68248827ad3eebaf
-ms.sourcegitcommit: f9d9db80a8f13eae2c41337b974e1298109e33c5
+ms.openlocfilehash: d6aa0e4b8ec3efb0b4212168d05b829e25bf9f69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49640748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451642"
 ---
 # <a name="elements-of-c"></a>C Öğeleri
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3197 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3197
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3197
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3197
 ms.assetid: 4e385c3b-222e-425c-9612-46e83ed41650
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83003a1538496d98dcc29d7a9954a68fb19c920e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: be9b7dadb4f67a6392cd7a2c46caf61d983e79eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466026"
 ---
 # <a name="compiler-error-c3197"></a>Derleyici Hatası C3197
 

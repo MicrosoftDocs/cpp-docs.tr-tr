@@ -1,26 +1,18 @@
 ---
-title: Platform::Collections Namespace | Microsoft Docs
-ms.custom: ''
+title: Platform::Collections Namespace
 ms.date: 01/18/2018
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Collections Namespace
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a8c6191f8cbcf79973a5af55d222dd6f17fc47e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 025c25d6c01ab9a28c68574cc2a13e09dbf28388
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480372"
 ---
 # <a name="platformcollections-namespace"></a>Platform::Collections Namespace
 

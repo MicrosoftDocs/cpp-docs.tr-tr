@@ -1,28 +1,19 @@
 ---
-title: '-Zc: noexceptTypes (C ++ 17 noexcept kuralları) | Microsoft Docs'
+title: '/ ZC: noexcepttypes (c ++ 17 noexcept kuralları)'
 ms.date: 11/14/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Zc:noexceptTypes
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Zc:noexceptTypes
 - Zc:noexceptTypes
 - -Zc:noexceptTypes
 ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fab79c1e3c28a3768b7eff856c16e5c0746c963f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f5f2fa3ef85e7ff15b28188e45a4ec397878873c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462237"
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/ ZC: noexcepttypes (c ++ 17 noexcept kuralları)
 

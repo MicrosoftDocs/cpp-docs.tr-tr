@@ -1,28 +1,17 @@
 ---
-title: Açık veritabanı bağlantısı (ODBC) | Microsoft Docs
-ms.custom: ''
+title: Açık Veritabanı Bağlantısı (ODBC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC [C++]
 - databases [C++], ODBC
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 531119b6ad8f793a19de7838ec7414a832ed5862
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 49955f12c5e9d4105d9fdbe0ec16bbd302672546
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468737"
 ---
 # <a name="open-database-connectivity-odbc"></a>Açık Veritabanı Bağlantısı (ODBC)
 

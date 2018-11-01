@@ -1,10 +1,6 @@
 ---
-title: isalnum, iswalnum, _isalnum_l, _iswalnum_l | Microsoft Docs
-ms.custom: ''
+title: isalnum, iswalnum, _isalnum_l, _iswalnum_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _iswalnum_l
 - _isalnum_l
@@ -30,8 +26,6 @@ f1_keywords:
 - _isalnum_l
 - isalnum
 - _istalnum
-dev_langs:
-- C++
 helpviewer_keywords:
 - _istalnum function
 - _ismbcalnum_l function
@@ -42,20 +36,16 @@ helpviewer_keywords:
 - _istalnum_l function
 - _iswalnum_l function
 ms.assetid: 0dc51306-ade8-4944-af27-e4176fc89093
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c7c1156341d4c1b0b54d54f52a5a33eb6506e50
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97ac18eb85c62861c701f1498da0b4851021ca74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456634"
 ---
 # <a name="isalnum-iswalnum-isalnuml-iswalnuml"></a>isalnum, iswalnum, _isalnum_l, _iswalnum_l
 
-Tamsayı alfasayısal bir karakterle temsil edip etmediğini belirler.
+Bir tamsayı alfasayısal bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,18 +59,18 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* alfasayısal bir karakterle belirli bir gösterimidir. **isalnum** , sıfır olmayan bir değer döndürür **isalpha** veya **isdigit** için sıfır olmayan bir değer olan *c*, diğer bir deyişle, varsa *c* içinde aralıkları A - Z, a - z veya 0 - 9. **iswalnum** , sıfır olmayan bir değer döndürür **iswalpha** veya **iswdigit** için sıfır olmayan bir değer olan *c*. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan *c* alfasayısal bir karakterle belirli bir gösterimidir. **isalnum** sıfır olmayan bir değer döndürür **isalpha** veya **isdigit** için sıfır dışında *c*, diğer bir deyişle, *c* içinde aralıkları A - Z, a - z veya 0 - 9. **iswalnum** sıfır olmayan bir değer döndürür **iswalpha** veya **iswdigit** için sıfır dışında *c*. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
 
-Bu işlevleri sürümlerini **_l** soneki geçerli yerel yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanın. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **isalnum** ve **_isalnum_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **isalnum** ve **_isalnum_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -98,7 +88,7 @@ Davranışını **isalnum** ve **_isalnum_l** tanımsız ise *c* EOF değil veya
 |**_isalnum_l**|\<CType.h >|
 |**_iswalnum_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

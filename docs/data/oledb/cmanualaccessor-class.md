@@ -1,10 +1,6 @@
 ---
-title: CManualAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CManualAccessor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CManualAccessor
 - ATL.CManualAccessor
@@ -29,8 +25,6 @@ f1_keywords:
 - CManualAccessor.CreateParameterAccessor
 - CreateParameterAccessor
 - CManualAccessor::CreateParameterAccessor
-dev_langs:
-- C++
 helpviewer_keywords:
 - CManualAccessor class
 - AddBindEntry method
@@ -38,17 +32,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 8919a4bb17e65ad105b49e9fd9b4945e47cbdb63
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d6a910f53d15e637ead31235380b27fe608a792c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058069"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470323"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 

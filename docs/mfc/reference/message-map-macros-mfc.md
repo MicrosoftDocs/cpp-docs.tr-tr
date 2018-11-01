@@ -1,10 +1,6 @@
 ---
-title: İleti eşleme makroları (MFC) | Microsoft Docs
-ms.custom: ''
+title: İleti Eşleme Makroları (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFXWIN/DECLARE_MESSAGE_MAP
 - AFXWIN/BEGIN_MESSAGE_MAP
@@ -22,8 +18,6 @@ f1_keywords:
 - AFXWIN/ON_COMMAND_RANGE
 - AFXWIN/ON_UPDATE_COMMAND_UI_RANGE
 - AFXWIN/ON_CONTROL_RANGE
-dev_langs:
-- C++
 helpviewer_keywords:
 - message map macros
 - Windows messages [MFC], declaration
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2d5a0f2f5f7515e36997b876373dcf25bb6fc03
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 8d4caca4d5a0b5c12b0af5a948b17b7e2ad05221
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474275"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 

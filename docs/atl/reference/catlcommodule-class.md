@@ -1,10 +1,6 @@
 ---
-title: CAtlComModule sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlComModule sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlComModule
 - ATLBASE/ATL::CAtlComModule
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLBASE/ATL::CAtlComModule::RegisterTypeLib
 - ATLBASE/ATL::CAtlComModule::UnregisterServer
 - ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlComModule class
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0600476df22c3d87bc5694e9ffe2af09f4542439
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 270e6ca4dcb5c7701281cc2ac6c04e1d60093db3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063269"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499815"
 ---
 # <a name="catlcommodule-class"></a>CAtlComModule sınıfı
 

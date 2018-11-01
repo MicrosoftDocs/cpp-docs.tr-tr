@@ -1,14 +1,8 @@
 ---
-title: -Fe (EXE dosyasını Adlandır) | Microsoft Docs
-ms.custom: ''
+title: /Fe (EXE Dosyasını Adlandır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /fe
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Fe compiler option [C++]
 - executable files, renaming
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ad2683f79fdca845245fd266555e688aa8cf7374
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: cac4dc0908c86574ef5b57c4436f734f94c0bb49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473417"
 ---
 # <a name="fe-name-exe-file"></a>/Fe (EXE Dosyasını Adlandır)
 
@@ -58,7 +48,7 @@ Belirtirseniz [/c (derleme olmadan bağlamayı)](c-compile-without-linking.md) s
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
 
 ## <a name="example"></a>Örnek
 

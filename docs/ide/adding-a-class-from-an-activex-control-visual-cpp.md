@@ -1,26 +1,16 @@
 ---
-title: (Visual C++) ActiveX denetiminden sınıf ekleme | Microsoft Docs
-ms.custom: ''
+title: ActiveX Denetiminden Sınıf Ekleme (Visual C++)
 ms.date: 09/07/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX controls [C++], adding classes
 - classes [C++], creating
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f9e7d8ea0e3b21b06d73e187a4f45c53cd896cf
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: c78919aeee2d2577cd7371952d95c57c17b1e5ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466631"
 ---
 # <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX Denetiminden Sınıf Ekleme (Visual C++)
 

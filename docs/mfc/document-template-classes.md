@@ -1,27 +1,17 @@
 ---
-title: Belge şablonu sınıfları | Microsoft Docs
-ms.custom: ''
+title: Belge Şablonu Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.document
-dev_langs:
-- C++
 helpviewer_keywords:
 - document templates [MFC], classes
 ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87984bf06d8ca178d2a21ac8ff475f828690668e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b15263005f8bd6a8fdc9f9f29ea268fe8a6b95a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448080"
 ---
 # <a name="document-template-classes"></a>Belge Şablonu Sınıfları
 
