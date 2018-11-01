@@ -1,29 +1,19 @@
 ---
-title: -LINKERMEMBER | Microsoft Docs
-ms.custom: ''
+title: /LINKERMEMBER
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /linkermember
-dev_langs:
-- C++
 helpviewer_keywords:
 - /LINKERMEMBER dumpbin option
 - LINKERMEMBER dumpbin option
 - -LINKERMEMBER dumpbin option
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0979009260381eb210e7992377bab8b5ae613338
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e55f613566b5c3bd7709fe7f30cd0ae985cd369f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700615"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494450"
 ---
 # <a name="linkermember"></a>/LINKERMEMBER
 

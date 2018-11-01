@@ -1,23 +1,13 @@
 ---
-title: Range-based for deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: Range-based for Deyimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 5750ba1d-ba48-4236-a923-e32de8345c2d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e4486bc3106bd438c7a963ca241465cbc167710
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 965159a3bd4f92bbb1bd044882451a2b98daf6aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035213"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469998"
 ---
 # <a name="range-based-for-statement-c"></a>Range-based for Deyimi (C++)
 
@@ -27,7 +17,7 @@ ms.locfileid: "46035213"
 
 ```
 for ( for-range-declaration : expression )
-   statement
+   statement
 ```
 
 ## <a name="remarks"></a>Açıklamalar

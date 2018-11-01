@@ -1,10 +1,6 @@
 ---
-title: Standart Türler | Microsoft Docs
-ms.custom: ''
+title: Standart Türler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - __time64_t
 - _diskfree_t
@@ -84,8 +80,6 @@ f1_keywords:
 - uint_fast64_t
 - intmax_t
 - uintmax_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - __timeb64 type
 - tm type
@@ -166,16 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03d16ede9f980ae65ea45c3777e025bf1a78bd38
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dd508095508cf9d0d04778b06d6296296649f710
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099427"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565327"
 ---
 # <a name="standard-types"></a>Standart Türler
 

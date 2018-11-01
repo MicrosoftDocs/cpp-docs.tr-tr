@@ -1,10 +1,6 @@
 ---
-title: CStreamRowset sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStreamRowset Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CStreamRowset<TAccessor>
 - ATL::CStreamRowset
@@ -26,24 +22,17 @@ f1_keywords:
 - ATL.CStreamRowset.Close
 - ATL::CStreamRowset<TAccessor>::Close
 - CStreamRowset.Close
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStreamRowset class
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 8a19085ae5d46396415e5b54b9acada547bc8079
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d15807c7204841a436180d4da96357eba89dbb5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488185"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset Sınıfı
 

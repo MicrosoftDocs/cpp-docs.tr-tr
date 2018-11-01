@@ -1,10 +1,6 @@
 ---
-title: _fseek_nolock, _fseeki64_nolock | Microsoft Docs
-ms.custom: ''
+title: _fseek_nolock, _fseeki64_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fseek_nolock
 - _fseeki64_nolock
@@ -26,8 +22,6 @@ f1_keywords:
 - _fseeki64_nolock
 - fseek_nolock
 - fseeki64_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - _fseek_nolock function
 - fseeki64_nolock function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _fseeki64_nolock function
 - seek file pointers
 ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b1ce866f7438ebc677156e6cfc9113f9725b65d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 57e9a57223d6af620f4f9160923675b4873ab3ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465720"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502459"
 ---
 # <a name="fseeknolock-fseeki64nolock"></a>_fseek_nolock, _fseeki64_nolock
 

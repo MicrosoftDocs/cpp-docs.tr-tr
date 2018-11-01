@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4486 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4486
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4486
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4486
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c86f821855a0686b66c93db22ca6e200064142d1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b6e1fc7001908202efc2fb0ef3653153c007eac0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456036"
 ---
 # <a name="compiler-warning-level-1-c4486"></a>Derleyici Uyarısı (düzey 1) C4486
 

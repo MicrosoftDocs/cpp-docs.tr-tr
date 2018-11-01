@@ -1,8 +1,6 @@
 ---
-title: '&lt;algoritma&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;algoritma&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - algorithm/std::adjacent_find
 - algorithm/std::all_of
@@ -102,11 +100,7 @@ f1_keywords:
 - algorithm/std::count_if
 - algorithm/std::partition_copy
 - algorithm/std::swap
-dev_langs:
-- C++
 ms.assetid: c10b0c65-410c-4c83-abf8-8b7f61bba8d0
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::adjacent_find [C++]
 - std::all_of [C++]
@@ -206,14 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a21dc4e0687ece8583b2291b71ed55980127805c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fb928edf603a5eec2acf1ac53bcd73360a876735
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630975"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 

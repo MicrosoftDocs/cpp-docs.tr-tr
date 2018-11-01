@@ -1,28 +1,18 @@
 ---
-title: AppDomain | Microsoft Docs
-ms.custom: ''
+title: appdomain
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - appdomain_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - appdomain __declspec keyword
 - __declspec keyword [C++], appdomain
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f8ef06751e1c9e478c7119dbffb242581f432b9e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f83841565eb6a097f306129fe8f6d121f837c27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111777"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476979"
 ---
 # <a name="appdomain"></a>appdomain
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2360 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2360
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2360
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2360
 ms.assetid: 51bfd2ee-8108-4777-aa93-148b9cebfa83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f443c27c496d5d05c17bde854181b0fdde58f545
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6e956ccb021dc3bce4d107e4aa6e0bbe4356283b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498182"
 ---
 # <a name="compiler-error-c2360"></a>Derleyici Hatası C2360
 

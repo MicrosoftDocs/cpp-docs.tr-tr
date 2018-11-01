@@ -1,27 +1,17 @@
 ---
-title: 'TN060: Yeni Windows ortak denetimleri | Microsoft Docs'
-ms.custom: ''
+title: 'TN060: Yeni Windows Ortak Denetimleri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.controls.common
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN060
 ms.assetid: 1a8eea6c-283a-4043-a7dc-a036e37e508e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0028d7b2f2121f9463dcb45b13bf34305c39f3d4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7552241dd6d855a0aeeb63a1a6864c561f96f188
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514796"
 ---
 # <a name="tn060-the-new-windows-common-controls"></a>TN060: Yeni Windows Ortak Denetimleri
 

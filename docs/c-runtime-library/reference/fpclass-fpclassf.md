@@ -1,10 +1,6 @@
 ---
-title: _fpclass, _fpclassf | Microsoft Docs
-ms.custom: ''
+title: _fpclass, _fpclassf
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fpclass
 - _fpclassf
@@ -28,28 +24,22 @@ f1_keywords:
 - math/_fpclass
 - float/_fpclass
 - math/_fpclassf
-dev_langs:
-- C++
 helpviewer_keywords:
 - fpclass function
 - floating-point numbers, IEEE representation
 - _fpclass function
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79895cf19c188addee45236df5dc47d3f4ebf6a3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 987c87cc7a03f4a24e47654ae52e8a2416a15184
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398383"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590976"
 ---
 # <a name="fpclass-fpclassf"></a>_fpclass, _fpclassf
 
-Kayan nokta sınıflandırma bağımsız değişkenin belirten bir değer döndürür.
+Kayan nokta bağımsız değişken sınıflandırmasını gösteren bir değer döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,24 +60,24 @@ Test etmek için kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Fpclass** ve **_fpclassf** işlevleri bağımsız değişkenin kayan nokta sınıflandırma belirten bir tamsayı değeri döndürmek *x*. Sınıflandırma tanımlanan aşağıdaki değerlerden birine sahip \<float.h >.
+**_Fpclass** ve **_fpclassf** İşlevler, bağımsız değişkenin kayan nokta sınıflandırma belirten bir tamsayı değeri döndürür *x*. Sınıflandırma içinde tanımlanan aşağıdaki değerlerden birine sahip \<float.h >.
 
 |Değer|Açıklama|
 |-----------|-----------------|
 |**_FPCLASS_SNAN**|NaN sinyali|
-|**_FPCLASS_QNAN**|Sessiz NaN|
+|**_FPCLASS_QNAN**|Sessiz bir NaN|
 |**_FPCLASS_NINF**|Negatif sonsuz (-INF)|
-|**_FPCLASS_NN**|Sıfır olmayan negatif normalleştirilmiş|
-|**_FPCLASS_ND**|Normal dışı negatif|
+|**_FPCLASS_NN**|Negatif sıfır olmayan normalleştirilmiş|
+|**_FPCLASS_ND**|Negatif normal dışı|
 |**_FPCLASS_NZ**|Negatif sıfır (- 0)|
 |**_FPCLASS_PZ**|Pozitif 0 (+ 0)|
-|**_FPCLASS_PD**|Normal dışı pozitif|
-|**_FPCLASS_PN**|Sıfır olmayan pozitif normalleştirilmiş|
-|**_FPCLASS_PINF**|Pozitif sonsuzluk (+ INF)|
+|**_FPCLASS_PD**|Pozitif normal dışı|
+|**_FPCLASS_PN**|Pozitif sıfır olmayan normalleştirilmiş|
+|**_FPCLASS_PINF**|Pozitif sonsuz (+ INF)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fpclass** ve **_fpclassf** Microsoft belirli işlevlerdir. Benzer şekilde [fpclassify](fpclassify.md), ancak bağımsız değişken ilgili ayrıntılı bilgileri döndürür. **_Fpclassf** işlevi için x64 derlendiğinde kullanılabilir yalnızca platform.
+**_Fpclass** ve **_fpclassf** Microsoft'a özgü işlevlerdir. Benzemez [fpclassify](fpclassify.md), ancak bağımsız değişken ilişkin daha ayrıntılı bilgi döndürür. **_Fpclassf** işlev için x64 derlendiğinde kullanılabilir, yalnızca platform.
 
 ## <a name="requirements"></a>Gereksinimler
 

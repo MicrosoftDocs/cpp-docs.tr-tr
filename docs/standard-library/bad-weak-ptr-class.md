@@ -1,28 +1,18 @@
 ---
-title: bad_weak_ptr sınıfı | Microsoft Docs
-ms.custom: ''
+title: bad_weak_ptr Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::bad_weak_ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - bad_weak_ptr
 - bad_weak_ptr class
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fcd0309321ce841a739d24d037a24f81a9551f1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 78438ef3378e5002396eecb32b9b7a76d5b50325
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725514"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492918"
 ---
 # <a name="badweakptr-class"></a>bad_weak_ptr Sınıfı
 

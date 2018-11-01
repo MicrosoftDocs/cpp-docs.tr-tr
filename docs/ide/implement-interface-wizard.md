@@ -1,27 +1,17 @@
 ---
-title: Uygulama Arabirimi Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Arabirim Uygulama Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.impl.interface.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - Implement Interface Wizard [C++]
 ms.assetid: 947c329e-0815-4ca7-835e-c41dfeb75f9e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 100b792750c0534d0b4e0b69c4acfd349e5897ed
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0a307792d83404eb89b861e927a0003c5971a9bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442330"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470843"
 ---
 # <a name="implement-interface-wizard"></a>Arabirim Uygulama Sihirbazı
 

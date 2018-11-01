@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2715 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2715
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2715
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2715
 ms.assetid: c81567a7-5b65-468f-aaf9-835f91e468e4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bdb63ed19b37e44448eac3a53b6e2159312a8f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 80dd28136b220585a62ed288795d565c07b360f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600599"
 ---
 # <a name="compiler-error-c2715"></a>Derleyici Hatası C2715
 

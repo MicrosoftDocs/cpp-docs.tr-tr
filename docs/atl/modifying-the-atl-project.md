@@ -1,27 +1,17 @@
 ---
-title: ATL projesini değiştirme | Microsoft Docs
-ms.custom: ''
+title: ATL projesini değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [ATL], adding to composite controls
 - Dialog editor, working with composite controls
 - composite controls, adding controls
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f7707b3babc84075d84e57a2b610f06225e79e6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1c7725af6baf6007f3d434a6445133a20a98edcf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109825"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626882"
 ---
 # <a name="modifying-the-atl-project"></a>ATL projesini değiştirme
 

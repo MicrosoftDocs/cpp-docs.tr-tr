@@ -1,10 +1,6 @@
 ---
-title: CDHtmlDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDHtmlDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDHtmlDialog
 - AFXDHTML/CDHtmlDialog
@@ -63,8 +59,6 @@ f1_keywords:
 - AFXDHTML/CDHtmlDialog::m_spHtmlDoc
 - AFXDHTML/CDHtmlDialog::m_strCurrentUrl
 - AFXDHTML/CDHtmlDialog::m_szHtmlResID
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDHtmlDialog [MFC], CDHtmlDialog
 - CDHtmlDialog [MFC], CanAccessExternal
@@ -122,16 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d42f0a62f552b09d06300c393efdb1cfbf2335e9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 08db42929fb3c6a7feb79abae5110bd88169f11b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594967"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 

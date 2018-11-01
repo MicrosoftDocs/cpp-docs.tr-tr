@@ -1,27 +1,17 @@
 ---
-title: Özyineleme makroları | Microsoft Docs
-ms.custom: ''
+title: Özyineleme Makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, recursion macros
 - recursion macros
 - macros, recursion
 ms.assetid: c53e5ae7-619e-46b1-bdc2-86d8c7798b1d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f91a5f327686a522608b6eec9fd7106cbab00028
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0005a4be0422ed83816eabc7b55932a81441ae25
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702046"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451265"
 ---
 # <a name="recursion-macros"></a>Özyineleme Makroları
 

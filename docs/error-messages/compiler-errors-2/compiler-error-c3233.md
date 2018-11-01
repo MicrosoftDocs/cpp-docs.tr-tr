@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3233 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3233
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3233
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3233
 ms.assetid: a9210830-1136-4f02-ba41-030c85f93547
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87a5494e4894077d6f9dc61d920ed42db9872988
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4a0cf849f7b87bd8d61b0ef087cf91d15669d719
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439526"
 ---
 # <a name="compiler-error-c3233"></a>Derleyici Hatası C3233
 

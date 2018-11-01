@@ -1,28 +1,18 @@
 ---
-title: Framework'te derleme | Microsoft Docs
-ms.custom: ''
+title: Framework'te Derleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - application-specific classes [MFC]
 - application framework [MFC], building applications
 - applications [MFC]
 - MFC, application development
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ca0ebd9bf03df8725c14df8d2aca1f7858b7b65
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 511d66821bf23c149fafb0bfd397929077f020ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496245"
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
 

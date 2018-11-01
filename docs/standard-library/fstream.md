@@ -1,27 +1,17 @@
 ---
-title: '&lt;fstream&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;fstream&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <fstream>
-dev_langs:
-- C++
 helpviewer_keywords:
 - fstream header
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b716248c6fe9d0734cd580800c9254cf01f2a17
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fcfb020bab2cb85b13caac9cdceee2359a7294d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476576"
 ---
 # <a name="ltfstreamgt"></a>&lt;fstream&gt;
 

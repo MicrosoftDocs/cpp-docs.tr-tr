@@ -1,10 +1,6 @@
 ---
-title: Tan, tanf, tanl | Microsoft Docs
-ms.custom: ''
+title: Tan, tanf, tanl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - tan
 - tanf
@@ -27,8 +23,6 @@ f1_keywords:
 - tanf
 - _tanl
 - tanl
-dev_langs:
-- C++
 helpviewer_keywords:
 - tanl function
 - _tanl function
@@ -38,20 +32,16 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6c0108e6d72e35a253e31df6ec96cbff19113c0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 79a374142a914e8c2c7cf5c094d443b16e4bce88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564035"
 ---
-# <a name="tan-tanf-tanl"></a>Bronz, tanf, tanl
+# <a name="tan-tanf-tanl"></a>Tan, tanf, tanl
 
-Tanjantını hesaplar.
+Tanjantı hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,24 +63,24 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**Tan** işlevleri tanjantını Döndür *x*. Varsa *x* büyük veya 263 eşit veya daha az veya buna eşit -263, sonuç anlamlı kaybı oluşur.
+**Tan** işlevler tanjantını döndürür *x*. Varsa *x* büyüktür veya 263'e eşit veya daha az veya buna eşit -263, sonuçta anlam kaybına gerçekleşir.
 
 |Giriş|SEH özel durumu|**Matherr** özel durumu|
 |-----------|-------------------|-------------------------|
-|± QNAN, UL|yok|_DOMAIN|
-|± INF|**GEÇERSİZ**|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
+|INF ±|**GEÇERSİZ**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **tan** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **tan** her zaman alan ve döndüren **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **tan** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **tan** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-------------|---------------------|-|
 |**tan**, **tanf**, **tanl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

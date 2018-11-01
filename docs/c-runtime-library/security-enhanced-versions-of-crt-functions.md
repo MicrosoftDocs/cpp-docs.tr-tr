@@ -1,27 +1,17 @@
 ---
-title: Gelişmiş Güvenlik CRT işlevlerinin sürümleri | Microsoft Docs
-ms.custom: ''
+title: CRT İşlevlerinin Gelişmiş Güvenlik Sürümleri
 ms.date: 03/21/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - security [CRT]
 - security-enhanced CRT
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd9bb058220a2e84c98069e8804473ef0da1a422
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8372bf6284f7974e68ed8beb62888d56b2b49254
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433624"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>CRT İşlevlerinin Gelişmiş Güvenlik Sürümleri
 

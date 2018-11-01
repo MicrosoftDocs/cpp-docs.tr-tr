@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2070 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2070
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2070
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2070
 ms.assetid: 4c8dea63-1227-4aba-be26-2462537f86fb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b23daf8a8c25e132aa0717715a742352537010c8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 221b42e6425c84f4e34c99872fc0e51716e2db1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044086"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581346"
 ---
 # <a name="compiler-error-c2070"></a>Derleyici Hatası C2070
 

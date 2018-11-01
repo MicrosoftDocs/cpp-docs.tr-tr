@@ -1,27 +1,17 @@
 ---
-title: CString kullanma | Microsoft Docs
-ms.custom: ''
+title: CString kullanma
 ms.date: 06/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CString objects, C++ string manipulation
 - CString objects, reference counting
 - CString class (Visual C++)
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45c1c105fafcadab74107b008f437d49f420e66e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d6ebc63fdcfa8294bf81aee0ce4df0c2f83af6f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430296"
 ---
 # <a name="using-cstring"></a>CString kullanma
 

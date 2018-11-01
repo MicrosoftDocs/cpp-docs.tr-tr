@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4900 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4900
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4900
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4900
 ms.assetid: 826997ec-0803-4794-ad35-bb463f679658
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0c27df56ab38224020e9be88787dfaa038ba8f0e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9066210327c932e66286bb4bd138b97af2dba7f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103121"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475196"
 ---
 # <a name="compiler-warning-level-1-c4900"></a>Derleyici Uyarısı (düzey 1) C4900
 

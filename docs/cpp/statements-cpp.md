@@ -1,25 +1,16 @@
 ---
-title: Deyimler (C++) | Microsoft Docs
+title: Deyimler (C++)
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - statements [C++], C++
 ms.assetid: 7028fddf-0d47-469a-a7df-f8576423e066
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e80f49067d2482254803df563b56de1fc43b685
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4cb4dc9b718e0e6b183df62ddd056da1e0ed398f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527256"
 ---
 # <a name="statements-c"></a>Deyimler (C++)
 

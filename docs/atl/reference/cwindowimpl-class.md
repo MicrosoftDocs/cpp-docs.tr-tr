@@ -1,10 +1,6 @@
 ---
-title: Cwindowımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cwindowımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CWindowImpl
 - ATLWIN/ATL::CWindowImpl
@@ -18,22 +14,16 @@ f1_keywords:
 - ATLWIN/ATL::GetWndClassInfo
 - ATLWIN/ATL::WindowProc
 - ATLWIN/ATL::m_pfnSuperWindowProc
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39a0938f6faadc05b2fdb3d716417a56512768b7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0a1d0c79e97cf9f9cb0c2b0c6b140654deb4c227
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454658"
 ---
 # <a name="cwindowimpl-class"></a>Cwindowımpl sınıfı
 

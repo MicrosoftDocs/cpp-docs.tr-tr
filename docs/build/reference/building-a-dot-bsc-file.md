@@ -1,26 +1,16 @@
 ---
-title: Oluşturma bir. BSC dosyası | Microsoft Docs
-ms.custom: ''
+title: .Bsc Dosyası Derleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - .bsc files, building
 - bsc files, building
 ms.assetid: 304e240d-692a-4f8b-b9ed-891c01bbb2ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a090eeb67d065c797abcb978f058ffeaff4ac57
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f108fc29fd0cb1b99c727f446a9630cf7dd359b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463797"
 ---
 # <a name="building-a-bsc-file"></a>.Bsc Dosyası Derleme
 

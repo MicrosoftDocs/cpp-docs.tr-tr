@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2005 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2005
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2005
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2005
 ms.assetid: 090530ed-e0ec-4358-833a-ca24260e7ffe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6dfba3b960a046bf40751c135c3b99fbe843545
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 49d0375d5733410d728797d2a881075377b33ba6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535544"
 ---
 # <a name="compiler-error-c2005"></a>Derleyici Hatası C2005
 

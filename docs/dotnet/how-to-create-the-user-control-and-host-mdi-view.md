@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: kullanıcı Denetim ve konak MDI görünümü oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], Windows Forms Controls
 - Windows Forms [C++], MFC support
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 2e61a69661034fb582039c744c3483f461405581
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c2705ef1938684d8521316436fccaae367629584
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056977"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509128"
 ---
 # <a name="how-to-create-the-user-control-and-host-mdi-view"></a>Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma
 

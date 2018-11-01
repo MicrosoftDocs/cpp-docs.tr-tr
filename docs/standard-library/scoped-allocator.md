@@ -1,27 +1,17 @@
 ---
-title: '&lt;scoped_allocator&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;scoped_allocator&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <scoped_allocator>
-dev_langs:
-- C++
 helpviewer_keywords:
 - scoped_allocator Header
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0152b308c2ad6adb2cd2257f20730c70ed09d412
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 101edcf31114252911eac90d07f5f44249f98fb1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465305"
 ---
 # <a name="ltscopedallocatorgt"></a>&lt;scoped_allocator&gt;
 
@@ -37,14 +27,14 @@ Kapsayıcı Şablon sınıfı scoped_allocator tanımlar.
 
 |İşleç|Açıklama|
 |-|-|
-|[operator!=](../standard-library/scoped-allocator-operators.md#op_neq)|Testleri işlecinin sol tarafındaki scoped_allocator nesne listesi nesnesine sağ tarafında eşit değil.|
-|[operator==](../standard-library/scoped-allocator-operators.md#op_eq_eq)|Scoped_allocator nesne işlecinin sol tarafındaki sağ tarafında listesi nesnesine eşitse testleri.|
+|[operator!=](../standard-library/scoped-allocator-operators.md#op_neq)|İşlecin sol tarafındaki scoped_allocator nesne işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
+|[operator==](../standard-library/scoped-allocator-operators.md#op_eq_eq)|İşlecin sol tarafındaki scoped_allocator nesnesinin işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[scoped_allocator_adaptor Sınıfı](../standard-library/scoped-allocator-adaptor-class.md)|Bir veya daha fazla allocators, iç içe yalıtan bir şablon sınıfı.|
+|[scoped_allocator_adaptor Sınıfı](../standard-library/scoped-allocator-adaptor-class.md)|Bir iç içe bir veya daha fazla ayırıcılar, kapsayan bir şablon sınıfı.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

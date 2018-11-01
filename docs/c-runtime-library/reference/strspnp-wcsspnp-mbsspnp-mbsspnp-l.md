@@ -1,10 +1,6 @@
 ---
-title: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l | Microsoft Docs
-ms.custom: ''
+title: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsspnp
 - _wcsspnp
@@ -34,8 +30,6 @@ f1_keywords:
 - _wcsspnp
 - _strspnp
 - mbsspnp
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strspnp function
 - _wcsspnp function
@@ -48,23 +42,19 @@ helpviewer_keywords:
 - _tcsspnp function
 - tcsspnp function
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80f257d7aef9678258644758e083817cbbfbe134
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 272375948c8c650b226bfb71073c6c65c5b8acef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635298"
 ---
 # <a name="strspnp-wcsspnp-mbsspnp-mbsspnpl"></a>_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 
-Bir işaretçi ilk karakter, içinde başka dize verilir verilen bir dize döndürür.
+İçinde başka dizesi verilmiş belirli bir dizedeki ilk karaktere bir işaretçi döndürür.
 
 > [!IMPORTANT]
-> **_mbsspnp** ve **_mbsspnp_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsspnp** ve **_mbsspnp_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -92,23 +82,23 @@ unsigned char *_mbsspnp_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Aranacak dize null ile sonlandırılmış.
+Aramak için null ile sonlandırılmış dize.
 
 *karakter kümesi*<br/>
-Null olarak sonlandırılan bir karakter kümesi.
+Null ile sonlandırılmış karakter kümesi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_strspnp**, **_wcsspnp**, ve **_mbsspnp** ilk karakteri bir işaretçi dönmek *str* ait olmayan karakterkümesine*charset*. Bunların her biri döndürür işlevleri **NULL** varsa *str* tamamen karakterlerinden oluşur *charset*. Hiçbir değer döndürmeyen her Bu yordamlar için bir hata göstermek için ayrılmış.
+**_strspnp**, **_wcsspnp**, ve **_mbsspnp** ilk karakter, bir işaretçi döndürür *str* ait olmayan karakterkümesini*charset*. Bu işlevlerin her biri döndürür **NULL** varsa *str* tamamen karakterlerinden oluşuyorsa *charset*. Bu yordamların her biri için dönüş değeri bir hatayı göstermek için ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsspnp** işlevi bir işaretçi ilk karakter, birden çok baytlı karakter döndürür *str* ait olmayan karakter kümesine *charset*. **_mbsspnp** göre çok baytlı karakter sıralarının tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda. Arama null karakterlerini sonlandırma içermez.
+**_Mbsspnp** işlevi ilk karakteri olan çok baytlı karaktere bir işaretçi döndürür *str* ait olmayan karakter kümesini *charset*. **_mbsspnp** çok baytlı karakter sıralarına göre tanır [çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda. Arama boş karakterlerin sonlandırılmasını içermez.
 
-Her iki *str* veya *charset* null işaretçi açıklandığı gibi bu işlevi geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Ya da *str* veya *charset* null bir işaretçiyse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -116,9 +106,9 @@ Her iki *str* veya *charset* null işaretçi açıklandığı gibi bu işlevi ge
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsspnp**|**_strspnp**|**_mbsspnp**|**_wcsspnp**|
 
-**_strspnp** ve **_wcsspnp** tek baytlı karakter ve joker karakter sürümleri **_mbsspnp**. **_strspnp** ve **_wcsspnp** aynı şekilde davranır **_mbsspnp** aksi; bunlar yalnızca bu eşleme için sağlanır ve herhangi bir nedenden dolayı kullanılmamalıdır. Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
+**_strspnp** ve **_wcsspnp** tek baytlık karakter ve geniş karakter sürümleri **_mbsspnp**. **_strspnp** ve **_wcsspnp** öğesine aynı şekilde davranır **_mbsspnp** Aksi takdirde; bunlar yalnızca bu eşleşmeye ilişkin sağlanırlar ve başka bir nedenle kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini kullanma](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
 
-**_mbsspnp_l** yerine geçirilen yerel ayar parametresi kullanan dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_mbsspnp_l** bunun yerine iletilmiş yerel ayar parametresini kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -128,7 +118,7 @@ Her iki *str* veya *charset* null işaretçi açıklandığı gibi bu işlevi ge
 |**_strspnp**|\<Tchar.h >|
 |**_wcsspnp**|\<Tchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

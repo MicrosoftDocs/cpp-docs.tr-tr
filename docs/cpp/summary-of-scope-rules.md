@@ -1,12 +1,6 @@
 ---
-title: Kapsam kuralları özeti | Microsoft Docs
-ms.custom: ''
+title: Kapsam Kuralları Özeti
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - class scope [C++], rules
 - classes [C++], scope
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - names [C++], class
 - scope [C++], class names
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1628f64daed4a54688e568a156364eda7cd2a26
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af708fd72904fb775ff1088948972bec159816c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436094"
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
 

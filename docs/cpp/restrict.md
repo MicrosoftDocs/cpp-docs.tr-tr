@@ -1,28 +1,18 @@
 ---
-title: kısıtlama | Microsoft Docs
-ms.custom: ''
+title: restrict
 ms.date: 02/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - restrict_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], restrict
 - restrict __declspec keyword
 ms.assetid: f39cf632-68d8-4362-a497-2d4c15693689
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 955c3574358d59d23b644a31e42ee91ce6ce76eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 40c1c05ca72f639829f2d3658497b0e9f3199640
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068344"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431752"
 ---
 # <a name="restrict"></a>restrict
 

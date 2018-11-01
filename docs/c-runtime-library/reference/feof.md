@@ -1,10 +1,6 @@
 ---
-title: feof | Microsoft Docs
-ms.custom: ''
+title: feof
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - feof
 apilocation:
@@ -22,26 +18,20 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - feof
-dev_langs:
-- C++
 helpviewer_keywords:
 - end of file, testing for
 - feof function
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3162fd72acdfedc198764a92deec043cd681a10
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9c023290df601bfc48f9708af86d32d91cd52dc4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580706"
 ---
 # <a name="feof"></a>feof
 
-Son dosya bir akış üzerinde testler.
+Son dosya akışı ile ilgili sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,20 +43,20 @@ int feof(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Feof** işlevi bir okuma işlemi dosya sonunun okuma girişiminde bulunması durumunda sıfır olmayan bir değer döndürür; Aksi halde 0 döndürür. Akış işaretçi ise **NULL**, açıklandığı gibi geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve **feof** 0 döndürür.
+**Feof** işlevi okuma işlemi dosyanın sonundan okumayı denedi, sıfır olmayan bir değer döndürür; Aksi takdirde 0 değerini döndürür. Akış işaretçisini ise **NULL**, işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve **feof** 0 döndürür.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feof** yordamına (işlev olarak hem bir makrosu olarak uygulanan) belirler olup olmadığını sonuna *akış* geçirildi. Dosya sonuna geçirildiğinde akış kapatılana kadar veya kadar operations dönen bir dosya sonu göstergesi okuma [geri sarma](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md), veya  **clearerr** karşı çağrılır.
+**Feof** belirler (hem bir işlev ve makro olarak uygulanmış) yordamı olmadığını sonuna *stream* geçirildi. Dosya sonu geçirildiğinde, akış kapatılana kadar veya kadar operations dönen bir dosya sonu göstergesi okuma [rewind](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md), veya  **clearerr** göre adlandırılır.
 
-Örneğin, 10 bayt bir dosya içeriyorsa ve 10 bayt dosyadan okunan **feof** dosya işaretçisini dosyanın sonunda olsa bile, son okuma denediniz değil çünkü 0 döndürür. Okunacak çalıştıktan sonra bir 11 bayt olur yalnızca **feof** sıfır olmayan bir değer döndürür.
+Örneğin, 10 bayta bir dosya içeriyorsa ve 10 bayt Dosyadan okuma **feof** dosya işaretçisini dosyanın sonunda olsa bile, son okuma girişiminde bulundunuz değil çünkü 0 döndürür. Okunacak çalıştıktan sonra bir 11 bayt olur yalnızca **feof** sıfır olmayan bir değer döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -74,7 +64,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |--------------|---------------------|
 |**feof**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -132,7 +122,7 @@ Number of bytes read = 19
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [ferror](ferror.md)<br/>

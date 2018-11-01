@@ -1,26 +1,16 @@
 ---
-title: Bayt Endeksleri | Microsoft Docs
-ms.custom: ''
+title: Bayt Endeksleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MBCS [C++], byte indices
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11f7f78e87ddd40fd3cf85fc294e8fadac5dbe45
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4e19868e5297e1c1615efabde2aee418bc53c51e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423799"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448821"
 ---
 # <a name="byte-indices"></a>Bayt Endeksleri
 

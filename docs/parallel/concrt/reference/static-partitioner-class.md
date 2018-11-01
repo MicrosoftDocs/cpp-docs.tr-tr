@@ -1,29 +1,19 @@
 ---
-title: static_partitioner sınıfı | Microsoft Docs
-ms.custom: ''
+title: static_partitioner Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - static_partitioner
 - PPL/concurrency::static_partitioner
 - PPL/concurrency::static_partitioner::static_partitioner
-dev_langs:
-- C++
 helpviewer_keywords:
 - static_partitioner class
 ms.assetid: 2b3dbdf0-6eb9-49f6-8639-03df1d974143
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de1b63cf24fbc84130302fcbae2cb965e8d00597
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a0d06326b2ecbf3c427ae24b45751f7053778a0b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376026"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500899"
 ---
 # <a name="staticpartitioner-class"></a>static_partitioner Sınıfı
 

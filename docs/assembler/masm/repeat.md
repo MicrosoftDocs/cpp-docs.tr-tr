@@ -1,27 +1,17 @@
 ---
-title: YİNELEME | Microsoft Docs
-ms.custom: ''
+title: REPEAT
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - REPEAT
-dev_langs:
-- C++
 helpviewer_keywords:
 - REPEAT directive
 ms.assetid: 26a72d91-d6b0-4d32-b5ba-4f5074e7973b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e70fd06e64378cadbb1c64fba4bd566076f3183e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 883d2c22c22eeca7908ad8350571d7e224fc64e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690023"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615858"
 ---
 # <a name="repeat"></a>REPEAT
 

@@ -1,10 +1,6 @@
 ---
-title: OpenMP yönergeleri | Microsoft Docs
-ms.custom: ''
+title: OpenMP yönergeleri
 ms.date: 10/22/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
 f1_keywords:
 - OpenMP directives
 - atomic
@@ -19,8 +15,6 @@ f1_keywords:
 - SECTIONS
 - single
 - threadprivate
-dev_langs:
-- C++
 helpviewer_keywords:
 - OpenMP directives
 - atomic OpenMP directive
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98fec6659c2f4e998b946983a0bd2bdea6d0cde1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: eb371f4a2a16ea851b075d7e3819260e68945ffb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542967"
 ---
 # <a name="openmp-directives"></a>OpenMP yönergeleri
 

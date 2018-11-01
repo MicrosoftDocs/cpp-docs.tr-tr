@@ -1,8 +1,6 @@
 ---
-title: 'Platform::Collections:: vectorview sınıfı | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::Collections:: vectorview sınıfı'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorView::VectorView
@@ -11,21 +9,15 @@ f1_keywords:
 - COLLECTION/Platform::Collections::VectorView::GetMany
 - COLLECTION/Platform::Collections::VectorView::IndexOf
 - COLLECTION/Platform::Collections::VectorView::Size
-dev_langs:
-- C++
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9cfad80ac1f16d200f29504be1d4fb818e6e6afd
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 4f4a5cbd2f1b6c06b339950307dbb333fc6392ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658191"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections:: vectorview sınıfı
 

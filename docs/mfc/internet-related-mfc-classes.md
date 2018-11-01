@@ -1,25 +1,15 @@
 ---
-title: Internet ile ilgili MFC sınıfları | Microsoft Docs
-ms.custom: ''
+title: Internet ile İlgili MFC Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, Internet classes
 ms.assetid: e50c6b39-4b65-4b8a-8101-8934d0780723
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2f75effb986ad6d2185b0a3e4ef1f61b993d48f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7e0b4dd19c023229386c1af9d1e50ad18fe7f224
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516135"
 ---
 # <a name="internet-related-mfc-classes"></a>Internet ile İlgili MFC Sınıfları
 

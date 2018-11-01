@@ -1,28 +1,17 @@
 ---
-title: first_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: first_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.first_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - first_is attribute
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: fb8b53141f54e0f59c9734b9d7d855569dfceb9d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fcabad8d6c512a84e44f050cd5b34d985d687636
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059370"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512845"
 ---
 # <a name="firstis"></a>first_is
 

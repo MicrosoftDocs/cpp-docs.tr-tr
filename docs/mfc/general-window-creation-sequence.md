@@ -1,28 +1,18 @@
 ---
-title: Genel pencere oluşturma dizisi | Microsoft Docs
-ms.custom: ''
+title: Genel Pencere Oluşturma Dizisi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - sequence [MFC], window creation
 - frame windows [MFC], creating
 - windows [MFC], creating
 - sequence [MFC]
 ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9336e5fa19b373f07c54e758a6f939bbc63e50ec
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f69d32ea846e93974bc71340777b23750da73ba7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446793"
 ---
 # <a name="general-window-creation-sequence"></a>Genel Pencere Oluşturma Dizisi
 

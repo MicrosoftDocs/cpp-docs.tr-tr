@@ -1,10 +1,6 @@
 ---
-title: SchedulerPolicy sınıfı | Microsoft Docs
-ms.custom: ''
+title: SchedulerPolicy Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - SchedulerPolicy
 - concrt/concurrency::SchedulerPolicy
@@ -12,21 +8,15 @@ f1_keywords:
 - concrt/concurrency::SchedulerPolicy::GetPolicyValue
 - concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits
 - concrt/concurrency::SchedulerPolicy::SetPolicyValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e26898fd35b6202ab4a1b2a1df0744f7ee3105ea
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0d1c28501abc86d09b683b0ed91f831fe8697306
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462057"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy Sınıfı
 

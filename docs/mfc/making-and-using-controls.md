@@ -1,27 +1,17 @@
 ---
-title: Denetimleri yapma ve kullanma | Microsoft Docs
-ms.custom: ''
+title: Denetimleri Yapma ve Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [MFC], creating for dialog boxes
 - Windows common controls [MFC], about common controls
 - common controls [MFC], about common controls
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95440b8ef4265a842e85d132ef534f94620b142b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7a526c56c15d3e61f63b0def6d462d22b3560169
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417000"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498364"
 ---
 # <a name="making-and-using-controls"></a>Denetimleri Yapma ve Kullanma
 

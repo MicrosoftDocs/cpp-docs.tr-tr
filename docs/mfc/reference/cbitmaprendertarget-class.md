@@ -1,10 +1,6 @@
 ---
-title: CBitmapRenderTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: CBitmapRenderTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CBitmapRenderTarget
 - AFXRENDERTARGET/CBitmapRenderTarget
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXRENDERTARGET/CBitmapRenderTarget::GetBitmap
 - AFXRENDERTARGET/CBitmapRenderTarget::GetBitmapRenderTarget
 - AFXRENDERTARGET/CBitmapRenderTarget::m_pBitmapRenderTarget
-dev_langs:
-- C++
 helpviewer_keywords:
 - CBitmapRenderTarget [MFC], CBitmapRenderTarget
 - CBitmapRenderTarget [MFC], Attach
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CBitmapRenderTarget [MFC], GetBitmapRenderTarget
 - CBitmapRenderTarget [MFC], m_pBitmapRenderTarget
 ms.assetid: c89a4437-812e-4943-acb2-b429a04cc4d2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee70825711efd82ce451a0433a63d98d93850552
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffead8d1f4a903fba79e4b22eefbf0a2955f56fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562246"
 ---
 # <a name="cbitmaprendertarget-class"></a>CBitmapRenderTarget sınıfı
 

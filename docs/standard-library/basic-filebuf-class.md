@@ -1,10 +1,6 @@
 ---
-title: basic_filebuf sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_filebuf Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - fstream/std::basic_filebuf
 - fstream/std::basic_filebuf::char_type
@@ -24,8 +20,6 @@ f1_keywords:
 - fstream/std::basic_filebuf::sync
 - fstream/std::basic_filebuf::uflow
 - fstream/std::basic_filebuf::underflow
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_filebuf [C++]
 - std::basic_filebuf [C++], char_type
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - std::basic_filebuf [C++], uflow
 - std::basic_filebuf [C++], underflow
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee6c74693987c35f37caf210e604835061cbefd6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fcf673d8e6d871a7920150b5f62fd3d62135b52c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715344"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500535"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf Sınıfı
 

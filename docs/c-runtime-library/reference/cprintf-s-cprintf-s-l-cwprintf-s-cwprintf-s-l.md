@@ -1,10 +1,6 @@
 ---
-title: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l | Microsoft Docs
-ms.custom: ''
+title: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cwprintf_s_l
 - _cprintf_s_l
@@ -33,8 +29,6 @@ f1_keywords:
 - cprintf_s
 - _cwprintf_s
 - tcprintf_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - tcprintf_s_l function
 - _cprintf_s_l function
@@ -49,23 +43,19 @@ helpviewer_keywords:
 - cprintf_s_l function
 - cwprintf_s_l function
 ms.assetid: c28504fe-0d20-4f06-8f97-ee33225922ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2d8a2f5f80b00eef47d09a8d505f31a42a0fab2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3652587c9622c2eb9fe316782d1b1c7c9644dc8f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606525"
 ---
 # <a name="cprintfs-cprintfsl-cwprintfs-cwprintfsl"></a>_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 
-Biçimlendirir ve konsola yazdırır. Bu sürümleri [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Biçimlendirir ve konsola yazdırır. Bu sürümleri [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -92,7 +82,7 @@ int _cwprintf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *Bağımsız değişken*<br/>
@@ -107,16 +97,16 @@ Yazdırılan karakter sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler biçimlendirmek ve bir dizi karakter ve değerlerini doğrudan konsola yazdırma kullanarak **_putch** işlevi (**_putwch** için **_cwprintf_s**) çıktı karakter. Her *bağımsız değişkeni* (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. Form ve olarak işlev aynı biçimdedir *biçimi* parametresi için [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi. Farklı **fprintf_s**, **printf_s**, ve **sprintf_s** işlevleri, tipleri **_cprintf_s** ya da **_cwprintf_s** satır besleme karakterleri satır başı satır besleme (CR-LF) birleşimlerine çevirir çıkış.
+Bu işlevler biçimlendirmek ve bir dizi karakter ve değerlerini doğrudan konsola yazdırma kullanarak **_putch** işlevi (**_putwch** için **_cwprintf_s**) çıktı karakter. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. Biçim aynı form ve işleve sahip *biçimi* parametresi için [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi. Farklı **fprintf_s**, **printf_s**, ve **sprintf_s** işlevlerinin **_cprintf_s** ya da **_cwprintf_s** satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine çevirir çıkış.
 
-Önemli bir fark olan **_cwprintf_s** Windows NT kullanıldığında Unicode karakterler görüntüler. Farklı **_cprintf_s**, **_cwprintf_s** geçerli konsol yerel kullanır
+Önemli bir ayrımdır olan **_cwprintf_s** Windows NT'de kullanıldığı zaman Unicode karakterleri görüntüler. Farklı **_cprintf_s**, **_cwprintf_s** geçerli konsol yerel ayarlarını kullanır.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
 
-Güvenli olmayan sürümleri gibi (bkz [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), bu işlevler parametrelerini doğrulayın ve açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md), *biçimi* null işaretçi. Biçim dizesi de doğrulanır, bu işlevler güvenli olmayan sürümlerinden farklı. Tüm bilinmeyen veya hatalı biçimlendirilmiş biçimlendirme tanımlayıcıları varsa, bu işlevler geçersiz parametre işleyicisi çağırma. Devam etmek için yürütülmesine izin veriliyorsa tüm durumlarda işlevleri -1 döndürür. ve **errno** için **EINVAL**.
+Güvenli olmayan sürümler gibi (bkz [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), bu işlevler kendi parametrelerini doğrular ve açıklandığı gibi geçersiz parametre işleyicisini çağırır [parametredoğrulama](../../c-runtime-library/parameter-validation.md), *biçimi* bir null işaretçidir. Bu işlevlerin güvenli olmayan sürümlerden biçim dizesinin kendisinin de doğrulanması bakımından farklıdır. Tüm bilinmeyen veya hatalı oluşturulmuş biçimlendirme tanımlayıcıları varsa, bu işlevler geçersiz parametre işleyicisini çağırır. Her durumda yürütmenin devam etmesine izin verilirse işlevler -1 döndürür. ayarlayıp **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -132,7 +122,7 @@ Güvenli olmayan sürümleri gibi (bkz [_cprintf, _cprintf_l, _cwprintf, _cwprin
 |**_cprintf_s**, **_cprintf_s_l**|\<conio.h >|
 |**_cwprintf_s**, **_cwprintf_s_l**|\<conio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

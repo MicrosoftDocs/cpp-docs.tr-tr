@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2871 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2871
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2871
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2871
 ms.assetid: 44aeb84d-61f0-45e0-8dad-22a3cd46b7f8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e960dd6bc9fdf81d6a1bb127330f1066628fffd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 355a485de46916977be6f7b801794806a9c9e0ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492889"
 ---
 # <a name="compiler-error-c2871"></a>Derleyici Hatası C2871
 

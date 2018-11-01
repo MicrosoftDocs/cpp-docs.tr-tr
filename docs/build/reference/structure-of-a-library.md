@@ -1,25 +1,15 @@
 ---
-title: Kitaplık yapısı | Microsoft Docs
-ms.custom: ''
+title: Kitaplık Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - libraries, structure
 ms.assetid: a5fda8e8-4a1b-4499-9095-0df935262ce4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03c2c66d45ee415ddc4f3ba27b6a100c5e2ec1dc
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7fdca9b94aa3b19cc8badf231a8b966d0519069c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702110"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497431"
 ---
 # <a name="structure-of-a-library"></a>Kitaplık Yapısı
 

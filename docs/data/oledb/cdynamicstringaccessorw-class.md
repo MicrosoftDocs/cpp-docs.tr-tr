@@ -1,28 +1,17 @@
 ---
-title: CDynamicStringAccessorW sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDynamicStringAccessorW Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CDynamicStringAccessorW
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDynamicStringAccessorW class
 ms.assetid: 9b7fd5cc-3a9b-4b57-b907-f1e35de2c98f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 16f4725013d11eb27e4c6669403942cf171032ac
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7052a912363d1256294131da9b89df97f768ecf8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220080"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551365"
 ---
 # <a name="cdynamicstringaccessorw-class"></a>CDynamicStringAccessorW Sınıfı
 

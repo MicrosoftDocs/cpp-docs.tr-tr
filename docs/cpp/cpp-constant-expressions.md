@@ -1,27 +1,17 @@
 ---
-title: C++ sabit ifadeleri | Microsoft Docs
-ms.custom: ''
+title: C++ Sabit İfadeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - constant expressions, syntax
 - constant expressions
 - expressions [C++], constant
 ms.assetid: b07245a5-4c21-4589-b503-e6ffd631996f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35041b3a58f53586702db73d3bc5f6103f4f7cd7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 97059066adadc3a7897cbd2c4c747e2a673e7201
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054369"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576430"
 ---
 # <a name="c-constant-expressions"></a>C++ Sabit İfadeleri
 

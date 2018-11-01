@@ -1,10 +1,6 @@
 ---
-title: CMenu sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMenu sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMenu
 - AFXWIN/CMenu
@@ -47,8 +43,6 @@ f1_keywords:
 - AFXWIN/CMenu::TrackPopupMenu
 - AFXWIN/CMenu::TrackPopupMenuEx
 - AFXWIN/CMenu::m_hMenu
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMenu [MFC], CMenu
 - CMenu [MFC], AppendMenu
@@ -90,16 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c13b4d5c3779d6c4b57ff53a1016b344ed097099
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bcaf24c14938bcf56eb083ad2dd79e4c245c7c84
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613687"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 

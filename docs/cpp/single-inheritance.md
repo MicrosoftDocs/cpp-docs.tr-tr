@@ -1,12 +1,6 @@
 ---
-title: Tek devralma | Microsoft Docs
-ms.custom: ''
+title: Tek Devralma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - single inheritance
 - base classes [C++], indirect
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - derived classes [C++], single base class
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0817ba40dd5868e7e9a805bf5070cbc38927389d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a188780201c00451b125288b37c7c62fbe2322c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075483"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461860"
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 

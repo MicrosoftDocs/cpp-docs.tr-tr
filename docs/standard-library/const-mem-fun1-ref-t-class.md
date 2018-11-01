@@ -1,27 +1,17 @@
 ---
-title: const_mem_fun1_ref_t sınıfı | Microsoft Docs
-ms.custom: ''
+title: const_mem_fun1_ref_t Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::const_mem_fun1_ref_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_mem_fun1_ref_t class
 ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2dafffcaee1dc4ba9bc87c2bfaa60dee45ca234
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e90ac09543c0704cf900e0fc5448e295034dcb66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516458"
 ---
 # <a name="constmemfun1reft-class"></a>const_mem_fun1_ref_t Sınıfı
 

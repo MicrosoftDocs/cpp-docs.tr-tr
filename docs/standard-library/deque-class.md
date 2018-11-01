@@ -1,10 +1,6 @@
 ---
-title: deque sınıfı | Microsoft Docs
-ms.custom: ''
+title: deque Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - deque/std::deque
 - deque/std::deque::allocator_type
@@ -48,8 +44,6 @@ f1_keywords:
 - deque/std::deque::shrink_to_fit
 - deque/std::deque::size
 - deque/std::deque::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::deque [C++]
 - std::deque [C++], allocator_type
@@ -94,16 +88,12 @@ helpviewer_keywords:
 - std::deque [C++], size
 - std::deque [C++], swap
 ms.assetid: 64842ee5-057a-4063-8c16-4267a0332584
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: afcf2528ba84edd90179ef6eb29d356466372633
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0d411344e20c6ef42d8af32e9a1adc448b73584c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619888"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 

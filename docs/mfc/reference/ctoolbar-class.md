@@ -1,10 +1,6 @@
 ---
-title: CToolBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CToolBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CToolBar
 - AFXEXT/CToolBar
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXEXT/CToolBar::SetButtonText
 - AFXEXT/CToolBar::SetHeight
 - AFXEXT/CToolBar::SetSizes
-dev_langs:
-- C++
 helpviewer_keywords:
 - CToolBar [MFC], CToolBar
 - CToolBar [MFC], CommandToIndex
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf8f66dbd6455686fb856337485e5a38da4f31c1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4faa067f95f43939d6dbd05837f961b3baa7f17f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593252"
 ---
 # <a name="ctoolbar-class"></a>CToolBar sınıfı
 

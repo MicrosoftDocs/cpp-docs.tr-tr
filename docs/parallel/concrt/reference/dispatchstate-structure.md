@@ -1,10 +1,6 @@
 ---
-title: DispatchState yapısı | Microsoft Docs
-ms.custom: ''
+title: DispatchState Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - DispatchState
 - CONCRTRM/concurrency::DispatchState
@@ -12,21 +8,15 @@ f1_keywords:
 - CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize
 - CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked
 - CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved
-dev_langs:
-- C++
 helpviewer_keywords:
 - DispatchState structure
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cb60a183497942d7a8bea6a333d2dea62d8e2b4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4c15fc0ba9c78d8b6416cd88480c8ada6e3febf1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603573"
 ---
 # <a name="dispatchstate-structure"></a>DispatchState Yapısı
 

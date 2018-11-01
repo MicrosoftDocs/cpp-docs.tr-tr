@@ -1,10 +1,6 @@
 ---
-title: getw | Microsoft Docs
-ms.custom: ''
+title: getw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - getw
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - getw
-dev_langs:
-- C++
 helpviewer_keywords:
 - getw function
 ms.assetid: d3c347a4-3ff1-403b-8d02-2dd3b429bb5f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c9e3452f01509a1417b2fae66f6b3178116d8b3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 33d0d6eaf571901935ee17a29cb17a5d91c5957c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490057"
 ---
 # <a name="getw"></a>getw
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_getw](getw.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_getw](getw.md) yerine.

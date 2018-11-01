@@ -1,16 +1,11 @@
 ---
-title: / Tc, /Tp, /TC, /TP (kaynak dosya türünü belirtin) | Microsoft Docs
+title: /Tc, /Tp, /TC, /TP (Kaynak Dosya Türünü Belirtin)
 ms.date: 1/11/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.CompileAs
 - VC.Project.VCCLCompilerTool.CompileAs
 - /Tp
 - /tc
-dev_langs:
-- C++
 helpviewer_keywords:
 - Tp compiler option [C++]
 - /Tc compiler option [C++]
@@ -19,16 +14,12 @@ helpviewer_keywords:
 - Tc compiler option [C++]
 - /Tp compiler option [C++]
 - -Tp compiler option [C++]
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c6c264a11e4cec478502fbd0e1837ceba450ba9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e435b48359a708408ff8659e53c9e7c4f7e80261
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714304"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619121"
 ---
 # <a name="tc-tp-tc-tp-specify-source-file-type"></a>/Tc, /Tp, /TC, /TP (Kaynak Dosya Türünü Belirtin)
 
@@ -64,7 +55,7 @@ Zaman ya da **TC** veya **Tc** seçeneği belirtildiğinde, tüm belirtimi [/ZC:
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAs%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAs%2A>.
 
 ## <a name="examples"></a>Örnekler
 

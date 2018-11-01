@@ -1,30 +1,20 @@
 ---
-title: Kopya kaynakları proje özellikleri (Linux C++) | Microsoft Docs
-ms.custom: ''
+title: Kopyalama kaynakları proje özellikleri (Linux C++)
 ms.date: 9/26/2017
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: 1a44230d-5dd8-4d33-93b4-e77e03e00150
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: d13bc7c129696e2b7251ccb23b68338956864321
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd0a26db58265724f0a0e46c31365c97c00ff568
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477252"
 ---
-# <a name="copy-sources-project-properties-linux-c"></a>Proje Özellikleri (Linux C++) kopyalama kaynakları
+# <a name="copy-sources-project-properties-linux-c"></a>Kopyalama kaynakları proje özellikleri (Linux C++)
 
-Bu özellik sayfasında ayarlamak özellikleri dosya düzeyinde özelliklerini ayarlamak dışında projedeki tüm dosyalar için geçerlidir.
+Bu özellik sayfasında ayarlanan özellikleri, dosya düzeyinde özellikleri kümesi dışında projedeki tüm dosyalar için geçerlidir.
 
 Özellik | Açıklama
 --- | ---
-Kaynakları kopyalamak için | Uzak sisteme kopyalama için kaynakları belirtir. Bu listeyi değiştirme, shift veya aksi halde, dosyaları uzak sistemde kopyalanır dizin yapısını etkilemez.
-Kaynakları kopyalama | Uzak sistem kaynaklarına kopyalanıp kopyalanmayacağını belirtir.
-Kopyalama için ek kaynaklar | Uzak sisteme kopyalamak için ek kaynaklar belirtir. İsteğe bağlı olarak listesi yerel bir uzak eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: fullremotepath1; = fulllocalpath2: yerel bir dosya kopyalanabildiği belirtilen uzak konuma uzak sistem üzerindeki fullremotepath2 =.
+Kopyalanacak kaynaklar | Uzak sisteme kopyalanacak kaynakları belirtir. Bu listenin değiştirilmesi değiştirebilir veya aksi halde burada dosyaları uzak sistemde kopyalanır dizin yapısını etkiler.
+Kaynakları Kopyala | Kaynakların uzak sisteme kopyalanıp kopyalanmayacağını belirtir.
+Kopyalanacak ek kaynaklar | Uzak sisteme kopyalanacak ek kaynakları belirtir. İsteğe bağlı olarak liste yerel için eşleme çiftlerine şunun gibi bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: = fullremotepath1; fulllocalpath2: = fulllocalpath2, burada bir yerel dosya kopyalanabilir uzak sistemde belirtilen uzak konuma.

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4788 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4788
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4788
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4788
 ms.assetid: 47d75bda-f833-4bdd-93a0-a134df0cd303
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c8a6ad1aa3ae17944b8c2a292d484d55c24d9cd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c51a4409c2a3028823462539343654b5eac365d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598178"
 ---
 # <a name="compiler-warning-level-1-c4788"></a>Derleyici Uyarısı (düzey 1) C4788
 

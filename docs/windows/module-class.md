@@ -1,9 +1,6 @@
 ---
-title: Modül sınıfı | Microsoft Docs
-ms.custom: ''
+title: Modül Sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module
@@ -25,8 +22,6 @@ f1_keywords:
 - module/Microsoft::WRL::Module::UnregisterCOMObject
 - module/Microsoft::WRL::Module::UnregisterObjects
 - module/Microsoft::WRL::Module::UnregisterWinRTObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Module class
 - Microsoft::WRL::Module::Create method
@@ -48,17 +43,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::UnregisterObjects method
 - Microsoft::WRL::Module::UnregisterWinRTObject method
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2357790e3084c91011f16eb9f1f718948462f898
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2b90c3b316d9eef195f815058d9ad1f9bcfa0b42
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468602"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 

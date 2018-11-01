@@ -1,28 +1,18 @@
 ---
-title: Statement (C) devam | Microsoft Docs
-ms.custom: ''
+title: continue Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - continue
-dev_langs:
-- C++
 helpviewer_keywords:
 - loop structures, continue keyword
 - continue keyword [C]
 ms.assetid: 969f293a-45fe-48a7-b4c6-287ba27a631d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bde13a20dd1b54ed8a1b4271895715596549f1a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: db3ed1d1575a52b8d54466f763f348821c458f31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069306"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587177"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C)
 

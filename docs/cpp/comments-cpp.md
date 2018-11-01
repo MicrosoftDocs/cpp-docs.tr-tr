@@ -1,28 +1,18 @@
 ---
-title: Açıklamaları (C++) | Microsoft Docs
-ms.custom: ''
+title: Açıklamaları (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - code comments, C++
 - comments, documenting code
 - comments, C++ code
 - white space, C++ comments
 ms.assetid: 6fcb906c-c264-4083-84bc-373800b2e514
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a873ca82fc51c2f08e3788f9ec3c59c199961105
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a90d9d37e69cb2e8be4ab18f77026fdce1221307
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506112"
 ---
 # <a name="comments-c"></a>Açıklamaları (C++)
 

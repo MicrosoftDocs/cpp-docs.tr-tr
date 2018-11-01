@@ -1,28 +1,18 @@
 ---
-title: Pointers (C) tabanlı | Microsoft Docs
-ms.custom: ''
+title: Tabanlı İşaretçiler (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - __based keyword [C]
 - based pointers
 - pointers, based
 - based addressing
 ms.assetid: b5446920-89e0-4e2f-91f3-1f2a769a08e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79e515a3f108d0857d2f8860566e14ee0acdefe3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7d41d1b7a4d19a7837f5aac1eb7975d6cec8c979
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097581"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581460"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C)
 

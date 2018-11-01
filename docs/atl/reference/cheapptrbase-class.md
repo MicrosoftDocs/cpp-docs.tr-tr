@@ -1,10 +1,6 @@
 ---
-title: CHeapPtrBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHeapPtrBase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CHeapPtrBase
 - ATLCORE/ATL::CHeapPtrBase
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLCORE/ATL::CHeapPtrBase::Free
 - ATLCORE/ATL::CHeapPtrBase::ReallocateBytes
 - ATLCORE/ATL::CHeapPtrBase::m_pData
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHeapPtrBase class
 ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e1fad70e709ecef33d6df2c8e8e0aa58589e356
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f183bb21d6a23b4e8ac4284894cfa2fcc7bb1dfd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538167"
 ---
 # <a name="cheapptrbase-class"></a>CHeapPtrBase sınıfı
 

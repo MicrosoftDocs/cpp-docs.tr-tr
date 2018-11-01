@@ -1,10 +1,6 @@
 ---
-title: Coleclientıtem sınıfı | Microsoft Docs
-ms.custom: ''
+title: Coleclientıtem sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleClientItem
 - AFXOLE/COleClientItem
@@ -87,8 +83,6 @@ f1_keywords:
 - AFXOLE/COleClientItem::OnGetWindowContext
 - AFXOLE/COleClientItem::OnScrollBy
 - AFXOLE/COleClientItem::OnShowItem
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleClientItem [MFC], COleClientItem
 - COleClientItem [MFC], Activate
@@ -170,16 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2664f3771e92e6297fc2b512214df2fd875a8400
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 706e7cd290e41ba9f3761f43688dc89fad5f3b74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579328"
 ---
 # <a name="coleclientitem-class"></a>Coleclientıtem sınıfı
 

@@ -1,27 +1,18 @@
 ---
-title: Bilinmeyen uygulama sınıfları (ATL) | Microsoft Docs
-ms.custom: ''
+title: Bilinmeyen uygulama sınıfları (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.Iunknown
-dev_langs:
-- C++
 helpviewer_keywords:
 - IUnknown implementation classes
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42c42b43fdc04978fabe36b0ea64f39b9a5d333f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0a15a256f961d35f5153c11da6690f6908e08a52
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484129"
 ---
 # <a name="iunknown-implementation-classes"></a>Bilinmeyen uygulama sınıfları
 

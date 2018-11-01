@@ -1,12 +1,6 @@
 ---
-title: İşlem (ODBC) | Microsoft Docs
-ms.custom: ''
+title: İşlem (ODBC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC recordsets [C++], updating
 - transactions [C++], MFC ODBC classes
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - recordsets [C++], transactions
 - ODBC recordsets [C++], transactions
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ba77eb5289dcd2bd169b85fe9a595c231a86cf4c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0deb21a43ff17ca94efe29bdec37db7611331a86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056184"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615819"
 ---
 # <a name="transaction-odbc"></a>İşlem (ODBC)
 

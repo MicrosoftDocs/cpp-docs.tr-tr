@@ -1,31 +1,21 @@
 ---
-title: vector&lt;bool&gt;::reference::operator= | Microsoft Docs
-ms.custom: ''
+title: vector&lt;bool&gt;::reference::operator=
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - =
 - operator=
 - vector<bool>::reference::operator=
 - std::vector<bool>::reference::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - = operator, with specific C++ Standard Library objects
 - reference::operator=
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4eddd4ce677adfb51192302357dfbd72be36df3c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 82bbf41d0d7d1fda3cd1951f810fd82774a5d8f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500548"
 ---
 # <a name="vectorltboolgtreferenceoperator"></a>vector&lt;bool&gt;::reference::operator=
 

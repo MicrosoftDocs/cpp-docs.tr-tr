@@ -1,29 +1,18 @@
 ---
-title: OLE DB sağlayıcı şablonları (C++) | Microsoft Docs
-ms.custom: ''
+title: OLE DB Sağlayıcı Şablonları (C++)
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers [C++], about providers
 - databases [C++], OLE DB templates
 - OLE DB provider templates [C++], about OLE DB provider templates
 - templates [C++], OLE DB
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4d4d93f656279cf5e5c548ef09bf809364c9d90e
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 99bf377ff10a2978a912666e787ed3a024d8654e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485199"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB Sağlayıcı Şablonları (C++)
 

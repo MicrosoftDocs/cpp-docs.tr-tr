@@ -1,27 +1,17 @@
 ---
-title: . ENDPROLOG | Microsoft Docs
-ms.custom: ''
+title: .ENDPROLOG
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ENDPROLOG
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ENDPROLOG directive
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 370db59c6be4b3f53c9596c1ca443374acd2d2c8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e6450ff0daaf679738cbbfe224002b01fe97b8ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489888"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
 

@@ -1,28 +1,18 @@
 ---
-title: Tipik bir Gopher istemci uygulamasında adımlar | Microsoft Docs
-ms.custom: ''
+title: Tipik Bir Gopher İstemci Uygulamasındaki Adımlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - WinInet classes [MFC], gopher
 - Internet applications [MFC], gopher client applications
 - Gopher client applications [MFC]
 - Internet client applications [MFC], gopher table
 ms.assetid: 3e4e1869-5da0-453d-8ba9-b648c894bb90
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c547d5b2a0bc9755fdf968fc1c42643e96e6fa6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 123b8abd2ca65356c584fa52f9415504bcb701c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486430"
 ---
 # <a name="steps-in-a-typical-gopher-client-application"></a>Tipik Bir Gopher İstemci Uygulamasındaki Adımlar
 

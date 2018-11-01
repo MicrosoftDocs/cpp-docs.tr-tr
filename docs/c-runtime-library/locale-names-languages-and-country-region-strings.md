@@ -1,14 +1,8 @@
 ---
-title: Yerel ayar adları, diller ve ülke / bölge dizeleri | Microsoft Docs
-ms.custom: ''
+title: Yerel ayar adları, diller ve ülke / bölge dizeleri
 ms.date: 08/13/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.strings
-dev_langs:
-- C++
 helpviewer_keywords:
 - country/region strings
 - localization, locale
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - setlocale function
 - language strings
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2622702cd19dab3cad2613aa3df28b5cef464853
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8776cdc37cc816151db6e7f441df5686da5c1ae0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601740"
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>Yerel Ayar Adları, Diller ve Ülke/Bölge Dizeleri
 

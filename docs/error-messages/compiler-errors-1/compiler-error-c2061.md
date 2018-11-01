@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2061 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2061
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2061
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2061
 ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 896fdb21c57e0f558b87ec23e2be309cf49f8095
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0bd1e770e38fcb85164bfa205470ac55a12e1c87
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057970"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466202"
 ---
 # <a name="compiler-error-c2061"></a>Derleyici Hatası C2061
 

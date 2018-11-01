@@ -1,10 +1,6 @@
 ---
-title: CComboBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComboBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CComboBox
 - AFXWIN/CComboBox
@@ -59,8 +55,6 @@ f1_keywords:
 - AFXWIN/CComboBox::SetMinVisibleItems
 - AFXWIN/CComboBox::SetTopIndex
 - AFXWIN/CComboBox::ShowDropDown
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComboBox [MFC], CComboBox
 - CComboBox [MFC], AddString
@@ -114,16 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 912bbd37d4d9afcb60158d41b82b7fa829eeb4ec
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 9509b122e271ac22529c1b8a7b8e8d0b4b50025b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641109"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 

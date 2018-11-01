@@ -1,28 +1,18 @@
 ---
-title: Kalıcı ve kalıcı olmayan iletişim kutuları | Microsoft Docs
-ms.custom: ''
+title: Kalıcı ve Kalıcı Olmayan İletişim Kutuları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC dialog boxes [MFC], modeless
 - modeless dialog boxes [MFC]
 - MFC dialog boxes [MFC], modal
 - modal dialog boxes [MFC]
 ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e355c3bcef9edb68e49903dafbf4719fe0aa925
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7e1dc9c40f60dc46117ee0673a038d5a63df7680
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528368"
 ---
 # <a name="modal-and-modeless-dialog-boxes"></a>Kalıcı ve Kalıcı Olmayan İletişim Kutuları
 

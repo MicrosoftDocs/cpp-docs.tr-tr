@@ -1,10 +1,6 @@
 ---
-title: __sptr, __uptr | Microsoft Docs
-ms.custom: ''
+title: __sptr, __uptr
 ms.date: 10/10/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __uptr_cpp
 - __sptr_cpp
@@ -12,22 +8,16 @@ f1_keywords:
 - __sptr
 - _uptr
 - _sptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - __sptr modifier
 - __uptr modifier
 ms.assetid: c7f5f3b2-9106-4a0b-a6de-d1588ab153ed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fa67c815fdfeac0f5728ecd671aaa8f04a59ef89
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 957f744ca6c5a7be807c1dc68fcd2b602b72300e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163484"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460924"
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
 

@@ -1,23 +1,13 @@
 ---
-title: 'Taşıma Kılavuzu: COM Spy | Microsoft Docs'
-ms.custom: ''
+title: 'Taşıma Kılavuzu: COM Spy'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a5ac81a912eef4fa53542fa8adad6ead6b5d716e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 67dbcc815404c26535763239eddb176fcecf03f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441799"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
 

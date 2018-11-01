@@ -1,27 +1,17 @@
 ---
-title: Görüntü listesi kullanma | Microsoft Docs
-ms.custom: ''
+title: Görüntü Listesi Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - lists [MFC], image
 - CImageList class [MFC], using
 - image lists [MFC]
 ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4dc30d418ae57205e4566dad7f490a773321768e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fb0636d29d5bf72007eb440f763de0d5e1f4b581
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581252"
 ---
 # <a name="using-an-image-list"></a>Görüntü Listesi Kullanma
 

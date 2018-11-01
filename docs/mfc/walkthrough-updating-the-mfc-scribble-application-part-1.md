@@ -1,12 +1,6 @@
 ---
-title: 'İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor'
 ms.date: 09/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - examples [MFC], update existing application
 - ribbon UI, porting to
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3daa42008bd385b2d45d05106162c99fb9ca0b12
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 85ff0c17f8ec523fc5cb52101fb44cfc37dd9b50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082885"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481854"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2745 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2745
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2745
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2745
 ms.assetid: a1c45f13-7667-4678-aa16-265304a449a1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d08e89fe3dbcfbff8c947b432bda94e9ac15ef99
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 53a218fd80c6b8261aa0dda6bcaa1c347db73458
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564005"
 ---
 # <a name="compiler-error-c2745"></a>Derleyici Hatası C2745
 

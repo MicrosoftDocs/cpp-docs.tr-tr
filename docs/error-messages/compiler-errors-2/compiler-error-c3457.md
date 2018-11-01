@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3457 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3457
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3457
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3457
 ms.assetid: 5c1e366a-fa75-4cca-b9a3-86d4ebe4090e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 794c3deb042c383f3802ce32f3f7c4580f6061a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 813b1c085cb0464880cb400b6200f9574220bd71
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566120"
 ---
 # <a name="compiler-error-c3457"></a>Derleyici Hatası C3457
 

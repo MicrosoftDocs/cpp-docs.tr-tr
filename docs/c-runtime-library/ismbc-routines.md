@@ -1,10 +1,6 @@
 ---
-title: _ismbc rutinleri | Microsoft Docs
-ms.custom: ''
+title: _ismbc Rutinleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr110.dll
 - msvcr110_clr0400.dll
@@ -16,22 +12,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _ismbc
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2eb2c300c981bd79e08da181478cb486348b24a7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 707287ea7abe255409911f5388cd1f96d976802b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036598"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454645"
 ---
 # <a name="ismbc-routines"></a>_ismbc Rutinleri
 

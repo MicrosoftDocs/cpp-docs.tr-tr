@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi önemli hatası RC1109 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Önemli Hatası RC1109
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC1109
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC1109
 ms.assetid: 2d3ec1c9-86fd-4d53-aa52-840c310b8328
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61197a4322690646bf3f89d155fbb526b00ba0de
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d5680ce3aa05188c45a2d26a76615955be4fe96a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044814"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667577"
 ---
 # <a name="resource-compiler-fatal-error-rc1109"></a>Kaynak Derleyicisi Önemli Hatası RC1109
 

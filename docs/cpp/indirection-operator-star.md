@@ -1,28 +1,18 @@
 ---
-title: 'Yöneltme işleci: * | Microsoft Docs'
-ms.custom: ''
+title: 'Yönlendirme İşleci: *'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - '* operator'
 - indirection operator
 - operators [C++], indirection
 - indirection operator [C++], syntax
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01ceee27c58dc654b7022d3e9f56129e8914040b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a35d8cb28baaee37ad64a61cbcb9d4c76a5aad06
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482748"
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 

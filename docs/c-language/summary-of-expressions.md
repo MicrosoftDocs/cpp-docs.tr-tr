@@ -1,157 +1,114 @@
 ---
-title: İfadelerin özeti | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
+title: İfadelerin Özeti
+ms.date: 06/14/2018
 ms.assetid: ed448953-687a-4b57-a1cb-12967bd770ea
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 456a9b98c260107f07c302174e4d9f95d6a62aa6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 320baa51d54f00ac4fdb6633922a8bb36cf92a94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543500"
 ---
 # <a name="summary-of-expressions"></a>İfadelerin Özeti
-*Birincil ifade*:  
- *Tanımlayıcı*  
-  
- *sabiti*  
-  
- *dize değişmez değeri*  
-  
- **(***ifade***)**   
-  
- *ifade*:  
- *atama ifadesi*  
-  
- *ifade***,***atama ifadesi*   
-  
- *Sabit ifadesi*:  
- *Koşullu ifade*  
-  
- *Koşullu ifade*:  
- *OR ifadesi mantıksal*  
-  
- *OR ifadesi mantıksal***?**   *ifade***:***koşullu ifade*   
-  
- *atama ifadesi*:  
- *Koşullu ifade*  
-  
- *Tek terimli ifadesi atama işleci atama ifadesi*  
-  
- *sonek ifade*:  
- *Birincil ifade*  
-  
- *sonek ifade***[***ifade***]**   
-  
- *sonek ifade***(***bağımsız değişken ifadesi listesi* kabul **)**   
-  
- *sonek ifade***.**   *Tanımlayıcı*  
-  
- *sonek ifade***->***tanımlayıcısı*   
-  
- *sonek ifade*  **++**  
-  
- *sonek ifade*  **--**  
-  
- *bağımsız değişken ifadesi listesi*:  
- *atama ifadesi*  
-  
- *bağımsız değişken ifadesi listesi***,***atama ifadesi*   
-  
- *Tek terimli ifadesi*:  
- *sonek ifade*  
-  
- **++**  *Tek terimli ifadesi*  
-  
- **--**  *Tek terimli ifadesi*  
-  
- *birli işleç*  
-  
- *Cast ifadesi*  
-  
- **sizeof***Tek terimli ifadesi*   
-  
- **sizeof (***türü adı***)**   
-  
- *birli işleç*: biri  
- **& \* + - ~ !**  
-  
- *Cast ifadesi*:  
- *Tek terimli ifadesi*  
-  
- **(***türü adı***)***cast ifadesi*  
-  
- *ifade çarpma*:  
- *Cast ifadesi*  
-  
- *ifade çarpma***\****cast ifadesi*   
-  
- *ifade çarpma***/***cast ifadesi*   
-  
- *ifade çarpma***%***cast ifadesi*   
-  
- *ADDITIVE ifade*:  
- *ifade çarpma*  
-  
- *ADDITIVE ifade***+***ifade çarpma*   
-  
- *ADDITIVE ifade***-***ifade çarpma*   
-  
- *Shift ifade*:  
- *ADDITIVE ifade*  
-  
- *Shift ifade***<\<***ADDITIVE ifade*   
-  
- *Shift ifade***>>***ADDITIVE ifade*   
-  
- *ifade ilişkisel*:  
- *Shift ifade*  
-  
- *ifade ilişkisel***\<***shift ifade*   
-  
- *ifade ilişkisel***>***ilişkisel shift-expression ifadesi* **\< =** *shift ifade*   
-  
- *ifade ilişkisel***>=***shift ifade*   
-  
- *Eşitlik ifade*:  
- *ifade ilişkisel*  
-  
- *Eşitlik ifade***==***ifade ilişkisel*   
-  
- *Eşitlik ifade***! =***ifade ilişkisel*   
-  
- *VE ifade*:  
- *Eşitlik ifade*  
-  
- *VE ifade***&***eşitlik ifade*   
-  
- *dışlayan OR ifadesi*:  
- *VE ifade*  
-  
- *dışlayan OR ifadesi***^***ve ifade*   
-  
- *OR ifadesi dahil*:  
- *dışlayan OR ifadesi*  
-  
- *OR ifadesi dahil***&#124;***özel veya ifade*   
-  
- *mantıksal-ve-ifadesi*:  
- *OR ifadesi (bunlar dahil)*  
-  
- *mantıksal-ve-ifadesi***&&***veya ifadesi (bunlar dahil)*   
-  
- *OR ifadesi mantıksal*:  
- *mantıksal-ve-ifadesi*  
-  
- *OR ifadesi mantıksal***&#124;&#124;***mantıksal-ve-ifadesi*   
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)
+
+*Birincil ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(***ifade***)** 
+
+*ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade***,***atama ifadesi* 
+
+*Sabit ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*
+
+*Koşullu ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression***?**   *ifade***:***koşullu ifade*
+
+*atama ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tekli ifade* *atama işleci* *atama ifadesi*
+
+*sonek ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Birincil ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***[***ifade***]** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***(***bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***.**  *tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***->***tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
+
+*bağımsız değişken ifade listesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız değişken ifade listesi***,***atama ifadesi* 
+
+*Tekli ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**++**  *Tekli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**--**  *Tekli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*birli-işleç*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Cast ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sizeof***tekli ifade* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sizeof (***tür adı***)** 
+
+*birli işleç*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**&** **&#42;****+** **-** **~** **!**
+
+*Cast ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tekli ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(***tür adı***)***atama ifadesi*
+
+*ifade çarpma*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Cast ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma***&#42;***atama ifadesi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma***/***atama ifadesi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade çarpma***%***atama ifadesi* 
+
+*additive-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çarpma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression***+***çarpma ifadesi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression***-***çarpma ifadesi* 
+
+*Shift-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression***\<\<***additive-expression* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression***>>***additive-expression* 
+
+*İlişkisel ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***\<***shift-expression* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***>***shift-expression* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***\<=***shift-expression* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade***>=***shift-expression* 
+
+*Eşitlik ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade***==***ilişkisel ifade* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade***! =***ilişkisel ifade* 
+
+*VE ifadeli*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*VE ifade***&***eşitlik ifadesi* 
+
+*dışlamalı OR ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*AND ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi***^***ve ifade* 
+
+*OR ifadesi kapsamlı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*dışlamalı OR ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi kapsamlı***&#124;***dışlamalı OR ifadesi* 
+
+*mantıksal-ve-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*OR ifadesi dahil*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-expression***&&***OR ifadesi dahil* 
+
+*mantıksal-veya-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-ve-ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-expression***&#124;&#124;***mantıksal-ve-ifadesi* 
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)

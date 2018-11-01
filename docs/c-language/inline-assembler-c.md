@@ -1,26 +1,16 @@
 ---
-title: Inline assembler (C) | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Derleyicisi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - __asm keyword [C]
 - inline assembler [C]
 ms.assetid: 821acc77-60b1-434c-ba54-2ba930a25ab4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd380a9c10c2e1c8a5715a05b9a63cbd6c6df973
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 08507c7ce0c1163e8768ed3551cd7053503058e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051977"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549688"
 ---
 # <a name="inline-assembler-c"></a>Satır İçi Derleyicisi (C)
 

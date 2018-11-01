@@ -1,27 +1,17 @@
 ---
-title: auto_rename | Microsoft Docs
-ms.custom: ''
+title: auto_rename
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - auto_rename
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_rename attribute
 ms.assetid: 1075f3ab-f6fc-4e04-8e22-ebe02695a567
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 52147dcf79c73e1f931a3e9b52241308def864c4
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 20b971e838488d3e974b393a5e280ca765dac893
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234431"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446585"
 ---
 # <a name="autorename"></a>auto_rename
 

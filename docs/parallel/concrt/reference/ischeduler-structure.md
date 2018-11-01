@@ -1,10 +1,6 @@
 ---
-title: Ischeduler yapısı | Microsoft Docs
-ms.custom: ''
+title: IScheduler Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - IScheduler
 - CONCRTRM/concurrency::IScheduler
@@ -15,21 +11,15 @@ f1_keywords:
 - CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle
 - CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors
 - CONCRTRM/concurrency::IScheduler::IScheduler::Statistics
-dev_langs:
-- C++
 helpviewer_keywords:
 - IScheduler structure
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c926589165cbf93bd517612514bc27c88f28e15
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dd280884ab106bcf878b06c94e2ea3d0d99be2e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603225"
 ---
 # <a name="ischeduler-structure"></a>IScheduler Yapısı
 

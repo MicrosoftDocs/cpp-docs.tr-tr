@@ -1,12 +1,6 @@
 ---
-title: Şema (MFC veri erişimi) | Microsoft Docs
-ms.custom: ''
+title: Şema (MFC veri erişimi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - structures [C++], database
 - databases [C++], schema
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - schemas [C++], database
 - structures [C++]
 ms.assetid: 7d17e35f-1ccf-4853-b915-5b8c7a45b9ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 597b3870dbfc70b6e1ac392a45491ee0f1804c2f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2dcfb5d22cf84fed7313686c943fbbd7c7ce1c84
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055432"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512495"
 ---
 # <a name="schema--mfc-data-access"></a>Şema (MFC veri erişimi)
 

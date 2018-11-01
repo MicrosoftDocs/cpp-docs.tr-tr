@@ -1,10 +1,6 @@
 ---
-title: COleMessageFilter sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleMessageFilter sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleMessageFilter
 - AFXOLE/COleMessageFilter
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXOLE/COleMessageFilter::SetBusyReply
 - AFXOLE/COleMessageFilter::SetMessagePendingDelay
 - AFXOLE/COleMessageFilter::SetRetryReply
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleMessageFilter [MFC], COleMessageFilter
 - COleMessageFilter [MFC], BeginBusyState
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - COleMessageFilter [MFC], SetMessagePendingDelay
 - COleMessageFilter [MFC], SetRetryReply
 ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 585044a5da8ca3ce8b2650801558b19bf1d5ef59
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4e12b4dc41c0e384025a2af567cb118d066aaa72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427803"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478253"
 ---
 # <a name="colemessagefilter-class"></a>COleMessageFilter sınıfı
 

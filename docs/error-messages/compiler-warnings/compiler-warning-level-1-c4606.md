@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4606 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4606
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4606
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4606
 ms.assetid: c1b45fb6-672b-42eb-9e1c-c67b3e4150d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bcdaba046f495dc3a29a7c9228edc561674f568f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e471ca3e478d1166b150e49bf25efa4b9d5803cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036000"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569279"
 ---
 # <a name="compiler-warning-level-1-c4606"></a>Derleyici Uyarısı (düzey 1) C4606
 

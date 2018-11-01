@@ -1,9 +1,6 @@
 ---
-title: SyncLockWithStatusT sınıfı | Microsoft Docs
-ms.custom: ''
+title: SyncLockWithStatusT Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT
@@ -11,8 +8,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::IsLocked
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT class
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus method
@@ -20,17 +15,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_ data member
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT, constructor
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 36cee8d6f2cb41a22574f60c5cf86747228205bb
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: a3c5c4306dd039a792fe0fd1e57f04d37cc67731
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663872"
 ---
 # <a name="synclockwithstatust-class"></a>SyncLockWithStatusT Sınıfı
 

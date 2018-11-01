@@ -1,32 +1,22 @@
 ---
-title: -AI (meta veri dizinlerini belirt) | Microsoft Docs
-ms.custom: ''
+title: /AI (Meta Veri Dizinlerini Belirt)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.AdditionalUsingDirectories
 - VC.Project.VCNMakeTool.AssemblySearchPath
 - /AI
 - VC.Project.VCCLWCECompilerTool.AdditionalUsingDirectories
-dev_langs:
-- C++
 helpviewer_keywords:
 - /AI compiler option [C++]
 - AI compiler option [C++]
 - -AI compiler option [C++]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba4cb1411bca452de0f146626421315fa7dc177e
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a9e752f68ed53c7a94fec1914bc42c39a17648b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48859867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471533"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI (Meta Veri Dizinlerini Belirt)
 
@@ -55,7 +45,7 @@ Yalnızca bir dizine geçilebilir bir **/AI** çağırma. Bir tane belirtin **/A
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalUsingDirectories%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalUsingDirectories%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: char_traits yapısı | Microsoft Docs
-ms.custom: ''
+title: char_traits Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iosfwd/std::char_traits
 - iosfwd/std::char_traits::char_type
@@ -27,22 +23,16 @@ f1_keywords:
 - iosfwd/std::char_traits::not_eof
 - iosfwd/std::char_traits::to_char_type
 - iosfwd/std::char_traits::to_int_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - char_traits struct
 - char_traits class
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba56cef1ecdcee246b9041b930eeb5bf04728def
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2975c839e07093a22d910f295be730fdd68839cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724613"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640381"
 ---
 # <a name="chartraits-struct"></a>char_traits Yapısı
 

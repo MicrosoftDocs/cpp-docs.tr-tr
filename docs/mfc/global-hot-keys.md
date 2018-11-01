@@ -1,28 +1,18 @@
 ---
-title: Genel kısayol tuşları | Microsoft Docs
-ms.custom: ''
+title: Genel Sık Kullanılan Tuşlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - keyboard shortcuts [MFC], hot keys
 - CHotKeyCtrl class [MFC], global hot keys
 - access keys [MFC], hot keys
 - global hot keys [MFC]
 ms.assetid: e0b95d14-c571-4c9a-9cd1-e7fc1f0e278d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d749fad0fabf8ae99bba129caee399e3f93ff9af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4cafee311f71d8165380b3fb7e192e7032b7941c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529941"
 ---
 # <a name="global-hot-keys"></a>Genel Sık Kullanılan Tuşlar
 

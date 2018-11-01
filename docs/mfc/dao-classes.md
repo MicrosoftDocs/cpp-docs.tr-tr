@@ -1,28 +1,18 @@
 ---
-title: DAO sınıfları | Microsoft Docs
-ms.custom: ''
+title: DAO Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.data
-dev_langs:
-- C++
 helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5af80f7a264a15f24ced0be37102802771dc6f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cce9831cb317b468bfc51777eedbde261e798108
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538953"
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
 

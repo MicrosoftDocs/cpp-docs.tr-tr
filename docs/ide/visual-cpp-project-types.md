@@ -1,12 +1,6 @@
 ---
-title: Visual C++ proje türleri | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Proje Türleri
 ms.date: 10/30/2017
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - programs [C++], projects
 - project templates [Visual Studio], C++
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - applications [C++], projects
 - Visual C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45b62d5ce8f49b023721cf7323dc42e1c65c2109
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 456fdb5ec2025b3085332eced3a0c7f33e117918
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396694"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658022"
 ---
 # <a name="visual-c-project-types"></a>Visual C++ Proje Türleri
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2087 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2087
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2087
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2087
 ms.assetid: 89761e83-415a-4468-a4c6-b6dedfd1dd6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38b6ce6c0b2435143ece8d431271c97a3f48a2b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 11d5a0a86ba399e28a641fa490f19be020db2d9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101962"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527432"
 ---
 # <a name="compiler-error-c2087"></a>Derleyici Hatası C2087
 

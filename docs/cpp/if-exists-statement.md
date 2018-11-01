@@ -1,29 +1,19 @@
 ---
-title: __if_exists deyimi | Microsoft Docs
-ms.custom: ''
+title: __if_exists Deyimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __if_exists_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - identifiers, testing for existence
 - symbols, testing for existence
 - __if_exists keyword [C++]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4147a663ee94f09791153d9fb1697a2f66bd798c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a3155e7d9c2cc08ca0f3fe77d40d95d8ea447fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109219"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561388"
 ---
 # <a name="ifexists-statement"></a>__if_exists Deyimi
 
@@ -32,7 +22,7 @@ ms.locfileid: "46109219"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__if_exists ( identifier ) { 
+__if_exists ( identifier ) { 
 statements
 };
 ```

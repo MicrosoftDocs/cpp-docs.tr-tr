@@ -1,29 +1,19 @@
 ---
-title: Bölüm | Microsoft Docs
-ms.custom: ''
+title: section
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - section_CPP
 - vc-pragma.section
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, section
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06e0356453cfcb8ec2753e3c0a6647729ffad90c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cd8eee564fa17b21d5421a3471fd676af921f444
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066701"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462146"
 ---
 # <a name="section"></a>section
 

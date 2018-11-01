@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2378 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2378
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2378
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2378
 ms.assetid: 507a91c6-ca72-48df-b3a4-2cf931c86806
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5aa4b8ecef6be2149132c9ccf533285cd0bb7f7d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fb6d228826cf1b21904863505c0963069e89d32d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436588"
 ---
 # <a name="compiler-error-c2378"></a>Derleyici Hatası C2378
 

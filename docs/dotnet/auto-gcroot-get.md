@@ -1,31 +1,21 @@
 ---
-title: auto_gcroot::get | Microsoft Docs
-ms.custom: ''
+title: auto_gcroot::get
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::auto_gcroot::get
 - msclr.auto_gcroot.get
 - auto_gcroot::get
 - auto_gcroot.get
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_gcroot::get
 ms.assetid: 0e922019-1cf5-4220-b5ab-6c4a2a6b40ec
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 0805205c5d8b6886d743f0e950aaa6af3ec964e1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0759e8b08f12ae12c9960b8fed431145502851fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565161"
 ---
 # <a name="autogcrootget"></a>auto_gcroot::get
 

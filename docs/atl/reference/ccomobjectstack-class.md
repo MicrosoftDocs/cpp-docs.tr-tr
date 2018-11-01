@@ -1,10 +1,6 @@
 ---
-title: CComObjectStack sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComObjectStack sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComObjectStack
 - ATLCOM/ATL::CComObjectStack
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLCOM/ATL::CComObjectStack::QueryInterface
 - ATLCOM/ATL::CComObjectStack::Release
 - ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComObjectStack class
 ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 277951a5425a75c9769c5a2c4104421303f677c2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dfe8c58803a0eb06ea17ae1b241e1e435f0263f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579276"
 ---
 # <a name="ccomobjectstack-class"></a>CComObjectStack sınıfı
 

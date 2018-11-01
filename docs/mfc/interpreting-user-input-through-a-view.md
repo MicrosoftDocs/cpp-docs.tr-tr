@@ -1,12 +1,6 @@
 ---
-title: Bir görünüm aracılığıyla kullanıcı girişini yorumlama | Microsoft Docs
-ms.custom: ''
+title: Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interpreting user input through views [MFC]
 - views [MFC], user interface and input
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - CView class [MFC], interpreting user input
 - user input [MFC], interpreting through view class [MFC]
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 974324e296478f0ec36024d4427496d21255fbf7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fe64f7c499b4a7c93f628fa0dff0855c379cbd58
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552574"
 ---
 # <a name="interpreting-user-input-through-a-view"></a>Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama
 

@@ -1,12 +1,6 @@
 ---
-title: İletişim kutusu çubukları | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusu Çubukları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, control bars
 - CDialogBar class [MFC], dialog bars
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - dialog bars
 - dialog bars [MFC], about dialog bars
 ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed0e773dda8a1a31a028a0b6c5e349b2e3655982
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3a3276e9b5d0e1ab8d8e77fae983d24ff1e4b4e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401504"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557416"
 ---
 # <a name="dialog-bars"></a>İletişim Kutusu Çubukları
 

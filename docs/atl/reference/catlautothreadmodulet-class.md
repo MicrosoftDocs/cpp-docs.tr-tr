@@ -1,29 +1,19 @@
 ---
-title: CAtlAutoThreadModuleT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlAutoThreadModuleT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlAutoThreadModuleT
 - ATLBASE/ATL::CAtlAutoThreadModuleT
 - ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46198390ce25cb655b94c0ca4769321fc3e9362d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8492127af8a1267da3beed678f8a66424ba26442
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099714"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483404"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT sınıfı
 

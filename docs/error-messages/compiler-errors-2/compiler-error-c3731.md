@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3731 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3731
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3731
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3731
 ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 526cd57bd18d379f7c85bbe98bc7fb2dc37b9c41
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5acc33869648f83cd44bc557128c685f521ddf88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099939"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496063"
 ---
 # <a name="compiler-error-c3731"></a>Derleyici Hatası C3731
 

@@ -1,8 +1,6 @@
 ---
-title: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function | Microsoft Docs
-ms.custom: ''
+title: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 ms.date: 11/04/2016
-ms.topic: conceptual
 apiname:
 - _execute_onexit_table
 - _initialize_onexit_table
@@ -17,23 +15,17 @@ f1_keywords:
 - process/_initialize_onexit_table
 - _register_onexit_function
 - process/_register_onexit_function
-dev_langs:
-- C++
 helpviewer_keywords:
 - _execute_onexit_table function
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9a6ea61883e6ce94bc41f16e7139156c68c8059
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1c9b0872f2a472b7fbb5bd83c9b0a0d9f21a6ab6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536741"
 ---
 # <a name="executeonexittable-initializeonexittable-registeronexitfunction"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 

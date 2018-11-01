@@ -1,14 +1,8 @@
 ---
-title: Hata ayıklama yordamları | Microsoft Docs
-ms.custom: ''
+title: Hata ayıklama yordamları
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - c.debug
-dev_langs:
-- C++
 helpviewer_keywords:
 - debugging [CRT], using macros
 - macros, debugging with
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - debug macros
 - debugging [CRT], runtime routines
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46018d2ec8747b1fac459e1ac1d28b59eea2385b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f8ceb25f7ccdd10ff2b6dc7529563616b2fd0da6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203478"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452188"
 ---
 # <a name="debug-routines"></a>Hata ayıklama yordamları
 

@@ -1,31 +1,21 @@
 ---
-title: CMFCRibbonLabel sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonLabel sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonLabel
 - AFXRIBBONLABEL/CMFCRibbonLabel
 - AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel
 - AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonLabel [MFC], CMFCRibbonLabel
 - CMFCRibbonLabel [MFC], SetACCData
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9d54662663e2b3223f4122eae93327b9a05337b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ae185a81267dce68cda6bc27c5e327b3335a1018
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436405"
 ---
 # <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel sınıfı
 

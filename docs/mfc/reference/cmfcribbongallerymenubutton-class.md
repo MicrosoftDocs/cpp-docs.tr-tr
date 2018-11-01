@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonGalleryMenuButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonGalleryMenuButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonGalleryMenuButton
 - AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette
 - AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton
 - AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonGalleryMenuButton [MFC], CMFCRibbonGalleryMenuButton
 - CMFCRibbonGalleryMenuButton [MFC], CopyFrom
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CMFCRibbonGalleryMenuButton [MFC], HasButton
 - CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17e85de321783bf5dbffff2c4e99e9ca9dc1d85c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 99a48c62b7e47e1c2de1a4d2c473ebde6fc0da22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517002"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
 

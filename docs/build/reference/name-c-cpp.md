@@ -1,27 +1,17 @@
 ---
-title: AD (C/C++) | Microsoft Docs
-ms.custom: ''
+title: NAME (C/C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - name
-dev_langs:
-- C++
 helpviewer_keywords:
 - NAME .def file statement
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc37a96e50c6cd5bae2cc60661db04f3b92d162b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c05e82409d6b6e48390d54160e8ff23ada788d41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715760"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646205"
 ---
 # <a name="name-cc"></a>NAME (C/C++)
 

@@ -1,27 +1,17 @@
 ---
-title: is_copy_assignable sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_copy_assignable sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_copy_assignable
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_copy_assignable
 ms.assetid: 3ae6bca1-85fb-4829-9ee9-0183b081ff50
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 863c842fe3d5635848b569ad0cad6dad0556e302
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 75e0e8d995fbb3c6bfb1af3142a98651d7a29e96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567862"
 ---
 # <a name="iscopyassignable-class"></a>is_copy_assignable sınıfı
 

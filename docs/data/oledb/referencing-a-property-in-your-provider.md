@@ -1,28 +1,17 @@
 ---
-title: Sağlayıcınızdaki bir özelliğe başvurma | Microsoft Docs
-ms.custom: ''
+title: Sağlayıcınızdaki Bir Özelliğe Başvurma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, properties
 - references, to properties in providers
 - referencing properties in providers
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: e88dcc168df6b6b315f73e2eb595f55668fd2493
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7fcd948fc093253c3565e7d4d35237d87ba4bdb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571255"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>Sağlayıcınızdaki Bir Özelliğe Başvurma
 

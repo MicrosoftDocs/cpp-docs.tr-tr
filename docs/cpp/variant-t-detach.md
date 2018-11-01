@@ -1,30 +1,20 @@
 ---
-title: _variant_t::detach | Microsoft Docs
-ms.custom: ''
+title: _variant_t::Detach
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _variant_t::Detach
 - _variant_t.Detach
-dev_langs:
-- C++
 helpviewer_keywords:
 - VARIANT object [C++], detatch
 - Detach method [C++]
 - VARIANT object
 ms.assetid: c348ac08-62cf-4657-a16f-974a79c12158
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ab1e4f83025dcc3e4bc65274746e0617cf31b5b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4b19e3c1615912550cdf1eb6a2b0b3f906ee4af9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522336"
 ---
 # <a name="varianttdetach"></a>_variant_t::Detach
 

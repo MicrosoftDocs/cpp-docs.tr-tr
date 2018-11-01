@@ -1,27 +1,18 @@
 ---
-title: 'İzlenecek yol: Oluşturma ve bir statik kitaplık (C++) kullanılarak | Microsoft Docs'
+title: 'İzlenecek yol: Statik Kitaplık Oluşturma ve Kullanma (C++)'
 ms.custom: get-started-article
 ms.date: 09/18/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - libraries [C++], static
 - static libraries [C++]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
-author: corob-msft
 ms.author: corob
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 3cc592deaed967a7b6e93f9250103e28fb058de3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 506db5ea8e94887d9971b48c06ce8c0d6156dccb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080760"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429228"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>İzlenecek yol: Statik Kitaplık Oluşturma ve Kullanma (C++)
 

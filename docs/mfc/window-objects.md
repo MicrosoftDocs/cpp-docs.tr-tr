@@ -1,12 +1,6 @@
 ---
-title: Pencere nesneleri | Microsoft Docs
-ms.custom: ''
+title: Pencere Nesneleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [MFC], window
 - Windows window [MFC]
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - Visual C++, window objects [MFC]
 - HWND, window objects [MFC]
 ms.assetid: 28b33ce2-af05-4617-9d03-1cb9a02be687
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 429ac52218af2e158df91c6c79f8ec67bcac3f5d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3e20ef1f3643b9e802c7cdc399d3436ceadeae79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395589"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566705"
 ---
 # <a name="window-objects"></a>Pencere Nesneleri
 

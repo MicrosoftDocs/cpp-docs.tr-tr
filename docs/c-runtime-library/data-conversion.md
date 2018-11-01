@@ -1,28 +1,18 @@
 ---
-title: Verileri dönüştürme | Microsoft Docs
-ms.custom: ''
+title: Veri Dönüştürme
 ms.date: 03/21/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - c.conversions
-dev_langs:
-- C++
 helpviewer_keywords:
 - data conversion routines [C++]
 - converting data
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2475a7d4f6399f408dfd1d5903a1920baf97c6bd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 070949d064d1835970c1f671cf0e5337342fdca1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547409"
 ---
 # <a name="data-conversion"></a>Veri Dönüştürme
 

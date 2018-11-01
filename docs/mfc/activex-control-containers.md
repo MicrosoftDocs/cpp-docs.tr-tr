@@ -1,26 +1,16 @@
 ---
-title: ActiveX denetim kapsayıcıları | Microsoft Docs
-ms.custom: ''
+title: ActiveX Denetim Kapsayıcıları
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX control containers [MFC]
 - OLE controls [MFC], containers
 ms.assetid: 0eb1a713-e607-4c79-a0c7-67c5f1fd5fab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53598e416212cc042a2c53e964edcdf610dab654
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3356c5d94eaf4cef0b44c509144d0de4a5d42abf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549124"
 ---
 # <a name="activex-control-containers"></a>ActiveX Denetim Kapsayıcıları
 

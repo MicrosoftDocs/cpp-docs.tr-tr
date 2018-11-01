@@ -1,12 +1,6 @@
 ---
-title: Derleyici Seçenekleri makroları | Microsoft Docs
-ms.custom: ''
+title: Derleyici Seçenekleri makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 f1_keywords:
 - _ATL_ALL_WARNINGS
 - _ATL_APARTMENT_THREADED
@@ -22,16 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63fa47f4237d27cb8e0d5629e2041244ab360132
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0da6ebcb178735fc25c656241fe23497d941ab6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631159"
 ---
 # <a name="compiler-options-macros"></a>Derleyici Seçenekleri makroları
 

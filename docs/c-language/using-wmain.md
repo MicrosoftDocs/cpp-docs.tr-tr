@@ -1,25 +1,15 @@
 ---
-title: Wmain kullanma | Microsoft Docs
-ms.custom: ''
+title: wmain Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmain function
 ms.assetid: d0300812-adc4-40c6-bba3-b2da25468c80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dbf0f06c20e45282adef6321c459b228285d91b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 65efacb76e80dedee13d8e1af017686075c1168e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460599"
 ---
 # <a name="using-wmain"></a>wmain Kullanma
 

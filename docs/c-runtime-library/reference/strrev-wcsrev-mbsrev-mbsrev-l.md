@@ -1,10 +1,6 @@
 ---
-title: _strrev, _wcsrev, _mbsrev, _mbsrev_l | Microsoft Docs
-ms.custom: ''
+title: _strrev, _wcsrev, _mbsrev, _mbsrev_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcsrev
 - _mbsrev
@@ -32,8 +28,6 @@ f1_keywords:
 - mbsrev_l
 - _wcsrev_fstrrev
 - _mbsrev
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsrev_l function
 - characters [C++], switching
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c9c2f461df538f405af8295c65f67dbefe46bb7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3a35e72875f4166179a119ec6994828302809afb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198100"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435568"
 ---
 # <a name="strrev-wcsrev-mbsrev-mbsrevl"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
 

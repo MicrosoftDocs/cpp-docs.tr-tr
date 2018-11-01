@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Kayıtları toplu yakalama (ODBC) getirilirken | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - bulk row fetching, implementing
 - ODBC recordsets, bulk row fetching
@@ -20,17 +14,12 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4e314f086a1a83a68edd52e11b5d7740be7272fc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 55a89a66b36d12e6341b85d7dfa655b299638fcd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628208"
 ---
 # <a name="recordset-fetching-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)
 

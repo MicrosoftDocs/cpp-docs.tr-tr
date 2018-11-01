@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::const_iterator | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::const_iterator
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_iterator method
 ms.assetid: e68c9e30-fc4c-4c2e-8724-06d1fe8b8ccb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 104ac3531d371eb1a4e35905fa974a381b6f8334
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9c229f496084b289aa006b61dde7c8030191a6c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648623"
 ---
 # <a name="container-classconstiterator"></a>Kapsayıcı Sınıfı::const_iterator
 

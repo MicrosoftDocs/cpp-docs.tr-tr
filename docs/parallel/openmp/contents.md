@@ -1,23 +1,13 @@
 ---
-title: İçeriği | Microsoft Docs
-ms.custom: ''
+title: İçindekiler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0ed7dd48d496042cb48a8c8054226ec8892ffbc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f9fffab938735421429c53cc760ad0db16484577
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432769"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620590"
 ---
 # <a name="contents"></a>İçindekiler
 

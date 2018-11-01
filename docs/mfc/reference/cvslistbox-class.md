@@ -1,10 +1,6 @@
 ---
-title: CVSListBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CVSListBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CVSListBox
 - AFXVSLISTBOX/CVSListBox
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXVSLISTBOX/CVSListBox::SelectItem
 - AFXVSLISTBOX/CVSListBox::SetItemData
 - AFXVSLISTBOX/CVSListBox::GetListHwnd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CVSListBox [MFC], CVSListBox
 - CVSListBox [MFC], AddItem
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d4bb676685a05ee9cedd9074f6d04ba357c5085
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e44fa868fc573efbf89bb00147f670298f633381
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513769"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: MFC ileti işleyicisi ekleme | Microsoft Docs
-ms.custom: ''
+title: MFC İleti İşleyicisi Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.adding.mfc.msghandler
-dev_langs:
-- C++
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9980a367c0272fe35e2135c1fb5a7df1c19a314
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: edb48b510be1de73abe3361f9bd409a8fed929d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593550"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC İleti İşleyicisi Ekleme
 

@@ -1,21 +1,13 @@
 ---
-title: -WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et) | Microsoft Docs
-ms.custom: ''
+title: / WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
 ms.date: 11/04/2016
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3a59ed53227e0c9bf598f96b1bb72247a3341b0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 26bd720a2ecd07bccb1317e1540cb071e7027078
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494230"
 ---
 # <a name="wholearchive-include-all-library-object-files"></a>/ WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
 

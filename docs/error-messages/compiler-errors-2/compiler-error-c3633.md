@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3633 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3633
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3633
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3633
 ms.assetid: 7d65babf-2191-4d67-a69f-f5c4c2ddf946
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aaa4712fb571d56166204655aff95153ac328ce6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d96a0e4f5f0b34c76f41058316c7f158f1a939d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078276"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624102"
 ---
 # <a name="compiler-error-c3633"></a>Derleyici Hatası C3633
 

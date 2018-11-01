@@ -1,30 +1,20 @@
 ---
-title: Sinyal eylemi sabitleri | Microsoft Docs
-ms.custom: ''
+title: sinyal Eylemi Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - SIG_IGN
 - SIG_DFL
-dev_langs:
-- C++
 helpviewer_keywords:
 - signal action constants
 - SIG_IGN constant
 - SIG_DFL constant
 ms.assetid: c3cb4f15-d39e-4d9d-84f9-0d33e3eb5993
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f2cb8e8ca907081e85be03d7576d0252cdf20ad
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71c2eb796680e90cd16b1798fd478506ce7aa2c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444661"
 ---
 # <a name="signal-action-constants"></a>sinyal Eylemi Sabitleri
 

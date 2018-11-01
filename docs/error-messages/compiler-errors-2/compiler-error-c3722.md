@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3722 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3722
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3722
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3722
 ms.assetid: 3cb28363-5eff-4548-bd0d-d5c615846353
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ec84898d413bd0b62c9b0d96e47ef82615a4b06
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d3c721490e0af32d91fcc51412e3c02b6a2d7f67
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058984"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451005"
 ---
 # <a name="compiler-error-c3722"></a>Derleyici Hatası C3722
 

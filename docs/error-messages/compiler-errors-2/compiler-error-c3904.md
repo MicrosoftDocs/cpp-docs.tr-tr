@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3904 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3904
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3904
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3904
 ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4453d39b93000116b3547ff5047e6837c8d34e6a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8c7f4a2861825a35d676328b5e283a5e4087d85b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135991"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519788"
 ---
 # <a name="compiler-error-c3904"></a>Derleyici Hatası C3904
 

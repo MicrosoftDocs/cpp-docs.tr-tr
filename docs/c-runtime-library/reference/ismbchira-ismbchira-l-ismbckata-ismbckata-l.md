@@ -1,10 +1,6 @@
 ---
-title: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l | Microsoft Docs
-ms.custom: ''
+title: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbckata
 - _ismbchira_l
@@ -32,8 +28,6 @@ f1_keywords:
 - ismbchira_l
 - _ismbchira_l
 - _ismbchira
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbckata function
 - _ismbchira function
@@ -46,23 +40,19 @@ helpviewer_keywords:
 - Hiragana
 - ismbckata function
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0fe2b9c824fcc45eb2d0fda82cd350d3a9435b94
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d2a5d0336e5ed4ad8bbb19f8a259128ab33d004e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403735"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506596"
 ---
 # <a name="ismbchira-ismbchiral-ismbckata-ismbckatal"></a>_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 
-**Kod sayfası 932 özel işlevleri**
+**Kod sayfası 932 özel işlevler**
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,29 +76,29 @@ int _ismbckata_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak karakter.
+Test edilecek karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter test durumu ya da 0 uymazsa mevcut değilse bu yordamlar her sıfır olmayan bir değer döndürür. Varsa *c* < = 255 ve karşılık gelen **_ismbb** yordamına (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Buna karşılık gelen dönüş değeri sonucudur **_ismbb** yordamı.
+Karakter test koşulunu veya 0 karşılıyorsa kullanmıyorsa bu yordamların her biri sıfır dışında bir değeri döndürür. Varsa *c* < = 255 ve karşılık gelen **_ismbb** yordamı (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Sonuç, karşılık gelen dönüş değeri olduğu **_ismbb** yordamı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri belirli bir birden çok baytlı karakter verilen bir koşul için sınar.
+Bu işlevlerin her biri, belirli bir koşul için belirli bir çok baytlı karakteri test eder.
 
-Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-|Yordam|(Yalnızca kod sayfası 932) koşulu test|
+|Yordam|Test koşulu (yalnızca kod sayfası 932)|
 |-------------|-------------------------------------------|
 |**_ismbchira**|Çift baytlık Hiragana: 0x829F < =*c*< 0x82F1 =.|
 |**_ismbchira_l**|Çift baytlık Hiragana: 0x829F < =*c*< 0x82F1 =.|
 |**_ismbckata**|Çift baytlık katakana: 0x8340 < =*c*< 0x8396 =.|
 |**_ismbckata_l**|Çift baytlık katakana: 0x8340 < =*c*< 0x8396 =.|
 
-**Son kod sayfası 932 özel**
+**End kod sayfası 932 özel**
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -119,7 +109,7 @@ Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlar�
 |**_ismbckata**|\<Mbstring.h >|
 |**_ismbckata_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

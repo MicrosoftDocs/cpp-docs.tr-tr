@@ -1,28 +1,17 @@
 ---
-title: Kaynak dosyaları (C++) ile çalışma | Microsoft Docs
-ms.custom: ''
+title: Kaynak dosyaları (C++) ile çalışma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [C++], about resources
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d72e37b8625480779620025dfd1e1eda1101b824
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 276a63f01eba3cfc8c4fd45e0f875d78ada1942a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430559"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483323"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 

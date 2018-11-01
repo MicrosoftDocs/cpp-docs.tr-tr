@@ -1,10 +1,6 @@
 ---
-title: Şema satır kümesi sınıfları ve Typedef sınıfları | Microsoft Docs
-ms.custom: ''
+title: Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - vc.templates.ole
 - CAssertions
@@ -504,8 +500,6 @@ f1_keywords:
 - m_szTableName
 - m_szName
 - CViewTableUsage
-dev_langs:
-- C++
 helpviewer_keywords:
 - schema rowsets, classes
 - CAssertionInfo parameter class
@@ -1078,17 +1072,12 @@ helpviewer_keywords:
 - m_szTableCatalog
 - m_szTableName
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 167abf73453b0c767b30ae4216989649c1edeb5d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2af15d1cf3d42af82d2dc04901301f3f30ff9211
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515121"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 

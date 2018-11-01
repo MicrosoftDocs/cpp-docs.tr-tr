@@ -1,12 +1,6 @@
 ---
-title: Program aracılığıyla yazdırma | Microsoft Docs
-ms.custom: ''
+title: Program Aracılığıyla Yazdırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - printing [MFC], active documents
 - active documents [MFC], printing
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - IPrint interface
 - printing [MFC]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 527ecd89838702a3ec8a91c35e67c1c0cc26501e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d01dcd901425fb3957201dca754a01042e629ebb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397844"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630665"
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 

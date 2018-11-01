@@ -1,10 +1,6 @@
 ---
-title: __uncaught_exception | Microsoft Docs
-ms.custom: ''
+title: __uncaught_exception
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __uncaught_exception
 apilocation:
@@ -21,25 +17,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - __uncaught_exception
-dev_langs:
-- C++
 helpviewer_keywords:
 - __uncaught_exception
 ms.assetid: 4d9b75c6-c9c7-4876-b761-ea9ab1925e96
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fcae75a5d25710866f781d766cfd77eceb977649
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 19d1e18af27722d6f9da39ebaaf6c9415c281849
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579640"
 ---
 # <a name="uncaughtexception"></a>__uncaught_exception
 
-Bir veya daha fazla özel durum, ancak henüz karşılık gelen tarafından işlenmemiş olup olmadığını gösterir **catch** , engelleme bir [try-catch](../../cpp/try-throw-and-catch-statements-cpp.md) deyimi.
+Bir veya daha fazla özel durum atılmış olup, ancak henüz karşılık gelen tarafından işlenmemiş olup olmadığını gösterir **catch** bloğu bir [try-catch](../../cpp/try-throw-and-catch-statements-cpp.md) deyimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,7 +40,7 @@ bool __uncaught_exception(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**doğru** zamandan bir özel durum oluşur bir **deneyin** eşleştirme kadar blok **catch** blok başlatılmış; Aksi takdirde **false**.
+**doğru** zamanından bir özel durum oluşturulur bir **deneyin** eşleşen kadar blok **catch** bloğudur başlatıldı; Aksi takdirde **false**.
 
 ## <a name="remarks"></a>Açıklamalar
 

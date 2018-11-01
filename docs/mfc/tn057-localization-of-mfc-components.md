@@ -1,14 +1,8 @@
 ---
-title: 'TN057: MFC bileşenlerini yerelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'TN057: MFC Bileşenlerini Yerelleştirme'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.components
-dev_langs:
-- C++
 helpviewer_keywords:
 - components [MFC], localizing
 - TN057
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - DLLs [MFC], localizing MFC
 - localization [MFC], resources
 ms.assetid: 5376d329-bd45-41bd-97f5-3d895a9a0af5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8dcd3117d50d2d8905e5382cf226ba487c13a7c7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 812c2d29c42b523d7b88b03741dc20f08ee70f44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428645"
 ---
 # <a name="tn057-localization-of-mfc-components"></a>TN057: MFC Bileşenlerini Yerelleştirme
 

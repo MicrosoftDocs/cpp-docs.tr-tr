@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2084 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2084
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2084
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2084
 ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09ce703b6908257e37c2b7ff1b2714f1426f941f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9aaf3a88e63234dfb842e4b48afd6e55595e96ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052120"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571320"
 ---
 # <a name="compiler-error-c2084"></a>Derleyici Hatası C2084
 

@@ -1,10 +1,6 @@
 ---
-title: vektör&lt;bool&gt; sınıfı | Microsoft Docs
-ms.custom: ''
+title: vektör&lt;bool&gt; sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - vector<bool>
 - vector/std::vector::const_pointer
@@ -12,8 +8,6 @@ f1_keywords:
 - vector/std::vector::pointer
 - vector/std::vector::flip
 - vector/std::vector::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::vector [C++], const_pointer
 - std::vector [C++], const_reference
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b158f6bedd2dba2d65f7b0778758eafe08e88851
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 79b2231882f65715f47c774119c0e6e0608f1676
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702916"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455490"
 ---
 # <a name="vectorltboolgt-class"></a>vektör&lt;bool&gt; sınıfı
 

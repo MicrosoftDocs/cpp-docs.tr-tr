@@ -1,29 +1,19 @@
 ---
-title: CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçler | Microsoft Docs
-ms.custom: ''
+title: CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CArchive
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [MFC], loading from previously stored values
 - CArchive class [MFC], storing and loading objects
 - CArchive class [MFC], operators
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74660dc2baeff683d35fac8d4b9dda06bdbec22d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 28396d797d0ca63f110fe4482aba8fe69f0608c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061319"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495479"
 ---
 # <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri
 

@@ -1,26 +1,16 @@
 ---
-title: -Clr ile C stili yayınlar (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: -Clr ile C stili yayınlar (C + +/ CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C-style casts and /clr
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bc51d330e771d9861d510b77d1fbd69a9a790c7d
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: abbcd61f8c86709e16958e4220c0ea96e393c8bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447079"
 ---
 # <a name="c-style-casts-with-clr-ccli"></a>/clr ile C Türü Atamalar (C++/CLI)
 
@@ -172,4 +162,4 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

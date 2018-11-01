@@ -1,10 +1,6 @@
 ---
-title: gets_s, _getws_s | Microsoft Docs
-ms.custom: ''
+title: gets_s, _getws_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getws_s
 - gets_s
@@ -24,8 +20,6 @@ apitype: DLLExport
 f1_keywords:
 - _getws_s
 - gets_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - getws_s function
 - _getws_s function
@@ -37,20 +31,16 @@ helpviewer_keywords:
 - gets_s function
 - standard input, reading from
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b3a5047871937d96288798768e17618ab791c75e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f71fafceaf1974bc5ff736ff175a67cf6c924ee6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401824"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482907"
 ---
 # <a name="getss-getwss"></a>gets_s, _getws_s
 
-Bir satırından alır **stdin** akış. Bu sürümleri [alır, _getws](../../c-runtime-library/gets-getws.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir hat alır **stdin** akış. Bu sürümleri [alır, _getws](../../c-runtime-library/gets-getws.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,19 +73,19 @@ Arabellek boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *arabellek* başarılı olursa. A **NULL** işaretçi bir hata veya dosya sonu durumu gösterir. Kullanım [ferror](ferror.md) veya [feof](feof.md) hangisinin oluştu belirlemek için.
+Döndürür *arabellek* başarılı olursa. A **NULL** işaretçi bir hata veya dosya sonu koşulunu gösterir. Kullanım [ferror](ferror.md) veya [feof](feof.md) hangisinin gerçekleştiğini belirlemek için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Gets_s** işlevi bir satır standart giriş akışından okuma **stdin** ve depolar *arabellek*. Satır kadar ve ilk yeni satır karakteri ('\n') dahil olmak üzere tüm karakterleri oluşur. **gets_s** satır döndürmeden önce bu yeni satır karakteri null karakteri ('\0') ile değiştirir. Buna karşılık, **fgets_s** işlevi yeni satır karakteri korur.
+**Gets_s** işlevi standart giriş akışından bir satır okur **stdin** ve depolar *arabellek*. En fazla ve ilk yeni satır karakteri ('\n') dahil olmak üzere tüm karakterleri satırın oluşur. **gets_s** daha sonra satırı döndürmeden önce yeni satır karakterini bir null karakteri ('\0') ile değiştirir. Buna karşılık, **fgets_s** işlevi yeni satır karakterini korur.
 
-Okuma ilk karakter dosya sonu karakteri ise, bir null karakter başında depolanan *arabellek* ve **NULL** döndürülür.
+İlk karakter okuma dosya sonu karakter değilse, bir null karakter başında depolanan *arabellek* ve **NULL** döndürülür.
 
-**_getws_s** bir joker karakter sürümü **gets_s**; kendi bağımsız ve dönüş değeri joker karakter dizelerdir.
+**_getws_s** geniş karakterli sürümüdür **gets_s**; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
 
-Varsa *arabellek* olan **NULL** veya *sizeInCharacters* sıfırdan küçük veya ona eşit veya arabellek giriş satırı ve null Sonlandırıcı içermesi için çok küçük ise, bu işlevleri çağırma bölümünde açıklandığı gibi bir geçersiz parametre işleyicisi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **NULL** ve kümesine errno **ERANGE**.
+Varsa *arabellek* olduğu **NULL** veya *sizeInCharacters* sıfırdan küçük veya ona eşit veya arabellek null Sonlandırıcı ve giriş satırı içerecek şekilde depolayamayacak kadar küçükse, bu işlevler çağırma bölümünde anlatıldığı gibi geçersiz parametre işleyicisini, [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **NULL** ve errno öğesini **ERANGE**.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -110,7 +100,7 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 |**gets_s**|\<stdio.h >|
 |**_getws_s**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -139,7 +129,7 @@ The line entered was: Hello there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>

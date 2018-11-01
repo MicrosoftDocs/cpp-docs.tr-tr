@@ -1,29 +1,19 @@
 ---
-title: Ccomqıptrelementtraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ccomqıptrelementtraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComQIPtrElementTraits
 - ATLCOLL/ATL::CComQIPtrElementTraits
 - ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComQIPtrElementTraits class
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ffda7945a27a829316f158484e1ccc5792730807
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: df1bbf5cb36e45b6b47acbd4263c34a7353fd6ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063815"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603742"
 ---
 # <a name="ccomqiptrelementtraits-class"></a>Ccomqıptrelementtraits sınıfı
 

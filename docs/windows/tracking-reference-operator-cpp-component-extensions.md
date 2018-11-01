@@ -1,29 +1,19 @@
 ---
-title: İzleme başvurusu işleci (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: İzleme başvurusu işleci (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - '%'
-dev_langs:
-- C++
 helpviewer_keywords:
 - tracking references
 - '% tracking reference [C++]'
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9f2277e09bc4835cabd73d9be5177042dd0817e5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c6fef4562545b03e212d0e4e58742a1209a6ab81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437979"
 ---
 # <a name="tracking-reference-operator-ccli-and-ccx"></a>İzleme başvurusu işleci (C + +/ CLI ve C + +/ CX)
 

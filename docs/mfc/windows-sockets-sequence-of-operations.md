@@ -1,12 +1,6 @@
 ---
-title: 'Windows Yuvaları: İşlem dizisi | Microsoft Docs'
-ms.custom: ''
+title: 'Windows Yuvaları: İşlem Dizisi'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows Sockets [MFC], operations
 - Windows Sockets [MFC], stream sockets
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - sockets [MFC], operations
 - stream sockets [MFC]
 ms.assetid: 43ce76f5-aad3-4247-b8a6-16cc7d012796
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9667bf7359677d00b54023cb5542ffd7977baa02
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 98d06e005a09825d53f22330d6b0b58ccb2069fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376058"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578650"
 ---
 # <a name="windows-sockets-sequence-of-operations"></a>Windows Yuvaları: İşlem Dizisi
 

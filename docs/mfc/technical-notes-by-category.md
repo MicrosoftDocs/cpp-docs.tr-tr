@@ -1,25 +1,15 @@
 ---
-title: Kategoriye göre teknik notlar | Microsoft Docs
-ms.custom: ''
+title: Kategoriye Göre Teknik Notlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.tables.mfc.technotes
-dev_langs:
-- C++
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f2f725de68fdfe789b1e7e53843fe8152315268
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 63485aa3d76bf2116d75d6cb94f1bd63eb01645b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463290"
 ---
 # <a name="technical-notes-by-category"></a>Kategoriye Göre Teknik Notlar
 

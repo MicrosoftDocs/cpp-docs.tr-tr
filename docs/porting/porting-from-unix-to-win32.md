@@ -1,12 +1,6 @@
 ---
-title: UNIX'ten Win32'ye taşıma | Microsoft Docs
-ms.custom: ''
+title: UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 ms.date: 08/02/2018
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - APIs [C++], porting to Win32
 - Windows API [C++], migrating from UNIX
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ebfad8a86a1e26ecf4c78307bada673d81e46d9a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ac1fb2304c6d06a6d3e1638fa7ded8a6903ee9fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065440"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467788"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 

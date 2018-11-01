@@ -1,27 +1,17 @@
 ---
-title: MSBuild (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: MSBuild (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - MSBuild
-dev_langs:
-- C++
 helpviewer_keywords:
 - MSBuild
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4bdb48c71c244adc2df5beef9668e12ee47f2b48
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4e0a82602cdeb775569099c559eef5aed51b431f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703956"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429438"
 ---
 # <a name="msbuild-visual-c"></a>MSBuild (Visual C++)
 

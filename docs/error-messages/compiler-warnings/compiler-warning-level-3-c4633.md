@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4633 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4633
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4633
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4633
 ms.assetid: 6d76f268-ba8c-448b-8e83-b903a18b583b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 54a180bcd135f4614fa6cc67cf7647acdfa1c445
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f1a4af399859c28f13432a344ae3dd921f9e1696
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459822"
 ---
 # <a name="compiler-warning-level-3-c4633"></a>Derleyici Uyarısı (Düzey 3) C4633
 

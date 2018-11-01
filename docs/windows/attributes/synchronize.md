@@ -1,28 +1,17 @@
 ---
-title: synchronize (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: synchronize (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.synchronize
-dev_langs:
-- C++
 helpviewer_keywords:
 - synchronize attribute
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8296ba9a6f5c6072f025dbdd931b6f609d9df9e8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e5afec6257c421c0d3d5c95ba77c29767d0df280
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067832"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620902"
 ---
 # <a name="synchronize"></a>eşitle
 

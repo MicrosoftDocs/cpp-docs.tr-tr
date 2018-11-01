@@ -1,12 +1,6 @@
 ---
-title: ATL ileti işleyicisi ekleme | Microsoft Docs
-ms.custom: ''
+title: ATL ileti işleyicisi ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message handlers [C++]
 - ATL, windows
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - windows [C++], ATL
 - ATL, message handlers
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 712f1b725afd52057deca8f05047c91bfc4affce
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6d812c70e7cec4739ee9477d30ad9744b4fddc50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753416"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565509"
 ---
 # <a name="adding-an-atl-message-handler"></a>ATL ileti işleyicisi ekleme
 

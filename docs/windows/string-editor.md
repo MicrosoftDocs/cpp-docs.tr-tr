@@ -1,14 +1,8 @@
 ---
-title: Dize Düzenleyicisi'ni (C++) | Microsoft Docs
-ms.custom: ''
+title: Dize Düzenleyicisi'ni (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.string.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - String editor
 - string tables
@@ -18,17 +12,12 @@ helpviewer_keywords:
 - resource editors [C++], String editor
 - strings [C++], editing
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9026d016f54bc4aff37be9c6e318837ad1855d1a
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: add153f84259985066397b6340fb4281a11beb17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513665"
 ---
 # <a name="string-editor-c"></a>Dize Düzenleyicisi'ni (C++)
 

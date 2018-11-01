@@ -1,29 +1,19 @@
 ---
-title: __FUNC__ | Microsoft Docs
-ms.custom: ''
+title: __FUNC__
 ms.date: 10/19/2017
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __func__
-dev_langs:
-- C++
 ms.assetid: a5299b8d-f0ee-4af2-91dd-8fb165e68798
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d78a249fe5b111c17c29895edcdc3fa5ba2f27a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eecd3efea6239c92a8bc81c0ed13a9563e5b87d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413602"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438590"
 ---
 # <a name="func"></a>__FUNC__
 
-**(C ++ 11)**  Önceden tanımlanmış tanımlayıcı &#95; &#95;func&#95; &#95; kapsayan işlevi nitelenmemiş ve asıl adını içeren bir dize örtük olarak tanımlanır. &#95;&#95;FUNC&#95; &#95; C++ Standart tarafından zorunlu ve bir Microsoft uzantısı değil.
+**(C ++ 11)**  Önceden tanımlanmış tanımlayıcının &#95; &#95;func&#95; &#95; açıkça, çevreleyen işlevin nitelenmemiş ve eksiz adını içeren bir dize olarak tanımlanır. &#95;&#95;FUNC&#95; &#95; C++ standardına göre uygulanan ve bir Microsoft uzantısı değil.
 
 ## <a name="syntax"></a>Sözdizimi
 

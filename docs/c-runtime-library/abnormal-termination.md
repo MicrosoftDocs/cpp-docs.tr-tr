@@ -1,10 +1,6 @@
 ---
-title: _abnormal_termination | Microsoft Docs
-ms.custom: ''
+title: _abnormal_termination
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _abnormal_termination
 apilocation:
@@ -18,21 +14,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _abnormal_termination
-dev_langs:
-- C++
 helpviewer_keywords:
 - _abnormal_termination
 ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 053fa3559672e4b314d209184c076e8ced2018db
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 231a5a521d9e234d3e31e6ccdbe98b207a89b3eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433549"
 ---
 # <a name="abnormaltermination"></a>_abnormal_termination
 

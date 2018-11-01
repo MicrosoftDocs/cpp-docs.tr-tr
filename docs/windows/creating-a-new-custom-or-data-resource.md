@@ -1,30 +1,19 @@
 ---
-title: Yeni özel veya veri kaynağı (C++) oluşturma | Microsoft Docs
-ms.custom: ''
+title: Yeni özel veya veri kaynağı (C++) oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.binary
-dev_langs:
-- C++
 helpviewer_keywords:
 - custom resources [C++]
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 9918bf96-38fa-43a1-a384-572f95d84950
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2e2939c7f0a68401b4c1a8c43b5c6335a0acfcb3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7b4044921a26e572c53e1a070611c78323d3ca1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590482"
 ---
 # <a name="creating-a-new-custom-or-data-resource-c"></a>Yeni özel veya veri kaynağı (C++) oluşturma
 

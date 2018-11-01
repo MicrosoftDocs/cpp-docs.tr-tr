@@ -1,17 +1,11 @@
 ---
-title: Veritabanı makroları ve genel öğeleri | Microsoft Docs
-ms.custom: ''
+title: Veritabanı Makroları ve Genel Öğeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFXDB/AFX_ODBC_CALL
 - AFXDB/AFX_SQL_ASYNC
 - AFXDB/AFX_SQL_SYNC
 - AFXDB/AfxGetHENV
-dev_langs:
-- C++
 helpviewer_keywords:
 - global database functions [MFC]
 - database macros [MFC]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7d29222b461091dcd72a0c894a138a4df15b9d4b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d3df96c92c39b9fdc05a019ed1ada033dc36d05e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057304"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536558"
 ---
 # <a name="database-macros-and-globals"></a>Veritabanı Makroları ve Genel Öğeleri
 

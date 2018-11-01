@@ -1,30 +1,20 @@
 ---
-title: iostreams kuralları | Microsoft Docs
-ms.custom: ''
+title: iostreams Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - iostream header
 - C++ Standard Library, iostreams
 ms.assetid: 9fe5ded0-37a1-48d1-9671-c81ffc4760ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37ba52981f317ff9929a820c42d35cde0506256f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 52cdd06385994e49ff793e40318ca4cbbbcfcda0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645568"
 ---
 # <a name="iostreams-conventions"></a>iostreams Kuralları
 
-İostreams üstbilgileri dış dosyalara metin kodlanmış form ve giriş ve çıkış arasında dönüştürme destekler:
+İostreams üstbilgileri harici dosyalara metin ve kodlanmış formları, giriş ve çıkış arasındaki dönüştürmeleri destekler:
 
 |||
 |-|-|
@@ -34,11 +24,11 @@ ms.locfileid: "33846460"
 |[\<ostream >](../standard-library/ostream.md)|[\<sstream >](../standard-library/sstream.md)|
 |[\<streambuf >](../standard-library/streambuf.md)|[\<strstream >](../standard-library/strstream.md)|
 
-En basit iostreams yalnızca başlığı dahil kullanımını [ \<iostream >](../standard-library/iostream.md). Ardından değerlerinden ayıklayabilirsiniz [cin](../standard-library/iostream.md#cin) veya [wcin](../standard-library/iostream.md#wcin) standart giriş okunamıyor. Bunu yapmak için kurallar nedenle sınıf açıklamasında özetlenen [basic_istream sınıfı](../standard-library/basic-istream-class.md). Değerleri de ekleyebilirsiniz [cout](../standard-library/iostream.md#cout) veya [wcout](../standard-library/iostream.md#wcout) standart çıkışını yazmak için. Bunu yapmak için kurallar nedenle sınıf açıklamasında özetlenen [basic_ostream sınıfı](../standard-library/basic-ostream-class.md). Biçim Denetimi ayıklayıcıları ve insertors için ortak sınıfı tarafından yönetilen [basic_ios sınıfı](../standard-library/basic-ios-class.md). Ayıklanması ve nesneleri ekleme bu biçimi bilgileri gerçekleştirebilirler düzenleme birkaç manipülatörleri il olur.
+En basit iostreams yalnızca başlığı dahil gerektirir [ \<iostream >](../standard-library/iostream.md). Ardından değerleri ayıklayabilir [cin](../standard-library/iostream.md#cin) veya [wcin](../standard-library/iostream.md#wcin) standart giriş okumak için. Bunu yapmak için kuralları bu nedenle sınıf açıklamasında ana hatlarıyla özetlenen [basic_istream sınıfı](../standard-library/basic-istream-class.md). Değerleri için de ekleyebilirsiniz [cout](../standard-library/iostream.md#cout) veya [wcout](../standard-library/iostream.md#wcout) standart çıkışını yazmak için. Bunu yapmak için kuralları bu nedenle sınıf açıklamasında ana hatlarıyla özetlenen [basic_ostream sınıfı](../standard-library/basic-ostream-class.md). Biçim Denetimi ayıklayıcıları hem insertors ortak sınıf tarafından yönetilen [basic_ios sınıfı](../standard-library/basic-ios-class.md). Bu biçim bilgilerini de gerçekleştirebilirler ayıklanması ve nesne ekleme düzenleme birkaç manipülatörleri, İl olur.
 
-Gerçekleştirebileceğiniz adıyla açık dosyalarda aynı iostreams işlemleri, sınıfları kullanma bildirilen [ \<fstream >](../standard-library/fstream.md). İostreams ve sınıfın nesneleri arasında dönüştürme için [basic_string sınıfı](../standard-library/basic-string-class.md), bildirilen sınıfları kullanan [ \<sstream >](../standard-library/sstream.md). C dizeleri ile aynı yapmak için bildirilen sınıfları kullanması [ \<strstream >](../standard-library/strstream.md).
+Aynı ada göre açık dosyaları iostreams işlemleri gerçekleştirebilir, sınıfları kullanılarak bildirilen [ \<fstream >](../standard-library/fstream.md). İostreams sınıfındaki nesneler arasında dönüştürmek için [basic_string sınıfı](../standard-library/basic-string-class.md), bildirilen sınıfları kullanan [ \<sstream >](../standard-library/sstream.md). C dizeleri ile aynı yapmak için bildirilen sınıfları kullanın [ \<strstream >](../standard-library/strstream.md).
 
-Kalan üstbilgileri genellikle ilgi doğrudan iostreams sınıfların yalnızca en gelişmiş kullanıcılar için destek hizmetleri sağlar.
+Kalan üstbilgileri genellikle ilgi doğrudan iostreams sınıfları yalnızca en gelişmiş kullanıcılar için destek hizmetleri sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

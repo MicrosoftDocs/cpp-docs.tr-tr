@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3030 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3030
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3030
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3030
 ms.assetid: de92fd7e-29ba-46e8-b43b-f4b985cd74de
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec0bf25c05ed58076bf374b3dcbbf63c62c43555
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31ae3f55cd0bf7a15dbea2cf941b00dc048d825d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598386"
 ---
 # <a name="compiler-error-c3030"></a>Derleyici Hatası C3030
 

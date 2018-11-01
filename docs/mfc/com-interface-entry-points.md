@@ -1,12 +1,6 @@
 ---
-title: COM arabirimi giriş noktaları | Microsoft Docs
-ms.custom: ''
+title: COM Arabirimi Giriş Noktaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - entry points, COM interfaces
 - state management, OLE/COM interfaces
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - MFC, managing state data
 - COM interfaces, entry points
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a955e3fc768dd7ba38ffbcf32b190a9d6038196b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b608b200094cc522d5b70e154d342108fd00892f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414286"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484779"
 ---
 # <a name="com-interface-entry-points"></a>COM Arabirimi Giriş Noktaları
 

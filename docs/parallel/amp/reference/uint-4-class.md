@@ -1,10 +1,6 @@
 ---
-title: uint_4 sınıfı | Microsoft Docs
-ms.custom: ''
+title: uint_4 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::ywx
 - amp_short_vectors/Concurrency::graphics::uint_4::get_yxw
@@ -271,19 +267,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::set_xywz
 - amp_short_vectors/Concurrency::graphics::uint_4::rba
 - amp_short_vectors/Concurrency::graphics::uint_4::set_yzx
-dev_langs:
-- C++
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fdc2ac0c637074095b1cb52550032bfe0b22d58
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e763c2654f0edaa02ceaa5294eb33ef02e69ee9a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447095"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579042"
 ---
 # <a name="uint4-class"></a>uint_4 Sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: Çerçeve penceresi sınıfları | Microsoft Docs
-ms.custom: ''
+title: Çerçeve Penceresi Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - frame window classes [MFC], about frame window classes
 - frame window classes [MFC]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - classes [MFC], window
 ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ac60fb8d1b12708c7e64a91beb224ca436e5005
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffeb3339eedb9db7108a26ad4a5840e3921df5fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668955"
 ---
 # <a name="frame-window-classes"></a>Çerçeve Penceresi Sınıfları
 

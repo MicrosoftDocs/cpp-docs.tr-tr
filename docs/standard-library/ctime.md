@@ -1,32 +1,22 @@
 ---
-title: '&lt;CTime&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;CTime&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <ctime>
 - std::<ctime>
-dev_langs:
-- C++
 helpviewer_keywords:
 - ctime header
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09ff596ef6b719e65ff38b40214a0c4f35744321
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 56c9e7a8b654d386cf9ad4aa491939dedcfab92a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842436"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650360"
 ---
 # <a name="ltctimegt"></a>&lt;CTime&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<time.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<TIME.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +27,7 @@ Standart C Kitaplığı üstbilgi içeren \<time.h > ve ilişkili adlarıyla ekl
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

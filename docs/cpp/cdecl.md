@@ -1,30 +1,20 @@
 ---
-title: __cdecl | Microsoft Docs
-ms.custom: ''
+title: __cdecl
 ms.date: 10/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __cdecl_cpp
 - __cdecl
 - _cdecl
 - cdecl
-dev_langs:
-- C++
 helpviewer_keywords:
 - __cdecl keyword [C++]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 085d8a49ed3c66f96bf8c2b8bdae7ca54cf3bef6
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 298485d310ee4039b13781a8b5cd88a489af3b8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550221"
 ---
 # <a name="cdecl"></a>__cdecl
 

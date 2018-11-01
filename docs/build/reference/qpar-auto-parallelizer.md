@@ -1,25 +1,15 @@
 ---
-title: -Qpar (otomatik paralel hale getirici) | Microsoft Docs
-ms.custom: ''
+title: /Qpar (Otomatik Paralel Hale Getirici)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
-dev_langs:
-- C++
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e69bc999721bf833f100418442315fc8bb69e6c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c75770f834abcf17862e173e692129a43a5155c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588701"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar (Otomatik Paralel Hale Getirici)
 

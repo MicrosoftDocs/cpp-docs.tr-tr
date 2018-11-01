@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2297 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2297
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2297
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2297
 ms.assetid: 65849fe5-17e1-4b7e-b50c-f508b05ddaa4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21c2ed8637dd93d6b7b8f5559ca20433e64ecea9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f2b1fb0590b8fd72b0365185b245d7b16566d11d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601363"
 ---
 # <a name="compiler-error-c2297"></a>Derleyici Hatası C2297
 

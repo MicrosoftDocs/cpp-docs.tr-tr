@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2787 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2787
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2787
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2787
 ms.assetid: 34cb57e6-cafe-4ce7-bcc6-53d194629bd0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4096e5dbd5b885afe3dec136a111ec69a10784f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 656fcd8a1a0429546189de8c3f01ab928c6333ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587791"
 ---
 # <a name="compiler-error-c2787"></a>Derleyici Hatası C2787
 

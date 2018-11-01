@@ -1,9 +1,6 @@
 ---
-title: PTR::GetInterface | Microsoft Docs
-ms.custom: ''
+title: ptr::GetInterface
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr::GetInterface
@@ -11,22 +8,15 @@ f1_keywords:
 - GetInterface
 - msclr.com.ptr.GetInterface
 - ptr.GetInterface
-dev_langs:
-- C++
 helpviewer_keywords:
 - GetInterface method
 ms.assetid: d85553ec-fb88-4fd6-9df2-ddcaa8b2dc70
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 189dc692c9883409f1b1890fd23a648f5526d719
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4f868260822393f8bd3bb5cf40bf9c5e5b05e9ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525674"
 ---
 # <a name="ptrgetinterface"></a>ptr::GetInterface
 

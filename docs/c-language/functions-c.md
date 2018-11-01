@@ -1,26 +1,16 @@
 ---
-title: Functions (C) | Microsoft Docs
-ms.custom: ''
+title: İşlevler (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C]
 - Visual C, functions
 ms.assetid: 31839f65-49f4-43e1-85ec-8769924ffa96
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 71acc0d1f8ead1fc84326f223d408f7e8d330b3e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d434e5bb0e876d7b2d87500d75dc62154a5327b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057671"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649650"
 ---
 # <a name="functions-c"></a>İşlevler (C)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4738 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4738
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4738
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4738
 ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e017ef94dd28de8d4c66ab89b1509f755beeb07
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 833546d20454e6104a2d5fcb272bf5bb9518ea44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053226"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460950"
 ---
 # <a name="compiler-warning-level-3-c4738"></a>Derleyici Uyarısı (Düzey 3) C4738
 

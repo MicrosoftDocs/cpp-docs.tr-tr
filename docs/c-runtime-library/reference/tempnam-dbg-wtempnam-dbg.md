@@ -1,10 +1,6 @@
 ---
-title: _tempnam_dbg, _wtempnam_dbg | Microsoft Docs
-ms.custom: ''
+title: _tempnam_dbg, _wtempnam_dbg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wtempnam_dbg
 - _tempnam_dbg
@@ -25,8 +21,6 @@ f1_keywords:
 - tempnam_dbg
 - _tempnam_dbg
 - _wtempnam_dbg
-dev_langs:
-- C++
 helpviewer_keywords:
 - file names [C++], creating temporary
 - tempnam_dbg function
@@ -36,20 +30,16 @@ helpviewer_keywords:
 - _tempnam_dbg function
 - _wtempnam_dbg function
 ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8509d9f4b8be5771abc7dfb3d4deacc9ae61494
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 804c8ad1f17c6ee1df563cafc69ee7aef494d1cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596465"
 ---
 # <a name="tempnamdbg-wtempnamdbg"></a>_tempnam_dbg, _wtempnam_dbg
 
-İşlev sürümlerini [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) hata ayıklama sürümünü kullanmak **malloc**, **_malloc_dbg**.
+İşlev sürümleri [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) hata ayıklama sürümünü kullanan **malloc**, **_malloc_dbg**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,33 +62,33 @@ wchar_t *_wtempnam_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dir*<br/>
-Dosya adında hiçbir TMP ortam değişkeni ise veya TMP geçerli bir dizin değil ise kullanılan yol.
+*dizini*<br/>
+Dosya adında hiçbir TMP ortam değişkeni yoksa veya TMP geçerli bir dizin değil ise kullanılan yol.
 
 *prefix*<br/>
-Bekletilen tarafından döndürülen adlarına olacaktır dize **_tempnam**.
+Bekletilen tarafından döndürülen adlarına olacak dize **_tempnam**.
 
 *blockType*<br/>
 İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
 
 *Dosya adı*<br/>
-İstenen ayırma işlemi kaynak dosyasının adını işaretçi veya **NULL**.
+Ayırma işlemi istenen kaynak dosyasının adı işaretçi veya **NULL**.
 
 *LineNumber*<br/>
-Satır numarası ayırma işlemi istenen burada kaynak dosyasında veya **NULL**.
+Satır numarası kaynak dosyada ayırma işlemi burada istendi veya **NULL**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev işaretçisi oluşturulan adı döndürür veya **NULL** bir hata olduğunda. Belirtilen TMP ortam değişkeni ve içinde geçersiz dizin adı ise hata oluşabilir *dir* parametresi.
+Her işlev oluşturulan adı için bir işaretçi döndürür veya **NULL** bir hata varsa. Belirtilen TMP ortam değişkenini ve içinde geçersiz dizin adı yoksa hata meydana gelebilir *dir* parametresi.
 
 > [!NOTE]
-> **Ücretsiz** (veya **free_dbg**) tarafından ayrılmış işaretçileri için çağrılması gerekmez **_tempnam_dbg** ve **_wtempnam_dbg**.
+> **Ücretsiz** (veya **free_dbg**) tarafından ayrılan işaretçiler için çağrılması gerekmez **_tempnam_dbg** ve **_wtempnam_dbg**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Tempnam_dbg** ve **_wtempnam_dbg** işlevleri aynı **_tempnam** ve **_wtempnam** dışında **_DEBUG** olan tanımlı, bu işlevleri hata ayıklama sürümü kullanma **malloc** ve **_malloc_dbg**, bellek, ayırmak için **NULL** olduğu İlk parametre olarak geçirildi. Daha fazla bilgi için bkz: [_malloc_dbg](malloc-dbg.md).
+**_Tempnam_dbg** ve **_wtempnam_dbg** işlevleri aynı **_tempnam** ve **_wtempnam** dışında olduğunda **_DEBUG** olan tanımlanan, bu işlevlerin hata ayıklama sürümünü kullanmak **malloc** ve **_malloc_dbg**, bellek ayırmak için **NULL** olduğu İlk parametre olarak geçirildi. Daha fazla bilgi için [_malloc_dbg](malloc-dbg.md).
 
-Çoğu durumda bu işlevleri açıkça çağırmak gerekmez. Bunun yerine, bayrağı tanımlayabilirsiniz **_CRTDBG_MAP_ALLOC**. Zaman **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_tempnam** ve **_wtempnam** için eşleştirilir **_tempnam_dbg** ve **_ wtempnam_dbg**, sırasıyla ile *blockType* kümesine **_NORMAL_BLOCK**. Bu nedenle, öbek taşı olarak işaretlemek istediğiniz sürece bu işlevleri açıkça çağırın gerekmez **_clıent_block**. Daha fazla bilgi için bkz: [hata ayıklama yığınındaki blokları türlerini](/visualstudio/debugger/crt-debug-heap-details).
+Bu işlevler, çoğu durumda açıkça çağırmanız gerekmez. Bunun yerine, bayrak tanımlayabilirsiniz **_CRTDBG_MAP_ALLOC**. Zaman **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_tempnam** ve **_wtempnam** için eşleştirilir **_tempnam_dbg** ve **_ wtempnam_dbg**sırasıyla ile *blockType* kümesine **_NORMAL_BLOCK**. Bu nedenle, yığın blokları olarak işaretlemek istediğiniz sürece bu işlevler açıkça çağırmanız gerekmez **_clıent_block**. Daha fazla bilgi için [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -112,10 +102,10 @@ Her işlev işaretçisi oluşturulan adı döndürür veya **NULL** bir hata old
 |-------------|---------------------|
 |**_tempnam_dbg**, **_wtempnam_dbg**|\<crtdbg.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[Yığın ayırma işlevleri sürümleri hata ayıklama](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Öbek Atama İşlevleri Hata Ayıklama Sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

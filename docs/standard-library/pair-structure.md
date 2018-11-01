@@ -1,27 +1,17 @@
 ---
-title: pair yapısı | Microsoft Docs
-ms.custom: ''
+title: pair Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - utility/std::pair
-dev_langs:
-- C++
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f11fb76f4009f6497020c26f26184d2ddca4506b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2b7f2b736d24961376db4317d6d53e06153283c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318277"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443244"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 

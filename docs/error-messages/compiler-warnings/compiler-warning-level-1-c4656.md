@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4656 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4656
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4656
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4656
 ms.assetid: b5aaef74-2320-4345-a6ae-b813881a491c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3334b9448dd6e9d47ed0b3ee3e4dfb9dfc57b57f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4285ce20f6131c2503304ed1bdb1bde02b2efcec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665692"
 ---
 # <a name="compiler-warning-level-1-c4656"></a>Derleyici Uyarısı (düzey 1) C4656
 

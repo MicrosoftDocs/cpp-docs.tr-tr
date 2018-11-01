@@ -1,10 +1,6 @@
 ---
-title: strchr, wcschr, _mbschr, _mbschr_l | Microsoft Docs
-ms.custom: ''
+title: strchr, wcschr, _mbschr, _mbschr_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strchr
 - wcschr
@@ -31,8 +27,6 @@ f1_keywords:
 - wcschr
 - _tcschr
 - _mbschr
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], searching
 - mbschr function
@@ -47,16 +41,12 @@ helpviewer_keywords:
 - tcschr function
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f72bb476d50f9f8d382657ed3b9109bc6a399a09
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8668c186a16dc3f3dc2c7223eb10c100fa6d72fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020309"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543087"
 ---
 # <a name="strchr-wcschr-mbschr-mbschrl"></a>strchr, wcschr, _mbschr, _mbschr_l
 

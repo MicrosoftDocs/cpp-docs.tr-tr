@@ -1,12 +1,6 @@
 ---
-title: Saklı yordamları kullanma | Microsoft Docs
-ms.custom: ''
+title: Saklı Yordamları Kullanma
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB, stored procedures
 - stored procedures, Visual C++
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - OLE DB provider templates, stored procedures
 - stored procedures, OLE DB
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 062384713e0668965f9d04dc8f6907b05ac2bc89
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2c0c1c71103384439d0b7b94f942e1b5a6d9e651
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536167"
 ---
 # <a name="using-stored-procedures"></a>Saklı Yordamları Kullanma
 

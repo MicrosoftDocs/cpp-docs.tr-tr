@@ -1,12 +1,6 @@
 ---
-title: BSCMAKE komut dosyası (yanıt dosyası) | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Komut Dosyası (Yanıt Dosyası)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - BSCMAKE, response file
 - BSCMAKE, command file
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - response files
 - command files
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69fb144bed21b00fc07107f3fa8d5e64c1afb10d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6be6dae2ef3dd729819a5eccba5e86df479ab5ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587319"
 ---
 # <a name="bscmake-command-file-response-file"></a>BSCMAKE Komut Dosyası (Yanıt Dosyası)
 

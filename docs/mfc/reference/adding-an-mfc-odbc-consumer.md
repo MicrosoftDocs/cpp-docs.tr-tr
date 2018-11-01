@@ -1,25 +1,15 @@
 ---
-title: MFC ODBC Tüketicisi Ekleme | Microsoft Docs
-ms.custom: ''
+title: MFC ODBC Tüketicisi Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ODBC consumers
 ms.assetid: 2dc97909-1f7e-43ee-9d47-99e612727058
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 15b073d361fe8dbffb7c92718f5d7522534fc7e1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 89c4bba3b0df71b5ea49f4f0a975e73669fd852b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052361"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544215"
 ---
 # <a name="adding-an-mfc-odbc-consumer"></a>MFC ODBC Tüketicisi Ekleme
 

@@ -1,27 +1,17 @@
 ---
-title: Bir iletişim kutusunda ortak denetimleri kullanma | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusunda Ortak Denetimleri Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - common controls [MFC], in dialog boxes
 - dialog box controls [MFC], common controls
 - Windows common controls [MFC], in dialog boxes
 ms.assetid: 17713caf-09f8-484a-bf54-5f48bf09cce9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ff5c3f28a47eb4e1810f046a242f6170c537bf2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a17dac622ce1527a11d02888d6c4ce7905fcf669
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054942"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458668"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>İletişim Kutusunda Ortak Denetimleri Kullanma
 

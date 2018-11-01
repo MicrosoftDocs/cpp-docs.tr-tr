@@ -1,10 +1,6 @@
 ---
-title: expm1, expm1f, expm1l | Microsoft Docs
-ms.custom: ''
+title: expm1, expm1f, expm1l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - expm1l
 - expm1
@@ -26,27 +22,21 @@ f1_keywords:
 - expm1l
 - expm1
 - expm1f
-dev_langs:
-- C++
 helpviewer_keywords:
 - expm1f function
 - expm1l function
 - expm1 function
 ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 381078cc4549b0c3347d093743f4240fab270b10
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5971f879ecef7d4fa1027849cc44d598e877b5f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398412"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441073"
 ---
 # <a name="expm1-expm1f-expm1l"></a>expm1, expm1f, expm1l
 
-E tabanında bir eksi bir değer üstel hesaplar.
+Tabanında üssü eksi bir değerini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,15 +61,15 @@ long double expm1l(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Kayan nokta üstel değeri.
+Kayan nokta üs değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Expm1** işlevleri dönüş e temsil eden bir kayan nokta değeri<sup>x</sup> - 1, başarılı olursa. Taşma, **expm1** döndürür **HUGE_VAL**, **expm1f** döndürür **HUGE_VALF**, **expm1l** döndürür **HUGE_VALL**, ve **errno** ayarlanır **ERANGE**. Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**Expm1** işlevler e temsil eden bir kayan nokta değeri döndürür<sup>x</sup> - 1, başarılı olursa. Taşma **expm1** döndürür **HUGE_VAL**, **expm1f** döndürür **HUGE_VALF**, **expm1l** döndürür **HUGE_VALL**, ve **errno** ayarlanır **ERANGE**. Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **expm1** alın ve dönüş **float** ve **uzun** **çift** değerleri. Bir C programı **expm1** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **expm1** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **expm1** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -87,7 +77,7 @@ Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **expm1** 
 |-------------|---------------------|
 |**expm1**, **expm1f**, **expm1l**|\<Math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

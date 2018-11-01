@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2345 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2345
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2345
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2345
 ms.assetid: e1cc88b0-0223-4d07-975b-fa99956a82bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb20a744c2a8ef67901da10c4933bc38402c710f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ceb2a835ca94399f27640628105afcde986af1b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479111"
 ---
 # <a name="compiler-error-c2345"></a>Derleyici Hatası C2345
 

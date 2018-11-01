@@ -1,29 +1,19 @@
 ---
-title: Takvim denetimi bir ayın gün durumunu ayarlama | Microsoft Docs
-ms.custom: ''
+title: Aylık Takvim Denetiminin Gün Durumunu Ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - MCN_GETDAYSTATE
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMonthCalCtrl class [MFC], setting day state info
 - MCN_GETDAYSTATE notification [MFC]
 - month calendar controls [MFC], day state info
 ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e589f07d1c9c54c3acd2fa3ff6a0f346077f9b4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a07808819e1cb049de7438c9e7964436e8c83802
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053103"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464772"
 ---
 # <a name="setting-the-day-state-of-a-month-calendar-control"></a>Aylık Takvim Denetiminin Gün Durumunu Ayarlama
 

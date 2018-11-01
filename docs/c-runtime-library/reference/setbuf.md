@@ -1,10 +1,6 @@
 ---
-title: setbuf | Microsoft Docs
-ms.custom: ''
+title: setbuf
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - setbuf
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - setbuf
-dev_langs:
-- C++
 helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea1c979b261b81f80d95e4219f948dd2a3f5849e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 3b5fbccd304d406131b0c4f7d16a289f80484642
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100359"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440502"
 ---
 # <a name="setbuf"></a>setbuf
 

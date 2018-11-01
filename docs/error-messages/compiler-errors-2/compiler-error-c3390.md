@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3390 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3390
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3390
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3390
 ms.assetid: 84800a87-c8e6-45aa-82ae-02f816dc8d97
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7f1a19d86e133d01a17703f7ef4b3a79d5eb601
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e1146bf0ed2dd6d38a3c67cc6799c0e73f253323
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532631"
 ---
 # <a name="compiler-error-c3390"></a>Derleyici Hatası C3390
 

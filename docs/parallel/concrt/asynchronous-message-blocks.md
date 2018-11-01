@@ -1,27 +1,17 @@
 ---
-title: Zaman uyumsuz ileti blokları | Microsoft Docs
-ms.custom: ''
+title: Zaman Uyumsuz İleti Blokları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - non-greedy join [Concurrency Runtime]
 - asynchronous message blocks
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b180b1a92defb2c29d0e54b0ecf9700dd299170
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b78b4db4dda33e0a94da3624ea1ffd8748a601f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163432"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586127"
 ---
 # <a name="asynchronous-message-blocks"></a>Zaman Uyumsuz İleti Blokları
 

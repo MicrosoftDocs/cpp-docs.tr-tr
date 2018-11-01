@@ -1,10 +1,6 @@
 ---
-title: CDWordArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDWordArray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDWordArray
 - AFXCOLL/CDWordArray
@@ -26,8 +22,6 @@ f1_keywords:
 - AFXCOLL/CObArray::SetAt
 - AFXCOLL/CObArray::SetAtGrow
 - AFXCOLL/CObArray::SetSize
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObArray [MFC], CObArray
 - CObArray [MFC], Add
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 581be11e-ced6-47d1-8679-e0b8e7d99494
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f806a38cfe937309e3504dcad2b17641bf6c662
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8866c4c521c6f9f85f8fb6bb9e201e52bc76df8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429880"
 ---
 # <a name="cdwordarray-class"></a>CDWordArray sınıfı
 

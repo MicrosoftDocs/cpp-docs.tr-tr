@@ -1,28 +1,18 @@
 ---
-title: Penceresiz etkinleştirme sağlama | Microsoft Docs
-ms.custom: ''
+title: Penceresiz Etkinleştirme Sağlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - windowless activation of MFC ActiveX controls
 - activation [MFC], MFC ActiveX controls
 - MFC ActiveX controls [MFC], activate options
 - activation [MFC], windowless
 ms.assetid: 094903b5-c344-42fa-96ff-ce01e16891c5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e8fc079921b3f2eddd117f93ee9d2f6cad60925
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1e962584faa826ce87533806edc2bed1d1248286
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475640"
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
 

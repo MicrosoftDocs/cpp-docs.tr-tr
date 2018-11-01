@@ -1,33 +1,23 @@
 ---
-title: basic_ostringstream sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_ostringstream Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - sstream/std::basic_ostringstream
 - sstream/std::basic_ostringstream::allocator_type
 - sstream/std::basic_ostringstream::rdbuf
 - sstream/std::basic_ostringstream::str
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_ostringstream [C++]
 - std::basic_ostringstream [C++], allocator_type
 - std::basic_ostringstream [C++], rdbuf
 - std::basic_ostringstream [C++], str
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03c45cad9e29221926eafd4d0b40410e5f9b89e2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 45a7eb1384c70b488e057fb9df8ad4c496272316
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582790"
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream Sınıfı
 

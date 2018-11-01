@@ -1,36 +1,27 @@
 ---
-title: Derleyici Hatası C3615 | Microsoft Docs
+title: Derleyici Hatası C3615
 ms.date: 10/24/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3615
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3615
 ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce1ab43f8e15535614cedf43dba42fef882bf87a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e966295b5ab63350828ddb73d6791a9e30bb5c59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253401"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652224"
 ---
 # <a name="compiler-error-c3615"></a>Derleyici Hatası C3615
 
-> constexpr işlevi '*işlevi*' sabit bir ifade olamaz
+> constexpr işlevi '*işlevi*' sabit bir ifade ile sonuçlanamaz
 
-İşlev *işlevi* olarak değerlendirilemedi `constexpr` derleme zamanında. Olmasını `constexpr`, bir işlev yalnızca diğer çağırabilir `constexpr` işlevleri.
+İşlev *işlevi* olarak değerlendirilemiyor `constexpr` derleme zamanında. Olmasını `constexpr`, bir işlev yalnızca diğer çağırabilirsiniz `constexpr` işlevleri.
 
 ## <a name="example"></a>Örnek
 
-Visual Studio 2017 koşullu değerlendirilirken işlemi sol işleneni geçerli olmadığında bir hata doğru başlatır bir `constexpr` bağlamı. Aşağıdaki kod, Visual Studio 2015'te ancak Visual Studio 2017'de derler.
+Visual Studio 2017 sol işlenen bir koşullu olarak değerlendirilmesini işleminin geçerli olmadığında bir hata doğru başlatan bir `constexpr` bağlamı. Visual Studio 2015'te ancak Visual Studio 2017 aşağıdaki kodu derler.
 
 ```cpp
 // C3615.cpp
@@ -48,4 +39,4 @@ constexpr bool f(const myarray<1> &arr)
 }
 ```
 
-Bu sorunu gidermek için ya da bildirme `array::size()` olarak işlev `constexpr` Kaldır `constexpr` niteleyicisi gelen `f`.
+Bu sorunu gidermek için ya da bildirin `array::size()` işleve `constexpr` Kaldır `constexpr` gelen niteleyicisi `f`.

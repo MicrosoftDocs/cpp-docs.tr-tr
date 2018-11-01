@@ -1,23 +1,13 @@
 ---
-title: 2.5.2 parallel sections yapısı | Microsoft Docs
-ms.custom: ''
+title: 2.5.2 parallel sections Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 94220e27-14f8-465c-bd8d-eb960b4b5dee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 073d0561fe4bfbb96ed88681a077da6fc985c963
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b74dacb9730a14364d7202918ae195cbf691955
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402336"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533672"
 ---
 # <a name="252-parallel-sections-construct"></a>2.5.2 parallel sections Yapısı
 

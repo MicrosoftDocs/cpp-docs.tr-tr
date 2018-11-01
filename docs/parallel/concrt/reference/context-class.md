@@ -1,10 +1,6 @@
 ---
-title: Bağlam sınıfı | Microsoft Docs
-ms.custom: ''
+title: Bağlam Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - Context
 - CONCRT/concurrency::Context
@@ -21,21 +17,15 @@ f1_keywords:
 - CONCRT/concurrency::Context::Unblock
 - CONCRT/concurrency::Context::VirtualProcessorId
 - CONCRT/concurrency::Context::Yield
-dev_langs:
-- C++
 helpviewer_keywords:
 - Context class
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 854f5935a66d845aa3c63b9f15857732fdfe6b8a
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: c6b219eabd008114f40401c64465e44607c2ee9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163874"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555083"
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 

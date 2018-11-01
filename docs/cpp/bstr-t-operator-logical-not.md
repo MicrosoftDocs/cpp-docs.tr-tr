@@ -1,29 +1,19 @@
 ---
-title: _bstr_t::operator ! | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::operator !
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::operator!
-dev_langs:
-- C++
 helpviewer_keywords:
 - '! operator'
 - operator!, bstr
 - operator !, bstr
 ms.assetid: 6e60b5a5-2d28-4eec-9e12-790da8f1fdd4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a69bd0245035191f95f874bb6a4383c2e148e0a9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3be0ad19260c5b68894e28861ed5bc1635ef4c79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447846"
 ---
 # <a name="bstrtoperator-"></a>_bstr_t::operator !
 

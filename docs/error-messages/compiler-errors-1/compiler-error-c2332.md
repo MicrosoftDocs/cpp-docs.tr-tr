@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2332 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2332
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2332
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2332
 ms.assetid: fb05cd68-e271-4bea-9fb7-ef4edb0a26ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4652dfbc1965abccb31aa6edb5419446af7ba68a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c9b8fe3665199e4a502de965fd1e592252e97bf2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500314"
 ---
 # <a name="compiler-error-c2332"></a>Derleyici Hatası C2332
 

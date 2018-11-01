@@ -1,28 +1,17 @@
 ---
-title: is_trivial sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_trivial sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_trivial
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_trivial
 ms.assetid: 6beb11d4-2f38-4c7e-9959-ca5d26250df7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 41c09d35c81d8b9f9b8b2e629eabd1ec9a5ec8d9
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 609fdd9c3d0d00eea607db4aefd31163234a9a00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526860"
 ---
 # <a name="istrivial-class"></a>is_trivial sınıfı
 

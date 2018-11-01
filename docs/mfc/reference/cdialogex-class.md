@@ -1,33 +1,23 @@
 ---
-title: CDialogEx sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDialogEx sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDialogEx
 - AFXDIALOGEX/CDialogEx
 - AFXDIALOGEX/CDialogEx::CDialogEx
 - AFXDIALOGEX/CDialogEx::SetBackgroundColor
 - AFXDIALOGEX/CDialogEx::SetBackgroundImage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDialogEx [MFC], CDialogEx
 - CDialogEx [MFC], SetBackgroundColor
 - CDialogEx [MFC], SetBackgroundImage
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22da29fa98985d00cad9f53c0b80f05a699ead88
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e3040c9a91357ce9b3968729e0bf83d664c511d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448574"
 ---
 # <a name="cdialogex-class"></a>CDialogEx sınıfı
 

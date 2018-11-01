@@ -1,31 +1,21 @@
 ---
-title: moneypunct_byname sınıfı | Microsoft Docs
-ms.custom: ''
+title: moneypunct_byname Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocmon/std::moneypunct_byname
-dev_langs:
-- C++
 helpviewer_keywords:
 - moneypunct_byname class
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2e4720ac87884a079bbc2ede6b625658adb9c29c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 003ba2136e779c444c7edad9b1759a861a8b0803
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574443"
 ---
 # <a name="moneypunctbyname-class"></a>moneypunct_byname Sınıfı
 
-Olarak hizmet verebilir bir nesneyi tanımlayan bir türetilmiş Şablon sınıfı bir `moneypunct` para biçimlendirme etkinleştirme, belirli bir yerel güvenliğin giriş alanı veya parasal çıktı alanları.
+Olarak hizmet verebilen bir nesneyi tanımlayan türetilmiş bir şablon sınıfı bir `moneypunct` parasal biçimlendirme etkinleştirme verili bir yerel ayar modeli giriş alanını veya parasal çıkış alanları.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,7 +40,7 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışını adlandırılmış bölgeye göre belirlenir `_Locname`. Her oluşturucu temel nesnesiyle başlatır [moneypunct](../standard-library/moneypunct-class.md#moneypunct)\<CharType, uluslararası > ( `_Refs`).
+Davranışını adlandırılmış yerel ayar tarafından belirlenir `_Locname`. Her Oluşturucu, temel nesnesiyle başlatır [moneypunct](../standard-library/moneypunct-class.md#moneypunct)\<CharType, uluslararası > ( `_Refs`).
 
 ## <a name="requirements"></a>Gereksinimler
 

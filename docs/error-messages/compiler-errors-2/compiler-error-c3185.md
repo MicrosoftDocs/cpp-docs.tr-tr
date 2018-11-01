@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3185 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3185
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3185
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3185
 ms.assetid: 5bf96279-043c-4981-9d02-b4550071b192
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd7f94f86165fdfd25bb5a901cdb4349a0e48494
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: db448b462cd3a3f325c529e730e5c8f65e2b8f51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044528"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598816"
 ---
 # <a name="compiler-error-c3185"></a>Derleyici Hatası C3185
 

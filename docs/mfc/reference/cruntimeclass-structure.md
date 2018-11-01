@@ -1,30 +1,20 @@
 ---
-title: CRuntimeClass yapısı | Microsoft Docs
-ms.custom: ''
+title: CRuntimeClass yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRuntimeClass
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRuntimeClass structure [MFC]
 - dynamic class information [MFC]
 - runtime [MFC], class information
 - run-time class [MFC], CRuntimeClass structure
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7a7b0f8c61226260497baced9575c911b425512
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 54f47fd931374df0e9f71c0d946845d8d5b16695
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078784"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452708"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass yapısı
 

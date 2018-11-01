@@ -1,10 +1,6 @@
 ---
-title: compl | Microsoft Docs
-ms.custom: ''
+title: compl
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - compl
 apilocation:
@@ -23,21 +19,15 @@ f1_keywords:
 - std::compl
 - std.compl
 - compl
-dev_langs:
-- C++
 helpviewer_keywords:
 - compl function
 ms.assetid: e03f6fb5-cb8b-4afa-99c0-905f4105fb34
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14d1a4d643dd18a51b7e5dd29bc8ce282be5c9ef
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7697b3dd334a158418f63bb40c04208b50a02d1a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393680"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569565"
 ---
 # <a name="compl"></a>compl
 

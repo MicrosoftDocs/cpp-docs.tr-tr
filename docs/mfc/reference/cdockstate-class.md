@@ -1,10 +1,6 @@
 ---
-title: CDockState sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDockState sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDockState
 - AFXADV/CDockState
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXADV/CDockState::LoadState
 - AFXADV/CDockState::SaveState
 - AFXADV/CDockState::m_arrBarInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDockState [MFC], Clear
 - CDockState [MFC], GetVersion
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CDockState [MFC], SaveState
 - CDockState [MFC], m_arrBarInfo
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e8cde676795067005406f3eba86bdda7082f272
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 56be735aa99cfebe4ec64ff76f53d28cc9b9779e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443608"
 ---
 # <a name="cdockstate-class"></a>CDockState sınıfı
 

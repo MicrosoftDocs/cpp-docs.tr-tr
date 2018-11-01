@@ -1,29 +1,19 @@
 ---
-title: swap işlevi (auto_handle) | Microsoft Docs
-ms.custom: ''
+title: swap İşlevi (auto_handle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::swap
 - msclr.swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - swap function
 ms.assetid: 7dd91b5c-f0de-4634-a2e2-642626706e27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 36a118ec21ccb3eee7b90798cfb730e7402b308a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a4e15e2a0481f10b58517135c5dc283549f358af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638308"
 ---
 # <a name="swap-function-autohandle"></a>swap İşlevi (auto_handle)
 

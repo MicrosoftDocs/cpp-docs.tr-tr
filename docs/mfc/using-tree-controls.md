@@ -1,26 +1,16 @@
 ---
-title: Ağaç denetimlerini kullanma | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetimlerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTreeCtrl class [MFC], using
 - tree controls [MFC], about tree controls
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fc3efbf48a9005bf117c2dd7ab5f1bd01ed556d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2a42392253f158365af6bf9f7a5e4a1f4df93e95
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653410"
 ---
 # <a name="using-tree-controls"></a>Ağaç Denetimlerini Kullanma
 

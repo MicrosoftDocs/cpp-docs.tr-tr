@@ -1,28 +1,17 @@
 ---
-title: OLE DB Şablonları | Microsoft Docs
-ms.custom: ''
+title: OLE DB Şablonları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - vc.templates.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 49d0ca325460ffa580897fde01cb35f06c809f69
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2b8fd52dddcbf87b624d5bcc289d11b1f7ba5a3c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446013"
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 

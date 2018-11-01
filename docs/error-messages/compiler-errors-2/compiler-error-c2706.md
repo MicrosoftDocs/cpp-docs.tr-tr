@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2706 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2706
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2706
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2706
 ms.assetid: e18da924-c42d-4b09-8e29-f4e0382d7dc6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 560edb9953d4f7c751f4ab4102fd544fb09bb86d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9767d36d44b99423d600d299d0803901d3dbfec5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066017"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472520"
 ---
 # <a name="compiler-error-c2706"></a>Derleyici Hatası C2706
 

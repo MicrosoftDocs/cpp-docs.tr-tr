@@ -1,10 +1,6 @@
 ---
-title: _Cıatan2 | Microsoft Docs
-ms.custom: ''
+title: _CIatan2
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _CIatan2
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - CIatan2
 - _CIatan2
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a79274b7614e060b681eb9d4c3ba17c14c53f7ab
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 31cb17b0e71751defba349500de9098cf9d095ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602143"
 ---
 # <a name="ciatan2"></a>_CIatan2
 

@@ -1,23 +1,13 @@
 ---
-title: Sağa kaydırmalar | Microsoft Docs
-ms.custom: ''
+title: Sağa Kaydırmalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: c878e97d-ea3c-4c6b-90a8-b1b24b2d5b19
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f31ebddb38d1eb1cafe9495f8c121811ec502524
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f39c1f2f49f5a8a1f3bb5eb3f21736eedf32077e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518215"
 ---
 # <a name="right-shifts"></a>Sağa Kaydırmalar
 

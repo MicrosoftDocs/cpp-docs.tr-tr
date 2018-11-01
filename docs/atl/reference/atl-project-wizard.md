@@ -1,28 +1,18 @@
 ---
-title: ATL projesi Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL projesi Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.atl.com.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, creating
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d7ac74d1b310f4db7bfc4a558db5b89df5d8df5a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7a53b33892b23d414a877721eca514931f82080e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476706"
 ---
 # <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
 

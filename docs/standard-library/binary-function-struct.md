@@ -1,27 +1,17 @@
 ---
-title: binary_function yapısı | Microsoft Docs
-ms.custom: ''
+title: binary_function Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - functional/std::binary
-dev_langs:
-- C++
 helpviewer_keywords:
 - binary_function class
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9aa8c65632f2a4c1555e211985d3b3005fabe11
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 5a153d85f9f6dcb93a074725ee9582ccfc1a66ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316932"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466774"
 ---
 # <a name="binaryfunction-struct"></a>binary_function Yapısı
 

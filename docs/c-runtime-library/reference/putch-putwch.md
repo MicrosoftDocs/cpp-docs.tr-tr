@@ -1,10 +1,6 @@
 ---
-title: _putch, _putwch | Microsoft Docs
-ms.custom: ''
+title: _putch, _putwch
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putwch
 - _putch
@@ -25,8 +21,6 @@ f1_keywords:
 - _putch
 - putwch
 - _putwch
-dev_langs:
-- C++
 helpviewer_keywords:
 - _putch function
 - characters, writing
@@ -35,23 +29,19 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a0a6e50a4cd6794e28cc59bb2b080c57c0993986
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9abd27a926e641e72595360ed3951fad9e888676
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401811"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434768"
 ---
 # <a name="putch-putwch"></a>_putch, _putwch
 
-Bir karakter konsola yazar.
+Konsola bir karakter yazar.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,24 +50,24 @@ int _putch(
 int c
 );
 wint_t _putwch(
-   wchar_t c
+   wchar_t c
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Çıktı karakter.
+Çıktı olacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *c* başarılı olursa. Varsa **_putch** başarısız, döndürdüğü **EOF**if **_putwch** başarısız, onu döndürür **WEOF**.
+Döndürür *c* başarılı olursa. Varsa **_putch** döndürür, başarısız **EOF**if **_putwch** döndürür, başarısız **WEOF**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler karakter yazma *c* , konsola arabelleğe alma olmadan doğrudan. Windows NT **_putwch** geçerli konsol yerel ayarı kullanarak Unicode karakterler yazar.
+Bu işlevler karakter yazma *c* , konsola arabelleğe alma olmadan doğrudan. Windows NT'de **_putwch** geçerli konsol yerel ayarını kullanarak Unicode karakterler yazar.
 
-Sürümleriyle **_nolock** soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır. Daha fazla bilgi için bkz: **_putch_nolock**, **_putwch_nolock**.
+Sürümlerle **_nolock** soneki, bunlar başka iş parçacıklarının engellemelerinden korunmamaları hariç, aynıdır. Daha fazla bilgi için **_putch_nolock**, **_putwch_nolock**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -92,7 +82,7 @@ Sürümleriyle **_nolock** soneki, diğer iş parçacıkları tarafından giriş
 |**_putch**|\<conio.h >|
 |**_putwch**|\<conio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -100,7 +90,7 @@ Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/c
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_getch](getch-getwch.md).
+Örneğin bakın [_getch](getch-getwch.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: CDaoTableDef sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoTableDef sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoTableDef
 - AFXDAO/CDaoTableDef
@@ -41,8 +37,6 @@ f1_keywords:
 - AFXDAO/CDaoTableDef::SetValidationText
 - AFXDAO/CDaoTableDef::m_pDAOTableDef
 - AFXDAO/CDaoTableDef::m_pDatabase
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoTableDef [MFC], CDaoTableDef
 - CDaoTableDef [MFC], Append
@@ -78,16 +72,12 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDAOTableDef
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a943374731785ecadd13f89ee5c1b760acfb46d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b2f431b250da4b791c06a629315d59bbc7935802
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064868"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579249"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef sınıfı
 

@@ -1,14 +1,8 @@
 ---
-title: Kitaplık üyesini ayıklama | Microsoft Docs
-ms.custom: ''
+title: Kitaplık Üyesini Ayıklama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - Lib
-dev_langs:
-- C++
 helpviewer_keywords:
 - LIB [C++], extracting library members
 - EXTRACT library manager option
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - extracting library members
 - /EXTRACT library manager option
 ms.assetid: a2c5c2a1-9b7e-489a-a9a4-1dec694e1fc5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9207a77868b3257d09f0d9efe38e4765cb8f4906
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2975ef584b0244a16b556232b6939308d2e1bd14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726524"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447040"
 ---
 # <a name="extracting-a-library-member"></a>Kitaplık Üyesini Ayıklama
 

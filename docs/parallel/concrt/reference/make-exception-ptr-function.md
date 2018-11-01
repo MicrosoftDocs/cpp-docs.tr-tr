@@ -1,25 +1,15 @@
 ---
-title: make_exception_ptr işlevi | Microsoft Docs
-ms.custom: ''
+title: make_exception_ptr İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - ppltasks/std::make_exception_ptr
-dev_langs:
-- C++
 ms.assetid: 8d81cf7a-818e-4b27-8d49-440ec3088609
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 401bc3cd9933f44b92f5f361b1a1aaad24bc79ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fbba07969d8f2a5e60c35eac5806a1acc1d59185
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436955"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488263"
 ---
 # <a name="makeexceptionptr-function"></a>make_exception_ptr İşlevi
 

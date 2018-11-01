@@ -1,12 +1,6 @@
 ---
-title: Pano işlemleri zengin düzenleme denetimleri | Microsoft Docs
-ms.custom: ''
+title: Zengin Düzenleme Denetimlerinde Pano İşlemleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - pasting Clipboard data
 - CRichEditCtrl class [MFC], paste operation
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - Clipboard, operations in CRichEditCtrl
 - rich edit controls [MFC], Clipboard operations
 ms.assetid: 15ce66bc-2636-4a35-a2ae-d52285dc1af6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f978880344113c71f8f22dd3c49e2ec35024a729
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 345c0b3e79bc531101481dc7be9624539a06d832
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566198"
 ---
 # <a name="clipboard-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Pano İşlemleri
 

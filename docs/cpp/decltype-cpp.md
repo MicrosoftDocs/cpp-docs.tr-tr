@@ -1,30 +1,20 @@
 ---
-title: decltype (C++) | Microsoft Docs
-ms.custom: ''
+title: decltype (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - decltype_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], decltype
 - decltype operator
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c6cab68cd351c64d65eeed1eeffda7bf49385aa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6c1c91aec7d974836b1ec031a1e8b38e8abb65ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527952"
 ---
 # <a name="decltype--c"></a>decltype (C++)
 

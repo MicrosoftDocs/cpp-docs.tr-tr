@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0005 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0005
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0005
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0005
 ms.assetid: 00c1821b-16aa-4bd9-9cf6-a778e5ed4ad9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1be1ac49d5d6fa3b85b327305bc4919d183b962e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b77c029b77d48d35ff1a4ea1508ed81cf31fa531
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016520"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601012"
 ---
 # <a name="project-build-error-prj0005"></a>Proje Derleme Hatası PRJ0005
 

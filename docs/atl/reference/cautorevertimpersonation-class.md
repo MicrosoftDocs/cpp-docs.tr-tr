@@ -1,10 +1,6 @@
 ---
-title: Cautorevertımpersonation sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cautorevertımpersonation sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAutoRevertImpersonation
 - ATLSECURITY/ATL::CAutoRevertImpersonation
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CAutoRevertImpersonation::Attach
 - ATLSECURITY/ATL::CAutoRevertImpersonation::Detach
 - ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAutoRevertImpersonation class
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45a14f8c742393c60a026f7c58217407715ef282
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 799ec11fd8542a8b30ef3aa95f1a20700c5c9796
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444922"
 ---
 # <a name="cautorevertimpersonation-class"></a>Cautorevertımpersonation sınıfı
 

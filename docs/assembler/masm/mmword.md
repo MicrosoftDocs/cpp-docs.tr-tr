@@ -1,27 +1,17 @@
 ---
-title: MMWORD | Microsoft Docs
-ms.custom: ''
+title: MMWORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - MMWORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - MMWORD directive
 ms.assetid: b4c5a104-9078-4fb4-afc3-d1e63abe562a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7314c6d0861195e312c7f72481d2e195e041965d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1205338f9140c74a3a6e0b4bce57983edc80862e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679240"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541130"
 ---
 # <a name="mmword"></a>MMWORD
 
@@ -46,5 +36,5 @@ Her iki yönerge 64-bit işlenenler üzerinde çalışırken `QWORD` için 64-bi
 ## <a name="example"></a>Örnek
 
 ```asm
-    movq     mm0, mmword ptr [ebx]
+    movq     mm0, mmword ptr [ebx]
 ```

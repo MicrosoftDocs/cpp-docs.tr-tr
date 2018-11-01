@@ -1,10 +1,6 @@
 ---
-title: _CrtGetReportHook | Microsoft Docs
-ms.custom: ''
+title: _CrtGetReportHook
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtGetReportHook
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - CrtGetReportHook
 - _CrtGetReportHook
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtGetReportHook function
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d78c176d5d4de54f4ae5eea84b0483b9e6bc3bec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b8b666093807c95312d4328ca9b3043ad1e09df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536766"
 ---
 # <a name="crtgetreporthook"></a>_CrtGetReportHook
 
-Çalışma zamanı hata ayıklama işlemi (yalnızca hata ayıklama sürümü) raporlaması için C içine takma için istemci tanımlı raporlama işlevi alır.
+C çalışma zamanı hata ayıklama işlemi (yalnızca hata ayıklama sürümü) raporlama için içine takma için istemci tanımlı raporlama işlevi alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,7 +45,7 @@ Geçerli istemci tanımlı raporlama işlevi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtGetReportHook** geçerli raporlama işlevi işlem raporlama C çalışma zamanı hata ayıklama kitaplığı için alınacak bir uygulama sağlar.
+**_CrtGetReportHook** raporlama sürecini C çalışma zamanı hata ayıklama kitaplığı için geçerli raporlama işlevi almak bir uygulama sağlar.
 
 Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafından tanımlanan yazma hakkında daha fazla bilgi için kanca işlevleri, bkz: [hata ayıklama kanca işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -65,7 +55,7 @@ Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafınd
 |-------------|---------------------|
 |**_CrtGetReportHook**|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -73,7 +63,7 @@ Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağına ilişkin bir örnek için **_CrtSetReportHook**, bkz: [rapor](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
+Nasıl kullanılacağını gösteren bir örnek **_CrtSetReportHook**, bkz: [rapor](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

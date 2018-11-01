@@ -1,31 +1,21 @@
 ---
-title: task_completion_event sınıfı | Microsoft Docs
-ms.custom: ''
+title: task_completion_event Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - task_completion_event
 - PPLTASKS/concurrency::task_completion_event
 - PPLTASKS/concurrency::task_completion_event::task_completion_event
 - PPLTASKS/concurrency::task_completion_event::set
 - PPLTASKS/concurrency::task_completion_event::set_exception
-dev_langs:
-- C++
 helpviewer_keywords:
 - task_completion_event class
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 867f94cd290e6b8ee5f9e50b266b0e4c9df63adf
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: ae4cce94dd7b36cebadea5f6d05890d979cce474
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498962"
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event Sınıfı
 

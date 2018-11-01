@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3183 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3183
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3183
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3183
 ms.assetid: dbd0f020-c739-43c9-947e-9ce21537331b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76822882f1b0ac2da2e18131b47d5730820f4751
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 232e9999bc31ac3e01833e7982acfb03e9d0afaf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497250"
 ---
 # <a name="compiler-error-c3183"></a>Derleyici Hatası C3183
 

@@ -1,26 +1,16 @@
 ---
-title: MAPI örnekleri | Microsoft Docs
-ms.custom: ''
+title: MAPI Örnekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MAPI, MFC
 - sample applications [MFC], MAPI
 ms.assetid: 3af3085c-8c8f-47c9-a966-b82311a20bf6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a6427ec6748ffcb32f401a4b9efe46127dd64f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 979761c23061edab8cbad110008c09b44a455720
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430689"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472104"
 ---
 # <a name="mapi-samples"></a>MAPI Örnekleri
 

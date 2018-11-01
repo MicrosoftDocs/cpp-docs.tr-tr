@@ -1,10 +1,6 @@
 ---
-title: Idataobjectımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Idataobjectımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IDataObjectImpl
 - ATLCTL/ATL::IDataObjectImpl
@@ -18,24 +14,18 @@ f1_keywords:
 - ATLCTL/ATL::IDataObjectImpl::GetDataHere
 - ATLCTL/ATL::IDataObjectImpl::QueryGetData
 - ATLCTL/ATL::IDataObjectImpl::SetData
-dev_langs:
-- C++
 helpviewer_keywords:
 - data transfer [C++]
 - data transfer [C++], Uniform Data Transfer
 - IDataObjectImpl class
 - IDataObject, ATL implementation
 ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7d36d07dd8fb1882e9458b11d947b92e6772d017
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b7ae6488357239b4936b57764b798c625253998f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068524"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485299"
 ---
 # <a name="idataobjectimpl-class"></a>Idataobjectımpl sınıfı
 

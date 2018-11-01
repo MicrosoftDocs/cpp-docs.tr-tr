@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4619 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4619
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4619
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4619
 ms.assetid: 701fea21-01aa-4bea-93d4-1cb8824170b0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5af0541451d780408af94a8953588f4764b58ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 00647e7dafe18ffad2a059b960ebed0a0f4a5d36
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039058"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580273"
 ---
 # <a name="compiler-warning-level-3-c4619"></a>Derleyici Uyarısı (Düzey 3) C4619
 

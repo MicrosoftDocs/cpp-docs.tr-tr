@@ -1,9 +1,6 @@
 ---
-title: Interfacetraits yapısı | Microsoft Docs
-ms.custom: ''
+title: InterfaceTraits Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits
@@ -13,8 +10,6 @@ f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid
 - implements/Microsoft::WRL::Details::InterfaceTraits::IidCount
 - implements/Microsoft::WRL::Details::InterfaceTraits::Verify
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::InterfaceTraits structure
 - Microsoft::WRL::Details::InterfaceTraits::CanCastTo method
@@ -24,17 +19,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::InterfaceTraits::IidCount constant
 - Microsoft::WRL::Details::InterfaceTraits::Verify method
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f140522e3697a427f66c88a2b9f6a53d40f2f8ad
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: e8222ccaca9572331412b90e696829568eedcf8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162145"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543955"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 

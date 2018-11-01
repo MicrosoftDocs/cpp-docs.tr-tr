@@ -1,10 +1,6 @@
 ---
-title: CFrameWnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFrameWnd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFrameWnd
 - AFXWIN/CFrameWnd
@@ -58,8 +54,6 @@ f1_keywords:
 - AFXWIN/CFrameWnd::OnShowMenuBar
 - AFXWIN/CFrameWnd::m_bAutoMenuEnable
 - AFXWIN/CFrameWnd::rectDefault
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFrameWnd [MFC], CFrameWnd
 - CFrameWnd [MFC], ActivateFrame
@@ -112,16 +106,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f878d1cdf450c1672298fc16ec8948c94a33056
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2294890ad18d88efaf4d5dd54cad319565a23e02
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481451"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 

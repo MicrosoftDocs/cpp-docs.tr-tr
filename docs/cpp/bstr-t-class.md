@@ -1,29 +1,19 @@
 ---
-title: _bstr_t sınıfı | Microsoft Docs
-ms.custom: ''
+title: _bstr_t Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - BSTR object
 - _bstr_t class
 - BSTR object [C++], COM encapsulation
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04244357f7e372856aea28063ab0df9db6431e0a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f394a48c0326058be705d14fb0413e23e8052ae2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028694"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524701"
 ---
 # <a name="bstrt-class"></a>_bstr_t Sınıfı
 

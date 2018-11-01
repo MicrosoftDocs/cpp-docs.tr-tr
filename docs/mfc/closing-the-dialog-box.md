@@ -1,26 +1,16 @@
 ---
-title: İletişim kutusunu kapatma | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusunu Kapatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC dialog boxes [MFC], closing
 - dialog boxes [MFC], closing
 ms.assetid: 946f5675-c482-46a4-a5dd-34fe138ffae5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9ad4b8af63b68912c232767bf1fd14070fda261
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fe57c5603f1b0e9ea0b6fb9e6ea8d80bec961f6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409057"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448119"
 ---
 # <a name="closing-the-dialog-box"></a>İletişim Kutusunu Kapatma
 

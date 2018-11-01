@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3012 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3012
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3012
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3012
 ms.assetid: cc7040b1-b3fb-4da6-a474-877914d30332
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99bdac5ffb75978479ae7ef420a48b3d1b2f8e64
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9fe0ac7d3637cad3a5571c4631345dac1a0021bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503105"
 ---
 # <a name="compiler-error-c3012"></a>Derleyici Hatası C3012
 

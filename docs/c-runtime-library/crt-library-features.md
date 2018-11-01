@@ -1,14 +1,8 @@
 ---
-title: CRT kitaplık özellikleri | Microsoft Docs
-ms.custom: ''
+title: CRT Kitaplık Özellikleri
 ms.date: 08/20/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.runtime
-dev_langs:
-- C++
 helpviewer_keywords:
 - MSVCR71.dll
 - libraries [C++], multithreaded
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - libraries [C++], run-time
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7562f6e5a8915f33b3f2c8bd23ce310e641984c6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 08d85cd6993a2f3558ddb501dacac671c0d5d797
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540276"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
