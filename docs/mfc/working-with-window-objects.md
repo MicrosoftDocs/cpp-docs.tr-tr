@@ -1,26 +1,16 @@
 ---
-title: Pencere nesneleriyle çalışma | Microsoft Docs
-ms.custom: ''
+title: Pencere Nesneleriyle Çalışma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - child windows [MFC], working with
 - window objects [MFC], working with
 ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55f3eae10954ee2da1386907f88ae8b594dc8e53
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 66656fceec2005f7e789bf1cd68ffe52651aacc7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526548"
 ---
 # <a name="working-with-window-objects"></a>Pencere Nesneleriyle Çalışma
 

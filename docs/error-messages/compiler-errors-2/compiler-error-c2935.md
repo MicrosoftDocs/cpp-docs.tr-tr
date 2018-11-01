@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2935 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2935
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2935
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2935
 ms.assetid: e11ef90d-0756-4e43-8a09-4974c6aa72a3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c37719276ccb6e541b192873429c0876256bf9b3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f44a8060910b1aeeaa4b85d1df081a559e720df8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549662"
 ---
 # <a name="compiler-error-c2935"></a>Derleyici Hatası C2935
 

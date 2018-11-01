@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3868 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3868
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3868
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3868
 ms.assetid: f0e45c2a-2149-4885-a03b-0d230069f03a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f16427bd29e9b72ef169603649535a5c94df9fcb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 15152ee2e6535010b7045fe2d1362ba0064e3fbe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529200"
 ---
 # <a name="compiler-error-c3868"></a>Derleyici Hatası C3868
 

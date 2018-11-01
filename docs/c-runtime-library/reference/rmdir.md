@@ -1,10 +1,6 @@
 ---
-title: rmdir | Microsoft Docs
-ms.custom: ''
+title: rmdir
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rmdir
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - rmdir
-dev_langs:
-- C++
 helpviewer_keywords:
 - rmdir function
 ms.assetid: 03a0aff4-f66c-42a9-bee9-84c46f994952
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c67192d2f88a0d321118ee65ff834d0f0747a3e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4646999fa577b18f03ac74d5207fb8479dc08f80
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553368"
 ---
 # <a name="rmdir"></a>rmdir
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_rmdir](rmdir-wrmdir.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_rmdir](rmdir-wrmdir.md) yerine.

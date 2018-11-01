@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2054 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2054
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2054
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2054
 ms.assetid: 878a2ced-0b88-49e5-bea5-0a014efb08b6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 026699a1ce41681fc10a7fbc37a76b86c7caef4c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 85c83455bc9455b42ded1f63e9e6d1b036fecd2c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552249"
 ---
 # <a name="ml-nonfatal-error-a2054"></a>ML Önemli Olmayan Hatası A2054
 

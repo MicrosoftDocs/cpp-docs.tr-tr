@@ -1,14 +1,8 @@
 ---
-title: BAĞLANTI giriş dosyalarını | Microsoft Docs
-ms.custom: ''
+title: LINK Giriş Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - link
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], LINK
 - module definition files
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - import libraries [C++], linker files
 - command input to linker files [C++]
 ms.assetid: bb26fcc5-509a-4620-bc3e-b6c6e603a412
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5974914e736278ebb336b6814661845740855fe6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a5aaf162a16b6989ac1abbcb6a574af1c31b543a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550559"
 ---
 # <a name="link-input-files"></a>LINK Giriş Dosyaları
 

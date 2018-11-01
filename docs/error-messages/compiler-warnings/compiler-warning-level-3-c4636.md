@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4636 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4636
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4636
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4636
 ms.assetid: 59112a0f-850f-41c6-bd84-8ae8dc84706a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cf7dd13e4df2e07df362c04763125dd7954c986b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7327189a61e2545bb6003cd95e1ddb116f9f7c94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542239"
 ---
 # <a name="compiler-warning-level-3-c4636"></a>Derleyici Uyarısı (Düzey 3) C4636
 

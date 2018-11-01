@@ -1,10 +1,6 @@
 ---
-title: norm_2 sınıfı | Microsoft Docs
-ms.custom: ''
+title: norm_2 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_2::set_x
 - amp_short_vectors/Concurrency::graphics::norm_2::set_xy
@@ -31,19 +27,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_2::operator+=
 - amp_short_vectors/Concurrency::graphics::norm_2
 - amp_short_vectors/Concurrency::graphics::norm_2::operator--
-dev_langs:
-- C++
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 352e614b2b99f21b3eba0c03b59dcebb992abd90
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ebf1a80a695f1d25652f239f66d8d40c0e1099ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431159"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542226"
 ---
 # <a name="norm2-class"></a>norm_2 Sınıfı
 

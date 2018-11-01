@@ -1,10 +1,6 @@
 ---
-title: CComApartment sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComApartment sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComApartment
 - ATLBASE/ATL::CComApartment
@@ -16,22 +12,16 @@ f1_keywords:
 - ATLBASE/ATL::CComApartment::m_dwThreadID
 - ATLBASE/ATL::CComApartment::m_hThread
 - ATLBASE/ATL::CComApartment::m_nLockCnt
-dev_langs:
-- C++
 helpviewer_keywords:
 - apartments in ATL EXE modules
 - CComApartment class
 ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39750bcb6b8852e692e52f163e83bb815ecebe97
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 97b2f2f18687805f20999e9513977538390b0e37
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755443"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543799"
 ---
 # <a name="ccomapartment-class"></a>CComApartment sınıfı
 

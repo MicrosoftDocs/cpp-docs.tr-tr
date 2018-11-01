@@ -1,29 +1,19 @@
 ---
-title: '&lt;özel durum&gt; (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;özel durum&gt; (Visual C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - exception
 - <exception>
-dev_langs:
-- C++
 helpviewer_keywords:
 - <exception> C++ XML tag
 - exception C++ XML tag
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb7b5f4e153ca892cf10f8c5cbe6fe1bebbd20f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b54a406fe0c0734a9df82f1fd4e92110198cbe98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419977"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529771"
 ---
 # <a name="ltexceptiongt-visual-c"></a>&lt;özel durum&gt; (Visual C++)
 

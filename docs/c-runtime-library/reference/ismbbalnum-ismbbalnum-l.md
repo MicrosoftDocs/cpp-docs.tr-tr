@@ -1,10 +1,6 @@
 ---
-title: _ismbbalnum, _ismbbalnum_l | Microsoft Docs
-ms.custom: ''
+title: _ismbbalnum, _ismbbalnum_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbalnum
 - _ismbbalnum_l
@@ -26,28 +22,22 @@ f1_keywords:
 - ismbbalnum
 - _ismbbalnum_l
 - ismbbalnum_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbbalnum_l function
 - ismbbalnum function
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ace530d1190de5df5eaac92d412b86f2b2cc3d4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5b5f54754907c09a34b0f4c3bae3e5c27336ca36
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398714"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554849"
 ---
 # <a name="ismbbalnum-ismbbalnuml"></a>_ismbbalnum, _ismbbalnum_l
 
-Belirtilen birden çok baytlı karakter alfasayısal veya sayısal olup olmadığını belirler.
+Belirtilen bir çok baytlı karakterin alfa veya sayısal olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,20 +53,20 @@ int _ismbbalnum_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbalnum** sıfır olmayan bir değer döndürür ifade:
+**_ismbbalnum** sıfır olmayan bir değer döndürür ifadesi:
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-için sıfır olmayan bir değer olan *c*, veya değilse 0.
+için sıfır dışında *c*, değilse 0.
 
-Bu işlev ile sürümü **_l** sonekidir aynı yerel ayara bağımlı davranışı için geçerli yerel yerine geçirilen yerel ayar kullanır.
+Bu işlevle sürümünü **_l** soneki, yerel ayara bağlı davranışı için geçerli yerel ayarı yerine iletilen yerel ayarı kullanması hariç, aynıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,7 +75,7 @@ Bu işlev ile sürümü **_l** sonekidir aynı yerel ayara bağımlı davranış
 |**_ismbbalnum**|\<Mbctype.h >|
 |**_ismbbalnum_l**|\<Mbctype.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

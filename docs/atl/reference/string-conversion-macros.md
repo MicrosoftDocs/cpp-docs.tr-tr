@@ -1,10 +1,6 @@
 ---
-title: Dize dönüşüm makroları | Microsoft Docs
-ms.custom: ''
+title: Dize dönüşüm makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlconv/ATL::DEVMODEA2W
 - atlconv/ATL::TEXTMETRICA2W
@@ -14,19 +10,13 @@ f1_keywords:
 - atlconv/ATL::TEXTMETRICT2OLE
 - atlconv/ATL::DEVMODEW2A
 - atlconv/ATL::TEXTMETRICW2A
-dev_langs:
-- C++
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa44449c65dbdfdea93004fa2fe1adffdeba033d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1cad89fe065c0827169a22cc9699b677323d8594
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544530"
 ---
 # <a name="string-conversion-macros"></a>Dize dönüşüm makroları
 
