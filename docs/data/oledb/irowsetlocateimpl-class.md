@@ -1,10 +1,6 @@
 ---
-title: IRowsetLocateImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetLocateImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IRowsetLocateImpl
 - ATL.IRowsetLocateImpl.Compare
@@ -26,8 +22,6 @@ f1_keywords:
 - ATL.IRowsetLocateImpl.m_rgBookmarks
 - ATL::IRowsetLocateImpl::m_rgBookmarks
 - IRowsetLocateImpl.m_rgBookmarks
-dev_langs:
-- C++
 helpviewer_keywords:
 - providers, bookmarks
 - IRowsetLocateImpl class
@@ -38,17 +32,12 @@ helpviewer_keywords:
 - Hash method
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 35ebe1a4534fa1c3a738d84e3e6dd7037254fd49
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c4f3ba26fd2b4d6c33b6ba63e501c4011c32a09a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059408"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552171"
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl Sınıfı
 

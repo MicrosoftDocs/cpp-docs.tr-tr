@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1095 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1095
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1095
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1095
 ms.assetid: a392582b-06db-4568-9c13-450293a4fbda
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 964ec1d029e56a5d9d78659ad919c71a4e44506d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0ff71a229defe7a12886c1154a69bcf0432b8cca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548778"
 ---
 # <a name="nmake-fatal-error-u1095"></a>NMAKE Önemli Hatası U1095
 

@@ -1,26 +1,18 @@
 ---
-title: Platform::TypeCode numaralandırması | Microsoft Docs
-ms.custom: ''
+title: Platform::TypeCode numaralandırması
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::TypeCode
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::TypeCode Enumeration
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb19a922655a77a2f7a2b5806c9b721f17e028f8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ac3e0fda473cf50c8adc10e603d9b6c3beee05be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104179"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546698"
 ---
 # <a name="platformtypecode-enumeration"></a>Platform::TypeCode numaralandırması
 

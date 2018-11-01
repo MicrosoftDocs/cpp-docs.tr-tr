@@ -1,12 +1,6 @@
 ---
-title: Başvuru türü işlev bağımsız değişkenleri | Microsoft Docs
-ms.custom: ''
+title: Başvuru Türü İşlev Bağımsız Değişkenleri
 ms.date: 08/27/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - arguments [C++], function
 - functions [C++], paramters
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 042f609988a87beb8a990405e0426405bc874128
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cc5a65e9a6bd74e79856057cf7e7fea220c62d4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536216"
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 

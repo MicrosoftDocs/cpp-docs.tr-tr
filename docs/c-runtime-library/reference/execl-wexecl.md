@@ -1,10 +1,6 @@
 ---
-title: _execl, _wexecl | Microsoft Docs
-ms.custom: ''
+title: _execl, _wexecl
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _execl
 - _wexecl
@@ -25,31 +21,25 @@ f1_keywords:
 - _execl
 - _wexecl
 - wexecl
-dev_langs:
-- C++
 helpviewer_keywords:
 - _execl function
 - wexecl function
 - _wexecl function
 - execl function
 ms.assetid: 81fefb8a-0a06-4221-b2bc-be18e38e89f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32ec50c83a29f3c517955979c2df0de5203dc9a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3d736849f90782425e6e1c1cff04536972318c91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530318"
 ---
 # <a name="execl-wexecl"></a>_execl, _wexecl
 
 Yükler ve yeni alt işlemleri yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,43 +61,43 @@ intptr_t _wexecl(
 ### <a name="parameters"></a>Parametreler
 
 *■ CmdName*<br/>
-Yürütülecek dosyasının yolu.
+Yürütülecek dosyanın yolu.
 
 *arg0*,... *argn*<br/>
-Parametreleri işaretçiler listesi.
+Parametreler için işaretçiler listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bu işlevler için arama işlemi döndürmeyin. Dönüş değeri-1, bu durumda bir hata gösterir **errno** genel değişkeni ayarlanır.
+Başarılı olursa, bu işlevler çağırma işlemine geri gitmez. -1 değeri, bu durumda bir hata belirtir **errno** global değişkeni ayarlanır.
 
 |errno değeri|Açıklama|
 |-----------------|-----------------|
-|**E2BIG**|Ortam ayarları ve bağımsız değişkenler için gereken alanı 32 KB'yi aşıyor.|
-|**EACCES**|Belirtilen dosya kilitleme veya paylaşım ihlali var.|
-|**EINVAL**|Geçersiz parametre (bir veya daha fazla parametre olduğu bir null işaretçinin veya boş dize).|
-|**EMFILE**|Çok fazla dosya açık (belirtilen dosya yürütülebilir olup olmadığını belirlemek için açık olması gerekir).|
+|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB aşıyor.|
+|**SPAWN**|Belirtilen dosya kilitleme veya paylaşma ihlali var.|
+|**EINVAL**|Geçersiz parametre (bir veya daha fazla parametre bir null işaretçi veya boş dizeydi).|
+|**EMFILE**|Çok fazla dosya açık (belirtilen dosyanın yürütülebilir olup olmadığını belirlemek için açılması gerekir).|
 |**ENOENT**|Dosya veya yol bulunamadı.|
-|**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya yürütülebilir dosya biçimi geçersiz.|
-|**ENOMEM**|Yeni işlemi yürütmek yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; veya arama işlemi düzgün ayrılmamış olduğunu belirten bir geçersiz blok yok.|
+|**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
+|**ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok; kullanılabilir bellek bozulmuş; veya, çağırma işlemi düzgün ayrılmamış olduğunu belirten geçersiz bir engel var.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri yükler ve ayrı bir parametre olarak her komut satırı bağımsız değişken geçirme, yeni bir işlem yürütür. İlk bağımsız değişken, komut veya yürütülebilir dosya adı ve ikinci bağımsız değişkeni, ilk olarak aynı olmalıdır. Bu duruma `argv[0]` yürütülen işleminde. Üçüncü bağımsız değişkeni ilk bağımsız değişkeni olan `argv[1]`, yürütülmekte olan işlemin.
+Bu işlevlerin her biri, yükler ve her komut satırı bağımsız değişkenini ayrı bir parametre geçirerek yeni bir işlem yürütür. İlk bağımsız değişken komut veya yürütülebilir dosya adıdır ve ikinci bağımsız değişken Birincisi ile aynı olmalıdır. Bu duruma `argv[0]` yürütülen işlemde. Üçüncü bağımsız değişkeni olmayan ilk bağımsız değişken `argv[1]`, yürütülmekte olan işlemin.
 
-**_Execl** işlevleri parametrelerini doğrulayın. Her iki *■ cmdname* veya *arg0* bir null işaretçinin ya da boş dize açıklandığı gibi bu işlevleri geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) , yürütme devam etmek için bu işlevler izin **errno** için **EINVAL** ve -1 döndürür. Yeni bir işlem yürütülür.
+**_Execl** işlevleri kendi parametrelerini doğrular. Ya da *■ cmdname* veya *arg0* bir null işaretçi veya boş bir dize içinde açıklanan şekilde bu işlevler geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md) , yürütme devam etmek için bu işlevler izin **errno** için **EINVAL** ve -1 döndürür. Yeni bir işlem yürütülmedi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
+|İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
 |**_execl**|\<Process.h >|\<errno.h >|
 |**_wexecl**|\<Process.h > veya \<wchar.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md).
+Örnekte bakın [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

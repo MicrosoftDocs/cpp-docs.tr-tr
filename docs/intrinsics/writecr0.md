@@ -1,27 +1,17 @@
 ---
-title: __writecr0 | Microsoft Docs
-ms.custom: ''
+title: __writecr0
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _writecr0
-dev_langs:
-- C++
 helpviewer_keywords:
 - _writecr0 intrinsic
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5542dc1c4aeff873f14d8ab9498025c8852dfbd9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8e36aa1c1e7299c1de5cba26acb8a4ae8165ad6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547153"
 ---
 # <a name="writecr0"></a>__writecr0
 
@@ -32,8 +22,8 @@ Değeri Yazar `Data` CR0 kaydının kaydı.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void writecr0( 
-   unsigned __int64 Data 
+void writecr0( 
+   unsigned __int64 Data 
 );
 ```
 

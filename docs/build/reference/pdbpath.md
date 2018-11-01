@@ -1,14 +1,8 @@
 ---
-title: -PDBPATH | Microsoft Docs
-ms.custom: ''
+title: /PDBPATH
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /pdbpath
-dev_langs:
-- C++
 helpviewer_keywords:
 - .pdb files, path
 - -PDBPATH dumpbin option
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - PDBPATH dumpbin option
 - PDB files, path
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c9d93ef38ba444fd716bd3363a6605eae66dfec
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d77ab2eb056326ba372a60cc79688d26b252ac44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527224"
 ---
 # <a name="pdbpath"></a>/PDBPATH
 

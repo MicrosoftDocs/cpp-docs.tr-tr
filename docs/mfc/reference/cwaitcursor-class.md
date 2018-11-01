@@ -1,31 +1,21 @@
 ---
-title: CWaitCursor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWaitCursor sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CWaitCursor
 - AFXWIN/CWaitCursor
 - AFXWIN/CWaitCursor::CWaitCursor
 - AFXWIN/CWaitCursor::Restore
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4867b98a9778c818ab19d5325782b24e29282fca
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 10daa8c5af84b17d70cc18c9407686d4698e98a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077991"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533633"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor sınıfı
 

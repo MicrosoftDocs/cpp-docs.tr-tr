@@ -1,25 +1,15 @@
 ---
-title: Bildirim kancaları | Microsoft Docs
-ms.custom: ''
+title: Bildirim Kancaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - delayed loading of DLLs, notification hooks
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97e471e2de1ecb6ec6664658a2f1c5df09bc8079
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9205791995bc113e4f560ab6085fc3acf47c8182
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700628"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549839"
 ---
 # <a name="notification-hooks"></a>Bildirim Kancaları
 

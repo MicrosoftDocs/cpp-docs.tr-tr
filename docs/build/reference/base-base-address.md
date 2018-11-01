@@ -1,15 +1,9 @@
 ---
-title: -BASE (Temel adres) | Microsoft Docs
-ms.custom: ''
+title: /BASE (Temel Adres)
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /base
 - VC.Project.VCLinkerTool.BaseAddress
-dev_langs:
-- C++
 helpviewer_keywords:
 - base addresses [C++]
 - programs [C++], preventing relocation
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28e4e2ea0118d79e2746db93ba30478ed2563434
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 00bac7b15263d976fa840e22406f4be4c7836962
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551716"
 ---
 # <a name="base-base-address"></a>/BASE (Temel Adres)
 
@@ -56,7 +46,7 @@ Bağlayıcı hata durumunda sorunları *adresi* 64 k katı değil. İsteğe bağ
 
 Komut satırında temel adresini belirtmek için başka bir temel adres bir yanıt dosyası kullanarak yoludur. Temel adres bir yanıt dosyası temel adresler ve isteğe bağlı boyutları programınızı kullanacağınız tüm DLL'ler ve her bir temel adres için benzersiz bir metin anahtarı içeren bir metin dosyasıdır. Temel adres bir yanıt dosyası kullanarak belirtmek için kullanın bir at işareti (**\@**) yanıt dosya adından önce gelen *filename*, bir virgül tarafından izlenen sonra *anahtarı*dosyasında kullanılacak temel adres için değer. Bağlayıcı arar *filename* ya da belirtilen yolda veya hiçbir yol belirtilmezse LIB ortam değişkeninde belirtilen dizinlerde. Her satırda *filename* bir DLL temsil eder ve sözdizimi aşağıdaki gibidir:
 
-> *anahtar* *adresi* [*boyutu*] **;** *açıklaması*
+> *anahtar* *adresi* [*boyutu*] **;** *açıklaması*
 
 *Anahtar* alfasayısal karakterden oluşan bir dizedir ve büyük/küçük harfe duyarlı değildir. Bu genellikle bir DLL'nin adıdır, ancak olmaması. *Anahtarı* temel tarafından izlenen *adresi* C dili, onaltılık veya ondalık gösterim ve isteğe bağlı bir maksimum *boyutu*. Tüm üç bağımsız değişken, boşluk veya sekme tarafından ayrılır. Bağlayıcı, yalnızca bir uyarı verir belirtilen *boyutu* program tarafından gereken sanal adres alanı'dan küçük. A *yorum* noktalı virgül belirtilirse (**;**) ve aynı ya da ayrı bir satır üzerinde olabilir. Bağlayıcı satırın sonuna noktalı virgülden tüm metni yok sayar. Bu örnekte, böyle bir dosya parçası gösterilmiştir:
 
@@ -84,7 +74,7 @@ Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız d
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

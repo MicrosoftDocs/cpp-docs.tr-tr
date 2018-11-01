@@ -1,27 +1,17 @@
 ---
-title: Çıkarsama kurallarında öncelik | Microsoft Docs
-ms.custom: ''
+title: Çıkarsama Kurallarında Öncelik
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inference rules in NMAKE
 - rules, inference
 - precedence, inference rule
 ms.assetid: 69e3dc02-0815-4c3a-b02b-1cb85fceaf24
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4f2e7ff55e935b7e425b552ba85f47f134c6b80
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 30dee54c99115c076f7662bafb8aa22d97f234fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548739"
 ---
 # <a name="precedence-in-inference-rules"></a>Çıkarsama Kurallarında Öncelik
 

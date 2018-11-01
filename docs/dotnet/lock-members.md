@@ -1,24 +1,14 @@
 ---
-title: lock üyeleri | Microsoft Docs
-ms.custom: ''
+title: lock üyeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 33413b81-3ae8-4544-99c8-27a7364e7e05
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 7fbaaffbb88704ff5adc629c8f2b6111bbf3793a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 12bc988b396653c3ba38040868a2c52f5d3f44e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421355"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535703"
 ---
 # <a name="lock-members"></a>lock üyeleri
 

@@ -1,28 +1,17 @@
 ---
-title: last_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: last_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.last_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - last_is attribute
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 45b55886512c411cf82fe30c94b8d5087a811ad7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ce19d8d727a359054289200b2cdcb6a6427dc706
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053636"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545723"
 ---
 # <a name="lastis"></a>last_is
 

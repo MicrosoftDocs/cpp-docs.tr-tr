@@ -1,27 +1,17 @@
 ---
-title: Yapı (C++) | Microsoft Docs
-ms.custom: ''
+title: struct (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - struct_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5193052c9510912823bd0cc6951b36bf6d13b437
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4fb08d02f3d939e6757c41519a2afabc8caa862c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058087"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551300"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -31,8 +21,8 @@ ms.locfileid: "46058087"
 
 ```
 [template-spec] struct[ms-decl-spec] [tag [: base-list ]]
-{ 
-   member-list 
+{ 
+   member-list 
 } [declarators];
 [struct] tag declarators;
 ```

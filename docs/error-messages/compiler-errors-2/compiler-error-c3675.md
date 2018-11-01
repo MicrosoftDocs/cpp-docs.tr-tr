@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3675 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3675
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3675
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3675
 ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4b6656753ab4a611dcb80d1473e0b44bf47a270
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c154a0fe1989c92bb5e07c0710d3846883d1a113
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546333"
 ---
 # <a name="compiler-error-c3675"></a>Derleyici Hatası C3675
 

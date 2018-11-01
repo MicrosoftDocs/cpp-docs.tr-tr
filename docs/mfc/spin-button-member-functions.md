@@ -1,26 +1,16 @@
 ---
-title: Döndür düğmesi üye işlevleri | Microsoft Docs
-ms.custom: ''
+title: Döndür Düğmesi Üye İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - spin button control, methods
 - CSpinButtonCtrl class [MFC], methods
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 88f00aedcf269996277c154f9dd051534a9c5e49
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffd07377d54fcfff93ab4ab3771515a90ccf2785
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542603"
 ---
 # <a name="spin-button-member-functions"></a>Döndür Düğmesi Üye İşlevleri
 

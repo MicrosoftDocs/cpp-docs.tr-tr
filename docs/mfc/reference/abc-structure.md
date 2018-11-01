@@ -1,27 +1,17 @@
 ---
-title: ABC yapısı | Microsoft Docs
-ms.custom: ''
+title: ABC Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ABC
-dev_langs:
-- C++
 helpviewer_keywords:
 - ABC structure [MFC]
 ms.assetid: 32663839-c3b7-4f47-896c-b15329c96bc8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4f0367e19589093b31fcd64d5312e7b47e8a043
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f899a84ddbe5ca3ec3abd4dff135a585aa61eaa9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549571"
 ---
 # <a name="abc-structure"></a>ABC Yapısı
 

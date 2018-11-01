@@ -1,12 +1,6 @@
 ---
-title: Üstbilgi denetimi ve liste denetimi | Microsoft Docs
-ms.custom: ''
+title: Üstbilgi Denetimi ve Liste Denetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl class [MFC], with CHeaderCtrl
 - CListCtrl class [MFC], header controls
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - header controls [MFC]
 - header controls [MFC], list controls used with
 ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24d40ea26a6ff52490b4a501a8b62c0aace660b1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e1c5f338ea8626969d426af3ae2b51e8bdc62fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526834"
 ---
 # <a name="header-control-and-list-control"></a>Üstbilgi Denetimi ve Liste Denetimi
 

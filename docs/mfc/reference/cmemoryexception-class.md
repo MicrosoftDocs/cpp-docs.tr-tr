@@ -1,29 +1,19 @@
 ---
-title: CMemoryException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMemoryException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMemoryException
 - AFX/CMemoryException
 - AFX/CMemoryException::CMemoryException
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df664db673ee3989d689b8cf28b87cfff32a8dc7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e4a399ffb4c0d2161479ed7c84e66eb58a9260ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552847"
 ---
 # <a name="cmemoryexception-class"></a>CMemoryException sınıfı
 

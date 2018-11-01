@@ -1,10 +1,6 @@
 ---
-title: Günlük, logf, logl, log10, log10f, log10l | Microsoft Docs
-ms.custom: ''
+title: Günlük, logf, logl, log10, log10f, log10l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - log10f
 - logf
@@ -34,8 +30,6 @@ f1_keywords:
 - log10f
 - log10l
 - log10
-dev_langs:
-- C++
 helpviewer_keywords:
 - calculating logarithms
 - log10f function
@@ -46,20 +40,16 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12f475cde27d4660f4b4936f3f7717a665b70e86
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8e3f73e61fefa7a39a6d53d63739b094d78c499
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543305"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>Günlük, logf, logl, log10, log10f, log10l
 
-Logaritma hesaplar.
+Logaritmaları hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,23 +72,23 @@ long double log10( long double x );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Logaritmasını bulunacak değerdir.
+Bulunacak logaritmasını olan değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Günlük** işlevler doğal logaritmasını döndürür (temel *e*), *x* başarılı olursa. **Log10** işlevler 10 tabanında logaritmasını döndürür. Varsa *x* olan negatif, bu işlevler bir belirsiz (ul), varsayılan olarak döndürür. Varsa *x* 0 olduğundan, bunlar sonsuz (INF) döndürür.
+**Günlük** işlevler doğal logaritmasını döndürür (temel *e*), *x* başarılı olursa. **Log10** işlevler 10 tabanında logaritmasını döndürür. Varsa *x* olan negatif, bu işlevler bir belirsiz (Ara), varsayılan olarak döndürür. Varsa *x* 0 ise, bunlar sonsuz (INF) döndürür.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, UL|yok|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
 |± 0|ZERODIVIDE|_SING|
 |*x* < 0|GEÇERSİZ|_DOMAIN|
 
-**Günlük** ve **log10** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamasına sahipseniz. Bkz: [_set_SSE2_enable](set-sse2-enable.md) ilgili bilgileri ve SSE2 uygulama kullanılmasındaki kısıtlamalar.
+**Günlük** ve **log10** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamasına sahipseniz. Bkz: [_set_SSE2_enable](set-sse2-enable.md) bilgi ve SSE2 uygulama kullanılmasındaki kısıtlamalar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ verir aşırı yüklemesi, aşırı çağırması **günlük** ve **log10** alın ve dönüş **float** veya **uzun çift** değerleri. Bir C programı **günlük** ve **log10** her zaman alın ve dönüş bir **çift**.
+C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **günlük** ve **log10** alan ve getiren **float** veya **uzun çift** değerleri. C programında **günlük** ve **log10** her zaman alan ve getiren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -106,7 +96,7 @@ C++ verir aşırı yüklemesi, aşırı çağırması **günlük** ve **log10** 
 |-------------|---------------------|
 |**Günlük**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<Math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -137,7 +127,7 @@ log( 9000.00 ) = 9.104980
 log10( 9000.00 ) = 3.954243
 ```
 
-Logaritma diğer temelleri için oluşturmak için matematiksel ilişkisi kullanın: temel b oturum bir (a) doğal günlük == / doğal (b) oturum açın.
+Matematik ilişki için diğer tabanlara logaritmaları oluşturmak için kullanın: temel b oturum bir doğal logaritmayı (a) == / doğal (b) oturum açın.
 
 ```cpp
 // logbase.cpp

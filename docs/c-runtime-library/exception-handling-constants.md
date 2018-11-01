@@ -1,17 +1,11 @@
 ---
-title: Özel durum işleme sabitleri | Microsoft Docs
-ms.custom: ''
+title: Özel Durum İşleme Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - EXCEPTION_CONTINUE_SEARCH
 - c.constants
 - EXCEPTION_CONTINUE_EXECUTION
 - EXCEPTION_EXECUTE_HANDLER
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception handling, constants
 - EXCEPTION_CONTINUE_SEARCH constant
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION constant
 - EH constants
 ms.assetid: e1870f41-be9e-46a3-a2ea-830dfbaa18fb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6cc17e429c0750b9f0cc8d9eb24bc94adf00484e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b2d366930539ffc6ceafe3c8114c85b2994e096c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070606"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543110"
 ---
 # <a name="exception-handling-constants"></a>Özel Durum İşleme Sabitleri
 

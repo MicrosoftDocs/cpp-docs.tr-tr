@@ -1,28 +1,18 @@
 ---
-title: -LN (MSIL modülü Oluştur) | Microsoft Docs
-ms.custom: ''
+title: /LN (MSIL Modülü Oluştur)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /LN
-dev_langs:
-- C++
 helpviewer_keywords:
 - -LN compiler option [C++]
 - /LN compiler option [C++]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74c9ad6d8af797edb25a994f16334d40a3cbf910
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d8253dacbfa57f84a3eee05ffa0f8f9879f6b009
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710859"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536935"
 ---
 # <a name="ln-create-msil-module"></a>/LN (MSIL Modülü Oluştur)
 

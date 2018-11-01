@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3172 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3172
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3172
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3172
 ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 25c3b1fd9132c6b170fdf74b1619a35d83959f90
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5c9c1561b63c740b9f7f5d85b2bf3e04de2542c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514952"
 ---
 # <a name="compiler-error-c3172"></a>Derleyici Hatası C3172
 

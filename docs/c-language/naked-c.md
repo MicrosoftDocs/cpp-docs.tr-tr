@@ -1,28 +1,18 @@
 ---
-title: Naked (C) | Microsoft Docs
-ms.custom: ''
+title: Naked (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - naked keyword [C], storage-class attribute
 - naked keyword [C]
 - prolog code
 - epilog code
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd6665bafb0041989e99a3a766204555f969d16c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c79502d1793df2a3340eed26c67cca5d2a8b0d9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062156"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537247"
 ---
 # <a name="naked-c"></a>Naked (C)
 
