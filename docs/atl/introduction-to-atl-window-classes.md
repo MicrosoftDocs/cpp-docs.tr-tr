@@ -1,25 +1,15 @@
 ---
-title: ATL pencere sınıflarına giriş | Microsoft Docs
-ms.custom: ''
+title: ATL pencere sınıflarına giriş
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - window classes
 ms.assetid: 503efc2c-a269-495d-97cf-3fb300d52f3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dbd433eb024e7715c065a005ce06d38a086a5072
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 987e2eab5fe4eec32d88b7c1528f1e3189fc925a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459806"
 ---
 # <a name="introduction-to-atl-window-classes"></a>ATL pencere sınıflarına giriş
 

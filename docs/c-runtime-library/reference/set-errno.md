@@ -1,10 +1,6 @@
 ---
-title: _set_errno | Microsoft Docs
-ms.custom: ''
+title: _set_errno
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_errno
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - set_errno
 - _set_errno
-dev_langs:
-- C++
 helpviewer_keywords:
 - errno global variable
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87c51aa82485b259a1911793d7aececf7534b144
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 42a60875d4ab701c05b8bc12f8d4afb77852e3a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452161"
 ---
 # <a name="seterrno"></a>_set_errno
 
@@ -48,13 +38,13 @@ Değerini **errno** genel değişkeni.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _set_errno( int error_value );
+errno_t _set_errno( int error_value );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *error_value*<br/>
-Yeni değeri **errno**.
+Öğesinin yeni değeri **errno**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -62,7 +52,7 @@ Başarılıysa sıfır döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Olası değerler Errno.h içinde tanımlanır. Ayrıca bkz [errno sabitleri](../../c-runtime-library/errno-constants.md).
+Olası değerleri Errno.h içinde tanımlanır. Ayrıca bkz [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
 ## <a name="example"></a>Örnek
 
@@ -84,11 +74,11 @@ Oops: Illegal byte sequence
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_set_errno**|\<stdlib.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l | Microsoft Docs
-ms.custom: ''
+title: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __swprintf_l
 - sprintf
@@ -33,8 +29,6 @@ f1_keywords:
 - sprintf
 - _stprintf
 - stprintf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _swprintf_l function
 - _stprintf function
@@ -51,20 +45,16 @@ helpviewer_keywords:
 - sprintf_l function
 - formatted text [C++]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02538d8c74de4f48cb4a3d6285e10c3c4e03c322
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d24ea0c83d934afe81368a9fe734c2a39d08c3d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415942"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451508"
 ---
 # <a name="sprintf-sprintfl-swprintf-swprintfl-swprintfl"></a>sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
-Biçimlendirilmiş verileri dizeye yazma. Bu işlevlerin bazıları daha güvenli sürümleri kullanılabilir; bkz: [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). Güvenli sürümlerini **swprintf** ve **_swprintf_l** yararlanabilir mi bir *sayısı* parametresi.
+Biçimlendirilmiş verileri bir dizeye yaz. Bu işlevlerden bazılarının daha güvenli sürümleri mevcuttur; bkz: [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). Güvenli sürümleri **swprintf** ve **_swprintf_l** almaz bir *sayısı* parametresi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -121,10 +111,10 @@ int _sprintf_l(
 Çıktı için depolama konumu
 
 *Sayısı*<br/>
-Bu işlev Unicode sürümünü depolamak için karakter sayısı.
+Bu işlevin Unicode sürümünde saklanacak karakter sayısı.
 
-*Biçimi*<br/>
-Denetim Biçimlendir dize
+*Biçim*<br/>
+Biçim Denetimi dizesi
 
 *Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler
@@ -132,26 +122,26 @@ Denetim Biçimlendir dize
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan karakter sayısını veya bir hata oluştuysa -1. Varsa *arabellek* veya *biçimi* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Yazılan karakter sayısını veya bir hata oluştu, -1. Varsa *arabellek* veya *biçimi* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
-**sprintf** depolanan bayt sayısını verir *arabellek*, sonlandırma null karakteri sayım değil. **swprintf** depolanan geniş karakter sayısını verir *arabellek*, sonlandırma null geniş karakter sayım değil.
+**sprintf** içinde depolanan bayt sayısını döndüren *arabellek*, sondaki null karakter sayılmaz. **swprintf** içinde depolanan geniş karakterlerin sayısını döndürür *arabellek*, sonlandırıcı geniş null karakter sayılmaz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sprintf** işlevi biçimlendirir ve bir dizi karakter ve değerleri depolar *arabellek*. Her *bağımsız değişkeni* (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev *biçimi* bağımsız değişkeni için [printf](printf-printf-l-wprintf-wprintf-l.md). Bir null karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**Sprintf** işlevi biçimlendirir ve bir dizi karakter ve değerlerini depolar *arabellek*. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. Biçim sıradan karakterlerden oluşur ve aynı forma ve işleve sahiptir *biçimi* için bağımsız değişken [printf](printf-printf-l-wprintf-wprintf-l.md). Bir null karakter son karakter yazıldıktan sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
 > [!IMPORTANT]
-> Kullanarak **sprintf**, yazılan karakterleri kullanarak kod anlamına sayısını sınırlamak için bir yolu yoktur **sprintf** arabellek taşmaları açıktır. İlgili işlevi kullanmayı [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), en fazla yazılması için karakter sayısını belirtir *arabellek*, veya [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) belirlemek için ne kadar büyük bir Arabellek gereklidir. Ayrıca, emin *biçimi* kullanıcı tanımlı bir dize değil.
+> Kullanarak **sprintf**, yazılan karakter kullanarak kod anlamına sayısını sınırlamak için bir yolu yoktur **sprintf** arabellek taşmasına saldırılara açıktır. Related işlevine kullanmayı [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), en fazla bir yazılacak karakter sayısını belirtir *arabellek*, veya [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) belirlemek için ne kadar büyük bir Arabellek gereklidir. Ayrıca, emin *biçimi* kullanıcı tanımlı bir dize değil.
 
-**swprintf** bir joker karakter sürümü **sprintf**; işaretçi bağımsız değişkenleri **swprintf** joker karakter dizelerdir. Kodlama hataları algılama **swprintf** , farklı olabilir **sprintf**. **swprintf** ve **fwprintf** durumlar dışında aynı şekilde davranır **swprintf** bir dize yerine bir hedef türü çıktısı Yazar **dosya**ve **swprintf** gerektirir *sayısı* parametresi yazılacak karakter sayısını belirtin. Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+**swprintf** geniş karakterli sürümüdür **sprintf**; işaretçi bağımsız değişkenler **swprintf** geniş karakterli dizelerdir. İçinde kodlama hatalarının algılanması **swprintf** farklı **sprintf**. **swprintf** ve **fwprintf** aynı şekilde davranır **swprintf** türünde bir hedef yerine bir dizeye çıktı Yazar **dosya**ve **swprintf** gerektirir *sayısı* parametresi en fazla yazılacak karakter sayısını belirtin. Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
-**swprintf** ISO C ikinci parametre gerektiren standart, uyumlu *sayısı*, türü **size_t**. Eski standart olmayan davranış zorlamak için tanımlamak **_CRT_NON_CONFORMING_SWPRINTFS**. Kod yeni uyumluluğunu davranışı kullanmak için değiştirilmesi gereken şekilde sonraki bir sürümde eski davranışı, kaldırılmış olabilir.
+**swprintf** ISO C ikinci parametresini gerektiren standardı'na uygundur *sayısı*, türü **size_t**. Eski standart dışı davranışı zorlamak için tanımladığınız **_CRT_NON_CONFORMING_SWPRINTFS**. Yeni ve uyumlu davranışın kullanılabilmesi için kod değiştirilmelidir. Bu nedenle gelecekte yayımlanacak bir sürümde eski davranış, kaldırılabilir.
 
-C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -167,7 +157,7 @@ C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon a�
 |**sprintf**, **_sprintf_l**|\<stdio.h >|
 |**swprintf**, **_swprintf_l**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -232,7 +222,7 @@ wrote -1 characters
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

@@ -1,20 +1,13 @@
 ---
-title: Tür sistemi (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Tür sistemi (C + +/ CX)
 ms.date: 02/03/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e7b9f17007c1614761f1b7872d8d421f0f5e18df
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9c8e09dded3743d5928fd1a4db797c6e647ec465
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445995"
 ---
 # <a name="type-system-ccx"></a>Tür sistemi (C + +/ CX)
 
