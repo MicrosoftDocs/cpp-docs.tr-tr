@@ -1,12 +1,6 @@
 ---
-title: İfadeler ve Atamalar | Microsoft Docs
-ms.custom: ''
+title: İfadeler ve Atamalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - assignment statements, values in expressions
 - expressions [C]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - assigning values in C
 - Visual C, assignments
 ms.assetid: 9c72919f-0768-4b47-85ca-afdfec6847f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8a9cfa63b4d076a5ffc25389192032990dcf95c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1b76b1efd5e91d8a1c0cb5885131b0b287f9d2df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527458"
 ---
 # <a name="expressions-and-assignments"></a>İfadeler ve Atamalar
 

@@ -1,31 +1,21 @@
 ---
-title: auto_handle::get | Microsoft Docs
-ms.custom: ''
+title: auto_handle::get
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_handle::get
 - msclr::auto_handle::get
 - auto_handle.get
 - msclr.auto_handle.get
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::get
 ms.assetid: 8c75727b-8f21-44b3-be3e-7eb8858da4f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 0a6023a012b27082b04a835e20867fa3cb2fbcb1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f5c5d7646cfae20c66e109c7aca9f2cb8d5ff8cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528940"
 ---
 # <a name="autohandleget"></a>auto_handle::get
 

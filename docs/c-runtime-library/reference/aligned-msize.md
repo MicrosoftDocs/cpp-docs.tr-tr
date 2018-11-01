@@ -1,10 +1,6 @@
 ---
-title: _aligned_msize | Microsoft Docs
-ms.custom: ''
+title: _aligned_msize
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _aligned_msize
 apilocation:
@@ -23,26 +19,20 @@ apitype: DLLExport
 f1_keywords:
 - _aligned_msize
 - aligned_msize
-dev_langs:
-- C++
 helpviewer_keywords:
 - aligned_msize function
 - _aligned_msize function
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2375ec8f61a95ec018ea55cc1f891ad8049748c9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97c739eed1f54f0c6705d37542eb13c6ec6879d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393111"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524884"
 ---
 # <a name="alignedmsize"></a>_aligned_msize
 
-Yığın ayrılan bellek bloğu boyutu döndürür.
+Yığında ayrılan bir bellek bloğu boyutu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,25 +47,25 @@ size_t _msize(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Bellek bloğu işaretçi.
+Bellek bloğuna işaretçi.
 
 *Hizalama*<br/>
-Hizalama değeri bir tamsayı güç 2 olmalıdır.
+Hizalama değeri 2'in tam sayı üssü olması gerekir.
 
 *uzaklık*<br/>
-Hizalama zorlamak için bellek ayırma içine uzaklığı.
+Hizalama zorlamak için bellek ayırma olan uzaklık.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Boyutu (bayt) imzalanmamış tamsayı olarak döndürür.
+Boyut (bayt cinsinden), işaretsiz bir tamsayı olarak döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Aligned_msize** işlevi için bir çağrı tarafından ayrılan bellek bloğu bayt cinsinden boyutu döndürüyor [_aligned_malloc](aligned-malloc.md) veya [_aligned_realloc](aligned-realloc.md). *Hizalama* ve *uzaklık* değerler blok ayrılan işleve değerleri aynı olmalıdır.
+**_Aligned_msize** işlevi çağrısı tarafından ayrılan bellek bloğu bayt cinsinden boyutunu döndürür [_aligned_malloc](aligned-malloc.md) veya [_aligned_realloc](aligned-realloc.md). *Hizalama* ve *uzaklığı* değerleri blok ayrılan işleve geçirilen değerlerin aynı olması gerekir.
 
-Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlandığında **_aligned_msize** çözümler [_aligned_msize_dbg](aligned-msize-dbg.md). Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
+Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **_aligned_msize** çözümler [_aligned_msize_dbg](aligned-msize-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
 
-Bu işlev, parametre doğrular. Varsa *memblock* null işaretçi veya *hizalama* 2 ' nin güç değil **_msize** açıklandığı gibi bir geçersiz parametre işleyiciyi çağırır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Hata işleniyorsa işlevi ayarlar **errno** için **EINVAL** ve -1 döndürür.
+Bu işlev, parametresini doğrular. Varsa *memblock* null bir işaretçiyse veya *hizalama* 2 ' nin kuvveti değil **_msize** açıklandığı gibi geçersiz parametre işleyicisini çağırır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Hatanın işlenip, işlev ayarlar **errno** için **EINVAL** ve -1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -83,7 +73,7 @@ Bu işlev, parametre doğrular. Varsa *memblock* null işaretçi veya *hizalama*
 |-------------|---------------------|
 |**_msize**|\<malloc.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

@@ -1,10 +1,6 @@
 ---
-title: ICommandSource arabirimi | Microsoft Docs
-ms.custom: ''
+title: ICommandSource arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ICommandSource
 - AFXWINFORMS/ICommandSource
@@ -18,21 +14,15 @@ f1_keywords:
 - AFXWINFORMS/ICommandSource::RemoveCommandRangeUIHandler
 - AFXWINFORMS/ICommandSource::RemoveCommandUIHandler
 - AFXWINFORMS/ICommandSource::SendCommand
-dev_langs:
-- C++
 helpviewer_keywords:
 - ICommandSource interface [MFC]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4908566a80fcad2350023f2306a952b2d97b2e62
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4fca5a2ffef7e8da4f6dd79fcd99c72e92cfdf6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060682"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538443"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
 

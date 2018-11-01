@@ -1,10 +1,6 @@
 ---
-title: piecewise_linear_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: piecewise_linear_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::piecewise_linear_distribution
 - random/std::piecewise_linear_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::piecewise_linear_distribution::param_type::densities
 - random/std::piecewise_linear_distribution::param_type::operator==
 - random/std::piecewise_linear_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::piecewise_linear_distribution [C++]
 - std::piecewise_linear_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5efee5c6c867cf7b9b58e94f7475f365dee580ae
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ff443f4c6721e77de95da49384bc912c2c382930
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528693"
 ---
 # <a name="piecewiselineardistribution-class"></a>piecewise_linear_distribution Sınıfı
 
