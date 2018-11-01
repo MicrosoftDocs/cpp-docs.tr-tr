@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4337 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4337
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4337
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4337
 ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5b4e72f3dfda903a3d0f4563a730dc44411f79c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2bfa5f9b30fa0325df1c3655ded53ab0525449c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479566"
 ---
 # <a name="compiler-warning-level-4-c4337"></a>Derleyici Uyarısı (düzey 4) C4337
 

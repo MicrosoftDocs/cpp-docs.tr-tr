@@ -1,28 +1,18 @@
 ---
-title: Kalıcılığı ve başlatmayı iyileştirme | Microsoft Docs
-ms.custom: ''
+title: Kalıcılığı ve Başlatmayı İyileştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 - performance, ActiveX controls
 - optimization, ActiveX controls
 - optimizing performance, ActiveX controls
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 395fc71f42dd947de331051233a5dcce086f7bb3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6f0d888f49cf27505882e89e3cdbb469ea9e8684
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400815"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472702"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Kalıcılığı ve Başlatmayı İyileştirme
 

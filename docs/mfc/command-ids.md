@@ -1,26 +1,16 @@
 ---
-title: Komut kimlikleri | Microsoft Docs
-ms.custom: ''
+title: Komut Kimlikleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - command IDs, MFC
 - command IDs
 ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5087c271151793169cbf7350f78750044ccead0b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ecec4a7bd705dc74a3f45cc07da4abcdb168f43f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445636"
 ---
 # <a name="command-ids"></a>Komut Kimlikleri
 

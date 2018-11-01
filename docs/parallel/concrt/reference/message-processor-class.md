@@ -1,10 +1,6 @@
 ---
-title: message_processor sınıfı | Microsoft Docs
-ms.custom: ''
+title: message_processor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - message_processor
 - AGENTS/concurrency::message_processor
@@ -12,21 +8,15 @@ f1_keywords:
 - AGENTS/concurrency::message_processor::sync_send
 - AGENTS/concurrency::message_processor::wait
 - AGENTS/concurrency::message_processor::process_incoming_message
-dev_langs:
-- C++
 helpviewer_keywords:
 - message_processor class
 ms.assetid: 23afb052-daa7-44ed-bf24-d2513db748da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3ff478b4471916fb51931ea59712be0d47d2b61
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d6e45613e0b412b6b94dba3c4a435115e32c7d6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404039"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438226"
 ---
 # <a name="messageprocessor-class"></a>message_processor Sınıfı
 

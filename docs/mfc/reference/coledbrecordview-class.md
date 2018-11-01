@@ -1,33 +1,23 @@
 ---
-title: COleDBRecordView sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDBRecordView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDBRecordView
 - AFXOLEDB/COleDBRecordView
 - AFXOLEDB/COleDBRecordView::COleDBRecordView
 - AFXOLEDB/COleDBRecordView::OnGetRowset
 - AFXOLEDB/COleDBRecordView::OnMove
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDBRecordView [MFC], COleDBRecordView
 - COleDBRecordView [MFC], OnGetRowset
 - COleDBRecordView [MFC], OnMove
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae0d531930a2cfbb00be5bc0fb9a043a10e7d9f2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b862ce5176a1fd4fa4ac48cabf7830cd8ebf3d92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059070"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599608"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3394 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3394
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3394
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3394
 ms.assetid: 4e025d79-27ba-43c8-b0d9-839ecef98126
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d7a7f66d437158504b3ca4c8dccaf3c35d2c1ae4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4eba2c9f34f1cfcaf97733f914520043ee1124bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557419"
 ---
 # <a name="compiler-error-c3394"></a>Derleyici Hatası C3394
 

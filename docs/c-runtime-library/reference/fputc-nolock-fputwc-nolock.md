@@ -1,10 +1,6 @@
 ---
-title: _fputc_nolock _fputwc_nolock | Microsoft Docs
-ms.custom: ''
+title: _fputc_nolock, _fputwc_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fputwc_nolock
 - _fputc_nolock
@@ -28,8 +24,6 @@ f1_keywords:
 - fputtc_nolock
 - _fputwc_nolock
 - _fputtc_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - streams, writing characters to
 - fputwc_nolock function
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - _fputtc_nolock function
 - _fputwc_nolock function
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2ef3afffe1cbd8764e389f613b3679e3fa5a580
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 370b7e9f20bcc32f6243cff804381b5453801dbd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398561"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579779"
 ---
 # <a name="fputcnolock-fputwcnolock"></a>_fputc_nolock, _fputwc_nolock
 
-Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.
+İş parçacığını kilitlemeden, bir akışa bir karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,18 +62,18 @@ wint_t _fputwc_nolock(
 *c*<br/>
 Yazılacak karakter.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri yazılmış karakteri döndürür. Hata bilgileri için bkz: [fputc, fputwc](fputc-fputwc.md).
+Bu işlevlerin her biri yazılan karakteri döndürür. Hata bilgisi edinmek için bkz. [fputc, fputwc](fputc-fputwc.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_fputc_nolock** ve **_fputwc_nolock** özdeş **fputc** ve **fputwc**, sırasıyla girişim tarafından gelen korunmayan dışında diğer iş parçacığı sayısı. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+**_fputc_nolock** ve **_fputwc_nolock** özdeş **fputc** ve **fputwc**sırasıyla gelen girişim tarafından korunmayan dışında diğer iş parçacıkları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
-Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **_fputc_nolock** şu anda çıktı bir UNICODE akışa desteklemiyor.
+Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_fputc_nolock** UNICODE akışına çıkış şu anda desteklemiyor.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -98,7 +88,7 @@ Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **_fput
 |**_fputc_nolock**|\<stdio.h >|
 |**_fputwc_nolock**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -127,6 +117,6 @@ This is a test of _fputc_nolock!!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

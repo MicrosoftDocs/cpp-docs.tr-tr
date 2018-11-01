@@ -1,10 +1,6 @@
 ---
-title: _setmode | Microsoft Docs
-ms.custom: ''
+title: _setmode
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _setmode
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _setmode
-dev_langs:
-- C++
 helpviewer_keywords:
 - Unicode [C++], console output
 - files [C++], modes
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59aed27ec4803cd1709635da44ef37d748342e29
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 887936299dce0a13738f9dd891a168785d17c979
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617444"
 ---
 # <a name="setmode"></a>_setmode
 
@@ -66,28 +56,28 @@ Yeni çeviri modu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, önceki çeviri modu döndürür.
+Başarılı olursa, önceki çeviri modunu döndürür.
 
-Bu işlev için geçersiz parametreler aktarılırsa geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri -1 ve kümelerini yürütülmesine izin veriliyorsa **errno** ya da **EBADF**, geçersiz bir dosya tanımlayıcısı gösterir veya **EINVAL**, hangi Geçersiz bir gösterir *modu* bağımsız değişkeni.
+Geçersiz parametreler bu işleve geçirilirse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** ya da **EBADF**, bir geçersiz dosya tanımlayıcısı gösterir veya **EINVAL**, hangi Geçersiz bir gösteren *modu* bağımsız değişken.
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmode** işlevi ayarlar *modu* tarafından verilen dosya çevirisi modu *fd*. Geçirme **_O_TEXT** olarak *modu* (çevrilmiş) metin ayarlar modu. Satır başı satır besleme (CR-LF) birleşimleri besleme karakteri girişte tek bir satır halinde çevrilir. Satır akış karakterleri CR LF birleşimleri çıktıyı içine çevrilir. Geçirme **_o_bınary** bu çevirileri gizlenir kümeleri ikili (untranslated) modu.
+**_Setmode** işlevi ayarlar *modu* tarafından verilen dosya çevirisi modu *fd*. Geçirme **_O_TEXT** olarak *modu* (çevrilmiş) metin ayarlar modu. Satır başı satır besleme (CR-LF) birleşimleri tek bir satır besleme karakteri giriş çevrilir. Satır akış karakterleri çıkış CR-LF kombinasyonlarına çevrilir. Geçirme **_o_bınary** bu Çeviriler bastırılır kümeleri ikili (çevrilmemiş) modda,.
 
-Ayrıca iletebilirsiniz **_O_U16TEXT**, **_O_U8TEXT**, veya **_O_WTEXT** bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modunu etkinleştirmek için. **_setmode** genellikle varsayılan çeviri modunu değiştirmek için kullanılan **stdin** ve **stdout**, ancak herhangi bir dosya kullanın. Uygularsanız **_setmode** bir akış için dosya tanımlayıcısı için çağrı **_setmode** akışta giriş veya çıkış işlemleri gerçekleştirmeden önce.
+De geçirebilirsiniz **_O_U16TEXT**, **_O_U8TEXT**, veya **_O_WTEXT** bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modu etkinleştirmek için. **_setmode** genellikle varsayılan çeviri modunu değiştirmek için kullanılan **stdin** ve **stdout**, ancak herhangi bir dosya kullanın. Uygularsanız, **_setmode** bir akış için dosya tanımlayıcısı için çağrı **_setmode** akışında giriş veya çıkış işlemleri gerçekleştirmeden önce.
 
 > [!CAUTION]
-> Verileri bir dosya akışı için temizleme açıkça kodu kullanarak yazarsanız [fflush](fflush.md) kullanmadan önce **_setmode** modunu değiştirmek için. Kodu temizleme değil, beklenmeyen davranışları alabilirsiniz. Veri akışına yazdığınız değil, kod flush gerekmez.
+> Verileri bir dosya akışı açıkça temizleme kodunu kullanarak yazdığınız [fflush](fflush.md) kullanmadan önce **_setmode** modunu değiştirmek için. Kodu temizleme değil, beklenmeyen davranışı alabilirsiniz. Veri akışına yazmadıysanız kod temizleme gerekmez.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
 |-------------|---------------------|----------------------|
 |**_setmode**|\<io.h >|\<fcntl.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

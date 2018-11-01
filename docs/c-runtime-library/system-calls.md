@@ -1,28 +1,18 @@
 ---
-title: Sistem çağrıları | Microsoft Docs
-ms.custom: ''
+title: Sistem Çağrıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.system
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows [C++], system calls
 - system calls
 ms.assetid: 0255f2ec-a5a0-487e-8b09-9dad001d81ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 648b0e1addd509652ba67e09d32dbdd060f29e87
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b4b56fb0d61675aada1e8c8ba37d3382853da32c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511845"
 ---
 # <a name="system-calls"></a>Sistem Çağrıları
 

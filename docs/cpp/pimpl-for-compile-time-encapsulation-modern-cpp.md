@@ -1,23 +1,14 @@
 ---
-title: Derleme (Modern C++) derleme zamanı kapsüllemesi için Pimpl | Microsoft Docs
-ms.custom: ''
+title: Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83b01a58745185499ac02a254a207fac2779be26
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9a73ea1df099003061081d108a3f3f6eef601fb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059010"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594369"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 

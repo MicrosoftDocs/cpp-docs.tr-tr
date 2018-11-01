@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: yürütme sırasını etkilemek için zamanlama grupları kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - schedule groups, using [Concurrency Runtime]
 - using schedule groups [Concurrency Runtime]
 ms.assetid: 73124194-fc3a-491e-a23f-fbd7b5a4455c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55417f1d72d6bd3e111a89f4b28f783543101b6e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1117e0d24aae023fbb4dec4fbb9721e6da2ad768
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642318"
 ---
 # <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma
 

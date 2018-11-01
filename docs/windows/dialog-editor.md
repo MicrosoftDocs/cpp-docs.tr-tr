@@ -1,32 +1,21 @@
 ---
-title: İletişim kutusu Düzenleyicisi (C++) | Microsoft Docs
-ms.custom: ''
+title: İletişim kutusu Düzenleyicisi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.dialog.dialog
 - vc.editors.dialog.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource editors [C++], Dialog editor
 - editors, dialog boxes
 - Dialog editor
 - dialog boxes [C++], editing
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c1fc2d9f816e5487f5d89f9c429db85f2592731f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ca532e1691a5d92280c89067a943b7d2e27e3f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439542"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540887"
 ---
 # <a name="dialog-editor-c"></a>İletişim kutusu Düzenleyicisi (C++)
 

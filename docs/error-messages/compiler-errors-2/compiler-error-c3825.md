@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3825 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3825
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3825
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3825
 ms.assetid: 18e204a1-f26e-42c6-8d74-2b49cc95f940
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fdc3b612ea1ce7bdcf83c72350b4d13a6790d11f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ddb665dab303b3133d4018910c2142a20a889bb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528641"
 ---
 # <a name="compiler-error-c3825"></a>Derleyici Hatası C3825
 

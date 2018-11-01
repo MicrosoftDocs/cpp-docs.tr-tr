@@ -1,18 +1,12 @@
 ---
-title: __alignof işleci | Microsoft Docs
-ms.custom: ''
+title: __alignof İşleci
 ms.date: 10/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - alignas_cpp
 - __alignof_cpp
 - alignof_cpp
 - __alignof
 - _alignof
-dev_langs:
-- C++
 helpviewer_keywords:
 - alignas [C++]
 - alignment of structures
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d1852f6d277f54ecb3c232d63262c34465512546
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 391535d7d80b075149c797cbd00fa34d46ed677d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479501"
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
 

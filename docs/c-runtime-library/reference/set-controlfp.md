@@ -1,10 +1,6 @@
 ---
-title: _set_controlfp | Microsoft Docs
-ms.custom: ''
+title: _set_controlfp
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_controlfp
 apilocation:
@@ -23,27 +19,21 @@ apitype: DLLExport
 f1_keywords:
 - set_controlfp
 - _set_controlfp
-dev_langs:
-- C++
 helpviewer_keywords:
 - set_controlfp function
 - floating-point functions, setting control word
 - _set_controlfp function
 ms.assetid: e0689d50-f68a-4028-a9c1-fb23eedee4ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2647e9719c2aa3fe303393fcc1da55de0385581
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1187502f09849d7ca4d8e595c237cfa511d00c6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406426"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499061"
 ---
 # <a name="setcontrolfp"></a>_set_controlfp
 
-Kayan nokta denetim sözcüğü ayarlar.
+Kayan nokta denetim sözcüğünü ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,7 +50,7 @@ void __cdecl _set_controlfp(
 Yeni Denetim sözcüğü bit değerleri.
 
 *Maskesi*<br/>
-Ayarlanacak yeni denetim sözcüğü bit maskesi.
+Ayarlanacak yeni denetim sözcüğü bitleri için maske.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -68,9 +58,9 @@ Yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Set_controlfp** işlevi benzer **_control87**, ancak yalnızca kayan nokta denetim sözcüğü ayarlar *newControl*. Değerleri bitleri kayan nokta denetim durumu gösterir. Kayan nokta denetim durumu duyarlık, yuvarlama ve kayan nokta Matematiği paketindeki sonsuz modlarını değiştirmek programın sağlar. Ayrıca maskeleme veya kayan nokta özel durumlar kullanma maskesini kaldırın **_set_controlfp**. Daha fazla bilgi için bkz: [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md).
+**_Set_controlfp** işlevi benzer **_control87**, ancak yalnızca kayan nokta denetim sözcüğünü ayarlar *newControl*. Değerlerdeki bitler, kayan nokta denetim durumunu gösterir. Kayan nokta denetim durumu programın duyarlılık, yuvarlama ve sonsuzluk modlarını kayan nokta matematik paketindeki değiştirmesini sağlar. Ayrıca maskelemek veya maskesini kullanarak kayan nokta özel durumlarını **_set_controlfp**. Daha fazla bilgi için [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md).
 
-Bu işlev ile derleme yapılırken kullanım dışıdır [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlık destekler.
+İle derlerken bu işlev kullanım dışı [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlığını destekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -78,7 +68,7 @@ Bu işlev ile derleme yapılırken kullanım dışıdır [/CLR (ortak dil çalı
 |-------------|---------------------|-------------------|
 |**_set_controlfp**|\<float.h >|x86 yalnızca işlemci|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

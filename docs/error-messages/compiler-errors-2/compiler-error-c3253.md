@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3253 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3253
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3253
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3253
 ms.assetid: da40be26-0f78-4730-8727-ad11cddf8869
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f47ff3ab9094e7926453ec4eb5964485cf16f945
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 997d23fa5736e31b3824459f928a58eddde56e15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065614"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605097"
 ---
 # <a name="compiler-error-c3253"></a>Derleyici Hatası C3253
 

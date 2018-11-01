@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4377 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4377
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4377
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4377
 ms.assetid: a1c797b8-cd5e-4a56-b430-d07932e811cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 613ebe183b61c6b9894ed3b726f90061e2b24ef6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d8c89967e0dc900e098ca03d22932451f26a6a0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531038"
 ---
 # <a name="compiler-warning-level-1-c4377"></a>Derleyici Uyarısı (düzey 1) C4377
 

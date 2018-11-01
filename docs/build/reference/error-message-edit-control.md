@@ -1,25 +1,15 @@
 ---
-title: Hata iletisi düzenleme denetimi | Microsoft Docs
-ms.custom: ''
+title: Hata İletisi Düzenleme Denetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Error Message edit control
 ms.assetid: 79320694-c30e-4c37-bb94-6cb36c32d4e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa0851f31487bf79ba3977bdedee86ce3b718f21
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e17256b5a86d4b1846b61b96ae81a429c06c6528
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701903"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631900"
 ---
 # <a name="error-message-edit-control"></a>Hata İletisi Düzenleme Denetimi
 

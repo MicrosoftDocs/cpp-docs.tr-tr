@@ -1,10 +1,6 @@
 ---
-title: task_continuation_context sınıfı | Microsoft Docs
-ms.custom: ''
+title: task_continuation_context Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - task_continuation_context
 - PPLTASKS/concurrency::task_continuation_context
@@ -13,21 +9,15 @@ f1_keywords:
 - PPLTASKS/concurrency::task_continuation_context::use_current
 - PPLTASKS/concurrency::task_continuation_context::use_default
 - PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution
-dev_langs:
-- C++
 helpviewer_keywords:
 - task_continuation_context class
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0b1cff6dbb816d3dddc6b3ad8090fd30413e336
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5f358dbc61fc39928e877dbc3673a8b9f51917eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392638"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582523"
 ---
 # <a name="taskcontinuationcontext-class"></a>task_continuation_context Sınıfı
 

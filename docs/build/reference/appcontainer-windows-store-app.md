@@ -1,23 +1,13 @@
 ---
-title: / APPCONTAINER (UWP/Microsoft Store uygulaması) | Microsoft Docs
-ms.custom: ''
+title: / APPCONTAINER (UWP/Microsoft Store uygulaması)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d52148f14c21773a6fe93c3909c91f80c3c3650
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 306ffc7cda7cc6045b5decd6824fdc3848233824
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726576"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541329"
 ---
 # <a name="appcontainer-microsoft-store-app"></a>/ APPCONTAINER (Microsoft Store uygulaması)
 

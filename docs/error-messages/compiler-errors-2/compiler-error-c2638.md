@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2638 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2638
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2638
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2638
 ms.assetid: 9d4275e8-406d-455e-afee-3a37799230e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7155de95ec4475a2b7b114292e507685717f8d78
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0c4c1e73c97f51bb0e52a618829ffb0bed417a45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060427"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582785"
 ---
 # <a name="compiler-error-c2638"></a>Derleyici Hatası C2638
 

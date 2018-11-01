@@ -1,10 +1,6 @@
 ---
-title: ToAscii, __toascii | Microsoft Docs
-ms.custom: ''
+title: ToAscii, __toascii
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __toascii
 apilocation:
@@ -25,28 +21,22 @@ f1_keywords:
 - toascii
 - ctype/toascii
 - ctype/__toascii
-dev_langs:
-- C++
 helpviewer_keywords:
 - toascii function
 - string conversion, to ASCII characters
 - __toascii function
 - ASCII characters, converting to
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cead516a7e298e56d13d8f1a09a054057796ca64
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22f76bdbdb21eb5b3cc9a226c111e321ee2fd0ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578977"
 ---
 # <a name="toascii-toascii"></a>ToAscii, __toascii
 
-Karakter 7 bitlik ASCII tarafından kesme dönüştürür.
+Karakterleri 7 bit ASCII için kesilmesi nedeniyle dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,13 +54,13 @@ Dönüştürülecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**__toascii** değerini dönüştürür *c* 7 bitlik ASCII aralığı ve sonucu döndürür. Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.
+**__toascii** değerini dönüştürür *c* için 7 bit ASCII aralığı ve sonucu döndürür. Dönüş değeri bir hatayı göstermek için ayrılmış.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**__Toascii** yordamı dönüştürür belirli bir karakter bir ASCII karakter için düşük düzey 7 bit kesilmesiyle tarafından. Diğer bir dönüştürme uygulanır.
+**__Toascii** yordamı belirli karakterine dönüştürür bir ASCII karakter için düşük düzey 7 bit tarafından kesiliyor. Diğer bir dönüştürme uygulanır.
 
-**__Toascii** önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece, yordamı makro olarak tanımlanır. Geriye dönük uyumluluk için **toascii** makro olarak tanımlanan yalnızca [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil ya da 0; tanımlanan aksi tanımlı değil.
+**__Toascii** önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece yordamı makro olarak tanımlanır. Geriye dönük uyumluluk için **toascii** makro olarak tanımlanan yalnızca [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil veya; 0 olarak tanımlandığında aksi tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -78,7 +68,7 @@ Dönüştürülecek karakter.
 |-------------|---------------------|
 |**ToAscii**, **__toascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
 
-**Toascii** makrosu POSIX uzantısı olan ve **__toascii** POSIX uzantısı Microsoft'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**Toascii** makrodur bir POSIX uzantısı ve **__toascii** POSIX uzantıyı Microsoft'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

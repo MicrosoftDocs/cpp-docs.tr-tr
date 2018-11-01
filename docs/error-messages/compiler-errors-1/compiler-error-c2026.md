@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2026 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2026
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2026
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2026
 ms.assetid: 8e64b6e1-b967-479b-be97-d12dc4a8e389
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 055ac47d036a1027817aa6b3433bfe0e2e88570e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da4c03c681f95efaa5edb159869315b41d027e99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657141"
 ---
 # <a name="compiler-error-c2026"></a>Derleyici Hatası C2026
 

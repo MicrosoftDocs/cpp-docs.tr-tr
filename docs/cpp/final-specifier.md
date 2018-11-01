@@ -1,27 +1,17 @@
 ---
-title: final tanımlayıcısı | Microsoft Docs
-ms.custom: ''
+title: final Tanımlayıcısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - final_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - final Identifier
 ms.assetid: 649866d0-79d4-449f-ab74-f84b911b79a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e382bd75a734b205389b83455e3ab020f54ca6d3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c6400c8060664713fdd004a5aa9536e0617bc0c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588090"
 ---
 # <a name="final-specifier"></a>final Tanımlayıcısı
 

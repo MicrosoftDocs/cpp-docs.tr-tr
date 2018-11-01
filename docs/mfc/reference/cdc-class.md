@@ -1,10 +1,6 @@
 ---
-title: CDC sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDC sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDC
 - AFXWIN/CDC
@@ -206,8 +202,6 @@ f1_keywords:
 - AFXWIN/CDC::WidenPath
 - AFXWIN/CDC::m_hAttribDC
 - AFXWIN/CDC::m_hDC
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDC [MFC], CDC
 - CDC [MFC], AbortDoc
@@ -408,16 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 496b958c1ff96b2bc8f3fd3ce8b453c9d3497dcf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 40de8b3aca3cca7acb2fefa352f9358a16f43e51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081150"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492088"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 

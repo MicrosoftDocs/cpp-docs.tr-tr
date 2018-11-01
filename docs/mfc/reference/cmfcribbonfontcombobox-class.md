@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonFontComboBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonFontComboBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonFontComboBox
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox
 - CMFCRibbonFontComboBox [MFC], BuildFonts
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CMFCRibbonFontComboBox [MFC], RebuildFonts
 - CMFCRibbonFontComboBox [MFC], SetFont
 ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cec74c832e1f7e38fd284e445b2a5aff05faa282
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5feb97b274b6547ebc6868e27ead20824ce4e8ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072557"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635688"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox sınıfı
 

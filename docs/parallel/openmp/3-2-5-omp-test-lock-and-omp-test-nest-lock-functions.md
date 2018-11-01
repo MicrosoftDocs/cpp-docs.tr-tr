@@ -1,23 +1,13 @@
 ---
-title: 3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri | Microsoft Docs
-ms.custom: ''
+title: 3.2.5 omp_test_lock ve omp_test_nest_lock İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 36818945-c22c-4c24-b754-4e73eba6f3f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5349134bf92f407d4b65df9b92e3eebe87c097c1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e8e03699f807f23f139075560592d8846467f2c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512760"
 ---
 # <a name="325-omptestlock-and-omptestnestlock-functions"></a>3.2.5 omp_test_lock ve omp_test_nest_lock İşlevleri
 

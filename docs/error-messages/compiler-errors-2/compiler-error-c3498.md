@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3498 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3498
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3498
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3498
 ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5bb87abc113e586aa4f3097444df4c5a46a6a92c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ca9e2d272a5e9ab8fd69094bc1633dbd6ea2c3e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624707"
 ---
 # <a name="compiler-error-c3498"></a>Derleyici Hatası C3498
 

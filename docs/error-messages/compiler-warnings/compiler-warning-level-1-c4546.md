@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4546 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4546
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4546
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4546
 ms.assetid: 071e1709-3841-46c1-8e71-96109cd22041
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0973e657793fe002a3fb6555ec0b0b95aa06e5bf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 47dd30b3ce59254528f9500139310412393435d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024813"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614385"
 ---
 # <a name="compiler-warning-level-1-c4546"></a>Derleyici Uyarısı (düzey 1) C4546
 

@@ -1,28 +1,17 @@
 ---
-title: 'Kayıt kümesi: Kayıtları toplu yakalama (ODBC) içinde ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Kayıtları Toplu Ekleme (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC recordsets, adding records
 - recordsets, adding records
 - bulk record additions to recordsets
 ms.assetid: 4685f656-14b9-4f10-a1c5-147b2b89a0b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 53daf818b0ba17848723e3cad233452146d1c891
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5a6a627054cd2e90420ac66a9e56e570f29d281e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594668"
 ---
 # <a name="recordset-adding-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Ekleme (ODBC)
 

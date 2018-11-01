@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2632 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2632
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2632
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2632
 ms.assetid: b15a6b1b-42d2-4e1b-8660-e6bfde61052d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7bf03c35c60bebb52c94ed04cca2349f35c06fbc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b92d44bcfd04d4de7b39c5bdab5ee146d9b6693b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437940"
 ---
 # <a name="compiler-error-c2632"></a>Derleyici Hatası C2632
 

@@ -1,26 +1,16 @@
 ---
-title: Derleyici komut satırı sözdizimi | Microsoft Docs
-ms.custom: ''
+title: Derleyici Komut Satırı Sözdizimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - syntax, CL compiler command line
 - cl.exe compiler, command-line syntax
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18fb22ba370a447be8cb4cb2fb96633d702a1089
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a350a2cb793630b90143b7d190ada9469a79bfc1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710306"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581304"
 ---
 # <a name="compiler-command-line-syntax"></a>Derleyici Komut Satırı Sözdizimi
 

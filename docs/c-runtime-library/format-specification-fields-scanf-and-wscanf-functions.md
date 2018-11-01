@@ -1,10 +1,6 @@
 ---
-title: 'Biçim belirtimi alanları: scanf ve wscanf işlevleri | Microsoft Docs'
-ms.custom: ''
+title: 'Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr80.dll
 - msvcr110.dll
@@ -16,8 +12,6 @@ apitype: DLLExport
 f1_keywords:
 - wscanf
 - scanf
-dev_langs:
-- C++
 helpviewer_keywords:
 - width, specifications in scanf function
 - scanf format specifications
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - format specification fields for scanf function
 - type fields
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f99d7dac7878f46fceea4435703a55f2199f374
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 83c380adc1a8985bb232d70c6d7c4cb4a885e789
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094513"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625946"
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri
 

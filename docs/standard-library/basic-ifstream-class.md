@@ -1,10 +1,6 @@
 ---
-title: basic_ifstream sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_ifstream Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - fstream/std::basic_ifstream
 - fstream/std::basic_ifstream::close
@@ -12,8 +8,6 @@ f1_keywords:
 - fstream/std::basic_ifstream::open
 - fstream/std::basic_ifstream::rdbuf
 - fstream/std::basic_ifstream::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_ifstream [C++]
 - std::basic_ifstream [C++], close
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - std::basic_ifstream [C++], rdbuf
 - std::basic_ifstream [C++], swap
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63712f6eb7efd9c52db5480b7f13babe9601dea2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 30ae1e6384b3861bc4324d42f095516f80dce6e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110233"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577326"
 ---
 # <a name="basicifstream-class"></a>basic_ifstream Sınıfı
 

@@ -1,28 +1,21 @@
 ---
-title: /ZF (daha hızlı PDB oluşturma) | Microsoft Docs
+title: /ZF (daha hızlı PDB oluşturma)
 ms.date: 03/29/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Zf
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Zf
 - -Zf
-author: corob-msft
-ms.author: corob
-ms.openlocfilehash: 968ce17302fa608888c7ae2fedf695946b0119bd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2c3f8d08f59c3a6803eda67126ef8a8f9ba6b1fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379971"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595748"
 ---
 # <a name="zf-faster-pdb-generation"></a>/ZF (daha hızlı PDB oluşturma)
 
-Daha hızlı PDB nesil paralel derlemelerde mspdbsrv.exe RPC çağrıları en aza indirerek etkinleştirin.
+RPC çağrıları mspdbsrv.exe en aza indirerek paralel yapılar, daha hızlı PDB oluşturmayı etkinleştirin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,19 +23,19 @@ Daha hızlı PDB nesil paralel derlemelerde mspdbsrv.exe RPC çağrıları en az
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Zf** seçeneğini kullanırken PDB dosyalarını daha hızlı oluşturulmasını için derleyici desteği etkinleştirir [/MP (birden çok süreçle derleme)](mp-build-with-multiple-processes.md) seçeneğini veya yapı sistem (örneğin, [MSBuild ](/visualstudio/msbuild/msbuild-reference) veya [CMake](../../ide/cmake-tools-for-visual-cpp.md)) birden çok cl.exe derleyici işlemler aynı anda çalışabilir. Bu seçenek türü dizinleri derleme sonuna kadar oluşturma PDB dosyasında her tür kaydı için gecikme derleyici ön uç neden olur ve ardından bunları her kayıt için bir RPC isteği yapan yerine mspdbsrv.exe, tek bir RPC çağrısı, tüm istekleri. Birden çok cl.exe derleyici işlemler aynı anda çalıştırdığı bir ortamda mspdbsrv.exe işlem RPC yükünü azaltarak bu yapı verimlilik önemli ölçüde artırabilir.
+**/Zf** seçeneği kullanılırken daha hızlı oluşturulmasını PDB dosyaları için derleyici desteği sağlar [/MP (birden çok süreçle derleme)](mp-build-with-multiple-processes.md) seçeneği veya derleme sistemini (örneğin, [MSBuild ](/visualstudio/msbuild/msbuild-reference) veya [CMake](../../ide/cmake-tools-for-visual-cpp.md)) birden çok cl.exe derleyicisi işlemler aynı anda çalışabilir. Bu seçenek derleyici ön ucu oluşturma türü dizinleri her türü kayıt PDB dosyası için derleme sonuna kadar gecikme neden olur ve ardından bunları her kayıt için bir RPC isteği yapan yerine mspdbsrv.exe, tek bir RPC çağrısı içindeki tüm istekleri. Birden çok cl.exe derleyicisi işlemler aynı anda çalıştırdığı bir ortamda mspdbsrv.exe işlemi RPC yükünü azaltarak bu üretilen derleme işi önemli ölçüde artırabilir.
 
-Çünkü **/Zf** seçeneği yalnızca PDB oluşturma için geçerlidir, gerektirir [/zı](z7-zi-zi-debug-information-format.md) veya [/zı](z7-zi-zi-debug-information-format.md) seçeneği.
+Çünkü **/Zf** seçeneği yalnızca PDB oluşturma için geçerlidir, gerektirir [/zi](z7-zi-zi-debug-information-format.md) veya [/zi](z7-zi-zi-debug-information-format.md) seçeneği.
 
-**/Zf** seçeneği olan Visual Studio 2017 sürüm 15.1, başında Burada, varsayılan olarak kapalıdır. Visual Studio 2017 sürüm 15.7 başlangıç Preview 3, bu seçenek varsayılan olarak açık olduğunda **/zı** veya **/zi** seçeneği etkinleşir.
+**/Zf** seçeneği olan Visual Studio 2017 sürüm 15.1, başında nerede, varsayılan olarak kapalıdır. Visual Studio 2017 sürüm 15.7 başlangıç Preview 3, bu seçenek varsayılan olarak açık olduğunda **/zi** veya **/zi** seçeneği etkinleştirilir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/Zf** ve ardından **Tamam**.
+1. Değiştirme **ek seçenekler** eklenecek özellik **/Zf** seçip **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

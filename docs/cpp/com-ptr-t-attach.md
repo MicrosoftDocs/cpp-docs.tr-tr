@@ -1,28 +1,18 @@
 ---
-title: _com_ptr_t::Attach | Microsoft Docs
-ms.custom: ''
+title: _com_ptr_t::Attach
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_ptr_t::Attach
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces, attach pointer
 - Attach method [C++]
 ms.assetid: 94c18e0a-06be-4ca7-bdaf-cd54ec0a645e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2fbedb2bbfba16abf1196d1dba377f7589c916b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4b4b7a21d12cc645c486dd93d555510c1e716563
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099622"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566549"
 ---
 # <a name="comptrtattach"></a>_com_ptr_t::Attach
 

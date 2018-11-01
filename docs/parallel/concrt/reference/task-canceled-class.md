@@ -1,29 +1,19 @@
 ---
-title: task_canceled sınıfı | Microsoft Docs
-ms.custom: ''
+title: task_canceled Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - task_canceled
 - CONCRT/concurrency::task_canceled
 - CONCRT/concurrency::task_canceled::task_canceled
-dev_langs:
-- C++
 helpviewer_keywords:
 - task_canceled class
 ms.assetid: c3f0b234-2cc1-435f-a48e-995f45b190be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da18db2f2dde145c565b6309d9b27cdbcc0744cf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b17050deacd1dee0c1b08ffbc4056e957884cd3a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437670"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617457"
 ---
 # <a name="taskcanceled-class"></a>task_canceled Sınıfı
 

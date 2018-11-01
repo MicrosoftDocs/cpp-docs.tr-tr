@@ -1,14 +1,8 @@
 ---
-title: 'CWinApp: Uygulama sınıfı | Microsoft Docs'
-ms.custom: ''
+title: 'CWinApp: Uygulama Sınıfı'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CWinApp
-dev_langs:
-- C++
 helpviewer_keywords:
 - application class [MFC]
 - CWinApp class [MFC], CWinThread
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - WinMain method [MFC], in MFC
 - CWinApp class [MFC], WinMain
 ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a6b076798c9ad07a8ca8da1a898c263997e27fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a19d510dc4c8835497ff9e1bb7d5ca6242206fe9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414595"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551326"
 ---
 # <a name="cwinapp-the-application-class"></a>CWinApp: Uygulama Sınıfı
 

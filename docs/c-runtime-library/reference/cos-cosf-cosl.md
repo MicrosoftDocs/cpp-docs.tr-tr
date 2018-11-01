@@ -1,10 +1,6 @@
 ---
-title: cos, cosf, cosl | Microsoft Docs
-ms.custom: ''
+title: cos, cosf, cosl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - cos
 - cosf
@@ -26,8 +22,6 @@ f1_keywords:
 - cos
 - cosf
 - cosl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cosines
 - cosl function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - trigonometric functions
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a49f8489d084b1f67bc46432970114350c56f09
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b050fd98a35028b121def8b665fce62ad58ec437
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519911"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
@@ -72,28 +62,28 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kosinüsünü *x*. Varsa *x* büyük veya 263 eşit veya daha az veya buna eşit -263, sonuç anlamlı kaybı oluşur.
+Kosinüsünü *x*. Varsa *x* büyüktür veya 263'e eşit veya daha az veya buna eşit -263, sonuçta anlam kaybına gerçekleşir.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, UL|yok|**_DOMAIN**|
-|± INF|**GEÇERSİZ**|**_DOMAIN**|
+|± QNAN, ONRAKİNİ BUL|yok|**_ETKİ ALANI**|
+|INF ±|**GEÇERSİZ**|**_ETKİ ALANI**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cos** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **cos** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cos** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **cos** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
 |-------------|---------------------|-|
 |**cos**, **cosh**, **cosf**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [sin, sinf, sinl](sin-sinf-sinl.md).
+Örnekte bakın [sinüs, sinf sinl](sin-sinf-sinl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

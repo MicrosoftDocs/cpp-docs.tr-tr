@@ -1,30 +1,20 @@
 ---
-title: Alt simge işleci [] | Microsoft Docs
-ms.custom: ''
+title: Alt simge işleci]
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '[]'
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], subscript
 - postfix operators [C++]
 - '[] operator'
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cf12d517647e36c8a0d9428b818f3812bfea2e1d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5921b89c7637f1a4d1171c8835bb1b5300b718fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020623"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572919"
 ---
 # <a name="subscript-operator-"></a>Alt simge işleci]
 

@@ -1,28 +1,18 @@
 ---
-title: CSliderCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CSliderCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CSliderCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSliderCtrl class [MFC], using
 - slider controls [MFC], using
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8dec5e0500d7857c8b6781cfd0f78fb18cf93349
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 40e941afc6560447a22017712e24ef861e2ddc17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380335"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428555"
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl Kullanma
 

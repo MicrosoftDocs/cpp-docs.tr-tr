@@ -1,10 +1,6 @@
 ---
-title: CLinearTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CLinearTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CLinearTransition
 - AFXANIMATIONCONTROLLER/CLinearTransition
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CLinearTransition::Create
 - AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CLinearTransition::m_duration
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLinearTransition [MFC], CLinearTransition
 - CLinearTransition [MFC], Create
 - CLinearTransition [MFC], m_dblFinalValue
 - CLinearTransition [MFC], m_duration
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0eb283b40c860df148cb9c193f7b00a05ecb78c6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b671057d0abc01f31d5625d5be0e9678207d8abe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395615"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432758"
 ---
 # <a name="clineartransition-class"></a>CLinearTransition sınıfı
 

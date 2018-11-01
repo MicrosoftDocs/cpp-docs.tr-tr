@@ -1,28 +1,18 @@
 ---
-title: sync_per_kapsayıcı sınıfı | Microsoft Docs
-ms.custom: ''
+title: sync_per_Kapsayıcı Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::sync_per_container
 - allocators/stdext::sync_per_container::equals
-dev_langs:
-- C++
 helpviewer_keywords:
 - sync_per_container class
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d470b60716ab81636be838f2a61e58542a52ffd9
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 641595f663c382129a40ce503ebdb789f8042cf0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466826"
 ---
 # <a name="syncpercontainer-class"></a>sync_per_Kapsayıcı Sınıfı
 

@@ -1,19 +1,13 @@
 ---
-title: Önemsiz, Standart Düzen ve POD değişmez değer türleri | Microsoft Docs
-ms.custom: ''
+title: Önemsiz, Standart Düzen ve POD değişmez değer türleri
 ms.date: 04/05/2018
-ms.topic: language-reference
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c9bb4a84b42cadeb2e076548a220725f1e867fe9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a1ab49e9e2813d0debc77e6a2ff02ec85bb9aeb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568492"
 ---
 # <a name="trivial-standard-layout-pod-and-literal-types"></a>Önemsiz, Standart Düzen ve POD değişmez değer türleri
 

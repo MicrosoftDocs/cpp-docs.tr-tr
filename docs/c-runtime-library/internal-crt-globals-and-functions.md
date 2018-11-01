@@ -1,10 +1,6 @@
 ---
-title: İç CRT Globals ve işlevleri | Microsoft Docs
-ms.custom: ''
+title: İç CRT genel değişkenleri ve işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __acrt_iob_func
 - __AdjustPointer
@@ -570,8 +566,6 @@ f1_keywords:
 - _wsopen_dispatch
 - _Xbad_alloc
 - _Xlength_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - __acrt_iob_func
 - __AdjustPointer
@@ -847,24 +841,20 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 223e4860e1c7a0bd2f414b224c32818895b4398b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 64288cec680c1c10b6ee3f8b0f046fb22d25ab7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485624"
 ---
-# <a name="internal-crt-globals-and-functions"></a>İç CRT Globals ve işlevleri
+# <a name="internal-crt-globals-and-functions"></a>İç CRT genel değişkenleri ve işlevleri
 
-C çalışma zamanı (CRT) kitaplık işlevleri ve yalnızca ortak kitaplığı arabirimi desteklemek için kullanılan genel değişkenler içerir. Bazı ortak üstbilgilerinde uygulama ayrıntılarını sunulur. Bu işlevler ve genel değişkenler ortak dışarı erişilebilir olsa da, bunlar kodunuz tarafından kullanılmak üzere amaçlanmamıştır. Ortak kitaplığı eşdeğerleri yerine kullanmak için bu işlevleri ve değişkenler kullanan herhangi bir kod değiştirmenizi öneririz. Bu işlevler sürümü başka bir sürümü değişebilir. Bunları belirlemenize yardımcı olması için burada listelenir. Ek belgeler var, ancak genel olarak, bu uygulama ayrıntılarını belirtilmeyen bağlantılar sağlanmaktadır.
+C çalışma zamanı (CRT) kitaplığı, İşlevler ve yalnızca ortak kitaplık arabirimi desteklemek için kullanılan genel değişkenler içerir. Bunlardan bazıları ortak üstbilgileri uygulama ayrıntılarını sunulur. Bu işlevler ve genel değişkenleri ortak dışarı aktarmaları erişilebilir olmasına rağmen bunlar kodunuz tarafından kullanılmak üzere amaçlanmamıştır. Bunun yerine ortak kitaplığı kullanmak için bu işlevler ve değişkenler kullanan herhangi bir kodu değiştirmenizi öneririz. Bu işlevler sürümü sürümü değişebilir. Bunları tanımlamanıza yardımcı olması için burada listelenir. Ek belgeler var, ancak genel olarak, bu uygulama ayrıntılarını belirtilmeyen bağlantılar sağlanır.
 
-## <a name="internal-crt-globals-and-value-macros"></a>İç CRT Globals ve değer makroları
+## <a name="internal-crt-globals-and-value-macros"></a>İç CRT genel değişkenleri ve makroları değer
 
-Bu genel değişkenler ve makrosu tanımları CRT uygulamak için kullanılır.
+Bu genel değişkenler ve makro tanımlarını CRT uygulamak için kullanılır.
 
 |Ad|
 |----------|
@@ -883,7 +873,7 @@ Bu genel değişkenler ve makrosu tanımları CRT uygulamak için kullanılır.
 
 ## <a name="internal-crt-functions-and-function-macros"></a>İç CRT işlevleri ve işlev makroları
 
-Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı uygulamak için kullanılır.
+Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak için kullanılır.
 
 |Ad|
 |----------|
@@ -984,7 +974,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı uygulamak iç
 |__dstbias|
 |_dtest|
 |_EH_prolog|
-|_errno|
+|gt; _errno &|
 |_except_handler2|
 |[_except_handler3](../c-runtime-library/except-handler3.md)|
 |_except_handler4_common|

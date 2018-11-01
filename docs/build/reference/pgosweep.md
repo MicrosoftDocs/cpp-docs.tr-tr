@@ -1,26 +1,16 @@
 ---
-title: pgosweep | Microsoft Docs
-ms.custom: ''
+title: pgosweep
 ms.date: 03/14/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pgosweep program
 - profile-guided optimizations, pgosweep
 ms.assetid: f39dd3b7-1cd9-4c3b-8e8b-fb794744b757
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed12828d9170aac576a97c63b9988bb4b303ef58
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6e03285942b60a5c9b5647c6bb3f12cc40b0a396
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711925"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428516"
 ---
 # <a name="pgosweep"></a>pgosweep
 

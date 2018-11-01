@@ -1,25 +1,15 @@
 ---
-title: Visual Studio'da bildirim oluşturma | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'da Bildirim Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eda3e7bad6f0a58986f74491ed2c3be66295f97e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 75f8fcae2a51e4e8296f6f3c252888b6ca55ad20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520360"
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio'da Bildirim Oluşturma
 

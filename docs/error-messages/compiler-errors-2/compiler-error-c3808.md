@@ -1,41 +1,31 @@
 ---
-title: Derleyici Hatası C3808 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3808
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3808
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3808
 ms.assetid: 2ee8ac97-3ea4-417a-8710-be73a7f98cf4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40668b8b2cc1a1f85b0ad4a7ef63d89956e922b3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 0a1b0b82241c6e48d2c1941ff8122697d11492eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705211"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587739"
 ---
 # <a name="compiler-error-c3808"></a>Derleyici Hatası C3808
 
-> '*türü*': ComImport özniteliğine sahip bir sınıf üyesi tanımlanamıyor '*üye*', yalnızca soyut veya dllimport işlevleri izin verilir
+> '*türü*': ComImport özniteliğine sahip sınıf üyesi olarak tanımlanamaz '*üye*', yalnızca soyut veya dllimport işlevlerine izin veriliyor
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türetilen bir tür <xref:System.Runtime.InteropServices.ComImportAttribute> tanımlayamazsınız *üye*.
+Tan türetilmiş bir tür <xref:System.Runtime.InteropServices.ComImportAttribute> tanımlanamaz *üye*.
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3808 oluşturur.
+Aşağıdaki örnek, C3808 oluşturur.
 
 ```cpp
 // C3808.cpp

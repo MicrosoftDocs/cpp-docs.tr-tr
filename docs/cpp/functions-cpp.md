@@ -1,12 +1,6 @@
 ---
-title: İşlevler (C++) | Microsoft Docs
-ms.custom: ''
+title: İşlevler [C++]
 ms.date: 01/25/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - defaults, arguments
 - function definitions
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24eded7bac023bd2291e0c574012f72ba86b6bcf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 777bffab922bc7122444110a32874f9b77171b0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053805"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626154"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 

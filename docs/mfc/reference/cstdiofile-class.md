@@ -1,10 +1,6 @@
 ---
-title: CStdioFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStdioFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStdioFile
 - AFX/CStdioFile
@@ -14,8 +10,6 @@ f1_keywords:
 - AFX/CStdioFile::Seek
 - AFX/CStdioFile::WriteString
 - AFX/CStdioFile::m_pStream
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStdioFile [MFC], CStdioFile
 - CStdioFile [MFC], Open
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 180e84cb20b8ad4a401480aced9320a4ceb180f6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dd1a13e7cef066350f8409782b0efeba11b9d11e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083054"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456218"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2122 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2122
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2122
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2122
 ms.assetid: bc060002-cd38-481b-a144-65af035ce851
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4eab9412be46949845e1ed16bb701ae8621fac42
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eb292dfd36f5bd2200886c929ba7ee3ecfacd7f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460028"
 ---
 # <a name="compiler-error-c2122"></a>Derleyici Hatası C2122
 

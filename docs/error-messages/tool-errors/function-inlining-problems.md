@@ -1,12 +1,6 @@
 ---
-title: İşlev satır içi kullanım sorunları | Microsoft Docs
-ms.custom: ''
+title: İşlev Satır İçi Kullanım Sorunları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Ob1 C++ compiler option
 - inline functions, problems
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - -Ob2 C++ compiler option
 - function inlining problems
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98d0ed20881ef89264f7c162750f600c7f68412b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e8d2a97e4d887b914d15871ce1679c95cc3cda97
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088143"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452734"
 ---
 # <a name="function-inlining-problems"></a>İşlev Satır İçi Kullanım Sorunları
 

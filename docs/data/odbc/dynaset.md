@@ -1,12 +1,6 @@
 ---
-title: Dynaset | Microsoft Docs
-ms.custom: ''
+title: Dynaset
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC recordsets, dynasets
 - ODBC cursor library [ODBC], dynasets
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - recordsets [C++], dynasets
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: fb7af1771f6aafbc8732ed3b0d87b271fcee0128
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 66db216b92132638f04627ccf341e2e4ce20e429
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585698"
 ---
 # <a name="dynaset"></a>Dynaset
 

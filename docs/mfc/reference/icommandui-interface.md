@@ -1,10 +1,6 @@
 ---
-title: Icommanduı arabirimi | Microsoft Docs
-ms.custom: ''
+title: Icommanduı arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ICommandUI
 - AFXWINFORMS/ICommandUI
@@ -15,21 +11,15 @@ f1_keywords:
 - AFXWINFORMS/ICommandUI::Index
 - AFXWINFORMS/ICommandUI::Radio
 - AFXWINFORMS/ICommandUI::Text
-dev_langs:
-- C++
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd9ea4397c655f0ebb28d10febe82581d6ad8771
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dd5f79b8ecd65428ce1231777fa6632777859a00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467117"
 ---
 # <a name="icommandui-interface"></a>Icommanduı arabirimi
 

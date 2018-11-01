@@ -1,12 +1,7 @@
 ---
-title: Kaynak yönetimi sınıfları | Microsoft Docs
-ms.custom: ''
+title: Kaynak Yönetimi Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource management
 - managed classes, resource management
@@ -14,17 +9,12 @@ helpviewer_keywords:
 - resource management, C++ classes
 - resources [C++], management
 ms.assetid: 1040e813-f1cd-4b13-83b6-d329f8e75d2e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 511902e96870a82cfccadda4df47f47d848ae03f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 31b30d612b625d8dc170110e7c7820dec6ff18de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555720"
 ---
 # <a name="resource-management-classes"></a>Kaynak Yönetimi Sınıfları
 

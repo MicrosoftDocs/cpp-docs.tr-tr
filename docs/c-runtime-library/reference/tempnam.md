@@ -1,10 +1,6 @@
 ---
-title: tempnam | Microsoft Docs
-ms.custom: ''
+title: tempnam
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - tempnam
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - tempnam
-dev_langs:
-- C++
 helpviewer_keywords:
 - tempnam function
 ms.assetid: 42446733-f131-470f-b4d0-96918becab11
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 19764fe8f794601ba8bbd2bd5087be6a02a5c493
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b006fe2f34f5c4ab0f5c7116d925a510c1b6f570
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507932"
 ---
 # <a name="tempnam"></a>tempnam
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) yerine.

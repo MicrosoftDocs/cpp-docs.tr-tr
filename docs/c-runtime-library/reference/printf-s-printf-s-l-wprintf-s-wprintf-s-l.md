@@ -1,10 +1,6 @@
 ---
-title: printf_s, _printf_s_l, wprintf_s, _wprintf_s_l | Microsoft Docs
-ms.custom: ''
+title: printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _printf_s_l
 - wprintf_s
@@ -25,8 +21,6 @@ apitype: DLLExport
 f1_keywords:
 - wprintf_s
 - printf_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - wprintf_s function
 - tprintf_s function
@@ -42,20 +36,16 @@ helpviewer_keywords:
 - tprintf_s_l function
 - _wprintf_s_l function
 ms.assetid: 044ebb2e-5cc1-445d-bb4c-f084b405615b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ffe17ed1fc562b61d306294e970a070b03186e7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a140d63f18244ec453e97b727a2f93ca56547fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405269"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560244"
 ---
 # <a name="printfs-printfsl-wprintfs-wprintfsl"></a>printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 
-Biçimlendirilmiş çıkışı için standart çıktı akışı yazdırır. Bu sürümleri [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Baskı siparişi standart çıkış akışına biçimlendirilmiş. Bu sürümleri [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,8 +72,8 @@ int _wprintf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
-Denetim biçimlendirin.
+*Biçim*<br/>
+Biçim Denetimi.
 
 *Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler.
@@ -93,43 +83,43 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa, yazdırılan karakter veya negatif bir değer döndürür.
+Bir hata oluşursa yazdırılan karakter veya negatif bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Printf_s** işlevi biçimlendirir ve bir dizi karakter ve standart çıktı akışı değerlere yazdırır **stdout**. Bağımsız değişkenler izlerseniz *biçimi* dize *biçimi* dize bağımsız değişkenleri için çıktı biçimi belirlemek belirtimleri içermesi gerekir.
+**Printf_s** işlevi biçimlendirir ve bir dizi karakter ve değerlerini standart çıkış akışına yazdırır **stdout**. Bağımsız değişkenler izlerseniz *biçimi* dize *biçimi* dizesi bağımsız değişkenler için çıkış biçimini belirleyen belirtimler içermelidir.
 
-Arasındaki temel fark **printf_s** ve **printf** olan **printf_s** ancak geçerli biçimlendirme karakterlerini biçim dizesi denetler **printf**  yalnızca biçim dizesi null işaretçi olup olmadığını denetler. Ya da denetimi başarısız olur, bir geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev dönüşleri -1 yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+Arasındaki temel fark **printf_s** ve **printf** olan **printf_s** geçerli biçimlendirme karakterleri için biçim dizesi ise denetler **printf**  yalnızca biçim dizesinin bir null işaretçi olup olmadığını denetler. Ya da denetim de başarısız olursa, bir geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
 
-Hakkında bilgi için **errno** ve hata kodları bakın [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Hakkında bilgi için **errno** ve hata kodları [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**printf_s** ve **fprintf_s** durumlar dışında aynı şekilde davranır **printf_s** Yazar çıkışı **stdout** yerine bir hedefe türü **Dosya**. Daha fazla bilgi için bkz: [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
+**printf_s** ve **fprintf_s** aynı şekilde davranır **printf_s** çıktıları **stdout** türündebirhedefyerine**Dosya**. Daha fazla bilgi için [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
-**wprintf_s** bir joker karakter sürümü **printf_s**; *biçimi* bir joker karakter dizesidir. **wprintf_s** ve **printf_s** akış ANSI modunda açılırsa aynı şekilde davranır. **printf_s** çıktı bir UNICODE akışa şu anda desteklemiyor.
+**wprintf_s** geniş karakterli sürümüdür **printf_s**; *biçimi* geniş karakterli bir dizedir. **wprintf_s** ve **printf_s** akış ANSI modunda açıldığında aynı şekilde davranır. **printf_s** UNICODE akışına çıkış şu anda desteklemiyor.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|tanımlanan _UNICODE|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tprintf_s**|**printf_s**|**printf_s**|**wprintf_s**|
 |**_tprintf_s_l**|**_printf_s_l**|**_printf_s_l**|**_wprintf_s_l**|
 
-*Biçimi* bağımsız değişkeni sıradan karakterlerinden kaçış sıraları oluşur ve (bağımsız değişkenler izlerseniz *biçimi*) biçimlendirir. Kaçış dizileri ve sıradan karakterler kopyalanır **stdout** görünümlerini sırasıyla. Örneğin, satır
+*Biçimi* bağımsız değişkeni çıkış sıraları sıradan karakterlerden oluşur ve (geliyorsa *biçimi*) biçimlendirir. Sıradan karakterler ve kaçış dizileri kopyalanır **stdout** görünme sırasına göre. Örneğin, satır
 
 ```C
 printf_s("Line one\n\t\tLine two\n");
 ```
 
-bir çıktı üretir
+çıktıyı üretir
 
 ```Output
 Line one
         Line two
 ```
 
-[Biçimlendirir](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) her zaman yüzde işaretiyle başlar (**%**) ve soldan sağa okuyun. Zaman **printf_s** ilk biçim belirtimi (varsa), karşılaştığında sonra ilk bağımsız değişkenin değeri dönüştürür *biçimi* ve buna göre çıkarır. İkinci biçim belirtimi dönüştürülür ve çıkış, ikinci bağımsız değişkeni neden olur ve benzeri. Biçim belirtimleri sayısından daha fazla bağımsız değişken varsa, ek bağımsız değişkenleri göz ardı edilir. Tüm biçim belirtimleri için yeterli bağımsız değişken varsa sonuçları tanımlanmamış.
+[Biçim belirtimlerinden](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) her zaman yüzde işaretiyle başlar (**%**) ve soldan sağa doğru okunur. Zaman **printf_s** karşılaştığında ilk biçim belirtimiyle (varsa), sonra ilk bağımsız değişkenin değeri dönüştürür *biçimi* ve buna göre çıkarır. İkinci biçim belirtimi dönüştürülür ve çıktı, ikinci bağımsız değişkenin neden olur ve benzeri. Biçim belirtimleri sayısından daha fazla bağımsız değişken varsa, ek bağımsız değişkenler yoksayılır. Tüm biçim belirtimleri için yeterli bağımsız değişken varsa sonuçlar tanımsızdır.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
@@ -141,7 +131,7 @@ Line one
 |**printf_s**, **_printf_s_l**|\<stdio.h >|
 |**wprintf_s**, **_wprintf_s_l**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -224,7 +214,7 @@ Address as:   0012FF78
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

@@ -1,10 +1,6 @@
 ---
-title: COleObjectFactory sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleObjectFactory sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleObjectFactory
 - AFXDISP/COleObjectFactory
@@ -23,8 +19,6 @@ f1_keywords:
 - AFXDISP/COleObjectFactory::OnCreateObject
 - AFXDISP/COleObjectFactory::VerifyLicenseKey
 - AFXDISP/COleObjectFactory::VerifyUserLicense
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleObjectFactory [MFC], COleObjectFactory
 - COleObjectFactory [MFC], GetClassID
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - COleObjectFactory [MFC], VerifyLicenseKey
 - COleObjectFactory [MFC], VerifyUserLicense
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f4c2ad96674058ac57ccdc7cef9537f1cb413b92
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4aa6d688de59884c7279b441d12dda9dcdf2ff6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476017"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory sınıfı
 

@@ -1,28 +1,17 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) cihaz görüntüsü kopyalama | Microsoft Docs
-ms.custom: ''
+title: Cihaz Görüntüsü Kopyalama (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - display devices [C++], copying images
 - cursors [C++], copying
 - icons, copying
 ms.assetid: 0510c20c-f820-4770-92a5-e9263a63d8be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 84e4a552f235b6ee4af8eed64017ecbb7462f032
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46a510b4cd5f2e18faf9a2cd9bcb600f774cbffb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376908"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591912"
 ---
 # <a name="copying-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Kopyalama (Simgeler İçin Görüntü Düzenleyicisi)
 

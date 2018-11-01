@@ -1,27 +1,17 @@
 ---
-title: continue deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: continue Deyimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - continue_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - continue keyword [C++]
 ms.assetid: 3c94ee57-f732-4c1d-8537-d0ce5382bfd4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 88281d90ce15ced12079b3c66a74bb2f23c11034
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6fbc4af6a9a56f3406582ea9ba59f4d5759b88a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607486"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C++)
 

@@ -1,27 +1,17 @@
 ---
-title: BSCMAKE hatası BK1503 | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Hatası BK1503
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - BK1503
-dev_langs:
-- C++
 helpviewer_keywords:
 - BK1503
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16bf228804cb24f4fe7a2428dc581116d4cec91d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c8ca005922c3c94b557e2f1052e8811099d9948
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555814"
 ---
 # <a name="bscmake-error-bk1503"></a>BSCMAKE Hatası BK1503
 

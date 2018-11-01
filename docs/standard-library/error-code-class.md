@@ -1,10 +1,6 @@
 ---
-title: error_code sınıfı | Microsoft Docs
-ms.custom: ''
+title: error_code Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - system_error/std::error_code
 - system_error/std::error_code::value_type
@@ -14,8 +10,6 @@ f1_keywords:
 - system_error/std::error_code::default_error_condition
 - system_error/std::error_code::message
 - system_error/std::error_code::operator bool
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::error_code
 - std::error_code::value_type
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - std::error_code::default_error_condition
 - std::error_code::message
 ms.assetid: c09b4a96-cb14-4281-a319-63543f9b2b4a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b454a86957911060e33c82e79832e107313e0300
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f4d0bc2c2922374d27bba3c0693e50f7930dbe67
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703605"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593290"
 ---
 # <a name="errorcode-class"></a>error_code Sınıfı
 

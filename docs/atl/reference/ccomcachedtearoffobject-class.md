@@ -1,10 +1,6 @@
 ---
-title: CComCachedTearOffObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComCachedTearOffObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComCachedTearOffObject
 - ATLCOM/ATL::CComCachedTearOffObject
@@ -15,22 +11,16 @@ f1_keywords:
 - ATLCOM/ATL::CComCachedTearOffObject::QueryInterface
 - ATLCOM/ATL::CComCachedTearOffObject::Release
 - ATLCOM/ATL::CComCachedTearOffObject::m_contained
-dev_langs:
-- C++
 helpviewer_keywords:
 - cache, ATL cached tear-off objects
 - CComCachedTearOffObject class
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce642b6ed4017dba66d80325e7b9be8f18a7fb16
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 009bc1e20693a9e45490c58ea29ff9d28b6aa6ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076093"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582734"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject sınıfı
 

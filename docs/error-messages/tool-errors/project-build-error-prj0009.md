@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0009 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0009
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0009
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0009
 ms.assetid: 89291778-cda4-495d-983f-ddcc06dfc98b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: efeb110823e801dd86a503a7069c4898f400769e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 963b7c861f9e8ee7105ebdc23afff08c4be46465
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057190"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438109"
 ---
 # <a name="project-build-error-prj0009"></a>Proje Derleme Hatası PRJ0009
 

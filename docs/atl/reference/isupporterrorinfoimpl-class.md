@@ -1,31 +1,21 @@
 ---
-title: Isupporterrorınfoımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Isupporterrorınfoımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - ISupportErrorInfoImpl
 - ATLCOM/ATL::ISupportErrorInfoImpl
 - ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - ISupportErrorInfo ATL implementation
 - ISupportErrorInfoImpl class
 - error information, ATL
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a6d5ec8a7cd93d9e7e3628ef1e07f94cb169a7a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a4427a1190f145cc001a3288535df287326e97e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523298"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>Isupporterrorınfoımpl sınıfı
 

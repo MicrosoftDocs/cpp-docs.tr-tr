@@ -1,27 +1,17 @@
 ---
-title: Denetim adları, MFC ActiveX Denetim Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Denetim Adları, MFC ActiveX Denetim Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.ctl.names
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control names
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f62ecf189a7a273cb05d587bc608fb4f33ae689
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ceb92181fcf1fcb17033ac9524c0b113cbc710fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399567"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552717"
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>Denetim Adları, MFC ActiveX Denetim Sihirbazı
 

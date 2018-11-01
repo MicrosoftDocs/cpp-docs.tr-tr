@@ -1,26 +1,16 @@
 ---
-title: 'İzlenecek yol: Bir MFC projesine animasyon ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek Yol: MFC Projesine Animasyon Ekleme'
 ms.date: 09/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - animation [MFC]
 - MFC, animation
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16613425633f55eeed152e86c1b4fea7f00a784c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 25e29654f1e192e03a078e4a963f27abeea6056d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522245"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek Yol: MFC Projesine Animasyon Ekleme
 

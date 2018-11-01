@@ -1,30 +1,20 @@
 ---
-title: ArgTraits yapısı | Microsoft Docs
-ms.custom: ''
+title: ArgTraits Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Details::ArgTraits
 - event/Microsoft::WRL::Details::ArgTraits::args
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::ArgTraits structure
 - Microsoft::WRL::Details::ArgTraits::args constant
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 86be60fb937588a3ea9a6289740ee8dfc49893fd
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 17109508cf99888ccde79be39a41c5361da24c6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549025"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 

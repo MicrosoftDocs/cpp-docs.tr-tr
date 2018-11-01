@@ -1,10 +1,6 @@
 ---
-title: _CrtDbgReport, _CrtDbgReportW | Microsoft Docs
-ms.custom: ''
+title: _CrtDbgReport, _CrtDbgReportW
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtDbgReport
 - _CrtDbgReportW
@@ -25,8 +21,6 @@ f1_keywords:
 - CrtDbgReportW
 - _CrtDbgReportW
 - _CrtDbgReport
-dev_langs:
-- C++
 helpviewer_keywords:
 - debug reporting
 - _CrtDbgReport function
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CrtDbgReportW function
 - _CrtDbgReportW function
 ms.assetid: 6e581fb6-f7fb-4716-9432-f0145d639ecc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3d42638ec36ffa98f0e6f1ed968eba39d64b9f8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f12dafc62e302d90e5cffa04ee93e662b78295be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080200"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467801"
 ---
 # <a name="crtdbgreport-crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 

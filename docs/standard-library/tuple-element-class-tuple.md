@@ -1,27 +1,17 @@
 ---
-title: tuple_element sınıfı | Microsoft Docs
-ms.custom: ''
+title: tuple_element Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - utility/std::tuple_element
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b893b6b8c32be7bcd43acd4804694d997918177
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: b8b50e04e530e2d21b7a4e042d9feb2984e639db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234261"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596748"
 ---
 # <a name="tupleelement-class"></a>tuple_element Sınıfı
 

@@ -1,33 +1,22 @@
 ---
-title: CCustomRowset (CustomRS.H) | Microsoft Docs
-ms.custom: ''
+title: CCustomRowset (CustomRS.H)
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - cmyproviderrowset
 - myproviderrs.h
 - ccustomrowset
 - customrs.h
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderRowset class in MyProviderRS.H
 - CCustomRowset class in CustomRS.H
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 211c83ec63611c493f03e48b58619caca373ce65
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 2e54b1f3434434dc8c6028bc04a8b1dba17d8305
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434976"
 ---
 # <a name="ccustomrowset-customrsh"></a>CCustomRowset (CustomRS.H)
 

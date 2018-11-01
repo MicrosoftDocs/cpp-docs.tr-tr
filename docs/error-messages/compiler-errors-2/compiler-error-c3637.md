@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3637 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3637
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3637
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3637
 ms.assetid: 72391377-8519-43d9-870a-73a6423deb74
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 958ffc0d3aab641859b13570a94b159de80f2c7d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c79a4113e20e3798877ccda8f1392b276dee19fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574466"
 ---
 # <a name="compiler-error-c3637"></a>Derleyici Hatası C3637
 

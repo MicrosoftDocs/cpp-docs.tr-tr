@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1099 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1099
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1099
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1099
 ms.assetid: 6688a805-43e6-4247-a2d0-14be082f0b13
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3ef75a1435d8c922087fcdd21d1941961bc82cd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 395f25d8d27bc5e9b6132c87390c8c3bc19b6cc4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631224"
 ---
 # <a name="nmake-fatal-error-u1099"></a>NMAKE Önemli Hatası U1099
 

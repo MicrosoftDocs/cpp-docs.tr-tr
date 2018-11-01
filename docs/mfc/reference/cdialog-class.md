@@ -1,10 +1,6 @@
 ---
-title: CDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDialog
 - AFXWIN/CDialog
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXWIN/CDialog::SetHelpID
 - AFXWIN/CDialog::OnCancel
 - AFXWIN/CDialog::OnOK
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDialog [MFC], CDialog
 - CDialog [MFC], Create
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03cc6ab0708914f9283ac713e2a63dba02711db9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 879f7d6eb4887dfebcc9b2be393b60da4942a351
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068352"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614948"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 

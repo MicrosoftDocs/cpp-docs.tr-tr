@@ -1,29 +1,19 @@
 ---
-title: arkadaş (C++) | Microsoft Docs
-ms.custom: ''
+title: friend (C++)
 ms.date: 07/02/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - friend_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - member access, from friend functions
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2a49d760f6a91a0eec8cee74489f8e3267c2fcc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 46027692bfa4a7245418ab032168b5b3c107e839
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480528"
 ---
 # <a name="friend-c"></a>friend (C++)
 

@@ -1,27 +1,17 @@
 ---
-title: '@DataSize | Microsoft Docs'
-ms.custom: ''
+title: '@DataSize'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@DataSize'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@DataSize symbol'
 ms.assetid: c31dd6ab-0706-43ed-9a5d-024730f7931b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d47c89c238fe86392441837ba7910b819e9838f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b2c300bf7c616184ae928b4d07d8ccb93d5d37bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677581"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431193"
 ---
 # <a name="datasize"></a>@DataSize
 

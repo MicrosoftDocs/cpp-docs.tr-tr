@@ -1,10 +1,6 @@
 ---
-title: CRenderTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRenderTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRenderTarget
 - AFXRENDERTARGET/CRenderTarget
@@ -62,8 +58,6 @@ f1_keywords:
 - AFXRENDERTARGET/CRenderTarget::m_lstResources
 - AFXRENDERTARGET/CRenderTarget::m_pRenderTarget
 - AFXRENDERTARGET/CRenderTarget::m_pTextFormatDefault
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRenderTarget [MFC], CRenderTarget
 - CRenderTarget [MFC], Attach
@@ -120,16 +114,12 @@ helpviewer_keywords:
 - CRenderTarget [MFC], m_pRenderTarget
 - CRenderTarget [MFC], m_pTextFormatDefault
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 871cca2256f44542f1347e0dfc8be08805e5389e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3066f3308d0c7e5c9a04f7746585be9a9dd5bc9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400529"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588649"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget sınıfı
 

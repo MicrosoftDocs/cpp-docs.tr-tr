@@ -1,26 +1,16 @@
 ---
-title: Inspectableclass makrosu | Microsoft Docs
-ms.custom: ''
+title: InspectableClass Makrosu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::InspectableClass
-dev_langs:
-- C++
 ms.assetid: ff390b26-58cc-424f-87ac-1fe3cc692b59
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 44bdcbc84a1ed2d57b0c9a0ce9eca4feebb0b133
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 55d5aed96ff7c8b01142f8d4de81a431fdfcc2d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631601"
 ---
 # <a name="inspectableclass-macro"></a>InspectableClass Makrosu
 

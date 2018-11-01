@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3923 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3923
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3923
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3923
 ms.assetid: db8838e9-6344-4cd6-83e0-a8abeb12c4c0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b00edbb824e7815e93b961b792513a88cf96f4be
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 82bdfef997248dea11784c00fc04d1ac3b4189d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031346"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460157"
 ---
 # <a name="compiler-error-c3923"></a>Derleyici Hatası C3923
 

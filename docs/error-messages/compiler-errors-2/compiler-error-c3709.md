@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3709 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3709
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3709
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3709
 ms.assetid: d5576b04-2f93-420a-8f3e-8b8e987e8dab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e0e64a07257cf55df028383cd5347ad64eb702f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3eb2963916cbbcbd925f755f9162ce59e9bff569
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432770"
 ---
 # <a name="compiler-error-c3709"></a>Derleyici Hatası C3709
 

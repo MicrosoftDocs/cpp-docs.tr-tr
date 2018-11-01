@@ -1,31 +1,21 @@
 ---
-title: COleException sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleException
 - AFXDISP/COleException
 - AFXDISP/COleException::Process
 - AFXDISP/COleException::m_sc
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2705a1889e7b9c9c0960cce45b8dc7b411e16982
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 243ea2028b30d60a2c19b22238914682966d3b69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599348"
 ---
 # <a name="coleexception-class"></a>COleException sınıfı
 

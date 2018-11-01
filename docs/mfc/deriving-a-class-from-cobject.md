@@ -1,14 +1,8 @@
 ---
-title: CObject'ten sınıf türetme | Microsoft Docs
-ms.custom: ''
+title: CObject'ten Sınıf Türetme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - DECLARE_DYNCREATE macro [MFC]
 - DECLARE_SERIAL macro [MFC]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - CObject class [MFC], deriving serializable classes
 - CObject class [MFC], deriving from
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a102eae0dd5f96d74f7258c10c5bcce55c3a6443
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: afaddfcb0a75b7e753897768d993df7ab5d876c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065376"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566237"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 

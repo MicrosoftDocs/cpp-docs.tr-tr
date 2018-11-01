@@ -1,9 +1,6 @@
 ---
-title: Lock::is_locked | Microsoft Docs
-ms.custom: ''
+title: lock::is_locked
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - is_locked
@@ -11,22 +8,15 @@ f1_keywords:
 - lock::is_locked
 - msclr::lock.is_locked
 - lock.is_locked
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock::is_locked
 ms.assetid: d888827c-8052-47c6-87a2-8c42f60a688d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 64c0a3fbc197af66e8a57928cadc29c28b1ece1a
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 2f2eed01a2dc66b7d61899ebdfcdca9bcbd97cb6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163770"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610229"
 ---
 # <a name="lockislocked"></a>lock::is_locked
 

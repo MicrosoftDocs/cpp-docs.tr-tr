@@ -1,8 +1,6 @@
 ---
-title: '&lt;yerel ayar&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;yerel ayar&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - locale/std::has_facet
 - locale/std::isalnum
@@ -36,12 +34,12 @@ helpviewer_keywords:
 - std::tolower [C++]
 - std::toupper [C++]
 - std::use_facet [C++]
-ms.openlocfilehash: c92f4f845552f5f6c14adb08191f1bd0519c7ba9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b1ffe9e5294e4b945f81dbecbabba64c15c188a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712458"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609774"
 ---
 # <a name="ltlocalegt-functions"></a>&lt;yerel ayar&gt; işlevleri
 

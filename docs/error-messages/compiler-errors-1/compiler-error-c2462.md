@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2462 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2462
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2462
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2462
 ms.assetid: a8601bf8-f5ce-41de-9117-e2632bd4996b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65df7f4fe7f3822f2723a1709751e3b9b0f23ade
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b342f8b878c48a77336fab4921cf4a668e248ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082865"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607060"
 ---
 # <a name="compiler-error-c2462"></a>Derleyici Hatası C2462
 

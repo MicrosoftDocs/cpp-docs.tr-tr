@@ -1,26 +1,17 @@
 ---
-title: Arabirimler (ATL) | Microsoft Docs
-ms.custom: ''
+title: Arabirimler (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces
 - interfaces, COM
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef93476e669b923d642f79f480c602229d6a4322
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f6e8978c01d6689118a3a004c48e75a40151490
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594746"
 ---
 # <a name="interfaces-atl"></a>Arabirimler (ATL)
 

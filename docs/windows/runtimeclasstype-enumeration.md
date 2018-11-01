@@ -1,28 +1,18 @@
 ---
-title: RuntimeClassType numaralandırması | Microsoft Docs
-ms.custom: ''
+title: RuntimeClassType Numaralandırması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClassType
-dev_langs:
-- C++
 helpviewer_keywords:
 - RuntimeClassType enumeration
 ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a3358455755ec4c00ebea85fc13fe0022c7b6697
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 62a82d5fab9fd22e23a5244d4fda3b7f5202304c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626817"
 ---
 # <a name="runtimeclasstype-enumeration"></a>RuntimeClassType Numaralandırması
 

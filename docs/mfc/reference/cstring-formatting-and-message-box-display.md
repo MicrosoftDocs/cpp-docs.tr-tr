@@ -1,27 +1,17 @@
 ---
-title: CString biçimlendirmesi ve ileti kutusu görüntüleme | Microsoft Docs
-ms.custom: ''
+title: CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.strings
-dev_langs:
-- C++
 helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 125d0d3ec1549b9eba46cbfebfb7ecfe2c2186d9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b22eea0a20623bb6dfbbf60703b3db25ac4065d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387191"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487938"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 

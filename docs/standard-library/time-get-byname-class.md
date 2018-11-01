@@ -1,27 +1,17 @@
 ---
-title: time_get_byname sınıfı | Microsoft Docs
-ms.custom: ''
+title: time_get_byname Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xloctime/std::time_get_byname
-dev_langs:
-- C++
 helpviewer_keywords:
 - time_get_byname class
 ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9858bfe4dc1d2451e4cd5054c5909aab27ef86c3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e18f210dba03d66fa3a4ea111a6dfc61f0d0c12a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596475"
 ---
 # <a name="timegetbyname-class"></a>time_get_byname Sınıfı
 

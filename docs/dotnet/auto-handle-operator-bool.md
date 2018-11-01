@@ -1,9 +1,6 @@
 ---
-title: auto_handle::operator bool | Microsoft Docs
-ms.custom: ''
+title: auto_handle::operator bool
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_handle.operator bool
@@ -11,22 +8,15 @@ f1_keywords:
 - operator bool
 - msclr::auto_handle::operator bool
 - auto_handle::operator bool
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::operator bool
 ms.assetid: 2e535e99-cf87-4008-b588-02c587d77453
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 2534563ba85ec3d2d513c192637d3ae8b3beb971
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 95a4b324194b2e1adf8cc9596f8e2440379e5a47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565951"
 ---
 # <a name="autohandleoperator-bool"></a>auto_handle::operator bool
 

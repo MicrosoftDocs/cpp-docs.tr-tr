@@ -1,31 +1,21 @@
 ---
-title: Win32ThreadTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: Win32ThreadTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - Win32ThreadTraits
 - ATLBASE/ATL::Win32ThreadTraits
 - ATLBASE/ATL::Win32ThreadTraits::CreateThread
-dev_langs:
-- C++
 helpviewer_keywords:
 - threading [ATL], Windows threads
 - threading [ATL], creation functions
 - Win32ThreadTraits class
 ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: baab04880c19cac1e0c291f2b4d8a274dea1c21b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 79d4d1a4fbbd5b2bddeafeaa9ea37b43d1b8c259
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574817"
 ---
 # <a name="win32threadtraits-class"></a>Win32ThreadTraits sınıfı
 

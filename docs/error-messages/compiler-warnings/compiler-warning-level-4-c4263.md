@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4263 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4263
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4263
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4263
 ms.assetid: daabb05d-ab56-460f-ab6c-c74d222ef649
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf93a010ac10b8b55bd22b9ab2db12d77a02c13a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a035646aab2589523adb9eb0b201e2d4d781632c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079641"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555291"
 ---
 # <a name="compiler-warning-level-4-c4263"></a>Derleyici Uyarısı (düzey 4) C4263
 

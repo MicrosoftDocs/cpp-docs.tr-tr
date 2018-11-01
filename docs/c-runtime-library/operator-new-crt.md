@@ -1,10 +1,6 @@
 ---
-title: new işleci (CRT) | Microsoft Docs
-ms.custom: ''
+title: new işleci (CRT)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr90.dll
 - msvcr110_clr0400.dll
@@ -13,22 +9,16 @@ apilocation:
 - msvcr110.dll
 - msvcr120.dll
 apitype: DLLExport
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator new
 - scalar new
 ms.assetid: 4ae51618-a4e6-4172-b324-b99d86d1bdca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8cc1333d7cd79574134cac34fb617227206f01e8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b35fbb1ebba713b8e8e3658470ae3e72c52093f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055344"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492813"
 ---
 # <a name="operator-new-crt"></a>new işleci (CRT)
 

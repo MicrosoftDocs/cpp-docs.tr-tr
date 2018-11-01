@@ -1,10 +1,6 @@
 ---
-title: _CrtMemDifference | Microsoft Docs
-ms.custom: ''
+title: _CrtMemDifference
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtMemDifference
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - _CrtMemDifference
 - CrtMemDifference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtMemDifference function
 - _CrtMemDifference function
 ms.assetid: 0f327278-b551-482f-958b-76941f796ba4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 66bb770c2f24c0312277d23c14beef09e2265f88
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f2c6306bf604737d0ace142674b21845a08e2dee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398060"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429659"
 ---
 # <a name="crtmemdifference"></a>_CrtMemDifference
 
-Karşılaştırır iki bellek durumları ve farklılıkları (yalnızca hata ayıklama sürümü) döndürür.
+İki bellek karşılaştırır, durumları ve aralarındaki farkları (yalnızca hata ayıklama sürümü) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,37 +46,37 @@ int _CrtMemDifference(
 ### <a name="parameters"></a>Parametreler
 
 *stateDiff*<br/>
-İşaretçi bir **_CrtMemState** (döndürülen) iki bellek durumları arasındaki farklar depolamak için kullanılan yapısı.
+İşaretçi bir **_CrtMemState** iki bellek durumu (döndürülen) arasındaki farklılıkları depolamak için kullanılan yapısı.
 
-*oldState*<br/>
-Önceki bir bellek durumu işaretçisine (**_CrtMemState** yapısı).
+*Eski*<br/>
+Önceki bir bellek durumuna yönelik işaretçi (**_CrtMemState** yapısı).
 
-*newState*<br/>
-Bir sonraki bellek durumu işaretçisine (**_CrtMemState** yapısı).
+*Durum*<br/>
+Sonraki bir bellek durumuna yönelik işaretçi (**_CrtMemState** yapısı).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bellek önemli ölçüde farklı belirtiliyorsa **_CrtMemDifference** TRUE değerini döndürür. Aksi takdirde işlevi FALSE değerini döndürür.
+Önemli ölçüde farklıysa, bellek durumları **_CrtMemDifference** TRUE döndürür. Aksi takdirde işlev false değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtMemDifference** işlev karşılaştırır *oldState* ve *newState* ve bunların farklılıkları depolar *stateDiff*, sonra da kullanabilirsiniz bellek sızıntıları ve diğer bellek sorunlarını algılamak için uygulama tarafından kullanılıyor. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtMemDifference** ön işleme sırasında kaldırılır.
+**_CrtMemDifference** işlev karşılaştırır *eski* ve *durum* ve bunların farklılıkları depolar *stateDiff*, ardından da kullanabilirsiniz bellek sızıntıları ve diğer bellek sorunlarını algılamak için uygulama tarafından kullanılıyor. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtMemDifference** ön işleme sırasında kaldırılır.
 
-*newState* ve *oldState* her için geçerli bir işaretçi olmalıdır bir **_CrtMemState** tarafından doldurulmuştur Crtdbg.h, tanımlanan yapısı [_CrtMemCheckpoint](crtmemcheckpoint.md)çağırmadan önce **_CrtMemDifference**. *stateDiff* önceden ayrılmış bir örneğini gösteren bir işaretçi olmalıdır **_CrtMemState** yapısı. Varsa *stateDiff*, *newState*, veya *oldState* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ayarlanır **EINVAL** işlevi FALSE değerini döndürür.
+*Durum* ve *eski* her bir geçerli işaretçi olması gereken bir **_CrtMemState** yapısı ile doldurulmuştur Crtdbg.h, tanımlanan [_CrtMemCheckpoint](crtmemcheckpoint.md)çağırmadan önce **_CrtMemDifference**. *stateDiff* daha önce ayrılmış bir örneğine bir işaretçi olmalıdır **_CrtMemState** yapısı. Varsa *stateDiff*, *durum*, veya *eski* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ayarlanır **EINVAL** ve işlev false değerini döndürür.
 
-**_CrtMemDifference** karşılaştırır **_CrtMemState** alan bloklarında değerlerini *oldState* de için *newState* ve sonucundadepolar*stateDiff*. Blok türleri sayısı, ayrılan veya her tür için ayrılan bloğu toplam sayısı iki bellek durumlar arasında farklılık gösterir, durumları önemli ölçüde farklı olduğu söylenir. İki durumlu de depolanmış şimdiye kadar aynı anda iki durumlu ve toplam ayırmaları arasındaki fark için ayrılan en büyük miktar arasındaki farkı *stateDiff*.
+**_CrtMemDifference** karşılaştırır **_CrtMemState** alanı bloklarında değerlerini *eski* bulunanlar *durum* ve sonuçta depolar*stateDiff*. Blok türü sayısı ayrılan ya da her tür için ayrılan bloğu sayısı iki bellek durumu arasında farklılık durumları önemli ölçüde farklı olduğu söylenir. İki durum da depolanan için hiç olmadığı kadar aynı anda iki durum ve toplam miktar arasındaki fark için ayrılan en büyük miktar arasındaki fark *stateDiff*.
 
-Varsayılan olarak, iç C çalışma zamanı blokları (**_CRT_BLOCK**) bellek durumu işlemlerinde dahil edilmez. [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi,'nı açmak için kullanılabilir **_CRTDBG_CHECK_CRT_DF** , bit **_crtDbgFlag** bu blokları sızıntısı algılama ve diğer bellek durumu eklemek için işlemler. Bellek blokları serbest (**_FREE_BLOCK**) neden olmaz **_CrtMemDifference** TRUE döndürmek için.
+Varsayılan olarak, iç C çalışma zamanı blokları (**_CRT_BLOCK**) bellek durumu işlemlerinde dahil edilmez. [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi, açmak için kullanılabilir **_CRTDBG_CHECK_CRT_DF** , bit **_crtDbgFlag** bu blokları sızıntı algılama ve diğer bellek durumu dahil edilecek işlemler. Bırakılmış bellek blokları (**_FREE_BLOCK**) neden olmaz **_CrtMemDifference** TRUE döndürmek için.
 
-Yığın durumu İşlevler hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+Yığın durumu işlevleri hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_CrtMemDifference**|\<crtdbg.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 **Kitaplıklar:** hata ayıklama sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md) yalnızca.
 

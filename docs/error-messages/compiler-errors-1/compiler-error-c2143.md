@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2143 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2143
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2143
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2143
 ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c729ecbdea13c36cf5df71efa16d12853fc4433
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 0a7cbad52697ccedac75af73012f6dc69eec5a25
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890500"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582617"
 ---
 # <a name="compiler-error-c2143"></a>Derleyici Hatası C2143
 

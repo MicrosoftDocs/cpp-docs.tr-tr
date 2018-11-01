@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2555 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2555
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2555
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2555
 ms.assetid: 5e49ebb8-7c90-457a-aa12-7ca7ab6574b2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0cd401aa1ee3611befb39d630f48f6aed36211c
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: cc6c3a3a29665ccf65b77a3d9866986cb0a46b9e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48889952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528862"
 ---
 # <a name="compiler-error-c2555"></a>Derleyici Hatası C2555
 

@@ -1,10 +1,6 @@
 ---
-title: max_unbounded sınıfı | Microsoft Docs
-ms.custom: ''
+title: max_unbounded Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::max_unbounded
 - allocators/stdext::max_unbounded::allocated
@@ -12,8 +8,6 @@ f1_keywords:
 - allocators/stdext::max_unbounded::full
 - allocators/stdext::max_unbounded::released
 - allocators/stdext::max_unbounded::saved
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::max_unbounded
 - stdext::max_unbounded [C++], allocated
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - stdext::max_unbounded [C++], released
 - stdext::max_unbounded [C++], saved
 ms.assetid: e34627a9-c231-4031-a483-cbb0514fff46
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bf2d24ad916a9f7dba5a61ecb7745c3d86573c9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ba99d6ed3af34363bf88cde1a40e4bf37841cd8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955805"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555863"
 ---
 # <a name="maxunbounded-class"></a>max_unbounded Sınıfı
 

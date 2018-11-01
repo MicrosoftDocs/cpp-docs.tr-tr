@@ -1,23 +1,13 @@
 ---
-title: 2.6.2 critical yapı | Microsoft Docs
-ms.custom: ''
+title: 2.6.2 critical Yapı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c46ecd00-b4a2-4a5e-ba92-288c329e773a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e51bd425999081c7a06a7d5692dbea16c887fa0b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dcc0e6144be5daee2a225cda621db818e5a38e2c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539080"
 ---
 # <a name="262-critical-construct"></a>2.6.2 critical Yapı
 

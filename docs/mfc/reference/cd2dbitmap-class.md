@@ -1,10 +1,6 @@
 ---
-title: CD2DBitmap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DBitmap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DBitmap
 - AFXRENDERTARGET/CD2DBitmap
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DBitmap::m_sizeDest
 - AFXRENDERTARGET/CD2DBitmap::m_strPath
 - AFXRENDERTARGET/CD2DBitmap::m_uiResID
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DBitmap [MFC], CD2DBitmap
 - CD2DBitmap [MFC], CD2DBitmap
@@ -57,16 +51,12 @@ helpviewer_keywords:
 - CD2DBitmap [MFC], m_strPath
 - CD2DBitmap [MFC], m_uiResID
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57a64b1a07305c154efdfdf57651ffe3cf5f3dad
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 869d8c9cffae1a257de04cf82446025be33ef7de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605874"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap sınıfı
 

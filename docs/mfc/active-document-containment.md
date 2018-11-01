@@ -1,12 +1,6 @@
 ---
-title: Etkin belge kapsaması | Microsoft Docs
-ms.custom: ''
+title: Etkin Belge Kapsaması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - active documents [MFC], containers
 - containers [MFC], active document
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - active document containers [MFC], about active document containers
 - MFC COM, active document containment
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae5ac3ab417eddd2c0038a5948487913824ef673
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 22111a8b2f7048d9f62d9e3e2f6c270fdc9bace3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433211"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612387"
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması
 

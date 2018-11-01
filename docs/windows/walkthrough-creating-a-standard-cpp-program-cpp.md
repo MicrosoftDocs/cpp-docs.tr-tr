@@ -1,30 +1,20 @@
 ---
-title: 'İzlenecek yol: standart bir C++ programını (C++) oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: standart bir C++ programını (C++) oluşturma'
 ms.custom: get-started-article
 ms.date: 09/18/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vcfirstapp
 - vccreatefirst
-dev_langs:
-- C++
 helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 800dd3b626a03ec3b04910f6c4c1bbea3e1ab17d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 78d19a277f8bedcdbd098a662c69d6fc622a7cff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053532"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647479"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: standart bir C++ programını (C++) oluşturma
 

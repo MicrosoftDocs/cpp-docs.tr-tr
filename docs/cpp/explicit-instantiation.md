@@ -1,27 +1,17 @@
 ---
-title: Açık örnek oluşturma | Microsoft Docs
-ms.custom: ''
+title: Açık Örnekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - templates, instantiation
 - explicit instantiation
 - instantiation, explicit
 ms.assetid: 8b0d4e32-45a6-49d5-8041-1ebdd674410e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 85ea920dc01f408c7723fb082e6a0e60fa9a00e8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 45661653b4b8f1a4f94ece1c53aa86f4a431700b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575987"
 ---
 # <a name="explicit-instantiation"></a>Açık Örnekleme
 

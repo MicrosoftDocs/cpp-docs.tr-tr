@@ -1,31 +1,21 @@
 ---
-title: CMFCRibbonContextCaption sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonContextCaption sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonContextCaption
 - AFXRIBBONBAR/CMFCRibbonContextCaption
 - AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor
 - AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonContextCaption [MFC], GetColor
 - CMFCRibbonContextCaption [MFC], GetRightTabX
 ms.assetid: cce2c0a2-8370-4266-997e-f8d0eeb3d616
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5726605af6b9a0d63c15cb232a094d48dd2f95a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3e6d8dcd643a58b3df60488b50da08288a34bab9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405883"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628390"
 ---
 # <a name="cmfcribboncontextcaption-class"></a>CMFCRibbonContextCaption sınıfı
 

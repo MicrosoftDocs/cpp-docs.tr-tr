@@ -1,26 +1,16 @@
 ---
-title: ATL ile MFC arasında seçim önerileri | Microsoft Docs
-ms.custom: ''
+title: ATL ile MFC arasında seçim önerileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, ATL support
 - ATL, vs. MFC
 ms.assetid: 269325bb-11a8-4330-ad2b-a14a2458679e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a9bbf30c728b6562da0c56c25b177697f0882a5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b3c01a54c1250ae97d5377cb0b1ff49a17c3f7c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468256"
 ---
 # <a name="recommendations-for-choosing-between-atl-and-mfc"></a>ATL ile MFC arasında seçim önerileri
 

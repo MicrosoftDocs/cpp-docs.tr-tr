@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3080 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3080
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3080
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3080
 ms.assetid: ff62a3f7-9b3b-44bd-b8d9-f3a8e5354560
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d56ad174d937598178a6eb203f8ca32361db67ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5b610d54331349c53ff01f5c09bb53ff52216c26
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455828"
 ---
 # <a name="compiler-error-c3080"></a>Derleyici Hatası C3080
 

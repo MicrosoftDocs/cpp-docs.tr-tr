@@ -1,28 +1,18 @@
 ---
-title: Sanal liste denetimleri | Microsoft Docs
-ms.custom: ''
+title: Sanal Liste Denetimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - cache, virtual list control item data
 - list controls [MFC], virtual
 - list controls [MFC], List view
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5544582d65d84e95a22e78c9d663902d7df2dd24
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b9da918017d300d7af61b1fd3ab27869e136bb8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436045"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573697"
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 

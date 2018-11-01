@@ -1,12 +1,6 @@
 ---
-title: Main işlevi ve Program yürütme | Microsoft Docs
-ms.custom: ''
+title: main İşlevi ve Program Yürütme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - program startup [C++]
 - entry points, program
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - main function
 - programs [C++], terminating
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 264cee052491d42e81a39abb0842ad2f89b06e30
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e975f09b62ffbb536790c13eb8614453b1c1e8b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069618"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610437"
 ---
 # <a name="main-function-and-program-execution"></a>main İşlevi ve Program Yürütme
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2913 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2913
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2913
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2913
 ms.assetid: c6cf6090-02e8-49a5-913f-5bc6f864b769
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6da5d739c4dd9ccec71c26a3fc9101cde1535ce3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: deeabdb08f4b0fb3cd722d5d33a4d2cfffb15d61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103132"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601582"
 ---
 # <a name="compiler-error-c2913"></a>Derleyici Hatası C2913
 

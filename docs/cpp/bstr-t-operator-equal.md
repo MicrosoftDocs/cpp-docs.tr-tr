@@ -1,28 +1,18 @@
 ---
-title: _bstr_t::operator = | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::operator =
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator = [C++], bstr
 - operator= [C++], bstr
 ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35778fe3bdf75738f67b280cbbe4c8ceeb498634
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 97f0100d8a34253f3a1375d34b887d3d31a77f43
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432584"
 ---
 # <a name="bstrtoperator-"></a>_bstr_t::operator =
 

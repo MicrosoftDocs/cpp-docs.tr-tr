@@ -1,28 +1,18 @@
 ---
-title: CToolBarCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CToolBarCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CToolBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CToolBarCtrl class [MFC]
 - toolbar controls [MFC], creating
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22f6613d9d852d24b20e44e798eaaf7af1136fde
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4a325f750b65b39670168df5a85687b53fcc5a86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394446"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581434"
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl Kullanma
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2117 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2117
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2117
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2117
 ms.assetid: b947379d-5861-42fc-ac26-170318579cbd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5579a6f05e1de768aebd2e68b64d0b861688607
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2f6a1e26972f093e50c5e655935f750195ab7d3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031005"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435171"
 ---
 # <a name="compiler-error-c2117"></a>Derleyici Hatası C2117
 

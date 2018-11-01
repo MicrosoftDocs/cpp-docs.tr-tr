@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3624 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3624
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3624
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3624
 ms.assetid: eaac6a4f-eb11-4e4d-ab12-124ba995c5cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f38aece68d3ca3adff03ec0512cb78afc2e5ffa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bb574b194f01aa1da27b962ed6be327f4f988c3c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030046"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563533"
 ---
 # <a name="compiler-error-c3624"></a>Derleyici Hatası C3624
 

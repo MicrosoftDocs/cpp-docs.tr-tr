@@ -1,28 +1,18 @@
 ---
-title: __vmx_off | Microsoft Docs
-ms.custom: ''
+title: __vmx_off
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __vmx_off
-dev_langs:
-- C++
 helpviewer_keywords:
 - VMXOFF instruction
 - __vmx_off intrinsic
 ms.assetid: 78a32d46-9291-406c-b982-a550855aff18
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4799f9381ad4ff6469af30482ed3c7089e5569a8
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 24f57195b60a788c0189a295fa7b6e4818a93d83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821042"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440293"
 ---
 # <a name="vmxoff"></a>__vmx_off
 

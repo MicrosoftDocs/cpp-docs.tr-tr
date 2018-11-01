@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1078 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1078
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1078
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1078
 ms.assetid: 24087955-9362-4ddf-9966-e0de43ea4647
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b894579c56368e953c1d60aa5d2940d8c9c79f65
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cfccb9139fc1081a2651c2f54381517dce765ca8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624737"
 ---
 # <a name="nmake-fatal-error-u1078"></a>NMAKE Önemli Hatası U1078
 

@@ -1,16 +1,10 @@
 ---
-title: Derleme olayları belirtme | Microsoft Docs
-ms.custom: ''
+title: Derleme Olayları Belirtme
 ms.date: 12/28/2017
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCEventTool.CommandLine
 - VC.Project.IVCEventTool.ExcludedFromBuild
 - VC.Project.IVCEventTool.Description
-dev_langs:
-- C++
 helpviewer_keywords:
 - Pre-Link event
 - build events [C++], specifying
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - build events [C++]
 - post-build events
 ms.assetid: 788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dfdedf01c6203c483c1aa30d5d2934caa66e76d2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: af021ecc13b7cb34bc993b48dd69398de01b5e1d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523649"
 ---
 # <a name="specifying-build-events"></a>Derleme olayları belirtme
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3453 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3453
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3453
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3453
 ms.assetid: dbefdbcf-f697-4239-b7a5-1d99b85e9e7f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c35c039727cba004db879aea02c086cea4ddcec
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b3288d02c611bf6785ca1ea7757e2283d889050
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068816"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472728"
 ---
 # <a name="compiler-error-c3453"></a>Derleyici Hatası C3453
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2710 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2710
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2710
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2710
 ms.assetid: a2a6bb5b-86ad-4a6c-acd0-e2bef8464e0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94b95ce0a87a2ba894dde2ba41c0e7d704c477b6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 54d501d43652bb8e54092d44042a9525ef6f708f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112804"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618952"
 ---
 # <a name="compiler-error-c2710"></a>Derleyici Hatası C2710
 

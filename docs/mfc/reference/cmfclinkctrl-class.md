@@ -1,10 +1,6 @@
 ---
-title: CMFCLinkCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCLinkCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCLinkCtrl
 - AFXLINKCTRL/CMFCLinkCtrl
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix
 - AFXLINKCTRL/CMFCLinkCtrl::SizeToContent
 - AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCLinkCtrl [MFC], SetURL
 - CMFCLinkCtrl [MFC], SetURLPrefix
 - CMFCLinkCtrl [MFC], SizeToContent
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d405872b141d9806062fcee6c111fa567ddb10cd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bc43dcaf077bc97e3ff589a12bee6a8eac6aeed1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608591"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
 

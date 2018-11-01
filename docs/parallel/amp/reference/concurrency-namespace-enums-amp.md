@@ -1,24 +1,16 @@
 ---
-title: Eşzamanlılık ad alanı sabit listeleri (AMP) | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık ad alanı sabit listeleri (AMP)
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - amp/Concurrency::access_type
 - amp/Concurrency::queuing_mode
-dev_langs:
-- C++
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 58d70b995642eaca3dbefd75383e6d6bf06f2c62
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d78299a9ce47760e6b1340c69d8be699a5eed8a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082443"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433581"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 

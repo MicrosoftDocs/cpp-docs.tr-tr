@@ -1,10 +1,6 @@
 ---
-title: Cdocobjectserverıtem sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cdocobjectserverıtem sınıfı
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXDOCOB/CDocObjectServerItem::GetDocument
 - AFXDOCOB/CDocObjectServerItem::OnHide
 - AFXDOCOB/CDocObjectServerItem::OnShow
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDocObjectServerItem [MFC], CDocObjectServerItem
 - CDocObjectServerItem [MFC], GetDocument
 - CDocObjectServerItem [MFC], OnHide
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b5dad01bb73f04482b15e345451a0a4a6a069985
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cecbab366b64c85b39131a13233598abec83d5ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396410"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536532"
 ---
 # <a name="cdocobjectserveritem-class"></a>Cdocobjectserverıtem sınıfı
 

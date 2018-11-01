@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2369 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2369
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2369
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2369
 ms.assetid: 2a3933f6-2313-40ff-800f-921b296fdbbf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4cce5784c0ff56498922d83ff61350a6c992c76c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8abb9a7b8d15fa2dd9999612551a0d0da1e34e30
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098194"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500477"
 ---
 # <a name="compiler-error-c2369"></a>Derleyici Hatası C2369
 

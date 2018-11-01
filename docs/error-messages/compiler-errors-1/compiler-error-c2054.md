@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2054 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2054
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2054
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2054
 ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fc936bf6c42144a55bc6d84a8434959383e7e9f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7366995f8930b4733ccff73aef38ebcf65a0c120
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575662"
 ---
 # <a name="compiler-error-c2054"></a>Derleyici Hatası C2054
 

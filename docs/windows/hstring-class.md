@@ -1,9 +1,6 @@
 ---
-title: HString sınıfı | Microsoft Docs
-ms.custom: ''
+title: HString Sınıfı
 ms.date: 09/24/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString
@@ -22,8 +19,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString::Release
 - corewrappers/Microsoft::WRL::Wrappers::HString::Set
 - corewrappers/Microsoft::WRL::Wrappers::HString::~HString
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString class
 - Microsoft::WRL::Wrappers::HString::Attach method
@@ -42,17 +37,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8165a404924b997d70d0097c28ac7d34ade92fc3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 800ed98656493efc3e0ce59739dab7e4c0bc681f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484090"
 ---
 # <a name="hstring-class"></a>HString Sınıfı
 

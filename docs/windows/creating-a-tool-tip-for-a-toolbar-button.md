@@ -1,12 +1,6 @@
 ---
-title: (C++) Toolbar düğmesi için araç ipucu oluşturma | Microsoft Docs
-ms.custom: ''
+title: (C++) Toolbar düğmesi için araç ipucu oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - tool tips [C++], adding to toolbar buttons
 - "\nin tool tip"
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: 0af65342-fd78-4e78-8d0d-dc68f7fc462e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2d03b71f862e31a2bef25d89c0347c95da240642
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9179dfcc47f69b9f5db131467f0216da6363085c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558018"
 ---
 # <a name="creating-a-tool-tip-for-a-toolbar-button-c"></a>(C++) Toolbar düğmesi için araç ipucu oluşturma
 

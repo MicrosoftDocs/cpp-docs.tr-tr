@@ -1,28 +1,17 @@
 ---
-title: is_trivially_assignable sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_trivially_assignable sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_trivially_assignable
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_trivially_assignable
 ms.assetid: 1284a8f7-4093-426d-9c9a-dabb46f90d6d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd0a8bbffd3a6e0f03635b659dd3743e12c9f077
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: eeef85a0b26c25eb745258c7e0e35394f0cab979
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700771"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495166"
 ---
 # <a name="istriviallyassignable-class"></a>is_trivially_assignable sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3914 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3914
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3914
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3914
 ms.assetid: 8f3190e6-ee50-4916-9ecc-3b8748b2e1e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7bb10652a6328bb8ddcc3a8e62755a960a7fc850
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7c04da2b7574d3af0e1c05ae4adc3ad513faa0b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577906"
 ---
 # <a name="compiler-error-c3914"></a>Derleyici Hatası C3914
 

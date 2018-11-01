@@ -1,10 +1,6 @@
 ---
-title: CComControlBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComControlBase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComControlBase
 - ATLCTL/ATL::CComControlBase
@@ -81,21 +77,15 @@ f1_keywords:
 - ATLCTL/ATL::CComControlBase::m_spDataAdviseHolder
 - ATLCTL/ATL::CComControlBase::m_spInPlaceSite
 - ATLCTL/ATL::CComControlBase::m_spOleAdviseHolder
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18666cc619796bc7ee0216eb9cdf020bd8d8a6f7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fa7562f49834bf71da6bd095aec19360a43f1538
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035753"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447963"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase sınıfı
 

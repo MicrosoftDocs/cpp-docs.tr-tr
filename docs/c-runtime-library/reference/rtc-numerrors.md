@@ -1,10 +1,6 @@
 ---
-title: _RTC_NumErrors | Microsoft Docs
-ms.custom: ''
+title: _RTC_NumErrors
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_NumErrors
 apilocation:
@@ -22,27 +18,21 @@ apitype: DLLExport
 f1_keywords:
 - _RTC_NumErrors
 - RTC_NumErrors
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors
 - _RTC_NumErrors function
 - RTC_NumErrors function
 ms.assetid: 7e82adae-38e2-4f8b-bc0b-37bda8109fd1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af223e1e2d183f5357cf1d1bac96aabb042a99da
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e13f85f2140473d6e971d27abb6012effd36c37c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405919"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477200"
 ---
 # <a name="rtcnumerrors"></a>_RTC_NumErrors
 
-Çalışma zamanı hata denetimleri (RTC) tarafından algılanan hatalarının toplam sayısını döndürür. Bu sayı, denetimi olarak kullanabileceğiniz bir **için** döngü, burada her değer döngüsünde iletilir [_RTC_GetErrDesc](rtc-geterrdesc.md).
+Çalışma zamanı hata denetimleri (RTC) tarafından algılanabilir hatalarının toplam sayısını döndürür. Bu sayı denetimi olarak kullanabileceğiniz bir **için** döngü, burada her bir döngü değeri geçirilir [_RTC_GetErrDesc](rtc-geterrdesc.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,7 +52,7 @@ Bir tamsayı değeri tarafından Visual C++ çalışma zamanı hata denetimleri 
 |-------------|---------------------|
 |**_RTC_NumErrors**|\<rtcapi.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

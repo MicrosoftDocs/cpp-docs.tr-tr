@@ -1,26 +1,16 @@
 ---
-title: Geçici nesneler | Microsoft Docs
-ms.custom: ''
+title: Geçici Nesneler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - temporary objects
 - objects [C++], temporary
 ms.assetid: 4c8cec02-391e-4225-9bc6-06d150201412
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4e94fa412b76107dde90d3a6a664ec68c6b6bdaf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 19fd21da09149e730aac9bd0fb2cde066043e030
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078803"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626024"
 ---
 # <a name="temporary-objects"></a>Geçici Nesneler
 

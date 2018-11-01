@@ -1,12 +1,6 @@
 ---
-title: Özel derleme adımlarını ve derleme olaylarını anlama | Microsoft Docs
-ms.custom: ''
+title: Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - builds [C++], events
 - custom build steps [C++], customizing builds
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - build steps [C++], build events
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6522eb88eb282a1a3803e180e53027591f79374a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fbc29831a11f20e8363f1e01afcbace4896d7491
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608201"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
 

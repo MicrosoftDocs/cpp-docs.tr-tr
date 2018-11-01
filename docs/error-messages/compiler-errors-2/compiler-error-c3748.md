@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3748 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3748
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3748
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3748
 ms.assetid: 6fe71a0a-dd93-4ce6-9729-b9616360cf34
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31b2d0434ec48f0c1d7ecf767ce2746e2c603401
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ef1c446f9feb3d40add62513a31fc81a382b98e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628416"
 ---
 # <a name="compiler-error-c3748"></a>Derleyici Hatası C3748
 

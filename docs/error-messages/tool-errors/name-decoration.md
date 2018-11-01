@@ -1,27 +1,17 @@
 ---
-title: Ad düzenleme | Microsoft Docs
-ms.custom: ''
+title: Düzenlemeyi Adlandır
 ms.date: 09/05/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fa493a886509a85cc45c14f003ff07886c435280
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c01e684be62dbb8716f8556680b1c692af1efc45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036039"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598867"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 

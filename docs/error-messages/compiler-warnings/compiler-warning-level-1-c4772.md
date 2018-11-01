@@ -1,40 +1,31 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4772 | Microsoft Docs
+title: Derleyici Uyarısı (düzey 1) C4772
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4772
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cbdcfec8d36568c31c291a9de8f9af3aac821fc6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95243ab66d5d0296e1c316ff8dde7add75a030cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540029"
 ---
 # <a name="compiler-warning-level-1-c4772"></a>Derleyici Uyarısı (düzey 1) C4772
 
-> \#içeri aktarma türü eksik bir tür kitaplığından başvurulan; '*eksik türü*' yer tutucu olarak kullanılan
+> \#içeri aktarma, bir eksik tür kitaplığından bir tür başvurulan; '*eksik tür*' yer tutucu olarak kullanılan
 
-Tür kitaplığı ile başvuruldu [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi. Ancak, tür kitaplığı ile başvurulmadı başka bir tür kitaplığı başvuru bulunan `#import`. Bu bir .tlb dosyası derleyici tarafından bulunamadı.
+Bir tür kitaplığı ile başvuruldu [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi. Ancak, tür kitaplığı ile başvurulmadı başka bir tür kitaplığına bir başvuruyu bulunan `#import`. Bu bir .tlb dosyasının derleyici tarafından nebyl nalezen.
 
-Kullanırsanız derleyici tür kitaplıklarının farklı dizinlerde bulamayacaksınız olduğunu unutmayın [/ı (ek içeren dizinler)](../../build/reference/i-additional-include-directories.md) derleyici seçeneği bu dizinlerin belirtin. Tür kitaplıkları farklı dizinlerde bulmak için derleyici istiyorsanız, bu dizinlerin PATH ortam değişkenine ekleyin.
+Kullanırsanız, derleyicinin tür kitaplıklarını farklı dizinlerde bulmaz olduğunu unutmayın [/ı (ek içeren dizinler)](../../build/reference/i-additional-include-directories.md) bu dizinlerin belirtmek için derleyici seçeneği. Derleyicinin tür kitaplıklarını farklı dizinlerde bulmak istiyorsanız, bu dizinler için yol ortam değişkenine ekleyin.
 
-Varsayılan olarak, bu uyarıyı hata olarak verilir. C4772 ile /W0 atlanması olamaz.
+Varsayılan olarak, bu uyarıyı hata olarak verilir. C4772 /W0 ile atlanması olamaz.
 
 ## <a name="example"></a>Örnek
 
-İlk tür kitaplığı C4772 yeniden üretmek için gereken budur.
+İlk tür kitaplığı C4772 üretmek için gereken budur.
 
 ```IDL
 // c4772a.idl
@@ -49,7 +40,7 @@ library C4772aLib
 };
 ```
 
-İkinci tür kitaplığı C4772 yeniden üretmek için gereken budur.
+İkinci tür kitaplığı C4772 üretmek için gereken budur.
 
 ```IDL
 // c4772b.idl
@@ -67,7 +58,7 @@ library C4772bLib
 };
 ```
 
-Aşağıdaki örnek C4772 oluşturur:
+Aşağıdaki örnek, C4772 oluşturur:
 
 ```cpp
 // C4772.cpp

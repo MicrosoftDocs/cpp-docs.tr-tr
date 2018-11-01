@@ -1,32 +1,22 @@
 ---
-title: CSize sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSize sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSize
 - ATLTYPES/ATL::CSize
 - ATLTYPES/ATL::CSize::CSize
-dev_langs:
-- C++
 helpviewer_keywords:
 - SIZE
 - dimensions, MFC
 - dimensions
 - CSize class
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d9927712077f7d0d57d9ece5ae72489be291866
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a0245862fe90c108b8ffc038b723a8b5bb62a665
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431922"
 ---
 # <a name="csize-class"></a>CSize sınıfı
 

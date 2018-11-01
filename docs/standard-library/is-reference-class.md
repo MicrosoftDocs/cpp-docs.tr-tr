@@ -1,28 +1,18 @@
 ---
-title: is_reference sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_reference Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_reference class
 - is_reference
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9464e71757416e1a1efb7c185d11740bfc1da3c0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dd2d95e2c0bc20ac64b50e731122fda96c097de5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481997"
 ---
 # <a name="isreference-class"></a>is_reference Sınıfı
 

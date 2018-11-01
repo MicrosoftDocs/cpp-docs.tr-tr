@@ -1,12 +1,6 @@
 ---
-title: Kayıt görünümleri (MFC veri erişimi) | Microsoft Docs
-ms.custom: ''
+title: Kayıt görünümleri (MFC veri erişimi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], record views
 - ODBC recordsets [C++], record views
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - record views [C++]
 - forms [C++], data access tasks
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: fa8f3fd740de57cf556e723e00a8ef792adc5b36
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 155a7e4de6272f13d12ab2a64cba190a184f62cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059018"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588493"
 ---
 # <a name="record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi)
 

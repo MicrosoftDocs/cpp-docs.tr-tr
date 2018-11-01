@@ -1,11 +1,6 @@
 ---
-title: fegetexceptflag | Microsoft Docs
-ms.custom: ''
+title: fegetexceptflag
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fegetexceptflag
 apilocation:
@@ -24,25 +19,19 @@ apitype: DLLExport
 f1_keywords:
 - fegetexceptflag
 - fenv/fegetexceptflag
-dev_langs:
-- C++
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: baccf3f32381568472bd4d0d5f37d434ca789fc8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8dc82f6ee054dc3d0f86055cb63da1fc63c79a8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605484"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
-Belirtilen kayan nokta özel durumu bayrakları geçerli durumunu saklar.
+Belirtilen kayan nokta özel durumu bayrakları geçerli durumunu depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,10 +46,10 @@ int fegetexceptflag(
 ### <a name="parameters"></a>Parametreler
 
 *pstatus*<br/>
-Bir işaretçi bir **fexcept_t** tarafından belirtilen özel durum bayrakları geçerli değerlerini içeren nesne *excepts*.
+Bir işaretçi bir **fexcept_t** nesnesi tarafından belirtilen özel durum bayrakların geçerli değerler içerecek şekilde *excepts*.
 
 *excepts*<br/>
-Kayan nokta özel durumu bayrakları depolamak üzere *pstatus*.
+Depolamak için kayan nokta özel durumu bayrakları *pstatus*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -68,28 +57,28 @@ Başarılıysa 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndür
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fegetexceptflag** işlevi depolar tarafından belirtilen kayan nokta özel durumu bayrakları geçerli durumunu *excepts* içinde **fexcept_t** tarafından nesne işaret için *pstatus*.  *pstatus* geçerli bir işaret etmelidir **fexcept_t** nesne ya da sonraki davranış tanımlanmadı. **Fegetexceptflag** işlevi destekler tanımlanan bu özel durum makroları \<fenv.h >:
+**Fegetexceptflag** işlevi kayan nokta özel durum durumu bayrakları tarafından belirtilen geçerli durumunu depolar *excepts* içinde **fexcept_t** nesne tarafından işaret edilen *pstatus*.  *pstatus* geçerli bir işaret etmelidir **fexcept_t** nesne veya sonraki davranışı tanımsızdır. **Fegetexceptflag** işlevini desteklemektedir tanımlanan bu özel durum makroları \<fenv.h >:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|İçinde bir önceki kayan nokta işlemi singularity veya kutbu'na bir hata oluştu; sonsuz değerle oluşturuldu.|
-|FE_INEXACT|İşlev, bir önceki kayan nokta işlemi depolanmış sonucu yuvarlanacak zorlandı.|
+|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
+|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
 |FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Bir aralık hata oluştu; önceki bir kayan nokta işlemi sonuç gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlem sonucu tam duyarlık gösterilemeyecek kadar çok küçüktü; denormal değeri oluşturuldu.|
-|FE_ALLEXCEPT|Tüm Bitsel veya kayan nokta özel durumlar desteklenir.|
+|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
+|FE_ALLEXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
 
-*Excepts* bağımsız değişkeni sıfır olabilir bir desteklenen kayan nokta özel durum makroları veya Bitsel veya iki veya daha fazla makrolar. Herhangi bir bağımsız değişken değeri etkisini tanımlanmamıştır.
+*Excepts* sıfır bağımsız değişken olabilir desteklenen kayan nokta özel durum makroları veya bit ya da iki veya daha fazla makroları. Herhangi bir bağımsız değişken değeri etkisini tanımsızdır.
 
-Bu işlevi kullanmak için erişim kullanarak önleyebilir kayan nokta iyileştirmeler kapatmanız gerekir `#pragma fenv_access(on)` çağrı önce yönergesi. Daha fazla bilgi için bkz: [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h >|\<cfenv >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

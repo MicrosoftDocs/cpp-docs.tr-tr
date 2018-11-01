@@ -1,10 +1,6 @@
 ---
-title: sopen | Microsoft Docs
-ms.custom: ''
+title: sopen
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - sopen
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - sopen
-dev_langs:
-- C++
 helpviewer_keywords:
 - sopen function
 ms.assetid: 1ce0b707-0c9e-4942-8467-ce7f6cd68acc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5456d3c1e0f63fdc536a6c9fb17798f03282a080
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 160e30e22c1adbf6d3c7cd311e1c20723017f0bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510918"
 ---
 # <a name="sopen"></a>sopen
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_sopen](sopen-wsopen.md) veya Gelişmiş Güvenlik [_sopen_s](sopen-s-wsopen-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_sopen](sopen-wsopen.md) veya Gelişmiş güvenlikli [_sopen_s](sopen-s-wsopen-s.md) yerine.

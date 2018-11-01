@@ -1,25 +1,15 @@
 ---
-title: Bağımsız değişkenler olmadan kendi Manipülatörlerinizi yazma | Microsoft Docs
-ms.custom: ''
+title: Bağımsız Değişkenler Olmadan Kendi Manipülatörlerinizi Yazma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - manipulators
 ms.assetid: 2dc62d09-45b7-454d-bd9d-55f3c72c206d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8bfad1919863a58554604fe6d32b4563e57a14a
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 0c3037c007e9388485f9553f9d2b0a69a1980b9a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235717"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428415"
 ---
 # <a name="writing-your-own-manipulators-without-arguments"></a>Bağımsız Değişkenler Olmadan Kendi Manipülatörlerinizi Yazma
 

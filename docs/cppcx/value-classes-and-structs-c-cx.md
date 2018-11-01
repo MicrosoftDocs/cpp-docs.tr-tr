@@ -1,23 +1,16 @@
 ---
-title: Değer sınıfları ve yapıları (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Değer sınıfları ve yapıları (C + +/ CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3e054bfbfe64630c426ff82bf0d76091c7e60c7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7f716e5ebdc3cf8c832442295897ba44509ff4e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435639"
 ---
 # <a name="value-classes-and-structs-ccx"></a>Değer sınıfları ve yapıları (C + +/ CX)
 

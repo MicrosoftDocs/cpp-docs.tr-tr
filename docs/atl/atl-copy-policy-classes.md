@@ -1,12 +1,6 @@
 ---
-title: ATL kopyalama İlkesi sınıfları | Microsoft Docs
-ms.custom: ''
+title: ATL kopyalama İlkesi sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data [C++], ATL
 - classes [C++], copy policy
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - _Copy class
 - _CopyInterface class
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ee73a91c14d567754f336b1d71ad4d157781140
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 535bd1a3129bab15f546f6a82d77cf4e152fc605
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452760"
 ---
 # <a name="atl-copy-policy-classes"></a>ATL kopyalama İlkesi sınıfları
 

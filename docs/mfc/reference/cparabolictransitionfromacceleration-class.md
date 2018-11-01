@@ -1,10 +1,6 @@
 ---
-title: CParabolicTransitionFromAcceleration sınıfı | Microsoft Docs
-ms.custom: ''
+title: CParabolicTransitionFromAcceleration sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CParabolicTransitionFromAcceleration
 - AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblAcceleration
 - AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalVelocity
-dev_langs:
-- C++
 helpviewer_keywords:
 - CParabolicTransitionFromAcceleration [MFC], CParabolicTransitionFromAcceleration
 - CParabolicTransitionFromAcceleration [MFC], Create
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CParabolicTransitionFromAcceleration [MFC], m_dblFinalValue
 - CParabolicTransitionFromAcceleration [MFC], m_dblFinalVelocity
 ms.assetid: 1e59b86f-358b-4da0-a4fd-8eaf5e85e00f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3e4db0932b2a2171e47c1b8e6c42a84fa100c9e9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0b0ded2e2e8e84d265a0ccaee57af671421b6d47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389362"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502875"
 ---
 # <a name="cparabolictransitionfromacceleration-class"></a>CParabolicTransitionFromAcceleration sınıfı
 

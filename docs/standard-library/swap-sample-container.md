@@ -1,34 +1,24 @@
 ---
-title: Swap (&lt;örnek kapsayıcı&gt;) | Microsoft Docs
-ms.custom: ''
+title: Swap (&lt;örnek kapsayıcı&gt;)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - std.swap
 - std::swap
 - swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - swap function
 ms.assetid: d8dd6436-fb97-46ed-bec5-052cfd710462
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e890a0a12828701b3fd91df6b65488221ef08f50
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0bbb86e4300b76c7166e880f514bc9526f5a4a6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853771"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576850"
 ---
 # <a name="swap-ltsample-containergt"></a>Swap (&lt;örnek kapsayıcı&gt;)
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
 Yürütür `left.` [takas](../standard-library/container-class-swap.md)`(right)`.
 

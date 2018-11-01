@@ -1,28 +1,18 @@
 ---
-title: CTabCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CTabCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CTabCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3cc57f729ba029979606941f6f3eab92cc9b2351
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e4a2169d3b11b36b747f13663fdcb40baf52cd8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442298"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444688"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl Kullanma
 

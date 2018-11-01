@@ -1,10 +1,6 @@
 ---
-title: _swab | Microsoft Docs
-ms.custom: ''
+title: _swab
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _swab
 - stdlib/_swab
@@ -24,24 +20,18 @@ apitype: DLLExport
 f1_keywords:
 - _swab
 - stdlib/_swab
-dev_langs:
-- C++
 helpviewer_keywords:
 - _swab function
 - swapping bytes
 - swab function
 - bytes, swapping
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2975e63f79818e5eac430056258b72b9c6641a49
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 64753383bcb94947e6b413b5f55ac6e2d9c7dbca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100280"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603040"
 ---
 # <a name="swab"></a>_swab
 

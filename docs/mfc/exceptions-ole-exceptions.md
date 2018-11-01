@@ -1,12 +1,6 @@
 ---
-title: 'Özel durumlar: OLE özel durumları | Microsoft Docs'
-ms.custom: ''
+title: 'Özel durumlar: OLE Özel Durumları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE, exceptions
 - OLE exceptions [MFC]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - exception handling [MFC], OLE
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6013caa79e21a305ba5ff8ad6266e960bb21504a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2732f571d305fda2b739be02661ab9558f8bc653
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395251"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515430"
 ---
 # <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE Özel Durumları
 

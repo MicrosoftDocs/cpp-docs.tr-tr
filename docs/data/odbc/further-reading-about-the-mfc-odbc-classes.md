@@ -1,26 +1,15 @@
 ---
-title: MFC ODBC sınıfları hakkında daha fazla okuma | Microsoft Docs
-ms.custom: ''
+title: MFC ODBC Sınıfları Hakkında Daha Fazla Okuma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ODBC classes
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ec7a6d6d55f74333f5bdae50ad00580da71f0222
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 42f8a066728b1800ce245435584dd5e61f786440
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440345"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC Sınıfları Hakkında Daha Fazla Okuma
 

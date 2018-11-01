@@ -1,10 +1,6 @@
 ---
-title: _fpreset | Microsoft Docs
-ms.custom: ''
+title: _fpreset
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fpreset
 apilocation:
@@ -23,27 +19,21 @@ apitype: DLLExport
 f1_keywords:
 - _fpreset
 - fpreset
-dev_langs:
-- C++
 helpviewer_keywords:
 - fpreset function
 - floating-point numbers, resetting math package
 - _fpreset function
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b550df3e43b56038ae6d1b2d6695c86d90c3499
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b3ea4289cd0ff031fd2828e3c4183911459297c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592626"
 ---
 # <a name="fpreset"></a>_fpreset
 
-Kayan nokta paket sıfırlar.
+Kayan nokta paketini sıfırlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,9 +43,9 @@ void _fpreset( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fpreset** işlevi kayan nokta matematik paketini yeniden başlatır. **_fpreset** genellikle kullanılan **sinyal**, **sistem**, veya **_exec** veya **_spawn** işlevleri. Kayan nokta hata sinyalleri bir program yakalar varsa (**SIGFPE**) ile **sinyal**, harekete geçirerek, kayan nokta hataları güvenle kurtarabilirsiniz **_fpreset** ve kullanma**longjmp**.
+**_Fpreset** işlevi kayan nokta matematik paketindeki yeniden başlatır. **_fpreset** ile genellikle kullanılan **sinyal**, **sistem**, veya **_exec** veya **_spawn** işlevleri. Bir programın kayan nokta hatası sinyalleri yakalar, (**SIGFPE**) ile **sinyal**, çağırarak, kayan nokta hataları güvenli bir şekilde kurtarabilirsiniz **_fpreset** ve kullanma**longjmp**.
 
-Bu işlev ile derleme yapılırken kullanım dışıdır [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlık destekler.
+İle derlerken bu işlev kullanım dışı [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlığını destekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -63,7 +53,7 @@ Bu işlev ile derleme yapılırken kullanım dışıdır [/CLR (ortak dil çalı
 |--------------|---------------------|
 |**_fpreset**|\<float.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

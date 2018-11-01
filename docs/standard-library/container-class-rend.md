@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::rend | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::rend
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - rend method
 ms.assetid: 80f3dd04-dd2c-4b52-b0ed-d567ec5d186c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be8182bad16c832f5c65e1cb402ef2714a172a0a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ecd784a5db7949301b23895d65ec70804fb75951
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061436"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592003"
 ---
 # <a name="container-classrend"></a>Kapsayıcı Sınıfı::rend
 

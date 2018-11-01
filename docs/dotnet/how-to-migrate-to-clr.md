@@ -1,12 +1,7 @@
 ---
-title: "Nasıl yapılır: - CLR'ye geçiş | Microsoft Docs"
+title: "Nasıl yapılır: - CLR'ye geçiş"
 ms.custom: get-started-article
 ms.date: 09/18/2018
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - upgrading Visual C++ applications, /clr compiler option
 - compiling native code [C++]
@@ -15,17 +10,12 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f7ecf84317f8d88748e4a50a43c173a3fe41e0e2
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: d293b6c3795b9abe57da0c6bcb92dd3f1de810ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454450"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 

@@ -1,27 +1,17 @@
 ---
-title: no_implementation | Microsoft Docs
-ms.custom: ''
+title: no_implementation
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - no_implementation
-dev_langs:
-- C++
 helpviewer_keywords:
 - no_implementation attribute
 ms.assetid: bdc67785-e131-409c-87bc-f4d2f4abb07b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f169b30394e3fdf893475a49946266143772eb7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d4e55d06bef823d28c5deb3467654bc530a3853e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078069"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456790"
 ---
 # <a name="noimplementation"></a>no_implementation
 **C++ özgü**

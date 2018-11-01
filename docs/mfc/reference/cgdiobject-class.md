@@ -1,10 +1,6 @@
 ---
-title: CGdiObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGdiObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CGdiObject
 - AFXWIN/CGdiObject
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXWIN/CGdiObject::GetSafeHandle
 - AFXWIN/CGdiObject::UnrealizeObject
 - AFXWIN/CGdiObject::m_hObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGdiObject [MFC], CGdiObject
 - CGdiObject [MFC], Attach
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 097d2a636ae277f2391815f531464ed5ee10571f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 451ae70745a3f8bcad3bb48cda0e1b731b4fd0ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398202"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578626"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 

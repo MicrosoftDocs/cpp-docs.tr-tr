@@ -1,29 +1,19 @@
 ---
-title: '#Yönergesi (C/C++) satırı | Microsoft Docs'
-ms.custom: ''
+title: '#Satır yönergesi (C/C++)'
 ms.date: 10/18/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '#line'
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessor, directives
 - line directive (#line)
 - '#line directive'
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0994c8266828ab8bff8d43171c275d9058a3b7ce
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: e478d287af097081910d192e2ac0fbee6890bfa2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464470"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614766"
 ---
 # <a name="line-directive-cc"></a>#line Yönergesi (C/C++)
 

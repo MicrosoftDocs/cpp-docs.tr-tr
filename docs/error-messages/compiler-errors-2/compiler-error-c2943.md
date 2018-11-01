@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2943 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2943
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2943
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2943
 ms.assetid: ede6565e-d892-44c0-8eee-c69545f3be2e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4849e138cdbef97595d4aa1bbb45c277e7feb96a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 53340611ef92aac7c9bed30f364fed424fdfe140
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047336"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469539"
 ---
 # <a name="compiler-error-c2943"></a>Derleyici Hatası C2943
 

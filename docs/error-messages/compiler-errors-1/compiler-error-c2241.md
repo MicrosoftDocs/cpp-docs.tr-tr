@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2241 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2241
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2241
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2241
 ms.assetid: 2f4e2c2c-b95c-4afe-bbe0-4214cd39d140
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd97551e0feaecce776cc552353716c67822f273
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 88f25931d84fe3884ebecbc97b9ddd73390bacc2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055903"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618898"
 ---
 # <a name="compiler-error-c2241"></a>Derleyici Hatası C2241
 

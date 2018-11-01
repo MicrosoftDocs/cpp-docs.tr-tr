@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: kümeleri birleştirmek için combinable kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - combinable class, example
 - combining sets with combinable [Concurrency Runtime]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69f48ed099fe033ba1847a3414ed8e5c5ce88f71
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c4d245688dd000ea61b538c4f3957246b9852ec5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571814"
 ---
 # <a name="how-to-use-combinable-to-combine-sets"></a>Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma
 

@@ -1,12 +1,6 @@
 ---
-title: İşlevsellik düzeylerini belirtme | Microsoft Docs
-ms.custom: ''
+title: İşlevsellik Düzeylerini Belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObject class [MFC], adding functionality to derived classes
 - runtime [MFC], class information
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - run-time class [MFC], information support
 - levels [MFC]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 765a5293f233cb6df0654416ea2a5463df1095a8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3fb9b18712b24046e05f05834caaac2819fb73dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494659"
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
 

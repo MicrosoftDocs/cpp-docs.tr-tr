@@ -1,28 +1,17 @@
 ---
-title: HelpString (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: HelpString (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.helpstring
-dev_langs:
-- C++
 helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8cca35d151d0f28c7273c84643662b442afbd3a3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 12707dde61013caa1ed9feb1d0daa74cbb7b9d9a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591379"
 ---
 # <a name="helpstring"></a>helpstring
 

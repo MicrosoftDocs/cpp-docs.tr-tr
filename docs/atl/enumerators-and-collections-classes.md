@@ -1,27 +1,18 @@
 ---
-title: Numaralandırıcı ve koleksiyon sınıfları (ATL) | Microsoft Docs
-ms.custom: ''
+title: Numaralandırıcı ve koleksiyon sınıfları (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.enum
-dev_langs:
-- C++
 helpviewer_keywords:
 - enumerators, ATL classes
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c84becc5b7117c9095a055e6a815e52396987800
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 28c741ec40b6d350dd5c5b1e777bd05ec083ad47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538036"
 ---
 # <a name="enumerators-and-collections-classes"></a>Numaralandırıcı ve koleksiyon sınıfları
 
