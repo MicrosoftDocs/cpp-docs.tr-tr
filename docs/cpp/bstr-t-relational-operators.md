@@ -1,10 +1,6 @@
 ---
-title: _bstr_t ilişkisel işleçleri | Microsoft Docs
-ms.custom: ''
+title: _bstr_t İlişkisel İşleçleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::operator>
 - _bstr_t::operator==
@@ -13,8 +9,6 @@ f1_keywords:
 - _bstr_t::operator<
 - _bstr_t::operator<=
 - _bstr_t::operator!
-dev_langs:
-- C++
 helpviewer_keywords:
 - '>= operator [C++], comparing specific objects'
 - operator<= [C++], bstr
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - operator < [C++], bstr
 - operator > [C++], bstr
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0804e2a3e9d2f1fc37fae1eb72599f481e6b8c7e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7c6af285e2a3cb712ecad10f1bdc6ea5f7c56194
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569656"
 ---
 # <a name="bstrt-relational-operators"></a>_bstr_t İlişkisel İşleçleri
 
@@ -55,7 +45,7 @@ ms.locfileid: "46021011"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-bool operator!( ) const throw( ); 
+bool operator!( ) const throw( ); 
 bool operator==(const _bstr_t& str) const throw( );
 bool operator!=(const _bstr_t& str) const throw( );
 bool operator<(const _bstr_t& str) const throw( );

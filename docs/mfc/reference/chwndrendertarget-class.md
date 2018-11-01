@@ -1,10 +1,6 @@
 ---
-title: CHwndRenderTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHwndRenderTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHwndRenderTarget
 - AFXRENDERTARGET/CHwndRenderTarget
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXRENDERTARGET/CHwndRenderTarget::ReCreate
 - AFXRENDERTARGET/CHwndRenderTarget::Resize
 - AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHwndRenderTarget [MFC], CHwndRenderTarget
 - CHwndRenderTarget [MFC], Attach
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CHwndRenderTarget [MFC], Resize
 - CHwndRenderTarget [MFC], m_pHwndRenderTarget
 ms.assetid: aa65b69f-7202-46ea-af81-ef325da0b840
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fbbc8a6aa76cb5ebd6efe8f7bba231ad342067f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 439ff0152ec69575f21faa332d8fac4bbe779a16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551872"
 ---
 # <a name="chwndrendertarget-class"></a>CHwndRenderTarget sınıfı
 

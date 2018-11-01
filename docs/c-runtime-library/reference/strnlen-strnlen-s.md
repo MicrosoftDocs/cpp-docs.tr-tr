@@ -1,10 +1,6 @@
 ---
-title: strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l | Microsoft Docs
-ms.custom: ''
+title: strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcsnlen
 - strnlen_s
@@ -40,8 +36,6 @@ f1_keywords:
 - _mbstrnlen
 - strnlen
 - _tcscnlen_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tcscnlen function
 - _mbstrnlen function
@@ -63,23 +57,19 @@ helpviewer_keywords:
 - string length
 - strnlen_l function
 ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22adcaafc54a6b086629b7b9087b7088001bba85
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f7f5050a0ab4ff0f35a28faf039688eedc2f3a8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417766"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602572"
 ---
 # <a name="strnlen-strnlens-wcsnlen-wcsnlens-mbsnlen-mbsnlenl-mbstrnlen-mbstrnlenl"></a>strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 
-Geçerli yerel ayarları veya içinde geçirilen birini kullanarak bir dize uzunluğunu alır. Daha güvenli sürümlerini bunlar [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).
+Geçerli yerel ayarı veya içinde geçen bir kullanarak bir dizenin uzunluğunu alır. Bunlar daha güvenli sürümleri [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).
 
 > [!IMPORTANT]
-> **_mbsnlen**, **_mbsnlen_l**, **_mbstrnlen**, ve **_mbstrnlen_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnlen**, **_mbsnlen_l**, **_mbstrnlen**, ve **_mbstrnlen_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -123,32 +113,32 @@ size_t _mbstrnlen_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Sonlandırılmış dize.
+Null ile sonlandırılmış dize.
 
 *numberOfElements*<br/>
-Dize arabellek boyutu.
+Dize arabelleğinin boyutu.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler sonlandırma null karakteri içermeyen dizesinde karakterlerin sayısını döndürür. İlk içinde null Sonlandırıcı ise *numberOfElements* bayt dizesi (veya uluslararası karakterler için **wcsnlen**), ardından *numberOfElements* döndürülür hata koşulu belirtin; null ile sonlandırılmış dizeler sahip kesinlikle olan uzunlukları değerinden *numberOfElements*.
+Bu işlevler, sondaki null karakter hariç dizesindeki karakterlerin sayısını döndürür. İlk null Sonlandırıcı ise *numberOfElements* dizenin bayt (veya geniş karakterler için **wcsnlen**), ardından *numberOfElements* döndürülür hata koşulu belirtin; null ile sonlandırılmış dizeler sahip olan kesinlikle az *numberOfElements*.
 
-**_mbstrnlen** ve **_mbstrnlen_l** geçersiz birden çok baytlı karakter dizesi içeriyorsa, -1 döndürür.
+**_mbstrnlen** ve **_mbstrnlen_l** dize geçersiz bir çok baytlı karakter içeriyorsa, -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> **strnlen** için yenileme değildir **strlen**; **strnlen** yalnızca bilinen boyuttaki bir arabelleği gelen güvenilmeyen verilerin boyutunu hesaplamak için kullanılması amaçlanmıştır — Örneğin, bir ağ paketi. **strnlen** uzunluğunu hesaplar ancak Sonlandırılmamış dize arabellek sonunun yol değil. Diğer durumlarda, kullanın **strlen**. (Aynı durum geçerlidir **wcsnlen**, **_mbsnlen**, ve **_mbstrnlen**.)
+> **strnlen** yerine değil **strlen**; **strnlen** yalnızca bilinen boyutunun arabellekteki güvenilmeyen gelen verilerin boyutunu hesaplamak için kullanılması amaçlanmıştır — Örneğin, bir ağ paketi. **strnlen** uzunluğunu hesaplar ama Sonlandırılmamış dize arabellek sonunun yol değil. Diğer durumlarda, kullanın **strlen**. (Aynı geçerlidir **wcsnlen**, **_mbsnlen**, ve **_mbstrnlen**.)
 
-Bu işlevlerin her biri karakter sayısını verir *str*, sonlandırma null karakteri dahil değil. Ancak, **strnlen** ve **strnlen_s** tek baytlı karakter dizesi şeklinde dizesini yorumlayabilmesi ve çok baytlı dize içerse bile, bu nedenle, dönüş değeri her zaman bayt sayısına eşit karakter. **wcsnlen** ve **wcsnlen_s** joker karakter sürümleri **strnlen** ve **strnlen_s** sırasıyla; bağımsız değişkenleri **wcsnlen**  ve **wcsnlen_s** joker karakter dizeleri ve karakter sayısını joker karakter birimlerinde. Aksi takdirde, **wcsnlen** ve **strnlen** olduğu gibi aynı şekilde davranır **strnlen_s** ve **wcsnlen_s**.
+Bu işlevlerin her biri, karakter sayısını döndürür *str*, sondaki boş karakter dahil değil. Ancak, **strnlen** ve **strnlen_s** dize bir tek baytlı karakter dizesi olarak yorumlar ve çok baytlı bir dize içeriyor olsa bile bu nedenle, dönüş değeri her zaman bayt sayısına eşit karakter. **wcsnlen** ve **wcsnlen_s** geniş karakterli sürümleridir **strnlen** ve **strnlen_s** sırasıyla; bağımsız değişkenler için **wcsnlen**  ve **wcsnlen_s** karakter sayısı olan geniş karakter birimleriyle ve geniş karakterli dizelerdir. Aksi takdirde, **wcsnlen** ve **strnlen** gibi aynı şekilde davranır **strnlen_s** ve **wcsnlen_s**.
 
-**strnlen**, **wcsnlen**, ve **_mbsnlen** parametrelerini doğrulamaz. Varsa *str* olan **NULL**, erişim ihlali oluşur.
+**strnlen**, **wcsnlen**, ve **_mbsnlen** kendi parametrelerini doğrulamazlar. Varsa *str* olduğu **NULL**, erişim ihlali oluşur.
 
-**strnlen_s** ve **wcsnlen_s** kendi parametreleri doğrulayın. Varsa *str* olan **NULL**, İşlevler 0 döndürür.
+**strnlen_s** ve **wcsnlen_s** kendi parametrelerini doğrular. Varsa *str* olduğu **NULL**, İşlevler, 0 döndürür.
 
-**_mbstrnlen** ayrıca parametreleri doğrular. Varsa *str* olan **NULL**, veya *numberOfElements* değerinden daha büyük **INT_MAX**, **_mbstrnlen** bölümünde açıklandığı gibi bir geçersiz parametre özel durum oluşturur [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_mbstrnlen** ayarlar **errno** için **EINVAL** ve -1 döndürür.
+**_mbstrnlen** Ayrıca kendi parametrelerini doğrular. Varsa *str* olduğu **NULL**, veya *numberOfElements* büyüktür **INT_MAX**, **_mbstrnlen** bölümünde anlatıldığı gibi geçersiz parametre özel durum oluşturur [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **_mbstrnlen** ayarlar **errno** için **EINVAL** ve -1 döndürür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -158,9 +148,9 @@ Bu işlevlerin her biri karakter sayısını verir *str*, sonlandırma null kara
 |**_tcscnlen**|**strnlen**|**_mbsnlen**|**wcsnlen**|
 |**_tcscnlen_l**|**strnlen**|**_mbsnlen_l**|**wcsnlen**|
 
-**_mbsnlen** ve **_mbstrnlen** çok baytlı karakter dizesi içinde birden çok baytlı karakterlerin sayısını döndürür. **_mbsnlen** birden çok baytlı kod sayfasına göre çok baytlı karakter sıralarının tanır, şu anda kullanımda veya geçirilen yerel göre; çok baytlı karakter geçerlilik için sınama değil. **_mbstrnlen** testleri için çok baytlı karakter geçerlilik ve çok baytlı karakter sıralarının tanır. Varsa geçirilir dize **_mbstrnlen** geçersiz bir birden çok baytlı karakter içeriyor **errno** ayarlanır **EILSEQ**.
+**_mbsnlen** ve **_mbstrnlen** bir çok baytlı karakter dizesi içinde birden çok baytlı karakter sayısını döndürür. **_mbsnlen** tanır çok baytlı kod sayfasına göre çok baytlı karakter sıralarını şu anda kullanımda veya geçirilen yerel ayara göre; çok baytlı karakter geçerliliğini test yok. **_mbstrnlen** çok baytlı karakter geçerliliğini sınar ve çok baytlı karakter sıralarını tanır. Geçirilen dize **_mbstrnlen** geçersiz bir çok baytlı karakter içeren **errno** ayarlanır **EILSEQ**.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Olanları yok dışında bu işlevler sürümleri özdeş sahip **_l** soneki, bu yerel ayara bağımlı davranış ve olan sürümleri için geçerli yerel kullanan **_l** soneki Bunun yerine geçirilen yerel ayar parametresi kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Sürücüler, yoksa dışında bu işlevlerin sürümleri özdeş sahip **_l** soneki, yerel ayara bağımlı Bu davranış ve sahip sürümler için geçerli yerel ayarı kullanır **_l** soneki Bunun yerine iletilen yerel ayar parametresini kullanın. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -171,7 +161,7 @@ Bu işlevlerin her biri karakter sayısını verir *str*, sonlandırma null kara
 |**_mbsnlen**, **_mbsnlen_l**|\<Mbstring.h >|
 |**_mbstrnlen**, **_mbstrnlen_l**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

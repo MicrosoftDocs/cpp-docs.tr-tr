@@ -1,28 +1,18 @@
 ---
-title: Türetilen ileti eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: Türetilen İleti Eşlemeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message handling [MFC], derived message handlers
 - messages, routing
 - message maps [MFC], derived
 - derived message maps
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a1bb9b05a6d3149e7bb6ac5e472652b499ff22c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1413290bc04af37a6d3204150dff5244e1dcb5c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416155"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662534"
 ---
 # <a name="derived-message-maps"></a>Türetilen İleti Eşlemeleri
 

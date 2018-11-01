@@ -1,10 +1,6 @@
 ---
-title: Kaldır, _wremove | Microsoft Docs
-ms.custom: ''
+title: kaldır, _wremove
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wremove
 - remove
@@ -25,8 +21,6 @@ f1_keywords:
 - remove
 - _wremove
 - _tremove
-dev_langs:
-- C++
 helpviewer_keywords:
 - tremove function
 - _wremove function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36cdc09107a66067b358cb2fd72ec9bd1b2b30a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d5636912ea36fd1b1412a556d516ac3e8184e0b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406439"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613982"
 ---
 # <a name="remove-wremove"></a>kaldır, _wremove
 
@@ -64,18 +54,18 @@ int _wremove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yol*<br/>
+*Yolu*<br/>
 Kaldırılacak dosyanın yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya başarıyla silinirse bu işlevlerin her biri 0 döndürür. Aksi takdirde, -1 döndürür ve ayarlar **errno** ya da **EACCES** salt okunur bir dosya yolunu belirtir veya dosya açıksa belirtmek üzere veya **ENOENT** belirtmek için Dosya adı veya yolu bulunamadı veya yol bir dizin belirtir.
+Dosya başarıyla silinirse bu işlevlerin her biri 0 döndürür. Aksi takdirde, -1 döndürür ve ayarlar **errno** ya da **SPAWN** salt okunur bir dosya yolunu belirtir ya da dosya açıksa belirtmek üzere veya **ENOENT** göstermek için Dosya adı veya yolu bulunamadı veya yol bir dizin belirtir.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.
+Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kaldırmak** işlevi tarafından belirtilen dosyayı siler *yolu.* **_wremove** bir joker karakter sürümü **_remove**; *yolu* bağımsız değişkeni **_wremove** bir joker karakter dizesidir. **_wremove** ve **_remove** Aksi takdirde aynı şekilde davranır. Silinebilmesi için önce bir dosyaya tüm tanıtıcıları kapatılmalıdır.
+**Kaldır** işlevi tarafından belirtilen dosya siler *yolu.* **_wremove** geniş karakterli sürümüdür **_kaldır**; *yolu* bağımsız değişkeni **_wremove** geniş karakterli bir dizedir. **_wremove** ve **_kaldır** aynı şekilde davranır. Silinebilmesi için önce tüm dosya tanıtıcıları kapatılmalıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -90,7 +80,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |**remove**|\<stdio.h > veya \<io.h >|
 |**_wremove**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

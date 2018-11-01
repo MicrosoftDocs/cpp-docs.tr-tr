@@ -1,27 +1,17 @@
 ---
-title: _umul128 | Microsoft Docs
-ms.custom: ''
+title: _umul128
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __umul128
-dev_langs:
-- C++
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f6ca4db1103494c8c55d792391ac714311a3a7cd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f5df1e0689be71e21f778cf64a69764e1fef3b86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676622"
 ---
 # <a name="umul128"></a>_umul128
 
@@ -32,10 +22,10 @@ ms.locfileid: "46444088"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned __int64 _umul128( 
-   unsigned __int64 Multiplier, 
-   unsigned __int64 Multiplicand, 
-   unsigned __int64 *HighProduct 
+unsigned __int64 _umul128( 
+   unsigned __int64 Multiplier, 
+   unsigned __int64 Multiplicand, 
+   unsigned __int64 *HighProduct 
 );
 ```
 

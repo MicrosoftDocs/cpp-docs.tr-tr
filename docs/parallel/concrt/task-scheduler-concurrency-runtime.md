@@ -1,12 +1,6 @@
 ---
-title: Görev Zamanlayıcı (eşzamanlılık çalışma zamanı) | Microsoft Docs
-ms.custom: ''
+title: Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - oversubscription [Concurrency Runtime]
 - task scheduler [Concurrency Runtime], oversubscription
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - scheduler policies [Concurrency Runtime]
 - task scheduler [Concurrency Runtime], wait function
 ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56f7f35169b349abb5f7db14b3f3a749ab7dd673
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 91ef4ed14fa1ddc25ff494f6666a50f5b39b8a54
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676713"
 ---
 # <a name="task-scheduler-concurrency-runtime"></a>Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2726 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2726
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2726
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2726
 ms.assetid: f0191bb7-c175-450b-bf09-a3213db96d09
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e421839e75bcc570578d7c37eecc8ab076321d7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0ade9317c996bb3432e7a4626fc930a3d5df349
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575649"
 ---
 # <a name="compiler-error-c2726"></a>Derleyici Hatası C2726
 

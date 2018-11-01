@@ -1,29 +1,19 @@
 ---
-title: CGopherFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGopherFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CGopherFile
 - AFXINET/CGopherFile
 - AFXINET/CGopherFile::CGopherFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGopherFile [MFC], CGopherFile
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 083ed824ce8586295e398d32ed14e17f8d334358
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9e5fbdcd14c0f988e894718f357d40e4b238c7c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080955"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658204"
 ---
 # <a name="cgopherfile-class"></a>CGopherFile sınıfı
 

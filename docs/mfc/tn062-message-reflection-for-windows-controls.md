@@ -1,14 +1,8 @@
 ---
-title: 'TN062: Windows denetimleri için yansıma iletisi | Microsoft Docs'
-ms.custom: ''
+title: 'TN062: Windows Denetimleri için İleti Yansıması'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.controls.messages
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_WM_VKEYTOITEM_REFLECT macro [MFC]
 - ON_WM_DRAWITEM_REFLECT macro [MFC]
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - WM_NOTIFY message [MFC]
 - ON_CONTROL_REFLECT macro
 ms.assetid: 53efb0ba-fcda-4fa0-a3c7-14e0b78fb494
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 994095042dc473fda315b6d842d9ec9355ff3671
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: aa189eec430d72bef753fef7ebbe9ad929d76c87
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055404"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677506"
 ---
 # <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows Denetimleri için İleti Yansıması
 

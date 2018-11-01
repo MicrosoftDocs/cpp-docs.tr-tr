@@ -1,10 +1,6 @@
 ---
-title: COSH, coshf, coshl | Microsoft Docs
-ms.custom: ''
+title: COSH, coshf, coshl
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - cosh
 - coshf
@@ -26,24 +22,18 @@ f1_keywords:
 - cosh
 - coshf
 - coshl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cosh function
 - coshf function
 - coshl function
 - trigonometric functions
 - hyperbolic functions
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d77bb1d1b8f055bb4fe11d4c44c48fb3bf3be535
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0f55e084e760cb6d04dbe7ec4fefb5e2ac1d79fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609540"
 ---
 # <a name="cosh-coshf-coshl"></a>COSH, coshf, coshl
 
@@ -71,28 +61,28 @@ Radyan cinsinden açı.
 
 Hiperbolik kosinüsünü *x*.
 
-Sonuç, çok büyük ise varsayılan olarak, bir **cosh**, **coshf**, veya **coshl** çağrısı, işlevi döndürür **HUGE_VAL** ve Ayarlar**errno** için **ERANGE**.
+Varsayılan olarak sonuç çok büyükse bir **cosh**, **coshf**, veya **coshl** işlevi döndürür, çağrı **HUGE_VAL** ve Ayarlar**errno** için **ERANGE**.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **UL**|yok|**_DOMAIN**|
-|*x* ≥ 7.104760e + 002|**KESİN OLMAYAN**+**TAŞMASI**|**TAŞMA**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
+|*x* ≥ 7.104760e + 002|**FİLTRESİNİN**+**TAŞMASI**|**TAŞMA**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cosh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **cosh** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cosh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **cosh** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-------------|---------------------|-|
 |**coshf**, **cosl**, **coshl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md).
+Örnekte bakın [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

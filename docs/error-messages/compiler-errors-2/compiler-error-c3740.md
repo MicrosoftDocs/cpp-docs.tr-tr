@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3740 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3740
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3740
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3740
 ms.assetid: edb17a90-2307-4df6-943d-580460d26d2b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6bda1392ae4ebe95c6038b8dd0ec322b32ba4d8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dd493e4759b2fb70918bf94f14f4ada022e326b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547231"
 ---
 # <a name="compiler-error-c3740"></a>Derleyici Hatası C3740
 

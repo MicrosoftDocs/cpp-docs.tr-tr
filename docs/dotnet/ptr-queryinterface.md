@@ -1,31 +1,21 @@
 ---
-title: PTR::QueryInterface | Microsoft Docs
-ms.custom: ''
+title: ptr::QueryInterface
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr.QueryInterface
 - ptr::QueryInterface
 - msclr::com::ptr::QueryInterface
 - msclr.com.ptr.QueryInterface
-dev_langs:
-- C++
 helpviewer_keywords:
 - QueryInterface method
 ms.assetid: c2619517-3fde-493b-b12d-da8f62d5d803
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 789aac3872e0735fa34bf9c7d5a0cc13ccf41f05
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f596a26213ad75bc835b01e69fe57cece580f8ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677454"
 ---
 # <a name="ptrqueryinterface"></a>ptr::QueryInterface
 

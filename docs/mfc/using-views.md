@@ -1,12 +1,6 @@
 ---
-title: Görünümleri kullanma | Microsoft Docs
-ms.custom: ''
+title: Görünümleri Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interacting with users and role of view class [MFC]
 - drawing [MFC], data
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - user input [MFC], interpreting through view class [MFC]
 - view classes [MFC], role in displaying application data
 ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fcf4af038617cce8326a3e63ba9b4ea66c277f66
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2038f2669d3aa8b5c4bf91b0ba0b38fbec9a1fc8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442103"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605706"
 ---
 # <a name="using-views"></a>Görünümleri Kullanma
 

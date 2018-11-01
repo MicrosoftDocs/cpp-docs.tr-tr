@@ -1,12 +1,6 @@
 ---
-title: IDL öznitelikleri (C++ COM) | Microsoft Docs
-ms.custom: ''
+title: IDL öznitelikleri (C++ COM)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 - IDL attributes
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - IDL files [C++], attributes
 - .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 87ab9e42af139f9b156fa2a688558077967dfa8c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6e88edf114e180a118d0467d5425d16e50d7c216
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067806"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593499"
 ---
 # <a name="idl-attributes"></a>IDL Öznitelikleri
 

@@ -1,26 +1,16 @@
 ---
-title: typeid (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: typeid (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1196956208d490674d4705a8d1e61ea3381d94a2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 28d37c80d8a6ed560746f243807eff51f713d74c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065193"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580793"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid (C + +/ CLI ve C + +/ CX)
 

@@ -1,12 +1,6 @@
 ---
-title: Bildirimleri destekleme | Microsoft Docs
-ms.custom: ''
+title: Bildirimleri Destekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - notifications [C++], OLE DB consumers
 - events [C++], notifications in OLE DB
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates, notifications
 - OLE DB providers, notifications
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 984f1bf9e716c94885df62d91f670627e89b7aab
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 92af327ee69de73697464de59e8c29bdd971b46d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616560"
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
 

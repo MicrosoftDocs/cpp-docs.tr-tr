@@ -1,9 +1,6 @@
 ---
-title: auto_handle::operator auto_handle | Microsoft Docs
-ms.custom: ''
+title: auto_handle::operator auto_handle
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr.auto_handle.operator auto_handle
@@ -11,22 +8,15 @@ f1_keywords:
 - msclr::auto_handle::operator auto_handle
 - auto_handle.operator auto_handle
 - auto_handle::operator auto_handle
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator auto_handle
 ms.assetid: 2f8b35d1-2783-4d91-b6fb-eae551270fb8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 5b9ac6d95855ffa7e8887d086447f519cf78866f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7651d82c20e52d86acb2e41fbac2e585a3a4b75a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596215"
 ---
 # <a name="autohandleoperator-autohandle"></a>auto_handle::operator auto_handle
 

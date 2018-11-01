@@ -1,31 +1,21 @@
 ---
-title: FreeList sınıfı | Microsoft Docs
-ms.custom: ''
+title: freelist Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::freelist
 - allocators/stdext::freelist::pop
 - allocators/stdext::freelist::push
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::freelist
 - stdext::freelist [C++], pop
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae7e56fd33de888ad31a24ad1e3130acc96daa28
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ef1f2e617e93869a1084dc030c6496c819f1ed96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702836"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652718"
 ---
 # <a name="freelist-class"></a>freelist Sınıfı
 

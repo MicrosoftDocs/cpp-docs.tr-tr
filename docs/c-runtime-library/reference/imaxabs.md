@@ -1,10 +1,6 @@
 ---
-title: imaxabs | Microsoft Docs
-ms.custom: ''
+title: imaxabs
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - imaxabs
 apilocation:
@@ -22,25 +18,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - imaxabs
-dev_langs:
-- C++
 helpviewer_keywords:
 - imaxabs function
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9476db108a4296811e1c88e820d12ddd24b1386
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a7492e08c3a078698292923ce395524ab5327ecf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400495"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666260"
 ---
 # <a name="imaxabs"></a>imaxabs
 
-Herhangi bir boyuttaki bir tamsayı mutlak değerini hesaplar.
+Her boyuttaki tamsayının mutlak değerini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,10 +47,10 @@ Tamsayı değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**İmaxabs** işlevi bağımsız değişken mutlak değerini döndürür. Döndürülen hata yoktur.
+**İmaxabs** işlevi, bağımsız değişkenin mutlak değerini döndürür. Döndürülen hata yok.
 
 > [!NOTE]
-> Çünkü kullanarak temsil edilebilir negatif tamsayıların aralığını **intmax_t** aralığından daha büyük temsil edilebilir pozitif tamsayılar bağımsız değişken sağlamayı mümkündür **imaxabs** dönüştürülemiyor. Bağımsız değişken mutlak değerini başı gösterilemezse türü, davranışını **imaxabs** tanımlanmadı.
+> Çünkü kullanarak temsil edilebilen negatif tamsayılar aralığı **intmax_t** aralığından daha büyükse, temsil edilebilen pozitif tamsayılar, bir değişken sağlamak mümkündür **imaxabs** dönüştürülemez. Bağımsız değişkenin mutlak değerini dönüş tarafından temsil edilemiyorsa türü, davranışını **imaxabs** tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -68,7 +58,7 @@ Tamsayı değeri.
 |-------------|---------------------|
 |**imaxabs**|\<inttypes.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

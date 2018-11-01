@@ -1,23 +1,13 @@
 ---
-title: A.24 özel yan tümcesi | Microsoft Docs
-ms.custom: ''
+title: A.24   private Yan Tümcesi Örneği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f90a5b49-81ff-4746-ae03-37bbd33f6c08
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df2efc9fe111fa6e8d0b0507eceb20f07f48b02d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: facf5b953b26d284f6bfed4f35a9162f6d2bf212
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416246"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552964"
 ---
 # <a name="a24---example-of-the-private-clause"></a>A.24   private Yan Tümcesi Örneği
 

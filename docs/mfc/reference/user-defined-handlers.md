@@ -1,29 +1,19 @@
 ---
-title: Kullanıcı tanımlı işleyiciler | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı Tanımlı İşleyiciler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.handlers
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_REGISTERED_MESSAGE macro [MFC]
 - ON_MESSAGE macro [MFC]
 - user-defined handlers [MFC]
 ms.assetid: 99478294-bef0-4ba7-a369-25a6abdcdb62
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50348d36badb955a14f15e30d846b052b297b4a1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4d2102668b7cc964e6fe3bffdcc6931a2961a737
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442545"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562259"
 ---
 # <a name="user-defined-handlers"></a>Kullanıcı Tanımlı İşleyiciler
 

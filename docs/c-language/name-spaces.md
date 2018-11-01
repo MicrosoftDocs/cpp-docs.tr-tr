@@ -1,12 +1,6 @@
 ---
-title: Ad alanları | Microsoft Docs
-ms.custom: ''
+title: Ad Alanları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - union keyword [C], tags
 - enumeration tags
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - tags, structure tags
 - union keyword [C]
 ms.assetid: b4bda1d1-cb5e-4f60-ac2b-29af93d8a9a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 269d0eb39b29ccc9dcb09446e7db73a68d8c1188
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3441f111a82a336b329b6ee17d7bded32f7c2c07
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090061"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676761"
 ---
 # <a name="name-spaces"></a>Ad Alanları
 

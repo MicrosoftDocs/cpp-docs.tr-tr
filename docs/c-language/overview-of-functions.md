@@ -1,26 +1,16 @@
 ---
-title: İşlevlere genel bakış | Microsoft Docs
-ms.custom: ''
+title: İşlevlere Genel Bakış
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C++]
 - control flow, function calls
 ms.assetid: b6f4637f-02b9-49d8-8601-1f886bd2cfb9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b03357ed094684bb561eff9b790c090a1ebb0712
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3b2f2cfe5cd769b3cdaef002a970ad21c48162ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557371"
 ---
 # <a name="overview-of-functions"></a>İşlevlere Genel Bakış
 

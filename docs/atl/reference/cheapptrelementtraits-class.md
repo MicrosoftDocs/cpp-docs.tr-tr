@@ -1,30 +1,20 @@
 ---
-title: CHeapPtrElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHeapPtrElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CHeapPtrElementTraits
 - ATLCOLL/ATL::CHeapPtrElementTraits
 - ATLCOLL/ATL::CHeapPtrElementTraits::INARGTYPE
 - ATLCOLL/ATL::CHeapPtrElementTraits::OUTARGTYPE
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHeapPtrElementTraits class
 ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55217fa64c5fd28bf0839704307a0976bc647e5f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4e5d66c3e596383fecfcf730c81c4d41c08d5e2a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610154"
 ---
 # <a name="cheapptrelementtraits-class"></a>CHeapPtrElementTraits sınıfı
 

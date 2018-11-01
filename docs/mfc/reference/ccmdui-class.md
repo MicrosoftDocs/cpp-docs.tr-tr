@@ -1,10 +1,6 @@
 ---
-title: Ccmduı sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ccmduı sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCmdUI
 - AFXWIN/CCmdUI
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXWIN/CCmdUI::m_pMenu
 - AFXWIN/CCmdUI::m_pOther
 - AFXWIN/CCmdUI::m_pSubMenu
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCmdUI [MFC], ContinueRouting
 - CCmdUI [MFC], Enable
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CCmdUI [MFC], m_pOther
 - CCmdUI [MFC], m_pSubMenu
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 288dbaa5bb3c0d7f1731d996e6f4b1daed93d14e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d550268fb417301116b5168d4c0ff76fdc35716
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411384"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571157"
 ---
 # <a name="ccmdui-class"></a>Ccmduı sınıfı
 

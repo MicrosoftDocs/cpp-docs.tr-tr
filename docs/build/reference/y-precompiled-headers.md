@@ -1,27 +1,17 @@
 ---
-title: -Y (önceden derlenmiş üst bilgiler) | Microsoft Docs
-ms.custom: ''
+title: /Y (Önceden Derlenmiş Üst Bilgiler)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Y
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Y compiler options [C++]
 ms.assetid: 1df5726a-8ebe-42c3-b618-d2f5e1ce8673
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e82d880dbb523a37c34e4b42d223345121e8b9a9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d35c4bdc7f53ea763bd74e8db973159333c8be4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597264"
 ---
 # <a name="y-precompiled-headers"></a>/Y (Önceden Derlenmiş Üst Bilgiler)
 

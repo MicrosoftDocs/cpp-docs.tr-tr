@@ -1,10 +1,6 @@
 ---
-title: veya | Microsoft Docs
-ms.custom: ''
+title: veya
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,21 +17,15 @@ f1_keywords:
 - std::or
 - std.or
 - Or
-dev_langs:
-- C++
 helpviewer_keywords:
 - or function
 ms.assetid: 6523b3ac-0a18-44ec-9e9a-b9bab8525ead
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f9894d2925f4d1dba03442d5d117a5eb83abfa3a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a8eeab252e1eada962c374a4ec6e2a5744930be0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676674"
 ---
 # <a name="or"></a>veya
 

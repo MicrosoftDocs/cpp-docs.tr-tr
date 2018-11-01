@@ -1,27 +1,17 @@
 ---
-title: . [[I]] ERRDIF | Microsoft Docs
-ms.custom: ''
+title: . ERRDIF [[I]]
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ERRDIF[[I]]
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ERRDIF[[I]] directive
 ms.assetid: af7cb441-0373-4c7e-af9c-06bcb9ed2b0a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45df072d78bc35243fb305e716d3e7a3ac483813
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 00d155c2ab600d78a5f1bdfbc6f56930298a6c9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313383"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606173"
 ---
 # <a name="errdifi"></a>. ERRDIF [[I]]
 

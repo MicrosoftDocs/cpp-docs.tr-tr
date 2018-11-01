@@ -1,28 +1,17 @@
 ---
-title: HelpContext (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: HelpContext (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.helpcontext
-dev_langs:
-- C++
 helpviewer_keywords:
 - helpcontext attribute
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 831ca61f82eee913efd1ab2b1420fefb011d6c1a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 921e5370303cb62830ec281bcefd7c03331efaeb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062840"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552756"
 ---
 # <a name="helpcontext"></a>helpcontext
 

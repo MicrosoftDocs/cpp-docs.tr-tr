@@ -1,12 +1,6 @@
 ---
-title: 'İşlev çağırma işleci: () | Microsoft Docs'
-ms.custom: ''
+title: 'İşlev Çağırma İşleci: ()'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ( ) function call operator
 - function calls, C++ functions
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - functions [C++], function-call operator
 - function call operator ()
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0d42bf1d594e06c78b031267df56e2665b5d6f6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 79c43ed11bfc73ec4bfaedad0a20b45fb6ca1ffb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676258"
 ---
 # <a name="function-call-operator-"></a>İşlev Çağırma İşleci: ()
 

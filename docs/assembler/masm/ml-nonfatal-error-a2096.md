@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2096 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2096
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2096
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2096
 ms.assetid: bab0b5ee-b39f-4e44-a41a-3f949fab4297
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82f4ef76dca10b1208a931bc3e1cc09d82a639d2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e6b31afeff801e7128b5a76576e9eaa3398f68e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676284"
 ---
 # <a name="ml-nonfatal-error-a2096"></a>ML Önemli Olmayan Hatası A2096
 

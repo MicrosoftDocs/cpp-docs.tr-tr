@@ -1,15 +1,9 @@
 ---
-title: EVEN ve ALIGN yönergeleri | Microsoft Docs
-ms.custom: ''
+title: EVEN ve ALIGN Yönergeleri
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
 f1_keywords:
 - align
 - EVEN
-dev_langs:
-- C++
 helpviewer_keywords:
 - EVEN directive
 - directives, MASM
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - NOP (no operation instruction)
 - ALIGN directive
 ms.assetid: 7357ab2d-4a5c-43ca-accb-a5f21cdfcde5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06a1007c50e3490e5b14e4da886494557be0d37e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 522d5689d680d0fc334743d2802abe21570dd6f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604392"
 ---
 # <a name="even-and-align-directives"></a>EVEN ve ALIGN Yönergeleri
 

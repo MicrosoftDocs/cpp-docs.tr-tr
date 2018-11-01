@@ -1,30 +1,19 @@
 ---
-title: Varsayılan (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Varsayılan (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.default
-dev_langs:
-- C++
 helpviewer_keywords:
 - default attribute
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2ca39b160aacdf72bb6d6131b757755f87ac22a6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1c9c8cd9a6bf0d6ea34db5d62d7767874b4dd4b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560621"
 ---
 # <a name="default-c"></a>default (C++)
 

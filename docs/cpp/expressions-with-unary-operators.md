@@ -1,27 +1,17 @@
 ---
-title: Birli işleçli ifadeler | Microsoft Docs
-ms.custom: ''
+title: Birli İşleçli İfadeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - expressions [C++], unary operators
 - unary operators [C++], expressions with
 - expressions [C++], operators
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 718b27d14414480a3515a212bc0b272e8cfbb7c2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a13b86755a5e309a51a0e2e14faa1157b7e95ea0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017878"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559092"
 ---
 # <a name="expressions-with-unary-operators"></a>Birli İşleçli İfadeler
 

@@ -1,10 +1,6 @@
 ---
-title: atexit | Microsoft Docs
-ms.custom: ''
+title: atexit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - atexit
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - atexit
-dev_langs:
-- C++
 helpviewer_keywords:
 - processing, at exit
 - atexit function
 ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d66954348d5d812fac7eca0b231304267cc26157
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 48f0fbfa1f3350f73899fcdbb3bf7922f1c6174d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393140"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556655"
 ---
 # <a name="atexit"></a>atexit
 
@@ -57,15 +47,15 @@ int atexit(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**atexit** bir hata oluşursa 0 başarılı olursa ya da sıfır olmayan bir değer döndürür.
+**atexit** bir hata oluşursa, 0 başarılı olursa ya da sıfır olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atexit** işlevi bir işlevin adresini geçirilen *func* program normal şekilde sonlandırıldığında çağrılabilir. Art arda çağrılar **atexit** son giren ilk çıkar (LIFO) sırayla yürütülen işlevlerin bir kayıt oluşturun. İşlevler geçirilen **atexit** parametreleri alamıyor. **atexit** ve **_onexit** öbek işlevleri kayıt tutmak için kullanın. Bu nedenle, yalnızca yığın bellek tarafından kaydedilebilir işlev sayısı sınırlıdır.
+**Atexit** işlevi, bir işlevin adresini geçirilir *func* programın normal şekilde sonlandırıldığında çağrılabilir. Art arda çağrılar **atexit** son giren ilk çıkar (LIFO) sırayla yürütülen işlevler bir kasa oluşturun. İşleve geçirilen **atexit** parametreleri alamıyor. **atexit** ve **_onexit** yığın işlevlerin kayıt tutmak için kullanın. Bu nedenle, kaydedilebilir işlev sayısı yalnızca Yığın bellekle sınırlıdır.
 
-Kodda **atexit** işlevi, ne zaman bellekten zaten herhangi bir DLL bağımlılıkları içermemelidir **atexit** işlevi çağrılır.
+Kodda **atexit** işlevi zaman bellekten zaten, herhangi bir DLL bağımlılıkları içermemelidir **atexit** işlevi çağrılır.
 
-ANSI uyumlu bir uygulama oluşturmak için kullanılan ANSI standardına kullanmak **atexit** işlevi (benzer yerine **_onexit** işlevi).
+ANSI uyumlu bir uygulama oluşturmak için ANSI standardı kullanın **atexit** işlevi (benzer yerine **_onexit** işlevi).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -75,7 +65,7 @@ ANSI uyumlu bir uygulama oluşturmak için kullanılan ANSI standardına kullanm
 
 ## <a name="example"></a>Örnek
 
-Bu program iter dört işlev ne zaman yürütülmeye işlevlerin yığına **atexit** olarak adlandırılır. Program çıktığında bu programlar, son üzerinde ilk olarak yürütülür.
+Bu işlevler, yürütülecek yığına program bildirim dört işlev **atexit** çağrılır. Program çıkış yaptığı andaki bu programlar hakkında son giren ilk olarak yürütülür.
 
 ```C
 // crt_atexit.c

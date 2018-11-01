@@ -1,29 +1,19 @@
 ---
-title: CFolderPickerDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFolderPickerDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFolderPickerDialog
 - AFXDLGS/CFolderPickerDialog
 - AFXDLGS/CFolderPickerDialog::CFolderPickerDialog
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFolderPickerDialog [MFC], CFolderPickerDialog
 ms.assetid: 8db01684-dd1d-4e9c-989e-07a2318a8156
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d80839fca18d62c5fa9a9432296777c546268c5b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ba189badaa9b1605e3467526e7b92a18a1bb5a73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561310"
 ---
 # <a name="cfolderpickerdialog-class"></a>CFolderPickerDialog sınıfı
 

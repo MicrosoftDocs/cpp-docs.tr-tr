@@ -1,27 +1,17 @@
 ---
-title: BSCMAKE uyarısı BK4503 | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Uyarısı BK4503
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - BK4503
-dev_langs:
-- C++
 helpviewer_keywords:
 - BK4503
 ms.assetid: 68abcf23-6987-4bc5-9745-8b65d2578bbc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84310ff2d647a5ee1dc8ba0c4a4832aaf0cde594
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9bbd717d45f9fa68795520ac7e9cd0c9a520ee16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046595"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469543"
 ---
 # <a name="bscmake-warning-bk4503"></a>BSCMAKE Uyarısı BK4503
 

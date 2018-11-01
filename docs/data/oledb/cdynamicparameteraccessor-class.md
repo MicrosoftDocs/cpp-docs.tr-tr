@@ -1,10 +1,6 @@
 ---
-title: CDynamicParameterAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDynamicParameterAccessor Sınıfı
 ms.date: 02/14/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.CDynamicParameterAccessor
 - ATL::CDynamicParameterAccessor
@@ -77,8 +73,6 @@ f1_keywords:
 - SetParamString
 - CDynamicParameterAccessor::SetParamString
 - CDynamicParameterAccessor.SetParamString
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDynamicParameterAccessor class
 - CDynamicParameterAccessor class, constructor
@@ -96,17 +90,12 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 252dcb3214c94af359a65f81164656012dfaec10
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b8c43a47eceb5213f292b825a771cd25e99efceb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064315"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592666"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 

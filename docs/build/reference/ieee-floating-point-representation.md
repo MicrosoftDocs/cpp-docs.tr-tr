@@ -1,12 +1,6 @@
 ---
-title: IEEE kayan Noktası temsili | Microsoft Docs
-ms.custom: ''
+title: IEEE Kayan Noktası Temsili
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - float keyword
 - real*8 value
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61545d57a8a42f45616bd788defacaba12785971
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: a493a2f42d7a003a271819c0b17af75502c216ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608247"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661727"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 

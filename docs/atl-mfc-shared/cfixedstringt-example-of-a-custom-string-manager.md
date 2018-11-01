@@ -1,25 +1,15 @@
 ---
-title: 'CFixedStringT: Örnek özel dize Yöneticisi | Microsoft Docs'
-ms.custom: ''
+title: 'CFixedStringT: Örnek özel dize Yöneticisi'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFixedStringT class, using a custom string manager
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f16bc5a9357199a5c5113fd33a62467d63e4f1d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d35c4c998a6e5913cd972312c511b2a102480c81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43768040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663170"
 ---
 # <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: Örnek özel dize Yöneticisi
 

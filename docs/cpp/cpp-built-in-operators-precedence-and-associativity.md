@@ -1,12 +1,6 @@
 ---
-title: C++ yerleşik işleçler, öncelik ve İlişkisellik | Microsoft Docs
-ms.custom: ''
+title: C++ yerleşik işleçler, öncelik ve İlişkisellik
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators (C++), hierarchy
 - operator precedence
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b40e5ab6cac64edbfdb5ab93c6864d0eacb9e63
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b560913deb57393a8547f0831e0d987eed41ab7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574063"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C++ yerleşik işleçler, öncelik ve İlişkisellik
 

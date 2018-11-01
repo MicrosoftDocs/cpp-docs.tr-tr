@@ -1,27 +1,17 @@
 ---
-title: IFB | Microsoft Docs
-ms.custom: ''
+title: IFB
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - IFB
-dev_langs:
-- C++
 helpviewer_keywords:
 - IFB directive
 ms.assetid: 6395e313-e590-41b3-824c-577f200faf80
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53fa94f90898aaa6c6530a1d1fd35f0e4b7df739
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 815cb75e0d00cc660c8dfad896fbe0064881edd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658568"
 ---
 # <a name="ifb"></a>IFB
 

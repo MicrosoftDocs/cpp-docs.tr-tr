@@ -1,10 +1,6 @@
 ---
-title: CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64 | Microsoft Docs
-ms.custom: ''
+title: ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ctime64
 - _wctime32
@@ -34,8 +30,6 @@ f1_keywords:
 - _tctime64
 - _ctime64
 - ctime
-dev_langs:
-- C++
 helpviewer_keywords:
 - tctime64 function
 - _ctime32 function
@@ -56,20 +50,16 @@ helpviewer_keywords:
 - wctime function
 - time, converting
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30caa77fee7e15f91ff7c3f089f18fd51a34aa0b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d1858a36c68a2ca5cedf70a1d74d5f250cbac8df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404915"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580832"
 ---
 # <a name="ctime-ctime32-ctime64-wctime-wctime32-wctime64"></a>ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 
-Bir saat değeri dizeye ve yerel saat dilimi ayarlarını yapın. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md).
+Bir zaman değeri dizeye Dönüştür ve yerel saat dilimi ayarlarını yapın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -85,37 +75,37 @@ wchar_t *_wctime64( const __time64_t *sourceTime );
 ### <a name="parameters"></a>Parametreler
 
 *sourceTime*<br/>
-İşaretçi dönüştürmek için saklı zamanı.
+Dönüştürülecek depolanan zamana yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter dizesi sonucu için bir işaretçi. **NULL** olursa döndürülür:
+Karakter dize sonucu için bir işaretçi. **NULL** olursa döndürülür:
 
-- *sourceTime* gece, 1 Ocak 1970 UTC tarihi temsil eder.
+- *sourceTime* 1 Ocak 1970 gece yarısı UTC tarihi temsil eder.
 
 - Kullanırsanız **_ctime32** veya **_wctime32** ve *sourceTime* 23:59:59 18 Ocak 2038, UTC tarihinden temsil eder.
 
-- Kullanırsanız **_ctime64** veya **_wctime64** ve *sourceTime* 23:59:59 31 Aralık 3000 UTC tarihinden temsil eder.
+- Kullanırsanız **_ctime64** veya **_wctime64** ve *sourceTime* 23:59:59, 31 Aralık, 3000, UTC tarihinden temsil eder.
 
-**CTime** değerlendiren bir satır içi işlev **_ctime64** ve **time_t** eşdeğerdir **__time64_t**. Yorumlamaya derleyici zorlamak gerekiyorsa **time_t** eski 32 bit olarak **time_t**, tanımlayabileceğiniz **_USE_32BIT_TIME_T**. Bunun neden olacak **ctime** için değerlendirilecek **_ctime32**. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.
+**CTime** olarak değerlendirilen bir satır içi işlev **_ctime64** ve **time_t** eşdeğerdir **__time64_t**. Yorumlamak üzere zorlamanız gerekirse **time_t** eski 32-bit olarak **time_t**, tanımlayabileceğiniz **_use_32bıt_tıme_t**. Bunun yapılması neden olacak **ctime** için değerlendirilecek **_ctime32**. Bu, 18 Ocak 2038 sonrasında uygulamanız çalışmayabilir ve 64-bit platformlarda izin verilmiyor çünkü önerilmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ctime** işlevi dönüştürür olarak saklanan bir saat değeri bir [time_t](../../c-runtime-library/standard-types.md) bir karakter dizesine değeri. *SourceTime* değeri çağrısından alınan genellikle [zaman](time-time32-time64.md), gece yarısından beri geçen saniye sayısı döndüren (00: 00:00), 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC). Dönüş değeri dize tam olarak 26 karakter içerir ve biçime sahiptir:
+**Ctime** işlevi olarak depolanan bir saat değerine dönüştürür bir [time_t](../../c-runtime-library/standard-types.md) bir karakter dizesi değeri. *SourceTime* değeri çağrısından alınan genellikle [zaman](time-time32-time64.md), saniye cinsinden gece yarısından beri geçen döndüren (00: 00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC). Dönüş değeri dize, tam olarak 26 karakterler içeriyor ve biçime sahiptir:
 
 ```Output
 Wed Jan 02 02:03:55 1980\n\0
 ```
 
-24 saatlik kullanılır. Tüm alanları sabit genişlik sahiptir. Yeni satır karakteri ('\n') ve null karakteri ('\0') dize son iki konumlarını kaplar.
+24 saatlik düzende kullanılır. Tüm alanlar, sabit bir genişliğe sahiptir. Yeni satır karakteri ('\n') ve null karakteri ('\0'), son iki dize konumlarını kaplar.
 
-Dönüştürülen karakter dizesini de yerel saat dilimi ayarlarını göre ayarlanır. Bkz: [zaman](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), ve [damgasını](localtime-localtime32-localtime64.md) işlevleri yerel saat yapılandırma hakkında bilgi için ve [_tzset](tzset.md) için işlevi saat dilimi ortamı ve genel değişkenler tanımlama hakkında ayrıntılar.
+Dönüştürülmüş karakteri dize ayrıca yerel saat dilimi ayarlarını göre ayarlanır. Bkz [zaman](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), ve [localtime](localtime-localtime32-localtime64.md) yerel saat yapılandırma hakkında bilgi için İşlevler ve [_tzset](tzset.md) için işlevi Genel değişkenler ve saat dilimi ortamı tanımlama hakkında ayrıntılar.
 
-Çağrı **ctime** tarafından kullanılan tek bir statik olarak ayrılan arabelleğe değiştirir **gmtime** ve **damgasını** işlevleri. Bu yordamlar her çağrısına önceki çağrının sonucu bozar. **CTime** statik bir arabellekle paylaşır **asctime** işlevi. Bu nedenle, yapılan bir çağrı **ctime** önceki tüm arama sonuçlarını bozar **asctime**, **damgasını**, veya **gmtime**.
+Bir çağrı **ctime** tarafından kullanılan tek bir statik olarak ayrılan arabelleğe değiştirir **gmtime** ve **localtime** işlevleri. Bu yordamların her çağrısına, önceki çağrının sonucu yok eder. **CTime** statik bir arabellek ile paylaşır **asctime** işlevi. Bu nedenle, bir çağrı **ctime** için tüm önceki çağrının sonuçlarını yok eder **asctime**, **localtime**, veya **gmtime**.
 
-**_wctime** ve **_wctime64** joker karakter sürümüne sahip **ctime** ve **_ctime64**; joker karakter dizesi için bir işaretçi döndürüyor. Aksi takdirde, **_ctime64**, **_wctime**, ve **_wctime64** aynı şekilde davranır **ctime**.
+**_wctime** ve **_wctime64** geniş karakter sürümüne sahip **ctime** ve **_ctime64**; geniş karakter dizesine bir işaretçi döndürüyor. Aksi takdirde, **_ctime64**, **_wctime**, ve **_wctime64** öğesine aynı şekilde davranır **ctime**.
 
-Bu işlevler kendi parametreleri doğrulayın. Varsa *sourceTime* null işaretçinin veya *sourceTime* değeri negatif, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevlerin dönüş **NULL** ve **errno** için **EINVAL**.
+Bu işlevler kendi parametrelerini doğrular. Varsa *sourceTime* null bir işaretçiyse veya *sourceTime* değeri negatif ise, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, İşlevler döndürür **NULL** ayarlayıp **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -129,14 +119,14 @@ Bu işlevler kendi parametreleri doğrulayın. Varsa *sourceTime* null işaretç
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**CTime**|\<time.h >|
-|**_ctime32**|\<time.h >|
-|**_ctime64**|\<time.h >|
-|**_wctime**|\<time.h > veya \<wchar.h >|
-|**_wctime32**|\<time.h > veya \<wchar.h >|
-|**_wctime64**|\<time.h > veya \<wchar.h >|
+|**CTime**|\<TIME.h >|
+|**_ctime32**|\<TIME.h >|
+|**_ctime64**|\<TIME.h >|
+|**_wctime**|\<TIME.h > veya \<wchar.h >|
+|**_wctime32**|\<TIME.h > veya \<wchar.h >|
+|**_wctime64**|\<TIME.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

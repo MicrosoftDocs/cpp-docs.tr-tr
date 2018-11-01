@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4013 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4013
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4013
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4013
 ms.assetid: 9f9afc71-6e78-463d-9d66-3012d6a3cd5d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b491406111c7c5ba994bc0af6128b7f0578d52b7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2ec76fa5d83721137a5142d435f9c598527382f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046504"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564495"
 ---
 # <a name="compiler-warning-level-3-c4013"></a>Derleyici Uyarısı (Düzey 3) C4013
 

@@ -1,23 +1,14 @@
 ---
-title: ML önemli olmayan hatalar | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatalar
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
-dev_langs:
-- C++
 ms.assetid: 321190db-7a39-4108-bac0-b7197ea899a5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a2e3a2fe80284a82f8f3093b80ae4986e0c64b4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: fcc5cd96a9aaeed023461859ffea40826420ba76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565444"
 ---
 # <a name="ml-nonfatal-errors"></a>ML Önemli Olmayan Hatalar
 

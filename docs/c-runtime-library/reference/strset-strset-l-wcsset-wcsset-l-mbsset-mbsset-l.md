@@ -1,10 +1,6 @@
 ---
-title: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l | Microsoft Docs
-ms.custom: ''
+title: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcsset
 - _mbsset
@@ -41,8 +37,6 @@ f1_keywords:
 - _wcsset_l
 - _fstrset
 - _tcsset
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wcsset_l function
 - _tcsset function
@@ -65,16 +59,12 @@ helpviewer_keywords:
 - fstrset function
 - _tcsset_l function
 ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53096465b346403d62638e6e24a1609759a78d73
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c123ef70dd99c503c38a2f71e355e20e57778d73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206589"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574960"
 ---
 # <a name="strset-strsetl-wcsset-wcssetl-mbsset-mbssetl"></a>_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 

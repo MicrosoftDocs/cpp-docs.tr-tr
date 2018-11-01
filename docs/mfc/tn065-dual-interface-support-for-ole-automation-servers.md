@@ -1,30 +1,20 @@
 ---
-title: 'TN065: OLE otomasyon sunucuları için çift arabirim desteği | Microsoft Docs'
-ms.custom: ''
+title: 'TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - dual interfaces [MFC], OLE Automation
 - TN065 [MFC]
 - ACDUAL sample [MFC]
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c079201b92b6eaf3ef372bf04ab4785598c3b2bf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5a04c2712182fe9c9ed3fd9e5fe4548404f96a5d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575220"
 ---
 # <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği
 

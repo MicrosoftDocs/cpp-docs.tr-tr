@@ -1,32 +1,22 @@
 ---
-title: _BitScanReverse, _BitScanReverse64 | Microsoft Docs
-ms.custom: ''
+title: _BitScanReverse, _BitScanReverse64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _BitScanReverse64
 - _BitScanReverse_cpp
 - _BitScanReverse
 - _BitScanReverse64_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - bsr instruction
 - _BitScanReverse intrinsic
 - BitScanReverse intrinsic
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0867241e983794177cdb53b4bbacd1aadd9b8eba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f1c33f90fc8e44388068f0588d33effd80fc203c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436331"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586426"
 ---
 # <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
 

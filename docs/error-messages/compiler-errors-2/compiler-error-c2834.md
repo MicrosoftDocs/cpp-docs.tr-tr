@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2834 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2834
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2834
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2834
 ms.assetid: 28f9f6eb-ab2a-4e64-aaaa-9d14f955de41
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b94e1a3fba9bc3589af020340651b4546347cf1a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fb4a0e6f3f6ec227b978ae0b7d3864b2134de986
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089352"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677610"
 ---
 # <a name="compiler-error-c2834"></a>Derleyici Hatası C2834
 

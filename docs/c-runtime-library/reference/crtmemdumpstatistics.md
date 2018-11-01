@@ -1,10 +1,6 @@
 ---
-title: _CrtMemDumpStatistics | Microsoft Docs
-ms.custom: ''
+title: _CrtMemDumpStatistics
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtMemDumpStatistics
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - CrtMemDumpStatistics
 - _CrtMemDumpStatistics
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CrtMemDumpStatistics function
 - CrtMemDumpStatistics function
 ms.assetid: 27b9d731-3184-4a2d-b9a7-6566ab28a9fe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 655d9be75fa031cc2cbebfd65c4634528f410e85
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 66eb58b65f3fa20e01ad16d68f3fe1baafd8cd04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110532"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605133"
 ---
 # <a name="crtmemdumpstatistics"></a>_CrtMemDumpStatistics
 

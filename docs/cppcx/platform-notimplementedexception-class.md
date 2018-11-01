@@ -1,27 +1,19 @@
 ---
-title: Platform::NotImplementedException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::NotImplementedException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::NotImplementedException
 - VCCORLIB/Platform::NotImplementedException::NotImplementedException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::NotImplementedException
 ms.assetid: 6da26cc2-dde8-4aea-aa85-67aac55cf97b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ac52615a9cc00a3fbfdb253e44c7ce5d239009a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 26e8900a10b25507f5091d9cc1f724c73ece7dfd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467593"
 ---
 # <a name="platformnotimplementedexception-class"></a>Platform::NotImplementedException sınıfı
 

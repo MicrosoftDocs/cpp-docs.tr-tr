@@ -1,10 +1,6 @@
 ---
-title: 'WM_ ileti işleyicileri: F - K | Microsoft Docs'
-ms.custom: ''
+title: 'WM_ İleti İşleyicileri: F - K'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ON_WM_FONTCHANGE
 - ON_WM_ICONERASEBKGND
@@ -18,8 +14,6 @@ f1_keywords:
 - ON_WM_HELPINFO
 - ON_WM_INITMENUPOPUP
 - ON_WM_INITMENU
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_WM_HELPINFO [MFC]
 - ON_WM_KILLFOCUS [MFC]
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - WM_ messages [MFC]
 - ON_WM_KEYDOWN [MFC]
 ms.assetid: 0e7de191-1499-499f-859c-62742797808e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d33b91cf68055c47afb25ca1b2f68b245c2aed3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 993202e0d0037c510886e43004ee499599234a62
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609916"
 ---
 # <a name="wm-message-handlers-f---k"></a>WM_ İleti İşleyicileri: F - K
 

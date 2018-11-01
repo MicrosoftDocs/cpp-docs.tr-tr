@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3368 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3368
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3368
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3368
 ms.assetid: 5bfd5be4-dfa9-4b33-9612-010561b40955
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 236bfdfc031544e05d4aa95d9c36720ddb0ebdf8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f027e2707dc677d93567f91307e9dcfcb8dd682f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051304"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582318"
 ---
 # <a name="compiler-error-c3368"></a>Derleyici Hatası C3368
 

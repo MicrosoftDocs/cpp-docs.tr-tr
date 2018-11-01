@@ -1,28 +1,17 @@
 ---
-title: DefaultValue (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: DefaultValue (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.defaultvalue
-dev_langs:
-- C++
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: cf3e41beccf351fdda52fb7e126996a8cfbd3239
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 22aa969185afbac5ab395d0ac7dde23e715b8e58
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537676"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 

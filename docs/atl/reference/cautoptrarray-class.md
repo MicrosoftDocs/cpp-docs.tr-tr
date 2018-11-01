@@ -1,29 +1,19 @@
 ---
-title: CAutoPtrArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAutoPtrArray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAutoPtrArray
 - ATLCOLL/ATL::CAutoPtrArray
 - ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAutoPtrArray class
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23cc8e519fc47173efe413cc687ef48c0dc39945
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7a2a7e9592b120204582334f69e27e72cd7364f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025171"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677948"
 ---
 # <a name="cautoptrarray-class"></a>CAutoPtrArray sınıfı
 

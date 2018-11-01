@@ -1,18 +1,12 @@
 ---
-title: seed_seq sınıfı | Microsoft Docs
-ms.custom: ''
+title: seed_seq Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::seed_seq
 - random/std::seed_seq::result_type
 - random/std::seed_seq::generate
 - random/std::seed_seq::size
 - random/std::seed_seq::param
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::seed_seq [C++]
 - std::seed_seq [C++], result_type
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - std::seed_seq [C++], size
 - std::seed_seq [C++], param
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c4e86ff5ad4e1ebdba728202904324d9dc9e66f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5309042e9f26875e0cf5c2024cc74910fef21148
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711756"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592497"
 ---
 # <a name="seedseq-class"></a>seed_seq Sınıfı
 

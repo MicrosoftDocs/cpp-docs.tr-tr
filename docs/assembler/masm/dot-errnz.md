@@ -1,27 +1,17 @@
 ---
-title: . ERRNZ | Microsoft Docs
-ms.custom: ''
+title: .ERRNZ
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ERRNZ
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ERRNZ directive
 ms.assetid: 373a9222-140f-4505-8dec-ef370a069ebf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5096a1366bfd7e8bfaa330dc5f9d48b5f184fe80
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8998f4609b2b8d8e15a31455ac342e7bd5c0a025
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677207"
 ---
 # <a name="errnz"></a>.ERRNZ
 

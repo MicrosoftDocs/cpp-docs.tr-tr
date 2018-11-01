@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3182 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3182
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3182
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3182
 ms.assetid: f3681266-308e-4990-a979-8eef8920e186
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 722f95b41f9f5ec467af25ccf927631590f90e45
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6866c7bbcee0a4097e490b344c79a6eec7f94570
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110230"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626752"
 ---
 # <a name="compiler-error-c3182"></a>Derleyici Hatası C3182
 

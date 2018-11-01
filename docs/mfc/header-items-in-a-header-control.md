@@ -1,28 +1,18 @@
 ---
-title: Üstbilgi denetimindeki üstbilgi öğeleri | Microsoft Docs
-ms.custom: ''
+title: Üstbilgi Denetimindeki Üstbilgi Öğeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - header controls [MFC], header items in
 - header items in header controls [MFC]
 - CHeaderCtrl class [MFC], header items in
 - controls [MFC], header
 ms.assetid: ac79ef1f-a671-4ab2-93e9-b1aa016a48bf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21f1893861c5cb6a134cffa75806cc53eadaf059
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b872473fcd90f09eecafe65adefc7ab66dfd9e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442376"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607720"
 ---
 # <a name="header-items-in-a-header-control"></a>Üstbilgi Denetimindeki Üstbilgi Öğeleri
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCVisualManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCVisualManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCVisualManager
 - AFXVISUALMANAGER/CMFCVisualManager
@@ -177,8 +173,6 @@ f1_keywords:
 - AFXVISUALMANAGER/CMFCVisualManager::SetMenuFlatLook
 - AFXVISUALMANAGER/CMFCVisualManager::SetMenuShadowDepth
 - AFXVISUALMANAGER/CMFCVisualManager::SetShadowHighlightedImage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCVisualManager [MFC], AdjustFrames
 - CMFCVisualManager [MFC], AdjustToolbars
@@ -350,16 +344,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48e8052575514d36b0e82f9f6c151b9df18eaed9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 000f5229c14699c80e2ce18e4125d0c2ac6e382b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079538"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653056"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 

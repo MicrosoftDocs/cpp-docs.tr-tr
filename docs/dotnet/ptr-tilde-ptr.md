@@ -1,9 +1,6 @@
 ---
-title: 'PTR:: ~ ptr | Microsoft Docs'
-ms.custom: ''
+title: ptr::~ptr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr.com.ptr.~ptr
@@ -11,22 +8,15 @@ f1_keywords:
 - msclr::com.ptr::~ptr
 - ~ptr
 - ptr::~ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - ptr::~ptr
 ms.assetid: 5f644aa5-fe66-4992-a5f8-13ec1292c949
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: e3457bb4bda5e08de676488d6100795b5c04b61a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 452876fb2b377048b3916e61d39467e2279cd4ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399582"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618070"
 ---
 # <a name="ptrptr"></a>ptr::~ptr
 

@@ -1,27 +1,17 @@
 ---
-title: '@B | Microsoft Docs'
-ms.custom: ''
+title: '@B'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@B'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@B symbol'
 ms.assetid: ca17c71a-4a5d-4470-a098-484c781dbfa7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 25a3e447037bcf4127fe5bc09c5f6f09cc150df8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: dc3e06283f1dc552a5f0cee6c8a7b608b5c421e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690387"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677896"
 ---
 # <a name="b"></a>@B
 

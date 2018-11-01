@@ -1,9 +1,6 @@
 ---
-title: SRWLock sınıfı | Microsoft Docs
-ms.custom: ''
+title: SRWLock Sınıfı
 ms.date: 09/25/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::SRWLock
@@ -14,8 +11,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::SRWLock::~SRWLock
 - corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockExclusive
 - corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockShared
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::SRWLock class
 - Microsoft::WRL::Wrappers::SRWLock::LockExclusive method
@@ -26,17 +21,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::SRWLock::TryLockExclusive method
 - Microsoft::WRL::Wrappers::SRWLock::TryLockShared method
 ms.assetid: 4fa250e3-5f29-4b06-ac24-61b6c04ade93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 771a375d46177bb3b9d263f0a5221039bb963bc2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 6d4a504d9465c858af59a88cf0ef611bf88c3fde
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48233976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579230"
 ---
 # <a name="srwlock-class"></a>SRWLock Sınıfı
 

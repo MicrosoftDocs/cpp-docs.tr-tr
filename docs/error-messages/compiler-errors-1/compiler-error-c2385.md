@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2385 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2385
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2385
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2385
 ms.assetid: 6d3dd1f2-e56d-49d7-865c-6a9acdb17417
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a52a932d45c94fb63f3d7b943b2cd78fa1862e4f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bffb4c1088c41832e69b0c6f161b47f6f9f08d06
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029058"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571398"
 ---
 # <a name="compiler-error-c2385"></a>Derleyici Hatası C2385
 

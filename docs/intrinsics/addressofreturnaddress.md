@@ -1,29 +1,19 @@
 ---
-title: _AddressOfReturnAddress | Microsoft Docs
-ms.custom: ''
+title: _AddressOfReturnAddress
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _AddressOfReturnAddress_cpp
 - _AddressOfReturnAddress
-dev_langs:
-- C++
 helpviewer_keywords:
 - _AddressOfReturnAddress intrinsic
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 694b9fead94bee55e1337df9511f59237ed88b57
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 678128c4b09b083b4afe3a86c9b2315eb3c87b1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425814"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584490"
 ---
 # <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
 

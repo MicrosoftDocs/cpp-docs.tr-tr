@@ -1,14 +1,8 @@
 ---
-title: Dosya okuma / yazma erişimi sabitleri | Microsoft Docs
-ms.custom: ''
+title: Dosya okuma / yazma erişimi sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.constants.file
-dev_langs:
-- C++
 helpviewer_keywords:
 - read/write access constants
 - write access constants
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - constants [C++], file attributes
 - file read/write access constants
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4977b1bf8342e0643b83b0b65a53048c4af91a7c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7bf16271c0d58e3d87e4c24795ec0bd1ee1ccb89
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666198"
 ---
 # <a name="file-readwrite-access-constants"></a>Dosya Okuma/Yazma Erişimi Sabitleri
 

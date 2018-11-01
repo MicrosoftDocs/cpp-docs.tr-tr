@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - msbuild.cpp.howto.usebuildevents
-dev_langs:
-- C++
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd35ff136c0145e1c76a04d15052d426a7c90dcc
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 60e26b5cab77bb56f0574a91ad69a7df4d73fa1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161274"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570280"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 

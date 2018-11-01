@@ -1,29 +1,19 @@
 ---
-title: delegate (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: delegate (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - delegate_cpp
 - delegate
-dev_langs:
-- C++
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: fd0f63aebaa6dd742e1ce701e42cf8238fb6033f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7c58a5b239e91fd3e15f806049e4f71635aebb73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584139"
 ---
 # <a name="delegate--ccli-and-ccx"></a>delegate (C + +/ CLI ve C + +/ CX)
 

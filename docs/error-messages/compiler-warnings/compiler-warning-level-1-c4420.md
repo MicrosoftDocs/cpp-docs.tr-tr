@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4420 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4420
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4420
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4420
 ms.assetid: 44a37754-7ddd-4764-a5f7-d33e05c20091
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1ba4ef4c4fc006e1a5950d0d16dc530ccc06a1d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a4a7e91e7845cc0fc25d5a6fad16ae7b7e327952
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662897"
 ---
 # <a name="compiler-warning-level-1-c4420"></a>Derleyici Uyarısı (düzey 1) C4420
 

@@ -1,28 +1,17 @@
 ---
-title: LCID (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: LCID (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.lcid
-dev_langs:
-- C++
 helpviewer_keywords:
 - LCID attribute
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1551a06168c1ea4255c43ef06c9180789d654893
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e431736fcd38b3c08936e65ecf05594142ced4e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063529"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655336"
 ---
 # <a name="lcid"></a>lcid
 

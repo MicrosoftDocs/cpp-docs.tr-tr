@@ -1,12 +1,6 @@
 ---
-title: Uygulama tasarımı seçimleri | Microsoft Docs
-ms.custom: ''
+title: Uygulama Tasarımı Seçimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - design
 - application design [MFC], design goals
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - server applications [MFC], vs. client applications on Internet
 - client applications [MFC], vs. server applications on Internet
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11941323f90d8eadbf8acdb0431f51afad1d1e0c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b9b794070d1c4ff4f05f33895a7af5532a524ad1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602936"
 ---
 # <a name="application-design-choices"></a>Uygulama Tasarımı Seçimleri
 

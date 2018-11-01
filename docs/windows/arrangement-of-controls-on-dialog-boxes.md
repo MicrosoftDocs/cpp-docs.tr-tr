@@ -1,28 +1,17 @@
 ---
 title: Denetimlerin düzenlenmesi iletişim kutuları (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], positioning
 - dialog box controls [C++], placement
 - Dialog Editor [C++], arranging controls
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 24c318f6028db1f2c64b2d2d334648fe4d47619f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 56062d166e8a58b6bf0211ce57a6a8f6ed3eea75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390792"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576013"
 ---
 # <a name="arrangement-of-controls-on-dialog-box-ces"></a>İletişim kutusundaki denetimlerin kutu es (C++)
 

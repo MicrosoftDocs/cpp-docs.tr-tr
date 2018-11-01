@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2258 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2258
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2258
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2258
 ms.assetid: 105eaa87-befb-4ecb-9a3f-e09e14d2f5bf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c1d055858a4373a322175e0fda7a4c9ad4a2e05
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 99936026929bbaad321abfaa106df41b99c5d19d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587804"
 ---
 # <a name="compiler-error-c2258"></a>Derleyici Hatası C2258
 

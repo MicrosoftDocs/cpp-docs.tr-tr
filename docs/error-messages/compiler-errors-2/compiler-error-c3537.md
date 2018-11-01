@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3537 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3537
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3537
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3537
 ms.assetid: f537ebd1-4fb0-4e09-a453-4f38db2c6881
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f04500998adf132594b91fc38f82c8bec4b1c5c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 22387470019b0118d06b4cacd82a1df5c3e505fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576130"
 ---
 # <a name="compiler-error-c3537"></a>Derleyici Hatası C3537
 

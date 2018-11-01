@@ -1,29 +1,19 @@
 ---
-title: CMFCSpinButtonCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCSpinButtonCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCSpinButtonCtrl
 - AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl
 - AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCSpinButtonCtrl [MFC], OnDraw
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 756cdffc8f9f726e63b129f5f87a19eec01cd429
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ecc8a010b534515850752f7d83c9a9976f14ddfc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440023"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567525"
 ---
 # <a name="cmfcspinbuttonctrl-class"></a>CMFCSpinButtonCtrl sınıfı
 

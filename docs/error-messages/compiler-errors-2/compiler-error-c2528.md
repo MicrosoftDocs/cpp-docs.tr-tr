@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2528 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2528
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2528
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2528
 ms.assetid: 2ea9d583-67a8-4b16-b35f-a50eeffc03c4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c588457743c601e31c24fd0a53de652477fbf05
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 890dae7aa34103bde0168f1933bb42343d84100b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601753"
 ---
 # <a name="compiler-error-c2528"></a>Derleyici Hatası C2528
 

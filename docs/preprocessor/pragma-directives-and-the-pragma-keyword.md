@@ -1,14 +1,8 @@
 ---
-title: Pragma yönergeleri ve __Pragma anahtar sözcüğü | Microsoft Docs
-ms.custom: ''
+title: Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '#pragma'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '#pragma directives, C/C++'
 - __pragma keyword
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e326bb10960153ac8f4367b2a5e66ff0083b1c2a
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 9e79ba7378e28fdea863af010decb7064df415cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660102"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
 

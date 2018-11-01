@@ -1,28 +1,18 @@
 ---
-title: __vmx_vmclear | Microsoft Docs
-ms.custom: ''
+title: __vmx_vmclear
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __vmx_vmclear
-dev_langs:
-- C++
 helpviewer_keywords:
 - VMCLEAR instruction
 - __vmx_vmclear intrinsic
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 13939e3e5407a7f78d199ef872ebddc3134b2a18
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 469621eb828691b5475b453e8be0b8473b3594a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820982"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586348"
 ---
 # <a name="vmxvmclear"></a>__vmx_vmclear
 

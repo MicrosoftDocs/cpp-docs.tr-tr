@@ -1,26 +1,16 @@
 ---
-title: Rebar denetimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Rebar Denetimi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - rebar controls [MFC], creating
 - CReBarCtrl class [MFC], creating
 ms.assetid: 0a012e08-772b-4f6a-af86-7cb651d11d3e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea9ab73bf054b07b24beee8a222cc0a138b9513d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3cc4795a0d4500a53c775ba6f44c3dce520e5110
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644684"
 ---
 # <a name="creating-a-rebar-control"></a>Rebar Denetimi Oluşturma
 

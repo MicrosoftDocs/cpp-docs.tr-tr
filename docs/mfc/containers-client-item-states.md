@@ -1,28 +1,18 @@
 ---
-title: 'Kapsayıcılar: İstemci öğesi durumları | Microsoft Docs'
-ms.custom: ''
+title: 'Kapsayıcılar: İstemci Öğesi Durumları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE containers [MFC], client-item states
 - states, OLE container client-item
 - lifetime, lifetime states and OLE container client items
 - client items and OLE containers
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e482123207c287c33a36406ba961747545af7c73
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 866aa6f2265abe671ce0028e3be5f1c8ee1762a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378070"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575350"
 ---
 # <a name="containers-client-item-states"></a>Kapsayıcılar: İstemci Öğesi Durumları
 

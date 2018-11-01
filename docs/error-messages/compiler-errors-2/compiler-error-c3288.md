@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3288 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3288
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3288
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3288
 ms.assetid: ed08a540-9751-46e1-9cbe-c51d6a49ffab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36412510efcedd765ad44b4aab61e6a7d64155fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 30a88d1047f8395fc8e3042cf2a1da88e6e5c2d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608422"
 ---
 # <a name="compiler-error-c3288"></a>Derleyici Hatası C3288
 

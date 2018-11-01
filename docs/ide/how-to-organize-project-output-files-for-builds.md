@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: derlemeler için proje çıktı dosyalarını düzenleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, output files
 - output files, organizing
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f139342e7ccb264d89f9012b8177ff57260f3738
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9dd70f52c79d00282122f935b19770b973901103
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575974"
 ---
 # <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme
 

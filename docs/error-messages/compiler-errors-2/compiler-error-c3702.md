@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3702 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3702
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3702
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3702
 ms.assetid: 14fcc20e-4404-45d7-be54-e4f09332fa5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0267b549e50537c5122ddd0bb652b9c64f2943fd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a440703b2b17979dda0c00fb2ff87f2b0eb0ff7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676401"
 ---
 # <a name="compiler-error-c3702"></a>Derleyici Hatası C3702
 

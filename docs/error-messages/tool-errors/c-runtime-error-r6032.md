@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6032 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6032
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6032
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6032
 ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7dc68723e07d7ef8c3b9d9f6ad913466b7ff27e4
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: e0ae3acc491658840d74e262f3ab2719e613d60e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48859724"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571346"
 ---
 # <a name="c-runtime-error-r6032"></a>C çalışma zamanı hatası R6032
 

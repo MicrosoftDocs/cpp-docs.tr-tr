@@ -1,29 +1,19 @@
 ---
-title: İç | Microsoft Docs
-ms.custom: ''
+title: içi
 ms.date: 04/11/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - intrinsic_CPP
 - vc-pragma.intrinsic
-dev_langs:
-- C++
 helpviewer_keywords:
 - intrinsic pragma
 - pragmas, intrinsic
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af7fe3a96a31f636a0a1c45b1ee74dd4006d15fe
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 393a73fcf31c7c00b2057862792ff0536cc98ad8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071605"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677467"
 ---
 # <a name="intrinsic"></a>içi
 

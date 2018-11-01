@@ -1,25 +1,15 @@
 ---
-title: Windows iletisi makroları | Microsoft Docs
-ms.custom: ''
+title: Windows iletisi makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlbase/ATL::WM_FORWARDMSG
-dev_langs:
-- C++
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f9d312104254323e98f6b2fd031adf1064ecfac
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3ab102ec486af0c7119e8ed28da4898c8beeb293
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582526"
 ---
 # <a name="windows-messages-macros"></a>Windows iletisi makroları
 

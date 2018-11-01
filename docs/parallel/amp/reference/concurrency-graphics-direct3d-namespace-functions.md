@@ -1,25 +1,17 @@
 ---
-title: 'CONCURRENCY::Graphics:: Direct3D ad alanı işlevleri | Microsoft Docs'
-ms.custom: ''
+title: 'CONCURRENCY::Graphics:: Direct3D ad alanı işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d::get_sampler
 - amp_graphics/Concurrency::graphics::direct3d::make_sampler
 - amp_graphics/Concurrency::graphics::direct3d::make_texture
-dev_langs:
-- C++
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45b9b2b9f6d3ff6b08d7aac2a8ecddafe017fc13
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 71ce23d1238d852d42687be725de8153e938d6cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375699"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464733"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace-functions"></a>CONCURRENCY::Graphics:: Direct3D ad alanı işlevleri
 

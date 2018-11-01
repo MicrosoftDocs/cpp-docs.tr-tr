@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3611 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3611
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3611
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3611
 ms.assetid: 42f3e320-41de-420a-bd05-8924cab765aa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6bc7f1f96e774c7b0dd9df2f760d9c45a522de1c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 08e9b969c9eb03dd0259813487bfeb04bfaa5ca9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590251"
 ---
 # <a name="compiler-error-c3611"></a>Derleyici Hatası C3611
 

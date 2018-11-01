@@ -1,27 +1,17 @@
 ---
-title: . FARDATA | Microsoft Docs
-ms.custom: ''
+title: .FARDATA
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .FARDATA
-dev_langs:
-- C++
 helpviewer_keywords:
 - .FARDATA directive
 ms.assetid: 4458ef66-5626-4607-bf83-71637b459f77
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 941fbd86ec977f2f6fbe5a3af26b79ad8771e037
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2be434171c34f089f78bb662a6ffadf51cba73ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693329"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642721"
 ---
 # <a name="fardata"></a>.FARDATA
 

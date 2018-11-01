@@ -1,27 +1,17 @@
 ---
-title: messages_base sınıfı | Microsoft Docs
-ms.custom: ''
+title: messages_base Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocmes/std::messages_base
-dev_langs:
-- C++
 helpviewer_keywords:
 - messages_base class
 ms.assetid: 9aad38c6-4c13-445d-b096-364bd0836efb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e402f103a29dd4c4af49fa1c34b9cae71fc6e9af
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 750c9f36ce7f96a065e0e29111ea379a48595328
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611620"
 ---
 # <a name="messagesbase-class"></a>messages_base Sınıfı
 

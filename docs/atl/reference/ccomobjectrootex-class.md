@@ -1,10 +1,6 @@
 ---
-title: CComObjectRootEx sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComObjectRootEx sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComObjectRootEx
 - ATLCOM/ATL::CComObjectRootEx
@@ -21,21 +17,15 @@ f1_keywords:
 - ATLCOM/ATL::ObjectMain
 - ATLCOM/ATL::m_dwRef
 - ATLCOM/ATL::m_pOuterUnknown
-dev_langs:
-- C++
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 413485bc7675fbc68f2c224ceefdd0f552538eb9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 63547405791f7f0391138dd2d23020c62c8a4a28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655813"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
 

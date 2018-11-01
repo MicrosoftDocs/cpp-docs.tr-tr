@@ -1,29 +1,19 @@
 ---
-title: bss_seg | Microsoft Docs
-ms.custom: ''
+title: bss_seg
 ms.date: 10/22/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.bss_seg
 - bss_seg_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, bss_seg
 - bss_seg pragma
 ms.assetid: 755f0154-de51-4778-97d3-c9b24e445079
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 77d234acdc02a2fefeca45ca0a925603e0ff9984
-ms.sourcegitcommit: 80fc7b0452aafa36b0c915cbd29c75e1ffa25630
+ms.openlocfilehash: 489ced11bb6024fdf9818872c07ab7feebfeabf3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003565"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566315"
 ---
 # <a name="bssseg"></a>bss_seg
 

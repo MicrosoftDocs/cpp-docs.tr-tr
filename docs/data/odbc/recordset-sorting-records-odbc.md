@@ -1,28 +1,17 @@
 ---
-title: 'Kayıt kümesi: Kayıtları sıralama (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Kayıtları Sıralama (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - sorting data, recordset data
 - ODBC recordsets, sorting
 - recordsets, sorting
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 304911c771be630fd3df867c46f8b01a08ed9d59
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 708ba8e851fa81ef2adb4360fe582880acd23c31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621281"
 ---
 # <a name="recordset-sorting-records-odbc"></a>Kayıt Kümesi: Kayıtları Sıralama (ODBC)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3646 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3646
 ms.date: 06/14/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3646
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3646
 ms.assetid: 4391ead2-9637-4ca3-aeda-5a991b18d66d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c038520c1a35fa5264e1e98b074687efb336d028
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: df2e52631ed75cc4a473429ea35e136ed0a88f98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "35658617"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606732"
 ---
 # <a name="compiler-error-c3646"></a>Derleyici Hatası C3646
 

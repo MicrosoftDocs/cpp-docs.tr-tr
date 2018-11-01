@@ -1,30 +1,19 @@
 ---
-title: Kaynaklar (C++) için düzenlenebilir dosya türleri | Microsoft Docs
-ms.custom: ''
+title: Kaynaklar (C++) için düzenlenebilir dosya türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.resource
-dev_langs:
-- C++
 helpviewer_keywords:
 - file types [C++], for resources
 - resources [C++], editing
 - files [C++], editable types
 ms.assetid: c40f9204-f2f2-400b-9f53-53b7bf291356
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 204a1a33f97b7061edef484fb4067f1ba428b190
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: a365795cf762907c33ff44a44de735098575a35c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316139"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579926"
 ---
 # <a name="editable-file-types-for-resources-c"></a>Kaynaklar (C++) için düzenlenebilir dosya türleri
 

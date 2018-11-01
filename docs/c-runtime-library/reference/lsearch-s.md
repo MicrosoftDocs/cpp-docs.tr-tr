@@ -1,10 +1,6 @@
 ---
-title: _lsearch_s | Microsoft Docs
-ms.custom: ''
+title: _lsearch_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lsearch_s
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _lsearch_s
 - lsearch_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - linear searching
 - values, searching for
@@ -34,20 +28,16 @@ helpviewer_keywords:
 - _lsearch_s function
 - lsearch_s function
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12315350b62673abb0a838f9d30830354c58da73
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f57a96622419e3f72fc2df5b260cbbbdd59666ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404204"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677012"
 ---
 # <a name="lsearchs"></a>_lsearch_s
 
-Bir değer için doğrusal arama gerçekleştirir. Bir sürümünü [_lsearch](lsearch.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir değer için doğrusal bir arama gerçekleştirir. Bir sürümünü [_lsearch](lsearch.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,7 +58,7 @@ void *_lsearch_s(
 Aranacak nesne.
 
 *base*<br/>
-Aranacak dizi tabanı işaretçi.
+Temel arama yapılacak dizinin işaretçisi.
 
 *Sayı*<br/>
 Öğe sayısı.
@@ -77,33 +67,33 @@ Aranacak dizi tabanı işaretçi.
 Her dizi öğesi bayt cinsinden boyutu.
 
 *Karşılaştırma*<br/>
-İşaretçi karşılaştırması yordama. İkinci parametre için arama anahtar bir işaretçidir. Üçüncü parametre anahtarla karşılaştırılması gereken bir dizi öğesine bir işaretçidir.
+Karşılaştırma yordamı işaretçisi. İkinci parametre arama anahtarı bir işaretçisidir. Üçüncü parametresi, anahtar ile karşılaştırılacak bir dizi öğesinin işaretçisidir.
 
-*bağlam*<br/>
-Karşılaştırma işlevinde erişilebilen bir nesne için bir işaretçi.
+*Bağlam*<br/>
+Karşılaştırma işlev erişilebilen bir nesne için bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa *anahtar* bulunan **_lsearch_s** dizisi öğesine bir işaretçi döndürür *temel* eşleşen *anahtar*. Varsa *anahtar* bulunamadı, **_lsearch_s** dizinin sonuna en yeni eklenen öğesine bir işaretçi döndürür.
+Varsa *anahtarı* bulunursa **_lsearch_s** dizisi öğeye bir işaretçi döndürür *temel* eşleşen *anahtar*. Varsa *anahtarı* bulunamazsa **_lsearch_s** dizinin sonuna yeni eklenen öğeye bir işaretçi döndürür.
 
-İşlev için geçersiz parametreler aktarılırsa geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Sonra devam etmek yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Geçersiz parametreler bir işleve geçirilirse geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme, ardından devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |*Anahtarı*|*base*|*Karşılaştırma*|*Sayı*|*Boyutu*|**errno**|
 |-----------|------------|---------------|-----------|------------|-------------|
-|**NULL**|tüm|tüm|tüm|tüm|**EINVAL**|
-|tüm|**NULL**|tüm|!= 0|tüm|**EINVAL**|
-|tüm|tüm|tüm|tüm|sıfır|**EINVAL**|
-|tüm|tüm|**NULL**|bir|tüm|**EINVAL**|
+|**NULL**|Tüm|Tüm|Tüm|Tüm|**EINVAL**|
+|Tüm|**NULL**|Tüm|!= 0|Tüm|**EINVAL**|
+|Tüm|Tüm|Tüm|Tüm|sıfır|**EINVAL**|
+|Tüm|Tüm|**NULL**|Bir|Tüm|**EINVAL**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lsearch_s** işlevi gerçekleştiren değeri için doğrusal arama *anahtar* dizisindeki *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch_s**, **_lsearch_s** sıralanacak dizi gerektirmez. Varsa *anahtar* , ardından bulunamadı **_lsearch_s** artırır ve dizinin sonuna ekler *numarası*.
+**_Lsearch_s** işlevi, doğrusal bir arama değeri gerçekleştirir *anahtarı* bir dizide *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch_s**, **_lsearch_s** sıralanacak dizi gerektirmez. Varsa *anahtarı* , ardından bulunamadı **_lsearch_s** artırır ve dizi sonuna ekler *numarası*.
 
-*Karşılaştırmak* işlevi iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndürür ve kullanıcı tarafından sağlanan bir yordama bir işaretçidir. *Karşılaştırmak* işlevi de bağlamı ilk bağımsız değişken olarak işaretçisine alır. **_lsearch_s** çağrıları *karşılaştırmak* işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında bir veya birden çok kez. *Karşılaştırma* gerekir ve öğeleri karşılaştırma ya da dönüş sıfır olmayan (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı olduğu anlamına gelir).
+*Karşılaştırma* işlevi kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunların belirten bir değeri döndüren bir yordam işaretçidir. *Karşılaştırma* işlevi ayrıca bir işaretçi bağlamı ilk bağımsız değişken olarak alır. **_lsearch_s** çağrıları *karşılaştırma* işaretçileri iki dizi öğelerine her çağrıda geçirme, arama sırasında bir veya daha fazla kez. *Karşılaştırma* gerekir ve öğeleri karşılaştırma ya da dönüş sıfır olmayan (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı olduğu anlamına gelir).
 
-*Bağlamı* işaretçi Aranan veri yapısı bir nesnenin parçası ise yararlı olabilir ve *karşılaştırmak* işlevi nesnenin üyelerine erişme gerekiyor. Örneğin, kod *karşılaştırmak* işlevi uygun nesne türüne ve erişim üyeleri bu nesnenin void işaretçi çevirebilirsiniz. Eklenmesi *bağlamı* işaretçi yapar **_lsearch_s** daha güvenli çünkü ek bağlam verileri kullanılabilir hale getirmek için statik değişkenler kullanımıyla ilişkili yeniden giriş hataları önlemek için kullanılabilir *karşılaştırmak* işlevi.
+*Bağlam* işaretçi Aranan veri yapısı, bir nesnenin parçası ise kullanışlı olabilir ve *karşılaştırmak* işlevi bir nesnenin üyelerine erişim gerekir. Örneğin, kod *karşılaştırma* işlevi uygun nesne türü ve erişim üyeleri o nesnenin void işaretçisine çevirebilirsiniz. Ek *bağlam* işaretçisi yapar **_lsearch_s** daha güvenli veri kullanılabilir hale getirmek için statik değişkenler kullanmayla ilişkili yeniden giriş hataları önlemek için ek bağlam kullanılabildiğinden *karşılaştırma* işlevi.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -111,7 +101,7 @@ Varsa *anahtar* bulunan **_lsearch_s** dizisi öğesine bir işaretçi döndür�
 |-------------|---------------------|
 |**_lsearch_s**|\<Search.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

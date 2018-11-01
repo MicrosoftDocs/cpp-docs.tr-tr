@@ -1,28 +1,18 @@
 ---
-title: işleci! (MASM çalışma zamanında) | Microsoft Docs
-ms.custom: ''
+title: işleci! (MASM çalışma zamanı)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator !
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator !, syntax
 - '! operator'
 ms.assetid: e94f737a-8251-4a3d-95ec-e95c35689b37
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb03955ab5c0bf50531b26c21b28b47083e7dbe4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4a10fa603449e72108977604697227bbb24c3bfc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597632"
 ---
 # <a name="operator--masm-run-time"></a>işleci! (MASM çalışma zamanı)
 

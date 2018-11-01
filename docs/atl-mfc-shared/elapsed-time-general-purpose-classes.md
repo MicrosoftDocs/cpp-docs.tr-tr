@@ -1,12 +1,6 @@
 ---
-title: 'Geçen zaman: Genel amaçlı sınıflar | Microsoft Docs'
-ms.custom: ''
+title: 'Geçen zaman: Genel amaçlı sınıflar'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - adding dates
 - calculating dates and times
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - intervals, date and time
 - calculations, date and time
 ms.assetid: e5c5d3d2-ce1d-409e-875c-98848434e716
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 54c3061ac0d081d04834ba4a8b7336732d854199
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ebaf77b34411cd55cb3a028bcce9109613b63ed9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676760"
 ---
 # <a name="elapsed-time-general-purpose-classes"></a>Geçen zaman: Genel amaçlı sınıflar
 

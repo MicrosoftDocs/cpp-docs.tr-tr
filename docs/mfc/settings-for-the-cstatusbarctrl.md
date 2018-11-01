@@ -1,28 +1,18 @@
 ---
-title: Cstatusbarctrl ayarları | Microsoft Docs
-ms.custom: ''
+title: CStatusBarCtrl Ayarları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CStatusBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - status bar controls [MFC], settings
 - CStatusBarCtrl class [MFC], settings
 ms.assetid: adeba0c3-17f3-435c-b140-a57845e9ce49
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2411659e6ae33fe9ce81d508d3e7c206b1e5b113
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a4806cdc81a536aac0b9472ca043d4d2de027495
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440036"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676531"
 ---
 # <a name="settings-for-the-cstatusbarctrl"></a>CStatusBarCtrl Ayarları
 

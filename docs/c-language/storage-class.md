@@ -1,12 +1,6 @@
 ---
-title: Depolama sınıfı | Microsoft Docs
-ms.custom: ''
+title: Depolama Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - linkage [C++], external
 - function storage class
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ad18936d85459612d065a68ba8d079d6050b322
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 98e685556fe5dc874f2af818d8c86d0dcadefe29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084074"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575675"
 ---
 # <a name="storage-class"></a>Depolama Sınıfı
 

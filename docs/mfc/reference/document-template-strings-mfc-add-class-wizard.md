@@ -1,27 +1,17 @@
 ---
-title: Belge şablonu dizeleri, MFC sınıf Ekleme Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Belge Şablonu Dizeleri, MFC Sınıf Ekleme Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.mfc.simple.doctemp
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC Add Class Wizard, document control strings
 ms.assetid: 14e1c834-5e79-4dbd-811f-ec8f0a9cdcb2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 167ddb7fd6beabe734eb58e8b17355166b86445d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a5664a539af351051f9ae3642c089e51b54bc8cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662429"
 ---
 # <a name="document-template-strings-mfc-add-class-wizard"></a>Belge Şablonu Dizeleri, MFC Sınıf Ekleme Sihirbazı
 

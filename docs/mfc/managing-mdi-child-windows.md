@@ -1,14 +1,8 @@
 ---
-title: MDI alt Windows yönetme | Microsoft Docs
-ms.custom: ''
+title: MDI Alt Öğe Pencerelerini Yönetme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - MDICLIENT
-dev_langs:
-- C++
 helpviewer_keywords:
 - MDI [MFC], child windows
 - child windows [MFC], and MDICLIENT window
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - child windows [MFC]
 - MDI [MFC], frame windows
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45989b7c07d27db1d7b2cda68751bd6165ee5382
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2055c215392c6805791de729ff6ab8c6a9057308
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629417"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI Alt Öğe Pencerelerini Yönetme
 

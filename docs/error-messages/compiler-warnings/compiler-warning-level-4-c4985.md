@@ -1,25 +1,15 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4985 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4985
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4985
 ms.assetid: 832f001c-afe7-403d-a8b4-02334724c79e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d67b7394ef9bd38409ca45abe6ed7d347f5a37d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6f098b25848d4fca0431663bd61ad71646c8d644
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661077"
 ---
 # <a name="compiler-warning-level-4-c4985"></a>Derleyici Uyarısı (düzey 4) C4985
 

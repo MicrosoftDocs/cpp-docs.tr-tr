@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3908 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3908
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3908
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3908
 ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7591b8ab5f8495b6af866e23e7a169b0f9cd29a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 84b21f20cbc8203a9cd70e487738c34c6ad3a89b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047323"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598940"
 ---
 # <a name="compiler-error-c3908"></a>Derleyici Hatası C3908
 

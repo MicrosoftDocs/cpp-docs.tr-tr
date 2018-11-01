@@ -1,14 +1,8 @@
 ---
-title: Kaynakları, kaynak düzenleyicisinde (C++) görüntüleme ve düzenleme | Microsoft Docs
-ms.custom: ''
+title: Kaynakları, kaynak düzenleyicisinde (C++) görüntüleme ve düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vs.resourceview
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [C++], viewing
 - layouts, previewing resource
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - .rc files [C++], viewing resources
 - resources [C++], editing
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4fd8ed4e1257c8f780f1b1ac733aa8dd2261685c
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b33b7b52f494971451298e0827327cc86e60e7f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582636"
 ---
 # <a name="viewing-and-editing-resources-in-a-resource-editor-c"></a>Kaynakları, kaynak düzenleyicisinde (C++) görüntüleme ve düzenleme
 

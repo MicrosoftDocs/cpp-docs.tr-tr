@@ -1,12 +1,6 @@
 ---
-title: Dosya türleri Visual C++ projeleri için oluşturulan | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Projeleri için Oluşturulan Dosya Türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - header files [C++], Visual C++ projects
 - ActiveX controls [C++], Help files
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dba47b8464c7fcdd170df1819b65aa448d8f8aeb
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 78ba4afd8a7fad87f09c2a403d25d3c6d52cc0c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808427"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573478"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ Projeleri için Oluşturulan Dosya Türleri
 

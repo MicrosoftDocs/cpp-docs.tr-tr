@@ -1,14 +1,8 @@
 ---
-title: CUserException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CUserException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CUserException
-dev_langs:
-- C++
 helpviewer_keywords:
 - operations [MFC], stopping
 - exceptions [MFC], throwing
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - operations [MFC]
 - throwing exceptions [MFC], stopping user operations
 ms.assetid: 2156ba6d-2cce-415a-9000-6f02c26fcd7d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 71d2be1c00e518597a5d5121d7a53544bd29067f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80f64ac3f573bddc376e54f13f6c37f8c7ebc8d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419665"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584476"
 ---
 # <a name="cuserexception-class"></a>CUserException sınıfı
 

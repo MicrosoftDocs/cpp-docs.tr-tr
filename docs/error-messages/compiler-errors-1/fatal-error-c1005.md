@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1005 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1005
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1005
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1005
 ms.assetid: 150daf8e-a38a-4669-9c1a-a05b5a1f65ef
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 888bdaf2eaddc0d4178affa1ccc4ae77c34f4617
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a84791367656729b1cbd50ca180368f6c01531a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092316"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614467"
 ---
 # <a name="fatal-error-c1005"></a>Önemli hata C1005
 

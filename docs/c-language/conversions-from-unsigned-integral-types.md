@@ -1,12 +1,6 @@
 ---
-title: İmzasız tam sayı türlerinden dönüştürmeler | Microsoft Docs
-ms.custom: ''
+title: İmzasız Tam Sayı Türlerinden Dönüştürmeler
 ms.date: 01/29/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - integers, converting
 - type casts, involving integers
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38ef2c16c92322ae54dcc6dd7d577268daf74831
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7653c545601d10b159f10a8a3c8f60f9128f944
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058282"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579695"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız Tam Sayı Türlerinden Dönüştürmeler
 

@@ -1,27 +1,17 @@
 ---
-title: '&lt;cinttypes&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cinttypes&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 18eb738c-aa74-4ed3-9cdd-049ef4c64b80
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1bae3765e5d403f57c806c898d058a0e19b0d05d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1f3401e4d1e21c6d2ca644509de09c9855e206e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594898"
 ---
 # <a name="ltcinttypesgt"></a>&lt;cinttypes&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<inttypes.h >. Bu üst dahil olmak üzere de içeren \<cstdint >.
+Standart C Kitaplığı üstbilgisi içerir \<inttypes.h >. Bu üstbilginin dahil yöntemlerine \<cstdint >.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +22,7 @@ Standart C Kitaplığı üstbilgi içeren \<inttypes.h >. Bu üst dahil olmak ü
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

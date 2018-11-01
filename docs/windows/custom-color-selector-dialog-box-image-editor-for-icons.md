@@ -1,29 +1,18 @@
 ---
-title: Özel Renk Seçici iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++) | Microsoft Docs
-ms.custom: ''
+title: Özel Renk Seçici iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.customcolorselector
-dev_langs:
-- C++
 helpviewer_keywords:
 - Custom Color Selector dialog box [C++]
 - colors [C++], image
 ms.assetid: 534d0c2a-b3f6-4f09-9346-3bbf85bb3dd7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 3e2975e200a65ccaf57dab3170bb1854ccb4e53b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e9ba60ab433643704542b64a03fbf43dbeeeba94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575957"
 ---
 # <a name="custom-color-selector-dialog-box-c-image-editor-for-icons"></a>Özel Renk Seçici iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 

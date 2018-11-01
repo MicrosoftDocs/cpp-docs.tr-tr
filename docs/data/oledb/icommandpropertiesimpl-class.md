@@ -1,10 +1,6 @@
 ---
-title: Icommandpropertiesımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: ICommandPropertiesImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ICommandPropertiesImpl
 - ATL.ICommandPropertiesImpl
@@ -15,24 +11,17 @@ f1_keywords:
 - ICommandPropertiesImpl.SetProperties
 - ICommandPropertiesImpl::SetProperties
 - SetProperties
-dev_langs:
-- C++
 helpviewer_keywords:
 - ICommandPropertiesImpl class
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 40c1648131db04ed1629da453a16112debf6e6be
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b1411f3df97aeaf66abcccc5be78c734e3a71f19
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603495"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 

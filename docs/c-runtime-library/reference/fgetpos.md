@@ -1,10 +1,6 @@
 ---
-title: fgetpos | Microsoft Docs
-ms.custom: ''
+title: fgetpos
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fgetpos
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fgetpos
-dev_langs:
-- C++
 helpviewer_keywords:
 - fgetpos function
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b111a911083354c8d9478b2c914a0a5f7dfe7725
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e213c9830ffe6edf04b12a80828f14cc48f77524
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658425"
 ---
 # <a name="fgetpos"></a>fgetpos
 
@@ -54,19 +44,19 @@ int fgetpos(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 Hedef akış.
 
 *POS*<br/>
-Konum göstergesi depolama.
+Depolama konumu göstergesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **fgetpos** 0 döndürür. İsteğe bağlı olarak, arıza sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdakilerden birini bildirim Sabitleri (STDIO içinde tanımlanmıştır. H): **EBADF**, belirtilen stream başka bir deyişle, geçerli dosya işaretçisi değil veya erişilebilir değil veya **EINVAL**, anlamına *akış* veya değeri*pos* olduğu ya da null işaretçi gelmesi gibi geçersiz. Varsa *akış* veya *pos* olan bir **NULL** işaretçisi işlevi çağırır geçersiz parametre işleyicisi açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+Başarılı olursa, **fgetpos** 0 döndürür. İsteğe bağlı olarak hata durumunda, sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdakilerden birini bildirim Sabitleri (STDIO içinde tanımlanır. H): **EBADF**, belirtilen akış başka bir deyişle, geçerli dosya işaretçisi değil veya erişilebilir değil veya **EINVAL**, yani *stream* veya değeri*pos* olduğu ya da bir null işaretçi ise gibi geçersiz. Varsa *stream* veya *pos* olduğu bir **NULL** işaretçisi işlevi çağıran geçersiz parametre işleyicisi açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fgetpos** işlevi alır geçerli değeri *akış* bağımsız değişkeninin dosya konumu göstergesi ve nesne içinde işaret için tarafından depoları *pos*. **Fsetpos** işlevi daha sonra depolanan bilgileri kullanmak *pos* sıfırlamak için *akış* bağımsız değişkeninin işaretçi zaman konumuna **fgetpos** çağrıldı. *Pos* değeri iç bir biçimde depolanır ve yalnızca tarafından kullanılmaya yöneliktir **fgetpos** ve **fsetpos**.
+**Fgetpos** işlevi, geçerli değerini alır *stream* bağımsız değişkenin dosya konumu göstergesi ve depoları içinde nesne tarafından işaret edilen *pos*. **Fsetpos** işlevi daha sonra depolanan bilgileri kullanmak *pos* sıfırlamak için *stream* bağımsız değişkenin konumuna zaman işaretçisine **fgetpos** çağrıldı. *Pos* değeri iç bir biçimde depolanır ve yalnızca tarafından kullanılması amaçlanan **fgetpos** ve **fsetpos**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -74,7 +64,7 @@ Başarılı olursa, **fgetpos** 0 döndürür. İsteğe bağlı olarak, arıza s
 |--------------|---------------------|
 |**fgetpos**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -124,7 +114,7 @@ int main( void )
 fgetpos gets a stream's file-position indicator.
 ```
 
-### <a name="output-crtfgetpostxt"></a>Çıktı crt_fgetpos.txt
+### <a name="output-crtfgetpostxt"></a>Çıkış crt_fgetpos.txt
 
 ```Output
 after fgetpos: gets a stream
@@ -133,5 +123,5 @@ after fsetpos: gets a stream
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fsetpos](fsetpos.md)<br/>

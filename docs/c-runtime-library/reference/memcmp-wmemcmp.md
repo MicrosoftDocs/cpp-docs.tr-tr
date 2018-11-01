@@ -1,10 +1,6 @@
 ---
-title: memcmp, wmemcmp | Microsoft Docs
-ms.custom: ''
+title: memcmp, wmemcmp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memcmp
 - wmemcmp
@@ -24,26 +20,20 @@ apitype: DLLExport
 f1_keywords:
 - memcmp
 - wmemcmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e40264c3ee7e48a545c88d7d48891126117ecc8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9504635a2a96c4579afc7a8d9caf1844504c05b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404395"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610483"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
-İki arabelleğini karakter karşılaştırır.
+İki arabellek karakterleri karşılaştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,21 +59,21 @@ int wmemcmp(
 İkinci bir arabellek.
 
 *Sayısı*<br/>
-Karşılaştırılacak karakter sayısı. (İçin bayt karşılaştırır **memcmp**, geniş karakter için **wmemcmp**).
+Karşılaştırılacak karakter sayısı. (İçin bayt karşılaştırır **memcmp**, geniş karakterler için **wmemcmp**).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri arabellek arasındaki ilişkiyi gösterir.
+Dönüş değeri, arabellek arasındaki ilişkiyi gösterir.
 
-|Dönüş değeri|İlk ilişkisini *sayısı* buf1 ve buf2 karakterleri|
+|Dönüş değeri|İlişki ilk *sayısı* buf1 ve buf2 karakter|
 |------------------|---------------------------------------------------------------|
-|< 0|*buffer1* değerinden *buffer2*|
+|< 0|*buffer1* küçüktür *buffer2*|
 |0|*buffer1* aynı *buffer2*|
-|> 0|*buffer1* büyük *buffer2*|
+|> 0|*buffer1* büyüktür *buffer2*|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk karşılaştırır *sayısı* karakterlerinden *buffer1* ve *buffer2* ve ilişkilerini gösteren bir değer döndürür. Sıfır olmayan oturum değeri arabellek değerlerinin ilk farklı çifti arasındaki farkı işaretidir döndür. Değerleri olarak yorumlanır **imzasız** **char** için **memcmp**ve **wchar_t** için **wmemcmp**.
+İlk karşılaştırır *sayısı* karakterlerinden *buffer1* ve *buffer2* ve ilişkilerini gösteren bir değer döndürür. Oturum ilk farklı çift arabellekler değerler arasındaki farkın değerdir sıfır olmayan bir oturum döndürür. Değerleri olarak yorumlanır **işaretsiz** **char** için **memcmp**ve **wchar_t** için **wmemcmp**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -92,7 +82,7 @@ Dönüş değeri arabellek arasındaki ilişkiyi gösterir.
 |**memcmp**|\<Memory.h > veya \<string.h >|
 |**wmemcmp**|\<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

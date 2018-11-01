@@ -1,28 +1,18 @@
 ---
-title: MFC Sınıf Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: MFC Sınıf Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.wizards.classwizard
-dev_langs:
-- C++
 helpviewer_keywords:
 - wizards (MFC)
 - MFC Class Wizard
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31e8b6064b9e81edac1c7f4c8aac8e20f1f72296
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d80dc10467b5180158fcb0f681bbc728ada60764
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471779"
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
 

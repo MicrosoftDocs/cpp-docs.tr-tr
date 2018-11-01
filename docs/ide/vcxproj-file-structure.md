@@ -1,25 +1,15 @@
 ---
-title: .vcxproj ve .props dosya yapısı | Microsoft Docs
-ms.custom: ''
+title: .vcxproj ve .props dosya yapısı
 ms.date: 09/18/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 957d9e1063c71e342339eb4e6a6c913eeb5a8f64
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b3b71c32f8b1743586d77068b4da897589b82ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374094"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619039"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı
 

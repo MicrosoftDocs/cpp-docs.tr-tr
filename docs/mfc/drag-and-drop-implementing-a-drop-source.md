@@ -1,12 +1,6 @@
 ---
-title: 'Sürükle ve bırak: bir bırakma kaynağı uygulama | Microsoft Docs'
-ms.custom: ''
+title: 'Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE drag and drop [MFC], initiating drag operations
 - drag and drop [MFC], calling DoDragDrop
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - drag and drop [MFC], initiating drag operations
 - drag and drop [MFC], drop source
 ms.assetid: 0ed2fda0-63fa-4b1e-b398-f1f142f40035
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 71f82bbd975f5ff24f3b254abc46e5e6ffa3a34a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ac925ac83b5ef019e3140dcc93034ccdf221ed7e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427660"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586738"
 ---
 # <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama
 

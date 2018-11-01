@@ -1,28 +1,18 @@
 ---
-title: Görünüm sınıfları MFC'de kullanılabilen türetilmiş | Microsoft Docs
-ms.custom: ''
+title: MFC'de Kullanılabilen Türetilmiş Görünüm Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CView class [MFC], classes derived from
 - classes [MFC], derived
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f8d058891b361b3747caafd9c4bd279c7626856
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9972586bd0cc4059e81d81be954a8cf0cada1f0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426921"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594511"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC'de Kullanılabilen Türetilmiş Görünüm Sınıfları
 

@@ -1,10 +1,6 @@
 ---
-title: Cdberrorınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDBErrorInfo Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CDBErrorInfo
 - ATL::CDBErrorInfo
@@ -39,8 +35,6 @@ f1_keywords:
 - ATL::CDBErrorInfo::GetErrorRecords
 - GetErrorRecords
 - CDBErrorInfo::GetErrorRecords
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDBErrorInfo class
 - GetAllErrorInfo method
@@ -50,17 +44,12 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 19daacae764d3cb5e6b6b24a8cae0516ff7fe352
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fcf56dd32df4e8bf2161bdbc1a67f3b091f043c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066584"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653654"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 

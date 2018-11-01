@@ -1,10 +1,6 @@
 ---
-title: shuffle_order_engine sınıfı | Microsoft Docs
-ms.custom: ''
+title: shuffle_order_engine Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::shuffle_order_engine
 - random/std::shuffle_order_engine::base
@@ -12,8 +8,6 @@ f1_keywords:
 - random/std::shuffle_order_engine::operator()
 - random/std::shuffle_order_engine::base_type
 - random/std::shuffle_order_engine::seed
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::shuffle_order_engine [C++]
 - std::shuffle_order_engine [C++], base
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - std::shuffle_order_engine [C++], base_type
 - std::shuffle_order_engine [C++], seed
 ms.assetid: 0bcd1fb0-44d7-4e59-bb1b-4a9b673a960d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7893f992fa19cdef8713ec4c9fd755c7cd1b465e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: bf767c12a19e4ae47c34a8f01e1b1a2f1e028eb3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100319"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676661"
 ---
 # <a name="shuffleorderengine-class"></a>shuffle_order_engine Sınıfı
 

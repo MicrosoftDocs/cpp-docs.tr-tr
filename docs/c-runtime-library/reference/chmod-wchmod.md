@@ -1,10 +1,6 @@
 ---
-title: _chmod, _wchmod | Microsoft Docs
-ms.custom: ''
+title: _chmod, _wchmod
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _chmod
 - _wchmod
@@ -25,8 +21,6 @@ f1_keywords:
 - _chmod
 - _wchmod
 - wchmod
-dev_langs:
-- C++
 helpviewer_keywords:
 - _chmod function
 - wchmod function
@@ -35,20 +29,16 @@ helpviewer_keywords:
 - files [C++], changing permissions
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e4944f871195b276189014ed9d5d294b9b445fd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7f3133aac1548be5cb497fe32ae4f9f1c0e238d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399962"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595136"
 ---
 # <a name="chmod-wchmod"></a>_chmod, _wchmod
 
-Dosya izni ayarlarını değiştirir.
+Dosya izin ayarlarını değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,30 +50,30 @@ int _wchmod( const wchar_t *filename, int pmode );
 ### <a name="parameters"></a>Parametreler
 
 *Dosya adı*<br/>
-Varolan dosyanın adı.
+Var olan dosyanın adı.
 
 *pmode*<br/>
-Dosya izni ayarı.
+Dosya için izin ayarının.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İzni ayarı başarıyla değiştirilirse bu işlevler 0 döndürür. Dönüş değeri-1 hata gösterir. Belirtilen dosya bulunamadı, **errno** ayarlanır **ENOENT**; bir parametre geçersiz **errno** ayarlanır **EINVAL**.
+İzin başarıyla değiştirilirse bu işlevler, 0 döndürür. Dönüş değeri-1 hata gösterir. Belirtilen dosya bulunamadı, **errno** ayarlanır **ENOENT**; bir parametre geçersiz **errno** ayarlanır **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chmod** işlevi tarafından belirtilen dosya izni ayarı değişiklikleri *filename*. Okuma ve yazma erişimi dosya izni ayarı denetler. Tamsayı ifade *pmode* birini veya her ikisini SYS\Stat.h tanımlanan aşağıdaki bildirim sabitleri içerir.
+**_Chmod** işlevi tarafından belirtilen dosya izni ayarını değiştirir *filename*. İzin ayarının okuma ve dosyaya yazma erişimi denetler. Tamsayı ifadesini *pmode* birini veya her ikisini SYS\Stat.h tanımlanan aşağıdaki bildirim sabitleri içerir.
 
 |*pmode*|Açıklama|
 |-|-|
 **_S_IREAD**|Yalnızca okuma izin verilir.
-**_S_IWRITE**|Yazma izin verilir. (Geçerli, okuma ve yazma izin verir.)
+**_S_IWRITE**|Yazma izin verilir. (Aslında, okuma ve yazma verir.)
 **_S_IREAD** &AMP;#124; **_S_IWRITE**|Okuma ve yazma izin verilir.
 
-Her iki sabitleri verildiğinde, bunlar Bitsel ile birleştirilir veya işleci (**|**). Yazma izni verilmedi, dosya salt okunurdur. Tüm dosyaları her zaman okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, modları **_s_ıwrıte** ve **_s_ıread** | **_s_ıwrıte** eşdeğerdir.
+Her iki sabitleri verildiğinde, bunlar ile bit düzeyinde birleştirilir veya işleci (**|**). Yazma izni verilmemişse, dosyanın salt okunur. Tüm dosyaları her zaman okunabilir olduğunu unutmayın; Salt yazma izni vermek mümkün değildir. Bu nedenle, modları **_s_ıwrıte** ve **_s_ıread** | **_s_ıwrıte** eşdeğerdir.
 
-**_wchmod** bir joker karakter sürümü **_chmod**; *filename* bağımsız değişkeni **_wchmod** bir joker karakter dizesidir. **_wchmod** ve **_chmod** Aksi takdirde aynı şekilde davranır.
+**_wchmod** geniş karakterli sürümüdür **_chmod**; *filename* bağımsız değişkeni **_wchmod** geniş karakterli bir dizedir. **_wchmod** ve **_chmod** aynı şekilde davranır.
 
-Bu işlev parametrelerini doğrular. Varsa *pmode* bildirim sabitleri bir birleşimini değil veya başka bir kümesi içerir, sabitleri işlevi yalnızca bu yok sayar. Varsa *filename* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
+Bu işlev, parametrelerini doğrular. Varsa *pmode* bildirim sabitlerinden birini birleşimi değil veya alternatif bir kümesini içerir, sabitleri işlevi yalnızca bu yok sayar. Varsa *filename* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -93,12 +83,12 @@ Bu işlev parametrelerini doğrular. Varsa *pmode* bildirim sabitleri bir birle�
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_chmod**|\<io.h >|\<sys/Types.h >, \<sys/stat.h >, \<errno.h >|
 |**_wchmod**|\<io.h > veya \<wchar.h >|\<sys/Types.h >, \<sys/stat.h >, \<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

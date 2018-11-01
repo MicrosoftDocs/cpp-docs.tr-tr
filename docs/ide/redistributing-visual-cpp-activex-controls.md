@@ -1,26 +1,16 @@
 ---
-title: Visual C++ ActiveX denetimlerini yeniden dağıtma | Microsoft Docs
-ms.custom: ''
+title: Visual C++ ActiveX Denetimlerini Yeniden Dağıtma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], redistributing
 - controls [C++], distributing
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5eea5ef50427e7398246d8da3d7977bb714d9b54
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6c1f75665d43d927e21a1fd7d365e1bde46c57a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551404"
 ---
 # <a name="redistributing-visual-c-activex-controls"></a>Visual C++ ActiveX Denetimlerini Yeniden Dağıtma
 

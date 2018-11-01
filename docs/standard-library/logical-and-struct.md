@@ -1,28 +1,18 @@
 ---
-title: logical_and yapısı | Microsoft Docs
-ms.custom: ''
+title: logical_and Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::logical_and
-dev_langs:
-- C++
 helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cab2335a8e9adb3e4f68f8576df466be45f01504
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 27cb49b851bce1d63b7e3a11e7a3bbb9db06fefa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100799"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495621"
 ---
 # <a name="logicaland-struct"></a>logical_and Yapısı
 

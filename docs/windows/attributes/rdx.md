@@ -1,28 +1,17 @@
 ---
-title: RDX (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: RDX (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.rdx
-dev_langs:
-- C++
 helpviewer_keywords:
 - rdx attribute
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e48d71ace613eac040f83023f70f2a1f28d09f6e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0b21e94ce3c54c0234dd7883aac3ef5cadbbc009
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082314"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677883"
 ---
 # <a name="rdx"></a>rdx
 

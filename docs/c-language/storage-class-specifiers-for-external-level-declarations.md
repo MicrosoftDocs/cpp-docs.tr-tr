@@ -1,12 +1,6 @@
 ---
-title: Dış düzey bildirimleri depolama sınıfı tanımlayıcıları | Microsoft Docs
-ms.custom: ''
+title: Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - external definitions
 - linkage [C++], external
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - visibility, variables
 - static storage class specifiers
 ms.assetid: b76b623a-80ec-4d5d-859b-6cef422657ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e4f2e80c22d7a341f5b44b77fc14ada8eb2f0098
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 35b8b3082841c14f1cb82778978a84c89a17618d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587882"
 ---
 # <a name="storage-class-specifiers-for-external-level-declarations"></a>Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 

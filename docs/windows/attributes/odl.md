@@ -1,28 +1,17 @@
 ---
-title: odl (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: odl (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.odl
-dev_langs:
-- C++
 helpviewer_keywords:
 - odl attribute
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1143b1125110084f1deae445030eab8dcdd3cd7a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e2fa1ddc0acfd0d6680ebd58c7762adb96ac180a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056964"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571801"
 ---
 # <a name="odl"></a>odl
 

@@ -1,30 +1,20 @@
 ---
-title: -SECTION (DUMPBIN) | Microsoft Docs
-ms.custom: ''
+title: /SECTION (DUMPBIN)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /section
-dev_langs:
-- C++
 helpviewer_keywords:
 - -SECTION dumpbin option
 - SECTION option
 - /SECTION dumpbin option
 - SECTION dumpbin option
 ms.assetid: c223d1c6-88ef-411c-9607-c610726b8d66
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c384ef6e842213e75ec0d8a7f7e9b03b576f8d6b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f4e36c9c651c3d89982e9145d107cc0813465dfa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676252"
 ---
 # <a name="section-dumpbin"></a>/SECTION (DUMPBIN)
 

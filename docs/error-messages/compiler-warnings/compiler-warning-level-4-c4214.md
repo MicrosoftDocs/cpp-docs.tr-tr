@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4214 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4214
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4214
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4214
 ms.assetid: 9b8db279-1f12-4a6b-a923-2db22acd1947
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 879c959bfe851b56dbc60b4eeb714db8d7f9dfaf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31711d3709b7c2ae3658d760f538ea9e841d33a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655734"
 ---
 # <a name="compiler-warning-level-4-c4214"></a>Derleyici Uyarısı (düzey 4) C4214
 

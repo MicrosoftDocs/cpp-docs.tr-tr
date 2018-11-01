@@ -1,10 +1,6 @@
 ---
-title: CPaneContainerManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPaneContainerManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPaneContainerManager
 - AFXPANECONTAINERMANAGER/CPaneContainerManager
@@ -58,8 +54,6 @@ f1_keywords:
 - AFXPANECONTAINERMANAGER/CPaneContainerManager::SetPaneContainerRTC
 - AFXPANECONTAINERMANAGER/CPaneContainerManager::SetResizeMode
 - AFXPANECONTAINERMANAGER/CPaneContainerManager::StoreRecentDockSiteInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPaneContainerManager [MFC], AddPane
 - CPaneContainerManager [MFC], AddPaneContainerManager
@@ -112,16 +106,12 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], SetResizeMode
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5037db54fbc758534e32ae6877e6ce2d23e3cc5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 598ad7fd3573928d1915d01d889910c13d9cb00c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070614"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530019"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager sınıfı
 

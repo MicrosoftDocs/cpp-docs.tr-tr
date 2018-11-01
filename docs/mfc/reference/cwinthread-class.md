@@ -1,10 +1,6 @@
 ---
-title: CWinThread sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWinThread sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CWinThread
 - AFXWIN/CWinThread
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXWIN/CWinThread::m_nThreadID
 - AFXWIN/CWinThread::m_pActiveWnd
 - AFXWIN/CWinThread::m_pMainWnd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWinThread [MFC], CWinThread
 - CWinThread [MFC], CreateThread
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 412d9150836511c88b85326d2ce59181a0566c57
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: c1eeb649917e8457af5a3a27324ae65ae8259ac8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477330"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 

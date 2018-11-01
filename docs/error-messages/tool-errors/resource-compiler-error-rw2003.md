@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RW2003 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RW2003
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RW2003
-dev_langs:
-- C++
 helpviewer_keywords:
 - RW2003
 ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84f539a42e3613fb3cb909af61ac6eb867d7d887
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2e0a7d2d5b7e8fc4603b10450ba30dbf014e02cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071410"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583176"
 ---
 # <a name="resource-compiler-error-rw2003"></a>Kaynak Derleyicisi Hatası RW2003
 

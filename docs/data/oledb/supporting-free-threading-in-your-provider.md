@@ -1,27 +1,16 @@
 ---
-title: Sağlayıcınızda Serbest iş parçacığı oluşturmayı destekleme | Microsoft Docs
-ms.custom: ''
+title: Sağlayıcınızda Serbest İş Parçacığı Oluşturmayı Destekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, multithreaded
 - threading [C++], providers
 ms.assetid: a91270dc-cdf9-4855-88e7-88a54be7cbe8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 1235818474f734bf21afb51a6b4e8ed0a7b88f17
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 653736b52c116f1c72856bf0c12e9deff05e0cfb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079921"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676206"
 ---
 # <a name="supporting-free-threading-in-your-provider"></a>Sağlayıcınızda Serbest İş Parçacığı Oluşturmayı Destekleme
 

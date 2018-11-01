@@ -1,10 +1,6 @@
 ---
-title: CEvent sınıfı | Microsoft Docs
-ms.custom: ''
+title: CEvent sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CEvent
 - AFXMT/CEvent
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXMT/CEvent::ResetEvent
 - AFXMT/CEvent::SetEvent
 - AFXMT/CEvent::Unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - CEvent [MFC], CEvent
 - CEvent [MFC], PulseEvent
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8dff47314c5e8932a6f5a2a2078fd70a86c9229b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 883f3065c9d15ad793e6c0d548b911f10d166c0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667908"
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 

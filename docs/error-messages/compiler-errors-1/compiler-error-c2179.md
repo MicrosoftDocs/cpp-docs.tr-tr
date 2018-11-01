@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2179 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2179
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2179
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2179
 ms.assetid: f929bfc6-3964-4e54-87d6-7529b9b6c0b9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b56437dfe5b9be75ae93dea46890d408ea2dc66
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4a8abd8d862d4d6b08b1d0efd1d47d0413b60a81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566172"
 ---
 # <a name="compiler-error-c2179"></a>Derleyici Hatası C2179
 

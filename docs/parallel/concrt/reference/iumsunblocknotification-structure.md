@@ -1,30 +1,20 @@
 ---
-title: Iumsunblocknotification yapısı | Microsoft Docs
-ms.custom: ''
+title: IUMSUnblockNotification Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - IUMSUnblockNotification
 - CONCRTRM/concurrency::IUMSUnblockNotification
 - CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext
 - CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification
-dev_langs:
-- C++
 helpviewer_keywords:
 - IUMSUnblockNotification structure
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63dcd78af0804a6921d34a35611591f044c2633f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 219e32cedb02d4ecab73390e33601de32f9b0992
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677974"
 ---
 # <a name="iumsunblocknotification-structure"></a>IUMSUnblockNotification Yapısı
 

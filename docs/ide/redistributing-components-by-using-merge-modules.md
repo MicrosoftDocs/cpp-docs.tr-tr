@@ -1,26 +1,16 @@
 ---
-title: Birleştirme modüllerini kullanarak bileşenleri yeniden dağıtma | Microsoft Docs
-ms.custom: ''
+title: Birleştirme Modüllerini Kullanarak Bileşenleri Yeniden Dağıtma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - merge modules, using
 - redistributing applications, using merge modules
 ms.assetid: 93b84211-bf9b-4a78-9f22-474ac2ef7840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f4dda75533b2c16405485f8bb2f3ab9982033ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8fa717f376017560c4bd2e9012bd25c5190da563
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425567"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676466"
 ---
 # <a name="redistributing-components-by-using-merge-modules"></a>Birleştirme Modüllerini Kullanarak Bileşenleri Yeniden Dağıtma
 

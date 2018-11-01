@@ -1,11 +1,6 @@
 ---
-title: log1p, log1pf, log1pl2 | Microsoft Docs
-ms.custom: ''
+title: log1p, log1pf, log1pl2
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - log1p
 - log1pf
@@ -35,20 +30,16 @@ helpviewer_keywords:
 - log1pf function
 - log1pl function
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 650fb8f7567b4f2f3b0b9032397c2b54a99013dd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e7984367aa4244a927bb9dabc5533a807d74ac1a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525001"
 ---
 # <a name="log1p-log1pf-log1pl"></a>log1p, log1pf, log1pl
 
-1 artı belirtilen değere doğal logaritmasını hesaplar.
+1 ek olarak belirtilen değere doğal logaritmasını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,18 +69,18 @@ long double log1pl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Kayan nokta bağımsız değişken.
+Kayan noktalı bağımsız değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa, doğal döndürür (temel -*e*) oturumu (*x* + 1).
 
-Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
+Aksi halde aşağıdaki değerlerden birini döndürebilir:
 
 |Giriş|Sonuç|SEH özel durumu|errno|
 |-----------|------------|-------------------|-----------|
 |+ INF|+ INF|||
-|Denormals|Aynı giriş|UNDERFLOW||
+|Denormals|Aynı giriş|YETERSİZ KALMASI||
 |±0|Aynı giriş|||
 |-1|-INF|DIVBYZERO|ERANGE|
 |< -1|NaN|GEÇERSİZ|EDOM|
@@ -97,23 +88,23 @@ Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 |±SNaN|Aynı giriş|GEÇERSİZ||
 |±QNaN belirsiz|Aynı giriş|||
 
-**Errno** değer ayarlanmışsa ERANGE için *x* = -1. **Errno** değeri ayarı **EDOM** varsa *x* < -1.
+**Errno** değer ayarlanmışsa için ERANGE *x* = -1. **Errno** değeri ayarı **EDOM** varsa *x* < -1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Log1p** işlevleri kullanmaktan daha doğru `log(x + 1)` zaman *x* 0'dır.
+**Log1p** işlevleri kullanmaktan daha doğru `log(x + 1)` olduğunda *x* 0'dır.
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **log1p** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **log1p** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **log1p** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **log1p** her zaman alan ve döndüren bir **çift**.
 
 Varsa *x* doğal sayı, bu işlev çarpımını logaritmasını döndürür (*x* - 1).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**log1p**, **log1pf**, **log1pl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,12 +1,6 @@
 ---
-title: Yığın ve kuyruk koleksiyonları oluşturma | Microsoft Docs
-ms.custom: ''
+title: Yığın ve Kuyruk Koleksiyonları Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC collection classes [MFC], stack collections
 - collections, stack
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - stack collections
 - collections, queue
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96bcaf768ece46c22422fb3d98b85def7c57ed6b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 082308acaeddcb173a0d873c0f50e2e40fd8fe12
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056600"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569244"
 ---
 # <a name="creating-stack-and-queue-collections"></a>Yığın ve Kuyruk Koleksiyonları Oluşturma
 

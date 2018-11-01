@@ -1,28 +1,18 @@
 ---
-title: RemoveReference yapısı | Microsoft Docs
-ms.custom: ''
+title: RemoveReference Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::RemoveReference
-dev_langs:
-- C++
 helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d4c07a8f948895db098008f5efb90353912a13dd
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: fcb4d132198fff8dd6e2d55011f0c3a174b73f40
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613700"
 ---
 # <a name="removereference-structure"></a>RemoveReference Yapısı
 

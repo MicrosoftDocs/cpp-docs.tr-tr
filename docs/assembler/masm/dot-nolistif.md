@@ -1,27 +1,17 @@
 ---
-title: . NOLISTIF | Microsoft Docs
-ms.custom: ''
+title: .NOLISTIF
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .NOLISTIF
-dev_langs:
-- C++
 helpviewer_keywords:
 - .NOLISTIF directive
 ms.assetid: 9243af7a-7221-4531-bbc3-281b6b292bfd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3648baeeab2f801b3ef6a803b84a68f15b2f62af
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 43cde027f5c909b13e90255efccee3c8dac080c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681349"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676193"
 ---
 # <a name="nolistif"></a>.NOLISTIF
 

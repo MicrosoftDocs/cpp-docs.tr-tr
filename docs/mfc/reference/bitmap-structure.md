@@ -1,27 +1,17 @@
 ---
-title: Bit eşlem yapısı | Microsoft Docs
-ms.custom: ''
+title: BITMAP Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - BITMAP
-dev_langs:
-- C++
 helpviewer_keywords:
 - BITMAP structure [MFC]
 ms.assetid: 05d33b4d-7232-4643-a108-87dda8ff5f22
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3169d3b8baad29cb79ee1ff8a25685c06414ac98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1a1079ea0b032f5d28995dc0e3b15b5ba6d16376
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427725"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576091"
 ---
 # <a name="bitmap-structure"></a>BITMAP Yapısı
 

@@ -1,25 +1,15 @@
 ---
-title: Mevcut koddan yeni proje ayarı (Visual C++) hata ayıklama | Microsoft Docs
-ms.custom: ''
+title: Mevcut koddan yeni proje hata ayıklama (Visual C++) ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.importwiz.debugsettings
-dev_langs:
-- C++
 ms.assetid: 607339a8-9d33-458b-8095-dc73f374e29d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df50dfba79ad4160728e77b96d5814d6b03add1e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9c43e86bedd08667c67427e69e12b21c59492fba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440896"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565067"
 ---
 # <a name="specify-debug-configuration-settings-create-new-project-from-existing-code-files-wizard"></a>Yapılandırma Ayarlarında Hata Ayıklamayı Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı
 

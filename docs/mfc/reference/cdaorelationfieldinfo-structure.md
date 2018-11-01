@@ -1,28 +1,18 @@
 ---
-title: Cdaorelationfieldınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoRelationFieldInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoRelationFieldInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - DAO (Data Access Objects), Relations collection
 - CDaoRelationFieldInfo structure [MFC]
 ms.assetid: 47cb89ca-dc80-47ce-96fd-cc4b88512558
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e61eb5a1abab68d4833bb8eb0953758234d9be6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9a00d1cbaf58729863a85d4e9053c9241e9566ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599413"
 ---
 # <a name="cdaorelationfieldinfo-structure"></a>CDaoRelationFieldInfo Yapısı
 

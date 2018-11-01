@@ -1,27 +1,17 @@
 ---
-title: 'Kapsayıcılar: Kullanıcı arabirimi sorunları | Microsoft Docs'
-ms.custom: ''
+title: 'Kapsayıcılar: Kullanıcı Arabirimi Sorunları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - containers [MFC], user-interface issues
 - OLE containers [MFC], user interface
 - user interface issues
 ms.assetid: c833c249-a633-4f1c-82d6-ec6b4892863a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d0d47a9aa7547e12c77a0fe824f27336c9807d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 340d5b9345d66ea7e797480cffdb9f9c794b4320
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372385"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605761"
 ---
 # <a name="containers-user-interface-issues"></a>Kapsayıcılar: Kullanıcı Arabirimi Sorunları
 

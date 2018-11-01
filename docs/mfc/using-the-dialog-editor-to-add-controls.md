@@ -1,12 +1,6 @@
 ---
-title: Denetim eklemek için iletişim kutusu düzenleyicisini kullanma | Microsoft Docs
-ms.custom: ''
+title: Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows common controls [MFC], adding
 - dialog box controls [MFC], adding to dialog boxes
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - Dialog editor, creating controls
 - common controls [MFC], adding
 ms.assetid: d3f9f994-7e54-4656-a545-42c204557c36
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ffbfad4025e9daf72a9555ca69a8639cba6d68c5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2e75c4c86a6ee2e1969b31a2d3124a36bf8410ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677935"
 ---
 # <a name="using-the-dialog-editor-to-add-controls"></a>Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
 

@@ -1,28 +1,17 @@
 ---
 title: (C++) iletişim kutularındaki denetimler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], dialog boxes
 - dialog box controls [C++], about dialog box controls
 - dialog box controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f00fd37f41461933221996c8940c333bd71620ae
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3f559a82d7c73dd8050f23e0b3af34f0bcb410c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644892"
 ---
 # <a name="controls-in-dialog-box-ces"></a>Es denetimleri iletişim kutusu (C++)
 

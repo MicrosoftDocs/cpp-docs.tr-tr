@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3642 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3642
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3642
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3642
 ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: febd6f1a9a3b4bac8bbee59cbf8c5bead93c3fb3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d524c49075c400caa345dd26ed681734ea0cfb94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582659"
 ---
 # <a name="compiler-error-c3642"></a>Derleyici Hatası C3642
 

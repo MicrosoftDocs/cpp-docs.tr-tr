@@ -1,27 +1,16 @@
 ---
-title: OLE DB sağlayıcısı oluşturma | Microsoft Docs
-ms.custom: ''
+title: OLE DB Sağlayıcısı Oluşturma
 ms.date: 10/13/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: f73017c3-c89f-41a6-a306-ea992cf6092c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 7c3d94bec2638901f542dfa7c412da0de9a60942
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b6e59dba375e78878d13a6014ce75edf2a21758b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078308"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611204"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB Sağlayıcısı Oluşturma
 

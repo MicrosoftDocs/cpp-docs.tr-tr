@@ -1,14 +1,8 @@
 ---
-title: Üstbilgi denetimindeki öğeleri sıralama | Microsoft Docs
-ms.custom: ''
+title: Üstbilgi Denetimindeki Öğeleri Sıralama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - DS_DRAGDROP
-dev_langs:
-- C++
 helpviewer_keywords:
 - sequence [MFC]
 - sequence [MFC], header control items
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - SetOrderArray method [MFC]
 - header controls [MFC], ordering items
 ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 60139821c1b15673fac0fb8f9ec3925cbfa6dc31
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5c4fef821efa697d41bf02ef1891efcf0fa21d4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052103"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583516"
 ---
 # <a name="ordering-items-in-the-header-control"></a>Üstbilgi Denetimindeki Öğeleri Sıralama
 

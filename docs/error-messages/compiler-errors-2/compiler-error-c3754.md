@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3754 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3754
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3754
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3754
 ms.assetid: 14b877bc-9277-40ec-af1c-196a58b45f10
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9d25d09343cc2a8d341925727529be7d435d9da
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e03ac39213429fbbb9f289be3514718985c04b4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582123"
 ---
 # <a name="compiler-error-c3754"></a>Derleyici Hatası C3754
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4612 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4612
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4612
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4612
 ms.assetid: 21ac02b2-51cd-4aff-9b70-d543511d5962
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10a0a5640386f5e5673f39d6c2c76ee18fcc7ba7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ed5458fc52c1c9c9f12187095e4658204613d1a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574271"
 ---
 # <a name="compiler-warning-level-1-c4612"></a>Derleyici Uyarısı (düzey 1) C4612
 

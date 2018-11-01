@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3460 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3460
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3460
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3460
 ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64854420acf0b95cbb7ced8e4d4260735b07037e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a7fe5c6bbb7198f18f5a5cf7cac26add6e6709b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109996"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676700"
 ---
 # <a name="compiler-error-c3460"></a>Derleyici Hatası C3460
 

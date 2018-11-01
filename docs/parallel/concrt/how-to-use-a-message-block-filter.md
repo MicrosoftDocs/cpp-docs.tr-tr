@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: ileti bloğu filtresini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İleti Bloğu Filtresini Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message-block filters, using [Concurrency Runtime]
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93578f9d798e0c0bab0fe58a3211c20507dd99d4
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 512dda6503d5980dbdcc20a55ca0ee836d4d08e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660141"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
 

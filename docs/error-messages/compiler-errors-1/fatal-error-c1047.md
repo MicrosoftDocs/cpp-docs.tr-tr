@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1047 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1047
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1047
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1047
 ms.assetid: e1bbbc6b-a5bc-4c23-8203-488120a0ec78
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1983fa0a18667d98f84dfe5049afd4e872d87d93
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 053c4d828b3583d0e16ab8f4fe03a4b0bbed96f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663203"
 ---
 # <a name="fatal-error-c1047"></a>Önemli hata C1047
 

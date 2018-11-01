@@ -1,10 +1,6 @@
 ---
-title: lseek | Microsoft Docs
-ms.custom: ''
+title: lseek
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - lseek
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - lseek
-dev_langs:
-- C++
 helpviewer_keywords:
 - lseek function
 ms.assetid: 137d7741-5c2e-443e-811a-6a01417fcae7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c1c5dd9b15a20ed5ac1cf1be6a9ab6b4a552ec8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8559b7bfaf07302aa76b86dda0a126ebbee8a700
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565508"
 ---
 # <a name="lseek"></a>lseek
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_lseek](lseek-lseeki64.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_lseek](lseek-lseeki64.md) yerine.

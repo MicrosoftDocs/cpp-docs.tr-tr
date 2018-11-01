@@ -1,12 +1,6 @@
 ---
-title: Birincil ifadeler | Microsoft Docs
-ms.custom: ''
+title: Birincil İfadeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - primary expressions
 - expressions [C++], name
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - expressions [C++], primary
 - expressions [C++], qualified names
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee1ca97004d6dddb1e98ada14f06305f782b674a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7dcb8290c0130fa9376e48f065e82163a1ca5b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092270"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677584"
 ---
 # <a name="primary-expressions"></a>Birincil İfadeler
 

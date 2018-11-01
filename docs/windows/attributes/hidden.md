@@ -1,28 +1,17 @@
 ---
-title: Gizli (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Gizli (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.hidden
-dev_langs:
-- C++
 helpviewer_keywords:
 - hidden attribute
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9934f1f66bf520e8da65953dc3355d447d1844e6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c1d8c8d894ed9a54c0dd3af775d6fbfda0385906
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072966"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597619"
 ---
 # <a name="hidden"></a>gizli
 

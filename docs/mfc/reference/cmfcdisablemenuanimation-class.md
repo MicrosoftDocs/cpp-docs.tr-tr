@@ -1,29 +1,19 @@
 ---
-title: CMFCDisableMenuAnimation sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDisableMenuAnimation sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDisableMenuAnimation
 - AFXPOPUPMENU/CMFCDisableMenuAnimation
 - AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDisableMenuAnimation [MFC], Restore
 ms.assetid: c6eb07da-c382-43d6-8028-007f2320e50e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 431b7caf3efcf9e569d6eee3c309b409d8479730
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0b0df30d48b2f77d620b00f67d40743445981b66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665042"
 ---
 # <a name="cmfcdisablemenuanimation-class"></a>CMFCDisableMenuAnimation sınıfı
 

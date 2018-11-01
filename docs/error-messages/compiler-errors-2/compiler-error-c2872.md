@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2872 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2872
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2872
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2872
 ms.assetid: c619ef97-6e0e-41d7-867c-f8d28a07d553
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8eb494d3a8ba2e2569f68dbfd0164c7bf6a9ae29
-ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
+ms.openlocfilehash: 103998c7872b683c7405796ee28bd550246ae9bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50136230"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566224"
 ---
 # <a name="compiler-error-c2872"></a>Derleyici Hatası C2872
 

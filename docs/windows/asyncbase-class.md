@@ -1,9 +1,6 @@
 ---
-title: AsyncBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: AsyncBase Sınıfı
 ms.date: 10/08/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - async/Microsoft::WRL::AsyncBase
@@ -31,8 +28,6 @@ f1_keywords:
 - async/Microsoft::WRL::AsyncBase::Start
 - async/Microsoft::WRL::AsyncBase::TryTransitionToCompleted
 - async/Microsoft::WRL::AsyncBase::TryTransitionToError
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::AsyncBase class
 - Microsoft::WRL::AsyncBase::AsyncBase, constructor
@@ -60,17 +55,12 @@ helpviewer_keywords:
 - Microsoft::WRL::AsyncBase::TryTransitionToCompleted method
 - Microsoft::WRL::AsyncBase::TryTransitionToError method
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9647e18af021caf67dea5d946c9e5bf00fb50807
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 71839fbea4300560dbf2b9617fe7b8d3864676b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162938"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599680"
 ---
 # <a name="asyncbase-class"></a>AsyncBase Sınıfı
 

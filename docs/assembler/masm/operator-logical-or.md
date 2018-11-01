@@ -1,28 +1,18 @@
 ---
-title: operator || | Microsoft Docs
-ms.custom: ''
+title: '|| işleci'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator ||
-dev_langs:
-- C++
 helpviewer_keywords:
 - '|| operator'
 - operator ||
 ms.assetid: 50b15b63-649c-4bcf-a663-a10ee3cb3db6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dad587404e86793a9957ff694beeadd2067e1658
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: def4356f8d4d9f46c25e73944edf1a689933a4e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677714"
 ---
 # <a name="operator-"></a>|| işleci
 

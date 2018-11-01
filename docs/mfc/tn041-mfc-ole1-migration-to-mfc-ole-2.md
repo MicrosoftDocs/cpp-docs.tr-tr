@@ -1,14 +1,8 @@
 ---
-title: 'TN041: MFC-OLE1 geçişi MFC-OLE 2 | Microsoft Docs'
-ms.custom: ''
+title: 'TN041: MFC-OLE1 geçişi MFC-OLE 2'
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE1 [MFC]
 - migrating OLE1 to OLE2
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2f93ffa79c5f737be032ae9edffa6c3e49c7055
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 2bdf0c353151c8e932b3e8641a72b2116c45f3f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809024"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568533"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2'ye MFC/OLE1 Geçişi
 

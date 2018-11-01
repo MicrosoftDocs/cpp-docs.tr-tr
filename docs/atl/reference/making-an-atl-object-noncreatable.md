@@ -1,28 +1,18 @@
 ---
-title: ATL nesnesini oluşturulamaz yapma | Microsoft Docs
-ms.custom: ''
+title: ATL nesnesini oluşturulamaz yapma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.ATL.objects
-dev_langs:
-- C++
 helpviewer_keywords:
 - noncreatable ATL objects
 - ATL projects, noncreatable objects
 ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fff45e65fde53d5621d35766e7170c300ee138f9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c92d049d95a2eacf3389c49d0b1561c2374b0c3c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068482"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650638"
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL nesnesini oluşturulamaz yapma
 

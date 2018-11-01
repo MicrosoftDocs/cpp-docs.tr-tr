@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: çeşitli üretici-tüketici desenlerini uygulama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Çeşitli Üretici-Tüketici Desenlerini Uygulama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - producer-consumer patterns, implementing [Concurrency Runtime]
 - implementing producer-consumer patterns [Concurrency Runtime]
 ms.assetid: 75f2c7cc-5399-49ea-98eb-847fe6747169
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd1fbc1b402d7b858947a612295d4310302454a1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1c543e2c80ff9edea417fe8c1254bf9aa5aa37fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658295"
 ---
 # <a name="how-to-implement-various-producer-consumer-patterns"></a>Nasıl yapılır: Çeşitli Üretici-Tüketici Desenlerini Uygulama
 

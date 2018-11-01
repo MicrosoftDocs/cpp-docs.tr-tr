@@ -1,25 +1,15 @@
 ---
-title: Parametre doğrulama | Microsoft Docs
-ms.custom: ''
+title: Parametre Doğrulama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 427f585fb7e5c917009ccc013179a364ef2dc619
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b0ccc589809fc5204659ad5af28ece0096855d30
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677597"
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
 

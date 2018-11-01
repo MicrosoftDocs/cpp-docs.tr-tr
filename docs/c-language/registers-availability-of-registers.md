@@ -1,25 +1,15 @@
 ---
-title: 'Yazmaçlar: Yazmaçların kullanılabilirliği | Microsoft Docs'
-ms.custom: ''
+title: 'Yazmaçlar: Yazmaçların Kullanılabilirliği'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - registers
 ms.assetid: f6654e53-742c-4a30-8620-1a4d436a6ae4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f9c7c09bccda07358384ca6b0be8d3ea824bc99e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7a0789cc2bb7f948c3ee462cdea38e19194ba0a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055149"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616547"
 ---
 # <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların Kullanılabilirliği
 

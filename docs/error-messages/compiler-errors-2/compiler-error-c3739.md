@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3739 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3739
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3739
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3739
 ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0cc0bbe61f807ccd6b2f2f1404fb8e5cc724107
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 34f035c089b183670e87a23eb62f995b2af23c9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069891"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567498"
 ---
 # <a name="compiler-error-c3739"></a>Derleyici Hatası C3739
 

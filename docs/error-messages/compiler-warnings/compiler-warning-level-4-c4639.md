@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4639 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4639
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4639
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4639
 ms.assetid: f94f7392-cdbb-4bf4-8a00-20dc90d3efe9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0ab2e08878e2172337ef373ebcbc8a37359b85f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4419493c673cb5916be751cc95af19a779086a5b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465344"
 ---
 # <a name="compiler-warning-level-4-c4639"></a>Derleyici Uyarısı (düzey 4) C4639
 

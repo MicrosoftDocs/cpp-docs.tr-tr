@@ -1,10 +1,6 @@
 ---
-title: Çağrı sınıfı | Microsoft Docs
-ms.custom: ''
+title: çağrı Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - call
 - AGENTS/concurrency::call
@@ -14,21 +10,15 @@ f1_keywords:
 - AGENTS/concurrency::call::propagate_message
 - AGENTS/concurrency::call::send_message
 - AGENTS/concurrency::call::supports_anonymous_source
-dev_langs:
-- C++
 helpviewer_keywords:
 - call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a99de307ec64c3b6d4e49f4e0a6eef532314bf9
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 5164d2787c86e6c909418f353c15c876d1397afe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566107"
 ---
 # <a name="call-class"></a>çağrı Sınıfı
 

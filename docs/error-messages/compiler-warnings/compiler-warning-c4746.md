@@ -1,23 +1,13 @@
 ---
-title: Derleyici Uyarısı C4746 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4746
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e6abce7ebbcdc41effed05ccf54337e3976c34e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1b79eed2134b8c6310e508e56b3388c6f38fe4b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625894"
 ---
 # <a name="compiler-warning-c4746"></a>Derleyici Uyarısı C4746
 

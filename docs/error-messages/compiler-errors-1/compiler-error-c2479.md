@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2479 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2479
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2479
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2479
 ms.assetid: c74c7869-e65b-4ca1-b6fa-eb39fed4458a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc7210a6ff2e57b2d5f96fc59daace974e6f1744
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8b3b226ccbe42ec88ed92c64b97256d80a983254
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045243"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611438"
 ---
 # <a name="compiler-error-c2479"></a>Derleyici Hatası C2479
 

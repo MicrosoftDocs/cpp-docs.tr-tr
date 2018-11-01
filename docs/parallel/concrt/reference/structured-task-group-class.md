@@ -1,10 +1,6 @@
 ---
-title: structured_task_group sınıfı | Microsoft Docs
-ms.custom: ''
+title: structured_task_group Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - structured_task_group
 - PPL/concurrency::structured_task_group
@@ -14,21 +10,15 @@ f1_keywords:
 - PPL/concurrency::structured_task_group::run
 - PPL/concurrency::structured_task_group::run_and_wait
 - PPL/concurrency::structured_task_group::wait
-dev_langs:
-- C++
 helpviewer_keywords:
 - structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9e87ebd4523b5211c94955b5bec7905ed848946
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 486829b7d990aab7860059feed78b26207d0074d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161690"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600677"
 ---
 # <a name="structuredtaskgroup-class"></a>structured_task_group Sınıfı
 

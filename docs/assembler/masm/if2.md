@@ -1,27 +1,17 @@
 ---
-title: IF2 | Microsoft Docs
-ms.custom: ''
+title: IF2
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - IF2
-dev_langs:
-- C++
 helpviewer_keywords:
 - IF2 directive
 ms.assetid: a0f75564-b51b-4e39-ad3b-f7421e7ecad6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5550aea60af15f338639a70eec6f3ca36444fbbb
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 04d6d83e0a06581234b242926299530183b61643
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692527"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654252"
 ---
 # <a name="if2"></a>IF2
 

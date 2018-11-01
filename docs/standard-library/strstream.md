@@ -1,27 +1,17 @@
 ---
-title: '&lt;strstream&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;strstream&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <strstream>
-dev_langs:
-- C++
 helpviewer_keywords:
 - strstream header
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1695306ddc53a8150917eef8b27f5d3edce2bf3
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: eef1950abc8b187967fdfde472e3da7e97112239
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961870"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677051"
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 

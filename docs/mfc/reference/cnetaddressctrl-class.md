@@ -1,10 +1,6 @@
 ---
-title: CNetAddressCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CNetAddressCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CNetAddressCtrl
 - AFXCMN/CNetAddressCtrl
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXCMN/CNetAddressCtrl::GetAddress
 - AFXCMN/CNetAddressCtrl::GetAllowType
 - AFXCMN/CNetAddressCtrl::SetAllowType
-dev_langs:
-- C++
 helpviewer_keywords:
 - CNetAddressCtrl [MFC], CNetAddressCtrl
 - CNetAddressCtrl [MFC], Create
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 481f5b9b2b0e4cdbc9523884565f2e359fe110a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09dfdb57fb22b958edc64ec8cbdce95527a304d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654694"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 

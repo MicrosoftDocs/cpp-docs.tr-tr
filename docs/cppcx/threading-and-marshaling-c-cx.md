@@ -1,9 +1,6 @@
 ---
-title: İş parçacığı oluşturma ve sıralama (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: İş parçacığı oluşturma ve sıralama (C + +/ CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 f1_keywords:
 - C4451
 helpviewer_keywords:
@@ -11,16 +8,12 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3e02f69efb5658225f40f2c6dfcd74801bd04929
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: faf541a0705de3e0e3d1b795d1abbdc2e9707974
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582643"
 ---
 # <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve sıralama (C + +/ CX)
 

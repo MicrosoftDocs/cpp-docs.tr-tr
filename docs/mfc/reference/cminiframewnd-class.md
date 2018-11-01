@@ -1,33 +1,23 @@
 ---
-title: CMiniFrameWnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMiniFrameWnd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMiniFrameWnd
 - AFXWIN/CMiniFrameWnd
 - AFXWIN/CMiniFrameWnd::CMiniFrameWnd
 - AFXWIN/CMiniFrameWnd::Create
 - AFXWIN/CMiniFrameWnd::CreateEx
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMiniFrameWnd [MFC], CMiniFrameWnd
 - CMiniFrameWnd [MFC], Create
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fc66a725cdd9ed5f77b572c70e385f3f32c91b6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f16a8cd21fe724c44a1ed648f29e42cb5d00dcd1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663322"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd sınıfı
 

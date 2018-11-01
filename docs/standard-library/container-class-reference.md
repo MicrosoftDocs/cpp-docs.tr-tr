@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::Reference | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::reference
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - reference method
 ms.assetid: ab85a9fb-c628-4761-9a5f-a0231fad7690
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 13883e1426be22c8cf3d329be33258c69511900d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4204571dba320de6248dac2cfb10ae21dc31e72c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676804"
 ---
 # <a name="container-classreference"></a>Kapsayıcı Sınıfı::reference
 

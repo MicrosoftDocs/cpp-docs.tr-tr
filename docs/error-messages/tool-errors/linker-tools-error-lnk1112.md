@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1112 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1112
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1112
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1112
 ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e08e8dae82675d9503575d543edfcaa2c96275e9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: bc01d56fb8144d23b91c82a7f791a70a5dadb7ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607096"
 ---
 # <a name="linker-tools-error-lnk1112"></a>Bağlayıcı Araçları Hatası LNK1112
 

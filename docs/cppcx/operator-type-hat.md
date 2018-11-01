@@ -1,20 +1,13 @@
 ---
-title: işleç türü ^ | Microsoft Docs
-ms.custom: ''
+title: işleç Türü^
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b17b706c15e1cf996cb694842c05d70b33f8e1e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: fca53abb9dc17588695591d496b7db2a76e319f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553666"
 ---
 # <a name="operator-type"></a>işleç Türü^
 

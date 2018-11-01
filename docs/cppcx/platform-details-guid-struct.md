@@ -1,26 +1,18 @@
 ---
-title: 'Platform::details:: __guıd yapısı | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::details:: __guıd yapısı'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Details::__GUID
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Details::__GUID Struct
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 984af1944a6181382207d33a8ee60799cfcee634
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 4ff10bc17d7eee246bbb0e2fd39787e10e44df02
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101841"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677649"
 ---
 # <a name="platformdetailsguid-struct"></a>Platform::details:: __guıd yapısı
 

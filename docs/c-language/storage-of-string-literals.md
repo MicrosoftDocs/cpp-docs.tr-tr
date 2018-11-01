@@ -1,25 +1,15 @@
 ---
-title: Dize değişmez değerlerini depolama | Microsoft Docs
-ms.custom: ''
+title: Dize Değişmez Değerlerini Depolama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - string literals, storage
 ms.assetid: ba5e4d2c-d456-44b3-a8ca-354af547ac50
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 111acab00783de67dcb3ecc8b9d45fe112332158
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b6c266c1381cc7f4e505916a916f5a924a626792
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019530"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481230"
 ---
 # <a name="storage-of-string-literals"></a>Dize Değişmez Değerlerini Depolama
 

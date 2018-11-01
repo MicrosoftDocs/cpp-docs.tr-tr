@@ -1,10 +1,6 @@
 ---
-title: CHtmlEditView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHtmlEditView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHtmlEditView
 - AFXHTML/CHtmlEditView
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXHTML/CHtmlEditView::Create
 - AFXHTML/CHtmlEditView::GetDHtmlDocument
 - AFXHTML/CHtmlEditView::GetStartDocument
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHtmlEditView [MFC], CHtmlEditView
 - CHtmlEditView [MFC], Create
 - CHtmlEditView [MFC], GetDHtmlDocument
 - CHtmlEditView [MFC], GetStartDocument
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8069bd69af7743e0d83c7dbe770e1c73029ebf5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9df4aa2b2418995f6e012c0baefb6dc8918eaee8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559789"
 ---
 # <a name="chtmleditview-class"></a>CHtmlEditView sınıfı
 

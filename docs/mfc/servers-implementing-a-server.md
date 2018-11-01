@@ -1,26 +1,16 @@
 ---
-title: 'Sunucular: sunucu uygulama | Microsoft Docs'
-ms.custom: ''
+title: 'Sunucular: Sunucu Uygulama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - servers, implementing
 - OLE server applications [MFC], implementing OLE servers
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1dd43b806852e578c28dc7a647cb367ad6f2780
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd5967fe07670bd4b3bd076ca23fda62b02b2177
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076626"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566768"
 ---
 # <a name="servers-implementing-a-server"></a>Sunucular: Sunucu Uygulama
 

@@ -1,31 +1,21 @@
 ---
-title: CAtlWinModule sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlWinModule sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlWinModule
 - ATLBASE/ATL::CAtlWinModule
 - ATLBASE/ATL::CAtlWinModule::CAtlWinModule
 - ATLBASE/ATL::CAtlWinModule::AddCreateWndData
 - ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlWinModule class
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b516b3a2f1089408688a7db4d131b4569b733755
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3e38aebf3eadceafad3e70463d5bcf2d26fef96e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561635"
 ---
 # <a name="catlwinmodule-class"></a>CAtlWinModule sınıfı
 

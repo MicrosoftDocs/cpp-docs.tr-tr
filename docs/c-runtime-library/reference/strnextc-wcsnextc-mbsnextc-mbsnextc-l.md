@@ -1,10 +1,6 @@
 ---
-title: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l | Microsoft Docs
-ms.custom: ''
+title: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strnextc
 - _mbsnextc_l
@@ -36,8 +32,6 @@ f1_keywords:
 - _ftcsnextc
 - _strnextc
 - wcsnextc
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsnextc function
 - _tcsnextc function
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - mbsnextc_l function
 - wcsnextc function
 ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ede89a5290bca14c39aa16c68071edefd0ebd08
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fe65378908542293433084dcfd37ad6a77663de2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222435"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607122"
 ---
 # <a name="strnextc-wcsnextc-mbsnextc-mbsnextcl"></a>_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 

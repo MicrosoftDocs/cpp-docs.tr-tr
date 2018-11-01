@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: bir şablon sınıfı için ileti eşlemesi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - template classes [MFC], creating message maps
 - message maps [MFC], template classes
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4517c2131e3a8825968d287ef7c1f5725721c17a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 437fdf59ae9c9d3428654fc412fd78bf1348a701
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586244"
 ---
 # <a name="how-to-create-a-message-map-for-a-template-class"></a>Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma
 

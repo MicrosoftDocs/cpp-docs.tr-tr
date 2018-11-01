@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Kaydırma (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Kaydırma (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - recordsets [C++], end of
 - recordsets [C++], beginning of
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - scrolling [C++], recordsets
 - Move method (recordsets)
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f8b5107f6e264c5d9915e809c9d198fd4cc4ba24
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e41b526b86922bafd1d923fa5848a5ef8ed4825e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053246"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579614"
 ---
 # <a name="recordset-scrolling-odbc"></a>Kayıt Kümesi: Kaydırma (ODBC)
 

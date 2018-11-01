@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2558 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2558
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2558
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2558
 ms.assetid: 822b701e-dcae-423a-b21f-47f36aff9c90
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6129bea28b943f8f18e1cf6b1e760e604223bdc1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b0dca0b19d427cf83238c824739d288a1cfd54d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060942"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571736"
 ---
 # <a name="compiler-error-c2558"></a>Derleyici Hatası C2558
 

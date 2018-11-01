@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4235 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4235
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4235
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4235
 ms.assetid: d4214799-d62c-4674-b4e2-9e201c303303
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c9e709017e51101efe53a8697bb145014f200871
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 80ad388b26b2b972aa1301c1f335d0361a75f15f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031827"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559853"
 ---
 # <a name="compiler-warning-level-4-c4235"></a>Derleyici Uyarısı (düzey 4) C4235
 

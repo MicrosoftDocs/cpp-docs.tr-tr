@@ -1,10 +1,6 @@
 ---
-title: CAtlExeModuleT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlExeModuleT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlExeModuleT
 - ATLBASE/ATL::CAtlExeModuleT
@@ -23,21 +19,15 @@ f1_keywords:
 - ATLBASE/ATL::CAtlExeModuleT::m_bDelayShutdown
 - ATLBASE/ATL::CAtlExeModuleT::m_dwPause
 - ATLBASE/ATL::CAtlExeModuleT::m_dwTimeOut
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9b19888f6eae3efe7baf4429ec1174432f99a10
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cec3a0fce1147ca58f2ee2c51b9d728d81dddda4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118563"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601415"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 

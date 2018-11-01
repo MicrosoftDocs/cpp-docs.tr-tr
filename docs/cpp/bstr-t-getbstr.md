@@ -1,27 +1,17 @@
 ---
-title: _bstr_t::GetBSTR | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::GetBSTR
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::GetBSTR
-dev_langs:
-- C++
 helpviewer_keywords:
 - GetBSTR method [C++]
 ms.assetid: 0c62ff16-4433-4183-a03c-d5a0a9b731ef
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a62cd1c08409fb5915ebf42fa118c1e6124e29f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cea3404e0732cb0e16b3fa9199ce95e3dfcc23f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618055"
 ---
 # <a name="bstrtgetbstr"></a>_bstr_t::GetBSTR
 

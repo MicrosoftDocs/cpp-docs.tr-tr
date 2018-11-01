@@ -1,9 +1,6 @@
 ---
-title: 'Kilit:: ~ lock | Microsoft Docs'
-ms.custom: ''
+title: lock::~lock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ~lock
@@ -11,22 +8,15 @@ f1_keywords:
 - lock.~lock
 - msclr::lock::~lock
 - lock::~lock
-dev_langs:
-- C++
 helpviewer_keywords:
 - ~lock destructor
 ms.assetid: 55fa9f6c-d7a6-48ef-9236-ee03342c1d20
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 01dd3a947161cae27174e383a8b080641253e32e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a545cf6a60b6eb52df416d89308719b67f041f29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439022"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575272"
 ---
 # <a name="locklock"></a>lock::~lock
 

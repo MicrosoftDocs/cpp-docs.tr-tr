@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6017 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6017
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6017
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6017
 ms.assetid: df3ec5f5-6771-4648-ba06-0e26c6a1cc6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: acd380c8eee7b4fa1b325e8dee0bfad55a42c790
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 75e2512196937b483d6bc1a9817f6957bb468418
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653927"
 ---
 # <a name="c-runtime-error-r6017"></a>C çalışma zamanı hatası R6017
 

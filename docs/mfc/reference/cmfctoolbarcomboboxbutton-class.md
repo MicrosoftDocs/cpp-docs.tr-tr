@@ -1,10 +1,6 @@
 ---
-title: CMFCToolBarComboBoxButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarComboBoxButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarComboBoxButton
 - AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton
@@ -37,8 +33,6 @@ f1_keywords:
 - AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetCenterVert
 - AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetDropDownHeight
 - AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetFlatMode
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarComboBoxButton [MFC], CMFCToolBarComboBoxButton
 - CMFCToolBarComboBoxButton [MFC], AddItem
@@ -70,16 +64,12 @@ helpviewer_keywords:
 - CMFCToolBarComboBoxButton [MFC], SetDropDownHeight
 - CMFCToolBarComboBoxButton [MFC], SetFlatMode
 ms.assetid: 32fa39f7-8e4e-4f0a-a31d-7b540d969a6c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a0cde2b5c62d4d4584330fe24000114b33ba957b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2dd300e4bbf63ed59554d5722c716f8a3f795570
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067494"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561427"
 ---
 # <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton sınıfı
 

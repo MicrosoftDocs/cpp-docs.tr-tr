@@ -1,23 +1,13 @@
 ---
-title: 2.6.3 barrier yönergesi | Microsoft Docs
-ms.custom: ''
+title: 2.6.3 barrier Yönergesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4485a3d7-533f-4fec-8128-a131bec7fa16
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8654534143e6feed06e93406c8fe03983ee9c2fc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9079dce4b2a27e91e349fd0df8414d38cd245d2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429155"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637027"
 ---
 # <a name="263-barrier-directive"></a>2.6.3 barrier Yönergesi
 

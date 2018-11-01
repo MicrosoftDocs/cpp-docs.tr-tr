@@ -1,10 +1,6 @@
 ---
-title: operator! = | Microsoft Docs
-ms.custom: ''
+title: operator!=
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - std::!=
 - '!='
@@ -12,30 +8,24 @@ f1_keywords:
 - std.operator!=
 - std.!=
 - operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - '!= operator'
 - operator!=
 - operator !=
 ms.assetid: ef2be7f0-1c94-4edc-b65c-731fddd519f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35495f6435bf448325ee4556366e47d8e566aadb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a3a750565f16a0a01770cea16bf91918887095f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853592"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574255"
 ---
 # <a name="operator"></a>operator!=
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Overloads `operator!=` iki nesne şablonu sınıfının Karşılaştırılacak [kapsayıcı](../standard-library/sample-container-class.md).
+Aşırı `operator!=` şablon sınıfının iki nesneleri karşılaştırmak için [kapsayıcı](../standard-library/sample-container-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 

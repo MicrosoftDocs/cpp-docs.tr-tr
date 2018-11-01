@@ -1,30 +1,19 @@
 ---
-title: Sürüm bilgileri Düzenleyicisi (C++) | Microsoft Docs
-ms.custom: ''
+title: Sürüm bilgileri Düzenleyicisi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.version.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - Version Information editor [C++], about Version Information editor
 - editors, Version Information
 - resource editors [C++], Version Information editor
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b953343fa14d35ab387b0fd133d6e53db4551e1d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 817092af316fbc39b696e1ed19e1c67f9a799bd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667499"
 ---
 # <a name="version-information-editor-c"></a>Sürüm bilgileri Düzenleyicisi (C++)
 

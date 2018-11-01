@@ -1,10 +1,6 @@
 ---
-title: strspn, wcsspn, _mbsspn, _mbsspn_l | Microsoft Docs
-ms.custom: ''
+title: strspn, wcsspn, _mbsspn, _mbsspn_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsspn_l
 - wcsspn
@@ -30,8 +26,6 @@ f1_keywords:
 - _mbsspn
 - _tcsspn
 - strspn
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcsspn function
 - strings [C++], searching
@@ -46,23 +40,19 @@ helpviewer_keywords:
 - mbsspn_l function
 - _tcsspn function
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b7d826b72a006e0a8b011d89dfc96aa8aea4690
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 69463e23d0cddf4441716aacb11928f589ab2078
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415167"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477326"
 ---
 # <a name="strspn-wcsspn-mbsspn-mbsspnl"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
 
-İlk karakter dizinini karakter kümesine ait olmayan bir dize döndürür.
+Bir karakter kümesine ait olmayan bir dize, ilk karakterin indisini döndürür.
 
 > [!IMPORTANT]
-> **_mbsspn** ve **_mbsspn_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsspn** ve **_mbsspn_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -89,25 +79,25 @@ size_t _mbsspn_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Aranacak dize null ile sonlandırılmış.
+Aramak için null ile sonlandırılmış dize.
 
 *strCharSet*<br/>
-Null olarak sonlandırılan bir karakter kümesi.
+Null ile sonlandırılmış karakter kümesi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Substring uzunluğu belirten bir tamsayı değeri döndürür *str* , oluşur tamamen karakter *strCharSet*. Varsa *str* içinde değil karakteriyle başlayan *strCharSet*, işlevi 0 değerini döndürür.
+İçinde alt dizenin uzunluğunu belirten bir tamsayı değeri döndürür *str* tamamen karakterden oluşan oluşur *strCharSet*. Varsa *str* içinde olmayan bir karakterle başlıyor *strCharSet*, işlev 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strspn** işlevi adındaki ilk karakter dizinini döndürür *str* ait olmayan karakter kümesine *strCharSet*. Arama null karakterlerini sonlandırma içermez.
+**Strspn** işlevi ilk karakterin dizinini geri *str* ait olmayan karakter kümesini *strCharSet*. Arama boş karakterlerin sonlandırılmasını içermez.
 
-**wcsspn** ve **_mbsspn** joker karakter ve çok baytlı karakter sürümleri **strspn**. Bağımsız değişkenleri **wcsspn** joker karakter olan dizeleri; bu **_mbsspn** çok baytlı karakter dizeleri belirtilmiştir. **_mbsspn** parametrelerini doğrular. Varsa *str* veya *strCharSet* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa **_mbspn** ayarlar **errno** için **EINVAL** ve 0 döndürür. **strspn** ve **wcsspn** parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.
+**wcsspn** ve **_mbsspn** geniş karakter ve çok baytlı karakter sürümleridir **strspn**. Bağımsız değişkenleri **wcsspn** geniş karakterli dizelerdir; **_mbsspn** çok baytlı karakter dizeleridir. **_mbsspn** kendi parametrelerini doğrular. Varsa *str* veya *strCharSet* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse **_mbspn** ayarlar **errno** için **EINVAL** ve 0 döndürür. **strspn** ve **wcsspn** kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -124,7 +114,7 @@ Substring uzunluğu belirten bir tamsayı değeri döndürür *str* , oluşur ta
 |**wcsspn**|\<String.h > veya \<wchar.h >|
 |**_mbsspn**, **_mbsspn_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,29 +1,19 @@
 ---
-title: CHeapPtrList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHeapPtrList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CHeapPtrList
 - ATLCOLL/ATL::CHeapPtrList
 - ATLCOLL/ATL::CHeapPtrList::CHeapPtrList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHeapPtrList class
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56dad973f415fa4944bd4561dab94636e10e6539
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ef0224ccb9e2592daecb94204db5e1a8c785c7b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676986"
 ---
 # <a name="cheapptrlist-class"></a>CHeapPtrList sınıfı
 

@@ -1,41 +1,31 @@
 ---
-title: Derleyici Hatası C3768 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3768
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3768
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3768
 ms.assetid: 091f0d53-1dff-43fd-813d-5c43c85b6ab0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e6b7a2d1617591609f75b2b07f1a94983ee22f4
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: e9c385fd178dc967e72f5e0ca7fab27b28ad962f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704964"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676755"
 ---
 # <a name="compiler-error-c3768"></a>Derleyici Hatası C3768
 
-> bir sanal vararg işlev adresi saf yönetilen kodda alamıyor
+> saf yönetilen kod içindeki sanal vararg işlevinin adresi alınamaz
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-İle derleme yapılırken **/CLR: pure**, bir sanal adresini alamıyor `vararg` işlevi.
+İle derlerken **/CLR: pure**, sanal bir adresi alınamaz `vararg` işlevi.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3768 oluşturur:
+Aşağıdaki örnek, C3768 oluşturur:
 
 ```cpp
 // C3768.cpp

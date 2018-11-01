@@ -1,12 +1,6 @@
 ---
-title: Form görünümleri (MFC) | Microsoft Docs
-ms.custom: ''
+title: Form Görünümleri (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - user interfaces [MFC], forms
 - forms [MFC]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 - forms [MFC], adding to applications
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8236ed06a5863e2208c77294e4ddb7352b0f83f7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f092b9eca0fe0b4af40a5e1f6e77d3a0f1af74b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052999"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655630"
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 

@@ -1,9 +1,6 @@
 ---
-title: 'auto_handle:: ~ auto_handle | Microsoft Docs'
-ms.custom: ''
+title: auto_handle::~auto_handle
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_handle.~auto_handle
@@ -11,22 +8,15 @@ f1_keywords:
 - auto_handle::~auto_handle
 - ~auto_handle
 - msclr::auto_handle::~auto_handle
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::~auto_handle
 ms.assetid: e83e95a8-015b-4f27-ad63-70efb3690726
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: fbb2e0ec05c635633e6b26267289be2b266823b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a3f5efda78536bc2fbda027b990c442f69047fa1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573062"
 ---
 # <a name="autohandleautohandle"></a>auto_handle::~auto_handle
 
