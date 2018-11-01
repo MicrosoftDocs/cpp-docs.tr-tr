@@ -1,23 +1,13 @@
 ---
-title: A.14 flush yönergesini liste olmadan kullanma | Microsoft Docs
-ms.custom: ''
+title: A.14   flush Yönergesini Liste Olmadan Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 9e63141a-d0c6-43a5-ac16-b0bd7c89b871
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eddba6ba6bacdf99432a44b2b8ad8f5aec45ff24
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 13d50a6c0a3214297e931a7738305568596c3ae4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537598"
 ---
 # <a name="a14---using-the-flush-directive-without-a-list"></a>A.14   flush Yönergesini Liste Olmadan Kullanma
 

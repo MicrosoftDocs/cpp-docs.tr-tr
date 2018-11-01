@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2094 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2094
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2094
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2094
 ms.assetid: 9e4f8f88-f189-46e7-91c9-481bacc7af87
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e3591fef423bc24562a2f2edf18f7f2774cfcc4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 072c51ca4ae25c6f51b1841ea129a7b4fb495bdf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529837"
 ---
 # <a name="compiler-error-c2094"></a>Derleyici Hatası C2094
 

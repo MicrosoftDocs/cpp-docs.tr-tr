@@ -1,10 +1,6 @@
 ---
-title: _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l | Microsoft Docs
-ms.custom: ''
+title: _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _snwscanf_s_l
 - _snwscanf_s
@@ -35,8 +31,6 @@ f1_keywords:
 - _sntscanf_s_l
 - _snscanf_s_l
 - sntscanf_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _snscanf_s_l function
 - snwscanf_s function
@@ -54,20 +48,16 @@ helpviewer_keywords:
 - _sntscanf_s function
 - snwscanf_s_l function
 ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08c269d0139767f260c68d07d660ecc818b36cc4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b7f6fbbcdb6e3fa9d3137337992b2de0d81c1287
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533335"
 ---
 # <a name="snscanfs-snscanfsl-snwscanfs-snwscanfsl"></a>_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 
-Bir dizeden belirtilen uzunluktaki veri okuma biçimlendirilmiş. Sürümleri bunlar [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Biçimlendirilmiş verileri bir dizeden belirtilen uzunlukta okur. Bunlar sürümleridir [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -101,36 +91,36 @@ int __cdecl _snwscanf_s_l(
 *Giriş*<br/>
 İncelemek için giriş dizesi.
 
-*uzunluğu*<br/>
-İçinde inceleyin karakter sayısını *giriş*.
+*Uzunluğu*<br/>
+İçinde incelenecek karakter sayısını *giriş*.
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Bir veya daha fazla biçim belirticileri.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 *argument_list*<br/>
-Biçim dizesi göre atanacak isteğe bağlı bağımsız değişkenler'ı seçin.
+Biçim dizesine göre atanacak isteğe bağlı bağımsız değişkenler'ı seçin.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her ikisi de başarıyla dönüştürülür ve atanan alan sayısını döndürür; dönüş değerini okumak ancak atanmamış alanları içermez. Dönüş değeri 0, hiçbir alan atandığını belirtir. Dönüş değeri **EOF** bir hata için veya dize sonu ilk dönüştürmeden önce ulaşılırsa. Daha fazla bilgi için bkz: [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
+Bu işlevlerin her ikisi de başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir. Dönüş değeri **EOF** bir hata için veya ilk dönüştürmeden önce dizenin sonuna ulaşılırsa. Daha fazla bilgi için [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-Varsa *giriş* veya *biçimi* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EOF** ve **errno** için **EINVAL**.
+Varsa *giriş* veya *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ayarlayıp **errno** için **EINVAL**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev benzer **sscanf_s** dışında sabit bir giriş dizesi incelemek için karakter sayısını belirtme olanağı sağlar. Daha fazla bilgi için bkz: [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
+Bu işlev gibidir **sscanf_s** dışında sabit sayıda giriş dizesi incelenecek karakter belirtme olanağı sağlar. Daha fazla bilgi için [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-Arabellek boyutu parametresi türü alan karakterleri gereklidir **c**, **C**, **s**, **S**, ve **[** . Daha fazla bilgi için bkz: [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
+Arabellek boyutu parametresinin türü alan karakterleri gereklidir **c**, **C**, **s**, **S**, ve **[** . Daha fazla bilgi için [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyutu parametresi türünde **imzasız**değil **size_t**.
+> Boyut parametresi türünde **işaretsiz**değil **size_t**.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -146,7 +136,7 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar
 |**_snscanf_s**, **_snscanf_s_l**|\<stdio.h >|
 |**_snwscanf_s**, **_snwscanf_s_l**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

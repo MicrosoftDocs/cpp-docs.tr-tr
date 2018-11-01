@@ -1,29 +1,19 @@
 ---
-title: Akışları denetleme | Microsoft Docs
-ms.custom: ''
+title: Akışları Denetleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - Controlling Streams
-dev_langs:
-- C++
 helpviewer_keywords:
 - streams, controlling
 - controlling streams
 - streams
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47c3dac2b6e0297594ddf441696a956d98bd82a8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ac584e36154d0035ce3408b1302513dd7e960bf8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055474"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525933"
 ---
 # <a name="controlling-streams"></a>Akışları Denetleme
 

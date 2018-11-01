@@ -1,16 +1,10 @@
 ---
-title: 'MFC ActiveX denetimleri: Seri hale getirme | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Seri Hale Getirme'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - _wVerMinor
 - DoPropExchange
 - _wVerMajor
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], version support
 - wVerMinor global constant [MFC]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - versioning ActiveX controls
 - wVerMajor global constant
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cf2568561e3e79eaf7c2f56b0b571f5c9e74f268
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: fddd09ad7a3dc7d9211480bb21ac434419a48758
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204528"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522219"
 ---
 # <a name="mfc-activex-controls-serializing"></a>MFC ActiveX Denetimleri: Seri Hale Getirme
 

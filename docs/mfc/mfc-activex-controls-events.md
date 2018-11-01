@@ -1,12 +1,6 @@
 ---
-title: 'MFC ActiveX denetimleri: Olaylar | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Olaylar'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], events
 - notifications [MFC], notifying containers of events
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - OLE events [MFC]
 ms.assetid: e1e57e0c-206b-4923-a0b5-682c26564f74
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4c60c949832f03df6b7bb0e69cfdd95dfafc137
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 76557e64b5b53c32a7d7f63134085e86bf0138df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540679"
 ---
 # <a name="mfc-activex-controls-events"></a>MFC ActiveX Denetimleri: Olaylar
 

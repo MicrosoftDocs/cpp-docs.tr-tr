@@ -1,10 +1,6 @@
 ---
-title: Isessionpropertiesımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: ISessionPropertiesImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ISessionPropertiesImpl
 - ISessionPropertiesImpl::GetProperties
@@ -13,24 +9,17 @@ f1_keywords:
 - ISessionPropertiesImpl.SetProperties
 - SetProperties
 - ISessionPropertiesImpl::SetProperties
-dev_langs:
-- C++
 helpviewer_keywords:
 - ISessionPropertiesImpl class
 - GetProperties method
 - SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 9880da2737ddd58d6521712252906c1431955173
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d4fb67d68a77b9af21229be00808bd7b05db9f6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052908"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528966"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 

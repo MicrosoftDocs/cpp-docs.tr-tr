@@ -1,28 +1,18 @@
 ---
-title: Bir konsol uygulaması oluşturma | Microsoft Docs
+title: Bir konsol uygulaması oluşturma
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Win32 applications, console
 - Win32, console applications
 - console applications, Win32
 ms.assetid: aedfb6b3-ca1f-4e8e-8439-1b680810ee47
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1ebae72e141bb7a84e1a5f7eb99567657a244d69
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b66117f64445c47cc37c25c6713815bd7daa0950
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075300"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538849"
 ---
 # <a name="creating-a-console-application"></a>Bir konsol uygulaması oluşturma
 

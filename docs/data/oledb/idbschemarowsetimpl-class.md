@@ -1,10 +1,6 @@
 ---
-title: IDBSchemaRowsetImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IDBSchemaRowsetImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IDBSchemaRowsetImpl
 - CheckRestrictions
@@ -32,8 +28,6 @@ f1_keywords:
 - ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas
 - IDBSchemaRowsetImpl.GetSchemas
 - IDBSchemaRowsetImpl::GetSchemas
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDBSchemaRowsetImpl class
 - CheckRestrictions method
@@ -42,17 +36,12 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 960f28538763331affdab0ef4e2e2aca831a82d4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0469a41fce07dcd0a8a26fdc630a022399f9b455
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535791"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl Sınıfı
 

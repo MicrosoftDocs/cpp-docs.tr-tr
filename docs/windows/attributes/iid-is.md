@@ -1,28 +1,17 @@
 ---
-title: iid_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: iid_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.iid_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b777be28fcee3c11a8f3ae2058d6197f39d2ba22
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 176ab83bfae18ff7f43fe0860591f2d1ac50d7eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060175"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535336"
 ---
 # <a name="iidis"></a>iid_is
 

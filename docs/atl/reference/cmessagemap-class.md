@@ -1,31 +1,21 @@
 ---
-title: CMessageMap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMessageMap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CMessageMap
 - ATLWIN/ATL::CMessageMap
 - ATLWIN/ATL::CMessageMap::ProcessWindowMessage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMessageMap class
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fcbb20ac27eea7999c634f78b14e85a6221b11b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 325851b75cef340fe5dcc762df54c40ded1ed704
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534088"
 ---
 # <a name="cmessagemap-class"></a>CMessageMap sınıfı
 
