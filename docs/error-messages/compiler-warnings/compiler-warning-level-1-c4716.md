@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4716 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4716
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4716
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4716
 ms.assetid: d95ecfe5-870f-461f-a746-7913af98414b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f7a6fd31ecae4643e947cb4a56897e80010e350
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5ec0aea543053d699db7483df7dd7ea91b3af715
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093408"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594551"
 ---
 # <a name="compiler-warning-level-1-c4716"></a>Derleyici Uyarısı (düzey 1) C4716
 

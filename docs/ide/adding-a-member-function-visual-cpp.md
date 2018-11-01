@@ -1,28 +1,18 @@
 ---
-title: (Visual C++) üye işlevi ekleme | Microsoft Docs
-ms.custom: ''
+title: Üye İşlevi Ekleme (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.classes.member.function
-dev_langs:
-- C++
 helpviewer_keywords:
 - member functions, adding to classes
 - classes [C++], adding members
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 41212e61144477eb05405e6df69b314f0f2cb37a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ab660ba19c1ac4f892bae94020726a1bb77b1cce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575099"
 ---
 # <a name="adding-a-member-function-visual-c"></a>Üye İşlevi Ekleme (Visual C++)
 

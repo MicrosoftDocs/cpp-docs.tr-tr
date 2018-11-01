@@ -1,10 +1,6 @@
 ---
-title: __incfsbyte, __incfsword, __incfsdword | Microsoft Docs
-ms.custom: ''
+title: __incfsbyte, __incfsword, __incfsdword
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __incfsword
 - __incfsbyte_cpp
@@ -12,23 +8,17 @@ f1_keywords:
 - __incfsdword
 - __incfsword_cpp
 - __incfsdword_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __incfsword intrinsic
 - __incfsdword intrinsic
 - __incfsbyte intrinsic
 ms.assetid: 820457fb-e35e-42d3-bcb6-725da3281c64
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d72fc5c130f9e92cc4575510fe7565da5199a996
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f9f0bef89b32e1901c2f6b173baa90153b25a71d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577914"
 ---
 # <a name="incfsbyte-incfsword-incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
 

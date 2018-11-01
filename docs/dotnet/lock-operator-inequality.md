@@ -1,31 +1,21 @@
 ---
-title: Lock::operator! = | Microsoft Docs
-ms.custom: ''
+title: lock::operator!=
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - lock.operator!=
 - msclr.lock.operator!=
 - msclr::lock::operator!=
 - lock::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock::operator!=
 ms.assetid: ed1d674e-9ee9-4257-8a7e-2e3567d50222
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 6ea18e7881b3569a3f4f9da237dc8a2b31a2ef29
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 5f202d6e7cc4c023b366f370ec2c419336822964
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163510"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558450"
 ---
 # <a name="lockoperator"></a>lock::operator!=
 

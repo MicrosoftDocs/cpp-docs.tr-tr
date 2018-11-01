@@ -1,28 +1,18 @@
 ---
-title: ATL COM nesnelerinin temelleri | Microsoft Docs
-ms.custom: ''
+title: ATL COM nesnelerinin temelleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM, and ATL
 - ATL, COM
 - ATL COM objects
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b90d8901a60b5945b2b29db2c378a0cd29939f63
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 243b7f84fc20e1c002e866ae0720ab9521d24748
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059283"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437261"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesnelerinin temelleri
 

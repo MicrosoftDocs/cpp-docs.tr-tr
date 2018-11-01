@@ -1,23 +1,13 @@
 ---
-title: Otomatik Paralelleştirme ve otomatik Vektörleştirme | Microsoft Docs
-ms.custom: ''
+title: Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1deed05b4f64e6817af68af7fc726e21d752cf7f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 06ab255e7769bfa56d5a8d22cdbe19d415ce6b31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618354"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 

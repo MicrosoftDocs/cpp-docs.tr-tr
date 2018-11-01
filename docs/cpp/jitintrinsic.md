@@ -1,29 +1,19 @@
 ---
-title: jitintrinsic | Microsoft Docs
-ms.custom: ''
+title: jitintrinsic
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - jitintrinsic
 - jitintrinsic_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], jitintrinsic
 - jitintrinsic __declspec modifier
 ms.assetid: 23dbe416-7ef6-442b-b16d-9a81aab04fa6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 888ec19eaedf881fed97a14a7f3f8b5ee673ce7a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9e726413f0bbfbd9d6affa348777c995c51283a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056293"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519307"
 ---
 # <a name="jitintrinsic"></a>jitintrinsic
 

@@ -1,10 +1,6 @@
 ---
-title: CDaoException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoException
 - AFXDAO/CDaoException
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXDAO/CDaoException::m_nAfxDaoError
 - AFXDAO/CDaoException::m_pErrorInfo
 - AFXDAO/CDaoException::m_scode
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoException [MFC], CDaoException
 - CDaoException [MFC], GetErrorCount
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CDaoException [MFC], m_pErrorInfo
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38ac86784216fdc81eb73c56f82e8f7b6744941d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 224ce79094b174d0bd011bd89afbcfe6fb7735d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585925"
 ---
 # <a name="cdaoexception-class"></a>CDaoException sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CDBPropSet sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDBPropSet Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CDBPropSet
 - ATL.CDBPropSet
@@ -27,8 +23,6 @@ f1_keywords:
 - ATL::CDBPropSet::SetGUID
 - SetGUID
 - CDBPropSet::SetGUID
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDBPropSet class
 - AddProperty method
@@ -39,17 +33,12 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a047416c22eb57fc3ee3d3eb6a69275768182525
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c0bc8a0a43051b3b4bfb2a007806dc2147e24a7f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081907"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446286"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 

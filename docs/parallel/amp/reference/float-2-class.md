@@ -1,10 +1,6 @@
 ---
-title: float_2 sınıfı | Microsoft Docs
-ms.custom: ''
+title: float_2 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_2::yx
 - amp_short_vectors/Concurrency::graphics::float_2::operator-=
@@ -31,19 +27,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_2::set_y
 - amp_short_vectors/Concurrency::graphics::float_2::y
 - amp_short_vectors/Concurrency::graphics::float_2::g
-dev_langs:
-- C++
 ms.assetid: b3ebd48e-f8c8-4f00-a640-357f702f0cae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4a36cef1681722874350510f86e9cf767d7d019a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 61e9f46737e15bf4cb7a7d45b0560fd3e6dea1cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390805"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579159"
 ---
 # <a name="float2-class"></a>float_2 Sınıfı
 

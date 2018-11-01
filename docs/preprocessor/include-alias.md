@@ -1,29 +1,19 @@
 ---
-title: include_alias | Microsoft Docs
-ms.custom: ''
+title: include_alias
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.include_alias
 - include_alias_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, include_alias
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c9844c610a1b5bffab8f5fba67daff90a52412e4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 616672d713a9f0ac6eab4be8bce9b178d2510723
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573179"
 ---
 # <a name="includealias"></a>include_alias
 

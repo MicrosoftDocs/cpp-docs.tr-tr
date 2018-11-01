@@ -1,10 +1,6 @@
 ---
-title: spawnvpe | Microsoft Docs
-ms.custom: ''
+title: spawnvpe
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - spawnvpe
 apilocation:
@@ -21,25 +17,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - spawnvpe
-dev_langs:
-- C++
 helpviewer_keywords:
 - spawnvpe function
 ms.assetid: be16bf98-5059-4c33-be00-7524142a017e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c80f8871dfbe872216c2f65bdd6f89a22f22ac4d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 26f4483f5873561b2f13735a00ec84c984abaa9a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406163"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523759"
 ---
 # <a name="spawnvpe"></a>spawnvpe
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_spawnvpe](spawnvpe-wspawnvpe.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_spawnvpe](spawnvpe-wspawnvpe.md) yerine.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

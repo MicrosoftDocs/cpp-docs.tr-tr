@@ -1,25 +1,15 @@
 ---
-title: Konuya göre Internet bilgileri | Microsoft Docs
-ms.custom: ''
+title: Konuya Göre Internet Bilgileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: 93a8b6c9-d274-492a-90b3-cf43a77edb1d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 71b2994a0e8f2a90c5968e30a2fb2480d10befa5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 909f3b63361580f0540e0b97a3bccabc568d7d7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382344"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574739"
 ---
 # <a name="internet-information-by-topic"></a>Konuya Göre Internet Bilgileri
 

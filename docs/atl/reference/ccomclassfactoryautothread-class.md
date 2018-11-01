@@ -1,30 +1,20 @@
 ---
-title: CComClassFactoryAutoThread sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComClassFactoryAutoThread sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComClassFactoryAutoThread
 - ATLCOM/ATL::CComClassFactoryAutoThread
 - ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance
 - ATLCOM/ATL::CComClassFactoryAutoThread::LockServer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComClassFactoryAutoThread class
 ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84d0d149c00024fab0d29ffc05d60270cb26741b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 30a9d52ff661fd4fa39344382402aa6ff09d193f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054442"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574830"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread sınıfı
 

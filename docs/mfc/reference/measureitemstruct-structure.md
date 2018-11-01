@@ -1,27 +1,17 @@
 ---
-title: MEASUREITEMSTRUCT yapısı | Microsoft Docs
-ms.custom: ''
+title: MEASUREITEMSTRUCT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - MEASUREITEMSTRUCT
-dev_langs:
-- C++
 helpviewer_keywords:
 - MEASUREITEMSTRUCT structure [MFC]
 ms.assetid: d141ace4-47cb-46b5-a81c-ad2c5e5a8501
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db24d772e2f007b3350443ae6bc84f97cac34e76
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3f541c30c484041d855807f220345d6863a780d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575070"
 ---
 # <a name="measureitemstruct-structure"></a>MEASUREITEMSTRUCT Yapısı
 

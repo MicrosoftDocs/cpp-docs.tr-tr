@@ -1,12 +1,6 @@
 ---
-title: Donanım özel durumları | Microsoft Docs
-ms.custom: ''
+title: Donanım Özel Durumları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - exceptions [C++], hardware
 - errors [C++], low-level
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - hardware exceptions [C++]
 - low level errors
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3cd58924662244e7b721fd583819b72fe162e45d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 17775f3b2ee6dfa235c93d0bf0e3335b464aaa69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058920"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553536"
 ---
 # <a name="hardware-exceptions"></a>Donanım Özel Durumları
 

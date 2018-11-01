@@ -1,31 +1,21 @@
 ---
-title: '&lt;cassert&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cassert&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cassert>
-dev_langs:
-- C++
 helpviewer_keywords:
 - cassert header
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca0440c7b144e980ef7aad5239c1a2f2d1df5496
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a1d554eedef368fe10a9f13b0b654078675e8348
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559022"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<assert.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<assert.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +26,7 @@ Standart C Kitaplığı üstbilgi içeren \<assert.h > ve ilişkili adlarıyla e
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,25 +1,15 @@
 ---
-title: ATL bileşik denetim temelleri | Microsoft Docs
-ms.custom: ''
+title: ATL Bileşik Denetim Temelleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - composite controls, about composite controls
 ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16358128c2da3c021b392bb4b461996ad38320e8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 18190f4d35d69f167be075130c8332baf7b459ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556721"
 ---
 # <a name="atl-composite-control-fundamentals"></a>ATL Bileşik Denetim Temelleri
 

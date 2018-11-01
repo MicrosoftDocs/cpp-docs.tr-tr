@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3821 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3821
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3821
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3821
 ms.assetid: 2b327c7a-5faf-443c-ae82-944fae25b4df
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e1f9a0bbb8eaae6b316b3d00e4201b2b64222ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1cfc762cc7151eb2d55f8bd681bec935aea2acd4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023039"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625972"
 ---
 # <a name="compiler-error-c3821"></a>Derleyici Hatası C3821
 

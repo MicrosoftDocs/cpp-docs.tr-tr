@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2581 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2581
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2581
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2581
 ms.assetid: 24a4e4c1-24d3-4e42-b760-7dcaf9740b16
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0763db5d6284942ff3f8104eaabf705305f86e1f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: edfab092c82f9dc1d4b9dfe5d21daa2b2ab98d08
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565249"
 ---
 # <a name="compiler-error-c2581"></a>Derleyici Hatası C2581
 

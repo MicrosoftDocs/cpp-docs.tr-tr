@@ -1,27 +1,17 @@
 ---
-title: IF (MASM) | Microsoft Docs
-ms.custom: ''
+title: IF (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - if
-dev_langs:
-- C++
 helpviewer_keywords:
 - IF directive
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca0cce834924f7fc147b1ef301d5bd345dfd2973
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2b91698640e028bf91d822c12b85ded651a04d8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685313"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555811"
 ---
 # <a name="if-masm"></a>IF (MASM)
 

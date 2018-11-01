@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4406 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4406
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4406
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4406
 ms.assetid: a3204731-2285-401c-b73b-af98586a86fa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 26ccf67d5e80134254268d00f46181a8b5c9d9bd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 572d46f660d9df2f60df9f2238fe84da9db46ecc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084919"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566523"
 ---
 # <a name="compiler-warning-level-1-c4406"></a>Derleyici Uyarısı (düzey 1) C4406
 

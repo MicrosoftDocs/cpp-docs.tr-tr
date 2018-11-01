@@ -1,30 +1,20 @@
 ---
-title: '/ ZC: trigraphs (trigrafları değiştirme) | Microsoft Docs'
-ms.custom: ''
+title: /Zc:trigraphs (Trigrafları Değiştirme)
 ms.date: 03/06/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Zc
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - /Zc compiler options (C++)
 - Conformance compiler options
 - Zc compiler options (C++)
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce8c9d13fa062ddac0f31eac0e20fba1266c7a8c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 24f5ba7666e6b4a39787b9edac53142cdd1cd149
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707739"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587050"
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs (Trigrafları Değiştirme)
 

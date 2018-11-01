@@ -1,12 +1,6 @@
 ---
-title: Oturum nesnesi arabirimleri | Microsoft Docs
-ms.custom: ''
+title: Oturum Nesnesi Arabirimleri
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - session objects [OLE DB]
 - session objects [OLE DB], interfaces
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - interfaces, session object
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: cf6f84791e0330c09f61ee612069564781086cc4
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 19a2830ba97038624072ce4d9b8eca573ddd7d28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588727"
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
 

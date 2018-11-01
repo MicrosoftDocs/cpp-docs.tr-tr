@@ -1,30 +1,20 @@
 ---
-title: Genel MBCS programlama önerileri | Microsoft Docs
-ms.custom: ''
+title: Genel MBCS Programlama Önerileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - _mbcs
-dev_langs:
-- C++
 helpviewer_keywords:
 - MBCS [C++], dialog box fonts
 - MS Shell Dlg
 - MBCS [C++], programming
 - dialog boxes [C++], fonts
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc27d0b0396fed6e6b03f6c3f8e1f2332fcceecf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0ff15244f4e93ecd2913fa825e8b5c351c7ff84d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421108"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501848"
 ---
 # <a name="general-mbcs-programming-advice"></a>Genel MBCS Programlama Önerileri
 

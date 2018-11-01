@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3711 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3711
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3711
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3711
 ms.assetid: 26d581cc-2153-4ee0-b814-a371184be3e1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95b788e9ecb2aa8bd1bcf5865cf9ded0c925bf49
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 391b78077ea526ebbaf99552b3220f85928a9096
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508816"
 ---
 # <a name="compiler-error-c3711"></a>Derleyici Hatası C3711
 

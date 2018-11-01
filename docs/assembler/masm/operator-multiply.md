@@ -1,14 +1,8 @@
 ---
-title: operator * | Microsoft Docs
-ms.custom: ''
+title: operator *
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator *
-dev_langs:
-- C++
 helpviewer_keywords:
 - '* operator, syntax'
 - '* operator'
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - arithmetic operators [C++], multiplication
 - operators [MASM], multiplication
 ms.assetid: 6a66521c-664f-41c3-8a77-5a948df1e9ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0790520267c6dc3e8e9e86d974bd6833bac731f3
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8d115d41e9d24cc036fd641669c0f11baa31b756
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432350"
 ---
 # <a name="operator-"></a>operator *
 

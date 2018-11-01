@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2725 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2725
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2725
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2725
 ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 969ddd9343073dff3732204eb4b17375bb5ab9cc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da5fe354724427ae6806424122281d1653ebca22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056046"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558987"
 ---
 # <a name="compiler-error-c2725"></a>Derleyici Hatası C2725
 

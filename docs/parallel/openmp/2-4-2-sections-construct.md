@@ -1,23 +1,13 @@
 ---
-title: 2.4.2 sections yapı | Microsoft Docs
-ms.custom: ''
+title: 2.4.2 sections Yapı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: e9e6e3ea-7fc9-4925-8f68-92b8a5bb1e76
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35ae940e37b40cbb9c883c4d7d6bca7b0fa65520
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2d9fca08eecd382c9d3df60159c13ac188a1ab85
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410554"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486820"
 ---
 # <a name="242-sections-construct"></a>2.4.2 sections Yapı
 
@@ -41,7 +31,7 @@ Yan tümcesi aşağıdakilerden biridir:
 
 **lastprivate (** *değişken listesi* **)**
 
-**azaltma (** *işleci* **:***değişken listesi* **)** 
+**azaltma (** *işleci* **:***değişken listesi* **)**
 
 **nowait**
 

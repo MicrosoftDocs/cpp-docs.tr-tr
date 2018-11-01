@@ -1,33 +1,23 @@
 ---
-title: strstream sınıfı | Microsoft Docs
-ms.custom: ''
+title: strstream Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - strstream/std::strstream::freeze
 - strstream/std::strstream::pcount
 - strstream/std::strstream::rdbuf
 - strstream/std::strstream::str
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::strstream [C++], freeze
 - std::strstream [C++], pcount
 - std::strstream [C++], rdbuf
 - std::strstream [C++], str
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b321891bc5b9392fffc72ec0c9661a39a5631e5a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9494f7ee2508df1971d56c94b929a7212bedb254
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717840"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562116"
 ---
 # <a name="strstream-class"></a>strstream Sınıfı
 

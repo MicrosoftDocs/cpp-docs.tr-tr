@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4080 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4080
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4080
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4080
 ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08ec1b7c65342ece3a7aebae673fce9a0d19b7a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a91963d524300c8768768a8a4615b1ab27e033e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074714"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599803"
 ---
 # <a name="compiler-warning-level-1-c4080"></a>Derleyici Uyarısı (düzey 1) C4080
 

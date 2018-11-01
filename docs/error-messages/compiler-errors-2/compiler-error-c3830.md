@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3830 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3830
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3830
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3830
 ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 20b50d394b0701281cf382c6c0226b0b0b3c8180
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5c484b2b9267bf5f9be3593c20c8b261dafde206
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631419"
 ---
 # <a name="compiler-error-c3830"></a>Derleyici Hatası C3830
 

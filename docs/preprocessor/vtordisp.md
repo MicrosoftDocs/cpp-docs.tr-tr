@@ -1,29 +1,19 @@
 ---
-title: vtordisp | Microsoft Docs
-ms.custom: ''
+title: vtordisp
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.vtordisp
 - vtordisp_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, vtordisp
 - vtordisp pragma
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eadd8cb3cd1d59c0ef74f4dc5aede47d18ac54a4
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 075f00ad8a4071af57014638707503847b58756d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557189"
 ---
 # <a name="vtordisp"></a>vtordisp
 

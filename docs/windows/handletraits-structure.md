@@ -1,32 +1,22 @@
 ---
-title: HANDLETraits yapısı | Microsoft Docs
-ms.custom: ''
+title: HANDLETraits Yapısı
 ms.date: 09/27/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue method
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 3e670dca205f07d1e13a93f8acd0df5965b45109
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 4dd2cde62d36c46926e703e6fb649e2ae4ef7811
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590079"
 ---
 # <a name="handletraits-structure"></a>HANDLETraits Yapısı
 

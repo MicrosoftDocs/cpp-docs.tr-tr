@@ -1,28 +1,17 @@
 ---
-title: çift (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: çift (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.dual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dual attribute
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a8afa7f6ac4000687f01e09e24c578e6a7853be8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 30d334f58f0eb91c9ca44ba5a5b6b8edf3970510
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509960"
 ---
 # <a name="dual"></a>çift
 

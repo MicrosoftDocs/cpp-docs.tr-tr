@@ -1,30 +1,20 @@
 ---
-title: -constexpr (constexpr değerlendirmesini Denetle) | Microsoft Docs
-ms.custom: ''
+title: /constexpr (constexpr değerlendirmesini Denetle)
 ms.date: 08/15/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /constexpr
 - -constexpr
-dev_langs:
-- C++
 helpviewer_keywords:
 - /constexpr control constexpr evaluation [C++]
 - -constexpr control constexpr evaluation [C++]
 - constexpr control constexpr evaluation [C++]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 462690a2b237d08adb9b16a68d38ad5258e958e2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ea55a2686c2cdd7f4e0a6b558d3cd456fe87cb9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544254"
 ---
 # <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (constexpr değerlendirmesini Denetle)
 
@@ -60,7 +50,7 @@ Kullanım **/constexpr** denetim parametreleri için derleyici seçenekleri **co
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

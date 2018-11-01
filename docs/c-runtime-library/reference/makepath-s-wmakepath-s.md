@@ -1,10 +1,6 @@
 ---
-title: _makepath_s, _wmakepath_s | Microsoft Docs
-ms.custom: ''
+title: _makepath_s, _wmakepath_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wmakepath_s
 - _makepath_s
@@ -26,8 +22,6 @@ f1_keywords:
 - makepath_s
 - _makepath_s
 - wmakepath_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _makepath_s function
 - wmakepath_s function
@@ -35,20 +29,16 @@ helpviewer_keywords:
 - _wmakepath_s function
 - makepath_s function
 ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a981e8758200e055693f24761238c98c3755311c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6914299dd7ede97c9004dcc95e01b1a35188f5c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404766"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471922"
 ---
 # <a name="makepaths-wmakepaths"></a>_makepath_s, _wmakepath_s
 
-Bir yol adı bileşenlerini oluşturur. Sürümleri bunlar [_makepath, _wmakepath](makepath-wmakepath.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir yol adı bileşenlerini oluşturur. Bunlar sürümleridir [_makepath, _wmakepath](makepath-wmakepath.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -89,43 +79,43 @@ errno_t _wmakepath_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yol*<br/>
-Tam yol arabelleği.
+*Yolu*<br/>
+Tam yol Ara.
 
 *sizeInWords*<br/>
-Sözcükler arabellek boyutu.
+Sözcükleri arabellek boyutu.
 
 *sizeInBytes*<br/>
 Arabelleğin bayt cinsinden boyutu.
 
 *Sürücü*<br/>
-Bir harf (A, B vb.) içeren istenen sürücü ve bir isteğe bağlı izleyen iki nokta üst üste karşılık gelen. **_makepath_s** eksik olması durumunda iki nokta üst üste bileşik yolu otomatik olarak ekler. Varsa *sürücü* olan **NULL** veya noktaları boş bir dize için sürücü harfi görünür bileşik *yolu* dize.
+Bir harf (A, B vb.) içeren istenen sürücü ve isteğe bağlı sondaki iki nokta karşılık gelen. **_makepath_s** eksik olup olmadığını iki nokta üst üste bileşik yolu otomatik olarak ekler. Varsa *sürücü* olduğu **NULL** veya noktaları boş bir dize için sürücü harfi görünür içinde bileşik *yolu* dize.
 
-*Dir*<br/>
-Sürücü göstergesi ya da gerçek dosya adı dahil değil, dizinleri yolunu içerir. Eğik isteğe bağlıdır ve eğik çizgi (/) veya ters eğik çizgi (\\) veya her ikisini de tek bir kullanılabilir *dir* bağımsız değişkeni. Hiçbir sondaki eğik çizgi varsa (/ veya \\) belirtilirse, otomatik olarak eklenir. Varsa *dir* olan **NULL** veya hiçbir dizin yolu boş bir dize noktalarına bileşik eklenen *yolu* dize.
+*dizini*<br/>
+Sürücü göstergesi ya da gerçek dosya adı dahil değil, dizin yolunu içerir. Eğik isteğe bağlıdır ve eğik çizgi (/) veya ters eğik çizgi (\\) veya her ikisi de tek bir kullanılabilir *dir* bağımsız değişken. Sonda eğik çizgi olmadığına varsa (/ veya \\) belirtilirse, otomatik olarak eklenir. Varsa *dir* olduğu **NULL** veya noktalarına hiçbir dizin yolu boş bir dize içinde bileşik eklenen *yolu* dize.
 
 *fname*<br/>
-Tüm dosya adı uzantıları olmadan temel dosya adı içeriyor. Varsa *fname* olan **NULL** veya bir dosya adı boş bir dize noktalarına bileşik eklenen *yolu* dize.
+Herhangi bir dosya adı uzantısı olmadan temel dosya adı içeriyor. Varsa *fname* olduğu **NULL** veya dosya adı boş bir dize noktalarına bileşik içinde eklenen *yolu* dize.
 
 *ext*<br/>
-Gerçek dosya adı uzantısı ile veya olmadan başında nokta (.) içerir. **_makepath_s** içinde görünmüyorsa dönemi otomatik olarak ekler *ext*. Varsa *ext* olan **NULL** ya da boş bir dize, hiçbir uzantı noktalarına bileşik eklenen *yolu* dize.
+Gerçek dosya adı uzantısı ile veya olmadan başında nokta (.) içerir. **_makepath_s** dönemi içinde görünmüyorsa, otomatik olarak ekler *ext*. Varsa *ext* olduğu **NULL** veya işaret uzantısı boş bir dize içinde bileşik eklenen *yolu* dize.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatasında bir hata kodu.
+Başarılıysa sıfır; bir hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Yol*|*sizeInWords* / *sizeInBytes*|Döndür|İçeriği *yolu*|
+|*Yolu*|*sizeInWords* / *sizeInBytes*|döndürülecek|İçeriğini *yolu*|
 |------------|------------------------------------|------------|------------------------|
-|**NULL**|tüm|**EINVAL**|değiştirilmedi|
-|tüm|<= 0|**EINVAL**|değiştirilmedi|
+|**NULL**|Tüm|**EINVAL**|değiştirilmedi|
+|Tüm|<= 0|**EINVAL**|değiştirilmedi|
 
-Yukarıdaki hata koşullardan herhangi biri meydana gelirse, bu işlevler geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevleri döndürür **EINVAL**. **NULL** parametrelerini izin *sürücü*, *fname*, ve *ext*. Davranışı hakkında bilgi için bu parametre null işaretçiler ya da boş dize olduğunda, Açıklamalar bölümüne bakın.
+Yukarıdaki hata koşullardan herhangi biri meydana gelirse, bu işlevler geçersiz parametre işleyicisi içinde açıklanan şekilde çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlevleri döndürür **EINVAL**. **NULL** parametrelerini izin verilen *sürücü*, *fname*, ve *ext*. Bu parametre null işaretçiler veya boş dizeler olduğunda davranışı hakkında bilgi için Açıklamalar bölümüne bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Makepath_s** işlevi tek tek bileşenlerinden sonucu depolamak bileşik yol dizesi oluşturur *yolu*. *Yolu* bir sürücü harfi, dizin yolu, dosya adı ve dosya adı uzantısı içerebilir. **_wmakepath_s** bir joker karakter sürümü **_makepath_s**; bağımsız değişkenleri **_wmakepath_s** joker karakter dizelerdir. **_wmakepath_s** ve **_makepath_s** Aksi takdirde aynı şekilde davranır.
+**_Makepath_s** işlev sonucu içinde depolamadan bağımsız bileşenler bileşik yol dizesi oluşturur *yolu*. *Yolu* bir sürücü harfi, dizin yolu, dosya adı ve dosya adı uzantısı içerebilir. **_wmakepath_s** geniş karakterli sürümüdür **_makepath_s**; bağımsız değişkenler **_wmakepath_s** geniş karakterli dizelerdir. **_wmakepath_s** ve **_makepath_s** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -133,13 +123,13 @@ Yukarıdaki hata koşullardan herhangi biri meydana gelirse, bu işlevler geçer
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmakepath_s**|**_makepath_s**|**_makepath_s**|**_wmakepath_s**|
 
-*Yolu* bağımsız değişken tam yolunu tutabilecek kadar büyük bir boş arabelleğe işaret etmelidir. Bileşik *yolu* değerinden büyük olmalı **_MAX_PATH** sabiti Stdlib.h tanımlanmış.
+*Yolu* bağımsız değişken bir boş arabellek için tam yolu tutabilecek kadar büyük işaret etmelidir. Bileşik *yolu* değerinden büyük olmamalıdır **_MAX_PATH** sabiti Stdlıb.h içinde tanımlanır.
 
-Yol ise **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Ayrıca, **errno** ayarlanır **EINVAL**. **NULL** diğer tüm parametreler için değerler izin verilir.
+Yol ise **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Ayrıca, **errno** ayarlanır **EINVAL**. **NULL** diğer tüm parametreler için değerleri izin verilir.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -148,7 +138,7 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**_makepath_s**|\<stdlib.h >|
 |**_wmakepath_s**|\<stdlib.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

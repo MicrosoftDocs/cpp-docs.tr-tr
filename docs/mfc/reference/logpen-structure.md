@@ -1,27 +1,17 @@
 ---
-title: LOGPEN yapısı | Microsoft Docs
-ms.custom: ''
+title: LOGPEN Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - LOGPEN
-dev_langs:
-- C++
 helpviewer_keywords:
 - LOGPEN structure [MFC]
 ms.assetid: a89e8690-6b61-4af5-990c-7c82da24f3b0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0fa2a4b422a7bd1f36fc46837adec4136b693fb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d53d99f5aed0fa0e0a67f829af2b8751d56d492d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064960"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589351"
 ---
 # <a name="logpen-structure"></a>LOGPEN Yapısı
 

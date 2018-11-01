@@ -1,10 +1,6 @@
 ---
-title: CAnimationVariable sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationVariable sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationVariable
 - AFXANIMATIONCONTROLLER/CAnimationVariable
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationVariable::m_lstTransitions
 - AFXANIMATIONCONTROLLER/CAnimationVariable::m_pParentObject
 - AFXANIMATIONCONTROLLER/CAnimationVariable::m_variable
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationVariable [MFC], CAnimationVariable
 - CAnimationVariable [MFC], AddTransition
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CAnimationVariable [MFC], m_pParentObject
 - CAnimationVariable [MFC], m_variable
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fdf35381efb5f6d017b3238f4630929fb1d9ebbe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ad14060c7607698cd647ae34fb35b6ea3ae547c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447862"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559568"
 ---
 # <a name="canimationvariable-class"></a>CAnimationVariable sınıfı
 

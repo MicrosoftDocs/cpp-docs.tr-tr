@@ -1,11 +1,6 @@
 ---
-title: cexp, cexpf, cexpl | Microsoft Docs
-ms.custom: ''
+title: cexp, cexpf, cexpl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cexp
 - cexpf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/cepx
 - complex/cexpf
 - complex/cexpl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cexp function
 - cexpl function
 - cexpf function
 ms.assetid: f27fd5a9-70c7-4957-a7ee-5256d19bd1da
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a54dc0c25fd0b476887914778278ec83c19fe8e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 401dd30b326fcd6caef7cae6f1ecbdc43ed5dd5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462939"
 ---
 # <a name="cexp-cexpf-cexpl"></a>cexp, cexpf, cexpl
 
-E tabanında karmaşık sayısı üstel işlem.
+Tabanında üssü karmaşık birkaç işlem.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,19 +61,19 @@ _Lcomplex cexp( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değeri **e** üssünü *z*.
+Değerini **e** üssünü *z*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cexp** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **cexp** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cexp** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cexp** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**cexp**, **cexpf**, **cexpl**|\<Complex.h >|\<Complex.h >|
 
-Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

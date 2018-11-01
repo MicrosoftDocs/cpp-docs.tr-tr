@@ -1,27 +1,16 @@
 ---
-title: (C++) bir araç çubuğu düğmesini taşıma | Microsoft Docs
-ms.custom: ''
+title: (C++) bir araç çubuğu düğmesini taşıma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - toolbar buttons [C++], moving
 - Toolbar editor [C++], moving buttons
 ms.assetid: 7625f2ce-8ac4-4428-a3f8-a95bfdf6f95f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bace548d72829229d40a9b890d686efb132e0e87
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d70b6b0b19704d3a0f68c31fecdfabd41f91bf27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388478"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569552"
 ---
 # <a name="moving-a-toolbar-button"></a>Araç Çubuğu Düğmesini Taşıma
 

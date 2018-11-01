@@ -1,38 +1,28 @@
 ---
-title: Kategorilere göre Evrensel C çalışma zamanı yordamları | Microsoft Docs
-ms.custom: ''
+title: Kategoriye göre Evrensel C çalışma zamanı yordamları
 ms.date: 04/06/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.runtime
-dev_langs:
-- C++
 helpviewer_keywords:
 - routines, run-time
 - functions [CRT], run-time
 - categories, run-time functions
 - functions [CRT]
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd18cf5cfdd2583e866045000ddcc992a573b199
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0f81ad76a535cc4e4f5aa740e1501d3ffd323e2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499589"
 ---
-# <a name="universal-c-runtime-routines-by-category"></a>Kategorilere göre Evrensel C çalışma zamanı yordamları
+# <a name="universal-c-runtime-routines-by-category"></a>Kategoriye göre Evrensel C çalışma zamanı yordamları
 
-Bu bölümde, listeler ve kategoriye göre Evrensel C çalışma zamanı (UCRT) kitaplık yordamları açıklar. Başvuru kolaylık olması için bazı yordamları birden fazla kategorisinde listelenir. Çok baytlı karakter yordamları ve joker karakter düzenleri bunlar var olduğu tek baytlı karakter ortaklarınıza gruplandırılır.
+Bu bölümde, listeler ve kategoriye göre Evrensel C çalışma zamanı (UCRT) kitaplık yordamları açıklar. Başvuru kolaylık olması için bazı yordamları birden fazla kategorisinde listelenir. Çok baytlı karakter yordamları ve geniş karakter yordamları mevcut oldukları tek baytlı karakter karşılıklarıyla gruplandırılır.
 
 ## <a name="ucrt-library-routine-categories"></a>UCRT kitaplığı rutin kategorileri
 
-UCRT kitaplık yordamları, ana kategoriler şunlardır:
+UCRT kitaplık yordamları ana kategorileri şunlardır:
 
 |||
 |-|-|

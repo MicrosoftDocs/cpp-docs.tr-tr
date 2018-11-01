@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonLinkCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonLinkCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonLinkCtrl
 - AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnSetIcon
 - AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OpenLink
 - AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::SetLink
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonLinkCtrl [MFC], CMFCRibbonLinkCtrl
 - CMFCRibbonLinkCtrl [MFC], CopyFrom
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CMFCRibbonLinkCtrl [MFC], OpenLink
 - CMFCRibbonLinkCtrl [MFC], SetLink
 ms.assetid: 77ae1941-e0ab-4a9d-911e-1752d34c079b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 757bc0e1418b2ff68f3aefce7bf54ca38e8a4687
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6e20b8fd2c8b40f907301c36f2aa3acef144d7b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079564"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559152"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
 

@@ -1,23 +1,13 @@
 ---
-title: -INTEGRITYCHECK (imza denetimi iste) | Microsoft Docs
-ms.custom: ''
+title: /INTEGRITYCHECK (İmza Denetimi İste)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2975f9648415b072c7e0cc893183b4a7880c3e43
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8530175cd5bc0ed5dced7f92e5f67a1576bb43e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444911"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578353"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK (İmza Denetimi İste)
 

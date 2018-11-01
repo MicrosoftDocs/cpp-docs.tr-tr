@@ -1,29 +1,19 @@
 ---
-title: 'Koşullu işleç:? : | Microsoft Docs'
-ms.custom: ''
+title: 'Koşullu işleç:? :'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '?:'
 - '?'
-dev_langs:
-- C++
 helpviewer_keywords:
 - conditional operators [C++]
 - '? : operator'
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 982b03ae1785aba03dd96ef3b1423a93c74efdf2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8744ca8546d48e9283cc0dfa9d80babf5076f8b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444141"
 ---
 # <a name="conditional-operator--"></a>Koşullu işleç:? :
 

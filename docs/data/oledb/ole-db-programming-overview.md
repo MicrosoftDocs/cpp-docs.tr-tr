@@ -1,27 +1,16 @@
 ---
-title: OLE DB programlamaya genel bakış | Microsoft Docs
-ms.custom: ''
+title: OLE DB Programlamaya Genel Bakış
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Universal Data Access
 - OLE DB, about OLE DB
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a58e167b87f95ac243222f852b41f2e6f08aec8d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d19e98d7c5743207dba224214b0d9a0e9f308e81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608955"
 ---
 # <a name="ole-db-programming-overview"></a>OLE DB Programlamaya Genel Bakış
 

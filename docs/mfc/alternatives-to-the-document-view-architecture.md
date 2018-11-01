@@ -1,27 +1,17 @@
 ---
-title: Belge-görünüm mimarisinin alternatifleri | Microsoft Docs
-ms.custom: ''
+title: Belge-görünüm mimarisinin alternatifleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - documents [MFC], applications without
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b45b1a1f2903dfcdfa4a95adc161766f5bb3328c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5a9026ca400c3e7c403ff8f2b86f486bcde79cf8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569786"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 

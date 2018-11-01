@@ -1,28 +1,17 @@
 ---
-title: Metin aracı yazı tipi iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++) | Microsoft Docs
-ms.custom: ''
+title: Metin aracı yazı tipi iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Text Tool Font dialog box [C++]
 - fonts, changing on an image
 - text, on images
 ms.assetid: c398e2e7-0263-43c1-9ab4-768a280c2407
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b83acbc8b4ca6beb3288ed9e02667410b239c6e7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1e701a2fc91b1917f99fd9bcc43aa0bbc9696f69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722052"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489771"
 ---
 # <a name="text-tool-font-dialog-box-c-image-editor-for-icons"></a>Metin aracı yazı tipi iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 

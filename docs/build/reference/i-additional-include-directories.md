@@ -1,17 +1,11 @@
 ---
-title: -I (ek içeren dizinler) | Microsoft Docs
-ms.custom: ''
+title: /I (Ek İçeren Dizinler)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCCLCompilerTool.AdditionalIncludeDirectories
 - /I
 - VC.Project.VCNMakeTool.IncludeSearchPath
-dev_langs:
-- C++
 helpviewer_keywords:
 - /I compiler option [C++]
 - Additional Include Directories compiler option
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - set include directories
 - include directories, compiler option [C++]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a580488650a1272ec1dffcd1f0ba27c736df92da
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b922a4472246bb13bfed4022f2f85061c5d1217b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563871"
 ---
 # <a name="i-additional-include-directories"></a>/I (Ek İçeren Dizinler)
 
@@ -72,7 +62,7 @@ Derleyici dizinleri şu sırayla arar:
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalIncludeDirectories%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalIncludeDirectories%2A>.
 
 ## <a name="example"></a>Örnek
 

@@ -1,10 +1,6 @@
 ---
-title: CFindReplaceDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFindReplaceDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFindReplaceDialog
 - AFXDLGS/CFindReplaceDialog
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXDLGS/CFindReplaceDialog::ReplaceCurrent
 - AFXDLGS/CFindReplaceDialog::SearchDown
 - AFXDLGS/CFindReplaceDialog::m_fr
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFindReplaceDialog [MFC], CFindReplaceDialog
 - CFindReplaceDialog [MFC], Create
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7948b755e65b3a64c57f2fd99cf4eefa68cb3cb9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e891a6694f0a85715a7d76d196865e3238695753
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571190"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 

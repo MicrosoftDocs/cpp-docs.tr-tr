@@ -1,27 +1,17 @@
 ---
-title: hash_compare sınıfı | Microsoft Docs
-ms.custom: ''
+title: hash_compare Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - hash_set/stdext::hash_compare
-dev_langs:
-- C++
 helpviewer_keywords:
 - hash_compare class
 ms.assetid: d502bb59-de57-4585-beb9-00e3a998c0af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92dce97754eccc8cd4f618db3ac3e23574fb54ae
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f535122b67f854b8b204664b829ce9da5fe3c6a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575792"
 ---
 # <a name="hashcompare-class"></a>hash_compare Sınıfı
 

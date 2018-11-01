@@ -1,10 +1,6 @@
 ---
-title: Ioleınplaceobjectwindowlessımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ioleınplaceobjectwindowlessımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IOleInPlaceObjectWindowlessImpl
 - ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl
@@ -16,8 +12,6 @@ f1_keywords:
 - ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo
 - ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::SetObjectRects
 - ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::UIDeactivate
-dev_langs:
-- C++
 helpviewer_keywords:
 - IOleInPlaceObjectWindowless, ATL implementation
 - activation [C++], ATL
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - controls [ATL], windowless
 - deactivating ATL
 ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 112700fffc3b4104599f68f80f00e8d3239788f2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a83fbed524c55c6bc98aa25caa17b80c1e5f89f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592133"
 ---
 # <a name="ioleinplaceobjectwindowlessimpl-class"></a>Ioleınplaceobjectwindowlessımpl sınıfı
 

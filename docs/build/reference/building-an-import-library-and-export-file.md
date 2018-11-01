@@ -1,17 +1,11 @@
 ---
-title: Bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme | Microsoft Docs
-ms.custom: ''
+title: İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.ModuleDefinitionFile
 - VC.Project.VCLibrarianTool.ExportNamedFunctions
 - VC.Project.VCLibrarianTool.GenerateDebug
 - VC.Project.VCLibrarianTool.ForceSymbolReferences
-dev_langs:
-- C++
 helpviewer_keywords:
 - OUT library manager option
 - INCLUDE library manager option
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - .lib files
 - EXP files
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75f629c8a9c8a06f02024e9d52ab13b2d12b234c
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: e5e7a60bf4607be55525b587df4942875126b50e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860400"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556682"
 ---
 # <a name="building-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 

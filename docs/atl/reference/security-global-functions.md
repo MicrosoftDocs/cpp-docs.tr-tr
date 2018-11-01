@@ -1,10 +1,6 @@
 ---
-title: Güvenlik genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Güvenlik genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlsecurity/ATL::AtlGetDacl
 - atlsecurity/ATL::AtlSetDacl
@@ -15,23 +11,17 @@ f1_keywords:
 - atlsecurity/ATL::AtlGetSacl
 - atlsecurity/ATL::AtlSetSacl
 - atlsecurity/ATL::AtlGetSecurityDescriptor
-dev_langs:
-- C++
 helpviewer_keywords:
 - SIDs [C++], modifying SID objects
 - ACL object global functions
 - security IDs [C++]
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbac8dc499c08d96abd33d49f5adec08095ca420
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 95074860c5fc5bef02852600b51751e9a028465a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555239"
 ---
 # <a name="security-global-functions"></a>Güvenlik genel işlevleri
 

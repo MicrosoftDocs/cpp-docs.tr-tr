@@ -1,10 +1,6 @@
 ---
-title: Cımagelist sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cımagelist sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CImageList
 - AFXCMN/CImageList
@@ -42,8 +38,6 @@ f1_keywords:
 - AFXCMN/CImageList::SetOverlayImage
 - AFXCMN/CImageList::Write
 - AFXCMN/CImageList::m_hImageList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CImageList [MFC], CImageList
 - CImageList [MFC], Add
@@ -80,16 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ca52f7a5940de3caa87f81ddf07625ab751927c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d311c064d9b91967a60823fc3fd0e43f22a119c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500769"
 ---
 # <a name="cimagelist-class"></a>Cımagelist sınıfı
 

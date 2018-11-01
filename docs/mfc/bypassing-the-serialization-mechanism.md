@@ -1,12 +1,6 @@
 ---
-title: Seri hale getirme mekanizmasını atlama | Microsoft Docs
-ms.custom: ''
+title: Seri Hale Getirme Mekanizmasını Atlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - archive objects [MFC]
 - bypassing serialization
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - serialization [MFC], role of framework
 - serialization [MFC], overriding
 ms.assetid: 48d4a279-b51c-4ba5-81cd-ed043312b582
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 25fc281e35fc07151fa609d07be540430a6a1da6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4c76be874752a577aaeb4c3641818f8a2850b465
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399824"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556604"
 ---
 # <a name="bypassing-the-serialization-mechanism"></a>Seri Hale Getirme Mekanizmasını Atlama
 

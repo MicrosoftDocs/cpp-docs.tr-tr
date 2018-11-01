@@ -1,25 +1,15 @@
 ---
-title: Çalışan modeli | Microsoft Docs
-ms.custom: ''
+title: Çalışan modeli
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90d389fb9ad6ffb3fbdbb726f7968d464170d693
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bbfe75ad996841cd4ea78adab56c7cf91ac55f3c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565561"
 ---
 # <a name="worker-archetype"></a>Çalışan modeli
 

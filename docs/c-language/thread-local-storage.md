@@ -1,12 +1,6 @@
 ---
-title: İş parçacığı yerel depolaması | Microsoft Docs
-ms.custom: ''
+title: İş Parçacığında Yerel Depolama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - thread-local variables
 - TLS (thread local storage)
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - thread-local storage
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0dca0359ea385e3a30f5dab6e8745a2d567ec1e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e13aa9600cd26fba47ce43a318fa7174995d58fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055261"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572230"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 

@@ -1,12 +1,6 @@
 ---
-title: Dosyaları açma | Microsoft Docs
-ms.custom: ''
+title: Dosyaları Açma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Open member functions [MFC]
 - CFile class [MFC], variable
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - opening files [MFC]
 - exception handling [MFC], opening files
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f74c0fdcdb8d6dfe1aced33a1c7087ecde6c89ff
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a29485b8258503682d59abb51dcfa72e383f0b8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577718"
 ---
 # <a name="opening-files"></a>Dosyaları Açma
 

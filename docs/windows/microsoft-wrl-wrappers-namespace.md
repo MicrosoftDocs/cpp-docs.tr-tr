@@ -1,28 +1,18 @@
 ---
-title: 'Microsoft::wrl:: Wrappers Namespace | Microsoft Docs'
-ms.custom: ''
+title: Microsoft::WRL::Wrappers Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers
-dev_langs:
-- C++
 helpviewer_keywords:
 - Wrappers namespace
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2b1a63494e06ce3117e7e8fccd1d0cbca8cdb4d0
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: eac85d10351a141ce561da4272d033644128608f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535492"
 ---
 # <a name="microsoftwrlwrappers-namespace"></a>Microsoft::WRL::Wrappers Ad Alanı
 
@@ -47,7 +37,7 @@ namespace Microsoft::WRL::Wrappers;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CriticalSection Sınıfı](../windows/criticalsection-class.md)|Kritik bölüm nesneyi temsil eder.|
-|[Olay sınıfı (WRL)](../windows/event-class-wrl.md)|Bir olayı temsil eder.|
+|[Event Sınıfı (WRL)](../windows/event-class-wrl.md)|Bir olayı temsil eder.|
 |[HandleT Sınıfı](../windows/handlet-class.md)|Bir tutamacı nesneyi temsil eder.|
 |[HString Sınıfı](../windows/hstring-class.md)|HSTRING tutamaçları düzenlenmesi için destek sağlar.|
 |[HStringReference Sınıfı](../windows/hstringreference-class.md)|Varolan bir dizeden oluşturulan bir HSTRING temsil eder.|

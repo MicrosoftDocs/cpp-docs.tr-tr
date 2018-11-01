@@ -1,12 +1,6 @@
 ---
-title: Geçerli görünümü yönetme | Microsoft Docs
-ms.custom: ''
+title: Geçerli Görünümü Yönetme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - views [MFC], and OnActivateView method [MFC]
 - views [MFC], deactivating
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - deactivating views [MFC]
 - current view in frame window [MFC]
 ms.assetid: 0a1cc22d-d646-4536-9ad2-3cb6d7092e4a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca9738f9b6083ef88c2f72e1608121f849f8e909
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c53193a2e8121274246eabd9c7b614ad986146c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425385"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575493"
 ---
 # <a name="managing-the-current-view"></a>Geçerli Görünümü Yönetme
 

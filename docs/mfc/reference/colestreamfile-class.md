@@ -1,10 +1,6 @@
 ---
-title: COleStreamFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleStreamFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleStreamFile
 - AFXOLE/COleStreamFile
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXOLE/COleStreamFile::Detach
 - AFXOLE/COleStreamFile::GetStream
 - AFXOLE/COleStreamFile::OpenStream
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleStreamFile [MFC], COleStreamFile
 - COleStreamFile [MFC], Attach
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - COleStreamFile [MFC], GetStream
 - COleStreamFile [MFC], OpenStream
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4425732f35b711b052675c3d1a00746c04a1d538
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 25d3da4ac9092fe53e84e446e93ff7aa030e6709
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577547"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile sınıfı
 

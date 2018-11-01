@@ -1,10 +1,6 @@
 ---
-title: CArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: CArray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CArray
 - AFXTEMPL/CArray
@@ -26,8 +22,6 @@ f1_keywords:
 - AFXTEMPL/CArray::SetAt
 - AFXTEMPL/CArray::SetAtGrow
 - AFXTEMPL/CArray::SetSize
-dev_langs:
-- CPP
 helpviewer_keywords:
 - CArray [MFC], CArray
 - CArray [MFC], Add
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - CArray [MFC], SetAtGrow
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d51f829efe6aee07171920857f37c5a30a9045c9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e97a50b2687029ddff3d946f634e145f6709aa48
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390612"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557683"
 ---
 # <a name="carray-class"></a>CArray sınıfı
 

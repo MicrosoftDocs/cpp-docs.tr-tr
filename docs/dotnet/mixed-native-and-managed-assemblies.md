@@ -1,12 +1,6 @@
 ---
-title: Karışık (yerel ve yönetilen) derlemeler | Microsoft Docs
-ms.custom: ''
+title: Karışık (Yerel ve Yönetilen) Derlemeler
 ms.date: 09/18/2018
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interop [C++], mixed assemblies
 - /clr compiler option [C++], mixed assemblies
@@ -18,17 +12,12 @@ helpviewer_keywords:
 - mixed assemblies [C++]
 - native code [C++], .NET interoperatibility
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 4ee94905bc4c40f6d080e34098e24bd71d495141
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 78e95177282804369bac2065582a06b8acbc975b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428693"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (yerel ve yönetilen) derlemeler
 

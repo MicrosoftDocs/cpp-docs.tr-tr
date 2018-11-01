@@ -1,31 +1,21 @@
 ---
-title: CD2DSizeF sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DSizeF sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DSizeF
 - AFXRENDERTARGET/CD2DSizeF
 - AFXRENDERTARGET/CD2DSizeF::CD2DSizeF
 - AFXRENDERTARGET/CD2DSizeF::IsNull
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DSizeF [MFC], CD2DSizeF
 - CD2DSizeF [MFC], IsNull
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5af0ea66ba143935689486d7b7afa3cfaf8cd033
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e9c8d77a9f84abe9a483a0f100e1f52b8768202b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071277"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557475"
 ---
 # <a name="cd2dsizef-class"></a>CD2DSizeF sınıfı
 

@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: Zamanlayıcı örneğini yönetme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Zamanlayıcı Örneğini Yönetme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - managing a scheduler instance [Concurrency Runtime]
 - scheduler instances, managing [Concurrency Runtime]
 ms.assetid: 2cc804f0-5ff3-498b-97f1-a9f67a005448
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97735b5509fb841a8b9b3d8212f4a23514f9d28c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8c19eb801c7761b85580526e1ff8bed89112cc5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437823"
 ---
 # <a name="how-to-manage-a-scheduler-instance"></a>Nasıl yapılır: Zamanlayıcı Örneğini Yönetme
 

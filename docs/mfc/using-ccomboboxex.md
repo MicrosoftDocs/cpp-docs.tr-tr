@@ -1,30 +1,20 @@
 ---
-title: CComboBoxEx kullanma | Microsoft Docs
-ms.custom: ''
+title: CComboBoxEx Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CComboBoxEx
-dev_langs:
-- C++
 helpviewer_keywords:
 - combo boxes [MFC], extended
 - extended combo boxes [MFC], about extended combo boxes
 - combo boxes [MFC], CComboBoxEx class
 - CComboBox class [MFC], extended
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc92a76b9563c74111deda12d00ca7b5895a11d7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 18350a5f4ac8056676eeb275f9fc95478b3a8e10
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433315"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596644"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx Kullanma
 

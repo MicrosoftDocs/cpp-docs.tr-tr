@@ -1,31 +1,21 @@
 ---
-title: Bağlayıcı özellik sayfaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Özellik Sayfaları
 ms.date: 11/21/2017
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCLinkerTool.RegisterOutput
 - VC.Project.VCLinkerTool.OVERWRITEImportLibrary
 - VC.Project.VCLinkerTool.UseLibraryDependencyInputs
 - VC.Project.VCLinkerTool.LinkLibraryDependencies
-dev_langs:
-- C++
 helpviewer_keywords:
 - per-user redirection
 - Linker property pages
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eec1620d9ae84e5c0b957b7426ad388c70626813
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ac499d11b1e806a046d7ff9105da43cebcee1af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379222"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561596"
 ---
 # <a name="linker-property-pages"></a>Bağlayıcı Özellik Sayfaları
 

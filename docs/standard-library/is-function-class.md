@@ -1,28 +1,18 @@
 ---
-title: is_function sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_function Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_function class
 - is
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f668a1439f1694263405932c290cc5b54543ac84
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 23427ded641d2e7c6d4496ec3c0c36a05cf56422
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575298"
 ---
 # <a name="isfunction-class"></a>is_function Sınıfı
 

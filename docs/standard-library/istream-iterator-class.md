@@ -1,33 +1,23 @@
 ---
-title: istream_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: istream_iterator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iterator/std::istream_iterator
 - iterator/std::istream_iterator::char_type
 - iterator/std::istream_iterator::istream_type
 - iterator/std::istream_iterator::traits_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::istream_iterator [C++]
 - std::istream_iterator [C++], char_type
 - std::istream_iterator [C++], istream_type
 - std::istream_iterator [C++], traits_type
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f8da58ad4ba2ddbfdbea7a951104b88d8f55c445
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f8fc1593db8ddacefb4a231be76ca6d7cbd30849
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710293"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429164"
 ---
 # <a name="istreamiterator-class"></a>istream_iterator Sınıfı
 

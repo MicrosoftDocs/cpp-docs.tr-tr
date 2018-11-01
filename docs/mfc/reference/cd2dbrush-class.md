@@ -1,10 +1,6 @@
 ---
-title: CD2DBrush sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DBrush sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DBrush
 - AFXRENDERTARGET/CD2DBrush
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DBrush::SetTransform
 - AFXRENDERTARGET/CD2DBrush::m_pBrush
 - AFXRENDERTARGET/CD2DBrush::m_pBrushProperties
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DBrush [MFC], CD2DBrush
 - CD2DBrush [MFC], Attach
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CD2DBrush [MFC], m_pBrush
 - CD2DBrush [MFC], m_pBrushProperties
 ms.assetid: 0d2c0857-2261-48a8-8ee0-a88cbf08499a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7141350d318673b5458cd760f7ad9d48a466bda
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9e0be4b3b4f39d8fcf32f713bc8765d1f344babe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517890"
 ---
 # <a name="cd2dbrush-class"></a>CD2DBrush sınıfı
 

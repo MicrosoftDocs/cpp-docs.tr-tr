@@ -1,10 +1,6 @@
 ---
-title: strrev, wcsrev | Microsoft Docs
-ms.custom: ''
+title: strrev, wcsrev
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strrev
 - wcsrev
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - strrev
 - wcsrev
-dev_langs:
-- C++
 helpviewer_keywords:
 - strrev function
 - wcsrev function
 ms.assetid: 89e05854-a9ce-4fb7-993d-a9831cd7edf2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b025b99c5f2038c984c73f27d058c6841c108ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bef47893ba11367b8b695c81c7f89fde45a1f967
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563182"
 ---
 # <a name="strrev-wcsrev"></a>strrev, wcsrev
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_strrev, _wcsrev, _mbsrev, _mbsrev_l](strrev-wcsrev-mbsrev-mbsrev-l.md) yerine.
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_strrev, _wcsrev, _mbsrev, _mbsrev_l](strrev-wcsrev-mbsrev-mbsrev-l.md) yerine.

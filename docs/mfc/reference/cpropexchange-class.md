@@ -1,10 +1,6 @@
 ---
-title: CPropExchange sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPropExchange sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPropExchange
 - AFXCTL/CPropExchange
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXCTL/CPropExchange::GetVersion
 - AFXCTL/CPropExchange::IsAsynchronous
 - AFXCTL/CPropExchange::IsLoading
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPropExchange [MFC], ExchangeBlobProp
 - CPropExchange [MFC], ExchangeFontProp
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d59b8dc90c6ce2aed8817f5be5c1724b6fbda2a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 772388d069bdec274bd396b776d404711b694771
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074455"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560387"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 

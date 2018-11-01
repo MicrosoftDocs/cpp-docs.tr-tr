@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4010 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4010
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4010
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4010
 ms.assetid: 2824cf99-4174-4b60-a6e2-c01e9f1ee52d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e214f603c31c72533d81a140023363880532191c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f25c9194f48df4064282fb8601928b3ff00f40e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558801"
 ---
 # <a name="linker-tools-warning-lnk4010"></a>Bağlayıcı Araçları Uyarısı LNK4010
 

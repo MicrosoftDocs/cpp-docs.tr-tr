@@ -1,28 +1,18 @@
 ---
-title: minus yapısı | Microsoft Docs
-ms.custom: ''
+title: minus Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::minus
-dev_langs:
-- C++
 helpviewer_keywords:
 - minus struct
 - minus class
 ms.assetid: 7bce784e-2be6-413a-b516-004e9ecb2a39
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f377d2005625237113ebe881081f1eaf41d2b74
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 90bfe62e01b0e49b9998682d3f1d6d19393e7cc1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566197"
 ---
 # <a name="minus-struct"></a>minus Yapısı
 

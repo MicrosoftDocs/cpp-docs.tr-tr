@@ -1,28 +1,18 @@
 ---
-title: CToolBarCtrl nesnesi oluşturma | Microsoft Docs
-ms.custom: ''
+title: CToolBarCtrl Nesnesi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CToolBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - toolbar controls [MFC], creating
 - CToolBarCtrl class [MFC], creating toolbars
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c98f99ef7ff26fed7d7df89881d2148af6bc993a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ad75f346e21262b894d01efd351e6bb0a3ede3a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421654"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564677"
 ---
 # <a name="creating-a-ctoolbarctrl-object"></a>CToolBarCtrl Nesnesi Oluşturma
 

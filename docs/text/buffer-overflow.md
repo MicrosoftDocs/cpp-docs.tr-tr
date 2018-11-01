@@ -1,27 +1,17 @@
 ---
-title: Arabellek Taşması | Microsoft Docs
-ms.custom: ''
+title: Arabellek Taşması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - buffers [C++], character sizes
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 109719b437716e31fc5ebdcd43c02c55bfea997d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 97488f3023481c20599e8cf5201fbce68dd23516
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566510"
 ---
 # <a name="buffer-overflow"></a>Arabellek Taşması
 

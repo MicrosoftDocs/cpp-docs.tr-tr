@@ -1,27 +1,17 @@
 ---
-title: Tanımlayıcıları | Microsoft Docs
-ms.custom: ''
+title: Tanımlayıcılar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declaration specifiers
 - declarations, specifiers
 - specifiers, in declarations
 ms.assetid: 8b14e844-9880-4571-8779-28c8efe44633
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5eddf38cddb3890be901fdc20f403521be146eb2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aef967b26321f289cb8c7bd0402d7fe8f12b77b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611412"
 ---
 # <a name="specifiers"></a>Tanımlayıcılar
 

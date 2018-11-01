@@ -1,15 +1,9 @@
 ---
-title: /ZC:threadSafeInit (iş parçacığı yerel statik başlatma) | Microsoft Docs
-ms.custom: ''
+title: '/ ZC: threadsafeınit (iş parçacığı güvenli yerel statik başlatma)'
 ms.date: 03/14/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - threadSafeInit
 - /Zc:threadSafeInit
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - threadSafeInit
@@ -17,20 +11,16 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 438ce5ba783f646e9c8e61d9b82999ea936532b4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a0a5edda3d0d178a03fa98cf689b257cd5ab3f53
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381154"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605835"
 ---
-# <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/ZC:threadSafeInit (iş parçacığı yerel statik başlatma)
+# <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/ ZC: threadsafeınit (iş parçacığı güvenli yerel statik başlatma)
 
-**/Zc:threadSafeInit** derleyici seçeneği statik yerel (işlev kapsamı) değişkenleri el ile eşitleme gereksinimini bir iş parçacığı açısından güvenli şekilde başlatmak için derleyici söyler. Yalnızca başlatma iş parçacığı güvenlidir. Kullanım ve statik yerel değişkenler birden çok iş parçacığı tarafından değiştirilmesini hala el ile eşitlenmelidir. Bu seçenek, Visual Studio 2015'ten başlayarak kullanılabilir. Varsayılan olarak, Visual Studio bu seçeneği etkinleştirir.
+**/ZC: threadsafeınit** derleyici seçeneği, el ile eşitleme gereği ortadan kaldırılır iş parçacığı güvenli bir şekilde, statik yerel (işlev kapsamı) değişkenleri başlatmak için derleyicinin söyler. Yalnızca başlatma, iş parçacığı açısından güvenlidir. Kullanım ve statik yerel değişkenlerin birden çok iş parçacığı tarafından değiştirilmesini el ile eşitlenmesi gerekir. Bu seçenek, Visual Studio 2015'ten başlayarak kullanılabilir. Varsayılan olarak, Visual Studio bu seçeneği etkinleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,25 +28,25 @@ ms.locfileid: "32381154"
 
 ## <a name="remarks"></a>Açıklamalar
 
-C ++ 11'de standart blok kapsamı statik değişkenlerle veya iş parçacığı depolama süresi sıfır-diğer başlatma gerçekleşmeden önce başlatılması gerekir. Denetim ilk değişken bildirimi geçerken başlatma gerçekleşir. Başlatma sırasında bir özel durum, değişkeni başlatılmadı olarak kabul edilir ve başlatma yeniden denemesi ise sonraki zamanı denetimi bildirimi geçirir. Denetim bildirimi eşzamanlı olarak başlatma, başlatma tamamlanırken eş zamanlı yürütme blokları girerse. Denetim bildirimi yinelemeli olarak başlatma sırasında yeniden girerse tanımlanmamış bir davranıştır. Varsayılan olarak, Visual Studio 2015'ten başlayarak Visual Studio bu standart davranışı uygular. Bu davranış açıkça ayarlayarak belirtilebilir **/Zc:threadSafeInit** derleyici seçeneği.
+C ++ 11'de standart blok kapsamı statik değişkenlerle veya iş parçacığı depolama süresi sıfır-başka bir başlatma gerçekleşmeden önce başlatılması gerekir. Başlatma denetimi değişkenin bildirimi ilk başarılı olduğunda gerçekleşir. Başlatma sırasında bir özel durum, değişken başlatılmamış olarak kabul edilir ve başlatma yeniden denemesi, sonraki zaman denetim bildirimi geçirir. Denetim bildirimi başlatma, eş zamanlı yürütme taşları başlatma tamamlanırken eşzamanlı girerse. Yeniden başlatma sırasında denetim bildirimi yinelemeli olarak girer, tanımsız bir davranıştır. Varsayılan olarak, Visual Studio Visual Studio 2015'ten başlayarak, bu standart davranışı uygular. Bu davranışı açıkça ayarlayarak belirtilebilir **/ZC: threadsafeınit** derleyici seçeneği.
 
-**/Zc:threadSafeInit** derleyici seçeneği varsayılan olarak açıktır. [/ İzin veren-](permissive-standards-conformance.md) seçeneği etkilemez **/Zc:threadSafeInit**.
+**/ZC: threadsafeınit** derleyici seçeneği varsayılan olarak açıktır. [/ Permissive-](permissive-standards-conformance.md) seçeneği etkilemez **/ZC: threadsafeınit**.
 
-Evrensel C Çalışma Zamanı Kitaplığı'nda (UCRT) uygulanan kod parçacığı başlatma statik yerel değişkenleri kullanır. Bir bağımlılık üzerinde UCRT almaktan kaçının ya da Visual Studio 2015 önce Visual Studio sürümleri iş parçacığı güvenli başlatma davranışını korumak için kullanmak **/Zc:threadSafeInit-** seçeneği. Bu iş parçacığı güvenliği gerekli olmadığını biliyorsanız, statik yerel bildirimler geçici biraz daha küçük, daha hızlı kodu oluşturmak için bu seçeneği kullanın.
+İş parçacığı açısından güvenli başlatma statik yerel değişkenlerin Evrensel C Çalışma Zamanı Kitaplığı'nda (UCRT) uygulanan kod kullanır. UCRT üzerinde bir bağımlılık alma önlemek ve Visual Studio'nun önceki Visual Studio 2015 sürümlerini iş parçacığı güvenli başlatma davranışı korumak için kullanmak **/ZC: threadsafeınit** seçeneği. Bu iş parçacığı güvenliği gerekli olmadığını biliyorsanız, statik yerel bildirimleri etrafında biraz daha küçük, daha hızlı kod oluşturmak için bu seçeneği kullanın.
 
-İş parçacığı statik yerel değişkenler iş parçacığı yerel depolaması (TLS) statik zaten başlatılmış olan verimli yürütme sağlamak için dahili olarak kullanın. Bu özellik uyarlamasını Windows Vista ve sonraki işletim sistemlerinde Windows işletim sistemi desteği işlevlerini kullanır. Böylece verimliliği avantajı elde değil Windows XP, Windows Server 2003 ve daha eski işletim sistemleri bu desteği yok. Bu işletim sistemleri daha düşük bir sınır de yüklenebilir TLS bölüm sayısına sahip. TLS aşan bir çökme bölüm sınır neden olabilir. Bu, özellikle eski işletim sistemlerinde çalıştırmalısınız kod kodunuzu bir sorun ise kullanın **/Zc:threadSafeInit-** iş parçacığı başlatma kodunu devre dışı bırakmak için.
+İş parçacığı güvenli statik yerel değişkenler iş parçacığı yerel depolama (TLS) statik zaten başlatılmış, etkili çalıştırma sağlamak için dahili olarak kullanın. Bu özellik uygulamasını Windows Vista ve sonraki işletim sistemlerinde Windows işletim sistemi desteği işlevlerini kullanır. Verimliliği avantajı elde ederim için Windows XP, Windows Server 2003 ve önceki işletim sistemleri bu destek yok. Bu işletim sistemlerini, daha düşük bir sınır yüklenebilen TLS bölüm sayısına de sahip. Bölüm sınırı aşan TLS kilitlenmeye neden olabilir. Bu, özellikle daha eski işletim sistemlerinde çalışması gereken kod kodunuzda bir sorun ise kullanın **/ZC: threadsafeınit** iş parçacığı açısından güvenli başlatma kodu devre dışı bırakmak için.
 
-Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Gelen **yapılandırmaları** açılır menü, seçin **tüm yapılandırmaları**.
+1. Gelen **yapılandırmaları** açılır menü öğesini **yapılandırmalarında**.
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/Zc:threadSafeInit** veya **/Zc:threadSafeInit-** ve ardından **Tamam**.
+1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: threadsafeınit** veya **/ZC: threadsafeınit** seçip **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

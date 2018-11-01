@@ -1,12 +1,6 @@
 ---
-title: MFC modüllerinin durum verisini yönetme | Microsoft Docs
-ms.custom: ''
+title: MFC Modüllerinin Durum Verisini Yönetme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - global state [MFC]
 - data management [MFC], MFC modules
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - multiple modules [MFC]
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1077128ec417ab0cd3e1fb0d5b7e57e1ffaec37
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 757fe9d8b4c9985cd3fa36d399cdc92057c03011
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442805"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562220"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
 

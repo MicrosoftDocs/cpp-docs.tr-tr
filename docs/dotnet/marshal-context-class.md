@@ -1,28 +1,18 @@
 ---
-title: marshal_context sınıfı | Microsoft Docs
-ms.custom: ''
+title: marshal_context Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - marshal_context
-dev_langs:
-- C++
 helpviewer_keywords:
 - marshal_context class [C++]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: fc3399ee088a0430ca857c3e421742ee484d337a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0e25aee0996b0cd16ca92566da22d377b762d7bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594538"
 ---
 # <a name="marshalcontext-class"></a>marshal_context Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1064 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1064
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1064
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1064
 ms.assetid: 7141e66e-cde6-4173-84df-a391f3ebcdd1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4240bf2c553957e73d5ead0bdd03ea129450645b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71213391032989e5faf8889761b29194928125a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093005"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463368"
 ---
 # <a name="nmake-fatal-error-u1064"></a>NMAKE Önemli Hatası U1064
 

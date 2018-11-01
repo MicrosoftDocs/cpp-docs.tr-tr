@@ -1,23 +1,13 @@
 ---
-title: C tanımları ve bildirimleri | Microsoft Docs
-ms.custom: ''
+title: C Tanımları ve Bildirimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 575f0c9b-5554-4346-be64-b2129ca9227f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fcb83395313609fc5c9bad673416131b2332552
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0dbd74dd54b6ee80fc1f02cf1cb07379a778be0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50427969"
 ---
 # <a name="c-declarations-and-definitions"></a>C Tanımları ve Bildirimleri
 

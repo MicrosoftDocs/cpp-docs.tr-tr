@@ -1,8 +1,6 @@
 ---
-title: CONCURRENCY::Direct3D ad alanı işlevleri (AMP) | Microsoft Docs
-ms.custom: ''
+title: CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 ms.date: 08/31/2018
-ms.topic: reference
 f1_keywords:
 - amp/Concurrency::direct3d::abs
 - amp/Concurrency::direct3d::countbits
@@ -22,19 +20,13 @@ f1_keywords:
 - amp/Concurrency::direct3d::smoothstep
 - amp/Concurrency::direct3d::step
 - amp/Concurrency::direct3d::umin
-dev_langs:
-- C++
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fc56ca800b3e6028d26a64be7323a681589430e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b721d19cd51a9eb1d07de8898b18728854decb4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426061"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519745"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 

@@ -1,15 +1,9 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: MFC kullanıcı arabirimi iş parçacıkları oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Çoklu iş parçacığı kullanımı: MFC kullanıcı arabirimi iş parçacıkları oluşturma'
 ms.date: 08/27/2018
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
 f1_keywords:
 - CREATE_SUSPENDED
 - SECURITY_ATTRIBUTES
-dev_langs:
-- C++
 helpviewer_keywords:
 - multithreading [C++], user interface threads
 - threading [C++], creating threads
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - user interface threads [C++]
 - threading [MFC], user interface threads
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06158f50364320c96223d5627386a059761baa77
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e618f11e3c574e5f53dff150beeb313d26fd4a6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566835"
 ---
 # <a name="multithreading-creating-mfc-user-interface-threads"></a>Çoklu iş parçacığı kullanımı: MFC kullanıcı arabirimi iş parçacıkları oluşturma
 
@@ -43,7 +33,7 @@ Bir kullanıcı arabirimi iş parçacığı oluşturulurken gerçekleştirmelisi
 |[ONIDLE](../mfc/reference/cwinthread-class.md#onidle)|İş parçacığına özgü boşta kalma süresi işlemini gerçekleştirin. Genellikle geçersiz kılınmaz.|
 |[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)|İletileri için dağıtılmadan önce filtrelemek `TranslateMessage` ve `DispatchMessage`. Genellikle geçersiz kılınmaz.|
 |[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)|İş parçacığının ve ileti işleyici tarafından oluşturulan yakalanamayan özel durum uğratabilir. Genellikle geçersiz kılınmaz.|
-|[Çalıştırma](../mfc/reference/cwinthread-class.md#run)|Denetleme işlevi iş parçacığı için. İleti pompası içerir. Nadiren geçersiz kılınmış.|
+|[Çalıştır](../mfc/reference/cwinthread-class.md#run)|Denetleme işlevi iş parçacığı için. İleti pompası içerir. Nadiren geçersiz kılınmış.|
 
 MFC sağlayan iki sürümünü `AfxBeginThread` parametresi aşırı yükleme yoluyla: biri yalnızca bir kullanıcı arabirimi iş parçacıkları veya çalışan iş parçacıkları oluşturabilirsiniz ve bir çalışan iş parçacıkları oluşturabilirsiniz. İkinci aşırı yüklemesi, kullanıcı arabirimi iş parçacığı için çağrı [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), aşağıdaki bilgileri sağlayarak:
 

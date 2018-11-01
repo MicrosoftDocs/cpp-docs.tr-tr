@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0019 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0019
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0019
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0019
 ms.assetid: 5390a62b-aacf-4bc8-b9d7-08f1e0233423
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06ea422a272b43f7e6226b330a210c0c6ea3f977
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d99750efcfc400cc85a865ebd30a8c2a3da1d07e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038093"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620800"
 ---
 # <a name="project-build-error-prj0019"></a>Proje Derleme Hatası PRJ0019
 

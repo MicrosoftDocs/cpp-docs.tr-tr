@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2531 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2531
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2531
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2531
 ms.assetid: c49afe15-55f8-4dc8-ac01-bf653622a7db
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05af2bd4f1dc3403f5ecbb3254564292698624aa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 03e055e9830b8168fb19885a04c8d40d24713d23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045100"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567512"
 ---
 # <a name="compiler-error-c2531"></a>Derleyici Hatası C2531
 

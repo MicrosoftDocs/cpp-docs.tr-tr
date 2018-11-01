@@ -1,12 +1,6 @@
 ---
-title: İleti gönderme ve alma | Microsoft Docs
-ms.custom: ''
+title: İleti Gönderme ve Alma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows messages [MFC], handling in MFC
 - control-notification messages [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - MFC, messages
 - messages [MFC], sending
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e28f35fc87b78ac4e04df0f8147d76571c51320e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 95a54f3a518be19c7ae6f001e3096b825e64c0c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438827"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447404"
 ---
 # <a name="message-sending-and-receiving"></a>İleti Gönderme ve Alma
 

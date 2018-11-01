@@ -1,32 +1,22 @@
 ---
-title: Safeıntexception sınıfı | Microsoft Docs
-ms.custom: ''
+title: SafeIntException Sınıfı
 ms.date: 10/22/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - SafeIntException Class
 - SafeIntException
 - SafeIntException.SafeIntException
 - SafeIntException::SafeIntException
-dev_langs:
-- C++
 helpviewer_keywords:
 - SafeIntException class
 - SafeIntException, constructor
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2a1890bc20c0737007075656dcbefa20ad81a9bf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 80a1573c2f43b1f4b31731083974f87ba389fac2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068066"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566666"
 ---
 # <a name="safeintexception-class"></a>SafeIntException Sınıfı
 

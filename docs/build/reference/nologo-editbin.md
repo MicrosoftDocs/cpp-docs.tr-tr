@@ -1,29 +1,19 @@
 ---
-title: -NOLOGO (EDITBIN) | Microsoft Docs
-ms.custom: ''
+title: /NOLOGO (EDITBIN)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /nologo
-dev_langs:
-- C++
 helpviewer_keywords:
 - -NOLOGO editbin option
 - /NOLOGO editbin option
 - NOLOGO editbin option
 ms.assetid: 909a1909-0c99-4bce-8013-bf161d645f19
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9b800e827daebbe7656a69888617a74081eb3ef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 58d2139c2646564b54a378cab0ca258c5fde4891
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596501"
 ---
 # <a name="nologo-editbin"></a>/NOLOGO (EDITBIN)
 

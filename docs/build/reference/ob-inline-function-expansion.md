@@ -1,16 +1,10 @@
 ---
-title: -Ob (satır içi işlev genişletmesi) | Microsoft Docs
-ms.custom: ''
+title: /Ob (Satır İçi İşlev Genişletmesi)
 ms.date: 09/25/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.InlineFunctionExpansion
 - VC.Project.VCCLCompilerTool.InlineFunctionExpansion
 - /ob
-dev_langs:
-- C++
 helpviewer_keywords:
 - inline functions, function expansion compiler option [C++]
 - -Ob1 compiler option [C++]
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43c67e4919680167bdde5e9f8ad9426229956fad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a53069c44e72d0d873ccb0b600c48480527d111f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582672"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob (Satır İçi İşlev Genişletmesi)
 
@@ -83,7 +73,7 @@ Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) i
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.InlineFunctionExpansion%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.InlineFunctionExpansion%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

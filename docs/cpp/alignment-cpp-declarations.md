@@ -1,23 +1,13 @@
 ---
-title: Hizalama (C++ bildirimleri) | Microsoft Docs
-ms.custom: ''
+title: Hizalama (C++ Bildirimleri)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c68708547187fd9c3dde450ad9be6e13e4adcde
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 644a1f5d476fc35093c99b26e2d0685ad041b0af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563117"
 ---
 # <a name="alignment-c-declarations"></a>Hizalama (C++ Bildirimleri)
 

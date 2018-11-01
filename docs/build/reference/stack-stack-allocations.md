@@ -1,16 +1,10 @@
 ---
-title: -STACK (yığın ayırmaları) | Microsoft Docs
-ms.custom: ''
+title: /STACK (Yığın Ayırmaları)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.StackReserveSize
 - VC.Project.VCLinkerTool.StackCommitSize
 - /stack
-dev_langs:
-- C++
 helpviewer_keywords:
 - STACK linker option
 - -STACK linker option
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - /STACK linker option
 - stack, setting size
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7bd61f1cd56043dd7e2a2234630d722850850735
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2ccdd33c77f5c7bfa9ee5dcd041f6778e8eb85d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703345"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572035"
 ---
 # <a name="stack-stack-allocations"></a>/STACK (Yığın Ayırmaları)
 

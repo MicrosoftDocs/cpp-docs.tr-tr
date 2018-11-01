@@ -1,16 +1,10 @@
 ---
-title: Kullanılmayan çağırma kuralları | Microsoft Docs
-ms.custom: ''
+title: Kullanılmayan Çağırma Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __fortran
 - __pascal
 - __syscall
-dev_langs:
-- C++
 helpviewer_keywords:
 - WINAPI [C++]
 - __syscall keyword [C++]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - __fortran keyword [C++]
 - calling conventions, obsolete
 ms.assetid: a91fc665-034a-48ce-b6bd-d27125f308a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eec6f8370103ed0256471c009d6e97cc693a1cd7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 86c75c779158d9f191dd015410cf16c9ce25690d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587999"
 ---
 # <a name="obsolete-calling-conventions"></a>Kullanılmayan Çağırma Kuralları
 

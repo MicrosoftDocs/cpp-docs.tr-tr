@@ -1,28 +1,18 @@
 ---
-title: equal_to yapısı | Microsoft Docs
-ms.custom: ''
+title: equal_to Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::equal_to
-dev_langs:
-- C++
 helpviewer_keywords:
 - equal_to function
 - equal_to struct
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 78ee4e040bc70b3ababe357fea2c6a279fb1b09a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ffea2a9329e08796c49aa06888b8cc9a6dac8642
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105442"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607434"
 ---
 # <a name="equalto-struct"></a>equal_to Yapısı
 

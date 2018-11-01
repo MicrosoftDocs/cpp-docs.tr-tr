@@ -1,16 +1,10 @@
 ---
-title: -D (önişlemci tanımları) | Microsoft Docs
-ms.custom: ''
+title: /D (Önişlemci Tanımları)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCNMakeTool.PreprocessorDefinitions
 - VC.Project.VCCLCompilerTool.PreprocessorDefinitions
 - /d
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessor definition symbols
 - constants, defining
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - -D compiler option [C++]
 - D compiler option [C++]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3dc4da4235b57e9abd8e5f32b8f3e696bd1ce2de
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 21836d2842427581cc5019a42c563a78356d1ec2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397188"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620512"
 ---
 # <a name="d-preprocessor-definitions"></a>/D (Önişlemci Tanımları)
 
@@ -82,7 +72,7 @@ CL /DTEST=%% TEST.C
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PreprocessorDefinitions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PreprocessorDefinitions%2A>.
 
 ## <a name="example"></a>Örnek
 

@@ -1,25 +1,15 @@
 ---
-title: Basit görevler | Microsoft Docs
-ms.custom: ''
+title: Basit Görevler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - lightweight tasks
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2d7624ce66513bd1447bc264e6c6cc29eab940c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7e155b82e963e7bf3f19fa44c66e4c22b8c602e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481438"
 ---
 # <a name="lightweight-tasks"></a>Basit Görevler
 

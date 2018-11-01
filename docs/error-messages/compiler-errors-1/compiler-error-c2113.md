@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2113 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2113
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2113
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2113
 ms.assetid: be85cb5e-b0ed-4fc9-b062-032bf7f59a4e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94dd75ad7df782a92dfe359ebabf0abe1175ad75
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d3ad5167e1820a0be9fa49989919b06fd2378e37
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096179"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434352"
 ---
 # <a name="compiler-error-c2113"></a>Derleyici Hatası C2113
 

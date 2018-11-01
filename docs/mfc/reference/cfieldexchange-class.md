@@ -1,31 +1,21 @@
 ---
-title: CFieldExchange sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFieldExchange sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFieldExchange
 - AFXDB/CFieldExchange
 - AFXDB/CFieldExchange::IsFieldType
 - AFXDB/CFieldExchange::SetFieldType
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFieldExchange [MFC], IsFieldType
 - CFieldExchange [MFC], SetFieldType
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d36a080373f5897e1a163e45a635653f1da89d19
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e039a2deaf3372af5daac8fddd8f3a0672719f88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588233"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange sınıfı
 

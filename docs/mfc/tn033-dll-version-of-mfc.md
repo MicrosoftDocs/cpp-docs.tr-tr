@@ -1,14 +1,8 @@
 ---
-title: "TN033: MFC'nin DLL sürümü | Microsoft Docs"
-ms.custom: ''
+title: "TN033: MFC'nin DLL Sürümü"
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.dll
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC DLLs [MFC], writing MFC extension DLLS
 - AFXDLL library
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - DLL version of MFC [MFC]
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23b92b0bf8c71a9038a8c8b2b77bfac8feac8822
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 89a9fddd6f12f92d18bcd6fc75f117beb14746f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571827"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL Sürümü
 

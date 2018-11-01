@@ -1,10 +1,6 @@
 ---
-title: CMFCTabDropTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCTabDropTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCTabDropTarget
 - AFXBASETABCTRL/CMFCTabDropTarget
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver
 - AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx
 - AFXBASETABCTRL/CMFCTabDropTarget::Register
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDragEnter
 - CMFCTabDropTarget [MFC], OnDragLeave
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca9b67737933ceeb59861234759aa2652b6b985e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd68179be21fec85c0ebb901c2a8c9a4491ff401
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057458"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534840"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 

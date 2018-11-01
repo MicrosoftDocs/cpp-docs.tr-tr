@@ -1,12 +1,6 @@
 ---
-title: BSCMAKE başvurusu | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Başvurusu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - BSCMAKE, reference
 - Microsoft Browse Information Maintenance Utility
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - bsc files, building
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9747d45f6593a689c8330b537945831735fb5e44
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1f321d51d1b880ea634c835567767c528aca041b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724301"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509480"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE Başvurusu
 

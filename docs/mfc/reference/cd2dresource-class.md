@@ -1,10 +1,6 @@
 ---
-title: CD2DResource sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DResource sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DResource
 - AFXRENDERTARGET/CD2DResource
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DResource::ReCreate
 - AFXRENDERTARGET/CD2DResource::m_bIsAutoDestroy
 - AFXRENDERTARGET/CD2DResource::m_pParentTarget
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DResource [MFC], CD2DResource
 - CD2DResource [MFC], Create
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CD2DResource [MFC], m_bIsAutoDestroy
 - CD2DResource [MFC], m_pParentTarget
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e2ee4f7f5f1e3e6126cee6e5822468a7487eb1f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a4846fb8ea34a3d6a83ae892eabee74f4a48cd6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586387"
 ---
 # <a name="cd2dresource-class"></a>CD2DResource sınıfı
 

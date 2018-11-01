@@ -1,34 +1,24 @@
 ---
-title: Roınitializewrapper sınıfı | Microsoft Docs
-ms.custom: ''
+title: RoInitializeWrapper Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper
 - corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::HRESULT
 - corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper
 - corewrappers/Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::RoInitializeWrapper class
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::operator HRESULT operator
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper, constructor
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper, destructor
 ms.assetid: 4055fbe0-63a7-4c06-b5a0-414fda5640e5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8a0eeb4b7da53b5722733ba0b0116cf03dab4a29
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b43d5bb2f553d298584ab2ae497c22637d3beb0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053453"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570566"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı
 

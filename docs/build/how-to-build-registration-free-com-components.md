@@ -1,25 +1,15 @@
 ---
-title: 'Nasıl yapılır: kayıt gerektirmeyen COM bileşenlerini derleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM components, registration-free
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0a9e1769ff0ba9a0589f9d59c3d1f1ed2fc5bcb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4f4ebf121b761c37969fa3f9788bda52d913f340
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463537"
 ---
 # <a name="how-to-build-registration-free-com-components"></a>Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme
 

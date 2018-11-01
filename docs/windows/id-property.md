@@ -1,26 +1,15 @@
 ---
-title: ID özelliği | Microsoft Docs
-ms.custom: ''
+title: ID Özelliği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ID property
 ms.assetid: 756ea7ad-d39b-490d-a2ba-163c434577f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 277f60b48f32ea2378a2011f61407ce4713659ee
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9721f4105a47703f724c31ae0050b9c87d63895c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072973"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557904"
 ---
 # <a name="id-property"></a>ID Özelliği
 

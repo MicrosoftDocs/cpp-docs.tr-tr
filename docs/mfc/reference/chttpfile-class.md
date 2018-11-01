@@ -1,10 +1,6 @@
 ---
-title: CHttpFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHttpFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHttpFile
 - AFXINET/CHttpFile
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXINET/CHttpFile::QueryInfoStatusCode
 - AFXINET/CHttpFile::SendRequest
 - AFXINET/CHttpFile::SendRequestEx
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHttpFile [MFC], CHttpFile
 - CHttpFile [MFC], AddRequestHeaders
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5aef38ffe35f8aaf059ca88a0833b9e04b0c0ee9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1fa1b63ed045c176841565473476185bb15999e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564469"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 

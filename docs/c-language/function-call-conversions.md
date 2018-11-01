@@ -1,27 +1,17 @@
 ---
-title: İşlev çağrısı dönüşümleri | Microsoft Docs
-ms.custom: ''
+title: İşlev Çağrısı Dönüşümleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function calls, converting
 - function calls, argument type conversions
 - functions [C], argument conversions
 ms.assetid: 04ea0f81-509a-4913-8b12-0937a81babcf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3a1a245511f0ab849c28ab9a03ba76903609643
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9fdc9ef467980a079198ca06360766d84a85923f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065666"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441151"
 ---
 # <a name="function-call-conversions"></a>İşlev Çağrısı Dönüşümleri
 

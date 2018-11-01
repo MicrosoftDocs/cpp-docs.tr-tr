@@ -1,39 +1,29 @@
 ---
-title: Derleyici Hatası C3445 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3445
 ms.date: 04/10/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3445
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3445
 ms.assetid: 0d272bfc-136b-4025-a9ba-5e4eea5f8215
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c37f04b907183b883772fd144ae0179683f088f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2eddeb5a56c953ca0864e29187fbe28c53bdee24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256772"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574220"
 ---
 # <a name="compiler-error-c3445"></a>Derleyici Hatası C3445
 
-> Copy-listesi-başlatılması '*türü*' açık Oluşturucu kullanamazsınız
+> kopya listesi başlatmasında, '*türü*' açık bir Oluşturucu kullanılamaz
 
-ISO C ++ 17 standart göre derleyici kopyalama listesi başlatma aşırı yük çözüm için açık bir oluşturucu göz önünde bulundurmanız gereken ancak bu aşırı gerçekte seçilirse hatayla yükseltmeniz gerekir.
+Derleyici ISO C ++ 17 standardına göre açık bir oluşturucu aşırı yükleme çözünürlüğü içinde kopya listesi başlatması için göz önünde bulundurmanız gereken ancak aşırı yükleyen gerçekten seçilirse hata yükseltmeniz gerekir.
 
-Visual Studio 2017 içinde başlayarak, derleyici tarafından Visual Studio 2015 bulunamadı başlatıcı listesi kullanılarak nesne oluşturma ilgili hatalar bulur. Bu hatalar kilitlenmelerine veya çalışma zamanında tanımsız davranış neden olabilir.
+Visual Studio 2017'den itibaren derleyici bir başlatıcı listesi kullanılarak nesne oluşturma ilgili olan ve Visual Studio 2015 tarafından bulunamadı hataları bulur. Bu hatalar sistem çökmeleri ya da çalışma zamanında tanımsız davranışa neden olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3445 oluşturur.
+Aşağıdaki örnek, C3445 oluşturur.
 
 ```cpp
 // C3445.cpp

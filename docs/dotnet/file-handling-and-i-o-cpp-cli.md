@@ -1,12 +1,6 @@
 ---
-title: Dosya işleme ve g / Ç (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Dosya işleme ve g / Ç (C + +/ CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - .NET Framework [C++], file handling
 - files [C++], .NET Framework and
@@ -30,17 +24,12 @@ helpviewer_keywords:
 - files [C++], text
 - text files, writing in C++
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f6fa8dcf1488b693b53cde591c548122767f1af7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 697d193f2239d9d22e8d94d479bbf24784e2c6ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585659"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 .NET Framework kullanan çeşitli dosya işlemlerini gösterir.

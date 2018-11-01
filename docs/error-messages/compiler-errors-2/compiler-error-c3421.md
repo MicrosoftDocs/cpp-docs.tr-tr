@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3421 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3421
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3421
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3421
 ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 815fc64e1f2cc80440e188d944827820bd55383b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 399224a3d091a26066a03df0c77511997ae2403c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448912"
 ---
 # <a name="compiler-error-c3421"></a>Derleyici Hatası C3421
 

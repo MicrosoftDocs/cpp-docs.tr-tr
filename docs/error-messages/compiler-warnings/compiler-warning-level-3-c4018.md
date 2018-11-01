@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4018 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4018
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4018
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4018
 ms.assetid: 6e8cbb04-d914-4319-b431-cbc2fbe40eb1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99ca94a47925a64c91077ad5b363e953def186b1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6436f62a06cbe931ca5b42751d60507f21675c5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041330"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556552"
 ---
 # <a name="compiler-warning-level-3-c4018"></a>Derleyici Uyarısı (Düzey 3) C4018
 

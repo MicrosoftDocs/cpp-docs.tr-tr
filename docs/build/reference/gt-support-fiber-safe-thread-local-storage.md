@@ -1,15 +1,9 @@
 ---
-title: -GT (Fiber-güvenli iş parçacığı-yerel depolamayı destekle) | Microsoft Docs
-ms.custom: ''
+title: /GT (Fiber-Güvenli İş Parçacığı-Yerel Depolamayı Destekle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableFiberSafeOptimizations
 - /gt
-dev_langs:
-- C++
 helpviewer_keywords:
 - /GT compiler option [C++]
 - GT compiler option [C++]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - -GT compiler option [C++]
 - fiber-safe static thread-local storage compiler option [C++]
 ms.assetid: 071fec79-c701-432b-9970-457344133159
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eeec9ddce36777fc6fcb15b30a864f1c04a7b09b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 22f9df6248b0ee1af2ef999bbf0dba2e716c9189
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700849"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557917"
 ---
 # <a name="gt-support-fiber-safe-thread-local-storage"></a>/GT (Fiber-Güvenli İş Parçacığı-Yerel Depolamayı Destekle)
 
@@ -57,7 +47,7 @@ Bir fiber bir yığın ve kayıt bağlam oluşur ve çeşitli iş parçacıklar�
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFiberSafeOptimizations%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFiberSafeOptimizations%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

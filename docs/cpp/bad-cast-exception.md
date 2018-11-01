@@ -1,29 +1,19 @@
 ---
-title: bad_cast özel durumu | Microsoft Docs
-ms.custom: ''
+title: bad_cast Özel Durumu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - bad_cast
 - bad_cast_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bd5bb63e075303856d444cb08c2c1f3abe990b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 028fa8cc90b33aca6a37fb3b7f58b8c5fad81bd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573359"
 ---
 # <a name="badcast-exception"></a>bad_cast Özel Durumu
 

@@ -1,29 +1,19 @@
 ---
-title: __stdcall | Microsoft Docs
-ms.custom: ''
+title: __stdcall
 ms.date: 10/10/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __stdcall_cpp
 - __stdcall
 - _stdcall
-dev_langs:
-- C++
 helpviewer_keywords:
 - __stdcall keyword [C++]
 ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06eafcd4303e01be523554f2a164e6cb14f79a26
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b9efac6f729a78db945ff3bd9ab16ebe315b7a5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560647"
 ---
 # <a name="stdcall"></a>__stdcall
 

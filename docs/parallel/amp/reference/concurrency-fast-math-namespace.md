@@ -1,25 +1,15 @@
 ---
-title: CONCURRENCY::fast_math Namespace | Microsoft Docs
-ms.custom: ''
+title: Concurrency::fast_math Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_math/Concurrency::fast_math
-dev_langs:
-- C++
 ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd39e2057225aa09fd0bf0907e90abbf79b16172
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5ca81d056ddf431b502f868f8a76959381b26260
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410292"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455984"
 ---
 # <a name="concurrencyfastmath-namespace"></a>Concurrency::fast_math Ad Alanı
 

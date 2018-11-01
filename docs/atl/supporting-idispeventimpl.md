@@ -1,14 +1,8 @@
 ---
-title: Idispeventımpl destekleme | Microsoft Docs
-ms.custom: ''
+title: Idispeventımpl destekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - IDispEventImpl
-dev_langs:
-- C++
 helpviewer_keywords:
 - event sink maps, declaring
 - IDispEventImpl class, advising and unadvising
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - BEGIN_SINK_MAP macro
 - IDispEventImpl class, declaring
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7d7bfd2690cf8f1ed692e6e21bf05b56e2280ce0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 909f62c88908d7dabf4141fa8ea42be7ea1facb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055669"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517812"
 ---
 # <a name="supporting-idispeventimpl"></a>Idispeventımpl destekleme
 

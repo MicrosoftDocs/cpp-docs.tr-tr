@@ -1,29 +1,19 @@
 ---
-title: Vektör yapıcı ve paralel hale getirici iletileri | Microsoft Docs
-ms.custom: ''
+title: Vektör Yapıcı ve Paralel Hale Getirici İletileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C5011
 - C5002
 - C5021
 - C5001
 - C5012
-dev_langs:
-- C++
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 13067d12d2f8366f46284034589091eca188f2b1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7973265ff7e5c26cb43e37636f41dd06f74af7a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557534"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 

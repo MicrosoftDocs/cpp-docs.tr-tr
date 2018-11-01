@@ -1,27 +1,17 @@
 ---
-title: Uygulama bilgileri ve Yönetimi | Microsoft Docs
-ms.custom: ''
+title: Uygulama Bilgileri ve Yönetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
-dev_langs:
-- C++
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1867f044c143fc0e5fbb06705bf45b8fa729a5cc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 71b5eb9c97b8c6370a08281fdf4be7074a579f8f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596670"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 

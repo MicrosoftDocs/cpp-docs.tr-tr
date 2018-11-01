@@ -1,19 +1,17 @@
 ---
-title: '&lt;codecvt&gt; sabit listeleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;codecvt&gt; sabit listeleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - codecvt/std::codecvt_mode
 ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
 helpviewer_keywords:
 - std::codecvt_mode
-ms.openlocfilehash: 612570680bfacb2bc9c237c60b3e9f6c4f8266a8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0b43c7c148076e96dd0d3f444ffa8b6bad7c8b29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725341"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566162"
 ---
 # <a name="ltcodecvtgt-enums"></a>&lt;codecvt&gt; sabit listeleri
 

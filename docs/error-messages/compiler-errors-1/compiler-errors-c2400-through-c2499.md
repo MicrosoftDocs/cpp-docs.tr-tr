@@ -1,10 +1,6 @@
 ---
-title: Derleyici hataları C2400 ile c2499 arasındaki | Microsoft Docs
-ms.custom: ''
+title: Derleyici hataları C2400 ile c2499 arasındaki
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2416
 - C2442
@@ -29,19 +25,13 @@ helpviewer_keywords:
 - C2478
 - C2481
 - C2497
-dev_langs:
-- C++
 ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fe45563f97bc5a2572d2dc22b3539412ceb7f18
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2ba9a55610c6f2e5e38733125414c6076e2c2f67
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082826"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476199"
 ---
 # <a name="compiler-errors-c2400-through-c2499"></a>Derleyici hataları C2400 ile c2499 arasındaki
 

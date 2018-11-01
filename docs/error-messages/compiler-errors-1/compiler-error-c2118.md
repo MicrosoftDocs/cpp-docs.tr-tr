@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2118 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2118
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2118
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2118
 ms.assetid: bf4315d0-f085-4323-b813-96ee61a13bde
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91e79e396f707dc1462b17d9dd470527f199ad10
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71b8273aaee52420f8a9c9c2dd2d015bea72ddf6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465942"
 ---
 # <a name="compiler-error-c2118"></a>Derleyici Hatası C2118
 

@@ -1,27 +1,17 @@
 ---
-title: Genel MFC konuları | Microsoft Docs
-ms.custom: ''
+title: Genel MFC Konuları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd44f91c01313b996f171a58f361d16aa126a2d9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ceedf5c02d92059058bc72942a74852eb8146d38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564729"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 

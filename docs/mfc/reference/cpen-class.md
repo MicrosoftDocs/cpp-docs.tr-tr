@@ -1,10 +1,6 @@
 ---
-title: CPen sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPen sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPen
 - AFXWIN/CPen
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXWIN/CPen::FromHandle
 - AFXWIN/CPen::GetExtLogPen
 - AFXWIN/CPen::GetLogPen
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPen [MFC], CPen
 - CPen [MFC], CreatePen
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CPen [MFC], GetExtLogPen
 - CPen [MFC], GetLogPen
 ms.assetid: 93175a3a-d46c-4768-be8d-863254f97a5f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ec2e3253b4d26bc6773ffc4005100edfbec1bff
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dc9216d10b620a79aa8e20e240791207f25a65c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077536"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531566"
 ---
 # <a name="cpen-class"></a>CPen sınıfı
 

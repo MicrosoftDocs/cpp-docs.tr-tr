@@ -1,28 +1,17 @@
 ---
-title: OLE DB Sağlayıcı Şablonu Mimarisi | Microsoft Docs
-ms.custom: ''
+title: OLE DB Sağlayıcı Şablonu Mimarisi
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB [C++], object model
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f91ee551ca9319450f970be059317feb6f4f0157
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 3f12eb7c7da449715116e88c9f78ee2e32fc327f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596176"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 

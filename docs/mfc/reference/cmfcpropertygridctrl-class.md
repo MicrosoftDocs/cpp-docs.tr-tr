@@ -1,10 +1,6 @@
 ---
-title: CMFCPropertyGridCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyGridCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridCtrl
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl
@@ -80,8 +76,6 @@ f1_keywords:
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnPropertyChanged
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnSelectCombo
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ValidateItemData
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], CMFCPropertyGridCtrl
 - CMFCPropertyGridCtrl [MFC], accSelect
@@ -156,16 +150,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3516614809ffda8e0659379ebfc8566ea7aee942
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 764a1fc33d91888c8c32111eca41666d9d0abbd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557332"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
 

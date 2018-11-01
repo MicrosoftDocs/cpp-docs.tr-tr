@@ -1,28 +1,18 @@
 ---
-title: Bildirimleri bir zengin düzenleme denetimi | Microsoft Docs
-ms.custom: ''
+title: Bir Zengin Düzenleme Denetiminden Bildirim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - messages [MFC], notification [MFC]
 - CRichEditCtrl class [MFC], notifications
 - rich edit controls [MFC], notifications
 - notifications [MFC], from CRichEditCtrl
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8898ac9d5aabebef42877ff063aaf93ceee77fad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 87168b6e58264b4257b7adfb32207ec1dd40729e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386807"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529213"
 ---
 # <a name="notifications-from-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetiminden Bildirim
 

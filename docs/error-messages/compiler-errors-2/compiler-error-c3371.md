@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3371 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3371
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3371
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3371
 ms.assetid: f7ecf1aa-ed0a-4f73-81e5-62cf98f88ea1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6156f305ce49266366ffc42504232614c6987eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7967f6fa92434dcac35ec732f42a32531bfcce03
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565314"
 ---
 # <a name="compiler-error-c3371"></a>Derleyici Hatası C3371
 

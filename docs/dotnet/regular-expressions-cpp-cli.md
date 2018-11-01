@@ -1,12 +1,6 @@
 ---
-title: Normal ifadeler (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Normal İfadeler (C++/CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - regular expressions [C++]
 - .NET Framework [C++], regular expressions
@@ -34,17 +28,12 @@ helpviewer_keywords:
 - data [C++], formatting
 - regular expressions [C++], validating data formatting
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 7f9937d9f93af6179d890f1e9160dd8900cd9f14
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ace05ffc0c9b0357e40f7a2520921c672014b9ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604340"
 ---
 # <a name="regular-expressions-ccli"></a>Normal İfadeler (C++/CLI)
 

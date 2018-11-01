@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK2020 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK2020
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2020
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK2020
 ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90088d311bac7ee4ce59797d5dcbe148a24963f6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7290a90dfd92d84c4632e7f9dd38d36eccd4ac27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034973"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499864"
 ---
 # <a name="linker-tools-error-lnk2020"></a>Bağlayıcı Araçları Hatası LNK2020
 

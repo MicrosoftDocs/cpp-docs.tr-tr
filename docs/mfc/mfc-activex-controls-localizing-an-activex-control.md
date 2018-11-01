@@ -1,31 +1,21 @@
 ---
-title: 'MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - LocaleID
 - AfxOleRegisterTypeLib
-dev_langs:
-- C++
 helpviewer_keywords:
 - localization, ActiveX controls
 - MFC ActiveX controls [MFC], localizing
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb31eb15a61f1d4cbee7ba7402de508a84124461
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 0a9c45873f784cf639ccf7e886f65527a6a78f2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613218"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme
 

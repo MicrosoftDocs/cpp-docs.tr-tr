@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1021 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1021
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1021
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1021
 ms.assetid: e23171f4-ca6b-40c0-a913-a2edc6fa3766
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fcb464a676b47baa4589c17269819d3a84d058fe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 35b94e6cea177121c38d06706b42437ec610c38a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029918"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587115"
 ---
 # <a name="fatal-error-c1021"></a>Önemli hata C1021
 

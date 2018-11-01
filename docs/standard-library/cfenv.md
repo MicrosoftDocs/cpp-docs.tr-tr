@@ -1,27 +1,17 @@
 ---
-title: '&lt;cfenv&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cfenv&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1003d3037765ef501748a1a9ff6590bf072fc9b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0eb54b0fc86e7b205559b243eac6d64da74b2f98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487951"
 ---
 # <a name="ltcfenvgt"></a>&lt;cfenv&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<fenv.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<fenv.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +22,7 @@ Standart C Kitaplığı üstbilgi içeren \<fenv.h > ve ilişkili adlarıyla ekl
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

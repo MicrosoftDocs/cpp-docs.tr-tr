@@ -1,26 +1,16 @@
 ---
-title: Yan etkileri | Microsoft Docs
-ms.custom: ''
+title: Yan Etkiler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - expression evaluation, side effects
 - side effects in expression evaluation
 ms.assetid: d9b3004a-830e-43a0-bea5-8989d501d670
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6edd636ddb4f59ea0df32846869afc5400edb6dc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 97fbb2bc382216e27139a01d1e803a15bd16160b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582574"
 ---
 # <a name="side-effects"></a>Yan Etkiler
 

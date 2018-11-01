@@ -1,27 +1,17 @@
 ---
-title: Hazırlama | Microsoft Docs
-ms.custom: ''
+title: Hazırlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - marshaling, COM interop
 - marshaling
 - COM interfaces, marshaling
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69f1b7e131b614aa4714f0c2be19fab79982031c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6129ba96cf3ac11339a8ab953e0838127f8fb3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108631"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569799"
 ---
 # <a name="marshaling"></a>Hazırlama
 

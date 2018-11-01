@@ -1,34 +1,24 @@
 ---
-title: Iquickactivateımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iquickactivateımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IQuickActivateImpl
 - ATLCTL/ATL::IQuickActivateImpl
 - ATLCTL/ATL::IQuickActivateImpl::GetContentExtent
 - ATLCTL/ATL::IQuickActivateImpl::QuickActivate
 - ATLCTL/ATL::IQuickActivateImpl::SetContentExtent
-dev_langs:
-- C++
 helpviewer_keywords:
 - activating ATL controls
 - controls [ATL], activating
 - IQuickActivateImpl class
 - IQuickActivate ATL implementation
 ms.assetid: aa80c056-1041-494e-b21d-2acca7dc27ea
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f65df09ffba45f61b967080e4bfd61ec3d2f912a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5dacdd4986580ca665d2199568584faafa8d6699
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560816"
 ---
 # <a name="iquickactivateimpl-class"></a>Iquickactivateımpl sınıfı
 

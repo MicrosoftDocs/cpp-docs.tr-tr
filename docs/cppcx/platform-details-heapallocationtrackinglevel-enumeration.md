@@ -1,26 +1,18 @@
 ---
-title: 'Platform::details:: heapallocationtrackinglevel numaralandırması | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::details:: heapallocationtrackinglevel numaralandırması'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Details::HeapAllocationTrackingLevel
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Details::HeapAllocationTrackingLevel Enumeration
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec5b9d2bcad76e220b94da53d517523e62121325
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 21bdcb58a6129abe9dfddbc3a4e136c22b852dd9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104244"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576495"
 ---
 # <a name="platformdetailsheapallocationtrackinglevel-enumeration"></a>Platform::details:: heapallocationtrackinglevel numaralandırması
 

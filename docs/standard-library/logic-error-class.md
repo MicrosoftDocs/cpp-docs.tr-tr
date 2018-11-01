@@ -1,31 +1,21 @@
 ---
-title: logic_error sınıfı | Microsoft Docs
-ms.custom: ''
+title: logic_error Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - stdexcept/std::logic_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - logic_error class
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc6d3e2ec67cc60e099016ac3d7cf4d213322ce2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 56470040365f1b1aa0e311f43937d7ec33f7f148
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579952"
 ---
 # <a name="logicerror-class"></a>logic_error Sınıfı
 
-Sınıf, mantıksal önkoşulları ihlalleri gibi program yürütülmeden önce hatalarını raporlamak için büyük olasılıkla algılanabilir oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.
+Sınıf, mantıksal önkoşulları ihlalleri gibi program yürütülmeden önce büyük olasılıkla algılanabilir rapor hataları için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyası **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
+Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyasıdır **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
 
 ## <a name="example"></a>Örnek
 

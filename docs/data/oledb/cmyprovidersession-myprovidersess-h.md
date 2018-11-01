@@ -1,33 +1,22 @@
 ---
-title: CCustomSession (CustomSess.H) | Microsoft Docs
-ms.custom: ''
+title: CCustomSession (CustomSess.H)
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - cmyprovidersession
 - myprovidersess.h
 - ccustomsession
 - customsess.h
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMyProviderSession class in MyProviderSess.H
 - OLE DB providers, wizard-generated files
 - CCustomSession class in CustomSess.H
 ms.assetid: d37ad471-cf05-49c5-aa47-cd10824d777f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 50576d93d8b86a070b928d62662a212d957e5c79
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 75d0c8d871ca736be5e2c33829296b2760092e14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568018"
 ---
 # <a name="ccustomsession-customsessh"></a>CCustomSession (CustomSess.H)
 

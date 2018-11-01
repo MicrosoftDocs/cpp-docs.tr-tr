@@ -1,12 +1,6 @@
 ---
-title: Ortak iletişim kutusu sınıfları | Microsoft Docs
-ms.custom: ''
+title: Ortak İletişim Kutusu Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog classes [MFC]
 - dialog boxes [MFC], Windows common dialogs
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - dialog classes [MFC], common
 - common dialog boxes [MFC]
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a937ded9fe356627e36ad0262e749446553aa91
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9e0ee68970b9ee3255ae72699dc185fc5de5a0f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577248"
 ---
 # <a name="common-dialog-classes"></a>Ortak İletişim Kutusu Sınıfları
 

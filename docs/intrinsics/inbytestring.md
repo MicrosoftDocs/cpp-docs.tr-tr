@@ -1,29 +1,19 @@
 ---
-title: __inbytestring | Microsoft Docs
-ms.custom: ''
+title: __inbytestring
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __inbytestring
 - __inbytestring_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - rep insb instruction
 - __inbytestring intrinsic
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e8b2fc0420862be3dd46eca09614ded57f06b7e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 494c57625bc6f93e09817171476267ff5fb27c3e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372270"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556786"
 ---
 # <a name="inbytestring"></a>__inbytestring
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2824 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2824
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2824
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2824
 ms.assetid: 5bd865f7-e0af-404e-80fe-e2b798b44a59
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 310156e82f69622a5c4a2315e204ccaa146e2c00
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 226fc078312a214c561e80064474ee237245c0f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559984"
 ---
 # <a name="compiler-error-c2824"></a>Derleyici Hatası C2824
 

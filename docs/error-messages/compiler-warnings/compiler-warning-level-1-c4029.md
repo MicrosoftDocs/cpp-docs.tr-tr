@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4029 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4029
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4026
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4029
 ms.assetid: a5c50bab-a189-44c9-aa5c-4377c7c8443a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e14664a40057ff76bf69863f7b0b08bb0e63d5d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 612a13bcbee2fe995f277543bcab1460ecc3590c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105181"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573029"
 ---
 # <a name="compiler-warning-level-1-c4029"></a>Derleyici Uyarısı (düzey 1) C4029
 

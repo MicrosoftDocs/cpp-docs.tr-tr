@@ -1,29 +1,19 @@
 ---
-title: out_of_memory sınıfı | Microsoft Docs
-ms.custom: ''
+title: out_of_memory Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - out_of_memory
 - AMPRT/out_of_memory
 - AMPRT/Concurrency::out_of_memory::out_of_memory
-dev_langs:
-- C++
 helpviewer_keywords:
 - out_of_memory class
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3da944d519964105bd43135d61b5874ad96a6670
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2d5d028739bdf1b1ac31fafe3719b7f3a98fbb07
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378832"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591904"
 ---
 # <a name="outofmemory-class"></a>out_of_memory Sınıfı
 

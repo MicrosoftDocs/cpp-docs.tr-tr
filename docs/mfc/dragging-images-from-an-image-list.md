@@ -1,28 +1,18 @@
 ---
-title: Görüntü listesinden görüntü sürükleme | Microsoft Docs
-ms.custom: ''
+title: Görüntü Listesinden Görüntü Sürükleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CImageList class [MFC], dragging images from
 - dragging images from image lists [MFC]
 - image lists [MFC], dragging images from
 - images [MFC], dragging from image lists
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb872cba298d6d18ab5287a285b22d2f568fa04b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9d42e9cdd8e2711fc6ed6aa0d08a19b8bc55d5f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562207"
 ---
 # <a name="dragging-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Sürükleme
 

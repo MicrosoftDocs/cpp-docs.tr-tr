@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2545 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2545
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2545
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2545
 ms.assetid: 51598eb9-0c57-4306-a0cd-3862980f3672
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a94dd8220922b1db9d4cb361487948cd5e3b4e51
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7f43ecfa74667c8cc6562bf1feaf4e8d0927f690
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029045"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576884"
 ---
 # <a name="compiler-error-c2545"></a>Derleyici Hatası C2545
 

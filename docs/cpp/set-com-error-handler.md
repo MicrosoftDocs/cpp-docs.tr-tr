@@ -1,25 +1,15 @@
 ---
-title: _set_com_error_handler | Microsoft Docs
-ms.custom: ''
+title: _set_com_error_handler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - _set_com_error_handler function
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 192707fe15560adb816b530ecf0e67713ae7d302
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7c7c9d572dcb8e1323df003e15e44adc8491c058
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092563"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567797"
 ---
 # <a name="setcomerrorhandler"></a>_set_com_error_handler
 

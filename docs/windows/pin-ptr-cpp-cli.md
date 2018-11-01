@@ -1,31 +1,21 @@
 ---
-title: pin_ptr (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: pin_ptr (C++/CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - pin_ptr_cpp
 - stdcli::language::pin_ptr
 - pin_ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - pinning pointers
 - pin_ptr keyword [C++]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e185f5456d2837c0a577b9c305cd717effaf6e06
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1e1d7959825284cc9c239147d33e54cc56352fa2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587284"
 ---
 # <a name="pinptr-ccli"></a>pin_ptr (C++/CLI)
 

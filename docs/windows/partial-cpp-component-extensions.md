@@ -1,29 +1,19 @@
 ---
-title: Kısmi (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Kısmi (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - partial_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - partial
 - C++/CX, partial
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8694c2fcad85bf3330ed9a5236bd53fa80ee8891
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f1837eb785f53e53a4b5ff621a898b0375cfc0fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592598"
 ---
 # <a name="partial--ccli-and-ccx"></a>Kısmi (C + +/ CLI ve C + +/ CX)
 

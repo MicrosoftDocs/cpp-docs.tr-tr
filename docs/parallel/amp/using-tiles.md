@@ -1,23 +1,13 @@
 ---
-title: Döşemeleri kullanma | Microsoft Docs
-ms.custom: ''
+title: Döşemeleri Kullanma
 ms.date: 06/28/2018
-ms.technology:
-- cpp-amp
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df2f449cce01dc2d0903ff802ffb94914b68bceb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 02a6f35801c30ce5e25e79a4e736e6c08776a1da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386274"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588526"
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 

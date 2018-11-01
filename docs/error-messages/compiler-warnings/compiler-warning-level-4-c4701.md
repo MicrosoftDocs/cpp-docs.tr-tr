@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4701 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4701
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4701
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4701
 ms.assetid: d7c76c66-1f3f-4d3c-abe4-5d94c84a5a1f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bea1c9eea9d3ef1ccc967ab5a563204ca850b889
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 375c8a766fb04f42a2fd0076223930bb2f845393
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592049"
 ---
 # <a name="compiler-warning-level-4-c4701"></a>Derleyici Uyarısı (düzey 4) C4701
 

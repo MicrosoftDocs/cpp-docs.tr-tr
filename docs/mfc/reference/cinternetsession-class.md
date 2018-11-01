@@ -1,10 +1,6 @@
 ---
-title: Cınternetsession sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cınternetsession sınıfı
 ms.date: 06/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CInternetSession
 - AFXINET/CInternetSession
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXINET/CInternetSession::OpenURL
 - AFXINET/CInternetSession::SetCookie
 - AFXINET/CInternetSession::SetOption
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInternetSession [MFC], CInternetSession
 - CInternetSession [MFC], Close
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14b5b68f33bd6d16f791784ceb24bf22a2806fa9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a3acc035a1781bd67cfc3b5561eb6dbdef41de72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586338"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 

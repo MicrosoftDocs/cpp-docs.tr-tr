@@ -1,23 +1,13 @@
 ---
-title: 3.2 kilit işlevleri | Microsoft Docs
-ms.custom: ''
+title: 3.2 Kilit İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 0ec855c6-55a9-49d7-bee4-5edae6e86a1b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97f125129d4b35586111f3d4092d457560aaebec
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c189ba5b1f0bb365b387b4b4b887cfdb74d1bf2c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573075"
 ---
 # <a name="32-lock-functions"></a>3.2 Kilit İşlevleri
 

@@ -1,27 +1,17 @@
 ---
-title: LOGBRUSH yapısı | Microsoft Docs
-ms.custom: ''
+title: LOGBRUSH Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - LOGBRUSH
-dev_langs:
-- C++
 helpviewer_keywords:
 - LOGBRUSH structure [MFC]
 ms.assetid: 1bf96768-52c5-4444-9bb8-d41ba2e27e68
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bef2c9b9219231b6a61bfad0a282b3af1b4e0c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0ca635690843c6dae9db05b0a8cc246cf38ce814
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579783"
 ---
 # <a name="logbrush-structure"></a>LOGBRUSH Yapısı
 

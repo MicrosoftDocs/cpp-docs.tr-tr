@@ -1,28 +1,17 @@
 ---
-title: Şema satır kümeleri ile meta verileri alma | Microsoft Docs
-ms.custom: ''
+title: Şema Satır Kümeleri ile Meta Verileri Alma
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - schema rowsets, getting OLE DB provider metadata
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a3bedc2057ed90376912838953bcd0a7a3a7106f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cb0f7813a351f272d5417955fb98719d889a64ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561219"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 

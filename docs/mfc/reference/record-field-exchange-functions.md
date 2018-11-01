@@ -1,10 +1,6 @@
 ---
-title: Kayıt alanı değişim işlevleri | Microsoft Docs
-ms.custom: ''
+title: Kayıt Alanı Değişim İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFXDB/RFX_Binary
 - AFXDB/RFX_Bool
@@ -36,8 +32,6 @@ f1_keywords:
 - AFXDB/DFX_Short
 - AFXDB/DFX_Single
 - AFXDB/DFX_Text
-dev_langs:
-- C++
 helpviewer_keywords:
 - DAO (Data Access Objects), record field exchange (DFX)
 - ODBC, bulk RFX data exchange functions [MFC]
@@ -51,16 +45,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8fba2e8d949745f694973f2d7b29c5244ab30db4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2970a722f79e9707f8721c1c8595bfd1d133f898
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058914"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525950"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 

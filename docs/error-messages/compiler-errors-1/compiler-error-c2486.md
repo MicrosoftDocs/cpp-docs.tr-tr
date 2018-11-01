@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2486 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2486
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2486
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2486
 ms.assetid: 436da349-6461-4e32-bfca-4f3e620108e2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 106d70c031a6981157875c86b1332bbe3be8a668
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8d745c03530f331da83b45c765a2cb4bb7d76d8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081734"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555667"
 ---
 # <a name="compiler-error-c2486"></a>Derleyici Hatası C2486
 

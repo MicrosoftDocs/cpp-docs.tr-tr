@@ -1,10 +1,6 @@
 ---
-title: CTabCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTabCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTabCtrl
 - AFXCMN/CTabCtrl
@@ -41,8 +37,6 @@ f1_keywords:
 - AFXCMN/CTabCtrl::SetMinTabWidth
 - AFXCMN/CTabCtrl::SetPadding
 - AFXCMN/CTabCtrl::SetToolTips
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTabCtrl [MFC], CTabCtrl
 - CTabCtrl [MFC], AdjustRect
@@ -78,16 +72,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3cfbcdf03a5c527d27d9bff8b37322011cba60bb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ae3daff2582b9e58cc325304fac449423fb673a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063516"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621435"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 

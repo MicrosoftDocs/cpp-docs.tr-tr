@@ -1,28 +1,18 @@
 ---
-title: nothrow (C++) | Microsoft Docs
-ms.custom: ''
+title: nothrow (C++)
 ms.date: 01/03/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - nothrow_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], nothrow
 - nothrow __declspec keyword
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65b8a0420bc996812eed5996757e05d50aafc030
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 88041b374cc48ac31c8990aa7f867ba25b33e1d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548141"
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 

@@ -1,26 +1,15 @@
 ---
-title: Standart dönüştürmeler ve örtük kutulama | Microsoft Docs
-ms.custom: ''
+title: Standart Dönüştürmeler ve Örtük Kutulama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - boxing, implicit
 ms.assetid: 33f7fc7d-5674-44a2-a859-0e6a04fae519
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 393554a43a647ef7582ef4a6c4d29ed11061d0c9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 086de06159b8d9195b4a4a275af8a95f56a46ce3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438023"
 ---
 # <a name="standard-conversions-and-implicit-boxing"></a>Standart Dönüştürmeler ve Örtük Kutulama
 

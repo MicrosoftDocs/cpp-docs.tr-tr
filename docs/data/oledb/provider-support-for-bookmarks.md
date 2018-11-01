@@ -1,12 +1,6 @@
 ---
-title: Yer işaretleri sağlayıcı desteği | Microsoft Docs
-ms.custom: ''
+title: Yer İşaretleri Sağlayıcı Desteği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRowsetLocate class, provider support for bookmarks
 - OLE DB provider templates, bookmarks
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ce718e84d50552e01c84e9d0df01c9f169bdf322
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4a0a0ea51cf6ac347cd79cb777f9cb6a51670063
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584634"
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 

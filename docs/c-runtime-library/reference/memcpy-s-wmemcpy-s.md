@@ -1,10 +1,6 @@
 ---
-title: memcpy_s, wmemcpy_s | Microsoft Docs
-ms.custom: ''
+title: memcpy_s, wmemcpy_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memcpy_s
 - wmemcpy_s
@@ -24,26 +20,20 @@ apitype: DLLExport
 f1_keywords:
 - wmemcpy_s
 - memcpy_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - memcpy_s function
 - wmemcpy_s function
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12bf97e596a7cb4e3befa4c0633a8ef2df29a6d1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e7d6cc7abdd5f343bf1482f534f5112eabbc96b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607161"
 ---
 # <a name="memcpys-wmemcpys"></a>memcpy_s, wmemcpy_s
 
-Arabellekler arasında kopyaları bayt sayısı. Sürümleri bunlar [memcpy, wmemcpy](memcpy-wmemcpy.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Arabellekler arasında bayt kopyalar. Bunlar sürümleridir [memcpy, wmemcpy](memcpy-wmemcpy.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,32 +58,32 @@ errno_t wmemcpy_s(
 Yeni bir arabellek.
 
 *destSize*<br/>
-Hedef arabellek memcpy_s ve geniş karakterler (wchar_t) wmemcpy_s için için bayt cinsinden boyutu.
+Hedef arabelleğin memcpy_s ve geniş karakterler (wchar_t) wmemcpy_s için bayt cinsinden boyutu.
 
 *src*<br/>
-Kopyalanacak arabelleği.
+Arabellek kopyalayın.
 
 *Sayısı*<br/>
-Kopyalamak için karakter sayısı.
+Kopyalanacak karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatasında bir hata kodu.
+Başarılıysa sıfır; bir hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Hedef*|*destSize*|*src*|*Sayısı*|Dönüş değeri|İçeriği *hedef*|
+|*Hedef*|*destSize*|*src*|*Sayısı*|Dönüş değeri|İçeriğini *dest*|
 |------------|----------------|-----------|---|------------------|------------------------|
-|tüm|tüm|tüm|0|0|değiştirilmedi|
-|**NULL**|tüm|tüm|sıfır olmayan|**EINVAL**|değiştirilmedi|
-|tüm|tüm|**NULL**|sıfır olmayan|**EINVAL**|*Hedef* sıfırlanmasını|
-|tüm|< *Sayısı*|tüm|sıfır olmayan|**ERANGE**|*Hedef* sıfırlanmasını|
+|Tüm|Tüm|Tüm|0|0|değiştirilmedi|
+|**NULL**|Tüm|Tüm|sıfır olmayan|**EINVAL**|değiştirilmedi|
+|Tüm|Tüm|**NULL**|sıfır olmayan|**EINVAL**|*Hedef* sıfırlanıyor|
+|Tüm|< *Sayısı*|Tüm|sıfır olmayan|**ERANGE**|*Hedef* sıfırlanıyor|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**memcpy_s** kopya *sayısı* baytlar *src* için *taşınmaya*; **wmemcpy_s** kopya *sayısı* geniş karakterler (iki bayt cinsinden). Kaynak ve hedef çakışma varsa, davranışını **memcpy_s** tanımlanmadı. Kullanım **memmove_s** çakışan bölgeler işlemek için.
+**memcpy_s** kopyaları *sayısı* bayt *src* için *dest*; **wmemcpy_s** kopyaları *sayısı* geniş karakterler (iki bayt). Kaynak ve hedef örtüştürürse davranışını **memcpy_s** tanımsızdır. Kullanım **memmove_s** çakışan bölgeleri işlemek için.
 
-Bu işlevler kendi parametreleri doğrulayın. Varsa *sayısı* sıfır değil ve *taşınmaya* veya *src* null işaretçinin veya *destSize* değerinden küçük *sayısı*, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EINVAL** veya **ERANGE** ve **errno** dönüş değeri için.
+Bu işlevler kendi parametrelerini doğrular. Varsa *sayısı* sıfır değil ve *hedef* veya *src* bir null işaretçiyse veya *destSize* değerinden küçük *sayısı*, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** veya **ERANGE** ayarlayıp **errno** dönüş değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -102,7 +92,7 @@ Bu işlevler kendi parametreleri doğrulayın. Varsa *sayısı* sıfır değil v
 |**memcpy_s**|\<Memory.h > veya \<string.h >|
 |**wmemcpy_s**|\<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,12 +1,7 @@
 ---
-title: "Nasıl yapılır: System:: String'i wchar_t * veya char * olarak dönüştürme | Microsoft Docs"
+title: "Nasıl yapılır: System::String'i wchar_t* veya char* olarak dönüştürme"
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - System::String, converting to char or wchar_t
 - PtrToStringChars method
@@ -14,17 +9,12 @@ helpviewer_keywords:
 - wchart type, converting System::String
 - char data type, converting System::String to
 ms.assetid: 385da01b-5649-4543-8076-e3e251243ff0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 8cd6b9e915f2e5f75c7c43fdf582ec28ee4902e4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 26e9f5511c0205a3c484b85381fddde802f5469a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550507"
 ---
 # <a name="how-to-convert-systemstring-to-wchart-or-char"></a>Nasıl yapılır: System::String'i wchar_t* veya char* olarak dönüştürme
 

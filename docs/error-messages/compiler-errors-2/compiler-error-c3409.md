@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3409 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3409
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3409
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 338a98adb45ee9fc8eb392853a5693d10a171940
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2a677da40b64a19c4d2a27436344eec7adb80c14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058841"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600895"
 ---
 # <a name="compiler-error-c3409"></a>Derleyici Hatası C3409
 

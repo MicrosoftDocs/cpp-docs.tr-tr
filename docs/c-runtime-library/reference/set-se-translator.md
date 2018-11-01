@@ -1,10 +1,6 @@
 ---
-title: _set_se_translator | Microsoft Docs
-ms.custom: ''
+title: _set_se_translator
 ms.date: 02/21/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_se_translator
 apilocation:
@@ -22,27 +18,21 @@ apitype: DLLExport
 f1_keywords:
 - _set_se_translator
 - set_se_translator
-dev_langs:
-- C++
 helpviewer_keywords:
 - set_se_translator function
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d4a5c9e86023ea47f23b648cad1a4dffedf905b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6435b5bfa2f1f238ae608e68d97d356af7fb03dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411526"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521160"
 ---
 # <a name="setsetranslator"></a>_set_se_translator
 
-Ayarlanmış bir iş parçacığı başına geri çağırma işlevi C++ uygulamasına Win32 özel durumlar (C yapılandırılmış özel durum) çevirmek için yazılan özel durumları.
+Win32 özel durumları (C yapısal özel durumlarını) C++ çevirmek için bir iş parçacığı başına geri çağırma işlevini yazılan özel durumları ayarlayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,33 +45,33 @@ _se_translator_function _set_se_translator(
 ### <a name="parameters"></a>Parametreler
 
 *seTransFunction*<br/>
-Bir C işaretçisine yazdığınız özel durum Çeviricisi işlevi yapılandırılmış.
+Bir C işaretçisine yazdığınız özel durum Çevirici işlevi yapılandırılmış.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki Çeviricisi işlevi için bir işaretçi kayıtlı tarafından döndürür **_set_se_translator**, böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız dönüş değerini varsayılan davranışını geri yüklemek için kullanılabilir; Bu değer **nullptr**.
+Önceki translator işlevi işaretçisi kayıtlı tarafından döndürür **_set_se_translator**, böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız dönüş değeri, varsayılan davranışı geri yüklemek için kullanılabilir; Bu değer **nullptr**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Set_se_translator** işlevi Win32 özel durumlar (C yapılandırılmış özel durum) C++ işlemek için bir yol sağlar yazılan özel durumları. C++ tarafından yönetilecek her C özel durumuna izin **catch** işleyici, ilk kullanılan veya bir C özel öznitelik belirli bir sınıf türü için türetilmiş bir C özel durumu sarmalayıcı sınıfı tanımlar. Bu sınıf kullanmak için iç özel durum işleme mekanizması bir C özel durumu her zaman adlı özel bir C özel durumu Çeviricisi işlev yükleyin. Çevirici işlevinizi içinde eşleşen bir C++ tarafından yakalanan yazılan özel durumları throw **catch** işleyicisi.
+**_Set_se_translator** işlevi C++ Win32 özel durumlar (C yapısal özel durumlarını) işlemek için bir yol sağlar belirlenmiş özel durumlar. Bir C++ tarafından işlenmek üzere her C özel durumuna izin **catch** işleyicisi önce kullanılan veya bir C özel durumu için belirli bir sınıf türü nitelemek için türetilmiş bir C özel durum sarmalayıcı sınıfı tanımlayın. Bu sınıf kullanmak için iç özel durum işleme mekanizmasını C özel durum harekete geçirilen her zaman çağrılan özel bir C özel durum Çevirici işlevi yükleyin. Translator işlevinizi içinde eşleşen bir C++ tarafından yakalanabilir yazılan tüm özel durum oluşturabilecek **catch** işleyici.
 
-Kullanmalısınız [/EHa](../../build/reference/eh-exception-handling-model.md) kullanırken **_set_se_translator**.
+Kullanmalısınız [/eha](../../build/reference/eh-exception-handling-model.md) kullanırken **_set_se_translator**.
 
-Özel çeviri işlevi belirtmek için arama **_set_se_translator** çeviri işlevinizin adını bağımsız değişken olarak kullanarak. Her işlev çağrısını sahip yığında için yazdığınız Çeviricisi işlevi bir kez çağrılır **deneyin** engeller. Hiçbir varsayılan çeviricisi işlevi yoktur.
+Özel çeviri işlevi belirtmek için çağrı **_set_se_translator** çeviri işlevinizin adını, bağımsız değişkeni olarak kullanma. Her yığında olan işlev çağrısını için yazdığınız translator işlevi bir kez çağrılır **deneyin** engeller. Hiçbir varsayılan translator işlevi yoktur.
 
-Çevirici işlevi C++ throw daha fazla yapmalısınız belirtilmiş özel durum. (Bir günlük dosyasına örneğin yazmak gibi) atma yanı sıra herhangi bir şey varsa Çeviricisi işlev çağrıldığında sayısı platforma bağımlı olduğu için program beklendiği gibi davranabilir değil.
+Bir C++ throw daha fazla translator işlevinizi yapmalısınız yazılan özel durum. (Bir günlük dosyasına, örneğin yazma gibi) özel durum atma yanı sıra herhangi bir şey varsa kaç kez translator işlevin çağrıldığı platforma bağımlı olduğundan, program beklendiği gibi çalışmayabilir.
 
-Birden çok iş parçacıklı bir ortamda Çeviricisi işlevleri her iş parçacığı için ayrı ayrı tutulur. Her yeni bir iş parçacığı kendi Çeviricisi işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi çeviri işleme sorumlu olduğu. **_set_se_translator** tek bir iş parçacığı için; özgü başka bir DLL farklı çeviri işlev yükleyebilir.
+Çok iş parçacıklı bir ortamda Çevirici işlevleri her bir iş parçacığı için ayrı olarak korunur. Her yeni bir iş parçacığı kendi translator işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi çeviri işleme sorumlu olduğu. **_set_se_translator** bir iş parçacığına özgü farklı çeviri işlevi başka bir DLL yükleyebilirsiniz.
 
-*SeTransFunction* yazdığınız işlevi (/ CLR ile derlenmemiş) yerel koda derlenmiş bir işlev olmalıdır. Bunu bir işaretsiz tamsayı ve bir işaretçi bir Win32 almalıdır **_exceptıon_poınters** bağımsız değişken olarak yapısı. Win32 API çağrıları dönüş değerleri değişkenleridir **GetExceptionCode** ve **GetExceptionInformation** işlevleri, sırasıyla.
+*SeTransFunction* yazdığınız işlevi (/ CLR ile derlenmiş değil) yerel olarak derlenmiş bir işlev olmalıdır. Bunu bir işaretsiz tamsayı ve bir işaretçi için bir Win32 almalıdır **_exceptıon_poınters** bağımsız değişkenler olarak yapısı. Win32 API çağrılarının dönüş değerlerini bağımsız değişkenler **GetExceptionCode** ve **Getexceptionınformation** işlevleri, sırasıyla.
 
 ```cpp
 typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_POINTERS* );
 ```
 
-İçin **_set_se_translator**, dinamik olarak CRT bağlarken etkileri olan; başka bir işlem DLL'de çağırabilirsiniz **_set_se_translator** ve işleyicinizi kendi ile değiştirin.
+İçin **_set_se_translator**, dinamik olarak CRT'ye bağlarken etkileri olan; başka bir DLL işleminde çağırabilirsiniz **_set_se_translator** işleyicinizi kendi ile değiştirin.
 
-Kullanırken **_set_se_translator** yönetilen koddan (/ CLR ile derlenmiş kod) veya yerel ve yönetilen kod karma, Çevirici yalnızca yerel kodda oluşturulan özel durumları etkilediğine dikkat edin. Yönetilen kodda oluşturulan özel durumları tarafından yönetilen (ne zaman gibi yükseltme `System::Exception`) Çeviricisi işlevi yönlendirilmedi. Win32 işlevi kullanılarak yönetilen koddan oluşturulan özel durumları **RaiseException** veya sıfır özel durum sıfıra yönlendirilir gibi Çeviricisi bir sistem özel durumu nedeniyle.
+Kullanırken **_set_se_translator** yönetilen koddan (/ CLR ile derlenmiş kod) veya yerel ve yönetilen kod karma, translator yalnızca yerel kod içinde oluşturulan özel durumları etkilediğini unutmayın. Herhangi bir yönetilen yönetilen kodda oluşturulan özel durumları (ne zaman gibi yükseltme `System::Exception`) Çevirici işleviyle yönlendirilmedi. Win32 işlevini kullanarak yönetilen kod içinde oluşturulan özel durumları **RaiseException** veya sıfır özel durum ile bir bölme yönlendirilir gibi translator bir sistem özel durumu nedeniyle.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -89,7 +79,7 @@ Kullanırken **_set_se_translator** yönetilen koddan (/ CLR ile derlenmiş kod)
 |-------------|---------------------|
 |**_set_se_translator**|\<EH.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -154,7 +144,7 @@ Caught a __try exception, error c0000094.
 
 ## <a name="example"></a>Örnek
 
-Tarafından sağlanan işlevselliği rağmen **_set_se_translator** olan yönetilen kodda kullanılamıyor, bu yerel kodu derleme altında olsa bile bu yerel kodda eşleme kullanmak mümkündür **/CLR** Yerel kod kullanarak belirtilen sürece geçiş `#pragma unmanaged`. Yapılandırılmış özel durum eşlenecek yönetilen kodda durum gerekiyorsa oluşturur ve özel durumu işler kodu işaretlenmelidir `#pragma unmanaged`. Aşağıdaki kod, olası bir kullanımını gösterir. Daha fazla bilgi için bkz: [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+İşlevler tarafından sağlanan rağmen **_set_se_translator** olan yönetilen kodda kullanılabilir değil, bir derlemede altında o yerel kod olsa bile bu yerel kodda eşleme kullanmak mümkündür **/CLR** Yerel kod kullanarak belirtilen sürece geçiş `#pragma unmanaged`. Eşlenecek yönetilen kodda durum yapılandırılmış bir özel durum oluşturulursa, oluşturur ve özel durumu işleyen kodu işaretlenmelidir `#pragma unmanaged`. Aşağıdaki kod, olası bir kullanımını gösterir. Daha fazla bilgi için [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 ```cpp
 // crt_set_se_translator_clr.cpp
@@ -219,5 +209,5 @@ Caught CMyException, error c0000094
 [Özel Durum İşleme Rutinleri](../../c-runtime-library/exception-handling-routines.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>
 [set_unexpected](set-unexpected-crt.md)<br/>
-[Sonlandırma](terminate-crt.md)<br/>
+[sonlandırma](terminate-crt.md)<br/>
 [beklenmeyen](unexpected-crt.md)<br/>

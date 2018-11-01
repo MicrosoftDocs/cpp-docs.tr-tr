@@ -1,10 +1,6 @@
 ---
-title: CColorDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CColorDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CColorDialog
 - AFXDLGS/CColorDialog
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXDLGS/CColorDialog::SetCurrentColor
 - AFXDLGS/CColorDialog::OnColorOK
 - AFXDLGS/CColorDialog::m_cc
-dev_langs:
-- C++
 helpviewer_keywords:
 - CColorDialog [MFC], CColorDialog
 - CColorDialog [MFC], DoModal
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63b909c80ab8f2f8f5bd1c5ad002f2c5f6523081
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b9c452dc3dcb157b20558a1f7cb31103dc01f84
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561271"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 

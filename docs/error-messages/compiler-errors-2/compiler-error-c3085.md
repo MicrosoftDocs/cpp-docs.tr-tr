@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3085 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3085
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3085
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3085
 ms.assetid: 1ac40bf2-f63e-439e-8921-47e6dadc8354
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbe3cd1b5c3aab71b38bca694df28fdf5b079474
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9e174d4f8e50864dd7b33b58786cce03d50c2295
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033309"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558385"
 ---
 # <a name="compiler-error-c3085"></a>Derleyici Hatası C3085
 

@@ -1,12 +1,6 @@
 ---
-title: Üstbilgiler ve altbilgiler | Microsoft Docs
-ms.custom: ''
+title: Üstbilgiler ve Altbilgiler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - printing [MFC], multipage documents
 - page headers [MFC], printing
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - printing [MFC], headers and footers
 - page footers [MFC]
 ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 825a74ebe53b934df6a85b3c06fc7df4f0bc135c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 15c76dabb2512b5906ca631e0da5047fabddf848
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383109"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564508"
 ---
 # <a name="headers-and-footers"></a>Üstbilgiler ve Altbilgiler
 

@@ -1,10 +1,6 @@
 ---
-title: Iaxwinambientdispatch arabirimi | Microsoft Docs
-ms.custom: ''
+title: Iaxwinambientdispatch arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IAxWinAmbientDispatch
 - ATLIFACE/ATL::IAxWinAmbientDispatch
@@ -36,21 +32,15 @@ f1_keywords:
 - ATLIFACE/ATL::put_MessageReflect
 - ATLIFACE/ATL::put_OptionKeyPath
 - ATLIFACE/ATL::put_UserMode
-dev_langs:
-- C++
 helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cf8747275325332f6a2d0072e2c0ba2a66ae276
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f143b2c58159d1bb0812152c68d3c31153d4570d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057619"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467437"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>Iaxwinambientdispatch arabirimi
 

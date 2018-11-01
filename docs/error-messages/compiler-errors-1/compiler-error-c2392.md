@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2392 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2392
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2392
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2392
 ms.assetid: 98ced473-6383-46ed-b79c-21857d65dcb2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c45c5b271235e4ada0945a79087186a213c75343
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5977d9bf41d55ef6db8409e0187153fdbf91149e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491357"
 ---
 # <a name="compiler-error-c2392"></a>Derleyici Hatası C2392
 

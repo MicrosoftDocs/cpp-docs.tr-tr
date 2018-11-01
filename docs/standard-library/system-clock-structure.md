@@ -1,10 +1,6 @@
 ---
-title: system_clock yapısı | Microsoft Docs
-ms.custom: ''
+title: system_clock Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::system_clock
 - chrono/std::chrono::system_clock::from_time_t
@@ -12,19 +8,13 @@ f1_keywords:
 - chrono/std::chrono::system_clock::to_time_t
 - chrono/std::chrono::system_clock::is_monotonic Constant
 - chrono/std::chrono::system_clock::is_steady Constant
-dev_langs:
-- C++
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 146a764cd2b1fcc567a564a6995c191c4f838262
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 66710f94d96f069d6d388d6b49c76747c618a0d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557995"
 ---
 # <a name="systemclock-structure"></a>system_clock Yapısı
 

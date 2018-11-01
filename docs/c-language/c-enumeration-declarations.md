@@ -1,12 +1,6 @@
 ---
-title: C numaralandırma bildirimleri | Microsoft Docs
-ms.custom: ''
+title: C Numaralandırma Bildirimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declarations, enumerations
 - define directive (#define), alternative to
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 858f7bf440b0a53a7e9ed5bb666029b7d1135f81
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a1c584b324aced32fea6b1b87b9744dedeaa4e5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474262"
 ---
 # <a name="c-enumeration-declarations"></a>C Numaralandırma Bildirimleri
 

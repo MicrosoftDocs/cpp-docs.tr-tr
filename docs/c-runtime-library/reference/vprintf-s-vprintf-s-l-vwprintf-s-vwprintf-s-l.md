@@ -1,10 +1,6 @@
 ---
-title: vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l | Microsoft Docs
-ms.custom: ''
+title: vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _vwprintf_s_l
 - vwprintf_s
@@ -26,8 +22,6 @@ f1_keywords:
 - vprintf_s
 - vwprintf_s
 - _vtprintf_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - vwprintf_s_l function
 - _vwprintf_s_l function
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vprintf_s function
 ms.assetid: cf864996-a530-4b40-9c30-54c4cef439c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9310939c12792d6f61c2f39da153a1abd20f02a6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7fc49cbac375bdf1ecb3a6b977dfcc3e2b5ce170
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561622"
 ---
 # <a name="vprintfs-vprintfsl-vwprintfs-vwprintfsl"></a>vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 

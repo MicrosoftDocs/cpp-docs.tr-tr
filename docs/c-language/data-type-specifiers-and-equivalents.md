@@ -1,12 +1,6 @@
 ---
-title: Veri türü tanımlayıcıları ve eşdeğerleri | Microsoft Docs
-ms.custom: ''
+title: Veri Türü Tanımlayıcıları ve Eşdeğerleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - type specifiers [C++], list
 - widening integers
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - simple types, names
 - type names [C++], simple
 ms.assetid: 0d4b515a-4f68-4786-83cf-a5d43c7cb6f3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68444d5ac8944e3c6679fce6397226d48206037f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 778390702cf970fc7c7246402ff0c1396e055770
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092732"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520711"
 ---
 # <a name="data-type-specifiers-and-equivalents"></a>Veri Türü Tanımlayıcıları ve Eşdeğerleri
 

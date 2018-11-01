@@ -1,10 +1,6 @@
 ---
-title: CMFCAcceleratorKeyAssignCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCAcceleratorKeyAssignCtrl sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCAcceleratorKeyAssignCtrl
 - AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined
 - AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage
 - AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCAcceleratorKeyAssignCtrl [MFC], CMFCAcceleratorKeyAssignCtrl
 - CMFCAcceleratorKeyAssignCtrl [MFC], GetAccel
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage
 - CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 67ceb42c5d7f804c2d9a5c094111cb2b909db7fe
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd096657de56c0b6daa07004a927b92f1293ddf3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071212"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454425"
 ---
 # <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl sınıfı
 

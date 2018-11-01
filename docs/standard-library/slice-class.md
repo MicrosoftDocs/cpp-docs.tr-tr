@@ -1,33 +1,23 @@
 ---
-title: slice sınıfı | Microsoft Docs
-ms.custom: ''
+title: slice Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - valarray/std::slice
 - valarray/std::slice::size
 - valarray/std::slice::start
 - valarray/std::slice::stride
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::slice [C++]
 - std::slice [C++], size
 - std::slice [C++], start
 - std::slice [C++], stride
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6a2cff4aea707c98a4bce7060b16ce695d25c47d
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f2c054626b36083d67f9dbc4c87cf6283c12f001
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495426"
 ---
 # <a name="slice-class"></a>slice Sınıfı
 

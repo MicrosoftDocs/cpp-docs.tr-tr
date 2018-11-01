@@ -1,28 +1,18 @@
 ---
-title: Asyncstatusınternal numaralandırması | Microsoft Docs
-ms.custom: ''
+title: AsyncStatusInternal Numaralandırması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - async/Microsoft::WRL::Details::AsyncStatusInternal
-dev_langs:
-- C++
 helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4c7751929a55993876034bb3c1918b82193681fc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fe70ee1ac5d26ed15d2b497356fe941c72ec0c83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564950"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal Numaralandırması
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4565 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4565
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4565
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4565
 ms.assetid: a71f1341-a4a1-4060-ad1e-9322531883ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c25f2f1fc16c6d45a7d1eddec8d3efe62db142f2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b655dcfb456d32e45833e89e5a48926ad70d1d9e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211268"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588688"
 ---
 # <a name="compiler-warning-level-4-c4565"></a>Derleyici Uyarısı (düzey 4) C4565
 

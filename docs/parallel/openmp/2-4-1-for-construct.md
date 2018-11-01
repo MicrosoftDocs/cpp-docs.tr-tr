@@ -1,23 +1,13 @@
 ---
-title: 2.4.1 yapı için | Microsoft Docs
-ms.custom: ''
+title: 2.4.1 Yapı için
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 27d2cbce-786b-4819-91d3-d55b2cc57a5e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb9a554d9141223be7a5f6bc741c86b8f03511e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: adf2d5d0580f3b65f90ab68ca21885be12abf678
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496518"
 ---
 # <a name="241-for-construct"></a>2.4.1 Yapı için
 

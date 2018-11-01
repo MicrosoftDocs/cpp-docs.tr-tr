@@ -1,31 +1,21 @@
 ---
-title: back_insert_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: back_insert_iterator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iterator/std::back_insert_iterator
 - iterator/std::back_insert_iterator::container_type
 - iterator/std::back_insert_iterator::reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::back_insert_iterator [C++]
 - std::back_insert_iterator [C++], container_type
 - std::back_insert_iterator [C++], reference
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87eb15654be3f709da92d561d048b3a7961c985f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2a0510b6df656b7925fd42a4c97d768336537424
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099622"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557452"
 ---
 # <a name="backinsertiterator-class"></a>back_insert_iterator Sınıfı
 

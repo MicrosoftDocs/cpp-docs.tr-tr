@@ -1,27 +1,17 @@
 ---
-title: . FPO | Microsoft Docs
-ms.custom: ''
+title: .FPO
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .FPO
-dev_langs:
-- C++
 helpviewer_keywords:
 - .FPO directive
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be5e20716ff414eea3eddc8490e2a3f82adeb777
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 83d6e81ea7dd35038f27f2721f3cc41fe49ef1bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570518"
 ---
 # <a name="fpo"></a>.FPO
 

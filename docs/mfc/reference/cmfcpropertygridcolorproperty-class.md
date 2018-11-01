@@ -1,10 +1,6 @@
 ---
-title: CMFCPropertyGridColorProperty sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyGridColorProperty sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridColorProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty
 - CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], SetColumnsNumber
 - CMFCPropertyGridColorProperty [MFC], SetOriginalValue
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f238f74127c5f3241a8ce50cf75189358512cb6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c284906a85ec93c5c5419acb783f6f46ebcf03e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400191"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575743"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty sınıfı
 

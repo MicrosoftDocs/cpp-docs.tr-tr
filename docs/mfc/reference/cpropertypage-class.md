@@ -1,10 +1,6 @@
 ---
-title: CPropertyPage sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPropertyPage sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPropertyPage
 - AFXDLGS/CPropertyPage
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXDLGS/CPropertyPage::QuerySiblings
 - AFXDLGS/CPropertyPage::SetModified
 - AFXDLGS/CPropertyPage::m_psp
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPropertyPage [MFC], CPropertyPage
 - CPropertyPage [MFC], CancelToClose
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfdc096950e16c912503d95612855211af812cb9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1816e6ee2dc0f358cb2da4c8bab572daa33a29c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561245"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 

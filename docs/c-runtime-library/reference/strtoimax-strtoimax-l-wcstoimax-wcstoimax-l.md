@@ -1,10 +1,6 @@
 ---
-title: strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l | Microsoft Docs
-ms.custom: ''
+title: strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcstoimax
 - _wcstoimax_l
@@ -30,8 +26,6 @@ f1_keywords:
 - _wcstoimax_l
 - _strtoimax_l
 - _tcstoimax_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - strtoimax funciton
 - conversion functions
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - _wcstoimax_l function
 - wcstoimax function
 ms.assetid: 4530d3dc-aaac-4a76-b7cf-29ae3c98d0ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 58ee8f4cbceaa2972de9a40a4192b1175b25488d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e0a320f90b2c0f8653109a6ae0056c4c0cdd7455
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578158"
 ---
 # <a name="strtoimax-strtoimaxl-wcstoimax-wcstoimaxl"></a>strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
 
-Bir dizeyi büyük desteklenen imzalı Tamsayı türünde tamsayı değerine dönüştürür.
+Bir dizeyi en büyük desteklenen imzalı tamsayı türünün tamsayı değerine dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,31 +77,31 @@ intmax_t _wcstoimax_l(
 Dönüştürülecek null ile sonlandırılmış dize.
 
 *endptr*<br/>
-Tarama durdurur karakter işaretçi.
+Taramayı durduran karakter işaretçisi.
 
 *base*<br/>
-Kullanılacak sayı temel.
+Kullanılacak sayı tabanı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtoimax** dizesini temsil edilen değeri döndürür *strSource*, temsili taşma zaman neden olacağından dışında — bu durumda, döndürür **INTMAX_MAX** veya **INTMAX_MIN**, ve **errno** ayarlanır **ERANGE**. Hiçbir dönüştürme gerçekleştirilebiliyorsa işlevi 0 değerini döndürür. **wcstoimax** değerleri analogously çok döndürür **strtoimax**.
+**strtoimax** dizesinde temsil edilen değeri döndürür *strSource*, gösterimin bir taşma neden olduğu zaman dışında — bu durumda, döndürür **INTMAX_MAX** veya **INTMAX_MIN**, ve **errno** ayarlanır **ERANGE**. Dönüştürme gerçekleştirilemiyorsa işlev 0 döndürür. **wcstoimax** çok öğesine değerleri döndürür **strtoimax**.
 
-**INTMAX_MAX** ve **INTMAX_MIN** stdint.h tanımlanır.
+**INTMAX_MAX** ve **INTMAX_MIN** stdint.h. içinde tanımlanır.
 
-Varsa *strSource* olan **NULL** veya *temel* sıfır dışında olan ve 2 veya 36, büyüktür ya da daha az **errno** ayarlanır **EINVAL** .
+Varsa *strSource* olduğu **NULL** veya *temel* sıfır dışında olan ve 2'den küçük veya 36'dan büyük ya da daha az **errno** ayarlanır **EINVAL** .
 
-Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtoimax** işlev dönüştürür *strSource* için bir **intmax_t**. Joker karakter sürümü **strtoimax** olan **wcstoimax**; kendi *strSource* bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır. Her iki işlevleri Durdur dize okuma *strSource* ilk karakterinde bunlar bir sayı bir parçası olarak tanımak olamaz. Bu sonlandırma null karakter olabilir veya büyük veya eşit ilk sayısal karakter olabilir *temel*.
+**Strtoimax** işlev dönüştürür *strSource* için bir **intmax_t**. Geniş karakter sürümünü **strtoimax** olduğu **wcstoimax**; *strSource* geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır. Her iki işlev dizesini okumayı durdurur *strSource* bir sayının parçası olarak tanıyamadığı ilk karakterde. Bu sondaki boş karakter olabilir veya büyüktür veya ona eşit olan ilk sayısal karakter olabilir *temel*.
 
-Yerel **lc_numerıc** kategori ayarı belirler tanıma taban karakterinin *strSource*; daha fazla bilgi için bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md). Yok işlevleri **_l** sonekini kullan geçerli yerel; **_strtoimax_l** ve **_wcstoimax_l** yok ilgili işlevleri için özdeş **_l** bunun yerine yerel kullandıkları dışında sonek o geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Yerel **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource*; daha fazla bilgi için bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md). Sahip olmayan işlevler **_l** soneki geçerli yerel ayarı kullanır; **_strtoimax_l** ve **_wcstoimax_l** sahip olmayan ilgili işlevlerle aynıdır **_l** bunun yerine yerel ayarı kullanmaları dışında soneki o geçirildi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Varsa *endptr* değil **NULL**, tarama durduruldu karakter işaretçisi işaret ediyor konumda depolanır *endptr*. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri *strSource* işaret ediyor konumunda depolanan *endptr*.
+Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -120,11 +110,11 @@ Varsa *endptr* değil **NULL**, tarama durduruldu karakter işaretçisi işaret 
 |**_tcstoimax**|**strtoimax**|**strtoimax**|**wcstoimax**|
 |**_tcstoimax_l**|**strtoimax_l**|**_strtoimax_l**|**_wcstoimax_l**|
 
-**strtoimax** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret etmek için:
+**strtoimax** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret edecek şekilde:
 
 > [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*basamak* &#124; *harf*]  
 
-A *boşluk* , göz ardı edilir; boşluk ve sekme karakterlerden oluşabilir *basamak* bir veya daha fazla ondalık basamakların; *harf* 'a' ile 'z' (veya 'A'-'Z') bir veya daha fazla harf şunlardır. Bu form sığmayan ilk karakter tarama durdurur. Varsa *temel* sayısı temel olarak kullanılan sonra 2 ile 36, arasındadır. Varsa *temel* gösterdiği dizenin ilk karakter 0'dır ve *strSource* temel belirlemek için kullanılır. İlk karakter '0' ve ikinci karakter 'x' veya 'X' değil, dize sekizlik tamsayı olarak yorumlanır. İlk karakter '0' dir ve ikinci karakteri 'x' veya 'X', dize onaltılık bir tamsayı olarak yorumlanır. İlk karakteri ' 1' üzerinden ' 9'. dize ondalık bir tamsayı olarak yorumlanır. 'A' ile 'z' harf (veya 'A'-'Z') 35 10 değerler atanır; yalnızca atanan değerleri olan harf değerinden *temel* izin verilir. İlk karakter taban izin verilen aralığın dışında tarama durdurur. Örneğin, varsa *temel* 0'dır ve taranan ilk karakter '0', tamsayı sekizli kabul edilir ve bir '8' veya '9' karakter tarama durdurur.
+A *boşluk* yoksayılan boşluk ve sekme karakterlerinden oluşabilir *basamak* bir veya daha fazla ondalık basamaktır; *harf* 'a' ila 'z' (veya 'A'-'Z') bir veya daha fazla harf olan. Bu forma uymayan ilk karakter taramayı durdurur. Varsa *temel* 2 ile 36 arasındaysa sayının tabanı kullanılır olduğu. Varsa *temel* tarafından işaret edilen dizenin ilk karakterleri 0'dır *strSource* tabanı belirlemek için kullanılır. İlk karakter '0', ikinci karakter 'x' veya 'X' değil ise dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter '0' ise ve ikinci karakter 'x' veya 'X' dize onaltılık bir tamsayı olarak yorumlanır. İlk karakter ' 1'-' 9' ise, dize ondalık bir tamsayı olarak yorumlanır. Harfler 'bir'-'z' (ya da 'A'-'Z'), 10-35 arasında değerler atanır; yalnızca atanan değerleri olan harf küçüktür *temel* izin verilir. Tabanın aralığının dışındaki ilk karakter taramayı durdurur. Örneğin, varsa *temel* 0 ise ve taranan ilk karakter '0' ise, sekizlik bir tamsayı olduğu varsayılır ve bir '8' veya '9' karakteri taramayı durduracaktır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -132,7 +122,7 @@ A *boşluk* , göz ardı edilir; boşluk ve sekme karakterlerden oluşabilir *ba
 |-------------|---------------------|
 |**strtoimax**, **_strtoimax_l**, **wcstoimax**, **_wcstoimax_l**|\<inttypes.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

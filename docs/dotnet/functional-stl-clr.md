@@ -1,9 +1,6 @@
 ---
-title: işlevsel (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: işlevsel (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - <cliext/functional>
@@ -34,8 +31,6 @@ f1_keywords:
 - cliext::unary_delegate
 - cliext::unary_delegate_noreturn
 - cliext::unary_negate
-dev_langs:
-- C++
 helpviewer_keywords:
 - <functional> header [STL/CLR]
 - <cliext/functional> header [STL/CLR]
@@ -68,17 +63,12 @@ helpviewer_keywords:
 - unary_delegate_noreturn function [STL/CLR]
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 996e0f4bcf515d7bc38f89c291927a5444f5654b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4a99ea972c6d2ea9b9721664cc75dec257fd7b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472910"
 ---
 # <a name="functional-stlclr"></a>işlevsel (STL/CLR)
 

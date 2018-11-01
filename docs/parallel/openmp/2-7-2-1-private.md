@@ -1,23 +1,13 @@
 ---
-title: 2.7.2.1 özel | Microsoft Docs
-ms.custom: ''
+title: 2.7.2.1 private
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 079b4b84-f2b3-4050-a0ac-289493c36b3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d06650a784b5b59405f446f4701918393b21fa3b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c1a2560eb80c848605698c435e3a0f0f7e66b75a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387243"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536961"
 ---
 # <a name="2721-private"></a>2.7.2.1 private
 

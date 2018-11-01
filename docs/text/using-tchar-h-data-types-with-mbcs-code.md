@@ -1,15 +1,9 @@
 ---
-title: TCHAR kullanma. _MBCS Kodu ile saat veri türleri | Microsoft Docs
-ms.custom: ''
+title: _MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - tchar.h
 - TCHAR
-dev_langs:
-- C++
 helpviewer_keywords:
 - mapping generic-text
 - generic-text data types [C++]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6a52dded31c1037130a9e4ee6182003f522c062d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 81e51f136a42c0d0db12744735521ae2b3cdb5f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372061"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510714"
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 

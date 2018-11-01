@@ -1,29 +1,18 @@
 ---
-title: ODBC ve veritabanı sınıfları | Microsoft Docs
-ms.custom: ''
+title: ODBC ve Veritabanı Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - database classes [C++], ODBC
 - ODBC API functions [C++]
 - ODBC classes [C++], MFC database classes
 - MFC [C++], ODBC and
 ms.assetid: b166f82d-6f85-4556-aac8-fb851235d22c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 9e179bf7570ba2ce53369d59c836e8accf91e8de
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 709608098a0c979cd7816ae4f8012372099ef52d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057954"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575610"
 ---
 # <a name="odbc-and-the-database-classes"></a>ODBC ve Veritabanı Sınıfları
 

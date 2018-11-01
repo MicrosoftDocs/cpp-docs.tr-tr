@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3797 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3797
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3797
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3797
 ms.assetid: ab27ff34-8c1d-4297-b004-9e39bd3a4f25
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ac1ded1c95f7e8bea9598e468010c75d8bd917a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c8570edf16b9c002f9506b1b179a2ab36f7f26e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033426"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557540"
 ---
 # <a name="compiler-error-c3797"></a>Derleyici Hatası C3797
 

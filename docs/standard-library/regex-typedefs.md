@@ -1,8 +1,6 @@
 ---
-title: '&lt;Regex&gt; typedefs | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Regex&gt; tür tanımları'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - regex/std::cmatch
 - regex/std::cregex_iterator
@@ -22,19 +20,13 @@ f1_keywords:
 - regex/std::wsregex_iterator
 - regex/std::wsregex_token_iterator
 - regex/std::wssub_match
-dev_langs:
-- C++
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b32031103e6e6d9922fdb3b0fc3a0d95e5eb280c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 33217388ff7e0826efcee413b39adaeba569399a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578197"
 ---
 # <a name="ltregexgt-typedefs"></a>&lt;Regex&gt; tür tanımları
 

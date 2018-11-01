@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3415 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3415
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3415
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3415
 ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1dd99f96bbc756261676962f86c3f4cbad46abe1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3d4163fac83e24d30f29aed92e7a1ec1fc9e362f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482010"
 ---
 # <a name="compiler-error-c3415"></a>Derleyici Hatası C3415
 

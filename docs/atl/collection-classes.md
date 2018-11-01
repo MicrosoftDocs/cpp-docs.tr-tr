@@ -1,25 +1,16 @@
 ---
-title: ATL koleksiyon sınıfları | Microsoft Docs
-ms.custom: ''
+title: ATL Koleksiyon Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e6c86db9be77e098d1160b847fce5ff940d20cb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 21c77f71fb576177a6e61ef38d1ef0459f14ab05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625179"
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 

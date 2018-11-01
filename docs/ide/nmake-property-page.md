@@ -1,30 +1,20 @@
 ---
 title: NMake özellik sayfası (C++ Windows) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCNMakeTool.ReBuildCommandLine
 - VC.Project.VCNMakeTool.CleanCommandLine
 - VC.Project.VCNMakeTool.Output
 - VC.Project.VCNMakeTool.BuildCommandLine
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMake property page
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 030aba197b2f480212f20eb5e9c298461d8f03da
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d890794d706a687b9cf945022aa4c230684131d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384788"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473547"
 ---
 # <a name="nmake-property-page"></a>NMake Özellik Sayfaları
 

@@ -1,12 +1,6 @@
 ---
-title: Kullanıcı kaydı | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı Kaydı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - records, user
 - OLE DB providers, user record
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - user records, described
 - rowsets, user record
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: e37ed0ac918b004513aa64308870a534a7b2af40
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 4a06a378ba7d4084b68c98ab029aec1670be982d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216298"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570329"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
 

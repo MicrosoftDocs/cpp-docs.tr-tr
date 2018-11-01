@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3385 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3385
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3385
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3385
 ms.assetid: 5f1838c1-986e-47db-8dbc-e06976b83cf3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac6426e32d5cd9a11d80ddce2cf4203d6a1de0e1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0cf8f75588339420c688db6e808a62a9fb0ac15c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571216"
 ---
 # <a name="compiler-error-c3385"></a>Derleyici Hatası C3385
 

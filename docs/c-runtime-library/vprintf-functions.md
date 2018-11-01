@@ -1,10 +1,6 @@
 ---
-title: vprintf işlevleri | Microsoft Docs
-ms.custom: ''
+title: vprintf İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr110.dll
 - msvcr120.dll
@@ -15,22 +11,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - vprintf
-dev_langs:
-- C++
 helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2da3abdb5139b6723e13a369117dd75038c3ad41
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da4f2c8586085e57925d277c452d6ed28db467d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573244"
 ---
 # <a name="vprintf-functions"></a>vprintf İşlevleri
 

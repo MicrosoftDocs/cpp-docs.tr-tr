@@ -1,10 +1,6 @@
 ---
-title: CD2DTextFormat sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DTextFormat sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DTextFormat
 - AFXRENDERTARGET/CD2DTextFormat
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DTextFormat::IsValid
 - AFXRENDERTARGET/CD2DTextFormat::ReCreate
 - AFXRENDERTARGET/CD2DTextFormat::m_pTextFormat
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DTextFormat [MFC], CD2DTextFormat
 - CD2DTextFormat [MFC], Create
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CD2DTextFormat [MFC], ReCreate
 - CD2DTextFormat [MFC], m_pTextFormat
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: baaae28fd31fd7f4afa1215c6a08689672ceb31f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 092ffff91113b42cd106fe7079b06b9482400c63
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397669"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557163"
 ---
 # <a name="cd2dtextformat-class"></a>CD2DTextFormat sınıfı
 

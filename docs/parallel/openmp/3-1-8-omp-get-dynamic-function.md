@@ -1,23 +1,13 @@
 ---
-title: 3.1.8 omp_get_dynamic işlevi | Microsoft Docs
-ms.custom: ''
+title: 3.1.8 omp_get_dynamic İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c03e2daf-29c9-49e3-9b67-b980ad1ab195
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c30f49eaf91353d6a7cd9bd26e0e10e95cb6acd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d9476894e5aff4cc7bb9c67fbbeb14d185b65f5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426789"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566432"
 ---
 # <a name="318-ompgetdynamic-function"></a>3.1.8 omp_get_dynamic İşlevi
 

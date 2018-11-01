@@ -1,10 +1,6 @@
 ---
-title: CHtmlEditCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHtmlEditCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHtmlEditCtrl
 - AFXHTML/CHtmlEditCtrl
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXHTML/CHtmlEditCtrl::Create
 - AFXHTML/CHtmlEditCtrl::GetDHtmlDocument
 - AFXHTML/CHtmlEditCtrl::GetStartDocument
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHtmlEditCtrl [MFC], CHtmlEditCtrl
 - CHtmlEditCtrl [MFC], Create
 - CHtmlEditCtrl [MFC], GetDHtmlDocument
 - CHtmlEditCtrl [MFC], GetStartDocument
 ms.assetid: 0fc4a238-b05f-4874-9edc-6a6701f064d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ab9a94663e2c374c0671afc6d4d093559ae1a69
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ce2db15b801d84ed0315345f5ab8084c437ef8ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412407"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563650"
 ---
 # <a name="chtmleditctrl-class"></a>CHtmlEditCtrl sınıfı
 

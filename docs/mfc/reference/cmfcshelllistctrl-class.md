@@ -1,10 +1,6 @@
 ---
-title: CMFCShellListCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCShellListCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCShellListCtrl
 - AFXSHELLLISTCTRL/CMFCShellListCtrl
@@ -26,8 +22,6 @@ f1_keywords:
 - AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns
 - AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh
 - AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCShellListCtrl [MFC], DisplayFolder
 - CMFCShellListCtrl [MFC], DisplayParentFolder
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2fcd07f831133ff478dcccb4272ef24496e3cac
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd978bfa65cc003bcb69a309b44254a6d36a2ebd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588641"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 

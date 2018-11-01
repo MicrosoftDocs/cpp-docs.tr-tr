@@ -1,29 +1,19 @@
 ---
-title: _rotr8, _rotr16 | Microsoft Docs
-ms.custom: ''
+title: _rotr8, _rotr16
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _rotr16
 - _rotr8
-dev_langs:
-- C++
 helpviewer_keywords:
 - _rotr8 intrinsic
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17c4cda4a3ab8514fb1beec3c19a08fa565bfdd7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 698ce137ba592bc88916e4ba2249d950120b0722
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425931"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518501"
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
 
@@ -34,13 +24,13 @@ Giriş değerleri tarafından belirtilen bit konumları sayısı en az önemli b
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned char _rotr8( 
-   unsigned char value, 
-   unsigned char shift 
+unsigned char _rotr8( 
+   unsigned char value, 
+   unsigned char shift 
 );
-unsigned short _rotr16( 
-   unsigned short value, 
-   unsigned char shift 
+unsigned short _rotr16( 
+   unsigned short value, 
+   unsigned char shift 
 );
 ```
 

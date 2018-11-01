@@ -1,10 +1,6 @@
 ---
-title: COM arabirimi giriş makroları | Microsoft Docs
-ms.custom: ''
+title: COM arabirimi giriş makroları
 ms.date: 03/28/2017
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcom/ATL::COM_INTERFACE_ENTRY
 - atlcom/ATL::COM_INTERFACE_ENTRY_IID
@@ -19,21 +15,15 @@ f1_keywords:
 - atlcom/ATL::COM_INTERFACE_ENTRY_FUNC
 - atlcom/ATL::COM_INTERFACE_ENTRY_FUNC_BLIND
 - atlcom/ATL::COM_INTERFACE_ENTRY_NOINTERFACE
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16aa17ef58e8e4a7f0b8970cb229b6c914f291fe
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 631e7a6f3676114e5d0bcac745dce58df1daf1ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080123"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578145"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları
 

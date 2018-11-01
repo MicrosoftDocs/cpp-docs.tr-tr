@@ -1,12 +1,6 @@
 ---
-title: Visual C++ dosyalarını yeniden dağıtma | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Dosyalarını Yeniden Dağıtma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - application deployment [C++], file redistributing
 - redistributing applications [C++]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - file redistribution [C++]
 - redistributing applications [C++], about redistributing applications
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09d65a19ecf573cc11d71fe49cdb40c1a748aafa
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 720cbfae3dd6b58cc836107562a15f6c713bfdd1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563066"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ Dosyalarını Yeniden Dağıtma
 

@@ -1,27 +1,17 @@
 ---
-title: scoped_d3d_access_lock sınıfı | Microsoft Docs
-ms.custom: ''
+title: scoped_d3d_access_lock Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - scoped_d3d_access_lock
 - AMPRT/scoped_d3d_access_lock
 - AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock
-dev_langs:
-- C++
 ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0bb3442de264e263ae0f0eabd93345eace1fde1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 08b6edc415d08d6dfb863fb90ff27bac6ce0960a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059616"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598451"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
 

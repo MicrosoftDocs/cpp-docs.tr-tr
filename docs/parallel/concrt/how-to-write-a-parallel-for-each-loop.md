@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: parallel_for_each döngüsü yazma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: parallel_for_each Döngüsü Yazma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - writing a parallel_for_each loop [Concurrency Runtime]
 - parallel_for_each function, example
 ms.assetid: fa9c0ba6-ace0-4f88-8681-c7c1f52aff20
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c68afa77c46e4d57ef01984b44ecb6f4951494a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e3b19ec180f9f4e75a2f280a0ecd159e5b932565
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610515"
 ---
 # <a name="how-to-write-a-parallelforeach-loop"></a>Nasıl yapılır: parallel_for_each Döngüsü Yazma
 

@@ -1,31 +1,21 @@
 ---
-title: pointers_to_members | Microsoft Docs
-ms.custom: ''
+title: pointers_to_members
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - pointers_to_members_CPP
 - vc-pragma.pointers_to_members
-dev_langs:
-- C++
 helpviewer_keywords:
 - class members, pointers to
 - pragmas, pointers_to_members
 - members, pointers to
 - pointers_to_members pragma
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c37828e88156b5be10abdf2fc41c396fdef33784
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 57b316fafd6f55a5979cd42fb6ac1825e3a9ea08
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511078"
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
 

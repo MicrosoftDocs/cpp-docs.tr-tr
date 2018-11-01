@@ -1,10 +1,6 @@
 ---
-title: pointer_traits yapısı | Microsoft Docs
-ms.custom: ''
+title: pointer_traits Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::pointer_traits::element_type
 - memory/std::pointer_traits::pointer
@@ -17,23 +13,17 @@ f1_keywords:
 - xmemory0/std::pointer_traits::difference_type
 - xmemory0/std::pointer_traits::rebind
 - memory/std::pointer_traits::pointer_to
-dev_langs:
-- C++
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d1485441dbea92f534314dafd9d86ab0ef8a4e69
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b661d4b36ce48a08faba6638c5114f3f4e6981a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856455"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434794"
 ---
 # <a name="pointertraits-struct"></a>pointer_traits Yapısı
 
-Şablon sınıfın bir nesnesi tarafından gereken tek bilgi sağlayan `allocator_traits` işaretçi türü ile bir ayırıcı açıklamak için `Ptr`.
+Şablon sınıfın bir nesnesinin gerektirdiği bilgileri sağlar `allocator_traits` bir ayırıcı işaretçi türü ile açıklamak için `Ptr`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,7 +34,7 @@ struct pointer_traits;
 
 ## <a name="remarks"></a>Açıklamalar
 
-PTR türündeki ham bir işaretçi olabilir `Ty *` veya aşağıdaki özelliklerle bir sınıf.
+PTR, bir ham işaretçi türü olabilir `Ty *` veya aşağıdaki özelliklere sahip bir sınıf.
 
 ```cpp
 struct Ptr
@@ -63,21 +53,21 @@ struct Ptr
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`typedef T2 difference_type`|Türü `T2` olan `Ptr::difference_type` türü varsa, aksi takdirde, `ptrdiff_t`. Varsa `Ptr` ham işaretçi türü `ptrdiff_t`.|
-|`typedef T1 element_type`|Türü `T1` olan `Ptr::element_type` türü varsa, aksi takdirde, `Ty`. Varsa `Ptr` ham işaretçi türü `Ty`.|
-|`typedef Ptr pointer`|Tür `Ptr`.|
+|`typedef T2 difference_type`|Türü `T2` olduğu `Ptr::difference_type` türü varsa, aksi takdirde, `ptrdiff_t`. Varsa `Ptr` ham bir işaretçi türü `ptrdiff_t`.|
+|`typedef T1 element_type`|Türü `T1` olduğu `Ptr::element_type` türü varsa, aksi takdirde, `Ty`. Varsa `Ptr` ham bir işaretçi türü `Ty`.|
+|`typedef Ptr pointer`|Türü `Ptr`.|
 
 ### <a name="structs"></a>Yapılar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`pointer_traits::rebind`|Temel alınan işaretçi Dönüştür girişimleri için belirtilen bir türün yazın.|
+|`pointer_traits::rebind`|Temel alınan işaretçiye dönüştürmek için girişimleri için belirtilen bir türün yazın.|
 
 ### <a name="methods"></a>Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[pointer_to](#pointer_to)|Sınıfın bir nesnesi için rasgele bir başvuru dönüştürür `Ptr`.|
+|[pointer_to](#pointer_to)|Rastgele bir başvuru sınıfının bir nesnesi için dönüştürür `Ptr`.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -87,7 +77,7 @@ struct Ptr
 
 ## <a name="pointer_to"></a>  pointer_to
 
-Döndüren statik yöntem `Ptr::pointer_to(obj)`, bu işlevin varsa. Aksi takdirde, sınıfın bir nesnesi için rasgele bir başvuru dönüştürülmesi mümkün değil `Ptr`. Varsa `Ptr` bir ham, bu yöntem işaretçidir `addressof(obj)`.
+Döndüren statik yöntem `Ptr::pointer_to(obj)`, bu işlev zaten varsa. Aksi takdirde, rastgele bir başvuru sınıfının bir nesnesi için dönüştürülmesi mümkün değil `Ptr`. Varsa `Ptr` bu yöntemi döndürür bir ham işaretçi olan `addressof(obj)`.
 
 ```cpp
 static pointer pointer_to(element_type& obj);

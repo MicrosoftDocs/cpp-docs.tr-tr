@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3026 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3026
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3026
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3026
 ms.assetid: 3297060e-cc5b-4600-a2db-09bfc4ffa21f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 67d7d4b05f8a04a9d30c32f8e61360e70f852ed0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da3c42433448dccea9f33e34b771da85d7e5b747
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574376"
 ---
 # <a name="compiler-error-c3026"></a>Derleyici Hatası C3026
 

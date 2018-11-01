@@ -1,27 +1,17 @@
 ---
-title: Başvuru türü işlev dönüşleri | Microsoft Docs
-ms.custom: ''
+title: Başvuru Türü İşlev Dönüşleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function return types [C++], reference type
 - data types [C++], function return types
 - functions [C++], return types
 ms.assetid: 5b73be1d-2dc7-41df-ab0a-adcba36f2ad1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64fb146da774220d11a0f56951f91d525056e91b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a2d7fa9ddbc1d4a2f922b5a20930e150ae991f38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461327"
 ---
 # <a name="reference-type-function-returns"></a>Başvuru Türü İşlev Dönüşleri
 

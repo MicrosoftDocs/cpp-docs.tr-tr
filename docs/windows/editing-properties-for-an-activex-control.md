@@ -1,27 +1,16 @@
 ---
-title: Bir ActiveX denetimi özelliklerini düzenleme | Microsoft Docs
-ms.custom: ''
+title: ActiveX Denetimi Özelliklerini Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], editing properties
 - ActiveX controls [C++], properties
 ms.assetid: e5880c62-36c7-4701-bc99-97a82974c22a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e754307c35d10aa36680a42415bd3a5b781321ba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ca73149e552942916e6b29f672067e37e39d9b9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580241"
 ---
 # <a name="editing-properties-for-an-activex-control"></a>ActiveX Denetimi Özelliklerini Düzenleme
 

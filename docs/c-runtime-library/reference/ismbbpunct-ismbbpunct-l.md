@@ -1,10 +1,6 @@
 ---
-title: _ismbbpunct, _ismbbpunct_l | Microsoft Docs
-ms.custom: ''
+title: _ismbbpunct, _ismbbpunct_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbpunct
 - _ismbbpunct_l
@@ -26,24 +22,18 @@ f1_keywords:
 - ismbbpunct_l
 - _ismbbpunct_l
 - _ismbbpunct
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbbpunct function
 - _ismbbpunct function
 - ismbbpunct_l function
 - _ismbbpunct_l function
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7881461b7468d27ac376ab942d35683928cc1651
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: acf23cf9da34ba50693aea7772cdbcfaeb146f2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400069"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563002"
 ---
 # <a name="ismbbpunct-ismbbpunctl"></a>_ismbbpunct, _ismbbpunct_l
 
@@ -64,14 +54,14 @@ int _ismbbpunct_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbpunct** sıfır olmayan bir değer döndürür tamsayı *c* ASCII olmayan noktalama simgesi. **_ismbbpunct** geçerli yerel ayar için herhangi bir yerel ayara bağımlı karakter ayarı kullanır. **_ismbbpunct_l** geçirilen yerel kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_ismbbpunct** sıfır olmayan bir değer döndürür tamsayı *c* ASCII olmayan noktalama işareti sembolü. **_ismbbpunct** herhangi bir yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbpunct_l** geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -80,7 +70,7 @@ Kullanılacak yerel ayar.
 |**_ismbbpunct**|\<Mbctype.h >|
 |**_ismbbpunct_l**|\<Mbctype.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

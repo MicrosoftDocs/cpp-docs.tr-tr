@@ -1,28 +1,17 @@
 ---
-title: Özel (C++) | Microsoft Docs
-ms.custom: ''
+title: özel (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.custom
-dev_langs:
-- C++
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7cdfa9011e0021d168c0ad10424a7d326b3c3725
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7aca125879591f71fe2ba60f34b712918350940f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565704"
 ---
 # <a name="custom-c"></a>özel (C++)
 

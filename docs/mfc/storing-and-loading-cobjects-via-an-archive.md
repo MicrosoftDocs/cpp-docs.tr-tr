@@ -1,14 +1,8 @@
 ---
-title: Depolama ve bir arşiv kullanarak Cobject'leri yükleme | Microsoft Docs
-ms.custom: ''
+title: Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObjects [MFC], loading through archives
 - CArchive class [MFC], storing and loading objects
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - CObject class [MFC], CArchive objects
 - CObjects [MFC]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e19626fab2e44bf88b4a378d094daaf7c377ad5d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 370e8202d1bd1cda04edbdbd12bd936bdf5ef7b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436968"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493697"
 ---
 # <a name="storing-and-loading-cobjects-via-an-archive"></a>Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
 

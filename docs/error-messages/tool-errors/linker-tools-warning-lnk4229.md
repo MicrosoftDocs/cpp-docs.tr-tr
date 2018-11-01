@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4229 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4229
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4229
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4229
 ms.assetid: 00e70d09-efd8-4e4e-8d48-6ba282c32ec1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0837942c7701f8349983f4651005123b5ba89232
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1dc1bf4ef80138bb0828290d5d86bb51aafe5e59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586049"
 ---
 # <a name="linker-tools-warning-lnk4229"></a>Bağlayıcı Araçları Uyarısı LNK4229
 

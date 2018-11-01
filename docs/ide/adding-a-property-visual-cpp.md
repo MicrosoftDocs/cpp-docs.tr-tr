@@ -1,26 +1,16 @@
 ---
-title: Özellik ekleme (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: Özellik Ekleme (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interfaces, adding properties
 - properties [C++], adding to interfaces
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bca3d282318217ad9d19c0576b933b45fcbc0b41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c47a5b50442f47e6042ea1232590dbdde7299ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393964"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563091"
 ---
 # <a name="adding-a-property-visual-c"></a>Özellik Ekleme (Visual C++)
 

@@ -1,27 +1,17 @@
 ---
-title: _com_error::ErrorInfo | Microsoft Docs
-ms.custom: ''
+title: _com_error::ErrorInfo
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_error::ErrorInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - ErrorInfo method [C++]
 ms.assetid: 071b446c-4395-4fb8-bd3d-300a8b25f5cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fc2906827e6a465106a3dbdcb8b63c7b53a39ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 59ada8a7e098e57cca5641a439365851bbae2485
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559009"
 ---
 # <a name="comerrorerrorinfo"></a>_com_error::ErrorInfo
 

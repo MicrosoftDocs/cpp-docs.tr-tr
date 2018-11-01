@@ -1,29 +1,19 @@
 ---
-title: CPtrList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPtrList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPtrList
-dev_langs:
-- C++
 helpviewer_keywords:
 - lists, generic
 - CPtrList class [MFC]
 - generic lists
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97eeeaaa2eea237eebda4f945f2c810268f406cd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dfd545e1758ea257a89606655bf735829dbe8840
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384968"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586400"
 ---
 # <a name="cptrlist-class"></a>CPtrList sınıfı
 

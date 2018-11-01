@@ -1,32 +1,22 @@
 ---
-title: '&lt;Liste&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;list&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <list>
 - std::<list>
-dev_langs:
-- C++
 helpviewer_keywords:
 - list header
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfb3ca14ddd52b81aa597ff83452ba3ed01541a3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cfe6e8b4f75a3dbf824574654bfba83dcbbd8ba6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857746"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558021"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
-Kapsayıcı şablon sınıf listesi ve çeşitli destekleyici şablonları tanımlar.
+Kapsayıcı Şablon sınıfı listesini ve çeşitli destek şablonları tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,18 +28,18 @@ Kapsayıcı şablon sınıf listesi ve çeşitli destekleyici şablonları tanı
 
 |İşleç|Açıklama|
 |-|-|
-|[operator!=](../standard-library/list-operators.md#op_neq)|Testleri işlecinin sol tarafındaki liste nesnesi sağ tarafında listesi nesnesine eşit değil.|
-|[operator <](../standard-library/list-operators.md#op_lt)|Liste nesnesi işlecinin sol tarafındaki liste nesnesi sağ tarafında küçükse testleri.|
-|[işleci\<=](../standard-library/list-operators.md#op_gt_eq)|Listenin işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında liste nesnesi eşit veya daha az olur.|
-|[operator==](../standard-library/list-operators.md#op_eq_eq)|Liste nesnesi işlecinin sol tarafındaki sağ tarafında listesi nesnesine eşitse testleri.|
-|[operator >](../standard-library/list-operators.md#op_gt)|Testleri işlecinin sol tarafındaki liste nesnesi sağ taraftaki liste nesnesi değerinden daha büyük.|
-|[operator>=](../standard-library/list-operators.md#op_gt_eq)|Testleri listesi işlecinin sol tarafındaki büyük veya ona eşit listesi nesnesine sağ tarafında nesnesidir.|
+|[operator!=](../standard-library/list-operators.md#op_neq)|İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
+|[işleç <](../standard-library/list-operators.md#op_lt)|İşlecin sol tarafındaki liste nesnesi işlecin sağ tarafındaki listesi nesneden küçük olup olmadığını sınar.|
+|[İşleci\<=](../standard-library/list-operators.md#op_gt_eq)|Listenin işlecinin sol tarafında nesne küçük olup olmadığını sınar veya liste nesnesi eşit işlecin sağ tarafındaki.|
+|[operator==](../standard-library/list-operators.md#op_eq_eq)|İşlecin sol tarafındaki listesi nesnesinin işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
+|[operator >](../standard-library/list-operators.md#op_gt)|İşlecin sol tarafındaki liste nesnesi liste nesnesi işlecin sağ tarafındaki büyük olup olmadığını sınar.|
+|[operator>=](../standard-library/list-operators.md#op_gt_eq)|İşlecin sol tarafındaki liste nesnesi büyük veya işlecin sağ tarafındaki liste nesnesine eşit olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[list Sınıfı](../standard-library/list-class.md)|Bir şablon sınıfı öğelerini doğrusal bir düzende korumak ve verimli eklemeler ve silmeler dizisi içindeki herhangi bir konumdaki izin veren dizisi kapsayıcıların.|
+|[list Sınıfı](../standard-library/list-class.md)|Doğrusal bir düzenleme içinde öğeleri korumak ve verimli eklemeler ve silmeler dizisi içindeki herhangi bir yere izin veren bir dizi kapsayıcılarının bir şablon sınıfı.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

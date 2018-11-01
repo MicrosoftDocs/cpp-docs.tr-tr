@@ -1,10 +1,6 @@
 ---
-title: _Interlockedor iç işlevleri | Microsoft Docs
-ms.custom: ''
+title: _Interlockedor iç işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedOr8_nf
 - _InterlockedOr_HLEAcquire
@@ -32,8 +28,6 @@ f1_keywords:
 - _InterlockedOr64_HLEAcquire
 - _InterlockedOr16
 - _InterlockedOr64_nf
-dev_langs:
-- C++
 helpviewer_keywords:
 - _InterlockedOr_acq intrinsic
 - InterlockedOr64 intrinsic
@@ -62,16 +56,12 @@ helpviewer_keywords:
 - _InterlockedOr16_rel intrinsic
 - _InterlockedOr_HLEAcquire intrinsic
 ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d056eea0e1c23cb5527bf2affc8074893164cee
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d8bc43adc2762330f2c4fb6b7803913f10d039bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439243"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571177"
 ---
 # <a name="interlockedor-intrinsic-functions"></a>_Interlockedor iç işlevleri
 

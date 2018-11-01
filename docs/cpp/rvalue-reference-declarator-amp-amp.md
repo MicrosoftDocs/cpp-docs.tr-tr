@@ -1,27 +1,17 @@
 ---
-title: 'Rvalue başvuru Bildirimcisi: &amp; &amp; | Microsoft Docs'
-ms.custom: ''
+title: 'Rvalue başvuru Bildirimcisi: &amp;&amp;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '&&'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64a42a65e112930767aa27f94612d06b7fb2d34a
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: caec1ae10db273b6ed604af29b20a1908b1313cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614649"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi: &amp;&amp;
 

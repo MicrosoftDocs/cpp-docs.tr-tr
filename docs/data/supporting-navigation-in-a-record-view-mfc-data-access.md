@@ -1,28 +1,17 @@
 ---
-title: (MFC veri erişimi) kayıt görünümünde gezintiyi destekleme | Microsoft Docs
-ms.custom: ''
+title: (MFC veri erişimi) kayıt görünümünde gezintiyi destekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - records [C++], navigating
 - record views, navigation
 - navigation [C++], in record view
 ms.assetid: 227f2a6d-87c9-4656-807a-8e246965bcce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 49c29a4410db2d4253fbd8afc917cd4298df513c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 86e98cd8b29b0056966f6f201589ded3347c9779
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074832"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450667"
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünde gezintiyi destekleme
 

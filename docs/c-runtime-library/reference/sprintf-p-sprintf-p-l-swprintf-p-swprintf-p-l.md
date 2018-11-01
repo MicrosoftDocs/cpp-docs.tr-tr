@@ -1,10 +1,6 @@
 ---
-title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _sprintf_p
 - _swprintf_p_l
@@ -31,8 +27,6 @@ f1_keywords:
 - swprint_p_l
 - swprintf_p
 - swprintf_p_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - sprintf_p_l function
 - swprintf_p function
@@ -48,20 +42,16 @@ helpviewer_keywords:
 - formatted text [C++]
 - _stprintf_p_l function
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02c28da8c066f51bb4366c7ed20e04266d37b074
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: c55dce7d37d63c79e8c8d9976a76adf331412812
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579611"
 ---
 # <a name="sprintfp-sprintfpl-swprintfp-swprintfpl"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 
-Biçimlendirilmiş verileri parametreleri biçim dizesi kullanılır order belirtme olanağı ile bir dizeye yazma.
+Biçimlendirilmiş verileri bir dizeye parametreleri Biçim dizesinde kullanılır sırasını belirtme olanağı ile yazın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -102,28 +92,28 @@ int _swprintf_p_l(
 *sizeOfBuffer*<br/>
 Depolanacak maksimum karakter sayısı.
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *argument_list*<br/>
-İsteğe bağlı bağımsız değişkenler için biçim dizesi.
+Biçim dizesi için isteğe bağlı bağımsız değişkenler.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan karakter sayısını veya bir hata oluştuysa -1.
+Yazılan karakter sayısını veya bir hata oluştu, -1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Sprintf_p** işlevi biçimlendirir ve bir dizi karakter ve değerleri depolar *arabellek*. Her bağımsız değişkeninde *argument_list* (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. *Biçimi* bağımsız değişkeni kullanır [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Bir null karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. Arasındaki farkı **_sprintf_p** ve **sprintf_s** olan **_sprintf_p** bağımsız değişkenleri olan düzeni belirtilmesine izin verir destekler konumsal Parametreler Biçim dizesi kullanılır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+**_Sprintf_p** işlevi biçimlendirir ve bir dizi karakter ve değerlerini depolar *arabellek*. Her bağımsız değişkende *argument_list* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. *Biçimi* bağımsız değişken kullanan [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Bir null karakter son karakter yazıldıktan sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. Arasındaki fark **_sprintf_p** ve **sprintf_s** olan **_sprintf_p** bağımsız değişkenleri olan sırasını belirtmeye izin veren konum parametrelerini desteklemesidir Biçim dizesindeki kullanılır. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_swprintf_p** bir joker karakter sürümü **_sprintf_p**; işaretçi bağımsız değişkenleri **_swprintf_p** joker karakter dizelerdir. Kodlama hataları algılama **_swprintf_p** , farklı olabilir **_sprintf_p**. **_swprintf_p** ve **fwprintf_p** durumlar dışında aynı şekilde davranır **_swprintf_p** bir dize yerine bir hedef türü çıktısı Yazar **dosya**, ve **_swprintf_p** gerektirir *sayısı* parametresi yazılacak karakter sayısını belirtin. Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+**_swprintf_p** geniş karakterli sürümüdür **_sprintf_p**; işaretçi bağımsız değişkenler **_swprintf_p** geniş karakterli dizelerdir. İçinde kodlama hatalarının algılanması **_swprintf_p** farklı **_sprintf_p**. **_swprintf_p** ve **fwprintf_p** aynı şekilde davranır **_swprintf_p** türünde bir hedef yerine bir dizeye çıktı Yazar **dosya**, ve **_swprintf_p** gerektirir *sayısı* parametresi en fazla yazılacak karakter sayısını belirtin. Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
-**_sprintf_p** depolanan bayt sayısını verir *arabellek*, sonlandırma null karakteri sayım değil. **_swprintf_p** depolanan geniş karakter sayısını verir *arabellek*, sonlandırma null geniş karakter sayım değil. Varsa *arabellek* veya *biçimi* null işaretçi veya biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+**_sprintf_p** içinde depolanan bayt sayısını döndüren *arabellek*, sondaki null karakter sayılmaz. **_swprintf_p** içinde depolanan geniş karakterlerin sayısını döndürür *arabellek*, sonlandırıcı geniş null karakter sayılmaz. Varsa *arabellek* veya *biçimi* null bir işaretçiyse veya biçim dizesi geçersiz biçim karakterleri içeriyorsa, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -139,7 +129,7 @@ Yazılan karakter sayısını veya bir hata oluştuysa -1.
 |**_sprintf_p**, **_sprintf_p_l**|\<stdio.h >|
 |**_swprintf_p**, **_swprintf_p_l**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -218,7 +208,7 @@ Wrote -1 characters
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>

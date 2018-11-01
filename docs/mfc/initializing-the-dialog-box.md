@@ -1,12 +1,6 @@
 ---
-title: İletişim kutusunu başlatma | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusunu Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - initializing dialog boxes [MFC]
 - OnInitDialog method [MFC]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - modeless dialog boxes [MFC], initializing
 - MFC dialog boxes [MFC], initializing
 ms.assetid: 968142f5-19f9-4b34-a1d4-8e6412d4379b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42526eea184cb4f28d5214fe0c56281ac6da9d6c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2312a158835b28e7a17a6c30bb1fa148a63c07fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426113"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507978"
 ---
 # <a name="initializing-the-dialog-box"></a>İletişim Kutusunu Başlatma
 

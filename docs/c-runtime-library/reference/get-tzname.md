@@ -1,10 +1,6 @@
 ---
-title: _get_tzname | Microsoft Docs
-ms.custom: ''
+title: _get_tzname
 ms.date: 10/22/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_tzname
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - _get_tzname
 - get_tzname
-dev_langs:
-- C++
 helpviewer_keywords:
 - _get_tzname function
 - time zones
 - get_tzname function
 ms.assetid: df0065ff-095f-4237-832c-2fe9ab913875
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d773d5d98466963ef621cc3fa7bc5ab8b4acc40a
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: c173832efb866eed133a908b5f2b72266fd3798a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990314"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452243"
 ---
 # <a name="gettzname"></a>_get_tzname
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2932 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2932
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2932
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2932
 ms.assetid: c28e88d9-e654-4367-bfb4-13c780bca9bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48c7655703774661ef6a5586f83a05e79585ce9f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 004767d4adbd87a2a21ec73fa720d6992eb31044
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564465"
 ---
 # <a name="compiler-error-c2932"></a>Derleyici Hatası C2932
 

@@ -1,14 +1,8 @@
 ---
-title: 'Tarih ve saat: SYSTEMTIME desteği | Microsoft Docs'
-ms.custom: ''
+title: 'Tarih ve saat: SYSTEMTIME desteği'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - SYSTEMTIME
-dev_langs:
-- C++
 helpviewer_keywords:
 - system time
 - FILETIME structure, with CTime class
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - dates [C++], MFC
 - formatting [C++], time
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57bd89cac53fa7092453b80e9f7e65bccf4f789f
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 6074eff2db45bfa69f83d7c45be1203dd19cc987
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549922"
 ---
 # <a name="date-and-time-systemtime-support"></a>Tarih ve saat: SYSTEMTIME desteği
 

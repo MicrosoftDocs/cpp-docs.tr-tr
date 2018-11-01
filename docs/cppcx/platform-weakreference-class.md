@@ -1,22 +1,16 @@
 ---
-title: Platform::WeakReference sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::WeakReference sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f8aa68a3a8bd94bf97f6e9a517c3f17c03ccaa5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 706877843602861d0dcf7f04a18999f30d3b77de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500450"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference sınıfı
 

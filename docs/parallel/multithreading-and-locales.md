@@ -1,28 +1,18 @@
 ---
-title: Çoklu iş parçacığı kullanımı ve yerel ayarlar | Microsoft Docs
-ms.custom: ''
+title: Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - locales [C++], multithreading
 - multithreading [C++], locales
 - threading [C++], locales
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d728bb8696a71eb733f15c236e42dc1859c5f135
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc3f43f67bbc744d550e2770096f0b6ae985175a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561609"
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 

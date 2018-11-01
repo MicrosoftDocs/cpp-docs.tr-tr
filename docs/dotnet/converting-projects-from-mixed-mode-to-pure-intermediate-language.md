@@ -1,29 +1,18 @@
 ---
-title: Karışık mod saf Ara dile dönüştürme projelerden | Microsoft Docs
-ms.custom: ''
+title: Projeleri Karışık Moddan Saf Ara Dile Dönüştürme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - intermediate language, mixed-mode applications
 - mixed-mode applications
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 7f9cbfce7e04040f0e1618148a3c258f21bb84b8
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 46a12e6204113b00c209696bbdfd1093232d7521
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559685"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf Ara dile dönüştürme
 

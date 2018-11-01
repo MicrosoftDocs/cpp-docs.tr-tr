@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2048 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2048
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2048
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2048
 ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dca0cf7e95f2a876760415d5c628287fab47227c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2cdb151d882d7b494e8d32494b0b3c8c62e01b3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560400"
 ---
 # <a name="compiler-error-c2048"></a>Derleyici Hatası C2048
 

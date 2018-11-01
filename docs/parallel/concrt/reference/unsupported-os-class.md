@@ -1,29 +1,19 @@
 ---
-title: unsupported_os sınıfı | Microsoft Docs
-ms.custom: ''
+title: unsupported_os Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - unsupported_os
 - CONCRT/concurrency::unsupported_os
 - CONCRT/concurrency::unsupported_os::unsupported_os
-dev_langs:
-- C++
 helpviewer_keywords:
 - unsupported_os class
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 326695b389fe72f7d4e5bdafecc43d51c08e5b98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a776daf138b5fa2da0426afd38bdf7f67721c199
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448275"
 ---
 # <a name="unsupportedos-class"></a>unsupported_os Sınıfı
 

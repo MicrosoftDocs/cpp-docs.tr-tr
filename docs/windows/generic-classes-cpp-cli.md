@@ -1,12 +1,7 @@
 ---
-title: Genel sınıflar (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Genel Sınıflar (C++/CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [C++], generic
 - generic classes [C++], about generic classes
@@ -14,17 +9,12 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f5d87663402081a06270f09547b2d61477d5ea3f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 74a16feb38f79b7e588324eb8d3fa72f88440a4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056912"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591779"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 

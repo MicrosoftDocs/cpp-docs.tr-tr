@@ -1,10 +1,6 @@
 ---
-title: Ivirtualprocessorroot yapısı | Microsoft Docs
-ms.custom: ''
+title: IVirtualProcessorRoot Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - IVirtualProcessorRoot
 - CONCRTRM/concurrency::IVirtualProcessorRoot
@@ -12,21 +8,15 @@ f1_keywords:
 - CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate
 - CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible
 - CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId
-dev_langs:
-- C++
 helpviewer_keywords:
 - IVirtualProcessorRoot structure
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 891fcd96901423e5d5c23b840784f9e050dbbe81
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 6e3f874aa7c20494483172d7c7c3efee362cf6a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162925"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569877"
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot Yapısı
 

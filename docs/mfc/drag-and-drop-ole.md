@@ -1,12 +1,6 @@
 ---
-title: Sürükleme ve bırakma (OLE) | Microsoft Docs
-ms.custom: ''
+title: Sürükleme ve Bırakma (OLE)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE server applications [MFC], drag and drop
 - drag and drop [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - drag and drop [MFC], about OLE drag and drop
 - OLE drag and drop [MFC]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 498644a159c6472ed197fcadd28ad0236d62ca0b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 956c746d6eef84edd7be3ab9b6c6d15107269b1c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450355"
 ---
 # <a name="drag-and-drop-ole"></a>Sürükleme ve Bırakma (OLE)
 

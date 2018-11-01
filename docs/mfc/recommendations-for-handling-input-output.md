@@ -1,12 +1,6 @@
 ---
-title: Giriş-Çıkış işleme için öneriler | Microsoft Docs
-ms.custom: ''
+title: Giriş-Çıkış işleme için öneriler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - I/O [MFC], about I/O
 - file-based I/O options
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - I/O [MFC], options
 - I/O [MFC], file-based options
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a8d0d2c7e560338bbef5cbe432c325385734c56
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1144337df9657d63c53a13e03cf31eb487ce4068
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385033"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585464"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>Giriş/Çıkış İşleme için Öneriler
 

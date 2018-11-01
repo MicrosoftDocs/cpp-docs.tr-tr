@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2401 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2401
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2401
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2401
 ms.assetid: 4c237b34-f771-4106-93e2-82dae337f1e2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74a1ad33de97993a6d773834b1637376efcedb33
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4f246020e038adb65bd428973b9629f6ea4a66af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474856"
 ---
 # <a name="compiler-error-c2401"></a>Derleyici Hatası C2401
 

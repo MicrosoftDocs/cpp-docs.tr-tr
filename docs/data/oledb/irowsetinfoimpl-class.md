@@ -1,10 +1,6 @@
 ---
-title: Irowsetınfoımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetInfoImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.IRowsetInfoImpl
 - IRowsetInfoImpl
@@ -24,25 +20,18 @@ f1_keywords:
 - IRowsetInfoImpl.GetSpecification
 - GetSpecification
 - ATL::IRowsetInfoImpl::GetSpecification
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRowsetInfoImpl class
 - GetProperties method
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ac05cdb93ff87e40c41a59ce466d81aa7bcb5e92
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 39c4f441e7b18fd93510620f1052677cdd0e881e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053480"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580290"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
 

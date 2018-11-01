@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2015 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2015
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2015
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2015
 ms.assetid: 8f40af0a-3a5a-4d6a-8ed7-125966e6bfed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fb9c3ba86224906f749088b96e5daae364d99e2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d761dfde26cce9c99ccd4c3e6fd86ae1d6e16ddc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573283"
 ---
 # <a name="compiler-error-c2015"></a>Derleyici Hatası C2015
 

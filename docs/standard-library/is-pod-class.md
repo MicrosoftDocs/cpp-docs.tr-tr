@@ -1,28 +1,18 @@
 ---
-title: is_pod sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_pod Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_pod
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_pod class
 - is_pod
 ms.assetid: d73ebdee-746b-4082-9fa4-2db71432eb0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 652937aba7b1c5626b617cec4e80761a22b55066
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 3dff4650cf0337a5ff54065d3b1644e11008ecfe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492254"
 ---
 # <a name="ispod-class"></a>is_pod Sınıfı
 

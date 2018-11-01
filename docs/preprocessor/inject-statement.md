@@ -1,27 +1,17 @@
 ---
-title: inject_statement | Microsoft Docs
-ms.custom: ''
+title: inject_statement
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - inject_statement
-dev_langs:
-- C++
 helpviewer_keywords:
 - inject_statement attribute
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27b35c10e9e1953dc45dee1caf61d2e58c38d02d
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: cf7d06eddb5ae6d08f57fb82613d97c7dcc36074
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566718"
 ---
 # <a name="injectstatement"></a>inject_statement
 

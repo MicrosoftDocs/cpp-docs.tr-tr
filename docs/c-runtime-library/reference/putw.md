@@ -1,10 +1,6 @@
 ---
-title: _putw | Microsoft Docs
-ms.custom: ''
+title: _putw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putw
 apilocation:
@@ -23,28 +19,22 @@ apitype: DLLExport
 f1_keywords:
 - _putw
 - putw
-dev_langs:
-- C++
 helpviewer_keywords:
 - integers, writing to streams
 - putw function
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5e33bc207fe83795c31f6c8b61d931985760e3a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3fd18c2a8869d6b09703547f50ee6e096bd72395
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404018"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602689"
 ---
 # <a name="putw"></a>_putw
 
-Tamsayı bir akışa yazar.
+Bir tamsayı bir akışa yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,20 +48,20 @@ int _putw(
 ### <a name="parameters"></a>Parametreler
 
 *binint*<br/>
-Çıktı için ikili tamsayı.
+Çıktı olacak tamsayı ikili.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan değeri döndürür. Dönüş değeri **EOF** gösteren bir hata olabilir. Çünkü **EOF** ayrıca bir meşru tamsayı, kullanım değil **ferror** hatayla doğrulanamadı. Varsa *akış* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EOF**.
+Yazılan değeri döndürür. Dönüş değeri **EOF** gösteren bir hata olabilir. Çünkü **EOF** de yasal tamsayı değeri, kullanım olan **ferror** hata doğrulamak için. Varsa *stream* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EOF**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Putw** işlevi bir ikili değer türü Yazar **int** geçerli konumuna *akış.* **_putw** akış öğelerin hizalamasını etkilemez ya da mevcut tüm özel hizalama varsayalım. **_putw** öncelikle önceki kitaplıkları ile uyumluluk içindir. Taşınabilirlik sorunlarını ile oluşabilir **_putw** çünkü boyutunu bir **int** ve baytları sipariş bir **int** sistemlerden farklılık gösterir.
+**_Putw** işlevi Yazar türünde ikili bir değer **int** geçerli konumuna *akış.* **_putw** öğelerinin stream'de hizalamasını etkilemez ya da mevcut herhangi bir özel hizalama varsayılır. **_putw** öncelikle önceki kitaplıkları ile uyumluluk içindir. Taşınabilirlik sorunlarını ile oluşabilir **_putw** çünkü boyutunu bir **int** ve bayt sırası bir **int** sistemler arasında farklılık gösterir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -79,7 +69,7 @@ Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno,
 |-------------|---------------------|
 |**_putw**|\<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -125,5 +115,5 @@ Wrote ten words
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_getw](getw.md)<br/>

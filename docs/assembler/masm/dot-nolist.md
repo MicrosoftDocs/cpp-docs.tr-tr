@@ -1,27 +1,17 @@
 ---
-title: . NOLIST | Microsoft Docs
-ms.custom: ''
+title: .NOLIST
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .NOLIST
-dev_langs:
-- C++
 helpviewer_keywords:
 - .NOLIST directive
 ms.assetid: 78f5cd18-7d2d-46ef-8325-11d6a501ee2d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 732d50c5575d04f8eadf6e8ffe00b78cba322f38
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 54f51780c910349b9911cc3c44aab399720aac55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556513"
 ---
 # <a name="nolist"></a>.NOLIST
 

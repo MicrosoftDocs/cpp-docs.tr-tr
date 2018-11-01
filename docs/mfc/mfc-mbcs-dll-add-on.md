@@ -1,25 +1,15 @@
 ---
-title: MFC MBCS DLL eklentisi | Microsoft Docs
-ms.custom: ''
+title: MFC MBCS DLL Eklentisi
 ms.date: 1/04/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MBCS
 - MFC
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa6840fe54478b88e201dd09950917b95c7a1cc4
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: a78425ac92aa9ddfe7f0b1b61dde915b3e088383
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558925"
 ---
 # <a name="mfc-mbcs-dll-add-on"></a>MFC MBCS DLL Eklentisi
 

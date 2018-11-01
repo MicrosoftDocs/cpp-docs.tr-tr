@@ -1,27 +1,17 @@
 ---
-title: __shiftright128 | Microsoft Docs
-ms.custom: ''
+title: __shiftright128
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __shiftright128
-dev_langs:
-- C++
 helpviewer_keywords:
 - __shiftright128 intrinsic
 ms.assetid: 5419a6c4-0de1-43fb-b314-4faa5b2d051f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10e848321f105f60643f579c12772f6a40edebeb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc72e70de4ba3bf5131044f073a0b5a531eabb0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383525"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589273"
 ---
 # <a name="shiftright128"></a>__shiftright128
 
@@ -32,10 +22,10 @@ ms.locfileid: "46383525"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned __int64 __shiftright128( 
-   unsigned __int64 LowPart, 
-   unsigned __int64 HighPart, 
-   unsigned char Shift 
+unsigned __int64 __shiftright128( 
+   unsigned __int64 LowPart, 
+   unsigned __int64 HighPart, 
+   unsigned char Shift 
 );
 ```
 

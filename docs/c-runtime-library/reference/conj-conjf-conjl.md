@@ -1,11 +1,6 @@
 ---
-title: conj, conjf, conjl | Microsoft Docs
-ms.custom: ''
+title: conj, conjf, conjl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - conj
 - conjf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/conj
 - complex/conjf
 - complex/conjl
-dev_langs:
-- C++
 helpviewer_keywords:
 - conj function
 - conjf function
 - conjl function
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb91b566c499ba9f34c7c67c9cdc24d67924601d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 57ed5e8570a3a2467bf7080524db9d1bef618091
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579965"
 ---
 # <a name="conj-conjf-conjl"></a>conj, conjf, conjl
 
-Karmaşık bir sayının karmaşık çiftini alır.
+Karmaşık çiftini, karmaşık bir sayıyı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,23 +64,23 @@ _Lcomplex conjl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Bir karmaşık sayı.
+Karmaşık bir sayıyı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık çiftini *z*.  Aynı gerçek ve sanal parçası olarak sonucu sahip *z*, ancak ters işaretle.
+Karmaşık çiftini *z*.  Sonuç aynı reel ve sanal parçası olarak sahip *z*, ancak zıt işaretiyle.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **conj** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **conj** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **conj** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **conj** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**conj**, **conjf**, **conjl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

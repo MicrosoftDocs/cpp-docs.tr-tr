@@ -1,10 +1,6 @@
 ---
-title: _Interlockeddecrement iç işlevleri | Microsoft Docs
-ms.custom: ''
+title: _Interlockeddecrement iç işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -27,8 +23,6 @@ f1_keywords:
 - _InterlockedDecrement64_cpp
 - _InterlockedDecrement_acq
 - _InterlockedDecrement_acq_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - InterlockedDecrement64_rel intrinsic
 - InterlockedDecrement64 intrinsic
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61dceb2e91a903201919cb40767e1d9730130530
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 180b371bc7613922295bec4d0208cf9aea3046e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541420"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_Interlockeddecrement iç işlevleri
 

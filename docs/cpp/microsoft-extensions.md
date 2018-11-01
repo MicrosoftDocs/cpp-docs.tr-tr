@@ -1,25 +1,15 @@
 ---
-title: Microsoft uzantıları | Microsoft Docs
-ms.custom: ''
+title: Microsoft Uzantıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft extensions to C/C++
 ms.assetid: 68654516-24ef-4f33-aae2-175f86cc1979
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5699ce82a6e8537f12da50fdcb8288da167ecca3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d8104c2df2335e11dcb711108d566e0fdd069762
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592211"
 ---
 # <a name="microsoft-extensions"></a>Microsoft Uzantıları
 

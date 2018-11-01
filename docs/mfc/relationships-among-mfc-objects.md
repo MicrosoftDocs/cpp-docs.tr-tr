@@ -1,28 +1,18 @@
 ---
-title: MFC nesneleri arasındaki ilişkiler | Microsoft Docs
-ms.custom: ''
+title: MFC Nesneleri Arasındaki İlişki
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, relationships between key objects
 - objects [MFC], relationships
 - relationships, MFC objects
 - MFC object relationships
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2f42f754157a4fc2e3f3e1aa40f38477b982e16
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c02cf723ee7711ec1bfe00841c90bbde8c260ac1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585516"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
 

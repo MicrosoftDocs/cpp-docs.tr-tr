@@ -1,10 +1,6 @@
 ---
-title: / OPT (iyileştirmeler) | Microsoft Docs
-ms.custom: ''
+title: /OPT (İyileştirmeler)
 ms.date: 05/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.OptimizeReferences
 - /opt
@@ -13,8 +9,6 @@ f1_keywords:
 - VC.Project.VCLinkerTool.OptimizeFolding
 - VC.Project.VCLinkerTool.FoldingIterations
 - VC.Project.VCLinkerTool.OptimizeFoldingIterations
-dev_langs:
-- C++
 helpviewer_keywords:
 - LINK tool [C++], controlling optimizations
 - -OPT linker option
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc9f7f66b9bd0ee2c0da65d17eac33e1cbc8c316
-ms.sourcegitcommit: da7b7533d1a4dc141cc0f09149e4e4196f2fe329
+ms.openlocfilehash: ad89dfa29df6e4ef500e01e53f203fa3c401602b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34463111"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638236"
 ---
 # <a name="opt-optimizations"></a>/OPT (İyileştirmeler)
 
@@ -41,75 +31,75 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
 ## <a name="syntax"></a>Sözdizimi
 
 > **/ OPT:**{**REF** | **NOREF**}<br/>
-> **/ OPT:**{**ICF**[**=**_yineleme_] | **NOICF**}<br/>
+> **/ OPT:**{**ICF**[**=**_yinelemeler_] | **NOICF**}<br/>
 > **/ OPT:**{**LBR** | **NOLBR**}
 
 ## <a name="arguments"></a>Arguments
 
 **REF** &AMP;#124; **NOREF**
 
-**/OPT:REF** işlevler ve hiçbir zaman başvurulan; veri ortadan kaldırır **/OPT:NOREF** işlevleri ve hiçbir zaman başvurulan verileri tutar.
+**/ OPT: ref** işlevleri ve hiçbir zaman başvurulmayan; verileri ortadan kaldırır. **Elenmesini** işlevleri ve hiçbir zaman başvurulmayan verileri tutar.
 
-/OPT:ref etkinleştirildiğinde, başvurulmayan paketlenmiş işlevler ve verileri, bilinen bağlantıyı kaldırır *COMDATs*. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. **/OPT:REF** seçeneği de devre dışı bırakır artımlı bağlama.
+/ OPT: ref etkin olduğunda, LINK başvurulmayan paketlenmiş işlevleri ve verileri, bilinen kaldırır *comdat'ları*. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. **/OPT: ref** seçeneği de devre dışı bırakır artımlı bağlama.
 
-Satır içi işlevler ve üye işlevleri sınıf bildirimi içinde tanımlanan her zaman COMDATs olur. Derlenmiş kullanarak ise tüm işlevleri bir nesne dosyasına COMDATs yapılan [/Gy](../../build/reference/gy-enable-function-level-linking.md) seçeneği. Yerleştirmek için **const** COMDATs verilerin, bildirmelidir onu kullanarak `__declspec(selectany)`. Verileri kaldırma veya Katlama belirtme hakkında daha fazla bilgi için bkz: [selectany](../../cpp/selectany.md).
+Her zaman satır içine alınmış işlevleri ve üye işlevleri sınıf bildirimi içinde tanımlanmış comdat'ları olur. Kullanarak derlenmişse tüm işlevlerin bir nesne dosyası comdat'ları yapılan [/Gy](../../build/reference/gy-enable-function-level-linking.md) seçeneği. Yerleştirmek için **const** comdat'ları verileri, size bildirmelidir bunu kullanarak `__declspec(selectany)`. Kaldırma veya Katlama için veri belirtme hakkında daha fazla bilgi için bkz: [selectany](../../cpp/selectany.md).
 
-Varsayılan olarak, **/OPT:REF** bağlayıcı tarafından sürece etkindir **/OPT:NOREF** veya [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilir. Bu varsayılanı geçersiz kılabilir ve programa başvurulmayan COMDATs tutmak için belirtmeniz **/OPT:NOREF**. Kullanabileceğiniz [/dahil](../../build/reference/include-force-symbol-references.md) belirli bir sembol kaldırılmasını geçersiz kılmak için seçeneği.
+Varsayılan olarak, **/OPT: ref** bağlayıcı tarafından sürece etkin **elenmesini** veya [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilir. Bu varsayılanı geçersiz kılmak ve başvurulmayan comdat'ları programda tutmak için bu seçeneği belirtin **elenmesini**. Kullanabileceğiniz [/INCLUDE](../../build/reference/include-force-symbol-references.md) belirli bir sembolün kaldırılmasını geçersiz kılmak için seçeneği.
 
-Varsa [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilirse, varsayılan **/OPT** olan **NOREF**, ve tüm işlevler görüntüde korunur. Bu varsayılanı geçersiz kılabilir ve hata ayıklama derlemesi en iyi duruma getirmek için belirtmeniz **/OPT:REF**. Bu yürütülebilir dosyanın boyutunu küçültebilirsiniz ve yararlı bir iyileştirme hata ayıklama bile derlemeler olabilir. Ayrıca belirttiğiniz öneririz **/OPT:NOICF** aynı korumak için hata ayıklama işlevlerde oluşturur. Bu yığın izlemelerini okumayı ve aksi takdirde birlikte katlanacak işlevlerde kesme noktalarını ayarlamayı kolaylaştırır.
+Varsa [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilirse, varsayılan **/OPT** olduğu **NOREF**, ve tüm işlevler görüntüde korunur. Bu varsayılanı geçersiz kılmak ve bir hata ayıklama derlemesini en iyileştirmek için belirtin **/OPT: ref**. Bu yürütülebilir dosyanızın boyutunu azaltabilir ve bir kullanışlı iyileştirme bile hata ayıklama yapıları olabilir. De belirtmenizi öneririz **noıcf** aynı korumak için hata ayıklama işlevlerini oluşturur. Bu yığın izlemelerini okumayı ve aksi takdirde birlikte katlanacak işlevlerde kesme noktalarını ayarlamayı kolaylaştırır.
 
-**ICF**\[**=**_yineleme_] &#124; **NOICF**
+**ICF**\[**=**_yinelemeler_] &#124; **NOICF**
 
-Kullanım **ICF**\[**=**_yineleme_] aynı comdat'ı Katlama gerçekleştirmek için. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı *yineleme* parametresi, yinelemeleri simgelerini çapraz geçiş sayısı belirtir. Yineleme varsayılan sayısı 1'dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.
+Kullanım **ICF**\[**=**_yinelemeler_] eşdeğer COMDAT katlaması gerçekleştirmek için. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı *yinelemeler* parametresi defa geçirileceğini yinelemeler için simgelerin sayısını belirtir. Varsayılan yineleme sayısı 1'dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.
 
-Varsayılan olarak, **/OPT:ICF** bağlayıcı tarafından sürece etkindir **/OPT:NOICF** veya [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilir. Bu varsayılanı geçersiz kılabilir ve programa Katlanmış COMDATs önlemek için belirtmek **/OPT:NOICF**.
+Varsayılan olarak, **/OPT: ICF** bağlayıcı tarafından sürece etkin **noıcf** veya [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilir. Bu varsayılanı geçersiz kılmak ve comdat'ları programda Katlanmış önlemek için belirtin **noıcf**.
 
-Bir hata ayıklama derlemesi, açıkça belirtmelisiniz **/OPT:ICF** comdat'ı Katlama etkinleştirmek için. Ancak, çünkü **/OPT:ICF** özdeş veriler veya İşlevler birleştirebilirsiniz, Yığın izlemeleri görünür işlev adlarını değiştirebilirsiniz. Ayrıca, belirli işlevlerde kesme noktalarını ayarlayın veya hata ayıklayıcısında bazı verileri incelemek için mümkün hale getirebilir ve beklenmeyen işlevlerini alabilir olduğunda, tek adımlı kodunuz. Kod davranışını aynıdır, ancak hata ayıklayıcı sunu çok kafa karıştırıcı olabilir. Bu nedenle, kullanmanızı öneririz değil **/OPT:ICF** içinde hata ayıklama derlemeleri sürece bu olumsuzlukları küçük kod avantajlarından daha ağır basar.
+Hata ayıklama yapısında, açıkça belirtmeniz gerekir **/OPT: ICF** COMDAT katlamayı etkinleştirmek için. Ancak, çünkü **/OPT: ICF** aynı verileri ve işlevleri birleştirebildiği, yığın izlemelerinde görünen işlev adlarını değiştirebilirsiniz. Ayrıca, belirli işlevlerde kesme noktalarını ayarlayın veya hata ayıklayıcı bazı verileri incelemek için imkansız zorlaştırabilir ve beklemediğiniz işlevlere götürebilir olduğunda, tek adımlı kodunuza. Kod davranışını aynıdır, ancak hata ayıklayıcı sunu çok kafa karıştırıcı olabilir. Bu nedenle, kullanmanızı öneririz değil **/OPT: ICF** hata ayıklama yapılarında daha küçük bir kodun avantajları bu dezavantajların üstünde olmadığı sürece.
 
 > [!NOTE]
-> Çünkü **/OPT:ICF** farklı işlevler veya salt okunur veri üyeleri için atanacak aynı adresini neden olabilir (diğer bir deyişle, **const** kullanarak derlendiğinde değişkenleri **/Gy**), benzersiz adresler işlevleri veya salt okunur veri üyeleri için bağımlı bir program bozulabilir. Daha fazla bilgi için bkz: [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md).
+> Çünkü **/OPT: ICF** aynı adresin farklı işlevlere veya salt okunur veri üyelerine atanan neden olabilir (diğer bir deyişle, **const** kullanılarak derlendiğinde değişkenleri **/Gy**), Bu işlevlere veya salt okunur veri üyelerine için benzersiz adreslere bağlı bir programı bozabilir. Daha fazla bilgi için [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md).
 
 **LBR** &AMP;#124; **NOLBR**
 
-**/OPT:LBR** ve **/OPT:NOLBR** seçenekleri, yalnızca ARM ikili dosyaları için geçerlidir. Belirli ARM işlemci dal yönergeleri sınırlı aralığa sahip olduğundan bağlayıcı, aralık dışı bir adrese atlandığını algılarsa dal yönergesinin hedef adresini, gerçek hedefe giden dal yönergesinin bulunduğu "ada" kodu adresiyle değiştirir. Kullanabileceğiniz **/OPT:LBR** uzun şube yönergeleri algılanmasını ve genel kod boyutu en aza indirmek için Ara kod Adaları yerleştirilmesi en iyi duruma getirme. **/OPT:NOLBR** kod Adaları uzun şube yönergeler için en iyi duruma getirme karşılaşılan oluşturmak için bağlayıcıya bildirir.
+**/OPT: LBR** ve **nolbr** seçenekleri, yalnızca ARM ikili dosyalar için geçerlidir. Belirli ARM işlemci dal yönergeleri sınırlı aralığa sahip olduğundan bağlayıcı, aralık dışı bir adrese atlandığını algılarsa dal yönergesinin hedef adresini, gerçek hedefe giden dal yönergesinin bulunduğu "ada" kodu adresiyle değiştirir. Kullanabileceğiniz **/OPT: LBR** uzun dal yönergeleri algılanmasını ve genel kod boyutunu en aza indirmek amacıyla Ara kod Adaları yerleşimini en iyi duruma getirme. **Nolbr** bağlayıcıyı iyileştirme yapmadan karşılaşılan uzun dal yönergeleri için kod Adaları oluşturma konusunda bilgilendirir.
 
-Varsayılan olarak, **/OPT:LBR** artımlı bağlama etkinleştirilmediğinde seçeneğini ayarlayın. Artımlı olmayan bir bağlantı ancak değil uzun şube iyileştirmeler istiyorsanız belirtin **/OPT:NOLBR**. **/OPT:LBR** seçeneğini artımlı bağlantılandırma devre dışı bırakır.
+Varsayılan olarak, **/OPT: LBR** seçeneği, artımlı bağlamayı etkinleştirilmediğinde ayarlanır. Uzun dal iyileştirmeleri değil, ancak artımlı olmayan bir bağlantı istiyorsanız, belirtin **nolbr**. **/OPT: LBR** seçeneği artımlı bağlamayı devre dışı bırakır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Komut satırında kullanıldığında, bağlayıcı için varsayılan olarak **/OPT:REF, ICF LBR**. Varsa **/DEBUG** belirtilmemişse, varsayılan **/OPT:NOREF, NOICR, NOLBR**.
+Bağlayıcı komut satırına kullanıldığında varsayılan **/OPT: ref, ICF LBR**. Varsa **/DEBUG** belirtilirse, varsayılan **noref, NOICR, NOLBR**.
 
-**/OPT** iyileştirmeleri genellikle görüntü boyutunu küçültmek ve program hızını artırır. Bu geliştirmeler perakende yapıları için varsayılan olarak etkin neden olduğu daha büyük programlarda önemli olabilir.
+**/OPT** iyileştirmeler genellikle görüntü boyutunu azaltır ve program hızını artırır. Bu geliştirmeler perakende derlemeleri için varsayılan olarak etkin neden olan daha büyük programlarda, önemli olabilir.
 
-Bağlayıcı iyileştirme fazladan Önden zaman, ancak en iyi duruma getirilmiş kod ayrıca zaman bağlayıcı düzeltmek için daha az relocatıons sahiptir ve daha küçük bir son resim oluşturur ve işlemek ve PDB yazmak için daha az hata ayıklama bilgileri olduğunda daha fazla zaman kazandırır zamandan tasarruf sağlar. İyileştirme etkinleştirildiğinde, küçük ek bir maliyet analizi olması birden fazla gibi bağlayıcı tasarruf küçük ikili dosyaları geçirir zamana göre uzaklığı, daha hızlı bağlantı saati, bir genel olarak, yol açabilir.
+Bağlayıcı en iyileştirme ek zaman Önden alır ancak en iyi duruma getirilmiş kod Ayrıca, bağlayıcı düzeltmek için daha az konum değiştirmeler içeriyor ve daha küçük bir son görüntü oluşturulur ve işlemek ve PDB yazmak için daha az hata ayıklama bilgileri olduğunda daha fazla zaman kaydeder zaman kazandırır. İyileştirme etkinleştirildiğinde, küçük bir ek maliyet analizi olması birden fazla olarak bağlayıcı tasarruf daha küçük ikili dosyaları geçirir zamanına göre uzaklığı, daha hızlı bağlantı saati, genel olarak, neden olabilir.
 
-**/OPT** bağımsız değişkenleri belirtilebilir birlikte, virgülle ayrılmış. Örneğin, yerine, **/OPT:REF /OPT:NOICF**, belirleyebileceğiniz **/OPT:REF, NOICF**.
+**/OPT** bağımsız değişken belirtilebilir birlikte, virgülle ayrılmış. Örneğin, yerine, **/OPT: ref noıcf**, belirtebileceğiniz **/OPT: ref, NOICF**.
 
-Kullanabileceğiniz [/VERBOSE](../../build/reference/verbose-print-progress-messages.md) tarafından kaldırılır işlevleri görmek için bağlayıcı seçeneği **/OPT:REF** ve tarafından Katlanmış işlevleri **/OPT:ICF**.
+Kullanabileceğiniz [/VERBOSE](../../build/reference/verbose-print-progress-messages.md) tarafından kaldırılan işlevleri görmek için bağlayıcı seçeneği **/OPT: ref** ve tarafından katlanan işlevleri **/OPT: ICF**.
 
-**/OPT** bağımsız değişkenleri kullanılarak oluşturulan projeleri için genellikle ayarlanır **yeni proje** Visual Studio IDE içinde iletişim ve genellikle hata ayıklama için farklı değerlere sahip ve yapılandırmaları bırakın. Bu bağlayıcı seçenekleri projenizdeki için herhangi bir değer ayarlarsanız, komut satırında bağlayıcı tarafından kullanılan varsayılan değerlerle farklı olabilir Proje Varsayılanları elde edebilirsiniz.
+**/OPT** bağımsız değişkenler kullanılarak oluşturulan projeler için genellikle ayarlanır **yeni proje** iletişim kutusunda Visual Studio IDE ve genellikle hata ayıklama için farklı değerlere sahip ve yayın yapılandırmaları. Bu bağlayıcı seçenekleri, projenizdeki herhangi bir değer ayarlarsanız, komut satırında bağlayıcı tarafından kullanılan varsayılan değerleri farklı Proje Varsayılanları elde edebilirsiniz.
 
 ### <a name="to-set-the-opticf-or-optref-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki OPT:ICF veya OPT:REF bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **en iyi duruma getirme** özellik sayfası.
+1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
 
 1. Bu özelliklerden birini değiştirin:
 
-   - **Comdat'ı Katlama etkinleştir**
+   - **COMDAT katlamasını etkinleştir**
 
    - **Başvurular**
 
 ### <a name="to-set-the-optlbr-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki OPT:LBR bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
-1. Seçenek girin **ek seçenekler**:
+1. De seçeneği girin **ek seçenekler**:
 
-   `/opt:lbr` Veya `/opt:nolbr`
+   `/opt:lbr` veya `/opt:nolbr`
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

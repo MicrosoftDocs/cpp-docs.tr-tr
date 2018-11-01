@@ -1,23 +1,13 @@
 ---
-title: Grafikler (C++ AMP) | Microsoft Docs
-ms.custom: ''
+title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97c673e564a91447854dc02a18ced0b4f0061a9f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fcc1f11ff716654aadef91d86137b97e93b0a80f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570332"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 

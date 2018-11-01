@@ -1,27 +1,17 @@
 ---
-title: __interface | Microsoft Docs
-ms.custom: ''
+title: __interface
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __interface_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __interface keyword [C++]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34b861ade07070f296c3fb03a9eef441998b7af7
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 33a3d45f65ab5adf798a2b0f6b11191e6f6a0213
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573555"
 ---
 # <a name="interface"></a>__interface
 

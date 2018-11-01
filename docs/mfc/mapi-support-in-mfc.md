@@ -1,12 +1,6 @@
 ---
-title: MFC'de MAPI desteği | Microsoft Docs
-ms.custom: ''
+title: MFC'de MAPI Desteği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, MAPI support
 - MAPI support in MFC
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - MAPI, MFC
 - OnFileSendMail method [MFC]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23b538904c78fc0f0bc88b7c12de1bc4862a88ab
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 564ce185758d25682a88f18a23b0b11afc84a4d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567159"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
 

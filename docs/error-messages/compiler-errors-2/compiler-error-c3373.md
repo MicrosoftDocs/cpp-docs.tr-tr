@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3373 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3373
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3373
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3373
 ms.assetid: 6e7586c3-1a15-4773-ad20-f90090a400dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 336380c5097979df459a8d8ac4f7776aa84513be
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2f279d602d5023c2981f49ff088fec49a1c14c76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024028"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571905"
 ---
 # <a name="compiler-error-c3373"></a>Derleyici Hatası C3373
 

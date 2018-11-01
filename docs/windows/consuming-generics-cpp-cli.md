@@ -1,26 +1,16 @@
 ---
-title: Genel türleri kullanma (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Genel Türleri Kullanma (C++/CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - generics [C++], consuming from .NET languages
 ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6388342e4ca8e8c524bfa57e58f4090fe64af8ab
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3fa63ae0e75f4c754c8ff2dbdeb0d662246f00dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057190"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551742"
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)
 

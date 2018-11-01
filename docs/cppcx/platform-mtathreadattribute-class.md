@@ -1,28 +1,20 @@
 ---
-title: Platform::MTAThreadAttribute sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::MTAThreadAttribute sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::MTAThreadAttribute::Equals
 - VCCORLIB/Platform::MTAThreadAttribute::GetHashCode
 - VCCORLIB/Platform::MTAThreadAttribute::ToString
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::MTAThreadAttribute Class
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2bac4ae71d98cb81eaa05bd3fd6fdf817145e22
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 07a20457df1bb9124b965cfae27d30e9f31d7531
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163758"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528082"
 ---
 # <a name="platformmtathreadattribute-class"></a>Platform::MTAThreadAttribute sınıfı
 

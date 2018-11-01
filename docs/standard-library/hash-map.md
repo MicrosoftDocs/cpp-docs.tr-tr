@@ -1,27 +1,17 @@
 ---
-title: '&lt;hash_map&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;hash_map&gt;'
 ms.date: 01/18/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <hash_map>
 - std::<hash_map>
-dev_langs:
-- C++
 helpviewer_keywords:
 - hash_map header
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ef090aec97308a6d423c18daab5ee540efdd8a1
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9e8d53e841c93c474d6f6b7da925c8f72f73a8a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316333"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561531"
 ---
 # <a name="lthashmapgt"></a>&lt;hash_map&gt;
 

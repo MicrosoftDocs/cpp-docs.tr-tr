@@ -1,16 +1,10 @@
 ---
-title: setvbuf sabitleri | Microsoft Docs
-ms.custom: ''
+title: setvbuf Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _IOFBF
 - _IONBF
 - _IOLBF
-dev_langs:
-- C++
 helpviewer_keywords:
 - _IOFBF constant
 - IOFBF constant
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - IOLBF constant
 - _IONBF constant
 ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a367522c2f22007abcf24cdf74ada467d94b104
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 25c25741f54c1383a5bad9038b5b5d761dacdd89
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458060"
 ---
 # <a name="setvbuf-constants"></a>setvbuf Sabitleri
 

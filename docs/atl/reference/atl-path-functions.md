@@ -1,8 +1,6 @@
 ---
-title: ATL yol işlevleri | Microsoft Docs
-ms.custom: ''
+title: ATL yol işlevleri
 ms.date: 11/04/2016
-ms.topic: reference
 helpviewer_keywords:
 - ATL, path
 f1_keywords:
@@ -43,16 +41,12 @@ f1_keywords:
 - ATLPATH/ATL::ATLPath::StripToRoot
 - ATLPATH/ATL::ATLPath::UnquoteSpaces
 ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdb658b179e3e3488b070203ad7f0909610d4fd8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 86ddb3c6916675a92070684a04c7a6a6ecd8a134
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054650"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586075"
 ---
 # <a name="atl-path-functions"></a>ATL yol işlevleri
 

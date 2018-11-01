@@ -1,10 +1,6 @@
 ---
-title: CMFCColorPopupMenu sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCColorPopupMenu sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCColorPopupMenu
 - AFXCOLORPOPUPMENU/CMFCColorPopupMenu
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CreateTearOffBar
 - AFXCOLORPOPUPMENU/CMFCColorPopupMenu::GetMenuBar
 - AFXCOLORPOPUPMENU/CMFCColorPopupMenu::SetPropList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], CMFCColorPopupMenu
 - CMFCColorPopupMenu [MFC], CreateTearOffBar
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2bcb8a6781c9563f1017060dcfca64841a15f69
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a3bb6f4d2926f07f61891656613c06e5690c9099
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491462"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
 

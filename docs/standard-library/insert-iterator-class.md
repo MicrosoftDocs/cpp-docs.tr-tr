@@ -1,31 +1,21 @@
 ---
-title: insert_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: insert_iterator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iterator/std::insert_iterator
 - iterator/std::insert_iterator::container_type
 - iterator/std::insert_iterator::reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::insert_iterator [C++]
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6011bd8f413a2e0a849e2ef9ba7c5bc229913c41
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: fb18c67b6e7949486c33e95c7daf6bc6868d0baa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567810"
 ---
 # <a name="insertiterator-class"></a>insert_iterator Sınıfı
 

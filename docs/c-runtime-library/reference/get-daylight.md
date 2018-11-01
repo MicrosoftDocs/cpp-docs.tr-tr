@@ -1,10 +1,6 @@
 ---
-title: _get_daylight | Microsoft Docs
-ms.custom: ''
+title: _get_daylight
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __daylight
 - _get_daylight
@@ -24,23 +20,17 @@ apitype: DLLExport
 f1_keywords:
 - get_daylight
 - _get_daylight
-dev_langs:
-- C++
 helpviewer_keywords:
 - get_daylight function
 - daylight saving time offset
 - _get_daylight function
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0fbe7e36db2e5ca5365f43dc23281d9b5e79077d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03c3386e59379f460d3c07dc310153d990c02b05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444648"
 ---
 # <a name="getdaylight"></a>_get_daylight
 
@@ -54,28 +44,28 @@ error_t _get_daylight( int* hours );
 
 ### <a name="parameters"></a>Parametreler
 
-*Saatleri*<br/>
-Saat gün ışığından yararlanma saati olarak uzaklığı.
+*saat*<br/>
+Gün ışığından yararlanma saat uzaklığı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa ya da bir sıfır **errno** bir hata oluşursa değeri.
+Sıfır başarılı olursa ya da bir **errno** bir hata oluşursa değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_daylight** işlevi yaz saati bir tamsayı olarak saat sayısını alır. Yaz Saati etkinse, (birkaç bölgeler iki saatlik uzaklığı gözlemlemek rağmen) varsayılan bir saat uzaklığı.
+**_Get_daylight** işlevi yaz saati bir tamsayı olarak saat sayısını alır. Gün ışığından yararlanma etkinse, (Bazı bölgelerde iki saat uzaklığı gözlemleyin rağmen) varsayılan uzaklığı bir saattir.
 
-Varsa *saatleri* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Varsa *saat* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
 
-Makro yerine bu işlev kullanmanızı öneririz **_daylight** veya kullanım dışı işlev **__daylight**.
+Makro yerine bu işlevi kullanmanız önerilir **_daylight** veya kullanım dışı işlevine **__daylight**.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_daylight**|\<time.h >|
+|**_get_daylight**|\<TIME.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

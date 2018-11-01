@@ -1,10 +1,6 @@
 ---
-title: Ccustomınterpolator sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ccustomınterpolator sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCustomInterpolator
 - AFXANIMATIONCONTROLLER/CCustomInterpolator
@@ -23,8 +19,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CCustomInterpolator::m_finalValue
 - AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialValue
 - AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialVelocity
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCustomInterpolator [MFC], CCustomInterpolator
 - CCustomInterpolator [MFC], GetDependencies
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - CCustomInterpolator [MFC], m_initialValue
 - CCustomInterpolator [MFC], m_initialVelocity
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0c924f49d8b1ec00585c90d5e106a9f6446f521d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 49685d079e367449ee5973ab37f0bbc7ea44da14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072856"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431918"
 ---
 # <a name="ccustominterpolator-class"></a>Ccustomınterpolator sınıfı
 

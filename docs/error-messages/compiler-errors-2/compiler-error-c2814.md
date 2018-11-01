@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2814 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2814
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2814
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2814
 ms.assetid: 7d165136-a08b-4497-a76d-60a21bb19404
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef85e143b13ea5184235676179e33b387f751aa8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6562e8a0968f83a0e7e968b538b4d94dc1047fa5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046582"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474861"
 ---
 # <a name="compiler-error-c2814"></a>Derleyici Hatası C2814
 

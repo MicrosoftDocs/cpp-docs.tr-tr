@@ -1,31 +1,21 @@
 ---
-title: CComCritSecLock sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComCritSecLock sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComCritSecLock
 - ATLBASE/ATL::CComCritSecLock
 - ATLBASE/ATL::CComCritSecLock::CComCritSecLock
 - ATLBASE/ATL::CComCritSecLock::Lock
 - ATLBASE/ATL::CComCritSecLock::Unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComCritSecLock class
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab3c4b349b64b96b8aeb7a53d6bf8809f41cea7b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0f68f48867510c270c7c69e325a796f274198d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097789"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607005"
 ---
 # <a name="ccomcritseclock-class"></a>CComCritSecLock sınıfı
 

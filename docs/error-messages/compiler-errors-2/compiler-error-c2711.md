@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2711 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2711
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2711
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2711
 ms.assetid: 9df9f808-7419-4e63-abdd-e6538ff0871f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5a2e757c525d272055077cb95516abf42c06dbc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 568128d6199d16380b6a540173eded25f5588d23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088442"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571853"
 ---
 # <a name="compiler-error-c2711"></a>Derleyici Hatası C2711
 

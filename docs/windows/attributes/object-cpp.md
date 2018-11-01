@@ -1,28 +1,17 @@
 ---
-title: Nesne (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Nesne (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.object
-dev_langs:
-- C++
 helpviewer_keywords:
 - object attribute
 ms.assetid: f2d3c231-630d-4b4c-bd15-b1c30df362dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8828ada429875245d583c30d65259300a01f6a5d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1cae9e6b014f33dfbbcccdeb4172d6f35349e307
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067442"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526179"
 ---
 # <a name="object-c"></a>nesne (C++)
 

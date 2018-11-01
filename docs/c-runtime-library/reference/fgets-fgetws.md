@@ -1,10 +1,6 @@
 ---
-title: fgets, fgetws | Microsoft Docs
-ms.custom: ''
+title: fgets, fgetws
 ms.date: 07/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fgets
 - fgetws
@@ -25,8 +21,6 @@ f1_keywords:
 - _fgetts
 - fgetws
 - fgets
-dev_langs:
-- C++
 helpviewer_keywords:
 - _fgetts function
 - streams, getting strings from
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - fgetws function
 - fgetts function
 ms.assetid: ad549bb5-df98-4ccd-a53f-95114e60c4fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab57eecfec91e277f3409ba7b9b33d99a4b52e4b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 16dfb7cb0401083960669a735a976fbcd4ad4081
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067571"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489576"
 ---
 # <a name="fgets-fgetws"></a>fgets, fgetws
 

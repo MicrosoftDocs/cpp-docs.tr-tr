@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2755 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2755
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2755
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2755
 ms.assetid: 8ee4eeb6-4757-4efe-9100-38ff4a96f1de
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56ecf997df2aeb1a41b5021d61b24073e871b55f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c2238058dc4b7df6bbe33e98d6ccde996f36b782
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064930"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570696"
 ---
 # <a name="compiler-error-c2755"></a>Derleyici Hatası C2755
 

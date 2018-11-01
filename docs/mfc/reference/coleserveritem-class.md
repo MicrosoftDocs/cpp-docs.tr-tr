@@ -1,10 +1,6 @@
 ---
-title: Coleserverıtem sınıfı | Microsoft Docs
-ms.custom: ''
+title: Coleserverıtem sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleServerItem
 - AFXOLE/COleServerItem
@@ -42,8 +38,6 @@ f1_keywords:
 - AFXOLE/COleServerItem::OnOpen
 - AFXOLE/COleServerItem::OnShow
 - AFXOLE/COleServerItem::m_sizeExtent
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleServerItem [MFC], COleServerItem
 - COleServerItem [MFC], AddOtherClipboardData
@@ -80,16 +74,12 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 466dfbc2407df7985a925accf4bcee0eb815f3e0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e0d48d37d8262c4e82a8532333bbd12f193087b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442532"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604142"
 ---
 # <a name="coleserveritem-class"></a>Coleserverıtem sınıfı
 

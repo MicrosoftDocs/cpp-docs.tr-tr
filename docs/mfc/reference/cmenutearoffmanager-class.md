@@ -1,10 +1,6 @@
 ---
-title: CMenuTearOffManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMenuTearOffManager sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMenuTearOffManager
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMenuTearOffManager [MFC], CMenuTearOffManager
 - CMenuTearOffManager [MFC], Build
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CMenuTearOffManager [MFC], SetInUse
 - CMenuTearOffManager [MFC], SetupTearOffMenus
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d9d33f5cb060bfab32426a4c9492244fb1c432b9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 60e89967d139a3f5bc7b96cc1823b31b98a57fb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558853"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
 

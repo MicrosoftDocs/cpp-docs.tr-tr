@@ -1,27 +1,17 @@
 ---
-title: 'OLE arka planı: Uygulama stratejileri | Microsoft Docs'
-ms.custom: ''
+title: 'OLE Arka Planı: Uygulama Stratejileri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE [MFC], development strategy
 - OLE applications [MFC], implementing OLE
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae49db47905f38c4b614609a7a4b73c4597292e3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a9bcbc16b08f16953df92efe5a83db39f9a33cc5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075917"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624399"
 ---
 # <a name="ole-background-implementation-strategies"></a>OLE Arka Planı: Uygulama Stratejileri
 

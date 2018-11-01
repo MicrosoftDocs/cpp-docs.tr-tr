@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2838 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2838
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2838
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2838
 ms.assetid: 176b2ad6-7a84-4019-b97e-328866054457
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5607df86a44174536f58242c5c0a98f7fe5e7dc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1482efa8b018914a4ebc509464622726ae9ebb20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045282"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560397"
 ---
 # <a name="compiler-error-c2838"></a>Derleyici Hatası C2838
 

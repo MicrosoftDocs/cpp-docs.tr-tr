@@ -1,27 +1,17 @@
 ---
-title: Satır içi derlemenin avantajları | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Derleme Avantajları
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - assembler [C++], advantages
 - inline assembly [C++], about inline assembly
 - inline assembly [C++], using
 ms.assetid: 94364d97-faa7-4bdf-8473-570956986c51
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 820c862b90de3fd0d91a68d5a388b77f9a30a142
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ecf1598ec90a8600e1fa9aae565724c254dc11e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556747"
 ---
 # <a name="advantages-of-inline-assembly"></a>Satır İçi Derleme Avantajları
 

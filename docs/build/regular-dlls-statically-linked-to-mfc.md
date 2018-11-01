@@ -1,12 +1,6 @@
 ---
-title: Statik olarak MFC'ye bağlı normal MFC DLL'leri | Microsoft Docs
-ms.custom: ''
+title: Statik olarak MFC'ye bağlı normal MFC DLL'leri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - regular MFC DLLs [C++]
 - DLLs [C++], regular
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - statically linked DLLs [C++]
 - regular MFC DLLs [C++], statically linked to MFC
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1039d0690c52d2e41a919836b1c1a615e32b0107
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fee2d3b84949241cda421d6ea587e1ab9c6e58e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705733"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565548"
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>Statik olarak MFC'ye bağlı normal MFC DLL'leri
 

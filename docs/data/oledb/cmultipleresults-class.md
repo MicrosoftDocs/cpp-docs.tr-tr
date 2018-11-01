@@ -1,30 +1,19 @@
 ---
-title: CMultipleResults sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMultipleResults Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.CMultipleResults
 - ATL::CMultipleResults
 - CMultipleResults
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMultipleResults class
 ms.assetid: 6ce5bbb9-b551-483c-988a-e6aee9135a19
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 0d6603a410d44608d999685f42954e4562855138
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0fb25d4106c04622a6bf5fd782432fc75b92c236
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072986"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535036"
 ---
 # <a name="cmultipleresults-class"></a>CMultipleResults Sınıfı
 

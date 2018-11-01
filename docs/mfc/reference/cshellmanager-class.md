@@ -1,10 +1,6 @@
 ---
-title: CShellManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CShellManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CShellManager
 - AFXSHELLMANAGER/CShellManager
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXSHELLMANAGER/CShellManager::GetNextItem
 - AFXSHELLMANAGER/CShellManager::GetParentItem
 - AFXSHELLMANAGER/CShellManager::ItemFromPath
-dev_langs:
-- C++
 helpviewer_keywords:
 - CShellManager [MFC], CShellManager
 - CShellManager [MFC], BrowseForFolder
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CShellManager [MFC], GetParentItem
 - CShellManager [MFC], ItemFromPath
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1476a59e482cb2ec88b57e4b1b83f5a45afc3790
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 428f64dadb91887c4d076693e5dc939b6aff7680
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426932"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571242"
 ---
 # <a name="cshellmanager-class"></a>CShellManager sınıfı
 

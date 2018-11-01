@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1900 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1900
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1900
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1900
 ms.assetid: 3aaa583b-4c1a-45de-aa34-527d806f2cb5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b2211b4243ddf44194959a263fd90ec1a615ea0a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c4622dd4552f7bfcc822a3aab4d5783146d68ac7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581863"
 ---
 # <a name="fatal-error-c1900"></a>Önemli hata C1900
 

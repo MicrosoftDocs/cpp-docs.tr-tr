@@ -1,25 +1,15 @@
 ---
-title: Pragmalar | Microsoft Docs
-ms.custom: ''
+title: Pragmalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, about pragmas
 ms.assetid: 3ce8aced-53ee-4524-87d0-f998d6977ff5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8dfdf894cca16c7c8a6a82ca5f5910aa31cd4bed
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0bb656abd919578df0bcb2c7624273cecb7d630c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596800"
 ---
 # <a name="pragmas"></a>Pragmalar
 

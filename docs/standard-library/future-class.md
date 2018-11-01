@@ -1,10 +1,6 @@
 ---
-title: Future sınıfı | Microsoft Docs
-ms.custom: ''
+title: future Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - future/std::future
 - future/std::future::future
@@ -14,11 +10,7 @@ f1_keywords:
 - future/std::future::wait
 - future/std::future::wait_for
 - future/std::future::wait_until
-dev_langs:
-- C++
 ms.assetid: 495e82c3-5341-4e37-87dd-b40107fbdfb6
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::future [C++]
 - std::future [C++], future
@@ -28,14 +20,12 @@ helpviewer_keywords:
 - std::future [C++], wait
 - std::future [C++], wait_for
 - std::future [C++], wait_until
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e55f5d9759de0993f0202612e237bb778a195602
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9ca18e62038d93a50b592868f71223962a22857d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106659"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551885"
 ---
 # <a name="future-class"></a>future Sınıfı
 

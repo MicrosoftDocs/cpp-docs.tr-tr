@@ -1,10 +1,6 @@
 ---
-title: CCubicTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCubicTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCubicTransition
 - AFXANIMATIONCONTROLLER/CCubicTransition
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity
 - AFXANIMATIONCONTROLLER/CCubicTransition::m_duration
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCubicTransition [MFC], CCubicTransition
 - CCubicTransition [MFC], Create
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CCubicTransition [MFC], m_dblFinalVelocity
 - CCubicTransition [MFC], m_duration
 ms.assetid: 4fc30e9c-160c-45e1-bdbe-51adf8fee9c5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bd07d8f57396da78ce19cb5ac568d651f71459b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d2064a94bb0524eb589f54e84c7bbe00ce89954b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398078"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520230"
 ---
 # <a name="ccubictransition-class"></a>CCubicTransition sınıfı
 

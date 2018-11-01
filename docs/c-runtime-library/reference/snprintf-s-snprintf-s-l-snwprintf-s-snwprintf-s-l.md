@@ -1,10 +1,6 @@
 ---
-title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l | Microsoft Docs
-ms.custom: ''
+title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _snprintf_s
 - _snprintf_s_l
@@ -35,8 +31,6 @@ f1_keywords:
 - snwprintf_s
 - sntprintf_s
 - sntprintf_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _snprintf_s_l function
 - _snwprintf_s_l function
@@ -52,20 +46,16 @@ helpviewer_keywords:
 - _snwprintf_s function
 - formatted text [C++]
 ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3744fc543cd5c478ffba01e3abca9b152145be6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5918ab1dd9b7108248e638f267ceb8757802231a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416445"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560036"
 ---
 # <a name="snprintfs-snprintfsl-snwprintfs-snwprintfsl"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 
-Biçimlendirilmiş verileri bir dizeye yazar. Sürümleri bunlar [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Biçimlendirilmiş verileri bir dizeye yazar. Bunlar sürümleridir [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -122,12 +112,12 @@ int _snwprintf_s(
 Çıktı için depolama konumu.
 
 *sizeOfBuffer*<br/>
-Çıktı için depolama konumu boyutu. İçinde boyut **bayt** için **_snprintf_s** veya cinsinden büyüklük **sözcükler** için **_snwprintf_s**.
+Çıktı için depolama konumu boyutu. İçinde boyut **bayt** için **_snprintf_s** veya cinsinden büyüklük **sözcükleri** için **_snwprintf_s**.
 
 *Sayısı*<br/>
-En fazla depolamak için karakter sayısını veya [_TRUNCATE](../../c-runtime-library/truncate.md).
+Saklanacak karakter sayısı veya [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *Bağımsız değişken*<br/>
@@ -138,28 +128,28 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_snprintf_s** depolanan karakterlerin sayısını döndürür *arabellek*, sonlandırma null karakteri sayım değil. **_snwprintf_s** depolanan geniş karakter sayısını verir *arabellek*, sonlandırma null geniş karakter sayım değil.
+**_snprintf_s** depolanan karakterlerin sayısını döndürür *arabellek*, sondaki null karakter sayılmaz. **_snwprintf_s** içinde depolanan geniş karakterlerin sayısını döndürür *arabellek*, sonlandırıcı geniş null karakter sayılmaz.
 
-Veri ve bir sonlandırma null depolamak için gerekli depolama aşarsa *sizeOfBuffer*, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Geçersiz parametre işleyicisi sonra yürütme devam ederse, bu işlevler kümesi *arabellek* boş bir dize olarak ayarlayın **errno** için **ERANGE**ve -1 döndürür.
+Veri ve sonlandırıcı bir null depolamak için gereken depolama alanı aşarsa *sizeOfBuffer*, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Geçersiz parametre işleyicisi sonra yürütülmesine devam ederse, bu işlevler kümesi *arabellek* boş bir dize olarak ayarlanmış **errno** için **ERANGE**ve -1 döndürür.
 
-Varsa *arabellek* veya *biçimi* olan bir **NULL** işaretçisi veya *sayısı* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır. Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
+Varsa *arabellek* veya *biçimi* olduğu bir **NULL** işaretçisi veya *sayısı* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Snprintf_s** işlevi biçimleri ve depoları *sayısı* veya daha az karakter *arabellek* ve bir sonlandırma null ekler. Her bağımsız değişken (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. Biçimlendirme tutarlıdır **printf** ailesi işlevlerini; bkz: [biçim belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**_Snprintf_s** işlevi biçimlendirir ve saklar *sayısı* ya da daha az karakter *arabellek* ve sonlandırıcı bir null ekler. Her bağımsız değişken (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. Biçimlendirme ile tutarlı **printf** işlevler ailesini; bkz: [biçim belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-Varsa *sayısı* olan [_TRUNCATE](../../c-runtime-library/truncate.md), ardından **_snprintf_s** yazma dize olarak çok uygun *arabellek* yer bırakarak çalışırken bir null sonlandırılıyor. Tüm dizesiyle (sonlandırma null) uyuyorsa *arabellek*, ardından **_snprintf_s** (sonlandırma null dahil değil) yazılmış; karakterlerin sayısını döndürür Aksi halde, **_snprintf_s**  oluştu, kesme belirtmek için -1 döndürür.
+Varsa *sayısı* olduğu [_TRUNCATE](../../c-runtime-library/truncate.md), ardından **_snprintf_s** yazma olacak olarak dize çok sığacak *arabellek* yer bırakmak çalışırken bir null Sonlandırıcı. Tüm dizesiyle (Sonlandırıcı null) sığıyorsa *arabellek*, ardından **_snprintf_s** (Sonlandırıcı null içermeden) yazılmış; karakter sayısını döndürür. Aksi takdirde, **_snprintf_s**  oluştu, kesme belirtmek için -1 döndürür.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
 
-**_snwprintf_s** bir joker karakter sürümü **_snprintf_s**; işaretçi bağımsız değişkenleri **_snwprintf_s** joker karakter dizelerdir. Kodlama hataları algılama **_snwprintf_s** uygulamasında farklılık gösterebilir **_snprintf_s**. **_snwprintf_s**gibi **swprintf_s**, bir dize yerine bir hedef türü çıktısı Yazar **dosya**.
+**_snwprintf_s** geniş karakterli sürümüdür **_snprintf_s**; işaretçi bağımsız değişkenler **_snwprintf_s** geniş karakterli dizelerdir. İçinde kodlama hatalarının algılanması **_snwprintf_s** farklı **_snprintf_s**. **_snwprintf_s**gibi **swprintf_s**, türünde bir hedef yerine bir dizeye çıktı Yazar **dosya**.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -175,7 +165,7 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 |**_snprintf_s**, **_snprintf_s_l**|\<stdio.h >|
 |**_snwprintf_s**, **_snwprintf_s_l**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -307,7 +297,7 @@ Invalid parameter handler invoked: ("Buffer too small", 0)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>

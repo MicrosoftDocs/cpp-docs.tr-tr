@@ -1,26 +1,16 @@
 ---
-title: Atama | Microsoft Docs
-ms.custom: ''
+title: Atama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], assignment
 - assignment operators [C++], overloaded
 ms.assetid: d87e4f89-f8f5-42c1-9d3c-184bca9d0e15
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4955fb16d76bc68166bf314b9e1e8c02cd8e244
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 1e6d715011cfaab7e250e23a9a31bb3f0c83f36a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131479"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603446"
 ---
 # <a name="assignment"></a>Atama
 

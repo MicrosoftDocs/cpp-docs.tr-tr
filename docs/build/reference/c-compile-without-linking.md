@@ -1,14 +1,8 @@
 ---
-title: -c (bağlamadan Derle) | Microsoft Docs
-ms.custom: ''
+title: /c (Bağlamadan Derle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /c
-dev_langs:
-- C++
 helpviewer_keywords:
 - suppress link
 - cl.exe compiler, compiling without linking
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de6fe291bde8652b772c7091c1919836f88960fd
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6be3b15efb56e97d658edb5890c3bdce4f64fbd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710352"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625166"
 ---
 # <a name="c-compile-without-linking"></a>/c (Bağlamadan Derle)
 

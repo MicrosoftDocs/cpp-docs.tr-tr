@@ -1,29 +1,18 @@
 ---
-title: Karışık derlemeler için kitaplık desteği | Microsoft Docs
-ms.custom: ''
+title: Karışık Derlemeler için Kitaplık Desteği
 ms.date: 09/18/2018
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - msvcm90[d].dll
 - mixed assemblies [C++], library support
 - msvcmrt[d].lib
 - libraries [C++], mixed assemblies
 ms.assetid: 1229595c-9e9d-414d-b018-b4e4c727576d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 8c3fec26f3e41c3edd2346ac2e1b9b1f6b98ba33
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 42116c09d5b31cf669eb6d5d1e75eae60b2610a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069626"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474768"
 ---
 # <a name="library-support-for-mixed-assemblies"></a>Karışık Derlemeler için Kitaplık Desteği
 

@@ -1,10 +1,6 @@
 ---
-title: towctrans | Microsoft Docs
-ms.custom: ''
+title: towctrans
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - towctrans
 apilocation:
@@ -22,25 +18,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - towctrans
-dev_langs:
-- C++
 helpviewer_keywords:
 - towctrans function
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9d70570339868feb62ee906a707cf16ca03d556
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b814c65d2f5d0bb18b19d97a539d79dd6df8a1c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407635"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561414"
 ---
 # <a name="towctrans"></a>towctrans
 
-Bir karakter dönüştürür.
+Bir karakteri dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,10 +44,10 @@ wint_t towctrans(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Dönüştürmek istediğiniz karakter.
+Dönüştürmek istediğiniz karakterdir.
 
 *Kategori*<br/>
-Dönüş değerini içeren bir tanımlayıcı [wctrans](wctrans.md).
+Dönüş değeri içeren bir tanımlayıcı [wctrans](wctrans.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -65,7 +55,7 @@ Karakter *c*, sonra **towctrans** dönüştürme kuralda kullanılan *kategori*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değeri *kategori* başarılı bir önceki çağrısı tarafından Döndürülmüş gerekir [wctrans](wctrans.md).
+Değerini *kategori* başarılı bir önceki çağrı tarafından iade edilmiş gerekir [wctrans](wctrans.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +63,7 @@ Değeri *kategori* başarılı bir önceki çağrısı tarafından Döndürülm�
 |-------------|---------------------|
 |**towctrans**|\<wctype.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

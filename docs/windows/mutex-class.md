@@ -1,34 +1,24 @@
 ---
-title: Mutex sınıfı | Microsoft Docs
-ms.custom: ''
+title: Mutex Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Mutex
 - corewrappers/Microsoft::WRL::Wrappers::Mutex::Lock
 - corewrappers/Microsoft::WRL::Wrappers::Mutex::Mutex
 - corewrappers/Microsoft::WRL::Wrappers::Mutex::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Mutex class
 - Microsoft::WRL::Wrappers::Mutex::Lock method
 - Microsoft::WRL::Wrappers::Mutex::Mutex, constructor
 - Microsoft::WRL::Wrappers::Mutex::operator= operator
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 37aaafa636f43671eb18436a49490caa10cf349f
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: a1fbcc58109fdff738a09047155f649b6f063c5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582539"
 ---
 # <a name="mutex-class"></a>Mutex Sınıfı
 

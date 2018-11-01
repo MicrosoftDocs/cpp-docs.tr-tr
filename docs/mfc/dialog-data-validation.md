@@ -1,12 +1,6 @@
 ---
-title: İletişim verisi doğrulama | Microsoft Docs
-ms.custom: ''
+title: İletişim Verisi Doğrulama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - validating data [MFC], message boxes
 - data validation [MFC], dialog boxes
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - DDV (dialog data validation) [MFC]
 - data validation [MFC], message boxes
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83c1208d3001739ca78186972c629ea8a094c8d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2283806d3fe7c4ff6bd3abc2ae6a86f5dd176d10
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483362"
 ---
 # <a name="dialog-data-validation"></a>İletişim Verisi Doğrulama
 

@@ -1,27 +1,17 @@
 ---
-title: DLL'leri yüklemede gecikme kısıtlamaları | Microsoft Docs
-ms.custom: ''
+title: DLL'leri Yüklemede Gecikme Kısıtlamaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - constraints [C++], delayed loading of DLLs
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 497de9695e75810f2fe68101627f2ba3606aa048
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 75446752948c1c1601a1eec4fa038aa830f2804e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483596"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL'leri Yüklemede Gecikme Kısıtlamaları
 

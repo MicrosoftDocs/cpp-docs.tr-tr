@@ -1,10 +1,6 @@
 ---
-title: max_variable_size sınıfı | Microsoft Docs
-ms.custom: ''
+title: max_variable_size Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::max_variable_size
 - allocators/stdext::max_variable_size::allocated
@@ -12,8 +8,6 @@ f1_keywords:
 - allocators/stdext::max_variable_size::full
 - allocators/stdext::max_variable_size::released
 - allocators/stdext::max_variable_size::saved
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::max_variable_size
 - stdext::max_variable_size [C++], allocated
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - stdext::max_variable_size [C++], released
 - stdext::max_variable_size [C++], saved
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 974cee757708b9f7b1e48ea3bec3c4af98ced558
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a7fde40352a878575ddce8b48b4c97093ae7a960
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957663"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482881"
 ---
 # <a name="maxvariablesize-class"></a>max_variable_size Sınıfı
 

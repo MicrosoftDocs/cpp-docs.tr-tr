@@ -1,28 +1,18 @@
 ---
-title: ATL Özellik Sayfası Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL Özellik Sayfası Sihirbazı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.ppg.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding property pages
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 206fe83407421a7aabfd920214590a86e4727714
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: 9b698616dbde06452e9ab08f37c646a2cedbc37c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572776"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 

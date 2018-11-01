@@ -1,29 +1,19 @@
 ---
-title: _SCL_SECURE_NO_WARNINGS | Microsoft Docs
-ms.custom: ''
+title: _SCL_SECURE_NO_WARNINGS
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - _SCL_SECURE_NO_DEPRECATE
 - _SCL_SECURE_NO_WARNINGS
-dev_langs:
-- C++
 helpviewer_keywords:
 - _SCL_SECURE_NO_DEPRECATE
 - _SCL_SECURE_NO_WARNINGS
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b24012825b883550de6f58e6ce2d53b826f746ca
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 77c60aed511fc3dbbea2d74e83e36dae735dcb0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578419"
 ---
 # <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
 

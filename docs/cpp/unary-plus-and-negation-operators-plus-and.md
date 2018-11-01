@@ -1,15 +1,9 @@
 ---
-title: 'Birli artı ve değilleme işleçleri: + ve - | Microsoft Docs'
-ms.custom: ''
+title: 'Birli Artı ve Değilleme işleçleri: + ve -'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - +
 - '-'
-dev_langs:
-- C++
 helpviewer_keywords:
 - unary operators [C++], plus
 - '- operator'
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - + operator [C++], unary operators
 - + operator
 ms.assetid: 2c58c4f4-0d92-4ae3-9d0c-1a6157875cc1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ef8cc91f90f92d17ec759c874c7dfd34b4706e9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c1d5fc926b396f1ec44b9e44e79721e2ca4a0908
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580914"
 ---
 # <a name="unary-plus-and-negation-operators--and--"></a>Birli Artı ve Değilleme işleçleri: + ve -
 

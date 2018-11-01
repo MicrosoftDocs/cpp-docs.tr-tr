@@ -1,28 +1,18 @@
 ---
-title: add_const sınıfı | Microsoft Docs
-ms.custom: ''
+title: add_const Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::add_const
-dev_langs:
-- C++
 helpviewer_keywords:
 - add_const class
 - add_const
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46d0d52f53a45b53c8634a40c56feb167793e565
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dc457fd4efba538e96200f7f42f84a73fc1b5228
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438656"
 ---
 # <a name="addconst-class"></a>add_const Sınıfı
 

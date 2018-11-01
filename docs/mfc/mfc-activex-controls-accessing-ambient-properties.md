@@ -1,26 +1,16 @@
 ---
-title: 'MFC ActiveX denetimleri: Ortam özelliklerine erişme | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], accessing ambient properties
 - properties [MFC], accessing ambient
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8aaa379513695f3cd39589a1009e3a157d957761
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f6daff09969e82daa4e8f76c8b1eb4972ddd6eeb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407919"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585633"
 ---
 # <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme
 

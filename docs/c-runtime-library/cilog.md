@@ -1,10 +1,6 @@
 ---
-title: _Cılog | Microsoft Docs
-ms.custom: ''
+title: _CIlog
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _CIlog
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - _CIlog
 - CIlog
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CIlog intrinsic
 - CIlog intrinsic
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3590ca4a9d7b5648c736c92d6a482377baa9ffa1
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 731c30e08c40f839c99d028aa46d5b61e5fd7c92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566406"
 ---
 # <a name="cilog"></a>_CIlog
 

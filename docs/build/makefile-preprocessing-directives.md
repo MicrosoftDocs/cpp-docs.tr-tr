@@ -1,17 +1,11 @@
 ---
-title: Derleme görevleri dosyası ön işleme yönergeleri | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
+title: Derleme Görevleri Dosyası Önişleme Yönergeleri
+ms.date: 06/14/2018
 f1_keywords:
 - '!UNDEF'
 - '!INCLUDE'
 - '!IFNDEF'
 - '!MESSAGE'
-dev_langs:
-- C++
 helpviewer_keywords:
 - ERROR directive
 - '!MESSAGE directive'
@@ -45,59 +39,71 @@ helpviewer_keywords:
 - ELSE directive
 - ELSEIFDEF directive
 ms.assetid: bcedeccb-d981-469d-b9e8-ab5d097fd8c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6a84557388f521fb6c70c33ce6814ce33a5f6a1d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: adc81e5c4ea3d0d4a80e7efad4eaab15a5048cd3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593576"
 ---
 # <a name="makefile-preprocessing-directives"></a>Derleme Görevleri Dosyası Önişleme Yönergeleri
-Önişleme yönergeleri büyük küçük harfe duyarlı değildir. İlk ünlem işareti (!), satır başında yer almalıdır. Sıfır veya daha fazla boşluk veya sekmeler girinti ünlem sonra ortaya çıkabilir.  
-  
- **! CMDSWITCHES**  
- {**+** &#124; **-**}*seçeneği*... Her kapatır *seçeneği* açmak veya kapatmak listelenir. Boşluk veya sekmeler önce görünmelidir + veya - işleci; Hiçbiri arasında işleci görüntülenebilir ve [seçeneği harf](../build/nmake-options.md). Harfler, büyük/küçük harfe duyarlı değildir ve bir eğik çizgi (/) belirtilir. Bazı seçenekleri ve diğerleri devre dışı bırakmak için ayrı belirtimlerini kullanmak **! CMDSWITCHES**.  
-  
- Yalnızca /D / t, /N ve /S derleme görevleri dosyası içinde kullanılabilir. Tools.ini tüm seçenekleri izin dışında /F, / Help, / nologo, /, X ve /?. Açıklama bloğunda belirtilen değişiklikleri sonraki açıklama bloğu kadar etkili olmaz. Bu yönerge güncelleştirmeleri **MAKEFLAGS**; varsa değişiklikleri sırasında özyineleme devralındığı **MAKEFLAGS** belirtilir.  
-  
- **! HATA***metin*   
- Görüntüler *metin* hatası U1050 sonra durur NMAKE, olsa bile, / k, / t, **. Yoksay**, **! CMDSWITCHES**, veya tire (-) komutu değiştiricisi kullanılır. Boşluk veya önce sekmeler *metin* göz ardı edilir.  
-  
- **! İleti***metin*   
- Görüntüler *metin* için standart çıktı. Boşluk veya önce sekmeler *metin* göz ardı edilir.  
-  
- **! DAHİL**[ **\<**] *filename*[ **>**]  
- Okur *filename* derleme görevleri dosyası, ardından geçerli derleme görevleri dosyası ile devam eder. NMAKE arar *filename* ilk belirtilen ya da geçerli dizinde sonra dizinleri herhangi aracılığıyla yinelemeli olarak üst derleme görevleri dosyaları, daha sonra *filename* açılı ayraç içine (\<>), tarafından belirtilen dizinde **INCLUDE** başlangıçta INCLUDE ortam değişkeni ayarlanır makrosu. Geçirmek kullanışlı **. SONEKLERİ** ayarları **. DEĞERLİ**ve yinelemeli derleme görevleri dosyaları çıkarım kuralları.  
-  
- **! EĞER**  `constantexpression`  
- İşler arasındaki deyimleri **! Eğer** ve sonraki **! ELSE** veya `!ENDIF` varsa `constantexpression` sıfır olmayan bir değere değerlendirir.  
-  
- **! IFDEF***makroadı*   
- İşler arasındaki deyimleri `!IFDEF` ve sonraki **! ELSE** veya `!ENDIF` varsa *makroadı* tanımlanır. Null makro tanımlanacak olarak kabul edilir.  
-  
- **! IFNDEF***makroadı*   
- İşler arasındaki deyimleri **! IFNDEF** ve sonraki **! ELSE** veya `!ENDIF` varsa *makroadı* tanımlı değil.  
-  
- **! ELSE**[**IF** *sabitDeyim'in* &#124; **IFDEF** *makroadı* &#124; **IFNDEF**  *makroadı*]  
- İşler arasındaki deyimleri **! ELSE** ve sonraki `!ENDIF` , önceki **! Eğer**, `!IFDEF`, veya **! IFNDEF** sıfır olarak değerlendirilen ifade. İsteğe bağlı anahtar sözcükleri daha fazla ön işleme Denetim verin.  
-  
- **! ELSEIF**  
- Eş **! ELSE IF**.  
-  
- **! ELSEIFDEF**  
- Eş **! ELSE IFDEF**.  
-  
- **! ELSEIFNDEF**  
- Eş **! ELSE IFNDEF**.  
-  
- `!ENDIF`  
- Sonunu işaretler bir **! Eğer**, `!IFDEF`, veya **! IFNDEF** bloğu. Sonra herhangi bir metin `!ENDIF` aynı satırda göz ardı edilir.  
-  
- **! UNDEF***makroadı*   
- Undefines *makroadı*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyası Ön İşlemi](../build/makefile-preprocessing.md)
+
+Ön işleme yönergeleri büyük/küçük harfe duyarlı değildir. İlk ünlem işareti (!), satır başında yer almalıdır. Sıfır veya daha fazla boşluk veya sekme girinti ünlem sonra görünebilir.
+
+- **! CMDSWITCHES** {**+** &#124; **-**}*seçeneği* ...
+
+   Her kapatır *seçeneği* açıp listelenir. Boşluk veya sekme önce görünmelidir + veya - işleç; Hiçbiri arasında işleci görünebilir ve [seçeneği harf](../build/nmake-options.md). Harf, büyük/küçük harfe duyarlı değildir ve bir eğik çizgi (/) belirtildi. Bazı seçenekleri ve diğer devre dışı bırakmak için ayrı belirtimlerini kullanın **! CMDSWITCHES**.
+
+   Yalnızca /D / ı /N ve /S bir derleme görevleri dosyasında kullanılabilir. Tools.ini tüm seçenekleri izin dışında /F, / Help, / nologo, /, X ve /? Bir açıklama bloğu içinde belirtilen değişiklikler sonraki açıklama bloğu kadar etkili olmaz. Bu yönerge güncelleştirmeleri **MAKEFLAGS**; değişiklikleri, özyineleme sırasında devralınan **MAKEFLAGS** belirtilir.
+
+- **! HATA***metin* 
+
+   Görüntüler *metin* hatası U1050 sonra durur NMAKE, olsa bile, /K, / ı, **. Yoksay**, **! CMDSWITCHES**, veya tire (-) komut değiştiricisi kullanılır. Boşluk veya sekme önce *metin* göz ardı edilir.
+
+- **! İleti***metin* 
+
+   Görüntüler *metin* standart çıktıya. Boşluk veya sekme önce *metin* göz ardı edilir.
+
+- **! DAHİL** [ **\<** ] *filename* [ **>** ]
+
+   Okur *filename* derleme görevleri dosyası, ardından geçerli derleme görevleri dosyası ile devam eder. NMAKE arar *filename* ilk belirtilen ya da geçerli dizinde ardından dizinlerinde aracılığıyla yinelemeli olarak ana derleme görevleri dosyalarını, daha sonra *filename* açılı ayraç içine alınır (\<>), tarafından belirtilen dizinlerde **INCLUDE** makrosu, başlangıçta için Include ortam değişkeni ayarlanır. Geçirmek kullanışlı **. SONEKLERİ** ayarları **. DEĞERLİ**ve yinelemeli derleme görevleri dosyaları için çıkarım kuralları.
+
+- **! Eğer** *constant_expression*
+
+   İşler arasındaki **! Eğer** ve sonraki **! BAŞKA** veya **! ENDIF** varsa *constant_expression* sıfır dışında bir değeri değerlendirir.
+
+- **! IFDEF***makroadı* 
+
+   İşler arasındaki **! IFDEF** ve sonraki **! BAŞKA** veya **! ENDIF** varsa *makroadı* tanımlanır. Null makro tanımlanmış kabul edilir.
+
+- **! IFNDEF***makroadı* 
+
+   İşler arasındaki **! IFNDEF** ve sonraki **! BAŞKA** veya **! ENDIF** varsa *makroadı* tanımlı değil.
+
+- **! BAŞKA** [**IF** *constant_expression* &#124; **IFDEF** *makroadı* &#124; **IFNDEF**  *makroadı*]
+
+   İşler arasındaki **! BAŞKA** ve sonraki **! ENDIF** , önceden **! Eğer**, **! IFDEF**, veya **! IFNDEF** sıfır olarak değerlendirilen bir ifade. İsteğe bağlı anahtar sözcük, daha fazla ön işleme, Denetim verir.
+
+- **! ELSEIF**
+
+   Eşanlamlısı **! ELSE IF**.
+
+- **! ELSEIFDEF**
+
+   Eşanlamlısı **! BAŞKA IFDEF**.
+
+- **! ELSEIFNDEF**
+
+   Eşanlamlısı **! BAŞKA IFNDEF**.
+
+- **! ENDIF**
+
+   Sonunu işaretleyen bir **! Eğer**, **! IFDEF**, veya **! IFNDEF** blok. Sonra herhangi bir metin **! ENDIF** aynı satırdaki göz ardı edilir.
+
+- **! UNDEF***makroadı* 
+
+   Tanımsızı *makroadı*.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Derleme Görevleri Dosyası Ön İşlemi](../build/makefile-preprocessing.md)

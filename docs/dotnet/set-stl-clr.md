@@ -1,9 +1,6 @@
 ---
-title: (STL/CLR) ayarlama | Microsoft Docs
-ms.custom: ''
+title: set (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::set
@@ -50,8 +47,6 @@ f1_keywords:
 - cliext::set::value_comp
 - cliext::set::value_compare
 - cliext::set::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - <cliext/set> header [STL/CLR]
 - <set> header [STL/CLR]
@@ -100,17 +95,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 27d3628c-741a-43a7-bef1-5085536f679e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 45f72561875e5f0f7ad3f714e09d67825b48089e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 612c0772504043a99f3a2ae9fa7da9c791076d6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500678"
 ---
 # <a name="set-stlclr"></a>set (STL/CLR)
 

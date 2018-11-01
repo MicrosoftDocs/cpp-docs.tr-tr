@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1164 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1164
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1164
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1164
 ms.assetid: da89765c-affa-4f88-b170-6d6b19a577cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b07dcf360a58b07b84abe655641b758d6137d0e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8685a9e0eb356719eaab129af9df9a1cc0ebb085
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585503"
 ---
 # <a name="linker-tools-error-lnk1164"></a>Bağlayıcı Araçları Hatası LNK1164
 

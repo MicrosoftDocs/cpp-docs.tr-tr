@@ -1,25 +1,15 @@
 ---
-title: MFC ortak yalıtım kitaplığı denetimleri | Microsoft Docs
-ms.custom: ''
+title: MFC Ortak Denetimler Kitaplığını Yalıtma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, Common Controls library
 ms.assetid: 7471e6f0-49b0-47f7-86e7-8d6bc3541694
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3189b2e3db594801fe417ca43867da7db2e18fd7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fd47854c7073565fbe0c15ca6be7a9843af5f387
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583618"
 ---
 # <a name="isolation-of-the-mfc-common-controls-library"></a>MFC Ortak Denetimler Kitaplığını Yalıtma
 

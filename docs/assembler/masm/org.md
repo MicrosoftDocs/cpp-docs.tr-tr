@@ -1,27 +1,17 @@
 ---
-title: KURULUŞ | Microsoft Docs
-ms.custom: ''
+title: ORG
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - ORG
-dev_langs:
-- C++
 helpviewer_keywords:
 - ORG directive
 ms.assetid: ab654827-99dd-4018-b27e-f29a7bb392eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2113e6891992e8c25882b04c949ed61f9a7205f0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 37fd96e3f4044025597dbf90374b7e59576be063
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693695"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594929"
 ---
 # <a name="org"></a>ORG
 

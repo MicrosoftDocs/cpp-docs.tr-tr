@@ -1,27 +1,17 @@
 ---
-title: (#import) yeniden adlandırma | Microsoft Docs
-ms.custom: ''
+title: rename (#import)
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - Rename
-dev_langs:
-- C++
 helpviewer_keywords:
 - rename attribute
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b8525a321f56ab5e9bfe2f8e8cee7be9cd26788
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 15673a8b9ebaf298ae1b2b45c9a76a1691e681b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514198"
 ---
 # <a name="rename-import"></a>Yeniden Adlandır (\#içeri aktarma)
 

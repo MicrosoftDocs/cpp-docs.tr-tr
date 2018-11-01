@@ -1,10 +1,6 @@
 ---
-title: isleadbyte, _isleadbyte_l | Microsoft Docs
-ms.custom: ''
+title: isleadbyte, _isleadbyte_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _isleadbyte_l
 - isleadbyte
@@ -25,8 +21,6 @@ f1_keywords:
 - _istleadbyte
 - _isleadbyte_l
 - isleadbyte
-dev_langs:
-- C++
 helpviewer_keywords:
 - lead bytes
 - _isleadbyte_l function
@@ -34,23 +28,19 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 682cdde6983c5e590920c43418e510b9c275b34e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a3f427e49e53bb553020da100b0e713350fab3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401024"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531896"
 ---
 # <a name="isleadbyte-isleadbytel"></a>isleadbyte, _isleadbyte_l
 
-Bir karakter baytı birden çok baytlı karakter olup olmadığını belirler.
+Bir karakterin çok baytlı karakterin ön baytı olup olmadığını belirler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,25 +52,25 @@ int _isleadbyte_l( int c );
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**isleadbyte** bağımsız değişkeni test durumu ya da 0 uymazsa yoksa sıfır olmayan bir değer döndürür. "C" yerel ayarını ve tek baytlı karakter (SBCS) yerel kümesi **isleadbyte** her zaman 0 döndürür.
+**isleadbyte** kullanmıyorsa, bağımsız değişken test koşulunu veya 0 karşılıyorsa, sıfır olmayan bir değer döndürür. "C" yerel ayarında ve tek baytlık karakter (SBCS) yerel kümesi **isleadbyte** her zaman 0 değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İsleadbyte** makrosu bağımsız değişken birden çok baytlı karakter ilk baytını ise sıfır olmayan bir değer döndürür. **isleadbyte** tüm tamsayı bağımsız değişkeni-1 için anlamlı bir sonuç üretir (**EOF**) için **UCHAR_MAX** (0xFF) (dahil) arasındadır.
+**İsleadbyte** makrosu, kendi bağımsız değişken çok baytlı bir karakterin ilk baytı ise sıfır olmayan bir değer döndürür. **isleadbyte** -1 herhangi bir tamsayı bağımsız değişkeni için anlamlı bir sonuç üretir (**EOF**) için **UCHAR_MAX** (0xFF) dahil.
 
-Beklenen bağımsız değişken türü **isleadbyte** olan **int**; imzalı karakter aktarılırsa derleyici öngörülemeyen sonuçlara sağlayan oturum uzantısı tarafından bir tamsayıya dönüştürmek.
+Beklenen değişken türü **isleadbyte** olduğu **int**; işaretli bir karakter geçerse derleyici öngörülemeyen sonuçlara işaret uzantısı ilse, bir tamsayıya dönüştürmek.
 
-Bu işlev ile sürümü **_l** sonekidir aynı yerel ayara bağımlı davranışı için geçerli yerel yerine geçirilen yerel ayar kullanır.
+Bu işlevle sürümünü **_l** soneki, yerel ayara bağlı davranışı için geçerli yerel ayarı yerine iletilen yerel ayarı kullanması hariç, aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istleadbyte**|Her zaman false döndürür|**_isleadbyte**|Her zaman false döndürür|
+|**_istleadbyte**|Daima yanlış getirir|**_isleadbyte**|Daima yanlış getirir|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -89,7 +79,7 @@ Bu işlev ile sürümü **_l** sonekidir aynı yerel ayara bağımlı davranış
 |**isleadbyte**|\<CType.h >|
 |**_isleadbyte_l**|\<CType.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

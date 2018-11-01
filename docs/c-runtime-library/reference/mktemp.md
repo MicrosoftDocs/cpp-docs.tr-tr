@@ -1,10 +1,6 @@
 ---
-title: mktemp | Microsoft Docs
-ms.custom: ''
+title: mktemp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - mktemp
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - mktemp
-dev_langs:
-- C++
 helpviewer_keywords:
 - mktemp function
 ms.assetid: b58cba60-034f-4e63-b312-ccbcd489d0a7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17eb125ddd9a9cef7af408aaa60c72c1f589cf9e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1d3d74f5c505281ca76b4d711624be6b7e11d65b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593602"
 ---
 # <a name="mktemp"></a>mktemp
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_mktemp](mktemp-wmktemp.md) veya Gelişmiş Güvenlik [_mktemp_s](mktemp-s-wmktemp-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_mktemp](mktemp-wmktemp.md) veya Gelişmiş güvenlikli [_mktemp_s](mktemp-s-wmktemp-s.md) yerine.

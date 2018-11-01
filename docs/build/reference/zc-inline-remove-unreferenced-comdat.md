@@ -1,31 +1,21 @@
 ---
-title: "/ ZC: inline (başvurulmayan comdat'ı kaldırma) | Microsoft Docs"
-ms.custom: ''
+title: /Zc:inline (Başvurulmayan COMDAT'ı kaldırma)
 ms.date: 03/01/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Zc:inline
 - VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 - /Zc:inline
 ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db9f0ff58108328979b945b32af0c0b884998639
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6855773c6ec807a7488fa5604ddee7fd43983135
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441242"
 ---
 # <a name="zcinline-remove-unreferenced-comdat"></a>/Zc:inline (Başvurulmayan COMDAT'ı kaldırma)
 

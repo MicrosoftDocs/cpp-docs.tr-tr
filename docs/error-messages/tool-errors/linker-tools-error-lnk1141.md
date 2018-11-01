@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1141 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1141
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1141
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1141
 ms.assetid: 83b78606-6dd3-43a7-88e2-152f5359cbd8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c1046f240a701883058a4eede9670645dd12bcc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5c19013fe0514b2142486d0e4da7af618f1f74f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113636"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632771"
 ---
 # <a name="linker-tools-error-lnk1141"></a>Bağlayıcı Araçları Hatası LNK1141
 

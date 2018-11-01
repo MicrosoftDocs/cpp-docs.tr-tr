@@ -1,26 +1,16 @@
 ---
-title: C++ Standart Kitaplığı kapsayıcıları | Microsoft Docs
-ms.custom: ''
+title: C++ Standart Kitaplığı kapsayıcıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ Standard Library, template class containers
 - containers, C++ Standard Library
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3b758c5db483f74ddb43031ab41f2d2b46514e4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 240a05822ea93493c917469fc18fa8a9c224359d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568629"
 ---
 # <a name="c-standard-library-containers"></a>C++ Standart Kitaplığı kapsayıcıları
 

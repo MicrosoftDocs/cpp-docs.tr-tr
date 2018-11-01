@@ -1,34 +1,23 @@
 ---
-title: Simgeler için görüntü Düzenleyicisi | Microsoft Docs
-ms.custom: ''
+title: Simgeler İçin Görüntü Düzenleyicisi
 ms.date: 10/17/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.cursor.F1
 - vc.editors.icon.F1
 - vc.editors.cursor
 - vc.editors.bitmap.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - editors, images
 - resource editors [C++], graphics
 - Image editor [C++]
 - resource editors [C++], Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ecd2b3b94f04a246242a33494a124171e95cae7c
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 4f27b4582da340d401c3ecf10b502453d80b6e7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561519"
 ---
 # <a name="image-editor-for-icons"></a>Simgeler İçin Görüntü Düzenleyicisi
 

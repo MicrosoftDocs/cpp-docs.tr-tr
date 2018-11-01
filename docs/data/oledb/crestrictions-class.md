@@ -1,10 +1,6 @@
 ---
-title: CRestrictions sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRestrictions Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CRestrictions
 - CRestrictions
@@ -13,23 +9,16 @@ f1_keywords:
 - ATL::CRestrictions::Open
 - ATL.CRestrictions.Open
 - CRestrictions::Open
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRestrictions class
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a4ea0536a8af87927521f88d888e19aa145f2c04
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0a6b6b10d4275cbfc2cd99180aa472d9476b17e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565154"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 

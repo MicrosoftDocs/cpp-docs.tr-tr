@@ -1,29 +1,19 @@
 ---
-title: CCommonDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCommonDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCommonDialog
 - AFXDLGS/CCommonDialog
 - AFXDLGS/CCommonDialog::CCommonDialog
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCommonDialog [MFC], CCommonDialog
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c79c00dd81029a4a3f210178b732d6e9e8f5700f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 47ef6591a69196ea93048e2ce3a77603b12ab4c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432746"
 ---
 # <a name="ccommondialog-class"></a>CCommonDialog sınıfı
 

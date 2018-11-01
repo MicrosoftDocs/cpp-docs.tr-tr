@@ -1,27 +1,17 @@
 ---
-title: Veri Değişimi | Microsoft Docs
-ms.custom: ''
+title: Veri Değişimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - property sheets [MFC], data exchange
 - exchanging data with property sheets [MFC]
 - DDX (dialog data exchange) [MFC], property sheets
 ms.assetid: 689f02d0-51a9-455b-8ffb-5b44f0aefa28
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 504d2ff9f011770f75db73a63fa77b821281269b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 84e2ff9478cb3606bafb7f0408b7e2cc8fee2c00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435564"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569643"
 ---
 # <a name="exchanging-data"></a>Veri Değişimi
 

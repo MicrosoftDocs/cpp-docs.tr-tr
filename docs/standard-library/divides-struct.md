@@ -1,28 +1,18 @@
 ---
-title: divides yapısı | Microsoft Docs
-ms.custom: ''
+title: divides Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::divides
-dev_langs:
-- C++
 helpviewer_keywords:
 - divides struct
 - divides class
 ms.assetid: b9cf8e9c-6981-43a6-a6a3-8f761987dd7a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55a97c1928babd32279253546ac53efd950d6c5e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 45555ea8e4ce53d97412c54cdc9fa8b4e87d86c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110337"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568073"
 ---
 # <a name="divides-struct"></a>divides Yapısı
 

@@ -1,29 +1,18 @@
 ---
-title: Saklı yordamları tanımlama | Microsoft Docs
-ms.custom: ''
+title: Saklı Yordamları Tanımlama
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - stored procedures, syntax
 - OLE DB, stored procedures
 - stored procedures, defining
 - stored procedures, OLE DB
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a9d5cbe04ac5ad23fef09d53e747dab8c4c4b53b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 06618d1a468116855ccad149a150c0b621497f2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053143"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507958"
 ---
 # <a name="defining-stored-procedures"></a>Saklı Yordamları Tanımlama
 

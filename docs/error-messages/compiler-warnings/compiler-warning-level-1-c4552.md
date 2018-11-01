@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4552 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4552
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4552
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4552
 ms.assetid: ebbbb5ee-1c19-45bd-b386-41a19630fc76
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 62c08ea81f5f8794a1dd4ff7d0b5644e9a669e0f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1fb2dc7fd4bc685e457898b47c513c21009146ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585555"
 ---
 # <a name="compiler-warning-level-1-c4552"></a>Derleyici Uyarısı (düzey 1) C4552
 
