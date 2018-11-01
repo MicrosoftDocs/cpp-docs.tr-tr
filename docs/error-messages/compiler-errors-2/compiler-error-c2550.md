@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2550 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2550
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2550
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2550
 ms.assetid: 3293f53e-ee66-4035-920d-34e115c3a24c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd132184a993f27ec04a913cfef2aed07f8bd4a8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2df6ae70be31bc519e6cfd826646073becf1ad61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062520"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462679"
 ---
 # <a name="compiler-error-c2550"></a>Derleyici Hatası C2550
 

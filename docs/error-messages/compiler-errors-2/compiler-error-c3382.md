@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3382 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3382
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3382
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3382
 ms.assetid: a7603abd-ac4e-4ae6-a02b-3bdc6d1908a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6da27531b95950a12cb9aa95e8e89da94c556d2d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c262ea963ae739fbb76211aae2622e98d5a9b6f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462757"
 ---
 # <a name="compiler-error-c3382"></a>Derleyici Hatası C3382
 

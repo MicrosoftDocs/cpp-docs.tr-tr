@@ -1,27 +1,17 @@
 ---
-title: "Nasıl yapılır: System:: String'i standart dizeye dönüştürme | Microsoft Docs"
+title: "Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme"
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ Standard Library, converting System::String to standard string
 - string conversion, System::String
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 458e0effa2e95b13ff53327b44eaa94b9087df56
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fafd23cb9dec25c742e040fad0793c38bd092322
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473236"
 ---
 # <a name="how-to-convert-systemstring-to-standard-string"></a>Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme
 

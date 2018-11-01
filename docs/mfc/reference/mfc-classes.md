@@ -1,26 +1,16 @@
 ---
-title: MFC sınıfları | Microsoft Docs
-ms.custom: ''
+title: MFC Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1eea2e3158d980c77863640d0342f8b074bf7849
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 40294e0d0af3f5181ffe295a2a6c625fa5223f5b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080253"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463394"
 ---
 # <a name="mfc-classes"></a>MFC Sınıfları
 

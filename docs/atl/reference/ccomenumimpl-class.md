@@ -1,10 +1,6 @@
 ---
-title: Ccomenumımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ccomenumımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComEnumImpl
 - ATLCOM/ATL::CComEnumImpl
@@ -19,21 +15,15 @@ f1_keywords:
 - ATLCOM/ATL::CComEnumImpl::m_end
 - ATLCOM/ATL::CComEnumImpl::m_iter
 - ATLCOM/ATL::CComEnumImpl::m_spUnk
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComEnumImpl class
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cf80d51cdf45b6298255a252124ace9568953b1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2104d98cbc068eb5d8f1408cdda0898fd55c9473
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082541"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467152"
 ---
 # <a name="ccomenumimpl-class"></a>Ccomenumımpl sınıfı
 
@@ -58,7 +48,7 @@ Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
 *T*<br/>
 Numaralandırıcı arabirim tarafından sunulan öğe türü.
 
-*kopyalama*<br/>
+*Kopyala*<br/>
 Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
 ## <a name="members"></a>Üyeler

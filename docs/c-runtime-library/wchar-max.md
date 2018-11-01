@@ -1,27 +1,17 @@
 ---
-title: WCHAR_MAX | Microsoft Docs
-ms.custom: ''
+title: WCHAR_MAX
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - WCHAR_MAX
-dev_langs:
-- C++
 helpviewer_keywords:
 - WCHAR_MAX constant
 ms.assetid: 2b5f8bfd-9098-47fc-be8f-598a0c975ed4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b749fb64594796efb49b565193b86c2e68facc6a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e638839d652297dc866f1974aaae9a3c8d7e2f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024261"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462172"
 ---
 # <a name="wcharmax"></a>WCHAR_MAX
 

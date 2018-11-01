@@ -1,9 +1,6 @@
 ---
-title: MakeAllocator sınıfı | Microsoft Docs
-ms.custom: ''
+title: MakeAllocator Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAllocator
@@ -11,8 +8,6 @@ f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAllocator::Detach
 - implements/Microsoft::WRL::Details::MakeAllocator::MakeAllocator
 - implements/Microsoft::WRL::Details::MakeAllocator::~MakeAllocator
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::MakeAllocator class
 - Microsoft::WRL::Details::MakeAllocator::Allocate method
@@ -20,17 +15,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::MakeAllocator::MakeAllocator, constructor
 - Microsoft::WRL::Details::MakeAllocator::~MakeAllocator, destructor
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 93fb92c51ee16593f9314d7172f0b38e6d0918e8
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 805f0c09b0490d8cec1a0be96dcb1fc99a051371
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162483"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476236"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 

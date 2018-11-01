@@ -1,27 +1,17 @@
 ---
-title: Visual C++ Araçları ve özellikleri Visual Studio sürümlerinde | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Araçları ve özellikleri Visual Studio sürümleri
 ms.date: 02/28/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - versions [C++]
 - Visual C++, versions
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79814d96bac185e73cc1c42a98be6d7b35e9a75d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7f40e59ae3e5e883827a212a16d1dd19822dc136
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466370"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463758"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve özellikleri Visual Studio sürümleri
 
@@ -186,5 +176,5 @@ Aşağıdaki tablolarda, Visual Studio'da bulunan Visual C++ özellikleri göste
 
 [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio)<br/>
 [Visual Studio'daki yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual C++ proje türleri](../ide/visual-cpp-project-types.md)<br/>
+[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br/>
 [SQL Server Veri Araçları](https://msdn.microsoft.com/library/hh272686)<br/>

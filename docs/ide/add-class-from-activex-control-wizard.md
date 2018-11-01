@@ -1,28 +1,18 @@
 ---
-title: ActiveX denetimi sihirbazından sınıf ekleme | Microsoft Docs
-ms.custom: ''
+title: ActiveX Denetimi Sihirbazından Sınıf Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.class.axcontrol
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX Control Wizard
 - Add Class from ActiveX Control Wizard [C++]
 ms.assetid: 668d801c-5fb6-4176-9191-5c38995a4713
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45615762bc84f30c9c4caee568ef99c244cc99cf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 736ac50f14d8434584c6f47b2953913c79b0b00a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391130"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472494"
 ---
 # <a name="add-class-from-activex-control-wizard"></a>ActiveX Denetimi Sihirbazından Sınıf Ekleme
 

@@ -1,28 +1,18 @@
 ---
-title: OLE (MFC) | Microsoft Docs
-ms.custom: ''
+title: OLE (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE [MFC], user-interface topics
 - OLE applications [MFC], user interface
 - user interfaces, OLE
 - applications [OLE], user interface
 ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86c0178f0ea3bdccf9bd467aa24edc016a767530
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 69418136f87ecacf571aec2b5ff2989cff9cf120
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467229"
 ---
 # <a name="ole-mfc"></a>OLE (MFC)
 

@@ -1,8 +1,6 @@
 ---
-title: '&lt;karmaşık&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;karmaşık&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - xcomplex/std::abs
 - xcomplex/std::acos
@@ -44,12 +42,12 @@ helpviewer_keywords:
 - std::sqrt [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 12dd6d48b8d0e2012273ad122708d9a0d7ea11cd
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a67955da21c1229c3492d5b52dd6e14c9caa33fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110181"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474288"
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;karmaşık&gt; işlevleri
 

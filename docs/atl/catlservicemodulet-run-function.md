@@ -1,29 +1,19 @@
 ---
-title: CAtlServiceModuleT::Run işlevi | Microsoft Docs
-ms.custom: ''
+title: CAtlServiceModuleT::Run işlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - CServiceModule::Run
 - CServiceModule.Run
 - CSecurityDescriptor
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL services, security
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1f7306e11bd1cc23e4de17e67f0941d2b3ee8473
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3abb6908a64864463c45d8fc4dc24bfc813db586
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055304"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458675"
 ---
 # <a name="catlservicemoduletrun-function"></a>CAtlServiceModuleT::Run işlevi
 

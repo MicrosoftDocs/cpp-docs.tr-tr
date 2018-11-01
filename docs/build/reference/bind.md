@@ -1,14 +1,8 @@
 ---
-title: -BIND | Microsoft Docs
-ms.custom: ''
+title: /BIND
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /bind
-dev_langs:
-- C++
 helpviewer_keywords:
 - -BIND editbin option
 - entry points, addresses
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - /BIND editbin option
 - import address table
 ms.assetid: 3772b330-1868-4c90-857d-c31faa867982
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a47004ce41d6bae3d91a81c4a61a712bc31dfbdb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 671a26268ab07db4a38ae241ae1e0867dd0eb43c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470856"
 ---
 # <a name="bind"></a>/BIND
 

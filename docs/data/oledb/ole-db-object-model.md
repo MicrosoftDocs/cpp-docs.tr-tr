@@ -1,27 +1,16 @@
 ---
-title: OLE DB Nesne modeli | Microsoft Docs
-ms.custom: ''
+title: OLE DB Nesne Modeli
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - rowsets, OLE DB object model
 - OLE DB, object model
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 65cb4ef7acad08d3065f8394d61a50441d5e597c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 83e94a1075392bdf730b98f8f10a9751662ec976
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056574"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486807"
 ---
 # <a name="ole-db-object-model"></a>OLE DB Nesne Modeli
 

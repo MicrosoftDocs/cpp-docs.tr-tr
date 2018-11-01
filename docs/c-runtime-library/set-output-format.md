@@ -1,10 +1,6 @@
 ---
-title: _set_output_format | Microsoft Docs
-ms.custom: ''
+title: _set_output_format
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _set_output_format
 apilocation:
@@ -19,8 +15,6 @@ apitype: DLLExport
 f1_keywords:
 - set_output_format
 - _set_output_format
-dev_langs:
-- C++
 helpviewer_keywords:
 - _TWO_DIGIT_EXPONENT constant
 - output formatting
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d9d41ae92a829452edebe390723997a67b5cd812
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3c4e4de7dc7161c033f07cfb02ef90ad5db559c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492163"
 ---
 # <a name="setoutputformat"></a>_set_output_format
 

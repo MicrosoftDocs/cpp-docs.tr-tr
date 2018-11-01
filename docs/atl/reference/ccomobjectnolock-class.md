@@ -1,10 +1,6 @@
 ---
-title: CComObjectNoLock sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComObjectNoLock sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComObjectNoLock
 - ATLCOM/ATL::CComObjectNoLock
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLCOM/ATL::CComObjectNoLock::AddRef
 - ATLCOM/ATL::CComObjectNoLock::QueryInterface
 - ATLCOM/ATL::CComObjectNoLock::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComObjectNoLock class
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45bb74921693b4f033fbff578a12c980816a6aea
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 85a5a71e330b8171a8e0e239d9afab43a6df1512
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467382"
 ---
 # <a name="ccomobjectnolock-class"></a>CComObjectNoLock sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: '@code | Microsoft Docs'
-ms.custom: ''
+title: '@code'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@code'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@code symbol'
 ms.assetid: 44e050e6-d254-4157-9022-cf6afbaa0515
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 138be95245d2bb03bd80a1653437a5defbf1b0e8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 94eb743c9d8af33f4043339223cf2d79bbd566fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692373"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472949"
 ---
 # <a name="code"></a>@code
 

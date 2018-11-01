@@ -1,12 +1,6 @@
 ---
-title: Kayan sınırları | Microsoft Docs
-ms.custom: ''
+title: Kayan Sınırları
 ms.date: 08/03/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ranges, floating-point constants
 - floating-point constants, limits
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - floating-point numbers [C++]
 - floating limits
 ms.assetid: fc718652-1f4c-4ed8-af60-0e769637459c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ea52c91391800b25ab9a71d977300dd1705fb51
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cead21c9a66dbc54b46b1c9f8083022a59e80295
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025535"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469990"
 ---
 # <a name="floating-limits"></a>Kayan Sınırları
 

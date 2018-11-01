@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3223 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3223
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3223
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3223
 ms.assetid: 1f4380b4-0413-40db-a868-62f97babaf78
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18a035d5a5be5e74d6925277dc1dc62bec8639c2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9c53f7c91cc0e8f4c56d8d780b222b199702310e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036507"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486456"
 ---
 # <a name="compiler-error-c3223"></a>Derleyici Hatası C3223
 

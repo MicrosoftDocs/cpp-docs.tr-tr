@@ -1,29 +1,19 @@
 ---
-title: 'TN020: Adlandırma ve numaralandırma kuralları kimliği | Microsoft Docs'
-ms.custom: ''
+title: 'TN020: Kimlik Adlandırma ve Numaralandırma Kuralları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.id
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN020
 - resource identifiers, naming and numbering
 - resource identifiers
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b66fa88a98f800c77e2b6b0a731bbd40df9eb9d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c5ae31303d87840017320f580632e567be79e6a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054637"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464508"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik Adlandırma ve Numaralandırma Kuralları
 

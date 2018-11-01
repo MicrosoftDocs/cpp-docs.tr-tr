@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3666 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3666
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3666
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3666
 ms.assetid: 459e51dd-cefb-4346-99b3-644f2d8b65b2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8637caadbe439b2da3b64593655ddd75177f353b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aba1d3dfcf620db0f1fbaf14d0fb01745ca82659
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084087"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465552"
 ---
 # <a name="compiler-error-c3666"></a>Derleyici Hatası C3666
 

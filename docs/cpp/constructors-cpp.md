@@ -1,27 +1,17 @@
 ---
-title: Oluşturucular (C++) | Microsoft Docs
-ms.custom: ''
+title: Oluşturucular (C++)
 ms.date: 04/06/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae2a08431a29e4140e3a9af86e68ccfc9bff388a
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 66edab2950a752e00767e10e7b8c36a3a01240ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861401"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460885"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 

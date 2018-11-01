@@ -1,26 +1,16 @@
 ---
-title: OpenMP döngüsünden eşzamanlılık çalışma zamanına geçiş | Microsoft Docs
-ms.custom: ''
+title: OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e6c6ca3da9e1f66e068980deebce938a5603a4cc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4b70aa57a6485fefe0dbb678e72ba127502c89e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481932"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 

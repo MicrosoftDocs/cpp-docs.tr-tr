@@ -1,30 +1,20 @@
 ---
-title: accelerator_view_removed sınıfı | Microsoft Docs
-ms.custom: ''
+title: accelerator_view_removed Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - accelerator_view_removed
 - AMPRT/accelerator_view_removed
 - AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed
 - AMPRT/Concurrency::accelerator_view_removed:get_view_removed_reason
-dev_langs:
-- C++
 helpviewer_keywords:
 - AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e937c2f5afedf1c78a46e864ea0b081ddf18e99d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c51d05b098c395a498bc67d14061185c5d84ebb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462705"
 ---
 # <a name="acceleratorviewremoved-class"></a>accelerator_view_removed Sınıfı
 

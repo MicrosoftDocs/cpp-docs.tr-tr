@@ -1,20 +1,13 @@
 ---
-title: Özel durumlar (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Özel durumlar (C + +/ CX)
 ms.date: 01/18/2018
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e7514fdfc07fcbb4a1fff42d80fd138ab7d6043
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7134cbb9e90f0355a3b2a912330027cf73876443
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100254"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471707"
 ---
 # <a name="exceptions-ccx"></a>Özel durumlar (C + +/ CX)
 

@@ -1,27 +1,17 @@
 ---
-title: Kullanıcı arabirimi öğeleri (MFC) | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı Arabirim Öğeleri (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, user interface
 - user interfaces, creating
 - user interfaces
 ms.assetid: f5daf2c1-bc08-4b71-9b03-da2c0aab5764
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5713c15a07bb90a94f1d8301ad1eb575dd910fdb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72087e4abef9904876de1b43044bcc59200e1356
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403514"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487639"
 ---
 # <a name="user-interface-elements-mfc"></a>Kullanıcı Arabirim Öğeleri (MFC)
 

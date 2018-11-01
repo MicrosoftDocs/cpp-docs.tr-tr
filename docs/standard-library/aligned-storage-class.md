@@ -1,28 +1,18 @@
 ---
-title: aligned_storage sınıfı | Microsoft Docs
-ms.custom: ''
+title: aligned_storage Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::aligned_storage
-dev_langs:
-- C++
 helpviewer_keywords:
 - aligned_storage class
 - aligned_storage
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aabd4a68e4ec9d9da96eff14dcf69c5bd667cc06
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0da2b206cd40f84ac33860c84bbb6a86f6f47fc0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477291"
 ---
 # <a name="alignedstorage-class"></a>aligned_storage Sınıfı
 

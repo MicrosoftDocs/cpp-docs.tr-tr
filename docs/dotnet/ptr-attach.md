@@ -1,31 +1,21 @@
 ---
-title: PTR::Attach | Microsoft Docs
-ms.custom: ''
+title: ptr::Attach
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::com::ptr::Attach
 - ptr::Attach
 - ptr.Attach
 - msclr.com.ptr.Attach
-dev_langs:
-- C++
 helpviewer_keywords:
 - Attach method
 ms.assetid: 81d930de-cb2a-4c30-9bd6-94d65942c47a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 873a36e69c767a6101173f545520e60bfa6ce598
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 194c5397c8598e839699f3d87df4c10de7a69d8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315346"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466384"
 ---
 # <a name="ptrattach"></a>ptr::Attach
 

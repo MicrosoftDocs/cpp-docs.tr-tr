@@ -1,28 +1,18 @@
 ---
-title: Bit düzeyinde kaydırma işleçleri | Microsoft Docs
-ms.custom: ''
+title: Bit Düzeyinde Kaydırma İşleçleri
 ms.date: 10/18/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], bitwise
 - shift operators, bitwise
 - bitwise-shift operators
 - operators [C++], shift
 ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1abcfa37373702df371b42efbf228fe748bfc45
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: d0873e3975e69bbfac01d437006561f0bf88ee31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485364"
 ---
 # <a name="bitwise-shift-operators"></a>Bit Düzeyinde Kaydırma İşleçleri
 

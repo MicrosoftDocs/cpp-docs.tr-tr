@@ -1,28 +1,18 @@
 ---
-title: Çoklu iş parçacığı kullanan programlarda sorun alanlarından kaçınma | Microsoft Docs
-ms.custom: ''
+title: Çoklu İş Parçacığı Kullanan Programlarda Sorun Alanlarından Kaçınma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - multithreading [C++], troubleshooting
 - errors [C++], multithreaded programs
 - threading [C++], troubleshooting
 - troubleshooting [C++], multithreading
 ms.assetid: 06cc231d-bb5a-409d-8bd3-676c9e2a8c5b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4da775a8b068db830d161936a1ca93890d54a1f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 598758a4ceb0a12640faf2832f9f03cd1e44ef9f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461652"
 ---
 # <a name="avoiding-problem-areas-with-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlarda Sorun Alanlarından Kaçınma
 

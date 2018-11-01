@@ -1,10 +1,6 @@
 ---
-title: __p__commode | Microsoft Docs
-ms.custom: ''
+title: __p__commode
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __p__commode
 apilocation:
@@ -19,21 +15,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - __p__commode
-dev_langs:
-- C++
 helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f610b26c79201f3431b6263a002b59df7456cfe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a565a179077635438c03539cefa83823603bb00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082449"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482715"
 ---
 # <a name="pcommode"></a>__p__commode
 

@@ -1,27 +1,17 @@
 ---
-title: Belge sınıfları | Microsoft Docs
-ms.custom: ''
+title: Belge Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.document
-dev_langs:
-- C++
 helpviewer_keywords:
 - document classes [MFC]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b76ac2be6c864a0a6f52feb282b13ab831fa31ba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eee8cf874230874b519bbd2cb3ebb34c7d4c5c80
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484636"
 ---
 # <a name="document-classes"></a>Belge Sınıfları
 

@@ -1,33 +1,23 @@
 ---
-title: CMFCAcceleratorKey sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCAcceleratorKey sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCAcceleratorKey
 - AFXACCELERATORKEY/CMFCAcceleratorKey
 - AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey
 - AFXACCELERATORKEY/CMFCAcceleratorKey::Format
 - AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCAcceleratorKey [MFC], CMFCAcceleratorKey
 - CMFCAcceleratorKey [MFC], Format
 - CMFCAcceleratorKey [MFC], SetAccelerator
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09654021af146ba48654c361b7b75302ffcfa34c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 169530b213e9201dd59782aad05b71c73c62c596
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461665"
 ---
 # <a name="cmfcacceleratorkey-class"></a>CMFCAcceleratorKey sınıfı
 

@@ -1,8 +1,6 @@
 ---
-title: '&lt;bellek&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;bellek&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - memory/std::operator!=
 - memory/std::operator>
@@ -11,19 +9,13 @@ f1_keywords:
 - memory/std::operator<=
 - memory/std::operator<<
 - memory/std::operator==
-dev_langs:
-- C++
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e37d1506fd713f90b793c6f3f9a04b39bf53f7a4
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0b5589db7f38a53c4f7112dc5d3254f56e5fbb47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473352"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
 

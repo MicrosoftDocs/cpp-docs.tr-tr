@@ -1,26 +1,18 @@
 ---
-title: Platform::guid değer sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::Guid değer sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Guid
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b09fe303cb69cb36d04d696af2b83b30b8378f70
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 0a339de3aec14b6bd1dc461f53c1a7417db738ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482933"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 

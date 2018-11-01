@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3612 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3612
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3612
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3612
 ms.assetid: aa6e3a2b-4afa-481c-98c1-1b6d1f82f869
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16d960095942af34aa516341862c9a2bcf72bbba
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6084632ac0a84cc058ea73eb3c2b632208792eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053699"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475939"
 ---
 # <a name="compiler-error-c3612"></a>Derleyici Hatası C3612
 

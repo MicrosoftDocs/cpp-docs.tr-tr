@@ -1,28 +1,18 @@
 ---
-title: Otomasyon sunucuları | Microsoft Docs
-ms.custom: ''
+title: Otomasyon Sunucuları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Automation servers
 - COM components, Automation servers
 - dispatch maps [MFC], Automation servers
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cc163559b4946626e754b70a1b54d4fe20306c7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0c7f3a3bd37c5f7f5696de363aa646f5376f4e75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468802"
 ---
 # <a name="automation-servers"></a>Otomasyon Sunucuları
 

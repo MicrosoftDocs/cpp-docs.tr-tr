@@ -1,27 +1,17 @@
 ---
-title: no_dual_interfaces | Microsoft Docs
-ms.custom: ''
+title: no_dual_interfaces
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - no_dual_interfaces
-dev_langs:
-- C++
 helpviewer_keywords:
 - no_dual_interfaces attribute
 ms.assetid: 9acd5d9d-4a49-4cdc-9470-73a2c23cf512
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6dcf63933a54983fcf98e35acce533670dc74ed4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d76fe3ce6bea4c3895da9d8b40d69852f912824e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466735"
 ---
 # <a name="nodualinterfaces"></a>no_dual_interfaces
 **C++ özgü**

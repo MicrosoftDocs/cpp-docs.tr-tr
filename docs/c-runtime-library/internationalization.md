@@ -1,30 +1,20 @@
 ---
-title: Uluslararası duruma getirme | Microsoft Docs
-ms.custom: ''
+title: Uluslararası duruma getirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.international
-dev_langs:
-- C++
 helpviewer_keywords:
 - localization, routines for
 - locale-dependent routines
 - internationalization routines
 - international applications, run-time routines for
 ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2aa28d8974fe34f9824617a1f2c86181443397e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 32ac86804ac4701dfeca20fb03071198f0291f81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084594"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460495"
 ---
 # <a name="internationalization"></a>Uluslararası duruma getirme
 

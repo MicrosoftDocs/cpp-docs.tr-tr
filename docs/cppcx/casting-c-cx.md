@@ -1,20 +1,13 @@
 ---
-title: Atama (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Atama (C + +/ CX)
 ms.date: 06/19/2018
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea0ac57b178baed76e6ccb7418c778c1ba2306f4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 65d489d14c91b462e5a2bbe8bd60fce2657904a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613308"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454827"
 ---
 # <a name="casting-ccx"></a>Atama (C + +/ CX)
 

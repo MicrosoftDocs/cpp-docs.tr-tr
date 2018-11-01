@@ -1,10 +1,6 @@
 ---
-title: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64 | Microsoft Docs
-ms.custom: ''
+title: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _utime64
 - _utime
@@ -40,8 +36,6 @@ f1_keywords:
 - _utime32
 - _tutime64
 - _wutime32
-dev_langs:
-- C++
 helpviewer_keywords:
 - tutime function
 - utime32 function
@@ -64,16 +58,12 @@ helpviewer_keywords:
 - tutime64 function
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd8737d6391ea1effd50e967008520b2d77707e6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f1e9633784ad78a2b46701e6600ad1ddb6b3318e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417717"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471103"
 ---
 # <a name="utime-utime32-utime64-wutime-wutime32-wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 
@@ -111,42 +101,42 @@ int _wutime64(
 ### <a name="parameters"></a>Parametreler
 
 *Dosya adı*<br/>
-Yol veya dosya adı içeren bir dize işaretçi.
+Yol veya dosya adı içeren bir dize işaretçisi.
 
-*Saatleri*<br/>
-İşaretçi saat değerleri depolanır.
+*saatleri*<br/>
+Saklı saat değerleri için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya değişikliği zamanı değişirse bu işlevlerin her biri 0 döndürür. Dönüş değeri-1 hata gösterir. Geçersiz bir parametre verilmezse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** aşağıdaki değerlerden birine ayarlayın:
+Dosya değişikliği zamanı değişirse, bu işlevlerin her biri 0 döndürür. -1 dönüş değeri bir hata olduğunu gösterir. Geçersiz bir parametre geçirilmezse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** aşağıdaki değerlerden birine ayarlayın:
 
 |errno değeri|Koşul|
 |-|-|
-**EACCES**|Dizin veya salt okunur dosya yolunu belirtir
+**SPAWN**|Dizin veya salt okunur dosya yolunu belirtir.
 **EINVAL**|Geçersiz *kez* bağımsız değişken
-**EMFILE**|Çok fazla açık dosya (dosya değiştirme saati değiştirmek için açık olması gerekir)
+**EMFILE**|Çok fazla açık dosya (dosya, değiştirme saati değiştirmek için açılması gerekir)
 **ENOENT**|Yol veya dosya adı bulunamadı
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 
-Değişiklik tarihi yarısından, 1 Ocak 1970 ve kullanılan işlev bitiş tarihinden önce ise, bir dosya için tarih değiştirilebilir. **_utime** ve **_wutime** 23:59:59, 31 Aralık 3000 UTC bitiş tarihi olacak şekilde bir 64-bit saat değeri kullanın. Varsa **_USE_32BIT_TIME_T** tanımlanan eski davranışı zorlamak için bitiş tarihi 23:59:59 18 Ocak 2038, UTC değil. **_utime32** veya **_wutime32** 32-bit zamanı tür bağımsız olarak mı kullanmak **_USE_32BIT_TIME_T** tanımlanmış ve her zaman önceki bir son tarihe sahip. **_utime64** veya **_wutime64** bu işlevlerin her zaman daha sonra bitiş tarihini destekleyecek biçimde 64-bit zamanı tür her zaman kullanın.
+Değiştirme tarihi 1 Ocak 1970 gece yarısı sonra ve kullanılan işlev bitiş tarihinden önce ise tarihi bir dosya için değiştirilebilir. **_utime** ve **_wutime** 23:59:59, 31 Aralık, 3000, UTC bitiş tarihi, bu nedenle, bir 64-bit saat değeri kullanın. Varsa **_use_32bıt_tıme_t** tanımlanan eski davranışı zorlamak için son tarihi, 23:59:59 18 Ocak 2038, UTC. **_utime32** veya **_wutime32** bağımsız olarak bir 32-bit zaman türü **_use_32bıt_tıme_t** tanımlanır ve her zaman önceki bir son tarihe sahip. **_utime64** veya **_wutime64** bu işlevlerin her zaman daha sonra bitiş tarihini desteklemek için her zaman 64-bit zaman türünü kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Utime** işlevi tarafından belirtilen dosyayı değiştirme saati ayarlar *filename **.* İşlem Saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde, erişim zamanı ve değiştirme saati değiştirebilirsiniz **_utimbuf** yapısı. Varsa *kez* olan bir **NULL** işaretçisi değiştirme saati geçerli yerel saat olarak ayarlanır. Aksi takdirde, *kez* türü yapısına işaret etmelidir **_utimbuf**, SYS\UTIME içinde tanımlı. H.
+**_Utime** işlevi tarafından belirtilen dosya için değiştirme saati ayarlar *filename **.* İşlem Saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde erişim zamanı ve değiştirme saati değiştirebilirsiniz **_utimbuf** yapısı. Varsa *kez* olduğu bir **NULL** işaretçisi değiştirme saati geçerli yerel saat olarak ayarlanır. Aksi takdirde, *kez* bir yapı türünü işaret etmelidir **_utimbuf**SYS\UTIME içinde tanımlanmış. H
 
-**_Utimbuf** yapısı depolar tarafından kullanılan dosya erişim ve değişiklik sürelerinin **_utime** dosya değişikliği tarihleri değiştirmek için. Türü her ikisi de aşağıdaki alanları yapısının **time_t**:
+**_Utimbuf** yapısı tarafından kullanılan dosya erişim ve değişiklik saatlerini depolar **_utime** dosya değişiklik tarihlerini değiştirmek için. Türü her ikisi de aşağıdaki alanları yapısının **time_t**:
 
 |Alan||
 |-|-|
-**actime**|Dosya erişimi süresi
+**actime**|Dosya erişim zamanı
 **modtime**|Dosya değişikliği zamanı
 
-Belirli sürümlerini **_utimbuf** yapısı (**_utimebuf32** ve **__utimbuf64**) zamanı tür 32-bit ve 64 bit sürümleri kullanılarak tanımlanır. Bunlar, 32 bit ve 64-bit belirli sürümlerinde bu işlevi kullanılır. **_utimbuf** kendisini varsayılan sürece bir 64-bit süre türünü kullanan **_USE_32BIT_TIME_T** tanımlanır.
+Belirli sürümlerini **_utimbuf** yapısı (**_utimebuf32** ve **__utimbuf64**) zaman türü 32-bit ve 64-bit sürümleri kullanılarak tanımlanır. Bunlar, 32-bit ve 64-bit belirli sürümlerinde bu işlev kullanılır. **_utimbuf** kendisi tarafından varsayılan bir 64-bit zaman türü sürece kullanır **_use_32bıt_tıme_t** tanımlanır.
 
 **_utime** aynıdır **_futime** dışında *filename* bağımsız değişkeni **_utime** bir dosya adı veya bir dosya tanımlayıcısı yerine bir dosya yolu bir dosyasını açın.
 
-**_wutime** bir joker karakter sürümü **_utime**; *filename* bağımsız değişkeni **_wutime** bir joker karakter dizesidir. Bu işlevler aynı şekilde aksi davranır.
+**_wutime** geniş karakterli sürümüdür **_utime**; *filename* bağımsız değişkeni **_wutime** geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -158,17 +148,17 @@ Belirli sürümlerini **_utimbuf** yapısı (**_utimebuf32** ve **__utimbuf64**)
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üst bilgileri|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli üst bilgileri|İsteğe bağlı üst bilgiler|
 |-------------|----------------------|----------------------|
 |**_utime**, **_utime32**, **_utime64**|\<sys/utime.h >|\<errno.h >|
 |**_utime64**|\<sys/utime.h >|\<errno.h >|
 |**_wutime**|\<utime.h > veya \<wchar.h >|\<errno.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu programın kullandığı **_utime** dosya değişikliği zamanı geçerli saati ayarlamak için.
+Bu programın kullandığı **_utime** dosya değişikliği zamanı geçerli saate ayarlamak için.
 
 ```C
 // crt_utime.c

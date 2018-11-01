@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3163 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3163
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3163
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3163
 ms.assetid: 17dcafa3-f416-4e04-a232-f9569218ba75
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e712a70bdd443d9a6c640853b958f29dac78dbd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b5c689842f59a9cf999de08f10926efce0ade5ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490213"
 ---
 # <a name="compiler-error-c3163"></a>Derleyici Hatası C3163
 

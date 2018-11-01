@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2216 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2216
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2216
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2216
 ms.assetid: 250f6bdc-a5e1-495f-a1e8-6e8e7021ad9d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01707c3276ddedab0c224e0f459634c508e0ac04
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 66c29c0e296a0eb13ef36ddb543b26af504b3230
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070151"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476810"
 ---
 # <a name="compiler-error-c2216"></a>Derleyici Hatası C2216
 

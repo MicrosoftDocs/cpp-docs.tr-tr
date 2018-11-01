@@ -1,23 +1,17 @@
 ---
-title: Visual C++ Yardım ve topluluk | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Yardım ve Topluluk
 ms.date: 11/30/2017
 ms.technology:
 - cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e74ed975cce0ac3a87716d9f7ad00da2d75d509
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 3b01c58349aa1dff1c782b051156250fd495df91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460014"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ Yardım ve Topluluk
 

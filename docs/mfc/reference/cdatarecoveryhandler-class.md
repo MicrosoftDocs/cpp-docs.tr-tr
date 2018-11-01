@@ -1,10 +1,6 @@
 ---
-title: CDataRecoveryHandler sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDataRecoveryHandler sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDataRecoveryHandler
 - AFXDATARECOVERY/CDataRecoveryHandler
@@ -36,8 +32,6 @@ f1_keywords:
 - AFXDATARECOVERY/CDataRecoveryHandler::SetSaveDocumentInfoOnIdle
 - AFXDATARECOVERY/CDataRecoveryHandler::SetShutdownByRestartManager
 - AFXDATARECOVERY/CDataRecoveryHandler::UpdateDocumentInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDataRecoveryHandler [MFC], CDataRecoveryHandler
 - CDataRecoveryHandler [MFC], AutosaveAllDocumentInfo
@@ -68,16 +62,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e038cc779f2a007d680eb8b2577881a55b81d4c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 10107d7b815f8a3c479a28de8ff07439b5da2fda
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076678"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456049"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
 

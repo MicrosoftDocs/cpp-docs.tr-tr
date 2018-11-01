@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2014 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2014
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2014
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2014
 ms.assetid: 231d8e9c-48c0-4027-99a3-245d186275ec
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4a9167d71e717490b89c1861abe9a9da9e0ab6a8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 58cf9867a9e36b304ab9da79084bc01dff453892
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462666"
 ---
 # <a name="compiler-error-c2014"></a>Derleyici Hatası C2014
 

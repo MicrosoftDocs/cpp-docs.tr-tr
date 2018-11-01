@@ -1,29 +1,19 @@
 ---
-title: -ARCHIVEMEMBERS | Microsoft Docs
-ms.custom: ''
+title: /ARCHIVEMEMBERS
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /archivemembers
-dev_langs:
-- C++
 helpviewer_keywords:
 - ARCHIVEMEMBERS dumpbin option
 - /ARCHIVEMEMBERS dumpbin option
 - -ARCHIVEMEMBERS dumpbin option
 ms.assetid: 47056a7a-a1ba-42bc-9f2e-0599195ef79a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1923dc5fd5f9188f71d37ab2417746f71cdb6c1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3032e2f386ae40b8205823274cc83f70c08b71f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457635"
 ---
 # <a name="archivemembers"></a>/ARCHIVEMEMBERS
 

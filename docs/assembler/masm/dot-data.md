@@ -1,27 +1,17 @@
 ---
-title: . VERİ | Microsoft Docs
-ms.custom: ''
+title: .DATA
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .DATA
-dev_langs:
-- C++
 helpviewer_keywords:
 - .DATA directive
 ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fe809c7d862fcb96125e3b9879ccfa6970ca7c9e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 77c5327b5b6dc3fc93bec7181bb1cbf855d43fec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468763"
 ---
 # <a name="data"></a>.DATA
 

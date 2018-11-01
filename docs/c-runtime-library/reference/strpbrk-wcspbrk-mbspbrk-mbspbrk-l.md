@@ -1,10 +1,6 @@
 ---
-title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l | Microsoft Docs
-ms.custom: ''
+title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbspbrk
 - wcspbrk
@@ -31,8 +27,6 @@ f1_keywords:
 - _tcspbrk
 - _ftcspbrk
 - wcspbrk
-dev_langs:
-- C++
 helpviewer_keywords:
 - fstrpbrk function
 - _ftcspbrk function
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db26c60badceab6c1422146a32de3d6dd2ecb8bd
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: 059b0659a8088783c6d169288de486b41a6e8d82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181139"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468971"
 ---
 # <a name="strpbrk-wcspbrk-mbspbrk-mbspbrkl"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 

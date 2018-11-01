@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3254 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3254
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3254
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3254
 ms.assetid: 93427b10-fa72-4e43-80d1-1a6e122f9f40
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9e42071c55ef3c7a4fc950b1b25656cf68d4024
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e051c6c44d3b85f6f3faaf5380ecf54cba5d73c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081188"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470674"
 ---
 # <a name="compiler-error-c3254"></a>Derleyici Hatası C3254
 

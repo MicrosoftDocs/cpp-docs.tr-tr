@@ -1,10 +1,6 @@
 ---
-title: offsetof makrosu | Microsoft Docs
-ms.custom: ''
+title: offsetof makrosu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,26 +15,20 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - offsetof
-dev_langs:
-- C++
 helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 308aac2493751cfe2147187ed9848347124a90d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a0f367dbe6fa2681a7d413304f32b5699b8f7cee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401470"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458330"
 ---
 # <a name="offsetof-macro"></a>offsetof makrosu
 
-Uzaklık üyenin üst yapısını baştan alır.
+Kendi ana yapısının başlangıcından itibaren bir üyenin uzaklığını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,21 +42,21 @@ size_t offsetof(
 ### <a name="parameters"></a>Parametreler
 
 *structName*<br/>
-Ana veri yapısı adı.
+Üst verileri yapının adı.
 
 *memberName*<br/>
-Uzaklık belirlemek için ana veri yapısı üye adı.
+Uzaklık belirlemek için ana veri yapısı içinde bir üyesinin adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**offsetof** uzaklık belirtilen üye bayt cinsinden üst veri yapısını baştan döndürür. Bit alanları için tanımlı değil.
+**offsetof** uzaklık üst veri yapısının başlangıcından itibaren belirtilen üyenin bayt cinsinden döndürür. Bit alanları için tanımlanmamıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Offsetof** makrosu bayt cinsinden uzaklık döndürür *memberName* tarafından belirtilen yapısı başından itibaren *structName* türünde bir değer olarak **size_ t**. Türleriyle belirtebilirsiniz **yapısı** anahtar sözcüğü.
+**Offsetof** makrosu bayt cinsinden uzaklığı döndürür *memberName* tarafından belirtilen yapısının başlangıcından *structName* türünde bir değer olarak **size_ t**. Türleriyle belirtebilirsiniz **yapı** anahtar sözcüğü.
 
 > [!NOTE]
-> **offsetof** C prototipi kullanarak açıklanan olamaz ve bir işlev değil.
+> **offsetof** bir işlev değil ve bir C prototipi kullanarak açıklanan olamaz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -74,7 +64,7 @@ Uzaklık belirlemek için ana veri yapısı üye adı.
 |-------------|---------------------|
 |**offsetof**|\<stddef.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

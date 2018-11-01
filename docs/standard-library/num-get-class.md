@@ -1,18 +1,12 @@
 ---
-title: num_get sınıfı | Microsoft Docs
-ms.custom: ''
+title: num_get Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocnum/std::num_get
 - locale/std::num_get::char_type
 - locale/std::num_get::iter_type
 - locale/std::num_get::do_get
 - locale/std::num_get::get
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::num_get [C++]
 - std::num_get [C++], char_type
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cb6364a9f1cb74f9a002e37c278f3686b9916ca
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c0984c15e2bf1682fc902264f47f340d0bd3c859
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472767"
 ---
 # <a name="numget-class"></a>num_get Sınıfı
 

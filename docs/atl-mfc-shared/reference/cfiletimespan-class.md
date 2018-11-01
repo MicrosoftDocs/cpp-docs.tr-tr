@@ -1,32 +1,22 @@
 ---
-title: CFileTimeSpan sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFileTimeSpan sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFileTimeSpan
 - ATLTIME/ATL::CFileTimeSpan
 - ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan
 - ATLTIME/ATL::CFileTimeSpan::GetTimeSpan
 - ATLTIME/ATL::CFileTimeSpan::SetTimeSpan
-dev_langs:
-- C++
 helpviewer_keywords:
 - shared classes, CFileTimeSpan
 - CFileTimeSpan class
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27be228c735b667d76f1dc70d9ae36f4229acd01
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: dc59a300fc48f180fb593500ed85ee1a4c34c07e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468932"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan sınıfı
 

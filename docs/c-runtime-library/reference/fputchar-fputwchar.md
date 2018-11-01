@@ -1,10 +1,6 @@
 ---
-title: _fputchar, _fputwchar | Microsoft Docs
-ms.custom: ''
+title: _fputchar, _fputwchar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fputchar
 - _fputwchar
@@ -28,8 +24,6 @@ f1_keywords:
 - _fputtchar
 - fputchar
 - _fputchar
-dev_langs:
-- C++
 helpviewer_keywords:
 - fputchar function
 - standard output, writing to
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - fputtchar function
 - _fputchar function
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fd5a1d60c61fdde5864f3447b5f721f409bc3a4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 57ec2350fa1d0b681c6eed0c4cfc4ec4660977e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399598"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477980"
 ---
 # <a name="fputchar-fputwchar"></a>_fputchar, _fputwchar
 
@@ -72,13 +62,13 @@ Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri yazılmış karakteri döndürür. İçin **_fputchar**, dönüş değeri **EOF** bir hata olduğunu gösterir. İçin **_fputwchar**, dönüş değeri **WEOF** bir hata olduğunu gösterir. C ise **NULL**, açıklandığı gibi geçersiz bir parametre özel durum, bu işlevler üret [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, **EOF** (veya **WEOF**) ve **errno** için **EINVAL**.
+Bu işlevlerin her biri yazılan karakteri döndürür. İçin **_fputchar**, dönüş değeri **EOF** bir hata olduğunu gösterir. İçin **_fputwchar**, dönüş değeri **WEOF** bir hata olduğunu gösterir. C ise **NULL**, açıklanan şekilde geçersiz parametre özel durum, bu işlevleri oluşturmak [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bunlar döndürür **EOF** (veya **WEOF**) ayarlayıp **errno** için **EINVAL**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her ikisi de yazar tek karakter *c* için **stdout** ve uygun şekilde göstergesi ilerletir. **_fputchar** eşdeğerdir `fputc( stdout )`. Ayrıca eşdeğer olan **putchar**, ancak bir işlev ve bir makro değil, yalnızca bir işlevi olarak uygulanır. Farklı **fputc** ve **putchar**, bu işlevler ANSI standart ile uyumlu değil.
+Bu işlevlerin her ikisi de tek bir karakter Yazar *c* için **stdout** ve göstergeyi uygun şekilde ilerletir. **_fputchar** eşdeğerdir `fputc( stdout )`. Ayrıca değerine eşdeğer olan **putchar**, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. Farklı **fputc** ve **putchar**, bu işlevler ANSI standardı ile uyumlu değildir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -93,7 +83,7 @@ Bu işlevlerin her ikisi de yazar tek karakter *c* için **stdout** ve uygun şe
 |**_fputchar**|\<stdio.h >|
 |**_fputwchar**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -122,6 +112,6 @@ This is a test of _fputchar!!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>
