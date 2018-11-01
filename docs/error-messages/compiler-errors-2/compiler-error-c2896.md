@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2896 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2896
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2896
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2896
 ms.assetid: b600407b-cb05-42e3-9069-2aa6960f0eaa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7cd60c4b5d1046c0b5a828539ebd66036b7cf40c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e30dc17e7c143af52c5a8b56be7f1efa7632ee2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554413"
 ---
 # <a name="compiler-error-c2896"></a>Derleyici Hatası C2896
 
