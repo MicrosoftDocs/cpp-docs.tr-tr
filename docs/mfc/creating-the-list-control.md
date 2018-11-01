@@ -1,26 +1,16 @@
 ---
-title: Liste denetimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Liste Denetimi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl class [MFC], creating control
 - list controls [MFC]
 ms.assetid: a4cb1729-31b6-4d2b-a44b-367474848a39
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0586b28d2a772456d7efc8068b171bf37c9ba41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b21fb8a7721df571dbe4d65c28053af3610d9bf7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495273"
 ---
 # <a name="creating-the-list-control"></a>Liste Denetimi Oluşturma
 

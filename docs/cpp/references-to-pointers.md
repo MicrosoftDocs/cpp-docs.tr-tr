@@ -1,25 +1,15 @@
 ---
-title: İşaretçi başvuruları | Microsoft Docs
-ms.custom: ''
+title: İşaretçi Başvuruları
 ms.date: 08/20/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - references, to pointers
 ms.assetid: 4ce48b08-1511-4d2f-a31f-95f99eac0c70
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a93321eeb05f0e0448dca607177fcba6e89089a8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 060bbaef74c934de4d8529b3ceafc61d1b70dc70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107084"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512729"
 ---
 # <a name="references-to-pointers"></a>İşaretçi Başvuruları
 

@@ -1,29 +1,19 @@
 ---
-title: -RELOCATIONS | Microsoft Docs
-ms.custom: ''
+title: /RELOCATIONS
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /relocations
-dev_langs:
-- C++
 helpviewer_keywords:
 - RELOCATIONS dumpbin option
 - /RELOCATIONS dumpbin option
 - -RELOCATIONS dumpbin option
 ms.assetid: 535eba3a-781a-4809-bf33-f67d3060b02c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 443dd28e16eddd1e797641d00b79ef2165961586
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5ec53f4651d4aa1b140dd984d5ca62590a569d38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716735"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493788"
 ---
 # <a name="relocations"></a>/RELOCATIONS
 

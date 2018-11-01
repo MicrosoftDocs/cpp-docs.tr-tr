@@ -1,25 +1,15 @@
 ---
-title: fmod işlevi | Microsoft Docs
-ms.custom: ''
+title: fmod İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - fmod function
 ms.assetid: ffb3d9b9-b6e4-45e2-aadb-af60c3ff54f6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0251246595b72d2b092fb0e47a69f6d9872b4c9a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d32e01742c85b85056be9e334f99cb038e283130
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067734"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500561"
 ---
 # <a name="fmod-function"></a>fmod İşlevi
 

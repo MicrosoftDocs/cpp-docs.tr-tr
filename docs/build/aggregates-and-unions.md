@@ -1,25 +1,15 @@
 ---
-title: Toplamlar ve birleşimler | Microsoft Docs
-ms.custom: ''
+title: Toplamlar ve Birleşimler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregates [C++], and unions
 ms.assetid: 859fc211-b111-4f12-af98-de78e48f9b92
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aac6da94a0786e5cdc2eee4d16f5927f66e0a8d5
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a4206a5e07c765e9c789eab5c8963c9db4c2f234
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861193"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496267"
 ---
 # <a name="aggregates-and-unions"></a>Toplamlar ve Birleşimler
 

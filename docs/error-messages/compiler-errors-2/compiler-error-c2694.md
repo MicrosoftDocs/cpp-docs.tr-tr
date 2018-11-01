@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2694 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2694
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2694
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2694
 ms.assetid: 8dc2cec2-67ae-4e16-8c0c-374425aca8bc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aae194d0ec2aa6c5eedafa1d4c66137861385ed6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4897512f6bd27465b7281d7a27757918128202d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029602"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489940"
 ---
 # <a name="compiler-error-c2694"></a>Derleyici Hatası C2694
 

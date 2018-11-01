@@ -1,10 +1,6 @@
 ---
-title: saat | Microsoft Docs
-ms.custom: ''
+title: saat
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - clock
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - clock
-dev_langs:
-- C++
 helpviewer_keywords:
 - processor time used, calculating
 - time, calculating processor
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - processor time used
 - calculating processor time used
 ms.assetid: 3e1853dd-498f-49ba-b06a-f2315f20904e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd4b399900802d110ff5746a0ccb2424ba40e6b5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4b58b33b533250447cf964134de9869bddee4498
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492659"
 ---
 # <a name="clock"></a>saat
 

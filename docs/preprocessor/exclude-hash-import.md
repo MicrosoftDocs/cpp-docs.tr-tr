@@ -1,27 +1,17 @@
 ---
-title: (#import) hariç | Microsoft Docs
-ms.custom: ''
+title: exclude (#import)
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - exclude
-dev_langs:
-- C++
 helpviewer_keywords:
 - exclude attribute
 ms.assetid: 0883248a-d4bf-420e-9848-807b28fa976e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c345d9268f63a714eeae4beff78a7ac39ce545a1
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 1de1376fbe80147bc9fe01ea83bad81912431310
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49807906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498260"
 ---
 # <a name="exclude-import"></a>hariç tutmak (\#içeri aktarma)
 

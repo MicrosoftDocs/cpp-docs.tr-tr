@@ -1,29 +1,19 @@
 ---
-title: ATL OLE DB Tüketicisi Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL OLE DB Tüketicisi Sihirbazı
 ms.date: 08/31/2018
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.consumer.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
 - connection strings [C++], OLE DB consumers
 - ATL OLE DB Consumer Wizard
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2555bdd9c1de130cd692131c12b7b2afc37537be
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 835b3e6246741c3859f51e017686531f450db194
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499573"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 

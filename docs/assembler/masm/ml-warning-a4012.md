@@ -1,27 +1,18 @@
 ---
-title: ML uyarısı A4012 | Microsoft Docs
-ms.custom: ''
+title: ML Uyarısı A4012
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A4012
-dev_langs:
-- C++
 helpviewer_keywords:
 - A4012
 ms.assetid: 842b1259-9679-4eeb-a02d-672a583a94e5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 083a0cd7687bc182aa9e387d6d575fa718b1b50c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f58d1f420d4acc848eaf04f93c01205dd1205468
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497305"
 ---
 # <a name="ml-warning-a4012"></a>ML Uyarısı A4012
 

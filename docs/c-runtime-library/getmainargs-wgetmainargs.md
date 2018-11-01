@@ -1,10 +1,6 @@
 ---
-title: __getmainargs, __wgetmainargs | Microsoft Docs
-ms.custom: ''
+title: __getmainargs, __wgetmainargs
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __wgetmainargs
 - __getmainargs
@@ -20,22 +16,16 @@ apitype: DLLExport
 f1_keywords:
 - __wgetmainargs
 - __getmainargs
-dev_langs:
-- C++
 helpviewer_keywords:
 - __wgetmainargs
 - __getmainargs
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c323780308d71158bf717898a05f3454fabf0c3d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 625b3437bc922f3ca73c150fa14adf1f57567abb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030254"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504594"
 ---
 # <a name="getmainargs-wgetmainargs"></a>__getmainargs, __wgetmainargs
 

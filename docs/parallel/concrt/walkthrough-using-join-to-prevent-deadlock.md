@@ -1,28 +1,18 @@
 ---
-title: 'İzlenecek yol: kilitlenmeyi önlemek için birleştirme kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - preventing deadlock with joins [Concurrency Runtime]
 - deadlock, preventing [Concurrency Runtime]
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45669b4838925ed671646ca1aad16a3fdbe6de77
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b98c2deb158b9b9fc71caa7133aeaeb2acfd369c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377285"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498844"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 

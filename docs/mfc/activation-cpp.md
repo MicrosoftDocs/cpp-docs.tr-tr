@@ -1,12 +1,6 @@
 ---
-title: Etkinleştirme (C++) | Microsoft Docs
-ms.custom: ''
+title: Etkinleştirme (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE server applications [MFC], activation
 - OLE items [MFC], visual editing
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - activation [MFC], embedded OLE items
 - OLE activation [MFC]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e0f6207d91fa3816ab17462f62bd39551f7961e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ba3c705227e6ca189527d29d4f3ae0f21c71eb72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493515"
 ---
 # <a name="activation-c"></a>Etkinleştirme (C++)
 

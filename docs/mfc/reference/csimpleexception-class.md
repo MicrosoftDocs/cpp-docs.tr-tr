@@ -1,31 +1,21 @@
 ---
-title: CSimpleException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSimpleException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSimpleException
 - AFX/CSimpleException
 - AFX/CSimpleException::CSimpleException
 - AFX/CSimpleException::GetErrorMessage
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSimpleException [MFC], CSimpleException
 - CSimpleException [MFC], GetErrorMessage
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ab21338eabe2e432189ccf8a5aae3432005657d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8fb5f7e2133f1055cde05b2dc1358896c9ea0c20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083223"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508308"
 ---
 # <a name="csimpleexception-class"></a>CSimpleException sınıfı
 

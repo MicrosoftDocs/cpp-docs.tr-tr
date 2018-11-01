@@ -1,31 +1,20 @@
 ---
-title: Araç çubuğu Düzenleyicisi (C++) | Microsoft Docs
-ms.custom: ''
+title: Araç çubuğu Düzenleyicisi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.toolbar.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource editors [C++], Toolbar editor
 - editors, toolbars
 - toolbars [C++], editing
 - Toolbar editor
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 273893f5164c4e89b3516c43b5414e5487af376e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7efff3d4d784de6ee3130c3481f3674351cc7463
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486065"
 ---
 # <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
 

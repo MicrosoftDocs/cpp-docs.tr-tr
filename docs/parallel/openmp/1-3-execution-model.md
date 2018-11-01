@@ -1,23 +1,13 @@
 ---
-title: 1.3 yürütme modeli | Microsoft Docs
-ms.custom: ''
+title: 1.3 Yürütme Modeli
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 85ae8bc4-5bf0-45e0-a45f-02de9adaf716
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c284563a47d21abc9a1dacf045238449d64205d5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 291bf71159cc681916d19649cfa12298d0929cc3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491581"
 ---
 # <a name="13-execution-model"></a>1.3 Yürütme Modeli
 

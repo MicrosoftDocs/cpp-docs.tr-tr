@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK2022 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK2022
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2022
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK2022
 ms.assetid: d2128c73-dde3-4b8e-a9b2-0a153acefb3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b28e9f31c9ce4a7659891698feff48b16450944
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e55202274c5ec3982f784ad6cdf074a5a99e922f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118355"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491396"
 ---
 # <a name="linker-tools-error-lnk2022"></a>Bağlayıcı Araçları Hatası LNK2022
 

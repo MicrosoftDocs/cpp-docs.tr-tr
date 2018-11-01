@@ -1,10 +1,6 @@
 ---
-title: CAnimationPoint sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationPoint sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationPoint
 - AFXANIMATIONCONTROLLER/CAnimationPoint
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList
 - AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue
 - AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationPoint [MFC], CAnimationPoint
 - CAnimationPoint [MFC], AddTransition
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CAnimationPoint [MFC], m_xValue
 - CAnimationPoint [MFC], m_yValue
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2fa0258b002d421376855eaf88c02444f0ddc620
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 15f18a43fcda76bb5531434de84d97a349cb7f39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076496"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497209"
 ---
 # <a name="canimationpoint-class"></a>CAnimationPoint sınıfı
 

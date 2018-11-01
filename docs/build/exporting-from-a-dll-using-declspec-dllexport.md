@@ -1,31 +1,21 @@
 ---
-title: __Declspec(dllexport) kullanarak DLL'den dışarı aktarma | Microsoft Docs
-ms.custom: ''
+title: __declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - dllexport
 - __declspec
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec(dllexport) keyword [C++]
 - names [C++], DLL exports by
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0415bf6d2019e192f60aa7796fd120f0fa8a7a67
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: effefa2c370634c450b03ed18187769e12e40adf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710482"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500392"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 

@@ -1,10 +1,6 @@
 ---
-title: 'MIDL özellik sayfaları: Genel | Microsoft Docs'
-ms.custom: ''
+title: 'MIDL Özellik Sayfaları: Genel'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCMidlTool.PreprocessorDefinitions
 - VC.Project.VCMidlTool.DefaultCharType
@@ -16,21 +12,15 @@ f1_keywords:
 - VC.Project.VCMidlTool.SuppressStartupBanner
 - VC.Project.VCMidlTool.TargetEnvironment
 - VC.Project.VCMidlTool.OVERWRITEStandardIncludePath
-dev_langs:
-- C++
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: 0692484c-a7e6-4270-8df7-981589368399
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32e1c743844d252b391a4a747d803ba0e8c81c54
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9be01911ec52c62450b64273776a611ad5542db3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512689"
 ---
 # <a name="midl-property-pages-general"></a>MIDL Özellik Sayfaları: Genel
 

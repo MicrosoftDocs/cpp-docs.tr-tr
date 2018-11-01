@@ -1,10 +1,6 @@
 ---
-title: network_link_registry sınıfı | Microsoft Docs
-ms.custom: ''
+title: network_link_registry Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - network_link_registry
 - AGENTS/concurrency::network_link_registry
@@ -13,21 +9,15 @@ f1_keywords:
 - AGENTS/concurrency::network_link_registry::contains
 - AGENTS/concurrency::network_link_registry::count
 - AGENTS/concurrency::network_link_registry::remove
-dev_langs:
-- C++
 helpviewer_keywords:
 - network_link_registry class
 ms.assetid: 3e7b4097-09f1-4252-964e-b15b8f7f7fc6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bcdb05230cdacbf626235e315e605414c435493
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 1d0aa8b3b5409659dee08b4e4365beac1a3a92be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492283"
 ---
 # <a name="networklinkregistry-class"></a>network_link_registry Sınıfı
 

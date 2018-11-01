@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2004 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2004
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2004
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2004
 ms.assetid: 74e219ba-4dec-467a-b121-18a76aa57230
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e85ae836dbe52e9f5a698fd682ed82cba713f259
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f43d6316b16c497d8b6cdb03319effe2bd0b03d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504487"
 ---
 # <a name="ml-nonfatal-error-a2004"></a>ML Önemli Olmayan Hatası A2004
 

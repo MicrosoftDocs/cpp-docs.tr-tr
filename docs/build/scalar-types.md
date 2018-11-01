@@ -1,23 +1,13 @@
 ---
-title: Skaler türleri | Microsoft Docs
-ms.custom: ''
+title: Ölçekli Türler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 07c9195e-b6c7-4083-8ef0-8a93032e4d1e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ad0fa75380ca971f7ac2dfa4c370c076f7d552e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0c2fa18022763564a29b6a96f8ce719039dcd216
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700966"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492074"
 ---
 # <a name="scalar-types"></a>Ölçekli Türler
 

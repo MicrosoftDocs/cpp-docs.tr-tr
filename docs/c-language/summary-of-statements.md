@@ -1,23 +1,13 @@
 ---
-title: Deyimler özeti | Microsoft Docs
-ms.custom: ''
+title: Deyimler Özeti
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e83d4db17dd20a46ed2cbdd91598428e14748cf0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ac5452e4b7e3faeff364d9f03ec7b87b3b82bd36
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030319"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491981"
 ---
 # <a name="summary-of-statements"></a>Deyimler Özeti
 

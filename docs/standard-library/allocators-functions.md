@@ -1,8 +1,6 @@
 ---
-title: '&lt;allocators&gt; makroları | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Ayırıcılar&gt; makroları'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - allocators/std::ALLOCATOR_DECL
 - allocators/std::CACHE_CHUNKLIST
@@ -16,14 +14,14 @@ helpviewer_keywords:
 - std::CACHE_FREELIST [C++]
 - std::CACHE_SUBALLOC [C++]
 - std::SYNC_DEFAULT [C++]
-ms.openlocfilehash: a24b854ac37dc0dfed44aec33fc1fb7e0bedcfc5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 736e587a41fa1006801dcf6930b33ee434c9a5ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842670"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492663"
 ---
-# <a name="ltallocatorsgt-macros"></a>&lt;allocators&gt; makroları
+# <a name="ltallocatorsgt-macros"></a>&lt;Ayırıcılar&gt; makroları
 
 ||||
 |-|-|-|
@@ -32,7 +30,7 @@ ms.locfileid: "33842670"
 
 ## <a name="allocator_decl"></a>  ALLOCATOR_DECL
 
-Bir ayırıcı Şablon sınıfı verir.
+Şablon sınıfı bir ayırıcı verir.
 
 ```cpp
 #define ALLOCATOR_DECL(cache, sync, name) <alloc_template>
@@ -40,9 +38,9 @@ Bir ayırıcı Şablon sınıfı verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir şablon tanımı makrosu verir `template <class Type> class name {.....}` ve bir uzmanlık `template <> class name<void> {.....}` eşitleme filtresi kullanan bir ayırıcı Şablon sınıfı birlikte tanımlayan `sync` ve bir önbellek türü `cache`.
+Bir şablon tanımı makro verir `template <class Type> class name {.....}` ve özelleştirmesi `template <> class name<void> {.....}` eşitleme filtresi kullanan bir ayırıcı şablon sınıf birlikte tanımlayan `sync` ve bir önbellek türü `cache`.
 
-Yeniden bağlamasını derleyebilirsiniz derleyicileri elde edilen şablon tanımının şöyle görünür:
+Yeniden bağlamasını derleyebilirsiniz derleyiciler, sonuçta elde edilen şablon tanımı şöyle görünür:
 
 ```cpp
 struct rebind
@@ -51,7 +49,7 @@ struct rebind
    };
 ```
 
-Yeniden bağlamasını derlenemiyor derleyicileri için sonuçta elde edilen şablon tanımının şöyle görünür:
+Yeniden bağlamasını derlenemez derleyicileri için ortaya çıkan şablon tanımı şöyle görünür:
 
 ```cpp
 template <class Type<class name
@@ -110,8 +108,8 @@ Eşitleme filtresi verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Derleyici tek iş parçacıklı hem çok iş parçacıklı uygulamalar derleme destekliyorsa, tek iş parçacıklı uygulamalar için makrosu verir `stdext::allocators::sync_none`; bunu verir tüm durumlarda `stdext::allocators::sync_shared`.
+Derleyici, hem tek iş parçacıklı ve çok iş parçacıklı uygulamalar derleme destekliyorsa, tek iş parçacıklı uygulamalar için makro verir `stdext::allocators::sync_none`; verir, diğer tüm durumlarda `stdext::allocators::sync_shared`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)<br/>
+[\<Ayırıcılar >](../standard-library/allocators-header.md)<br/>

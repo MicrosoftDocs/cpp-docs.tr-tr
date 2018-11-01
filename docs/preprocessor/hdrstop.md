@@ -1,29 +1,19 @@
 ---
-title: hdrstop | Microsoft Docs
-ms.custom: ''
+title: hdrstop
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - hdrstop_CPP
 - vc-pragma.hdrstop
-dev_langs:
-- C++
 helpviewer_keywords:
 - hdrstop pragma
 - pragmas, hdrstop
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e571229602a311633fc7425384544c53813b935
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5dc47e4b2ec264182d26925df60bf3ee29871b65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059720"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497095"
 ---
 # <a name="hdrstop"></a>hdrstop
 Ön derleme dosya adları ve derleme durumunun kaydedildiği konum üzerinde ek denetim olanağı verir.

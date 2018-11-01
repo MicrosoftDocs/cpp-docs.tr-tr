@@ -1,12 +1,7 @@
 ---
-title: 'Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama | Microsoft Docs'
+title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - structures [C++], marshaling embedded pointers
 - interop [C++], embedded pointers
@@ -15,17 +10,12 @@ helpviewer_keywords:
 - pointers [C++], marshaling
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: e64697edad62b440ce739b4bca7856f84f608135
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d48297118fde98889acc0fd5f4abd29ee177cd8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493746"
 ---
 # <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama
 

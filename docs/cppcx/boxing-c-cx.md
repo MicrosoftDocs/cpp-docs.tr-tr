@@ -1,20 +1,13 @@
 ---
-title: Kutulama (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Kutulama (C + +/ CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e9ab84bf840f01fbb22ef3b2510056338d10c74
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dd950e2463da7541ebad731e74275ce360a1c8a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108390"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491045"
 ---
 # <a name="boxing-ccx"></a>Kutulama (C + +/ CX)
 

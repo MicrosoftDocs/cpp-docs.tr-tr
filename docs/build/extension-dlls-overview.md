@@ -1,12 +1,6 @@
 ---
-title: "Uzantı DLL'leri: Genel bakış | Microsoft Docs"
-ms.custom: ''
+title: "Uzantı DLL'leri: Genel Bakış"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - AFXDLL library
 - MFC DLLs [C++], MFC extension DLLs
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9906c40044a46a6ac982e0e4b1c00d729b8604fb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1967370f587b0b78c4e68ebff14804b20f158bd0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498208"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC uzantı DLL'leri: genel bakış
 

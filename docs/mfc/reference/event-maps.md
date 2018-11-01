@@ -1,27 +1,17 @@
 ---
-title: Olay eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: Olay Eşlemeleri
 ms.date: 06/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
-dev_langs:
-- C++
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45a5b1714721a414f1016d977cc9cb549b4000d7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 512170d7eaa891b3616ca1ea56c29a8bb5cccda9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083119"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492251"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 

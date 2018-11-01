@@ -1,25 +1,15 @@
 ---
-title: Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntem | Microsoft Docs
-ms.custom: ''
+title: Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntemi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ATL_MIN_CRT macro
 ms.assetid: 49b485f7-9487-49e4-b12a-0f710b620e2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1962b2db987e34a1f0d18fa863473a20f9da7c9d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b4c91b7fe5182c8457d16de57792ba1b5ab7b3be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084269"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496997"
 ---
 # <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntemi
 

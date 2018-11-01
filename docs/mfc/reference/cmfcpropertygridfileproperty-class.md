@@ -1,29 +1,19 @@
 ---
-title: CMFCPropertyGridFileProperty sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyGridFileProperty sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridFileProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty
 ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc80d2a40ee9381ad982cd548dddc0702ce7bdad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 659b2cf4cf563450e51b1d6f407414273a5109aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487367"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
 

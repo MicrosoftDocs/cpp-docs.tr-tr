@@ -1,10 +1,6 @@
 ---
-title: CHandle sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHandle sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CHandle
 - ATLBASE/ATL::CHandle
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLBASE/ATL::CHandle::Close
 - ATLBASE/ATL::CHandle::Detach
 - ATLBASE/ATL::CHandle::m_h
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99d8cd4b076e5de35ffcb957a05f3c680bc82214
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 64c2cb1531d9330e075a06c65ff022115d0fb6b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106811"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499924"
 ---
 # <a name="chandle-class"></a>CHandle sınıfı
 

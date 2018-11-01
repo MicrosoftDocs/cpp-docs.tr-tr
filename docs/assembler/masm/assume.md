@@ -1,27 +1,17 @@
 ---
-title: VARSAYAR | Microsoft Docs
-ms.custom: ''
+title: ASSUME
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - ASSUME
-dev_langs:
-- C++
 helpviewer_keywords:
 - ASSUME directive
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fbba50e56ae06dc3afb64582d4a131bba75a6c8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 97a57cc8a1acccf70572ff963e496aa79fa3ab43
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055859"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500574"
 ---
 # <a name="assume"></a>ASSUME
 

@@ -1,29 +1,19 @@
 ---
-title: goto ve Labeled Statements (C) | Microsoft Docs
-ms.custom: ''
+title: goto ve Etiketli Deyimleri (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - goto
-dev_langs:
-- C++
 helpviewer_keywords:
 - labeled statement
 - statements, labeled
 - goto keyword [C]
 ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5183ff4f770ca0b6396835ed680b54fe13811e67
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 47bdbb0de4f21d93f890638f6d439dc962dda07b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080616"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518696"
 ---
 # <a name="goto-and-labeled-statements-c"></a>goto ve Etiketli Deyimleri (C)
 

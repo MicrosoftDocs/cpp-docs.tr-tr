@@ -1,12 +1,6 @@
 ---
-title: Boş ve tanımlanmamış makrolar | Microsoft Docs
-ms.custom: ''
+title: Boş ve Tanımlanmamış Makrolar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, undefined macros
 - Null macros in NMAKE
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - undefined macros and NMAKE
 - NMAKE program, null macros
 ms.assetid: 1db4611a-1755-4328-b00f-d35365af8b6c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eee6e713715e4709af990878224261a41f5470e3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f6f294234f7244b65137742e1fe8abaa37a676a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498923"
 ---
 # <a name="null-and-undefined-macros"></a>Boş ve Tanımlanmamış Makrolar
 

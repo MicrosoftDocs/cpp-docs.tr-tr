@@ -1,29 +1,19 @@
 ---
-title: -TSAWARE | Microsoft Docs
-ms.custom: ''
+title: /TSAWARE
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /tsaware
-dev_langs:
-- C++
 helpviewer_keywords:
 - -TSAWARE editbin option
 - /TSAWARE editbin option
 - TSAWARE editbin option
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4516a415695b8ebf0594d393981b3fa3211f1ae
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bd55d1190b93f15ed2c7d92fc2aa7eaf8df353c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726343"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524877"
 ---
 # <a name="tsaware"></a>/TSAWARE
 

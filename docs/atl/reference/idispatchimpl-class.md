@@ -1,10 +1,6 @@
 ---
-title: Idispatchımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Idispatchımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IDispatchImpl
 - ATLCOM/ATL::IDispatchImpl
@@ -13,23 +9,17 @@ f1_keywords:
 - ATLCOM/ATL::IDispatchImpl::GetTypeInfo
 - ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount
 - ATLCOM/ATL::IDispatchImpl::Invoke
-dev_langs:
-- C++
 helpviewer_keywords:
 - dual interfaces, classes
 - IDispatchImpl class
 - IDispatch class support in ATL
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f457f47cc04791bc46aaa531d787f4d3f7044e1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8be209c8fb2e9f4d1f4dda4bbd3dc9e5220243b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055365"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490447"
 ---
 # <a name="idispatchimpl-class"></a>Idispatchımpl sınıfı
 

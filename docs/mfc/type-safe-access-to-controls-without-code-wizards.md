@@ -1,26 +1,16 @@
 ---
-title: Kod sihirbazları olmadan denetimlere tür kullanımı uyumlu erişim | Microsoft Docs
-ms.custom: ''
+title: Kod Sihirbazları Olmadan Denetimlere Tür Kullanımı Uyumlu Erişim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog boxes [MFC], accessing controls
 - dialog box controls [MFC], accessing
 ms.assetid: 325b4927-d49b-42b4-8e0b-fc84f31fb059
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2685c946b9ee1c738ee83f9413b7fd955857febb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2b337aa28d5fdf061d1db4b5cf66303688ef5bf3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438346"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501718"
 ---
 # <a name="type-safe-access-to-controls-without-code-wizards"></a>Kod Sihirbazları Olmadan Denetimlere Tür Kullanımı Uyumlu Erişim
 

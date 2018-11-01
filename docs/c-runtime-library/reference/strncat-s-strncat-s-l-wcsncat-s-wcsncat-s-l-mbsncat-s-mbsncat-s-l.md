@@ -1,10 +1,6 @@
 ---
-title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l | Microsoft Docs
-ms.custom: ''
+title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcsncat_s_l
 - wcsncat_s
@@ -35,8 +31,6 @@ f1_keywords:
 - strncat_s
 - _mbsncat_s
 - _tcsncat_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - concatenating strings
 - _mbsncat_s function
@@ -53,23 +47,19 @@ helpviewer_keywords:
 - wcsncat_s_l function
 - mbsncat_s function
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d88467034eeab3f3a269f735d5b158d94a429873
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb188f9cb5ab5f6f1a8bb66575364b7a94fe6e22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500756"
 ---
 # <a name="strncats-strncatsl-wcsncats-wcsncatsl-mbsncats-mbsncatsl"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
-Karakterleri dizeye ekler. Bu sürümleri [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dizeye karakterler ekler. Bu sürümleri [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbsncat_s** ve **_mbsncat_s_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncat_s** ve **_mbsncat_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -157,37 +147,37 @@ errno_t _mbsncat_s_l(
 ### <a name="parameters"></a>Parametreler
 
 *strDest*<br/>
-Sonlandırılmış hedef dizesi.
+Null ile sonlandırılmış hedef dize.
 
 *numberOfElements*<br/>
-Hedef arabellek boyutu.
+Hedef arabelleğin boyutu.
 
 *strSource*<br/>
-Sonlandırılmış kaynak dizesi.
+Null ile sonlandırılmış kaynak dizesi.
 
 *Sayısı*<br/>
-Eklemek için karakter sayısını veya [_TRUNCATE](../../c-runtime-library/truncate.md).
+Sona eklenecek karakter sayısı veya [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, 0 döndürür hatasında bir hata kodu.
+Başarılı olursa 0 döndürür bir hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*strDestination*|*numberOfElements*|*strSource*|Dönüş değeri|İçeriği *strDestination*|
+|*strDestination*|*numberOfElements*|*strSource*|Dönüş değeri|İçeriğini *strDestination*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL** veya Sonlandırılmamış|tüm|tüm|**EINVAL**|değiştirilmedi|
-|tüm|tüm|**NULL**|**EINVAL**|değiştirilmedi|
-|tüm|0 veya çok küçük|tüm|**ERANGE**|değiştirilmedi|
+|**NULL** veya Sonlandırılmamış|Tüm|Tüm|**EINVAL**|değiştirilmedi|
+|Tüm|Tüm|**NULL**|**EINVAL**|değiştirilmedi|
+|Tüm|0 veya çok küçük|Tüm|**ERANGE**|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk eklemek bu işlevler deneyin *D* karakterlerinden *strSource* sonuna *strDest*, burada *D* dahadüşükolan*sayısı* ve uzunluğu *strSource*. Bu ekleme, *D* karakter sığacak içinde *strDest* (büyüklüğü olarak verilen *numberOfElements*) bırakıp hala null Sonlandırıcı sonra bu karakterleri yer , null, sonlandırma özgün başlayan eklenir *strDest*, ve yeni bir sonlandırma null eklenmiş; Aksi takdirde *strDest*[0] boş karakter ve geçersiz bir parametre ayarlayın işleyici çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+Bu işlevler ilk eklenecek deneyin *D* karakterlerinden *strSource* sonuna *strDest*burada *D* dahaküçük*sayısı* ve uzunluğunu *strSource*. Bu ekleme, *D* karakterler uygun içinde *strDest* (boyutu olarak verilir *numberOfElements*) ve yine de bir null Sonlandırıcı ve ardından bu karakterleri yer bırakın , sonlandırıcı null, özgün başlayan eklenir *strDest*, ve yeni bir sonlandırıcı null eklenmiş; Aksi takdirde *strDest*[0] null karakteri ve geçersiz parametre işleyici çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-Yukarıdaki paragraf bir istisna vardır. Varsa *sayısı* olan [_TRUNCATE](../../c-runtime-library/truncate.md) büyük sonra *strSource* sığacak şekilde eklenir *strDest* hala eklenecek yer bırakarak çalışırken bir null sonlandırılıyor.
+Yukarıdaki paragraf bir istisna vardır. Varsa *sayısı* olduğu [_TRUNCATE](../../c-runtime-library/truncate.md) çok sonra *strSource* için uygun olacak eklenir *strDest* hala eklenecek yer bırakmak çalışırken bir null Sonlandırıcı.
 
 Örneğin,
 
@@ -197,9 +187,9 @@ strncpy_s(dst, _countof(dst), "12", 2);
 strncat_s(dst, _countof(dst), "34567", 3);
 ```
 
-sizden istiyoruz anlamına gelir **strncat_s** üç karakter uzunluğunda bir arabellek beş iki karakter eklemek için uzun karakter; bu null Sonlandırıcı için yer yok Bu nedenle bırakır **strncat_s** sıfır dize çıkışı ve geçersiz parametre işleyicisi çağırır.
+sizden seçmenizi anlamına gelir **strncat_s** üç karakter arabelleği beş iki karakter eklemek için uzun karakter; bu nedenle null Sonlandırıcı için boşluk bırakacaksa **strncat_s** sıfır çıkış dizesi ve geçersiz parametre işleyicisini çağırır.
 
-Kesme davranışını gerekirse kullanmak **_TRUNCATE** veya ayarla *boyutu* parametresi buna göre:
+Kesme davranışı gerekirse kullanmak **_TRUNCATE** veya ayarla *boyutu* parametresi buna göre:
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
@@ -211,17 +201,17 @@ veya
 strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 ```
 
-Her durumda, sonuç dizesini bir null karakter ile sonlandırıldı. Kopyalama çakışma dizeleri arasında yer alıyorsa, tanımlanmamış bir davranıştır.
+Her durumda, sonuç dizesini null karakteri ile sonlandırılır. Kopyalama çakışan dizeler arasında yer alırsa davranış tanımsızdır.
 
-Varsa *strSource* veya *strDest* olan **NULL**, veya *numberOfElements* sıfır açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **EINVAL** parametrelerini değiştirmeden.
+Varsa *strSource* veya *strDest* olduğu **NULL**, veya *numberOfElements* sıfır açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse, işlev döndürür **EINVAL** parametrelerini değiştirmeden.
 
-**wcsncat_s** ve **_mbsncat_s** joker karakter ve çok baytlı karakter sürümleri **strncat_s**. Dize bağımsız değişkenleri ve dönüş değerini **wcsncat_s** joker karakter olan dizeleri; bu **_mbsncat_s** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**wcsncat_s** ve **_mbsncat_s** geniş karakter ve çok baytlı karakter sürümleridir **strncat_s**. Dize bağımsız değişkenleri ve dönüş değeri **wcsncat_s** geniş karakterli dizelerdir; **_mbsncat_s** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -230,7 +220,7 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
 |**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
-**_strncat_s_l** ve **_wcsncat_s_l** hiçbir yerel ayar bağımlılığı yoktur; bunlar yalnızca için sağlanan **_tcsncat_s_l**.
+**_strncat_s_l** ve **_wcsncat_s_l** öğelerinin yerel bağımlılığı yoktur; bunlar yalnızca için sağlanan **_tcsncat_s_l**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -240,7 +230,7 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**wcsncat_s**|\<String.h > veya \<wchar.h >|
 |**_mbsncat_s**, **_mbsncat_s_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

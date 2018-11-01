@@ -1,9 +1,6 @@
 ---
-title: Uygulayan yapısı | Microsoft Docs
-ms.custom: ''
+title: Implements Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Implements
@@ -11,8 +8,6 @@ f1_keywords:
 - implements/Microsoft::WRL::Implements::CastToUnknown
 - implements/Microsoft::WRL::Implements::FillArrayWithIid
 - implements/Microsoft::WRL::Implements::IidCount
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Implements structure
 - Microsoft::WRL::Implements::CanCastTo method
@@ -20,17 +15,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Implements::FillArrayWithIid method
 - Microsoft::WRL::Implements::IidCount method
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: cc993dc1ebe0c5f1ab11409fcecee9b6cdefdaae
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: a12633c341d3d1efcb8a8a50055db0116c138a9c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788780"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492566"
 ---
 # <a name="implements-structure"></a>Implements Yapısı
 

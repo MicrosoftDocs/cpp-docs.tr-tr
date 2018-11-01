@@ -1,10 +1,6 @@
 ---
-title: wcsrtombs | Microsoft Docs
-ms.custom: ''
+title: wcsrtombs
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcsrtombs
 apilocation:
@@ -22,27 +18,21 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wcsrtombs
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcsrtombs function
 - string conversion, wide characters
 - wide characters, strings
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d2ea0252714803fe8cad48635486d2011275407
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 46ef195ec4685c327c4b5951ec44e5c363214b59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415474"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494425"
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 
-Geniş karakter dizesi, birden çok baytlı karakter dizesi gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcsrtombs_s](wcsrtombs-s.md).
+Geniş karakter dizesi çok baytlı karakter dize gösterimine dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [wcsrtombs_s](wcsrtombs-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,10 +55,10 @@ size_t wcsrtombs(
 ### <a name="parameters"></a>Parametreler
 
 *mbstr*<br/>
-Elde edilen birden çok baytlı karakter dizesi'nın adres konumunu dönüştürülür.
+Sonuç, çok baytlı karakter dizesi'nın adresi konumu dönüştürülür.
 
 *wcstr*<br/>
-Dolaylı olarak noktalarına dönüştürülecek geniş karakter dizesi konumu.
+Dolaylı olarak noktaları konumuna dönüştürülecek geniş karakter dizesi.
 
 *Sayısı*<br/>
 Dönüştürülecek karakter sayısı.
@@ -78,23 +68,23 @@ Bir işaretçi bir **mbstate_t** dönüştürme durum nesnesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bayt sayısı başarılı bir şekilde, bir hata oluştuysa null bayt (varsa), aksi takdirde -1 sonlandırma null hariç dönüştürülen döndürür.
+Bayt sayısı başarılı bir şekilde, bir hata oluştuysa null bayt (varsa), yoksa -1 Sonlandırıcı null içermeden dönüştürülen döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcsrtombs** işlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak, geniş karakter dizesi *mbstate*, içinde işaret değerlerden dolaylı *wcstr*, adresini içine *mbstr*. Dönüştürme için her bir karakteri kadar devam eder: olmayan karşılık gelen bir karakter karşılaşıldığında geniş karakter sonlandırma null karşılaştı sonra veya bir sonraki karakteri yer alan sınırı aşabilir *sayısı*. Varsa **wcsrtombs** joker karakter null karakteri (M '\0') önce veya ne zaman karşılaşırsa *sayısı* oluşur, dönüştürür, 8 bit 0 ve durdurur.
+**Wcsrtombs** işlevi dönüştürür bir içindeki belirtilen dönüşüm durumu başlayarak, geniş karakter dizesi *mbstate*, değerlerinin dolaylı olarak işaret *wcstr*, adresi içine *mbstr*. Dönüştürme için her bir karakteri kadar devam eder: ilgili olmayan bir karakter ile karşılaşıldığında geniş karakteri sonlandırarak null karşılaştı sonra veya bir sonraki karakteri içerdiği sınırını aşacak *sayısı*. Varsa **wcsrtombs** geniş karakterli null karakteri (L '\0') önce veya ne zaman karşılaştığında *sayısı* gerçekleşir dönüştürür, 8 bitlik 0 ve durur.
 
-Bu nedenle, birden çok baytlı karakter dizesi adresindeki *mbstr* null-yalnızca sonlandırılır **wcsrtombs** geniş karakter null karakter dönüştürme sırasında karşılaşır. Dizileri gösterdiği varsa *wcstr* ve *mbstr* üst üste, davranışını **wcsrtombs** tanımlanmadı. **wcsrtombs** geçerli yerel LC_TYPE kategoriye göre etkilenir.
+Bu nedenle, çok baytlı karakter dizesi *mbstr* yalnızca aşağıdaki durumlarda sonlandırılmış **wcsrtombs** dönüştürme sırasında bir geniş karakter null karakterle karşılaştığında. Dizileri işaret ettiği varsa *wcstr* ve *mbstr* üst üste, davranışını **wcsrtombs** tanımsızdır. **wcsrtombs** geçerli yerel ayarı LC_TYPE kategoriye göre etkilenir.
 
-**Wcsrtombs** işlevi farklı olarak [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan *mbstate* sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış.  Örneğin, bir uygulama kullanırsınız **wcsrlen** yerine **wcsnlen**, bir sonraki çağrı, **wcsrtombs** yerine kullanılan **wcstombs**.
+**Wcsrtombs** işlevi farklıdır [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) kendi restartability tarafından. Dönüştürme durumunu depolanan *mbstate* aynı ya da yeniden başlatılabilir diğer işlevlere yapılan sonraki çağrılar için. Yeniden başlatılabilir ve nonrestartable işlevlerin kullanımını kullanırken sonuçlar tanımsızdır.  Örneğin, bir uygulama kullanırsınız **wcsrlen** yerine **wcsnlen**sonraki çağrı, **wcsrtombs** yerine kullanılan **wcstombs**.
 
-Varsa *mbstr* bağımsız değişkeni **NULL**, **wcsrtombs** gereken boyut hedef dizesi bayt cinsinden döndürür. Varsa *mbstate* null, iç **mbstate_t** dönüştürme durumu kullanılır. Varsa bir karakter dizisi *wchar* karşılık gelen çok baytlı yok karakter gösterimi, -1 döndürülür ve **errno** ayarlanır **EILSEQ**.
+Varsa *mbstr* bağımsız değişkeni **NULL**, **wcsrtombs** gerekli boyutu hedef dize baytı cinsinden döndürür. Varsa *mbstate* null, iç **mbstate_t** dönüştürme durumu kullanılır. Varsa karakter dizisi *wchar* karşılık gelen bir çok baytlı yok karakter gösterimi, -1 döndürülür ve **errno** ayarlanır **EILSEQ**.
 
-C++'da, bu işlev bu işlevin yeni, güvenli karşılık gelen çağıran bir şablon aşırı sahiptir. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlev bu işlevin daha yeni ve güvenli karşılığı çağıran bir şablon aşırı yüklemesi vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-**Wcsrtombs** işlevi, geçerli iş parçacığının hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu **setlocale** bu işlev yürütülürken ve *mbstate* null değil.
+**Wcsrtombs** işlevi, geçerli iş parçacığındaki hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu **setlocale** bu işlev yürütülürken ve *mbstate* null değil.
 
 ## <a name="example"></a>Örnek
 

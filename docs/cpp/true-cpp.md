@@ -1,27 +1,17 @@
 ---
-title: TRUE (C++) | Microsoft Docs
-ms.custom: ''
+title: true (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - true_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - true keyword [C++]
 ms.assetid: 96be2a70-51c3-4250-9752-874d25a5a11e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e43fbfd9b3cff9ea617238ed7b4cccd08f780cc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5cfc99f446499201a0f54c8e5b1dcc2d7152445c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488599"
 ---
 # <a name="true-c"></a>true (C++)
 

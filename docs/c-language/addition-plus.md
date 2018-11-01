@@ -1,25 +1,15 @@
 ---
-title: Toplama (+) | Microsoft Docs
-ms.custom: ''
+title: Toplama (+)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointers, adding integers
 ms.assetid: b9014fee-825d-46ef-91db-5d46807081fc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 62ed952113f3d8b3db46ac735ade4d2e9850dc97
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8938042b373e062e99951faa752d78632d9201bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499781"
 ---
 # <a name="addition-"></a>Toplama (+)
 

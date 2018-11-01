@@ -1,10 +1,6 @@
 ---
-title: OLE DB sağlayıcı şablonları için makrolar | Microsoft Docs
-ms.custom: ''
+title: OLE DB Sağlayıcı Şablonları için Makrolar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - vc.templates.ole
 - BEGIN_PROPERTY_SET
@@ -28,8 +24,6 @@ f1_keywords:
 - BEGIN_SCHEMA_MAP
 - END_SCHEMA_MAP
 - SCHEMA_ENTRY
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB provider templates, macros
 - macros, OLE DB Provider Templates
@@ -57,17 +51,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 254fc1488c140c4cb885e42107ff70a83b8d33d2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6743741f0c4045df577aeff69f0cfb00ac9aa96a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070328"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503109"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 

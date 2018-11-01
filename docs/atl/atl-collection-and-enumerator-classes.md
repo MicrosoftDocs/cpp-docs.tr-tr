@@ -1,26 +1,16 @@
 ---
-title: ATL koleksiyonu ve numaralandırıcısı sınıfları | Microsoft Docs
-ms.custom: ''
+title: ATL koleksiyonu ve numaralandırıcısı sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - enumerators, ATL classes
 - collection classes, ATL
 ms.assetid: 6818db73-7094-48d8-a0ca-18147beec362
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0ff5fec4749e08826bab5572149c6cd24a204f9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a0d7483cc142377ec4de903e27f23056a9e8dd8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495313"
 ---
 # <a name="atl-collection-and-enumerator-classes"></a>ATL koleksiyonu ve numaralandırıcısı sınıfları
 

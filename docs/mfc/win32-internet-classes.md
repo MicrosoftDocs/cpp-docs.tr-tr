@@ -1,30 +1,20 @@
 ---
-title: Win32 Internet sınıfları | Microsoft Docs
-ms.custom: ''
+title: Win32 Internet Sınıfları
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.win32
-dev_langs:
-- C++
 helpviewer_keywords:
 - Internet classes [MFC]
 - WinInet classes [MFC], classes
 - Win32 [MFC], Internet classes
 - Windows API [MFC], Internet classes
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c59d9d3e2a838c2b3933d49454a494ab6c7a290
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: a655759e8e1ffdcfe422305cd39623b9d7a6ca4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486443"
 ---
 # <a name="win32-internet-classes"></a>Win32 Internet Sınıfları
 

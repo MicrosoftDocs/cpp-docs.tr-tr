@@ -1,26 +1,17 @@
 ---
-title: İleti eşlemeleri (ATL) | Microsoft Docs
-ms.custom: ''
+title: İleti eşlemeleri (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b36ed5fc339fb49c7e58541465f2433804821fdb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 92d0b4887127e1803d1d3209a6a1dd51e9a98d15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762804"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496115"
 ---
 # <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
 

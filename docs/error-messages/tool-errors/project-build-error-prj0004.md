@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0004 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0004
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0004
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0004
 ms.assetid: 1858769f-0be4-40ed-ab70-2cee550488c7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76847c0df06ec61c29f84efb46eca87683c86cb4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 94752f16b40f3026967eefc836a95b797f48b160
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502488"
 ---
 # <a name="project-build-error-prj0004"></a>Proje Derleme Hatası PRJ0004
 

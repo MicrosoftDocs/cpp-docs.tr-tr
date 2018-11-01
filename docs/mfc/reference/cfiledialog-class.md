@@ -1,10 +1,6 @@
 ---
-title: CFileDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFileDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFileDialog
 - AFXDLGS/CFileDialog
@@ -71,8 +67,6 @@ f1_keywords:
 - AFXDLGS/CFileDialog::OnShareViolation
 - AFXDLGS/CFileDialog::OnTypeChange
 - AFXDLGS/CFileDialog::m_ofn
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFileDialog [MFC], CFileDialog
 - CFileDialog [MFC], AddCheckButton
@@ -138,16 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01fac0286ea93766771043ebfa7e268f0d6b167d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 94530f17c801c62005e837055ce3608e2eaa512f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073909"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499703"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 

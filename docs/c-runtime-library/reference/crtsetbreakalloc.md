@@ -1,10 +1,6 @@
 ---
-title: _CrtSetBreakAlloc | Microsoft Docs
-ms.custom: ''
+title: _CrtSetBreakAlloc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtSetBreakAlloc
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - CrtSetBreakAlloc
 - _CrtSetBreakAlloc
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtSetBreakAlloc function
 - _CrtSetBreakAlloc function
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32e8fedcd70d0e901c63cd5e794773451f436326
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bbc4b0de553533dde95f37675b3c9234569e3505
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487834"
 ---
 # <a name="crtsetbreakalloc"></a>_CrtSetBreakAlloc
 
-Belirtilen nesnenin ayırma sipariş numarası (yalnızca hata ayıklama sürümü) üzerinde bir kesme noktası ayarlar.
+Belirtilen nesne ayırma sipariş numarası (yalnızca hata ayıklama sürümü) üzerinde bir kesme noktası ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,19 +44,19 @@ long _CrtSetBreakAlloc(
 ### <a name="parameters"></a>Parametreler
 
 *lBreakAlloc*<br/>
-Kesme noktası ayarlanacak ayırma sipariş numarası.
+Kesme noktası ayarlamak istediğiniz ayırma sipariş numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir kesme vardı önceki nesne ayırma sıra numarasını döndürür.
+Bir kesme noktası ayarlama sahipti önceki nesne ayırma sıra numarasını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtSetBreakAlloc** sonu bellek ayırma, belirli bir noktada ve isteğin başlangıç noktasının geri izleme tarafından bellek sızıntısı algılama gerçekleştirmek bir uygulama sağlar. İşlev yığınında ayrılmış olan bellek bloğu atanan sıralı nesne ayırma sipariş numarası kullanır. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetBreakAlloc** ön işleme sırasında kaldırılır.
+**_CrtSetBreakAlloc** belirli bir noktada bellek ayırma kesme ve isteğin başlangıç noktasına geri izleme tarafından bellek sızıntısı algılamayı gerçekleştirmek uygulamaya izin verir. İşlev, yığın ayrılmış olan bellek bloğuna atandıkları sıralı nesne ayırma sipariş numarası kullanır. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetBreakAlloc** ön işleme sırasında kaldırılır.
 
-Nesne ayırma sipariş numarası depolanan *lRequest* alanını **_CrtMemBlockHeader** Crtdbg.h içinde tanımlanan yapısı. Bir bellek bloğu hakkında bilgi hata ayıklama dökümü işlevleri biri tarafından bildirildiğinde, bu sayı, gibi ayraçlar içinde {36}.
+Nesne ayırma sipariş numarası depolanan *lRequest* alanını **_CrtMemBlockHeader** yapısı, Crtdbg.h tanımlı. Bir bellek bloğu hakkında bilgi hata ayıklama döküm işlevlerinden biri tarafından raporlandığında, bu sayı gibi küme ayracı içinde {36}.
 
-Hakkında daha fazla bilgi için **_CrtSetBreakAlloc** diğer bellek yönetimi işlevleri ile kullanılabilmesi için bkz: [yığın ayırma isteklerini izleme](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+Hakkında daha fazla bilgi için **_CrtSetBreakAlloc** diğer bellek yönetimi işlevleri ile kullanılabilmesi için bkz: [yığın ayırma isteklerini izleme](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -74,7 +64,7 @@ Hakkında daha fazla bilgi için **_CrtSetBreakAlloc** diğer bellek yönetimi i
 |-------------|---------------------|
 |**_CrtSetBreakAlloc**|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

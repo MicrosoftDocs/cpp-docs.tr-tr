@@ -1,23 +1,13 @@
 ---
-title: Olamayan FpCsr | Microsoft Docs
-ms.custom: ''
+title: FpCsr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: dff95d5d-7589-4432-82db-64b459c24352
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6ed0500d0382563878d0751ba5386e4cc637fdb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 018ce39a194d5153f73fa452990844362190e6bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718295"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472831"
 ---
 # <a name="fpcsr"></a>FpCsr
 

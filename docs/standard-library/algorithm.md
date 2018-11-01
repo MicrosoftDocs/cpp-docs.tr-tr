@@ -1,29 +1,19 @@
 ---
-title: '&lt;algoritma&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Algoritması&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <algorithm>
-dev_langs:
-- C++
 helpviewer_keywords:
 - algorithm header [C++]
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9de7d5606d2bb178dd786d22bb0e5ab890fd16ff
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 042523cddf640e7cf6fd7f9a1dac9f3adbc360b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484077"
 ---
 # <a name="ltalgorithmgt"></a>&lt;Algoritması&gt;
 
@@ -137,7 +127,7 @@ Sayısal işlemler için sağlanan C++ Standart Kitaplığı sayısal algoritmal
 |[değiştirme](../standard-library/algorithm-functions.md#swap)|İlk nesnenin içeriğini ikinci nesneye ve ikinci nesneni içeriğini birinciye atayarak, nesnelerin iki türü arasındaki öğelerin değerlerini birbiriyle değiştirir.|
 |[swap_ranges](../standard-library/algorithm-functions.md#swap_ranges)|Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.|
 |[transform](../standard-library/algorithm-functions.md#transform)|Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.|
-|[benzersiz](../standard-library/algorithm-functions.md#unique)|Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.|
+|[unique](../standard-library/algorithm-functions.md#unique)|Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.|
 |[unique_copy](../standard-library/algorithm-functions.md#unique_copy)|Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.|
 |[upper_bound](../standard-library/algorithm-functions.md#upper_bound)|Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 

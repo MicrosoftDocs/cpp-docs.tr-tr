@@ -1,10 +1,6 @@
 ---
-title: '&lt;iostream&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;iostream&gt;'
 ms.date: 09/20/2017
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <iostream>
 - iostream/std::cerr
@@ -15,25 +11,19 @@ f1_keywords:
 - iostream/std::wcin
 - iostream/std::wclog
 - iostream/std::wcout
-dev_langs:
-- C++
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed484dcfdb94b60545a84563c77a3f242cc6c316
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: aabdc761cc55507f4718a63a0c082325ae1badf7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850658"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504292"
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 
-Okuma ve standart akışlara yazma kontrol nesneleri bildirir. Bu genellikle, giriş ve çıkış bir C++ programı gerçekleştirmek için eklemeniz gerekir yalnızca başlığıdır.
+Okuma ve yazma için standart akışlarına denetim nesnesi bildirir. Bu genellikle giriş ve çıkış bir C++ programı gerçekleştirmek için eklemeniz gereken yalnızca üst bilgi olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,34 +34,34 @@ Okuma ve standart akışlara yazma kontrol nesneleri bildirir. Bu genellikle, gi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesneleri iki gruba ayrılır:
+Nesneleri ikiye ayrılır:
 
-- [cin](#cin), [cout](#cout), [cerr](#cerr), ve [clog](#clog) olan yönelik, bayt geleneksel zamanda tek bayt aktarımları gerçekleştirme.
+- [cin](#cin), [cout](#cout), [cerr](#cerr), ve [clog](#clog) olan yönelik, bayt geleneksel bir kerede bir bayt aktarımları gerçekleştiriliyor.
 
-- [wcin](#wcin), [wcout](#wcout), [wcerr](#wcerr), ve [wclog](#wclog) program dahili olarak işleyen geniş karakterler gelen ve giden çevirme geniş, yerleştirilir.
+- [wcin](#wcin), [wcout](#wcout), [wcerr](#wcerr), ve [wclog](#wclog) program dahili olarak yöneten geniş karakterler gelen ve giden çevirme geniş, yerleştirilir.
 
-Standart giriş gibi bir akış üzerinde belirli işlemleri yaptığınızda, aynı akışta farklı bir yön işlemlerini gerçekleştiremezsiniz. Bu nedenle, bir program birbirinin yerine hem çalışamaz [cin](#cin) ve [wcin](#wcin), örneğin.
+Standart giriş gibi bir akış üzerinde belirli işlemlerin gerçekleştirilmesi sonra aynı akışta farklı yön ayarına işlemleri gerçekleştiremezsiniz. Bu nedenle, bir program birbirinin yerine hem de çalışamaz [cin](#cin) ve [wcin](#wcin), örneğin.
 
-Tüm nesneleri bu başlığı paylaşımın özgü bir özellik bildirilmedi — bunlar oluşturulur tanımladığınız içeren bir çeviri biriminde statik nesneleri önce kabul edilebilir \<iostream >. Eşit şekilde, bu nesnelerin tanımladığınız tür statik nesneler için Yıkıcılar önce yok edilmez varsayabilirsiniz. (Çıkış akışları ancak, program sonlandırma sırasında atılmış olan.) Bu nedenle, güvenli bir şekilde okuyabilir ve program başlatma öncesinde ve sonrasında program sonlandırma standart akışlara yazma.
+Tüm nesneleri bildirilen bu üst bilgi paylaşımına özgü bir özellik — bunlar oluşturulması, tanımlayın, içeren bir çeviri biriminde herhangi bir statik nesne önce varsayabilirsiniz \<iostream >. Eşit şekilde, bu nesneler için tanımladığınız gibi statik nesnelerin yok ediciler önce yok edilmez varsayabilirsiniz. (Çıkış akışları ancak program sonlandırma sırasında temizlenir.) Bu nedenle, güvenli bir şekilde okuyabilir ya da önce program başlatma ve program sonlandırma sonra standart akışlara yazma.
 
-Bu garantisi ancak Evrensel, değildir. Statik oluşturucu işlevi başka bir çeviri biriminde çağırabilir. Çağrılan işlev, bu başlığında bildirilen nesneler, hangi çeviri birimleri statik yapısında katılmak belirsiz sipariş verilen yapılandırılmış olduğunu varsayar olamaz. Bu nesneler bu tür bir bağlamda kullanmak için önce sınıfın bir nesnesi oluşturmalıdır [ios_base::Init](../standard-library/ios-base-class.md#init).
+Bu garanti ancak universal, değildir. Statik Oluşturucu başka bir çeviri biriminde bir işlevi çağırabilir. Çağrılan işlev bu üstbilgisinde bildirilen nesneler, hangi çeviri birimleri statik oluşturma, katılmak belirsiz sırasını verilen yapılandırılmış olduğunu varsayamazsınız. Bu nesneler bu tür bir bağlamda kullanmak için önce sınıfın bir nesnesi oluşturmalıdır [ios_base::Init](../standard-library/ios-base-class.md#init).
 
-### <a name="global-stream-objects"></a>Genel akışı nesneleri
+### <a name="global-stream-objects"></a>Genel Stream nesneleri
 
 |||
 |-|-|
-|[cerr](#cerr)|Belirtir `cerr` genel akış.|
-|[cin](#cin)|Belirtir `cin` genel akış.|
-|[clog](#clog)|Belirtir `clog` genel akış.|
-|[cout](#cout)|Belirtir `cout` genel akış.|
-|[wcerr](#wcerr)|Belirtir `wcerr` genel akış.|
-|[wcin](#wcin)|Belirtir `wcin` genel akış.|
-|[wclog](#wclog)|Belirtir `wclog` genel akış.|
-|[wcout](#wcout)|Belirtir `wcout` genel akış.|
+|[cerr](#cerr)|Belirtir `cerr` genel akışı.|
+|[cin](#cin)|Belirtir `cin` genel akışı.|
+|[clog](#clog)|Belirtir `clog` genel akışı.|
+|[cout](#cout)|Belirtir `cout` genel akışı.|
+|[wcerr](#wcerr)|Belirtir `wcerr` genel akışı.|
+|[wcin](#wcin)|Belirtir `wcin` genel akışı.|
+|[wclog](#wclog)|Belirtir `wclog` genel akışı.|
+|[wcout](#wcout)|Belirtir `wcout` genel akışı.|
 
 ###  <a name="cerr"></a>  cerr
 
-Nesne `cerr` nesnesiyle ilişkili bir Akış Arabellek çıktısına denetimleri `stderr`bildirilen \<cstdio >.
+Nesne `cerr` nesnesiyle ilişkili bir akış arabelleğinin çıktısına denetimleri `stderr`bildirilen \<cstdio >.
 
 ```cpp
 extern ostream cerr;
@@ -79,11 +69,11 @@ extern ostream cerr;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bir [ostream](../standard-library/ostream-typedefs.md#ostream) nesnesi.
+Bir [ostream](../standard-library/ostream-typedefs.md#ostream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne için standart hata çıktısı arabellekten çıkarılan eklemeleri bayt akış olarak denetler. Nesnesi oluşturulduktan sonra ifade `cerr.` [bayrakları](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) sıfır olmayan, olduğundan ve `cerr.tie() == &cout`.
+Nesne, bayt akışı olarak standart hata çıktısı arabellekten çıkarılan eklemelerin denetler. Nesnesi oluşturulduktan sonra ifade `cerr.` [bayrakları](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) sıfır ve `cerr.tie() == &cout`.
 
 #### <a name="example"></a>Örnek
 
@@ -117,7 +107,7 @@ int main( )
 
 ###  <a name="cin"></a>  cin
 
-Belirtir `cin` genel akış.
+Belirtir `cin` genel akışı.
 
 ```cpp
 extern istream cin;
@@ -125,15 +115,15 @@ extern istream cin;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bir [IStream](../standard-library/istream-typedefs.md#istream) nesnesi.
+Bir [istream](../standard-library/istream-typedefs.md#istream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne ayıklamaları standart girdisinden bayt akış olarak denetler. Nesnesi oluşturulduktan sonra arama `cin.` [tie](../standard-library/basic-ios-class.md#tie) döndürür `&` [cout](#cout).
+Nesne ayıklamalar standart girişten alınan bayt akışı olarak denetler. Nesnesi oluşturulduktan sonra çağrı `cin.` [tie](../standard-library/basic-ios-class.md#tie) döndürür `&` [cout](#cout).
 
 #### <a name="example"></a>Örnek
 
-Bu örnekte, `cin` sayısal olmayan karakterler karşılaştığında akışta bit başarısız ayarlar. Program başarısız bit temizler ve devam etmek için akıştan geçersiz karakteri kaldırır.
+Bu örnekte, `cin` sayısal olmayan karakterler karşılaştığında akışta bit başarısız ayarlar. Program başarısız bit temizler ve devam etmek için akışından geçersiz karakteri kaldırır.
 
 ```cpp
 // iostream_cin.cpp
@@ -170,7 +160,7 @@ int main()
 
 ###  <a name="clog"></a>  clog
 
-Belirtir `clog` genel akış.
+Belirtir `clog` genel akışı.
 
 ```cpp
 extern ostream clog;
@@ -178,11 +168,11 @@ extern ostream clog;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bir [ostream](../standard-library/ostream-typedefs.md#ostream) nesnesi.
+Bir [ostream](../standard-library/ostream-typedefs.md#ostream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne denetimlerinin eklemeleri standart hata çıktısı için bir bayt akışı arabelleğe.
+Nesne denetimleri, bayt akışı olarak standart hata çıktısı eklemelerin arabelleğe alındı.
 
 #### <a name="example"></a>Örnek
 
@@ -190,7 +180,7 @@ Bkz: [cerr](#cerr) kullanma örneği için `clog`.
 
 ###  <a name="cout"></a>  cout
 
-Belirtir `cout` genel akış.
+Belirtir `cout` genel akışı.
 
 ```cpp
 extern ostream cout;
@@ -198,11 +188,11 @@ extern ostream cout;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bir [ostream](../standard-library/ostream-typedefs.md#ostream) nesnesi.
+Bir [ostream](../standard-library/ostream-typedefs.md#ostream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne eklemeler standart çıktıya bayt akış olarak denetler.
+Nesne eklemeler standart çıktıya bayt akışı olarak denetler.
 
 #### <a name="example"></a>Örnek
 
@@ -210,7 +200,7 @@ Bkz: [cerr](#cerr) kullanma örneği için `cout`.
 
 ###  <a name="wcerr"></a>  wcerr
 
-Belirtir `wcerr` genel akış.
+Belirtir `wcerr` genel akışı.
 
 ```cpp
 extern wostream wcerr;
@@ -218,11 +208,11 @@ extern wostream wcerr;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-A [wostream](../standard-library/ostream-typedefs.md#wostream) nesnesi.
+A [wostream](../standard-library/ostream-typedefs.md#wostream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne için standart hata çıktısı arabellekten çıkarılan eklemeleri geniş bir akış olarak denetler. Nesnesi oluşturulduktan sonra ifade `wcerr.` [bayrakları](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) sıfır olmayan bir değer değil.
+Nesnesi, geniş bir akış olarak standart hata çıktısı arabellekten çıkarılan eklemelerin denetler. Nesnesi oluşturulduktan sonra ifade `wcerr.` [bayrakları](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) sıfır değil.
 
 #### <a name="example"></a>Örnek
 
@@ -230,7 +220,7 @@ Bkz: [cerr](#cerr) kullanma örneği için `wcerr`.
 
 ###  <a name="wcin"></a>  wcin
 
-Belirtir `wcin` genel akış.
+Belirtir `wcin` genel akışı.
 
 ```cpp
 extern wistream wcin;
@@ -238,11 +228,11 @@ extern wistream wcin;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-A [wistream](../standard-library/istream-typedefs.md#wistream) nesnesi.
+A [wistream](../standard-library/istream-typedefs.md#wistream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne ayıklamaları standart girdisinden geniş bir akış olarak denetler. Nesnesi oluşturulduktan sonra arama `wcin.` [tie](../standard-library/basic-ios-class.md#tie) döndürür `&` [wcout](#wcout).
+Nesne ayıklamalar standart girişten alınan geniş bir akış olarak denetler. Nesnesi oluşturulduktan sonra çağrı `wcin.` [tie](../standard-library/basic-ios-class.md#tie) döndürür `&` [wcout](#wcout).
 
 #### <a name="example"></a>Örnek
 
@@ -250,7 +240,7 @@ Bkz: [cerr](#cerr) kullanma örneği için `wcin`.
 
 ###  <a name="wclog"></a>  wclog
 
-Belirtir `wclog` genel akış.
+Belirtir `wclog` genel akışı.
 
 ```cpp
 extern wostream wclog;
@@ -258,11 +248,11 @@ extern wostream wclog;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-A [wostream](../standard-library/ostream-typedefs.md#wostream) nesnesi.
+A [wostream](../standard-library/ostream-typedefs.md#wostream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne denetimlerinin standart hata çıktısı eklemelerin geniş bir akış olarak arabelleğe alındı.
+Nesne denetimleri, geniş bir akış olarak standart hata çıktısı eklemelerin arabelleğe alındı.
 
 #### <a name="example"></a>Örnek
 
@@ -270,7 +260,7 @@ Bkz: [cerr](#cerr) kullanma örneği için `wclog`.
 
 ###  <a name="wcout"></a>  wcout
 
-Belirtir `wcout` genel akış.
+Belirtir `wcout` genel akışı.
 
 ```cpp
 extern wostream wcout;
@@ -278,7 +268,7 @@ extern wostream wcout;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-A [wostream](../standard-library/ostream-typedefs.md#wostream) nesnesi.
+A [wostream](../standard-library/ostream-typedefs.md#wostream) nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -297,7 +287,7 @@ Bkz: [cerr](#cerr) kullanma örneği için `wcout`.
     wcout <<(const wchar_t*) cs <<endl;
 ```
 
-Daha fazla bilgi için bkz: [temel CString işlemleri](../atl-mfc-shared/basic-cstring-operations.md).
+Daha fazla bilgi için [temel CString işlemleri](../atl-mfc-shared/basic-cstring-operations.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

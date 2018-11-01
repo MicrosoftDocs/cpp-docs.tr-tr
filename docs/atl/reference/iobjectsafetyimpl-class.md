@@ -1,34 +1,24 @@
 ---
-title: Iobjectsafetyımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iobjectsafetyımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IObjectSafetyImpl
 - ATLCTL/ATL::IObjectSafetyImpl
 - ATLCTL/ATL::IObjectSafetyImpl::GetInterfaceSafetyOptions
 - ATLCTL/ATL::IObjectSafetyImpl::SetInterfaceSafetyOptions
 - ATLCTL/ATL::IObjectSafetyImpl::m_dwCurrentSafety
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [ATL], safe
 - safe for scripting and initialization (controls)
 - IObjectSafety, ATL implementation
 - IObjectSafetyImpl class
 ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 597825c89b19c15872c831c675981e68345aa947
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e9035a8573a917e732f3452aeb7fd07af160517f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471792"
 ---
 # <a name="iobjectsafetyimpl-class"></a>Iobjectsafetyımpl sınıfı
 

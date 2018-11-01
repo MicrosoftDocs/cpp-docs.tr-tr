@@ -1,29 +1,19 @@
 ---
-title: MASK işleci | Microsoft Docs
-ms.custom: ''
+title: MASK işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator MASK
 - MASK
-dev_langs:
-- C++
 helpviewer_keywords:
 - MASK operator
 - operator MASK
 ms.assetid: bf997f99-17c8-4230-ab69-7a9774a75d93
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22d1133257db825ac36beb8b83d5f170664472c2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 6acd6596613e32186385568cc68b3eb498176b6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495127"
 ---
 # <a name="operator-mask"></a>MASK işleci
 

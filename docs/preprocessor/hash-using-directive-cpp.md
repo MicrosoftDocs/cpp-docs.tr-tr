@@ -1,33 +1,23 @@
 ---
-title: '#using yönergesi (C + +/ CLI) | Microsoft Docs'
-ms.custom: ''
+title: '#using yönergesi (C + +/ CLI)'
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - friend_as_cpp
 - '#using'
 - friend_as
 - '#using_cpp'
-dev_langs:
-- C++
 helpviewer_keywords:
 - using directive (#using)
 - '#using directive'
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23e3447538590ec6a0e9392800bc6638900c6d6d
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: d69b06d29c366d0ff9c525421311001cab4e501c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808699"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501107"
 ---
 # <a name="using-directive-ccli"></a>#using yönergesi (C + +/ CLI)
 

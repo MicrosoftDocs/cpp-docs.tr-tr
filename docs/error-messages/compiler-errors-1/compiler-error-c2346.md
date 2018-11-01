@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2346 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2346
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2346
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2346
 ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ec916bcdce1a43c597d8cfae10e5393cbeb99ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6d75ca671e22203cb40ca18de21606834eeefa8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108620"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527367"
 ---
 # <a name="compiler-error-c2346"></a>Derleyici Hatası C2346
 

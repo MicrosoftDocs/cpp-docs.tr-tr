@@ -1,10 +1,6 @@
 ---
-title: printf_p konumsal Parametreler | Microsoft Docs
-ms.custom: ''
+title: printf_p Konumsal Parametreler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr120.dll
 - msvcr110.dll
@@ -13,22 +9,16 @@ apilocation:
 - msvcr80.dll
 - msvcr100.dll
 apitype: DLLExport
-dev_langs:
-- C++
 helpviewer_keywords:
 - _printf_p function, positional parameters
 - printf_p function, positional parameters
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef886aad76dd9937e354c071fd707eb6e075f420
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2801f1b4c61247ebb9a1402b6244f0c63c2b7dd2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498039"
 ---
 # <a name="printfp-positional-parameters"></a>printf_p Konumsal Parametreler
 

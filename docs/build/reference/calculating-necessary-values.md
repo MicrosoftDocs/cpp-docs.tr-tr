@@ -1,25 +1,15 @@
 ---
-title: Gereken değerleri hesaplama | Microsoft Docs
-ms.custom: ''
+title: Gereken Değerleri Hesaplama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - helper functions, calculating necessary values
 ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e56acaecd038b7580423e078459e39994391052a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 80c028a315669fb0032628bb86a834d429935f50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513873"
 ---
 # <a name="calculating-necessary-values"></a>Gereken Değerleri Hesaplama
 

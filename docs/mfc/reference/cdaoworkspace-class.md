@@ -1,10 +1,6 @@
 ---
-title: CDaoWorkspace sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoWorkspace sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoWorkspace
 - AFXDAO/CDaoWorkspace
@@ -36,8 +32,6 @@ f1_keywords:
 - AFXDAO/CDaoWorkspace::SetIsolateODBCTrans
 - AFXDAO/CDaoWorkspace::SetLoginTimeout
 - AFXDAO/CDaoWorkspace::m_pDAOWorkspace
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoWorkspace [MFC], CDaoWorkspace
 - CDaoWorkspace [MFC], Append
@@ -68,16 +62,12 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4a5b6936397728472bf0041735248157091db56
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 92b2827d556583524b46f88f8bd9efeb57a5d83a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472871"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 

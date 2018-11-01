@@ -1,30 +1,20 @@
 ---
-title: -E (Stdout'a önişle) | Microsoft Docs
-ms.custom: ''
+title: /E (stdout'a Önişle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /e
-dev_langs:
-- C++
 helpviewer_keywords:
 - -E compiler option [C++]
 - /E compiler option [C++]
 - preprocessor output, copy to stdout
 - preprocessor output
 ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48517f4469f203f5e29fbaa4ec105a3e36aafb44
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 892203d300c07711d06cff602128ec6e9ceb351c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720277"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504586"
 ---
 # <a name="e-preprocess-to-stdout"></a>/E (stdout'a Önişle)
 
@@ -82,7 +72,7 @@ cl -E test.cpp > test2.cpp
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile%2A>.
 
 ## <a name="example"></a>Örnek
 

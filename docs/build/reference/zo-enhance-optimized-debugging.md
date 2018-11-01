@@ -1,30 +1,20 @@
 ---
-title: -Zo (en iyi duruma getirilmiş hata ayıklamayı iyileştirme) | Microsoft Docs
-ms.custom: ''
+title: /Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - -Zo
 - /Zo
-dev_langs:
-- C++
 helpviewer_keywords:
 - Zo compiler option [C++]
 - /Zo compiler option [C++]
 - -Zo compiler option [C++]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b40f7b4fff1d6df6f5fb818e090ce687f12a7b4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7524a8a8c509470030a1850c3995e5997b61caca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412793"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497506"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 
@@ -54,7 +44,7 @@ Hata ayıklama olmayan yapılarında iyileştirilmiş kod için Gelişmiş hata 
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

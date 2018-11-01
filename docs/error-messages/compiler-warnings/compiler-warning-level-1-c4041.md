@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4041 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4041
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4041
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4041
 ms.assetid: 107ee9fd-4b88-4f22-a18f-a20726831095
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ff2c8066557e420ecd7de561d7731b7be733315
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6e1f2a2396447038f6a117f66d4002bea7fd7486
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513678"
 ---
 # <a name="compiler-warning-level-1-c4041"></a>Derleyici Uyarısı (düzey 1) C4041
 

@@ -1,28 +1,18 @@
 ---
-title: __vmx_vmread | Microsoft Docs
-ms.custom: ''
+title: __vmx_vmread
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __vmx_vmread
-dev_langs:
-- C++
 helpviewer_keywords:
 - VMREAD instruction
 - __vmx_vmread intrinsic
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d9483dafd763112f31f5299a5e0e7e54c224459
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 0a4528bed4426ce5b611e986a69f4b0b8c750548
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499105"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 

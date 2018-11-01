@@ -1,25 +1,15 @@
 ---
-title: Şablon uzmanlığı (C++) | Microsoft Docs
-ms.custom: ''
+title: Şablon uzmanlığı (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - partial specialization of class templates
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59db87dee5749f57b8b8ed0e71f7a1e54ec1ae18
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7688649ad68c35b5f62d8895675650adfc63974f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482920"
 ---
 # <a name="template-specialization-c"></a>Şablon uzmanlığı (C++)
 

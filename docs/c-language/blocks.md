@@ -1,28 +1,18 @@
 ---
-title: Blokları | Microsoft Docs
-ms.custom: ''
+title: Bloklar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function definitions, blocks in code
 - blocks
 - compound statements
 - statements, compound
 ms.assetid: be231a92-c712-464e-ae25-a4becb20f7f5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9704b499106fc59364f5cc9ae97277939e835a77
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7ae46278fa76f2ca1a6f24a376f84dd77a97b16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025328"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477902"
 ---
 # <a name="blocks"></a>Bloklar
 

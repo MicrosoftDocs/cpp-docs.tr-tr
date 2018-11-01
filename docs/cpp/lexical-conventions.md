@@ -1,26 +1,17 @@
 ---
-title: Sözcük kuralları | Microsoft Docs
+title: Sözcük Kuralları
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - lexical conventions
 - conventions, lexical
 ms.assetid: 03f9efff-bb95-45ef-9157-0a3fac809ccf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dd92d321f0452c24de04fb94427aa2499677155
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 92ab9319ece7ed995cf8a2e49983e0ab92ef83cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498949"
 ---
 # <a name="lexical-conventions"></a>Sözcük Kuralları
 

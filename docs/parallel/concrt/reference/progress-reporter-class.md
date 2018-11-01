@@ -1,30 +1,20 @@
 ---
-title: progress_reporter sınıfı | Microsoft Docs
-ms.custom: ''
+title: progress_reporter Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - progress_reporter
 - PPLTASKS/concurrency::progress_reporter
 - PPLTASKS/concurrency::progress_reporter::progress_reporter
 - PPLTASKS/concurrency::progress_reporter::report
-dev_langs:
-- C++
 helpviewer_keywords:
 - progress_reporter class
 ms.assetid: b836efab-2d05-4649-b6fa-d15236f1f813
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8dfb224fb0c0f641e4b7ef8809268fa4fad58890
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5fc433beea560001badf919f55dbff45428ef876
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464863"
 ---
 # <a name="progressreporter-class"></a>progress_reporter Sınıfı
 

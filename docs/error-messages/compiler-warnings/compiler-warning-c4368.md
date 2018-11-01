@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4368 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4368
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4368
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4368
 ms.assetid: cb85bcee-fd3d-4aa5-b626-2324f07a4f1b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 52026f08a56faa1372b73b94fe91c96682510038
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b2af1166738d867c84ff4ebae832f831af7940ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073219"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485620"
 ---
 # <a name="compiler-warning-c4368"></a>Derleyici Uyarısı C4368
 

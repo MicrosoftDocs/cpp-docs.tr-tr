@@ -1,29 +1,19 @@
 ---
-title: setlocale | Microsoft Docs
-ms.custom: ''
+title: setlocale
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - setlocale_CPP
 - vc-pragma.setlocale
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, setlocale
 - setlocale pragma
 ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fa68389b804452e2a17b9880978cd56d291cefb6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e5a190e18dd38c5d2b6e03703c5ee08043cd6e41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079421"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487964"
 ---
 # <a name="setlocale"></a>setlocale
 
