@@ -1,26 +1,16 @@
 ---
-title: CLR projeleri için oluşturulan dosyalar | Microsoft Docs
-ms.custom: ''
+title: CLR Projeleri için Oluşturulan Dosyalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++ projects, CLR programming
 - .NET applications, C++
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bd76a978c1c85969883b8222097f29f501fd960
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8c3e4b4187e507f7e52f8764b546f85258902879
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385358"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594213"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR Projeleri için Oluşturulan Dosyalar
 

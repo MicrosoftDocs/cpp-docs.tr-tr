@@ -1,26 +1,18 @@
 ---
-title: Platform::ArrayReference sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::ArrayReference sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::ArrayReference::ArrayReference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d11aa58ba502e4e5eb4122e1d596da978a4e4ef6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 99c39077148b649bddb56070daad467880011e2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106576"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641057"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference sınıfı
 

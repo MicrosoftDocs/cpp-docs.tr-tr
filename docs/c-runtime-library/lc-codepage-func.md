@@ -1,10 +1,6 @@
 ---
-title: ___lc_codepage_func | Microsoft Docs
-ms.custom: ''
+title: ___lc_codepage_func
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - ___lc_codepage_func
 apilocation:
@@ -19,21 +15,15 @@ apitype: DLLExport
 f1_keywords:
 - lc_codepage_func
 - ___lc_codepage_func
-dev_langs:
-- C++
 helpviewer_keywords:
 - ___lc_codepage_func
 ms.assetid: 6a663bd0-5a63-4a2f-9507-872ec1582aae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a35486b271822cb9c7d0dc1bed1e885c13f1dd12
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a6bcb9688116fc72b4c33b13fff73db3dff6c15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573276"
 ---
 # <a name="lccodepagefunc"></a>___lc_codepage_func
 

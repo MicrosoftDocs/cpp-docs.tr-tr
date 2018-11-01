@@ -1,10 +1,6 @@
 ---
-title: _callnewh | Microsoft Docs
-ms.custom: ''
+title: _callnewh
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _callnewh
 apilocation:
@@ -22,25 +18,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _callnewh
-dev_langs:
-- C++
 helpviewer_keywords:
 - _callnewh
 ms.assetid: 4dcb73e9-6384-4d12-a973-a8807d4de7a8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a40d8f621b7098618b9be3872620d5294013fbe3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 98526f6c8c40b71104345563db71ef098b6cfb8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643670"
 ---
 # <a name="callnewh"></a>_callnewh
 
-Şu anda yüklü çağırır *yeni işleyicisi*.
+Şu anda yüklü çağırır *yeni işleyici*.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,22 +43,22 @@ int _callnewh(
 ### <a name="parameters"></a>Parametreler
 
 *Boyutu*<br/>
-Bellek miktarı, [new işleci](../../cpp/new-operator-cpp.md) tahsis çalışıldı.
+Bellek miktarı, [new işleci](../../cpp/new-operator-cpp.md) ayrılacak çalıştı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|0|Hata: Yeni hiçbir işleyici yüklü değil veya yeni bir işleyici etkindir.|
-|1.|BAŞARI: Yeni yüklü ve etkin işleyicisidir. Bellek ayırma yeniden denenebilir.|
+|0|Hata: Hiçbir yeni işleyici yüklü değil veya yok yeni işleyici etkindir.|
+|1.|Başarılı: Yeni işleyici yüklü ve etkin. Bellek ayırma yeniden denenebilir.|
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-Bu işlev oluşturur [bad_alloc](../../standard-library/bad-alloc-class.md) varsa *yeni işleyicisi* bulunamıyor.
+Bu işlevin [bad_alloc](../../standard-library/bad-alloc-class.md) varsa *yeni işleyici* bulunamıyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Yeni işleyicisi* denir [new işleci](../../cpp/new-operator-cpp.md) başarıyla bellek ayırma başarısız. Yeni işleyici ardından sonraki ayırmaları başarılı bir bellek boşaltma gibi bazı uygun eylemi başlatmak.
+*Yeni işleyici* Aranan [new işleci](../../cpp/new-operator-cpp.md) başarıyla bellek ayırma başarısız olur. Yeni işleyiciyi ardından sonraki ayırma başarılı bir bellek boşaltma gibi bazı uygun eylemi başlatmak.
 
 ## <a name="requirements"></a>Gereksinimler
 

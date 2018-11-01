@@ -1,10 +1,6 @@
 ---
-title: CBrush sınıfı | Microsoft Docs
-ms.custom: ''
+title: CBrush sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CBrush
 - AFXWIN/CBrush
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXWIN/CBrush::CreateSysColorBrush
 - AFXWIN/CBrush::FromHandle
 - AFXWIN/CBrush::GetLogBrush
-dev_langs:
-- C++
 helpviewer_keywords:
 - CBrush [MFC], CBrush
 - CBrush [MFC], CreateBrushIndirect
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CBrush [MFC], FromHandle
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17e422147da931aee1877e7be54b7032e7bc8712
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4f6b5db22b956584507a2979a517ff26d5364a0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078004"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661649"
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 

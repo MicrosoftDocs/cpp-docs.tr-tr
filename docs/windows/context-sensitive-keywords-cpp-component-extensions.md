@@ -1,28 +1,18 @@
 ---
-title: Bağlama duyarlı anahtar sözcükler (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Bağlama duyarlı anahtar sözcükler (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - context-sensitive keywords
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5d02939e61da4a247b46da5637c38d01e7990c49
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 78b61e77da8ed45a43b3830b7eaa9588c1860928
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652757"
 ---
 # <a name="context-sensitive-keywords--ccli-and-ccx"></a>Bağlama duyarlı anahtar sözcükler (C + +/ CLI ve C + +/ CX)
 
@@ -111,4 +101,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -1,27 +1,17 @@
 ---
-title: __writedr | Microsoft Docs
-ms.custom: ''
+title: __writedr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __writedr
-dev_langs:
-- C++
 helpviewer_keywords:
 - __writedr intrinsic
 ms.assetid: ac55c1ee-df2f-41d4-a429-6f369d2a934d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fd9bd5145947711c245f552672843d604160d06
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f8049485d40185d83ed01c91ad336e83f3e79834
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651821"
 ---
 # <a name="writedr"></a>__writedr
 

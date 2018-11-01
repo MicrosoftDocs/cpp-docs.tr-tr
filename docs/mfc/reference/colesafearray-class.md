@@ -1,10 +1,6 @@
 ---
-title: COleSafeArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleSafeArray sınıfı
 ms.date: 08/27/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleSafeArray
 - AFXDISP/COleSafeArray
@@ -35,8 +31,6 @@ f1_keywords:
 - AFXDISP/COleSafeArray::ResizeOneDim
 - AFXDISP/COleSafeArray::UnaccessData
 - AFXDISP/COleSafeArray::Unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleSafeArray [MFC], COleSafeArray
 - COleSafeArray [MFC], AccessData
@@ -66,16 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4e001e3a5d58e962a318d6282efa47d0188edbe3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: efffa6057f6322f3de3d9d0bfe050d6d2021d9b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060149"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648103"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 

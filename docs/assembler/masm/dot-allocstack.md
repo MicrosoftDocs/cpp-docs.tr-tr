@@ -1,27 +1,17 @@
 ---
-title: . ALLOCSTACK | Microsoft Docs
-ms.custom: ''
+title: .ALLOCSTACK
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ALLOCSTACK
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ALLOCSTACK directive
 ms.assetid: 9801594b-7ac2-4df2-a49d-07d9dd9af99e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 292a7fcdb0a1d7c4ecccab895c643479397b4a98
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b92db3d03bb5c45e67473cd4085f2369698f6b42
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661389"
 ---
 # <a name="allocstack"></a>.ALLOCSTACK
 

@@ -1,10 +1,6 @@
 ---
-title: COleChangeSourceDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleChangeSourceDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleChangeSourceDialog
 - AFXODLGS/COleChangeSourceDialog
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXODLGS/COleChangeSourceDialog::GetToPrefix
 - AFXODLGS/COleChangeSourceDialog::IsValidSource
 - AFXODLGS/COleChangeSourceDialog::m_cs
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleChangeSourceDialog [MFC], COleChangeSourceDialog
 - COleChangeSourceDialog [MFC], DoModal
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - COleChangeSourceDialog [MFC], IsValidSource
 - COleChangeSourceDialog [MFC], m_cs
 ms.assetid: d0e08be7-21ef-45e1-97af-fe27d99e3bac
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc05da05ece61652a94c25ccae5b3164c067b8f0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4f0dfb1579539ef744f9e16a24acc6c34463a435
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400945"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594651"
 ---
 # <a name="colechangesourcedialog-class"></a>COleChangeSourceDialog sınıfı
 

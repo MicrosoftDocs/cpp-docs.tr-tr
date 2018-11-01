@@ -1,31 +1,21 @@
 ---
-title: '&lt;csetjmp&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;csetjmp&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <csetjmp>
-dev_langs:
-- C++
 helpviewer_keywords:
 - csetjmp header
 ms.assetid: 8f21fddd-5e9b-4219-a848-581cdd3569d9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 00b55d261c29bbb9fc6f1fa5d5d2b1a1b54a092f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f9d5ae02b29e8e8cc34e767b174c0986321dfc14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636247"
 ---
 # <a name="ltcsetjmpgt"></a>&lt;csetjmp&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<setjmp.h'ı > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<setjmp.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +26,7 @@ Standart C Kitaplığı üstbilgi içeren \<setjmp.h'ı > ve ilişkili adlarıyl
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

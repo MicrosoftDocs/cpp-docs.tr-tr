@@ -1,34 +1,20 @@
 ---
-title: extern (C++) | Microsoft Docs
-ms.custom: ''
+title: extern (C++)
 ms.date: 04/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- cpp-language
-ms.tgt_pltfrm: ''
-ms.topic: language-reference
 f1_keywords:
 - extern
 - extern_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - extern keyword [C++], linkage to non-C++ functions
 - declarations, external
 - external linkage, extern modifier
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
-caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7b090875b9656fec52e50cb68caf9c2c047d055b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4a3a4e158794e06f28c638e87e014ddc3fb99837
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648727"
 ---
 # <a name="extern-c"></a>extern (C++)
 

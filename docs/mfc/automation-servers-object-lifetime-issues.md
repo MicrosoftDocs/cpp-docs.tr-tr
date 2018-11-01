@@ -1,28 +1,18 @@
 ---
-title: 'Otomasyon sunucuları: Nesne ömrü sorunları | Microsoft Docs'
-ms.custom: ''
+title: 'Otomasyon Sunucuları: Nesne Ömrü Sorunları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [MFC], lifetime
 - lifetime, automation server
 - Automation servers, object lifetime
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a53d1a9d3849798fa1e583c0758b156d282a401c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 904c3023d7f27bd144c306d9d92810a91a48ecfa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397123"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637651"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>Otomasyon Sunucuları: Nesne Ömrü Sorunları
 

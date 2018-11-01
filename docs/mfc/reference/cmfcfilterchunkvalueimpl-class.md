@@ -1,10 +1,6 @@
 ---
-title: Cmfcfilterchunkvalueımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfcfilterchunkvalueımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCFilterChunkValueImpl
 - AFXWIN/CMFCFilterChunkValueImpl
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXWIN/CMFCFilterChunkValueImpl::SetSystemTimeValue
 - AFXWIN/CMFCFilterChunkValueImpl::SetTextValue
 - AFXWIN/CMFCFilterChunkValueImpl::SetChunk
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], CMFCFilterChunkValueImpl
 - CMFCFilterChunkValueImpl [MFC], Clear
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], SetTextValue
 - CMFCFilterChunkValueImpl [MFC], SetChunk
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3de666443d3ce675d1a95553608d3a9fdc1b82e9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a59cf087a52bd7b6a2eaa00d3091047e93e14d4d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666849"
 ---
 # <a name="cmfcfilterchunkvalueimpl-class"></a>Cmfcfilterchunkvalueımpl sınıfı
 

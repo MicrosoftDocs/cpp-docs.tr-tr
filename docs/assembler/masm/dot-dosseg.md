@@ -1,27 +1,17 @@
 ---
-title: . DOSSEG | Microsoft Docs
-ms.custom: ''
+title: .DOSSEG
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .DOSSEG
-dev_langs:
-- C++
 helpviewer_keywords:
 - .DOSSEG directive
 ms.assetid: 175ad470-0a2b-4e2b-b078-65e224fec040
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 33ee0b0b049ece65786c4d4857c2e082a067fee4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 28b3e351030ee83693c0fec5568aacf9b4b77c27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639445"
 ---
 # <a name="dosseg"></a>.DOSSEG
 

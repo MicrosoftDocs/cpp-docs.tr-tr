@@ -1,10 +1,6 @@
 ---
-title: _RTC_GetErrDesc | Microsoft Docs
-ms.custom: ''
+title: _RTC_GetErrDesc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_GetErrDesc
 apilocation:
@@ -22,23 +18,17 @@ apitype: DLLExport
 f1_keywords:
 - RTC_GetErrDesc
 - _RTC_GetErrDesc
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors
 - _RTC_GetErrDesc function
 - RTC_GetErrDesc function
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7154f6de192ee6b681ed0419126f3d4b682abb8c
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: d164626ea89bbe10f5b2ffe4224bf6381e40bab0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451351"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590313"
 ---
 # <a name="rtcgeterrdesc"></a>_RTC_GetErrDesc
 
@@ -55,11 +45,11 @@ const char * _RTC_GetErrDesc(
 ### <a name="parameters"></a>Parametreler
 
 *errnum*<br/>
-Sıfır ve bir tarafından döndürülen değeri,'den arasında bir sayı **_RTC_NumErrors**.
+Sıfır ile bir döndürdüğü değerden daha az arasında bir sayı **_RTC_NumErrors**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Çalışma zamanı hata denetimi sistem tarafından algılanan hata türlerinden birini kısa bir açıklamasını içeren bir karakter dizesi. Hata sıfır veya daha büyük veya eşittir tarafından döndürülen değer düşükse [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** döndürür **NULL**.
+Çalışma zamanı hata denetimi sisteminiz tarafından algılanan hata türlerinden birini kısa bir açıklamasını içeren bir karakter dizesi. Hata sıfırdan küçük veya büyük veya eşittir tarafından döndürülen değer ise [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** döndürür **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -67,7 +57,7 @@ Sıfır ve bir tarafından döndürülen değeri,'den arasında bir sayı **_RTC
 |-------------|---------------------|
 |**_RTC_GetErrDesc**|\<rtcapi.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

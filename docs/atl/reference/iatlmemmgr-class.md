@@ -1,10 +1,6 @@
 ---
-title: Iatlmemmgr sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iatlmemmgr sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IAtlMemMgr
 - ATLMEM/ATL::IAtlMemMgr
@@ -12,23 +8,17 @@ f1_keywords:
 - ATLMEM/ATL::Free
 - ATLMEM/ATL::GetSize
 - ATLMEM/ATL::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - IAtlMemMgr class
 - memory, managing
 - memory, memory manager
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b772a548054cd9d829356436afe53748c215c193
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ed1dfd1dc8767b4f198ec6cc8dd626a04800bffd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596774"
 ---
 # <a name="iatlmemmgr-class"></a>Iatlmemmgr sınıfı
 

@@ -1,23 +1,13 @@
 ---
-title: auto depolama sınıfı tanımlayıcısı | Microsoft Docs
-ms.custom: ''
+title: auto Depolama Sınıfı Tanımlayıcısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca42eb26cc6bb08cd8a05e31b23e004b1cbeb8b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 926322fa55a14cc736dc41fbebd5c276ad61f020
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619914"
 ---
 # <a name="auto-storage-class-specifier"></a>auto Depolama Sınıfı Tanımlayıcısı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2809 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2809
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2809
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2809
 ms.assetid: ce796b8e-1a8c-4074-995d-1ad09afd0e93
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6503f395a795056d0952c7a55f2c69300501313e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d9dffabf318d51a97c172ecee2e4b2d4183a81f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640680"
 ---
 # <a name="compiler-error-c2809"></a>Derleyici Hatası C2809
 

@@ -1,26 +1,16 @@
 ---
-title: Tür iletme (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Tür İletme (C++/CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - type forwarding, C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7fe70de2503134bf76f5e1c7099773737cc153f8
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: c5148c05e5580942d885b310e35f3b629224a654
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328343"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628923"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 

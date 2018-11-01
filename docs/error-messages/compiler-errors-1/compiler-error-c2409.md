@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2409 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2409
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2409
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2409
 ms.assetid: 5d4aa952-0752-4412-b5c2-050dde0636f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1abd535733ad26c118ca7839d8a981767afe7110
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bc0b6ea5732ba4602a9d4127f6cb0a9c6f815744
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638028"
 ---
 # <a name="compiler-error-c2409"></a>Derleyici Hatası C2409
 

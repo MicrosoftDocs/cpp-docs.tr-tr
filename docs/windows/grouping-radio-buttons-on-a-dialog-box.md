@@ -1,14 +1,8 @@
 ---
-title: (C++) iletişim kutusundaki radyo düğmelerini gruplandırma | Microsoft Docs
-ms.custom: ''
+title: (C++) iletişim kutusundaki radyo düğmelerini gruplama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.dialog.grouping
-dev_langs:
-- C++
 helpviewer_keywords:
 - member variables, adding to radio button groups
 - variables, dialog box control member variables
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - grouping controls
 - radio buttons [C++], grouping on dialog boxes
 ms.assetid: 3cc43f9e-56c8-4faa-9930-ce81733c69de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5615756f8716ae1f4c73ccf98e2754b57f674216
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1776823a7385499e5a01a04134fe31f42700e14b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665952"
 ---
 # <a name="grouping-radio-buttons-on-a-dialog-box-c"></a>(C++) iletişim kutusundaki radyo düğmelerini gruplama
 

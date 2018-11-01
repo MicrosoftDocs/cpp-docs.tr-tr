@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2707 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2707
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2707
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2707
 ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8a9709b4bd6c66ec303ad61e2000ddc97976e87
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce86f69b36b915b3e757b5d18430c99cb288e4e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107266"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648181"
 ---
 # <a name="compiler-error-c2707"></a>Derleyici Hatası C2707
 

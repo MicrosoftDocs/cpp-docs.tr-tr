@@ -1,33 +1,23 @@
 ---
-title: CConstantTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CConstantTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CConstantTransition
 - AFXANIMATIONCONTROLLER/CConstantTransition
 - AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition
 - AFXANIMATIONCONTROLLER/CConstantTransition::Create
 - AFXANIMATIONCONTROLLER/CConstantTransition::m_duration
-dev_langs:
-- C++
 helpviewer_keywords:
 - CConstantTransition [MFC], CConstantTransition
 - CConstantTransition [MFC], Create
 - CConstantTransition [MFC], m_duration
 ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d35234c6f39c95a879ae092f79b6357065216f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ec8ec36e59a0d4dc0e00f5e379bfbef492ce4db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662026"
 ---
 # <a name="cconstanttransition-class"></a>CConstantTransition sınıfı
 

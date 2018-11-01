@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2228 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2228
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2228
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2228
 ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 70ea4fcdf2647264550b32ce941a3551664a6b94
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 20e295d09e39a12ed8163ec980fa304cd4167218
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628403"
 ---
 # <a name="compiler-error-c2228"></a>Derleyici Hatası C2228
 

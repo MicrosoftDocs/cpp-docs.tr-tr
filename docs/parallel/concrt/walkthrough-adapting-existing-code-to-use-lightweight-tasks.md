@@ -1,26 +1,16 @@
 ---
-title: 'İzlenecek yol: Mevcut kodu hafif görevleri kullanmaya uyarlama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - using lightweight tasks [Concurrency Runtime]
 - lightweight tasks, using [Concurrency Runtime]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c8b8369075d2d931d794b8299660cb5f3aa614fe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a0e724ff6f43dc0c888e787350f4841f14383f14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424631"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654512"
 ---
 # <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama
 

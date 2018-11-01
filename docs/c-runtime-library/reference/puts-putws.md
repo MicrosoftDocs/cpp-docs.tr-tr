@@ -1,10 +1,6 @@
 ---
-title: koyar, _putws | Microsoft Docs
-ms.custom: ''
+title: puts, _putws
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putws
 - puts
@@ -25,8 +21,6 @@ f1_keywords:
 - _putts
 - _putws
 - puts
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], writing
 - _putts function
@@ -36,20 +30,16 @@ helpviewer_keywords:
 - putts function
 - _putws function
 ms.assetid: 32dada12-ed45-40ac-be06-3feeced9ecd6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8a0b4f0c4924970905cb541d82450a807de1357
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0151d29f627a8f6b91142d619f64921333bb48f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404535"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667330"
 ---
 # <a name="puts-putws"></a>puts, _putws
 
-Bir dizeyi yazar **stdout**.
+Bir dize Yazar **stdout**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,17 +59,17 @@ int _putws(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa negatif olmayan bir değer döndürür. Varsa **koyar** başarısız, onu döndürür **EOF**if **_putws** başarısız, döndürdüğü **WEOF**. Varsa *str* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, İşlevler kümesi **errno** için **EINVAL** ve geri dönüp **EOF** veya **WEOF**.
+Başarılı olursa, eksi olmayan bir değer döndürür. Varsa **koyar** döndürür, başarısız **EOF**if **_putws** döndürür, başarısız **WEOF**. Varsa *str* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse işlevler **errno** için **EINVAL** ve dönüş **EOF** veya **WEOF**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Koyar** işlev yazma *str* standart çıktı akışı için **stdout**, dize değiştirme kullanıcının sonlandırma yeni satır karakteri ('\n') ile null karakteri ('\0') içinde Çıkış akışı.
+**Koyar** işlevi *str* standart çıkış akışına **stdout**, dizenin sonlandırma boş karakterini ('\0') bir yeni satır karakteri ('\n') ile de Çıkış akışı.
 
-**_putws** geniş karakter sürümü **koyar**; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **koyar** çıktı bir UNICODE akışa şu anda desteklemiyor.
+**_putws** öğesinin geniş karakterli sürümüdür **koyar**; akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **koyar** UNICODE akışına çıkış şu anda desteklemiyor.
 
-**_putwch** geçerli KONSOL yerel ayarı kullanarak Unicode karakterler yazar.
+**_putwch** geçerli KONSOL yerel ayarını kullanarak Unicode karakterler yazar.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -94,7 +84,7 @@ Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno,
 |**yerleştirir**|\<stdio.h >|
 |**_putws**|\<stdio.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -122,6 +112,6 @@ Hello world from puts!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>

@@ -1,10 +1,6 @@
 ---
-title: lognormal_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: lognormal_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::lognormal_distribution
 - random/std::lognormal_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::lognormal_distribution::param_type::s
 - random/std::lognormal_distribution::param_type::operator==
 - random/std::lognormal_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::lognormal_distribution [C++]
 - std::lognormal_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::lognormal_distribution [C++], param_type
 - std::lognormal_distribution [C++], param_type
 ms.assetid: f2d6a431-6c3a-4370-b12e-4adb4ddf6cc4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb8a30f8dde14801b89b1e2d36e349ea8e93a5c6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: bd57b45ec08d044719caa60635f731276794d407
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572115"
 ---
 # <a name="lognormaldistribution-class"></a>lognormal_distribution Sınıfı
 

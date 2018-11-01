@@ -1,12 +1,6 @@
 ---
-title: 256-renk simgesi veya imleci (simgeler için görüntü Düzenleyicisi) oluşturma | Microsoft Docs
-ms.custom: ''
+title: 256-Renk Simgesi veya İmleci Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - 256-color palette
 - cursors [C++], color
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - colors [C++], cursors
 - icons, color
 ms.assetid: 2738089b-4fd3-4c45-96ae-6a15e4c6b780
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: dcd9edb155afa9138778f1d464a5e59a20dd7ffd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cd1100c05b41017fc89ccf58854cb8ed219a7873
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070037"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642770"
 ---
 # <a name="creating-a-256-color-icon-or-cursor-image-editor-for-icons"></a>256-Renk Simgesi veya İmleci Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

@@ -1,28 +1,18 @@
 ---
-title: Ağaç denetimi etiketini düzenleme | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetimi Etiketini Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - editing tree control labels
 - CTreeCtrl class [MFC], editing labels
 - label editing in CTreeCtrl class [MFC]
 - tree controls [MFC], label editing
 ms.assetid: 6cde2ac3-43ee-468f-bac2-cf1a228ad32d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99b3490e98ba9cf9640c4903d88064a7808c6494
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80d4f37ef8b67c2902e5d34cb4ec8aa4cf35a616
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647999"
 ---
 # <a name="tree-control-label-editing"></a>Ağaç Denetimi Etiketini Düzenleme
 

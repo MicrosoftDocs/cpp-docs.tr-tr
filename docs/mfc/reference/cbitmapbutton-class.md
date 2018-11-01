@@ -1,10 +1,6 @@
 ---
-title: CBitmapButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CBitmapButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CBitmapButton
 - AFXEXT/CBitmapButton
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXEXT/CBitmapButton::AutoLoad
 - AFXEXT/CBitmapButton::LoadBitmaps
 - AFXEXT/CBitmapButton::SizeToContent
-dev_langs:
-- C++
 helpviewer_keywords:
 - CBitmapButton [MFC], CBitmapButton
 - CBitmapButton [MFC], AutoLoad
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45909e50e56802fd547e6d68964fc3044921092e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6bff87cd7648e1e5f4e0391a0a7fc1a1455a51f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066857"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599660"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton sınıfı
 

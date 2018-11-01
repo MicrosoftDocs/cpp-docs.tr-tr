@@ -1,27 +1,17 @@
 ---
-title: Araç ipuçları oluşturma yöntemleri | Microsoft Docs
-ms.custom: ''
+title: Araç İpuçları Oluşturma Yöntemleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CToolTipCtrl class [MFC], creating tool tips
 - tool tips [MFC], tool tip controls
 - tool tips [MFC], creating
 ms.assetid: b015e9f4-ddfb-49a4-a5a6-fa2d45e4d328
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16b96228bd2f101e30605e555dbbc75b0dff78c3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80c826b3c9a4f9e24ebd201eaa9d775f9ad9f8cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663820"
 ---
 # <a name="methods-of-creating-tool-tips"></a>Araç İpuçları Oluşturma Yöntemleri
 

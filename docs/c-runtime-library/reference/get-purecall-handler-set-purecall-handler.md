@@ -1,10 +1,6 @@
 ---
-title: _get_purecall_handler, _set_purecall_handler | Microsoft Docs
-ms.custom: ''
+title: _get_purecall_handler, _set_purecall_handler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_purecall_handler
 - _set_purecall_handler_m
@@ -29,8 +25,6 @@ f1_keywords:
 - stdlib/_set_purecall_handler
 - stdlib/_get_purecall_handler
 - _get_purecall_handler
-dev_langs:
-- C++
 helpviewer_keywords:
 - _set_purecall_handler function
 - set_purecall_handler function
@@ -40,20 +34,16 @@ helpviewer_keywords:
 - _set_purecall_handler_m function
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1dca104d04546786a361c63461e502f7aa8b6127
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0009b4bc1c7bf70bd84b9a82ecdc8643789e8164
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646374"
 ---
 # <a name="getpurecallhandler-setpurecallhandler"></a>_get_purecall_handler, _set_purecall_handler
 
-İşleyiciyi alır veya hata saf sanal işlev çağrısı için ayarlar.
+Alır veya ayarlar saf sanal işlev çağrısı için hata işleyicisi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,21 +58,21 @@ _purecall_handler __cdecl _set_purecall_handler(
 ### <a name="parameters"></a>Parametreler
 
 *İşlevi*<br/>
-Saf sanal işlevi çağrıldığında çağrılacak işlev. A **_purecall_handler** işlevi geçersiz bir dönüş türüne sahip olması gerekir.
+Saf sanal işlev çağrıldığında çağrılacak işlev. A **_purecall_handler** işlevin dönüş türü void olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki **_purecall_handler**. Döndürür **nullptr** önceki hiçbir işleyici yoksa.
+Önceki **_purecall_handler**. Döndürür **nullptr** olduğunda önceki işleyici yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_purecall_handler** ve **_set_purecall_handler** işlevler Microsoft özgüdür ve yalnızca C++ kodu için geçerlidir.
+**_Get_purecall_handler** ve **_set_purecall_handler** işlevleri Microsoft'a özgü olan ve yalnızca C++ kodu için geçerlidir.
 
-Hiçbir uygulama içerdiğinden saf sanal işlevi çağrısı bir hatadır. Varsayılan olarak, derleyici program sonlandırır saf sanal işlevi çağrıldığında, bir hata işleyicisi işlevi çağırmak için kod oluşturur. Saf sanal işlev çağrısı, bunları hata ayıklama veya Raporlama amaçları için yakalamak için kendi hata işleyici işlevi yükleyebilirsiniz. Kendi hata işleyicisini kullanmak için olan bir işlev oluşturun **_purecall_handler** imza, ardından **_set_purecall_handler** geçerli işleyici yapma.
+Uygulaması olduğundan saf sanal işlev çağrısı bir hata var. Varsayılan olarak, derleyici program sona erer saf sanal işlevi çağrıldığında bir hata işleyicisi işlevini çağırmak için kod oluşturur. Hata ayıklama veya raporlama amacıyla bunları yakalamak için saf sanal işlev çağrıları, kendi hata işleyici işlevi yükleyebilirsiniz. Kendi hata işleyicisi kullanacak şekilde sahip bir işlev oluşturma **_purecall_handler** imzası, ardından **_set_purecall_handler** geçerli işleyici yapma.
 
-Olmadığı için yalnızca bir **_purecall_handler** çağırdığınızda her işlem için **_set_purecall_handler** hemen tüm iş parçacıklarının etkiler. Hiçbir iş parçacığı üzerinde son çağıran işleyici ayarlar.
+Olmadığı için yalnızca bir **_purecall_handler** çağırdığınızda her işlem için **_set_purecall_handler** hemen tüm iş parçacıklarını etkiler. Son çağrı herhangi bir iş parçacığı üzerinde işleyici ayarlar.
 
-Varsayılan davranış geri yüklemek için arama **_set_purecall_handler** kullanarak bir **nullptr** bağımsız değişkeni.
+Varsayılan davranışı geri yüklemek için çağrı **_set_purecall_handler** kullanarak bir **nullptr** bağımsız değişken.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -90,7 +80,7 @@ Varsayılan davranış geri yüklemek için arama **_set_purecall_handler** kull
 |-------------|---------------------|
 |**_get_purecall_handler**, **_set_purecall_handler**|\<cstdlib > veya \<stdlib.h >|
 
-Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

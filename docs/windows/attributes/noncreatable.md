@@ -1,28 +1,17 @@
 ---
-title: noncreatable (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: noncreatable (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.noncreatable
-dev_langs:
-- C++
 helpviewer_keywords:
 - noncreatable attribute
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: acfb5ea65e4efcba13d6b376dbb2d0f2fe3e6855
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 716cc741de92be73fc2fcdda6b019de736387efd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578366"
 ---
 # <a name="noncreatable"></a>noncreatable
 

@@ -1,10 +1,6 @@
 ---
-title: _memicmp, _memicmp_l | Microsoft Docs
-ms.custom: ''
+title: _memicmp, _memicmp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _memicmp_l
 - _memicmp
@@ -25,28 +21,22 @@ f1_keywords:
 - _memicmp
 - memicmp_l
 - _memicmp_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - memicmp function
 - _memicmp function
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3ddd09fbfbfd4de095bfbc67bc669cf9c794dee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8beb632c8bd2cfac486fc58fc930b94490bdecbc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403059"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636819"
 ---
 # <a name="memicmp-memicmpl"></a>_memicmp, _memicmp_l
 
-İki arabellekler (büyük küçük harf duyarsız) karakter karşılaştırır.
+İki arabellek (büyük-küçük harf duyarsız) karakterleri karşılaştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,22 +70,22 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri arabellek arasındaki ilişkiyi gösterir.
+Dönüş değeri, arabellek arasındaki ilişkiyi gösterir.
 
-|Dönüş değeri|İlk sayı bayt buf1 ve buf2 ilişkisi|
+|Dönüş değeri|İlişki buf1 buf2 ve ilk count bayt|
 |------------------|--------------------------------------------------------|
-|< 0|*buffer1* değerinden *buffer2*.|
+|< 0|*buffer1* küçüktür *buffer2*.|
 |0|*buffer1* aynı *buffer2*.|
-|> 0|*buffer1* büyük *buffer2*.|
+|> 0|*buffer1* büyüktür *buffer2*.|
 |**_NLSCMPERROR**|Bir hata oluşmuştur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Memicmp** işlevi karşılaştırır ilk *sayısı* iki arabellekleri karakterlerden *buffer1* ve *buffer2* bayt. Karşılaştırma büyük küçük harfe duyarlı değildir.
+**_Memicmp** işlevi ilk karşılaştırır *sayısı* karakterler iki arabellek *buffer1* ve *buffer2* bayt. Karşılaştırma büyük küçük harfe duyarlı değildir.
 
-Her iki *buffer1* veya *buffer2* null işaretçi açıklandığı gibi bir geçersiz parametre işleyicisi bu işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**.
+Ya da *buffer1* veya *buffer2* null bir işaretçiyse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**.
 
-**_memicmp** geçerli yerel ayar için yerel ayara bağımlı davranışı; kullanır **_memicmp_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_memicmp** yerel ayara bağlı davranışı için; geçerli yerel ayarı kullanır **_memicmp_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -104,7 +94,7 @@ Her iki *buffer1* veya *buffer2* null işaretçi açıklandığı gibi bir geçe
 |**_memicmp**|\<Memory.h > veya \<string.h >|
 |**_memicmp_l**|\<Memory.h > veya \<string.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

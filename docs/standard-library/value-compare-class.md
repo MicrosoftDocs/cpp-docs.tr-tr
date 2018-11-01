@@ -1,27 +1,17 @@
 ---
-title: value_compare sınıfı | Microsoft Docs
-ms.custom: ''
+title: value_compare Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - value_compare
-dev_langs:
-- C++
 helpviewer_keywords:
 - value_compare class
 ms.assetid: c306c5b9-3505-4357-aa6b-216451b951ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a3be65e867c243bd6a32dd35dd3128872a1f8d1
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 4b7fff1bef091a9d47e6ea4dc0e53e86ce39ad7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627441"
 ---
 # <a name="valuecompare-class"></a>value_compare Sınıfı
 

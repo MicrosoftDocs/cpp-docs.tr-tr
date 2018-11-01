@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4269 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4269
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4269
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4269
 ms.assetid: 96c97bbc-068a-4b65-8cd8-4ed5dca04c15
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6dc986c98028530b8a5d4d25047305fd1a8effef
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9a7f42b2dd65644d3f2abec58236a0b93cc6f635
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653849"
 ---
 # <a name="compiler-warning-level-1-c4269"></a>Derleyici Uyarısı (düzey 1) C4269
 

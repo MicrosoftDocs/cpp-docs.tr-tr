@@ -1,28 +1,17 @@
 ---
-title: db_table (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: db_table (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_table
-dev_langs:
-- C++
 helpviewer_keywords:
 - db_table attribute
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 07910693b3236e3a90d7ad420392552d90abd747
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d0b67bae643698b6d4f09a75dd2e4ec6a23a5d28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052154"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607278"
 ---
 # <a name="dbtable"></a>db_table
 

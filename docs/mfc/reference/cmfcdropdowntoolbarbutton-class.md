@@ -1,10 +1,6 @@
 ---
-title: CMFCDropDownToolbarButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDropDownToolbarButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDropDownToolbarButton
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton
@@ -26,8 +22,6 @@ f1_keywords:
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::Serialize
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::SetDefaultCommand
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::m_uiShowBarDelay
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDropDownToolbarButton [MFC], CMFCDropDownToolbarButton
 - CMFCDropDownToolbarButton [MFC], CopyFrom
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - CMFCDropDownToolbarButton [MFC], SetDefaultCommand
 - CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c113ce68cf609970342d69ebc03f700e17c7e2a9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3544bbd65b5e0c754552f93b45263f768b73fe69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625322"
 ---
 # <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton sınıfı
 

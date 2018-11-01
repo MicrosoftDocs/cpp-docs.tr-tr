@@ -1,28 +1,18 @@
 ---
-title: C genişletilmiş depolama sınıfı öznitelikler | Microsoft Docs
-ms.custom: ''
+title: C Genişletilmiş Depolama Sınıfı Öznitelikler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C]
 - extended attributes
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0fd89e21b10d241ea035e8c9b9c8ac8e5c3ee9cd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aa1f1b5d8fa62d12651c32724f06e8bd3f0ec53e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106091"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658282"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 

@@ -1,25 +1,15 @@
 ---
-title: Kullanım dışı ANSI API'ları | Microsoft Docs
-ms.custom: ''
+title: Kullanım Dışı ANSI API'ları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, ANSI deprecated methods
 ms.assetid: c7c5a6fd-95e4-4bee-b3d5-d3826c30947d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: acf27499e96cbdd93fdd6855966528f750a99f77
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 51d14f4cae530fe6723b04268865af1f5fac84a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062274"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589513"
 ---
 # <a name="deprecated-ansi-apis"></a>Kullanım Dışı ANSI API'ları
 

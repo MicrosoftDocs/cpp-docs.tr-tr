@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4045 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4045
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4045
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4045
 ms.assetid: 3c6f7373-da91-45cd-b224-f49f7d8b4df0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94d7005fc1e3a48ff7f49c6eb1c462c814dcf107
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 220cb799cf3604d9b5fe48567d35a31e1193c06d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048090"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622449"
 ---
 # <a name="compiler-warning-level-1-c4045"></a>Derleyici Uyarısı (düzey 1) C4045
 

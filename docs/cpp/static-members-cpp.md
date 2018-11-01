@@ -1,12 +1,6 @@
 ---
-title: Statik üyeleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Statik Üyeler [C++]
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - class members [C++], static
 - instance constructors, static members
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - instance constructors, shared members
 - class instances [C++], static members
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fba58883db0f5936a8f3dedc1e0c4a19fb0aafa9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 708f78c09db263584d478d16863999d4428e4891
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086206"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635259"
 ---
 # <a name="static-members-c"></a>Statik Üyeler [C++]
 

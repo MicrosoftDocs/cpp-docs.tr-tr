@@ -1,27 +1,17 @@
 ---
-title: . BAŞLANGIÇ | Microsoft Docs
-ms.custom: ''
+title: .STARTUP
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .STARTUP
-dev_langs:
-- C++
 helpviewer_keywords:
 - .STARTUP directive
 ms.assetid: 3ce9c878-18bf-49a0-828c-b29928ea3e54
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4c11c485c0adc83dd7751726c8353f9669fb2b6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 425335863b17e7fd58a56cdf4aebab1b52e1b3c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582487"
 ---
 # <a name="startup"></a>.STARTUP
 

@@ -1,27 +1,17 @@
 ---
-title: Veritabanı desteği, MFC Uygulama Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Veritabanı Desteği, MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.exe.database
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC Application Wizard, database support
 ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a2f6fde7b62dacae540f6f3b6d22569e637ad97
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9635b7e045812cc90c5d6e9662b8475e411a0b48
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421004"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654213"
 ---
 # <a name="database-support-mfc-application-wizard"></a>Veritabanı Desteği, MFC Uygulama Sihirbazı
 

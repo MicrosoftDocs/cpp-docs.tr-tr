@@ -1,10 +1,6 @@
 ---
-title: CAtlTemporaryFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlTemporaryFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlTemporaryFile
 - ATLFILE/ATL::CAtlTemporaryFile
@@ -23,21 +19,15 @@ f1_keywords:
 - ATLFILE/ATL::CAtlTemporaryFile::TempFileName
 - ATLFILE/ATL::CAtlTemporaryFile::UnlockRange
 - ATLFILE/ATL::CAtlTemporaryFile::Write
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlTemporaryFile class
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c8d32094dd8ee55cdd76fc21f51a2f809b1b341d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f440476db3618c24f0fd1cfbfe028c959517a607
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034934"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642286"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile sınıfı
 

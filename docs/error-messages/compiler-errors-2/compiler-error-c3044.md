@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3044 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3044
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3044
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3044
 ms.assetid: 9f3e25b2-4676-49ab-97bf-6c88cd0fa377
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 888a899bcc44867b0b586f50f66971d6821d44ec
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0fb63d63ce9bdf0979382887164056dcdb288bd2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648168"
 ---
 # <a name="compiler-error-c3044"></a>Derleyici Hatası C3044
 

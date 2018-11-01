@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4275 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 2) C4275
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4275
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4275
 ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55b93d1ebd81850982b4f6ceac1ceb008ed1fa49
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 985a622e2c89306c453ae6c860d21e6265d0fff1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594330"
 ---
 # <a name="compiler-warning-level-2-c4275"></a>Derleyici Uyarısı (Düzey 2) C4275
 

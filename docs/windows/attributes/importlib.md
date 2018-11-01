@@ -1,28 +1,17 @@
 ---
-title: importlib (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: importlib (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.importlib
-dev_langs:
-- C++
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: dd43dd8a0fb4660cbe0c631bcb3477ef3d26f0f6
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: d0bedb4bac91aa1a5aa72c8334db07aea0f04a97
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790013"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649884"
 ---
 # <a name="importlib"></a>importlib
 
@@ -73,5 +62,5 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [import](import.md)<br/>
 [importidl](importidl.md)<br/>
-[İçerir](include-cpp.md)<br/>
+[include](include-cpp.md)<br/>
 [includelib](includelib-cpp.md)

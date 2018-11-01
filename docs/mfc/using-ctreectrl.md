@@ -1,28 +1,18 @@
 ---
-title: CTreeCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CTreeCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CTreeCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTreeCtrl class [MFC], about CTreeCtrl
 - tree controls [MFC], using
 ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 713bfee1ebd35ae5feb6311daed7371561b205e6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5061ed4f99ccee75b5496f7ff45185c737c6e688
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444638"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597125"
 ---
 # <a name="using-ctreectrl"></a>CTreeCtrl Kullanma
 

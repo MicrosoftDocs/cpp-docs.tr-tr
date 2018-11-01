@@ -1,12 +1,6 @@
 ---
-title: ADO.NET kullanarak veri erişimi (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ADO.NET [C++]
 - .NET Framework [C++], data access
@@ -28,17 +22,12 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: fdb3bdd921c32e14744c9dbfd29690c4b028cc07
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 896cad4d3a679cd1832b073f4b1f355a70a608d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638483"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 

@@ -1,30 +1,19 @@
 ---
-title: Bir sembol değiştirme&#39;s sayısal değer | Microsoft Docs
-ms.custom: ''
+title: Bir sembol değiştirme&#39;s sayısal değer
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.changing.value
-dev_langs:
-- C++
 helpviewer_keywords:
 - numeric values
 - symbols [C++], numeric values
 - numeric values, changing symbols
 ms.assetid: 468e903b-9c07-4251-ae09-3b6cb754cc2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a7b16bb7563bcba3781982952d97b744c0ff86c5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9013ce886b1e596a858321b32249d885d03015ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629849"
 ---
 # <a name="changing-a-symbol39s-numeric-value"></a>Bir sembol değiştirme&#39;s sayısal değer
 

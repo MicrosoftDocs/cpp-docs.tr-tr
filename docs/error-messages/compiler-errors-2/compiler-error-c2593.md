@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2593 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2593
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2593
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2593
 ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a3b0d1a8574aa5c05bbca023a1209cf1801f57e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c358553a36104b5c389076f5a5ce02f94f85e85a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042734"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667317"
 ---
 # <a name="compiler-error-c2593"></a>Derleyici Hatası C2593
 

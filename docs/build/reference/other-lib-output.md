@@ -1,27 +1,17 @@
 ---
-title: Diğer LIB çıktısı | Microsoft Docs
-ms.custom: ''
+title: Diğer LIB Çıktısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - Lib
-dev_langs:
-- C++
 helpviewer_keywords:
 - output files, LIB
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6bd31c0534ae7ff2e7d840ad245be6f66983ea0a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 877450eac85044e187e27ce4acacff33ff9dba32
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642397"
 ---
 # <a name="other-lib-output"></a>Diğer LIB Çıktısı
 

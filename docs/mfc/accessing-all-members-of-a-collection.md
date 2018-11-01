@@ -1,12 +1,6 @@
 ---
-title: Bir koleksiyonun tüm üyelerine erişme | Microsoft Docs
-ms.custom: ''
+title: Bir Koleksiyonun Tüm Üyelerine Erişme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, collections
 - enumerations [MFC]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - ', '
 - ', '
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bcaaf4723e8b6a1ad40fb534b7114f317d76f6b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b6c79164bc1049f39ce0af4e00341df8f234b34a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060825"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628819"
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
 

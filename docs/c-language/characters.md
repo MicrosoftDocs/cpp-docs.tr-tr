@@ -1,23 +1,13 @@
 ---
-title: Karakter | Microsoft Docs
-ms.custom: ''
+title: Karakterler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 4f42680f-42fd-4356-adae-735dc18c6727
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2addf0d2ebb6bee47e59b9ad89a65389744d2db
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ccde073a46019f5c1c5e9fd67030629e56ba4e70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647843"
 ---
 # <a name="characters"></a>Karakterler
 

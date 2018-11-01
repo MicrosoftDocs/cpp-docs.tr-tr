@@ -1,10 +1,6 @@
 ---
-title: _dupenv_s, _wdupenv_s | Microsoft Docs
-ms.custom: ''
+title: _dupenv_s, _wdupenv_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _dupenv_s
 - _wdupenv_s
@@ -28,8 +24,6 @@ f1_keywords:
 - dupenv_s
 - _tdupenv_s
 - _wdupenv_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _dupenv_s function
 - _tdupenv_s function
@@ -39,23 +33,19 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a918b866b0b43fb0e6b31e2deb5d9861dabe9a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bc8af3282b57c9fa411aac97f5fa4d414bc3305b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402120"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646517"
 ---
 # <a name="dupenvs-wdupenvs"></a>_dupenv_s, _wdupenv_s
 
-Geçerli ortamından bir değer alır.
+Geçerli ortamdan bir değer alır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,38 +65,38 @@ errno_t _wdupenv_s(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Değişken değeri depolamak için bir arabellek.
+Değişken değerini depolayan arabellek.
 
 *numberOfElements*<br/>
-Boyutunu *arabellek*.
+Boyutu *arabellek*.
 
 *varName*<br/>
 Ortam değişkeni adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız olduğunda bir hata kodu sıfır.
+Başarı, bir hata kodu sıfır.
 
-Bu işlevleri parametrelerini doğrulayın; varsa *arabellek* veya *varname* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, İşlevler kümesi **errno** için **EINVAL** ve geri dönüp **EINVAL**.
+Bu işlevler kendi parametrelerini doğrular; varsa *arabellek* veya *varname* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse işlevler **errno** için **EINVAL** ve dönüş **EINVAL**.
 
-Bu işlevler için yeterli bellek ayıramıyor varsa, bunlar ayarlamak *arabellek* için **NULL** ve *numberOfElements* 0 ve return **ENOMEM**.
+Bu işlevler yeterli bellek ayıramıyorsa, ayarladıkları *arabellek* için **NULL** ve *numberOfElements* 0'dönüş **ENOMEM**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Dupenv_s** işlevi için ortam değişkenleri listesi arar *varname*. Değişkeni bulunursa, **_dupenv_s** bir arabellek ayırır ve değişkenin değeri arabelleğe kopyalar. İçinde arabellek adresi ve uzunluğu döndürülen *arabellek* ve *numberOfElements*. Arabellek kendisini ayırma tarafından **_dupenv_s** daha uygun bir alternatif sağlayan [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
+**_Dupenv_s** işlevi için ortam değişkenleri listesi arar *varname*. Değişken bulunamıyorsa **_dupenv_s** bir arabelleği ayırır ve değişken değerini arabelleğe kopyalar. Arabelleğin adresi ve uzunluğu, döndürülen *arabellek* ve *numberOfElements*. Arabelleğin kendisini ayırarak tarafından **_dupenv_s** daha uygun bir alternatif sağlayan [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
 
 > [!NOTE]
-> Çağırarak belleği boşaltmak için arama programın sorumluluğu olan [ücretsiz](free.md).
+> Bunu çağırarak belleğin boşaltılması arama programının sorumluluğundadır [ücretsiz](free.md).
 
-Değişken, ardından bulunmazsa *arabellek* ayarlanır **NULL**, *numberOfElements* 0 olarak ayarlanır ve bu durum bir hata olarak kabul edilmez çünkü dönüş değeri 0'dır Koşul.
+Değişkeni, ardından bulunamazsa *arabellek* ayarlanır **NULL**, *numberOfElements* 0 olarak ayarlanır ve bu durum bir hata olarak kabul edilmediğinden dönüş değeri 0'dır Koşul.
 
-Arabellek boyutu değil ilgileniyorsanız geçirebilirsiniz **NULL** için *numberOfElements*.
+Arabellek boyutu ilgilenmiyorsanız geçirebilirsiniz **NULL** için *numberOfElements*.
 
-**_dupenv_s** Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **_dupenv_s** genel değişkeni tarafından işaret ortam kopyasını kullanan **_environ** ortama erişmek için. Açıklamalar bkz [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) bir irdelemesi **_environ**.
+**_dupenv_s** Windows işletim sistemi büyük/küçük harfe duyarlı değildir. **_dupenv_s** için genel değişkeni tarafından işaret edilen ortamın kopyasını kullanır **_environ** ortama erişmek için. Konusundaki yorumlara bakın [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) bir irdelemesi **_environ**.
 
-Değer *arabellek* ortam değişkeninin değeri; bir kopyası değiştirmeye hiçbir etkisi ortamı. Kullanım [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) bir ortam değişkeninin değerini değiştirmek için işlevi.
+Değer *arabellek* ; ortam değişkeni değerinin bir kopyasıdır değiştirmeye, ortam üzerinde hiçbir etkisi vardır. Kullanım [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) bir ortam değişkeninin değerini değiştirmek için işlevi.
 
-**_wdupenv_s** bir joker karakter sürümü **_dupenv_s**; bağımsız değişkenleri **_wdupenv_s** joker karakter dizelerdir. **_Wenviron** genel değişkeni sürümüdür bir joker karakter **_environ**. Açıklamalar bkz [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) hakkında daha fazla bilgi için **_wenviron**.
+**_wdupenv_s** geniş karakterli sürümüdür **_dupenv_s**; bağımsız değişkenleri **_wdupenv_s** geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, bir geniş karakter sürümünü **_environ**. Konusundaki yorumlara bakın [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) hakkında daha fazla bilgi **_wenviron**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -121,7 +111,7 @@ Değer *arabellek* ortam değişkeninin değeri; bir kopyası değiştirmeye hi�
 |**_dupenv_s**|\<stdlib.h >|
 |**_wdupenv_s**|\<stdlib.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

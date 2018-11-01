@@ -1,12 +1,6 @@
 ---
-title: C++ sınıflarında dllimport ve dllexport kullanma | Microsoft Docs
-ms.custom: ''
+title: C++ Sınıflarında dllimport ve dllexport Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - exporting classes [C++]
 - declarations [C++], class
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - dllexport attribute [C++]
 - dllexport attribute [C++], classes [C++]
 ms.assetid: 8d7d1303-b9e9-47ca-96cc-67bf444a08a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d93a3400a52c33ac60802e6c1b7a11c0cceb1c5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3e8545f058043dfbb8abffc86cf987d0315ba3a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102365"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660765"
 ---
 # <a name="using-dllimport-and-dllexport-in-c-classes"></a>C++ Sınıflarında dllimport ve dllexport Kullanma
 

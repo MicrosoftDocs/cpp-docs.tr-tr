@@ -1,12 +1,6 @@
 ---
-title: Etkin belgeler | Microsoft Docs
-ms.custom: ''
+title: Etkin Belgeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - active documents [MFC]
 - active documents [MFC], requirements
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - views [MFC], active documents
 - active documents [MFC], views
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c5e95addef2a33afd901f8e2e002aba61875e4f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e6f8161432cc951b5e224ec28142429efbdf0726
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390571"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639666"
 ---
 # <a name="active-documents"></a>Etkin Belgeler
 

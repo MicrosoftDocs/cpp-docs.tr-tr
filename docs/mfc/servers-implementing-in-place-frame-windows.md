@@ -1,12 +1,6 @@
 ---
-title: 'Sunucular: Yerinde çerçeve Windows uygulama | Microsoft Docs'
-ms.custom: ''
+title: 'Sunucular: Yerinde Çerçeve Pencereleri Uygulama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - frame windows [MFC], implementing
 - OLE server applications [MFC], frame windows
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - frame windows [MFC], in-place
 - in-place frame windows
 ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e6ef01a7943bbb0c14ec630651757a8665373b85
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4973db6274ce800e8e1fc413ffbfd44a107a64b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055230"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637638"
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>Sunucular: Yerinde Çerçeve Pencereleri Uygulama
 

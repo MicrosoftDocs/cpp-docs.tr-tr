@@ -1,22 +1,16 @@
 ---
-title: 'Platform::Collections:: unorderedmap sınıfı | Microsoft Docs'
-ms.custom: ''
+title: Platform::Collections::UnorderedMap Sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0b8a17cf83171a570f2ca3f6ff40c657d17164d
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: d3e6069f4bf7b0c23d5db5844821524ee80589da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162353"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648337"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 

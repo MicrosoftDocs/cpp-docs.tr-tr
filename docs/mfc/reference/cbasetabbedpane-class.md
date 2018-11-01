@@ -1,10 +1,6 @@
 ---
-title: CBaseTabbedPane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CBaseTabbedPane sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CBaseTabbedPane
 - AFXBASETABBEDPANE/CBaseTabbedPane
@@ -36,8 +32,6 @@ f1_keywords:
 - AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoDestroy
 - AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoHideMode
 - AFXBASETABBEDPANE/CBaseTabbedPane::ShowTab
-dev_langs:
-- C++
 helpviewer_keywords:
 - CBaseTabbedPane [MFC], AddTab
 - CBaseTabbedPane [MFC], AllowDestroyEmptyTabbedPane
@@ -68,16 +62,12 @@ helpviewer_keywords:
 - CBaseTabbedPane [MFC], SetAutoHideMode
 - CBaseTabbedPane [MFC], ShowTab
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: addbc7c81c8cd38f44b7b1004c0b4e23ca183ecb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 51344a8cd0e5671f81e608b74363ed06c9200324
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640901"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane sınıfı
 

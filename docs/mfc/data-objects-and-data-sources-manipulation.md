@@ -1,12 +1,6 @@
 ---
-title: 'Veri nesneleri ve veri kaynakları: düzenleme | Microsoft Docs'
-ms.custom: ''
+title: 'Veri Nesneleri ve Veri Kaynakları: Düzenleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data objects [MFC], manipulating
 - data sources [MFC], data operations
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - delayed rendering [MFC]
 - OLE [MFC], data sources
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a5b44dd343c068a6a98765f9740dcd96b68bd323
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ee5cb320cb07a656675bd6735d6761cb69573d0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415504"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636156"
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>Veri Nesneleri ve Veri Kaynakları: Düzenleme
 

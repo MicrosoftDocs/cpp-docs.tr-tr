@@ -1,10 +1,6 @@
 ---
-title: 'MIDL özellik sayfaları: Çıktı | Microsoft Docs'
-ms.custom: ''
+title: 'MIDL Özellik Sayfaları: Çıktı'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCMidlTool.ProxyFileName
 - VC.Project.VCMidlTool.GenerateTypeLibrary
@@ -13,21 +9,15 @@ f1_keywords:
 - VC.Project.VCMidlTool.OutputDirectory
 - VC.Project.VCMidlTool.DLLDataFileName
 - VC.Project.VCMidlTool.TypeLibraryName
-dev_langs:
-- C++
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32125de84e7aa2601c65ad7eb441fff915dcd9d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e31f20989a40b58b0e9d49bf6102029d2efdbaf2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590330"
 ---
 # <a name="midl-property-pages-output"></a>MIDL Özellik Sayfaları: Çıktı
 

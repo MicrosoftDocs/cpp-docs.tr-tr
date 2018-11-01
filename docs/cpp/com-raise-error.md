@@ -1,27 +1,17 @@
 ---
-title: _com_raise_error | Microsoft Docs
-ms.custom: ''
+title: _com_raise_error
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_raise_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - _com_raise_error function
 ms.assetid: a98226c2-c3fe-44f1-8ff5-85863de11cd6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dea1ac5bb15c77d1c8e0a84d2c66e3c119f01fd6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5790fceef26d6de4edff604270cc7108f764aced
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627571"
 ---
 # <a name="comraiseerror"></a>_com_raise_error
 

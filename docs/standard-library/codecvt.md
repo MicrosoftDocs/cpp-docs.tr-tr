@@ -1,28 +1,18 @@
 ---
-title: '&lt;codecvt&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;codecvt&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - codecvt
 - <codecvt>
-dev_langs:
-- C++
 helpviewer_keywords:
 - codecvt header
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 973f183980e89ac0be268e5cbbec42de83a378f4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d8399d9b0f1ebb6f111fad46eab85df4d3065416
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648116"
 ---
 # <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
 

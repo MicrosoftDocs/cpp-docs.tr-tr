@@ -1,28 +1,18 @@
 ---
-title: TerminateMap işlevi | Microsoft Docs
-ms.custom: ''
+title: TerminateMap İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Details::TerminateMap
-dev_langs:
-- C++
 helpviewer_keywords:
 - TerminateMap function
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: bc5aec34177572552d119df967c9d25571b6cb63
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: efee7edfc1085288b3220698024cb0deeb4e71af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643228"
 ---
 # <a name="terminatemap-function"></a>TerminateMap İşlevi
 

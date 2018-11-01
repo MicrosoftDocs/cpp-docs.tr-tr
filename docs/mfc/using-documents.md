@@ -1,12 +1,6 @@
 ---
-title: Belgeleri kullanma | Microsoft Docs
-ms.custom: ''
+title: Belgeleri Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - documents [MFC], C++ applications
 - data [MFC], reading
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - printing [MFC], documents
 - writing to files [MFC]
 ms.assetid: f390d6d8-d0e1-4497-9b6a-435f7ce0776c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f039b2e81b52c753a1fb065572d4eac53d55ec9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1fcdd365bd3744e1a09b768f56c1044696686c73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589741"
 ---
 # <a name="using-documents"></a>Belgeleri Kullanma
 

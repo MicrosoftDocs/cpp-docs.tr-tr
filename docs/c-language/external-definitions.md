@@ -1,26 +1,16 @@
 ---
-title: Dış tanımlar | Microsoft Docs
-ms.custom: ''
+title: Dış Tanımlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - external definitions
 - external linkage, variable declarations
 ms.assetid: 41e37bfc-b360-43b1-9972-28af2d365b20
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba0487716a24e75ec2fccfa9dc7803bff9a5cfcf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 98694abd0598ce1e601a7da74c4681442a71f7df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597658"
 ---
 # <a name="external-definitions"></a>Dış Tanımlar
 

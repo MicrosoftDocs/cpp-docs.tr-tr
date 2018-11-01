@@ -1,10 +1,6 @@
 ---
-title: __addgsbyte, __addgsword, __addgsdword, __addgsqword | Microsoft Docs
-ms.custom: ''
+title: __addgsbyte, __addgsword, __addgsdword, __addgsqword
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __addgsdword
 - __addgsqword
@@ -14,24 +10,18 @@ f1_keywords:
 - __addgsqword_cpp
 - __addgsbyte
 - __addgsdword_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __addgsword intrinsic
 - __addgsqword intrinsic
 - __addgsdword intrinsic
 - __addgsbyte intrinsic
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bdfcd0db1486e5ba6e4c08dee0c19e3b98282df9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2439e541332705ec5330a7ee6e703c99712f7e8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667616"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 
@@ -42,21 +32,21 @@ Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir de
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __addgsbyte( 
-   unsigned long Offset, 
-   unsigned char Data 
+void __addgsbyte( 
+   unsigned long Offset, 
+   unsigned char Data 
 );
-void __addgsword( 
-   unsigned long Offset, 
-   unsigned short Data 
+void __addgsword( 
+   unsigned long Offset, 
+   unsigned short Data 
 );
-void __addgsdword( 
-   unsigned long Offset, 
-   unsigned long Data 
+void __addgsdword( 
+   unsigned long Offset, 
+   unsigned long Data 
 );
-void __addgsqword( 
-   unsigned long Offset, 
-   unsigned __int64 Data 
+void __addgsqword( 
+   unsigned long Offset, 
+   unsigned __int64 Data 
 );
 ```
 

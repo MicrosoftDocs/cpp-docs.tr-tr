@@ -1,41 +1,31 @@
 ---
-title: Derleyici Hatası C2434 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2434
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2434
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2434
 ms.assetid: 01329e26-7c74-4219-b74f-69e3a40c9738
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45f9ccdef84713883c53dab0e7caf3b1519628de
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c73a8d4fcde945ddf2495cc2d0d7dc47216f2db3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704233"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587596"
 ---
 # <a name="compiler-error-c2434"></a>Derleyici Hatası C2434
 
-> '*sembol*': / CLR ile __declspec(process) bildirilen bir simge dinamik olarak başlatılamaz: Saf modu
+> '*sembol*': __declspec(Process) ile bir simge/CLR dinamik olarak başlatılamaz: pure modunda
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Dinamik olarak bir işlem içi değişken altında başlatmak mümkün değil **/CLR: pure**. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [işlem](../../cpp/process.md).
+Dinamik olarak bir işlem içi değişken altında başlatmak mümkün değil **/CLR: pure**. Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [işlem](../../cpp/process.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C2434 oluşturur. Bu sorunu gidermek için başlatmak için sabitleri kullanın `process` değişkenleri.
+Aşağıdaki örnek, C2434 oluşturur. Bu sorunu gidermek için başlatmak için sabitleri kullanın `process` değişkenleri.
 
 ```cpp
 // C2434.cpp

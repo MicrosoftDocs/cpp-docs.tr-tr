@@ -1,10 +1,6 @@
 ---
-title: CCriticalSection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCriticalSection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCriticalSection
 - AFXMT/CCriticalSection
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXMT/CCriticalSection::Lock
 - AFXMT/CCriticalSection::Unlock
 - AFXMT/CCriticalSection::m_sect
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCriticalSection [MFC], CCriticalSection
 - CCriticalSection [MFC], Lock
 - CCriticalSection [MFC], Unlock
 - CCriticalSection [MFC], m_sect
 ms.assetid: f776f74b-5b0b-4f32-9c13-2b8e4a0d7b2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 159d452c3b0a813c52d8486f52d67b9817c3a558
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 152efe6b1c5e8be67a3c37cc7e56b12c88c1b4dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641482"
 ---
 # <a name="ccriticalsection-class"></a>CCriticalSection sınıfı
 

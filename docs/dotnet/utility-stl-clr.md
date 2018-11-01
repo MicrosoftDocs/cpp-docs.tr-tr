@@ -1,9 +1,6 @@
 ---
-title: yardımcı program (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: yardımcı program (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - <cliext/utility>
@@ -22,8 +19,6 @@ f1_keywords:
 - cliext::pair::operator!=
 - cliext::pair::operator<=
 - cliext::pair::operator<
-dev_langs:
-- C++
 helpviewer_keywords:
 - <utility> header [STL/CLR]
 - utility header [STL/CLR]
@@ -44,17 +39,12 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 307d3c2f95d006ae36ff39cf3c16ff3fd65a4c34
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 817e4224e926ea305312aaebc6d94bc19e51e82f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633580"
 ---
 # <a name="utility-stlclr"></a>yardımcı program (STL/CLR)
 

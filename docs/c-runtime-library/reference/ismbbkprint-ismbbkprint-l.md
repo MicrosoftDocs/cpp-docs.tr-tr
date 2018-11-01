@@ -1,10 +1,6 @@
 ---
-title: _ismbbkprint, _ismbbkprint_l | Microsoft Docs
-ms.custom: ''
+title: _ismbbkprint, _ismbbkprint_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbkprint
 - _ismbbkprint_l
@@ -26,28 +22,22 @@ f1_keywords:
 - ismbbkprint
 - _ismbbkprint
 - ismbbkprint_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbbkprint function
 - ismbbkprint_l function
 - ismbbkprint function
 - _ismbbkprint_l function
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1a6a215bac14f81d29d83a856313133fb4e88a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9d30abb0bcb587aeb15087ceb80d60d54ac1bebe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399507"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645984"
 ---
 # <a name="ismbbkprint-ismbbkprintl"></a>_ismbbkprint, _ismbbkprint_l
 
-Belirli bir birden çok baytlı karakter noktalama işareti sembolü olup olmadığını belirler.
+Belirtilen bir çok baytlı karakterin bir noktalama işareti olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,14 +54,14 @@ int _ismbbkprint_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbkprint** sıfır olmayan bir değer döndürür tamsayı *c* değilse ASCII olmayan metni, ASCII olmayan noktalama işareti sembolü veya 0 değil. Örneğin, yalnızca kod sayfası 932 içinde **_ismbbkprint** katakana alfasayısal veya katakana noktalama için testler (aralık: 0xA1 - 0xDF). **_ismbbkprint** geçerli yerel ayar için yerel ayara bağımlı karakter ayarlarını kullanır. **_ismbbkprint_l** geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_ismbbkprint** sıfır olmayan bir değer döndürür tamsayı *c* değil bir ASCII olmayan metin veya ASCII olmayan noktalama işareti sembolü ya da 0 olur. Örneğin, yalnızca kod sayfası 932 içinde **_ismbbkprint** katakana alfasayısal veya katakana noktalama için testler (aralık: 0xA1 - 0xDF). **_ismbbkprint** yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbkprint_l** geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -80,7 +70,7 @@ Kullanılacak yerel ayar.
 |**_ismbbkprint**|\<Mbctype.h >|
 |**_ismbbkprint_l**|\<Mbctype.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

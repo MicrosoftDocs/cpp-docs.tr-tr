@@ -1,23 +1,13 @@
 ---
-title: A.10 ardışık sıralamayı belirtme | Microsoft Docs
-ms.custom: ''
+title: A.10   Ardışık Sıralamayı Belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 5c65a9b1-0fc5-4cad-a5a9-9ce10b25d25c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29f2089760e9aef6f9e992c5725eab12b7be3b20
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4e3a146e1bca988f46cf7a7ee504644f96dab67e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575259"
 ---
 # <a name="a10---specifying-sequential-ordering"></a>A.10   Ardışık Sıralamayı Belirtme
 

@@ -1,29 +1,19 @@
 ---
-title: _bstr_t::wchar_t *, _bstr_t::char* | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::wchar_t *, _bstr_t::char*
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::wchar_t*
 - _bstr_t::char*
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator wchar_t* [C++]
 - operator char* [C++]
 ms.assetid: acd9f4a7-b427-42c2-aaae-acae21cab317
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: abd0b53c178e028b975e2b26d36317b773c2cfa5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da1e93a4bed195f2951e47f52bf2016cff1df3ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572958"
 ---
 # <a name="bstrtwchart-bstrtchar"></a>_bstr_t::wchar_t *, _bstr_t::char*
 
@@ -34,9 +24,9 @@ BSTR karakter, bir dar veya geniş karakter dizisi olarak döndürür.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-operator const wchar_t*( ) const throw( ); 
-operator wchar_t*( ) const throw( ); 
-operator const char*( ) const; 
+operator const wchar_t*( ) const throw( ); 
+operator wchar_t*( ) const throw( ); 
+operator const char*( ) const; 
 operator char*( ) const;
 ```
 

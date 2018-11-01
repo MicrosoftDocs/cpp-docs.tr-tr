@@ -1,23 +1,13 @@
 ---
-title: C dili başvurularının organizasyonu | Microsoft Docs
-ms.custom: ''
+title: C Dili Başvurularının Organizasyonu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 7e42daa4-9c9e-4c2d-bbc4-e45405803c20
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b9ed315352fc804acfd598bbe203de8be2abe49
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8b663f06a7971e5cdac43856f652f6f2509a62f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573585"
 ---
 # <a name="organization-of-the-c-language-reference"></a>C Dili Başvurularının Organizasyonu
 

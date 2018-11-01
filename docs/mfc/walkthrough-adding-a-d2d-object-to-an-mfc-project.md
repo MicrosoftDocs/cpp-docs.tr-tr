@@ -1,26 +1,16 @@
 ---
-title: 'İzlenecek yol: bir MFC projesine D2D nesnesi ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek Yol: Bir MFC Projesine D2D Nesnesi Ekleme'
 ms.date: 09/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, D2D
 - D2D [MFC]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6117b17421e37238c9bc585677eb7b0c8ed557fb
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 0793511f09be9dcb37732c4c16bfd2b3038a6cf4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169664"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567264"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>İzlenecek Yol: Bir MFC Projesine D2D Nesnesi Ekleme
 

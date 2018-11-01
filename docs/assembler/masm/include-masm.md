@@ -1,27 +1,17 @@
 ---
-title: İÇERİR (MASM) | Microsoft Docs
-ms.custom: ''
+title: INCLUDE (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - include
-dev_langs:
-- C++
 helpviewer_keywords:
 - INCLUDE directive
 ms.assetid: 1c7964ee-715c-414e-a45e-74af93476eb4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 26752dc25c30fa22a523a5c224192d2023c0b135
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e63d7cb85ad5379adcc1beea3c3c96eff0d91339
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647830"
 ---
 # <a name="include-masm"></a>INCLUDE (MASM)
 

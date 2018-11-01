@@ -1,43 +1,33 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4398 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4398
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4398
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4398
 ms.assetid: b6221432-9fed-4272-a547-a73f587904e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c38ade6b75242fdd5144481e3415e914cb6773c5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4126a1267b41cdf9c0161c7e85a9057b2a301d77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704620"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578470"
 ---
 # <a name="compiler-warning-level-3-c4398"></a>Derleyici Uyarısı (Düzey 3) C4398
 
-> '*değişkeni*': işlem içi genel nesne ile birden çok appdomains oluşturuyor doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün
+> '*değişkeni*': başına-process genel nesnesi birden fazla AppDomain ile doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sanal işlevle [__clrcall](../../cpp/clrcall.md) yerel tür çağırma oluşturulmasını neden olan bir uygulama etki alanı vtable başına. Bu tür bir değişken doğru birden çok uygulama etki alanlarında kullanıldığında düzeltebilir değil.
+Bir sanal işlev ile [__clrcall](../../cpp/clrcall.md) neden oluşturulmasını çağırma kuralı yerel bir tür bir uygulama etki alanı vtable başına. Böyle bir değişkene doğru birden çok uygulama etki alanlarında kullanıldığında düzeltmemeyi.
 
-Açıkça değişkeni işaretleyerek bu uyarıyı çözümleyebilirsiniz `__declspec(appdomain)`. Visual Studio 2017 önce Visual Studio sürümlerinde, bu uyarı ile derleme tarafından çözebilirsiniz **/CLR: pure**, varsayılan olarak genel değişkenler appdomain başına yapar. **/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+Açıkça değişken işaretleyerek bu uyarıyı çözümleyebilirsiniz `__declspec(appdomain)`. Visual Studio 2017 önce Visual Studio sürümlerinde, bu uyarı ile derleme tarafından çözebilirsiniz **/CLR: pure**, varsayılan uygulama etki alanı başına genel değişkenler yapar. **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md) ve [uygulama etki alanları ve Visual C++](../../dotnet/application-domains-and-visual-cpp.md).
+Daha fazla bilgi için [appdomain](../../cpp/appdomain.md) ve [uygulama etki alanları ve Visual C++](../../dotnet/application-domains-and-visual-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4398 oluşturur.
+Aşağıdaki örnek, C4398 oluşturur.
 
 ```cpp
 // C4398.cpp

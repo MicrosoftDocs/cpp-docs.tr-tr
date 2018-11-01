@@ -1,9 +1,6 @@
 ---
-title: WeakRef sınıfı | Microsoft Docs
-ms.custom: ''
+title: WeakRef Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::WeakRef
@@ -13,8 +10,6 @@ f1_keywords:
 - client/Microsoft::WRL::WeakRef::CopyTo
 - client/Microsoft::WRL::WeakRef::operator&
 - client/Microsoft::WRL::WeakRef::WeakRef
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::WeakRef class
 - Microsoft::WRL::WeakRef::~WeakRef, destructor
@@ -24,17 +19,12 @@ helpviewer_keywords:
 - Microsoft::WRL::WeakRef::operator& operator
 - Microsoft::WRL::WeakRef::WeakRef, constructor
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f40e0509f5e532ea85930052a6bda35d89e47ae1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd8aecc17c7f70540c06fa6b7b4885002dbea31a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071030"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645698"
 ---
 # <a name="weakref-class"></a>WeakRef Sınıfı
 

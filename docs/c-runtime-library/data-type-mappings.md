@@ -1,10 +1,6 @@
 ---
-title: Veri türü eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: Veri Türü Eşlemeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _TXCHAR
 - _TUCHAR
@@ -15,8 +11,6 @@ f1_keywords:
 - TCHAR
 - _T
 - _TEXT
-dev_langs:
-- C++
 helpviewer_keywords:
 - _TXCHAR type
 - TINT type
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - _TEXT type
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d11f6fd60cb85406f729fc337054858fbed73f3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3d6e43d8d39cb208efbb6010ef2591a2880fd584
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647908"
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
 

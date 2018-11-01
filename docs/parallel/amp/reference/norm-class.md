@@ -1,27 +1,17 @@
 ---
-title: Norm sınıfı | Microsoft Docs
-ms.custom: ''
+title: norm Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - norm
 - AMP_SHORT_VECTORS/norm
 - AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor
-dev_langs:
-- C++
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 362ad3a2676fa1a7c8f965a6750782617d6a3203
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2d37dcb430be9941444a90ac0a4ba34f3ee30515
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630769"
 ---
 # <a name="norm-class"></a>norm Sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CDaoQueryDef sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoQueryDef sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoQueryDef
 - AFXDAO/CDaoQueryDef
@@ -38,8 +34,6 @@ f1_keywords:
 - AFXDAO/CDaoQueryDef::SetSQL
 - AFXDAO/CDaoQueryDef::m_pDAOQueryDef
 - AFXDAO/CDaoQueryDef::m_pDatabase
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoQueryDef [MFC], CDaoQueryDef
 - CDaoQueryDef [MFC], Append
@@ -72,16 +66,12 @@ helpviewer_keywords:
 - CDaoQueryDef [MFC], m_pDAOQueryDef
 - CDaoQueryDef [MFC], m_pDatabase
 ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a10e1f6adb1fc9274a2a59215564fb60984ea661
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 07c508dcf4bd57855d09be5a305847d0b2981305
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074494"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664535"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef sınıfı
 

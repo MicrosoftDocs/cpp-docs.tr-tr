@@ -1,10 +1,6 @@
 ---
-title: CXMLAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CXMLAccessor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CXMLAccessor
 - CXMLAccessor
@@ -19,24 +15,17 @@ f1_keywords:
 - CXMLAccessor::GetXMLRowData
 - CXMLAccessor.GetXMLRowData
 - GetXMLRowData
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXMLAccessor class
 - GetXMLColumnData method
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 71922df2b4d94d06b21ade32b4d8c4ca22fa50c8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ff72d672db963a166284c9ea0f7e3e8c1a89d5e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065427"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594720"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 

@@ -1,9 +1,6 @@
 ---
-title: Derleyici uyarılarını C4800 C5999 ile | Microsoft Docs
+title: Derleyici uyarılarını C4800 C5999 ile
 ms.date: 10/24/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4806
 - C4807
@@ -101,18 +98,12 @@ f1_keywords:
 - C5044
 - C5045
 - C5046
-dev_langs:
-- C++
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27f212865965883732e8bd956cafecf50e0a8de3
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 672aa1b0e298be3b6754b1706e721ad6798230ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990353"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642864"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarılarını C4800 C5999 ile
 

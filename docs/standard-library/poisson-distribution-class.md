@@ -1,10 +1,6 @@
 ---
-title: poisson_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: poisson_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::poisson_distribution
 - random/std::poisson_distribution::reset
@@ -17,8 +13,6 @@ f1_keywords:
 - random/std::poisson_distribution::param_type::mean
 - random/std::poisson_distribution::param_type::operator==
 - random/std::poisson_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::poisson_distribution [C++]
 - std::poisson_distribution [C++], reset
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93b020dcdf9dd7db11be0a578885cee28e667534
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c53e6d89cfd768fc5828017f807ec64d147419da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100404"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651314"
 ---
 # <a name="poissondistribution-class"></a>poisson_distribution Sınıfı
 

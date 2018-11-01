@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2252 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2252
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2252
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2252
 ms.assetid: fee74ab9-1997-4615-82fe-e6d1fe3aacd9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31fb5b48f322fbce71f1b830a01e428930937958
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9f24e6dfeb6544e5a6173fd844e3fe8b9ae8698e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041382"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643891"
 ---
 # <a name="compiler-error-c2252"></a>Derleyici Hatası C2252
 

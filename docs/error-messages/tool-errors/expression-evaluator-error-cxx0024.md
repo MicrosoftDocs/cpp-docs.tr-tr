@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0024 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0024
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0024
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXX0024
 - CAN0024
 ms.assetid: eca6adbd-8ff2-4f51-a1cc-a2e9d5d0a47d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2816be7bb1d33757d9722d605d461ac6fb34fadd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 93f8389ed3959d5747e46c1234fd8d2eae0f1ae5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659699"
 ---
 # <a name="expression-evaluator-error-cxx0024"></a>İfade Değerlendirici Hatası CXX0024
 

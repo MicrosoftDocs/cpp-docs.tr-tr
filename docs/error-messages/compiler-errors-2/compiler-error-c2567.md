@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2567 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2567
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2567
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2567
 ms.assetid: 9c140ac9-7059-47e6-9ba1-e7939c8c0dc3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb09aacc1b81e9f0e0c9c96a496eccc89a061f37
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eec529f43e23810843651888ef5722c5d0a0b2c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104251"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651951"
 ---
 # <a name="compiler-error-c2567"></a>Derleyici Hatası C2567
 

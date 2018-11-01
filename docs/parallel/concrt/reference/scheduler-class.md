@@ -1,10 +1,6 @@
 ---
-title: Zamanlayıcı sınıfı | Microsoft Docs
-ms.custom: ''
+title: Zamanlayıcı Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - Scheduler
 - CONCRT/concurrency::Scheduler
@@ -22,21 +18,15 @@ f1_keywords:
 - CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy
 - CONCRT/concurrency::Scheduler::ScheduleTask
 - CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy
-dev_langs:
-- C++
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 745ab1f4f992591927be101521e0f2902af0ccd7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b2b4de2a0aa844f9450af9d853b11ea6f485274
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448297"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638275"
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 

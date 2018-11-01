@@ -1,12 +1,6 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) cihaz görüntülerinde saydam veya ters bölgeler oluşturma | Microsoft Docs
-ms.custom: ''
+title: Cihaz Görüntülerinde Saydam veya Ters Bölgeler Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - cursors [C++], screen regions
 - inverse colors [C++], device images
@@ -25,17 +19,12 @@ helpviewer_keywords:
 - device projects [C++], transparent images
 - icons [C++], screen regions
 ms.assetid: a994954b-b039-4391-a535-58d1fa10fc3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2789d5c70dfe4569ef8eaa1d17136ad037efd18a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c4f5aa0b63259fbe42c353525e52319db1b0667
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374562"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626648"
 ---
 # <a name="creating-transparent-or-inverse-regions-in-device-images-image-editor-for-icons"></a>Cihaz Görüntülerinde Saydam veya Ters Bölgeler Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

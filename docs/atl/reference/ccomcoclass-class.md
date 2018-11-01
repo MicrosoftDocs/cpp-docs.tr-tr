@@ -1,10 +1,6 @@
 ---
-title: CComCoClass sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComCoClass sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComCoClass
 - ATLCOM/ATL::CComCoClass
@@ -12,22 +8,16 @@ f1_keywords:
 - ATLCOM/ATL::CComCoClass::Error
 - ATLCOM/ATL::CComCoClass::GetObjectCLSID
 - ATLCOM/ATL::CComCoClass::GetObjectDescription
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComCoClass class
 - aggregation [C++], aggregation models
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11c391e6ad467c835cd8c65ec872db74b85404a2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 51da70cc1972e6a69e28d7699703f803b6fa8701
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097620"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630704"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass sınıfı
 

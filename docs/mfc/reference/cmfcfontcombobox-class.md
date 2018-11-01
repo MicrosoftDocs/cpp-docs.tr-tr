@@ -1,10 +1,6 @@
 ---
-title: CMFCFontComboBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCFontComboBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCFontComboBox
 - AFXFONTCOMBOBOX/CMFCFontComboBox
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXFONTCOMBOBOX/CMFCFontComboBox::SelectFont
 - AFXFONTCOMBOBOX/CMFCFontComboBox::Setup
 - AFXFONTCOMBOBOX/CMFCFontComboBox::m_bDrawUsingFont
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCFontComboBox [MFC], CMFCFontComboBox
 - CMFCFontComboBox [MFC], GetSelFont
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMFCFontComboBox [MFC], Setup
 - CMFCFontComboBox [MFC], m_bDrawUsingFont
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8583e7efe46ba5bae2b55e6f8cb5bdad7c7385b8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1201b8778fe6e254e4ebe8ca19fddb0312d7ca0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643761"
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
 

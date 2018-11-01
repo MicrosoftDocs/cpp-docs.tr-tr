@@ -1,29 +1,20 @@
 ---
-title: Hata bilgileri Classe (ATL) | Microsoft Docs
-ms.custom: ''
+title: Hata bilgileri Classe (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.errors
-dev_langs:
-- C++
 helpviewer_keywords:
 - error handling, error information classes
 - error handling, classes
 - error information, classes
 ms.assetid: ba40c8fb-81fd-4f61-8f47-fa2cb540e274
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 026c97868bbaffe089fa6cdb7dd75022af0ab288
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a718590f57b9831139a10831d006c669b1546ef6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765258"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601064"
 ---
 # <a name="error-information-classes"></a>Hata bilgisi sınıfları
 

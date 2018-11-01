@@ -1,10 +1,6 @@
 ---
-title: _getdrives | Microsoft Docs
-ms.custom: ''
+title: _getdrives
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getdrives
 apilocation:
@@ -23,30 +19,24 @@ apitype: DLLExport
 f1_keywords:
 - getdrives
 - _getdrives
-dev_langs:
-- C++
 helpviewer_keywords:
 - _getdrives function
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec2834e9f755a8039326ea6fb193c4bc591355ac
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d34b03e307a9c619fab077973e4cc0a4c644de6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597268"
 ---
 # <a name="getdrives"></a>_getdrives
 
 Şu anda kullanılabilir disk sürücüleri temsil eden bir bit maskesi döndürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,7 +46,7 @@ unsigned long _getdrives( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş şu anda kullanılabilir disk sürücüleri temsil eden bir bit maskesi değerdir. 0 (en az önemli bit) bit konumu sürücüsü, bit konum 1 sürücüdür B, bit konum 2 C sürücüsü ve benzeri. İşlev başarısız olursa, dönüş değeri sıfır olur. Genişletilmiş hata bilgilerini için arama **GetLastError**.
+İşlev başarılı olursa, dönüş şu anda kullanılabilir disk sürücüleri temsil eden bir bit maskesi değeridir. Bit konumu 0 (en az önemli bit) sürücüsü, bit konumu 1 sürücüdür B, bit konumu 2 C sürücüsü ve benzeri. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için arama **GetLastError**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -64,7 +54,7 @@ unsigned long _getdrives( void );
 |-------------|---------------------|
 |**_getdrives**|\<Direct.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

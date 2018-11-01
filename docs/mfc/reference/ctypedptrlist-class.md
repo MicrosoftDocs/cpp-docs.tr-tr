@@ -1,10 +1,6 @@
 ---
-title: CTypedPtrList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTypedPtrList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTypedPtrList
 - AFXTEMPL/CTypedPtrList
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXTEMPL/CTypedPtrList::RemoveHead
 - AFXTEMPL/CTypedPtrList::RemoveTail
 - AFXTEMPL/CTypedPtrList::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTypedPtrList [MFC], AddHead
 - CTypedPtrList [MFC], AddTail
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CTypedPtrList [MFC], RemoveTail
 - CTypedPtrList [MFC], SetAt
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 758be6cfec0c4d70ebf632eaf90e3623632ffbe5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 485550fbd4d3fc483303cd6ba73d74e29cc7a006
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417521"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555891"
 ---
 # <a name="ctypedptrlist-class"></a>CTypedPtrList sınıfı
 

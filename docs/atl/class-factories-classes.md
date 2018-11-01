@@ -1,28 +1,19 @@
 ---
-title: " ATL sınıf üreteci sınıfları | Microsoft Docs"
-ms.custom: ''
+title: " ATL sınıf üreteci sınıfları"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.classes.factories
-dev_langs:
-- C++
 helpviewer_keywords:
 - class factories
 - class factories, ATL classes
 ms.assetid: 1d8c2ae2-2c37-452c-a02d-1ecbdd309f84
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 414a37d51d39c94e022c726a5c8ede20504de5eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4865a938f4387c55609db144b02ebdbb92b378ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631835"
 ---
 # <a name="class-factories-classes"></a>Sınıf üreteci sınıfları
 

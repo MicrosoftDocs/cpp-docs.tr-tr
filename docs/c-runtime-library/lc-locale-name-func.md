@@ -1,10 +1,6 @@
 ---
-title: ___lc_locale_name_func | Microsoft Docs
-ms.custom: ''
+title: ___lc_locale_name_func
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - ___lc_locale_name_func
 apilocation:
@@ -18,21 +14,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - ___lc_locale_name_func
-dev_langs:
-- C++
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb94b73bf3f32c61fae37f7d3c9b9c51d012bfb6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 17724fe5335ba54d7e32ed7851b6a35b132b1086
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087922"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639850"
 ---
 # <a name="lclocalenamefunc"></a>___lc_locale_name_func
 

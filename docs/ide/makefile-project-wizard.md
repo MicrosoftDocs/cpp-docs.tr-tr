@@ -1,28 +1,18 @@
 ---
-title: Derleme görevleri dosyası projesi Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Derleme Görevleri Dosyası Projesi Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.makefile.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - Makefile projects, Makefile Project Wizard
 - MakeFile Project Wizard [Visual Studio]
 ms.assetid: 38219802-320d-4c48-a118-4792de8f3b2d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dfadd39281143baa35d8a4e30fcef345335cacc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 00514ceb32e6ea80e493bb61eecc40a32bcad86e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401933"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624503"
 ---
 # <a name="makefile-project-wizard"></a>Derleme Görevleri Dosyası Projesi Sihirbazı
 

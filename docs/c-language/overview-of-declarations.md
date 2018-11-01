@@ -1,26 +1,16 @@
 ---
-title: Bildirimlere genel bakış | Microsoft Docs
-ms.custom: ''
+title: Bildirimlere Genel Bakış
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declarations, about declarations
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e97d6404c421583c8eda1c43a7a8db48344579ab
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4e6c166763afd18db79798024d8b2f159ffed76d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582763"
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 

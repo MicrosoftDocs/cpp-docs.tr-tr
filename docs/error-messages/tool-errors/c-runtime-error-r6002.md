@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6002 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6002
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6002
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6002
 ms.assetid: 8fbbe65a-9c43-459e-8342-e1f6d1cef7d0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cde499e919a7b222a41229576ef3b2d37d55d648
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: f8b5fe69c9fd688f4d0a181176cda247cde9ac11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648649"
 ---
 # <a name="c-runtime-error-r6002"></a>C çalışma zamanı hatası R6002
 

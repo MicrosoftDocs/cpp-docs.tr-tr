@@ -1,10 +1,6 @@
 ---
-title: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _vsprintf_p
 - _vswprintf_p
@@ -29,8 +25,6 @@ f1_keywords:
 - vswprintf_p
 - _vsprintf_p
 - vstprintf_p
-dev_langs:
-- C++
 helpviewer_keywords:
 - vstprintf_p_l function
 - _vsprintf_p_l function
@@ -46,20 +40,16 @@ helpviewer_keywords:
 - _vsprintf_p function
 - _vstprintf_p_l function
 ms.assetid: 00821c0d-9fee-4d8a-836c-0669cfb11317
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab2c33301f5746065e46dcba9f166679a330c98f
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 15f368da84eb9cbf8c394a0e9b5eeec2611c3f7f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450885"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628377"
 ---
 # <a name="vsprintfp-vsprintfpl-vswprintfp-vswprintfpl"></a>_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 
-Bağımsız değişkenler kullanılan order belirtme olanağı bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıktı yazma.
+Bağımsız değişkenler kullanılan sırayı belirtme olanağı bağımsız değişkenler listesine bir işaretçi kullanarak biçimlendirilmiş çıktı yazın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -98,33 +88,33 @@ int _vswprintf_p_l(
 Çıktı için depolama konumu.
 
 *sizeInBytes*<br/>
-Boyutunu *arabellek* karakter.
+Boyutu *arabellek* karakter.
 
 *Sayısı*<br/>
-Bu işlev UNICODE sürümünü depolanacağı karakter maksimum sayısı.
+Bu işlevin UNICODE sürümünde saklanacak karakter sayısı.
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-İşaretçi bağımsız değişken listesi.
+Bağımsız değişkenler listesine işaretçi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_vsprintf_p** ve **_vswprintf_p** çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür.
+**_vsprintf_p** ve **_vswprintf_p** bir hata oluşursa, sondaki boş karakter veya negatif bir değer içermeyen yazılan karakter sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından biçimlendirir ve gösterdiği bellek için belirtilen veri Yazar *arabellek*.
+Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından biçimlendirir ve tarafından işaret edilen bellek verilen verileri Yazar *arabellek*.
 
-Bu işlevler farklı **vsprintf_s** ve **vswprintf_s** konumsal Parametreler yalnızca destekledikleri olmasıdır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+Bu işlevler farklı **vsprintf_s** ve **vswprintf_s** konumsal Parametreler yalnızca destekledikleri olmasıdır. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
-Varsa *arabellek* veya *biçimi* parametreleri **NULL** sayısı sıfır olursa işaretçileri veya biçim dizesi geçersiz biçimlendirme içeriyorsa karakterleri, geçersiz parametre işleyici çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve **errno** için **EINVAL**.
+Varsa *arabellek* veya *biçimi* parametreler **NULL** sayısı sıfır olursa işaretçilerin veya biçim dizesi geçersiz biçimlendirme içerip içermediğini karakterleri, geçersiz parametre işleyici çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, İşlevler -1 döndürür ve **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -135,14 +125,14 @@ Varsa *arabellek* veya *biçimi* parametreleri **NULL** sayısı sıfır olursa 
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
 |-------------|---------------------|----------------------|
-|**_vsprintf_p**, **_vsprintf_p_l**|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|
-|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|
+|**_vsprintf_p**, **_vsprintf_p_l**|\<stdio.h > ve \<stdarg.h >|\<XENIX > *|
+|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<XENIX > *|
 
-\* UNIX V uyumluluk için gereklidir.
+\* UNIX V uyumluluğu için gerekli.
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -195,7 +185,7 @@ This is a string
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

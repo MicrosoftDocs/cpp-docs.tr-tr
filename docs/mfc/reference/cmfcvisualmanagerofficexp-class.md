@@ -1,27 +1,17 @@
 ---
-title: CMFCVisualManagerOfficeXP sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCVisualManagerOfficeXP sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerOfficeXP
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCVisualManagerOfficeXP class [MFC]
 ms.assetid: 46b6f854-37c2-4836-8f56-5cb6ff63c9af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 879854d820c0baae9f2a078ed5b136e985be8ed2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c3b198698b4404976842466dc9b830f72c08a72f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440517"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586383"
 ---
 # <a name="cmfcvisualmanagerofficexp-class"></a>CMFCVisualManagerOfficeXP sınıfı
 

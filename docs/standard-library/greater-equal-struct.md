@@ -1,28 +1,18 @@
 ---
-title: greater_equal yapısı | Microsoft Docs
-ms.custom: ''
+title: greater_equal Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::greater_equal
-dev_langs:
-- C++
 helpviewer_keywords:
 - greater_equal struct
 - greater_equal function
 ms.assetid: a8ba911b-7af8-4653-b972-d8618f4df7d5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4b99c9b187e80a7c1e0a91badc4ccad06de593f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 89591fbcb2b520a83b6e49bd8e7450784258cf3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104257"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594200"
 ---
 # <a name="greaterequal-struct"></a>greater_equal Yapısı
 

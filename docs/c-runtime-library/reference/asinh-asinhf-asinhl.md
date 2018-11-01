@@ -1,10 +1,6 @@
 ---
-title: ASİNH, asinhf, asinhl | Microsoft Docs
-ms.custom: ''
+title: asinh, asinhf, asinhl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - asinh
 - asinhf
@@ -26,23 +22,17 @@ f1_keywords:
 - asinhf
 - asinhl
 - asinh
-dev_langs:
-- C++
 helpviewer_keywords:
 - asinh function
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1387e44b885d0f1ed58113b87d26ba5928768c18
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f6100268b77178487b7a7aa1cc3f10ac3ea7e9dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393296"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662963"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -68,23 +58,23 @@ Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Asinh** işlevler (Ark hiperbolik sinüsü) ters hyberbolic sinüsünü döndürür *x*. Bu işlev kayan nokta etki alanı üzerinde geçerli değil. Varsa *x* sessiz NaN, belirsiz, ya da sonsuz, aynı değeri döndürülür.
+**Asinh** işlevler (Ark hiperbolik sinüs) ters hiperbolik sinüsünü döndürür *x*. Bu işlev, kayan nokta etki alanı üzerinde geçerli değil. Varsa *x* sessiz NaN, belirsiz veya sonsuz, aynı değeri döndürülür.
 
 |Giriş|SEH özel durumu|**_matherr** özel durumu|
 |-----------|-------------------|--------------------------|
-|± QNAN, UL, INF|yok|yok|
+|± QNAN, UL INF|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ kullandığınızda, aşırı çağırabilirsiniz **asinh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **asinh** her zaman alan ve döndüren **çift**.
+C++ kullandığınızda, aşırı yüklemesini çağırabilirsiniz **asinh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **asinh** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
+|İşlev|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**ASİNH**, **asinhf**, **asinhl**|\<Math.h >|\<cmath > veya \<math.h <|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

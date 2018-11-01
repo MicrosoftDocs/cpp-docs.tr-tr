@@ -1,10 +1,6 @@
 ---
-title: ios_base sınıfı | Microsoft Docs
-ms.custom: ''
+title: ios_base Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xiosbase/std::ios_base
 - ios/std::ios_base::event_callback
@@ -58,8 +54,6 @@ f1_keywords:
 - xiosbase/std::ios_base::unsetf
 - xiosbase/std::ios_base::width
 - xiosbase/std::ios_base::xalloc
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::ios_base [C++]
 - std::ios_base [C++], event_callback
@@ -114,16 +108,12 @@ helpviewer_keywords:
 - std::ios_base [C++], width
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 66818710a1d5811f2ff52acf7f9785de09ba0c53
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 3c9b1081a7e2ccd45c64c1cbcd833dcda9470f7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101696"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648675"
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 

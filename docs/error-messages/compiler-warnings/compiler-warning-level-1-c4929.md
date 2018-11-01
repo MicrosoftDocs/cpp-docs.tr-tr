@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4929 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4929
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4929
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4929
 ms.assetid: 95f8ab4f-4468-4caa-acd5-8f4592f03b3c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e4f54758277edb03f76e67aaddb55c68224b4064
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 07081f2b8e305e20eb1725d3d76a6d77638caa7e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651717"
 ---
 # <a name="compiler-warning-level-1-c4929"></a>Derleyici Uyarısı (düzey 1) C4929
 

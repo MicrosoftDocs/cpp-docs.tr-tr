@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4490 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4490
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4490
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4490
 ms.assetid: f9b03ecf-41a1-4f4d-a74c-2c1e88234ccc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d6bda2aaf729c2d4b8fb29dcbeaff428ed79d78
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 89ee97a4efde6f2f9c57daf0ae769e5e12341913
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624347"
 ---
 # <a name="compiler-warning-level-1-c4490"></a>Derleyici Uyarısı (düzey 1) C4490
 

@@ -1,10 +1,6 @@
 ---
-title: Aracı giriş ve çıkış özellikleri (Visual C++) bildirim | Microsoft Docs
-ms.custom: ''
+title: Bildirim aracı giriş ve çıkış özellikleri (Visual C++)
 ms.date: 08/27/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCManifestTool.OutputManifestFile
 - VC.Project.VCManifestTool.InputResourceManifests
@@ -13,19 +9,13 @@ f1_keywords:
 - VC.Project.VCManifestTool.DependencyInformationFile
 - VC.Project.VCManifestTool.OutputResourceManifest
 - VC.Project.VCManifestTool.GenerateCatalogFiles
-dev_langs:
-- C++
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4320339021f0de25d49cba3fbe1f5e4377cd062
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8aa007e41cdabe0bf548f1184b801c1f81655596
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624711"
 ---
 # <a name="input-and-output-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Girdi ve çıktı, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 

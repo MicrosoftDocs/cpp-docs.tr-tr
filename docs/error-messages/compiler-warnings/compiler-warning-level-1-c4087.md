@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4087 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4087
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4087
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4087
 ms.assetid: 546e4d57-5c8e-422c-8ef1-92657336dad5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4be252163d9c45d2404629bcf9e2d82e3225a84a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 84d24d95053b962c1776dc18576e4ed236b63469
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086297"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643722"
 ---
 # <a name="compiler-warning-level-1-c4087"></a>Derleyici Uyarısı (düzey 1) C4087
 

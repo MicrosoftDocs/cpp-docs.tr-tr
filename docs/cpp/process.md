@@ -1,28 +1,18 @@
 ---
-title: işlem | Microsoft Docs
-ms.custom: ''
+title: process
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - process_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], process
 - process __declspec keyword
 ms.assetid: 60eecc2f-4eef-4567-b9db-aaed34733023
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65ae8eef828a8abd4bf726c99850089c0f30b71b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 049360dddff2b9ca2ea460b96e027e86899f1ecb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032574"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591743"
 ---
 # <a name="process"></a>process
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2668 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2668
 ms.date: 03/28/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2668
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2668
 ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23bb1a6fcf64590670ede2eb6aca232a5a3b4f5c
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 1920af8873578c63ab768dae4bcdf4d91fe7cd57
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890004"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642231"
 ---
 # <a name="compiler-error-c2668"></a>Derleyici Hatası C2668
 

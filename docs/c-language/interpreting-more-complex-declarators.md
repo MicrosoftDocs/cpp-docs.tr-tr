@@ -1,26 +1,16 @@
 ---
-title: Daha karmaşık Bildirimcileri yorumlama | Microsoft Docs
-ms.custom: ''
+title: Daha Karmaşık Bildirimcileri Yorumlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - complex declarators
 - interpreting complex declarators
 ms.assetid: dd5b7019-c86d-4645-a5cc-21f834de6f4a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fc5b831d00c83569bc01a5580f511d126fb97bf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6049f060a81f75f6c85686a6526b590de688eaa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083112"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581551"
 ---
 # <a name="interpreting-more-complex-declarators"></a>Daha Karmaşık Bildirimcileri Yorumlama
 

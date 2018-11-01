@@ -1,19 +1,17 @@
 ---
-title: '&lt;Gelecekteki&gt; sabit listeleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Gelecekteki&gt; sabit listeleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - future/std::future_errc
 - future/std::future_status
 - future/std::launch
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
-ms.openlocfilehash: 0056d54844e9396d517fd44c3649f1bc9605829b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1e487128d4af5c6f9b3f29f5c71e52f616e1807a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700563"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655340"
 ---
 # <a name="ltfuturegt-enums"></a>&lt;Gelecekteki&gt; sabit listeleri
 

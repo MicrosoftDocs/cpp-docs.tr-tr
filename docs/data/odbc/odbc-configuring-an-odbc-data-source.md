@@ -1,28 +1,17 @@
 ---
-title: 'ODBC: ODBC veri kaynağını yapılandırma | Microsoft Docs'
-ms.custom: ''
+title: 'ODBC: ODBC Veri Kaynağını Yapılandırma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC data sources, configuring
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a9a0cd385596f62432f16b7e5abc4259a267dd76
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 96f4694e8aa321dc5844fc413ae9740bec5a416c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080318"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643087"
 ---
 # <a name="odbc-configuring-an-odbc-data-source"></a>ODBC: ODBC Veri Kaynağını Yapılandırma
 

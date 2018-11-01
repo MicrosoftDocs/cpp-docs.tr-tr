@@ -1,10 +1,6 @@
 ---
-title: error_condition sınıfı | Microsoft Docs
-ms.custom: ''
+title: error_condition Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - system_error/std::error_condition
 - system_error/std::error_condition::value_type
@@ -13,8 +9,6 @@ f1_keywords:
 - system_error/std::error_condition::clear
 - system_error/std::error_condition::message
 - system_error/std::error_condition::operator bool
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::error_condition
 - std::error_condition::value_type
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - std::error_condition::clear
 - std::error_condition::message
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d93ebf1bdc679c27d79392bf75576f47e8844a27
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ccc2b41aa6c008fbda29c065ad63aa9f61b6680f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582344"
 ---
 # <a name="errorcondition-class"></a>error_condition Sınıfı
 

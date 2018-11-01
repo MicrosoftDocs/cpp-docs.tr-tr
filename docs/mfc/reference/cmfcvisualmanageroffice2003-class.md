@@ -1,10 +1,6 @@
 ---
-title: CMFCVisualManagerOffice2003 sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCVisualManagerOffice2003 sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerOffice2003
 - AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003
@@ -93,21 +89,15 @@ f1_keywords:
 - AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::SetDefaultWinXPColors
 - AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook
 - AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::SetUseGlobalTheme
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCVisualManagerOffice2003 Class [MFC]
 ms.assetid: 115482cd-e349-450a-8dc4-c6023d092aab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d50731fede9a65e8d354008e1cee0075b43dd163
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1b811de23b4a049bd462ddbb3f9b96e80ae25be0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083535"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558818"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Görüntü listelerini düzenleme | Microsoft Docs
-ms.custom: ''
+title: Görüntü Listelerini Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - image lists [MFC], manipulating
 - lists [MFC], image
 - CImageList class [MFC], manipulating
 ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 170b0aa32795e52eae4a2f4df8e54843eaccec59
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ec641f1e7090e27edd367203b430b932ede52a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388764"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643774"
 ---
 # <a name="manipulating-image-lists"></a>Görüntü Listelerini Düzenleme
 

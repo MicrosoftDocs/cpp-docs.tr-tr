@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RW2001 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RW2001
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RW2001
-dev_langs:
-- C++
 helpviewer_keywords:
 - RW2001
 ms.assetid: 963bdc7d-6ebe-4378-8bbc-47dfcf5d330c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f401ce7c9a96cfeecf195b8872a704b8b1291939
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4d298cdd9d96c55f283ce7f0e2ba04dd664941f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114988"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584619"
 ---
 # <a name="resource-compiler-error-rw2001"></a>Kaynak Derleyicisi Hatası RW2001
 

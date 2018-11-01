@@ -1,14 +1,8 @@
 ---
-title: Standart Windows iletileri işleyicileri | Microsoft Docs
-ms.custom: ''
+title: Standart Windows İletileri İşleyicileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - afx_msg
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows messages [MFC], handlers
 - message handling [MFC], Windows message handlers
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c74e97d8b89a72fc49f41b8c7e1bf90da2ba06c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 84e12a8f4ca0ce6384bc60b2fa01bfaf7824c864
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417819"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585426"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 

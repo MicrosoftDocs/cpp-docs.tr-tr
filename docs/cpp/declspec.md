@@ -1,28 +1,18 @@
 ---
-title: __declspec | Microsoft Docs
-ms.custom: ''
+title: __declspec
 ms.date: 10/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __declspec_cpp
 - __declspec
 - _declspec
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++]
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f413c56b665a1878fb1e948b975ab8e4cbc0daf4
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 3ee83203cc992ba8c5d05b7bb6974d3576baf59c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163594"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645100"
 ---
 # <a name="declspec"></a>__declspec
 

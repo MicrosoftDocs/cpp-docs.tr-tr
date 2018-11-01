@@ -1,26 +1,16 @@
 ---
-title: Derleyici seçeneklerini ayarlama | Microsoft Docs
-ms.custom: ''
+title: Derleyici Seçeneklerini Ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - compiler options, setting
 - cl.exe compiler, setting options
 ms.assetid: 4b079f5b-0017-4124-aad6-0d2b58e427e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cf7ee185f43f62f9e9a735650801e0cbd1a1b43d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 62a6c7913a088f9b986a09b205e4fb9bb350581a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602195"
 ---
 # <a name="setting-compiler-options"></a>Derleyici Seçeneklerini Ayarlama
 

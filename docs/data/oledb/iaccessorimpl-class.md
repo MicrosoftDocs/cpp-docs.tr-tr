@@ -1,10 +1,6 @@
 ---
-title: IAccessorImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IAccessorImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IAccessorImpl
 - ATL.IAccessorImpl.IAccessorImpl
@@ -32,8 +28,6 @@ f1_keywords:
 - ATL.IAccessorImpl.ReleaseAccessor
 - ATL::IAccessorImpl::ReleaseAccessor
 - IAccessorImpl.ReleaseAccessor
-dev_langs:
-- C++
 helpviewer_keywords:
 - IAccessorImpl class
 - IAccessorImpl class, constructor
@@ -43,17 +37,12 @@ helpviewer_keywords:
 - GetBindings method
 - ReleaseAccessor method
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 89762d37977efd4c999c38ee9bc586420655f1cc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 45e7f7e86344f1928bb007e5f2bde1c0eca1f745
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078368"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632238"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
 

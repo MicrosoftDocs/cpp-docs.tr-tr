@@ -1,26 +1,16 @@
 ---
-title: Durum çubukları | Microsoft Docs
-ms.custom: ''
+title: Durum Çubukları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - status bars
 - control bars [MFC], status bar
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 67ace2ee8c900d94fab0f9b4acd5eb220d67f643
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 67a06f3c447d620999973ef42aff6122d01273f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583241"
 ---
 # <a name="status-bars"></a>Durum Çubukları
 
