@@ -1,10 +1,6 @@
 ---
-title: CFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFile sınıfı
 ms.date: 06/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFile
 - AFX/CFile
@@ -35,8 +31,6 @@ f1_keywords:
 - AFX/CFile::hFileNull
 - AFX/CFile::m_hFile
 - AFX/CFile::m_pTM
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFile [MFC], CFile
 - CFile [MFC], Abort
@@ -66,16 +60,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a399c63903723fb35bd1b732eb15b561eeac6759
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dc0e6f75f4794b94d6e94d77f2e427b9c1df9f06
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644151"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 

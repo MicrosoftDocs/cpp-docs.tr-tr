@@ -1,10 +1,6 @@
 ---
-title: cauchy_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: cauchy_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::cauchy_distribution
 - random/std::cauchy_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::cauchy_distribution::param_type::b
 - random/std::cauchy_distribution::param_type::operator==
 - random/std::cauchy_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::cauchy_distribution [C++]
 - std::cauchy_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::cauchy_distribution [C++], param_type
 - std::cauchy_distribution [C++], param_type
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3e3b61de731b518d965d3b7d1473489f6e863f0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2aeb45054a06446c1fae092d4c07f297580684ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666966"
 ---
 # <a name="cauchydistribution-class"></a>cauchy_distribution Sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: Dosya sabitleri | Microsoft Docs
-ms.custom: ''
+title: Dosya Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _O_EXCL
 - _O_RDWR
@@ -13,8 +9,6 @@ f1_keywords:
 - _O_TRUNC
 - _O_CREAT
 - _O_WRONLY
-dev_langs:
-- C++
 helpviewer_keywords:
 - _O_RDWR constant
 - O_EXCL constant
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - O_RDONLY constant
 - _O_WRONLY constant
 ms.assetid: c8fa5548-9ac2-4217-801d-eb45e86f2fa4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e026de7b18d6809251e49f71d382c741f62be512
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 08c60585bfb6bcc002bd739b630225f0750a6cc0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595097"
 ---
 # <a name="file-constants"></a>Dosya Sabitleri
 

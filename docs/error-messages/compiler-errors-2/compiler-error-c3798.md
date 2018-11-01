@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3798 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3798
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3798
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3798
 ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 217aa46cdd643361fed16f8a69de7f8ec75214fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 52900a662211609e1e7adeb7cb493cf2d72ab846
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548271"
 ---
 # <a name="compiler-error-c3798"></a>Derleyici Hatası C3798
 

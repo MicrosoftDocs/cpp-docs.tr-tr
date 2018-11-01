@@ -1,10 +1,6 @@
 ---
-title: Cmfcpreviewctrlımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfcpreviewctrlımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPreviewCtrlImpl
 - AFXWIN/CMFCPreviewCtrlImpl
@@ -23,8 +19,6 @@ f1_keywords:
 - AFXWIN/CMFCPreviewCtrlImpl::m_clrTextColor
 - AFXWIN/CMFCPreviewCtrlImpl::m_font
 - AFXWIN/CMFCPreviewCtrlImpl::m_pDocument
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], CMFCPreviewCtrlImpl
 - CMFCPreviewCtrlImpl [MFC], Create
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], m_font
 - CMFCPreviewCtrlImpl [MFC], m_pDocument
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29632784248d624f184550f0c598d05cd26b85cf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3ec1acd1872bc0e51117602ef723116170458afd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079551"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636741"
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>Cmfcpreviewctrlımpl sınıfı
 

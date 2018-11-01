@@ -1,26 +1,16 @@
 ---
-title: Genel özellik sayfası (dosya) | Microsoft Docs
-ms.custom: ''
+title: Genel Özellik Sayfası (Dosya)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCFileConfiguration.ExcludedFromBuild
 - VC.Project.VCFileConfiguration.Tool
-dev_langs:
-- C++
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46446b03b557aa3c685ff4ab4f1658cd6972124e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 224a205bb87b89f073676275d67e3cdd127b79af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655264"
 ---
 # <a name="general-property-page-file"></a>Genel Özellik Sayfası (Dosya)
 

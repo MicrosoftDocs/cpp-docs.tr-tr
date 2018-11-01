@@ -1,28 +1,17 @@
 ---
-title: Menü komutunu Hızlandırıcı tuşuyla (C++) ilişkilendirme | Microsoft Docs
-ms.custom: ''
+title: Menü komutunu Hızlandırıcı tuşuyla (C++) ilişkilendirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - keyboard shortcuts [C++], menu association
 - commands [C++], associating menu commands with accelerator keys
 - menu commands [C++], associating with keyboard shortcuts
 ms.assetid: ad2de43f-b20a-4c9f-bda8-0420179da48c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: da9807e552590513116a7a09a58609b2b576efcc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c68d391d1046ab1d1af2fcf54b43b25a7aa9a237
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478331"
 ---
 # <a name="associating-a-menu-command-with-an-accelerator-key-c"></a>Menü komutunu Hızlandırıcı tuşuyla (C++) ilişkilendirme
 

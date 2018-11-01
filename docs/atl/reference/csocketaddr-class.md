@@ -1,10 +1,6 @@
 ---
-title: CSocketAddr sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSocketAddr sınıfı
 ms.date: 10/22/2018
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSocketAddr
 - ATLSOCKET/ATL::CSocketAddr
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLSOCKET/ATL::CSocketAddr::FindINET6Addr
 - ATLSOCKET/ATL::CSocketAddr::GetAddrInfo
 - ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSocketAddr class
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 705cbd051f7c5761ae9a2aabfe919519681ef089
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 9ab0367d5a83096c1bb6e9166ee2b43fe2000ab4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990223"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570462"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 

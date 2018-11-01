@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1128 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1128
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1128
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1128
 ms.assetid: 6f9580fd-ecef-48be-9780-dcf666704279
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a0b0c308811b642e0064304cab0688215ac949a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bb1d9af10084d6b3e75325450c7f13ea1683ee2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079654"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661233"
 ---
 # <a name="fatal-error-c1128"></a>Önemli hata C1128
 

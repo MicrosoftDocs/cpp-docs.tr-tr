@@ -1,10 +1,6 @@
 ---
-title: CUtlProps sınıfı | Microsoft Docs
-ms.custom: ''
+title: CUtlProps Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CUtlProps
 - CUtlProps::GetPropValue
@@ -26,8 +22,6 @@ f1_keywords:
 - CUtlProps.SetPropValue
 - CUtlProps<T>.SetPropValue
 - ATL::CUtlProps::SetPropValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CUtlProps class
 - GetPropValue method
@@ -36,17 +30,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f7d398f33f6f3cded62ca95cc49314bcb0119f10
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5accc7e5901e8082f5483bca5439462a3c4ffd24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525769"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 

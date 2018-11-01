@@ -1,28 +1,18 @@
 ---
-title: Alt simge işleci yorumu | Microsoft Docs
-ms.custom: ''
+title: Alt Simge İşleci Yorumu
 ms.date: 08/27/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - subscript operator [C++], interpretation of
 - arrays [C++], subscripting
 - interpreting subscript operators [C++]
 - operators [C++], interpretation of subscript
 ms.assetid: 8852ca18-9d5b-43f7-b8bd-abc89364fbf2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e1457744747ee3638d7f0b9485ac12af60e5cdd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1c3d5bca66cb294503805fd5b7691331ac380ae5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446611"
 ---
 # <a name="interpretation-of-subscript-operator"></a>Alt Simge İşleci Yorumu
 

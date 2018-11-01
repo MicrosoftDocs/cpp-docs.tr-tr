@@ -1,29 +1,19 @@
 ---
-title: improper_scheduler_reference sınıfı | Microsoft Docs
-ms.custom: ''
+title: improper_scheduler_reference Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - improper_scheduler_reference
 - CONCRT/concurrency::improper_scheduler_reference
 - CONCRT/concurrency::improper_scheduler_reference::improper_scheduler_reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - improper_scheduler_reference class
 ms.assetid: 434a7512-7796-4255-92a7-f3bf71c6a7a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5a061ca3c7bb39d90608685e04b62da9b2e83fb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9bb62fbf5048766d2d11f344a401979e107ec702
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597190"
 ---
 # <a name="improperschedulerreference-class"></a>improper_scheduler_reference Sınıfı
 

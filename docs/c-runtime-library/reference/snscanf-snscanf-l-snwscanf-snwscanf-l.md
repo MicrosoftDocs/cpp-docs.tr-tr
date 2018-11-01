@@ -1,10 +1,6 @@
 ---
-title: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l | Microsoft Docs
-ms.custom: ''
+title: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _snwscanf
 - _snscanf_l
@@ -35,8 +31,6 @@ f1_keywords:
 - sntscanf
 - snwscanf
 - snwscanf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - snscanf_l function
 - snwscanf function
@@ -54,20 +48,16 @@ helpviewer_keywords:
 - strings [C++], reading
 - _snscanf function
 ms.assetid: da1ac890-f905-4cd7-954b-3c90957b5551
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5d99cc7465f88c92588983d5356a004da466de4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ba80bec70bbb96c383d0bbe73ed52f30fb90b7ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626895"
 ---
 # <a name="snscanf-snscanfl-snwscanf-snwscanfl"></a>_snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 
-Bir dizeden belirtilen uzunluktaki veri okuma biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l](snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md).
+Biçimlendirilmiş verileri bir dizeden belirtilen uzunlukta okur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l](snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -105,31 +95,31 @@ int __cdecl _snwscanf_l(
 *Giriş*<br/>
 İncelemek için giriş dizesi.
 
-*uzunluğu*<br/>
-İçinde inceleyin karakter sayısını *giriş*.
+*Uzunluğu*<br/>
+İçinde incelenecek karakter sayısını *giriş*.
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Bir veya daha fazla biçim belirticileri.
 
 *...*<br/>
-Giriş dizesi içindeki Biçim belirticileri tarafından ayıklanan değerlerini depolamak için kullanılan isteğe bağlı değişkenleri *biçimi*.
+Giriş dizesi içindeki Biçim belirticileri olarak ayıklanan değerleri depolamak için kullanılan isteğe bağlı değişkenleri *biçimi*.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her ikisi de başarıyla dönüştürülür ve atanan alan sayısını döndürür; dönüş değerini okumak ancak atanmamış alanları içermez. Dönüş değeri 0, hiçbir alan atandığını belirtir. Dönüş değeri **EOF** bir hata için veya dize sonu ilk dönüştürmeden önce ulaşılırsa. Daha fazla bilgi için bkz: [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
+Bu işlevlerin her ikisi de başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir. Dönüş değeri **EOF** bir hata için veya ilk dönüştürmeden önce dizenin sonuna ulaşılırsa. Daha fazla bilgi için [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
-Varsa *giriş* veya *biçimi* olan bir **NULL** işaretçisi veya *uzunluğu* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır, olarak açıklanan [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EOF** ve **errno** için **EINVAL**.
+Varsa *giriş* veya *biçimi* olduğu bir **NULL** işaretçisi veya *uzunluğu* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır, olarak açıklanan [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ayarlayıp **errno** için **EINVAL**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev benzer **sscanf** dışında sabit bir giriş dizesi incelemek için karakter sayısını belirtme olanağı sağlar. Daha fazla bilgi için bkz: [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
+Bu işlev gibidir **sscanf** dışında sabit sayıda giriş dizesi incelenecek karakter belirtme olanağı sağlar. Daha fazla bilgi için [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -145,7 +135,7 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar
 |**_snscanf**, **_snscanf_l**|\<stdio.h >|
 |**_snwscanf**, **_snwscanf_l**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

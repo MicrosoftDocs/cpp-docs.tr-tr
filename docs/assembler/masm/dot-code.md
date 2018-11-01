@@ -1,27 +1,17 @@
 ---
-title: . KOD | Microsoft Docs
-ms.custom: ''
+title: .CODE
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .CODE
-dev_langs:
-- C++
 helpviewer_keywords:
 - .CODE directive
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ff2d66cfc79e84c8c4c7cf92e117c9ac8c84a555
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 65d336d2829c97fdf21e6f4b0fcb3063cc7776ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630817"
 ---
 # <a name="code"></a>.CODE
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3247 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3247
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3247
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3247
 ms.assetid: f9a2bbb5-3fce-40bf-9fd3-835a5f164dbb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f706b4f1a1935a5c6246ea285c7e8b2b746f08cb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7ca84b4f054852aefa75a9c4547286137b436c63
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569175"
 ---
 # <a name="compiler-error-c3247"></a>Derleyici Hatası C3247
 

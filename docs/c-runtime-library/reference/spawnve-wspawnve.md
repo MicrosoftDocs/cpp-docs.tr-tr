@@ -1,10 +1,6 @@
 ---
-title: _spawnve, _wspawnve | Microsoft Docs
-ms.custom: ''
+title: _spawnve, _wspawnve
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _spawnve
 - _wspawnve
@@ -26,8 +22,6 @@ f1_keywords:
 - _spawnve
 - _wspawnve
 - spawnve
-dev_langs:
-- C++
 helpviewer_keywords:
 - _spawnve function
 - spawnve function
@@ -37,23 +31,19 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: 26d1713d-b551-4f21-a07b-e9891a2ae6cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39d048d1d79135cd40e7821a71e57aa83b286d28
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03fa25f5800928aad7185c98a331d06b1c39779b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562025"
 ---
 # <a name="spawnve-wspawnve"></a>_spawnve, _wspawnve
 
 Oluşturur ve yeni bir işlem yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,36 +65,36 @@ intptr_t _wspawnve(
 ### <a name="parameters"></a>Parametreler
 
 *Modu*<br/>
-Arama işlemi için yürütme modu.
+Çağırma işlemi için yürütme modu.
 
 *■ CmdName*<br/>
-Yürütülecek dosyasının yolu.
+Yürütülecek dosyanın yolu.
 
 *argv*<br/>
-Bağımsız değişkenler işaretçiler dizisi. Bağımsız değişken *argv*[0] genellikle bir yol için bir işaretçi gerçek modda program adı için korumalı modda mı ve *argv*[1] aracılığıyla *argv*[**n**] için ilgili yeni bağımsız değişken listesi oluşturuluyor karakter dizeleri. Bağımsız değişken *argv*[**n** + 1] olmalıdır bir **NULL** bağımsız değişken listesinin sonuna işaretlemek için işaretçi.
+İşaretçiler bağımsız değişkenler dizisi. Bağımsız değişken *argv*[0] genellikle bir yol için bir işaretçi gerçek modda program adına korumalı modda mı ve *argv*[1] aracılığıyla *argv*[**n**] yeni bağımsız değişken listesini oluşturan karakter dizelerine. Bağımsız değişken *argv*[**n** + 1] olmalıdır bir **NULL** bağımsız değişken listesinin sonunu işaretlemek için işaretçi.
 
 *envp*<br/>
-Ortam ayarları işaretçiler dizisi.
+Ortam ayarlarına bir işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir zaman uyumlu yönteminden döndürülen değer **_spawnve** veya **_wspawnve** (**_p_waıt** için belirtilen *modu*) yeni işlemin çıkış durumu . Dönüş değerini zaman uyumsuz bir **_spawnve** veya **_wspawnve** (**_p_nowaıt** veya **_p_nowaıto** için belirtilen  *mod*) işlem tanıtıcısı. Çıkış durumu 0 ise işlemi normal şekilde sonlandırıldı. Oluşturulan işlemi özellikle çağırırsa, çıkış durumu sıfır olmayan bir değere ayarlayabilirsiniz **çıkmak** sıfır olmayan bir bağımsız değişkeni ile rutin. Yeni işlem pozitif Çıkış durumu açıkça ayarlamadıysanız pozitif Çıkış durumu bir durdurma veya bir kesme normal olmayan bir çıkış gösterir. Dönüş değeri-1 (yeni işlem başlatılmamış) bir hata gösterir. Bu durumda, **errno** aşağıdaki değerlerden birine ayarlayın.
+Dönüş değeri eş zamanlı **_spawnve** veya **_wspawnve** (**_p_waıt** için belirtilen *modu*) yeni sürecin çıkış durumudur . Dönüş değeri eş zamanlı olmayan **_spawnve** veya **_wspawnve** (**_p_nowaıt** veya **_p_nowaıto** için belirtilen  *modu*) süreci işler. İşlem normal şekilde sonlandırıldıysa Çıkış durumu 0'dır. Üretilmiş işlem özellikle çağırırsa, çıkış durumu sıfır olmayan bir değer ayarlayabilirsiniz **çıkmak** rutin sıfır olmayan bir bağımsız değişken. Yeni işlem açık bir şekilde pozitif Çıkış durumu ayarlamadıysanız, bir pozitif Çıkış durumu bir durdurma veya kesme kesintili anormal çıkışı gösterir. Dönüş değeri-1 (yeni işlem başlatılmamış) bir hata gösterir. Bu durumda, **errno** aşağıdaki değerlerden birine ayarlayın.
 
 |||
 |-|-|
 **E2BIG**|Bağımsız değişken listesi 1024 baytı aşıyor.
-**EINVAL**|*mod* bağımsız değişkeni geçersiz.
+**EINVAL**|*modu* bağımsız değişkeni geçersiz.
 **ENOENT**|Dosya veya yol bulunamadı.
-**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya yürütülebilir dosya biçimi geçersiz.
+**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip.
 **ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok.
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri oluşturur ve komut satırı bağımsız değişkenleri ve ortam ayarları işaretçiler bir dizi bir dizi işaretçileri geçirme, yeni bir işlem yürütür.
+Bu işlevlerin her biri, oluşturur ve bir işaretçiler dizisi komut satırı bağımsız değişkenleri ve bir ortam ayarlarına bir işaretçiler dizisi geçirerek yeni bir işlem yürütür.
 
-Bu işlevler kendi parametreleri doğrulayın. Her iki *■ cmdname* veya *argv* null işaretçinin veya *argv* işaret null işaretçi veya *argv*[0] boş bir dize geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL**ve -1 döndürür. Yeni bir işlem oluşturdu.
+Bu işlevler kendi parametrelerini doğrular. Ya da *■ cmdname* veya *argv* null bir işaretçiyse veya *argv* boş işaretçiyi veya *argv*[0] boş bir dize geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL**ve -1 döndürür. Yeni bir işlem üretilmedi.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -113,11 +103,11 @@ Bu işlevler kendi parametreleri doğrulayın. Her iki *■ cmdname* veya *argv*
 |**_spawnve**|\<stdio.h > veya \<process.h >|
 |**_wspawnve**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md).
+Örnekte bakın [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

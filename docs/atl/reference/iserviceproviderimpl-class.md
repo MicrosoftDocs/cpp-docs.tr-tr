@@ -1,30 +1,20 @@
 ---
-title: Iserviceproviderımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iserviceproviderımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IServiceProviderImpl
 - ATLCOM/ATL::IServiceProviderImpl
 - ATLCOM/ATL::IServiceProviderImpl::QueryService
-dev_langs:
-- C++
 helpviewer_keywords:
 - IServiceProviderImpl class
 - IServiceProvider interface, ATL implementation
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef8c497a681ae1b54ec833a048cddba29a72be7f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 231c65d92ff287e35d5475109e70d21f5a047baa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067599"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609891"
 ---
 # <a name="iserviceproviderimpl-class"></a>Iserviceproviderımpl sınıfı
 

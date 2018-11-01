@@ -1,12 +1,6 @@
 ---
-title: MFC kullanarak kaynak dosyaları | Microsoft Docs
-ms.custom: ''
+title: MFC Kaynak Dosyalarını Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - public members
 - source files
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - protected member access
 - source files, MFC
 ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e63383e372227dc14ce90843b03b6cb0c029b52a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 40decb64914167061f6538df36d086347f52e1b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383863"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659296"
 ---
 # <a name="using-the-mfc-source-files"></a>MFC Kaynak Dosyalarını Kullanma
 

@@ -1,27 +1,17 @@
 ---
-title: Sanal işlevler | Microsoft Docs
-ms.custom: ''
+title: Sanal İşlevler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C++], virtual functions
 - derived classes [C++], virtual functions
 - virtual functions
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6de0d358c6ac587944977340e02b1ee6ed086f8c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 07dfd8a602dca93c89a078b2eb69e04cf9d4a7a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613063"
 ---
 # <a name="virtual-functions"></a>Sanal İşlevler
 

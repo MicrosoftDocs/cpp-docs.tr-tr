@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2673 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2673
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2673
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2673
 ms.assetid: 780230c0-619b-4a78-b01d-ff5886306741
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 942ad581c4b272078eabfe225e7fdab2245d0ad2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a544b6d96089195d7d28f9a62b091b4f1cfc537
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108534"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587648"
 ---
 # <a name="compiler-error-c2673"></a>Derleyici Hatası C2673
 

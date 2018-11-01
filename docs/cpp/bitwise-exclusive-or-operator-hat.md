@@ -1,12 +1,6 @@
 ---
-title: 'Bit düzeyinde özel OR işleci: ^ | Microsoft Docs'
-ms.custom: ''
+title: 'Bit Düzeyinde Özel OR İşleci: ^'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], bitwise
 - exclusive OR operator
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - OR operator [C++], bitwise exclusive
 - operators [C++], logical
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76c1863b9e27c1ec28206a5734f7301f077df678
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 07af1b507cf256b84ac2f0f2db4061790a23555a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659621"
 ---
 # <a name="bitwise-exclusive-or-operator-"></a>Bit Düzeyinde Özel OR İşleci: ^
 

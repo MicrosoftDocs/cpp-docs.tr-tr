@@ -1,27 +1,16 @@
 ---
-title: Ne tür erişimci kullanacağınızı belirleme | Microsoft Docs
-ms.custom: ''
+title: Ne Tür Erişimci Kullanacağınızı Belirleme
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - rowsets [C++], data types
 - accessors [C++], types
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 591d3a3bee554fd87a8c48aea67611e6cc6e5111
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4fc0679c0596e1a79edfb91ddb5dba07be380382
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066395"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563247"
 ---
 # <a name="determining-which-type-of-accessor-to-use"></a>Ne Tür Erişimci Kullanacağınızı Belirleme
 

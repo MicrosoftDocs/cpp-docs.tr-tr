@@ -1,12 +1,6 @@
 ---
-title: Yapılandırılmış özel durum işleme (C/C++) | Microsoft Docs
-ms.custom: ''
+title: Yapılandırılmış Özel Durum İşleme (C/C++)
 ms.date: 08/14/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - termination handlers [C++], handling exceptions in C++
 - structured exception handling [C++]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 72c82ce5885b8b40613a65bab72958d6ae7c1a2d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b77a218340399578e3c9428100476787e2e60b25
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050866"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534569"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 

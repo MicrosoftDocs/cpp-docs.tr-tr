@@ -1,28 +1,18 @@
 ---
-title: __outbyte | Microsoft Docs
-ms.custom: ''
+title: __outbyte
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __outbyte
-dev_langs:
-- C++
 helpviewer_keywords:
 - out instruction
 - __outbyte intrinsic
 ms.assetid: c4cd1a34-8a02-4e37-993d-3201bc17901a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 684461d1d758db2a0c5850219c00d158342b8a3d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8695fafb25be730ebe84828527d0689211c7801b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479032"
 ---
 # <a name="outbyte"></a>__outbyte
 
@@ -33,9 +23,9 @@ Oluşturur `out` 1 tarafından belirtilen bayt gönderen yönerge `Data` çıkı
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outbyte( 
-   unsigned short Port, 
-   unsigned char Data 
+void __outbyte( 
+   unsigned short Port, 
+   unsigned char Data 
 );
 ```
 

@@ -1,9 +1,6 @@
 ---
-title: SafeInt işlevleri | Microsoft Docs
-ms.custom: ''
+title: SafeInt İşlevleri
 ms.date: 10/22/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - SafeInt functions
@@ -19,8 +16,6 @@ f1_keywords:
 - SafeMultiply
 - SafeNotEquals
 - SafeSubtract
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions, SafeInt
 - SafeAdd function
@@ -36,17 +31,12 @@ helpviewer_keywords:
 - SafeNotEquals function
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 515bf6793a2b1546bc79998283104b704de7f1ca
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0cf1418e3bf00c037faaa67de2bc76ad2b7cc5e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057296"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578405"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 

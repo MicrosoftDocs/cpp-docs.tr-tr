@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1019 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1019
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1019
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1019
 ms.assetid: c4f8968b-bc62-4200-b3ca-69d06c163236
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b3aa7f73fb546e9c7ae8f64a0705a4af40bbc640
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d8e63510b762b0de0cda50ab7a03b773dfb949a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055877"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574089"
 ---
 # <a name="fatal-error-c1019"></a>Önemli hata C1019
 

@@ -1,10 +1,7 @@
 ---
-title: Önceden tanımlanmış makrolar | Microsoft Docs
+title: Önceden Tanımlı Makrolar
 ms.custom: update_every_version
 ms.date: 04/30/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -72,8 +69,6 @@ f1_keywords:
 - _WIN64
 - _WINRT_DLL
 - __func__
-dev_langs:
-- C++
 helpviewer_keywords:
 - timestamps, preprocessor macro
 - cl.exe compiler, version number
@@ -148,16 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a95141aa97d7272970adaaa69f3f63de2a622780
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 42b81431ca69de84a5d38cca3eaa088bb7255656
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660466"
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 

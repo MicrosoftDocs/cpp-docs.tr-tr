@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2361 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2361
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2361
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2361
 ms.assetid: efbdaeb9-891c-4f7d-97da-89088a8413f3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d91ee8b004e2f485326378eb2e1611f217f745c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ca03a42cbf746a1ef32d9c79c23de637f05b56fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029799"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597112"
 ---
 # <a name="compiler-error-c2361"></a>Derleyici Hatası C2361
 

@@ -1,28 +1,17 @@
 ---
-title: is_literal_type sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_literal_type sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_literal_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_literal_type
 ms.assetid: a03a4ebb-ee66-48d6-91bb-41cf72b2401f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd4481be124cbcbba04f6b45b4c5a08beb34f04d
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 804ef0462308b967fc0c4c95d8dfa96476475aab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514012"
 ---
 # <a name="isliteraltype-class"></a>is_literal_type sınıfı
 

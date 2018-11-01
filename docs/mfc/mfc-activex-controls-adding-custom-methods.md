@@ -1,26 +1,16 @@
 ---
-title: 'MFC ActiveX denetimleri: Özel yöntemler ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Özel Yöntemler Ekleme'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - PtInCircle custom method [MFC]
 ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0973bb21771796f40a0464e2376101ee35a0d1a3
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: bd67e5f248f389755b1bf25854867322af60878e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204556"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554563"
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX Denetimleri: Özel Yöntemler Ekleme
 

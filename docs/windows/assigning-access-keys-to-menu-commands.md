@@ -1,12 +1,6 @@
 ---
-title: Menü komutlarına (C++) erişim tuşları atama | Microsoft Docs
-ms.custom: ''
+title: Menü komutlarına (C++) erişim tuşları atama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - access keys [C++], checking
 - menus [C++], shortcut keys
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - mnemonics [C++], uniqueness checking
 - Check Mnemonics command
 ms.assetid: fbcf1a00-af6a-4171-805a-0ac01d4e8b0d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 80a3480039330e85f468cfd46ba3901dd1c15dee
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 7a3302f7744bf5c3a0cbaac96de04d9f649fac10
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318778"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587336"
 ---
 # <a name="assigning-access-keys-to-menu-commands-c"></a>Menü komutlarına (C++) erişim tuşları atama
 

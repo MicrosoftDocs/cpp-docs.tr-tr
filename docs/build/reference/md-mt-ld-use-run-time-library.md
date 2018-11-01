@@ -1,10 +1,6 @@
 ---
-title: -MD, -MT, -LD (çalışma zamanı kitaplığını kullan) | Microsoft Docs
-ms.custom: ''
+title: / MD, -MT, -LD (çalışma zamanı kitaplığını kullan)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /ld
 - /mt
@@ -12,8 +8,6 @@ f1_keywords:
 - VC.Project.VCCLCompilerTool.RuntimeLibrary
 - /md
 - /ml
-dev_langs:
-- C++
 helpviewer_keywords:
 - /MT compiler option [C++]
 - -MD compiler option [C++]
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - LIBCMTD.lib
 - -MT compiler option [C++]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1aefd61d724f7716392b5fd2d15ef3a2f9ff0006
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 5c7f71e51e0741c534761b22a66ac77a6df8f870
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661090"
 ---
 # <a name="md-mt-ld-use-run-time-library"></a>/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)
 

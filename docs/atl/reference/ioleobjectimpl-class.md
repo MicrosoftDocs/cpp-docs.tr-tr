@@ -1,10 +1,6 @@
 ---
-title: Ioleobjectımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ioleobjectımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IOleObjectImpl
 - ATLCTL/ATL::IOleObjectImpl
@@ -48,23 +44,17 @@ f1_keywords:
 - ATLCTL/ATL::IOleObjectImpl::SetMoniker
 - ATLCTL/ATL::IOleObjectImpl::Unadvise
 - ATLCTL/ATL::IOleObjectImpl::Update
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX controls [C++], communication between container and control
 - IOleObject, ATL implementation
 - IOleObjectImpl class
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0595b98d26b401a93545b96a719a7c0af3440fea
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e0ea787f0998a26f67418957584e9d12152aa618
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054197"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614584"
 ---
 # <a name="ioleobjectimpl-class"></a>Ioleobjectımpl sınıfı
 

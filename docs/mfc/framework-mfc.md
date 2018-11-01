@@ -1,12 +1,6 @@
 ---
-title: Çerçeve (MFC) | Microsoft Docs
-ms.custom: ''
+title: Framework (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - encapsulation [MFC], Win32 API
 - MFC, application framework
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87db7b28ec340a76c074a7b32c0e182030042eeb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff29a867a8351a51ad7f09a5ca31d871fc67bab8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589312"
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 

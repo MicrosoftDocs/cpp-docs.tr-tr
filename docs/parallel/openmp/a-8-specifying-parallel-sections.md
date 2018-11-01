@@ -1,23 +1,13 @@
 ---
-title: A.8 paralel bölümleri belirtme | Microsoft Docs
-ms.custom: ''
+title: A.8   Paralel Bölümleri Belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: cf399304-121e-4c07-9829-47e0dbc2ef10
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d969f1a0e9d9b282104ee00a3b2d06610533ad4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 81eaed920e77b23052ac58c2d0e18fee83c00565
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440426"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461444"
 ---
 # <a name="a8---specifying-parallel-sections"></a>A.8   Paralel Bölümleri Belirtme
 

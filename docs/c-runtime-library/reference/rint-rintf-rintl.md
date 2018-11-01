@@ -1,10 +1,6 @@
 ---
-title: Yazdır, rintf, rintl | Microsoft Docs
-ms.custom: ''
+title: rint, rintf, rintl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rintf
 - rintl
@@ -26,27 +22,21 @@ f1_keywords:
 - rintf
 - rintl
 - rint
-dev_langs:
-- C++
 helpviewer_keywords:
 - rintf function
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 784a540982c41ba7aa144559d3846746b59481f7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9e0e3875b7484735b5439c6c0e0a7252940d4552
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407294"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609488"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
-Kayan nokta değeri kayan nokta biçiminde en yakın tamsayıya yuvarlar.
+Bir kayan nokta değeri kayan nokta biçiminde en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,28 +54,28 @@ long double rint( long double x );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Yuvarlanacak kayan nokta değer.
+Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Azdır** işlevler en yakın tamsayıya temsil eden bir kayan nokta değer döndürmek *x*. Kayan nokta yuvarlama modu, aynı geçerli ayarına göre yarısı değerleri yuvarlanır **nearbyint** işlevleri. Farklı **nearbyint** İşlevler, **azdır** işlevleri Yükselt **FE_INEXACT** bağımsız değişken değeri sonucu farklıysa, kayan nokta özel durumu. Döndürülen hata yoktur.
+**Azdır** İşlevler, en yakın tamsayıya temsil eden bir kayan nokta değeri döndürür *x*. Yarım değerler, kayan nokta yuvarlama modu ile aynı geçerli ayarına göre yuvarlanır **nearbyint** işlevleri. Farklı **nearbyint** İşlevler, **azdır** işlevleri yükseltmek **FE_INEXACT** bağımsız değişken değeri sonuç farklıysa, kayan nokta özel durum. Döndürülen hata yok.
 
 |Giriş|SEH özel durumu|**_matherr** özel durumu|
 |-----------|-------------------|--------------------------|
-|± ∞, QNAN, UL|yok|yok|
+|± ∞, QNAN, ONRAKİNİ BUL|yok|yok|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **azdır** alın ve dönüş **float** ve **uzun** **çift** değerleri. Bir C programı **azdır** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **azdır** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **azdır** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**Yazdır**, **rintf**, **rintl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

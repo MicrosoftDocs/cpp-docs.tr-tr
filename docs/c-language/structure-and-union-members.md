@@ -1,12 +1,6 @@
 ---
-title: Yapı ve birleşim üyeleri | Microsoft Docs
-ms.custom: ''
+title: Yapı ve Birleşim Üyeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - member-selection operators
 - structure members, referencing
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - operators [C], member selection
 - structure member selection
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c244a55b4e0ebdfadf13e5ee0a3120f024d318af
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7de6a9c8b72d2beced071939989973d8948cf34f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663898"
 ---
 # <a name="structure-and-union-members"></a>Yapı ve Birleşim Üyeleri
 

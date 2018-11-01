@@ -1,29 +1,19 @@
 ---
-title: işleç parantez | Microsoft Docs
-ms.custom: ''
+title: işleç parantez
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator []
 - '[]'
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator []
 - '[] operator'
 ms.assetid: dbe192eb-fd47-4ea4-af94-c87a047cd8ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c4d25b41ffbc527f4736bfaa33de2066ce676db
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 864be7e6415cc03597ba49b44574e109a363288e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627402"
 ---
 # <a name="operator-"></a>İşleci \[\]
 

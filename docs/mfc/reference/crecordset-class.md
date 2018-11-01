@@ -1,10 +1,6 @@
 ---
-title: CRecordset sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRecordset sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRecordset
 - AFXDB/CRecordset
@@ -70,8 +66,6 @@ f1_keywords:
 - AFXDB/CRecordset::m_pDatabase
 - AFXDB/CRecordset::m_strFilter
 - AFXDB/CRecordset::m_strSort
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRecordset [MFC], CRecordset
 - CRecordset [MFC], AddNew
@@ -136,16 +130,12 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strFilter
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 086aaebcdc44439c45a219c7292da4aff9e13b06
-ms.sourcegitcommit: a88d228480d4bb5834e985d7b3ead2760be95572
+ms.openlocfilehash: f8193e071d9c7730e85cabbcb10a701ca763085e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50203098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621402"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 

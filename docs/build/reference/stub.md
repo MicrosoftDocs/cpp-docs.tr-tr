@@ -1,27 +1,17 @@
 ---
-title: SAPLAMA | Microsoft Docs
-ms.custom: ''
+title: STUB
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - STUB
-dev_langs:
-- C++
 helpviewer_keywords:
 - STUB .def file statement
 ms.assetid: 0a3b9643-19ed-47e9-8173-ee16bc8ed056
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 151d7b425a7f397a05e3a06e9d94489a0c76f899
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 95f8e1584bdd87f23e87c27418c0debca5c3181a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725120"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533724"
 ---
 # <a name="stub"></a>STUB
 

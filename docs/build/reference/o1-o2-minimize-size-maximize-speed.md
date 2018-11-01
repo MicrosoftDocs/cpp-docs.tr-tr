@@ -1,15 +1,9 @@
 ---
-title: -O1, - O2 (boyutu en aza indir, hızı en) | Microsoft Docs
-ms.custom: ''
+title: /O1, /O2 (Boyutu En Aza İndir, Hızı En Yükseğe Çıkart)
 ms.date: 09/25/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /o2
 - /o1
-dev_langs:
-- C++
 helpviewer_keywords:
 - maximize speed compiler option [C++]
 - minimize size compiler option [C++]
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - O1 compiler option [C++]
 - /O1 compiler option [C++]
 ms.assetid: 2d1423f5-53d9-44da-8908-b33a351656c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24e57be50c2138cb9e772f6e6a2527300c9296ea
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 565cfd509e48b012581ecd6243507c60810338b9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446484"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596904"
 ---
 # <a name="o1-o2-minimize-size-maximize-speed"></a>/O1, /O2 (Boyutu En Aza İndir, Hızı En Yükseğe Çıkart)
 
@@ -65,7 +55,7 @@ ms.locfileid: "46446484"
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

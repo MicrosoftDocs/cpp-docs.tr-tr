@@ -1,27 +1,17 @@
 ---
-title: Bir projeye Form ekleme | Microsoft Docs
-ms.custom: ''
+title: Bir Projeye Form Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inserting forms [MFC]
 - Insert New dialog box [MFC]
 - forms, adding to projects
 ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba22c87ee601d66ccfb1092047e69be42d8163c3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5f5758e84e89f23f06fb9d5f2fa97220d0279725
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666628"
 ---
 # <a name="inserting-a-form-into-a-project"></a>Bir Projeye Form Ekleme
 

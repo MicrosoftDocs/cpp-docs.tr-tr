@@ -1,28 +1,18 @@
 ---
-title: Görüntü listesinden görüntü çizme | Microsoft Docs
-ms.custom: ''
+title: Görüntü Listesinden Görüntü Çizme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CImageList class [MFC], drawing images from
 - drawing [MFC], images from image lists
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d1a3d2004f0e939cef562ae7972fca88a2f31e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ed309ec4a6e58fbc4a900bc541a80004d6be3d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409915"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490564"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Çizme
 

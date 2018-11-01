@@ -1,10 +1,6 @@
 ---
-title: CMonikerFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMonikerFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMonikerFile
 - AFXOLE/CMonikerFile
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXOLE/CMonikerFile::GetMoniker
 - AFXOLE/CMonikerFile::Open
 - AFXOLE/CMonikerFile::CreateBindContext
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMonikerFile [MFC], CMonikerFile
 - CMonikerFile [MFC], Close
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75836b1d2d64de4f0ea17bf95a9fb2f9814c3cdb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dc7c2615ff4de7370bee74c64c8bcddbd1f1fcd5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541914"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile sınıfı
 

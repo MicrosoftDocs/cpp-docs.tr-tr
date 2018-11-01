@@ -1,29 +1,19 @@
 ---
-title: __movsd | Microsoft Docs
-ms.custom: ''
+title: __movsd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __movsd
-dev_langs:
-- C++
 helpviewer_keywords:
 - rep movsd instruction
 - __movsd intrinsic
 - movsd instruction
 ms.assetid: eb5cccf3-aa76-47f0-b9fc-eeca38fd943f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b70e8709f028f5aa9cb313365ed078f2af2c1a48
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6760904f4eaa6ee32cf9326638ab68f728db45d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628598"
 ---
 # <a name="movsd"></a>__movsd
 
@@ -34,10 +24,10 @@ Taşıma bir dize oluşturur (`rep movsd`) yönerge.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __movsd( 
-   unsigned long* Dest, 
-   unsigned long* Source, 
-   size_t Count 
+void __movsd( 
+   unsigned long* Dest, 
+   unsigned long* Source, 
+   size_t Count 
 );
 ```
 

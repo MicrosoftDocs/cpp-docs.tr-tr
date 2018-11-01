@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3031 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3031
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3031
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3031
 ms.assetid: 7e621e7e-eda7-45b5-8836-29599cd05255
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e604e6d15e0f7d336b2e439c80f7150d4d88510
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 848577239d24df3f6af38438fb42c372ef34b1ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054668"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655670"
 ---
 # <a name="compiler-error-c3031"></a>Derleyici Hatası C3031
 

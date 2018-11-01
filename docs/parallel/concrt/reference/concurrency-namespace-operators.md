@@ -1,24 +1,16 @@
 ---
-title: Eşzamanlılık ad alanı işleçleri | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık ad alanı işleçleri
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - concrt/concurrency::operator!=
 - concrt/concurrency:[operator&amp;&amp
-dev_langs:
-- C++
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8065be6cc53cad04d5d52bea91da05bb3125dd63
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 49283a9a8cb85cb20b0c48635217d402697caa47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162574"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483908"
 ---
 # <a name="concurrency-namespace-operators"></a>Eşzamanlılık ad alanı işleçleri
 

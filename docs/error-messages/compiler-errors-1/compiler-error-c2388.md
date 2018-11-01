@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2388 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2388
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2388
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2388
 ms.assetid: 764ad2d7-cb04-425f-ba30-70989488c4a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b6bcec4f5f218a52981a7770f5fa6e600494d9a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 62afcb1fafc19d3d61a86f2fbc10cb99e095afc5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114156"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459767"
 ---
 # <a name="compiler-error-c2388"></a>Derleyici Hatası C2388
 

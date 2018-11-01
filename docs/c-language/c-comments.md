@@ -1,12 +1,6 @@
 ---
-title: C açıklamaları | Microsoft Docs
-ms.custom: ''
+title: C Açıklamaları
 ms.date: 06/25/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - code comments, C code
 - comments, documenting code
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - /* */ comment delimiters
 - comments
 ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2e91f2c4769483ce5d1a3926d52c7a48fdd2810
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 4065ce6396b713decf4a246b54901d44fb21d2f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645031"
 ---
 # <a name="c-comments"></a>C Açıklamaları
 

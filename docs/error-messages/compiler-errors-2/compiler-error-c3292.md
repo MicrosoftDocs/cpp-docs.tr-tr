@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3292 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3292
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3292
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3292
 ms.assetid: ead485cc-5471-4e10-b361-300589ff5b70
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8fc5f89978a7ecaff526fa05ca7a47494aada987
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7c59932a79534a365a20fcad25583f7addc0d624
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609617"
 ---
 # <a name="compiler-error-c3292"></a>Derleyici Hatası C3292
 

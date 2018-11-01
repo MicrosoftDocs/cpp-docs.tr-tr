@@ -1,10 +1,6 @@
 ---
-title: Igetdatasourceımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IGetDataSourceImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IGetDataSourceImpl
 - ATL.IGetDataSourceImpl<T>
@@ -14,23 +10,16 @@ f1_keywords:
 - GetDataSource
 - IGetDataSourceImpl.GetDataSource
 - IGetDataSourceImpl::GetDataSource
-dev_langs:
-- C++
 helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 7467a658ca8739ba933f266f58e756b8f7a3ba02
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 75b95f871023d7bfdea198a69377b1f360ab115f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637846"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
 

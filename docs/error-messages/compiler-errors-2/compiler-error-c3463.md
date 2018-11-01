@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3463 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3463
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3463
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3463
 ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2169897a3ad4a6d2d78f22b7ea323d70020e1b12
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a0c7772291085bcd872cbc1ca23b79d2fa829ad9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448678"
 ---
 # <a name="compiler-error-c3463"></a>Derleyici Hatası C3463
 

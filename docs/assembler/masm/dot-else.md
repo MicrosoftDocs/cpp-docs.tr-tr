@@ -1,27 +1,17 @@
 ---
-title: . BAŞKA | Microsoft Docs
-ms.custom: ''
+title: .ELSE
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ELSE
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ELSE directive
 ms.assetid: ebfec69d-7107-47d1-9cb3-87c99cc8dff7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 684923eed3d6db23fe0baf3b3fe875a6c72921f6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0ecc23a3b9a8c7140c7bcd2daedf1cd73afbc430
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596930"
 ---
 # <a name="else"></a>.ELSE
 

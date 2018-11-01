@@ -1,27 +1,16 @@
 ---
-title: Denetimi silme | Microsoft Docs
-ms.custom: ''
+title: Denetimi Silme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog box controls [C++], deleting
 - controls [C++], deleting
 ms.assetid: 95237fac-938e-41b2-b9ae-25f03aa949cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 215a9efd8086ec60ad21e8df03afdc62b02ce51e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: efc08d88ef3822d4504f6b108bd71df87dfc9063
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613259"
 ---
 # <a name="deleting-a-control"></a>Denetimi Silme
 

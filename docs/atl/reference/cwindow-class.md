@@ -1,10 +1,6 @@
 ---
-title: CWindow sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWindow sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CWindow
 - ATLWIN/ATL::CWindow
@@ -154,21 +150,15 @@ f1_keywords:
 - ATLWIN/ATL::CWindow::WinHelp
 - ATLWIN/ATL::CWindow::m_hWnd
 - ATLWIN/ATL::CWindow::rcDefault
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 999e91f1f437077b90b2c8a0ea9f7ac8a4603080
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 59258864eddb251b24f2e191d309707abf3736a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441112"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 

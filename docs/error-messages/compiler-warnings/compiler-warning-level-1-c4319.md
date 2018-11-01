@@ -1,37 +1,27 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4319 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4319
 ms.date: 1/18/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4319
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4319
 ms.assetid: 1fac8048-9bd6-4552-a21c-192c67772bb9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c1b5fe896ae7d8f43708b60ee4dda486ef08f428
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20b268bacd6e7e259e9b4fa1c9e98fa6fd353718
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33284751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599452"
 ---
 # <a name="compiler-warning-level-1-c4319"></a>Derleyici Uyarısı (düzey 1) C4319
 
-> ' ~': sıfır genişletme '*type1*'to'*type2*' büyük boyutu
+> ' ~': sıfır genişletme '*type1*'to'*type2*' daha büyük boyutlu
 
-Sonucu **~** (bit düzeyinde tamamlama) işleci, imzasız ve ardından sıfır genişletilmiş daha büyük bir türe dönüştürüldüğünde.
+Sonucu **~** (bit düzeyinde tamamlayıcı) işleci, işaretsiz ve ardından sıfır genişletilmiş daha büyük bir türe dönüştürüldüğünde.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `~(a - 1)` 32-bit bir imzasız uzun ifade olarak değerlendirilir ve 64 bit sıfır uzantısı tarafından sonra dönüştürülür. Bu, beklenmeyen işlem sonuçlara neden.
+Aşağıdaki örnekte, `~(a - 1)` 32 bitlik bir işaretsiz uzun ifade olarak değerlendirilir ve sonra da sıfır uzantısı tarafından 64 bit dönüştürülür. Bu işlem beklenmeyen sonuçlara neden olabilir.
 
 ```cpp
 // C4319.cpp

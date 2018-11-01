@@ -1,10 +1,6 @@
 ---
-title: yazma | Microsoft Docs
-ms.custom: ''
+title: write
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - write
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - write
-dev_langs:
-- C++
 helpviewer_keywords:
 - write function
 ms.assetid: 1cbf112e-b9ef-4df6-993a-83abd4213acd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ebcbc8bf32f609aa3c41458d5a5461a9d0c3435
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c9093670d075e75b5f98b8cd4a87e0fb56025374
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617418"
 ---
 # <a name="write"></a>write
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_write](write.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_write](write.md) yerine.

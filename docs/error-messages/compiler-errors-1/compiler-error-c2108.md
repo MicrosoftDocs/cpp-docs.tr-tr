@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2108 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2108
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2108
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2108
 ms.assetid: c84f0b47-5e2c-47d2-8edb-427a40e17c36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c6b3f1ce5017a87ba682fcf6463fef5a30307460
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3979fce67f1ecb7f78bd02d4f1c4d2cca287ceca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082319"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628221"
 ---
 # <a name="compiler-error-c2108"></a>Derleyici Hatası C2108
 

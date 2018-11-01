@@ -1,23 +1,15 @@
 ---
-title: '&lt;ostream&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;ostream&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - ostream/std::operator&lt;&lt;
-dev_langs:
-- C++
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 766ab6f9a93cc617c2a3ecb4c305775d670a9640
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ee1a9a6829dbef13b034300d696c43ddba48d9d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108960"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449429"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; işleçleri
 

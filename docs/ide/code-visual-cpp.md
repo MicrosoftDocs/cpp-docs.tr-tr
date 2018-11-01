@@ -1,29 +1,19 @@
 ---
-title: '&lt;kod&gt; (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;kod&gt; (Visual C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - code
 - <code>
-dev_langs:
-- C++
 helpviewer_keywords:
 - <code> C++ XML tag
 - code C++ XML tag
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb68594ad5f8b845d05d57b0599a969ef4cdf0ad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4d14bda894ab18a2c979aadf7dc76026ad476ba6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443767"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548310"
 ---
 # <a name="ltcodegt-visual-c"></a>&lt;kod&gt; (Visual C++)
 

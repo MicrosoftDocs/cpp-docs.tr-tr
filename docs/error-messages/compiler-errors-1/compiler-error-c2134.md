@@ -1,25 +1,15 @@
 ---
-title: Derleyici Hatası C2134 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2134
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2134
-dev_langs:
-- C++
 ms.assetid: d45cb3e8-0be4-4bd6-8be9-5f8d2384363f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e616540fdb83619096ae24533380c559aa4759da
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8bb472cc7864e597404394ac7c80468e1cd59f5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101455"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595942"
 ---
 # <a name="compiler-error-c2134"></a>Derleyici Hatası C2134
 

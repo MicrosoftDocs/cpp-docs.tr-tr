@@ -1,10 +1,6 @@
 ---
-title: 'WM_ iletileri: T - Z | Microsoft Docs'
-ms.custom: ''
+title: 'WM_ İletileri: T - Z'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ON_WM_TCARD
 - ON_WM_WININICHANGE
@@ -15,8 +11,6 @@ f1_keywords:
 - ON_WM_TIMER
 - ON_WM_VKEYTOITEM
 - ON_WM_WINDOWPOSCHANGING
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_WM_VSCROLLCLIPBOARD [MFC]
 - ON_WM_WININICHANGE [MFC]
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - ON_WM_VKEYTOITEM [MFC]
 - ON_WM_VSCROLL
 ms.assetid: c528bb2e-ddb5-4da6-b652-432a387408b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2daf2198d963f24c01e30a16f61d473ab76e3dce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f543489271c6bc6e5cef2bc61de0d6df3f52748
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435798"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433559"
 ---
 # <a name="wm-messages-t---z"></a>WM_ İletileri: T - Z
 

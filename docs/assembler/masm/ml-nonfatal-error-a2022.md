@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2022 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2022
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2022
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2022
 ms.assetid: 3f4b1017-543e-4236-820f-61070ab58920
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f6d78a851126fd31576f14adad09c82f95082900
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4766af0260f384a5eee0dd8f6694b92b13e18826
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684410"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483440"
 ---
 # <a name="ml-nonfatal-error-a2022"></a>ML Önemli Olmayan Hatası A2022
 

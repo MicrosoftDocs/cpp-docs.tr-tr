@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4682 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4682
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4682
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4682
 ms.assetid: 858ea157-1244-4a61-85df-97b3de43d418
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa804b96c2177fc4d263b76feeaa770fea07b5de
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6566c27999f218b7a214e32dde96bd1cf96fbb12
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092641"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653069"
 ---
 # <a name="compiler-warning-level-4-c4682"></a>Derleyici Uyarısı (düzey 4) C4682
 

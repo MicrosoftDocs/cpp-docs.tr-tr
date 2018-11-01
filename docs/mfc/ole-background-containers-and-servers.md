@@ -1,12 +1,6 @@
 ---
-title: 'OLE arka planı: Kapsayıcılar ve sunucular | Microsoft Docs'
-ms.custom: ''
+title: 'OLE Arka Planı: Kapsayıcılar ve Sunucular'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE full-server applications [MFC]
 - server applications [MFC], communication with containers
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - server applications [MFC]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23aa5e4c13e8049a2240462dab1c5b68bfb514f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c696f1e99a73cbce6f1ff749de937297b28d88b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436942"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616931"
 ---
 # <a name="ole-background-containers-and-servers"></a>OLE Arka Planı: Kapsayıcılar ve Sunucular
 

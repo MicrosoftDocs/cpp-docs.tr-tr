@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK2005 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK2005
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2005
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK2005
 ms.assetid: d9587adc-68be-425c-8a30-15dbc86717a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a3dbb1d63e7d7c6f5e036fc0cde967277c91a40
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 8b4f75b90254c702ecb2afb65108278a59df69ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667291"
 ---
 # <a name="linker-tools-error-lnk2005"></a>Bağlayıcı Araçları Hatası LNK2005
 

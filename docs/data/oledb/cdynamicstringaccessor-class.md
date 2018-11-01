@@ -1,34 +1,23 @@
 ---
-title: CDynamicStringAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDynamicStringAccessor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CDynamicStringAccessor
 - CDynamicStringAccessor.GetString
 - CDynamicStringAccessor::GetString
 - CDynamicStringAccessor::SetString
 - CDynamicStringAccessor.SetString
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDynamicStringAccessor class
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 178308fc777d5d1c38bbe0ace586bdb6855a7863
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dff36dfb2b898c6a4df65492e2d9386c748f049b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534621"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
 

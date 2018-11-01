@@ -1,12 +1,6 @@
 ---
-title: ATL ve ücretsiz iş parçacıklı Sıralayıcı | Microsoft Docs
-ms.custom: ''
+title: ATL ve Ücretsiz İş Parçacıklı Sıralayıcı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, free threaded marshaler
 - free threaded marshaler
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - threading [ATL], free threaded marshaler
 - FTM in ATL
 ms.assetid: 2db88a13-2217-4ebc-aa7e-432d5da902eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 60d8d81e772a6da66254d6e777c0cafa4fc8a296
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b9baff9af10cd785554e849854556a9aa3bd7ca4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069280"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621851"
 ---
 # <a name="atl-and-the-free-threaded-marshaler"></a>ATL ve Ücretsiz İş Parçacıklı Sıralayıcı
 

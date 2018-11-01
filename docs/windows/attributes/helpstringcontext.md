@@ -1,28 +1,17 @@
 ---
-title: helpstringcontext (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: helpstringcontext (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.helpstringcontext
-dev_langs:
-- C++
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 00b0e7824de3c6977bd641e7016e3efc5acdcfa1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d292dd53ff3009a571dd5b0a1ba102e75b648e4d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067378"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533607"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 

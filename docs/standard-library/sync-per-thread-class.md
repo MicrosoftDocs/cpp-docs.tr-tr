@@ -1,33 +1,23 @@
 ---
-title: sync_per_thread sınıfı | Microsoft Docs
-ms.custom: ''
+title: sync_per_thread Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::sync_per_thread
 - allocators/stdext::sync_per_thread::allocate
 - allocators/stdext::sync_per_thread::deallocate
 - allocators/stdext::sync_per_thread::equals
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::sync_per_thread
 - stdext::sync_per_thread [C++], allocate
 - stdext::sync_per_thread [C++], deallocate
 - stdext::sync_per_thread [C++], equals
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 956a18a477ca5a713f951da31ca276bc4e379727
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3cb1946ee68642065488cfd13c146abab818ec60
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623268"
 ---
 # <a name="syncperthread-class"></a>sync_per_thread Sınıfı
 

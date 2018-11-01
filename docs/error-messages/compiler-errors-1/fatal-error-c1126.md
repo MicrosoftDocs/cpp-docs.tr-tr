@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1126 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1126
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1126
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1126
 ms.assetid: f22b26a6-8ad7-47cf-a237-196c8ea60aca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f014aafc60a36bfbb4edad50e7e3ceede6e3c8b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f4d152163d3b21ddf99644c34e63f35ca15e6e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457787"
 ---
 # <a name="fatal-error-c1126"></a>Önemli hata C1126
 

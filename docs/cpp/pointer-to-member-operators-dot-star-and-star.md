@@ -1,15 +1,9 @@
 ---
-title: İşaretçi-üye işleçleri:. * ve -&gt;* | Microsoft Docs
-ms.custom: ''
+title: İşaretçi-üye işleçleri:. * ve -&gt;*
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - .*
 - ->*
-dev_langs:
-- C++
 helpviewer_keywords:
 - expressions [C++], pointer
 - pointer-to-member operators [C++]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - expressions [C++], operators
 - ->* operator
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f6cb9959ab57463cc61ecb593290d8316e3ab15
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 60dad0e3134662957ee21396d330af795e80918e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620837"
 ---
 # <a name="pointer-to-member-operators--and--gt"></a>İşaretçi-üye işleçleri:. * ve -&gt;*
 

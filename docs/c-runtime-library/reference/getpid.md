@@ -1,10 +1,6 @@
 ---
-title: _getpid | Microsoft Docs
-ms.custom: ''
+title: _getpid
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getpid
 apilocation:
@@ -22,30 +18,24 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _getpid
-dev_langs:
-- C++
 helpviewer_keywords:
 - getpid function
 - _getpid function
 - process identification numbers
 ms.assetid: d3e13bae-9a0c-4f33-86d3-ec9df9519285
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f93f6c1c70618b300e8bc05b8e3a15104de6fa6c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c110fb7b6d64be281fb3779c7e03f2c4145f4ce8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621084"
 ---
 # <a name="getpid"></a>_getpid
 
-İşlem kimliği alır.
+İşlem kimliğini alır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,11 +45,11 @@ int _getpid( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sistemden elde edilen işlem kimliği döndürür. Döndürülen hata yoktur.
+Sistemden elde edilen işlem Kimliğini döndürür. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getpid** işlevi sistemden işlem kimliği alır. İşlem kimliği, arama işlemi benzersiz olarak tanımlar.
+**_Getpid** işlevi, sistemden işlem Kimliğini alır. İşlem kimliği benzersiz şekilde arama sürecini tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -67,7 +57,7 @@ Sistemden elde edilen işlem kimliği döndürür. Döndürülen hata yoktur.
 |-------------|---------------------|
 |**_getpid**|\<Process.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

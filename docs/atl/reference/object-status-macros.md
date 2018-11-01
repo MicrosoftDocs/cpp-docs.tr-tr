@@ -1,25 +1,15 @@
 ---
-title: Nesne durumu makroları | Microsoft Docs
-ms.custom: ''
+title: Nesne durumu makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcom/ATL::DECLARE_OLEMISC_STATUS
-dev_langs:
-- C++
 ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4b8be9cf1b421a66081fcf650462447d3c0ef7e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9c4df80b2b9828077ec3738bc296f19aadf2df68
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658958"
 ---
 # <a name="object-status-macros"></a>Nesne durumu makroları
 

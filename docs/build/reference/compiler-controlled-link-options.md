@@ -1,14 +1,8 @@
 ---
-title: Derleyici denetimindeki LINK seçenekleri | Microsoft Docs
-ms.custom: ''
+title: Derleyici Denetimindeki LINK Seçenekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - link
-dev_langs:
-- C++
 helpviewer_keywords:
 - LINK tool [C++], compiler-controlled options
 - linker [C++], CL compiler control
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], features that affect linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee952fe5152d98aa33c4ef7e98f8a2eb3ef077be
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 21d0baccaf74fc08bb110b0ae9f8b7dc108abd6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561583"
 ---
 # <a name="compiler-controlled-link-options"></a>Derleyici Denetimindeki LINK Seçenekleri
 

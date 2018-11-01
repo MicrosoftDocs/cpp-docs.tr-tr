@@ -1,14 +1,8 @@
 ---
-title: Uzantı DLL'leri | Microsoft Docs
-ms.custom: ''
+title: Uzantı DLL'leri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - afxdll
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory [C++], DLLs
 - MFC extension DLLs [C++]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 62bb287cca78875bf6c3ad11f426b23db3b6f7e1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2d9b23871cedd93c4145c79d2c22240b9ae2e775
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718080"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429255"
 ---
 # <a name="mfc-extension-dlls"></a>MFC uzantı DLL'leri
 

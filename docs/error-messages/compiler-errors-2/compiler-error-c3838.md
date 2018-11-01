@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3838 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3838
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3838
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3838
 ms.assetid: d6f470c2-131a-4a8c-843a-254acd43da83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dcf01ba87dc2e179e055417b6e2b78a90fd67cf5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c8664c9df837d44ab6e356d54ff9e35c3776778a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064197"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635233"
 ---
 # <a name="compiler-error-c3838"></a>Derleyici Hatası C3838
 

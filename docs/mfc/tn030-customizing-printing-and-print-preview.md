@@ -1,14 +1,8 @@
 ---
-title: 'TN030: Yazdırmayı ve Baskı Önizlemeyi özelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'TN030: Yazdırmayı ve Baskı Önizlemeyi Özelleştirme'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.print
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN030
 - customizing printing and print preview
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - printing views [MFC]
 - print preview [MFC], customizing
 ms.assetid: 32744697-c91c-41b6-9a12-b8ec01e0d438
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8331bbde9cf749d3b86b8970543d7a3b46be90fa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09938c5cec2812998d5e76e15154754ad3ac3e0b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381146"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667915"
 ---
 # <a name="tn030-customizing-printing-and-print-preview"></a>TN030: Yazdırmayı ve Baskı Önizlemeyi Özelleştirme
 

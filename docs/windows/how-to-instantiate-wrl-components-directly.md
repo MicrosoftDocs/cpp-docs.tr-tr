@@ -1,24 +1,14 @@
 ---
-title: 'Nasıl yapılır: doğrudan WRL bileşenlerinin örneğini oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d0c0ea8537922c2458a48adf5a086dfec4b992f5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2da1bd65631d33f3e1edb67efb5e94f270f1f1ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523195"
 ---
 # <a name="how-to-instantiate-wrl-components-directly"></a>Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma
 

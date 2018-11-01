@@ -1,31 +1,21 @@
 ---
-title: PTR::PTR | Microsoft Docs
-ms.custom: ''
+title: ptr::ptr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr::ptr
 - ptr.ptr
 - msclr.com.ptr.ptr
 - msclr::com::ptr::ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - ptr::ptr
 ms.assetid: 4f5883b4-7c0a-46c6-aa9f-4e49eed463eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 32b142a378fa18f8e14ef48cc75da8db415c2c4e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 097cfe7a030c2ae9f1727b6655384de050f0f221
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622462"
 ---
 # <a name="ptrptr"></a>ptr::ptr
 

@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1060 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1060
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1060
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1060
 ms.assetid: feaf305c-c84c-4160-b974-50e283412849
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09d9c0292840daf65effca09775ff85a156b00f8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 876ae7a368d2d1a1ee94a04fc9ecf50d0f4b8d78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053922"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607073"
 ---
 # <a name="fatal-error-c1060"></a>Önemli hata C1060
 

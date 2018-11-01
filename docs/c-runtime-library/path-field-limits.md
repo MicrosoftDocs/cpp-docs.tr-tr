@@ -1,18 +1,12 @@
 ---
-title: Yol alanı sınırları | Microsoft Docs
-ms.custom: ''
+title: Yol Alanı Sınırları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _MAX_EXT
 - _MAX_DIR
 - _MAX_PATH
 - _MAX_FNAME
 - _MAX_DRIVE
-dev_langs:
-- C++
 helpviewer_keywords:
 - path field constants
 - MAX_FNAME constant
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - MAX_DIR constant
 - MAX_EXT constant
 ms.assetid: 2b5d0e43-1347-45b4-8397-24a8a45c444e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0672245a87cdbcf2a4a6dba6d36c675f3faafbc5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 89609de3fc5584a960480bff83566f5e38c8be1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390400"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477538"
 ---
 # <a name="path-field-limits"></a>Yol Alanı Sınırları
 
@@ -47,18 +37,18 @@ ms.locfileid: "32390400"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sabitleri ve tek tek alanların yolu içindeki yol için uzunluk üst sınırını tanımlayın.
+Bu sabitler yolu için ve yolun içinde ayrı alanlar için uzunluk üst sınırını tanımlayın.
 
 |Sabit|Açıklama|
 |--------------|-------------|
-|`_MAX_DIR`|Dizin bileşeni uzunluğu üst sınırı|
-|`_MAX_DRIVE`|Sürücü bileşen uzunluğu üst sınırı|
-|`_MAX_EXT`|Uzantı bileşeni uzunluğu üst sınırı|
-|`_MAX_FNAME`|Dosya adı bileşeni uzunluğu üst sınırı|
+|`_MAX_DIR`|Dizin bileşeni uzunluğunun üst sınırı|
+|`_MAX_DRIVE`|Sürücü bileşen uzunluğunun üst sınırı|
+|`_MAX_EXT`|Uzantı bileşeni uzunluğunun üst sınırı|
+|`_MAX_FNAME`|Dosya adı bileşeni uzunluğunun üst sınırı|
 |`_MAX_PATH`|Tam yolunun maksimum uzunluğu|
 
 > [!NOTE]
-> C çalışma zamanı yol uzunluğu en çok 32768 karakter uzunluğu destekler, ancak bu uzun yolları destekleyecek şekilde özellikle dosya sistemi, işletim sistemi kadar olan. Alanların toplamını aşmamanız gereken `_MAX_PATH` için tam geriye dönük uyumluluk FAT32 dosya sistemleri. Windows NTFS dosya sistemi yolları 32768 karakter kadar uzunlukta destekler, ancak yalnızca Unicode API'leri kullanırken. Yolun karakterden uzun yol adları kullanırken, önek \\ \\? \ ve C çalışma zamanı işlevleri Unicode sürümlerini kullanın.
+> C çalışma zamanı yol uzunluğu 32.768 karakter kadar uzunlukta destekler. ancak bu daha uzun yollar destekleyecek şekilde özellikle dosya sistemi, işletim sistemi kadar olacaktır. Alanların toplamı aşmamalıdır `_MAX_PATH` tam için geriye dönük uyumluluk FAT32 dosya sistemleri. Windows NTFS dosya sistemi yolları 32.768 karakter kadar uzunluğunda, ancak yalnızca Unicode API'leri kullanırken destekler. Yol adı uzun kullanırken karakterler yolu ön eki \\ \\? \ ve C çalışma zamanı işlevleri Unicode sürümlerini kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

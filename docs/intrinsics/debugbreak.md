@@ -1,29 +1,19 @@
 ---
-title: __debugbreak | Microsoft Docs
-ms.custom: ''
+title: __debugbreak
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __debugbreak_cpp
 - __debugbreak
-dev_langs:
-- C++
 helpviewer_keywords:
 - breakpoints, __debugbreak intrinsic
 - __debugbreak intrinsic
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2ba9322f4fe94c1c857b0494dc79b417e5d65d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72fe358f379656a05d840246c4d525bbabc9e9e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591110"
 ---
 # <a name="debugbreak"></a>__debugbreak
 

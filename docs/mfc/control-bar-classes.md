@@ -1,27 +1,17 @@
 ---
-title: Denetim çubuğu sınıfları | Microsoft Docs
-ms.custom: ''
+title: Denetim Çubuğu Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.control
-dev_langs:
-- C++
 helpviewer_keywords:
 - control bars [MFC], classes
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 13fe4cd9cc483bccde6a342ef224dfbafab36eca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3584b24f9cc83c79ce382f02eaee4670490e608a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653888"
 ---
 # <a name="control-bar-classes"></a>Denetim Çubuğu Sınıfları
 

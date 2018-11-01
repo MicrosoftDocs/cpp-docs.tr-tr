@@ -1,30 +1,20 @@
 ---
-title: İleti işleme ve komut hedefleri | Microsoft Docs
-ms.custom: ''
+title: İleti İşleme ve Komut Hedefleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - IOleCommandTarget
-dev_langs:
-- C++
 helpviewer_keywords:
 - command targets [MFC]
 - message handling [MFC], active documents
 - IOleCommandTarget interface [MFC]
 - command routing [MFC], command targets
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61ed4375121dafe198dce84b155858c0e7b0a8cb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f9212e32605a1fed179c931d4f63833e17870b5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442542"
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 

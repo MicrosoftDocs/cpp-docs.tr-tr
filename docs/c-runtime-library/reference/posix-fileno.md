@@ -1,10 +1,6 @@
 ---
-title: fileno | Microsoft Docs
-ms.custom: ''
+title: fileno
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fileno
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fileno
-dev_langs:
-- C++
 helpviewer_keywords:
 - fileno function
 ms.assetid: 8f33e1e0-0dc8-4311-b690-ec6e577a64b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 52dbf692032033999851c2dbade7db6b8b73e783
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9fe0c1c3d43fa0c13746d4415ede2903c84c2c73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574999"
 ---
 # <a name="fileno"></a>fileno
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_fileno](fileno.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_fileno](fileno.md) yerine.

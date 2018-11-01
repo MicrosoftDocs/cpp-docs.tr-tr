@@ -1,10 +1,6 @@
 ---
-title: SİNH, sinhf, sinhl | Microsoft Docs
-ms.custom: ''
+title: SİNH, sinhf, sinhl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - sinhl
 - sinhf
@@ -26,8 +22,6 @@ f1_keywords:
 - sinh
 - sinhf
 - sinhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - sinh function
 - sinhl function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 220bbeb1d78957be153e23b578f217c8098f7e7d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7327809a20569c520aa799690203458d54e30fb5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569812"
 ---
 # <a name="sinh-sinhf-sinhl"></a>SİNH, sinhf, sinhl
 
@@ -72,26 +62,26 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Sinh** işlevler hiperbolik sinüsünü döndürür *x*. Varsayılan olarak sonucu çok büyük ise, **sinh** ayarlar **errno** için **ERANGE** ve döndürür ±**HUGE_VAL**.
+**Sinh** işlevler hiperbolik sinüsünü döndürür *x*. Sonuç çok büyükse, varsayılan olarak **sinh** ayarlar **errno** için **ERANGE** ve döndürür ±**HUGE_VAL**.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, UL|Yok.|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760e + 002|TAŞMA + FİLTRESİNİN|TAŞMA|
+|± QNAN, ONRAKİNİ BUL|Yok.|_DOMAIN|
+|&#124;x&#124; ≥ 7.104760e + 002|OVERFLOW + FİLTRESİNİN|TAŞMA|
 
-Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **sinh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **sinh** her zaman alan ve döndüren **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **sinh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **sinh** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-|-|-|
 |**SİNH**, **sinhf**, **sinhl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

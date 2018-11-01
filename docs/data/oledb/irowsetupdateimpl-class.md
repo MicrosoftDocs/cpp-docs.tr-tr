@@ -1,10 +1,6 @@
 ---
-title: IRowsetUpdateImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetUpdateImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IRowsetUpdateImpl
 - ATL.IRowsetUpdateImpl
@@ -43,8 +39,6 @@ f1_keywords:
 - IRowsetUpdateImpl.m_mapCachedData
 - IRowsetUpdateImpl::m_mapCachedData
 - m_mapCachedData
-dev_langs:
-- C++
 helpviewer_keywords:
 - providers, updatable
 - IRowsetUpdateImpl class
@@ -58,17 +52,12 @@ helpviewer_keywords:
 - IsUpdateAllowed method
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 63a2e950927f58c55554aeb97108eeca2fae29e9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9f51bad56fb5903af24a8f547d6ed513d0e1ed72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600271"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl Sınıfı
 

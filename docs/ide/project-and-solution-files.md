@@ -1,14 +1,8 @@
 ---
-title: Proje ve çözüm dosyaları | Microsoft Docs
-ms.custom: ''
+title: Proje ve Çözüm Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.files.projectandsolution
-dev_langs:
-- C++
 helpviewer_keywords:
 - project files [C++]
 - file types [C++], makefiles
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - browsing database file, .sdf
 - file types [C++], project files
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f52041ef8049e0e7ad4b12677ac1599b2cfd5669
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b84c28db2afb914a73a0cb4d0d778c99cfd6635
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408199"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616643"
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları
 

@@ -1,12 +1,6 @@
 ---
-title: Belge şablonları ve belge-görünüm oluşturma işlemi | Microsoft Docs
-ms.custom: ''
+title: Belge şablonları ve belge-görünüm oluşturma işlemi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - icons, for multiple document templates
 - document templates [MFC], and views
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 182cf58b3ee712ef0d45719591e967c0b81909bd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 544a9bf60ee2066688703faa7e430e2337454e66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426529"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606355"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi
 

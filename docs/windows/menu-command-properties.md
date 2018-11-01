@@ -1,26 +1,15 @@
 ---
-title: Menü komut özellikleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Menü komut özellikleri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - menu items, properties
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c846cecb415365db92e3097bbf04ab06cd4209d0
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: ddb33293d654944aa9390b9955388d6e3b01cddb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468984"
 ---
 # <a name="menu-command-properties-c"></a>Menü komut özellikleri (C++)
 

@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0026 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0026
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0026
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXX0026
 - CAN0026
 ms.assetid: b5bc15f2-f179-4b87-ae88-a57e08e43bfa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b90950807cb394412eabcd1af878c63f48e610cd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4bc3f4977a6b3ab383c61ce410ade33a4b14a360
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643657"
 ---
 # <a name="expression-evaluator-error-cxx0026"></a>İfade Değerlendirici Hatası CXX0026
 

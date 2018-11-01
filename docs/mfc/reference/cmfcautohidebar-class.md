@@ -1,10 +1,6 @@
 ---
-title: CMFCAutoHideBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCAutoHideBar sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCAutoHideBar
 - AFXAUTOHIDEBAR/CMFCAutoHideBar
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode
 - AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState
 - AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCAutoHideBar [MFC], CMFCAutoHideBar
 - CMFCAutoHideBar [MFC], AddAutoHideWindow
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CMFCAutoHideBar [MFC], UpdateVisibleState
 - CMFCAutoHideBar [MFC], m_nShowAHWndDelay
 ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a029bb2e2cd231d4a1c19bfcc5c7981cfd7f39b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8592a5485afedab075a21215e1ffa140a8c66e28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054975"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619459"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonButtonsGroup sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonButtonsGroup sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonButtonsGroup
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::RemoveAll
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetImages
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetParentCategory
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonButtonsGroup [MFC], CMFCRibbonButtonsGroup
 - CMFCRibbonButtonsGroup [MFC], AddButton
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CMFCRibbonButtonsGroup [MFC], SetImages
 - CMFCRibbonButtonsGroup [MFC], SetParentCategory
 ms.assetid: b993d93e-fc1a-472f-a87f-1d7b7b499845
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e19b01aa2fa268064f9e6a5c51c56d26be22d1a6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0babda16ee29671a584599699b459062c22406e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425216"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592745"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup sınıfı
 

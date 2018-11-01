@@ -1,27 +1,17 @@
 ---
-title: İkili işleçler | Microsoft Docs
-ms.custom: ''
+title: İkili İşleçler
 ms.date: 06/14/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - member-selection operators [C++]
 - operators [C++], binary
 - binary operators [C++]
 ms.assetid: c0e7fbff-bc87-4708-8333-504ac09ee83e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6c5ad5997657ce9f8a61383a2cd7e685f0a28751
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 700d8fd784862c3e9f81fcde839063ff0a4696bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036559"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602416"
 ---
 # <a name="binary-operators"></a>İkili İşleçler
 

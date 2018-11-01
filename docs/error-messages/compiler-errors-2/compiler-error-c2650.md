@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2650 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2650
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2650
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2650
 ms.assetid: 49a8ac6e-aa6d-4616-917c-a3cfcdbad5a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37690727b76ec89ae9dffda2699e20e0a43f6938
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7cbc12bff4e00613032a9d28b5be7533dce9612
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608007"
 ---
 # <a name="compiler-error-c2650"></a>Derleyici Hatası C2650
 

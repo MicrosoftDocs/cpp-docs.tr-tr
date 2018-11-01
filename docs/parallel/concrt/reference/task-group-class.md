@@ -1,28 +1,18 @@
 ---
-title: task_group sınıfı | Microsoft Docs
-ms.custom: ''
+title: task_group Sınıfı
 ms.date: 07/20/2018
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - task_group
 - PPL/concurrency::task_group
 - PPL/concurrency::task_group::task_group
-dev_langs:
-- C++
 helpviewer_keywords:
 - task_group class
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bd5e2cceb074ac7126d0daa6dff8272062bee48
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ba7251afca80c561bd8861968c35e3242c1507a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434628"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588857"
 ---
 # <a name="taskgroup-class"></a>task_group Sınıfı
 

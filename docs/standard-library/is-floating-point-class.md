@@ -1,28 +1,18 @@
 ---
-title: is_floating_point sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_floating_point Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_floating_point
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_floating_point class
 - is_floating_point
 ms.assetid: 070679c1-115b-4ee4-8ab7-f52e5d9e157f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f6410cf6a6f3496daad7aebeb352b3a37497b821
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: d9f74bf1f40488220cf9f980966fd4fb77d37d68
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613089"
 ---
 # <a name="isfloatingpoint-class"></a>is_floating_point Sınıfı
 

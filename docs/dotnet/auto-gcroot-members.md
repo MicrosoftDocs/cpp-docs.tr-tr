@@ -1,24 +1,14 @@
 ---
-title: auto_gcroot üyeleri | Microsoft Docs
-ms.custom: ''
+title: auto_gcroot Üyeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: fb51ff14-a497-4f7a-8d7e-c3cfcaf9f8df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 37f9188712c4ec50dbcbc834d05c6675d253d269
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 93571184eed8fccf047598ba957738692cb0af18
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434615"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485416"
 ---
 # <a name="autogcroot-members"></a>auto_gcroot Üyeleri
 

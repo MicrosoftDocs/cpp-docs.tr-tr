@@ -1,23 +1,13 @@
 ---
-title: Komut satırı hataları D8000-D9999 | Microsoft Docs
-ms.custom: ''
+title: Komut Satırı Hataları D8000 - D9999
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 ms.assetid: d02ec7df-26a5-4198-ac92-87b29ec9d5c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1bed2202c8dc7f6372a102eb3926ac49d568793a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f808db4ab42098b6b9cdba466f5e07128581b0a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563026"
 ---
 # <a name="command-line-errors-d8000-through-d9999"></a>Komut Satırı Hataları D8000 - D9999
 

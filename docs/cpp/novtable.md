@@ -1,28 +1,18 @@
 ---
-title: novtable | Microsoft Docs
-ms.custom: ''
+title: novtable
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - novtable_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - novtable __declspec keyword
 - __declspec keyword [C++], novtable
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2de25452d708545481bdc4a65cab998930b2778e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9dcca6ec07a19d53da238020805299b652cbf919
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630249"
 ---
 # <a name="novtable"></a>novtable
 

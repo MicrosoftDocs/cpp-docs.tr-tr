@@ -1,12 +1,7 @@
 ---
-title: Anahtar sözcükler (C++) | Microsoft Docs
+title: Anahtar sözcükler (C++)
 ms.custom: index-page
 ms.date: 10/10/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, keywords
 - keywords [C++]
@@ -14,16 +9,12 @@ helpviewer_keywords:
 - Microsoft-specific keywords
 - __identifer keyword [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86912ad8dfa3e048b74c67b6936eb09f74db308a
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 645a0edb053320499c3ecca1c9d2ffd639b15931
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659322"
 ---
 # <a name="keywords-c"></a>Anahtar sözcükler (C++)
 

@@ -1,28 +1,18 @@
 ---
-title: while Statement (C) | Microsoft Docs
-ms.custom: ''
+title: while Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - while
-dev_langs:
-- C++
 helpviewer_keywords:
 - while keyword [C]
 - while keyword [C], syntax
 ms.assetid: d0c970b8-12a9-4827-afb2-a051111834b7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6993f209f5e7c5ab6f56ae886f2d57ba90a19936
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: d774971910fe69ed707bc545e4c0e022282a1d17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860660"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662351"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C)
 

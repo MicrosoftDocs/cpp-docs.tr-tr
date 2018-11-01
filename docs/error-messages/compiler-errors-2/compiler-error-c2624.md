@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2624 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2624
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2624
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2624
 ms.assetid: 32f2ec15-a7cd-4049-a64b-131746d3152b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4db17508d9335439e861cf5489bddfab366dec1a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 407629ad2eecd0d3ca6081fefa59ddd60702f913
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456725"
 ---
 # <a name="compiler-error-c2624"></a>Derleyici Hatası C2624
 

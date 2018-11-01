@@ -1,28 +1,18 @@
 ---
-title: Tek bir belgeye birden çok görünüm ekleme | Microsoft Docs
-ms.custom: ''
+title: Tek Bir Belgeye Birden Çok Görünüm Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - multiple views [MFC], SDI applications
 - documents [MFC], multiple views
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd2869bfe1f3feb17eeb8917ec5ba643ac7961a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d76f5796bb8588cae26b17c4f6cf7aae90b354ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411970"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579380"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 

@@ -1,12 +1,6 @@
 ---
-title: İletişim kutusunun arka plan rengini ayarlama | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusunun Arka Plan Rengini Ayarlama
 ms.date: 07/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSS, background attributes in styles [MFC]
 - HTML element formatting, background attributes
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - background colors, dialog boxes
 - MFC dialog boxes [MFC], colors
 ms.assetid: 05ee28a4-f3ae-4203-84ac-022f266ff2ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d85f98fd72567d2481e3a9f9e643b2d736eea92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0e5b450e5a09d6551ea49c13ce12a2c02b2323f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397708"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654369"
 ---
 # <a name="setting-the-dialog-boxs-background-color"></a>İletişim Kutusunun Arka Plan Rengini Ayarlama
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4687 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4687
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4687
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4687
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d813ce6d666431cfc3f74d1409012a4a0aec897
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 50551faf817f83d8a4af848a75af67ebe7004fe7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118719"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635490"
 ---
 # <a name="compiler-warning-c4687"></a>Derleyici Uyarısı C4687
 

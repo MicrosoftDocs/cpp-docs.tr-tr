@@ -1,27 +1,17 @@
 ---
-title: HEAPSIZE | Microsoft Docs
-ms.custom: ''
+title: HEAPSIZE
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - HEAPSIZE
-dev_langs:
-- C++
 helpviewer_keywords:
 - HEAPSIZE .def file statement
 ms.assetid: 3c4d3117-491d-41e6-a693-648b3a35eeb9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5939828dbcd735e80535192687b91c22b06fd50
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7761390f4175121ca12eed06c503d23c0eab91b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717671"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617158"
 ---
 # <a name="heapsize"></a>HEAPSIZE
 

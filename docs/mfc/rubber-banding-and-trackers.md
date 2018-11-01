@@ -1,12 +1,6 @@
 ---
-title: Rubber-Banding ve izleyiciler | Microsoft Docs
-ms.custom: ''
+title: Rubber-Banding ve İzleyiciler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - trackers [MFC]
 - CRectTracker class [MFC], implementing trackers
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - rubber banding [MFC]
 - WM_LBUTTONDOWN [MFC]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed6e649309acf86e24c52bf8b50a859d0ac066ad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f15256f99a744273b3487925bf273ad563c32aff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428206"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450810"
 ---
 # <a name="rubber-banding-and-trackers"></a>Rubber-Banding ve İzleyiciler
 

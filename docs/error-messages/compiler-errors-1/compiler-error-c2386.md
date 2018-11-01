@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2386 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2386
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2386
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2386
 ms.assetid: aaaa1284-34a0-4da2-8547-9fcbb559dae0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c799ec18eb062bbefcc91a8b1ef8364d9b2cdc03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a75ccd9824106f2b954cd090a0e00ab11786d243
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043683"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667668"
 ---
 # <a name="compiler-error-c2386"></a>Derleyici Hatası C2386
 

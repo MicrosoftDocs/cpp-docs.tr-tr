@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2124 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2124
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2124
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2124
 ms.assetid: 93392aaa-5582-4d68-8cc5-bd9c62a0ae7e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7810565a8f7bfdac49f2c53815b9063e2e034df7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 82bc4447aaf27190c013edf48a20a56c57a646c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062330"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611672"
 ---
 # <a name="compiler-error-c2124"></a>Derleyici Hatası C2124
 

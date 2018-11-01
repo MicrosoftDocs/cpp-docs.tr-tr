@@ -1,27 +1,17 @@
 ---
-title: DRAWITEMSTRUCT yapısı | Microsoft Docs
-ms.custom: ''
+title: DRAWITEMSTRUCT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - DRAWITEMSTRUCT
-dev_langs:
-- C++
 helpviewer_keywords:
 - DRAWITEMSTRUCT structure [MFC]
 ms.assetid: ba9ef1d4-aebb-45e9-b956-4b81a02e50f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 632f1b8b975c73c4f8a708ddb9efd64ce0cae015
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9c5bfc12bd371761682102dad6d7bcb75ef44151
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427257"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624438"
 ---
 # <a name="drawitemstruct-structure"></a>DRAWITEMSTRUCT Yapısı
 

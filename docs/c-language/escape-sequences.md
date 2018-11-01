@@ -1,12 +1,6 @@
 ---
-title: Kaçış dizileri | Microsoft Docs
-ms.custom: ''
+title: Çıkış Sıraları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - "\r escape sequence"
 - double backslash
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - "	 escape sequence"
 - backspace escape sequence
 ms.assetid: 5aef377f-a76c-4d5c-aa04-8308758ad6a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 58691bbd4a078056599363028433788d529b266e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 810d091b923bd976a4a8bbe6814e8ddc0b243bcd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431206"
 ---
 # <a name="escape-sequences"></a>Çıkış Sıraları
 

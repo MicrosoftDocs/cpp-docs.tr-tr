@@ -1,27 +1,17 @@
 ---
-title: codecvt_base sınıfı | Microsoft Docs
-ms.custom: ''
+title: codecvt_base Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocale/std::codecvt_base
-dev_langs:
-- C++
 helpviewer_keywords:
 - codecvt_base class
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a471cdd63ed46e15c9ec41968ed341eefaf36963
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6f957c39f9c78fd182b7ba2a14bdab7f27db56ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965398"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520633"
 ---
 # <a name="codecvtbase-class"></a>codecvt_base Sınıfı
 

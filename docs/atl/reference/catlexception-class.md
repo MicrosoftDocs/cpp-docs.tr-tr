@@ -1,30 +1,20 @@
 ---
-title: CAtlException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlException
 - ATLEXCEPT/ATL::CAtlException
 - ATLEXCEPT/ATL::CAtlException::CAtlException
 - ATLEXCEPT/ATL::CAtlException::m_hr
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlException class
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56038ffe4c6062422ea34a439e73b0d90a37cfb8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d8ad46fa219ec29c7973677e2184e7b6d65c74b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097737"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468880"
 ---
 # <a name="catlexception-class"></a>CAtlException sınıfı
 

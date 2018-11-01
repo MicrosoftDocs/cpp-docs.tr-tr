@@ -1,25 +1,15 @@
 ---
-title: Kayan nokta değerlerine tam sayılar atama | Microsoft Docs
-ms.custom: ''
+title: Kayan Nokta Değerlerine Tam Sayılar Atama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - integers, casting to floating-point values
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a81b72a7dfedbc1d6033d53bde63be22943abb08
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d19544e3b4f0bf3978d296c996c204fc9d60fa0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667356"
 ---
 # <a name="casting-integers-to-floating-point-values"></a>Kayan Nokta Değerlerine Tam Sayılar Atama
 

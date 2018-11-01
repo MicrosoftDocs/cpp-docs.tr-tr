@@ -1,23 +1,13 @@
 ---
-title: A.13 flush yönergesini listeyle kullanma | Microsoft Docs
-ms.custom: ''
+title: A.13   flush Yönergesini Listeyle Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 6c9d0736-07c2-47b1-a216-5293f03b6397
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 757173c98caf156567e1924434f5ad73b3e48885
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8decdf0f7495c381037f2aa4c51e707ddc738d94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664080"
 ---
 # <a name="a13---using-the-flush-directive-with-a-list"></a>A.13   flush Yönergesini Listeyle Kullanma
 

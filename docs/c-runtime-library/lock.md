@@ -1,10 +1,6 @@
 ---
-title: _Lock | Microsoft Docs
-ms.custom: ''
+title: _lock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _lock
 apilocation:
@@ -20,22 +16,16 @@ apitype: DLLExport
 f1_keywords:
 - lock
 - _lock
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock function
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38cd49dd483b556c8bda95e7a77109a9d4682e7c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: c2e57af90bb9b7c6a4ba0e9efdd1dc1dc0bdb985
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48233625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606901"
 ---
 # <a name="lock"></a>_lock
 

@@ -1,28 +1,17 @@
 ---
-title: Kimliği (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Kimliği (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.id
-dev_langs:
-- C++
 helpviewer_keywords:
 - id attribute
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7ae22069acfa13bcaa71630f919b4ab3fede86a4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b7bcbd9229529ec00a3b778cafd5678d47af950c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057692"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630056"
 ---
 # <a name="id"></a>kimlik
 

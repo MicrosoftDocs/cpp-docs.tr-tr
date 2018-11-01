@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2206 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2206
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2206
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2206
 ms.assetid: 711846d0-5a09-4353-8857-60588c25526a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10edbe68ca7f0093cdeb6a9ca5a02cde07f556e6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1ef796fcb55f098932beb66eb7cd2083d65e5144
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459215"
 ---
 # <a name="ml-nonfatal-error-a2206"></a>ML Önemli Olmayan Hatası A2206
 

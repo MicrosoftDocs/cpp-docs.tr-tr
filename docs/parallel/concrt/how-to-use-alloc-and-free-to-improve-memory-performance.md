@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: ayırma kullanın ve boş bellek performansını artırmak | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Alloc and Free, using [Concurrency Runtime]
 - Using Alloc and Free [Concurrency Runtime]
 ms.assetid: e1fab9e8-a97d-4104-bead-e95958db79f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ce828d15d68ade5ba24c3a010e76e3d702f9a83
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d91734859cd7d3499979566f427c10a0f026941b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405885"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467827"
 ---
 # <a name="how-to-use-alloc-and-free-to-improve-memory-performance"></a>Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma
 

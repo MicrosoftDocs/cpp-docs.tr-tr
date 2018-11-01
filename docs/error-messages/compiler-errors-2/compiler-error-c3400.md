@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3400 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3400
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3400
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3400
 ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35231ffda3a072b0720acc4c866dd2e3684c88fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 70d23e22780b6efc8220675655d8ed095ca50bab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557384"
 ---
 # <a name="compiler-error-c3400"></a>Derleyici Hatası C3400
 

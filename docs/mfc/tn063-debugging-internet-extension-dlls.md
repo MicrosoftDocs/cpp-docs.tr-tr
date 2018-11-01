@@ -1,29 +1,19 @@
 ---
-title: "TN063: Internet MFC uzantısı DLL'lerinde hata ayıklama | Microsoft Docs"
-ms.custom: ''
+title: "TN063: Internet MFC uzantısı DLL'lerinde hata ayıklama"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vs.debug.dlls
-dev_langs:
-- C++
 helpviewer_keywords:
 - IIS [MFC], debugging DLLs
 - TN063 [MFC]
 - DLLs [MFC], Internet extension
 ms.assetid: 7012d592-9d2f-491a-b417-48e5c2a7680f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb432bf77e9095473d25c3ffc686660567c034bf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d1c079a045eb5f2375f206f7cfc5da4697db9b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618891"
 ---
 # <a name="tn063-debugging-internet-mfc-extension-dlls"></a>TN063: Internet MFC uzantısı DLL'lerinde hata ayıklama
 

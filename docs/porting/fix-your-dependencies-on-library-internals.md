@@ -1,26 +1,16 @@
 ---
-title: Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme | Microsoft Docs
-ms.custom: ''
+title: Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme
 ms.date: 05/24/2017
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - library internals in an upgraded Visual C++ project
 - _Hash_seq in an upgraded Visual C++ project
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dc9ef70eb2cf93ee92e32514681ae1a80810eb2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7f1db0019894474b0770d293b293a663b1ee5a0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069809"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662702"
 ---
 # <a name="fix-your-dependencies-on-library-internals"></a>Kitaplık içeriklerindeki bağımlılıklarınızı düzeltme
 

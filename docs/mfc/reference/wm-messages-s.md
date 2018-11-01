@@ -1,10 +1,6 @@
 ---
-title: 'WM_ iletileri: S | Microsoft Docs'
-ms.custom: ''
+title: 'WM_ İletileri: S'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ON_WM_SYSDEADCHAR
 - ON_WM_SYSKEYDOWN
@@ -22,8 +18,6 @@ f1_keywords:
 - ON_WM_SYSKEYUP
 - ON_WM_SIZECLIPBOARD
 - ON_WM_SYSCOLORCHANGE
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_WM_SIZE [MFC]
 - ON_WM_SETFOCUS [MFC]
@@ -43,16 +37,12 @@ helpviewer_keywords:
 - ON_WM_SYSKEYDOWN [MFC]
 - WM_ messages
 ms.assetid: 4b9aec79-a98f-4aa0-a3d9-110941b6dcbc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e554fb119d8476761f612bb021d6ca17d1baeb1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fcbb71713a3754f22325a36bce47e039d5d142b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553289"
 ---
 # <a name="wm-messages-s"></a>WM_ İletileri: S
 

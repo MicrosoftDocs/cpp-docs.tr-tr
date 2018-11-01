@@ -1,28 +1,18 @@
 ---
-title: '&lt;karmaşık&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;karmaşık&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <complex>
 - std::<complex>
-dev_langs:
-- C++
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84f94e4e7a3486f036af47f0444d85d0f2fe4446
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: afcdb1246d9c02f83dbc8708326d10e802ad2779
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525873"
 ---
 # <a name="ltcomplexgt"></a>&lt;karmaşık&gt;
 

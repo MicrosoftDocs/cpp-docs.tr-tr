@@ -1,10 +1,6 @@
 ---
-title: _mbccpy, _mbccpy_l | Microsoft Docs
-ms.custom: ''
+title: _mbccpy, _mbccpy_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbccpy
 - _mbccpy_l
@@ -28,8 +24,6 @@ f1_keywords:
 - mbccpy
 - _tccpy
 - _ftccpy
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tccpy function
 - _tccpy_l function
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ebc03a459a190144217ca15a9ab13bef395d5128
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 852097ebea41ef99b1a53f7bc344eb0c08911a4d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533750"
 ---
 # <a name="mbccpy-mbccpyl"></a>_mbccpy, _mbccpy_l
 

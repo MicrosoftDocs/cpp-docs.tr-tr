@@ -1,29 +1,19 @@
 ---
-title: __ll_rshift | Microsoft Docs
-ms.custom: ''
+title: __ll_rshift
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __ll_rshift_cpp
 - __ll_rshift
-dev_langs:
-- C++
 helpviewer_keywords:
 - __ll_rshift intrinsic
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 71e9d9ef844dc2f46b28129611b76214658327ee
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9c486921e41732ef7736ca5b62b44a86010dcf83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621878"
 ---
 # <a name="llrshift"></a>__ll_rshift
 

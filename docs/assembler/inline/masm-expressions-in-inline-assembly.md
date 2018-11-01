@@ -1,28 +1,18 @@
 ---
-title: Satır içi derlemedeki MASM ifadeleri | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Derlemedeki MASM İfadeleri
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - expressions [C++], MASM
 - expressions [C++], inline assembly
 - inline assembly, MASM expressions
 - MASM (Microsoft Macro Assembler), expressions
 ms.assetid: c80e89e6-1084-4654-bb14-68c5f6ef2840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 66af5d3fc996e6b0f36e5a863279d266e29beec9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: fdbb45b4b7ba1741ab9ab022b30fcd7edfa49e1d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685145"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631380"
 ---
 # <a name="masm-expressions-in-inline-assembly"></a>Satır İçi Derlemedeki MASM İfadeleri
 

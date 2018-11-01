@@ -1,23 +1,13 @@
 ---
-title: Tanımlayıcıların özeti | Microsoft Docs
-ms.custom: ''
+title: Tanımlayıcıların Özeti
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 2fe74b88-79e4-4e09-9d87-c258905ec31a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a8eb22bd9004c88f2858badbebd9a0becc6741b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: dccf5ce6919924d873f6951b0fd7fbddceb044c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620252"
 ---
 # <a name="summary-of-identifiers"></a>Tanımlayıcıların Özeti
 

@@ -1,29 +1,18 @@
 ---
-title: (C++) iletişim kutusu denetimleri için olay işleyicileri ekleme | Microsoft Docs
-ms.custom: ''
+title: Olay işleyicileri ekleme iletişim kutusu denetimleri için (C++)
 ms.date: 06/28/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Dialog Editor [C++], adding event handlers to controls
 - controls [C++], event handlers
 - dialog box controls [C++], events
 - event handlers, for dialog box controls
 ms.assetid: f9c70f24-ea6f-44df-82eb-78a2deaee769
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ebb644c64bbc5eba65860ffb1c1115bfc7662951
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e6539b7e0f8ab4d0b1b60ecfbd80685473534316
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075276"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487184"
 ---
 # <a name="adding-event-handlers-for-dialog-box-controls-c"></a>Olay işleyicileri ekleme iletişim kutusu denetimleri için (C++)
 

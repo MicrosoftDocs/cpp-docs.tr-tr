@@ -1,30 +1,20 @@
 ---
-title: Iworkerthreadclient | Microsoft Docs
-ms.custom: ''
+title: Iworkerthreadclient sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IWorkerThreadClient
 - ATLUTIL/ATL::IWorkerThreadClient
 - ATLUTIL/ATL::CloseHandle
 - ATLUTIL/ATL::Execute
-dev_langs:
-- C++
 helpviewer_keywords:
 - IWorkerThreadClient interface
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c0261964f2e9c33f8a594a83e1b19c1db7be614
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 22ea136dd91a514ff10e13cd02b796565b7b0307
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523646"
 ---
 # <a name="iworkerthreadclient-interface"></a>Iworkerthreadclient sınıfı
 

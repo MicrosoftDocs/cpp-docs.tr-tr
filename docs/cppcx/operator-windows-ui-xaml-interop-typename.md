@@ -1,20 +1,13 @@
 ---
-title: işleç Windows::UI::Xaml::Interop::TypeName | Microsoft Docs
-ms.custom: ''
+title: işleç Windows::UI::Xaml::Interop::TypeName
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 262fb9d08da72201db041eff1a510a598851e3e2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c77655ed7692c4cdccc311bc27c492126d62e54e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105971"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659220"
 ---
 # <a name="operator-windowsuixamlinteroptypename"></a>işleç Windows::UI::Xaml::Interop::TypeName
 

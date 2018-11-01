@@ -1,9 +1,6 @@
 ---
-title: ComPtr sınıfı | Microsoft Docs
-ms.custom: ''
+title: ComPtr Sınıfı
 ms.date: 10/01/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::ComPtr
@@ -29,8 +26,6 @@ f1_keywords:
 - client/Microsoft::WRL::ComPtr::Reset
 - client/Microsoft::WRL::ComPtr::Swap
 - client/Microsoft::WRL::ComPtr::~ComPtr
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::ComPtr class
 - Microsoft::WRL::ComPtr::As method
@@ -56,17 +51,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::Swap method
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9535913bbbeb6ec7e8876acf8254030a7b0611dd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 512d12260c90652328f4e1030a724658f2867ef1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626726"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 

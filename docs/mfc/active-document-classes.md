@@ -1,27 +1,17 @@
 ---
-title: Etkin belge sınıfları | Microsoft Docs
-ms.custom: ''
+title: Etkin Belge Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.document
-dev_langs:
-- C++
 helpviewer_keywords:
 - Active document classes [MFC]
 ms.assetid: cc20af37-b658-406d-8148-7670737f4c03
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0cd4cce7f2e31e084224848f348dd4e5f408de67
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7dc8068dc36a5f2d8014b5d9cc2cdbae54e75097
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568005"
 ---
 # <a name="active-document-classes"></a>Etkin Belge Sınıfları
 

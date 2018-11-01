@@ -1,30 +1,20 @@
 ---
-title: MBCS programlama ipuçları | Microsoft Docs
-ms.custom: ''
+title: MBCS Programlama İpuçları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - _mbcs
-dev_langs:
-- C++
 helpviewer_keywords:
 - programming [C++], MBCS
 - character sets [C++], multibyte
 - MBCS [C++], programming
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a88fffbfc42dd6e7386ec43e55f2013f2548b6f5
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 70669f67b78ee4ea4f8073b78d2b9589e56a6356
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552626"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS Programlama İpuçları
 

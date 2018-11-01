@@ -1,27 +1,17 @@
 ---
-title: __if_not_exists deyimi | Microsoft Docs
-ms.custom: ''
+title: __if_not_exists Deyimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __if_not_exists_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __if_not_exists keyword [C++]
 ms.assetid: a2f322d4-e96f-4a32-954e-4323d20c6e32
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 66999d99e7809a3588dc3c92cae822bb4295ee07
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7d172df584200ccc508b281147abf3fa7774952
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073362"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629118"
 ---
 # <a name="ifnotexists-statement"></a>__if_not_exists Deyimi
 
@@ -30,7 +20,7 @@ ms.locfileid: "46073362"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__if_not_exists ( identifier ) { 
+__if_not_exists ( identifier ) { 
 statements
 };
 ```

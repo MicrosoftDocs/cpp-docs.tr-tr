@@ -1,30 +1,20 @@
 ---
-title: Verifyınterfacehelper yapısı | Microsoft Docs
-ms.custom: ''
+title: VerifyInterfaceHelper Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::VerifyInterfaceHelper
 - implements/Microsoft::WRL::Details::VerifyInterfaceHelper::Verify
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::VerifyInterfaceHelper structure
 - Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b70155566695ade6b6778ade3b4758faebb3ea67
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: cdd0272953b2399cd71efe207eb1c56e5de154e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448418"
 ---
 # <a name="verifyinterfacehelper-structure"></a>VerifyInterfaceHelper Yapısı
 

@@ -1,10 +1,6 @@
 ---
-title: completion_future sınıfı | Microsoft Docs
-ms.custom: ''
+title: completion_future Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - completion_future
 - AMPRT/completion_future
@@ -16,19 +12,13 @@ f1_keywords:
 - AMPRT/Concurrency::completion_future::wait
 - AMPRT/Concurrency::completion_future::wait_for
 - AMPRT/Concurrency::completion_future::wait_until
-dev_langs:
-- C++
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fee851ed1df79f2868414a0a7e960eeb76bc127
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: d121477cf63236ee40df826a63dd7c7c9880d142
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535300"
 ---
 # <a name="completionfuture-class"></a>completion_future Sınıfı
 

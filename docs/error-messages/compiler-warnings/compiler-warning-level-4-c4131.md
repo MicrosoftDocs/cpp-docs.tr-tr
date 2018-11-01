@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4131 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4131
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4131
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4131
 ms.assetid: 7903b3e1-454f-4be2-aa9b-230992f96a2d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43de917b2a6aff38602a6118e599c0d9df262a70
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 24872bb0b42de77dde358dc29f99826b41638628
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516069"
 ---
 # <a name="compiler-warning-level-4-c4131"></a>Derleyici Uyarısı (düzey 4) C4131
 

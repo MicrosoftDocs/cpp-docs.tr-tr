@@ -1,30 +1,20 @@
 ---
-title: -await (eş yordam desteğini etkinleştir) | Microsoft Docs
-ms.custom: ''
+title: / await (eş yordam desteğini etkinleştir)
 ms.date: 08/15/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /await
 - -await
-dev_langs:
-- C++
 helpviewer_keywords:
 - /await enable coroutine support [C++]
 - -await enable coroutine support [C++]
 - await enable coroutine support [C++]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09cab9f0c7d94c3c51eb63008ec6b7cfb1292f89
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: e3f7359b60e1ba22c2646cecfd35b827919ae033
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860582"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590445"
 ---
 # <a name="await-enable-coroutine-support"></a>/ await (eş yordam desteğini etkinleştir)
 
@@ -50,7 +40,7 @@ Kullanım **/ await** eş yordamlar için derleyici desteği etkinleştirme derl
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

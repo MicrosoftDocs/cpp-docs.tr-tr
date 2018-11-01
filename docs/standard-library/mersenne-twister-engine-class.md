@@ -1,27 +1,17 @@
 ---
-title: mersenne_twister_engine sınıfı | Microsoft Docs
-ms.custom: ''
+title: mersenne_twister_engine Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::mersenne_twister_engine
-dev_langs:
-- C++
 helpviewer_keywords:
 - mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f868a6f2ec63e38573d49a1dc4b3b7a122f4d8f2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c0f30eacb308da61064a0383a6433b7127032a3e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100228"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607460"
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine Sınıfı
 

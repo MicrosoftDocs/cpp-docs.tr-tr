@@ -1,29 +1,19 @@
 ---
-title: Stream g/ç | Microsoft Docs
-ms.custom: ''
+title: Akış G/Ç
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.io
-dev_langs:
-- C++
 helpviewer_keywords:
 - I/O routines, stream I/O
 - I/O [CRT], stream
 - stream I/O
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ab13141c573ad302528a09b74cb3a5e2aaa0382
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 097019b2299ad4d2563b5e0df1b943d190b16197
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442646"
 ---
 # <a name="stream-io"></a>Akış G/Ç
 

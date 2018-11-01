@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4068 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4068
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4068
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4068
 ms.assetid: 96a7397a-4eab-44ab-b3bb-36747503f7e5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 290fb0b66523771b263c1f776551362fd8da5224
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e0cb7229733e15afd87548a1b18b3f58a64c239
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565080"
 ---
 # <a name="compiler-warning-level-1-c4068"></a>Derleyici Uyarısı (düzey 1) C4068
 

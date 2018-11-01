@@ -1,14 +1,8 @@
 ---
-title: -vd (oluşturma yer değiştirmelerini devre dışı bırak) | Microsoft Docs
-ms.custom: ''
+title: /vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /vd
-dev_langs:
-- C++
 helpviewer_keywords:
 - -vd0 compiler option [C++]
 - vd1 compiler option [C++]
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - vd0 compiler option [C++]
 - Disable Construction Displacements compiler option
 ms.assetid: 93258964-14d7-4b1c-9cbc-d6f4d74eab69
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e36607d362ded227199d0e12770715c52384a26
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 229306fe93dedcf5c87d53e2227c8f17baef07c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652965"
 ---
 # <a name="vd-disable-construction-displacements"></a>/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)
 
@@ -78,7 +68,7 @@ Bu seçenekler, tüm kaynak dosyalarını etkiler. Kullanım [vtordisp](../../pr
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

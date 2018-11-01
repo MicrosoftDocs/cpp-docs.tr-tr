@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3465 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3465
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3465
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3465
 ms.assetid: aeb815e5-b3fc-4525-afe2-d738e9321df1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6aa388d95904aecc8e1ba558b374249bb280e02
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a6cbbc1e75d345d0ebdcfc9e1db32f660c13b01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653420"
 ---
 # <a name="compiler-error-c3465"></a>Derleyici Hatası C3465
 

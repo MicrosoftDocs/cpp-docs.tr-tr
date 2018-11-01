@@ -1,27 +1,17 @@
 ---
-title: CREATESTRUCT yapısı | Microsoft Docs
-ms.custom: ''
+title: CREATESTRUCT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CREATESTRUCT
-dev_langs:
-- C++
 helpviewer_keywords:
 - CREATESTRUCT structure [MFC]
 ms.assetid: 028c7b5e-4fdc-48da-a550-d3e4f9e6cc85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db41deda6040121e3d74958f4616a1f3364f6f23
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 13f715dc914ccc052945790aeaff9c47bd34ed46
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064818"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619654"
 ---
 # <a name="createstruct-structure"></a>CREATESTRUCT Yapısı
 

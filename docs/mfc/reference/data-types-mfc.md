@@ -1,15 +1,9 @@
 ---
-title: Veri türleri (MFC) | Microsoft Docs
-ms.custom: ''
+title: Veri Türleri (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - LPCRECT
 - POSITION
-dev_langs:
-- C++
 helpviewer_keywords:
 - LPCRECT data type [MFC]
 - WPARAM data type [MFC]
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - LPARAM data type [MFC]
 - LPCSTR [MFC]
 ms.assetid: 8954848b-2c01-4a4f-abf5-ee55f6a05eeb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 560db57282f42b28f274b0498073e512e0ec33d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 56da8a25261a54e952a529e93063fbe853cbf16d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434524"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608097"
 ---
 # <a name="data-types-mfc"></a>Veri Türleri (MFC)
 

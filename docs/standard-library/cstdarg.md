@@ -1,31 +1,21 @@
 ---
-title: '&lt;cstdarg&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cstdarg&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cstdarg>
-dev_langs:
-- C++
 helpviewer_keywords:
 - cstdarg header
 ms.assetid: 639b4ef7-8408-4640-9343-41631f0ab663
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4601f44aaea5fce0b7a62cfee734b715602454f5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e7ed9bb43ae198426a66bcdc238beba677c520dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843957"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582162"
 ---
 # <a name="ltcstdarggt"></a>&lt;cstdarg&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<stdarg.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<stdarg.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +26,7 @@ Standart C Kitaplığı üstbilgi içeren \<stdarg.h > ve ilişkili adlarıyla e
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

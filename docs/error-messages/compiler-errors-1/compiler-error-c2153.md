@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2153 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2153
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2153
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2153
 ms.assetid: cfc50cb7-9a0f-4b5b-879a-d419c99f7be1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbb3283ff4d27b6c939434ac3df8f8c1febf0eb3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eeb7da509ffb1b8c408763c79d471586eb94f383
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051431"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605939"
 ---
 # <a name="compiler-error-c2153"></a>Derleyici Hatası C2153
 

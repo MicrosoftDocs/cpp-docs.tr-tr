@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3732 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3732
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3732
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3732
 ms.assetid: 2d55a7e1-9c39-4379-a093-2f7beb27e2ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 187a7079eee1bc3b5ce36f29b8fbaef67c64fc59
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c71cca3643f6337060de6e4bb56ac64d8f0d6e4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092797"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611361"
 ---
 # <a name="compiler-error-c3732"></a>Derleyici Hatası C3732
 

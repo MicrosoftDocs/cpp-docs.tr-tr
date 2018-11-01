@@ -1,14 +1,8 @@
 ---
-title: 'TN038: MFC-OLE IUnknown uygulaması | Microsoft Docs'
-ms.custom: ''
+title: 'TN038: MFC-OLE IUnknown uygulaması'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregation macros [MFC]
 - COM interfaces, base interface
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - END_INTERFACE_PART macro [MFC]
 - INTERFACE_PART macro
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84d37ad6303a9e5b4fb9d238dd8c15c3a40ccef6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0722ce294e6a088446b8ba681810cf3f7885f122
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058799"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571437"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 

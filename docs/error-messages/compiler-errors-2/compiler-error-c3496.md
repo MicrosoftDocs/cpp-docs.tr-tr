@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3496 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3496
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3496
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3496
 ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ec4602e6a0061f5eb750ab29587209a6c97985d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c0075bf0e3749966a5e5b9fcd775b5d73171bf17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599426"
 ---
 # <a name="compiler-error-c3496"></a>Derleyici Hatası C3496
 

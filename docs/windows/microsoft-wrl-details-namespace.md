@@ -1,24 +1,14 @@
 ---
-title: 'Microsoft::wrl:: details Namespace | Microsoft Docs'
-ms.custom: ''
+title: Microsoft::WRL::Details Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f95eaa49db5e09bceaefafc16312250d823e5d5c
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: 3f8f6849ec20956d10147a0e6ecb2fd023874807
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644385"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details Ad Alanı
 
@@ -43,7 +33,7 @@ namespace Microsoft::WRL::Details;
 |[MakeAllocator Sınıfı](../windows/makeallocator-class.md)|İle veya zayıf başvuru desteği olmayan bir etkinleştirilebilir sınıf için bellek ayırır.|
 |[ModuleBase Sınıfı](../windows/modulebase-class.md)|Temel sınıfını temsil eden [Modülü](../windows/module-class.md) sınıfları.|
 |[RemoveIUnknown Sınıfı](../windows/removeiunknown-class.md)|Eşdeğer olan bir tür yapar bir `IUnknown`-tabanlı ancak türünde sanal olmayan `QueryInterface`, `AddRef`, ve `Release` yöntemleri.|
-|[WeakReference sınıfı](../windows/weakreference-class.md)|Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|
+|[WeakReference Sınıfı](../windows/weakreference-class.md)|Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|
 
 ### <a name="structures"></a>Yapılar
 
@@ -84,7 +74,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback İşlevi](../windows/activationfactorycallback-function.md)|Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır|
 |[Move İşlevi](../windows/move-function.md)|Belirtilen bağımsız değişken bir konumdan diğerine taşır.|
 |[RaiseException İşlevi](../windows/raiseexception-function.md)|Çağıran iş parçacığında bir özel durum oluşturur.|
-|[Swap işlevi (WRL)](../windows/swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
+|[Swap İşlevi (WRL)](../windows/swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
 |[TerminateMap İşlevi](../windows/terminatemap-function.md)|Belirtilen modül sınıfı Fabrikalar kapatır.|
 
 ## <a name="requirements"></a>Gereksinimler

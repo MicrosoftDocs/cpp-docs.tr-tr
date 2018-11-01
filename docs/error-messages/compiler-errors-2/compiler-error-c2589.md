@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2589 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2589
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2589
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2589
 ms.assetid: 1d7942c7-8a81-4bb4-b272-76a0019e8513
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2db5dde898a3e5918eed62b2b32231b5d7ed014f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 18d8f7130c34f5e1e33bc7aa9b9463f50c243045
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046062"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587323"
 ---
 # <a name="compiler-error-c2589"></a>Derleyici Hatası C2589
 

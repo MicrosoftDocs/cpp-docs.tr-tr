@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2440 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2440
 ms.date: 03/28/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2440
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80107f3adf4b460fd2563026a1b7ff6ab6394167
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f37c8b4e75b530f69c94c2e9e356a05d50397d29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091224"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571294"
 ---
 # <a name="compiler-error-c2440"></a>Derleyici Hatası C2440
 

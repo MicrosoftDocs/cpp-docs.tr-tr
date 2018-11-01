@@ -1,28 +1,18 @@
 ---
-title: özellik (C++) | Microsoft Docs
-ms.custom: ''
+title: property (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - property_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - property __declspec keyword
 - __declspec keyword [C++], property
 ms.assetid: f3b850ba-bf48-4df7-a1d6-8259d97309ce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7388fd180da4bd82b343d193f62c30ff1069342
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ece1016b7a18873dfa477b0f8b6ae4271a0f8001
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064938"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617002"
 ---
 # <a name="property-c"></a>property (C++)
 

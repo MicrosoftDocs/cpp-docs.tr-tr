@@ -1,26 +1,16 @@
 ---
-title: ERRLOOK başvurusu | Microsoft Docs
-ms.custom: ''
+title: ERRLOOK Başvurusu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ErrLook tool
 - Error lookup tool
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09db7dbb2af9294e215ab60c716f73eee821b29a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 598e3d938645e3d024b2409d97b4b8f082ee2d85
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621474"
 ---
 # <a name="errlook-reference"></a>ERRLOOK Başvurusu
 

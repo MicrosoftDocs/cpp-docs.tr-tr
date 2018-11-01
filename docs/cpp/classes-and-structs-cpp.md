@@ -1,12 +1,6 @@
 ---
-title: Sınıflar ve yapılar (C++) | Microsoft Docs
-ms.custom: ''
+title: Sınıflar ve Yapılar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, classes
 - structures, C++ classes
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - classes [C++]
 - user-defined types, C++ classes
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fbe9991807d1572504bbaa0f4e903e46cac1766a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 44736b9515363d1406b124858f72f12f8f7f552a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562753"
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
 

@@ -1,10 +1,6 @@
 ---
-title: _chdir, _wchdir | Microsoft Docs
-ms.custom: ''
+title: _chdir, _wchdir
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wchdir
 - _chdir
@@ -27,8 +23,6 @@ f1_keywords:
 - _wchdir
 - _tchdir
 - wchdir
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tchdir function
 - _chdir function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - chdir function
 - directories [C++], changing
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73abd8ef0ca29ee9e7f2312cc44a8178fc464261
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e4cf7a44864df0b5ecca531aab3db4546c25bb2c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556344"
 ---
 # <a name="chdir-wchdir"></a>_chdir, _wchdir
 

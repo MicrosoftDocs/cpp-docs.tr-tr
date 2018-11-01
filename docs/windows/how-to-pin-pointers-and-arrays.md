@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: işaretçiler ve dizileri sabitleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İşaretçiler ve Dizileri Sabitleme'
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointers, pinning
 - arrays [C++], pinning
 ms.assetid: ee783260-e676-46b8-a38e-11a06f1d57b0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7adf9d4d45b4acafd65adc27e28d8eb0639d32c8
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 54897253b93c97eb2d1ef94b6922c99fb75fdae9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327901"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641865"
 ---
 # <a name="how-to-pin-pointers-and-arrays"></a>Nasıl yapılır: İşaretçiler ve Dizileri Sabitleme
 

@@ -1,27 +1,17 @@
 ---
-title: Modül tanımı (. Def) dosyaları | Microsoft Docs
-ms.custom: ''
+title: Modül-Tanımlama (.Def) Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - def files
 - module definition files
 - .def files
 ms.assetid: 08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f04035f3c5f0acd77fc197cbef3d2ab507feb0d4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a882d71e76b961fefb7059bee8634507f12f7986
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710196"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460443"
 ---
 # <a name="module-definition-def-files"></a>Modül-Tanımlama (.Def) Dosyaları
 

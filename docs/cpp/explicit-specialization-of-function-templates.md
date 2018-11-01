@@ -1,12 +1,6 @@
 ---
-title: İşlev şablonlarının açık alt Uzmanlaşması | Microsoft Docs
-ms.custom: ''
+title: İşlev Şablonlarının Açık Alt Uzmanlaşması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - overriding, functions
 - function templates, specialization
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - declaring functions [C++], specialization of function template
 - specialization of function templates
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3070108e9e85273a86b93d40301747b658ae231b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3d91383f895f1a8be983efe42f685419ca988823
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029032"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665185"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>İşlev Şablonlarının Açık Alt Uzmanlaşması
 

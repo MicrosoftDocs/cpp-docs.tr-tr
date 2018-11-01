@@ -1,10 +1,6 @@
 ---
-title: _daylight, _dstbias, _timezone ve _tzname | Microsoft Docs
-ms.custom: ''
+title: _daylight, _dstbias, _timezone ve _tzname
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - tzname
 - _timezone
@@ -12,8 +8,6 @@ f1_keywords:
 - _daylight
 - _tzname
 - daylight
-dev_langs:
-- C++
 helpviewer_keywords:
 - time zones
 - time adjustments
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - tzname function
 - time-zone variables
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7428251531c0b57855941ed06c658c7b60224bab
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d8660c7a6677fb8113b91d6d69a21eef9d1d26c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034440"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460521"
 ---
 # <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone ve _tzname
 
@@ -54,9 +44,9 @@ Bunlar TIME.h içinde şu şekilde bildirilir.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-extern int _daylight; 
-extern int _dstbias; 
-extern long _timezone; 
+extern int _daylight; 
+extern int _dstbias; 
+extern long _timezone; 
 extern char *_tzname[2];
 ```
 

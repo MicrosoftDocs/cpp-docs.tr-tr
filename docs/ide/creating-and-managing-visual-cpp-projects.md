@@ -1,15 +1,9 @@
 ---
-title: Visual C++ proje oluşturma ve yönetme | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Projeleri Oluşturma ve Yönetme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vcprojects
 - creatingmanagingVC
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, creating
 - Visual C++ projects, creating
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17b608ec68e0c4456b8789a4891da355ec732d2a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2c3722fe9da764a578c255e50120fa2770555665
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553185"
 ---
 # <a name="creating-and-managing-msbuild-based-visual-c-projects"></a>Visual C++ MSBuild tabanlı projeler oluşturma ve yönetme
 

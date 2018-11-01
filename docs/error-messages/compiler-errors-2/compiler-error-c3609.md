@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3609 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3609
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3609
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3609
 ms.assetid: 801e7f79-4ac6-4f8f-955f-703cdf095d00
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0048d1493a540bfb460d03ae514b6b191ead39d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5572f39082e2dcd8746bb464595c5c00e2f77356
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016916"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556451"
 ---
 # <a name="compiler-error-c3609"></a>Derleyici Hatası C3609
 

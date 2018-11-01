@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2603 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2603
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2603
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2603
 ms.assetid: 9ca520d0-f082-4b65-933d-17c3bcf8b02c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a893a77fb3760f00fb7fe7b5cb3ce5b3db3346e2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5391aed09b7fd448a9d72ea7cc17cd5c26fc5f04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057686"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605770"
 ---
 # <a name="compiler-error-c2603"></a>Derleyici Hatası C2603
 

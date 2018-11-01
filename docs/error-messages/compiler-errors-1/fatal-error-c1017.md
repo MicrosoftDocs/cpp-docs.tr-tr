@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1017 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1017
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1017
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1017
 ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc2cb8ef9c7c9fe8eea7c506e55c49878b9bd809
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e2309b93be65b049c35abf96572e144a0a518007
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614285"
 ---
 # <a name="fatal-error-c1017"></a>Önemli hata C1017
 

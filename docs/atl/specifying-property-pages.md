@@ -1,28 +1,18 @@
 ---
-title: Özellik sayfaları (ATL) belirtme | Microsoft Docs
-ms.custom: ''
+title: Özellik sayfaları (ATL) belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - ISpecifyPropertyPages
-dev_langs:
-- C++
 helpviewer_keywords:
 - ISpecifyPropertyPages method
 - property pages, specifying
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f80abd3b6270f105fecd7ef8b9988a379901b541
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: c78a48d369f25f5432158ee6f09ee4cda499e7c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642249"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 

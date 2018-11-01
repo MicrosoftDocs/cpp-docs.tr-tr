@@ -1,30 +1,19 @@
 ---
-title: CNoAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CNoAccessor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CNoAccessor
 - CNoAccessor
 - ATL.CNoAccessor
-dev_langs:
-- C++
 helpviewer_keywords:
 - CNoAccessor class
 ms.assetid: eb669ae5-0a56-49a3-9646-c4ae6239da31
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 97cfefc679391cb54ff40f38285f22f40d068553
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d6eb5aaa9a66f46335b0a364e6c6e79abc297d64
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063841"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647904"
 ---
 # <a name="cnoaccessor-class"></a>CNoAccessor Sınıfı
 

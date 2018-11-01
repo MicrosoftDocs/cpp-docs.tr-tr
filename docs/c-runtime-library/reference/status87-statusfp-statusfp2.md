@@ -1,10 +1,6 @@
 ---
-title: _status87, _statusfp, _statusfp2 | Microsoft Docs
-ms.custom: ''
+title: _status87, _statusfp, _statusfp2
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _statusfp2
 - _statusfp
@@ -29,8 +25,6 @@ f1_keywords:
 - _status87
 - status87
 - statusfp
-dev_langs:
-- C++
 helpviewer_keywords:
 - floating-point functions, getting status word
 - floating-point numbers, status word
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - floating-point functions
 - status word
 ms.assetid: 7ef963fa-b1fb-429d-94d6-fbf282ab7432
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69297d7ff1e3ec40cfe4fc22dec86c356d1697d4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 271c28dd4e267e5b3b702858cc398689e3e35d6f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412562"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597537"
 ---
 # <a name="status87-statusfp-statusfp2"></a>_status87, _statusfp, _statusfp2
 
-Kayan nokta durum sözcüğünü alır.
+Kayan nokta durumu sözcüğünü alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,24 +60,24 @@ void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
 ### <a name="parameters"></a>Parametreler
 
 *px86*<br/>
-Bu adres x87 durum sözcüğünü doldurulup kayan nokta birim.
+Bu adres x87 için durum sözcüğüyle doldurulur kayan nokta birimi.
 
 *pSSE2*<br/>
-Bu adres SSE2 kayan nokta birimi için durum word ile doldurulur.
+Bu adres, SSE2 kayan nokta birimi için durum sözcüğüyle doldurulur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İçin **_status87** ve **_statusfp**, döndürülen değer bitleri kayan nokta durumunu gösterir. FLOAT bakın. H içerme dosyası tarafından döndürülen BITS tanımı için **_statusfp**. Birçok matematik kitaplık işlevleri kayan nokta durum sözcüğünü öngörülemeyen sonuçlara ile değiştirin. En iyi duruma getirme yeniden sıralamak, birleştirmek ve kayan nokta işlemleri çağrıları geçici ortadan **_status87**, **_statusfp**ve ilgili işlevleri. Kullanım [/Od (devre dışı bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md) derleyici seçeneği veya [fenv_access](../../preprocessor/fenv-access.md) kayan nokta işlemlerini yeniden sıralamak en iyi duruma getirme önlemek için pragma yönergesi. Değerlerin **_clearfp** ve **_statusfp**ve ayrıca dönüş parametrelerinin **_statusfp2**, daha az kayan nokta işlemleri gerçekleştirdiyseniz daha güvenilir değil kayan nokta durum sözcüğünü bilinen durumlar arasında.
+İçin **_status87** ve **_statusfp**, döndürülen değerdeki bitler kayan nokta durumunu gösterir. FLOAT bakın. H içerme dosyası tarafından döndürülen bitlerin bir tanımı için **_statusfp**. Çoğu matematik kitaplığı işlevi kayan nokta durumu sözcüğünü beklenmeyen sonuçlarla değiştirir. İyileştirme yeniden sıralamak, birleştirmek ve çağrıları etrafında bir kayan nokta işlemlerini ortadan **_status87**, **_statusfp**ve ilgili işlevleri. Kullanım [/Od (devre dışı bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md) derleyici seçeneği veya [fenv_access](../../preprocessor/fenv-access.md) pragma yönergesi, kayan nokta işlemlerini yeniden sıralayabilir iyileştirmeleri önlemek için. Değerlerin **_clearfp** ve **_statusfp**ve ayrıca dönüş parametreleri **_statusfp2**, daha az kayan nokta işlemleri gerçekleştirdiyseniz daha güvenilirdir kayan nokta durum sözcüğünün bilinen durumları arasında.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Statusfp** işlevi kayan nokta durum sözcüğünü alır. Durum sözcüğünü kayan nokta işlemci durumu ve kayan nokta özel durum işleyici tarafından algılanan başka koşullar bir birleşimidir — Örneğin, kayan nokta yığın taşması ve yetersiz. Durum sözcüğünü içeriğini döndürmeden önce maskelenmemiş özel durumlar için denetlenir. Bu özel durumlar olan arayan, bilgilendirilir anlamına gelir. X86 üzerinde platformları, **_statusfp** x87 ve SSE2 kayan nokta durum birleşimini döndürür. X64 üzerinde platformları, döndürülen durum SSE'ın MXCSR durumuna dayanır. ARM platformlarda **_statusfp** FPSCR kasadan durumu döndürür.
+**_Statusfp** işlevi kayan nokta durumu sözcüğünü alır. Durum sözcüğü kayan nokta işlemci durumu ve kayan nokta özel durum işleyici tarafından saptanan diğer durumların bir birleşimidir — Örneğin, kayan nokta yığın taşması veya yetersiz. Durum sözcüğü içeriğini döndürmeden önce maskelenmemiş özel durumlar denetlenir. Bu, çağırana, bekleyen özel durumlar bilgisinin verildiği anlamına gelir. X86 platformları **_statusfp** x87 ve SSE2 kayan nokta durumunun bir bileşimini döndürür. X64 platformlarında, döndürülen durum SSE'nin MXCSR durumu temel alır. ARM platformlarında, **_statusfp** FPSCR yazmacından durumu döndürür.
 
-**_statusfp** bir platformdan bağımsız, taşınabilir sürümü **_status87**. Aynı **_status87** Intel (x86) platformlarda ve ayrıca x64 ve ARM platformlar tarafından desteklenir. Kayan nokta kodunuzu tüm mimarileri taşınabilir olduğundan emin olmak için kullanmak **_statusfp**. X86 yalnızca hedefliyorsanız platformları, kullanabilirsiniz **_status87** veya **_statusfp**.
+**_statusfp** bir platformdan bağımsız, taşınabilir sürümü **_status87**. Aynıdır **_status87** Intel (x86) platformlarda ve x64 ve ARM platformları tarafından da desteklenir. Kayan nokta kodunuzun tüm mimariler için taşınabilir olduğundan emin olmak için kullanın **_statusfp**. Yalnızca x86 hedefliyorsanız platformları kullanabilirsiniz **_status87** veya **_statusfp**.
 
-Öneririz **_statusfp2** bir x87 ve SSE2 kayan nokta işlemci yongaları (örneğin, Pentium IV) için. İçin **_statusfp2**, adresleri x87 veya SSE2 kayan nokta işlemci için kayan nokta durum sözcüğünü kullanarak doldurulur. X87 ve SSE2 kayan nokta işlemcileri destekleyen bir yonga EM_AMBIGUOUS 1 ise ayarlanır **_statusfp** veya **_controlfp** kullanılır ve x87 veya SSE2 başvurduğundan eylemi belirsiz kayan nokta durum sözcüğünü. **_Statusfp2** işlevi yalnızca x86 üzerinde desteklenen platformlar.
+Öneririz **_statusfp2** için hem x x87 hem de SSE2 kayan noktalı işlemci yongaları (örneğin, Pentium IV). İçin **_statusfp2**, adresleri x87 veya SSE2 kayan nokta işlemci için kayan nokta durumu sözcüğünü kullanarak doldurulur. X87 ve SSE2 kayan nokta işlemcileri destekleyen bir yonga için em_ambıguous 1 olarak ayarlanır **_statusfp** veya **_controlfp** kullanılır ve bu x87 veya SSE2 başvurabileceği eylemi belirsiz kayan nokta durumu sözcüğünü. **_Statusfp2** işlevi yalnızca x86 üzerinde desteklenen platformlar.
 
-Bu işlevler için yararlı değildir [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı (CLR) yalnızca varsayılan kayan nokta duyarlık destekler.
+Bu işlevler için yararlı değildir [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı (CLR) yalnızca varsayılan kayan nokta duyarlığını destekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -95,7 +85,7 @@ Bu işlevler için yararlı değildir [/CLR (ortak dil çalışma zamanı derlem
 |-------------|---------------------|
 |**_status87**, **_statusfp**, **_statusfp2**|\<float.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

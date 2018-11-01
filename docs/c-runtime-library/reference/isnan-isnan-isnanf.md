@@ -1,10 +1,6 @@
 ---
-title: isNaN, _isnan, _isnanf | Microsoft Docs
-ms.custom: ''
+title: isNaN, _isnan, _isnanf
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _isnan
 - _isnanf
@@ -29,8 +25,6 @@ f1_keywords:
 - math/_isnan
 - math/_isnanf
 - _isnanf
-dev_langs:
-- C++
 helpviewer_keywords:
 - NAN (not a number)
 - _isnan function
@@ -38,20 +32,16 @@ helpviewer_keywords:
 - Not a Number (NANs)
 - isnan function
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: baf92397087ebbac27c7fea8cf5f524b33736b19
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ce111569b7caee9d0c7b8f35352c395571ad08b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650872"
 ---
 # <a name="isnan-isnan-isnanf"></a>isNaN, _isnan, _isnanf
 
-Testleri bir kayan nokta değer bir sayı (NAN) değil.
+Kayan nokta değerini (NAN) bir sayı olup olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,26 +71,26 @@ Test etmek için kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-C, **isnan** makrosu ve **_isnan** ve **_isnanf** İşlevler, sıfır olmayan bir değer döndürür bağımsız değişkeni *x* bir NAN olup; Aksi halde bunlar 0 döndürür.
+C'de, **isnan** makrosu ve **_isnan** ve **_isnanf** işlevler ise sıfır olmayan bir değer döndürür bağımsız değişken *x* bir NAN olup; Aksi takdirde bunlar 0 değerini döndürür.
 
-C++ ' ta **isnan** şablon işlevleri return **true** , bağımsız değişkeni *x* NAN; olup aksi döndürmeleri **false**.
+C++ ' ta **isnan** şablonu işlev dönüş **true** , bağımsız değişken *x* bir NAN; olup aksi döndürmeleri **false**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C **isnan** makrosu ve **_isnan** ve **_isnanf** işlevleri sınama kayan nokta değeri *x*, sıfır olmayan bir değer varsa döndürme *x* olmayan bir sayı (NAN) değeri. Belirtilen tür için IEEE 754 kayan nokta biçiminde bir kayan noktalı işlem sonucunu temsil edilemeyen bir NAN oluşturulur. Bir NAN çıktı için nasıl temsil hakkında daha fazla bilgi için bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
+C **isnan** makrosu ve **_isnan** ve **_isnanf** işlevlerini test etme, kayan nokta değeri *x*, ise sıfır olmayan bir değer döndüren *x* değil (NAN) sayı değeri. Belirtilen tür için IEEE 754 kayan nokta biçiminde kayan noktalı bir işlemin sonucunu temsil edilemeyen bir NAN üretilir. Çıkış için bir NAN nasıl temsil edildiğini hakkında daha fazla bilgi için bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
 
-C++ derlendiğinde **isnan** makrosu tanımlı değil ve bir **isnan** şablon işlevi yerine tanımlanır. Türünde bir değer döndürür **bool** yerine bir tamsayı.
+C++ derlendiğinde **isnan** Makro tanımlı değil ve bir **isnan** şablon işlevi yerine tanımlanır. Türünde bir değer döndürür **bool** tamsayı değil.
 
-**_İsnan** ve **_isnanf** Microsoft belirli işlevlerdir. **_İsnanf** işlevidir yalnızca x64 için derlenmiş olduğunda kullanılabilir.
+**_İsnan** ve **_isnanf** Microsoft'a özgü işlevlerdir. **_İsnanf** işlevi, yalnızca x64 için derlendiğinde kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-------------|---------------------------|-------------------------------|
 |**isNaN**, **_isnanf**|\<Math.h >|\<Math.h > veya \<cmath >|
 |**_isnan**|\<float.h >|\<float.h > veya \<cfloat >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

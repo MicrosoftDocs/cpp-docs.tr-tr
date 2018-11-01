@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2149 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2149
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2149
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2149
 ms.assetid: 7a106dab-d79f-41b9-85be-f36e86e4d2ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38ebb710cc9f4d5f546c40d84909dbe23805f2f7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 62eca9730b28f83cea39d5c6606d4bb94ce885dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445909"
 ---
 # <a name="compiler-error-c2149"></a>Derleyici Hatası C2149
 

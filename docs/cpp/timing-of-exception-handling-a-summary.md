@@ -1,12 +1,6 @@
 ---
-title: 'Özel durum işleme zamanlaması: Özet | Microsoft Docs'
-ms.custom: ''
+title: 'Özel Durum İşleme Zamanlaması: Özet'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - sequence [C++]
 - sequence, of handlers
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - handlers [C++], order of exception
 - structured exception handling [C++], timing
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59131994708f2cb78f00b05611c1db7f550f6a87
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cbff7c4153646fcb3471e18d20a0e633fbd1307f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076924"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477434"
 ---
 # <a name="timing-of-exception-handling-a-summary"></a>Özel Durum İşleme Zamanlaması: Özet
 

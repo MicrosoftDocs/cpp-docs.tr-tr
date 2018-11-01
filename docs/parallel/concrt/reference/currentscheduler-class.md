@@ -1,10 +1,6 @@
 ---
-title: CurrentScheduler sınıfı | Microsoft Docs
-ms.custom: ''
+title: CurrentScheduler Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - CurrentScheduler
 - CONCRT/concurrency::CurrentScheduler
@@ -18,21 +14,15 @@ f1_keywords:
 - CONCRT/concurrency::CurrentScheduler::IsAvailableLocation
 - CONCRT/concurrency::CurrentScheduler::RegisterShutdownEvent
 - CONCRT/concurrency::CurrentScheduler::ScheduleTask
-dev_langs:
-- C++
 helpviewer_keywords:
 - CurrentScheduler class
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27c295f1cf8c6d02721a999c46ce02d961cc3702
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46bd55c39e79ca01664c3800d10e4efa8cf7d042
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419028"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619186"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 

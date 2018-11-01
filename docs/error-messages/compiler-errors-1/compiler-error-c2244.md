@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2244 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2244
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2244
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2244
 ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b8c812b2443bdfada71dbb99dbceddb9074c02b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7cfa0cd7ff4290ca5f07fb712bbcac7dabf55f29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615209"
 ---
 # <a name="compiler-error-c2244"></a>Derleyici Hatası C2244
 

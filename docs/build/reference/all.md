@@ -1,29 +1,19 @@
 ---
-title: -TÜM | Microsoft Docs
-ms.custom: ''
+title: /ALL
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /all
-dev_langs:
-- C++
 helpviewer_keywords:
 - /ALL dumpbin option
 - -ALL dumpbin option
 - ALL dumpbin option
 ms.assetid: aa7eb74a-33ba-4d77-8620-3d7ea8b19952
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfae81486f6edcc20a0277b403e40914bebb6fef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7a68f5b53745bba63539fbd7d5ccc8d36c2e01d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656904"
 ---
 # <a name="all"></a>/ALL
 

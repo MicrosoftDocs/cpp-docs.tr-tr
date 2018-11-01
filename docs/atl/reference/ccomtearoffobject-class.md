@@ -1,10 +1,6 @@
 ---
-title: CComTearOffObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComTearOffObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComTearOffObject
 - ATLCOM/ATL::CComTearOffObject
@@ -14,23 +10,17 @@ f1_keywords:
 - ATLCOM/ATL::CComTearOffObject::Release
 - ATLCOM/ATL::CComTearOffObjectBase
 - ATLCOM/ATL::m_pOwner
-dev_langs:
-- C++
 helpviewer_keywords:
 - tear-off interfaces, ATL
 - tear-off interfaces
 - CComTearOffObject class
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ecbf2b415b93526fe856e21411431eb1f20b4c42
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 78e9bda9c21ce53fa5b775b83be5c978c3fa1431
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555265"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4460 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4460
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4460
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4460
 ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2635090d5aea4d5b80632ddf84b0eb3d2ccbdb6f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a42562a2c35bb56de4ce7147e199f4db2dddb684
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021297"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532203"
 ---
 # <a name="compiler-warning-level-4-c4460"></a>Derleyici Uyarısı (düzey 4) C4460
 

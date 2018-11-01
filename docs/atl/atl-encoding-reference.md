@@ -1,26 +1,16 @@
 ---
-title: ATL kodlama başvurusu | Microsoft Docs
-ms.custom: ''
+title: ATL Kodlama Başvurusu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - encoding
 - encoding, functions
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e34b6d3764c0096e30c0e1f27c36194fd5d44110
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f23c6ee3354521d0edbd2772f9a2fdf3ec6a184c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088832"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492722"
 ---
 # <a name="atl-encoding-reference"></a>ATL Kodlama Başvurusu
 

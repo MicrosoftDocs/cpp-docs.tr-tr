@@ -1,10 +1,6 @@
 ---
-title: CMapStringToOb sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMapStringToOb sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMapStringToOb
 - AFXCOLL/CMapStringToOb
@@ -22,8 +18,6 @@ f1_keywords:
 - AFXCOLL/CMapStringToOb::RemoveAll
 - AFXCOLL/CMapStringToOb::RemoveKey
 - AFXCOLL/CMapStringToOb::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMapStringToOb [MFC], CMapStringToOb
 - CMapStringToOb [MFC], GetCount
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 09653980-b885-4f3a-8594-0aeb7f94c601
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d00faec0ac65ded0c8e4ddc9f1ab50796bdecd6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 29f60748f8ff0681a3a73e31cbb049c27c3a45be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396330"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656179"
 ---
 # <a name="cmapstringtoob-class"></a>CMapStringToOb sınıfı
 

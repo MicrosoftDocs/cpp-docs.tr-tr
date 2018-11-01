@@ -1,10 +1,6 @@
 ---
-title: CAsyncMonikerFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAsyncMonikerFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAsyncMonikerFile
 - AFXOLE/CAsyncMonikerFile
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXOLE/CAsyncMonikerFile::OnProgress
 - AFXOLE/CAsyncMonikerFile::OnStartBinding
 - AFXOLE/CAsyncMonikerFile::OnStopBinding
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAsyncMonikerFile [MFC], CAsyncMonikerFile
 - CAsyncMonikerFile [MFC], Close
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c40d012ba32d2ea656024af77779f2cf8f67419a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 107f791505bc41b8dbf9c0374c5e3821abbc0fe3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433033"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50669072"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 

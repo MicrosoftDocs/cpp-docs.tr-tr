@@ -1,29 +1,19 @@
 ---
-title: Çizim aracı sınıfları | Microsoft Docs
-ms.custom: ''
+title: Çizim Aracı Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.drawing
-dev_langs:
-- C++
 helpviewer_keywords:
 - drawing [MFC], tool classes
 - screen output classes [MFC]
 - output classes [MFC]
 ms.assetid: e907bd89-38b5-47c9-b76a-95e0bf3bb41d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9d81f3051450f060a82bbd3a192ad387332922a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6b1e51e2d4c8e8bed39fe9076124879c02f1ffb1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615016"
 ---
 # <a name="drawing-tool-classes"></a>Çizim Aracı Sınıfları
 

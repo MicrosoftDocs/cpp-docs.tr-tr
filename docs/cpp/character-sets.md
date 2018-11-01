@@ -1,26 +1,18 @@
 ---
-title: Karakter kümeleri | Microsoft Docs
-ms.custom: ''
+title: Karakter Kümeleri
 ms.date: 04/12/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 helpviewer_keywords:
 - Character sets
 - basic source character set (C++)
 - universal character names
 - basic execution character set (C++)
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d788bed7e58f5e8e721a237cb2a9a5c531306ea
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5282d5b227e71c0ba6f822a9534a8a31cbd86db9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039367"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664639"
 ---
 # <a name="character-sets"></a>Karakter Kümeleri
 

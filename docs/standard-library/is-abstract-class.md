@@ -1,28 +1,18 @@
 ---
-title: is_abstract sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_abstract Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_abstract
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_abstract class
 - is_abstract
 ms.assetid: 8867f660-3434-404c-ba90-c26607a5e0d2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97ed218405fac96e926aefc3a15ebc81dd44863f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 02863f5694f519e8cca54d07622a185f69de82d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108270"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584320"
 ---
 # <a name="isabstract-class"></a>is_abstract Sınıfı
 

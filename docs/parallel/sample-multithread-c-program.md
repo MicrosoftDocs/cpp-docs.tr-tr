@@ -1,23 +1,13 @@
 ---
-title: Örnek çoklu iş parçacığı kullanan C programı | Microsoft Docs
-ms.custom: ''
+title: Örnek Çoklu İş Parçacığı Kullanan C Programı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29f29f94e9911ee6cd3a1f5377fee4fb9b84cda4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 340ac700bae316b0665991249325b2ca262ed9a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428590"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615897"
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
 

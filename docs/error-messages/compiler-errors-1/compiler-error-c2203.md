@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2203 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2203
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2203
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2203
 ms.assetid: 5497df43-86f6-43d5-b6cb-723c4c589b10
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6db497a7967e0cefc16ecb6e5a71874f86179b29
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 848fdad460402238f4957344dd49bd9128352b4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053771"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499885"
 ---
 # <a name="compiler-error-c2203"></a>Derleyici Hatası C2203
 

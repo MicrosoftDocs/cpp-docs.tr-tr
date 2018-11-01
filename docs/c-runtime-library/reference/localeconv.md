@@ -1,10 +1,6 @@
 ---
-title: localeconv | Microsoft Docs
-ms.custom: ''
+title: localeconv
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - localeconv
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - localeconv
-dev_langs:
-- C++
 helpviewer_keywords:
 - lconv type
 - localeconv function
 - locales, getting information on
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c5f66975d8d9904d1a4a8f2d26d4fe98ecfdd40
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bf26e4f7b7fb4f0334b57604fe5c4996312bd62a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223031"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628154"
 ---
 # <a name="localeconv"></a>localeconv
 

@@ -1,29 +1,19 @@
 ---
-title: Araç ipuçları için TTN_NEEDTEXT bildirimini işleme | Microsoft Docs
-ms.custom: ''
+title: Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - TTN_NEEDTEXT
-dev_langs:
-- C++
 helpviewer_keywords:
 - TTN_NEEDTEXT message [MFC]
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e3b54ebc4c624b3be098f2bbf3ec30c6b70a38c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1dd73364b0b67e9ca3e7e47b172cc54db88aaba4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603638"
 ---
 # <a name="handling-ttnneedtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 

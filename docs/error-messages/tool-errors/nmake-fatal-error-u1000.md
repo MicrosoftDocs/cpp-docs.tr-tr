@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1000 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1000
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1000
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1000
 ms.assetid: 49b9bd9e-f1bc-4b55-a171-c748e40b195e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69909c542a02baf8aa261c8ef78413a877a223a7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2b101041e2d57b8b47528bb49c9c76c28a2670e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612231"
 ---
 # <a name="nmake-fatal-error-u1000"></a>NMAKE Önemli Hatası U1000
 

@@ -1,12 +1,6 @@
 ---
-title: 'Sürükle ve bırak: özelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Sürükle ve Bırak: Özelleştirme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - drag and drop [MFC], implementing in non-OLE applications
 - drag and drop [MFC], customizing behavior
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - drag and drop [MFC], calling DoDragDrop
 - OLE drag and drop [MFC], customizing behavior
 ms.assetid: 03369d3e-46bf-4140-b58c-d0c9657cf38a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7dd7e88d6843ec3d95538e482c6c05a3d853f4d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d97bebce3ec7935dba7a9eca02a21be749efbec7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390778"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494297"
 ---
 # <a name="drag-and-drop-customizing"></a>Sürükle ve Bırak: Özelleştirme
 

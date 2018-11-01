@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: 64 Bit hedeflemek için Visual C++ projeleri x64 yapılandırma platformları | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: 64 Bit hedeflemek için Visual C++ projeleri x64 yapılandırma platformları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - platforms [C++], 64-bit
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f1449fdf8c36d283b75f4746c045ba384b15786
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3df2252e1879fbbcdf6cc950fa8dd637894ba3f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664561"
 ---
 # <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: 64 Bit hedeflemek için Visual C++ projeleri x64 yapılandırma platformları
 

@@ -1,28 +1,18 @@
 ---
-title: __vmx_vmptrld | Microsoft Docs
-ms.custom: ''
+title: __vmx_vmptrld
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __vmx_vmptrld
-dev_langs:
-- C++
 helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16a61578b7512c1d9ce9d7ca217b29a3ea670657
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4079eadc1f2d655c14192c8c4286ad240b1c1dbe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068495"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571385"
 ---
 # <a name="vmxvmptrld"></a>__vmx_vmptrld
 

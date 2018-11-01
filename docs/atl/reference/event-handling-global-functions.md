@@ -1,28 +1,18 @@
 ---
-title: Olay işleme genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Olay işleme genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlWaitWithMessageLoop
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling, global functions
 - global functions, event handling
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ef89aec3a0eaf53c6c97b3480008b7e9fd586e3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 02066f2e6cd215fdb68fcdb594307b646ee69cad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660401"
 ---
 # <a name="event-handling-global-functions"></a>Olay işleme genel işlevleri
 

@@ -1,12 +1,7 @@
 ---
-title: Birden çok çift arabirim | Microsoft Docs
-ms.custom: ''
+title: Birden çok çift arabirim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - multiple dual interfaces
 - COM_INTERFACE_ENTRY2 macro
@@ -15,16 +10,12 @@ helpviewer_keywords:
 - IDispatchImpl class, multiple dual interfaces
 - COM_INTERFACE_ENTRY_IID macro
 ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80bc2d4cc112c87c5c7a4e7d30f680631c1a1506
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c2ec6c89ab6f54dbcd7433a0f7fedcebd7962b6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758293"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434743"
 ---
 # <a name="multiple-dual-interfaces"></a>Birden çok çift arabirim
 

@@ -1,27 +1,17 @@
 ---
-title: Komut satırı uyarısı D9026 | Microsoft Docs
-ms.custom: ''
+title: Komut Satırı Uyarısı D9026
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - D9026
-dev_langs:
-- C++
 helpviewer_keywords:
 - D9026
 ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 07be633e56dad6c8f0b304a3c88c1b9919221d4a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3fd8d442dfabaf2f03d8b564c9fdfb1537f6ff28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599440"
 ---
 # <a name="command-line-warning-d9026"></a>Komut Satırı Uyarısı D9026
 

@@ -1,27 +1,17 @@
 ---
-title: false (C++) | Microsoft Docs
-ms.custom: ''
+title: false (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - false_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - false keyword [C++]
 ms.assetid: cc13aec5-1f02-4d38-8dbf-5473ea2b354f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3cd5174ebacd04bd70fbcde29dcbdabb76911c75
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5fc27c7f1dfde7d1f686f0a752652773ade9cc0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031528"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464070"
 ---
 # <a name="false-c"></a>false (C++)
 

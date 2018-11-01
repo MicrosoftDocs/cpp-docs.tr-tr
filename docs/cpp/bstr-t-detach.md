@@ -1,27 +1,17 @@
 ---
-title: _bstr_t::detach | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::Detach
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::Detach
-dev_langs:
-- C++
 helpviewer_keywords:
 - Detach method [C++]
 ms.assetid: cc8284bd-f68b-4fff-b2e6-ce8354dabf8b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df0c86b6210b883e8d7b1cbe9e814a7683ce020c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 51561c6f7cf5ba49c86f818d925db548438b2981
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492198"
 ---
 # <a name="bstrtdetach"></a>_bstr_t::Detach
 

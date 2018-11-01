@@ -1,10 +1,6 @@
 ---
-title: Crecentdocksiteınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: Crecentdocksiteınfo sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRecentDockSiteInfo
 - AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SaveListOfRecentPanes
 - AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SetInfo
 - AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::StoreDockInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRecentDockSiteInfo [MFC], CleanUp
 - CRecentDockSiteInfo [MFC], GetRecentDefaultPaneDivider
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CRecentDockSiteInfo [MFC], SetInfo
 - CRecentDockSiteInfo [MFC], StoreDockInfo
 ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43b632408d38af9f40cb50b12e9a9734df9245dd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: aee66ea9893325921c62bfaef9cd501ef40e817a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065622"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615286"
 ---
 # <a name="crecentdocksiteinfo-class"></a>Crecentdocksiteınfo sınıfı
 

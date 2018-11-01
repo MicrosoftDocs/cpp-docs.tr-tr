@@ -1,28 +1,18 @@
 ---
-title: type_info sınıfı | Microsoft Docs
-ms.custom: ''
+title: type_info Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - type_info
-dev_langs:
-- C++
 helpviewer_keywords:
 - class type_info
 - type_info class
 ms.assetid: 894ddda2-7de4-4da3-9404-d2c74e356c16
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d5a44a59b8c9fcacbef5a3dff0391949869790a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 169a54373c66c2f6b33d71e68500c3bf85e871c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560725"
 ---
 # <a name="typeinfo-class"></a>type_info Sınıfı
 

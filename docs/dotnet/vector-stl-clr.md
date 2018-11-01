@@ -1,9 +1,6 @@
 ---
-title: vektör (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: vektör (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::vector
@@ -51,8 +48,6 @@ f1_keywords:
 - cliext::vector::to_array
 - cliext::vector::value_type
 - cliext::vector::vector
-dev_langs:
-- C++
 helpviewer_keywords:
 - vector class [STL/CLR]
 - <cliext/vector> header [STL/CLR]
@@ -102,17 +97,12 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: d08e3774b90d2ac3b5e907758d0c296930fc5258
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09a0919cd47937960736c6cccf31343c5e12087d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374446"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640719"
 ---
 # <a name="vector-stlclr"></a>vektör (STL/CLR)
 

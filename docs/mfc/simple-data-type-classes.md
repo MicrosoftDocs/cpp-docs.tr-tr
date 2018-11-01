@@ -1,29 +1,19 @@
 ---
-title: Basit veri türü sınıfları | Microsoft Docs
-ms.custom: ''
+title: Basit Veri Türü Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.data
-dev_langs:
-- C++
 helpviewer_keywords:
 - scalar classes [MFC]
 - data classes [MFC]
 - simple data type classes [MFC]
 ms.assetid: 0d591d68-0a33-49e9-8a6d-90c90de5c16a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ca6eb22ea596b39f417813ad5072dd1a72e270e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9288ed3104d2cdf4c6938b171166de7cffd32ccf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531669"
 ---
 # <a name="simple-data-type-classes"></a>Basit Veri Türü Sınıfları
 

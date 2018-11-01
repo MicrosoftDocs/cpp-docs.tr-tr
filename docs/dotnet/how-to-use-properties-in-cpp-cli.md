@@ -1,27 +1,16 @@
 ---
-title: 'Nasıl yapılır: özellikleri kullanmak C + +/ CLI | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma'
 ms.date: 07/21/2017
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 84d12ab4d50b5cc18a6ba6ad74a6a0e5423a28b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 546c729245fb0c941f07e9222b71670278c44fde
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617496"
 ---
 # <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma
 

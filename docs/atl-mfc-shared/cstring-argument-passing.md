@@ -1,12 +1,6 @@
 ---
-title: CString bağımsız değişken geçirme | Microsoft Docs
-ms.custom: ''
+title: CString bağımsız değişken geçirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], as function input/output
 - argument passing [C++]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - CString objects, passing arguments
 - string arguments
 ms.assetid: a67bebff-edf1-4cf4-bbff-d1cc6a901099
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d954d78bc96d72b7b031ece89b8ac038d711093c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bf18265e19e4b1c1db010a4d7638fa959c357bca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562402"
 ---
 # <a name="cstring-argument-passing"></a>CString bağımsız değişken geçirme
 

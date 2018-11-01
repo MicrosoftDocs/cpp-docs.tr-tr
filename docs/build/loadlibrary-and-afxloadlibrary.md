@@ -1,14 +1,8 @@
 ---
-title: LoadLibrary ve AfxLoadLibrary | Microsoft Docs
-ms.custom: ''
+title: LoadLibrary ve AfxLoadLibrary
 ms.date: 05/24/2018
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - LoadLibrary
-dev_langs:
-- C++
 helpviewer_keywords:
 - DLLs [C++], AfxLoadLibrary
 - DLLs [C++], LoadLibrary
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2fe0b0523fb411b8ef4700a7dea7832c1cdfc52
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7c0b63d80a8b4b03b55d6e50af6c08a8de0937de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596560"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 

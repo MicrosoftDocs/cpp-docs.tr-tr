@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: düzenli aralıkla ileti gönderme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Düzenli Aralıkla İleti Gönderme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - timer class, example
 - sending messages at regular intervals [Concurrency Runtime]
 ms.assetid: 4b60ea6c-97c8-4d69-9f7b-ad79f3548026
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b3c476d9cf633ce9b676dc8f658c94bd0b240461
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 05777b0c00f587f588a50733d5113d9a7362d247
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384305"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549623"
 ---
 # <a name="how-to-send-a-message-at-a-regular-interval"></a>Nasıl yapılır: Düzenli Aralıkla İleti Gönderme
 

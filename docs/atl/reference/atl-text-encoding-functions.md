@@ -1,8 +1,6 @@
 ---
-title: ATL metin kodlama işlevleri | Microsoft Docs
-ms.custom: ''
+title: ATL metin kodlama işlevleri
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlGetHexValue
 - atlbase/ATL::AtlGetVersion
@@ -27,16 +25,12 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b77c814b3ce2f372ae34e3c0293951ec23cdf6a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5fbd3b1c4e0ca1c09e34c3e04a4d0b0613e45e73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090756"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430420"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 

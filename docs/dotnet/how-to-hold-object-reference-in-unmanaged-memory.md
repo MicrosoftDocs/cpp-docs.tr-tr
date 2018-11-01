@@ -1,29 +1,19 @@
 ---
-title: 'Nasıl yapılır: yönetilmeyen bellekte nesne başvurusunu tutma | Microsoft Docs'
+title: 'Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - object references, in native functions
 - objects [C++], reference in native functions
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 3153a34844885e2b753bf68d74b7757c5d11fb1d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 50afaa16f2e0976cf6a90bef09e652b4dc54582a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478084"
 ---
 # <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma
 

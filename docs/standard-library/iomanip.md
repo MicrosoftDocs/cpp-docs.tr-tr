@@ -1,28 +1,18 @@
 ---
-title: '&lt;iomanip&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;iomanip&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iomanip/std::<iomanip>
 - <iomanip>
-dev_langs:
-- C++
 helpviewer_keywords:
 - iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f58622230541b0eedf4e7c73d12e81c36ea70fc9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f6470f98495362149b4e99c6d1e3fe521800438b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487925"
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 

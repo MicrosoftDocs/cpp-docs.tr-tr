@@ -1,10 +1,6 @@
 ---
-title: _CrtMemDumpAllObjectsSince | Microsoft Docs
-ms.custom: ''
+title: _CrtMemDumpAllObjectsSince
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtMemDumpAllObjectsSince
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - CrtMemDumpAllObjectsSince
 - _CrtMemDumpAllObjectsSince
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CrtMemDumpAllObjectsSince function
 - CrtMemDumpAllObjectsSince function
 ms.assetid: c48a447a-e6bb-475c-9271-a3021182a0dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92d6148f6cbe49799a122d1745a6a6cde4c8be30
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7de0ee9ff166af6336a8d14aa0dbd07dbd7d23fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100385"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526054"
 ---
 # <a name="crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
 

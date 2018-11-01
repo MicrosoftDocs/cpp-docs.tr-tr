@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3655 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3655
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3655
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3655
 ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2322e2f6393b87e8a26dc0b61f19f8a68065b638
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 268994b2e694c6260a3fc9e9edf102ec0127ee31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448612"
 ---
 # <a name="compiler-error-c3655"></a>Derleyici Hatası C3655
 

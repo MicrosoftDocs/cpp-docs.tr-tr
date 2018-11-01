@@ -1,10 +1,6 @@
 ---
-title: _set_printf_count_output | Microsoft Docs
-ms.custom: ''
+title: _set_printf_count_output
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_printf_count_output
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - set_printf_count_output
 - _set_printf_count_output
-dev_langs:
-- C++
 helpviewer_keywords:
 - '%n format'
 - set_printf_count_output function
 - _set_printf_count_output function
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 783225412b01430d1043dafd4761cb7432eaa1d7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0d4847d850b39c7c03ea92a98499715b1e6a4913
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595617"
 ---
 # <a name="setprintfcountoutput"></a>_set_printf_count_output
 

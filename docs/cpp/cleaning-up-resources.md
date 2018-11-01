@@ -1,12 +1,6 @@
 ---
-title: Kaynakları temizleme | Microsoft Docs
-ms.custom: ''
+title: Kaynakları Temizleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - termination handlers [C++], cleaning up resources
 - exception handling [C++], cleaning up resources
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - exception handling [C++], cleanup code
 - try-catch keyword [C++], termination handlers
 ms.assetid: 65753efe-6a27-4750-b90c-50635775c1b6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df75602dec8b27d12535e41b14fb2d7ca64061d1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0db21b20b94dc1a3f347bd848c999a961398759b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575701"
 ---
 # <a name="cleaning-up-resources"></a>Kaynakları Temizleme
 

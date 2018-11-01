@@ -1,10 +1,6 @@
 ---
-title: ARM Assembler tanılama iletileri | Microsoft Docs
-ms.custom: ''
+title: ARM Assembler tanılama iletileri
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - A2193
 - A2196
@@ -23,19 +19,13 @@ helpviewer_keywords:
 - A4228
 - A4508
 - A4509
-dev_langs:
-- C++
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 765a2c842d9e3714edd3303d3536efe603bd9c2c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 867ef50065c6ed63a4da6d37523bd5a1f3cbadba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601688"
 ---
 # <a name="arm-assembler-diagnostic-messages"></a>ARM Assembler tanılama iletileri
 

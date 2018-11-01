@@ -1,26 +1,16 @@
 ---
-title: ATL COM Masaüstü bileşenleri | Microsoft Docs
-ms.custom: ''
+title: ATL COM Masaüstü bileşenleri
 ms.date: 10/19/2018
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, reference
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5cce23d34c739ed6a3aca67e05b59c6cafd9191
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 65b8631560ec1b768521d917256c32c75c531fab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644190"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 

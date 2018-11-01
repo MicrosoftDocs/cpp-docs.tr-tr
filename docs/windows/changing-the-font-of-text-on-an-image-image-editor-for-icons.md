@@ -1,26 +1,15 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) görüntüdeki metnin yazı tipini değiştirme | Microsoft Docs
-ms.custom: ''
+title: Görüntüdeki Metnin Yazı Tipini Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - fonts, changing on an image
 ms.assetid: b8849d40-d401-4e06-808f-e615cb2bee3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5491f8a761eee80595265150ee0cb89c682b3079
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 2bbd8096a2957099acc8c06d501f3ad407b9a974
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084054"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495530"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>Görüntüdeki Metnin Yazı Tipini Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 

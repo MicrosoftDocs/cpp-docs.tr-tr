@@ -1,10 +1,6 @@
 ---
-title: _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l | Microsoft Docs
-ms.custom: ''
+title: _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strtoui64
 - _strtoui64_l
@@ -32,8 +28,6 @@ f1_keywords:
 - strtoui64
 - _strtoui64
 - wcstoui64_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strtoui64_l function
 - _wcstoui64_l function
@@ -45,20 +39,16 @@ helpviewer_keywords:
 - strtoui64_l function
 - strtoui64 function
 ms.assetid: 7fcb537e-4554-4ceb-a5b6-bc09244e72ef
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab70c1d74c0db837ba3d8e453988ca441f6fc06d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c733a14d5f32e5dc4ef31eb9fedd984079456505
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659816"
 ---
 # <a name="strtoui64-wcstoui64-strtoui64l-wcstoui64l"></a>_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 
-Bir dizeyi bir imzasız dönüştürme **__int64** değeri.
+Bir dizeyi işaretsiz bir dönüştürme **__int64** değeri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -93,29 +83,29 @@ unsigned __int64 _wcstoui64(
 Dönüştürülecek null ile sonlandırılmış dize.
 
 *endptr*<br/>
-Tarama durdurur karakter işaretçi.
+Taramayı durduran karakter işaretçisi.
 
 *base*<br/>
-Kullanılacak sayı temel.
+Kullanılacak sayı tabanı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_strtoui64** dizesinde gösterilen değerini verir *strSource*, temsili taşma neden olacağından, içinde bu döndürür durumda dışında **_UI64_MAX**. **_strtoui64** dönüştürme gerçekleştirilebiliyorsa 0 döndürür.
+**_strtoui64** dizesinde temsil edilen değeri döndürür *strSource*gösterimin bir taşma neden olduğu zaman, o verir durumda dışında **_UI64_MAX**. **_strtoui64** dönüştürme gerçekleştirilemiyorsa 0 döndürür.
 
-**_UI64_MAX** SINIRLARI tanımlanır. H.
+**_UI64_MAX** SINIRLARI tanımlanır. H
 
-Varsa *strSource* olan **NULL** veya *temel* sıfır dışında olan ve 2 veya 36, büyüktür ya da daha az **errno** ayarlanır **EINVAL** .
+Varsa *strSource* olduğu **NULL** veya *temel* sıfır dışında olan ve 2'den küçük veya 36'dan büyük ya da daha az **errno** ayarlanır **EINVAL** .
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strtoui64** işlev dönüştürür *strSource* için bir **imzasız** **__int64**. **_wcstoui64** bir joker karakter sürümü **_strtoui64**; kendi *strSource* bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde bu işlevler aynı şekilde davranır.
+**_Strtoui64** işlev dönüştürür *strSource* için bir **işaretsiz** **__int64**. **_wcstoui64** geniş karakterli sürümüdür **_strtoui64**; *strSource* geniş karakterli bir dizedir. Aksi takdirde bu işlevleri aynı şekilde davranır.
 
-Her iki işlevleri Durdur dize okuma *strSource* ilk karakterinde bunlar bir sayı bir parçası olarak tanımak olamaz. Bu sonlandırma null karakter olabilir ya da sıfırdan büyük veya eşit ilk sayısal karakter olabilir *temel*.
+Her iki işlev dizesini okumayı durdurur *strSource* bir sayının parçası olarak tanıyamadığı ilk karakterde. Bu sondaki boş karakter olabilir veya daha büyük veya eşit ilk sayısal karakter olabilir *temel*.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -124,15 +114,15 @@ Her iki işlevleri Durdur dize okuma *strSource* ilk karakterinde bunlar bir say
 |**_tcstoui64**|**_strtoui64**|**_strtoui64**|**_wstrtoui64**|
 |**_tcstoui64_l**|**_strtoui64_l**|**_strtoui64_l**|**_wstrtoui64_l**|
 
-Geçerli yerel **lc_numerıc** kategori ayarı belirler tanıma taban karakterinin *strSource*; daha fazla bilgi için bkz: [setlocale](setlocale-wsetlocale.md). Geçerli yerel _l soneki olmayan işlevler kullanın; **_strtoui64_l** ve **_wcstoui64_l** ilgili işlevleri aynıdır **_l** yerine geçirilen yerel ayar kullanmasını dışında soneki. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Geçerli yerel ayarın **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource*; daha fazla bilgi için bkz: [setlocale](setlocale-wsetlocale.md). The_l soneki olmadan işlevler geçerli yerel ayarı kullanın. **_strtoui64_l** ve **_wcstoui64_l** olmayan ilgili işlevlerle aynıdır **_l** bunun yerine iletilmiş yerel ayarı kullanmaları dışında soneki. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Varsa *endptr* değil **NULL**, tarama durduruldu karakteri gösteren bir işaretçi işaret konumunda depolanan *endptr*. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri *strSource* gösterdiği konumunda depolanan *endptr*.
+Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 
-**_strtoui64** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret etmek için:
+**_strtoui64** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret edecek şekilde:
 
 > [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*basamak* &#124; *harf*]  
 
-A *boşluk* yoksayılan boşluk ve sekme karakterlerden oluşabilir. *basamak* bir veya daha fazla ondalık basamakların. *harf* 'a' ile 'z' (veya 'A'-'Z') bir veya daha fazla harf şunlardır. Bu form sığmayan ilk karakter tarama durdurur. Varsa *temel* sayısı temel olarak kullanılan sonra 2 ile 36, arasındadır. Varsa *temel* gösterdiği dizenin ilk karakter 0'dır ve *strSource* temel belirlemek için kullanılır. İlk karakter 0 ve ikinci karakter 'x' veya 'X' değil, dize sekizlik tamsayı olarak yorumlanır. İlk karakter '0' dir ve ikinci karakteri 'x' veya 'X', dize onaltılık bir tamsayı olarak yorumlanır. İlk karakteri ' 1' üzerinden ' 9'. dize ondalık bir tamsayı olarak yorumlanır. 'A' ile 'z' harf (veya 'A'-'Z') 35 10 değerler atanır; yalnızca atanan değerleri olan harf değerinden *temel* izin verilir. İlk karakter taban izin verilen aralığın dışında tarama durdurur. Örneğin, varsa *temel* 0'dır ve taranan ilk karakter '0', tamsayı sekizli kabul edilir ve bir '8' veya '9' karakter tarama durdurur.
+A *boşluk* yoksayılan boşluk ve sekme karakterlerinden oluşabilir. *basamak* bir veya daha fazla ondalık basamaktır. *harf* 'a' ila 'z' (veya 'A'-'Z') bir veya daha fazla harf olan. Bu forma uymayan ilk karakter taramayı durdurur. Varsa *temel* 2 ile 36 arasındaysa sayının tabanı kullanılır olduğu. Varsa *temel* tarafından işaret edilen dizenin ilk karakterleri 0'dır *strSource* tabanı belirlemek için kullanılır. İlk karakter 0 ise ve ikinci karakter 'x' veya 'X' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter '0' ise ve ikinci karakter 'x' veya 'X' dize onaltılık bir tamsayı olarak yorumlanır. İlk karakter ' 1'-' 9' ise, dize ondalık bir tamsayı olarak yorumlanır. Harfler 'bir'-'z' (ya da 'A'-'Z'), 10-35 arasında değerler atanır; yalnızca atanan değerleri olan harf küçüktür *temel* izin verilir. Tabanın aralığının dışındaki ilk karakter taramayı durdurur. Örneğin, varsa *temel* 0 ise ve taranan ilk karakter '0' ise, sekizlik bir tamsayı olduğu varsayılır ve bir '8' veya '9' karakteri taramayı durduracaktır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -143,7 +133,7 @@ A *boşluk* yoksayılan boşluk ve sekme karakterlerden oluşabilir. *basamak* b
 |**_strtoui64_l**|\<stdlib.h >|
 |**_wcstoui64_l**|\<stdlib.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

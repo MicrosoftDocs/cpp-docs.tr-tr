@@ -1,17 +1,11 @@
 ---
-title: İç sınıflar | Microsoft Docs
-ms.custom: ''
+title: İç Sınıflar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPreviewViewEx
 - m_bPreMultiplyCheck
 - CMFCRibbonPanelMenuBar.IsCategoryPopup
 - CMFCCustomizeMenuButton.SetSiblingsButton
-dev_langs:
-- C++
 helpviewer_keywords:
 - UpdateTabs method [MFC]
 - Start method [MFC]
@@ -313,16 +307,12 @@ helpviewer_keywords:
 - CMenuImages class [MFC]
 - CleanUp method [MFC]
 ms.assetid: 3e2276aa-b02a-4781-97ba-ea074045e9e2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc2a7d2d51a66742794d0a58da19e77463318fc7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 706ba4cdd1a8f9d77857c52898058aa62fcca8c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411735"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435496"
 ---
 # <a name="internal-classes"></a>İç Sınıflar
 

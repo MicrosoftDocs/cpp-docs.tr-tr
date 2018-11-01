@@ -1,12 +1,6 @@
 ---
-title: 'OLE arka planı: Bağlama ve katıştırma | Microsoft Docs'
-ms.custom: ''
+title: 'OLE Arka Planı: Bağlama ve Katıştırma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE embedded items [MFC]
 - item types [MFC], defined
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - embedded objects [MFC]
 - OLE items [MFC], types
 ms.assetid: 11107711-eb96-4099-8f5c-7910bb3ecb75
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d4456e5210b2ec1e142c7ddeddd7b0e7fab9f31
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7595d87ce54b0a34dd4e5f3489dd36e3918fd8a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445912"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465487"
 ---
 # <a name="ole-background-linking-and-embedding"></a>OLE Arka Planı: Bağlama ve Katıştırma
 

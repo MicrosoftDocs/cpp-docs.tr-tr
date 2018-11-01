@@ -1,25 +1,15 @@
 ---
-title: CONCURRENCY::Graphics Namespace | Microsoft Docs
-ms.custom: ''
+title: Concurrency::graphics Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - AMP_GRAPHICS/Concurrency
-dev_langs:
-- C++
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31abd263f2536d0f2e73a3dfb35cad0eaa29e818
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5bff3bbba3c2ba9e6c51ee20c8701c80a557707f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387204"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500496"
 ---
 # <a name="concurrencygraphics-namespace"></a>Concurrency::graphics Ad Alanı
 

@@ -1,26 +1,15 @@
 ---
-title: Referans türleri için C++ yığın anlamları | Microsoft Docs
-ms.custom: ''
+title: Referans Türleri için C++ Yığın Anlamları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: df14886daa04d4905502341ef345c3e3afa595ff
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b2d2d5991f7b52727b366214b8ca9ed4d8e14956
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607872"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 

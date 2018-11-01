@@ -1,10 +1,6 @@
 ---
-title: _configthreadlocale | Microsoft Docs
-ms.custom: ''
+title: _configthreadlocale
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _configthreadlocale
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _configthreadlocale
 - configthreadlocale
-dev_langs:
-- C++
 helpviewer_keywords:
 - configthreadlocale function
 - locales, per-thread
@@ -32,20 +26,16 @@ helpviewer_keywords:
 - per-thread locale
 - thread locale
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7531a5849bc1e86d469a12747b5c4648b76c9117
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 244ef9ce93e39bef23a9d5d6792a10ca25355f5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648389"
 ---
 # <a name="configthreadlocale"></a>_configthreadlocale
 
-İş parçacığı başına yerel ayar seçenekleri yapılandırır.
+İş parçacığı başına yerel ayar seçeneklerini yapılandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,27 +46,27 @@ int _configthreadlocale( int per_thread_locale_type );
 ### <a name="parameters"></a>Parametreler
 
 *per_thread_locale_type*<br/>
-Ayarlama seçeneği. Aşağıdaki tabloda listelenen seçeneklerden biri.
+Ayarlanacak seçenek. Aşağıdaki tabloda listelenen seçeneklerden biri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki iş parçacığı başına yerel ayar durumu (**_DISABLE_PER_THREAD_LOCALE** veya **_ENABLE_PER_THREAD_LOCALE**), veya -1 hata durumunda.
+Önceki iş parçacığı başına yerel ayar durumu (**_DISABLE_PER_THREAD_LOCALE** veya **_ENABLE_PER_THREAD_LOCALE**), veya hata durumunda -1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Configurethreadlocale** işlevi iş parçacığına özgü yerel kullanımını denetlemek için kullanılır. Bunlardan birini kullanmak *per_thread_locale_type* iş parçacığı başına yerel ayar durumunu belirlemek için seçenekleri:
+**_Configurethreadlocale** işlevi, iş parçacığına özgü yerel ayarların kullanımını denetlemek için kullanılır. Şunlardan birini kullanın *per_thread_locale_type* iş parçacığı başına yerel ayar durumunu belirlemek için seçenekleri:
 
 |||
 |-|-|
-**_ENABLE_PER_THREAD_LOCALE**|Geçerli iş parçacığı kullanımı iş parçacığına özgü yerel ayarı olun. Sonraki çağrılar **setlocale** yalnızca iş parçacığının kendi yerel ayar bu iş parçacığında etkiler.
-**_DISABLE_PER_THREAD_LOCALE**|Genel yerel kullanın geçerli iş parçacığının olun. Sonraki çağrılar **setlocale** genel yerel kullanarak başka bir iş parçacığı bu iş parçacığında etkiler.
-**0**|Bu belirli iş parçacığı için geçerli ayarları alır.
+**_ENABLE_PER_THREAD_LOCALE**|Geçerli iş parçacığı kullanımı iş parçacığına özgü yerel ayarı olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki yalnızca iş parçacığının kendi yerel ayarını etkiler.
+**_DISABLE_PER_THREAD_LOCALE**|Geçerli iş parçacığının genel yerel ayar kullanmasını olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki küresel yerel ayarı kullanan diğer iş parçacıklarını etkiler.
+**0**|Bu belirli iş parçacığının geçerli ayarını alır.
 
-Bu işlevler davranışını etkileyen **setlocale**, **_tsetlocale**, **_wsetlocale**, ve **_setmbcp**. İş parçacığı başına yerel ayar devre dışı, sonraki çağrı olduğunda **setlocale** veya **_wsetlocale** genel yerel kullanan tüm iş parçacığı yerel değiştirir. İş parçacığı başına yerel ayar etkinleştirildiğinde, **setlocale** veya **_wsetlocale** yalnızca geçerli iş parçacığının yerel etkiler.
+Bu işlevler davranışını etkileyen **setlocale**, **_tsetlocale**, **_wsetlocale**, ve **_setmbcp**. İş parçacığı başına yerel ayar devre dışı, herhangi bir sonraki çağrı olduğunda **setlocale** veya **_wsetlocale** genel yerel ayar kullanan tüm iş parçacıklarının yerel ayarını değiştirir. İş parçacığı başına yerel ayar etkin olduğunda, **setlocale** veya **_wsetlocale** yalnızca geçerli iş parçacığının yerel ayarını etkiler.
 
-Kullanırsanız **_configurethreadlocale** bir iş parçacığı başına yerel ayar etkinleştirmek için arama öneririz **setlocale** veya **_wsetlocale** bu iş parçacığında tercih edilen yerel ayarı belirlemek için hemen daha sonra.
+Kullanırsanız **_configurethreadlocale** bir iş parçacığı başına yerel ayarı etkinleştirmek için çağırmanızı öneririz **setlocale** veya **_wsetlocale** bu iş parçacığındaki tercih edilen yerel ayarı belirlemek için hemen sonra.
 
-Varsa *per_thread_locale_type* değerlerden biri değil tabloda listelenen, bu işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve -1 döndürür.
+Varsa *per_thread_locale_type* değerlerden biri değil tabloda listelenen, bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve -1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 

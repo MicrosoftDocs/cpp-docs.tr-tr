@@ -1,31 +1,21 @@
 ---
-title: Sekme denetimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Sekme Denetimi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - TCS_EX_REGISTERDROP
 - TCS_EX_FLATSEPARATORS
-dev_langs:
-- C++
 helpviewer_keywords:
 - TCS_EX_REGISTERDROP extended style [MFC]
 - tab controls [MFC], creating
 - CTabCtrl class [MFC], creating
 - TCS_EX_FLATSEPARATORS extended style
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3dc1acd65aed84321e1f32c3114223899e17f2ad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c444c938c88c2e8bf079f0f3eba80776c54af5ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430884"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573413"
 ---
 # <a name="creating-the-tab-control"></a>Sekme Denetimi Oluşturma
 

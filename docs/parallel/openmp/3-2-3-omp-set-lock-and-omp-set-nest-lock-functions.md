@@ -1,23 +1,13 @@
 ---
-title: 3.2.3 omp_set_lock ve omp_set_nest_lock işlevleri | Microsoft Docs
-ms.custom: ''
+title: 3.2.3 omp_set_lock ve omp_set_nest_lock İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b5323879-f72e-418e-953f-3979fdda17a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 792b95baef2821bb693d9a90fc228d2b0c508e1f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8efc1f844be2d1b8cf9b15242758914edd0fca14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420367"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617665"
 ---
 # <a name="323-ompsetlock-and-ompsetnestlock-functions"></a>3.2.3 omp_set_lock ve omp_set_nest_lock İşlevleri
 

@@ -1,10 +1,6 @@
 ---
-title: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l | Microsoft Docs
-ms.custom: ''
+title: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbcjistojms
 - _mbcjmstojis
@@ -32,8 +28,6 @@ f1_keywords:
 - mbcjmstojis_l
 - mbcjistojms_l
 - mbcjmstojis
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbcjmstojis_l function
 - _mbcjistojms function
@@ -44,23 +38,19 @@ helpviewer_keywords:
 - mbcjmstojis_l function
 - mbcjistojms_l function
 ms.assetid: dece5127-b337-40a4-aa10-53320a2c9432
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 07d34331e38362a6491e3231566443b5fe03260e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22cf8eeb5f99b6abee624aa3b1d06246d7230652
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402439"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665900"
 ---
 # <a name="mbcjistojms-mbcjistojmsl-mbcjmstojis-mbcjmstojisl"></a>_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 
-Japonya endüstri standardı (JIS) ve Japonya Microsoft (JMS) karakter arasında dönüştürür.
+Japon endüstri standardı (JIS) ve Japonya Microsoft (JMS) karakterleri arasında dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,19 +81,19 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Japonca yerel ayar, bu işlevler dönüştürülen karakter döndürür veya hiçbir dönüştürme mümkün ise 0 döndürür. Bir olmayan Japonca yerel ayarını bu işlevler geçirilen karakteri döndürür.
+Japonca yerel ayarında, bu işlevler dönüştürülmüş karakteri veya dönüştürme mümkün değilse 0 değerini döndürür. Japonca dışındaki yerel ayarlarda, bu işlevler geçirilen karakteri döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbcjistojms** işlevi için bir Microsoft Kanji (Shift JIS) karakteri Japonya endüstri standardı (JIS) karakter dönüştürür. Yalnızca sağlama ve izi bayt 0x21 - 0x7E aralıkta olduğunda karakter dönüştürülür. Sağlama veya deneme bayt bu aralığın dışında kalırsa **errno** ayarlanır **EILSEQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_Mbcjistojms** işlevi bir Japon endüstri standardı (JIS) karakterini bir Microsoft Kanji (Shift JIS) karakterine dönüştürür. Karakter yalnızca ön ve arka baytlar 0x21 - 0x7E aralığında ise dönüştürülür. Ön veya deneme baytı bu aralığın dışında kalırsa **errno** ayarlanır **EILSEQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**_Mbcjmstojis** işlevi Shift JIS karakter JIS karaktere dönüştürür. Karakter yalnızca bayt aralığı 0x81-0x9F veya 0xE0 - 0xFC ve sondaki bayt aralığı 0x40-0x7E veya 0x80 - 0xFC ise dönüştürülür. Bazı kod aralık yok atanmış bir karakter içeren ve dönüştürülemiyor noktaları unutmayın.
+**_Mbcjmstojis** işlevi bir Shift JIS karakterini bir JIS karakterine dönüştürür. Karakter yalnızca ön bayt 0x81-0x9F veya 0xE0 - aralığında 0xfc aralığında olan ve bayt 0x40-0x7E veya 0x80 – 0xfc aralığında menzil dönüştürülür. Bazı kodlar bu aralıktaki atanmış karakter içeren ve dönüştürülemediğini gösterdiğini unutmayın.
 
-Değer *c* baytı dönüştürmek için karakter olan üst 8 bit temsil eder ve sondaki bayt olan alt 8 bit temsil bir 16 bit değeri olmalıdır.
+Değer *c* , üst 8 biti dönüştürülecek karakterin ön baytını temsil eden ve bayt olan alt 8 bit temsil eden 16-bit bir değer olmalıdır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde, **_mbcjistojms** ve **_mbcjmstojis** adı veriliyordu **jistojms** ve **jmstojis**sırasıyla. **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** ve **_mbcjmstojis_l** bunun yerine kullanılmalıdır.
+Önceki sürümlerde **_mbcjistojms** ve **_mbcjmstojis** çağrılan **jistojms** ve **jmstojis**sırasıyla. **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** ve **_mbcjmstojis_l** bunun yerine kullanılmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -114,7 +104,7 @@ Değer *c* baytı dönüştürmek için karakter olan üst 8 bit temsil eder ve 
 |**_mbcjmstojis**|\<Mbstring.h >|
 |**_mbcjmstojis_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

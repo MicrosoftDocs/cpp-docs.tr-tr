@@ -1,27 +1,17 @@
 ---
-title: Sınıf şablonları | Microsoft Docs
-ms.custom: ''
+title: Sınıf Şablonları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [C++], operating on type
 - class templates
 - templates, class templates
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d6b53cb2a5c1b76ee154f7e3fad493a903d75eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1bf384967af9d6d639e11df882751bbdaf1b0aa6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660323"
 ---
 # <a name="class-templates"></a>Sınıf Şablonları
 

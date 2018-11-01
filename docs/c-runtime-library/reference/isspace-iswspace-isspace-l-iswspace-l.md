@@ -1,10 +1,6 @@
 ---
-title: isspace, iswspace, _isspace_l, _iswspace_l | Microsoft Docs
-ms.custom: ''
+title: isspace, iswspace, _isspace_l, _iswspace_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - iswspace
 - _isspace_l
@@ -27,8 +23,6 @@ f1_keywords:
 - iswspace
 - _istspace
 - isspace
-dev_langs:
-- C++
 helpviewer_keywords:
 - iswspace function
 - isspace function
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - _istspace function
 - istspace function
 ms.assetid: b851e0c0-36bb-4dac-a1a3-533540939035
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 404fee8d74cec18c277f6c076a7cc41065a8b242
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cd93b196c23be5e91852e8c02d75055c1051b912
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402253"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590465"
 ---
 # <a name="isspace-iswspace-isspacel-iswspacel"></a>isspace, iswspace, _isspace_l, _iswspace_l
 
-Tamsayı bir boşluk karakteri temsil edip etmediğini belirler.
+Bir tamsayı bir boşluk karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,18 +66,18 @@ int _iswspace_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* bir boşluk karakteri belirli bir gösterimidir. **isspace** sıfır olmayan bir değer döndürür *c* bir boşluk karakteri (0x09-0x0D veya 0x20). İçin test koşul sonucunu **isspace** işlevi bağımlı **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin olmayan sürümleri **_l** tüm yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; olan sürümleri **_l** kullandıkları dışında sonek aynı Bunun yerine geçirilen yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Yordamların her biri bu döndürür sıfır olmayan *c* bir boşluk karakteri belirli bir gösterimidir. **isspace** sıfır olmayan bir değer döndürür *c* bir boşluk karakteri (0x09-0x0D veya 0x20). İçin test durumunun sonucu **isspace** işlevi bağlıdır **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı için herhangi bir yerel ayara bağımlı davranış; sahip sürümler **_l** sonekine kullanmaları dışında Bunun yerine iletilen yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-**iswspace** sıfır olmayan bir değer döndürür *c* standart bir boşluk karakteri karşılık gelen bir geniş karakter.
+**iswspace** sıfır olmayan bir değer döndürür *c* bir standart boşluk karakterine karşılık gelen bir geniş karakterse.
 
-Davranışını **isspace** ve **_isspace_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **isspace** ve **_isspace_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -104,7 +94,7 @@ Davranışını **isspace** ve **_isspace_l** tanımsız ise *c* EOF değil veya
 |**_isspace_l**|\<CType.h >|
 |**_iswspace_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

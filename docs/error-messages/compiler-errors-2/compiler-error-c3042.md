@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3042 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3042
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3042
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3042
 ms.assetid: bf73f61e-5bd2-40a8-9b06-6244e6a15a41
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36fde6251244582a0626c80aa673ed6dd0e559d2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: deb3b8d6251316bceb71ce03f2bda88520bbb9b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626804"
 ---
 # <a name="compiler-error-c3042"></a>Derleyici Hatası C3042
 

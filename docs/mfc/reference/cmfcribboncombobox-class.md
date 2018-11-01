@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonComboBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonComboBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonComboBox
 - AFXRIBBONCOMBOBOX/CMFCRibbonComboBox
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::RemoveAllItems
 - AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SelectItem
 - AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SetDropDownHeight
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonComboBox [MFC], CMFCRibbonComboBox
 - CMFCRibbonComboBox [MFC], AddItem
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CMFCRibbonComboBox [MFC], SelectItem
 - CMFCRibbonComboBox [MFC], SetDropDownHeight
 ms.assetid: 9b29a6a4-cf17-4152-9b13-0bf90784b30d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2681d5f54211ac2097dcae410ba69743af4b4690
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5c9e6c43c4e87508dc9ab66976309f80cdf09adc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446167"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541433"
 ---
 # <a name="cmfcribboncombobox-class"></a>CMFCRibbonComboBox sınıfı
 

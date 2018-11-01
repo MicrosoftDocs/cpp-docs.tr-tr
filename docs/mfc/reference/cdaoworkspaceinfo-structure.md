@@ -1,28 +1,18 @@
 ---
-title: Cdaoworkspaceınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoWorkspaceInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoWorkspaceInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoWorkspaceInfo structure [MFC]
 - DAO (Data Access Objects), Workspaces collection
 ms.assetid: a1f4b25e-f9c6-4196-b075-d1df99c54124
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f46bfec2d74b0d1fd292b3c9852ba8ea568329a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e47df7323d130bee2a378a4cf7dcae8001641f6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562818"
 ---
 # <a name="cdaoworkspaceinfo-structure"></a>CDaoWorkspaceInfo Yapısı
 

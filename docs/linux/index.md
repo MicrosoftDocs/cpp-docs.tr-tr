@@ -1,18 +1,13 @@
 ---
 layout: LandingPage
-ms.topic: conceptual
 title: C++ belgeleri ile Linux geliştirme
 description: Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c17106038bc79742351efef07a5900a4709c9569
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 78615df211381ec419b4fb46cac7a0ce8057c78e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213919"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461496"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
 

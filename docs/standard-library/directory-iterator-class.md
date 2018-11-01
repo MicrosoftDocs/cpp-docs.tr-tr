@@ -1,10 +1,6 @@
 ---
-title: directory_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: directory_iterator Sınıfı
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator
@@ -16,11 +12,7 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator::operator*
 - filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;
 - filesystem/std::experimental::filesystem::directory_iterator::operator++
-dev_langs:
-- C++
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator
 - std::experimental::filesystem::_Directory_iterator::_Directory_iterator
@@ -33,14 +25,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator*
 - std::experimental::filesystem::directory_iterator::operator-&gt;
 - std::experimental::filesystem::directory_iterator::operator++
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd5fedb8869533755546089bdee903403f30dcea
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6763f2a96b771fadbec311cf8740352fff53e29a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610203"
 ---
 # <a name="directoryiterator-class"></a>directory_iterator Sınıfı
 

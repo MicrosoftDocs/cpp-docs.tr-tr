@@ -1,28 +1,18 @@
 ---
-title: Birleşimler | Microsoft Docs
-ms.custom: ''
+title: Birleşimler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - union_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - class types [C++], unions as
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6f49ae01f3e67620f913d637e44e0ef869b5b05
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: df100ddcacd0a9b1d839dbe6a0551eb5f5707afb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106265"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608959"
 ---
 # <a name="unions"></a>Birleşimler
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4674 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4674
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4674
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4674
 ms.assetid: 638dae0b-b82c-4865-9599-72630827ca09
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9b2f945982e80b49403387241f29a50876274e66
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f7db2f37224a8defffb545b0cfaf018fd4654227
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024885"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614831"
 ---
 # <a name="compiler-warning-level-1-c4674"></a>Derleyici Uyarısı (düzey 1) C4674
 

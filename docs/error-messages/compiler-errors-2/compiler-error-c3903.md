@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3903 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3903
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3903
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3903
 ms.assetid: cf47d7ad-a3bd-4f75-a253-71586e7a3be6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dcdeb10df07abcab34afddc7b852f75a2180bf2e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0d650d5c3a361ae91e9a35a39866d30bff93f5f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086485"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654200"
 ---
 # <a name="compiler-error-c3903"></a>Derleyici Hatası C3903
 

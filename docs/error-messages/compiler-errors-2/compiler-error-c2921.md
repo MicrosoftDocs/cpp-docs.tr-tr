@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2921 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2921
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2921
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2921
 ms.assetid: 323642a0-bfc4-4942-9f41-c3adf5c54296
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: afc445bd9d30e97d669cf02b53d98553e9658e47
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 47f348f6c30d96e8c4ae40e0c26a8ebade14c8ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611256"
 ---
 # <a name="compiler-error-c2921"></a>Derleyici Hatası C2921
 

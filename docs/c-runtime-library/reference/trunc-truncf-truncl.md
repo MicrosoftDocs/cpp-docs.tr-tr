@@ -1,11 +1,6 @@
 ---
-title: trunc, truncf, truncl | Microsoft Docs
-ms.custom: ''
+title: trunc, truncf, truncl
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - trunc
 - truncf
@@ -30,27 +25,21 @@ f1_keywords:
 - math/trunc
 - math/truncf
 - math/truncl
-dev_langs:
-- C++
 helpviewer_keywords:
 - trunc function
 - truncf function
 - truncl function
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 67c179065a6b2c6fc10a4ba6ba87868c8306a2aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6e023b9d894ea1b40a0e056e73b7c32f1e3cbed7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409465"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519866"
 ---
 # <a name="trunc-truncf-truncl"></a>trunc, truncf, truncl
 
-Küçük veya bu değere eşit belirtilen kayan nokta en yakın tamsayıya belirler.
+Belirtilen kayan nokta değerine eşit veya daha az olan en yakın tamsayıya belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,33 +61,33 @@ Kesmek için değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, tamsayı değerini döndürür *x*, yuvarlak sıfır bulunun.
+Başarılı olursa, bir tamsayı değerini döndürür *x*, yuvarlak sıfır.
 
 Aksi takdirde, aşağıdakilerden birini döndürebilir:
 
-|Sorun|Döndür|
+|Sorun|döndürülecek|
 |-----------|------------|
 |*x* ±INFINITY =|x|
 |*x* ±0 =|x|
 |*x* NaN =|NaN|
 
-Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+Hatalar rapor, belirtilen [_matherr](matherr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **trunc** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **trunc** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **trunc** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **trunc** her zaman alan ve döndüren bir **çift**.
 
-En büyük kayan nokta değerlerine tam tamsayılar olduğundan, bu işlev, kendi taşma değil. Ancak, işlevi tamsayı türde bir değer döndürerek taşmasına neden olabilir.
+En büyük kayan nokta değerlerine tam tam sayılar olduğundan, bu işlev, kendi taşma değil. Bununla birlikte, işlev bir tamsayı türü bir değer döndürerek taşma neden olabilir.
 
-Ayrıca örtük olarak kayan nokta için tam sayı dönüştürerek yuvarlamak; Ancak, bunun nedenle hedef türü depolanan değerlerin sınırlıdır.
+Aynı zamanda örtük olarak kayan nokta için integral dönüştürerek aşağı YUVARLA; Ancak, bunu yapmanız bu nedenle hedef türünde depolanan değerleri sınırlıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**trunc**, **truncf**, **truncl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,12 +1,6 @@
 ---
-title: Bir veri kaynağına bağlanma | Microsoft Docs
-ms.custom: ''
+title: Veri Kaynağına Bağlanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - database connections [C++], ODBC
 - ODBC connections [C++], using
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ab23f62795b952b7b23473c1e687a2187218bbbf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b7bb0ffe169fd9b4167e6af4b772df23acf02212
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575532"
 ---
 # <a name="connecting-to-a-data-source"></a>Veri Kaynağına Bağlanma
 

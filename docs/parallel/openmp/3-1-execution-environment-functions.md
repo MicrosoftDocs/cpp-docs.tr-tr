@@ -1,23 +1,13 @@
 ---
-title: 3.1 yürütme ortamı işlevleri | Microsoft Docs
-ms.custom: ''
+title: 3.1 Yürütme Ortamı İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 7d3e6f47-ce01-4dab-946b-bccc220e2ddd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dadb6f2ae7abeb8ed06f8979fd955dee3c7edc36
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fae68a072063382fa5a5a33fe33fbe4460fb449f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391988"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668812"
 ---
 # <a name="31-execution-environment-functions"></a>3.1 Yürütme Ortamı İşlevleri
 

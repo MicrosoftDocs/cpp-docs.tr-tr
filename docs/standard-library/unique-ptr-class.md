@@ -1,10 +1,6 @@
 ---
-title: unique_ptr sınıfı | Microsoft Docs
-ms.custom: ''
+title: unique_ptr Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::unique_ptr
 - memory/std::unique_ptr::deleter_type
@@ -15,8 +11,6 @@ f1_keywords:
 - memory/std::unique_ptr::release
 - memory/std::unique_ptr::reset
 - memory/std::unique_ptr::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::unique_ptr [C++]
 - std::unique_ptr [C++], deleter_type
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - std::unique_ptr [C++], reset
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f148d548cb9d3c93e94f51c1cd8c90fae69527f8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 00a29fc22c07cf54d4a26cd3353deef0b7a88acc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642202"
 ---
 # <a name="uniqueptr-class"></a>unique_ptr Sınıfı
 

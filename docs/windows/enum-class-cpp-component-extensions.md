@@ -1,24 +1,14 @@
 ---
-title: sabit listesi sınıfı (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7c63a043b8f1a91654c0b765632969b82725a3c0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5bc850831e961a500ae71ce90e3ca39b3aabd159
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592523"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
 

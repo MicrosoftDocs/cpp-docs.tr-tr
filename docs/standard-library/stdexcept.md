@@ -1,31 +1,21 @@
 ---
-title: '&lt;stdexcept&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;stdexcept&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <stdexcept>
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdexcept header
 ms.assetid: 495c10b1-1e60-4514-9f8f-7fda11a2f522
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c28e4bbccb3c28c314226b8f215407292d5e200
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8a8c99f2651d10d4fc2aff413a06256127f32d7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582799"
 ---
 # <a name="ltstdexceptgt"></a>&lt;stdexcept&gt;
 
-Raporlama özel durumlar için kullanılan birkaç standart sınıfları tanımlar. Türetme hiyerarşi tüm sınıfından türetilen sınıflar form [özel durum](../standard-library/exception-class.md) ve özel durumları iki genel türleri şunlardır: mantıksal hataları ve çalışma zamanı hataları. Mantıksal hataları Programcı hatalar nedeniyle oluşur. Bunlar, temel sınıf logic_error türetilen ve şunları içerir:
+Raporlama özel durumlar için kullanılan bazı standart sınıfları tanımlar. Türetme hiyerarşi sınıftan türetilmiş tüm sınıfları form [özel durum](../standard-library/exception-class.md) ve özel durumları iki genel türleri şunlardır: mantıksal hataları ve çalışma zamanı hataları. Mantıksal hataları Programcı hatalarına neden olur. Bunlar, temel sınıf logic_error türetilir ve şunları içerir:
 
 - `domain_error`
 
@@ -35,7 +25,7 @@ Raporlama özel durumlar için kullanılan birkaç standart sınıfları tanıml
 
 - `out_of_range`
 
-Kitaplık işlevleri veya çalışma zamanı sistem hataları nedeniyle çalışma zamanı hataları oluşur. Bunlar, temel sınıf runtime_error türetilen ve şunları içerir:
+Kitaplık işlevleri veya çalışma zamanı sistemi hataları nedeniyle çalışma zamanı hataları oluşur. Bunlar, temel sınıf runtime_error türetilir ve şunları içerir:
 
 - `overflow_error`
 
@@ -47,15 +37,15 @@ Kitaplık işlevleri veya çalışma zamanı sistem hataları nedeniyle çalış
 
 |örneği|Açıklama|
 |-|-|
-|[domain_error Sınıfı](../standard-library/domain-error-class.md)|Sınıfı, bir etki alanı hatayı bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[invalid_argument Sınıfı](../standard-library/invalid-argument-class.md)|Sınıfı, geçersiz bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[length_error Sınıfı](../standard-library/length-error-class.md)|Sınıfın belirtilmesi çok uzun bir nesne oluşturma girişimi bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[logic_error Sınıfı](../standard-library/logic-error-class.md)|Sınıf, mantıksal önkoşulları ihlalleri gibi program yürütülmeden önce hatalarını raporlamak için büyük olasılıkla algılanabilir oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[out_of_range Sınıfı](../standard-library/out-of-range-class.md)|Sınıfı, geçerli aralığın dışında bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[overflow_error Sınıfı](../standard-library/overflow-error-class.md)|Sınıfı, aritmetik taşma bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
+|[domain_error Sınıfı](../standard-library/domain-error-class.md)|Sınıfı, bir etki alanı hatayı bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
+|[invalid_argument Sınıfı](../standard-library/invalid-argument-class.md)|Sınıfı, geçersiz bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
+|[length_error Sınıfı](../standard-library/length-error-class.md)|Sınıfın belirtilmesi için çok uzun bir nesne oluşturma girişimi bildirmek için oluşturulan tüm özel durumlar için taban sınıf görevi görür.|
+|[logic_error Sınıfı](../standard-library/logic-error-class.md)|Sınıf, mantıksal önkoşulları ihlalleri gibi program yürütülmeden önce büyük olasılıkla algılanabilir rapor hataları için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
+|[out_of_range Sınıfı](../standard-library/out-of-range-class.md)|Sınıfı, geçerli aralığın dışında bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
+|[overflow_error Sınıfı](../standard-library/overflow-error-class.md)|Sınıfı, bir aritmetik taşma bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
 |[range_error Sınıfı](../standard-library/range-error-class.md)|Sınıfı, bir aralık hatayı bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[runtime_error Sınıfı](../standard-library/runtime-error-class.md)|Sınıfı yalnızca program yürüttüğünde hatalarını raporlamak için büyük olasılıkla algılanabilir oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
-|[underflow_error Sınıfı](../standard-library/underflow-error-class.md)|Sınıfı, bir aritmetik underflow bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
+|[runtime_error Sınıfı](../standard-library/runtime-error-class.md)|Sınıfı, programı yürütüldüğünde, büyük olasılıkla algılanabilir rapor hataları için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
+|[underflow_error Sınıfı](../standard-library/underflow-error-class.md)|Sınıfı, bir aritmetik taşma bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

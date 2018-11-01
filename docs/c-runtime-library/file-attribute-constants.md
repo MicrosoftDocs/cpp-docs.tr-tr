@@ -1,10 +1,6 @@
 ---
-title: Dosya öznitelik sabitleri | Microsoft Docs
-ms.custom: ''
+title: Dosya Öznitelik Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - A_HIDDEN
 - _A_NORMAL
@@ -18,8 +14,6 @@ f1_keywords:
 - A_RDONLY
 - _A_ARCH
 - A_ARCH
-dev_langs:
-- C++
 helpviewer_keywords:
 - constants [C++], file attributes
 - file attribute constants [C++]
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - _A_HIDDEN constant
 - _A_RDONLY constant
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42745d25c0f743fa1a11226d5cfe433327c8ff2a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9aceef7f9c28da3ed3d0d98f4fc579a3c17480e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077054"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660349"
 ---
 # <a name="file-attribute-constants"></a>Dosya Öznitelik Sabitleri
 

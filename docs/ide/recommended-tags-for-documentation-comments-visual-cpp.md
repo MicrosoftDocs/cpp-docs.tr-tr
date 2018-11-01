@@ -1,23 +1,13 @@
 ---
-title: Belge açıklamaları (Visual C++) için önerilen etiketler | Microsoft Docs
-ms.custom: ''
+title: Belge Açıklamaları için Önerilen Etiketler (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b48b93b6134d0618e80552752c18beb1f03f689
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 251baedbf37901a58b34b66b7a10bbdcf5d66557
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418300"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564196"
 ---
 # <a name="recommended-tags-for-documentation-comments-visual-c"></a>Belge Açıklamaları için Önerilen Etiketler (Visual C++)
 

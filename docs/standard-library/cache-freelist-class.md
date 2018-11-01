@@ -1,31 +1,21 @@
 ---
-title: cache_freelist sınıfı | Microsoft Docs
-ms.custom: ''
+title: cache_freelist Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::cache_freelist
 - allocators/stdext::cache_freelist::allocate
 - allocators/stdext::cache_freelist::deallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::cache_freelist
 - stdext::cache_freelist [C++], allocate
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3d3902d900e0dad5ec3e335e9c3424d58ee2674
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 56fdfb191f9208a5ffa692e1d599545ddeaeb36c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960423"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620096"
 ---
 # <a name="cachefreelist-class"></a>cache_freelist Sınıfı
 

@@ -1,11 +1,6 @@
 ---
-title: tgamma, tgammaf, tgammal | Microsoft Docs
-ms.custom: ''
+title: tgamma, tgammaf, tgammal
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - tgamma
 - tgammaf
@@ -30,27 +25,21 @@ f1_keywords:
 - math/tgamma
 - math/tgammaf
 - math/tgammal
-dev_langs:
-- C++
 helpviewer_keywords:
 - tgamma function
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7861b297646f4a704134e0d874fad8c924a7ebc8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6cfe455b0e9e83cd5283d36fed33ca168bc97d0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570670"
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
 
-Belirtilen değer Gama işlevinin belirler.
+Belirtilen değerin gama fonksiyonu belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,35 +75,35 @@ Gama, bulunacak değer.
 
 Başarılı olursa, gama döndürür *x*.
 
-Bir aralık hata oluşabilir büyüklüğünü *x* çok büyük ya da veri türü için çok küçük. Bir etki alanı hatası ya da aralık hatası ortaya çıkabilir *x* < = 0.
+Bir aralık hatası oluşabilir büyüklüğünü *x* çok büyük ya da veri türü için çok küçük. Bir etki alanı hatası veya aralığı hata ortaya çıkabilir *x* < = 0.
 
-|Sorun|Döndür|
+|Sorun|döndürülecek|
 |-----------|------------|
 |x = ±0|±INFINITY|
 |x = negatif tamsayı|NaN|
-|x = - SONSUZ|NaN|
-|x = + SONSUZ|+ SONSUZ|
+|x = - INFİNİTY|NaN|
+|x = + INFİNİTY|+ INFİNİTY|
 |x NaN =|NaN|
 |etki alanı hatası|NaN|
-|kutbu'na hata|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|Underflow aralık hatası|doğru değeri, yuvarlama sonra.|
+|kutup hata|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
+|Taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
+|Yetersiz aralık hatası|doğru değeri, sonra yuvarlama.|
 
-Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+Hatalar rapor, belirtilen [_matherr](matherr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **tgamma** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **tgamma** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **tgamma** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **tgamma** her zaman alan ve döndüren bir **çift**.
 
-X doğal sayı ise, bu işlevi (x-1) çarpımını döndürür.
+X doğal sayı ise, bu işlev (x-1) çarpımını döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**tgamma**, **tgammaf**, **tgammal**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

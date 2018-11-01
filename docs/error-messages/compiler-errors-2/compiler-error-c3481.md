@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3481 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3481
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3481
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3481
 ms.assetid: 5d09375a-5ed3-4b61-86ed-45e91fd734c7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 25634bb455a032ceff51d5e35f7a16e00e020326
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 32a04c2c49f8d9d974c3423756c4c9fc59a46495
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066901"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661987"
 ---
 # <a name="compiler-error-c3481"></a>Derleyici Hatası C3481
 

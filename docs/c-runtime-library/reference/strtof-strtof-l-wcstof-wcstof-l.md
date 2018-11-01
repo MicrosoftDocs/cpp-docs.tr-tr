@@ -1,10 +1,6 @@
 ---
-title: strtof, _strtof_l, wcstof, _wcstof_l | Microsoft Docs
-ms.custom: ''
+title: strtof, _strtof_l, wcstof, _wcstof_l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strtof_l
 - wcstof
@@ -34,8 +30,6 @@ f1_keywords:
 - wcstof
 - corecrt_wstdlib/_wcstof_l
 - _wcstof_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strtof_l function
 - _tcstof function
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - _tcstof_l function
 - strtof function
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95db2a75d04454289b01f96680df6c5b5ab89e78
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 10a50a175685f3e8f7f1241683c7705fd9a9b142
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607930"
 ---
 # <a name="strtof-strtofl-wcstof-wcstofl"></a>strtof, _strtof_l, wcstof, _wcstof_l
 
-Dizeleri tek duyarlıklı kayan noktalı değerine dönüştürür.
+Dizeleri bir tek duyarlıklı kayan noktalı değere dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,22 +78,22 @@ float wcstof_l(
 Dönüştürülecek null ile sonlandırılmış dize.
 
 *endptr*<br/>
-Tarama durdurur karakter işaretçi.
+Taramayı durduran karakter işaretçisi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtof** gösterimi, servis talebi işlevi döndürür +/-taşma, ne zaman neden olacağından dışında kayan noktalı sayı değerini döndürür**HUGE_VALF**. İşaretini **HUGE_VALF** gösterilemez değerini oturum eşleşir. **strtof** dönüştürme gerçekleştirilebilir veya bir underflow oluşur 0 döndürür.
+**strtof** gösterimi içinde çalışması işlevi döndürür +/-taşmaya neden olduğu zaman dışında kayan nokta sayı değerini döndürür**HUGE_VALF**. İşaretini **HUGE_VALF** temsil edilemeyen değerin işareti ile eşleşir. **strtof** dönüştürme gerçekleştirilemeyiorsa veya bir Yetersizlik durumu oluşursa 0 döndürür.
 
-**wcstof** değerleri analogously çok döndürür **strtof**. Her iki işlevler için **errno** ayarlanır **ERANGE** taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+**wcstof** çok öğesine değerleri döndürür **strtof**. Her iki işlev için **errno** ayarlanır **ERANGE** taşma veya yetersiz gelme oluşması ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Giriş dizesi her işlevi dönüştürür *strSource* için bir **float**. **Strtof** işlev dönüştürür *strSource* tek duyarlıklı değeri. **strtof** dize okumayı durdurur *strSource* ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. **wcstof** bir joker karakter sürümü **strtof**; kendi *strSource* bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.
+Giriş dizesindeki her işlevi dönüştürür *strSource* için bir **float**. **Strtof** işlev dönüştürür *strSource* tek duyarlıklı bir değere. **strtof** dizesini okumayı durdurur *strSource* bir sayının parçası olarak tanıyamadığı ilk karakterde. Bu sondaki boş karakter olabilir. **wcstof** geniş karakterli sürümüdür **strtof**; *strSource* geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -112,17 +102,17 @@ Giriş dizesi her işlevi dönüştürür *strSource* için bir **float**. **Str
 |**_tcstof**|**strtof**|**strtof**|**wcstof**|
 |**_tcstof_l**|**_strtof_l**|**_strtof_l**|**_wcstof_l**|
 
-**Lc_numerıc** geçerli yerel kategori ayarı belirler tanıma taban karakterinin *strSource*; daha fazla bilgi için bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md). Yok işlevleri **_l** soneki geçerli yerel kullanın; bunun yerine geçirilen yerel kullanmasını dışında son ekine sahip olanlarla aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**Lc_numerıc** taban karakterin tanınmasını geçerli yerel ayar kategori ayarı belirler *strSource*; daha fazla bilgi için bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md). Sahip olmayan işlevler **_l** soneki geçerli yerel ayarı kullanır; bunun yerine geçirilen yerel ayarı kullanmaları dışında son ekine sahip olanları aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Varsa *endptr* değil **NULL**, tarama durduruldu karakter işaretçisi işaret ediyor konumda depolanır *endptr*. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri *strSource* işaret ediyor konumunda depolanan *endptr*.
+Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 
-**strtof** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret etmek için:
+**strtof** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret edecek şekilde:
 
 [*boşluk*] [*oturum*] [*basamak*] [__.__ *basamak*] [{**e** &#124; **E**} [*oturum*] *basamak*]
 
-A *boşluk* , göz ardı edilir; boşluk ve sekme karakterlerden oluşabilir *oturum* da artı (**+**) veya eksi (**-**); ve *basamak* bir veya daha fazla ondalık basamakların. Hiç basamak önce taban karakter görünüyorsa, en az bir taban karakter sonra görünmesi gerekir. Ondalık basamak giriş harfini oluşur üs tarafından izlenebilir (**e** veya **E**) ve isteğe bağlı olarak işaretli bir tam sayı. Ne üs bir parçası, ne de bir taban karakter görünürse, bir taban karakter dizesindeki son basamaklı izleyin varsayılır. Bu form sığmayan ilk karakter tarama durdurur.
+A *boşluk* yoksayılan boşluk ve sekme karakterlerinden oluşabilir *oturum* ya da artı (**+**) veya eksidir (**-**); ve *basamak* bir veya daha fazla ondalık basamaktır. Herhangi bir basamak taban karakterden önce görünüyorsa, en az bir taban karakterden sonra yer almalıdır. Ondalık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**e** veya **E**) ve isteğe bağlı olarak imzalı bir tamsayı. Üstel bir parça ya da bir taban karakter görünürse, taban karakterin dizedeki son basamağı izlediği varsayılır. Bu forma uymayan ilk karakter taramayı durdurur.
 
-Bu işlevlerin UCRT sürümleri Fortran stili dönüştürülmesini desteklemez (**d** veya **D**) üs harf. Bu standart uzantısı CRT önceki sürümleri tarafından desteklenen ve kodunuz için önemli bir değişiklik olabilir.
+Bu işlevlerin UCRT sürümleri Fortran stili dönüştürülmesini desteklemez (**d** veya **D**) üs harf. Bu standart olmayan uzantı CRT önceki sürümleri tarafından desteklenen ve kodunuz için bir değişiklik olması olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -131,7 +121,7 @@ Bu işlevlerin UCRT sürümleri Fortran stili dönüştürülmesini desteklemez 
 |**strtof**, **_strtof_l**|C: \<stdlib.h > C++: &lt;cstdlib > veya \<stdlib.h >|
 |**wcstof**, **_wcstof_l**|C: \<stdlib.h > veya \<wchar.h > C++: &lt;cstdlib >, \<stdlib.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

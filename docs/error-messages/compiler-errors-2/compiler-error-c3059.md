@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3059 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3059
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3059
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3059
 ms.assetid: 57220324-8286-4cab-a1ab-45385eb1eae0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d9f983485353f2f270160a1795bf29b027950cad
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: df1f65f231f72f2efa90458fe9b21339dda80080
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107181"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668435"
 ---
 # <a name="compiler-error-c3059"></a>Derleyici Hatası C3059
 

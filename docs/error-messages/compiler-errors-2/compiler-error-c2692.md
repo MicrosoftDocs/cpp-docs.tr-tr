@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2692 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2692
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2692
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2692
 ms.assetid: 02ade3b4-b757-448b-b065-d7d71bc3f441
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03a9006889c5853e77b5603484ea9d18f2474241
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c469f4944417c9116c7316b01642dd4b370b8c4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611165"
 ---
 # <a name="compiler-error-c2692"></a>Derleyici Hatası C2692
 

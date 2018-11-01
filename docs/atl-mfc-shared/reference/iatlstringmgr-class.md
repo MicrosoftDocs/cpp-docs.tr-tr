@@ -1,10 +1,6 @@
 ---
-title: Iatlstringmgr sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iatlstringmgr sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - IAtlStringMgr
 - ATLSIMPSTR/ATL::IAtlStringMgr
@@ -13,23 +9,17 @@ f1_keywords:
 - ATLSIMPSTR/ATL::Free
 - ATLSIMPSTR/ATL::GetNilString
 - ATLSIMPSTR/ATL::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - shared classes, IAtlStringMgr
 - memory, managing
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d637750ab4aa9dc30ca7b297373cb2c752802d8
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: de0bd720d1806c7950fa9aecc2db6e72aeb1fb4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493944"
 ---
 # <a name="iatlstringmgr-class"></a>Iatlstringmgr sınıfı
 

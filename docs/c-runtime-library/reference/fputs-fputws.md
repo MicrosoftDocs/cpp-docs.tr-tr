@@ -1,10 +1,6 @@
 ---
-title: fputs, fputws | Microsoft Docs
-ms.custom: ''
+title: fputs, fputws
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fputs
 - fputws
@@ -25,8 +21,6 @@ f1_keywords:
 - fputs
 - fputws
 - _fputts
-dev_langs:
-- C++
 helpviewer_keywords:
 - streams, writing strings to
 - fputws function
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - fputs function
 - fputts function
 ms.assetid: d48c82b8-aa17-4830-8c7d-30442ddbb326
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94a8a872d88d42b2e76c5171b1adb22900b66436
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3f7c7cff3300ae28717062a41aebd9e19c0cb5e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400183"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574856"
 ---
 # <a name="fputs-fputws"></a>fputs, fputws
 
@@ -67,20 +57,20 @@ int fputws(
 *str*<br/>
 Çıkış dizesi.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bu işlevlerin her biri negatif olmayan bir değer döndürür. Bir hata **fputs** ve **fputws** dönmek **EOF**. Varsa *str* veya *akış* null işaretçi açıklandığı gibi bu işlevleri geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve ardından **fputs** döndürür **EOF**, ve  **fputws** döndürür **WEOF**.
+Başarılı olursa bu işlevlerin her biri negatif olmayan bir değer döndürür. Bir hatada **fputs** ve **fputws** dönüş **EOF**. Varsa *str* veya *stream* null bir işaretçiyse, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ardından **fputs** döndürür **EOF**, ve  **fputws** döndürür **WEOF**.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bunların her biri kopyaları işlevleri *str* çıktısına *akış* geçerli konumundaki. **fputws** joker karakter bağımsız değişkeni kopyalar *str* için *akış* çok baytlı karakter dizesi veya mi göre bir joker karakter dizesi olarak *akış*metin modunda veya ikili modunda sırasıyla açılır. Hiçbiri işlevi sonlandırma null karakter kopyalar.
+Bu işlevlerin her biri kopyaları *str* çıktısına *stream* geçerli konumunda. **fputws** geniş karakter bağımsız değişkeni kopyalar *str* için *stream* bir çok baytlı karakter veya olup olmadığına göre bir geniş karakterli dize olarak *stream*sırasıyla metin modunda veya İkili modda açılmış. Her iki işlev, sondaki boş karakter kopyalar.
 
-Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **fputs** şu anda çıktı bir UNICODE akışa desteklemiyor.
+Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **fputs** UNICODE akışına çıkış şu anda desteklemiyor.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -95,7 +85,7 @@ Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **fputs
 |**fputs**|\<stdio.h >|
 |**fputws**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -118,7 +108,7 @@ Hello world from fputs.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [puts, _putws](puts-putws.md)<br/>

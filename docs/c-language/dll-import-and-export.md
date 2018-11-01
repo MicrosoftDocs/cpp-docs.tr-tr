@@ -1,27 +1,17 @@
 ---
-title: DLL içeri ve dışarı aktarma | Microsoft Docs
-ms.custom: ''
+title: DLL İçeri ve Dışarı Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - dllimport attribute [C++], storage-class attribute
 - dllexport attribute [C++]
 - dllexport attribute [C++], storage-class attribute
 ms.assetid: ab058610-0190-4354-8955-86db66add7c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9cd950504297909f9c3839df5781a6db4753f085
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8166b040f016ace542873f550b196b06c7c4572a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095410"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531979"
 ---
 # <a name="dll-import-and-export"></a>DLL İçeri ve Dışarı Aktarma
 

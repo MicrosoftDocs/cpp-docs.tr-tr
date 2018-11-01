@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4101 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4101
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4101
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4101
 ms.assetid: d98563cd-9dce-4aae-8f12-bd552a4ea677
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1549a327329d438cb30bd6908e07419eb1b6bc1a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d1109a32e754a6055e5e1d90632ad85332d832f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661129"
 ---
 # <a name="compiler-warning-level-3-c4101"></a>Derleyici Uyarısı (Düzey 3) C4101
 

@@ -1,28 +1,18 @@
 ---
-title: korumalı (C++) | Microsoft Docs
-ms.custom: ''
+title: protected (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - protected_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - protected keyword [C++], member access
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dd04b902c5210978a36a6075803b836f01c9da7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1cbe88a80b83caa78972d1e2799c1e0d87d1cb0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471007"
 ---
 # <a name="protected-c"></a>protected (C++)
 

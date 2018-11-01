@@ -1,29 +1,19 @@
 ---
-title: C++ için en iyi güvenlik yöntemleri | Microsoft Docs
-ms.custom: ''
+title: C++ İçin En İyi Güvenlik Uygulamaları
 ms.date: 05/08/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - securitybestpracticesVC
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, security
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a42abcf891b5ebdeb8f9eaac8fa7fc9b20733558
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6816a7ffbc09d0e01659dd56282e238fdbfc4a27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462315"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 

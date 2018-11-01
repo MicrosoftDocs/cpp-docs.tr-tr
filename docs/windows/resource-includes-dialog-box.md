@@ -1,14 +1,8 @@
 ---
-title: Kaynak içerikleri iletişim kutusu (C++) | Microsoft Docs
-ms.custom: ''
+title: Kaynak içerikleri iletişim kutusu (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.resourceincludes
-dev_langs:
-- C++
 helpviewer_keywords:
 - Resource Includes dialog box [C++]
 - rc files [C++], changing storage
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - symbol header files [C++], read-only
 - symbols [C++], symbol header files
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 626327fec8efda873551e6d9ee502d7405eec5a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b0e7125e07deb965055da54126eb0933e64c0429
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625072"
 ---
 # <a name="resource-includes-dialog-box-c"></a>Kaynak içerikleri iletişim kutusu (C++)
 

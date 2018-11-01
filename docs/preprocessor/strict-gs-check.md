@@ -1,28 +1,18 @@
 ---
-title: strict_gs_check | Microsoft Docs
-ms.custom: ''
+title: strict_gs_check
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - strict_gs_check
 - strict_gs_check_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - strict_gs_check pragma
 ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31d78a4d249852b730d80054b62a06699f50356b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f09a2b4b50c97faeaa986049abfc636d7cefdc8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534738"
 ---
 # <a name="strictgscheck"></a>strict_gs_check
 

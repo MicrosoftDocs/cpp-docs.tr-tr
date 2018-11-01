@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2234 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2234
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2234
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2234
 ms.assetid: cfa42458-c803-4717-a017-9eca1c0cbfb0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 294ca98d1f4ce8a86e551ab17269458784992a53
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 16cc09f43f8705452c207e5218f4cc274557e825
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053108"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611477"
 ---
 # <a name="compiler-error-c2234"></a>Derleyici Hatası C2234
 

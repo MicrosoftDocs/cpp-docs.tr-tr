@@ -1,10 +1,6 @@
 ---
-title: strcat_s, wcscat_s, _mbscat_s | Microsoft Docs
-ms.custom: ''
+title: strcat_s, wcscat_s, _mbscat_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strcat_s
 - _mbscat_s
@@ -27,8 +23,6 @@ f1_keywords:
 - strcat_s
 - wcscat_s
 - _mbscat_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcscat_s function
 - strcat_s function
@@ -37,23 +31,19 @@ helpviewer_keywords:
 - _mbscat_s function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1f97152da60697edfcf337f8cceddfd77ed2704c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7b622fbefc690317a4b57e3fd1bb54712b84f2a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621318"
 ---
 # <a name="strcats-wcscats-mbscats"></a>strcat_s, wcscat_s, _mbscat_s
 
-Bir dize ekler. Bu sürümleri [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dize ekler. Bu sürümleri [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbscat_s** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -93,31 +83,31 @@ errno_t _mbscat_s(
 ### <a name="parameters"></a>Parametreler
 
 *strDestination*<br/>
-Sonlandırılmış hedef dize arabelleği.
+Null ile sonlandırılmış hedef dize arabelleği.
 
 *numberOfElements*<br/>
-Hedef dize arabelleğin boyutu.
+Hedef dize arabelleğinin boyutu.
 
 *strSource*<br/>
-Sonlandırılmış kaynak dizesi arabelleği.
+Null ile sonlandırılmış kaynak dizesi arabelleği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatasında bir hata kodu.
+Başarılıysa sıfır; bir hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*strDestination*|*numberOfElements*|*strSource*|Dönüş değeri|İçeriği *strDestination*|
+|*strDestination*|*numberOfElements*|*strSource*|Dönüş değeri|İçeriğini *strDestination*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL** veya Sonlandırılmamış|tüm|tüm|**EINVAL**|değiştirilmedi|
-|tüm|tüm|**NULL**|**EINVAL**|*strDestination*0 olarak ayarlanırsa [0]|
-|tüm|0 veya çok küçük|tüm|**ERANGE**|*strDestination*0 olarak ayarlanırsa [0]|
+|**NULL** veya Sonlandırılmamış|Tüm|Tüm|**EINVAL**|değiştirilmedi|
+|Tüm|Tüm|**NULL**|**EINVAL**|*strDestination*0 olarak ayarlanırsa [0]|
+|Tüm|0 veya çok küçük|Tüm|**ERANGE**|*strDestination*0 olarak ayarlanırsa [0]|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcat_s** işlevi ekler *strSource* için *strDestination* ve sonuçta elde edilen bir null karakter dizesiyle sonlandırır. İlk karakteri *strSource* sonlandırma null karakterinin üzerine yazar *strDestination*. Davranışını **strcat_s** kaynak ve hedef dizeleri çakışırsa tanımlanmadı.
+**Strcat_s** işlevi ekler *strSource* için *strDestination* ve sonuç dizesini null karakteri ile sona erer. İlk karakteri *strSource* Sonlandırıcı null karakterinin üzerine yazar *strDestination*. Davranışını **strcat_s** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
 
-İkinci parametre toplam arabelleği boyutu, kalan boyut olduğuna dikkat edin:
+İkinci parametre arabelleğinde kalan boyutu toplam boyutu olduğuna dikkat edin:
 
 ```C
 char buf[16];
@@ -126,13 +116,13 @@ strcat_s(buf, 16, " End");               // Correct
 strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 ```
 
-**wcscat_s** ve **_mbscat_s** joker karakter ve çok baytlı karakter sürümleri **strcat_s**. Bağımsız değişkenleri ve dönüş değerini **wcscat_s** joker karakter olan dizeleri; bu **_mbscat_s** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**wcscat_s** ve **_mbscat_s** geniş karakter ve çok baytlı karakter sürümleridir **strcat_s**. Bağımsız değişkenler ve dönüş değeri **wcscat_s** geniş karakterli dizelerdir; **_mbscat_s** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
 
-Varsa *strDestination* null işaretçi veya null ile sonlandırılmış, değil veya *strSource* olan bir **NULL** işaretçisi veya hedef dizesi çok küçük ise geçersiz parametre işleyici çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EINVAL** ve **errno** için **EINVAL**.
+Varsa *strDestination* null bir işaretçiyse veya null ile sonlandırılmış değil veya *strSource* olduğu bir **NULL** işaretçisi veya hedef dize çok küçük ise, geçersiz parametre işleyici çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -148,7 +138,7 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**wcscat_s**|\<String.h > veya \<wchar.h >|
 |**_mbscat_s**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

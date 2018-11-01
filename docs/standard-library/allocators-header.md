@@ -1,27 +1,17 @@
 ---
-title: '&lt;Ayırıcılar&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Ayırıcılar&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <allocators>
-dev_langs:
-- C++
 helpviewer_keywords:
 - allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f860d90905c244327787182c40505207c4745201
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 064afd4467a2aedebe3a9892fc80b14597c8552f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544085"
 ---
 # <a name="ltallocatorsgt"></a>&lt;Ayırıcılar&gt;
 

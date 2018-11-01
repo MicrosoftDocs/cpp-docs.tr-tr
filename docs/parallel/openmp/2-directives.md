@@ -1,23 +1,13 @@
 ---
-title: 2. Yönergeleri | Microsoft Docs
-ms.custom: ''
+title: 2. Yönergeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab664bf15dd098b9d3e3bd7d6bd9c73db47fff2e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fabaac02f06d7d021c37c3ce66893c18354493e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436916"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572308"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 

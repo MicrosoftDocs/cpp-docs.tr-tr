@@ -1,28 +1,17 @@
 ---
-title: 'Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme | Microsoft Docs'
-ms.custom: ''
+title: 'Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC data sources [C++], schema
 - schemas [C++], data sources
 - data sources [C++], determining schema
 ms.assetid: 17284acb-eb10-4f27-9944-ad1d973c0b05
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: b5ba9789226e54c9607e85caaa5e8af3f157f02d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ed6500c5718cf90b39600b12659a3090fe9532ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052644"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580795"
 ---
 # <a name="data-source-determining-the-schema-of-the-data-source-odbc"></a>Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)
 

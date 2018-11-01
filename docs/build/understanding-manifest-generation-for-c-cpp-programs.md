@@ -1,25 +1,15 @@
 ---
-title: C/C++ programları bildirim üretimini anlama | Microsoft Docs
-ms.custom: ''
+title: C/C++ Programları Bildirim Üretimini Anlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91120d1c8485d43a447310440bbe0bab8f7e3b75
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d4dceec94a8868ed9b6d744a9f481825bf6af58a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660453"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ Programları Bildirim Üretimini Anlama
 

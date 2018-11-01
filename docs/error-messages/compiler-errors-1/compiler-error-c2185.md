@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2185 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2185
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2185
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2185
 ms.assetid: 74bc9f64-7b4c-4735-ba13-67c43f8c47db
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29d7fd5a94122de9950ea6bcec3888a70b743c74
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d1d9d3d6f40d5797d5d51684734adc80ee8da591
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589949"
 ---
 # <a name="compiler-error-c2185"></a>Derleyici Hatası C2185
 

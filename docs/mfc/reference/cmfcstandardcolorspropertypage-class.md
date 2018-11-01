@@ -1,25 +1,15 @@
 ---
-title: CMFCStandardColorsPropertyPage sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCStandardColorsPropertyPage sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCStandardColorsPropertyPage class [MFC]
 ms.assetid: b84b7cfb-bb24-4c65-804a-5b642cb64400
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 475780db8883fe9a8c8393648876764406cee376
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7663f85b20ab88c999af7ba37b260237d0fd869e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380600"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520672"
 ---
 # <a name="cmfcstandardcolorspropertypage-class"></a>CMFCStandardColorsPropertyPage sınıfı
 

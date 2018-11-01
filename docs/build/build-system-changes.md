@@ -1,14 +1,8 @@
 ---
-title: Derleme sistemi değişiklikleri | Microsoft Docs
-ms.custom: ''
+title: Derleme Sistemi Değişiklikleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - vc.msbuild.changes
-dev_langs:
-- C++
 helpviewer_keywords:
 - Build system changes, project file (.vcxprog)
 - Build system changes, custom build rules
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09e0fc8c29b6fe79f90440d19cc4d025d002a944
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a7a98c864a1d0bf617ebf4ededea5e1a59a1af31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437160"
 ---
 # <a name="build-system-changes"></a>Derleme Sistemi Değişiklikleri
 

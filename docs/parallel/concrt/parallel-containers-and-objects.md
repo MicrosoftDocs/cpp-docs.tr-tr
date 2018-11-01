@@ -1,27 +1,17 @@
 ---
-title: Paralel kapsayıcılar ve nesneler | Microsoft Docs
-ms.custom: ''
+title: Paralel Kapsayıcılar ve Nesneler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - parallel objects
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb06cf0c4e3e5868a0dadeefb30c2e75158d4e32
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0d3d883fa2199096d4dc880e2d8e78cff6d9830c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542564"
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 
@@ -285,7 +275,7 @@ Aşağıdaki tablo bazı önemli yöntemlerini gösterir `combinable` sınıfı.
 
 |Yöntem|Açıklama|
 |------------|-----------------|
-|[Yerel](reference/combinable-class.md#local)|Geçerli iş parçacığı bağlamı ile ilişkili olan bir yerel değişken bir başvuru alır.|
+|[local](reference/combinable-class.md#local)|Geçerli iş parçacığı bağlamı ile ilişkili olan bir yerel değişken bir başvuru alır.|
 |[Temizle](reference/combinable-class.md#clear)|Tüm iş parçacığı yerel değişkenleri kaldırır `combinable` nesne.|
 |[Birleştirme](reference/combinable-class.md#combine)<br /><br /> [combine_each](reference/combinable-class.md#combine_each)|Belirtilen birleştirme işlevi, tüm iş parçacığı-yerel hesaplamalar kümesinden son değer üretmek için kullanır.|
 

@@ -1,12 +1,6 @@
 ---
-title: Kaynak dosyalar (C++) | Microsoft Docs
-ms.custom: ''
+title: Kaynak Dosyalar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [C++]
 - .rc files [C++]
@@ -21,17 +15,12 @@ helpviewer_keywords:
 - .rct files [C++]
 - resource script files [C++], unsupported types
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5529d531d3ce2e8e34505d90f6d4ceede62cba47
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ad36f19185bc5b3430e7644ef55164d3cb0839a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424293"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461704"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 

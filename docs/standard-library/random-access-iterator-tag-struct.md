@@ -1,28 +1,18 @@
 ---
-title: random_access_iterator_tag yapısı | Microsoft Docs
-ms.custom: ''
+title: random_access_iterator_tag Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xutility/std::random_access_iterator_tag
-dev_langs:
-- C++
 helpviewer_keywords:
 - random_access_iterator_tag class
 - random_access_iterator_tag struct
 ms.assetid: 59f5b741-c5b4-459c-ad0a-3b67cddeea23
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7323c7dc104d8fbf54292fb7f1ca455b5e1a92f6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 81e958750ab13c12e92b61e6971c40f3362ba22d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562805"
 ---
 # <a name="randomaccessiteratortag-struct"></a>random_access_iterator_tag Yapısı
 

@@ -1,23 +1,13 @@
 ---
-title: 3.1.9 omp_set_nested işlevi | Microsoft Docs
-ms.custom: ''
+title: 3.1.9 omp_set_nested İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: e4afc3aa-bb96-4314-9849-fd5df5f437d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68e5898b8b57814a152ca2ce9ced84a9df8190cc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 683c2cf684aa7212b8323fda9f748812fa9c3359
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414545"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648012"
 ---
 # <a name="319-ompsetnested-function"></a>3.1.9 omp_set_nested İşlevi
 

@@ -1,30 +1,20 @@
 ---
-title: On_update_command_uı makrosu | Microsoft Docs
-ms.custom: ''
+title: ON_UPDATE_COMMAND_UI Makrosu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - ON_UPDATE_COMMAND_UI
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_UPDATE_COMMAND_UI macro [MFC]
 - update handlers [MFC]
 - command-handler macros
 - updating user-interface objects [MFC]
 ms.assetid: 3e72b50f-4119-4c82-81cf-6e09b132de05
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17111e24a63d527996eadd82c804e5147ad78552
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d0487f6a69d144e46adab496f3fd21696b5b434b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594118"
 ---
 # <a name="onupdatecommandui-macro"></a>ON_UPDATE_COMMAND_UI Makrosu
 

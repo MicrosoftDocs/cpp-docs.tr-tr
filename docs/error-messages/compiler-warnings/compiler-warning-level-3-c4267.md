@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4267 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4267
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4267
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4267
 ms.assetid: 2fa2f13f-fa4f-47bb-ad8f-6cb19cfc91e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 359b254c937eb0c52edd56ae9a2616bfea764213
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31e5b9a9b8e7b25a0d54648ce808ff6266a27321
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097048"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608045"
 ---
 # <a name="compiler-warning-level-3-c4267"></a>Derleyici Uyarısı (Düzey 3) C4267
 

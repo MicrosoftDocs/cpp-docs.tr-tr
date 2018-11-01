@@ -1,27 +1,17 @@
 ---
-title: YANKI | Microsoft Docs
-ms.custom: ''
+title: ECHO
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - ECHO
-dev_langs:
-- C++
 helpviewer_keywords:
 - ECHO directive
 ms.assetid: 68b912cc-6bd3-4f22-88cb-00a1aa17ecaf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa180a11b5766c13f580f7aa45c18a85910b5a2d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 46a7f77fae035b0fdc846c80f0415337d2bef07b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450966"
 ---
 # <a name="echo"></a>ECHO
 

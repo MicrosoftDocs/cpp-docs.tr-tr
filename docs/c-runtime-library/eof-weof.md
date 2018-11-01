@@ -1,29 +1,19 @@
 ---
-title: EOF, WEOF | Microsoft Docs
-ms.custom: ''
+title: EOF, WEOF
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - EOF
-dev_langs:
-- C++
 helpviewer_keywords:
 - EOF function
 - WEOF function
 - end of file
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 113ae268b4f97fdd14a3ac1a7fd0397b61ef8eb7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9317fdad16121374b31e0862f3326f4150c71579
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667395"
 ---
 # <a name="eof-weof"></a>EOF, WEOF
 

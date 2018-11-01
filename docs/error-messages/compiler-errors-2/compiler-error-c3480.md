@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3480 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3480
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3480
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fd58a8c38ee6dc5f77ef280ba3b7a546a666cd6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b856f607d764ac0a42781a80787663d965748317
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107870"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626908"
 ---
 # <a name="compiler-error-c3480"></a>Derleyici Hatası C3480
 

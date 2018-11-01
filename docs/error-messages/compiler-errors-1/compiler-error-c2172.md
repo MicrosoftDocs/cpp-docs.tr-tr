@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2172 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2172
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2172
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2172
 ms.assetid: 31183ea7-858d-4273-932a-d865af7059b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d71acb91503900733ea805225670ce9e979e6d84
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a45a251cfb0692ec5a2d203e159a4c6ddf32da94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627454"
 ---
 # <a name="compiler-error-c2172"></a>Derleyici Hatası C2172
 

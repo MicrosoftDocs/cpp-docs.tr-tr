@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0025 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0025
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0025
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0025
 ms.assetid: 57725c78-bc63-44f3-9667-2969b2d7c41d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 949e36424fc213459e56332c0802d2719581bac1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5cc6a042c04bc205dd3cf2242d48f2572a51885c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209818"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599695"
 ---
 # <a name="project-build-error-prj0025"></a>Proje Derleme Hatası PRJ0025
 

@@ -1,10 +1,6 @@
 ---
-title: CMapWordToPtr sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMapWordToPtr sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMapWordToPtr
 - AFXCOLL/CMapWordToPtr
@@ -22,8 +18,6 @@ f1_keywords:
 - AFXCOLL/CMapStringToOb::RemoveAll
 - AFXCOLL/CMapStringToOb::RemoveKey
 - AFXCOLL/CMapStringToOb::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMapStringToOb [MFC], CMapStringToOb
 - CMapStringToOb [MFC], GetCount
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: b204d87f-6427-43e1-93e3-a4b1bb41099f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90e22b19ab8bc196ed6c2017a3c3164933914dfa
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5df8d9e853d934d8c83398cc266c6f49634fa9e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073753"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605146"
 ---
 # <a name="cmapwordtoptr-class"></a>CMapWordToPtr sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: _alloca | Microsoft Docs
-ms.custom: ''
+title: _alloca
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _alloca
 apilocation:
@@ -22,27 +18,21 @@ apitype: DLLExport
 f1_keywords:
 - _alloca
 - alloca
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory allocation, stack
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fdc595d33bdc5ce464df1aed86cf885e5673ddc9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7c083e791301d3224709a5fc6c711ceaa6397d38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394123"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668084"
 ---
 # <a name="alloca"></a>_alloca
 
-Yığında bellek ayırır. Daha güvenli bir sürümü olmadığından bu işlev kullanım dışıdır; bkz: [_malloca](malloca.md).
+Yığında bellek ayırır. Daha güvenli bir sürümü kullanılabilir olmadığından, bu işlev kullanım dışı; bkz: [_malloca](malloca.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,28 +49,28 @@ Yığından ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Alloca** rutin döndürür bir **void** nesnesinin herhangi bir türde bir depolama için uygun hizalanacak garanti ayrılan alanı işaretçi. Varsa *boyutu* 0 ' dır **_alloca** sıfır uzunluklu öğesi ayırır ve geçerli bir işaretçi için bu öğeyi döndürür.
+**_Alloca** rutin döndürür bir **void** nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti ayrılan alanı işaretçisi. Varsa *boyutu* 0 ' dır **_alloca** sıfır uzunluklu öğeyi ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-Bir yığın taşması özel durumu alanı ayrılamıyor ise oluşturulur. Yığın taşması özel durumu C++ özel durum değil; yapılandırılmış özel durum var. C++ özel durum işleme kullanmak yerine, kullanmalısınız [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
+Alanı ayırdığınızda, bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işleme kullanmak yerine, kullanmanız gerekir [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_alloca** ayırır *boyutu* program yığından bayt. (Ayırma yalnızca kapsamının dışına değil geçtiğinde) çağıran işlevi çıktığında ayrılan alanı boşaltılır. Bu nedenle, tarafından döndürülen işaretçi değer geçmeyin **_alloca** bağımsız değişken olarak [ücretsiz](free.md).
+**_alloca** ayırır *boyutu* program yığınına gelen baytlar. (Ayırma yalnızca kapsam dışına değil geçtiğinde) çağıran işlevin çıktığında ayrılan alanı otomatik olarak serbest bırakılır. Bu nedenle, tarafından döndürülen işaretçi değer geçmeyin **_alloca** bağımsız değişkeni olarak [ücretsiz](free.md).
 
-Açıkça çağırmak için kısıtlamalar vardır **_alloca** bir özel durum işleyicisi (EH). X86 sınıfı işlemcilerde çalıştırmak EH yordamları çalışan kendi bellek çerçevede: yığın işaretçisi kapsayan işlevinin geçerli konumuna dayalı olmayan bellek alanında görevlerini gerçekleştirdikleri. En yaygın uygulamaları, Windows NT yapılandırılmış özel durum (SEH) işleme ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_alloca** herhangi bir program hatası EH yordamı çağrılırken dönün sırasında aşağıdaki senaryoları sonuçlarında:
+Açıkça çağırmak için kısıtlamalar **_alloca** bir özel durum işleyicisi (EH). X86 sınıfı işlemciler üzerinde çalışan EH düzenleri kendi bellek çerçevede çalışmak: yığın işaretçisi kapsayan işlevin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirdikleri görevleri. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_alloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
 
 - Windows NT SEH özel durum filtre ifadesi: `__except ( _alloca() )`
 
-- Windows NT SEH son özel durum işleyici: `__finally { _alloca() }`
+- Windows NT SEH son özel durum işleyicisi: `__finally { _alloca() }`
 
 - C++ EH catch yan tümcesinin ifadesi
 
-Ancak, **_alloca** doğrudan bir EH yordamı içinde veya çağrılan bir uygulama tarafından sağlanan bir geri çağırma senaryolardan biri, daha önce listelenen EH tarafından çağrılabilir.
+Ancak, **_alloca** doğrudan EH yordam içinde ya da çağrılan bir uygulama tarafından sağlanan bir geri çağırma daha önce listelenen EH senaryoları biri tarafından çağrılabilir.
 
 > [!IMPORTANT]
-> Windows XP'de, **_alloca** çağrılır try/catch bloğunun içine çağırmalısınız [_resetstkoflw](resetstkoflw.md) catch bloğu içinde.
+> Windows XP'de, **_alloca** çağrılır bir try/catch bloğu içinde çağırmalısınız [_resetstkoflw](resetstkoflw.md) catch bloğu içinde.
 
-Yukarıdaki kısıtlamaları kullanırken, ek olarak[/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği **_alloca** kullanılamaz **__except** engeller. Daha fazla bilgi için bkz: [/CLR kısıtlamalar](../../build/reference/clr-restrictions.md).
+Yukarıdaki sınırlamalara kullanırken, ek olarak[/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği **_alloca** kullanılamaz **__except** engeller. Daha fazla bilgi için [/CLR kısıtlamalar](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

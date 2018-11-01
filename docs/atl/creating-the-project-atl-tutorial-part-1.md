@@ -1,23 +1,14 @@
 ---
-title: "' % S'projesi (ATL Eğitmeni, bölüm 1) oluşturma | Microsoft Docs"
+title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
 ms.date: 09/26/2018
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 654ddd149eb6875bede85bdef51641c359644f51
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dab9bdab75bb710bf73314aae7283611d9a3b5cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075638"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539589"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 

@@ -1,11 +1,6 @@
 ---
-title: fegetenv | Microsoft Docs
-ms.custom: ''
+title: fegetenv
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fetegenv
 apilocation:
@@ -24,25 +19,19 @@ apitype: DLLExport
 f1_keywords:
 - fegetenv
 - fenv/fegetenv
-dev_langs:
-- C++
 helpviewer_keywords:
 - fetegenv function
 ms.assetid: 68962421-6978-4b27-8e4c-ad1577830cf6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc8b5d189838c2788bc6200f9072c9511e61d42f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d3985e4dd2b3944bcdddb79605887def7ba15473
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668097"
 ---
 # <a name="fegetenv"></a>fegetenv
 
-Belirtilen nesne geçerli kayan nokta ortamı depolar.
+Geçerli bir kayan nokta ortamı belirtilen nesnede depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,7 +44,7 @@ int fegetenv(
 ### <a name="parameters"></a>Parametreler
 
 *penv*<br/>
-İşaretçi bir **fenv_t** geçerli kayan nokta ortam değerleri içeren nesne.
+İşaretçi bir **fenv_t** geçerli ortam kayan nokta değerleri içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -63,17 +52,17 @@ Kayan nokta ortam içinde başarıyla depolanmışsa 0 döndürür *penv*. Aksi 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fegetenv** işlevi gösterdiği nesne geçerli kayan nokta ortamı depolar *penv*. Kayan nokta ortamıdır durumu bayrakları ve kayan nokta hesaplamaları etkileyecek denetim modları kümesi. Bu yuvarlama yönünü mod ve durum bayrakları kayan nokta özel durumları içerir.  Varsa *penv* geçerli bir göstermiyor **fenv_t** nesnesi, sonraki davranış tanımlanmadı.
+**Fegetenv** işlevi tarafından işaret edilen nesnenin geçerli bir kayan nokta ortamı depolar *penv*. Kayan nokta ortamıdır durumu bayrakları ve kayan nokta hesaplamalarının etkileyen Denetim modu kümesi. Bu yuvarlama yönünü mod ve durum bayrakları için kayan nokta özel durumlarını içerir.  Varsa *penv* geçerli bir işaret etmiyor **fenv_t** nesnesi, sonraki davranışı tanımsızdır.
 
-Bu işlevi kullanmak için erişim kullanarak önleyebilir kayan nokta iyileştirmeler kapatmanız gerekir `#pragma fenv_access(on)` çağrı önce yönergesi. Daha fazla bilgi için bkz: [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**fegetenv**|\<fenv.h >|\<cfenv >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

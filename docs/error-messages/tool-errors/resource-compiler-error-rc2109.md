@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2109 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2109
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2109
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2109
 ms.assetid: b800aa67-33c0-42f5-81a2-7a64a3b6b824
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ef826dcdb439a28630221bdc9b4a90e9f6f324f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: adfbc32adc9e55f4cc0e1a49d3b5505efead5d25
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438902"
 ---
 # <a name="resource-compiler-error-rc2109"></a>Kaynak Derleyicisi Hatası RC2109
 

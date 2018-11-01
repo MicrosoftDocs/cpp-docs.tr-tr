@@ -1,25 +1,15 @@
 ---
-title: Üye işlev şablonları | Microsoft Docs
-ms.custom: ''
+title: Üye İşlev Şablonları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function templates, member functions
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c0d7a50be0ab940ebff82cd8a21fb5ac3aed075
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6955d755897d326479d2b3789edb02ff66806175
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107013"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460846"
 ---
 # <a name="member-function-templates"></a>Üye İşlev Şablonları
 

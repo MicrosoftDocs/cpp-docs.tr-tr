@@ -1,14 +1,8 @@
 ---
-title: Numaralandırmalar (C++) | Microsoft Docs
-ms.custom: ''
+title: Numaralandırmalar [C++]
 ms.date: 06/01/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - enum_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - declarations, enumerations
 - enumerators, declaring
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1146c3e07ec6d9be4233981bcb2551a0c768c265
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2258683fae8d14051d798cd18a3c3d74f8fdac6d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054091"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557986"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 

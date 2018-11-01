@@ -1,28 +1,17 @@
 ---
-title: importidl (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: importidl (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.importidl
-dev_langs:
-- C++
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b46aa139ca26b163c69fedcd0f5c941f7e952a2d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8d0d891f74da8df2351b0a861fb7501e72f5e2de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587180"
 ---
 # <a name="importidl"></a>importidl
 

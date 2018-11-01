@@ -1,10 +1,6 @@
 ---
-title: Kategori makroları | Microsoft Docs
-ms.custom: ''
+title: Kategori makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlGetHexValue
 - atlbase/ATL::AtlGetVersion
@@ -28,19 +24,13 @@ f1_keywords:
 - atlenc/ATL::UUDecodeGetRequiredLength
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
-dev_langs:
-- C++
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40fdfa363da286952139248088c737b348873ec8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0be22a8f7152d7933d4d0ab970fae834200c6d8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063685"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609735"
 ---
 # <a name="category-macros"></a>Kategori makroları
 

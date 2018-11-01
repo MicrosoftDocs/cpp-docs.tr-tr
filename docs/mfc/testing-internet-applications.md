@@ -1,12 +1,6 @@
 ---
-title: Internet uygulamalarını test etme | Microsoft Docs
-ms.custom: ''
+title: Internet Uygulamalarını Test Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Web applications [MFC], testing
 - debugging Web applications [MFC], testing applications
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - debugging [MFC], Web applications
 - Internet debugging and testing
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 518fbe754b676798c6d2acc2a3e26ea1d3e3d4ac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 934d336f8c7544bafa412a7b52404a657e8dc9ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439370"
 ---
 # <a name="testing-internet-applications"></a>Internet Uygulamalarını Test Etme
 

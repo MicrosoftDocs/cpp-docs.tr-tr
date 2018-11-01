@@ -1,29 +1,19 @@
 ---
-title: '&lt;ostream&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;ostream&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <ostream>
 - ostream/std::<ostream>
 - std::<ostream>
-dev_langs:
-- C++
 helpviewer_keywords:
 - ostream header
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94c84a8fd6b3aacbedf9d624fc750f98da4531e9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e8084fcbbeb2f1526107584058fc227bbd514d39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957941"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582594"
 ---
 # <a name="ltostreamgt"></a>&lt;ostream&gt;
 

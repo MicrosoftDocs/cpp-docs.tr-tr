@@ -1,27 +1,17 @@
 ---
-title: Satır içi dosyaları yeniden kullanma | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Dosyaları Yeniden Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inline files, reusing NMAKE
 - revising inline files
 - NMAKE program, inline files
 ms.assetid: d42dbffb-2cef-4ccb-9a1f-20b8ef81481c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37544db8076d40e638b6ddf6f340070298229149
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 15c0fa5eb10389faf7962c29cc8452443512f739
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453553"
 ---
 # <a name="reusing-inline-files"></a>Satır İçi Dosyaları Yeniden Kullanma
 

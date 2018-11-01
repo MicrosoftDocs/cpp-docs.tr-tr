@@ -1,10 +1,6 @@
 ---
-title: CAtlServiceModuleT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlServiceModuleT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlServiceModuleT
 - ATLBASE/ATL::CAtlServiceModuleT
@@ -36,21 +32,15 @@ f1_keywords:
 - ATLBASE/ATL::CAtlServiceModuleT::m_hServiceStatus
 - ATLBASE/ATL::CAtlServiceModuleT::m_status
 - ATLBASE/ATL::CAtlServiceModuleT::m_szServiceName
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74d36c7b13be3653a0c17f763e37447d5541c5a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b577ee002e34fa051b6e1dd5ffca71f935d93433
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619147"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT sınıfı
 

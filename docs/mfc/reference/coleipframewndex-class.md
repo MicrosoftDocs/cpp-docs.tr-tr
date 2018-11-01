@@ -1,10 +1,6 @@
 ---
-title: Coleıpframewndex sınıfı | Microsoft Docs
-ms.custom: ''
+title: Coleıpframewndex sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleIPFrameWndEx
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx
@@ -52,8 +48,6 @@ f1_keywords:
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::ShowPane
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::WinHelpA
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::InitUserToobars
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleIPFrameWndEx [MFC], AddDockSite
 - COleIPFrameWndEx [MFC], AddPane
@@ -100,16 +94,12 @@ helpviewer_keywords:
 - COleIPFrameWndEx [MFC], WinHelpA
 - COleIPFrameWndEx [MFC], InitUserToobars
 ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a9cef05463ddf691b1d3136bae9d55f08608d67
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c30ced2f19602dca17badeec6e1b27ad1e90bf5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612738"
 ---
 # <a name="coleipframewndex-class"></a>Coleıpframewndex sınıfı
 

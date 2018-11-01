@@ -1,29 +1,19 @@
 ---
-title: scheduler_ptr yapısı | Microsoft Docs
-ms.custom: ''
+title: scheduler_ptr yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - scheduler_ptr
 - PPLINTERFACE/concurrency::scheduler_ptr
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::scheduler_ptr
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
-dev_langs:
-- C++
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea128a6122bf69735d118045eef2e8d8e323f8de
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fd81a1ccf6702c74a013c5772d59f01121b61a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479228"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr yapısı
 

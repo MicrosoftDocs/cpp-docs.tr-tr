@@ -1,29 +1,19 @@
 ---
-title: Karakterleştirme işleci (#@) | Microsoft Docs
-ms.custom: ''
+title: Karakterleştirme İşleci (#@)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '#@'
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessor, operators
 - charizing operator
 - '#@ preprocessor operator'
 ms.assetid: dee03314-d27c-4063-965c-64756efbef22
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d86c49c8d7d0cda91ba2415167cc79c810a96b3d
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 7259487a3289173bc77517c8c616638c370041c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568352"
 ---
 # <a name="charizing-operator-"></a>Karakterleştirme İşleci (#@)
 **Microsoft'a özgü**

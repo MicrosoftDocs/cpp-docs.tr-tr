@@ -1,10 +1,6 @@
 ---
-title: CAnimationController sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationController sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationController
 - AFXANIMATIONCONTROLLER/CAnimationController
@@ -56,8 +52,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationController::m_pRelatedWnd
 - AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionFactory
 - AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionLibrary
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationController [MFC], CAnimationController
 - CAnimationController [MFC], AddAnimationObject
@@ -109,16 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c9f17eea48e01d12df103382483b352e5dce46b7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd0bdd1a3f423257b2f73745d7260d1fac12a0d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080565"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556669"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 

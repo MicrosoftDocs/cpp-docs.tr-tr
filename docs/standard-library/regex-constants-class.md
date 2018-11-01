@@ -1,10 +1,6 @@
 ---
-title: regex_constants sınıfı | Microsoft Docs
-ms.custom: ''
+title: regex_constants Sınıfı
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - regex/std::regex_constants
 - regex/std::regex_constants::error_collate
@@ -45,8 +41,6 @@ f1_keywords:
 - regex/std::regex_constants::nosubs
 - regex/std::regex_constants::optimize
 - regex/std::regex_constants::collate
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::regex_constants [C++]
 - std::regex_constants [C++], error_collate
@@ -88,16 +82,12 @@ helpviewer_keywords:
 - std::regex_constants [C++], optimize
 - std::regex_constants [C++], collate
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e330cccb83ad702994b3d31d762cc0203e78de0
-ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
+ms.openlocfilehash: f3e733bced407f96414783612165984c71b63775
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44385001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454542"
 ---
 # <a name="regexconstants-namespace"></a>regex_constants ad alanı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4074 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4074
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4074
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4074
 ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb2fc41820165cee2b76a15abc97ab1e0cb79b81
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d9b0259e95198396d8c34ca43781045248e22ad9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116664"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665575"
 ---
 # <a name="compiler-warning-level-1-c4074"></a>Derleyici Uyarısı (düzey 1) C4074
 

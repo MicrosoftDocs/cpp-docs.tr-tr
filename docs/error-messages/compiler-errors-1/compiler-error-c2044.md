@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2044 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2044
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2044
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2044
 ms.assetid: adf4bedc-f915-4008-8b48-a06d626d8c38
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73444428d015949b4147639b7f6a7c2a27d8160e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c1d0e73b25c66ab0e3876a47bedef1ce6340590
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638041"
 ---
 # <a name="compiler-error-c2044"></a>Derleyici Hatası C2044
 

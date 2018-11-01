@@ -1,10 +1,6 @@
 ---
-title: CMFCCmdUsageCount sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCCmdUsageCount sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCCmdUsageCount
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], AddCmd
 - CMFCCmdUsageCount [MFC], GetCount
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2a30be41a1f0beb407bae41512b11b27ee31cf9a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: af48451bcba9bf0d5f07cd96da99be4c2a6ae99b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448369"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549402"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount sınıfı
 

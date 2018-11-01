@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4036 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4036
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4036
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4036
 ms.assetid: f0b15359-4d62-48ec-8cb1-a7b36587a47f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5be923193723168a474ad7403dc85cfbade28a70
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 632e88bb64568c97e937e83e177598054a954f22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609579"
 ---
 # <a name="compiler-warning-level-1-c4036"></a>Derleyici Uyarısı (düzey 1) C4036
 

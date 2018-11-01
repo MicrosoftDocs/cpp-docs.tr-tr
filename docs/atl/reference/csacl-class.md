@@ -1,10 +1,6 @@
 ---
-title: CSacl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSacl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSacl
 - ATLSECURITY/ATL::CSacl
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CSacl::GetAceCount
 - ATLSECURITY/ATL::CSacl::RemoveAce
 - ATLSECURITY/ATL::CSacl::RemoveAllAces
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSacl class
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d408ab5d0575984fb597cec28f01484d9b878ebf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da7b1310f80bfb03645d386b59632e1c2811a367
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651145"
 ---
 # <a name="csacl-class"></a>CSacl sınıfı
 

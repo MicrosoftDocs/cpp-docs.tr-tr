@@ -1,10 +1,6 @@
 ---
-title: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cprintf_p_l
 - _cwprintf_p_l
@@ -33,8 +29,6 @@ f1_keywords:
 - _cwprintf_p
 - _tcprintf_p
 - cprintf_p_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _cwprintf_p_l function
 - cwprintf_p function
@@ -49,23 +43,19 @@ helpviewer_keywords:
 - tcprintf_p function
 - cprintf_p function
 ms.assetid: 1f82fd7d-13c8-4c4a-a3e4-db0df3873564
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 328e6fba2854e2cee82bdb9b7ccfe2e62e7c1ddc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ef4ac6a89749c2784e4935fcf83810e81b61ae11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658464"
 ---
 # <a name="cprintfp-cprintfpl-cwprintfp-cwprintfpl"></a>_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 
-Biçimlendirir ve konsola yazdırır ve Biçim dizesinde konumsal parametreler destekler.
+Biçimlendirir ve konsola yazdırır ve biçim dizesindeki konum parametrelerini destekler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -92,7 +82,7 @@ int _cwprintf_p_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *Bağımsız değişken*<br/>
@@ -103,20 +93,20 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazdırılan karakterler veya bir hata oluşursa negatif bir değer sayısı.
+Yazdırılan karakter veya bir hata oluştuğunda negatif bir değer sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler biçimlendirmek ve bir dizi karakter ve değerlerini doğrudan konsola yazdırma kullanarak **_putch** ve **_putwch** işlevleri için çıkış karakteri. Her *bağımsız değişkeni* (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre *biçimi*. Form ve olarak işlev aynı biçimdedir *biçimi* parametresi için [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi. Arasındaki farkı **_cprintf_p** ve **cprintf_s** olan **_cprintf_p** bağımsız değişkenleri olan düzeni belirtilmesine izin verir destekler konumsal Parametreler Biçim dizesi kullanılır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+Bu işlevler biçimlendirmek ve bir dizi karakter ve değerlerini doğrudan konsola yazdırma kullanarak **_putch** ve **_putwch** işlevleri için çıkış karakteri. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. Biçim aynı form ve işleve sahip *biçimi* parametresi için [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi. Arasındaki fark **_cprintf_p** ve **cprintf_s** olan **_cprintf_p** bağımsız değişkenleri olan sırasını belirtmeye izin veren konum parametrelerini desteklemesidir Biçim dizesindeki kullanılır. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-Farklı **fprintf_p**, **printf_p**, ve **sprintf_p** işlevleri, tipleri **_cprintf_p** ya da **_cwprintf_p** satır besleme karakterleri satır başı satır besleme (CR-LF) birleşimlerine çevirir çıkış. Önemli bir fark olan **_cwprintf_p** Windows NT kullanıldığında Unicode karakterler görüntüler. Farklı **_cprintf_p**, **_cwprintf_p** geçerli konsol yerel ayarları kullanır.
+Farklı **fprintf_p**, **printf_p**, ve **sprintf_p** işlevlerinin **_cprintf_p** ya da **_cwprintf_p** satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine çevirir çıkış. Önemli bir ayrımdır olan **_cwprintf_p** Windows NT'de kullanıldığı zaman Unicode karakterleri görüntüler. Farklı **_cprintf_p**, **_cwprintf_p** geçerli konsol yerel ayarlarını kullanır.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
 
-Ayrıca, ister **_cprintf_s** ve **_cwprintf_s**, Giriş işaretçisi ve biçim dizesini doğrulayın. Varsa *biçimi* veya *bağımsız değişkeni* olan **NULL**, veya biçimi geçersiz biçimlendirme karakterlerini dize içeriyor, bu işlevler olarak geçersiz parametre işleyicisi çağırma açıklanan [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Ayrıca, ister **_cprintf_s** ve **_cwprintf_s**, giriş işaretleyicisini ve biçim dizesini doğrularlar. Varsa *biçimi* veya *bağımsız değişken* olan **NULL**, veya biçimi dizesi geçersiz biçim karakterleri içeriyorsa, bu işlevler olarak geçersiz parametre işleyicisini çağırır. açıklanan [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -132,7 +122,7 @@ Ayrıca, ister **_cprintf_s** ve **_cwprintf_s**, Giriş işaretçisi ve biçim 
 |**_cprintf_p**, **_cprintf_p_l**|\<conio.h >|
 |**_cwprintf_p**, **_cwprintf_p_l**|\<conio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

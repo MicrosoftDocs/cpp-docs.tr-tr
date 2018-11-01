@@ -1,29 +1,19 @@
 ---
-title: Genel değişkenler | Microsoft Docs
-ms.custom: ''
+title: Global Değişkenler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.variables
-dev_langs:
-- C++
 helpviewer_keywords:
 - global variables
 - variables, global
 - global variables, Microsoft run-time library
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79359f6f86c66dc37f95c0675675b07888a31646
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b66d77285cb601b30a89a313fa21b815f42775b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058321"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522547"
 ---
 # <a name="global-variables"></a>Global Değişkenler
 

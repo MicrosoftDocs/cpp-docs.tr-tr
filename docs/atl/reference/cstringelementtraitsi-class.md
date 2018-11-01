@@ -1,10 +1,6 @@
 ---
-title: Cstringelementtraitsı sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cstringelementtraitsı sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CStringElementTraitsI
 - ATLCOLL/ATL::CStringElementTraitsI
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLCOLL/ATL::CStringElementTraitsI::CompareElements
 - ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered
 - ATLCOLL/ATL::CStringElementTraitsI::Hash
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStringElementTraitsI class
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29df4bd550a5de232b5ced0510e8dbfc68e59d42
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 35215546268c4c48f913e7aef763768fffc76d59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060760"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551729"
 ---
 # <a name="cstringelementtraitsi-class"></a>Cstringelementtraitsı sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2201 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2201
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2201
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2201
 ms.assetid: ed927659-6e9c-447d-9963-19969ae1e957
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b24e18d2f8ffdfa889cac3dae58e66dcb8d7dcc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b011c5027af6c0561010c6d11d3efd07234549f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107137"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621606"
 ---
 # <a name="compiler-error-c2201"></a>Derleyici Hatası C2201
 

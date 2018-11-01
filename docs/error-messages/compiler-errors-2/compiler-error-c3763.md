@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3763 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3763
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3763
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3763
 ms.assetid: 58b1f079-cd1d-46e0-9431-ea18210106b7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db0304cf0dca69c101ee3e559052ca139caa8be3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7dc73334cedda27b82f79b1d2b7a8fc38a8098d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581317"
 ---
 # <a name="compiler-error-c3763"></a>Derleyici Hatası C3763
 

@@ -1,10 +1,6 @@
 ---
-title: OLE denetimleri için iletişim kutusu veri değişimi işlevleri | Microsoft Docs
-ms.custom: ''
+title: OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFXDISP/DDX_OCBool
 - AFXDISP/DDX_OCBoolRO
@@ -18,22 +14,16 @@ f1_keywords:
 - AFXDISP/DDX_OCShortRO
 - AFXDISP/DDX_OCText
 - AFXDISP/DDX_OCTextRO
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a24bac5e27b0a3e0b1c011b1bb6019be2160d281
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5d330d8dd423927a3f4abbe6475a8d6219fa9af2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382316"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531254"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 

@@ -1,27 +1,17 @@
 ---
-title: 'Özel durumlar: Kendi İşlevlerinizden özel durumları atma | Microsoft Docs'
-ms.custom: ''
+title: 'Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - throwing exceptions [MFC], from functions
 - functions [MFC], throwing exceptions
 - exceptions [MFC], throwing
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a26bd11c2a37e3644333a95ed03d9182f7b32b87
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4d0961bff706ccf86eb09d2dcbe695a13bfa8702
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066116"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558999"
 ---
 # <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
 

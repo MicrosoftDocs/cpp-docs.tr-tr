@@ -1,23 +1,14 @@
 ---
-title: Akıllı işaretçiler (Modern C++) | Microsoft Docs
-ms.custom: ''
+title: Akıllı İşaretçiler (Modern C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 58591309faaa107756739a52173ceea2f1f7b188
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5f04a4ab23241d63fc1694d419f85d8b694b7fff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616911"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 

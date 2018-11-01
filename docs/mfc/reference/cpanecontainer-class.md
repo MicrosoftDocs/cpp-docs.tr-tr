@@ -1,10 +1,6 @@
 ---
-title: CPaneContainer sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPaneContainer sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPaneContainer
 - AFXPANECONTAINER/CPaneContainer
@@ -65,8 +61,6 @@ f1_keywords:
 - AFXPANECONTAINER/CPaneContainer::SetUpByID
 - AFXPANECONTAINER/CPaneContainer::StoreRecentDockSiteInfo
 - AFXPANECONTAINER/CPaneContainer::StretchPaneContainer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPaneContainer [MFC], CPaneContainer
 - CPaneContainer [MFC], AddPane
@@ -126,16 +120,12 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9b64b444a34562aa4f25ca1abdae979e3879b8ad
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd0e238dd936dfff0677e41831c72229171cb656
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073116"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504383"
 ---
 # <a name="cpanecontainer-class"></a>CPaneContainer sınıfı
 

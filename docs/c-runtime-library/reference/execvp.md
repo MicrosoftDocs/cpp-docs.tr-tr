@@ -1,10 +1,6 @@
 ---
-title: execvp | Microsoft Docs
-ms.custom: ''
+title: execvp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - execvp
 apilocation:
@@ -21,25 +17,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - execvp
-dev_langs:
-- C++
 helpviewer_keywords:
 - execvp function
 ms.assetid: a0d0e898-9f06-4aa9-94ce-3ad317318c3a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb3ea86a927cdd12948d138b2770587b9e252dcd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a614eba0af528021061dd9c8f681f0b2fe5f44bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394635"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508166"
 ---
 # <a name="execvp"></a>execvp
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_execvp](execvp-wexecvp.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_execvp](execvp-wexecvp.md) yerine.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

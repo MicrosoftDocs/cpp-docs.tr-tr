@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3396 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3396
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3396
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3396
 ms.assetid: e3580e32-72ec-4c3e-8afa-755603ffd25c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e96231cf72b144c58e925fb2f74a6be29e9030f6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 06a11e5304a3962675fac1b45c1d162042060688
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047453"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654954"
 ---
 # <a name="compiler-error-c3396"></a>Derleyici Hatası C3396
 

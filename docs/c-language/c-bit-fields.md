@@ -1,26 +1,16 @@
 ---
-title: C Bit alanları | Microsoft Docs
-ms.custom: ''
+title: C Bit Alanları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - bitfields
 - bit fields
 ms.assetid: 9faf74c4-7fd5-4b44-ad18-04485193d06e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c43823f996bfe931499aa7bd08ad5f9207f102bd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ffcc622135a9a4d9b46cf6ab62604f9965ac6d47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090587"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666238"
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 

@@ -1,10 +1,6 @@
 ---
-title: _pctype, _pwctype, _wctype, _mbctype, _mbcasemap | Microsoft Docs
-ms.custom: ''
+title: _pctype, _pwctype, _wctype, _mbctype, _mbcasemap
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - pwctype
 - pctype
@@ -15,8 +11,6 @@ f1_keywords:
 - _pctype
 - _wctype
 - _pcwtype
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wctype function
 - _pwctype function
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - mbctype function
 - _mbcasemap function
 ms.assetid: 7f5e1107-c43b-4b9b-b387-781e6d2373cb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 44602a20611dbae8b3dd3ea19cd666e02fff25be
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c1162ca5cf677100741857afeef4a5e5c71b58c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626021"
 ---
 # <a name="pctype-pwctype-wctype-mbctype-mbcasemap"></a>_pctype, _pwctype, _wctype, _mbctype, _mbcasemap
 

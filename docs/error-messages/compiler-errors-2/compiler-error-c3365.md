@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3365 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3365
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3365
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3365
 ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b8cb585c2d1142651e5edd01085dd904be60bc86
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fa11ac57205574da29c55344fedb0e996ab30557
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044723"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449822"
 ---
 # <a name="compiler-error-c3365"></a>Derleyici Hatası C3365
 

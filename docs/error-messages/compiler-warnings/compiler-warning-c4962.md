@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4962 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4962
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4962
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4962
 ms.assetid: 62b156fe-04e5-4a6e-9339-6ab148185f87
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: caff08744497936839e1021cef8fc86e0e8aa7e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e3f7b715da3774d8289fdd526cf1fa0b5bdddba6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585322"
 ---
 # <a name="compiler-warning-c4962"></a>Derleyici Uyarısı C4962
 

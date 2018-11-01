@@ -1,16 +1,10 @@
 ---
-title: -Fp (adı. PCH dosyası) | Microsoft Docs
-ms.custom: ''
+title: /Fp (.Pch Dosyası Adlandır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.PrecompiledHeaderFile
 - /fp
 - VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - Fp compiler option [C++]
 - -Fp compiler option [C++]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - precompiled header files, naming
 - /Fp compiler option [C++]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a851f93ae845d56b9c986e822e94970ad5cccd5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 30a569b367d10a4f230d0054b19833c6614afac7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427140"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517097"
 ---
 # <a name="fp-name-pch-file"></a>/Fp (.Pch Dosyası Adlandır)
 
@@ -60,7 +50,7 @@ Ayrıca **/FP** seçeneğini **/Yu**.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderFile%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderFile%2A>.
 
 ## <a name="example"></a>Örnek
 

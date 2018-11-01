@@ -1,10 +1,6 @@
 ---
-title: scoped_allocator_adaptor sınıfı | Microsoft Docs
-ms.custom: ''
+title: scoped_allocator_adaptor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - scoped_allocator/std::scoped_allocator_adaptor
 - scoped_allocator/std::scoped_allocator_adaptor::rebind Struct
@@ -16,8 +12,6 @@ f1_keywords:
 - scoped_allocator/std::scoped_allocator_adaptor::max_size
 - scoped_allocator/std::scoped_allocator_adaptor::outer_allocator
 - scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::scoped_allocator_adaptor
 - std::scoped_allocator_adaptor::allocate
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::scoped_allocator_adaptor::outer_allocator
 - std::scoped_allocator_adaptor::select_on_container_copy_construction
 ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 62bdeeddf0e81cf017c49eac51ca0e2eaaf046c1
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c02f5171fac862b6f79e194f5940b0adeb2e93e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104073"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601428"
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor Sınıfı
 

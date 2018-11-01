@@ -1,10 +1,6 @@
 ---
-title: __dllonexit | Microsoft Docs
-ms.custom: ''
+title: __dllonexit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __dllonexit
 apilocation:
@@ -19,21 +15,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - __dllonexit
-dev_langs:
-- C++
 helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0c2c04f623ba8cac2f3b967007079d41689d2346
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 70e69952e350f96179298e2d64ec6ddf7b9167bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625426"
 ---
 # <a name="dllonexit"></a>__dllonexit
 

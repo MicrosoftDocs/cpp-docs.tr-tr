@@ -1,14 +1,8 @@
 ---
-title: Bir C++ pencere nesnesi ile bir HWND arasındaki | Microsoft Docs
-ms.custom: ''
+title: Bir C++ Pencere Nesnesi ile bir HWND Arasındaki İlişkiler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - HWND
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows window [MFC]
 - window objects [MFC], HWND and
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - CWnd class [MFC], HWND
 - HWND, window objects [MFC]
 ms.assetid: f2e76340-6691-4ee6-9424-0345634a9469
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 844f62b110f54ba3e2c8909a78d58c9f2c01dcac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46a3bdfdc3a9d1a41463eaf913e224a3f7c886e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519515"
 ---
 # <a name="relationship-between-a-c-window-object-and-an-hwnd"></a>Bir C++ Pencere Nesnesi ile bir HWND Arasındaki İlişkiler
 

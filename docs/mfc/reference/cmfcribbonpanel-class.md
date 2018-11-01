@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonPanel sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonPanel sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonPanel
 - AFXRIBBONPANEL/CMFCRibbonPanel
@@ -62,8 +58,6 @@ f1_keywords:
 - AFXRIBBONPANEL/CMFCRibbonPanel::SetJustifyColumns
 - AFXRIBBONPANEL/CMFCRibbonPanel::SetKeys
 - AFXRIBBONPANEL/CMFCRibbonPanel::ShowPopup
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonPanel [MFC], CMFCRibbonPanel
 - CMFCRibbonPanel [MFC], Add
@@ -120,16 +114,12 @@ helpviewer_keywords:
 - CMFCRibbonPanel [MFC], SetKeys
 - CMFCRibbonPanel [MFC], ShowPopup
 ms.assetid: 51d70749-1140-4386-b103-f14082049ba6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46b7f613cdb67fa446c878ceda7dd9eca6eec7e3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a679ca48b054a545752483ff5349442e7c4a0ddd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505397"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel sınıfı
 

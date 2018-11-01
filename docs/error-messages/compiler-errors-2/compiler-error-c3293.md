@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3293 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3293
 ms.date: 07/21/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3293
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3293
 ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d45f342528b1ee6297ee6c11a01a0eceb710595
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 84d539722474d5f5dfffe1f6fe121bb7349ba131
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050339"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548219"
 ---
 # <a name="compiler-error-c3293"></a>Derleyici Hatası C3293
 

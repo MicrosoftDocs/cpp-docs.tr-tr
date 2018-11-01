@@ -1,33 +1,23 @@
 ---
-title: CReBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CReBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CReBar
 - AFXEXT/CReBar
 - AFXEXT/CReBar::AddBar
 - AFXEXT/CReBar::Create
 - AFXEXT/CReBar::GetReBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CReBar [MFC], AddBar
 - CReBar [MFC], Create
 - CReBar [MFC], GetReBarCtrl
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2579a926c6a48d86eb12e406a442b17126a9f5c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6a63440f5f415901128a09c7b5f34e73539fc3e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648831"
 ---
 # <a name="crebar-class"></a>CReBar sınıfı
 

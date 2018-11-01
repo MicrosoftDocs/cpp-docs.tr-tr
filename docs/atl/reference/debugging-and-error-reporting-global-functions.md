@@ -1,29 +1,19 @@
 ---
-title: Hata ayıklama ve hata raporlama genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Hata ayıklama ve hata raporlama genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcomcli/ATL::AtlHresultFromLastError
 - atlcom/ATL::AtlReportError
 - atldef/ATL::AtlThrow
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f035ac105dee4e668ca8bee0bab18c2a31fd027f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 626da7b2fd52a93602afa08c416bbbb3a4abdbf7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664664"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevleri
 

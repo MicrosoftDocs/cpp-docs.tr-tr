@@ -1,45 +1,35 @@
 ---
-title: Çıkış akışları | Microsoft Docs
-ms.custom: ''
+title: Çıkış Akışları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - output streams
 ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dde86faf5a19cfe57e445814b75bb3c8b82efbc4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c64c46acca405f948e8314fb23944682adf09c43
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854119"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511117"
 ---
 # <a name="output-streams"></a>Çıkış Akışları
 
-Bir çıkış akışı bayt için bir hedef nesnesidir. Üç en önemli çıkış akışı sınıflardır `ostream`, `ofstream`, ve `ostringstream`.
+Bir çıkış akışı nesnesine bir hedef bayt var. En önemli üç çıkış akışı sınıfları `ostream`, `ofstream`, ve `ostringstream`.
 
-`ostream` Sınıfı, türetilmiş sınıf üzerinden `basic_ostream`, önceden tanımlanmış akışı nesneleri destekler:
+`ostream` Sınıfı, türetilmiş sınıf aracılığıyla `basic_ostream`, önceden tanımlanmış akışı nesneleri destekler:
 
 - `cout` Standart çıktı
 
-- `cerr` Standart sınırlı arabelleğe alma ile hata
+- `cerr` sınırlı arabelleğe alma ile standart hata
 
 - `clog` benzer şekilde `cerr` ancak tam arabelleğe alma
 
-Nesneleri gelen oluşturulur nadiren `ostream`; önceden tanımlanmış nesneleri genellikle kullanılır. Bazı durumlarda, önceden tanımlanmış nesneler program başlatma işleminden sonra atayabilirsiniz. `ostream` Arabelleğe alınan veya arabellekten çıkarılan işlemi için yapılandırılabilir, sınıf, sıralı metin modu çıktı için uygundur. Tüm temel sınıf işlevselliğini `ios`, yer aldığı `ostream`. Sınıfın bir nesnesi oluşturmak, `ostream`, belirtmeniz gerekir bir `streambuf` oluşturucuya nesnesi.
+Gelen nadiren nesneleri özniteliklerden `ostream`; önceden tanımlanmış nesneler genellikle kullanılır. Bazı durumlarda, önceden tanımlanmış nesnelere program başlatma işleminden sonra yeniden atayabilirsiniz. `ostream` Arabelleğe alınan veya arabellekten çıkarılan işlemi için yapılandırılabilir, sınıf, sıralı metin modunda çıkış için idealdir. Temel sınıfın tüm işlevselliği `ios`, dahildir `ostream`. Sınıfın bir nesnesi oluşturursanız `ostream`, belirtmelisiniz bir `streambuf` oluşturucusuna.
 
-`ofstream` Sınıfı, disk dosya çıktısı destekler. Yalnızca çıktı disk gerekiyorsa, sınıfın bir nesnesi oluşturmak `ofstream`. Belirleyebileceğiniz olup olmadığını `ofstream` nesneleri oluşturulurken, ikili veya metin modu verileri kabul `ofstream` nesne veya çağrılırken `open` nesnenin üye işlevi. Birçok biçimlendirme seçenekleri ve üye işlevlerini uygulamak `ofstream` nesneleri ve temel sınıflarının tüm işlevleri `ios` ve `ostream` bulunur.
+`ofstream` Sınıfı, disk dosya çıktısını destekler. Yalnızca çıktı bir disk gerekiyorsa, sınıfın bir nesnesi oluşturmak `ofstream`. Belirtebileceğiniz olup olmadığını `ofstream` nesneleri diziden oluşturulurken ikili veya metin modunda veri kabul `ofstream` nesne veya çağrılırken `open` nesnesinin üye işlevi. Çok sayıda biçimlendirme seçenekleri ve üye işlevler uygulamak `ofstream` nesneleri ve tüm temel sınıflar işlevselliğini `ios` ve `ostream` dahildir.
 
-Oluşturucuda bir dosya adı belirtirseniz, nesne oluşturulduğunda bu dosyayı otomatik olarak açılır. Aksi takdirde, kullanabileceğiniz `open` varsayılan oluşturucu çağırma sonra üye işlevi.
+Oluşturucuda bir filename belirtirseniz, bir nesne oluşturulduğunda bu dosya otomatik olarak açılır. Aksi takdirde, kullanabileceğiniz `open` varsayılan oluşturucusu çağrılırken sonra üye işlevi.
 
-Çalışma zamanı işlevi gibi `sprintf_s`, `ostringstream` sınıfı, bellek içi dizeleri çıkışı destekler. Akış g/ç biçimlendirme kullanarak bellekte bir dize oluşturmak için sınıfın bir nesnesi oluşturmak `ostringstream`.
+Çalışma zamanı işlev gibi `sprintf_s`, `ostringstream` sınıfı, bellek içi dizelere çıkış destekler. Akış g/ç biçimlendirme kullanarak bellekte bir dize oluşturmak için sınıfın bir nesnesi oluşturmak `ostringstream`.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

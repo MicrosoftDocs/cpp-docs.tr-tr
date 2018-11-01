@@ -1,14 +1,8 @@
 ---
-title: Kullanıcı kayıtları | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı Kayıtları
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - COLUMN_ENTRY_MAP
-dev_langs:
-- C++
 helpviewer_keywords:
 - rowsets [C++], accessors
 - COLUMN_ENTRY macro
@@ -21,17 +15,12 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: da0745c730c03df04eb0ebcd6c3e3890b0cae6c6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4d52c36368b9b39815cbb9a103f84f140626ba2b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057902"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567446"
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
 

@@ -1,12 +1,6 @@
 ---
-title: Derleyici Seçenekleri | Microsoft Docs
-ms.custom: ''
+title: Derleyici Seçenekleri
 ms.date: 01/29/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler
 - x86 Visual C++ compiler
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - compiler options, C++
 - x64 Visual C++ compiler
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76ab322dc4573863a30092b296e87e90c41619ab
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8b887b2b9da6f38cdc1cf7287a69bbad8e88b989
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583891"
 ---
 # <a name="compiler-options"></a>Derleyici Seçenekleri
 

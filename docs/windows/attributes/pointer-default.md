@@ -1,28 +1,17 @@
 ---
-title: pointer_default (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: pointer_default (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.pointer_default
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 994a4a48c5199c3efb05a00331656b3b23a2a0c0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8261d789f50c2750cccce48dac675ef478a70420
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067048"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504396"
 ---
 # <a name="pointerdefault"></a>pointer_default
 

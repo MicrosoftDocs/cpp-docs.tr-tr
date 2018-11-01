@@ -1,23 +1,13 @@
 ---
-title: Çağırma kuralı | Microsoft Docs
-ms.custom: ''
+title: Çağırma Kuralı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2b2d06e6c5a24bec178cf24ff22dcb31ffce7d5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9b2e3d4c0579b5ec7eef93848963b150829a7857
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723196"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612015"
 ---
 # <a name="calling-convention"></a>Çağırma Kuralı
 

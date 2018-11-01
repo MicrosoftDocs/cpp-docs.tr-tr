@@ -1,28 +1,18 @@
 ---
-title: OLE denetimlerinin kalıcılığı | Microsoft Docs
-ms.custom: ''
+title: OLE Denetimlerinin Kalıcılığı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43edcfcd7319406bb03c2b04dddcc527cdf5ab8d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e510cdb2ae64b5b3ed5f8b69bc8ad9c22800a167
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395771"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609429"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 

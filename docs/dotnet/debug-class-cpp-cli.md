@@ -1,28 +1,17 @@
 ---
-title: Hata ayıklama sınıfı (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Hata Ayıklama Sınıfı (C++/CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Trace class, Visual C++
 - .NET Framework [C++], Debug class
 - Debug class
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: eecda10f2fd88b902a54fe9f4dc4de8edc4bc1b0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ae400783112ca44a75f1224a9e8d6ebe52414070
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662481"
 ---
 # <a name="debug-class-ccli"></a>Hata Ayıklama Sınıfı (C++/CLI)
 

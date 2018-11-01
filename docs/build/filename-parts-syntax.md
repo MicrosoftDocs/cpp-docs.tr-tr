@@ -1,27 +1,17 @@
 ---
-title: Filename-Parts söz dizimi | Microsoft Docs
-ms.custom: ''
+title: Dosya Adı Parçaları Sözdizimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - syntax, filename-parts
 - filename-parts syntax in NMAKE
 - NMAKE program, syntax
 ms.assetid: 48fe38e0-3f3b-40e6-894c-330ee775a656
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5bf7a9685face739059c4b947a5796cc0a28950a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 89869ccaea2a9a5c3d16762fe49b72efc462e0ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552054"
 ---
 # <a name="filename-parts-syntax"></a>Dosya Adı Parçaları Sözdizimi
 

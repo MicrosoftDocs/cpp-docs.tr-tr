@@ -1,28 +1,17 @@
 ---
-title: library_block (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: library_block (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.library_block
-dev_langs:
-- C++
 helpviewer_keywords:
 - library_block attribute
 ms.assetid: ae7a7ebe-5e1a-4eda-a058-11bbd058ece8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 763ee9c6ad165ad06016a730e218d6aa36777997
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 76e643cb45d8a87408015e6e0726e47d423147f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065128"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459932"
 ---
 # <a name="libraryblock"></a>library_block
 

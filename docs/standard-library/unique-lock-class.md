@@ -1,25 +1,15 @@
 ---
-title: unique_lock sınıfı | Microsoft Docs
-ms.custom: ''
+title: unique_lock Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - mutex/std::unique_lock
-dev_langs:
-- C++
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 780ccdb7f16ed79ef8205c07e1390e778bc33ef5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 784969bea25bfff49a21c23b350afbfc8bdab59a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574427"
 ---
 # <a name="uniquelock-class"></a>unique_lock Sınıfı
 

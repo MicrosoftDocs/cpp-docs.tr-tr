@@ -1,9 +1,6 @@
 ---
-title: Chainınterfaces yapısı | Microsoft Docs
-ms.custom: ''
+title: ChainInterfaces Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::ChainInterfaces
@@ -12,8 +9,6 @@ f1_keywords:
 - implements/Microsoft::WRL::ChainInterfaces::FillArrayWithIid
 - implements/Microsoft::WRL::ChainInterfaces::IidCount
 - implements/Microsoft::WRL::ChainInterfaces::Verify
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::ChainInterfaces structure
 - Microsoft::WRL::ChainInterfaces::CanCastTo method
@@ -22,17 +17,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ChainInterfaces::IidCount constant
 - Microsoft::WRL::ChainInterfaces::Verify method
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 28683d8c69a800cb6f9a365beda26c75b3a69d15
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 87967f733cbb6ae2db999232c57751521d77fdc7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552704"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 

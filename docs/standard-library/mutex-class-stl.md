@@ -1,10 +1,6 @@
 ---
 title: Mutex sınıfı (Standart C++ Kitaplığı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - mutex/std::mutex
 - mutex/std::mutex::mutex
@@ -12,11 +8,7 @@ f1_keywords:
 - mutex/std::mutex::native_handle
 - mutex/std::mutex::try_lock
 - mutex/std::mutex::unlock
-dev_langs:
-- C++
 ms.assetid: 7999d055-f74f-4303-810f-8d3c9cde2f69
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::mutex [C++]
 - std::mutex [C++], mutex
@@ -24,14 +16,12 @@ helpviewer_keywords:
 - std::mutex [C++], native_handle
 - std::mutex [C++], try_lock
 - std::mutex [C++], unlock
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84a6b685501927d9fbd79fa7c82a90c5671f70b2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7766b063eb89a14a94eaa41ebfa17f3e4a1c102e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522570"
 ---
 # <a name="mutex-class-c-standard-library"></a>Mutex sınıfı (Standart C++ Kitaplığı)
 

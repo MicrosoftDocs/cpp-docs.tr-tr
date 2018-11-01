@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0012 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0012
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0012
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXX0012
 - CAN0012
 ms.assetid: bf547e21-6708-4854-ad23-2ae5a889fd82
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 024811c13fb27cb2da88bdddc9965d8a124e341a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 400c4e219ba7c6699b3b531ad93909d0db682c64
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135912"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496654"
 ---
 # <a name="expression-evaluator-error-cxx0012"></a>İfade Değerlendirici Hatası CXX0012
 

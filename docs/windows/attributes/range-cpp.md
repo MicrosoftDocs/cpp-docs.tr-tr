@@ -1,28 +1,17 @@
 ---
-title: Aralık (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Aralık (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.range
-dev_langs:
-- C++
 helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 17ceaa7c470e57cadd198c17c21bb2a8ae4755ce
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b75915b901f55ce7ef8d295531ab5148c6535c93
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071670"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644983"
 ---
 # <a name="range-c"></a>aralık (C++)
 

@@ -1,14 +1,8 @@
 ---
-title: Bir CStatusBarCtrl nesnesinin bölümlerini başlatma | Microsoft Docs
-ms.custom: ''
+title: Bir CStatusBarCtrl Nesnesinin Bölümlerini Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CStatusBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStatusBarCtrl class [MFC], simple mode
 - status bars [MFC], declaring parts of
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - icons, using in status bars
 - CStatusBarCtrl class [MFC], declaring parts of
 ms.assetid: 60e8f285-d2d8-424a-a6ea-2fc548370303
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fa5c4da3bb91983eceea739d42fae12e73b9b0f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c813ef53f94fb773b62f102a484eed2be859772e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662169"
 ---
 # <a name="initializing-the-parts-of-a-cstatusbarctrl-object"></a>Bir CStatusBarCtrl Nesnesinin Bölümlerini Başlatma
 

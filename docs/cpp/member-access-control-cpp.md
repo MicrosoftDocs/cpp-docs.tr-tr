@@ -1,27 +1,17 @@
 ---
-title: Üye erişim denetimi (C++) | Microsoft Docs
-ms.custom: ''
+title: Üye Erişim Denetimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - access control [C++]
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0ac5ceda3b979454c5d37e513cbd77a4d3e3e20
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ee4e9d89878aab4be2e4daf45525f9e951d214f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611425"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 

@@ -1,10 +1,6 @@
 ---
-title: CComUnkArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComUnkArray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComUnkArray
 - ATLCOM/ATL::CComUnkArray
@@ -15,22 +11,16 @@ f1_keywords:
 - ATLCOM/ATL::CComUnkArray::GetCookie
 - ATLCOM/ATL::CComUnkArray::GetUnknown
 - ATLCOM/ATL::CComUnkArray::Remove
-dev_langs:
-- C++
 helpviewer_keywords:
 - connection points [C++], managing
 - CComUnkArray class
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7cab0ea4ecf4bfabede365b9e0fbc9d4a02e2515
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4577e77ac71bbb2e65c8c6168d0d28d5765d551f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550260"
 ---
 # <a name="ccomunkarray-class"></a>CComUnkArray sınıfı
 

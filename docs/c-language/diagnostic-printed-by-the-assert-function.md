@@ -1,23 +1,13 @@
 ---
-title: Assert işlevinin yazdırdığı tanılama | Microsoft Docs
-ms.custom: ''
+title: assert İşlevinin Yazdırdığı Tanılama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 78b64200-520d-40da-9a61-71553f411d4f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac5473a2dd592bbd9af2f65044d3d7d97515dc37
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 330c694b53957cab2e44da7cb8b52031c33fb5a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549051"
 ---
 # <a name="diagnostic-printed-by-the-assert-function"></a>assert İşlevinin Yazdırdığı Tanılama
 

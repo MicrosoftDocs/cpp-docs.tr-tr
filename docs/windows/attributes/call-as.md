@@ -1,28 +1,17 @@
 ---
-title: call_as (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: call_as (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.call_as
-dev_langs:
-- C++
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c8769b542fccd512c1c32b418ffc9f1ad5758628
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 16839f5a5040e6b0019005912782ba359178cc47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579909"
 ---
 # <a name="callas"></a>call_as
 

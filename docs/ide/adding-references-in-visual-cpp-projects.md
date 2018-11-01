@@ -1,28 +1,18 @@
 ---
-title: Visual C++ projelerine başvuru ekleme | Microsoft Docs
-ms.custom: ''
+title: Visual C++ projelerine başvuru ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.References
-dev_langs:
-- C++
 helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b372959105407074cd2a7295837e2c47ef629da7
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: c50a726b0e5b6e175bd7256ab5a5d93d6b172601
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162171"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583809"
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ projelerine başvuru ekleme
 

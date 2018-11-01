@@ -1,12 +1,6 @@
 ---
-title: OLE DB kaynak havuzu ve Hizmetleri | Microsoft Docs
-ms.custom: ''
+title: OLE DB Kaynak Havuzu ve Hizmetleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource pooling [OLE DB], provider requirements
 - OLE DB, resource pooling
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - OLE DB services [OLE DB]
 - OLE DB providers, resource pooling
 ms.assetid: 360c36e2-25ae-4caf-8ee7-d4a6b6898f68
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a90f60f830b4d5ec98685dbd8cd1c573d0fbcb4e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7c57376404b37de95e01be6459b3d57ddcc53fe3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448106"
 ---
 # <a name="ole-db-resource-pooling-and-services"></a>OLE DB Kaynak Havuzu ve Hizmetleri
 

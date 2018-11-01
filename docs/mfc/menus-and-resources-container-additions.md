@@ -1,16 +1,10 @@
 ---
-title: 'Menüler ve kaynaklar: kapsayıcı ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Menüler ve Kaynaklar: Kapsayıcı Ekleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - IDP_OLE_INIT_FAILED
 - IDP_FAILED_TO_CREATE
 - VK_ESCAPE
-dev_langs:
-- C++
 helpviewer_keywords:
 - application accelerator table [MFC]
 - VK_ESCAPE key [MFC]
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fa5cef9d5796d86f65524dda3bce9e300788a09
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ea4159f8eb60f43f60eacd5831ce148c81aeb572
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391117"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546620"
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 

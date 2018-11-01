@@ -1,28 +1,18 @@
 ---
-title: Implementsbase yapısı | Microsoft Docs
-ms.custom: ''
+title: ImplementsBase Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::ImplementsBase
-dev_langs:
-- C++
 helpviewer_keywords:
 - ImplementsBase structure
 ms.assetid: f898eb17-136d-4c87-b3ea-771319314641
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c65f47e77b7109ab1f6abfdd22b02bc34c31ef48
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5ea5e6cbd2b13616a5d43e044db21f477a088364
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603248"
 ---
 # <a name="implementsbase-structure"></a>ImplementsBase Yapısı
 

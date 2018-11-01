@@ -1,23 +1,15 @@
 ---
-title: 'Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasında arabirim | Microsoft Docs'
+title: 'Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim'
 ms.custom: how-to
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4870258a946aaf5c86919e1fd04f574aaed4d99b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b6da1142ee04668033a516f2c20c4a2354ff5598
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213224"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576689"
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim
 

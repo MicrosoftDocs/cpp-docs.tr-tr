@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2169 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2169
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2169
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2169
 ms.assetid: 832c19ad-a2e2-4f50-b493-26b791877600
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fe86335415e0e7df9da6831cf0bb097e2342074
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6669a85899922554b264e05c4b83f7b18cfa3157
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039939"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477447"
 ---
 # <a name="resource-compiler-error-rc2169"></a>Kaynak Derleyicisi Hatası RC2169
 

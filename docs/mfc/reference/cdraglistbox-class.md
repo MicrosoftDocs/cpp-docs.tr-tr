@@ -1,10 +1,6 @@
 ---
-title: CDragListBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDragListBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDragListBox
 - AFXCMN/CDragListBox
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXCMN/CDragListBox::DrawInsert
 - AFXCMN/CDragListBox::Dropped
 - AFXCMN/CDragListBox::ItemFromPt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDragListBox [MFC], CDragListBox
 - CDragListBox [MFC], BeginDrag
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CDragListBox [MFC], Dropped
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d9e4fb2835870fa9c3a46dcd5cda5b0cca600a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 739bf08139c56992af883b5cefa5c235bf08f551
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623658"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
 

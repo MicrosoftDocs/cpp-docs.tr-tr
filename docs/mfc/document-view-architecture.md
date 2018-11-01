@@ -1,12 +1,6 @@
 ---
-title: Belge / görünüm mimarisi | Microsoft Docs
-ms.custom: ''
+title: Belge / görünüm mimarisi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CView class [MFC], view architecture
 - CDocument class [MFC]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42c56ddea19266251bb12c06f6423c278f14bd71
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 943199e2398bcb49c7dddf6b3a67f5556c9c81a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404562"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509285"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 

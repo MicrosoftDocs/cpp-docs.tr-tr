@@ -1,27 +1,17 @@
 ---
-title: . TFCOND | Microsoft Docs
-ms.custom: ''
+title: .TFCOND
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .TFCOND
-dev_langs:
-- C++
 helpviewer_keywords:
 - .TFCOND directive
 ms.assetid: e3c0fe44-bf68-4397-bf31-61995c69c4c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4e0ec36f97801ad1227eeaa719a930d0ab820b8c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 614919200647d0f97392c9d226dc42d43e8a8fb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687668"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582019"
 ---
 # <a name="tfcond"></a>.TFCOND
 

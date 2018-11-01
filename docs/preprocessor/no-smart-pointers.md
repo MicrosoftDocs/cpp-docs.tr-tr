@@ -1,27 +1,17 @@
 ---
-title: no_smart_pointers | Microsoft Docs
-ms.custom: ''
+title: no_smart_pointers
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - no_search_pointers
-dev_langs:
-- C++
 helpviewer_keywords:
 - no_smart_pointers attribute
 ms.assetid: d69dd71e-08a8-4446-a3d0-a062dc29cb17
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 233e302d4035801e7d8871754d8ecfcfee54cf1a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 305c08497a600f602767496cba48d108335fdeb8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060917"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636988"
 ---
 # <a name="nosmartpointers"></a>no_smart_pointers
 **C++ özgü**

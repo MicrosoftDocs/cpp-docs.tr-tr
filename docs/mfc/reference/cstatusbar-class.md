@@ -1,10 +1,6 @@
 ---
-title: CStatusBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStatusBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStatusBar
 - AFXEXT/CStatusBar
@@ -23,8 +19,6 @@ f1_keywords:
 - AFXEXT/CStatusBar::SetPaneInfo
 - AFXEXT/CStatusBar::SetPaneStyle
 - AFXEXT/CStatusBar::SetPaneText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStatusBar [MFC], CStatusBar
 - CStatusBar [MFC], CommandToIndex
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9026f7bee9d765eedc0e6a28c9d247af75db3689
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 70d700197e3d249812e8b09a2cba744a0fbc9803
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649286"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 

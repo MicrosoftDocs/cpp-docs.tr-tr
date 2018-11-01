@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3555 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3555
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3555
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3555
 ms.assetid: b4311bd3-851b-479a-9965-d03f39dd8fd4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1db56676ef9d737fab97a5b2826e1b0fe43bc3c6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 97f2c6e6bc64563602f960eb7879800ab6cce6a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069657"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628286"
 ---
 # <a name="compiler-error-c3555"></a>Derleyici Hatası C3555
 

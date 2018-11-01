@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3345 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3345
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3345
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3345
 ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 191c2184d14f991ab62f439b492c7fd7f4a00be5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 196928d7a171aa7ffe2d6b8f38b529d3d3588bc4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118953"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624789"
 ---
 # <a name="compiler-error-c3345"></a>Derleyici Hatası C3345
 
@@ -66,4 +56,4 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
 [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
-[Modülü](../../windows/module-cpp.md)
+[module](../../windows/module-cpp.md)

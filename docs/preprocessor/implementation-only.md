@@ -1,27 +1,17 @@
 ---
-title: implementation_only | Microsoft Docs
-ms.custom: ''
+title: implementation_only
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - implementation_only
-dev_langs:
-- C++
 helpviewer_keywords:
 - implementation_only attribute
 ms.assetid: d8cabc86-4425-45a0-9587-d57536980088
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d9f5f643570cce5618e2a7ad97d47289303dc49
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9bc083b78cd0c3bd39241de2815580c9eca6a207
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654447"
 ---
 # <a name="implementationonly"></a>implementation_only
 **C++ özgü**

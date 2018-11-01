@@ -1,10 +1,6 @@
 ---
-title: _splitpath_s, _wsplitpath_s | Microsoft Docs
-ms.custom: ''
+title: _splitpath_s, _wsplitpath_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wsplitpath_s
 - _splitpath_s
@@ -26,8 +22,6 @@ f1_keywords:
 - splitpath_s
 - _splitpath_s
 - wsplitpath_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - splitpath_s function
 - pathnames
@@ -36,20 +30,16 @@ helpviewer_keywords:
 - path names
 - wsplitpath_s function
 ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5fd1407aa6c2b7630e0720eeec179ca27e7d31a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5a6770b7f5f0f8ee82cf86757d14e03b33c1f5d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602910"
 ---
 # <a name="splitpaths-wsplitpaths"></a>_splitpath_s, _wsplitpath_s
 
-Bir yol adı bileşenlerine keser. Sürümleri bunlar [_splitpath, _wsplitpath](splitpath-wsplitpath.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir yol adı bileşenlerine böler. Bunlar sürümleridir [_splitpath, _wsplitpath](splitpath-wsplitpath.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -96,58 +86,58 @@ errno_t _wsplitpath_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yol*<br/>
+*Yolu*<br/>
 Tam yolu.
 
 *Sürücü*<br/>
-Sürücü harfini izleyen iki nokta ile (**:**). Geçirebilirsiniz **NULL** sürücü harfi gerekmiyorsa, bu parametre için.
+Sürücü harfini izleyen iki nokta (**:**). Geçirebilirsiniz **NULL** sürücü harfini gerekmiyorsa, bu parametre için.
 
 *driveNumberOfElements*<br/>
-Boyutunu *sürücü* tek baytlı veya uluslararası karakter arabellek. Varsa *sürücü* olan **NULL**, bu değerin 0 olması gerekir.
+Boyutu *sürücü* tek baytlı veya geniş karakter arabelleği. Varsa *sürücü* olduğu **NULL**, bu değer, 0 olmalıdır.
 
-*Dir*<br/>
-Sondaki eğik çizgi dahil olmak üzere dizin yolu. Eğik ( **/** ), ters eğik çizgi ( **\\** ), ya da her ikisini de kullanılabilir. Geçirebilirsiniz **NULL** dizin yolu gerekmiyorsa, bu parametre için.
+*dizini*<br/>
+Dizin yolu, eğik çizgi de dahil. İleri eğik çizgi ( **/** ), ters eğik çizgi ( **\\** ), veya her ikisi de kullanılabilir. Geçirebilirsiniz **NULL** dizin yolu gerekmiyorsa, bu parametre için.
 
 *dirNumberOfElements*<br/>
-Boyutunu *dir* tek baytlı veya uluslararası karakter arabellek. Varsa *dir* olan **NULL**, bu değerin 0 olması gerekir.
+Boyutu *dir* tek baytlı veya geniş karakter arabelleği. Varsa *dir* olduğu **NULL**, bu değer, 0 olmalıdır.
 
 *fname*<br/>
 Temel dosya adı (uzantısı olmadan). Geçirebilirsiniz **NULL** filename gerekmiyorsa, bu parametre için.
 
 *nameNumberOfElements*<br/>
-Boyutunu *fname* tek baytlı veya uluslararası karakter arabellek. Varsa *fname* olan **NULL**, bu değerin 0 olması gerekir.
+Boyutu *fname* tek baytlı veya geniş karakter arabelleği. Varsa *fname* olduğu **NULL**, bu değer, 0 olmalıdır.
 
 *ext*<br/>
-Dosya adı uzantısı, dönem baştaki dahil olmak üzere (**.**). Geçirebilirsiniz **NULL** dosya adı uzantısı gerekmez, bu parametre için.
+Dönem baştaki dahil olmak üzere, dosya adı uzantısı (**.**). Geçirebilirsiniz **NULL** dosya adı uzantısı gerekmiyorsa, bu parametre için.
 
 *extNumberOfElements*<br/>
-Boyutunu *ext* tek baytlı veya uluslararası karakter arabellek. Varsa *ext* olan **NULL**, bu değerin 0 olması gerekir.
+Boyutu *ext* tek baytlı veya geniş karakter arabelleği. Varsa *ext* olduğu **NULL**, bu değer, 0 olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatasında bir hata kodu.
+Başarılıysa sıfır; bir hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |Koşul|Dönüş Değeri|
 |---------------|------------------|
-|*yol* olan **NULL**|**EINVAL**|
-|*Sürücü* olan **NULL**, *driveNumberOfElements* sıfır değil|**EINVAL**|
-|*Sürücü* olan olmayan**NULL**, *driveNumberOfElements* sıfır|**EINVAL**|
-|*dir* olan **NULL**, *dirNumberOfElements* sıfır değil|**EINVAL**|
-|*dir* olan olmayan**NULL**, *dirNumberOfElements* sıfır|**EINVAL**|
-|*fname* olan **NULL**, *nameNumberOfElements* sıfır değil|**EINVAL**|
-|*fname* olan olmayan**NULL**, *nameNumberOfElements* sıfır|**EINVAL**|
-|*ext* olan **NULL**, *extNumberOfElements* sıfır değil|**EINVAL**|
-|*ext* olan olmayan**NULL**, *extNumberOfElements* sıfır|**EINVAL**|
+|*yol* olduğu **NULL**|**EINVAL**|
+|*Sürücü* olduğu **NULL**, *driveNumberOfElements* sıfır değil|**EINVAL**|
+|*Sürücü* olan olmayan**NULL**, *driveNumberOfElements* sıfırdır|**EINVAL**|
+|*dir* olduğu **NULL**, *dirNumberOfElements* sıfır değil|**EINVAL**|
+|*dir* olan olmayan**NULL**, *dirNumberOfElements* sıfırdır|**EINVAL**|
+|*fname* olduğu **NULL**, *nameNumberOfElements* sıfır değil|**EINVAL**|
+|*fname* olan olmayan**NULL**, *nameNumberOfElements* sıfırdır|**EINVAL**|
+|*ext* olduğu **NULL**, *extNumberOfElements* sıfır değil|**EINVAL**|
+|*ext* olan olmayan**NULL**, *extNumberOfElements* sıfırdır|**EINVAL**|
 
-Yukarıdaki koşullardan herhangi biri meydana gelirse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve geri dönüp **EINVAL**.
+Yukarıdaki koşullardan herhangi biri meydana gelirse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve dönüş **EINVAL**.
 
-Herhangi bir arabellek ise sonucu tutmak için çok kısa, bu işlevler dizeleri boş, ayarlamak için tüm arabellekler temizleyin **errno** için **ERANGE**ve geri dönüp **ERANGE**.
+Herhangi bir arabellek ise sonuç tutmak için çok kısa, bu işlevler tüm arabellekler boş dizeler için ayarlayın temizlemeniz **errno** için **ERANGE**ve dönüş **ERANGE**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Splitpath_s** işlevi dört bileşenlerine yolunu keser. **_splitpath_s** şu anda kullanımda birden çok baytlı kod sayfasına göre çok baytlı karakter sıralarının algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. **_wsplitpath_s** bir joker karakter sürümü **_splitpath_s**; bağımsız değişkenleri **_wsplitpath_s** joker karakter dizelerdir. Aksi takdirde bu işlevler aynı şekilde davranır
+**_Splitpath_s** işlevi bir yol dört bileşenlerine böler. **_splitpath_s** çok baytlı karakter sıralarını şu anda çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak işler. **_wsplitpath_s** geniş karakterli sürümüdür **_splitpath_s**; bağımsız değişkenler **_wsplitpath_s** geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -155,9 +145,9 @@ Herhangi bir arabellek ise sonucu tutmak için çok kısa, bu işlevler dizeleri
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tsplitpath_s**|**_splitpath_s**|**_splitpath_s**|**_wsplitpath_s**|
 
-Her bileşenin tam yolunun ayrı bir arabellek depolanır; bildirim sabitleri **_max_drıve**, **_max_dır**, **_MAX_FNAME**, ve **_MAX_EXT** (STDLIB içinde tanımlanmıştır. H) her dosya bileşeni için izin verilen en büyük boyutu belirtin. Bileşenleri karşılık gelen bildirim sabitleri yığın bozulması neden daha büyük dosya.
+Her bileşenin tam yolunun ayrı bir arabellek depolanır; bildirim sabitleri **_max_drıve**, **_max_dır**, **_MAX_FNAME**, ve **_MAX_EXT** (STDLIB içinde tanımlanır. H) her dosya bileşeni için izin verilen en büyük boyutu belirtin. Bileşenleri, ilgili bildirim sabitleri yığın bozulması neden daha büyük bir dosya.
 
-Aşağıdaki tabloda bildirim sabitleri değerleri listelenmektedir.
+Aşağıdaki tabloda, bildirim sabitleri değerlerini listeler.
 
 |Ad|Değer|
 |----------|-----------|
@@ -166,11 +156,11 @@ Aşağıdaki tabloda bildirim sabitleri değerleri listelenmektedir.
 |_MAX_FNAME|256|
 |_MAX_EXT|256|
 
-Tam yolu (örneğin, bir dosya adı), bileşen içermiyorsa **_splitpath_s** karşılık gelen arabellek boş bir dize atar.
+Tam yolu (örneğin, bir dosya adı), bir bileşen içermiyorsa **_splitpath_s** boş bir dize karşılık gelen arabelleğe atar.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğu bir boyut bağımsız değişkeni belirtme gereksinimi ortadan otomatik olarak çıkarabilir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -179,11 +169,11 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**_splitpath_s**|\<stdlib.h >|
 |**_wsplitpath_s**|\<stdlib.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md).
+Örneğin bakın [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

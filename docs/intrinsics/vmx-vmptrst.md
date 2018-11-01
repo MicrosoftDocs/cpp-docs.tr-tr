@@ -1,28 +1,18 @@
 ---
-title: __vmx_vmptrst | Microsoft Docs
-ms.custom: ''
+title: __vmx_vmptrst
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __vmx_vmptrst
-dev_langs:
-- C++
 helpviewer_keywords:
 - __vmx_vmptrst intrinsic
 - VMPTRST instruction
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1014d41ea53405ea96ea5a3e19e627d72663f21
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a736a632c7f711ac8fdcc4d73eaf2bd341d0c978
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074949"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654239"
 ---
 # <a name="vmxvmptrst"></a>__vmx_vmptrst
 

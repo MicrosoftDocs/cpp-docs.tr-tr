@@ -1,10 +1,6 @@
 ---
-title: CWinAppEx sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWinAppEx sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CWinAppEx
 - AFXWINAPPEX/CWinAppEx
@@ -64,8 +60,6 @@ f1_keywords:
 - AFXWINAPPEX/CWinAppEx::SaveCustomState
 - AFXWINAPPEX/CWinAppEx::StoreWindowPlacement
 - AFXWINAPPEX/CWinAppEx::m_bForceImageReset
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWinAppEx [MFC], CWinAppEx
 - CWinAppEx [MFC], CleanState
@@ -124,16 +118,12 @@ helpviewer_keywords:
 - CWinAppEx [MFC], StoreWindowPlacement
 - CWinAppEx [MFC], m_bForceImageReset
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d98030101ba71adfbb928a7415d8578de0fb69e1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 57c18ff00cd9e3a1d3156d8214ac78b49ca00c1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079395"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544423"
 ---
 # <a name="cwinappex-class"></a>CWinAppEx sınıfı
 

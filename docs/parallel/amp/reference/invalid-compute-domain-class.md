@@ -1,29 +1,19 @@
 ---
-title: invalid_compute_domain sınıfı | Microsoft Docs
-ms.custom: ''
+title: invalid_compute_domain Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - invalid_compute_domain
 - AMPRT/invalid_compute_domain
 - AMPRT/Concurrency::invalid_compute_domain::invalid_compute_domain
-dev_langs:
-- C++
 helpviewer_keywords:
 - invalid_compute_domain class
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17d0556a349d66f4c70d730108d9cd843b736dfd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 264b93d11b82eb00ac85e92413ca1a7071e06879
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387035"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582253"
 ---
 # <a name="invalidcomputedomain-class"></a>invalid_compute_domain Sınıfı
 

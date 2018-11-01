@@ -1,29 +1,19 @@
 ---
-title: Çıktı dosyası (-F) seçenekleri | Microsoft Docs
-ms.custom: ''
+title: Çıktı dosyası (-F) seçenekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /f
-dev_langs:
-- C++
 helpviewer_keywords:
 - output files
 - output files, compiler options [C++]
 - cl.exe compiler, output files
 ms.assetid: f6367f30-2710-4178-b43a-639eed824acb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ac24a1dcbf873ad818d9921c311efd318dd34c4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e815eff674fbf56806b6c9fc33edd9df41aad3f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590261"
 ---
 # <a name="output-file-f-options"></a>Çıktı Dosyası (/F) Seçenekleri
 

@@ -1,10 +1,6 @@
 ---
-title: CToolTipCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CToolTipCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CToolTipCtrl
 - AFXCMN/CToolTipCtrl
@@ -41,8 +37,6 @@ f1_keywords:
 - AFXCMN/CToolTipCtrl::SetWindowTheme
 - AFXCMN/CToolTipCtrl::Update
 - AFXCMN/CToolTipCtrl::UpdateTipText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CToolTipCtrl [MFC], CToolTipCtrl
 - CToolTipCtrl [MFC], Activate
@@ -78,16 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ac89d58b6043089f6c0d0045189116d2799f517
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 808d8b5f023e88b67458c514e871692aac94ccd5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069223"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500418"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 

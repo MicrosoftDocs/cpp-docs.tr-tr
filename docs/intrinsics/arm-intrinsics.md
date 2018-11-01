@@ -1,10 +1,6 @@
 ---
-title: ARM iç bilgileri | Microsoft Docs
-ms.custom: ''
+title: ARM İç Bilgileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - arm_neon/vsetq_lane_p8
 - armintr/_arm_uxtb
@@ -1931,22 +1927,16 @@ f1_keywords:
 - arm_neon/vrsra_n_s32
 - arm_neon/vabdl_u16
 - arm_neon/vsliq_n_s32
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 092ac94cac92b3ba327aa7c7853ec286268a00af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e32c33a5e04314b05558fe445aaaebb33dd92ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434108"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453865"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 

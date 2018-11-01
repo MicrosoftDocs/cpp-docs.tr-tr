@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2662 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2662
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2662
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2662
 ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e794f50dd6a23101e004618468b432c8969e54b5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fefd523ca3b9a3406afc307150322f9d431aa730
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515251"
 ---
 # <a name="compiler-error-c2662"></a>Derleyici Hatası C2662
 

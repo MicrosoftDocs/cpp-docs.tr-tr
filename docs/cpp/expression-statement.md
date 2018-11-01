@@ -1,26 +1,16 @@
 ---
-title: İfade deyimi | Microsoft Docs
-ms.custom: ''
+title: İfade Deyimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - statements [C++], expression
 - expression statements
 ms.assetid: 547d7f7a-58be-4ffc-a4b3-d64c7ae7538c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f026a91846196e34f97b4d2cbcfa2c9fa749e8b7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2973c3e0a1cd59edfc7ef1e771454b780da23cf9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058614"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562454"
 ---
 # <a name="expression-statement"></a>İfade Deyimi
 

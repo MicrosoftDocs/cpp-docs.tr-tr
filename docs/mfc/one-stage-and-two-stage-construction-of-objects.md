@@ -1,28 +1,18 @@
 ---
-title: Nesnelerin tek aşamalı ve iki aşamalı yapımı | Microsoft Docs
-ms.custom: ''
+title: Nesnelerin Tek Aşamalı ve İki Aşamalı Yapımı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [MFC], creating graphic objects
 - object creation [MFC], graphic objects
 - objects [MFC], graphic objects
 - one-stage and two-stage construction of objects [MFC]
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6454e34830591eccb2b696948d02f74ad8cebfd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bdfb7879bc926435bdcd72d6776646c449ffef80
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426581"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623320"
 ---
 # <a name="one-stage-and-two-stage-construction-of-objects"></a>Nesnelerin Tek Aşamalı ve İki Aşamalı Yapımı
 

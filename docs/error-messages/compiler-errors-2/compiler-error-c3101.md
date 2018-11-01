@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3101 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3101
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3101
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3101
 ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69f881206528d83dc298fd262dd54c1dd84a7308
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8db1ba622a0c83a7f2a6421d79ff5853cbc4d9a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049845"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555567"
 ---
 # <a name="compiler-error-c3101"></a>Derleyici Hatası C3101
 

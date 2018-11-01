@@ -1,28 +1,18 @@
 ---
-title: noreturn | Microsoft Docs
-ms.custom: ''
+title: noreturn
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - noreturn_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], noreturn
 - noreturn __declspec keyword
 ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6133fc70c5c2b8bb8f794746c1d5ca11be97b817
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d78e8f5116eabf9073205b938156197bf1001a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611867"
 ---
 # <a name="noreturn"></a>noreturn
 

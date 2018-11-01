@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2177 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2177
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2177
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2177
 ms.assetid: 2a39a880-cddb-4d3e-a572-645a14c4c478
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42d002b2264c9ce6b5e8d09dcda322c33b18fd05
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9beb8454804401f8b39f9976fe62faf6e2659537
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641144"
 ---
 # <a name="compiler-error-c2177"></a>Derleyici Hatası C2177
 

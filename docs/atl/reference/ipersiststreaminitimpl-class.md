@@ -1,10 +1,6 @@
 ---
-title: Ipersiststreamınitımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ipersiststreamınitımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IPersistStreamInitImpl
 - ATLCOM/ATL::IPersistStreamInitImpl
@@ -14,23 +10,17 @@ f1_keywords:
 - ATLCOM/ATL::IPersistStreamInitImpl::IsDirty
 - ATLCOM/ATL::IPersistStreamInitImpl::Load
 - ATLCOM/ATL::IPersistStreamInitImpl::Save
-dev_langs:
-- C++
 helpviewer_keywords:
 - IPersistStreamInit ATL implementation
 - IPersistStreamInitImpl class
 - streams, ATL
 ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0deea6b4657b4b116b79c8472724f7c9d34dade8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 472b01e169788ce3cf10f8ed9f2198c44cdeb88a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075612"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645672"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>Ipersiststreamınitımpl sınıfı
 

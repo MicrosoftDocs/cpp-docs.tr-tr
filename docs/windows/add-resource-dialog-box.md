@@ -1,29 +1,18 @@
 ---
-title: Kaynak Ekle iletişim kutusu (C++) | Microsoft Docs
-ms.custom: ''
+title: Kaynak Ekle iletişim kutusu (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.insertresource
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [C++], adding
 - Add Resource dialog box [C++]
 ms.assetid: e9fb6967-738f-47e8-ab58-728cf35b3af0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f44a0be0fc7614ab9dd09e814e7e444ed90e8a4a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b20ec4a076e276c905a96c2deabd619ea10517f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317673"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503135"
 ---
 # <a name="add-resource-dialog-box"></a>Kaynak Ekle İletişim Kutusu
 

@@ -1,28 +1,17 @@
 ---
-title: bağlanabilir (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: bağlanabilir (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.bindable
-dev_langs:
-- C++
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7f30ab333a2f50c845b8cf66179da05863fa67d7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 08ecd3e242d1e3601f7a5a3ea54c51a679dca97a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664158"
 ---
 # <a name="bindable"></a>bağlanabilir
 

@@ -1,10 +1,6 @@
 ---
-title: CBaseKeyFrame sınıfı | Microsoft Docs
-ms.custom: ''
+title: CBaseKeyFrame sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CBaseKeyFrame
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe
-dev_langs:
-- C++
 helpviewer_keywords:
 - CBaseKeyFrame [MFC], CBaseKeyFrame
 - CBaseKeyFrame [MFC], AddToStoryboard
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ad9ff4d61647ce84e9aefef99391be51bca467b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 850ce46f524d9069609c1e5809c091c18bd58ee4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618250"
 ---
 # <a name="cbasekeyframe-class"></a>CBaseKeyFrame sınıfı
 

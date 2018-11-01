@@ -1,23 +1,13 @@
 ---
-title: 2.7.2.5 varsayılan | Microsoft Docs
-ms.custom: ''
+title: 2.7.2.5 default
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c856df07-705c-4ad3-9105-a268dd33e939
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 047110fe80d15d0ff3d979eeec8abf3e42dc35f1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: efb10913b74ebfae37c95d057955c87bdcfca9a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580258"
 ---
 # <a name="2725-default"></a>2.7.2.5 default
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2460 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2460
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2460
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2460
 ms.assetid: d969fca9-3ac5-4e4e-88fc-df05510e2093
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb2d85ffbc7aa799f0688fbb10021a04ef9455ad
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 414b6e53cf1610a55db984a1127bfc884102494f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589598"
 ---
 # <a name="compiler-error-c2460"></a>Derleyici Hatası C2460
 

@@ -1,11 +1,6 @@
 ---
-title: log2, log2f, log2l | Microsoft Docs
-ms.custom: ''
+title: log2, log2f, log2l
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - log2
 - log2l
@@ -23,23 +18,17 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
-dev_langs:
-- C++
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16fb56b1a3aef56e201d469974c5de434a08aa41
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5f1db48abdc7237dc46a0ea8a3ea5647a0fce62f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579315"
 ---
 # <a name="log2-log2f-log2l"></a>log2, log2f, log2l
 
-Belirtilen değer ikili (2 tabanı) logaritmasını belirler.
+Belirtilen değer ikili (2 tabanında) logaritmasını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,37 +58,37 @@ long double log2l(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Base-2 logaritmasını belirlemek için değer.
+2 tabanında logaritmasını belirlemek için değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa döndürür log2 dönmek *x*.
+Başarı durumunda log2 döndürür dönüş *x*.
 
-Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
+Aksi halde aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|Döndür|
+|Sorun|döndürülecek|
 |-----------|------------|
 |*x* < 0|NaN|
-|*x* ±0 =|-SONSUZ|
+|*x* ±0 =|-INFİNİTY|
 |*x* = 1|+0|
-|+ SONSUZ|+ SONSUZ|
+|+ INFİNİTY|+ INFİNİTY|
 |NaN|NaN|
 |etki alanı hatası|NaN|
-|kutbu'na hata|-HUGE_VAL, - HUGE_VALF, veya - HUGE_VALL|
+|kutup hata|-HUGE_VAL, - HUGE_VALF, veya - HUGE_VALL|
 
-Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+Hatalar rapor, belirtilen [_matherr](matherr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-X bir tamsayı değilse, bu işlev temelde en önemli 1 biti sıfır tabanlı dizinini döndürür *x*.
+Bu işlev x bir tamsayı değilse, temelde en önemli 1 biti sıfır tabanlı dizinini döndürür. *x*.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**log2**, **log2f**, **log2l**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

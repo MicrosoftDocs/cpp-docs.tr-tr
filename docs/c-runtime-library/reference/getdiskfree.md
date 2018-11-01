@@ -1,10 +1,6 @@
 ---
-title: _getdiskfree | Microsoft Docs
-ms.custom: ''
+title: _getdiskfree
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getdiskfree
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - getdiskfree
 - _getdiskfree
-dev_langs:
-- C++
 helpviewer_keywords:
 - diskfree_t type
 - _getdiskfree function
@@ -32,23 +26,19 @@ helpviewer_keywords:
 - disk size
 - getdiskfree function
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2fad5c67f247a40f1c8d65bec50ccf80f44b3d4d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03c39802301406bc4250328983c8cf8bad94497f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401623"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602286"
 ---
 # <a name="getdiskfree"></a>_getdiskfree
 
-Doldurmak için bir disk sürücüsü bilgilerini kullanan bir **_diskfree_t** yapısı.
+Bir disk sürücüsü hakkında bilgi doldurmak için kullandığı bir **_diskfree_t** yapısı.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,18 +52,18 @@ unsigned _getdiskfree(
 ### <a name="parameters"></a>Parametreler
 
 *Sürücü*<br/>
-Bilgi almak istediğiniz disk sürücüsü.
+Bilgi almak istiyorsanız disk sürücüsü.
 
 *driveinfo*<br/>
-A **_diskfree_t** sürücü hakkındaki bilgilerle doldurulmuş yapısı.
+A **_diskfree_t** sürücü hakkındaki bilgilerle doldurulur yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri sıfır olur. İşlev başarısız olursa, dönüş değeri hata kodudur. Değer **errno** işletim sistemi tarafından döndürülen hatalar için ayarlanır. Tarafından belirtilen hata durumları hakkında daha fazla bilgi için **errno**, bkz: [errno sabitleri](../../c-runtime-library/errno-constants.md).
+İşlev başarılı olursa, dönüş değeri sıfırdır. İşlev başarısız olursa, dönüş değeri hata kodudur. Değer **errno** işletim sistemi tarafından döndürülen hatalar için ayarlanır. Tarafından belirtilen hata koşulları hakkında daha fazla bilgi için **errno**, bkz: [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Diskfree_t** yapısı içinde Direct.h tanımlanır.
+**_Diskfree_t** yapı DIRECT.h tanımlanır.
 
 ```C
 struct _diskfree_t {
@@ -84,7 +74,7 @@ struct _diskfree_t {
 };
 ```
 
-Bu işlev parametrelerini doğrular. Varsa *driveinfo* işaretçi **NULL** veya *sürücü* geçersiz bir sürücü belirtir açıklandığı gibi bir geçersiz parametre işleyicisi bu işlevi çağırır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**. 26 geçerli sürücüler aralığı 0'dan. A *sürücü* 0 değeri, geçerli sürücüyü belirtir; bundan sonra numaraları eşleme alfabedeki İngilizce bu tür için 1 sürücüsü gösterir, 3, C sürücüsünün vb. gösterir.
+Bu işlev, parametrelerini doğrular. *Driveinfo* işaretçisi **NULL** veya *sürücü* geçersiz bir sürücü belirtir. Bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**. Geçerli bir sürücü aralığı 0-26. A *sürücü* 0 değeri, geçerli sürücüyü belirtir; bundan sonra sayıları harita alfabedeki İngilizce gibi için 1 sürücüsü gösterir, 3, C sürücüsü vb. gösterir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -92,7 +82,7 @@ Bu işlev parametrelerini doğrular. Varsa *driveinfo* işaretçi **NULL** veya 
 |-------------|---------------------|
 |**_getdiskfree**|\<Direct.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

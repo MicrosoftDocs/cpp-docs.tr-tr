@@ -1,8 +1,6 @@
 ---
-title: Platform::String sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::String sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::String::String
@@ -18,21 +16,15 @@ f1_keywords:
 - VCCORLIB/Platform::String::IsFastPass
 - VCCORLIB/Platform::String::Length
 - VCCORLIB/Platform::String::ToString
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d9c68bde9fdd49e4007b8b6e1d92899d71dde4e
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: ef9838fa8a6a34eac1d2d3531ff93fb124c81d4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607044"
 ---
 # <a name="platformstring-class"></a>Platform::String sınıfı
 

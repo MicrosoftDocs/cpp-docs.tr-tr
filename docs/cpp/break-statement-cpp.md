@@ -1,27 +1,17 @@
 ---
-title: break deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: break Deyimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - break_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - break keyword [C++]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99b342719593b2072cdba21e3200aa23daa8f9df
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3dda0b19fffaaf725ab363a0c4fe70d2ca54e3f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662507"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C++)
 

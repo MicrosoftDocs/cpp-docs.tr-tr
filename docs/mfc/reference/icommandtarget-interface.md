@@ -1,29 +1,19 @@
 ---
-title: ICommandTarget arabirimi | Microsoft Docs
-ms.custom: ''
+title: ICommandTarget arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ICommandTarget
 - AFXWINFORMS/ICommandTarget
 - AFXWINFORMS/ICommandTarget::Initialize
-dev_langs:
-- C++
 helpviewer_keywords:
 - ICommandTarget interface [MFC]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee8a4bb3f80d9776aec4fd7a6af0d1523c60064d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 830802f960cba1789c21c53efbf0ed05de3ac4cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066090"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557462"
 ---
 # <a name="icommandtarget-interface"></a>ICommandTarget arabirimi
 

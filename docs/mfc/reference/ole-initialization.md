@@ -1,28 +1,18 @@
 ---
-title: OLE başlatma | Microsoft Docs
-ms.custom: ''
+title: OLE Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - afxdisp/AfxOleInit
 - afxdisp/AfxEnableControlContainer
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df0187364a44c84a2d0f7f38e968e0ea17df1fb2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c935dbf88b3c70cdd9ec585685bf6231ded01dde
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623333"
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 

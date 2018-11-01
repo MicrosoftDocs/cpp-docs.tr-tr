@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2157 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2157
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2157
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2157
 ms.assetid: babbca24-16dc-4b69-be14-a675029249c1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd17b03cc48555800e3c36cc3f5512506f011372
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1338a0f0ceb1a42ed84fe74e4ed9a2d774979075
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450953"
 ---
 # <a name="compiler-error-c2157"></a>Derleyici Hatası C2157
 

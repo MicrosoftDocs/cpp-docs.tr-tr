@@ -1,28 +1,18 @@
 ---
-title: Cdaofieldınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoFieldInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoFieldInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - DAO (Data Access Objects), Fields collection
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aaf3f41bf6a6fe5d67ec5835d57889f6ec7dbae6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80a541028a6ba7daf60a8d1afbd6cf7ba3557202
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629430"
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo Yapısı
 

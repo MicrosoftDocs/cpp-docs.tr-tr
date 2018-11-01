@@ -1,26 +1,18 @@
 ---
-title: 'Platform::Collections:: vectorıterator sınıfı | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::Collections:: vectorıterator sınıfı'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorIterator::VectorIterator
-dev_langs:
-- C++
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6be436af0dc6954ff8bab71e598576f463bdcee2
-ms.sourcegitcommit: 3f3f1d687e109b63399e14e2c8f4404787bdfae7
+ms.openlocfilehash: 8e776e0f5d479ee8633efa647ac41e6b1b5f9c0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336554"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595604"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections:: vectorıterator sınıfı
 

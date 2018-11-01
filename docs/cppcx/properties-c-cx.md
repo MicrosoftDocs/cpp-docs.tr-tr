@@ -1,20 +1,13 @@
 ---
-title: Özellikler (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Özellikler (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d4b5193919195e51b4dbcf82af50cd6dedbcf2b0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a4aadb853ac26d353cbee5f7c0c81436a4c1dfc9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103807"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609416"
 ---
 # <a name="properties-ccx"></a>Özellikler (C + +/ CX)
 

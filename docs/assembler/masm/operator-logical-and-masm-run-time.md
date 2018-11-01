@@ -1,28 +1,18 @@
 ---
-title: İşleç &amp; &amp; (MASM çalışma zamanı) | Microsoft Docs
-ms.custom: ''
+title: İşleç &amp; &amp; (MASM çalışma zamanı)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator &&
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator &&
 - '&& operator'
 ms.assetid: 0a633a40-114c-48f5-88ff-09bc8d9b281a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69b93f78fc40066829056e57f840898a00a9b67b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2062e2fbe6d4a69368872b5994ec5f4f9940d684
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682442"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616237"
 ---
 # <a name="operator-ampamp-masm-run-time"></a>İşleç &amp; &amp; (MASM çalışma zamanı)
 

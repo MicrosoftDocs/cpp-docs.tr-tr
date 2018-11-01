@@ -1,31 +1,21 @@
 ---
-title: cache_suballoc sınıfı | Microsoft Docs
-ms.custom: ''
+title: cache_suballoc Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::cache_suballoc
 - allocators/stdext::cache_suballoc::allocate
 - allocators/stdext::cache_suballoc::deallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::cache_suballoc
 - stdext::cache_suballoc [C++], allocate
 - stdext::cache_suballoc [C++], deallocate
 ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ccc01372d08edb997ed6b0aaa70be69fde60a1e2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 06d0ef390e6ae1980b9ab20b8ceb67213837148b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954329"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438876"
 ---
 # <a name="cachesuballoc-class"></a>cache_suballoc Sınıfı
 

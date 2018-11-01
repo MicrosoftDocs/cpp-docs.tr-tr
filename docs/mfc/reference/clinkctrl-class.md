@@ -1,10 +1,6 @@
 ---
-title: CLinkCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CLinkCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CLinkCtrl
 - AFXCMN/CLinkCtrl
@@ -22,8 +18,6 @@ f1_keywords:
 - AFXCMN/CLinkCtrl::SetItemID
 - AFXCMN/CLinkCtrl::SetItemState
 - AFXCMN/CLinkCtrl::SetItemUrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLinkCtrl [MFC], CLinkCtrl
 - CLinkCtrl [MFC], Create
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - CLinkCtrl [MFC], SetItemState
 - CLinkCtrl [MFC], SetItemUrl
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b760cd1f548fc4d5dd2c4ce78cb0e16bca64474
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 79c6aa9f0448ed399554d634d48f666aaaf60566
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070276"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597567"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
 

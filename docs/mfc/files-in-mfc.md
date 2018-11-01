@@ -1,12 +1,6 @@
 ---
-title: MFC'deki dosyalar | Microsoft Docs
-ms.custom: ''
+title: MFC'deki Dosyalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - serialization [MFC], MFC files
 - I/O [MFC], MFC classes
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - files [MFC], manipulating
 - binary access [MFC]
 ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfc36a6b1610df07201833ed13a1c6ebd0ae6f7b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 815239b0d4de1938a810153cb98f39b2642b6e2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444499"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459338"
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 

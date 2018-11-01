@@ -1,10 +1,6 @@
 ---
-title: propagator_block sınıfı | Microsoft Docs
-ms.custom: ''
+title: propagator_block Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - propagator_block
 - AGENTS/concurrency::propagator_block
@@ -21,21 +17,15 @@ f1_keywords:
 - AGENTS/concurrency::propagator_block::send_message
 - AGENTS/concurrency::propagator_block::unlink_source
 - AGENTS/concurrency::propagator_block::unlink_sources
-dev_langs:
-- C++
 helpviewer_keywords:
 - propagator_block class
 ms.assetid: 86aa75fd-eda5-42aa-aadf-25c0c1c9742d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94fd117f43dac30aef33bef9e085f5f2fcd9d2f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 38b7c920f8ffcab6d709d9484f308a56cd6b8425
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376550"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613284"
 ---
 # <a name="propagatorblock-class"></a>propagator_block Sınıfı
 

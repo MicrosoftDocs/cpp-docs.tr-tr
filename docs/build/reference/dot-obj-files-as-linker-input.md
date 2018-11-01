@@ -1,12 +1,6 @@
 ---
-title: . Bağlayıcı girişi olarak obj dosyaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Girişi olarak .Obj Dosyaları
 ms.date: 12/29/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - linker [C++], OBJ files as input
 - object files, linker output
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - COFF files
 - OBJ files as linker input
 - .obj files as linker input
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: decd015a184b66fa5867435177c07fdf23ad53ae
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 17a8ea51c41fb2c17d8feb223253cf9eed722675
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704385"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616157"
 ---
 # <a name="obj-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Obj Dosyaları
 

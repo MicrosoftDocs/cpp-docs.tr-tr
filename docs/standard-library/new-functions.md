@@ -1,18 +1,16 @@
 ---
-title: '&lt;Yeni&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Yeni&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-ms.openlocfilehash: 6192805f0f427f86267a646b11d9f1d3365a1d57
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b5803b5fdf44392b6096f9c9a5ebdde7f94eae59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716046"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604028"
 ---
 # <a name="ltnewgt-functions"></a>&lt;Yeni&gt; işlevleri
 

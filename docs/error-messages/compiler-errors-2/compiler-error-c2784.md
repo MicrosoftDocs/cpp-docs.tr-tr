@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2784 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2784
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2784
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2784
 ms.assetid: 3d761fe2-881c-48bd-afae-e2e714e20473
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed0e5dd7628031a7ad5ac66d2b691ee52dda62f2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 906cb5d8df9fb8ac57c5d4289d77ac662ac26a92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091315"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563705"
 ---
 # <a name="compiler-error-c2784"></a>Derleyici Hatası C2784
 

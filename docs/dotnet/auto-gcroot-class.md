@@ -1,30 +1,20 @@
 ---
-title: auto_gcroot sınıfı | Microsoft Docs
-ms.custom: ''
+title: auto_gcroot Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::auto_gcroot
 - msclr.auto_gcroot
 - auto_gcroot
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_gcroot
 ms.assetid: b5790912-265d-463e-a486-47302e91042a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 48412a932ff3752b0613f7045cd88992332b7917
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cb89035d928b251c9cc0427612ce6853a96456a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423240"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534244"
 ---
 # <a name="autogcroot-class"></a>auto_gcroot Sınıfı
 

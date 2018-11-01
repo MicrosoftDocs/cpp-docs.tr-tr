@@ -1,26 +1,16 @@
 ---
-title: 'İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc766b3f5410cc52543b5d2bafc06b87d9222e4a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 85622b68f94342ece2c9fc666b9ff6d515cfe10b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077939"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472443"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
 

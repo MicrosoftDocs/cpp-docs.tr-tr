@@ -1,10 +1,6 @@
 ---
-title: CCommand sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCommand Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CCommand
 - CCommand
@@ -40,8 +36,6 @@ f1_keywords:
 - Unprepare
 - CCommand.Unprepare
 - CCommand::Unprepare
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCommand class
 - Close method
@@ -55,17 +49,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f7214f47380eff17f1cd35eaa97d75c6ab6d9f3d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 64774f5a8a81d7c4b3432800376c00f7d1e96d62
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596852"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: MFC'de özel durum işleme | Microsoft Docs
-ms.custom: ''
+title: MFC'de Özel Durum İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - DAO [MFC], exceptions
 - assertions [MFC], When to use exceptions
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 167d3af6d353ec48edde4288db26b9e407c62bd5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fcc233b2cc0bfeeb589fec10c94343839f2c8032
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078966"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623450"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 

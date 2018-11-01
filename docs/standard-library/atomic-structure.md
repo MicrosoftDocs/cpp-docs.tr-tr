@@ -1,25 +1,15 @@
 ---
-title: atomic yapısı | Microsoft Docs
-ms.custom: ''
+title: atomic Yapısı
 ms.date: 04/20/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - atomic/std::atomic
-dev_langs:
-- C++
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e5982fc303362a9636c4bf1b0e2d89c6aa05031
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 258812f033d34f040d96847581d6f51692a933b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590066"
 ---
 # <a name="atomic-structure"></a>atomic Yapısı
 

@@ -1,28 +1,17 @@
 ---
-title: İsteğe bağlı (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: İsteğe bağlı (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.optional
-dev_langs:
-- C++
 helpviewer_keywords:
 - optional attribute
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2da82c7390a6e0677bd324b062de56ba39cbc13a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 440e605b1dfd0b24060965c5ea5dd55424701cf7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061059"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590118"
 ---
 # <a name="optional-c"></a>isteğe bağlı (C++)
 

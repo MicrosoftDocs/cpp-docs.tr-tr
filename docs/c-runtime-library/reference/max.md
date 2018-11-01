@@ -1,10 +1,6 @@
 ---
-title: __max | Microsoft Docs
-ms.custom: ''
+title: __max
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __max
 apilocation:
@@ -22,27 +18,21 @@ apitype: DLLExport
 f1_keywords:
 - max
 - __max
-dev_langs:
-- C++
 helpviewer_keywords:
 - max macro
 - maximum macro
 - __max macro
 ms.assetid: 05c936f6-0e22-45d6-a58d-4bc102e9dae2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d223f4288ccf40646e8f560cec7243b7e8f9f649
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 32e1207ea4bb030ac5303de32c0566f98e0596a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613765"
 ---
 # <a name="max"></a>__max
 
-İki değerden daha büyük döndürür önişlemci makrosu.
+İki değeri büyük döndürür önişlemci makrosu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,17 +43,17 @@ ms.locfileid: "32398425"
 ### <a name="parameters"></a>Parametreler
 
 *bir*, *b*<br/>
-Karşılaştırılacak herhangi bir sayısal tür değerleri.
+Herhangi bir sayısal tür Karşılaştırılacak değerler.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**__max** değişkenlerinin daha büyük döndürür.
+**__max** büyük bağımsız değişkenlerinin döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**__Max** makrosu iki değeri karşılaştırır ve daha büyük bir değer döndürür. Bağımsız değişken veri türü, imzalı veya imzasız herhangi sayı olabilir. Bağımsız değişkenleri ve dönüş değeri aynı veri türünde olmalıdır.
+**__Max** makrosu iki değeri karşılaştırır ve büyük bir değer döndürür. Bağımsız değişkenler, imzalı veya imzasız veri türü, bir sayı olabilir. Hem bağımsız değişkenler ve dönüş değeri, aynı veri türünde olmalıdır.
 
-Döndürülen bağımsız değişkeni, iki kez makrosu tarafından değerlendirilir. Bunu, aşağıdaki gibi değerlendirmesinde değerini değiştiren bir ifade bağımsız değişkeni ise, bu beklenmeyen sonuçlara yol açabilir `*p++`.
+Döndürülen bağımsız değişkeni iki kez makro tarafından değerlendirilir. Bunu, aşağıdaki gibi değerlendirildiğinde değerini değiştiren bir ifade bağımsız değişken ise bu beklenmeyen sonuçlara neden olabilir `*p++`.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +63,7 @@ Döndürülen bağımsız değişkeni, iki kez makrosu tarafından değerlendiri
 
 ## <a name="example"></a>Örnek
 
-Daha fazla bilgi için örneğin bkz [__min](min.md).
+Daha fazla bilgi için örneğin bakın [__min](min.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

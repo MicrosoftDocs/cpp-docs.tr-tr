@@ -1,10 +1,6 @@
 ---
-title: _kbhit | Microsoft Docs
-ms.custom: ''
+title: _kbhit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _kbhit
 apilocation:
@@ -24,8 +20,6 @@ f1_keywords:
 - _kbhit
 - kbhit
 - conio/_kbhit
-dev_langs:
-- C++
 helpviewer_keywords:
 - keyboard input
 - user input, checking for keyboard
@@ -36,23 +30,19 @@ helpviewer_keywords:
 - _kbhit function
 - keyboards, checking input
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f414403774a6f2dbd5e21b70d707ab8c8b20c63f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9133d73e92438327bb2381e3293fd37076dd27ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668006"
 ---
 # <a name="kbhit"></a>_kbhit
 
-Klavye girişi için konsolu denetler.
+Klavye girişi için konsol denetler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,11 +53,11 @@ int _kbhit( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_kbhit** bir anahtar basıldıysa sıfır olmayan bir değer döndürür. Aksi halde 0 döndürür.
+**_kbhit** bir anahtara basıldığını sıfır olmayan bir değer döndürür. Aksi durumda 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Kbhit** işlevi için yeni bir tuş vuruşu Konsolu denetler. İşlevi sıfır olmayan bir değer döndürürse, bir tuş vuruşu arabellekte bekliyor. Program sonra çağırabilirsiniz **_getch** veya **_getche** tuş vuruşu alınamıyor.
+**_Kbhit** işlevi yeni tuş vuruşu uçbirimini denetler. İşlev, sıfır olmayan bir değer döndürürse, tuş vuruşu arabellekteki bekliyor. Programın ardından çağırabilirsiniz **_getch** veya **_getche** tuş vuruşu alınamıyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -75,7 +65,7 @@ int _kbhit( void );
 |-------------|---------------------|
 |**_kbhit**|\<conio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

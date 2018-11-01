@@ -1,27 +1,17 @@
 ---
-title: unorm sınıfı | Microsoft Docs
-ms.custom: ''
+title: unorm Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - unorm
 - AMP_SHORT_VECTORS/unorm
 - AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor
-dev_langs:
-- C++
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 131a928c5943ab9bf4dcc327b044d76e5646ede7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b485d5efbfbcedbb1e11a3e212465340f0413ee4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491565"
 ---
 # <a name="unorm-class"></a>unorm Sınıfı
 

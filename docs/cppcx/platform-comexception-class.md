@@ -1,28 +1,20 @@
 ---
-title: Platform::COMException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::COMException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::COMException
 - VCCORLIB/Platform::Exception::HResult
 - VCCORLIB/Platform::Exception::Message
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f00acda41149f89121338d967f65e040d62f5452
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 6ba387b8d3be0e3f91a844bb7633bedfdb7ee9d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103964"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607811"
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException sınıfı
 

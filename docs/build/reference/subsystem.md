@@ -1,29 +1,19 @@
 ---
-title: -SUBSYSTEM | Microsoft Docs
-ms.custom: ''
+title: /SUBSYSTEM
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /subsystem
-dev_langs:
-- C++
 helpviewer_keywords:
 - /SUBSYSTEM editbin option
 - -SUBSYSTEM editbin option
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81c20f345b56f11179b37b4663d3cfc84d159116
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ec771efcd8fffd1aa1825f2c500404dc0b2a4965
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638743"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 

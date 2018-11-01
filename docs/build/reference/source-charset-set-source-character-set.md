@@ -1,28 +1,18 @@
 ---
-title: -Kaynak-charset (kaynak karakter kümesini Ayarla) | Microsoft Docs
-ms.custom: ''
+title: / Source-Charset (kaynak karakter kümesini Ayarla)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - source-charset
 - /source-charset
-dev_langs:
-- C++
 helpviewer_keywords:
 - /execution-charset compiler option
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14c8d40f508096822a741bac65f4d553a6804120
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 6927c6e54a89f619182916c561dcbe7d1c92a25b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663833"
 ---
 # <a name="source-charset-set-source-character-set"></a>/ Source-Charset (kaynak karakter kümesini Ayarla)
 

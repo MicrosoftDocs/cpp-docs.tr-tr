@@ -1,27 +1,17 @@
 ---
-title: . YIĞIN | Microsoft Docs
-ms.custom: ''
+title: .STACK
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .STACK
-dev_langs:
-- C++
 helpviewer_keywords:
 - .STACK directive
 ms.assetid: 70019463-5d4f-41b6-8464-023a8ac2466f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95e8d69903fabf60fdb5bc04d90452bdad163a19
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f97f10155894a86c9ddcd4cf8633712c458be386
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463680"
 ---
 # <a name="stack"></a>.STACK
 

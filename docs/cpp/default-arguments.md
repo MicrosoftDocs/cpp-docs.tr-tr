@@ -1,12 +1,6 @@
 ---
-title: Varsayılan bağımsız değişkenler | Microsoft Docs
-ms.custom: ''
+title: Varsayılan Bağımsız Değişkenler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - arguments [C++], function
 - function declarators
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - arguments [C++], default
 - defaults [C++], arguments
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48261d545737215ff44b1b56bb3b2d48839b6eb4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5ffc0301e7a89a379a2ea1eda9a113276df7a88e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528927"
 ---
 # <a name="default-arguments"></a>Varsayılan Bağımsız Değişkenler
 

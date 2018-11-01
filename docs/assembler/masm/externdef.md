@@ -1,27 +1,17 @@
 ---
-title: EXTERNDEF | Microsoft Docs
-ms.custom: ''
+title: EXTERNDEF
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - EXTERNDEF
-dev_langs:
-- C++
 helpviewer_keywords:
 - EXTERNDEF directive
 ms.assetid: 95a10de6-c345-4428-a2f2-90f7d411dc86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5c3d42cabb88c38ce1d98da24cd2cb4ddec8d5b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 23d34af470e825a8535de8cb28645a7bfb4c4d1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619771"
 ---
 # <a name="externdef"></a>EXTERNDEF
 

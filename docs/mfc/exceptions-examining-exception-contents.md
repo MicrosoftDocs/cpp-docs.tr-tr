@@ -1,12 +1,6 @@
 ---
-title: 'Özel durumlar: Özel durum içeriklerini İnceleme | Microsoft Docs'
-ms.custom: ''
+title: 'Özel Durumlar: Özel Durum İçeriklerini İnceleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception handling [MFC], MFC
 - try-catch exception handling [MFC], MFC function exceptions
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - try-catch exception handling [MFC], exception contents
 - throwing exceptions [MFC], exception contents
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f5fb0df0c16e9aea2f334b6c08f92a3bef4ea486
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4355a575f29741d0c7b9f1e12e40ca9d977219b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630085"
 ---
 # <a name="exceptions-examining-exception-contents"></a>Özel Durumlar: Özel Durum İçeriklerini İnceleme
 

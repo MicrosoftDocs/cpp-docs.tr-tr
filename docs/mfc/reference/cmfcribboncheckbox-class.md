@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonCheckBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonCheckBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonCheckBox
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonCheckBox [MFC], CMFCRibbonCheckBox
 - CMFCRibbonCheckBox [MFC], GetCompactSize
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CMFCRibbonCheckBox [MFC], OnDrawOnList
 - CMFCRibbonCheckBox [MFC], SetACCData
 ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bc91a98d1909245e09268cc7129084392a4c096
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 067f38522c1be112d6e12200c2c10e1d439e5057
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612426"
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: Değişken parametre türü sabitleri | Microsoft Docs
-ms.custom: ''
+title: Değişken Parametre Türü Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - VTS_YPOS_HIMETRIC
 - VTS_PICTURE
@@ -20,8 +16,6 @@ f1_keywords:
 - VTS_OPTEXCLUSIVE
 - VTS_YSIZE_PIXELS
 - VTS_XSIZE_PIXELS
-dev_langs:
-- C++
 helpviewer_keywords:
 - VTS_XPOS_HIMETRIC constant [MFC]
 - VTS_FONT constant [MFC]
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - VTS_OPTEXCLUSIVE constant [MFC]
 - VTS_YSIZE_PIXELS constant [MFC]
 ms.assetid: de99c7a9-7aae-4dc4-b723-40c6380543ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64b68fb930c6de732e009a251c5e8363bace80ec
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9627452d674aa48a84094665d9499e3a38a3bdf4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632511"
 ---
 # <a name="variant-parameter-type-constants"></a>Değişken Parametre Türü Sabitleri
 

@@ -1,27 +1,17 @@
 ---
-title: _bstr_t::Attach | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::Attach
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::Attach
-dev_langs:
-- C++
 helpviewer_keywords:
 - Attach method [C++]
 ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1eddbc7a01be66430759bb84c3ce6d840f37d098
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8601ebbea6a9ab837c07518b018e83e8c0df226d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604444"
 ---
 # <a name="bstrtattach"></a>_bstr_t::Attach
 

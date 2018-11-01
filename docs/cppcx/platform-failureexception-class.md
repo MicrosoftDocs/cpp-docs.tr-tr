@@ -1,27 +1,19 @@
 ---
-title: Platform::FailureException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::FailureException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::FailureException::FailureException
 - VCCORLIB/Platform::FailureException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::FailureException
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12fd236f0b34020d6c368f603b81fe50729dcb7f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b1890fb0649dee779b3851ed9f1fc46a67b2916d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472624"
 ---
 # <a name="platformfailureexception-class"></a>Platform::FailureException sınıfı
 

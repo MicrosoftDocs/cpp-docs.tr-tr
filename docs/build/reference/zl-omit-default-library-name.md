@@ -1,15 +1,9 @@
 ---
-title: -Zl (varsayılan kitaplık adını atla) | Microsoft Docs
-ms.custom: ''
+title: /Zl (Varsayılan Kitaplık Adını Atla)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /zi
 - VC.Project.VCCLCompilerTool.OmitDefaultLibName
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zl compiler option [C++]
 - ZI compiler option
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - /Zl compiler option [C++]
 - default libraries, omitting names
 ms.assetid: b27d39d0-44d6-498c-84ae-27c1326fee59
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f09abebb8fc142bbe2390f61d790a5885c9aebe
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ba30efd76e94749dd261f3528535d674b5e155e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707323"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621916"
 ---
 # <a name="zl-omit-default-library-name"></a>/Zl (Varsayılan Kitaplık Adını Atla)
 
@@ -76,7 +66,7 @@ void Test() {
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitDefaultLibName%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitDefaultLibName%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

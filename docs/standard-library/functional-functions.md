@@ -1,10 +1,6 @@
 ---
-title: '&lt;işlevsel&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;işlevsel&gt; işlevleri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - functional/std::bind
 - xfunctional/std::bind1st
@@ -22,8 +18,6 @@ f1_keywords:
 - xfunctional/std::ptr_fun
 - functional/std::ref
 - functional/std::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::bind [C++]
 - std::bind1st
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c93f32a7684d32cba0d2822571bd138f9206f46
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 696f937686e9ff3a45f8132da8a8d79857d989da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585217"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;işlevsel&gt; işlevleri
 

@@ -1,28 +1,18 @@
 ---
-title: -validate-charset (uyumlu karakterler için Doğrula) | Microsoft Docs
-ms.custom: ''
+title: / Validate-Charset (uyumlu karakterler için Doğrula)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /validate-charset
 - validate-charset
-dev_langs:
-- C++
 helpviewer_keywords:
 - /validate-charset compiler option
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 698a221dadf21e6d314f5556210d84b98853757f
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 243d225f5acde0c6099050539687726ea082c898
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029534"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590495"
 ---
 # <a name="validate-charset-validate-for-compatible-characters"></a>/ Validate-Charset (uyumlu karakterler için Doğrula)
 

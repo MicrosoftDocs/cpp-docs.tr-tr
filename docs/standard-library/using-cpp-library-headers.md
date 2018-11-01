@@ -1,12 +1,6 @@
 ---
-title: C++ Kitaplığı üstbilgilerini kullanma | Microsoft Docs
-ms.custom: ''
+title: C++ Kitaplığı Üstbilgilerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - headers, naming in C++ include directive
 - standard header in C++
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - library headers
 - C++ Standard Library, headers
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2283e74c00867e373d2ba117fd5dfbf70f137c75
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b9841d1045a6d2d1126414f1ce4cfc93f9667eef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966018"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603963"
 ---
 # <a name="using-c-library-headers"></a>C++ Kitaplığı Üstbilgilerini Kullanma
 

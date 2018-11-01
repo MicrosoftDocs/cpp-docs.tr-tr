@@ -1,10 +1,6 @@
 ---
-title: CCRTHeap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCRTHeap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CCRTHeap
 - ATLMEM/ATL::CCRTHeap
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLMEM/ATL::CCRTHeap::Free
 - ATLMEM/ATL::CCRTHeap::GetSize
 - ATLMEM/ATL::CCRTHeap::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCRTHeap class
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 537785bab555bffb5278da27926b4adbb1a6f226
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b761fc3d9d9874e676fad8c74a82f1f08d714d61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022025"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647323"
 ---
 # <a name="ccrtheap-class"></a>CCRTHeap sınıfı
 

@@ -1,28 +1,18 @@
 ---
-title: İşaretçiler (C++) | Microsoft Docs
-ms.custom: ''
+title: İşaretçiler (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declarators, pointers
 - declarations, pointers
 - pointers [C++]
 - pointers, declarations
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e896c1a00e45e5e7503837409903651ed2bdc3a
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a258a71b8b89643ee98785ee9dfbf30cdf128db7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667876"
 ---
 # <a name="pointers-c"></a>İşaretçiler (C++)
 

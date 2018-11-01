@@ -1,31 +1,21 @@
 ---
-title: '&lt;cerrno&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cerrno&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cerrno>
-dev_langs:
-- C++
 helpviewer_keywords:
 - cerrno header
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42a76dceeff6a0cdb878a0657a6a9e66a4d13a58
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cc8294f83f9d414228f660cf8e600f456d7b16d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632449"
 ---
 # <a name="ltcerrnogt"></a>&lt;cerrno&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<errno.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<errno.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +26,7 @@ Standart C Kitaplığı üstbilgi içeren \<errno.h > ve ilişkili adlarıyla ek
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

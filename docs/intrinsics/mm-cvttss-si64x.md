@@ -1,28 +1,18 @@
 ---
-title: _mm_cvttss_si64x | Microsoft Docs
-ms.custom: ''
+title: _mm_cvttss_si64x
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _mm_cvttss_si64x
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f8d863a485f6b3fa9648b74e8a438dcf5ef37be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5c2dd98ad3f74ac56b3656ac5f6f450efc40c088
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381368"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522986"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 
@@ -33,8 +23,8 @@ Genişletilmiş x64 yayan kesilmesi tek duyarlıklı Floating-Point numarası 64
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__int64 _mm_cvttss_si64x( 
-   __m128 value 
+__int64 _mm_cvttss_si64x( 
+   __m128 value 
 );
 ```
 

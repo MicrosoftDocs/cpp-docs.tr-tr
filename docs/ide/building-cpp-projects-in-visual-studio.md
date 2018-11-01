@@ -1,27 +1,17 @@
 ---
-title: Visual Studio'da C++ projeleri derleme | Microsoft Docs
-ms.custom: ''
+title: Visual Studio'da C++ Projeleri Derleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++ projects, building
 - projects [C++], building
 - builds [C++], about building in Visual Studio
 ms.assetid: 9e8bc1a2-bb17-4951-937a-c757ed88d2d1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0da2464684a06b62c6e22ea04bb68a01dc36f42b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 83f79e922a66622611f3f6e493ca8d498435033f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382356"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569704"
 ---
 # <a name="building-c-projects-in-visual-studio"></a>Visual Studio'da C++ Projeleri Derleme
 

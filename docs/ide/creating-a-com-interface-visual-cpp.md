@@ -1,27 +1,17 @@
 ---
-title: COM arabirimi (Visual C++) oluşturma | Microsoft Docs
-ms.custom: ''
+title: COM Arabirimi Oluşturma (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.com.creating.interfaces
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces, creating
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e573e65e1b9f3638aaa2f1b25c36d6c959f194d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 53379a7937bd96b50de61652f67bd0dcb34a6730
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569747"
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM Arabirimi Oluşturma (Visual C++)
 

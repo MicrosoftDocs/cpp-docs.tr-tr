@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2790 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2790
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2790
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2790
 ms.assetid: 38d4fce1-ba00-413d-8bc1-e8aa43d7bc1f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc2c6b238fab7e42c0754e613b62756a86a5bb31
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e377c18b5c0774a466dc535f2a1fba3411bd15b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530253"
 ---
 # <a name="compiler-error-c2790"></a>Derleyici Hatası C2790
 

@@ -1,10 +1,6 @@
 ---
-title: _mbsnbicmp, _mbsnbicmp_l | Microsoft Docs
-ms.custom: ''
+title: _mbsnbicmp, _mbsnbicmp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsnbicmp_l
 - _mbsnbicmp
@@ -32,8 +28,6 @@ f1_keywords:
 - _tcsnicmp_l
 - _wcsnicmp
 - _mbsnbicmp_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tcsnicmp_l function
 - _strnicmp function
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - mbsnbicmp function
 - _wcsnicmp function
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43c9da102f81654062518ca8e886aab1c49df623
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 059d0781e465f6491f27fd634bbc4479104bc12f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314969"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581902"
 ---
 # <a name="mbsnbicmp-mbsnbicmpl"></a>_mbsnbicmp, _mbsnbicmp_l
 

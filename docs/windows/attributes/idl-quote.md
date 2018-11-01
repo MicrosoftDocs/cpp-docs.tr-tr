@@ -1,28 +1,17 @@
 ---
-title: idl_quote (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: idl_quote (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.idl_quote
-dev_langs:
-- C++
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 31e06d83ce64675b5b1e8ac9cbb865bfb3eff334
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: edfeb18053f3ae4fa8c45211833e0ceaa037cf79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074169"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595578"
 ---
 # <a name="idlquote"></a>idl_quote
 

@@ -1,28 +1,18 @@
 ---
-title: İşlev nesneleri C++ Standart kitaplığında | Microsoft Docs
-ms.custom: ''
+title: C++ Standart kitaplığındaki işlev nesneleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functors
 - C++ Standard Library, functors
 - C++ Standard Library, function objects
 - function objects
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09123f4b8d0200d133ae04244d38b615640f7d30
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7af56f52b59b03dfed9e1233473239274a0dcbd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964934"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437133"
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ Standart kitaplığındaki işlev nesneleri
 

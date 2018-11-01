@@ -1,12 +1,6 @@
 ---
-title: İşlev çağrısı (C++) | Microsoft Docs
-ms.custom: ''
+title: İşlev Çağrısı (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function calls, C++ functions
 - functions [C++], calling
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - function call operator ()
 ms.assetid: 5094254a-045b-46f7-8653-69bc91e80dce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d583609a1013620384e7e938182403fb5c694fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0064b17f0adf5cadf732321fbb62403a1da5db76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081407"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649156"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C++)
 

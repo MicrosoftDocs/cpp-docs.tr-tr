@@ -1,28 +1,18 @@
 ---
-title: C++ destek kitaplığı | Microsoft Docs
-ms.custom: ''
+title: C++ Destek Kitaplığı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Managed Support Library
 - C++ Support Library
 - Visual C++ Support Library
 ms.assetid: fe6246eb-9ac7-478d-a272-dc9b09b14788
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f1bae6cf2369d5d0f9b8eefde19d332083f52648
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 88b7112962e003d825bac85112224130b5827b9c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575441"
 ---
 # <a name="c-support-library"></a>C++ Destek Kitaplığı
 

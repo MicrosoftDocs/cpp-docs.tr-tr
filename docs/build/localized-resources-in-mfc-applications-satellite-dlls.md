@@ -1,12 +1,6 @@
 ---
-title: "MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri | Microsoft Docs"
-ms.custom: ''
+title: "MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - multiple language support [C++]
 - localization [C++], MFC resources
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - resource-only DLLs [C++], MFC applications
 - satellite DLLs [C++]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 888d0ce0e53fef45df868e0980953ffb763d8771
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e9f9b751da6339cbe8f352bdb7eee4b7af2c359b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726298"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658009"
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri
 

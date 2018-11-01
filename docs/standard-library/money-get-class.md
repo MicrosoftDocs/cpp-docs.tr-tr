@@ -1,10 +1,6 @@
 ---
-title: money_get sınıfı | Microsoft Docs
-ms.custom: ''
+title: money_get Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_get
 - xlocmon/std::money_get::char_type
@@ -12,8 +8,6 @@ f1_keywords:
 - xlocmon/std::money_get::string_type
 - xlocmon/std::money_get::do_get
 - xlocmon/std::money_get::get
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::money_get [C++]
 - std::money_get [C++], char_type
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 991c8c9505485e84aa4e8e1e0e8955b5ad2ac23a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 40ce364d768e682c9e85506d2af9e46a01c76e65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712863"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537793"
 ---
 # <a name="moneyget-class"></a>money_get Sınıfı
 

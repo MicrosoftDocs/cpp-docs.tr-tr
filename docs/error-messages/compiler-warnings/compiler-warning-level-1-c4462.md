@@ -1,34 +1,25 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4462 | Microsoft Docs
+title: Derleyici Uyarısı (düzey 1) C4462
 ms.date: 10/25/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4462
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4462
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 105a78fe9f8a8d2b6442c9b403af0266de53d3b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 801a440f131e9428c7f217346a6fd26c72cc1374
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281407"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582331"
 ---
 # <a name="compiler-warning-level-1-c4462"></a>Derleyici Uyarısı (düzey 1) C4462
 
 > Türün GUID'i belirlenemiyor. Program çalışma zamanında başarısız olabilir.
 
-Bir Windows çalışma zamanı uygulama veya bileşenin genel olduğunda uyarı C4462 oluşur `TypedEventHandler` türü parametrelerinden biri olarak kapsayan sınıfı bir başvuru içeriyor.
+Bir Windows çalışma zamanı uygulama veya bileşen genel olduğunda c4462 uyarısı meydana gelir `TypedEventHandler` tür parametrelerinden biri olarak kapsayan sınıfa bir başvuru içeriyor.
 
-Bu uyarı için bir hata otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, kullanmak [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 4 uyarı sorunu yaşayıp C4462 yapmak için kaynak kodu dosyasına bu satırı ekleyin:
+Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 4 uyarısı sorunu C4462 yapmak için kaynak kodu dosyanızda bu satırı ekleyin:
 
 ```cpp
 #pragma warning(4:4462)
@@ -36,23 +27,23 @@ Bu uyarı için bir hata otomatik olarak yükseltilir. Bu davranışı değişti
 
 ## <a name="example"></a>Örnek
 
-Bu örnek uyarı C4462 oluşturur:
+Bu örnek C4462 uyarısı oluşturur:
 
 ```cpp
 namespace N
 {
-       public ref struct EventArgs sealed {};
-       public ref struct R sealed
-       {
-              R() {}
-              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
-       };
+       public ref struct EventArgs sealed {};
+       public ref struct R sealed
+       {
+              R() {}
+              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
+       };
 }
 
 [Platform::MTAThread]
 int main()
 {
-     auto x = ref new N::R();
+     auto x = ref new N::R();
 }
 ```
 
@@ -76,4 +67,4 @@ public ref struct R sealed : [Windows::Foundation::Metadata::Default] IR
 };
 ```
 
-Türünde bir GUID `Windows::Foundation::TypedEventHandler<R^, EventArgs^>^` türü başka bir bileşenden erişildiğinde yalnızca kullanılır. İlk geçici çözüm, çözüm uygulandıktan sonra yalnızca kendi bileşeni içinden erişilebilir olduğu için işe yarayacaktır. Aksi durumda, derleyici en kötü durumu varsayarak uyarıyı yaymak zorunda kalır.
+Türün GUID'i `Windows::Foundation::TypedEventHandler<R^, EventArgs^>^` yalnızca türü başka bir bileşenden erişim sağlandığında kullanılır. İlk geçici çözüm, çözüm uygulandıktan sonra yalnızca kendi bileşeni içinden erişilebilir olduğu için işe yarayacaktır. Aksi durumda, derleyici en kötü durumu varsayarak uyarıyı yaymak zorunda kalır.

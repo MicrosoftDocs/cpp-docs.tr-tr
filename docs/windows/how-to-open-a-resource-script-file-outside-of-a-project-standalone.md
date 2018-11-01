@@ -1,31 +1,20 @@
 ---
-title: 'Nasıl yapılır: C++ proje (tek başına) dışındaki kaynak betik dosyasını açın | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: C++ proje (tek başına) dışındaki kaynak betik dosyasını açın'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.resource
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [C++], viewing
 - rc files [C++], viewing resources
 - .rc files [C++], viewing resources
 - resource script files [C++], viewing resources
 ms.assetid: bc350c60-178d-4c5d-9a7e-6576b0c936e4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1e52d78de0026fa4a589877ee0a591da26107fde
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 43b245c1d19e7468a9433473eb49dc970316eba5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529083"
 ---
 # <a name="how-to-open-a-resource-script-file-outside-of-a-c-project-standalone"></a>Nasıl yapılır: C++ proje (tek başına) dışındaki kaynak betik dosyasını açın
 

@@ -1,10 +1,6 @@
 ---
-title: CComCurrency sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComCurrency sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComCurrency
 - ATLCUR/ATL::CComCurrency
@@ -16,21 +12,15 @@ f1_keywords:
 - ATLCUR/ATL::CComCurrency::SetFraction
 - ATLCUR/ATL::CComCurrency::SetInteger
 - ATLCUR/ATL::CComCurrency::m_currency
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6eb8c7ed32e780ddaf31dfd6167f59fd55de9da
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5a619eef33a60dc1a34d31c3d51614de20fc8f28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451162"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency sınıfı
 

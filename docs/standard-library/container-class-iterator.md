@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::iterator | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::iterator
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - iterator method
 ms.assetid: f9c49d1c-17cb-4b17-8e54-09e3ea41ca26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f894be144956dc0feb6ba8b67dbdc05f9cf0bcf5
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3e425e3f8e2987019966aa73bbf9a34d47f2dbfd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963945"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616976"
 ---
 # <a name="container-classiterator"></a>Kapsayıcı Sınıfı::iterator
 

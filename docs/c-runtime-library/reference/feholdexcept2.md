@@ -1,11 +1,6 @@
 ---
-title: feholdexcept | Microsoft Docs
-ms.custom: ''
+title: feholdexcept
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - feholdexcept
 apilocation:
@@ -24,25 +19,19 @@ apitype: DLLExport
 f1_keywords:
 - feholdexcept
 - fenv/feholdexcept
-dev_langs:
-- C++
 helpviewer_keywords:
 - feholdexcept function
 ms.assetid: 88e512ae-b5d8-452c-afe9-c824cd3ef1d8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6250de98b2eb3f8cc8c475d341c1d63a79262362
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 26097398b9f9d498ab4c56690dc9c6cbb950bafb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397549"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525745"
 ---
 # <a name="feholdexcept"></a>feholdexcept
 
-Belirtilen nesne geçerli kayan nokta ortamı kaydeder, kayan nokta durum bayrakları temizler ve, mümkünse durdurma olmayan modu kayan nokta ortamına geçirir.
+Belirtilen nesne geçerli bir kayan nokta ortamı kaydeder, kayan nokta durumu bayrakları temizler ve mümkünse, kayan nokta ortamı stop moduna geçirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,27 +44,27 @@ int feholdexcept(
 ### <a name="parameters"></a>Parametreler
 
 *penv*<br/>
-İşaretçi bir **fenv_t** kayan nokta ortamın kopyasını içeren nesne.
+İşaretçi bir **fenv_t** kayan nokta ortamın bir kopyasını içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarıyla stop kayan nokta özel durum işleme üzerinde açabilirsiniz ve yalnızca, döndürür sıfır.
+İşlev başarıyla stop kayan nokta özel durum işleme üzerinde açabilirsiniz, ve yalnızca, döndürür sıfır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feholdexcept** işlevi geçerli kayan nokta ortamda durumunu depolamak için kullanılan **fenv_t** tarafından için nesne işaret *penv*ve ortamı ayarlayın kayan nokta özel durumlar yürütülmesine kesme değil. Bu Dur olmayan modu olarak bilinir.  Bu mod kullanılarak ortamı geri yüklenene kadar devam [fesetenv](fesetenv1.md) veya [feupdateenv](feupdateenv.md).
+**Feholdexcept** işlevi geçerli kayan nokta ortamda durumunu depolamak için kullanılan **fenv_t** nesne tarafından işaret edilen *penv*ve ortamı ayarlayın kayan nokta özel durumlarını üzerinde yürütme kesme değil. Bu, stop modu olarak bilinir.  Bu mod kullanarak ortamı geri yüklenene kadar devam [fesetenv](fesetenv1.md) veya [feupdateenv](feupdateenv.md).
 
-Bir veya daha fazla kayan nokta özel durumlar çağrıyı yapandan gizlemek için gereken bir alt yordama başındaki bu işlevi kullanabilirsiniz. Bir özel durum raporu için yalnızca istenmeyen özel durumları kullanarak temizleyebilirsiniz [feclearexcept,](feclearexcept1.md) ve çağrısıyla durdurma olmayan modu bitiş **feupdateenv**.
+Bir veya daha fazla kayan nokta özel durumlarını arayandan gizlemek için gereken bir alt yordam başlangıcında, bu işlevi kullanabilirsiniz. Bir özel durum raporu için sadece istenmeyen özel durumları kullanarak temizleyebilir [feclearexcept,](feclearexcept1.md) ve ardından stop modunu çağrısıyla sonlandırmak **feupdateenv**.
 
-Bu işlevi kullanmak için erişim kullanarak önleyebilir kayan nokta iyileştirmeler kapatmanız gerekir `#pragma fenv_access(on)` çağrı önce yönergesi. Daha fazla bilgi için bkz: [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**feholdexcept**|\<fenv.h >|\<cfenv >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

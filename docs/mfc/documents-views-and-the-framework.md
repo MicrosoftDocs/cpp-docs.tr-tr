@@ -1,12 +1,6 @@
 ---
-title: Belgeler, görünümler ve çerçeve | Microsoft Docs
-ms.custom: ''
+title: Belgeler, Görünümler ve Çerçeve
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - document templates [MFC], template objects
 - applications [MFC]
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - MFC object relationships
 - thread objects [MFC]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6a70efc6fe4c717ccaa236ea46d73f9df206876
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f9397c2a16d8411fe91cbf6c1c1de3ecdffbeae7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662377"
 ---
 # <a name="documents-views-and-the-framework"></a>Belgeler, Görünümler ve Çerçeve
 

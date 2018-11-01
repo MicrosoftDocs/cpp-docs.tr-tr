@@ -1,28 +1,17 @@
 ---
-title: is_trivially_constructible sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_trivially_constructible sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_trivially_constructible
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_trivially_constructible
 ms.assetid: 3fa918c1-e66f-4d0e-a11b-be1fb2c02e7b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 789839482e623e94172bbd55342d257c2b031614
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c83bea8be5c88876ffa25337464caa62b998ab45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109375"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628845"
 ---
 # <a name="istriviallyconstructible-class"></a>is_trivially_constructible sınıfı
 

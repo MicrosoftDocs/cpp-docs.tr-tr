@@ -1,26 +1,16 @@
 ---
-title: 'Atama işleci: () | Microsoft Docs'
-ms.custom: ''
+title: 'Atama İşleci: ()'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cast operators [C++]
 - () cast operator
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01162598bd4789aa029642f28cfcdce756bc1c6a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 54345637665736085d812b88f5822a94014eaa74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031996"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516967"
 ---
 # <a name="cast-operator-"></a>Atama İşleci: ()
 

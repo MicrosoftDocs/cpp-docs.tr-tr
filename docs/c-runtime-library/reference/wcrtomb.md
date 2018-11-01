@@ -1,10 +1,6 @@
 ---
-title: wcrtomb | Microsoft Docs
-ms.custom: ''
+title: wcrtomb
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcrtomb
 apilocation:
@@ -22,28 +18,22 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wcrtomb
-dev_langs:
-- C++
 helpviewer_keywords:
 - wide characters, converting
 - wcrtomb function
 - multibyte characters
 - characters, converting
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eca27e81cbb1df26d04059974cdc1ce5313bafa3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a5fad3f41c7ed459a1af3fae7c6a5a85c867d5ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412683"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659257"
 ---
 # <a name="wcrtomb"></a>wcrtomb
 
-Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcrtomb_s](wcrtomb-s.md).
+Bir geniş karakter çok baytlı karakterin gösterimine dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [wcrtomb_s](wcrtomb-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,28 +57,28 @@ size_t wcrtomb(
 Sonuçta elde edilen çok baytlı karakter dönüştürülür.
 
 *wchar*<br/>
-Dönüştürülecek geniş karakter.
+Dönüştürülecek bir geniş karakter.
 
 *mbstate*<br/>
-Bir işaretçi bir **mbstate_t** nesnesi.
+Bir işaretçi bir **mbstate_t** nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa dönüştürülen birden çok baytlı karakter yoksa -1 göstermek için gereken bayt sayısını döndürür.
+Bir hata oluşursa dönüştürülmüş çok baytlı karakter yoksa -1 göstermek için gereken bayt sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcrtomb** işlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak bir geniş karakter *mbstate*, içerdiği değerinden *wchar*, içine Adres temsil ettiği *mbchar*. Dönüş değeri karşılık gelen birden çok baytlı karakter temsil etmek için gereken bayt sayısıdır. ancak değil döndürülecek birden fazla **MB_CUR_MAX** bayt sayısı.
+**Wcrtomb** işlevi dönüştürür bir geniş karakter içerdiği belirtilen dönüşüm durumu başlayarak *mbstate*, bulunan değerden *wchar*, içine adresi temsil ettiği *mbchar*. Dönüş değeri karşılık gelen çok baytlı karakteri temsil etmesi için gereken bayt sayısıdır. ancak değil döndüreceği birden fazla **MB_CUR_MAX** bayt.
 
-Varsa *mbstate* null, iç **mbstate_t** dönüştürme durumunu içeren bir nesne *mbchar* kullanılır. Varsa bir karakter dizisi *wchar* karşılık gelen çok baytlı yok karakter gösterimi, -1 döndürülür ve **errno** ayarlanır **EILSEQ**.
+Varsa *mbstate* null, iç **mbstate_t** dönüştürme durumunu içeren bir nesne *mbchar* kullanılır. Varsa karakter dizisi *wchar* karşılık gelen bir çok baytlı yok karakter gösterimi, -1 döndürülür ve **errno** ayarlanır **EILSEQ**.
 
-**Wcrtomb** işlevi farklı olarak [wctomb, _wctomb_l](wctomb-wctomb-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan *mbstate* sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız **wcsrlen** yerine **wcsnlen**, bir sonraki çağrı, **wcsrtombs** yerine kullanılan **wcstombs**.
+**Wcrtomb** işlevi farklıdır [wctomb, _wctomb_l](wctomb-wctomb-l.md) kendi restartability tarafından. Dönüştürme durumunu depolanan *mbstate* aynı ya da yeniden başlatılabilir diğer işlevlere yapılan sonraki çağrılar için. Yeniden başlatılabilir ve nonrestartable işlevlerin kullanımını kullanırken sonuçlar tanımsızdır. Örneğin, bir uygulama kullanırsınız **wcsrlen** yerine **wcsnlen**sonraki çağrı, **wcsrtombs** yerine kullanılan **wcstombs**.
 
-C++'da, bu işlev bu işlevin yeni, güvenli ortaklarınıza çağıran bir şablon aşırı sahiptir. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlev bu işlevin daha yeni ve güvenli karşılıklarını çağıran bir şablon aşırı yüklemesi vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-**Wcrtomb** işlevi, geçerli iş parçacığının hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu **setlocale** bu işlev yürütülürken ve sırasında *mbstate* null.
+**Wcrtomb** işlevi, geçerli iş parçacığındaki hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu **setlocale** bu işlev yürütülürken ve sırasında *mbstate* null.
 
 ## <a name="example"></a>Örnek
 

@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1509 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1509
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1509
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1509
 ms.assetid: 40dd100d-c6ba-451c-bd26-2c99ec1c36d6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 837ab5b7cf76b724726c6c52fbfe974d4da6ca85
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: efd5b9dd5cdd7ee174bc786c38d9dd841e2ad6ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033140"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620017"
 ---
 # <a name="fatal-error-c1509"></a>Önemli hata C1509
 

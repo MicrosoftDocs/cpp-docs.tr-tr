@@ -1,26 +1,16 @@
 ---
-title: İfade Statement (C) | Microsoft Docs
-ms.custom: ''
+title: İfade Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - statements, expression
 - expression statements
 ms.assetid: 1085982b-dc16-4c1e-9ddd-0cd85c8fe2e3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73071e5cc3eef20895e4eff3bade8e37066dfd71
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b825e88703e1913d9b6d916360174060854c632a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667473"
 ---
 # <a name="expression-statement-c"></a>İfade Deyimi (C)
 

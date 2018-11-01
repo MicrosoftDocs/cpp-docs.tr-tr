@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2661 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2661
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2661
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2661
 ms.assetid: 60021467-71cd-451b-9877-23840c69309f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8443e21db273aa7def879bd82ab823afb8a508a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 14052fa3676396fe2ffc6ca86196025e7adab7d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074402"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650781"
 ---
 # <a name="compiler-error-c2661"></a>Derleyici Hatası C2661
 

@@ -1,27 +1,17 @@
 ---
-title: Dllimport / dllexport için kurallar ve sınırlamalar | Microsoft Docs
-ms.custom: ''
+title: Dllimport / dllexport için kurallar ve sınırlamalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - dllexport attribute [C++], limitations and rules
 - dllimport attribute [C++], limitations and rules
 - dllexport attribute [C++]
 ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6819ad58e3814f7c632c44db4549321e0c6969e4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 123ccf583fe5e07d9f2610ec621b48d8a8c39be8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622036"
 ---
 # <a name="rules-and-limitations-for-dllimportdllexport"></a>dllimport/dllexport için Kurallar ve Sınırlamalar
 

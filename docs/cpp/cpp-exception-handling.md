@@ -1,26 +1,16 @@
 ---
-title: C++ özel durum işleme | Microsoft Docs
-ms.custom: ''
+title: C++ Özel Durum İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ exception handling
 - Visual C++, exception handling
 ms.assetid: 65f80b44-9d0f-4d17-b910-07205a5c5c40
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 41abebbd73dc1cf72e35dcce88aa551be181061b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b4eaab7d5bb352cccc612dd950572464b82b67e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614753"
 ---
 # <a name="c-exception-handling"></a>C++ Özel Durum İşleme
 

@@ -1,10 +1,6 @@
 ---
-title: CAccessToken sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAccessToken sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAccessToken
 - ATLSECURITY/ATL::CAccessToken
@@ -53,21 +49,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CAccessToken::SetDefaultDacl
 - ATLSECURITY/ATL::CAccessToken::SetOwner
 - ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 881c86a75d9015117be4b51a8b7457bed4988fd3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: faa715e8f5333a717689d281ccb89bd2369e9929
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078550"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661272"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
