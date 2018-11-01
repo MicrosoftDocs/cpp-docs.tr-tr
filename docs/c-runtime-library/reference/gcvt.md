@@ -1,10 +1,6 @@
 ---
-title: _gcvt | Microsoft Docs
-ms.custom: ''
+title: _gcvt
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _gcvt
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _gcvt
-dev_langs:
-- C++
 helpviewer_keywords:
 - _gcvt function
 - _CVTBUFSIZE
@@ -34,20 +28,16 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d824d42a102aee68619d602044c39f398af177dc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9cf966b455af601d09b4444a5c590e305a6681c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400986"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430868"
 ---
 # <a name="gcvt"></a>_gcvt
 
-Kayan nokta değeri arabellekte depolayan bir dizeye dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_gcvt_s](gcvt-s.md).
+Arabellekte depolayan bir dize bir kayan noktalı değere dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [_gcvt_s](gcvt-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,22 +55,22 @@ char *_gcvt(
 Dönüştürülecek değer.
 
 *basamak*<br/>
-Depolanan basamak sayısı.
+Depolanan anlamlı basamak sayısı.
 
 *Arabellek*<br/>
 Sonuç için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_gcvt** bir işaretçi basamak dizesi olarak döndürür.
+**_gcvt** basamak dizeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gcvt** işlevin bir kayan nokta dönüştürür *değeri* (, ondalık ayırıcıdan ve olası oturum bayt içeren) bir karakter dizesine ve dizesinde depolar *arabellek*. *Arabellek* dönüştürülen değer artı bir sonlandırma null otomatik olarak eklenir karakteri uyabilecek kadar büyük olmalıdır. Arabellek boyutu, *basamak* + 1 kullanılır, işlevi arabelleğin sonuna üzerine yazar. Dönüştürülmüş dizeyi ondalık içerir ve oturum ve üs bilgileri içerebilir olmasıdır. Taşma desteği yoktur. **_gcvt** üretmek çalışır *basamak* onlu basamak. Başaramazsa üreten *basamak* üstel biçimdeki rakamları. Sondaki sıfırlar dönüştürmede atlanması.
+**_Gcvt** işlevi dönüştürür bir kayan nokta *değer* (kod bir ondalık noktası ve olası oturum bayt içerir) bir karakter dizesine ve dizesini depolar *arabellek*. *Arabellek* dönüştürülen değeri ayrıca otomatik olarak eklenir, sonlandırıcı null karakterini, tutabilecek kadar büyük olmalıdır. Arabellek boyutu, *basamak* + 1 kullanılır, arabelleğin sonuna işlevi üzerine yazar. Dönüştürülmüş dize ondalık noktası içerir ve oturum ve üs bilgi içerebilir olmasıdır. Taşma desteği yoktur. **_gcvt** üretir *basamak* onlu basamak. Erişilemiyorsa ürettiği *basamak* üstel biçimde basamak. Sondaki sıfırları dönüştürme gizlenmiş.
 
 A *arabellek* uzunluğu **_CVTBUFSIZE** herhangi bir değişken için yeterliyse noktası değeri.
 
-Bu işlev parametrelerini doğrular. Varsa *arabellek* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. Varsa *arabellek* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -88,7 +78,7 @@ Bu işlev parametrelerini doğrular. Varsa *arabellek* olan **NULL**, açıkland
 |-------------|---------------------|
 |**_gcvt**|\<stdlib.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

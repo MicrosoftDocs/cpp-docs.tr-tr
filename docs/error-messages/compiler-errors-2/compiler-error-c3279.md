@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3279 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3279
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3279
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3279
 ms.assetid: 639afc20-984c-4a95-be35-8bf9409f02d5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89c537da9bcf91e7774353cc1516a4c44e28649c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f39510ee9ec0e717d675aa8b396405bc33b4ea1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056774"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445012"
 ---
 # <a name="compiler-error-c3279"></a>Derleyici Hatası C3279
 

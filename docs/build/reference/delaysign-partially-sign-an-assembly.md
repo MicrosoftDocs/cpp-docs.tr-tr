@@ -1,30 +1,20 @@
 ---
-title: -DELAYSIGN (derlemeyi kısmen imzala) | Microsoft Docs
-ms.custom: ''
+title: /DELAYSIGN (Derlemeyi Kısmen İmzala)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /delaysign
 - VC.Project.VCLinkerTool.DelaySign
-dev_langs:
-- C++
 helpviewer_keywords:
 - /DELAYSIGN linker option
 - DELAYSIGN linker option
 - -DELAYSIGN linker option
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f1551789c800e298396d932a4cc8c4f65aa6c79
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 233a41a3e55ff2726712541b0af9db1f5e55eb56
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699809"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435626"
 ---
 # <a name="delaysign-partially-sign-an-assembly"></a>/DELAYSIGN (Derlemeyi Kısmen İmzala)
 
@@ -73,7 +63,7 @@ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekler
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

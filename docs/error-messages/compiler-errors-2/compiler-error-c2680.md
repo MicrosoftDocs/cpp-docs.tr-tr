@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2680 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2680
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2680
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2680
 ms.assetid: d6f7129e-dd17-4661-b680-18d6b925b1cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34a8674dcf16f43482c1e881c6264744be40cb3e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7a0f58ae16baee00a86038c633f996a7d27a1019
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016175"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443439"
 ---
 # <a name="compiler-error-c2680"></a>Derleyici Hatası C2680
 

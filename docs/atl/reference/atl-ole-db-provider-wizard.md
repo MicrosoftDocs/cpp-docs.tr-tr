@@ -1,28 +1,18 @@
 ---
-title: ATL OLE DB sağlayıcısı Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL OLE DB sağlayıcısı Sihirbazı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.provider.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL OLE DB Provider Wizard
 - ATL projects, adding ATL OLE DB providers
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9710fd4c770f17afb8902b80241179aa20344c1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c01852c89d79b44bdae75b0ded9e2b8d1678cbd3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441333"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB sağlayıcısı Sihirbazı
 

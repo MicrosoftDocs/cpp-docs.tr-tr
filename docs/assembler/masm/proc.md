@@ -1,27 +1,17 @@
 ---
-title: PROC | Microsoft Docs
-ms.custom: ''
+title: PROC
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - PROC
-dev_langs:
-- C++
 helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ee26e181f0f40126c86a36889c43405f0b40f5e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e7931c97570c0fefcacb0123d75934867793fba4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439636"
 ---
 # <a name="proc"></a>PROC
 

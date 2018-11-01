@@ -1,31 +1,21 @@
 ---
-title: numpunct_byname sınıfı | Microsoft Docs
-ms.custom: ''
+title: numpunct_byname Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocnum/std::numpunct_byname
-dev_langs:
-- C++
 helpviewer_keywords:
 - numpunct_byname class
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 511547b8a02a956a2ed7eff2da384f3adcfbd5ed
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 64e8918b052b05088ff48aefb0f0f9ab8c6df586
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912803"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432879"
 ---
 # <a name="numpunctbyname-class"></a>numpunct_byname Sınıfı
 
-Türetilen Şablon sınıfı olarak hizmet verebilir bir nesneyi tanımlayan bir `numpunct` biçimlendirme ve noktalama sayısal ve Boole ifadelerin etkinleştirme belirli bir yerel ayar modeli.
+Türetilmiş bir şablon sınıfı olarak hizmet verebilen bir nesneyi tanımlayan bir `numpunct` biçimlendirmesi ve noktalama işaretleri sayısal ve Boolean ifadelerin etkinleştirme verili bir yerel ayar modeli.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,7 +39,7 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışını tarafından belirlenen [adlı](../standard-library/locale-class.md#name) yerel ayar `_Locname`. Oluşturucu temel nesnesiyle başlatır [numpunct](../standard-library/numpunct-class.md#numpunct)\<CharType > ( `_Refs`).
+Davranışını tarafından belirlenen [adlı](../standard-library/locale-class.md#name) yerel `_Locname`. Oluşturucu, temel nesnesiyle başlatır [numpunct](../standard-library/numpunct-class.md#numpunct)\<CharType > ( `_Refs`).
 
 ## <a name="requirements"></a>Gereksinimler
 

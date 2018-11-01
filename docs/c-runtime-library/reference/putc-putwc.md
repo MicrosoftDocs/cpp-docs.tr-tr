@@ -1,10 +1,6 @@
 ---
-title: putc, putwc | Microsoft Docs
-ms.custom: ''
+title: putc, putwc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - putwc
 - putc
@@ -25,8 +21,6 @@ f1_keywords:
 - _puttc
 - putwc
 - putc
-dev_langs:
-- C++
 helpviewer_keywords:
 - streams, writing characters to
 - characters, writing
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - _puttc function
 - puttc function
 ms.assetid: a37b2e82-9d88-4565-8190-ff8d04c0ddb9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af5c6987f88238398a00e9da7f0d769f246ffc54
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 05bbb5434e6626076aab0d574b04058ec730b77c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211075"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444701"
 ---
 # <a name="putc-putwc"></a>putc, putwc
 

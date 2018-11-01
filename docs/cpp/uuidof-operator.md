@@ -1,31 +1,21 @@
 ---
-title: __uuidof işleci | Microsoft Docs
-ms.custom: ''
+title: __uuidof İşleci
 ms.date: 10/10/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __LIBID_cpp
 - __uuidof_cpp
 - __uuidof
 - _uuidof
-dev_langs:
-- C++
 helpviewer_keywords:
 - __uuidof keyword [C++]
 - __LIBID_ keyword [C++]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c75e33dd7aab1e96a1d2d3464e974a7095f83f3f
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 6e593d023c486aa504f0b5eee8578fa8c307bcc8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432714"
 ---
 # <a name="uuidof-operator"></a>__uuidof İşleci
 

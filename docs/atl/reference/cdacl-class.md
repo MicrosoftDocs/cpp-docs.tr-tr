@@ -1,10 +1,6 @@
 ---
-title: CDacl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDacl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CDacl
 - ATLSECURITY/ATL::CDacl
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CDacl::GetAceCount
 - ATLSECURITY/ATL::CDacl::RemoveAce
 - ATLSECURITY/ATL::CDacl::RemoveAllAces
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDacl class
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3d0b817fc080ff81e11e1789387f50cb3e871e5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 63eaa9fe21b9d920aa3615f76be5822194d19b66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462900"
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 

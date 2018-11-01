@@ -1,10 +1,6 @@
 ---
-title: COccManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: COccManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COccManager
 - AFXOCC/COccManager
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXOCC/COccManager::PreCreateDialog
 - AFXOCC/COccManager::SetDefaultButton
 - AFXOCC/COccManager::SplitDialogTemplate
-dev_langs:
-- C++
 helpviewer_keywords:
 - COccManager [MFC], CreateContainer
 - COccManager [MFC], CreateDlgControls
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - COccManager [MFC], SetDefaultButton
 - COccManager [MFC], SplitDialogTemplate
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08b605dd3f7fc6214878e507610be0d12da41abf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 804db7be4ba796a67042e6772ae4cb631c0c232b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079759"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440189"
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 

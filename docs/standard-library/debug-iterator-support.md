@@ -1,12 +1,6 @@
 ---
-title: Hata ayıklama yineleyici desteği | Microsoft Docs
-ms.custom: ''
+title: Hata Ayıklama Yineleyicisi Desteği
 ms.date: 09/13/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Safe Libraries
 - Safe Libraries, C++ Standard Library
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ffcd69475d13277884deaf9ee114f3cd8d86516f
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: 09a509f650dee76ea1cb10fea8e4019f6d7f5e2b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428425"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 

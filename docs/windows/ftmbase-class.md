@@ -1,9 +1,6 @@
 ---
-title: FtmBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: FtmBase Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - ftm/Microsoft::WRL::FtmBase
@@ -16,8 +13,6 @@ f1_keywords:
 - ftm/Microsoft::WRL::FtmBase::marshaller_
 - ftm/Microsoft::WRL::FtmBase::ReleaseMarshalData
 - ftm/Microsoft::WRL::FtmBase::UnmarshalInterface
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::FtmBase class
 - Microsoft::WRL::FtmBase::CreateGlobalInterfaceTable method
@@ -30,17 +25,12 @@ helpviewer_keywords:
 - Microsoft::WRL::FtmBase::ReleaseMarshalData method
 - Microsoft::WRL::FtmBase::UnmarshalInterface method
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 19c60b9f13330c612e8aba73f128af595e1a1fd9
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: fb7f103d8ea647f554d9bbf26c2e218d34f6b1ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789156"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431856"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 

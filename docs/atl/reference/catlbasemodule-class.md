@@ -1,10 +1,6 @@
 ---
-title: CAtlBaseModule sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlBaseModule sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlBaseModule
 - ATLCORE/ATL::CAtlBaseModule
@@ -16,21 +12,15 @@ f1_keywords:
 - ATLCORE/ATL::CAtlBaseModule::RemoveResourceInstance
 - ATLCORE/ATL::CAtlBaseModule::SetResourceInstance
 - ATLCORE/ATL::CAtlBaseModule::m_bInitFailed
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlBaseModule class
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4b3c7d53e3500b5dd97fdbd49e4006916cd1a80
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b7cba94886fe8434797c39a0d7e5f4a42714a539
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451421"
 ---
 # <a name="catlbasemodule-class"></a>CAtlBaseModule sınıfı
 

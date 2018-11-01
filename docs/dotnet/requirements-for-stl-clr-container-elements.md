@@ -1,29 +1,19 @@
 ---
-title: STL/CLR kapsayıcı öğeleri için gereksinimler | Microsoft Docs
-ms.custom: ''
+title: STL/CLR Kapsayıcı Öğeleri için Gereksinimler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ Standard Library, template class containers
 - STL/CLR, containers
 - containers, STL/CLR
 - containers, C++ Standard Library
 ms.assetid: 59ab240c-15bf-4701-a9f9-e7c56e5ab53f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: fcba36fdf280cef31efb9a84288475fcbb82b291
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0744d38a08dbd972b786e1cc74c112322ecf181f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428580"
 ---
 # <a name="requirements-for-stlclr-container-elements"></a>STL/CLR Kapsayıcı Öğeleri için Gereksinimler
 

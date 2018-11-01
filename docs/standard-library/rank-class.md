@@ -1,28 +1,18 @@
 ---
-title: rank sınıfı | Microsoft Docs
-ms.custom: ''
+title: rank Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::rank
-dev_langs:
-- C++
 helpviewer_keywords:
 - rank class
 - rank
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b46806367ebe09f2b04aa05943277177d6e40671
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 74723e3f89efadee62c356cf89b2b0a17187f4f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428230"
 ---
 # <a name="rank-class"></a>rank Sınıfı
 

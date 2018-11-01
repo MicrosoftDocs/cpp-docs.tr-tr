@@ -1,28 +1,18 @@
 ---
-title: valarray&lt;bool&gt; sınıfı | Microsoft Docs
-ms.custom: ''
+title: valarray&lt;bool&gt; sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - valarray<bool>
 - valarray/std::valarray<bool>
-dev_langs:
-- C++
 helpviewer_keywords:
 - valarray<bool> class
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 189f3931dadebfbe07942d49163c016698fb5198
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: c7cf76935bc1e4489a963f67cc9ffeece5e7dfb8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445818"
 ---
 # <a name="valarrayltboolgt-class"></a>valarray&lt;bool&gt; sınıfı
 

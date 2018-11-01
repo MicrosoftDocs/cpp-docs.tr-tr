@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0062 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0062
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0062
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAN0062
 - CGopherFile class, operations
 ms.assetid: 8e4165c4-7753-4f45-90e9-4542cbb9fc7a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 509d33be45f26f7dbf2de85969b90e253e0d5228
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7f18ac438dd6411dbc86c8ac4c380c8ad2b59079
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434534"
 ---
 # <a name="expression-evaluator-error-cxx0062"></a>İfade Değerlendirici Hatası CXX0062
 

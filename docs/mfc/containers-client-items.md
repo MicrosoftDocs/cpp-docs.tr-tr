@@ -1,26 +1,16 @@
 ---
-title: 'Kapsayıcılar: İstemci öğeleri | Microsoft Docs'
-ms.custom: ''
+title: 'Kapsayıcılar: İstemci Öğeleri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE containers [MFC], client items
 - client items and OLE containers
 ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae9a37aaeb9df3241cf48d3fc62db046682a7a1b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e0d56d4a8f25828de954a78e9bafd8df150c7ff9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387074"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437017"
 ---
 # <a name="containers-client-items"></a>Kapsayıcılar: İstemci Öğeleri
 

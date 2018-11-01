@@ -1,12 +1,6 @@
 ---
-title: COM'da olay işleme | Microsoft Docs
-ms.custom: ''
+title: COM'da Olay İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling [C++], COM
 - event handling [C++], about event handling
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - declaring events, in COM
 - declaring events, event handling in COM
 ms.assetid: 6b4617d4-a58e-440c-a8a6-1ad1c715b2bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e55fb5c213a54b4639f5707201bfbe93bfb89668
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a66c429626938f1bf10d715c1fecac341a3ba000
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446052"
 ---
 # <a name="event-handling-in-com"></a>COM'da Olay İşleme
 

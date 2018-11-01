@@ -1,12 +1,6 @@
 ---
-title: Pano | Microsoft Docs
-ms.custom: ''
+title: Pano
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - cutting and copying data
 - copying data
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - Clipboard, programming
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48315b3608a5e66c2f94e1b06a038772dbb25bb4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b17268c78fb5e82cbe75cbe0647b931d06934ef1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380496"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440800"
 ---
 # <a name="clipboard"></a>Pano
 

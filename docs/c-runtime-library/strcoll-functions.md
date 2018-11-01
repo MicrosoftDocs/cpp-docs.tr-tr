@@ -1,10 +1,6 @@
 ---
-title: strcoll işlevleri | Microsoft Docs
-ms.custom: ''
+title: strcoll İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr120.dll
 - msvcr110_clr0400.dll
@@ -15,24 +11,18 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - strcoll
-dev_langs:
-- C++
 helpviewer_keywords:
 - code pages, using for string comparisons
 - string comparison [C++], culture-specific
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c207bc94dbadf5e346c74d314e13df3530368fb9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c6b4b45184ea4cc3320f3de069884ac084c7cfcd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450238"
 ---
 # <a name="strcoll-functions"></a>strcoll İşlevleri
 

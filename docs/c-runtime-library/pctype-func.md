@@ -1,10 +1,6 @@
 ---
-title: __pctype_func | Microsoft Docs
-ms.custom: ''
+title: __pctype_func
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - __pctype_func
 apilocation:
@@ -18,21 +14,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - __pctype_func
-dev_langs:
-- C++
 helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36c8dd0467dc50c9eba9db954f28711aa8525cd2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fc0f4b0be80534744beda1fe7595293ceb002924
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444232"
 ---
 # <a name="pctypefunc"></a>__pctype_func
 

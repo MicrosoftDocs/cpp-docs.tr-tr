@@ -1,10 +1,6 @@
 ---
-title: POW, powf, powl | Microsoft Docs
-ms.custom: ''
+title: pow, powf, powl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - powl
 - pow
@@ -27,8 +23,6 @@ f1_keywords:
 - pow
 - _powl
 - powf
-dev_langs:
-- C++
 helpviewer_keywords:
 - exponential calculations
 - powl function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - powf function
 - pow function
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5daf7348198cb6f3ba0186eb4586b2486548f6f5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: edf6116413caba52f9311f03bdfcc1d87e68a011
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403836"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452027"
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 
@@ -73,38 +63,38 @@ long double pow( long double x, int y );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Tabanı.
+Temel.
 
 *Y*<br/>
 Üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değerini döndürür *x*<sup>*y*</sup>. Hata iletisi taşması veya underflow yazdırılır.
+Değerini döndürür *x*<sup>*y*</sup>. Hata iletisi, taşma veya yetersiz gelme üzerinde yazdırılır.
 
-|X değerleri ve y|Pow dönüş değeri|
+|Değerleri x ve y|Pow dönüş değeri|
 |-----------------------|-------------------------|
-|*x* ! 0,0 = ve *y* == 0.0|1.|
-|*x* == 0.0 ve *y* == 0.0|1.|
-|*x* == 0.0 ve *y* < 0|INF|
+|*x* ! 0,0 = ve *y* 0,0 ==|1.|
+|*x* 0,0 == ve *y* 0,0 ==|1.|
+|*x* 0,0 == ve *y* < 0|INF|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**POW** 2'den büyük tam sayı kayan nokta değerlerine tanımıyor<sup>64</sup> (örneğin, 1.0E100).
+**POW** 2'den büyük tamsayı kayan nokta değerlerini tanımıyor<sup>64</sup> (örneğin, 1.0E100).
 
-**POW** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahip. Bilgi ve kısıtlamaları SSE2 uygulama kullanımı hakkında bkz [_set_SSE2_enable](set-sse2-enable.md).
+**POW** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. Bilgi ve SSE2 uygulamasını kullanmayla ilgili kısıtlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-Aşırı yükleme C++ izin verdiğinden, çeşitli aşırı hiçbirini çağırabilirsiniz **pow**. C programı **pow** her zaman iki alan **çift** değerleri ve döndüren bir **çift** değeri.
+C++ aşırı yüklemeye izin verdiğinden, çeşitli aşırı yüklemelerinden birini çağırabilirsiniz **pow**. C programında **pow** her zaman iki alan **çift** değerleri ve döndüren bir **çift** değeri.
 
-`pow(int, int)` Aşırı kullanılabilir artık. Bu aşırı kullanırsanız, derleyici yayabilir [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). Bu sorunu önlemek için ilk parametre olarak cast **çift**, **float**, veya **uzun** **çift**.
+`pow(int, int)` Aşırı yükleme, artık kullanılabilir. Bu aşırı yüklemesini kullanıyorsanız, derleyici yayabilir [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). Bu sorunu önlemek için ilk parametre olarak cast **çift**, **float**, veya **uzun** **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-|-|-|
 |**POW**, **powf**, **powl**|\<Math.h >|\<Math.h > veya \<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

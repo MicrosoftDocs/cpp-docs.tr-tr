@@ -1,23 +1,13 @@
 ---
-title: 4.1 OMP_SCHEDULE | Microsoft Docs
-ms.custom: ''
+title: 4.1 OMP_SCHEDULE
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: d0dce411-2351-4ee9-a1cc-c0322a58b65c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cbdad5ab56ea6979ae2b5952b092b5e85c7bdfa8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4731299a4f7203dd01f660ea25bf2f5b58060630
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433458"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432701"
 ---
 # <a name="41-ompschedule"></a>4.1 OMP_SCHEDULE
 

@@ -1,10 +1,6 @@
 ---
-title: _Cıexp | Microsoft Docs
-ms.custom: ''
+title: _CIexp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _CIexp
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - CIexp
 - _CIexp
-dev_langs:
-- C++
 helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ede1870c17a5c78a1580bee03cc84908abdf2f33
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: e71f85cf987ba02d888c0920933033400543d795
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432071"
 ---
 # <a name="ciexp"></a>_CIexp
 

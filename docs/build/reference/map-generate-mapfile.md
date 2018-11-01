@@ -1,16 +1,10 @@
 ---
-title: -MAP (eşlem dosyası oluştur) | Microsoft Docs
-ms.custom: ''
+title: /MAP (Eşlem Dosyası Oluştur)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /map
 - VC.Project.VCLinkerTool.MapFileName
 - VC.Project.VCLinkerTool.GenerateMapFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - mapfiles, creating linker
 - generate mapfile linker option
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - mapfiles, specifying file name
 - /MAP linker option
 ms.assetid: 9ccce53d-4e36-43da-87b0-7603ddfdea63
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c39134f45b1a044a76139d33aa9e761a0f14c8c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8ff2a8f54caa54247050c607004ed328c0d1b11d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436460"
 ---
 # <a name="map-generate-mapfile"></a>/MAP (Eşlem Dosyası Oluştur)
 

@@ -1,10 +1,6 @@
 ---
-title: setvbuf | Microsoft Docs
-ms.custom: ''
+title: setvbuf
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - setvbuf
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - setvbuf
-dev_langs:
-- C++
 helpviewer_keywords:
 - controlling stream buffering
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 279fb5f7c400a3c7160a9dc66c6cfce7ccaf2bc4
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: b2a5cfc08da7812e32ad84940ab4c78288017720
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208503"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445779"
 ---
 # <a name="setvbuf"></a>setvbuf
 

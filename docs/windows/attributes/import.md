@@ -1,28 +1,17 @@
 ---
-title: içeri aktarma (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: içeri aktarma (C++ COM özniteliği)
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.import
-dev_langs:
-- C++
 helpviewer_keywords:
 - import attribute
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 046a6eb0d1033efb44dd9f34806e747e1fafd700
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f9be9b86b6c6a6ceabbd354da1d7c1ceedc35227
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071123"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462211"
 ---
 # <a name="import"></a>içeri aktar
 

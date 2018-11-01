@@ -1,10 +1,6 @@
 ---
-title: CRowsetImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRowsetImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CRowsetImpl
 - ATL.CRowsetImpl
@@ -27,8 +23,6 @@ f1_keywords:
 - CRowsetImpl.m_strCommandText
 - CRowsetImpl::m_strIndexText
 - CRowsetImpl.m_strIndexText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRowsetImpl class
 - NameFromDBID method
@@ -40,17 +34,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 3338fa4cd17c715ee2f2ae5eb333e9f852cc7431
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e62e58273daf74d8551efb2165fe71d6fb7d3181
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429992"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl Sınıfı
 

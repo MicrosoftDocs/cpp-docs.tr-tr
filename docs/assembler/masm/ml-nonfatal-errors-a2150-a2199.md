@@ -1,23 +1,14 @@
 ---
-title: ML önemli olmayan hataları A2150-A2199 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hataları A2150-A2199
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
-dev_langs:
-- C++
 ms.assetid: 8151f355-85c5-4d36-b05f-ed0bdf912d3a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f29ea53c6740de905d0ef34f18fe7dde6f07f5b5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b60559378a9de38ad1f4c0af897aa390b789a5b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682739"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434846"
 ---
 # <a name="ml-nonfatal-errors-a2150-a2199"></a>ML Önemli Olmayan Hataları A2150-A2199
 

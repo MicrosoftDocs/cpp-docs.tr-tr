@@ -1,26 +1,15 @@
 ---
-title: Birden çok denetim ekleme | Microsoft Docs
-ms.custom: ''
+title: Birden Çok Denetim Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], adding multiple
 ms.assetid: cc100201-0669-4e74-bb08-f7134ddd03aa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 464b86ba90d4c53adfcf5016cad38d0fbc9034f5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0637ea559fe6955bfe1a47a71ff1108d851ca1c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443101"
 ---
 # <a name="adding-multiple-controls"></a>Birden Çok Denetim Ekleme
 

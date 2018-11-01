@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4245 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4245
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4245
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4245
 ms.assetid: 85083d53-9cc2-4d12-b58c-6dad28f15cbe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b069e728a7bb70fb757d55b10ce3e9bdd189a8f9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7f22386439803de1b59f3236775aa6cec0254eab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055578"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436809"
 ---
 # <a name="compiler-warning-level-4-c4245"></a>Derleyici Uyarısı (düzey 4) C4245
 

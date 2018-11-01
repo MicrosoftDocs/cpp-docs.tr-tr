@@ -1,28 +1,17 @@
 ---
-title: is_final sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_final sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_final
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_final
 ms.assetid: 9dbad82f-6685-4909-94e8-98e4a93994b9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 016ad1c5017635000f17b8852f7ebdb8e2f62e4a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f605b160f6ed71aaafcc7c391e17180e4b243444
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108700"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446545"
 ---
 # <a name="isfinal-class"></a>is_final sınıfı
 

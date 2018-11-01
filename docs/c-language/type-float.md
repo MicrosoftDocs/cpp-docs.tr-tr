@@ -1,12 +1,6 @@
 ---
-title: Tür float | Microsoft Docs
-ms.custom: ''
+title: Tür float
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - type float
 - exponent length
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - IEEE floating-point representation
 - lengths, exponent
 ms.assetid: 706e332b-17a0-4a30-b7d8-5d6cd372524b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8103ad4054210c7cb3847539f5cdc3f2cebfea6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0a618433f08f832c5e69f52e8a5c1804e3dd70c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430811"
 ---
 # <a name="type-float"></a>Tür float
 

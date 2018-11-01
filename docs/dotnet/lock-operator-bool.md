@@ -1,9 +1,6 @@
 ---
-title: Lock::operator bool | Microsoft Docs
-ms.custom: ''
+title: lock::operator bool
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - operator bool
@@ -11,22 +8,15 @@ f1_keywords:
 - lock.operator bool
 - msclr::lock::operator bool
 - lock::operator bool
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock::operator bool
 ms.assetid: 007f0372-f812-4f1e-ba43-2584bd96eb11
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: d0aee08fc59130e829d9448ba4f28a9823a461ed
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 2b8d8992c8e987a87d3024f289d83f94ea1f9a45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428619"
 ---
 # <a name="lockoperator-bool"></a>lock::operator bool
 

@@ -1,10 +1,6 @@
 ---
-title: _strtime, _wstrtime | Microsoft Docs
-ms.custom: ''
+title: _strtime, _wstrtime
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wstrtime
 - _strtime
@@ -27,8 +23,6 @@ f1_keywords:
 - wstrtime
 - strtime
 - _tstrtime
-dev_langs:
-- C++
 helpviewer_keywords:
 - strtime function
 - _strtime function
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - _tstrtime function
 - time, copying
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b0ca776394b47f5209fbf034cbb10461c220634
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 9d874321418854a703886eb80ee23ac1cba57fa4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431128"
 ---
 # <a name="strtime-wstrtime"></a>_strtime, _wstrtime
 
-Zaman bir arabellek kopyalayın. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
+Zaman bir arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,15 +70,15 @@ Saat dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi sonuç karakter dizesi döndürür *timestr*.
+Sonuçta elde edilen karakter dizesine bir işaretçi döndürür *timestr*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strtime** işlevi geçerli yerel saat gösterdiği arabellek kopyalar *timestr*. Saat olarak biçimlendirilmiş **ss: dd:** nerede **hh** olan 24 saatlik gösteriminde saati temsil eden iki basamak **mm** olan saat ve geçetemsiledenikibasamak**ss** saniye temsil eden iki basamak değil. Örneğin, dize **18:23:44** 23 dakika ve 44 aşan saniye 6'da temsil eder Arabellek en az 9 bayt uzun olmalıdır.
+**_Strtime** işlevi geçerli yerel saat işaret ettiği arabelleğine kopyalar *timestr*. Saat olarak biçimlendirilmiş **ss: dd:** burada **hh** olduğu saat, 24 saatlik gösterimde temsil eden iki basamak **mm** olan saat ve geçetemsiledenikibasamak**ss** olduğu saniye temsil eden iki basamak. Örneğin, dize **18:23:44** 23 dakika ve 44 saniye 6'da geçmiş temsil eder Arabelleğin en az 9 bayt uzunluğunda olmalıdır.
 
-**_wstrtime** bir joker karakter sürümü **_strtime**; bağımsız değişkeni ve dönüş değeri **_wstrtime** joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır. Varsa *timestr* olan bir **NULL** işaretçi veya *timestr* geçersiz yanlış biçimlendirilmiş parametre işleyicisi çağrılır, açıklandığı gibi [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Özel devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş bir **NULL** ve **errno** için **EINVAL** varsa *timestr* bir edildi**NULL** veya **errno** için **ERANGE** varsa *timestr* yanlış biçimlendirilmiş.
+**_wstrtime** geniş karakterli sürümüdür **_strtime**; bağımsız değişkeni ve dönüş değeri **_wstrtime** geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır. Varsa *timestr* olduğu bir **NULL** işaretçi veya *timestr* yanlış, geçersiz biçimlendirilmiş parametre işleyicisi çağrılır, açıklandığı [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Özel durumun devam etmesine izin verilirse, bu işlevler döndürür bir **NULL** ayarlayıp **errno** için **EINVAL** varsa *timestr* bir olan**NULL** veya **errno** için **ERANGE** varsa *timestr* yanlış biçimlendirilmiş.
 
-C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -100,10 +90,10 @@ C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon a�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime**|\<time.h >|
-|**_wstrtime**|\<time.h > veya \<wchar.h >|
+|**_strtime**|\<TIME.h >|
+|**_wstrtime**|\<TIME.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

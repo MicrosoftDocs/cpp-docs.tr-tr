@@ -1,29 +1,19 @@
 ---
-title: __restrict | Microsoft Docs
-ms.custom: ''
+title: __restrict
 ms.date: 10/10/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __restrict_cpp
 - __restrict
 - _restrict
-dev_langs:
-- C++
 helpviewer_keywords:
 - __restrict keyword [C++]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9245571e21be04cc250347f30ce8ddb464ff9b55
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 76cdf9424e6eab33a3a92b3f98d9c2b0b04ff667
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163458"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454555"
 ---
 # <a name="restrict"></a>__restrict
 

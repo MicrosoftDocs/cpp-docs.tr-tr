@@ -1,28 +1,17 @@
 ---
-title: emitidl (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: emitidl (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.emitidl
-dev_langs:
-- C++
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 520b9bf8d6a71593acd95ebaac98a72036fcabf2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4270c760c0d9d0ab833ee96dfbbaa9d6205026f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070042"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437971"
 ---
 # <a name="emitidl"></a>emitidl
 

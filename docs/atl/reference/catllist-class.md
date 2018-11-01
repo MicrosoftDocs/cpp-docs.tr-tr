@@ -1,10 +1,6 @@
 ---
-title: CAtlList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlList
 - ATLCOLL/ATL::CAtlList
@@ -38,21 +34,15 @@ f1_keywords:
 - ATLCOLL/ATL::CAtlList::RemoveTailNoReturn
 - ATLCOLL/ATL::CAtlList::SetAt
 - ATLCOLL/ATL::CAtlList::SwapElements
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 596fe8bb4a656eb5ebdc7bef855b5e6db8ab6196
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9e657bbf375a8babf1c03cc7254310956131d62b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449380"
 ---
 # <a name="catllist-class"></a>CAtlList sınıfı
 

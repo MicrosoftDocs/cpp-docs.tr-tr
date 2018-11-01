@@ -1,9 +1,6 @@
 ---
-title: SyncLockT sınıfı | Microsoft Docs
-ms.custom: ''
+title: SyncLockT Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT
@@ -12,8 +9,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockT class
 - Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked method
@@ -22,17 +17,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT, destructor
 - Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock method
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a97b164d2ee7f5f5a6cc771d1ebec699f705cc80
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ae6ac25605d23a6c408afae355e6f4349cf0a4a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432376"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 

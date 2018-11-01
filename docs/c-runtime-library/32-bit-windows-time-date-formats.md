@@ -1,27 +1,17 @@
 ---
-title: 32 bit Windows saat / tarih biçimleri | Microsoft Docs
-ms.custom: ''
+title: 32 bit Windows saat / tarih biçimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - vc.time
-dev_langs:
-- C++
 helpviewer_keywords:
 - 32-bit Windows
 ms.assetid: ef1589db-84d7-4b24-8799-7c7a22cfe2bf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55eca447de7818f749628505a4c4f2fa6eb0dcd2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 55fe44fc48ee69633b45580fede555db24b205d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061122"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439553"
 ---
 # <a name="32-bit-windows-timedate-formats"></a>32 Bit Windows Saat/Tarih Biçimleri
 

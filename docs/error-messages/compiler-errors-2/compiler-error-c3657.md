@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3657 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3657
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3657
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3657
 ms.assetid: 89a28a18-4c17-43a1-bda6-deb52c32d203
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1462ac1c63104406473fde2c839d490bdfb24c6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 209bf779122f38326cb3958ed83a2061deb64185
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117042"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463407"
 ---
 # <a name="compiler-error-c3657"></a>Derleyici Hatası C3657
 

@@ -1,26 +1,16 @@
 ---
-title: C belirteçleri | Microsoft Docs
-ms.custom: ''
+title: C Belirteçleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - tokens
 - translation units
 ms.assetid: 05e5f6f1-b8ea-4f74-af17-c0b9b5dbd3b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b2a088e089896e76b8195813022ee179b4772533
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d56f43decef15f9f94049b345b5c12393cf771cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118550"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50427397"
 ---
 # <a name="c-tokens"></a>C Belirteçleri
 

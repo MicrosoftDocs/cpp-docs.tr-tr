@@ -1,29 +1,19 @@
 ---
-title: SIZE işleci | Microsoft Docs
-ms.custom: ''
+title: SIZE işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - size
 - operator SIZE
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator SIZE
 - SIZE operator
 ms.assetid: 2e380289-3ad7-4bf0-8b1c-75211f59e5c4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 537271f9964ff567744aa83dca2a497b0fe07f4d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ef2316794892dd0541e85bfa9c909e3427cffa39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679938"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431219"
 ---
 # <a name="operator-size"></a>SIZE işleci
 

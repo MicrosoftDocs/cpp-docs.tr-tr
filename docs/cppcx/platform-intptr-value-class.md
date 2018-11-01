@@ -1,28 +1,20 @@
 ---
-title: Platform::IntPtr değer sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::IntPtr değer sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/PlatformIntPtr::IntPtr
 - VCCORLIB/PlatformIntPtr::op_explicit Operator
 - VCCORLIB/PlatformIntPtr::ToInt32
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0c6f7bc2cdc6b1478aba26c1ce0db48464a9ef2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: eda65255aa76d6a801bdc0f80c437a9dc975d8f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104043"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449146"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
 

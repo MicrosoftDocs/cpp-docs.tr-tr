@@ -1,27 +1,17 @@
 ---
-title: Temsilci ve arabirim eşleme makroları (MFC) | Microsoft Docs
-ms.custom: ''
+title: Temsilci ve arabirim eşleme makroları (MFC)
 ms.date: 03/30/2017
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - delegate map macros [MFC]
 - event map macros [MFC]
 - interface map macros [MFC]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bbf1a088151bcd2a6ecc1990c668211c6f70cd9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 91bd50ca34893b7dd91f6402f5ca95865f872650
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065492"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429347"
 ---
 |||
 |-|-|

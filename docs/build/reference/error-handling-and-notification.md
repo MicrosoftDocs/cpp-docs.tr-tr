@@ -1,25 +1,15 @@
 ---
-title: Hata işleme ve bildirme | Microsoft Docs
-ms.custom: ''
+title: Hata İşleme ve Bildirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - error handling, and notification
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17df0dfd57bf24c7cd442c296409530e521b28de
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 845a79e035943dbbde0d498702f70ec7dd6b4d3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432410"
 ---
 # <a name="error-handling-and-notification"></a>Hata İşleme ve Bildirme
 

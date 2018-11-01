@@ -1,9 +1,6 @@
 ---
-title: 'auto_gcroot:: ~ auto_gcroot | Microsoft Docs'
-ms.custom: ''
+title: auto_gcroot::~auto_gcroot
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_gcroot::~auto_gcroot
@@ -11,22 +8,15 @@ f1_keywords:
 - auto_gcroot.~auto_gcroot
 - msclr::auto_gcroot::~auto_gcroot
 - msclr.auto_gcroot.~auto_gcroot
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_gcroot::~auto_gcroot
 ms.assetid: 3c970d43-0cb1-4b27-8bee-0394d91b4739
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 64a1548af10ec777f77cd95e1aeaa9c712c31565
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1cf64c56bdae0c46ad9e4081febf5e398d517a42
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442745"
 ---
 # <a name="autogcrootautogcroot"></a>auto_gcroot::~auto_gcroot
 

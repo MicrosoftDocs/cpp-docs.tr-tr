@@ -1,18 +1,12 @@
 ---
-title: OpenMP ortam değişkenleri | Microsoft Docs
-ms.custom: ''
+title: OpenMP ortam değişkenleri
 ms.date: 10/23/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
 f1_keywords:
 - OpenMP environment variables
 - OMP_DYNAMIC
 - OMP_NESTED
 - OMP_NUM_THREADS
 - OMP_SCHEDULE
-dev_langs:
-- C++
 helpviewer_keywords:
 - OpenMP environment variables
 - OMP_DYNAMIC OpenMP environment variable
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a229aa453b6e40f0da25252f2f8aa1be3d97a729
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 99868fec581d93f451d321af365f6c4546319077
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449692"
 ---
 # <a name="openmp-environment-variables"></a>OpenMP ortam değişkenleri
 

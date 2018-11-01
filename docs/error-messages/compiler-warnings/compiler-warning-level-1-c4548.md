@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4548 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4548
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4548
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4548
 ms.assetid: 2cee817e-e463-4d90-bbd2-de120d48c101
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 19ad8863858e7bbb4fdc5f200926ef4ab93ab794
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 02010107c90f52f0fd2df838d90b78809fb80b70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438577"
 ---
 # <a name="compiler-warning-level-1-c4548"></a>Derleyici Uyarısı (düzey 1) C4548
 

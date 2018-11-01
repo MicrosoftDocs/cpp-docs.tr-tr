@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4407 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4407
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4407
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4407
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9a665dbb71157b37f72d3d0721357d00dc37230
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5142e3800f3ad716166a27e3b0407a40999b5746
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436835"
 ---
 # <a name="compiler-warning-level-1-c4407"></a>Derleyici Uyarısı (düzey 1) C4407
 

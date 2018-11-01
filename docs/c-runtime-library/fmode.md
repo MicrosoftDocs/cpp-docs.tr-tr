@@ -1,30 +1,20 @@
 ---
-title: _fmode | Microsoft Docs
-ms.custom: ''
+title: _fmode
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - fmode
 - _fmode
-dev_langs:
-- C++
 helpviewer_keywords:
 - file translation [C++], default mode
 - fmode function
 - _fmode function
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cfc89eeda690632979521fa8a4e91c48c8b3c866
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c462b8f848a34993e01232039d608b627c05961f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430543"
 ---
 # <a name="fmode"></a>_fmode
 

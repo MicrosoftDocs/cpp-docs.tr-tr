@@ -1,26 +1,16 @@
 ---
-title: Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak | Microsoft Docs
-ms.custom: ''
+title: Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c66fe63d97f623011b3dade46266a4a9d8d83b1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a4bb059b13f2001c6691e8d051106aa5e11eccbd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064427"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429173"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 

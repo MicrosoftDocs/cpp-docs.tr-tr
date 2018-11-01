@@ -1,30 +1,20 @@
 ---
-title: -Zs (yalnızca sözdizimi denetimi) | Microsoft Docs
-ms.custom: ''
+title: /Zs (Yalnızca Sözdizimi Denetimi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /zs
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zs compiler option [C++]
 - Syntax Check Only compiler option
 - Zs compiler option
 - /Zs compiler option [C++]
 ms.assetid: b4b41e6a-3f41-4d09-9cb6-fde5aa2cfecf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e2f8d9f711309d7039672cbf3f92aa49b906fc3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5cdd52ba6c221cbfa1526c19f3d6cfaf26a96e51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429802"
 ---
 # <a name="zs-syntax-check-only"></a>/Zs (Yalnızca Sözdizimi Denetimi)
 
@@ -54,7 +44,7 @@ Bu seçeneği kullandığınızda hiçbir çıkış dosyası oluşturulur ve hat
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
