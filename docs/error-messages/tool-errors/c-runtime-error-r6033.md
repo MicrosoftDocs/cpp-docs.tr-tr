@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6033 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6033
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6033
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6033
 ms.assetid: f9cffdc9-81bd-4a64-a698-02762cbd82c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64ff3069064b981ca1f4dd7b5c2d9a792cac8f26
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 39d8a20dacb0cdeb2a767529e9716bd476f406dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467190"
 ---
 # <a name="c-runtime-error-r6033"></a>C çalışma zamanı hatası R6033
 

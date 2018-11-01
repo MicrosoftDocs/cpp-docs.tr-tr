@@ -1,10 +1,6 @@
 ---
-title: _clear87, _clearfp | Microsoft Docs
-ms.custom: ''
+title: _clear87, _clearfp
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _clearfp
 - _clear87
@@ -26,8 +22,6 @@ f1_keywords:
 - _clearfp
 - _clear87
 - clear87
-dev_langs:
-- C++
 helpviewer_keywords:
 - clearing floating point status word
 - clearfp function
@@ -35,20 +29,16 @@ helpviewer_keywords:
 - _clearfp function
 - clear87 function
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 195bd9f78ed9edfa47ec9ebbd2babbee676e5644
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4148f85d82a4210033686455c73046081832e3c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395623"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477265"
 ---
 # <a name="clear87-clearfp"></a>_clear87, _clearfp
 
-Alır ve kayan nokta durum sözcüğünü temizler.
+Alır ve kayan nokta durumu sözcüğünü temizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,15 +49,15 @@ unsigned int _clearfp( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kayan nokta durum çağırmadan önce döndürülen değer bitleri belirtmek **_clear87** veya **_clearfp**. Tarafından döndürülen bit eksiksiz bir açıklaması için **_clear87**, Float.h bakın. Matematik kitaplık işlevleri çoğunu 8087/80287 durum word öngörülemeyen sonuçlara ile değiştirin. Değerlerin **_clear87** ve **_status87** daha az kayan nokta işlemleri kayan nokta durum sözcüğünü bilinen durumlar arasında gerçekleştirilir gibi daha güvenilir hale gelir.
+Döndürülen değerdeki bitler kayan nokta durumu çağırmadan önce belirtmek **_clear87** veya **_clearfp**. Tarafından döndürülen bitlerin tam tanımı için **_clear87**, bkz. Float.h. Çoğu matematik kitaplığı işlevi 8087/80287 durumu sözcüğünü beklenmeyen sonuçlarla değiştirir. Değerlerin **_clear87** ve **_status87** kayan nokta durum sözcüğünün bilinen durumları arasında daha az kayan nokta işlemleri gerçekleştirilir daha güvenilir hale gelir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Clear87** işlevi kayan nokta durum sözcüğünü özel durumu bayrakları temizler, meşgul bit 0 olarak ayarlar ve durum sözcüğünü döndürür. Kayan nokta durum sözcüğünü 8087/80287 durum sözcüğünü ve kayan nokta yığın taşması ve underflow gibi 8087/80287 özel durum işleyici tarafından algılanan diğer koşullar birleşimidir.
+**_Clear87** işlevi kayan nokta durumu sözcüğünü özel durumu bayrakları temizler, meşgul bit 0 olarak ayarlar ve durum sözcüğü döndürür. Kayan nokta durumu sözcüğünü 8087/80287 durum sözcüğü ve kayan nokta yığın taşması veya yetersiz kalması gibi 8087/80287 özel durum işleyici tarafından saptanan diğer durumların birleşimidir.
 
-**_clearfp** bir platformdan bağımsız, taşınabilir sürümü **_clear87** yordamı. Aynı **_clear87** Intel (x86) platformlarda ve ayrıca x64 ve ARM platformlar tarafından desteklenir. Kayan nokta kodunuzu x64 ve ARM taşınabilir olduğundan emin olmak için kullanmak **_clearfp**. X86 yalnızca hedefliyorsanız platformları, kullanabilirsiniz **_clear87** veya **_clearfp**.
+**_clearfp** bir platformdan bağımsız, taşınabilir sürümü **_clear87** yordamı. Aynıdır **_clear87** Intel (x86) platformlarda ve x64 ve ARM platformları tarafından da desteklenir. Kayan nokta kodunuzun x64 ve ARM için taşınabilir olduğundan emin olmak için kullanın **_clearfp**. Yalnızca x86 hedefliyorsanız platformları kullanabilirsiniz **_clear87** veya **_clearfp**.
 
-Bu işlevler ile derleme yapılırken bırakılmıştır [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlık destekler.
+Bu işlevler ile derleme yaparken kullanım dışı bırakılmıştır [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlığını destekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -76,7 +66,7 @@ Bu işlevler ile derleme yapılırken bırakılmıştır [/CLR (ortak dil çalı
 |**_clear87**|\<float.h >|
 |**_clearfp**|\<float.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

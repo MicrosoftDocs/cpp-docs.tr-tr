@@ -1,10 +1,6 @@
 ---
-title: fcvt | Microsoft Docs
-ms.custom: ''
+title: fcvt
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fcvt
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fcvt
-dev_langs:
-- C++
 helpviewer_keywords:
 - fcvt function
 ms.assetid: 1f748ad0-e186-400e-af8e-80d4431523d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 54c3603839c6cb7f2eaa963aef7ce6d0e78c9817
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4e0c2111d7741652b514020cb3b7adb9a44f98e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399975"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468596"
 ---
 # <a name="fcvt"></a>fcvt
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_fcvt](fcvt.md) veya Gelişmiş Güvenlik [_fcvt_s](fcvt-s.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_fcvt](fcvt.md) veya Gelişmiş güvenlikli [_fcvt_s](fcvt-s.md) yerine.

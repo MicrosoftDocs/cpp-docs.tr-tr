@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3495 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3495
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3495
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3495
 ms.assetid: 1fd40cb8-8373-403d-b8a8-f08424a50807
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab2f92fd1d33d547bfe7703b71abe2797b37c8e6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 81fcbb8102d5df8059aad00772b7ee0cc07c01d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452474"
 ---
 # <a name="compiler-error-c3495"></a>Derleyici Hatası C3495
 

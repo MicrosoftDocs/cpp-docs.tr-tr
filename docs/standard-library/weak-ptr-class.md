@@ -1,10 +1,6 @@
 ---
-title: weak_ptr sınıfı | Microsoft Docs
-ms.custom: ''
+title: weak_ptr Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::weak_ptr
 - memory/std::weak_ptr::element_type
@@ -15,8 +11,6 @@ f1_keywords:
 - memory/std::weak_ptr::swap
 - memory/std::weak_ptr::use_count
 - memory/std::weak_ptr::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::weak_ptr [C++]
 - std::weak_ptr [C++], element_type
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4aa0f8e94e0797badbae2a409ae1ce02caea6e81
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 79869773591eee0a85cbc752be246bedb783bad2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462991"
 ---
 # <a name="weakptr-class"></a>weak_ptr Sınıfı
 

@@ -1,29 +1,19 @@
 ---
-title: __stosb | Microsoft Docs
-ms.custom: ''
+title: __stosb
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __stosb
-dev_langs:
-- C++
 helpviewer_keywords:
 - rep stosb instruction
 - __stosb intrinsic
 - stosb instruction
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34f7c2624bb0431e2fcbd76694f7781087ff362d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 25b037d17c1648816fe97fc5140aa0bfa7284f05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396967"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465214"
 ---
 # <a name="stosb"></a>__stosb
 

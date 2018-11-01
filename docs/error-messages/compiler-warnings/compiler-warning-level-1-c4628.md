@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4628 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4628
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4628
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4628
 ms.assetid: 20fdc6f8-5f6a-40cc-aff8-c7ccf3d8ec26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36b3f7e65a6235b7eb890cf1265b949760f370ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ebb71155774ce32d6b4fc2b9920fdd31dd466841
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082566"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466033"
 ---
 # <a name="compiler-warning-level-1-c4628"></a>Derleyici Uyarısı (düzey 1) C4628
 

@@ -1,10 +1,6 @@
 ---
-title: '&lt;shared_mutex&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;shared_mutex&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <shared_mutex>
 - shared_mutex/std::swap
@@ -48,19 +44,13 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_for
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_until
 - shared_mutex/std::shared_timed_mutex::unlock_shared
-dev_langs:
-- C++
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6def4845356c542b0bdd5d0de14dc3402640dc05
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d54e054310b6077adb88c55b8923b6c13ce1c5ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467336"
 ---
 # <a name="ltsharedmutex"></a>&lt;shared_mutex >
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4471 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4471
 ms.date: 04/24/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4471
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4471
 ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4bcbeafb6952bc40f7fb67c6a0baa2e90051d3ca
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0345b730b8fc37329f632bb5d8486c67efd8e3b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462224"
 ---
 # <a name="compiler-warning-level-4-c4471"></a>Derleyici Uyarısı (düzey 4) C4471
 

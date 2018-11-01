@@ -1,10 +1,6 @@
 ---
-title: CUrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CUrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CUrl
 - ATLUTIL/ATL::CUrl
@@ -36,21 +32,15 @@ f1_keywords:
 - ATLUTIL/ATL::CUrl::SetSchemeName
 - ATLUTIL/ATL::CUrl::SetUrlPath
 - ATLUTIL/ATL::CUrl::SetUserName
-dev_langs:
-- C++
 helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f0ab7906961936239ac564137d0760e6d64de9de
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ed42461af50fa83ca142127587d334cc7e75d914
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471519"
 ---
 # <a name="curl-class"></a>CUrl sınıfı
 

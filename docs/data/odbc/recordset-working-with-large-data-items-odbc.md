@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - BLOB (binary large object), recordsets
 - ODBC recordsets, binary large objects
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - binary large objects
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 315ebca00b42f868a5321e206591ef346804f7b6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8ef32621821d731d9137a446bea220564cb7f92f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460378"
 ---
 # <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)
 

@@ -1,28 +1,18 @@
 ---
-title: İşlev gövdesi | Microsoft Docs
-ms.custom: ''
+title: İşlev Gövdesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C], syntax
 - variables, function syntax
 - function definitions, function body
 - function body
 ms.assetid: f7e74822-fac8-4dc8-8f3a-2b1611da4640
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d30cb5429ebee0738aa7b7aab367d79867e92047
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 064e630d5ca74476c79522e39130e75f741d8946
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757825"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463693"
 ---
 # <a name="function-body"></a>İşlev Gövdesi
 

@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: yerel tür içinde değer türüne başvuruyu tutma | Microsoft Docs'
+title: 'Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - value type reference in native type
 - reference to value type in native type
 ms.assetid: 1eabf8be-7d4f-4339-9027-48d5c4244483
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 093e90b1fcc1fdcf5423562de5f3839183894966
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1219dbac5ba78229554aeb29cf9422e835ea8343
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470453"
 ---
 # <a name="how-to-hold-reference-to-value-type-in-native-type"></a>Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma
 

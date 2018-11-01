@@ -1,10 +1,6 @@
 ---
-title: CGlobalHeap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGlobalHeap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CGlobalHeap
 - ATLMEM/ATL::CGlobalHeap
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLMEM/ATL::CGlobalHeap::Free
 - ATLMEM/ATL::CGlobalHeap::GetSize
 - ATLMEM/ATL::CGlobalHeap::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGlobalHeap class
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6cdc20d536ab4043a24263aebeb0576c379b2f1d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a4bc8b18a1c29049e17576082a30de4a8704eaee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091341"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468958"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap sınıfı
 

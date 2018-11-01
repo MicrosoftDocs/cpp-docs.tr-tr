@@ -1,10 +1,6 @@
 ---
-title: İşleç&lt; (&lt;örnek kapsayıcı&gt;) | Microsoft Docs
-ms.custom: ''
+title: İşleç&lt; (&lt;örnek kapsayıcı&gt;)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - std::operator<
 - operator<
@@ -12,24 +8,18 @@ f1_keywords:
 - <
 - std.operator<
 - std::<
-dev_langs:
-- C++
 helpviewer_keywords:
 - < operator, comparing specific objects
 - operator<, valarrays
 - < operator
 - operator <, valarrays
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd6e3343c4b0d64e16ce1d1a33d94ecaa7ef3fa5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 57796cc69dd734ea4c619db4bd8fedbfa09ce15b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713549"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458428"
 ---
 # <a name="operatorlt-ltsample-containergt"></a>İşleç&lt; (&lt;örnek kapsayıcı&gt;)
 

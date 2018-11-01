@@ -1,12 +1,6 @@
 ---
-title: Araç çubuğu araç ipuçları | Microsoft Docs
-ms.custom: ''
+title: Araç Çubuğu Araç İpuçları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - tool tips [MFC], activating
 - CBRS_TOOLTIPS constant [MFC]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - status bars [MFC], tool tips
 - flyby status bar updates
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23ab29a219899f2c40e1b5c4a458d35f97cf49a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b7dbae03b23c26c96aa0db740b749ba728a353d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475614"
 ---
 # <a name="toolbar-tool-tips"></a>Araç Çubuğu Araç İpuçları
 

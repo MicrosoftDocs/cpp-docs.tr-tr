@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2908 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2908
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2908
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2908
 ms.assetid: 49cd2a21-cad8-4ba0-9a0b-3a0190d9344c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 913a01a21c75933688c55bbb79c3621124601745
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f798be5ef93eb3f072036888b800fa4008fa2de9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053121"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460833"
 ---
 # <a name="compiler-error-c2908"></a>Derleyici Hatası C2908
 

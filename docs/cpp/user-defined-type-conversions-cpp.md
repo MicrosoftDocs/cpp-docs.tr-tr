@@ -1,14 +1,8 @@
 ---
-title: Kullanıcı tanımlı tür Dönüşümleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı tanımlı tür Dönüşümleri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - explicit_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - constructors [C++], and constants
 - conversion functions [C++]
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - conversions [C++], by constructors
 - data type conversion [C++], explicit
 ms.assetid: d40e4310-a190-4e95-a34c-22c5c20aa0b9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c0ad42083f6ee310295a401b722563579a6a78e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2af30ad3d1244146f32bf2402ed7eccdc4785c1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459897"
 ---
 # <a name="user-defined-type-conversions-c"></a>Kullanıcı tanımlı tür Dönüşümleri (C++)
 

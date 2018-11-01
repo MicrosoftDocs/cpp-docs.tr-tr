@@ -1,12 +1,6 @@
 ---
-title: Kayıt | Microsoft Docs
-ms.custom: ''
+title: Kayıt
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - servers [MFC], initializing
 - initializing servers [MFC]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - servers [MFC], installing
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e115edc4a7a276e04e886a0d7d324308dbe1c8ed
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1c8c0d32db202b8ba26afec708bcc8bab8e3282c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461964"
 ---
 # <a name="registration"></a>Kayıt
 

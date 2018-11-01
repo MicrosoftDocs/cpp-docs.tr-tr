@@ -1,28 +1,18 @@
 ---
-title: Mixın yapısı | Microsoft Docs
-ms.custom: ''
+title: MixIn Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::MixIn
-dev_langs:
-- C++
 helpviewer_keywords:
 - MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e4a9e9eb2804e5abbb3f84ab157043402d48166f
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e6c4fb2abd6c27f8feec4357e17ef71b385cb7a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464941"
 ---
 # <a name="mixin-structure"></a>MixIn Yapısı
 

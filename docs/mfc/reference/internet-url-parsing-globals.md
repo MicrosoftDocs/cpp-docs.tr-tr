@@ -1,28 +1,18 @@
 ---
-title: Internet URL Ayrıştırma genel öğeleri ve Yardımcıları | Microsoft Docs
-ms.custom: ''
+title: Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
 ms.date: 04/03/2017
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.isapi
-dev_langs:
-- C++
 helpviewer_keywords:
 - parsing, URLs
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18ef64bc20ba963b248273be16af7748a798a1bd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8765a0712fc79ee60041f9142fbd25f744246ac8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054715"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477161"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
 

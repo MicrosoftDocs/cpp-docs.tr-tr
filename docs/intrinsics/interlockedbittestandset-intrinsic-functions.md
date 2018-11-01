@@ -1,10 +1,6 @@
 ---
-title: _interlockedbittestandset iç işlevleri | Microsoft Docs
-ms.custom: ''
+title: _interlockedbittestandset iç işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _interlockedbittestandset_cpp
 - _interlockedbittestandset_HLEAcquire
@@ -17,23 +13,17 @@ f1_keywords:
 - _interlockedbittestandset_nf
 - _interlockedbittestandset64_cpp
 - _interlockedbittestandset64_HLERelease
-dev_langs:
-- C++
 helpviewer_keywords:
 - _interlockedbittestandset intrinsic
 - _interlockedbittestandset64 intrinsic
 - lock_bts instruction
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 406e3f974ce20068b183c9eab1f1f53bf113df78
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5db4d203283ee916bb43fabccf48ea2720aba52c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426841"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459650"
 ---
 # <a name="interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset iç işlevleri
 

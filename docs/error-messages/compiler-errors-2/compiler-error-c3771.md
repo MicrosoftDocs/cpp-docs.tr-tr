@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3771 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3771
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3771
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3771
 ms.assetid: 68c23b25-7f21-4eaa-8f7e-38fda1130a69
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2af9f58c533927b326ac39ff2f0c555d156dcaf3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8ff2993cbd5f289ca9208d8c532d7fa8329af086
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453396"
 ---
 # <a name="compiler-error-c3771"></a>Derleyici Hatası C3771
 

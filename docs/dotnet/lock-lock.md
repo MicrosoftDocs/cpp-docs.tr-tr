@@ -1,31 +1,21 @@
 ---
-title: Lock::LOCK | Microsoft Docs
-ms.custom: ''
+title: lock::lock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - lock::lock
 - lock.lock
 - msclr.lock.lock
 - msclr::lock::lock
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock constructor
 ms.assetid: c9ad6c71-36ec-49c5-8ebd-f5c3a0cc94f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 76991eb9910e046ecdb76f3f169f7d410b38288e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 480e4f6604adc0a6bd0b3b5fff32f37c811a16a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428758"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470583"
 ---
 # <a name="locklock"></a>lock::lock
 

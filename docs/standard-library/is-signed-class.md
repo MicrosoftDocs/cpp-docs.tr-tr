@@ -1,28 +1,18 @@
 ---
-title: is_signed sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_signed Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_signed
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_signed class
 - is_signed
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65cb6e07a3b47d6aa74741b38418d33b9a0ca3ea
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5456804c72d6b3279a97c3b372a60fb8998a6b28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109297"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472559"
 ---
 # <a name="issigned-class"></a>is_signed Sınıfı
 

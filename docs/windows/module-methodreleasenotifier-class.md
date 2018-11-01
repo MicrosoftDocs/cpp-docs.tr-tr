@@ -1,9 +1,6 @@
 ---
-title: Module::MethodReleaseNotifier sınıfı | Microsoft Docs
-ms.custom: ''
+title: Module::MethodReleaseNotifier Sınıfı
 ms.date: 09/17/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module::MethodReleaseNotifier
@@ -11,8 +8,6 @@ f1_keywords:
 - module/Microsoft::WRL::Module::MethodReleaseNotifier::method_
 - module/Microsoft::WRL::Module::MethodReleaseNotifier::MethodReleaseNotifier
 - module/Microsoft::WRL::Module::MethodReleaseNotifier::object_
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Module::MethodReleaseNotifier class
 - Microsoft::WRL::Module::MethodReleaseNotifier::Invoke method
@@ -20,17 +15,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::MethodReleaseNotifier::MethodReleaseNotifier, constructor
 - Microsoft::WRL::Module::MethodReleaseNotifier::object_ data member
 ms.assetid: 5c2902be-964b-488f-9f1c-adf504995cbc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 68f85794c8d70d642295f9125ac45311df29f16e
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: c2b37073455f255eaea931e7aaedd1e34a14a104
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163523"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469348"
 ---
 # <a name="modulemethodreleasenotifier-class"></a>Module::MethodReleaseNotifier Sınıfı
 

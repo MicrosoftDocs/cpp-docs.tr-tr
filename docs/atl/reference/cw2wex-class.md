@@ -1,31 +1,21 @@
 ---
-title: CW2WEX sınıfı | Microsoft Docs
-ms.custom: ''
+title: CW2WEX sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CW2WEX
 - ATLCONV/ATL::CW2WEX
 - ATLCONV/ATL::CW2WEX::CW2WEX
 - ATLCONV/ATL::CW2WEX::m_psz
 - ATLCONV/ATL::CW2WEX::m_szBuffer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CW2WEX class
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f230e66689578f1b7ea95326d9bc73efc8746c0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 647d233f25f27c96eeb3281272c1542057cabd4d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093068"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468100"
 ---
 # <a name="cw2wex-class"></a>CW2WEX sınıfı
 

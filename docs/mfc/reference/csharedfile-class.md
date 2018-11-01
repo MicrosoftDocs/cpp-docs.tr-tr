@@ -1,33 +1,23 @@
 ---
-title: CSharedFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSharedFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSharedFile
 - AFXADV/CSharedFile
 - AFXADV/CSharedFile::CSharedFile
 - AFXADV/CSharedFile::Detach
 - AFXADV/CSharedFile::SetHandle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSharedFile [MFC], CSharedFile
 - CSharedFile [MFC], Detach
 - CSharedFile [MFC], SetHandle
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91766e99e874a209ed23b32d074007f36f2af71b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 188330317a8d65060d0aad0e1617365723f4f928
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476498"
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 

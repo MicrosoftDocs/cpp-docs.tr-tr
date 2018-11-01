@@ -1,27 +1,17 @@
 ---
-title: AÇIKLAMA (MASM) | Microsoft Docs
-ms.custom: ''
+title: COMMENT (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - Comment
-dev_langs:
-- C++
 helpviewer_keywords:
 - COMMENT directive
 ms.assetid: b255ebf2-99b0-401c-a2c3-50ce57533578
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4530f938973053d40e1dbdaaefc0829a48329c1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f02115bb1acb7f8932ed95ad9b826aa4f7e87588
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677062"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474405"
 ---
 # <a name="comment-masm"></a>COMMENT (MASM)
 
