@@ -1,28 +1,18 @@
 ---
-title: noalias | Microsoft Docs
-ms.custom: ''
+title: noalias
 ms.date: 02/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - noalias_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - noalias __declspec keyword
 - __declspec keyword [C++], noalias
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a10acd24fed4dadb6bd33b66c895dc94f7215cb3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2eceffd10f97615859918991320ceebf577d094c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102813"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447131"
 ---
 # <a name="noalias"></a>noalias
 

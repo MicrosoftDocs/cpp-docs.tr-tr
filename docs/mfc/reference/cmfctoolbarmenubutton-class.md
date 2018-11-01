@@ -1,10 +1,6 @@
 ---
-title: CMFCToolBarMenuButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarMenuButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarMenuButton
 - AFXTOOLBARMENUBUTTON/CMFCToolBarMenuButton
@@ -51,8 +47,6 @@ f1_keywords:
 - AFXTOOLBARMENUBUTTON/CMFCToolBarMenuButton::SetTearOff
 - AFXTOOLBARMENUBUTTON/CMFCToolBarMenuButton::DrawDocumentIcon
 - AFXTOOLBARMENUBUTTON/CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], CMFCToolBarMenuButton
 - CMFCToolBarMenuButton [MFC], CompareWith
@@ -98,16 +92,12 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], DrawDocumentIcon
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d1002d0a6bcd8d477aa3af86e72faafa843b7565
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ed786f3449f172f1aa4255a4ca677a400b767e83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429373"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton sınıfı
 

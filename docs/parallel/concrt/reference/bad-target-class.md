@@ -1,29 +1,19 @@
 ---
-title: bad_target sınıfı | Microsoft Docs
-ms.custom: ''
+title: bad_target Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - bad_target
 - CONCRT/concurrency::bad_target
 - CONCRT/concurrency::bad_target::bad_target
-dev_langs:
-- C++
 helpviewer_keywords:
 - bad_target class
 ms.assetid: e6dcddbf-9217-4fac-ac7f-7b8b4781d2f5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b13aecabbf7f9935671b6bd44b654e78c5cd58dd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0440955718bee3b426f5e4625b5eb3fc559a5d28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434489"
 ---
 # <a name="badtarget-class"></a>bad_target Sınıfı
 

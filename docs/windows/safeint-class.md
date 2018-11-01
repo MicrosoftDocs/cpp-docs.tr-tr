@@ -1,31 +1,21 @@
 ---
-title: SafeInt sınıfı | Microsoft Docs
-ms.custom: ''
+title: SafeInt Sınıfı
 ms.date: 10/22/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - SafeInt
 - SafeInt::SafeInt
 - SafeInt.SafeInt
-dev_langs:
-- C++
 helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b7d9c6b68f67185bb9cc529949fcc7c43e91d21e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 70343d4dbaf4b57c83d28e225419164906e2b1ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081868"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445155"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: . LISTALL | Microsoft Docs
-ms.custom: ''
+title: .LISTALL
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .LISTALL
-dev_langs:
-- C++
 helpviewer_keywords:
 - .LISTALL directive
 ms.assetid: fccb5117-542d-4ae3-869b-40cc2ab55ecb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5fa0f90abeaae6b0b24ec780de7108bec58dd66
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 611370c3d599946e9ec50b53662bab4438dc5c72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691181"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456660"
 ---
 # <a name="listall"></a>.LISTALL
 

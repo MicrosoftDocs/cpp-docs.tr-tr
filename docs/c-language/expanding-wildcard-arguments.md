@@ -1,28 +1,18 @@
 ---
-title: Joker karakter bağımsız değişkenlerini genişletme | Microsoft Docs
-ms.custom: ''
+title: Joker Karakter Bağımsız Değişkenlerini Genişletme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - asterisk wildcard
 - question mark, wildcard
 - expanding wildcard arguments
 - wildcards, expanding
 ms.assetid: 80a11c4b-0199-420e-a342-cf1d803be5bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d78b23f81b72d04e9299616b0273bc97bb7a4e0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2224d01eeb3ec54a9c0ff895dfa45574135f7c0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078159"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443426"
 ---
 # <a name="expanding-wildcard-arguments"></a>Joker Karakter Bağımsız Değişkenlerini Genişletme
 

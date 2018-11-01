@@ -1,10 +1,6 @@
 ---
-title: CSimpleArray sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSimpleArray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSimpleArray
 - ATLSIMPCOLL/ATL::CSimpleArray
@@ -17,21 +13,15 @@ f1_keywords:
 - ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll
 - ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt
 - ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSimpleArray class
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03f4161130a1517bba6ed87164a814a9e8c61bbd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6395e324d5efdba208a7f77d86ca466fb7cdbb5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069730"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460469"
 ---
 # <a name="csimplearray-class"></a>CSimpleArray sınıfı
 

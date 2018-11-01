@@ -1,28 +1,18 @@
 ---
-title: Başlatma | Microsoft Docs
-ms.custom: ''
+title: Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - initializers, variable
 - types [C], initializing
 - initializing variables
 - initializers
 ms.assetid: f009ee12-3df6-4260-b7e4-a6149ebb95aa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd01cd17dd7c3b0fce2d79b8141c19e651bc5309
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 58f35f4026a543af100bb075b066ddfa3b7f6837
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441086"
 ---
 # <a name="initialization"></a>Başlatma
 

@@ -1,10 +1,6 @@
 ---
-title: CAnimationManagerEventHandler sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationManagerEventHandler sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationManagerEventHandler
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler
 - CAnimationManagerEventHandler [MFC], CreateInstance
 - CAnimationManagerEventHandler [MFC], OnManagerStatusChanged
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96d3ba28d7cd1b60743aec7d9bd5b53b8cf59127
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 497b6e0f5bdeb817eccb0bb42f66763a97da2af0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445740"
 ---
 # <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler sınıfı
 

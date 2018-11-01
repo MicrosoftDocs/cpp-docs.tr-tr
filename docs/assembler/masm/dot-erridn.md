@@ -1,27 +1,17 @@
 ---
-title: . ERRIDN] | Microsoft Docs
-ms.custom: ''
+title: .ERRIDN]
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ERRIDN[[I]]
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ERRIDN[[I]] directive
 ms.assetid: 89507db3-7d40-4a5e-a378-24d30feda9d1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74145f45a171ab1aee10bb773fb03970842cc339
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 91da9a4650bff66950abd9b4327033cca647aaa9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446624"
 ---
 # <a name="erridn"></a>.ERRIDN]
 

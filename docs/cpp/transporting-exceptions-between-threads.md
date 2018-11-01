@@ -1,12 +1,6 @@
 ---
-title: Özel durumları iş parçacıkları arasında taşıma | Microsoft Docs
-ms.custom: ''
+title: Özel durumları iş parçacıkları arasında taşıma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::current_exception
 - transporting exceptions between threads
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - rethrow_exception
 - move exceptions between threads
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46cdf86d431b69704b5a67fea3024365470de945
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f403b1448855b60f323ed582794a00c3e6ae1b3a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066370"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464449"
 ---
 # <a name="transporting-exceptions-between-threads"></a>Özel durumları iş parçacıkları arasında taşıma
 

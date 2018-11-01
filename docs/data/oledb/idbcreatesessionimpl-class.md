@@ -1,10 +1,6 @@
 ---
-title: Idbcreatesessionımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IDBCreateSessionImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - IDBCreateSessionImpl
 - ATL.IDBCreateSessionImpl
@@ -12,23 +8,16 @@ f1_keywords:
 - IDBCreateSessionImpl::CreateSession
 - IDBCreateSessionImpl.CreateSession
 - CreateSession
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDBCreateSessionImpl class
 - CreateSession method
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 40856f33de8bd12ce6bc4e3f4c6ff0ced9c67be4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0b15cd45ca63847e5489091226feba81a4040985
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459429"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
 

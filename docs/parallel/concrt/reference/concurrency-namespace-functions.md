@@ -1,8 +1,6 @@
 ---
-title: Eşzamanlılık ad alanı işlevleri | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık ad alanı işlevleri
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - concrt/concurrency::Alloc
 - concrt/concurrency::DisableTracing
@@ -34,19 +32,13 @@ f1_keywords:
 - concrt/concurrency::wait
 - ppltasks/concurrency::when_all
 - ppltasks/concurrency::when_any
-dev_langs:
-- C++
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b89c1a3057e9753b99aaac837c903b6fd5f6d3ea
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 7550e6f0ef44abd19b3fab89127ff898c72738f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436185"
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 

@@ -1,27 +1,17 @@
 ---
-title: 'Windows Yuvaları: Bayt sıralama | Microsoft Docs'
-ms.custom: ''
+title: 'Windows Yuvaları: Bayt Sıralama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - byte order issues in sockets programming
 - sockets [MFC], byte order issues
 - Windows Sockets [MFC], byte order issues
 ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: feaf2c02dbb17272696571ba27a077e6e99836b0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74d3b53ae3ab476ef1224caed91f31929fcce1ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377200"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453958"
 ---
 # <a name="windows-sockets-byte-ordering"></a>Windows Yuvaları: Bayt Sıralama
 

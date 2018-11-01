@@ -1,28 +1,18 @@
 ---
-title: Modül tanımlama deyimleri kuralları | Microsoft Docs
-ms.custom: ''
+title: Modül Tanımlama Deyimleri Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - .def
-dev_langs:
-- C++
 helpviewer_keywords:
 - module definition files, statement syntax
 - module definition files
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a31927bb1ce3667367eff8f38268b4b3b24ac82c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6921043bd4618692be788ec5a61978f1178c64ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726485"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442776"
 ---
 # <a name="rules-for-module-definition-statements"></a>Modül Tanımlama Deyimleri Kuralları
 

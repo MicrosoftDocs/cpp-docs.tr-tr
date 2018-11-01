@@ -1,23 +1,13 @@
 ---
-title: 1.1 kapsam | Microsoft Docs
-ms.custom: ''
+title: 1.1 Kapsam
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: a8570a3c-1dd6-4c3d-b368-a10fcb3534a6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81babf799860030f6d398f64b55ed65039de8649
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f87f631ae2d36662daa2ece4790170c00c5cbeb3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393540"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449211"
 ---
 # <a name="11-scope"></a>1.1 Kapsam
 

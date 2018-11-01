@@ -1,26 +1,17 @@
 ---
-title: Kullanıma göre öznitelikler | Microsoft Docs
+title: Kullanıma Göre Öznitelikler
 ms.custom: index-page
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
 ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: 8be2de10-b1ff-4ca4-a114-75318408593c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7dc5519fbef10ca6c369bcffacacb8351dbc0390
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2536309025506ca66d9c4b7cdfbaabf5787945e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060435"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449379"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
 

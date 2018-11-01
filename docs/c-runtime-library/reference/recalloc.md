@@ -1,10 +1,6 @@
 ---
-title: _recalloc | Microsoft Docs
-ms.custom: ''
+title: _recalloc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _recalloc
 apilocation:
@@ -23,26 +19,20 @@ apitype: DLLExport
 f1_keywords:
 - _recalloc
 - recalloc
-dev_langs:
-- C++
 helpviewer_keywords:
 - _recalloc function
 - recalloc function
 ms.assetid: 1db8305a-3f03-418c-8844-bf9149f63046
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c4ae06fbd3d10f1014fe1c879b482f30302a4f3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3bcc238dcb950a8e30af16efc557e99d933efe92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409309"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436523"
 ---
 # <a name="recalloc"></a>_recalloc
 
-Bir birleşimini **realloc** ve **calloc**. Bellekteki bir dizi yeniden ayırır ve 0 öğeleri başlatır.
+Bir birleşimi **realloc** ve **calloc**. Bir dizi bellek içinde yeniden ayırır ve öğeleri 0 başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,7 +47,7 @@ void *_recalloc(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Önceden ayrılmış bellek bloğu işaretçi.
+Daha önce ayrılmış bellek bloğuna işaretçi.
 
 *Sayı*<br/>
 Öğe sayısı.
@@ -67,33 +57,33 @@ Her öğenin bayt cinsinden uzunluğu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_recalloc** döndüren bir **void** bırakılan (ve muhtemelen taşınan) bellek bloğu işaretçi.
+**_recalloc** döndürür bir **void** yeniden (ve muhtemelen taşınan) bellek bloğuna işaretçi.
 
-Blok verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, özgün blok değiştirilmeden olduğundan, ve **NULL** döndürülür.
+Blok için verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, özgün blok sol değiştirilmez, ve **NULL** döndürülür.
 
-İstenen boyutu sıfır ise sonra tarafından için blok işaret *memblock* serbest bırakılır; dönüş değeri **NULL**, ve *memblock* boşaltılmış bloğundaki işaret eden bırakılır.
+İstenen boyut sıfırsa sonra blok tarafından işaret edilen *memblock* serbest bırakılır; dönüş değeri **NULL**, ve *memblock* boşaltılmış bloğundaki işaret eden bırakılır.
 
-Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun hizalanacak garanti bir depolama alanı işaret eder. Bir işaretçi bir türe dışında almak için **void**, dönüş değerini cast türünü kullanın.
+Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti bir depolama alanına işaret eder. Dışında bir türe işaretçi almaya **void**, bir tür ataması dönüş değerini kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Recalloc** işlev ayrılmış bellek bloğu boyutu değiştirir. *Memblock* bağımsız değişkeni bellek bloğu başlangıcına işaret eder. Varsa *memblock* olan **NULL**, **_recalloc** aynı şekilde davranır [calloc](calloc.md) ve yeni bir blok ayırır *numarası*  *  *boyutu* bayt sayısı. Her öğe 0 olarak başlatılır. Varsa *memblock* değil **NULL**, önceki bir çağrı tarafından döndürülen bir işaretçi olmalıdır **calloc**, [malloc](malloc.md), veya [realloc ](realloc.md).
+**_Recalloc** işlev ayrılan bellek blok boyutu değiştirir. *Memblock* bağımsız değişken bellek bloğu başlangıcına işaret eder. Varsa *memblock* olduğu **NULL**, **_recalloc** aynı şekilde davranır [calloc](calloc.md) ve yeni bir bloğu ayırır *numarası*  *  *boyutu* bayt. Her öğe 0 olarak başlatılır. Varsa *memblock* değil **NULL**, önceki bir çağrı tarafından döndürülen bir işaretçi olmalıdır **calloc**, [malloc](malloc.md), veya [realloc ](realloc.md).
 
-Yeni bir bellek konumda yeni blok olabileceğinden, işaretçi tarafından döndürülen **_recalloc** geçtiğini işaretçi olması garanti edilmemiştir *memblock* bağımsız değişkeni.
+Yeni bir blok içinde yeni bir bellek konumuna olabileceğinden, işaretçi tarafından döndürülen **_recalloc** geçtiğini işaretçisi olması garanti edilmez *memblock* bağımsız değişken.
 
-**_recalloc** ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya bellek miktarını aşıyor istediyseniz **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_recalloc** ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya bellek miktarını aşıyor istenirse **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**recalloc** çağrıları **realloc** C++ kullanmak için [_set_new_mode](set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir, hatasında kullanılıp **realloc** belirlediği yeni işleyici yordamı çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **realloc** yeni işleyici yordamı bellek ayırma hatası çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **_recalloc** bellek ayırmak başarısız **realloc** yeni işleyici yordamını aynı çağırıyor biçimi **yeni** işleci aynı nedenden dolayı başarısız olduğunda yapar. Varsayılan değer geçersiz kılmak için arama
+**recalloc** çağrıları **realloc** C++ kullanmak için [_set_new_mode](set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir mi, hata durumunda, **realloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **realloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **_recalloc** bellek ayırmak başarısız **realloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci aynı nedenden dolayı başarısız olduğunda yapar. Varsayılan geçersiz kılmak için çağırın
 
 ```C
 _set_new_mode(1);
 ```
 
-program ya da NEWMODE.OBJ bağlantısıyla erken.
+program ya da NEWMODE.OBJ ile erken.
 
-Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlandığında **_recalloc** çözümler [_recalloc_dbg](recalloc-dbg.md). Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
+Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **_recalloc** çözümler [_recalloc_dbg](recalloc-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
 
-**_recalloc** işaretlenmiş `__declspec(noalias)` ve `__declspec(restrict)`, işlev genel değişkenler değiştirmemeniz garanti ve işaretçi döndürdü diğer adı değil anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md) ve [kısıtlamak](../../cpp/restrict.md).
+**_recalloc** işaretlenmiş `__declspec(noalias)` ve `__declspec(restrict)`, işlevin genel değişkenleri garanti edilir ve döndürülen işaretçiye diğer adı değil. Daha fazla bilgi için [noalias](../../cpp/noalias.md) ve [kısıtlama](../../cpp/restrict.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -101,7 +91,7 @@ Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağla
 |-------------|---------------------|
 |**_recalloc**|\<stdlib.h > ve \<malloc.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

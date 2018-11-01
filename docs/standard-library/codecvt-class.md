@@ -1,10 +1,6 @@
 ---
-title: codecvt sınıfı | Microsoft Docs
-ms.custom: ''
+title: codecvt Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocale/std::codecvt
 - xlocale/std::codecvt::extern_type
@@ -24,8 +20,6 @@ f1_keywords:
 - xlocale/std::codecvt::max_length
 - xlocale/std::codecvt::out
 - xlocale/std::codecvt::unshift
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::codecvt [C++]
 - std::codecvt [C++], extern_type
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - std::codecvt [C++], out
 - std::codecvt [C++], unshift
 ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f02f6a2810f5ac3a51abb80245c22a7f0c2df434
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: be1075da65284ac3f9672a839622b59c8926bfb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074155"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439292"
 ---
 # <a name="codecvt-class"></a>codecvt Sınıfı
 

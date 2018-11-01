@@ -1,27 +1,17 @@
 ---
-title: __readdr | Microsoft Docs
-ms.custom: ''
+title: __readdr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __readdr
-dev_langs:
-- C++
 helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dffb51782e87903feaeb733765fcf9f4763a64f6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7e6f485eef5e3c54cb406d0c2b3abe824dbf584b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385150"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438772"
 ---
 # <a name="readdr"></a>__readdr
 

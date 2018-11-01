@@ -1,10 +1,6 @@
 ---
-title: istreambuf_iterator sınıfı | Microsoft Docs
-ms.custom: ''
+title: istreambuf_iterator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - streambuf/std::istreambuf_iterator
 - iterator/std::istreambuf_iterator::char_type
@@ -13,8 +9,6 @@ f1_keywords:
 - iterator/std::istreambuf_iterator::streambuf_type
 - iterator/std::istreambuf_iterator::traits_type
 - iterator/std::istreambuf_iterator::equal
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::istreambuf_iterator [C++]
 - std::istreambuf_iterator [C++], char_type
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - std::istreambuf_iterator [C++], traits_type
 - std::istreambuf_iterator [C++], equal
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16d22cef053dab691d74351aacf7380764861152
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 41298909b53de1c7acf3cb8ae4b999eb6260765d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448899"
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3482 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3482
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3482
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3482
 ms.assetid: bf99558e-bef4-421c-bb16-dcd9c54c1011
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9921c25575888ab2db1c092f9325002d1becb921
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ec0018fc1aafc7e3e0423608f4db9f78946e4597
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432649"
 ---
 # <a name="compiler-error-c3482"></a>Derleyici Hatası C3482
 

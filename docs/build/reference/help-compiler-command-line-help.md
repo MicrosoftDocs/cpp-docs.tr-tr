@@ -1,14 +1,8 @@
 ---
-title: -HELP (derleyici komut satırı Yardımı) | Microsoft Docs
-ms.custom: ''
+title: /HELP (Derleyici Komut Satırı Yardımı)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /help
-dev_langs:
-- C++
 helpviewer_keywords:
 - HELP compiler option [C++]
 - Help, for compiler command line
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - -? compiler option [C++]
 - cl.exe compiler, command-line syntax
 ms.assetid: 192533e7-86f2-48e0-a08f-b5e4e3a4e784
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc21ac544a7f30dd193ca571fcd82e1078fb44dc
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f12b7d35bb5621837c6eda3857f4e51eb2685ba3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435470"
 ---
 # <a name="help-compiler-command-line-help"></a>/HELP (Derleyici Komut Satırı Yardımı)
 

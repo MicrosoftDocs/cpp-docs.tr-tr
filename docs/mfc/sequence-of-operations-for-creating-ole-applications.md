@@ -1,28 +1,18 @@
 ---
-title: OLE uygulamaları oluşturmak için işlem dizisi | Microsoft Docs
-ms.custom: ''
+title: OLE Uygulamaları Oluşturmak için İşlem Dizisi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE applications [MFC], creating
 - OLE applications [MFC]
 - applications [OLE], creating
 - applications [OLE]
 ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02542f8a4eb382ff4d7a88f98163b0052be09f75
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b281cbeb4670af0efd232152010fdc90795af103
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437355"
 ---
 # <a name="sequence-of-operations-for-creating-ole-applications"></a>OLE Uygulamaları Oluşturmak için İşlem Dizisi
 

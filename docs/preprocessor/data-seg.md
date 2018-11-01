@@ -1,29 +1,19 @@
 ---
-title: data_seg | Microsoft Docs
-ms.custom: ''
+title: data_seg
 ms.date: 10/22/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - data_seg_CPP
 - vc-pragma.data_seg
-dev_langs:
-- C++
 helpviewer_keywords:
 - data_seg pragma
 - pragmas, data_seg
 ms.assetid: 65c66466-4c98-494f-93af-106beb4caf78
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eed0e7616515d96c6ccba8cdcb56f963d13bf324
-ms.sourcegitcommit: 80fc7b0452aafa36b0c915cbd29c75e1ffa25630
+ms.openlocfilehash: 414fc542aa3f84f985e326960d8cf73b67fd1580
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456387"
 ---
 # <a name="dataseg"></a>data_seg
 

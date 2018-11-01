@@ -1,30 +1,20 @@
 ---
-title: Çok baytlı karakter kümeleri (MBCSler) için destek | Microsoft Docs
-ms.custom: ''
+title: Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - _mbcs
-dev_langs:
-- C++
 helpviewer_keywords:
 - MBCS [C++], about MBCS
 - character sets [C++], multibyte
 - multibyte characters [C++]
 - MBCS [C++]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 52bec48309b5a221e0b0494237420e9c33fd1b2e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b6c8dc5548eb1082866b7a069fb38fd329effc75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424917"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437276"
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)
 

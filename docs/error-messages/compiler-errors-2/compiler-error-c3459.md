@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3459 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3459
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3459
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3459
 ms.assetid: 3d290a20-d313-4c07-9bd8-c5c159cb169f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: abde90828cac4f45685b7a21b50705474aedde72
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aaad9610ffec3efc73b1ff5650472689a2d2e82a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438031"
 ---
 # <a name="compiler-error-c3459"></a>Derleyici Hatası C3459
 

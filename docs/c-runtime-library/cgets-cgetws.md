@@ -1,10 +1,6 @@
 ---
-title: _cgets, _cgetws | Microsoft Docs
-ms.custom: ''
+title: _cgets, _cgetws
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _cgetws
 - _cgets
@@ -23,8 +19,6 @@ f1_keywords:
 - cgetws
 - _cgetws
 - _cgets
-dev_langs:
-- C++
 helpviewer_keywords:
 - _cgetws function
 - strings [C++], getting from console
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f30ac17204b5fc6df3ce3fe35e5c3acc98260076
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1ebb0979e432d7f68d94a01932674fdc30f85972
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110074"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434274"
 ---
 # <a name="cgets-cgetws"></a>_cgets, _cgetws
 

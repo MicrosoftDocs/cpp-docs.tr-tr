@@ -1,27 +1,17 @@
 ---
-title: COMM | Microsoft Docs
-ms.custom: ''
+title: COMM
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - COMM
-dev_langs:
-- C++
 helpviewer_keywords:
 - COMM directive
 ms.assetid: a23548c4-ad04-41fa-91da-945f228de742
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87bf6d91de052d7ecaf637100b455e66819c748b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 342c8acd95fd45de1a21dc298325de9a7b40b717
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434807"
 ---
 # <a name="comm"></a>COMM
 

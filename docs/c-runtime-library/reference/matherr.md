@@ -1,10 +1,6 @@
 ---
-title: _matherr | Microsoft Docs
-ms.custom: ''
+title: _matherr
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _matherr
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - _matherr
 - matherr
-dev_langs:
-- C++
 helpviewer_keywords:
 - _matherr function
 - matherr function
 ms.assetid: b600d66e-165a-4608-a856-8fb418d46760
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f8cba1887fe806c3a6cfa795437d3d60ed7f31e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 980bf8a14ceace82a76562cc47d353f78dbca582
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402331"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445727"
 ---
 # <a name="matherr"></a>_matherr
 
-Matematik hataları işler.
+Matematik hatalarını ele alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,22 +41,22 @@ int _matherr( struct _exception * except );
 
 ### <a name="parameters"></a>Parametreler
 
-*dışında*<br/>
-Hata bilgilerini içeren yapısına yönelik işaretçinin.
+*Dışında*<br/>
+Hata bilgilerini içeren bir yapıya yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_matherr** bir hata veya başarılı olduğunu belirtmek için sıfır olmayan bir değer belirtmek için 0 değerini döndürür. Varsa **_matherr** döndürür 0, hata iletisi görüntülenebilir ve **errno** ilgili hata değerine ayarlanır. Varsa **_matherr** döndürür sıfır olmayan bir değer, hata iletisi görüntülenir ve **errno** değişmeden kalır.
+**_matherr** bir hata veya başarılı olduğunu belirtmek için sıfır olmayan bir değer belirtmek için 0 değerini döndürür. Varsa **_matherr** döndürür 0, bir hata iletisi görüntülenebilir ve **errno** bir uygun hata değerine ayarlanır. Varsa **_matherr** döndürür sıfır dışında bir değeri, hiçbir hata iletisi görüntülenir ve **errno** değişmeden kalır.
 
-Dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Matherr** işlevi math kitaplığı kayan nokta işlevleri tarafından oluşturulan hatalar işler. Bu işlev çağrısı **_matherr** ne zaman bir hata algılandı.
+**_Matherr** işlevi kayan nokta matematik kitaplığı işlevleri tarafından oluşturulan hatalar işler. Bu işlevler çağırma **_matherr** ne zaman bir hata algılandı.
 
-Özel hata işleme için farklı bir tanımını sağlamak **_matherr**. C çalışma zamanı kitaplığı (CRT) dinamik olarak bağlı sürümünü kullanıyorsanız, varsayılan değiştirebilirsiniz **_matherr** kullanıcı tanımlı bir sürüm ile yürütülebilir bir istemcisindeki rutin. Ancak, varsayılan değiştirilemiyor **_matherr** CRT DLL DLL istemcisindeki rutin.
+Özel hata işleme için farklı bir tanımını sağlamak **_matherr**. C çalışma zamanı kitaplığı (CRT) dinamik olarak bağlı sürümünü kullanıyorsanız, varsayılan değiştirebilirsiniz **_matherr** rutin istemcisinde kullanıcı tanımlı bir sürümüyle çalıştırılabilir. Bununla birlikte, varsayılan değiştirilemiyor **_matherr** rutin bir DLL istemcisinde CRT DLL.
 
-Matematik yordamında bir hata oluştuğunda **_matherr** işaretçi ile adlı bir **_exception** yazın yapısı (tanımlanan \<math.h >) bağımsız değişken olarak. **_Exception** yapısı aşağıdaki öğeleri içerir.
+Matematik yordamında, hata oluştuğunda **_matherr** işaretçisi adlı bir **_exception** yapısı yazın (tanımlanan \<math.h >) bağımsız değişken olarak. **_Exception** yapısı aşağıdaki öğeleri içerir.
 
 ```C
 struct _exception
@@ -79,20 +69,20 @@ struct _exception
 };
 ```
 
-**Türü** üye matematik hata türünü belirtir. Tanımlanan aşağıdaki değerlerden biri \<math.h >:
+**Türü** üye matematik hata türünü belirtir. Tanımlanan şu değerlerden biri \<math.h >:
 
 |Makrosu|Açıklama|
 |-|-|
-**_DOMAIN**|Bağımsız değişken etki alanı hatası
+**_ETKİ ALANI**|Bağımsız değişken etki alanı hatası
 **_SING**|Bağımsız değişken singularity
-**_OVERFLOW**|taşma aralık hatası
-**_PLOSS**|Kısmi bir kayıp anlamlı
-**_TLOSS**|Anlamlı toplam kaybı
-**_UNDERFLOW**|Sonuç gösterilemeyecek kadar çok küçük. (Bu durum şu anda desteklenmiyor.)
+**_OVERFLOW**|Taşma aralık hatası
+**_PLOSS**|Kısmi bir kayıp önemi
+**_TLOSS**|Kaybedilmesi önemi
+**_UNDERFLOW**|Sonuç gösterilemeyecek kadar çok küçüktür. (Bu durum şu anda desteklenmiyor.)
 
-Yapı üyesi **adı** gösteren bir işaretçidir hatanın nedeni işlevin adını içeren null ile sonlandırılmış bir dize. Yapı üyeleri **arg1** ve **arg2** hataya değerleri belirtin. Yalnızca tek bir bağımsız değişken verilirse depolanır **arg1**.
+Yapı üyesi **adı** hataya neden olan işlevin adını içeren bir boş sonlandırılmış dizeye bir işaretçisidir. Yapı üyeleri **arg1** ve **arg2** hataya neden olan değerleri belirtin. Yalnızca tek bir bağımsız değişken verilirse, bu depolanan **arg1**.
 
-Varsayılan dönüş değeri için belirli hata: **retval**. Dönüş değeri değiştirirseniz, bir hata gerçekte oluşup oluşmadığını belirtmeniz gerekir.
+Varsayılan dönüş değeri için belirtilen hata **retval**. Dönüş değeri değiştirirseniz, bir hata gerçekten oluşup oluşmadığını belirtmeniz gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -100,7 +90,7 @@ Varsayılan dönüş değeri için belirli hata: **retval**. Dönüş değeri de
 |-------------|---------------------|
 |**_matherr**|\<Math.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

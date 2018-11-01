@@ -1,10 +1,6 @@
 ---
-title: CType sınıfı | Microsoft Docs
-ms.custom: ''
+title: ctype Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocale/std::ctype
 - xlocale/std::ctype::char_type
@@ -22,8 +18,6 @@ f1_keywords:
 - xlocale/std::ctype::tolower
 - xlocale/std::ctype::toupper
 - xlocale/std::ctype::widen
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::ctype [C++]
 - std::ctype [C++], char_type
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - std::ctype [C++], toupper
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1ccd20476d7888f687d077a3356ac51f2f1a529
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e7c474e9112acadc11af889471b1e126dfeeb23f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438963"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 

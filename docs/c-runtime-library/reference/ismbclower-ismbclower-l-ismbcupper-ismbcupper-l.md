@@ -1,10 +1,6 @@
 ---
-title: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l | Microsoft Docs
-ms.custom: ''
+title: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbclower
 - _ismbclower_l
@@ -26,8 +22,6 @@ apitype: DLLExport
 f1_keywords:
 - _ismbcupper
 - _ismbclower
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbcupper function
 - ismbclower function
@@ -38,23 +32,19 @@ helpviewer_keywords:
 - ismbclower_l function
 - _ismbcupper_l function
 ms.assetid: 17d89587-65bc-477c-ba8f-a84e63cf59e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ef7b21cc10ca5e72a5054e34b0e228be89d74cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 29a1e97f4583808931e5228a6905aed7c0a62702
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402240"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431869"
 ---
 # <a name="ismbclower-ismbclowerl-ismbcupper-ismbcupperl"></a>_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 
-Birden çok baytlı karakter küçük harfler veya büyük olup olmadığını denetler.
+Çok baytlı bir karakterin büyük harf veya küçük harf olup olmadığını denetler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,27 +68,27 @@ int _ismbcupper_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak karakter.
+Test edilecek karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter test durumu ya da 0 uymazsa mevcut değilse bu yordamlar her sıfır olmayan bir değer döndürür. Varsa *c*< = 255 ve karşılık gelen **_ismbb** yordamına (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Buna karşılık gelen dönüş değeri sonucudur **_ismbb** yordamı.
+Karakter test koşulunu veya 0 karşılıyorsa kullanmıyorsa bu yordamların her biri sıfır dışında bir değeri döndürür. Varsa *c*< = 255 ve karşılık gelen **_ismbb** yordamı (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Sonuç, karşılık gelen dönüş değeri olduğu **_ismbb** yordamı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri belirli bir birden çok baytlı karakter verilen bir koşul için sınar.
+Bu işlevlerin her biri, belirli bir koşul için belirli bir çok baytlı karakteri test eder.
 
-Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-|Yordam|Test durumu|Kod sayfası 932 örneği|
+|Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
-|**_ismbclower**|Küçük alfabetik|Sıfır olmayan ve yalnız döndürür *c* ASCII küçük harfli İngilizce harf tek baytlı gösterimidir: 0x61 < =*c*< 0x7A =.|
-|**_ismbclower_l**|Küçük alfabetik|Sıfır olmayan ve yalnız döndürür *c* ASCII küçük harfli İngilizce harf tek baytlı gösterimidir: 0x61 < =*c*< 0x7A =.|
-|**_ismbcupper**|Alfabetik büyük harf|Sıfır olmayan ve yalnız döndürür *c* ASCII büyük İngilizce harf tek baytlı gösterimidir: 0x41 < =*c*< 0x5A =.|
-|**_ismbcupper_l**|Alfabetik büyük harf|Sıfır olmayan ve yalnız döndürür *c* ASCII büyük İngilizce harf tek baytlı gösterimidir: 0x41 < =*c*< 0x5A =.|
+|**_ismbclower**|Küçük harf alfabetik|Yalnız ve yalnızca döndürür *c* tek baytlık ASCII küçük harfli İngilizce harfin ise: 0x61 < =*c*< 0x7A =.|
+|**_ismbclower_l**|Küçük harf alfabetik|Yalnız ve yalnızca döndürür *c* tek baytlık ASCII küçük harfli İngilizce harfin ise: 0x61 < =*c*< 0x7A =.|
+|**_ismbcupper**|Büyük alfabetik|Yalnız ve yalnızca döndürür *c* tek baytlık ASCII büyük harfli İngilizce harfin ise: 0x41 < =*c*< 0x5A =.|
+|**_ismbcupper_l**|Büyük alfabetik|Yalnız ve yalnızca döndürür *c* tek baytlık ASCII büyük harfli İngilizce harfin ise: 0x41 < =*c*< 0x5A =.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -109,7 +99,7 @@ Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlar�
 |**_ismbcupper**|\<Mbstring.h >|
 |**_ismbcupper_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

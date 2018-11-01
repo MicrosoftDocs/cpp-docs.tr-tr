@@ -1,14 +1,8 @@
 ---
-title: Cihaz görüntüsü (simgeler için görüntü Düzenleyicisi) oluşturma | Microsoft Docs
-ms.custom: ''
+title: Cihaz Görüntüsü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.icon
-dev_langs:
-- C++
 helpviewer_keywords:
 - cursors [C++], creating
 - icons [C++], creating
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - images [C++], creating for display devices
 - icons [C++], inserting
 ms.assetid: 5a536928-32df-4ace-beb1-1521ce3b871f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b641644818648143fe6153f6cfbfa0859757f92b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 322205e22edf2624784ddb8f294bcf5e73af06f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447768"
 ---
 # <a name="creating-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

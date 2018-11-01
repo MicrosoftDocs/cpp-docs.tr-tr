@@ -1,28 +1,17 @@
 ---
-title: BLOB alma | Microsoft Docs
-ms.custom: ''
+title: BLOB Alma
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - retrieving BLOBs
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 1608bf5db491a090f70da5242173fc96419a6179
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 365b2e5636ecc65ea334730a92953070edd104ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453215"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
 

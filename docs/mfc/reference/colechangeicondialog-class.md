@@ -1,10 +1,6 @@
 ---
-title: Colechangeıcondialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: Colechangeıcondialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleChangeIconDialog
 - AFXODLGS/COleChangeIconDialog
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXODLGS/COleChangeIconDialog::DoModal
 - AFXODLGS/COleChangeIconDialog::GetIconicMetafile
 - AFXODLGS/COleChangeIconDialog::m_ci
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleChangeIconDialog [MFC], COleChangeIconDialog
 - COleChangeIconDialog [MFC], DoChangeIcon
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - COleChangeIconDialog [MFC], GetIconicMetafile
 - COleChangeIconDialog [MFC], m_ci
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f6cec1694e5885d837d68edd292f5cc201b9155
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a319dc0612f68c4d513b7d5ab36ecf67a854bda9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433650"
 ---
 # <a name="colechangeicondialog-class"></a>Colechangeıcondialog sınıfı
 

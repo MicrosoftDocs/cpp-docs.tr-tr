@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2903 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2903
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2903
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2903
 ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f06baeaa262905d36306e8e36985018db9eeb819
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7002e45770c994d5cd10e1cd632561be57246086
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442828"
 ---
 # <a name="compiler-error-c2903"></a>Derleyici Hatası C2903
 

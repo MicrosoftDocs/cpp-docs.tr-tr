@@ -1,10 +1,6 @@
 ---
-title: CMFCDropDownFrame sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDropDownFrame sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDropDownFrame
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDropDownFrame [MFC], Create
 - CMFCDropDownFrame [MFC], GetParentMenuBar
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMFCDropDownFrame [MFC], RecalcLayout
 - CMFCDropDownFrame [MFC], SetAutoDestroy
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ae1b3dfdd4b5d2160b154a99f76a505a8fb82cf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ebab76653066d6162c8068d9205cd12f3d945cab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429163"
 ---
 # <a name="cmfcdropdownframe-class"></a>CMFCDropDownFrame sınıfı
 
