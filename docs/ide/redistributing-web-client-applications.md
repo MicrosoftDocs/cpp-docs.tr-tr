@@ -1,28 +1,18 @@
 ---
-title: Web istemcisi uygulamalarını yeniden dağıtma | Microsoft Docs
-ms.custom: ''
+title: Web İstemcisi Uygulamalarını Yeniden Dağıtma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Web applications [C++], redistributing
 - deploying applications [C++], Web applications
 - Internet applications [C++], redistributing
 - application deployment [C++], Web applications
 ms.assetid: fe05988b-dee8-4a46-b381-016b5103a6bf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d036f7d46e0db84b8572b26c747947c929972517
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 37ff666493ada7dada19f5731e6581603d3cb57e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48889938"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512426"
 ---
 # <a name="redistributing-web-client-applications"></a>Web İstemcisi Uygulamalarını Yeniden Dağıtma
 

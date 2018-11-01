@@ -1,12 +1,6 @@
 ---
-title: Hata ayıklama ve listeleme satır içi derleme için | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Derleme için Hata Ayıklama ve Listeleme
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - source level debugger
 - __asm keyword [C++], debugging
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - debugging [C++], inline assembly code
 - inline assembly, debugging
 ms.assetid: 69266930-6f9a-433d-b704-f4f44e7b2583
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6cca954ae15252b97d883ba8491fdb98e506f68
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1b2ec146daf450c4302be9fea8fdd117ec6398da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689295"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485195"
 ---
 # <a name="debugging-and-listings-for-inline-assembly"></a>Satır İçi Derleme için Hata Ayıklama ve Listeleme
 

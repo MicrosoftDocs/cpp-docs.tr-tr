@@ -1,10 +1,6 @@
 ---
-title: CWinFormsControl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWinFormsControl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CWinFormsControl
 - AFXWINFORMS/CWinFormsControl
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXWINFORMS/CWinFormsControl::CreateManagedControl
 - AFXWINFORMS/CWinFormsControl::GetControl
 - AFXWINFORMS/CWinFormsControl::GetControlHandle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWinFormsControl [MFC], CWinFormsControl
 - CWinFormsControl [MFC], CreateManagedControl
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d687c2ffc0659e1a0571f55528dd35044d154dad
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c27bcfa88ec5ba8b330a62f6ecfbad7e10a54d6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053831"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547491"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl sınıfı
 

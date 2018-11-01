@@ -1,30 +1,20 @@
 ---
-title: -Fi (çıktı dosyası adını Önişle) | Microsoft Docs
-ms.custom: ''
+title: /Fi (Çıktı Dosyası Adını Önişle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Fi
-dev_langs:
-- C++
 helpviewer_keywords:
 - Fi compiler option (C++)
 - -Fi compiler option (C++)
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f69a4ab16956924e3bcfd785c6a86c7ac238b36
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d4de722ad33a9c9e5e7c37176bbe5d7031b68a39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450186"
 ---
 # <a name="fi-preprocess-output-file-name"></a>/Fi (Çıktı Dosyası Adını Önişle)
 

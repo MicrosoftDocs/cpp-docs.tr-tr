@@ -1,29 +1,19 @@
 ---
-title: arabirim sınıfı (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: arabirim sınıfı (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - interface_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ecc99a5c97f96290932a7d758a959501532c07be
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 57bb83e91492995551ec155c2bcd6bbff3da3186
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328330"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517136"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>arabirim sınıfı (C + +/ CLI ve C + +/ CX)
 
@@ -67,7 +57,7 @@ Daha fazla bilgi için bkz.:
 
 - [Arabirim statik Oluşturucusu](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
-- [Genel arabirimler (C + +/ CLI)](../windows/generic-interfaces-visual-cpp.md)
+- [Genel Arabirimler (C++/CLI)](../windows/generic-interfaces-visual-cpp.md)
 
 Diğer CLR türleri hakkında daha fazla bilgi için bkz. [sınıfları ve yapıları](../windows/classes-and-structs-cpp-component-extensions.md).
 
@@ -230,4 +220,4 @@ ref struct R : I, J {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

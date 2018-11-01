@@ -1,28 +1,17 @@
 ---
-title: vi_progid (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: vi_progid (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.vi_progid
-dev_langs:
-- C++
 helpviewer_keywords:
 - vi_progid attribute
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7b63e98e070dc5352d7c1456252722bea958b8bf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1045c240a283a8a534c2266186f941312216f206
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544283"
 ---
 # <a name="viprogid"></a>vi_progid
 
