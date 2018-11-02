@@ -1,33 +1,23 @@
 ---
-title: -DELAY (gecikme yükü içe aktarma ayarları) | Microsoft Docs
-ms.custom: ''
+title: /DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /delay
 - VC.Project.VCLinkerTool.DelayNoBind
 - VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL
 - VC.Project.VCLinkerTool.DelayUnload
-dev_langs:
-- C++
 helpviewer_keywords:
 - delayed loading of DLLs, /DELAY option
 - DELAY linker option
 - /DELAY linker option
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 086fab7d1d50f96ab05c38f2e6d524d7ff344e02
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: edf15d17f0ae6f3bd04b6ed97095594eaebbf675
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081922"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565990"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 

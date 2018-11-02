@@ -1,29 +1,19 @@
 ---
-title: delete işleci (C++) | Microsoft Docs
-ms.custom: ''
+title: delete İşleci (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - delete_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - delete keyword [C++], syntax
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e95b1e3f111314a85de6fb03e99dde0a0db03dbf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5e4f5685ea1bb8cd7c405373ba774fe36af08672
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094383"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524737"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 

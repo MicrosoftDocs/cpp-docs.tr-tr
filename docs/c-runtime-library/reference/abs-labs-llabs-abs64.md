@@ -1,10 +1,6 @@
 ---
-title: Abs, laboratuvarlar, llabs, _abs64 | Microsoft Docs
-ms.custom: ''
+title: Abs, laboratuvarlar, llabs, _abs64
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - abs
 - _abs64
@@ -33,8 +29,6 @@ f1_keywords:
 - llabs
 - math/llabs
 - cmath/abs
-dev_langs:
-- C++
 helpviewer_keywords:
 - absolute values
 - abs function
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1380a6e56ce444e80feccf3e8306a0a589c98d01
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 61aa0a48757a35708ffb85d2c0525bb4eac82d56
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085270"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506242"
 ---
 # <a name="abs-labs-llabs-abs64"></a>Abs, laboratuvarlar, llabs, _abs64
 

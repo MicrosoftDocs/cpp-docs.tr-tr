@@ -1,14 +1,8 @@
 ---
-title: 'TN002: Kalıcı nesne veri biçimi | Microsoft Docs'
-ms.custom: ''
+title: 'TN002: Kalıcı Nesne Veri Biçimi'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.data
-dev_langs:
-- C++
 helpviewer_keywords:
 - VERSIONABLE_SCHEMA macro [MFC]
 - persistent object data
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - persistent C++ objects [MFC]
 - TN002
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a23ade068fa0d71715a76d3a99a393cc5458947c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5f5bde68d9fd4175ed97a7b61d807887d07e9e12
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399970"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474392"
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı Nesne Veri Biçimi
 

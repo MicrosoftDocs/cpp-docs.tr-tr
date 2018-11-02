@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4103 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4103
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4103
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4103
 ms.assetid: 9021b514-375e-4d62-b261-ccb06f299e8e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1942acc2d9c5c274806e06127f9f98d4bfcb5077
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 15d7403d461467e33b7e89957821a311179d33a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577820"
 ---
 # <a name="compiler-warning-level-1-c4103"></a>Derleyici Uyarısı (düzey 1) C4103
 

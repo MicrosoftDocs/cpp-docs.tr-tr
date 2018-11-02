@@ -1,10 +1,6 @@
 ---
-title: strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l | Microsoft Docs
-ms.custom: ''
+title: strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcstok_s_l
 - _mbstok_s_l
@@ -35,8 +31,6 @@ f1_keywords:
 - wcstok_s
 - _mbstok_s
 - _strtok_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strtok_s_l function
 - _mbstok_s_l function
@@ -53,23 +47,19 @@ helpviewer_keywords:
 - _mbstok_s function
 - strtok_s function
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 467184acd7ef78ee52f1605d23f2d3b80e6adb83
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: a8b87e0b2d4ecf9dc6fb1b52f512406a6df0622c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451972"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517461"
 ---
 # <a name="strtoks-strtoksl-wcstoks-wcstoksl-mbstoks-mbstoksl"></a>strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 
-Sonraki belirteç geçerli yerel ya da geçirilen bir yerel ayar kullanarak bir dize bulur. Bu sürümleri [strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l](strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Sonraki belirtece, geçerli yerel ayarı veya geçirilen bir yerel ayarı kullanarak bir dize içinde bulur. Bu sürümleri [strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l](strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbstok_s** ve **_mbstok_s_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbstok_s** ve **_mbstok_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -117,42 +107,42 @@ unsigned char* _mbstok_s(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Belirteç veya belirteçler bulmak için içeren bir dize.
+Belirteç veya belirteçleri bulmak için içeren bir dize.
 
 *Sınırlayıcılar*<br/>
 Kullanılacak sınırlayıcı karakter kümesi.
 
-*bağlam*<br/>
-İşlev çağrıları arasında konum bilgilerini depolamak için kullanılır.
+*Bağlam*<br/>
+İşlev çağrıları arasında konum bilgileri depolamak için kullanılır.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi bulunan sonraki belirteç döndüren *str*. Döndürür **NULL** başka belirteç bulunduğunda. Her çağrı değiştirir *str* tarafından döndürülen belirteç sonra oluşan ilk sınırlayıcısı için bir null karakter değiştirerek.
+Bulunan sonraki belirteç için bir işaretçi döndürür *str*. Döndürür **NULL** zaman başka belirteç bulundu. Her çağrının değiştirir *str* sonra döndürülen belirteci oluşan ilk sınırlayıcısı için bir null karakter koyarak tarafından.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*str*|*Sınırlayıcılar*|*bağlam*|Dönüş değeri|**errno**|
+|*str*|*Sınırlayıcılar*|*Bağlam*|Dönüş değeri|**errno**|
 |----------------|------------------|---------------|------------------|-------------|
-|**NULL**|tüm|null işaretçinin işaretçi|**NULL**|**EINVAL**|
-|tüm|**NULL**|tüm|**NULL**|**EINVAL**|
-|tüm|tüm|**NULL**|**NULL**|**EINVAL**|
+|**NULL**|Tüm|null bir işaretçi işaretçisi|**NULL**|**EINVAL**|
+|Tüm|**NULL**|Tüm|**NULL**|**EINVAL**|
+|Tüm|Tüm|**NULL**|**NULL**|**EINVAL**|
 
-Varsa *str* olan **NULL** ancak *bağlamı* işaretçi geçerli bağlam işaretçi hata yoktur.
+Varsa *str* olduğu **NULL** ancak *bağlam* bir işaretçi geçerli bağlam işaretçisi, hata yoktur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtok_s** ailesi işlevlerini bulur sonraki belirteç *str*. Karakter kümesi *sınırlayıcıları* bulunamadı belirteç olası sınırlayıcılar belirtir *str* geçerli çağrıda. **wcstok_s** ve **_mbstok_s** joker karakter ve çok baytlı karakter sürümleri **strtok_s**. Bağımsız değişkenleri ve dönüş değerleri **wcstok_s** ve **_wcstok_s_l** joker karakter olan dizeleri; bu **_mbstok_s** ve **_mbstok_s_l**çok baytlı karakter dizeleri belirtilmiştir. Bu işlevler aynı şekilde aksi davranır.
+**Strtok_s** işlevler ailesini bulur sonraki belirteç *str*. Karakter kümesi *sınırlayıcılar* belirteç bulunamıyor olası ayırıcısını belirtir *str* geçerli çağrıda. **wcstok_s** ve **_mbstok_s** geniş karakter ve çok baytlı karakter sürümleridir **strtok_s**. Bağımsız değişkenler ve dönüş değerleri **wcstok_s** ve **_wcstok_s_l** geniş karakterli dizelerdir; **_mbstok_s** ve **_mbstok_s_l**çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır.
 
-Bu işlev parametrelerini doğrular. Bir hata koşulu oluşursa hata koşulları tablo olduğu gibi geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve geri dönüp **NULL**.
+Bu işlev, parametrelerini doğrular. Bir hata durumu oluşursa hata koşulları tabloda olduğu gibi geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve dönüş **NULL**.
 
-İlk çağrıda **strtok_s** işlevi başında sınırlayıcıları atlar ve ilk belirteci için bir işaretçi döndürür *str*, bir null karakter belirteciyle sonlandırılıyor. Daha fazla belirteçleri dışında kalan ayrılabilir *str* çağrıları için bir dizi **strtok_s**. Her çağrı **strtok_s** değiştirir *str* bu çağrı tarafından döndürülen belirteç sonra bir null karakter ekleyerek. *Bağlamı* hangi dize okuma ve dizesinde sonraki belirtece okunacak olduğu işaretçi izler. Sonraki belirtecinden okumak için *str*, çağrı **strtok_s** ile bir **NULL** değerini *str* bağımsız değişkeni ve aynı geçirin  *bağlam* parametresi. **NULL** *str* bağımsız değişkeni nedenler **strtok_s** sonraki belirteç değiştirilmiş aramak için *str*. *Sınırlayıcıları* bağımsız değişkeni, sonraki yapılan bir çağrı arasında bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
+Yapılan ilk çağrıda **strtok_s** işlev önde gelen sınırlayıcılar atlar ve ilk belirteci için bir işaretçi döndürür *str*, sonlandırıcı null karakteri ile belirteç. Daha fazla belirteçleri dışında kalan bölünebilir *str* bir dizi çağrıda tarafından **strtok_s**. Her çağrı **strtok_s** değiştirir *str* sonra o çağrı tarafından döndürülen belirteci null karakteri ekleyerek. *Bağlam* hangi dize okuyun ve dizesinde sonraki belirtece okunacak olduğu işaretçi izler. Sonraki belirteçten okunacak *str*, çağrı **strtok_s** ile bir **NULL** değerini *str* bağımsız değişken ve aynı  *bağlam* parametresi. **NULL** *str* bağımsız değişken nedenleri **strtok_s** sonraki belirtece değiştirilmiş aranacak *str*. *Sınırlayıcılar* bağımsız değişkeni, bir çağrısından sonraki herhangi bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
 
-Bu yana *bağlamı* parametresi yerini kullanılan statik arabellekleri **strtok** ve **_strtok_l**, iş parçacığı eşzamanlı olarak iki dizeleri ayrıştırma mümkündür.
+Bu yana *bağlam* parametresi olarak kullanılan statik arabellek yerini **strtok** ve **_strtok_l**, aynı anda aynı iş parçacığı, iki dizeyi ayrıştırmak mümkündür.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki için bu yerel ayara bağımlı davranış geçerli iş parçacığı yerel ayarı kullanın. Sürümleriyle **_l** yerine kullandıkları dışında sonek aynı *yerel* parametresi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli iş parçacığı yerel ayarı kullanın. Sürümlerle **_l** sonekine yerine kullandıkları dışında *yerel ayar* parametresi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -163,11 +153,11 @@ Bu yana *bağlamı* parametresi yerini kullanılan statik arabellekleri **strtok
 |**wcstok_s**,<br />**_wcstok_s_l**|\<String.h > veya \<wchar.h >|
 |**_mbstok_s**,<br />**_mbstok_s_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|\_UNICODE & \_MBCS tanımlı değil|\_Tanımlanan MBCS|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|\_UNICODE & \_MBCS tanımlı değil|\_MBCS tanımlanan|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcstok_s**|**strtok_s**|**_mbstok_s**|**wcstok_s**|
 |**_tcstok_s_l**|**_strtok_s_l**|**_mbstok_s_l**|**_wcstok_s_l**|

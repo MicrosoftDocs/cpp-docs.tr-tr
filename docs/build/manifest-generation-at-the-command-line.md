@@ -1,26 +1,16 @@
 ---
-title: Komut satırında bildirim üretme | Microsoft Docs
-ms.custom: ''
+title: Komut Satırında Bildirim Üretme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - manifests [C++]
 - manifest tool (mt.exe)
 ms.assetid: fc2ff255-82b1-4c44-af76-8405c5850292
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eaaebf02299f8f3907012ec97e467d137cbd246b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: e192122a5b9411f983683c2fa01fab2aded49ffe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505371"
 ---
 # <a name="manifest-generation-at-the-command-line"></a>Komut Satırında Bildirim Üretme
 

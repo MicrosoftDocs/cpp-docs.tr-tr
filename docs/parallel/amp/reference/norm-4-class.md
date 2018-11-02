@@ -1,10 +1,6 @@
 ---
-title: norm_4 sınıfı | Microsoft Docs
-ms.custom: ''
+title: norm_4 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_4::grab
 - amp_short_vectors/Concurrency::graphics::norm_4::agrb
@@ -271,19 +267,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_4::get_wzy
 - amp_short_vectors/Concurrency::graphics::norm_4::set_zyx
 - amp_short_vectors/Concurrency::graphics::norm_4::wy
-dev_langs:
-- C++
 ms.assetid: d628b2bf-2cdb-4dbb-95c6-cd778f5e991f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd58f8d2731b056be809e6ad5b2e8d7ecf508e17
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ec71019e64046d693aaf96adb81762bfd536ac2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424345"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677233"
 ---
 # <a name="norm4-class"></a>norm_4 Sınıfı
 

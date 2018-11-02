@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C999 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C999
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C999
-dev_langs:
-- C++
 helpviewer_keywords:
 - C999
 ms.assetid: a3a49a96-a352-4ff2-aa84-84eb6a9a81f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74c71bef10da2220d7ffc013a9043dd6c9b8a29e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 767973e3e69734c7d1f813d27e1e402ac2751cd3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530825"
 ---
 # <a name="fatal-error-c999"></a>Önemli hata C999
 

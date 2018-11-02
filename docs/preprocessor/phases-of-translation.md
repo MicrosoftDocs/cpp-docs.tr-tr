@@ -1,12 +1,6 @@
 ---
-title: Çeviri aşamaları | Microsoft Docs
-ms.custom: ''
+title: Çeviri Aşamaları
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - translation phases
 - preprocessor, translation
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - file translation [C++], compiler process
 - files [C++], translation
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b72e861b2639b8cf1e2cdf8293461cb8b1a00813
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 75fc7f7c768094d90d41840fc47effa8179556fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513005"
 ---
 # <a name="phases-of-translation"></a>Çeviri Aşamaları
 

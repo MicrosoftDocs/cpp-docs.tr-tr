@@ -1,28 +1,17 @@
 ---
-title: PTR (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: PTR (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - ptr attribute
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1f9f0fede8c5c3fd522aa7eb9dd95214062e3949
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7ed08403f32e5e4609266975c5c479a7b758fe89
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066720"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506216"
 ---
 # <a name="ptr"></a>ptr
 

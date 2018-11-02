@@ -1,27 +1,17 @@
 ---
-title: Birleşim bildirimleri | Microsoft Docs
-ms.custom: ''
+title: Birleşim Bildirimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - unions
 - union keyword [C], declarations
 - variant records
 ms.assetid: 978c6165-e0ae-4196-afa7-6d94e24f62f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b63ed026cf3dd90563bdd412107debfa6d516229
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af51f184c199cc7f93f25f95fd4ef5c613e5f017
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524789"
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
 

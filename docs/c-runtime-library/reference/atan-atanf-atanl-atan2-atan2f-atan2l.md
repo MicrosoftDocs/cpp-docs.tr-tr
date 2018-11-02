@@ -1,10 +1,6 @@
 ---
-title: atan, atanf, atanl, atan2, atan2f, atan2l | Microsoft Docs
-ms.custom: ''
+title: atan, atanf, atanl, atan2, atan2f, atan2l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - atan2f
 - atan2l
@@ -32,8 +28,6 @@ f1_keywords:
 - atanl
 - atanf
 - atan2f
-dev_langs:
-- C++
 helpviewer_keywords:
 - atan function
 - atanf function
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - trigonometric functions
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e1f8b60c25c57e3e2eb6a9a964fd80664e3aa4c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59a67b0d213a11630f551fd7582b44aab60e314f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393904"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541732"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
-Tanjantını hesaplar **x** (**atan**, **atanf**, ve **atanl**) veya arktanjantını **y** / **x** (**atan2**, **atan2f**, ve **atan2l**).
+Ark tanjantını hesaplar **x** (**atan**, **atanf**, ve **atanl**) veya ark tanjantını **y** / **x** (**atan2**, **atan2f**, ve **atan2l**).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,25 +76,25 @@ Herhangi bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**atan** arktanjantını döndürür *x* π/2 radyan için aralığı - π/2. **ATAN2** arktanjantını döndürür *y*/*x* π radyan için bir aralığı - π içinde. Varsa *x* 0 ' dır **atan** 0 döndürür. Varsa, her iki parametre **atan2** 0, 0 işlevi döndürür. Tüm sonuçlar radyan cinsinden olur.
+**atan** arktanjantını döndürür *x* π/2 radyan için aralığı - π/2. **ATAN2** arktanjantını döndürür *y*/*x* de aralık - π π radyan için. Varsa *x* 0 ' dır **atan** 0 döndürür. Varsa, her iki parametre **atan2** 0, işlev 0 döndürür. Tüm sonuçlar radyan cinsinden olur.
 
-**ATAN2** parametrelerinin her ikisini de belirtileri dönüş değeri çeyreğinde belirlemek için kullanır.
+**ATAN2** işaretlerini her iki parametre dönüş değerinin quadrant belirlemek için kullanır.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **UL**|yok|**_DOMAIN**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atan** işlevi hesaplar arktanjantını (Ters Tanjant işlevi) *x*. **ATAN2** arktanjantını hesaplar *y*/*x* (varsa *x* eşittir 0, **atan2** π/2 döndürür *y* pozitifse - π/2 IF *y* negatif veya 0 ise *y* 0'dır.)
+**Atan** işlevi hesaplar ark tanjantını (Ters Tanjant işlevi) *x*. **ATAN2** ark tanjantını hesaplar *y*/*x* (varsa *x* eşittir 0, **atan2** π/2 döndürür *y* pozitif ise - π/2 ise *y* negatif veya 0 ise *y* 0'dır.)
 
-**atan** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahip. Bilgi ve kısıtlamaları SSE2 uygulama kullanımı hakkında bkz [_set_SSE2_enable](set-sse2-enable.md).
+**atan** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. Bilgi ve SSE2 uygulamasını kullanmayla ilgili kısıtlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **atan** ve **atan2** Süren **float** veya **uzun** **çift**  bağımsız değişkenler. Bir C programı **atan** ve **atan2** her zaman **çift** bağımsız değişkenleri ve dönüş bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **atan** ve **atan2** Süren **float** veya **uzun** **çift**  bağımsız değişkenler. C programında **atan** ve **atan2** her zaman **çift** bağımsız değişkenler ve dönüş bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-------------|---------------------|-|
 |**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<Math.h >|\<cmath > veya \<math.h >|
 

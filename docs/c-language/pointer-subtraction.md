@@ -1,25 +1,15 @@
 ---
-title: İşaretçi çıkarması | Microsoft Docs
-ms.custom: ''
+title: İşaretçi Çıkarması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointer subtraction
 ms.assetid: 4d515690-088a-43f6-bb8c-57b849f7ccf7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9756861fd1204a05179ac77dfa648822ed83e5a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c978c3bf11a2c82071d78e37511ac32a951209f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079549"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468477"
 ---
 # <a name="pointer-subtraction"></a>İşaretçi Çıkarması
 

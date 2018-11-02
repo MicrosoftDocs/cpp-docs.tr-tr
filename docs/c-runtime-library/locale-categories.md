@@ -1,10 +1,6 @@
 ---
-title: Yerel ayar kategorileri | Microsoft Docs
-ms.custom: ''
+title: Yerel Ayar Kategorileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - LC_MAX
 - LC_MIN
@@ -14,8 +10,6 @@ f1_keywords:
 - LC_COLLATE
 - LC_CTYPE
 - LC_ALL
-dev_langs:
-- C++
 helpviewer_keywords:
 - LC_MIN constant
 - LC_MONETARY constant
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - LC_NUMERIC constant
 - LC_COLLATE constant
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12162e7d6eabfc60b3b4c028b990b720a502f516
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9c25e17f3047a88eda3a45782fc7da9f37b9452e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485845"
 ---
 # <a name="locale-categories"></a>Yerel Ayar Kategorileri
 

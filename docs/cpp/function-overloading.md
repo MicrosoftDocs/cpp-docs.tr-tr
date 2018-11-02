@@ -1,27 +1,17 @@
 ---
-title: İşlev aşırı yüklemesi | Microsoft Docs
-ms.custom: ''
+title: İşlev Aşırı Yüklemesi
 ms.date: 1/25/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function overloading [C++], about function overloading
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d942e2c5bca7d86e66cb579de1cbe946cb9f5f6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 47e77e1709322abaa2607677bf21c9cfe4a3e6ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580244"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 

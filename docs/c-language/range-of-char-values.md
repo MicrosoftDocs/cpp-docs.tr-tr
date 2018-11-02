@@ -1,23 +1,13 @@
 ---
-title: Char değerleri aralığı | Microsoft Docs
-ms.custom: ''
+title: char Değerleri Aralığı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 15ae9781-ec21-4333-bba8-6d2383bbf7f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b45d828cecb5908742a193c8836bc4b565a6498
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 64b8f8d27211a4067c6e17063d336888773c0a12
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500704"
 ---
 # <a name="range-of-char-values"></a>char Değerleri Aralığı
 

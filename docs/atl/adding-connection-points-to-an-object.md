@@ -1,26 +1,16 @@
 ---
-title: Bir nesneye bağlantı noktaları ekleme | Microsoft Docs
-ms.custom: ''
+title: Bir nesneye bağlantı noktaları ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - connection points [C++], adding to ATL objects
 - Implement Connection Point ATL wizard
 ms.assetid: 843531be-4a36-4db0-9d54-e029b1a72a8b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 685f1b7d24e781dbee6d67b325b059f09ca9bf4c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bf3819f96821b8794b6bd120d63798b902eb2b9e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473807"
 ---
 # <a name="adding-connection-points-to-an-object"></a>Bir nesneye bağlantı noktaları ekleme
 

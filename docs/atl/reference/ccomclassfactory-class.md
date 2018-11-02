@@ -1,30 +1,20 @@
 ---
-title: CComClassFactory sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComClassFactory sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComClassFactory
 - ATLCOM/ATL::CComClassFactory
 - ATLCOM/ATL::CComClassFactory::CreateInstance
 - ATLCOM/ATL::CComClassFactory::LockServer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComClassFactory class
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f01b333edd9dd671ce4d03176a75979e57a06bd7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 61dd67a4a34be447807799537971c19c11d09e5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062177"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575233"
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory sınıfı
 

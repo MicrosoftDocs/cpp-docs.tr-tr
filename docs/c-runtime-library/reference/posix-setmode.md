@@ -1,10 +1,6 @@
 ---
-title: setmode | Microsoft Docs
-ms.custom: ''
+title: setmode
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - setmode
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - setmode
-dev_langs:
-- C++
 helpviewer_keywords:
 - setmode function
 ms.assetid: cb959d9e-09f3-45af-8943-85f4ca0d3f5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5cfff187854b97a021b4a6d773718e102519d48
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63bdb6a2436b9c79f6c50ad289b01cf861854e0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397561"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524887"
 ---
 # <a name="setmode"></a>setmode
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_setmode](setmode.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_setmode](setmode.md) yerine.

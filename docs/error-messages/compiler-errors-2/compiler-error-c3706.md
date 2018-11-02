@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3706 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3706
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3706
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3706
 ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbebf5752a9ed42ea4af8d3a13e45c78fc1753ec
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d474db5a4d50aed7b59e6f48fb5a3e8165f10c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110516"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468632"
 ---
 # <a name="compiler-error-c3706"></a>Derleyici Hatası C3706
 

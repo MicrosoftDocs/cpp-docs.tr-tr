@@ -1,27 +1,17 @@
 ---
-title: code_seg (__declspec) | Microsoft Docs
-ms.custom: ''
+title: code_seg (__declspec)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - code_seg_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - code_seg __declspec keyword
 ms.assetid: ad3c1105-15d3-4e08-b7b9-e4bd9d7b6aa0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6dcf387283aa0d4cdb282760c4ee170a0205172d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a0b9c6dcd7ee19af59ac39a71498fe41bfc107ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068825"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506905"
 ---
 # <a name="codeseg-declspec"></a>code_seg (__declspec)
 

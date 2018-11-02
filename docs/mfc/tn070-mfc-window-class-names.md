@@ -1,28 +1,18 @@
 ---
-title: 'TN070: MFC pencere sınıfı adları | Microsoft Docs'
-ms.custom: ''
+title: 'TN070: MFC Pencere Sınıfı Adları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.classes
-dev_langs:
-- C++
 helpviewer_keywords:
 - window class names [MFC]
 - TN070 [MFC]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92dcc2509732472774a119dafb43174895247948
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d59dc052cc253c8d036de0559018065e4ba7457d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382524"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533623"
 ---
 # <a name="tn070-mfc-window-class-names"></a>TN070: MFC Pencere Sınıfı Adları
 

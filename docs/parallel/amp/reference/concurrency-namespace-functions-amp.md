@@ -1,8 +1,6 @@
 ---
-title: Eşzamanlılık ad alanı işlevleri (AMP) | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık ad alanı işlevleri (AMP)
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - amp/Concurrency::all_memory_fence
 - amp/Concurrency::atomic_compare_exchange
@@ -14,19 +12,13 @@ f1_keywords:
 - amp/Concurrency::direct3d_printf
 - amp/Concurrency::global_memory_fence
 - amp/Concurrency::tile_static_memory_fence
-dev_langs:
-- C++
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5bfb25ffeedaa11c6e610978c2d0a15cc3106d79
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 43be1fc3a5df52f6edcc05b501b1463bd5da7e6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481802"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 

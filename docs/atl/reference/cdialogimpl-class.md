@@ -1,10 +1,6 @@
 ---
-title: Cdialogımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cdialogımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CDialogImpl
 - ATLWIN/ATL::CDialogImpl
@@ -17,22 +13,16 @@ f1_keywords:
 - ATLWIN/ATL::OnFinalMessage
 - ATLWIN/ATL::DialogProc
 - ATLWIN/ATL::StartDialogProc
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 297a54b588cadc3a43e1b08ca89820807edb8ba2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3ac8037e032112e269332d2bbf9c2065ade84ded
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069847"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572114"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 

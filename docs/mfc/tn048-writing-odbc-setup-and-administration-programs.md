@@ -1,14 +1,8 @@
 ---
-title: 'TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma | Microsoft Docs'
-ms.custom: ''
+title: 'TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.odbc
-dev_langs:
-- C++
 helpviewer_keywords:
 - installing ODBC
 - ODBC, installing
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - ODBC, and MFC
 - MFC, database applications
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a70ddac1839d8967b9e9f7226a554d0b92449e5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b31ceb8bfc48decb5387d386ee8e8b64822f72ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584141"
 ---
 # <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma
 

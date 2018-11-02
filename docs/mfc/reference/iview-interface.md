@@ -1,33 +1,23 @@
 ---
-title: IView arabirimi | Microsoft Docs
-ms.custom: ''
+title: IView arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - IView
 - AFXWINFORMS/IView
 - AFXWINFORMS/IView::OnActivateView
 - AFXWINFORMS/IView::OnInitialUpdate
 - AFXWINFORMS/IView::OnUpdate
-dev_langs:
-- C++
 helpviewer_keywords:
 - views [MFC]
 - IView class [MFC]
 - views [MFC], classes
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84ed9bfb8b0c8b5ab30af07d8f0448109161df51
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7684ef034acd247355b3f572c86fcb80cb126b0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077770"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594356"
 ---
 # <a name="iview-interface"></a>IView arabirimi
 

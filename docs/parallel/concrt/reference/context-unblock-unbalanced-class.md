@@ -1,29 +1,19 @@
 ---
-title: context_unblock_unbalanced sınıfı | Microsoft Docs
-ms.custom: ''
+title: context_unblock_unbalanced Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - context_unblock_unbalanced
 - CONCRT/concurrency::context_unblock_unbalanced
 - CONCRT/concurrency::context_unblock_unbalanced::context_unblock_unbalanced
-dev_langs:
-- C++
 helpviewer_keywords:
 - context_unblock_unbalanced class
 ms.assetid: a76066c8-19dd-44fa-959a-6941ec1b0d2d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8cd35b53db37d51a9feec567fe66c53b1381b4d9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cc2ef970fa354da4abb7351cb4f1188451887552
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431339"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525937"
 ---
 # <a name="contextunblockunbalanced-class"></a>context_unblock_unbalanced Sınıfı
 

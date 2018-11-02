@@ -1,10 +1,6 @@
 ---
-title: CTreeCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTreeCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTreeCtrl
 - AFXCMN/CTreeCtrl
@@ -86,8 +82,6 @@ f1_keywords:
 - AFXCMN/CTreeCtrl::ShowInfoTip
 - AFXCMN/CTreeCtrl::SortChildren
 - AFXCMN/CTreeCtrl::SortChildrenCB
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTreeCtrl [MFC], CTreeCtrl
 - CTreeCtrl [MFC], Create
@@ -168,16 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79cc811464b4aa33ee11b480ec76c932b123f7da
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cc98a2e24fbb3eaff94e4c941986080d0bdbd7ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477954"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: C++ tamsayı sınırları | Microsoft Docs
-ms.custom: ''
+title: C++ Tamsayı Sınırları
 ms.date: 01/29/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - limits, integer
 - limits, integer constants
 - integer limits
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02a4194d69bf07d27777ad30cf9ed0e5794c04c2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 057da1ac8e4549a05d10a01cc3aead678045d9c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548297"
 ---
 # <a name="c-integer-limits"></a>C++ Tamsayı Sınırları
 

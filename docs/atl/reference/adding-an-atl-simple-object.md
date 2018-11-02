@@ -1,29 +1,19 @@
 ---
-title: ATL basit nesnesi ekleme | Microsoft Docs
-ms.custom: ''
+title: ATL basit nesnesi ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.classes.adding.atl
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding objects
 - objects [ATL]
 - ATL, simple objects
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f757602459c55b7b66e01d9512d9d4cdeb2f3946
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: df835b35bb036086382fc6adb4beed142f99be76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508313"
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL basit nesnesi ekleme
 

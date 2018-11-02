@@ -1,32 +1,22 @@
 ---
-title: __popcnt16, __popcnt, __popcnt64 | Microsoft Docs
-ms.custom: ''
+title: __popcnt16, __popcnt, __popcnt64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __popcnt64
 - __popcnt
 - __popcnt16
-dev_langs:
-- C++
 helpviewer_keywords:
 - popcnt instruction
 - __popcnt16
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a756c573b6853b12e99d56d83d8a1dc9f1ab2c68
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b40d84b919a3418d48b820e5285b523cd602dc92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421602"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538176"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 

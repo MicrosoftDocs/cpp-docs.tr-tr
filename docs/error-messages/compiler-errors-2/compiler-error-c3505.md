@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3505 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3505
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3505
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3505
 ms.assetid: ed73c99e-93a1-4f3a-bac7-ba7ed5d836e4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d6af1b96f23332b5eed82fab2c24c93e2d53dee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5730102371d00ebaf3ae05fdefb70184b58d7c18
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481785"
 ---
 # <a name="compiler-error-c3505"></a>Derleyici Hatası C3505
 

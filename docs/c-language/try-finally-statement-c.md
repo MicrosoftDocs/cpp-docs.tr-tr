@@ -1,28 +1,18 @@
 ---
-title: try-Statement (C) finally | Microsoft Docs
-ms.custom: ''
+title: try-finally Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - try-finally keyword [C]
 - __finally keyword [C], try-finally statement syntax
 - __finally keyword [C]
 - structured exception handling, try-finally
 ms.assetid: 514400c1-c322-4bf3-9e48-3047240b8a82
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2273d67ef2e187d47ea3df066620ae7a3895ec4b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ada38f80ff16f91a676803134854bca0b0dd4f14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060960"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523961"
 ---
 # <a name="try-finally-statement-c"></a>try-finally Deyimi (C)
 

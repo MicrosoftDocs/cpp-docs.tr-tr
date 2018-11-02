@@ -1,12 +1,6 @@
 ---
-title: C bit düzeyinde işleçler | Microsoft Docs
-ms.custom: ''
+title: C Bit Düzeyinde İşleçler
 ms.date: 01/29/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - '| operator, bitwise operators'
 - bitwise operators, Visual C
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - ^ operator
 - '& operator, bitwise operators'
 ms.assetid: e22127b1-9a2d-4876-b01d-c8f72cec3317
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 26b313aa3e1dec6d401ed27e1a4f8ae0bd870eaa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2133aaa5faa0f4bef7391fb5c0e7e0eb51fd4e69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118524"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543379"
 ---
 # <a name="c-bitwise-operators"></a>C Bit Düzeyinde İşleçler
 

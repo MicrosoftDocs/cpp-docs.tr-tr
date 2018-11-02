@@ -1,23 +1,13 @@
 ---
-title: Tanımlayıcıların davranışı | Microsoft Docs
-ms.custom: ''
+title: Tanımlayıcıların Davranışı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 2ce0890f-9f04-47d8-9c77-187627576b94
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6c51f683bc7a0478f6dabd88c9a27de82f1cf6ce
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fb15710377e064f9a15e5119cc229da8d9722cb3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028421"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519112"
 ---
 # <a name="behavior-of-identifiers"></a>Tanımlayıcıların Davranışı
 

@@ -1,23 +1,13 @@
 ---
-title: A.18 yönergeler için iç içe geçmiş | Microsoft Docs
-ms.custom: ''
+title: A.18   Yönergeler için İç İçe Konulan
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: ae2b2e0b-ec94-43f8-928c-6d621b51f0df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4a4e8a984a111d409e07d55c0c1f6e6adbed91e4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dbebcd88489c6fdb00011531e7b74b27ee154b4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554303"
 ---
 # <a name="a18---nested-for-directives"></a>A.18   Yönergeler için İç İçe Konulan
 

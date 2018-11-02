@@ -1,28 +1,18 @@
 ---
-title: Otomasyon istemcileri | Microsoft Docs
-ms.custom: ''
+title: Otomasyon İstemcileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - clients, Automation
 - Automation clients
 - type libraries, Automation clients
 - clients
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdc9b47bbd7b639850a13a77b81ef4802a301ba7
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 30511ec6c9f0e00f4cec51e00f85ea5e32453327
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890068"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465500"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 

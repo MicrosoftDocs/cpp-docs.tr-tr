@@ -1,25 +1,15 @@
 ---
-title: Programı Önişlemde yürütme | Microsoft Docs
-ms.custom: ''
+title: Programı Önişlemde Yürütme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - program execution [C++]
 ms.assetid: 5ecf123a-20e5-40cd-b8d8-dd5a9fdd4b24
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2b0571e67e7c5d24cf31dce6fce548735cad966
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a78c9ddc498383d460e617bc26f4e70eb7275eec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721467"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577430"
 ---
 # <a name="executing-a-program-in-preprocessing"></a>Programı Önişlemde Yürütme
 

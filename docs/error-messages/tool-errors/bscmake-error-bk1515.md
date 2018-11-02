@@ -1,27 +1,17 @@
 ---
-title: BSCMAKE hatası BK1515 | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Hatası BK1515
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - BK1515
-dev_langs:
-- C++
 helpviewer_keywords:
 - BK1515
 ms.assetid: 4cf2aedb-10c4-4ae8-abe6-c681fd4d617d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e52447d7e4e0485b4725ef582384125c138a1a48
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 047840a49242a889fbf45378dfa8cac4faf8140e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508105"
 ---
 # <a name="bscmake-error-bk1515"></a>BSCMAKE Hatası BK1515
 

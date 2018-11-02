@@ -1,27 +1,17 @@
 ---
-title: '@WordSize | Microsoft Docs'
-ms.custom: ''
+title: '@WordSize'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@WordSize'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@WordSize symbol'
 ms.assetid: a4fb3bf1-4f87-4306-ad4d-27d999ce2b3a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ed26b168aafb2c4ecc6b8652b5b3ccc8d5e4225
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b1ce903f4a37707a8563b4f1f0b3e62eaa91a787
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541927"
 ---
 # <a name="wordsize"></a>@WordSize
 

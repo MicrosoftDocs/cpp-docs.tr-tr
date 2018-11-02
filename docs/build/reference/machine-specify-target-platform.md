@@ -1,15 +1,9 @@
 ---
-title: -MACHINE (hedef platformu belirt) | Microsoft Docs
-ms.custom: ''
+title: /MACHINE (Hedef Platformu Belirt)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.TargetMachine
 - /machine
-dev_langs:
-- C++
 helpviewer_keywords:
 - mapfiles, creating linker
 - target platform
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - /MACHINE linker option
 - MACHINE linker option
 ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e159fe15b0aed441b1a96047a3ffb035077d6266
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 872370269e9ab8acaaa8cafe7fb47b1121bcbb97
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708623"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546449"
 ---
 # <a name="machine-specify-target-platform"></a>/MACHINE (Hedef Platformu Belirt)
 
@@ -52,7 +42,7 @@ Genellikle, / MACHINE seçeneği belirtmeniz gerekmez. BAĞLANTI .obj dosyaları
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>.
+1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

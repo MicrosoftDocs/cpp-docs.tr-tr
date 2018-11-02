@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3239 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3239
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3239
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3239
 ms.assetid: 22a518b7-020f-4f3c-9963-a094667fd1ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f1d3c405e7a74dbade84b0ecd25284c4d6d8f27
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ec5a1e3a968c9342ba6d386ef1e2be133e45b62c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093863"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499937"
 ---
 # <a name="compiler-error-c3239"></a>Derleyici Hatası C3239
 

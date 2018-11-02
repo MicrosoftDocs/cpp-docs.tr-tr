@@ -1,27 +1,17 @@
 ---
-title: Görüntü listesi türleri | Microsoft Docs
-ms.custom: ''
+title: Görüntü Listesi Türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - lists [MFC], image
 - image lists [MFC], types of
 - CImageList class [MFC], types
 ms.assetid: bee5e7c3-78f5-4037-a136-9c50d67cdee5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bea24d487170ea4cac470f2244340f6b570d1ec
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5f5843f25faed90c195f7f2c605027858f089fb6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390480"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498897"
 ---
 # <a name="types-of-image-lists"></a>Görüntü Listesi Türleri
 

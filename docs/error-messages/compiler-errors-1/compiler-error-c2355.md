@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2355 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2355
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2355
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2355
 ms.assetid: 0a947881-d61f-4f98-8409-32140f39500b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 456049c60ce39fce3cdbf04512f306027e30db25
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 80871a73a7c3b4ad04b475539015f85d21ae88b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035194"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611291"
 ---
 # <a name="compiler-error-c2355"></a>Derleyici Hatası C2355
 

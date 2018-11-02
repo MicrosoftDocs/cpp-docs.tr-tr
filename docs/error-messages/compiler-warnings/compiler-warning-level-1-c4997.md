@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4997 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4997
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4997
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4997
 ms.assetid: d39678fd-0c1a-4104-8a45-9e3f20de0407
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab199f4dd884c1a2371704a836546bdb43aabed6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 298653e7ebed272db1baa11514ac5bff27944b3c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564183"
 ---
 # <a name="compiler-warning-level-1-c4997"></a>Derleyici Uyarısı (düzey 1) C4997
 

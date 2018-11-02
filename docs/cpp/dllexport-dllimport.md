@@ -1,31 +1,21 @@
 ---
-title: dllexport, dllimport | Microsoft Docs
-ms.custom: ''
+title: dllexport, dllimport
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - dllimport_cpp
 - dllexport_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - dllexport __declspec keyword
 - __declspec keyword [C++], dllexport
 - dllimport __declspec keyword
 - __declspec keyword [C++], dllimport
 ms.assetid: ff95b645-ef55-4e72-b848-df44657b3208
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75a2e31e62d9899c2e287c5fca7ad5dfdcc67311
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2ae284172828ed63b6499475df108c28aecb32ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525963"
 ---
 # <a name="dllexport-dllimport"></a>dllexport, dllimport
 

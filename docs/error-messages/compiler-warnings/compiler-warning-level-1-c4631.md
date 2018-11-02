@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4631 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4631
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4631
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4631
 ms.assetid: d8636ff6-29a7-4fec-b9a6-e201d121c3ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c20493005933570df97a8e03bab7acc8bd4ae28f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 14fa0e99364b1672d398aad3f3dad557543b505b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053810"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552808"
 ---
 # <a name="compiler-warning-level-1-c4631"></a>Derleyici Uyarısı (düzey 1) C4631
 

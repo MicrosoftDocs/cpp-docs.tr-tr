@@ -1,28 +1,17 @@
 ---
-title: Kaynak (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Kaynak (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.source
-dev_langs:
-- C++
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f7bc10b89df58dc72c35855fea43c2a0387f9efd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 59ed66acbbd6ef876e6052767dc5a5243d4b8dd6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476537"
 ---
 # <a name="source-c"></a>kaynak (C++)
 

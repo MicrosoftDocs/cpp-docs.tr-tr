@@ -1,29 +1,19 @@
 ---
-title: geçersiz kılma (C++) | Microsoft Docs
-ms.custom: ''
+title: void (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - void_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - void keyword [C++]
 - functions [C++], void
 - pointers, void
 ms.assetid: d203edba-38e6-4056-8b89-011437351057
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1aab4a8c18424fdbd52ac24444dd35a1660a714b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cb4be000c3c41862d5b4df766d21ae1cddeb6838
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114351"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594122"
 ---
 # <a name="void-c"></a>void (C++)
 

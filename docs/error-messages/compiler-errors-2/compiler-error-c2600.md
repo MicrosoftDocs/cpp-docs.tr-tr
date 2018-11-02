@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2600 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2600
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2600
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2600
 ms.assetid: cce11943-ea01-4bee-a7b0-b67d24ec6493
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c1846cefa78c8df13e8ca3c1a7fbc142ba2bf6ad
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4d9e94790c3f4b2fa0aaf36894f0b12c7134a9ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022090"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500405"
 ---
 # <a name="compiler-error-c2600"></a>Derleyici Hatası C2600
 

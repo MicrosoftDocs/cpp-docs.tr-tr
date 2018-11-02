@@ -1,28 +1,18 @@
 ---
-title: İleti eşlemelerinin bulunduğu yer | Microsoft Docs
-ms.custom: ''
+title: İleti Eşlemelerinin Bulunduğu Yer
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros, message map
 - locating message maps
 - message classes [MFC], finding
 - message-map macros
 ms.assetid: bf59fbc8-b222-42d3-b5d3-0a79aa3cb923
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81958eda508a3e0b4b93ac0d169f3aa3bfece2a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ab21369cecfa977a8397e7e2a7e68394e86e6927
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434277"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533477"
 ---
 # <a name="where-to-find-message-maps"></a>İleti Eşlemelerinin Bulunduğu Yer
 

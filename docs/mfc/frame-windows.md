@@ -1,12 +1,6 @@
 ---
-title: Çerçeve Windows | Microsoft Docs
-ms.custom: ''
+title: Çerçeve Pencereleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - document frame windows [MFC]
 - windows [MFC], MDI
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 895476da05d4480741577a04749df4be43016006
-ms.sourcegitcommit: e4a690bf33b44432179de0bc537e26616d13c553
+ms.openlocfilehash: 09db7bab392778297f17c14f7bb807f91af4d896
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619940"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 

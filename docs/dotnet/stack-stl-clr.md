@@ -1,9 +1,6 @@
 ---
-title: Yığın (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: yığın (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::stack
@@ -32,8 +29,6 @@ f1_keywords:
 - cliext::stack::top
 - cliext::stack::top_item
 - cliext::stack::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - <stack> header [STL/CLR]
 - <cliext/stack> header [STL/CLR]
@@ -64,17 +59,12 @@ helpviewer_keywords:
 - top_item member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 9e1138ff947599b3ece75224ae2120c6f4775bab
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ec3863796f7c49c155af61576c15c1ca8a9d5109
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513886"
 ---
 # <a name="stack-stlclr"></a>yığın (STL/CLR)
 

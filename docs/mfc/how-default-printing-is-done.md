@@ -1,27 +1,17 @@
 ---
-title: Varsayılan yazdırmayı yapma | Microsoft Docs
-ms.custom: ''
+title: Varsayılan Yazdırmayı Yapma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - default printing
 - printing [MFC], default
 - defaults, printing
 ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f3616ba3fac4d5ed8ccca6b71d6fc04a2d5c106
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8fb47aadd2389438f8d2f48a26cd3aea8d871d81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399905"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518982"
 ---
 # <a name="how-default-printing-is-done"></a>Varsayılan Yazdırmayı Yapma
 

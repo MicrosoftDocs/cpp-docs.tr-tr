@@ -1,28 +1,18 @@
 ---
-title: is_void sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_void Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_void
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_void class
 - is_void
 ms.assetid: 99b0de3b-1b38-4949-b053-080e5363174e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3690eab417f4c817e571026e501f36a19671da2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 1da13e986121d043bc91541ef01b15b7c9c9f8c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100995"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500652"
 ---
 # <a name="isvoid-class"></a>is_void Sınıfı
 

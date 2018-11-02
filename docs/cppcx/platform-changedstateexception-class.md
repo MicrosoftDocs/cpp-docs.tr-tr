@@ -1,27 +1,19 @@
 ---
-title: Platform::ChangedStateException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::ChangedStateException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::ChangedStateException
 - VCCORLIB/Platform::ChangedStateException::ChangedStateException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::ChangedStateException
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fa22457626892e1ebbf02d6859577b2795f7d04
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 749e242db37944f0c4dcbfb785028b01a0604f14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105269"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581685"
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException sınıfı
 

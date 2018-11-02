@@ -1,18 +1,12 @@
 ---
-title: -Yc (önceden derlenmiş üst bilgi dosyası oluştur) | Microsoft Docs
-ms.custom: ''
+title: /Yc (Önceden Derlenmiş Üst Bilgi Dosyası Oluştur)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UsePrecompiledHeader
 - /yc
 - VC.Project.VCCLWCECompilerTool.PrecompiledHeaderThrough
 - VC.Project.VCCLWCECompilerTool.UsePrecompiledHeader
 - VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough
-dev_langs:
-- C++
 helpviewer_keywords:
 - precompiled header files, creating
 - PCH files, creating
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - /Yc compiler option [C++]
 - Yc compiler option [C++]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37a81eb21065ef67ef6d0b6ee7cdc6724c0a517b
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: bda384152962bc59ab37b1aae138091aa6f4514c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029521"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536849"
 ---
 # <a name="yc-create-precompiled-header-file"></a>/Yc (Önceden Derlenmiş Üst Bilgi Dosyası Oluştur)
 

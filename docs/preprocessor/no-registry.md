@@ -1,27 +1,17 @@
 ---
-title: no_registry | Microsoft Docs
-ms.custom: ''
+title: no_registry
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - no_registry
-dev_langs:
-- C++
 helpviewer_keywords:
 - no_registry attribute
 ms.assetid: d30de4e2-551c-428c-98fd-951330d578d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b5a3089f71deb4e75aa50b634de84516575d1d02
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: bd101f5ca1776518ff4c5092da99134110bbb0b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49807750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503031"
 ---
 # <a name="noregistry"></a>no_registry
 

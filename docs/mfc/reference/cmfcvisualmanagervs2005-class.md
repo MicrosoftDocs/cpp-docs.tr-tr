@@ -1,10 +1,6 @@
 ---
-title: CMFCVisualManagerVS2005 sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCVisualManagerVS2005 sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerVS2005
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillHighlightedArea
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillMiniFrameCaption
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnUpdateSystemColors
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], GetDockingTabsBordersSize
 - CMFCVisualManagerVS2005 [MFC], GetMDITabsBordersSize
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], OnFillMiniFrameCaption
 - CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors
 ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de174e976a2aacfe1402ad47f5eea31f13a2f96e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0b89757380aa50af5092979c3824d3e15f29ca2a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526829"
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 sınıfı
 

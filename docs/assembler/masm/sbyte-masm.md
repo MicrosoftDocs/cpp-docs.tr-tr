@@ -1,27 +1,17 @@
 ---
-title: SBYTE (MASM) | Microsoft Docs
-ms.custom: ''
+title: SBYTE (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - sbyte
-dev_langs:
-- C++
 helpviewer_keywords:
 - SBYTE directive
 ms.assetid: ae9323cc-4ed5-45fa-9cd6-c241868e4cfd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24703e88c63c04b7f0e3681744e5409622a83078
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e95da5c9567483597112bfde686fcfe451b67eb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692005"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531911"
 ---
 # <a name="sbyte-masm"></a>SBYTE (MASM)
 

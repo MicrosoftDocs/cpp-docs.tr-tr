@@ -1,12 +1,6 @@
 ---
-title: DLL'den dışarı aktarma | Microsoft Docs
-ms.custom: ''
+title: DLL'den Dışarı Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - exporting DLLs [C++], about exporting from DLLs
 - exporting functions [C++], DLLs (exporting from)
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - functions [C++], exporting
 - exports table [C++]
 ms.assetid: a08f86c4-5996-460b-ae54-da2b764045f0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1beb36b76c54c585505f4d92b33a275e063318e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f932ba2d9b229d236270eb664ac1291725471706
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707986"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493827"
 ---
 # <a name="exporting-from-a-dll"></a>DLL'den Dışarı Aktarma
 

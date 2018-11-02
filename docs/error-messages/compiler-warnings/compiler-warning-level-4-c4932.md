@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4932 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4932
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4932
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4932
 ms.assetid: 0b8d88cc-21f6-45cb-a9f5-1795b7db0dfa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c9143406fc4b52d50b5dc68215fa796f5100fb7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: afeb27562c995bea38e9858c7ba3b279a98655cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515030"
 ---
 # <a name="compiler-warning-level-4-c4932"></a>Derleyici Uyarısı (düzey 4) C4932
 

@@ -1,10 +1,6 @@
 ---
-title: _memccpy | Microsoft Docs
-ms.custom: ''
+title: _memccpy
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _memccpy
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _memccpy
-dev_langs:
-- C++
 helpviewer_keywords:
 - _memccpy function
 - memccpy function
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6addc369de344b40a616b2ee1efbe840e98cc6d4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5cd037974d8580b6ee90b1af736e8f2c6897fe8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537403"
 ---
 # <a name="memccpy"></a>_memccpy
 

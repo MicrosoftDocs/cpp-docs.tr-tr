@@ -1,10 +1,6 @@
 ---
-title: '&lt;atomik&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;atomic&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <atomic>
 - atomic/std::atomic_int_least32_t
@@ -51,19 +47,13 @@ f1_keywords:
 - atomic/std::atomic_int8_t
 - atomic/std::atomic_int64_t
 - atomic/std::atomic_uint_least64_t
-dev_langs:
-- C++
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 54ea69a53204de2d304340ed042b3ba028dd404c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e2146c7424d4903523372ad54b0cd2eece525cbe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966647"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600492"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 

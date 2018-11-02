@@ -1,28 +1,18 @@
 ---
-title: Idochostuıhandlerdispatch arabirimi | Microsoft Docs
-ms.custom: ''
+title: Idochostuıhandlerdispatch arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IDocHostUIHandlerDispatch
 - atlbase/ATL::IDocHostUIHandlerDispatch
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 58029305ead376217b589c6dd05c1dc660cd5749
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5bf405f66bdef54f354f9e6c230207d2933ee352
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758650"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483644"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>Idochostuıhandlerdispatch arabirimi
 

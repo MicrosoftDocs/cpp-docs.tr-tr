@@ -1,26 +1,16 @@
 ---
-title: -kernel (çekirdek oluşturma modu ikili) | Microsoft Docs
-ms.custom: ''
+title: /kernel (Çekirdek Modu İkilisi Oluştur)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /kernel
 - /kernel-
-dev_langs:
-- C++
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02c5d8cff2d57a9dc8bfac31c4806a976d58859d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0df133922af90a91d5c1ae1ad3caebe11d854b8f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509663"
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel (Çekirdek Modu İkilisi Oluştur)
 

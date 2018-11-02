@@ -1,27 +1,16 @@
 ---
-title: Önceden tanımlanmış sembol kimlikleri | Microsoft Docs
-ms.custom: ''
+title: Önceden Tanımlanmış Sembol Kimlikleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - symbols [C++], predefined IDs
 - predefined symbol IDs
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a41df160f8b5c6fbfbe120902e6bbd398729db82
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: cb2f80315e0480c3fcb73092123cad88712dff05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477304"
 ---
 # <a name="predefined-symbol-ids"></a>Önceden Tanımlanmış Sembol Kimlikleri
 

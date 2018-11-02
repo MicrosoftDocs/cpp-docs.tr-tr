@@ -1,10 +1,6 @@
 ---
-title: _lsearch | Microsoft Docs
-ms.custom: ''
+title: _lsearch
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lsearch
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _lsearch
 - lsearch
-dev_langs:
-- C++
 helpviewer_keywords:
 - _lsearch function
 - values, searching for
@@ -34,20 +28,16 @@ helpviewer_keywords:
 - searching, linear
 - lsearch function
 ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2aaf6626b2f7005181640f77026b6924c39cd325
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 340e8ac382972b15acc52013d5d6a51352db969c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451305"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532822"
 ---
 # <a name="lsearch"></a>_lsearch
 
-Bir değer için doğrusal arama yapar; listenin sonuna ekler bulunamazsa. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_lsearch_s](lsearch-s.md).
+Bir değer için doğrusal bir arama gerçekleştirir; bulunan değilse listesinin sonuna ekler. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [_lsearch_s](lsearch-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,28 +57,28 @@ void *_lsearch(
 Aranacak nesne.
 
 *base*<br/>
-Aranacak dizi tabanı işaretçi.
+Temel arama yapılacak dizinin işaretçisi.
 
 *Sayı*<br/>
 Öğe sayısı.
 
 *Genişlik*<br/>
-Her dizi öğesi genişliği.
+Her dizi öğe genişliği.
 
 *Karşılaştırma*<br/>
-İşaretçi karşılaştırması yordama. İlk parametre anahtar arama için bir işaretçidir. İkinci parametre anahtarla karşılaştırılması gereken bir dizi öğesine bir işaretçidir.
+Karşılaştırma yordamı işaretçisi. İlk parametre, arama anahtarı için bir işaretçidir. İkinci parametre, anahtarı ile karşılaştırılacak bir dizi öğesinin işaretçisidir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa, **_lsearch** dizisi öğesine bir işaretçi döndüren *temel* eşleşen *anahtar*. Anahtar bulunamazsa **_lsearch** dizinin sonuna en yeni eklenen öğesine bir işaretçi döndürür.
+Anahtar bulunursa **_lsearch** dizisi öğeye bir işaretçi döndürür *temel* eşleşen *anahtar*. Anahtar bulunamazsa **_lsearch** dizinin sonuna yeni eklenen öğeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lsearch** işlevi gerçekleştiren değeri için doğrusal arama *anahtar* dizisindeki *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch**, **_lsearch** sıralanacak dizi gerektirmez. Varsa *anahtar* bulunamadı, **_lsearch** artırır ve dizinin sonuna ekler *numarası*.
+**_Lsearch** işlevi, doğrusal bir arama değeri gerçekleştirir *anahtarı* bir dizide *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch**, **_lsearch** sıralanacak dizi gerektirmez. Varsa *anahtarı* bulunamazsa **_lsearch** artırır ve dizi sonuna ekler *numarası*.
 
-*Karşılaştırmak* bağımsız değişkeni, iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndürür ve kullanıcı tarafından sağlanan bir yordama bir işaretçidir. **_lsearch** çağrıları *karşılaştırmak* işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında rutin bir veya birden çok kez. *Karşılaştırma* gerekir ve öğeleri karşılaştırma ya da dönüş sıfır olmayan (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı olduğu anlamına gelir).
+*Karşılaştırma* bağımsız kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunların belirten bir değeri döndüren bir yordam işaretçidir. **_lsearch** çağrıları *karşılaştırma* işaretçileri iki dizi öğelerine her çağrıda geçirme, arama sırasında rutin bir veya daha fazla kez. *Karşılaştırma* gerekir ve öğeleri karşılaştırma ya da dönüş sıfır olmayan (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı olduğu anlamına gelir).
 
-Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* olan **NULL**ve *numarası* sıfır olmayan, olduğundan veya *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. Varsa *karşılaştırma*, *anahtarı* veya *numarası* olduğu **NULL**, veya *temel* olduğu **NULL**ve *numarası* sıfır değilse, ya da Eğer *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -96,7 +86,7 @@ Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya 
 |-------------|---------------------|
 |**_lsearch**|\<Search.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3203 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3203
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3203
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3203
 ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae0707bc56a812af77d30ac9dac8e945ee5e2aa6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 65b7e1d8f03b5e59bd21091531bc9d21472e4ae4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535193"
 ---
 # <a name="compiler-error-c3203"></a>Derleyici Hatası C3203
 

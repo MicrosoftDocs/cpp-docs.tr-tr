@@ -1,30 +1,20 @@
 ---
-title: Depolama sınıfları (C++) | Microsoft Docs
-ms.custom: ''
+title: Depolama sınıfları (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - thread_local_cpp
 - external_cpp
 - static_cpp
 - register_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 659b76a640a0dfaee75179f135fee9d1eeb5ba02
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 31f9ba4e16fa1216db4fb66c7b7faeca333f2c43
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520334"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)
 

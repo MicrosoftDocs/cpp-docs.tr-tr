@@ -1,25 +1,15 @@
 ---
-title: noexcept (C++) | Microsoft Docs
-ms.custom: ''
+title: noexcept (C++)
 ms.date: 01/12/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - noexcept_cpp
-dev_langs:
-- C++
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 100be1808a9a45079dba1b6cee805b3f3e6dc534
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c314b554abb6c10e62b143f554777af50267e4e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079550"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620538"
 ---
 # <a name="noexcept-c"></a>noexcept (C++)
 

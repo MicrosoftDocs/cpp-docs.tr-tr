@@ -1,10 +1,6 @@
 ---
-title: array_view sınıfı | Microsoft Docs
-ms.custom: ''
+title: array_view Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - array_view
 - AMP/array_view
@@ -27,21 +23,15 @@ f1_keywords:
 - AMP/Concurrency::array_view::extent
 - AMP/Concurrency::array_view::source_accelerator_view
 - AMP/Concurrency::array_view::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 690e612201d0d3614b47c8baf7b5c46cb29d6140
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd13fbef1b335b6a2fde1f16a59ddf11d489cdde
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063048"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501705"
 ---
 # <a name="arrayview-class"></a>array_view Sınıfı
 

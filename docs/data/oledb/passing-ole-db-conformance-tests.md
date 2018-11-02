@@ -1,12 +1,6 @@
 ---
-title: OLE DB uygunluk testlerini geçirme | Microsoft Docs
-ms.custom: ''
+title: OLE DB Uygunluk Testlerini Geçme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - testing, OLE DB providers
 - testing providers
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - conformance testing [OLE DB]
 - OLE DB providers, testing
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 2be281252bc9166473eeb5d0e57a509941ad3673
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f7c5435003866e2c3490bd07e28ec10eca0ec0cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057809"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491721"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB Uygunluk Testlerini Geçme
 

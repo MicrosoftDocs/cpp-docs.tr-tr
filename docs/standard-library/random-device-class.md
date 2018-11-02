@@ -1,18 +1,12 @@
 ---
-title: random_device sınıfı | Microsoft Docs
-ms.custom: ''
+title: random_device Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::random_device
 - random/std::random_device::min
 - random/std::random_device::max
 - random/std::random_device::entropy
 - random/std::random_device::operator()
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::random_device [C++]
 - std::random_device [C++], min
@@ -20,20 +14,16 @@ helpviewer_keywords:
 - std::random_device [C++], entropy
 - std::random_device [C++], entropy
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ac22e146ac305be92d0b4be214465e64e8b6873
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 783b8f587094c6d603cc02f41b516ebd7b1e9a08
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856117"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580654"
 ---
 # <a name="randomdevice-class"></a>random_device Sınıfı
 
-Dış bir aygıttan rastgele bir sıra oluşturur.
+Harici bir CİHAZDAN rastgele bir sıra üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,22 +53,22 @@ public:
 
 |||
 |-|-|
-|[random_device](#random_device)|[Dağınık](#entropy)|
+|[random_device](#random_device)|[entropi](#entropy)|
 |[random_device::operator()](#op_call)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı rastgele sayı kaynağı açıklar ve izin verilen ancak belirleyici olmayan veya şifreleme açısından güvenli olması için ISO C++ Standart tarafından gerekli değildir. Visual Studio'da üretilen değerler belirleyici olmayan ve şifreleme yoluyla güvenli, uygulama ancak çalışan motorları ve altyapısı bağdaştırıcıları oluşturulan oluşturucuları daha yavaş (gibi [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md), yüksek kaliteli ve hızlı motoru tercih çoğu uygulamalar için).
+Sınıfı rastgele sayıdan oluşan bir kaynak açıklar ve izin verilen ancak belirleyici olmayan veya şifreleme bakımından güvenli olacak şekilde ISO C++ standardı tarafından gerekli değildir. Visual Studio'da oluşturulan değerler belirleyici ve şifreleme yoluyla güvenli, uygulama ancak çalışan gelen altyapıları ve altyapısı bağdaştırıcıları oluşturulan oluşturucuları daha yavaş (gibi [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md), yüksek kaliteli ve uygulamalarının çoğu için tercih ettiğiniz hızlı altyapısı).
 
-`random_device` sonuçları hep kapalı aralığında dağıtılmış [ `0, 2` <sup>32</sup>).
+`random_device` sonuçları kapalı aralığında eşit dağıtılır [ `0, 2` <sup>32</sup>).
 
 `random_device` Engelleyici olmayan bir çağrıda neden garanti edilmez.
 
-Genellikle, `random_device` altyapıları veya altyapısı bağdaştırıcıları ile oluşturulmuş diğer üreticiler oluşturmak için kullanılır. Daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+Genellikle, `random_device` altyapıları veya altyapısı bağdaştırıcılar ile oluşturulan diğer oluşturucuları sağlamak için kullanılır. Daha fazla bilgi için [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod bu sınıf ve örnek sonuçları temel işlevselliğini göstermektedir. Belirleyici olmayan yapısı nedeniyle `random_device`, gösterilen rastgele değerler **çıkış** bölüm sonuçlarınızı eşleşmez. Normal ve beklenen budur.
+Aşağıdaki kod, bu sınıf ve örnek sonuçları temel işlevselliğini gösterir. Belirleyici niteliği nedeniyle `random_device`, gösterilen rastgele değerler **çıkış** bölüm sonuçlarınızı eşleşmez. Normal ve beklenen budur.
 
 ```cpp
 // random_device_engine.cpp
@@ -110,7 +100,7 @@ a random value == 3633694716
 a random value == 213725214
 ```
 
-Bu, simplistic ve genel kullanım örneğinin bu oluşturucunun temsilcisi örneğidir. Daha fazla temsili bir kod örneği için bkz [ \<rastgele >](../standard-library/random.md).
+Bu örnekte alıyormuş ve genel kullanım örneği bu oluşturucunun temsili. Daha fazla temsili bir kod örneği için bkz [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -128,11 +118,11 @@ random_device(const std::string& = "");
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu üreteci, dize parametresi yoksayılıyor gerektiğinde başlatır. Türetilen uygulama tanımlı bir türde bir değer oluşturur [özel durum](../standard-library/exception-class.md) varsa `random_device` başlatılamadı.
+Oluşturucu, dize parametresi yok sayılıyor, gerektiği şekilde üreticiyi başlatır. Öğesinden türetilen uygulama tanımlı bir türde bir değer atar [özel durum](../standard-library/exception-class.md) varsa `random_device` başlatılamadı.
 
 ## <a name="entropy"></a>  random_device::Entropy
 
-Kaynak rastgele tahmin eder.
+Kaynak rasgeleliğini tahmin eder.
 
 ```cpp
 double entropy() const noexcept;
@@ -140,11 +130,11 @@ double entropy() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevini kaynak rastgele tahmini bit cinsinden ölçülen döndürür.
+Üye işlevi bit cinsinden ölçülen kaynağın rastgeleliğinin bir tahminini döndürür.
 
 ## <a name="op_call"></a>  random_device::operator()
 
-Rastgele bir değeri döndürür.
+Rastgele bir değer döndürür.
 
 ```cpp
 result_type operator()();
@@ -152,7 +142,7 @@ result_type operator()();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapalı zaman aralığını hep dağıtılmış değerleri döndürür [ `min, max`] üye işlevleri tarafından belirlenen `min()` ve `max()`. Türetilen uygulama tanımlı bir türde bir değer oluşturur [özel durum](../standard-library/exception-class.md) rastgele bir sayı alınamadığından durumunda.
+Kapalı aralık içerisinde birörnek dağıtılmış değerleri döndürür [ `min, max`] üye işlevleri tarafından belirlenen şekilde `min()` ve `max()`. Öğesinden türetilen uygulama tanımlı bir türde bir değer atar [özel durum](../standard-library/exception-class.md) , rastgele bir sayı sağlanamadı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

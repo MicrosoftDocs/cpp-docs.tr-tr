@@ -1,27 +1,19 @@
 ---
-title: Platform::NullReferenceException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::NullReferenceException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::NullReferenceException
 - VCCORLIB/Platform::NullReferenceException::NullReferenceException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::NullReferenceException
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50f85d1c246c52121c1cadbe68e1df944130a2a3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a79be4aa9dfcb91ead80da0f41c73378f294299f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103982"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464612"
 ---
 # <a name="platformnullreferenceexception-class"></a>Platform::NullReferenceException sınıfı
 

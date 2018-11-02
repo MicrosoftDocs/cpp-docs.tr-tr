@@ -1,27 +1,17 @@
 ---
-title: ELSEIF (MASM) | Microsoft Docs
-ms.custom: ''
+title: ELSEIF (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - ElseIf
-dev_langs:
-- C++
 helpviewer_keywords:
 - ELSEIF directive
 ms.assetid: 20a685d6-836e-4e64-902e-4f3daf2e51c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bff1d8f22471de7dda89be66bdcacf52a2bf8206
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1971c71af67f7e8620da3c3371b619b33fc8830e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688892"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590404"
 ---
 # <a name="elseif-masm"></a>ELSEIF (MASM)
 

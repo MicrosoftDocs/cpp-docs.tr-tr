@@ -1,27 +1,17 @@
 ---
-title: _com_ptr_t sınıfı | Microsoft Docs
-ms.custom: ''
+title: _com_ptr_t Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_ptr_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - _com_ptr_t class
 ms.assetid: 3753a8a0-03d4-4cfd-8a9a-74872ea53971
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02e3c0833423f2e9eb8eebfe2c15a46466ef3c58
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce19dbc5f55460bb4bdbdee17f4fbbbcc8c6fd60
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547127"
 ---
 # <a name="comptrt-class"></a>_com_ptr_t Sınıfı
 

@@ -1,29 +1,19 @@
 ---
-title: invalid_operation sınıfı | Microsoft Docs
-ms.custom: ''
+title: invalid_operation Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - invalid_operation
 - CONCRT/concurrency::invalid_operation
 - CONCRT/concurrency::invalid_operation::invalid_operation
-dev_langs:
-- C++
 helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e903a3d5e269a273a191fd733ff8813b75b53a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 594c09ebedd2be55b288a7f31d55930244d80959
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416920"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473976"
 ---
 # <a name="invalidoperation-class"></a>invalid_operation Sınıfı
 

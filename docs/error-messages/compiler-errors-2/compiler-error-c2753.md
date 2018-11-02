@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2753 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2753
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2753
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2753
 ms.assetid: 92bfeeac-524a-4a8e-9a4f-fb8269055826
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 722176744dc614e54d7b25ffd75be679ef9e63dc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e13c45cec99e60d8aec7dcc3db8e5a4813ea7de9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509415"
 ---
 # <a name="compiler-error-c2753"></a>Derleyici Hatası C2753
 

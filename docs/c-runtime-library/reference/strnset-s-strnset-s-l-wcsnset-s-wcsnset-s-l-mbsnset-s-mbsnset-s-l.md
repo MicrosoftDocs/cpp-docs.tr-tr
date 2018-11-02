@@ -1,10 +1,6 @@
 ---
-title: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l | Microsoft Docs
-ms.custom: ''
+title: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsnset_s_l
 - _strnset_s
@@ -41,8 +37,6 @@ f1_keywords:
 - mbsnset_s_l
 - mbsnset_s
 - wcsnset_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tcsnset_s function
 - mbsnset_s_l function
@@ -60,23 +54,19 @@ helpviewer_keywords:
 - strnset_s function
 - _wcsnset_s function
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 786f802a25964b118b997a2d5af7376932f8f74f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb82e96c23e1554fb2ec5e2a36089823eaf55595
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416027"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460001"
 ---
 # <a name="strnsets-strnsetsl-wcsnsets-wcsnsetsl-mbsnsets-mbsnsetsl"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
-Belirli bir karakter dizesine karakterlerinden başlatır. Bu sürümleri [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Verilen bir karakterde bir dizenin karakterlerini başlatır. Bu sürümleri [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbsnset_s** ve **_mbsnset_s_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnset_s** ve **_mbsnset_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -128,10 +118,10 @@ errno_t _mbsnset_s_l(
 Değiştirilecek dize.
 
 *numberOfElements*<br/>
-Boyutunu *str* arabellek.
+Boyutu *str* arabellek.
 
 *c*<br/>
-Karakter değeri.
+Karakter ayarı.
 
 *Sayısı*<br/>
 Ayarlanacak karakter sayısı.
@@ -141,19 +131,19 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, sıfır Aksi takdirde bir hata kodu.
+Başarılıysa sıfır Aksi takdirde bir hata kodu.
 
-Bu işlevler kendi bağımsız değişkenleri doğrulayın. Varsa *str* null ile sonlandırılmış geçerli bir dize değil veya geçersiz parametre işleyicisi çağrıldıktan sonra boyutu bağımsız değişkeniyle 0 ' değerinden küçük veya eşit açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlevler dönüş bir hata kodu ve kümesi yürütülmesine izin veriliyorsa **errno** bu hata kodu. Varsayılan hata kodu **EINVAL** daha belirli bir değerin geçerli olmadığında.
+Bu işlevler, kendi bağımsız değişkenlerini doğrular. Varsa *str* geçerli bir null ile sonlandırılmış dize değil veya geçersiz parametre işleyicisi çağrılır bağımsız değişkenin boyutu 0 değerinden küçük veya eşit açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlevler bir hata kodu döndürür ve kümesi yürütülmesine izin veriliyorsa **errno** bu hata kodu. Varsayılan hata kodu **EINVAL** daha belirli bir değer geçerli değilse.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, en fazla ilk kümesinden *sayısı* karakterlerinden *str* için *c*. Varsa *sayısı* boyutundan daha büyük *str*, boyutu *str* yerine kullanılan *sayısı*. Bir hata oluşur *sayısı* değerinden daha büyük *numberOfElements* ve bu parametrelerinin her ikisini de boyutundan büyük olan *str*.
+Bu işlevler, en çok ilk kümesinden *sayısı* karakterlerinden *str* için *c*. Varsa *sayısı* boyutundan büyükse *str*, boyutu *str* yerine kullanılan *sayısı*. Hata oluşur *sayısı* büyüktür *numberOfElements* ve bu parametrelerin her ikisi boyutundan büyük olan *str*.
 
-**_wcsnset_s** ve **_mbsnset_s** joker karakter ve çok baytlı karakter sürümleri **_strnset_s**. Dize bağımsız değişkeni **_wcsnset_s** geniş karakter dizesi;'ın **_mbsnset_s** amultibyte karakter dizesidir. Bu üç işlevler aynı şekilde aksi davranır.
+**_wcsnset_s** ve **_mbsnset_s** geniş karakter ve çok baytlı karakter sürümleridir **_strnset_s**. Dize bağımsız değişkeni **_wcsnset_s** geniş karakterli dize; **_mbsnset_s** amultibyte karakterli bir dizedir. Bu üç işlev aynı şekilde davranır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -172,7 +162,7 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**_wcsnset_s_l**|\<Tchar.h >|
 |**_mbsnset_s**, **_mbsnset_s_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

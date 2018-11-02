@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0046 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0046
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0046
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXX0046
 - CAN0046
 ms.assetid: a76e657b-c018-415b-b426-ce9e72eb645d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28cffba8a424d5a8cf2160dd6a5f8718259a54b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce139867897852f35cf4758e7105c8740ed5de1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498363"
 ---
 # <a name="expression-evaluator-error-cxx0046"></a>İfade Değerlendirici Hatası CXX0046
 

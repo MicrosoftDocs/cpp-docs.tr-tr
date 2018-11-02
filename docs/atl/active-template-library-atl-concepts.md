@@ -1,25 +1,15 @@
 ---
-title: Etkin Şablon kitaplığı (ATL) kavramlar | Microsoft Docs
-ms.custom: ''
+title: Etkin Şablon Kitaplığı (ATL) Kavramlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 554fddbb778a19555fc7342f08eaac2e5642d815
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9b8c293bc92071509607e8496a5601d0c6ef2018
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019451"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523755"
 ---
 # <a name="active-template-library-atl-concepts"></a>Etkin Şablon Kitaplığı (ATL) Kavramlar
 

@@ -1,28 +1,17 @@
 ---
-title: benzersiz (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: benzersiz (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.unique
-dev_langs:
-- C++
 helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ca5d2da5dc06b1cdf0e999939fcb110608ff3359
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9d049983bb072e073180f1821f04b79e5f5c7444
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062697"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512853"
 ---
 # <a name="unique-c"></a>benzersiz (C++)
 

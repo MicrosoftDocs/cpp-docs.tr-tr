@@ -1,23 +1,13 @@
 ---
-title: BİR. Örnekler | Microsoft Docs
-ms.custom: ''
+title: BİR. Örnekler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c0f6192f-a205-449b-b84c-cb30dbcc8b8f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3747b8a73c372ae3226b1f0c4f762da34dc40eab
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3d8812042d1ecefe7548a00171d731cf54718c29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676648"
 ---
 # <a name="a-examples"></a>BİR. Örnekler
 

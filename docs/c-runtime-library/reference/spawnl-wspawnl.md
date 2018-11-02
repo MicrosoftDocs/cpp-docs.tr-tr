@@ -1,10 +1,6 @@
 ---
-title: _spawnl, _wspawnl | Microsoft Docs
-ms.custom: ''
+title: _spawnl, _wspawnl
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wspawnl
 - _spawnl
@@ -26,8 +22,6 @@ f1_keywords:
 - wspawnl
 - _wspawnl
 - _spawnl
-dev_langs:
-- C++
 helpviewer_keywords:
 - spawnl function
 - processes, creating
@@ -37,23 +31,19 @@ helpviewer_keywords:
 - wspawnl function
 - process creation
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dcd276e59edd78942f14211845c615d7e4f7eb6d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4dbc8fab611d98f7f87529196b0e10e85196faa9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518085"
 ---
 # <a name="spawnl-wspawnl"></a>_spawnl, _wspawnl
 
 Oluşturur ve yeni bir işlem yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,33 +69,33 @@ intptr_t _wspawnl(
 ### <a name="parameters"></a>Parametreler
 
 *Modu*<br/>
-Arama işlemi için yürütme modu.
+Çağırma işlemi için yürütme modu.
 
 *■ CmdName*<br/>
-Yürütülecek dosyasının yolu.
+Yürütülecek dosyanın yolu.
 
 *arg0*, *arg1*,... *argn*<br/>
-Bağımsız değişkenler işaretçiler listesi. *Arg0* bağımsız değişkeni genellikle bir işaretçidir *■ cmdname*. Bağımsız değişkenler *arg1* aracılığıyla *argn* yeni bağımsız değişken listesi oluşturuluyor karakter dizelerini işaretçileridir. Aşağıdaki *argn*, olmalıdır bir **NULL** bağımsız değişken listesinin sonuna işaretlemek için işaretçi.
+Bağımsız değişkenlere işaretçi listesi. *Arg0* bağımsız değişken ise genellikle bir işaretçiye *■ cmdname*. Bağımsız değişkenler *arg1* aracılığıyla *argn* yeni bağımsız değişken listesini oluşturan karakter dizelerine. Aşağıdaki *argn*, olmalıdır bir **NULL** bağımsız değişken listesinin sonunu işaretlemek için işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir zaman uyumlu yönteminden döndürülen değer **_spawnl** veya **_wspawnl** (**_p_waıt** için belirtilen *modu*) yeni işlem çıkış durumudur. Dönüş değerini zaman uyumsuz bir **_spawnl** veya **_wspawnl** (**_p_nowaıt** veya **_p_nowaıto** için belirtilen *modu* ) işlem tanıtıcısı. Çıkış durumu 0 ise işlemi normal şekilde sonlandırıldı. Oluşturulan işlemi özellikle çağırırsa, çıkış durumu sıfır olmayan bir değere ayarlayabilirsiniz **çıkmak** sıfır olmayan bir bağımsız değişkeni ile rutin. Yeni işlem pozitif Çıkış durumu açıkça ayarlamadıysanız pozitif Çıkış durumu bir durdurma veya bir kesme normal olmayan bir çıkış gösterir. Dönüş değeri-1 (yeni işlem başlatılmamış) bir hata gösterir. Bu durumda, **errno** aşağıdaki değerlerden birine ayarlayın.
+Dönüş değeri eş zamanlı **_spawnl** veya **_wspawnl** (**_p_waıt** için belirtilen *modu*) yeni sürecin çıkış durumudur. Dönüş değeri eş zamanlı olmayan **_spawnl** veya **_wspawnl** (**_p_nowaıt** veya **_p_nowaıto** için belirtilen *modu* ) süreci işler. İşlem normal şekilde sonlandırıldıysa Çıkış durumu 0'dır. Üretilmiş işlem özellikle çağırırsa, çıkış durumu sıfır olmayan bir değer ayarlayabilirsiniz **çıkmak** rutin sıfır olmayan bir bağımsız değişken. Yeni işlem açık bir şekilde pozitif Çıkış durumu ayarlamadıysanız, bir pozitif Çıkış durumu bir durdurma veya kesme kesintili anormal çıkışı gösterir. Dönüş değeri-1 (yeni işlem başlatılmamış) bir hata gösterir. Bu durumda, **errno** aşağıdaki değerlerden birine ayarlayın.
 
 |||
 |-|-|
 **E2BIG**|Bağımsız değişken listesi 1024 baytı aşıyor.
-**EINVAL**|*mod* bağımsız değişkeni geçersiz.
+**EINVAL**|*modu* bağımsız değişkeni geçersiz.
 **ENOENT**|Dosya veya yol bulunamadı.
-**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya yürütülebilir dosya biçimi geçersiz.
+**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip.
 **ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok.
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Bu işlevler kendi parametreleri doğrulayın. Her iki *■ cmdname* veya *arg0* boş bir dize ya da açıklandığı gibi geçersiz parametre işleyicisi null işaretçi çağrılan [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL**ve -1 döndürür. Yeni bir işlem oluşturdu.
+Bu işlevler kendi parametrelerini doğrular. Ya da *■ cmdname* veya *arg0* boş bir dize ya da açıklandığı şekilde bir null işaretçiyse, geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL**ve -1 döndürür. Yeni bir işlem üretilmedi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri oluşturur ve ayrı bir parametre olarak her komut satırı bağımsız değişken geçirme, yeni bir işlem yürütür.
+Bu işlevlerin her biri, oluşturur ve her komut satırı bağımsız değişkenini ayrı bir parametre geçirerek yeni bir işlem yürütür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -114,11 +104,11 @@ Bu işlevlerin her biri oluşturur ve ayrı bir parametre olarak her komut satı
 |**_spawnl**|\<Process.h >|
 |**_wspawnl**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md).
+Örnekte bakın [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

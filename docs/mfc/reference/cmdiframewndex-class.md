@@ -1,10 +1,6 @@
 ---
-title: Cmdıframewndex sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmdıframewndex sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMDIFrameWndEx
 - AFXMDIFRAMEWNDEX/CMDIFrameWndEx
@@ -83,8 +79,6 @@ f1_keywords:
 - AFXMDIFRAMEWNDEX/CMDIFrameWndEx::WinHelp
 - AFXMDIFRAMEWNDEX/CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild
 - AFXMDIFRAMEWNDEX/CMDIFrameWndEx::m_bDisableSetRedraw
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMDIFrameWndEx [MFC], ActiveItemRecalcLayout
 - CMDIFrameWndEx [MFC], AddPane
@@ -162,16 +156,12 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bCanCovertControlBarToMDIChild
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b238dedf9b4f638baf4ea2c9373e7658c90114cb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: be9ecf2eaabb51f4c2dffd996bca76bd3f4c9128
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512876"
 ---
 # <a name="cmdiframewndex-class"></a>Cmdıframewndex sınıfı
 

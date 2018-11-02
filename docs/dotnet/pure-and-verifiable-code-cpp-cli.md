@@ -1,12 +1,6 @@
 ---
-title: Saf ve doğrulanabilen kod (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Saf ve Doğrulanabilen Kod (C++/CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - /clr compiler option [C++], verifiable assemblies
 - /clr compiler option [C++], mixed assemblies
@@ -23,29 +17,24 @@ helpviewer_keywords:
 - mixed assemblies [C++]
 - assemblies [C++], pure code
 ms.assetid: 9050e110-fa11-4356-b56c-665187ff871c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 453bb40e94c1d345adbe22f8792b59d1e584499a
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 11cccc082d5b9e467f5fafce6f2128aa50d33879
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512829"
 ---
 # <a name="pure-and-verifiable-code-ccli"></a>Saf ve doğrulanabilen kod (C + +/ CLI)
 
-.NET programlama için Visual Studio 2017'de Visual C++ oluşturulmasını karışık derlemeler kullanarak destekleyen [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. **/CLR: pure** ve **CLR: safe** seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. Ardından kodunuzu güvenli veya doğrulanabilen olması gerekiyorsa, bu C# bağlantı noktasının öneririz.
+.NET programlama için Visual C++ Visual Studio 2017'de karışık derlemeler oluşturma kullanarak destekler [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. **/CLR: pure** ve **CLR: safe** seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. Kodunuzu güvenli veya doğrulanabilir olması gerekir ve ardından ona bağlantı öneririz, C#.
 
-## <a name="mixed-clr"></a>Karma (/ clr)
+## <a name="mixed-clr"></a>Karışık (/ clr)
 
-Karışık derlemeler (ile derlenmiş **/CLR**), hem de yönetilmeyen içerir ve yönetilen bölümleri, bunlar için .NET özellikleri kullanmak olası hale getirerek, ancak yine yerel kod içerir. Bu, tüm proje yazılması gerekmeden .NET özellikleri kullanmak uygulamaları ve bileşenleri güncelleştirilmesini sağlar. Visual C++ yönetilen ve yerel kodu bu şekilde karıştırmak kullanmayı C++ birlikte çalışabilirliği adı verilir. Daha fazla bilgi için bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md).
+Karışık derlemeler (ile derlenmiş **/CLR**), hem yönetilmeyen hem de içerir ve yönetilen bölümleri .NET özelliklerini kullanmayı mümkün hale getirme, ancak yine de yerel kod içerir. Bu, uygulamaları ve bileşenleri güncelleştirilmesi tüm proje yazılması gerekmeden .NET özelliklerini kullanmayı sağlar. Bu şekilde yönetilen ve yerel kodda karıştırmak için Visual C++ kullanarak C++ birlikte çalışabilirliği çağırılır. Daha fazla bilgi için [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [Native ve .NET ile birlikte çalışabilirlik](../dotnet/native-and-dotnet-interoperability.md).
 
-Yönetilen derlemelerden Yerel DLL'leri P/Invoke aracılığıyla yapılan çağrılar derlenir ancak güvenlik ayarlarına bağlı olarak çalışma zamanında başarısız olabilir.
+Yönetilen derlemelerden P/Invoke aracılığıyla yerel DLL'lere yapılan çağrıları derlenir, ancak güvenlik ayarlarına bağlı olarak çalışma zamanında başarısız olabilir.
 
-Derleyiciyi geçecek ancak doğrulanamayan bir derlemede sonuçlanacak bir kodlama senaryo vardır: kapsam çözümü işleci kullanarak bir nesne örneği aracılığıyla sanal bir işlevi çağırmak.  Örneğin: `MyObj -> A::VirtualFunction();`.
+Derleyici geçecek ancak doğrulanamayan bir derlemede sonuçlanacak bir kodlama senaryosu vardır: kapsam çözünürlük işlecini kullanarak bir nesne örneği üzerinden sanal bir işlev çağırma.  Örneğin: `MyObj -> A::VirtualFunction();`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4167 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4167
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4167
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4167
 ms.assetid: 74a420bd-9371-4167-b1ee-74dd8680f97b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c154a91c21bf0b35493bb8033e5453ef1c536267
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8155fabacef4c9c9acc97b315f7267c23d032f12
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082189"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496687"
 ---
 # <a name="compiler-warning-level-1-c4167"></a>Derleyici Uyarısı (düzey 1) C4167
 

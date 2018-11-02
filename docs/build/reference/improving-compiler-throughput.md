@@ -1,28 +1,18 @@
 ---
-title: Derleyici üretimini geliştirme | Microsoft Docs
-ms.custom: ''
+title: Derleyici Üretimini Geliştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - throughput, C++ compiler
 - cl.exe compiler, performance
 - performance, compiler
 - cl.exe compiler, throughput
 ms.assetid: ba5f884e-9037-4a92-b10e-fc2a3836c5bf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 883b4056226a3595f2255dcadfb4cc056e1150ef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b9e8b20e7191dad970dc154a545445b3f54b78da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496570"
 ---
 # <a name="improving-compiler-throughput"></a>Derleyici Üretimini Geliştirme
 

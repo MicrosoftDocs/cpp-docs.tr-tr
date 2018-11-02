@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2352 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2352
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2352
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2352
 ms.assetid: 0efad8cb-659f-4b3e-8f6f-9f8ec44d345c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29e1c63486c26a2f2ef34dbb1165c581a0c074cd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 387738faa5b55e60cbb9df2185efcb94098011d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060258"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528758"
 ---
 # <a name="compiler-error-c2352"></a>Derleyici Hatası C2352
 

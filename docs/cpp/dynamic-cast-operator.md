@@ -1,27 +1,17 @@
 ---
-title: dynamic_cast işleci | Microsoft Docs
-ms.custom: ''
+title: dynamic_cast İşleci
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - dynamic_cast_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - dynamic_cast keyword [C++]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cce5aa444e142580f80a09bbaa4d286e4c421da1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 75085fe6dd1478fee769e23938c55c6300429d86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118849"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529161"
 ---
 # <a name="dynamiccast-operator"></a>dynamic_cast İşleci
 

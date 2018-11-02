@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3464 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3464
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3464
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3464
 ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05322479c076bbb929b6c742fdd379414a263376
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d1645571ce3102687d5054e066ec1dc7d633b3aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503141"
 ---
 # <a name="compiler-error-c3464"></a>Derleyici Hatası C3464
 

@@ -1,33 +1,23 @@
 ---
-title: İç bilgiler kullanılabilir tüm mimarileri hakkında | Microsoft Docs
-ms.custom: ''
+title: Tüm mimarilerde kullanılabilen iç bilgiler
 ms.date: 04/11/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dbe070c2bae69563d65344072a56003f808d1486
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0a1331f53cd8b44c8a7bfc903216cbdbaf5fec1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473287"
 ---
-# <a name="intrinsics-available-on-all-architectures"></a>İç bilgiler kullanılabilir tüm mimarileri hakkında
+# <a name="intrinsics-available-on-all-architectures"></a>Tüm mimarilerde kullanılabilen iç bilgiler
 
-Microsoft C/C++ derleyicisi ve evrensel C çalışma zamanı kitaplığı (UCRT) bazı iç bilgileri tüm mimarileri kullanımına sunun.
+Microsoft C/C++ derleyicisi ve evrensel C Çalışma Zamanı Kitaplığı'nı (UCRT) bazı iç öğeler tüm mimarilerde kullanımına sunun.
 
 ## <a name="compiler-intrinsics"></a>Derleyici iç bilgileri
 
-Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
+Aşağıdaki yapı içlerini x86, AMD64, kullanılabilir ve ARM mimarileri:
 
 |İç|Üstbilgi|
 |---------------|------------|
@@ -48,7 +38,7 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[_disable](../intrinsics/disable.md)|intrin.h|
 |[_enable](../intrinsics/enable.md)|intrin.h|
 |[__fastfail](../intrinsics/fastfail.md)|intrin.h|
-|[_InterlockedAnd](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|
+|[_Interlockedand](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|
 |[_InterlockedAnd16](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|
 |[_InterlockedAnd64](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|
 |[_InterlockedAnd8](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|
@@ -61,7 +51,7 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[_InterlockedCompareExchangePointer](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)|intrin.h|
 |[_InterlockedDecrement16](../intrinsics/interlockeddecrement-intrinsic-functions.md)|intrin.h|
 |[_InterlockedDecrement64](../intrinsics/interlockeddecrement-intrinsic-functions.md)|intrin.h|
-|[_InterlockedExchange](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|
+|[_Interlockedexchange](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|
 |[_InterlockedExchange16](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|
 |[_InterlockedExchange64](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|
 |[_InterlockedExchange8](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|
@@ -70,14 +60,14 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[_InterlockedExchangeAdd64](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|
 |[_InterlockedExchangeAdd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|
 |[_InterlockedExchangePointer](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)|intrin.h|
-|[_InterlockedIncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|
+|[_Interlockedıncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|
 |[_InterlockedIncrement16](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|
 |[_InterlockedIncrement64](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|
 |[_InterlockedOr](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedOr16](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedOr64](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedOr8](../intrinsics/interlockedor-intrinsic-functions.md)|intrin.h|
-|[_InterlockedXor](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
+|[_Interlockedxor](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedXor16](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedXor64](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedXor8](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
@@ -99,12 +89,12 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 
 ## <a name="ucrt-intrinsics"></a>UCRT iç bilgileri
 
-Aşağıdaki UCRT işlevleri iç formlar üzerinde tüm mimarileri vardır:
+Aşağıdaki UCRT işlevleri tüm mimarilerde iç biçimleri vardır:
 
 |İç|Üstbilgi|
 |---------------|------------|
-|[Abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
-|[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
+|[Abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlıb.h|
+|[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlıb.h|
 |[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|
 |[acosf](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|
 |[acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|
@@ -118,9 +108,9 @@ Aşağıdaki UCRT işlevleri iç formlar üzerinde tüm mimarileri vardır:
 |[atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|
 |[atanf](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|
 |[atanl](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|
-|[_byteswap_uint64](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlib.h|
-|[_byteswap_ulong](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlib.h|
-|[_byteswap_ushort](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlib.h|
+|[_byteswap_uint64](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlıb.h|
+|[_byteswap_ulong](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlıb.h|
+|[_byteswap_ushort](../c-runtime-library/reference/byteswap-uint64-byteswap-ulong-byteswap-ushort.md)|stdlıb.h|
 |[ceil](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Math.h|
 |[ceilf](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Math.h|
 |[ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Math.h|
@@ -141,26 +131,26 @@ Aşağıdaki UCRT işlevleri iç formlar üzerinde tüm mimarileri vardır:
 |[fmod](../c-runtime-library/reference/fmod-fmodf.md)|Math.h|
 |[fmodf](../c-runtime-library/reference/fmod-fmodf.md)|Math.h|
 |[fmodl](../c-runtime-library/reference/fmod-fmodf.md)|Math.h|
-|[Labs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
-|[llabs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
+|[Laboratuvarları](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlıb.h|
+|[llabs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlıb.h|
 |[log](../c-runtime-library/reference/log-logf-log10-log10f.md)|Math.h|
 |[log10](../c-runtime-library/reference/log-logf-log10-log10f.md)|Math.h|
 |[log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)|Math.h|
 |[log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|Math.h|
 |[logf](../c-runtime-library/reference/log-logf-log10-log10f.md)|Math.h|
 |[logl](../c-runtime-library/reference/log-logf-log10-log10f.md)|Math.h|
-|[_lrotl](../c-runtime-library/reference/lrotl-lrotr.md)|stdlib.h|
-|[_lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|stdlib.h|
+|[_lrotl](../c-runtime-library/reference/lrotl-lrotr.md)|stdlıb.h|
+|[_lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|stdlıb.h|
 |[memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)|String.h|
 |[memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)|String.h|
 |[memset](../c-runtime-library/reference/memset-wmemset.md)|String.h|
 |[POW](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|
 |[powf](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|
 |[powl](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|
-|[_rotl](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
-|[_rotl64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
-|[_rotr](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
-|[_rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|
+|[_rotl](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlıb.h|
+|[_rotl64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlıb.h|
+|[_rotr](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlıb.h|
+|[_rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlıb.h|
 |[sin](../c-runtime-library/reference/sin-sinf-sinl.md)|Math.h|
 |[sinf](../c-runtime-library/reference/sin-sinf-sinl.md)|Math.h|
 |[SİNH](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Math.h|

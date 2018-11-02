@@ -1,10 +1,6 @@
 ---
-title: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l | Microsoft Docs
-ms.custom: ''
+title: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsnbcnt_l
 - _mbsnccnt
@@ -38,8 +34,6 @@ f1_keywords:
 - mbsnccnt
 - _strncnt
 - _wcsncnt
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strncnt function
 - _mbsnbcnt function
@@ -56,23 +50,19 @@ helpviewer_keywords:
 - _mbsnccnt function
 - _wcsncnt function
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 066431205ecd7aa2b193350ccda4a83decac0458
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 6322f9511f0813eeaeb49383f49c73e361048cd9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451582"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573452"
 ---
 # <a name="strncnt-wcsncnt-mbsnbcnt-mbsnbcntl-mbsnccnt-mbsnccntl"></a>_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 
-Karakter veya belirtilen sayı bayt sayısını döndürür.
+Belirli bir sayım içindeki karakter veya bayt sayısını döndürür.
 
 > [!IMPORTANT]
-> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt**, ve **_mbsnccnt_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt**, ve **_mbsnccnt_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -109,29 +99,29 @@ size_t _mbsnccnt_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-İncelenmesi dizesi.
+İncelenecek dize.
 
 *Sayısı*<br/>
-Karakter veya içinde incelenmesi bayt sayısını *str*.
+Karakter veya içinde incelenecek bayt sayısını *str*.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısını döndürmek ilk *sayısı* birden çok baytlı karakter sayısını *str*. **_mbsnccnt** ve **_mbsnccnt_l** bulunan karakter sayısını Döndür ilk *sayısı* bayt sayısı *str*. Bir null karakter incelenmesi önce karşılaştı, *str* sahip tamamlandı, bunlar bayt veya önce null karakter bulundu karakter sayısını döndürür. Varsa *str* daha az oluşan *sayısı* karakter veya bayt döndürmeleri karakter veya bayt sayısını dizesi içinde. Varsa *sayısı* küçük sıfırdan, bunlar 0 döndürür. Önceki sürümlerde, bu işlevler bir dönüş değeri olan **int** yerine **size_t**.
+**_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısını Döndür ilk *sayısı* çok baytlı karakter sayısını *str*. **_mbsnccnt** ve **_mbsnccnt_l** bulunan karakter sayısını döndürür ilk *sayısı* bayt sayısı *str*. Bir null karakter incelenmesi önce karşılaşılırsa *str* sahip tamamlandı, null karakterden önce bulunan karakter veya bayt sayısını döndürürler. Varsa *str* daha azından oluşuyorsa *sayısı* karakter veya bayt, döndürmeleri karakter veya bayt sayısı dizedeki. Varsa *sayısı* küçük sıfırdan, 0 döndürürler. Önceki sürümlerde, bu işlevlerin bir dönüş değeri olduğu **int** yerine **size_t**.
 
-**_strncnt** ilk karakter sayısını verir *sayısı* bayt tek baytlı dizesinin *str*. **_wcsncnt** ilk karakter sayısını verir *sayısı* geniş karakter dizesi geniş karakterler *str*.
+**_strncnt** ilk karakter sayısını döndürür *sayısı* tek baytlık dizeyi baytını *str*. **_wcsncnt** ilk karakter sayısını döndürür *sayısı* geniş karakter dizesinin geniş karakterler *str*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısı ilk *sayısı* birden çok baytlı karakter sayısını *str*. **_mbsnbcnt** ve **_mbsnbcnt_l** Değiştir **mtob** ve yerine kullanılmalıdır **mtob**.
+**_mbsnbcnt** ve **_mbsnbcnt_l** bulunan bayt sayısını ilk *sayısı* çok baytlı karakter sayısını *str*. **_mbsnbcnt** ve **_mbsnbcnt_l** değiştirin **mtob** ve yerine kullanılması gereken **mtob**.
 
-**_mbsnccnt** ve **_mbsnccnt_l** bulunan karakterleri sayma ilk *sayısı* bayt sayısı *str*. Varsa **_mbsnccnt** ve **_mbsnccnt_l** çift bayt karakter ikinci baytı bir null karakter karşılaşırsanız, ilk bayt de null olarak kabul edilir ve döndürülen sayı değeri dahil edilmez. **_mbsnccnt** ve **_mbsnccnt_l** Değiştir **btom** ve yerine kullanılmalıdır **btom**.
+**_mbsnccnt** ve **_mbsnccnt_l** bulunan karakter sayısını ilk *sayısı* bayt sayısı *str*. Varsa **_mbsnccnt** ve **_mbsnccnt_l** çift baytlı bir karakterin ikinci baytında bir null karakter karşılaşırsanız, ilk bayt da null olarak kabul edilir ve döndürülen sayı değerine dahil değildir. **_mbsnccnt** ve **_mbsnccnt_l** değiştirin **btom** ve yerine kullanılması gereken **btom**.
 
-Varsa *str* olan bir **NULL** işaretçi veya *sayısı* 0'dır, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md), **errno** ayarlanır **EINVAL**, ve işlevi 0 değerini döndürür.
+Varsa *str* olduğu bir **NULL** işaretçi veya *sayısı* 0'dır, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md), **errno** ayarlanır **EINVAL**, ve işlev 0 döndürür.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -154,7 +144,7 @@ Varsa *str* olan bir **NULL** işaretçi veya *sayısı* 0'dır, bu işlevler a�
 |**_strncnt**|\<Tchar.h >|
 |**_wcsncnt**|\<Tchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

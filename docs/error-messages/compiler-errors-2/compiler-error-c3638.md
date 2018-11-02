@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3638 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3638
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3638
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3638
 ms.assetid: 8d8bc5ca-75aa-480e-b6b6-3178fab51b1d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f1d135dd69155de39b097d59cf139eb47354d4f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8b1ef7f4cb38653f0ccdfae5684eb2907a735af7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107691"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486898"
 ---
 # <a name="compiler-error-c3638"></a>Derleyici Hatası C3638
 

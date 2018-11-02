@@ -1,30 +1,20 @@
 ---
-title: SimpleClassFactory sınıfı | Microsoft Docs
-ms.custom: ''
+title: SimpleClassFactory Sınıfı
 ms.date: 09/7/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::SimpleClassFactory
 - module/Microsoft::WRL::SimpleClassFactory::CreateInstance
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::SimpleClassFactory class
 - Microsoft::WRL::SimpleClassFactory::CreateInstance method
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4a3e262567927b818072c1e05acd18aa64cbaa6c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e73c4cc8088fb5200ae2ae76dcbed773db76863b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446523"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500587"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
 

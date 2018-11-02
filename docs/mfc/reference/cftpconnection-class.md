@@ -1,10 +1,6 @@
 ---
-title: CFtpConnection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFtpConnection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFtpConnection
 - AFXINET/CFtpConnection
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXINET/CFtpConnection::RemoveDirectory
 - AFXINET/CFtpConnection::Rename
 - AFXINET/CFtpConnection::SetCurrentDirectory
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFtpConnection [MFC], CFtpConnection
 - CFtpConnection [MFC], Command
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b3e340f00170eb8351cb66e816cbaa7dc76fbd6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 71e5c8629a1aa1c489cc51224f9d008c4cdd3397
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075547"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504253"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 

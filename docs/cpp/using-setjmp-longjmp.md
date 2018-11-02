@@ -1,15 +1,9 @@
 ---
-title: Setjmp ve longjmp kullanma | Microsoft Docs
-ms.custom: ''
+title: Setjmp ve longjmp kullanma
 ms.date: 08/14/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - longjmp_cpp
 - setjmp_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ exception handling, setjmp/longjmp functions
 - setjmpex.h
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - setjmp function
 - setjmp function, C++ programs
 ms.assetid: 96be8816-f6f4-4567-9a9c-0c3c720e37c5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 711d829ea3393041c713fbb042318b680100a52a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4ead12f79701899b3977993c9de3c3803023150f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525725"
 ---
 # <a name="using-setjmp-and-longjmp"></a>Setjmp ve longjmp kullanma
 

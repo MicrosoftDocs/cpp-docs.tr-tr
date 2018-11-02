@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3040 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3040
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3040
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3040
 ms.assetid: 29e857ac-74f0-4ec6-becf-9026e38c160e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 419178a7ff71817c418aa791ae1f6cce116cd986
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b0bc4956cfc08ae50026827d78136a70b82d568e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057700"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474496"
 ---
 # <a name="compiler-error-c3040"></a>Derleyici Hatası C3040
 

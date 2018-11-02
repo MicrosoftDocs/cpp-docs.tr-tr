@@ -1,23 +1,13 @@
 ---
-title: OpenMP kitaplıkları | Microsoft Docs
-ms.custom: ''
+title: OpenMP kitaplıkları
 ms.date: 10/24/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: f89abf97-67e3-4327-bc30-43f85b9533a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7620b0ea710a5474fbbbf614691ceeb1e5cc945e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 75f772c953a2120a02f72d8bdfc73c1baaaef390
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530344"
 ---
 # <a name="openmp-libraries"></a>OpenMP kitaplıkları
 

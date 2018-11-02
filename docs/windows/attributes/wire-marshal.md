@@ -1,28 +1,17 @@
 ---
-title: wire_marshal (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: wire_marshal (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.wire_marshal
-dev_langs:
-- C++
 helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5c59660f06cfd210e6a67c5bd7373c7f2d7ddab1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 47aa604f697c436ffb99b85f85368c343ac43634
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061605"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529967"
 ---
 # <a name="wiremarshal"></a>wire_marshal
 

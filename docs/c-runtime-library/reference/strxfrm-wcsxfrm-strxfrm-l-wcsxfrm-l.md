@@ -1,10 +1,6 @@
 ---
-title: strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l | Microsoft Docs
-ms.custom: ''
+title: strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strxfrm
 - _wcsxfrm_l
@@ -27,8 +23,6 @@ f1_keywords:
 - strxfrm
 - _tcsxfrm
 - wcsxfrm
-dev_langs:
-- C++
 helpviewer_keywords:
 - strxfrm_l function
 - _tcsxfrm function
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - strings [C++], comparing locale
 - _wcsxfrm_l function
 ms.assetid: 6ba8e1f6-4484-49aa-83b8-bc2373187d9e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96f459c8360969146f8cf76a48c9141000066745
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4e4f5bb6639cbeee0f004f94f09177c08394d43e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590989"
 ---
 # <a name="strxfrm-wcsxfrm-strxfrml-wcsxfrml"></a>strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 

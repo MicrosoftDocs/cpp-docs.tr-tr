@@ -1,10 +1,6 @@
 ---
-title: CD2DPathGeometry sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DPathGeometry sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DPathGeometry
 - AFXRENDERTARGET/CD2DPathGeometry
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DPathGeometry::Open
 - AFXRENDERTARGET/CD2DPathGeometry::Stream
 - AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DPathGeometry [MFC], CD2DPathGeometry
 - CD2DPathGeometry [MFC], Attach
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CD2DPathGeometry [MFC], Stream
 - CD2DPathGeometry [MFC], m_pPathGeometry
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80d4116d71eb92474675968e15846f109b7390f0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 35e9a8c9d32cba53c9ea8a3b7f4644e20b01ef77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588753"
 ---
 # <a name="cd2dpathgeometry-class"></a>CD2DPathGeometry sınıfı
 

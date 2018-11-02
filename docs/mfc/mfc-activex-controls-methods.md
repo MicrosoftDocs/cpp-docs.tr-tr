@@ -1,25 +1,15 @@
 ---
-title: 'MFC ActiveX denetimleri: Yöntemler | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Yöntemler'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 ms.assetid: e20271de-6ffa-4ba0-848b-bafe6c9e510c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93a8d3f9840afd88a9ce0ae7cbaf661babc13647
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9e8bc35989dc0e933cdb67c2574fb3bf6a4d99de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406054"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524585"
 ---
 # <a name="mfc-activex-controls-methods"></a>MFC ActiveX Denetimleri: Yöntemler
 

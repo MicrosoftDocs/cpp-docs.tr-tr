@@ -1,31 +1,21 @@
 ---
-title: CTreeView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTreeView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTreeView
 - AFXCVIEW/CTreeView
 - AFXCVIEW/CTreeView::CTreeView
 - AFXCVIEW/CTreeView::GetTreeCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTreeView [MFC], CTreeView
 - CTreeView [MFC], GetTreeCtrl
 ms.assetid: 5df583a6-d69f-42ca-9d8d-57e04558afff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a760e567718ad7a485ebe469903c7cbd566daccc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: db899b58c68dabc25e571c390db0575a2d2ebb58
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375404"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496352"
 ---
 # <a name="ctreeview-class"></a>CTreeView sınıfı
 

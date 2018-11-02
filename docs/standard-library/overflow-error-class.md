@@ -1,27 +1,17 @@
 ---
-title: overflow_error sınıfı | Microsoft Docs
-ms.custom: ''
+title: overflow_error Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - stdexcept/std::overflow_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - overflow_error class
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17a8c5b1a95d133f66c729ae6736a8726f8a2a3f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 33819d9f57c9ee29b82c24d7919f68a97e50d98e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317530"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583540"
 ---
 # <a name="overflowerror-class"></a>overflow_error Sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: toupper, _toupper, towupper, _toupper_l, _towupper_l | Microsoft Docs
-ms.custom: ''
+title: toupper, _toupper, towupper, _toupper_l, _towupper_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _toupper_l
 - towupper
@@ -29,8 +25,6 @@ f1_keywords:
 - _toupper
 - _totupper
 - toupper
-dev_langs:
-- C++
 helpviewer_keywords:
 - _toupper function
 - towupper function
@@ -47,20 +41,16 @@ helpviewer_keywords:
 - characters, converting
 - toupper function
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73157691cc1635d038339d9fe707aa535e1df93f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7e0ae3f1c69b0e5f77ea2ed8141a93867fd43b33
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608931"
 ---
 # <a name="toupper-toupper-towupper-toupperl-towupperl"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 
-Karakter büyük harfe Dönüştür.
+Karakteri büyük harfe Dönüştür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -94,21 +84,21 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamlar her bir kopyasını dönüştürür *c*, mümkünse ve sonucu döndürür.
+Bu yordamların her biri bir kopyasını dönüştürür *c*, mümkün olduğunda ve sonucu döndürür.
 
-Varsa *c* geniş karakter olduğu **iswlower** sıfır olmayan olduğundan ve karşılık gelen bir geniş karakter olan [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) sıfır olmayan, olan **towupper** karşılık gelen geniş karakter; döndürür Aksi takdirde, **towupper** döndürür *c* değişmez.
+Varsa *c* bir geniş karakter olduğu **iswlower** sıfır dışında olan ve bir karşılık gelen geniş karakter [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) sıfır değilse, **towupper** karşılık gelen geniş karakter; döndürür Aksi takdirde, **towupper** döndürür *c* değişmez.
 
-Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.
+Dönüş değeri bir hatayı göstermek için ayrılmış.
 
-Sırayla **toupper** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [islower](islower-iswlower-islower-l-iswlower-l.md) her ikisi de sıfır olmayan bir değer döndürmesi gerekir.
+Sırayla **toupper** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [islower](islower-iswlower-islower-l-iswlower-l.md) her ikisi de sıfır olmayan döndürmelidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar her mümkünse belirli bir küçük harf bir büyük harfe dönüştürür ve gerekli. Büyük/küçük harfe dönüştürülmesini **towupper** yerel ayar özgüdür. Yalnızca geçerli yerel ilgili karakterleri durumda değiştirilir. Olmadan çalışır **_l** sonekini kullan ayarlanmış yerel ayar. Bu işlevleri sürümlerini **_l** soneki yerel bir parametre olarak geçirmesine ve ayarlanmış yerine kullanan yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Bu yordamların her biri, belirli bir küçük harf mümkünse büyük harfe dönüştürür ve uygun. Büyük/küçük harfe dönüştürülmesi **towupper** yerel ayara özgü olan. Yalnızca karakterler geçerli yerel ayarına uygun durumda değiştirilir. İşlevlerin **_l** soneki kullanıp ayarlanmış yerel ayar. Sahip bu işlevlerin sürümleri **_l** soneki yerel ayar bir parametre olarak almak ve ayarlanmış yerine kullanan yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Sırayla **toupper** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [isupper](isupper-isupper-l-iswupper-iswupper-l.md) her ikisi de sıfır olmayan bir değer döndürmesi gerekir.
+Sırayla **toupper** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [isupper](isupper-isupper-l-iswupper-iswupper-l.md) her ikisi de sıfır olmayan döndürmelidir.
 
-[Veri dönüştürme yordamları](../../c-runtime-library/data-conversion.md)
+[Veri dönüştürme rutinleri](../../c-runtime-library/data-conversion.md)
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -118,7 +108,7 @@ Sırayla **toupper** beklenen sonuçları elde etmek için [__isascii](isascii-i
 |**_totupper_l**|**_toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 > [!NOTE]
-> **_toupper_l** ve **_towupper_l** hiçbir yerel ayar bağımlılığı olan ve doğrudan çağrılması amaçlanmamıştır. Tarafından iç kullanım için sağlanan **_totupper_l**.
+> **_toupper_l** ve **_towupper_l** öğelerinin yerel bağımlılığı olan ve doğrudan çağrılmak için değildirler. Tarafından iç kullanım için sağlanan **_totupper_l**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -128,11 +118,11 @@ Sırayla **toupper** beklenen sonuçları elde etmek için [__isascii](isascii-i
 |**_toupper**|\<CType.h >|
 |**towupper**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [işlevlere](../../c-runtime-library/to-functions.md).
+Örnekte bakın [işlevlere](../../c-runtime-library/to-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

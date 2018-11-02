@@ -1,15 +1,9 @@
 ---
-title: C++ komut satırı işlemeyi özelleştirme | Microsoft Docs
-ms.custom: ''
+title: C++ Komut Satırı İşlemini Özelleştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _setenvp
 - _setargv
-dev_langs:
-- C++
 helpviewer_keywords:
 - command line [C++], processing
 - command-line processing
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - suppressing environment processing
 - _setenvp function
 ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 855562b8b6eb5e577914fc6305668ee7305c86e1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da1b3bdd6392b144f9315add4c19de14c1d14d41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110685"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582695"
 ---
 # <a name="customizing-c-command-line-processing"></a>C++ Komut Satırı İşlemini Özelleştirme
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3803 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3803
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3803
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3803
 ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6a841dbaae4142e92d8e0987b0618285e4f71f60
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f6c255ec18d6dcf94f3ec022f09b173c2c66a1dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565093"
 ---
 # <a name="compiler-error-c3803"></a>Derleyici Hatası C3803
 

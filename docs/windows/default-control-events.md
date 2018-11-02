@@ -1,29 +1,18 @@
 ---
-title: Varsayılan denetim olayları | Microsoft Docs
-ms.custom: ''
+title: Varsayılan Denetim Olayları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Dialog Editor [C++], default control events
 - controls [C++], default control events
 - events [C++], controls
 - dialog box controls [C++], events
 ms.assetid: 75556b23-18f5-4390-97a4-2ecad3309741
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 95c3d15414dbb312c60029a86707c1d32df56adc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8cd0102be240bc98cf7900653b8fbb714e2a99a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405521"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520416"
 ---
 # <a name="default-control-events"></a>Varsayılan Denetim Olayları
 

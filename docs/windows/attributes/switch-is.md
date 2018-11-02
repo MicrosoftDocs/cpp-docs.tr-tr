@@ -1,28 +1,17 @@
 ---
-title: switch_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: switch_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.switch_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - switch_is attribute
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0eb8c8b3a49e7aa4754762ce0c065c816e262bca
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e70f7d3d7419c25f0c5f9df8006e1d795c8b4361
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062918"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467299"
 ---
 # <a name="switchis"></a>switch_is
 

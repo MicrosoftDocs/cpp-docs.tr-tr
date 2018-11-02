@@ -1,14 +1,8 @@
 ---
-title: Tarih türü | Microsoft Docs
-ms.custom: ''
+title: Tarih türü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - DATE
-dev_langs:
-- C++
 helpviewer_keywords:
 - Date data type, implementing
 - Date data type
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - MFC, date and time
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fe80a16f0085e37feaf7c80611fa303f1d3bf1ab
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b8460d50a0c6cbd4b213e45c62d8d6cadae68544
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425775"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548193"
 ---
 # <a name="date-type"></a>Tarih türü
 

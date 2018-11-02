@@ -1,10 +1,6 @@
 ---
-title: CMFCDesktopAlertWnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDesktopAlertWnd sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDesktopAlertWnd
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWnd
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAutoCloseTime
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetSmallCaption
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetTransparency
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDesktopAlertWnd [MFC], Create
 - CMFCDesktopAlertWnd [MFC], GetAnimationSpeed
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CMFCDesktopAlertWnd [MFC], SetSmallCaption
 - CMFCDesktopAlertWnd [MFC], SetTransparency
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: abd7a3348f59379e798a0c1369a4f69ca99a4d7e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 759f4cdb66c1e16f022731e9d3183ad1192e0975
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585139"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd sınıfı
 

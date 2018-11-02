@@ -1,12 +1,6 @@
 ---
-title: Genel Visual C++ 64 bit geçiş sorunları | Microsoft Docs
-ms.custom: ''
+title: Genel Visual C++ 64 Bit Geçiş Sorunları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - 64-bit programming [C++], migration
 - 64-bit compiler [C++], migration
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - 64-bit compiler [C++], porting 32-bit code
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e7f643fa088acc31a40032184cd8215afd10b088
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1eb5a7f8d708d16241f1637269f31563378f084d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719231"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468776"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>Genel Visual C++ 64 Bit Geçiş Sorunları
 

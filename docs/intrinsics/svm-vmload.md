@@ -1,28 +1,18 @@
 ---
-title: __svm_vmload | Microsoft Docs
-ms.custom: ''
+title: __svm_vmload
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __svm_vmload
-dev_langs:
-- C++
 helpviewer_keywords:
 - __svm_vmload intrinsic
 - VMLOAD instruction
 ms.assetid: b46a5592-db76-4ffc-8694-2f3494e28bed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 837889478a4a646f8fb3829b3a05d0842edc1090
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 31f60096b60db7d8b135c686af87464060e0401a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399866"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584775"
 ---
 # <a name="svmvmload"></a>__svm_vmload
 

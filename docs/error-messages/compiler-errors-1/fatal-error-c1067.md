@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1067 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1067
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1067
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1067
 ms.assetid: e2c94be6-4573-4571-aac9-73d657fe9f96
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f267e58617fbc68835fd3a387c4b635de4fd0530
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f8fe301e25d9ecb5cc67397f9537e0bbd86c0627
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077678"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595630"
 ---
 # <a name="fatal-error-c1067"></a>Önemli hata C1067
 

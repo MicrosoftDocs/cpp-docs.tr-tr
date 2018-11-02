@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1100 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1100
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1100
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1100
 ms.assetid: d4d877ea-acd6-4ec7-961e-55e460d98820
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b5567f1aad0d74bd42059e3458f4655781f30d16
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6f64a0009f2adff27725343ddc6ed8a6fb9bf07f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054109"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475627"
 ---
 # <a name="fatal-error-c1100"></a>Önemli hata C1100
 

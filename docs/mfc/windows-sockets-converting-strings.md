@@ -1,27 +1,17 @@
 ---
-title: 'Windows Yuvaları: Dizeleri dönüştürme | Microsoft Docs'
-ms.custom: ''
+title: 'Windows Yuvaları: Dizeleri Dönüştürme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows Sockets [MFC], multibyte character string conversion
 - sockets [MFC], multibyte character string conversion issues
 - string conversion, multibyte character strings
 ms.assetid: 9df522b5-6b23-41e0-bb96-e4e623baf141
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b23d2149659cdad320a58bdff0f42ba113b5696
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 984554c2405bf6b8ae6a522e545bcbba6ebae529
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378949"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543736"
 ---
 # <a name="windows-sockets-converting-strings"></a>Windows Yuvaları: Dizeleri Dönüştürme
 

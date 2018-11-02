@@ -1,26 +1,16 @@
 ---
-title: ATL bağlantı noktası örneği | Microsoft Docs
-ms.custom: ''
+title: ATL bağlantı noktası örneği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - connection points [C++], examples
 - examples [ATL]
 ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9aafd2676b1816737015b6af4fdbc9b3a710ae5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9312db740171672e6b0f231855408e0d0a9e060d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495998"
 ---
 # <a name="atl-connection-point-example"></a>ATL bağlantı noktası örneği
 

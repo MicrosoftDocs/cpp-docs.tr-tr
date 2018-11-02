@@ -1,25 +1,15 @@
 ---
-title: Visual c++'ta açık klasör projelere | Microsoft Docs
-ms.custom: ''
+title: Visual c++ açık klasörü projeler
 ms.date: 06/01/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c7473cd7d6f2f07d81011eca0826b8066513d23
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 396b1fe9f879e7adcdfe9a69fee5c9e1916ff545
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542018"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual c++ açık klasörü projeler
 

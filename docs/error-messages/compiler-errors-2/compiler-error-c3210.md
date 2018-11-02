@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3210 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3210
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3210
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3210
 ms.assetid: c6e9d309-fabc-4e7d-b526-be20d9fe3f6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 804586a866f6a4d2c3cf206af14e0e2f907ed1b6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9e0ac1aded7eef40be0e923b3ac1ebc9ef00c7a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528745"
 ---
 # <a name="compiler-error-c3210"></a>Derleyici Hatası C3210
 

@@ -1,27 +1,17 @@
 ---
-title: ELSEIF2 | Microsoft Docs
-ms.custom: ''
+title: ELSEIF2
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - ELSEIF2
-dev_langs:
-- C++
 helpviewer_keywords:
 - ELSEIF2 directive
 ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2b71b536a99dfea2555bed24a4a0d2c7c81b570
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2b80e59419a3861df3354588adc86801543aadbd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690512"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522326"
 ---
 # <a name="elseif2"></a>ELSEIF2
 

@@ -1,12 +1,6 @@
 ---
-title: C ve Win32 ile çoklu iş parçacığı kullanımı | Microsoft Docs
-ms.custom: ''
+title: C ve Win32 ile Çoklu İş Parçacığı Kullanımı
 ms.date: 02/02/2018
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows API [C++], multithreading
 - multithreading [C++], C and Win32
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - Win32 [C++], multithreading
 - threading [C]
 ms.assetid: 67cdc99e-1ad9-452b-a042-ed246b70040e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09397b5a60dcc2cbe2b3e6265f6080f3c5c1e212
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a544586cb3f78aed83d50ef10c083a4edbba5cb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460196"
 ---
 # <a name="multithreading-with-c-and-win32"></a>C ve Win32 ile Çoklu İş Parçacığı Kullanımı
 

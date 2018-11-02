@@ -1,24 +1,13 @@
 ---
-title: C++'ta Windows programlamasına genel bakış | Microsoft Docs
-ms.custom: ''
+title: C++'da Windows Programlamasına Genel Bakış
 ms.date: 04/06/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6ea59ae2cb0c12a60a8463434105f1cc6af0a77d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6ec12428b090d2317a6f2e5cc493d1e4f9392ff4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494412"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 

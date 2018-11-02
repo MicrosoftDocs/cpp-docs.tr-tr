@@ -1,27 +1,17 @@
 ---
-title: Komut satırı hatası D8016 | Microsoft Docs
-ms.custom: ''
+title: Komut Satırı Hatası D8016
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - D8016
-dev_langs:
-- C++
 helpviewer_keywords:
 - D8016
 ms.assetid: eec51312-7471-4f92-94b2-d517cafc8ef5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ee16542b2f0cf9842e351813ed2e0b0d22cccaa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c1e2e3e28f8556416f58d68f8ef1df4b220bc54c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056995"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567927"
 ---
 # <a name="command-line-error-d8016"></a>Komut Satırı Hatası D8016
 

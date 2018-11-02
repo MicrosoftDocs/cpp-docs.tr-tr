@@ -1,14 +1,8 @@
 ---
-title: ASSERT yerine VERIFY kullanma | Microsoft Docs
-ms.custom: ''
+title: ASSERT Yerine VERIFY Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - assert
-dev_langs:
-- C++
 helpviewer_keywords:
 - ASSERT statements
 - debugging [MFC], ASSERT statements
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - debugging assertions
 - assertions, debugging
 ms.assetid: 4c46397b-3fb1-49c1-a09b-41a72fae3797
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea6ea90460f3fd28724ee1fd34dfdeb3f6ae80b2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 266c6da52a2ff5e06dd6177a746c22e7df5adda4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491786"
 ---
 # <a name="using-verify-instead-of-assert"></a>ASSERT Yerine VERIFY Kullanma
 

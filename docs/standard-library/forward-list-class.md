@@ -1,10 +1,6 @@
 ---
-title: forward_list sınıfı | Microsoft Docs
-ms.custom: ''
+title: forward_list Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - forward_list/std::forward_list
 - forward_list/std::forward_list::allocator_type
@@ -44,8 +40,6 @@ f1_keywords:
 - forward_list/std::forward_list::splice_after
 - forward_list/std::forward_list::swap
 - forward_list/std::forward_list::unique
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::forward_list
 - std::forward_list::allocator_type
@@ -86,16 +80,12 @@ helpviewer_keywords:
 - std::forward_list::swap
 - std::forward_list::unique
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 017d5d5c2934fa687f91898b896a0ad6f1dcab6f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a818be72266e2cb8471c2eb29a6e058b8dd3ef7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612049"
 ---
 # <a name="forwardlist-class"></a>forward_list Sınıfı
 
@@ -178,7 +168,7 @@ Denetlenen dizi eklemeler yapılan çağrılar tarafından oluşabilir [forward_
 |[Sıralama](#sort)|Öğeleri artan sırada veya bir koşula göre belirtilen bir düzende yerleştirir.|
 |[splice_after](#splice_after)|Düğümler arasındaki bağlantılar restitches.|
 |[değiştirme](#swap)|İletme iki listenin öğelerini değiştirir.|
-|[benzersiz](#unique)|Belirtilen testi geçmesi bitişik öğeyi kaldırır.|
+|[unique](#unique)|Belirtilen testi geçmesi bitişik öğeyi kaldırır.|
 
 ### <a name="operators"></a>İşleçler
 

@@ -1,12 +1,6 @@
 ---
-title: 'Kapsayıcılar: Gelişmiş Özellikler | Microsoft Docs'
-ms.custom: ''
+title: 'Kapsayıcılar: Gelişmiş Özellikler'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - links [MFC], to embedded OLE objects
 - containers [MFC], links to embedded OLE objects
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 51dee27c69d42bde83f8eb6925e96d0dad80dca6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 95606818cf5673ef5d4a70361a8e79a9ed28d11b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081254"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506086"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 

@@ -1,12 +1,6 @@
 ---
-title: Denetim çubukları | Microsoft Docs
-ms.custom: ''
+title: Denetim Çubukları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - command bars [MFC], types of
 - toolbars [MFC], control bars
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8583b0ceba041ba9b99cb78e523d78bba71414a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 13d457350a6a75357752556bb08a582e8a59f333
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439633"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519719"
 ---
 # <a name="control-bars"></a>Denetim Çubukları
 

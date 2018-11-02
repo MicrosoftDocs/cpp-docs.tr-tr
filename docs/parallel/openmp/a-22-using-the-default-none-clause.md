@@ -1,23 +1,13 @@
 ---
-title: A.22 default(none) yan tümcesini kullanma | Microsoft Docs
-ms.custom: ''
+title: A.22   default(none) Yan Tümcesini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: a3fa4e62-1e92-4896-ae3f-be268067d917
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31f3674c515d5ea89c9226ae1224cc89cfdf4061
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 55440f9bcce09878a497ea4ee39a6b5478703cd1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411488"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523928"
 ---
 # <a name="a22---using-the-defaultnone-clause"></a>A.22   default(none) Yan Tümcesini Kullanma
 

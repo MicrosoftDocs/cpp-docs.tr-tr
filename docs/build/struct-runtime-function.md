@@ -1,23 +1,13 @@
 ---
-title: RUNTIME_FUNCTION | Microsoft Docs
-ms.custom: ''
+title: struct RUNTIME_FUNCTION
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 84386527-d3aa-41c5-871d-78e3e1913704
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f3831dc36664c556cf0a020ed87c60200443fd3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6b113f6cf1e9951f9e4578e15c9ed0af3d036fa6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718243"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520256"
 ---
 # <a name="struct-runtimefunction"></a>struct RUNTIME_FUNCTION
 

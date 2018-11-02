@@ -1,12 +1,6 @@
 ---
-title: Üye işaretçileri | Microsoft Docs
-ms.custom: ''
+title: Üye İşaretçileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declarations, pointers
 - class members [C++], pointers to
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - members [C++], pointers to
 - pointers, declarations
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 971f3df56f049b919ebb1f3fb8f517c97b2829e7
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: ac8a1b43b3bf8bde8f910e72b601bf7d94e0d19d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480297"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 

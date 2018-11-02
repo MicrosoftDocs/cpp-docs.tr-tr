@@ -1,14 +1,8 @@
 ---
-title: Araç çubuğu temelleri | Microsoft Docs
-ms.custom: ''
+title: Araç Çubuğu Temelleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - RT_TOOLBAR
-dev_langs:
-- C++
 helpviewer_keywords:
 - embedding toolbar in frame window class [MFC]
 - application wizards [MFC], installing default application toolbars
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - frame window classes [MFC], toolbar embedded in
 - LoadToolBar method [MFC]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f52c5af48631a1441b160a9b59a987f697fdedc6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 965842dd42033910366ec4686e7c0abf775f2d5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438151"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530799"
 ---
 # <a name="toolbar-fundamentals"></a>Araç Çubuğu Temelleri
 

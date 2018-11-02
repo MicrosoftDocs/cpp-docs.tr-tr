@@ -1,28 +1,17 @@
 ---
-title: propputref (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: propputref (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.propputref
-dev_langs:
-- C++
 helpviewer_keywords:
 - propputref attribute
 ms.assetid: 9b0aed74-fdc7-4e59-9117-949bea4f86dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0ea1c6c3d0e8f0458b54f5794824c4b25c3dcd60
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0ebf39be6d83e7c5a64ad29f34f9accf0743dbf4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059383"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551287"
 ---
 # <a name="propputref"></a>propputref
 

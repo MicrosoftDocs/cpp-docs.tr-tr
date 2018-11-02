@@ -1,10 +1,6 @@
 ---
-title: CComClassFactory2 sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComClassFactory2 sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComClassFactory2
 - ATLCOM/ATL::CComClassFactory2
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLCOM/ATL::CComClassFactory2::GetLicInfo
 - ATLCOM/ATL::CComClassFactory2::LockServer
 - ATLCOM/ATL::CComClassFactory2::RequestLicKey
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComClassFactory2 class
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05fcef5ee1141de8261bc4ecc813cd573fb8f901
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ba5bda2e73964e7195c4955806e897f9496c244a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460209"
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 sınıfı
 

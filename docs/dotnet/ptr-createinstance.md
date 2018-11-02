@@ -1,31 +1,21 @@
 ---
-title: PTR::CreateInstance | Microsoft Docs
-ms.custom: ''
+title: ptr::CreateInstance
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr.CreateInstance
 - msclr::com::ptr::CreateInstance
 - msclr.com.ptr.CreateInstance
 - ptr::CreateInstance
-dev_langs:
-- C++
 helpviewer_keywords:
 - ptr::CreateInstance
 ms.assetid: 9e8e4c4c-1651-4839-8829-5857d74470fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 56034267c40e34c2a88295e27372b96c8d32b675
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5b1a59eef44c7ad1c1903cb2cb1b75a4cbd8fabb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536181"
 ---
 # <a name="ptrcreateinstance"></a>ptr::CreateInstance
 
