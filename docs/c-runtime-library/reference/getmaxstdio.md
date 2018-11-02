@@ -1,10 +1,6 @@
 ---
-title: _getmaxstdio | Microsoft Docs
-ms.custom: ''
+title: _getmaxstdio
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getmaxstdio
 apilocation:
@@ -23,24 +19,18 @@ apitype: DLLExport
 f1_keywords:
 - _getmaxstdio
 - getmaxstdio
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], number open
 - _getmaxstdio function
 - getmaxstdio function
 - open files, getting number
 ms.assetid: 700ca8ce-4a8c-4e00-9467-dfa9d6b831a0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2030937806eedbf1abe671032da75c531fdd5ca
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea8e516b4c0806230376ea52e399c9fa1f9a858a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618350"
 ---
 # <a name="getmaxstdio"></a>_getmaxstdio
 
@@ -54,11 +44,11 @@ int _getmaxstdio( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Şu anda, izin verilen eşzamanlı olarak açık dosya sayısı temsil eden bir sayı döndürür **stdio** düzeyi.
+İzin şu anda aynı anda açık dosya sayısını temsil eden bir sayı döndürür **stdio** düzeyi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım [_setmaxstdio](setmaxstdio.md) sırasında izin verilen eşzamanlı olarak açık dosyaların sayısını yapılandırmak için **stdio** düzeyi.
+Kullanım [_setmaxstdio](setmaxstdio.md) izin aynı anda açık dosya sayısını yapılandırmak için **stdio** düzeyi.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -66,7 +56,7 @@ Kullanım [_setmaxstdio](setmaxstdio.md) sırasında izin verilen eşzamanlı ol
 |-------------|---------------------|
 |**_getmaxstdio**|\<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -95,4 +85,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>

@@ -1,10 +1,6 @@
 ---
-title: filelength | Microsoft Docs
-ms.custom: ''
+title: filelength
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - filelength
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - filelength
-dev_langs:
-- C++
 helpviewer_keywords:
 - filelength function
 ms.assetid: 5fbc1912-7822-498d-bbf4-8bada87cf9b9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97800c09f79e786f9bf8f8428e146e2210d88d63
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 273b0c5e43245352c0a71319084f347cb01955fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395253"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481399"
 ---
 # <a name="filelength"></a>filelength
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_filelength](filelength-filelengthi64.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_filelength](filelength-filelengthi64.md) yerine.

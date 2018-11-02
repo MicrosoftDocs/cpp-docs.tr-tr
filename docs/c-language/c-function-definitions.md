@@ -1,12 +1,6 @@
 ---
-title: C işlev tanımları | Microsoft Docs
-ms.custom: ''
+title: C İşlev Tanımları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function declarators
 - function definitions
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - function body
 - declaring functions, variables
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cbfc7e7bd6a3f2ef727a0cc259f222afad0ab555
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dd396cb182aeae9ef587ab58f04893cf0283a8a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055240"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507217"
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
 

@@ -1,27 +1,17 @@
 ---
-title: '&lt;sstream&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;sstream&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <sstream>
-dev_langs:
-- C++
 helpviewer_keywords:
 - sstream header
 ms.assetid: 56f55bc5-549d-4e7f-aaad-99e0ffa49c9e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8801c41b23ab2c33e4c4e2df9cde8155c1eefafb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: cc08fb426df289b3478ad9d29b03f9a6dd5d3978
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957774"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605586"
 ---
 # <a name="ltsstreamgt"></a>&lt;sstream&gt;
 

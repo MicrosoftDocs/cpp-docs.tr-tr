@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3627 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3627
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3627
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3627
 ms.assetid: 905ad0a0-8c49-4187-b66e-b375f5a1fae5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f799007fffae3f8841b91de71001b5daf48b96f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: abed75e679aaf2b244667916a9725a09c46c80e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111673"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500691"
 ---
 # <a name="compiler-error-c3627"></a>Derleyici Hatası C3627
 

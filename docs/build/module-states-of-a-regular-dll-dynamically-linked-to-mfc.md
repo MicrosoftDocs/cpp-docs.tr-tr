@@ -1,12 +1,6 @@
 ---
-title: Normal MFC DLL'SİNİN modül durumları dinamik olarak MFC'ye bağlı | Microsoft Docs
-ms.custom: ''
+title: MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - regular MFC DLLs [C++], dynamically linked to MFC
 - module states [C++]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - module states [C++], regular MFC DLLs dynamically linked to
 - DLLs [C++], module states
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d458c445930896fb04cb339c7191f649be542faf
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bd485e484287a17b1f016acc7012178a2c74343d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462887"
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları
 

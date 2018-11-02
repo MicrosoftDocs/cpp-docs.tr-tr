@@ -1,26 +1,16 @@
 ---
-title: x64 yazılım kuralları | Microsoft Docs
-ms.custom: ''
+title: x64 Yazılım Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fc7f2bc51c257690a300776120d093e746e3eb8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8bd2c297aeafcfe46c7d4ba5a71f3234cbba8ec3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527272"
 ---
 # <a name="x64-software-conventions"></a>x64 Yazılım Kuralları
 

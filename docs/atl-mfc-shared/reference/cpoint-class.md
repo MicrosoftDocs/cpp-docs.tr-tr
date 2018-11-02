@@ -1,32 +1,22 @@
 ---
-title: CPoint sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPoint sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPoint
 - ATLTYPES/ATL::CPoint
 - ATLTYPES/ATL::CPoint::CPoint
 - ATLTYPES/ATL::CPoint::Offset
-dev_langs:
-- C++
 helpviewer_keywords:
 - LPPOINT structure
 - POINT structure
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2656871f62bf7881eee9c64041f3f1f492a3c948
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5df8dbe03a59f899f2157eff842218e91e8f40dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500626"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 

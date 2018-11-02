@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3049 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3049
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3049
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3049
 ms.assetid: 6ddf54f6-2c30-4d04-b637-98c6c922c533
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8ba6878c893aeaaaa1f0851fc94a6fd13bbf104
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ca8481eb06a7ec679b27a446bf738f2ad018f79d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081253"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526366"
 ---
 # <a name="compiler-error-c3049"></a>Derleyici Hatası C3049
 

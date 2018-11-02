@@ -1,28 +1,18 @@
 ---
-title: Araç İpucu bildirimlerini işleme | Microsoft Docs
-ms.custom: ''
+title: Araç İpucu Bildirimlerini İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - CToolBarCtrl class [MFC], handling notifications
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0449877f9894685ea724e3ad00c028e3e57f50d9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 973c4a12f3b3bdc91269736874b7193130290a76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548921"
 ---
 # <a name="handling-tool-tip-notifications"></a>Araç İpucu Bildirimlerini İşleme
 

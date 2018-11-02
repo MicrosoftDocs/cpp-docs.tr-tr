@@ -1,23 +1,13 @@
 ---
-title: Visual C++ taşıma ve yükseltme Kılavuzu | Microsoft Docs
-ms.custom: ''
+title: Visual C++ taşıma ve yükseltme Kılavuzu
 ms.date: 09/18/2018
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed94830a2a048f6706371ed7a88a706d7df04ab7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c1f4114be236e5e3707113bc19779bb50f358ca8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478097"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 

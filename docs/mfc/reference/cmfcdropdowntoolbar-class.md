@@ -1,10 +1,6 @@
 ---
-title: CMFCDropDownToolBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDropDownToolBar sınıfı
 ms.date: 10/188/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDropDownToolBar
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDropDownToolBar [MFC], AllowShowOnPaneMenu
 - CMFCDropDownToolBar [MFC], LoadBitmap
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CMFCDropDownToolBar [MFC], OnSendCommand
 - CMFCDropDownToolBar [MFC], OnUpdateCmdUI
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5d781cb78b1dce9f7ab3580e7acd32e3e6dbac55
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ccbdd69baea104f306cfdca69efb46985ee97b91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582006"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
 

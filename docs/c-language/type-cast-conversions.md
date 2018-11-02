@@ -1,12 +1,6 @@
 ---
-title: Tür atama dönüştürmeleri | Microsoft Docs
-ms.custom: ''
+title: Tür Atama Dönüştürmeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - data type conversion [C++], type-cast conversions
 - conversions [C++], type-cast
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - type casts [C++], about type-cast conversion
 - type-cast conversions [C++]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a98b49c1533f088ff447f77189a12d2653705420
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d2de646d9ad3082c43ce896fdf4bc3c7e55a4405
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505309"
 ---
 # <a name="type-cast-conversions"></a>Tür Atama Dönüştürmeleri
 
@@ -34,7 +24,7 @@ Tür atamaları türleri açıkça dönüştürmek için kullanabilirsiniz.
 
 *Cast ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*birli ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(***tür adı***)***atama ifadesi* 
+&nbsp;&nbsp;&nbsp;&nbsp;**(***tür adı***)***atama ifadesi*
 
 *tür adı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Belirleyicisi niteleyici listesinin* *soyut bildirimci*<sub>iyileştirilmiş</sub>

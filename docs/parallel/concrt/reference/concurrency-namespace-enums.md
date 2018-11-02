@@ -1,8 +1,6 @@
 ---
-title: Eşzamanlılık ad alanı sabit listeleri | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık ad alanı sabit listeleri
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - CONCRT/concurrency::Agents_EventType
 - CONCRT/concurrency::Concrt_TraceFlags
@@ -13,19 +11,13 @@ f1_keywords:
 - CONCRT/concurrency::WinRTInitializationType
 - CONCRT/concurrency::join_type
 - CONCRT/concurrency::message_status Enumeration
-dev_langs:
-- C++
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49ae12184189996561717874833d6cdf3f30e159
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 97d2e9fd8e64475d9194bb8b2ab12fdee315e176
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677350"
 ---
 # <a name="concurrency-namespace-enums"></a>Eşzamanlılık ad alanı sabit listeleri
 

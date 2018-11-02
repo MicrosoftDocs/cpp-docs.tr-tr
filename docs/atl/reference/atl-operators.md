@@ -1,25 +1,15 @@
 ---
-title: ATL işleçler | Microsoft Docs
-ms.custom: ''
+title: ATL işleçleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [ATL]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0741cd65924a2c968153333aa1a557c31f429d45
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 361b0316e27ee06c64b3ed5e11c6aab10210596f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476264"
 ---
 # <a name="atl-operators"></a>ATL işleçleri
 

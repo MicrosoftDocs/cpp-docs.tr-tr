@@ -1,12 +1,6 @@
 ---
-title: Belgedeki komutları işleme | Microsoft Docs
-ms.custom: ''
+title: Belgedeki Komutları İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message maps [MFC], in document class
 - command handling [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - command handling [MFC], commands in documents
 - documents [MFC], handling messages in
 ms.assetid: c7375584-27af-4275-b2fd-afea476785d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8845ea7c44fd5a34774db0508302f5959987cdc9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d2f0a7271452ace9b9e06ff995af61881db4403c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548960"
 ---
 # <a name="handling-commands-in-the-document"></a>Belgedeki Komutları İşleme
 

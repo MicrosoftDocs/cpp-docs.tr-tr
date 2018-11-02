@@ -1,37 +1,27 @@
 ---
-title: Bağlayıcı araçları hatası LNK1313 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1313
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1313
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1313
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6a896c8ba012c69755c5292475b2d155ad92066
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 380df2bff305acc47e423d69ea702d77c4eafdfd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705094"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604236"
 ---
 # <a name="linker-tools-error-lnk1313"></a>Bağlayıcı Araçları Hatası LNK1313
 
-> IJW/yerel modül; algılandı saf modüllerle bağlanamıyor
+> IJW/yerel modülü algılandı; saf modülleri ile bağlanamıyor
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual C++ geçerli sürümü ile derlenmiş .obj dosyaları ile yerel ya da karma yönetilen/yerel .obj dosyaları bağlantılandırma desteklemiyor **/CLR: pure**.
+Visual C++'ın geçerli sürümü ile derlenmiş .obj dosyaları ile yerel veya karma yönetilen/yerel .obj dosyalarını bağlama desteklemiyor **/CLR: pure**.
 
-**/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 ## <a name="example"></a>Örnek
 

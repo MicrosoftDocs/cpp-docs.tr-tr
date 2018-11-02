@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2870 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2870
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2870
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2870
 ms.assetid: 80523ee9-1fd3-4dc4-8a77-5083deb99066
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47101cbc2fb1be48ba54166b9c6ef99fc0c6c35e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f61281da23e46236e7fce496a4d89086e5d6c0ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546385"
 ---
 # <a name="compiler-error-c2870"></a>Derleyici Hatası C2870
 

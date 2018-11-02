@@ -1,10 +1,6 @@
 ---
-title: _Write | Microsoft Docs
-ms.custom: ''
+title: _write
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _write
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _write
-dev_langs:
-- C++
 helpviewer_keywords:
 - _write function
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 917309717d72048650d2b3975fefd74a1db50949
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: b3fa53b21d4ea23c5f8e59de673f4074deedb505
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464584"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519255"
 ---
 # <a name="write"></a>_write
 

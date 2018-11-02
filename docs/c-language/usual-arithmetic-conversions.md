@@ -1,12 +1,6 @@
 ---
-title: Olağan aritmetik dönüştürmeler | Microsoft Docs
-ms.custom: ''
+title: Olağan Aritmetik Dönüştürmeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - arithmetic conversions [C++]
 - type conversion [C++], arithmetic
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - conversions [C++], arithmetic
 - arithmetic operators [C++], type conversions
 ms.assetid: bfa49803-0efd-45d0-b987-111412a140d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 15ceaa3e5b50fbc72d14564630399b5e5ba74b49
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a3a645009b9c848fc48f4dc49819ea474222b3fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540536"
 ---
 # <a name="usual-arithmetic-conversions"></a>Olağan Aritmetik Dönüştürmeler
 

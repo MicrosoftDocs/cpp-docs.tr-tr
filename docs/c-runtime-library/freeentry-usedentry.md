@@ -1,33 +1,23 @@
 ---
-title: _FREEENTRY, _USEDENTRY | Microsoft Docs
-ms.custom: ''
+title: _FREEENTRY, _USEDENTRY
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - USEDENTRY
 - _USEDENTRY
 - _FREEENTRY
 - FREEENTRY
-dev_langs:
-- C++
 helpviewer_keywords:
 - _USEDENTRY constant
 - _FREEENTRY constant
 - FREEENTRY constant
 - USEDENTRY constant
 ms.assetid: 26f658e6-6846-4a4e-9984-262cfe392770
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 60487a502fd304be39f973659cb5fd3432ec7a1d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3bf05807930373a905a5bf71cf4ebc1f119056a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513990"
 ---
 # <a name="freeentry-usedentry"></a>_FREEENTRY, _USEDENTRY
 

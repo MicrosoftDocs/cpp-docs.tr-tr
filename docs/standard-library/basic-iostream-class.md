@@ -1,28 +1,18 @@
 ---
-title: basic_iostream sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_iostream Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - istream/std::basic_iostream
 - istream/std::basic_iostream::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - basic_iostream class
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ef4b993ec628771666ac3773b575ee518c18173
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 80aad69f05b7473b508447d6f69f1d92edbeeca3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106444"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494490"
 ---
 # <a name="basiciostream-class"></a>basic_iostream Sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CSettingsStore sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSettingsStore sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSettingsStore
 - AFXSETTINGSSTORE/CSettingsStore
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXSETTINGSSTORE/CSettingsStore::Open
 - AFXSETTINGSSTORE/CSettingsStore::Read
 - AFXSETTINGSSTORE/CSettingsStore::Write
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSettingsStore [MFC], CSettingsStore
 - CSettingsStore [MFC], Close
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CSettingsStore [MFC], Read
 - CSettingsStore [MFC], Write
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93a56649bb34060c45bf58a621156f46a22682fe
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7f1ca94423cb1ef269c7556be25b1926fa42d2a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614688"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore sınıfı
 

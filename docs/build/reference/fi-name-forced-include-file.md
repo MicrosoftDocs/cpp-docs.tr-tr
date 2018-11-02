@@ -1,33 +1,23 @@
 ---
-title: -FI (zorlanmış içerilen dosyayı Adlandır) | Microsoft Docs
-ms.custom: ''
+title: /FI (Zorla Dahil Edilen Dosyayı Adlandır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 - VC.Project.VCCLCompilerTool.ForcedIncludeFiles
 - VC.Project.VCCLWCECompilerTool.ForcedIncludeFiles
 - /fi
-dev_langs:
-- C++
 helpviewer_keywords:
 - FI compiler option [C++]
 - -FI compiler option [C++]
 - /FI compiler option [C++]
 - preprocess header file compiler option [C++]
 ms.assetid: 07e79577-8152-4df9-a64c-aae08c603397
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f4517125121c0129da028437bc7ce367f9f96b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b65fe37306e8b2469a32007bdd2c2564e334bc97
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481256"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI (Zorla Dahil Edilen Dosyayı Adlandır)
 
@@ -55,7 +45,7 @@ Bu seçenek dosyayı çift tırnak işaretleri ile belirtmekle aynı etkiye sahi
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

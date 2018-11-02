@@ -1,14 +1,8 @@
 ---
-title: event_source (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: event_source (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.event_source
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling, attributes
 - event logs, event source
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - event sources
 - event handling, creating event source
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 41a757ccd70fe95ce82f90b1128985986e3722b0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e7a58abc617fcfed69020bdace60758a6bf75337
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510571"
 ---
 # <a name="eventsource"></a>event_source
 

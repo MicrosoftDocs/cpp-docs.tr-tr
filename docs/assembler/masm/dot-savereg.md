@@ -1,27 +1,17 @@
 ---
-title: . SAVEREG | Microsoft Docs
-ms.custom: ''
+title: .SAVEREG
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .SAVEREG
-dev_langs:
-- C++
 helpviewer_keywords:
 - .SAVEREG directive
 ms.assetid: 1dbc2ef6-a197-40e7-9e55-fddcae8cef29
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e7010664cd2e80841d9e35d8fcf72d195cecf796
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cac7aa7f2bdbf6b60831d2beb062f86559ec0358
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688995"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472832"
 ---
 # <a name="savereg"></a>.SAVEREG
 

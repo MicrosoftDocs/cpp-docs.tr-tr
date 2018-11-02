@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2021 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2021
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2021
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2021
 ms.assetid: 064f32e2-3794-48d5-9767-991003dcb36a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31169c59ba9731d8eda52f22644294b8bb680bf2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6492dfffbb5a2f80ea543d4248c0f77759c0a521
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514016"
 ---
 # <a name="compiler-error-c2021"></a>Derleyici Hatası C2021
 

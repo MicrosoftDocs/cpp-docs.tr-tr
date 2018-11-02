@@ -1,12 +1,6 @@
 ---
-title: Açılır menüler (C++) oluşturma | Microsoft Docs
-ms.custom: ''
+title: Açılır menüler oluşturma (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - context menus [C++], Menu Editor
 - pop-up menus [C++], creating
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - shortcut menus [C++], creating
 - pop-up menus [C++], displaying
 ms.assetid: dff4dddf-2e8d-4c34-b755-90baae426b58
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6c66f7074269e99b35785299800665be48cebef9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 243a2489918f74243ce3b2268ec44c4fe4c1b566
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415726"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506790"
 ---
 # <a name="creating-pop-up-menus-c"></a>Açılır menüler oluşturma (C++)
 

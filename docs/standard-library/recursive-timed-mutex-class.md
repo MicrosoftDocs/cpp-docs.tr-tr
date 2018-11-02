@@ -1,10 +1,6 @@
 ---
-title: recursive_timed_mutex sınıfı | Microsoft Docs
-ms.custom: ''
+title: recursive_timed_mutex Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - mutex/std::recursive_timed_mutex
 - mutex/std::recursive_timed_mutex::recursive_timed_mutex
@@ -13,11 +9,7 @@ f1_keywords:
 - mutex/std::recursive_timed_mutex::try_lock_for
 - mutex/std::recursive_timed_mutex::try_lock_until
 - mutex/std::recursive_timed_mutex::unlock
-dev_langs:
-- C++
 ms.assetid: 59cc2d5c-ed80-45f3-a0a8-05652a8ead7e
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::recursive_timed_mutex [C++]
 - std::recursive_timed_mutex [C++], recursive_timed_mutex
@@ -26,14 +18,12 @@ helpviewer_keywords:
 - std::recursive_timed_mutex [C++], try_lock_for
 - std::recursive_timed_mutex [C++], try_lock_until
 - std::recursive_timed_mutex [C++], unlock
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f30cf00a1e551c8d25b17d3a876d556ecea40c9e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2cb6fe8588f4b81ae5c67533c4b9124ae8c9b252
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618159"
 ---
 # <a name="recursivetimedmutex-class"></a>recursive_timed_mutex Sınıfı
 

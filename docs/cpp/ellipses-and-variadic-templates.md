@@ -1,23 +1,13 @@
 ---
-title: Üç nokta ve Variadic şablonları | Microsoft Docs
-ms.custom: ''
+title: Üç Nokta ve Variadic Şablonları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 509ff98082edfad8fc48b3e1eaf6c3d4b4e6ad48
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 387cf4478192cb9470804c219eee8046f8e47abe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090483"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589624"
 ---
 # <a name="ellipses-and-variadic-templates"></a>Üç Nokta ve Variadic Şablonları
 

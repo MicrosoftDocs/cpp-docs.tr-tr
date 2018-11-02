@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4178 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4178
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4178
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4178
 ms.assetid: 2c2c8f97-a5c4-47cd-8dd2-beea172613f3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 806be9713bff649dde4031c3d14363b76aa4f563
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 76e2b0e6ee42e8f32eb462336721d860cff006a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073739"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540094"
 ---
 # <a name="compiler-warning-level-1-c4178"></a>Derleyici Uyarısı (düzey 1) C4178
 

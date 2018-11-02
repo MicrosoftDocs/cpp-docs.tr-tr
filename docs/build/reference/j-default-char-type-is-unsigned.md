@@ -1,16 +1,10 @@
 ---
-title: -J (varsayılan karakter türü imzasız) | Microsoft Docs
-ms.custom: ''
+title: /J (Varsayılan Karakter Türü İmzasız)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.DefaultCharIsUnsigned
 - VC.Project.VCCLWCECompilerTool.DefaultCharIsUnsigned
 - /j
-dev_langs:
-- C++
 helpviewer_keywords:
 - defaults, char type
 - char data type
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - J compiler option [C++]
 - default char type is unsigned
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 400985751d9ceebf7cc2c5f632cb33c5ba847bfe
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c709e991574cef481aa8357a789701bba9831d92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528095"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J (Varsayılan Karakter Türü İmzasız)
 
@@ -61,7 +51,7 @@ ANSI C ve C++ özel uygulanışı gerektirmez `char` türü. Bu seçenek, sonund
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,11 +1,6 @@
 ---
-title: cacos, cacosf, cacosl | Microsoft Docs
-ms.custom: ''
+title: cacos, cacosf, cacosl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cacos
 - cacosf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/cacos
 - complex/cacosf
 - complex/cacosl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cacos function
 - cacosf function
 - cacosl function
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6734080e8aff91d9276ef59203e2a3911ee9e7f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 18757ecd30f399ca3d1fdb77e8bff8213a265e74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543201"
 ---
 # <a name="cacos-cacosf-cacosl"></a>cacos, cacosf, cacosl
 
-Dal keser gerçek ekseni boyunca [-1, + 1] aralığı dışında ile karmaşık bir sayının arkkosinüsünü alır.
+Dal keser gerçek ekseni aralığı [-1, + 1] dışında ile karmaşık bir sayının arkkosinüsünü alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,19 +61,19 @@ Radyan cinsinden açı temsil eden bir karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sayının arkkosinüsünü *z*, radyan cinsinden açı. Sonuç ve sanal ekseni boyunca sınırsız gerçek ekseni boyunca [0, π] aralığındaki. Bir etki alanına hata oluşacaktır *z* [-1, + 1] aralık dışında.
+Arkkosinüsünü *z*, radyan cinsinden açı. Sonuç ve sanal ekseni sınırsız gerçek ekseni aralığı [0, π]. Bir etki alanı hatası meydana gelir *z* [-1, + 1] aralığının dışında.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cacos** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **cacos** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cacos** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cacos** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**cacos**, **cacosf**, **cacosl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

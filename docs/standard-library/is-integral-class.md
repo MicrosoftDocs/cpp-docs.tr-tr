@@ -1,28 +1,18 @@
 ---
-title: is_integral sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_integral Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_integral
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_integral class
 - is_integral
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c44288c990f773984492f7c05b80423b17c1a37c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 89655517c73f7c84f48f8b85a1c119674950ebeb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110584"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556630"
 ---
 # <a name="isintegral-class"></a>is_integral Sınıfı
 

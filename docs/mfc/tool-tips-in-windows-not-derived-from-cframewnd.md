@@ -1,12 +1,6 @@
 ---
-title: Araç ipuçları içinde Windows Cframewnd'den türetilmemiş | Microsoft Docs
-ms.custom: ''
+title: CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - enabling tool tips [MFC]
 - TOOLTIPTEXT structure [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - controls [MFC], tool tips
 - handler functions [MFC], tool tips
 ms.assetid: cad5ef0f-02e3-4151-ad0d-3d42e6932b0e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ea6f39f8c1478715ecc656ca84c1d6b24b7c03b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2545bda725428835c256ad81edc9070bd004d474
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620304"
 ---
 # <a name="tool-tips-in-windows-not-derived-from-cframewnd"></a>CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları
 

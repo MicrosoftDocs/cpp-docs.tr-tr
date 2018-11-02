@@ -1,28 +1,17 @@
 ---
-title: no_injected_text (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: no_injected_text (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.no_injected_text
-dev_langs:
-- C++
 helpviewer_keywords:
 - no_injected_text attribute
 ms.assetid: 5256f808-e41e-4f4a-9ea5-e447919f5696
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 3169c58d192b80400bada8c403f8a769cfb11f55
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: af4bb4b07439c0a5dacfa0d4956db564d2dccefe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618124"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
 

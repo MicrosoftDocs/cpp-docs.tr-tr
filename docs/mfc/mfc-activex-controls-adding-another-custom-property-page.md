@@ -1,28 +1,18 @@
 ---
-title: 'MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - property pages [MFC], MFC ActiveX controls
 - custom property pages [MFC]
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1599500a775bcd1c76f2e63a1f7b20126a2fb329
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ac72258e881d10723a02b5103c602ac5cec6a1f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078212"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465318"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 

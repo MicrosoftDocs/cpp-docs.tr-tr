@@ -1,23 +1,13 @@
 ---
-title: 4.3 OMP_DYNAMIC | Microsoft Docs
-ms.custom: ''
+title: 4.3 OMP_DYNAMIC
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: a15edefb-1f85-4f06-a427-beb3cfc4434f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c15fa9d8c9d86b736bfc577a3b17e9809ec9baaf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0ea6784159a11fc194d0c1cd16d2316a80b9cd37
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439204"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488575"
 ---
 # <a name="43-ompdynamic"></a>4.3 OMP_DYNAMIC
 

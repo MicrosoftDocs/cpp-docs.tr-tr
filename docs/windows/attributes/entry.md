@@ -1,28 +1,17 @@
 ---
-title: Giriş (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Giriş (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.entry
-dev_langs:
-- C++
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ae14a6346f547d8c362bad478144e915ee9ebb98
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b6c34a603f3ba8abaf070759a22ddf2b8e9c2106
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663261"
 ---
 # <a name="entry"></a>giriş
 

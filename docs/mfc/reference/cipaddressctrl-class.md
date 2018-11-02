@@ -1,10 +1,6 @@
 ---
-title: Cıpaddressctrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cıpaddressctrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CIPAddressCtrl
 - AFXCMN/CIPAddressCtrl
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXCMN/CIPAddressCtrl::SetAddress
 - AFXCMN/CIPAddressCtrl::SetFieldFocus
 - AFXCMN/CIPAddressCtrl::SetFieldRange
-dev_langs:
-- C++
 helpviewer_keywords:
 - CIPAddressCtrl [MFC], CIPAddressCtrl
 - CIPAddressCtrl [MFC], ClearAddress
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b6699e0b8a37bba0505e9f6dde3d457f2230bd2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fe5503eb78954bf39a135cd0e4acda6c37fc5fa9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055027"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568707"
 ---
 # <a name="cipaddressctrl-class"></a>Cıpaddressctrl sınıfı
 

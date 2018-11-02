@@ -1,27 +1,17 @@
 ---
-title: '@fardata | Microsoft Docs'
-ms.custom: ''
+title: '@fardata'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@fardata'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@fardata symbol'
 ms.assetid: b1e096b3-54fc-44ef-bbe6-0c6d5f5d206d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1a4a9ac90b510dece949362a94efea0913d8430
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 32accbf29779378c610ae375ff7faba858833c55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684921"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492770"
 ---
 # <a name="fardata"></a>@fardata
 

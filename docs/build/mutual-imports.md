@@ -1,12 +1,6 @@
 ---
-title: Karşılıklı içeri aktarmalar | Microsoft Docs
-ms.custom: ''
+title: Karşılıklı İçeri Aktarmalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - mutual DLL imports [C++]
 - AFX_DATA
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7aee01e72fb8386b6aee7e6a505424b4138f45d7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 38f2e08139566ce6c70755cd367edf93677ef9af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614415"
 ---
 # <a name="mutual-imports"></a>Karşılıklı İçeri Aktarmalar
 

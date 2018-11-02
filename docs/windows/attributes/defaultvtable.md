@@ -1,28 +1,17 @@
 ---
-title: defaultvtable (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: defaultvtable (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.defaultvtable
-dev_langs:
-- C++
 helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 003123036b8ae0e6bc39660ff7f2d98394dcad83
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 40f901345601193db9752ea6c6dca980ded0625d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579939"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 

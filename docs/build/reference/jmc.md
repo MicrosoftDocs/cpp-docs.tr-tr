@@ -1,29 +1,20 @@
 ---
-title: / JMC (yalnızca kendi kodum'hata ayıklama) | Microsoft Docs
-ms.custom: 08/20/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
+title: / JMC (yalnızca kendi kodum'hata ayıklama)
+ms.date: 08/20/2018
 f1_keywords:
 - /JMC
-dev_langs:
-- C++
 helpviewer_keywords:
 - /JMC compiler option [C++]
 - Just my code [C++]
 - -JMC compiler option [C++]
 - User code, debugging
 - JMC compiler option [C++]
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1da60b43bd151a776278b51a5ee8a22de7ef3b4c
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: a81292b590d96ef93446f9bb59af305c7eda2ef9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40242847"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516863"
 ---
 # <a name="jmc-just-my-code-debugging"></a>/ JMC (yalnızca kendi kodum'hata ayıklama)
 
@@ -53,7 +44,7 @@ Daha fazla bilgi için bkz. [C++ Yalnızca benim kodum](/visualstudio/debugger/j
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1904 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1904
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1904
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1904
 ms.assetid: 10f66015-146f-41a7-8011-327b29dedec8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c84f65909ed17060ec4347975b7e7f34a782da95
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c29f6cea345746d7d71541aa3770a913cba10b38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079030"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614519"
 ---
 # <a name="fatal-error-c1904"></a>Önemli hata C1904
 

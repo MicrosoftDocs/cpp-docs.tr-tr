@@ -1,10 +1,6 @@
 ---
-title: _umask_s | Microsoft Docs
-ms.custom: ''
+title: _umask_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _umask_s
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - unmask_s
 - _umask_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - masks, file-permission-setting
 - _umask_s function
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - umask_s function
 - files [C++], permission settings for
 ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d45cb3ded6fd2c3d7a380069a7d7f3fd79619810
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 878a22cb2884c36e792ff8dead1453582addb5b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480677"
 ---
 # <a name="umasks"></a>_umask_s
 
@@ -60,29 +50,29 @@ errno_t _umask_s(
 ### <a name="parameters"></a>Parametreler
 
 *Modu*<br/>
-Varsayılan izni ayarı.
+Varsayılan izin ayarı.
 
 *pOldMode*<br/>
-İzni ayarı önceki değeri.
+Önceki izin ayarının değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata kodunu döndürür *modu* geçerli bir moda belirtmiyor veya *pOldMode* işaretçi **NULL**.
+Bir hata kodu döndürür *modu* geçerli bir mod belirtmiyor veya *pOldMode* işaretçisi **NULL**.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Modu*|*pOldMode*|Dönüş değeri|İçeriği *pOldMode*|
+|*Modu*|*pOldMode*|Dönüş değeri|İçeriğini *pOldMode*|
 |------------|----------------|----------------------|--------------------------------|
-|tüm|**NULL**|**EINVAL**|değiştirilmedi|
-|Geçersiz mod|tüm|**EINVAL**|değiştirilmedi|
+|Tüm|**NULL**|**EINVAL**|değiştirilmedi|
+|Geçersiz mod|Tüm|**EINVAL**|değiştirilmedi|
 
-Yukarıdaki koşullardan biri meydana gelirse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_umask_s** döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
+Yukarıdaki koşullar meydana gelirse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **_umask_s** döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Umask_s** işlevi tarafından belirtilen modu için geçerli işlem dosya izni maskesi ayarlar *modu*. Dosya izni maskesi tarafından oluşturulan yeni dosya izni ayarı değiştirir **_creat**, **_kurulum Aç**, veya **_sopen**. Bir bit maskesi 1 ise, dosyanın istenen izin değeri karşılık gelen bit (izin verilmeyen) 0 olarak ayarlanır. Bir bit maskesi 0 ise, karşılık gelen bit sol değişmez. Dosyanın ilk kez kapatılana kadar yeni bir dosya izni ayarı ayarlanmadı.
+**_Umask_s** işlevi geçerli işlemin dosya izni maskesi tarafından belirtilen modu ayarlar *modu*. Dosya izni maskesi tarafından oluşturulan yeni dosyaları izin ayarını değiştirir **_creat**, **_aç**, veya **_sopen**. Bir bit maskesi 1 ise, karşılık gelen bit dosyanın istenen izin değeri 0 (izin verilmeyen) olarak ayarlanır. Bir bit maskesi 0 ise, karşılık gelen bit bırakılır değişmez. Dosya ilk kez kapatılana kadar yeni bir dosya için izin ayarının ayarlanmadı.
 
-Tamsayı ifade *pmode* birini veya her ikisini SYS\STAT tanımlanan aşağıdaki bildirim sabitleri içerir. Y:
+Tamsayı ifadesini *pmode* birini veya her ikisini SYS\STAT tanımlanan aşağıdaki bildirim sabitleri içerir. Y:
 
 |*pmode*||
 |-|-|
@@ -90,9 +80,9 @@ Tamsayı ifade *pmode* birini veya her ikisini SYS\STAT tanımlanan aşağıdaki
 |**_S_IREAD**|Okuma izin verilir.|
 |**_S_IREAD** \| **_S_IWRITE**|Okuma ve yazma izin verilir.|
 
-Her iki sabitleri verildiğinde olan bit düzeyinde OR işleci katılan ( **|** ). Varsa *modu* bağımsız değişkeni **_s_ıread**, okuma izin verilmiyor (dosya salt yazılır). Varsa *modu* bağımsız değişkeni **_s_ıwrıte**, yazma izin verilmiyor (dosya salt okunur durumdadır). Örneğin, yazma bit maskesi ayarlarsanız, yeni dosyalar salt okunur olacaktır. MS-DOS ve Windows işletim sistemleri ile tüm dosyaları okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, ile bit okunur ayarını **_umask_s** dosyanın modları üzerinde hiçbir etkisi olmaz.
+Her iki sabitleri verildiğinde, bit düzeyinde OR işleci ile birleştirilir ( **|** ). Varsa *modu* bağımsız değişkeni **_s_ıread**, okuma izin verilmiyor (dosyayı salt yazılır). Varsa *modu* bağımsız değişkeni **_s_ıwrıte**, yazma izin verilmiyor (dosya salt okunur). Örneğin, yazma bit maskesi ayarlarsanız, tüm yeni dosyalar salt okunur olacaktır. MS-DOS ile Windows işletim sistemleri, tüm dosyaları okunabilir olduğunu unutmayın; Salt yazma izni vermek mümkün değildir. Bu nedenle, salt okunur bit ile ayarlama **_umask_s** dosyanın modları üzerinde hiçbir etkisi olmaz.
 
-Varsa *pmode* bildirim sabitleri bir birleşimini değil veya başka bir kümesi içerir, sabitleri işlevi yalnızca bu göz ardı eder.
+Varsa *pmode* bildirim sabitlerinden birini birleşimi değil veya alternatif bir kümesini içerir, sabitleri işlevi yalnızca bu göz ardı eder.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -100,7 +90,7 @@ Varsa *pmode* bildirim sabitleri bir birleşimini değil veya başka bir kümesi
 |-------------|---------------------|
 |**_umask_s**|\<io.h > ve \<sys/stat.h > ve \<sys/types.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

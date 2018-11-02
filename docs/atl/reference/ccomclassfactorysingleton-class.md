@@ -1,28 +1,20 @@
 ---
-title: CComClassFactorySingleton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComClassFactorySingleton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComClassFactorySingleton
 - ATLCOM/ATL::CComClassFactorySingleton
 - ATLCOM/ATL::CComClassFactorySingleton::CreateInstance
 - ATLCOM/ATL::CComClassFactorySingleton::m_spObj
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComClassFactorySingleton class
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: 7f26a9d603238c83aa4243092e88719d1de4fda1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 760bf47ff818e301ddfbdeb8c44d318ab105b760
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517318"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton sınıfı
 

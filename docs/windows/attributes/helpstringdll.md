@@ -1,28 +1,17 @@
 ---
-title: helpstringdll (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: helpstringdll (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.helpstringdll
-dev_langs:
-- C++
 helpviewer_keywords:
 - helpstringdll attribute [C++]
 ms.assetid: 121271fa-f061-492b-b87f-bbfcf4b02e7b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1697c25f19fe024ea2f808f08baea3adb4bcc69a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 17e70a54024b8e5a3ab29e2420f60fbf3eec08a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677246"
 ---
 # <a name="helpstringdll"></a>helpstringdll
 

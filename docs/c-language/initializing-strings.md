@@ -1,27 +1,17 @@
 ---
-title: Başlatma dizeleri | Microsoft Docs
-ms.custom: ''
+title: Başlatma Dizeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - character arrays, initializing
 - strings [C++], initializing
 - initializing arrays, strings
 ms.assetid: 0ab8079d-d0d3-48f9-afd1-36a7bb439b29
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e954fc417fb62d3bd08b1c37d445a3d7f2bc9ec9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 85fa3258b69aacd094501b1bb1599190eb0487df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579734"
 ---
 # <a name="initializing-strings"></a>Başlatma Dizeleri
 

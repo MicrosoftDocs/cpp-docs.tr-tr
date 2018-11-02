@@ -1,10 +1,6 @@
 ---
-title: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l | Microsoft Docs
-ms.custom: ''
+title: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbctolower_l
 - _mbctoupper_l
@@ -32,8 +28,6 @@ f1_keywords:
 - mbctoupper
 - mbctolower
 - _mbctoupper_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbctolower function
 - mbctolower_l function
@@ -48,23 +42,19 @@ helpviewer_keywords:
 - _totlower function
 - mbctoupper function
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1af1ae33d9f3b752ed58aaa7bd3dd3e22f7de8c2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e620af526e5f0af02868bba4ba635e9ed6e34ff6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539694"
 ---
 # <a name="mbctolower-mbctolowerl-mbctoupper-mbctoupperl"></a>_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 
-Test ve birden çok baytlı karakter harfe dönüştürür.
+Test eder ve çok baytlı bir karakterin harf dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,27 +78,27 @@ unsigned int _mbctoupper_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Dönüştürmek için birden çok baytlı karakter.
+Dönüştürülecek çok baytlı karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri dönüştürülmüş karakteri döndürür *c*, mümkün olduğunda. Aksi takdirde karakteri döndürür *c* değişmez.
+Bu işlevlerin her biri dönüştürülmüş karakteri döndürür *c*, mümkünse. Aksi halde karakteri döndürür *c* değişmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir karakter işlevlerini test *c* ve mümkünse, aşağıdaki dönüşümleri birini uygulayın.
+Bir karakter işlevleri test *c* ve mümkünse aşağıdaki dönüşümlerden birini uygulayın.
 
-|Yordamları|Dönüştürür|
+|Rutinleri|Dönüştürür|
 |--------------|--------------|
-|**_mbctolower**, **_mbctolower_l**|Karakter küçük büyük harf karakter.|
-|**_mbctoupper**, **_mbctoupper_l**|Karakter büyük küçük harf karakter.|
+|**_mbctolower**, **_mbctolower_l**|Karakteri küçük harf karaktere.|
+|**_mbctoupper**, **_mbctoupper_l**|Karakterin büyük harf karaktere.|
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlev olmadan sürümü **_l** soneki kullanır geçerli yerel ayar için bu yerel ayara bağımlı davranışı; sürümüyle **_l** sonekidir aynı yerel ayar parametresi kullanır ancak bu Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevin sürümünü **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır sürümüyle **_l** soneki, yerel ayar parametresini kullanması hariç, aynıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde, **_mbctolower** çağrıldı **jtolower**, ve **_mbctoupper** çağrıldı **jtoupper**. İçin yeni kod, bunun yerine yeni adları kullanın.
+Önceki sürümlerde, **_mbctolower** çağrıldı **jtolower**, ve **_mbctoupper** çağrıldı **jtoupper**. Yeni kod için yeni adları kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -121,12 +111,12 @@ Bir karakter işlevlerini test *c* ve mümkünse, aşağıdaki dönüşümleri b
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordamları|Gerekli başlık|
+|Rutinleri|Gerekli başlık|
 |--------------|---------------------|
 |**_mbctolower**, **_mbctolower_l**|\<Mbstring.h >|
 |**_mbctoupper**, **_mbctoupper_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

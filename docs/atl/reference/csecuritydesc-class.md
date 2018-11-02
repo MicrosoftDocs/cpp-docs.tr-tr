@@ -1,10 +1,6 @@
 ---
-title: CSecurityDesc sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSecurityDesc sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSecurityDesc
 - ATLSECURITY/ATL::CSecurityDesc
@@ -35,21 +31,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CSecurityDesc::SetOwner
 - ATLSECURITY/ATL::CSecurityDesc::SetSacl
 - ATLSECURITY/ATL::CSecurityDesc::ToString
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSecurityDesc class
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc7f178923e043d9ecd3be4849f7b2f497b51a08
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d06ec86b4a049daba945c347f4b424b5987010f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605815"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 

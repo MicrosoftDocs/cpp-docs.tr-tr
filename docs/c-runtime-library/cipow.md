@@ -1,10 +1,6 @@
 ---
-title: _Cıpow | Microsoft Docs
-ms.custom: ''
+title: _CIpow
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _CIpow
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - CIpow
 - _CIpow
-dev_langs:
-- C++
 helpviewer_keywords:
 - CIpow intrinsic
 - _CIpow intrinsic
 ms.assetid: 477aaf0c-ac58-4252-89dd-9f3e35d47536
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01fa112fe70094cbf97537e6288751ac14acd2db
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 5e41e44096bb353f95dd725f5ad64e95702f330f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235959"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517877"
 ---
 # <a name="cipow"></a>_CIpow
 

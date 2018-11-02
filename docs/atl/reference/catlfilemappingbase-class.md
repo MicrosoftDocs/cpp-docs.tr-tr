@@ -1,10 +1,6 @@
 ---
-title: CAtlFileMappingBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlFileMappingBase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlFileMappingBase
 - ATLFILE/ATL::CAtlFileMappingBase
@@ -17,21 +13,15 @@ f1_keywords:
 - ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem
 - ATLFILE/ATL::CAtlFileMappingBase::OpenMapping
 - ATLFILE/ATL::CAtlFileMappingBase::Unmap
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79cace12447eccb9ac7dc560b6add45bd0dc81c5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71b3b8621f4148f680337e9bce6ef469b90de746
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045087"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614389"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
 

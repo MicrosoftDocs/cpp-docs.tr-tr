@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3201 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3201
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3201
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3201
 ms.assetid: ec19cd64-1789-40a3-b2db-dff2852b9d98
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 466899de89e1f8760ec78e7d346ef949fab667be
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 92e068103563f7427de7b394536e72b06fab3374
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504552"
 ---
 # <a name="compiler-error-c3201"></a>Derleyici Hatası C3201
 

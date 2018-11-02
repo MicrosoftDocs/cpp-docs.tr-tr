@@ -1,26 +1,16 @@
 ---
-title: CString özel durum temizleme | Microsoft Docs
-ms.custom: ''
+title: CString özel durum temizleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CString objects, exceptions
 - exception handling, cleanup code
 ms.assetid: 28b9ce70-be63-4a0d-92a8-44bbfbc95e83
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81349135fa822627cb40bdcd2570276d8040e50e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f1950553e3bf3a43f029478e00b177f5cbfe121f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385527"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492553"
 ---
 # <a name="cstring-exception-cleanup"></a>CString özel durum temizleme
 

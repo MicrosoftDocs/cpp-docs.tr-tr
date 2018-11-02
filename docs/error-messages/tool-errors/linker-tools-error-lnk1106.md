@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1106 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1106
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1106
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1106
 ms.assetid: 528f7e65-04be-4966-b8af-9276837c7cda
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce6a8b2ef9ac807e48cff42186453666cebda5ee
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7551e2f3f1efc90913981feb674f48aadb9ace51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619043"
 ---
 # <a name="linker-tools-error-lnk1106"></a>Bağlayıcı Araçları Hatası LNK1106
 

@@ -1,27 +1,17 @@
 ---
-title: is_nothrow_move_assignable sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_nothrow_move_assignable sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_nothrow_move_assignable
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_nothrow_move_assignable
 ms.assetid: 000baa02-cbba-49de-9870-af730033348e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86a37ce88870ff2c60ed4f0a693bdaae32523c24
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: eb1ddcace7a68bf60154a15117a1c16a438d263d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108244"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535934"
 ---
 # <a name="isnothrowmoveassignable-class"></a>is_nothrow_move_assignable sınıfı
 

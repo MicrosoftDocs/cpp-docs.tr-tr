@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2116 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2116
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2116
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2116
 ms.assetid: d9203ddf-798d-490b-be41-0dd3f7d53653
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4e28be01c0f38579f09204a9b1312fdfe287851
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 38f500b203c0ec47743ccd76c8453ce6c9286918
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552103"
 ---
 # <a name="resource-compiler-error-rc2116"></a>Kaynak Derleyicisi Hatası RC2116
 

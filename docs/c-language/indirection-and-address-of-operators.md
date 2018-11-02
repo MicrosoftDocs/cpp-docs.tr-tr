@@ -1,12 +1,6 @@
 ---
-title: Yöneltme ve adres işleçleri | Microsoft Docs
-ms.custom: ''
+title: İşleçlerin Yöneltmesi ve Adresi
 ms.date: 02/16/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - address-of operator (&)
 - '* operator'
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - '* operator, address-of operator'
 - operators [C++], indirection
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 618a8053bea59896615d23514c2cf8aff29bea93
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 146f84c90aa56b5abf6ae5212c1729022cb7e4dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534374"
 ---
 # <a name="indirection-and-address-of-operators"></a>İşleçlerin Yöneltmesi ve Adresi
 

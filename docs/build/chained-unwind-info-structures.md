@@ -1,23 +1,13 @@
 ---
-title: Zincirleme Bırakma bilgi yapıları | Microsoft Docs
-ms.custom: ''
+title: Zincirleme Bırakma Bilgi Yapıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 176835bf-f118-45d9-9128-9db4b7571864
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6da09387595188026d855fb99a49b588e6f21aa3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 19d0beb8c3438183fa594d7ec3cab4929b3a491a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715032"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502147"
 ---
 # <a name="chained-unwind-info-structures"></a>Zincirleme Bırakma Bilgi Yapıları
 

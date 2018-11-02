@@ -1,28 +1,18 @@
 ---
-title: Şablonları (C++) | Microsoft Docs
-ms.custom: ''
+title: Şablonlar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - template_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - templates, C++
 - templates [C++]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 715927893ec07d08ca2f2bd6eefc5f10795d5574
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f1532b5aa4ea712feab08b49b7c035187ca0d042
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083645"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547971"
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 

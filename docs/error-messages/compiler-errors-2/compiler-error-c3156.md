@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3156 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3156
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3156
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3156
 ms.assetid: 1876da78-b94e-4af7-9795-28f72b209b3e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cfb52ad730df486ee804bcf958505512fadc0150
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 115e8cd63562964b19e4a67f7a649ecfab2596c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465266"
 ---
 # <a name="compiler-error-c3156"></a>Derleyici Hatası C3156
 

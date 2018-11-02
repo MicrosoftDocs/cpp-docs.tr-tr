@@ -1,29 +1,19 @@
 ---
-title: (Visual C++) bir sanal işlevi geçersiz kılma | Microsoft Docs
-ms.custom: ''
+title: Sanal İşlevi Geçersiz Kılma (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.virtualfunc.override
-dev_langs:
-- C++
 helpviewer_keywords:
 - virtual functions, overriding
 - base classes, overriding virtual functions defined in
 - Properties window, overriding virtual functions in
 ms.assetid: 2d8c76f2-7a6b-4c9c-8de5-4282ce7755b6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c150360294277653c777e5142cbf1dc57a97b2b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 193c84d2b9a0fe50ae84d3e69834feab27342042
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409798"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484148"
 ---
 # <a name="overriding-a-virtual-function-visual-c"></a>Sanal İşlevi Geçersiz Kılma (Visual C++)
 

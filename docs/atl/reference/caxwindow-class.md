@@ -1,10 +1,6 @@
 ---
-title: CAxWindow sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAxWindow sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAxWindow
 - ATLWIN/ATL::CAxWindow
@@ -16,22 +12,16 @@ f1_keywords:
 - ATLWIN/ATL::QueryHost
 - ATLWIN/ATL::SetExternalDispatch
 - ATLWIN/ATL::SetExternalUIHandler
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39b376d6e65a5002487cbf51186fdab9ccb3fc46
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6e8ebad0f99e086387bf9946323a2c1ef864f391
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523817"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 

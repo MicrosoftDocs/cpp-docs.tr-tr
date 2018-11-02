@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3225 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3225
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3225
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3225
 ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8d8b1251b9c13a71faf771c85924a75681deab7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 81316864c9c04c18ca1c96d1e74ad9988734eb72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033257"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541498"
 ---
 # <a name="compiler-error-c3225"></a>Derleyici Hatası C3225
 

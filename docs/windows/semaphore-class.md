@@ -1,34 +1,24 @@
 ---
-title: Semafor sınıfı | Microsoft Docs
-ms.custom: ''
+title: Semafor Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Semaphore
 - corewrappers/Microsoft::WRL::Wrappers::Semaphore::Lock
 - corewrappers/Microsoft::WRL::Wrappers::Semaphore::operator=
 - corewrappers/Microsoft::WRL::Wrappers::Semaphore::Semaphore
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Semaphore class
 - Microsoft::WRL::Wrappers::Semaphore::Lock method
 - Microsoft::WRL::Wrappers::Semaphore::operator= operator
 - Microsoft::WRL::Wrappers::Semaphore::Semaphore, constructor
 ms.assetid: ded53526-17b4-4381-9c60-ea5e77363db6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 78fa5b68bcb55f7d062c1732ab6c30fbe84c22d8
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 10357bb1cd46a33a8d4090c1ccc30050584d1816
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517724"
 ---
 # <a name="semaphore-class"></a>Semafor Sınıfı
 

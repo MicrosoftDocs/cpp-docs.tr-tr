@@ -1,27 +1,17 @@
 ---
-title: YMMWORD | Microsoft Docs
-ms.custom: ''
+title: YMMWORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - YMMWORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - YMMWORD directive
 ms.assetid: 955a7d23-6150-4056-befc-7f72e8258ecb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 67ea3d2319f6c89abccc3acbba4e1fea94197210
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 26050c5d2498c321c0db9fc3e19d4d9e57e46255
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682189"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501861"
 ---
 # <a name="ymmword"></a>YMMWORD
 

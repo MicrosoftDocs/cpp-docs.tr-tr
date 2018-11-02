@@ -1,28 +1,18 @@
 ---
-title: . Bağlayıcı girişi olarak res dosyaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Girişi olarak .Res Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - RES files as linker input
 - .res files as linker input
 - linking [C++], resource files
 - resource files, linking
 ms.assetid: 9c37ab00-97df-4d9a-91cd-6bf132970683
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a6a572013a29420670a2aef8c91c9c4bc64e871
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3cbddba1273d579454560f176df00b09b03c89bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706328"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575103"
 ---
 # <a name="res-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Res Dosyaları
 

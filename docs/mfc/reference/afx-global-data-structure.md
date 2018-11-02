@@ -1,10 +1,6 @@
 ---
-title: AFX_GLOBAL_DATA yapısı | Microsoft Docs
-ms.custom: ''
+title: AFX_GLOBAL_DATA Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFX_GLOBAL_DATA
 - AFXGLOBALS/AFX_GLOBAL_DATA::AFX_GLOBAL_DATA
@@ -55,22 +51,16 @@ f1_keywords:
 - AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing
 - AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
 - AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat
-dev_langs:
-- C++
 helpviewer_keywords:
 - AFX_GLOBAL_DATA structure [MFC]
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 935a92beb49d26240aa63f5cfbd4adc9f22d06e8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a6e75dfaab57fa0da534f0d9862b04e99f1f089a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078017"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603209"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 

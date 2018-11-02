@@ -1,23 +1,14 @@
 ---
-title: ML önemli hataları | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Hataları
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
-dev_langs:
-- C++
 ms.assetid: 5a5b0a84-f84d-494d-a8ff-69c53b88451d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1acd2dcc77272c1fe90e27bc06b2ea6abb6e0de4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4ac1db8ec56357f81d9f7c37ad0d815243eba1ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547296"
 ---
 # <a name="ml-fatal-errors"></a>ML Önemli Hataları
 

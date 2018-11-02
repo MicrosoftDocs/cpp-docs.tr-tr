@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2403 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2403
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2403
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2403
 ms.assetid: add1f0ba-96b6-4df3-b53f-de1433d80c0c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99de310b70b351730f181f332fc9ce8d68b7d45a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 97354000cecb8b097b4efe6f44b441623fdf0836
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514211"
 ---
 # <a name="compiler-error-c2403"></a>Derleyici Hatası C2403
 

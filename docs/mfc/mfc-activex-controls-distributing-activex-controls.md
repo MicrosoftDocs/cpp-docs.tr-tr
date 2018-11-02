@@ -1,15 +1,9 @@
 ---
-title: 'MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - GetWindowsDirectory
 - GetSystemDirectory
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], ANSI or Unicode versions
 - RegSvr32.exe
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - registering controls
 - OLEPRO32.DLL
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d75f84a8cb5ca2cb5a867cc640410c7de978d4fc
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 26ea2cce8891d145740d2f91e06e15c2a1161566
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204671"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513743"
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
 

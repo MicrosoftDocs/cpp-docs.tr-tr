@@ -1,27 +1,17 @@
 ---
-title: mem_fun_ref_t sınıfı | Microsoft Docs
-ms.custom: ''
+title: mem_fun_ref_t Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::mem_fun_ref_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - mem_fun_ref_t class
 ms.assetid: 7dadcac3-8d33-4e4b-a792-81bd53d3df39
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2dffdb71b8121073775af52ed42cda205c70589
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 752b3aeb4126ba41b7a0741ed9de68db018dd6c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100176"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488042"
 ---
 # <a name="memfunreft-class"></a>mem_fun_ref_t Sınıfı
 

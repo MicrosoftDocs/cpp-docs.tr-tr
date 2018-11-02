@@ -1,10 +1,6 @@
 ---
-title: OpenMP işlevleri | Microsoft Docs
-ms.custom: ''
+title: OpenMP işlevleri
 ms.date: 10/23/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
 f1_keywords:
 - OpenMP functions
 - omp_destroy_lock
@@ -29,8 +25,6 @@ f1_keywords:
 - omp_test_nest_lock
 - omp_unset_lock
 - omp_unset_nest_lock
-dev_langs:
-- C++
 helpviewer_keywords:
 - OpenMP functions
 - omp_destroy_lock OpenMP function
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - omp_unset_lock OpenMP function
 - omp_unset_nest_lock OpenMP function
 ms.assetid: a55a2e5c-a260-44ee-bbd6-de7e2351b384
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de3ea54a1526e7b340f804a21d990b6a691d0eee
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 36954115d817f3fef042f063a673976e8ce09c43
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489513"
 ---
 # <a name="openmp-functions"></a>OpenMP işlevleri
 

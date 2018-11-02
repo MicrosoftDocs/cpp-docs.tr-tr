@@ -1,12 +1,6 @@
 ---
-title: CObject koleksiyonundaki tüm nesneleri silme | Microsoft Docs
-ms.custom: ''
+title: CObject Koleksiyonundaki Tüm Nesneleri Silme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [MFC], deleting in collections
 - objects in CObject collections, deleting
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 986bc24c57f8692bfdd98194b9e58c9cee6817f6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3e56c08f6165f6662c30e3ecbd6eda45c6696788
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067195"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542590"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 

@@ -1,29 +1,19 @@
 ---
-title: Cınterfacelist sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cınterfacelist sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CInterfaceList
 - ATLCOLL/ATL::CInterfaceList
 - ATLCOLL/ATL::CInterfaceList::CInterfaceList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInterfaceList class
 ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fdf3ae7adf36ad471b5cab09d0f13a4d5e18f7a7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6187bd6ada44a0e967b02e0183aa34becf0750ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520438"
 ---
 # <a name="cinterfacelist-class"></a>Cınterfacelist sınıfı
 

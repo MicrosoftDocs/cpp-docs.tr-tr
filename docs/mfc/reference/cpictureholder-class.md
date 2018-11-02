@@ -1,10 +1,6 @@
 ---
-title: CPictureHolder sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPictureHolder sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPictureHolder
 - AFXCTL/CPictureHolder
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXCTL/CPictureHolder::Render
 - AFXCTL/CPictureHolder::SetPictureDispatch
 - AFXCTL/CPictureHolder::m_pPict
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPictureHolder [MFC], CPictureHolder
 - CPictureHolder [MFC], CreateEmpty
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CPictureHolder [MFC], SetPictureDispatch
 - CPictureHolder [MFC], m_pPict
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef97b1340d91d672b64a403fd70cec69861a05ba
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 14ffcbc043d80bfd296bcf52d125d288039f0501
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062112"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509591"
 ---
 # <a name="cpictureholder-class"></a>CPictureHolder sınıfı
 

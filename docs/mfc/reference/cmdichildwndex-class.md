@@ -1,10 +1,6 @@
 ---
-title: Cmdıchildwndex sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmdıchildwndex sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMDIChildWndEx
 - AFXMDICHILDWNDEX/CMDIChildWndEx
@@ -61,8 +57,6 @@ f1_keywords:
 - AFXMDICHILDWNDEX/CMDIChildWndEx::ShowPane
 - AFXMDICHILDWNDEX/CMDIChildWndEx::UnregisterTaskbarTab
 - AFXMDICHILDWNDEX/CMDIChildWndEx::UpdateTaskbarTabIcon
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMDIChildWndEx [MFC], ActivateTopLevelFrame
 - CMDIChildWndEx [MFC], AddPane
@@ -118,16 +112,12 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64e8b62f79a6294810fc30b1796958c6ca4a153a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9b92c9689749dca1ab4eebcade1c4f7e71d25a76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073870"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541550"
 ---
 # <a name="cmdichildwndex-class"></a>Cmdıchildwndex sınıfı
 

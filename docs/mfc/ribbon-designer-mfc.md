@@ -1,28 +1,18 @@
 ---
-title: Şerit Tasarımcısı (MFC) | Microsoft Docs
-ms.custom: ''
+title: Şerit Tasarımcısı (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.ribbon.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e92027c9904cb5c64e53549e0e583ee3a3963d67
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b28783cb12aeeb03bf1687e5922b276af0d52c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521404"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
 

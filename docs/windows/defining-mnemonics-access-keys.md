@@ -1,12 +1,6 @@
 ---
-title: Anımsatıcıları tanımlama (erişim tuşları) | Microsoft Docs
-ms.custom: ''
+title: Anımsatıcıları Tanımlama (Erişim Tuşları)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - access keys [C++], adding
 - keyboard shortcuts [C++], controls
@@ -20,17 +14,12 @@ helpviewer_keywords:
 - controls [C++], access keys
 - access keys [C++]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6d707b0205c3f13954681eb4f6a033496a2997ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8682ab38abebe1c453ef562e8eaac0e627f5c4bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488926"
 ---
 # <a name="defining-mnemonics-access-keys"></a>Anımsatıcıları Tanımlama (Erişim Tuşları)
 
@@ -40,7 +29,7 @@ Normalde, klavye kullanıcıları içeren bir iletişim kutusu alanındaki başk
 
 1. İletişim kutusunda bir denetimi seçin.
 
-2. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **açıklamalı alt yazı** özelliği, ve işareti yazarak denetim için yeni bir ad yazın (`&`) Bu denetim için erişim anahtarı olarak istediğiniz harfi önünde. Örneğin, `&Radio1`.
+2. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **açıklamalı alt yazı** özelliği, ve işareti yazarak denetim için yeni bir ad yazın (`&`) Bu denetim için erişim anahtarı olarak istediğiniz harfi önünde. Örneğin: `&Radio1`
 
 3. Tuşuna **girin**.
 

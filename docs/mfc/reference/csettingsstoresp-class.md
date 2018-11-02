@@ -1,33 +1,23 @@
 ---
-title: CSettingsStoreSP sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSettingsStoreSP sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSettingsStoreSP
 - AFXSETTINGSSTORE/CSettingsStoreSP
 - AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP
 - AFXSETTINGSSTORE/CSettingsStoreSP::Create
 - AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSettingsStoreSP [MFC], CSettingsStoreSP
 - CSettingsStoreSP [MFC], Create
 - CSettingsStoreSP [MFC], SetRuntimeClass
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2b80ab73c41d455b0715f15034b54197672b95d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f6bcbce291aec1941359504518e26ca936edb9e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424878"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604483"
 ---
 # <a name="csettingsstoresp-class"></a>CSettingsStoreSP sınıfı
 

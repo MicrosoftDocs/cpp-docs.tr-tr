@@ -1,12 +1,6 @@
 ---
-title: Standart komutlar | Microsoft Docs
-ms.custom: ''
+title: Standart Komutlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - File menu
 - identifiers [MFC], command IDs
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - Help [MFC], menus
 - programmer-defined IDs [MFC]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd26246299f174281ba664875ec0c7d3a2de149d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fa98a250e6f9de3005cf4978fe66689363865879
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485702"
 ---
 # <a name="standard-commands"></a>Standart Komutlar
 

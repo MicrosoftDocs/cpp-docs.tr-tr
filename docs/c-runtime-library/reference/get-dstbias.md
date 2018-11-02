@@ -1,10 +1,6 @@
 ---
-title: _get_dstbias | Microsoft Docs
-ms.custom: ''
+title: _get_dstbias
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_dstbias
 - __dstbias
@@ -25,24 +21,18 @@ f1_keywords:
 - __dstbias
 - _get_dstbias
 - get_dstbias
-dev_langs:
-- C++
 helpviewer_keywords:
 - __dstbias
 - daylight saving time offset
 - get_dstbias function
 - _get_dstbias function
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82e334c6fcb282bebb003992219f6cf215ab7437
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61807f854dc9c2f7de6f0acd5bbf4668987ce49e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397772"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579116"
 ---
 # <a name="getdstbias"></a>_get_dstbias
 
@@ -56,28 +46,28 @@ error_t _get_dstbias( int* seconds );
 
 ### <a name="parameters"></a>Parametreler
 
-*Saniye*<br/>
-Yaz Saati saniye cinsinden uzaklık.
+*saniye*<br/>
+Yaz Saati saniye cinsinden uzaklığı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa ya da bir sıfır **errno** bir hata oluşursa değeri.
+Sıfır başarılı olursa ya da bir **errno** bir hata oluşursa değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_dstbias** işlevi bir tamsayı olarak gün ışığından yararlanma saati saniye sayısını alır. Yaz Saati etkinse, varsayılan 3600 saniye (birkaç bölgeler iki saatlik uzaklığı gözlemlemek rağmen) bir saat içinde saniye sayısını olduğu uzaklığı.
+**_Get_dstbias** işlevi yaz saati bir tamsayı olarak saniye sayısını alır. Gün ışığından yararlanma etkinse, varsayılan uzaklık 3600 saniye (Bazı bölgelerde iki saat uzaklığı gözlemleyin rağmen) saniye cinsinden bir saat sayısı olduğu dayalıdır.
 
-Varsa *saniye* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Varsa *saniye* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
 
-Makro yerine bu işlev kullanmanızı öneririz **_dstbias** veya kullanım dışı işlev **__dstbias**.
+Makro yerine bu işlevi kullanmanız önerilir **_dstbias** veya kullanım dışı işlevine **__dstbias**.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_dstbias**|\<time.h >|
+|**_get_dstbias**|\<TIME.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: _chsize | Microsoft Docs
-ms.custom: ''
+title: _chsize
 ms.date: 03/29/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _chsize
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _chsize
-dev_langs:
-- C++
 helpviewer_keywords:
 - size
 - _chsize function
@@ -31,20 +25,16 @@ helpviewer_keywords:
 - files [C++], changing size
 - chsize function
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb40d218439ebe308e7d7cf01ab5043a2ebb3b1e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5c60f3aa08a405eb9a83dc6ba8636cd316a32925
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395760"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600648"
 ---
 # <a name="chsize"></a>_chsize
 
-Dosyasının boyutu değişir. Daha güvenli bir sürümünü kullanılabilir; bkz: [_chsize_s](chsize-s.md).
+Bir dosyanın boyutunu değiştirir. Daha güvenli bir sürümü kullanılabilir; bkz: [_chsize_s](chsize-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,30 +48,30 @@ int _chsize(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan bir dosyaya başvuruda bulunan dosya tanımlayıcısı.
+Açık olan bir dosyaya başvuran dosya tanımlayıcısı.
 
 *Boyutu*<br/>
 Yeni dosyanın bayt cinsinden uzunluğu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_chsize** dosya boyutu başarıyla değiştirilirse 0 değerini döndürür. Dönüş değeri -1, bir hata gösterir: **errno** ayarlanır **EACCES** belirtilen dosya salt okunur ise veya belirtilen dosya için erişime karşı kilitlenmiş **EBADF** varsa tanımlayıcısı geçersiz **ENOSPC** boşluk cihazda bırakılırsa veya **EINVAL** varsa *boyutu* sıfırdan küçüktür.
+**_chsize** dosya boyutu başarıyla değiştirilirse, 0 değerini döndürür. Hata-1 değeri belirtir: **errno** ayarlanır **SPAWN** belirtilen dosya salt okunur veya belirtilen dosya için erişim karşı kilitli **EBADF** varsa tanımlayıcı geçersiz **ENOSPC** boşluk cihazda bırakılırsa veya **EINVAL** varsa *boyutu* sıfırdan küçüktür.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chsize** işlevi genişletir veya ilişkili dosya kesen *fd* tarafından belirtilen uzunluğa *boyutu*. Dosya yazma izin veren bir modda açık olması gerekir. Boş karakterler ('\0') dosya genişletilmişse eklenir. Dosya kesilirse, dosyanın özgün uzunluğu kısaltılmış dosyasının sonuna tüm veriler kaybolur.
+**_Chsize** işlevini genişletir veya ilişkili dosya keser *fd* tarafından belirtilen uzunluktan *boyutu*. Dosya yazma izin veren bir modda açık olmalıdır. Dosya uzatıldıysa null karakterleri ('\0') eklenir. Dosya kesilmiş, özgün dosya uzunluğu kısaltılmış dosyanın sonundan tüm veriler kaybolur.
 
-Bu işlev parametrelerini doğrular. Varsa *boyutu* sıfırdan küçüktür veya *fd* hatalı dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+Bu işlev, parametrelerini doğrular. Varsa *boyutu* sıfırdan küçük veya *fd* bir hatalı dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_chsize**|\<io.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

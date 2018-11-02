@@ -1,14 +1,8 @@
 ---
-title: -REBASE | Microsoft Docs
-ms.custom: ''
+title: /REBASE
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /rebase
-dev_langs:
-- C++
 helpviewer_keywords:
 - base addresses [C++]
 - -REBASE editbin option
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2f226d9f207f6e04feb2b240551cd53cad69a85
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: de8b648c6bca02c71a9cfedd92bfbe7e6ca56b70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463654"
 ---
 # <a name="rebase"></a>/REBASE
 

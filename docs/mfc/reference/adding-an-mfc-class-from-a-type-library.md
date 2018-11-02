@@ -1,27 +1,17 @@
 ---
-title: Tür kitaplığından bir MFC sınıfı ekleme | Microsoft Docs
-ms.custom: ''
+title: Tür Kitaplığından Bir MFC Sınıfı Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [MFC], adding MFC
 - MFC, adding classes from type libraries
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 588a7a432e3d16ce8fd009d6dd25c5c018ab2472
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5cd94ad6d400cf2db60131e822f430f87a129cbe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548024"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>Tür Kitaplığından Bir MFC Sınıfı Ekleme
 

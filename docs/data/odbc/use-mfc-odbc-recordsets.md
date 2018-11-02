@@ -1,27 +1,16 @@
 ---
-title: MFC ODBC kayıt kümelerini kullanma | Microsoft Docs
-ms.custom: ''
+title: MFC ODBC Kayıt Kümelerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - recordsets, MFC ODBC
 - ODBC recordsets
 ms.assetid: ebde4180-e3de-474a-a5ab-6135e41763a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 36683927d9bde9f36fdeab0746533af9143b0999
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 72e394ae8d8bef72acf62edd81b356b76b1b18c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567940"
 ---
 # <a name="use-mfc-odbc-recordsets"></a>MFC ODBC Kayıt Kümelerini Kullanma
 

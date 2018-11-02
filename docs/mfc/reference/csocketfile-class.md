@@ -1,29 +1,19 @@
 ---
-title: CSocketFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSocketFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSocketFile
 - AFXSOCK/CSocketFile
 - AFXSOCK/CSocketFile::CSocketFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSocketFile [MFC], CSocketFile
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8a3ffa05f67b3bf5bed641fd56b88a3600e94b8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f31bbda1bb6428b6bcca25d6eddce98156fac1d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588844"
 ---
 # <a name="csocketfile-class"></a>CSocketFile sınıfı
 

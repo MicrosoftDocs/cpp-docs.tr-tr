@@ -1,27 +1,17 @@
 ---
-title: . MMX | Microsoft Docs
-ms.custom: ''
+title: .MMX
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .MMX
-dev_langs:
-- C++
 helpviewer_keywords:
 - .MMX directive
 ms.assetid: 69d360cb-b530-46e3-9cfe-204d71baa38d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 25e413dba3dac1978ee567ccd0649b6b714f3ce6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f9851ca0f778543c81948e65bcbb234adc22a198
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524767"
 ---
 # <a name="mmx"></a>.MMX
 

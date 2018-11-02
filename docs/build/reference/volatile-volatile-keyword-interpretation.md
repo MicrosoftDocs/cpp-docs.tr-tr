@@ -1,16 +1,10 @@
 ---
-title: -volatile (volatile anahtar sözcük yorumu) | Microsoft Docs
-ms.custom: ''
+title: /volatile (volatile Anahtar Sözcük Yorumu)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /volatile:iso
 - /volatile:ms
 - /volatile
-dev_langs:
-- C++
 helpviewer_keywords:
 - /volatile compiler option
 - /volatile compiler option [C++]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4204d602d1390bf30080a800174426513faf0467
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: da2d981d9fcca6be66a7fd495e7c76670ed8e3ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502524"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile (volatile Anahtar Sözcük Yorumu)
 

@@ -1,11 +1,6 @@
 ---
-title: feclearexcept1 | Microsoft Docs
-ms.custom: ''
+title: feclearexcept1
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - feclearexcept
 apilocation:
@@ -24,21 +19,15 @@ apitype: DLLExport
 f1_keywords:
 - feclearexcept
 - fenv/feclearexcept
-dev_langs:
-- C++
 helpviewer_keywords:
 - feclearexcept function
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: face2637f308a56d95baa7563a6409dd38870d73
-ms.sourcegitcommit: 2f571220e16f6c20e1fdb005f6cbc9e7ef5608f5
+ms.openlocfilehash: 3c2f037a5be903fc006debfa7319c483431fdd92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37070083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551118"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
@@ -55,34 +44,34 @@ int feclearexcept(
 ### <a name="parameters"></a>Parametreler
 
 *excepts*<br/>
-Temizlemek için özel durum bayraklar.
+Özel durum durumu sıfırlamaya bayraklar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır verir *excepts* sıfır veya belirtilen tüm özel durumları başarıyla temizlendi. Aksi takdirde, sıfır olmayan bir değer döndürür.
+Sıfır döndürür *excepts* sıfır veya belirtilen tüm özel durumları başarıyla temizlendi. Aksi takdirde, sıfır olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feclearexcept** noktası tarafından belirtilen özel durumu bayrakları kayan temizlemek için işlevi çalışır *excepts*. İşlev fenv.h içinde tanımlanan bu özel durum makroları destekler:
+**Feclearexcept** noktası tarafından belirtilen özel durum durumu bayrakları kayan temizlemek için işlevi çalışır *excepts*. İşlev fenv.h içinde tanımlanan bu özel durum makroları destekler:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|İçinde bir önceki kayan nokta işlemi singularity veya kutbu'na bir hata oluştu; sonsuz değerle oluşturuldu.|
-|FE_INEXACT|İşlev, bir önceki kayan nokta işlemi depolanmış sonucu yuvarlanacak zorlandı.|
+|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
+|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
 |FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Bir aralık hata oluştu; önceki bir kayan nokta işlemi sonuç gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlem sonucu tam duyarlık gösterilemeyecek kadar çok küçüktü; denormal değeri oluşturuldu.|
-|FE_ALL_EXCEPT|Tüm Bitsel veya kayan nokta özel durumlar desteklenir.|
+|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
+|FE_ALL_EXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
 
-*Excepts* bağımsız değişkeni sıfır veya bir veya daha fazla desteklenen özel durum makroları Bitsel veya olabilir. Herhangi bir bağımsız değişken değeri sonucunu tanımlanmamıştır.
+*Excepts* bağımsız değişkeni sıfır veya bir veya daha fazla desteklenen özel durum makroları, bit düzeyinde OR olabilir. Herhangi bir bağımsız değişken değeri, sonuç tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**feclearexcept**|\<fenv.h >|\<cfenv >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4754 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4754
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4754
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7681f78812ef33dce5bd6d7792f8158a8f35ce3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6ce6886c74a2a82a2a072a3f5d7e3222bb572bea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477382"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>Derleyici Uyarısı (düzey 4) C4754
 

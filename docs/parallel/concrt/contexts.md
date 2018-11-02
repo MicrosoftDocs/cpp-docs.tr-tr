@@ -1,25 +1,15 @@
 ---
-title: Bağlamları | Microsoft Docs
-ms.custom: ''
+title: Bağlamlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fb14544a799861053c2fdf2a5bb92f210eb5c46
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b7d1a5bbc63781e865be8053cb4365d6a8590935
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529183"
 ---
 # <a name="contexts"></a>Bağlamlar
 

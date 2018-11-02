@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2939 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2939
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2939
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2939
 ms.assetid: 455b050b-f2dc-4b5b-bd6a-e1f81d3d1644
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b7d397eff2cfe561ace6f29b00601941779ef2b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 59b2f63ba12a644f13b3586fbf6eec4d5bfa8be5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604197"
 ---
 # <a name="compiler-error-c2939"></a>Derleyici Hatası C2939
 

@@ -1,10 +1,6 @@
 ---
-title: Iprovideclassınfo2ımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iprovideclassınfo2ımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IProvideClassInfo2Impl
 - ATLCOM/ATL::IProvideClassInfo2Impl
@@ -12,23 +8,17 @@ f1_keywords:
 - ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo
 - ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID
 - ATLCOM/ATL::IProvideClassInfo2Impl::_tih
-dev_langs:
-- C++
 helpviewer_keywords:
 - IProvideClassInfo2Impl class
 - IProvideClassInfo2 ATL implementation
 - class information, ATL
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c977ecc1094af37c5e2c2e3ed8f27a6f2bdf1c93
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a270efa5daac8c8b608f05bdb752195f806b7935
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033881"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539652"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>Iprovideclassınfo2ımpl sınıfı
 

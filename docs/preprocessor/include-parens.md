@@ -1,27 +1,17 @@
 ---
-title: include() | Microsoft Docs
-ms.custom: ''
+title: include()
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - include()
-dev_langs:
-- C++
 helpviewer_keywords:
 - include() attribute
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b453daab9d140613587bb2d2857afdfa0a50c70
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 8f3227ba49cc0928fec5d5917efcd8869982d94a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599751"
 ---
 # <a name="include"></a>include()
 

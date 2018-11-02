@@ -1,10 +1,6 @@
 ---
-title: _heapadd | Microsoft Docs
-ms.custom: ''
+title: _heapadd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _heapadd
 apilocation:
@@ -19,24 +15,18 @@ apitype: DLLExport
 f1_keywords:
 - heapadd
 - _heapadd
-dev_langs:
-- C++
 helpviewer_keywords:
 - _heapadd function
 - memory, adding to heaps
 - heaps, adding memory
 - heapadd function
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce067dc000a681dfd1bfa9d3376131f86f5a73e1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ea124e5f4e8a412e7347211b4968b24429270736
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086856"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496583"
 ---
 # <a name="heapadd"></a>_heapadd
 

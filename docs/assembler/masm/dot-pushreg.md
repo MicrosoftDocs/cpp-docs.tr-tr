@@ -1,27 +1,17 @@
 ---
-title: . PUSHREG | Microsoft Docs
-ms.custom: ''
+title: .PUSHREG
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .PUSHREG
-dev_langs:
-- C++
 helpviewer_keywords:
 - .PUSHREG directive
 ms.assetid: e0c83758-dfed-40ea-afe6-cb833c8d2d30
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11d0e0456621dd77e1545e2e8a16662556bed944
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 19e36f1c0b073c5b174ea9acb0f1eaac7d771c46
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676045"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501770"
 ---
 # <a name="pushreg"></a>.PUSHREG
 

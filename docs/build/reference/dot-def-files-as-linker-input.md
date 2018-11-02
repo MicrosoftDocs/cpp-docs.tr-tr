@@ -1,26 +1,16 @@
 ---
-title: . Bağlayıcı girişi olarak def dosyaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Girişi olarak .Def Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - .def files, as linker input
 - def files, as linker input
 ms.assetid: ecb32d7c-e3be-4782-85a1-1c77d30f6e59
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5afb165b33dfa7911e01c1c4368946fd91915a35
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c271f8fabc456fb26a385785bbf944f6267de392
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710280"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520347"
 ---
 # <a name="def-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Def Dosyaları
 

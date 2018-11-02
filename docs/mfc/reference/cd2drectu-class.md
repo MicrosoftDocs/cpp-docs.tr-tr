@@ -1,31 +1,21 @@
 ---
-title: CD2DRectU sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DRectU sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DRectU
 - AFXRENDERTARGET/CD2DRectU
 - AFXRENDERTARGET/CD2DRectU::CD2DRectU
 - AFXRENDERTARGET/CD2DRectU::IsNull
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DRectU [MFC], CD2DRectU
 - CD2DRectU [MFC], IsNull
 ms.assetid: a62f17d1-011d-4867-8f51-fd7e7c00561d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3fc66e5cc116ce97a9abead8eeb6607f7a36ef7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: afcd328a8945853761fecfce8f3c14f73b2a96e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514419"
 ---
 # <a name="cd2drectu-class"></a>CD2DRectU sınıfı
 

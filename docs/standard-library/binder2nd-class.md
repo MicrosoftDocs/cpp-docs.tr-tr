@@ -1,27 +1,17 @@
 ---
-title: binder2nd sınıfı | Microsoft Docs
-ms.custom: ''
+title: binder2nd Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::binder2nd
-dev_langs:
-- C++
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 040687a4218f24bb57f20ea3307dbf69ffa3f37d
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: bb7b867be4ef7ff0f5bcd9ad54538bf449ccd071
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464668"
 ---
 # <a name="binder2nd-class"></a>binder2nd Sınıfı
 

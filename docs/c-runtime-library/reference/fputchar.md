@@ -1,10 +1,6 @@
 ---
-title: fputchar | Microsoft Docs
-ms.custom: ''
+title: fputchar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fputchar
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fputchar
-dev_langs:
-- C++
 helpviewer_keywords:
 - fputchar function
 ms.assetid: d6cf3492-ace9-47a7-9f7d-3c25aa8ad526
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6560fb57f8cb4dd781a2350b724b430a3d5c62ae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9ccde6663ec601869f657ea836cda109cf64702c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395321"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547504"
 ---
 # <a name="fputchar"></a>fputchar
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_fputchar](fputchar-fputwchar.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_fputchar](fputchar-fputwchar.md) yerine.

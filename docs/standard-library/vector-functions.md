@@ -1,19 +1,17 @@
 ---
-title: '&lt;vektör&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;vektör&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vector/std::swap
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
-ms.openlocfilehash: c93f535bb02cbaa1f688fba84f15d832381156c6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e883653338a35d39b14b03dfd75ccf2ac2a8d873
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483375"
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
 

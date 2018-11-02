@@ -1,25 +1,15 @@
 ---
-title: strerror işlevi | Microsoft Docs
-ms.custom: ''
+title: strerror İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - strerror function
 ms.assetid: 9fb9366e-d9a8-47d4-ad51-d98774a0617f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 324fb9d7fd739e9e5a6ce8308eb16f53777e1480
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 44289743195deacaa982dd08432209fcc185c50b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055110"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539366"
 ---
 # <a name="strerror-function"></a>strerror İşlevi
 

@@ -1,27 +1,17 @@
 ---
-title: Görüntü listeleri kullanma üstbilgi denetimleriyle birlikte | Microsoft Docs
-ms.custom: ''
+title: Üstbilgi Denetimleriyle Birlikte Görüntü Listeleri Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - header controls [MFC], image lists
 - CHeaderCtrl class [MFC], image lists
 - image lists [MFC], header controls
 ms.assetid: d5e9b310-6278-406c-909c-eefa09549a47
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b12f3ff78f88029067d3b77296979a173dad494d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5c623024ef64f49e3379ef02154cda72d445a197
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079655"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545255"
 ---
 # <a name="using-image-lists-with-header-controls"></a>Üstbilgi Denetimleriyle Birlikte Görüntü Listeleri Kullanma
 

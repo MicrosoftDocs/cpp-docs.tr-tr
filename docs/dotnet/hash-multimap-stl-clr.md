@@ -1,9 +1,6 @@
 ---
-title: hash_multimap (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: hash_multimap (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap
@@ -51,8 +48,6 @@ f1_keywords:
 - cliext::hash_multimap::value_comp
 - cliext::hash_multimap::value_compare
 - cliext::hash_multimap::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - hash_multimap class [STL/CLR]
 - <cliext/hash_map> header [STL/CLR]
@@ -103,17 +98,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: cd78687b-8a05-48e0-9d22-8b8194ae3b0b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 9f9ccb86f2daeae8110e15424b94d86e4add75ad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2e3cd31ada54d1569cb7e5344ab471108b625558
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448421"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548765"
 ---
 # <a name="hashmultimap-stlclr"></a>hash_multimap (STL/CLR)
 

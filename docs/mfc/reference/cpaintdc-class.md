@@ -1,33 +1,23 @@
 ---
-title: CPaintDC sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPaintDC sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPaintDC
 - AFXWIN/CPaintDC
 - AFXWIN/CPaintDC::CPaintDC
 - AFXWIN/CPaintDC::m_ps
 - AFXWIN/CPaintDC::m_hWnd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPaintDC [MFC], CPaintDC
 - CPaintDC [MFC], m_ps
 - CPaintDC [MFC], m_hWnd
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b34c7ee72c7a76d261a50ae227039647617d6fbd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 991ea39ccf03cd4f2921a759d3278576c7a1fd92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079031"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525757"
 ---
 # <a name="cpaintdc-class"></a>CPaintDC sınıfı
 

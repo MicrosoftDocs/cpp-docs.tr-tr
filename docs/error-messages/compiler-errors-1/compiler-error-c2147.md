@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2147 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2147
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2147
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2147
 ms.assetid: d1adb3bf-7ece-4815-922c-ad7492fb6670
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 786d47e23986962575567b8afdc2eefd5aac5be6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0a093bbbaf9cf9f72625226f949a27b681005c35
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082436"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614493"
 ---
 # <a name="compiler-error-c2147"></a>Derleyici Hatası C2147
 

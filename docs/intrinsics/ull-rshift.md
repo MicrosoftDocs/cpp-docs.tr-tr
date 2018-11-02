@@ -1,28 +1,18 @@
 ---
-title: __ull_rshift | Microsoft Docs
-ms.custom: ''
+title: __ull_rshift
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __ull_rshift
-dev_langs:
-- C++
 helpviewer_keywords:
 - ull_rshift intrinsic
 - __ull_rshift intrinsic
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4ebcd7a491941631db1e1c21d24a350eb2774de
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fee48cc731331e7cb427bc880d84ae07cc8ed9c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402817"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521310"
 ---
 # <a name="ullrshift"></a>__ull_rshift
 
@@ -33,9 +23,9 @@ x64 üzerinde ikinci parametre tarafından belirtilen bit sayısı sağa ilk par
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned __int64 __ull_rshift( 
-   unsigned __int64 mask,  
-   int nBit 
+unsigned __int64 __ull_rshift( 
+   unsigned __int64 mask,  
+   int nBit 
 );
 ```
 

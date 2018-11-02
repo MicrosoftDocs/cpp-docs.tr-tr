@@ -1,12 +1,6 @@
 ---
-title: Çağırma örneği sonuçları | Microsoft Docs
-ms.custom: ''
+title: Çağırma Örneği Sonuçları
 ms.date: 09/05/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - examples [C++], results of calling
 - results, thiscall call
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - results, __cdecl call
 - results, __stdcall call
 ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8f09109aab5823f339de76a1337eea77a0794cb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 96582e48912bb591d869bbc4df179299e6459f1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500949"
 ---
 # <a name="results-of-calling-example"></a>Çağırma Örneği Sonuçları
 

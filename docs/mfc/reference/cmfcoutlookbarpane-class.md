@@ -1,10 +1,6 @@
 ---
-title: CMFCOutlookBarPane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCOutlookBarPane sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCOutlookBarPane
 - AFXOUTLOOKBARPANE/CMFCOutlookBarPane
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTransparentColor
 - AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnableContextMenuItems
 - AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveAllButtons
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCOutlookBarPane [MFC], AddButton
 - CMFCOutlookBarPane [MFC], CanBeAttached
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CMFCOutlookBarPane [MFC], EnableContextMenuItems
 - CMFCOutlookBarPane [MFC], RemoveAllButtons
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2d468ded9db1d21fd19bc553ed2a0c3227725a0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f8d93362f9e341087e9213d07475501a26d79d44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492639"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane sınıfı
 

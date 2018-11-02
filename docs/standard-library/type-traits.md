@@ -1,28 +1,18 @@
 ---
-title: '&lt;type_traits&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;type_traits&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <type_traits>
-dev_langs:
-- C++
 helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2e374ad9c0024b602c07ea91e53d45c9bf0742f8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f56334cbb25132d45dfabb68cbcd5b832096a87c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692470"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514692"
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 

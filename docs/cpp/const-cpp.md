@@ -1,27 +1,17 @@
 ---
-title: const (C++) | Microsoft Docs
-ms.custom: ''
+title: const (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - const_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - const keyword [C++]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f765e2b10de5685e011a44326664459a47a6ae22
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 759ee503acb12f6c1a30fbbfaf87a8f66433e571
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060193"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463251"
 ---
 # <a name="const-c"></a>const (C++)
 

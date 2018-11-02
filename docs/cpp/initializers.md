@@ -1,12 +1,6 @@
 ---
-title: Başlatıcılar | Microsoft Docs
-ms.custom: ''
+title: Başlatıcılar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - array-element initializers
 - initializing arrays [C++], initializers
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - declarators, as initializers
 - initializers, array element
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 44b0dede1e583de1e01e9ea4627b4d411f1ecb84
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2948e65538359815da151a540e96227e56bbea6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544670"
 ---
 # <a name="initializers"></a>Başlatıcılar
 

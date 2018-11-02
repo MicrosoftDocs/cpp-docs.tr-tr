@@ -1,25 +1,15 @@
 ---
-title: Kullanıcı tanımlı Araçlar | Microsoft Docs
-ms.custom: ''
+title: Kullanıcı Tanımlı Araçlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - user-defined tools (MFC Extensions)
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6aa9fdd5c50119b820ddd73d842dc8a60089e97
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5c5773cdbbd641b30f39494b2d11c282d2d43954
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607083"
 ---
 # <a name="user-defined-tools"></a>Kullanıcı Tanımlı Araçlar
 

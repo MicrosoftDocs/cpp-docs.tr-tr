@@ -1,23 +1,13 @@
 ---
-title: MxCsr | Microsoft Docs
-ms.custom: ''
+title: MxCsr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4f3c229d-0862-4733-acc7-9ed7a0b870ce
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d18a4247d36e6894230d74322d52cd5854e42fb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d411223634aec6d11413ac1f5b1fb04dba7498e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497382"
 ---
 # <a name="mxcsr"></a>MxCsr
 

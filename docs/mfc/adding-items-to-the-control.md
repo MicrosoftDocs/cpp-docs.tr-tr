@@ -1,25 +1,15 @@
 ---
-title: Denetime öğe ekleme | Microsoft Docs
-ms.custom: ''
+title: Denetime Öğe Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl class [MFC], adding items
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc1d4cefd7d292333c4797afea369104733d117d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 90a722405b7954b3d6e0e9f13b3f51a5e902a4af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602589"
 ---
 # <a name="adding-items-to-the-control"></a>Denetime Öğe Ekleme
 

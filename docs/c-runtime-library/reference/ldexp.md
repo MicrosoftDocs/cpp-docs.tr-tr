@@ -1,10 +1,6 @@
 ---
-title: ldexp, ldexpf, ldexpl | Microsoft Docs
-ms.custom: ''
+title: ldexp, ldexpf, ldexpl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - ldexp
 - ldexpf
@@ -28,8 +24,6 @@ f1_keywords:
 - ldexpf
 - ldexpl
 - _ldexpl
-dev_langs:
-- C++
 helpviewer_keywords:
 - calculating real numbers
 - computing real numbers
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - exponent, floating-point numbers
 - floating-point functions, mantissa and exponent
 ms.assetid: aa7f5310-3879-4f63-ae74-86a39fbdedfa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ead91ce542ce547f9453f52455dc76d61045b87
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 7fbf89f8d78e8a2ce1018a790350ec986dcab87e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208421"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502615"
 ---
 # <a name="ldexp-ldexpf-ldexpl"></a>ldexp, ldexpf, ldexpl
 

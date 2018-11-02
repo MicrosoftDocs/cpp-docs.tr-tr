@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3204 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3204
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3204
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3204
 ms.assetid: 06e578da-0262-48c8-b2ae-be1cd6d28884
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1eb4ebc98f230074279e11692b647b4f7ba73918
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4c34ad35916f01323a72102c7099d4afd0ab17be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539301"
 ---
 # <a name="compiler-error-c3204"></a>Derleyici Hatası C3204
 

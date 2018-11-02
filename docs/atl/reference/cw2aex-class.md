@@ -1,31 +1,21 @@
 ---
-title: CW2AEX sınıfı | Microsoft Docs
-ms.custom: ''
+title: CW2AEX sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CW2AEX
 - ATLCONV/ATL::CW2AEX
 - ATLCONV/ATL::CW2AEX::CW2AEX
 - ATLCONV/ATL::CW2AEX::m_psz
 - ATLCONV/ATL::CW2AEX::m_szBuffer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CW2AEX class
 ms.assetid: 44dc2cf5-dd30-440b-a9b9-b21b43f49843
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e10650235298e7a5b2931e59c39cb21a5374d0b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5e9d72ddde6b885343c27ef7cdea44d4d61d20c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509441"
 ---
 # <a name="cw2aex-class"></a>CW2AEX sınıfı
 

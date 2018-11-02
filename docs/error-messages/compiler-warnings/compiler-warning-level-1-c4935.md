@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4935 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4935
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4935
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4935
 ms.assetid: a36c56d3-571a-44dd-bb0f-bcc6b020e134
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db481531dc13433ac0ca4ef6ceca6ab284a859b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 839b86ef736f1150e3e0e23d8404f169f9f0d5ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602637"
 ---
 # <a name="compiler-warning-level-1-c4935"></a>Derleyici Uyarısı (düzey 1) C4935
 

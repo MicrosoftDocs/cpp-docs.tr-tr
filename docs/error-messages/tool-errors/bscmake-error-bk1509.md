@@ -1,27 +1,17 @@
 ---
-title: BSCMAKE hatası BK1509 | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Hatası BK1509
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - BK1509
-dev_langs:
-- C++
 helpviewer_keywords:
 - BK1509
 ms.assetid: 53df7037-1913-4b63-b425-c0bf44081792
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 091fab63737c7ee1b3b85753a354bb7214cfa411
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 384f202ea3eb969da2ce3a3b82209c383009c62e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025249"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475458"
 ---
 # <a name="bscmake-error-bk1509"></a>BSCMAKE Hatası BK1509
 

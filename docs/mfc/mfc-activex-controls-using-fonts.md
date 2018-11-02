@@ -1,16 +1,10 @@
 ---
-title: 'MFC ActiveX denetimleri: Yazı tiplerini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - OnFontChanged
 - HeadingFont
 - InternalFont
-dev_langs:
-- C++
 helpviewer_keywords:
 - notifications [MFC], MFC ActiveX controls fonts
 - OnDraw method, MFC ActiveX controls
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c34b4a842655ebce6fccaa89a1dfc6d4ef49add
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6a647f67849d84119d58186fc71ec1b412713734
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608950"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 

@@ -1,28 +1,17 @@
 ---
-title: underlying_type sınıfı | Microsoft Docs
-ms.custom: ''
+title: underlying_type sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::underlying_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - underlying_type
 ms.assetid: 691ddce3-2677-4480-bd35-d933fab85d3e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e9c1ab3ceb4965450f89de3b483915d693b5100
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 23e5e9bc5406265f49fca2ed220c597cb32e2a9a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609709"
 ---
 # <a name="underlyingtype-class"></a>underlying_type sınıfı
 

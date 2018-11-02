@@ -1,26 +1,16 @@
 ---
-title: Örnek proje dosyası | Microsoft Docs
-ms.custom: ''
+title: Örnek proje dosyası
 ms.date: 10/09/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 591802e04348ca08bded17504b3fb19fb9aa7213
-ms.sourcegitcommit: 243ee0395ee44654a81ce1232f4581fb54904868
+ms.openlocfilehash: cb1369515db91187d182cd6c6ea49b938ebdee77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459169"
 ---
 # <a name="project-files"></a>Proje Dosyaları
 

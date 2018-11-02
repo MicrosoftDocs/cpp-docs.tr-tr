@@ -1,28 +1,17 @@
 ---
-title: Lisanslı (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Lisanslı (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.licensed
-dev_langs:
-- C++
 helpviewer_keywords:
 - licensed attribute
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 564a5ba5048442ccb1ce599d03ba0064715c7f5f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b0b66da845151ca8cad17f3fb33e0e0a736a4813
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079070"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566367"
 ---
 # <a name="licensed"></a>lisanslı
 

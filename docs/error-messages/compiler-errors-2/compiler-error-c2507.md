@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2507 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2507
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2507
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2507
 ms.assetid: f102aff5-de7d-4c3f-9cac-2ddf9ce02b14
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16cc9c5f21618f3b681fbefbfadfd66b0219d5ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 63f9594eb9ee8a251faafe7323418b343c03063c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618038"
 ---
 # <a name="compiler-error-c2507"></a>Derleyici Hatası C2507
 

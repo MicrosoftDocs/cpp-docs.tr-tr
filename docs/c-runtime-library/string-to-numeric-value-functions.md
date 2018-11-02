@@ -1,10 +1,6 @@
 ---
-title: Sayısal değer işlevleri dizesi | Microsoft Docs
-ms.custom: ''
+title: Sayısal Değer İşlevleri Dizesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr80.dll
 - msvcr110.dll
@@ -16,22 +12,16 @@ apitype: DLLExport
 f1_keywords:
 - _tcstoui64
 - _tcstoi64
-dev_langs:
-- C++
 helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45428f1642b428640509978f29c0a36b60696cb0
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: d3e53c665378efdd63a373027f4edd6b7fb90ad3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544579"
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 

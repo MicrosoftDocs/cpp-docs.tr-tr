@@ -1,27 +1,17 @@
 ---
-title: CMonthCalCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CMonthCalCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CMonthCalCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMonthCalCtrl class [MFC], about CMonthCalCtrl class
 ms.assetid: 2be0e8c2-ed03-4853-aea1-4461eba18611
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9160afd1d9885f9bc9b928b5654abedf0fcaf11
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4a7747b74058ab1d566108c0f834a01d71ab1fa5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461682"
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl Kullanma
 

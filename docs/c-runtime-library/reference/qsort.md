@@ -1,10 +1,6 @@
 ---
-title: qsort | Microsoft Docs
-ms.custom: ''
+title: qsort
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - qsort
 apilocation:
@@ -23,24 +19,18 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - qsort
-dev_langs:
-- C++
 helpviewer_keywords:
 - qsort function
 - quick-sort algorithm
 - sorting arrays
 - arrays [CRT], sorting
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87e9ba6ef9bcb4a909e97466d7ea71ee18374991
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e912a7a53619e9347cf2c0cd40adf0f9162b314b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110207"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618497"
 ---
 # <a name="qsort"></a>qsort
 
@@ -78,7 +68,7 @@ Kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunlar�
 **qsort** çağrıları *karşılaştırma* rutin bir veya daha fazla zaman sıralama sırasında ve işaretçileri iki dizi öğelerine her çağrıda geçirir.
 
 ```C
-compare( (void *) & elem1, (void *) & elem2 );
+compare( (void *) & elem1, (void *) & elem2 );
 ```
 
 Yordam, öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndürür.

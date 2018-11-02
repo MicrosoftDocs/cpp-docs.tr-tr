@@ -1,8 +1,6 @@
 ---
-title: '&lt;Kuyruk&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Kuyruk&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - queue/std::operator!=
 - queue/std::operator&gt;
@@ -10,8 +8,6 @@ f1_keywords:
 - queue/std::operator&lt;
 - queue/std::operator&lt;=
 - queue/std::operator==
-dev_langs:
-- C++
 ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c
 helpviewer_keywords:
 - std::operator!= (queue)
@@ -20,12 +16,12 @@ helpviewer_keywords:
 - std::operator&lt; (queue)
 - std::operator&lt;= (queue)
 - std::operator== (queue)
-ms.openlocfilehash: d2d8efe00e5fc03e882086e3c7cfa5c0b7f3ee0c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 496b728b67c4539a63d5bf3c783f8c9145c1de42
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101073"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537494"
 ---
 # <a name="ltqueuegt-operators"></a>&lt;Kuyruk&gt; işleçleri
 

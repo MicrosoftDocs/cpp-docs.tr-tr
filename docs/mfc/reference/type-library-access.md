@@ -1,27 +1,17 @@
 ---
-title: Tür kitaplığı erişimi | Microsoft Docs
-ms.custom: ''
+title: Tür Kitaplığı Erişimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
-dev_langs:
-- C++
 helpviewer_keywords:
 - type libraries [MFC], accessing
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a361c1e50945b19562082424c178a21191bd0b9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4dc5a445f4a7736182350c16720686ca7e0bc27c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468386"
 ---
 # <a name="type-library-access"></a>Tür Kitaplığı Erişimi
 

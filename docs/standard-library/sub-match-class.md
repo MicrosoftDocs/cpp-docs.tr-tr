@@ -1,10 +1,6 @@
 ---
-title: sub_match sınıfı | Microsoft Docs
-ms.custom: ''
+title: sub_match Sınıfı
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - regex/std::sub_match
 - regex/std::sub_match::matched
@@ -14,8 +10,6 @@ f1_keywords:
 - regex/std::sub_match::difference_type
 - regex/std::sub_match::iterator
 - regex/std::sub_match::value_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::sub_match [C++]
 - std::sub_match [C++], matched
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - std::sub_match [C++], iterator
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65d873c4e7188b3000cee65e03c4ce6edcad8046
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: e0edfbc69d6cba6ee352a34406860e4c999dc3a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580277"
 ---
 # <a name="submatch-class"></a>sub_match Sınıfı
 

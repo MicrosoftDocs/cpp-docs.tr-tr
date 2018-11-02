@@ -1,10 +1,6 @@
 ---
-title: CRect sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRect sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRect
 - ATLTYPES/ATL::CRect
@@ -32,24 +28,18 @@ f1_keywords:
 - ATLTYPES/ATL::CRect::TopLeft
 - ATLTYPES/ATL::CRect::UnionRect
 - ATLTYPES/ATL::CRect::Width
-dev_langs:
-- C++
 helpviewer_keywords:
 - LPCRECT data type
 - CRect class
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 729dfa0b7bbe9a553dcc9e0aac78a86c402e8d43
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 200f4a9345904055496a53ff2f751c3e2571e7d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471493"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 

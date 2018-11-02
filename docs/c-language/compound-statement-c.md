@@ -1,26 +1,16 @@
 ---
-title: Statement (C) bileşik | Microsoft Docs
-ms.custom: ''
+title: Bileşik Deyim (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - compound statements
 - statements, compound
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11197f19047b0058f5401b9419f0f353c44c91d6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dc4e13d82c03a30023f72759ecacb798aedec0ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063631"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532307"
 ---
 # <a name="compound-statement-c"></a>Bileşik Deyim (C)
 

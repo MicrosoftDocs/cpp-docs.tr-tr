@@ -1,10 +1,6 @@
 ---
-title: CSession sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSession Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CSession
 - ATL::CSession
@@ -35,8 +31,6 @@ f1_keywords:
 - ATL.CSession.StartTransaction
 - CSession.StartTransaction
 - ATL::CSession::StartTransaction
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSession class
 - Abort method
@@ -46,17 +40,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 920ad8c48846396741d0ee2feb01855bd3b927d6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 317e24708a6f4e5666c59c0db870440895173d7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063789"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550325"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 

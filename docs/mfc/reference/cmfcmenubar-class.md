@@ -1,10 +1,6 @@
 ---
-title: CMFCMenuBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCMenuBar sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCMenuBar
 - AFXMENUBAR/CMFCMenuBar
@@ -58,8 +54,6 @@ f1_keywords:
 - AFXMENUBAR/CMFCMenuBar::SetMenuFont
 - AFXMENUBAR/CMFCMenuBar::SetRecentlyUsedMenus
 - AFXMENUBAR/CMFCMenuBar::SetShowAllCommands
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCMenuBar [MFC], AdjustLocations
 - CMFCMenuBar [MFC], AllowChangeTextLabels
@@ -112,16 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93e9d1d148cc70ad0b83bb71565276baa5174afb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cb1143b51dafd9711e058134a9338e28ffcb44b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080877"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599894"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 

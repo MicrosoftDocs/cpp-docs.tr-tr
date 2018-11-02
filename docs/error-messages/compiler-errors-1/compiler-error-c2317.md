@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2317 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2317
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2317
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2317
 ms.assetid: e44d129b-8d3e-4ce9-9d79-6791ee77f25e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: adf536fa1fd8976e3e3251514b3b7486eb57456c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 637433ee22ee77a7106e3692a39eec9973d979c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085374"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608143"
 ---
 # <a name="compiler-error-c2317"></a>Derleyici Hatası C2317
 

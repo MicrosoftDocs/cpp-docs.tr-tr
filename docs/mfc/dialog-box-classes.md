@@ -1,14 +1,8 @@
 ---
-title: İletişim kutusu sınıfları | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusu Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.dialog
-dev_langs:
-- C++
 helpviewer_keywords:
 - property sheet classes
 - dialog box classes
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 177e6f7ab0787ba3eccfe963f08963697747145e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3533a548f009a65462ce0d821d782db0ada9aa4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399516"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490017"
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 

@@ -1,32 +1,22 @@
 ---
-title: Bağlayıcı araçları hatası LNK1000 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1000
 ms.date: 06/18/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1000
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1000
 ms.assetid: 86421b9a-460a-4285-8dce-9b8257d78122
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a01db36200995813ec4b6862e9ddd04c6f069ba
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: 8e53dc898addb4adeec63027c358b42a6a836b50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501731"
 ---
 # <a name="linker-tools-error-lnk1000"></a>Bağlayıcı Araçları Hatası LNK1000
 
 > Bilinmeyen hata; Teknik destek seçenekleri için belgelere bakın
 
-Hata durumlarda dikkat edin, sonra yalıtmak ve tekrarlanabilir bir test çalışması oluşturma deneyin. Araştırmak ve bu hata raporu hakkında daha fazla bilgi için bkz: [Visual C++ araç takımını veya belgelerinde bir sorun bildirme](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+Hatanın koşullara dikkat edin ve yalıtmak ve tekrarlanabilir bir test çalışması oluşturmak deneyin. Araştırmak ve bu hata raporu hakkında daha fazla bilgi için bkz: [belgeleri ve Visual C++ araç takımı ile ilgili bir sorun bildirme](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
-Standart üstbilgi dosyaları (örneğin, Windows.h) ve kendi dosyaları karıştırmak istiyorsanız bu hatayı alabilirsiniz. Herhangi bir, ilk sonra standart üst bilgiler, kendi üst bilgi dosyaları tarafından izlediyseniz önceden derlenmiş üst bilgi içerir.
+Standart üst bilgi dosyaları (örneğin, Windows.h) ve kendi dosyaları karışımı varsa bu hatayı alabilirsiniz. Kendi üst bilgi dosyaları tarafından izlediyseniz herhangi, ilk sonra standart üstbilgileri önceden derlenmiş üst bilgi içerir.

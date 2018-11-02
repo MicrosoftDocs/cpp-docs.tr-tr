@@ -1,10 +1,6 @@
 ---
-title: CCheckListBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCheckListBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCheckListBox
 - AFXWIN/CCheckListBox
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXWIN/CCheckListBox::OnGetCheckPosition
 - AFXWIN/CCheckListBox::SetCheck
 - AFXWIN/CCheckListBox::SetCheckStyle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCheckListBox [MFC], CCheckListBox
 - CCheckListBox [MFC], Create
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57844b3304ccea0156d80c50aa250ef054f715cf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72038e119f7d4483dcd6c6b343d20fd3655856b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533880"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox sınıfı
 

@@ -1,25 +1,15 @@
 ---
-title: Yürütülebilir hata ayıklamayı çalıştırmak için Test Makinesi hazırlama | Microsoft Docs
-ms.custom: ''
+title: Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31369f6aad04a0bd7077e9718e0b85776ca39556
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 95633a9b6b04be7e551934744868e10f60d51fb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377818"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509115"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
 

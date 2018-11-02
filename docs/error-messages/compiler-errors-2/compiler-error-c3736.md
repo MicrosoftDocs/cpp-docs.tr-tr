@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3736 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3736
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3736
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3736
 ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f0a98d1e34a7dbf9e951649d88cd5a96d9f12a8a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e31d68a13ebd9c5267fd285d43ebc66ae8b53182
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069033"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584203"
 ---
 # <a name="compiler-error-c3736"></a>Derleyici Hatası C3736
 

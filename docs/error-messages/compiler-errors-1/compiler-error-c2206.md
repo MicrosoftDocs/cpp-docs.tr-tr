@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2206 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2206
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2206
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2206
 ms.assetid: d7fba68b-aa28-4885-a9a0-27107358f066
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82f1599b927e04f2f9196229bf7c8aaf5e49c13f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3ee2dc24dd2472be8b69a389df1cad77337abf90
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511793"
 ---
 # <a name="compiler-error-c2206"></a>Derleyici Hatası C2206
 

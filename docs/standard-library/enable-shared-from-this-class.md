@@ -1,28 +1,18 @@
 ---
-title: enable_shared_from_this sınıfı | Microsoft Docs
-ms.custom: ''
+title: enable_shared_from_this Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::enable_shared_from_this
-dev_langs:
-- C++
 helpviewer_keywords:
 - enable_shared_from_this class
 - enable_shared_from_this
 ms.assetid: 9237603d-22e2-421f-b070-838ac006baf5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d74db7e9c88baec8aad7f966c0af3f2ec7840f0a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9bf5055aefe505461e81703373ecb042a1f7224a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547829"
 ---
 # <a name="enablesharedfromthis-class"></a>enable_shared_from_this Sınıfı
 

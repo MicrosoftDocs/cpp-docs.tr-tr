@@ -1,28 +1,18 @@
 ---
-title: Tür double | Microsoft Docs
-ms.custom: ''
+title: Tür double
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - mantissas, floating-point variables
 - type double
 - portability [C++], type double
 - double data type
 ms.assetid: 17c85b24-1475-4d41-a03c-ddf2d6561d34
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3384c801f4ed7424711b0f51a42706650b75c41
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 42f8ed943fd9d034d5cae8cb057e094363b27d8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062052"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532268"
 ---
 # <a name="type-double"></a>Tür double
 
