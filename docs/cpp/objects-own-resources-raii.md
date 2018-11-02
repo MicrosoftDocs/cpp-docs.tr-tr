@@ -1,23 +1,14 @@
 ---
-title: Nesnelerin kaynakları (RAII) sahibi | Microsoft Docs
-ms.custom: ''
+title: Nesnelerin Kaynakları (RAII)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 724944028c7343d6b85cf61bde810afcbf1c9619
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a10d6c2177c391ead6065767994b09fb6236ee3a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593618"
 ---
 # <a name="objects-own-resources-raii"></a>Nesnelerin Kaynakları (RAII)
 

@@ -1,12 +1,6 @@
 ---
-title: 'Pano: Diğer biçimleri ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Pano: Diğer Biçimleri Ekleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - formats [MFC], Clipboard
 - Clipboard, formats
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f2a34228a6e6b0c0d4f1800142e657a462aa095
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 991736714d52b4b5fb1a001fb17f1daefed5ddb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560569"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
 

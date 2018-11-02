@@ -1,10 +1,6 @@
 ---
-title: CFileTime sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFileTime sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFileTime
 - ATLTIME/ATL::CFileTime
@@ -20,22 +16,16 @@ f1_keywords:
 - ATLTIME/ATL::CFileTime::Minute
 - ATLTIME/ATL::CFileTime::Second
 - ATLTIME/ATL::CFileTime::Week
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFileTime class
 - shared classes, CFileTime
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36e71cd975ff138343770b80e60b0287faa32558
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 5d3c81a31d49a2817b4605f734d5348dc518076a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614233"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
 

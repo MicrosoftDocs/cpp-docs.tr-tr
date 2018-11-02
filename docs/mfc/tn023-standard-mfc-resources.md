@@ -1,29 +1,19 @@
 ---
-title: 'TN023: Standart MFC kaynakları | Microsoft Docs'
-ms.custom: ''
+title: 'TN023: Standart MFC Kaynakları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.resources
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [MFC]
 - TN023
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a104ce9edd7064dfeda03a77ac8322d99b374b7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 04789ba85a9f7c193a88ba1a0d097b3671808e9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421810"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559919"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC Kaynakları
 

@@ -1,10 +1,6 @@
 ---
-title: COleDateTime sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDateTime sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDateTime
 - ATLCOMTIME/ATL::COleDateTime
@@ -30,8 +26,6 @@ f1_keywords:
 - ATLCOMTIME/ATL::COleDateTime::SetTime
 - ATLCOMTIME/ATL::COleDateTime::m_dt
 - ATLCOMTIME/ATL::COleDateTime::m_status
-dev_langs:
-- C++
 helpviewer_keywords:
 - shared classes, COleDateTime
 - time-only values
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4490eef3427f66456ec79ae2f5429d309a82a54
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2f63535210110e699daedd39a0b5a5ac25fc53c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057407"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505904"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 

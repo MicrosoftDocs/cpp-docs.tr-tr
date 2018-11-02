@@ -1,12 +1,6 @@
 ---
-title: Bir cihaz bağlamına grafik nesnesi seçme | Microsoft Docs
-ms.custom: ''
+title: Bir Cihaz Bağlamına Grafik Nesnesi Seçme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - graphic objects [MFC], selecting into device context
 - SelectObject method [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - device contexts, selecting graphic objects into
 - device contexts, graphic objects [MFC]
 ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 406c4e7cd87b350f9317022dcf1821fa92ddf4af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c879369d445a9330139eff89be4ad8153252bfa1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427673"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438834"
 ---
 # <a name="selecting-a-graphic-object-into-a-device-context"></a>Bir Cihaz Bağlamına Grafik Nesnesi Seçme
 

@@ -1,10 +1,6 @@
 ---
-title: COleDateTimeSpan sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDateTimeSpan sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDateTimeSpan
 - ATLCOMTIME/ATL::COleDateTimeSpan
@@ -23,8 +19,6 @@ f1_keywords:
 - ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus
 - ATLCOMTIME/ATL::COleDateTimeSpan::m_span
 - ATLCOMTIME/ATL::COleDateTimeSpan::m_status
-dev_langs:
-- C++
 helpviewer_keywords:
 - timespan
 - time span
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e50fe341ff52916d16b3c006e438fe2bfa99154
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7bcf4c50577cf7211f90415143edac9fd0df1d5b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509337"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
 

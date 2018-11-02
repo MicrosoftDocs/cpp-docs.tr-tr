@@ -1,31 +1,21 @@
 ---
-title: CHttpConnection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHttpConnection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHttpConnection
 - AFXINET/CHttpConnection
 - AFXINET/CHttpConnection::CHttpConnection
 - AFXINET/CHttpConnection::OpenRequest
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHttpConnection [MFC], CHttpConnection
 - CHttpConnection [MFC], OpenRequest
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18439e33eed4181ebf3f2619226b132721babcc7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7d11420ca48bfcecbd2534123a36364314b9651c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611009"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 

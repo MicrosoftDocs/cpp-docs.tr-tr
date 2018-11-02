@@ -1,25 +1,15 @@
 ---
-title: Statement (C) iade | Microsoft Docs
-ms.custom: ''
+title: return Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ( ) parentheses in return statements
 ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 466a56bf4d1a309aadccbcbbccc91de6a59e6e1a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e9a0fec7a9df03d624e8984e8bd3593388cda35a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067362"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479291"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C)
 
