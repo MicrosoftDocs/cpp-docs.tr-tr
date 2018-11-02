@@ -1,33 +1,23 @@
 ---
-title: CMFCPropertyGridFontProperty sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyGridFontProperty sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridFontProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyGridFontProperty [MFC], CMFCPropertyGridFontProperty
 - CMFCPropertyGridFontProperty [MFC], GetColor
 - CMFCPropertyGridFontProperty [MFC], GetLogFont
 ms.assetid: 83693f33-bbd3-4fcb-a9ad-fa79fcf2ca24
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d6c1f9f9b2084273345463bccfe4eb2bc78d150
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 40f49e7e22b3e1c81e69b9b1f6b02789165dc5eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631727"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty sınıfı
 

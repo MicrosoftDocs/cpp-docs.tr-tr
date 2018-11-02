@@ -1,28 +1,18 @@
 ---
-title: İşaretçi türlerine ve türlerinden dönüşümler | Microsoft Docs
-ms.custom: ''
+title: İşaretçi Türlerine ve Türlerinden Dönüşümler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointers, converting
 - conversions, pointer
 - type casts, involving pointers
 - void pointers
 ms.assetid: 3facc56f-06d3-4570-b1a2-7d4927b83086
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e4c191d53008c45b2c96c64a60b8f8ce309587a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7487cb4fd268edf1db7531a2a40b5535cd425f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623411"
 ---
 # <a name="conversions-to-and-from-pointer-types"></a>İşaretçi Türlerine ve Türlerinden Dönüşümler
 

@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1383 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1383
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1383
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1383
 ms.assetid: ca224d14-d687-4fd6-80c2-8b82f28924ea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98f6fe881b2cdc46d4d2848d6faf850381f54c7b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4ab96c0516ee5593a969669c03ae22f0c211ae27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062195"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626139"
 ---
 # <a name="fatal-error-c1383"></a>Önemli hata C1383
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2438 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2438
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2438
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2438
 ms.assetid: 3a0ab3ba-d0e4-4d8f-971d-e503397cc827
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f5153e3ff6626f3ea1b1155f14bc9ef96441e7d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b2861090b5f7629c7f0cd94ea38a99e888909258
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630509"
 ---
 # <a name="compiler-error-c2438"></a>Derleyici Hatası C2438
 

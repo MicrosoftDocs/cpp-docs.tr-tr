@@ -1,31 +1,21 @@
 ---
-title: CWinTraitsOR sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWinTraitsOR sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CWinTraitsOR
 - ATLWIN/ATL::CWinTraitsOR
 - ATLWIN/ATL::CWinTraitsOR::GetWndExStyle
 - ATLWIN/ATL::CWinTraitsOR::GetWndStyle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWinTraitsOR class
 - window styles, default values for ATL
 ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3883065d9d7222d5e9d98806f0baadf0bc209213
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 153ff21a9122839c7d306e33d57afab69c3c155e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072310"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646348"
 ---
 # <a name="cwintraitsor-class"></a>CWinTraitsOR sınıfı
 

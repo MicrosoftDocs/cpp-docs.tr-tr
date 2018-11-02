@@ -1,12 +1,6 @@
 ---
-title: Visual C++ uygulaması bağımlılıklarını anlama | Microsoft Docs
-ms.custom: ''
+title: Visual C++ Uygulaması Bağımlılıklarını Anlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - application deployment [C++], dependencies
 - Dependency Walker
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - depends.exe
 - libraries [C++], application deployment issues
 ms.assetid: 62a44c95-c389-4c5f-82fd-07d7ef09dbf9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7cdcc3af65f5a3a45b4a3549348a564a0cb0830e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8ed340bed62d3b2cfcf32e0b98f032c9146b6bb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425125"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629274"
 ---
 # <a name="understanding-the-dependencies-of-a-visual-c-application"></a>Visual C++ Uygulaması Bağımlılıklarını Anlama
 

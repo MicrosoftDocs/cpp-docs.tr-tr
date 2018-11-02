@@ -1,10 +1,6 @@
 ---
-title: CMFCAutoHideButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCAutoHideButton sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCAutoHideButton
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowAttachedWindow
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowButton
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton::UnSetAutoHideMode
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCAutoHideButton [MFC], BringToTop
 - CMFCAutoHideButton [MFC], Create
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - CMFCAutoHideButton [MFC], ShowButton
 - CMFCAutoHideButton [MFC], UnSetAutoHideMode
 ms.assetid: c80e6b8b-25ca-4d12-9d27-457731028ab0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92f7875620f6cc3efee77094fcae80de83f6db1b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 454db8578fd061147948538b8d993205181edcdc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056080"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638015"
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton sınıfı
 

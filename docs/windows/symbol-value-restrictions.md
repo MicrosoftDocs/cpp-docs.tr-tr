@@ -1,29 +1,18 @@
 ---
-title: Sembol değeri kısıtlamaları | Microsoft Docs
-ms.custom: ''
+title: Sembol Değeri Kısıtlamaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.restrictions.value
-dev_langs:
-- C++
 helpviewer_keywords:
 - symbols [C++], value restrictions
 - restrictions, symbol values
 ms.assetid: 32467ec3-690b-4cd0-a4d0-7d189a3296cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c0f6939cfb9cd1dc72026441d946431097a5c3d7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0f0a02c7eb2bbb205f41aaeec209c45d629f0b20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677675"
 ---
 # <a name="symbol-value-restrictions"></a>Sembol Değeri Kısıtlamaları
 
