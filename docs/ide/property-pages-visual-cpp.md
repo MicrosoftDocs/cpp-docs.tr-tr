@@ -1,14 +1,8 @@
 ---
-title: Özellik sayfaları (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: Özellik Sayfaları (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.NotAProp.Edit
-dev_langs:
-- C++
 helpviewer_keywords:
 - project-file macro
 - project properties [C++], default values
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - build macro
 - user-defined macros
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c24ed9328f77d26a8ad11a6ff6bdbf47bad9fbe3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4058f6574dcaa6d383295b63bfd27c5c1a0056aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381419"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526457"
 ---
 # <a name="property-pages-visual-c"></a>Özellik Sayfaları (Visual C++)
 
