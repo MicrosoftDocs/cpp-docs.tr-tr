@@ -1,28 +1,18 @@
 ---
-title: com::PTR | Microsoft Docs
-ms.custom: ''
+title: com::ptr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - com::ptr
 ms.assetid: ee302e3c-8fed-4875-a372-2e55003718d3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f5e6a3f7936e21d22282fe37a29b5d91f2e50caa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9bcfe00bd41d57542116f786f28df19d12c68b65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434498"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664587"
 ---
 # <a name="comptr"></a>com::ptr
 

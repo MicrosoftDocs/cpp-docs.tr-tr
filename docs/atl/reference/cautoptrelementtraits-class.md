@@ -1,30 +1,20 @@
 ---
-title: CAutoPtrElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAutoPtrElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAutoPtrElementTraits
 - ATLCOLL/ATL::CAutoPtrElementTraits
 - ATLCOLL/ATL::CAutoPtrElementTraits::INARGTYPE
 - ATLCOLL/ATL::CAutoPtrElementTraits::OUTARGTYPE
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAutoPtrElementTraits class
 ms.assetid: 777c1b14-6ab7-491f-b9a5-be149e71d4a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f406415afab907b7b00d75e52dce1fcac7166fd5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4d13ca8e3de00a49e15e5acbc35c6301b9d7eae2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021089"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476533"
 ---
 # <a name="cautoptrelementtraits-class"></a>CAutoPtrElementTraits sınıfı
 

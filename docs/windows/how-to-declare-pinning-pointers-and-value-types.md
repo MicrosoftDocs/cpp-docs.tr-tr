@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: sabitleme işaretçileri ve değer türlerini | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Sabitleme İşaretçileri ve Değer Türlerini Bildirme'
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - value types, declaring
 - pinning pointers
 ms.assetid: 57c5ec8a-f85a-48c4-ba8b-a81268bcede0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2e724e468ec9c95a2404ea70c8666bc6880207ca
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: ed7835e3ab6ccda724ccb6c0d7cf5dab8dd4d342
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327615"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660869"
 ---
 # <a name="how-to-declare-pinning-pointers-and-value-types"></a>Nasıl yapılır: Sabitleme İşaretçileri ve Değer Türlerini Bildirme
 

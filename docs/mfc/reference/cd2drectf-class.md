@@ -1,31 +1,21 @@
 ---
-title: CD2DRectF sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DRectF sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DRectF
 - AFXRENDERTARGET/CD2DRectF
 - AFXRENDERTARGET/CD2DRectF::CD2DRectF
 - AFXRENDERTARGET/CD2DRectF::IsNull
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DRectF [MFC], CD2DRectF
 - CD2DRectF [MFC], IsNull
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e6ae53d5de0a562886ad22a23bd78cc9c1a4fbc6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fad906510a111a2132d590d7c221d2484645f044
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591210"
 ---
 # <a name="cd2drectf-class"></a>CD2DRectF sınıfı
 

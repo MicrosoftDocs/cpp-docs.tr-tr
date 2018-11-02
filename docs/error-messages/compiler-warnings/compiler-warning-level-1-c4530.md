@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4530 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4530
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4530
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4530
 ms.assetid: a04dcdb2-84db-459d-9e5e-4e743887465f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbfbc67377dd48eeb692bdd4cac1f113fbdf7f6a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a542f9b6bb73e561592e1e779aa6ee493612e6ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110464"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554107"
 ---
 # <a name="compiler-warning-level-1-c4530"></a>Derleyici Uyarısı (düzey 1) C4530
 

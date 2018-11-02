@@ -1,25 +1,15 @@
 ---
-title: ATL'nin kapsamı | Microsoft Docs
-ms.custom: ''
+title: ATL'nin kapsamı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, scope
 ms.assetid: 381adf50-3cb0-4d0f-a79a-07da093bc280
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99be937416642ec60466eb196dce64e68fea4de1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1196d4ec0cce66e3ea62c1ee0653da649e670832
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605783"
 ---
 # <a name="scope-of-atl"></a>ATL'nin kapsamı
 

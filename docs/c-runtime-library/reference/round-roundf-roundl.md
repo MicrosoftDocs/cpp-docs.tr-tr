@@ -1,10 +1,6 @@
 ---
-title: gidiş, roundf, roundl | Microsoft Docs
-ms.custom: ''
+title: round, roundf, roundl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - round
 - roundl
@@ -26,27 +22,21 @@ f1_keywords:
 - roundf
 - roundl
 - round
-dev_langs:
-- C++
 helpviewer_keywords:
 - roundl function
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83c157793b80ec851f2c6159a5454f7101d2baed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 126c6bace2b79123094a7f8bcc8f3d3378391d96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591784"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
-Kayan noktalı bir sayıyı en yakın tamsayıya yuvarlar.
+Bir kayan nokta değeri en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,27 +61,27 @@ long double roundl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Yuvarlanacak kayan nokta değer.
+Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Yuvarlamak** işlevler en yakın tamsayıya temsil eden bir kayan nokta değer döndürmek *x*. Kayan nokta yuvarlama modu ayarından bağımsız olarak sıfırdan uzağa doğru yarısı değerler yuvarlanır. Döndürülen hata yoktur.
+**Yuvarlak** İşlevler, en yakın tamsayıya temsil eden bir kayan nokta değeri döndürür *x*. Yarım değerler, kayan nokta yuvarlama modu ayarından bağımsız olarak sıfırdan uzağa yuvarlanır. Döndürülen hata yok.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **UL**|yok|**_DOMAIN**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **yuvarlamak** alın ve dönüş **float** ve **uzun** **çift** değerleri. Bir C programı **yuvarlamak** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **yuvarlak** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **yuvarlak** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**yuvarlamak**, **roundf**, **roundl**|\<Math.h >|
+|**Yuvarlak**, **roundf**, **roundl**|\<Math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

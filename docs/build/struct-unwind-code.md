@@ -1,23 +1,13 @@
 ---
-title: Yapı UNWIND_CODE | Microsoft Docs
-ms.custom: ''
+title: struct UNWIND_CODE
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 104955d8-7e33-4c5a-b0c6-3254648f0af3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f5bccddd2ddd5c0f9dfbc828a7da3a66fa13339d
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 1ba3cc76c521e158ba448ac2e4e1beda9b3da35a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643241"
 ---
 # <a name="struct-unwindcode"></a>struct UNWIND_CODE
 

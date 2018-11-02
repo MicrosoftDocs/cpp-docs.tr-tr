@@ -1,27 +1,18 @@
 ---
-title: ML uyarısı A4014 | Microsoft Docs
-ms.custom: ''
+title: ML Uyarısı A4014
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A4014
-dev_langs:
-- C++
 helpviewer_keywords:
 - A4014
 ms.assetid: 11bc8920-3255-4ac8-999a-b9ea9c15bc81
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3108d961c213ca5035cdba5ca9e7c5c8c10317b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b5354fd074bfde505b8fce0e4a0b248e5810439b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558229"
 ---
 # <a name="ml-warning-a4014"></a>ML Uyarısı A4014
 

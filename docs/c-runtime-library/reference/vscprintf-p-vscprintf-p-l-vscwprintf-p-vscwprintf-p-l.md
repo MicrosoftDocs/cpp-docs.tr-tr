@@ -1,10 +1,6 @@
 ---
-title: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _vscprintf_p_l
 - _vscprintf_p
@@ -31,8 +27,6 @@ f1_keywords:
 - _vscwprintf_p_l
 - vscprintf_p_l
 - _vscwprintf_p
-dev_langs:
-- C++
 helpviewer_keywords:
 - vscprintf_p function
 - _vsctprintf_p_l function
@@ -47,16 +41,12 @@ helpviewer_keywords:
 - _vsctprintf_p function
 - vscprintf_p_l function
 ms.assetid: 5da920b3-8652-4ee9-b19e-5aac3ace9d03
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49dd74c679e451a658828fcacb55146e3f8d5d17
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 357cc1f28e5495385b67fdb7c1b86bbc15f79950
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200300"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627935"
 ---
 # <a name="vscprintfp-vscprintfpl-vscwprintfp-vscwprintfpl"></a>_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 

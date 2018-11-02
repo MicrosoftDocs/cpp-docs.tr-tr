@@ -1,12 +1,6 @@
 ---
-title: Veri nesneleri ve veri kaynakları (OLE) | Microsoft Docs
-ms.custom: ''
+title: Veri Nesneleri ve Veri Kaynakları (OLE)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data objects [MFC], definition
 - data transfer [MFC]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - OLE [MFC], data objects
 - OLE [MFC], data sources
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f933a8eb75c25921c3025f8ca1bc03a2c72fc81b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09e328171657c3c6557a5d77acae0f034e517955
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443949"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612491"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Veri Nesneleri ve Veri Kaynakları (OLE)
 

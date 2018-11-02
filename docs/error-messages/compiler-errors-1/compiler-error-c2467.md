@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2467 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2467
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2467
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2467
 ms.assetid: f9ead270-5d0b-41cc-bdcd-586a647c67a7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bab320bfdba9fcbd408771b7859a22fc85fa06e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aa45cbb19519dea7bd5c8fb96abd2c76ea30a786
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598036"
 ---
 # <a name="compiler-error-c2467"></a>Derleyici Hatası C2467
 

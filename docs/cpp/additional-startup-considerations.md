@@ -1,27 +1,17 @@
 ---
-title: Ek başlatma konuları | Microsoft Docs
-ms.custom: ''
+title: Ek Başlatma Konuları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - program startup [C++]
 - startup code
 - initializing before main
 ms.assetid: 0e942aa6-8342-447c-b068-8980ed7622bd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5d629451161d94853558887eb7029fc165d13d9b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 16e48f2e4f7544d28a1bea00e1fdf2d1cff397b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605588"
 ---
 # <a name="additional-startup-considerations"></a>Ek Başlatma Konuları
 

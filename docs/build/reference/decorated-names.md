@@ -1,27 +1,17 @@
 ---
-title: Düzenlenmiş adları | Microsoft Docs
-ms.custom: ''
+title: Düzenlenmiş Adlar
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - decorated names, definition
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32c8a91442e55325b35d1067ec5009c9bd5cf4a6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c7821fc9fca1c9a965ea83584415b9baf17ec683
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700732"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579120"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 

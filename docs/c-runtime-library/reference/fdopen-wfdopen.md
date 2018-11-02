@@ -1,10 +1,6 @@
 ---
-title: _fdopen, _wfdopen | Microsoft Docs
-ms.custom: ''
+title: _fdopen, _wfdopen
 ms.date: 12/12/2017
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fdopen
 - _wfdopen
@@ -28,8 +24,6 @@ f1_keywords:
 - _wfdopen
 - wfdopen
 - tfdopen
-dev_langs:
-- C++
 helpviewer_keywords:
 - wfdopen function
 - _fdopen function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _tfdopen function
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b23416e4c6895669e73ec6611cf38c678016c52a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c68bc835adf19df7f1538d30b2be162fe6dc6021
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107048"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584463"
 ---
 # <a name="fdopen-wfdopen"></a>_fdopen, _wfdopen
 

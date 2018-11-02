@@ -1,25 +1,15 @@
 ---
-title: İlişkisel işlev şablonları | Microsoft Docs
-ms.custom: ''
+title: İlişkisel İşlev Şablonları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - relational function templates
 ms.assetid: 57893a51-9adb-41fc-941d-2ca97687db2a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c53b2ddb24c0eb6e905f121b835870f2b88a4ca7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1c47627baa270c3b5eb58127590aefc6d06c9df3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118680"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644801"
 ---
 # <a name="relational-function-templates"></a>İlişkisel İşlev Şablonları
 

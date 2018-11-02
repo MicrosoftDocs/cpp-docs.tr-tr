@@ -1,14 +1,8 @@
 ---
-title: ANSI C uyumluluğu | Microsoft Docs
-ms.custom: ''
+title: ANSI C Uyumluluğu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - Ansi
-dev_langs:
-- C++
 helpviewer_keywords:
 - underscores, leading
 - compatibility [C++], ANSI C
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - ANSI [C++], C standard
 - Microsoft extensions naming conventions
 ms.assetid: 6be271bf-eecf-491a-a928-0ee2dd60e3b9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5fceb2681befa5ed9c8c82facb85442aed2d646
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c84485fdd06bc9264241cb37aa3c6b2fb29d9322
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023351"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620759"
 ---
 # <a name="ansi-c-compliance"></a>ANSI C Uyumluluğu
 

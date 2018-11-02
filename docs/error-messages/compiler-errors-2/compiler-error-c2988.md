@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2988 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2988
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2988
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2988
 ms.assetid: c07ada8d-7cdf-4496-8656-cc3851e76b46
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 472d0cf999628b021cc3617b6454f1bfb7f0f976
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ddc0fca41d52156143965d40bbf7f678a232678b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648402"
 ---
 # <a name="compiler-error-c2988"></a>Derleyici Hatası C2988
 

@@ -1,10 +1,6 @@
 ---
-title: Event sınıfı | Microsoft Docs
-ms.custom: ''
+title: event Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - event
 - CONCRT/concurrency::event
@@ -13,21 +9,15 @@ f1_keywords:
 - CONCRT/concurrency::event::wait
 - CONCRT/concurrency::event::wait_for_multiple
 - CONCRT/concurrency::event::timeout_infinite
-dev_langs:
-- C++
 helpviewer_keywords:
 - event class
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab586243df9b015c95f4a703744bfb02a54d064e
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 323b9a6e2c46bea8d82f0f589d1174041c1f0780
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162197"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480112"
 ---
 # <a name="event-class"></a>event Sınıfı
 

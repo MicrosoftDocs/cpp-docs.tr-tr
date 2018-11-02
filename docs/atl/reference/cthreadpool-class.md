@@ -1,10 +1,6 @@
 ---
-title: CThreadPool sınıfı | Microsoft Docs
-ms.custom: ''
+title: CThreadPool sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CThreadPool
 - ATLUTIL/ATL::CThreadPool
@@ -21,21 +17,15 @@ f1_keywords:
 - ATLUTIL/ATL::CThreadPool::SetSize
 - ATLUTIL/ATL::CThreadPool::SetTimeout
 - ATLUTIL/ATL::CThreadPool::Shutdown
-dev_langs:
-- C++
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a5541613bddd1e6a4fbac3a5555e54ce30fb94c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b1cf1dfc623edbb2b6e71aa6476a2fe0cccbc20b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677194"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 

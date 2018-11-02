@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4238 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4238
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4238
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4238
 ms.assetid: 5d4051d3-7b0f-43ea-8c8d-d194bfdceb71
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f4d5f358d08f81e6b8097140ad47d54f4b3b3fed
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c5ffa07b06f010d10edc14aa7576bb614aa9dd04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471909"
 ---
 # <a name="compiler-warning-level-4-c4238"></a>Derleyici Uyarısı (düzey 4) C4238
 

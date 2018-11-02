@@ -1,29 +1,19 @@
 ---
-title: CMemoryState yapısı | Microsoft Docs
-ms.custom: ''
+title: CMemoryState yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMemoryState
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMemoryState structure [MFC]
 - memory leaks [MFC], detecting
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09b82a4ee1c10e009d403e0e0071cf90cb65cd86
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a1a6912cd736643313306f6453ce19b1f6b97adc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502979"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState yapısı
 

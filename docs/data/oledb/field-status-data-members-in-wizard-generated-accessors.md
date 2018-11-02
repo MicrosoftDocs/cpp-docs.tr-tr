@@ -1,27 +1,16 @@
 ---
-title: Alan durumu veri üyeleri sihirbazın ürettiği Erişimcilerde | Microsoft Docs
-ms.custom: ''
+title: Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: def38b763094c78e7e03ad1f0197c1df49fecdaf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 25bb370c0714bfef97bc6659deae2fbd21aed23f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664574"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 

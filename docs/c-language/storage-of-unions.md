@@ -1,27 +1,17 @@
 ---
-title: Birleşimler deposu | Microsoft Docs
-ms.custom: ''
+title: Birleşimler Deposu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - storage, union
 - union keyword [C], storage
 - union keyword [C]
 ms.assetid: b33d246a-8d20-41c4-89b2-ab05f1428792
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 516de9411a91f4bb8dd5f8775544ef32e7863bb3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 06444151a453017055667885304ecb59534f5774
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602234"
 ---
 # <a name="storage-of-unions"></a>Birleşimler Deposu
 

@@ -1,28 +1,18 @@
 ---
-title: less_equal yapısı | Microsoft Docs
-ms.custom: ''
+title: less_equal Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::less_equal
-dev_langs:
-- C++
 helpviewer_keywords:
 - less_equal function
 - less_equal struct
 ms.assetid: 32085782-c7e0-4310-9b40-8aa3c1bff211
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb6c0051fbf4a1d5b58cb53891325058effb0db1
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 942b5da850f03eef026533e7168fa8d3d1ea9002
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108999"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595591"
 ---
 # <a name="lessequal-struct"></a>less_equal Yapısı
 

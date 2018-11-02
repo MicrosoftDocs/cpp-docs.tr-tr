@@ -1,10 +1,6 @@
 ---
-title: COleControlContainer sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleControlContainer sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleControlContainer
 - AFXOCC/COleControlContainer
@@ -41,8 +37,6 @@ f1_keywords:
 - AFXOCC/COleControlContainer::m_pSiteUIActive
 - AFXOCC/COleControlContainer::m_pWnd
 - AFXOCC/COleControlContainer::m_siteMap
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleControlContainer [MFC], COleControlContainer
 - COleControlContainer [MFC], AttachControlSite
@@ -78,16 +72,12 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd45453dd4d70424b47f74e46d0bd5f948f75499
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e89096b553814285f61093af81e31b294e3ad2bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603018"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer sınıfı
 

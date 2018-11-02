@@ -1,14 +1,8 @@
 ---
-title: Tchar.h'de genel metin eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: Tchar.h'de Genel Metin Eşlemeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - tchar.h
-dev_langs:
-- C++
 helpviewer_keywords:
 - mapping generic-text
 - generic-text mappings [C++]
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5959e026df9fcffc3295000b3d433aab16100fb6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 969894502689dd5aeeeaa27404bafc3c483c1336
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667590"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de Genel Metin Eşlemeleri
 

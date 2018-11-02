@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4670 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4670
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4670
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4670
 ms.assetid: e172b134-b1fb-4dfe-8e9d-209ea08b73c7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f1f406442e763175da1bb0220925a1a43d8825d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1ce32ef4d07ea5e2c6f328578837f805eed5c897
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633486"
 ---
 # <a name="compiler-warning-level-4-c4670"></a>Derleyici Uyarısı (düzey 4) C4670
 

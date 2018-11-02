@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC recordsets, creating
 - recordsets, creating
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - ODBC recordsets, closing
 - ODBC recordsets, opening
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4da86f43cf89720132aba0eaa611a01a3902fb1a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d98f7e59e52b86a1b9b1c3ffac5c3e7160e6c36d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059031"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581512"
 ---
 # <a name="recordset-creating-and-closing-recordsets-odbc"></a>Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)
 

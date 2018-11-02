@@ -1,28 +1,18 @@
 ---
-title: Bağlantı noktası makroları | Microsoft Docs
-ms.custom: ''
+title: Bağlantı noktası makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcom/ATL::BEGIN_CONNECTION_POINT_MAP
 - atlcom/ATL::END_CONNECTION_POINT_MAP
-dev_langs:
-- C++
 helpviewer_keywords:
 - connection points [C++], macros
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a654f820d3c1dcdaa49ed8b3b3203d2c271b6880
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ac00b1c5a937c32ecc02e11e735541119c388588
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055495"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605796"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
 

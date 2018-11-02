@@ -1,29 +1,19 @@
 ---
-title: CAtlServiceModuleT::Handler işlevi | Microsoft Docs
-ms.custom: ''
+title: CAtlServiceModuleT::Handler işlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - CServiceModule::Handler
 - CServiceModule.Handler
 - Handler
-dev_langs:
-- C++
 helpviewer_keywords:
 - Handler method
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c8dc0b0d41a18c775258e1eacddd8e4dbebdb3d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 74c52e07f5be4ac16c8f9a20115a623c53f46090
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039224"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553692"
 ---
 # <a name="catlservicemodulethandler-function"></a>CAtlServiceModuleT::Handler işlevi
 

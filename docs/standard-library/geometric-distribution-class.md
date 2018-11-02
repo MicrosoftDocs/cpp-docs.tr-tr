@@ -1,10 +1,6 @@
 ---
-title: geometric_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: geometric_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::geometric_distribution
 - random/std::geometric_distribution::reset
@@ -17,8 +13,6 @@ f1_keywords:
 - random/std::geometric_distribution::param_type::p
 - random/std::geometric_distribution::param_type::operator==
 - random/std::geometric_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::geometric_distribution [C++]
 - std::geometric_distribution [C++], reset
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::geometric_distribution [C++], param_type
 - std::geometric_distribution [C++], param_type
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ca6120a8cd649b1c4d3d5d662cb987d950b9b4e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 600459784b4db620b6b717b5ffdfaf24d1ceb757
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579873"
 ---
 # <a name="geometricdistribution-class"></a>geometric_distribution Sınıfı
 

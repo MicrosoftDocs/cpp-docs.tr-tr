@@ -1,28 +1,18 @@
 ---
-title: Cdaoındexınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoIndexInfo Yapısı
 ms.date: 06/25/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoIndexInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - DAO (Data Access Objects), Indexes collection
 - CDaoIndexInfo structure [MFC]
 ms.assetid: 251d8285-78ce-4716-a0b3-ccc3395fc437
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cfeaada169addc01bc09893db0dedba2b7528d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 55f64fcebc308bd0e63643cfb5447608c4e2e37c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403116"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677909"
 ---
 # <a name="cdaoindexinfo-structure"></a>CDaoIndexInfo Yapısı
 

@@ -1,11 +1,6 @@
 ---
-title: exp2, exp2f, exp2l | Microsoft Docs
-ms.custom: ''
+title: exp2, exp2f, exp2l
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - exp2
 - exp2f
@@ -30,23 +25,17 @@ f1_keywords:
 - math/exp2f
 - exp2l
 - math/exp2l
-dev_langs:
-- C++
 helpviewer_keywords:
 - exp2 function
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aea847d367200635c8fecbd694f8a50be859b3ea
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70a3b7eb610556d4a26de7cf0aad55affcdbdc94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562766"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
@@ -83,30 +72,30 @@ long double exp2l(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, temel 2 üs döndürür *x*, diğer bir deyişle, 2<sup>x</sup>. Aksi takdirde, aşağıdaki değerlerden birini döndürür:
+Başarılı olursa, 2 tabanında üssünü döndürür *x*, diğer bir deyişle, 2<sup>x</sup>. Aksi takdirde, aşağıdaki değerlerden birini döndürür:
 
-|Sorun|Döndür|
+|Sorun|döndürülecek|
 |-----------|------------|
 |*x* ±0 =|1.|
-|*x* = - SONSUZ|+0|
-|*x* = + SONSUZ|+ SONSUZ|
+|*x* = - INFİNİTY|+0|
+|*x* = + INFİNİTY|+ INFİNİTY|
 |*x* NaN =|NaN|
-|taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
-|Underflow aralık hatası|Yuvarlama sonra doğru sonucu|
+|Taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
+|Yetersiz aralık hatası|Sonra yuvarlama doğru sonucu|
 
-Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+Hatalar rapor, belirtilen [_matherr](matherr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **exp2** alın ve dönüş **float** ve **uzun çift** türleri. Bir C programı **exp2** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **exp2** alan ve getiren **float** ve **uzun çift** türleri. C programında **exp2** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**exp**, **expf**, **expl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

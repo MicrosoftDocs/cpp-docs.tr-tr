@@ -1,29 +1,19 @@
 ---
-title: Gönderme eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: Eşlemeleri Dağıtma
 ms.date: 06/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
-dev_langs:
-- C++
 helpviewer_keywords:
 - dispatch maps [MFC], macros
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d22c94513e80c4f353de9e10588f219a2d3be92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5ebedaa02a03bcc7802110977b96659dae45f174
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585087"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 

@@ -1,27 +1,17 @@
 ---
-title: decay sınıfı | Microsoft Docs
-ms.custom: ''
+title: decay Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::decay
-dev_langs:
-- C++
 helpviewer_keywords:
 - decay class
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7d3ad5bae067bb9661b6cf475d0831b2b2dfcd2a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 23c2cff37e67e78ba68c37468c110d7a3725b785
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480307"
 ---
 # <a name="decay-class"></a>decay Sınıfı
 

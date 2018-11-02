@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: kayıt kümesi (ODBC) kümesinde yeniden sorgulama | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - recordsets, requerying
 - requerying recordsets
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - ODBC recordsets, requerying
 - refreshing recordsets
 ms.assetid: 4ebc3b5b-5b91-4f51-a967-245223c6b8e1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 7d228fb97cad2fba426aa6415564d3b7f60363b5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b8e7de569a8310fdad0273ae70449d2da544f6e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062690"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482760"
 ---
 # <a name="recordset-requerying-a-recordset-odbc"></a>Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)
 

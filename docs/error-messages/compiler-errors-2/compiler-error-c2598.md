@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2598 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2598
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2598
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2598
 ms.assetid: 40777c62-39ba-441e-b081-f49f94b43547
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11747df117ea714ea3c4d7ce41e9229c79becc93
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 521a67bdf1e1f64853a3f87933b3fa714c8e33f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102703"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578236"
 ---
 # <a name="compiler-error-c2598"></a>Derleyici Hatası C2598
 

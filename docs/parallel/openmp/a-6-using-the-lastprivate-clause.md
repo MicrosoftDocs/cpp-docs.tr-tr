@@ -1,23 +1,13 @@
 ---
-title: A.6 lastprivate yan tümcesini kullanma | Microsoft Docs
-ms.custom: ''
+title: A.6   lastprivate Yan Tümcesini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: cf3bf0cc-aa46-4e44-9433-e2969e3be2c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03d18d3aaf5c5d1cbe03282710ae4f4e2bb613f3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d5ba1413827590b7fb3afa0847b9aa1da3c41e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390585"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579812"
 ---
 # <a name="a6---using-the-lastprivate-clause"></a>A.6   lastprivate Yan Tümcesini Kullanma
 

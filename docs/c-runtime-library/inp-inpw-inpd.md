@@ -1,10 +1,6 @@
 ---
-title: _inp, _inpw, _inpd | Microsoft Docs
-ms.custom: ''
+title: _inp, _inpw, _inpd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _inp
 - _inpw
@@ -23,8 +19,6 @@ f1_keywords:
 - _inp
 - _inpw
 - _inpd
-dev_langs:
-- C++
 helpviewer_keywords:
 - inp function
 - inpw function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - I/O [CRT], port
 - _inpw function
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23e3f28ddb96bb34b38b3dd90ff6720edb1d9224
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56587455b1b5246be361afc131786d85dbc9a1a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041356"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469868"
 ---
 # <a name="inp-inpw-inpd"></a>_inp, _inpw, _inpd
 

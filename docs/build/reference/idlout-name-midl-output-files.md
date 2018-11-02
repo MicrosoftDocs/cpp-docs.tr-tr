@@ -1,15 +1,9 @@
 ---
-title: -IDLOUT (MIDL çıktı dosyalarının adını) | Microsoft Docs
-ms.custom: ''
+title: /IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /idlout
 - VC.Project.VCLinkerTool.MergedIDLBaseFileName
-dev_langs:
-- C++
 helpviewer_keywords:
 - MIDL, output file names
 - .idl files, path
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - -IDLOUT linker option
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ef4f8b418edcdb903fa8f807cb5e08d63eaeeed
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b21e8eb266de9a0baa0512a82acb0ae8a9f650a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441635"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500431"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 
@@ -76,7 +66,7 @@ MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafınd
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

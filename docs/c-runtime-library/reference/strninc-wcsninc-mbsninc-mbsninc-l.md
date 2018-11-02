@@ -1,10 +1,6 @@
 ---
-title: _strninc, _wcsninc, _mbsninc, _mbsninc_l | Microsoft Docs
-ms.custom: ''
+title: _strninc, _wcsninc, _mbsninc, _mbsninc_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsninc
 - _mbsninc_l
@@ -34,8 +30,6 @@ f1_keywords:
 - _ftcsninc
 - _wcsninc
 - _mbsninc
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsninc_l function
 - mbsninc function
@@ -48,23 +42,19 @@ helpviewer_keywords:
 - mbsninc_l function
 - _tcsninc function
 ms.assetid: 6caace64-f9e4-48c0-afa8-ea51824ad723
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21218c411ad8bab9e3e4bd73eea266d0889f6c7d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ef30a9f57f0b8c84199befb00f3edc13342a1eaf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643189"
 ---
 # <a name="strninc-wcsninc-mbsninc-mbsnincl"></a>_strninc, _wcsninc, _mbsninc, _mbsninc_l
 
-Dize işaretçisi olarak ilerler **n** karakter.
+Bir dize işaretçisi tarafından ilerler **n** karakter.
 
 > [!IMPORTANT]
-> **_mbsninc** ve **_mbsninc_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsninc** ve **_mbsninc_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -94,18 +84,18 @@ unsigned char *_mbsninc(
 Kaynak dizesi.
 
 *Sayısı*<br/>
-Bir dize işaretçisi artırmak için karakter sayısı.
+Dize işaretçisine artırılacak karakter sayısı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamlar, her bir işaretçi döndürür *str* sonra *str* tarafından artar *sayısı* karakter veya **NULL** varsa sağlanan İşaretçi **NULL**. Varsa *sayısı* karakter sayısına eşit veya daha büyük olan *str*, sonuç tanımlanmadı.
+Bu yordamların her biri işaretçi döndürür *str* sonra *str* göre artırıldıktan *sayısı* karakter veya **NULL** , sağlanan İşaretçi **NULL**. Varsa *sayısı* büyüktür veya eşittir karakter sayısı *str*, sonuç tanımsızdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsninc** işlev artışlarla *str* tarafından *sayısı* birden çok baytlı karakterler. **_mbsninc** göre çok baytlı karakter sıralarının tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda.
+**_Mbsninc** işlev artışlarla *str* tarafından *sayısı* çok baytlı karakter. **_mbsninc** çok baytlı karakter sıralarına göre tanır [çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -113,9 +103,9 @@ Bu yordamlar, her bir işaretçi döndürür *str* sonra *str* tarafından artar
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsninc**|**_strninc**|**_mbsninc**|**_wcsninc**|
 
-**_strninc** ve **_wcsninc** tek bayt karakter dizesi ve geniş karakter dizesi sürümleri **_mbsninc**. **_wcsninc** ve **_strninc** yalnızca bu eşleme için sağlanır ve aksi durumda kullanılmamalıdır. Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
+**_strninc** ve **_wcsninc** tek baytlık karakterlerdir dize ve geniş karakter dizesi sürümleri **_mbsninc**. **_wcsninc** ve **_strninc** yalnızca bu eşleşmeye ilişkin sağlanırlar ve aksi takdirde kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini kullanma](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
 
-**_mbsninc_l** yerine geçirilen yerel ayar parametresi kullanan dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_mbsninc_l** bunun yerine iletilmiş yerel ayar parametresini kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -126,7 +116,7 @@ Bu yordamlar, her bir işaretçi döndürür *str* sonra *str* tarafından artar
 |**_strninc**|\<Tchar.h >|
 |**_wcsninc**|\<Tchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: money_put sınıfı | Microsoft Docs
-ms.custom: ''
+title: money_put Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_put
 - xlocmon/std::money_put::char_type
@@ -12,8 +8,6 @@ f1_keywords:
 - xlocmon/std::money_put::string_type
 - xlocmon/std::money_put::do_put
 - xlocmon/std::money_put::put
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::money_put [C++]
 - std::money_put [C++], char_type
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6163e3db11da717eaf188b4b2f585f78d7eb511
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 61f4590a7f11401601c0e11e493b49cb442cdb23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073376"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664197"
 ---
 # <a name="moneyput-class"></a>money_put Sınıfı
 

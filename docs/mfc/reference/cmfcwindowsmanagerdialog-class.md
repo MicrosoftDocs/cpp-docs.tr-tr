@@ -1,29 +1,19 @@
 ---
-title: CMFCWindowsManagerDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCWindowsManagerDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCWindowsManagerDialog
 - AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog
 - AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7889d5bb2d94d7501f20578efb984fe75908f2a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 67fbd1ed066b47cdedf1b5ea2952b042c69bd978
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554316"
 ---
 # <a name="cmfcwindowsmanagerdialog-class"></a>CMFCWindowsManagerDialog sınıfı
 

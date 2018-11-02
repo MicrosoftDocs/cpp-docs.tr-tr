@@ -1,29 +1,19 @@
 ---
-title: 'Nasıl yapılır: görüntü yerel mi yoksa CLR mi belirlemek | Microsoft Docs'
+title: 'Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - common language runtime, image testing
 - images [C++], CLR verification
 - /clr compiler option [C++], detecting use in compilation
 - common language runtime, /clr compiler option
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 5fb16fc3dfce2423b1d5d5b3b0e6249ac4824e7d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ad8603827f5d1c951411403a62f8ffff58bfca88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637404"
 ---
 # <a name="how-to-determine-if-an-image-is-native-or-clr"></a>Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme
 

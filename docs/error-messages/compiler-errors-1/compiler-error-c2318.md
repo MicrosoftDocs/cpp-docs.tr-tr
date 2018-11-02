@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2318 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2318
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2318
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2318
 ms.assetid: 169e30b9-df78-46cb-90bf-576ad3c32fd4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c2d76a2d6f1a9f2342edfc6e174938816759cb8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a68a333c9cb817a653597acb011dfbb9291c4d0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035714"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615779"
 ---
 # <a name="compiler-error-c2318"></a>Derleyici Hatası C2318
 

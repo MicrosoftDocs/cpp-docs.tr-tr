@@ -1,28 +1,18 @@
 ---
-title: İletiler ve komutlar Framework | Microsoft Docs
-ms.custom: ''
+title: Framework'teki İletiler ve Komutlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - events [MFC], command routing in MFC
 - event-driven programming [MFC]
 - events [MFC], event-driven programming
 - message-driven programming [MFC]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43944bfcf4563211fa89ebdc52680a65de158fde
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0539992ac3f9394972b1de36dde0e85ed592413a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636130"
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 

@@ -1,10 +1,6 @@
 ---
-title: Agent sınıfı | Microsoft Docs
-ms.custom: ''
+title: agent Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - agent
 - AGENTS/concurrency::agent
@@ -18,21 +14,15 @@ f1_keywords:
 - AGENTS/concurrency::agent::wait_for_one
 - AGENTS/concurrency::agent::done
 - AGENTS/concurrency::agent::run
-dev_langs:
-- C++
 helpviewer_keywords:
 - agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d6d91f312b028f44e0671c7960d4b06c2634928
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: ad096eea3467346d85ce4249e910915cbd73488d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560257"
 ---
 # <a name="agent-class"></a>agent Sınıfı
 

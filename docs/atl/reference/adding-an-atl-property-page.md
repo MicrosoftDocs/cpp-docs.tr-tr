@@ -1,27 +1,17 @@
 ---
-title: ATL özellik sayfası ekleme | Microsoft Docs
-ms.custom: ''
+title: ATL özellik sayfası ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - property pages, adding
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c46adc199a5d6b0bc814cc203b94ac3d268a560d
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: ed715cd822aaf0f55b8898efc80b5514938ca8ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668080"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL özellik sayfası ekleme
 

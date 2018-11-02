@@ -1,27 +1,17 @@
 ---
-title: PAINTSTRUCT yapısı | Microsoft Docs
-ms.custom: ''
+title: PAINTSTRUCT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - PAINTSTRUCT
-dev_langs:
-- C++
 helpviewer_keywords:
 - PAINTSTRUCT structure [MFC]
 ms.assetid: 81ce4993-3e89-43b2-8c98-7946f1314d24
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 531dbc3c0e9b609aeaf5d9179491aa0fb3990363
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b5179a1bcba4a654ff235885ec2d0516e801fbb7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677129"
 ---
 # <a name="paintstruct-structure"></a>PAINTSTRUCT Yapısı
 

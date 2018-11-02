@@ -1,27 +1,17 @@
 ---
-title: Kapsanan bir Windows kullanarak | Microsoft Docs
-ms.custom: ''
+title: Kapsanan bir Windows kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, windows
 - windows [C++], ATL
 - contained windows in ATL
 ms.assetid: 7b3d79e5-b569-413f-9b98-df4f14efbe2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c1d338851a6480014e1f7a48f848f95439d9311a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 800ae7cab5fd99bfa140b481f87b1615ff5b2a13
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485377"
 ---
 # <a name="using-contained-windows"></a>Kapsanan bir Windows kullanma
 

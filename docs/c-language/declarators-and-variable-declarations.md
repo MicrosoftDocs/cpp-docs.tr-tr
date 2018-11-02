@@ -1,27 +1,17 @@
 ---
-title: Bildirimler ve değişken bildirimleri | Microsoft Docs
-ms.custom: ''
+title: Bildirimler ve Değişken Bildirimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declaring variables, declarators
 - declarators, definition
 - declaring variables, declaration statements
 ms.assetid: 5fd67a6a-3a6a-4ec9-b257-3f7390a48d40
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5bcef865eeaf82415cf1f8f8e1523ee2b783a46b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 711c0eb4e0b652f86de74803d5725c5dc3054b31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562792"
 ---
 # <a name="declarators-and-variable-declarations"></a>Bildirimler ve Değişken Bildirimleri
 
@@ -59,10 +49,10 @@ Bildirimciler, değer, değerleri ve belirtilen bir tür değerleri döndüren i
 
 *doğrudan bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(***bildirimci***)** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(***bildirimci***)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***[***sabit-ifade*<sub>iyileştirilmiş</sub> **]** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***parametre türü listesi***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)** 
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***parametre türü listesi***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**
 
 *İşaretçi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *tür niteleyici listesi*<sub>iyileştirilmiş</sub><br/>

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3062 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3062
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3062
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3062
 ms.assetid: 78632e6d-255f-42c3-b124-31a9194ff86d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95f2e58cada0b1b825fb0f065b461db6350de9fc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ac45847c94e7d2dc731eba71b0a38105eb915e53
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067174"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590417"
 ---
 # <a name="compiler-error-c3062"></a>Derleyici Hatası C3062
 

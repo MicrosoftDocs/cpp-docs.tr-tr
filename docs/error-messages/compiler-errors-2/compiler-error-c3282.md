@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3282 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3282
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3282
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3282
 ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da6d4fd30d109f78949a3ec53e0d46d6a9de7dc9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7092ddc3bf6859212cbb143572de1ef3604a13d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056904"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491513"
 ---
 # <a name="compiler-error-c3282"></a>Derleyici Hatası C3282
 

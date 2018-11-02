@@ -1,27 +1,17 @@
 ---
-title: Cprintınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: Cprintınfo yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPrintInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPrintInfo structure [MFC]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b8c1fb4d82bd1aaeb9f625fea66aa339a0ef4d97
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ec770f594836073fe340b0661e0427c058533b22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082898"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677532"
 ---
 # <a name="cprintinfo-structure"></a>Cprintınfo yapısı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3120 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3120
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3120
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3120
 ms.assetid: 9b6b210f-9948-4517-a4cc-b4aaadebde68
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae515dcf7f6eae8af1a6356c58f38e69cb039441
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 99d6280420111fde1a2e2187e3cbaeb529652d01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136147"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602676"
 ---
 # <a name="compiler-error-c3120"></a>Derleyici Hatası C3120
 

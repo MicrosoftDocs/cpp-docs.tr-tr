@@ -1,9 +1,6 @@
 ---
-title: multiset (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: çoklu set (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::multiset
@@ -50,8 +47,6 @@ f1_keywords:
 - cliext::multiset::operator==
 - cliext::multiset::operator>
 - cliext::multiset::operator>=
-dev_langs:
-- C++
 helpviewer_keywords:
 - <cliext/set> header [STL/CLR]
 - <set> header [STL/CLR]
@@ -102,17 +97,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: 7c46e2b4-cd88-49b7-a9e6-63ad5ae7feb5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: d3d0fce8629a96ec7b83df4e4a244d1012743eeb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e7a0551c1d75993d588f5dbb369989c42a71d903
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376695"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557744"
 ---
 # <a name="multiset-stlclr"></a>çoklu set (STL/CLR)
 

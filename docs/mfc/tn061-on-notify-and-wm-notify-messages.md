@@ -1,15 +1,9 @@
 ---
-title: 'TN061: On_notıfy ve wm_notıfy iletileri | Microsoft Docs'
-ms.custom: ''
+title: 'TN061: ON_NOTIFY ve WM_NOTIFY İletileri'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - ON_NOTIFY
 - WM_NOTIFY
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_NOTIFY_EX message [MFC]
 - TN061
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - notification messages
 - WM_NOTIFY message
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2395cb7b1f3d719fd64494ee9b9c7c64ba222bac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74eb39a855da3ff3e6da7f14a76bf0804919826d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658854"
 ---
 # <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: ON_NOTIFY ve WM_NOTIFY İletileri
 

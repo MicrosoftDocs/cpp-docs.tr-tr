@@ -1,12 +1,6 @@
 ---
-title: Satır içi derlemede etiketlere atlama | Microsoft Docs
-ms.custom: ''
+title: İç Derlemede Etiketlere Atlama
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inline assembly, jumping to labels
 - labels, in inline assembly
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - labels, in __asm blocks
 - jumping to labels in inline assembly
 ms.assetid: 36c18b97-8981-4631-9dfd-af6c14a04297
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e697df32218c3e2bcdeb03cde44b7b5d854cb7b0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7653dc990e2f4b490bcbe333ed6f7586ac966d2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616238"
 ---
 # <a name="jumping-to-labels-in-inline-assembly"></a>İç Derlemede Etiketlere Atlama
 

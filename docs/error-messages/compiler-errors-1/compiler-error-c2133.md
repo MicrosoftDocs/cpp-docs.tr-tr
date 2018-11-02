@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2133 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2133
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2133
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2133
 ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 169b24787f1b180c7ba70c5d779e341e60ea2150
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 68672ae76024d3d09d738d997c485a3205c7dd2a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025197"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588073"
 ---
 # <a name="compiler-error-c2133"></a>Derleyici Hatası C2133
 

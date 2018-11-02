@@ -1,27 +1,17 @@
 ---
-title: Açıklama blokları | Microsoft Docs
-ms.custom: ''
+title: Açıklama Blokları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - description blocks
 - NMAKE program, description blocks
 - blocks, description
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d83e010f690f96afa5a57eb89ca1e8f4cf444225
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 214963b5c3f633e8d029cee0500d4bd5fab6ed53
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699666"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490616"
 ---
 # <a name="description-blocks"></a>Açıklama Blokları
 

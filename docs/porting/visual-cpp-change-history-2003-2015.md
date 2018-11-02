@@ -1,25 +1,15 @@
 ---
-title: Visual C++ değişiklik geçmişi 2003-2015 | Microsoft Docs
-ms.custom: ''
+title: Visual C++ değişiklik geçmişi 2003-2015
 ms.date: 08/30/2017
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bda25bc1705183d1482355ae064f87c040daec4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1025b3469611ee1e880a2abd5a4e553a1317a0d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570722"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
