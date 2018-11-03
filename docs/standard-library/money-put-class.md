@@ -1,6 +1,6 @@
 ---
 title: money_put Sınıfı
-ms.date: 11/04/2016
+ms.date: 11/01/2018
 f1_keywords:
 - xlocmon/std::money_put
 - xlocmon/std::money_put::char_type
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-ms.openlocfilehash: 61f4590a7f11401601c0e11e493b49cb442cdb23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 346dd4f681432143c954ca125c3862fc6827db60
+ms.sourcegitcommit: b04160e9ed58f83bdc8ace218ae64b35395f6ea2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664197"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50968110"
 ---
 # <a name="moneyput-class"></a>money_put Sınıfı
 
@@ -261,28 +261,24 @@ Her iki üye işlev dönüş [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_F
 #include <locale>
 #include <iostream>
 #include <sstream>
-using namespace std;
-int main( )
+
+int main()
 {
-//   locale loc( "german_germany" );
-   locale loc( "english_canada" );
-   basic_stringstream<char> psz, psz2;
-   ios_base::iostate st = 0;
+    std::locale loc( "german_germany" );
+    std::basic_stringstream<char> psz;
 
-   psz2.imbue( loc );
-   psz2.flags( psz2.flags( )|ios_base::showbase ); // force the printing of the currency symbol
-   use_facet < money_put < char > >(loc).put(basic_ostream<char>::_Iter( psz2.rdbuf( ) ), true, psz2, st, 100012);
-   if (st & ios_base::failbit)
-      cout << "money_put( ) FAILED" << endl;
-   else
-      cout << "money_put( ) = \"" << psz2.rdbuf( )->str( ) <<"\""<< endl;
-
-   st = 0;
-};
+    psz.imbue(loc);
+    psz.flags(psz.flags() | std::ios_base::showbase); // force the printing of the currency symbol
+    std::use_facet<std::money_put<char> >(loc).put(std::basic_ostream<char>::_Iter(psz.rdbuf()), true, psz, ' ', 100012);
+    if (psz.fail())
+        std::cout << "money_put() FAILED" << std::endl;
+    else
+        std::cout << "money_put() = \"" << psz.rdbuf()->str() << "\"" << std::endl;
+}
 ```
 
 ```Output
-money_put( ) = "CAD1,000.12"
+money_put() = "EUR1.000,12"
 ```
 
 ## <a name="string_type"></a>  money_put::string_type
