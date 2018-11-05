@@ -40,12 +40,12 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-ms.openlocfilehash: b54c0a58a070fa42218a7b048d9eb57b05040738
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c03f2766701f7e360ad0bf4f0fc701d2a7e983c
+ms.sourcegitcommit: b401a05c5c0f5cc4b32893d7382c05a51e4ab783
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452253"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50999992"
 ---
 # <a name="atoi-atoil-wtoi-wtoil"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
@@ -140,7 +140,7 @@ int main( void )
     printf( "Function: atoi( \"%s\" ) = %d\n", str, value );
 
     // Another example of the atoi function
-    // with an overflow condition occuring.
+    // with an overflow condition occurring.
     str = "3336402735171707160320";
     value = atoi( str );
     printf( "Function: atoi( \"%s\" ) = %d\n", str, value );
