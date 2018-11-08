@@ -8,12 +8,12 @@ helpviewer_keywords:
 - conformance testing [OLE DB]
 - OLE DB providers, testing
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
-ms.openlocfilehash: f7c5435003866e2c3490bd07e28ec10eca0ec0cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7365176df314baf40ac1cc1ed53936598f05c79e
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491721"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265080"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB Uygunluk Testlerini Geçme
 
@@ -26,7 +26,7 @@ Visual C++ 6.0, çok sayıda takma işlev değerleri ve özellikleri denetlemeni
 > [!NOTE]
 > OLE DB uygunluk testlerini geçirilecek sağlayıcınız için çeşitli doğrulama işlevler eklemenize gerek.
 
-Bu sağlayıcı iki doğrulama rutinleri gerektirir. İlk yordam `CRowsetImpl::ValidateCommandID`, satır kümesi sınıfının bir parçasıdır. Bu satır kümesi oluşturma sırasında sağlayıcı şablonları tarafından çağırılır. Örnek, tüketicilerin dizinlerini desteklemiyor bildirmek için bu yordamı kullanır. İlk çağrı `CRowsetImpl::ValidateCommandID` (sağlayıcısı kullanan Not `_RowsetBaseClass` ilişkin arabirim eşlemesini eklenen typedef `CCustomRowset` içinde [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md), uzun bir satır şablon türüne sahip değilsiniz bağımsız değişkenler). Ardından, dizin parametresi NULL değilse DB_E_NOINDEX döndürür. (Bu dizin bizi kullanmak isteyen tüketici gösterir). Komut kimlikleri hakkında daha fazla bilgi için OLE DB belirtimine bakın ve Ara `IOpenRowset::OpenRowset`.
+Bu sağlayıcı iki doğrulama rutinleri gerektirir. İlk yordam `CRowsetImpl::ValidateCommandID`, satır kümesi sınıfının bir parçasıdır. Bu satır kümesi oluşturma sırasında sağlayıcı şablonları tarafından çağırılır. Örnek, dizinleri desteklemeyen tüketiciler bildirmek için bu yordamı kullanır. İlk çağrı `CRowsetImpl::ValidateCommandID` (sağlayıcısı kullanan Not `_RowsetBaseClass` ilişkin arabirim eşlemesini eklenen typedef `CCustomRowset` içinde [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md), uzun bir satır şablonunun yazmanız gerekmez bağımsız değişkenler). Ardından, dizin parametresi (Bu tüketici dizin bizi kullanmak istediği gösterir) NULL değilse DB_E_NOINDEX döndürür. Komut kimlikleri hakkında daha fazla bilgi için OLE DB belirtimine bakın ve Ara `IOpenRowset::OpenRowset`.
 
 Aşağıdaki kod `ValidateCommandID` doğrulama yordamına:
 
@@ -48,9 +48,9 @@ HRESULT ValidateCommandID(DBID* pTableID, DBID* pIndexID)
 }
 ```
 
-Sağlayıcı şablonları çağrı `OnPropertyChanged` her biri bir özellik değiştiğinde yöntemi `DBPROPSET_ROWSET` grubu. Diğer grupların özellikleri işlemek isterseniz, bunları uygun nesnesine eklediğiniz (diğer bir deyişle, `DBPROPSET_SESSION` denetimleri `CCustomSession` sınıfı).
+Sağlayıcı şablonları çağrı `OnPropertyChanged` birisi DBPROPSET_ROWSET grubu üzerindeki bir özellik değiştiğinde yöntemi. Diğer grupların özellikleri işlemek isterseniz, bunları uygun nesnesine eklediğiniz (diğer bir deyişle, DBPROPSET_SESSION denetimleri Git `CCustomSession` sınıfı).
 
-Kod, ilk önce özelliğin diğerine bağlı olup olmadığını görmek için denetler. Özellik zincirlendiğini değilse, ayarlar `DBPROP_BOOKMARKS` özelliğini `True`. OLE DB belirtiminin ek C özellikleri hakkında bilgi içerir. Bu bilgileri ayrıca, özellik için başka bir zincir olup olmadığını bildirir.
+Kod, ilk önce özelliğin diğerine bağlı olup olmadığını görmek için denetler. Özellik zincirlendiğini değilse, DBPROP_BOOKMARKS özelliğini ayarlar `True`. OLE DB belirtiminin ek C özellikleri hakkında bilgi içerir. Bu bilgileri ayrıca, özellik için başka bir zincir olup olmadığını bildirir.
 
 Eklemek isteyebilirsiniz `IsValidValue` kodunuzda rutin. Şablonları çağrı `IsValidValue` bir özelliğini ayarlamaya çalışırken. Bir özellik değerini ayarlarken ek işleme gerekiyorsa bu yöntemi geçersiz kılarsınız. Her bir özellik kümesi için aşağıdaki yöntemlerden birini olabilir.
 

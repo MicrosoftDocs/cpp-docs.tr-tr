@@ -1,15 +1,15 @@
 ---
 title: Gelişmiş Sağlayıcı Teknikleri
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 helpviewer_keywords:
 - OLE DB providers, using
 ms.assetid: 002a9731-7e06-49ac-be50-3cc26aa43759
-ms.openlocfilehash: 9277493488f170809be4694710cb8e48455f55d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 77869dbde4b177967dd2a75ab5b94506a365219c
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558138"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265015"
 ---
 # <a name="advanced-provider-techniques"></a>Gelişmiş Sağlayıcı Teknikleri
 

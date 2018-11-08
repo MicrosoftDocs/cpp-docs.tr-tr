@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, calling
 - OLE DB providers, testing
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
-ms.openlocfilehash: 18edc1ae13ef66f9646edbcf1d0fdfdbe0586cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cda4efcdb26499f910ad875b2bf7b7504a825cf6
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611217"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265106"
 ---
 # <a name="testing-the-read-only-provider"></a>Salt Okunur Sağlayıcıyı Test Etme
 
@@ -24,11 +24,11 @@ Bu konudaki örnek, bir test tüketici için bir varsayılan MFC Uygulama Sihirb
 
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
 
-1. İçinde **proje türleri** bölmesinde **Visual C++ projeleri** klasör. İçinde **şablonları** bölmesinde **MFC uygulaması**.
+1. İçinde **proje türleri** bölmesinde **yüklü** > **Visual C++** > **MFC/ATL** klasör. İçinde **şablonları** bölmesinde **MFC uygulaması**.
 
 1. Proje adı olarak *TestProv*ve ardından **Tamam**.
 
-   MFC Uygulama Sihirbazı görünür.
+   **MFC uygulaması** Sihirbazı görünür.
 
 1. Üzerinde **uygulama türü** sayfasında **iletişim kutusu tabanlı**.
 
@@ -37,13 +37,14 @@ Bu konudaki örnek, bir test tüketici için bir varsayılan MFC Uygulama Sihirb
 > [!NOTE]
 > Uygulamayı Otomasyon desteği gerektirmez eklerseniz `CoInitialize` içinde `CTestProvApp::InitInstance`.
 
-Görüntüleyebileceği ve düzenleyebileceği **TestProv** içinde seçerek iletişim kutusu (IDD_TESTPROV_DIALOG) **kaynak görünümü**. İki liste kutuları satır kümesindeki her dize için bir iletişim kutusuna yerleştirin. Sıralama özelliği devre dışı hem de tuşlarına basarak liste kutusu için kapatma **Alt**+**Enter** liste kutusu seçili olduğunda, tıklayarak **stilleri** sekmesini tıklatıp temizleme **Sıralama** onay kutusu. Ayrıca, yerleştirin bir **çalıştırmak** dosyasını getirmek için iletişim kutusundaki düğmesi. Tamamlanmış **TestProv** iletişim kutusu, "Dize 1" ve "2 dize" etiketli, sırasıyla iki liste kutuları olmalıdır; ayrıca **Tamam**, **iptal**, ve **çalıştırın**  düğmeler.
+Görüntüleyebileceği ve düzenleyebileceği **TestProv** içinde seçerek iletişim kutusu (IDD_TESTPROV_DIALOG) **kaynak görünümü**. İki liste kutuları satır kümesindeki her dize için bir iletişim kutusuna yerleştirin. Sıralama özelliği devre dışı hem de tuşlarına basarak liste kutusu için kapatma **Alt**+**Enter** liste kutusu seçildiğinde ve ayarı **sıralama** özelliğini**False**. Ayrıca, yerleştirin bir **çalıştırmak** dosyasını getirmek için iletişim kutusundaki düğmesi. Tamamlanmış **TestProv** iletişim kutusu, "Dize 1" ve "2 dize" etiketli, sırasıyla iki liste kutuları olmalıdır; ayrıca **Tamam**, **iptal**, ve **çalıştırın**  düğmeler.
 
 (Bu durum TestProvDlg.h) de iletişim kutusu sınıfı için üst bilgi dosyası açın. Üst bilgi dosyası (dışında herhangi bir sınıf bildiriminin) için aşağıdaki kodu ekleyin:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
 // TestProvDlg.h
+#include <atldbcli.h>  
 
 class CProvider
 {
@@ -68,11 +69,11 @@ Bir işleyici işlevi ekleme **çalıştırma** düğmesine basarak **Ctrl** ve 
 ///////////////////////////////////////////////////////////////////////
 // TestProvDlg.cpp
 
-void CtestProvDlg::OnRun()
+void CTestProvDlg::OnRun()
 {
    CCommand<CAccessor<CProvider>> table;
    CDataSource source;
-   CSession   session;
+   CSession session;
 
    if (source.Open("Custom.Custom.1", NULL) != S_OK)
       return;
@@ -91,36 +92,17 @@ void CtestProvDlg::OnRun()
 }
 ```
 
-`CCommand`, `CDataSource`, Ve `CSession` ait tüm OLE DB Tüketici Şablonları için sınıflar. Her sınıf, bir COM nesnesi sağlayıcısındaki taklit eder. `CCommand` Nesnesi alır `CProvider` sınıfı, üst bilgi dosyasında, bir şablon parametresi olarak bildirilmiş. `CProvider` Parametresini sağlayıcıdan verilere erişmek için kullandığınız bağlamaları temsil eder. İşte `Open` veri kaynağı, oturum ve komutu için kod:
-
-```cpp
-if (source.Open("Custom.Custom.1", NULL) != S_OK)
-   return;
-
-if (session.Open(source) != S_OK)
-   return;
-
-if (table.Open(session, _T("c:\\samples\\myprov\\myData.txt")) != S_OK)
-   return;
-```
+`CCommand`, `CDataSource`, Ve `CSession` ait tüm OLE DB Tüketici Şablonları için sınıflar. Her sınıf, bir COM nesnesi sağlayıcısındaki taklit eder. `CCommand` Nesnesi alır `CProvider` sınıfı, üst bilgi dosyasında, bir şablon parametresi olarak bildirilmiş. `CProvider` Parametresini sağlayıcıdan verilere erişmek için kullandığınız bağlamaları temsil eder. 
 
 Sınıfların her birini açmak için satırlar sağlayıcıda her COM nesnesi oluşturur. Sağlayıcı bulmak için kullanmak `ProgID` sağlayıcısı. Alabileceğiniz `ProgID` sistem kayıt defterinden veya Custom.rgs dosyasında bakarak (sağlayıcının dizinini açın ve arama `ProgID` anahtar).
 
-MyData.txt dosyası ile birlikte gelir `MyProv` örnek. Kendinize ait bir dosya oluşturmak için bir düzenleyici kullanın ve her bir dizenin arasında ENTER tuşuna basıldığında dize, çift sayı yazın. Dosya taşırsanız, yol adını değiştirin.
+MyData.txt dosyası ile birlikte gelir `MyProv` örnek. Bir dosya, kendi kullanımı bir düzenleyici oluşturmak ve bir çift sayı dizeleri tuşuna basarak yazın **Enter** arasındaki her dize. Dosya taşırsanız, yol adını değiştirin.
 
 Dizesini "c:\\\samples\\\myprov\\\MyData.txt" içinde `table.Open` satır. İçine adım `Open` çağrısı gördüğünüz Bu dize geçirilecek `SetCommandText` sağlayıcısındaki yöntemi. Unutmayın `ICommandText::Execute` o dizeyi kullanılan yöntem.
 
-Verileri getirmek için çağrı `MoveNext` tablosunda. `MoveNext` çağrıları `IRowset::GetNextRows`, `GetRowCount`, ve `GetData` işlevleri. Daha fazla satır olduğunda (diğer bir deyişle, satır kümesi geçerli konumda büyüktür `GetRowCount`), bir döngüyü sonlandırır:
+Verileri getirmek için çağrı `MoveNext` tablosunda. `MoveNext` çağrıları `IRowset::GetNextRows`, `GetRowCount`, ve `GetData` işlevleri. Daha fazla satır olduğunda (diğer bir deyişle, satır kümesi geçerli konumda büyüktür `GetRowCount`), bir döngüyü sonlandırır.
 
-```cpp
-while (table.MoveNext() == S_OK)
-{
-   m_ctlString1.AddString(table.szField1);
-   m_ctlString2.AddString(table.szField2);
-}
-```
-
-Daha fazla satır olduğunda, DB_S_ENDOFROWSET sağlayıcılarını döndüren unutmayın. DB_S_ENDOFROWSET değeri bir hata değil. Her zaman veri getirme döngüsünü iptal etme ve SUCCEEDED makrosu kullanmamak için S_OK karşı denetlemeniz gerekir.
+Daha fazla satır olduğunda, sağlayıcıları DB_S_ENDOFROWSET döndürür. DB_S_ENDOFROWSET değeri bir hata değil. Her zaman veri getirme döngüsünü iptal etme ve SUCCEEDED makrosu kullanmamak için S_OK karşı denetlemeniz gerekir.
 
 Şimdi yapı ve test programı mümkün olması gerekir.
 

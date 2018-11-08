@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-ms.openlocfilehash: 4a0a0ea51cf6ac347cd79cb777f9cb6a51670063
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 326a52805cb78a3f31141d3eac6a0942a7fee477
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584634"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51264729"
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 
@@ -60,7 +60,7 @@ Ayrıca eşlemenizi bağlamanız gerekir `CRowsetImpl` sınıfı. İçin COM_INT
 
 Son olarak, işleme `IColumnsInfo::GetColumnsInfo` çağırın. Bunu yapmak için normalde PROVIDER_COLUMN_ENTRY kullanmanız gerekir. Ancak, bir tüketici yer işaretlerini kullanmak isteyebilirsiniz. Sağlayıcı için bir yer ister bağlı olarak tüketici döndürür sütunları değiştirmek mümkün olması gerekir.
 
-İşlemek için `IColumnsInfo::GetColumnsInfo` çağrı, silme `PROVIDER_COLUMN` içinde harita `CTextData` sınıfı. Bir işlev PROVIDER_COLUMN_MAP makro tanımlar `GetColumnInfo`. Tanımlamak kendi ihtiyacınız `GetColumnInfo` işlevi. İşlev bildiriminin şöyle görünmelidir:
+İşlenecek `IColumnsInfo::GetColumnsInfo` çağrı, CTextData haritada silme `CTextData` sınıfı. Bir işlev PROVIDER_COLUMN_MAP makro tanımlar `GetColumnInfo`. Kendi ölçümünüzü tanımlayın `GetColumnInfo` işlevi. İşlev bildiriminin şöyle görünmelidir:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -78,7 +78,7 @@ class CTextData
 };
 ```
 
-Ardından, uygulama `GetColumnInfo` CustomRS.cpp dosyasında aşağıdaki gibi işlev:
+Ardından, uygulama `GetColumnInfo` işlevi *özel*RS.cpp dosya gibi:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -119,7 +119,6 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols)
                         DBCOLUMNFLAGS_ISBOOKMARK)
          ulCols++;
       }
-
    }
 
    // Next set the other columns up.
@@ -151,9 +150,9 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 
 `GetColumnInfo` bir özellik adında olup olmadığını görmek için ilk denetimleri `DBPROP_IRowsetLocate` ayarlanır. OLE DB, her bir satır kümesi nesnesi kapalı isteğe bağlı arabirimler için özellikleri vardır. Tüketici Bu isteğe bağlı arabirimlerinden birini kullanmak istiyorsa, bir özellik true olarak ayarlanır. Sağlayıcı bu özelliği kontrol edin ve temel alan özel eylem.
 
-Uygulamanızda, komut nesnesi için bir işaretçi kullanarak özellik alın. `pThis` İşaretçi satır kümesi ya da komut sınıfı temsil eder. Şablonları burada kullandığından, bu konuda geçirmek zorunda bir `void` işaretçi veya kod derlenmez.
+Uygulamanızda, komut nesnesi için bir işaretçi kullanarak özellik alın. `pThis` İşaretçi satır kümesi ya da komut sınıfı temsil eder. Şablonları burada kullandığından, bu konuda geçirmek zorunda bir **void** değil, işaretçi veya kod derleyin.
 
-Statik bir dizi sütun bilgileri içerecek şekilde belirtin. Tüketici yer işareti sütunu istemezse, dizi bir giriş boşa harcanmış olur. Bu dizi dinamik olarak tahsis edebilirsiniz, ancak düzgün edilecek emin olmanız gerekir. Bu örnek, tanımlar ve bilgileri diziye eklenecek ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX makrolarını kullanır. Aşağıdaki kodda gösterildiği gibi CustomRS.H dosyasına makrolar ekleyebilirsiniz:
+Sütun bilgileri tutmak için statik bir dizi belirtin. Yer işareti sütunu tüketici istememektedir, dizi bir giriş boşa harcanmış olur. Bu dizi dinamik olarak tahsis edebilirsiniz, ancak düzgün edilecek emin olmanız gerekir. Bu örnek, tanımlar ve bilgileri diziye eklenecek ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX makrolarını kullanır. Makrolar ekleyebilirsiniz *özel*RS. Aşağıdaki kodda gösterildiği gibi H dosyası:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -236,9 +235,9 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }
 ```
 
-**Sırada** döngü çağırmak için kod içeren `Compare` yönteminde `IRowsetLocate` arabirimi. Tam aynı yer işaretleri arasında karşılaştırma yaptığımızı düşündüğümüzde, kodunuz geçirmesi gerekir. Ayrıca, böylece sonra kullanabileceğiniz bir yer işareti geçici bir değişkende depolayın **sırada** döngü çağırabilmek için `MoveToBookmark` Tüketici Şablonları işlevi. `MoveToBookmark` İşlev çağrılarında `GetRowsAt` yönteminde `IRowsetLocate`.
+**Sırada** döngü çağırmak için kod içeren `Compare` yönteminde `IRowsetLocate` arabirimi. Kodunuz, her zaman tam aynı yer işaretleri senedini karşılaştırdığınızı çünkü geçmelidir. Ayrıca, böylece sonra kullanabileceğiniz bir yer işareti geçici bir değişkende depolayın **sırada** döngü çağırabilmek için `MoveToBookmark` Tüketici Şablonları işlevi. `MoveToBookmark` İşlev çağrılarında `GetRowsAt` yönteminde `IRowsetLocate`.
 
-Ayrıca, tüketicideki kullanıcı kayıt güncelleştirmeniz gerekiyor. Sınıfında bir yer işareti ve bir girdi işlemek için bir giriş ekleyin `COLUMN_MAP`:
+Ayrıca, tüketicideki kullanıcı kayıt güncelleştirmeniz gerekiyor. Giriş işareti ve bir girişi COLUMN_MAP işlemek için sınıfa ekleyin:
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////
@@ -263,7 +262,7 @@ END_ACCESSOR_MAP()
 };
 ```
 
-Kodu güncelleştirdikten sonra sağlayıcı ile oluşturup erişebileceğinizi `IRowsetLocate` arabirimi.
+Kodu güncelleştirdikten sonra sağlayıcıyla oluşturup erişebileceğinizi `IRowsetLocate` arabirimi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

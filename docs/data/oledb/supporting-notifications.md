@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates, notifications
 - OLE DB providers, notifications
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
-ms.openlocfilehash: 92af327ee69de73697464de59e8c29bdd971b46d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e5327f2197a1d48542ad5f7a615294a915948f5
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616560"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265028"
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
 
@@ -24,9 +24,9 @@ Bildirimleri uygulamak için bir sağlayıcı sınıfı devralmalıdır [IRowset
 
 `IRowsetNotifyCP` Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959). `IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.
 
-Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` Tüketici (havuz olarak da bilinir) kullanarak [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bağlantı noktası arabirimi tüketiciye uygulama hakkında daha fazla bilgi için bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md).
+Ayrıca uygulama ve kaydetme gerekir `IRowsetNotify` Tüketici (havuz olarak da bilinir) kullanarak [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bağlantı noktası arabirimi tüketiciye uygulama hakkında daha fazla bilgi için bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md).
 
-Ayrıca, sınıfı tanımlayan bağlantı noktası girişi, böyle bir harita içermelidir:
+Ayrıca, sınıfı tanımlayan bağlantı noktası girişi, bu gibi bir eşleme olması gerekir:
 
 ```cpp
 BEGIN_CONNECTION_POINT_MAP
@@ -85,21 +85,21 @@ Sağlayıcınız için şu özellikleri eklemeniz gerekir. Yalnızca destek arab
 
 |Özellik|Destekliyorsanız ekleyin|
 |--------------|------------------------|
-|`DBPROP_IConnectionPointContainer`|Her zaman|
-|`DBPROP_NOTIFICATIONGRANULARITY`|Her zaman|
-|`DBPROP_NOTIFICATIONPHASES`|Her zaman|
-|`DBPROP_NOTIFYCOLUMNSET`|`IRowsetChange`|
-|`DBPROP_NOTIFYROWDELETE`|`IRowsetChange`|
-|`DBPROP_NOTIFYROWINSERT`|`IRowsetChange`|
-|`DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE`|Her zaman|
-|`DBPROP_NOTIFYROWFIRSTCHANGE`|`IRowsetUpdate`|
-|`DBPROP_NOTIFYROWSETRELEASE`|Her zaman|
-|`DBPROP_NOTIFYROWUNDOCHANGE`|`IRowsetUpdate`|
-|`DBPROP_NOTIFYROWUNDODELETE`|`IRowsetUpdate`|
-|`DBPROP_NOTIFYROWUNDOINSERT`|`IRowsetUpdate`|
-|`DBPROP_NOTIFYROWUPDATE`|`IRowsetUpdate`|
+|DBPROP_IConnectionPointContainer|Her zaman|
+|DBPROP_NOTIFICATIONGRANULARITY|Her zaman|
+|DBPROP_NOTIFICATIONPHASES|Her zaman|
+|DBPROP_NOTIFYCOLUMNSET|`IRowsetChange`|
+|DBPROP_NOTIFYROWDELETE|`IRowsetChange`|
+|DBPROP_NOTIFYROWINSERT|`IRowsetChange`|
+|DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE|Her zaman|
+|DBPROP_NOTIFYROWFIRSTCHANGE|`IRowsetUpdate`|
+|DBPROP_NOTIFYROWSETRELEASE|Her zaman|
+|DBPROP_NOTIFYROWUNDOCHANGE|`IRowsetUpdate`|
+|DBPROP_NOTIFYROWUNDODELETE|`IRowsetUpdate`|
+|DBPROP_NOTIFYROWUNDOINSERT|`IRowsetUpdate`|
+|DBPROP_NOTIFYROWUPDATE|`IRowsetUpdate`|
 
-Çoğu uygulama bildirimleri için OLE DB sağlayıcı şablonları içinde zaten ekli. Değil eklerseniz `IRowsetNotifyCP` devralma zincirinizi derleyici Bu kod böylece kodunuzun boyutunu küçülterek, derleme akışından kaldırır.
+Çoğu uygulama bildirimleri için OLE DB sağlayıcı şablonları içinde zaten ekli. Eklemezseniz `IRowsetNotifyCP` devralma zincirinizi derleyici Bu kod böylece kodunuzun boyutunu küçülterek, derleme akışından kaldırır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,33 +1,33 @@
 ---
 title: Sağlayıcınıza Arabirim Ekleme
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 ms.assetid: b0fc7cf8-428a-4584-9d64-ce9074d0eb66
-ms.openlocfilehash: 295a7955b78918d6281a28b616f201869f37b01e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5659078641439744c1f68cbb399c19b9b58bd0bb
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488679"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265145"
 ---
 # <a name="adding-an-interface-to-your-provider"></a>Sağlayıcınıza Arabirim Ekleme
 
-(OLE DB sağlayıcısı Sihirbazı tarafından oluşturulan genellikle veri kaynağı, satır kümesi, komut veya oturum nesneleri) arabirim eklemek istediğiniz nesneyi belirleyin. Eklemek istediğiniz nesne sağlayıcınız şu anda desteklemediği bir olduğunu mümkündür. Bu durumda, ATL OLE DB sağlayıcısı nesneyi oluşturmak için sihirbazı çalıştırın. Sınıf Görünümü'nde projeye sağ tıklayın, **sınıfı Ekle** gelen **Ekle** menüsüne ve ardından **ATL OLE DB sağlayıcısı**. Arabirimi kodunu ayrı bir klasöre yerleştirin ve ardından dosyaları sağlayıcısı projenize kopyalayın isteyebilirsiniz.
+Hangi arabirimi eklemek istediğiniz nesne belirler (genellikle veri kaynağı, satır kümesi, komut veya oturum nesneleri tarafından oluşturulan **OLE DB sağlayıcısı Sihirbazı**). Eklemek istediğiniz nesne sağlayıcınız şu anda desteklemediği bir olduğunu mümkündür. Bu durumda, çalıştırma **ATL OLE DB sağlayıcısı Sihirbazı** nesnesi oluşturulamıyor. Projeye sağ **sınıf görünümü**, tıklayın **Ekle** > **yeni öğe** menüden **yüklü**  >  **Visual C++** > **ATL**ve ardından **ATL OLEDB Sağlayıcısı**. Arabirimi kodunu ayrı bir klasöre yerleştirin ve ardından dosyaları sağlayıcısı projenize kopyalayın isteyebilirsiniz.
 
-Arabirimi desteklemek için yeni bir sınıf oluşturduysanız, bu sınıftan nesne olun. Örneğin, sınıf ekleyebilirsiniz **IRowsetIndexImpl** satır kümesi nesnesi için:
+Arabirimi desteklemek için yeni bir sınıf oluşturduysanız, bu sınıftan nesne olun. Örneğin, sınıf ekleyebilirsiniz `IRowsetIndexImpl` satır kümesi nesnesi için:
 
 ```cpp
 template <class Creator>
-class CAgentRowset :
-    public CRowsetImpl< CAgentRowset<Creator>, CAgentMan, Creator>,
+class CCustomRowset :
+    public CRowsetImpl< CCustomRowset<Creator>, CCustomWindowsFile, Creator>,
     public IRowsetIndexImpl< ... >
 ```
 
-Arabirim ekleme **COM_MAP** COM_INTERFACE_ENTRY makrosu kullanarak nesnesindeki. Eşleme yok ise, bir tane oluşturun. Örneğin:
+Arabirim COM_MAP COM_INTERFACE_ENTRY makrosu kullanarak nesneyi ekleyin. Eşleme yok ise, bir tane oluşturun. Örneğin:
 
 ```cpp
-BEGIN_COM_MAP(CAgentRowset)
+BEGIN_COM_MAP(CCustomRowset)
      COM_INTERFACE_ENTRY(IRowsetIndex)
 END_COM_MAP()
 ```
@@ -35,7 +35,7 @@ END_COM_MAP()
 Satır kümesi nesnesi için zinciri üst haritasını böylece nesnenin üst sınıf devredebilirsiniz nesne. Bu örnekte, haritayı COM_INTERFACE_ENTRY_CHAIN makro ekleyin:
 
 ```cpp
-BEGIN_COM_MAP(CAgentRowset)
+BEGIN_COM_MAP(CCustomRowset)
      COM_INTERFACE_ENTRY(IRowsetIndex)
      COM_INTERFACE_ENTRY_CHAIN(CRowsetImpl)
 END_COM_MAP()
