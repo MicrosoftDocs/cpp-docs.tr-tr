@@ -1,12 +1,6 @@
 ---
-title: İşlenmeyen C++ özel durumlarını | Microsoft Docs
-ms.custom: ''
+title: İşlenilmeyen C++ Özel Durumları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handlers [C++], unhandled exceptions
 - catch keyword [C++], handler not found
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - C++ exception handling, unhandled exceptions
 - unhandled exceptions [C++]
 ms.assetid: 13f09c53-9254-4407-9db9-14e730e047cc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57d014762ebc5427ccc4b9d26fff75addc883759
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 85227e0bd0ca33f925e8fe72b6489fa81305d031
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609881"
 ---
 # <a name="unhandled-c-exceptions"></a>İşlenilmeyen C++ Özel Durumları
 
