@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cctype header
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
-ms.openlocfilehash: ce46247d84259998d614fb8ed336231a1c4a91d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 985dc27d8da535d9bb4a3005aca38cdde85c25ad
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467853"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517655"
 ---
 # <a name="ltcctypegt"></a>&lt;cctype&gt;
 
@@ -21,7 +21,6 @@ Standart C Kitaplığı üstbilgisi içerir \<ctype.h > ve ilişkili adlar ekler
 
 ```cpp
 #include <cctype>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

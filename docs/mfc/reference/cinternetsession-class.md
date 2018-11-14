@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: a3acc035a1781bd67cfc3b5561eb6dbdef41de72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b820ea3687fd52947eff48e4814ab4173fd95c7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586338"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519299"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
@@ -318,12 +318,12 @@ Oturum açmak için kullanıcı adını belirten bir null ile sonlandırılmış
 *pstrPassword*<br/>
 Oturum açmak için kullanılacak parolayı belirten bir boş sonlandırılmış dizeye bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* NULL, varsayılan anonim kullanıcı e-posta adını paroladır. Varsa *pstrPassword* boş (veya boş bir dize) ancak *pstrUserName* NULL değil boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklar *pstrUserName* ve *pstrPassword*:
 
-|*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|
-|--------------------|--------------------|---------------------------------|---------------------------------|
-|NULL veya ""|NULL veya ""|"anonim"|Kullanıcının e-posta adı|
-|BOŞ olmayan bir dize|NULL veya ""|*pstrUserName*|" "|
-|NULL|BOŞ olmayan bir dize|HATA|HATA||
-|BOŞ olmayan bir dize|BOŞ olmayan bir dize|*pstrUserName*|*pstrPassword*|
+| *pstrUserName*  | *pstrPassword*  | FTP sunucusuna gönderilen kullanıcı adı | FTP sunucusuna gönderilen parola |
+|-----------------|-----------------|-----------------------------|-----------------------------|
+|   NULL veya ""   |   NULL veya ""   |         "anonim"         |      Kullanıcının e-posta adı      |
+| BOŞ olmayan bir dize |   NULL veya ""   |       *pstrUserName*        |             " "             |
+|      NULL       | BOŞ olmayan bir dize |            HATA            |            HATA            |
+| BOŞ olmayan bir dize | BOŞ olmayan bir dize |       *pstrUserName*        |       *pstrPassword*        |
 
 *nbağlantı noktası*<br/>
 Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.

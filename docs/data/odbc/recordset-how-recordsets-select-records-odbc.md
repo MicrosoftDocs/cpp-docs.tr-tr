@@ -9,12 +9,12 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-ms.openlocfilehash: 9e39929b4e669b6d7ed5662484ee71f762b4ea42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e7bbaad949b5f4456ce4c8aea60099792deb786
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618458"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329481"
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)
 
@@ -61,9 +61,8 @@ Kayıt kümesi nesnesinin çağırdığınızda [açık](../../mfc/reference/cre
 
 - [Sıralama](../../data/odbc/recordset-sorting-records-odbc.md) herhangi biri, içerdiği durumlarda kayıt kümesi için sipariş [m_strSort](../../mfc/reference/crecordset-class.md#m_strsort) veri üyesi. Framework, bir SQL oluşturmak için bu dizeyi kullanır. **ORDER BY** yan tümcesi.
 
-
-    > [!TIP]
-    >  SQL kullanmak için **GROUP BY** yan tümcesi (ve muhtemelen **HAVING** yan tümcesi), yan tümceleri, filtre dizesinin sonuna.
+   > [!TIP]
+   > SQL kullanmak için **GROUP BY** yan tümcesi (ve muhtemelen **HAVING** yan tümcesi), yan tümceleri, filtre dizesinin sonuna.
 
 - Tüm değerleri [parametre veri üyeleri](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) için sınıfı belirtin. Parametre değerleri yalnızca çağırmadan önce ayarladığınız `Open` veya `Requery`. Çerçeve parametre değerlerini bağlar "?" SQL dizesinde yer tutucular. Derleme zamanında yer tutucuları olan dize belirtin. Çalışma zamanında, geçirdiğiniz parametre değerine göre ayrıntıları framework doldurur.
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: a35188e0194a57ac399610f3130634132addf8f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3ca469058ba65f83b0df60a93c63895e34f916e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644830"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332224"
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize&gt; işleçleri
 
@@ -115,7 +115,7 @@ Giriş dizesi birleşimi olan dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her işlev aşırı yükleme `operator+` şablon sınıfının iki nesneleri birleştirmek için [basic_string sınıfı](../standard-library/basic-string-class.md). Tüm etkin bir şekilde dönüş `basic_string` \< **CharType**, **nitelikler**, **ayırıcı**> (_ *sol*). [Append](../standard-library/basic-string-class.md#append)(\_ *sağ*).
+Her işlev aşırı yükleme `operator+` şablon sınıfının iki nesneleri birleştirmek için [basic_string sınıfı](../standard-library/basic-string-class.md). Tüm etkin bir şekilde dönüş `basic_string< CharType, Traits, Allocator>(Left).append(right)`. Daha fazla bilgi için [ekleme](../standard-library/basic-string-class.md#append).
 
 ### <a name="example"></a>Örnek
 
@@ -575,7 +575,7 @@ Belirtilen dize değeri, çıkış akışına Yazar *_Ostr*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablonu işlev aşırı yüklemelerinin **işleci <<** eklemek için bir nesne _ *Str* şablon sınıfının [basic_string](../standard-library/basic-string-class.md) akışının içine \_  *Ostr.* İşlev etkili bir şekilde döndürür \_ *Ostr*. **Yazma**( \_ *Str*. [c_str](../standard-library/basic-string-class.md#c_str), \_ *Str*. [boyutu](../standard-library/basic-string-class.md#size)).
+Şablonu işlev aşırı yüklemelerinin **işleci <<** bir nesneyi eklemek için *str* şablon sınıfının [basic_string](../standard-library/basic-string-class.md) akışının içine  *\_ Ostr*. İşlev etkili bir şekilde döndürür `_Ostr.write( str.c_str, str.size )`.
 
 ## <a name="op_gt"></a>  İşleci&gt;
 

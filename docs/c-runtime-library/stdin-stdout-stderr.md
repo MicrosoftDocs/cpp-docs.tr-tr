@@ -13,21 +13,21 @@ helpviewer_keywords:
 - standard input stream
 - stderr function
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
-ms.openlocfilehash: 0ecb7c51f6c38ffcb6637a093ec06a6f248839d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f9ed1f842bd174c2b926572856152cd69ade5a56
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452201"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328025"
 ---
 # <a name="stdin-stdout-stderr"></a>stdin, stdout, stderr
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-FILE *stdin; 
-FILE *stdout; 
-FILE *stderr; 
+FILE *stdin;
+FILE *stdout;
+FILE *stderr;
 #include <stdio.h>
 ```
 

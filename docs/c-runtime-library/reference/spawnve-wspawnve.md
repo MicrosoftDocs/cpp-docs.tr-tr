@@ -31,12 +31,12 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: 26d1713d-b551-4f21-a07b-e9891a2ae6cf
-ms.openlocfilehash: 03fa25f5800928aad7185c98a331d06b1c39779b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e3a8d3cf476dfff7c74007ec371c39f5128bbe7
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562025"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326484"
 ---
 # <a name="spawnve-wspawnve"></a>_spawnve, _wspawnve
 
@@ -82,11 +82,11 @@ Dönüş değeri eş zamanlı **_spawnve** veya **_wspawnve** (**_p_waıt** içi
 
 |||
 |-|-|
-**E2BIG**|Bağımsız değişken listesi 1024 baytı aşıyor.
-**EINVAL**|*modu* bağımsız değişkeni geçersiz.
-**ENOENT**|Dosya veya yol bulunamadı.
-**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip.
-**ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok.
+| **E2BIG** | Bağımsız değişken listesi 1024 baytı aşıyor. |
+| **EINVAL** | *modu* bağımsız değişkeni geçersiz. |
+| **ENOENT** | Dosya veya yol bulunamadı. |
+| **ENOEXEC** | Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip. |
+| **ENOMEM** | Yeni işlemi yürütmek yeterli bellek yok. |
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

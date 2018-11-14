@@ -60,12 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-ms.openlocfilehash: efffa6057f6322f3de3d9d0bfe050d6d2021d9b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07e507f0546849a64625ccd67a0f7463cd510841
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648103"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525411"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 
@@ -408,7 +408,7 @@ Arka plandaki `VARIANT` değerini `COleSafeArray` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi için VT_EMPTY nesnenin VARTYPE ayarlayarak verileri güvenli diziye ayırır. Bu dizi Windows işlevi çağrılarak serbest arayanın sorumluluğundadır [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear).
+İşlevi için VT_EMPTY nesnenin VARTYPE ayarlayarak verileri güvenli diziye ayırır. Bu dizi Windows işlevi çağrılarak serbest arayanın sorumluluğundadır [VariantClear](/windows/desktop/api/oleauto/nf-oleauto-variantclear).
 
 İşlevi, hata oluşturur bir [COleException](../../mfc/reference/coleexception-class.md).
 
@@ -674,7 +674,7 @@ Diziye atamak için veri işaretçisi. Gt; vt_dıspatch & gt; VT_UNKNOWN & ve VT
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev otomatik olarak Windows işlevlerini çağıran [SafeArrayLock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraylock) ve [SafeArrayUnlock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) önce ve sonra öğe atanıyor. Veri öğesi, bir dize, nesne veya değişken ise, işlev, doğru kopyalar ve var olan bir dize, nesne veya değişken öğeyse, doğru temizlenir.
+Bu işlev otomatik olarak Windows işlevlerini çağıran [SafeArrayLock](/windows/desktop/api/oleauto/nf-oleauto-safearraylock) ve [SafeArrayUnlock](/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) önce ve sonra öğe atanıyor. Veri öğesi, bir dize, nesne veya değişken ise, işlev, doğru kopyalar ve var olan bir dize, nesne veya değişken öğeyse, doğru temizlenir.
 
 Dizi diğer işlemler tarafından kilitliyken öğeleri bir dizi içine koyabilirsiniz için bir dizi üzerinde birden çok kilit sahip olabileceğini unutmayın.
 

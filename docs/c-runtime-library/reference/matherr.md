@@ -22,12 +22,12 @@ helpviewer_keywords:
 - _matherr function
 - matherr function
 ms.assetid: b600d66e-165a-4608-a856-8fb418d46760
-ms.openlocfilehash: 980bf8a14ceace82a76562cc47d353f78dbca582
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b830dc940fa2abb131f70130033d27b057412137
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445727"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329637"
 ---
 # <a name="matherr"></a>_matherr
 
@@ -73,12 +73,12 @@ struct _exception
 
 |Makrosu|Açıklama|
 |-|-|
-**_ETKİ ALANI**|Bağımsız değişken etki alanı hatası
-**_SING**|Bağımsız değişken singularity
-**_OVERFLOW**|Taşma aralık hatası
-**_PLOSS**|Kısmi bir kayıp önemi
-**_TLOSS**|Kaybedilmesi önemi
-**_UNDERFLOW**|Sonuç gösterilemeyecek kadar çok küçüktür. (Bu durum şu anda desteklenmiyor.)
+| **_ETKİ ALANI** | Bağımsız değişken etki alanı hatası |
+| **_SING** | Bağımsız değişken singularity |
+| **_OVERFLOW** | Taşma aralık hatası |
+| **_PLOSS** | Kısmi bir kayıp önemi |
+| **_TLOSS** | Kaybedilmesi önemi |
+| **_UNDERFLOW** | Sonuç gösterilemeyecek kadar çok küçüktür. (Bu durum şu anda desteklenmiyor.) |
 
 Yapı üyesi **adı** hataya neden olan işlevin adını içeren bir boş sonlandırılmış dizeye bir işaretçisidir. Yapı üyeleri **arg1** ve **arg2** hataya neden olan değerleri belirtin. Yalnızca tek bir bağımsız değişken verilirse, bu depolanan **arg1**.
 

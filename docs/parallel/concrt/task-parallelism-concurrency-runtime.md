@@ -8,12 +8,12 @@ helpviewer_keywords:
 - task parallelism
 - tasks [Concurrency Runtime]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
-ms.openlocfilehash: 43af08f3be75bff7621cd2f57b9d50b658420f26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9f18dfd1498538ce3700fd73a27ce6f6088ee42
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630431"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331223"
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>Görev Parallelliği (Eşzamanlılık Çalışma Zamanı)
 
@@ -22,8 +22,7 @@ Eşzamanlılık Çalışma zamanı içinde bir *görev* , belirli bir işi yapan
 Zaman uyumsuz kod yazar ve bazı işlemlerin zaman uyumsuz işlem tamamlandıktan sonra gerçekleştirilmesini istediğiniz görevleri kullanın. Örneğin, bir dosyadan zaman uyumsuz olarak okumak ve ardından başka bir görev için bir görev kullanabilirsiniz — bir *devamlılık görevi*, bu belgenin sonraki bölümlerinde açıklanan — kullanılabilir hale geldikten sonra veriyi işlemek için. Buna karşılık, paralel işleri küçük parçalara ayırmak için Görev gruplarını kullanabilirsiniz. Örneğin, kalan işi iki bölüme ayıran bir önyinelemeli algoritmanız olduğunu varsayın. Bu bölümleri aynı anda çalıştırmak ve sonra da bölünmüş işin tamamlanmasını bekleyin, görev gruplarını kullanabilirsiniz.
 
 > [!TIP]
-
->  Paralel bir koleksiyonun her öğe için aynı yordamı uygulamak istediğinizde, gibi bir paralel algoritma kullanın [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), görev veya görev grubu yerine. Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+> Paralel bir koleksiyonun her öğe için aynı yordamı uygulamak istediğinizde, gibi bir paralel algoritma kullanın [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), görev veya görev grubu yerine. Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
 ## <a name="key-points"></a>Önemli Noktalar
 
@@ -205,7 +204,6 @@ C++ ve XAML kullanan ve diske dosyalar kümesi yazan bir UWP uygulaması göz ö
 1. Mainpage.xaml.cpp içinde `WriteFilesAsync` örnekte gösterildiği gibi.
 
 > [!TIP]
-
 > `when_all` üretir engelleyici olmayan bir işlev, bir `task` sonuç olarak. Farklı [task::wait](reference/task-class.md#wait), ASTA (ASTA uygulaması) iş parçacığında bir UWP uygulamasında bu işlevi çağırmak güvenlidir.
 
 ###  <a name="when-any"></a> When_any işlevi
@@ -229,14 +227,14 @@ Olduğu gibi `when_all`, sahip devamlılık yaygın `when_any` görev kümesinde
 Bu örnekte ayrıca belirtebilirsiniz `task<pair<int, size_t>>` bir görev tabanlı süreklilik üretmek için.
 
 > [!NOTE]
->  Olduğu gibi `when_all`, öğesine geçirdiğiniz görevler `when_any` tümü aynı türü döndürmelidir.
+> Olduğu gibi `when_all`, öğesine geçirdiğiniz görevler `when_any` tümü aynı türü döndürmelidir.
 
 Ayrıca `||` bir dizi görevin ilk görevi tamamlandıktan sonra aşağıdaki örnekte gösterildiği gibi tamamlanan bir görev oluşturmak için söz dizimi.
 
 `auto t = t1 || t2; // same as when_any`
 
 > [!TIP]
->  Olduğu gibi `when_all`, `when_any` engelleyici olmayan ve bir UWP uygulamasında ASTA iş parçacığı üzerindeki çağrılması güvenlidir.
+> Olduğu gibi `when_all`, `when_any` engelleyici olmayan ve bir UWP uygulamasında ASTA iş parçacığı üzerindeki çağrılması güvenlidir.
 
 ##  <a name="delayed-tasks"></a> Geciken görevi yürütme
 
@@ -257,8 +255,7 @@ PPL kullanan [concurrency::task_group](reference/task-group-class.md) ve [concur
 PPL, bu iki kategoride görev grupları böler: *yapılandırılmamış görev grupları* ve *yapılandırılmış görev grupları*. PPL kullanan `task_group` yapılandırılmamış görev gruplarını temsil etmek için sınıf ve `structured_task_group` yapılandırılmış görev gruplarını temsil eden sınıf.
 
 > [!IMPORTANT]
-
->  PPL ayrıca tanımlar [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritmasını `structured_task_group` sınıfı bir dizi görevi paralel olarak yürütmek için. Çünkü `parallel_invoke` yerine bunu kullanmanızı öneririz, algoritması daha kısa sözdizimine sahip `structured_task_group` sınıfı mümkün olduğunda. Konu [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md) açıklar `parallel_invoke` daha ayrıntılı.
+> PPL ayrıca tanımlar [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritmasını `structured_task_group` sınıfı bir dizi görevi paralel olarak yürütmek için. Çünkü `parallel_invoke` yerine bunu kullanmanızı öneririz, algoritması daha kısa sözdizimine sahip `structured_task_group` sınıfı mümkün olduğunda. Konu [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md) açıklar `parallel_invoke` daha ayrıntılı.
 
 Kullanım `parallel_invoke` zaman aynı anda yürütmek istediğiniz birkaç bağımsız görev varsa ve devam etmeden önce tüm görevlerin bitmesin beklemeniz gerekir. Bu teknik, genellikle olarak adlandırılır *çatallanma ve birleşme* paralellik. Kullanım `task_group` zaman aynı anda yürütmek istediğiniz birkaç bağımsız görev sahip, ancak görevlerin daha sonra son beklemek istiyor. Örneğin, görevler ekleyebilir bir `task_group` nesne ve görevleri başka bir işlev veya başka bir iş parçasından tamamlanmasını bekleyin.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - typeinfo header
 ms.assetid: 97ebc4d0-0e0e-41c3-9787-fdef2e38e56f
-ms.openlocfilehash: cb793bdc4bacec5ad21d1cbbed21f871370cb40e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee075240725e23c43939dc646c2201cedf379056
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647037"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517521"
 ---
 # <a name="lttypeinfogt"></a>&lt;typeinfo&gt;
 
@@ -21,7 +21,6 @@ Standart üst bilgiyi dahil \<typeinfo > türü kimlik işleci ile ilgili çeşi
 
 ```cpp
 #include <typeinfo>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

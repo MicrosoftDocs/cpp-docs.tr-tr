@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-ms.openlocfilehash: f9ce63aeba4db7c49aee36bc9b847e6832d26f8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c996fdc2756ee489dc3b0abf9321a1d9ce47aded
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638727"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332406"
 ---
 # <a name="integersequence-class"></a>integer_sequence Sınıfı
 
@@ -45,7 +45,7 @@ T integral türünde değerler dizisini temsil eden bir tür olmayan parametre p
 |||
 |-|-|
 |`static size_t size() noexcept`|Dizideki öğelerin sayısı.|
-|TypeDef T value_type|Dizideki her öğe türü. Bir tamsayı türü olmalıdır.|
+|`typedef T value_type`|Dizideki her öğe türü. Bir tamsayı türü olmalıdır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -57,10 +57,9 @@ Aşağıdaki örnek, özgün teklifine dayalı [N3658](http://open-std.org/jtc1/
 
 İçinde `a2t` işlevi, bir `index_sequence` bir diğer adıdır `integer_sequence` göre `size_t` integral türü. `make_index_sequence` sıfır tabanlı oluşturur, derleme zamanında bir diğer addır `index_sequence` ile aynı sayıda öğe çağıran tarafından geçirilen dizi. `a2t` geçirir `index_sequence` değerine göre `a2t_` burada ifade `a[I]...` ayıklar `I`, ve ardından öğeleri için beslenir `make_tuple` hangi tüketir bunları gibi belirli bağımsız değişkenler. Örneğin, dizi üç öğeleri içeriyorsa, `make_tuple` make_tuple adlandırılır ([0], [1], a[2]). Dizi öğeleri, Elbette herhangi bir tür olabilir.
 
-Uygula işlevi kabul eden bir [std::tuple](../standard-library/tuple-class.md)ve kullanarak bir integer_sequence üretir `tuple_size` yardımcı sınıfı. Unutmayın [std::decay_t](../standard-library/decay-class.md)_is gerekli olduğundan [tuple_size](../standard-library/tuple-size-class-tuple.md) başvuru türleri ile çalışmaz. `apply_` İşlevi tanımlama grubu üyeleri ayıklar ve bunları olarak ayrı bağımsız değişkenleri işlev çağrısı için iletir. Bu örnekte değerleri yazdıran basit bir lambda ifadesi bir işlevdir.
+Uygula işlevi kabul eden bir [std::tuple](../standard-library/tuple-class.md), oluşturur bir `integer_sequence` kullanarak `tuple_size` yardımcı sınıfı. Unutmayın [std::decay_t](../standard-library/decay-class.md) gereklidir çünkü [tuple_size](../standard-library/tuple-size-class-tuple.md) başvuru türleri ile çalışmaz. `apply_` İşlevi tanımlama grubu üyeleri ayıklar ve bunları olarak ayrı bağımsız değişkenleri işlev çağrısı için iletir. Bu örnekte değerleri yazdıran basit bir lambda ifadesi bir işlevdir.
 
-```
-
+```cpp
 #include <stddef.h>
 #include <iostream>
 #include <tuple>
@@ -114,7 +113,6 @@ int main()
     char c;
     cin >> c;
 }
-
 ```
 
 Yapmak için bir `index_sequence` kullanmak için bir parametre paketi `index_sequence_for` \<T... > için bir diğer ad olduğu `make_index_sequence` \<sizeof... (T) >

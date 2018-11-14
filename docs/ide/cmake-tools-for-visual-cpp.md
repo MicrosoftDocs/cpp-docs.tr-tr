@@ -4,12 +4,12 @@ ms.date: 10/18/2018
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 07c32e30aa36d6e59122340da0b1026e7025780d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a4f7b3931dc8ed8bd7206c7f30ce4b65633f08b6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612504"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518990"
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++'da CMake projeleri
 
@@ -38,8 +38,11 @@ Visual Studio 2017'den itibaren **CMake için Visual C++ Araçları** bileşen *
 Seçeneğini belirlediğinizde **dosya | Açık | Klasör** CMakeLists.txt dosyasını içeren klasör Aç için aşağıdakiler gerçekleşir:
 
 - Visual Studio ekler bir **CMake** görüntülemeyi ve düzenlemeyi CMake betikleri için komutlarla ana menüsüne menü öğesi.
+
 - **Çözüm Gezgini** dosya ve klasör yapısını görüntüler.
+
 - Visual Studio CMake.exe çalıştırır ve CMake önbelleği için varsayılan oluşturur *yapılandırma*, x86 olan hata ayıklama. CMake komut satırında görüntülenen **çıkış penceresine**, birlikte CMake ek çıktısı.  **Visual Studio 2017 sürüm 15.7 ve üzeri**: otomatik önbellek oluşturma devre dışı bırakılabilir içinde **araçları | Seçenekleri | CMake | Genel** iletişim.
+
 - Arka planda gözatma bilgilerinin, yeniden düzenleme, IntelliSense, etkinleştirmek için kaynak dosyaları dizini oluşturmak ve benzeri Visual Studio başlatılır. Çalışırken, Visual Studio Düzenleyicisi'nde ve ayrıca disk dizinini kaynakları ile eşitlenmiş tutmak için değişiklikleri izler.
 
 Herhangi bir sayıda CMake projelerini içeren klasörleri açabilirsiniz. Visual Studio algılar ve çalışma alanınızdaki tüm "Kök" CMakeLists.txt dosyaları yapılandırır. CMake işlemleri (yapılandırma, derleme, hata ayıklama) yanı sıra C++ IntelliSense ve gözatma, çalışma alanınızdaki tüm CMake projelerini kullanılabilir.
@@ -77,7 +80,9 @@ Her şey önbelleğinde aktarılır.  Oluşturucu ve derleyiciler konumu gibi ö
 CMake projesi oluşturmak için bu seçeneğiniz vardır:
 
 1. Hedef seçin **hata ayıklama** açılan basın **F5**, veya **çalıştırmak** (yeşil üçgeni) düğmesini. Projeyi ilk olarak, yalnızca Visual Studio çözümü gibi otomatik olarak oluşturur.
+
 1. Sağ tıklayın CMakeLists.txt ve select **derleme** bağlam menüsünden. Birden çok hedef klasör yapınız varsa, tüm veya tek bir belirli hedef oluşturmayı seçebilirsiniz.
+
 1. Ana menüden **yapı | Çözüm yapı** (**F7** veya **Ctrl + Shift + B**). İçinde bir CMake hedef zaten seçili olduğundan emin olun **başlangıç öğesi** açılır menüde **genel** araç çubuğu.
 
 ![CMake derleme menü komutu](media/cmake-build-menu.png "CMake derleme komutu menüsü")
@@ -182,20 +187,25 @@ Aşağıdaki örnek, başlangıç noktası olarak kendi CMakeSettings.json oluş
       "buildCommandArgs": "-v",
       "ctestCommandArgs": ""
     },
-
 ```
 
 1. **ad**: C++ yapılandırma açılan menüde görünen adı. Bu özellik değeri, bir makro ayrıca kullanılabilir `${name}`diğer özellik değerlerini belirtmek için. Bir örnek için bkz. **buildRoot** CMakeSettings.json tanımında.
 
 1. **Oluşturucu**: eşlendiği **- G** geçin ve kullanılacak Oluşturucu belirtir. Bu özellik, bir makro ayrıca kullanılabilir `${generator}`, diğer özellik değerlerini belirtin yardımcı olmak için. Visual Studio şu anda aşağıdaki CMake oluşturucuları destekler:
 
-    - "Ninja"
-    - "Visual Studio 14 2015"
-    - "Visual Studio 2015 14 ARM"
-    - "Visual Studio 2015 14 Win64"
-    - "Visual Studio 15 2017"
-    - "Visual Studio 15 2017 ARM"
-    - "Visual Studio 15 2017 Win64"
+   - "Ninja"
+
+   - "Visual Studio 14 2015"
+
+   - "Visual Studio 2015 14 ARM"
+
+   - "Visual Studio 2015 14 Win64"
+
+   - "Visual Studio 15 2017"
+
+   - "Visual Studio 15 2017 ARM"
+
+   - "Visual Studio 15 2017 Win64"
 
 Ninja, esneklik ve işlevi yerine hızlı derleme hızı için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projelerini Ninja kullanarak doğru şekilde derlenmesi olabilir. Bu meydana gelirse, bunun yerine Visual Studio projesi oluşturmak için CMake bildirebilirsiniz.
 
@@ -232,11 +242,17 @@ CMakeSettings.json alıcı ortam değişkenlerini yukarıdaki özelliklerinden h
 Ayrıca yerleşik makroları içinde bu dosyayı erişebilirsiniz:
 
 - `${workspaceRoot}` – Çalışma klasörün tam yolunu sağlar.
+
 - `${workspaceHash}` – Çalışma alanı konumu; karması Geçerli çalışma alanına (örneğin, klasör yollarında kullanılacak) için benzersiz bir tanımlayıcı oluşturmak için yararlı
+
 - `${projectFile}` – kök CMakeLists.txt dosyasının tam yolu
+
 - `${projectDir}` – kök CMakeLists.txt dosyasını klasörün tam yolu
+
 - `${thisFile}` – CMakeSettings.json dosyasının tam yolu
+
 - `${name}` – yapılandırmasının adı
+
 - `${generator}` – Bu yapılandırmasında kullanılan CMake oluşturucu adı
 
 ### <a name="ninja-command-line-arguments"></a>Ninja komut satırı bağımsız değişkenleri
@@ -393,9 +409,11 @@ Bir sorunu tanılamak için CMake önbelleğini durumu hakkında daha fazla bilg
 ![CMake tek dosyalı derleme](media/cmake-single-file-compile.png)
 
 ## <a name="run-cmake-from-the-command-line"></a>CMake komut satırından çalıştırma
+
 CMake Visual Studio Yükleyicisi'nden yüklediyseniz, aşağıdaki adımları izleyerek komut satırından çalıştırabilirsiniz:
 
 1. Uygun vsdevcmd.bat (x86/x64) çalıştırın. Bkz: [komut satırında derleme](../build/building-on-the-command-line.md) daha fazla bilgi için.
-1. Çıkış klasörüne geçin.
-1. CMake derleme/Uygulamanızı yapılandırmak için çalıştırın.
 
+1. Çıkış klasörüne geçin.
+
+1. CMake derleme/Uygulamanızı yapılandırmak için çalıştırın.

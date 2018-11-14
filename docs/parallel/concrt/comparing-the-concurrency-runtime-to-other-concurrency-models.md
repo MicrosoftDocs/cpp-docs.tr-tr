@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-ms.openlocfilehash: 0b5c24761f176d9c256c1ef6aee85b25231cea2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82e1dca1345b909919320b911c4c107e965c9850
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655851"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332679"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>Eşzamanlılık Çalışma Zamanını Diğer Eşzamanlılık Modelleriyle Karşılaştırma
 
@@ -33,7 +33,7 @@ Preemptive modeli ve modelleri zamanlama Guyana bilgi işlem kaynaklarını payl
 
 ### <a name="preemptive-and-cooperative-scheduling"></a>PreEmptive ve işbirlikçi zamanlama
 
-*PreEmptive zamanlama* her görev özel erişim, belirli bir süre için bir bilgi işlem kaynağına sağlar ve ardından başka bir göreve geçiş hepsini bir kez deneme, öncelik tabanlı bir mekanizma. PreEmptive zamanlama kullanılsın işletim sistemlerinde Windows gibi ortak *. İşbirlikçi zamanlama* her görev özel erişim görev bitene kadar veya görev kaynak erişimini verir kadar bilgi işlem kaynak sağlayan bir mekanizmadır. Eşzamanlılık Çalışma zamanı, kaynakları işleme en fazla kullanım elde etmek için işletim sisteminin preemptive Zamanlayıcı ile birlikte işbirlikçi zamanlama kullanır.
+*PreEmptive zamanlama* her görev özel erişim, belirli bir süre için bir bilgi işlem kaynağına sağlar ve ardından başka bir göreve geçiş hepsini bir kez deneme, öncelik tabanlı bir mekanizma. PreEmptive zamanlama kullanılsın işletim sistemlerinde Windows gibi yaygın bir durumdur. *İşbirlikçi zamanlama* her görev özel erişim görev bitene kadar veya görev kaynak erişimini verir kadar bilgi işlem kaynak sağlayan bir mekanizmadır. Eşzamanlılık Çalışma zamanı, kaynakları işleme en fazla kullanım elde etmek için işletim sisteminin preemptive Zamanlayıcı ile birlikte işbirlikçi zamanlama kullanır.
 
 ### <a name="differences-between-preemptive-and-cooperative-schedulers"></a>Preemptive ve işbirlikçi zamanlayıcılar arasındaki farklar
 

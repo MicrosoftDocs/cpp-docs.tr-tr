@@ -42,12 +42,12 @@ helpviewer_keywords:
 - llrintf function
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-ms.openlocfilehash: a1fc404182d9d2a5cd6870fcb2cd1ff3e5f4da55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01680a62e654112475a55bd8eac0cc14d254e2a2
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500850"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523243"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
@@ -95,7 +95,6 @@ long long int llrintf(
 long long int llrintl(
    long double x
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

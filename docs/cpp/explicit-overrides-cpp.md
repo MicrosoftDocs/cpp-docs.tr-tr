@@ -8,12 +8,12 @@ helpviewer_keywords:
 - explicit virtual function overrides
 - explicit override of virtual function
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-ms.openlocfilehash: 703d229db32f3380dcfe849bb4478e44caa830dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f46d55dc3898fdf5fede075a0d44f04a9f8326a
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455165"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325867"
 ---
 # <a name="explicit-overrides-c"></a>Açık Geçersiz Kılmalar (C++)
 
@@ -104,7 +104,7 @@ int main() {
 
    // Cast to a CMyClass pointer so that the destructor gets called
       CMyClass *p = dynamic_cast<CMyClass *>(pIMyInt1);
-      delete p;
+      delete p;
 }
 ```
 

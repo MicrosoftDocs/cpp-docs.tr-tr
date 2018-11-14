@@ -8,12 +8,12 @@ helpviewer_keywords:
 - operator .
 - . operator
 ms.assetid: 468ea0c8-5b08-47be-991b-38abacb77611
-ms.openlocfilehash: 1bfb7ccb83ae5391657d88b91013a541dde2aa2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75eccec0c65cba093d84e9d71107247e5b697287
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658581"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330846"
 ---
 # <a name="operator-"></a>. işleci
 
@@ -21,9 +21,9 @@ ms.locfileid: "50658581"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *İfade*<br/> biçimindeki telefon numarasıdır. *alan* [[. *alan*]]...
-
-> [*kaydetme*]. *alan* [[. *alan*]]...
+> *ifade* __.__ *alan* \[ __.__ *alan*]...
+>
+> __\[__*Kayıt*__]__ __.__ *alan* \[ __.__ *alan*]...
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

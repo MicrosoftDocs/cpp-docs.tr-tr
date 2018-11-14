@@ -23,12 +23,12 @@ helpviewer_keywords:
 - flushing
 - fflush function
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-ms.openlocfilehash: 1d0e1b6f346481935b5b19736a8f9b41fede36e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d03d20ee5024915d0ca4c5a21db4159e8c4f876a
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527240"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329117"
 ---
 # <a name="fflush"></a>fflush
 
@@ -103,17 +103,13 @@ int main( void )
 }
 ```
 
-```Output
-
-      This is a test
+```Input
 This is a test
-
+This is a test
 ```
 
 ```Output
-
-      This is a test
-This is a testEnter a sentence of four words with scanf: This is a test
+Enter a sentence of four words with scanf: This is a test
 This
 is
 a

@@ -25,12 +25,12 @@ helpviewer_keywords:
 - sorting arrays
 - arrays [CRT], sorting
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
-ms.openlocfilehash: e912a7a53619e9347cf2c0cd40adf0f9162b314b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd2fc9cd789b02f1fa1e0b9969b597aa51aceedd
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618497"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327557"
 ---
 # <a name="qsort"></a>qsort
 
@@ -41,7 +41,7 @@ Hızlı sıralama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kull
 ```C
 void qsort(
    void *base,
-   size_t num,
+   size_t number,
    size_t width,
    int (__cdecl *compare )(const void *, const void *)
 );
@@ -49,7 +49,7 @@ void qsort(
 
 ### <a name="parameters"></a>Parametreler
 
-<br/>
+*base*<br/>
 Hedef dizi başlangıcı.
 
 *Sayı*<br/>
@@ -68,7 +68,7 @@ Kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunlar�
 **qsort** çağrıları *karşılaştırma* rutin bir veya daha fazla zaman sıralama sırasında ve işaretçileri iki dizi öğelerine her çağrıda geçirir.
 
 ```C
-compare( (void *) & elem1, (void *) & elem2 );
+compare( (void *) & elem1, (void *) & elem2 );
 ```
 
 Yordam, öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndürür.
@@ -81,7 +81,7 @@ Yordam, öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndü
 
 Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir diziyi sıralamak için "büyüktür" ve "az" karşılaştırma işlevde anlamı ters çevir.
 
-Bu işlev, parametrelerini doğrular. Varsa *karşılaştırmak* veya *numarası* olan **NULL**, veya *temel* olan **NULL** ve **numarası* sıfır değilse, ya da Eğer *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür ve **errno** ayarlanır **EINVAL**.
+Bu işlev, parametrelerini doğrular. Varsa *karşılaştırmak* veya *numarası* olan **NULL**, veya *temel* olan **NULL** ve *numarası* sıfır değilse, ya da Eğer *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür ve **errno** ayarlanır **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 

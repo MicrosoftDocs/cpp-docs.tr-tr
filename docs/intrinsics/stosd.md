@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rep stosd instruction
 - __stosd intrinsic
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680
-ms.openlocfilehash: 5dc5e9703f81cd843e34d6df4b05133660c48c54
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c32c439af5544eb561f776381cb1afa98337efcb
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563754"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328844"
 ---
 # <a name="stosd"></a>__stosd
 
@@ -24,10 +24,10 @@ Bir depolama dize yönergesi oluşturur (`rep stosd`).
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __stosd( 
-   unsigned long* Dest, 
-   unsigned long Data, 
-   size_t Count 
+void __stosd(
+   unsigned long* Dest,
+   unsigned long Data,
+   size_t Count
 );
 ```
 

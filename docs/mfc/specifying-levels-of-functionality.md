@@ -1,6 +1,6 @@
 ---
 title: İşlevsellik Düzeylerini Belirtme
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 helpviewer_keywords:
 - CObject class [MFC], adding functionality to derived classes
 - runtime [MFC], class information
@@ -10,27 +10,26 @@ helpviewer_keywords:
 - run-time class [MFC], information support
 - levels [MFC]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
-ms.openlocfilehash: 3fb9b18712b24046e05f05834caaac2819fb73dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2588a3b2a55ebfca4b57be875e26bb0348db83a0
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494659"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326218"
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
 
 Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject](../mfc/reference/cobject-class.md)-türetilmiş sınıf:
 
-- [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)
+- Çalışma zamanı sınıf bilgileri
 
-- [Dinamik oluşturma desteği](#_core_to_add_dynamic_creation_support)
+- Dinamik oluşturma desteği
 
-- [Serileştirme desteği](#_core_to_add_serialization_support)
+- Serileştirme desteği
 
 Genel bir açıklamasını `CObject` işlevselliği makaleye göz atın [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md).
 
-- [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)
-#### <a name="_core_to_add_run.2d.time_class_information"></a> Çalışma zamanı sınıf bilgileri eklemek için
+## <a name="to-add-run-time-class-information"></a>Çalışma zamanı sınıf bilgileri eklemek için
 
 1. Öğesinden, bir sınıf türetin `CObject`anlatılan şekilde [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md) makalesi.
 
@@ -43,9 +42,9 @@ Genel bir açıklamasını `CObject` işlevselliği makaleye göz atın [CObject
    [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
 
 > [!NOTE]
->  Her zaman uygulama dosyasında ımplement_dynamıc yerleştirin (. CPP) sınıfınız için. Implement_dynamıc makrosu derleme sırasında yalnızca bir kez değerlendirilir ve bu nedenle bir arabirim dosyasında kullanılmamalıdır (. H), büyük olasılıkla birden fazla dosyasına dahil.
+> Her zaman uygulama dosyasında ımplement_dynamıc yerleştirin (. CPP) sınıfınız için. Implement_dynamıc makrosu derleme sırasında yalnızca bir kez değerlendirilir ve bu nedenle bir arabirim dosyasında kullanılmamalıdır (. H), büyük olasılıkla birden fazla dosyasına dahil.
 
-#### <a name="_core_to_add_dynamic_creation_support"></a> Dinamik oluşturma desteği eklemek için
+## <a name="to-add-dynamic-creation-support"></a>Dinamik oluşturma desteği eklemek için
 
 1. Öğesinden, bir sınıf türetin `CObject`.
 
@@ -55,14 +54,14 @@ Genel bir açıklamasını `CObject` işlevselliği makaleye göz atın [CObject
 
 1. IMPLEMENT_DYNCREATE makrosu sınıf uygulama dosyasında kullanın.
 
-#### <a name="_core_to_add_serialization_support"></a> Serileştirme desteği eklemek için
+## <a name="to-add-serialization-support"></a>Serileştirme desteği eklemek için
 
 1. Öğesinden, bir sınıf türetin `CObject`.
 
 1. Geçersiz kılma `Serialize` üye işlevi.
 
-    > [!NOTE]
-    >  Eğer `Serialize` doğrudan diğer bir deyişle, istemediğiniz çok biçimli bir işaretçiyle nesneyi serileştirmek 3 ile 5 arasındaki adımları atlayın.
+   > [!NOTE]
+   > Eğer `Serialize` doğrudan diğer bir deyişle, istemediğiniz çok biçimli bir işaretçiyle nesneyi serileştirmek 3 ile 5 arasındaki adımları atlayın.
 
 1. Declare_serıal makrosu, sınıf bildirimi içinde kullanın.
 
@@ -71,7 +70,7 @@ Genel bir açıklamasını `CObject` işlevselliği makaleye göz atın [CObject
 1. Implement_serıal makrosu sınıf uygulama dosyasında kullanın.
 
 > [!NOTE]
->  Bir sınıfın bir nesnesi için bir "çok biçimli işaretçinin" işaret (çağrısından A) veya bir (örneğin, B) türetilmiş sınıfın bir nesnesi. Çerçevesi çok biçimli bir işaretçi ile seri hale getirmek için bazı temel sınıftan (A) herhangi bir sınıfın bir nesnesi olabileceğinden, (B) serileştiren bir nesnenin çalışma zamanı sınıfının belirlemeniz gerekir.
+> Bir sınıfın bir nesnesi için bir "çok biçimli işaretçinin" işaret (çağrısından A) veya bir (örneğin, B) türetilmiş sınıfın bir nesnesi. Çerçevesi çok biçimli bir işaretçi ile seri hale getirmek için bazı temel sınıftan (A) herhangi bir sınıfın bir nesnesi olabileceğinden, (B) serileştiren bir nesnenin çalışma zamanı sınıfının belirlemeniz gerekir.
 
 Öğesinden, bir sınıf türetin olduğunda serileştirme etkinleştirme hakkında daha fazla ayrıntı için `CObject`, makalelere göz atın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [serileştirme](../mfc/serialization-in-mfc.md).
 

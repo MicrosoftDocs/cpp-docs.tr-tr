@@ -25,12 +25,12 @@ helpviewer_keywords:
 - file translation [C++], setting mode
 - set_fmode function
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
-ms.openlocfilehash: df6efcf3fd89ec87ad098200d1d9ba3d6b52c7e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: af83f22ebfaf274b73ca9e891563d3775e28925f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500366"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329910"
 ---
 # <a name="setfmode"></a>_set_fmode
 
@@ -39,8 +39,8 @@ Dosya g/ç işlemleri için varsayılan dosya çevirisi modu ayarlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _set_fmode( 
-   int mode 
+errno_t _set_fmode(
+   int mode
 );
 ```
 

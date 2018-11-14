@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-ms.openlocfilehash: 8dc82f6ee054dc3d0f86055cb63da1fc63c79a8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43259001bd05bb7df9e2e1636c174018dcdaef3c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605484"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522655"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
@@ -40,7 +40,6 @@ int fegetexceptflag(
    fexcept_t* pstatus,
    int excepts
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

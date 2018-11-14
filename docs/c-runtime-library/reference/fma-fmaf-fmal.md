@@ -30,12 +30,12 @@ helpviewer_keywords:
 - fmaf function
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-ms.openlocfilehash: a3b540a72c6f2fc2264d6366111831fbe2a02a6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f96592e245e443bae2f3334da51cae5572753708
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529954"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517806"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
@@ -73,7 +73,6 @@ long double fmal(
    long double  y,
    long double z
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

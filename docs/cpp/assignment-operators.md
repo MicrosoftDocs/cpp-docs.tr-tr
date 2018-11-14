@@ -31,12 +31,12 @@ helpviewer_keywords:
 - /= operator
 - <<= operator
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
-ms.openlocfilehash: d435ea051610f9ffa496f41f364ffc1c81694b61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44211e43a0449c8a50ff03cac31eeed1fcc49a28
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617405"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328480"
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 
@@ -45,7 +45,7 @@ ms.locfileid: "50617405"
 *ifade* *atama işleci* *ifadesi*
 
 *atama işleci* : biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>= * =, / = % =, +=-= \< \<= >> = & = ^ =   \|=</strong>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>=&nbsp;&nbsp;&nbsp;*=&nbsp;&nbsp;&nbsp;/=&nbsp;&nbsp;&nbsp;%=&nbsp;&nbsp;&nbsp;+=&nbsp;&nbsp;&nbsp;-=&nbsp;&nbsp;&nbsp;\<\<=&nbsp;&nbsp;&nbsp;>>=&nbsp;&nbsp;&nbsp;&=&nbsp;&nbsp;&nbsp;^=&nbsp;&nbsp;&nbsp;\|=</strong>
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -4,12 +4,12 @@ ms.date: 09/24/2018
 helpviewer_keywords:
 - binary compatibility, Visual C++
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
-ms.openlocfilehash: 43de0d3ca08bbe291581aa002bd8927ce272ab53
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e526002bdca0eee122531f39c195aef3474cc61c
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666927"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329832"
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015 ve Visual Studio 2017 arasındaki C++ ikili uyumluluğu
 
@@ -23,4 +23,4 @@ Bu kural için iki istisna mevcuttur. Bu gibi durumlarda ikili uyumluluğu garan
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Visual C++ değişiklik geçmişi](..\porting\visual-cpp-change-history-2003-2015.md)
+[Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)

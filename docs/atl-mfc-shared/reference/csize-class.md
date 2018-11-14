@@ -11,12 +11,12 @@ helpviewer_keywords:
 - dimensions
 - CSize class
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
-ms.openlocfilehash: a0245862fe90c108b8ffc038b723a8b5bb62a665
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7451b462087d6430c642ddbe3b7cf8141a792f2e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431922"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329377"
 ---
 # <a name="csize-class"></a>CSize sınıfı
 
@@ -173,11 +173,17 @@ CRect operator+(const RECT* lpRect) const throw();
 
 Tek tek işleçler aşağıdaki açıklamaları bakın:
 
-- **operator + (** `size` **)** bu işlem iki ekler `CSize` değerleri.
+- **operator + (** *boyutu* **)**
 
-- **işleç + (** `point` **)**(taşıma) bu işlemi kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) (veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) bu değerle `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değer eklenir **x** ve **y** veri üyeleri **noktası**  değeri. Sürümüne benzer [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+  Bu işlem iki ekler `CSize` değerleri.
 
-- **işleç + (** `lpRect` **)**(taşıma) bu işlemi kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (veya [CRect](../../atl-mfc-shared/reference/crect-class.md)) bu değerle `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değer eklenir **sol**, **üst**, **sağ**, ve **alt** veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+- **operator + (** *noktası* **)**
+
+  Bu işlem (taşıma) kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) (veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) bu değerle `CSize` değeri. `cx` Ve `cy` bu üyeleri `CSize` değer eklenir `x` ve `y` veri üyeleri `POINT` değeri. Sürümüne benzer [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+- **operator + (** *lpRect* **)**
+
+   Bu işlem (taşıma) kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (veya [CRect](../../atl-mfc-shared/reference/crect-class.md)) bu değerle `CSize` değeri. `cx` Ve `cy` bu üyeleri `CSize` değer eklenir `left`, `top`, `right`, ve `bottom` veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
 
 ### <a name="example"></a>Örnek
 
@@ -198,13 +204,21 @@ CSize operator-() const throw();
 
 Tek işlenenli eksi işareti, dördüncü işleci işaretini değişiklikleri `CSize` değeri. Tek tek işleçler aşağıdaki açıklamaları bakın:
 
-- **-işleci (** `size` **)** bu işlem iki çıkarır `CSize` değerleri.
+- **-işleci (** *boyutu* **)**
 
-- **-işleci (** `point` **)**(taşıma) bu işlemi kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) değere göre bu eklenebilir tersini `CSize` değer. **Cx** ve **cy** bu `CSize` değeri gelen çıkartılır **x** ve **y** veri üyeleri **noktası**  değeri. Sürümüne benzer [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+  Bu işlem iki çıkarır `CSize` değerleri.
 
-- **-işleci (** `lpRect` **)**(taşıma) bu işlemi kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) değere göre bu eklenebilir tersini `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değeri gelen çıkartılır **sol**, **üst**, **sağ**, ve **alt** veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+- **-işleci (** *noktası* **)**
 
-- **operator-()** bu işlem, bu eklenebilir tersini döndürür `CSize` değeri.
+  Bu işlem (taşıma) kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) değere göre bu eklenebilir tersini `CSize` değeri. `cx` Ve `cy` bu `CSize` değeri gelen çıkartılır `x` ve `y` veri üyeleri `POINT` değeri. Sürümüne benzer [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+- **-işleci (** *lpRect* **)**
+
+  Bu işlem (taşıma) kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) değere göre bu eklenebilir tersini `CSize` değeri. `cx` Ve `cy` bu üyeleri `CSize` değeri gelen çıkartılır `left`, `top`, `right`, ve `bottom` veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+- **operator-)**
+
+  Bu işlem, bu eklenebilir tersini döndürür `CSize` değeri.
 
 ### <a name="example"></a>Örnek
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_floating_point class
 - is_floating_point
 ms.assetid: 070679c1-115b-4ee4-8ab7-f52e5d9e157f
-ms.openlocfilehash: d9f74bf1f40488220cf9f980966fd4fb77d37d68
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 242c55cfa6b62e49aa5b73de0aa1a353c16827f9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613089"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517741"
 ---
 # <a name="isfloatingpoint-class"></a>is_floating_point Sınıfı
 
@@ -60,7 +60,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

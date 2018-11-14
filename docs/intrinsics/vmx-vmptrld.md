@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-ms.openlocfilehash: 4079eadc1f2d655c14192c8c4286ad240b1c1dbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f74a69bf0a4a780834dc9669c1266c82f7038e6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571385"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325930"
 ---
 # <a name="vmxvmptrld"></a>__vmx_vmptrld
 
@@ -23,8 +23,8 @@ ms.locfileid: "50571385"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-int __vmx_vmptrld( 
-   unsigned __int64 *VmcsPhysicalAddress 
+int __vmx_vmptrld(
+   unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 

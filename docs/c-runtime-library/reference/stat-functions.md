@@ -106,12 +106,12 @@ helpviewer_keywords:
 - _tstat64 function
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-ms.openlocfilehash: 316012479ec374cc5f40061384475008fe04e331
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9272cd4596a54a38e1ba21ac92b038c2da0d207
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637287"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331210"
 ---
 # <a name="stat-stat32-stat64-stati64-stat32i64-stat64i32-wstat-wstat32-wstat64-wstati64-wstat32i64-wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
@@ -228,17 +228,17 @@ Bu işlev, parametrelerini doğrular. Ya da *yolu* veya *arabellek* olduğu **NU
 
 |Alan||
 |-|-|
-**st_gid**|Bu alan ' % s'dosyasına (UNIX özgü) sahip grup sayısal tanıtıcısı her zaman Windows sistemlerinde sıfır olur. Yeniden yönlendirilen bir dosya, bir Windows dosya olarak sınıflandırılır.
-**st_atime**|Dosyanın son erişim zamanı. Geçerli NTFS ancak çalıştırılmadı FAT biçimlendirmesine sahip disk sürücülerine.
-**st_ctime**|Dosya oluşturulma saati. Geçerli NTFS ancak çalıştırılmadı FAT biçimlendirmesine sahip disk sürücülerine.
-**st_dev**|Dosyayı içeren disk sayısı sürücü (aynı **st_rdev**).
-**st_ino**|Bilgi düğümü sayısı ( **Inode**) ' % s'dosyası (UNIX özgü). UNIX dosya sistemlerindeki **Inode** dosya tarih ve zaman damgaları, izinleri ve içeriği açıklanmaktadır. Dosyaları sabit birbirine bağlı olduğunda, aynı paylaştıkları **Inode**. **Inode**ve bu nedenle **st_ino**, FAT, HPFS veya NTFS dosya sisteminde bir anlamı yoktur.
-**st_mode**|Dosya modu bilgi bit maskesi. **_S_ıfdır** bit ayarlanmışsa *yolu* bir dizini belirtir; **_s_ıfreg** bit ayarlanmışsa *yolu* sıradan bir dosya ya da bir cihaz belirtir. Kullanıcı okuma/yazma BITS dosyanın izin Modu'nda göre ayarlanır; Kullanıcı yürütme BITS dosya adı uzantısına göre ayarlanır.
-**st_mtime**|Dosyanın son değiştirilme saati.
-**st_nlink**|Her zaman 1 NTFS dışı dosya sistemlerine.
-**st_rdev**|Dosyayı içeren disk sayısı sürücü (aynı **st_dev**).
-**st_size**|Dosyanın bayt cinsinden boyutunu; bir 64-bit tamsayı ile çeşitleri için **I64** soneki.
-**st_uid**|Sayısal dosyasına (UNIX özgü) sahip kullanıcı tanımlayıcısı. Bu alan, her zaman Windows sistemlerinde sıfır olur. Yeniden yönlendirilen bir dosya, bir Windows dosya olarak sınıflandırılır.
+| **st_gid** | Bu alan ' % s'dosyasına (UNIX özgü) sahip grup sayısal tanıtıcısı her zaman Windows sistemlerinde sıfır olur. Yeniden yönlendirilen bir dosya, bir Windows dosya olarak sınıflandırılır. |
+| **st_atime** | Dosyanın son erişim zamanı. Geçerli NTFS ancak çalıştırılmadı FAT biçimlendirmesine sahip disk sürücülerine. |
+| **st_ctime** | Dosya oluşturulma saati. Geçerli NTFS ancak çalıştırılmadı FAT biçimlendirmesine sahip disk sürücülerine. |
+| **st_dev** | Dosyayı içeren disk sayısı sürücü (aynı **st_rdev**). |
+| **st_ino** | Bilgi düğümü sayısı ( **Inode**) ' % s'dosyası (UNIX özgü). UNIX dosya sistemlerindeki **Inode** dosya tarih ve zaman damgaları, izinleri ve içeriği açıklanmaktadır. Dosyaları sabit birbirine bağlı olduğunda, aynı paylaştıkları **Inode**. **Inode**ve bu nedenle **st_ino**, FAT, HPFS veya NTFS dosya sisteminde bir anlamı yoktur. |
+| **st_mode** | Dosya modu bilgi bit maskesi. **_S_ıfdır** bit ayarlanmışsa *yolu* bir dizini belirtir; **_s_ıfreg** bit ayarlanmışsa *yolu* sıradan bir dosya ya da bir cihaz belirtir. Kullanıcı okuma/yazma BITS dosyanın izin Modu'nda göre ayarlanır; Kullanıcı yürütme BITS dosya adı uzantısına göre ayarlanır. |
+| **st_mtime** | Dosyanın son değiştirilme saati. |
+| **st_nlink** | Her zaman 1 NTFS dışı dosya sistemlerine. |
+| **st_rdev** | Dosyayı içeren disk sayısı sürücü (aynı **st_dev**). |
+| **st_size** | Dosyanın bayt cinsinden boyutunu; bir 64-bit tamsayı ile çeşitleri için **I64** soneki. |
+| **st_uid** | Sayısal dosyasına (UNIX özgü) sahip kullanıcı tanımlayıcısı. Bu alan, her zaman Windows sistemlerinde sıfır olur. Yeniden yönlendirilen bir dosya, bir Windows dosya olarak sınıflandırılır. |
 
 Varsa *yolu* bir cihaza başvuran **st_size**, çeşitli saat alanları **st_dev**, ve **st_rdev** alanlarını **_stat**  yapısı anlamsız. Çünkü STAT. H kullandığı [_dev_t](../../c-runtime-library/standard-types.md) türü içinde tanımlanmış TÜRLERİ. H TÜRLERİ eklemeniz gerekir. STAT önce H. Kodunuzda H.
 

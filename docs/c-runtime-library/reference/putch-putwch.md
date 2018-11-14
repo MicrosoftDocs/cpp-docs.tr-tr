@@ -29,12 +29,12 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-ms.openlocfilehash: 9abd27a926e641e72595360ed3951fad9e888676
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da45744fe56c198cc97228cae8043abbb5436fbd
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434768"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326998"
 ---
 # <a name="putch-putwch"></a>_putch, _putwch
 
@@ -47,10 +47,11 @@ Konsola bir karakter yazar.
 
 ```C
 int _putch(
-int c
+   int c
 );
+
 wint_t _putwch(
-   wchar_t c
+   wchar_t c
 );
 ```
 

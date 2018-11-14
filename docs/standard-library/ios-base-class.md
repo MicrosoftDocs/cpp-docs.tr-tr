@@ -108,12 +108,12 @@ helpviewer_keywords:
 - std::ios_base [C++], width
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
-ms.openlocfilehash: 3c9b1081a7e2ccd45c64c1cbcd833dcda9470f7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8911c3763e6a0c861c162611e1b2617ec26f0cf9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648675"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333364"
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 
@@ -914,7 +914,7 @@ Devre dışı bırakmak için bayrak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi etkili bir şekilde çağıran [bayrakları](#flags)(_ *maskesi* &#124; \_ *bayrakları*) (Seçili bit ayarlanır) ve ardından önceki biçim bayrakları döndürür. İkinci üye işlevi etkili bir şekilde çağıran **bayrakları**(\_ *maskesi* **& fmtfl, bayrakları & ~**`_Mask`) (Seçili bit maskesi altındaki değiştirme) ve ardından önceki biçim bayrakları döndürür.
+İlk üye işlevi etkili bir şekilde çağıran [bayrakları](#flags)(  *\_maskesi* &#124;  *\_bayrakları*) (Seçili bit ayarlanır) ve ardından döndürür Önceki biçim bayrakları. İkinci üye işlevi etkili bir şekilde çağıran `flags(_Mask & fmtfl, flags & ~_Mask)` (Seçili bit maskesi altında değiştirin) ve ardından önceki biçim bayrakları döndürür.
 
 ### <a name="example"></a>Örnek
 

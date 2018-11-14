@@ -6,12 +6,12 @@ helpviewer_keywords:
 - notifications, support in providers
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-ms.openlocfilehash: 39e0fffa10af560537a932d503946ec2469bef5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04db02bc8ad4db0c669e07a0bcf1b60ffa22e8ad
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570592"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521407"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
@@ -40,7 +40,7 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
 
 1. Satır kümesi sınıfınızda devralınacak `IRowsetChangeImpl` veya `IRowsetUpdateImpl`. Bu sınıflar, veri depolama alanı değiştirmek için uygun arabirimleri sağlar:
 
-     **IRowsetChange ekleme**
+   **IRowsetChange ekleme**
 
    Ekleme `IRowsetChangeImpl` bu formu kullanarak, devralma zincirini için:
 
@@ -50,7 +50,7 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
 
    Ayrıca `COM_INTERFACE_ENTRY(IRowsetChange)` için `BEGIN_COM_MAP` satır kümesi sınıfınıza bölümünde.
 
-     **IRowsetUpdate ekleme**
+   **IRowsetUpdate ekleme**
 
    Ekleme `IRowsetUpdate` bu formu kullanarak, devralma zincirini için:
 
@@ -58,22 +58,27 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
     IRowsetUpdateImpl< rowset-name, storage>
     ```
 
-    > [!NOTE]
-    > Kaldırmalısınız `IRowsetChangeImpl` , devralma zincirini satırından. Bu daha önce bahsedilen yönergesi bir durum kodunu içermelidir `IRowsetChangeImpl`.
+   > [!NOTE]
+   > Kaldırmalısınız `IRowsetChangeImpl` , devralma zincirini satırından. Bu daha önce bahsedilen yönergesi bir durum kodunu içermelidir `IRowsetChangeImpl`.
 
 1. COM haritanıza aşağıdakileri ekleyin (`BEGIN_COM_MAP ... END_COM_MAP`):
 
-    |Uygularsanız|COM Eşlemesi Ekle|
-    |----------------------|--------------------|
-    |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|
-    |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)COM_INTERFACE_ENTRY(IRowsetUpdate)`|
+   |  Uygularsanız   |           COM Eşlemesi Ekle             |
+   |---------------------|--------------------------------------|
+   | `IRowsetChangeImpl` | `COM_INTERFACE_ENTRY(IRowsetChange)` |
+   | `IRowsetUpdateImpl` | `COM_INTERFACE_ENTRY(IRowsetUpdate)` |
+
+   | Uygularsanız | Özellik kümesi haritasına Ekle |
+   |----------------------|-----------------------------|
+   | `IRowsetChangeImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)` |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. Özellik kümesi haritanıza komutunuza ekleyin (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):
 
-    |Uygularsanız|Özellik kümesi haritasına Ekle|
-    |----------------------|-----------------------------|
-    |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|
-    |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|
+   |  Uygularsanız   |                                             Özellik kümesi haritasına Ekle                                              |
+   |---------------------|------------------------------------------------------------------------------------------------------------------|
+   | `IRowsetChangeImpl` |                            `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`                             |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. Bunlar aşağıda görüldüğü gibi özellik kümesi eşlemesi, ayrıca tüm aşağıdaki ayarlardan birini içermelidir:
 
@@ -97,41 +102,41 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
 
    Özellik kimlikleri ve değerleri için Atldb.h bakarak bu makro çağrılarında kullanılan değerleri bulabilirsiniz (Atldb.h çevrimiçi belgelerinden farklıysa, Atldb.h belgeleri yerini alır).
 
-    > [!NOTE]
-    > Çoğu `VARIANT_FALSE` ve `VARIANT_TRUE` ayarları, OLE DB Şablonları tarafından gereklidir; OLE DB belirtimi okuma/yazma olabilirler, ancak OLE DB Şablonları, yalnızca bir değer destekleyebilir söyler.
+   > [!NOTE]
+   > Çoğu `VARIANT_FALSE` ve `VARIANT_TRUE` ayarları, OLE DB Şablonları tarafından gereklidir; OLE DB belirtimi okuma/yazma olabilirler, ancak OLE DB Şablonları, yalnızca bir değer destekleyebilir söyler.
 
-     **IRowsetChangeImpl uygularsanız**
+   **IRowsetChangeImpl uygularsanız**
 
    Uygularsanız `IRowsetChangeImpl`, sağlayıcınız üzerinde aşağıdaki özellikleri ayarlayın. Bu özellikler öncelikle arabirimleri aracılığıyla istemek için kullanılan `ICommandProperties::SetProperties`.
 
-    - `DBPROP_IRowsetChange`: Bu otomatik olarak kümelerini ayarlama `DBPROP_IRowsetChange`.
+   - `DBPROP_IRowsetChange`: Bu otomatik olarak kümelerini ayarlama `DBPROP_IRowsetChange`.
 
-    - `DBPROP_UPDATABILITY`: Desteklenen yöntemlerden belirtme bir bit maskesi `IRowsetChange`: `SetData`, `DeleteRows`, veya `InsertRow`.
+   - `DBPROP_UPDATABILITY`: Desteklenen yöntemlerden belirtme bir bit maskesi `IRowsetChange`: `SetData`, `DeleteRows`, veya `InsertRow`.
 
-    - `DBPROP_CHANGEINSERTEDROWS`: Tüketici çağırabilir `IRowsetChange::DeleteRows` veya `SetData` yeni eklenen satırlar için.
+   - `DBPROP_CHANGEINSERTEDROWS`: Tüketici çağırabilir `IRowsetChange::DeleteRows` veya `SetData` yeni eklenen satırlar için.
 
-    - `DBPROP_IMMOBILEROWS`: Satır kümesi, eklenen veya güncelleştirilen satır düzenlemez.
+   - `DBPROP_IMMOBILEROWS`: Satır kümesi, eklenen veya güncelleştirilen satır düzenlemez.
 
-     **IRowsetUpdateImpl uygularsanız**
+   **IRowsetUpdateImpl uygularsanız**
 
    Uygularsanız `IRowsetUpdateImpl`, aşağıdaki özellikleri sağlayıcınız üzerinde ayrıca tüm özelliklerini ayarlamak ayarlamanız gerekir `IRowsetChangeImpl` daha önce listelenen:
 
-    - `DBPROP_IRowsetUpdate`.
+   - `DBPROP_IRowsetUpdate`.
 
-    - `DBPROP_OWNINSERT`: READ_ONLY ve VARIANT_TRUE olması gerekir.
+   - `DBPROP_OWNINSERT`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
-    - `DBPROP_OWNUPDATEDELETE`: READ_ONLY ve VARIANT_TRUE olması gerekir.
+   - `DBPROP_OWNUPDATEDELETE`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
-    - `DBPROP_OTHERINSERT`: READ_ONLY ve VARIANT_TRUE olması gerekir.
+   - `DBPROP_OTHERINSERT`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
-    - `DBPROP_OTHERUPDATEDELETE`: READ_ONLY ve VARIANT_TRUE olması gerekir.
+   - `DBPROP_OTHERUPDATEDELETE`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
-    - `DBPROP_REMOVEDELETED`: READ_ONLY ve VARIANT_TRUE olması gerekir.
+   - `DBPROP_REMOVEDELETED`: READ_ONLY ve VARIANT_TRUE olması gerekir.
 
-    - `DBPROP_MAXPENDINGROWS`.
+   - `DBPROP_MAXPENDINGROWS`.
 
-        > [!NOTE]
-        > Bildirimleri destekliyorsa, bazı diğer özellikleri de da olabilir; bölümüne `IRowsetNotifyCP` bu listesi.
+   > [!NOTE]
+   > Bildirimleri destekliyorsa, bazı diğer özellikleri de da olabilir; bölümüne `IRowsetNotifyCP` bu listesi.
 
 ##  <a name="vchowwritingtothedatasource"></a> Veri kaynağına yazma
 

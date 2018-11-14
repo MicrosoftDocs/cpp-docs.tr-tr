@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rep movsw instruction
 - __movsw intrinsic
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-ms.openlocfilehash: 4bb8a6411c3700b3338fb7d5bc76884f84bb2413
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be80a7f50a62146ffcd6d271def6d254da5a88b2
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453627"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329871"
 ---
 # <a name="movsw"></a>__movsw
 
@@ -24,10 +24,10 @@ Taşıma bir dize oluşturur (`rep movsw`) yönerge.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __movsw( 
-   unsigned short* Dest, 
-   unsigned short* Source, 
-   size_t Count 
+void __movsw(
+   unsigned short* Dest,
+   unsigned short* Source,
+   size_t Count
 );
 ```
 

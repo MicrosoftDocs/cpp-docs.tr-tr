@@ -16,12 +16,12 @@ helpviewer_keywords:
 - __addgsdword intrinsic
 - __addgsbyte intrinsic
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
-ms.openlocfilehash: 2439e541332705ec5330a7ee6e703c99712f7e8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76d511b387ce52a6c5127b1e2b1f6051565f4cc6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667616"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331431"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 
@@ -32,21 +32,21 @@ Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir de
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __addgsbyte( 
-   unsigned long Offset, 
-   unsigned char Data 
+void __addgsbyte(
+   unsigned long Offset,
+   unsigned char Data
 );
-void __addgsword( 
-   unsigned long Offset, 
-   unsigned short Data 
+void __addgsword(
+   unsigned long Offset,
+   unsigned short Data
 );
-void __addgsdword( 
-   unsigned long Offset, 
-   unsigned long Data 
+void __addgsdword(
+   unsigned long Offset,
+   unsigned long Data
 );
-void __addgsqword( 
-   unsigned long Offset, 
-   unsigned __int64 Data 
+void __addgsqword(
+   unsigned long Offset,
+   unsigned __int64 Data
 );
 ```
 

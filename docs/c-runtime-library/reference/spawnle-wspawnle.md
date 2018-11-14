@@ -31,12 +31,12 @@ helpviewer_keywords:
 - wspawnle function
 - _spawnle function
 ms.assetid: 80308892-2815-49b1-8cca-53894c366f5a
-ms.openlocfilehash: 7da0cf4f7232ad7b8b1c5edb1240ee67fdf393e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1caa949fab71a7ebc7731c91871e460869ca9f5b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632290"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329261"
 ---
 # <a name="spawnle-wspawnle"></a>_spawnle, _wspawnle
 
@@ -88,11 +88,11 @@ Dönüş değeri eş zamanlı **_spawnle** veya **_wspawnle** (**_p_waıt** içi
 
 |||
 |-|-|
-**E2BIG**|Bağımsız değişken listesi 1024 baytı aşıyor.
-**EINVAL**|*modu* bağımsız değişkeni geçersiz.
-**ENOENT**|Dosya veya yol bulunamadı.
-**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip.
-**ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok.
+| **E2BIG** | Bağımsız değişken listesi 1024 baytı aşıyor. |
+| **EINVAL** | *modu* bağımsız değişkeni geçersiz. |
+| **ENOENT** | Dosya veya yol bulunamadı. |
+| **ENOEXEC** | Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip. |
+| **ENOMEM** | Yeni işlemi yürütmek yeterli bellek yok. |
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

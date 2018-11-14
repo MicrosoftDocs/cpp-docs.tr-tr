@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _bstr_t method [C++]
 - _bstr_t class
 ms.assetid: 116d994e-5a72-4351-afbe-866c80b4c165
-ms.openlocfilehash: 70678b0be8b25bf3ee883630caa26598e5e31089
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44a301b8b2a1c53636c27be6f59f61aa0dcd46b1
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450082"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330677"
 ---
 # <a name="bstrtbstrt"></a>_bstr_t::_bstr_t
 
@@ -24,7 +24,7 @@ Oluşturur bir `_bstr_t` nesne.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-_bstr_t( ) throw( ); 
+_bstr_t( ) throw( );
 _bstr_t(
    const _bstr_t& s1
 ) throw( );

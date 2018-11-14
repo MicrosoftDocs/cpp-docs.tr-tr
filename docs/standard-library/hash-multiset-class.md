@@ -86,12 +86,12 @@ helpviewer_keywords:
 - stdext::hash_multiset::upper_bound
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
-ms.openlocfilehash: 31ea9e74dc00a511351614ab708949e05ab2c567
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b12c782ff7071987214acfe1ef8c52ca391b25ad
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636949"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333569"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 
@@ -555,7 +555,7 @@ Hash_multiset parametre tarafından belirtilen anahtara sahip öğeleri sayısı
 
 Üye işlevi, şu aralıktaki öğelerin sayısını döndürür:
 
-[ `lower_bound` (_ `Key` ), `upper_bound` (\_ `Key` ) ).
+\[ lower_bound (*anahtarı*), upper_bound (*anahtarı*)).
 
 ### <a name="example"></a>Örnek
 

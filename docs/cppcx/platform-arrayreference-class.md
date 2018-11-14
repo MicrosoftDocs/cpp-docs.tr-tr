@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-ms.openlocfilehash: 99c39077148b649bddb56070daad467880011e2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c297f033b78e1b7f9283f5becb9db974bb2b9ff
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641057"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522863"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference sınıfı
 
@@ -64,7 +64,6 @@ Yeni bir örneğini başlatır [Platform::ArrayReference](../cppcx/platform-arra
 ```cpp
 ArrayReference(TArg* ataArg, unsigned int sizeArg, bool needsInitArg = false);
 ArrayReference(ArrayReference&& otherArg)
-
 ```
 
 ### <a name="parameters"></a>Parametreler

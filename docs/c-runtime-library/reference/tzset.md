@@ -23,12 +23,12 @@ helpviewer_keywords:
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-ms.openlocfilehash: 33fd1cc0a618fccc4a59e5aff059d3f2cdeec8fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6312297e6daa9b4790674bd26d21812d5bee34c6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661766"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330261"
 ---
 # <a name="tzset"></a>_tzset
 
@@ -51,11 +51,11 @@ void _tzset( void );
 
 |Parametre|Açıklama|
 |-|-|
-*tzn*|Üç harfli saat dilim adı, PDT gibi. UTC yerel saatinden doğru sapmayı belirtmeniz gerekir.
-*hh*|UTC ve yerel saat arasındaki saat farkı. İşaretini (+) pozitif değerler için isteğe bağlıdır.
-*aa*|Dakika. Ayrılmıştır *hh* bir virgülle (**:**).
-*ss*|Saniye sayısı. Ayrılmıştır *mm* bir virgülle (**:**).
-*Dzn*|Üç harfli Yaz Saati dilimi, PDT gibi. Gün ışığından yararlanma hiçbir zaman yürürlükte yerleşim içinde değilse, **TZ** için bir değer olmadan *dzn*. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin (DST) hesaplanmasını uygulamak için ABD kurallarını varsayar.
+| *tzn* | Üç harfli saat dilim adı, PDT gibi. UTC yerel saatinden doğru sapmayı belirtmeniz gerekir. |
+| *hh* | UTC ve yerel saat arasındaki saat farkı. İşaretini (+) pozitif değerler için isteğe bağlıdır. |
+| *aa* | Dakika. Ayrılmıştır *hh* bir virgülle (**:**). |
+| *ss* | Saniye sayısı. Ayrılmıştır *mm* bir virgülle (**:**). |
+| *Dzn* | Üç harfli Yaz Saati dilimi, PDT gibi. Gün ışığından yararlanma hiçbir zaman yürürlükte yerleşim içinde değilse, **TZ** için bir değer olmadan *dzn*. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin (DST) hesaplanmasını uygulamak için ABD kurallarını varsayar. |
 
 > [!NOTE]
 > Al, saat farkının işaretini hesaplarken dikkatli olun. Zaman farkı yerel saat uzaklığı için UTC (tersi yerine) olduğundan, işareti beklediğinizin zıttı tersi olabilir. Utc'den saat dilimleri için saat farkı negatiftir; Bu gerisindekiler için fark pozitiftir.

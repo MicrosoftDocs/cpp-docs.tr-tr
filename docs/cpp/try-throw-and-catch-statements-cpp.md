@@ -19,12 +19,12 @@ helpviewer_keywords:
 - throwing exceptions [C++]
 - throw keyword [C++], throw() vs. throw(...)
 ms.assetid: 15e6a87b-b8a5-4032-a7ef-946c644ba12a
-ms.openlocfilehash: 81d954b2e757c692bd80604a3f85ffb8c79c4f85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a55c1f2d5c2e73028b337d17b74fe1280f670707
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455737"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326712"
 ---
 # <a name="try-throw-and-catch-statements-c"></a>try, throw ve catch Deyimleri (C++)
 
@@ -41,34 +41,34 @@ Bu örnek gösterir bir **deneyin** bloğunu ve ona ait işleyiciyi. Varsayımı
 ## <a name="example"></a>Örnek
 
 ```cpp
-MyData md;
-try {
-   // Code that could throw an exception
-   md = GetNetworkResource();
+MyData md;
+try {
+   // Code that could throw an exception
+   md = GetNetworkResource();
 }
-catch (const networkIOException& e) {
-   // Code that executes when an exception of type
-   // networkIOException is thrown in the try block
-   // ...
-   // Log error message in the exception object
-   cerr << e.what();
+catch (const networkIOException& e) {
+   // Code that executes when an exception of type
+   // networkIOException is thrown in the try block
+   // ...
+   // Log error message in the exception object
+   cerr << e.what();
 }
-catch (const myDataFormatException& e) {
-   // Code that handles another exception type
-   // ...
-   cerr << e.what();
+catch (const myDataFormatException& e) {
+   // Code that handles another exception type
+   // ...
+   cerr << e.what();
 }
 
 // The following syntax shows a throw expression
-MyData GetNetworkResource()
+MyData GetNetworkResource()
 {
-   // ...
-   if (IOSuccess == false)
-      throw networkIOException("Unable to connect");
-   // ...
-   if (readError)
-      throw myDataFormatException("Format error");
-   // ...
+   // ...
+   if (IOSuccess == false)
+      throw networkIOException("Unable to connect");
+   // ...
+   if (readError)
+      throw myDataFormatException("Format error");
+   // ...
 }
 ```
 
@@ -80,14 +80,14 @@ A **throw** işleneni olmayan bir ifade, işlenmekte olan özel durumu yeniden o
 
 ```cpp
 try {
-   throw CSomeOtherException();
+   throw CSomeOtherException();
 }
 catch(...) {
-   // Catch all exceptions - dangerous!!!
-   // Respond (perhaps only partially) to the exception, then
-   // re-throw to pass the exception to some other handler
-   // ...
-   throw;
+   // Catch all exceptions - dangerous!!!
+   // Respond (perhaps only partially) to the exception, then
+   // re-throw to pass the exception to some other handler
+   // ...
+   throw;
 }
 ```
 

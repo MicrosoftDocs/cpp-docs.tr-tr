@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: acb0eaa446bf21a014d8be8c4dbeaedf0f282a1a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b43db182d9274281020d7ce92cfa1b3efe724197
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648194"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326023"
 ---
 # <a name="unarynegate-class"></a>unary_negate Sınıfı
 
@@ -44,7 +44,7 @@ Birli işlevi negation.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir birli işlevi nesne _ kopyasını depoladığından *Func.* Onun üye işlevini tanımlar `operator()` döndüren olarak **!**\_ *FUNC(left).*
+Şablon sınıfı bir birli işlevi nesnesinin bir kopyasını depolar  *\_Func*. Onun üye işlevini tanımlar `operator()` döndüren olarak `!_Func(left)`.
 
 Oluşturucusuna `unary_negate` doğrudan nadiren kullanılır. Yardımcı işlevini [not1](../standard-library/functional-functions.md#not1) bildirme ve kullanma için daha kolay bir yol sağlayan **unary_negator** bağdaştırıcısı koşul.
 

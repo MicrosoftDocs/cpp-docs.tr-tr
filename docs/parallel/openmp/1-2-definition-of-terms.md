@@ -2,12 +2,12 @@
 title: 1.2 Terimlerin Tanımı
 ms.date: 11/04/2016
 ms.assetid: fcaa8eb8-bbbf-4a24-ad0e-e299c442db79
-ms.openlocfilehash: ac117a03f784e617e5db246f4bda28e350d2e7a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cd8bcc47a7fc9d1d0683c220ccd5ef1edac2b4e9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597216"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326036"
 ---
 # <a name="12-definition-of-terms"></a>1.2 Terimlerin Tanımı
 
@@ -63,7 +63,7 @@ Bu belgede aşağıdaki terimler kullanılır:
 
 - Yapısal bloğunun
 
-   Bir yapısal bloğunun tek bir giriş ve tek bir çıkış (tek veya bileşik) bir ifadedir. İçine veya dışına Sadeliği atlama ise herhangi bir deyimi bir yapısal bloğunun olur (çağrı dahil olmak üzere **longjmp**(3 C) veya kullanımını **throw**, ancak bir çağrı **çıkmak** izin verilir). Bileşik deyim, her zaman sol konumunda yürütülmeye yapısal bloğunun ise **{** ve kapatma sırasında her zaman sona eren **}**. Bir ifade deyimi, seçim deyimi, yineleme deyiminin veya **deneyin** bloğu yapısal bloğunun karşılık gelen bileşik deyim, kapsayan tarafından aldıysanız **{** ve **}** yapısal bloğunun olacaktır. Atlama deyimi, etiketli deyim veya bildirim deyimi bir yapısal bloğunun değil.
+   Bir yapısal bloğunun tek bir giriş ve tek bir çıkış (tek veya bileşik) bir ifadedir. İçine veya dışına Sadeliği atlama ise herhangi bir deyimi bir yapısal bloğunun olur (çağrı dahil olmak üzere **longjmp**(3 C) veya kullanımını **throw**, ancak bir çağrı **çıkmak** izin verilir). Bileşik deyim, her zaman sol konumunda yürütülmeye yapısal bloğunun ise **{** ve kapatma sırasında her zaman sona eren **}**. Bir ifade deyimi, seçim deyimi, yineleme deyiminin veya **deneyin** bloğu yapısal bloğunun karşılık gelen bileşik deyim, kapsayan tarafından aldıysanız **{** ve **}**  yapısal bloğunun olacaktır. Atlama deyimi, etiketli deyim veya bildirim deyimi bir yapısal bloğunun değil.
 
 - Takım
 

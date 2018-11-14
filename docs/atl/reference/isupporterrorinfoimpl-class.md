@@ -10,16 +10,16 @@ helpviewer_keywords:
 - ISupportErrorInfoImpl class
 - error information, ATL
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-ms.openlocfilehash: a4427a1190f145cc001a3288535df287326e97e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3227142d6ca31d0015411a3619281894eb5e419
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523298"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520055"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>Isupporterrorınfoımpl sınıfı
 
-Bu sınıfın bir varsayılan uygulamayı sağlar [ISupportErrorInfo arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
+Bu sınıfın bir varsayılan uygulamayı sağlar [ISupportErrorInfo arabirimi](/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.
 
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
@@ -35,7 +35,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 #### <a name="parameters"></a>Parametreler
 
 *piid*<br/>
-Laboratuvardaki destekleyen bir arabirim işaretçisi [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo).
+Laboratuvardaki destekleyen bir arabirim işaretçisi [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo).
 
 ## <a name="members"></a>Üyeler
 
@@ -43,11 +43,11 @@ Laboratuvardaki destekleyen bir arabirim işaretçisi [IErrorInfo](/previous-ver
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Arabirim tarafından tanımlanan olup olmadığını gösteren `riid` destekler [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi.|
+|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Arabirim tarafından tanımlanan olup olmadığını gösteren `riid` destekler [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[ISupportErrorInfo arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) hata bilgilerini istemciye döndürdüğünü sağlar. Nesneleri kullanan `IErrorInfo` uygulamalıdır `ISupportErrorInfo`.
+[ISupportErrorInfo arabirimi](/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) hata bilgilerini istemciye döndürdüğünü sağlar. Nesneleri kullanan `IErrorInfo` uygulamalıdır `ISupportErrorInfo`.
 
 Sınıf `ISupportErrorInfoImpl` bir varsayılan uygulamayı sağlar `ISupportErrorInfo` ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir. Örneğin:
 
@@ -65,7 +65,7 @@ Sınıf `ISupportErrorInfoImpl` bir varsayılan uygulamayı sağlar `ISupportErr
 
 ##  <a name="interfacesupportserrorinfo"></a>  ISupportErrorInfoImpl::InterfaceSupportsErrorInfo
 
-Arabirim tarafından tanımlanan olup olmadığını gösteren `riid` destekler [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi.
+Arabirim tarafından tanımlanan olup olmadığını gösteren `riid` destekler [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi.
 
 ```
 STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
@@ -73,7 +73,7 @@ STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ISupportErrorInfo::InterfaceSupportsErrorInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) Windows SDK içinde.
+Bkz: [ISupportErrorInfo::InterfaceSupportsErrorInfo](/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) Windows SDK içinde.
 
 ##  <a name="getsize"></a>  IThreadPoolConfig::GetSize
 

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-ms.openlocfilehash: 0ede14d56dc093b83078bf28eb01f5b5c55d8949
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 109a1d93692d0c65269b40fd0559381907ce1cab
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545931"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326569"
 ---
 # <a name="createlocale-wcreatelocale"></a>_create_locale, _wcreate_locale
 
@@ -70,16 +70,16 @@ Geçerli bir *yerel* ve *kategori* olarak belirtilen yerel ayarlar döndürür, 
 
 **_wcreate_locale** geniş karakterli sürümüdür **_create_locale**; *yerel* bağımsız değişkeni **_wcreate_locale** geniş karakterli bir dizedir. **_wcreate_locale** ve **_create_locale** aynı şekilde davranır.
 
-*Kategori* bağımsız değişkeni, yerel ayara özgü davranışın etkilenen kısımlarını belirtir. İçin kullanılan bayraklar *kategori* ve aşağıdaki tabloda gösterildiği gibi etkiledikleri program bölümleri şunlardır.
+*Kategori* bağımsız değişkeni, yerel ayara özgü davranışın etkilenen kısımlarını belirtir. İçin kullanılan bayraklar *kategori* ve bu tabloda gösterildiği gibi etkiledikleri program bölümleri şunlardır:
 
-|*Kategori* bayrağı|Etkiler|
-|-|-|
-**LC_ALL**|Aşağıda listelenen tüm kategoriler.
-**LC_COLLATE**|**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_ strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, ve **wcsxfrm** işlevleri.
-**LC_CTYPE**|Karakter işleme işlevleri (dışında **isdigit**, **isxdigit**, **mbstowcs**, ve **mbtowc**, Etkilenmeyen).
-**LC_MONETARY**|Tarafından döndürülen para biçimli bilgiler **localeconv** işlevi.
-**LC_NUMERIC**|Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (gibi **printf**), veri dönüştürme rutinleri için ve tarafından döndürülen Parasal olmayan biçimlendirme bilgileri için **localeconv**. Ondalık ayırıcı karakterinin yanı sıra **lc_numerıc** tarafından döndürülen dize denetim kümeleri binlik ayırıcı ve gruplandırma [localeconv](localeconv.md).
-**LC_TIME**|**Strftime** ve **wcsftime** işlevleri.
+| *Kategori* bayrağı | Etkiler |
+|-----------------|---------|
+| **LC_ALL** |Aşağıda listelenen tüm kategoriler. |
+| **LC_COLLATE** |**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_ strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, ve **wcsxfrm** işlevleri. |
+| **LC_CTYPE** | Karakter işleme işlevleri (dışında **isdigit**, **isxdigit**, **mbstowcs**, ve **mbtowc**, Etkilenmeyen). |
+| **LC_MONETARY** | Tarafından döndürülen para biçimli bilgiler **localeconv** işlevi. |
+| **LC_NUMERIC** | Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (gibi **printf**), veri dönüştürme rutinleri için ve tarafından döndürülen Parasal olmayan biçimlendirme bilgileri için **localeconv**. Ondalık ayırıcı karakterinin yanı sıra **lc_numerıc** tarafından döndürülen dize denetim kümeleri binlik ayırıcı ve gruplandırma [localeconv](localeconv.md). |
+| **LC_TIME** | **Strftime** ve **wcsftime** işlevleri. |
 
 Bu işlev doğrular *kategori* ve *yerel ayar* parametreleri. Kategori parametresi önceki tabloda verilen değerlerden biri değilse veya *yerel* olduğu **NULL**, işlev döndürür **NULL**.
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /CLRHEADER dumpbin option
 - CLRHEADER dumpbin option
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a
-ms.openlocfilehash: 864ecc0063716ce712e28b063714ce7c17fc294a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e35cf79cdaa10c9632e1c588e2b49f45cfbef283
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627376"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330859"
 ---
 # <a name="clrheader"></a>/CLRHEADER
 
@@ -25,9 +25,8 @@ CLR özel bilgileri görüntüler.
 
 ### <a name="arguments"></a>Arguments
 
-|||
-|-|-|
-*Dosya*| Bir resim dosyası ile oluşturulmuş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
+*Dosya*<br/>
+Bir resim dosyası ile oluşturulmuş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## <a name="remarks"></a>Açıklamalar
 

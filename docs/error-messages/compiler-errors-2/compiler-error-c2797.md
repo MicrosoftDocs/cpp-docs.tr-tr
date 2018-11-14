@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2797
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
-ms.openlocfilehash: 8ae8c4b8755e6f9c89c0706b0644f220761bd9c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04a7b2b1d33ab7efa77563406ab3c12831cf80fc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616248"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518313"
 ---
 # <a name="compiler-error-c2797"></a>Derleyici Hatası C2797
 
@@ -29,7 +29,6 @@ struct S {
     std::vector<int> v1;
     std::vector<int> v2{1, 2}; // C2797, VS2013 RTM incorrectly calls 'vector(size_type, const int &)'
 };
-
 ```
 
 Bu örnek ayrıca C2797 oluşturur:
@@ -44,7 +43,6 @@ struct S2 {
     S1 s1;
     S1 s2{0}; // C2797, VS2013 RTM interprets as S1 s2 = S1(0); causing C2664
 };
-
 ```
 
 Bu sorunu gidermek için açık yapımı iç listeleri kullanabilirsiniz. Örneğin:
@@ -58,7 +56,6 @@ struct S {
     Vector v1;
     Vector v2 = Vector{1, 2};
 };
-
 ```
 
 Liste başlatma gerekmiyorsa:
@@ -70,7 +67,6 @@ struct S {
     std::string s1;
     std::string s2 = std::string("");
 };
-
 ```
 
 (Visual Studio 2013'teki derleyici bu örtülü olarak önce Visual Studio 2013 güncelleştirme 3 desteklemez.)

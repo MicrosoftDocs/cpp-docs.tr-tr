@@ -20,12 +20,12 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-ms.openlocfilehash: 6b0c0f018d5d66ea62b29b971e5390751a69e3c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55d22951c4203c582f7823fef033a0476f8c9a52
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631809"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326932"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 
@@ -33,27 +33,26 @@ ms.locfileid: "50631809"
 
 Aşağıdaki söz dizimini açıklar **try-finally** deyimi:
 
-```cpp
-__try {
-   // guarded code
-}
-__finally {
-   // termination code
-}
-```
+> **\_\_deneyin**<br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;Korumalı kod<br/>
+> }<br/>
+> **\_\_Son olarak**<br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;sonlandırma kodu<br/>
+> }<br/>
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*try-finally deyimi*: **__try** *bileşik deyim*
-
-**__finally** *bileşik deyim*
+*try-finally deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\_\_deneyin** *compound-statement*  **\_ \_son** *bileşik deyim*
 
 **Try-finally** hedef uygulamaların kod bloğunun yürütülmesi kesintiye uğradığında temizleme kodu yürütme garanti sağlayan bir Microsoft uzantısı C ve C++ dilleri için bir ifadedir. Temizleme gibi görevleri belleğini, dosyaları kapatma ve dosya tanıtıcıları bırakarak oluşur. **Try-finally** sahip olduğu bir onay yapılır neden olabilecek bir hata için erken çeşitli yerlerde yordamlarını yordamından döndürmek için deyimi özellikle yararlıdır.
 
 İlgili bilgiler ve bir kod örneği için bkz: [deneyin-except deyimi](../cpp/try-except-statement.md). Yapılandırılmış özel durum işleme genel hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). Yönetilen uygulamaların özel durumları işleme hakkında daha fazla bilgi için bkz: [/CLR altında özel durum işleme](../windows/exception-handling-cpp-component-extensions.md).
 
 > [!NOTE]
->  Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için C++ özel durum işleme mekanizmasını kullanmanız önerilir ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimleri).
+> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için C++ özel durum işleme mekanizmasını kullanmanız önerilir ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimleri).
 
 Sonra gelen bileşik deyim **__try** yan tümcesi ise korunan bölümün. Sonra gelen bileşik deyim **__finally** yan tümcesi ise sonlandırma işleyicisi. İşleyici, bir dizi korunan bölümün bir özel durum (olağan dışı sonlandırma) veya standart fall (normal sonlandırması) aracılığıyla çıkıldı bağımsız olarak korunan bölümün çıkılıncaya olduğunda yürütülen bir eylemi belirtir.
 
@@ -72,7 +71,7 @@ Bir özel durum oluşursa **__try** blok, işletim sistemi için özel bir işle
 ![Sonlandırma sırası&#45;işleyici yürütme](../cpp/media/vc38cx1.gif "vc38CX1") sonlandırma işleyicisi yürütme sırası
 
 > [!NOTE]
->  Try-finally davranışını kullanımını destekleyen bazı diğer dillerden farklı **son**, C# gibi.  Tek bir **__try** ya da, her ikisi birden biri olabilir **__finally** ve **__except**.  Her ikisi de birlikte kullanılmak üzere olduğunda, bir dış deneyin-dışında deyimi iç try-finally deyimi almalısınız.  Her blok yürütüldüğünde belirten kuralları da farklıdır.
+> Try-finally davranışını kullanımını destekleyen bazı diğer dillerden farklı **son**, C# gibi.  Tek bir **__try** ya da, her ikisi birden biri olabilir **__finally** ve **__except**.  Her ikisi de birlikte kullanılmak üzere olduğunda, bir dış deneyin-dışında deyimi iç try-finally deyimi almalısınız.  Her blok yürütüldüğünde belirten kuralları da farklıdır.
 
 Önceki sürümlerle uyumluluk için **_try**, **_finally**, ve **_leave** için eş anlamlı sözcükler olan **__try**, **__ Son olarak**, ve **__leave** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 

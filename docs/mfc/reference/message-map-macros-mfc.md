@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 8d4caca4d5a0b5c12b0af5a948b17b7e2ad05221
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4012f1f0729ff0f46a8504c44f27a37cd55c77e5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474275"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327453"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -250,27 +250,8 @@ Komut için eşlenmiş ileti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genişletilmiş bir form komut ileti işleyicileri, İleri düzey kullanıcılar için kullanılabilir. ON_COMMAND_EX makrosu gibi ileti işleyicileri için kullanılır ve bir işlevselliğin [ON_COMMAND] (#on_command) sağlar.  Genişletilmiş komut işleyici üye işlevleri, tek bir parametre, komut Kimliğini içeren bir UINT ve BOOL döndürür. Dönüş değeri true olmalıdır
-
-Bu makro, bir genişletilmiş komut işleyici üye işlevi için bir komut iletisi eşler.
-
-### <a name="syntax"></a>Sözdizimi
-
-```
-ON_COMMAND_EX(id,  memberFxn);
-```
-
-### <a name="parameters"></a>Parametreler
-
-*id*<br/>
-Komut kimliği.
-
-*memberFxn*<br/>
-Komut için eşlenmiş ileti işleyici işlevinin adı.
-
-### <a name="remarks"></a>Açıklamalar
-
 Genişletilmiş bir form komut ileti işleyicileri, İleri düzey kullanıcılar için kullanılabilir. ON_COMMAND_EX makrosu gibi ileti işleyicileri için kullanılır ve bir alt kümesi sağlayan [ON_COMMAND](message-map-macros-mfc.md#on_command) işlevselliği. Genişletilmiş komut işleyici üye işlevleri, tek bir parametre, komut Kimliğini içeren bir UINT ve BOOL döndürür. Dönüş değeri komut işlendiğini göstermek için TRUE olmalıdır; Aksi takdirde yönlendirme diğer komut hedef nesnelere devam eder.
+
 Daha fazla bilgi için bkz. Teknik Not [TN006: ileti eşlemeleri] tm006 ileti maps.md).
 
 ### <a name="requirements"></a>Gereksinimler

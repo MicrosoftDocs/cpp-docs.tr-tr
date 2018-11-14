@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: 587168323b8af63d232b8df63e9dcac2f4601433
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0c8e0c1f4dc2e1082d5df230c74efafcae24f29
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620954"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327128"
 ---
 # <a name="autoptr-class"></a>auto_ptr Sınıfı
 
@@ -282,11 +282,11 @@ Bir nesne türü `auto_ptr`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türü bir nesneye başvuru `auto_ptr` \< **türü**>.
+Türü bir nesneye başvuru `auto_ptr<Type>`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atama ifadesini değerlendirir `delete myptr`, ancak yalnızca depolanmış bir işaretçiyle `myptr` değişikliklerin bir atamanın sonucu. Ardından depolanan _ işaretçi sahipliğini aktarır *sağ*, depolayarak \_ *sağ*. [Yayın](#release) içinde `myptr`. İşlev döndürür  **\*bu**.
+Atama ifadesini değerlendirir `delete myptr`, ancak yalnızca depolanmış bir işaretçiyle `myptr` değişikliklerin bir atamanın sonucu. Ardından depolanan işaretçi sahipliğini aktarır *doğru*, depolayarak *doğru*.[ Yayın](#release) içinde `myptr`. İşlev döndürür  __\*bu__.
 
 ### <a name="example"></a>Örnek
 

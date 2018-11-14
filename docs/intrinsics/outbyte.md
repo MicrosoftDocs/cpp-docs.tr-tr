@@ -7,12 +7,12 @@ helpviewer_keywords:
 - out instruction
 - __outbyte intrinsic
 ms.assetid: c4cd1a34-8a02-4e37-993d-3201bc17901a
-ms.openlocfilehash: 8695fafb25be730ebe84828527d0689211c7801b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa17e4859e861a9be46b4ad32b7ad090f6c3dbc6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479032"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326556"
 ---
 # <a name="outbyte"></a>__outbyte
 
@@ -23,9 +23,9 @@ Oluşturur `out` 1 tarafından belirtilen bayt gönderen yönerge `Data` çıkı
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outbyte( 
-   unsigned short Port, 
-   unsigned char Data 
+void __outbyte(
+   unsigned short Port,
+   unsigned char Data
 );
 ```
 

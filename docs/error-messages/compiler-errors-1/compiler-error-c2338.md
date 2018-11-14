@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2338
 ms.assetid: 49bba575-1de4-4963-86c6-ce3226a2ba51
-ms.openlocfilehash: 4ca3feb2a71efa60229afdbf918109a5d5d59cad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a76ecaf78b117b0c1acabd9fcd50c9ae0f73b98
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539600"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332068"
 ---
 # <a name="compiler-error-c2338"></a>Derleyici Hatası C2338
 
@@ -21,11 +21,11 @@ Bu hataya neden olabilir bir `static_assert` derleme sırasında hata oluştu. �
 
 Bu hata iletisi, dış sağlayıcıları için derleyici tarafından da oluşturulabilir. Çoğu durumda, bu hata, bir öznitelik sağlayıcısı ATLPROV gibi DLL tarafından raporlanır. Bu iletinin bazı ortak biçimleri şunlardır:
 
-> '*özniteliği*' Atl özniteliği sağlayıcısı: hata ATL*numarası* *iletisi*
+- '*özniteliği*' Atl özniteliği sağlayıcısı: hata ATL*numarası* *iletisi*
 
-> Öznitelik yanlış kullanımı '*özniteliği*'
+- Öznitelik yanlış kullanımı '*özniteliği*'
 
-> '*kullanım*': 'kullanımı' özniteliği için yanlış biçim
+- '*kullanım*': 'kullanımı' özniteliği için yanlış biçim
 
 Bu hatalar genellikle kurtarılamaz olarak kabul edilir ve önemli bir derleyici hatası tarafından izlenebilir.
 

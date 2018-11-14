@@ -20,16 +20,16 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: 528b46f1b370f8679b86e3d734712f936a153b9c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b37105cf1afdcf966176a2e2615f9c141022088d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625006"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520524"
 ---
 # <a name="colevariant-class"></a>COleVariant sınıfı
 
-Kapsülleyen [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) veri türü.
+Kapsülleyen [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) veri türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,14 +68,14 @@ class COleVariant : public tagVARIANT
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu veri türü OLE Otomasyonu nesnesi etkin kullanılır. Özellikle, [DISPPARAMS](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagdispparams) yapısı, bir dizi değişken yapıları işaretçi içerir. A `DISPPARAMS` yapısı için parametreleri geçirmek için kullanılan [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
+Bu veri türü OLE Otomasyonu nesnesi etkin kullanılır. Özellikle, [DISPPARAMS](/windows/desktop/api/oaidl/ns-oaidl-tagdispparams) yapısı, bir dizi değişken yapıları işaretçi içerir. A `DISPPARAMS` yapısı için parametreleri geçirmek için kullanılan [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
 
 > [!NOTE]
 > Bu sınıf türetilir `VARIANT` yapısı. Bu, geçirebilirsiniz anlamına gelir. bir `COleVariant` için çağıran bir parametreye bir `VARIANT` ve veri üyeleri `VARIANT` yapısı erişilebilir veri üyeleri olan `COleVariant`.
 
 İki ilgili MFC sınıfları [COleCurrency](../../mfc/reference/colecurrency-class.md) ve [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) değişken veri türleri para birimi kapsülle ( `VT_CY`) ve tarih ( `VT_DATE`). `COleVariant` Sınıfı DAO sınıfları yaygın olarak kullanılır; örneğin tipik kullanım için bu sınıflar bu sınıfın bkz [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
 
-Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy), [DISPPARAMS](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagdispparams), ve [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK'sı girdileri.
+Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy), [DISPPARAMS](/windows/desktop/api/oaidl/ns-oaidl-tagdispparams), ve [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK'sı girdileri.
 
 Daha fazla bilgi için `COleVariant` sınıfı ve OLE Otomasyonu, kullanım "Geçirme parametreleri olarak OLE Otomasyonu" makalesine bakın [Otomasyon](../../mfc/automation.md).
 
@@ -91,7 +91,7 @@ Daha fazla bilgi için `COleVariant` sınıfı ve OLE Otomasyonu, kullanım "Ge�
 
 ##  <a name="attach"></a>  COleVariant::Attach
 
-Eklemek için bu işlevi çağırın verilen [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) geçerli nesneye `COleVariant` nesne.
+Eklemek için bu işlevi çağırın verilen [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) geçerli nesneye `COleVariant` nesne.
 
 ```
 void Attach(VARIANT& varSrc);
@@ -106,7 +106,7 @@ Mevcut bir `VARIANT` geçerli eklenecek nesne `COleVariant` nesne.
 
 Bu işlev, VARTYPE ayarlar *varSrc* VT_EMPTY için.
 
-Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) ve [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK'sı girdileri.
+Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) ve [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK'sı girdileri.
 
 ##  <a name="colevariant"></a>  COleVariant::COleVariant
 
@@ -222,11 +222,11 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 Bu VARTYPE `COleVariant` nesne.
 
 *pSrc*<br/>
-Bir işaretçi [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) dönüştürülecek nesne. Bu değer NULL ise bu `COleVariant` nesnesi dönüştürme için kaynak olarak kullanılır.
+Bir işaretçi [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) dönüştürülecek nesne. Bu değer NULL ise bu `COleVariant` nesnesi dönüştürme için kaynak olarak kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), ve [VariantChangeType](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantchangetype) Windows SDK'sı girdileri.
+Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), ve [VariantChangeType](/windows/desktop/api/oleauto/nf-oleauto-variantchangetype) Windows SDK'sı girdileri.
 
 ##  <a name="clear"></a>  COleVariant::Clear
 
@@ -244,7 +244,7 @@ Daha fazla bilgi için `VARIANT`, VARTYPE, ve `VariantClear` Windows SDK'sı gir
 
 ##  <a name="detach"></a>  COleVariant::Detach
 
-Arka plandaki ayırır [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) bu nesneden `COleVariant` nesne.
+Arka plandaki ayırır [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) bu nesneden `COleVariant` nesne.
 
 ```
 VARIANT Detach();
@@ -257,7 +257,7 @@ Bu işlev VARTYPE bu ayarlar `COleVariant` VT_EMPTY nesnesine.
 > [!NOTE]
 >  Arama sonra `Detach`, bu çağrı çağıranın sorumluluğundadır `VariantClear` sonuç üzerinde `VARIANT` yapısı.
 
-Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), ve [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) Windows SDK'sı girdileri.
+Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), ve [VariantClear](/windows/desktop/api/oleauto/nf-oleauto-variantclear) Windows SDK'sı girdileri.
 
 ##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray
 
@@ -344,7 +344,7 @@ Her işleç kısa bir açıklaması aşağıdaki gibidir:
 
 - **operator = (** *lbSrc* **)** kopya bir [CLongBinary](../../mfc/reference/clongbinary-class.md) bu nesnede `COleVariant` nesne.
 
-Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) ve [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK'sı girdileri.
+Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) ve [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK'sı girdileri.
 
 ##  <a name="operator_eq_eq"></a>  COleVariant::operator ==
 

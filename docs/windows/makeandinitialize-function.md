@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAndInitialize
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
-ms.openlocfilehash: 61c923675aa7b5653aacb9ba2c51dec6105498a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4dbcd208acb52522c24f1cc442e2cc1908b51502
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448627"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332289"
 ---
 # <a name="makeandinitialize-function"></a>MakeAndInitialize İşlevi
 
@@ -19,16 +19,29 @@ Belirtilen Windows çalışma zamanı sınıf başlatır. Aynı modülde tanıml
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <typename T, typename I,
-typename TArg1,
-typename TArg2,
-typename TArg3,
-typename TArg4,
-typename TArg5,
-typename TArg6,
-typename TArg7,
-typename TArg8,
-typename TArg9> HRESULT MakeAndInitialize(_Outptr_result_nullonfailure_ I** ppvObject, TArg1 &&arg1, TArg2 &&arg2, TArg3 &&arg3, TArg4 &&arg4, TArg5 &&arg5, TArg6 &&arg6, TArg7 &&arg7, TArg8 &&arg8, TArg9 &&arg9) throw()
+template <
+    typename T,
+    typename I,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4,
+    typename TArg5,
+    typename TArg6,
+    typename TArg7,
+    typename TArg8,
+    typename TArg9>
+HRESULT MakeAndInitialize(
+    _Outptr_result_nullonfailure_ I** ppvObject,
+    TArg1 &&arg1,
+    TArg2 &&arg2,
+    TArg3 &&arg3,
+    TArg4 &&arg4,
+    TArg5 &&arg5,
+    TArg6 &&arg6,
+    TArg7 &&arg7,
+    TArg8 &&arg8,
+    TArg9 &&arg9) throw()
 ```
 
 ### <a name="parameters"></a>Parametreler

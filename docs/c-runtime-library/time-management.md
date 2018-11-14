@@ -9,12 +9,12 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: e7b34101e6c09238316d7dc0ebb223ede25d60bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67b993325c7f9c649d1509ce2c1ecf09a2404bc8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623775"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328935"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
@@ -29,7 +29,7 @@ Geçerli saati Al ve Dönüştür, ayarlamak ve gerektiği şekilde depolamak i�
 |[asctime, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s, _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|Saat türünden dönüştürme **yapı tm** karakter dizesi. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
 |[clock](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati döndürür.|
 |[CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [_ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|Saat türünden dönüştürme **time_t**, **__time32_t** veya **__time64_t** karakter dizesi. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
-|[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|İki zaman arasındaki farkı hesaplayın.|[System::DateTime:: çıkarma](https://msdn.microsoft.com/library/system.datetime.subtract.aspx)|
+|[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|İki zaman arasındaki farkı hesaplayın.|
 |[_ftime, _ftime32, _ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md),[_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)|Türünde bir değişken geçerli sistem saatinin Store **yapı _timeb** veya türü **yapı __timeb64** sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|
 |[_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md)|Açık dosya değiştirme saati ayarla|
 |[gmtime, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md), [gmtime_s, _gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)|Saat türünden dönüştürme **time_t** için **yapı tm** veya türünden **__time64_t** için **yapı tm**. Sahip bu işlevlerin sürümleri **_Yanları** sonekine daha güvenli.|

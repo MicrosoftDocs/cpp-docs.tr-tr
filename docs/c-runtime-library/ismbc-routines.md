@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-ms.openlocfilehash: 707287ea7abe255409911f5388cd1f96d976802b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 97094c6773ee6b67655dacc557335ed222fed311
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454645"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326738"
 ---
 # <a name="ismbc-routines"></a>_ismbc Rutinleri
 
@@ -42,7 +42,7 @@ Her test sonucu **_ismbc** yordamı çok baytlı kod sayfasına yürürlükte ba
 |Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
 |[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfasayısal|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcdigit` ve `_ismbcalpha`.|
-|[_ismbcalpha, _ismbcalpha\_](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcupper` ve `_ismbclower`; veya katakana harf: 0xA6 < =`c`< 0xDF =.|
+|[_ismbcalpha, _ismbcalpha_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcupper` ve `_ismbclower`; veya katakana harf: 0xA6 < =`c`< 0xDF =.|
 |[_ismbcdigit, _ismbcdigit_l](../c-runtime-library/reference/ismbcalnum-functions.md)|basamak|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII basamak ise: 0x30 < =`c`< 0x39 =.|
 |[_ismbcgraph, _ismbcgraph_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Grafiği|Yalnız ve yalnızca döndürür `c` boşluk () dışında bir ASCII veya katakana yazdırılabilir karakter tek bayt gösterimidir. Örnekler için bkz: `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|
 |[_ismbclegal, _ismbclegal_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Geçerli çok baytlı karakter|Yalnız ve yalnızca ilk baytı döndürür `c` ikinci baytı aralıklar 0x40-0x7E veya 0x80 - FC ederken aralıklar 0x81-0x9F veya 0xE0 - 0xfc aralığında olan.|

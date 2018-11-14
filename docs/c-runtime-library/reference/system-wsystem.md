@@ -29,12 +29,12 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: fa034b164a188b1b5b7ccd8a4ca71ab7ac754fa1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 46c4949fcc8cfbe4a3477e66b57d8fc6fc97ed73
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624672"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328662"
 ---
 # <a name="system-wsystem"></a>system, _wsystem
 
@@ -65,10 +65,10 @@ Varsa *komut* olduğu **NULL** ve komut yorumlayıcı bulundu, sıfır olmayan b
 
 |||
 |-|-|
-**E2BIG**|(Sistem bağımlı olan) bağımsız değişken listesi çok büyük.
-**ENOENT**|Komut yorumlayıcı nebyla nalezena.
-**ENOEXEC**|Komut yorumlayıcı dosya biçimi geçersiz olduğundan yürütülemez.
-**ENOMEM**|Komutu yürütmek yeterli bellek yok; veya kullanılabilir bellek bozulmuş; veya geçerli olmayan bir blok yok, çağrıyı yapan işlemi düzgün ayrılmamış olduğunu gösterir.
+| **E2BIG** | (Sistem bağımlı olan) bağımsız değişken listesi çok büyük. |
+| **ENOENT** | Komut yorumlayıcı nebyla nalezena. |
+| **ENOEXEC** | Komut yorumlayıcı dosya biçimi geçersiz olduğundan yürütülemez. |
+| **ENOMEM** | Komutu yürütmek yeterli bellek yok; veya kullanılabilir bellek bozulmuş; veya geçerli olmayan bir blok yok, çağrıyı yapan işlemi düzgün ayrılmamış olduğunu gösterir. |
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bunlar hakkında daha fazla bilgi için dönüş kodları.
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-ms.openlocfilehash: 00bac7b15263d976fa840e22406f4be4c7836962
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49467b9c59d8f8861011f0f36009f4e3951871f9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551716"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329858"
 ---
 # <a name="base-base-address"></a>/BASE (Temel Adres)
 
@@ -46,7 +46,7 @@ Bağlayıcı hata durumunda sorunları *adresi* 64 k katı değil. İsteğe bağ
 
 Komut satırında temel adresini belirtmek için başka bir temel adres bir yanıt dosyası kullanarak yoludur. Temel adres bir yanıt dosyası temel adresler ve isteğe bağlı boyutları programınızı kullanacağınız tüm DLL'ler ve her bir temel adres için benzersiz bir metin anahtarı içeren bir metin dosyasıdır. Temel adres bir yanıt dosyası kullanarak belirtmek için kullanın bir at işareti (**\@**) yanıt dosya adından önce gelen *filename*, bir virgül tarafından izlenen sonra *anahtarı*dosyasında kullanılacak temel adres için değer. Bağlayıcı arar *filename* ya da belirtilen yolda veya hiçbir yol belirtilmezse LIB ortam değişkeninde belirtilen dizinlerde. Her satırda *filename* bir DLL temsil eder ve sözdizimi aşağıdaki gibidir:
 
-> *anahtar* *adresi* [*boyutu*] **;** *açıklaması*
+> *anahtar* *adresi* [*boyutu*] **;** *açıklaması*
 
 *Anahtar* alfasayısal karakterden oluşan bir dizedir ve büyük/küçük harfe duyarlı değildir. Bu genellikle bir DLL'nin adıdır, ancak olmaması. *Anahtarı* temel tarafından izlenen *adresi* C dili, onaltılık veya ondalık gösterim ve isteğe bağlı bir maksimum *boyutu*. Tüm üç bağımsız değişken, boşluk veya sekme tarafından ayrılır. Bağlayıcı, yalnızca bir uyarı verir belirtilen *boyutu* program tarafından gereken sanal adres alanı'dan küçük. A *yorum* noktalı virgül belirtilirse (**;**) ve aynı ya da ayrı bir satır üzerinde olabilir. Bağlayıcı satırın sonuna noktalı virgülden tüm metni yok sayar. Bu örnekte, böyle bir dosya parçası gösterilmiştir:
 

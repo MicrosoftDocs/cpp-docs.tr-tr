@@ -3,12 +3,12 @@ title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 777e8226a12b3e57c136ea54d301ff7c9eb890a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 484718ee044b752c381d54b471a33e58ca470d80
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641941"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520666"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -16,7 +16,7 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazıp Windows çalı�
 
 > [!NOTE]
 > WRL artık yerini tarafından C + +/ WinRT, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C + +/ WinRT, Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
-
+>
 > İle C + +/ WinRT, size hem kullanabilir ve Windows çalışma zamanı API'leri kullanarak tüm standartlara uyumlu C ++ 17 derleyici yazar. C + +/ WinRT genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için diğer bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 
 ## <a name="benefits"></a>Yararları
@@ -65,7 +65,7 @@ Nasıl kullanacağınızı öğrenin [Microsoft::wrl:: Make](../windows/make-fun
 .Winmd meta verisinden bir IDL dosyası oluşturarak özel Windows Runtime bileşenlerinin wrl'den kullanma işlemi gösterilmektedir.
 
 [İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
-Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir UWP uygulamasında bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
+Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir UWP uygulamasında bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
 
 [Bing Maps Trip Optimizer örneği](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
 Kullanan `HttpRequest` tanımlanan sınıfı [izlenecek yol: görevleri kullanarak bağlanma ve XML HTTP isteklerini](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) eksiksiz bir UWP uygulaması bağlamında.

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - memory deallocation, BSTR memory
 - strings [C++], releasing
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
-ms.openlocfilehash: 5d21134b85013f9a8ae508590f1a8db0c2e7a7e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cfa921758122dfadb7b008740a14e352456a180f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668578"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518196"
 ---
 # <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve serbest bırakma BSTR için bellek serbest bırakma
 
@@ -44,6 +44,6 @@ Genel olarak, için ayırma ve bellek serbest bırakma kurallarını ayrılan `B
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
-[SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
-[SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
+[SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
+[SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - while keyword [C++]
 - while keyword [C++], syntax
 ms.assetid: 358dbe76-5e5e-4af5-b575-c2293c636899
-ms.openlocfilehash: 63a1b4c5433a42edd798926c1b025ab4494b64b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 669618e9807109be18117968b1f5b6f49ec15e07
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608987"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325984"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C++)
 
@@ -22,7 +22,7 @@ Yürütür *deyimi* kadar sürekli olarak *ifade* sıfır olarak değerlendirili
 
 ```
 while ( expression )
-   statement
+   statement
 ```
 
 ## <a name="remarks"></a>Açıklamalar

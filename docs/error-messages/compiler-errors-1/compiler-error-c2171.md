@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2171
 ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
-ms.openlocfilehash: 467abd87d521b1a2a7b383406b9992067438afed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b51a3793f7ada131ef409ece05b866eb635b9b3
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649013"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325776"
 ---
 # <a name="compiler-error-c2171"></a>Derleyici Hatası C2171
 
@@ -48,8 +48,8 @@ public:
 
    void D() {}
    void DTF() {
-      (*TF)();   // C2171
-      (this->*TF)();   // OK
+      (*TF)();   // C2171
+      (this->*TF)();   // OK
    }
 
    void STF(void (A::*fnc)()) {

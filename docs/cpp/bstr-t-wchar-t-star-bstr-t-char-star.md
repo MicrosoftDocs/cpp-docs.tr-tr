@@ -8,14 +8,14 @@ helpviewer_keywords:
 - operator wchar_t* [C++]
 - operator char* [C++]
 ms.assetid: acd9f4a7-b427-42c2-aaae-acae21cab317
-ms.openlocfilehash: da1e93a4bed195f2951e47f52bf2016cff1df3ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfc149b0f0688bed567bf202fddb4ab2c3102630
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572958"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325815"
 ---
-# <a name="bstrtwchart-bstrtchar"></a>_bstr_t::wchar_t *, _bstr_t::char*
+# <a name="bstrtwchart-bstrtchar"></a>_bstr_t::wchar_t\*, _bstr_t::char\*
 
 **Microsoft'a özgü**
 
@@ -24,9 +24,9 @@ BSTR karakter, bir dar veya geniş karakter dizisi olarak döndürür.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-operator const wchar_t*( ) const throw( ); 
-operator wchar_t*( ) const throw( ); 
-operator const char*( ) const; 
+operator const wchar_t*( ) const throw( );
+operator wchar_t*( ) const throw( );
+operator const char*( ) const;
 operator char*( ) const;
 ```
 

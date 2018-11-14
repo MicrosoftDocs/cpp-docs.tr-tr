@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - RFX (ODBC), implementing
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
-ms.openlocfilehash: e1ecb43226c9e21f3b13c2d5b7c2a0f93b72f3cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d8ba1e66c1ffc46429b5c0e987be833aef2e72f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469556"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328544"
 ---
 # <a name="record-field-exchange-using-rfx"></a>Kayıt Alanı Değişimi: RFX Kullanma
 
@@ -30,10 +30,13 @@ Aşağıdaki tabloda rolünüze göre framework sizin için ne yaptığını gö
 
 |Bunun için,|Framework|
 |---------|-------------------|
-
-| Kayıt kümesi sınıflarını sihirbazla bildirin. Alan veri üyeleri adları ve veri türlerini belirtin. | Sihirbaz türetilen bir `CRecordset` sınıfı ve yazma işlemleri bir [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX dahil olmak üzere, işlev çağrısı için her alanın veri üyesi, sizin için geçersiz kılın. | | ( İsteğe bağlı) parametre veri üyeleri sınıf için tüm gerekli el ile ekleyin. El ile bir RFX işlev çağrısını ekleyin `DoFieldExchange` her parametre veri üyesi için bir çağrı ekleyin [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) parametreleri grubunun ve parametrelerinde toplam sayısını belirtin [m_nParams ](../../mfc/reference/crecordset-class.md#m_nparams). Bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md). || | () İsteğe bağlı) ek sütunlar alan veri üyeleri için el ile bağlayın. El ile Artır [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields). Bkz: [kayıt kümesi: veri sütunlarını (ODBC) dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). ||
-
-| Kayıt kümesi sınıfının bir nesnesi oluşturun. Nesne kullanmadan önce parametre değerlerini veri üyeleri, varsa ayarlayın. | Verimlilik için framework ODBC kullanarak parametreleri, Önden bağlar. Parametre değerlerini geçirmek, framework bunları veri kaynağına geçirir. Sıralama ve filtreleme dizeleri değiştirmediğiniz sürece yalnızca parametre değerlerini sorgular için gönderilir. | | Kayıt kümesi nesnesi kullanılarak açık [CRecordset::Open](../../mfc/reference/crecordset-class.md#open). | Kümesinin sorguyu yürütür, sütunlar için kayıt kümesi ve çağrıları alan veri üyeleri bağlar `DoFieldExchange` ilk seçili kayıt ve kayıt kümesinin alan veri üyeleri arasında veri alışverişi. | | Kayıt kümesi kullanarak kaydırma [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) veya bir menü veya araç çubuğunu komutu. | Çağrıları `DoFieldExchange` veri alan veri üyeleri için yeni geçerli kayıttan aktarmayı. | | Ekleme, güncelleştirme ve kayıtlarını sil. | Çağrıları `DoFieldExchange` veri kaynağına veri aktarmayı. |
+|Kayıt kümesi sınıflarını sihirbazla bildirin. Alan veri üyelerinin adları ve veri türlerini belirtin.|Sihirbaz türetilen bir `CRecordset` sınıfı ve yazma işlemleri bir [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX dahil olmak üzere, işlev çağrısı için her alanın veri üyesi, sizin için geçersiz kılar.|
+|(İsteğe bağlı) El ile tüm gerekli parametre veri üyeleri sınıfına ekleyin. El ile bir RFX işlev çağrısını ekleyin `DoFieldExchange` her parametre veri üyesi için bir çağrı ekleyin [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) parametreleri grubunun ve parametrelerinde toplam sayısını belirtin [m_nParams ](../../mfc/reference/crecordset-class.md#m_nparams). Bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).||
+|(İsteğe bağlı) El ile ek sütunlar için alan veri üyeleri bağlayın. El ile Artır [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields). Bkz: [kayıt kümesi: veri sütunlarını (ODBC) dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).||
+|Kayıt kümesi sınıfının bir nesnesi oluşturun. Nesne kullanmadan önce parametre değerlerini veri üyeleri, varsa ayarlayın.|Verimlilik için framework ODBC kullanarak parametreleri, Önden bağlar. Parametre değerlerini geçirmek, framework bunları veri kaynağına geçirir. Sıralama ve filtreleme dizeleri değiştirmediğiniz sürece yalnızca parametre değerlerini sorgular için gönderilir.|
+|Kayıt kümesi nesnesi kullanılarak açık [CRecordset::Open](../../mfc/reference/crecordset-class.md#open).|Kümesinin sorguyu yürütür, sütunlar için kayıt kümesi ve çağrıları alan veri üyeleri bağlar `DoFieldExchange` ilk seçili kayıt kümesinin alan veri üyeleri arasında veri değişimi için.|
+|Kayıt kümesi kullanarak kaydırma [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) veya bir menü veya araç çubuğunu komutu.|Çağrıları `DoFieldExchange` veri alan veri üyeleri için yeni geçerli kayıttan aktarmak için.|
+|Ekleme, güncelleştirme ve kayıtlarını silin.|Çağrıları `DoFieldExchange` veri kaynağına veri aktarmak için.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

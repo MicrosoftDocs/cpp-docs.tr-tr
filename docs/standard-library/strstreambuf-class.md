@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-ms.openlocfilehash: 5a9fa47ab19a5935bf0c7c36dea37b3cfe6180ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75c9a96b727ef60280055536296f850f492d16ac
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512391"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327310"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 
@@ -186,11 +186,11 @@ Karakter arabelleğine ekleme veya `EOF`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürür `EOF`. Aksi halde, _ *Meta* == `EOF`, dışında bir değer döndürür `EOF`. Aksi halde \_ *Meta*.
+İşlev başarılı olursa, döndürür `EOF`. Aksi takdirde  *\_Meta* == `EOF`, dışında bir değer döndürür `EOF`. Aksi halde  *\_Meta*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-_ *Meta* ! = `EOF`, öğe eklemek korumalı sanal üye işlevi çalışır ( `char`)\_ *Meta* çıktı arabelleğine. Bunu çeşitli yöntemlerle yapabilirsiniz:
+Varsa  *\_Meta* ! = `EOF`, korumalı sanal üye işlevi öğe ekleme girişiminde `(char)_Meta` çıktı arabelleğine. Bunu çeşitli yöntemlerle yapabilirsiniz:
 
 - Yazma konumunu varsa, bu öğe yazma konumuna depolayabilir ve çıkış arabelleği için sonraki işaretçisine artırılacak.
 
@@ -211,13 +211,13 @@ Karakter arabelleğine ekleme veya `EOF`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürür `EOF`. Aksi halde, _ *Meta* == `EOF`, dışında bir değer döndürür `EOF`. Aksi halde \_ *Meta*.
+İşlev başarılı olursa, döndürür `EOF`. Aksi takdirde  *\_Meta* == `EOF`, dışında bir değer döndürür `EOF`. Aksi halde  *\_Meta*.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Korumalı sanal üye işlevi, bir öğe giriş arabelleğe geri yerleştirin ve ardından (sonraki işaretçisi tarafından işaret edilen) geçerli öğe kolaylaştırmak çalışır.
 
-_ *Meta* == `EOF`, geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **ch** = ( `char`)\_ *Meta*. İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
+Varsa  *\_Meta* == `EOF`, geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir `ch = (char)_Meta`. İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
 
 - Putback konum kullanılabilir ve burada depolanan öğenin eşit karşılaştırır `ch`, sonraki işaretçisi giriş arabelleği için azaltma.
 
@@ -289,15 +289,15 @@ Denetlenen akışlar için geçerli konumları değiştirmek korumalı sanal üy
 
 Yeni konumu şu şekilde belirlenir:
 
-- Varsa `_Way`  ==  `ios_base::beg`, yeni konuma stream yanı sıra _ başlangıcıdır *kapalı*.
+- Varsa `_Way == ios_base::beg`, artı akış başlangıcına yeni konumudur *_Off*.
 
-- Varsa `_Way`  ==  `ios_base::cur`, yeni geçerli akış konumu artı _ konumdur *kapalı*.
+- Varsa `_Way == ios_base::cur`, yeni konumu geçerli stream konumudur yanı sıra *_Off*.
 
-- Varsa `_Way`  ==  `ios_base::end`, akış ve _ sonuna yeni konumudur *kapalı*.
+- Varsa `_Way == ios_base::end`, artı akışın sonuna yeni konumudur *_Off*.
 
-Varsa `_Which`  &  **ios_base::in** sıfır dışında olan ve giriş arabelleği var, işlev giriş arabelleğinde okumak için bir sonraki konuma değiştirir. Varsa `_Which`  &  **ios_base::out** de sıfır olan `_Way` ! = **ios_base::cur**ve çıkış arabelleği var, işlevi eşleştirmek yazmak için bir sonraki konuma de ayarlar. okunacak sonraki konumu.
+Varsa `_Which & ios_base::in` sıfır dışında olan ve giriş arabelleği var, işlev giriş arabelleğinde okumak için bir sonraki konuma değiştirir. Varsa `_Which & ios_base::out` de sıfır olan `_Way != ios_base::cur`ve çıkış arabelleği var, işlev ayrıca okumak için bir sonraki konuma eşleşecek şekilde yazmak için bir sonraki konuma ayarlar.
 
-Aksi takdirde `_Which`  &  `ios_base::out` sıfır dışında olan ve çıkış arabelleği var, çıkış arabelleğinin yazmak için bir sonraki konuma işlevi değiştirir. Aksi takdirde, yerleştirme işlemi başarısız olur. Başarılı olması yerleştirme işlemi için akış konumu, denetlenen bir dizi içinde yer almalıdır.
+Aksi takdirde `_Which & ios_base::out` sıfır dışında olan ve çıkış arabelleği var, çıkış arabelleğinin yazmak için bir sonraki konuma işlevi değiştirir. Aksi takdirde, yerleştirme işlemi başarısız olur. Başarılı olması yerleştirme işlemi için akış konumu, denetlenen bir dizi içinde yer almalıdır.
 
 ## <a name="seekpos"></a>  strstreambuf::seekpos
 
@@ -321,7 +321,7 @@ Arama konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen akışlar için geçerli konumları değiştirmek korumalı sanal üye işlevi endeavors. Strstreambuf sınıfı nesne için bir akış konumu bir akış uzaklığı tamamen oluşur. Uzaklık sıfır değerinin denetlenen dizideki ilk öğeyi belirtir. Yeni konumunu _ tarafından belirlenir *Sp*.
+Denetlenen akışlar için geçerli konumları değiştirmek korumalı sanal üye işlevi endeavors. Strstreambuf sınıfı nesne için bir akış konumu bir akış uzaklığı tamamen oluşur. Uzaklık sıfır değerinin denetlenen dizideki ilk öğeyi belirtir. Yeni konumu tarafından belirlenir *_Sp*.
 
 Varsa `_Which`  &  **ios_base::in** sıfır dışında olan ve giriş arabelleği var, işlev giriş arabelleğinde okumak için bir sonraki konuma değiştirir. Varsa `_Which`  &  `ios_base::out` sıfır dışında olan ve çıkış arabelleği var, işlev ayrıca okumak için bir sonraki konuma eşleşecek şekilde yazmak için bir sonraki konuma ayarlar. Aksi takdirde `_Which`  &  `ios_base::out` sıfır dışında olan ve çıkış arabelleği var, çıkış arabelleğinin yazmak için bir sonraki konuma işlevi değiştirir. Aksi takdirde, yerleştirme işlemi başarısız olur. Başarılı olması yerleştirme işlemi için akış konumu, denetlenen bir dizi içinde yer almalıdır.
 
@@ -398,7 +398,7 @@ Giriş için kullanılan arabellek.
 
 İlk Oluşturucu giriş arabelleği, çıkış arabelleği ve strstreambuf ayırma denetleme tüm işaretçilerin null bir işaretçi depolar. Denetlenen dizi değiştirilebilir ve Genişletilebilir olmak için saklı strstreambuf modu ayarlar. Ayrıca kabul *sayısı* önerilen ilk ayırma boyutu.
 
-Depoladığı dışında _, ikinci oluşturucu ilk gibi davranır *Allocfunc* ayrılacak çağrılacak işlev işaretçisi olarak ve \_ *Freefunc* için işlev işaretçisi olarak Bu depolama alanı boşaltmak için çağrısı.
+Depoladığı dışında İkinci kurucu ilk gibi davranır  *\_Allocfunc* ayrılacak çağrılacak işlev işaretçisi olarak ve  *\_Freefunc* işaretçi Bu depolama alanı boşaltmak için aranacak işlev için.
 
 Üç Oluşturucusu:
 

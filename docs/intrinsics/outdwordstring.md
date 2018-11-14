@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-ms.openlocfilehash: d94db2f59f9a3a8074331054b04cef59cebac0dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5579258c813850cdb8f29758bb4bd5d87270467f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502602"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330287"
 ---
 # <a name="outdwordstring"></a>__outdwordstring
 
@@ -24,10 +24,10 @@ Oluşturur `rep outsd` gönderen yönerge `Count` başlayan doublewords `Buffer`
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outdwordstring( 
-   unsigned short Port, 
-   unsigned long* Buffer, 
-   unsigned long Count 
+void __outdwordstring(
+   unsigned short Port,
+   unsigned long* Buffer,
+   unsigned long Count
 );
 ```
 

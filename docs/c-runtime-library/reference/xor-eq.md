@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - xor_eq function
 ms.assetid: eca4b6b4-b77a-4d44-a09a-5a7e69fdb56c
-ms.openlocfilehash: 1a6617d1df9cb4666288d13e73ee38203f350e77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ba3025df471a0433d4e3c4a1a8ddb75400c9523
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469894"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521394"
 ---
 # <a name="xoreq"></a>xor_eq
 
@@ -36,7 +36,6 @@ ms.locfileid: "50469894"
 ```C
 
 #define xor_eq ^=
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

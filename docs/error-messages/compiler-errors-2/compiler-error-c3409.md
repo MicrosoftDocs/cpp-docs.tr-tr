@@ -1,21 +1,23 @@
 ---
 title: Derleyici Hatası C3409
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 f1_keywords:
 - C3409
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: 2a677da40b64a19c4d2a27436344eec7adb80c14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b6ceb6f2e8700a5459dbd01db443ef90de314b5e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600895"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330092"
 ---
 # <a name="compiler-error-c3409"></a>Derleyici Hatası C3409
 
-boş öznitelik bloğuna izin verilmiyor
+> boş öznitelik bloğuna izin verilmiyor
+
+## <a name="remarks"></a>Açıklamalar
 
 Köşeli ayraç derleyici tarafından yorumlanan bir [özniteliği](../../windows/cpp-attributes-reference.md) blok, ancak hiç öznitelik bulunamadı.
 
@@ -29,19 +31,15 @@ Köşeli ayraçlar bir lambda ifadesinin tanımının bir parçası kullandığ�
 
    1. Öznitelik bloğunu kaldırın.
 
-1. Köşeli ayraç bir lambda ifadesinin parçası ise:
+1. Köşeli ayraç bir lambda ifadesinin parçası ise lambda ifadesi geçerli sözdizimi kurallarına uyduğundan emin olun.
 
-   1. Lambda ifadesi geçerli sözdizimi kurallarına uyduğundan emin olun.
-
-         Lambda ifadesi söz dizimi hakkında daha fazla bilgi için bkz: [Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md).
-
-    2.
+   Lambda ifadesi söz dizimi hakkında daha fazla bilgi için bkz: [Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md).
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, C3409 oluşturur.
 
-```
+```cpp
 // C3409.cpp
 // compile with: /c
 #include <windows.h>
@@ -60,7 +58,7 @@ class b : public x {};
 
 Aşağıdaki örnek, bir lambda ifadesi kullandığından C3409 oluşturur `mutable` belirtimi, ancak parametre listesini sağlamaz. Derleyici, köşeli ayraç bir lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemiyor.
 
-```
+```cpp
 // C3409b.cpp
 
 int main()

@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventImpl class
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-ms.openlocfilehash: a07cf577ec6be2c6d2d895a85f49f44318596ded
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75946005acc22874b17ee806cd89ec99095f9c35
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497473"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524306"
 ---
 # <a name="idispeventimpl-class"></a>Idispeventımpl sınıfı
 
@@ -151,7 +151,7 @@ Standart bir HRESULT değerini.
 
 ##  <a name="getidsofnames"></a>  IDispEventImpl::GetIDsOfNames
 
-Tek bir üye ve isteğe bağlı bir bağımsız değişken adları kümesi tamsayı yapılan sonraki çağrılar kullanılabilir DISPID değeri karşılık gelen bir dizi eşleyen [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
+Tek bir üye ve isteğe bağlı bir bağımsız değişken adları kümesi tamsayı yapılan sonraki çağrılar kullanılabilir DISPID değeri karşılık gelen bir dizi eşleyen [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
 
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -164,7 +164,7 @@ STDMETHOD(GetIDsOfNames)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDispatch::getıdsofnames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK içinde.
+Bkz: [IDispatch::getıdsofnames](/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK içinde.
 
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo
 
@@ -189,7 +189,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) Windows SDK içinde.
+Bkz: [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) Windows SDK içinde.
 
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType
 
@@ -204,7 +204,7 @@ VARTYPE GetUserDefinedType(
 ### <a name="parameters"></a>Parametreler
 
 *PTI*<br/>
-[in] Bir işaretçi [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) arabirimi içeren kullanıcı tanımlı tür.
+[in] Bir işaretçi [ITypeInfo](/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) arabirimi içeren kullanıcı tanımlı tür.
 
 *hrt*<br/>
 [in] Alınacak tür tanımı için bir tanıtıcı.
@@ -215,7 +215,7 @@ Değişken türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ITypeInfo::GetRefTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).
+Bkz: [ITypeInfo::GetRefTypeInfo](/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).
 
 ##  <a name="idispeventimpl"></a>  IDispEventImpl::IDispEventImpl
 

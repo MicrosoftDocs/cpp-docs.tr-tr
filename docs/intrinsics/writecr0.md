@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr0 intrinsic
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
-ms.openlocfilehash: 8e36aa1c1e7299c1de5cba26acb8a4ae8165ad6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdc93f178f033b072cad68180dfee305d9bf62a5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547153"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330534"
 ---
 # <a name="writecr0"></a>__writecr0
 
@@ -22,8 +22,8 @@ Değeri Yazar `Data` CR0 kaydının kaydı.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void writecr0( 
-   unsigned __int64 Data 
+void writecr0(
+   unsigned __int64 Data
 );
 ```
 

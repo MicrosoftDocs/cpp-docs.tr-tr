@@ -25,12 +25,12 @@ helpviewer_keywords:
 - files [C++], locking
 - _locking function
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
-ms.openlocfilehash: 1309d99d8e7040626384e38324c1e910e4731295
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90327ed3388d4f18e0f64f92c33112c9ddd800f5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523823"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327050"
 ---
 # <a name="locking"></a>_locking
 
@@ -63,10 +63,10 @@ Kilitlemek için bayt sayısı.
 
 |errno değeri|Koşul|
 |-|-|
-**SPAWN**|(Zaten kilitli veya kilidi dosyası) ihlali kilitleniyor.
-**EBADF**|Geçersiz dosya tanımlayıcısı.
-**EDEADLOCK**|Kilit ihlali. Ne zaman iade **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtildi ve 10 denemeden sonra dosya kilitlenemez.
-**EINVAL**|Geçersiz bağımsız değişken için verilen **_locking**.
+| **SPAWN** | (Zaten kilitli veya kilidi dosyası) ihlali kilitleniyor. |
+| **EBADF** | Geçersiz dosya tanımlayıcısı. |
+| **EDEADLOCK** | Kilit ihlali. Ne zaman iade **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtildi ve 10 denemeden sonra dosya kilitlenemez. |
+| **EINVAL** | Geçersiz bağımsız değişken için verilen **_locking**. |
 
 Gibi bir geçersiz dosya tanımlayıcısı hatalı bir parametre nedeniyle başarısız olması durumunda geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
@@ -78,11 +78,11 @@ Gibi bir geçersiz dosya tanımlayıcısı hatalı bir parametre nedeniyle başa
 
 |*modu* değeri|Efekt|
 |-|-|
-**_LK_LOCK**|Belirtilen bayt kilitler. Bayt kilitlenemez, program yeniden 1 saniye sonra hemen çalışır. 10 denemeden sonra bayt kilitlenemez, sabit bir hata döndürür.
-**_LK_NBLCK**|Belirtilen bayt kilitler. Bayt kilitlenemez, sabit bir hata döndürür.
-**_LK_NBRLCK**|Aynı **_LK_NBLCK**.
-**_LK_RLCK**|Aynı **_LK_LOCK**.
-**_LK_UNLCK**|Önceden kilitlenmiş gerekir belirtilen bayt kilidini açar.
+| **_LK_LOCK** | Belirtilen bayt kilitler. Bayt kilitlenemez, program yeniden 1 saniye sonra hemen çalışır. 10 denemeden sonra bayt kilitlenemez, sabit bir hata döndürür. |
+| **_LK_NBLCK** | Belirtilen bayt kilitler. Bayt kilitlenemez, sabit bir hata döndürür. |
+| **_LK_NBRLCK** | Aynı **_LK_NBLCK**. |
+| **_LK_RLCK** | Aynı **_LK_LOCK**. |
+| **_LK_UNLCK** | Önceden kilitlenmiş gerekir belirtilen bayt kilidini açar. |
 
 Bir dosyanın üst üste birden çok bölgede kilitlenebilir. Bir bölge kilidi açılıyor önceden kilitlenmiş gerekir. **_locking** birleştirme bitişik bölgeleri yapar; kilitli iki bölgeleri bitişikse, her bölgede ayrı olarak kilidinin açık olması gerekir. Bölgeler, yalnızca kısa bir süre kilitli olması ve bir dosyayı kapatma veya program çıkmadan önce kilidi.
 

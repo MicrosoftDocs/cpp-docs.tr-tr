@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: 4fb08d02f3d939e6757c41519a2afabc8caa862c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b70a4caea2b9aa5d86c0e97b97eae784594ec87
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551300"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326114"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -21,8 +21,8 @@ ms.locfileid: "50551300"
 
 ```
 [template-spec] struct[ms-decl-spec] [tag [: base-list ]]
-{ 
-   member-list 
+{
+   member-list
 } [declarators];
 [struct] tag declarators;
 ```

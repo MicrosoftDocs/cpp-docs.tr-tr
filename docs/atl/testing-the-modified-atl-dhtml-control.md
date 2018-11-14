@@ -1,17 +1,17 @@
 ---
 title: Değiştirilen ATL DHTML denetimini test etme
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 helpviewer_keywords:
 - HTML controls, testing
 - testing controls
 - DHTML controls, testing
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
-ms.openlocfilehash: f0fec3e2430fd5956e3cc48cd64532efee30926d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99f55807a7da647af0961f73c600ae0e31166cdc
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501679"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330976"
 ---
 # <a name="testing-the-modified-atl-dhtml-control"></a>Değiştirilen ATL DHTML denetimini test etme
 
@@ -31,13 +31,13 @@ Artık kullanıcı Arabirimi parçası olmayan yöntemleri test edin.
 
 1. Denetimin kenarlık etkin şekilde vurgulayın.
 
-1. Üzerinde **denetimi** menüsünde tıklatın **çağırma yöntemleri**.
+1. Üzerinde **denetimi** menüsünde seçin **çağırma yöntemleri**.
 
-Etiketli yöntemlerle **yöntem adı** kapsayıcı çağırabileceğiniz yöntemler şunlardır: `MethodInvoked` ve `GoToURL`. Tüm diğer yöntemler kullanıcı Arabirimi tarafından denetlenir.
+   Etiketli yöntemlerle **yöntem adı** kapsayıcı çağırabileceğiniz yöntemler şunlardır: `MethodInvoked` ve `GoToURL`. Tüm diğer yöntemler kullanıcı Arabirimi tarafından denetlenir.
 
-1. ' A tıklayın ve çağırmak için bir yöntem seçin `Invoke` yöntemin ileti kutusu görüntülemek için veya www.microsoft.com gidin.
+1. Çağırmak ve bir yöntem Seç **Invoke** yöntemin ileti kutusu görüntülemek için veya gitmek için `www.microsoft.com`.
 
-1. İçinde **çağırma yöntemleri** iletişim kutusu, tıklayın **Kapat**.
+1. İçinde **çağırma yöntemleri** iletişim kutusunda **Kapat**.
 
 Çeşitli öğeler ve bir ATL DHTML denetimini oluşturan dosyaları hakkında daha fazla bilgi için bkz: [DHTML denetim projesinin öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 

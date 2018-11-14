@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-ms.openlocfilehash: d57e038a4ebc55d08b4518f25e37b4f2d9cee05d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1997e56fb0b524ffd6cca5dc9d5983fda25a42e1
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429222"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518612"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound sınıfı
 
-Bu sınıf için bir sarmalayıcı olan bir [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) yapısı.
+Bu sınıf için bir sarmalayıcı olan bir [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) yapısı.
 
 ## <a name="syntax"></a>Sözdizimi
 

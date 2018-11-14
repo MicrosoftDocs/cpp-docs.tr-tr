@@ -34,12 +34,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: e62e58273daf74d8551efb2165fe71d6fb7d3181
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1fac3a74ca259fe3b680355fadc7f9bbd6e3cc13
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429992"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329507"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl Sınıfı
 
@@ -52,13 +52,13 @@ template <
    class T,
    class Storage,
    class CreatorClass,
-   class ArrayType = CAtlArray<Storage>, 
-   class RowClass = CSimpleRow, 
-   class RowsetInterface = IRowsetImpl <T, IRowset> 
+   class ArrayType = CAtlArray<Storage>,
+   class RowClass = CSimpleRow,
+   class RowsetInterface = IRowsetImpl <T, IRowset>
 >
-class CRowsetImpl :  
-   public CComObjectRootEx<CreatorClass::_ThreadModel>, 
-   public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>, 
+class CRowsetImpl : 
+   public CComObjectRootEx<CreatorClass::_ThreadModel>,
+   public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>,
    public IRowsetInfoImpl<T, CreatorClass::_PropClass>
 ```
 

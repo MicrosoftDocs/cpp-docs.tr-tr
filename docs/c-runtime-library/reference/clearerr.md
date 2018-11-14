@@ -23,12 +23,12 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr function
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
-ms.openlocfilehash: 2e2bf43946f8f306ce120cb48998b84c5ae09bf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c282a577bb7496f899f18abeac857c08388d12f6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646335"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328259"
 ---
 # <a name="clearerr"></a>clearerr
 
@@ -97,15 +97,16 @@ int main( void )
 }
 ```
 
-```Output
+### <a name="input"></a>Giriş
 
+```Input
 n
-
 ```
 
-```Output
+### <a name="output"></a>Çıkış
 
-      nWrite error: No error
+```Output
+Write error: No error
 Will input cause an error? n
 No read error
 ```

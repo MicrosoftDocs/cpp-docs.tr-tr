@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _rotl8 intrinsic
 - _rotl16 intrinsic
 ms.assetid: 8c519ab6-aef9-4f07-a387-daee8408368f
-ms.openlocfilehash: c294569b94589a0f64519725c72075374308e231
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63a4b342db58b37070c9348ac9eff1044a54a28b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474171"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327960"
 ---
 # <a name="rotl8-rotl16"></a>_rotl8, _rotl16
 
@@ -24,13 +24,13 @@ Giriş değerleri bit konumları belirtilen sayıda (MSB) en önemli bite Sola D
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned char _rotl8( 
-   unsigned char value, 
-   unsigned char shift 
+unsigned char _rotl8(
+   unsigned char value,
+   unsigned char shift
 );
-unsigned short _rotl16( 
-   unsigned short value, 
-   unsigned char shift 
+unsigned short _rotl16(
+   unsigned short value,
+   unsigned char shift
 );
 ```
 

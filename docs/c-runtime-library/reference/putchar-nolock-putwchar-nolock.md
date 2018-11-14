@@ -32,12 +32,12 @@ helpviewer_keywords:
 - _putwchar_nolock function
 - puttchar_nolock function
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
-ms.openlocfilehash: 5b7c0b4fcdbb7c29c48d9489cb262d2b1a1cf401
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a70c2363b5ae35faab9a0167200366b286408b3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580888"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517873"
 ---
 # <a name="putcharnolock-putwcharnolock"></a>_putchar_nolock, _putwchar_nolock
 
@@ -52,7 +52,6 @@ int _putchar_nolock(
 wint_t _putwchar_nolock(
    wchar_t c
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

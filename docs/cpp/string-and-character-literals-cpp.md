@@ -16,12 +16,12 @@ helpviewer_keywords:
 - NULL, character constant
 - wide characters, strings
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-ms.openlocfilehash: 787756dd3e886afb6afa87ed3871158bddcbf3ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3721f3624a64a24de0a5458d88de4836b07a9c1
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614597"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329845"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 
@@ -49,7 +49,7 @@ int main()
 
     // Raw string literals containing unescaped \ and "
     auto R0 =   R"("Hello \ world")"; // const char*
-    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
+    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
     auto R2 =  LR"("Hello \ world")"; // const wchar_t*
     auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
     auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
@@ -106,15 +106,22 @@ Karakter değişmez değerleri farklı kodlanır kendi ön ekine.
 
 Üç tür kaçış dizisi vardır: basit, sekizlik ve onaltılık. Çıkış sıraları aşağıdakilerden biri olabilir:
 
-|Değer|Kaçış sırası|Değer|Kaçış sırası|
-|-----------|---------------------|-----------|---------------------|
-|yeni satır|\n|Ters eğik çizgi|\\\|
-|Yatay sekme|\t|soru işareti|? veya \\?|
-|dikey sekme|\v|tek tırnak|\\'|
-|Geri Al|\b|çift tırnak işareti|\\"|
-|satır başı|\r|null karakteri|\0|
-|form besleme|\f|sekizlik|\ooo|
-|Uyarı (zil)|\a|onaltılık|\xhhh|
+|Değer|Kaçış sırası|
+|-----------|---------------------|
+| yeni satır | \\N |
+| Ters eğik çizgi | \\\\ |
+| Yatay sekme | \\T |
+| soru işareti | ? veya \\? |
+| dikey sekme | \\V |
+| tek tırnak | \\' |
+| Geri Al | \\B |
+| çift tırnak işareti | \\" |
+| satır başı | \\r |
+| null karakteri | \\0 |
+| form besleme | \\F |
+| sekizlik | \\OOO |
+| Uyarı (zil) | \\A |
+| onaltılık | \\xhhh |
 
 Aşağıdaki kod, kaçış karakterlerini normal karakter değişmez değerleri kullanarak bazı örnekler göstermektedir. Kaçış dizisi sözdiziminde, diğer karakter değişmez değer türleri için geçerlidir.
 
@@ -253,7 +260,7 @@ Ham dize sabit değeri bir null ile sonlandırılmış bir dizidir — herhangi 
 // represents the string: An unescaped \ character
 const char* raw_narrow = R"(An unescaped \ character)";
 const wchar_t* raw_wide = LR"(An unescaped \ character)";
-const char*       raw_utf8  = u8R"(An unescaped \ character)";
+const char*       raw_utf8  = u8R"(An unescaped \ character)";
 const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 ```

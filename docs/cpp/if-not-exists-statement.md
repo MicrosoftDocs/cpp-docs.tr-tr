@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __if_not_exists keyword [C++]
 ms.assetid: a2f322d4-e96f-4a32-954e-4323d20c6e32
-ms.openlocfilehash: d7d172df584200ccc508b281147abf3fa7774952
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 845597460cdc0ce83adcbba1f47a78c83735cbf9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629118"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327778"
 ---
 # <a name="ifnotexists-statement"></a>__if_not_exists Deyimi
 
@@ -20,7 +20,7 @@ ms.locfileid: "50629118"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__if_not_exists ( identifier ) { 
+__if_not_exists ( identifier ) {
 statements
 };
 ```

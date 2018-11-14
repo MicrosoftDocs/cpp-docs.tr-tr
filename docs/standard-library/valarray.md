@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: efd3e750abb68ad84eb8894ea6b53fe8e29e0e17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b8118722d7219e3b30e11ad67411595c3dc36ad
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447794"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332640"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -21,12 +21,11 @@ ms.locfileid: "50447794"
 
 ```cpp
 #include <valarray>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablonu sınıfları ve işlevleri, Gelişmiş performans açısından olağan dışı enlem izin verilir. Özellikle türü döndüren bir işlev **valarray\<** T1**>** türünde bir nesne bazı diğer T2 döndürebilir. Bu durumda, herhangi bir veya daha fazla bağımsız değişken türü kabul eden işlev **valarray\<** T2**>** bu bağımsız değişkenler rasgele birleşimlerini kabul eden aşırı yüklemeler olmalıdır her bağımsız değişken T2 türü ile değiştirildi.
+Bu şablonu sınıfları ve işlevleri, Gelişmiş performans açısından olağan dışı enlem izin verilir. Özellikle türü döndüren bir işlev `valarray<T1>` türünde bir nesne bazı diğer T2 döndürebilir. Bu durumda, herhangi bir veya daha fazla bağımsız değişken türü kabul eden işlev `valarray<T2>` rasgele bağımsız değişkenleri, bağımsız değişken T2 türü ile her değiştirilen birleşimlerini kabul eden aşırı yüklemeler olması gerekir.
 
 ### <a name="functions"></a>İşlevler
 

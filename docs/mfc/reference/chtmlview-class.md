@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: f30194d552f8bafb4d52597aeb53dbe02a780213
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b37cff8bd3eb3bd05bc7030c4cc12b9b84568b1f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438122"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333647"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 
@@ -1194,7 +1194,7 @@ URL, UNC değerlendiren bir dizeye bir işaretçi için gittiğinizde, PIDL işa
 
 Her kare tetiklenen her çerçeve ancak bu olay harekete bir [OnDownloadBegin](#ondownloadbegin) olayını ateşle karşılık gelen `OnDocumentComplete` olay.
 
-Tarafından belirtilen URL *lpszURL* bu URL'yi Kurallaştırılan ve tam bir URL olduğundan, gitmek için tarayıcı söylendi URL'den farklı olabilir. Örneğin bir uygulama için bir çağrıda "www.microsoft.com" URL'sini belirtir, [Navigate](#navigate) veya [Navigate2](#navigate2), geçirilen URL `OnNavigateComplete2` olacak "http://www.microsoft.com/". Ayrıca, sunucunun tarayıcı farklı bir URL'ye yeniden yönlendirilen, yeniden yönlendirilen URL burada yansıtılır.
+Tarafından belirtilen URL *lpszURL* bu URL'yi Kurallaştırılan ve tam bir URL olduğundan, gitmek için tarayıcı söylendi URL'den farklı olabilir. Örneğin bir uygulama için bir çağrıda "www.microsoft.com" URL'sini belirtir, [Navigate](#navigate) veya [Navigate2](#navigate2), geçirilen URL `OnNavigateComplete2` olacak "<http://www.microsoft.com/>". Ayrıca, sunucunun tarayıcı farklı bir URL'ye yeniden yönlendirilen, yeniden yönlendirilen URL burada yansıtılır.
 
 ##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate
 
@@ -1458,7 +1458,7 @@ URL'ye değerlendiren bir dize ifadesi UNC dosya adı veya için gittiğinizde, 
 
 URL parametresi var olan hiçbir URL temsili bir kabuk ad alanı varlık söz konusu olduğunda bir PIDL işaretçisiyle birlikte olabilir.
 
-URL içindeki Not *strURL* bu URL'yi Kurallaştırılan ve tam bir URL olduğundan, gitmek için tarayıcı söylendi URL'den farklı olabilir. Örneğin bir uygulama için bir çağrıda "www.microsoft.com" URL'sini belirtir, [Navigate](#navigate) veya [Navigate2](#navigate2), geçirilen URL `OnNavigateComplete2` olacak "http://www.microsoft.com/". Ayrıca, sunucunun tarayıcı farklı bir URL'ye yeniden yönlendirilen, yeniden yönlendirilen URL burada yansıtılır.
+URL içindeki Not *strURL* bu URL'yi Kurallaştırılan ve tam bir URL olduğundan, gitmek için tarayıcı söylendi URL'den farklı olabilir. Örneğin bir uygulama için bir çağrıda "www.microsoft.com" URL'sini belirtir, [Navigate](#navigate) veya [Navigate2](#navigate2), geçirilen URL `OnNavigateComplete2` olacak "<http://www.microsoft.com/>". Ayrıca, sunucunun tarayıcı farklı bir URL'ye yeniden yönlendirilen, yeniden yönlendirilen URL burada yansıtılır.
 
 ##  <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError
 

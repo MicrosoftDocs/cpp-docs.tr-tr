@@ -24,12 +24,12 @@ helpviewer_keywords:
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-ms.openlocfilehash: 42a60875d4ab701c05b8bc12f8d4afb77852e3a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f8dace04a5328c423af21327eb540abc8b062e86
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452161"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327596"
 ---
 # <a name="seterrno"></a>_set_errno
 
@@ -38,7 +38,7 @@ Değerini **errno** genel değişkeni.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _set_errno( int error_value );
+errno_t _set_errno( int error_value );
 ```
 
 ### <a name="parameters"></a>Parametreler

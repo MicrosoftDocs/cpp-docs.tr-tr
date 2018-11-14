@@ -10,12 +10,12 @@ helpviewer_keywords:
 - case keyword [C++], in switch statements
 - default keyword [C++]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
-ms.openlocfilehash: 1a7a58075e4448ba38b3fc7d4d9b48e3b195d216
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67918b7df747d3bee923da500729e60b4fe04336
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534101"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328857"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
 
@@ -25,8 +25,8 @@ Kod, tam sayı ifadesinin değerine bağlı olarak birden çok bölüm arasında
 
 ```
    switch ( init; expression )
-   case constant-expression : statement
-   [default  : statement]
+   case constant-expression : statement
+   [default  : statement]
 ```
 
 ## <a name="remarks"></a>Açıklamalar

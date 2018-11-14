@@ -32,12 +32,12 @@ helpviewer_keywords:
 - ungettc_nolock function
 - ungetc_nolock function
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
-ms.openlocfilehash: 17fadee825aff7b691db74eaaa7b695ba5a49a42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55888f122af0848c92204168a23cca93e2517904
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482868"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331509"
 ---
 # <a name="ungetcnolock-ungetwcnolock"></a>_ungetc_nolock, _ungetwc_nolock
 
@@ -66,7 +66,7 @@ wint_t _ungetwc_nolock(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, bu işlevlerin her biri karakteri bağımsız değişkenini döndürür, *c*. Varsa *c* geri itilemiyorsa veya herhangi bir karakter okunmamışsa, Giriş akışı değiştirilmez ve **_ungetc_nolock** döndürür ** EOF`; **_ungetwc_nolock` döndürür **WEOF**. Varsa *stream* olduğu **NULL**, **EOF** veya **WEOF** döndürülür ve **errno** ayarlanır  **EINVAL**.
+Başarılı, bu işlevlerin her biri karakteri bağımsız değişkenini döndürür, *c*. Varsa *c* geri itilemiyorsa veya herhangi bir karakter okunmamışsa, Giriş akışı değiştirilmez ve **_ungetc_nolock** döndürür **EOF**; **_ungetwc_nolock** döndürür **WEOF**. Varsa *stream* olduğu **NULL**, **EOF** veya **WEOF** döndürülür ve **errno** ayarlanır  **EINVAL**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

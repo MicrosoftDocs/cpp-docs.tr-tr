@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-ms.openlocfilehash: aabdc761cc55507f4718a63a0c082325ae1badf7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18d6a8517d71cfa9c7e17a45c97f77977ec778f0
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504292"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522408"
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 
@@ -29,7 +29,6 @@ Okuma ve yazma için standart akışlarına denetim nesnesi bildirir. Bu genelli
 
 ```cpp
 #include <iostream>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar
@@ -155,7 +154,6 @@ int main()
 ```Output
 
 2
-
 ```
 
 ###  <a name="clog"></a>  clog

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::num_put [C++], do_put
 - std::num_put [C++], put
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
-ms.openlocfilehash: c6866358cde7d381ec8a703d50aeb3193bef9d5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ede0ccd85f116f300939c819ae8209435da72b7
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441866"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327336"
 ---
 # <a name="numput-class"></a>num_put Sınıfı
 
@@ -258,7 +258,7 @@ virtual iter_type do_put(iter_type next,
 
 bir Boolean çıkış alanından oluşturur, birincisi ile aynı davranış *val*.
 
-Bir Boolean çıkış alanı iki biçimlerden birini alır. Varsa **iosbase**. **bayrakları** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) olduğu **false**, üye işlevinin döndürdüğü `do_put`(_ *sonraki*, \_ *Iosbase*, \_ *dolgu*, ( **uzun**) `val`), bu genellikle oluşturur ya da 0 oluşturulan bir sıralı ( için**false**) veya 1 (için **true**). Aksi takdirde, oluşturulan sıralı geçerli **fac**. [falsename](../standard-library/numpunct-class.md#falsename) `)` (için **false**), veya **fac**. [truename](../standard-library/numpunct-class.md#truename) (için **true**).
+Bir Boolean çıkış alanı iki biçimlerden birini alır. Varsa `iosbase.flags & ios_base::` [boolalpha](../standard-library/ios-functions.md#boolalpha) olan **false**, üye işlevinin döndürdüğü `do_put(_Next, _Iosbase, _Fill, (long)val)`, hangi genellikle üretir oluşturulan bir sıralı ya da 0 (için **false**) veya 1 (için **true**). Aksi takdirde, oluşturulan sıralı geçerli *fac*.[ falsename](../standard-library/numpunct-class.md#falsename) (için **false**), veya *fac*.[ truename](../standard-library/numpunct-class.md#truename) (için **true**).
 
 Yedinci korumalı sanal üye işlevi:
 

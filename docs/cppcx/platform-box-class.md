@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Box
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
-ms.openlocfilehash: 387fa03caebed599d51292dd1b6d18ad4afd921c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29cbe852dcd606ea5cf2953c709fc8e47b89e1f1
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429081"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327037"
 ---
 # <a name="platformbox-class"></a>Platform::Box sınıfı
 
@@ -21,24 +21,29 @@ Bir değer türü etkinleştirir `Windows::Foundation::DateTime` ya da bir skala
 ```cpp
 ref class Box abstract;
 ```
-  ### <a name="remarks"></a>Açıklamalar
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** vccorlib.h
 
 **Namespace:** platformu
+
+### <a name="members"></a>Üyeler
+
 |Üye|Açıklama|
 |------------|-----------------|
-|[Kutusu](#ctor)|Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen.|
-|[işleci kutusunda&lt;const T&gt;^](#box-const-t)|Kutulama dönüşümlerse sağlayan bir `const` değer sınıfının `T` veya `enum` sınıfı `T` için `Box<T>`.|
-|[işleci kutusunda&lt;const volatile T&gt;^](#box-const-volatile-t)|Kutulama dönüşümlerse sağlayan bir `const volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`. |
-|[işleci kutusunda&lt;T&gt;^](#box-t)|Değer sınıfından kutulama dönüştürmeler sağlar `T` için `Box<T>`.|
-|[işleci kutusunda&lt;geçici T&gt;^](#box-volatile-t)|Kutulama dönüşümlerse sağlayan bir `volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`.|
-|[Box::operator T](#t)|Değer sınıfından kutulama dönüştürmeler sağlar `T` veya `enum` sınıfı `T` için `Box<T>`.|
+|[Kutusu](#ctor) | Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen. |
+|[işleci kutusunda&lt;const T&gt;^](#box-const-t) | Kutulama dönüşümlerse sağlayan bir `const` değer sınıfının `T` veya `enum` sınıfı `T` için `Box<T>`. |
+|[işleci kutusunda&lt;const volatile T&gt;^](#box-const-volatile-t) | Kutulama dönüşümlerse sağlayan bir `const volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`. |
+|[işleci kutusunda&lt;T&gt;^](#box-t) | Değer sınıfından kutulama dönüştürmeler sağlar `T` için `Box<T>`. |
+|[işleci kutusunda&lt;geçici T&gt;^](#box-volatile-t) | Kutulama dönüşümlerse sağlayan bir `volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`. |
+|[Box::operator T](#t) | Değer sınıfından kutulama dönüştürmeler sağlar `T` veya `enum` sınıfı `T` için `Box<T>`. |
+|[Value özelliği](#value) | İçinde kapsüllenir değeri döndürür `Box` nesne. |
+
 ## <a name="ctor"></a> Box::Box Oluşturucusu
 
-Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen. | |[ Özellik değeri](#value)| İçinde kapsüllenir değeri döndürür `Box` nesne. |
+Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen.
+
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp

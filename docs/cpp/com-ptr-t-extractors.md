@@ -20,12 +20,12 @@ helpviewer_keywords:
 - extractors, _com_ptr_t class
 - extractors [C++]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
-ms.openlocfilehash: 494507592222a7cd6334f2272c3a306e61e5d47f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bac1f9a139d2fb0092ef0869587ae8b54342fe82
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545983"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330326"
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
 
@@ -36,11 +36,11 @@ Kapsüllenmiş COM arabirimi işaretçisini ayıklayın.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-operator Interface*( ) const throw( ); 
-operator Interface&( ) const; 
-Interface& operator*( ) const; 
-Interface* operator->( ) const; 
-Interface** operator&( ) throw( ); 
+operator Interface*( ) const throw( );
+operator Interface&( ) const;
+Interface& operator*( ) const;
+Interface* operator->( ) const;
+Interface** operator&( ) throw( );
 operator bool( ) const throw( );
 ```
 

@@ -12,19 +12,19 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.openlocfilehash: c51bc5ecf2bc3a74b25a06320f0ca8fd64749f5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1c4c1b6f6c023514a1d3ae46f6670247e4bf99d4
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531153"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331743"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 
 ||||
 |-|-|-|
 |[İşleci&amp;](#op_amp)|[İşleci&gt;&gt;](#op_gt_gt)|[İşleci&lt;&lt;](#op_lt_lt)|
-|[operator ^](#op_xor)|[işleci|](#op_or)|
+|[operator ^](#op_xor)|[operator&#124;](#op_or)| |
 
 ## <a name="op_amp"></a>  İşleci&amp;
 
@@ -83,7 +83,6 @@ bitset 3: 0001
 Bit sırayı bir metin temsili çıkış akışına ekler.
 
 ```
-
 template <class CharType, class Traits, size_t N>
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,
@@ -141,7 +140,6 @@ int main( )
 Bir bitset bir bit karakter dizesini okur.
 
 ```
-
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
     basic_istream<CharType, Traits>&
@@ -275,7 +273,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  operator |
+## <a name="op_or"></a>  işleci&#124;
 
 Bit düzeyinde gerçekleştirir `OR` iki bitsets arasında.
 

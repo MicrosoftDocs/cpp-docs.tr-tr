@@ -1,12 +1,12 @@
 ---
 title: ARM64 özel durum işleme
 ms.date: 07/11/2018
-ms.openlocfilehash: 82775a61adf8437565b5bb691716451b225e72e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5189c399a4cbff071d2ec846008229ba76306882
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620603"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333595"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -56,7 +56,7 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getirme konuları bağlı olarak herhangi bir konumda fp ve lr çifti kaydedilebilir. Çerçeve işaretçisini (r29) veya yığın işaretçisi (sp) temel alan bir tek yönerge tarafından erişilebilen Yereller sayısı en üst düzeye çıkarmak için kullanılan hedeftir. Ancak için `alloca` İşlevler, zincirleme gerekir ve r29 yığının sonuna işaret etmelidir. Kalıcı daha iyi register çifti-adresleme-modu kapsamı için izin vermek için yerel yığın üstüne alanları konumlandırılır aave kaydedin. En verimli giriş dizilerini bazılarını gösteren örnekleri aşağıda verilmiştir. Açıklık ve daha iyi önbellek yerleşim yeri için tüm canonical açıklanabilmeleri içinde Çağrılan Kaydedilmiş Yazmaçlar depolamanın "yukarı büyüyen" sırayla sırasıdır. `#framesz` Aşağıda (alloca alanı dışında) tüm yığın boyutunu temsil eder. `#localsz` ve `#outsz` yerel boyutu belirtmek (kaydetme dahil olmak üzere alanı \<r29, lr > çifti) ve parametre boyutu sırasıyla giden.
 
-1. Zincirleme #localsz < = 512
+1. Zincirleme #localsz \<= 512
 
     ```asm
         stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
@@ -95,7 +95,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
         sub    sp,#framesz-72           // allocate the remaining local area
     ```
 
-   Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29, lr > Önceki çerçeveye işaret eder. Çerçeve boyutu için < = 512, "sub sp..." yığını altına kaydedilmiş regs alan taşınırsa hemen iyileştirilebilir. Olumsuz tarafı, söz konusu diğer yukarıdaki düzenleriyle tutarlı değil ve kaydedilen regs çifti regs ve öncesi ve sonrası dizinli uzaklık adresleme modu aralığının bir parçası olması ' dir.
+   Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29, lr > Önceki çerçeveye işaret eder. Çerçeve boyutu için \<= 512, "sub sp..." yığını altına kaydedilmiş regs alan taşınırsa hemen iyileştirilebilir. Olumsuz tarafı, söz konusu diğer yukarıdaki düzenleriyle tutarlı değil ve kaydedilen regs çifti regs ve öncesi ve sonrası dizinli uzaklık adresleme modu aralığının bir parçası olması ' dir.
 
 1. (Lr kaydedilen Int alanına kaydedilir) unchained ve yaprak olmayan işlevler
 
@@ -131,7 +131,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
 
    Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29 > Önceki çerçeveye işaret eder.
 
-1. Zincirleme #framesz < = 512, #outsz = 0
+1. Zincirleme #framesz \<= 512, #outsz = 0
 
     ```asm
         stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
@@ -283,40 +283,40 @@ Geriye doğru izleme kodları işlemlerin geri alınması gerekir sırada giriş
 
 Geriye doğru izleme kodları aşağıdaki tabloya göre kodlanır. Tüm geriye doğru izleme kodları dışındaki bir büyük yığın ayıran bir tek veya çift bayt olan. Tamamen 21 geriye doğru izleme kod vardır. Kısmen yürütülen açıklanabilmeleri ve sonuç, geriye doğru izleme izin vermek üzere her geriye doğru izleme kod eşlemeleri tam olarak bir yönergesinde giriş/sonuç.
 
-Kod geriye doğru izleme|BITS ve yorumu
+|Kod geriye doğru izleme|BITS ve yorumu|
 |-|-|
-`alloc_s`|000xxxxx: küçük yığın boyutu < 512 ile ayırın (2 ^ 5 * 16).
-`save_r19r20_x`|    001zzzzz: Kaydet \<r19, r20 > çifti, [sp #Z * 8]!, önceden dizinlenmiş uzaklığı >-248 =
-`save_fplr`|        01zzzzzz: Kaydet \<r29, lr > adresindeki pair [sp + #Z * 8], offset < 504 =.
-`save_fplr_x`|        10zzzzzz: Kaydet \<r29, lr > adresindeki pair [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 =
-`alloc_m`|        11000xxx\|xxxxxxxx: büyük yığın boyutu 16 k < ayırın (2 ^ 11 * 16).
-`save_regp`|        110010xx\|xxzzzzzz: r(19+#X) çifti, kaydetme [sp + #Z * 8], offset < 504 =
-`save_regp_x`|        110011xx\|xxzzzzzz: çifti r(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 =
-`save_reg`|        110100xx\|xxzzzzzz: reg r(19+#X) adresindeki Kaydet [sp + #Z * 8], offset < 504 =
-`save_reg_x`|        1101010 x\|xxxzzzzz: reg r(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 =
-`save_lrpair`|         1101011 x\|xxzzzzzz: çifti Kaydet \<r19 + 2 *#X, lr > konumundaki [sp + #Z*8], offset < 504 =
-`save_fregp`|        1101100 x\|xxzzzzzz: çifti d(8+#X) adresindeki Kaydet [sp + #Z * 8], offset < 504 =
-`save_fregp_x`|        1101101 x\|xxzzzzzz: adresindeki çifti d(8+#X) kaydetme [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 =
-`save_freg`|        1101110 x\|xxzzzzzz: reg d(8+#X) adresindeki Kaydet [sp + #Z * 8], offset < 504 =
-`save_freg_x`|        11011110\|xxxzzzzz: reg d(8+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 =
-`alloc_l`|         11100000\|xxxxxxxx\|xxxxxxxx\|xxxxxxxx: < 256 M boyutuyla büyük yığın ayırma (2 ^ 24 * 16)
-`set_fp`|        11100001: r29 ayarlayın: ile: mov r29 sp
-`add_fp`|        11100010\|xxxxxxxx: r29 ile ayarlayın: ekleme r29, sp, #x * 8
-`nop`|            11100011: hiçbir bırakma işlemi gerekiyor.
-`end`|            11100100: bırakma kod sonu. Gelir bölümünde ret.
-`end_c`|        11100101: zincirleme geçerli kapsamda geriye doğru izleme kodu sonu.
-`save_next`|        11100110: sonraki geçici olmayan Int kaydedin veya FP çifti kaydedin.
-`arithmetic(add)`|    11100111\| 000zxxxx: lr için tanımlama bilgisi reg(z) ekleyin (0 = x28, 1 = sp); lr, lr, reg(z) ekleyin
-`arithmetic(sub)`|    11100111\| 001zxxxx: tanımlama bilgisi reg(z) lr'nden alt (0 = x28, 1 = sp); sub lr, lr, reg(z)
-`arithmetic(eor)`|    11100111\| 010zxxxx: eor lr tanımlama bilgisi reg(z) ile (0 = x28, 1 = sp); eor lr, lr, reg(z)
-`arithmetic(rol)`|    11100111\| 0110xxxx: lr tanımlama bilgisi reg (x28) ile sanal rol; xip0 neg = x28; ror lr, xip0
-`arithmetic(ror)`|    11100111\| 100zxxxx: ror lr tanımlama bilgisi reg(z) ile (0 = x28, 1 = sp); ror lr, lr, reg(z)
-||            11100111: xxxz---:---ayrılmış
-||              11101xxx: aşağıdaki yalnızca asm rutinleri için oluşturulan özel yığının çalışmaları için ayrılmış
-||              11101001: özel yığının MSFT_OP_TRAP_FRAME için
-||              11101010: özel yığının MSFT_OP_MACHINE_FRAME için
-||              11101011: özel yığının MSFT_OP_CONTEXT için
-||              1111xxxx: ayrılmış
+|`alloc_s`|000xxxxx: küçük yığın boyutu ayırma \< 512 (2 ^ 5 * 16).|
+|`save_r19r20_x`|    001zzzzz: Kaydet \<r19, r20 > çifti, [sp #Z * 8]!, önceden dizinlenmiş uzaklığı >-248 = |
+|`save_fplr`|        01zzzzzz: Kaydet \<r29, lr > adresindeki pair [sp + #Z * 8], offset \<504 =. |
+|`save_fplr_x`|        10zzzzzz: Kaydet \<r29, lr > adresindeki pair [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
+|`alloc_m`|        11000xxx'xxxxxxxx: büyük yığın boyutu ayırma \< 16 k (2 ^ 11 * 16). |
+|`save_regp`|        110010xx'xxzzzzzz: r(19+#X) çifti, kaydetme [sp + #Z * 8], offset \<504 = |
+|`save_regp_x`|        110011xx'xxzzzzzz: çifti r(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
+|`save_reg`|        110100xx'xxzzzzzz: reg r(19+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
+|`save_reg_x`|        1101010 x'xxxzzzzz: reg r(19+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 = |
+|`save_lrpair`|         1101011 x'xxzzzzzz: çifti Kaydet \<r19 + 2 *#X, lr > konumundaki [sp + #Z*8], offset \<504 = |
+|`save_fregp`|        1101100 x'xxzzzzzz: çifti d(8+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
+|`save_fregp_x`|        1101101 x'xxzzzzzz: adresindeki çifti d(8+#X) kaydetme [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı > -512 = |
+|`save_freg`|        1101110 x'xxzzzzzz: reg d(8+#X) adresindeki Kaydet [sp + #Z * 8], offset \<504 = |
+|`save_freg_x`|        11011110' xxxzzzzz: reg d(8+#X) adresindeki Kaydet [sp-(#Z + 1) * 8]!, önceden dizinlenmiş uzaklığı >-256 = |
+|`alloc_l`|         11100000' xxxxxxxx 'xxxxxxxx' xxxxxxxx: büyük yığın boyutu ayırma \< 256 M (2 ^ 24 * 16) |
+|`set_fp`|        11100001: r29 ayarlayın: ile: mov r29 sp |
+|`add_fp`|        11100010' xxxxxxxx: r29 ile ayarlayın: ekleme r29, sp, #x * 8 |
+|`nop`|            11100011: hiçbir bırakma işlemi gerekiyor. |
+|`end`|            11100100: bırakma kod sonu. Gelir bölümünde ret. |
+|`end_c`|        11100101: zincirleme geçerli kapsamda geriye doğru izleme kodu sonu. |
+|`save_next`|        11100110: sonraki geçici olmayan Int kaydedin veya FP çifti kaydedin. |
+|`arithmetic(add)`|    11100111' 000zxxxx: lr için tanımlama bilgisi reg(z) ekleyin (0 = x28, 1 = sp); lr, lr, reg(z) ekleyin |
+|`arithmetic(sub)`|    11100111' 001zxxxx: tanımlama bilgisi reg(z) lr'nden alt (0 = x28, 1 = sp); Sub lr, lr, reg(z) |
+|`arithmetic(eor)`|    11100111' 010zxxxx: eor lr tanımlama bilgisi reg(z) ile (0 = x28, 1 = sp); eor lr, lr, reg(z) |
+|`arithmetic(rol)`|    11100111' 0110xxxx: lr tanımlama bilgisi reg (x28); ile sanal rol xip0 x28; neg = RoR lr, xip0 |
+|`arithmetic(ror)`|    11100111' 100zxxxx: ror lr tanımlama bilgisi reg(z) ile (0 = x28, 1 = sp); RoR lr, lr, reg(z) |
+| |            11100111: xxxz---:---ayrılmış |
+| |              11101xxx: aşağıdaki yalnızca asm rutinleri için oluşturulan özel yığının çalışmaları için ayrılmış |
+| |              11101001: özel yığının MSFT_OP_TRAP_FRAME için |
+| |              11101010: özel yığının MSFT_OP_MACHINE_FRAME için |
+| |              11101011: özel yığının MSFT_OP_CONTEXT için |
+| |              1111xxxx: ayrılmış |
 
 Birden fazla bayt kapsayan büyük değerlerle yönergelerde en önemli bitleri ilk depolanır. Yukarıdaki geriye doğru izleme kodları yalnızca kod ilk baytı bakarak geriye doğru izleme kodu bayt cinsinden toplam boyut bilmek mümkündür şekilde tasarlanmıştır. Her geriye doğru izleme kodu tam olarak bir giriş ve bitiş yönergesinde eşlenen düşünüldüğünde, giriş veya çıkış, boyutunu hesaplamak için yapmanız gereken tek şey dizinin başından sonuna kadar belirlemek için arama tablosu veya benzer bir cihaz kullanarak yürütmek için ne kadar süreyle düzeltme yanıt veren işlem kodu var.
 
@@ -382,7 +382,7 @@ Adım #|Bayrak değerleri|yönerge sayısı|Opcode|Kod geriye doğru izleme
 5d|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz < 4088 =|1.|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
 5e|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
-\*: Eğer **CR** 01 == ve **RegI** tek sayı, adım 2 ve 1. adımda son save_rep bir save_regp birleştirilir.
+\* Varsa **CR** 01 == ve **RegI** tek sayı, adım 2 ve 1. adımda son save_rep bir save_regp birleştirilir.
 
 \*\* Varsa **RegI** == **CR** == 0, ve **RegF** ! = 0 ise, ilk stp kayan nokta azaltma için.
 

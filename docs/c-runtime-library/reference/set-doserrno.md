@@ -25,12 +25,12 @@ helpviewer_keywords:
 - set_doserrno function
 - _doserrno global variable
 ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
-ms.openlocfilehash: a99d63b03aebd4a54ac50e98d5e5752e741fec85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 98b43c908a7ee48a89158c987fe64420f6639a79
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607304"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327791"
 ---
 # <a name="setdoserrno"></a>_set_doserrno
 
@@ -39,7 +39,7 @@ Ayarlar [_doserrno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-n
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _set_doserrno( int error_value );
+errno_t _set_doserrno( int error_value );
 ```
 
 ### <a name="parameters"></a>Parametreler

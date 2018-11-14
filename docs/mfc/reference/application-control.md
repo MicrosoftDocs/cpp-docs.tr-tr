@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-ms.openlocfilehash: 5c155605ceaada7083200dee255214ad68bdf6de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55a5dcad21502e7aff7427dbdad41d25298356e7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578938"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518924"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 
@@ -370,7 +370,6 @@ Bir denetim ile kilitli `AfxOleLockControl`, böylece denetimle ilişkili dinami
 // Unlock control's (Microsoft Calendar Control) class factory.
 
 AfxOleUnlockControl(_T("MSCAL.Calendar"));
-
 ```
 
 ### <a name="requirements"></a>Gereksinimler

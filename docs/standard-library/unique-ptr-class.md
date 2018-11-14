@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::unique_ptr [C++], reset
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
-ms.openlocfilehash: 00a29fc22c07cf54d4a26cd3353deef0b7a88acc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b0751d7716e2f8587ab410e57c2bea17c5dd3e21
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642202"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520978"
 ---
 # <a name="uniqueptr-class"></a>unique_ptr Sınıfı
 
@@ -303,7 +303,6 @@ Constructing Sample(3)
 Constructing Sample(42)
 Deleting Sample(42)
 Deleting Sample(3)
-
 ```
 
 ## <a name="reset"></a>  unique_ptr::reset

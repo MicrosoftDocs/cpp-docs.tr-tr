@@ -52,16 +52,16 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: a3520ed34f356c70163b9063178df48e4bc66a7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5e599b437f7660801a1eb40618eb49bee84a918
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583592"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556822"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
-Uygulamasını sağlar [ICommand](/previous-versions/windows/desktop/ms709737) arabirimi.
+Uygulamasını sağlar [ICommand](https://docs.microsoft.com/previous-versions/windows/desktop/ms709737(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,7 +119,7 @@ STDMETHOD(Cancel)();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ICommand::Cancel](/previous-versions/windows/desktop/ms714402) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommand::Cancel](https://docs.microsoft.com/previous-versions/windows/desktop/ms714402(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="cancelexecution"></a> Icommandımpl::cancelexecution
 
@@ -178,7 +178,7 @@ Standart bir HRESULT değerini. Bkz: `ICommand::Execute` genel değerler listesi
 
 Birden fazla satır kümesi oluşturmak için ya da farklı satır kümeleri oluşturmak için kendi koşulları sağlamak için farklı çağrıları yerleştirin `CreateRowset` içinden `Execute`.
 
-Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095) içinde *OLE DB Programcının Başvurusu.*
+Bkz: [ICommand::Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu.*
 
 ## <a name="execute"></a> Icommandımpl::Execute
 
@@ -196,7 +196,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommand::Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -217,7 +217,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommand::GetDBSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms719622(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 

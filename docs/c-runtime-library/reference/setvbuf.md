@@ -23,12 +23,12 @@ helpviewer_keywords:
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-ms.openlocfilehash: b2a5cfc08da7812e32ad84940ab4c78288017720
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4336c6cc478a035fcc0b9b059a7161d58bc4442
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445779"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328103"
 ---
 # <a name="setvbuf"></a>setvbuf
 
@@ -75,9 +75,9 @@ Modu olmalıdır **_ıofbf**, **_ıolbf**, veya **_ıonbf**. Varsa *modu* olduğ
 
 |*modu* değeri|Açıklama|
 |-|-|
-**_IOFBF**|Tam arabelleğe; diğer bir deyişle, *arabellek* arabellek olarak kullanılır ve *boyutu* arabellek boyutu kullanılır. Varsa *arabellek* olduğu **NULL**, otomatik olarak ayrılan bir arabellek *boyutu* bayt uzunluğundadır kullanılır.
-**_IOLBF**|Bazı sistemler için bu satırı arabelleğe almayı sağlar. Ancak, Win32 için aynı davranıştır **_ıofbf** -tam arabelleğe alma.
-**_IONBF**|Arabellek kullanılan, bakılmaksızın *arabellek* veya *boyutu*.
+| **_IOFBF** | Tam arabelleğe; diğer bir deyişle, *arabellek* arabellek olarak kullanılır ve *boyutu* arabellek boyutu kullanılır. Varsa *arabellek* olduğu **NULL**, otomatik olarak ayrılan bir arabellek *boyutu* bayt uzunluğundadır kullanılır. |
+| **_IOLBF** | Bazı sistemler için bu satırı arabelleğe almayı sağlar. Ancak, Win32 için aynı davranıştır **_ıofbf** -tam arabelleğe alma. |
+| **_IONBF** | Arabellek kullanılan, bakılmaksızın *arabellek* veya *boyutu*. |
 
 ## <a name="requirements"></a>Gereksinimler
 

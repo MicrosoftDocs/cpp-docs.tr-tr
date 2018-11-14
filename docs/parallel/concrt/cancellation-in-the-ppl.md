@@ -9,12 +9,12 @@ helpviewer_keywords:
 - parallel work trees [Concurrency Runtime]
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-ms.openlocfilehash: b776aedb71f81d7dc27f9322ed87fd080c8819a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1a762f97cf144c39043203dbf68d927b2cbd0e4
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558736"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327427"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 
@@ -90,13 +90,12 @@ Aşağıdaki örnek, görev iptali için ilk temel düzeni gösterir. Görevin g
 `cancel_current_task` İşlev oluşturur; bu nedenle açıkça geçerli döngü ya da işlev dönüş gerekmez.
 
 > [!TIP]
-
->  Alternatif olarak, çağırabilirsiniz [concurrency::interruption_point](reference/concurrency-namespace-functions.md#interruption_point) yerine işlev `cancel_current_task`.
+> Alternatif olarak, çağırabilirsiniz [concurrency::interruption_point](reference/concurrency-namespace-functions.md#interruption_point) yerine işlev `cancel_current_task`.
 
 Çağrılacak önemlidir `cancel_current_task` ne zaman yanıt iptali için çünkü görev iptal edildi durumuna geçer. Çağırmak yerine erken dönüş yaparsa `cancel_current_task`işlemi tamamlanmış duruma geçer ve herhangi bir değer tabanlı devamlılık çalıştırılır.
 
 > [!CAUTION]
->  Hiçbir zaman throw `task_canceled` kodunuzdan. Çağrı `cancel_current_task` yerine.
+> Hiçbir zaman throw `task_canceled` kodunuzdan. Çağrı `cancel_current_task` yerine.
 
 Bir görev iptal edildi durumunda sona erdiğinde [CONCURRENCY::Task:: get](reference/task-class.md#get) yöntem [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). (Buna karşılık, [CONCURRENCY::Task:: wait](reference/task-class.md#wait) döndürür [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status) ve oluşturmaz.) Aşağıdaki örnek, bir görev tabanlı devamlılık için bu davranış gösterir. Hatta öncül görev iptal edildiğinde görev tabanlı devamlılık her zaman çağrılır.
 
@@ -107,8 +106,7 @@ Bunlar açık bir belirteç ile oluşturulan sürece değer tabanlı devamlılı
 [!code-cpp[concrt-task-canceled#2](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_4.cpp)]
 
 > [!CAUTION]
-
->  Bir iptal belirteci için geçirmezseniz `task` Oluşturucusu veya [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) işlevi, bu görev değil edilebilen. Ayrıca, tüm iç içe geçmiş görevler (diğer bir deyişle, başka bir görev gövdesinde oluşturulan görevler) oluşturucusuna aynı iptal belirtecini geçmesi gereken tüm görevleri aynı anda iptal etmek için.
+> Bir iptal belirteci için geçirmezseniz `task` Oluşturucusu veya [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) işlevi, bu görev değil edilebilen. Ayrıca, tüm iç içe geçmiş görevler (diğer bir deyişle, başka bir görev gövdesinde oluşturulan görevler) oluşturucusuna aynı iptal belirtecini geçmesi gereken tüm görevleri aynı anda iptal etmek için.
 
 Bir iptal belirteci iptal edildiğinde rasgele kodu çalıştırmak isteyebilirsiniz. Örneğin, kullanıcı seçerse bir **iptal** düğmesi kullanıcı başka bir işlemi başlayana kadar işlemi iptal etmek için kullanıcı arabiriminde, bu düğmeyi devre dışı bırakılamadı. Aşağıdaki örnek nasıl kullanılacağını gösterir [CONCURRENCY::cancellation_token:: register_callback](reference/cancellation-token-class.md#register_callback) bir iptal belirteci iptal edildiğinde, çalışan bir geri çağırma işlevini kaydetmek için yöntemi.
 
@@ -123,11 +121,10 @@ Belge [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-r
 Bu davranışların bir hatalı göreviyle (diğer bir deyişle, bir özel durum oluşturan) etkilenmez. Bu durumda, bir değer tabanlı devamlılık iptal edildi; bir görev tabanlı devamlılık iptal edilmedi.
 
 > [!CAUTION]
->  Başka bir görev (diğer bir deyişle, iç içe bir görevdir) oluşturulan bir görev üst görevin iptal belirtecini devralmaz. Yalnızca bir değer tabanlı devamlılık, öncül görev iptal belirtecini devralır.
+> Başka bir görev (diğer bir deyişle, iç içe bir görevdir) oluşturulan bir görev üst görevin iptal belirtecini devralmaz. Yalnızca bir değer tabanlı devamlılık, öncül görev iptal belirtecini devralır.
 
 > [!TIP]
-
->  Kullanım [concurrency::cancellation_token:: none](reference/cancellation-token-class.md#none) bir oluşturucu veya alan işlev çağırdığınızda yöntemi bir `cancellation_token` nesne ve işlem edilebilen olmasını istemiyorsanız.
+> Kullanım [concurrency::cancellation_token:: none](reference/cancellation-token-class.md#none) bir oluşturucu veya alan işlev çağırdığınızda yöntemi bir `cancellation_token` nesne ve işlem edilebilen olmasını istemiyorsanız.
 
 Ayrıca bir iptal belirteci oluşturucusuna sağlayabilir bir `task_group` veya `structured_task_group` nesne. Bu önemli bir yönüdür alt görev grupları bu iptal belirteci Devral ' dir. Bu kavramı kullanarak gösteren bir örnek için [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) işlevi çağırmak için çalıştırılacak `parallel_for`, bkz: [paralel algoritmaları iptal etme](#algorithms) daha sonra bu Belge.
 

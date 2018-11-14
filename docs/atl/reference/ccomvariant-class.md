@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: dd53bdea211610b208516860b29c1b0094f5a4da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a6ad49533028dbcb8c45b63c55a51090533137e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523276"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522499"
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 
@@ -98,7 +98,7 @@ HRESULT Attach(VARIANT* pSrc);
 ### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-[in] İşaret [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) nesnesine eklenecek.
+[in] İşaret [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) nesnesine eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -242,7 +242,7 @@ HRESULT Copy(const VARIANT* pSrc);
 ### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-[in] Bir işaretçi [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) kopyalanacak.
+[in] Bir işaretçi [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -342,7 +342,7 @@ CComVariant& operator=(char cSrc) throw();
 ### <a name="parameters"></a>Parametreler
 
 *varSrc*<br/>
-[in] `CComVariant` Veya [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) atanacak `CComVariant` nesne. Kaynak değişken içeriğini hedef dönüştürme olmadan kopyalanır.
+[in] `CComVariant` Veya [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) atanacak `CComVariant` nesne. Kaynak değişken içeriğini hedef dönüştürme olmadan kopyalanır.
 
 *bstrSrc*<br/>
 [in] Atanacak BSTR `CComVariant` nesne. Türünü `CComVariant` nesne VT_BSTR olacaktır.

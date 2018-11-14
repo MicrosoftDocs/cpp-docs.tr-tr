@@ -1,6 +1,6 @@
 ---
 title: Cstockpropımpl sınıfı
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 f1_keywords:
 - CStockPropImpl
 - ATLCTL/ATL::CStockPropImpl
@@ -64,33 +64,33 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 7befbce6e062bdb7944c2ed1f351d6927adfd75a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff7610d85d73a99d55d6181fad178d0b12be0c32
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480866"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332432"
 ---
 # <a name="cstockpropimpl-class"></a>Cstockpropımpl sınıfı
 
 Bu sınıf, stok özellik değerleri desteklemek için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class InterfaceName,
+template <
+    class T, 
+    class InterfaceName,
     const IID* piid = &_ATL_IIDOF(InterfaceName),
     const GUID* plibid = &CComModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>
-class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
-plibid,
-    wMajor,
-wMinor,
-    tihclass>
+    WORD wMinor = 0, 
+    class tihclass = CcomTypeInfoHolder>
+class ATL_NO_VTABLE CStockPropImpl :
+    public IDispatchImpl<InterfaceName, piid, plibid, wMajor, wMinor, tihclass>
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -949,7 +949,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 ### <a name="parameters"></a>Parametreler
 
-*/&ast; hWnd &ast;/*<br/>
+*hWnd*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri

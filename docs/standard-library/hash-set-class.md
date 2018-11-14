@@ -86,12 +86,12 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-ms.openlocfilehash: 12f177887552cb14edba6ae8cfeeab1abe24a45b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0668342468e30733f8257ccd2682bfe785551857
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657515"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333608"
 ---
 # <a name="hashset-class"></a>hash_set Sınıfı
 
@@ -565,7 +565,7 @@ hash_set eşleşen bir anahtar ile bir öğe yoksa 0.
 
 Üye işlevi, şu aralıktaki öğelerin sayısını döndürür:
 
-[ **lower_bound** (_ *anahtarı* ), **upper_bound** (\_ *anahtarı* )).
+\[ lower_bound (*anahtarı*), upper_bound (*anahtarı*)).
 
 ### <a name="example"></a>Örnek
 
@@ -1534,7 +1534,7 @@ Daha fazla bilgi için *nitelikler* bkz [hash_set sınıfı](../standard-library
 
 Depolanan nesne üyesi işlevini tanımlar:
 
-**bool işleci**( **const anahtar &** _ *xVal*, **const anahtar &** \_ `yVal`);
+`bool operator( const Key& _xVal, const Key& _yVal );`
 
 döndüren **true** varsa `_xVal` önündeki ve eşit değildir `_yVal` sıralama düzeninde.
 
@@ -2296,7 +2296,7 @@ Daha fazla bilgi için *karşılaştırma*, Açıklamalar bölümüne bakın [ha
 
 Depolanan nesne üyesi işlevini tanımlar:
 
-**bool işleci**( **const anahtar &** _ *xVal*, **const anahtar &** \_ `yVal`);
+`bool operator( const Key& _xVal, const Key& _yVal );`
 
 döndüren **true** varsa `_xVal` önündeki ve eşit değildir `_yVal` sıralama düzeninde.
 

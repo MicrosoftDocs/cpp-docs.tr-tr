@@ -7,12 +7,12 @@ helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-ms.openlocfilehash: 5c2dd98ad3f74ac56b3656ac5f6f450efc40c088
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2097ec50eca68cbe5735d30e772644552ab0df3b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522986"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329026"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 
@@ -23,8 +23,8 @@ Genişletilmiş x64 yayan kesilmesi tek duyarlıklı Floating-Point numarası 64
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__int64 _mm_cvttss_si64x( 
-   __m128 value 
+__int64 _mm_cvttss_si64x(
+   __m128 value
 );
 ```
 

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::basic_filebuf [C++], uflow
 - std::basic_filebuf [C++], underflow
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
-ms.openlocfilehash: fcf673d8e6d871a7920150b5f62fd3d62135b52c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 817e7fb2b434d06d6c0dfdfc100be8004f6fa4ef
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500535"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332653"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf Sınıfı
 
@@ -504,11 +504,11 @@ Karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürür `traits_type::eof`. Aksi halde **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+İşlev başarılı olursa, döndürür `traits_type::eof`. Aksi halde **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(*\_Meta*).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi bir öğe giriş belleğe geri alır ve ardından (sonraki işaretçisi tarafından işaret edilen) geçerli öğe yapar. _ *Meta* **traits_type ==::**[eof](../standard-library/char-traits-struct.md#eof), geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
+Korumalı sanal üye işlevi bir öğe giriş belleğe geri alır ve ardından (sonraki işaretçisi tarafından işaret edilen) geçerli öğe yapar. Varsa  *\_Meta* **traits_type ==::**[eof](../standard-library/char-traits-struct.md#eof), geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
 
 - Putback konum kullanılabilir ve burada depolanan öğenin eşit karşılaştırır `ch`, sonraki işaretçisi giriş arabelleği için azaltma.
 

@@ -48,12 +48,12 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-ms.openlocfilehash: a4294c520339d09b51108410458f6f80d8c04824
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab97238cf13accf3db593b5c4a81550297a53d6d
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539492"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330235"
 ---
 # <a name="variantt-extractors"></a>_variant_t Ayıklayıcıları
 
@@ -64,16 +64,16 @@ Kapsüllenmiş verileri ayıklamak `VARIANT` nesne.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-operator short( ) const; 
-operator long( ) const; 
-operator float( ) const; 
-operator double( ) const; 
-operator CY( ) const; 
-operator _bstr_t( ) const; 
-operator IDispatch*( ) const; 
-operator bool( ) const; 
-operator IUnknown*( ) const; 
-operator DECIMAL( ) const; 
+operator short( ) const;
+operator long( ) const;
+operator float( ) const;
+operator double( ) const;
+operator CY( ) const;
+operator _bstr_t( ) const;
+operator IDispatch*( ) const;
+operator bool( ) const;
+operator IUnknown*( ) const;
+operator DECIMAL( ) const;
 operator BYTE( ) const;
 operator VARIANT() const throw();
 operator char() const;

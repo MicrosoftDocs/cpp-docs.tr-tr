@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _tfdopen function
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-ms.openlocfilehash: c68bc835adf19df7f1538d30b2be162fe6dc6021
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0cde110bf1dd12c23a6b0b658809502743d9edd3
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584463"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327167"
 ---
 # <a name="fdopen-wfdopen"></a>_fdopen, _wfdopen
 
@@ -85,25 +85,25 @@ Dosya tanımlayıcıları yöntemlere geçirilen **_fdopen** ait olan tarafında
 
 *Modu* karakter dizesi, dosya için istenen dosya erişim türünü belirtir:
 
-|*Modu*|Access|
-|-|-|
-**"r"**|Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **fopen** çağrısı başarısız olur.
-**"w"**|Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.
-**"a"**|(Ekleme) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur.
-**"r +"**|Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir.
-**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir.
-**"a +"**|Okuma ve ekleme için açar. Henüz yoksa dosyayı oluşturur.
+| *Modu* | Access |
+|--------|--------|
+| **"r"** | Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **fopen** çağrısı başarısız olur. |
+| **"w"** | Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir. |
+| **"a"** | (Ekleme) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur. |
+| **"r +"** | Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir. |
+| **"w +"** | Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir. |
+| **"a +"** | Okuma ve ekleme için açar. Henüz yoksa dosyayı oluşturur. |
 
 Ne zaman bir dosya açıldığında ile **"a"** veya **"a +"** erişim türü, tüm yazma işlemleri dosyanın sonunda gerçekleşir. Dosya işaretçisini kullanarak konumlandırılabilir [fseek](fseek-fseeki64.md) veya [rewind](rewind.md), ancak herhangi bir işlemi yazma önce her zaman geri dosyanın sonuna kadar taşınır. Bu nedenle, var olan verilerin üzerine yazılamaz. Zaman **"r +"**, **"w +"**, veya **"a +"** erişim türü belirtildiğinde, hem okumaya hem yazmaya izin verilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma ve okuma arasında geçiş yaptığınızda, olmalıdır bir araya giren [fflush](fflush.md), [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), veya [rewind](rewind.md) işlem. Geçerli konumu için belirttiğiniz [fsetpos](fsetpos.md) veya [fseek](fseek-fseeki64.md) isterseniz işlemi.
 
 Yukarıdaki değerlerden ek olarak, şu karakterleri de eklenebilir *modu* yeni satır karakterlerinin çeviri modu belirtmek için:
 
-|*modu* değiştiricisi|Davranış|
-|-|-|
-**T**|Açık metin (çevrilmiş) modunda. Bu modda, satır başı satır besleme (CR-LF) kombinasyonları girişte satır akışlarını (LF) çevrilir ve LF karakterleri için çıkış CR-LF kombinasyonlarına çevrilir. Ayrıca, Ctrl + Z girişteki bir dosya sonu karakteri olarak yorumlanır.
-**b**|İkili (çevrilmemiş) modda açın. Tüm çevirilerden **t** modu gizlenir.
-**c**|İlişkili için bayrak kaydetmeyi etkinleştir *filename* dosya tamponunun içeriği doğrudan diske yazılır, böylece **fflush** veya **_flushall** çağrılır.
-**n**|İlişkili tamamlama bayrağı sıfırlar *filename* için "no-commit." Bu varsayılandır. Ayrıca programınızı Commode.obj ile bağlarsanız genel tamamlama bayrağını geçersiz kılar. Programınızı Commode.obj ile açıkça bağlantı sürece, küresel kaydetme bayrağı varsayılan "no-commit".
+| *modu* değiştiricisi | Davranış |
+|-----------------|----------|
+| **T** | Açık metin (çevrilmiş) modunda. Bu modda, satır başı satır besleme (CR-LF) kombinasyonları girişte satır akışlarını (LF) çevrilir ve LF karakterleri için çıkış CR-LF kombinasyonlarına çevrilir. Ayrıca, Ctrl + Z girişteki bir dosya sonu karakteri olarak yorumlanır. |
+| **b** | İkili (çevrilmemiş) modda açın. Tüm çevirilerden **t** modu gizlenir. |
+| **c** | İlişkili için bayrak kaydetmeyi etkinleştir *filename* dosya tamponunun içeriği doğrudan diske yazılır, böylece **fflush** veya **_flushall** çağrılır. |
+| **n** | İlişkili tamamlama bayrağı sıfırlar *filename* için "no-commit." Bu varsayılandır. Ayrıca programınızı Commode.obj ile bağlarsanız genel tamamlama bayrağını geçersiz kılar. Programınızı Commode.obj ile açıkça bağlantı sürece, küresel kaydetme bayrağı varsayılan "no-commit". |
 
 **t**, **c**, ve **n** *modu* seçenekleri için Microsoft genişletmeleridir **fopen** ve **_fdopen**. ANSI taşınabilirliğinin korumak istiyorsanız, bunları kullanmayın.
 

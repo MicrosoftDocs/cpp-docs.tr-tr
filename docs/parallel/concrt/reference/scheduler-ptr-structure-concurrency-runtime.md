@@ -8,12 +8,12 @@ f1_keywords:
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-ms.openlocfilehash: 7fd81a1ccf6702c74a013c5772d59f01121b61a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0da45fa18d12b3f1c93df6b8c8736ed1bfb58ade
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479228"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525013"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr yapısı
 
@@ -58,7 +58,7 @@ struct scheduler_ptr;
 
 ##  <a name="get"></a>  scheduler_ptr::GET yöntemi
 
-Zamanlayıcıya ham işaretçiyi döndürür
+Zamanlayıcıya ham işaretçiyi döndürür.
 
 ```
 scheduler_interface* get() const;
@@ -68,39 +68,39 @@ scheduler_interface* get() const;
 
 ##  <a name="operator_bool"></a>  scheduler_ptr::operator bool
 
-Zamanlayıcı işaretçisinin null dışında değer olup olmadığını test edin
+Zamanlayıcı işaretçisinin null dışında değer olup olmadığını sınar.
 
-'''operator bool() const;
+```
+operator bool() const;
 ```
 
 ##  <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;
 
-Behave like a pointer
+Bir işaretçi gibi davranır.
 
 ```
-scheduler_interface * işleci (const) ->;
+scheduler_interface* operator->() const;
 ```
 
-### Return Value
+### <a name="return-value"></a>Dönüş Değeri
 
-##  <a name="ctor"></a>  scheduler_ptr::scheduler_ptr Constructor
+##  <a name="ctor"></a>  scheduler_ptr::scheduler_ptr Oluşturucusu
 
-Creates a scheduler pointer from shared_ptr to scheduler
+Bir zamanlayıcı işaretçisi shared_ptr'den zamanlayıcıya oluşturur.
 
 ```
-Açık scheduler_ptr (std::shared_ptr < scheduler_interface > Zamanlayıcı);
-
-Açık scheduler_ptr (_In_opt_ pScheduler scheduler_interface *);
+explicit scheduler_ptr(std::shared_ptr<scheduler_interface> scheduler);
+explicit scheduler_ptr(_In_opt_ scheduler_interface* pScheduler);
 ```
 
-### Parameters
+### <a name="parameters"></a>Parametreler
 
 *scheduler*<br/>
-The scheduler to convert.
+Dönüştürülecek Zamanlayıcı.
 
 *pScheduler*<br/>
-The scheduler pointer to convert.
+Dönüştürülecek Zamanlayıcı işaretçisi.
 
-## See Also
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[concurrency Namespace](concurrency-namespace.md)
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

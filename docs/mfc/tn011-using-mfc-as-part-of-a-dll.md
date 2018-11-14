@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: e709404ed6e0ba79159131de1cbff80905e9f216
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1c98056d5a5e2565e57044b1fb551db4f354f34
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517659"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326211"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
 
@@ -33,7 +33,7 @@ Normal MFC DLL'leri çeşitli avantajları vardır:
 
 - Normal MFC, MFC DLL'lerine DLL'ler ile kullanılan ve bağlı olan yalnızca MFC ve C çalışma zamanı yordamları üzerinde DLL boyutuna bağlıdır.
 
-- Normal MFC dinamik olarak MFC'ye bağlanan DLL'ler ile tasarruf kullanarak MFC'nin paylaşılan sürümünden belleğe önemli olabilir. Bununla birlikte, paylaşılan dll, Mfc dağıtmanız gerekir*\<sürüm >*.dll ve Msvvcrt*\<sürüm >*.dll, DLL dosyanız ile.
+- Normal MFC dinamik olarak MFC'ye bağlanan DLL'ler ile tasarruf kullanarak MFC'nin paylaşılan sürümünden belleğe önemli olabilir. Bununla birlikte, paylaşılan dll, Mfc dağıtmanız gerekir\<*sürüm*> .dll ve Msvvcrt\<*sürüm*> .dll, DLL dosyanız ile.
 
 - DLL tasarım sınıfları nasıl uygulandığını bağımsızdır. DLL tasarımınızı istediğiniz API'leri yalnızca dışarı aktarır. Sonuç olarak, uygulama değişirse, Normal MFC DLL'leri hala geçerli.
 

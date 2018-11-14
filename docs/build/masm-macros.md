@@ -2,12 +2,12 @@
 title: MASM Makroları
 ms.date: 11/04/2016
 ms.assetid: 21410432-72fc-4795-bc93-e78123f9f14f
-ms.openlocfilehash: 837541706c69f86e376463c373c070316134ebca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a00852a3a763aae5fda34d7e0fde664997a0bdb
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523255"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328831"
 ---
 # <a name="masm-macros"></a>MASM Makroları
 
@@ -29,7 +29,7 @@ Kullanımını kolaylaştırmak için [ham sözde işlemler](../build/raw-pseudo
 
 ```asm
 SkFrame struct
-Fill    dq ?; fill to 8 mod 16
+Fill    dq ?; fill to 8 mod 16
 SavedRdi dq ?; saved register RDI
 SavedRsi dq ?; saved register RSI
 SkFrame ends

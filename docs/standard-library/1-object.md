@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - _1 object
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-ms.openlocfilehash: 248bb4733849b231ee4ff9180dd04e288412af3b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 183df5c2ff039ff9438b1a00c63318e16dc84c37
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666374"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518704"
 ---
 # <a name="1-object"></a>_1 Nesnesi
 
@@ -69,7 +69,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2298
 ms.assetid: eb0120ad-c850-4bdd-911d-0361229cc859
-ms.openlocfilehash: 134a38622e5333f61427a6bea49bb821b9a11279
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34957d226f10b4ac27f13be6746eac241101b516
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446207"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332055"
 ---
 # <a name="compiler-error-c2298"></a>Derleyici Hatası C2298
 
@@ -67,9 +67,9 @@ void F() {}
 class Measure {
 public:
    void SetTrackingFunction(void (Measure::*fnc)()) {
-      TrackingFunction = this->*fnc;   // C2298
-      TrackingFunction = fnc;   // OK
-      GlobalTracker = F;   // OK
+      TrackingFunction = this->*fnc;   // C2298
+      TrackingFunction = fnc;   // OK
+      GlobalTracker = F;   // OK
    }
 private:
    void (Measure::*TrackingFunction)(void);

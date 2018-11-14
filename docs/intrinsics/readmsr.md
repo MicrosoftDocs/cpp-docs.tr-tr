@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rdmsr instruction
 - __readmsr intrinsic
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
-ms.openlocfilehash: 45e9c21eb8d9ac213812236a91c050c3c9df8f8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 891ca43af4a81b63de39d367ea418e43811f78d0
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641070"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326413"
 ---
 # <a name="readmsr"></a>__readmsr
 
@@ -24,8 +24,8 @@ Oluşturur `rdmsr` tarafından belirtilen modele özgü yazmacını okuyarak yö
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__int64 __readmsr( 
-   int register 
+__int64 __readmsr(
+   int register
 );
 ```
 

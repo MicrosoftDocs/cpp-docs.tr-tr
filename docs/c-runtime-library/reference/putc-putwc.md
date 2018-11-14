@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _puttc function
 - puttc function
 ms.assetid: a37b2e82-9d88-4565-8190-ff8d04c0ddb9
-ms.openlocfilehash: 05bbb5434e6626076aab0d574b04058ec730b77c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de87ca4996540737dad319fc920f4c76415250b9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444701"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330887"
 ---
 # <a name="putc-putwc"></a>putc, putwc
 
@@ -63,7 +63,7 @@ Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan karakteri döndürür. Bir hata veya dosya sonu koşulu belirtmek için **putc** ve **putchar** dönüş ** EOF`; **putwc` ve **putwchar** dönüş **WEOF**. Tüm dört yordamları için kullanmak [ferror](ferror.md) veya [feof](feof.md) bir hata veya dosya sonunu denetlemek için. Geçirilen bir null işaretçi *stream*, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** veya **WEOF** ayarlayıp **errno** için **EINVAL**.
+Yazılan karakteri döndürür. Bir hata veya dosya sonu koşulu belirtmek için **putc** ve **putchar** dönüş **EOF**; **putwc** ve **putwchar** dönüş **WEOF**. Tüm dört yordamları için kullanmak [ferror](ferror.md) veya [feof](feof.md) bir hata veya dosya sonunu denetlemek için. Geçirilen bir null işaretçi *stream*, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** veya **WEOF** ayarlayıp **errno** için **EINVAL**.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
 

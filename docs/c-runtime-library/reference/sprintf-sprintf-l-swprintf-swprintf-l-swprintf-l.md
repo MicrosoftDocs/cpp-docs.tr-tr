@@ -45,12 +45,12 @@ helpviewer_keywords:
 - sprintf_l function
 - formatted text [C++]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
-ms.openlocfilehash: d24ea0c83d934afe81368a9fe734c2a39d08c3d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 875cd5eca56511c2b421584766584c0c974cd775
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451508"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521875"
 ---
 # <a name="sprintf-sprintfl-swprintf-swprintfl-swprintfl"></a>sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
@@ -102,7 +102,6 @@ int _sprintf_l(
    locale_t locale [,
    argument] ...
 ); // C++ only
-
 ```
 
 ### <a name="parameters"></a>Parametreler

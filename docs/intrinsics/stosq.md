@@ -8,12 +8,12 @@ helpviewer_keywords:
 - stosq instruction
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-ms.openlocfilehash: 48c3e8db2683ee190a23974d12d36fbeef6a0094
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f395a8b0fc7194f36bb3388d631628a829f33aca
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477473"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331314"
 ---
 # <a name="stosq"></a>__stosq
 
@@ -24,10 +24,10 @@ Bir depolama dize yönergesi oluşturur (`rep stosq`).
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __stosb( 
-   unsigned __int64* Dest, 
-   unsigned __int64 Data, 
-   size_t Count 
+void __stosb(
+   unsigned __int64* Dest,
+   unsigned __int64 Data,
+   size_t Count
 );
 ```
 

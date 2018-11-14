@@ -2,12 +2,12 @@
 title: '&lt;cstdbool&gt;'
 ms.date: 11/04/2016
 ms.assetid: 44ccb8b2-d808-4715-8097-58ba09ab33ed
-ms.openlocfilehash: 4c47cfb3e04626f8bc029a1f25b1d05fb29011db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d9b0ec81e0364b409b4518beb291a56648a6ab1
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510103"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518118"
 ---
 # <a name="ltcstdboolgt"></a>&lt;cstdbool&gt;
 
@@ -17,7 +17,6 @@ Standart C Kitaplığı üstbilgisi içerir \<stdbool.h > ve ilişkili adlar ekl
 
 ```cpp
 #include <cstdbool>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

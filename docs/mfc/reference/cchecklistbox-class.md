@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-ms.openlocfilehash: 72038e119f7d4483dcd6c6b343d20fd3655856b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3bf93a876f9092d5615b75ca45fea71341d3557
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533880"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327349"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox sınıfı
 
@@ -80,13 +80,13 @@ Liste kutusu tarafından yollanır Windows bildirim iletilerini işlemek isterse
 
 Her ileti eşleme girişi aşağıdaki biçimi alır:
 
-**ON_** bildirim **(**`id`, `memberFxn` **)**
+**ON\_**_bildirim_ **(** _kimliği_, _memberFxn_ **)**
 
 Burada `id` bildirimi gönderilmesi denetimi alt pencere Kimliğini belirtir ve `memberFxn` bildirimini işlemek için yazdığınız üst üye işlev adıdır.
 
 Üst öğenin işlev prototipi aşağıdaki gibidir:
 
-**afx_msg** `void` `memberFxn` **();**
+`afx_msg void memberFxn();`
 
 Özellikle çok ilgilidir yalnızca bir ileti eşleme giriş `CCheckListBox` (ancak ileti eşlemesi girişleri için Ayrıca bkz: [CListBox](../../mfc/reference/clistbox-class.md)):
 

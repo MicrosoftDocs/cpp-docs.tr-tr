@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - bitand function
 ms.assetid: 279cf9b5-fac1-49de-b329-f1a31b3481fe
-ms.openlocfilehash: d5e57254d749409df1534db7bf03057cc45cded1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dabe6add3e0fd2711b9149d4fdad88a8dad4871a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533256"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517767"
 ---
 # <a name="bitand"></a>bitand
 
@@ -36,7 +36,6 @@ Alternatif & işleci.
 ```C
 
 #define bitand &
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - outdword instruction
 - __outdword intrinsic
 ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
-ms.openlocfilehash: 42507cec8932d3c6fa4482f4e296e76753cee896
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd2192842e2122ebb65dcfba9f1f68ec5fc468d5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428177"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331236"
 ---
 # <a name="outdword"></a>__outdword
 
@@ -24,9 +24,9 @@ Oluşturur `out` bir doubleword göndermek için yönerge `Data` çıkış bağl
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outdword( 
-   unsigned short Port, 
-   unsigned long Data 
+void __outdword(
+   unsigned short Port,
+   unsigned long Data
 );
 ```
 

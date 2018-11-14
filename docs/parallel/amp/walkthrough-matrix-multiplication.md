@@ -1,13 +1,13 @@
 ---
 title: 'İzlenecek yol: Matris Çarpım'
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: a8f43f5b9df0726c9c01f940965b77b856e35430
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9516cf79b738ec03dd98133a4603b47f75eb2c8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647467"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327115"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 
@@ -27,15 +27,15 @@ Başlamadan önce:
 
 1. Visual Studio menü çubuğunda seçin **dosya** > **yeni** > **proje**.
 
-2. Altında **yüklü** Şablonlar bölmesinde seçin **Visual C++**.
+1. Altında **yüklü** Şablonlar bölmesinde seçin **Visual C++**.
 
-3. Seçin **boş proje**, girin `MatrixMultiply` içinde **adı** kutusuna ve ardından **Tamam** düğmesi.
+1. Seçin **boş proje**, girin *MatrixMultiply* içinde **adı** kutusuna ve ardından **Tamam** düğmesi.
 
-4. Seçin **sonraki** düğmesi.
+1. Seçin **sonraki** düğmesi.
 
-5. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **kaynak dosyaları**ve ardından **Ekle** > **yeni öğe**.
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **kaynak dosyaları**ve ardından **Ekle** > **yeni öğe**.
 
-6. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**, girin `MatrixMultiply.cpp` içinde **adı** kutusuna ve ardından **Ekle** düğmesi.
+1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **C++ dosyası (.cpp)**, girin *MatrixMultiply.cpp* içinde **adı** kutusuna ve ardından  **Ekleme** düğmesi.
 
 ## <a name="multiplication-without-tiling"></a>Çarpma döşeme olmadan
 
@@ -47,7 +47,7 @@ Bu bölümde, şu şekilde tanımlanır A ve B olmak üzere iki matrislerde çar
 
 Bir 3-tarafından-2 matris ve B ise 2 x 3 matris. 3-x-3 matris çarpılması A B ürünüdür. Ürün A satırlarını sütun b öğeye göre çarpılarak hesaplanır.
 
-![3&#45;tarafından&#45;3 matris](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")
+![3&#45;tarafından&#45;3 matris](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;tarafından&#45;3 Matrisi")
 
 ### <a name="to-multiply-without-using-c-amp"></a>C++ AMP kullanmadan çarpmak için
 
@@ -79,13 +79,13 @@ void main() {
 }
 ```
 
-    The algorithm is a straightforward implementation of the definition of matrix multiplication. It does not use any parallel or threaded algorithms to reduce the computation time.
+   Algoritma, matris çarpım tanımını basit bir uygulamadır. Bunu tüm paralel veya iş parçacıklı algoritmaları hesaplama süreyi azaltmak üzere kullanmaz.
 
-2. Menü çubuğunda, **dosya** > **Tümünü Kaydet**.
+1. Menü çubuğunda, **dosya** > **Tümünü Kaydet**.
 
-3. Seçin **F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
+1. Seçin **F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
 
-4. Seçin **Enter** uygulamadan çıkmak için.
+1. Seçin **Enter** uygulamadan çıkmak için.
 
 ### <a name="to-multiply-by-using-c-amp"></a>C++ AMP kullanarak çarpmak için
 
@@ -124,16 +124,16 @@ void MultiplyWithAMP() {
 }
 ```
 
-    The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.
+   AMP kodu, AMP olmayan koda benzer. Çağrı `parallel_for_each` her öğe için bir iş parçacığı başlattığını `product.extent`ve değiştirir `for` satır ve sütun for döngüleri. Hücre, satır ve sütun değeri kullanılabilir `idx`. Öğelerine erişebilirsiniz bir `array_view` kullanın ya da nesne `[]` işleci ve bir dizin değişkeni veya `()` işleci ve satır ve sütun değişkenleri. Örnek, her iki yöntem de gösterir. `array_view::synchronize` Yöntemi kopyalar değerlerini `product` geri değişken `productMatrix` değişkeni.
 
-2. Aşağıdaki `include` ve `using` MatrixMultiply.cpp üst kısmındaki deyimleri.
+1. Aşağıdaki `include` ve `using` MatrixMultiply.cpp üst kısmındaki deyimleri.
 
 ```cpp
 #include <amp.h>
 using namespace concurrency;
 ```
 
-3. Değiştirme `main` çağrılacak yöntem `MultiplyWithAMP` yöntemi.
+1. Değiştirme `main` çağrılacak yöntem `MultiplyWithAMP` yöntemi.
 
 ```cpp
 void main() {
@@ -143,9 +143,9 @@ void main() {
 }
 ```
 
-4. Seçin **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
+1. Seçin **Ctrl**+**F5** klavye kısayolu hata ayıklamayı başlatmak ve çıkış doğru olduğundan emin olun.
 
-5. Seçin **boşluk** uygulamadan çıkmak için.
+1. Seçin **boşluk** uygulamadan çıkmak için.
 
 ## <a name="multiplication-with-tiling"></a>Çarpma ile döşeme
 
@@ -159,23 +159,23 @@ Döşeme içinde halinde kutucuk olarak bilinen eşit boyutlu alt kümeler, veri
 
 Matris çarpım içinde döşemeden yararlanmak için algoritma gerekir matris döşemesine bölümlemek ve ardından döşeme verilerini kopyalayın `tile_static` değişkenleri daha hızlı erişim için. Bu örnekte, matris eşit boyutta submatrices bölümlenir. Ürün submatrices çarpılarak bulunur. İki matrislerde ve bu örnekte, ürün şunlardır:
 
-![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")
+![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixatiled.png "4&#45;tarafından&#45;4 matris A")
 
-![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")
+![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixbtiled.png "4&#45;tarafından&#45;4 matris B")
 
-![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")
+![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;tarafından&#45;4 matris ürün")
 
 Matrisler şu şekilde tanımlanır dört 2 x 2 matrislerde bölümlenir:
 
-![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")
+![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;Matrisi")
 
-![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")
+![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;Matrisi")
 
 Ürün a ve B artık yazılmış ve şu şekilde hesaplanır:
 
-![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")
+![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;tarafından&#45;4 matris ürün a ve B")
 
-Çünkü matrislerde `a` aracılığıyla `h` 2 x 2 matrisler, tüm ürünlerin ve bunların toplamı de 2 x 2 matrislerde. Ayrıca bir * B 4 x 4 matris olduğunu beklendiği gibi takip eden. Algoritma hemen kontrol etmek için ürün ilk sütunda, ilk satırındaki öğenin değerini hesaplayın. Bu örnekte, olacaktır öğenin değeri ilk satır ve ilk sütununu `ae + bg`. Yalnızca ilk sütun, ilk satırında hesaplanacak olan `ae` ve `bg` her dönem. Bu değer için `ae` olduğu `1*1 + 2*5 = 11`. Değeri `bg` olduğu `3*1 + 4*5 = 23`. Son değer `11 + 23 = 34`, doğru olduğu.
+Çünkü matrislerde `a` aracılığıyla `h` 2 x 2 matrisler, tüm ürünlerin ve bunların toplamı de 2 x 2 matrislerde. Ayrıca, takip eden ürün a ve B 4 x 4 matrisi, beklendiği gibi. Algoritma hemen kontrol etmek için ürün ilk sütunda, ilk satırındaki öğenin değerini hesaplayın. Bu örnekte, olacaktır öğenin değeri ilk satır ve ilk sütununu `ae + bg`. Yalnızca ilk sütun, ilk satırında hesaplanacak olan `ae` ve `bg` her dönem. Bu değer için `ae` olduğu `(1 * 1) + (2 * 5) = 11`. Değeri `bg` olduğu `(3 * 1) + (4 * 5) = 23`. Son değer `11 + 23 = 34`, doğru olduğu.
 
 Bu algoritma, kodu uygulamak için:
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cerrno header
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
-ms.openlocfilehash: cc8294f83f9d414228f660cf8e600f456d7b16d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16a3858f25afd6a5d26f611f5398361bf82ee13a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632449"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517664"
 ---
 # <a name="ltcerrnogt"></a>&lt;cerrno&gt;
 
@@ -21,7 +21,6 @@ Standart C Kitaplığı üstbilgisi içerir \<errno.h > ve ilişkili adlar ekler
 
 ```cpp
 #include <cerrno>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

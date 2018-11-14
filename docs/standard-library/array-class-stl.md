@@ -96,12 +96,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: 0cb12cfc74578969f96476c2acaadefb4dbc19de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f32519e56e42620caec755e6c250d0ee93c6677
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555928"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518977"
 ---
 # <a name="array-class-c-standard-library"></a>array sınıfı (Standart C++ Kitaplığı)
 
@@ -230,7 +230,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -285,7 +284,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -338,7 +336,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ## <a name="back"></a>  Array::Back
@@ -380,7 +377,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -427,7 +423,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -532,7 +527,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -578,7 +572,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -624,7 +617,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -670,7 +662,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -810,7 +801,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -856,7 +846,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -907,7 +896,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -956,7 +944,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1048,7 +1035,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1099,14 +1085,12 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
 it1: 0 1 2 3
 
 it2: 0
-
 ```
 
 ## <a name="max_size"></a>  Array::max_size
@@ -1146,7 +1130,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1201,7 +1184,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1256,7 +1238,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1302,7 +1283,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1349,7 +1329,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1395,7 +1374,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1442,7 +1420,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1488,7 +1465,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1533,7 +1509,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1579,7 +1554,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1644,7 +1618,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1695,7 +1668,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

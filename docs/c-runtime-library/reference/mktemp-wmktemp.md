@@ -33,12 +33,12 @@ helpviewer_keywords:
 - mktemp function
 - temporary files [C++]
 ms.assetid: 055eb539-a8c2-4a7d-be54-f5b6d1eb5c85
-ms.openlocfilehash: 9dbaba9e4a68523c0d79762c6a7ff54c238e397d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c1c5f0ee12c9e07d76405014bb4a6a6ecc7d97e6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554182"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326270"
 ---
 # <a name="mktemp-wmktemp"></a>_mktemp, _wmktemp
 
@@ -82,7 +82,7 @@ Bu işlevlerin her biri için değiştirilmiş nameTemplate bir işaretçi dönd
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmktemp**|**_mktemp**|**_mktemp**|**_wmktemp**|
 
-*NameTemplate* bağımsız değişkeni olan form *temel ** XXXXXX*burada *temel* sağladığınız yeni dosya adının bir parçasıdır ve her X tarafından sağlanan bir karakter için bir yer tutucudur **_mktemp**. Her bir yer tutucu karakteri *nameTemplate* bir büyük harf Mac'inizi olmalıdır **_mktemp** korur *temel* ve alfabetik bir karakter ile ilk sonunda X değiştirir. **_mktemp** aşağıdaki sondaki değiştirir X'lerin beş basamaklı değerle; bu işlem, veya birden çok iş parçacıklı programlarda, çağıran iş parçacığı arama tanımlayan benzersiz bir numara değerdir.
+*NameTemplate* bağımsız değişkeni olan form *temel*XXXXXX, burada *temel* sağladığınız yeni dosya adının bir parçasıdır ve her X tarafından sağlanan bir karakter için bir yer tutucudur **_mktemp**. Her bir yer tutucu karakteri *nameTemplate* bir büyük harf Mac'inizi olmalıdır **_mktemp** korur *temel* ve alfabetik bir karakter ile ilk sonunda X değiştirir. **_mktemp** aşağıdaki sondaki değiştirir X'lerin beş basamaklı değerle; bu işlem, veya birden çok iş parçacıklı programlarda, çağıran iş parçacığı arama tanımlayan benzersiz bir numara değerdir.
 
 Her başarılı çağrı **_mktemp** değiştirir *nameTemplate*. Aynı işlem veya iş parçacığı aynı sonraki her çağrıda *nameTemplate* bağımsız değişkeni, **_mktemp** adlarıyla tarafından döndürülen dosya adlarını denetler **_mktemp** içinde Önceki çağırır. Hiçbir dosya için bir verilen ad, varsa **_mktemp** adı döndürür. Tüm adlar, daha önce döndürülen için dosyalar mevcutsa **_mktemp** kullanılan harfle sonraki kullanılabilir, 'a' ila 'z', sırası daha önce döndürülen adında alfabetik karakter değiştirerek yeni bir ad oluşturur. Örneğin, varsa *temel* olan:
 

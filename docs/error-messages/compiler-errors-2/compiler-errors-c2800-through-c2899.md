@@ -42,12 +42,12 @@ helpviewer_keywords:
 - C2895
 - C2899
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
-ms.openlocfilehash: 1c1b001e4d55c913cd2b9a50ee2e4bb4d2915523
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c35cd91f836070ff45faa489e1c16c40909f922
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601116"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332081"
 ---
 # <a name="compiler-errors-c2800-through-c2899"></a>Derleyici hataları C2800 ile c2899 arasındaki
 
@@ -74,7 +74,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2812](compiler-error-c2812.md)|#import ile/CLR desteklenmiyor: pure ve/CLR: safe|
 |[Derleyici Hatası C2813](compiler-error-c2813.md)|#import ile /MP desteklenmiyor|
 |[Derleyici Hatası C2814](compiler-error-c2814.md)|'*üye*': yerel bir tür bir yönetilen/WinRT türü içinde iç içe olamaz '*sınıfı*'|
-|[Derleyici Hatası C2815](compiler-error-c2815.md)|'operator delete': ilk biçimsel parametre olmalıdır ' void *', ancak '* türü *' kullanıldı|
+|[Derleyici Hatası C2815](compiler-error-c2815.md)|'operator delete': ilk biçimsel parametre olmalıdır ' void \*', ancak '*türü*' kullanıldı|
 |Derleyici Hatası C2816|Kullanımdan kalktı.|
 |[Derleyici Hatası C2817](compiler-error-c2817.md)|'operator delete' için dönüş türü 'void' olmalıdır|
 |[Derleyici Hatası C2818](compiler-error-c2818.md)|Uygulama, aşırı yüklenmiş 'operator ->' türü üzerinden özyinelemeli '*sınıfı*'|
@@ -83,7 +83,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C2821](compiler-error-c2821.md)|'operator new' için ilk biçimsel parametre 'size_t' olmalıdır|
 |Derleyici Hatası C2822|Yerel geriye doğru izleme bu platformda desteklenmiyor|
 |[Derleyici Hatası C2823](compiler-error-c2823.md)|şablonu/genel tür tanımı geçersiz|
-|[Derleyici Hatası C2824](compiler-error-c2824.md)|'operator new' için dönüş türü ' void *'|
+|[Derleyici Hatası C2824](compiler-error-c2824.md)|'operator new' için dönüş türü ' void \*'|
 |[Derleyici Hatası C2825](compiler-error-c2825.md)|'*tanımlayıcı*': bir sınıf ya da ardından, ad alanı olmalıdır '::'|
 |Derleyici Hatası C2826|Kullanımdan kalktı.|
 |[Derleyici Hatası C2827](compiler-error-c2827.md)|' operator *işleci*' birli biçim ile genel olarak geçersiz kılınamaz|

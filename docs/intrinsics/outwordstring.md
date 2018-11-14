@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __outwordstring intrinsic
 - outsw instruction
 ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
-ms.openlocfilehash: 92ec21cdf7fb9d86ee7c8b9fa5090bbace2fe869
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df7ca6ddbb80c21397beb91b8e671f248f2a1d9c
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494620"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326296"
 ---
 # <a name="outwordstring"></a>__outwordstring
 
@@ -24,10 +24,10 @@ Oluşturur `rep outsw` gönderen yönerge `Count` başlayan sözcükleri `Buffer
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outwordstring( 
-   unsigned short Port, 
-   unsigned short* Buffer, 
-   unsigned long Count 
+void __outwordstring(
+   unsigned short Port,
+   unsigned short* Buffer,
+   unsigned long Count
 );
 ```
 

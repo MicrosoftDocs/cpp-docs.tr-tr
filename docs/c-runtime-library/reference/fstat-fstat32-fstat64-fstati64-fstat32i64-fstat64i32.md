@@ -49,12 +49,12 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-ms.openlocfilehash: 2cec64e408b326dccc7b950656d0aa699c084f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36d8b0d6480266f86136119a470fb7af5859a5b8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677792"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331249"
 ---
 # <a name="fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
@@ -107,14 +107,14 @@ Dosya durumu bilgilerini aldıysanız 0 döndürür. -1 dönüş değeri bir hat
 
 |Alan|Açıklama|
 |-|-|
-**st_atime**|Son dosya erişim zamanı.
-**st_ctime**|Dosyanın oluşturulma saati.
-**st_dev**|Bir cihaz, *fd*; Aksi durumda 0.
-**st_mode**|Dosya modu bilgi bit maskesi. **_S_ıfchr** bit ayarlanmışsa *fd* bir cihazı gösterir. **_S_ıfreg** bit ayarlanmışsa *fd* sıradan bir dosyasına başvuruyor. Okuma/yazma BITS dosyanın izin Modu'nda göre ayarlanır. **_S_ıfchr** ve diğer sabitler SYS\Stat.h içinde tanımlanır.
-**st_mtime**|Dosyanın son değiştirilme saati.
-**st_nlink**|Her zaman 1 NTFS dışı dosya sistemlerine.
-**st_rdev**|Bir cihaz, *fd*; Aksi durumda 0.
-**st_size**|Dosyanın bayt cinsinden boyutu.
+| **st_atime** | Son dosya erişim zamanı. |
+| **st_ctime** | Dosyanın oluşturulma saati. |
+| **st_dev** | Bir cihaz, *fd*; Aksi durumda 0. |
+| **st_mode** | Dosya modu bilgi bit maskesi. **_S_ıfchr** bit ayarlanmışsa *fd* bir cihazı gösterir. **_S_ıfreg** bit ayarlanmışsa *fd* sıradan bir dosyasına başvuruyor. Okuma/yazma BITS dosyanın izin Modu'nda göre ayarlanır. **_S_ıfchr** ve diğer sabitler SYS\Stat.h içinde tanımlanır. |
+| **st_mtime** | Dosyanın son değiştirilme saati. |
+| **st_nlink** | Her zaman 1 NTFS dışı dosya sistemlerine. |
+| **st_rdev** | Bir cihaz, *fd*; Aksi durumda 0. |
+| **st_size** | Dosyanın bayt cinsinden boyutu. |
 
 Varsa *fd* bir cihaza başvuran **st_atime**, **st_ctime**, **st_mtime**, ve **st_size** alanlar anlamlı değildir.
 

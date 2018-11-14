@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-ms.openlocfilehash: c53e6d89cfd768fc5828017f807ec64d147419da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c8e35c097513176551db16471ed3a8c4ca1e824
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651314"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521486"
 ---
 # <a name="poissondistribution-class"></a>poisson_distribution Sınıfı
 
@@ -144,7 +144,6 @@ int main()
 
     test(p_dist, samples);
 }
-
 ```
 
 İlk test:

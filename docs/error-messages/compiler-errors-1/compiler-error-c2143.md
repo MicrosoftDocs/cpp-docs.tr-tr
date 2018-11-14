@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2143
 ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
-ms.openlocfilehash: 0a7cbad52697ccedac75af73012f6dc69eec5a25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed4bc7eea85e5263d59817082caed99bde3d75d5
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582617"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520120"
 ---
 # <a name="compiler-error-c2143"></a>Derleyici Hatası C2143
 
@@ -33,7 +33,6 @@ class MyClass
     {
     };
 };
-
 ```
 
 Varsayılan olarak, C++ olduğunu varsayar `Ty::PutFuncType` olmayan bir şablon; bu nedenle, aşağıdaki `<` daha az yorumlanır-işareti.  Derleyici açıkça, bildirmeniz gerekir `PutFuncType` böylece doğru açılı ayraç ayrıştırmak bir şablondur. Bu hatayı düzeltmek için `template` anahtar sözcüğü, burada gösterildiği gibi bağımlı tür adı:
@@ -46,7 +45,6 @@ class MyClass
     {
     };
 };
-
 ```
 
 C2143 gerçekleşebilir, **/CLR** kullanılır ve `using` yönergesi sözdizimi hatası var:

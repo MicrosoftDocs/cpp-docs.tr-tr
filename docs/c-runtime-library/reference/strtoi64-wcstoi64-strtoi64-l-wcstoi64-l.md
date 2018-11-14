@@ -39,12 +39,12 @@ helpviewer_keywords:
 - strtoi64 function
 - wcstoi64_l function
 ms.assetid: ea2abc50-7bfe-420e-a46b-703c3153593a
-ms.openlocfilehash: a8097a31ebbc56281008f14da58671d5b2e4e8b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5479448a4e3a3cedba3a62d9b12b0dbe4160f7c
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490785"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331704"
 ---
 # <a name="strtoi64-wcstoi64-strtoi64l-wcstoi64l"></a>_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
 
@@ -112,7 +112,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |**_tcstoi64**|**_strtoi64**|**_strtoi64**|**_wcstoi64**|
 |**_tcstoi64_l**|**_strtoi64_l**|**_strtoi64_l**|**_wcstoi64_l**|
 
-Yerel **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource **;* daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). The_l soneki olmadan işlevler geçerli yerel ayarı kullanın. **_strtoi64_l** ve **_wcstoi64_l** ilgili işlevle aynıdır **_l** bunun yerine iletilmiş yerel ayarı kullanmaları dışında soneki. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Yerel **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource*; daha fazla bilgi için bkz: [setlocale](setlocale-wsetlocale.md). The_l soneki olmadan işlevler geçerli yerel ayarı kullanın. **_strtoi64_l** ve **_wcstoi64_l** ilgili işlevle aynıdır **_l** bunun yerine iletilmiş yerel ayarı kullanmaları dışında soneki. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 

@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _wrmdir function
 - wrmdir function
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
-ms.openlocfilehash: 1169405ae2f03a1e6affe2fcc00d594912e08ae1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d0d9a25b70746174a66abbe088b297a5d9a0942
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511130"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328012"
 ---
 # <a name="rmdir-wrmdir"></a>_rmdir, _wrmdir
 
@@ -66,9 +66,9 @@ Dizin başarıyla silinirse bu işlevlerin her biri 0 döndürür. Hata-1 değer
 
 |errno değeri|Koşul|
 |-|-|
-**ENOTEMPTY**|Yol bir dizin değil, Dizin boş değil veya geçerli çalışma dizinine veya kök dizinine dizindir.
-**ENOENT**|Yol geçersiz.
-**SPAWN**|Bir programı dizini açık bir tanıtıcısı vardır.
+| **ENOTEMPTY** | Yol bir dizin değil, Dizin boş değil veya geçerli çalışma dizinine veya kök dizinine dizindir. |
+| **ENOENT** | Yol geçersiz. |
+| **SPAWN** | Bir programı dizini açık bir tanıtıcısı vardır. |
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

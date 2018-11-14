@@ -6,12 +6,12 @@ helpviewer_keywords:
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-ms.openlocfilehash: 0d3d883fa2199096d4dc880e2d8e78cff6d9830c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b406bc194735a2796f03f1e9d6cf0cf2ae2e6f86
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542564"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333299"
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 
@@ -95,15 +95,19 @@ Aşağıdaki tablo ortak gösterir `concurrent_vector` yöntemleri ve eşzamanl�
 
 ||||
 |-|-|-|
-
-|[konumunda](reference/concurrent-vector-class.md#at)|[son](reference/concurrent-vector-class.md#end)|[işleci&#91;&#93;](reference/concurrent-vector-class.md#operator_at)||[ başlamak](reference/concurrent-vector-class.md#begin)|[ön](reference/concurrent-vector-class.md#front)|[push_back](reference/concurrent-vector-class.md#push_back)||[ Geri](reference/concurrent-vector-class.md#back)|[grow_by](reference/concurrent-vector-class.md#grow_by)|[rbegin](reference/concurrent-vector-class.md#rbegin)||[ Kapasite](reference/concurrent-vector-class.md#capacity)|[grow_to_at_least](reference/concurrent-vector-class.md#grow_to_at_least)|[rend](reference/concurrent-vector-class.md#rend)||[ boş](reference/concurrent-vector-class.md#empty)|[max_size](reference/concurrent-vector-class.md#max_size)|[boyutu](reference/concurrent-vector-class.md#size)|
+|[konumunda](reference/concurrent-vector-class.md#at)|[Son](reference/concurrent-vector-class.md#end)|[işleci&#91;&#93;](reference/concurrent-vector-class.md#operator_at)|
+|[başlayın](reference/concurrent-vector-class.md#begin)|[Ön](reference/concurrent-vector-class.md#front)|[push_back](reference/concurrent-vector-class.md#push_back)|
+|[Geri](reference/concurrent-vector-class.md#back)|[grow_by](reference/concurrent-vector-class.md#grow_by)|[rbegin](reference/concurrent-vector-class.md#rbegin)|
+|[Kapasite](reference/concurrent-vector-class.md#capacity)|[grow_to_at_least](reference/concurrent-vector-class.md#grow_to_at_least)|[rend](reference/concurrent-vector-class.md#rend)|
+|[boş](reference/concurrent-vector-class.md#empty)|[max_size](reference/concurrent-vector-class.md#max_size)|[Boyutu](reference/concurrent-vector-class.md#size)|
 
 Örneğin, çalışma zamanı C++ Standart kitaplığı ile uyumluluk sağlayan operations `reserve`, eşzamanlılık açısından güvenli değildir. Aşağıdaki tabloda, genel yöntemleri ve eşzamanlılık açısından güvenli değildir işleçlerini gösterir.
 
 |||
 |-|-|
-
-|[Ata](reference/concurrent-vector-class.md#assign)|[rezerve](reference/concurrent-vector-class.md#reserve)||[ Temizle](reference/concurrent-vector-class.md#clear)|[yeniden boyutlandırma](reference/concurrent-vector-class.md#resize)||[ İşleç =](reference/concurrent-vector-class.md#operator_eq)|[shrink_to_fit](reference/concurrent-vector-class.md#shrink_to_fit)|
+|[Ata](reference/concurrent-vector-class.md#assign)|[ayırma](reference/concurrent-vector-class.md#reserve)|
+|[Temizle](reference/concurrent-vector-class.md#clear)|[yeniden boyutlandırma](reference/concurrent-vector-class.md#resize)|
+|[operator=](reference/concurrent-vector-class.md#operator_eq)|[shrink_to_fit](reference/concurrent-vector-class.md#shrink_to_fit)|
 
 Var olan öğelerin değerini değiştiren işlemleri, eşzamanlılık açısından güvenli değildir. Bir eşitleme nesnesi gibi kullanan bir [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) eşitleme eş zamanlı okuma ve yazma işlemleri için aynı veri öğesi için nesne. Eşitleme nesneleri hakkında daha fazla bilgi için bkz: [eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md).
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
-ms.openlocfilehash: 13d4461833180b527fae153c1677c9e911fc2737
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 84d4c2f1128f7b73189f69b056eee96619c31ef5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620487"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331977"
 ---
 # <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)
 
@@ -63,23 +63,23 @@ Değişikliklerinizi kaydetmek için çağrı `Update`. Çağırdığınızda `U
 
 - Varsa `::SQLSetPos` olamaz kullanıldığında, MFC şunları yapar:
 
-    1.  Değişiklik algılanırsa `Update` hiçbir şey yapmaz ve 0 döndürür.
+   1. Değişiklik algılanırsa `Update` hiçbir şey yapmaz ve 0 döndürür.
 
-    2.  Değişiklikleri, varsa `Update` SQL yapıları **Ekle** deyimi. Tüm kirli alan veri üyeleri tarafından temsil edilen sütunlar listelenen **Ekle** deyimi. Dahil edilecek sütun zorlamak için çağrı [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) üye işlevi:
+   1. Değişiklikleri, varsa `Update` SQL yapıları **Ekle** deyimi. Tüm kirli alan veri üyeleri tarafından temsil edilen sütunlar listelenen **Ekle** deyimi. Dahil edilecek sütun zorlamak için çağrı [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) üye işlevi:
 
-        ```
+        ```cpp
         SetFieldDirty( &m_dataMember, TRUE );
         ```
 
-    3.  `Update` Yeni kayıt uygular — **Ekle** deyimi yürütülür ve bir işlem devam ediyor sürece veri kaynağına (ve kayıt, bir anlık görüntü değilse) tablosunda hassastır kaydıdır.
+   1. `Update` Yeni kayıt uygular — **Ekle** deyimi yürütülür ve bir işlem devam ediyor sürece veri kaynağına (ve kayıt, bir anlık görüntü değilse) tablosunda hassastır kaydıdır.
 
-    4.  Depolanmış kayıt düzenleme ara geri yüklenir. Önce geçerli kaydı `AddNew` çağrıdır yeniden bakılmaksızın geçerli **Ekle** bildirimi başarıyla yürütüldü.
+   1. Depolanmış kayıt düzenleme ara geri yüklenir. Önce geçerli kaydı `AddNew` çağrıdır yeniden bakılmaksızın geçerli **Ekle** bildirimi başarıyla yürütüldü.
 
-    > [!TIP]
-    >  Yeni bir kaydın tam denetim için aşağıdaki yaklaşımı: değerleri ve Null çağırarak kalacak herhangi bir alan açıkça ayarlanmış herhangi bir alan değerlerini ayarlayın `SetFieldNull` alan ve parametre bir işaretçi ile (varsayılan) TRUE. Bir alan veri kaynağına çağrı yazılmaz emin olmak istiyorsanız `SetFieldDirty` alan ve yanlış parametre bir işaretçi ile ve alanın değerini değiştirmeyin. Bir alan Null olmasına izin verilip verilmeyeceğini belirlemek için çağrı `IsFieldNullable`.
+   > [!TIP]
+   > Yeni bir kaydın tam denetim için aşağıdaki yaklaşımı: değerleri ve Null çağırarak kalacak herhangi bir alan açıkça ayarlanmış herhangi bir alan değerlerini ayarlayın `SetFieldNull` alan ve parametre bir işaretçi ile (varsayılan) TRUE. Bir alan veri kaynağına çağrı yazılmaz emin olmak istiyorsanız `SetFieldDirty` alan ve yanlış parametre bir işaretçi ile ve alanın değerini değiştirmeyin. Bir alan Null olmasına izin verilip verilmeyeceğini belirlemek için çağrı `IsFieldNullable`.
 
-    > [!TIP]
-    >  Kayıt kümesi veri üyeleri, değer değiştirdiğinizde algılamak için bir kayıt kümesinde depoladığınız her bir veri türü için uygun bir PSEUDO_NULL değer MFC kullanır. Bir alan açıkça PSEUDO_NULL değerine ayarlamanız gerekir ve Null işaretlenecek alanı zaten olur, ayrıca çağırmanız gerekir `SetFieldNull`, ikinci parametre ilk parametre ve yanlış adres alanının geçirme.
+   > [!TIP]
+   > Kayıt kümesi veri üyeleri, değer değiştirdiğinizde algılamak için bir kayıt kümesinde depoladığınız her bir veri türü için uygun bir PSEUDO_NULL değer MFC kullanır. Bir alan açıkça PSEUDO_NULL değerine ayarlamanız gerekir ve Null işaretlenecek alanı zaten olur, ayrıca çağırmanız gerekir `SetFieldNull`, ikinci parametre ilk parametre ve yanlış adres alanının geçirme.
 
 ##  <a name="_core_visibility_of_added_records"></a> Eklenen kayıtların görünürlüğü
 
@@ -102,7 +102,7 @@ Arama için bir önkoşul olarak `Edit`, güncelleştirilebilir ve kayıtla ilgi
 Çağırdıktan sonra `Edit`, düzenleme arabellek hala geçerli kayıt temsil eder ancak artık alan veri üyeleri değişiklikleri kabul etmeye hazır. Kaydı değiştirmek için el ile düzenlemek istediğiniz herhangi bir alan veri üyelerinin değerlerini ayarlayın. Bir alan için gerçek bir veri değeri belirtmek yerine çağırabilirsiniz `SetFieldNull` Null değer belirtebilirsiniz. Değişikliklerinizi kaydetmek için çağrı `Update`.
 
 > [!TIP]
->  Faydalanmaya yönelik `AddNew` veya `Edit` modu, çağrı `Move` parametresiyle *AFX_MOVE_REFRESH*.
+> Faydalanmaya yönelik `AddNew` veya `Edit` modu, çağrı `Move` parametresiyle *AFX_MOVE_REFRESH*.
 
 Arama için bir önkoşul olarak `Update`, kayıt kümesi boş olmamalı ve geçerli kayıt öğeleri silinmemiş gerekir. `IsBOF`, `IsEOF`, ve `IsDeleted` tüm 0 döndürmelidir.
 
@@ -110,23 +110,23 @@ Arama için bir önkoşul olarak `Update`, kayıt kümesi boş olmamalı ve geç
 
 - ODBC sürücünüz destekliyorsa `::SQLSetPos` MFC ODBC API işlevini, veri kaynağındaki kaydı güncelleştirmek için işlevi kullanır. İle `::SQLSetPos`, sürücü düzenleme arabelleğin iki farklı ise, sunucunun kaydını güncelleştirme sunucusundaki karşılık gelen kayıt ile karşılaştırır. İle `::SQLSetPos`, MFC güncelleştirebilirsiniz kayıt daha verimli bir şekilde çünkü bir SQL deyimi oluşturmak ve işlemek yok.
 
-     veya
+   \- veya -
 
 - Varsa `::SQLSetPos` olamaz kullanıldığında, MFC şunları yapar:
 
-    1.  Herhangi bir değişiklik olduğunda `Update` hiçbir şey yapmaz ve 0 döndürür.
+   1. Herhangi bir değişiklik olduğunda `Update` hiçbir şey yapmaz ve 0 döndürür.
 
-    2.  Değişiklikleri, varsa `Update` SQL yapıları **güncelleştirme** deyimi. Listelenen sütunları **güncelleştirme** ifadesi, değişen alan veri üyeleri dayalı.
+   1. Değişiklikleri, varsa `Update` SQL yapıları **güncelleştirme** deyimi. Listelenen sütunları **güncelleştirme** ifadesi, değişen alan veri üyeleri dayalı.
 
-    3.  `Update` değişiklikleri uygular — yürütür **güncelleştirme** deyimi — ve veri kaynağında kayıt değiştirilir, ancak bir işlem değil taahhüt varsa ediyor (bkz [işlem: bir kayıt kümesi (ODBC)işlemgerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) işlem güncelleştirme nasıl etkilediği hakkında bilgi için). ODBC kaydı da değiştiren bir kopyasını tutar.
+   1. `Update` değişiklikleri uygular — yürütür **güncelleştirme** deyimi — ve veri kaynağında kayıt değiştirilir, ancak bir işlem değil taahhüt varsa ediyor (bkz [işlem: bir kayıt kümesi (ODBC)işlemgerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) işlem güncelleştirme nasıl etkilediği hakkında bilgi için). ODBC kaydı da değiştiren bir kopyasını tutar.
 
-    4.  İşlemin aksine `AddNew`, `Edit` işlem depolanmış kayıt geri yüklemiyor. Düzenlenmiş kayıt yerinde geçerli kayıt olarak kalır.
+   1. İşlemin aksine `AddNew`, `Edit` işlem depolanmış kayıt geri yüklemiyor. Düzenlenmiş kayıt yerinde geçerli kayıt olarak kalır.
 
-    > [!CAUTION]
-    >  Bir kayıt kümesi çağırarak güncelleştirmek hazırlama zaman `Update`, kümenizin tabloyu (veya tüm sütunları tablosunda benzersiz bir dizin veya satırın benzersiz olarak tanımlanabilmesi için yeterli sütun) birincil anahtar yapma tüm sütunları içeren ilgileniriz. Bazı durumlarda, framework kümenize Seçili sütunları güncelleştirmek için tablodaki hangi kaydı tanımlamak için kullanabilirsiniz. Tüm gerekli sütunları, birden çok kayıt tablodaki güncelleştirilebilir. Bu durumda, framework istisnalar fırlatıyorsa çağırdığınızda `Update`.
+   > [!CAUTION]
+   > Bir kayıt kümesi çağırarak güncelleştirmek hazırlama zaman `Update`, kümenizin tabloyu (veya tüm sütunları tablosunda benzersiz bir dizin veya satırın benzersiz olarak tanımlanabilmesi için yeterli sütun) birincil anahtar yapma tüm sütunları içeren ilgileniriz. Bazı durumlarda, framework kümenize Seçili sütunları güncelleştirmek için tablodaki hangi kaydı tanımlamak için kullanabilirsiniz. Tüm gerekli sütunları, birden çok kayıt tablodaki güncelleştirilebilir. Bu durumda, framework istisnalar fırlatıyorsa çağırdığınızda `Update`.
 
-    > [!TIP]
-    >  Çağırırsanız `AddNew` veya `Edit` ya da daha önce ancak önce çağrılan işlev sonra çağırma `Update`, değiştirme yeni veya düzenlenen kaydının sürüyor depolanmış kayıt düzenleme arabelleği yenilenir. Bu davranış, iptal etmek için bir yol sağlar bir `AddNew` veya `Edit` ve yeni bir tane başlayın: ilerleme içinde kaydı hatalı olduğunu belirlerseniz, yalnızca çağrı `Edit` veya `AddNew` yeniden.
+   > [!TIP]
+   > Çağırırsanız `AddNew` veya `Edit` ya da daha önce ancak önce çağrılan işlev sonra çağırma `Update`, değiştirme yeni veya düzenlenen kaydının sürüyor depolanmış kayıt düzenleme arabelleği yenilenir. Bu davranış, iptal etmek için bir yol sağlar bir `AddNew` veya `Edit` ve yeni bir tane başlayın: ilerleme içinde kaydı hatalı olduğunu belirlerseniz, yalnızca çağrı `Edit` veya `AddNew` yeniden.
 
 ##  <a name="_core_deleting_a_record"></a> Kayıt silme
 
@@ -138,22 +138,22 @@ Arama için bir önkoşul olarak `Delete`kayıt güncelleştirilebilir olmalıd�
 
 - ODBC sürücünüz destekliyorsa `::SQLSetPos` MFC ODBC API işlevini, veri kaynağındaki bir kaydı silmek için işlevi kullanır. Kullanarak `::SQLSetPos` SQL kullanmaktan genellikle daha verimli olur.
 
-     veya
+   \- veya -
 
 - Varsa `::SQLSetPos` olamaz kullanıldığında, MFC şunları yapar:
 
-    1.  Geçerli kayıt düzenleme arabellek olarak yedeklenmez `AddNew` ve `Edit`.
+   1. Geçerli kayıt düzenleme arabellek olarak yedeklenmez `AddNew` ve `Edit`.
 
-    2.  `Delete` bir SQL yapıları **Sil** deyimi kaydını kaldırır.
+   1. `Delete` bir SQL yapıları **Sil** deyimi kaydını kaldırır.
 
-         Geçerli kayıt düzenleme arabellek olarak depolanmaz `AddNew` ve `Edit`.
+      Geçerli kayıt düzenleme arabellek olarak depolanmaz `AddNew` ve `Edit`.
 
-    3.  `Delete` silme işlemi uygular — yürütür **Sil** deyimi. Kayıt veri kaynağında silindi olarak işaretlenir ve kaydın bir anlık görüntü ODBC içinde ise.
+   1. `Delete` silme işlemi uygular — yürütür **Sil** deyimi. Kayıt veri kaynağında silindi olarak işaretlenir ve kaydın bir anlık görüntü ODBC içinde ise.
 
-    4.  Yine de alan veri üyeleri kayıt kümesinin silinmiş kaydın değerlerdir ancak alan veri üyeleri, Null ve kümesinin işaretlenmiş `IsDeleted` üye işlevi, sıfır olmayan bir değer döndürür.
+   1. Yine de alan veri üyeleri kayıt kümesinin silinmiş kaydın değerlerdir ancak alan veri üyeleri, Null ve kümesinin işaretlenmiş `IsDeleted` üye işlevi, sıfır olmayan bir değer döndürür.
 
-    > [!NOTE]
-    >  Bir kayıt sildikten sonra yeni kayıttaki verilerle düzenleme arabelleği puanı almak için başka bir kayda gitmeniz gerekir. Çağırmak için bir hata olduğunu `Delete` yeniden veya çağrılacak `Edit`.
+   > [!NOTE]
+   > Bir kayıt sildikten sonra yeni kayıttaki verilerle düzenleme arabelleği puanı almak için başka bir kayda gitmeniz gerekir. Çağırmak için bir hata olduğunu `Delete` yeniden veya çağrılacak `Edit`.
 
 Güncelleştirme işlemlerinde kullanılan SQL deyimleri hakkında daha fazla bilgi için bkz. [SQL](../../data/odbc/sql.md).
 

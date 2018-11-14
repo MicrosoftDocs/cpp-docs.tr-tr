@@ -7,12 +7,12 @@ helpviewer_keywords:
 - _mm_stream_sd intrinsic
 - movntsd instruction
 ms.assetid: 2b4bea5e-e64e-45fa-9afc-88a2e4b82cfc
-ms.openlocfilehash: d85197aca4c277e8a5ebdf5119c0a63d23f479f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf57d485ab3dd268d217b2ef44ff53bcec3d2e63
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648662"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518144"
 ---
 # <a name="mmstreamsd"></a>_mm_stream_sd
 
@@ -75,7 +75,6 @@ int main()
     _mm_stream_sd(&d[1], vals);
     cout << "d[0] = " << d[0] << ", d[1] = " << d[1] << endl;
 }
-
 ```
 
 ```Output

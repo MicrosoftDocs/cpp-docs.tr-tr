@@ -8,12 +8,12 @@ helpviewer_keywords:
 - thread-local storage
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-ms.openlocfilehash: e13aa9600cd26fba47ce43a318fa7174995d58fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a20e337cddcc45701f20941ac5d7fea5e4324a5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572230"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330313"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 
@@ -86,7 +86,7 @@ Bu yönergeleri, yerel değişkenleri statik olarak bağlı bir iş parçacığ�
 
    Başlatılmakta değişkeni içeren bir sizeof ifadesi kendisine bir başvuru oluşturmadığına ve izin unutmayın.
 
-- Kullanımını **gt;__declspec(thread)** ile etkileyebilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL içe aktarma **.**
+- Kullanımını  **\_ \_declspec(thread)** ile etkileyebilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL içe aktarma.
 
 İş parçacığı özniteliği kullanma hakkında daha fazla bilgi için bkz. [çoklu iş parçacığı kullanımı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 

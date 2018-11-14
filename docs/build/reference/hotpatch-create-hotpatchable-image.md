@@ -1,6 +1,6 @@
 ---
 title: /hotpatch (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
-ms.date: 11/04/2016
+ms.date: 11/12/2018
 f1_keywords:
 - /hotpatch
 - VC.Project.VCCLCompilerTool.CreateHotpatchableImage
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /hotpatch compiler option [C++]
 - hotpatching
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
-ms.openlocfilehash: b304edffc024fac084338789134269745111ba00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c3431067f04ff36c63143f7d0e7483efa5376ba
+ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581447"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51598801"
 ---
 # <a name="hotpatch-create-hotpatchable-image"></a>/hotpatch (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 
@@ -48,10 +48,6 @@ Yönergeleri her zaman iki bayt olduğundan ARM mimarisi, daha büyük ve çünk
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
-
-## <a name="guidance"></a>Kılavuz
-
-Güncelleştirme yönetimi hakkında daha fazla bilgi için bkz: "Güncelleme yönetimi için Güvenlik Kılavuzu" [ http://www.microsoft.com/technet/security/guidance/PatchManagement.mspx ](http://www.microsoft.com/technet/security/guidance/PatchManagement.mspx).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

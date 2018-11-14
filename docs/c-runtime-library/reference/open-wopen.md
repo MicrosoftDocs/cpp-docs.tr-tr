@@ -31,12 +31,12 @@ helpviewer_keywords:
 - wopen function
 - open function
 ms.assetid: 13f6a0c3-d1aa-450d-a7aa-74abc91b163e
-ms.openlocfilehash: 2395b1aa48b7802a508ab0cb8be1ef35a1a81564
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ef28d6cafa0b74b50ee2c50ec380b8bd3aed79f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612999"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327297"
 ---
 # <a name="open-wopen"></a>_open, _wopen
 
@@ -74,11 +74,11 @@ Bu işlevlerin her biri, açık dosya için bir dosya tanımlayıcısını dönd
 
 |errno değeri|Koşul|
 |-|-|
-**SPAWN**|Yazma, dosyanın salt okunur bir dosyayı açmaya çalıştığınız paylaşma modunda belirtilen işlemine izin vermiyor veya verilen yolun bir dizindir.
-**EEXIST**|**_O_CREAT** ve **_O_EXCL** bayrakları belirtildi, ancak *filename* zaten mevcut.
-**EINVAL**|Geçersiz *oflag* veya *pmode* bağımsız değişken.
-**EMFILE**|Daha fazla hiçbir dosya tanımlayıcısı kullanılabilir (çok fazla dosya açık).
-**ENOENT**|Dosya veya yol bulunamadı.
+| **SPAWN** | Yazma, dosyanın salt okunur bir dosyayı açmaya çalıştığınız paylaşma modunda belirtilen işlemine izin vermiyor veya verilen yolun bir dizindir. |
+| **EEXIST** | **_O_CREAT** ve **_O_EXCL** bayrakları belirtildi, ancak *filename* zaten mevcut. |
+| **EINVAL** | Geçersiz *oflag* veya *pmode* bağımsız değişken. |
+| **EMFILE** | Daha fazla hiçbir dosya tanımlayıcısı kullanılabilir (çok fazla dosya açık). |
+| **ENOENT** | Dosya veya yol bulunamadı. |
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -96,23 +96,23 @@ Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno 
 
 |*oflag* sabit|Davranış|
 |-|-|
-**_O_APPEND**|Dosya işaretçisini dosyanın her yazma işleminden önce sonuna taşır.
-**_O_BINARY**|Dosya ikili (çevrilmemiş) modda açılır. (Bkz [fopen](fopen-wfopen.md) ikili modu açıklaması.)
-**_O_CREAT**|Bir dosya oluşturur ve yazma için açar. Dosya belirtilen hiçbir etkisi *filename* bulunmaktadır. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir.
-**_O_CREAT** &AMP;#124; **_O_SHORT_LIVED**|Geçici olarak bir dosya oluşturur ve mümkünse diske temizleme değil. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir.
-**_O_CREAT** &AMP;#124; **_O_TEMPORARY**|Geçici olarak bir dosya oluşturur. son dosya tanımlayıcısı kapatıldığında dosya silinir. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir.
-**_O_CREAT**&AMP;#124; ` _O_EXCL`|Bir hata değeri tarafından belirtilen dosya döndürür *filename* bulunmaktadır. Yalnızca ile kullanıldığında geçerlidir **_O_CREAT**.
-**_O_NOINHERIT**|Paylaşılan dosya tanımlayıcısı oluşturulmasını engeller.
-**_O_RANDOM**|Önbelleğe alma iyileştirildiğini, ancak rastgele erişim için diskten sınırlı olduğunu belirtir.
-**_O_RDONLY**|Yalnızca okumak için bir dosya açar. İle belirtilemez **_O_RDWR** veya **_O_WRONLY**.
-**_O_RDWR**|Hem okuma ve yazma için bir dosya açar. İle belirtilemez **_O_RDONLY** veya **_O_WRONLY**.
-**_O_SEQUENTIAL**|Önbelleğe alma iyileştirildiğini, ancak sıralı erişim için diskten sınırlı olduğunu belirtir.
-**_O_TEXT**|Metin (çevrilmiş) modunda bir dosya açar. (Daha fazla bilgi için [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [fopen](fopen-wfopen.md).)
-**_O_TRUNC**|Bir dosyayı açar ve uzunluğu sıfır kendisine keser; Dosya yazma iznine sahip olmalıdır. İle belirtilemez **_O_RDONLY**. **_O_TRUNC** ile kullanılan **_O_CREAT** varolan bir dosyayı açar veya bir dosya oluşturur. **Not:** **_O_TRUNC** bayrağı belirtilen dosyanın içeriğini yok eder.
-**_O_WRONLY**|Yalnızca yazmak için bir dosya açar. İle belirtilemez **_O_RDONLY** veya **_O_RDWR**.
-**_O_U16TEXT**|Unicode UTF-16 modunda bir dosya açar.
-**_O_U8TEXT**|Unicode UTF-8 modunda bir dosya açar.
-**_O_WTEXT**|Bir dosya Unicode modunda açar.
+| **_O_APPEND** | Dosya işaretçisini dosyanın her yazma işleminden önce sonuna taşır. |
+| **_O_BINARY** | Dosya ikili (çevrilmemiş) modda açılır. (Bkz [fopen](fopen-wfopen.md) ikili modu açıklaması.) |
+| **_O_CREAT** | Bir dosya oluşturur ve yazma için açar. Dosya belirtilen hiçbir etkisi *filename* bulunmaktadır. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
+| **_O_CREAT** &AMP;#124; **_O_SHORT_LIVED** | Geçici olarak bir dosya oluşturur ve mümkünse diske temizleme değil. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
+| **_O_CREAT** &AMP;#124; **_O_TEMPORARY** | Geçici olarak bir dosya oluşturur. son dosya tanımlayıcısı kapatıldığında dosya silinir. *Pmode* bağımsız değişkeni gereklidir **_O_CREAT** belirtilir. |
+| **_O_CREAT**&AMP;#124; ` _O_EXCL` | Bir hata değeri tarafından belirtilen dosya döndürür *filename* bulunmaktadır. Yalnızca ile kullanıldığında geçerlidir **_O_CREAT**. |
+| **_O_NOINHERIT** | Paylaşılan dosya tanımlayıcısı oluşturulmasını engeller. |
+| **_O_RANDOM** | Önbelleğe alma iyileştirildiğini, ancak rastgele erişim için diskten sınırlı olduğunu belirtir. |
+| **_O_RDONLY** | Yalnızca okumak için bir dosya açar. İle belirtilemez **_O_RDWR** veya **_O_WRONLY**. |
+| **_O_RDWR** | Hem okuma ve yazma için bir dosya açar. İle belirtilemez **_O_RDONLY** veya **_O_WRONLY**. |
+| **_O_SEQUENTIAL** | Önbelleğe alma iyileştirildiğini, ancak sıralı erişim için diskten sınırlı olduğunu belirtir. |
+| **_O_TEXT** | Metin (çevrilmiş) modunda bir dosya açar. (Daha fazla bilgi için [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [fopen](fopen-wfopen.md).) |
+| **_O_TRUNC** | Bir dosyayı açar ve uzunluğu sıfır kendisine keser; Dosya yazma iznine sahip olmalıdır. İle belirtilemez **_O_RDONLY**. **_O_TRUNC** ile kullanılan **_O_CREAT** varolan bir dosyayı açar veya bir dosya oluşturur. **Not:** **_O_TRUNC** bayrağı belirtilen dosyanın içeriğini yok eder. |
+| **_O_WRONLY** | Yalnızca yazmak için bir dosya açar. İle belirtilemez **_O_RDONLY** veya **_O_RDWR**. |
+| **_O_U16TEXT** | Unicode UTF-16 modunda bir dosya açar. |
+| **_O_U8TEXT** | Unicode UTF-8 modunda bir dosya açar. |
+| **_O_WTEXT** | Bir dosya Unicode modunda açar. |
 
 Dosya erişim modu belirtmek için ya da belirtmeniz gerekir **_O_RDONLY**, **_O_RDWR**, veya **_O_WRONLY**. Erişim modu için varsayılan değer yoktur.
 
@@ -128,9 +128,9 @@ Varsa **_aç** çağrılır **_O_WRONLY** | **_O_APPEND** (ekleme modu) ve **_O_
 
 |*pmode*|Açıklama|
 |-|-|
-**_S_IREAD**|Yalnızca okuma izin verilir.
-**_S_IWRITE**|Yazma izin verilir. (Aslında, okuma ve yazma verir.)
-**_S_IREAD** &AMP;#124; **_S_IWRITE**|Okuma ve yazma izin verilir.
+| **_S_IREAD** | Yalnızca okuma izin verilir. |
+| **_S_IWRITE** | Yazma izin verilir. (Aslında, okuma ve yazma verir.) |
+| **_S_IREAD** &AMP;#124; **_S_IWRITE** | Okuma ve yazma izin verilir. |
 
 Her iki sabitleri verildiğinde, bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ). Windows tüm dosyaları okunabilir; Salt yazma izni kullanılamıyor. Bu nedenle, modları **_s_ıwrıte** ve **_s_ıread** | **_s_ıwrıte** eşdeğerdir.
 

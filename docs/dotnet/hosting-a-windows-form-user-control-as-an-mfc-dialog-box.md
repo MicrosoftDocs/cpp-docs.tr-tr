@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 44123e3cbad3115dc990cd8dc9f1316994560656
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6b7b7b3d1cb5ed9f3cd2b3655b45aaac8d8d195
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580927"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524930"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 
@@ -68,7 +68,7 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
 
    Ardından MFC uygulamasından Windows Forms üzerindeki bir denetimin durumunu izlemek için kod ekleyeceksiniz.
 
-9. OnInitDialog için bir işleyici ekleyin.
+1. OnInitDialog için bir işleyici ekleyin.
 
    Görüntü **özellikleri** penceresini (F4). İçinde **sınıf görünümü**, CHostForWinForm öğesini seçin. İçinde **özellikleri** penceresinde seçin geçersiz kılar ve OnInitDialog satırında, sol taraftaki sütunu tıklatın ve seçin \< Ekle >. Bu, CHostForWinForm.h öğesine aşağıdaki satırı ekler:
 
@@ -76,9 +76,9 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
     virtual BOOL OnInitDialog();
     ```
 
-10. Aşağıdaki şekilde OnInitDialog (in CHostForWinForm.cpp) tanımlayın:
+1. Aşağıdaki şekilde OnInitDialog (in CHostForWinForm.cpp) tanımlayın:
 
-    ```
+    ```cpp
     BOOL CHostForWinForm::OnInitDialog() {
        CWinFormsDialog<WindowsControlLibrary1::UserControl1>::OnInitDialog();
        GetControl()->button1->Click += MAKE_DELEGATE(System::EventHandler, OnButton1);
@@ -86,9 +86,9 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
     }
     ```
 
-11. Daha sonra OnButton1 işleyicisini ekleyin. Aşağıdaki satırları CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne ekleyin:
+1. Daha sonra OnButton1 işleyicisini ekleyin. Aşağıdaki satırları CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne ekleyin:
 
-    ```
+    ```cpp
     virtual void OnButton1( System::Object^ sender, System::EventArgs^ e );
 
     BEGIN_DELEGATE_MAP( CHostForWinForm )
@@ -98,41 +98,41 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
 
    CHostForWinForm.cpp öğesine bu tanımı ekleyin:
 
-    ```
+    ```cpp
     void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )
     {
        System::Windows::Forms::MessageBox::Show("test");
     }
     ```
 
-12. Derleme ve projeyi çalıştırın. Windows Form üzerinde olan düğmeyi tıklattığınızda MFC uygulamasındaki kod çalışacaktır.
+1. Derleme ve projeyi çalıştırın. Windows Form üzerinde olan düğmeyi tıklattığınızda MFC uygulamasındaki kod çalışacaktır.
 
-   Sonraki Windows Form üzerinde metin kutusunun değerini MFC kodundan görüntülemek için kod ekleyeceksiniz.
+    Sonraki Windows Form üzerinde metin kutusunun değerini MFC kodundan görüntülemek için kod ekleyeceksiniz.
 
-13. CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne aşağıdaki bildirimi ekleyin:
+1. CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne aşağıdaki bildirimi ekleyin:
 
-    ```
+    ```cpp
     CString m_sEditBoxOnWinForm;
     ```
 
-14. CHostForWinForm.cpp içinde DoDataExchange tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:
+1. CHostForWinForm.cpp içinde DoDataExchange tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:
 
-    ```
+    ```cpp
     if (pDX->m_bSaveAndValidate)
        m_sEditBoxOnWinForm = CString( GetControl()->textBox1->Text);
     else
        GetControl()->textBox1->Text = gcnew System::String(m_sEditBoxOnWinForm);
     ```
 
-15. CHostForWinForm.cpp içinde OnButton1 tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:
+1. CHostForWinForm.cpp içinde OnButton1 tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:
 
-    ```
+    ```cpp
     this->UpdateData(TRUE);
     System::String ^ z = gcnew System::String(m_sEditBoxOnWinForm);
     System::Windows::Forms::MessageBox::Show(z);
     ```
 
-16. Derleme ve projeyi çalıştırın.
+1. Derleme ve projeyi çalıştırın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

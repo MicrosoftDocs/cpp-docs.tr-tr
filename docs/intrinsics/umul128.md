@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-ms.openlocfilehash: f5df1e0689be71e21f778cf64a69764e1fef3b86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f7b33767155c4781d131a008d6d42dcc4015d07b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676622"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330521"
 ---
 # <a name="umul128"></a>_umul128
 
@@ -22,10 +22,10 @@ ms.locfileid: "50676622"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned __int64 _umul128( 
-   unsigned __int64 Multiplier, 
-   unsigned __int64 Multiplicand, 
-   unsigned __int64 *HighProduct 
+unsigned __int64 _umul128(
+   unsigned __int64 Multiplier,
+   unsigned __int64 Multiplicand,
+   unsigned __int64 *HighProduct
 );
 ```
 

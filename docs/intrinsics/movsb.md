@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rep movsb instruction
 - __movsb intrinsic
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-ms.openlocfilehash: 4b68eb4ca735274243db0c9ae006aa04be55355f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9dc32f460a2098d2a216c725f49c0389f77043c2
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666940"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329039"
 ---
 # <a name="movsb"></a>__movsb
 
@@ -24,10 +24,10 @@ Taşıma bir dize oluşturur (`rep movsb`) yönerge.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __movsb( 
-   unsigned char* Destination, 
-   unsigned const char* Source, 
-   size_t Count 
+void __movsb(
+   unsigned char* Destination,
+   unsigned const char* Source,
+   size_t Count
 );
 ```
 

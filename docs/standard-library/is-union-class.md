@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_union class
 - is_union
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
-ms.openlocfilehash: b29705f0e84e9aff9dbefe4297a67ac2a75da8b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 511dfba92629cfbf71c805a9ea50b8e27f775c54
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636637"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520832"
 ---
 # <a name="isunion-class"></a>is_union Sınıfı
 
@@ -64,7 +64,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

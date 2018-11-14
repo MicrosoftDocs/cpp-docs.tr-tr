@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __mulh intrinsic
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
-ms.openlocfilehash: e42cc5bf3313b37bdd97287b4d53bce794b3379b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28826f285d23b083883237ff1fb02684e32d278c
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549389"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326127"
 ---
 # <a name="mulh"></a>__mulh
 
@@ -22,9 +22,9 @@ Yüksek 64 bit ürünün iki 64-bit imzalı tamsayı döndürür.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-__int64 __mulh( 
-   __int64 a, 
-   __int64 b 
+__int64 __mulh(
+   __int64 a,
+   __int64 b
 );
 ```
 

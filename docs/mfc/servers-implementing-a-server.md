@@ -5,12 +5,12 @@ helpviewer_keywords:
 - servers, implementing
 - OLE server applications [MFC], implementing OLE servers
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-ms.openlocfilehash: bd5967fe07670bd4b3bd076ca23fda62b02b2177
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5c89ff1256d557ef417b9e53ce76bbf1b5d6196
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566768"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518970"
 ---
 # <a name="servers-implementing-a-server"></a>Sunucular: Sunucu Uygulama
 
@@ -22,11 +22,11 @@ Uygulama Sihirbazı'nı sağlayan sunucu kodu birkaç kategoride toplanabilir:
 
 - Sunucu kaynaklarını tanımlama:
 
-   - Sunucunun kendi penceresinde gömülü bir öğe düzenlenirken kullanılan menü kaynağı.
+  - Sunucunun kendi penceresinde gömülü bir öğe düzenlenirken kullanılan menü kaynağı.
 
-   - Sunucu yerinde etkin olduğunda kullanılan menü ve araç çubuğu kaynakları.
+  - Sunucu yerinde etkin olduğunda kullanılan menü ve araç çubuğu kaynakları.
 
-   Bu kaynaklar hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
+  Bu kaynaklar hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
 
 - Bir öğe sınıfı tanımlayarak türetilen `COleServerItem`. Sunucu öğeleri hakkında daha ayrıntılı bilgi için bkz. [sunucular: sunucu öğeleri](../mfc/servers-server-items.md).
 

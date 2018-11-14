@@ -29,12 +29,12 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-ms.openlocfilehash: 19a312bcc3cdeea82bcebce6da95e26ef88992b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d0320b45cb8cd99f1d9f6494b7dcb17bc545a81
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541693"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326101"
 ---
 # <a name="lseek-lseeki64"></a>_lseek, _lseeki64
 
@@ -78,9 +78,9 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, err
 
 |*Kaynak* değeri||
 |-|-|
-**SEEK_SET**|Dosyasının başında.
-**SEEK_CUR**|Dosya işaretçisini geçerli konumu.
-**SEEK_END**|Dosya sonu.
+| **SEEK_SET** | Dosyasının başında. |
+| **SEEK_CUR** | Dosya işaretçisini geçerli konumu. |
+| **SEEK_END** | Dosya sonu. |
 
 Kullanabileceğiniz **_lseek** işaretçi herhangi bir yerde bir dosya veya dosya sonunu yeniden konumlandırmak için.
 

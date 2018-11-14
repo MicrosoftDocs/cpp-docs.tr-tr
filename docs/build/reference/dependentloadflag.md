@@ -10,12 +10,12 @@ helpviewer_keywords:
 - linker [C++], DEPENDENTLOADFLAG
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
-ms.openlocfilehash: 80065bb4e67674c49761d0832395ae535bbfbf24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bdf2542d641f751f40757079eb576f2c97540dc
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604300"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326166"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük bayrakları)
 
@@ -27,9 +27,8 @@ Kullanılan ayarlar varsayılan yük bayrakları `LoadLibrary` DLL'lerini yükle
 
 ### <a name="arguments"></a>Arguments
 
-|||
-|-|-|
-*loadflags*|İsteğe bağlı "C"-style 16 bit tam sayı değeri ondalık, önüne sıfır getirilmiş sekizlik veya onaltılık bir lider olan `0x`, Tümüne Uygula için bağımlı yük bayrakları belirtir [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) çağırır. Varsayılan değer 0’dır.
+*loadflags*<br/>
+İsteğe bağlı "C"-style 16 bit tam sayı değeri ondalık, önüne sıfır getirilmiş sekizlik veya onaltılık bir lider olan `0x`, Tümüne Uygula için bağımlı yük bayrakları belirtir [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) çağırır. Varsayılan değer 0’dır.
 
 ## <a name="remarks"></a>Açıklamalar
 

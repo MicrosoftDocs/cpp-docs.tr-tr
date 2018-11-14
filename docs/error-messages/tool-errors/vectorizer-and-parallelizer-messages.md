@@ -8,12 +8,12 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 7973265ff7e5c26cb43e37636f41dd06f74af7a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69e174a000edfea7027a04f9cf97bf5a1aeb585e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557534"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518769"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 
@@ -214,7 +214,6 @@ void code_504(int *A) {
     }
 
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode100x"></a> 10xx
@@ -424,7 +423,6 @@ void code_1010()
         A[i]++;
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode110x"></a> 11xx
@@ -573,7 +571,6 @@ void code_1106(int *A)
         }
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode120x"></a> 12xx
@@ -649,7 +646,6 @@ void code_1203(int *A)
         A[i] += A[i*2+2] + 2;  // non-contiguous memory access not vectorized
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode130x"></a> 13xx
@@ -782,7 +778,6 @@ void code_1305( S_1305 *s, S_1305 x)
         s[i] = x;
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode140x"></a> 14xx
@@ -855,7 +850,6 @@ void code_1404(int *A)
         A[i] = A[i] + 1;
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode150x"></a> 15xx
@@ -984,7 +978,6 @@ void code_1505(int *A, int *B)
         }
     }
 }
-
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - tzname function
 - time-zone variables
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
-ms.openlocfilehash: d8660c7a6677fb8113b91d6d69a21eef9d1d26c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad28ce701a4c6aa60208ed0cefe8f7dc06ef55a7
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460521"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325925"
 ---
 # <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone ve _tzname
 
@@ -44,9 +44,9 @@ Bunlar TIME.h içinde şu şekilde bildirilir.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-extern int _daylight; 
-extern int _dstbias; 
-extern long _timezone; 
+extern int _daylight;
+extern int _dstbias;
+extern long _timezone;
 extern char *_tzname[2];
 ```
 

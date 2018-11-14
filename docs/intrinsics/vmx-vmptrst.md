@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __vmx_vmptrst intrinsic
 - VMPTRST instruction
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
-ms.openlocfilehash: a736a632c7f711ac8fdcc4d73eaf2bd341d0c978
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d7e2ed29daac276c9b6cba07a727371a212fd4a
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654239"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331899"
 ---
 # <a name="vmxvmptrst"></a>__vmx_vmptrst
 
@@ -23,8 +23,8 @@ Belirtilen adresteki geçerli sanal makine denetim yapısı (Windows VMCS) işar
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __vmx_vmptrst( 
-   unsigned __int64 *VmcsPhysicalAddress 
+void __vmx_vmptrst(
+   unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 

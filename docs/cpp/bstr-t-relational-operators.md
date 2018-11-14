@@ -29,12 +29,12 @@ helpviewer_keywords:
 - operator < [C++], bstr
 - operator > [C++], bstr
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
-ms.openlocfilehash: 7c6af285e2a3cb712ecad10f1bdc6ea5f7c56194
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f454c8bcfeb28ada8c07564e9bb562e18a537e45
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569656"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330963"
 ---
 # <a name="bstrt-relational-operators"></a>_bstr_t İlişkisel İşleçleri
 
@@ -45,7 +45,7 @@ ms.locfileid: "50569656"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-bool operator!( ) const throw( ); 
+bool operator!( ) const throw( );
 bool operator==(const _bstr_t& str) const throw( );
 bool operator!=(const _bstr_t& str) const throw( );
 bool operator<(const _bstr_t& str) const throw( );

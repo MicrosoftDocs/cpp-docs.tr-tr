@@ -28,12 +28,12 @@ helpviewer_keywords:
 - _ungettc function
 - ungetc function
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
-ms.openlocfilehash: 95d2160ba4d008ab67f443d4e9dda7180d62b590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c504540f8fbbe14961fa051bb93ebef350c2c1da
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633591"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332393"
 ---
 # <a name="ungetc-ungetwc"></a>ungetc, ungetwc
 
@@ -62,7 +62,7 @@ wint_t ungetwc(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, bu işlevlerin her biri karakteri bağımsız değişkenini döndürür, *c*. Varsa *c* geri itilemiyorsa veya herhangi bir karakter okunmamışsa, Giriş akışı değiştirilmez ve **ungetc** döndürür ** EOF`; **ungetwc` döndürür **WEOF**. Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **EOF** veya **WEOF** döndürülür ve **errno** ayarlanır **EINVAL**.
+Başarılı, bu işlevlerin her biri karakteri bağımsız değişkenini döndürür, *c*. Varsa *c* geri itilemiyorsa veya herhangi bir karakter okunmamışsa, Giriş akışı değiştirilmez ve **ungetc** döndürür **EOF**; **ungetwc** döndürür **WEOF**. Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **EOF** veya **WEOF** döndürülür ve **errno** ayarlanır **EINVAL**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

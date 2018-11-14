@@ -11,12 +11,12 @@ helpviewer_keywords:
 - environment control routines
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-ms.openlocfilehash: 74194311eb33a23de5643b3cb956c2e3f752dea0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df080d1ed8c5a00711468a159acb07159ad31930
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525625"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329416"
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 
@@ -46,7 +46,7 @@ Başlatma, durdurma ve bir programın işlemlerini yönetmek için işlem deneti
 |[Çıkış](../c-runtime-library/reference/exit-exit-exit.md)|Tarafından kaydedilen işlevlerini **atexit** ve **_onexit**, tüm arabelleklerini, yakın tüm dosyaları açma işlemi|
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|İşlemi hemen çağırmadan **atexit** veya **_onexit** ya da bir temizlemeye arabellekler|
 |[GETENV, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Ortam değişkeninin değerini alın|
-|[_getpid](../c-runtime-library/reference/getpid.md)|İşlem kimlik numarasını alın|[System::Diagnostics::Process::ID](https://msdn.microsoft.com/library/system.diagnostics.process.id.aspx)|
+|[_getpid](../c-runtime-library/reference/getpid.md)|İşlem kimlik numarasını alın|
 |[longjmp](../c-runtime-library/reference/longjmp.md)|Kayıtlı bir geri yükleme stack ortamı; bir yerel olmayan yürütülecek kullanın **Git**|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|Program sonlandırma yürütmeyi için zamanlama rutinleri; uyumluluk için Microsoft C/C++ version 7.0 ve önceki sürümleri kullanın|
 |[_pclose](../c-runtime-library/reference/pclose.md)|Yeni komut işlemcisini bekleyin ve ilişkili kanaldaki akışı kapatır|

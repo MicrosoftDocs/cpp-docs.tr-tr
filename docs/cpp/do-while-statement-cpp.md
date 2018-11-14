@@ -9,12 +9,12 @@ helpviewer_keywords:
 - do keyword [C++]
 - while keyword [C++], do-while
 ms.assetid: e01e6f7c-7da1-4591-87f9-c26ff848e7b0
-ms.openlocfilehash: 014012166f3a659d71b2e3212d63a523f2b87b8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d930c1884975288ff11f4d4e5cf2728e717e17d5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656165"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326673"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 
@@ -24,7 +24,7 @@ Yürüten bir *deyimi* belirtilen sonlandırma koşulu kadar sürekli olarak ( *
 
 ```
 do
-   statement
+   statement
 while ( expression ) ;
 ```
 

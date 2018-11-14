@@ -30,12 +30,12 @@ helpviewer_keywords:
 - defining locales
 - _wsetlocale function
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
-ms.openlocfilehash: 0f2c0478ba5898ab369a04362734891f6d45cf42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c9f44e9619b9c34c9424e0be78186d14f2d6a21
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548545"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327141"
 ---
 # <a name="setlocale-wsetlocale"></a>setlocale, _wsetlocale
 
@@ -96,12 +96,12 @@ Kullanım **setlocale** ayarlamak, değiştirmek veya bazılarını veya tümün
 
 |*Kategori* bayrağı|Etkiler|
 |-|-|
-**LC_ALL**|Aşağıda listelenen tüm kategoriler.
-**LC_COLLATE**|**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_ strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, ve **wcsxfrm** işlevleri.
-**LC_CTYPE**|Karakter işleme işlevleri (dışında **isdigit**, **isxdigit**, **mbstowcs**, ve **mbtowc**, Etkilenmeyen).
-**LC_MONETARY**|Tarafından döndürülen para biçimli bilgiler **localeconv** işlevi.
-**LC_NUMERIC**|Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (gibi **printf**), veri dönüştürme rutinleri için ve tarafından döndürülen Parasal olmayan biçimlendirme bilgileri için **localeconv**. Ondalık ayırıcı karakterinin yanı sıra **lc_numerıc** tarafından döndürülen dize denetim kümeleri binlik ayırıcı ve gruplandırma [localeconv](localeconv.md).
-**LC_TIME**|**Strftime** ve **wcsftime** işlevleri.
+| **LC_ALL** | Aşağıda listelenen tüm kategoriler. |
+| **LC_COLLATE** | **Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_ strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, ve **wcsxfrm** işlevleri. |
+| **LC_CTYPE** | Karakter işleme işlevleri (dışında **isdigit**, **isxdigit**, **mbstowcs**, ve **mbtowc**, Etkilenmeyen). |
+| **LC_MONETARY** | Tarafından döndürülen para biçimli bilgiler **localeconv** işlevi. |
+| **LC_NUMERIC** | Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (gibi **printf**), veri dönüştürme rutinleri için ve tarafından döndürülen Parasal olmayan biçimlendirme bilgileri için **localeconv**. Ondalık ayırıcı karakterinin yanı sıra **lc_numerıc** tarafından döndürülen dize denetim kümeleri binlik ayırıcı ve gruplandırma [localeconv](localeconv.md). |
+| **LC_TIME** | **Strftime** ve **wcsftime** işlevleri. |
 
 Bu işlev, kategori parametresini doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
 

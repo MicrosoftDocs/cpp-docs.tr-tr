@@ -21,12 +21,12 @@ f1_keywords:
 - vfwscanf_s
 - _vftscanf_s
 ms.assetid: 9b0133f0-9a18-4581-b24b-3b72683ad432
-ms.openlocfilehash: 40bfad26ebdf7ffba48a184491a371f4010e90ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f2f39ef124220ddee0b42242a9991d63fe5969a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429412"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521257"
 ---
 # <a name="vfscanfs-vfwscanfs"></a>vfscanf_s, vfwscanf_s
 
@@ -45,7 +45,6 @@ int vfwscanf_s(
    const wchar_t *format,
    va_list arglist
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -148,7 +147,6 @@ int main(void)
         fclose(stream);
     }
 }
-
 ```
 
 ```Output

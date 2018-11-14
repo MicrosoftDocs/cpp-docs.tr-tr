@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4462
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
-ms.openlocfilehash: 801a440f131e9428c7f217346a6fd26c72cc1374
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd4d5c1fd7dd8d7419fc901149ceab7e769e7076
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582331"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331873"
 ---
 # <a name="compiler-warning-level-1-c4462"></a>Derleyici Uyarısı (düzey 1) C4462
 
@@ -32,18 +32,18 @@ Bu örnek C4462 uyarısı oluşturur:
 ```cpp
 namespace N
 {
-       public ref struct EventArgs sealed {};
-       public ref struct R sealed
-       {
-              R() {}
-              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
-       };
+    public ref struct EventArgs sealed {};
+    public ref struct R sealed
+    {
+        R() {}
+        event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
+    };
 }
 
 [Platform::MTAThread]
 int main()
 {
-     auto x = ref new N::R();
+    auto x = ref new N::R();
 }
 ```
 

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - wctob function
 - characters, converting
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
-ms.openlocfilehash: c40fd6a6094aa6f0c8c153bb00420d1e990dbbb2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d9dca16ca905afbc94d912a8083017ba9cc84e6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635493"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522525"
 ---
 # <a name="wctob"></a>wctob
 
@@ -93,7 +93,6 @@ int main( void )
                 " be \"%c\".\n", bChar);
     }
 }
-
 ```
 
 ```Output

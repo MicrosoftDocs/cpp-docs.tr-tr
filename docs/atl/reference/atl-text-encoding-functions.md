@@ -25,12 +25,12 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 5fbd3b1c4e0ca1c09e34c3e04a4d0b0613e45e73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a97f914905c2f98bc948b76e1d79d4af0f5dbadd
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430420"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327505"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 

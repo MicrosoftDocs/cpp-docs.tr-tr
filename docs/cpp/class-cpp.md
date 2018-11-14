@@ -7,12 +7,12 @@ helpviewer_keywords:
 - class types [C++], class statements
 - class keyword [C++]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-ms.openlocfilehash: 4404767fc6cf07c2a7a23d460e13bb191fef387a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5abd2ef73ff8af9ebc2f1827cb5403025d5383ee
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555148"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331002"
 ---
 # <a name="class-c"></a>class (C++)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50555148"
 [template-spec]
 class [ms-decl-spec] [tag [: base-list ]]
 {
-   member-list
+   member-list
 } [declarators];
 [ class ] tag declarators;
 ```

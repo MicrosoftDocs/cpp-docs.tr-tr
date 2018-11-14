@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wrmsr instruction
 - __writemsr intrinsic
 ms.assetid: 938b1553-51a8-4822-a818-6bed79b0fde5
-ms.openlocfilehash: ce73d472f71000695ffb6091325d34dfc673e1d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4af272ccafec9789497d0321c0769c2906f76b7
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662117"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330300"
 ---
 # <a name="writemsr"></a>__writemsr
 
@@ -24,9 +24,9 @@ Yazma modeli belirli kaydetmeyi oluşturur (`wrmsr`) yönerge.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __writemsr( 
-   unsigned long Register, 
-   unsigned __int64 Value 
+void __writemsr(
+   unsigned long Register,
+   unsigned __int64 Value
 );
 ```
 

@@ -4,21 +4,22 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, delimiters
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
-ms.openlocfilehash: ecc6018ef22b9c6b0ac64e379365555fb6b3d12f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 709c17138032a98ec2f8ff978d9b8364241989b1
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589442"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326491"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ Belge Etiketleri için Sınırlayıcılar
 
 Belge etiketleri gösteren bir belge açıklaması burada başlar ve biter derleyici sınırlayıcılar gerektirir.
 
 Aşağıdaki türde sınırlayıcıları ile XML belge etiketleri kullanabilirsiniz:
-|||
+
+| | |
 |-|-|
-|`///`  | Bu belge örneklerde gösterildiği ve Visual C++ proje şablonları tarafından kullanılan biçimidir.  |
+| `///` | Bu belge örneklerde gösterildiği ve Visual C++ proje şablonları tarafından kullanılan biçimidir.  |
 | `/** */`  | Çok satırlı sınırlayıcı olarak bu kullanılır.  |
 
 Var olan bazı biçimlendirme kurallarını kullanarak `/** */` sınırlayıcılar:

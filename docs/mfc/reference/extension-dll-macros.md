@@ -4,12 +4,12 @@ ms.date: 04/03/2017
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 9ef46d9ba026dbabfe1a2c4ac676a8940cdce1d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 66c3477c7f2901cd9986a8b52e3d9287191e7b4b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616599"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329598"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -46,7 +46,7 @@ Daha fazla bilgi için [dışarı ve içeri aktarma AFX_EXT_CLASS kullanarak](..
 
 ### <a name="requirements"></a>Gereksinimler
 
-Başlık: **afxv_** dll.h
+**Başlık:** afxv_dll.h
 
 ## <a name="afx_manage_state"></a>  AFX_MANAGE_STATE
 

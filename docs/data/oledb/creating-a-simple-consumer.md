@@ -1,15 +1,15 @@
 ---
 title: Basit Tüketici Oluşturma
-ms.date: 10/09/2018
+ms.date: 11/06/2018
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
-ms.openlocfilehash: 2a10e4da743c1f867d801ffe6767ab6b5b6c0290
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4346bca99d3744657072a4940776934e3c03e9de
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608058"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326647"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 
@@ -51,18 +51,18 @@ Ardından, **ATL OLE DB Tüketicisi Sihirbazı** OLE DB Tüketici nesne eklemek 
 
 1. İçinde **veri bağlantı özellikleri** iletişim kutusunda, aşağıdakileri yapın:
 
-    1. Üzerinde **sağlayıcısı** sekmesinde, bir OLE DB sağlayıcısı belirtin.
+   1. Üzerinde **sağlayıcısı** sekmesinde, bir OLE DB sağlayıcısı belirtin.
 
-    1. Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve parolası veri kaynağı ve veritabanı gibi gerekli bilgileri belirtin.
+   1. Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve parolası veri kaynağı ve veritabanı gibi gerekli bilgileri belirtin.
 
-       > [!NOTE]
-       > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
+      > [!NOTE]
+      > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
 
-       > [!NOTE]
-       > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, parola kaydetme seçeneğiniz vardır (kullanarak **parola kaydetmeye izin ver** onay kutusu); ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, kimliğinizi doğrulamak için Windows NT kullanır.
+      > [!NOTE]
+      > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, parola kaydetme seçeneğiniz vardır (kullanarak **parola kaydetmeye izin ver** onay kutusu); ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, kimliğinizi doğrulamak için Windows NT kullanır.
 
-       > [!NOTE]
-       > Windows NT tümleşik güvenliği kullanamaz, kullanıcıdan parola veya parola korumak amacıyla güvenlik mekanizmaları ile bir konumda depolamak için bir orta katman uygulama kullanmalıdır (yerine kaynak kodunda).
+      > [!NOTE]
+      > Windows NT tümleşik güvenliği kullanamaz, kullanıcıdan parola veya parola korumak amacıyla güvenlik mekanizmaları ile bir konumda depolamak için bir orta katman uygulama kullanmalıdır (yerine kaynak kodunda).
 
    1. Sağlayıcınız ve diğer ayarları seçtikten sonra **Test Bağlantısı** önceki iletişim kutusu sayfalarında yapılan seçimleri doğrulayın. Varsa **sonuçları** kutusuna raporları `Test connection succeeded`, tıklayın **Tamam** veri bağlantısı oluşturmak için.
 

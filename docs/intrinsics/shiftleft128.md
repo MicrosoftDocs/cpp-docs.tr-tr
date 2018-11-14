@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: b68f0497b3f71398a2c8e1e3abded0c1db9a5ae2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4fb1f9e65210ca9f9e38afd6fc13e01c7eb8f045
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676440"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325579"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
 
@@ -22,10 +22,10 @@ ms.locfileid: "50676440"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned __int64 __shiftleft128( 
-   unsigned __int64 LowPart, 
-   unsigned __int64 HighPart, 
-   unsigned char Shift 
+unsigned __int64 __shiftleft128(
+   unsigned __int64 LowPart,
+   unsigned __int64 HighPart,
+   unsigned char Shift
 );
 ```
 

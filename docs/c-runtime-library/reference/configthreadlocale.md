@@ -26,12 +26,12 @@ helpviewer_keywords:
 - per-thread locale
 - thread locale
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-ms.openlocfilehash: 244ef9ce93e39bef23a9d5d6792a10ca25355f5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99e10a0330ba4880ea181e9fe3d56f3fb6bd6493
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648389"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326049"
 ---
 # <a name="configthreadlocale"></a>_configthreadlocale
 
@@ -56,11 +56,11 @@ Ayarlanacak seçenek. Aşağıdaki tabloda listelenen seçeneklerden biri.
 
 **_Configurethreadlocale** işlevi, iş parçacığına özgü yerel ayarların kullanımını denetlemek için kullanılır. Şunlardan birini kullanın *per_thread_locale_type* iş parçacığı başına yerel ayar durumunu belirlemek için seçenekleri:
 
-|||
+| Seçenek | Açıklama |
 |-|-|
-**_ENABLE_PER_THREAD_LOCALE**|Geçerli iş parçacığı kullanımı iş parçacığına özgü yerel ayarı olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki yalnızca iş parçacığının kendi yerel ayarını etkiler.
-**_DISABLE_PER_THREAD_LOCALE**|Geçerli iş parçacığının genel yerel ayar kullanmasını olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki küresel yerel ayarı kullanan diğer iş parçacıklarını etkiler.
-**0**|Bu belirli iş parçacığının geçerli ayarını alır.
+| **_ENABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığı kullanımı iş parçacığına özgü yerel ayarı olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki yalnızca iş parçacığının kendi yerel ayarını etkiler. |
+| **_DISABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığının genel yerel ayar kullanmasını olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki küresel yerel ayarı kullanan diğer iş parçacıklarını etkiler. |
+| **0** | Bu belirli iş parçacığının geçerli ayarını alır. |
 
 Bu işlevler davranışını etkileyen **setlocale**, **_tsetlocale**, **_wsetlocale**, ve **_setmbcp**. İş parçacığı başına yerel ayar devre dışı, herhangi bir sonraki çağrı olduğunda **setlocale** veya **_wsetlocale** genel yerel ayar kullanan tüm iş parçacıklarının yerel ayarını değiştirir. İş parçacığı başına yerel ayar etkin olduğunda, **setlocale** veya **_wsetlocale** yalnızca geçerli iş parçacığının yerel ayarını etkiler.
 

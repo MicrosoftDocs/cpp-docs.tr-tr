@@ -32,12 +32,12 @@ helpviewer_keywords:
 - _difftime64 function
 - difftime32 function
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-ms.openlocfilehash: eefa946f0458f79950b443c0a84272866845df8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80aaac1696fc82db248b097e73a2d89d81a20346
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505956"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328285"
 ---
 # <a name="difftime-difftime32-difftime64"></a>difftime, _difftime32, _difftime64
 
@@ -131,13 +131,12 @@ int main( void )
    elapsed_time = difftime( finish, start );
    printf( "\nProgram takes %6.0f seconds.\n", elapsed_time );
 }
-
 ```
 
 ```Output
-Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038Multiplying 2 floating point numbers 100 million times...Program takes      3 seconds.Multiplying 2 floating point numbers 500 million times...
-
-Program takes      5 seconds.
+Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038
+Multiplying 2 floating point numbers 100 million times...
+Program takes      3 seconds.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

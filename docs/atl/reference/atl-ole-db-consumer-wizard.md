@@ -8,12 +8,12 @@ helpviewer_keywords:
 - connection strings [C++], OLE DB consumers
 - ATL OLE DB Consumer Wizard
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: 835b3e6246741c3859f51e017686531f450db194
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59ad635f62ab7a20a31de7255ec4522136e102ec
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499573"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524137"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -84,13 +84,13 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
       **Diğer:** içinde **bağlantı zaman aşımı**, boşta kalma süresi bir zaman aşımı oluşmadan önce izin verilen saniye sayısını belirtin. İçinde **erişim izinlerini**, veri bağlantısına erişim izinlerini belirtin.
 
-       Gelişmiş başlatma özellikleri hakkında daha fazla bilgi için her özel OLE DB sağlayıcısı ile sağlanan belgelere bakın.
+      Gelişmiş başlatma özellikleri hakkında daha fazla bilgi için her özel OLE DB sağlayıcısı ile sağlanan belgelere bakın.
 
    - **Tüm** sekmesi
 
       Bu sekme, belirttiğiniz bağlantı ve veri kaynağı için başlatma özellikleri özetini görüntüler. Bu değerleri düzenleyebilirsiniz.
 
-   Tıklayın **Tamam** tamamlanması. **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusunda, tablo, görünüm veya tüketici kullanacağı bir saklı yordam seçin.
+      Tıklayın **Tamam** tamamlanması. **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusunda, tablo, görünüm veya tüketici kullanacağı bir saklı yordam seçin.
 
 - **Sınıfı**
 

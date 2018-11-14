@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - mbrlen function
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
-ms.openlocfilehash: 75ae134db0e74099a9b19f4820a44a197fdfda2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec9079b9b164e2b609a956ddf3a75cd42923bafc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438460"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518341"
 ---
 # <a name="mbrlen"></a>mbrlen
 
@@ -146,7 +146,6 @@ Character count: 29
 Code page: 932
 ????: Shift-jis hiragana.
 Character count: 25
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

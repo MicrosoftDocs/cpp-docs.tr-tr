@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __movsd intrinsic
 - movsd instruction
 ms.assetid: eb5cccf3-aa76-47f0-b9fc-eeca38fd943f
-ms.openlocfilehash: 6760904f4eaa6ee32cf9326638ab68f728db45d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89c2e7bf6045821d01b23608552776aaf389b0cf
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628598"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331015"
 ---
 # <a name="movsd"></a>__movsd
 
@@ -24,10 +24,10 @@ Taşıma bir dize oluşturur (`rep movsd`) yönerge.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __movsd( 
-   unsigned long* Dest, 
-   unsigned long* Source, 
-   size_t Count 
+void __movsd(
+   unsigned long* Dest,
+   unsigned long* Source,
+   size_t Count
 );
 ```
 

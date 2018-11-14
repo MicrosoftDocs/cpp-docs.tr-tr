@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -EH compiler option [C++]
 - /EH compiler option [C++]
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
-ms.openlocfilehash: f118f55ddaa4a2dbc8a4a3ad1e596ec461a2b078
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8707ac716a010ea1d3dc0fa51740e76a5822462
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615068"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329306"
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 
@@ -29,12 +29,17 @@ Dışarıda özel durumu iyileştirmek için denetlediğinde derleyici ve bir ö
 
 ## <a name="arguments"></a>Arguments
 
-|||
-|-|-|
-**a**|Her ikisi de zaman uyumsuz yakalayan özel durum işleme modeli (yapılandırılmış) ve zaman uyumlu (C++) özel durumları kullanılarak c++ `catch(...)` söz dizimi.
-**s**|Zaman uyumlu () yalnızca C++ özel durumlarını yakalayan ve derleyiciye olarak bildirilen işlevlerin bir özel durum işleme modeli **extern "C"** bir özel durum oluşturabilir.
-**c**|Birlikte kullanılırsa **s** (**/ehsc**), yalnızca C++ özel durumlarını yakalayan ve derleyiciye olarak bildirilen işlevlerin **extern "C"** hiçbir zaman C++ özel durumu oluşturur. **/ EHca** eşdeğerdir **/eha**.
-**r**|Her zaman tüm çalışma zamanı sonlandırma denetimleri oluştur derleyiciye **noexcept** işlevleri. Varsayılan olarak, çalışma zamanı denetler **noexcept** derleyici bir işlevi çağırır işlevler yalnızca oluşturmayan belirlerse iyileştirmede.
+**a**<br/>
+Her ikisi de zaman uyumsuz yakalayan özel durum işleme modeli (yapılandırılmış) ve zaman uyumlu (C++) özel durumları kullanılarak c++ `catch(...)` söz dizimi.
+
+**s**<br/>
+Zaman uyumlu () yalnızca C++ özel durumlarını yakalayan ve derleyiciye olarak bildirilen işlevlerin bir özel durum işleme modeli **extern "C"** bir özel durum oluşturabilir.
+
+**c**<br/>
+Birlikte kullanılırsa **s** (**/ehsc**), yalnızca C++ özel durumlarını yakalayan ve derleyiciye olarak bildirilen işlevlerin **extern "C"** hiçbir zaman C++ özel durumu oluşturur. **/ EHca** eşdeğerdir **/eha**.
+
+**r**<br/>
+Her zaman tüm çalışma zamanı sonlandırma denetimleri oluştur derleyiciye **noexcept** işlevleri. Varsayılan olarak, çalışma zamanı denetler **noexcept** derleyici bir işlevi çağırır işlevler yalnızca oluşturmayan belirlerse iyileştirmede.
 
 ## <a name="remarks"></a>Açıklamalar
 

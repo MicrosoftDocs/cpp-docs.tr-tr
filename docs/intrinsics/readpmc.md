@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __readpmc intrinsic
 - rdpmc instruction
 ms.assetid: 14ed45a6-28b6-4635-8437-a597c04b43d4
-ms.openlocfilehash: f0a7d11ca7aed4aee1d78b8e9e7133f3d70a984f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 059d9344fa329e69666abaca4d73122ab29f8d2a
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582110"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326439"
 ---
 # <a name="readpmc"></a>__readpmc
 
@@ -24,8 +24,8 @@ Oluşturur `rdpmc` performans sayacı tarafından belirtilen izleme okur yönerg
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-unsigned __int64 __readpmc( 
-   unsigned long counter 
+unsigned __int64 __readpmc(
+   unsigned long counter
 );
 ```
 

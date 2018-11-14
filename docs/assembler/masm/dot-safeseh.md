@@ -8,12 +8,12 @@ helpviewer_keywords:
 - SAFESEH directive
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
-ms.openlocfilehash: adfb9106095de3d15bafb67172b001d0f4597418
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 417aea13518621f775cafa176ff7d74f9704d511
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649858"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328363"
 ---
 # <a name="safeseh"></a>.SAFESEH
 
@@ -33,9 +33,9 @@ Yapılandırılmış özel durum işleyicileri hakkında daha fazla bilgi için 
 
 ```asm
 .386
-.model  flat
-MyHandler   proto
-.safeseh    MyHandler
+.model  flat
+MyHandler   proto
+.safeseh    MyHandler
 end
 ```
 

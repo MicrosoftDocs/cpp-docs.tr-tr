@@ -2,12 +2,12 @@
 title: '&lt;cfenv&gt;'
 ms.date: 11/04/2016
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-ms.openlocfilehash: 0eb54b0fc86e7b205559b243eac6d64da74b2f98
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 386e4607cb8a53e7f0128873853ee133d6acd1e2
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487951"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520679"
 ---
 # <a name="ltcfenvgt"></a>&lt;cfenv&gt;
 
@@ -17,7 +17,6 @@ Standart C Kitaplığı üstbilgisi içerir \<fenv.h > ve ilişkili adlar ekler 
 
 ```cpp
 #include <cfenv>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

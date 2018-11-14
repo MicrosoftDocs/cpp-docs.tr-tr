@@ -40,12 +40,12 @@ f1_keywords:
 helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-ms.openlocfilehash: 5cf3cbb0cbff10deb029e81945f63921495bd0de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2045d2d1c6a848378ac55114b61177d386b14fab
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522284"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523929"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 
@@ -282,7 +282,6 @@ Ayrılmış belleği döndürür `accelerator`, kilobayt cinsinden.
 
 ```
 size_t get_dedicated_memory() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -295,7 +294,6 @@ Bu hızlandırıcıda oluşturulan arabellekler için varsayılan cpu access_typ
 
 ```
 access_type get_default_cpu_access_type() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -308,7 +306,6 @@ Varsayılan döndürür `accelerator_view` ile ilişkili nesne `accelerator`.
 
 ```
 accelerator_view get_default_view() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -321,7 +318,6 @@ Kısa bir açıklamasını döndürür `accelerator` cihaz.
 
 ```
 std::wstring get_description() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -334,7 +330,6 @@ Hızlandırıcının yolunu döndürür. Sistemde benzersiz yoludur.
 
 ```
 std::wstring get_device_path() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -347,7 +342,6 @@ Belirten bir Boole değeri döndürür olmadığını `accelerator` bir görünt
 
 ```
 bool get_has_display() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -360,7 +354,6 @@ Belirler olmadığını `accelerator` ayrıntılı hata raporlama için etkinle�
 
 ```
 bool get_is_debug() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -373,7 +366,6 @@ Belirler olmadığını `accelerator` benzetilip benzetilmediğini.
 
 ```
 bool get_is_emulated() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -386,7 +378,6 @@ Hızlandırıcının, hem Hızlandırıcı ve CPU tarafından erişilebilir bell
 
 ```
 bool get_supports_cpu_shared_memory() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -399,7 +390,6 @@ Hızlandırıcının çifte hassas matematik destekleyip dahil olmak üzere birl
 
 ```
 bool get_supports_double_precision() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -412,7 +402,6 @@ Hızlandırıcı çift duyarlık Matematiği için sınırlı desteğe sahip olu
 
 ```
 bool get_supports_limited_double_precision() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -425,7 +414,6 @@ Sürümünü döndürür `accelerator`.
 
 ```
 unsigned int get_version() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -462,7 +450,6 @@ Bu karşılaştırır `accelerator` döndürür ve başka nesnesi **false** ayn�
 
 ```
 bool operator!= (const accelerator& _Other) const;
-
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -497,7 +484,6 @@ Bu karşılaştırır `accelerator` döndürür ve başka nesnesi **true** aynı
 
 ```
 bool operator== (const accelerator& _Other) const;
-
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -636,7 +622,6 @@ Döndürür `accelerator` nesnesi [accelerator_view](accelerator-view-class.md) 
 
 ```
 accelerator get_accelerator() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -649,7 +634,6 @@ Accelerator_view geçirildiğinde çalışma zamanı otomatik olarak uygun bir H
 
 ```
 bool get_is_auto_selection() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -662,7 +646,6 @@ Belirten bir Boole değeri döndürür olmadığını [accelerator_view](acceler
 
 ```
 bool get_is_debug() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -675,7 +658,6 @@ Sıralama modunu döndürür [accelerator_view](accelerator-view-class.md) nesne
 
 ```
 queuing_mode get_queuing_mode() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -688,7 +670,6 @@ Sürümünü döndürür [accelerator_view](accelerator-view-class.md).
 
 ```
 unsigned int get_version() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -717,7 +698,6 @@ Bu karşılaştırır [accelerator_view](accelerator-view-class.md) döndürür 
 
 ```
 bool operator!= (const accelerator_view& _Other) const;
-
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -752,7 +732,6 @@ Bu karşılaştırır [accelerator_view](accelerator-view-class.md) döndürür 
 
 ```
 bool operator== (const accelerator_view& _Other) const;
-
 ```
 
 ### <a name="parameters"></a>Parametreler

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-ms.openlocfilehash: 943cce887fbce87e00cd6ff3d5452835db78173e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 655c177b8e5b859faf3b6d9c3250bc3ced31b430
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436068"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327206"
 ---
 # <a name="directives-reference"></a>Yönergeler Başvurusu
 
@@ -69,11 +69,9 @@ ms.locfileid: "50436068"
 
 ### <a name="equates"></a>Karşılık gelir
 
-||
-|-|
-|[=](../../assembler/masm/equal.md)|
-|[EQU](../../assembler/masm/equ.md)|
-|[TEXTEQU](../../assembler/masm/textequ.md)|
+||||
+|-|-|-|
+|[=](../../assembler/masm/equal.md)|[EQU](../../assembler/masm/equ.md)|[TEXTEQU](../../assembler/masm/textequ.md)|
 
 ### <a name="listing-control"></a>Denetim listesi
 

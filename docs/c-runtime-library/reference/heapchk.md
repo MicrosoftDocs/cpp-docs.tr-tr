@@ -26,12 +26,12 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: b34b4ea1bb2512628213cabb55e26e2dad6d445c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdc0137761664a668d6ef95d739f09501e8290e5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580628"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331405"
 ---
 # <a name="heapchk"></a>_heapchk
 
@@ -49,11 +49,11 @@ int _heapchk( void );
 
 |Dönüş değeri|Koşul|
 |-|-|
-**_HEAPBADBEGIN**|İlk üstbilgi bilgileri hatalı veya bulunamıyor.
-**_HEAPBADNODE**|Yığın zarar ya da bozuk düğümü bulundu.
-**_HEAPBADPTR**|Yığın halinde işaretçi geçerli değil.
-**_HEAPEMPTY**|Yığın başlatılmadı.
-**_HEAPOK**|Yığın tutarlı görünüyor.
+| **_HEAPBADBEGIN** | İlk üstbilgi bilgileri hatalı veya bulunamıyor. |
+| **_HEAPBADNODE** | Yığın zarar ya da bozuk düğümü bulundu. |
+| **_HEAPBADPTR** | Yığın halinde işaretçi geçerli değil. |
+| **_HEAPEMPTY** | Yığın başlatılmadı. |
+| **_HEAPOK** | Yığın tutarlı görünüyor. |
 
 Ayrıca, bir hata oluşursa **_heapchk** ayarlar **errno** için **ENOSYS**.
 

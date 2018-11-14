@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - and_eq macro
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
-ms.openlocfilehash: c5fe0c8856d2cecd33825490087c4b78a8d3342c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4dbce5115c656137f845e31b4793f43b5531afc2
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636286"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327882"
 ---
 # <a name="andeq"></a>and_eq
 
@@ -34,9 +34,7 @@ Alternatif & = işleci.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-
 #define and_eq &=
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

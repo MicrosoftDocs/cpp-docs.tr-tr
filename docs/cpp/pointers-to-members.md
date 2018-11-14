@@ -8,12 +8,12 @@ helpviewer_keywords:
 - members [C++], pointers to
 - pointers, declarations
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-ms.openlocfilehash: ac8a1b43b3bf8bde8f910e72b601bf7d94e0d19d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a15e519be14d9a05cb30a8c9282baccc87a5f35e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480297"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326972"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 
@@ -25,28 +25,40 @@ ms.locfileid: "50480297"
 ```
 
 1. Bildirim belirticisi:
-  - İsteğe bağlı bir depolama sınıfı tanımlayıcısı.
 
-  - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
+   - İsteğe bağlı bir depolama sınıfı tanımlayıcısı.
 
-  - Tür belirticisi: bir tür adı.  Bu üye için işaret türüdür sınıfı değil.
+   - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
+
+   - Tür belirticisi: bir tür adı.  Bu üye için işaret türüdür sınıfı değil.
 
 1. Bildirimci:
 
-  - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
-1. İşaret için üyeleri içeren sınıfın tam adı.
-  - :: İşleci.
-  - <strong>\*</strong> İşleci.
-  - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
-  - Üye işaretçisi adlandırma tanımlayıcısı.
+   - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
-  - İsteğe bağlı bir başlatıcı:
-  - **=** İşleci.
-  - **&** İşleci.
-  - Sınıfın tam adı.
-  - `::` işleci.
-  - Bir statik olmayan üye uygun bir tür sınıfının adı.
-  - Her zaman olduğu gibi birden çok bildirimcisi (ve ilişkili tüm başlatıcıları) tek bir bildirimde izin verilir.
+   - İşaret için üyeleri içeren sınıfın tam adı.
+
+   - __::__ İşleci.
+
+   - __\*__ İşleci.
+
+   - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
+
+   - Üye işaretçisi adlandırma tanımlayıcısı.
+
+1. İsteğe bağlı bir başlatıcı:
+
+   - **=** İşleci.
+
+   - **&** İşleci.
+
+   - Sınıfın tam adı.
+
+   - __::__ İşleci.
+
+   - Bir statik olmayan üye uygun bir tür sınıfının adı.
+
+Her zaman olduğu gibi birden çok bildirimcisi (ve ilişkili tüm başlatıcıları) tek bir bildirimde izin verilir.
 
 Üye ait olduğu sınıfın ve üye türü için tür bilgilerini içerdiğinden bir sınıfın bir üye işaretçisi normal bir işaretçiyle farklıdır. Normal bir işaretçi tanımlar (adresini sahiptir) yalnızca tek bir nesne bellekte. Bir sınıfın üyesinin işaretçisi sınıfın örneklerini bu üye tanımlar. Aşağıdaki örnek, bir sınıfı bildirir `Window`ve üye verilerine bazı işaretçiler.
 

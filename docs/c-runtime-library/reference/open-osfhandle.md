@@ -24,12 +24,12 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-ms.openlocfilehash: e8b7dc097c1af60894c627b8b660c4d9d81361db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f45ca46cae459c8606f88a98d03b64c40e5d5f01
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519463"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327869"
 ---
 # <a name="openosfhandle"></a>_open_osfhandle
 
@@ -64,10 +64,10 @@ Bu bildirim sabitleri tanımlanan \<fcntl.h >:
 
 |||
 |-|-|
-**\_O\_EKLEME**|Dosya işaretçisi her yazma işleminden önce dosyanın sonuna konumlandırır.
-**\_O\_RDONLY**|Yalnızca okuma dosyasını açar.
-**\_O\_METİN**|Dosya, metin (çevrilmiş) modunda açılır.
-**\_O\_WTEXT**|Dosya Unicode (çevrilmiş UTF-16) modunda açılır.
+| **\_O\_EKLEME** | Dosya işaretçisi her yazma işleminden önce dosyanın sonuna konumlandırır. |
+| **\_O\_RDONLY** | Yalnızca okuma dosyasını açar. |
+| **\_O\_METİN** | Dosya, metin (çevrilmiş) modunda açılır. |
+| **\_O\_WTEXT** | Dosya Unicode (çevrilmiş UTF-16) modunda açılır. |
 
 **_Open_osfhandle** çağrı dosya tanımlayıcısı için Win32 dosya işleci sahipliğini aktarır. Açılmış neden olan bir dosyayı kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya tanıtıcısı aynı zamanda yapılan bir çağrıyla kapalı **_close**, Win32 işlevini çağırmak için gereken, yani **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  akış, ardından arama [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  akışı de her iki dosya tanımlayıcısı kapatır ve temel alınan tanıtıcısı. Bu durumda, çağırmayın **_close** üzerinde dosya tanımlayıcısı.
 

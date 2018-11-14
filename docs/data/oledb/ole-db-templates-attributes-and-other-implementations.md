@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB templates, about OLE DB templates
 - OLE DB templates
 ms.assetid: 0c780c1b-9bba-4788-8c33-8552d9f120ac
-ms.openlocfilehash: 97924110d6dd59e59eda9492713518dedf68af55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 079ec68afe2e538a40920fb2c6524f8d5b8aae89
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596605"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520651"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB Şablonları, Öznitelikler ve Diğer Uygulamalar
 
@@ -25,7 +25,7 @@ Bu şablon kitaplığı iki bölümden oluşur:
 
 - **OLE DB sağlayıcı şablonları** bir OLE DB sunucusu (sağlayıcı) uygulama uygulamak için kullanılır.
 
-OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643).
+OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming).
 
 Daha fazla bilgi için şunları yapabilirsiniz:
 
@@ -37,7 +37,7 @@ Daha fazla bilgi için şunları yapabilirsiniz:
 
 - Listesine bakın [OLE DB Şablon örnekleri](https://github.com/Microsoft/VCSamples).
 
-- Bkz: [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643) (içinde Windows SDK'sı).
+- Bkz: [OLE DB Programcının Başvurusu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) (içinde Windows SDK'sı).
 
 ## <a name="ole-db-attributes"></a>OLE DB öznitelikleri
 
@@ -49,7 +49,7 @@ MFC Kitaplığı bir sınıfı olan [COleDBRecordView](../../mfc/reference/coled
 
 ## <a name="ole-db-sdk-interfaces"></a>OLE DB SDK arabirimleriyle
 
-OLE DB işlevleri OLE DB Şablonları burada desteklemeyen durumlarda, OLE DB arabirimlerini kullanmanız gerekir. Daha fazla bilgi için [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643) Windows SDK.
+OLE DB işlevleri OLE DB Şablonları burada desteklemeyen durumlarda, OLE DB arabirimlerini kullanmanız gerekir. Daha fazla bilgi için [OLE DB Programcının Başvurusu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

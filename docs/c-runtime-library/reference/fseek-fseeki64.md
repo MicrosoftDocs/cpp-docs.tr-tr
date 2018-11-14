@@ -28,12 +28,12 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-ms.openlocfilehash: 15ff6e4a70069845369acdc3ffd153c48f228201
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5f775eab370f8f4a3b6a5c1d7f0918ec7efa3ff
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447547"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331093"
 ---
 # <a name="fseek-fseeki64"></a>fseek, _fseeki64
 
@@ -75,9 +75,9 @@ Başarılı olursa, **fseek** ve **_fseeki64** 0 döndürür. Aksi takdirde, sı
 
 |Kaynak değeri|Açıklama|
 |-|-|
-**SEEK_CUR**|Dosya işaretçisini geçerli konumu.
-**SEEK_END**|Dosya sonu.
-**SEEK_SET**|Dosyasının başında.
+| **SEEK_CUR** | Dosya işaretçisini geçerli konumu. |
+| **SEEK_END** | Dosya sonu. |
+| **SEEK_SET** | Dosyasının başında. |
 
 Kullanabileceğiniz **fseek** ve **_fseeki64** işaretçi, bir dosyada herhangi bir yerde yeniden konumlandırmak için. İşaretçi de dosya sonunu aşan konumlandırılmalıdır. **fseek** ve **_fseeki64** dosya sonu göstergesini temizler ve tüm önceki etkisini verilerek [ungetc](ungetc-ungetwc.md) karşı çağırır *stream*.
 

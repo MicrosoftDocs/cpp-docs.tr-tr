@@ -37,12 +37,12 @@ helpviewer_keywords:
 - _strtol_l function
 - strtol function
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
-ms.openlocfilehash: 5aa69a44a2ce8bde0ee16b02ecd9923f247c7e65
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73df5dd3ffcd4a9b2fca8b6b713b645ef94addb5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617470"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326725"
 ---
 # <a name="strtol-wcstol-strtoll-wcstoll"></a>strtol, wcstol, _strtol_l, _wcstol_l
 
@@ -108,7 +108,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |**_tcstol**|**strtol**|**strtol**|**wcstol**|
 |**_tcstol_l**|**_strtol_l**|**_strtol_l**|**_wcstol_l**|
 
-Geçerli yerel ayarın **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource **;* daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). İşlevlerin **_l** soneki geçerli yerel ayarı kullanır; **_strtol_l** ve **_wcstol_l** olmayan ilgili işlevlerle aynıdır **_l** bunun yerine iletilmiş yerel ayarı kullanmaları dışında soneki. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Geçerli yerel ayarın **lc_numerıc** kategori ayarı belirler taban karakterin tanınmasını yerel ayarların *strSource*; daha fazla bilgi için bkz: [setlocale](setlocale-wsetlocale.md). İşlevlerin **_l** soneki geçerli yerel ayarı kullanır; **_strtol_l** ve **_wcstol_l** olmayan ilgili işlevlerle aynıdır **_l** bunun yerine iletilmiş yerel ayarı kullanmaları dışında soneki. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - cvt/wstring header
 ms.assetid: d78b04bb-9ac0-4adb-8ffe-3aefb9b14c2d
-ms.openlocfilehash: a0ab3b587c7c2c3a519d3550ec0a0cd605321ce3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2183d7bfbe0f4f6cd2848e7a032d2f166283361
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445441"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517195"
 ---
 # <a name="ltcvtwstringgt"></a>&lt;CVT/wstring&gt;
 
@@ -23,7 +23,6 @@ ms.locfileid: "50445441"
 
 ```cpp
 #include <cvt/wstring>
-
 ```
 
 ## <a name="requirements"></a>Gereksinimler
