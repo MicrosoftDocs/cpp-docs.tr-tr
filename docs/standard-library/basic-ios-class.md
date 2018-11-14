@@ -55,12 +55,12 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-ms.openlocfilehash: 9787775acec6ffeb8eaeaad96af6e152d8cb1bac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c22e048d01665deed83a9474525f414dfd874fe0
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537237"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524918"
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 
@@ -281,7 +281,6 @@ int main( )
     cout.copyfmt( x );
     cout << i << endl;
 }
-
 ```
 
 ## <a name="eof"></a>  basic_ios::EOF
@@ -409,7 +408,6 @@ int main( void )
     cout << boolalpha;
     cout << b << endl;
 }
-
 ```
 
 ## <a name="fill"></a>  basic_ios::Fill
@@ -967,7 +965,6 @@ int main( )
     y[0] = wcout.widen( z[0] );
     wcout << &y[0] << endl;
 }
-
 ```
 
 ## <a name="swap"></a>  basic_ios::Swap

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - errno global variable
 - _get_errno function
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
-ms.openlocfilehash: 6ffb76bb31fe1633af78ee73423bb06857e0b893
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb0897451c72020cd72a821ec9928ed655d84b7e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535726"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331821"
 ---
 # <a name="geterrno"></a>_get_errno
 
@@ -37,8 +37,8 @@ Errno genel değişkeni geçerli değerini alır.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _get_errno( 
-   int * pValue 
+errno_t _get_errno(
+   int * pValue
 );
 ```
 

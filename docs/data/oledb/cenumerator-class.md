@@ -22,21 +22,21 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: c148bdb0a897e19bc3f3aeb7ed40e905073336b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb44af102f08e05edddc2fb692d1e30dd7e31717
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428609"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556685"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
 
-Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](/previous-versions/windows/desktop/ms715969) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.
+Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms715969(v=vs.85)) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CEnumerator : 
+class CEnumerator :
    public CAccessorRowset< CAccessor <CEnumeratorAccessor >>
 ```
 
@@ -79,7 +79,7 @@ bool Find(TCHAR* szSearchName) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](/previous-versions/windows/desktop/ms715969) arabirimi.
+Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms715969(v=vs.85)) arabirimi.
 
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 
@@ -90,7 +90,7 @@ Görünen ad, bilinen adı dönüştürülebilir dize bileşeninin ayıklanacağ
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();
 
-HRESULT GetMoniker(LPMONIKER* ppMoniker, 
+HRESULT GetMoniker(LPMONIKER* ppMoniker,
    LPCTSTR lpszDisplayName) const throw();
 ```
 
@@ -108,7 +108,7 @@ Standart bir HRESULT.
 
 ## <a name="open"></a> CEnumerator::Open
 
-Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200).
+Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)).
 
 ### <a name="syntax"></a>Sözdizimi
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_reference class
 - is_reference
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257
-ms.openlocfilehash: dd2d95e2c0bc20ac64b50e731122fda96c097de5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 793a84f03dba762ff686627004ffe3830a5d98d8
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481997"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517754"
 ---
 # <a name="isreference-class"></a>is_reference Sınıfı
 
@@ -60,7 +60,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

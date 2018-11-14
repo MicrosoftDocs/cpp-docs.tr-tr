@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-ms.openlocfilehash: 07dcf7da97a815cce29a2978a001cafab0581451
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 389d7c96867ee0ca597330c1bee61b71e9777802
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655422"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523851"
 ---
 # <a name="uniformrealdistribution-class"></a>uniform_real_distribution Sınıfı
 
@@ -150,7 +150,6 @@ int main()
 
     test(a_dist, b_dist, samples);
 }
-
 ```
 
 ```Output

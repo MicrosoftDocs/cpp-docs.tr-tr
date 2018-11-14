@@ -31,12 +31,12 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-ms.openlocfilehash: 57874a87dcd7102c98ec5a387f1d3346bfa00195
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 791a18461b3a0ee8237dec47c87f9d441221141d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627558"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519366"
 ---
 # <a name="sharedptr-class"></a>shared_ptr Sınıfı
 
@@ -195,7 +195,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -233,7 +232,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -273,7 +271,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -309,7 +306,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -373,7 +369,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -411,7 +406,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -518,7 +512,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -652,7 +645,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -709,7 +701,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -778,7 +769,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -831,7 +821,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -871,7 +860,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

@@ -94,12 +94,12 @@ helpviewer_keywords:
 - std::basic_streambuf [C++], xsgetn
 - std::basic_streambuf [C++], xsputn
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
-ms.openlocfilehash: d15e38c63e335dbd574ad2d1c1ee23e0d5a70a30
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 581652ea39d0729079666dc675b7214b4b3a4da3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565730"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524683"
 ---
 # <a name="basicstreambuf-class"></a>basic_streambuf Sınıfı
 
@@ -457,7 +457,7 @@ Karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/ch
 
 ### <a name="remarks"></a>Açıklamalar
 
-_ *Meta* eşit karşılaştırmaz **traits_type::eof**, korumalı sanal üye işlevi endeavors öğe eklemek **traits_type::**[ile_ char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*) çıkış akışına içine. Bunu çeşitli yöntemlerle yapabilirsiniz:
+Varsa  *\_Meta* eşit karşılaştırmaz **traits_type::eof**, korumalı sanal üye işlevi endeavors öğe eklemek **traits_type::** [ to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) çıkış akışına içine. Bunu çeşitli yöntemlerle yapabilirsiniz:
 
 - Varsa bir `write position` olan kullanılabilir, bu öğe yazma konumuna depolayabilir ve çıkış arabelleği için sonraki işaretçisine artırılacak.
 
@@ -492,7 +492,7 @@ Karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/ch
 
 ### <a name="remarks"></a>Açıklamalar
 
-_ *Meta* karşılaştırır eşit **traits_type::eof**, geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
+Varsa  *\_Meta* karşılaştırır eşit **traits_type::eof**, geri göndermek için etkili bir şekilde akış önce geçerli öğe zaten bir öğedir. Aksi takdirde, bu öğe tarafından değiştirilir **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). İşlevi, öğenin çeşitli yollarla geri koyabilirsiniz:
 
 - Putback konumu varsa, bu öğe putback konumda depolamak ve sonraki işaretçisi giriş arabelleği için azaltma.
 
@@ -689,15 +689,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 3
-
 ```
 
 ```Output
-
-      33
+33
 51
 ```
 
@@ -967,14 +964,11 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 aa
-
 ```
 
 ```Output
-
 aa97
 ```
 

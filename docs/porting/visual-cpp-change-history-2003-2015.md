@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: 1025b3469611ee1e880a2abd5a4e553a1317a0d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1070a330e40c0bf73f3713783b3f126d0848cbc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570722"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525528"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -64,19 +64,19 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Taşınan İşlevler:
 
-   - çift abs(double) ve kayan nokta abs(float)
+  - çift abs(double) ve kayan nokta abs(float)
 
-   - çift pow (double, int), float pow (float, float) pow (float, int), float pow (long double, long double)'uzun çift, pow (uzun çift int)'uzun çift
+  - çift pow (double, int), float pow (float, float) pow (float, int), float pow (long double, long double)'uzun çift, pow (uzun çift int)'uzun çift
 
-   - Kayan ve noktası işlevleri acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, copysign, cos, ceil kayan uzun çift sürümlerini cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, günlük , log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, kalan, remquo, azdır, hepsini, scalbln, scalbn, sin, sinh, sqrt, Bronz, tanh, tgamma, trunc
+  - Kayan ve noktası işlevleri acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, copysign, cos, ceil kayan uzun çift sürümlerini cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, günlük , log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, kalan, remquo, azdır, hepsini, scalbln, scalbn, sin, sinh, sqrt, Bronz, tanh, tgamma, trunc
 
-   Sahip kodu kullanan abs ile bir kayan nokta, yalnızca math.h üstbilgi türüne, kayan nokta sürümleri Hayır bile kayan ile çağrı işaret edecek şekilde bağımsız değişkeni artık kullanılabilir durumda, artık abs(int) için çözümler. Bu hata oluşturur:
+  Sahip kodu kullanan abs ile bir kayan nokta, yalnızca math.h üstbilgi türüne, kayan nokta sürümleri Hayır bile kayan ile çağrı işaret edecek şekilde bağımsız değişkeni artık kullanılabilir durumda, artık abs(int) için çözümler. Bu hata oluşturur:
 
     ```Output
     warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
     ```
 
-   Bu uyarıyı düzeltme çağrısı değiştirmektir `abs` ile bir kayan noktası sürümünü `abs`, gibi `fabs` çift bir bağımsız değişkeni veya `fabsf` bir float bağımsız değişkeni veya cmath üstbilgisi içerir ve kullanmaya devam `abs`.
+  Bu uyarıyı düzeltme çağrısı değiştirmektir `abs` ile bir kayan noktası sürümünü `abs`, gibi `fabs` çift bir bağımsız değişkeni veya `fabsf` bir float bağımsız değişkeni veya cmath üstbilgisi içerir ve kullanmaya devam `abs`.
 
 - **Kayan nokta uyumluluğu**
 
@@ -116,7 +116,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Bu kitaplık IDE'de bağlayıcı giriş eklemek için proje düğümü için bağlam menüsünü açın, **özellikleri**, ardından **proje özellikleri** iletişim kutusunda **bağlayıcı**ve düzenleme **bağlayıcı girişi** eklemek için `legacy_stdio_definitions.lib` ayırmanın-noktalı virgülle ayrılmış listesi.
 
-   Bağlayıcı, projenizi Visual Studio 2015'den önceki bir sürümü ile derlenmiş olan statik kitaplıklar ile bağlanıyorsa, bir çözümlenmemiş dış sembol bildirebilir. Bu hatalar iç stdio tanımlarında _iob, _iob_func veya belirli stdio işlevleri biçiminde ilgili Imports başvurabilir\_*. Microsoft, bir projeyi yükselttiğinizde, tüm statik kitaplıklar ile C++ Derleyici en son sürümünü ve kitaplıkları derlemeniz önerir. Bir üçüncü taraf kitaplığı kitaplığıysa hangi kaynak kullanılamıyor için güncelleştirilmiş bir ikili üçüncü taraftan istek veya eski sürümü derleyici ve kitaplıkları ile derlemek için ayrı bir DLL içine bu kitaplığı kullanımını yalıtma .
+   Bağlayıcı, projenizi Visual Studio 2015'den önceki bir sürümü ile derlenmiş olan statik kitaplıklar ile bağlanıyorsa, bir çözümlenmemiş dış sembol bildirebilir. Bu hatalar için iç stdio tanımları başvurabileceğiniz `_iob`, `_iob_func`, veya ilgili biçiminde belirli stdio işlevleri için içeri aktarmalar _Imp_\*. Microsoft, bir projeyi yükselttiğinizde, tüm statik kitaplıklar ile C++ Derleyici en son sürümünü ve kitaplıkları derlemeniz önerir. Bir üçüncü taraf kitaplığı kitaplığıysa hangi kaynak kullanılamıyor için güncelleştirilmiş bir ikili üçüncü taraftan istek veya eski sürümü derleyici ve kitaplıkları ile derlemek için ayrı bir DLL içine bu kitaplığı kullanımını yalıtma .
 
     > [!WARNING]
     > Windows 8.1 SDK'sı veya önceki bağlanıyorsanız, bu çözümlenmemiş dış sembol hatalarla karşılaşabilirsiniz. Bu durumda, daha önce açıklandığı gibi giriş bağlayıcıya legacy_stdio_definitions.lib ekleyerek hata çözümlenmelidir.
@@ -139,27 +139,27 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Önceki sürümlerde, sonsuz ve NaN'ler MSVC özgü sentinel dizeler kümesi kullanılarak biçimlendirilir.
 
-   - Sonsuz: 1. #INF
+  - Sonsuz: 1. #INF
 
-   - Sessiz bir NaN: 1. #QNAN
+  - Sessiz bir NaN: 1. #QNAN
 
-   - Sinyal NaN: 1. #SNAN
+  - Sinyal NaN: 1. #SNAN
 
-   - Belirsiz NaN: 1. #IND
+  - Belirsiz NaN: 1. #IND
 
-   Bunlardan birine bir işaretiyle önekli ve biraz daha farklı alan genişliğini ve duyarlık bağlı olarak biçimlendirilmiş olabilir (bazı durumlarda alışılmadık etkileri ile örn `printf("%.2f\n", INFINITY)` 1 yazdırır. #J #INF "2 basamaklı kesinliği için yuvarlanmasını çünkü"). C99 yeni gereksinimleri nasıl biçimlendirilmesi sonsuz ve NaN'ler olduğunuza kullanıma sunuldu. MSVC uygulama artık bu gereksinimlere uygun. Yeni dizeler aşağıdaki gibidir:
+  Bunlardan birine bir işaretiyle önekli ve biraz daha farklı alan genişliğini ve duyarlık bağlı olarak biçimlendirilmiş olabilir (bazı durumlarda alışılmadık etkileri ile örn `printf("%.2f\n", INFINITY)` 1 yazdırır. #J #INF "2 basamaklı kesinliği için yuvarlanmasını çünkü"). C99 yeni gereksinimleri nasıl biçimlendirilmesi sonsuz ve NaN'ler olduğunuza kullanıma sunuldu. MSVC uygulama artık bu gereksinimlere uygun. Yeni dizeler aşağıdaki gibidir:
 
-   - Sonsuz: INF
+  - Sonsuz: INF
 
-   - NaN quiet: nan
+  - NaN quiet: nan
 
-   - NaN sinyal: nan(snan)
+  - NaN sinyal: nan(snan)
 
-   - Belirsiz NaN:nan(ind)
+  - Belirsiz NaN:nan(ind)
 
-   Bunlardan birine bir işaretiyle önekli. Sermaye biçim belirticisi ise dizeleri büyük harf (INF) yerine inf yazdırılır sonra (%f yerine %F) kullanılan olarak gereklidir.
+  Bunlardan birine bir işaretiyle önekli. Sermaye biçim belirticisi ise dizeleri büyük harf (INF) yerine inf yazdırılır sonra (%f yerine %F) kullanılan olarak gereklidir.
 
-   [Scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) işlevleri gidiş dönüş printf ve scanf aracılığıyla bu dizeler olacak şekilde bu yeni dizelerini ayrıştırmak için değiştirilmiş olabilir.
+  [Scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) işlevleri gidiş dönüş printf ve scanf aracılığıyla bu dizeler olacak şekilde bu yeni dizelerini ayrıştırmak için değiştirilmiş olabilir.
 
 - **Kayan nokta biçimlendirme ve ayrıştırma**
 
@@ -171,8 +171,16 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
     printf("%.0f\n", pow(2.0, 80))
     ```
 
+   Eski çıktısı:
+
     ```Output
-        Old:  1208925819614629200000000    New:  1208925819614629174706176
+    1208925819614629200000000
+    ```
+
+   Yeni çıkış:
+
+    ```Output
+    1208925819614629174706176
     ```
 
    Eski ayrıştırma algoritmaları, Giriş dizesinin en çok 17 önemli rakamları dikkate alır ve kalan rakamları atar. Bu dize tarafından temsil edilen değeri çok yakın bir yaklaşığını oluşturmak yeterli ve genellikle çok yakın doğru yuvarlatılmış sonucu sonucudur. Yeni uygulama, tüm mevcut basamak göz önünde bulundurur ve doğru yuvarlak bir sonuç tüm girişlerin (uzunluğu en fazla 768 basamak). Ayrıca, bu işlevler, artık (fesetround denetlenebilir) yuvarlama modu uyar.  Bu potansiyel olarak yeni, bu işlevler, farklı sonuçlar çıkış çünkü davranışını değiştirin. Yeni sonucu her zaman daha fazla olan eski sonuçları daha doğru.
@@ -641,7 +649,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
    Örneğin, kodunuzu hem tanımladığını bir **yerleştirme yeni** ve **yerleştirme silme**:
 
     ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
     ```
 

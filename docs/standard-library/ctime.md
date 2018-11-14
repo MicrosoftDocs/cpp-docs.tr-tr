@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ctime header
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
-ms.openlocfilehash: 56c9e7a8b654d386cf9ad4aa491939dedcfab92a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab48007f1dd41d4d28dd199a43121f08219a0221
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650360"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519405"
 ---
 # <a name="ltctimegt"></a>&lt;CTime&gt;
 
@@ -22,7 +22,6 @@ Standart C Kitaplığı üstbilgisi içerir \<TIME.h > ve ilişkili adlar ekler 
 
 ```cpp
 #include <ctime>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

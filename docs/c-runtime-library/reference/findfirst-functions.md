@@ -90,12 +90,12 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: eaecf466617669e6abf156370854b88d16fc4086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ceaa8fea4414bab4bbb035aa4525b415ca7ac0b8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542092"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331444"
 ---
 # <a name="findfirst-findfirst32-findfirst32i64-findfirst64-findfirst64i32-findfirsti64-wfindfirst-wfindfirst32-wfindfirst32i64-wfindfirst64-wfindfirst64i32-wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
@@ -166,12 +166,12 @@ Dosya bilgisi arabelleği.
 
 Başarılı olursa, **_findfirst** dosya veya eşleşen bir dosya grubu tanımlayan bir benzersiz arama tanıtıcısını döndürür *filespec* sonraki çağrıda kullanılan belirtimi [_ FindNext](findnext-functions.md) veya [_findclose](findclose.md). Aksi takdirde, **_findfirst** -1 döndürür ve ayarlar **errno** aşağıdaki değerlerden biri olarak.
 
-|errno değeri|Koşul|
+| errno değeri | Koşul |
 |-|-|
-**EINVAL**|Geçersiz parametre: *filespec* veya *FileInfo* olduğu **NULL**. Veya işletim sistemi beklenmeyen bir hata döndürdü.
-**ENOENT**|Dosya belirtimi eşleştirilemedi.
-**ENOMEM**|Yetersiz bellek.
-**EINVAL**|Geçersiz dosya adı belirtimi veya verilen dosya adı büyük **MAX_PATH**.
+| **EINVAL** | Geçersiz parametre: *filespec* veya *FileInfo* olduğu **NULL**. Veya işletim sistemi beklenmeyen bir hata döndürdü. |
+| **ENOENT** | Dosya belirtimi eşleştirilemedi. |
+| **ENOMEM** | Yetersiz bellek. |
+| **EINVAL** | Geçersiz dosya adı belirtimi veya verilen dosya adı büyük **MAX_PATH**. |
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

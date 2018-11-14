@@ -58,12 +58,12 @@ helpviewer_keywords:
 - tutime64 function
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
-ms.openlocfilehash: f1e9633784ad78a2b46701e6600ad1ddb6b3318e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e52845a828e272ff3b8458b299c3757b8def748
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471103"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524644"
 ---
 # <a name="utime-utime32-utime64-wutime-wutime32-wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 
@@ -112,10 +112,10 @@ Dosya değişikliği zamanı değişirse, bu işlevlerin her biri 0 döndürür.
 
 |errno değeri|Koşul|
 |-|-|
-**SPAWN**|Dizin veya salt okunur dosya yolunu belirtir.
-**EINVAL**|Geçersiz *kez* bağımsız değişken
-**EMFILE**|Çok fazla açık dosya (dosya, değiştirme saati değiştirmek için açılması gerekir)
-**ENOENT**|Yol veya dosya adı bulunamadı
+| **SPAWN** | Dizin veya salt okunur dosya yolunu belirtir. |
+| **EINVAL** | Geçersiz *kez* bağımsız değişken |
+| **EMFILE** | Çok fazla açık dosya (dosya, değiştirme saati değiştirmek için açılması gerekir) |
+| **ENOENT** | Yol veya dosya adı bulunamadı |
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 
@@ -123,14 +123,14 @@ Değiştirme tarihi 1 Ocak 1970 gece yarısı sonra ve kullanılan işlev bitiş
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Utime** işlevi tarafından belirtilen dosya için değiştirme saati ayarlar *filename **.* İşlem Saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde erişim zamanı ve değiştirme saati değiştirebilirsiniz **_utimbuf** yapısı. Varsa *kez* olduğu bir **NULL** işaretçisi değiştirme saati geçerli yerel saat olarak ayarlanır. Aksi takdirde, *kez* bir yapı türünü işaret etmelidir **_utimbuf**SYS\UTIME içinde tanımlanmış. H
+**_Utime** işlevi tarafından belirtilen dosya için değiştirme saati ayarlar *filename*. İşlem Saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde erişim zamanı ve değiştirme saati değiştirebilirsiniz **_utimbuf** yapısı. Varsa *kez* olduğu bir **NULL** işaretçisi değiştirme saati geçerli yerel saat olarak ayarlanır. Aksi takdirde, *kez* bir yapı türünü işaret etmelidir **_utimbuf**SYS\UTIME içinde tanımlanmış. H
 
 **_Utimbuf** yapısı tarafından kullanılan dosya erişim ve değişiklik saatlerini depolar **_utime** dosya değişiklik tarihlerini değiştirmek için. Türü her ikisi de aşağıdaki alanları yapısının **time_t**:
 
-|Alan||
-|-|-|
-**actime**|Dosya erişim zamanı
-**modtime**|Dosya değişikliği zamanı
+| Alan |   |
+|-------|---|
+| **actime** | Dosya erişim zamanı |
+| **modtime** | Dosya değişikliği zamanı |
 
 Belirli sürümlerini **_utimbuf** yapısı (**_utimebuf32** ve **__utimbuf64**) zaman türü 32-bit ve 64-bit sürümleri kullanılarak tanımlanır. Bunlar, 32-bit ve 64-bit belirli sürümlerinde bu işlev kullanılır. **_utimbuf** kendisi tarafından varsayılan bir 64-bit zaman türü sürece kullanır **_use_32bıt_tıme_t** tanımlanır.
 

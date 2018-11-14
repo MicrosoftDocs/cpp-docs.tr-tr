@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-ms.openlocfilehash: a857e0f04ff875a740a8a5d1401484cdaf9d3c75
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7933b3e25185b5abdbd10c1b3fd616742bb28f92
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613986"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521576"
 ---
 # <a name="atoll-atolll-wtoll-wtolll"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 
@@ -158,7 +158,6 @@ Function: atoll("  -27182818284 ") = -27182818284
 Function: atoll("314127.64") = 314127
 Function: atoll("3336402735171707160320") = 9223372036854775807
 Overflow condition occurred.
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -102,12 +102,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: c62dd4ba7f4f91371378b7c1a6b0295edb3625e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb7f7ee0b4c190889daf661816a9e1c96575a052
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431076"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557095"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 
@@ -154,7 +154,7 @@ Aşağıdaki örnek, kullanımını gösterir. `CBulkRowset` sınıfı.
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.
+Çağrıları [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -253,7 +253,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: ['yı](/previous-versions/windows/desktop/ms716988) içinde *OLE DB Programcının Başvurusu*.
+Bkz: ['yı](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
@@ -284,11 +284,11 @@ Standart bir HRESULT.
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602) içinde *OLE DB Programcının Başvurusu*.
+Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](https://docs.microsoft.com/previous-versions/windows/desktop/ms709602(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.
+Çağrıları [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.
 
 ### <a name="syntax"></a>Sözdizimi
 

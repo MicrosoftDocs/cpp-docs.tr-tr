@@ -1931,12 +1931,12 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-ms.openlocfilehash: 5e32c33a5e04314b05558fe445aaaebb33dd92ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4c962b7911c97095e22c670dabfaa3d3d4b2709
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453865"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525515"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 
@@ -2151,7 +2151,6 @@ void __iso_volatile_store16(volatile __int16 * Location, __int16 Value)
 void __iso_volatile_store32(volatile __int32 * Location, __int32 Value)
 void __iso_volatile_store64(volatile __int64 * Location, __int64 Value)
 void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
-
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -2199,7 +2198,6 @@ int _MoveFromCoprocessor2(
       unsigned int crm,
       unsigned int opcode2
 );
-
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -2239,7 +2237,6 @@ unsigned __int64 _MoveFromCoprocessor64(
       unsigned int opcode1,
       unsigned int crm,
 );
-
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -2285,7 +2282,6 @@ void _MoveToCoprocessor2(
       unsigned int crm,
       unsigned int opcode2
 );
-
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -2329,7 +2325,6 @@ void _MoveFromCoprocessor64(
       unsigned int opcode1,
       unsigned int crm,
 );
-
 ```
 
 #### <a name="parameters"></a>Parametreler

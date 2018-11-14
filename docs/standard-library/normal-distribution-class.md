@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: 7fdb2f8b6674326ff6e37efa222483e859b3500f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0df3359a27a216692f0127ab7f17e1e1fce469a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604327"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519860"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution Sınıfı
 
@@ -156,7 +156,6 @@ int main()
 
     test(m_dist, s_dist, samples);
 }
-
 ```
 
 ```Output

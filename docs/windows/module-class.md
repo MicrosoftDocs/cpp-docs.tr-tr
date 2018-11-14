@@ -43,12 +43,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::UnregisterObjects method
 - Microsoft::WRL::Module::UnregisterWinRTObject method
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
-ms.openlocfilehash: 2b90c3b316d9eef195f815058d9ad1f9bcfa0b42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 600e6819977056532a43a59e9c2d6c95845f9eb3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468602"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518911"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 
@@ -329,7 +329,6 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
    IClassFactory** factories,
    DWORD* cookies,
    unsigned int count);
-
 ```
 
 ### <a name="parameters"></a>Parametreler

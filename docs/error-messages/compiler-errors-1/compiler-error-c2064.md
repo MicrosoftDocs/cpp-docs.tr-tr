@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2064
 ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
-ms.openlocfilehash: 3571793f19cfc5b95f785f0539187a7d87ce0577
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8af20c5172cddd0194ed018c13960bbed7859674
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430257"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520445"
 ---
 # <a name="compiler-error-c2064"></a>Derleyici Hatası C2064
 
@@ -48,7 +48,6 @@ int main() {
    (funcArray[0])();    // C2064
    (c.*funcArray[0])(); // OK - function called in instance context
 }
-
 ```
 
 Bir sınıf içinde üye işlev işaretçileri arama nesne bağlamı da belirtmeniz gerekir. Aşağıdaki örnek, C2064 oluşturur ve bu sorunun nasıl gösterir:

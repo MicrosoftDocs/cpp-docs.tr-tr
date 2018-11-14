@@ -16,16 +16,16 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: b1411f3df97aeaf66abcccc5be78c734e3a71f19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6736eac040b2186ddb1b1dc1c5c3a5b6b957d20
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603495"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556159"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044) arabirimi.
+Bir uygulamasını sağlar [ICommandProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723044(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,15 +67,15 @@ Komutun özellik eşlemesi kullanarak tüm istenen özellik kümeleri döndürü
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
-   const DBPROPIDSET rgPropertyIDSets[], 
-   ULONG * pcPropertySets, 
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
+   const DBPROPIDSET rgPropertyIDSets[],
+   ULONG * pcPropertySets,
    DBPROPSET ** prgPropertySets);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommandProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723119(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -88,13 +88,13 @@ Komut nesnesi için özelliklerini ayarlar.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommandProperties::SetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms711497(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

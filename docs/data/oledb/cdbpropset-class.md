@@ -33,12 +33,12 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: c0bc8a0a43051b3b4bfb2a007806dc2147e24a7f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b71fc43c3766f9a039d841b8872dee99210fe8c
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446286"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556757"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
@@ -81,8 +81,8 @@ Bir özellik için özellik kümesi ekler.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-bool AddProperty(DWORD dwPropertyID, 
-   constVARIANT& var, 
+bool AddProperty(DWORD dwPropertyID,
+   constVARIANT& var,
    DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
    LPCSTR szValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
    LPCWSTR szValue,DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
@@ -127,7 +127,7 @@ bool AddProperty(DWORD dwPropertyID, 
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
 
-Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapısı.
+Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -160,7 +160,7 @@ void SetGUID(const GUID& guid) throw();
 #### <a name="parameters"></a>Parametreler
 
 *GUID*<br/>
-[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapısı.
+[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -181,5 +181,5 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CDBPropIDSet Sınıfı](../../data/oledb/cdbpropidset-class.md)<br/>
-[DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367)
-[DBPROP yapısı](/previous-versions/windows/desktop/ms717970)
+[DBPROPSET yapısı](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85))
+[DBPROP yapısı](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85))

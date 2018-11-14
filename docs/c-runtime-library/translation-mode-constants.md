@@ -17,12 +17,12 @@ helpviewer_keywords:
 - translation, modes
 - translation modes (file I/O)
 ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
-ms.openlocfilehash: a703ec322c4d3788b6a057bacfb6dcf5a7a09716
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25588758e682409bad0a6cb2723304275f00c25e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563572"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519730"
 ---
 # <a name="translation-mode-constants"></a>Çeviri Modu Sabitleri
 
@@ -31,7 +31,6 @@ ms.locfileid: "50563572"
 ```
 
 #include <fcntl.h>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

@@ -1072,12 +1072,12 @@ helpviewer_keywords:
 - m_szTableCatalog
 - m_szTableName
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: 2af15d1cf3d42af82d2dc04901301f3f30ff9211
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6899f6edf87f2d81f31fac40ac78ba5798d8d8c
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515121"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557108"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 
@@ -1085,42 +1085,42 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 
 Şema satır kümeleri meta verileri temsil eden önceden tanımlanmış satır var. Şema satır kümeleri, burada veritabanı yapısı derleme zamanında bilinmeyen dinamik programlama, genel olarak kullanılır. Çalışma zamanında bir veritabanı hakkında bilgi edinmek için bu şema satır kümeleri'ni kullanabilirsiniz.
 
-Şema satır kümeleri oluşturmak için bir typedef sınıfları kullanın. Şema satır kümesi sınıfları ve typedef karşılık gelen aşağıda listelenmiştir. Çağırmalısınız [CRestrictions::Open](../../data/oledb/crestrictions-open.md) şeması satır kümesi örneğini oluşturduktan sonra. Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) her şeması satır kümesi ile ilişkili kısıtlama sütunlar hakkında bilgi için.
+Şema satır kümeleri oluşturmak için bir typedef sınıfları kullanın. Şema satır kümesi sınıfları ve typedef karşılık gelen aşağıda listelenmiştir. Çağırmalısınız [CRestrictions::Open](../../data/oledb/crestrictions-open.md) şeması satır kümesi örneğini oluşturduktan sonra. Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür. Bkz: [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) her şeması satır kümesi ile ilişkili kısıtlama sütunlar hakkında bilgi için.
 
 Aşağıdaki tabloda her OLE DB şeması satır kümesi ve kendi ilişkili görüntüler OLE DB Şablonları typedef sınıfı ve Info sınıfı.
 
 |OLE DB şeması satır kümesi|TypeDef sınıfı|Info sınıfı|
 |--------------------------|-------------------|----------------|
-|[ONAYLAR](/previous-versions/windows/desktop/ms719776)|[CAssertions](#assertion)|[Cassertionınfo](#assertion)|
-|[KATALOGLARI](/previous-versions/windows/desktop/ms721241)|[CCatalogs](#catalog)|[Ccatalogınfo](#catalog)|
-|[CHARACTER_SETS](/previous-versions/windows/desktop/ms722638)|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|
-|[HARMANLAMALAR](/previous-versions/windows/desktop/ms715783)|[CCollations](#collation)|[Ccollationınfo](#collation)|
-|[COLUMN_PRIVILEGES](/previous-versions/windows/desktop/ms715800)|[CColumnPrivileges](#columnprivilege)|[Ccolumnprivilegeınfo](#columnprivilege)|
-|[SÜTUNLARI](/previous-versions/windows/desktop/ms723052)|[CColumns](#columns)|[Ccolumnsınfo](#columns)|
-|[CONSTRAINT_COLUMN_USAGE](/previous-versions/windows/desktop/ms724522)|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|
-|[CONSTRAINT_TABLE_USAGE](/previous-versions/windows/desktop/ms713710)|[CConstraintTableUsage](#constrainttableusage)|[Cconstrainttableusageınfo](#constrainttableusage)|
-|[CHECK_CONSTRAINTS](/previous-versions/windows/desktop/ms712845)|[CCheckConstraints](#checkconstraint)|[Ccheckconstraintınfo](#checkconstraint)|
-|[COLUMN_DOMAIN_USAGE](/previous-versions/windows/desktop/ms711240)|[CColumnDomainUsage](#columndomainusage)|[Ccolumndomainusageınfo](#columndomainusage)|
-|[FOREIGN_KEYS](/previous-versions/windows/desktop/ms711276)|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|
-|[DİZİNLERİ](/previous-versions/windows/desktop/ms709712)|[Cındexes](#index)|[Cındexınfo](#index)|
-|[KEY_COLUMN_USAGE](/previous-versions/windows/desktop/ms712990)|[CKeyColumn](#keycolumn)|[Ckeycolumnınfo](#keycolumn)|
-|[PRIMARY_KEYS](/previous-versions/windows/desktop/ms714362)|[CPrimaryKeys](#primarykey)|[Cprimarykeyınfo](#primarykey)|
-|[YORDAMLARI](/previous-versions/windows/desktop/ms724021)|[CProcedures](#procedure)|[Cprocedureınfo](#procedure)|
-|[PROCEDURE_COLUMNS](/previous-versions/windows/desktop/ms723092)|[CProcedureColumns](#procedurecolumn)|[Cprocedurecolumnınfo](#procedurecolumn)|
-|[PROCEDURE_PARAMETERS](/previous-versions/windows/desktop/ms713623)|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|
-|[PROVIDER_TYPES](/previous-versions/windows/desktop/ms709785)|[CProviderTypes](#provider)|[Cproviderınfo](#provider)|
-|[REFERENTIAL_CONSTRAINTS](/previous-versions/windows/desktop/ms719737)|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
-|[ŞEMALARIN](/previous-versions/windows/desktop/ms716887)|[CSchemata](#schemata)|[Cschemataınfo](#schemata)|
-|[SQL_LANGUAGES](/previous-versions/windows/desktop/ms714374)|[CSQLLanguages](#sqllanguage)|[Csqllanguageınfo](#sqllanguage)|
-|[İSTATİSTİKLERİ](/previous-versions/windows/desktop/ms715957)|[CStatistics](#statistic)|[Cstatisticınfo](#statistic)|
-|[TABLE_CONSTRAINTS](/previous-versions/windows/desktop/ms715921)|[CTableConstraints](#tableconstraint)|[Ctableconstraintınfo](#tableconstraint)|
-|[TABLOLARI](/previous-versions/windows/desktop/ms716980)|[CTables](#table)|[Ctableınfo](#table)|
-|[TABLE_PRIVILEGES](/previous-versions/windows/desktop/ms725428)|[CTablePrivileges](#tableprivilege)|[Ctableprivilegeınfo](#tableprivilege)|
-|[ÇEVİRİLERİ](/previous-versions/windows/desktop/ms725365)|[CTranslations](#translation)|[CTranslationInfo](#translation)|
-|[USAGE_PRIVILEGES](/previous-versions/windows/desktop/ms722743)|[CUsagePrivileges](#usageprivilege)|[Cusageprivilegeınfo](#usageprivilege)|
-|[VIEW_COLUMN_USAGE](/previous-versions/windows/desktop/ms714896)|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|
-|[GÖRÜNÜMLER](/previous-versions/windows/desktop/ms723122)|[CViews](#view)|[Cviewınfo](#view)|
-|[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727)|[CViewTableUsage](#viewtable)|[Cviewtableınfo](#viewtable)|
+|[ONAYLAR](https://docs.microsoft.com/previous-versions/windows/desktop/ms719776(v=vs.85))|[CAssertions](#assertion)|[Cassertionınfo](#assertion)|
+|[KATALOGLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms721241(v=vs.85))|[CCatalogs](#catalog)|[Ccatalogınfo](#catalog)|
+|[CHARACTER_SETS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722638(v=vs.85))|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|
+|[HARMANLAMALAR](https://docs.microsoft.com/previous-versions/windows/desktop/ms715783(v=vs.85))|[CCollations](#collation)|[Ccollationınfo](#collation)|
+|[COLUMN_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms715800(v=vs.85))|[CColumnPrivileges](#columnprivilege)|[Ccolumnprivilegeınfo](#columnprivilege)|
+|[SÜTUNLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85))|[CColumns](#columns)|[Ccolumnsınfo](#columns)|
+|[CONSTRAINT_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85))|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|
+|[CONSTRAINT_TABLE_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms713710(v=vs.85))|[CConstraintTableUsage](#constrainttableusage)|[Cconstrainttableusageınfo](#constrainttableusage)|
+|[CHECK_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms712845(v=vs.85))|[CCheckConstraints](#checkconstraint)|[Ccheckconstraintınfo](#checkconstraint)|
+|[COLUMN_DOMAIN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms711240(v=vs.85))|[CColumnDomainUsage](#columndomainusage)|[Ccolumndomainusageınfo](#columndomainusage)|
+|[FOREIGN_KEYS](https://docs.microsoft.com/previous-versions/windows/desktop/ms711276(v=vs.85))|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|
+|[DİZİNLERİ](https://docs.microsoft.com/previous-versions/windows/desktop/ms709712(v=vs.85))|[Cındexes](#index)|[Cındexınfo](#index)|
+|[KEY_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms712990(v=vs.85))|[CKeyColumn](#keycolumn)|[Ckeycolumnınfo](#keycolumn)|
+|[PRIMARY_KEYS](https://docs.microsoft.com/previous-versions/windows/desktop/ms714362(v=vs.85))|[CPrimaryKeys](#primarykey)|[Cprimarykeyınfo](#primarykey)|
+|[YORDAMLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms724021(v=vs.85))|[CProcedures](#procedure)|[Cprocedureınfo](#procedure)|
+|[PROCEDURE_COLUMNS](https://docs.microsoft.com/previous-versions/windows/desktop/ms723092(v=vs.85))|[CProcedureColumns](#procedurecolumn)|[Cprocedurecolumnınfo](#procedurecolumn)|
+|[PROCEDURE_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/desktop/ms713623(v=vs.85))|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|
+|[PROVIDER_TYPES](https://docs.microsoft.com/previous-versions/windows/desktop/ms709785(v=vs.85))|[CProviderTypes](#provider)|[Cproviderınfo](#provider)|
+|[REFERENTIAL_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms719737(v=vs.85))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
+|[ŞEMALARIN](https://docs.microsoft.com/previous-versions/windows/desktop/ms716887(v=vs.85))|[CSchemata](#schemata)|[Cschemataınfo](#schemata)|
+|[SQL_LANGUAGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms714374(v=vs.85))|[CSQLLanguages](#sqllanguage)|[Csqllanguageınfo](#sqllanguage)|
+|[İSTATİSTİKLERİ](https://docs.microsoft.com/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[Cstatisticınfo](#statistic)|
+|[TABLE_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms715921(v=vs.85))|[CTableConstraints](#tableconstraint)|[Ctableconstraintınfo](#tableconstraint)|
+|[TABLOLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms716980(v=vs.85))|[CTables](#table)|[Ctableınfo](#table)|
+|[TABLE_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms725428(v=vs.85))|[CTablePrivileges](#tableprivilege)|[Ctableprivilegeınfo](#tableprivilege)|
+|[ÇEVİRİLERİ](https://docs.microsoft.com/previous-versions/windows/desktop/ms725365(v=vs.85))|[CTranslations](#translation)|[CTranslationInfo](#translation)|
+|[USAGE_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms722743(v=vs.85))|[CUsagePrivileges](#usageprivilege)|[Cusageprivilegeınfo](#usageprivilege)|
+|[VIEW_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms714896(v=vs.85))|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|
+|[GÖRÜNÜMLER](https://docs.microsoft.com/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[Cviewınfo](#view)|
+|[VIEW_TABLE_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[Cviewtableınfo](#viewtable)|
 
 ## <a name="assertion"></a> CAssertions, Cassertionınfo
 
@@ -1132,7 +1132,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait onaylar Kataloğu'nda tanımlanan tanımlar.
 
-Aşağıdaki tablo için sınıf veri üyeleri listeler `CAssertionInfo` ve bunların karşılık gelen OLE DB sütunlarını. Bkz: [ONAYLAR satır kümesi](/previous-versions/windows/desktop/ms719776) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tablo için sınıf veri üyeleri listeler `CAssertionInfo` ve bunların karşılık gelen OLE DB sütunlarını. Bkz: [ONAYLAR satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms719776(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1153,7 +1153,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf DBMS erişilebilir kataloglar ile ilişkilendirilmiş fiziksel öznitelikleri tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KATALOGLARI satır kümesi](/previous-versions/windows/desktop/ms721241) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KATALOGLARI satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms721241(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1170,7 +1170,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan karakter kümesini tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHARACTER_SETS satır kümesi](/previous-versions/windows/desktop/ms722638) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHARACTER_SETS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms722638(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1193,7 +1193,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan denetim kısıtlamalarında, tanımlar. Bir denetim kısıtlaması, bir tablodaki bir veya daha fazla sütun olarak kabul edilen biçimler ve veri değerleri belirtir.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHECK_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms712845) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHECK_CONSTRAINTS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms712845(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1213,7 +1213,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter harmanlamalara, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [HARMANLAMALARI satır kümesi](/previous-versions/windows/desktop/ms715783) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [HARMANLAMALARI satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715783(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1235,7 +1235,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait bir etki alanı bağımlı Kataloğu'nda tanımlanan sütunları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_DOMAIN_USAGE satır kümesi](/previous-versions/windows/desktop/ms711240) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_DOMAIN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms711240(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1259,7 +1259,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, ayrıcalıkların kullanımına veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tabloları, sütunları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms715800) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_PRIVILEGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715800(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1284,7 +1284,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcının erişebildiği tablo sütunlarını tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SÜTUNLARIN satır](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1327,7 +1327,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait sütunlarını tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_COLUMN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1351,7 +1351,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait tabloları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_TABLE_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1372,7 +1372,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan yabancı anahtar sütunları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [FOREIGN_KEYS satır kümesi](/previous-versions/windows/desktop/ms711276) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [FOREIGN_KEYS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms711276(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1402,7 +1402,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan dizin, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [DİZİNLERİ satır kümesi](/previous-versions/windows/desktop/ms709712) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [DİZİNLERİ satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms709712(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1441,7 +1441,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf anahtarı olarak belirli bir kullanıcı tarafından kısıtlanmıştır Kataloğu'nda tanımlanan sütunları, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KEY_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms712990) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KEY_COLUMN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms712990(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1466,7 +1466,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan birincil anahtar sütunlarını tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PRIMARY_KEYS satır kümesi](/previous-versions/windows/desktop/ms714362) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PRIMARY_KEYS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms714362(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1488,7 +1488,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, sütunları yordamları tarafından döndürülen satır kümeleri hakkında bilgi döndürür.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_COLUMNS satır kümesi](/previous-versions/windows/desktop/ms723092) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_COLUMNS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms723092(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1519,7 +1519,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, parametreleri ve dönüş kodları yordamlar hakkında bilgi döndürür.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_PARAMETERS satır kümesi](/previous-versions/windows/desktop/ms713623) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_PARAMETERS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms713623(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1549,7 +1549,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait yordamlar, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [YORDAMLARI satır kümesi](/previous-versions/windows/desktop/ms724021) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [YORDAMLARI satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms724021(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1570,7 +1570,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, veri sağlayıcısı tarafından desteklenen (Temel) veri türlerini tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [provıder_types satır kümesi](/previous-versions/windows/desktop/ms709785) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [provıder_types satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms709785(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1605,7 +1605,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan başvuru kısıtlamalarını, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [REFERENTIAL_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms719737) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [REFERENTIAL_CONSTRAINTS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms719737(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1630,7 +1630,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait şemalar tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ŞEMALARIN satır kümesi](/previous-versions/windows/desktop/ms716887) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ŞEMALARIN satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms716887(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1651,7 +1651,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, uyumluluk düzeyleri, seçeneklerini ve SQL uygulama işleme veri Kataloğu'nda tanımlanan tarafından desteklenen diyalektleri tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SQL_LANGUAGES satır kümesi](/previous-versions/windows/desktop/ms714374) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SQL_LANGUAGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms714374(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1673,7 +1673,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan istatistikleri, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [İSTATİSTİKLERİ satır kümesi](/previous-versions/windows/desktop/ms715957) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [İSTATİSTİKLERİ satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715957(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1692,7 +1692,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan tablo kısıtlamaları, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms715921) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_CONSTRAINTS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715921(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1717,7 +1717,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan belirli bir kullanıcının erişebildiği tabloları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms725428) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_PRIVILEGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms725428(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1739,7 +1739,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, kullanılabilir ya da belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tablolarda ayrıcalıkları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [tablolar satır kümesi](/previous-versions/windows/desktop/ms716980) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [tablolar satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms716980(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1760,7 +1760,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter çevirilerini tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ÇEVİRİLERİ satır kümesi](/previous-versions/windows/desktop/ms725365) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ÇEVİRİLERİ satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms725365(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1784,7 +1784,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf için kullanılabilir veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan nesneler üzerinde kullanım ayrıcalıkları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [USAGE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms722743) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [USAGE_PRIVILEGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms722743(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1807,7 +1807,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf sütunlar üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms714896) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_COLUMN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms714896(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1831,7 +1831,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf tabloları üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [görünümleri satır kümesi](/previous-versions/windows/desktop/ms723122) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [görünümleri satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms723122(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1853,7 +1853,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan görüntülenen tabloları, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms719727) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_TABLE_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms719727(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|

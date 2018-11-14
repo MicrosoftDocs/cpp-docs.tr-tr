@@ -80,12 +80,12 @@ helpviewer_keywords:
 - std::forward_list::swap
 - std::forward_list::unique
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-ms.openlocfilehash: a818be72266e2cb8471c2eb29a6e058b8dd3ef7d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5eaa8eba1904dc0a729fb66b280b8d3fa4bb78f1
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612049"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524553"
 ---
 # <a name="forwardlist-class"></a>forward_list Sınıfı
 
@@ -965,7 +965,6 @@ int main()
     cout << "c2 = ";
     print(c2);
 }
-
 ```
 
 ```Output

@@ -25,7 +25,6 @@ f1_keywords:
 - async/Microsoft::WRL::AsyncBase::put_Id
 - async/Microsoft::WRL::AsyncBase::PutOnComplete
 - async/Microsoft::WRL::AsyncBase::PutOnProgress
-- async/Microsoft::WRL::AsyncBase::Start
 - async/Microsoft::WRL::AsyncBase::TryTransitionToCompleted
 - async/Microsoft::WRL::AsyncBase::TryTransitionToError
 helpviewer_keywords:
@@ -51,16 +50,15 @@ helpviewer_keywords:
 - Microsoft::WRL::AsyncBase::put_Id method
 - Microsoft::WRL::AsyncBase::PutOnComplete method
 - Microsoft::WRL::AsyncBase::PutOnProgress method
-- Microsoft::WRL::AsyncBase::Start method
 - Microsoft::WRL::AsyncBase::TryTransitionToCompleted method
 - Microsoft::WRL::AsyncBase::TryTransitionToError method
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
-ms.openlocfilehash: 71839fbea4300560dbf2b9617fe7b8d3864676b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19c4779dbd4d39260d5fe03967e8c0a530a75026
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599680"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556926"
 ---
 # <a name="asyncbase-class"></a>AsyncBase Sınıfı
 
@@ -116,7 +114,7 @@ Ad                                         | Açıklama
 [Asyncbase::put_ıd](#put-id)                 | Zaman uyumsuz işlem tanıtıcısı ayarlar.
 [AsyncBase::PutOnComplete](#putoncomplete)   | Tamamlama olay işleyicisinin adresi belirtilen değere ayarlar.
 [AsyncBase::PutOnProgress](#putonprogress)   | Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.
-[AsyncBase::Start](#start)                   | Zaman uyumsuz işlemi başlatır.
+
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
@@ -130,6 +128,7 @@ Ad                                                                         | Aç
 [AsyncBase::OnCancel](#oncancel)                                             | Türetilen bir sınıfta geçersiz kılındığında, bir zaman uyumsuz işlem iptal eder.
 [AsyncBase::OnClose](#onclose)                                               | Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.
 [AsyncBase::OnStart](#onstart)                                               | Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem başlatır.
+[AsyncBase::Start](#start)                                                   | Zaman uyumsuz işlemi başlatır.
 [AsyncBase::TryTransitionToCompleted](#trytransitiontocompleted)             | Geçerli zaman uyumsuz işlem tamamlanıp tamamlanmadığını gösterir.
 [AsyncBase::TryTransitionToError](#trytransitiontoerror)                     | Belirtilen hata kodu iç hata durumunda değiştirip değiştiremeyeceğini belirtir.
 
@@ -504,7 +503,7 @@ STDMETHOD(
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Start()` bir varsayılan uygulamasıdır `IAsyncInfo::Start`, ve hiçbir asıl işi yapar. Aslında bir zaman uyumsuz işlemi başlatmak için geçersiz kılma `OnStart()` saf sanal yöntemi.
+`Start()` zaman uyumsuz işlemleri başlatma çağırana döndürülmeden önce sık erişimli"için" dışarıdan görünmemesi korumalı bir yöntem olur.
 
 ## <a name="trytransitiontocompleted"></a>AsyncBase::TryTransitionToCompleted
 

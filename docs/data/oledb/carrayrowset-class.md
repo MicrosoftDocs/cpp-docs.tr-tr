@@ -43,12 +43,12 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-ms.openlocfilehash: 39e1a6add012097fad72e05a57cc76df72e83cc8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0a867f80f3be685b3c45c8645d6441732acf5851
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644853"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330989"
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset Sınıfı
 
@@ -59,7 +59,7 @@ Dizi söz dizimini kullanarak bir satır öğeleri erişir.
 ```cpp
 template < class TAccessor >
 class CArrayRowset :
-   public CVirtualBuffer <TAccessor>, 
+   public CVirtualBuffer <TAccessor>,
    protected CBulkRowset <TAccessor>
 ```
 

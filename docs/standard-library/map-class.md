@@ -88,12 +88,12 @@ helpviewer_keywords:
 - std::map [C++], upper_bound
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
-ms.openlocfilehash: 8694d554261468c4e828936f6a999f073e98849f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d804113cda3af6fdecdbbd91b8f007f069d05aac
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429698"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524853"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -577,7 +577,7 @@ size_type count(const Key& key) const;
 
 Üye işlevi öğelerin sayısını döndürür *x* aralığında
 
-[ `lower_bound` (_ *Anahtarı* ), `upper_bound` (\_ *anahtarı* ))
+\[ lower_bound (*anahtarı*), upper_bound (*anahtarı*))
 
 0 veya 1 benzersiz bir ilişkilendirilebilir kapsayıcıdır eşlemesi, söz konusu olduğunda olduğu.
 
@@ -869,7 +869,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  Map::emplace_hint
@@ -947,7 +946,6 @@ int main()
     print(m1);
     cout << endl;
 }
-
 ```
 
 ## <a name="empty"></a>  Map::empty
@@ -1210,7 +1208,6 @@ int main()
     cout << "After the element with a key of 2 is deleted, the map m3 is:" << endl;
     printmap(m3);
 }
-
 ```
 
 ## <a name="find"></a>  Map::Find
@@ -1298,7 +1295,6 @@ int main()
     findit(m1, 45);
     findit(m1, 6);
 }
-
 ```
 
 ## <a name="get_allocator"></a>  Map::get_allocator
@@ -1540,7 +1536,6 @@ int main()
     print(m4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  Map::iterator
@@ -1936,7 +1931,6 @@ int main()
         cout << i.first << " " << i.second << ", ";
     cout << endl;
 }
-
 ```
 
 ## <a name="mapped_type"></a>  Map::mapped_type

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-ms.openlocfilehash: 7b9d99f8b0fc7daf8f7dc58db999c7f885a3dc8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e4a60b5f3dad70f881387d5befca2def9bff7f3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648610"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520432"
 ---
 # <a name="file-permission-constants"></a>Dosya İzin Sabitleri
 
@@ -26,7 +26,6 @@ ms.locfileid: "50648610"
 ```
 
 #include <sys/stat.h>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

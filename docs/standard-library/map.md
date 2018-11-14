@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-ms.openlocfilehash: 727938b09ae60fd72a2421c2b800d8910f82934e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ea47a28599df543987831ee13a2c645f72a0113
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659855"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523307"
 ---
 # <a name="ltmapgt"></a>&lt;Harita&gt;
 
@@ -21,7 +21,6 @@ Kapsayıcı şablon sınıfları harita ve multimap ve kendi destek şablonları
 
 ```cpp
 #include <map>
-
 ```
 
 ## <a name="members"></a>Üyeler

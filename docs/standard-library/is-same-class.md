@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_same class
 - is_same
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-ms.openlocfilehash: 4fb093c574bf0c6ca193a3937a2e4778d836c0ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bb306ec29da225293affd0207f67271f59ec599
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493606"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521264"
 ---
 # <a name="issame-class"></a>is_same Sınıfı
 
@@ -70,7 +70,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

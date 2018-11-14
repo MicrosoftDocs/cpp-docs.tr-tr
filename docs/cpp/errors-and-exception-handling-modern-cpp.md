@@ -3,12 +3,12 @@ title: Hatalar ve Özel Durum İşleme (Modern C++)
 ms.date: 09/17/2018
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
-ms.openlocfilehash: 8f5e0070f3e52d20293ddd624a0d0de57660e316
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d6192ab800667ceb35bf2e18dcbdc0be95ec70f5
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668001"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523294"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
 
@@ -58,7 +58,6 @@ int main()
     //...
     return 0;
 }
-
 ```
 
 C++ içindeki özel durumlar bu C# ve Java gibi dillerdeki benzer. İçinde **deneyin** bir özel durum bloğunda *durum* olacaktır *yakalandı* ilk ilişkili **catch** olan türüyle eşleşen blok özel durum. Yürütme başka bir deyişle, atlar **throw** ifadesine **catch** deyimi. Kullanılabilir catch bloğu bulunduysa `std::terminate` çağrılır ve programdan çıkılır. C++'da, herhangi bir tür oluşturulabilir; Ancak, doğrudan veya dolaylı olarak türetir tür throw öneririz `std::exception`. Önceki örnekte, özel durum türü [invalid_argument](../standard-library/invalid-argument-class.md), standart kitaplıkta tanımlanan [ \<stdexcept >](../standard-library/stdexcept.md) üst bilgi dosyası. C++ sağlamaz ve gerektirmeyen bir **son** bir özel durum oluşturulursa tüm kaynakların serbest bırakıldığından emin olmak için blok. Kaynak alımı başlatma (RAII) deyimidir, akıllı işaretçiler kullanan kaynak Temizleme için gereken işlevselliği sağlar ' dir. Daha fazla bilgi için [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md). C++ yığın geriye doğru izleme mekanizması hakkında daha fazla bilgi için bkz: [özel durumlar ve yığını geriye doğru izleme](../cpp/exceptions-and-stack-unwinding-in-cpp.md).

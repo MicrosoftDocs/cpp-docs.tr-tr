@@ -15,20 +15,20 @@ helpviewer_keywords:
 - multiplicative operators [C++]
 - division operator
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
-ms.openlocfilehash: d3f52e8ed2f631c93672ae74cf04b86910d1d185
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a01672976703634c06724c9c655605bb433facf
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430855"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330391"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>Çarpan İşleçleri ve Modulus İşleci
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-expression * expression 
-expression / expression 
+expression * expression
+expression / expression
 expression % expression
 ```
 

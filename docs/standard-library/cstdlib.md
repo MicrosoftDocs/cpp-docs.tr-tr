@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cstdlib header
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
-ms.openlocfilehash: da2f9eb96caf95918cf5d4ce2bc331b622481823
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7732a20733a5a979bd6c0f0154f87ee78d2827ae
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503435"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521628"
 ---
 # <a name="ltcstdlibgt"></a>&lt;cstdlib&gt;
 
@@ -21,7 +21,6 @@ Standart C Kitaplığı üstbilgisi içerir \<stdlib.h > ve ilişkili adlar ekle
 
 ```cpp
 #include <cstdlib>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_class class
 - is_class
 ms.assetid: 96fc34a3-a81b-4ec6-b7fb-baafde1a0f4e
-ms.openlocfilehash: 3d0fad062c7e2971a67b62882754187ce0b9f3dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43a4211d9841e754cefbe1bdf405001f0f4657d0
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509921"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522089"
 ---
 # <a name="isclass-class"></a>is_class Sınıfı
 
@@ -56,7 +56,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

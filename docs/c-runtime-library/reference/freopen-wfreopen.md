@@ -29,12 +29,12 @@ helpviewer_keywords:
 - tfreopen function
 - wfreopen function
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
-ms.openlocfilehash: 4fa5afb1baea33178c987b45e8b7dace4e4515eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c570837bddea1f5e986ae5f767279ab2637ea21
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649533"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332510"
 ---
 # <a name="freopen-wfreopen"></a>freopen, _wfreopen
 
@@ -88,12 +88,12 @@ Bu işlevlerin daha güvenli sürümleri mevcut, bkz: [freopen_s, _wfreopen_s](f
 
 |*Modu*|Access|
 |-|-|
-**"r"**|Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **freopen** çağrısı başarısız olur.
-**"w"**|Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.
-**"a"**|(Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur.
-**"r +"**|Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir.
-**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir.
-**"a +"**|Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur.
+| **"r"** | Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **freopen** çağrısı başarısız olur. |
+| **"w"** | Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir. |
+| **"a"** | (Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur. |
+| **"r +"** | Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir. |
+| **"w +"** | Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir. |
+| **"a +"** | Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur. |
 
 Kullanım **"w"** ve **"w +"** türleri dikkatli olarak var olan dosyaları yok edebilir.
 
@@ -105,8 +105,8 @@ Zaman **"r +"**, **"w +"**, veya **"a +"** erişim türü belirtildiğinde, hem 
 
 |*modu* değiştiricisi|Çeviri modu|
 |-|-|
-**T**|Açık metin (çevrilmiş) modunda.
-**b**|İkili (çevrilmemiş) modda; açık satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır.
+| **T** | Açık metin (çevrilmiş) modunda. |
+| **b** | İkili (çevrilmemiş) modda; açık satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır. |
 
 Metin (çevrilmiş) modunda, satır başı satır besleme (CR-LF) kombinasyonları girişte tek satır başı Besleme (LF) karakterleri çevrilir; LF karakterleri için çıkış CR-LF kombinasyonlarına çevrilir. Ayrıca, CTRL + Z girişteki bir dosya sonu karakteri olarak yorumlanır. İle okuma ve yazma için okuma veya açık dosyalardaki **"a +"**, çalışma zamanı kitaplığı, CTRL + Z dosya sonunda olup olmadığını denetler ve eğer mümkünse bunu kaldırır. Kullanıldığından yapıldığını [fseek](fseek-fseeki64.md) ve [ftell](ftell-ftelli64.md) neden olabilir bir dosya içinde hareket etmek [fseek](fseek-fseeki64.md) dosyanın sonuna yakın yanlış davranmasına. **t** ANSI taşınabilirliğinin istendiği durumlarda kullanılmamalıdır bir Microsoft uzantısı bir seçenektir.
 

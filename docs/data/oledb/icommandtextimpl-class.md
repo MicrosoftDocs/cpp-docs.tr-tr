@@ -22,16 +22,16 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: fafd1198776c558ff39ef35c0b7beca538e976ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d05af932d5f531a4dab02e7e0ca171f4484891a3
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677701"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556328"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandText](/previous-versions/windows/desktop/ms714914) arabirimi.
+Bir uygulamasını sağlar [ICommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms714914(v=vs.85)) arabirimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,13 +76,13 @@ Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(GetCommandText)(GUID * pguidDialect, 
+STDMETHOD(GetCommandText)(GUID * pguidDialect,
    LPOLESTR * ppwszCommand);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.
+Bkz: [ICommandText::GetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.
 
 ## <a name="setcommandtext"></a> Icommandtextımpl::setCommandText
 
@@ -91,13 +91,13 @@ Mevcut komut metni değiştirme komut metni, ayarlar.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(SetCommandText)(REFGUID rguidDialect, 
+STDMETHOD(SetCommandText)(REFGUID rguidDialect,
    LPCOLESTR pwszCommand);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ICommandText::SetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709757(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="strcommandtext"></a> Icommandtextımpl::m_strCommandText
 

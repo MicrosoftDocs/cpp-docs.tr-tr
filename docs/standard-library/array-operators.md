@@ -9,12 +9,12 @@ f1_keywords:
 - array/std::array::operator>=
 - array/std::array::operator==
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-ms.openlocfilehash: e0fc38cee1fbb29b1c235d3e8fab9aa45d83113a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c44789c958b3fc24441b95178acc85ce3ba337fb
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632251"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524904"
 ---
 # <a name="ltarraygt-operators"></a>&lt;dizi&gt; işleçleri
 
@@ -162,7 +162,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -236,7 +235,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -310,7 +308,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -384,7 +381,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -458,7 +454,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: 3df2252e1879fbbcdf6cc950fa8dd637894ba3f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0c734648b084c3f58577cb56984e3ea003a6a8e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664561"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523943"
 ---
 # <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: 64 Bit hedeflemek için Visual C++ projeleri x64 yapılandırma platformları
 
@@ -43,18 +43,18 @@ Visual Studio IDE'de proje yapılandırmalarını, 64-bit, hedeflemek için C++ 
 
 - Zaman **yeni çözüm platformu** iletişim kutusu, hedef bir 64-bit platformu için bir proje içinde ayarlayabilirsiniz ancak açıksa **Ayarları Şuradan Kopyala** aşağı açılan listesinden **Win32**. Bu proje ayarlarını proje düzeyinde otomatik olarak güncelleştirilir:
 
-   - [/Makine](../build/reference/machine-specify-target-platform.md) bağlayıcı seçeneğini ayarlamak **/MACHINE:X 64**.
+  - [/Makine](../build/reference/machine-specify-target-platform.md) bağlayıcı seçeneğini ayarlamak **/MACHINE:X 64**.
 
-   - **Çıkışı Kaydet** olan kapalı. Daha fazla bilgi için [bağlayıcı özellik sayfaları](../ide/linker-property-pages.md).
+  - **Çıkışı Kaydet** olan kapalı. Daha fazla bilgi için [bağlayıcı özellik sayfaları](../ide/linker-property-pages.md).
 
-   - **Hedef ortam** ayarlanır **/env x64**. Daha fazla bilgi için [MIDL özellik sayfaları: Genel](../ide/midl-property-pages-general.md).
+  - **Hedef ortam** ayarlanır **/env x64**. Daha fazla bilgi için [MIDL özellik sayfaları: Genel](../ide/midl-property-pages-general.md).
 
-   - **Parametreleri doğrula** temizlenir ve varsayılan değerine sıfırlayın. Daha fazla bilgi için [MIDL özellik sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md).
+  - **Parametreleri doğrula** temizlenir ve varsayılan değerine sıfırlayın. Daha fazla bilgi için [MIDL özellik sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md).
 
-   - Varsa **hata ayıklama bilgi biçimi** ayarlandı **/zi** Win32 Proje yapılandırmasında sonra ayarlanmış **/zi** 64-bit proje yapılandırmasında. Daha fazla bilgi için [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../build/reference/z7-zi-zi-debug-information-format.md).
+  - Varsa **hata ayıklama bilgi biçimi** ayarlandı **/zi** Win32 Proje yapılandırmasında sonra ayarlanmış **/zi** 64-bit proje yapılandırmasında. Daha fazla bilgi için [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../build/reference/z7-zi-zi-debug-information-format.md).
 
-   > [!NOTE]
-   > Bu proje özellikleri hiçbiri dosya düzeyine kılınırsa değiştirilir.
+  > [!NOTE]
+  > Bu proje özellikleri hiçbiri dosya düzeyine kılınırsa değiştirilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

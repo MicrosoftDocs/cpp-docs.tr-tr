@@ -2,12 +2,12 @@
 title: Kodunuzu Evrensel CRT'ye yükseltme
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: 5e417df380ff2239b7c09ba32cc02b784e9343d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41b33698c1617cef02f1b98a654d3403843215d8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668617"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331756"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Kodunuzu Evrensel CRT'ye yükseltme
 
@@ -37,7 +37,7 @@ UCRT artık Microsoft Windows işletim sisteminin bir bileşeni olduğundan, Win
 
 Visual Studio 2015 veya Visual Studio 2017 tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'ın desteklenen sürümleri için vcredist paketini kullanarak dağıtabilirsiniz. Vcredist paketleri UCRT bileşenleri içerir ve otomatik olarak Windows işletim sistemlerinde, bunları varsayılan olarak yüklü olmayan yükleyin. Daha fazla bilgi için [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).
 
-Hem performans hem de güvenlik nedeniyle önerilmez olsa UCRT uygulaması yerel dağıtımını desteklenir. Uygulama yerel dağıtım DLL'leri altında Windows SDK ' nın bir parçası olarak dahil edilen **redist** alt. Gereken DLL'leri ucrtbase.dll ve bir dizi içeren **APISet ileticisi** API adlı DLL'leri-ms-win -_alt_.dll. Her işletim sisteminde gerekli DLL'lerin kümesini uygulaması yerel dağıtım kullandığınızda tüm DLL'leri dahil önerilen şekilde değişir. Ek ayrıntılar ve yerel uygulama dağıtımı hakkında uyarılar için bkz: [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md).
+Hem performans hem de güvenlik nedeniyle önerilmez olsa UCRT uygulaması yerel dağıtımını desteklenir. Uygulama yerel dağıtım DLL'leri altında Windows SDK ' nın bir parçası olarak dahil edilen **redist** alt. Gereken DLL'leri ucrtbase.dll ve bir dizi içeren **APISet ileticisi** API adlı DLL'leri-ms-win -_alt_.dll. Her işletim sisteminde gerekli DLL'lerin kümesini uygulaması yerel dağıtım kullandığınızda tüm DLL'leri dahil önerilen şekilde değişir. Ek ayrıntılar ve yerel uygulama dağıtımı hakkında uyarılar için bkz: [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md).
 
 ## <a name="changes-to-the-universal-crt-functions-and-macros"></a>Değişiklikleri makroları ve evrensel CRT işlevleri
 

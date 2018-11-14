@@ -42,12 +42,12 @@ helpviewer_keywords:
 - _tcsspnp function
 - tcsspnp function
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-ms.openlocfilehash: 272375948c8c650b226bfb71073c6c65c5b8acef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a4a0d2f9b9940e181625b129e5ded8bb9644c39
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635298"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521238"
 ---
 # <a name="strspnp-wcsspnp-mbsspnp-mbsspnpl"></a>_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 
@@ -76,7 +76,6 @@ unsigned char *_mbsspnp_l(
    const unsigned char *charset,
    _locale_t locale
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

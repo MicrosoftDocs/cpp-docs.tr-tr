@@ -57,12 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: f52b5b4313f8c9703a578f7d0d3ed672555f647e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 53e9305dd308e77afbd8d53754614c1cfb559f94
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646127"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557082"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
@@ -117,7 +117,7 @@ void Close() throw();
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT GetInitializationString(BSTR* pInitializationString, 
+HRESULT GetInitializationString(BSTR* pInitializationString,
    bool bIncludePassword = false) throw();
 ```
 
@@ -144,15 +144,15 @@ Bağlı veri kaynağı nesnesi için istenen özellik bilgileri döndürür.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT GetProperties(ULONG ulPropIDSets, 
-   constDBPROPIDSET* pPropIDSet, 
-   ULONG* pulPropertySets, 
+HRESULT GetProperties(ULONG ulPropIDSets,
+   constDBPROPIDSET* pPropIDSet,
+   ULONG* pulPropertySets,
    DBPROPSET** ppPropsets) const throw();
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+Bkz: [IDBProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -169,8 +169,8 @@ Bağlı veri kaynağı nesnesinin Belirtilen bir özelliğinin değerini döndü
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT GetProperty(const GUID& guid, 
-   DBPROPID propid, 
+HRESULT GetProperty(const GUID& guid,
+   DBPROPID propid,
    VARIANT* pVariant) const throw();
 ```
 
@@ -228,13 +228,13 @@ HRESULT Open(const CEnumerator& enumerator,
 HRESULT Open(HWND hWnd = GetActiveWindow(),
    DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET) throw();
 
-HRESULT Open(LPCWSTR szProgID, 
-   DBPROPSET* pPropSet = NULL, 
+HRESULT Open(LPCWSTR szProgID,
+   DBPROPSET* pPropSet = NULL,
    ULONG nPropertySets = 1) throw();
 
-HRESULT Open(LPCSTR szProgID, 
-   LPCTSTR pName,LPCTSTR pUserName = NULL, 
-   LPCTSTR pPassword = NULL, 
+HRESULT Open(LPCSTR szProgID,
+   LPCTSTR pName,LPCTSTR pUserName = NULL,
+   LPCTSTR pPassword = NULL,
    long nInitMode = 0) throw();
 ```
 
@@ -244,10 +244,10 @@ HRESULT Open(LPCSTR szProgID, 
 [in] `CLSID` Veri sağlayıcısı.
 
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+[in] Bir dizi işaretçi [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
 
 *nPropertySets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapıları geçirilen *pPropSet* bağımsız değişken.
+[in] Sayısını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
 
 *Sağlayıcı adı*<br/>
 [in] Bağlanılacak veritabanının adı.
@@ -259,7 +259,7 @@ HRESULT Open(LPCSTR szProgID, 
 [in] Kullanıcının parolası.
 
 *nInitMode*<br/>
-[in] Veritabanı başlatma modu. Bkz: [başlatma özellikleri](/previous-versions/windows/desktop/ms723127)içinde *OLE DB Programcının Başvurusu* geçerli başlatma modlarının bir listesi için Windows SDK. Varsa *nInitMode* sıfır, hiçbir başlatma işlemi modu bağlantıyı açmak için kullanılan özellik kümesine eklenir.
+[in] Veritabanı başlatma modu. Bkz: [başlatma özellikleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms723127(v=vs.85))içinde *OLE DB Programcının Başvurusu* geçerli başlatma modlarının bir listesi için Windows SDK. Varsa *nInitMode* sıfır, hiçbir başlatma işlemi modu bağlantıyı açmak için kullanılan özellik kümesine eklenir.
 
 *szProgID*<br/>
 [in] Bir program tanımlayıcısı.
@@ -304,7 +304,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 *szFileName*<br/>
 [in] Bir dosya, genellikle bir veri kaynağı bağlantısı adı (. UDL) dosyası.
 
-Veri bağlantısı dosyalarını (UDL dosyaları) hakkında daha fazla bilgi için bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102) Windows SDK.
+Veri bağlantısı dosyalarını (UDL dosyaları) hakkında daha fazla bilgi için bkz: [veri bağlantısı API'sine genel bakış](https://docs.microsoft.com/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -321,7 +321,7 @@ Kullanıcı tarafından sağlanan başlatma dizesi tarafından belirtilen bir ve
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString, 
+HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
    bool fPromptForInfo= false) throw();
 ```
 
@@ -350,8 +350,8 @@ Bu yöntem bir iletişim kutusu ile kullanıcıya sorar ve kullanıcı tarafınd
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ), 
-   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE, 
+HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,
    LPCOLESTR szInitialDirectory = NULL) throw();
 ```
 
@@ -399,10 +399,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] Program Kimliği bir veri sağlayıcısı.
 
 *pPropset*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Veri kaynağı nesnesi başlatılırsa, özellikleri veri kaynağı özelliği grubuna ait olmalıdır. Aynı özellik birden çok kez belirtilmişse *pPropset*, hangi değerin kullanıldığını sağlayıcıya özgü kaldırılır. Varsa *ulPropSets* sıfırsa, bu parametre yoksayılır.
+[in] Bir dizi işaretçi [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Veri kaynağı nesnesi başlatılırsa, özellikleri veri kaynağı özelliği grubuna ait olmalıdır. Aynı özellik birden çok kez belirtilmişse *pPropset*, hangi değerin kullanıldığını sağlayıcıya özgü kaldırılır. Varsa *ulPropSets* sıfırsa, bu parametre yoksayılır.
 
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapıları geçirilen *pPropSet* bağımsız değişken. Sağlayıcı bu sıfırsa yoksayar *pPropset*.
+[in] Sayısını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken. Sağlayıcı bu sıfırsa yoksayar *pPropset*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

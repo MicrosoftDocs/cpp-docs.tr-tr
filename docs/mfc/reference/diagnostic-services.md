@@ -20,12 +20,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: a6677d5d265b2de9f94160dae6afaedfb3c8b89f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a900a472a3783bde66584b64e361d80c606f0e9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644333"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524566"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -657,7 +657,7 @@ Bu işlev başarıyla kullanmak için:
 - Dosya IMAGEHLP. DLL, yolda olmalıdır. Bu DLL yoksa işlev bir hata iletisi görüntüler. Bkz: [görüntü kitaplığı Yardım](/windows/desktop/Debug/image-help-library) IMAGEHLP tarafından sağlanan işlev kümesi hakkında bilgi için.
 
 - Çerçeve yığında olan modülleri, hata ayıklama bilgileri içermelidir. Hata ayıklama bilgisi içermez, işlev hala bir yığın izleme oluşturur, ancak izlemeyi daha az ayrıntılı olur.
-### <a name="requirements"></a>Gereksinimler
+  ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afx.h
 

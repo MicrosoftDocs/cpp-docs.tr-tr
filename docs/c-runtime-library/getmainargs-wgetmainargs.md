@@ -20,12 +20,12 @@ helpviewer_keywords:
 - __wgetmainargs
 - __getmainargs
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
-ms.openlocfilehash: 625b3437bc922f3ca73c150fa14adf1f57567abb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e2bf21f2ac50d3486af56f9581ff6c8d0e0c309
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504594"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523344"
 ---
 # <a name="getmainargs-wgetmainargs"></a>__getmainargs, __wgetmainargs
 
@@ -47,7 +47,6 @@ int __wgetmainargs (
    wchar_t ***_Env,
    int _DoWildCard,
    _startupinfo * _StartInfo)
-
 ```
 
 #### <a name="parameters"></a>Parametreler

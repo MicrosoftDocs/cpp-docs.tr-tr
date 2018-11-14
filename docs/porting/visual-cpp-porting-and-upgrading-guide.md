@@ -2,12 +2,12 @@
 title: Visual C++ taşıma ve yükseltme Kılavuzu
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: c1f4114be236e5e3707113bc19779bb50f358ca8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39b0e716ae6dbc1210130908b27cfa1d06f86ec6
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478097"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556874"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 

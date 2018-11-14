@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-ms.openlocfilehash: 54d6f5306f4517c6450f36051df51385d8d8f578
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16248a93b557a92d89e35aac8eba912a8294af76
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494310"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524267"
 ---
 # <a name="ltlocalegt"></a>&lt;Yerel ayar&gt;
 
@@ -23,7 +23,6 @@ C++ programlarının, karakter sınıflandırması ve dize harmanlama için ulus
 
 ```cpp
 #include <locale>
-
 ```
 
 ### <a name="functions"></a>İşlevler

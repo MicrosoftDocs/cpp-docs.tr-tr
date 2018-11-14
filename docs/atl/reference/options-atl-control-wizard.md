@@ -6,16 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, options
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
-ms.openlocfilehash: 932661227daa216934c061a8b6807b05ca8270ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e607e35b2b3970f329692ba8d2c612d7f6a6591b
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443764"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522317"
 ---
 # <a name="options-atl-control-wizard"></a>ATL denetimi Sihirbazı, Seçenekler
-
-"Arama sonuçları" Özet buraya ekleyin.
 
 Sihirbazın bu sayfası, oluşturmakta olduğunuz denetim türünü ve içerdiği arabirimi destek düzeyini tanımlamak için kullanın.
 
@@ -29,17 +27,17 @@ Oluşturmak istediğiniz denetim türü.
 
 - **Bileşik Denetim**: (iletişim kutusuna benzer) içeren bir ActiveX denetimi diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim şunları içerir:
 
-   - Bileşik Denetim uygulayan iletişim kutusu için bir şablon.
+  - Bileşik Denetim uygulayan iletişim kutusu için bir şablon.
 
-   - Özel kaynak, kayıt defteri bileşik denetim çağrıldığında otomatik olarak kaydeder.
+  - Özel kaynak, kayıt defteri bileşik denetim çağrıldığında otomatik olarak kaydeder.
 
-   - Bileşik Denetim uygulayan bir C++ sınıf.
+  - Bileşik Denetim uygulayan bir C++ sınıf.
 
-   - Bileşik denetim tarafından kullanıma sunulan bir COM arabirimi.
+  - Bileşik denetim tarafından kullanıma sunulan bir COM arabirimi.
 
-   - Bileşik Denetim içeren bir HTML test sayfası.
+  - Bileşik Denetim içeren bir HTML test sayfası.
 
-   Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true. Bir havuz eşleme uygular. Daha fazla bilgi için [DHTML denetimi desteği](../../atl/atl-support-for-dhtml-controls.md).
+    Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true. Bir havuz eşleme uygular. Daha fazla bilgi için [DHTML denetimi desteği](../../atl/atl-support-for-dhtml-controls.md).
 
 - **DHTML denetimi**: HTML kullanarak kullanıcı arabirimi, bir ATL DHTML denetimini belirtir. DHTML kullanıcı Arabirimi sınıfı bir COM eşlemesi içerir. Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true.
 

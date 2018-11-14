@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: 25bb370c0714bfef97bc6659deae2fbd21aed23f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 46cf285e07bffe178874546d13d196b5165cb28b
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664574"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524364"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 
@@ -58,7 +58,7 @@ Hata ayıklama amacıyla durum değerleri kullanabilirsiniz. Kod tarafından olu
 
 Durum değerleri, belirli bir alan için bir NULL değer ayarlamak için de kullanabilirsiniz. Bunun yapılması, bir alan değeri sıfır yerine NULL olarak ayırmak istediğiniz durumlarda yardımcı olur. Bu NULL geçerli bir değer veya özel bir değeri olup olmadığına karar vermenize ve uygulamanızı bunu nasıl işleyeceğini karar size bağlıdır. OLE DB DBSTATUS_S_ISNULL genel bir NULL değer belirtme doğru şekilde tanımlar. Tüketici verileri okur ve değer null ise, Durum alanını DBSTATUS_S_ISNULL ayarlanır. Bir NULL değer ayarlamak tüketici isterse, tüketici sağlayıcı çağırmadan önce DBSTATUS_S_ISNULL durum değeri ayarlar.
 
-Ardından, biçim ve DBSTATUSENUM araması açın. Ardından, sıfır olmayan durum DBSTATUSENUM numaralandırma değerlerinden karşı sayısal değerini eşleşebilir. Sabit listesi adı bakın, neyin yanlış olduğunu söylemek için yeterli değilse **durumu** konudaki **bağlama veri değerleri** bölümünü [OLE DB Programcı Kılavuzu](/previous-versions/windows/desktop/ms713643). Bu konu, veri alma veya ayarlarken kullanılan durum değerleri tabloları içerir. Uzunluk değerleri hakkında daha fazla bilgi için bkz: **uzunluğu** aynı bölüme konu.
+Ardından, biçim ve DBSTATUSENUM araması açın. Ardından, sıfır olmayan durum DBSTATUSENUM numaralandırma değerlerinden karşı sayısal değerini eşleşebilir. Sabit listesi adı bakın, neyin yanlış olduğunu söylemek için yeterli değilse **durumu** konudaki **bağlama veri değerleri** bölümünü [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). Bu konu, veri alma veya ayarlarken kullanılan durum değerleri tabloları içerir. Uzunluk değerleri hakkında daha fazla bilgi için bkz: **uzunluğu** aynı bölüme konu.
 
 ## <a name="retrieving-the-length-or-status-of-a-column"></a>Uzunluk veya bir sütun durumunu alma
 

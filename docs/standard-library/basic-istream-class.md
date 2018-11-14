@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::basic_istream [C++], tellg
 - std::basic_istream [C++], unget
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
-ms.openlocfilehash: d29bdc7cff2e212f216901ab58b8fffda611e482
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e7f6ae0728a7d28af1992cf4186d533f1a97330
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509493"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522512"
 ---
 # <a name="basicistream-class"></a>basic_istream Sınıfı
 
@@ -240,16 +240,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 a
-
 ```
 
 ```Output
-
-      aType the letter 'a':
-a
+Type the letter 'a': a
 1
 ```
 
@@ -333,7 +329,6 @@ int main( )
 ```
 
 ```Output
-
 1111
 ```
 
@@ -399,7 +394,6 @@ int main( )
 ```
 
 ```Output
-
 121
 ```
 
@@ -637,15 +631,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 abcde
-
 ```
 
 ```Output
-
-      abcdeType 'abcde': abcde
+Type 'abcde': abcde
 a abcde
 ```
 
@@ -692,7 +683,6 @@ int main( )
 ```
 
 ```Output
-
 qwq
 ```
 
@@ -748,15 +738,12 @@ int main()
 }
 ```
 
-```Output
-
+```Input
 abcde
-
 ```
 
 ```Output
-
-      abcdeType 'abcde': abcde
+Type 'abcde': abcde
 abcde
 ```
 
@@ -1001,15 +988,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 abc
-
 ```
 
 ```Output
-
-      abcType 'abc': abc
+Type 'abc': abc
 abc
 ```
 

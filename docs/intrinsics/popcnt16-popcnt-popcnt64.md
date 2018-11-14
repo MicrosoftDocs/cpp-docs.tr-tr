@@ -11,12 +11,12 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: b40d84b919a3418d48b820e5285b523cd602dc92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0a5a51bfcb5265f7b415433c3f6b64423840ebe
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538176"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522465"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
@@ -87,7 +87,6 @@ int main()
     cout << "__popcnt(0x" << hex << ui[i] << ") = " << dec << uir << endl;
   }
 }
-
 ```
 
 ```Output

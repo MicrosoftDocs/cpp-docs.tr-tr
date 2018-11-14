@@ -36,12 +36,12 @@ helpviewer_keywords:
 - tprintf_s_l function
 - _wprintf_s_l function
 ms.assetid: 044ebb2e-5cc1-445d-bb4c-f084b405615b
-ms.openlocfilehash: 1a140d63f18244ec453e97b727a2f93ca56547fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b07fd90e0390d5c39bc8f5885f5744de20eeb79
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560244"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524189"
 ---
 # <a name="printfs-printfsl-wprintfs-wprintfsl"></a>printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 
@@ -208,7 +208,6 @@ Real numbers:
    251.736600 251.74 2.517366e+002 2.517366E+002
 
 Address as:   0012FF78
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

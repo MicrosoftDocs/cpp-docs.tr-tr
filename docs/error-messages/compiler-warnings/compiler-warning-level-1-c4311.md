@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4311
 ms.assetid: ddc579d0-d051-47bc-915d-71ffb32323c9
-ms.openlocfilehash: f60daa66daa42687522400284a19ec87eb13f67c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f9b8ce710879913fdad1be5c0f22f8e3f4ed9d7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513730"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518170"
 ---
 # <a name="compiler-warning-level-1-c4311"></a>Derleyici Uyarısı (düzey 1) C4311
 
@@ -31,5 +31,4 @@ int main() {
    unsigned int i = (unsigned int) p;   // C4311 for 64-bit targets
    unsigned long long j = (unsigned long long) p;   // OK
 }
-
 ```

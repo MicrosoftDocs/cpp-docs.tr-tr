@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::hash [C++]
 - std::hash [C++]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
-ms.openlocfilehash: d40910d95e9c2fac2329498481ee71c36ff8c8b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f7206e3764df384004b78e6df2127833a784f70
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592471"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521043"
 ---
 # <a name="hash-class"></a>hash Sınıfı
 
@@ -64,7 +64,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

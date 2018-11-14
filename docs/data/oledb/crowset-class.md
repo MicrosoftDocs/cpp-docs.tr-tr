@@ -238,12 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: 6af7b30ef7055fbf5b3c998dba6f3b84d0129c31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb2f66474f9700ed7bfdc2e1063865734e4e991a
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543074"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557017"
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 
@@ -273,16 +273,16 @@ Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.
 |-|-|
 |[AddRefRows](#addrefrows)|Artışlarla başvuru sayısı geçerli satır ile ilişkili.|
 |[Kapat](#close)|Satırları ve geçerli sürümleri `IRowset` arabirimi.|
-|[Compare](#compare)|Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539).|
+|[Compare](#compare)|Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](https://docs.microsoft.com/previous-versions/windows/desktop/ms709539(v=vs.85)).|
 |[CRowset](#crowset)|Yeni bir oluşturur `CRowset` nesne ve bunu ile ilişkilendirir (isteğe bağlı olarak) bir `IRowset` bir parametre olarak sağlanan arabirim.|
-|[Delete](#delete)|Satır kümesi kullanarak satırları siler [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)).|
+|[Delete](#delete)|Satır kümesi kullanarak satırları siler [IRowsetChange:DeleteRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)).|
 |[FindNextRow](#findnextrow)|Belirtilen yer işaretinden sonra sonraki eşleşen satırı bulur.|
 |[GetApproximatePosition](#getapproximateposition)|Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.|
 |[GetData](#getdata)|Satır satır kümesinin kopyadan verileri alır.|
 |[GetDataHere](#getdatahere)|Belirtilen arabellek verilerini alır.|
 |[GetOriginalData](#getoriginaldata)|En son öğesinden alınan veya bekleyen değişiklikleri yoksayma veri kaynağına gönderilen verileri alır.|
 |[GetRowStatus](#getrowstatus)|Tüm satırları durumunu döndürür.|
-|[Ekle](#insert)|Oluşturur ve kullanarak yeni bir satır ekler [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921).|
+|[Ekle](#insert)|Oluşturur ve kullanarak yeni bir satır ekler [IRowsetChange:InsertRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms716921(v=vs.85)).|
 |[Issamerow](#issamerow)|Geçerli satır belirtilen satırı karşılaştırır.|
 |[MoveFirst](#movefirst)|Sonraki getirme konumunu ilk konumuna yeniden konumlandırır.|
 |[MoveLast](#movelast)|Son kayda gider.|
@@ -290,8 +290,8 @@ Bir erişimci sınıfı. Varsayılan, `CAccessorBase` değeridir.
 |[MovePrev](#moveprev)|Önceki kayda gider.|
 |[MoveToBookmark](#movetobookmark)|Bu yer işaretinden yer işareti tarafından işaretlenen satırı veya belirtilen bir uzaklık satırı getirir.|
 |[MoveToRatio](#movetoratio)|Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.|
-|[ReleaseRows](#releaserows)|Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) geçerli satır tanıtıcısını bırakmak için.|
-|[SetData](#setdata)|Kullanarak bir satır bir veya daha fazla sütun veri değerlerini ayarlar [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232).|
+|[ReleaseRows](#releaserows)|Çağrıları [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) geçerli satır tanıtıcısını bırakmak için.|
+|[SetData](#setdata)|Kullanarak bir satır bir veya daha fazla sütun veri değerlerini ayarlar [IRowsetChange:SetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms721232(v=vs.85)).|
 |[Geri alma](#undo)|Satır son getirme bu yana yapılan değişiklikleri geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).|
 |[Güncelleştir](#update)|Bekleyen tüm geçerli satırın son getirme veya güncelleştirme yapılan değişiklikleri iletir.|
 |[UpdateAll](#updateall)|Bekleyen tüm son getirme veya güncelleştirme tüm satırları için yapılan değişiklikleri iletir.|
@@ -304,7 +304,7 @@ Bu sınıf örneği ancak bunun yerine bir şablon parametre olarak geçirilen t
 
 ## <a name="addrefrows"></a> CRowset::AddRefRows
 
-Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) (bir) başvuru sayısını artırmak için geçerli satır tanıtıcısı ile ilişkili.
+Çağrıları [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) (bir) başvuru sayısını artırmak için geçerli satır tanıtıcısı ile ilişkili.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -322,7 +322,7 @@ Bu yöntem, geçerli satır tanıtıcısı için başvuru sayısını artırır.
 
 ## <a name="close"></a> CRowset::Close
 
-Satırları ve geçerli sürümleri [IRowset](/previous-versions/windows/desktop/ms720986) arabirimi.
+Satırları ve geçerli sürümleri [IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) arabirimi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -336,13 +336,13 @@ Bu yöntem, şu anda satır kümesindeki tüm satırları serbest bırakır.
 
 ## <a name="compare"></a> CRowset::Compare
 
-Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539).
+Karşılaştırır iki yer işaretlerini kullanarak [IRowsetLocate::Compare](https://docs.microsoft.com/previous-versions/windows/desktop/ms709539(v=vs.85)).
 
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT Compare(const CBookmarkBase& bookmark1, 
-   const CBookmarkBase& bookmark2, 
+HRESULT Compare(const CBookmarkBase& bookmark1,
+   const CBookmarkBase& bookmark2,
    DBCOMPARE* pComparison) const throw();
 ```
 
@@ -369,12 +369,12 @@ Tüketicilerinizin yer işaretlerini kullanma hakkında daha fazla bilgi için b
 
 ## <a name="crowset"></a> CRowset::CRowset
 
-Yeni bir oluşturur `CRowset` nesne ve bunu ile ilişkilendirir (isteğe bağlı olarak) bir [IRowset](/previous-versions/windows/desktop/ms720986) bir parametre olarak sağlanan arabirim.
+Yeni bir oluşturur `CRowset` nesne ve bunu ile ilişkilendirir (isteğe bağlı olarak) bir [IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) bir parametre olarak sağlanan arabirim.
 
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-CRowset(); 
+CRowset();
 
 CRowset(IRowset* pRowset);
 ```
@@ -386,7 +386,7 @@ CRowset(IRowset* pRowset);
 
 ## <a name="delete"></a> CRowset::Delete
 
-Çağrıları [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) geçerli satır satır kümesinden silinemedi.
+Çağrıları [IRowsetChange::DeleteRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) geçerli satır satır kümesinden silinemedi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -405,35 +405,35 @@ Belirtilen yer işaretinden sonra sonraki eşleşen satırı bulur.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT FindNextRow(DBCOMPAREOP op, 
-   BYTE* pData, 
-   DBTYPE wType, 
-   DBLENGTH nLength, 
-   BYTE bPrecision, 
-   BYTE bScale, 
-   BOOL bSkipCurrent = TRUE, 
+HRESULT FindNextRow(DBCOMPAREOP op,
+   BYTE* pData,
+   DBTYPE wType,
+   DBLENGTH nLength,
+   BYTE bPrecision,
+   BYTE bScale,
+   BOOL bSkipCurrent = TRUE,
    CBookmarkBase* pBookmark = NULL) throw();
 ```
 
 #### <a name="parameters"></a>Parametreler
 
 *OP*<br/>
-[in] Satır değerleri karşılaştırmak kullanılacak işlem. Değerler için bkz: [IRowsetFind::FindNextRow](/previous-versions/windows/desktop/ms723091).
+[in] Satır değerleri karşılaştırmak kullanılacak işlem. Değerler için bkz: [IRowsetFind::FindNextRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms723091(v=vs.85)).
 
 *pData*<br/>
 [in] Eşleştirilecek değer için bir işaretçi.
 
 *wType*<br/>
-[in] Arabellek değer bölümünü veri türünü belirtir. Türü göstergeleri hakkında daha fazla bilgi için bkz. [veri türleri](/previous-versions/windows/desktop/ms723969) içinde *OLE DB Programcının Başvurusu* Windows SDK.
+[in] Arabellek değer bölümünü veri türünü belirtir. Türü göstergeleri hakkında daha fazla bilgi için bkz. [veri türleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms723969(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK.
 
 *nLength*<br/>
-[in] Uzunluğu, bayt cinsinden veri değeri için ayrılmış tüketici veri yapısı. Açıklamasını Ayrıntılar için bkz `cbMaxLen` içinde [IAccessor::CreateAccessor'ı yapıları](/previous-versions/windows/desktop/ms716845) içinde *OLE DB Programcının Başvurusu.*
+[in] Uzunluğu, bayt cinsinden veri değeri için ayrılmış tüketici veri yapısı. Açıklamasını Ayrıntılar için bkz `cbMaxLen` içinde [IAccessor::CreateAccessor'ı yapıları](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) içinde *OLE DB Programcının Başvurusu.*
 
 *bPrecision*<br/>
-[in] Veri alınırken kullanılan en yüksek duyarlık. Yalnızca şu durumlarda kullanılan *wType* DBTYPE_NUMERIC olduğu. Daha fazla bilgi için [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](/previous-versions/windows/desktop/ms719714) içinde *OLE DB Programcının Başvurusu*.
+[in] Veri alınırken kullanılan en yüksek duyarlık. Yalnızca şu durumlarda kullanılan *wType* DBTYPE_NUMERIC olduğu. Daha fazla bilgi için [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](https://docs.microsoft.com/previous-versions/windows/desktop/ms719714(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 *bScale*<br/>
-[in] Veri alınırken kullanılan ölçek. Yalnızca şu durumlarda kullanılan *wType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL. Daha fazla bilgi için [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](/previous-versions/windows/desktop/ms719714) içinde *OLE DB Programcının Başvurusu*.
+[in] Veri alınırken kullanılan ölçek. Yalnızca şu durumlarda kullanılan *wType* DBTYPE_NUMERIC veya DBTYPE_DECIMAL. Daha fazla bilgi için [DBTYPE_NUMERIC veya DBTYPE_DECIMAL içeren dönüştürmeler](https://docs.microsoft.com/previous-versions/windows/desktop/ms719714(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 *bSkipCurrent*<br/>
 [in] Yer işareti bir arama başlayacağı satır sayısı.
@@ -458,8 +458,8 @@ Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark, 
-   DBCOUNTITEM* pPosition, 
+HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,
+   DBCOUNTITEM* pPosition,
    DBCOUNTITEM* pcRows) throw();
 ```
 
@@ -491,7 +491,7 @@ Satır satır kümesinin kopyadan verileri alır.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT GetData() throw(); 
+HRESULT GetData() throw();
 
 HRESULT GetData(int nAccessor) throw();
 ```
@@ -516,7 +516,7 @@ Geçerli satırdaki verileri alır ve belirtilen arabelleğine koyar.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT GetDataHere(int nAccessor, 
+HRESULT GetDataHere(int nAccessor,
    void* pBuffer) throw();
 ```
 
@@ -586,7 +586,7 @@ Oluşturur ve veri erişimci kullanarak yeni bir satır başlatır.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT Insert(int nAccessor = 0, 
+HRESULT Insert(int nAccessor = 0,
    bool bGetHRow = false) throw();
 ```
 
@@ -633,7 +633,7 @@ HRESULT IsSameRow(HROW hRow) const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Satırları aynıdır S_OK gösterir. Diğer değerler için bkz. [IRowsetIndentity::IsSameRow](/previous-versions/windows/desktop/ms719629) içinde *OLE DB Programcının Başvurusu* Windows SDK.
+Standart bir HRESULT. Satırları aynıdır S_OK gösterir. Diğer değerler için bkz. [IRowsetIndentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK.
 
 ## <a name="movefirst"></a> CRowset::MoveFirst
 
@@ -651,7 +651,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) sonraki getirme konumunu ilk konumuna (satır kümesi oluşturduğunuzda, sonraki getirme konumunu konumu) yeniden konumlandırmak için ve ilk satır alır.
+Çağrıları [IRowset::RestartPosition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) sonraki getirme konumunu ilk konumuna (satır kümesi oluşturduğunuzda, sonraki getirme konumunu konumu) yeniden konumlandırmak için ve ilk satır alır.
 
 ## <a name="movelast"></a> CRowset::MoveLast
 
@@ -669,7 +669,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) sonraki getirme konumunu son yeniden konumlandırmak için getirin ve son satırını alır.
+Çağrıları [IRowset::RestartPosition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) sonraki getirme konumunu son yeniden konumlandırmak için getirin ve son satırını alır.
 
 Bu yöntem, ayarladığınız gerektirir `DBPROP_CANSCROLLBACKWARDS` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu. (Daha iyi performans için de ayarlayabilirsiniz `DBPROP_QUICKRESTART` VARIANT_TRUE için.)
 
@@ -682,7 +682,7 @@ Bu yöntem, ayarladığınız gerektirir `DBPROP_CANSCROLLBACKWARDS` çağırmad
 ```cpp
 HRESULT MoveNext() throw();
 
-HRESULT MoveNext(LONG lSkip, 
+HRESULT MoveNext(LONG lSkip,
    bool bForward= true) throw();
 ```
 
@@ -735,7 +735,7 @@ Bir yer işareti veya belirtilen bir uzaklık satırında tarafından işaretlen
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT MoveToBookmark(const CBookmarkBase& bookmark, 
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
    LONG lSkip = 0) throw();
 ```
 
@@ -764,7 +764,7 @@ Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT MoveToRatio(DBCOUNTITEM nNumerator, 
+HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
    DBCOUNTITEM nDenominator,bool bForward = true) throw();
 ```
 
@@ -789,13 +789,13 @@ Standart bir HRESULT.
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602).
+Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](https://docs.microsoft.com/previous-versions/windows/desktop/ms709602(v=vs.85)).
 
 Bu yöntem, isteğe bağlı bir arabirim gerektirir `IRowsetScroll`, tüm sağlayıcılarında; bu desteklenmeyebilir durumda, e_noınterface yöntemi döndürür. Ayrıca ayarlamanız gerekir `DBPROP_IRowsetScroll` çağırmadan önce VARIANT_TRUE için `Open` tablosu veya satır kümesi içeren komutu.
 
 ## <a name="releaserows"></a> CRowset::ReleaseRows
 
-Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) geçerli satır tanıtıcısını bırakmak için.
+Çağrıları [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) geçerli satır tanıtıcısını bırakmak için.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -814,7 +814,7 @@ Bir satırın bir veya daha fazla sütun veri değerlerini ayarlar.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT SetData() const throw(); 
+HRESULT SetData() const throw();
 
 HRESULT SetData(int nAccessor) const throw();
 ```
@@ -843,8 +843,8 @@ Satır son getirme bu yana yapılan değişiklikleri geri alır veya [güncelle�
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT Undo(DBCOUNTITEM* pcRows = NULL, 
-   HROW* phRow = NULL, 
+HRESULT Undo(DBCOUNTITEM* pcRows = NULL,
+   HROW* phRow = NULL,
    DBROWSTATUS* pStatus = NULL) throw();
 ```
 
@@ -874,8 +874,8 @@ Bekleyen tüm geçerli satırın son getirme bu yana yapılan değişiklikleri i
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT Update(DBCOUNTITEM* pcRows = NULL, 
-   HROW* phRow = NULL, 
+HRESULT Update(DBCOUNTITEM* pcRows = NULL,
+   HROW* phRow = NULL,
    DBROWSTATUS* pStatus = NULL) throw();
 ```
 
@@ -907,8 +907,8 @@ Bekleyen tüm son getirme itibaren tüm satırları için yapılan değişiklikl
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL, 
-   HROW** pphRow = NULL, 
+HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
+   HROW** pphRow = NULL,
    DBROWSTATUS** ppStatus = NULL) throw();
 ```
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: 6ce6886c74a2a82a2a072a3f5d7e3222bb572bea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82036017188acc3f882e9751096af8ab268fd9db
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477382"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525177"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>Derleyici Uyarısı (düzey 4) C4754
 
@@ -94,7 +94,6 @@ Bu durumda, sabit kod bu benzeyecektir:
 // that all the addition operands are 32-bit, so any overflow
 // is detected by the check.
 if (a + (unsigned long)sizeof(unsigned long) < a)
-
 ```
 
 **Not** son satır deyiminin başvurulan Derleyici uyarılarını satır numarası değil. Çoklu satırlar üzerinde yayılan karmaşık bir koşullu deyim hakkında bir uyarı iletisinde bildirilen satırından önce birkaç satır kod hatası olan satırın olabilir. Örneğin:

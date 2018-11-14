@@ -10,12 +10,12 @@ helpviewer_keywords:
 - = operator, with specific C++ Standard Library objects
 - reference::operator=
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
-ms.openlocfilehash: 82bbf41d0d7d1fda3cd1951f810fd82774a5d8f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b829a0b6224ca93192f15b088fcb98155bc3963a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500548"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517938"
 ---
 # <a name="vectorltboolgtreferenceoperator"></a>vector&lt;bool&gt;::reference::operator=
 
@@ -93,7 +93,6 @@ int main()
     cout << "The original value of the 3rd element still stored in a bool: " << b3 << endl;
     cout << endl;
 }
-
 ```
 
 ## <a name="output"></a>Çıkış

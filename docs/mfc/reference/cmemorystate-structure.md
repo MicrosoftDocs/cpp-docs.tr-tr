@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory leaks [MFC], detecting
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-ms.openlocfilehash: a1a6912cd736643313306f6453ce19b1f6b97adc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5aee7bc2f44e4c2e7851baea554d3069c928088c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502979"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523435"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState yapısı
 
@@ -139,7 +139,6 @@ Yeni bellek durumu tarafından tanımlanan bir `CMemoryState` denetim noktası.
 
 ```
 void DumpAllObjectsSince() const;
-
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -156,7 +155,6 @@ Kısa bellek istatistikleri rapordan yazdırır bir `CMemoryState` tarafından d
 
 ```
 void DumpStatistics() const;
-
 ```
 
 ### <a name="remarks"></a>Açıklamalar

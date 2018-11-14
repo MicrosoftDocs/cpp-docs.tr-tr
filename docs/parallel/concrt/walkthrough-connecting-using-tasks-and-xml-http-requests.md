@@ -6,16 +6,16 @@ helpviewer_keywords:
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: 69e365c0f0bbee7014b6d754c920bd6241064fdf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36769fa531decaee81c73a4751f5c6ed24008ffc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495580"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525021"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma
 
-Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimleri birlikte bir web hizmeti, bir evrensel Windows Platformu (UWP HTTP GET ve POST istekleri göndermek için görevler ) uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte diğer görevlerle ölçeklemesini kod yazabilirsiniz. Örneğin, indirme görev görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal edildiğinde indirme görev de yanıt verebilirsiniz.
+Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimleri birlikte bir web hizmeti, bir evrensel Windows Platformu (UWP HTTP GET ve POST istekleri göndermek için görevler ) uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte diğer görevlerle ölçeklemesini kod yazabilirsiniz. Örneğin, indirme görev görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal edildiğinde indirme görev de yanıt verebilirsiniz.
 
 > [!TIP]
 >  C++ REST SDK'sı, C++ uygulaması kullanarak UWP uygulaması veya bir masaüstü C++ uygulama HTTP isteklerini gerçekleştirmek için de kullanabilirsiniz. Daha fazla bilgi için bkz. [C++ REST SDK (Codename "Kazablanka")](https://github.com/Microsoft/cpprestsdk).
@@ -69,35 +69,34 @@ Bu bölümde, nasıl kullanılacağını gösteren `HttpRequest` bir UWP uygulam
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 
-1. Mainpage.xaml.h içinde bu düz bu ekleme `#include` yönergesi:
+2. Mainpage.xaml.h içinde bu düz bu ekleme `#include` yönergesi:
 
    [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]
 
-1. Mainpage.xaml.h içinde bu düz eklemeniz `private` üye değişkenlerine `MainPage` sınıfı:
+3. Mainpage.xaml.h içinde bu düz eklemeniz `private` üye değişkenlerine `MainPage` sınıfı:
 
    [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]
 
-1. Mainpage.xaml.h içinde bu düz bildirmek `private` yöntemi `ProcessHttpRequest`:
+4. Mainpage.xaml.h içinde bu düz bildirmek `private` yöntemi `ProcessHttpRequest`:
 
    [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]
 
-1. MainPage.xaml.cpp içinde eklemeniz `using` ifadeleri:
+5. MainPage.xaml.cpp içinde eklemeniz `using` ifadeleri:
 
    [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]
 
-1. Mainpage.xaml.cpp içinde `GetButton_Click`, `PostButton_Click`, ve `CancelButton_Click` yöntemlerinin `MainPage` sınıfı.
+6. Mainpage.xaml.cpp içinde `GetButton_Click`, `PostButton_Click`, ve `CancelButton_Click` yöntemlerinin `MainPage` sınıfı.
 
    [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]
 
-    > [!TIP]
-
-    >  Uygulamanızı iptal için destek gerektirmiyorsa geçirmek [concurrency::cancellation_token:: none](reference/cancellation-token-class.md#none) için `HttpRequest::GetAsync` ve `HttpRequest::PostAsync` yöntemleri.
+   > [!TIP]
+   > Uygulamanızı iptal için destek gerektirmiyorsa geçirmek [concurrency::cancellation_token:: none](reference/cancellation-token-class.md#none) için `HttpRequest::GetAsync` ve `HttpRequest::PostAsync` yöntemleri.
 
 1. Mainpage.xaml.cpp içinde `MainPage::ProcessHttpRequest` yöntemi.
 
    [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]
 
-1. Proje özelliklerinde altında **bağlayıcı**, **giriş**, belirtin `shcore.lib` ve `msxml6.lib`.
+8. Proje özelliklerinde altında **bağlayıcı**, **giriş**, belirtin `shcore.lib` ve `msxml6.lib`.
 
 Çalışan uygulamaya şu şekildedir:
 

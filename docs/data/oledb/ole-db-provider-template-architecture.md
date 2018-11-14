@@ -6,12 +6,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 3f12eb7c7da449715116e88c9f78ee2e32fc327f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6256328caa11d188f3a50445f62df096b6f6acb3
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596176"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557043"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 
@@ -39,7 +39,7 @@ OLE DB sağlayıcı şablonları, önceden paketlenmiş uygulamalar için gerekl
 
 OLE DB sağlayıcı şablonları satır ve depolama nesnelerinin kullanılmaz.
 
-Aşağıdaki tabloda, yukarıda listelenen nesneler için zorunlu ve isteğe bağlı arabirimler listelenmiştir göre [OLE DB 2.6 SDK Belgeleri](/previous-versions/windows/desktop/ms722784).
+Aşağıdaki tabloda, yukarıda listelenen nesneler için zorunlu ve isteğe bağlı arabirimler listelenmiştir göre [OLE DB 2.6 SDK Belgeleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85)).
 
 |Bileşen|Arabirim|Yorum|
 |---------------|---------------|-------------|
@@ -58,4 +58,4 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB arabirimleri](/previous-versions/windows/desktop/ms709709)<br/>
+[OLE DB arabirimleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

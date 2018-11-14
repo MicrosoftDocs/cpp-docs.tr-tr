@@ -22,12 +22,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: 77385fc8b2869cc59c7a0061951c76a431490efe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ce9f3fa18d2a17d499b65258cfda52783ce46c5
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638054"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556952"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl Sınıfı
 
@@ -62,7 +62,7 @@ Sınıfınız, türetilen `IDBPropertiesImpl`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607) veri kaynağı nesneleri için zorunlu bir arabirim ve numaralandırıcılar için isteğe bağlı bir arabirim. Ancak, bir numaralandırıcı sunarsa [IDBInitialize](/previous-versions/windows/desktop/ms713706), açığa çıkarmalıdır `IDBProperties`. `IDBPropertiesImpl` uygulayan `IDBProperties` tarafından tanımlanan statik bir işlevi kullanarak [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+[IDBProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms719607(v=vs.85)) veri kaynağı nesneleri için zorunlu bir arabirim ve numaralandırıcılar için isteğe bağlı bir arabirim. Ancak, bir numaralandırıcı sunarsa [IDBInitialize](https://docs.microsoft.com/previous-versions/windows/desktop/ms713706(v=vs.85)), açığa çıkarmalıdır `IDBProperties`. `IDBPropertiesImpl` uygulayan `IDBProperties` tarafından tanımlanan statik bir işlevi kullanarak [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
 ## <a name="getproperties"></a> Idbpropertiesımpl::GetProperties
 
@@ -71,15 +71,15 @@ Veri kaynağı nesnesi veya başlatma özellik grubundaki üzerinde ayarlanmış
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(GetProperties)(ULONG cPropertySets, 
-   const DBPROPIDSET rgPropertySets[], 
-   ULONG * pcProperties, 
+STDMETHOD(GetProperties)(ULONG cPropertySets,
+   const DBPROPIDSET rgPropertySets[],
+   ULONG * pcProperties,
    DBPROPSET ** prgProperties);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IDBProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBProperties::GetProperties`:
 
@@ -101,16 +101,16 @@ Veri kaynağı tarafından desteklenen özellik bilgilerini döndürür.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
-   const DBPROPIDSET rgPropertySets[], 
-   ULONG * pcPropertyInfoSets, 
-   DBPROPINFOSET ** prgPropertyInfoSets, 
+STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
+   const DBPROPIDSET rgPropertySets[],
+   ULONG * pcPropertyInfoSets,
+   DBPROPINFOSET ** prgPropertyInfoSets,
    OLECHAR ** ppDescBuffer);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IDBProperties::GetPropertyInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms718175(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBProperties::GetPropertyInfo`:
 
@@ -130,13 +130,13 @@ Kullanan [Idbınitializeımpl::m_pcutlpropınfo](../../data/oledb/idbinitializei
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IDBProperties::SetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723049(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="remarks"></a>Açıklamalar
 

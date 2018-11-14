@@ -10,12 +10,12 @@ f1_keywords:
 - regex/std::operator==
 - regex/std::operator<<
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-ms.openlocfilehash: e2c566a81bd8b67c0e34291d84182cacf1fc066a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee0d9ba820cff55a9cfbb130c8f90ca02fbee84a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552873"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524475"
 ---
 # <a name="ltregexgt-operators"></a>&lt;Regex&gt; işleçleri
 
@@ -128,7 +128,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -241,7 +240,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -310,7 +308,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -413,7 +410,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -539,7 +535,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -652,7 +647,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

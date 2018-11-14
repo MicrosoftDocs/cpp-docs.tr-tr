@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - xor function
 ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
-ms.openlocfilehash: 2f4faf6a6bf23c240c10a120ff553752f1bca4ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18ef9b442e46c219739133c894afe53c7242bacb
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523662"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519445"
 ---
 # <a name="xor"></a>xor
 
@@ -36,7 +36,6 @@ ms.locfileid: "50523662"
 ```C
 
 #define xor ^
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

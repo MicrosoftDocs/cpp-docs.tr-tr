@@ -26,12 +26,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: f6e52d993619929666d61f019c1f6d5d28243ab1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d0ffba2e8b682a33dc435b0968c59844a858c72
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569243"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524943"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 
@@ -258,7 +258,7 @@ void AFX_CDECL InvokeHelper(
 Yöntem veya özellik çağrılacak tanımlar.
 
 *wFlags*<br/>
-Çağrı bağlamını tanımlayan bayraklar `IDispatch::Invoke`. biçimindeki telefon numarasıdır. Olası değerler listesi için bkz. *wFlags* parametresinde [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK.
+Çağrı bağlamını tanımlayan bayraklar `IDispatch::Invoke`. biçimindeki telefon numarasıdır. Olası değerler listesi için bkz. *wFlags* parametresinde [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK.
 
 *vtRet*<br/>
 Dönüş değerinin türünü belirtir. Olası değerler için Açıklamalar bölümüne bakın.
@@ -296,9 +296,9 @@ Olası değerler için *vtRet* bağımsız değişken VARENUM sabit listesinden 
 
 *PbParamInfo* bağımsız değişkeni, boşlukla ayrılmış bir listesi **VTS_** sabitler. Bir veya daha fazla (değil virgüller), boşluk ile ayırarak, bu değerleri işlevin parametre listesi belirtir. Olası değerler ile listelenen [EVENT_CUSTOM](event-maps.md#event_custom) makrosu.
 
-Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından çağırır [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) yöntemi. Çağrı `Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. ' % S'SCODE (durum kodu) tarafından döndürülen, `IDispatch::Invoke` DISP_E_EXCEPTION, olan bu işlevin bir [COleException](../../mfc/reference/coleexception-class.md) nesne; Aksi takdirde oluşturur bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
+Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından çağırır [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) yöntemi. Çağrı `Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. ' % S'SCODE (durum kodu) tarafından döndürülen, `IDispatch::Invoke` DISP_E_EXCEPTION, olan bu işlevin bir [COleException](../../mfc/reference/coleexception-class.md) nesne; Aksi takdirde oluşturur bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
 
-Daha fazla bilgi için [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), ve [yapısı, COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK içinde.
+Daha fazla bilgi için [VARIANTARG](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), ve [yapısı, COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 

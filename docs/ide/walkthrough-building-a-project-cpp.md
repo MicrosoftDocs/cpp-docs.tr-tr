@@ -6,12 +6,12 @@ helpviewer_keywords:
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-ms.openlocfilehash: 53f9d1ca823385c17bf2b235d844e40886092e44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c12cd50dd92e728c88945cd83029f7e5e62816da
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618369"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524163"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek Yol: Proje Derleme (C++)
 
@@ -27,15 +27,15 @@ Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl 
 
 1. Deyim benzeyecek şekilde Game.cpp içinde son satırda bulunan noktalı virgülü silin:
 
-    `return 0`
+   `return 0`
 
 1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
 1. Bir ileti **hata listesi** penceresini gösteren projesinin yapı içinde bir hata oluştu. Açıklama hata iletisi şuna benzer:
 
-    `error C2143: syntax error: missing ';' before '}'`
+   `error C2143: syntax error: missing ';' before '}'`
 
-  Bu hatayla ilgili Yardım bilgilerini görüntülemek için onu vurgulayın **hata listesi** penceresi seçip **F1** anahtarı.
+   Bu hatayla ilgili Yardım bilgilerini görüntülemek için onu vurgulayın **hata listesi** penceresi seçip **F1** anahtarı.
 
 1. Geri söz dizimi hatası olan satırın sonuna noktalı virgül ekleyin:
 
@@ -43,7 +43,7 @@ Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl 
 
 1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
-  Bir ileti **çıkış** penceresi projenin başarıyla derlendiğini gösterir.
+   Bir ileti **çıkış** penceresi projenin başarıyla derlendiğini gösterir.
 
     ```Output
     1>------ Build started: Project: Game, Configuration: Debug Win32 ------

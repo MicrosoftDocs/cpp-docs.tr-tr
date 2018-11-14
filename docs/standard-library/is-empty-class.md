@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_empty class
 - is_empty
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
-ms.openlocfilehash: 83b03ed66d6a0eaec609127d437a5d01d4e7a25e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5ab0798e0074547d62a4bcff4db412445346189
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633096"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522917"
 ---
 # <a name="isempty-class"></a>is_empty Sınıfı
 
@@ -62,7 +62,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

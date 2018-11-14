@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - fetestexept function
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-ms.openlocfilehash: ae170e4c5826e2053b330d81773b75f176303332
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed75ab0ff13029f6ec10c1aafbcb7f7b23b46fd6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667447"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521369"
 ---
 # <a name="fetestexcept"></a>fetestexcept
 
@@ -39,7 +39,6 @@ Belirtilen bir kayan nokta özel durumu bayrakları hangisinin şu anda ayarlanm
 int fetestexcept(
    int excepts
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

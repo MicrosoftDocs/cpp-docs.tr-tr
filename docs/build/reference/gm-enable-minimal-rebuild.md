@@ -1,6 +1,6 @@
 ---
 title: /Gm (En Az Yeniden Derlemeyi Etkinleştir)
-ms.date: 11/04/2016
+ms.date: 11/12/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.MinimalRebuild
 - /Gm
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Gm compiler option [C++]
 - -Gm compiler option [C++]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
-ms.openlocfilehash: 2a5bc4008ab9376367b3a32040c2a4a70147187f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7552da4764f009c0848f1d8f420f112be2d1120a
+ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570410"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51598814"
 ---
 # <a name="gm-enable-minimal-rebuild"></a>/Gm (En Az Yeniden Derlemeyi Etkinleştir)
 
-Değiştirilmiş C++ sınıf tanımlarını (Üstbilgi (.h) dosyalarında depolanan) içeren C++ kaynak dosyalarının derlenmesi gerekip gerekmediğini belirler. en az yeniden derlemeyi etkinleştirir.
+Kullanım dışı. Değiştirilmiş C++ sınıf tanımlarını (Üstbilgi (.h) dosyalarında depolanan) içeren C++ kaynak dosyalarının derlenmesi gerekip gerekmediğini belirler. en az yeniden derlemeyi etkinleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,10 +32,12 @@ Değiştirilmiş C++ sınıf tanımlarını (Üstbilgi (.h) dosyalarında depola
 
 ## <a name="remarks"></a>Açıklamalar
 
+**/GM derlemeyi** kullanım dışı bırakılmıştır. Üstbilgi dosya değişiklikleri belirli türden bir derleme tetiklemeyebilir. Bu gibi durumlarda, bu seçenek güvenli bir şekilde projelerinizden çıkarabilirsiniz. Derleme sürelerini geliştirmek için önceden derlenmiş üstbilgileri kullanmak ve artımlı ve paralel seçenekleri bunun yerine derleme öneririz. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** konusundaki [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+
 Derleyici, sınıf tanımları ve kaynak dosyaları arasındaki bağımlılık bilgileri ilk derleme sırasında projenin .idb dosyasında depolar. (Bağımlılık bilgileri hangi kaynak dosyası hangi sınıf tanımını temel bağımlı olduğunu bildirir ve hangi .h dosya tanımı içinde yer alır.) Sonraki derler .idb dosyasında depolanan bilgileri değiştirilmiş .h dosyası içerse bile bir kaynak dosyası derlenecek gerekip gerekmediğini belirlemek için kullanın.
 
 > [!NOTE]
->  En az yeniden derleme sınıfı kullanır tanımları arasında değiştirme olmayan dosyaları içerir. Sınıf tanımları (bulunmamalıdır belirli bir sınıfın sadece bir tanım) bir proje için genel olmalıdır .idb dosyasındaki bağımlılık bilgileri için tüm proje oluşturulduğundan. Projenizdeki bir sınıf için birden fazla tanıma sahip en az yeniden derlemeyi devre dışı bırakın.
+> En az yeniden derleme sınıfı kullanır tanımları arasında değiştirme olmayan dosyaları içerir. Sınıf tanımları (bulunmamalıdır belirli bir sınıfın sadece bir tanım) bir proje için genel olmalıdır .idb dosyasındaki bağımlılık bilgileri için tüm proje oluşturulduğundan. Projenizdeki bir sınıf için birden fazla tanıma sahip en az yeniden derlemeyi devre dışı bırakın.
 
 Artımlı bağlayıcı kullanılarak .obj dosyalarında dahil Windows meta verileri desteklemediğinden [/ZW (Windows çalışma zamanı derlemesi)](../../build/reference/zw-windows-runtime-compilation.md) seçeneği **/GM derlemeyi** seçeneği ile uyumlu  **/ZW**.
 
@@ -43,9 +45,7 @@ Artımlı bağlayıcı kullanılarak .obj dosyalarında dahil Windows meta veril
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
-
-1. Tıklayın **kod oluşturma** özellik sayfası.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **kod oluşturma** özellik sayfası.
 
 1. Değiştirme **en az yeniden derlemeyi etkinleştir** özelliği.
 

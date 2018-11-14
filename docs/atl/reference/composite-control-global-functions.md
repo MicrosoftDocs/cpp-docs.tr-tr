@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: d86978c6bf8aba87828cdda91c3e849a2f755a90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6438b9d125cc2b44c6c4525dcfa5a2bd95763304
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525274"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524436"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -95,7 +95,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](/windows/desktop/menurc/common-control-parameters) Windows SDK'sı altında *: SDK Tools*.
+Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](/windows/desktop/menurc/common-control-parameters) altında Windows SDK'sı: SDK Tools.
 
 Genel iletişim kutularında hakkında daha fazla bilgi için başvurmak [iletişim](/windows/desktop/api/winuser/nf-winuser-dialogboxa) ve [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK.
 
@@ -160,7 +160,7 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
 
-- Gibi bir URL "http://www.microsoft.com"
+- Gibi bir URL "<http://www.microsoft.com>"
 
 - Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"
 
@@ -212,7 +212,7 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
 
-- Gibi bir URL "http://www.microsoft.com"
+- Gibi bir URL "<http://www.microsoft.com>"
 
 - Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"
 
@@ -271,7 +271,7 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
 
-- Gibi bir URL "http://www.microsoft.com"
+- Gibi bir URL "<http://www.microsoft.com>"
 
 - Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"
 
@@ -325,7 +325,7 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
 
-- Gibi bir URL "http://www.microsoft.com"
+- Gibi bir URL "<http://www.microsoft.com>"
 
 - Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"
 

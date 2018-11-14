@@ -27,12 +27,12 @@ f1_keywords:
 - _strtold_l
 - wcstold
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-ms.openlocfilehash: fce60775ee1ef6def214e559779004d4de95453c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dcf1eca5b163c8553b43d747d53537ec424a793c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484584"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521342"
 ---
 # <a name="strtold-strtoldl-wcstold-wcstoldl"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
@@ -139,7 +139,6 @@ int main( void )
 string = 3.1415926535898This stopped it
    strtold = 3.1415926535898
    Stopped scan at: This stopped it
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

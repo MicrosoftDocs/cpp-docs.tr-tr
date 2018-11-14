@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - hash_set header
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
-ms.openlocfilehash: a9ed3cf90c4650683eac1c198a8b57614e96d759
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba7716c1c84e8a74495a67f10a78eeaad2a6c3d7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449471"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517704"
 ---
 # <a name="lthashsetgt"></a>&lt;hash_set&gt;
 
@@ -25,7 +25,6 @@ Kapsayıcı şablon sınıfları hash_set ve hash_multiset ve kendi destek şabl
 
 ```cpp
 #include <hash_set>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

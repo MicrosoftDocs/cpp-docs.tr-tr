@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr3 intrinsic
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-ms.openlocfilehash: 2046e3b2014bd17e74e880e8dbd0fcdc0a65021c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ede5e08d5bbf2807597eec3c7569bc9a6166518d
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592571"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332029"
 ---
 # <a name="writecr3"></a>__writecr3
 
@@ -22,8 +22,8 @@ Değeri Yazar `Data` CR3 kaydı.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void writecr3( 
-   unsigned __int64 Data 
+void writecr3(
+   unsigned __int64 Data
 );
 ```
 

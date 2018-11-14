@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - cvt/wbuffer header
 ms.assetid: 6e6eb44c-1bc4-4d8c-a4bd-b39c753ce725
-ms.openlocfilehash: 4a5050a38dcc9083bc489d9e2a969d8052929734
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e344581ca3457616111a65f8a5856e34ac49c93
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534166"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518092"
 ---
 # <a name="ltcvtwbuffergt"></a>&lt;CVT/wbuffer&gt;
 
@@ -23,7 +23,6 @@ ms.locfileid: "50534166"
 
 ```cpp
 #include <cvt/wbuffer>
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

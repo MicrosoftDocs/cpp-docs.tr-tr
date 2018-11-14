@@ -6,12 +6,12 @@ helpviewer_keywords:
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-ms.openlocfilehash: 47e77e1709322abaa2607677bf21c9cfe4a3e6ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f37a539c74b995b1dce5f68344c555a679a87991
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580244"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333377"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 
@@ -253,12 +253,12 @@ Aşağıdaki tabloda, dönüştürme, en iyi eşleşen hangi sırasıdır belirl
 |-----------------------|---------------------|
 |*tür adı*|*tür adı* **&**|
 |*tür adı* **&**|*tür adı*|
-|*tür adı* **]**|*tür adı\**|
-|*tür adı* **(** *bağımsız değişken listesi* **)**|**(**  *\*tür adı* **) (** *bağımsız değişken listesi* **)**|
+|*tür adı* **]**|*tür adı* __\*__|
+|*tür adı* **(** *bağımsız değişken listesi* **)**|**(** __\*__ *tür adı* **) (** *bağımsız değişken listesi* **)**|
 |*tür adı*|**const** *tür adı*|
 |*tür adı*|**volatile** *tür adı*|
-|*tür adı\**|**const** *tür adı\**|
-|*tür adı\**|**volatile** *tür adı\**|
+|*tür adı* __\*__|**const** *tür adı* __\*__|
+|*tür adı* __\*__|**volatile** *tür adı* __\*__|
 
 Dönüştürmeleri denenmez sırası aşağıdaki gibidir:
 

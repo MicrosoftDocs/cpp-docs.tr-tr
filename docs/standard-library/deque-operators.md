@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: 886edb75e63d34e3bab2dd223d2cdac00f6fd41a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5e88d421df2746cf2ca0aab5be4c19953162559
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437377"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524982"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; işleçleri
 
@@ -186,7 +186,6 @@ int main( )
 /* Output:
 Deque c1 is less than or equal to deque c2.
 */
-
 ```
 
 ## <a name="op_eq_eq"></a>  işleç ==
@@ -244,7 +243,6 @@ int main( )
 The deques are equal.
 The deques are not equal.
 */
-
 ```
 
 ## <a name="op_gt"></a>  İşleci&gt;
@@ -300,7 +298,6 @@ int main( )
 /* Output:
 Deque c1 is greater than deque c2.
 */
-
 ```
 
 ## <a name="op_gt_eq"></a>  İşleci&gt;=

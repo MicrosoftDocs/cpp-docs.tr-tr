@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr0 intrinsic
 ms.assetid: 25bdb093-d83c-48d7-9c0f-224de8e2c61c
-ms.openlocfilehash: 8ba6fac2e26011e53432b8252b793198bab3936a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a88d998f95a19f996be62ef665e1875bd32ad19b
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589962"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518274"
 ---
 # <a name="readcr0"></a>__readcr0
 
@@ -24,7 +24,6 @@ CR0 kaydının yazmacını okuyarak ve değerini döndürür.
 ```
 unsigned long __readcr0(void);  /* X86 */
 unsigned __int64 __readcr0(void);  /* X64 */
-
 ```
 
 ## <a name="return-value"></a>Dönüş Değeri

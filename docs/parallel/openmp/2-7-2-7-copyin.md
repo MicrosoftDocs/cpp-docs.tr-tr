@@ -2,12 +2,12 @@
 title: 2.7.2.7 copyin
 ms.date: 11/04/2016
 ms.assetid: 76cfb9f8-bf65-4585-adbf-fd933f5606b4
-ms.openlocfilehash: 65bb8faba085e5582e779fa0e9d5bf1a91a39f0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20db32530ee60967245497cdfb12a0fce103f7b7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545450"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519535"
 ---
 # <a name="2727-copyin"></a>2.7.2.7 copyin
 
@@ -18,7 +18,6 @@ ms.locfileid: "50545450"
 copyin(
 variable-list
 )
-
 ```
 
 Kısıtlamaları **copyin** yan tümcesi aşağıdaki gibidir:

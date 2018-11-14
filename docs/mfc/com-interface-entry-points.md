@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC, managing state data
 - COM interfaces, entry points
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-ms.openlocfilehash: b608b200094cc522d5b70e154d342108fd00892f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0a8db9c6920b4223296f700d084e0b59b9b3ef15
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484779"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521225"
 ---
 # <a name="com-interface-entry-points"></a>COM Arabirimi Giriş Noktaları
 
@@ -33,7 +33,6 @@ Ek bilgi için bkz: [Teknik Not 38](../mfc/tn038-mfc-ole-iunknown-implementation
     theClass* pThis = \
     ((theClass*)((BYTE*)this - offsetof(theClass, m_x##localClass))); \
     AFX_MANAGE_STATE(pThis->m_pModuleState) \
-
 ```
 
 Genel durum yönetilmesiyle makrosu bölümüdür:

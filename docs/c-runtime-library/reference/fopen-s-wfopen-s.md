@@ -33,12 +33,12 @@ helpviewer_keywords:
 - files [C++], opening
 - Unicode [C++], files
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-ms.openlocfilehash: b5ac5203f2246a7ede31bcbc9a34c4632772a14c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1309f991b8251bde7d614aa274d8d2e9da7a8ed3
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636117"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333357"
 ---
 # <a name="fopens-wfopens"></a>fopen_s, _wfopen_s
 
@@ -131,12 +131,12 @@ Karakter dizesi *modu* dosya için şu şekilde istenen erişim türünü belirt
 
 |*Modu*|Access|
 |-|-|
-**"r"**|Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **fopen_s** çağrısı başarısız olur.
-**"w"**|Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.
-**"a"**|(Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur.
-**"r +"**|Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir.
-**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir.
-**"a +"**|Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur.
+| **"r"** | Okuma için açar. Dosya mevcut değil ya da bulunamıyorsa **fopen_s** çağrısı başarısız olur. |
+| **"w"** | Yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir. |
+| **"a"** | (Ekleme dosyaya yeni veri yazılmadan önce dosya sonu (EOF) işaretçisini kaldırmadan) dosyanın sonunda yazma için açar. Henüz yoksa dosyayı oluşturur. |
+| **"r +"** | Hem okuma ve yazma için açar. Dosyanın mevcut olması gerekir. |
+| **"w +"** | Hem okuma ve yazma için boş bir dosya açar. Dosya varsa içeriği yok edilir. |
+| **"a +"** | Okuma ve ekleme için açar. Ekleme işlemi, dosyaya yeni veri yazılmadan önce EOF işaretinin kaldırılmasını içerir. Yazma tamamlandıktan sonra EOF işaretçisi geri yüklenmez. Henüz yoksa dosyayı oluşturur. |
 
 Ne zaman bir dosya açıldığında kullanarak **"a"** veya **"a +"** erişim türü, tüm yazma işlemleri dosyanın sonunda gerçekleşir. Dosya işaretçisini kullanarak konumlandırılabilir [fseek](fseek-fseeki64.md) veya [rewind](rewind.md), ancak herhangi bir işlemi gerçekleştirilir böylece var olan verilerin üzerine yazma önce her zaman geri dosyanın sonuna kadar taşınır.
 
@@ -148,8 +148,8 @@ Yukarıdaki değerlerden ek olarak, şu karakterler eklenebilir *modu* yeni sat�
 
 |*modu* değiştiricisi|Çeviri modu|
 |-|-|
-**T**|Açık metin (çevrilmiş) modunda.
-**b**|İkili (çevrilmemiş) modda; açık satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır.
+| **T** | Açık metin (çevrilmiş) modunda. |
+| **b** | İkili (çevrilmemiş) modda; açık satır başı ve satır besleme karakterlerini içeren Çeviriler bastırılır. |
 
 Metin (çevrilmiş) modunda, CTRL + Z girişteki bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılmış dosyalarında **"a +"**, **fopen_s** CTRL + Z dosya sonunda olup olmadığını denetler ve eğer mümkünse bunu kaldırır. Kullanıldığından yapıldığını [fseek](fseek-fseeki64.md) ve **ftell** bir CTRL + Z ile biter neden olabilir bir dosya içinde hareket etmek [fseek](fseek-fseeki64.md) dosyanın sonuna yakın yanlış davranmasına.
 
@@ -161,14 +161,14 @@ Metin ve ikili modlarda Unicode ve çok baytlı akış g/Ç kullanma hakkında d
 
 |*modu* değiştiricisi|Davranış|
 |-|-|
-**c**|İlişkili için bayrak kaydetmeyi etkinleştir *filename* dosya tamponunun içeriği doğrudan diske yazılır, böylece **fflush** veya **_flushall** çağrılır.
-**n**|İlişkili tamamlama bayrağı sıfırlar *filename* için "no-commit." Bu varsayılandır. Ayrıca programınızı COMMODE.OBJ ile bağlarsanız genel tamamlama bayrağını geçersiz kılar. Programınızı COMMODE ile açıkça bağlantı sürece, küresel kaydetme bayrağı varsayılan "no-commit". OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
-**N**|Dosyanın alt işlemler tarafından devralınmadığını belirtir.
-**S**|Önbelleğe alma iyileştirildiğini, ancak sıralı erişim için diskten sınırlı olduğunu belirtir.
-**R**|Önbelleğe alma iyileştirildiğini, ancak rastgele erişim için diskten sınırlı olduğunu belirtir.
-**T**|Bir dosyayı geçici olarak belirtir. Mümkünse, boşaltılmaz diske.
-**D**|Bir dosyayı geçici olarak belirtir. Son dosya işaretçisi kapatıldığında silinir.
-**ccs =**_kodlama_|Kodlanmış karakter kümesini belirtir (biri **UTF-8**, **UTF-16LE**, veya **UNICODE**) Bu dosya için. Bırakın, ANSI kodlaması isterseniz belirtmeden.
+| **c** | İlişkili için bayrak kaydetmeyi etkinleştir *filename* dosya tamponunun içeriği doğrudan diske yazılır, böylece **fflush** veya **_flushall** çağrılır. |
+| **n** | İlişkili tamamlama bayrağı sıfırlar *filename* için "no-commit." Bu varsayılandır. Ayrıca programınızı COMMODE.OBJ ile bağlarsanız genel tamamlama bayrağını geçersiz kılar. Programınızı COMMODE ile açıkça bağlantı sürece, küresel kaydetme bayrağı varsayılan "no-commit". OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)). |
+| **N** | Dosyanın alt işlemler tarafından devralınmadığını belirtir. |
+| **S** | Önbelleğe alma iyileştirildiğini, ancak sıralı erişim için diskten sınırlı olduğunu belirtir. |
+| **R** | Önbelleğe alma iyileştirildiğini, ancak rastgele erişim için diskten sınırlı olduğunu belirtir. |
+| **T** | Bir dosyayı geçici olarak belirtir. Mümkünse, boşaltılmaz diske. |
+| **D** | Bir dosyayı geçici olarak belirtir. Son dosya işaretçisi kapatıldığında silinir. |
+| **ccs =**_kodlama_ | Kodlanmış karakter kümesini belirtir (biri **UTF-8**, **UTF-16LE**, veya **UNICODE**) Bu dosya için. Bırakın, ANSI kodlaması isterseniz belirtmeden. |
 
 Geçerli karakterler için *modu* kullanılan dize **fopen_s** ve [_fdopen](fdopen-wfdopen.md) karşılık *oflag* kullanılan bağımsız değişkenleri [_ Açık](open-wopen.md) ve [_sopen](sopen-wsopen.md)aşağıdaki gibi.
 

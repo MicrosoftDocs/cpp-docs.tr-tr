@@ -32,16 +32,16 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: 13dadfdcaf912e5cb2d82361de997d09961f1ceb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dacf9de0835108ae946e7523472a0adf12e7e222
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514615"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556731"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
 
-OLE DB Şablonları uygulamasının [IRowsetChange](/previous-versions/windows/desktop/ms715790) arabirimi OLE DB belirtimi.
+OLE DB Şablonları uygulamasının [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) arabirimi OLE DB belirtimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -124,7 +124,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowsetChange::DeleteRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::ınsertrow
 
@@ -141,7 +141,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowsetChange::InsertRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms716921(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="setdata"></a> IRowsetChangeImpl::SetData
 
@@ -157,7 +157,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowsetChange::SetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms721232(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::flushdata
 

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: dbae9ef71927fd5b781488258bf801cf19f4fb90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40e99901d4d4105902010a9e5b71ed3edf7d00db
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450680"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518872"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
@@ -63,7 +63,7 @@ Varsayılan olarak şablon parametresi tüm C++ Standart Kitaplığı kapsayıc�
 
 Örneğin, bir ayırıcı nesnenin depolama özel yığının veya paylaşılan bellek ayırabilir veya küçük veya büyük nesne boyutları iyileştirebilir. Bu ayrıca, bu kaynakları, tür tanımlarını öğeleri paylaşılan bellek yönetmek ya da otomatik çöp toplama özel erişimci nesnelerde üzerinden belirtebilir. Bu nedenle, bir ayırıcı nesnesini kullanarak depolama ayıran bir sınıfı bu tür işaretçisi bildirmek için kullanın ve bu nesneleri C++ Standart Kitaplığı kapsayıcıları olarak başvuru gerekir.
 
-**(C_ ++ 98/03 yalnızca)** Ayırıcı sınıfından türer, sağlamanız gereken bir [rebind](#rebind) yapının, `_Other` typedef yeni türetilmiş sınıfınızın başvuruyor.
+<strong>(c ++ 98/03 yalnızca)</strong>  Ayırıcı sınıfından türer, sağlamanız gereken bir [rebind](#rebind) yapının, `_Other` typedef yeni türetilmiş sınıfınızın başvuruyor.
 
 Bu nedenle, bir ayırıcı aşağıdaki türleri tanımlar:
 

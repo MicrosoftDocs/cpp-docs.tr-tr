@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-ms.openlocfilehash: c1d0cbaf194060d816e31d397a9319ef47f75371
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1591189ff2db78605c334e72ac3be13876afc81d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638457"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524618"
 ---
 # <a name="timespecget-timespec32get-timespec64get"></a>timespec_get, _timespec32_get, _timespec64_get
 
@@ -59,7 +59,6 @@ int _timespec64_get(
     struct _timespec64* const time_spec,
     int const base
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

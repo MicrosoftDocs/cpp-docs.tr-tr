@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: d831353c72c40ab4f35b64046ab5d5236aa9644a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3b0a369071571fb343d1b5030eebbf7c471bc81
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553497"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519197"
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
 
@@ -132,11 +132,11 @@ Tüm bu oluşturucular Yeni Oluştur `COleCurrency` nesneleri belirtilen değerl
 
 - COleCurrency (`curSrc`) oluşturan bir `COleCurrency` mevcut bir nesne `COleCurrency` nesne. Yeni nesne kaynak nesne ile aynı duruma sahip.
 
-- COleCurrency (`varSrc`) oluşturan bir `COleCurrency` nesne. Dönüştürmeye çalışır bir [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) yapısı veya `COleVariant` nesne bir para birimi (VT_CY) değeri. Bu dönüştürmenin başarılı olursa, dönüştürülen değer yeni kopyalanan `COleCurrency` nesne. Değerini, değilse `COleCurrency` nesne sıfır (0) ve kendi geçersiz durumuna ayarlanır.
+- COleCurrency (`varSrc`) oluşturan bir `COleCurrency` nesne. Dönüştürmeye çalışır bir [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) yapısı veya `COleVariant` nesne bir para birimi (VT_CY) değeri. Bu dönüştürmenin başarılı olursa, dönüştürülen değer yeni kopyalanan `COleCurrency` nesne. Değerini, değilse `COleCurrency` nesne sıfır (0) ve kendi geçersiz durumuna ayarlanır.
 
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' belirtilen sayısal bileşenlerinden nesne. Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme birimleri için yapılır. Not, birimleri ve kesirli bölümü tarafından imzalanmış uzun değerler belirtilir.
 
-Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.
+Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.
 
 ### <a name="example"></a>Örnek
 
@@ -314,7 +314,7 @@ Her işleç kısa bir açıklaması aşağıdaki gibidir:
 
 - **işleç = (** *varSrc* **)** varsa dönüştürülmesi `VARIANT` değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) para birimine ( `VT_CY`) olan başarılı, dönüştürülen değer bu kopyalanır `COleCurrency` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı ise değerini `COleCurrency` nesnesi, 0'geçersiz durumu ayarlanır.
 
-Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.
+Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.
 
 ### <a name="example"></a>Örnek
 

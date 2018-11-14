@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - climits header
 ms.assetid: 7ca8a539-aa45-4ac3-86e8-74513be3f07e
-ms.openlocfilehash: cb7ccc4fe14a55e8ac52ab017a468d006186722c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 09989f5181e45867b5c74bb96f7d8a4891fc537c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542863"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520952"
 ---
 # <a name="ltclimitsgt"></a>&lt;climits&gt;
 
@@ -21,7 +21,6 @@ Standart C Kitaplığı üstbilgisi içerir \<lımıts.h > ve ilişkili adlar ek
 
 ```cpp
 #include <climits>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

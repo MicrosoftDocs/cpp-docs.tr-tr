@@ -30,12 +30,12 @@ helpviewer_keywords:
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-ms.openlocfilehash: d8cea831e333ebcd9677d830641c60e460ba5ed4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 263635a32b21b01faa84405ab97bd5518f054ba5
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515095"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518183"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
@@ -68,7 +68,6 @@ long double fdiml(
    long double x,
    long double y
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

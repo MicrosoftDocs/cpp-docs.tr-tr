@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 0d07ee024a1659c18e929b0827d6ac989fa0cdde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bc50a8a77a4964cf92d003ed1e06213398f401c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498806"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525554"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -2191,7 +2191,6 @@ Bu üye işlevi Win32 makrosu davranışını uygulayan [ListView_GetNumberOfWor
         {
             TRACE(_T("Couldn't allocate enough memory!"));
         }
-
 ```
 
 ## <a name="getoutlinecolor"></a>  CListCtrl::GetOutlineColor

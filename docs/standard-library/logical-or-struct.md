@@ -7,12 +7,12 @@ helpviewer_keywords:
 - logical_or class
 - logical_or struct
 ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
-ms.openlocfilehash: f0d585fe2d8fd231f9d39c89aa0b1bcdbdc090b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9921fe01b7b2a9b5c581839af4af5c125ddc7108
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572659"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523409"
 ---
 # <a name="logicalor-struct"></a>logical_or Yapısı
 
@@ -112,7 +112,6 @@ d2 = ( false false false true true true true )
 The deque which is the disjuction of d1 & d2 is:
 d3 = ( true true false true true true true )
 */
-
 ```
 
 ## <a name="requirements"></a>Gereksinimler

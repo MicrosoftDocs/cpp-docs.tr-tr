@@ -4,12 +4,12 @@ ms.date: 06/01/2018
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 396b1fe9f879e7adcdfe9a69fee5c9e1916ff545
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6354cc656d501d1611219378f72831cc2fa94389
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542018"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524007"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual c++ açık klasörü projeler
 
@@ -33,7 +33,8 @@ Visual c++'ta herhangi bir derleme sistemini kullanın ve yine de Visual C++ IDE
 ## <a name="configuring-open-folder-projects"></a>Klasör Aç projeleri yapılandırma
 
 Klasör Aç projesinde üç JSON dosyalarıyla özelleştirebilirsiniz:
-|||
+
+| | |
 |-|-|
 |CppProperties.json|Gözatma için özel yapılandırma bilgilerini belirtin. Bu dosya, kök proje klasörünüzdeki gerekirse oluşturun.|
 |Launch.vs.JSON|Komut satırı bağımsız değişkenlerini belirtin. Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları**.|
@@ -58,6 +59,7 @@ IntelliSense ve göz atma davranışlarına kısmen bağlıdır tanımlayan etki
   ]
 }
 ```
+
 Bir yapılandırma aşağıdaki özelliklerinden herhangi birini içerebilir:
 
 |||
@@ -135,6 +137,7 @@ Linux iş yükü yüklendiğinde, Linux ve WSL uzaktan hedeflemek için aşağı
   ]
 }
 ```
+
 Ayrıca tanımlayabilirsiniz bir **ortamları** özelliği içinde bir yapılandırması olan yalnızca bu yapılandırma için geçerlidir ve herhangi bir genel değişkenler aynı ada sahip geçersiz kılar. Aşağıdaki örnekte, x64 yapılandırmasını tanımlayan bir yerel **INCLUDE** genel değerini geçersiz kılar değişkeni:
 
 ```json
@@ -186,6 +189,7 @@ Tüm özel ve varsayılan ortam değişkenlerini de launch.vs.json ve tasks.vs.j
 #### <a name="macros"></a>Makrolar
 
 CppProperties.json içinde aşağıdaki yerleşik makroları erişebilirsiniz:
+
 |||
 |-|-|
 |`${workspaceRoot}`| Çalışma alanı klasörün tam yolu|
@@ -258,11 +262,13 @@ Oluşturur (veya açılır) `tasks.vs.json` Visual Studio kök proje klasörün�
   ]
 }
 ```
+
 Tasks.vs.JSON kaydettikten sonra herhangi bir .cpp dosyası klasörüne sağ tıklayın, seçin **Yankı filename** bağlam menüsü ve dosya adı çıktı penceresinde görüntülenen bakın.
 
 #### <a name="appliesto"></a>AppliesTo
 
 Görevler için herhangi bir dosya veya klasör adını belirterek oluşturabileceğiniz `appliesTo` alan, örneğin `"appliesTo" : "hello.cpp"`. Aşağıdaki dosya maskesi değerleri kullanılabilir:
+
 |||
 |-|-|
 |`"*"`| Görev tüm dosyaları ve klasörleri çalışma alanında kullanılabilir|
@@ -340,4 +346,3 @@ Bu dosyayı kaydettiğinizde, yeni yapılandırmayı hata ayıklama hedefi açı
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Visual C++ Geliştirme Araçları ve IDE](ide-and-tools-for-visual-cpp-development.md)
-

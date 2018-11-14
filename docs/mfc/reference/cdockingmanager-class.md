@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 6a920c92a0a3b3948ad89e31cfaf317f54ad6724
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1cc4a4a0d6841523aaafcc1865173ba5402948c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438047"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519990"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager sınıfı
 
@@ -280,13 +280,13 @@ Aşağıdaki ipuçları uygulamak `CDockingManager` nesneler:
 
 - [CDockingManager sınıfı](../../mfc/reference/cdockingmanager-class.md) bu yerleştirme modunu destekler:
 
-    - `AFX_DOCK_TYPE::DT_IMMEDIATE`
+  - `AFX_DOCK_TYPE::DT_IMMEDIATE`
 
-    - `AFX_DOCK_TYPE::DT_STANDARD`
+  - `AFX_DOCK_TYPE::DT_STANDARD`
 
-    - `AFX_DOCK_TYPE::DT_SMART`
+  - `AFX_DOCK_TYPE::DT_SMART`
 
-   Bu takma modları tarafından tanımlanan [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) çağırarak ayarlayın [CDockingManager::SetDockingMode](#setdockingmode).
+  Bu takma modları tarafından tanımlanan [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) çağırarak ayarlayın [CDockingManager::SetDockingMode](#setdockingmode).
 
 - Değişken olmayan, yeniden boyutlandırılabilir olmayan bir bölme oluşturmak istiyorsanız, çağrı [CDockingManager::AddPane](#addpane) yöntemi. Bu yöntem bölmesinde bölmesinin düzenini sorumlu yerleştirme Yöneticisi ile kaydeder.
 

@@ -88,12 +88,12 @@ helpviewer_keywords:
 - std::deque [C++], size
 - std::deque [C++], swap
 ms.assetid: 64842ee5-057a-4063-8c16-4267a0332584
-ms.openlocfilehash: 0d411344e20c6ef42d8af32e9a1adc448b73584c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a50d04751ac5b4abaf94d0d9fd16f57c6200f66
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619888"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525398"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 
@@ -303,7 +303,6 @@ int main()
     cout << endl;
 
 }
-
 ```
 
 ```Output

@@ -25,12 +25,12 @@ helpviewer_keywords:
 - pgmptr global variable
 - _pgmptr global variable
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
-ms.openlocfilehash: 40c9f237aadb5f44066bcbf40fe378fb2ce96fc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d3959a69d85fca38e4d099d3365553f88fd015f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562506"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332094"
 ---
 # <a name="getpgmptr"></a>_get_pgmptr
 
@@ -39,8 +39,8 @@ Geçerli değeri alır **_pgmptr** genel değişkeni.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _get_pgmptr( 
-   char **pValue 
+errno_t _get_pgmptr(
+   char **pValue
 );
 ```
 

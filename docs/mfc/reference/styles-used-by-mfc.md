@@ -196,12 +196,12 @@ helpviewer_keywords:
 - WS_EX_TRANSPARENT constant [MFC]
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-ms.openlocfilehash: dc70059e2de054e4b1aac4800e1d61c58bc9b467
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0aef399b734ad5b15a9a2d4028be3fde3f02505
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642916"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525314"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller
 
@@ -338,7 +338,7 @@ Liste kutusu stilleri uygulamak için [CListBox sınıfı](../../mfc/reference/c
 |LBS_HASSTRINGS|Dizelerden oluşan öğeleri içeren bir sahip çizim liste kutusu belirtir. Uygulamayı kullanabilmeniz için liste kutusu dizeleri için işaretçiler ve bellek tutar `GetText` belirli bir öğenin metnini almak için üye işlevi.|
 |LBS_MULTICOLUMN|Yatay olarak kaydırılan bir çoklu sütun liste kutusunu belirtir. `SetColumnWidth` Üye işlevi sütunların genişliğini ayarlar.|
 |LBS_MULTIPLESEL|Kullanıcı tıkladığında veya dize çift tıklamaları birbirinden ayırma her zaman yükseğe dize seçimi. Herhangi bir sayıda dizeyi seçilebilir.|
-|LBS_NODATA|Veri yok liste kutusunu belirtir. Bu stil bin liste kutusunda öğelerin sayısını aşacak belirtin. Veri yok liste kutusu lbs_ownerdrawfıxed stili de sahip olmalıdır, ancak LBS_SORT veya lbs_hasstrıngs stili olmaması gerekir. <br />< /br / > veri yok liste kutusunda bir sahip tarafından çizilmiş liste kutusu benzer bir öğe için dize ya da bit eşlem veri içermiyor. Komutları eklemek için eklemek veya bir öğeyi silin; veri öğesi verilen herhangi her zaman yoksay Liste kutusu içinde her zaman bir dizeyi bulmak için istekleri başarısız olur. Bir öğe çizilmesi gerektiğinde sistemin sahip penceresine WM_DRAWITEM iletiyi gönderir. Öğe kimliği üyesi `DRAWITEMSTRUCT` yapısı WM_DRAWITEM iletinin başarılı çizilecek öğesi satır sayısını belirtir. Veri yok liste kutusu WM_DELETEITEM ileti göndermez.|
+|LBS_NODATA|Veri yok liste kutusunu belirtir. Bu stil bin liste kutusunda öğelerin sayısını aşacak belirtin. Veri yok liste kutusu lbs_ownerdrawfıxed stili de sahip olmalıdır, ancak LBS_SORT veya lbs_hasstrıngs stili olmaması gerekir.<br/><br/> Veri yok liste kutusunda bir sahip tarafından çizilmiş liste kutusu benzer bir öğe için dize ya da bit eşlem veri içermiyor. Komutları eklemek için eklemek veya bir öğeyi silin; veri öğesi verilen herhangi her zaman yoksay Liste kutusu içinde her zaman bir dizeyi bulmak için istekleri başarısız olur. Bir öğe çizilmesi gerektiğinde sistemin sahip penceresine WM_DRAWITEM iletiyi gönderir. Öğe kimliği üyesi `DRAWITEMSTRUCT` yapısı WM_DRAWITEM iletinin başarılı çizilecek öğesi satır sayısını belirtir. Veri yok liste kutusu WM_DELETEITEM ileti göndermez.|
 |LBS_NOINTEGRALHEIGHT|Liste kutusu liste kutusunun oluşturduğunuzda, uygulama tarafından belirtilen boyutu tam olarak boyutudur. Genellikle Windows liste kutusu boyutları, böylece liste kutusu, kısmi öğeleri görüntülemez.|
 |LBS_NOREDRAW|Değişiklikler yapıldığında liste kutusu görünen güncelleştirilmez. Bu stil WM_SETREDRAW iletisi göndererek herhangi bir zamanda değiştirilebilir.|
 |LBS_NOSEL|Liste kutusu görüntülenebilir, ancak seçili öğeleri içerdiğini belirtir.|
@@ -350,7 +350,7 @@ Liste kutusu stilleri uygulamak için [CListBox sınıfı](../../mfc/reference/c
 |LBS_USETABSTOPS|Alt dizeler çizerken sekme karakterlerini tanıyacağını ve tanımak bir liste kutusu sağlar. Varsayılan sekme konumlar 32 iletişim birimleridir. (Yatay veya dikey uzaklık iletişim birimidir. Tek bir yatay iletişim birim dörtte için geçerli iletişim temel genişliği birimi eşittir. İletişim temel birimler geçerli sistem yazı tipi genişliği ve yüksekliği göre hesaplanır. `GetDialogBaseUnits` Windows işlevi temel birimlerinin geçerli iletişim piksel cinsinden döndürür.) Bu stil lbs_ownerdrawfıxed ile kullanılmamalıdır.|
 |LBS_WANTKEYBOARDINPUT|Liste kutusu odağı giriş sırada kullanıcının bir tuşuna bastığında her liste kutusunun sahibine wm_vkeytoıtem veya WM_CHARTOITEM iletileri alır. Bu, klavye girdisi özel işleme gerçekleştirmek bir uygulama sağlar.|
 
-##<a name="message-box-styles"></a>  İleti kutusu stilleri
+## <a name="message-box-styles"></a>  İleti kutusu stilleri
 
 İleti kutusu stilleri uygulamak için [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) öğeleri. Stilleri bir birleşimi belirler *nTür* parametresinin `AfxMessageBox`. Windows ileti kutusu stilleri hakkında daha fazla bilgi için bkz: [MessageBox işlevi (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox).
 
@@ -383,6 +383,7 @@ Aşağıdaki ileti kutusu stilleri kullanılabilir.
 |MB_ICONINFORMATION|İleti kutusunda bir "ı" bir daire içinde oluşan bir simge görünür.|
 |MB_ICONQUESTION|İleti kutusunda bir soru işareti simgesi görünür.|
 |MB_ICONSTOP|İleti kutusunda bir Durma işareti simgesi görünür.|
+
 ### <a name="message-box-default-buttons"></a>İleti kutusunda varsayılan düğme
 
 |Stil|Açıklama|

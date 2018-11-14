@@ -2,12 +2,12 @@
 title: C++ öznitelikleri
 ms.date: 06/01/2018
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: a4d24324165f3cce60d259adf6e3d21638296cf8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 444abf2ddf6d4563dcbeb5b683adc52f903bd97f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471831"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520796"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 
@@ -45,16 +45,16 @@ void Foo(int);
 
 - `[[nodiscard]]` **Visual Studio 2017 sürüm 15.3 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir işlevin dönüş değerini atılmak üzere tasarlanmamıştır belirtir. Bu örnekte gösterildiği gibi C4834 uyarı oluşturur:
 
-   ```cpp
-   [[nodiscard]]
-   int foo(int i) { return i * i; }
+    ```cpp
+    [[nodiscard]]
+    int foo(int i) { return i * i; }
 
-   int main()
-   {
-       foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
-       return 0;
-   }
-   ```
+    int main()
+    {
+        foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
+        return 0;
+    }
+    ```
 
 - `[[maybe_unused]]` **Visual Studio 2017 sürüm 15.3 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir değişken, işlevi, sınıf, typedef, statik olmayan veri üyesi, enum veya şablon uzmanlığı amaçlanan kullanılabileceğini belirtir. Bir varlık işaretlendiğinde derleyici uyarmaz `[[maybe_unused]]` kullanılmaz. Özniteliği bildirilmiş bir varlık daha sonra özniteliğine sahip ve yeniden tanımlanıyor. Varlık olarak işaretlenmiş ilk bildiriminden analiz sonra ve çeviri geçerli çeviri biriminin geri kalanında işaretlenmiş olarak kabul edilir.
 
@@ -75,12 +75,12 @@ void Foo(int);
     }
     ```
 
-   Örneğin, bu uyarıları oluşturur:
+  Örneğin, bu uyarıları oluşturur:
 
-   - 26494 (tür kural 5: bir nesneyi her zaman başlatın.)
+  - 26494 (tür kural 5: bir nesneyi her zaman başlatın.)
 
-   - 26485 (sınırları kural 3: diziden işaretçiye bozunma gerçekleştirmeyin.)
+  - 26485 (sınırları kural 3: diziden işaretçiye bozunma gerçekleştirmeyin.)
 
-   - 26481 (sınırları kural 1: işaretçi aritmetiği kullanmayın. Yayılma kullanın.)
+  - 26481 (sınırları kural 1: işaretçi aritmetiği kullanmayın. Yayılma kullanın.)
 
-   Bu kod yüklenmeli ve etkinleştirilmelidir CppCoreCheck kod analizi aracı ile derleme yaparken, ilk iki uyarıları kov. Ancak öznitelik nedeniyle üçüncü uyarı etkinleşmez. [[Gsl::suppress(bounds)]] yazarak bir özel kural numarası dahil olmak üzere tüm sınırların profil gösterilmemesini sağlayabilirsiniz. C++ temel yönergeleri, daha iyi ve daha güvenli kod yazmanıza yardımcı olmak için tasarlanmıştır. Bastır öznitelik değil istediğiniz zaman uyarılarını kapatmak kolaylaştırır.
+  Bu kod yüklenmeli ve etkinleştirilmelidir CppCoreCheck kod analizi aracı ile derleme yaparken, ilk iki uyarıları kov. Ancak öznitelik nedeniyle üçüncü uyarı etkinleşmez. [[Gsl::suppress(bounds)]] yazarak bir özel kural numarası dahil olmak üzere tüm sınırların profil gösterilmemesini sağlayabilirsiniz. C++ temel yönergeleri, daha iyi ve daha güvenli kod yazmanıza yardımcı olmak için tasarlanmıştır. Bastır öznitelik değil istediğiniz zaman uyarılarını kapatmak kolaylaştırır.

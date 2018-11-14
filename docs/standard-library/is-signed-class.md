@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_signed class
 - is_signed
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-ms.openlocfilehash: 5456804c72d6b3279a97c3b372a60fb8998a6b28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5384e1ca8efc24e9cd85968255d4f856a10cafa8
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472559"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519669"
 ---
 # <a name="issigned-class"></a>is_signed Sınıfı
 
@@ -60,7 +60,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

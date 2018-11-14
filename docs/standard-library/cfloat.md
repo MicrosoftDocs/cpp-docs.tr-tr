@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cfloat header
 ms.assetid: 25ec4ab9-3c1d-46e3-9e68-ad9a8762cadb
-ms.openlocfilehash: b609f00ab8223ff094500b4302477dd9df889150
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c11ac6095145f619346b4ec1388ea980fa2455c0
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480593"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518222"
 ---
 # <a name="ltcfloatgt"></a>&lt;cfloat&gt;
 
@@ -21,7 +21,6 @@ Standart C Kitaplığı üstbilgisi içerir \<float.h >.
 
 ```cpp
 #include <cfloat>
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

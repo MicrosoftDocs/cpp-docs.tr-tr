@@ -14,12 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: 54cfbc6d31c0c86163400df691dec47e0c093d36
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9efac8ba0889d648def622ca045b9398c8eeef11
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603664"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518495"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
@@ -45,7 +45,7 @@ Bu makalede, aşağıdaki konular ele alınmaktadır:
 Size daha isteyeceksinizdir olmasına rağmen bir verilere bağlı stok özelliği oluşturmak mümkün bir [bağlanabilir alma/ayarlama yöntemi](#vchowcreatingbindablegetsetmethod).
 
 > [!NOTE]
->  Stok özellikleri sahip `bindable` ve `requestedit` varsayılan öznitelikler.
+> Stok özellikleri sahip `bindable` ve `requestedit` varsayılan öznitelikler.
 
 #### <a name="to-add-a-bindable-stock-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak bağlanabilir bir stok özelliği eklemek için
 
@@ -74,7 +74,7 @@ Artık denetim kaydolacak proje oluşturabilirsiniz. Bir iletişim kutusu deneti
 Bir veri alma/ayarlama yöntemi bağlantılı yanı sıra da oluşturabilirsiniz bir [bağlanılabilir stok özellik](#vchowcreatingbindablestockproperty).
 
 > [!NOTE]
->  Bu yordamı, bir Windows denetimini alt sınıflara ayıran proje bir ActiveX denetimi olduğunu varsayar.
+> Bu yordamı, bir Windows denetimini alt sınıflara ayıran proje bir ActiveX denetimi olduğunu varsayar.
 
 #### <a name="to-add-a-bindable-getset-method-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak bir bağlanabilir alma/ayarlama yöntemini eklemek için
 
@@ -96,37 +96,37 @@ Bir veri alma/ayarlama yöntemi bağlantılı yanı sıra da oluşturabilirsiniz
 
 1. İçin **uygulama türü**, tıklayın **Get/Set yöntemleri**.
 
-9. IDL öznitelikleri sekmesinden aşağıdaki onay kutularını işaretleyin: **bağlanabilir**, **requestedit**, **displaybind**, ve **defaultbind** eklemek için Projenin özellik tanımı öznitelikleri. IDL dosyası. Bu öznitelikler denetim kullanıcıya görünür yapabilir ve stok özelliği varsayılan bağlanılabilir özellik.
+1. IDL öznitelikleri sekmesinden aşağıdaki onay kutularını işaretleyin: **bağlanabilir**, **requestedit**, **displaybind**, ve **defaultbind** eklemek için Projenin özellik tanımı öznitelikleri. IDL dosyası. Bu öznitelikler denetim kullanıcıya görünür yapabilir ve stok özelliği varsayılan bağlanılabilir özellik.
 
-10. **Son**'a tıklayın.
+1. **Son**'a tıklayın.
 
-11. Gövde metni değiştirme `SetMyProp` aşağıdaki kodu içeren işlev:
+1. Gövde metni değiştirme `SetMyProp` aşağıdaki kodu içeren işlev:
 
    [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
 
-12. Parametre geçirilen `BoundPropertyChanged` ve `BoundPropertyRequestEdit` işlevleri, dispid özelliğinin id() özniteliği için bir özellik için geçirilen parametre. IDL dosyası.
+1. Parametre geçirilen `BoundPropertyChanged` ve `BoundPropertyRequestEdit` işlevleri, dispid özelliğinin id() özniteliği için bir özellik için geçirilen parametre. IDL dosyası.
 
-13. Değiştirme [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) aşağıdaki kodu içerecek şekilde işlev:
+1. Değiştirme [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) aşağıdaki kodu içerecek şekilde işlev:
 
    [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
-14. Değiştirme `OnDraw` aşağıdaki kodu içeren işlev:
+1. Değiştirme `OnDraw` aşağıdaki kodu içeren işlev:
 
    [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
 
-15. Üye değişkenleri aşağıdaki tanımları (oluşturucular), denetim sınıfı için üst bilgi dosyası üst bilgi dosyasının ortak bölümüne ekleyin:
+1. Üye değişkenleri aşağıdaki tanımları (oluşturucular), denetim sınıfı için üst bilgi dosyası üst bilgi dosyasının ortak bölümüne ekleyin:
 
    [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
 
-16. Aşağıdaki satırı son satırında olun `DoPropExchange` işlevi:
+1. Aşağıdaki satırı son satırında olun `DoPropExchange` işlevi:
 
    [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
 
-17. Değiştirme `OnResetState` aşağıdaki kodu içeren işlev:
+1. Değiştirme `OnResetState` aşağıdaki kodu içeren işlev:
 
    [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
 
-18. Değiştirme `GetMyProp` aşağıdaki kodu içeren işlev:
+1. Değiştirme `GetMyProp` aşağıdaki kodu içeren işlev:
 
    [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
 

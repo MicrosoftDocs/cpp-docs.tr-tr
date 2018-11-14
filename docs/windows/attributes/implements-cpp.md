@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 92d34bd048061781809941d56f5de052cecadca9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 519bbe0bdbef786c95ca3f6711b344b7a4f6b641
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626674"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329897"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 
@@ -20,7 +20,7 @@ IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-[ implements( 
+[ implements(
    interfaces={interfaces}, dispinterfaces={dispinterfaces})]
 ```
 

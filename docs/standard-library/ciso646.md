@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ciso646 header
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
-ms.openlocfilehash: c4d92fc57d6b10295456da9aa80afb1c705c89a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70305581fb8afff71c87d284c773e50977342c1e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666784"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524501"
 ---
 # <a name="ltciso646gt"></a>&lt;ciso646&gt;
 
@@ -21,7 +21,6 @@ Standart C Kitaplığı üstbilgisi içerir \<iso646.h > ve ilişkili adlar ekle
 
 ```cpp
 #include <ciso646>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

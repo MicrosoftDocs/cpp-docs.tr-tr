@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - istream header
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
-ms.openlocfilehash: b61b843d31afc5eab5ded14f633667ddefe1dbe7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e39c0de5b11c9aa0a4c69f0142841469ef798c7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582292"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521888"
 ---
 # <a name="ltistreamgt"></a>&lt;istream&gt;
 
@@ -23,7 +23,6 @@ ms.locfileid: "50582292"
 
 ```cpp
 #include <istream>
-
 ```
 
 ### <a name="typedefs"></a>Tür tanımları

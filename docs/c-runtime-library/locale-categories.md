@@ -21,12 +21,12 @@ helpviewer_keywords:
 - LC_NUMERIC constant
 - LC_COLLATE constant
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
-ms.openlocfilehash: 9c25e17f3047a88eda3a45782fc7da9f37b9452e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c46f4803c7b6ff226fc41ddce7f8e4493b0db40
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485845"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521361"
 ---
 # <a name="locale-categories"></a>Yerel Ayar Kategorileri
 
@@ -35,7 +35,6 @@ ms.locfileid: "50485845"
 ```
 
 #include <locale.h>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

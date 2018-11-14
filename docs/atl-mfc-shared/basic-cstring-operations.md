@@ -9,12 +9,12 @@ helpviewer_keywords:
 - string comparison, CString operations
 - characters, accessing in CStrings
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-ms.openlocfilehash: d1f16e470123bd52cb2656541aafaabdfc16af8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b387cbb8671dda0aca63da9b57dd694e478b62a9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434081"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523136"
 ---
 # <a name="basic-cstring-operations"></a>Temel CString işlemleri
 
@@ -91,11 +91,10 @@ CString nesneleri diğer dize türlerine dönüştürme hakkında daha fazla bil
 
 Bir CString ile kullanılacak `wcout` nesneyi açıkça dönüştürmelisiniz bir `const wchar_t*` aşağıdaki örnekte gösterildiği gibi:
 
-```
+```cpp
 CString cs("meow");
 
-    wcout <<(const wchar_t*) cs <<endl;
-
+wcout << (const wchar_t*) cs << endl;
 ```
 
 Tür dönüştürme olmadan `cs` olarak kabul bir `void*` ve `wcout` nesnenin adresi yazdırır. Bu davranış, C++ standardı ile doğru kendileri şablon bağımsız değişkeni kesintisi ve aşırı yükleme çözümlemesi uyumlu arasındaki Zarif etkileşimler kaynaklanır.

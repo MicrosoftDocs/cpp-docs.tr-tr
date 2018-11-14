@@ -10,12 +10,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 4558294da52577e1ed490be537e92665ce6b15f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 163729b401fa917d7df0002c621998f5021757f6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592770"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521498"
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 
@@ -193,7 +193,6 @@ int main()
     transform(v.begin(), v.end(), stdext::make_unchecked_array_iterator(p8), [](int n) { return n * 8; });
     print("a8: ", a8);
 }
-
 ```
 
 Derleme yaptığınızda bu kodu kullanarak `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` derleyici bir uyarı yaydığına ancak yürütülebilir bir dosyaya hatasız derlenir:

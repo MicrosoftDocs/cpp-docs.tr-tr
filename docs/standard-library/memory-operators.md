@@ -10,12 +10,12 @@ f1_keywords:
 - memory/std::operator<<
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-ms.openlocfilehash: 0b5589db7f38a53c4f7112dc5d3254f56e5fbb47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca1412efb4d095ef9a371b3739d4c282683821dc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473352"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519325"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
 
@@ -119,7 +119,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -232,7 +231,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -415,7 +413,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

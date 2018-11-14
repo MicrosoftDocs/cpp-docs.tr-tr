@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::piecewise_constant_distribution [C++], param_type
 - std::piecewise_constant_distribution [C++], param_type
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
-ms.openlocfilehash: 25709eed75f1a5cf455f156285ab2282287dc07b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d293a36e2d2d19de7d1b46c231254e1cb6ef1bf
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437342"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524228"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution Sınıfı
 
@@ -178,7 +178,6 @@ int main()
 
     test(samples);
 }
-
 ```
 
 ```Output

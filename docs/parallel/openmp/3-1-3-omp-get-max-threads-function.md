@@ -2,12 +2,12 @@
 title: 3.1.3 omp_get_max_threads İşlevi
 ms.date: 11/04/2016
 ms.assetid: 5548897c-546e-4d19-b37b-a76f6b30a0a9
-ms.openlocfilehash: 3f954b5ad75b4bdb4a74323f2ab4e819850269ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c80bf61d95aa30878e82ed33a24399b4a72ae50
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546598"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518457"
 ---
 # <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads İşlevi
 
@@ -24,7 +24,6 @@ Aşağıdaki alt sınırı değeri temel ifade **omp_get_max_threads**:
 
 threads-used-for-next-team
 <= omp_get_max_threads
-
 ```
 
 Sonraki bir paralel bölgenin kullanıyorsa unutmayın **num_threads** iş parçacıklarını garanti sonucunu alt sınırı üzerinde belirli sayıda istek yan tümcesini **omp_get_max_threads** hiçbir uzun tutar.

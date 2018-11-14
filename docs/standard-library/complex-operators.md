@@ -15,12 +15,12 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: c21a9869f8accd8794a552d76fae39615689c2a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8641e2f8bcc80cd2ba9b6b68e5574a476f60312e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522518"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525372"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;karmaşık&gt; işleçleri
 
@@ -929,9 +929,8 @@ int main( )
 ```
 
 ```Output
-
+Input a complex number ( try: 2.0 ): 2.0
 2.0
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

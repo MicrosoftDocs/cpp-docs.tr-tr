@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: ecef168d2162adf3a478268ec08b0a61f35c6260
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4824180ec0ff9f7adb7c2d0a9b505a2abb58c20b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563208"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333338"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma
 
@@ -148,11 +148,10 @@ Geçirebilirsiniz bir `task_continuation_context` nesnesini [task::then](referen
 Aşağıdaki bölümde, bir dosyayı diskten okur, bu dosyada en yaygın sözcükleri bulur ve daha sonra kullanıcı Arabiriminde sonuçları gösterir bir uygulama gösterilmektedir. UI güncelleştirme işleminin son kullanıcı Arabirimi iş parçacığında oluşur.
 
 > [!IMPORTANT]
->  Bu davranış, UWP uygulamalarına özeldir. Masaüstü uygulamaları için devamlılıklar çalıştırdığı kontrol etmez. Bunun yerine, Zamanlayıcı iş parçacığı üzerinde çalışacağı her devamlılık seçer.
+> Bu davranış, UWP uygulamalarına özeldir. Masaüstü uygulamaları için devamlılıklar çalıştırdığı kontrol etmez. Bunun yerine, Zamanlayıcı iş parçacığı üzerinde çalışacağı her devamlılık seçer.
 
 > [!IMPORTANT]
-
->  Çağırmayın [CONCURRENCY::Task:: wait](reference/task-class.md#wait) gövdesinde STA'da çalışan bir devamlılık Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task:: get](reference/task-class.md#get) görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
+> Çağırmayın [CONCURRENCY::Task:: wait](reference/task-class.md#wait) gövdesinde STA'da çalışan bir devamlılık Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task:: get](reference/task-class.md#get) görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
 
 ##  <a name="example-app"></a> Örnek: C++ ve XAML ile bir Windows çalışma zamanı uygulamasında yürütme denetleme
 

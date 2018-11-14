@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::priority_queue [C++], size
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-ms.openlocfilehash: 1b276f427fc127fb04f4f8e09f0278033ef64754
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8f2b4ab788c82e531d1121f04dd0d422efb17cd
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677181"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333221"
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 
@@ -224,9 +224,9 @@ Boş veya bir aralığı temel kapsayıcı nesnesinin veya başka bir priority_q
 ```cpp
 priority_queue();
 
-explicit priority_queue(const Traits&_comp);
+explicit priority_queue(const Traits& _comp);
 
-priority_queue(const Traits&_comp, const container_type& _Cont);
+priority_queue(const Traits& _comp, const container_type& _Cont);
 
 priority_queue(const priority_queue& right);
 
@@ -234,15 +234,15 @@ template <class InputIterator>
 priority_queue(InputIterator first, InputIterator last);
 
 template <class InputIterator>
-priority_queue(InputIterator first, InputIterator last, const Traits&_comp);
+priority_queue(InputIterator first, InputIterator last, const Traits& _comp);
 
 template <class InputIterator>
-priority_queue(InputIterator first, InputIterator last, const Traits&_comp, const container_type& _Cont);
+priority_queue(InputIterator first, InputIterator last, const Traits& _comp, const container_type& _Cont);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_ comp*<br/>
+*_comp*<br/>
 Karşılaştırma işlevi türü **constTraits** işlevi temel kapsayıcının karşılaştırmak için varsayılan olarak priority_queue içinde öğeleri sıralamak için kullanılan.
 
 *_Cont*<br/>
@@ -263,7 +263,7 @@ Her ilk üç oluşturucular ikinci de karşılaştırma işlevinin türü belirt
 
 Dördüncü Oluşturucu priority_queue bir kopyasını belirtir *doğru*.
 
-Son üç oluşturucular aralığını kopyalamaktadır [* ilk, son *) bazı kapsayıcısının ve sınıfın karşılaştırma işlevinin türü belirtilirken explicitness artan bir priority_queue başlatmak için değerleri kullanın **nitelikler** ve `container_type`.
+Son üç oluşturucular aralığını kopyalamaktadır \[ *ilk*, *son*) bazı kapsayıcısının ve türünü belirtilirken explicitness artan bir priority_queue başlatmak için değerleri kullanın sınıfı, karşılaştırma işlevi `Traits` ve `container_type`.
 
 ### <a name="example"></a>Örnek
 

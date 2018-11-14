@@ -6,12 +6,12 @@ helpviewer_keywords:
 - data access [C++], OLE DB programming
 - OLE DB [C++], about OLE DB
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
-ms.openlocfilehash: 8b56378eb93216891f4c0b540d622dbdb412b8cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59bee1c204d2f101d8175ff42c78ca4bbdcaeb4c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576923"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523149"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
 
@@ -29,7 +29,7 @@ Ayrıca, OLE DB Tüketici Şablonları uygulamak için öznitelikler kullanabili
 |OLE DB sağlayıcı şablonları (kavramsal konular) kullanma|[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)|
 |OLE DB şablon sınıfları ve makroları|[OLE DB Şablonları başvurusu](../../data/oledb/ole-db-templates.md) (Visual C++)|
 |OLE DB tüketici öznitelikleri|[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)|
-|OLE DB arabirimleri|[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643(v%3dvs.85)) (Windows SDK'da)|
+|OLE DB arabirimleri|[OLE DB Programcının Başvurusu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming(v%3dvs.85)) (Windows SDK'da)|
 |OLE DB Şablon örnekleri|[OLE DB Şablon örnekleri](https://github.com/Microsoft/VCSamples)|
 |Veri erişim programlama genel bakış (Visual C++)|[Veri erişim programlama](../../data/data-access-programming-mfc-atl.md)|
 |ODBC kavramsal konular|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|

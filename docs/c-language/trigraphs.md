@@ -15,12 +15,12 @@ helpviewer_keywords:
 - ??! trigraph
 - ??' trigraph
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
-ms.openlocfilehash: 2106f7dda6ecc71478b29cfad3f15dfee0483025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f84e5c1a1455e35992aa4b118c345bc1fa6ae587
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523912"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331626"
 ---
 # <a name="trigraphs"></a>Trigraflar
 
@@ -34,29 +34,29 @@ Aşağıdaki tablo, dokuz trigraf dizisini göstermektedir. Noktalama karakterle
 
 ### <a name="trigraph-sequences"></a>Trigraf Dizileri
 
-|Trigraf|Noktalama Karakteri|
-|--------------|---------------------------|
-|??=|#|
-|??(|[|
-|??/|\|
-|??)|]|
-|??'|^|
-|??\<|{|
-|??!|&#124;|
-|??>|}|
-|??-|~|
+| Trigraf | Noktalama Karakteri |
+|----------|-----------------------|
+| ??= | # |
+| ??( | \[ |
+| ??/ | \\ |
+| ??) | ] |
+| ??' | ^ |
+| ??\< | { |
+| ??! | &#124; |
+| ??> | } |
+| ??- | ~ |
 
 Bir trigraf her zaman tek kaynaklı karakter olarak işlem görür. İlk çevirisi yapılmaz [çeviri aşaması](../preprocessor/phases-of-translation.md)tanıma çıkış karakterlerinin tanınmasından önce dize değişmez değerleri ve karakter sabitlerinde. Yalnızca yukarıdaki tabloda gösterilen dokuz trigraf tanınır. Diğer tüm karakter dizileri çevrilmeden bırakılır.
 
 Karakter kaçış dizisi  **\\?**, trigraf benzeri karakter dizilerinin yanlış yorumlanmasını önler. (Kaçış dizileri hakkında daha fazla bilgi için bkz: [kaçış dizileri](../c-language/escape-sequences.md).) Örneğin, `What??!` dizesini bu `printf` ifadesiyle yazdırmaya çalışırsanız
 
-```
+```C
 printf( "What??!\n" );
 ```
 
 Yazdırılan dize `What|` çünkü `??!` ile değiştirilir bir trigraf sırası `|` karakter. Diziyi düzgün şekilde yazdırmak için ifadeyi aşağıdaki gibi yazın:
 
-```
+```C
 printf( "What?\?!\n" );
 ```
 

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr_s function
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
-ms.openlocfilehash: 140d984c470bd505f347aa43065b033339ed38a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 03bdc533d3afa265be22ae3567fabe8e78f752a4
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665029"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329895"
 ---
 # <a name="clearerrs"></a>clearerr_s
 
@@ -107,15 +107,16 @@ int main( void )
 }
 ```
 
-```Output
+### <a name="input"></a>Giriş
 
+```Input
 n
-
 ```
 
-```Output
+### <a name="output"></a>Çıkış
 
-      nWrite error: Bad file descriptor
+```Output
+Write error: Bad file descriptor
 Will input cause an error? n
 ```
 

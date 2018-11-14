@@ -7,12 +7,12 @@ helpviewer_keywords:
 - <bitset> header
 - bitset header
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
-ms.openlocfilehash: 8a0a38c97027c8d41fca3d6d7e9b7b96e80b3232
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d90e49190ef2f22ce7ba2dfe30c2c68c6275f5b0
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656917"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520276"
 ---
 # <a name="ltbitsetgt"></a>&lt;bitset&gt;
 
@@ -23,7 +23,6 @@ ms.locfileid: "50656917"
 ```
 
 #include <bitset>
-
 ```
 
 ### <a name="operators"></a>İşleçler

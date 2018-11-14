@@ -137,12 +137,12 @@ helpviewer_keywords:
 - std::unordered_multimap::size
 - std::unordered_multimap::swap
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
-ms.openlocfilehash: b4c501b651a72fa28d603ec818dcc70989b5302e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca080cfee9869985c322bf1311fabf8aff72383a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622943"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519938"
 ---
 # <a name="unorderedmultimap-class"></a>unordered_multimap Sınıfı
 
@@ -272,7 +272,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -339,7 +338,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -396,7 +394,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -471,7 +468,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -490,7 +486,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="bucket_size"></a>  unordered_multimap::bucket_size
@@ -541,7 +536,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -659,7 +653,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -709,7 +702,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -757,7 +749,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -805,7 +796,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -852,7 +842,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -905,7 +894,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -966,7 +954,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1091,7 +1078,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1166,7 +1152,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1238,7 +1223,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1339,7 +1323,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1380,7 +1363,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1418,7 +1400,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1457,7 +1438,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1574,7 +1554,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1614,7 +1593,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1655,7 +1633,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1711,7 +1688,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1785,7 +1761,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ## <a name="local_iterator"></a>  unordered_multimap::local_iterator
@@ -1829,7 +1804,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1885,7 +1859,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1959,7 +1932,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1978,7 +1950,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="max_load_factor"></a>  unordered_multimap::max_load_factor
@@ -2054,7 +2025,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2073,7 +2043,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="max_size"></a>  unordered_multimap::max_size
@@ -2105,7 +2074,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2209,7 +2177,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2256,7 +2223,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2324,7 +2290,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2397,7 +2362,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2440,7 +2404,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2511,7 +2474,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2712,7 +2674,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ```Output
@@ -2770,7 +2731,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - and macro
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
-ms.openlocfilehash: 20f490a38ca8f92eadedf02396d1165b301e9e25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17acab4402955ad2a7f18eaac3db1f99cdfe6287
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429993"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520068"
 ---
 # <a name="and"></a>and
 
@@ -36,7 +36,6 @@ Alternatif & & işleci.
 ```C
 
 #define and &&
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

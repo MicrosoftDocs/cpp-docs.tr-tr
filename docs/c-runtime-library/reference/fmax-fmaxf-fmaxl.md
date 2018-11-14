@@ -30,12 +30,12 @@ helpviewer_keywords:
 - fmaxf function
 - fmaxl function
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
-ms.openlocfilehash: 0fbe23a4b7d6e0c59523d62f844dd89e66642933
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 371d53257427f2235048807968c82fec1b8bf699
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465162"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523708"
 ---
 # <a name="fmax-fmaxf-fmaxl"></a>fmax, fmaxf, fmaxl
 
@@ -68,7 +68,6 @@ long double fmaxl(
    long double x,
    long double y
 );
-
 ```
 
 ### <a name="parameters"></a>Parametreler

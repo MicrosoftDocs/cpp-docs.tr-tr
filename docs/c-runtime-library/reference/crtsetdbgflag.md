@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CRTDBG_CHECK_CRT_DF macro
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: b5657ffb-6178-4cbf-9886-1af904ede94c
-ms.openlocfilehash: 1113854f1b41081ddcf59444786109fb5eabc65d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dcb8e37090e4c15ba849e76ca1cb1cc646a7bcc0
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621097"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556809"
 ---
 # <a name="crtsetdbgflag"></a>_CrtSetDbgFlag
 
@@ -118,7 +118,7 @@ int main( )
     // Get the current bits
     tmp = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
 
-    // Clear the upper 16 bits and OR in the desired freqency
+    // Clear the upper 16 bits and OR in the desired frequency
     tmp = (tmp & 0x0000FFFF) | _CRTDBG_CHECK_EVERY_16_DF;
 
     // Set the new bits

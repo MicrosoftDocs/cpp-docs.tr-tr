@@ -84,16 +84,17 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.openlocfilehash: ff908ab57b1130f959e5e9818e4185a8b3cfd348
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49a5b59234d92d2587abceff80382e477f66e762
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473586"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333317"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 
 Bu işlevleri ücretsiz [ \<filesystem >](../standard-library/filesystem.md) üstbilgi yolları, dosyaları, çözümlemeyin, dizinleri ve birimleri değiştirme ve sorgu işlemleri gerçekleştirin. Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
+
 ||||
 |-|-|-|
 |[Mutlak](#absolute)|[başlayın](#begin)|[Canonical](#canonical)|

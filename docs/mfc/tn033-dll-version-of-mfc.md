@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLL version of MFC [MFC]
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-ms.openlocfilehash: 89a9fddd6f12f92d18bcd6fc75f117beb14746f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17ffc8b46060e742449c9612424b1cd06dd8a9d3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571827"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523974"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL Sürümü
 
@@ -174,7 +174,6 @@ protected: \
     public: \
     static AFX_DATA CRuntimeClass class##class_name; \
     virtual CRuntimeClass* GetRuntimeClass() const; \
-
 ```
 
 Başlayan satırı "statik `AFX_DATA`" Sınıfınız içinde statik nesne bildirme. Bu sınıfı doğru olarak dışarı aktarın ve çalışma zamanı bilgileri, bir istemciden erişmek için. EXE, bu statik nesne dışarı aktarmanız gerekmez. Statik nesne değiştiriciyle bildirildiğinden `AFX_DATA`, tanımlamak yeterlidir `AFX_DATA` olmasını `__declspec(dllexport)` DLL dosyanızı oluştururken ve olarak tanımlayın `__declspec(dllimport)` istemcinizi yürütülebilir oluştururken.

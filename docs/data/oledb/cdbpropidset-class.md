@@ -33,12 +33,12 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: b6e7208628ee77df8647eaa46b00e6e22d294879
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fdda18243366de059b26fd566b5eecb308cbed14
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529148"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556653"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 
@@ -72,7 +72,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ## <a name="remarks"></a>Açıklamalar
 
-OLE DB tüketicileri kullanım `DBPROPIDSET` yapıları için tüketici istediği özellik bilgilerini almak özellik kimlikleri dizisi geçirilecek. Tek bir tanımlanmış özellikler [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) yapısı bir özellik kümesine ait.
+OLE DB tüketicileri kullanım `DBPROPIDSET` yapıları için tüketici istediği özellik bilgilerini almak özellik kimlikleri dizisi geçirilecek. Tek bir tanımlanmış özellikler [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı bir özellik kümesine ait.
 
 ## <a name="addpropertyid"></a> Cdbpropıdset::addpropertyıd
 
@@ -91,7 +91,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidset"></a> Cdbpropıdset::cdbpropıdset
 
-Oluşturucu. Başlatır `rgProperties`, `cProperties`ve (isteğe bağlı olarak) `guidPropertySet` alanlarının [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) yapısı.
+Oluşturucu. Başlatır `rgProperties`, `cProperties`ve (isteğe bağlı olarak) `guidPropertySet` alanlarının [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -124,7 +124,7 @@ void SetGUID(const GUID& guid) throw();
 #### <a name="parameters"></a>Parametreler
 
 *GUID*<br/>
-[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) yapısı.
+[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

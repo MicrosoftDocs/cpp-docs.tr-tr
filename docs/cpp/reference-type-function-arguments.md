@@ -3,17 +3,17 @@ title: Başvuru Türü İşlev Bağımsız Değişkenleri
 ms.date: 08/27/2018
 helpviewer_keywords:
 - arguments [C++], function
-- functions [C++], paramters
+- functions [C++], parameters
 - function parameters [C++], reference-type
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-ms.openlocfilehash: cc5a65e9a6bd74e79856057cf7e7fea220c62d4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a0bd21023bd1c6bc14b1f587c85960cf1e8b820
+ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536216"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597722"
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 

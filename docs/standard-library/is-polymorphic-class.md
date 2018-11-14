@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_polymorphic class
 - is_polymorphic
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
-ms.openlocfilehash: 3f86e8b1913ef6f34eda9b5a7b1de01ff8fe3891
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d9846f03db60cdad88fccc04ba520eeb935dc33
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500665"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521641"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 
@@ -77,7 +77,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

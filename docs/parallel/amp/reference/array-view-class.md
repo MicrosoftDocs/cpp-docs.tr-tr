@@ -26,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-ms.openlocfilehash: bd13fbef1b335b6a2fde1f16a59ddf11d489cdde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0d8fa733a5da14e8ee16acf2623df07c9974893
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501705"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523383"
 ---
 # <a name="arrayview-class"></a>array_view Sınıfı
 
@@ -323,7 +323,6 @@ array_view(
     int _E1,
     int _E2,
     const value_type* _Src) restrict(amp,cpu);
-
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -365,7 +364,6 @@ void copy_to(
 
 void copy_to(
     array_view<value_type, _Rank>& _Dest) const;
-
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -441,7 +439,6 @@ Array_view veri kaynağının bulunduğu accelerator_view döndürür. Array_vie
 
 ```
 accelerator_view get_source_accelerator_view() const;
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri

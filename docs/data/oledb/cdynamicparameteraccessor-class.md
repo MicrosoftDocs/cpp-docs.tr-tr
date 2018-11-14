@@ -90,12 +90,12 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: b8c43a47eceb5213f292b825a771cd25e99efceb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2cc67e6e837844356a071aa362dcca85eca24e4
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592666"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556978"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 
@@ -147,9 +147,10 @@ Oluşturucu.
 
 ```cpp
 typedef CDynamicParameterAccessor _ParamClass;
-CDynamicParameterAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
-   DBLENGTH nBlobSize = 8000 )
-   : CDynamicAccessor(eBlobHandling, nBlobSize )
+CDynamicParameterAccessor(
+   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
+   DBLENGTH nBlobSize = 8000 )
+   : CDynamicAccessor(eBlobHandling, nBlobSize )
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -171,10 +172,10 @@ Belirtilen parametre dize olmayan verileri parametresi arabelleğinden alır.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class ctype>bool GetParam(DBORDINAL nParam, 
+template <class ctype>bool GetParam(DBORDINAL nParam,
    ctype* pData) const throw();
 
-template <class ctype> bool GetParam(TCHAR* pParamName, 
+template <class ctype> bool GetParam(TCHAR* pParamName,
    ctype* pData) const throw();
 
 void* GetParam(DBORDINAL nParam) const throw();
@@ -223,7 +224,7 @@ Belirtilen parametre bir giriş veya çıkış parametresi olup olmadığını b
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-bool GetParamIO(DBORDINAL nParam, 
+bool GetParamIO(DBORDINAL nParam,
    DBPARAMIO* pParamIO) const throw();
 ```
 
@@ -312,7 +313,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] Parametre sayısı (1 uzaklık). Parametre 0 dönüş değerleri için ayrılmıştır. Parametre numarası SQL veya saklı yordam çağrısı, bir sırada temel parametresi dizinidir. Bkz: [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) örneği.
 
 *pStatus*<br/>
-[out] Belirtilen parametre DBSTATUS durumunu içeren bir değişken için bir işaretçi. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
+[out] Belirtilen parametre DBSTATUS durumunu içeren bir değişken için bir işaretçi. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -424,7 +425,7 @@ Veri türü şablonlu bir parametre.
 [in] Arabelleğe yazılacak veriler içeren bellek işaretçisi.
 
 *Durumu*<br/>
-[in] DBSTATUS sütun durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
+[in] DBSTATUS sütun durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -472,7 +473,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] Parametre sayısı (1 uzaklık). Parametre 0 dönüş değerleri için ayrılmıştır. Parametre numarası SQL veya saklı yordam çağrısı, bir sırada temel parametresi dizinidir. Bkz: [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) örneği.
 
 *Durumu*<br/>
-[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
+[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -485,10 +486,10 @@ Arabellekteki depolanan belirtilen parametresinin dize verilerini ayarlar.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-bool SetParamString(DBORDINAL nParam, 
-   constCHAR* pString, 
-   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam, 
-   constWCHAR* pString, 
+bool SetParamString(DBORDINAL nParam,
+   constCHAR* pString,
+   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam,
+   constWCHAR* pString,
    DBSTATUS status = DBSTATUS_S_OK) throw();
 ```
 
@@ -501,7 +502,7 @@ bool SetParamString(DBORDINAL nParam, 
 [in] ANSI işaretçisi (**CHAR**) veya Unicode (**WCHAR**) dize verilerini belirtilen parametre. DBSTATUS içinde biçim bakın.
 
 *Durumu*<br/>
-[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
+[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.
 
 ### <a name="remarks"></a>Açıklamalar
 

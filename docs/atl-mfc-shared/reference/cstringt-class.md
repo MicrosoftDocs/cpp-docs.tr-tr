@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: 28b2f929e9f8695904bcd3f02dd2d315ab3ca349
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd8fefd3424ab5ec422adb352972ba846e45139d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483414"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525502"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -94,13 +94,10 @@ Bu sınıfın temsil ettiği bir `CStringT` nesne.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 template<typename BaseType, class StringTraits>
 class CStringT :
-public CSimpleStringT<BaseType,
-                      _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
-                      ::c_bIsMFCDLLTraits>
-
+    public CSimpleStringT<BaseType,
+        _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>::c_bIsMFCDLLTraits>
 ```
 
 #### <a name="parameters"></a>Parametreler
@@ -117,19 +114,19 @@ Dize sınıfı karakter türü. Aşağıdakilerden biri olabilir:
 *StringTraits*<br/>
 Dize sınıfı C çalışma zamanı (CRT) kitaplığı desteğiyle ve dize kaynakları bulunduğu yere gerekip gerekmediğini belirler. Aşağıdakilerden biri olabilir:
 
-- **StrTraitATL < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitATL < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    CRT desteği ve kaynak dizeleri tarafından belirtilen modüldeki arar sınıfı gerektirir `m_hInstResource` (uygulamanın modül sınıfının üyesi).
 
-- **StrTraitATL < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitATL < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    Sınıfı, CRT desteği ve kaynak dizeleri tarafından belirtilen modüldeki arar gerektirmez `m_hInstResource` (uygulamanın modül sınıfının üyesi).
 
-- **StrTraitMFC < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitMFC < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    Sınıfı, CRT desteği ve kaynak dizeleri standart MFC arama algoritması kullanarak arar gerektirir.
 
-- **StrTraitMFC < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitMFC < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    Sınıfı, CRT desteği ve kaynak dizeleri standart MFC arama algoritması kullanarak arar gerektirmez.
 
@@ -295,9 +292,9 @@ Yeni ayrılan dize.
 
 MFC programlarda bir [CMemoryException sınıfı](../../mfc/reference/cmemoryexception-class.md) yetersiz bellek varsa oluşturulur. ATL programlarda bir [CAtlException](../../atl/reference/catlexception-class.md) oluşturulur. Bu işlev, normalde dizeleri için Otomasyon döndürmek için kullanılır.
 
-Yaygın olarak, bu dize bir COM işlevine geçirilirse bir [] parametresi, ardından bu gerektirir çağıran dize boş. Bu kullanarak yapılabilir [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK içinde açıklandığı gibi. Daha fazla bilgi için [Allocating ve BSTR için bellek serbest bırakma](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
+Yaygın olarak, bu dize bir COM işlevine geçirilirse bir [] parametresi, ardından bu gerektirir çağıran dize boş. Bu kullanarak yapılabilir [SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK içinde açıklandığı gibi. Daha fazla bilgi için [Allocating ve BSTR için bellek serbest bırakma](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
 
-Windows OLE ayırma işlevleri hakkında daha fazla bilgi için bkz. [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK.
+Windows OLE ayırma işlevleri hakkında daha fazla bilgi için bkz. [SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK.
 
 ### <a name="example"></a>Örnek
 

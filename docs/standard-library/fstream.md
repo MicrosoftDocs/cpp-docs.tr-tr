@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - fstream header
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-ms.openlocfilehash: fcfb020bab2cb85b13caac9cdceee2359a7294d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20efdc755b7f706fc6ee962daa32bd352df39d45
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476576"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522909"
 ---
 # <a name="ltfstreamgt"></a>&lt;fstream&gt;
 
@@ -21,7 +21,6 @@ Dış dosyalarında depolanan dizileri iostreams işlemleri destekleyen çeşitl
 
 ```cpp
 #include <fstream>
-
 ```
 
 ### <a name="typedefs"></a>Tür tanımları

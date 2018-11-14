@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_const class
 - is_const
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
-ms.openlocfilehash: 23a81922647c2e2f1a1fa327a036e079d9e38800
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25f10d8a8aed8bad6c11663687ace56a0b65afee
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666758"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523981"
 ---
 # <a name="isconst-class"></a>is_const Sınıfı
 
@@ -60,7 +60,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

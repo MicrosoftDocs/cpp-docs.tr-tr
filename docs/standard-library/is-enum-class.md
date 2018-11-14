@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_enum class
 - is_enum
 ms.assetid: df3b00b7-4f98-4b3a-96ce-10ad958ee69c
-ms.openlocfilehash: 95b36d512f4fb6501f5ae00d8f0dd49520613558
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 623bda13a12ac311618e1b9fffdbc3f676013df6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507659"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517598"
 ---
 # <a name="isenum-class"></a>is_enum Sınıfı
 
@@ -61,7 +61,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

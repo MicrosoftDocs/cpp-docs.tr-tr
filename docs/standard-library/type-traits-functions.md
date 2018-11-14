@@ -24,12 +24,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 05e72f07117cd5317dd0b8ea3590be9e87ae7b6d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 027ed3052f5341860112f564974b7a96aea7ff51
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653637"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524605"
 ---
 # <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 
@@ -124,7 +124,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -177,7 +176,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

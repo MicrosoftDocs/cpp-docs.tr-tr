@@ -5,12 +5,12 @@ f1_keywords:
 - unordered_set/std::swap (set)
 - unordered_set/std::swap (unordered_multiset)
 ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
-ms.openlocfilehash: 4616161c30a9059c413fc2ddf8fc577abe3ea845
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6e005918730a2ca1f52469130e2ea2cf1547fc8
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490083"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522616"
 ---
 # <a name="ltunorderedsetgt-functions"></a>&lt;unordered_set&gt; işlevleri
 
@@ -99,7 +99,6 @@ std::cout << std::endl;
 
 return (0);
 }
-
 ```
 
 ```Output
@@ -107,7 +106,6 @@ return (0);
 [c] [b] [a]
 [f] [e] [d]
 [c] [b] [a]
-
 ```
 
 ## <a name="swap_unordered_multiset"></a>  Swap (unordered_multiset)
@@ -193,7 +191,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -201,7 +198,6 @@ int main()
 [c] [b] [a]
 [f] [e] [d]
 [c] [b] [a]
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing providers
 - OLE DB providers, testing
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-ms.openlocfilehash: 42186d789c1b85c359b9e3e30883929a6c71ab33
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
-ms.translationtype: HT
+ms.openlocfilehash: 9bb42af69a204c88e6068444642275b59ea5bf5c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265119"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518300"
 ---
 # <a name="testing-your-provider"></a>Sağlayıcınızı Test Etme
 
@@ -21,7 +21,7 @@ Bir sağlayıcı yayınlamadan önce gösterilen sırada aşağıdaki testleri y
 
 1. ADO ile yazılmış bir tüketici uygulaması kullanarak sağlayıcıyı test edin. Çoğu geliştirici (özellikle de Microsoft Visual Basic ve Microsoft C# geliştiricilerin) ADO ya da ADO.NET tüketici uygulamaları için kullanın. Test tüketici tüm işlevsel alanlar sağlayıcınızın kapsamalıdır. ADO tüketici uygulaması örneği için bkz: [ADO kod örnekleri Visual Basic'de](https://msdn.microsoft.com/library/ms807514.aspx).
 
-1. Sağlayıcınız için OLE DB Sağlayıcısı 0 standart düzeyi karşıladığını gösterilecek (ADO uygunluk testlerini dahil) OLE DB uygunluk testlerini çalıştırın. (0 düzeyi açıklaması için arama **OLE DB düzeyi 0 uygunluk testlerini** adresindeki [OLE DB Programcı Kılavuzu](/previous-versions/windows/desktop/ms713643). Bu testleri ve ilişkili belgeler Visual C++'da veri erişim SDK'sı dahil edilmiştir. Bu testleri sağlayıcınız da diğerini toplandığında çalıştığını göstermek için de yardımcı [hizmeti sağlayıcıları](../../data/oledb/ole-db-resource-pooling-and-services.md) değiştirir veya özellik eklemek özellikle yararlıdır. Uygunluk testleri hakkında daha fazla bilgi için Visual Studio CDs birinde bulunan veri erişim SDK'sı için Benioku dosyasına bakın.
+1. Sağlayıcınız için OLE DB Sağlayıcısı 0 standart düzeyi karşıladığını gösterilecek (ADO uygunluk testlerini dahil) OLE DB uygunluk testlerini çalıştırın. (0 düzeyi açıklaması için arama **OLE DB düzeyi 0 uygunluk testlerini** adresindeki [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). Bu testleri ve ilişkili belgeler Visual C++'da veri erişim SDK'sı dahil edilmiştir. Bu testleri sağlayıcınız da diğerini toplandığında çalıştığını göstermek için de yardımcı [hizmeti sağlayıcıları](../../data/oledb/ole-db-resource-pooling-and-services.md) değiştirir veya özellik eklemek özellikle yararlıdır. Uygunluk testleri hakkında daha fazla bilgi için Visual Studio CDs birinde bulunan veri erişim SDK'sı için Benioku dosyasına bakın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - handler functions [MFC], declaring
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-ms.openlocfilehash: bd10b143753bf908a7a30f8675998e355f331b64
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d94f0391c1aebc95b51a1bc94bea28168c445086
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601090"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519392"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 
@@ -37,9 +37,9 @@ Birden fazla ileti veya denetim bildirimi tam olarak aynı şekilde işlem gerek
 
 - Komut kimlikleri aralıklarını eşleyebilirsiniz:
 
-   - Bir komut işleyici işlevi.
+  - Bir komut işleyici işlevi.
 
-   - Komut güncelleştirme işleyicisi işlevi.
+  - Komut güncelleştirme işleyicisi işlevi.
 
 - Denetim bildirimi iletileri Denetim kimliklerinin bir dizi için bir ileti işleyici işlevine eşleyebilirsiniz.
 
@@ -63,25 +63,25 @@ Bu makalede ele alınan konular:
 
 - İleti eşleme aralığı makrosu:
 
-   - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
+  - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
 
-   - [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)
+  - [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)
 
-   - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
+  - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
 
 - Makro parametrelerini:
 
-   İlk iki makroları, üç parametre alır:
+  İlk iki makroları, üç parametre alır:
 
-   - Aralığın başladığı komut kimliği
+  - Aralığın başladığı komut kimliği
 
-   - Aralığı bitiren komut kimliği
+  - Aralığı bitiren komut kimliği
 
-   - İleti işleyici işlevinin adı
+  - İleti işleyici işlevinin adı
 
-   Komut kimlikleri dizi bitişik olması gerekir.
+  Komut kimlikleri dizi bitişik olması gerekir.
 
-   Üçüncü makrosu `ON_CONTROL_RANGE`, ek bir ilk parametre alır: gibi bir denetim bildirimi iletisi **EN_CHANGE**.
+  Üçüncü makrosu `ON_CONTROL_RANGE`, ek bir ilk parametre alır: gibi bir denetim bildirimi iletisi **EN_CHANGE**.
 
 ##  <a name="_core_declaring_the_handler_function"></a> İşleyici işlevi bildirme
 

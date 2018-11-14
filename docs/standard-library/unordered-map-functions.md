@@ -8,12 +8,12 @@ f1_keywords:
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
-ms.openlocfilehash: edf6a0bff337e7972bf04cdb44278a0f0fdc3a81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae00a9204e2bd5dc5220f3b2755e16b895193df3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676583"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51517952"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; işlevleri
 
@@ -106,7 +106,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -200,7 +199,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

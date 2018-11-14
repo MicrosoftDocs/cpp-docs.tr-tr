@@ -15,12 +15,12 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-ms.openlocfilehash: 79b2231882f65715f47c774119c0e6e0608f1676
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f7663987b2759c762d1f6c1604923478915f5726
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455490"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521992"
 ---
 # <a name="vectorltboolgt-class"></a>vektör&lt;bool&gt; sınıfı
 
@@ -126,7 +126,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="op_at"></a>  vektör\<bool >:: operator]

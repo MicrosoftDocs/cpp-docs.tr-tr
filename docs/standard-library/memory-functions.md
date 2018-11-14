@@ -74,12 +74,12 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.openlocfilehash: 2b7f65e2bca728ccde50cdee503f920291aa3ee4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0a62b7afd215a9cad62ba1d0469f68459e6f403
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619069"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519184"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 
@@ -431,7 +431,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

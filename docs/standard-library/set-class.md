@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-ms.openlocfilehash: 694ef08582409117b898d173e7647d59effc30e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ee53f7fead721d32ddf4c519dc15c2e1f90fc28
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605510"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519834"
 ---
 # <a name="set-class"></a>set Sınıfı
 
@@ -488,7 +488,7 @@ Kümeden eşleştirilecek öğe anahtarı.
 
 Üye işlevi, şu aralıktaki öğelerin sayısını döndürür:
 
-[ `lower_bound` (_ *Anahtarı* ), `upper_bound` (\_ *anahtarı* )).
+\[ lower_bound (*anahtarı*), upper_bound (*anahtarı*)).
 
 ### <a name="example"></a>Örnek
 
@@ -767,7 +767,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  set::emplace_hint
@@ -842,7 +841,6 @@ int main()
     print(s1);
     cout << endl;
 }
-
 ```
 
 ## <a name="empty"></a>  set::empty
@@ -1103,7 +1101,6 @@ int main()
     cout << "After the element with a key of \"E#\" is deleted, the set s3 is:" << endl;
     printset(s3);
 }
-
 ```
 
 ## <a name="find"></a>  set::Find
@@ -1190,7 +1187,6 @@ int main()
     findit(s1, 45);
     findit(s1, 6);
 }
-
 ```
 
 ## <a name="get_allocator"></a>  set::get_allocator
@@ -1435,7 +1431,6 @@ int main()
     print(s4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  set::iterator
@@ -2125,7 +2120,6 @@ int main()
         cout << " " << i;
     cout << endl;
 }
-
 ```
 
 ```Output

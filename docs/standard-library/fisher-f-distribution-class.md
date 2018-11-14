@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 2fe8509205cffc0b8a6f7cd04d6c364c38de9bd4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cff7883c0b563e7d6a377bffcd0e48192dc01071
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640030"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525138"
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 
@@ -155,7 +155,6 @@ int main()
 
     test(m_dist, n_dist, samples);
 }
-
 ```
 
 ## <a name="output"></a>Çıkış

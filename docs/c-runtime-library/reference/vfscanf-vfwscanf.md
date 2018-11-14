@@ -21,12 +21,12 @@ f1_keywords:
 - _vftscanf
 - vfscanf
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
-ms.openlocfilehash: 39539b712636fd97eb10cadc3f5401ba597fbcde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3076f63e05e156a479372adfca9dc707255f9e6a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444094"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521511"
 ---
 # <a name="vfscanf-vfwscanf"></a>vfscanf, vfwscanf
 
@@ -145,7 +145,6 @@ int main(void)
         fclose(stream);
     }
 }
-
 ```
 
 ```Output

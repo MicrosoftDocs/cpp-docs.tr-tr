@@ -6,12 +6,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: d997cb37c6cadb03bd3d16c4b1d4e56874f00018
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c09fa369cd4e0b726d809fa709518574d4fdbc6e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591015"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330547"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturup kendi dinamik bağlantı kitaplığı (C++)
 
@@ -396,7 +396,7 @@ Komut penceresini kapatmak için herhangi bir tuşa basın.
 
 Bir DLL ve istemci uygulaması oluşturduktan sonra denemeler yapabilirsiniz. İstemci uygulama kodunda kesme noktalarını ayarlamayı deneyin ve hata ayıklayıcıda uygulamayı çalıştırın. Kitaplık çağrısına olduğunda ne olacağına bakalım. Diğer işlevler kitaplığa eklemek veya DLL kullanan başka bir istemci uygulaması yazma.
 
-Uygulamanızı dağıtırken de kullandığı DLL'leri dağıtmanız gerekir. Oluşturduğunuz veya size içeren dll Üçüncü taraflardan uygulamanıza kullanılabilmesi için en basit yolu bunları, uygulamanız ile aynı dizinde olarak da bilinen eklemektir *uygulaması yerel dağıtım*. Dağıtım hakkında daha fazla bilgi için bkz: [Visual C++ üzerinde dağıtım](..\ide\deployment-in-visual-cpp.md).
+Uygulamanızı dağıtırken de kullandığı DLL'leri dağıtmanız gerekir. Oluşturduğunuz veya size içeren dll Üçüncü taraflardan uygulamanıza kullanılabilmesi için en basit yolu bunları, uygulamanız ile aynı dizinde olarak da bilinen eklemektir *uygulaması yerel dağıtım*. Dağıtım hakkında daha fazla bilgi için bkz: [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -6,12 +6,12 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d::make_sampler
 - amp_graphics/Concurrency::graphics::direct3d::make_texture
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
-ms.openlocfilehash: 71ce23d1238d852d42687be725de8153e938d6cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c19cc8697820c038875d55b41cde61120bda9df7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464733"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518379"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace-functions"></a>CONCURRENCY::Graphics:: Direct3D ad alanı işlevleri
 
@@ -67,7 +67,6 @@ template<
 >
 _Ret_ IUnknown *get_texture(
     const texture_view<value_type, _Rank>& _Texture) restrict(cpu);
-
 ```
 
 ### <a name="parameters"></a>Parametreler

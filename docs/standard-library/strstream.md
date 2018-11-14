@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - strstream header
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
-ms.openlocfilehash: eef1950abc8b187967fdfde472e3da7e97112239
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 72b96c300aba1729823462ce6671e2f9a5285761
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677051"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523721"
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 
@@ -21,7 +21,6 @@ Ayrılmış bir dizi içinde depolanan dizileri iostreams işlemleri destekleyen
 
 ```cpp
 #include <strstream>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

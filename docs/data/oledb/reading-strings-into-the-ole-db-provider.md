@@ -4,16 +4,16 @@ ms.date: 10/13/2018
 helpviewer_keywords:
 - OLE DB providers, reading strings into
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-ms.openlocfilehash: 50df9f13b814eb00b309460894d704238bc3e7dc
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
-ms.translationtype: HT
+ms.openlocfilehash: 6d8558cce3fc4818d3e6fc8d64a4c682f5ce5b26
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51264782"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556172"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 
-`CCustomRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_strCommandText`. `Execute` Dosya adından okur `m_strCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (değiştirilmiş `CCustomWindowsFile` gelen [dizeleri OLE DB sağlayıcısı depolama](../../data/oledb/storing-strings-in-the-ole-db-provider.md)) ve bir diziye yerleştirir.
+`CCustomRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709757(v=vs.85)). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_strCommandText`. `Execute` Dosya adından okur `m_strCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (değiştirilmiş `CCustomWindowsFile` gelen [dizeleri OLE DB sağlayıcısı depolama](../../data/oledb/storing-strings-in-the-ole-db-provider.md)) ve bir diziye yerleştirir.
 
 Dosya açılamıyor, `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketicileriyle çalışmaz ve OLE DB başarılı olmaz [uygunluk testlerini](../../data/oledb/testing-your-provider.md).
 

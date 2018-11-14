@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: 317e24708a6f4e5666c59c0db870440895173d7c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3b77823608376fdfc12beacf7cab5dd810c415e
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550325"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556796"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 
@@ -85,14 +85,14 @@ Bir veya daha fazla oturum ilişkilendirilebilir tarafından temsil edilen her s
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT Abort(BOID* pboidReason = NULL, 
-   BOOL bRetaining = FALSE, 
+HRESULT Abort(BOID* pboidReason = NULL,
+   BOOL bRetaining = FALSE,
    BOOL bAsync = FALSE) const throw();
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [Iİşlem::Durdur](https://docs.microsoft.com/previous-versions/windows/desktop/ms709833(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -119,14 +119,14 @@ hareketi tamamlar.
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-HRESULT Commit(BOOL bRetaining = FALSE, 
-   DWORD grfTC = XACTTC_SYNC, 
+HRESULT Commit(BOOL bRetaining = FALSE,
+   DWORD grfTC = XACTTC_SYNC,
    DWORD grfRM = 0) const throw();
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ITransaction::Commit](/previous-versions/windows/desktop/ms713008) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ITransaction::Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -134,7 +134,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [ITransaction::Commit](/previous-versions/windows/desktop/ms713008).
+Daha fazla bilgi için [ITransaction::Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85)).
 
 ## <a name="gettransactioninfo"></a> CSession::gettransactionınfo
 
@@ -148,7 +148,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ITransaction::GetTransactionInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms714975(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -156,7 +156,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975) içinde *OLE DB Programcının Başvurusu*.
+Daha fazla bilgi için [ITransaction::GetTransactionInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms714975(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="open"></a> CSession::Open
 
@@ -176,10 +176,10 @@ HRESULT Open(const CDataSource& ds,
 [in] Oturum açılacak olan veri kaynağı.
 
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
+[in] Bir dizi işaretçi [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.
 
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapıları geçirilen *pPropSet* bağımsız değişken.
+[in] Sayısını [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları geçirilen *pPropSet* bağımsız değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -204,7 +204,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [ITransactionLocal::StartTransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -212,7 +212,7 @@ Standart bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786) içinde *OLE DB Programcının Başvurusu*.
+Daha fazla bilgi için [ITransactionLocal::StartTransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

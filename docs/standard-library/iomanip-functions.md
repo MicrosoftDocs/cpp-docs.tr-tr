@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: 3df26de9ef485bc7214e49ce96680cc7300adb93
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5ead8b1000fd6c2708b2450f71da3dc612dc51d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574334"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524592"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; işlevleri
 
@@ -299,7 +299,6 @@ ss.str()              : \\root\trunk\branch\nest\egg\yolk
 
 Press Enter to exit
 */
-
 ```
 
 ## <a name="resetiosflags"></a>  resetiosflags

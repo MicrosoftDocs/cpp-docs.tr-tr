@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_default_constructible
 ms.assetid: dd8f1c44-dae5-4258-891f-c5e048d94092
-ms.openlocfilehash: de991f3b9fcfec1bd7815964c6d4e19265acdb4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7fc1c70a1244688888174b834fe653d5d6d2497b
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565980"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520939"
 ---
 # <a name="isdefaultconstructible-class"></a>is_default_constructible sınıfı
 
@@ -60,7 +60,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

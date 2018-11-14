@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rowsets [C++], multiple accessors
 - accessors [C++], rowsets
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
-ms.openlocfilehash: 2f88213fce0c5aa1d91f94d7fbeb26eab6432207
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ce150375b98c697c32767001911eade53ed2f8c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483297"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522031"
 ---
 # <a name="using-multiple-accessors-on-a-rowset"></a>Satır Kümesinde Çoklu Erişimci Kullanma
 
@@ -20,19 +20,19 @@ ms.locfileid: "50483297"
 
 - **Birden çok okuma/yazma satır kümeleri.** Bu senaryoda, bir birincil anahtar içeren bir tablo vardır. Satırın birincil anahtarı dahil olmak üzere tüm sütunları okuyabilmesini istiyorsunuz. Ayrıca, (birincil anahtar sütunu yazamadığınız) birincil anahtar dışındaki tüm sütunları verileri yazmak amacıyla yönetebilmek istiyorsunuz. Bu durumda, iki erişimci ayarlayın:
 
-   - Erişimci 0 tüm sütunları içerir.
+  - Erişimci 0 tüm sütunları içerir.
 
-   - Erişimci 1 birincil anahtarı dışındaki tüm sütunları içerir.
+  - Erişimci 1 birincil anahtarı dışındaki tüm sütunları içerir.
 
 - **Performans.** Bu senaryoda, çok miktarda veri, örneğin, grafik, ses veya video dosyaları bir veya daha fazla sütun var. Bir satıra taşıma her zaman bunu yapmanız bu nedenle, uygulamanızın performansını düşürebilecek çünkü büyük olasılıkla sütunu ile büyük veri dosyası, almak istediğiniz yok.
 
-   İlk erişimci büyük ölçekli veri dışındaki tüm sütunları içerir ve bu verileri bu sütunları otomatik olarak alır ayrı erişimci ayarlayabilirsiniz. ilk erişimci otomatik erişimcisi ' dir. İkinci erişimcisi yalnızca büyük verileri tutan sütununu alır, ancak otomatik olarak bu sütunun veri almıyorsa. Güncelleştirme veya isteğe bağlı olarak büyük veri getirme diğer yöntemleri olabilir.
+  İlk erişimci büyük ölçekli veri dışındaki tüm sütunları içerir ve bu verileri bu sütunları otomatik olarak alır ayrı erişimci ayarlayabilirsiniz. ilk erişimci otomatik erişimcisi ' dir. İkinci erişimcisi yalnızca büyük verileri tutan sütununu alır, ancak otomatik olarak bu sütunun veri almıyorsa. Güncelleştirme veya isteğe bağlı olarak büyük veri getirme diğer yöntemleri olabilir.
 
-   - Erişimci 0 otomatik erişimci olduğu; büyük ölçekli veri dışındaki tüm sütunları alır.
+  - Erişimci 0 otomatik erişimci olduğu; büyük ölçekli veri dışındaki tüm sütunları alır.
 
-   - Erişimci 1 otomatik erişimci değildir; büyük ölçekli veri sütunu alır.
+  - Erişimci 1 otomatik erişimci değildir; büyük ölçekli veri sütunu alır.
 
-   Otomatik bağımsız değişken, erişimci otomatik erişimci olup olmadığını belirtmek için kullanın.
+  Otomatik bağımsız değişken, erişimci otomatik erişimci olup olmadığını belirtmek için kullanın.
 
 - **Birden fazla ISequentialStream sütunu.** Bu senaryoda, seçtiğiniz birden fazla sütun tutan `ISequentialStream` veri. Ancak, her bir erişimci birle sınırlı olur `ISequentialStream` veri akışı. Bu sorunu çözmenin birkaç erişimci, her iki ayarlayın `ISequentialStream` işaretçi.
 

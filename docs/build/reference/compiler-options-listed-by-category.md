@@ -1,15 +1,15 @@
 ---
 title: Kategorilere Göre Listelenen Derleyici Seçenekleri
-ms.date: 08/20/2018
+ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 20dab3e4ec1d0a409d591e2b470e127e20156a8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa93158e518950efa9d1f2f8092aeabbc3c7724c
+ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532957"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51598827"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -46,7 +46,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/GH](gh-enable-penter-hook-function.md)|Kanca işlevini çağırır `_penter`.|
 |[/GH](gh-enable-pexit-hook-function.md)|Kanca işlevini çağırır `_pexit`.|
 |[/GL](gl-whole-program-optimization.md)|Tüm programın iyileştirilmesini etkinleştirir.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Minimum yeniden oluşturmayı etkinleştirir.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Kullanım dışı. Minimum yeniden oluşturmayı etkinleştirir.|
 |[GR](gr-enable-run-time-type-information.md)|Çalışma zamanı tür bilgisini (RTTI) etkinleştirir.|
 |[Gr](gd-gr-gv-gz-calling-convention.md)|Kullanan `__fastcall` çağırma kuralı. (yalnızca x86)|
 |[/GS](gs-buffer-security-check.md)|Tampon güvenliğini denetler.|
@@ -202,6 +202,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/clr:noAssembly](clr-common-language-runtime-compilation.md)|Kullanım dışı. Kullanım [/LN (MSIL modülü Oluştur)](ln-create-msil-module.md) yerine.|
 |[/FR](fr-fr-create-dot-sbr-file.md)|Kullanım dışı. Gözatma bilgisi dosyası olmadan yerel değişkenler oluşturur.|
 |[/Ge](ge-enable-stack-probes.md)|Kullanım dışı. Yığın araştırmaları etkinleştirir. Üzerinde varsayılan olarak.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Kullanım dışı. Minimum yeniden oluşturmayı etkinleştirir.|
 |[/GX](gx-enable-exception-handling.md)|Kullanım dışı. Zaman uyumlu özel durum işleme sağlar. Kullanım [/EH](eh-exception-handling-model.md) yerine.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Kullanım dışı. Hızlı kontrolleri etkinleştirir. Kullanım [rtc1](rtc-run-time-error-checks.md) yerine.|
 |[/H](h-restrict-length-of-external-names.md)|Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar.|

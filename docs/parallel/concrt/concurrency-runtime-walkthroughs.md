@@ -5,12 +5,12 @@ helpviewer_keywords:
 - walkthroughs [Concurrency Runtime]
 - Concurrency Runtime, walkthroughs
 ms.assetid: 7374c5e9-54eb-44bf-9ed9-5e190cfd290b
-ms.openlocfilehash: f26ff3ba35539b24e4c670935212069a34b942a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2307581dc1cda3ed75ee1cea9fc4ff504a0a98b3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511091"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519496"
 ---
 # <a name="concurrency-runtime-walkthroughs"></a>Eşzamanlılık Çalışma Zamanı İzlenecek Yollar
 
@@ -19,7 +19,7 @@ Bu bölümde senaryo tabanlı konular, eşzamanlılık çalışma zamanı özell
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
-Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir evrensel Windows Platformu (UWP) uygulamasını bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
+Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir evrensel Windows Platformu (UWP) uygulamasını bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
 
 [İzlenecek Yol: Aracı Temelli Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
 Temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını açıklar.

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-ms.openlocfilehash: abfac363388fc86a8b9c68df149bbe65fdd1d427
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f38d431248c524a65b4a7a7126ba73b767a64173
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482725"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525320"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -1930,7 +1930,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ```Output

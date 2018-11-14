@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-ms.openlocfilehash: f6470f98495362149b4e99c6d1e3fe521800438b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 983fbc190fb83b81534e3888c748c0bf9c235638
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487925"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524670"
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 
@@ -22,7 +22,6 @@ Dahil `iostreams` standart üstbilgi \<iomanip > her birkaç manipülatörleri t
 
 ```cpp
 #include <iomanip>
-
 ```
 
 ## <a name="remarks"></a>Açıklamalar

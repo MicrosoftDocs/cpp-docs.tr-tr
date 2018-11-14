@@ -67,12 +67,12 @@ helpviewer_keywords:
 - operator =, bookmarks
 - operator=, bookmarks
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-ms.openlocfilehash: 669a0c8da54e8a2523df644c29bbb26051c024da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b59d4de6751dd2a7f90c5de766b5f95cb7e7b330
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577472"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525190"
 ---
 # <a name="cbookmark-class"></a>CBookmark Sınıfı
 
@@ -126,7 +126,6 @@ Oluşturucu.
 
 ```cpp
 CBookmark();
- 
 CBookmark(DBLENGTH nSize);
 ```
 

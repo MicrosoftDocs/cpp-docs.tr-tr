@@ -3,12 +3,12 @@ title: C++ Tür Sistemi (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 3e500980fbb5e6397e992f53b58f28fa710e7af0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba24a4a739e4eb13d983202943ca046f857422d2
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602611"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521098"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 
@@ -86,7 +86,6 @@ Herhangi bir yerleşik veya kullanıcı tanımlı tür, const anahtar sözcük a
 
 const double PI = 3.1415;
 PI = .75 //Error. Cannot modify const variable.
-
 ```
 
 **Const** niteleyicisi işlevde ve değişken bildirimlerinde yaygın olarak kullanılır ve "const correctness" C++'da önemli bir kavramdır; temel olarak kullanmanın ne demek **const** , derleme zamanında güvence altına almak için değerleri olmadığına istemsiz. Daha fazla bilgi için [const](../cpp/const-cpp.md).

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-ms.openlocfilehash: 6592352e2afc02d3689f328ab37db6f289880cec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc9aa57ffd68630d0a4209f8f8611882f8f36fc3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522193"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524176"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 
@@ -23,50 +23,50 @@ Kimlik dizeleri oluşturduğunda, derleyici aşağıdaki kurallar gözlemler:
 
 - Kimlik dizesi ilk bölümünü izleyen iki nokta ile tek bir karakter ile tanımlanmakta üye türünü tanımlar. Aşağıdaki üye türleri kullanılır:
 
-   |Karakter|Açıklama|
-   |---------------|-----------------|
-   |N|ad alanı<br /><br /> Belge açıklamaları için bir ad alanı ekleyemezsiniz, bir ad alanı başvurularını cref mümkündür.|
-   |T|Tür: sınıf, arabirim, yapı, enum, temsilci|
-   |D|typedef|
-   |F|alan|
-   |P|özellik (dizin oluşturucular veya diğer dizin oluşturulmuş özellikleri dahil)|
-   |M|(tür özel yöntemler olarak Oluşturucular, işleçler ve diğerleri dahil) yöntemi|
-   |E|olay|
-   |!|Hata dizesi<br /><br /> Dizenin geri kalanı, hata hakkında bilgi sağlar. Visual C++ derleyicisi, çözümlenemeyen bağlantılar için hata bilgisi oluşturur.|
+  | Karakter | Açıklama |
+  |---------------|-----------------|
+  | N | ad alanı<br /><br /> Belge açıklamaları için bir ad alanı ekleyemezsiniz, bir ad alanı başvurularını cref mümkündür. |
+  | T | Tür: sınıf, arabirim, yapı, enum, temsilci |
+  | D | typedef |
+  | F | alan |
+  | P | özellik (dizin oluşturucular veya diğer dizin oluşturulmuş özellikleri dahil) |
+  | M | (tür özel yöntemler olarak Oluşturucular, işleçler ve diğerleri dahil) yöntemi |
+  | E | olay |
+  | ! | Hata dizesi<br /><br /> Dizenin geri kalanı, hata hakkında bilgi sağlar. Visual C++ derleyicisi, çözümlenemeyen bağlantılar için hata bilgisi oluşturur. |
 
 - İkinci dize ad alanı kökünde başlangıç öğesi tam olarak nitelenmiş adını parçasıdır. Öğe, kapsayan türü veya türleri ve ad alanı adı noktalarla ayrılmış. Öğenin adını nokta varsa, karma-işaretiyle ('#')'ya değiştirilir. Öğe adını doğrudan bir karma işareti olduğunu kabul edilir. Örneğin, tam olarak nitelenmiş adını `String` Oluşturucu "System.String.#ctor" olacaktır.
 
 - Yöntemi için bağımsız değişken varsa özellikleri ve yöntemleri, parantez içindeki bağımsız değişken listesini takip eder. Hiçbir bağımsız değişken varsa, hiçbir parantez yok. Bağımsız değişkenlerin virgülle ayrılır. Her bağımsız değişken kodlama, doğrudan bir .NET Framework imzada nasıl kodlandığını izler:
 
-   - Temel türler. Normal türleri (ELEMENT_TYPE_CLASS veya ELEMENT_TYPE_VALUETYPE), türün tam adı temsil edilir.
+  - Temel türler. Normal türleri (ELEMENT_TYPE_CLASS veya ELEMENT_TYPE_VALUETYPE), türün tam adı temsil edilir.
 
-   - İç türleri (örneğin, ELEMENT_TYPE_I4 ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF. ve ELEMENT_TYPE_VOID) karşılık gelen tam tür adı tam olarak temsil edilir Örneğin, **System.Int32** veya **System.TypedReference**.
+  - İç türleri (örneğin, ELEMENT_TYPE_I4 ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF. ve ELEMENT_TYPE_VOID) karşılık gelen tam tür adı tam olarak temsil edilir Örneğin, **System.Int32** veya **System.TypedReference**.
 
-   - ELEMENT_TYPE_PTR olarak temsil edilir bir ' *' aşağıdaki değiştirilen türü.
+  - ELEMENT_TYPE_PTR olarak temsil edilir bir ' *' aşağıdaki değiştirilen türü.
 
-   - ELEMENT_TYPE_BYREF olarak temsil edilir bir '\@' aşağıdaki değiştirilen türü.
+  - ELEMENT_TYPE_BYREF olarak temsil edilir bir '\@' aşağıdaki değiştirilen türü.
 
-   - ELEMENT_TYPE_PINNED olarak temsil edilir bir ' ^' aşağıdaki değiştirilen türü. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_PINNED olarak temsil edilir bir ' ^' aşağıdaki değiştirilen türü. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
 
-   - ELEMENT_TYPE_CMOD_REQ olarak temsil edilir bir '&#124;' ve değiştirilen türü aşağıdaki değiştiricisi sınıfının tam adı. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_CMOD_REQ olarak temsil edilir bir '&#124;' ve değiştirilen türü aşağıdaki değiştiricisi sınıfının tam adı. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
 
-   - ELEMENT_TYPE_CMOD_OPT olarak temsil edilir bir '!' ve değiştirilen türü aşağıdaki değiştiricisi sınıfının tam adı.
+  - ELEMENT_TYPE_CMOD_OPT olarak temsil edilir bir '!' ve değiştirilen türü aşağıdaki değiştiricisi sınıfının tam adı.
 
-   - ELEMENT_TYPE_SZARRAY "dizinin öğe türü aşağıdaki []" temsil edilir.
+  - ELEMENT_TYPE_SZARRAY "dizinin öğe türü aşağıdaki []" temsil edilir.
 
-   - "[?]" ELEMENT_TYPE_GENERICARRAY temsil edilen aşağıdaki dizinin öğe türü. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
+  - "[?]" ELEMENT_TYPE_GENERICARRAY temsil edilen aşağıdaki dizinin öğe türü. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
 
-   - ELEMENT_TYPE_ARRAY olarak temsil edilir [*lowerbound*:`size`,*lowerbound*:`size`] Burada virgül sayısını ise boyut - 1 ve alt sınırı boyutunu ve her boyut bilinen ondalık biçimde temsil edilir. Alt sınır veya boyutu belirtilmezse, yalnızca atlanır. Belirli bir boyut için boyut ve alt sınır atlanırsa, ':' de atlanır. Örneğin, belirtilmeyen boyutları ve alt sınırı 1 ile 2 boyutlu bir dizi olan [1:, 1:].
+  - ELEMENT_TYPE_ARRAY olarak temsil edilir [*lowerbound*:`size`,*lowerbound*:`size`] Burada virgül sayısını ise boyut - 1 ve alt sınırı boyutunu ve her boyut bilinen ondalık biçimde temsil edilir. Alt sınır veya boyutu belirtilmezse, yalnızca atlanır. Belirli bir boyut için boyut ve alt sınır atlanırsa, ':' de atlanır. Örneğin, belirtilmeyen boyutları ve alt sınırı 1 ile 2 boyutlu bir dizi olan [1:, 1:].
 
-   - ELEMENT_TYPE_FNPTR olarak temsil edilir "FUNC =:`type`(*imza*)", burada `type` dönüş türü ve *imza* yöntem bağımsız değişkenleri olan. Hiçbir bağımsız değişken varsa, parantezler göz ardı edilir. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_FNPTR olarak temsil edilir "FUNC =:`type`(*imza*)", burada `type` dönüş türü ve *imza* yöntem bağımsız değişkenleri olan. Hiçbir bağımsız değişken varsa, parantezler göz ardı edilir. Visual C++ derleyicisi, hiçbir zaman bu oluşturur.
 
-   Ayırt edici aşırı yüklenmiş yöntemler için hiçbir zaman kullanılmaz, çünkü aşağıdaki imza bileşenleri temsil edilmez:
+  Ayırt edici aşırı yüklenmiş yöntemler için hiçbir zaman kullanılmaz, çünkü aşağıdaki imza bileşenleri temsil edilmez:
 
-   - Çağırma kuralı
+  - Çağırma kuralı
 
-   - Dönüş türü
+  - Dönüş türü
 
-   - ELEMENT_TYPE_SENTINEL
+  - ELEMENT_TYPE_SENTINEL
 
 - Yalnızca dönüştürme işleçleri için yöntemin dönüş değeri olarak kodlanmış bir ' ~' gibi önceden kodlanmış dönüş türü tarafından izlenen.
 
@@ -76,9 +76,9 @@ Kimlik dizeleri oluşturduğunda, derleyici aşağıdaki kurallar gözlemler:
     <member name="T:MyClass`2">
     ```
 
-   Olarak tanımlanan bir tür için `public class MyClass<T, U>`.
+  Olarak tanımlanan bir tür için `public class MyClass<T, U>`.
 
-   Genel türler parametre olarak alan yöntemleri için genel tür parametreleri ile geri ticks başında sayı olarak belirtilen (örneğin \`0 \`1).  Her bir sayının temsil eden bir türün genel parametreleri için sıfır tabanlı bir dizi gösterimi.
+  Genel türler parametre olarak alan yöntemleri için genel tür parametreleri ile geri ticks başında sayı olarak belirtilen (örneğin \`0 \`1).  Her bir sayının temsil eden bir türün genel parametreleri için sıfır tabanlı bir dizi gösterimi.
 
 ## <a name="example"></a>Örnek
 

@@ -5,12 +5,12 @@ f1_keywords:
 - unordered_set/std::operator!=
 - unordered_set/std::operator==
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
-ms.openlocfilehash: 501a65c8725631463e9c2a6b7b11e0c6300b6664
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b86dd81a7bc4085c86e87d5d81b59e795ce7ae8a
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495023"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523188"
 ---
 # <a name="ltunorderedsetgt-operators"></a>&lt;unordered_set&gt; işleçleri
 
@@ -76,7 +76,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Çıkış:**
@@ -145,7 +144,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Çıkış:**
@@ -217,7 +215,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Çıkış:**
@@ -289,7 +286,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Çıkış:**

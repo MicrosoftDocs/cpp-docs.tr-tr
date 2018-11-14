@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2003
 ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
-ms.openlocfilehash: 2e0a7d2d5b7e8fc4603b10450ba30dbf014e02cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f359c1f71f03ce0d946579776230398fb31d046f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583176"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520614"
 ---
 # <a name="resource-compiler-error-rw2003"></a>Kaynak Derleyicisi Hatası RW2003
 
@@ -51,10 +51,10 @@ Oluşturma hatası
 
    Windows 3.1 için bir kaynak yaklaşık 65000 baytı aşamaz. Kaynağınız varsa, daha sonra Visual C++ ya da komut satırı kaynak derleyicisi ile derlemek mümkün olmayacaktır. Bu sınırı imleçler, simgeler, bit eşlemler veya diğer dosya tabanlı kaynaklar için geçerli değildir.
 
-9. **Kaynak dosyası 3.00 biçimde değil.**
+1. **Kaynak dosyası 3.00 biçimde değil.**
 
    Bir biçim sürüm 3.00'den önceki bir işaretçi veya simge kullanılır. Kaynak, dönüştürülen veya yeniden düzenlenmiş sürüm 3.00 için aşağıdaki biçimi kullanarak veya üzeri olmalıdır.
 
-10. **Geçici dosya açılamıyor**
+1. **Geçici dosya açılamıyor**
 
    Kaynak Derleyici/Visual C++, geçici bir dosya açamadı. Olası neden, dizin için yazma izinlerine sahip değil ya da dizin yok değil. Kaynak Derleyici/Visual C++ tarafından belirtilen dizin içinde bu dosyaları kullanmayı dener **TMP** ortam değişkeninde ya da hiçbiri belirtilmezse geçerli dizin.

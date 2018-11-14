@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_fundamental class
 - is_fundamental
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
-ms.openlocfilehash: 9bdf9a7ba95bb097a5df6f5f0270eace599eda6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d16dfeebabd5909212425fcc27b355110e891d89
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542258"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524117"
 ---
 # <a name="isfundamental-class"></a>is_fundamental Sınıfı
 
@@ -60,7 +60,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
