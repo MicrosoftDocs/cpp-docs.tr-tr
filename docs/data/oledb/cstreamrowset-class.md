@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: d15807c7204841a436180d4da96357eba89dbb5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69844a9048601060a425f7bcf52bc2cf30381227
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488185"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556492"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset Sınıfı
 
@@ -61,7 +61,7 @@ Bir erişimci sınıfı.
 |||
 |-|-|
 |[CStreamRowset](#cstreamrowset)|Oluşturucu. Oluşturur ve başlatır `CStreamRowset` nesne.|
-|[Kapat](#close)|Yayınları [ISequentialStream](/previous-versions/windows/desktop/ms718035) sınıfında arabirim işaretçisi.|
+|[Kapat](#close)|Yayınları [ISequentialStream](https://docs.microsoft.com/previous-versions/windows/desktop/ms718035(v=vs.85)) sınıfında arabirim işaretçisi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -94,7 +94,7 @@ CStreamRowset();
 
 ## <a name="close"></a> CStreamRowset::Close
 
-Yayınları [ISequentialStream](/previous-versions/windows/desktop/ms718035) sınıfında arabirim işaretçisi.
+Yayınları [ISequentialStream](https://docs.microsoft.com/previous-versions/windows/desktop/ms718035(v=vs.85)) sınıfında arabirim işaretçisi.
 
 ### <a name="syntax"></a>Sözdizimi
 

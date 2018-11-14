@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: 80b0dd6e2145ce98e9191dd81bdff10b2870f4fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44c7691cc967b13b4fa94a7c51da57b7bf4d511f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530513"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518729"
 ---
 # <a name="function-class"></a>function Sınıfı
 
@@ -613,7 +613,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

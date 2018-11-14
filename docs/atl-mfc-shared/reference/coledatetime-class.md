@@ -34,12 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 2f63535210110e699daedd39a0b5a5ac25fc53c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9791f1c59bb393f7de64ffb16ccb95e99928b04c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505904"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525346"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 
@@ -104,7 +104,7 @@ class COleDateTime
 
 `COleDateTime` bir temel sınıfa sahip değil.
 
-Olası türlerinde biridir [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) OLE Otomasyonu nesnesi etkin veri türü. A `COleDateTime` değeri bir mutlak tarih ve saat değerini temsil eder.
+Olası türlerinde biridir [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) OLE Otomasyonu nesnesi etkin veri türü. A `COleDateTime` değeri bir mutlak tarih ve saat değerini temsil eder.
 
 `DATE` Türü, bir kayan nokta değeri gerçekleştirilir. Gün 30 Aralık 1899 ' gece yarısı olarak ölçülür. Aşağıdaki tablo bazı tarihleri ve ilişkili değerleri gösterir:
 
@@ -828,7 +828,7 @@ Bu aşırı yüklenmiş atama işleçleri bu kaynak tarih değeri kopyalayın `C
 
 - **operator = (** `dateSrc` **)** işlenen durumunu ve değer bu kopyalanır `COleDateTime` nesne.
 
-- **işleç = (** *varSrc* **)** varsa dönüştürülmesi [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) için bir tarih/saat (VT_ TARİHİ) başarılı olur, dönüştürülen değer bu kopyalanır `COleDateTime` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı olmazsa, bu nesnenin değeri sıfır (30 Aralık 1899 için gece yarısıdır) ayarlanır ve durumu geçersiz.
+- **işleç = (** *varSrc* **)** varsa dönüştürülmesi [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) için bir tarih/saat (VT_ TARİHİ) başarılı olur, dönüştürülen değer bu kopyalanır `COleDateTime` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı olmazsa, bu nesnenin değeri sıfır (30 Aralık 1899 için gece yarısıdır) ayarlanır ve durumu geçersiz.
 
 - **operator = (** `dtSrc` **)** `DATE` değeri bu kopyalanır `COleDateTime` nesne ve durumuna ayarlanır için geçerli.
 
@@ -836,11 +836,11 @@ Bu aşırı yüklenmiş atama işleçleri bu kaynak tarih değeri kopyalayın `C
 
 - **operator = (** *systimeSrc* **)** [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz.
 
-- **operator = (** `udate` **)** `UDATE` değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz. A `UDATE` yapısı "paketten çıkarılan" bir tarihi temsil eder. İşlevi görmek [VarDateFromUdate](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) daha fazla ayrıntı için.
+- **operator = (** `udate` **)** `UDATE` değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz. A `UDATE` yapısı "paketten çıkarılan" bir tarihi temsil eder. İşlevi görmek [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) daha fazla ayrıntı için.
 
 - **operator = (** `filetimeSrc` **)** [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; Aksi takdirde ayarlamak için geçersiz. `FILETIME` UTC saati yapısında geçirirseniz, sonuçlarınızı UTC zamanından yerel saate dönüştürülür ve değişken zaman olarak depolanacak şekilde Eşgüdümlü Evrensel Saat (UTC) kullanır. Bu davranış Visual C++ 6.0 ve Visual C++ .NET 2003 SP2 için de aynıdır. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.
 
-Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girişi.
+Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girişi.
 
 Daha fazla bilgi için `time_t` veri türünü görmek [zaman](../../c-runtime-library/reference/time-time32-time64.md) işlevi *çalışma zamanı kitaplığı başvurusu*.
 
@@ -1083,7 +1083,7 @@ Parametre değerleri için sınırları için aşağıdaki tabloya bakın:
 |*nMin*|0 - 59|
 |*nSec*|0 - 59|
 
-Ayın gününü taşarsa doğru sonraki ayın ve ayın günü için dönüştürülür ve/veya yıl buna göre artırılır. Sıfır gün değerini, önceki ayın son gününü belirtir. Aynı durum geçerlidir [SystemTimeToVariantTime](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime).
+Ayın gününü taşarsa doğru sonraki ayın ve ayın günü için dönüştürülür ve/veya yıl buna göre artırılır. Sıfır gün değerini, önceki ayın son gününü belirtir. Aynı durum geçerlidir [SystemTimeToVariantTime](/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime).
 
 Parametreler ile belirtilen tarih veya saat değeri, bu nesnenin durumu geçersiz ve bu nesnenin değeri olarak ayarlanır, geçerli değilse değiştirilmez.
 
