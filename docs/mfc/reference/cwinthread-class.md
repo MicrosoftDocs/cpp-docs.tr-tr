@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: c1eeb649917e8457af5a3a27324ae65ae8259ac8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f6c41b3675251df6b07e44003215fa67fb7e795
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477330"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694198"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 
@@ -445,7 +445,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 Postalanan ileti uygun ileti işleyicisi için ileti eşlemesi makronun ON_THREAD_MESSAGE eşlenir.
 
 > [!NOTE]
-> Çağırdığınızda [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), ileti iş parçacığının ileti sırasına konur. Bu şekilde gönderilen iletiler pencere ile ilişkili olmadığından, ancak, MFC bunları ileti veya komut işleyicilerini dağıtacağı değil. Bu iletileri işlemek için geçersiz kılma `PreTranslateMessage()` işlevi CWinApp-türetilmiş sınıf ve iletileri el ile işleyin.
+> Çağırdığınızda [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea), ileti iş parçacığının ileti sırasına konur. Bu şekilde gönderilen iletiler pencere ile ilişkili olmadığından, ancak, MFC bunları ileti veya komut işleyicilerini dağıtacağı değil. Bu iletileri işlemek için geçersiz kılma `PreTranslateMessage()` işlevi CWinApp-türetilmiş sınıf ve iletileri el ile işleyin.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 

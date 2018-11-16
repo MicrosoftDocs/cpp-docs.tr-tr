@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: faa715e8f5333a717689d281ccb89bd2369e9929
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8fadb6825bbdc970e952d2ea6c26a27b4837dfc
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661272"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694536"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
@@ -254,7 +254,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreatePrimaryToken` çağrıları [DuplicateTokenEx](https://msdn.microsoft.com/library/windows/desktop/aa446617) yeni bir birincil belirteç oluşturmak için.
+`CreatePrimaryToken` çağrıları [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) yeni bir birincil belirteç oluşturmak için.
 
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser
 
@@ -289,7 +289,7 @@ Yürütülecek komut satırı belirten bir null ile sonlandırılmış dize işa
 İşaretçi bir [değeri](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) yeni işlemin ana penceresi nasıl görünmelidir belirten yapısı.
 
 *dwCreationFlags*<br/>
-Öncelik sınıfı ve işlem oluşturmayı denetleyen ek bayrakları belirtir. Win32 işlevi görmek [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) bayrakların listesi için.
+Öncelik sınıfı ve işlem oluşturmayı denetleyen ek bayrakları belirtir. Win32 işlevi görmek [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) bayrakların listesi için.
 
 *bLoadProfile*<br/>
 TRUE ise, kullanıcının profili ile yüklenir [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
@@ -312,7 +312,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateProcessAsUser` kullanan `CreateProcessAsUser` tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için Win32 işlevini `CAccessToken` nesne. Açıklamasını görmek [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) Gerekli Parametreler tam bir irdelemesi için işlevi.
+`CreateProcessAsUser` kullanan `CreateProcessAsUser` tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için Win32 işlevini `CAccessToken` nesne. Açıklamasını görmek [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) Gerekli Parametreler tam bir irdelemesi için işlevi.
 
 Başarılı olması bu yöntemin `CAccessToken` (kısıtlı bir belirteç olmadığı sürece), nesne AssignPrimaryToken tutun gerekir ve IncreaseQuota ayrıcalıkları.
 
@@ -348,7 +348,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateRestrictedToken` kullanan [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583) yeni bir Win32 işlevini `CAccessToken` kısıtlama nesnesi.
+`CreateRestrictedToken` kullanan [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) yeni bir Win32 işlevini `CAccessToken` kısıtlama nesnesi.
 
 > [!IMPORTANT]
 >  Kullanırken `CreateRestrictedToken`, aşağıdaki işlemleri yapmalısınız: mevcut bir belirteç geçerli (ve kullanıcı tarafından girilen) ve *SidsToDisable* ve *PrivilegesToDelete* hem geçerli (hem de kullanıcı tarafından girilen). Yöntem FALSE döndürürse, işlevselliği reddet.

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 71b5eb9c97b8c6370a08281fdf4be7074a579f8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d5216cd399943cda67bc9387ea37c938e5cab48
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596670"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694341"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 
@@ -646,7 +646,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### <a name="parameters"></a>Parametreler
 
 *lpWndClass*<br/>
-İşaretçi bir [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) kaydedilecek pencere sınıfı hakkında bilgi içeren yapıya. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
+İşaretçi bir [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) kaydedilecek pencere sınıfı hakkında bilgi içeren yapıya. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -681,7 +681,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### <a name="parameters"></a>Parametreler
 
 *nClassStyle*<br/>
-Windows sınıf stil veya stilleri, bit düzeyinde OR kullanılarak oluşturulan bir birleşimini belirtir ( **&#124;**) işleci, pencere sınıfı için. Sınıf stilleri bir listesi için bkz. [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK'sındaki yapısı. NULL ise, varsayılan değerleri şu şekilde ayarlanır:
+Windows sınıf stil veya stilleri, bit düzeyinde OR kullanılarak oluşturulan bir birleşimini belirtir ( **&#124;**) işleci, pencere sınıfı için. Sınıf stilleri bir listesi için bkz. [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) Windows SDK'sındaki yapısı. NULL ise, varsayılan değerleri şu şekilde ayarlanır:
 
 - Kullanıcı fare çift tıkladığında hangi gönderimler pencere yordamını iletileri çift CS_DBLCLKS için fare stilini ayarlar.
 

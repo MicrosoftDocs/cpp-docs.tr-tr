@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 1ab89c860813996360cddbf0caf5d4ebc395603d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ec5b734b23a27522fe430d24d2a65eebcca3dd3
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452721"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694731"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 
@@ -67,7 +67,7 @@ Bu denetimi (ve bu nedenle `CHotKeyCtrl` sınıfı) ve üzeri yalnızca Windows 
 
 Bir tuş bileşimi kullanıcının seçtiği zaman uygulama belirtilen tuş bileşimi denetiminden almak ve WM_SETHOTKEY ileti sistemde etkin anahtar ayarlamak için kullanın. Her kullanıcının kısayol tuşu bundan sonra sistemin herhangi bir bölümünden bastığında WM_SETHOTKEY iletisinde belirtilen pencere SC_HOTKEY belirten bir WM_SYSCOMMAND iletisini alır. Bu iletiyi aldıktan sonra pencereyi etkinleştirir. Kısayol tuşu WM_SETHOTKEY çıkar çağıran uygulama kadar geçerli kalır.
 
-Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) ve [UnregisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646327) işlevleri.
+Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) ve [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) işlevleri.
 
 Kullanma hakkında daha fazla bilgi için `CHotKeyCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [kullanarak CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).
 

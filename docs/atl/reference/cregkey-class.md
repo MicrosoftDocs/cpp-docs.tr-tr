@@ -42,12 +42,12 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: 33ca9e1c07dc350845104a6027166e511b3bbe4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf2f97c1c3b389d0ee2b3d4bcdd2d9da2dbb3c8d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605095"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694861"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 
@@ -892,7 +892,7 @@ Ayarlamak için güvenlik tanımlayıcısı bileşenlerini belirtir. Değer aşa
 |DACL_SECURITY_INFORMATION|Anahtarın isteğe bağlı erişim denetimi listesini (DACL) ayarlar. Çağırma işlemi nesnenin sahibi olmanız gerekir veya anahtar WRITE_DAC erişimi olmalıdır.|
 |GROUP_SECURITY_INFORMATION|Anahtarın birincil grup güvenlik tanımlayıcısını (SID) ayarlar. Çağırma işlemi nesnenin sahibi olmanız gerekir veya anahtar WRITE_OWNER erişimi olmalıdır.|
 |OWNER_SECURITY_INFORMATION|Anahtarın sahibi SID'si ayarlar. Anahtar WRITE_OWNER erişiminiz olmalıdır veya çağırma işlemine nesnenin sahibi olmanız veya etkin SE_TAKE_OWNERSHIP_NAME ayrıcalığına sahip olması gerekir.|
-|SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtar ACCESS_SYSTEM_SECURITY erişiminiz olmalıdır. Bu erişim elde etmek için en uygun yolu SE_SECURITY_NAME etkinleştirmektir [ayrıcalık](https://msdn.microsoft.com/library/windows/desktop/aa379306) çağıranın geçerli erişim belirteci ACCESS_SYSTEM_SECURITY erişim için tanıtıcı açın ve ayrıcalık devre dışı bırakın.|
+|SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtar ACCESS_SYSTEM_SECURITY erişiminiz olmalıdır. Bu erişim elde etmek için en uygun yolu SE_SECURITY_NAME etkinleştirmektir [ayrıcalık](/windows/desktop/secauthz/privileges) çağıranın geçerli erişim belirteci ACCESS_SYSTEM_SECURITY erişim için tanıtıcı açın ve ayrıcalık devre dışı bırakın.|
 
 *PSD*<br/>
 İşaretçi bir [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) belirtilen anahtar için ayarlanacak güvenlik özniteliklerini belirten yapısı.

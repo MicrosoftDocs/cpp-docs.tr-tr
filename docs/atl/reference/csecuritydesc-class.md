@@ -34,12 +34,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityDesc class
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-ms.openlocfilehash: d06ec86b4a049daba945c347f4b424b5987010f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 615c9a409b66ca0f515b15fbb55fd794102524fd
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605815"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694081"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 
@@ -186,7 +186,7 @@ Yöntem başarılı olursa, yanlış başarısız olması durumunda true döndü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [GetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa446647).
+Bu yöntemin çağırdığı [GetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-getsecuritydescriptorcontrol).
 
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl
 
@@ -553,7 +553,7 @@ bool SetControl(
 ### <a name="parameters"></a>Parametreler
 
 *Controlbitsofınterest*<br/>
-Ayarlanacak denetim bitlerini gösteren SECURITY_DESCRIPTOR_CONTROL maskesi. Ayarlanabilecek bayrakların listesi için bkz. [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582).
+Ayarlanacak denetim bitlerini gösteren SECURITY_DESCRIPTOR_CONTROL maskesi. Ayarlanabilecek bayrakların listesi için bkz. [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol).
 
 *ControlBitsToSet*<br/>
 Tarafından belirtilen denetim bitleri için yeni değerler gösteren SECURITY_DESCRIPTOR_CONTROL maske *Controlbitsofınterest* maskesi. Bu parametre için listelenen bayrakların birleşimi olabilir *Controlbitsofınterest* parametresi.
@@ -564,7 +564,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582).
+Bu yöntemin çağırdığı [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol).
 
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl
 

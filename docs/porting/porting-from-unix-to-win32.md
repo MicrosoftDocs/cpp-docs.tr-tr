@@ -10,12 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: ac1fb2304c6d06a6d3e1638fa7ded8a6903ee9fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70cbff207931ada378a89b978acf13fadb3a8744
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467788"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694094"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 
@@ -61,7 +61,7 @@ Yazılım taşıma UNIX'ten Win32'destek sağlayan bir şirket için site bir ü
 
 Başka bir seçenek, UNIX uygulamalarını doğrudan Win32 taşımaktır. ANSI C/C++ kitaplıkları ve ticari C Derleyici kitaplıklarını kullanarak, birçok geleneksel sistem çağrıları UNIX uygulamalar tarafından yararlandı Win32 uygulamalarında kullanılabilir.
 
-Çıktı modelinin **stdio**-tabanlı uygulamaları API'leri taklit Win32 konsol beri değiştirilmiş gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'leri. Daha fazla bilgi için [SetConsoleCursorPosition](https://msdn.microsoft.com/library/windows/desktop/ms686025).
+Çıktı modelinin **stdio**-tabanlı uygulamaları API'leri taklit Win32 konsol beri değiştirilmiş gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'leri. Daha fazla bilgi için [SetConsoleCursorPosition](/windows/console/setconsolecursorposition).
 
 Win32 uygulamaları olarak çalışmak için çok az değişiklik Berkeley yuva tabanlı uygulamaları gerekir. Windows Sockets arabirimini taşınabilirlik sayesinde WinSock belirtiminin giriş olarak bölümlerde belirtilmiştir minimum değişiklikle BSD yuva için tasarlanmıştır.
 
@@ -69,7 +69,7 @@ Windows uyumlu DCE RPC desteklediğinden, RPC-tabanlı uygulamaları kolayca kul
 
 En büyük alanlarından farkı, işlem modelinde yer alır. UNIX `fork`; Win32 değildir. Kullanımına bağlı olarak `fork` ve kod tabanının Win32 kullanılabilecek iki API vardır: `CreateProcess` ve `CreateThread`. Birden çok kopyalarını çatallar bir UNIX uygulama birden çok işlem ya da birden çok iş parçacığı ile tek bir işlem için Win32'de yeniden. Birden çok işlem kullandıysanız, işlemler arasında iletişim kurmak için kullanılan IPC, birden fazla yöntem vardır (ve belki de kod ve üst öğe gibi olması için yeni bir işlem verileri güncelleştirmek için İşlevler, `fork` sağlar gereklidir). IPC hakkında daha fazla bilgi için bkz. [Ara işlem iletişimleri](/windows/desktop/ipc/interprocess-communications).
 
-Windows ve UNIX grafik modelleri çok farklıdır. GDI Windows kullanan UNIX X penceresi sistem GUI kullanır. Benzer kavramsal rağmen GDI API'sine X API'sinin basit eşlemesi yok. Ancak, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları için Windows X. Bkz: [cihaz bağlamları](https://msdn.microsoft.com/library/windows/desktop/dd183553) GDI hakkında bilgi için.
+Windows ve UNIX grafik modelleri çok farklıdır. GDI Windows kullanan UNIX X penceresi sistem GUI kullanır. Benzer kavramsal rağmen GDI API'sine X API'sinin basit eşlemesi yok. Ancak, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları için Windows X. Bkz: [cihaz bağlamları](/windows/desktop/gdi/device-contexts) GDI hakkında bilgi için.
 
 Visual c++ Windows üzerinde çalışan çok CGI uygulaması gibi temel UNIX uygulamaları kolayca aktarılabilir. Gibi işlev `open`, `fopen`, `read`, `write` ve diğer Visual C++ Çalışma Zamanı Kitaplığı'nda kullanılabilir. Ayrıca, UNIX API'leri C ve Win32 API'ları arasında bire bir eşleme yoktur: `open` için `CreateFile`, `read` için `ReadFile`, `write` için `WriteFile`, `ioctl` için `DeviceIOControl`, `close` için`CloseFile`ve benzeri.
 

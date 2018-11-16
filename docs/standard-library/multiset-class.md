@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-ms.openlocfilehash: 1bbf0e706939ccd61e8e7944f6f8a05d5aa92498
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8d2e298a2e4c6eb16a1851b3a9ce7ddc886a76f2
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525450"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678476"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -1461,7 +1461,7 @@ int main( )
            << *ms1_RcIter << "." << endl;
 
    // The element at a specific location in the multiset can be
-   // found using a derefenced iterator addressing the location
+   // found using a dereferenced iterator addressing the location
    ms1_AcIter = ms1.end( );
    ms1_AcIter--;
    ms1_RcIter = ms1.lower_bound( *ms1_AcIter );
@@ -1615,7 +1615,7 @@ int main()
     ms1.insert(40);
 
     // Create an empty multiset ms2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     multiset <int, less<int> > ms2;
     ms2.insert(10);
     ms2.insert(20);
@@ -1806,15 +1806,15 @@ int main( )
    cout << "The first element in the reversed multiset is "
         << *ms1_rIter << "." << endl;
 
-   // begin can be used to start an interation
-   // throught a multiset in a forward order
+   // begin can be used to start an iteration
+   // through a multiset in a forward order
    cout << "The multiset is:";
    for ( ms1_Iter = ms1.begin( ) ; ms1_Iter != ms1.end( ); ms1_Iter++ )
       cout << " " << *ms1_Iter;
    cout << endl;
 
-   // rbegin can be used to start an interation
-   // throught a multiset in a reverse order
+   // rbegin can be used to start an iteration
+   // through a multiset in a reverse order
    cout << "The reversed multiset is:";
    for ( ms1_rIter = ms1.rbegin( ) ; ms1_rIter != ms1.rend( ); ms1_rIter++ )
       cout << " " << *ms1_rIter;
@@ -1922,15 +1922,15 @@ int main() {
    cout << "The last element in the reversed multiset is "
         << *ms1_rIter << "." << endl;
 
-   // end can be used to terminate an interation
-   // throught a multiset in a forward order
+   // end can be used to terminate an iteration
+   // through a multiset in a forward order
    cout << "The multiset is: ";
    for ( ms1_Iter = ms1.begin( ) ; ms1_Iter != ms1.end( ); ms1_Iter++ )
       cout << *ms1_Iter << " ";
    cout << "." << endl;
 
    // rend can be used to terminate an interation
-   // throught a multiset in a reverse order
+   // through a multiset in a reverse order
    cout << "The reversed multiset is: ";
    for ( ms1_rIter = ms1.rbegin( ) ; ms1_rIter != ms1.rend( ); ms1_rIter++ )
       cout << *ms1_rIter << " ";

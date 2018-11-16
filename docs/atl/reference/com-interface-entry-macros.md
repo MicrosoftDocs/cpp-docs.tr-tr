@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: 631e7a6f3676114e5d0bcac745dce58df1daf1ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8341061ba6365beb97f4413aab8bfbbfdc25e035
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578145"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693926"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları
 

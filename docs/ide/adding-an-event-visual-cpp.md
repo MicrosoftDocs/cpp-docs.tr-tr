@@ -1,23 +1,26 @@
 ---
-title: Olay Ekleme (Visual C++)
-ms.date: 11/04/2016
+title: Bir olay ekleyin
+ms.date: 11/12/2018
+f1_keywords:
+- vc.codewiz.event.overview
 helpviewer_keywords:
 - ActiveX controls [C++], adding events to
 - MFC ActiveX controls [C++], adding events
 - events [C++], ActiveX controls
+- add event wizard [C++]
 ms.assetid: fe34832a-edfc-4f86-aacb-8df77001873d
-ms.openlocfilehash: 6dd4ecd249e47523b08433bda12838fb8b220157
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d5a8f5666dd04e00f8a438fdbf00320c37e14f4
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444791"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693431"
 ---
-# <a name="adding-an-event-visual-c"></a>Olay Ekleme (Visual C++)
+# <a name="add-an-event"></a>Bir olay ekleyin
 
-Sınıf Görünümü'ndeki kullanarak bir olay ekleyebilirsiniz [olay Ekleme Sihirbazı'nı](../ide/add-event-wizard.md) denetimi sınıfta için yalnızca, [MFC ActiveX denetimi](../mfc/reference/creating-an-mfc-activex-control.md) proje. Başka türde bir proje için bir olay eklemek istediğiniz kullanırsanız **olayları** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+Sınıf Görünümü'ndeki kullanarak bir olay ekleyebilirsiniz [olay Ekleme Sihirbazı](#add-event-wizard) denetimi sınıfta için yalnızca, [MFC ActiveX denetimi](../mfc/reference/creating-an-mfc-activex-control.md) proje. Başka türde bir proje için bir olay eklemek istediğiniz kullanırsanız **olayları** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 
-### <a name="to-add-an-event-to-your-mfc-activex-control-project"></a>MFC ActiveX denetimi projenize bir olay eklemek için
+**MFC ActiveX denetimi projenize bir olay eklemek için:**
 
 1. Sınıf Görünümü'nde projeye sınıflarını görüntülemek için proje düğümünü genişletin.
 
@@ -27,13 +30,54 @@ Sınıf Görünümü'ndeki kullanarak bir olay ekleyebilirsiniz [olay Ekleme Sih
 
 1. Uygun Sihirbazı kutulara olay bilgilerini sağlayın.
 
-1. Tıklayın **son** olay projeye eklenecek.
+1. Seçin **son** olay projeye eklenecek.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="in-this-section"></a>Bu bölümde
 
-[Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
-[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)<br>
-[Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)<br>
-[Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)<br>
-[MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)<br>
-[Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)
+- [Olay Ekleme Sihirbazı](#add-event-wizard)
+
+## <a name="add-event-wizard"></a>Olay Ekleme Sihirbazı
+
+Bu sihirbaz, MFC ActiveX denetimi projesi için bir olay ekler. Kendi olay belirtin, tipik bir stok olayı özelleştirin veya stok olaylar listesinden seçin.
+
+- **Olay adı**
+
+   Sınıftan olay istemek için Otomasyon istemcileri tarafından kullanılan adını ayarlar. Bir ad girin veya listeden birini seçin.
+
+- **Olay türü**
+
+   Eklenecek olay türünü belirtir. Yalnızca gelen seçerseniz kullanılabilir **olay adı** listesi.
+
+   |Seçenek|Açıklama|
+   |------------|-----------------|
+   |**Hisse senedi**|Bir düğmeye tıklatma gibi bir stok olayı Bu sınıf için uygulanacak belirtir. Stok olaylar, Microsoft Foundation Class (MFC) Kitaplığı'nda tanımlanır.|
+   |**Özel**|Olayın kendi uygulamanız kullandığınız belirtir.|
+
+- **İç adı**
+
+   Olayı gönderen üye işlevinin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad temel **olay adı**. Farklı bir ad verin istiyorsanız iç adını değiştirebilirsiniz **olay adı**.
+
+- **Parametre türü**
+
+   Tür için ayarlar **parametre adı**. Türü listeden seçin.
+
+- **Parametre adı**
+
+   Etkinliğiniz geçmek için bir parametre adını ayarlar. Adını yazdıktan sonra seçmelisiniz **Ekle** parametre listesi eklemek için.
+
+   Seçtiğinizde **Ekle**, parametre adı görünür **parametre listesi**.
+
+   > [!NOTE]
+   > Parametre adı sağlayın ve ardından **son** seçtiğiniz önce **Ekle**, sonra parametre olaya eklenmez. Yöntemini bulun ve parametre el ile Ekle gerekir.
+
+- **Add**
+
+   Belirttiğiniz parametre ekler **parametre adı**ve onun türü için **parametre listesi**. Seçin **Ekle** parametre listesine eklenecek.
+
+- **Kaldır**
+
+   Seçtiğiniz parametre kaldırır **parametre listesi** listeden.
+
+- **Parametre listesi**
+
+   Tüm parametreler ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** her parametre türü ile görüntülenecek.

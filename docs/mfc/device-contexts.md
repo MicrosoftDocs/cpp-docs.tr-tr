@@ -32,12 +32,12 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-ms.openlocfilehash: 8eca18795fac96e5cbddb404b901eb35da2de4b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 105e438a9ed3e8f7de7edc813fec516c0e99700a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585984"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694692"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 
@@ -57,21 +57,21 @@ Böyle bir durumda, kullandığınız bir [CClientDC](../mfc/reference/cclientdc
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Cihaz bağlamları (tanım)](https://msdn.microsoft.com/library/windows/desktop/dd183553)
+- [Cihaz bağlamları (tanım)](/windows/desktop/gdi/device-contexts)
 
 - [Bir Görünümde Çizim Yapma](../mfc/drawing-in-a-view.md)
 
 - [Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama](../mfc/interpreting-user-input-through-a-view.md)
 
-- [Çizgiler ve eğriler](https://msdn.microsoft.com/library/windows/desktop/dd145028)
+- [Çizgiler ve eğriler](/windows/desktop/gdi/lines-and-curves)
 
-- [Doldurulmuş şekiller](https://msdn.microsoft.com/library/windows/desktop/dd162714)
+- [Doldurulmuş şekiller](/windows/desktop/gdi/filled-shapes)
 
 - [Yazı tipleri ve metin](/windows/desktop/gdi/fonts-and-text)
 
-- [Renkler](https://msdn.microsoft.com/library/windows/desktop/dd183450)
+- [Renkler](/windows/desktop/gdi/colors)
 
-- [Koordinat ve dönüştürmeler](https://msdn.microsoft.com/library/windows/desktop/dd183475)
+- [Koordinat ve dönüştürmeler](/windows/desktop/gdi/coordinate-spaces-and-transformations)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: 85bda6747c4ef6bed87b7a2ef30a3ef06bdfe29e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d144731d05e861f4b462c4d58022b5155fdeb79b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517864"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694276"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 
@@ -206,7 +206,7 @@ Sıfır dışında yazdırılabilir bir karakterse, değilse sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem çağrısı başarısız olur [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) başarısız olur.
+Bu yöntem çağrısı başarısız olur [GetKeyboardState](/windows/desktop/api/winuser/nf-winuser-getkeyboardstate) başarısız olur.
 
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators
 

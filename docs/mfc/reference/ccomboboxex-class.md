@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-ms.openlocfilehash: 92a81e318c74f1acd39fbfe870a7ad1277b25125
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05545051b145f3beb11e4b48e8f93fd7908a783a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501640"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694250"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx sınıfı
 
@@ -247,7 +247,7 @@ Kalan denetiminde öğe sayısı. Varsa *İIndex* olan geçersiz işlev CB_ERR d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi ileti işlevselliğini uygular [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem)Windows SDK içinde açıklandığı gibi. DeleteItem, çağırdığınızda bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) CBEN_DELETEITEM bildirim iletisi üst pencereye gönderilir.
+Bu üye işlevi ileti işlevselliğini uygular [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem)Windows SDK içinde açıklandığı gibi. DeleteItem, çağırdığınızda bir [wm_notıfy](/windows/desktop/controls/wm-notify) CBEN_DELETEITEM bildirim iletisi üst pencereye gönderilir.
 
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl
 
@@ -373,7 +373,7 @@ Dizin; başarılı olursa, yeni öğe eklendi Aksi takdirde-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırdığınızda `InsertItem`, [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ile ileti [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) bildirim üst pencereye gönderilir.
+Çağırdığınızda `InsertItem`, [wm_notıfy](/windows/desktop/controls/wm-notify) ile ileti [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) bildirim üst pencereye gönderilir.
 
 ##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle
 

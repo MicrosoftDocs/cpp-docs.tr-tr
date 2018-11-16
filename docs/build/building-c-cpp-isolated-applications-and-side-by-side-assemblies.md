@@ -9,16 +9,16 @@ helpviewer_keywords:
 - side-by-side applications [C++]
 - builds [C++], side-by-side assemblies
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
-ms.openlocfilehash: da8bd6d583d6f9d714853e545979d54ddcb79ce5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d487e8a124d2edd7ce5a658d4965f1567756d5a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429177"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694159"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 
-Visual C++ fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modelini destekler [yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications) ve [yan yana derlemeler](/windows/desktop/SbsCs/about-side-by-side-assemblies-). Varsayılan olarak, Visual C++ tüm yerel C/C++ uygulamaları kullanan yalıtılmış uygulamalar derleme [bildirimlerini](https://msdn.microsoft.com/library/aa375365) Visual C++ kitaplıklarındaki bağımlılıklarını tanımlamak için.
+Visual C++ fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modelini destekler [yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications) ve [yan yana derlemeler](/windows/desktop/SbsCs/about-side-by-side-assemblies-). Varsayılan olarak, Visual C++ tüm yerel C/C++ uygulamaları kullanan yalıtılmış uygulamalar derleme [bildirimlerini](/windows/desktop/sbscs/manifests) Visual C++ kitaplıklarındaki bağımlılıklarını tanımlamak için.
 
 C/C++ programları olarak yalıtılmış uygulamalar derleme çeşitli avantajlar sunar. Örneğin, diğer C/C++ uygulamaları yüklediğinizde veya Visual C++ kitaplıklarının kaldırma yalıtılmış bir uygulama etkilenmez. Yalıtılmış uygulamalar tarafından kullanılan visual C++ kitaplıkları, yine de uygulamanın yerel klasörü veya (WinSxS); yerel derleme önbelleğine yükleme dağıtılabilir zaten dağıtılmış uygulamaları kullanılarak basitleştirilebilir için Visual C++ kitaplıklarının ancak bakım bir [yayımcı yapılandırma dosyası](/windows/desktop/SbsCs/publisher-configuration). Yalıtılmış uygulama dağıtım modeli hala olasılığını sistem yöneticileri için açık bırakarak belirli bir bilgisayarda çalışan bir C/C++ uygulamalarında Visual C++ kitaplıklarının en son sürümünü kullandığınızdan emin olmak kolaylaştırır ve uygulama yazarları, sürüm bağlama bunların bağımlı dll uygulamaları denetlemek için.
 

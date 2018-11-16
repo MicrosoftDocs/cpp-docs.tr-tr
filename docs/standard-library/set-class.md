@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-ms.openlocfilehash: 1ee53f7fead721d32ddf4c519dc15c2e1f90fc28
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8f4ad77c28b4643a979d7c3fb22e44e4aebd43dd
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519834"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694744"
 ---
 # <a name="set-class"></a>set Sınıfı
 
@@ -1064,7 +1064,7 @@ int main()
     cout << "After the 2nd element is deleted, the set s1 is:" << endl;
     printset(s1);
 
-    // Fill in some data to test with, one at a time, using an intializer list
+    // Fill in some data to test with, one at a time, using an initializer list
     myset s2{ "meow", "hiss", "purr", "growl", "yowl" };
 
     cout << "Starting data of set s2 is:" << endl;
@@ -1781,14 +1781,14 @@ int main( )
         << *s1_rIter << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a set in a forward order
+   // through a set in a forward order
    cout << "The set is:";
    for ( s1_Iter = s1.begin( ) ; s1_Iter != s1.end( ); s1_Iter++ )
       cout << " " << *s1_Iter;
    cout << endl;
 
    // rbegin can be used to start an iteration
-   // throught a set in a reverse order
+   // through a set in a reverse order
    cout << "The reversed set is:";
    for ( s1_rIter = s1.rbegin( ) ; s1_rIter != s1.rend( ); s1_rIter++ )
       cout << " " << *s1_rIter;
@@ -1894,14 +1894,14 @@ int main() {
         << *s1_rIter << "." << endl;
 
    // end can be used to terminate an iteration
-   // throught a set in a forward order
+   // through a set in a forward order
    cout << "The set is: ";
    for ( s1_Iter = s1.begin( ) ; s1_Iter != s1.end( ); s1_Iter++ )
       cout << *s1_Iter << " ";
    cout << "." << endl;
 
    // rend can be used to terminate an iteration
-   // throught a set in a reverse order
+   // through a set in a reverse order
    cout << "The reversed set is: ";
    for ( s1_rIter = s1.rbegin( ) ; s1_rIter != s1.rend( ); s1_rIter++ )
       cout << *s1_rIter << " ";

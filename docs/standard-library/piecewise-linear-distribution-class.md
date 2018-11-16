@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-ms.openlocfilehash: ff443f4c6721e77de95da49384bc912c2c382930
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 327da9c6793e4e74f099bdc313ce34720561bbd0
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528693"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693470"
 ---
 # <a name="piecewiselineardistribution-class"></a>piecewise_linear_distribution Sınıfı
 
@@ -301,7 +301,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-bir dağıtım nesne Başlatıcısı listesinde aralıkları ile oluşturur *aralıkları* ve işlevden oluşturulan ağırlıkları *weightfunc*.
+Başlatıcı listesi aralıklarını dağıtım nesnesiyle oluşturur *aralıkları* ve işlevden oluşturulan ağırlıkları *weightfunc*.
 
 Tanımlanan Oluşturucusu
 

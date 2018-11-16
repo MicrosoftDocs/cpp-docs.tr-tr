@@ -6,14 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - uicheckstate enumeration [MFC]
 ms.assetid: 2ac0098c-20e7-410c-9685-5ead5cb02b63
-ms.openlocfilehash: 6e04015f33012ddd1c0a75187c89eadedbe01e3d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1411e9b7cb088c063e17cc7c59871e5f0b83ad9c
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528150"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51692508"
 ---
 # <a name="uicheckstate-enumeration"></a>UICheckState Numaralandırması
+
 Bir kullanıcı arabirimi öğesi komutu için onay durumunu açıklar.
 
 ### <a name="syntax"></a>Sözdizimi

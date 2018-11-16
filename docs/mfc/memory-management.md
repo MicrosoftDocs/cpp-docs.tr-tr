@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory [MFC], managing
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-ms.openlocfilehash: b5b91245d08c6c4a17c9ba96a0ca4dcf19932d9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22c5c2c835872a189fe342093a737d7887538256
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461388"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51692758"
 ---
 # <a name="memory-management"></a>Bellek Yönetimi
 
@@ -21,7 +21,7 @@ Bu grup makale, Microsoft Foundation Class Kitaplığı (bellek yönetimi ile il
 
 Yığın ayırma ile her zaman bellek bloğuna işaretçi verilir, genellikle gerçek bellek ile çalışmanıza çerçeve ayırma ile kendisi engellemek, iki ayırma teknikleri arasında ana farklardan biri olan. Başka bir önemli fark iki düzen arasında yığın nesnelerini Programcı tarafından açıkça silinmelidir ederken çerçeve nesneleri otomatik olarak, silinir.
 
-MFC olmayan Windows için programlar, bellek yönetimi hakkında bilgi için [bellek yönetimi](https://msdn.microsoft.com/library/windows/desktop/aa366779) Windows SDK.
+MFC olmayan Windows için programlar, bellek yönetimi hakkında bilgi için [bellek yönetimi](/windows/desktop/memory/memory-management) Windows SDK.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
 

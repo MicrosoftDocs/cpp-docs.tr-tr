@@ -24,12 +24,12 @@ helpviewer_keywords:
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-ms.openlocfilehash: d34b03e307a9c619fab077973e4cc0a4c644de6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 444a54a316b1b1e4cfd26df95d172c7e9748fb88
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597268"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678320"
 ---
 # <a name="getdrives"></a>_getdrives
 
@@ -60,7 +60,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ```C
 // crt_getdrives.c
-// This program retrives and lists out
+// This program retrieves and lists out
 // all the logical drives that are
 // currently mounted on the machine.
 

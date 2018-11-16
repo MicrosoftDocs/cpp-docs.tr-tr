@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-ms.openlocfilehash: 91d1793999c12951bd80e0f592772bbae1e2d679
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab08476923f253d666e024d8944aec64ed0af8da
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463321"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693681"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 
@@ -237,7 +237,7 @@ Gelişmiş kullanım için [ON_CONTROL_RANGE](reference/message-map-macros-mfc.m
 > [!NOTE]
 > ClassWizard, kullanıcı arabiriminde bir ON_CONTROL veya ON_CONTROL_RANGE işleyicisi oluşturmayı desteklemez. Ayrıca bir metin düzenleyicisi ile bunları el ile girmeniz gerekir. ClassWizard bu girişleri ayrıştırma ve bunları yalnızca herhangi diğer ileti eşlemesi girişleri gibi göz atmanıza olanak tanır.
 
-Windows ortak denetimleri daha güçlü kullanın [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) karmaşık denetim bildirimleri için. MFC'nin bu sürümünü on_notıfy ve on_notıfy_range makroları kullanarak bu yeni iletiyi doğrudan desteği vardır. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
+Windows ortak denetimleri daha güçlü kullanın [wm_notıfy](/windows/desktop/controls/wm-notify) karmaşık denetim bildirimleri için. MFC'nin bu sürümünü on_notıfy ve on_notıfy_range makroları kullanarak bu yeni iletiyi doğrudan desteği vardır. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

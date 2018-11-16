@@ -86,12 +86,12 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-ms.openlocfilehash: 0668342468e30733f8257ccd2682bfe785551857
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c7d5df87dc6c8529d18b9f5fb960148c7362129a
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333608"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678580"
 ---
 # <a name="hashset-class"></a>hash_set Sınıfı
 
@@ -1875,7 +1875,7 @@ int main( )
         << *hs1_rIter << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a hash_set in a forward order
+   // through a hash_set in a forward order
    cout << "The hash_set is: ";
    for ( hs1_Iter = hs1.begin( ) ; hs1_Iter != hs1.end( );
          hs1_Iter++ )
@@ -1883,7 +1883,7 @@ int main( )
    cout << endl;
 
    // rbegin can be used to start an iteration
-   // throught a hash_set in a reverse order
+   // through a hash_set in a reverse order
    cout << "The reversed hash_set is: ";
    for ( hs1_rIter = hs1.rbegin( ) ; hs1_rIter != hs1.rend( );
          hs1_rIter++ )
@@ -2010,7 +2010,7 @@ int main( )
         << *hs1_rIter << "." << endl;
 
    // end can be used to terminate an iteration
-   // throught a hash_set in a forward order
+   // through a hash_set in a forward order
    cout << "The hash_set is: ";
    for ( hs1_Iter = hs1.begin( ) ; hs1_Iter != hs1.end( );
          hs1_Iter++ )

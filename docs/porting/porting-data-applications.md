@@ -8,14 +8,15 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 8d10c285-c13f-4e6e-a09e-5ee0f2666b44
-ms.openlocfilehash: ccdd4c05537991ab7605d29c6d2eba1a22851a10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 236fafccc4174401b76965753a78180ec39f659c
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663937"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51692953"
 ---
 # <a name="porting-data-applications"></a>Veri uygulamalarını taşıma
+
 Yıllar içinde Visual C++ veritabanlarıyla çalışmak için birkaç yol sağlamıştır. 2011'de, SQL Server ürün yerel kod içinden erişmek için tercih edilen bir teknoloji olarak ODBC hizalama Microsoft duyurdu. ODBC sektör standardı olan ve bunu kullanarak, kodunuzun en fazla taşınabilirlik birden fazla platform ve veri kaynakları üzerinde elde edin. Çoğu SQL veritabanı ürün ve birçok NoSQL ürünleri ODBC desteği. MFC ODBC sarmalayıcı sınıflar veya bir üçüncü taraf C++ sarmalayıcı kitaplıktır kullanın veya doğrudan alt düzey ODBC API'ları çağırarak ODBC kullanabilirsiniz.
 
 OLE DB COM belirtimine göre alt düzey, yüksek performanslı bir API ve yalnızca Windows üzerinde desteklenir. OLE DB kullanırsanız, programınızın erişme [bağlı sunucuları](/sql/relational-databases/linked-servers/linked-servers-database-engine). ATL OLE DB Şablonları, özel OLE DB sağlayıcıları ve tüketici oluşturmayı daha kolay hale getirmek sağlar. OLE DB en son sürümü, SQL Yerel İstemcisi 11'de birlikte gelir.

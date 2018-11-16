@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-ms.openlocfilehash: fe0871f9778d7a1f74bf74af6030d7f8162d3b79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8259dfe8ead608876b3637d1dca9c3e808bb419d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611854"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694640"
 ---
 # <a name="commandhandler"></a>CommandHandler
 
@@ -54,5 +54,5 @@ Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [COMMAND_H
 
 [Pencere Uygulama](../atl/implementing-a-window.md)<br/>
 [İleti eşlemeleri](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
+[WM_NOTIFY](/windows/desktop/controls/wm-notify)
 

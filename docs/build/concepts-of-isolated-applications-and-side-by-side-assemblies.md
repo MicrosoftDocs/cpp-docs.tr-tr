@@ -5,12 +5,12 @@ helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-ms.openlocfilehash: 6453e68b07013bc5f5799b7252ad9a88e73250f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac354ed34bc3ab849eecf9256b447308f449abfe
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532944"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693580"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 
@@ -22,7 +22,7 @@ Yan yana derleme, paylaşılan veya özel olabilir. [Paylaşılan yan yana derle
 
 ## <a name="manifests-and-search-order"></a>Bildirimler ve arama sırası
 
-Yalıtılmış uygulamalar ve yan yana derlemeler tarafından açıklanmıştır [bildirimlerini](https://msdn.microsoft.com/library/aa375365). Bildirim, harici bir dosyada olabilir veya bir uygulama ya da derleme kaynağı olarak gömülü bir XML belgesidir. Yalıtılmış bir uygulamanın bildirim dosyası, uygulamanın çalışma zamanında bağlanması gereken paylaşılan yan yana derlemelerin adlarını ve sürümlerini yönetmek üzere kullanılır. Yan yana derlemenin bildirimi; yan yana derlemelerin adlarını, sürümlerini, kaynaklarını ve bağımlı derlemelerini belirtir. Paylaşılan bir yan yana derlemenin bildirimi, %WINDIR%\WinSxS\Manifests\ klasörüne yüklenir. Özel bir derleme söz konusu olduğunda, bildirimi, DLL içine bir kimliği 1'e eşit olan bir kaynak olarak eklemenizi öneririz. Özel derlemeye DLL'ninki ile aynı adı verebilirsiniz. Daha fazla bilgi için [hakkında özel derlemeler](/windows/desktop/SbsCs/about-private-assemblies-).
+Yalıtılmış uygulamalar ve yan yana derlemeler tarafından açıklanmıştır [bildirimlerini](/windows/desktop/sbscs/manifests). Bildirim, harici bir dosyada olabilir veya bir uygulama ya da derleme kaynağı olarak gömülü bir XML belgesidir. Yalıtılmış bir uygulamanın bildirim dosyası, uygulamanın çalışma zamanında bağlanması gereken paylaşılan yan yana derlemelerin adlarını ve sürümlerini yönetmek üzere kullanılır. Yan yana derlemenin bildirimi; yan yana derlemelerin adlarını, sürümlerini, kaynaklarını ve bağımlı derlemelerini belirtir. Paylaşılan bir yan yana derlemenin bildirimi, %WINDIR%\WinSxS\Manifests\ klasörüne yüklenir. Özel bir derleme söz konusu olduğunda, bildirimi, DLL içine bir kimliği 1'e eşit olan bir kaynak olarak eklemenizi öneririz. Özel derlemeye DLL'ninki ile aynı adı verebilirsiniz. Daha fazla bilgi için [hakkında özel derlemeler](/windows/desktop/SbsCs/about-private-assemblies-).
 
 Yürütme sırasında Windows, karşılık gelen yan yana derlemeyi aramak ve yüklemek amacıyla uygulama bildirimindeki derleme bilgilerini kullanır. Yalıtılmış bir uygulama bir derleme bağımlılığı belirtiyorsa, işletim sistemi öncelikle %WINDIR%\WinSxS\ klasöründeki yerel derleme önbelleğindeki paylaşılan derlemeler arasında derleme için arama yapar. Gerekli derleme bulunamadığında, işletim sistemi uygulamanın dizin yapısının klasöründe özel bir derleme için arama yapar. Daha fazla bilgi için [derleme arama sırası](/windows/desktop/SbsCs/assembly-searching-sequence).
 

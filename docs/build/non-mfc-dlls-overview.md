@@ -5,18 +5,18 @@ helpviewer_keywords:
 - non-MFC DLLs [C++]
 - DLLs [C++], non-MFC
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
-ms.openlocfilehash: 5646f346ad8ccc62b838962b677b7f1947783ea9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15cceb80b0f771c0c304572e2263b1479d6b0db7
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649793"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693031"
 ---
 # <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
 
 MFC olmayan DLL, MFC dahili olarak kullanmayan bir DLL modülüdür ve DLL'deki dışarı aktarılan işlevleri MFC veya MFC olmayan yürütülebilir dosyaları tarafından çağrılabilir. İşlevleri, genellikle standart C arabirimi kullanan MFC olmayan DLL'den dışarı aktarılır.
 
-MFC olmayan DLL'leri hakkında daha fazla bilgi için [dinamik bağlantı kitaplıklarını](https://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK.
+MFC olmayan DLL'leri hakkında daha fazla bilgi için [dinamik bağlantı kitaplıklarını](/windows/desktop/dlls/dynamic-link-libraries) Windows SDK.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 

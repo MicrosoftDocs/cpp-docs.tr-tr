@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: 94530f17c801c62005e837055ce3608e2eaa512f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87f99b4f037c8cc881b33e1d07b4f07596ee9a1b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499703"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694549"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 
@@ -258,7 +258,7 @@ Kullanılacak bir `CFileDialog` nesne, ilk kullanarak nesne oluşturma `CFileDia
 İletişim kutusu denetimleri başlatmak sonra çağırma [CFileDialog::DoModal](#domodal) iletişim kutusunu görüntülemek için yöntemi kutusunu kullanıcı yolu ve dosya adını yazabilirsiniz. `DoModal` Kullanıcı (IDOK) Tamam veya iptal edin (IDCANCEL) düğmeye tıkladı döndürür. Varsa `DoModal` IDOK, döndürür birini kullanabilirsiniz `CFileDialog` bilgileri almak için genel üye işlevleri koymak kullanıcı tarafından.
 
 > [!NOTE]
-> Birden çok altında Windows Vista veya sonraki çağrılar [IFileDialog::SetFileTypes](https://msdn.microsoft.com/library/windows/desktop/bb775980) bir hataya neden olur. İçin yapılan ikinci çağrı `SetFileTypes` herhangi bir örneği için bir `CFileDialog` Windows Vista veya sonraki sürümlerde E_UNEXPECTED döndürür. Bazı `CFileDialog` yöntemi işlev çağrısı `SetFileTypes`. Örneğin, iki için çağırdığı `CFileDialog::DoModal` aynı örneği için bir `CFileDialog` oluşturur [ASSERT](diagnostic-services.md#assert).
+> Birden çok altında Windows Vista veya sonraki çağrılar [IFileDialog::SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) bir hataya neden olur. İçin yapılan ikinci çağrı `SetFileTypes` herhangi bir örneği için bir `CFileDialog` Windows Vista veya sonraki sürümlerde E_UNEXPECTED döndürür. Bazı `CFileDialog` yöntemi işlev çağrısı `SetFileTypes`. Örneğin, iki için çağırdığı `CFileDialog::DoModal` aynı örneği için bir `CFileDialog` oluşturur [ASSERT](diagnostic-services.md#assert).
 
 `CFileDialog` Paylaşım ihlali, dosya adı doğrulama ve liste kutusu değişiklik bildirimi özel işleme yapmanızı sağlayan birkaç korumalı üyeleri içerir. Çoğu uygulama, varsayılan işleme otomatik olarak uygulandığından kullanın gerekmez. geri çağırma işlevleri bu korumalı üyeleridir. Bu işlevler için ileti eşlemesi girişleri gerekli değildir, çünkü bunlar standart sanal işlev.
 
@@ -851,7 +851,7 @@ IFileOpenDialog* GetIFileOpenDialog();
 
 Bu işlev yalnızca altında Windows Vista veya sonraki sahip bir nesne ile *bVistaStyle* TRUE olarak ayarlayın. Bu işlev NULL döndürür `CFileDialog` değil bir **açık** iletişim kutusu veya *bVistaStyle* FALSE olarak ayarlanır. Son bu durumda, işlev yalnızca NULL döndürür. yayın modunda - hata ayıklama modunda, bir onaylama işlemi oluşturur.
 
-Hakkında daha fazla bilgi için `IFileOpenDialog` arabirim için bkz: [IFileOpenDialog](https://msdn.microsoft.com/library/windows/desktop/bb775834).
+Hakkında daha fazla bilgi için `IFileOpenDialog` arabirim için bkz: [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
 
 ### <a name="example"></a>Örnek
 

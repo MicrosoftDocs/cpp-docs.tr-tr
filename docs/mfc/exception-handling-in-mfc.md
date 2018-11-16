@@ -33,12 +33,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: fcc233b2cc0bfeeb589fec10c94343839f2c8032
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b520072bd0c07e261f2cf4baf51d7ea3d14a5ab
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623450"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694562"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 
@@ -103,7 +103,7 @@ MFC tarafından sağlanan önceden tanımlanmış özel durumlar aşağıdaki ta
 |[CUserException Sınıfı](../mfc/reference/cuserexception-class.md)|Uyaran bir ileti kutusu ile kullanıcı ardından Exception'a genel [CException sınıfı](../mfc/reference/cexception-class.md)|
 
 > [!NOTE]
->  MFC, C++ özel durumlarını hem MFC özel durum makroları destekler. MFC doğrudan desteklemez Windows NT yapılandırılmış özel durum işleyicileri (SEH) bölümünde açıklandığı gibi [yapılandırılmış özel durum işleme](https://msdn.microsoft.com/library/windows/desktop/ms680657).
+>  MFC, C++ özel durumlarını hem MFC özel durum makroları destekler. MFC doğrudan desteklemez Windows NT yapılandırılmış özel durum işleyicileri (SEH) bölümünde açıklandığı gibi [yapılandırılmış özel durum işleme](/windows/desktop/debug/structured-exception-handling).
 
 ##  <a name="_core_further_reading_about_exceptions"></a> Özel durumları hakkında daha fazla okuma
 

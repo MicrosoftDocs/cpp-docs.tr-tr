@@ -2,14 +2,15 @@
 title: Ham dize sabit değerine Dönüştür
 ms.date: 11/16/2016
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
-ms.openlocfilehash: 508ab52dc1ca41a97dd8c24df5c5d45c379ea265
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf492e6796b9d2342b5952abb093bddd5ede114b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509519"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51692608"
 ---
 # <a name="convert-to-raw-string-literal"></a>Ham dize sabit değerine Dönüştür
+
 **Ne:** herhangi bir dize bir C++ ham dize sabit değeri kapatmanızı sağlar.
 
 **Ne zaman:** atlatmalı karakterler olarak işlenen olmamalıdır atlatmalı karakterler içeren bir dize olması.

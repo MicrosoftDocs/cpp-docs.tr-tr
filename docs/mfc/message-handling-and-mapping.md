@@ -6,12 +6,12 @@ helpviewer_keywords:
 - message handling [MFC]
 - message maps [MFC]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-ms.openlocfilehash: 1b109a3f85ffd3311d08c3d749d543b1e625e77c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f76e9b2ef25c8a6c046cb6c47f0f5761854453c9
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628624"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694718"
 ---
 # <a name="message-handling-and-mapping"></a>İleti İşleme ve Eşleme
 
@@ -23,7 +23,7 @@ WM_COMMAND iletileri — genellikle menüler, düğmeler veya Hızlandırıcıla
 
 İleti eşlemeleri (örneğin, menüleri ve araç çubuğu düğmeleri) kullanıcı arabirimi nesnelerini güncelleştirme için bir yol da belirtmeniz geçerli bağlam uyacak şekilde devre dışı bırakma veya etkinleştirme.
 
-İletileri ve ileti kuyrukları Windows hakkında genel bilgi için bkz. [iletileri ve ileti kuyruklarındaki](https://msdn.microsoft.com/library/windows/desktop/ms632590) Windows SDK.
+İletileri ve ileti kuyrukları Windows hakkında genel bilgi için bkz. [iletileri ve ileti kuyruklarındaki](/windows/desktop/winmsg/messages-and-message-queues) Windows SDK.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
 

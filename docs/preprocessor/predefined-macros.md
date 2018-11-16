@@ -1,7 +1,7 @@
 ---
 title: Önceden Tanımlı Makrolar
 ms.custom: update_every_version
-ms.date: 04/30/2018
+ms.date: 11/12/2018
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: 42b81431ca69de84a5d38cca3eaa088bb7255656
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ebc23545817de0f249185700454237c66610c13
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660466"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678360"
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 
@@ -378,6 +378,8 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
    |Visual Studio 2017 sürüm 15.5|1912|
    |Visual Studio 2017 sürüm 15.6|1913|
    |Visual Studio 2017 sürüm 15.7|1914|
+   |Visual Studio 2017 sürüm 15,8|1915|
+   |Visual Studio 2017 sürüm 15.9|1916|
 
    Derleyici yayınları veya belirli bir sürümü Visual Studio'nun veya sonra güncelleştirmeleri, kullanım için test etmek için **>=** karşılaştırmak için (büyük-veya-eşittir) işleci  **&#95;MSC&#95;VER** bilinen karşı Sürüm. Birbirini dışlayan bir şekilde karşılaştırmak için birden fazla sürümü yüklüyse, azalan sırada sürüm numarasının listeleyin, karşılaştırmaları sipariş öneririz. Örneğin, ardından derleyicilerini veya Visual Studio 2013 sonra yayımlanan alır sonra Visual Studio 2013'ten önce yayımlanan tüm derleyicileri için bir eylem bu kod için Visual Studio 2015 ve sonraki sürümlerinde, yayımlanan derleyiciler denetler:
 

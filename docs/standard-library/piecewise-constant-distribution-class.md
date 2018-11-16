@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::piecewise_constant_distribution [C++], param_type
 - std::piecewise_constant_distribution [C++], param_type
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
-ms.openlocfilehash: 8d293a36e2d2d19de7d1b46c231254e1cb6ef1bf
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 0c990953f0cda81366ff2645d3cdf1065850abbd
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524228"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694107"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution Sınıfı
 
@@ -296,7 +296,7 @@ intervals,
     UnaryOperation weightfunc);
 ```
 
-bir dağıtım nesne Başlatıcısı listesinde aralıkları ile oluşturur *aralıkları* ve işlevden oluşturulan ağırlıkları *weightfunc*.
+Başlatıcı listesi aralıklarını dağıtım nesnesiyle oluşturur *aralıkları* ve işlevden oluşturulan ağırlıkları *weightfunc*.
 
 Tanımlanan Oluşturucusu
 ```cpp

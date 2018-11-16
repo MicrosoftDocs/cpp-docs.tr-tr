@@ -45,12 +45,12 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: 49a65680d330752679c86c47c4b142ee3153237c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: caaa3fb40a75292bd32e14ddec33b504e0c1296b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533802"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693720"
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn İşlevleri
 
@@ -139,7 +139,7 @@ Yapılan çağrılar tarafından oluşturulan yeni işlemleri `_spawn` yordamlar
 
 Çağırıyorsanız `_spawn` bir DLL veya bir GUI uygulaması ve bir kanala çıkışı yönlendirmek istiyorsanız, iki seçeneğiniz vardır:
 
-- Bir kanal oluşturmak için Win32 API kullanın. ardından çağırın [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944), başlangıç yapısı ve çağrı tanıtıcı değerlerini ayarlayın [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
+- Bir kanal oluşturmak için Win32 API kullanın. ardından çağırın [AllocConsole](/windows/console/allocconsole), başlangıç yapısı ve çağrı tanıtıcı değerlerini ayarlayın [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
 
 - Çağrı [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md) , bir kanal oluşturmak ve uygulamayı kullanarak çağırma **cmd.exe /c** (veya **command.exe /c**).
 

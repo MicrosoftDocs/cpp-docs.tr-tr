@@ -55,12 +55,12 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA structure [MFC]
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-ms.openlocfilehash: 495d30f9fabcb3a9586504282dee881362988c3c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 9b6a462cf359bbd31958509c4fe7d0d71e490d11
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523498"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694315"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 
@@ -259,10 +259,10 @@ Kullanım [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata)
 [in] Bir cihaz bağlamı işaretçisi.
 
 *iPartId*<br/>
-[in] İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.
+[in] İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](/windows/desktop/controls/parts-and-states). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.
 
 *iStateId*<br/>
-[in] İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210).
+[in] İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](/windows/desktop/controls/parts-and-states).
 
 *strText*<br/>
 [in] Çizmek için metin.
@@ -293,7 +293,7 @@ Bir tema, bir uygulamanın görsel stil tanımlar. Bir tema, metin çizmek için
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210)<br/>
+[Bölümler ve durumlar](/windows/desktop/controls/parts-and-states)<br/>
 [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)<br/>
 [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
 [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)<br/>
@@ -431,7 +431,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ### <a name="parameters"></a>Parametreler
 
 *Bilgileri*<br/>
-[out içinde] A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.
+[out içinde] A [NONCLIENTMETRICS](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -439,7 +439,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 ### <a name="see-also"></a>Ayrıca Bkz.
 
-[NONCLIENTMETRICS yapısı](https://msdn.microsoft.com/library/windows/desktop/ff729175)
+[NONCLIENTMETRICS yapısı](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)
 
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
 

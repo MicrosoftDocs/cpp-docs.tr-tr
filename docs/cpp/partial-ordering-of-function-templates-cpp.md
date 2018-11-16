@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - partial ordering of function templates
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-ms.openlocfilehash: 10b920e4d5f999c3a2c9649ceabb0369813cc401
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a3dc687f197770f7a11440699163787b1dc48ef
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438863"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693457"
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>İşlev Şablonlarının Kısmi Sıralanması (C++)
 

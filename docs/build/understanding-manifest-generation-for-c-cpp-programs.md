@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
-ms.openlocfilehash: d4dceec94a8868ed9b6d744a9f481825bf6af58a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a4391ffd3b7d293ed04a4852582444550570e577
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660453"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693366"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ Programları Bildirim Üretimini Anlama
 
-A [bildirim](https://msdn.microsoft.com/library/aa375365) dış bir XML dosyasına veya bir kaynak olabilir bir XML belgesi bir uygulama ya da derleme katıştırılır. Bildirimi bir [yalıtılmış uygulama](/windows/desktop/SbsCs/isolated-applications) adları ve paylaşılan yan yana derlemeler için uygulaması bağlama çalışma zamanında sürümlerini yönetmek için kullanılır. Yan yana derlemenin bildirimi, adları, sürümlerini, kaynaklarını ve diğer derlemeler bağımlılıklarını belirtir.
+A [bildirim](/windows/desktop/sbscs/manifests) dış bir XML dosyasına veya bir kaynak olabilir bir XML belgesi bir uygulama ya da derleme katıştırılır. Bildirimi bir [yalıtılmış uygulama](/windows/desktop/SbsCs/isolated-applications) adları ve paylaşılan yan yana derlemeler için uygulaması bağlama çalışma zamanında sürümlerini yönetmek için kullanılır. Yan yana derlemenin bildirimi, adları, sürümlerini, kaynaklarını ve diğer derlemeler bağımlılıklarını belirtir.
 
 Yalıtılmış bir uygulama veya bir yan yana derleme için bir bildirim oluşturmak için iki yolu vardır. İlk olarak, derleme yazarı kurallara ve adlandırma gereksinimlerini bildirim dosyasını el ile oluşturabilirsiniz. Bir program, CRT, MFC, ATL veya diğerleri gibi Visual C++ derlemeler yalnızca bağımlı olması durumunda, alternatif olarak, ardından bir bildirimi otomatik olarak bağlayıcı tarafından oluşturulabilir.
 

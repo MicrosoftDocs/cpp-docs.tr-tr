@@ -2,12 +2,12 @@
 title: Ad alanları ve tür görünürlüğü (C + +/ CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: e9efc207fe0ed49fecf30366d265019e7a3ee009
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02a73f84314d4406c5fb8e9b8635a307c30e4c3d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440528"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693900"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C + +/ CX)
 
@@ -40,7 +40,7 @@ Hem meta veriler görünürlük ve kaynak kod erişilebilirlik denetlemek için 
 
 ## <a name="windows-runtime-namespaces"></a>Windows çalışma zamanı ad alanları
 
-Windows API Windows içinde bildirilen türleri oluşur::\* ad alanları. Bu ad alanlarında, Windows için ayrılmıştır ve türleri kendisine eklenemez. İçinde **Nesne Tarayıcısı**, bu ad alanları Windows.winmd'i dosyasında görüntüleyebilirsiniz. Bu ad alanları hakkında daha fazla bilgi için bkz [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377).
+Windows API Windows içinde bildirilen türleri oluşur::\* ad alanları. Bu ad alanlarında, Windows için ayrılmıştır ve türleri kendisine eklenemez. İçinde **Nesne Tarayıcısı**, bu ad alanları Windows.winmd'i dosyasında görüntüleyebilirsiniz. Bu ad alanları hakkında daha fazla bilgi için bkz [Windows API](/uwp/api/).
 
 ## <a name="ccx-namespaces"></a>C + +/ CX ad alanları
 

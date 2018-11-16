@@ -17,12 +17,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: 3ac8037e032112e269332d2bbf9c2065ade84ded
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04acfb9c653df85be8958d7248bafd93f3e0a30b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572114"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693687"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 
@@ -93,7 +93,7 @@ Burada `MyDlg` olduğu **kısa ad** Sihirbazı'nda kişinin girilen **adları** 
 |Denetimler oluşturma|[ATL öğretici](../../atl/active-template-library-atl-tutorial.md)|
 |ATL iletişim kutuları kullanma|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|
 |ATL projesi Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|
-|İletişim kutuları|[İletişim kutuları](https://msdn.microsoft.com/library/windows/desktop/ms632588) ve sonraki konularda Windows SDK'sı|
+|İletişim kutuları|[İletişim kutuları](/windows/desktop/dlgbox/dialog-boxes) ve sonraki konularda Windows SDK'sı|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -197,7 +197,7 @@ INT_PTR DoModal(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-[in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.
+[in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 işlevi.
 
 *dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.

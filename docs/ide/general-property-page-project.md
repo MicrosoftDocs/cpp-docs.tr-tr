@@ -25,12 +25,12 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: 5479b892a2cb97fb645dba4ffac70dd9ac4aeffe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f7af0f3dd9ff373a458a6f93fb78fda443bd8e9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594525"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520485"
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
@@ -110,29 +110,29 @@ Proje varsayılanı bölümündeki özellikler değiştirebileceğiniz varsayıl
 
 - **Yapılandırma türü**
 
-   Aralarından seçim yapılabilecek birkaç yapılandırma türü vardır:
+  Aralarından seçim yapılabilecek birkaç yapılandırma türü vardır:
 
-   - **Uygulama (.exe)**
+  - **Uygulama (.exe)**
 
-      Bağlayıcı araç takımını (C/C++ Derleyici, MIDL, kaynak derleyici, bağlayıcı, BSCMake, XML Web Hizmeti Proxy üreticisi, özel yapı, prebuild, prelink, postbuild olayları) görüntüler.
+     Bağlayıcı araç takımını (C/C++ Derleyici, MIDL, kaynak derleyici, bağlayıcı, BSCMake, XML Web Hizmeti Proxy üreticisi, özel yapı, prebuild, prelink, postbuild olayları) görüntüler.
 
-   - **Dinamik kitaplık (.dll)**
+  - **Dinamik kitaplık (.dll)**
 
-      Bağlayıcı araç takımını görüntüler, / DLL bağlayıcı seçeneğini belirtir ve _wındll öğesini CL öğesine ekler.
+     Bağlayıcı araç takımını görüntüler, / DLL bağlayıcı seçeneğini belirtir ve _wındll öğesini CL öğesine ekler.
 
-   - **Derleme görevleri dosyası**
+  - **Derleme görevleri dosyası**
 
-      Makefile araç takımını (NMake) görüntüler.
+     Makefile araç takımını (NMake) görüntüler.
 
-   - **Statik kitaplık (.lib)**
+  - **Statik kitaplık (.lib)**
 
-      Kitaplıkçı araç kümesini (bağlayıcı araç takımını, kitaplıkçı bağlayıcı için yedek ve XML Web Hizmeti Proxy üreticisi çıkarın dışında aynı) görüntüler.
+     Kitaplıkçı araç kümesini (bağlayıcı araç takımını, kitaplıkçı bağlayıcı için yedek ve XML Web Hizmeti Proxy üreticisi çıkarın dışında aynı) görüntüler.
 
-   - **yardımcı programı**
+  - **yardımcı programı**
 
-      Yardımcı araç takımını (MIDL, özel yapı, prebuild, postbuild olayları) görüntüler.
+     Yardımcı araç takımını (MIDL, özel yapı, prebuild, postbuild olayları) görüntüler.
 
-   Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
+  Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
 
 - **MFC'nin kullanımı**
 

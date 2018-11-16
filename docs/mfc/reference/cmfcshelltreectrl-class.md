@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCShellTreeCtrl [MFC], SetFlags
 - CMFCShellTreeCtrl [MFC], SetRelatedList
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-ms.openlocfilehash: 5f257cb57e7b6f287d5032bdc2655bb65fe946cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf7e5f9c9b44524491737b27098bc91bb472cb32
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445883"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694292"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
 
@@ -53,7 +53,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 |Ad|Açıklama|
 |----------|-----------------|
 |[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Etkinleştirir veya kısayol menüsünden devre dışı bırakır.|
-|[CMFCShellTreeCtrl::GetFlags](#getflags)|Geçirilen bayrakların birleşimi döndürür [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).|
+|[CMFCShellTreeCtrl::GetFlags](#getflags)|Geçirilen bayrakların birleşimi döndürür [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects).|
 |[CMFCShellTreeCtrl::GetItemPath](#getitempath)|Bir öğenin yolunu alır.|
 |[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|Bir işaretçi döndürür [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) bu ile birlikte kullanılan nesne `CMFCShellTreeCtrl` Gezgin benzeri pencere oluşturmak için nesne.|
 |[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|Bu pencere için geçerli bir bildirim iletisi aldığında, bu üye işlevi bu pencerenin ana pencere tarafından çağırılır. (Geçersiz kılmaları [CWnd::OnChildNotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|
@@ -118,7 +118,7 @@ DWORD GetFlags() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bayrakları kümesinde `CMFCShellTreeCtrl` yöntemine gönderilen [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066) her nesne yenilenir. Bayraklarıyla değiştirebilirsiniz [CMFCShellTreeCtrl::SetFlags](#setflags) yöntemi.
+Bayrakları kümesinde `CMFCShellTreeCtrl` yöntemine gönderilen [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) her nesne yenilenir. Bayraklarıyla değiştirebilirsiniz [CMFCShellTreeCtrl::SetFlags](#setflags) yöntemi.
 
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath
 
@@ -269,7 +269,7 @@ void SetFlags(
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCShellTreeCtrl` Tüm kümesine bayrakları geçişleri [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066). Farklı bayrakları değerler hakkında daha fazla bilgi için bkz. [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).
+`CMFCShellTreeCtrl` Tüm kümesine bayrakları geçişleri [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects). Farklı bayrakları değerler hakkında daha fazla bilgi için bkz. [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects).
 
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList
 

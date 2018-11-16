@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: 6b8f84966ed58c5b031518bdf5e9f42cf7cedb48
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2617113f2805f8d1c56e7fa6cbebfe669709c100
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429230"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694042"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
 
@@ -101,7 +101,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem denemeleri ACE isteğe bağlı erişim denetimi listesinin (DACL) belirlemek için ve geçerli güvenlik tanımlayıcısının sistem erişim denetimi listesini (SACL) üst güvenlik tanımlayıcısı ' devralınan. Çağrı [ConvertToAutoInheritPrivateObjectSecurity](https://msdn.microsoft.com/library/windows/desktop/aa376403) işlevi.
+Bu yöntem denemeleri ACE isteğe bağlı erişim denetimi listesinin (DACL) belirlemek için ve geçerli güvenlik tanımlayıcısının sistem erişim denetimi listesini (SACL) üst güvenlik tanımlayıcısı ' devralınan. Çağrı [ConvertToAutoInheritPrivateObjectSecurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) işlevi.
 
 ##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
 
@@ -181,7 +181,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [CreatePrivateObjectSercurity](https://msdn.microsoft.com/library/windows/desktop/aa376405) veya [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581).
+Bu yöntemin çağırdığı [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) veya [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581).
 
 İkinci yöntem yeni nesnenin nesne türü GUID belirterek veya ACE nasıl devralınır denetleme izin verir.
 

@@ -2,12 +2,12 @@
 title: C++ öznitelikleri
 ms.date: 06/01/2018
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: 444abf2ddf6d4563dcbeb5b683adc52f903bd97f
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 81de2816c208d5ddc879f04d70912c3dddcd7832
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520796"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694120"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 

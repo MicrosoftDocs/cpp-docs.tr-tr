@@ -2,12 +2,12 @@
 title: ARM özel durum işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: b2b6b9b3508dd7a4dd42a2e22ad1052851c7c0c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6df8afd453f7e71d1ecc2ebb188c079a3aad02a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522281"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694354"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -15,7 +15,7 @@ ARM üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel duru
 
 ## <a name="arm-exception-handling"></a>ARM özel durum işleme
 
-ARM üzerinde Windows kullanan *geriye doğru izleme kodları* sırasında yığın geriye doğru izleme denetlemek için [yapılandırılmış özel durum işleme](https://msdn.microsoft.com/library/windows/desktop/ms680657) (SEH). Geriye doğru izleme kodları şunlardır: yürütülebilir resmin sanal işlem bulunur bölümde depolanan bayt dizisi. Arayanın yığın çerçevesi için geriye doğru izleme hazırlanırken bir işlevin prolog etkilerini alınabilir, soyut bir yolla işlev prolog ve Epilog kodu işlemi açıklanmaktadır.
+ARM üzerinde Windows kullanan *geriye doğru izleme kodları* sırasında yığın geriye doğru izleme denetlemek için [yapılandırılmış özel durum işleme](/windows/desktop/debug/structured-exception-handling) (SEH). Geriye doğru izleme kodları şunlardır: yürütülebilir resmin sanal işlem bulunur bölümde depolanan bayt dizisi. Arayanın yığın çerçevesi için geriye doğru izleme hazırlanırken bir işlevin prolog etkilerini alınabilir, soyut bir yolla işlev prolog ve Epilog kodu işlemi açıklanmaktadır.
 
 ARM EABI (katıştırılmış uygulama ikili arabirimi) kullanan bir özel durumu geriye doğru izleme modeli geriye doğru izleme kodları belirtir, ancak SEH içindeki zaman uyumsuz durumda işlemci ortasında prolog olduğu işlemelidir Windows, geriye doğru izleme için yeterli değil veya Kapanış işlev. Windows ARM EABI içinde birleşik işlev düzeyi geriye doğru izleme ve dile özgü kapsam geriye doğru izleme, geriye doğru izleme denetimi ayrıca ayırır. Bu nedenlerden dolayı Windows ARM hakkında daha fazla ayrıntı için geriye doğru izleme verileri ve yordamı belirtir.
 

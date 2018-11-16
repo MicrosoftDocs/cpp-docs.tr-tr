@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 6438b9d125cc2b44c6c4525dcfa5a2bd95763304
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 3b4abc1afc99a00d83c25574df06ebfb27141c65
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524436"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694185"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -490,7 +490,7 @@ Her zaman TRUE değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca çağıran [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) Windows SDK içinde açıklandığı gibi.
+Bu işlev yalnızca çağıran [UnregisterClass](/windows/desktop/api/winuser/nf-winuser-unregisterclassa) Windows SDK içinde açıklandığı gibi.
 
 Çağrılırsa, mevcut tüm ana bilgisayar windows yok edildikten sonra sonra temizlemek için bu işlevi çağırın [zaman Atlaxwinınit](#atlaxwininit) ve, bundan böyle bir ana bilgisayar windows oluşturmanız gerekir. Bu işlev çağırırsanız yoksa, işlem sonlandırıldığında pencere sınıfını otomatik olarak kaydı silinecek.
 

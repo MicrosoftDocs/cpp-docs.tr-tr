@@ -88,12 +88,12 @@ helpviewer_keywords:
 - stdext::hash_map::upper_bound
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
-ms.openlocfilehash: eba534dd98e1687a7b1b66f037eed7e509b09c74
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: da046a467333fba9aa106b97e21cf583c8cef75d
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333634"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678567"
 ---
 # <a name="hashmap-class"></a>hash_map Sınıfı
 
@@ -2092,7 +2092,7 @@ int main( )
       cout << " " << pIter -> second;
    cout << "." << endl;
 
-   // opperator[] will also insert by moving a key
+   // operator[] will also insert by moving a key
    hash_map <string, int> hm2;
    string str("a");
    hm2[move(str)] = 1;
@@ -2763,7 +2763,7 @@ int main( )
    hash_map <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    hm1.insert ( hash_map <int, int> :: value_type ( 1, 10 ) );
 
    // Compare other ways to insert objects into a hash_map

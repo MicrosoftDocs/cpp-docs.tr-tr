@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: 59258864eddb251b24f2e191d309707abf3736a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ce3c93c7cb8c26ae6008516c93faa8c8a5b37fb
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441112"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694601"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -388,7 +388,7 @@ UINT ArrangeIconicWindows() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ArrangeIconicWindows](https://msdn.microsoft.com/library/windows/desktop/ms632671) Windows SDK içinde.
+Bkz: [ArrangeIconicWindows](/windows/desktop/api/winuser/nf-winuser-arrangeiconicwindows) Windows SDK içinde.
 
 ##  <a name="attach"></a>  CWindow::Attach
 
@@ -433,7 +433,7 @@ BOOL BringWindowToTop() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673) Windows SDK içinde.
+Bkz: [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -509,7 +509,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ChildWindowFromPoint](https://msdn.microsoft.com/library/windows/desktop/ms632676) Windows SDK içinde.
+Bkz: [ChildWindowFromPoint](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) Windows SDK içinde.
 
 ##  <a name="childwindowfrompointex"></a>  CWindow::ChildWindowFromPointEx
 
@@ -578,7 +578,7 @@ HWND Create(
 [in] Türünde bir değişken [_u_menuorıd](../../atl/reference/u-menuorid-class.md) bir menü veya bir pencere tanımlayıcısı tanıtıcısını belirtme. 0U varsayılan değerdir.
 
 *lpCreateParam*<br/>
-İçerdiği pencere oluşturma veriler için bir işaretçi bir [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) yapısı.
+İçerdiği pencere oluşturma veriler için bir işaretçi bir [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -813,7 +813,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK içinde.
+Bkz: [EnableWindow](/windows/desktop/api/winuser/nf-winuser-enablewindow) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -857,7 +857,7 @@ BOOL GetClientRect(LPRECT lpRect) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetClientRect](https://msdn.microsoft.com/library/windows/desktop/ms633503) Windows SDK içinde.
+Bkz: [GetClientRect](/windows/desktop/api/winuser/nf-winuser-getclientrect) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1109,7 +1109,7 @@ HWND GetLastActivePopup() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetLastActivePopup](https://msdn.microsoft.com/library/windows/desktop/ms633507) Windows SDK içinde.
+Bkz: [GetLastActivePopup](/windows/desktop/api/winuser/nf-winuser-getlastactivepopup) Windows SDK içinde.
 
 ##  <a name="getmenu"></a>  CWindow::GetMenu
 
@@ -1157,7 +1157,7 @@ HWND GetParent() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetParent](https://msdn.microsoft.com/library/windows/desktop/ms633510) Windows SDK içinde.
+Bkz: [GetParent](/windows/desktop/api/winuser/nf-winuser-getparent) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1268,7 +1268,7 @@ HWND GetTopWindow() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetTopWindow](https://msdn.microsoft.com/library/windows/desktop/ms633514) Windows SDK içinde.
+Bkz: [GetTopWindow](/windows/desktop/api/winuser/nf-winuser-gettopwindow) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1363,7 +1363,7 @@ LONG_PTR GetWindowLongPtr(int nIndex) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowLongPtr](https://msdn.microsoft.com/library/windows/desktop/ms633585) Windows SDK içinde.
+Bkz: [GetWindowLongPtr](/windows/desktop/api/winuser/nf-winuser-getwindowlongptra) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1384,7 +1384,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowPlacement](https://msdn.microsoft.com/library/windows/desktop/ms633518) Windows SDK içinde.
+Bkz: [GetWindowPlacement](/windows/desktop/api/winuser/nf-winuser-getwindowplacement) Windows SDK içinde.
 
 ##  <a name="getwindowprocessid"></a>  CWindow::GetWindowProcessID
 
@@ -1396,7 +1396,7 @@ DWORD GetWindowProcessID() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowThreadProcessID](https://msdn.microsoft.com/library/windows/desktop/ms633522) Windows SDK içinde.
+Bkz: [GetWindowThreadProcessID](/windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1412,7 +1412,7 @@ BOOL GetWindowRect(LPRECT lpRect) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowRect](https://msdn.microsoft.com/library/windows/desktop/ms633519) Windows SDK içinde.
+Bkz: [GetWindowRect](/windows/desktop/api/winuser/nf-winuser-getwindowrect) Windows SDK içinde.
 
 ##  <a name="getwindowrgn"></a>  CWindow::GetWindowRgn
 
@@ -1470,7 +1470,7 @@ int GetWindowTextLength() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowTextLength](https://msdn.microsoft.com/library/windows/desktop/ms633521) Windows SDK içinde.
+Bkz: [GetWindowTextLength](/windows/desktop/api/winuser/nf-winuser-getwindowtextlengtha) Windows SDK içinde.
 
 ##  <a name="getwindowthreadid"></a>  CWindow::GetWindowThreadID
 
@@ -1482,7 +1482,7 @@ DWORD GetWindowThreadID() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowThreadProcessID](https://msdn.microsoft.com/library/windows/desktop/ms633522) Windows SDK içinde.
+Bkz: [GetWindowThreadProcessID](/windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1599,7 +1599,7 @@ BOOL IsChild(const HWND hWnd) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Ischild](https://msdn.microsoft.com/library/windows/desktop/ms633524) Windows SDK içinde.
+Bkz: [Ischild](/windows/desktop/api/winuser/nf-winuser-ischild) Windows SDK içinde.
 
 ##  <a name="isdialogmessage"></a>  CWindow::IsDialogMessage
 
@@ -1635,7 +1635,7 @@ BOOL IsIconic() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IsIconic](https://msdn.microsoft.com/library/windows/desktop/ms633527) Windows SDK içinde.
+Bkz: [IsIconic](/windows/desktop/api/winuser/nf-winuser-isiconic) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1663,7 +1663,7 @@ BOOL IsWindow() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IsWindow](https://msdn.microsoft.com/library/windows/desktop/ms633528) Windows SDK içinde.
+Bkz: [IsWindow](/windows/desktop/api/winuser/nf-winuser-iswindow) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1679,7 +1679,7 @@ BOOL IsWindowEnabled() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IsWindowEnabled](https://msdn.microsoft.com/library/windows/desktop/ms646303) Windows SDK içinde.
+Bkz: [IsWindowEnabled](/windows/desktop/api/winuser/nf-winuser-iswindowenabled) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1695,7 +1695,7 @@ BOOL IsWindowVisible() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IsWindowVisible](https://msdn.microsoft.com/library/windows/desktop/ms633530) Windows SDK içinde.
+Bkz: [IsWindowVisible](/windows/desktop/api/winuser/nf-winuser-iswindowvisible) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1711,7 +1711,7 @@ BOOL IsWindowUnicode() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IsWindowUnicode](https://msdn.microsoft.com/library/windows/desktop/ms633529) Windows SDK içinde.
+Bkz: [IsWindowUnicode](/windows/desktop/api/winuser/nf-winuser-iswindowunicode) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -1727,7 +1727,7 @@ BOOL IsZoomed() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IsZoomed](https://msdn.microsoft.com/library/windows/desktop/ms633531) Windows SDK içinde.
+Bkz: [IsZoomed](/windows/desktop/api/winuser/nf-winuser-iszoomed) Windows SDK içinde.
 
 ##  <a name="killtimer"></a>  CWindow::KillTimer
 
@@ -1739,7 +1739,7 @@ BOOL KillTimer(UINT nIDEvent) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [KillTimer](https://msdn.microsoft.com/library/windows/desktop/ms644903) Windows SDK içinde.
+Bkz: [KillTimer](/windows/desktop/api/winuser/nf-winuser-killtimer) Windows SDK içinde.
 
 ##  <a name="lockwindowupdate"></a>  CWindow::LockWindowUpdate
 
@@ -1978,7 +1978,7 @@ BOOL PostMessage(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PostMessage](https://msdn.microsoft.com/library/windows/desktop/ms644944) Windows SDK içinde.
+Bkz: [PostMessage](/windows/desktop/api/winuser/nf-winuser-postmessagea) Windows SDK içinde.
 
 İletiyi işlemek iş parçacığı beklemeden döndürür.
 
@@ -2206,7 +2206,7 @@ static LRESULT SendMessage(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows SDK içinde.
+Bkz: [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -2255,7 +2255,7 @@ BOOL SendNotifyMessage(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SendNotifyMessage](https://msdn.microsoft.com/library/windows/desktop/ms644953) Windows SDK içinde.
+Bkz: [SendNotifyMessage](/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea) Windows SDK içinde.
 
 Pencerenin çağıran iş parçacığı tarafından oluşturulmuşsa `SendNotifyMessage` pencere yordamını ileti işleyene kadar döndürmez. Aksi takdirde, hemen döner.
 
@@ -2269,7 +2269,7 @@ HWND SetActiveWindow() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646311) Windows SDK içinde.
+Bkz: [SetActiveWindow](/windows/desktop/api/winuser/nf-winuser-setactivewindow) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -2285,7 +2285,7 @@ HWND SetCapture() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetCapture](https://msdn.microsoft.com/library/windows/desktop/ms646262) Windows SDK içinde.
+Bkz: [SetCapture](/windows/desktop/api/winuser/nf-winuser-setcapture) Windows SDK içinde.
 
 ##  <a name="setclipboardviewer"></a>  CWindow::SetClipboardViewer
 
@@ -2353,7 +2353,7 @@ HWND SetFocus() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) Windows SDK içinde.
+Bkz: [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -2441,7 +2441,7 @@ HWND SetParent(HWND hWndNewParent) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetParent](https://msdn.microsoft.com/library/windows/desktop/ms633541) Windows SDK içinde.
+Bkz: [SetParent](/windows/desktop/api/winuser/nf-winuser-setparent) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -2527,7 +2527,7 @@ UINT SetTimer(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetTimer](https://msdn.microsoft.com/library/windows/desktop/ms644906) Windows SDK içinde.
+Bkz: [SetTimer](/windows/desktop/api/winuser/nf-winuser-settimer) Windows SDK içinde.
 
 ##  <a name="setwindowcontexthelpid"></a>  CWindow::SetWindowContextHelpId
 
@@ -2566,7 +2566,7 @@ LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetWindowLongPtr](https://msdn.microsoft.com/library/windows/desktop/ms644898) Windows SDK içinde.
+Bkz: [SetWindowLongPtr](/windows/desktop/api/winuser/nf-winuser-setwindowlongptra) Windows SDK içinde.
 
 Bu işlevin yerini `CWindow::SetWindowLong` yöntemi. Hem 32-bit hem de 64 bit Windows sürümleriyle uyumlu kod yazmak için kullanın `CWindow::SetWindowLongPtr`.
 
@@ -2580,7 +2580,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetWindowPlacement](https://msdn.microsoft.com/library/windows/desktop/ms633544) Windows SDK içinde.
+Bkz: [SetWindowPlacement](/windows/desktop/api/winuser/nf-winuser-setwindowplacement) Windows SDK içinde.
 
 ##  <a name="setwindowpos"></a>  CWindow::SetWindowPos
 
@@ -2673,7 +2673,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ShowOwnedPopups](https://msdn.microsoft.com/library/windows/desktop/ms633547) Windows SDK içinde.
+Bkz: [ShowOwnedPopups](/windows/desktop/api/winuser/nf-winuser-showownedpopups) Windows SDK içinde.
 
 ##  <a name="showscrollbar"></a>  CWindow::ShowScrollBar
 
@@ -2697,7 +2697,7 @@ BOOL ShowWindow(int nCmdShow) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ShowWindow](https://msdn.microsoft.com/library/windows/desktop/ms633548) Windows SDK içinde.
+Bkz: [ShowWindow](/windows/desktop/api/winuser/nf-winuser-showwindow) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 
@@ -2713,7 +2713,7 @@ BOOL ShowWindowAsync(int nCmdShow) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ShowWindowAsync](https://msdn.microsoft.com/library/windows/desktop/ms633549) Windows SDK içinde.
+Bkz: [ShowWindowAsync](/windows/desktop/api/winuser/nf-winuser-showwindowasync) Windows SDK içinde.
 
 ##  <a name="updatewindow"></a>  CWindow::UpdateWindow
 

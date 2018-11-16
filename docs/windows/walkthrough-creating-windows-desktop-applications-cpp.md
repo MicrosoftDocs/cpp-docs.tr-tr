@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: fc2080470e3292a459325679a6c5dc00c01d6b35
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da95b1dac2f058de67719b4754d2df6dbeb6f7f0
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528393"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694055"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -132,7 +132,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
    Bu işlevde harcanan, işlemek için kod yazma *iletileri* Windows uygulamanın aldığı zaman *olayları* oluşur. Örneğin, bir kullanıcı uygulamanızda bir Tamam düğmesini seçerse, Windows bir ileti size gönderir ve içinde kod yazabilirsiniz, `WndProc` hangi iş uygun olduğunu mu işlevi. Çağrıldığı *işleme* bir olay. Yalnızca uygulamanız için uygun olan olayları işleyin.
 
-   Daha fazla bilgi için [pencere yordamları](https://msdn.microsoft.com/library/windows/desktop/ms632593).
+   Daha fazla bilgi için [pencere yordamları](/windows/desktop/winmsg/window-procedures).
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain işlevine işlevsellik eklemek için
 
@@ -157,7 +157,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
    Yukarıdaki yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
 
-1. Kayıt `WNDCLASSEX` BT'nin pencerenizin ve iletileri göndermek nasıl hakkında bilmesi için Windows ile. Kullanım [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) işlev ve pencere sınıf yapısını bir bağımsız değişken olarak geçirin. `_T` Kullandığımızdan makrosu kullanılır `TCHAR` türü.
+1. Kayıt `WNDCLASSEX` BT'nin pencerenizin ve iletileri göndermek nasıl hakkında bilmesi için Windows ile. Kullanım [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) işlev ve pencere sınıf yapısını bir bağımsız değişken olarak geçirin. `_T` Kullandığımızdan makrosu kullanılır `TCHAR` türü.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -237,7 +237,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    return (int) msg.wParam;
    ```
 
-   Yapılar ve ileti döngüsü işlevler hakkında daha fazla bilgi için bkz: [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), ve [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   Yapılar ve ileti döngüsü işlevler hakkında daha fazla bilgi için bkz: [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), ve [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    Bu noktada, `WinMain` işlevi aşağıdaki kodu benzemesi gerekir.
 

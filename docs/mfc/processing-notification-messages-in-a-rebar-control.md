@@ -7,12 +7,12 @@ helpviewer_keywords:
 - RBN_ notification messages [MFC]
 - notifications [MFC], CReBarCtrl
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-ms.openlocfilehash: 8cbe9849e16e8bfa9c0d0ce1f96e846bffaab2ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c35a1efb1c93aecf17e8f57b9e96c033aa4334a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621838"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693190"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Bir Rebar Denetiminde Bildirim İletilerini İşleme
 
@@ -38,7 +38,7 @@ Aşağıdaki bildirim iletileri çubuk barınağı denetimi nesne tarafından g�
 
 - RBN_LAYOUTCHANGED kullanıcı denetiminin bantları düzenini değiştirdiği zaman bir çubuk barınağı denetimi tarafından gönderilir.
 
-Bu bildirimleri hakkında daha fazla bilgi için bkz. [Rebar denetimi başvuru](https://msdn.microsoft.com/library/windows/desktop/bb774375) Windows SDK.
+Bu bildirimleri hakkında daha fazla bilgi için bkz. [Rebar denetimi başvuru](/windows/desktop/controls/rebar-control-reference) Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: 6dc3044d1ca402ca099184eced2e5615ff161804
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e6ce3f48e2b0a7b0aa8396047eb4a52015f364d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636884"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694848"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 
@@ -129,7 +129,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |[CMFCColorBar::AllowChangeTextLabels](#allowchangetextlabels)|Metin etiketi rengi düğmesi değiştirip değiştiremeyeceğini belirtir.|
 |[CMFCColorBar::AllowShowOnList](#allowshowonlist)|Renk çubuğu denetim nesnesi özelleştirme işlemi sırasında bir araç çubuğu listesinde görünüp görünmediğini gösterir.|
 |[CMFCColorBar::CalcSize](#calcsize)|Düzen hesaplama işleminin bir parçası olarak framework tarafından çağırılır.|
-|[CMFCColorBar::CreatePalette](#createpalette)|Palet renkleri, belirtilen bir dizideki renklerle Initalizes.|
+|[CMFCColorBar::CreatePalette](#createpalette)|Palet renkleri belirtilen bir dizi renkleri ile başlatır.|
 |[CMFCColorBar::GetColorGridSize](#getcolorgridsize)|Satırlar ve sütunlar renk çubuğu denetim kılavuzundaki sayısını hesaplar.|
 |[CMFCColorBar::GetExtraHeight](#getextraheight)|Geçerli renk çubuğu gibi çeşitli kullanıcı arabirimi öğeleri görüntülemek için gerekli ek yüksekliği hesaplar **diğer** düğmesi, belge renkleri ve benzeri.|
 |[CMFCColorBar::InitColors](#initcolors)|Renklerle belirtilen bir palet veya sistem varsayılan palet renkleri dizisini başlatır.|

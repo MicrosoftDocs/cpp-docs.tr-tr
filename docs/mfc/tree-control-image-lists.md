@@ -6,12 +6,12 @@ helpviewer_keywords:
 - tree controls [MFC], image lists
 - CTreeCtrl class [MFC], image lists
 ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
-ms.openlocfilehash: 2b680ece131df434b65f02501f78f0cdb6507f08
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e42e601fbf803f8ccfe359a10664149ac8f11086
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551768"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693251"
 ---
 # <a name="tree-control-image-lists"></a>Ağaç Denetim Görüntü Listeleri
 
@@ -25,7 +25,7 @@ Durum görüntü listesi belirtilmişse, bir ağaç denetimi durumu görüntüs�
 
 Belirterek **I_IMAGECALLBACK** değeri bir görüntünün dizinini yerine yaklaşık çizilmesini öğesi olana kadar seçilen veya nonselected görüntü belirtme erteleyebilirsiniz. **I_IMAGECALLBACK** göndererek uygulama dizini için Sorgulanacak ağaç denetimi yönlendirir [TVN_GETDISPINFO](/windows/desktop/Controls/tvn-getdispinfo) bildirim iletisi.
 
-[GetImageList](../mfc/reference/ctreectrl-class.md#getimagelist) üye işlevi bir ağaç denetim görüntü listesinin tanıtıcı alır. Daha fazla görüntü listeye eklemeniz gerekiyorsa, bu işlev yararlıdır. Görüntü listeleri hakkında daha fazla bilgi için bkz: [Cımagelist kullanma](../mfc/using-cimagelist.md), [Cımagelist](../mfc/reference/cimagelist-class.md) içinde *MFC başvurusu*, ve [görüntü listeleri](https://msdn.microsoft.com/library/windows/desktop/bb761389) içinde Windows SDK'sı.
+[GetImageList](../mfc/reference/ctreectrl-class.md#getimagelist) üye işlevi bir ağaç denetim görüntü listesinin tanıtıcı alır. Daha fazla görüntü listeye eklemeniz gerekiyorsa, bu işlev yararlıdır. Görüntü listeleri hakkında daha fazla bilgi için bkz: [Cımagelist kullanma](../mfc/using-cimagelist.md), [Cımagelist](../mfc/reference/cimagelist-class.md) içinde *MFC başvurusu*, ve [görüntü listeleri](/windows/desktop/controls/image-lists) içinde Windows SDK'sı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

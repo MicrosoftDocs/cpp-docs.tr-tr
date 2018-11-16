@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-ms.openlocfilehash: bd978bfa65cc003bcb69a309b44254a6d36a2ebd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4aa6da49f7d8235e0358f4fd042d3c720521eb0f
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588641"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694211"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 
@@ -226,7 +226,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi [IShellFolder arabirimi](https://msdn.microsoft.com/library/windows/desktop/bb775075) seçili nesne için.
+Bir işaretçi [IShellFolder arabirimi](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder) seçili nesne için.
 
 ### <a name="remarks"></a>Açıklamalar
 

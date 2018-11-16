@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 14018a1bf3265642f8ab06af51eea51eb1125dc8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 745b04751c96e79c6bfa332ebdde15b254578137
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333543"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694809"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 
@@ -384,7 +384,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi BCM_GETIDEALSIZE ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.
+Bu üye işlevi BCM_GETIDEALSIZE ileti işlevselliğini açıklandığı öykünür [düğmeleri](/windows/desktop/controls/buttons) Windows SDK'sı bölümünü.
 
 ##  <a name="getimagelist"></a>  CButton::GetImageList
 
@@ -405,7 +405,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi BCM_GETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.
+Bu üye işlevi BCM_GETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](/windows/desktop/controls/buttons) Windows SDK'sı bölümünü.
 
 ##  <a name="getnote"></a>  CButton::GetNote
 
@@ -617,7 +617,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi BCM_GETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.
+Bu üye işlevi BCM_GETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](/windows/desktop/controls/buttons) Windows SDK'sı bölümünü.
 
 ##  <a name="setbitmap"></a>  CButton::SetBitmap
 
@@ -870,7 +870,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi BCM_SETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.
+Bu üye işlevi BCM_SETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](/windows/desktop/controls/buttons) Windows SDK'sı bölümünü.
 
 ##  <a name="setnote"></a>  CButton::SetNote
 
@@ -1112,7 +1112,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi BCM_SETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.
+Bu üye işlevi BCM_SETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](/windows/desktop/controls/buttons) Windows SDK'sı bölümünü.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

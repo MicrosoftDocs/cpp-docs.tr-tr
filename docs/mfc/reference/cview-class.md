@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: f325423c940df46940d7074c599eb8e502e90586
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 679cdc5b5a0a85ade09fe1999e8de40300a8ae8e
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669085"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694393"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
@@ -548,7 +548,7 @@ Hiçbir şey yapma ve framework çağırmalıdır belirtmek için bir kukla değ
 
 Bu işlev bir sağ fare düğmesi sürükle ve bırak etkisini uygulamak için geçersiz kılın. Sağ fare düğmesi sürükle ve bırak genellikle bir menü görüntüler seçenekler sağ fare düğmesi bırakıldığında.
 
-Kılacağınızı `OnDropEx` sağ fare düğmesi için sorgu. Çağırabilirsiniz [GetKeyState](https://msdn.microsoft.com/library/windows/desktop/ms646301) veya sağ fare düğmesi durumundan depolamak, [OnDragEnter](#ondragenter) işleyici.
+Kılacağınızı `OnDropEx` sağ fare düğmesi için sorgu. Çağırabilirsiniz [GetKeyState](/windows/desktop/api/winuser/nf-winuser-getkeystate) veya sağ fare düğmesi durumundan depolamak, [OnDragEnter](#ondragenter) işleyici.
 
 - Sağ fare düğmesi kapalı ise, geçersiz kılma bırakma kaynağı tarafından açılan etkileri desteği sunan bir açılan menü görüntülemelidir.
 

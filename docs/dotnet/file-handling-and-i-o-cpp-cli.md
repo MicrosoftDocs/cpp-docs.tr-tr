@@ -24,14 +24,15 @@ helpviewer_keywords:
 - files [C++], text
 - text files, writing in C++
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-ms.openlocfilehash: 697d193f2239d9d22e8d94d479bbf24784e2c6ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f60ece05443393456693aba3bc674f52822432a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585659"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693483"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
+
 .NET Framework kullanan çeşitli dosya işlemlerini gösterir.
 
 Aşağıdaki konular alanında tanımlanan sınıfların kullanımını gösteren <xref:System.IO> dosya işlemleri için çeşitli gerçekleştirmek için ad alanı.

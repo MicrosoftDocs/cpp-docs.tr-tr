@@ -37,12 +37,12 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-ms.openlocfilehash: 5502dae40392679f47b691a822260accbf597dc0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a246e907d401167011b5a3e1306c146a338e233a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555109"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694380"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 
@@ -607,7 +607,7 @@ MESSAGE_HANDLER makroda belirtilen herhangi bir işlev gibi tanımlanmış olmas
 > [!NOTE]
 >  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile bildirebilirsiniz [ALT_MSG_MAP](#alt_msg_map). [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
 
-MESSAGE_HANDLER ek olarak, kullandığınız [COMMAND_HANDLER](#command_handler) ve [NOTIFY_HANDLER](#notify_handler) eşlemek için [WM_COMMAND](/windows/desktop/menurc/wm-command) ve [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri , sırasıyla.
+MESSAGE_HANDLER ek olarak, kullandığınız [COMMAND_HANDLER](#command_handler) ve [NOTIFY_HANDLER](#notify_handler) eşlemek için [WM_COMMAND](/windows/desktop/menurc/wm-command) ve [wm_notıfy](/windows/desktop/controls/wm-notify) iletileri , sırasıyla.
 
 ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
 
@@ -644,7 +644,7 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti tabanlı yalnızca bildirim kod.
+Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](/windows/desktop/controls/wm-notify) ileti tabanlı yalnızca bildirim kod.
 
 ```
 NOTIFY_CODE_HANDLER(cd, func)
@@ -683,7 +683,7 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="remarks"></a>Açıklamalar
 
-NOTIFY_HANDLER eşleyen bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti.
+NOTIFY_HANDLER eşleyen bir [wm_notıfy](/windows/desktop/controls/wm-notify) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti.
 
 NOTIFY_HANDLER makroda belirtilen herhangi bir işlev gibi tanımlanmış olması gerekir:
 
@@ -708,7 +708,7 @@ ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](
 
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti tabanlı yalnızca denetim tanımlayıcısı.
+Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](/windows/desktop/controls/wm-notify) ileti tabanlı yalnızca denetim tanımlayıcısı.
 
 ```
 NOTIFY_ID_HANDLER( id, func )
@@ -728,7 +728,7 @@ NOTIFY_ID_HANDLER( id, func )
 
 ##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER
 
-Benzer şekilde [NOTIFY_RANGE_HANDLER](#notify_range_handler), ancak haritaları [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.
+Benzer şekilde [NOTIFY_RANGE_HANDLER](#notify_range_handler), ancak haritaları [wm_notıfy](/windows/desktop/controls/wm-notify) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.
 
 ```
 NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -758,7 +758,7 @@ Bu aralık, ileti gönderilirken denetimin tanımlayıcının temel alır.
 
 ##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak haritaları [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri denetimleri aralığından tek işleyici işlevi.
+Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak haritaları [wm_notıfy](/windows/desktop/controls/wm-notify) iletileri denetimleri aralığından tek işleyici işlevi.
 
 ```
 NOTIFY_RANGE_HANDLER( idFirst, idLast, func )

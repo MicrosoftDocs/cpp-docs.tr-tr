@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: cb1143b51dafd9711e058134a9338e28ffcb44b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a15291b49127b6c5f1efd97d8102b272c126cc10
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599894"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694369"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 
@@ -391,7 +391,7 @@ Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Bu işlevi yerine kullanmalısınız [CMFCMenuBar::Create](#create) araç çubuğu stili yanı sıra stilleri belirtmek istediğinizde. Bazı sık kullanılan ek TBSTYLE_TRANSPARENT ve CBRS_TOP stillerdir.
 
-Ek stilleri bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles), [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles), ve [ortak pencere stilleri](https://msdn.microsoft.com/library/windows/desktop/ms632600).
+Ek stilleri bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles), [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles), ve [ortak pencere stilleri](/windows/desktop/winmsg/window-styles).
 
 ### <a name="example"></a>Örnek
 

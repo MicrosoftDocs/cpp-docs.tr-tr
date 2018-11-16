@@ -86,12 +86,12 @@ helpviewer_keywords:
 - stdext::hash_multimap::upper_bound
 - stdext::hash_multimap::value_comp
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
-ms.openlocfilehash: 45325f5669da8617e0dee774bf884901dda68a40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8510bbc89a22fe3eb8df6bbf8ce77db44c7a65a0
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512996"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678541"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap Sınıfı
 
@@ -2554,7 +2554,7 @@ int main( )
    hash_multimap <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    hm1.insert ( hash_multimap <int, int> :: value_type ( 1, 10 ) );
 
    // Compare another way to insert objects into a hash_multimap
