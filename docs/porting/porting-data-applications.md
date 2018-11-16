@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 8d10c285-c13f-4e6e-a09e-5ee0f2666b44
-ms.openlocfilehash: 236fafccc4174401b76965753a78180ec39f659c
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
-ms.translationtype: HT
+ms.openlocfilehash: 9fa81a99113951bd053cdbd0b284ae6eb0919322
+ms.sourcegitcommit: b08ddf79ea76369c388173913e4e8f6fd8ad02d5
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692953"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830458"
 ---
 # <a name="porting-data-applications"></a>Veri uygulamalarını taşıma
 
@@ -21,7 +21,7 @@ Yıllar içinde Visual C++ veritabanlarıyla çalışmak için birkaç yol sağl
 
 OLE DB COM belirtimine göre alt düzey, yüksek performanslı bir API ve yalnızca Windows üzerinde desteklenir. OLE DB kullanırsanız, programınızın erişme [bağlı sunucuları](/sql/relational-databases/linked-servers/linked-servers-database-engine). ATL OLE DB Şablonları, özel OLE DB sağlayıcıları ve tüketici oluşturmayı daha kolay hale getirmek sağlar. OLE DB en son sürümü, SQL Yerel İstemcisi 11'de birlikte gelir.
 
-Eski uygulamanızı SQL Server'a bağlanmak için OLE DB ya da daha üst düzey ADO arabirimini kullanıyorsa ve bağlı sunucular eriştiğiniz değil, ODBC yakın gelecekte geçirmeyi düşünmelisiniz. Platformlar arası taşınabilirlik veya en son SQL Server özelliklerini gerektirmiyorsa, büyük olasılıkla ODBC (MSDASQL) için Microsoft OLE DB sağlayıcısı kullanabilirsiniz.  MSDASQL ODBC sürücüsü aracılığıyla veri kaynaklarına erişim için OLE DB ve ADO (hangi OLEDB dahili olarak kullanılır) üzerinde oluşturulan uygulamalar sağlar. Tüm çeviri katmanı olduğu gibi ile MSDASQL veritabanı performansı etkileyebilir. Etkisi signifant uygulamanız için olup olmadığını belirlemek için test etmeniz gerekir. MSDASQL Windows işletim sistemiyle birlikte gelir ve teknoloji 64-bit sürümünü eklemek için ilk Windows sürümleri, Windows Server 2008 ve Windows Vista SP1 değildir.
+Eski uygulamanızı SQL Server'a bağlanmak için OLE DB ya da daha üst düzey ADO arabirimini kullanıyorsa ve bağlı sunucular eriştiğiniz değil, ODBC yakın gelecekte geçirmeyi düşünmelisiniz. Platformlar arası taşınabilirlik veya en son SQL Server özelliklerini gerektirmiyorsa, büyük olasılıkla ODBC (MSDASQL) için Microsoft OLE DB sağlayıcısı kullanabilirsiniz.  MSDASQL ODBC sürücüsü aracılığıyla veri kaynaklarına erişim için OLE DB ve ADO (hangi OLEDB dahili olarak kullanılır) üzerinde oluşturulan uygulamalar sağlar. Tüm çeviri katmanı olduğu gibi ile MSDASQL veritabanı performansını etkileyebilir. Etkisi, uygulamanız için önemli olup olmadığını belirlemek için test etmeniz gerekir. MSDASQL Windows işletim sistemiyle birlikte gelir ve teknoloji 64-bit sürümünü eklemek için ilk Windows sürümleri, Windows Server 2008 ve Windows Vista SP1 değildir.
 
 ODBC uygulamaları için SQL Native Client bileşeni (SNAC), tek bir DLL'nin OLE DB ve ODBC sürücülerini paketler kullanım dışı bırakılmıştır. SQL Server 2012 sürümünü SNAC (SQLNCLI11. Diğer SQL Server bileşenleri bağımlı olduğundan, DLL) SQL Server 2016 ile birlikte gelir. Ancak, SQL Server veya Azure SQL veritabanına ODBC üzerinden bağlanma yeni C++ uygulamalarını kullanması gereken [en son ODBC sürücüsü](/sql/connect/odbc/download-odbc-driver-for-sql-server). Daha fazla bilgi için [SQL Server yerel istemcisi programlama](/sql/relational-databases/native-client/sql-server-native-client-programming)
 

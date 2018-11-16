@@ -6,12 +6,12 @@ ms.technology:
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 7755e0f1cb2292fc88788ab1b75e19c00f144310
-ms.sourcegitcommit: 48d7d17820be7a95b793e2485b7223879ece5f08
-ms.translationtype: HT
+ms.openlocfilehash: ad34e2721723e113417b45cf7c1da0da4575837f
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51635171"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694406"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#update_159)
 
@@ -1021,7 +1021,7 @@ struct A
 };
 ```
 
-Sorunu gidermek için bildirimleri aynı sırada olmasını ıntializer listesini düzenleyin. Bir veya iki başlatıcılar temel sınıf üyelerine başvuru benzer bir uyarı tetiklenir.
+Sorunu gidermek için bildirimleri aynı sırada olmasını başlatıcı listesi düzenleyin. Bir veya iki başlatıcılar temel sınıf üyelerine başvuru benzer bir uyarı tetiklenir.
 
 Uyarı devre dışı varsayılan olarak ve yalnızca ile derlenmiş kod etkiler unutmayın **/Wall**.
 
