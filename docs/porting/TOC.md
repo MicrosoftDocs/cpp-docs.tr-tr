@@ -4,7 +4,7 @@
 ## [2015 ve 2017 arasındaki C++ İkili Uyumluluğu](binary-compat-2015-2017.md)
 ## [Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)
 ## [Üçüncü Taraf Kitaplıklarını Taşıma](porting-third-party-libraries.md)
-## [Veri Uygulamalarını Taşıma](porting-data-applications.md)
+## [Veri Uygulamalarını Taşıma](../data/data-access-programming-mfc-atl.md)
 ## [Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](porting-and-upgrading-examples-and-case-studies.md)
 ### [Taşıma Kılavuzu: MFC Scribble](porting-guide-mfc-scribble.md)
 ### [Taşıma Kılavuzu: COM Spy](porting-guide-com-spy.md)

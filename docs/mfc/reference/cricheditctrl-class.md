@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: e8575c2eb814bd7fb3cb307654b0e3622506c6c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 756f50afd9b67e4895d8d1b15652602630c24918
+ms.sourcegitcommit: 984fb4814a2dd9bcea5ec88c9528707f17a7cffa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505423"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51949550"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 
