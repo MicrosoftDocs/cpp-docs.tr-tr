@@ -1,16 +1,16 @@
 ---
 title: 'İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 85622b68f94342ece2c9fc666b9ff6d515cfe10b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1230cf2b3fa510aeca8516e41cf30f9665987d05
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472443"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176321"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
 
@@ -104,11 +104,11 @@ Bu bölümde, Mandelbrot düzgünleştiren parçalı çizmek kullanılan nasıl 
 
    [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
 
-9. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
+1. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
 
 Aşağıdaki çizim Mandelbrot uygulama sonuçları gösterilmektedir.
 
-![Mandelbrot uygulama](../../parallel/concrt/media/mandelbrot.png "mandelbrot")
+![Mandelbrot uygulama](../../parallel/concrt/media/mandelbrot.png "Mandelbrot uygulama")
 
 Hesaplama için her piksel hesaplama açısından pahalı olduğundan, genel hesaplama bitmeden UI iş parçacığı ek iletiler işleyemiyor. Bu uygulama yanıtlama hızını azaltır. Ancak, bu sorunu UI iş parçacığından işi kaldırma tarafından hafifletmek.
 

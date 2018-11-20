@@ -1,6 +1,6 @@
 ---
 title: 'MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma'
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 f1_keywords:
 - bindable
 - requestedit
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: 9efac8ba0889d648def622ca045b9398c8eeef11
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: a5cb73496cd6678e3f45500d9d53c2127b0fb17c
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518495"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175815"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
@@ -30,7 +30,8 @@ ActiveX denetimleri daha güçlü kullanımlarını sağlayan bir veritabanında
 
 Bu makale, görevin denetim yan kapsar. Veri bağlama etkileşimleri veritabanı ile uygulama denetim kapsayıcısı sorumluluğundadır. Veritabanı etkileşimleri kapsayıcınızda nasıl yönettiğiniz, bu belgenin kapsamı dışındadır olduğu. Veri bağlama için denetimin nasıl hazırlamanız bu makalenin geri kalanında açıklanmıştır.
 
-![Bir veri kavramsal diyagramı&#45;bağlı denetim](../mfc/media/vc374v1.gif "vc374v1") veriye bağlı denetim kavramsal diyagramı
+![Bir veri kavramsal diyagramı&#45;bağlı denetim](../mfc/media/vc374v1.gif "veri kavramsal diyagramı&#45;bağlı denetimi") <br/>
+Veriye bağlı denetim kavramsal diyagramı
 
 `COleControl` Sınıfı uygulamak için kolay bir işlem bağlama verilerini iki üye işlevleri sağlar. İlk işlev [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), özellik değerini değiştirmek için izin istemek için kullanılır. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#boundpropertychanged), ikinci işlev, özellik değeri başarıyla değiştirildikten sonra çağırılır.
 

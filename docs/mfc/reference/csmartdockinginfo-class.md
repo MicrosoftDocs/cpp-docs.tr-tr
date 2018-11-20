@@ -1,6 +1,6 @@
 ---
 title: Csmartdockingınfo sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CSmartDockingInfo
 - AFXDOCKINGMANAGER/CSmartDockingInfo
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-ms.openlocfilehash: 885af55987c2d1e78cd0145fcee5ca0f4ef67dc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8931af856bc75bd499d8237278998adfcdb02a6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524672"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176776"
 ---
 # <a name="csmartdockinginfo-class"></a>Csmartdockingınfo sınıfı
 
@@ -75,7 +75,7 @@ class CSmartDockingInfo : public CObject
 
 Framework tutamaçları yerleştirme işaretçilerinin dahili olarak akıllı. Aşağıdaki resimde, standart akıllı yerleştirme işaretçilerinin gösterilmektedir:
 
-![Akıllı yerleştirme için standart işaretçileri](../../mfc/reference/media/nextsdmarkers.png "nextsdmarkers")
+![Akıllı yerleştirme için standart işaretçileri](../../mfc/reference/media/nextsdmarkers.png "akıllı yerleştirme için standart işaretçileri")
 
 Bu çizimde soldaki resim etkin sekmeye yerleşik olmayan bir yönetim grubu akıllı yerleştirme işaret gösterir. Ortada resmi bir sağ kenarı akıllı yerleştirme işaret gösterir. Sağdaki resimde etkin sekmeye yerleştirme sahip bir yönetim grubu akıllı yerleştirme işaret gösterilir. Beş yerleştirme işaret bit eşlemler Akıllı ve ana bir bit eşlem merkezi grubu akıllı yerleştirme işaret vardır.
 
@@ -93,7 +93,7 @@ Aşağıdaki parametreleri, akıllı yerleştirme işaretçilerinin özelleştir
 
 Aşağıdaki çizimde özelleştirilmiş akıllı yerleştirme işaretçilerinin örneği gösterilmektedir:
 
-![Akıllı yerleştirme için özel işaretçileri](../../mfc/reference/media/nextsdmarkerscustom.png "nextsdmarkerscustom")
+![Akıllı yerleştirme için özel işaretçileri](../../mfc/reference/media/nextsdmarkerscustom.png "akıllı yerleştirme için özel işaretçileri")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

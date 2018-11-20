@@ -1,18 +1,18 @@
 ---
 title: 'İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - debugging, C++ Accelerated Massive Parallelism
 - C++ AMP, debugging
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 4f8cdc315b561b5cbb4538e8486208d6278af9df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 610cf317982204715d55d12ece510cb477543f4d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579913"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176698"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama
 
@@ -201,7 +201,8 @@ Bu yordamda, yerel Windows hata ayıklayıcı Bu uygulamadaki CPU kodu doğru ol
 
 4. (Yaklaşık satırları 67 satır 70) aşağıdaki çizimde gösterilen kod satırlarını üzerinde kesme noktaları ayarlayın.
 
-     ![CPU kesme noktaları](../../parallel/amp/media/campcpubreakpoints.png "campcpubreakpoints") CPU kesme noktaları
+   ![CPU kesme noktaları](../../parallel/amp/media/campcpubreakpoints.png "CPU kesme noktaları") <br/>
+   CPU kesme noktaları
 
 5. Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**.
 
@@ -229,7 +230,8 @@ Bu bölümde yer alan kod GPU kodunda hata ayıklama işlemini gösterir, `sum_k
 
 6. Bir kesme noktası 30 satırında aşağıdaki çizimde gösterildiği gibi ayarlayın.
 
-     ![GPU kesme noktaları](../../parallel/amp/media/campgpubreakpoints.png "campgpubreakpoints") GPU kesme noktası
+   ![GPU kesme noktaları](../../parallel/amp/media/campgpubreakpoints.png "GPU kesme noktaları") <br/>
+   GPU kesme noktası
 
 7. Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**. GPU Bu kod satırlarını CPU üzerinde yürütülen çünkü hata ayıklama sırasında CPU kod satırlarındaki 67 ve 70 kesme noktaları yürütülmez.
 
@@ -241,7 +243,8 @@ Bu bölümde yer alan kod GPU kodunda hata ayıklama işlemini gösterir, `sum_k
 
 2. Dock **GPU iş parçacıkları** penceresinin Visual Studio'nun altındaki. Seçin **genişletin iş parçacığı anahtarı** kutucuğu ve iş parçacığı metin kutularını görüntülemek için düğmeyi. **GPU iş parçacıkları** penceresi, aşağıdaki çizimde gösterildiği gibi GPU iş parçacıkları, etkin ve engellenen toplam sayısını gösterir.
 
-     ![GPU iş parçacıkları penceresi 4 etkin iş parçacığı sayısı ile](../../parallel/amp/media/campc.png "campc") GPU iş parçacıkları penceresi
+   ![GPU iş parçacıkları penceresi 4 etkin iş parçacığı sayısı ile](../../parallel/amp/media/campc.png "4 etkin iş parçacığı sayısı ile GPU iş parçacıkları penceresi") <br/>
+   GPU iş parçacıkları penceresi
 
    Bu işlem için ayrılan 313 kutucukları vardır. Her kutucuk, 32 iş parçacığı içerir. Bir yazılım öykünücüsü üzerinde GPU yerel hata ayıklama oluştuğu için dört etkin GPU iş parçacıkları vardır. Dört iş parçacığı yönergeleri aynı anda yürütmek ve sonra birlikte sonraki yönergeyi geçin.
 
@@ -263,13 +266,15 @@ Bu bölümde yer alan kod GPU kodunda hata ayıklama işlemini gösterir, `sum_k
 
 3. Emin olun **iş parçacıkları** listenin sol üst köşedeki seçilir. Aşağıdaki çizimde, **Paralel Yığınlar** penceresi gördüğünüz GPU iş parçacıkları çağrı yığını odaklanmış bir görünümünü gösterir **GPU iş parçacıkları** penceresi.
 
-     ![Paralel Yığınlar penceresini 4 etkin iş parçacığı sayısı ile](../../parallel/amp/media/campd.png "campd") Paralel Yığınlar penceresi
+   ![Paralel Yığınlar penceresini 4 etkin iş parçacığı sayısı ile](../../parallel/amp/media/campd.png "4 etkin iş parçacığı sayısı ile Paralel Yığınlar penceresi") <br/>
+   Paralel Yığınlar penceresi
 
    32 iş parçacığı oluştu gelen `_kernel_stub` lambda ifadesine `parallel_for_each` işlev çağrısı ve sonra `sum_kernel_tiled` paralel azaltma oluştuğu işlevi. 28 32 iş parçacığı dışında için progressed [tile_barrier::wait](reference/tile-barrier-class.md#wait) deyimi ve diğer 4 iş parçacıklarını etkin ise satır 22'yi engellenen kalır `sum_kernel_tiled` satırı 30 işlevi.
 
    Kullanılabilen bir GPU iş parçacığı özelliklerini inceleyebilirsiniz **GPU iş parçacıkları** penceresi zengin DataTip içinde **Paralel Yığınlar** penceresi. Bunu yapmak için fare işaretçisini yığın çerçevesi rest **sum_kernel_tiled**. DataTip aşağıda gösterilmiştir.
 
-     ![Paralel Yığınlar penceresi için DataTip](../../parallel/amp/media/campe.png "campe") GPU iş parçacığı DataTip
+   ![Paralel Yığınlar penceresi için DataTip](../../parallel/amp/media/campe.png "DataTip Paralel Yığınlar penceresi") <br/>
+   GPU iş parçacığı DataTip
 
    Hakkında daha fazla bilgi için **Paralel Yığınlar** penceresinde görmek [Paralel Yığınlar penceresini kullanma](/visualstudio/debugger/using-the-parallel-stacks-window).
 
@@ -291,7 +296,8 @@ Bu bölümde yer alan kod GPU kodunda hata ayıklama işlemini gösterir, `sum_k
 
    Seçin **localA [localIdx [0]]** sütunu sıralamak için sütun üst bilgisi. Sıralama sonuçları aşağıdaki çizimde **localA [localIdx [0]]**.
 
-     ![Paralel İzleme penceresi sıralanmış sonuçları](../../parallel/amp/media/campf.png "campf") sonuçlarını sıralama
+   ![Paralel İzleme penceresi sıralanmış sonuçları](../../parallel/amp/media/campf.png "sıralanmış sonuçları ile paralel İzleme penceresi") <br/>
+   Sonuçları sıralama
 
    İçeriği dışa aktarabilirsiniz **paralel izleme** seçerek Excel penceresine **Excel** düğmesine ve ardından **Excel'de Aç**. Geliştirme bilgisayarınızda bulunan Excel varsa, bu içeriği içeren bir Excel çalışma sayfası açılır.
 
@@ -313,7 +319,8 @@ Bunları işaretlemesini belirli GPU iş parçacıkları işaretleyebilirsiniz *
 
    Aşağıdaki çizimde dört etkin bayraklı iş parçacıklarını içinde **GPU iş parçacıkları** penceresi.
 
-     ![GPU iş parçacıkları penceresi ile bayraklı iş parçacıklarını](../../parallel/amp/media/campg.png "campg") GPU iş parçacıkları penceresinde Etkin iş parçacığı sayısı
+   ![GPU iş parçacıkları penceresi ile bayraklı iş parçacıklarını](../../parallel/amp/media/campg.png "bayraklı iş parçacıklarını GPU iş parçacıkları penceresi") <br/>
+   GPU iş parçacıkları penceresinde Etkin iş parçacığı sayısı
 
    **Paralel izleme** penceresi ve, DataTip **Paralel Yığınlar** her iki pencere bayraklı iş parçacıklarını gösterir.
 
@@ -321,8 +328,8 @@ Bunları işaretlemesini belirli GPU iş parçacıkları işaretleyebilirsiniz *
 
    Seçin **sadece bayrak eklenmiş Göster** düğmesi herhangi bir Windows veya **hata ayıklama konumu** araç çubuğu. Aşağıdaki çizimde gösterildiği **sadece bayrak eklenmiş Göster** düğmesini **hata ayıklama konumu** araç çubuğu.
 
-     ![Hata ayıklama konumu araç çubuğu Göster'i yalnızca bayrak simgesiyle](../../parallel/amp/media/camph.png "camph")
-**sadece bayrak eklenmiş Göster** düğmesi
+   ![Hata ayıklama konumu araç çubuğu Göster'i yalnızca bayrak simgesiyle](../../parallel/amp/media/camph.png "Göster'i yalnızca bayrak simgesiyle hata ayıklama konumu araç çubuğu") <br/>
+   **Yalnızca bayrak eklenmiş Göster** düğmesi
 
    Artık **GPU iş parçacıkları**, **paralel izleme**, ve **Paralel Yığınlar** windows yalnızca bayraklı iş parçacıklarını görüntüler.
 
@@ -340,7 +347,8 @@ Freeze (askıya alma) ve (devam) GPU iş parçacıkları veya çözme **GPU iş 
 
    Aşağıdaki çizim, **GPU iş parçacıkları** penceresi tüm dört iş parçacıkları dondurulmuş olduğunu gösterir.
 
-     ![Dondurulmuş bir iş parçacığı gösteren GPU iş parçacıkları windows](../../parallel/amp/media/campk.png "campk") iş parçacıkları dondurulmuş **GPU iş parçacıkları** penceresi
+   ![Dondurulmuş bir iş parçacığı gösteren GPU iş parçacıkları windows](../../parallel/amp/media/campk.png "GPU iş parçacıkları windows dondurulmuş bir iş parçacığı gösteriliyor") <br/>
+   İş parçacıkları dondurulmuş **GPU iş parçacıkları** penceresi
 
    Benzer şekilde, **paralel izleme** penceresi tüm dört iş parçacıkları dondurulmuş olduğunu gösterir.
 
@@ -356,7 +364,8 @@ Freeze (askıya alma) ve (devam) GPU iş parçacıkları veya çözme **GPU iş 
 
    İş parçacıklarında **GPU iş parçacıkları** penceresi adresine göre gruplandırılır. İçinde ayrıştırılmış kodu her iş parçacığı grubunun bulunduğu yönerge adresini karşılık gelir. 24 akışlardır 22 satırında nerede [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait) yürütülür. 12 iş parçacığı 32 satırında barrier yönergesi altındadır. Bu iş parçacığı dört işaretlenir. Sekiz 30 satırında bir kesme noktasında akışlardır. Dört bu iş parçacıkları dondurulmuş. Gruplanmış iş parçacıkları aşağıdaki çizimde **GPU iş parçacıkları** penceresi.
 
-     ![GPU iş parçacıkları penceresi ile iş parçacığı adresine göre gruplandırılmış](../../parallel/amp/media/campl.png "campl") iş parçacığını gruplandırılır **GPU iş parçacıkları** penceresi
+   ![GPU iş parçacıkları penceresi ile iş parçacığı adresine göre gruplandırılmış](../../parallel/amp/media/campl.png "GPU iş parçacıkları penceresi ile iş parçacığı adresine göre gruplandırılmış") <br/>
+   İş parçacığını gruplandırılır **GPU iş parçacıkları** penceresi
 
 2. Ayrıca gerçekleştirebilirsiniz **Group By** veri kılavuzunun için kısayol menüsünü açarak işlemi **paralel izleme** penceresinde seçme **Group By**ve ardından menüden seçerek iş parçacıkları gruplandırmak istediğiniz nasıl karşılık gelen öğe.
 

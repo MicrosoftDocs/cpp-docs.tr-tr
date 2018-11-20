@@ -1,6 +1,6 @@
 ---
 title: MFC'de Durum Çubuğu Uygulaması
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - COldStatusBar
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - status indicators
 - status bars [MFC], Windows 95 implementation
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
-ms.openlocfilehash: 25848e4467a0d767c40ffb00a1bd4d50a062d3a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 521b24646b673159d14e89bd57ea698a7ba73381
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496291"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175381"
 ---
 # <a name="status-bar-implementation-in-mfc"></a>MFC'de Durum Çubuğu Uygulaması
 
@@ -33,7 +33,8 @@ MFC sürüm 4.0 itibariyle durum çubukları sınıfı kullanılarak uygulanır 
 
 Aşağıdaki şekilde birkaç göstergeleri gösteren bir durum çubuğu gösterir.
 
-![Durum çubuğu](../mfc/media/vc37dy1.gif "vc37dy1") bir durum çubuğu
+![Durum çubuğu](../mfc/media/vc37dy1.gif "durum çubuğu") <br/>
+Durum çubuğu
 
 Araç çubuğu gibi durum çubuğu nesne kendi üst çerçeve penceresinde katıştırılır ve çerçeve penceresi oluşturulduğunda otomatik olarak oluşturulur. Üst çerçevenin kaldırıldığında durum çubuğu, tüm denetim çubukları gibi otomatik olarak de yok edilir.
 

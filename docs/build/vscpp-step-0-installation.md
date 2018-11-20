@@ -2,16 +2,16 @@
 title: Visual Studio 2017'de C++ desteği yükleme
 description: Visual C++ için Visual Studio desteği yükleme
 ms.custom: mvc
-ms.date: 09/17/2018
+ms.date: 11/19/2018
 ms.topic: tutorial
 ms.devlang: C++
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 019eadee35829bb546de0a69707520dc98f4077e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0dd1c25cd17c67c310840396c80fe05dfc2b7e1
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507243"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175749"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteği yükleme
 
@@ -45,11 +45,11 @@ Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ih
 
 1. Yükleyici dosyasını indirdiğiniz ve uygulamayı bulun. Tarayıcınızda görüntülenebilir veya indirilenler klasörünüze fark edebilirsiniz. Yükleyiciyi çalıştırmak için yönetici ayrıcalıkları gerekir. Görebileceğiniz bir **kullanıcı hesabı denetimi** seçin; sisteminize değişiklik kurucusunun izni vermek isteyen bir iletişim **Evet**. Sorun yaşıyorsanız, dosya Gezgini'nde indirilen dosyayı bulmak, yükleyici simgesini sağ tıklatın ve seçin **yönetici olarak çalıştır** bağlam menüsünden.
 
-   ![Visual Studio 2017 Yükleyicisi'ni çalıştırın](../build/media/vscpp-concierge-run-installer.gif "Visual Studio Yükleyicisi'ni çalıştırın")
+   ![Visual Studio Yükleyicisi'nin karşıdan yükleyip](../build/media/vscpp-concierge-run-installer.gif "indirip Visual Studio Yükleyicisi'ni yükleyin")
 
 1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. Podporu iOS Pro C++ artık varsayılan olarak yüklü değildir isteğe bağlı iş yüklerinin parçasıdır.
 
-   ![C++ ile masaüstü geliştirme](../build/media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
+   ![C++ iş yükünde ile masaüstü geliştirme](../build/media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
 
    C++ için seçin **C++ ile masaüstü geliştirme** iş yükü ve ardından **yükleme**.
 

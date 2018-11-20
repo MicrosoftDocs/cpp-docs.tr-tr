@@ -1,6 +1,6 @@
 ---
 title: 'MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - OnFontChanged
 - HeadingFont
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-ms.openlocfilehash: 6a647f67849d84119d58186fc71ec1b412713734
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9fb7668f65b04372b87059034c3ec6cd20abc48d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608950"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175827"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 
@@ -204,7 +204,8 @@ Bu değişiklikleri yaptıktan sonra ek işlevsellik eklemek için tüm projeyi 
 
 Denetim stok yazı tipi özelliğini kullanıyorsa, bildirim tarafından işlenen `OnFontChanged` üye işlevini `COleControl`. Özel yazı tipi özellikleri eklediğinizde, bunları aynı uygulaması kullanmak olabilir. Önceki bölümdeki örnekte, bu geçirerek gerçekleştirilmiştir &*m_xFontNotification* başlatılırken *m_fontHeading* üye değişkeni.
 
-![Birden çok yazı tipi nesne arabirimleri uygulama](../mfc/media/vc373q1.gif "vc373q1") uygulama birden çok yazı tipi nesnesi arabirimleri
+![Birden çok yazı tipi nesne arabirimleri uygulama](../mfc/media/vc373q1.gif "birden çok yazı tipi nesne arabirimleri uygulama") <br/>
+Birden çok yazı tipi nesne arabirimleri uygulama
 
 Yazı tipi her iki nesnenin aynı uygulamasını kullanıyorsanız yukarıdaki şekilde düz çizgiler Göster `IFontNotification`. Yazı tipi değiştirilen ayırmak istiyorsanız bu sorunlara neden.
 

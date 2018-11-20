@@ -1,15 +1,15 @@
 ---
 title: Özellik sayfası (ATL) uygulama
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 6eb65ca3ddff79262c2f2b53d84d2f964f273c9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a76a0f49e8b0ec7458b781785cd5030d2c523f0b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669098"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176477"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: özellik sayfası uygulama
 
@@ -58,7 +58,7 @@ Tıklayın **Tamam** , özellik sayfası Oluştur Sihirbazı'nı sağlamak için
 
 Oluşturulan, özellik sayfası, sayfanız temsil eden bir iletişim kutusu kaynağı için bazı denetimler eklemek gerekir. Düzenleme kutusu, bir statik metin denetimini ve onay kutusu ekleyin ve kimlikleri aşağıda gösterilen şekilde ayarlayın:
 
-![Bir iletişim kutusu kaynağı düzenleme](../atl/media/ppgresourcelabeled.gif "ppgresourcelabeled")
+![Bir iletişim kutusu kaynağı düzenleme](../atl/media/ppgresourcelabeled.gif "düzenleme iletişim kutusu kaynağı")
 
 Bu denetimler, dosya adını, belge ve salt okunur durumunu görüntülemek için kullanılır.
 

@@ -1,6 +1,6 @@
 ---
 title: Yeni Belgeler, Pencereler ve Görünümler Oluşturma
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - MDI [MFC], creating windows
 - window objects [MFC], creating
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - views [MFC], overriding default behavior
 - initializing views [MFC]
 ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
-ms.openlocfilehash: 20bc94c7a688d3cf88fa89fff060ab155d327606
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57e558848ce76a7c74b5715529661ad24c9cbb8e
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643904"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175398"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 
@@ -37,11 +37,14 @@ Aşağıdaki şekilde, belgeler, görünümler ve çerçeve pencereleri oluştur
 
 Bu işlem tamamlandıktan sonra birlikte çalışan nesnelerin var ve birbirlerine işaretçileri depolayın. Aşağıdaki şekil, nesnelerin oluşturulduğu sıranın gösterir. Şekil şekil dizisi takip edebilirsiniz.
 
-![Bir belge oluşturmak için dizisi](../mfc/media/vc387l1.gif "vc387l1") belge oluşturma sırası
+![Bir belge oluşturmak için dizisi](../mfc/media/vc387l1.gif "sıralı bir belge oluşturmak için") <br/>
+Bir belge oluşturma sırası
 
-![Çerçeve pencere oluşturma dizisi](../mfc/media/vc387l2.png "vc387l2") bir çerçeve pencere oluşturma dizisi
+![Çerçeve pencere oluşturma dizisi](../mfc/media/vc387l2.png "çerçeve pencere oluşturma dizisi") <br/>
+Çerçeve pencere oluşturma dizisi
 
-![Görünüm oluşturmayla ilgili dizisini](../mfc/media/vc387l3.gif "vc387l3") sırası bir görünüm oluşturma
+![Görünüm oluşturmayla ilgili dizisini](../mfc/media/vc387l3.gif "sırası bir görünüm oluşturmak için") <br/>
+Bir görünüm oluşturma sırası
 
 Sınıfları nasıl yeni bir belge, Görünüm ve çerçeve pencere nesneleri framework başlatır hakkında daha fazla bilgi için bkz. [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) MFC Kitaplığı Başvurusu. Ayrıca bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md), açıklayan oluşturma ve başlatma işlemleri daha fazla framework'ün standart komut için kendi tartışma altında **yeni** ve **açın** üzerinde öğelerini **dosya** menüsü.
 

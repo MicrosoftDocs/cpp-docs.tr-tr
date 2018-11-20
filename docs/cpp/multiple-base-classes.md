@@ -1,18 +1,18 @@
 ---
 title: Birden Çok Taban Sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - base classes [C++], multiple
 - derived classes [C++], multiple bases
 - multiple inheritance, class declaration
 - multiple base classes [C++]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-ms.openlocfilehash: fbbe6d6194b878b4851cbde84b55d71b9e4fc02c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b58c238da37fbbaf7c2c2913b652c26d98fbd96e
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483466"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176373"
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
 
@@ -52,11 +52,13 @@ Sanal bir temel sınıf bildirilirken **sanal** anahtar sözcüğü türetilmiş
 
 Sınıf hiyerarşisini, sanal bir öğle yemeği çizgi grafiğini gösteren aşağıdaki şekilde görebilirsiniz.
 
-![Sanal öğle yemeği çizgi grafiği](../cpp/media/vc38xp1.gif "vc38XP1") sanal öğle yemeği çizgi grafiği
+![Sanal öğle yemeği çizgi grafiği](../cpp/media/vc38xp1.gif "sanal öğle yemeği çizgi grafiği") <br/>
+Sanal öğle yemeği çizgi grafiği
 
 Şekilde, `Queue` hem `CashierQueue` hem de `LunchQueue` için temel sınıftır. Ancak, iki sınıf da `LunchCashierQueue` oluşturacak şekilde birleştirildiğinde, aşağıdaki sorun ortaya çıkar: yeni sınıf biri `Queue` öğesinden, diğeri `CashierQueue` öğesinden alınan `LunchQueue` türünde iki alt nesne içerir. Aşağıdaki şekilde, kavramsal bellek düzeni (gerçek bellek düzeni iyileştirilebilir) gösterilmektedir.
 
-![Sanal öğle yemeği&#45;çizgi grafiği nesnesi](../cpp/media/vc38xp2.gif "vc38XP2") sanal öğle yemeği çizgi grafiği nesnesi
+![Sanal öğle yemeği&#45;çizgi grafiği nesnesi](../cpp/media/vc38xp2.gif "sanal öğle yemeği&#45;çizgi grafiği nesnesi") <br/>
+Sanal öğle yemeği çizgi grafiği nesnesi
 
 `Queue` nesnesinde iki `LunchCashierQueue` alt nesnesi olduğuna dikkat edin. Aşağıdaki kod, `Queue` öğesinin sanal bir temel sınıf olduğunu bildirir:
 
@@ -71,15 +73,18 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 
 **Sanal** anahtar sözcüğü, yalnızca bir alt nesneye kopyasını sağlar `Queue` dahildir (Aşağıdaki şekle bakın).
 
-![Sanal öğle yemeği&#45;çizgi grafiği nesnesi, sanal temel sınıflar](../cpp/media/vc38xp3.gif "vc38XP3") sanal temel sınıflarla sanal öğle yemeği çizgi grafiği nesnesi
+![Sanal öğle yemeği&#45;çizgi grafiği nesnesi, sanal temel sınıflar](../cpp/media/vc38xp3.gif "sanal öğle yemeği&#45;çizgi grafiği nesnesi, sanal temel sınıflar") <br/>
+Sanal temel sınıflarla sanal öğle yemeği çizgi grafiği nesnesi
 
 Bir sınıfta, belirli bir türden sanal bileşen ve sanal olmayan bileşen olabilir. Bu, aşağıdaki şekilde gösterilen koşullarda ortaya çıkar.
 
-![Bir sınıfın sanal ve sanal olmayan bileşenleri](../cpp/media/vc38xp4.gif "vc38XP4") sanal ve sanal olmayan bileşenleri aynı sınıfın
+![Sanal ve olmayan&#45;bir sınıfın sanal bileşenleri](../cpp/media/vc38xp4.gif "sanal ve olmayan&#45;bir sınıfın sanal bileşenleri") <br/>
+Aynı sınıfın sanal ve sanal olmayan bileşenleri
 
 Şekilde, `CashierQueue` ve `LunchQueue` sanal temel sınıf olarak `Queue` kullanmaktadır. Ancak `TakeoutQueue`, sanal temel sınıf olarak değil, temel sınıf olarak `Queue` belirtir. Bu nedenle, `LunchTakeoutCashierQueue``Queue` türünden iki alt nesneye sahiptir: biri `LunchCashierQueue` içeren devralma yolundan, diğeri ise `TakeoutQueue` içeren yoldan alınmıştır. Bu, aşağıdaki şekilde gösterilmiştir:
 
-![Nesne düzeni sanal ve sanal olmayan devralma](../cpp/media/vc38xp5.gif "vc38XP5") sanal ve sanal olmayan devralma ile nesne düzeni
+![Sanal & olmayan&#45;nesne düzeni'nde sanal devralma](../cpp/media/vc38xp5.gif "sanal & olmayan&#45;nesne düzeni'nde sanal devralma") <br/>
+Sanal ve sanal olmayan devralma ile nesne düzeni
 
 > [!NOTE]
 >  Sanal devralma, sanal olmayan devralmayla karşılaştırıldığında önemli boyut avantajları sağlar. Ancak, ek işlem yükü ortaya çıkarabilir.
@@ -187,7 +192,8 @@ Açık ve örtük dönüştürmelerine işaretçileri veya başvuruları sınıf
 
 - Açıkça temel sınıf türüne address-of işleci kullanılarak elde edilen işaretçi dönüştürme etkisini `A`. Coercing türüne nesnenin adresini Not `A*` her zaman derleyici yetecek kadar bilgi türü için hangi alt nesneye sağlamaz `A` seçmek için; bu durumda, iki alt nesne yok.
 
-![Temel sınıflar için işaretçiler belirsiz dönüştürme](../cpp/media/vc38xt1.gif "vc38XT1") temel sınıflar, belirsiz dönüştürme işaretçileri
+![Temel sınıflar için işaretçiler belirsiz dönüştürme](../cpp/media/vc38xt1.gif "temel sınıflar için işaretçiler belirsiz dönüştürme") <br/>
+Temel sınıflar için işaretçiler belirsiz dönüştürme
 
 Türüne dönüştürme `A*` (işaretçiye `A`) türünde hangi alt nesneye ayrım mümkün değildir çünkü belirsiz `A` doğru olduğundan. Not: şu şekilde kullanmak için ortalama hangi alt nesneye açıkça belirterek belirsizlik kaçınabilirsiniz
 
@@ -202,7 +208,8 @@ Sanal temel sınıflar kullanılırsa, işlevler, nesneler, türler ve numaralan
 
 Aşağıdaki şekilde, nesnelerin sanal ve sanal olmayan devralma ile nasıl oluşturulduğu gösterilmektedir.
 
-![Sanal türetme ve sanal olmayan türetme](../cpp/media/vc38xr1.gif "vc38XR1") sanal vs. Sanal olmayan türetme
+![Sanal türetme ve olmayan&#45;Sanal Türetmenin](../cpp/media/vc38xr1.gif "sanal türetme ve olmayan&#45;sanal türetme") <br/>
+Sanal ve sanal olmayan türetme
 
 Şekilde, sanal olmayan temel sınıflar yoluyla `A` sınıfının her hangi bir üyesine erişmek belirsizliğe neden olur; derleyicide, `B` ile ilişkili alt nesnenin mi yoksa `C` ile ilişkili alt nesnenin mi kullanılacağını açıklayan herhangi bir bilgi yoktur. Ancak, bir sanal temel sınıf olarak `A` belirtildiğinde, hangi alt nesneye erişildiği sorun olmaz.
 

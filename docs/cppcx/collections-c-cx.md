@@ -1,13 +1,13 @@
 ---
 title: Koleksiyonlar (C + +/ CX)
-ms.date: 01/22/2017
+ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: d139bcfc6cdf61940a40ca069dd157c1805e2034
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d256e333ddf31bdb637680b70718af85e753a21d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531601"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176399"
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
 
@@ -15,7 +15,7 @@ C + +/ CX programı, standart Şablon kitaplığı (STL) kapsayıcıları veya h
 
 Windows çalışma zamanı tanımlar arabirimleri koleksiyonları ve ilgili türleri ve C + +/ CX collection.h üstbilgi dosyasında somut C++ uygulamalarını sağlar. Bu çizimde, koleksiyon türleri arasındaki ilişkiler gösterilmektedir:
 
-![C&#43;&#43;&#47;CX koleksiyon türleri için devralma ağacı](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")
+![C&#43;&#43;&#47;CX koleksiyon türleri için devralma ağacı](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;CX koleksiyon türleri için devralma ağacı")
 
 - [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md) benzer [std::vector sınıfı](../standard-library/vector-class.md).
 
@@ -63,7 +63,7 @@ Kullandığınızda, bir `range for` üzerinden döngü `IVector` kapsayıcılar
 
 Aşağıdaki çizimde gösterildiği bir `range for` üzerinden döngü bir `IVector<Person^>`. Yürütme 64 satırında bir kesme noktasında durdurulduğunu dikkat edin. **QuickWatch** penceresi gösterir, yineleyici değişkeni `p` aslında bir `VectorProxy<Person^>` olan `m_v` ve `m_i` üye değişkenleri. Ancak, çağırdığınızda `GetType` isteğe bağlı olarak bu değişken için aynı türde döndürür `Person` örneği `p2`. Ancak olan takeaway `VectorProxy` ve `ArrowProxy` görünebilir **QuickWatch**, hata ayıklayıcı belirli derleyici hataları veya diğer yerler genellikle bunlar için kod gerekmez.
 
-![Aralıktaki VectorProxy&#45;tabanlı for döngüsü](../cppcx/media/vectorproxy-1.png "VectorProxy_1")
+![Aralıktaki VectorProxy&#45;tabanlı for döngüsü](../cppcx/media/vectorproxy-1.png "aralıktaki VectorProxy&#45;tabanlı for döngüsü")
 
 Sahip olduğunuz koda proxy nesne çevresinde bir senaryo gerçekleştirmek için sahip olduğunda bir `dynamic_cast` öğelerde — Örneğin, ne zaman aradığınız XAML nesneleri belirli bir türün bir `UIElement` öğe koleksiyonu. Bu durumda, ilk öğeye dönüştürmelisiniz [Platform::Object](../cppcx/platform-object-class.md)^ ve dinamik atama gerçekleştirin:
 

@@ -1,21 +1,21 @@
 ---
 title: 'Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - quick access toolbar [MFC], customization
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-ms.openlocfilehash: d9bdc523218c7fad217d066eabd518aaff011df3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aced2e732b68f838c679518ef67b1d6bdd361964
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558489"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176334"
 ---
 # <a name="how-to-customize-the-quick-access-toolbar"></a>Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme
 
 Hızlı Erişim Araç çubuğu (QAT) ya da uygulama düğmesinin yanındaki veya kategori sekmeleri altında görüntülenen komutları kümesini içeren özelleştirilebilir bir araç çubuğudur. Aşağıdaki çizim, tipik bir hızlı erişim araç çubuğu gösterir.
 
-![MFC Şerit hızlı erişim araç çubuğu](../mfc/media/quick_access_toolbar.png "quick_access_toolbar")
+![MFC Şerit hızlı erişim araç çubuğu](../mfc/media/quick_access_toolbar.png "MFC Şerit hızlı erişim araç çubuğu")
 
 Hızlı Erişim Araç çubuğu özelleştirmek için açılır **özellikleri** penceresinde, alt komutları değiştirebilir ve ardından Şerit denetiminin önizlemesini.
 
@@ -55,4 +55,3 @@ Hızlı Erişim Araç çubuğu komutlarını tasarım yüzeyinde görünmez. Bun
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
-

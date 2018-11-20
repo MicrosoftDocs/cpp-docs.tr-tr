@@ -1,6 +1,6 @@
 ---
 title: CMFCColorPickerCtrl sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCColorPickerCtrl
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl
@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-ms.openlocfilehash: 073012642597d0b38dcb0f76cf5662666447adc1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 38fe09b5fdde85dad485e126f6c094196fe68ff4
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519060"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176932"
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl sınıfı
 
@@ -97,7 +97,7 @@ Standart renkler Altıgen renk paletinden seçilir ve özel renkler aydınlatma 
 
 Aşağıdaki çizimde birkaç gösterilmektedir `CMFCColorPickerCtrl` nesneleri.
 
-![CMFCColorPickerCtrl iletişim kutusu](../../mfc/reference/media/colorpicker.png "colorpicker")
+![CMFCColorPickerCtrl iletişim kutusu](../../mfc/reference/media/colorpicker.png "CMFCColorPickerCtrl iletişim kutusu")
 
 `CMFCColorPickerCtrl` Stilleri iki çiftlerini destekler. ONALTILIK ve HEX_GREYSCALE stilleri standart renk seçimi için uygundur. SEÇİCİ ve AYDINLATMA stilleri özel renk seçimi için uygundur.
 

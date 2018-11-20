@@ -1,18 +1,18 @@
 ---
 title: İfade Semantikleri
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - grammar, expressions
 - expressions [C++], semantics
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-ms.openlocfilehash: df86f73aa38ad9393adcbf193390cd785c934115
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2ce510478bcf1574429c85f704552e6b73100ea
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490967"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175798"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 
@@ -43,7 +43,8 @@ int main()
 54
 ```
 
-![Bir ifade Değerlendirme sırasını](../cpp/media/vc38zv1.gif "vc38ZV1") ifade-değerlendirme sırası
+![Bir ifade Değerlendirme sırasını](../cpp/media/vc38zv1.gif "içinde bir ifade değerlendirme sırası") <br/>
+İfade-değerlendirme sırası
 
 Yukarıdaki şekilde gösterilen ifadenin değerlendirilme sırası, işleçlerin öncelik ve birleşimlerine göre belirlenir:
 
@@ -55,7 +56,8 @@ Yukarıdaki şekilde gösterilen ifadenin değerlendirilme sırası, işleçleri
 
 Alt ifadeleri gruplamak için parantez kullanıldığında, aşağıdaki şekilde gösterildiği gibi önceliği ve ayrıca ifadenin değerlendirilme sırasını değiştirir.
 
-![Parantezli İfade Değerlendirme sırasını](../cpp/media/vc38zv2.gif "vc38ZV2") Parantezli İfade-değerlendirme sırası
+![Parantezli İfade Değerlendirme sırasını](../cpp/media/vc38zv2.gif "Parantezli İfade değerlendirme sırası") <br/>
+Parantezli İfade-değerlendirme sırası
 
 Yukarıdaki şekildeki gibi ifadeler yalnızca yan etkileri için (bu örnekte bilgileri standart çıktı cihazına aktarmak için) değerlendirilir.
 
@@ -68,7 +70,7 @@ C++ dili belirli uyumluluğunu işlenenler belirtirken belirtir. Aşağıdaki ta
 |Tür bekleniyor|İzin verilen türleri|
 |-------------------|-------------------|
 |*Türü*|`const` *Türü*<br /> `volatile` *Türü*<br /> *Türü*&<br /> `const` *Türü*&<br /> `volatile` *Türü*&<br /> `volatile const` *Türü*<br /> `volatile const` *Türü*&|
-|*Türü*\*|*Türü*\*<br /> `const` *Türü*\*<br /> `volatile` *Türü*\*<br /> `volatile const` *Türü*\*|
+|*Türü* \*|*Türü* \*<br /> `const` *Türü* \*<br /> `volatile` *Türü* \*<br /> `volatile const` *Türü* \*|
 |`const` *Türü*|*Türü*<br /> `const` *Türü*<br />`const` *Türü*&|
 |`volatile` *Türü*|*Türü*<br /> `volatile` *Türü*<br /> `volatile` *Türü*&|
 

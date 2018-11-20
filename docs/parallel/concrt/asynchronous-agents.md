@@ -1,16 +1,16 @@
 ---
 title: Zaman Uyumsuz Aracılar
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - asynchronous agents
 - agents [Concurrency Runtime]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-ms.openlocfilehash: 949074981d77702fd23ee3ff70f219c013fa6543
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a99400e4df49e36e1cddda7068f315485b976cde
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467606"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176542"
 ---
 # <a name="asynchronous-agents"></a>Zaman Uyumsuz Aracılar
 
@@ -22,7 +22,7 @@ Agents kitaplığı tanımlar [concurrency::agent](../../parallel/concrt/referen
 
 Aracıları ayarlanmış bir yaşam döngüsü vardır. [Concurrency::agent_status](reference/concurrency-namespace-enums.md#agent_status) numaralandırması bir aracının çeşitli durumları tanımlar. Aşağıdaki resimde, nasıl aracıları bir durumdan diğerine ilerleme durumu gösteren bir durum diyagramı verilmiştir. Bu çizimde, düz çizgiler uygulamanızdan çağıran yöntemleri gösterir; noktalı çizgiler çalışma zamanını şuradan çağıran yöntemleri gösterir.
 
-![Aracı durumu diyagramını](../../parallel/concrt/media/agentstate.png "agentstate")
+![Aracı durumu diyagramını](../../parallel/concrt/media/agentstate.png "aracı durumu diyagramı")
 
 Aşağıdaki tabloda her durumda açıklanmaktadır `agent_status` sabit listesi.
 

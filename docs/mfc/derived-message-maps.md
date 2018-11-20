@@ -1,18 +1,18 @@
 ---
 title: Türetilen İleti Eşlemeleri
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - message handling [MFC], derived message handlers
 - messages, routing
 - message maps [MFC], derived
 - derived message maps
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
-ms.openlocfilehash: 1413290bc04af37a6d3204150dff5244e1dcb5c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ae536a53a43472a4fb81d30e685fbc3faaa603f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662534"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175612"
 ---
 # <a name="derived-message-maps"></a>Türetilen İleti Eşlemeleri
 
@@ -20,7 +20,8 @@ ms.locfileid: "50662534"
 
 Aklınızda `CView`, temel sınıfını `CMyView`, sırayla türetilmiş `CWnd`. Bu nedenle `CMyView` *olduğu* bir `CView` ve *olduğu* bir `CWnd`. Bu sınıfların her birinin kendi ileti eşlemesi var. "A hiyerarşisini görüntüle" Aşağıdaki sınıfların keep ancak hiyerarşi ilişkisi gösteren şekil aklınızda bir `CMyView` nesnedir tüm üç sınıf özelliklere sahip tek bir nesne.
 
-![Görünüm hiyerarşisini](../mfc/media/vc38621.gif "vc38621") bir hiyerarşisini görüntüle
+![Görünüm hiyerarşisini](../mfc/media/vc38621.gif "görünüm hiyerarşisi") <br/>
+Hiyerarşisini görüntüle
 
 Böyle bir ileti sınıfı eşleştirilemiyor `CMyView`'s ileti eşlemesi, framework hemen kendi taban sınıfının ileti eşlemesi de arar. `BEGIN_MESSAGE_MAP` Makrosu ileti eşlemede başlangıcında, bağımsız değişkenler olarak iki sınıf adlarını belirtir:
 

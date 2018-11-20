@@ -1,17 +1,17 @@
 ---
 title: İşlev Aşırı Yüklemesi
-ms.date: 1/25/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - function overloading [C++], about function overloading
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-ms.openlocfilehash: f37a539c74b995b1dce5f68344c555a679a87991
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c05e4b840a02b3d9bbcd4ed259509be4c35c22c2
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333377"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176308"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 
@@ -280,7 +280,8 @@ Dönüştürmeleri denenmez sırası aşağıdaki gibidir:
 
    - Bir taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme daha yakın temel sınıfı için doğrudan temel sınıf olan daha iyi bir eşleşme üretir. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini olduğunu varsayın.
 
-![Tercih edilen dönüştürmeler](../cpp/media/vc391t1.gif "vc391T1") grafik gösteren tercih edilen dönüştürmeler
+![Grafik tercih edilen dönüştürme](../cpp/media/vc391t1.gif "grafik tercih edilen dönüştürme") <br/>
+Tercih edilen dönüştürmeler gösteren grafik
 
 Türünden dönüştürme `D*` türüne `C*` türünden dönüştürme için tercih edilir `D*` türüne `B*`. Benzer şekilde, türünden dönüştürme `D*` türüne `B*` türünden dönüştürme için tercih edilir `D*` türüne `A*`.
 
@@ -290,7 +291,8 @@ Bu aynı kural için işaretçi-üye dönüşümleri uygular. Türünden dönü�
 
 Önceki kural türetme yalnızca belirli bir yol geçerlidir. Aşağıdaki şekilde gösterilen grafiğe göz önünde bulundurun.
 
-![Çoklu&#45;tercih edilen dönüştürmeler gösteren devralma](../cpp/media/vc391t2.gif "vc391T2") birden çok devralma grafiği gösteren tercih edilen dönüştürmeler
+![Birden çok&#45;tercih edilen dönüştürmeler gösteren devralma](../cpp/media/vc391t2.gif "birden çok&#45;tercih edilen dönüştürmeler gösteren devralma") <br/>
+Tercih edilen dönüştürmeler gösteren birden çok devralma grafiği
 
 Türünden dönüştürme `C*` türüne `B*` türünden dönüştürme için tercih edilir `C*` türüne `A*`. Aynı yolda olduklarını nedenidir ve `B*` daha yakındır. Ancak, türünden dönüştürme `C*` türüne `D*` türüne dönüştürme tercih değil `A*`; yoktur tercih yoktur çünkü dönüştürmeler farklı yolları izleyin.
 

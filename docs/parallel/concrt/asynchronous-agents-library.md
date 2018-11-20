@@ -1,16 +1,16 @@
 ---
 title: Zaman Uyumsuz Aracılar Kitaplığı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Agents Library
 - Asynchronous Agents Library
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-ms.openlocfilehash: 9086734b22523d395022299fb75b7a130a8e7a16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b4e8e6489e98aadb6ea41d32d5a9ba14efe2668
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629287"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175866"
 ---
 # <a name="asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı
 
@@ -26,7 +26,7 @@ Agents kitaplığı, üç bileşenden oluşur: *zaman uyumsuz aracılar*, *zaman
 
 Aşağıdaki çizimde, ileti blokları kullanın ve iletişim kurmak için ileti geçirme işlevleri nasıl iki aracı gösterir. Bu çizimde, `agent1` bir ileti gönderir `agent2` kullanarak [concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi ve bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) nesne. `agent2` kullanan [concurrency::receive](reference/concurrency-namespace-functions.md#receive) ileti okumak için işlev. `agent2` ileti göndermek için aynı yöntemi kullanan `agent1`. Kesik çizgili oklar aracılar arasındaki veri akışını temsil eder. Düz bir ok, yazma veya okuma ileti blokları aracıları bağlanın.
 
-![Agents kitaplığı bileşenlerinin](../../parallel/concrt/media/agent_librarycomp.png "agent_librarycomp")
+![Agents kitaplığı bileşenlerinin](../../parallel/concrt/media/agent_librarycomp.png "bileşenlerini Aracılar Kitaplığı")
 
 Bu çizim uygulayan bir kod örneği, bu konunun ilerleyen bölümlerinde gösterilmektedir.
 

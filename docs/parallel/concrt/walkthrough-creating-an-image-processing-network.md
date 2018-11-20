@@ -1,16 +1,16 @@
 ---
 title: 'İzlenecek yol: Görüntü İşleme Ağı Oluşturma'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - image-processing networks, creating [Concurrency Runtime]
 - creating image-processing networks [Concurrency Runtime]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
-ms.openlocfilehash: 4eb1d6f9e5bc0055a1a4b4be5e18497b20c3a73a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93a20ca9967c8730e1563a653c8f4546d94161fb
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643644"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176178"
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>İzlenecek yol: Görüntü İşleme Ağı Oluşturma
 
@@ -134,7 +134,7 @@ Uygulamanızı birden çok ileti işlemi yalnızca ilk iletiyi kabul bir ileti b
 
 Görüntü işleme ağı aşağıda gösterilmiştir:
 
-![Görüntü işleme ağı](../../parallel/concrt/media/concrt_imageproc.png "concrt_imageproc")
+![Görüntü işleme ağı](../../parallel/concrt/media/concrt_imageproc.png "görüntü işleme ağı")
 
 `countdown_event` Nesnesi bu örnekte, tüm görüntüleri işlendiğinde ana uygulama bildirmek görüntü işleme ağı sağlar. `countdown_event` Sınıfını kullanan bir [concurrency::event](../../parallel/concrt/reference/event-class.md) sayaç değeri sıfır ulaştığında göstermek için nesne. BT'nin, ağ dosya adı gönderir her zaman ana uygulama sayaç artırılır. Ağ azaltır düzenin terminal düğümünden her görüntü işlendikten sonra sayacı. Belirtilen dizin ana uygulama eriştikten sonra bekler `countdown_event` kendi sayaç sıfır ulaştı göstermek için nesne.
 
@@ -152,7 +152,7 @@ Aşağıdaki kod, tam bir örnek gösterir. `wmain` İşlevi yönetir GDI +'KİT
 
 Örnek çıktı aşağıda gösterilmiştir. Her kaynak görüntüsü, karşılık gelen değiştirilmiş görüntüsüdür.
 
-![Örnek çıktı örneğin](../../parallel/concrt/media/concrt_imageout.png "concrt_imageout")
+![Örnek çıktı örneğin](../../parallel/concrt/media/concrt_imageout.png "örnek çıktı Örneğin")
 
 `Lighthouse` Tom Alphin tarafından yazılan ve bu nedenle gri tonlamaya dönüştürülür. `Chrysanthemum`, `Desert`, `Koala`, ve `Tulips` baskın renk olarak kırmızı varsa ve bu nedenle kaldırıldı mavi ve yeşil renk bileşenlerine sahip ve koyu. `Hydrangeas`, `Jellyfish`, ve `Penguins` varsayılan ölçütlerle eşleşen ve bu nedenle toned sepya.
 

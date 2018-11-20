@@ -1,18 +1,18 @@
 ---
 title: Eşzamanlılık Çalışma Zamanına Genel Bakış
-ms.date: 07/20/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Concurrency Runtime, requirements
 - Concurrency Runtime, architecture
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-ms.openlocfilehash: dab4860bcc69780fa6a6390e2ef111216642637a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: ffaf560361da2fd54febb5e38af121ad5149f012
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693666"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176672"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanına Genel Bakış
 
@@ -60,10 +60,10 @@ Eşzamanlılık Çalışma zamanı dört bileşene bölünür: paralel desenler 
 
 **Eşzamanlılık Çalışma zamanı mimarisi**
 
-![Eşzamanlılık Çalışma zamanı mimarisi](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")
+![Eşzamanlılık Çalışma zamanı mimarisi](../../parallel/concrt/media/concurrencyrun.png "eşzamanlılık çalışma zamanı mimarisi")
 
 > [!IMPORTANT]
->  Görev Zamanlayıcısı'nı ve Resource Manager bileşenleri, bir evrensel Windows Platformu (UWP) uygulamasına veya görev sınıfı ya da diğer türleri içinde ppltasks.h kullandığınızda kullanılamaz.
+> Görev Zamanlayıcısı'nı ve Resource Manager bileşenleri, bir evrensel Windows Platformu (UWP) uygulamasına veya görev sınıfı ya da diğer türleri içinde ppltasks.h kullandığınızda kullanılamaz.
 
 Eşzamanlılık Çalışma zamanı yüksek olduğu *birleştirilebilir*, diğer bir deyişle, daha fazlasını yapmak için var olan işlevselliği birleştirebilirsiniz. Eşzamanlılık Çalışma zamanı, alt düzey bileşenlerden paralel algoritmalar gibi birçok özellik oluşturur.
 

@@ -1,6 +1,6 @@
 ---
 title: MDI Alt Öğe Pencerelerini Yönetme
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - MDICLIENT
 helpviewer_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - child windows [MFC]
 - MDI [MFC], frame windows
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-ms.openlocfilehash: 2055c215392c6805791de729ff6ab8c6a9057308
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4b6ccf8a75cc7679f78fba48314073bc53b66a5
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629417"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176803"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI Alt Öğe Pencerelerini Yönetme
 
@@ -25,7 +25,8 @@ MDI ana çerçeve pencereleri (uygulama başına bir adet) MDICLIENT penceresi o
 
 Bir MDI çerçeve penceresinin çerçeve penceresi, Denetim çubuklarını birlikte yeniden konumlandırma MDICLIENT penceresi yönetir. MDICLIENT penceresi tüm MDI alt çerçeve pencereleri sırayla yönetir. Aşağıdaki şekilde bir MDI çerçeve penceresinin, kendi MDICLIENT penceresi ve onun alt belge çerçeve pencereleri arasındaki ilişki gösterilmektedir.
 
-![Bir MDI çerçeve penceresinin alt windows](../mfc/media/vc37gb1.gif "vc37gb1") MDI çerçeve Windows ve alt öğeleri
+![Bir MDI çerçeve penceresinin alt windows](../mfc/media/vc37gb1.gif "bir MDI çerçeve penceresinin içinde alt pencereler") <br/>
+MDI çerçeve Windows ve alt öğeleri
 
 Varsa bir MDI çerçeve penceresinin de geçerli MDI alt penceresi ile birlikte çalışır. Kendisini işlemek denemeden önce MDI çerçeve penceresinin MDI alt komut iletileri atar.
 

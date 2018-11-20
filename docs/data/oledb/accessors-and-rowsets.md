@@ -1,6 +1,6 @@
 ---
 title: Erişimciler ve Satır Kümeleri
-ms.date: 10/22/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - accessors [C++]
 - OLE DB consumer templates, rowset support
@@ -17,12 +17,12 @@ helpviewer_keywords:
 - accessors [C++], rowsets
 - rowsets [C++], supported types
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
-ms.openlocfilehash: 74a839d36f96b115d1f4e0c35532bd76d998a4b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d29c409f2ed410d9f697419e9a98b675eee7a69d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651262"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175725"
 ---
 # <a name="accessors-and-rowsets"></a>Erişimciler ve Satır Kümeleri
 
@@ -34,7 +34,7 @@ Türetilen tüm erişimcileri [CAccessorBase](../../data/oledb/caccessorbase-cla
 
 Aşağıdaki şekilde erişimci türleri gösterilmektedir.
 
-![Erişimci türleri](../../data/oledb/media/vcaccessortypes.gif "vcaccessortypes")<br/>
+![Erişimci türleri](../../data/oledb/media/vcaccessortypes.gif "erişimci türleri")<br/>
 Erişimci sınıfları
 
 - [CAccessor](../../data/oledb/caccessor-class.md) veritabanı kaynak yapısı tasarım zamanında bildiğinizde bu erişimci kullanın. `CAccessor` statik olarak arabellek içeren bir veritabanı kaydı veri kaynağına bağlar.
@@ -63,7 +63,7 @@ OLE DB Şablonları satır kümeleri (bkz. Yukarıdaki şekil) üç tür destekl
 
 Aşağıdaki şekilde satır kümesi türleri gösterilmektedir.
 
-![RowsetType grafik](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")<br/>
+![RowsetType grafik](../../data/oledb/media/vcrowsettypes.gif "RowsetType grafiği")<br/>
 Satır kümesi sınıfları
 
 [Şema satır kümeleri](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) yoksa veri erişim verileri depolamak ancak bunun yerine access olarak adlandırılan meta veri deposu hakkında bilgi. Şema satır kümeleri genellikle veritabanı yapısı derleme zamanında bilinen değildir ve çalışma zamanında alınmalıdır durumlarda kullanılır.

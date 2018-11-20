@@ -1,6 +1,6 @@
 ---
 title: CReBarCtrl Kullanma
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CReBarCtrl
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - combo boxes [MFC], in rebar controls
 - rebar controls
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-ms.openlocfilehash: 0317ece49d3d5ee3c815df6f9716809ebb1fd27f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2749e4ec919e2014b3de50f1cd164ef66d2fa0ad
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562181"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175450"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 
@@ -21,7 +21,7 @@ Rebar denetimiyle alt pencereler için kapsayıcı görevi görür. Bu alt pence
 
 Aşağıdaki çizimde, iki bant olmayan bir çubuk barınağı denetimi gösterir. Bir Mandal çubuğu, bir metin etiketi ("Adres") ve birleşik giriş kutusunun alt pencere içeriyor. Başka bir bant kavrayıcı çubuğu, bir metin etiketi ve (bir alt pencere ile uygulanan) bir düz araç içerir.
 
-![Rebar bantları iki olan denetim](../mfc/media/vc4ruz1.gif "vc4ruz1")
+![Rebar bantları iki olan denetim](../mfc/media/vc4ruz1.gif "Rebar bantları iki olan denetim")
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
 

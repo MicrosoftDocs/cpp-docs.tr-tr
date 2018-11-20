@@ -1,6 +1,6 @@
 ---
 title: MFC ActiveX Denetimleri
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 f1_keywords:
 - MFC ActiveX Controls (MFC)
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-ms.openlocfilehash: 95e1e1cc47d9c14448635fae5d6a9added8e15e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 10ad0645e873a1a745168be9b839bbf97a1c05a6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553281"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174897"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 
@@ -39,7 +39,8 @@ ActiveX denetimlerinin penceresiz ve etkin olduğunda, yalnızca bir pencere olu
 
 ActiveX denetimi tüm OLE kapsayıcısı içinde kullanılabilmesi için bir işlem sunucusu (küçük nesne genellikle) olarak uygulanır. Tam işlevselliğini bir ActiveX denetimini ActiveX denetimlerini kullanan olacak şekilde tasarlanan OLE kapsayıcısı içinde kullanıldığında kullanılabilir olduğunu unutmayın. Bkz: [diğer uygulamalar için bağlantı noktası ActiveX denetimlerini](../mfc/containers-for-activex-controls.md) ActiveX denetimlerini destekleyen kapsayıcılar listesi. Bundan sonra "Denetim kapsayıcısı," olarak adlandırılan bu kapsayıcı türü denetimin özellikleri ve yöntemleri kullanarak bir ActiveX denetimini çalışabilir ve olayları şeklinde ActiveX denetiminden bildirimleri alır. Aşağıdaki şekil, bu etkileşim gösterilmektedir.
 
-![ActiveX denetimi kapsayıcısı ve denetim etkileşim özelliği](../mfc/media/vc37221.gif "vc37221") etkileşim arasında bir ActiveX denetimi kapsayıcısı ve pencereli bir ActiveX denetimi
+![ActiveX denetimi kapsayıcısı ve denetim etkileşim özelliği](../mfc/media/vc37221.gif "etkileşim özelliği, ActiveX denetimi kapsayıcısı ve Denetim") <br/>
+Pencereli bir ActiveX denetimini ActiveX denetimi kapsayıcısı arasındaki etkileşimi
 
 ActiveX denetimleri, en iyi duruma getirme bazı son için bilgi [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
 
@@ -69,7 +70,8 @@ Son öğeden bir dizi (yöntemler olarak adlandırılır) işlevleri ve denetim 
 
 Bir denetim kapsayıcısı bir denetimi kullanıldığında, iki mekanizma iletişim kurmak için kullanır: özellikler ve yöntemler sunar ve olayları tetikler. Aşağıdaki şekil, bu iki mekanizma nasıl uygulandığını gösterir.
 
-![ActiveX denetimi kapsayıcısı ile iletişim kuran](../mfc/media/vc37222.gif "vc37222") iletişim arasında bir ActiveX denetimi kapsayıcısı ve ActiveX denetimi
+![ActiveX denetimi kapsayıcısı ile iletişim kuran](../mfc/media/vc37222.gif "ActiveX denetimi kapsayıcısı ile iletişim kurar") <br/>
+Bir ActiveX denetimini ActiveX denetimi kapsayıcısı arasındaki iletişimi
 
 Önceki şekilde, ayrıca diğer OLE arabirimleri (yanı sıra otomasyon ve olaylar) denetimleri tarafından nasıl işlendiğini gösterilmektedir.
 
@@ -83,7 +85,8 @@ Olduğunda bir [penceresiz denetime](../mfc/providing-windowless-activation.md) 
 
 Bir denetim bir pencere etkin olduğunda, tam denetim kapsayıcısı, kullanıcı ve Windows ile etkileşim kurabilirsiniz. Aşağıdaki şekilde ActiveX denetimini, denetimi kapsayıcısı ve işletim sistemi arasındaki iletişim yollarını gösterir.
 
-![İleti işleme etkin pencere ActiveX denetiminde](../mfc/media/vc37223.gif "vc37223") Windows iletisi işlenirken bir pencereli ActiveX denetimi (zaman etkin)
+![İleti işleme etkin pencere ActiveX denetiminde](../mfc/media/vc37223.gif "ileti etkin pencere ActiveX denetiminde işleme") <br/>
+Windows ileti işleme bir pencereli ActiveX denetiminde (etkin olduğunda)
 
 ##  <a name="_core_serializing_activex_elements"></a> Seri hale getirme
 

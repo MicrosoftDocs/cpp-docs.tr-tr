@@ -1,6 +1,6 @@
 ---
 title: Bağlantı Noktaları
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - IConnectionPoint
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-ms.openlocfilehash: cddbdb30cbc5f5ddb5fa98524ad067655f262be1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf21e7bf591a5b1977784db1542053817a73e6cd
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517643"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175489"
 ---
 # <a name="connection-points"></a>Bağlantı Noktaları
 
@@ -30,7 +30,8 @@ Geçmişte, Bileşen Nesne Modeli (COM) genel bir mekanizma tanımlanan (`IUnkno
 
 Bir bağlantı iki bölümden oluşur: kaynak ve arabirimi uygulayan nesnenin adlı arabirim, çağıran nesneyle havuz çağrılır. Bir bağlantı noktası kaynağı tarafından kullanıma sunulan arabirimidir. Bir bağlantı noktası göstererek kaynak havuzlarını kendisi (kaynak) bağlantıları kurmak sağlar. Mekanizması bağlantı noktası ( `IConnectionPoint` arabirimi), daha sonra havuz arabirimini işaretçisi kaynak nesneye geçirilir. Bu işaretçi, kaynak havuzu'nın uygulama üye işlevleri bir dizi erişim sağlar. Örneğin, havuz tarafından uygulanan bir olay harekete geçirmek için kaynak havuzu'nın uygulama uygun yöntemini çağırabilirsiniz. Aşağıdaki şekilde gösterilmiştir bağlantı noktası açıklanmış.
 
-![Bağlantı noktası uygulanan](../mfc/media/vc37lh1.gif "vc37lh1") bir uygulanan bağlantı noktası
+![Bağlantı noktası uygulanan](../mfc/media/vc37lh1.gif "uygulanan bağlantı noktası") <br/>
+Uygulanan bir bağlantı noktası
 
 MFC Bu modele uygulayan [CConnectionPoint](../mfc/reference/cconnectionpoint-class.md) ve [CCmdTarget](../mfc/reference/ccmdtarget-class.md) sınıfları. Türetilen sınıflar `CConnectionPoint` uygulamak `IConnectionPoint` arabirimi, diğer nesnelere bağlantı noktalarını göstermek için kullanılır. Türetilen sınıflar `CCmdTarget` uygulamak `IConnectionPointContainer` arabirimi nesnenin kullanılabilir bağlantı noktaları tüm numaralandırma veya özel bağlantı noktası bulunamıyor.
 
@@ -54,7 +55,8 @@ Son olarak, bir çağrı ekleyin `EnableConnections` sınıfın oluşturucusunda
 
 Bu kodu ekledikten sonra `CCmdTarget`-türetilmiş sınıf için bir bağlantı noktası sunan `ISampleSink` arabirimi. Aşağıdaki şekil, bu örnek gösterir.
 
-![MFC kullanılarak uygulanan bir bağlantı noktası](../mfc/media/vc37lh2.gif "vc37lh2") işaret bağlantı A uygulanan MFC ile
+![MFC kullanılarak uygulanan bir bağlantı noktası](../mfc/media/vc37lh2.gif "MFC kullanılarak uygulanan bir bağlantı noktası") <br/>
+MFC'de uygulanan bir bağlantı noktası
 
 Genellikle "çok noktaya yayın" bağlantı noktaları desteği — birden çok havuzlarından yayın özelliği için aynı arabirimi bağlı. Aşağıdaki örnek parçası gösterilmiştir çok noktaya yayın bağlantı noktasındaki her bir havuz ile Yinelem tarafından nasıl:
 

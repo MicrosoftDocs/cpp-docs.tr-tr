@@ -1,18 +1,18 @@
 ---
 title: 'İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - preventing deadlock with joins [Concurrency Runtime]
 - deadlock, preventing [Concurrency Runtime]
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: b98c2deb158b9b9fc71caa7133aeaeb2acfd369c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b62f4007a79faaff479e4e8ff998a8b48e4d5dd1
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498844"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175927"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 
@@ -48,7 +48,7 @@ Bu izlenecek yol aşağıdaki bölümleri içerir:
 
 Yemek Yiyen Filozoflar sorunu kilitlenme bir uygulamada nasıl gerçekleştirildiğini gösterir. Bu sorunda bir gidiş tablosunu beş Yiyen Filozoflar yaslanın. Her filozof düşünmek ve yemek arasında geçiş yapıyor. Her filozof ile komşu sola ve başka bir chopstick paylaşmalıdır chopstick sağa komşu ile. Bu düzeni aşağıdaki çizimde gösterilmektedir.
 
-![Yemek Yiyen Filozoflar sorunu](../../parallel/concrt/media/dining_philosophersproblem.png "dining_philosophersproblem")
+![Yemek Yiyen Filozoflar sorunu](../../parallel/concrt/media/dining_philosophersproblem.png "yemek Yiyen Filozoflar sorunu")
 
 Yemek için bir filozof iki chopsticks tutmanız gerekir. Her filozof tek chopstick tutar ve için başka bir bekleyen, ardından hiçbir filozof yemek ve tüm yeterli kaynak kalmamasına neden.
 

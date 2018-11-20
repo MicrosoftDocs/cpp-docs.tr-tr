@@ -1,6 +1,6 @@
 ---
 title: Oturum Nesnesi Arabirimleri
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - session objects [OLE DB]
 - session objects [OLE DB], interfaces
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - interfaces, session object
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-ms.openlocfilehash: 6b4748b804572c72b75f63b8ea2473818bdac989
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 284f93d96b974a616e957a65ef0c8aa39b33a564
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556627"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176906"
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
 
@@ -42,7 +42,7 @@ Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zo
 
 Oturum nesnesi bir satır kümesi nesnesi oluşturur. Oturum Sağlayıcı komutları destekliyorsa, ayrıca bir komut nesnesi oluşturur. (`CCommand`, OLE DB uygulama `TCommand`). Komut nesnesi uygulayan `ICommand` arabirimi ve kullanımları `ICommand::Execute` satır kümesinde, aşağıdaki resimde gösterildiği gibi komutları yürütmek için yöntemi.
 
-![Sağlayıcı kavramsal diyagram](../../data/oledb/media/vc4u551.gif "vc4u551")
+![Sağlayıcı kavramsal diyagram](../../data/oledb/media/vc4u551.gif "sağlayıcısı kavramsal diyagramı")
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

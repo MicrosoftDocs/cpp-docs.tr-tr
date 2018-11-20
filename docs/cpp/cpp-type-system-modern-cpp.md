@@ -1,14 +1,14 @@
 ---
 title: C++ Tür Sistemi (Modern C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: ba24a4a739e4eb13d983202943ca046f857422d2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 476ebabc4bfc19f995119649d6f012d4b39d8369
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521098"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176347"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 
@@ -59,7 +59,7 @@ Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların 
 
 Aşağıdaki çizim, yerleşik türlerin göreli boyutlarını gösterir:
 
-![Bayt cinsinden boyutu yerleşik&#45;türlerinde](../cpp/media/built-intypesizes.png "yerleşik inTYpeSizes")
+![Bayt cinsinden boyutu yerleşik&#45;türlerinde](../cpp/media/built-intypesizes.png "bayt cinsinden boyutu yerleşik&#45;türleri")
 
 Aşağıdaki tablo en sık kullanılan temel türleri listeler:
 
@@ -70,13 +70,13 @@ Aşağıdaki tablo en sık kullanılan temel türleri listeler:
 |bool|1 bayt|True veya false olabilen değerleri temsil eder.|
 |char|1 bayt|Daha eski C stili dizelerde veya std::string nesnelerde UNICODE'a dönüştürülmesi hiçbir zaman gerekmeyecek ASCII karakterler için kullanın.|
 |wchar_t|2 bayt|UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu türü dizelerde kullanılan karakter türüdür `std::wstring`.|
-|unsigned char|1 bayt|C++ hiçbir yerleşik olan `byte` türü.  Bayt değerini göstermek için unsigned char kullanın.|
+|İmzasız&nbsp;char|1 bayt|C++ hiçbir yerleşik olan `byte` türü.  Bayt değerini göstermek için unsigned char kullanın.|
 |unsigned int|4 bayt|Bit bayrakları için varsayılan seçimdir.|
 |long long|8 bayt|Çok büyük tamsayı değerlerini temsil eder.|
 
 ## <a name="the-void-type"></a>Void türü
 
-**Void** türü özel bir türdür; türünde bir değişken bildirimini yapamazsınız **void**, ancak türünde bir değişken bildirebilir `void *` (işaretçiye **void**), olduğu Bazen ham (türsüz) bellek atarken gereklidir. Ancak, işaretçiler **void** olan tür açısından güvenli değildir ve genelde modern C++'da kesinlikle önerilmez. Bir işlev bildiriminde bir **void** dönüş değeri işlevin bir değer döndürmeyeceği anlamına gelir; bu sık karşılaşılan ve kabul edilebilir kullanımını **void**. While bildirmek için sıfır parametreye sahip C dili işlevler **void** parametre listesinde, örneğin, `fou(void)`, bu yaklaşım modern C++ ile kullanılmamaktadır ve bildirilmelidir `fou()`. Daha fazla bilgi için [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).
+**Void** türü özel bir türdür; türünde bir değişken bildirimini yapamazsınız **void**, ancak türünde bir değişken bildirebilir __void \*__  ( işaretçisine**void**), hangi gereklidir bazen ham (türsüz) bellek atarken. Ancak, işaretçiler **void** olan tür açısından güvenli değildir ve genelde modern C++'da kesinlikle önerilmez. Bir işlev bildiriminde bir **void** dönüş değeri işlevin bir değer döndürmeyeceği anlamına gelir; bu sık karşılaşılan ve kabul edilebilir kullanımını **void**. While bildirmek için sıfır parametreye sahip C dili işlevler **void** parametre listesinde, örneğin, `fou(void)`, bu yaklaşım modern C++ ile kullanılmamaktadır ve bildirilmelidir `fou()`. Daha fazla bilgi için [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).
 
 ## <a name="const-type-qualifier"></a>const türü niteleyici
 

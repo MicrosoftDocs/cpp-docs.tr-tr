@@ -1,16 +1,16 @@
 ---
 title: UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 4824180ec0ff9f7adb7c2d0a9b505a2abb58c20b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 59630c7702dffc4b606943e174e44fdba6aecfe8
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333338"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176958"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma
 
@@ -124,7 +124,7 @@ Bu yöntemleri `async` ve `await` zaman uyumsuz işlemler tamamlandıktan sonra 
 
 Aşağıdaki çizimde gösterildiği `Primes` her seçeneği seçtikten sonra uygulama.
 
-![Windows çalışma zamanı Primes uygulama](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
+![Windows çalışma zamanı uygulama Primes](../../parallel/concrt/media/concrt_windows_primes.png "Windows çalışma zamanı Primes uygulama")
 
 Kullanan örnekler `create_async` diğer diller tarafından kullanılabilen zaman uyumsuz görevler oluşturmak için bkz [Bing Haritalar seyahat iyileştirici örneğinde C++ kullanarak](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) ve [PPLileC++'taWindows8zamanuyumsuzişlemleri](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
 
@@ -186,7 +186,7 @@ Değiştirme `MainPage` kitaptaki ortak kelimeler Arabiriminde görüntüleyen b
 
 Sonuçları aşağıdaki çizimde `CommonWords` uygulama.
 
-![Windows çalışma zamanı CommonWords uygulama](../../parallel/concrt/media/concrt_windows_common_words.png "concrt_windows_common_words")
+![Windows çalışma zamanı CommonWords uygulama](../../parallel/concrt/media/concrt_windows_common_words.png "Windows çalışma zamanı CommonWords uygulama")
 
 Bu örnekte, çünkü iptali desteklemek olası `task` nesneleri destekleyen `create_async` bir örtük iptal belirteci kullanın. Yapılacak İş işlevinizi tanımlamak bir `cancellation_token` görevleriniz için İptal çalışılabilir bir yanıt gerektiğinde nesne. Ppl'de iptal hakkında daha fazla bilgi için bkz. [ppl'de iptal](cancellation-in-the-ppl.md)
 

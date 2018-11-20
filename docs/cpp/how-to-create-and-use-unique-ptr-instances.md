@@ -1,15 +1,15 @@
 ---
 title: 'Nasıl yapılır: unique_ptr Örnekleri Oluşturma ve Kullanma'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-ms.openlocfilehash: 13823b34042d8658d0d690e6657e1f41db50f788
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3e5705b47a4cfdf17b9a4b4829f1e13565dd7ce
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610255"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174902"
 ---
 # <a name="how-to-create-and-use-uniqueptr-instances"></a>Nasıl yapılır: unique_ptr Örnekleri Oluşturma ve Kullanma
 
@@ -17,7 +17,7 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) işaretçisini paylaşma
 
 Aşağıdaki diyagramda iki arasında sahipliğin aktarılması gösterilmiştir `unique_ptr` örnekleri.
 
-![Benzersiz bir sahipliğini taşıma&#95;ptr](../cpp/media/unique_ptr.png "unique_ptr")
+![Benzersiz bir sahipliğini taşıma&#95;ptr](../cpp/media/unique_ptr.png "sahipliğini benzersiz bir taşıma&#95;ptr")
 
 `unique_ptr` tanımlanan `<memory>` C++ Standart Kitaplığı üst bilgisi. Bu tam olarak ham işaretçi olarak kadar verimli ve C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Ek `unique_ptr` C++ Standart Kitaplığı kapsayıcıları örneklerine verimlidir çünkü taşıma Oluşturucusu `unique_ptr` kopyalama işlemine ihtiyacı ortadan kaldırır.
 

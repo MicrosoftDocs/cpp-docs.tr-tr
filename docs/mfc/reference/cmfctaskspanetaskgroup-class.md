@@ -1,6 +1,6 @@
 ---
 title: CMFCTasksPaneTaskGroup sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCTasksPaneTaskGroup
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], m_rectGroup
 - CMFCTasksPaneTaskGroup [MFC], m_strName
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-ms.openlocfilehash: 25e714aa617cdccc4e02e288f1a24f636e05cb0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ed50950bc62a0c2f382e42782c58a0d7354116f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539613"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176594"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
 
@@ -72,19 +72,19 @@ class CMFCTasksPaneTaskGroup : public CObject
 
 Aşağıdaki çizim bir genişletilmiş görev grubunu gösterir:
 
-![Görev grubu, Genişletilmiş](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")
+![Görev grubu, Genişletilmiş](../../mfc/reference/media/nexttaskgrpexpand.png "görev grubu, genişletilmiş")
 
 Daraltılmış görev grubu aşağıda gösterilmiştir:
 
-![Daraltılmış görev grubu](../../mfc/reference/media/nexttaskgrpcollapse.png "nexttaskgrpcollapse")
+![Daraltılmış görev grubu](../../mfc/reference/media/nexttaskgrpcollapse.png "daraltılmış görev grubu")
 
 Bir görev grubunun resim yazısı olmadan aşağıda gösterilmiştir:
 
-![Görev grubu olmadan bir açıklamalı alt yazı](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")
+![Görev grubu olmadan bir açıklamalı alt yazı](../../mfc/reference/media/nexttaskgrpnocapt.png "görev grubu olmadan bir resim yazısı")
 
 Aşağıdaki çizimde, iki görev gruplarını gösterir. İlk görev grubu ayarlayarak özel olarak işaretlenmiş `m_bIsSpecial` bayrağı TRUE olarak ikinci görev grubunun özel değil. İlk görev grubu için açıklama yazısını nasıl ikinci görev grubu koyu olduğunu unutmayın:
 
-![Özel görev grubu](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")
+![Özel görev grubu](../../mfc/reference/media/nexttaskgrpspecial.png "özel görev grubu")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

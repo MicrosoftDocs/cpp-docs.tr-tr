@@ -1,6 +1,6 @@
 ---
 title: CNetAddressCtrl sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CNetAddressCtrl
 - AFXCMN/CNetAddressCtrl
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 09dfdb57fb22b958edc64ec8cbdce95527a304d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee44c05fa6417aaca367798d7a94a900d521b896
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654694"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176244"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 
@@ -64,7 +64,7 @@ Ağ adresi denetimi, kullanıcının girdiği adresinin biçimi doğru olduğunu
 
 Aşağıdaki şekil, bir ağ adresi denetimi içeren bir iletişim kutusu gösterir. Metin kutusunu (1) ağ adresi denetimi için bir geçersiz ağ adresi içeriyor. Ağ adresi geçersiz (2) bilgi ipucu iletisi görüntülenir.
 
-![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ](../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")
+![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ](../../mfc/reference/media/cnetaddctrl.png "İletişim bir ağ adresi denetimi ve bilgi ipucu.")
 
 ## <a name="example"></a>Örnek
 

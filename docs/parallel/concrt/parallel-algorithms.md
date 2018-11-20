@@ -1,15 +1,15 @@
 ---
 title: Paralel Algoritmalar
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-ms.openlocfilehash: 0ad7f67016dcb7d4638de0f159feb23cd1282b19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8a08919ce6792babb9b8b1b809e242465a200f9
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445597"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176451"
 ---
 # <a name="parallel-algorithms"></a>Paralel Algoritmalar
 
@@ -247,7 +247,7 @@ Aşağıdaki tabloda, üç paralel sıralama algoritmaları önemli özellikleri
 
 Aşağıdaki resimde, üç paralel sıralama algoritmaları önemli özelliklerini daha grafik şeklinde gösterir.
 
-![Sıralama algoritmaları karşılaştırması](../../parallel/concrt/media/concrt_parallel_sorting.png "concrt_parallel_sorting")
+![Sıralama algoritmaları karşılaştırması](../../parallel/concrt/media/concrt_parallel_sorting.png "sıralama algoritmaları karşılaştırması")
 
 Bu paralel algoritmalar sıralama iptal ve özel durum işleme kurallarına izleyin. İptal ve özel durum işleme, eşzamanlılık çalışma zamanı hakkında daha fazla bilgi için bkz: [paralel algoritmaları iptal etme](../../parallel/concrt/cancellation-in-the-ppl.md#algorithms) ve [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 

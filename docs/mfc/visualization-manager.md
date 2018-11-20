@@ -1,29 +1,34 @@
 ---
 title: Seri Hale Getirme Yöneticisi
-ms.date: 06/28/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Visualization Manager
 ms.assetid: c9dd1365-27ac-42e5-8caa-1004525b4129
-ms.openlocfilehash: befff860f50677f9c70c0fbb6b45ac528c36e773
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c9dc19266d80d56f696953c5f5896eb9d99cc8b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521378"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175580"
 ---
 # <a name="visualization-manager"></a>Seri Hale Getirme Yöneticisi
 
 Görsel yöneticiyi tüm uygulama görünümünü denetleyen bir nesnedir. Bu, tek bir sınıf uygulamanız için çizim kodunu yere koyabilirsiniz işlevi görür. MFC kitaplığını birçok görsel Yöneticiler içerir. Uygulamanız için özel görünüm oluşturmak istiyorsanız, ayrıca kendi görsel yöneticiyi oluşturabilirsiniz. Farklı görsel Yöneticiler etkin olduğunda, aşağıdaki resimlerde aynı uygulama göster:
 
-![CMFCVisualManagerWindows tarafından işlenen olarak MyApp](../mfc/media/vmwindows.png "vmwindows") CMFCVisualManagerWindows görsel yöneticiyi kullanan Uygulamam
+![CMFCVisualManagerWindows tarafından işlenen olarak MyApp](../mfc/media/vmwindows.png "CMFCVisualManagerWindows tarafından işlenen olarak Uygulamam") <br/>
+CMFCVisualManagerWindows görsel yöneticiyi kullanan Uygulamam
 
-![CMFCVisualManagerVS2005 tarafından işlenen olarak MyApp](../mfc/media/vmvs2005.png "vmvs2005") CMFCVisualManagerVS2005 görsel yöneticiyi kullanan Uygulamam
+![CMFCVisualManagerVS2005 tarafından işlenen olarak MyApp](../mfc/media/vmvs2005.png "CMFCVisualManagerVS2005 tarafından işlenen olarak Uygulamam") <br/>
+CMFCVisualManagerVS2005 görsel yöneticiyi kullanan Uygulamam
 
-![CMFCVisualManagerOfficeXP tarafından işlenen olarak MyApp](../mfc/media/vmofficexp.png "vmofficexp") CMFCVisualManagerOfficeXP görsel yöneticiyi kullanan Uygulamam
+![CMFCVisualManagerOfficeXP tarafından işlenen olarak MyApp](../mfc/media/vmofficexp.png "CMFCVisualManagerOfficeXP tarafından işlenen olarak Uygulamam") <br/>
+CMFCVisualManagerOfficeXP görsel yöneticiyi kullanan Uygulamam
 
-![CMFCVisualManagerOffice2003 tarafından işlenen Uygulamam](../mfc/media/vmoffice2003.png "vmoffice2003") CMFCVisualManagerOffice2003 görsel yöneticiyi kullanan Uygulamam
+![CMFCVisualManagerOffice2003 tarafından işlenen Uygulamam](../mfc/media/vmoffice2003.png "CMFCVisualManagerOffice2003 tarafından işlenen Uygulamam") <br/>
+CMFCVisualManagerOffice2003 görsel yöneticiyi kullanan Uygulamam
 
-![CMFCVisualManagerOffice2007 tarafından işlenen Uygulamam](../mfc/media/msoffice2007.png "msoffice2007") CMFCVisualManagerOffice2007 görsel yöneticiyi kullanan Uygulamam
+![CMFCVisualManagerOffice2007 tarafından işlenen Uygulamam](../mfc/media/msoffice2007.png "CMFCVisualManagerOffice2007 tarafından işlenen Uygulamam") <br/>
+CMFCVisualManagerOffice2007 görsel yöneticiyi kullanan Uygulamam
 
 Varsayılan olarak görsel yöneticiyi çeşitli GUI öğelerin çizim kodunu korur. Özel kullanıcı Arabirimi öğeleri sağlamak için görsel yöneticiyi ilgili çizim yöntemleri geçersiz kılmanız gerekir. Bu yöntemlerin listesi için bkz: [CMFCVisualManager sınıfı](../mfc/reference/cmfcvisualmanager-class.md). Özel bir görünümünü sağlamak için geçersiz kılabilirsiniz yöntemleri ile başlayan tüm yöntemlerin olması `OnDraw`.
 

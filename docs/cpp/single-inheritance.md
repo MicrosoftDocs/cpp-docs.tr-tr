@@ -1,6 +1,6 @@
 ---
 title: Tek Devralma
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - single inheritance
 - base classes [C++], indirect
@@ -10,18 +10,19 @@ helpviewer_keywords:
 - derived classes [C++], single base class
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-ms.openlocfilehash: a188780201c00451b125288b37c7c62fbe2322c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96af0c42a32f14280fd8c208a3e4eaec38a8ca3a
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461860"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175632"
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 
 Sık kullanılan bir devralma biçimi olan "tek devralma"da, sınıflarda yalnızca bir temel sınıfı vardır. Aşağıdaki şekilde gösterilen ilişkiyi göz önünde bulundurun.
 
-![Temel tek&#45;Devralma Grafiği](../cpp/media/vc38xj1.gif "vc38XJ1") basit tek devralma grafiği
+![Temel tek&#45;Devralma Grafiği](../cpp/media/vc38xj1.gif "temel tek&#45;Devralma Grafiği") <br/>
+Basit Tek Devralma Grafiği
 
 Şekildeki ilerlemenin genelden özele olduğuna dikkat edin. Çoğu sınıf hiyerarşisinin tasarımında bulunan diğer bir genel öznitelik ise türetilen sınıfın temel sınıf ile bir "türü" ilişkisi olmasıdır. Şekilde, `Book` bir `PrintedDocument` türü, `PaperbackBook` ise bir `book` türüdür.
 
@@ -47,12 +48,13 @@ Yukarıdaki örnekte, bir erişim belirticisi **genel** kullanılır. Genel, kor
 
 Bir sınıf, aşağıdaki şekilde gösterildiği gibi birçok özel sınıf için temel sınıf olarak kullanılabilir.
 
-![Yönlendirilmiş Çevrimsiz grafik](../cpp/media/vc38xj2.gif "vc38XJ2") örnek, yönlendirilmiş Çevrimsiz grafik
+![Yönlendirilmiş Çevrimsiz grafik](../cpp/media/vc38xj2.gif "yönlendirilmiş Çevrimsiz grafik") <br/>
+Yönlendirilmiş Çevrimsiz Grafik Örneği
 
 Yukarıda gösterilen "yönlendirilmiş çevrimsiz graf" (veya "DAG") adlı diyagramda, sınıfların bazıları birden fazla türetilmiş sınıfa yönelik temel sınıflardır. Ancak bunun tersi doğru değildir: türetilmiş herhangi bir sınıfa yönelik yalnızca bir doğrudan temel sınıf vardır. Şekildeki grafikte "tek devralma" yapısı gösterilmiştir.
 
 > [!NOTE]
->  Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar.
+> Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar.
 
 Devralma işleminde, türetilen sınıf temel sınıfın üyelerini ve eklediğiniz tüm yeni üyeleri içerir. Sonuç olarak, türetilen bir sınıf temel sınıfın üyelerine başvurabilir (bu üyeler türetilen sınıfta yeniden tanımlanmadıkça). Kapsam çözümleme işleci (`::`), bu sınıflar türetilen sınıfta yeniden tanımlandığında doğrudan veya dolaylı temel sınıfların üyelerine başvurmak için kullanılabilir. Bu örneği göz önünde bulundurun:
 

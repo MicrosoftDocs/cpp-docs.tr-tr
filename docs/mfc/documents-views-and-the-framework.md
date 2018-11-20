@@ -1,6 +1,6 @@
 ---
 title: Belgeler, Görünümler ve Çerçeve
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - document templates [MFC], template objects
 - applications [MFC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - MFC object relationships
 - thread objects [MFC]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
-ms.openlocfilehash: f9397c2a16d8411fe91cbf6c1c1de3ecdffbeae7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e59e8b69dcdf0bf3b22d4286ba4692558a11e096
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662377"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175762"
 ---
 # <a name="documents-views-and-the-framework"></a>Belgeler, Görünümler ve Çerçeve
 
@@ -59,7 +59,8 @@ MFC çerçevesi yaklaşımının temelindeki, belge ve görünüm kavramlardır.
 
 Çalışan bir uygulamada bu nesneler işbirliği ile kullanıcı eylemlerini, birlikte diğer iletiler ve komutlar ile ilişkili yanıt. Tek uygulama nesnesi bir veya daha fazla belge şablonları yönetir. Her bir belge şablonu oluşturur ve yönetir (uygulama SDI veya MDI olup olmamasına bağlı olarak) bir veya daha fazla belge. Kullanıcı görünümleri ve belge çerçeve pencere içinde yer alan bir görünüm aracılığıyla yönetir. Aşağıdaki şekilde bir SDI uygulaması için bu nesneleri arasındaki ilişkiler gösterilmektedir.
 
-![Çalışan bir SDI uygulamasında nesneler](../mfc/media/vc386v1.gif "vc386v1") çalıştıran SDI uygulamasında nesneler
+![Çalışan bir SDI uygulamasında nesneler](../mfc/media/vc386v1.gif "çalışan SDI uygulamasında nesneler") <br/>
+Çalışan SDI uygulamasında nesneler
 
 Bu makaleler ailesi geri kalanı, programlamada kullanımını framework araçları, MFC Uygulama Sihirbazı ve kaynak düzenleyicileri, bu nesneler oluşturma ve nasıl çalıştıkları açıklanır. Belgeler, görünümler ve çerçeve pencereleri daha ayrıntılı olarak açıklanmıştır [pencere nesneleri](../mfc/window-objects.md) ve [belge/görünüm mimarisi](../mfc/document-view-architecture.md).
 

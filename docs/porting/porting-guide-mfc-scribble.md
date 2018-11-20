@@ -1,13 +1,13 @@
 ---
 title: 'Taşıma Kılavuzu: MFC Scribble'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: b41689b1e0207029f4494cfd91c261705789a733
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 353dc8fb42b73ec7e0ee748ef9fefd030c073703
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539769"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175658"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
@@ -31,7 +31,7 @@ Komut satırında devenv da çalıştırabileceğinizi unutmayın kullanarak `/U
 
 Visual Studio 2017'deki eski bir proje dosyasını açtığınızda, proje dosyası biz kabul en son sürüme dönüştürmek üzere Visual Studio sunar. Aşağıdaki iletişim kutusu görüntülendiğinde:
 
-![Proje ve çözüm değişikliklerini gözden](../porting/media/scribbleprojectupgrade.PNG "ScribbleProjectUpgrade")
+![Proje ve çözüm değişikliklerini gözden](../porting/media/scribbleprojectupgrade.PNG "proje ve çözüm değişikliklerini gözden geçirin.")
 
 Itanium hedef kullanılamıyor ve dönüştürülmez bize bildiren bir hata oluştu.
 
@@ -43,7 +43,7 @@ Platform 'Itanium' is missing from this project. All the configurations and thei
 
 Visual Studio, ardından tüm sorunların eski proje dosyasıyla birlikte listeleyen bir geçiş raporu görüntülenir.
 
-![Yükseltme raporu](../porting/media/scribblemigrationreport.PNG "ScribbleMigrationReport")
+![Yükseltme raporu](../porting/media/scribblemigrationreport.PNG "yükseltme raporu")
 
 Bu durumda, tüm uyarıları sorunları olan ve Visual Studio Proje dosyasında yapılan uygun değişiklikler. Proje endişe kadar derleme aracını MSBuild'e vcbuild değiştiğini büyük fark ise. Bu değişiklik, ilk Visual Studio 2010'da sunulmuştur. Diğer değişiklikler, proje dosyasının kendisini bazı yeniden öğelerin dizisi içerir. Sorunlarından hiçbiri, daha fazla dikkat bu basit proje için gereklidir.
 

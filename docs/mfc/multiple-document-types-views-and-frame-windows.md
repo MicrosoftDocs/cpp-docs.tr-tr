@@ -1,6 +1,6 @@
 ---
 title: Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - static splitter windows [MFC]
 - multiple views [MFC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - multiple frame windows [MFC]
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-ms.openlocfilehash: 3c1422aed5535d30a2f9fb79300f6093326d2ef3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9c26413d45dfa03087bf9909bf8004064766a00
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669111"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175804"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
 
@@ -64,7 +64,8 @@ MFC aynı belgede birden çok görünüm gerektiren üç yaygın kullanıcı ara
 
 Aşağıdaki şekilde bölümlere ayrılmış üç kullanıcı arabirimi model yukarıda gösterilen sırayla a, b ve c gösterir.
 
-![Birden çok&#45;kullanıcı arabirimlerini görüntülemek](../mfc/media/vc37a71.gif "vc37a71") birden çok görünüm kullanıcı arabirimleri
+![Birden çok&#45;kullanıcı arabirimlerini görüntülemek](../mfc/media/vc37a71.gif "birden çok&#45;kullanıcı arabirimleri görüntüleme") <br/>
+Birden çok görünüm kullanıcı arabirimleri
 
 Yeni Pencere komutunu uygulama ve sınıfı sağlayarak bu modeller çerçevesini sağlar [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)bölümünde açıklandığı gibi [Bölümlendirici Windows](#_core_splitter_windows). Bu, başlangıç noktası olarak kullanmak diğer model uygulayabilir. Ayırıcılar, görünümler ve çerçeve pencereleri bakın farklı yapılandırmaları gösteren örnek programlar için [MFC örnekleri](../visual-cpp-samples.md).
 

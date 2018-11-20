@@ -1,6 +1,6 @@
 ---
 title: Atama
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - casting [C++]
 - coercion [C++]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - polymorphic classes [C++]
 - classes [C++], polymorphism
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
-ms.openlocfilehash: eb309319a4af6d604d8558552ce313ba1d0fb629
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02ade663ee92d3a301fda95bb385c3ffa48ead12
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560803"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175554"
 ---
 # <a name="casting"></a>Atama
 
@@ -23,11 +23,13 @@ C++ dili, bir sınıf sanal işlevler içeren bir temel sınıftan türetilmişs
 
 Türetilmiş bir sınıf türetildiği tüm temel sınıfların tanımlarını içerdiği için bir işaretçi güvenli bir şekilde temel sınıfların herhangi birinin sınıf hiyerarşisine atanabilir. Temel sınıfın işaretçisi göz önünde bulundurulduğunda, işaretçiyi hiyerarşide aşağı doğru atamak güvenli olabilir. İşaret edilen nesne, temel sınıftan türetilen bir türdense güvenlidir. Bu durumda, gerçek nesne "tam nesne" olarak kabul edilir. Temel sınıfın işaretçisinin, tam nesnenin "alt nesnesine" işaret ettiği bildirilir. Örnek olarak aşağıdaki şekilde gösterilen sınıf hiyerarşisini inceleyin.
 
-![Sınıf hiyerarşisi](../cpp/media/vc38zz1.gif "vc38ZZ1") sınıf hiyerarşisi
+![Sınıf hiyerarşisi](../cpp/media/vc38zz1.gif "sınıf hiyerarşisi") <br/>
+Sınıf hiyerarşisi
 
 `C` türünden bir nesne, aşağıdaki şekilde gösterildiği gibi sanallaştırılabilir.
 
-![Sub sahip C sınıfı&#45;nesneleri B ve A](../cpp/media/vc38zz2.gif "vc38ZZ2") B alt nesnesine ve A alt nesnesine sahip C sınıfı
+![Sub sahip C sınıfı&#45;nesneleri B ve A](../cpp/media/vc38zz2.gif "alt sınıfı C&#45;B ve A nesneleri") <br/>
+B ve A ile C sınıfı alt nesneleri
 
 `C` sınıfının bir örneği göz önünde bulundurulduğunda, bir `B` alt nesnesi ve bir `A` alt nesnesi vardır. `C` ve `A` alt nesneleriyle birlikte `B` örneği, "tam nesne"dir.
 

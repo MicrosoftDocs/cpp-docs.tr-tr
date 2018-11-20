@@ -1,6 +1,6 @@
 ---
 title: CTaskDialog sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CTaskDialog
 - AFXTASKDIALOG/CTaskDialog
@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-ms.openlocfilehash: cbfb0a355b4901907b5df0a0b42ac28d5a76c551
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b95252c830e27a0602f149f880258511ec24e64
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441957"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177075"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 
@@ -242,7 +242,8 @@ class CTaskDialog : public CObject
 
 Aşağıdaki görüntüde bir örnek gösterilmektedir `CTaskDialog` bazı denetimleri konumunu göstermek için.
 
-![CTaskDialog örneği](../../mfc/reference/media/ctaskdialogsample.png "ctaskdialogsample") CTaskDialog örnek
+![CTaskDialog örneği](../../mfc/reference/media/ctaskdialogsample.png "CTaskDialog örneği") <br/>
+CTaskDialog örnek
 
 ## <a name="requirements"></a>Gereksinimler
 

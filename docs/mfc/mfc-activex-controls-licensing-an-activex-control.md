@@ -1,6 +1,6 @@
 ---
 title: 'MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama'
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 f1_keywords:
 - COleObjectFactory
 helpviewer_keywords:
@@ -11,18 +11,18 @@ helpviewer_keywords:
 - GetLicenseKey method [MFC]
 - licensing ActiveX controls
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-ms.openlocfilehash: 4001d49da8477ab9dd481d0eb3ee02cb10e1e18b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35ca5d410f642f2557d9ee797eda2d9529f7f4d1
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465630"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176371"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama
 
 Destek lisanslama, ActiveX denetimlerinin, isteğe bağlı bir özellik sayesinde kullanın veya denetim dağıtmak mümkün olan denetim. (Lisans sorunları ek açıklaması için bkz: Lisans sorunları [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 Bu makalede, aşağıdaki konular ele alınmaktadır:
@@ -43,13 +43,15 @@ ActiveX denetimleri için lisanslama destek sağlamak üzere [COleObjectFactory]
 
 Aşağıdaki şekilde, lisans doğrulama, kapsayıcılı bir uygulama geliştirme sırasında kullanılacak bir ActiveX denetimi gösterir. Daha önce belirtildiği gibi kapsayıcı uygulama geliştiricisinin uygun olması gerekir. LİS dosyası denetimi örneğini oluşturmak için geliştirme makinenizde yüklü.
 
-![ActiveX denetimi geliştirme için doğrulanmış lisanslı](../mfc/media/vc374d1.gif "vc374d1") doğrulama bir Lisanslı ActiveX denetimi sırasında geliştirme
+![ActiveX denetimi geliştirme için doğrulanmış lisanslı](../mfc/media/vc374d1.gif "geliştirme için doğrulanmış lisanslı bir ActiveX denetimi") <br/>
+Geliştirme sırasında doğrulama lisanslı bir ActiveX denetimi
 
 Son kullanıcı kapsayıcı uygulama çalışırken aşağıdaki şekilde gösterilen sonraki işlemi gerçekleşir.
 
 Uygulama başlatıldığında denetim örneği genellikle oluşturulması gerekir. Kapsayıcı bu çağrı yaparak gerçekleştirir. `CreateInstanceLic`, katıştırılmış lisans anahtarı bir parametre olarak geçirerek. Dize karşılaştırması, sonra katıştırılmış lisans anahtarı ve lisans anahtarı denetimin kendi kopyasını arasında yapılır. Eşleşmenin başarılı olursa, denetim bir örneği oluşturulur ve uygulama normal çalışmasına devam eder. Dikkat edin. Lisans Sözleşmesi dosya denetim kullanıcının makinede mevcut olması gerekmez.
 
-![ActiveX denetimi yürütmeyi doğrulandı lisanslı](../mfc/media/vc374d2.gif "vc374d2") bir Lisanslı ActiveX denetimi sırasında yürütme doğrulama
+![ActiveX denetimi yürütmeyi doğrulandı lisanslı](../mfc/media/vc374d2.gif "yürütmeyi doğrulandı lisanslı bir ActiveX denetimi") <br/>
+Yürütme sırasında doğrulama lisanslı bir ActiveX denetimi
 
 Denetimini lisanslama, iki temel bileşenden oluşur: DLL denetimi uygulamada belirli kod ve lisans dosyası. Kod, iki (veya büyük olasılıkla üç) işlev çağrıları ve bundan sonra "Telif hakkı bildirimi içeren bir lisans dize olarak" başvurulan bir karakter dizesi oluşur. Bu çağrılar ve lisans dize denetim uygulamasında bulunur (. CPP) dosyası. ActiveX Denetim Sihirbazı tarafından üretilen lisans dosyası, telif hakkı bildirimini içeren bir metin dosyasıdır. Proje adı ile kullanarak adlı bir. Lisans Sözleşmesi uzantısı, örneğin örnek. LİSANS SÖZLEŞMESİ. Tasarım zamanında kullanımı gerekirse lisanslı bir denetim tarafından bir lisans dosyası bulunmalıdır.
 

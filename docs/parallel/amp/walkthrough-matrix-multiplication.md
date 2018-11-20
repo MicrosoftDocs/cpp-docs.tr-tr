@@ -1,13 +1,13 @@
 ---
 title: 'İzlenecek yol: Matris Çarpım'
-ms.date: 11/06/2018
+ms.date: 11/19/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: d9516cf79b738ec03dd98133a4603b47f75eb2c8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: ae86ff5a111348404616c8bb4fecd3bf22afc90c
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327115"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176165"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 
@@ -41,13 +41,13 @@ Başlamadan önce:
 
 Bu bölümde, şu şekilde tanımlanır A ve B olmak üzere iki matrislerde çarpımı göz önünde bulundurun:
 
-![3&#45;tarafından&#45;2 matris](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")
+![3&#45;tarafından&#45;2 matris A](../../parallel/amp/media/campmatrixanontiled.png "3&#45;tarafından&#45;2 matris A")
 
-![2&#45;tarafından&#45;3 matris](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")
+![2&#45;tarafından&#45;3 matris B](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;tarafından&#45;3 matris B")
 
 Bir 3-tarafından-2 matris ve B ise 2 x 3 matris. 3-x-3 matris çarpılması A B ürünüdür. Ürün A satırlarını sütun b öğeye göre çarpılarak hesaplanır.
 
-![3&#45;tarafından&#45;3 matris](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;tarafından&#45;3 Matrisi")
+![3&#45;tarafından&#45;3 ürün matris](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;tarafından&#45;3 ürün Matrisi")
 
 ### <a name="to-multiply-without-using-c-amp"></a>C++ AMP kullanmadan çarpmak için
 
@@ -159,21 +159,21 @@ Döşeme içinde halinde kutucuk olarak bilinen eşit boyutlu alt kümeler, veri
 
 Matris çarpım içinde döşemeden yararlanmak için algoritma gerekir matris döşemesine bölümlemek ve ardından döşeme verilerini kopyalayın `tile_static` değişkenleri daha hızlı erişim için. Bu örnekte, matris eşit boyutta submatrices bölümlenir. Ürün submatrices çarpılarak bulunur. İki matrislerde ve bu örnekte, ürün şunlardır:
 
-![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixatiled.png "4&#45;tarafından&#45;4 matris A")
+![4&#45;tarafından&#45;4 matris A](../../parallel/amp/media/campmatrixatiled.png "4&#45;tarafından&#45;4 matris A")
 
-![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixbtiled.png "4&#45;tarafından&#45;4 matris B")
+![4&#45;tarafından&#45;4 matris B](../../parallel/amp/media/campmatrixbtiled.png "4&#45;tarafından&#45;4 matris B")
 
-![4&#45;tarafından&#45;4 matris](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;tarafından&#45;4 matris ürün")
+![4&#45;tarafından&#45;4 ürün matris](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;tarafından&#45;4 ürün Matrisi")
 
 Matrisler şu şekilde tanımlanır dört 2 x 2 matrislerde bölümlenir:
 
-![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;Matrisi")
+![4&#45;tarafından&#45;4 matris 2 bölümlenmiş bir&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;tarafından&#45;4 matris 2 bölümlenmiş bir&#45;tarafından&#45;2 alt&#45;Matrisi")
 
-![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;Matrisi")
+![4&#45;tarafından&#45;4 matris B bölümlenmiş 2&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;tarafından&#45;4 matris B bölümlenmiş 2&#45;tarafından&#45;2 alt&#45;Matrisi")
 
 Ürün a ve B artık yazılmış ve şu şekilde hesaplanır:
 
-![4&#45;tarafından&#45;2 bölümlenmiş 4 matris&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;tarafından&#45;4 matris ürün a ve B")
+![4&#45;tarafından&#45;4 matris A B 2 bölümlenmiş&#45;tarafından&#45;2 alt&#45;matrislerde](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;tarafından&#45;4 matris A B 2 bölümlenmiş&#45;tarafından&#45;2 alt&#45;Matrisi")
 
 Çünkü matrislerde `a` aracılığıyla `h` 2 x 2 matrisler, tüm ürünlerin ve bunların toplamı de 2 x 2 matrislerde. Ayrıca, takip eden ürün a ve B 4 x 4 matrisi, beklendiği gibi. Algoritma hemen kontrol etmek için ürün ilk sütunda, ilk satırındaki öğenin değerini hesaplayın. Bu örnekte, olacaktır öğenin değeri ilk satır ve ilk sütununu `ae + bg`. Yalnızca ilk sütun, ilk satırında hesaplanacak olan `ae` ve `bg` her dönem. Bu değer için `ae` olduğu `(1 * 1) + (2 * 5) = 11`. Değeri `bg` olduğu `(3 * 1) + (4 * 5) = 23`. Son değer `11 + 23 = 34`, doğru olduğu.
 

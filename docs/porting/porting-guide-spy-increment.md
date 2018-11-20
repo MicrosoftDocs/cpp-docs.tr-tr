@@ -1,13 +1,13 @@
 ---
 title: 'Taşıma Kılavuzu: Spy++'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 9e36bbefb2ab851350e17c0561addb680593f457
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bd69853b13d58ff79910eafcc601b0507d5a9ad
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487821"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177010"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -25,7 +25,7 @@ Proje dosyası, Visual C++ 6.0, iki eski .dsw dosyalarından kolayca daha fazla 
 
 İki proje yükselttikten sonra Çözümümüzü şöyle Aranan:
 
-![Spy&#43; &#43; çözüm](../porting/media/spyxxsolution.PNG "SpyxxSolution")
+![Spy&#43; &#43; çözüm](../porting/media/spyxxsolution.PNG "Spy&#43; &#43; çözümü")
 
 C dilinde yazılmış bir DLL ile çok sayıda C++ dosyaları ve başka iki proje sunuyoruz
 

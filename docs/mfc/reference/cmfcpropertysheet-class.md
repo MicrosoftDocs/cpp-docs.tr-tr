@@ -1,6 +1,6 @@
 ---
 title: CMFCPropertySheet sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCPropertySheet
 - AFXPROPERTYSHEET/CMFCPropertySheet
@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-ms.openlocfilehash: 8e643474d577c606e80f5f34c6166a59753610f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1168375606ef86061269454aa361a076efa331a4
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531618"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176412"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 
@@ -112,15 +112,15 @@ Kullanmak için aşağıdaki adımları gerçekleştirin `CMFCPropertySheet` uyg
 
 Aşağıdaki çizimde, bir gömülü Microsoft Outlook araç stilinde bir özellik sayfası gösterilmektedir. Outlook araç özellik sayfasının sol tarafında görünür.
 
-![CMFCPropertySheet renk denetimleri](../../mfc/reference/media/cmfcpropertysheet_color.png "cmfcpropertysheet_color")
+![CMFCPropertySheet renk denetimleri](../../mfc/reference/media/cmfcpropertysheet_color.png "CMFCPropertySheet renk denetimleri")
 
 Aşağıdaki çizimde gösterilmektedir içeren bir özellik sayfası bir [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md) nesne. Bu özellik sayfasında standart bir ortak denetimleri özellik sayfası stilini nesnedir.
 
-![CMFCPropertySheet liste ve özellik denetimleri](../../mfc/reference/media/cmfcpropertysheet_list.png "cmfcpropertysheet_list")
+![CMFCPropertySheet liste ve özellik denetimleri](../../mfc/reference/media/cmfcpropertysheet_list.png "CMFCPropertySheet liste ve özellik denetimleri")
 
 Aşağıdaki çizimde, bir ağaç denetimi stilinde bir özellik sayfası gösterilmektedir.
 
-![Özellik ağacı](../../mfc/reference/media/proptree.png "proptree")
+![Özellik ağacı](../../mfc/reference/media/proptree.png "özellik ağacı")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

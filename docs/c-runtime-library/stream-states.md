@@ -1,21 +1,21 @@
 ---
 title: Akış Durumları
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - streams, states
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-ms.openlocfilehash: d51f24b82c10d58e91f5d20b6656eb16621004ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43d28fa504c64fcb25d5c7cd3ee2c6ed906acd7e
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481178"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175567"
 ---
 # <a name="stream-states"></a>Akış Durumları
 
 Geçerli durumları ve durum geçişlerini, bir akış için aşağıdaki şekilde gösterilmektedir.
 
-![Stream](../c-runtime-library/media/stream.gif "akış")
+![Stream durumu diyagramını](../c-runtime-library/media/stream.gif "Stream durumu diyagramı")
 
 Her dairelerin kararlı bir duruma gösterir. Satırların her biri, akışta işleyen bir işlev çağrısının sonucu olarak ortaya çıkabilecek geçiş gösterir. İşlevlerin beş grup durumu geçişleri neden olabilir.
 

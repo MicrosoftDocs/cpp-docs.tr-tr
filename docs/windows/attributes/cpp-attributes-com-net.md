@@ -1,17 +1,17 @@
 ---
 title: COM ve .NET için C++ öznitelikleri
 ms.custom: index-page
-ms.date: 10/02/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: bacfd4cb78c5bf65422fb4472a4563776041a87b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a37542bd69926572e44322c406862117560affe
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589286"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175779"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM ve .NET için C++ öznitelikleri
 
@@ -55,7 +55,7 @@ Proje derlenirken olarak önce derleyici bir nesne dosyası üretmek her C++ kay
 
 Aşağıdaki şekil, derleyici ve öznitelik sağlayıcısı arasındaki ilişki gösterilmektedir.
 
-![Bileşen özniteliği iletişimini](../media/vccompattrcomm.gif "vcCompAttrComm")
+![Bileşen özniteliği iletişimini](../media/vccompattrcomm.gif "bileşeni özniteliği iletişimi")
 
 > [!NOTE]
 > Öznitelik kullanımı, kaynak dosyasının içeriğini değiştirmez. Kodu oluşturulan özniteliği görünür olup yalnızca bir kez, hata ayıklama oturumları sırasında dir. Ayrıca, projedeki her kaynak dosyası için öznitelik değiştirme sonuçlarını görüntüleyen bir metin dosyası oluşturabilirsiniz. Bu yordamı hakkında daha fazla bilgi için bkz. [/Fx (eklenen kodu Birleştir)](../../build/reference/fx-merge-injected-code.md) ve [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).

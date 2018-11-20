@@ -1,17 +1,17 @@
 ---
 title: Diziler (C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - declaring arrays [C++], about declaring arrays
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-ms.openlocfilehash: 746a6b5a2122a7ccdd207d278d285af3e448d7ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 176e358bd0217ac914eb4ee6079126d3f429b6dd
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550676"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176885"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 
@@ -75,7 +75,8 @@ int i2[5][7];
 
 Türünde bir dizi belirtir **int**, kavramsal olarak düzenlenmiş iki boyutlu bir matris beş satırdan ve yedi sütundan aşağıdaki şekilde gösterildiği gibi:
 
-![Bir çoklu kavramsal düzeni&#45;boyutlu bir dizi](../cpp/media/vc38rc1.gif "vc38RC1") çok boyutlu dizinin kavramsal düzeni
+![Bir çoklu kavramsal düzeni&#45;boyutlu bir dizi](../cpp/media/vc38rc1.gif "bir çoklu kavramsal düzeni&#45;boyutlu bir dizi") <br/>
+Çok boyutlu dizinin kavramsal düzeni
 
 Başlatıcı listesi olan dizilerin bildirimlerinde (açıklandığı [başlatıcılar](../cpp/initializers.md)), ilk boyut sınırlarını belirten sabit ifade atlanabilir. Örneğin:
 

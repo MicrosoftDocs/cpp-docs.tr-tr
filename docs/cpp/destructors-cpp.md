@@ -1,6 +1,6 @@
 ---
 title: Yıkıcılar (C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - objects [C++], destroying
 - Visual C++, destructors
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - destructors, about destructors
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-ms.openlocfilehash: 5c56a6ffc43f8fa00ffd540a5922d8ac279475ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f26f797da75f0d7d7aa6f6849c9484cea35fb125
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586023"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175879"
 ---
 # <a name="destructors-c"></a>Yıkıcılar (C++)
 
@@ -152,8 +152,7 @@ B1 dtor
 
 Sanal tabanlı sınıflar için Yıkıcılar görünümlerini yönlendirilmiş Çevrimsiz grafik (ilk derinlik, soldan sağa, postorder geçişi), ters sırada çağrılır. Aşağıdaki şekil, bir Devralma Grafiği gösterir.
 
-![Sanal temel sınıflar gösteren Devralma Grafiği](../cpp/media/vc392j1.gif "vc392J1")
-
+![Sanal temel sınıflar gösteren Devralma Grafiği](../cpp/media/vc392j1.gif "sanal temel sınıflar gösteren Devralma Grafiği") <br/>
 Sanal temel sınıflar gösteren Devralma Grafiği
 
 Aşağıdaki çizimde gösterilen sınıfların için sınıf heads listeler.

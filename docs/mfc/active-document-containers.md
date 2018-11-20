@@ -1,18 +1,18 @@
 ---
 title: Etkin Belge Kapsayıcıları
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - active documents [MFC], containers
 - active document containers [MFC]
 - containers [MFC], active document
 - MFC COM, active document containment
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-ms.openlocfilehash: ec2e4d11e00040cf0b94957db8466d127e0b5420
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfd4018496f1516f8016bb56da2406f2e4b04c08
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510844"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176789"
 ---
 # <a name="active-document-containers"></a>Etkin Belge Kapsayıcıları
 
@@ -54,7 +54,7 @@ Etkin belgeler tümleştiren bir etkin belge kapsayıcı gerekir:
 
 Aşağıdaki şekil, bir kapsayıcı (soldaki), bileşenleri ve etkin belgeyi ve görünümlerini (en sağ) arasındaki kavramsal ilişkiyi gösterir. Etkin belge depolaması ve veri yönetir ve görünümü görüntüler veya isteğe bağlı olarak bu verileri yazdırır. Kalın arabirimleri etkin belgeyi katılım için gerekli olan; Bu kalın ve italik isteğe bağlıdır. Tüm arabirimleri gereklidir.
 
-![Etkin belge kapsayıcı arabirimleri](../mfc/media/vc37gj1.gif "vc37gj1")
+![Etkin belge kapsayıcı arabirimleri](../mfc/media/vc37gj1.gif "etkin belge kapsayıcı arabirimleri")
 
 Yalnızca tek bir görünümde destekleyen bir belge görünüm ve belge bileşenleri (diğer bir deyişle, kendi ilgili arabirimlere) tek bir somut sınıf uygulayabilirsiniz. Ayrıca, yalnızca tek bir görünümde bir zaman destekleyen bir kapsayıcı sitesi belge ve görünüm siteleri tek bir somut site sınıfına birleştirebilirsiniz. Kapsayıcının çerçeve nesnesi, ancak farklı kalması gereken ve kapsayıcının belge bileşeni yalnızca burada mimarisi eksiksiz bir görünümünü sağlamak için dahil edilir; Etkin belge kapsama mimari tarafından etkilenmez.
 

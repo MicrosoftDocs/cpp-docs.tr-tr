@@ -1,6 +1,6 @@
 ---
 title: Belge şablonları ve belge-görünüm oluşturma işlemi
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - icons, for multiple document templates
 - document templates [MFC], and views
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-ms.openlocfilehash: 544a9bf60ee2066688703faa7e430e2337454e66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29575166a188b0691465bef0a72810d2e3d97624
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606355"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174905"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi
 
@@ -24,7 +24,8 @@ ms.locfileid: "50606355"
 
 Bazı uygulamalar birden çok belge türlerini destekler. Örneğin, bir uygulama, metin ve grafikleri belgeler desteklemiyor olabilir. Kullanıcı Dosya menüsündeki yeni komutu seçtiğinde bu tür bir uygulamada, bir iletişim kutusu açmak için olası yeni belge türlerinin bir listesini gösterir. Her bir desteklenen belge türü için ayrı bir belge şablonu nesnesi uygulama kullanır. Aşağıdaki şekil iki belge türlerini destekleyen ve çeşitli açık belgeleri gösteren bir MDI Uygulaması yapılandırmasını gösterir.
 
-![İki belge türleri içeren MDI uygulaması](../mfc/media/vc387h1.gif "vc387h1") iki belge türleri ile bir MDI uygulaması
+![İki belge türleri içeren MDI uygulaması](../mfc/media/vc387h1.gif "iki belge türleri içeren MDI uygulaması") <br/>
+İki belge türleri ile bir MDI uygulaması
 
 Belge şablonları oluşturulur ve uygulama nesnesi tarafından korunur. Anahtar görevlerinden birini ve uygulamanızın sırasında gerçekleştirilen `InitInstance` işlev, uygun türde bir veya daha fazla belge şablonları oluşturmak için. Bu özellik anlatıldığı [belge şablonu oluşturma](../mfc/document-template-creation.md). Uygulama nesnesi, şablon listesinde bulunan her bir belge şablonu için bir işaretçi depolar ve şablonların eklemek için bir arabirim sağlar.
 

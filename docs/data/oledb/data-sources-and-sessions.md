@@ -1,23 +1,24 @@
 ---
 title: Veri Kaynakları ve Oturumlar
-ms.date: 10/22/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - data sources [C++], OLE DB
 - connections [C++], data source
 - OLE DB consumer templates [C++], data sources
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
-ms.openlocfilehash: 04b274677d98f1a544bcc190ce7155c00c4ee8d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c43061ccb462fe472821c76251430b5e3b0f0809
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650334"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175307"
 ---
 # <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar
 
 Aşağıdaki şekil, bağlanma ve bir veri kaynağına erişimi destekleyen sınıfları gösterir. Her sınıf, standart bir OLE DB bileşeni uygulama üzerinde temel alır.
 
-![Veri kaynağı ve oturumu sınıfları](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcdatasourcesessionclasses") veri kaynağı ve oturum sınıfı
+![Veri kaynağı ve oturumu sınıfları](../../data/oledb/media/vcdatasourcesessionclasses.gif "veri kaynağı ve oturumu sınıfları") <br/>
+Veri kaynağı ve oturum sınıfı
 
 Sınıfları şunlardır:
 

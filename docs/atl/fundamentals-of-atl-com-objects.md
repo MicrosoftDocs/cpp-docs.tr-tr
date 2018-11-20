@@ -1,24 +1,24 @@
 ---
 title: ATL COM nesnelerinin temelleri
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - COM, and ATL
 - ATL, COM
 - ATL COM objects
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-ms.openlocfilehash: 243b7f84fc20e1c002e866ae0720ab9521d24748
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6af732b381ab0c6c507d1d651b096e3976ab2d4b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437261"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176503"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesnelerinin temelleri
 
 ATL COM nesnesini tanımlamak için kullanılan arabirimler ve sınıflar arasındaki ilişkiyi aşağıdaki çizimde gösterilmektedir.
 
-![ATL yapısı](../atl/media/vc307y1.gif "vc307y1")
+![ATL yapısı](../atl/media/vc307y1.gif "ATL yapısı")
 
 > [!NOTE]
 >  Bu diyagramda gösterilmektedir `CComObject` türetilir `CYourClass` ise `CComAggObject` ve `CComPolyObject` dahil `CYourClass` bir üye değişkeni.

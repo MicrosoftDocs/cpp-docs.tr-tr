@@ -1,6 +1,6 @@
 ---
 title: İletişim Kutusu Veri Değişimi
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - initializing dialog boxes
 - canceling data exchange
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - UpdateData method [MFC]
 - retrieving dialog box data [MFC]
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-ms.openlocfilehash: a72be4daf6c10a7d16b8558bfdddb8337ff1b1be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f80d80dc9e212dbe0d87da65ac92943ad1f0edad
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566289"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175502"
 ---
 # <a name="dialog-data-exchange"></a>İletişim Kutusu Veri Değişimi
 
@@ -34,7 +34,8 @@ Kullanıcı Tamam düğmesine tıkladığında mekanizma değerleri denetimleri 
 
 Aşağıdaki şekil, iletişim kutusu veri değişimi gösterir.
 
-![İletişim kutusu veri değişimi](../mfc/media/vc379d1.gif "vc379d1") iletişim kutusu veri değişimi
+![İletişim kutusu veri değişimi](../mfc/media/vc379d1.gif "iletişim kutusu veri değişimi") <br/>
+İletişim Kutusu Veri Değişimi
 
 `UpdateData` Her iki yönde belirtildiği gibi çalışır **BOOL** kendisine geçirilen parametre. Exchange taşımak için `UpdateData` ayarlayan bir `CDataExchange` iletişim sınıfınızın geçersiz nesne ve çağrıları `CDialog`'s `DoDataExchange` üye işlevi. `DoDataExchange` türünde bir bağımsız değişken `CDataExchange`. `CDataExchange` Geçirilen nesne `UpdateData` gibi bilgiler exchange yönünü tanımlama exchange bağlamını temsil eder.
 

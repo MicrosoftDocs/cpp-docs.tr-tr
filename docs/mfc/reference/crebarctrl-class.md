@@ -1,6 +1,6 @@
 ---
 title: CReBarCtrl sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CReBarCtrl
 - AFXCMN/CReBarCtrl
@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: ec3dcec2aa122f44c2b9aa6083f6faaa64157770
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 072fcec4944088ab087a6a39c7d8b916c3bc80e2
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502537"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177036"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -189,7 +189,7 @@ Aşağıdaki çizim üç bantları içeren bir çubuk barınağı denetim göste
 
 - Bant 2 bir birleşik giriş kutusu ve dört standart düğmeleri içerir.
 
-     ![Örnek bir çubuk Barınağı menüsünün](../../mfc/reference/media/vc4scc1.gif "vc4scc1")
+   ![Örnek bir çubuk Barınağı menüsünün](../../mfc/reference/media/vc4scc1.gif "çubuk Barınağı menü örneği")
 
 ## <a name="rebar-control"></a>Rebar denetimi
 

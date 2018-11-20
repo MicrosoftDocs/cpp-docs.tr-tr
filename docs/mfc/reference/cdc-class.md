@@ -1,6 +1,6 @@
 ---
 title: CDC sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CDC
 - AFXWIN/CDC
@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 40de8b3aca3cca7acb2fefa352f9358a16f43e51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06c68d02433ce53c2b27167a985fc5854ca49700
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492088"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176922"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -3242,7 +3242,7 @@ Bir işaretçi bir `CBrush` nesne başarılı; Aksi takdirde NULL.
 
 Alternatif olarak Titremeli desen oluşturmak için ön ve arka plan renkleri olan piksel noktalı fırça gösterir. Titremeli düzeninin bir noktalı fırça tarafından oluşturulan bir örnek verilmiştir.
 
-![Titremeli Kalem vuruş ayrıntılarını](../../mfc/reference/media/vc318s1.gif "vc318s1")
+![Titremeli Kalem vuruş ayrıntılarını](../../mfc/reference/media/vc318s1.gif "Titremeli Kalem vuruş ayrıntısı")
 
 ##  <a name="getkerningpairs"></a>  CDC::GetKerningPairs
 

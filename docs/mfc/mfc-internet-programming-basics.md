@@ -1,6 +1,6 @@
 ---
 title: MFC Internet Programlama Temelleri
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - ISAPI extensions, programming with ISAPI
 - Internet applications [MFC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 9d44d78474ccb030184c6e79ed2f257ffb00a068
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bb6a1d379ed754ed96637dfe5b3e4da983edb9f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509467"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175593"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 
@@ -30,7 +30,7 @@ Microsoft, hem istemci hem de sunucu uygulamalarına programlama için birçok A
 >[!IMPORTANT]
 > ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. Daha fazla bilgi için [ActiveX denetimlerini](activex-controls.md).
 
-![İstemci ve sunucu uygulamaları](../mfc/media/vc38bq1.gif "vc38bq1")
+![İstemci ve sunucu uygulamaları](../mfc/media/vc38bq1.gif "istemci ve sunucu uygulamaları")
 
 MFC Internet programlama destekleyen sınıflar sağlar. Kullanabileceğiniz [COleControl](../mfc/reference/colecontrol-class.md) ve [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) ve ilgili MFC sınıfları ActiveX denetimleri ve etkin belgeler yazılacak. MFC sınıfları gibi kullanabileceğiniz [Cınternetsession](../mfc/reference/cinternetsession-class.md), [CFtpConnection](../mfc/reference/cftpconnection-class.md), ve [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) dosyaları ve FTP gibi Internet protokollerini kullanarak bilgileri almak için HTTP ve gopher.
 

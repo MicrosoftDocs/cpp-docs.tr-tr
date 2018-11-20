@@ -1,13 +1,13 @@
 ---
 title: Performans ve Tanılama Hub'ında Profil Temelli İyileştirme
-ms.date: 03/14/2018
+ms.date: 11/19/2018
 ms.assetid: dc3a1914-dbb6-4401-bc63-10665a8c8943
-ms.openlocfilehash: 57e0c32b401f2c1c3216a120bc86efa649ee0104
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a8c0467e1a3051609f52053894ea59064e40a3ac
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580862"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176204"
 ---
 # <a name="profile-guided-optimization-in-the-visual-studio-2013-performance-and-diagnostics-hub"></a>Visual Studio 2013'ün performans ve tanılama hub'ında profil temelli iyileştirme
 
@@ -45,21 +45,21 @@ Ardından, uygulamanızın derleme yapılandırması yayın PGO derleme ve eğit
 
 Performans ve tanılama hub'ı açın; menü çubuğunda, **Çözümle**, **performans ve tanılama**. Bu, proje türü için kullanılabilir olan araçlarına sahip bir tanılama oturumu sayfasını açar.
 
-![Performans ve tanılama hub'ı PGO](../../build/reference/media/pgofig0hub.png "PGOFig0Hub")
+![Performans ve tanılama hub'ı PGO](../../build/reference/media/pgofig0hub.png "PGO performans ve tanılama hub'ı")
 
 İçinde **kullanılabilir Araçları**seçin **profil temelli iyileştirme** onay kutusu. Seçin **Başlat** PGO eklentisi başlatmak için düğme.
 
-![PGO giriş sayfası](../../build/reference/media/pgofig1start.png "PGOFig1Start")
+![PGO giriş sayfası](../../build/reference/media/pgofig1start.png "PGO giriş sayfası")
 
 **Profil temelli iyileştirme** sayfasını eklenti kullandığı uygulamanızın performansını iyileştirmek için adımları açıklar. Seçin **Başlat** düğmesi.
 
-![PGO izleme sayfası](../../build/reference/media/pgofig2instrument.png "PGOFig2Instrument")
+![PGO izleme sayfası](../../build/reference/media/pgofig2instrument.png "PGO izleme sayfası")
 
 İçinde **izleme** bölümünde kullandığınız **eğitim başlangıçta etkin** seçeneği uygulamanızı başlatma aşaması Eğitimin bir parçası olarak dahil edilip edilmeyeceğini seçin. Bu seçeneği seçili değilse, açıkça eğitimi etkinleştirene kadar eğitim verilerini çalışan izleme eklenmiş bir uygulamada kaydedilmez.
 
 Seçin **gereç** düğmesini özel bir dizi derleyici seçeneği ile uygulamanızı oluşturun. Derleyici oluşturulan kodda araştırma yönergeleri ekler. Bu yönergeler eğitim aşamasında profil oluşturma verilerini kaydeder.
 
-![PGO işaretlenmiş yapımda sayfa](../../build/reference/media/pgofig3build.PNG "PGOFig3Build")
+![PGO işaretlenmiş yapımda sayfa](../../build/reference/media/pgofig3build.PNG "PGO işaretlenmiş yapımda sayfası")
 
 Uygulamanızın izleme eklenmiş derleme tamamlandıktan sonra uygulamayı otomatik olarak başlatılır.
 
@@ -67,22 +67,22 @@ Yapı sırasında herhangi bir hata veya uyarı meydana gelirse, bunları düzel
 
 Uygulama başlatıldığında kullanabilirsiniz **Başlat eğitim** ve **duraklatma eğitim** bağlantılar **eğitim** bilgi profil oluşturma zaman kaydedilir denetlemek için bölüm. Kullanabileceğiniz **Durdur uygulama** ve **uygulamayı Başlat** bağlantılarını durdurun ve uygulamayı yeniden başlatın.
 
-![PGO eğitim sayfa](../../build/reference/media/pgofig4training.PNG "PGOFig4Training")
+![PGO eğitim sayfa](../../build/reference/media/pgofig4training.PNG "PGO eğitim sayfası")
 
 Eğitim sırasında kodu En İyileştir PGO eklentisi gereken profil bilgilerini yakalamak üzere kullanıcı senaryoları gidin. Eğitimi tamamladıktan sonra uygulamanızı kapatın veya seçin **Durdur uygulama** bağlantı. Seçin **Çözümle** analiz adım başlatmak için düğme.
 
 Analiz tamamlandığında **analiz** bölümü kullanıcı senaryosu eğitim aşaması sırasında yakalanan profil bilgilerini raporunu gösterir. Çoğu ve geçen en çok zaman adlı uygulamanızı, işlev incelemek için bu raporu kullanabilirsiniz. PGO eklentisi bilgileri hızını iyileştirmek için hangi uygulama çalışır ve hangi boyutu için en iyi duruma getirme belirlemek için kullanır. Eğitim sırasında kaydedilen kullanıcı senaryolar için en küçük, hızlı uygulama oluşturmak için derleme iyileştirmeleri PGO eklentisi yapılandırır.
 
-![PGO analiz sayfası](../../build/reference/media/pgofig5analyze.png "PGOFig5Analyze")
+![PGO analiz sayfası](../../build/reference/media/pgofig5analyze.png "PGO çözümleme sayfası")
 
 Eğitim beklenen profil bilgilerini yakalanan, seçebileceğiniz **Değişiklikleri Kaydet** gelecekteki yapılar iyileştirmek için projenizde çözümlenen profil verilerini kaydetmek için. Profil verileri atmak ve eğitim en baştan yeniden başlamak için seçin **Yinele eğitim**.
 
 Profil veri dosyasını projenize kayıtlı olduğu bir **PGO eğitim verilerini** klasör. Bu verileri uygulamanızda derleyici derleme iyileştirme ayarlarını denetlemek için kullanılır.
 
-![PGO veri dosyası Çözüm Gezgini'nde](../../build/reference/media/pgofig6data.png "PGOFig6Data")
+![PGO veri dosyası Çözüm Gezgini'nde](../../build/reference/media/pgofig6data.png "PGO veri dosyası Çözüm Gezgini'nde")
 
 Çözümleme sonrasında, eklenti PGO profil verilerini seçmeli olarak derleme sırasında uygulamanızı en iyi duruma getirme kullanmak için projenizdeki derleme seçeneklerini ayarlar. Aynı profili verileri ile uygulamanızı oluşturun ve değiştirmek devam edebilirsiniz. Uygulama oluşturulduğunda, yapı çıkışını kaç işlevleri ve yönergeler profil verileri kullanılarak en iyi duruma getirilmiş raporlar.
 
-![PGO tanılama çıkışı](../../build/reference/media/pgofig7diagnostics.png "PGOFig7Diagnostics")
+![PGO tanılama çıkışı](../../build/reference/media/pgofig7diagnostics.png "PGO tanılama çıkışı")
 
 Geliştirme sırasında önemli bir kod değişikliği yaparsanız, en iyileştirmelerini almak için uygulamanızı yeniden eğitme gerekebilir. Derleme çıktısında profil verileri kullanılarak yüzde 80'den küçük işlevleri veya yönergeleri getirildi bildirdiğinde, uygulamanızı yeniden eğitme öneririz.

@@ -1,6 +1,6 @@
 ---
 title: 'Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - ODBC recordsets [C++], binding columns dynamically
 - data binding [C++], recordset columns
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: 0284fbeed23c5fdad47cafd29af7a47251b923a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2fc870ba08bbec0a886b3d77281f3c697ae09fe
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469687"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175671"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)
 
@@ -78,7 +78,7 @@ Dinamik olarak bağlama, çalışma zamanında sütun, aşağıdaki adımları g
 
    Bir yaklaşım bir veya daha fazla dinamik listeler bir yeni sütunların adları için başka bir sonuç değerleri, ve veri türleri için üçüncü (gerekirse) oluşturmaktır. Bu listeler, özellikle değer listesi, bilgi ve bağlama için gerekli depolama sağlar. Aşağıdaki şekil, liste oluşturmayı gösterir.
 
-   ![Sütunları dinamik olarak bağlama listeleri oluşturmaya](../../data/odbc/media/vc37w61.gif "vc37w61")<br/>
+   ![Sütunları dinamik olarak bağlama listeleri oluşturmaya](../../data/odbc/media/vc37w61.gif "sütunları dinamik olarak bağlama listeleri oluşturma")<br/>
    Sütunları dinamik olarak bağlamak için yapı listesi
 
 1. Ana kümenizin içinde bir RFX işlev çağrısı ekleyin `DoFieldExchange` eklenmiş her sütun için işlev. RFX çağrıları getirilirken bir kaydı, ek sütunlar içeren ve sütunlarını kayıt veri üyelerinin veya dinamik olarak sağlanan depolama alanınızın kendileri için bağlama işlemlerini yapın.

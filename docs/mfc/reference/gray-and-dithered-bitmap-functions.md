@@ -1,6 +1,6 @@
 ---
 title: Gri ve Titremeli Bit Eşlem İşlevleri
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - AFXWIN/AfxDrawGrayBitmap
 - AFXWIN/AfxGetGrayBitmap
@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - gray and dithered bitmap functions [MFC]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-ms.openlocfilehash: 1134cde55fbe5addac34b9c0433ff11df4c9bdc7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e1d4bd0e851a14680a46d7d6ae79dcf4bd190e4
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490902"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176737"
 ---
 # <a name="gray-and-dithered-bitmap-functions"></a>Gri ve Titremeli Bit Eşlem İşlevleri
 
@@ -22,7 +22,7 @@ ms.locfileid: "50490902"
 
 MFC devre dışı bırakılmış bir denetimin görünümünü bir bit eşlem vermek için iki işlev sağlar.
 
-![Gri ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")
+![Gri ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcgraybitmap.gif "gri ve özgün simgesi sürümleri karşılaştırma")
 
 |||
 |-|-|
@@ -33,7 +33,7 @@ MFC devre dışı bırakılmış bir denetimin görünümünü bir bit eşlem ve
 
 MFC bir bit eşleşmemin arka plan Titremeli desenle değiştirmek için iki işlev de sağlar.
 
-![Titremeli ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
+![Titremeli ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcditheredbitmap.gif "Titremeli ve özgün simgesi sürümleri karşılaştırma")
 
 |||
 |-|-|
@@ -74,7 +74,7 @@ Yeni arka plan rengi (COLOR_MENU gibi genellikle gri).
 
 İle çizilen bir bit eşlem `AfxDrawGrayBitmap` devre dışı bırakılmış bir denetimin görünümünü sahip olur.
 
-![Gri ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")
+![Gri ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcgraybitmap.gif "gri ve özgün simgesi sürümleri karşılaştırma")
 
 ### <a name="example"></a>Örnek
 
@@ -110,7 +110,7 @@ Yeni arka plan rengi (COLOR_MENU gibi genellikle gri).
 
 Bir bit eşlem ile kopyalanan `AfxGetGrayBitmap` devre dışı bırakılmış bir denetimin görünümünü sahip olur.
 
-![Gri ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")
+![Gri ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcgraybitmap.gif "gri ve özgün simgesi sürümleri karşılaştırma")
 
 ### <a name="example"></a>Örnek
 
@@ -158,7 +158,7 @@ Diğer renk paleti öykünmesi rengi, genellikle açık gri (COLOR_MENU).
 
 Kaynak bit eşlemi hedef DC iki renk ile çizilir (*cr1* ve *cr2*) Damalı desen bit eşleşmemin arka plan değiştirme. Kaynak bit eşlemi arka planı beyaz piksellerinin ve sol üst köşedeki bit eşlemin piksel rengi eşleşen tüm piksel olarak tanımlanır.
 
-![Titremeli ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
+![Titremeli ve özgün simgesi sürümlerinin karşılaştırma](../../mfc/reference/media/vcditheredbitmap.gif "Titremeli ve özgün simgesi sürümleri karşılaştırma")
 
 ### <a name="example"></a>Örnek
 

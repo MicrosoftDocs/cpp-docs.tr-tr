@@ -1,17 +1,17 @@
 ---
 title: dynamic_cast İşleci
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - dynamic_cast_cpp
 helpviewer_keywords:
 - dynamic_cast keyword [C++]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
-ms.openlocfilehash: 75085fe6dd1478fee769e23938c55c6300429d86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b359885eb72f9272fb1efe14afe9a6cbe6ddb30
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529161"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176971"
 ---
 # <a name="dynamiccast-operator"></a>dynamic_cast İşleci
 
@@ -121,7 +121,8 @@ int main() {
 }
 ```
 
-![Sınıf gösteren birden çok devralma hiyerarşisi](../cpp/media/vc39011.gif "vc39011") sınıf hiyerarşisini gösteren birden çok devralma
+![Sınıf gösteren birden çok devralma hiyerarşisi](../cpp/media/vc39011.gif "sınıfı gösteren birden çok devralma hiyerarşisi") <br/>
+Birden çok devralma gösteren sınıf hiyerarşisi
 
 Türü bir nesneye bir işaretçi `D` için güvenli bir şekilde dönüştürülebilen `B` veya `C`. Ancak, varsa `D` işaret edecek şekilde cast bir `A` nesnesi, hangi örneğinin `A` neden olur? Bu, bir belirsiz atama hataya neden olur. Bu sorunla karşılaşmamak için iki anlaşılır yayınları gerçekleştirebilirsiniz. Örneğin:
 
@@ -141,13 +142,15 @@ void f() {
 
 Sanal temel sınıflar kullandığınızda, daha fazla belirsizlikleri tanıtılabilir. Aşağıdaki şekilde gösterilen sınıf hiyerarşisini inceleyin.
 
-![Sınıf sanal temel sınıflar gösteren hiyerarşi](../cpp/media/vc39012.gif "vc39012") sınıf hiyerarşisini gösteren sanal temel sınıflar
+![Sınıf sanal temel sınıflar gösteren hiyerarşi](../cpp/media/vc39012.gif "sınıf sanal temel sınıflar gösteren hiyerarşisi") <br/>
+Sanal temel sınıflar gösteren sınıf hiyerarşisi
 
 Bu hiyerarşide `A` sanal bir temel sınıf. Sınıfının bir örneğini belirtilen `E` ve işaretçi `A` alt nesneye, bir **dynamic_cast** işaretçisi `B` belirsizlik nedeniyle başarısız olur. İlk olarak geri tam dönüştürmelisiniz `E` nesnesi ve ardından doğru ulaşmak için anlaşılır biçimde, hiyerarşi yedeklemek istediğiniz şekilde iş `B` nesne.
 
 Aşağıdaki şekilde gösterilen sınıf hiyerarşisini inceleyin.
 
-![Yinelenen temel sınıflar gösteren hiyerarşi sınıfı](../cpp/media/vc39013.gif "vc39013") sınıf hiyerarşisini gösteren yinelenen taban sınıfları
+![Yinelenen temel sınıflar gösteren hiyerarşi sınıfı](../cpp/media/vc39013.gif "sınıfı gösteren yinelenen temel sınıf hiyerarşisi") <br/>
+Yinelenen temel sınıflar gösteren sınıf hiyerarşisi
 
 Belirtilen türde bir nesne `E` ve işaretçi `D` gitmek alt nesneye `D` en soldaki alt nesneye `A` alt nesneye, üç dönüştürme yapılabilir. Gerçekleştirebileceğiniz bir **dynamic_cast** dönüştürme `D` işaretçi bir `E` işaretçi ve dönüştürme (ya da **dynamic_cast** ya da örtük bir dönüştürme) gelen`E`için `B`ve son olarak örtük bir dönüştürme `B` için `A`. Örneğin:
 

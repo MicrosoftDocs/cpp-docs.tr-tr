@@ -1,15 +1,15 @@
 ---
 title: 'Nasıl yapılır: shared_ptr Örnekleri Oluşturma ve Kullanma'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: f437ccb476456a8081fa3be293bf67adb4fb2d0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79d85de6859096bdff3e2bc17357b721e5ce5846
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606654"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176282"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: shared_ptr Örnekleri Oluşturma ve Kullanma
 
@@ -17,33 +17,33 @@ ms.locfileid: "50606654"
 
 Aşağıda birkaç gösterilmiştir `shared_ptr` bir bellek konumuna işaret örnekleri.
 
-[![Paylaşılan işaretçi](../cpp/media/shared_ptr.png "shared_ptr")]
+![Paylaşılan işaretçi diyagramı](../cpp/media/shared_ptr.png "paylaşılan işaretçi diyagramı")
 
-## <a name="example"></a>Örnek
+## <a name="example-1"></a>Örnek 1
 
 Mümkün olduğunda kullanın [make_shared](../standard-library/memory-functions.md#make_shared) oluşturmak için işlevi bir `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda. `make_shared` özel durum-güvenli olmayandır. Aynı çağrı denetim bloğu ve kaynak için bellek ayırmak için kullanır ve böylece oluşturma ek yükü azaltır. Kullanmıyorsanız, `make_shared`, kendisine geçirdiğiniz önce nesne oluşturmak için açık bir new ifadesi kullanmayı sahip `shared_ptr` Oluşturucusu. Aşağıdaki örnek, bildirmek ve başlatmak için çeşitli yollar gösterir. bir `shared_ptr` birlikte yeni bir nesne.
 
 [!code-cpp[stl_smart_pointers#1](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
-## <a name="example"></a>Örnek
+## <a name="example-2"></a>Örnek 2
 
 Aşağıdaki örnek, bildirmek ve başlatmak gösterilmektedir `shared_ptr` uygulamanız örnekler paylaşılan bir başkası tarafından zaten ayrılmış bir nesne sahipliğini `shared_ptr`. Varsayımında `sp2` başlatılan bir olan `shared_ptr`.
 
 [!code-cpp[stl_smart_pointers#2](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]
 
-## <a name="example"></a>Örnek
+## <a name="example-3"></a>Örnek 3
 
 `shared_ptr` C++ Standart Kitaplığı kapsayıcıları öğeleri kopyala algoritmalar kullandığınızda da yararlıdır. Öğeleri kaydırılabilir bir `shared_ptr`ve diğer temel alınan bellek ihtiyacınız olduğu sürece geçerli ve artık olduğunu anlama kapsayıcılarla kopyalayın. Aşağıdaki örnek nasıl kullanılacağını gösterir `replace_copy_if` algoritmasına `shared_ptr` vektördeki örnekleri.
 
 [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 
-## <a name="example"></a>Örnek
+## <a name="example-4"></a>Örnek 4
 
 Kullanabileceğiniz `dynamic_pointer_cast`, `static_pointer_cast`, ve `const_pointer_cast` dönüştürülecek bir `shared_ptr`. Bu işlevler benzer `dynamic_cast`, `static_cast`, ve `const_cast` işleçleri. Aşağıdaki örnek, bir vektör her öğenin türetilmiş tür test etme gösterir `shared_ptr` , temel sınıflar, öğeleri kopyalayın ve bunlarla ilgili bilgileri görüntüler.
 
 [!code-cpp[stl_smart_pointers#5](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_4.cpp)]
 
-## <a name="example"></a>Örnek
+## <a name="example-5"></a>Örnek 5
 
 Geçirebilirsiniz bir `shared_ptr` aşağıdaki yollarla başka bir işleve:
 
@@ -59,7 +59,7 @@ Geçirebilirsiniz bir `shared_ptr` aşağıdaki yollarla başka bir işleve:
 
 - Bazı durumlarda örneğin bir `std:vector<shared_ptr<T>>`, her geçmesi gerekebilir `shared_ptr` bir lambda ifadesi gövdesinin veya adlandırılmış işlev nesnesi. Lambda veya işlev işaretçisi depolamayın ardından geçirmesi `shared_ptr` her öğe için kopya Oluşturucusu çağrılırken önlemek için başvuruya göre.
 
-## <a name="example"></a>Örnek
+## <a name="example-6"></a>Örnek 6
 
 Aşağıdaki örnekte gösterildiği nasıl `shared_ptr` tarafından sahip olunan bir bellek işaretçi karşılaştırmalar etkinleştirmek için çeşitli Karşılaştırma işleçleri aşırı `shared_ptr` örnekleri.
 

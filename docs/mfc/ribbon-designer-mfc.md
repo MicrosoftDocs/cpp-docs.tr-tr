@@ -1,24 +1,24 @@
 ---
 title: Şerit Tasarımcısı (MFC)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - vc.editors.ribbon.F1
 helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 3b28783cb12aeeb03bf1687e5922b276af0d52c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 903adc96f4c9bc092ac23787781a76c0e7e3714c
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521404"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175840"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
 
 Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında şeritler özelleştirme sağlar. Şerit, mantıksal gruplarda komutları düzenleyen bir kullanıcı arabirimi (UI) öğesidir. Bu grupların bir Şeritte ayrı sekmeler pencerenin üst kısmında görünür. Şerit menü çubuğu ve araç çubukları değiştirir. Şerit, uygulamanın kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için [şeritler](/windows/desktop/uxguide/cmd-ribbons). Aşağıdaki çizim Şerit gösterir.
 
-![MFC Şerit kaynak denetimi](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")
+![MFC Şerit kaynak denetimi](../mfc/media/ribbon_no_callouts.png "MFC Şerit kaynak denetimi")
 
 Visual Studio'nun önceki sürümlerinde şeritler gerekiyordu gibi MFC Şerit sınıflarını kullanan kod yazılarak oluşturulmak [CMFCRibbonBar sınıfı](../mfc/reference/cmfcribbonbar-class.md). Visual Studio 2010 ve sonraki sürümlerinde, Şerit Tasarımcısı Şerit oluşturmak için alternatif bir yöntem sağlar. İlk olarak, oluşturma ve bir Şerit kaynağı olarak özelleştirebilirsiniz. Ardından MFC uygulamasındaki koddan Şerit kaynağını yükleyin. Hatta Şerit kaynaklarını ve MFC Şerit sınıflarını birlikte kullanabilirsiniz. Örneğin, bir Şerit kaynağı oluşturabilir ve ardından program aracılığıyla daha fazla öğe çalışma zamanında kodu kullanarak ekleyin.
 
@@ -71,7 +71,7 @@ Projeniz el ile kodlanmış bir Şerit zaten varsa, MFC, mevcut şeridi bir Şer
 
 Aşağıdaki çizim Şerit tasarımcısındaki çeşitli bileşenleri gösterir.
 
-![MFC Şerit Tasarımcısı](../mfc/media/ribbon_designer.png "ribbon_designer")
+![MFC Şerit Tasarımcısı](../mfc/media/ribbon_designer.png "MFC Şerit Tasarımcısı")
 
 - **Araç kutusu:** Tasarımcı yüzeyine sürüklenebilen denetimler içerir.
 
@@ -95,7 +95,7 @@ Aşağıdaki konular, Şerit Tasarımcısı'nda özelliklerini kullanmak nasıl 
 
 ## <a name="definitions-of-ribbon-elements"></a>Şerit öğelerinin tanımları
 
-![MFC Şerit](../mfc/media/ribbon.png "Şerit")
+![MFC Şerit](../mfc/media/ribbon.png "MFC Şeridi")
 
 - **Uygulama düğmesi:** Şerit üzerinde üst sol löşede görüntülenen düğme. Uygulama düğmesi Dosya menüsünün yerini alır ve hatta Şerit küçültüldüğünde bile görülebilir. Düğme tıklandığında komutların bir listesini içeren bir menü görüntülenir.
 

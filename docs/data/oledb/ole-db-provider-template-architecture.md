@@ -1,17 +1,17 @@
 ---
 title: OLE DB Sağlayıcı Şablonu Mimarisi
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - OLE DB [C++], object model
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 6256328caa11d188f3a50445f62df096b6f6acb3
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 099c29e141d721645c416e60be240c22d22cd869
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557043"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175645"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 
@@ -19,7 +19,7 @@ ms.locfileid: "51557043"
 
 OLE DB sağlayıcı mimarisi, bir veri kaynağı nesnesi ve bir veya daha fazla oturum içerir. Veri kaynağı nesnesinin her sağlayıcı örneği gerekir ilk nesnedir. Bir tüketici uygulama verilere ihtiyaç duyduğunda birlikte sağlayıcıyı başlatmak için veri kaynağı nesnesi oluşturur. Veri kaynağı nesnesi bir oturum nesnesi oluşturur (kullanarak `IDBCreateSession` arabirimi) için veri kaynağı nesnesinin tüketici bağlayan aracılığıyla. ODBC programcıları düşünme eşdeğer olarak veri kaynağı nesnesinin `HENV` ve eşdeğer olarak oturum nesnesi `HDBC`.
 
-![Sağlayıcı mimarisi](../../data/oledb/media/vc4twb1.gif "vc4twb1")
+![Sağlayıcı mimarisi](../../data/oledb/media/vc4twb1.gif "sağlayıcı mimarisi")
 
 Tarafından oluşturulan kaynak dosyalarıyla birlikte **OLE DB sağlayıcısı Sihirbazı**, OLE DB Şablonları bir veri kaynağı nesnesi uygular. OLE DB için karşılık gelen bir nesne oturumdur `TSession`.
 

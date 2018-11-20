@@ -1,6 +1,6 @@
 ---
 title: CVSListBox sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CVSListBox
 - AFXVSLISTBOX/CVSListBox
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-ms.openlocfilehash: e44fa868fc573efbf89bb00147f670298f633381
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb12f17aec43653931343e80926d59560d879c3a
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513769"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176218"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox sınıfı
 
@@ -81,7 +81,7 @@ class CVSListBox : public CVSListBoxBase
 
 Düzenlenebilir bir liste denetimini resmini verilmiştir. "Item2" başlıklı ikinci liste girdisini düzenlemek için seçilir.
 
-![CVSListBox denetimi](../../mfc/reference/media/cvslistbox.png "cvslistbox")
+![CVSListBox denetimi](../../mfc/reference/media/cvslistbox.png "CVSListBox denetimi")
 
 Düzenlenebilir bir liste denetimini eklemek için kaynak düzenleyicisini kullanmak, dikkat **araç kutusu** Düzenleyicisi bölmesinde önceden tanımlanmış düzenlenebilir bir liste denetimini sağlamaz. Bunun yerine, statik denetim gibi ekleme **grup kutusu** denetimi. Çerçeve statik denetimin boyutunu ve konumunu düzenlenebilir bir liste denetimi belirtmek için bir yer tutucu olarak kullanır.
 

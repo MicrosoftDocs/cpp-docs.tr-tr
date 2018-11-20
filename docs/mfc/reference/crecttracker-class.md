@@ -1,6 +1,6 @@
 ---
 title: CRectTracker sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CRectTracker
 - AFXEXT/CRectTracker
@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CRectTracker [MFC], m_rect
 - CRectTracker [MFC], m_sizeMin
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
-ms.openlocfilehash: 519f88a3706812ae77d7dbd77e199b3e3ef4e97a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c82b06903f0705a79a15b263b1dbdfc6aee4c8ca
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473378"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176516"
 ---
 # <a name="crecttracker-class"></a>CRectTracker sınıfı
 
@@ -237,7 +237,7 @@ Yeniden boyutlandırma tutamaçları yüz ve dikdörtgenin köşelerini görün�
 
 Bir dikdörtgen numaralı 0-7, 8 yeniden boyutlandırma tutamaçları sahiptir. Her yeniden boyutlandırma tutamacı bir bit maskesi temsil edilir; 2 söz konusu bit değeri ^ *n*burada *n* yeniden boyutlandırma tutamacı sayısıdır. BITS 0-3 saat yönünde taşıma sol üst kısmında başlangıç köşe yeniden boyutlandırma tutamaçları karşılık gelir. BITS 4-7 kenara yeniden boyutlandırma tutamaçları saat yönünde taşıma üstten başlayarak. Aşağıdaki resimde, bir dikdörtgenin boyutlandırma işler ve bunlara karşılık gelen yeniden tutamacı numaraları ve değerlerini boyutlandırmak gösterilmektedir:
 
-![Yeniden boyutlandırma tutamacı numaraları](../../mfc/reference/media/vc35dp1.gif "vc35dp1")
+![Yeniden boyutlandırma tutamacı numaraları](../../mfc/reference/media/vc35dp1.gif "yeniden boyutlandırma tutamacı numaraları")
 
 Varsayılan uygulaması `GetHandleMask` yeniden boyutlandırma tutamaçları görünür bir bit maskesi döndürür. Tek bit açıksa, karşılık gelen yeniden boyutlandırma tutamacı çizilir.
 

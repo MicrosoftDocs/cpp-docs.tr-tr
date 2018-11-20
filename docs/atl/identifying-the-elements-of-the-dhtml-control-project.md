@@ -1,16 +1,16 @@
 ---
 title: DHTML denetim projesinin öğelerini tanımlama
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
-ms.openlocfilehash: bb7fa67e6a3009922596c225895032bfb2f4fbb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e38b94e200754ce9dd37df2bfb17dfaa32cafe49
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533698"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175719"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML denetim projesinin öğelerini tanımlama
 
@@ -26,7 +26,7 @@ DHTML denetimi herhangi bir ATL denetimi için benzer hariç:
 
 Aşağıdaki grafikte, DLL, DHTML denetimi, Web tarayıcısı ve HTML kaynak arasındaki ilişkiyi gösterir.
 
-![DHTML denetim projesinin öğelerini](../atl/media/vc52en1.gif "vc52en1")
+![DHTML denetim projesinin öğelerini](../atl/media/vc52en1.gif "DHTML denetim projesinin öğelerini")
 
 > [!NOTE]
 >  Bu grafikte yer tutucuları adlarıdır. Adları, HTML kaynak denetiminizi kullanıma sunulan arabirimler ve ATL denetimi Sihirbazı'nda atama adları temel alır.
@@ -47,7 +47,7 @@ Bu grafikte öğeler şunlardır:
 
 ATL Denetim Sihirbazı'nı varsayılan kod denetimiyle HTML kaynak ve .cpp dosyası oluşturur. Derleme ve sihirbaz tarafından oluşturulan denetim çalıştırın ve ardından Denetim Web tarayıcısını veya ActiveX denetimi Test kapsayıcısı içinde görüntüleyin. Aşağıdaki resimde varsayılan ATL DHTML denetimini Test kapsayıcısında görüntülenen üç düğme göstermektedir:
 
-![ATL DHTML denetimini](../atl/media/vc52en2.gif "vc52en2")
+![ATL DHTML denetimini](../atl/media/vc52en2.gif "ATL DHTML denetimi")
 
 Bkz: [ATL DHTML denetimi oluşturma](../atl/creating-an-atl-dhtml-control.md) DHTML denetimi oluşturmaya başlamak için. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) Test kapsayıcısı erişim hakkında daha fazla bilgi için.
 

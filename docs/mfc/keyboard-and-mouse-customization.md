@@ -1,16 +1,16 @@
 ---
 title: Klavye ve Fare Özelleştirmesi
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - customizations [MFC], keyboard and mouse (MFC Extensions)
 - keyboard and mouse customizations (MFC Extensions)
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
-ms.openlocfilehash: 8bb685974ed4020611ffe275ba504951d132afac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ccbe83185c48439273024a97c881f1c32a2ddc7
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487396"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175692"
 ---
 # <a name="keyboard-and-mouse-customization"></a>Klavye ve Fare Özelleştirmesi
 
@@ -22,7 +22,8 @@ MFC, klavye ve fare girişi işleme biçimini özelleştirmek için uygulamanız
 
 Aşağıdaki çizimde gösterildiği **klavye** sekmesinde **özelleştirme** iletişim kutusu.
 
-![Özelleştir iletişim kutusu klavye sekmede](../mfc/media/mfcnextkeyboardtab.png "mfcnextkeyboardtab") klavye özelleştirme sekmesi
+![Özelleştir iletişim kutusu klavye sekmede](../mfc/media/mfcnextkeyboardtab.png "klavye sekmede Özelleştir iletişim kutusu") <br/>
+Klavye özelleştirme sekmesi
 
 Bir komuta bir veya daha fazla klavye kısayolları atama klavye sekmesi kullanıcının etkileşime. Kullanılabilir komutlar sekmenin sol tarafta listelenir. Kullanıcının herhangi bir kullanılabilir komutu menüsünden seçebilirsiniz. Menü komutları, klavye kısayolu ile ilişkilendirilebilir. Kullanıcı yeni bir kısayol girdikten sonra **atama** düğmesi hale etkin. Kullanıcı bu düğmeyi tıkladığında uygulamanın bu kısayol seçili komut ilişkilendirir.
 
@@ -36,7 +37,8 @@ Uygulamanızı oluşturmak için Sihirbazı'nı kullanırsanız, sihirbazın kla
 
 Aşağıdaki çizimde gösterildiği **fare** sekmesinde **özelleştirme** iletişim kutusu.
 
-![Özelleştir iletişim kutusu fare sekmede](../mfc/media/mfcnextmousetab.png "mfcnextmousetab") fare özelleştirmesi sekmesi
+![Özelleştir iletişim kutusu fare sekmede](../mfc/media/mfcnextmousetab.png "fare sekmede Özelleştir iletişim kutusu") <br/>
+Fare özelleştirmesi sekmesi
 
 Kullanıcı bir menü atamak için bu sekme ile etkileşim komutu fare eylemi çift tıklayın. Kullanıcı bir görünüm penceresinin sol taraftan seçer ve sonra bir komut çift eylemle ilişkilendirilecek işlecin sağ tarafındaki denetimlerini kullanır. Sonra kullanıcı **Kapat**, kullanıcı, görünümü'nde herhangi bir yeri çift tıklattığında her uygulama ilişkili komutu yürütür.
 

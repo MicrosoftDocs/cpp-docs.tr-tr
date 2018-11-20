@@ -1,6 +1,6 @@
 ---
 title: C++ AMP'ye Genel Bakış
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, requirements
 - C++ Accelerated Massive Parallelism, architecture
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 070f0885f11f29413aca3028d4f747e0edfd2413
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26f24e922769a565c88264032373662116eee290
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663794"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176997"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -362,7 +362,7 @@ Tipik uygulamalarda, başka bir yolla ilgili bir döşeme içindeki öğeler ve 
 
 Aşağıdaki diyagram döşemeler şeklinde düzenlenmiş veri örnekleme, iki boyutlu bir dizi temsil eder.
 
-![Döşenmiş kapsamın değerleri dizin](../../parallel/amp/media/camptiledgridexample.png "camptiledgridexample")
+![Döşenmiş kapsamın değerleri dizin](../../parallel/amp/media/camptiledgridexample.png "dizin döşenmiş kapsamın değerleri")
 
 Aşağıdaki kod örneği önceki diyagramdaki örnekleme verisini kullanır. Kod her değeri döşemenin değerlerinin ortalaması ile değiştirir.
 

@@ -1,6 +1,6 @@
 ---
 title: Belge / görünüm mimarisi
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - CView class [MFC], view architecture
 - CDocument class [MFC]
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: 943199e2398bcb49c7dddf6b3a67f5556c9c81a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0886f364637c8844aceb5d5d7b6b2ed7175225d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509285"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176857"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 
@@ -47,7 +47,8 @@ Belge/görünüm yaklaşımının temelindeki dört temel sınıfları şunlard�
 
 Aşağıdaki şekil, bir belge ve onun görünümü arasındaki ilişkiyi gösterir.
 
-![Görünüm görüntülenen belgenin parçasıdır](../mfc/media/vc379n1.gif "vc379n1") belge ve Görünüm
+![Görünüm görüntülenen belgenin parçasıdır](../mfc/media/vc379n1.gif "görünümü görüntülenen belgenin parçasıdır") <br/>
+Belge ve Görünüm
 
 Belge/görünüm uygulaması Sınıf Kitaplığı'nda verilerin kendisini görünümünü ve veri kullanıcı işlemlerinde ayırır. Verilerde yapılan tüm değişiklikleri belge sınıfı yönetilir. Görünüm erişme ve verileri güncelleştirmek için bu arabirimi çağırır.
 

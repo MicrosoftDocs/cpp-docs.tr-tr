@@ -1,21 +1,21 @@
 ---
 title: 'Nasıl yapılır: Uygulama Düğmesini Özelleştirme'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - application button [MFC], customizing
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-ms.openlocfilehash: e556e9e6509179b692e4c86b67d59ff2e2ec0f02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba29e9ad65e0bb1d2163e4051c7c7b53664d8817
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592796"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175333"
 ---
 # <a name="how-to-customize-the-application-button"></a>Nasıl yapılır: Uygulama Düğmesini Özelleştirme
 
 Uygulama Düğmeye tıkladığınızda, komutları içeren bir menü görüntülenir. Genellikle, menü gibi dosya ile ilgili komutları içeren **açık**, **Kaydet**, **yazdırma**, ve **çıkış**.
 
-![MFC Şerit uygulama düğmesi](../mfc/media/application_button.png "application_button")
+![MFC Şerit uygulama düğmesi](../mfc/media/application_button.png "MFC Şerit uygulama düğmesi")
 
 Uygulama düğmesini özelleştirme için projeyi açın **özellikleri** penceresinde, özelliklerini değiştirin ve sonra da Şerit denetiminin önizlemesini görüntüleyin.
 
@@ -57,4 +57,3 @@ Uygulama menüsünde tasarım yüzeyinde görünmüyor. Bunu görüntülemek iç
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
-

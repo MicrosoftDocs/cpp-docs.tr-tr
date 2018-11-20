@@ -1,17 +1,17 @@
 ---
 title: C++ Bit Alanları
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - bitfields [C++]
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-ms.openlocfilehash: df4e5a068f76c35dc22b3915ad7e4ace421ca10b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 747920378472cc091928a080e303a0543e287aaa
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644979"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175099"
 ---
 # <a name="c-bit-fields"></a>C++ Bit Alanları
 
@@ -43,7 +43,8 @@ struct Date {
 
 `Date` türünde bir nesnenin kavramsal bellek düzeni aşağıdaki çizimde gösterilmiştir.
 
-![Bir tarih nesnesinin bellek düzeni](../cpp/media/vc38uq1.png "vc38UQ1") bellek düzeni, tarih nesnesi
+![Bir tarih nesnesinin bellek düzeni](../cpp/media/vc38uq1.png "tarih nesnesinin bellek düzeni") <br/>
+Tarih Nesnesinin Bellek Düzeni
 
 Unutmayın `nYear` 8 bit uzunluğunda olduğunu ve sözcük sınırının türü bildirilen taşma oluşturursunuz **işaretsiz** **kısa**. Bu nedenle, yeni bir başında başlamış **işaretsiz** **kısa**. Tüm bit alanlarının temel türün bir nesnesine sığmasına gerek yoktur; yeni depolama birimleri bildirimde istenen bit sayısına göre ayrılır.
 
@@ -69,7 +70,8 @@ struct Date {
 
 bellek düzeni aşağıdaki şekilde gösterildiği gibi ise:
 
-![Sıfır ile tarih nesnesinin düzeni&#45;uzunluklu bit alanı](../cpp/media/vc38uq2.png "vc38UQ2") sıfır uzunluklu Bit alanı ile tarih nesnesinin düzeni
+![Sıfır ile tarih nesnesinin düzeni&#45;uzunluklu bit alanı](../cpp/media/vc38uq2.png "tarihi Düzen nesnesi sıfır&#45;uzunluklu bit alanı") <br/>
+Sıfır Uzunluklu Bit Alanı Olan Tarih Nesnesinin Düzeni
 
 Bir bit alanının temel türü bölümünde anlatıldığı gibi bir tamsayı türü olmalıdır [temel türler](../cpp/fundamental-types-cpp.md).
 

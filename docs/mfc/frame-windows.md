@@ -1,6 +1,6 @@
 ---
 title: Çerçeve Pencereleri
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - document frame windows [MFC]
 - windows [MFC], MDI
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 09db7bab392778297f17c14f7bb807f91af4d896
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76c2f303713644c5f78f20d2ea868bd67b9eae71
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619940"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175385"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 
@@ -30,7 +30,8 @@ Bir uygulama Windows altında çalışırken, kullanıcı çerçeve pencerelerin
 
 MFC çerçevesi çerçeve pencereleri görünümler içermesi için kullanır. İki bileşeni — çerçeve ve içeriği — temsil ve MFC'de iki farklı sınıflar tarafından yönetilir. Çerçeve çerçeve-pencere sınıfı yönetir ve bir görünüm sınıfı içeriği yönetir. Görünüm penceresine çerçeve penceresinin alt öğesidir. Çizim ve başka bir kullanıcı etkileşimi belgeyle görünümün istemci alanı, çerçeve penceresinin istemci alanına gerçekleşir. Çerçeve penceresi etrafında bir görünümü, tam bir başlık çubuğu ve standart penceresi denetimleriyle denetimi menüsü, en aza indirmek ve, pencerenin en üst düzeye çıkarmak için düğmeler gibi görünür bir çerçeve sağlar ve pencereyi yeniden boyutlandırmak için denetler. Tam olarak bir alt pencere tarafından kullanılıyor pencerenin istemci alanının "İçerik" oluşur; görünümü. Aşağıdaki şekilde bir çerçeve penceresi ve bir görünüm arasındaki ilişki gösterilmektedir.
 
-![Çerçeve penceresi görünümü](../mfc/media/vc37fx1.gif "vc37fx1") çerçeve penceresi ve görünümü
+![Çerçeve penceresi görünümü](../mfc/media/vc37fx1.gif "çerçeve penceresi görünümü") <br/>
+Çerçeve penceresi ve görünümü
 
 ## <a name="frame-windows-and-splitter-windows"></a>Çerçeve Windows ve Windows Bölümlendirici
 

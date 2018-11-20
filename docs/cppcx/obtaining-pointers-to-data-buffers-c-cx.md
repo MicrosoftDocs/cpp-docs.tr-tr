@@ -1,13 +1,13 @@
 ---
 title: Veri arabelleklerine işaretçileri alma (C + +/ CX)
-ms.date: 12/30/2016
+ms.date: 11/19/2018
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-ms.openlocfilehash: 6fc136af4098659779b4b4ff7fb8878e1cea6590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2cd99019d75272f4362518de78b729cd7a2549f3
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514276"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175112"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri arabelleklerine işaretçileri alma (C + +/ CX)
 
@@ -15,7 +15,7 @@ Windows çalışma zamanı [Windows::Storage::Streams::IBuffer](https://msdn.mic
 
 Aşağıdaki diyagramda, kaynağı bir XAML görüntü öğesi gösterir bir [Windows::UI::Xaml::Media::Imaging WriteableBitmap](https://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). Herhangi bir dilde yazılmış bir istemci uygulaması için başvuru geçirebilirsiniz `WriteableBitmap` C++ için kod ve C++ başvurusu temel alınan arabelleğe almak için kullanabilirsiniz. C++ ile yazılmış bir evrensel Windows platformu uygulamasında paketleyerek bir Windows çalışma zamanı bileşeni olmadan aşağıdaki örnekte kaynak kodda doğrudan işlevi kullanabilirsiniz.
 
-![C&#43; &#43; piksel veri erişim, doğrudan kod](../cppcx/media/ibufferbyteaccessdiagram.png "IBufferByteAccessDiagram")
+![C&#43; &#43; doğrudan piksel verilere erişen kodu](../cppcx/media/ibufferbyteaccessdiagram.png "C&#43; &#43; doğrudan piksel verilere erişen kodu")
 
 ## <a name="getpointertopixeldata"></a>GetPointerToPixelData
 

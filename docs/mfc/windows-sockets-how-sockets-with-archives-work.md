@@ -1,6 +1,6 @@
 ---
 title: 'Windows Yuvaları: Yuvaların Arşivlerle Çalışması'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows Sockets [MFC], synchronous
 - sockets [MFC], synchronous operation
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows Sockets [MFC], with archives
 - two-state socket object
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
-ms.openlocfilehash: e87ee1467946003580ffa75e36e39b2c747892b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6101193c85e41fbf82681b0b2ae1e09e4162f87
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510766"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174918"
 ---
 # <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows Yuvaları: Yuvaların Arşivlerle Çalışması
 
@@ -30,7 +30,8 @@ Sınıf `CSocketFile` türetildiği `CFile`, ancak desteklemediği [CFile](../mf
 
 Aşağıdaki şekilde, iletişimin her iki tarafında bu nesneleri arasındaki ilişkiler gösterilmektedir.
 
-![CArchive CSocketFile ve CSocket](../mfc/media/vc38ia1.gif "vc38ia1") CArchive CSocketFile ve CSocket
+![CArchive CSocketFile ve CSocket](../mfc/media/vc38ia1.gif "CArchive CSocketFile ve CSocket") <br/>
+CArchive CSocketFile ve CSocket
 
 Görünen Bu karmaşıklığı amacı, yuva ayrıntıları, kendiniz yönetme ihtiyacını kalkanı sağlamaktır. Yuva, dosya ve arşiv oluşturun ve arşive ekleme veya arşivden ayıklama gönderen veya alıcı veri ardından başlayın. [CArchive](../mfc/reference/carchive-class.md), [CSocketFile](../mfc/reference/csocketfile-class.md), ve [CSocket](../mfc/reference/csocket-class.md) arka planda ayrıntılarını yönetme.
 
@@ -41,7 +42,7 @@ A `CSocket` nesnedir aslında iki durumlu nesne: bazen zaman uyumsuz (Normal dur
 Varsa `CSocket` uygulanmamış iki durumlu nesnesi olarak, önceki bildirim işleme ancak aynı olay türü için ek bildirim almak mümkün olabilir. Örneğin, alabilirsiniz bir `OnReceive` bildirim işlenirken bir `OnReceive`. Yukarıdaki kod parçasında ayıklama `str` arşivden özyineleme neden olabilir. Bir durumdan diğerine geçen tarafından `CSocket` ilave bildirimler engelleyerek özyineleme engeller. Genel bildirim içinde hiç bildirim kuralıdır.
 
 > [!NOTE]
->  A `CSocketFile` (sınırlı) dosyası olarak kullanılabilir bir `CArchive` nesne. Varsayılan olarak, `CSocketFile` oluşturucunun *bArchiveCompatible* parametresi **TRUE**. Bu dosya nesnesini bir arşiv ile kullanılmak üzere olduğunu belirtir. Bir arşiv olmadan dosya nesnesini kullanmak için geçirin **FALSE** içinde *bArchiveCompatible* parametresi.
+> A `CSocketFile` (sınırlı) dosyası olarak kullanılabilir bir `CArchive` nesne. Varsayılan olarak, `CSocketFile` oluşturucunun *bArchiveCompatible* parametresi **TRUE**. Bu dosya nesnesini bir arşiv ile kullanılmak üzere olduğunu belirtir. Bir arşiv olmadan dosya nesnesini kullanmak için geçirin **FALSE** içinde *bArchiveCompatible* parametresi.
 
 "Arşiv uyumlu" modunda bir `CSocketFile` nesne "kilitlenme." tehlikesi azaltır ve daha iyi performans sağlar Gönderme ve alma yuvalarına birbirleri üzerinde bekliyor veya ortak bir kaynağı bekleyen bir kilitlenme oluşur. Bu durum meydana gelebilir `CArchive` nesne çalıştığınız `CSocketFile` , sahip olduğu gibi bir `CFile` nesne. İle `CFile`, Arşiv, istenenden daha az bayt alırsa, dosya sonuna ulaşıldı varsayabilirsiniz. İle `CSocketFile`ancak, veri tabanlı ileti; arabellek birden fazla ileti içerebilir, bu nedenle, istenen bayt sayısından daha az alan değil yaptığından dosya sonu. Uygulama ile olabileceği gibi bu durumda engellemez `CFile`, arabellek boş olana kadar iletilerini arabellekteki okuma devam edebilir. [IsBufferEmpty](../mfc/reference/carchive-class.md#isbufferempty) işlevi `CArchive` arşivin arabellek böyle bir durumda durumunu izlemek için yararlıdır.
 
@@ -51,4 +52,3 @@ Daha fazla bilgi için [Windows Yuvaları: yuvaların arşivlerle kullanma](../m
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
 [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
-

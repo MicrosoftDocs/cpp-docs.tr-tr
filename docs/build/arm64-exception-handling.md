@@ -1,12 +1,12 @@
 ---
 title: ARM64 özel durum işleme
-ms.date: 07/11/2018
-ms.openlocfilehash: 5189c399a4cbff071d2ec846008229ba76306882
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.date: 11/19/2018
+ms.openlocfilehash: a4d4adcc365c1e9caf7faa0e225fabe133d0a6eb
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333595"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176685"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 

@@ -1,6 +1,6 @@
 ---
 title: CReBar sınıfı
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CReBar
 - AFXEXT/CReBar
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CReBar [MFC], Create
 - CReBar [MFC], GetReBarCtrl
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
-ms.openlocfilehash: 6a63440f5f415901128a09c7b5f34e73539fc3e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 344886ca4af45d55b85cc7471c1e558d73cbebf6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648831"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175892"
 ---
 # <a name="crebar-class"></a>CReBar sınıfı
 
@@ -43,7 +43,7 @@ class CReBar : public CControlBar
 
 Bir rebar nesnesi çeşitli alt pencereleri düzenleme kutuları, araç çubukları ve liste kutuları gibi genellikle diğer denetimleri içerebilir. Bir rebar nesneyi kendi alt pencereleri belirtilen bir bit eşlem görüntüleyebilirsiniz. Uygulamanızı çubuk barınağı otomatik olarak yeniden boyutlandırmak veya tıklayarak veya kavrayıcı çubuğunu sürüklerken kullanıcı el ile çubuk barınağı boyutlandırabilirsiniz.
 
-![RebarMenu örneği](../../mfc/reference/media/vc4sc61.gif "vc4sc61")
+![RebarMenu örneği](../../mfc/reference/media/vc4sc61.gif "RebarMenu örneği")
 
 ## <a name="rebar-control"></a>Rebar denetimi
 
