@@ -101,7 +101,7 @@ class CByteArray : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CObArray::operator]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
+|[CObArray::operator [ ]](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 

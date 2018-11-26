@@ -107,7 +107,7 @@ Ayırma ve eşzamanlı sıralanmamış eşleme için bellek ayırmayı kaldırma
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator]](#operator_at)|Fazla Yüklendi. Belirtilen anahtarı içeren bir öğe bulur veya ekler. Bu yöntem eşzamanlı güvenlidir.|
+|[operator[]](#operator_at)|Fazla Yüklendi. Belirtilen anahtarı içeren bir öğe bulur veya ekler. Bu yöntem eşzamanlı güvenlidir.|
 |[operator=](#operator_eq)|Fazla Yüklendi. Başka bir deponun içeriğini atar `concurrent_unordered_map` buna nesne. Bu yöntem eşzamanlı güvenli değil.|
 
 ## <a name="remarks"></a>Açıklamalar
