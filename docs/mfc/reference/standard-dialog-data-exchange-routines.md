@@ -22,14 +22,14 @@ Bu konu, genel MFC iletişim kutusu denetimleri için kullanılan standart ileti
 
 |||
 |-|-|
-|[Ddx_cbındex](#ddx_cbindex)|Başlatır veya birleşik giriş kutusu denetimi oluşan geçerli seçimi dizinini alır.|
+|[DDX_CBIndex](#ddx_cbindex)|Başlatır veya birleşik giriş kutusu denetimi oluşan geçerli seçimi dizinini alır.|
 |[DDX_CBString](#ddx_cbstring)|Başlatır veya birleşik giriş kutusu denetimi Düzenle alanının geçerli içeriğini alır.|
 |[DDX_CBStringExact](#ddx_cbstringexact)|Başlatır veya birleşik giriş kutusu denetimi Düzenle alanının geçerli içeriğini alır.|
 |[DDX_Check](#ddx_check)|Başlatır veya onay kutusu denetimi geçerli durumunu alır.|
 |[DDX_Control](#ddx_control)|Alt sınıfların bir iletişim kutusu içinde belirli bir denetim.|
 |[DDX_DateTimeCtrl](#ddx_datetimectrl)|Başlatır veya tarih ve/veya saat verileri bir tarih ve saat seçici denetimi değerini alır.|
-|[Ddx_ıpaddress](#ddx_ipaddress)|Başlatır veya bir IP adresi denetimi geçerli değerini alır.|
-|[Ddx_lbındex](#ddx_lbindex)|Başlatır veya bir liste kutusu denetimini oluşan geçerli seçimi dizinini alır.|
+|[DDX_IPAddress](#ddx_ipaddress)|Başlatır veya bir IP adresi denetimi geçerli değerini alır.|
+|[DDX_LBIndex](#ddx_lbindex)|Başlatır veya bir liste kutusu denetimini oluşan geçerli seçimi dizinini alır.|
 |[DDX_LBString](#ddx_lbstring)|Geçerli seçimi içinde bir liste kutusu denetimini alır veya belirler başlatır.|
 |[DDX_LBStringExact](#ddx_lbstringexact)|Geçerli seçimi içinde bir liste kutusu denetimini alır veya belirler başlatır.|
 |[DDX_ManagedControl](#ddx_managedcontrol)|Denetimin kaynak kimliğiyle eşleşen bir .NET denetimi oluşturur|
@@ -39,7 +39,7 @@ Bu konu, genel MFC iletişim kutusu denetimleri için kullanılan standart ileti
 |[DDX_Slider](#ddx_slider)|Başlatır veya bir kaydırıcı denetiminin thumb geçerli konumunu alır.|
 |[DDX_Text](#ddx_text)|Başlatır veya bir düzenleme denetimi geçerli değerini alır.|
 
-##  <a name="ddx_cbindex"></a>  Ddx_cbındex
+##  <a name="ddx_cbindex"></a>  DDX_CBIndex
 
 `DDX_CBIndex` İşlevi aktarımını yöneten **int** arasında bir iletişim kutusu, birleşik giriş kutusu denetiminde veri görünümü veya denetim görünüm nesnesi oluşturur ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.
 
@@ -330,7 +330,7 @@ DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_.h
 
-##  <a name="ddx_lbindex"></a>  Ddx_lbındex
+##  <a name="ddx_lbindex"></a>  DDX_LBIndex
 
 `DDX_LBIndex` İşlevi aktarımını yöneten **int** verileri arasında bir iletişim kutusunda, liste kutusu denetimi form görünümü veya denetim görünüm nesnesi ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.
 
