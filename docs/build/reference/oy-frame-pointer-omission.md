@@ -1,6 +1,6 @@
 ---
 title: /Oy (Çerçeve İşaretçisini Atlama)
-ms.date: 09/22/2017
+ms.date: 11/19/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.OmitFramePointers
 - /oy
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - suppress frame pointer creation
 - /Oy compiler option [C++]
 ms.assetid: c451da86-5297-4c5a-92bc-561d41379853
-ms.openlocfilehash: d6d896079c08ed2cf595b95ed41045885c83b5bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 343b0e026c2932e97d4a8d4472ba2035d6302661
+ms.sourcegitcommit: 3da2cb3ec85e77ddfd4d2a55edb133d580ce4f18
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431739"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330396"
 ---
 # <a name="oy-frame-pointer-omission"></a>/Oy (Çerçeve İşaretçisini Atlama)
 
@@ -32,9 +32,9 @@ ms.locfileid: "50431739"
 
 Bu seçenek, hiçbir çerçeve işaretçisinin ayarlanması ve kaldırılması gerekmeyeceği için işlev çağrılarını hızlandırır. Genel kullanım için daha fazla kaydı serbest bırakır.
 
-**/Oy** çerçeve işaretçisini atlamayı etkinleştirir ve **/Oy-** atlamayı devre dışı bırakır. **/Oy** yalnızca x86 içinde kullanılabilir derleyicileri.
+**/Oy** çerçeve işaretçisini atlamayı etkinleştirir ve **/Oy-** atlamayı devre dışı bırakır. X64, derleyiciler, **/Oy** ve **/Oy-** kullanılabilir değil.
 
-Kodunuz EBP tabanlı adresleme gerektiriyorsa belirtebilmeniz için **/Oy-** sonra seçeneği **/Ox** seçeneğini veya kullanın [en iyi duruma getirme](../../preprocessor/optimize.md) ile "**y**" ve **kapalı** EBP tabanlı adresleme ile en fazla iyileştirme elde etmek için bağımsız değişkenler. Derleyici burada EBP tabanlı adresleme gerekli olduğu çoğu durumu algılar (örneğin, ile `_alloca` ve `setjmp` işlevleri ve yapılandırılmış özel durum işleme ile).
+Belirtebileceğiniz kodunuzu çerçeve tabanlı adresleme gerektiriyorsa **/Oy-** sonra seçeneği **/Ox** seçeneğini veya kullanın [en iyi duruma getirme](../../preprocessor/optimize.md) ile "**y**"ve **kapalı** çerçeve tabanlı adresleme ile en fazla iyileştirme elde etmek için bağımsız değişkenler. Derleyici burada çerçeve tabanlı adresleme gerekli olduğu çoğu durumu algılar (örneğin, ile `_alloca` ve `setjmp` işlevleri ve yapılandırılmış özel durum işleme ile).
 
 [/Ox (etkinleştirme en hız iyileştirmelerini)](../../build/reference/ox-full-optimization.md) ve [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) seçenekleri yaptığından **/Oy**. Belirtme **/Oy-** sonra **/Ox**, **/O1**, veya **/O2** seçeneği devre dışı bırakır **/Oy**, olduğunu açık veya zımni.
 
@@ -44,11 +44,9 @@ Kodunuz EBP tabanlı adresleme gerektiriyorsa belirtebilmeniz için **/Oy-** son
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **iyileştirme** özellik sayfası.
 
-1. Tıklayın **iyileştirme** özellik sayfası.
-
-1. Değiştirme **çerçeve işaretçilerini atla** özelliği. Bu özellik ekler veya kaldırır yalnızca **/Oy** seçeneği. Eklemek istiyorsanız **/Oy-** seçeneğinde, tıklayın **komut satırı** ve değiştirme **ek seçenekler**.
+1. Değiştirme **çerçeve işaretçilerini atla** özelliği. Bu özellik ekler veya kaldırır yalnızca **/Oy** seçeneği. Eklemek istiyorsanız **/Oy-** seçeneği için **komut satırı** özellik sayfasında ve değiştirme **ek seçenekler**.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -56,8 +54,6 @@ Kodunuz EBP tabanlı adresleme gerektiriyorsa belirtebilmeniz için **/Oy-** son
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)
-
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)
-
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>

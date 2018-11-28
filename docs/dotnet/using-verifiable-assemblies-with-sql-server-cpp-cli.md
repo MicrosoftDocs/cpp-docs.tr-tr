@@ -1,15 +1,15 @@
 ---
 title: SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
-ms.date: 10/17/2019
+ms.date: 10/17/2018
 helpviewer_keywords:
 - verifiable assemblies [C++], with SQL Server
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
-ms.openlocfilehash: 419b3de739de22597fffc7a607e2bf73561e3000
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a977aa81a598e1698dfbc1c5679b85378b7ba6fc
+ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472668"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389935"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
 

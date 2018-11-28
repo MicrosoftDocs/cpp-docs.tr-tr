@@ -1,15 +1,15 @@
 ---
 title: /sdl (Ek Güvenlik Denetimlerini Etkinleştir)
-ms.date: 11/04/2016
+ms.date: 11/26/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-ms.openlocfilehash: 84e3b7b80727c359e711f182e2f06a7332989549
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49ac57f81ef07eb2a9c1e11280e160f0c48fce73
+ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587466"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389948"
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/sdl (Ek Güvenlik Denetimlerini Etkinleştir)
 
@@ -49,7 +49,17 @@ Zaman **/SDL** olan etkin, derleyici çalışma zamanında bu denetimleri gerçe
 
 - Sınırlı işaretçi temizleme gerçekleştirir. Değil içeren ifadeler başvurusunu kaldırır ve hiçbir kullanıcı tanımlı bir yıkıcıya sahip türler, çağrısı yapıldıktan sonra geçerli olmayan bir adrese işaretçi başvuruları ayarlanır `delete`. Yeniden kullanılması engellenen eski işaretçi başvuruları yardımcı olur.
 
-- Sınıf üye başlatma gerçekleştirir. Tüm sınıf üyeleri (oluşturucu döngülerinden önce) nesne örneklemesini sıfır otomatik olarak başlatır. Bu oluşturucu açıkça başlatılmaz sınıf üyeleri ile ilişkilendirilmiş başlatılmamış veri kullanımını engeller.
+- Sınıf üye işaretçisi başlatma gerçekleştirir. Otomatik olarak başlatır sınıf üyeleri için işaretçi türünün **nullptr** nesne örneklemesini (önce Oluşturucu döngülerinden) üzerinde. Bu oluşturucu açıkça başlatılmaz başlatılmamış işaretçileri kullanımını engeller. Derleyici tarafından oluşturulan üye işaretçisi başlatma adında olduğu sürece:
+
+  - Özel (kullanıcı tanımlı) kullanarak nesne atanmadı `operator new`
+
+  - Nesne, dizi bir parçası olarak atanmamış (örneğin `new A[x]`)
+
+  - Sınıf yönetilen veya içeri aktarılmamış
+
+  - Sınıfın kullanıcı tanımlı varsayılan bir oluşturucu vardır.
+
+  Derleyici tarafından üretilen sınıf başlatma işlevin başlatılması için bir işaretçi ve olmayan bir özellik veya sabit bir üyesi olmalıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
