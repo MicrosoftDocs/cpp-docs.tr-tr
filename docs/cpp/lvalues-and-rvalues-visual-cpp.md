@@ -5,12 +5,12 @@ helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-ms.openlocfilehash: 301e6140699c921ee1b1229b9183c8555992f716
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 74bfac5f5bb56549eee41a5479babf8e71b00aa6
+ms.sourcegitcommit: e9568560cdb95e83a8fba1e9bca21ece910d20b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330620"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52453891"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalues ve Rvalues (Visual C++)
 
@@ -54,12 +54,12 @@ int main()
     // Correct usage: the dereferenced pointer is an lvalue.
     *p = i;
 
-    const int ci = 7;
-    // Incorrect usage: the variable is a non-modifiable lvalue (C3892).
-    ci = 9; // C3892
-
     // Correct usage: the conditional operator returns an lvalue.
     ((i < 3) ? i : j) = 7;
+    
+    // Incorrect usage: the constant ci is a non-modifiable lvalue (C3892).
+    const int ci = 7;
+    ci = 9; // C3892
 }
 ```
 

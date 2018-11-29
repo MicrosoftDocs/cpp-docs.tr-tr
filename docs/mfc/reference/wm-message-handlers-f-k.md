@@ -1,6 +1,6 @@
 ---
 title: 'WM_ İleti İşleyicileri: F - K'
-ms.date: 11/04/2016
+ms.date: 11/27/2018
 f1_keywords:
 - ON_WM_FONTCHANGE
 - ON_WM_ICONERASEBKGND
@@ -29,12 +29,12 @@ helpviewer_keywords:
 - WM_ messages [MFC]
 - ON_WM_KEYDOWN [MFC]
 ms.assetid: 0e7de191-1499-499f-859c-62742797808e
-ms.openlocfilehash: 993202e0d0037c510886e43004ee499599234a62
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e21889a44d26cd57ce0645e2050eeeb2839ef17d
+ms.sourcegitcommit: e9568560cdb95e83a8fba1e9bca21ece910d20b7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609916"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52453904"
 ---
 # <a name="wm-message-handlers-f---k"></a>WM_ İleti İşleyicileri: F - K
 
@@ -44,7 +44,7 @@ Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşıl
 |---------------|------------------------|
 |ON_WM_FONTCHANGE()|afx_msg void [OnFontChange](../../mfc/reference/cwnd-class.md#onfontchange)();|
 |ON_WM_GETDLGCODE()|UINT afx_msg [OnGetDlgCode](../../mfc/reference/cwnd-class.md#ongetdlgcode)();|
-|ON_WM_GETMINMAXINFO()|afx_msg void [Ongetminmaxınfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)(LPPOINT);|
+|ON_WM_GETMINMAXINFO()|afx_msg void [Ongetminmaxınfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)(MINMAXINFO *);|
 |ON_WM_HELPINFO()|BOOL afx_msg [OnHelpInfo](../../mfc/reference/cwnd-class.md#onhelpinfo)(HELPINFO *);|
 |ON_WM_HOTKEY()|afx_msg void [OnHotKey](../../mfc/reference/cwnd-class.md#onhotkey)(UINT, UINT, UINT);|
 |ON_WM_HSCROLL()|afx_msg void [OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll)(UINT, UINT, CWnd *);|

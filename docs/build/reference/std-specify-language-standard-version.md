@@ -1,17 +1,17 @@
 ---
 title: / Std (dil standart sürümünü belirt)
-ms.date: 11/16/2017
+ms.date: 11/26/2018
 f1_keywords:
 - /std
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 7c91f02fe044b5e6afccfc075c5d73ec004b8222
-ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
-ms.translationtype: HT
+ms.openlocfilehash: 03f7e095dc8b09b743d42cd6df0aaeb1a1dd3f02
+ms.sourcegitcommit: e9568560cdb95e83a8fba1e9bca21ece910d20b7
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389961"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52453917"
 ---
 # <a name="std-specify-language-standard-version"></a>/ Std (dil standart sürümünü belirt)
 
