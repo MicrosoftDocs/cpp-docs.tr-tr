@@ -1,21 +1,17 @@
- ## Microsoft Open Source Code of Conduct
+# <a name="visual-studio-2017-documentation-for-visual-c"></a>Visual C++ için Visual Studio 2017 belgeleri
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Hoş Geldiniz! Bu depo, iş ilerleme-Visual C++ teknik belgeler için kaynak dosyaları içerir. Konular yayımlanan [Visual C++ belge sitesine](https://docs.microsoft.com/cpp).
 
-# Visual Studio 2017 documentation for Visual C++
+Bu depo, 23 Haziran 2017'de MicrosoftDocs/cpp-docs-pr Microsoft/vcppdocs taşındı.
 
-Welcome! This repo contains source files for the work-in-progress Visual C++ technical documentation. The topics are published on the [Visual C++ documentation site](https://docs.microsoft.com/cpp).
+Visual Basic ve Visual belgelerini C# ayrı bir deponun bulunur [ http://github.com/dotnet/core-docs ](http://github.com/dotnet/core-docs), ve Visual Studio 2017 belgeleri konumundaki deposunda bulunan [ http://github.com/Microsoft/visualstudio-docs ](http://github.com/Microsoft/visualstudio-docs).
 
-This repo was moved from Microsoft/vcppdocs to MicrosoftDocs/cpp-docs-pr on June 23, 2017.
+## <a name="contributing-to-the-documentation"></a>Bir belgeye katkıda
 
-The documentation for Visual Basic and Visual C# are located in a separate repo at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual Studio 2017 documentation is located in the repo located at [http://github.com/Microsoft/visualstudio-docs](http://github.com/Microsoft/visualstudio-docs).
+Biz, Visual C++ belgeleri geliştirmemize yardımcı olmak üzere Katkılarınızı Hoş Geldiniz. Docs.microsoft.com'a katkıda bulunan için kapsamlı kılavuzu için lütfen bkz [Microsoft Docs katkıda bulunan Kılavuzu Genel Bakış](https://docs.microsoft.com/contribute). Visual C++ belgelerinin katkısı yapma hakkında ayrıntılı bilgi için lütfen bkz [katkıda](CONTRIBUTING.md) Kılavuzu.
 
-## Contributing to the documentation
+Bu depoda kendi klasörlerine Visual C++, çeşitli özellik alanları gibi sahip `standard-library` konularıyla ilgili, C++ Standart Kitaplığı için `ide` C++ özel konular Visual Studio etkileşimli bir geliştirme ortamı (IDE) ve benzeri için. `/media` Her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda](CONTRIBUTING.md) Kılavuzu sahip daha fazla bilgi.
 
-To contribute to this documentation, please see the [Contributing guide](CONTRIBUTING.md).
-We welcome your contributions to help us improve the Visual C++ docs. All the articles in this repository use GitHub flavored markdown.
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft açık kaynak kullanım kuralları
 
-Several feature areas of Visual Studio have their own folders in this repo, such as **standard-library** for topics on the C++ Standard Library, **ide** for topics on the Visual Studio interactive development environment (IDE), and so forth. The **/media** subfolder in each folder contains art files for the topics. The [Contributing guide](CONTRIBUTING.md) has more information.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Bu proje başlamıştır [Microsoft açık kaynak kullanım şartları](https://opensource.microsoft.com/codeofconduct/). Daha fazla bilgi için [Kullanım Kuralları SSS](https://opensource.microsoft.com/codeofconduct/faq/) sayfasına bakın. Başka sorularınız ya da yorumlarınız varsa bunları [opencode@microsoft.com](mailto:opencode@microsoft.com) adresine gönderebilirsiniz.
