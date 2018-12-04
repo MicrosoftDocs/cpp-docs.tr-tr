@@ -1,6 +1,6 @@
 ---
 title: fread
-ms.date: 11/04/2016
+ms.date: 11/28/2018
 apiname:
 - fread
 apilocation:
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - data [C++], reading from input stream
 - streams [C++], reading data from
 ms.assetid: 9a3c1538-93dd-455e-ae48-77c1e23c53f0
-ms.openlocfilehash: d3516dc67047064b9293b1bb289888596736ed47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f9cb6940d1708dffd5d5ca03fac28397f1db846
+ms.sourcegitcommit: 53bfb772c43319d49686c167f492606348ad362b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468841"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52819702"
 ---
 # <a name="fread"></a>fread
 
@@ -64,11 +64,13 @@ Okunacak öğe maksimum sayısı.
 
 **fread** olabilecek tam öğe sayısını aslında okumak, döndürür küçüktür *sayısı* bir hata oluşursa veya dosya sonuna ulaşmadan önce karşılaşılırsa *sayısı*. Kullanım **feof** veya **ferror** okuma hatası bir dosya sonu koşulunu ayırt etmek için işlevi. Varsa *boyutu* veya *sayısı* 0 ' dır **fread** 0 ve arabellek içeriği değişmeden döndürür. Varsa *stream* veya *arabellek* null bir işaretçiyse, **fread** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve 0 döndürür.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
+Bkz: [ \_doserrno, errno, \_sys\_errlist, ve \_sys\_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu hata kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fread** işlevi okur kadar *sayısı* öğelerin *boyutu* girdisinden bayt *stream* ve depolar *arabelleği* . İle ilişkili dosya işaretçisini *stream* (varsa) tarafından gerçekten okunan bayt sayısı artar. Belirtilen akış metin modunda açılırsa, satır başı satır besleme çiftleri tek bir satır başı besleme karakterleri ile değiştirilir. Değiştirilen dosya işaretçisini ya da dönüş değeri üzerinde etkisi yoktur. Dosya işaretçisi olarak bir hata oluşursa belirsiz konumdur. Kısmen okuma öğesinin değeri belirlenemiyor.
+**Fread** işlevi okur kadar *sayısı* öğelerin *boyutu* girdisinden bayt *stream* ve depolar *arabelleği* . İle ilişkili dosya işaretçisini *stream* (varsa) tarafından gerçekten okunan bayt sayısı artar. Belirtilen akışa açıldığında [metin modunda](../../c-runtime-library/text-and-binary-mode-file-i-o.md), Windows stili satır başı UNIX stili satır başı dönüştürülür. Diğer bir deyişle, satır başı satır besleme (CRLF) çiftleri tek satır besleme (LF) karakterleriyle değiştirilir. Değiştirilen dosya işaretçisini ya da dönüş değeri üzerinde etkisi yoktur. Dosya işaretçisi olarak bir hata oluşursa belirsiz konumdur. Kısmen okuma öğesinin değeri belirlenemiyor.
+
+Veri miktarı istenmesi halinde bir metin modunda akışta kullanıldığında (diğer bir deyişle, *boyutu* \* *sayısı*) büyüktür veya eşittir iç **dosya** \*arabellek boyutu (varsayılan olarak budur 4096 bayt cinsinden kullanarak yapılandırılabilir [setvbuf](../../c-runtime-library/reference/setvbuf.md)), veri akışı doğrudan kullanıcı tarafından sağlanan belleğe kopyalanır ve bu arabellekteki yeni satır dönüştürme yapılır. Dönüştürülen verileri, geçmiş verileri arabelleğe kopyalar akış verilerini kısa olabileceğinden *arabellek*\[*return_value* \* *boyutu*] () Burada *return_value* dönüş değeri **fread**) dosyasından Dönüştürülmeyen veriler içerebilir. Bu nedenle, null ile sonlandırılan karakter verileri olan öneririz *arabellek*\[*return_value* \* *boyutu*] arabellek amacı ise C stili dize olarak görev yapacak. Bkz: [fopen](fopen-wfopen.md) metin modunu ve ikili mod etkileri hakkında ayrıntılı bilgi için.
 
 Bu işlev, diğer iş parçacıklarını kilitler. Kilitleme yapılmayan bir sürüm ihtiyacınız varsa, **_fread_nolock**.
 
@@ -133,5 +135,7 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Metin ve ikili dosya g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br />
+[fopen](fopen-wfopen.md)<br />
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

@@ -8,9 +8,9 @@ Visual Basic ve Visual belgelerini C# ayrı bir deponun bulunur [ http://github.
 
 ## <a name="contributing-to-the-documentation"></a>Bir belgeye katkıda
 
-Biz, Visual C++ belgeleri geliştirmemize yardımcı olmak üzere Katkılarınızı Hoş Geldiniz. Docs.microsoft.com'a katkıda bulunan için kapsamlı kılavuzu için lütfen bkz [Microsoft Docs katkıda bulunan Kılavuzu Genel Bakış](https://docs.microsoft.com/contribute). Visual C++ belgelerinin katkısı yapma hakkında ayrıntılı bilgi için lütfen bkz [katkıda](CONTRIBUTING.md) Kılavuzu.
+Biz, Visual C++ belgeleri geliştirmemize yardımcı olmak üzere Katkılarınızı Hoş Geldiniz. Docs.microsoft.com'a katkıda bulunan için kapsamlı kılavuzu için lütfen bkz [Microsoft Docs katkıda bulunan Kılavuzu Genel Bakış](https://docs.microsoft.com/contribute). Visual C++ belgelerinin katkısı yapma hakkında ayrıntılı bilgi için lütfen bkz [katkıda Kılavuzu](CONTRIBUTING.md).
 
-Bu depoda kendi klasörlerine Visual C++, çeşitli özellik alanları gibi sahip `standard-library` konularıyla ilgili, C++ Standart Kitaplığı için `ide` C++ özel konular Visual Studio etkileşimli bir geliştirme ortamı (IDE) ve benzeri için. `/media` Her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda](CONTRIBUTING.md) Kılavuzu sahip daha fazla bilgi.
+Bu depoda kendi klasörlerine Visual C++, çeşitli özellik alanları gibi sahip `standard-library` konularıyla ilgili, C++ Standart Kitaplığı için `ide` C++ özel konular Visual Studio etkileşimli bir geliştirme ortamı (IDE) ve benzeri için. `/media` Her klasöründeki alt konuları resim dosyalarını içerir. [Katkıda Kılavuzu](CONTRIBUTING.md) daha fazla bilgi bulunur.
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft açık kaynak kullanım kuralları
 
