@@ -22,12 +22,12 @@ helpviewer_keywords:
 - aligned_malloc_dbg function
 - _aligned_malloc_dbg function
 ms.assetid: fb0429c3-685d-4826-9075-2515c5bdc5c6
-ms.openlocfilehash: 4fc6789e5fecda38678052c7e805728a49219bc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb58313c892ffe13e9f8e34e98b7940022899d14
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631880"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977816"
 ---
 # <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
 
@@ -64,7 +64,7 @@ Ayrılan bellek bloğuna işaretçi veya işlem başarısız olursa NULL.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_malloc_dbg** bir hata ayıklama sürümü [_aligned_malloc](aligned-malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_malloc_dbg** çağrısı azaltılır `_aligned_malloc`. Her ikisi de `_aligned_malloc` ve **_aligned_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_aligned_malloc_dbg** birkaç hata ayıklama özellikleri sunar: her iki tarafında bir kullanıcı bölümünü arabellekler Blok için sızıntılara, test etmek ve *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgi.
+**_aligned_malloc_dbg** bir hata ayıklama sürümü [_aligned_malloc](aligned-malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_malloc_dbg** çağrısı azaltılır `_aligned_malloc`. Her ikisi de `_aligned_malloc` ve **_aligned_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_aligned_malloc_dbg** birkaç hata ayıklama özellikleri sunar: her iki tarafında bir kullanıcı bölümünü arabellekler Blok için sızıntılara, test etmek ve *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgi. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
 
 **_aligned_malloc_dbg** ile biraz daha fazla alan istenen bellek bloğu ayırır *boyutu*. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
 

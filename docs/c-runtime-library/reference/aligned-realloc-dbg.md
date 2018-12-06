@@ -22,12 +22,12 @@ helpviewer_keywords:
 - _aligned_realloc_dbg function
 - aligned_realloc_dbg function
 ms.assetid: 8aede920-991e-44cd-867f-83dc2165db47
-ms.openlocfilehash: 2a261b3e578bef5464bbfda8528ffd8b491acb23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 136edf6b5c95149302920af0c8a8dc9c07458e3b
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545957"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977777"
 ---
 # <a name="alignedreallocdbg"></a>_aligned_realloc_dbg
 
@@ -70,7 +70,7 @@ Bu belleği yeniden tahsis ve bir blok hizalamasını değiştirmek için bir ha
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_realloc_dbg** bir hata ayıklama sürümü [_aligned_realloc](aligned-realloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_realloc_dbg** çağrısı azaltılır **_aligned_realloc**. Her ikisi de **_aligned_realloc** ve **_aligned_realloc_dbg** taban yığının bellek bloğunda yeniden tahsis ancak **_aligned_realloc_dbg** birkaç hata ayıklama özellikleri barındırır : arabellek bloğu için sızıntılara, belirli bir ayırma türleri izlemek için bir blok türü parametresi test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgileri.
+**_aligned_realloc_dbg** bir hata ayıklama sürümü [_aligned_realloc](aligned-realloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_realloc_dbg** çağrısı azaltılır **_aligned_realloc**. Her ikisi de **_aligned_realloc** ve **_aligned_realloc_dbg** taban yığının bellek bloğunda yeniden tahsis ancak **_aligned_realloc_dbg** birkaç hata ayıklama özellikleri barındırır : arabellek bloğu için sızıntılara, test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgi. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
 
 **_aligned_realloc_dbg** istenen biraz daha fazla alan ile belirtilen bellek bloğu yeniden tahsis ederse *newSize*. *newSize* büyük ya da ilk olarak ayrılan bellek blok boyutundan küçük olabilir. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Tahsisat, orijinal bellek bloğunun yığınındaki farklı bir konuma taşımak, yanı sıra bellek blok boyutu değiştirme neden olabilir. Bellek bloğu taşınırsa, özgün blok içeriği üzerine yazılır.
 

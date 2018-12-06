@@ -22,12 +22,12 @@ helpviewer_keywords:
 - aligned_offset_realloc_dbg function
 - _aligned_offset_realloc_dbg function
 ms.assetid: 64e30a12-887e-453b-aea8-aed793fca9d8
-ms.openlocfilehash: e5ffb37227e1e20f32e065290056da05e7dcd065
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7684a752f489eb726b2105b1055b6da1e86e9cd1
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625868"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977829"
 ---
 # <a name="alignedoffsetreallocdbg"></a>_aligned_offset_realloc_dbg
 
@@ -72,7 +72,7 @@ Satır numarası kaynak dosyada burada **aligned_offset_realloc** işlemi istend
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_offset_realloc_dbg** bir hata ayıklama sürümü [_aligned_offset_realloc](aligned-offset-realloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_offset_realloc_dbg** çağrısı azaltılır **_aligned_offset_realloc**. Her ikisi de **_aligned_offset_realloc** ve **_aligned_offset_realloc_dbg** taban yığının bellek bloğunda yeniden tahsis ancak **_aligned_offset_realloc_dbg** barındırır birçok hata ayıklama özellikleri: arabellek bloğu için sızıntılara, belirli bir ayırma türleri izlemek için bir blok türü parametresi test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber*  ayırma isteklerini kökenini belirlemek için bilgi.
+**_aligned_offset_realloc_dbg** bir hata ayıklama sürümü [_aligned_offset_realloc](aligned-offset-realloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_offset_realloc_dbg** çağrısı azaltılır **_aligned_offset_realloc**. Her ikisi de **_aligned_offset_realloc** ve **_aligned_offset_realloc_dbg** taban yığının bellek bloğunda yeniden tahsis ancak **_aligned_offset_realloc_dbg** barındırır birçok hata ayıklama özellikleri: arabellek bloğu için sızıntılara, test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* kökenini belirlemek için bilgi ayırma isteklerini. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
 
 Gibi [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_realloc_dbg** yapısı içinde bir uzaklık hizalanması için bir yapı sağlar.
 

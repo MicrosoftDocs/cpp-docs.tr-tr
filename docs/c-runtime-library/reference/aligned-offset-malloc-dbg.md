@@ -22,12 +22,12 @@ helpviewer_keywords:
 - _aligned_offset_malloc_dbg function
 - aligned_offset_malloc_dbg function
 ms.assetid: 6c242307-c59e-4d63-aae5-d8cbec8e021c
-ms.openlocfilehash: 481109a5ed7d137aa2d10c77955a2f460cba43c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96fe9e7fda0d0cdfdbfa5462e4f601e3649e2233
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507543"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977725"
 ---
 # <a name="alignedoffsetmallocdbg"></a>_aligned_offset_malloc_dbg
 
@@ -68,7 +68,7 @@ Ayrılan bellek bloğuna işaretçi veya **NULL** işlemi başarısız.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_offset_malloc_dbg** bir hata ayıklama sürümü [_aligned_offset_malloc](aligned-offset-malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_offset_malloc_dbg** çağrısı azaltılır **_aligned_offset_malloc**. Her ikisi de **_aligned_offset_malloc** ve **_aligned_offset_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_aligned_offset_malloc_dbg** birkaç farklı hata ayıklama özellikleri: arabellek bloğu için sızıntılara, belirli bir ayırma türleri izlemek için bir blok türü parametresi test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgi.
+**_aligned_offset_malloc_dbg** bir hata ayıklama sürümü [_aligned_offset_malloc](aligned-offset-malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_offset_malloc_dbg** çağrısı azaltılır **_aligned_offset_malloc**. Her ikisi de **_aligned_offset_malloc** ve **_aligned_offset_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_aligned_offset_malloc_dbg** birkaç farklı hata ayıklama özellikleri: arabellek bloğu için sızıntılara, test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* kökenini belirlemek için bilgi ayırma isteklerini. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
 
 **_aligned_offset_malloc_dbg** ile biraz daha fazla alan istenen bellek bloğu ayırır *boyutu*. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
 

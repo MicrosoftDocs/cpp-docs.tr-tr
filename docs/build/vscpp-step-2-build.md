@@ -4,14 +4,14 @@ description: Visual c++'ta bir Hello World konsol uygulaması derleyebilir ve
 ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
-ms.devlang: C++
+ms.devlang: cpp
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
-ms.openlocfilehash: 89681b4f6b2ff2780cc8dc1947e2ad758d294b48
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 09780d5823190eb4cb3b4ad13bb60e33808e4987
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467840"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977738"
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>Derleme ve C++ konsol uygulama projesi çalıştırma
 

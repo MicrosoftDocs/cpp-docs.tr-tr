@@ -4,14 +4,14 @@ description: Visual c++'ta bir Hello World konsol uygulaması oluşturma
 ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
-ms.devlang: C++
+ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 96573240728eaf77e7f222486b2d9f515a8cfe69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5722dcc06f5141818910e44a6160d12bcd4eaecd
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619901"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977764"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
