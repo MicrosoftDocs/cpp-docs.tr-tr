@@ -1,6 +1,6 @@
 # [Visual Studio 2017'de Visual C++](visual-cpp-in-visual-studio.md)
 # [Visual Studio 2017'deki Visual C++ Yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)
-# [Visual C++ Öğreticisi](build/vscpp-step-0-installation.md)
+# Visual C++ Öğreticisi
 ## [Visual Studio'ya C++ desteği yükleme](build/vscpp-step-0-installation.md)
 ## [C++ konsol uygulama projesi oluşturma](build/vscpp-step-1-create.md)
 ## [C++ konsol uygulama projesi derleyip çalıştırma](build/vscpp-step-2-build.md)
