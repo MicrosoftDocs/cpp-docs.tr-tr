@@ -6,12 +6,12 @@ ms.technology:
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 3b01c58349aa1dff1c782b051156250fd495df91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5aee74c9fee1480d2bb61c36abba97edc5c5d4cf
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460014"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178102"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ Yardım ve Topluluk
 
@@ -45,4 +45,4 @@ Birçok bölümler belgelerinin PDF biçiminde de mevcuttur. Bu bölümleri olan
 |[Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)|Visual C++ ürün ekibinde uzmanları tarafından çeşitli konular gönderiler içerir.|
 |[Channel 9](https://channel9.msdn.com/)|Video röportajları ve dersler içerir. C++ içeriği bulmak için Channel 9 giriş sayfasında arama kutusunu kullanın.|
 |[Visual Studio](https://visualstudio.microsoft.com/)|Makaleleri ve Visual Studio ve ilişkili geliştirme araçları ile ilgili Haberler içerir.|
-|[MSDN Forumları](https://social.msdn.microsoft.com/Forums/en-US/home?category=visualc) ve [Geliştirici topluluğu](https://developercommunity.visualstudio.com)|Burada C++ hakkında sorularınızı ve Microsoft ve topluluk içinde uzmanlarından yanıtlar alın, resmi Microsoft forumları.|
+|[MSDN Forumları](https://social.msdn.microsoft.com/Forums/home?category=visualc) ve [Geliştirici topluluğu](https://developercommunity.visualstudio.com)|Burada C++ hakkında sorularınızı ve Microsoft ve topluluk içinde uzmanlarından yanıtlar alın, resmi Microsoft forumları.|

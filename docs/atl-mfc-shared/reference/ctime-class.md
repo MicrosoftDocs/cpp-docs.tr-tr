@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: bed403e4bc1cca1d31a394be7157de9e65abff95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cedd1bfd4ea955f920e13b5d01beb3a478656b69
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519450"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178128"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 
@@ -169,10 +169,10 @@ Günışığından yararlanmanın etkin olup olmadığını gösterir. Üç değ
 Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `CTime` nesne.
 
 *St*<br/>
-A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
+A [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
 
 *ft*<br/>
-A [FILETIME](../../mfc/reference/filetime-structure.md) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
+A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
 
 *dbts*<br/>
 Geçerli yerel saat içeren bir DBTIMESTAMP yapısı bir başvuru.

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 295f61ed120e957bc0d5ec1746e7d3bdfbb6d001
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6722011bf343a391fcc7180558eead5c039afc59
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624607"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178180"
 ---
 # <a name="cbitmap-class"></a>CBitmap sınıfı
 
@@ -155,7 +155,7 @@ Bir bit eşlem doğrudan görüntüleme cihazı için seçilemez olsa da, bunu b
 
 Bitirdiğinizde ile `CBitmap` tarafından oluşturulan nesne `CreateBitmap` işlev, ilk cihaz bağlamı dışında bir bit eşlem seçin ve ardından silme `CBitmap` nesne.
 
-Daha fazla bilgi için açıklamasına bakın `bmBits` alanındaki `BITMAP` yapısı. [Bit eşlem](../../mfc/reference/bitmap-structure.md) yapısı altında açıklanan [CBitmap::CreateBitmapIndirect](#createbitmapindirect) üye işlevi.
+Daha fazla bilgi için açıklamasına bakın `bmBits` alanındaki `BITMAP` yapısı. [Bit eşlem](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) yapısı altında açıklanan [CBitmap::CreateBitmapIndirect](#createbitmapindirect) üye işlevi.
 
 ##  <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
 
@@ -168,7 +168,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### <a name="parameters"></a>Parametreler
 
 *lpBitmap*<br/>
-İşaret eden bir [bit eşlem](../../mfc/reference/bitmap-structure.md) bit eşlem hakkında bilgi içeren yapısı.
+İşaret eden bir [bit eşlem](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) bit eşlem hakkında bilgi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -286,7 +286,7 @@ int GetBitmap(BITMAP* pBitMap);
 ### <a name="parameters"></a>Parametreler
 
 *pBitMap*<br/>
-İşaretçi bir [bit eşlem yapısı](../../mfc/reference/bitmap-structure.md) yapısı görüntü özelliklerini alır. Bu parametre NULL olmamalıdır.
+İşaretçi bir [bit eşlem](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) yapısı görüntü özelliklerini alır. Bu parametre NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

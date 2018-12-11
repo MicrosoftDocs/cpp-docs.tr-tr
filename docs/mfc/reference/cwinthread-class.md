@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 0f6c41b3675251df6b07e44003215fa67fb7e795
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 9c2b393354f65195e0d0060a08b83e321e3d5b1d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694198"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178427"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 
@@ -126,7 +126,7 @@ Bir iş parçacığı oluşturmak için arama [AfxBeginThread](application-infor
 
 Çağırmak yerine `AfxBeginThread`, oluşturulabilir bir `CWinThread`-türetilmiş nesne ve sonra çağrı `CreateThread`. Bu iki aşamalı yapımı yöntemi yeniden kullanmak istiyorsanız yararlıdır `CWinThread` art arda gelen oluşturma ve yürütme iş parçacığı, sonlandırmalar arasında nesne.
 
-Daha fazla bilgi için `CWinThread`, makalelere göz atın [çoklu iş parçacığı kullanımı C++ ve MFC ile](../../parallel/multithreading-with-cpp-and-mfc.md), [çoklu iş parçacığı kullanımı: kullanıcı arabirimi iş parçacıkları oluşturma](../../parallel/multithreading-creating-user-interface-threads.md), [çoklu iş parçacığı kullanımı: çalışan oluşturma İş parçacığı](../../parallel/multithreading-creating-worker-threads.md), ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Daha fazla bilgi için `CWinThread`, makalelere göz atın [çoklu iş parçacığı kullanımı C++ ve MFC ile](../../parallel/multithreading-with-cpp-and-mfc.md), [çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](../../parallel/multithreading-creating-user-interface-threads.md), [çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md), ve [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -458,7 +458,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-İşaret eden bir [MSG yapısı](../../mfc/reference/msg-structure1.md) işlemek için bir ileti içeren.
+İşaret eden bir [MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg) işlemek için bir ileti içeren.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -484,7 +484,7 @@ virtual BOOL ProcessMessageFilter(
 Kanca kodu belirtir. Bu üye işlevi kod nasıl işleneceğini belirlemek için kullanır. *lpMsg.*
 
 *lpMsg*<br/>
-Bir Windows işaretçisi [MSG yapısı](../../mfc/reference/msg-structure1.md).
+Bir Windows işaretçisi [MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -512,7 +512,7 @@ virtual LRESULT ProcessWndProcException(
 İşlenmeyen bir özel durum işaret eder.
 
 *pMsg*<br/>
-İşaret eden bir [MSG yapısı](../../mfc/reference/msg-structure1.md) bir özel durum için framework neden windows iletisi hakkındaki bilgileri içeren.
+İşaret eden bir [MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg) bir özel durum için framework neden windows iletisi hakkındaki bilgileri içeren.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CLinkCtrl [MFC], SetItemState
 - CLinkCtrl [MFC], SetItemUrl
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-ms.openlocfilehash: 79c6aa9f0448ed399554d634d48f666aaaf60566
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b24b92006b73dff2ae9f091256ef8401efc64fe9
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597567"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178051"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
 
@@ -134,7 +134,7 @@ virtual BOOL Create(DWORD dwStyle,
 Bağlantı denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Bkz: [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) içinde `Windows SDK` daha fazla bilgi için.
 
 *Rect*<br/>
-Bağlantı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.
+Bağlantı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
 
 *pParentWnd*<br/>
 Bağlantı denetiminin üst penceresine belirtir. NULL olmamalıdır.
@@ -196,7 +196,7 @@ Genişletilmiş bağlantı denetiminin stilini belirtir. Genişletilmiş Windows
 Bağlantı denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK.
 
 *Rect*<br/>
-Bağlantı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.
+Bağlantı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
 
 *pParentWnd*<br/>
 Bağlantı denetiminin üst penceresine belirtir. NULL olmamalıdır.
@@ -245,7 +245,7 @@ int GetIdealSize(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*cxMaxWidth*|[in] Maksimum genişliğini piksel cinsinden bağlantı.|
-|[out] \* *pSize*|Bir Windows işaretçisi [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı. Bu yöntem döndürüldüğünde, *cy* üyesi `SIZE` yapısı tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metni yükseklik içeren *cxMaxWidth*. *Cx* yapı üyesi için gerekli olan bağlantı metni genişliği içerir.|
+|[out] \* *pSize*|Bir Windows işaretçisi [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı. Bu yöntem döndürüldüğünde, *cy* üyesi `SIZE` yapısı tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metni yükseklik içeren *cxMaxWidth*. *Cx* yapı üyesi için gerekli olan bağlantı metni genişliği içerir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

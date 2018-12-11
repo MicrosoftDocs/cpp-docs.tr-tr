@@ -311,12 +311,12 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_bDontScaleImages
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
-ms.openlocfilehash: d1677716db42f7f2e3b74e63562d00527291c144
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 98de92a9473d64a87b9b7a9f2891adf4263e1951
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524676"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178973"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 
@@ -519,7 +519,7 @@ Birleştirmek için bir `CMFCToolBar` uygulamanıza nesne, aşağıdaki adımlar
 
 1. Çağrı [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) yerleştirme stilini belirlemek için.
 
-Özel bir düğme eklemek için birleşik giriş kutusu veya açılan araç çubuğu gibi üst kaynağında işlevsiz bir düğme ayırmak ve çalışma zamanında işlevsiz düğmesini kullanarak değiştirin [CMFCToolBar::ReplaceButton](#replacebutton). Daha fazla bilgi için [izlenecek yol: temel denetimler koyma araç'çubukları](../walkthrough-putting-controls-on-toolbars.md).
+Özel bir düğme eklemek için birleşik giriş kutusu veya açılan araç çubuğu gibi üst kaynağında işlevsiz bir düğme ayırmak ve çalışma zamanında işlevsiz düğmesini kullanarak değiştirin [CMFCToolBar::ReplaceButton](#replacebutton). Daha fazla bilgi için [izlenecek yol: Araç çubuklarına denetimler yerleştirme](../walkthrough-putting-controls-on-toolbars.md).
 
 `CMFCToolBar` MFC Kitaplığı sınıflarını temel sınıfı olan [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md), [CMFCPopupMenuBar sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md), ve [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md).
 
@@ -1242,7 +1242,7 @@ void EnableReflections(BOOL bEnable = TRUE);
 
 Birleşik giriş kutuları gibi katıştırılmış denetimler içeren bir araç çubuğu düğmeleri için komut yansıma etkinleştirmek için bu yöntemi çağırın.
 
-Komut yansıma hakkında daha fazla bilgi için bkz: [TN062: Windows denetimleri için ileti yansıması](../../mfc/tn062-message-reflection-for-windows-controls.md).
+Komut yansıma hakkında daha fazla bilgi için bkz: [TN062: Yansıma Windows denetimleri için ileti](../../mfc/tn062-message-reflection-for-windows-controls.md).
 
 ##  <a name="enabletextlabels"></a>  CMFCToolBar::EnableTextLabels
 
@@ -2491,7 +2491,7 @@ Son komut bu düğmeyi gönderildiyse TRUE, *pButton* belirtir; Aksi takdirde FA
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem için bir işaretçi alır bir [MSG yapısı](../../mfc/reference/msg-structure1.md) çağırarak `CWnd::GetCurrentMessage`. Ardından bir düğmeyle HWND karşılaştırır `MSG::lParam` ve `MSG::hwnd` düğme komutu kaynağı olup olmadığını belirlemek için üyeleri.
+Bu yöntem için bir işaretçi alır bir [MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg) çağırarak `CWnd::GetCurrentMessage`. Ardından bir düğmeyle HWND karşılaştırır `MSG::lParam` ve `MSG::hwnd` düğme komutu kaynağı olup olmadığını belirlemek için üyeleri.
 
 ##  <a name="islocked"></a>  CMFCToolBar::IsLocked
 
@@ -3905,5 +3905,5 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
 [CMFCMenuBar Sınıfı](../../mfc/reference/cmfcmenubar-class.md)<br/>
 [CMFCPopupMenuBar Sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
 [CMFCDropDownToolBar Sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 

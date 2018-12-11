@@ -34,16 +34,16 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: f2ecaeb4f3b434ef7b57573f2ea379719aebcbff
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 5e9d4b5c28adceb52078c13dbf18170e7a2b19e5
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520042"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178759"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
-Benzer şekilde bir Windows [RECT](../../mfc/reference/rect-structure.md) yapısı.
+Benzer şekilde bir Windows [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -120,7 +120,7 @@ Belirtirken bir `CRect`, böylece bu normalleştirilmiş oluşturulacağına ili
 
 Değiştirirken dikkatli bir `CRect` ile [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) ve [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) üye işlevleri. Y-uzantı olarak negatif güvenilecek şekilde görünen bağlam eşleme modunu olup olmadığını `MM_LOENGLISH`, ardından `CDC::DPtoLP` dönüştüren `CRect` en üst alt büyük olmasını sağlayın. Gibi işlevler `Height` ve `Size` ardından dönüştürülmüş yüksekliği için negatif değerler döndürür `CRect`, dikdörtgen Normalleştirilmemiş olacaktır.
 
-Ne zaman kullanarak aşırı `CRect` operatörleri birinci işlenenin olmalıdır bir `CRect`; ikinci olabilir bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` nesne.
+Ne zaman kullanarak aşırı `CRect` operatörleri birinci işlenenin olmalıdır bir `CRect`; ikinci olabilir bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` nesne.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -249,7 +249,7 @@ void CopyRect(LPCRECT lpSrcRect) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpSrcRect*<br/>
-İşaret [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` kopyalanacak nesne.
+İşaret [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` kopyalanacak nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -301,7 +301,7 @@ Doğru konumunu belirtir `CRect`.
 Sonuna belirten `CRect`.
 
 *srcRect*<br/>
-Başvurduğu [RECT](../../mfc/reference/rect-structure.md) koordinatları ile yapısı `CRect`.
+Başvurduğu [RECT](/windows/desktop/api/windef/ns-windef-tagrect) koordinatları ile yapısı `CRect`.
 
 *lpSrcRect*<br/>
 İşaret `RECT` koordinatları ile yapısı `CRect`.
@@ -382,10 +382,10 @@ Sol deflate için birim sayısını ve sağ tarafında belirtir `CRect`.
 Üst ve alt deflate için birim sayısını belirtir `CRect`.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) deflate için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında deflate için birim sayısını ve `cy` değeri üst ve alt deflate için birim sayısını belirtir.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) veya [CSize](csize-class.md) deflate için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında deflate için birim sayısını ve `cy` değeri üst ve alt deflate için birim sayısını belirtir.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her yan deflate için birim sayısını belirtir.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` her yan deflate için birim sayısını belirtir.
 
 *m*<br/>
 Sol tarafındaki deflate için birim sayısını belirtir `CRect`.
@@ -431,7 +431,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` bir dikdörtgenin sol ve sağ alt köşesinde koordinatları içeren nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` bir dikdörtgenin sol ve sağ alt köşesinde koordinatları içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -508,10 +508,10 @@ Sol doldurmak için birim sayısını ve sağ tarafında belirtir `CRect`.
 Üst ve alt doldurmak için birim sayısını belirtir `CRect`.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) doldurmak için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında doldurmak için birim sayısını ve `cy` değeri üst ve alt doldurmak için birim sayısını belirtir.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) veya [CSize](csize-class.md) doldurmak için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında doldurmak için birim sayısını ve `cy` değeri üst ve alt doldurmak için birim sayısını belirtir.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her yan doldurmak için birim sayısını belirtir.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` her yan doldurmak için birim sayısını belirtir.
 
 *m*<br/>
 Sol tarafındaki doldurmak için birim sayısını belirtir `CRect`.
@@ -552,7 +552,7 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpRect1*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` kaynak dikdörtgenin içeren nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` kaynak dikdörtgenin içeren nesne.
 
 *lpRect2*<br/>
 İşaret eden bir `RECT` yapısı veya `CRect` kaynak dikdörtgenin içeren nesne.
@@ -746,7 +746,7 @@ void NormalizeRect() throw();
 Dikdörtgen dördüncü quadrant konumlandırma için Windows genellikle koordinatları kullanan normalleştirilmiştir. `NormalizeRect` üst ve alt değerlerini karşılaştırır ve üst, alt büyükse, bunları değiştirir. Benzer şekilde, sol, sağ büyükse, sol ve sağ değerlerin değiştirir. Bu işlev ve dikdörtgenler ters farklı eşleme modu ile ilgilenirken kullanışlıdır.
 
 > [!NOTE]
-> Aşağıdaki `CRect` üye işlevleri, düzgün çalışması için normalleştirilmiş dikdörtgenler gerektirir: [yükseklik](#height), [genişliği](#width), [boyutu](#size), [ IsRectEmpty](#isrectempty), [PtInRect](#ptinrect), [EqualRect](#equalrect), [UnionRect](#unionrect), [IntersectRect](#intersectrect), [ SubtractRect](#subtractrect), [işleç ==](#operator_eq_eq), [işleç! =](#operator_neq), [işleci &#124; ](#operator_or), [işleci &#124;=](#operator_or_eq), [işleci &](#operator_amp), ve [işleci & =](#operator_amp_eq).
+> Aşağıdaki `CRect` üye işlevleri, düzgün çalışması için normalleştirilmiş dikdörtgenler gerektirir: [Yükseklik](#height), [genişliği](#width), [boyutu](#size), [IsRectEmpty](#isrectempty), [PtInRect](#ptinrect), [EqualRect](#equalrect), [UnionRect](#unionrect), [IntersectRect](#intersectrect), [SubtractRect](#subtractrect), [işleç ==](#operator_eq_eq), [işleç! =](#operator_neq), [işleci &#124; ](#operator_or), [işleci &#124;=](#operator_or_eq), [işleci &](#operator_amp), ve [işleci & =](#operator_amp_eq).
 
 ### <a name="example"></a>Örnek
 
@@ -777,10 +777,10 @@ Sola taşı için ya da sağ belirtir. Sola Taşı negatif olmalıdır.
 Yukarı veya aşağı taşımak için belirtir. Yukarı taşımak için negatif olmalıdır.
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) nesne taşımak, her iki boyutu belirtme.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](cpoint-class.md) nesne taşımak, her iki boyutu belirtme.
 
 *Boyutu*<br/>
-İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) nesne taşımak, her iki boyutu belirtme.
+İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](csize-class.md) nesne taşımak, her iki boyutu belirtme.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -833,7 +833,7 @@ void operator=(const RECT& srcRect) throw();
 ### <a name="parameters"></a>Parametreler
 
 *srcRect*<br/>
-Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
+Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect`.
 
 ### <a name="example"></a>Örnek
 
@@ -856,7 +856,7 @@ BOOL operator==(const RECT& rect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
+Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -896,7 +896,7 @@ BOOL operator!=(const RECT& rect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
+Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -938,13 +938,13 @@ void operator+=(LPCRECT lpRect) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
+A [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her iki tarafındaki doldurmak için birim sayısını içeren nesne `CRect`.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` her iki tarafındaki doldurmak için birim sayısını içeren nesne `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -976,13 +976,13 @@ void operator-=(LPCRECT lpRect) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
+A [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her iki tarafındaki deflate için birim sayısını içeren nesne `CRect`.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` her iki tarafındaki deflate için birim sayısını içeren nesne `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1012,7 +1012,7 @@ void operator&=(const RECT& rect) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-İçeren bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
+İçeren bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1036,7 +1036,7 @@ void operator|=(const RECT& rect) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-İçeren bir `CRect` veya [RECT](../../mfc/reference/rect-structure.md).
+İçeren bir `CRect` veya [RECT](/windows/desktop/api/windef/ns-windef-tagrect).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1069,13 +1069,13 @@ CRect operator+(SIZE size) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.
+A [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](cpoint-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](csize-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` döndürülen değer her iki tarafındaki doldurmak için birim sayısını içeren nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` döndürülen değer her iki tarafındaki doldurmak için birim sayısını içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1112,13 +1112,13 @@ CRect operator-(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-A [noktası](../../mfc/reference/point-structure.md) yapısı veya `CPoint` dönüş değeri taşımak için birim sayısını belirten bir nesne.
+A [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` dönüş değeri taşımak için birim sayısını belirten bir nesne.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya `CSize` dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` döndürülen değer her iki tarafındaki deflate için birim sayısını içeren nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` döndürülen değer her iki tarafındaki deflate için birim sayısını içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1153,7 +1153,7 @@ CRect operator&(const RECT& rect2) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *rect2*<br/>
-İçeren bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
+İçeren bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1190,7 +1190,7 @@ rect2) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *rect2*<br/>
-İçeren bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
+İçeren bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1226,7 +1226,7 @@ BOOL PtInRect(POINT point) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) nesne.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](cpoint-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1353,7 +1353,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpRectSrc1*<br/>
-İşaret [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` içinden bir dikdörtgen çıkarılsın için nesne.
+İşaret [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya `CRect` içinden bir dikdörtgen çıkarılsın için nesne.
 
 *lpRectSrc2*<br/>
 İşaret `RECT` yapısı veya `CRect` dikdörtgenden çıkarılsın için nesne tarafından işaret edilen *lpRectSrc1* parametresi.
@@ -1441,7 +1441,7 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpRect1*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect` kaynak dikdörtgenin içeren.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect` kaynak dikdörtgenin içeren.
 
 *lpRect2*<br/>
 İşaret eden bir `RECT` veya `CRect` kaynak dikdörtgenin içeren.
@@ -1503,5 +1503,5 @@ Genişliği negatif olabilir.
 
 [CPoint Sınıfı](cpoint-class.md)<br/>
 [CSize Sınıfı](csize-class.md)<br/>
-[RECT](../../mfc/reference/rect-structure.md)
+[RECT](/windows/desktop/api/windef/ns-windef-tagrect)
 

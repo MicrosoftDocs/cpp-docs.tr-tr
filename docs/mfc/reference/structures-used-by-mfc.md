@@ -1,50 +1,50 @@
 ---
 title: MFC Tarafından Kullanılan Yapılar
-ms.date: 11/04/2016
+ms.date: 12/03/2018
 f1_keywords:
 - vc.mfc.structures
 helpviewer_keywords:
 - structures
 - structures, MFC
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-ms.openlocfilehash: 06735e4bf8967a95c2f14c0187a653cfda8a15fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b691741338b1fe9ec8296b95ee67f031028d5e3
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475575"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178115"
 ---
 # <a name="structures-used-by-mfc"></a>MFC Tarafından Kullanılan Yapılar
 
 Aşağıdaki tabloda, çeşitli üye işlevleri çağrılan yapıları listeler. Tek tek yapı kullanımı hakkında daha fazla bilgi için her yapı için Ayrıca bkz: listesinde belirtilen üye işlevleri ve sınıfları bakın.
 
-|[ABC Yapısı](../../mfc/reference/abc-structure.md)|[HSE_VERSION_INFO Yapısı](../../mfc/reference/hse-version-info-structure.md)|
-|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|[ABCFLOAT yapısı](../../mfc/reference/abcfloat-structure.md)|[LINGER Yapısı](../../mfc/reference/linger-structure.md)|
-|[AFX_EXTENSION_MODULE Yapısı](../../mfc/reference/afx-extension-module-structure.md)|[LOGBRUSH Yapısı](../../mfc/reference/logbrush-structure.md)|
-|[BITMAP Yapısı](../../mfc/reference/bitmap-structure.md)|[LOGPEN Yapısı](../../mfc/reference/logpen-structure.md)|
-|[BITMAPINFO Yapısı](../../mfc/reference/bitmapinfo-structure.md)|[MEASUREITEMSTRUCT Yapısı](../../mfc/reference/measureitemstruct-structure.md)|
-|[CDaoDatabaseInfo Yapısı](../../mfc/reference/cdaodatabaseinfo-structure.md)|[MINMAXINFO Yapısı](../../mfc/reference/minmaxinfo-structure.md)|
-|[CDaoErrorInfo Yapısı](../../mfc/reference/cdaoerrorinfo-structure.md)|[MSG yapısı](../../mfc/reference/msg-structure1.md)|
-|[CDaoFieldInfo Yapısı](../../mfc/reference/cdaofieldinfo-structure.md)|[NCCALCSIZE_PARAMS Yapısı](../../mfc/reference/nccalcsize-params-structure.md)|
-|[CDaoIndexFieldInfo Yapısı](../../mfc/reference/cdaoindexfieldinfo-structure.md)|[PAINTSTRUCT Yapısı](../../mfc/reference/paintstruct-structure.md)|
-|[CDaoIndexInfo Yapısı](../../mfc/reference/cdaoindexinfo-structure.md)|[POINT yapısı](../../mfc/reference/point-structure1.md)|
-|[CDaoParameterInfo Yapısı](../../mfc/reference/cdaoparameterinfo-structure.md)|[RECT yapısı](../../mfc/reference/rect-structure1.md)|
-|[CDaoQueryDefInfo Yapısı](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Yapısı](../../mfc/reference/rgndata-structure.md)|
-|[CDaoRelationFieldInfo Yapısı](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Yapısı](../../mfc/reference/sockaddr-structure.md)|
-|[CDaoRelationInfo Yapısı](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Yapısı](../../mfc/reference/sockaddr-in-structure.md)|
-|[CDaoTableDefInfo Yapısı](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME yapısı](systemtime-structure1.md)
-|[CDaoWorkspaceInfo Yapısı](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Yapısı](../../mfc/reference/windowplacement-structure.md)|
-|[CODBCFieldInfo Yapısı](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS yapısı](../../mfc/reference/windowpos-structure1.md)
-|[COLORADJUSTMENT Yapısı](../../mfc/reference/coloradjustment-structure.md)|[WSADATA Yapısı](../../mfc/reference/wsadata-structure.md)|
-|[COMPAREITEMSTRUCT Yapısı](../../mfc/reference/compareitemstruct-structure.md)|[XFORM Yapısı](../../mfc/reference/xform-structure.md)|
-|[CREATESTRUCT Yapısı](../../mfc/reference/createstruct-structure.md)||
-|[DELETEITEMSTRUCT Yapısı](../../mfc/reference/deleteitemstruct-structure.md)||
-|[DEVNAMES Yapısı](../../mfc/reference/devnames-structure.md)||
+|||
+|-|-|
+|[ABC Yapısı](/windows/desktop/api/wingdi/ns-wingdi-_abc)|[HSE_VERSION_INFO Yapısı](../../mfc/reference/hse-version-info-structure.md)|
+|[ABCFLOAT yapısı](/windows/desktop/api/wingdi/ns-wingdi-_abcfloat)|[LINGER Yapısı](/windows/desktop/api/winsock/ns-winsock-linger)|
+|[AFX_EXTENSION_MODULE Yapısı](../../mfc/reference/afx-extension-module-structure.md)|[LOGBRUSH Yapısı](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
+|[BITMAP Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|[LOGPEN Yapısı](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
+|[BITMAPINFO Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo)|[MEASUREITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct)|
+|[CDaoDatabaseInfo Yapısı](../../mfc/reference/cdaodatabaseinfo-structure.md)|[MINMAXINFO Yapısı](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo)|
+|[CDaoErrorInfo Yapısı](../../mfc/reference/cdaoerrorinfo-structure.md)|[MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg)|
+|[CDaoFieldInfo Yapısı](../../mfc/reference/cdaofieldinfo-structure.md)|[NCCALCSIZE_PARAMS Yapısı](/windows/desktop/api/winuser/ns-winuser-tagnccalcsize_params)|
+|[CDaoIndexFieldInfo Yapısı](../../mfc/reference/cdaoindexfieldinfo-structure.md)|[PAINTSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct)|
+|[CDaoIndexInfo Yapısı](../../mfc/reference/cdaoindexinfo-structure.md)|[POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint)|
+|[CDaoParameterInfo Yapısı](../../mfc/reference/cdaoparameterinfo-structure.md)|[RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect)|
+|[CDaoQueryDefInfo Yapısı](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Yapısı](/windows/desktop/api/wingdi/ns-wingdi-_rgndata)|
+|[CDaoRelationFieldInfo Yapısı](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Yapısı](/windows/desktop/winsock/sockaddr-2)|
+|[CDaoRelationInfo Yapısı](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Yapısı](/windows/desktop/winsock/sockaddr-2)|
+|[CDaoTableDefInfo Yapısı](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME yapısı](https://msdn.microsoft.com/library/windows/desktop/ms724950)
+|[CDaoWorkspaceInfo Yapısı](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement)|
+|[CODBCFieldInfo Yapısı](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS yapısı](/windows/desktop/api/winuser/ns-winuser-tagwindowpos)
+|[COLORADJUSTMENT Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment)|[WSADATA Yapısı](/windows/desktop/api/winsock2/ns-winsock2-wsadata)|
+|[COMPAREITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct)|[XFORM Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagxform)|
+|[CREATESTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa)||
+|[DELETEITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct)||
+|[DEVNAMES Yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames)||
 |[DHtmlUrlEventMapEntry Yapısı](../../mfc/reference/dhtmlurleventmapentry-structure.md)||
-|[DRAWITEMSTRUCT Yapısı](../../mfc/reference/drawitemstruct-structure.md)||
-|**EXTENSION_CONTROL_BLOCK yapısı**||
-|[FILETIME Yapısı](../../mfc/reference/filetime-structure.md)
+|[DRAWITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct)||
+|[FILETIME Yapısı](https://msdn.microsoft.com/library/windows/desktop/ms724284)||
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

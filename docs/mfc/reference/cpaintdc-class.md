@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CPaintDC [MFC], m_ps
 - CPaintDC [MFC], m_hWnd
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-ms.openlocfilehash: 991ea39ccf03cd4f2921a759d3278576c7a1fd92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4e6ded945bac15b6584eadc21d8648f1a0f9ab3
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525757"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178336"
 ---
 # <a name="cpaintdc-class"></a>CPaintDC sınıfı
 
@@ -41,7 +41,7 @@ class CPaintDC : public CDC
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPaintDC::m_ps](#m_ps)|İçeren [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) istemci alanını boyamak için kullanılan.|
+|[CPaintDC::m_ps](#m_ps)|İçeren [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) istemci alanını boyamak için kullanılan.|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
@@ -71,7 +71,7 @@ Kullanma hakkında daha fazla bilgi için `CPaintDC`, bkz: [cihaz bağlamları](
 
 ##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC
 
-Oluşturur bir `CPaintDC` nesne, uygulama penceresinin boyama için hazırlar ve depolar [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) içindeki yapı [m_ps](#m_ps) üye değişkeni.
+Oluşturur bir `CPaintDC` nesne, uygulama penceresinin boyama için hazırlar ve depolar [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) içindeki yapı [m_ps](#m_ps) üye değişkeni.
 
 ```
 explicit CPaintDC(CWnd* pWnd);
@@ -108,7 +108,7 @@ HWND m_hWnd;
 
 ##  <a name="m_ps"></a>  CPaintDC::m_ps
 
-`m_ps` bir tür ortak üye değişkendir [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).
+`m_ps` bir tür ortak üye değişkendir [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct).
 
 ```
 PAINTSTRUCT m_ps;

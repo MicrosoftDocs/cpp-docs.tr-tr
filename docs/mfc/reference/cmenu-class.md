@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: bcaf24c14938bcf56eb083ad2dd79e4c245c7c84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2834de457ce9e2a71537e706f0fdf84463b16a8d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613687"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178934"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 
@@ -322,7 +322,7 @@ Menü öğesi denetleyin ve menüsünde öğenin konumunu belirlemek belirtir. *
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğesinin önceki durumunu: MF_CHECKED veya MF_UNCHECKED, ya da menü öğesi mevcut değilse 0xFFFFFFFF.
+Öğesinin önceki durumu: MF_CHECKED veya MF_UNCHECKED ya da menü öğesi mevcut değilse 0xFFFFFFFF.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -551,7 +551,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) gerekli çizim türü hakkında bilgi içeren yapısı.
+Bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerekli çizim türü hakkında bilgi içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

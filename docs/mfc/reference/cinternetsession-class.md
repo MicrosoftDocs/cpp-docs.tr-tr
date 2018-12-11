@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: 3b820ea3687fd52947eff48e4814ab4173fd95c7
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 216f3bf0ce62eb6e69ad0650289c4c2d91f95159
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519299"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178167"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
@@ -101,7 +101,7 @@ Bir URL kullanarak bir Internet sunucusu üzerinde açarsanız `OpenURL`, site v
 Temel Internet programlama görevleri hakkında daha fazla bilgi için bkz [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md). MFC WinINet sınıfları kullanarak hakkında genel bilgi için bkz [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).
 
 > [!NOTE]
-> `CInternetSession` oluşturur bir [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) desteklenmeyen hizmet türleri için. Yalnızca şu hizmet türleri şu anda desteklenen: FTP, HTTP, gopher ve dosya.
+> `CInternetSession` oluşturur bir [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) desteklenmeyen hizmet türleri için. Şu anda, yalnızca şu hizmet türleri desteklenir: FTP, HTTP, gopher ve dosya.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -152,7 +152,7 @@ Tercih edilen CERN proxy adını, *dwAccessType* INTERNET_OPEN_TYPE_PROXY ayarla
 İsteğe bağlı bir sunucu adresleri listesi içeren bir dize işaretçisi. Proxy erişimi kullanırken bu adresleri atlanmasına. Bir NULL değer sağlanmazsa, atlama listesi kayıt defterinden okunacak. Bu parametre anlamlı yalnızca *dwAccessType* INTERNET_OPEN_TYPE_PROXY için ayarlanır.
 
 *CertOpenStore*<br/>
-Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şunlardır:
+Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şöyledir:
 
 - INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
 
@@ -457,7 +457,7 @@ Boyutu *lpvStatusInformation*.
 |-----------|-------------|
 |INTERNET_STATUS_RESOLVING_NAME|IP adresi yer alan adının bakarak *lpvStatusInformation*.|
 |INTERNET_STATUS_NAME_RESOLVED|Yer alan adı, IP adresi başarıyla bulundu *lpvStatusInformation*.|
-|INTERNET_STATUS_CONNECTING_TO_SERVER|Yuva adresine bağlanan ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) işaret ettiği *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|Yuva adresine bağlanan ([SOCKADDR](/windows/desktop/winsock/sockaddr-2)) işaret ettiği *lpvStatusInformation*.|
 |INTERNET_STATUS_CONNECTED_TO_SERVER|İşaret ettiği yuva adresine (SOCKADDR) başarıyla bağlandı *lpvStatusInformation*.|
 |INTERNET_STATUS_SENDING_REQUEST|Bilgi isteği sunucuya gönderiliyor. *LpvStatusInformation* parametredir NULL.|
 |INTERNET_STATUS_ REQUEST_SENT|Sunucuya bilgi isteği gönderildi. *LpvStatusInformation* parametredir NULL.|
@@ -612,7 +612,7 @@ Uzunluğunu *lpBuffer* veya boyutunu *dwValue*.
 Seçenek ayarları içeren bir DWORD.
 
 *CertOpenStore*<br/>
-Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şunlardır:
+Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şöyledir:
 
 - INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
 

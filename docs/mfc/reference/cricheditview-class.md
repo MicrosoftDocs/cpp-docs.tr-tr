@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: 2eebfe18275aa63ac26c0c898a5d796300860db8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8cfaef2c8b064cb9faa8c0f6bf65a8868eed7cc7
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476640"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178746"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
 
@@ -787,7 +787,7 @@ virtual void OnFindNext(
 Bulunacak dize.
 
 *bİleri*<br/>
-Arama yönünü: TRUE gösterir; aşağı YANLIŞ çalışır.
+Arama yönü: TRUE, aşağı gösterir; YANLIŞ çalışır.
 
 *bCase*<br/>
 Arama büyük/küçük harfe duyarlı olup olmadığını gösterir.
@@ -933,7 +933,7 @@ virtual void OnReplaceSel(
 Değiştirilecek metin.
 
 *bİleri*<br/>
-Arama yönünü belirtir: TRUE şeklindedir; aşağı YANLIŞ çalışır.
+Arama yönünü gösterir: Aşağı True'dur; YANLIŞ çalışır.
 
 *bCase*<br/>
 Arama büyük/küçük harfe duyarlı olup olmadığını gösterir.
@@ -1050,7 +1050,7 @@ long PrintInsideRect(
 Çıkış alanı için bir cihaz bağlamı işaretçisi.
 
 *rectLayout*<br/>
-[RECT](../../mfc/reference/rect-structure1.md) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) çıkış alanı tanımlar.
+[RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) çıkış alanı tanımlar.
 
 *nIndexStart*<br/>
 Biçimlendirilecek ilk karakter sıfır tabanlı dizini.

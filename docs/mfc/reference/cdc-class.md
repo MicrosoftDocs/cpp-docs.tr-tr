@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 06c68d02433ce53c2b27167a985fc5854ca49700
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 0c8944846e249e4f752183b057bf8d2857022ab5
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176922"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179064"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -913,7 +913,7 @@ Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının y k
 Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da LPRECT geçirebilir veya [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için nesne.
 
 *ptStart*<br/>
-X ve y-koordinatları Yayı tanımlayan noktasının noktasında (mantıksal birimler cinsinden) başlıyor belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
+X ve y-koordinatları Yayı tanımlayan noktasının noktasında (mantıksal birimler cinsinden) başlıyor belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
 
 *ptEnd*<br/>
 X ve y-koordinatları noktasının tanımlayan yayın bitiş noktasında (mantıksal birimler cinsinden) belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir `POINT` yapısı veya `CPoint` Bu parametre için bir nesne.
@@ -980,10 +980,10 @@ Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının x k
 Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının y koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
 *lpRect*<br/>
-Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da bir işaretçiye geçirebilirsiniz bir [RECT](../../mfc/reference/rect-structure1.md) veri yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
+Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da bir işaretçiye geçirebilirsiniz bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veri yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
 
 *ptStart*<br/>
-X ve y-koordinatları Yayı tanımlayan noktasının noktasında (mantıksal birimler cinsinden) başlıyor belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir [noktası](../../mfc/reference/point-structure1.md) veri yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
+X ve y-koordinatları Yayı tanımlayan noktasının noktasında (mantıksal birimler cinsinden) başlıyor belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
 
 *ptEnd*<br/>
 X ve y-koordinatları noktasının tanımlayan yayın bitiş noktasında (mantıksal birimler cinsinden) belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir `POINT` veri yapısı veya `CPoint` Bu parametre için bir nesne.
@@ -1169,7 +1169,7 @@ Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya d
 X ve y-koordinatları Tel tanımlayan noktasının noktasında (mantıksal birimler cinsinden) başlıyor belirtir. Tel üzerinde tam olarak kullanmak bu noktası yok. Geçirebilirsiniz bir `POINT` yapısı veya `CPoint` Bu parametre için bir nesne.
 
 *ptEnd*<br/>
-X ve y-koordinatları Tel'ın bitiş noktasında (mantıksal birimler cinsinden) tanımlayan noktasının belirtir. Tel üzerinde tam olarak kullanmak bu noktası yok. Geçirebilirsiniz bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
+X ve y-koordinatları Tel'ın bitiş noktasında (mantıksal birimler cinsinden) tanımlayan noktasının belirtir. Tel üzerinde tam olarak kullanmak bu noktası yok. Geçirebilirsiniz bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1361,7 +1361,7 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İşaret eden bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1383,16 +1383,16 @@ void DPtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-İşaret dizilerine [noktası](../../mfc/reference/point-structure1.md) yapıları veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesneleri.
+İşaret dizilerine [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapıları veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesneleri.
 
 *nCount*<br/>
 Dizi noktaları sayısı.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne. Bu parametre, basit bir durumda bir dikdörtgen cihaz noktalarından mantıksal noktalarına dönüştürme için kullanılır.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne. Bu parametre, basit bir durumda bir dikdörtgen cihaz noktalarından mantıksal noktalarına dönüştürme için kullanılır.
 
 *lpSize*<br/>
-İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İşaret eden bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1420,7 +1420,7 @@ void Draw3dRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da bir işaretçiye geçirebilirsiniz bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
+Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da bir işaretçiye geçirebilirsiniz bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
 
 *clrTopLeft*<br/>
 Üç boyutlu dikdörtgenin üst ve sol tarafının rengini belirtir.
@@ -1465,13 +1465,13 @@ void DrawDragRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini bir dikdörtgen mantıksal koordinatlarını belirtir; bu durumda, yeniden düzenlenmiş dikdörtgenin bitiş konumu.
+İşaret bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini bir dikdörtgen mantıksal koordinatlarını belirtir; bu durumda, yeniden düzenlenmiş dikdörtgenin bitiş konumu.
 
 *Boyutu*<br/>
 Sol üst köşedeki iç kenarlığın (diğer bir deyişle, kenarlığın kalınlığı) bir dikdörtgenin sol üst köşedeki için öteleme dış kenarlığın belirtir.
 
 *lpRectLast*<br/>
-İşaret bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) mantıksal koordinatlarını bir dikdörtgen konumu belirten nesne — bu durumda, özgün yeniden düzenlenmiş dikdörtgeni konumu.
+İşaret bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) mantıksal koordinatlarını bir dikdörtgen konumu belirten nesne — bu durumda, özgün yeniden düzenlenmiş dikdörtgeni konumu.
 
 *sizeLast*<br/>
 Sol üst köşedeki iç kenarlığın (diğer bir deyişle, kenarlığın kalınlığı) yeniden düzenlenmiş özgün dikdörtgenin sol üst köşedeki için öteleme dış kenarlığın belirtir.
@@ -1555,7 +1555,7 @@ void DrawFocusRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini çizilecek dikdörtgen mantıksal koordinatlarını belirtir.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini çizilecek dikdörtgen mantıksal koordinatlarını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1675,7 +1675,7 @@ Mantıksal y koordinatını simgenin sol üst köşesini belirtir.
 Çizilecek simgesi tanıtıcısını tanımlar.
 
 *Noktası*<br/>
-Mantıksal x ve y-koordinatlarını simgenin sol üst köşesini belirtir. Geçirebilirsiniz bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
+Mantıksal x ve y-koordinatlarını simgenin sol üst köşesini belirtir. Geçirebilirsiniz bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1833,7 +1833,7 @@ int DrawText(
 Dizedeki karakter sayısını belirtir. Varsa *nCount* -1 ise *lpszString* uzun null ile sonlandırılmış bir dize işaretçisi olarak kabul edilir ve `DrawText` karakter sayısı otomatik olarak hesaplar.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metin olduğu Biçimlendirilecek dikdörtgende (mantıksal koordinatları) içeren nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metin olduğu Biçimlendirilecek dikdörtgende (mantıksal koordinatları) içeren nesne.
 
 *str*<br/>
 A [CString](../../atl-mfc-shared/reference/cstringt-class.md) çizilecek belirtilen karakterleri içeren nesne.
@@ -1890,7 +1890,7 @@ int DrawTextEx(
 Dizedeki karakter sayısını belirtir. Varsa *nCount* -1 ise *lpszString* uzun null ile sonlandırılmış bir dize işaretçisi olarak kabul edilir ve `DrawText` karakter sayısı otomatik olarak hesaplar.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metin olduğu Biçimlendirilecek dikdörtgende (mantıksal koordinatları) içeren nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metin olduğu Biçimlendirilecek dikdörtgende (mantıksal koordinatları) içeren nesne.
 
 *str*<br/>
 A [CString](../../atl-mfc-shared/reference/cstringt-class.md) çizilecek belirtilen karakterleri içeren nesne.
@@ -2301,7 +2301,7 @@ Dikdörtgen türünü belirtir. Bu parametre bir, her ikisi de veya aşağıdaki
 - ETO_OPAQUE belirtir, geçerli arka plan, renk dikdörtgeni doldurur. (Belirleyebilir ve arka plan rengiyle sorgu [SetBkColor](#setbkcolor) ve [GetBkColor](#getbkcolor) üye işlevleri.)
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) dikdörtgenin boyutlarına belirleyen yapısı. Bu parametre NULL olabilir. De geçirebilirsiniz bir [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) dikdörtgenin boyutlarına belirleyen yapısı. Bu parametre NULL olabilir. De geçirebilirsiniz bir [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
 
 *lpszString*<br/>
 Çizilecek belirtilen karakter dizesine işaret eder. De geçirebilirsiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) Bu parametre için bir nesne.
@@ -2354,7 +2354,7 @@ void FillRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) doldurulacak dikdörtgenin mantıksal koordinatları içeren yapısı. De geçirebilirsiniz bir [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) doldurulacak dikdörtgenin mantıksal koordinatları içeren yapısı. De geçirebilirsiniz bir [CRect](../../atl-mfc-shared/reference/crect-class.md) Bu parametre için bir nesne.
 
 *pBrush*<br/>
 Dikdörtgen doldurmak için kullanılan fırçayı tanımlar.
@@ -2419,7 +2419,7 @@ void FillSolidRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da bir işaretçiye geçirebilirsiniz bir [RECT](../../mfc/reference/rect-structure1.md) veri yapısı veya `CRect` Bu parametre için bir nesne.
+Sınırlayıcı dikdörtgende (mantıksal birimler cinsinden) belirtir. Bir ya da bir işaretçiye geçirebilirsiniz bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veri yapısı veya `CRect` Bu parametre için bir nesne.
 
 *CLR* dikdörtgen doldurmak için kullanılacak rengi belirtir.
 
@@ -2501,7 +2501,7 @@ void FrameRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) dikdörtgenin sol ve sağ alt köşe mantıksal koordinatları içeren nesne. De geçirebilirsiniz bir `CRect` Bu parametre için bir nesne.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) dikdörtgenin sol ve sağ alt köşe mantıksal koordinatları içeren nesne. De geçirebilirsiniz bir `CRect` Bu parametre için bir nesne.
 
 *pBrush*<br/>
 Dikdörtgen çerçeveleme için kullanılan fırçayı tanımlar.
@@ -2767,10 +2767,10 @@ Karakter genişliği döndürülen geçerli yazı tipi karakterlerinden aralıkt
 Karakter genişliği döndürülen geçerli yazı tipindeki karakter aralığındaki son karakter belirtir.
 
 *lpabc*<br/>
-İşaret dizilerine [ABC](../../mfc/reference/abc-structure.md) karakter genişliği işlevi döndüğünde aldığınız yapılar. Bu dizi en az sayıda olarak içermelidir `ABC` yapıları tarafından belirtilen bir aralıktaki karakterler bulunduğundan *nFirstChar* ve *nLastChar* parametreleri.
+İşaret dizilerine [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) karakter genişliği işlevi döndüğünde aldığınız yapılar. Bu dizi en az sayıda olarak içermelidir `ABC` yapıları tarafından belirtilen bir aralıktaki karakterler bulunduğundan *nFirstChar* ve *nLastChar* parametreleri.
 
 *lpABCF*<br/>
-Bir uygulama tarafından sağlanan bir arabellek işaret [ABCFLOAT](../../mfc/reference/abcfloat-structure.md) işlevi döndüğünde karakter genişliği almak için yapılar. Bu işlev tarafından döndürülen genişlikleri IEEE kayan nokta biçimindedir.
+Bir uygulama tarafından sağlanan bir arabellek işaret [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-_abcfloat) işlevi döndüğünde karakter genişliği almak için yapılar. Bu işlev tarafından döndürülen genişlikleri IEEE kayan nokta biçimindedir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2911,7 +2911,7 @@ virtual int GetClipBox(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) dikdörtgen boyutları alacak olan nesne.
+İşaret [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) dikdörtgen boyutları alacak olan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2940,7 +2940,7 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpColorAdjust*<br/>
-İşaret eden bir [COLORADJUSTMENT](../../mfc/reference/coloradjustment-structure.md) renk ayarlama değerlerini almak için veri yapısı.
+İşaret eden bir [COLORADJUSTMENT](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) renk ayarlama değerlerini almak için veri yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3513,7 +3513,7 @@ int GetPath(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-İşaret dizilerine [noktası](../../mfc/reference/point-structure1.md) veri yapıları veya `CPoint` nesneler burada satır uç noktaları ve eğrisi denetim noktası yerleştirilir.
+İşaret dizilerine [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapıları veya `CPoint` nesneler burada satır uç noktaları ve eğrisi denetim noktası yerleştirilir.
 
 *lpTypes*<br/>
 Köşe türleri yerleştirildiği bir bayt dizisi işaret. Aşağıdakilerden birini değerler şunlardır:
@@ -3531,7 +3531,7 @@ PT_BEZIERTO türleri, her zaman üç kümelerinde oluşur. Hemen önceki yol nok
 - PT_CLOSEFIGURE şekil karşılık gelen satırın sonunda otomatik olarak kapatılır veya çizilen eğri belirtir. Şekil çizgi veya eğri uç noktasından bir satır son PT_MOVETO karşılık gelen noktasına çizerek kapalı.
 
 *nCount*<br/>
-Toplam sayısını belirten [noktası](../../mfc/reference/point-structure1.md) içinde yerleştirilebilir veri yapılarını *lpPoints* dizisi. Bu değer, yerleştirilebilir bayt sayısı ile aynı olmalıdır *lpTypes* dizisi.
+Toplam sayısını belirten [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) içinde yerleştirilebilir veri yapılarını *lpPoints* dizisi. Bu değer, yerleştirilebilir bayt sayısı ile aynı olmalıdır *lpTypes* dizisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3578,7 +3578,7 @@ Noktası kırpma bölgede olması gerekir. Noktası kırpma bölgesinde değilse
 
 Tüm cihazları desteklemek `GetPixel` işlevi. Daha fazla bilgi için bkz: RC_BITBLT tarama özelliği altında [GetDeviceCaps](#getdevicecaps) üye işlevi.
 
-`GetPixel` Üye işlevi, iki tür vardır. İlk iki koordinat değerlerini alır; İkinci ya da gereken bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+`GetPixel` Üye işlevi, iki tür vardır. İlk iki koordinat değerlerini alır; İkinci ya da gereken bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 ##  <a name="getpolyfillmode"></a>  CDC::GetPolyFillMode
 
@@ -3841,7 +3841,7 @@ Alan sayısı tarafından belirtilen alana sığacak karakter sayısı bir tamsa
 Kısmi glif kapsam alan tamsayı dizisi için bir işaretçi. Dizideki her öğe tarafından belirtilen alana sığacak karakter biri simge dizinleri dizinin başlangıcının arasındaki mantıksal birimler cinsinden uzaklık verir *nMaxExtent*. Bu dizi tarafından belirtilen simge dizinleri olarak en az sayıda öğeleri gerekmese *CGI*, işlev dizi tarafından belirtildiği gibi yalnızca çok simge dizinleri kapsamları ile doldurur *lpnFit*. Varsa *lpnDx* NULL ise işlev kısmi dize genişlikleri işlem yok.
 
 *lpSize*<br/>
-İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) dizinin boyut sayısını simge dizinleri, mantıksal biriminde alan yapısı. Bu değer NULL olamaz.
+İşaretçi bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) dizinin boyut sayısını simge dizinleri, mantıksal biriminde alan yapısı. Bu değer NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3871,7 +3871,7 @@ Glif dizinler kapsam alınacak olan bir dizi için bir işaretçi.
 İşaret ettiği bir dizi karakter sayısını belirtir *pgiIn*.
 
 *lpSize*<br/>
-İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) dizinin boyut sayısını simge dizinleri, mantıksal biriminde alan yapısı. Bu değer NULL olamaz.
+İşaretçi bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) dizinin boyut sayısını simge dizinleri, mantıksal biriminde alan yapısı. Bu değer NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4130,7 +4130,7 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İşaret eden bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4147,7 +4147,7 @@ void HIMETRICtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İşaret eden bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4309,16 +4309,16 @@ void LPtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-Bir dizi noktalarını noktası. Dizideki her nokta bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+Bir dizi noktalarını noktası. Dizideki her nokta bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 *nCount*<br/>
 Dizi noktaları sayısı.
 
 *lpRect*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne. Bu parametre bir dikdörtgenden mantıksal cihaz birimlerine eşleme yaygın örneği için kullanılır.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne. Bu parametre bir dikdörtgenden mantıksal cihaz birimlerine eşleme yaygın örneği için kullanılır.
 
 *lpSize*<br/>
-İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İşaret eden bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4713,7 +4713,7 @@ Yayın uç noktası (mantıksal birimler cinsinden) y koordinatını belirtir. B
 Sınırlayıcı dikdörtgeni belirtir. Geçirebilirsiniz bir `CRect` nesne veya işaretçi bir `RECT` yapısı bu parametre için.
 
 *ptStart*<br/>
-Yayı başlangıç noktasını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
+Yayı başlangıç noktasını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
 
 *ptEnd*<br/>
 Yayı uç noktasını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok. Geçirebilirsiniz bir `POINT` yapısı veya `CPoint` Bu parametre için bir nesne.
@@ -4850,7 +4850,7 @@ BOOL PolyBezier(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-İşaret dizilerine [noktası](../../mfc/reference/point-structure1.md) uç noktaları içeren ve kontrol noktaları spline(s) veri yapıları.
+İşaret dizilerine [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) uç noktaları içeren ve kontrol noktaları spline(s) veri yapıları.
 
 *nCount*<br/>
 Noktaları sayısını belirten *lpPoints* dizisi. Bu değer, çizilecek eğrileri sayısı üç kereden fazla olmalıdır, iki denetim noktalarını ve uç nokta ve ilk eğri her Bzier eğri gerektirdiği için ek bir başlangıç noktası gerektirir.
@@ -4878,7 +4878,7 @@ BOOL PolyBezierTo(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-İşaret dizilerine [noktası](../../mfc/reference/point-structure1.md) uç noktaları ve denetimi içeren veri yapılarını işaret eder.
+İşaret dizilerine [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) uç noktaları ve denetimi içeren veri yapılarını işaret eder.
 
 *nCount*<br/>
 Noktaları sayısını belirten *lpPoints* dizisi. Bu değer, her Bzier eğri iki denetim noktalarını ve uç noktasına gerektirdiğinden çizilecek, eğrileri sayısı üç kez olması gerekir.
@@ -4909,7 +4909,7 @@ BOOL PolyDraw(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-İşaret dizilerine [noktası](../../mfc/reference/point-structure1.md) her biri için uç noktalarını içeren veri yapılarını satır segment ve uç noktaları ve kontrol noktaları her Bzier eğri için.
+İşaret dizilerine [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) her biri için uç noktalarını içeren veri yapılarını satır segment ve uç noktaları ve kontrol noktaları her Bzier eğri için.
 
 *lpTypes*<br/>
 Her nokta nasıl belirten bir dizi işaret *lpPoints* dizi kullanılır. Değer aşağıdakilerden biri olabilir:
@@ -5016,7 +5016,7 @@ BOOL PolylineTo(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-İşaret dizilerine [noktası](../../mfc/reference/point-structure1.md) satırının köşeler içeren veri yapıları.
+İşaret dizilerine [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) satırının köşeler içeren veri yapıları.
 
 *nCount*<br/>
 Dizide noktalarının sayısını belirtir.
@@ -5932,7 +5932,7 @@ BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
 ### <a name="parameters"></a>Parametreler
 
 *lpColorAdjust*<br/>
-İşaret eden bir [COLORADJUSTMENT](../../mfc/reference/coloradjustment-structure.md) rengi ayarlama değerleri içeren veri yapısı.
+İşaret eden bir [COLORADJUSTMENT](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) rengi ayarlama değerleri içeren veri yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6219,7 +6219,7 @@ Ayarlanacak noktasının mantıksal birimler cinsinden y koordinatını belirtir
 Boyama noktası için kullanılacak rengi belirtir.
 
 *Noktası*<br/>
-Mantıksal x ve y-koordinatları ayarlanacak noktasının belirtir. Geçirebilirsiniz bir [noktası](../../mfc/reference/point-structure1.md) veri yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
+Mantıksal x ve y-koordinatları ayarlanacak noktasının belirtir. Geçirebilirsiniz bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) Bu parametre için bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6330,7 +6330,7 @@ Uzatma modunu belirtir. Aşağıdaki değerlerden biri olabilir:
 ||Uzatma modunu noktalı ayarladıktan sonra uygulamanın Win32 işlevini çağırmanız gerekir [SetBrushOrgEx](/windows/desktop/api/wingdi/nf-wingdi-setbrushorgex) fırça kaynağı ayarlanamadı. Bunu yapmak başarısız olursa, fırça hizalanmama gerçekleşir.|
 |STRETCH_ANDSCANS|**Windows 95/98**: BLACKONWHITE aynı|
 |STRETCH_DELETESCANS|**Windows 95/98**: COLORONCOLOR aynı|
-|STRETCH_HALFTONE|**Windows 95/98**: noktalı aynıdır.|
+|STRETCH_HALFTONE|**Windows 95/98**: NOKTALI ile aynıdır.|
 |STRETCH_ORSCANS|**Windows 95/98**: WHITEONBLACK aynı|
 |WHITEONBLACK|İçin elenen ve mevcut piksel renk değerleri kullanarak bir Boole değeri veya işlemi gerçekleştirir. Bu mod, tek renkli bir bit eşlem bit eşlem ise çoğaltamaz siyah pikselleri beyaz piksel korur.|
 

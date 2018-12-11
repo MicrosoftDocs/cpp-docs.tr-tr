@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-ms.openlocfilehash: b3bf93a876f9092d5615b75ca45fea71341d3557
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: b1e64e947f798becef32fa4d99f21e61133cc8fc
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327349"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53177842"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox sınıfı
 
@@ -146,7 +146,7 @@ virtual BOOL Create(
 Yapılacaklar listesi kutusu stilini belirtir. Stil lbs_hasstrıngs ve lbs_ownerdrawfıxed (listedeki tüm öğeleri aynı yükseklikte olan) veya lbs_ownerdrawvarıable olmalıdır (listedeki öğeleri, değişken uzunluklarının olabilir). Bu stil ile birleştirilebilir [liste kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) LBS_USETABSTOPS hariç.
 
 *Rect*<br/>
-Yapılacaklar listesi kutusu boyutunu ve konumunu belirtir. Olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.
+Yapılacaklar listesi kutusu boyutunu ve konumunu belirtir. Olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
 
 *pParentWnd*<br/>
 Denetim listesi kutunun üst penceresine belirtir (genellikle bir `CDialog` nesne). NULL olmamalıdır.
@@ -193,7 +193,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Uzun bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) gerekli çizim türü hakkında bilgi içeren yapısı.
+Uzun bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerekli çizim türü hakkında bilgi içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -290,7 +290,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpMeasureItemStruct*<br/>
-Uzun bir işaretçi bir [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) yapısı.
+Uzun bir işaretçi bir [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

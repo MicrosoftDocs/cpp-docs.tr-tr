@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: d311c064d9b91967a60823fc3fd0e43f22a119c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bcf815fce4123ca1014e1679fd810c1ce321be4
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500769"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178596"
 ---
 # <a name="cimagelist-class"></a>Cımagelist sınıfı
 
@@ -694,7 +694,7 @@ Hedef cihaz bağlamının bir işaretçi. Bu silmelisiniz [CDC](../../mfc/refere
 A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.
 
 *SZ*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) çizilecek görüntü boyutunu belirten yapısı.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) çizilecek görüntü boyutunu belirten yapısı.
 
 *ptOrigin*<br/>
 A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-belirtme görüntünün kendisi ile ilgili çizim işlemi sol üst köşesinin koordinatlarının içeren yapısı. Sol x koordinatını ve y koordinatını yukarıda olan piksel görüntünün çizilmiş değil.

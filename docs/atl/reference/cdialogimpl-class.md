@@ -17,12 +17,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: 04acfb9c653df85be8958d7248bafd93f3e0a30b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: b4844ed2246b5e700d9dc1895c3292cdde4efe8b
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693687"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178154"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 
@@ -263,7 +263,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir `CRect` nesne veya [RECT](../../mfc/reference/rect-structure.md) güncelleştirme bölgeyi kapsayan güncelleştirme istemci koordinatlarını almak için yapısı.
+İşaret eden bir `CRect` nesne veya [RECT](/windows/desktop/api/windef/ns-windef-tagrect) güncelleştirme bölgeyi kapsayan güncelleştirme istemci koordinatlarını almak için yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

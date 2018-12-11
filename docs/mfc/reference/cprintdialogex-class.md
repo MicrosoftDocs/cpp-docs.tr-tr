@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-ms.openlocfilehash: 79d696f89ca7474220559abbf5464f32b6e684c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb88cc39ddaffe51b80484bbe8460507a1d0aecb
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543331"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178453"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 
@@ -154,7 +154,7 @@ Bu üye işlevi yalnızca bir nesne oluşturur. Kullanım `DoModal` iletişim ku
 
 ##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
 
-Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.
+Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapıları.
 
 ```
 HDC CreatePrinterDC();
@@ -216,9 +216,9 @@ Başarılı, aksi takdirde FALSE ise TRUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.
+Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapıları.
 
-`GetDefaults` Print özellik sayfası görüntülenmez. Bunun yerine, ayarlar `hDevNames` ve `hDevMode` üyeleri [m_pdex](#m_pdex) tanıtıcıları için [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) için başlatılan yapıları Sistem varsayılan yazıcı. Her ikisi de `hDevNames` ve `hDevMode` NULL olmalı veya `GetDefaults` başarısız olur.
+`GetDefaults` Print özellik sayfası görüntülenmez. Bunun yerine, ayarlar `hDevNames` ve `hDevMode` üyeleri [m_pdex](#m_pdex) tanıtıcıları için [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) için başlatılan yapıları Sistem varsayılan yazıcı. Her ikisi de `hDevNames` ve `hDevMode` NULL olmalı veya `GetDefaults` başarısız olur.
 
 PD_RETURNDC bayrağı ayarlandıysa, bu işlev değil yalnızca döndürür `hDevNames` ve `hDevMode` (bulunan `m_pdex.hDevNames` ve `m_pdex.hDevMode`) çağırana, ancak ayrıca yazıcıya DC döndürür `m_pdex.hDC`. DC yazıcı silip Windows çağrı çağıranın sorumluluğundadır [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) işlevi ile işiniz bittiğinde tutamaçları üzerinde `CPrintDialogEx` nesne.
 

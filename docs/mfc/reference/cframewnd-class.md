@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 2294890ad18d88efaf4d5dd54cad319565a23e02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3259780d73004c9d1654c26434b55627923cfe23
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481451"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178798"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 
@@ -844,7 +844,7 @@ Aşağıdaki değerlerden birini içeren `enum BorderCmd`:
 - `borderSet` = 3
 
 *lpRectBorder*<br/>
-İşaretçi bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini kenarlık koordinatlarını belirtir.
+İşaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini kenarlık koordinatlarını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -902,7 +902,7 @@ virtual BOOL OnCreateClient(
 ### <a name="parameters"></a>Parametreler
 
 *lpcs*<br/>
-Bir Windows işaretçisi [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) yapısı.
+Bir Windows işaretçisi [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) yapısı.
 
 *pContext*<br/>
 Bir işaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısı.
@@ -1190,7 +1190,7 @@ void SetProgressBarState(TBPFLAG tbpFlags);
 ### <a name="parameters"></a>Parametreler
 
 *tbpFlags*<br/>
-İlerleme düğmesi geçerli durumunu denetleyen bayraklar. Tüm durumları birbirini dışlayan olduğundan bayraklar yalnızca aşağıdakilerden birini belirtin: TBPF_NOPROGRESS TBPF_INDETERMINATE, TBPF_NORMAL TBPF_ERROR, TBPF_PAUSED.
+İlerleme düğmesi geçerli durumunu denetleyen bayraklar. Tüm durumlar birbirini dışlayan olduğundan aşağıdaki bayraklar yalnızca birini belirtin: TBPF_NOPROGRESS, TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED.
 
 ### <a name="remarks"></a>Açıklamalar
 

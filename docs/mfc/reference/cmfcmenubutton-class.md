@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: b2f7b2e5a94329d0d5b0079aaae6eff98ac03911
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e29fd64540b52a8e6b70ee4d520b14a5a7d712b
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577988"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178323"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton sınıfı
 
@@ -176,7 +176,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-[in] İşaret eden bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için bir ileti içeren yapısı.
+[in] İşaret eden bir [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) işlemek için bir ileti içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

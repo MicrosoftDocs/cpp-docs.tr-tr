@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMetaFileDC [MFC], Create
 - CMetaFileDC [MFC], CreateEnhanced
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-ms.openlocfilehash: 343ab1a5d0c38ab0d17c609fbfc134b144502553
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfbe03c5c81b2c7d6517dff7ce4e5f88b7c076bc
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471818"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178310"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 
@@ -186,7 +186,7 @@ Gelişmiş Meta dosyası için bir başvuru cihazı tanımlar.
 Null ile sonlandırılmış dizeye işaret eder. Oluşturulacak Gelişmiş Meta dosyası için dosya adını belirtir. Bu parametre NULL ise, Gelişmiş Meta dosyası bellek tabanlı ve içeriğini nesnesi yok edildiğinde veya zaman kayıp olduğundan Win32 `DeleteEnhMetaFile` işlevi çağrılır.
 
 *lpBounds*<br/>
-İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) veri yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini resmi (artışlarla başına.01 milimetre) HIMETRIC birimleri Gelişmiş Meta dosyası içinde depolanacak boyutlarını belirtir.
+İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veri yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini resmi (artışlarla başına.01 milimetre) HIMETRIC birimleri Gelişmiş Meta dosyası içinde depolanacak boyutlarını belirtir.
 
 *lpszDescription*<br/>
 Resmin başlığı yanı sıra resmi oluşturduğunuz uygulamayı adını belirten bir sıfır ile sonlandırılmış dize işaret eder.

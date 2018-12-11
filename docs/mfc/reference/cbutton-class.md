@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 745b04751c96e79c6bfa332ebdde15b254578137
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 26dcf50cc3dc48fec5d6e4957ffd1ef340ad1dbf
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694809"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178649"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 
@@ -265,7 +265,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Uzun bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) yapısı. Yapı çizilecek öğesi ve gerekli çizim türü hakkında bilgi içerir.
+Uzun bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) yapısı. Yapı çizilecek öğesi ve gerekli çizim türü hakkında bilgi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -430,7 +430,7 @@ BOOL GetNote(
 
 İlk aşırı yükleme içinde bir [CString](../../atl-mfc-shared/using-cstring.md) geçerli komut bağlantı denetimle ilişkili not metni içeren nesne.
 
-veya
+-veya-
 
 İkinci aşırı yükleme, bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
@@ -532,7 +532,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pSize*|[out] İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı bir dikdörtgen açıklamasını alır.|
+|*pSize*|[out] İşaretçi bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı bir dikdörtgen açıklamasını alır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1006,7 +1006,7 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pSize*|[in] İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) sınırlayıcı bir dikdörtgen açıklayan yapısı.|
+|*pSize*|[in] İşaretçi bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) sınırlayıcı bir dikdörtgen açıklayan yapısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

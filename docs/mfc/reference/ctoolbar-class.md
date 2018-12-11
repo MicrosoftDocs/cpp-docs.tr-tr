@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-ms.openlocfilehash: 4faa067f95f43939d6dbd05837f961b3baa7f17f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 938df6599ca3bfec3e08e77d7a60106133f54324
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593252"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178544"
 ---
 # <a name="ctoolbar-class"></a>CToolBar sınıfı
 
@@ -141,7 +141,7 @@ Bir onay kutusu düğmesi oluşturma, TBBS_CHECKBOX stili atama veya kullanmak i
 
 Bir radyo düğmesi oluşturmak için arama bir [Ccmduı](../../mfc/reference/ccmdui-class.md) nesnenin [SetRadio](../../mfc/reference/ccmdui-class.md#setradio) on_update_command_uı işleyicisinden üye işlevi. Geçirmek `SetRadio` denetlenmeyen ve iade için sıfır için 0 bağımsız değişken. Radyo grubun birbirini dışlayan davranışı sağlamak için gruptaki tüm düğmeler on_update_command_uı işleyicileri olması gerekir.
 
-Kullanma hakkında daha fazla bilgi için `CToolBar`, makaleye göz atın [MFC araç çubuğu uygulaması](../../mfc/mfc-toolbar-implementation.md) ve [Teknik Not 31: denetim çubukları](../../mfc/tn031-control-bars.md).
+Kullanma hakkında daha fazla bilgi için `CToolBar`, makaleye göz atın [MFC araç çubuğu uygulaması](../../mfc/mfc-toolbar-implementation.md) ve [Teknik Not 31: Denetim çubukları](../../mfc/tn031-control-bars.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -406,7 +406,7 @@ virtual void GetItemRect(
 Dikdörtgen koordinatları alınacak olan öğenin dizini (düğme veya ayırıcı).
 
 *lpRect*<br/>
-Adresi [RECT](../../mfc/reference/rect-structure1.md) yapısı öğenin koordinatlarını içerir.
+Adresi [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı öğenin koordinatlarını içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -565,7 +565,7 @@ Düğmenin görüntü bit eşlem içindeki yeni dizini.
 Depolanan değere piksel cinsinden TBBS_SEPARATOR stili olan ayırıcılar için bu işlevi ayırıcı'nın genişliğini ayarlar *iImage*.
 
 > [!NOTE]
->  Düğme durumları kullanarak da ayarlayabilirsiniz *nStyle* parametre; ancak, düğme durumları tarafından denetlenir çünkü [on_update_command_uı](message-map-macros-mfc.md#on_update_command_ui) herhangi işleyici, durum kullanarak ayarladığınız `SetButtonInfo` kaybolacak sonraki boşta işleme sırasında. Bkz: [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: denetim çubukları](../../mfc/tn031-control-bars.md) daha fazla bilgi için.
+>  Düğme durumları kullanarak da ayarlayabilirsiniz *nStyle* parametre; ancak, düğme durumları tarafından denetlenir çünkü [on_update_command_uı](message-map-macros-mfc.md#on_update_command_ui) herhangi işleyici, durum kullanarak ayarladığınız `SetButtonInfo` kaybolacak sonraki boşta işleme sırasında. Bkz: [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: Denetim çubukları](../../mfc/tn031-control-bars.md) daha fazla bilgi için.
 
 Bit eşlem resimleri ve düğmeleri hakkında daha fazla bilgi için bkz: [CToolBar](../../mfc/reference/ctoolbar-class.md) genel bakış ve [CToolBar::LoadBitmap](#loadbitmap).
 
@@ -640,7 +640,7 @@ Düğme nasıl göründüğünü ve nasıl kullanıcı girişine yanıt veren bi
 Çağırmadan önce `SetButtonStyle`, çağrı [GetButtonStyle](#getbuttonstyle) düğme veya ayırıcı stili almak için üye işlevi.
 
 > [!NOTE]
->  Düğme durumları kullanarak da ayarlayabilirsiniz *nStyle* parametre; ancak, düğme durumları tarafından denetlenir çünkü [on_update_command_uı](message-map-macros-mfc.md#on_update_command_ui) herhangi işleyici, durum kullanarak ayarladığınız `SetButtonStyle` kaybolacak sonraki boşta işleme sırasında. Bkz: [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: denetim çubukları](../../mfc/tn031-control-bars.md) daha fazla bilgi için.
+>  Düğme durumları kullanarak da ayarlayabilirsiniz *nStyle* parametre; ancak, düğme durumları tarafından denetlenir çünkü [on_update_command_uı](message-map-macros-mfc.md#on_update_command_ui) herhangi işleyici, durum kullanarak ayarladığınız `SetButtonStyle` kaybolacak sonraki boşta işleme sırasında. Bkz: [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: Denetim çubukları](../../mfc/tn031-control-bars.md) daha fazla bilgi için.
 
 ##  <a name="setbuttontext"></a>  CToolBar::SetButtonText
 

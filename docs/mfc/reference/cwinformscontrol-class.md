@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-ms.openlocfilehash: c27bcfa88ec5ba8b330a62f6ecfbad7e10a54d6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8728c876badcf6648740cc842a1f289789bf0f4
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547491"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178245"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl sınıfı
 
@@ -111,10 +111,10 @@ inline BOOL CreateManagedControl(
 Oluşturulacak denetimi veri türü. Olmalıdır bir [türü](https://msdn.microsoft.com/library/system.type) veri türü.
 
 *dwStyle*<br/>
-Denetime uygulamak için pencere stili. Bir birleşimi belirler [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Şu anda yalnızca aşağıdaki stilleri desteklenmektedir: WS_TABSTOP, ws_vısıble ws_dısabled ve WS_GROUP.
+Denetime uygulamak için pencere stili. Bir birleşimi belirler [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Şu anda, yalnızca aşağıdaki stilleri desteklenmektedir: WS_TABSTOP, ws_vısıble, ws_dısabled ve WS_GROUP.
 
 *Rect*<br/>
-A [RECT yapısı](../../mfc/reference/rect-structure1.md) , denetimin sol ve sağ alt köşe koordinatlarını tanımlar (ilk aşırı yükleme yalnızca).
+A [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) , denetimin sol ve sağ alt köşe koordinatlarını tanımlar (ilk aşırı yükleme yalnızca).
 
 *nPlaceHolderID*<br/>
 Statik yer tutucu denetimi tanıtıcısı kaynak düzenleyicisinde yerleştirilir. Yeni oluşturulan Windows Forms denetimi, konum, z düzenini ve stili varsayılarak statik denetimi değiştirir (ikinci aşırı yükleme yalnızca).

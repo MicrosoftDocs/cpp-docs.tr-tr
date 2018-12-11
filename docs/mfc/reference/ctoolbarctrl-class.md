@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: d2214af96f3eba7d1b1d3c8e52f0c82873b982d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e2df5117f6cbb96c69f54fe9e21f85b45218d6d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463017"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178986"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 
@@ -1106,7 +1106,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *pSize*<br/>
-Bir işaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı öğelerin boyutunu alır.
+Bir işaretçi bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı öğelerin boyutunu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1247,7 +1247,7 @@ Başarılı olursa düğmesi durum bilgileri veya - 1 Aksi takdirde. Düğme dur
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev özellikle birden fazla düğme durumları almak istiyorsanız kullanışlıdır. Yalnızca bir durum almak için aşağıdaki üye işlevleri birini kullanın: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden ](#isbuttonhidden), veya [IsButtonIndeterminate](#isbuttonindeterminate). Ancak, `GetState` üye işlevi, TBSTATE_WRAP düğme durumu algılayan tek yoludur.
+Bu işlev özellikle birden fazla düğme durumları almak istiyorsanız kullanışlıdır. Yalnızca bir durum almak için aşağıdaki üye işlevleri birini kullanın: [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked), [IsButtonPressed](#isbuttonpressed), [IsButtonHidden](#isbuttonhidden), veya [IsButtonIndeterminate](#isbuttonindeterminate). Ancak, `GetState` üye işlevi, TBSTATE_WRAP düğme durumu algılayan tek yoludur.
 
 ##  <a name="getstring"></a>  CToolBarCtrl::GetString
 

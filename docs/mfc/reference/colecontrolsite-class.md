@@ -106,12 +106,12 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-ms.openlocfilehash: c9aa5b57b2610dbe0528d99d1c8ad996e1fc4a60
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26d0f5e875c4f3982705a2cf571b15cd5bfac985
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437810"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178933"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite sınıfı
 
@@ -444,7 +444,7 @@ virtual BOOL EnableWindow(BOOL bEnable);
 ### <a name="parameters"></a>Parametreler
 
 *bSistemlerde*<br/>
-Etkinleştirme veya devre dışı pencerenin belirtir: etkin, aksi takdirde FALSE olmasını penceresi giriş ise TRUE.
+Etkinleştirme veya devre dışı pencerenin belirtir: Pencere giriş etkinleştirilmişse, aksi takdirde FALSE olmasını ise TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1062,7 +1062,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 ### <a name="parameters"></a>Parametreler
 
 *lpmsg*<br/>
-Bir işaretçi bir [MSG yapısı](../../mfc/reference/msg-structure1.md). Windows ileti tetikleme bu yapıyı içeren `SetFocus` geçerli denetim sitede yer alan denetim için istek.
+Bir işaretçi bir [MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg). Windows ileti tetikleme bu yapıyı içeren `SetFocus` geçerli denetim sitede yer alan denetim için istek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

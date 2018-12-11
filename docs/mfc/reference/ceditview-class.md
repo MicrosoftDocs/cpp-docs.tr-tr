@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-ms.openlocfilehash: e0095f2c490ebde10d20ec0705b1297b976b76b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e853a770dd1f98b1e7f06afd814962f3b3805ceb
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528667"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53177881"
 ---
 # <a name="ceditview-class"></a>CEditView sınıfı
 
@@ -110,7 +110,7 @@ Her `CEditView` denetimin metninin kendi genel bellek nesnesinde tutulur. Uygula
 
 Türündeki nesneler oluşturma `CEditView` yukarıda listelenen eklenen işlevselliğe sahip bir düzenleme penceresi istiyorsanız veya basit metin düzenleyici işlevselliği istiyorsanız. A `CEditView` nesne pencere tüm istemci alanını kaplayacak. Kendi sınıflarından `CEditView` eklemek veya temel işlevlerini değiştirmek için ya da bir belge şablonuna eklenebilir sınıfları bildirme.
 
-Sınıfın varsayılan uygulaması `CEditView` aşağıdaki komutları işleyen: ıd_edıt_select_all, ıd_edıt_fınd ıd_edıt_replace ıd_edıt_repeat ve ıd_fıle_prınt.
+Sınıfın varsayılan uygulaması `CEditView` aşağıdaki komutları işler: Id_edıt_select_all, ıd_edıt_fınd, ıd_edıt_replace, ıd_edıt_repeat ve ıd_fıle_prınt.
 
 Varsayılan karakter sınırını `CEditView` olduğu (1024 \* 1048575 = 1024-1). Bu, temel alınan düzenleme denetiminin EM_LIMITTEXT işlevini çağırarak değiştirilebilir. Ancak, sınırları işletim sistemine göre farklılık gösterir ve türünü düzenleme denetimi (tek veya çok satırlı). Bu sınırlar hakkında daha fazla bilgi için bkz. [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext).
 
@@ -401,7 +401,7 @@ UINT PrintInsideRect(
 Yazıcı cihaz bağlamı işaretçisi.
 
 *rectLayout*<br/>
-Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) metin olduğu işlenecek dikdörtgen belirtme.
+Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) metin olduğu işlenecek dikdörtgen belirtme.
 
 *nIndexStart*<br/>
 İşlenecek ilk karakterin arabellek içinde dizin.

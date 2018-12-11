@@ -102,12 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: 38463d5e7daf86c40cdef429cd80b18598e19025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad9f945a91a96c40afe614240a847a028ba5b5d9
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656098"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178622"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 
@@ -339,7 +339,7 @@ Uzun bir işaretçi bir `COMPAREITEMSTRUCT` yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açıklanan iki öğenin göreli konumunu belirten [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) yapısı. Aşağıdaki değerlerden herhangi biri olabilir:
+Açıklanan iki öğenin göreli konumunu belirten [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) yapısı. Aşağıdaki değerlerden herhangi biri olabilir:
 
 |Değer|Açıklama|
 |-----------|-------------|
@@ -426,7 +426,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDeleteItemStruct*<br/>
-Bir Windows uzun bir işaretçiye [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) olan silinmiş öğenin hakkında bilgi içeren yapısı.
+Bir Windows uzun bir işaretçiye [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) olan silinmiş öğenin hakkında bilgi içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -511,7 +511,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Uzun bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) gerekli çizim türü hakkında bilgi içeren yapısı.
+Uzun bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerekli çizim türü hakkında bilgi içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -770,7 +770,7 @@ int GetItemRect(
 Öğenin sıfır tabanlı dizinini belirtir.
 
 *lpRect*<br/>
-Uzun bir işaretçiye belirtir bir [RECT yapısı](../../mfc/reference/rect-structure1.md) , öğenin liste kutusu istemci koordinatlarını alır.
+Uzun bir işaretçiye belirtir bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) , öğenin liste kutusu istemci koordinatlarını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -991,7 +991,7 @@ Başarılı, liste kutusunda bir bellek reallocation önce depolayabilirsiniz ö
 
 Bu işlev, özel olarak çok sayıda (100'den fazla) öğe olan liste kutuları başlatma sürecinin hızlanmasına yardımcı olur. Bu nedenle, sonraki bellek belirtilen miktarı preallocates [AddString](#addstring), [InsertString](#insertstring), ve [Dir](#dir) işlevler en kısa sürede alır. Tahminleri parametrelerini kullanabilirsiniz. Overestimate, bazı ek bellek tahsis edilmez; çoğu kişinin hafife aldığı, normal ayırma ön tahsis miktarınızı aşan öğeleri için kullanılır.
 
-Windows 95/98 yalnızca: *nItems* 16 bitlik değerler için parametre sınırlıdır. Başka bir deyişle, liste kutuları 32.767'den fazla öğe içeremez. Öğe sayısını kısıtlı olsa da, bir liste kutusu öğeleri toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
+Windows 95/98 yalnızca: *NItems* 16 bitlik değerler için parametre sınırlıdır. Başka bir deyişle, liste kutuları 32.767'den fazla öğe içeremez. Öğe sayısını kısıtlı olsa da, bir liste kutusu öğeleri toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1068,7 +1068,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpMeasureItemStruct*<br/>
-Uzun bir işaretçi bir [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) yapısı.
+Uzun bir işaretçi bir [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

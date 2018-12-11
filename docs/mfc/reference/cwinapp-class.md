@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: c25d79dc1fb201d10e090f512a5a96f649efbcfe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f9afdf18fcaff0d3613b4204d8690f915079e7d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542369"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178947"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -347,7 +347,7 @@ Ek olarak `CWinApp` üye işlevleri, Microsoft Foundation Class Kitaplığı eri
 
 - [AfxGetAppName](application-information-and-management.md#afxgetappname) uygulamanın adını içeren bir dize için bir işaretçi alır. Alternatif olarak, bir işaretçi varsa `CWinApp` nesnesi `m_pszExeName` uygulamanın adı.
 
-Bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md) hakkında daha fazla bilgi `CWinApp` sınıfı, aşağıdaki genel bir bakış da dahil olmak üzere:
+Bkz: [CWinApp: Uygulama sınıfı](../../mfc/cwinapp-the-application-class.md) hakkında daha fazla bilgi `CWinApp` sınıfı, aşağıdaki genel bir bakış da dahil olmak üzere:
 
 - `CWinApp`-Uygulama Sihirbazı tarafından yazılan kodu türetilmiş.
 
@@ -1060,7 +1060,7 @@ Başlatma başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Uygulama başlatma kavramsal olarak iki bölümlere ayrılmıştır: ilk işiniz tek seferlik uygulama başlatma süresi program çalıştırılır ve her çalışan örneği başlatma süresi bir kopyasını ilk kez dahil olmak üzere programı çalıştırır. Framework'ün uygulamasını `WinMain` bu işlevi çağırır.
 
-Geçersiz kılma `InitInstance` uygulamanızın altında Windows çalıştıran her yeni örneği başlatmak için. Genellikle, geçersiz kılmanız `InitInstance` , ana pencere nesnesi oluşturmak ve ayarlamak için `CWinThread::m_pMainWnd` pencereye işaret edecek şekilde veri üyesi. Bu üye işlevi geçersiz kılma hakkında daha fazla bilgi için bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md).
+Geçersiz kılma `InitInstance` uygulamanızın altında Windows çalıştıran her yeni örneği başlatmak için. Genellikle, geçersiz kılmanız `InitInstance` , ana pencere nesnesi oluşturmak ve ayarlamak için `CWinThread::m_pMainWnd` pencereye işaret edecek şekilde veri üyesi. Bu üye işlevi geçersiz kılma hakkında daha fazla bilgi için bkz: [CWinApp: Uygulama sınıfı](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
 > MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
@@ -1793,7 +1793,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-Bir işaretçi bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için bir ileti içeren yapısı.
+Bir işaretçi bir [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) işlemek için bir ileti içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1815,7 +1815,7 @@ virtual BOOL ProcessMessageFilter(
 Kanca kodu belirtir. Bu üye işlevi kod nasıl işleneceğini belirlemek için kullanır. *lpMsg.*
 
 *lpMsg*<br/>
-Bir Windows işaretçisi [MSG](../../mfc/reference/msg-structure1.md) yapısı.
+Bir Windows işaretçisi [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1886,7 +1886,7 @@ virtual LRESULT ProcessWndProcException(
 Yakalanmayan bir özel durum işaretçisi.
 
 *pMsg*<br/>
-A [MSG](../../mfc/reference/msg-structure1.md) bir özel durum için framework neden windows iletisi hakkında bilgi içeren yapısı.
+A [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) bir özel durum için framework neden windows iletisi hakkında bilgi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2086,7 +2086,7 @@ Seçenek bulunamadı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa, seçeneğin komut satırından kaldırıldı. Ekleme ile ilgili daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).
+Varsa, seçeneğin komut satırından kaldırıldı. Ekleme ile ilgili daha fazla bilgi için bkz [sunucuları: Sunucu uygulama](../../mfc/servers-implementing-a-server.md).
 
 ##  <a name="saveallmodified"></a>  CWinApp::SaveAllModified
 
@@ -2118,7 +2118,7 @@ void SelectPrinter(
 ### <a name="parameters"></a>Parametreler
 
 *hDevNames*<br/>
-İçin bir tanıtıcı bir [DEVNAMES](../../mfc/reference/devnames-structure.md) sürücü, cihaz ve çıkış bağlantı noktası adları belirli bir yazıcı tanımlayan yapısı.
+İçin bir tanıtıcı bir [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) sürücü, cihaz ve çıkış bağlantı noktası adları belirli bir yazıcı tanımlayan yapısı.
 
 *hDevMode*<br/>
 İçin bir tanıtıcı bir [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazıcı ortamı hakkında bilgi belirten yapısı.
@@ -2168,7 +2168,7 @@ Kayıt defteri anahtarı adını içeren dize kaynağının kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev ayarlar *m_pszRegistryKey*, ardından kullanılan tarafından `GetProfileInt`, `GetProfileString`, `WriteProfileInt`, ve `WriteProfileString` üye işlevlerinin `CWinApp`. Bu işlev çağrılırsa, en son kullanılan (MRU) dosya listesi de kayıt defterinde depolanır. Kayıt defteri anahtarı genellikle bir şirketin adıdır. Aşağıdaki biçimde bir anahtarında depolanır: HKEY_CURRENT_USER\Software\\< şirket adı\>\\< Uygulama adı\>\\< bölüm adı\>\\< değer ad\>.
+Bu işlev ayarlar *m_pszRegistryKey*, ardından kullanılan tarafından `GetProfileInt`, `GetProfileString`, `WriteProfileInt`, ve `WriteProfileString` üye işlevlerinin `CWinApp`. Bu işlev çağrılırsa, en son kullanılan (MRU) dosya listesi de kayıt defterinde depolanır. Kayıt defteri anahtarı genellikle bir şirketin adıdır. Aşağıdaki biçimde bir anahtarında depolanır: HKEY_CURRENT_USER\Software\\< şirket adı\>\\< Uygulama adı\>\\< bölüm adı\>\\< değer adı\>.
 
 ##  <a name="supportsapplicationrecovery"></a>  CWinApp::SupportsApplicationRecovery
 
@@ -2395,4 +2395,4 @@ Uygulama kullanıcı Model kimliğini belirtir.
 
 [CWinThread Sınıfı](../../mfc/reference/cwinthread-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../../mfc/how-to-add-restart-manager-support.md)
+[Nasıl Yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md)

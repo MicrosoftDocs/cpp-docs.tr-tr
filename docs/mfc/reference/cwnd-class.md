@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: f1d418cadd2739b840efd14874fd4bbd6afeb4c5
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 0a27b78d873b0a561b84b13cc16c67aef9ff2e8b
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177114"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179090"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1554,7 +1554,7 @@ CDC* BeginPaint(LPPAINTSTRUCT lpPaint);
 ### <a name="parameters"></a>Parametreler
 
 *lpPaint*<br/>
-İşaret [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) boyama bilgilerini almak için yapısı.
+İşaret [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) boyama bilgilerini almak için yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1854,10 +1854,10 @@ void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) 
 ### <a name="parameters"></a>Parametreler
 
 *Lppoınt*<br/>
-İşaret eden bir [POINT yapısı](../../mfc/reference/point-structure1.md) veya `CPoint` istemci içeren nesne koordinatları dönüştürülecek.
+İşaret eden bir [POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint) veya `CPoint` istemci içeren nesne koordinatları dönüştürülecek.
 
 *lpRect*<br/>
-İşaret eden bir [RECT yapısı](../../mfc/reference/rect-structure1.md) veya `CRect` istemci içeren nesne koordinatları dönüştürülecek.
+İşaret eden bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect` istemci içeren nesne koordinatları dönüştürülecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2061,13 +2061,13 @@ Denetimde görüntülenecek metni için bir işaretçi. Denetimin açıklamalı 
 Windows stilleri. Kullanılabilir stiller açıklamalar altında listelenir.
 
 *Rect*<br/>
-Denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT yapısı](../../mfc/reference/rect-structure1.md).
+Denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect).
 
 *ppt*<br/>
-İşaret eden bir [POINT yapısı](../../mfc/reference/point-structure1.md) veya `CPoint` denetimin sol üst köşesinde içeren nesne.
+İşaret eden bir [POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint) veya `CPoint` denetimin sol üst köşesinde içeren nesne.
 
 *pSize*<br/>
-İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` denetimin boyutunu içeren nesne
+İşaret eden bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya `CSize` denetimin boyutunu içeren nesne
 
 *pParentWnd*<br/>
 Denetiminin üst penceresine belirtir. NULL olmamalıdır.
@@ -2977,7 +2977,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
 ### <a name="parameters"></a>Parametreler
 
 *lpPaint*<br/>
-İşaret eden bir [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) tarafından alınan boyama bilgileri içeren yapısı [BeginPaint](#beginpaint) üye işlevi.
+İşaret eden bir [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) tarafından alınan boyama bilgileri içeren yapısı [BeginPaint](#beginpaint) üye işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3710,7 +3710,7 @@ void GetClientRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [RECT yapısı](../../mfc/reference/rect-structure1.md) veya `CRect` istemci koordinatları almak için nesne. `left` Ve `top` üyeleri 0 olur. `right` Ve `bottom` pencerenin yüksekliğini ve genişliğini üyeleri içerir.
+İşaret eden bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect` istemci koordinatları almak için nesne. `left` Ve `top` üyeleri 0 olur. `right` Ve `bottom` pencerenin yüksekliğini ve genişliğini üyeleri içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3784,7 +3784,7 @@ static const MSG* PASCAL GetCurrentMessage();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi döndürür [MSG](../../mfc/reference/msg-structure1.md) pencere iletisi içeren yapısı şu anda işleniyor. Yalnızca ne zaman çağrılmalıdır bir **üzerinde**<em>ileti</em> işleyici.
+Bir işaretçi döndürür [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) pencere iletisi içeren yapısı şu anda işleniyor. Yalnızca ne zaman çağrılmalıdır bir **üzerinde**<em>ileti</em> işleyici.
 
 ### <a name="example"></a>Örnek
 
@@ -4491,7 +4491,7 @@ Alınacak özelliğin türünü belirtir. Olası değerler için için Açıklam
 > [!NOTE]
 > Yalnızca bu işlevin çağrılması gerektiğini bir `CWnd` ActiveX denetimini temsil eden nesne.
 
-ActiveX denetim kapsayıcıları ile bu üye işlevini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları: bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
+ActiveX denetim kapsayıcıları ile bu üye işlevini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları: Bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
 ##  <a name="getrendertarget"></a>  CWnd::GetRenderTarget
 
@@ -4864,7 +4864,7 @@ BOOL GetUpdateRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir `CRect` nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) olan güncelleştirme bölgesine kapsayan güncelleştirme istemci koordinatlarını almak için.
+İşaret eden bir `CRect` nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) olan güncelleştirme bölgesine kapsayan güncelleştirme istemci koordinatlarını almak için.
 
 Null bir güncelleştirme bölgesi içinde mevcut olup olmadığını belirlemek için bu parametreyi ayarlayın `CWnd`. Varsa *lpRect* NULL ise `GetUpdateRect` güncelleştirme bölgesine varsa ve varsa 0 daha önceden üye işlevi sıfır döndürür. Bu, WM_PAINT iletisini geçersiz bir çalışma alanından sonuçlandı olup olmadığını belirlemek için bir yol sağlar. Bu parametre NULL Windows sürümünde 3.0 ve eski ayarlamayın.
 
@@ -5050,7 +5050,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT* lpwndpl) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`flags` Üyesi [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) bu işlev tarafından alınan yapısı, her zaman 0. Varsa `CWnd` ekranı, `showCmd` üyesi `WINDOWPLACEMENT` da sw_showmaxımızed olduğu. Simge durumuna küçültülmüş, sw_showmınımızed olur. Aksi takdirde SW_SHOWNORMAL olur.
+`flags` Üyesi [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) bu işlev tarafından alınan yapısı, her zaman 0. Varsa `CWnd` ekranı, `showCmd` üyesi `WINDOWPLACEMENT` da sw_showmaxımızed olduğu. Simge durumuna küçültülmüş, sw_showmınımızed olur. Aksi takdirde SW_SHOWNORMAL olur.
 
 ##  <a name="getwindowrect"></a>  CWnd::GetWindowRect
 
@@ -5063,7 +5063,7 @@ void GetWindowRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir `CRect` nesnesi veya bir [RECT yapısı](../../mfc/reference/rect-structure1.md) sol ve sağ alt köşe ekran koordinatları alırsınız.
+İşaret eden bir `CRect` nesnesi veya bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) sol ve sağ alt köşe ekran koordinatları alırsınız.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5286,7 +5286,7 @@ void InvalidateRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir `CRect` nesnesi veya bir [RECT yapısı](../../mfc/reference/rect-structure1.md) güncelleştirme bölgesine eklenecek dikdörtgende (istemci koordinatları) içeren. Varsa *lpRect* NULL ise tüm istemci alanını bölgesine eklenir.
+İşaret eden bir `CRect` nesnesi veya bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) güncelleştirme bölgesine eklenecek dikdörtgende (istemci koordinatları) içeren. Varsa *lpRect* NULL ise tüm istemci alanını bölgesine eklenir.
 
 *bErase*<br/>
 Güncelleştirme bölge içinde arka plan silinmesi olup olmadığını belirtir.
@@ -5370,7 +5370,7 @@ Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından ça
 > [!NOTE]
 > Yalnızca bu işlevin çağrılması gerektiğini bir `CWnd` ActiveX denetimini temsil eden nesne.
 
-ActiveX denetim kapsayıcıları ile bu üye işlevini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları: bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
+ActiveX denetim kapsayıcıları ile bu üye işlevini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları: Bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
 ##  <a name="ischild"></a>  CWnd::IsChild
 
@@ -5416,7 +5416,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 ### <a name="parameters"></a>Parametreler
 
 *lpMsg*<br/>
-İşaret eden bir [MSG](../../mfc/reference/msg-structure1.md) denetlenecek iletiyi içeren yapısı.
+İşaret eden bir [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) denetlenecek iletiyi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5649,7 +5649,7 @@ Noktaları dönüştürüldüğü penceresini tanımlar. Bu parametre NULL ise, 
 Dönüştürülecek olan noktalarıdır dikdörtgen belirtir. Bu işlevin ilk sürüm, yalnızca Windows 3.1 ve daha sonra kullanılabilir.
 
 *Lppoınt*<br/>
-Bir dizi işaretçi [POINT yapısı](../../mfc/reference/point-structure1.md) dönüştürülecek noktaları kümesini içerir.
+Bir dizi işaretçi [POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint) dönüştürülecek noktaları kümesini içerir.
 
 *nCount*<br/>
 Sayısını belirten `POINT` dizideki yapıları tarafından işaret edilen *Lppoınt*.
@@ -5827,7 +5827,7 @@ Yeni yüksekliğini belirtir `CWnd`.
 Belirtir olup olmadığını `CWnd` boyanacak sağlamaktır. TRUE ise `CWnd` alır bir [WM_PAINT](/windows/desktop/gdi/wm-paint) içinde ileti kendi [OnPaint](#onpaint) işleyici zamanki iletisi. Bu parametre FALSE ise, hiçbir herhangi bir türden yeniden çizerken gerçekleşir. Bu istemci alanını (başlık ve kaydırma çubuğu dahil) alanındayken ve herhangi bir bölümünü sonucu olarak ortaya çıkardı üst penceresine geçerlidir `CWnd`kullanıcının taşıyın. Bu parametre FALSE olduğunda, uygulama gerekir açıkça geçersiz veya herhangi bir bölümünün yeniden düzenlenen `CWnd` ve üst penceresine çizilmesini gerekir.
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) yeni boyutunu ve konumunu belirtir.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) yeni boyutunu ve konumunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6099,7 +6099,7 @@ Hangi UI durum öğeleri etkilenen veya denetimin stilini belirtir. Aşağıdaki
 
 - UISF_HIDEFOCUS odak göstergeleri.
 
-- UISF_ACTIVE Windows XP: Bir denetim etkin denetimler için kullanılan stil çizilir.
+- UISF_ACTIVE Windows XP: Etkin denetimler için kullanılan bir denetimi yeniden çizilmesi gerektiğini.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6338,7 +6338,7 @@ afx_msg int OnCompareItem(
 Denetimin WM_COMPAREITEM iletiyi gönderen tanımlayıcısı.
 
 *lpCompareItemStruct*<br/>
-Uzun bir işaretçi içeren bir [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) tanımlayıcıları ve birleşik veya liste kutusunda iki öğe için uygulama tarafından sağlanan verileri içeren veri yapısı.
+Uzun bir işaretçi içeren bir [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) tanımlayıcıları ve birleşik veya liste kutusunda iki öğe için uygulama tarafından sağlanan verileri içeren veri yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6446,7 +6446,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpCreateStruct*<br/>
-İşaret eden bir [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) hakkında bilgi içeren yapısı `CWnd` oluşturulan nesne.
+İşaret eden bir [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) hakkında bilgi içeren yapısı `CWnd` oluşturulan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6581,7 +6581,7 @@ afx_msg void OnDeleteItem(
 Denetimin WM_DELETEITEM iletiyi gönderen tanımlayıcısı.
 
 *lpDeleteItemStruct*<br/>
-Uzun bir işaretçiye belirtir bir [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) silinen liste kutusu öğesini hakkında bilgi içeren veri yapısı.
+Uzun bir işaretçiye belirtir bir [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) silinen liste kutusu öğesini hakkında bilgi içeren veri yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6749,7 +6749,7 @@ Uzun bir işaretçiye belirtir bir `DRAWITEMSTRUCT` çizilecek öğesi ve gerekl
 
 ### <a name="remarks"></a>Açıklamalar
 
-`itemAction` Üyesi [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) gerçekleştirilecek olan işlemi çizme yapısını tanımlar. Bu üye verileri çizim hangi eylemin gerekip gerekmediğini kontrol sahibi sağlar.
+`itemAction` Üyesi [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerçekleştirilecek olan işlemi çizme yapısını tanımlar. Bu üye verileri çizim hangi eylemin gerekip gerekmediğini kontrol sahibi sağlar.
 
 Bu iletiyi işlemesini göndermeden önce bir uygulama tarafından tanımlanan cihaz bağlamı emin *hDC* üyesi `DRAWITEMSTRUCT` yapısı için varsayılan duruma geri yüklenir.
 
@@ -7018,7 +7018,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 ### <a name="parameters"></a>Parametreler
 
 *lpMMI*<br/>
-İşaret eden bir `MINMAXINFO` pencere hakkında bilgi içeren yapısı'nın tam ekran boyutu ve konumu ile izleme minimum ve maksimum boyutu. Bu yapı hakkında daha fazla bilgi için bkz. [MINMAXINFO](../../mfc/reference/minmaxinfo-structure.md) yapısı.
+İşaret eden bir `MINMAXINFO` pencere hakkında bilgi içeren yapısı'nın tam ekran boyutu ve konumu ile izleme minimum ve maksimum boyutu. Bu yapı hakkında daha fazla bilgi için bkz. [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7502,7 +7502,7 @@ X ve y-koordinatını imleç belirtir. Bu her zaman penceresinin sol üst köşe
 
 ### <a name="remarks"></a>Açıklamalar
 
-CS_DBLCLKS sahip windows [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) stil alacağı `OnLButtonDblClk` çağırır. Microsoft Foundation Class windows için varsayılan değer budur. Windows çağrıları `OnLButtonDblClk` kullanıcının bastığında, serbest bırakır ve sonra sistemin yeniden içinde sol fare düğmesine bastığında süre çift tıklayın. Farenin sol düğmesine çift gerçekten oluşturan dört olayları: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) iletileri ve WM_LBUTTONDBLCLK çağrısı düğmesi olduğunda başka bir WM_LBUTTONUP iletisi yayımladı.
+CS_DBLCLKS sahip windows [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) stil alacağı `OnLButtonDblClk` çağırır. Microsoft Foundation Class windows için varsayılan değer budur. Windows çağrıları `OnLButtonDblClk` kullanıcının bastığında, serbest bırakır ve sonra sistemin yeniden içinde sol fare düğmesine bastığında süre çift tıklayın. Farenin sol düğmesine çift dört olaylar gerçekte oluşturur: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) iletileri ve WM_LBUTTONDBLCLK çağrısı düğmesi bırakıldığında başka bir WM_LBUTTONUP ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7601,7 +7601,7 @@ X ve y-koordinatını imleç belirtir. Bu her zaman penceresinin sol üst köşe
 
 ### <a name="remarks"></a>Açıklamalar
 
-CS_DBLCLKS sahip windows [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) stil alacağı `OnMButtonDblClk` çağırır. Tüm Microsoft Foundation Class windows için varsayılan değer budur. Windows oluşturur bir `OnMButtonDblClk` kullanıcı basar, yayınlar ve sonra orta fare düğmesine tekrar sistemin içinde basarsa süre çift tıkladığınızda çağırın. Orta fare düğmesine çift gerçekten oluşturan dört olayları: [WM_MBUTTONDOWN](#onmbuttondown) ve [WM_MBUTTONUP](#onmbuttonup) iletileri WM_MBUTTONDBLCLK çağrısı ve başka bir WM_MBUTTONUP ileti.
+CS_DBLCLKS sahip windows [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) stil alacağı `OnMButtonDblClk` çağırır. Tüm Microsoft Foundation Class windows için varsayılan değer budur. Windows oluşturur bir `OnMButtonDblClk` kullanıcı basar, yayınlar ve sonra orta fare düğmesine tekrar sistemin içinde basarsa süre çift tıkladığınızda çağırın. Orta fare düğmesine çift dört olaylar gerçekte oluşturur: [WM_MBUTTONDOWN](#onmbuttondown) ve [WM_MBUTTONUP](#onmbuttonup) iletileri WM_MBUTTONDBLCLK çağrısı ve başka bir WM_MBUTTONUP ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7714,7 +7714,7 @@ afx_msg void OnMeasureItem(
 Denetimin kimliği.
 
 *lpMeasureItemStruct*<br/>
-İşaret eden bir [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) sahip çizim denetiminin boyutlarını içeren veri yapısı.
+İşaret eden bir [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) sahip çizim denetiminin boyutlarını içeren veri yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8149,7 +8149,7 @@ afx_msg void OnMoving(
 Edge penceresinin taşınacak.
 
 *lpRect*<br/>
-Adresi [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT yapısı](../../mfc/reference/rect-structure1.md) öğenin koordinatlarını içerecek.
+Adresi [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) öğenin koordinatlarını içerecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8196,7 +8196,7 @@ afx_msg void OnNcCalcSize(
 Uygulama istemci alanını hangi kısmını geçerli bilgi içerdiğini belirlemesi gerekip gerekmediğini belirtir. Windows yeni istemci alanı içinde belirtilen alan geçerli bilgiler kopyalar. Bu parametre TRUE ise, uygulamanın istemci alanında hangi kısmını geçerli belirtmeniz gerekir.
 
 *lpncsp*<br/>
-İşaret eden bir [nccalcsıze_params](../../mfc/reference/nccalcsize-params-structure.md) yeni boyutunu ve konumunu hesaplamak için kullanılan bir uygulama bilgilerini içeren veri yapısı `CWnd` dikdörtgen (istemci alanını, kenarlık, açıklamalı alt yazı, kaydırma çubukları vb. dahil) .
+İşaret eden bir [nccalcsıze_params](/windows/desktop/api/winuser/ns-winuser-tagnccalcsize_params) yeni boyutunu ve konumunu hesaplamak için kullanılan bir uygulama bilgilerini içeren veri yapısı `CWnd` dikdörtgen (istemci alanını, kenarlık, açıklamalı alt yazı, kaydırma çubukları vb. dahil) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8222,7 +8222,7 @@ afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpCreateStruct*<br/>
-İşaret [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) veri yapısı için `CWnd`.
+İşaret [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) veri yapısı için `CWnd`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -8791,7 +8791,7 @@ afx_msg void OnPaintClipboard(
 Pano uygulama penceresine bir işaretçi belirtir. İşaretçi geçici olabilir ve daha sonra kullanmak üzere saklanmalıdır değil.
 
 *hPaintStruct*<br/>
-Tanımlayan bir [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) kısmını boyamak için istemci alanını tanımlayan bir veri yapısı.
+Tanımlayan bir [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) kısmını boyamak için istemci alanını tanımlayan bir veri yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8988,7 +8988,7 @@ Odak göstergeleri ve klavye Hızlandırıcıları görünür durumdaysa, dönü
 
 - UISF_HIDEACCEL klavye Hızlandırıcılar gizlidir.
 
-- UISF_ACTIVE Windows XP: Bir denetim etkin denetimler için kullanılan stil çizilir.
+- UISF_ACTIVE Windows XP: Etkin denetimler için kullanılan bir denetimi yeniden çizilmesi gerektiğini.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9048,7 +9048,7 @@ X ve y belirtir imleci koordinatları. Bu her zaman penceresinin sol üst köşe
 
 ### <a name="remarks"></a>Açıklamalar
 
-CS_DBLCLKS sahip windows [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) stil alabilir `OnRButtonDblClk` çağırır. Microsoft Foundation Class Kitaplığı içinde windows için varsayılan değer budur. Windows çağrıları `OnRButtonDblClk` kullanıcının bastığında, serbest bırakır ve daha sonra tekrar sistemin içinde sağ fare düğmesine bastığında süre çift tıklayın. Sağ fare düğmesine çift gerçekten oluşturan dört olayları: [WM_RBUTTONDOWN](#onrbuttondown) ve [WM_RBUTTONUP](#onrbuttonup) iletileri `OnRButtonDblClk` çağrısı ve düğme başka bir WM_RBUTTONUP iletisi yayımladı.
+CS_DBLCLKS sahip windows [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) stil alabilir `OnRButtonDblClk` çağırır. Microsoft Foundation Class Kitaplığı içinde windows için varsayılan değer budur. Windows çağrıları `OnRButtonDblClk` kullanıcının bastığında, serbest bırakır ve daha sonra tekrar sistemin içinde sağ fare düğmesine bastığında süre çift tıklayın. Sağ fare düğmesine çift dört olaylar gerçekte oluşturur: [WM_RBUTTONDOWN](#onrbuttondown) ve [WM_RBUTTONUP](#onrbuttonup) iletileri `OnRButtonDblClk` çağrısı ve düğmesi bırakıldığında başka bir WM_RBUTTONUP ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9410,7 +9410,7 @@ afx_msg void OnSizing(
 Edge penceresinin taşınacak.
 
 *lpRect*<br/>
-Adresi [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT yapısı](../../mfc/reference/rect-structure1.md) öğenin koordinatlarını içerecek.
+Adresi [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) öğenin koordinatlarını içerecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9961,7 +9961,7 @@ afx_msg void OnUniChar(
 |---------------|-----------------|
 |*nChar*|[in] Basılan tuşa karakter kodunu belirtir.|
 |*nRepCnt*|[in] Geçerli iletinin yineleme sayısını belirtir. Kaç kez tuş vuruşu autorepeated tuşunu basılı tutarak kullanıcı sonucu olan değerdir. Tuş vuruşu yeterince uzun yapılmazsa, birden çok ileti gönderilir. Ancak, yineleme sayısını toplu değil.|
-|*nFlags*|[in] Bu bayraklar tarama kod, genişletilmiş anahtar, bağlam kod, önceki anahtar durumu ve geçiş durumu, aşağıdaki tabloda gösterildiği gibi belirtin:<br /><br /> **0-7:** tarama kodu belirtir. Değeri, orijinal ekipman üreticisi (OEM) bağlıdır.<br /><br /> **8:** Gelişmiş 101 ya da 102 tuşlu klavyede görünen sağ ALT ve CTRL tuşları gibi genişletilmiş bir anahtar belirtir. Bayrağı 1 ise anahtar genişletilmiş bir anahtardır. Aksi halde, 0'dır.<br /><br /> **9-12:** Windows tarafından dahili olarak kullanılır.<br /><br /> **13:** bağlam kodu belirtir. Bayrağı tuşuna basıldığında sırasında ALT tuşunu basılı 1 ise. Aksi takdirde, değeri 0'dır.<br /><br /> **14:** önceki anahtar durumu belirtir. Anahtar yukarı bayrağı ileti gönderilmeden önce kapalı anahtar ise 1 veya 0 ise.<br /><br /> **15:** geçiş durumu belirtir. Tuşuna basıldığında bayrağı anahtar serbest 1 veya 0 ise.|
+|*nFlags*|[in] Bu bayraklar tarama kod, genişletilmiş anahtar, bağlam kod, önceki anahtar durumu ve geçiş durumu, aşağıdaki tabloda gösterildiği gibi belirtin:<br /><br /> **0-7:** Tarama kodu belirtir. Değeri, orijinal ekipman üreticisi (OEM) bağlıdır.<br /><br /> **8:** Gelişmiş 101 ya da 102 tuşlu klavyede görünen sağ ALT ve CTRL tuşları gibi genişletilmiş bir anahtar belirtir. Bayrağı 1 ise anahtar genişletilmiş bir anahtardır. Aksi halde, 0'dır.<br /><br /> **9-12:**  Windows tarafından dahili olarak kullanılır.<br /><br /> **13:**  Bağlam kodu belirtir. Bayrağı tuşuna basıldığında sırasında ALT tuşunu basılı 1 ise. Aksi takdirde, değeri 0'dır.<br /><br /> **14:**  Önceki anahtar durumu belirtir. Anahtar yukarı bayrağı ileti gönderilmeden önce kapalı anahtar ise 1 veya 0 ise.<br /><br /> **15:**  Geçiş durumu belirtir. Tuşuna basıldığında bayrağı anahtar serbest 1 veya 0 ise.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10022,7 +10022,7 @@ Hangi UI durum öğeleri etkilenen veya denetimin stilini belirtir. Aşağıdaki
 
 - UISF_HIDEFOCUS odak göstergeleri.
 
-- UISF_ACTIVE Windows XP: Bir denetim etkin denetimler için kullanılan stil çizilir.
+- UISF_ACTIVE Windows XP: Etkin denetimler için kullanılan bir denetimi yeniden çizilmesi gerektiğini.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10202,7 +10202,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 ### <a name="parameters"></a>Parametreler
 
 *lpwndpos*<br/>
-İşaret eden bir [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) pencerenin yeni boyutunu ve konumunu hakkında bilgi içeren veri yapısı.
+İşaret eden bir [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) pencerenin yeni boyutunu ve konumunu hakkında bilgi içeren veri yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10226,7 +10226,7 @@ afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, ayarlama veya uygun bitler temizleyerek, pencereyi değişiklikleri engelleyebilir **bayrakları** üyesi [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) yapısı.
+Bir uygulama, ayarlama veya uygun bitler temizleyerek, pencereyi değişiklikleri engelleyebilir **bayrakları** üyesi [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) yapısı.
 
 Bir pencere için [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) veya [ws_thıckframe](styles-used-by-mfc.md#window-styles) stil, varsayılan uygulama gönderen bir [WM_GETMINMAXINFO](/windows/desktop/winmsg/wm-getminmaxinfo) penceresine ileti. Bu yeni boyutunu ve konumunu penceresinin doğrulamak ve CS_BYTEALIGNCLIENT ve CS_BYTEALIGN istemci stilleri uygulamak için gerçekleştirilir. Bir uygulama bu işlevsellik, onun temel sınıfından çağırarak değil geçersiz kılabilirsiniz.
 
@@ -10549,7 +10549,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### <a name="parameters"></a>Parametreler
 
 *cs*<br/>
-A [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) yapısı.
+A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -10597,7 +10597,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-İşaret eden bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için bir ileti içeren yapısı.
+İşaret eden bir [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) işlemek için bir ileti içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -10719,7 +10719,7 @@ BOOL RedrawWindow(
 ### <a name="parameters"></a>Parametreler
 
 *lpRectUpdate*<br/>
-İşaret eden bir [RECT yapısı](../../mfc/reference/rect-structure1.md) güncelleştirme dikdörtgenin koordinat içeren. Bu parametre yoksayılır *prgnUpdate* geçerli bölge tanıtıcı içerir.
+İşaret eden bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) güncelleştirme dikdörtgenin koordinat içeren. Bu parametre yoksayılır *prgnUpdate* geçerli bölge tanıtıcı içerir.
 
 *prgnUpdate*<br/>
 Güncelleştirme bölgeyi tanımlar. Her iki *prgnUpdate* ve *lpRectUpdate* NULL, tüm istemci alanını güncelleştirme bölgesine eklenir.
@@ -10889,10 +10889,10 @@ Aşağıdaki değerlerden biri olabilir:
 - `CWnd::reposExtra` Değerlerini ekler *lpRectParam* istemci alanına *nIDLast* ve düzenini de gerçekleştirir.
 
 *lpRectParam*<br/>
-İşaret eden bir [RECT yapısı](../../mfc/reference/rect-structure1.md); kullanımını değerine bağlıdır *nFlag*.
+İşaret eden bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect); kullanımını değerine bağlıdır *nFlag*.
 
 *lpRectClient*<br/>
-İşaret eden bir [RECT yapısı](../../mfc/reference/rect-structure1.md) kullanılabilir istemci alanını içeren. NULL ise, pencerenin istemci alanı kullanılır.
+İşaret eden bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) kullanılabilir istemci alanını içeren. NULL ise, pencerenin istemci alanı kullanılır.
 
 *bStretch*<br/>
 Çubuk çerçevenin boyutuna esnetilmiş olup olmadığını gösterir.
@@ -10939,10 +10939,10 @@ void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) 
 ### <a name="parameters"></a>Parametreler
 
 *Lppoınt*<br/>
-İşaret eden bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne veya [POINT yapısı](../../mfc/reference/point-structure1.md) dönüştürülecek ekran koordinatları içerir.
+İşaret eden bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne veya [POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint) dönüştürülecek ekran koordinatları içerir.
 
 *lpRect*<br/>
-İşaret eden bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) dönüştürülecek ekran koordinatları içerir.
+İşaret eden bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) dönüştürülecek ekran koordinatları içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10973,7 +10973,7 @@ Cihaz birimlerine, yatay kaydırma miktarını belirtir. Bu parametreyi sola kay
 Cihaz birimlerine, dikey kaydırma miktarını belirtir. Bu parametre, yukarı doğru ilerleyin için negatif bir değer olmalıdır.
 
 *lpRect*<br/>
-İşaret eden bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) bölümünü kaydırılan için istemci alanını belirtir. Varsa *lpRect* NULL ise tüm istemci alanını kaydırılan. İmleç dikdörtgen kaydırma dikdörtgen kesişip, giriş işaretini yeniden konumlandırılır.
+İşaret eden bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) bölümünü kaydırılan için istemci alanını belirtir. Varsa *lpRect* NULL ise tüm istemci alanını kaydırılan. İmleç dikdörtgen kaydırma dikdörtgen kesişip, giriş işaretini yeniden konumlandırılır.
 
 *lpClipRect*<br/>
 İşaret eden bir `CRect` nesne veya `RECT` kaydırmak için dikdörtgen kırpımını belirten yapısı. Yalnızca bu dikdörtgenin içindeki bit kaydırılan. İçinde bulundukları olsa bile bu dikdörtgen dışında BITS etkilenmez *lpRect* dikdörtgen. Varsa *lpClipRect* NULL ise hiçbir kırpma kaydırma dikdörtgenin gerçekleştirilir.
@@ -11012,7 +11012,7 @@ Cihaz birimlerine, yatay kaydırma miktarını belirtir. Bu parametre, sola kayd
 Cihaz birimlerine, dikey kaydırma miktarını belirtir. Bu parametre, Yukarı kaydırmak için negatif bir değere sahip olmalıdır.
 
 *lpRectScroll*<br/>
-İşaret eden bir [RECT yapısı](../../mfc/reference/rect-structure1.md) bölümünü kaydırılan için istemci alanını belirtir. Bu parametre NULL ise, tüm istemci alanını kaydırılan.
+İşaret eden bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) bölümünü kaydırılan için istemci alanını belirtir. Bu parametre NULL ise, tüm istemci alanını kaydırılan.
 
 *lpRectClip*<br/>
 İşaret eden bir `RECT` kaydırmak için dikdörtgen kırpımını belirten yapısı. Bu yapıyı işaret ettiği dikdörtgen önceliklidir *lpRectScroll*. Yalnızca bu dikdörtgenin içindeki bit kaydırılan. İçinde bulundukları olsa bile bu dikdörtgen dışında BITS etkilenmez *lpRectScroll* dikdörtgen. Bu parametre NULL ise, hiçbir kırpma kaydırma dikdörtgenin gerçekleştirilir.
@@ -11588,7 +11588,7 @@ Tek bir parametre tarafından belirtilen türde *vtProp*.
 > [!NOTE]
 > Yalnızca bu işlevin çağrılması gerektiğini bir `CWnd` bir OLE denetim temsil eden nesne.
 
-Bu üye işlevi OLE denetim kapsayıcıları ile kullanma hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları: bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
+Bu üye işlevi OLE denetim kapsayıcıları ile kullanma hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları: Bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
 ##  <a name="setredraw"></a>  CWnd::SetRedraw
 
@@ -11811,7 +11811,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT* lpwndpl);
 ### <a name="parameters"></a>Parametreler
 
 *lpwndpl*<br/>
-İşaret eden bir [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) yeni durumunu göster ve konumlarını belirtir yapısı.
+İşaret eden bir [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) yeni durumunu göster ve konumlarını belirtir yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -12304,7 +12304,7 @@ void ValidateRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) güncelleştirme bölgeden kaldırılacak istemci koordinatları dikdörtgenin içerir. Varsa *lpRect* null, pencerenin tamamını doğrulanır.
+İşaret eden bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) güncelleştirme bölgeden kaldırılacak istemci koordinatları dikdörtgenin içerir. Varsa *lpRect* null, pencerenin tamamını doğrulanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -12342,7 +12342,7 @@ static CWnd* PASCAL WindowFromPoint(POINT point);
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-Belirtir bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne veya [noktası](../../mfc/reference/point-structure1.md) veri yapısı, Kontrol edilecek noktasını tanımlar.
+Belirtir bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne veya [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapısı, Kontrol edilecek noktasını tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

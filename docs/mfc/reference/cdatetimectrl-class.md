@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: cff81b7d260749d5be344edf3e0401a473b4f9e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36ef44534803e35d3544b53dbeeca75a7fb3f475
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508829"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178531"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
@@ -381,7 +381,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*psize*|[out] İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) denetimi için ideal boyutu içeren yapısı.|
+|*psize*|[out] İşaretçi bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) denetimi için ideal boyutu içeren yapısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

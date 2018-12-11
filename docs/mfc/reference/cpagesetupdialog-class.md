@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 136f172dcd406e323afddae87d6fb234b5d4b273
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3fdcfa664de93f62b8b4dbcbc6184d08fdf591c
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544891"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178088"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 
@@ -142,7 +142,7 @@ CPageSetupDialog(
 
 - PSD_DISABLEORIENTATION sayfa yönünü iletişim denetimini devre dışı bırakır.
 
-- PSD_RETURNDEFAULT neden `CPageSetupDialog` döndürülecek [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları sistem varsayılan yazıcı için bir iletişim kutusu görüntülenmeden başlatılır. Her iki varsayılır `hDevNames` ve `hDevMode` NULL; Aksi halde, işlev hata döndürür. Bir eski yazıcı sürücüsü tarafından (öncesindeki Windows sürüm 3.0), sistem varsayılan yazıcı destekleniyorsa yalnızca `hDevNames` döndürülür; `hDevMode` null.
+- PSD_RETURNDEFAULT neden `CPageSetupDialog` döndürülecek [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapıları sistem varsayılan yazıcı için bir iletişim kutusu görüntülenmeden başlatılır. Her iki varsayılır `hDevNames` ve `hDevMode` NULL; Aksi halde, işlev hata döndürür. Bir eski yazıcı sürücüsü tarafından (öncesindeki Windows sürüm 3.0), sistem varsayılan yazıcı destekleniyorsa yalnızca `hDevNames` döndürülür; `hDevMode` null.
 
 - PSD_DISABLEPAPER kağıt seçim denetimi devre dışı bırakır.
 
@@ -171,7 +171,7 @@ Kullanım [DoModal](../../mfc/reference/cdialog-class.md#domodal) iletişim kutu
 
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC
 
-Bir yazıcı cihaz bağlamında oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.
+Bir yazıcı cihaz bağlamında oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapıları.
 
 ```
 HDC CreatePrinterDC();
@@ -262,7 +262,7 @@ void GetMargins(
 ### <a name="parameters"></a>Parametreler
 
 *lpRectMargins*<br/>
-İşaretçi bir [RECT](rect-structure.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) (1/1000 inç veya 1/100 mm) şu anda seçili yazıcıya yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.
+İşaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) (1/1000 inç veya 1/100 mm) şu anda seçili yazıcıya yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.
 
 *lpRectMinMargins*<br/>
 İşaretçi bir `RECT` yapısı veya `CRect` (1/1000 inç veya 1/100 mm) şu anda seçili yazıcı minimum yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.
@@ -341,7 +341,7 @@ Yazıcı cihaz bağlamı işaretçisi.
 - WM_PSD_YAFULLPAGERECT alanı için bir dönüş adresi gösterimi. Bu alan örnek sayfası alanın kenarlarına genişletir.
 
 *lpRect*<br/>
-İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](rect-structure.md) çizim alanının koordinatları içeren nesne.
+İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](/windows/desktop/api/windef/ns-windef-tagrect) çizim alanının koordinatları içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

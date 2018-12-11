@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 176c076027a0b1b315fbcef3edd4104bad66ae34
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef44c917411efefeb6719af95185ddf7993fbab1
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534140"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179025"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 
@@ -556,7 +556,7 @@ Penceresiz denetiminde, her zaman kullanmalısınız `COleControl` karşılık g
 
 OLE denetim nesneleri ayrıca, yalnızca etkin haline gelmeden ancak etkin-etkin geçiş için gerekli çalışma miktarını artar ve geçiş hızı düşer bir pencere oluşturabilirsiniz. Bu bir sorun olduğunda durumları şunlardır: Örneğin, metin kutuları kılavuzunun göz önünde bulundurun. Ne zaman sütunu boyunca işaretleme yukarı ve aşağı her denetimi etkinleştirildi ve ardından devre dışı yerinde olması gerekir. Etkin/etkin geçiş hızı doğrudan kaydırma hızını etkiler.
 
-Makaleleri bir OLE denetim çerçevesi geliştirme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md) ve [genel bakış: bir MFC ActiveX denetim programı oluşturma](../../mfc/reference/mfc-activex-control-wizard.md). OLE denetimleri penceresiz ve titreşimsiz denetimleri de dahil olmak üzere, en iyi duruma getirme hakkında bilgi için bkz. [MFC ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Makaleleri bir OLE denetim çerçevesi geliştirme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md) ve [genel bakış: Bir MFC ActiveX denetim programı oluşturma](../../mfc/reference/mfc-activex-control-wizard.md). OLE denetimleri penceresiz ve titreşimsiz denetimleri de dahil olmak üzere, en iyi duruma getirme hakkında bilgi için bkz: [MFC ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -848,7 +848,7 @@ BOOL ClipCaretRect(LPRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Giriş üzerinde bir işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) ayarlanacak giriş işaretini alanı içeren yapısı. Çıktı, ayarlanan şapka alan ya da giriş işaretini dikdörtgen tamamen kapsamdaki yoksa NULL.
+Giriş üzerinde bir işaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) ayarlanacak giriş işaretini alanı içeren yapısı. Çıktı, ayarlanan şapka alan ya da giriş işaretini dikdörtgen tamamen kapsamdaki yoksa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -934,7 +934,7 @@ void DoClick();
 
 Geçersiz kılınabilir `COleControl::OnClick` üye işlevi çağrılır ve hisse senedi olay harekete, denetim tarafından destekleniyorsa tıklayın.
 
-Bu işlev tarafından desteklenen `COleControl` adlı DoClick stok metodu taban sınıf. Daha fazla bilgi için bkz [ActiveX denetimleri: yöntemler](../../mfc/mfc-activex-controls-methods.md).
+Bu işlev tarafından desteklenen `COleControl` adlı DoClick stok metodu taban sınıf. Daha fazla bilgi için bkz [ActiveX denetimleri: Yöntemleri](../../mfc/mfc-activex-controls-methods.md).
 
 ##  <a name="dopropexchange"></a>  COleControl::DoPropExchange
 
@@ -953,7 +953,7 @@ Bir işaretçi bir `CPropExchange` nesne. Çerçeve özelliği Exchange yön dah
 
 Bu işlev normalde çağrılar **PX_** yüklemek veya bir OLE denetim belirli kullanıcı tanımlı özelliklerini depolamak için İşlevler ailesini.
 
-Denetimi Sihirbazı OLE denetimi projesi oluşturmak için kullanılan, bu işlev geçersiz kılınan sürümü tarafından desteklenen stok özellikleri serileştirmek `COleControl` temel sınıf işlev çağrısıyla `COleControl::DoPropExchange`. Kullanıcı tanımlı Özellikler OLE denetiminize eklemek gibi yeni özellikleri serileştirmek için bu işlevi değiştirmek gerekir. Seri hale getirme hakkında daha fazla bilgi için bkz [ActiveX denetimleri: seri hale getirme](../../mfc/mfc-activex-controls-serializing.md).
+Denetimi Sihirbazı OLE denetimi projesi oluşturmak için kullanılan, bu işlev geçersiz kılınan sürümü tarafından desteklenen stok özellikleri serileştirmek `COleControl` temel sınıf işlev çağrısıyla `COleControl::DoPropExchange`. Kullanıcı tanımlı Özellikler OLE denetiminize eklemek gibi yeni özellikleri serileştirmek için bu işlevi değiştirmek gerekir. Seri hale getirme hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Seri hale getirme](../../mfc/mfc-activex-controls-serializing.md).
 
 ##  <a name="dosuperclasspaint"></a>  COleControl::DoSuperclassPaint
 
@@ -977,7 +977,7 @@ Denetim çizilecek olduğu alan.
 
 Etkin olmayan bir OLE denetim boyama düzgün bir şekilde işlemek için bu işlevi çağırın. OLE kılabileceği bir Windows Denetim ve çağrılması gereken bu işlevi yalnızca kullanılan `OnDraw` denetiminizin işlevi.
 
-Bu işlevi ve bir Windows denetimini alt sınıf yapma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
+Bu işlevi ve bir Windows denetimini alt sınıf yapma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
 ##  <a name="drawcontent"></a>  COleControl::DrawContent
 
@@ -1099,7 +1099,7 @@ Kalıcı veri kaydedildiğinde veya yüklendi biçiminde tutulan en son biçime 
 
 Genellikle, bu denetimin geçersiz kılma tarafından çağrılan ilk işlev olacaktır `COleControl::DoPropExchange`. Yüklenirken, bu işlevi uygulamanın sürüm sayısını kalıcı verileri okur ve sürüm özniteliğini ayarlar [CPropExchange](../../mfc/reference/cpropexchange-class.md) buna göre nesne. Bu işlev, kaydederken kalıcı veri sürüm numarasını yazar.
 
-Kalıcılığı ve sürüm oluşturma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: seri hale getirme](../../mfc/mfc-activex-controls-serializing.md).
+Kalıcılığı ve sürüm oluşturma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Seri hale getirme](../../mfc/mfc-activex-controls-serializing.md).
 
 ##  <a name="fireclick"></a>  COleControl::FireClick
 
@@ -1690,7 +1690,7 @@ Varsayılan olarak, `GetControlFlags` döndürür `fastBeginPaint | clipPaintDC`
 |`windowlessActivate`|Ayarla, denetiminizin penceresiz etkinleştirme kullandığını gösterir.|
 |`canOptimizeDraw`|Ayarla, kapsayıcı destekliyorsa, iyileştirilmiş çizimi denetimini gerçekleştireceğini gösterir.|
 
-Hakkında daha fazla bilgi için `GetControlFlags` ve diğer iyileştirmeler OLE denetimlerinin [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Hakkında daha fazla bilgi için `GetControlFlags` ve diğer iyileştirmeler OLE denetimlerinin [ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ##  <a name="getcontrolsize"></a>  COleControl::GetControlSize
 
@@ -1808,7 +1808,7 @@ Yazı tipi gönderme arabirimi denetimin stock Font özelliği için bir işaret
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağıranın bittiğinde nesneyi serbest bırakmalısınız unutmayın. İçinde uygulamasını denetimin `InternalGetFont` denetimin stok yazı nesnesine erişmek için. Denetim yazı tiplerini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: ActiveX denetiminde yazı tiplerini kullanarak](../../mfc/mfc-activex-controls-using-fonts.md).
+Çağıranın bittiğinde nesneyi serbest bırakmalısınız unutmayın. İçinde uygulamasını denetimin `InternalGetFont` denetimin stok yazı nesnesine erişmek için. Denetim yazı tiplerini kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Bir ActiveX denetiminde yazı tiplerini kullanma](../../mfc/mfc-activex-controls-using-fonts.md).
 
 ##  <a name="getfonttextmetrics"></a>  COleControl::GetFontTextMetrics
 
@@ -3565,7 +3565,7 @@ void Refresh();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev tarafından desteklenen `COleControl` yenileme adlı bir stok yöntemi olarak temel sınıfı. Bu, kullanıcıların belirli bir zamanda Denetim repaint OLE denetiminizin sağlar. Bu yöntem hakkında daha fazla bilgi için bkz [ActiveX denetimleri: yöntemler](../../mfc/mfc-activex-controls-methods.md).
+Bu işlev tarafından desteklenen `COleControl` yenileme adlı bir stok yöntemi olarak temel sınıfı. Bu, kullanıcıların belirli bir zamanda Denetim repaint OLE denetiminizin sağlar. Bu yöntem hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Yöntemleri](../../mfc/mfc-activex-controls-methods.md).
 
 ##  <a name="releasecapture"></a>  COleControl::ReleaseCapture
 
@@ -3636,9 +3636,9 @@ void ResetStockProps();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellikler: görünüm, arka plan rengi, BorderStyle, açıklamalı alt yazı, etkin, yazı tipi, ForeColor, hWnd ve metin. Stok özellikleri açıklaması için bkz: [ActiveX denetimleri: stok Özellikler ekleme](../../mfc/mfc-activex-controls-adding-stock-properties.md).
+Özellikler şunlardır: Görünüm, arka plan rengi, BorderStyle, açıklamalı alt yazı, etkin, yazı tipi, ForeColor, hWnd ve metin. Stok özellikleri açıklaması için bkz: [ActiveX denetimleri: Stok Özellikler ekleme](../../mfc/mfc-activex-controls-adding-stock-properties.md).
 
-Kullanarak bir denetimin ikili başlatma performansını iyileştirebilir `ResetStockProps` ve `ResetVersion` geçersiz kılmak için `COleControl::OnResetState`. Aşağıdaki örnek bakın. Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Kullanarak bir denetimin ikili başlatma performansını iyileştirebilir `ResetStockProps` ve `ResetVersion` geçersiz kılmak için `COleControl::OnResetState`. Aşağıdaki örnek bakın. Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ### <a name="example"></a>Örnek
 
@@ -3659,7 +3659,7 @@ Denetime atanmış sürüm numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanarak bir denetimin ikili başlatma performansını iyileştirebilir `ResetVersion` ve `ResetStockProps` geçersiz kılmak için `COleControl::OnResetState`. Örneğe bakın [ResetStockProps](#resetstockprops). Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Kullanarak bir denetimin ikili başlatma performansını iyileştirebilir `ResetVersion` ve `ResetStockProps` geçersiz kılmak için `COleControl::OnResetState`. Örneğe bakın [ResetStockProps](#resetstockprops). Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ##  <a name="scrollwindow"></a>  COleControl::ScrollWindow
 
@@ -3741,7 +3741,7 @@ A `CArchive` gelen veya giden serileştirmek için nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `SerializeExtent`, `SerializeStockProps`, ve `SerializeVersion` geçersiz kılmak için `COleControl::Serialize`. Aşağıdaki örnek bakın. Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `SerializeExtent`, `SerializeStockProps`, ve `SerializeVersion` geçersiz kılmak için `COleControl::Serialize`. Aşağıdaki örnek bakın. Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ### <a name="example"></a>Örnek
 
@@ -3749,7 +3749,7 @@ Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `Se
 
 ##  <a name="serializestockprops"></a>  COleControl::SerializeStockProps
 
-Serileştiren veya durumunu başlatır `COleControl` stok özellikleri: görünüm, arka plan rengi, BorderStyle, açıklamalı alt yazı, etkin, yazı tipi, ForeColor ve metin.
+Serileştiren veya durumunu başlatır `COleControl` stok özellikleri: Görünüm, arka plan rengi, BorderStyle, açıklamalı alt yazı, etkin, yazı tipi, ForeColor ve metin.
 
 ```
 void SerializeStockProps(CArchive& ar);
@@ -3762,9 +3762,9 @@ A `CArchive` gelen veya giden serileştirmek için nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stok özellikleri açıklaması için bkz: [ActiveX denetimleri: stok Özellikler ekleme](../../mfc/mfc-activex-controls-adding-stock-properties.md).
+Stok özellikleri açıklaması için bkz: [ActiveX denetimleri: Stok Özellikler ekleme](../../mfc/mfc-activex-controls-adding-stock-properties.md).
 
-Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `SerializeStockProps`, `SerializeExtent`, ve `SerializeVersion` geçersiz kılmak için `COleControl::Serialize`. Bir örnek için koda bakın [SerializeExtent](#serializeextent). Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `SerializeStockProps`, `SerializeExtent`, ve `SerializeVersion` geçersiz kılmak için `COleControl::Serialize`. Bir örnek için koda bakın [SerializeExtent](#serializeextent). Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ##  <a name="serializeversion"></a>  COleControl::SerializeVersion
 
@@ -3794,7 +3794,7 @@ Denetim sürüm numarası. Belirtilen arşive yüklenirken ise `SerializeVersion
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `SerializeVersion`, `SerializeExtent`, ve `SerializeStockProps` geçersiz kılmak için `COleControl::Serialize`. Bir örnek için koda bakın [SerializeExtent](#serializeextent). Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Kullanarak bir denetimin ikili Kalıcılık performansını iyileştirebilir `SerializeVersion`, `SerializeExtent`, ve `SerializeStockProps` geçersiz kılmak için `COleControl::Serialize`. Bir örnek için koda bakın [SerializeExtent](#serializeextent). Başlatma en iyi duruma getirme hakkında daha fazla bilgi için bkz: [ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ##  <a name="setappearance"></a>  COleControl::SetAppearance
 
@@ -3811,7 +3811,7 @@ A **kısa** (VT_I2) değeri, denetimin görünümünü için kullanılacak. Sıf
 
 ### <a name="remarks"></a>Açıklamalar
 
-Stok özellikleri hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: Özellikler](../../mfc/mfc-activex-controls-properties.md).
+Stok özellikleri hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: Özellikleri](../../mfc/mfc-activex-controls-properties.md).
 
 ##  <a name="setbackcolor"></a>  COleControl::SetBackColor
 
@@ -3828,7 +3828,7 @@ Arka plan denetiminizi çizmek için kullanılacak bir OLE_COLOR değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle ilişkili özellikler bu özelliği ve diğer kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Özellikler](../../mfc/mfc-activex-controls-properties.md).
+İle ilişkili özellikler bu özelliği ve diğer kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Özellikleri](../../mfc/mfc-activex-controls-properties.md).
 
 ##  <a name="setborderstyle"></a>  COleControl::SetBorderStyle
 
@@ -3952,7 +3952,7 @@ void SetForeColor(OLE_COLOR dwForeColor);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle ilişkili özellikler bu özelliği ve diğer kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Özellikler](../../mfc/mfc-activex-controls-properties.md).
+İle ilişkili özellikler bu özelliği ve diğer kullanma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Özellikleri](../../mfc/mfc-activex-controls-properties.md).
 
 ##  <a name="setinitialdataformats"></a>  COleControl::SetInitialDataFormats
 
@@ -3964,7 +3964,7 @@ virtual void SetInitialDataFormats();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama iki biçim belirtir: CF_METAFILEPICT ve kalıcı özelliğini ayarlayın.
+Varsayılan uygulama, iki biçim belirtir: CF_METAFILEPICT ve kalıcı bir özelliği ayarlayın.
 
 ##  <a name="setinitialsize"></a>  COleControl::SetInitialSize
 

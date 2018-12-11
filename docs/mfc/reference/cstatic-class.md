@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: 622172d369818a7a503945bcd3cf064662f38266
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab25cad77ee0f11167661bb27b408dd5e92b51f9
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576715"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178700"
 ---
 # <a name="cstatic-class"></a>CStatic sınıfı
 
@@ -177,7 +177,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) yapısı. Yapı çizilecek öğesi ve gerekli çizim türü hakkında bilgi içerir.
+Bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) yapısı. Yapı çizilecek öğesi ve gerekli çizim türü hakkında bilgi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 

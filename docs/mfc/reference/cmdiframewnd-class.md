@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: a565e1c9d9c9e4d3773763b0ee78c49f61696723
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d9a2d33f61aa9033bb17c090989b4f08ee82bd7
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617548"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178388"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
 
@@ -160,7 +160,7 @@ virtual BOOL CreateClient(
 ### <a name="parameters"></a>Parametreler
 
 *lpCreateStruct*<br/>
-Uzun bir işaretçi bir [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) yapısı.
+Uzun bir işaretçi bir [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) yapısı.
 
 *pWindowMenu*<br/>
 Penceresi açılır menüsünden bir işaretçi.
@@ -276,7 +276,7 @@ void MDICascade(int nType);
 ### <a name="parameters"></a>Parametreler
 
 *nTür*<br/>
-Art arda bayrak belirtir. Yalnızca aşağıdaki bayrağı belirtilebilir: devre dışı MDI alt pencereleri basamaklı dan engelleyen MDITILE_SKIPDISABLED.
+Art arda bayrak belirtir. Yalnızca aşağıdaki bayrağı belirtilebilir: MDITILE_SKIPDISABLED basamaklı gelen devre dışı MDI alt pencereleri engeller.
 
 ### <a name="remarks"></a>Açıklamalar
 

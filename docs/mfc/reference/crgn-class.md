@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 9c08b679f1423b499a5b95b260fd0fac9ddeaf9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74ee046e81e0f55e5550220166c957317c2bf6cd
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467992"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178557"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 
@@ -78,13 +78,13 @@ class CRgn : public CGdiObject
 |[CRgn::CombineRgn](#combinergn)|Ayarlar bir `CRgn` böylece iki belirtilen birleşimini eşdeğer nesne `CRgn` nesneleri.|
 |[CRgn::CopyRgn](#copyrgn)|Ayarlar bir `CRgn` böylece belirtilen bir kopyası olan nesne `CRgn` nesne.|
 |[CRgn::CreateEllipticRgn](#createellipticrgn)|Başlatan bir `CRgn` elips bölgesi olan nesne.|
-|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|Başlatan bir `CRgn` nesnesi tarafından tanımlanan bir elips bölgesi olan bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.|
+|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|Başlatan bir `CRgn` nesnesi tarafından tanımlanan bir elips bölgesi olan bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.|
 |[CRgn::CreateFromData](#createfromdata)|Bir bölge verilen bölge ve dönüştürme verileri oluşturur.|
 |[CRgn::CreateFromPath](#createfrompath)|Belirli bir cihaz bağlamına seçilen yolun bir bölgesi oluşturur.|
 |[CRgn::CreatePolygonRgn](#createpolygonrgn)|Başlatan bir `CRgn` Çokgen bölgesi olan nesne. Sistem Çokgen otomatik olarak gerekirse, öncelikle son Köşeden bir çizgi çizerek kapatır.|
 |[CRgn::CreatePolyPolygonRgn](#createpolypolygonrgn)|Başlatan bir `CRgn` kapalı çokgenler bir dizi içeren bir bölge ile nesne. Çokgenler ayrık olabilir veya çakışma.|
 |[CRgn::CreateRectRgn](#createrectrgn)|Başlatan bir `CRgn` dikdörtgen bir bölgesi olan nesne.|
-|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|Başlatan bir `CRgn` nesnesi tarafından tanımlanan dikdörtgen bir bölgesi olan bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.|
+|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|Başlatan bir `CRgn` nesnesi tarafından tanımlanan dikdörtgen bir bölgesi olan bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.|
 |[CRgn::CreateRoundRectRgn](#createroundrectrgn)|Başlatan bir `CRgn` yuvarlak köşeli dikdörtgen bir bölgesi olan nesne.|
 |[CRgn::EqualRgn](#equalrgn)|İki denetler `CRgn` nesneleri eşdeğer olup olmadığını belirlemek için.|
 |[CRgn::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CRgn` nesne tanıtıcı bir Windows bölgeye verildiğinde.|
@@ -297,13 +297,13 @@ BOOL CreateFromData(
 ### <a name="parameters"></a>Parametreler
 
 *lpXForm*<br/>
-İşaret eden bir [XFORM](../../mfc/reference/xform-structure.md) bölge üzerinde gerçekleştirilecek dönüşümü tanımlayan veri yapısı. Bu işaretçi NULL ise, kimlik dönüşümü kullanılır.
+İşaret eden bir [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) bölge üzerinde gerçekleştirilecek dönüşümü tanımlayan veri yapısı. Bu işaretçi NULL ise, kimlik dönüşümü kullanılır.
 
 *nCount*<br/>
 İşaret ettiği bayt sayısını belirtir *pRgnData*.
 
 *pRgnData*<br/>
-İşaret eden bir [RGNDATA](../../mfc/reference/rgndata-structure.md) bölge verileri içeren veri yapısı.
+İşaret eden bir [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) bölge verileri içeren veri yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -631,7 +631,7 @@ int GetRegionData(
 ### <a name="parameters"></a>Parametreler
 
 *lpRgnData*<br/>
-İşaret eden bir [RGNDATA](../../mfc/reference/rgndata-structure.md) bilgileri alan veri yapısı. Bu parametre NULL ise, dönüş değeri için bölge veri gereken bayt sayısını içerir.
+İşaret eden bir [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) bilgileri alan veri yapısı. Bu parametre NULL ise, dönüş değeri için bölge veri gereken bayt sayısını içerir.
 
 *nCount*<br/>
 Bayt cinsinden boyutunu belirtir *lpRgnData* arabellek.

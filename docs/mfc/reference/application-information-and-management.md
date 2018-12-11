@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 9d5216cd399943cda67bc9387ea37c938e5cab48
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: c1e742d3320dae4140cc4886c47d34dbe9b6071f
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694341"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178349"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 
@@ -114,7 +114,7 @@ Yeni oluşturulan iş parçacığı nesnesi veya bir hata oluşursa NULL işaret
 
 Çoklu iş parçacığı kullanımı, uygulama tarafından etkinleştirilmelidir; Aksi takdirde, bu işlev başarısız olur. Çoklu iş parçacığı kullanımı etkinleştirme hakkında daha fazla bilgi için [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md) altında *Visual C++ Derleyici Seçenekleri*.
 
-Daha fazla bilgi için `AfxBeginThread`, makalelere göz atın [çoklu iş parçacığı kullanımı: çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md) ve [çoklu iş parçacığı kullanımı: kullanıcı arabirimi iş parçacıkları oluşturma](../../parallel/multithreading-creating-user-interface-threads.md).
+Daha fazla bilgi için `AfxBeginThread`, makalelere göz atın [çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md) ve [çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](../../parallel/multithreading-creating-user-interface-threads.md).
 
 ### <a name="example"></a>Örnek
 
@@ -164,7 +164,7 @@ Bellekten iş parçacığı nesnesini siler.
 
 Sonlandırılacak olan iş parçacığının içinden çağrılmalıdır.
 
-Daha fazla bilgi için `AfxEndThread`, makaleye göz atın [çoklu iş parçacığı kullanımı: iş parçacıklarını sonlandırma](../../parallel/multithreading-terminating-threads.md).
+Daha fazla bilgi için `AfxEndThread`, makaleye göz atın [çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma](../../parallel/multithreading-terminating-threads.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -567,7 +567,7 @@ Bir yol belirtilmezse ve dosya adı uzantısı atlanırsa, varsayılan uzantı. 
 
 - Geçerli dizin.
 
-- **Windows 95/98:** Windows Sistem dizini. **Windows NT:** 32-bit Windows Sistem dizini. Bu dizin SYSTEM32 adıdır.
+- **Windows 95/98:** Windows Sistem dizini. **Windows NT:** 32 bit Windows Sistem dizini. Bu dizin SYSTEM32 adıdır.
 
 - **Yalnızca Windows NT:** 16-bit Windows Sistem dizini. Bu dizinin yolunu alır hiçbir Win32 işlevi yoktur, ancak bunu aranır. Bu dizinin adını sistemidir.
 
@@ -715,7 +715,7 @@ Kayıtlı adı için bir sınıf tarafından `AfxRegisterWndClass` parametreleri
 
 Eğer `AfxRegisterWndClass` her sınıf için ayrı bir pencerede sınıfı yerine aynı parametrelere sahip birden çok CWnd'den türetilen sınıflar için her sınıf aynı pencere sınıfı paylaşır. CS_CLASSDC sınıfı stili kullanılıyorsa, bu sorunlara neden olabilir. Birden çok CS_CLASSDC pencere sınıfları yerine, bir CS_CLASSDC pencere sınıfını ve aynı etki alanı denetleyicisi sınıfı paylaşan kullanan tüm C++ windows edersiniz. Bu sorunu önlemek için çağrı [AfxRegisterClass](#afxregisterclass) sınıfı kaydedilecek.
 
-Teknik Not başvuran [TN001: pencere sınıfı kaydı](../../mfc/tn001-window-class-registration.md) pencere sınıfı kaydı hakkında daha fazla bilgi ve `AfxRegisterWndClass` işlevi.
+Teknik Not başvuran [TN001: Pencere sınıfı kaydı](../../mfc/tn001-window-class-registration.md) pencere sınıfı kaydı hakkında daha fazla bilgi ve `AfxRegisterWndClass` işlevi.
 
 ### <a name="example"></a>Örnek
 
@@ -802,7 +802,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpwsaData*<br/>
-Bir işaretçi bir [WSADATA](../../mfc/reference/wsadata-structure.md) yapısı. Varsa *lpwsaData* NULL, ardından adresini eşit değil `WSADATA` yapısı çağrısıyla dolduğunda `WSAStartup`. Bu işlev ayrıca sağlar `WSACleanup` uygulama sonlandırılmadan önce sizin için çağrılır.
+Bir işaretçi bir [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) yapısı. Varsa *lpwsaData* NULL, ardından adresini eşit değil `WSADATA` yapısı çağrısıyla dolduğunda `WSAStartup`. Bu işlev ayrıca sağlar `WSACleanup` uygulama sonlandırılmadan önce sizin için çağrılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -108,12 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: 91cf9b2035bf24c16007ed6021772c7d5344fc68
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e7472b808d8b5d743d884d9e3806df7ffe499836
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333273"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178785"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 
@@ -331,7 +331,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpCompareItemStruct*<br/>
-Uzun bir işaretçi bir [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) yapısı.
+Uzun bir işaretçi bir [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -383,7 +383,7 @@ virtual BOOL Create(
 Birleşik giriş kutusu stilini belirtir. Herhangi bir birleşimini uygulamak [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) kutusu.
 
 *Rect*<br/>
-Birleşik giriş kutusunun boyutunu ve konumunu işaret eder. Olabilir bir [RECT yapısı](../../mfc/reference/rect-structure1.md) veya `CRect` nesne.
+Birleşik giriş kutusunun boyutunu ve konumunu işaret eder. Olabilir bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) veya `CRect` nesne.
 
 *pParentWnd*<br/>
 Açılan kutunun üst penceresine belirtir (genellikle bir `CDialog`). NULL olmamalıdır.
@@ -450,7 +450,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDeleteItemStruct*<br/>
-Bir Windows uzun bir işaretçiye [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) olan silinmiş öğenin hakkında bilgi içeren yapısı. Bkz: [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) bu yapı tanımı için.
+Bir Windows uzun bir işaretçiye [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) olan silinmiş öğenin hakkında bilgi içeren yapısı. Bkz: [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) bu yapı tanımı için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -542,7 +542,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Bir işaretçi bir [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) gerekli çizim türü hakkında bilgi içeren yapısı.
+Bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerekli çizim türü hakkında bilgi içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -674,7 +674,7 @@ BOOL GetCueBanner(
 
 İlk aşırı yükleme içinde bir [CString](../../atl-mfc-shared/using-cstring.md) varsa; işaret başlık metnini içeren nesne Aksi halde, bir `CString` sıfır uzunlukta bir nesne.
 
-veya
+-veya-
 
 İkinci aşırı yükleme, bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
@@ -715,7 +715,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lprect*<br/>
-İşaret [RECT yapısı](../../mfc/reference/rect-structure1.md) koordinatlarını almak için olmasıdır.
+İşaret [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) koordinatlarını almak için olmasıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1028,7 +1028,7 @@ Başarılı bir bellek reallocation önce birleşik giriş kutusu liste kutusu k
 
 Liste kutusu bölümü çok sayıda öğeleri eklemeden önce bu işlevi çağırın `CComboBox`.
 
-Windows 95/98 yalnızca: *wParam* 16 bitlik değerler için parametre sınırlıdır. Başka bir deyişle, liste kutuları 32.767'den fazla öğe içeremez. Öğe sayısını kısıtlı olsa da, bir liste kutusu öğeleri toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
+Windows 95/98 yalnızca: *WParam* 16 bitlik değerler için parametre sınırlıdır. Başka bir deyişle, liste kutuları 32.767'den fazla öğe içeremez. Öğe sayısını kısıtlı olsa da, bir liste kutusu öğeleri toplam boyutu yalnızca kullanılabilir bellekle sınırlıdır.
 
 Bu işlev, özel olarak çok sayıda (100'den fazla) öğe olan liste kutuları başlatma sürecinin hızlanmasına yardımcı olur. Bu nedenle, sonraki bellek belirtilen miktarı preallocates [AddString](#addstring), [InsertString](#insertstring), ve [Dir](#dir) işlevler en kısa sürede alır. Tahminleri parametrelerini kullanabilirsiniz. Overestimate, bazı ek bellek tahsis edilmez; çoğu kişinin hafife aldığı, normal ayırma ön tahsis miktarınızı aşan öğeleri için kullanılır.
 
@@ -1107,7 +1107,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpMeasureItemStruct*<br/>
-Uzun bir işaretçi bir [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) yapısı.
+Uzun bir işaretçi bir [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

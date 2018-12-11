@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: 756f50afd9b67e4895d8d1b15652602630c24918
-ms.sourcegitcommit: 984fb4814a2dd9bcea5ec88c9528707f17a7cffa
+ms.openlocfilehash: c42f7b77c04b2c94923908fa8b9542bea313b154
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51949550"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178999"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 
@@ -427,7 +427,7 @@ virtual BOOL Create(
 Düzenleme denetiminin stilini belirtir. Listelenen pencere stilleri birleşimi geçerli **açıklamalar** bölümüne bakın, ve [düzenleme denetimi stilleri](/windows/desktop/Controls/edit-control-styles)Windows SDK içinde açıklandığı gibi.
 
 *Rect*<br/>
-Düzenleme denetiminin boyutunu ve konumunu belirtir. Olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](../../mfc/reference/rect-structure1.md) yapısı.
+Düzenleme denetiminin boyutunu ve konumunu belirtir. Olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
 
 *pParentWnd*<br/>
 Düzenleme denetiminin üst penceresine belirtir (genellikle bir [CDialog](../../mfc/reference/cdialog-class.md)). NULL olmamalıdır.
@@ -552,7 +552,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### <a name="parameters"></a>Parametreler
 
 *pDisplayRect*<br/>
-İşaretçi bir [RECT](../../mfc/reference/rect-structure1.md) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metni görüntülemek için cihaz alanını belirterek nesne.
+İşaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) metni görüntülemek için cihaz alanını belirterek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -973,7 +973,7 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) veya işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) biçimlendirme dikdörtgen almaya `CRichEditCtrl` nesne.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) veya işaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) biçimlendirme dikdörtgen almaya `CRichEditCtrl` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1855,7 +1855,7 @@ void SetRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) veya işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) biçimlendirme dikdörtgen yeni sınırlarını gösterir.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) veya işaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) biçimlendirme dikdörtgen yeni sınırlarını gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 

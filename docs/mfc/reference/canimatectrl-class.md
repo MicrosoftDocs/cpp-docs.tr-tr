@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: 5bbd59101815d18cae92b9996aff54f0cadaf9ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a22c88e1a19cd1aef1bbfacd7f255adc2b19d0e
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608435"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178270"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 
@@ -152,7 +152,7 @@ virtual BOOL Create(
 Animasyon denetiminin stilini belirtir. Herhangi bir birleşimini stilleri aşağıdaki Açıklamalar bölümüne ve animasyon denetim stilleri açıklanan açıklanan windows uygulama [animasyon denetim stilleri](/windows/desktop/Controls/animation-control-styles) Windows SDK.
 
 *Rect*<br/>
-Animasyonu denetimin konumunu ve boyutunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.
+Animasyonu denetimin konumunu ve boyutunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
 
 *pParentWnd*<br/>
 Animasyon denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.

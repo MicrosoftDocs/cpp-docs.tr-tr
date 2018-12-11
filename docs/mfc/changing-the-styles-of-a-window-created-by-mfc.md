@@ -21,12 +21,12 @@ helpviewer_keywords:
 - CMainFrame class [MFC]
 - styles [MFC], windows
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-ms.openlocfilehash: ebef671a34d2b50bd547a2fd9e484581df8ee3e8
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 19ff4e41f3b8c73e7ae62fbf264ea955b42bbc1a
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693224"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53177916"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC Tarafından Oluşturulan Pencerenin Stillerini Değiştirme
 
@@ -46,7 +46,7 @@ Ana çerçeve pencereleri için pencereyi bir sistem menüsünü olup olmadığ�
 
 Mevcut bir uygulamada pencere özniteliklerini değiştiriyorsanız, bu makalenin geri kalanında yönergeleri yerine izleyin.
 
-Uygulama Sihirbazı ile oluşturulan bir framework uygulaması tarafından kullanılan varsayılan pencere özniteliklerini değiştirmek için pencerenin geçersiz kılma [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) sanal üye işlevi. `PreCreateWindow` bir uygulama oluşturma işlemini normalde tarafından dahili olarak yönetilen erişim sağlayan [CDocTemplate](../mfc/reference/cdoctemplate-class.md) sınıfı. Framework çağrıları `PreCreateWindow` penceresi oluşturma önce. Değiştirerek [CREATESTRUCT](../mfc/reference/createstruct-structure.md) yapısı geçirilen `PreCreateWindow`, uygulamanızın pencere oluşturmak için kullanılan öznitelikleri değiştirebilirsiniz. Örneğin, bir pencere bir başlık kullanmadığından emin olmak için aşağıdaki bit düzeyinde işlem kullanın:
+Uygulama Sihirbazı ile oluşturulan bir framework uygulaması tarafından kullanılan varsayılan pencere özniteliklerini değiştirmek için pencerenin geçersiz kılma [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) sanal üye işlevi. `PreCreateWindow` bir uygulama oluşturma işlemini normalde tarafından dahili olarak yönetilen erişim sağlayan [CDocTemplate](../mfc/reference/cdoctemplate-class.md) sınıfı. Framework çağrıları `PreCreateWindow` penceresi oluşturma önce. Değiştirerek [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) yapısı geçirilen `PreCreateWindow`, uygulamanızın pencere oluşturmak için kullanılan öznitelikleri değiştirebilirsiniz. Örneğin, bir pencere bir başlık kullanmadığından emin olmak için aşağıdaki bit düzeyinde işlem kullanın:
 
 [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]
 

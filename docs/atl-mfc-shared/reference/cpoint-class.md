@@ -11,12 +11,12 @@ helpviewer_keywords:
 - POINT structure
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-ms.openlocfilehash: 5df8dbe03a59f899f2157eff842218e91e8f40dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f6ab15f80ac448b4e7383e2db92f22262c20d08
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500626"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178075"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 
@@ -55,9 +55,9 @@ class CPoint : public tagPOINT
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ayrıca yönlendirmek üzere öğe işlevleri içerir `CPoint` ve [noktası](../../mfc/reference/point-structure.md) yapıları.
+Ayrıca yönlendirmek üzere öğe işlevleri içerir `CPoint` ve [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapıları.
 
-A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. Bu sınıfın "boyutu" ile etkileşim işleçleri ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapıları iki birbirinin yerine olduğundan.
+A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. Bu sınıfın "boyutu" ile etkileşim işleçleri ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapıları iki birbirinin yerine olduğundan.
 
 > [!NOTE]
 >  Bu sınıf türetilir `tagPOINT` yapısı. (Adın `tagPOINT` için daha az kullanılan addır `POINT` yapısı.) Veri üyeleri buna `POINT` yapısını `x` ve `y`, erişilebilir veri üyeleri `CPoint`.
@@ -96,10 +96,10 @@ Değerini belirtir `x` üyesi `CPoint`.
 Değerini belirtir `y` üyesi `CPoint`.
 
 *initPt*<br/>
-[NOKTASI](../../mfc/reference/point-structure.md) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirten `CPoint`.
+[NOKTASI](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirten `CPoint`.
 
 *initSize*<br/>
-[BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.
+[BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.
 
 *dwPoint*<br/>
 Kümeleri `x` alt sıra sözcüğüne üye *dwPoint* ve `y` dwpoint üye *dwPoint*.
@@ -154,10 +154,10 @@ Kaydırılacağı uzaklık belirtir `x` üyesi `CPoint`.
 Kaydırılacağı uzaklık belirtir `y` üyesi `CPoint`.
 
 *Noktası*<br/>
-Belirtir ( [noktası](../../mfc/reference/point-structure.md) veya `CPoint`) dengelemek için `CPoint`.
+Belirtir ( [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) veya `CPoint`) dengelemek için `CPoint`.
 
 *Boyutu*<br/>
-Belirtir ( [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.
+Belirtir ( [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.
 
 ### <a name="example"></a>Örnek
 
@@ -174,7 +174,7 @@ BOOL operator==(POINT point) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya `CPoint` nesne.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -195,7 +195,7 @@ BOOL operator!=(POINT point) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya `CPoint` nesne.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -217,10 +217,10 @@ void operator+=(POINT point) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Boyutu*<br/>
-İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -246,10 +246,10 @@ void operator-=(POINT point) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Boyutu*<br/>
-İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -276,13 +276,13 @@ CRect operator+(const RECT* lpRect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Boyutu*<br/>
-İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 *Noktası*<br/>
-İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 *lpRect*<br/>
-Bir işaretçi içeren bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
+Bir işaretçi içeren bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -312,13 +312,13 @@ CPoint operator-() const throw();
 ### <a name="parameters"></a>Parametreler
 
 *Noktası*<br/>
-A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+A [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 *Boyutu*<br/>
-A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
 *lpRect*<br/>
-Bir işaretçi bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
+Bir işaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -344,7 +344,7 @@ Bir noktası negatif yapılacak birli işlecini kullanın. Örneğin, noktasıyl
 
 [MFC örnek MDI](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[POINT yapısı](../../mfc/reference/point-structure.md)<br/>
+[POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
 [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize Sınıfı](../../atl-mfc-shared/reference/csize-class.md)
 
