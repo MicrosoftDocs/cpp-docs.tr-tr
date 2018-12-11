@@ -21,7 +21,7 @@ ms.locfileid: "50662351"
 ## <a name="syntax"></a>Sözdizimi
 
 *Yineleme deyiminin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sırada (***ifade***)***deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;**sırada (**  *ifade*  **)**  *deyimi*
 
 *İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:
 
