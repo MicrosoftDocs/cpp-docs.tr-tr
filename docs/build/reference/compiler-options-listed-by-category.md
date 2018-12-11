@@ -4,18 +4,18 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: aa93158e518950efa9d1f2f8092aeabbc3c7724c
-ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
+ms.openlocfilehash: ef61ebbfad62e6a7bf764bad35204247e47d8ddb
+ms.sourcegitcommit: 6990f842fefc27b522b15cf352f3517b319d78da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51598827"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248578"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
 Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik liste için bkz: [seçenekleri alfabetik listelenmiş derleyici](compiler-options-listed-alphabetically.md).
 
-### <a name="optimization"></a>En iyi duruma getirme
+### <a name="optimization"></a>İyileştirme
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -62,7 +62,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ homeparams](homeparams-copy-register-parameters-to-stack.md)|Yazmaçlarında işlev girişi ile birlikte kendi konumlarına yazılmasını zorlar parametreler geçildi. Bu derleyici seçeneğini yalnızca x64 için olan derleyicileri (yerel ve çapraz derleme).|
 |[/ hotpatch](hotpatch-create-hotpatchable-image.md)|Bir hotpatchable görüntü oluşturur.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Hızlı transcendentals üretir.|
-|[QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Yardımcı işlevini çağrısının bastırır `_ftol` bir kayan nokta türünden bir tamsayı türüne dönüştürme zaman gereklidir. (yalnızca x86)|
+|[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Yardımcı işlevini çağrısının bastırır `_ftol` bir kayan nokta türünden bir tamsayı türüne dönüştürme zaman gereklidir. (yalnızca x86)|
 |[/ Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Kaldırır `fwait` içindeki komutları `try` engeller.|
 |[/ Qpar](qpar-auto-parallelizer.md)|Otomatik paralelleştirilmesini etkinleştirir.|
 |[/ Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Otomatik paralelleştirme için raporlama seviyelerini etkinleştirir.|
@@ -207,7 +207,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Kullanım dışı. Hızlı kontrolleri etkinleştirir. Kullanım [rtc1](rtc-run-time-error-checks.md) yerine.|
 |[/H](h-restrict-length-of-external-names.md)|Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar.|
 |[/Og](og-global-optimizations.md)|Kullanım dışı. Küresel iyileştirmeleri kullanır.|
-|[QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Kayan nokta türünden bir integral türe dönüştürme belirtmek için bir kez kullanıldı.|
+|[/QIfist](qifist-suppress-ftol.md)|Kullanım dışı. Kayan nokta türünden bir integral türe dönüştürme belirtmek için bir kez kullanıldı.|
 |[/V](v-version-number.md)|Kullanım dışı. .Obj dosya sürüm dizesini ayarlar.|
 |[/ Wp64](wp64-detect-64-bit-portability-issues.md)|Kullanımdan kalktı. 64 bitlik olasılık sorularını algılar.|
 |[/YD](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Basamak tüm nesne dosyalarında hata ayıklama bilgileri tamamlayın. Kullanım [/zi](z7-zi-zi-debug-information-format.md) yerine.|
