@@ -21,7 +21,7 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
    Bağlama duyarlı Yardım için F1 ve Yardım menüsünü kullanarak veya tıklayarak kullanılabilir Yardım dosyaları kümesi üretir bir **yardımcı** bir iletişim kutusu düğmesine. Yardım desteği yardım derleyicisi gerektirir. Yardım derleyicisini yüklemediyseniz, Kur'u yeniden çalıştırarak yükleyebilirsiniz.
 
-   Bkz: [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../ide/help-files-html-help.md) daha fazla bilgi için.
+   Bkz: [HTML Yardımı: Programlarınız için Bağlama Duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../ide/help-files-html-help.md) daha fazla bilgi için.
 
 - **Yazdırmayı ve Baskı Önizleme**
 

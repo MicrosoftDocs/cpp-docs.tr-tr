@@ -94,7 +94,7 @@ Boyut sayısı `array_view` nesne.
 |Ad|Açıklama|
 |----------|-----------------|
 |[operator()](#operator_call)|Parametre veya parametreler tarafından belirtilen öğenin değerini döndürür.|
-|[operator]](#operator_at)|Parametreler ile belirtilen öğeyi döndürür.|
+|[operator[]](#operator_at)|Parametreler ile belirtilen öğeyi döndürür.|
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `array_view` bu nesne içine.|
 
 ### <a name="public-constants"></a>Genel sabitler

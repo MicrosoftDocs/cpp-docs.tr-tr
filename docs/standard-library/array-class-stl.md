@@ -162,7 +162,7 @@ class array;
 |İşleç|Açıklama|
 |-|-|
 |[array::operator=](#op_eq)|Denetlenen dizi değiştirir.|
-|[Array::operator]](#op_at)|Belirtilen konumda bir öğe erişir.|
+|[Array::operator[]](#op_at)|Belirtilen konumda bir öğe erişir.|
 
 ## <a name="remarks"></a>Açıklamalar
 

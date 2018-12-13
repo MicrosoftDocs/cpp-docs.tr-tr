@@ -20,7 +20,7 @@ ms.locfileid: "51520162"
 Bu Not, Yardım bağlamlarının kimlikleri ve diğer Yardım sorunları MFC'de atamak için kurallar açıklanmaktadır. Bağlama duyarlı Yardım desteği, Visual c++'ta kullanılabilir olan Yardım derleyicisi gerektirir.
 
 > [!NOTE]
->  Bağlama duyarlı Yardım WinHelp kullanan uygulama yanı sıra, MFC de HTML Yardımı kullanılmasını destekler. Bu desteği ve HTML Yardımı ile programlama hakkında daha fazla bilgi için bkz. [HTML Help: Context-Sensitive Help for Your Programs](../mfc/html-help-context-sensitive-help-for-your-programs.md).
+>  Bağlama duyarlı Yardım WinHelp kullanan uygulama yanı sıra, MFC de HTML Yardımı kullanılmasını destekler. Bu desteği ve HTML Yardımı ile programlama hakkında daha fazla bilgi için bkz. [HTML Yardımı: Programlarınız için Bağlama Duyarlı Yardım](../mfc/html-help-context-sensitive-help-for-your-programs.md).
 
 ## <a name="types-of-help-supported"></a>Desteklenen Yardım türleri
 

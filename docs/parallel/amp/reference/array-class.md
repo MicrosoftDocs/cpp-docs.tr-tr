@@ -77,7 +77,7 @@ Dizinin boyut.
 |----------|-----------------|
 |[işleç std::vector&lt;value_type&gt;](#operator_vec)|Kullanan `copy(*this, vector)` örtük olarak bir std dizisine dönüştürmek için::[vektör](../../../standard-library/vector-class.md) nesne.|
 |[operator()](#operator_call)|Parametreler ile belirtilen öğe değeri döndürür.|
-|[operator]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
+|[operator[]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `array` bu nesne içine.|
 
 ### <a name="public-constants"></a>Genel sabitler
