@@ -1,6 +1,6 @@
 ---
 title: _interlockedbittestandset iç işlevleri
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _interlockedbittestandset_cpp
 - _interlockedbittestandset_HLEAcquire
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - _interlockedbittestandset64 intrinsic
 - lock_bts instruction
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-ms.openlocfilehash: 5db4d203283ee916bb43fabccf48ea2720aba52c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f7dc1cf6501f789d969143bc23469a6ecf7239c
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459650"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627221"
 ---
 # <a name="interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset iç işlevleri
 
@@ -109,4 +109,4 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

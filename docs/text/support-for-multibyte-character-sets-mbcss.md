@@ -9,12 +9,12 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - MBCS [C++]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-ms.openlocfilehash: b6c8dc5548eb1082866b7a069fb38fd329effc75
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f309f6d7147b37691564d3d72c151da90055c6a
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437276"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627351"
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)
 
@@ -46,7 +46,7 @@ MFC ve C çalışma zamanı kitaplığı tek baytlık MBCS ve Unicode desteği p
 
 ### <a name="mbcsunicode-portability"></a>MBCS/Unicode taşınabilirlik
 
-Tchar.h üstbilgi dosyasını kullanarak, tek baytlı MBCS ve Unicode oluşturabileceğinizi aynı kaynaklardan gelen uygulamaları. Tchar.h ön ekine sahip makroları tanımlar *_tcs* , eşleme için `str`, `_mbs`, veya `wcs` İşlevler, uygun şekilde. MBCS oluşturmak için sembolünü tanımlayın `_MBCS`. Unicode oluşturmak için sembolünü tanımlayın `_UNICODE`. Varsayılan olarak, `_MBCS` MFC uygulamaları için tanımlanır. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
+Tchar.h üstbilgi dosyasını kullanarak, tek baytlı MBCS ve Unicode oluşturabileceğinizi aynı kaynaklardan gelen uygulamaları. Tchar.h ön ekine sahip makroları tanımlar *_tcs* , eşleme için `str`, `_mbs`, veya `wcs` İşlevler, uygun şekilde. MBCS oluşturmak için sembolünü tanımlayın `_MBCS`. Unicode oluşturmak için sembolünü tanımlayın `_UNICODE`. Varsayılan olarak, `_UNICODE` MFC uygulamaları için tanımlanır. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
 
 > [!NOTE]
 >  Her ikisi de tanımlarsanız davranışı tanımsız `_UNICODE` ve `_MBCS`.

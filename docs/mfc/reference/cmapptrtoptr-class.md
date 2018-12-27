@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 23cbbaec-9d64-48f2-92ae-5e24fa64b926
-ms.openlocfilehash: ec635ea00c9659d43d148c55e02a70a7c759279a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a2c9a3a98d46e263dab645805c697da42af41fe
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540835"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657415"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr sınıfı
 
@@ -89,7 +89,7 @@ class CMapPtrToPtr : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
+|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
 
 ## <a name="remarks"></a>Açıklamalar
 

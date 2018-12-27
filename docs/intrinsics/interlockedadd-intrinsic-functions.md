@@ -1,6 +1,6 @@
 ---
 title: _InterlockedAdd İç İşlevleri
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedAdd64_acq_cpp
 - _InterlockedAdd64_acq
@@ -26,18 +26,18 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: 0952a7727a433a718eac2f1873249327647599dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 473d113ff9af3b009075dfef657082034b1bbcb6
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461600"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626912"
 ---
 # <a name="interlockedadd-intrinsic-functions"></a>_InterlockedAdd İç İşlevleri
 
 **Microsoft'a özgü**
 
-Birden çok iş parçacığı paylaşılan değişkene erişimi olduğunda işlemin başarıyla tamamlanmasını sağlar bir atomik ayrıca gerçekleştirin.
+Bu işlevler, birden fazla iş parçacığı paylaşılan değişkene erişimi olduğunda işlemi başarıyla tamamlandığından emin olmasını sağlayan bir atomik toplama gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -105,13 +105,13 @@ Her iki işlev de toplamın sonucunu döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sahip bu işlevlerin sürümleri `_acq` veya `_rel` sonekleri bir birbirine kenetlenmiş ayrıca Al veya sürüm semantiği aşağıdaki gerçekleştirin. Önce herhangi bir sonraki bellek, okuma ve yazma işleminin sonucu tüm iş parçacıkları ve işlemciler görünür yapılır semantiği anlamına gelir edinin. Alma kritik bölüm girerken yararlı olur. Release semantikleri, tüm bellek okuma ve yazma işleminin sonucu kendisini görünür hale gelir önce tüm iş parçacıkları ve işlemciler için görünür duruma zorlanır anlamına gelir. Yayın, bir kritik bölüm ayrılırken yararlıdır. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+Sahip bu işlevlerin sürümleri `_acq` veya `_rel` sonekleri bir birbirine kenetlenmiş ayrıca Al veya sürüm semantiği aşağıdaki gerçekleştirin. *Alma semantiği* önce herhangi bir sonraki bellek, okuma ve yazma işleminin sonucu tüm iş parçacıkları ve işlemciler görünür yapıldığını anlamına gelir. Alma kritik bölüm girerken yararlı olur. *Sürüm semantiği* zorunlu işleminin sonucu kendisini görünür hale gelir önce tüm iş parçacıkları ve işlemciler için görünür duruma tüm bellek okuyan ve yazan anlamına gelir. Yayın, bir kritik bölüm ayrılırken yararlıdır. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki, bellek önünde bir engel işlem yok.
 
 Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // interlockedadd.cpp
 // Compile with: /Oi /EHsc
 // processor: ARM
@@ -132,13 +132,13 @@ int main()
 
 ## <a name="output"></a>Çıkış
 
-```
+```Output
 0xffffff00 0xff0000 0xffffff00
 ```
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // interlockedadd64.cpp
 // compile with: /Oi /EHsc
 // processor: ARM
@@ -162,7 +162,7 @@ int main()
 
 ## <a name="output"></a>Çıkış
 
-```
+```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff
 ```
@@ -172,4 +172,4 @@ Return value: ffff00ffffffff
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

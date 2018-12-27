@@ -33,12 +33,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-ms.openlocfilehash: 367a5ed6bf9d42730a309570c93afd1b315bae25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8036b0942600e5d47254583e2675c525010a5c1
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501757"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657571"
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector Sınıfı
 
@@ -121,7 +121,7 @@ Ayırma ve eşzamanlı vektör için bellek ayırmayı kaldırma hakkındaki ayr
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator]](#operator_at)|Fazla Yüklendi. Eşzamanlı vektör içinde belirtilen dizinindeki öğeyi erişim sağlar. Bu yöntem eşzamanlı güvenlidir okuma işlemleri için ve ayrıca, sağlamış olduğu sürece, değeri vektör büyüyen çalışırken `_Index` eşzamanlı vektör boyutu küçüktür.|
+|[İşleci\[\]](#operator_at)|Fazla Yüklendi. Eşzamanlı vektör içinde belirtilen dizinindeki öğeyi erişim sağlar. Bu yöntem eşzamanlı güvenlidir okuma işlemleri için ve ayrıca, sağlamış olduğu sürece, değeri vektör büyüyen çalışırken `_Index` eşzamanlı vektör boyutu küçüktür.|
 |[operator=](#operator_eq)|Fazla Yüklendi. Başka bir deponun içeriğini atar `concurrent_vector` buna nesne. Bu yöntem eşzamanlı güvenli değil.|
 
 ## <a name="remarks"></a>Açıklamalar

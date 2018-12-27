@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-ms.openlocfilehash: 01e5866866bfc9cf81b243c569e527ab5019b928
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df9335fa2fc66ebba73b5c92ecd8007ca435f499
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437955"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627273"
 ---
 # <a name="unicode-programming-summary"></a>Unicode Programlama Özeti
 
@@ -22,7 +22,7 @@ Unicode MFC ve C çalışma zamanı desteği avantajlarından yararlanmak için 
 
 - Giriş noktası belirtin.
 
-   Üzerinde **çıkış** sayfasının **bağlayıcı** proje klasöründe [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu, kümesi **giriş noktası** sembole`wWinMainCRTStartup`.
+   Üzerinde **Gelişmiş** sayfasının **bağlayıcı** proje klasöründe [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu, kümesi **giriş noktası** simgesi`wWinMainCRTStartup`.
 
 - Taşınabilir çalışma zamanı işlevleri ve türleri kullanır.
 

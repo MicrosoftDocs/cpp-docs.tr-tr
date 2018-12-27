@@ -1,48 +1,44 @@
 ---
 title: /homeparams (Kayıt Parametrelerini Yığına Kopyala)
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - /homeparams
 helpviewer_keywords:
 - /homeparams compiler option [C++]
 - -homeparams compiler option [C++]
 ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
-ms.openlocfilehash: 952a38d2ab1268ee3dc1fda0899a3ba047281b44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ffb5ca602feb7a369bb31d0277834786d66ac12a
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518462"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627485"
 ---
 # <a name="homeparams-copy-register-parameters-to-stack"></a>/homeparams (Kayıt Parametrelerini Yığına Kopyala)
 
-Yazmaçlarında işlev girişi ile birlikte kendi konumlarına yazılmasını zorlar parametreler geçildi.
+Kayıtları da işlev girişi ile birlikte kendi konumlarına yazılmasını zorlar parametre geçirildi.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/homeparams
-```
+> **/ homeparams**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu derleyici seçeneğini yalnızca x64 için olan derleyicileri (yerel ve çapraz derleme).
+Bu derleyici seçeneği, yalnızca x64 hedefleyen çapraz derleyiciler ve yerel kullanılabilir.
 
-Parametreleri bir x64 içinde geçirilir, derleme, çağırma kuralları iste stackspace bile kayıtlara geçirilen parametreler için parametreleri. Daha fazla bilgi için [parametre geçirerek](../../build/parameter-passing.md). Ancak, derleme varsayılan olarak, kayıt parametrelerini yığına, parametreler için zaten sağlanan alana yazılmaz. Bu, bir en iyi duruma getirilmiş (sürüm) programınızın hata ayıklama derlemesine zorlaştırır.
+Çağırma kuralı x64 yığın alanı kayıtlara geçirilen parametrelerin bile tüm parametreler için ayrılmasını gerektirir. Daha fazla bilgi için [parametre geçirerek](../../build/x64-calling-convention.md#parameter-passing). Varsayılan olarak, kayıt parametresi, sürüm yapılarında onlar için ayrılan yığın alanı içine kopyalanmaz. Bu programın bir en iyi duruma getirilmiş yayın derlemesinde hata ayıklama zorlaştırır.
 
-Bir yayın yapısı için kullanmak **/homeparams** uygulamanızın hatalarını emin olmak için. **/ homeparams** kayıt parametrelerini yığına açın yüklemek için bir döngü gerektiğinden bir performans olumsuz anlamına gelmez.
+Yayın derlemeleri için kullanabileceğiniz **/homeparams** kopyalama zorlamak için seçeneği parametrelerini uygulamanızın hatalarını emin olmak için yığına kaydedin. **/ homeparams** kayıt parametrelerini yığına yüklemek için ek bir döngüyle gerektiğinden bir performans olumsuz anlamına gelmez.
 
-Hata ayıklama yapısında, her zaman kayıtlara geçirilen parametreleri yığına doldurulur.
+Hata ayıklama yapılarında, her zaman kayıtlara geçirilen parametreleri yığına doldurulur.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. Açık **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
-1. Tıklayın **komut satırı** özellik sayfası.
-
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. Derleyici seçeneğini girin **ek seçenekler** kutusu.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

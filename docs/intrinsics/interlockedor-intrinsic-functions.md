@@ -1,6 +1,6 @@
 ---
 title: _Interlockedor iç işlevleri
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedOr8_nf
 - _InterlockedOr_HLEAcquire
@@ -56,12 +56,12 @@ helpviewer_keywords:
 - _InterlockedOr16_rel intrinsic
 - _InterlockedOr_HLEAcquire intrinsic
 ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
-ms.openlocfilehash: d8bc43adc2762330f2c4fb6b7803913f10d039bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0006dccb3beb28fb7dcb2d9d8313be022523883
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571177"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627195"
 ---
 # <a name="interlockedor-intrinsic-functions"></a>_Interlockedor iç işlevleri
 
@@ -229,4 +229,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

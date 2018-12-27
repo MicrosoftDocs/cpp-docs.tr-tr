@@ -96,12 +96,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: 6f32519e56e42620caec755e6c250d0ee93c6677
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fdc3705980ac8f763e0438f19920148437e7ed27
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518977"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657532"
 ---
 # <a name="array-class-c-standard-library"></a>array sınıfı (Standart C++ Kitaplığı)
 
@@ -162,7 +162,7 @@ class array;
 |İşleç|Açıklama|
 |-|-|
 |[array::operator=](#op_eq)|Denetlenen dizi değiştirir.|
-|[Array::operator[]](#op_at)|Belirtilen konumda bir öğe erişir.|
+|[Array::operator\[\]](#op_at)|Belirtilen konumda bir öğe erişir.|
 
 ## <a name="remarks"></a>Açıklamalar
 

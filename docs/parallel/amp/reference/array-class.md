@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - array class
 ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
-ms.openlocfilehash: 7543249719cd7fab10bac7824e69023fefbc35f1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 93ef654bb71a342a6215ce5cd60786f36cadedf7
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523734"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657558"
 ---
 # <a name="array-class"></a>array Sınıfı
 
@@ -77,7 +77,7 @@ Dizinin boyut.
 |----------|-----------------|
 |[işleç std::vector&lt;value_type&gt;](#operator_vec)|Kullanan `copy(*this, vector)` örtük olarak bir std dizisine dönüştürmek için::[vektör](../../../standard-library/vector-class.md) nesne.|
 |[operator()](#operator_call)|Parametreler ile belirtilen öğe değeri döndürür.|
-|[operator[]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
+|[İşleci\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `array` bu nesne içine.|
 
 ### <a name="public-constants"></a>Genel sabitler
@@ -121,7 +121,7 @@ Diziyi başka diziye kopyalandığında derin kopyalama yapıldığından dizile
 
 **Başlık:** amp.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
 ##  <a name="dtor"></a> ~ array
 

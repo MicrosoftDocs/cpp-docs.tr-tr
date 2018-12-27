@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 09653980-b885-4f3a-8594-0aeb7f94c601
-ms.openlocfilehash: 29f60748f8ff0681a3a73e31cbb049c27c3a45be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75e9b49bca6b94595186e69a900a28fe5e38522c
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656179"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657623"
 ---
 # <a name="cmapstringtoob-class"></a>CMapStringToOb sınıfı
 
@@ -81,7 +81,7 @@ class CMapStringToOb : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMapStringToOb::operator [ ]](#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
+|[CMapStringToOb::operator \[ \]](#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -329,7 +329,7 @@ UINT HashKey(LPCTSTR key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Karma değeri hesaplanacak olan anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -423,7 +423,7 @@ BOOL Lookup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bakılacak öğeyi tanımlayan dize anahtar belirtir.
 
 *rValue*<br/>
@@ -466,7 +466,7 @@ BOOL LookupKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bakılacak öğeyi tanımlayan dize anahtar belirtir.
 
 *rKey*<br/>
@@ -571,7 +571,7 @@ BOOL RemoveKey(LPCTSTR key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Harita araması için kullanılan dizeyi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -620,7 +620,7 @@ void SetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Yeni öğenin anahtarı dize belirtir.
 
 *newValue*<br/>

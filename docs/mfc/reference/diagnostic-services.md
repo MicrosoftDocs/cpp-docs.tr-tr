@@ -20,12 +20,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: 4a900a472a3783bde66584b64e361d80c606f0e9
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: dbb243453b6d869082a4232b12b27f5510d84aa5
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524566"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657636"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 

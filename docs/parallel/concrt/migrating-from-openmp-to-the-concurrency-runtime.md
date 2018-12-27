@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-ms.openlocfilehash: 4b70aa57a6485fefe0dbb678e72ba127502c89e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78fa83c30bc55d82ffa5d2ba1e7d65472643f86b
+ms.sourcegitcommit: ee0103752884425843556a19cf418a504dc3cd02
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481932"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737630"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 
@@ -34,7 +34,7 @@ Eşzamanlılık Çalışma zamanı aşağıdaki durumlarda kullanmak için mevcu
 |Özel durum işleme desteği gerektirir.|PPL, hem Azure içindeki hem bir paralel bölgenin veya döngü dışında özel durumları yakalama sağlar. OpenMP içinde döngü ve paralel bölgenin içinde özel durum işlemesi gerekir.|
 |İptal mekanizması gerektirir.|PPL, hem tek tek görevler ve paralel iş ağaçları iptal etmek uygulamaları etkinleştirir. OpenMP kendi iptal mekanizması uygulamak için uygulama gerektiriyor.|
 |Başladığı farklı bir bağlamda bitirebilen paralel kod gerektirir.|Eşzamanlılık Çalışma zamanı bir bağlamda, bir görevi başlatmak ve daha sonra bekleyin ya da başka bir bağlamda, bir görev iptal olanak tanır. OpenMP, tüm paralel iş başladığı bağlamında tamamlanmalıdır.|
-|Gelişmiş hata ayıklama desteği gerektirir.|Visual Studio sağlar **Paralel Yığınlar** ve **Paralel Görevler** windows böylece bir kolayca daha çok iş parçacıklı uygulamalarda hata ayıklaması yapabilirsiniz.<br /><br /> Eşzamanlılık Çalışma zamanı desteği hata ayıklama hakkında daha fazla bilgi için bkz. [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window), [Paralel Yığınlar penceresini kullanma](/visualstudio/debugger/using-the-parallel-stacks-window), ve [izlenecek yol: paralel hata ayıklama Uygulama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).|
+|Gelişmiş hata ayıklama desteği gerektirir.|Visual Studio sağlar **Paralel Yığınlar** ve **Paralel Görevler** windows böylece bir kolayca daha çok iş parçacıklı uygulamalarda hata ayıklaması yapabilirsiniz.<br /><br /> Eşzamanlılık Çalışma zamanı desteği hata ayıklama hakkında daha fazla bilgi için bkz. [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window), [Paralel Yığınlar penceresini kullanma](/visualstudio/debugger/using-the-parallel-stacks-window), ve [izlenecek yol: Paralel uygulamada hata ayıklama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).|
 
 ## <a name="when-not-to-migrate-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden eşzamanlılık çalışma zamanına geçirmek istemiyorsanız ne zaman
 
@@ -48,17 +48,17 @@ Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirmek u
 
 ## <a name="related-topics"></a>İlgili Konular
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
+[Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
 
 OpenMP kullanan temel bir döngü verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) ve [için](../../parallel/openmp/reference/for-openmp.md) yönergeleri, eşzamanlılık çalışma zamanı kullanmak üzere dönüştürülmesi gösterilmektedir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritma.
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
+[Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için İptali kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
 Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) çalıştırmak için tüm yinelemeleri gerektirmeyen döngü eşzamanlılık çalışma zamanı iptal mekanizması kullanacak şekilde dönüştürme işlemini gösterir.
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Özel Durum İşleme Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md)<br/>
+[Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md)<br/>
 Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) özel durum işleme gerçekleştiren bir döngü eşzamanlılık çalışma zamanı özel durum işleme mekanizmasını kullanmak üzere nasıl dönüştürme yapılacağını gösterir.
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Azaltma Değişkeni Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
+[Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için azaltma değişkeni kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
 Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) kullanan döngüsünü [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi, eşzamanlılık çalışma zamanı kullanmak üzere nasıl dönüştürme yapılacağını gösterir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

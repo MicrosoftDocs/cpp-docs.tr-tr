@@ -1,18 +1,18 @@
 ---
 title: align (C++)
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - align_cpp
 helpviewer_keywords:
 - align __declspec keyword
 - __declspec keyword [C++], align
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
-ms.openlocfilehash: f5353354a334f6ee597bca3e49dfa2b4f98a0005
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1bfe6e7a4646be8cea622078b4d85f20f458e1c5
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440449"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627338"
 ---
 # <a name="align-c"></a>align (C++)
 
@@ -78,9 +78,9 @@ Daha fazla bilgi için bkz.:
 
 - [Nasıl veri Paketlemeyle hizalama](#vclrfhowalignworkswithdatapacking)
 
-- [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)
+- [Yapı hizalama örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 belirli)
 
-##  <a name="vclrfalignexamples"></a> Örnekleri Hizala
+## <a name="vclrfalignexamples"></a> Örnekleri Hizala
 
 Aşağıdaki örneklerde gösterildiği nasıl `__declspec(align(#))` boyutu ve hizalama veri yapılarının etkiler. Örnekler aşağıdaki tanımlamaları varsayar:
 
@@ -171,7 +171,7 @@ void fn() {
 
 Yığında bellek tahsis edildiğinde hizalama hangi ayırma işlevinin çağrıldığına bağlıysa.  Örneğin, kullanırsanız `malloc`, sonuç işlenen boyutuna bağlıdır. Varsa *arg* > = 8, 8 byte hizalı olan bellek döndürdü. Varsa *arg* < 8, döndürülen bellek hizalama 2'in ilk üssü olan küçüktür *arg*. Örneğin, malloc(7) kullanırsanız, hizalama 4 bayt ' dir.
 
-##  <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#)) ile yeni türler tanımlama
+## <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#)) ile yeni türler tanımlama
 
 Hizalama özelliğine sahip bir tür tanımlayabilirsiniz.
 
@@ -184,7 +184,7 @@ typedef __declspec(align(32)) struct aType bType;
 
 Şimdi, `aType` ve `bType` aynı boyuttadır (8 bayt) ancak türündeki değişkenler `bType` olan 32 bayt hizalıdır.
 
-##  <a name="vclrfthreadlocalstorageallocation"></a> İş parçacığı yerel depolamasında verileri hizalama
+## <a name="vclrfthreadlocalstorageallocation"></a> İş parçacığı yerel depolamasında verileri hizalama
 
 Oluşturulan statik iş parçacığı yerel depolama (TLS) `__declspec(thread)` özniteliği ve tam olarak normal statik veriler gibi hizalama için resim çalışmalarında TLS bölümüne yerleştirin. TLS veri oluşturmak için işletim sistemi, TLS bölümünün boyutuna bellek ayırır ve TLS bölümü hizalama özniteliğini dikkate alır.
 
@@ -207,7 +207,7 @@ struct CACHE_ALIGN S9 {
 __declspec(thread) struct S9 a;
 ```
 
-##  <a name="vclrfhowalignworkswithdatapacking"></a> Nasıl veri Paketlemeyle hizalama
+## <a name="vclrfhowalignworkswithdatapacking"></a> Nasıl veri Paketlemeyle hizalama
 
 `/Zp` Derleyici seçeneği ve `pack` pragma yapı ve birleşim üyeleri için verileri paketleme etkisi vardır. Bu örnek gösterir nasıl `/Zp` ve `__declspec(align(#))` birlikte çalışır:
 
@@ -244,4 +244,4 @@ Nesneye sahip olmadığı sürece bir nesnenin uzaklığı önceki nesne ve geç
 
 [__declspec](../cpp/declspec.md)<br/>
 [ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)<br/>
-[x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)
+[x64 yazılım kuralları](../build/x64-software-conventions.md)

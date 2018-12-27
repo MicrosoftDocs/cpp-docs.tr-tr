@@ -1,6 +1,6 @@
 ---
 title: __vectorcall
-ms.date: 10/10/2018
+ms.date: 12/17/2018
 f1_keywords:
 - __vectorcall_cpp
 - __vectorcall
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - __vectorcall keyword
 - __vectorcall
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
-ms.openlocfilehash: ab542a7fbae286a7f39b66bb4857cd8e8ff6ab59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55c383c4bdf83ddb5fdf1c4990d5f2e47b4d819a
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507230"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627459"
 ---
 # <a name="vectorcall"></a>__vectorcall
 
 **Microsoft'a özgü**
 
-**__Vectorcall** çağırma kuralı işlevlere bağımsız değişkenler, mümkün olduğunda kayıtlara geçirilebilir olduğunu belirtir. **__vectorcall** bağımsız değişken için daha fazla kayıtlarını kullanan [__fastcall](../cpp/fastcall.md) veya varsayılan [çağırma kuralı x64](../build/overview-of-x64-calling-conventions.md) kullanın. **__Vectorcall** çağırma kuralı yalnızca desteklenen yerel kodda, Streaming SIMD Extensions 2 (SSE2) içeren x86 ve x64 işlemciler ve üzeri. Kullanım **__vectorcall** defterlerine yüklenen geçmesi birkaç kayan nokta işlevleri veya SIMD vektörü bağımsız değişkenlerini hızlandırmak ve bağımsız değişkenlerden yararlanan işlemleri gerçekleştirmek için. Aşağıdaki liste x86 ve x64 uygulamaları için ortak olan özellikleri gösterir **__vectorcall**. Farklılıklar bu makalenin sonraki bölümlerinde açıklanmıştır.
+**__Vectorcall** çağırma kuralı işlevlere bağımsız değişkenler, mümkün olduğunda kayıtlara geçirilebilir olduğunu belirtir. **__vectorcall** bağımsız değişken için daha fazla kayıtlarını kullanan [__fastcall](../cpp/fastcall.md) veya varsayılan [çağırma kuralı x64](../build/x64-calling-convention.md) kullanın. **__Vectorcall** çağırma kuralı yalnızca desteklenen yerel kodda, Streaming SIMD Extensions 2 (SSE2) içeren x86 ve x64 işlemciler ve üzeri. Kullanım **__vectorcall** defterlerine yüklenen geçmesi birkaç kayan nokta işlevleri veya SIMD vektörü bağımsız değişkenlerini hızlandırmak ve bağımsız değişkenlerden yararlanan işlemleri gerçekleştirmek için. Aşağıdaki liste x86 ve x64 uygulamaları için ortak olan özellikleri gösterir **__vectorcall**. Farklılıklar bu makalenin sonraki bölümlerinde açıklanmıştır.
 
 |Öğe|Uygulama|
 |-------------|--------------------|

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - programming [C++], 64-bit
 - Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: a72e6f1905bad81fc0d79c1f90e88e96fe8b110b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85bfa6cb82b4b1825ae9b9a9a0f3a9f06e579499
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487808"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626714"
 ---
 # <a name="configure-visual-c-for-64-bit-x64-targets"></a>Visual C++ 64 bit x64 için yapılandırma hedefleri
 
@@ -21,13 +21,13 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım Visual c+
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-- [Nasıl Yapılır: Visual C++ Projelerinin 64 Bit, x64 Platformları Hedeflemesi için Yapılandırma](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [Nasıl yapılır: 64-Bit, hedeflemek için Visual C++ projeleri x64 yapılandırma platformları](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [Nasıl yapılır: Komut Satırında 64 Bit Visual C++ Araç Takımını Etkinleştirme](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [Nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [Genel Visual C++ 64 Bit Geçiş Sorunları](../build/common-visual-cpp-64-bit-migration-issues.md)
 
-- [x64 Yazılım Kuralları](../build/x64-software-conventions.md)
+- [x64 yazılım kuralları](../build/x64-software-conventions.md)
 
 ## <a name="related-sections"></a>İlgili Bölümler
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-ms.openlocfilehash: 81e51f136a42c0d0db12744735521ae2b3cdb5f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dcb194c72ca2a64317cddda8a1559e78edc0978f
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510714"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626675"
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 
@@ -68,4 +68,4 @@ Bu tür çakışması (ve C Derleyici uyarılarını veya neden olan C++ derleyi
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Tchar.h'de Genel Metin Eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)
+[Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)

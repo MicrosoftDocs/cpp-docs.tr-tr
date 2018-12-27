@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CMap [MFC], RemoveKey
 - CMap [MFC], SetAt
 ms.assetid: 640a45ab-0993-4def-97ec-42cc78eb10b9
-ms.openlocfilehash: 3991ae4c7455aa8e6eb377112cb89c057e9567e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88ca218d4cb4e70dcc46ba04bbdfb7a9d12eb808
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627324"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657584"
 ---
 # <a name="cmap-class"></a>CMap sınıfı
 
@@ -106,7 +106,7 @@ Veri türü için kullanılan *değer* bağımsız değişkenler; genellikle bir
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMap::operator]](#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
+|[CMap::operator \[ \]](#operator_at)|Haritayı bir öğe ekler; işleci alternatifi için `SetAt`.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -116,7 +116,7 @@ KONUM türünde bir değişken, girişler için alternatif erişim için kullan�
 
 Bu sınıf, genel yardımcı işlevleri çağrının belirli üye işlevleri, çoğu kullanım için özelleştirilmelidir `CMap` sınıfı. Bkz: [koleksiyon sınıfı Yardımcıları](../../mfc/reference/collection-class-helpers.md) makroları ve genel öğeleri bölümünde **MFC başvurusu**.
 
-`CMap` geçersiz kılmalar [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) seri hale getirme ve alt öğeleri dökme desteklemek için. Bir arşiv kullanarak bir harita depolanıyorsa `Serialize`, her harita öğesini sırayla serileştirilir. Varsayılan uygulaması `SerializeElements` yardımcı işlevi, bit düzeyinde bir yazma yapar. Türetilen seri hale getirme işaretçi koleksiyonu öğelerinin hakkında bilgi için `CObject` veya diğer kullanıcı tanımlı türleri [nasıl yapılır: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md).
+`CMap` geçersiz kılmalar [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) seri hale getirme ve alt öğeleri dökme desteklemek için. Bir arşiv kullanarak bir harita depolanıyorsa `Serialize`, her harita öğesini sırayla serileştirilir. Varsayılan uygulaması `SerializeElements` yardımcı işlevi, bit düzeyinde bir yazma yapar. Türetilen seri hale getirme işaretçi koleksiyonu öğelerinin hakkında bilgi için `CObject` veya diğer kullanıcı tanımlı türleri [nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md).
 
 Bir tanılama dökümü (anahtarlar ve değerler) map tek tek öğelerin gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.
 
@@ -338,7 +338,7 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
 *ARG_KEY*<br/>
 Şablon parametresinin türünü belirleyen *anahtar* değeri.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bakılacak öğeyi tanımlayan anahtar belirtir.
 
 *DEĞER*<br/>
@@ -375,7 +375,7 @@ Harita değerin türünü belirten bir şablon parametre.
 *ARG_KEY*<br/>
 Anahtar değeri türünü belirten bir şablon parametre.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Haritadaki değerini almak için kullanılan anahtar.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -447,7 +447,7 @@ CPair* PLookup(ARG_KEY key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak öğenin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -491,7 +491,7 @@ BOOL RemoveKey(ARG_KEY key);
 *ARG_KEY*<br/>
 Anahtar türünü belirten bir şablon parametre.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kaldırılacak öğenin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -519,7 +519,7 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
 *ARG_KEY*<br/>
 Şablon parametresinin türünü belirleyen *anahtar* parametresi.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Yeni öğenin anahtarını belirtir.
 
 *ARG_VALUE*<br/>

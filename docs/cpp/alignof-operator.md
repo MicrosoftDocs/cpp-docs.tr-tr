@@ -1,6 +1,6 @@
 ---
 title: __alignof İşleci
-ms.date: 10/09/2018
+ms.date: 12/17/2018
 f1_keywords:
 - alignas_cpp
 - __alignof_cpp
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-ms.openlocfilehash: 391535d7d80b075149c797cbd00fa34d46ed677d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96c85db83c133af6f1712baa8597ed3360277854
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479501"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627469"
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
 
@@ -86,11 +86,11 @@ Hizalama değiştirme hakkında daha fazla bilgi için bkz:
 
 - [/Zp (Yapı Üyesi Hizalama)](../build/reference/zp-struct-member-alignment.md)
 
-- [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)
+- [Yapı hizalama örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 belirli)
 
 Hizalama x86 ve x64 kodda farklılıklar hakkında daha fazla bilgi için bkz:
 
-- [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+- [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
 
 **END Microsoft özgü**
 

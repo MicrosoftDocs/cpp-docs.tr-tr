@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CRecentFileList [MFC], UpdateMenu
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-ms.openlocfilehash: 996a9052d71df4aed54fa4f922b4d4ffff8f1c14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e38f63090e3de2a73c60618a36d25a397d595dac
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453878"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657428"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 
@@ -63,7 +63,7 @@ class CRecentFileList
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRecentFileList::operator]](#operator_at)|Döndürür bir `CString` verilen konumda nesne.|
+|[CRecentFileList::operator \[ \]](#operator_at)|Döndürür bir `CString` verilen konumda nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 

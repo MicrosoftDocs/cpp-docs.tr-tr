@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek Yol: Programınızı Dağıtma (C++)'
+title: 'İzlenecek yol: Programınızı dağıtma (C++)'
 ms.date: 09/14/2018
 helpviewer_keywords:
 - deploying applications [C++], walkthroughs
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 43e6b9320fb52fc17f65b27b06e2c6f4d4851528
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7170fe3ae058f832e452089021d9f863f1791f14
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496440"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657519"
 ---
-# <a name="walkthrough-deploying-your-program-c"></a>İzlenecek Yol: Programınızı Dağıtma (C++)
+# <a name="walkthrough-deploying-your-program-c"></a>İzlenecek yol: Programınızı dağıtma (C++)
 
 Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), böylece diğer kullanıcıların bir yükleyici oluşturmak için son adımdır programı kendi bilgisayarlarına yükleyin. Yükleyici için varolan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı uygulamanız başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
 
@@ -62,7 +62,7 @@ Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz
 
 1. İçinde **Çözüm Gezgini**seçin **oyun yükleyici** projesini ve ardından **görünümü** > **Özellikler penceresi** veya isabet **F4** açmak için **özellikleri** penceresi.
 
-1. Yükleyicide görünmesini istediğiniz kadar ek ayrıntıları belirtin.  Örneğin, *Contoso* için **üretici**, *oyun yükleyici* için **ürün adı**, ve *http://www.contoso.com* için **SupportUrl**.
+1. Yükleyicide görünmesini istediğiniz kadar ek ayrıntıları belirtin.  Örneğin, *Contoso* için **üretici**, *oyun yükleyici* için **ürün adı**, ve *http\:/ / www.contoso.com* için **SupportUrl**.
 
 1. Menü çubuğunda, **derleme** > **Configuration Manager**. İçinde **proje** tablosuna ve altında **derleme** sütun için kutuyu **oyun yükleyici**. **Kapat**'ı tıklatın.
 
@@ -72,7 +72,7 @@ Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [izlenecek yol: bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**Önceki:** [İzlenecek yol: Bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

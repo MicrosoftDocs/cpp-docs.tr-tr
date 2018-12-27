@@ -17,12 +17,12 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-ms.openlocfilehash: ad89dfa29df6e4ef500e01e53f203fa3c401602b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a6fa8b9c923ff697831c29b8004ce360baf7d77
+ms.sourcegitcommit: ae2f71fe0d64f1a90ef722759fe93c82abc064ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638236"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587895"
 ---
 # <a name="opt-optimizations"></a>/OPT (İyileştirmeler)
 
@@ -67,7 +67,7 @@ Varsayılan olarak, **/OPT: LBR** seçeneği, artımlı bağlamayı etkinleştir
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlayıcı komut satırına kullanıldığında varsayılan **/OPT: ref, ICF LBR**. Varsa **/DEBUG** belirtilirse, varsayılan **noref, NOICR, NOLBR**.
+Bağlayıcı komut satırına kullanıldığında varsayılan **/OPT: ref, ICF LBR**. Varsa **/DEBUG** belirtilirse, varsayılan **noref, NOICF, NOLBR**.
 
 **/OPT** iyileştirmeler genellikle görüntü boyutunu azaltır ve program hızını artırır. Bu geliştirmeler perakende derlemeleri için varsayılan olarak etkin neden olan daha büyük programlarda, önemli olabilir.
 

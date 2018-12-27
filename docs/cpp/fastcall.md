@@ -1,6 +1,6 @@
 ---
 title: __fastcall
-ms.date: 10/09/2018
+ms.date: 12/17/2018
 f1_keywords:
 - __fastcall_cpp
 - __fastcall
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - __fastcall keyword [C++]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
-ms.openlocfilehash: 19cc8efb98660e8cdb3f6d9b03f0b7bd85a34949
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e7cd4b1202ee717abf9a9767785ed8abe96bd69
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480047"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627370"
 ---
 # <a name="fastcall"></a>__fastcall
 
@@ -29,11 +29,11 @@ ms.locfileid: "50480047"
 |Durum çevirisi kuralları|Durum çevirisi yapılmaz.|
 
 > [!NOTE]
->  Gelecekteki derleyici sürümleri, parametreleri depolamak için farklı yazmaçlar kullanabilir.
+> Gelecekteki derleyici sürümleri, parametreleri depolamak için farklı yazmaçlar kullanabilir.
 
 Kullanarak [GR](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği olarak derlemek için modüldeki her işlevin neden **__fastcall** çakışan bir öznitelik kullanarak bildirilen işlev veya işlevin adı sürece `main` .
 
-**__Fastcall** anahtar sözcüğünü kabul edilir ve ARM ve x64 hedefleyen derleyicileri tarafından göz ardı mimarileri; x x64 yonga, kural olarak, ilk dört bağımsız değişkenler mümkün olduğunda kayıtlara geçirilir ve ek bağımsız değişkenler geçirilir Yığında. Daha fazla bilgi için [x64 bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md). ARM bir yonga üzerinde en çok dört tamsayı bağımsız değişken ve sekiz kayan nokta değişkeni kayıtlara geçirilebilir ve ek bağımsız değişkenler yığına geçirilir.
+**__Fastcall** anahtar sözcüğünü kabul edilir ve ARM ve x64 hedefleyen derleyicileri tarafından göz ardı mimarileri; x x64 yonga, kural olarak, ilk dört bağımsız değişkenler mümkün olduğunda kayıtlara geçirilir ve ek bağımsız değişkenler geçirilir Yığında. Daha fazla bilgi için [x64 çağırma kuralı](../build/x64-calling-convention.md). ARM bir yonga üzerinde en çok dört tamsayı bağımsız değişken ve sekiz kayan nokta değişkeni kayıtlara geçirilebilir ve ek bağımsız değişkenler yığına geçirilir.
 
 Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımını ele alalım:
 

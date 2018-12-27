@@ -1,6 +1,6 @@
 ---
 title: _interlockedbittestandreset iç işlevleri
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _interlockedbittestandreset_rel
 - _interlockedbittestandreset64
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - _interlockedbittestandreset64 intrinsic
 - _interlockedbittestandreset intrinsic
 ms.assetid: 9bbb1442-f2e9-4dc2-b0da-97f3de3493b9
-ms.openlocfilehash: dc85b1a1bb76575f63d7c43bead08a6e850d026f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b32dc9eb41285afb653817629148b9f666201e8
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605406"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627208"
 ---
 # <a name="interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset iç işlevleri
 
@@ -109,4 +109,4 @@ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

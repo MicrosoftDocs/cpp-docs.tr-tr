@@ -1,94 +1,98 @@
 ---
-title: Giriş ve Bitiş
-ms.date: 11/04/2016
+title: x64 giriş ve bitiş
+ms.date: 12/17/2018
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-ms.openlocfilehash: 2b54737edd46a5e108a211ee032889885be2b1da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b808703e9c89b8e455e9df2b5959a2f0dd10b939
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543123"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627234"
 ---
-# <a name="prolog-and-epilog"></a>Giriş ve Bitiş
+# <a name="x64-prolog-and-epilog"></a>x64 giriş ve bitiş
 
-Yığın alanı ayırır her işlev, adres sınırları ilgili işlevi tablosu girişiyle ilişkili geriye doğru izlenen veri açıklanmıştır bir giriş diğer işlevleri, kalıcı Yazmaçları kaydeder veya özel durum işleme kullanan bir çağrı olmalıdır ( bkz[Özel durum işleme (x64)](../build/exception-handling-x64.md)). Giriş bağımsız değişkeni kayıtlara ev adresleri gerekirse gönderim kalıcı Yazmaçları yığında kaydeder, Yereller ve değerlendirmesidir için sabit bir yığın parçası ayırır ve isteğe bağlı olarak bir çerçeve işaretçisi oluşturur. İlişkili veri bırakma, giriş eylemi açıklamak gerekir ve giriş kodu etkisini geri almak gereken bilgileri sağlamanız gerekir.
+Yığın alanı ayırır her işlev, ilgili işlevi tablosu girişiyle ilişkili geriye doğru izlenen veri adres sınırları açıklanan bir giriş diğer işlevleri, kalıcı Yazmaçları kaydeder veya özel durum işleme kullanan bir çağrı olması gerekir. Daha fazla bilgi için [x64 özel durum işleme](../build/exception-handling-x64.md). Giriş bağımsız değişkeni kayıtlara ev adresleri gerekirse kalıcı Yazmaçları yığına, Yereller ve değerlendirmesidir için sabit bir yığın parçası ayırır ve isteğe bağlı olarak bir çerçeve işaretçisi oluşturur kaydeder. İlişkili veri bırakma, giriş eylemi açıklamak gerekir ve giriş kodu etkisini geri almak gereken bilgileri sağlamanız gerekir.
 
-Sabit ayırma yığınında birden fazla sayfa olup olmadığını (diğer bir deyişle, 4096 bayt daha büyük), birden fazla sanal bellek sayfa yığın ayırma kapsayabilir ve ayırma, aslında ayrılan önce bu nedenle, işaretlenmelidir mümkündür. Özel bir yordama girişten çağrılabilen ve hangi herhangi bir bağımsız değişken kayıtları yok eder, bu amaç için sağlanır.
+Sabit ayırma yığınında birden fazla sayfa olup olmadığını (diğer bir deyişle, 4096 bayt daha büyük), birden fazla sanal bellek sayfa yığın ayırma kapsayabilir ve ayırma, kendisine ayrılan önce bu nedenle, işaretlenmelidir mümkündür. Girişten çağrılabilen ve herhangi bir bağımsız değişken kayıtları yok değil, özel bir yordama bu amaç için sağlanır.
 
-Yığına sabit yığın ayırma önce bunları taşımak için kalıcı kayıtları kaydetmek için tercih edilen yöntem var. Kalıcı kayıtlar kaydedilmeden önce büyük ihtimalle 32-bit öteleme adresine gerekli olacak sonra sabit yığın ayırma gerçekleştirilmişse kaydedilen (bağlarsanız, bildirimler kayıtları yalnızca hareket ettikçe kadar hızlı ilerleyebilirler ve dolayısıyla kalmalıdır alanı kaydetmek yakın gelecekte göndermeler arasında örtük bağımlılık artma). Kalıcı kayıtlar herhangi bir sırada kaydedilebilir. Ancak, bir kayıt giriş sayfasında ilk kez kullanıyorsanız, kaydetmeyi olması gerekir.
+Yığına sabit yığın ayırma önce bunları taşımak için kalıcı kayıtları kaydetmek için tercih edilen yöntem var. Kalıcı kayıtlar kaydedilmeden önce sabit yığın ayırma gerçekleştirilirse, ardından en büyük olasılıkla bir 32-bit öteleme kaydedilmiş kayıt alanı ele almak için gereklidir. (Bağlarsanız, bildirim yazmaçların taşır ve bunu beraber göndermeler arasında örtük bağımlılık artma kalmalıdır kadar hızlı ilerleyebilirler.) Kalıcı kayıtlar herhangi bir sırada kaydedilebilir. Ancak, bir kayıt giriş sayfasında ilk kez kullanıyorsanız, kaydetmeyi olması gerekir.
+
+## <a name="prolog-code"></a>Giriş kodu
 
 Tipik bir giriş için kod aşağıdaki gibi olabilir:
 
-```
-mov       [RSP + 8], RCX
-push   R15
-push   R14
-push   R13
-sub      RSP, fixed-allocation-size
-lea      R13, 128[RSP]
-...
+```MASM
+    mov    [RSP + 8], RCX
+    push   R15
+    push   R14
+    push   R13
+    sub    RSP, fixed-allocation-size
+    lea    R13, 128[RSP]
+    ...
 ```
 
 Bu giriş bağımsız değişkeni kayıt RCX kendi konumunda depolar, kaydeder kalıcı R13 R15 kayıtlarını kaydeder, sabit bir yığın çerçevesini parçası ayırır ve 128 bayt sabit ayırma alanına işaret eden bir çerçeve işaretçisi oluşturur. Bir uzaklık kullanarak tek baytlık sapmalarla ele alınması için sabit bir tahsisat alanının daha fazla bilgi sağlar.
 
-Sabit ayırma boyutu büyüktür veya eşittir belleğin bir sayfası, bir yardımcı işlev RSP değiştirmeden önce çağrılmalıdır. Bu yardımcı, __chkstk, yığının düzgün şekilde genişletildiğinden emin olmak için How-to-tahsis edilecek yığın aralığı yoklaması için sorumludur. Bu durumda, önceki giriş örneği yerine olacaktır:
+Sabit ayırma boyutu büyüktür veya eşittir belleğin bir sayfası, bir yardımcı işlev RSP değiştirmeden önce çağrılmalıdır. Bu yardımcı, `__chkstk`, yığının düzgün şekilde genişletildiğinden emin olmak için How-to-tahsis edilecek yığın aralığı araştırmaları. Bu durumda, önceki giriş örneği yerine olacaktır:
 
-```
-mov       [RSP + 8], RCX
-push   R15
-push   R14
-push   R13
-mov      RAX,  fixed-allocation-size
-call   __chkstk
-sub      RSP, RAX
-lea      R13, 128[RSP]
-...
+```MASM
+    mov    [RSP + 8], RCX
+    push   R15
+    push   R14
+    push   R13
+    mov    RAX,  fixed-allocation-size
+    call   __chkstk
+    sub    RSP, RAX
+    lea    R13, 128[RSP]
+    ...
 ```
 
-__Chkstk Yardımcısı R10 R11 ve durum kodları dışındaki tüm kayıtları değiştirmez. Özellikle, bu RAX'daki değiştirmeden döndürür ve tüm kalıcı yazmaçlar ve bağımsız değişken geçirme kayıtlar üzerinde değişiklik yapılmadan bırakın.
+`__chkstk` Yardımcı R10 R11 ve durum kodları dışındaki tüm kayıtları değişiklik yapılmaz. Özellikle, bu RAX'daki değiştirmeden döndürür ve tüm kalıcı yazmaçlar ve bağımsız değişken geçirme kayıtlar üzerinde değişiklik yapılmadan bırakın.
+
+## <a name="epilog-code"></a>Sonuç kodu
 
 Her bir işleve çıkış sonuç kodu bulunmaktadır. Normalde yalnızca bir giriş gelirken, çok sayıda sonuç olabilir. Sonuç kodu (gerekirse) yığını sabit ayırma boyutuna kırpar sabit yığın ayırma kaldırır yığından kaydedilmiş değerleri pencerelerinin tarafından kalıcı kayıtlar geri yükler ve döndürür.
 
-Sonuç kodu katı birtakım kurallara geriye doğru izleme kodu için güvenilir bir şekilde özel durumları ve kesme aracılığıyla geriye doğru izleme izlemeniz gerekir. Bu azaltır her bitiş tanımlamak için ek veri yok gerektiğinden, gerekli veri bırakma. Bunun yerine, geriye doğru izleme kodu bir sonuç ileri bir bitiş tanımlamak için bir kod akışını tarayarak yürütüldüğü belirleyebilirsiniz.
+Sonuç kodu katı birtakım kurallara geriye doğru izleme kodu için güvenilir bir şekilde özel durumları ve kesme aracılığıyla geriye doğru izleme izlemeniz gerekir. Bu kurallar miktarını azaltmak her bitiş tanımlamak için ek veri yok gerektiğinden, gerekli veri bırakma. Bunun yerine, geriye doğru izleme kodu bir sonuç ileri bir bitiş tanımlamak için bir kod akışını tarayarak yürütüldüğü belirleyebilirsiniz.
 
 Hiçbir çerçeve işaretçisini kullanılırsa işlevi ve ardından sonuç ilk sabit yığınının parçası ayırması gerekir, kalıcı Yazmaçları POP ve denetim çağırma işlevine döndürülür. Örneğin,
 
-```
-add      RSP, fixed-allocation-size
-pop      R13
-pop      R14
-pop      R15
-ret
+```MASM
+    add      RSP, fixed-allocation-size
+    pop      R13
+    pop      R14
+    pop      R15
+    ret
 ```
 
-Çerçeve işaretçisini işlevinde kullanılıyorsa, sonra yığına bitiş yürütülmeden önce sabit ayırma için kırpılmış olması gerekir. Bu teknik olarak değil, sonuç parçasıdır. Örneğin, aşağıdaki sonuç önceden kullanılan giriş geri almak için kullanılabilir:
+Çerçeve işaretçisini işlevinde kullanılıyorsa, sonra yığına bitiş yürütülmeden önce sabit ayırma için kırpılmış olması gerekir. Bu eylem teknik olarak değil, sonuç parçasıdır. Örneğin, aşağıdaki sonuç önceden kullanılan giriş geri almak için kullanılabilir:
 
-```
-lea      RSP, -128[R13]
-; epilogue proper starts here
-add      RSP, fixed-allocation-size
-pop      R13
-pop      R14
-pop      R15
-ret
+```MASM
+    lea      RSP, -128[R13]
+    ; epilogue proper starts here
+    add      RSP, fixed-allocation-size
+    pop      R13
+    pop      R14
+    pop      R15
+    ret
 ```
 
 Uygulamada, bir çerçeve işaretçisini kullanıldığında, aşağıdaki bitiş yerine kullanılacak şekilde iki adımda RSP ayarlamak için iyi bir neden yoktur:
 
-```
-lea      RSP, fixed-allocation-size - 128[R13]
-pop      R13
-pop      R14
-pop      R15
-ret
+```MASM
+    lea      RSP, fixed-allocation-size - 128[R13]
+    pop      R13
+    pop      R14
+    pop      R15
+    ret
 ```
 
-Bu, bir sonuç için tek geçerli biçimler. Aşağıdakilerden birini oluşmalıdır bir `add RSP,constant` veya `lea RSP,constant[FPReg]`ve ardından sıfır veya daha fazla 8 baytlık kayıt POP ve bir dönüş veya bir jmp bir dizi. (Jmp deyimler yalnızca bir alt bölümünde izin verilebilir. Sınıfına ModRM bellek başvurularına tamamıyla jmps burada ModRM mod alanı değerinin 00 şunlardır. Kullanım bitiş ModRM mod alan değeri 01 ya da 10 ile jmps yasaktır. Bkz: Tablo A-15 AMD x86 64 mimari Programcı el ile birim 3'te: genel amaçlı ve izin verilen ModRM başvuruları hakkında daha fazla bilgi için sistem yönergeleri.). Başka bir kod görünebilir. Özellikle, hiçbir şey bir dönüş değeri yüklenmesini içeren bir sonuç içinde zamanlanabilir.
+Bu form için bir sonuç yalnızca yasal olanlardır. Aşağıdakilerden birini oluşmalıdır bir `add RSP,constant` veya `lea RSP,constant[FPReg]`ve ardından sıfır veya daha fazla 8 baytlık kayıt POP bir dizi ve bir `return` veya `jmp`. (Yalnızca bir alt kümesini `jmp` deyimleri bölümünde izin verilebilir. Özel olarak sınıfının alt kümesidir `jmp` deyimleri ModRM bellek başvurularıyla ModRM mod alan değeri, 00 olduğu. Kullanımını `jmp` mod alan değeri 01 ya da 10 kullanılamaz ModRM ile Bitiş deyimlerinde. Tablo A-15 AMD x86 64 mimari Programcı el ile toplu 3 bakın: Genel amaçlı ve izin verilen ModRM başvuruları hakkında daha fazla bilgi için sistem yönergeleri.) Başka bir kod görünebilir. Özellikle, hiçbir şey bir dönüş değeri yüklenmesini içeren bir sonuç içinde zamanlanabilir.
 
-Çerçeve işaretçisini kullanıldığında, sonuç kullanması gerektiğini, Not `add RSP,constant` yığınının sabit parçası serbest bırakmak. Değil kullanabilir `lea RSP,constant[RSP]` yerine. Geriye doğru izleme kodu başlangıçları ararken tanımak için daha az desen olması için bu kısıtlama yok.
+Çerçeve işaretçisini kullanıldığında, sonuç kullanmalısınız `add RSP,constant` yığınının sabit parçası serbest bırakmak. Değil kullanabilir `lea RSP,constant[RSP]` yerine. Geriye doğru izleme kodu başlangıçları ararken tanımak için daha az desen olması için bu kısıtlama yok.
 
 Bu kurallara bir sonuç şu anda yürütülmekte olan belirler ve çağıran işlevin bağlamı yeniden izin vermek için sonuç geri kalanında yürütülmesini benzetimini yapmak için geriye doğru izleme kodu sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[x64 Yazılım Kuralları](../build/x64-software-conventions.md)
+[x64 yazılım kuralları](../build/x64-software-conventions.md)

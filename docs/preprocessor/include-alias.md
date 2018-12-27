@@ -1,6 +1,6 @@
 ---
 title: include_alias
-ms.date: 11/04/2016
+ms.date: 12/16/2018
 f1_keywords:
 - vc-pragma.include_alias
 - include_alias_CPP
@@ -8,25 +8,25 @@ helpviewer_keywords:
 - pragmas, include_alias
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-ms.openlocfilehash: 616672d713a9f0ac6eab4be8bce9b178d2510723
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d32cad2533b6044348651797d0278bcbebcafd6
+ms.sourcegitcommit: ae2f71fe0d64f1a90ef722759fe93c82abc064ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587882"
 ---
 # <a name="includealias"></a>include_alias
 
-Belirten *short_filename* için bir diğer ad olarak kullanılacak *long_filename*.
+Belirtir *alias_filename* bulunur bir `#include` derleyici yönergesi değiştirir *actual_filename* kullanışlılığını.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması ("*long_filename*","*short_filename*")
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması (*long_filename*, *short_filename*)
+> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>include_alias pragması ("*alias_filename*","*actual_filename*")
+> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>include_alias pragması (\<*alias_filename*>, \< *actual_filename*>)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bazı dosya sistemleri, 8.3 FAT dosya sistemi sınırından daha uzun üstbilgi dosya adlarına izin verir. Derleyici, uzun üstbilgi dosya adlarının ilk sekiz karakteri benzersiz olmayabileceği için uzun adları 8.3'e kesemez. Her derleyici karşılaştığında *long_filename* dizesiyle *short_filename*ve üstbilgi dosyasını arar *short_filename* yerine. Bu pragma ilgili `#include` yönergelerinden önce görünmelidir. Örneğin:
+**İnclude_alias** pragma yönergesi, farklı adlar veya yolları kaynak kodları tarafından dahil edilen dosya adları için olan dosyalar yerine olanak sağlar. Örneğin, bazı dosya sistemleri 8.3 FAT dosya sistemi sınırından daha uzun üstbilgi dosya izin verir. Derleyici, uzun üstbilgi dosya adlarının ilk sekiz karakteri benzersiz olmayabileceği için uzun adları 8.3'e kesemez. Her derleyici karşılaştığında *alias_filename* dizesiyle *actual_filename*ve üstbilgi dosyasını arar *actual_filename* yerine. Bu pragma ilgili `#include` yönergelerinden önce görünmelidir. Örneğin:
 
 ```cpp
 // First eight characters of these two files not unique.
@@ -83,8 +83,8 @@ Ayrıca, aşağıdaki yönerge bir hata oluşturur:
 Dosya adında hata iletilerinde veya önceden tanımlanmış değer olarak bildirilen Not `__FILE__` makro gerçekleştirildikten sonra dosyanın adı olan. Örneğin, aşağıdaki yönergelerden sonra çıktıyı görürsünüz:
 
 ```cpp
-#pragma include_alias( "VeryLongFileName.H", "myfile.h" )
-#include "VeryLongFileName.H"
+#pragma include_alias( "VERYLONGFILENAME.H", "myfile.h" )
+#include "VERYLONGFILENAME.H"
 ```
 
 VERYLONGFILENAME bir hata oluştu. H aşağıdaki hata iletisini oluşturur:
@@ -101,7 +101,7 @@ Ayrıca geçişliliğin desteklenmediğini unutmayın. Aşağıdaki yönergeler 
 #include "one.h"
 ```
 
-derleyici THREE.H yerine TWO.H dosyasını arar.
+Derleyici dosya three.h yerine için two.h arar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

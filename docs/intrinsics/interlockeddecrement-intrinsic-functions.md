@@ -1,6 +1,6 @@
 ---
 title: _Interlockeddecrement iç işlevleri
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -44,12 +44,12 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: 180b371bc7613922295bec4d0208cf9aea3046e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d180ed8d416483d1be5e2bbd52f1a8752996f3f9
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541420"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627492"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_Interlockeddecrement iç işlevleri
 
@@ -200,4 +200,4 @@ void __cdecl SimpleThread(void* pParam) {
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

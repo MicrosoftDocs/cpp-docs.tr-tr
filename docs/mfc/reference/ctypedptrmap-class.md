@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], RemoveKey
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-ms.openlocfilehash: f09b44c5b898ee0d583db45ca63ee67c3d1c5b47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c6d20279792788c1013df8540080b2715ade1f2
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494867"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657389"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap sınıfı
 
@@ -58,7 +58,7 @@ Eşlem içinde depolan bir nesne sınıfı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CTypedPtrMap::operator]](#operator_at)|Haritayı bir öğe ekler.|
+|[CTypedPtrMap::operator \[ \]](#operator_at)|Haritayı bir öğe ekler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -127,7 +127,7 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 *$BASE_CLASS*<br/>
 Şablon parametresi bu haritanın sınıfın temel sınıfına belirtme.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bakılacak öğenin anahtarı.
 
 *DEĞER*<br/>
@@ -160,7 +160,7 @@ VALUE& operator[ ](base_class ::base_arg_key key);
 *$BASE_CLASS*<br/>
 Şablon parametresi bu haritanın sınıfın temel sınıfına belirtme.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranan ya da haritada oluşturulan öğenin anahtarı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -180,7 +180,7 @@ BOOL RemoveKey(KEY key);
 *KEY*<br/>
 Haritanın anahtarları türünü belirten bir şablon parametre.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kaldırılacak öğenin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -204,7 +204,7 @@ void SetAt(KEY key, VALUE newValue);
 *KEY*<br/>
 Haritanın anahtarları türünü belirten bir şablon parametre.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 NewValue anahtar değerini belirtir.
 
 *newValue*<br/>

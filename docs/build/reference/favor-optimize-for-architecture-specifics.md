@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -favor compiler option [C++]
 - /favor compiler option [C++]
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
-ms.openlocfilehash: 35a8f36437d14b258273fb637eb6fd8b3c8e3c4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63affcced5dfc5bb56b0226021e1c32d93ec5d4f
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552184"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626753"
 ---
 # <a name="favor-optimize-for-architecture-specifics"></a>/favor (Mimari Özellikleri için İyileştirme)
 
@@ -20,9 +20,7 @@ ms.locfileid: "50552184"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/favor:{blend | ATOM | AMD64 | INTEL64}
-```
+> **/ favor:**{**blend** | **ATOM** | **AMD64** | **ıntel64**}
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -2,12 +2,12 @@
 title: alignof ve alignas (C++)
 ms.date: 11/04/2016
 ms.assetid: 1d18aa8a-9621-4fb5-86e5-4cc86d5187f4
-ms.openlocfilehash: e5d023d7969764bdd36030a508abdd94068e48b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 825df25494497e13d29212f7f951be8247b6f136
+ms.sourcegitcommit: 185b8ee6dd4e10045df730c5b957b9729813da2d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493658"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53411929"
 ---
 # <a name="alignof-and-alignas-c"></a>alignof ve alignas (C++)
 
@@ -15,7 +15,7 @@ ms.locfileid: "50493658"
 
 ## <a name="example"></a>Örnek
 
-Kullanabileceğiniz **alignas** büyük/küçük harfi, veya UNION, bir sınıf ya da tek tek üyeleri. Zaman birden çok **alignas** tanımlayıcıları karşılaştı, derleyici en katı bir (en büyük değere sahip olanla) seçersiniz.
+Kullanabileceğiniz **alignas** bir sınıf, yapı veya birleşim ya da tek tek üyeleri. Zaman birden çok **alignas** tanımlayıcıları karşılaştı, derleyici en katı bir (en büyük değere sahip olanla) seçersiniz.
 
 ```cpp
 // alignas_alignof.cpp

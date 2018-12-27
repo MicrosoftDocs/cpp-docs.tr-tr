@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _InterlockedAddLargeStatistic intrinsic
 - InterlockedAddLargeStatistic intrinsic
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-ms.openlocfilehash: befcd74c432eb62ab3a718223ada6d0f441e72c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88ada0a906b777ab8ac676ddfe0a5166e906999d
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432831"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627478"
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
 
@@ -61,4 +61,4 @@ Bu işlev, bir okuma-yazma engel davranır. Daha fazla bilgi için [_ReadWriteBa
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -1,5 +1,5 @@
 ---
-title: Tchar.h'de Genel Metin Eşlemeleri
+title: Tchar.h'de genel metin eşlemeleri
 ms.date: 11/04/2016
 f1_keywords:
 - tchar.h
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: 969894502689dd5aeeeaa27404bafc3c483c1336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf7c5e58b88da4f60d2e784692cb6d4a0ed84970
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667590"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627513"
 ---
-# <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de Genel Metin Eşlemeleri
+# <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de genel metin eşlemeleri
 
 Uluslararası kullanmak için kodu taşınmasını basitleştirmek için çok sayıda veri türleri, yordamlar ve diğer nesneler için Microsoft çalışma zamanı kitaplığı Microsoft'a özgü genel metin eşlemeleri sağlar. Tek bayt, çok baytlı, derlenebilir genel kod yazmak için Tchar.h'de tanımlanan bu eşlemelerin kullanabilir veya Unicode karakter kümeleri, kullanarak tanımladığınız bir bildirim sabiti bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri ANSI uyumlu olmayan Microsoft uzantılarıdır.
 
 Tchar.h kullanarak, tek baytlı ve çok baytlı karakter kümesi (MBCS) aynı kaynaktan Unicode uygulamalar oluşturabilirsiniz. Tchar.h makroları tanımlar (öneki olan `_tcs`) ile doğru önişlemci tanımları, eşleme `str`, `_mbs`, veya `wcs` İşlevler, uygun şekilde. MBCS oluşturmak için sembolünü tanımlayın `_MBCS`. Unicode oluşturmak için sembolünü tanımlayın `_UNICODE`. Tek baytlık bir uygulama oluşturmak için Hiçbiri (varsayılan) tanımlayın. Varsayılan olarak, `_MBCS` MFC uygulamaları için tanımlanır.
 
-`_TCHAR` Veri türü Tchar.h koşullu olarak tanımlanmıştır. Sembol `_UNICODE` , yapı için tanımlanan `_TCHAR` olarak tanımlanan **wchar_t**; Aksi takdirde tek baytlı ve MBCS derlemeler için olarak tanımlanır **char**. (**wchar_t**, temel Unicode geniş karakter veri türü olan bir 8-bit işaretli 16 bit karşılık gelen **char**.) Uluslararası uygulamalar için `_tcs` çalışması işlevler ailesini `_TCHAR` birimleri, bayt sayısını değil. Örneğin, `_tcsncpy` kopyaları `n` `_TCHARs`değil `n` bayt.
+`_TCHAR` Veri türü tchar.h koşullu olarak tanımlanmıştır. Sembol `_UNICODE` , yapı için tanımlanan `_TCHAR` olarak tanımlanan **wchar_t**; Aksi takdirde tek baytlı ve MBCS derlemeler için olarak tanımlanır **char**. (**wchar_t**, temel Unicode geniş karakter veri türü olan bir 8-bit işaretli 16 bit karşılık gelen **char**.) Uluslararası uygulamalar için `_tcs` çalışması işlevler ailesini `_TCHAR` birimleri, bayt sayısını değil. Örneğin, `_tcsncpy` kopyaları `n` `_TCHARs`değil `n` bayt.
 
 Bazı tek baytlı karakter kümesi (SBCS) dize işleme işlevleri (imzalanmış) çünkü `char*` parametreler, bir tür uyuşmazlığı derleyici uyarı sonuçları, `_MBCS` tanımlanır. Bu uyarıyı engellemek için üç yolu vardır:
 
@@ -43,7 +43,7 @@ Bazı tek baytlı karakter kümesi (SBCS) dize işleme işlevleri (imzalanmış)
 |`_MBCS`|Çok baytlı karakter|`_tcsrev` Eşleyen `_mbsrev`|
 |Hiçbiri (varsayılan hiçbiri sahip `_UNICODE` ya da `_MBCS` tanımlanan)|SBCS (ASCII)|`_tcsrev` Eşleyen `strrev`|
 
-Örneğin, genel metin işlevi `_tcsrev`, Tchar.h içinde tanımlandığı eşlendiğini `_mbsrev` tanımladıysanız `_MBCS` programınızdaki veya çok `_wcsrev` tanımladıysanız `_UNICODE`. Aksi takdirde, `_tcsrev` eşlendiği `strrev`. Diğer veri türü eşlemeleri içinde Tchar.h programlama kolaylık olması için sağlanmıştır ancak `_TCHAR` en yararlı olur.
+Örneğin, genel metin işlevi `_tcsrev`, tchar.h içinde tanımlandığı eşlendiğini `_mbsrev` tanımladıysanız `_MBCS` programınızdaki veya çok `_wcsrev` tanımladıysanız `_UNICODE`. Aksi takdirde, `_tcsrev` eşlendiği `strrev`. Diğer veri türü eşlemeleri içinde tchar.h programlama kolaylık olması için sağlanmıştır ancak `_TCHAR` en yararlı olur.
 
 ### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri
 
