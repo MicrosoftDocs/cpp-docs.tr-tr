@@ -12,18 +12,18 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: bf7c5e58b88da4f60d2e784692cb6d4a0ed84970
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 59df523cc553881186921a878d131a109ae3cf27
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978302"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de genel metin eşlemeleri
 
 Uluslararası kullanmak için kodu taşınmasını basitleştirmek için çok sayıda veri türleri, yordamlar ve diğer nesneler için Microsoft çalışma zamanı kitaplığı Microsoft'a özgü genel metin eşlemeleri sağlar. Tek bayt, çok baytlı, derlenebilir genel kod yazmak için Tchar.h'de tanımlanan bu eşlemelerin kullanabilir veya Unicode karakter kümeleri, kullanarak tanımladığınız bir bildirim sabiti bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri ANSI uyumlu olmayan Microsoft uzantılarıdır.
 
-Tchar.h kullanarak, tek baytlı ve çok baytlı karakter kümesi (MBCS) aynı kaynaktan Unicode uygulamalar oluşturabilirsiniz. Tchar.h makroları tanımlar (öneki olan `_tcs`) ile doğru önişlemci tanımları, eşleme `str`, `_mbs`, veya `wcs` İşlevler, uygun şekilde. MBCS oluşturmak için sembolünü tanımlayın `_MBCS`. Unicode oluşturmak için sembolünü tanımlayın `_UNICODE`. Tek baytlık bir uygulama oluşturmak için Hiçbiri (varsayılan) tanımlayın. Varsayılan olarak, `_MBCS` MFC uygulamaları için tanımlanır.
+Tchar.h kullanarak, tek baytlı ve çok baytlı karakter kümesi (MBCS) aynı kaynaktan Unicode uygulamalar oluşturabilirsiniz. Tchar.h makroları tanımlar (öneki olan `_tcs`) ile doğru önişlemci tanımları, eşleme `str`, `_mbs`, veya `wcs` İşlevler, uygun şekilde. MBCS oluşturmak için sembolünü tanımlayın `_MBCS`. Unicode oluşturmak için sembolünü tanımlayın `_UNICODE`. Tek baytlık bir uygulama oluşturmak için Hiçbiri (varsayılan) tanımlayın. Varsayılan olarak, `_UNICODE` MFC uygulamaları için tanımlanır.
 
 `_TCHAR` Veri türü tchar.h koşullu olarak tanımlanmıştır. Sembol `_UNICODE` , yapı için tanımlanan `_TCHAR` olarak tanımlanan **wchar_t**; Aksi takdirde tek baytlı ve MBCS derlemeler için olarak tanımlanır **char**. (**wchar_t**, temel Unicode geniş karakter veri türü olan bir 8-bit işaretli 16 bit karşılık gelen **char**.) Uluslararası uygulamalar için `_tcs` çalışması işlevler ailesini `_TCHAR` birimleri, bayt sayısını değil. Örneğin, `_tcsncpy` kopyaları `n` `_TCHARs`değil `n` bayt.
 

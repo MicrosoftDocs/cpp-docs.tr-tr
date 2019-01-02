@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - /SOURCELINK linker option
 - /SOURCELINK
-ms.openlocfilehash: 5c742a37803f450aa6084c862800583f70bcedde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5a01ca56a49791a608c5c836312c7728e9328c3
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978289"
 ---
-# <a name="sourcelink-include-sourcelink-file-in-pdb"></a>/ SOURCELINK (PDB dosyasında Sourcelink dahil)
+# <a name="sourcelink-include-source-link-file-in-pdb"></a>/ SOURCELINK (PDB dosyasında kaynak bağlantısı dahil)
 
-Bağlayıcı tarafından oluşturulmuş bir PDB dosyası dahil SourceLink yapılandırma dosyasını belirtir.
+Bağlayıcı tarafından oluşturulmuş bir PDB dosyası eklemek için kaynak bağlantısı yapılandırma dosyasını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,7 +28,7 @@ Kaynak dosyasının nereye alınabilir basit bir yerel dosya yollarını URL'ler
 
 ## <a name="remarks"></a>Açıklamalar
 
-SourceLink kaynak ikili dosyalar için hata ayıklama sağlamak için bir dil ve kaynak denetimi belirsiz sistemidir. SourceLink yerel C++ ikili dosyaları Visual Studio 2017 sürüm 15,8 başlayarak desteklenir. SourceLink genel bakış için bkz. [kaynak bağlantısı](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md). Projelerinizde SourceLink kullanmayı ve projenizin bir parçası olarak SourceLink dosyası oluşturma hakkında daha fazla bilgi için bkz. [kullanarak SourceLink](https://github.com/dotnet/sourcelink#using-sourcelink).
+Kaynak bağlantısı kaynak ikili dosyalar için hata ayıklama sağlamak için bir dil ve kaynak denetimi belirsiz sistemidir. Visual Studio 2017 sürüm 15,8 başlangıç yerel C++ ikililer için kaynak bağlantısı desteklenir. Kaynak bağlantısı genel bakış için bkz. [kaynak bağlantısı](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md). Projelerinizi kaynak bağlantısı kullanmayı ve projenizin bir parçası olarak SourceLink dosyası oluşturma hakkında daha fazla bilgi için bkz. [kaynak bağlantısı kullanılarak](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
 
 ### <a name="to-set-the-sourcelink-linker-option-in-visual-studio"></a>Visual Studio'da / sourcelink bağlayıcı seçeneğini ayarlamak için
 

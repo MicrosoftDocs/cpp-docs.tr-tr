@@ -3,12 +3,12 @@ title: Visual Studio'da bir Linux CMake projesi yapılandırma
 description: Visual Studio'da bir Linux CMake projesi yapılandırma
 ms.date: 07/20/2018
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 32d69e28c0991adc6117b7f9496eeb1022943ef2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28902f0a2938fe653eb4dfbb6e512367b1052b8c
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978328"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -18,7 +18,7 @@ Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğiniz
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
 
 > [!NOTE]
-> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).
+> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). Visual Studio 2019 önceden oluşturulmuş ikili dosyalar otomatik olarak dağıtılabilir (bkz [önceden oluşturulmuş CMake ikilileri indirmek](#download-prebuilt-cmake-binaries)).
 
 ## <a name="open-a-folder"></a>Klasör Aç
 
@@ -109,6 +109,9 @@ Bu seçenekler önce ve sonra yapı ve CMake oluşturma önce uzak çubuğundaki
 ## <a name="download-prebuilt-cmake-binaries"></a>Önceden oluşturulmuş CMake ikili dosyaları indirme
 
 Kendi Linux distro CMake daha eski bir sürümü olabilir. Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).
+
+**Visual Studio 2019**<br/>
+Geçerli bir CMake uzak makinede bulunmazsa bir bilgi çubuğu görünür ve önceden oluşturulmuş CMake ikili dosyaları otomatik olarak dağıtmak için bir seçenek sağlar. İkili dosyaların şekilde yüklenecek `~/.vs/cmake`. İkili dosyaları dağıttıktan sonra projeniz otomatik olarak yeniden neden. Tarafından belirtilen CMake unutmayın `cmakeExecutable` alanındaki `CMakeSettings.json` geçersiz (mevcut değil veya desteklenmeyen bir sürüm) ve önceden oluşturulmuş ikili dosyalar mevcut Visual Studio yoksayar `cmakeExecutable` ve önceden oluşturulmuş ikili dosyaları kullanın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

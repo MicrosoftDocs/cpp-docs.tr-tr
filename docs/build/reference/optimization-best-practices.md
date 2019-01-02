@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Visual C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: 67a071ecd457495510b2015f05466e1aa9bfc989
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da493ceb1a0b751e302d296a9840b668e446ff62
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978341"
 ---
 # <a name="optimization-best-practices"></a>En iyi uygulamaları iyileştirme
 
@@ -34,7 +34,7 @@ Bu tamamen Mümkünse, son yayın derlemeleri profil destekli iyileştirmeler il
 
 64-bit ortamlarında bağlamak için kullanılacak önerilir **/OPT: ref, ICF** bağlayıcı seçeneği ve 32-bit ortamlarda **/OPT: ref** önerilir. Daha fazla bilgi için [OPT (iyileştirmeler)](../../build/reference/opt-optimizations.md).
 
-En iyi duruma getirilmiş sürüm yapıları olsa da, hata ayıklama sembolleri oluşturmak için de önemle tavsiye edilir. Oluşturulan kodun efekt değil ve çok, uygulamanızın hata ayıklaması daha kolay olması sağlar.
+En iyi duruma getirilmiş sürüm yapıları olsa da, hata ayıklama sembolleri oluşturmak için de önemle tavsiye edilir. Oluşturulan kodu etkilemez ve uygulamanızın hata ayıklaması daha kolay bir şekilde çok fazla olması sağlar.
 
 ### <a name="floating-point-switches"></a>Kayan nokta anahtarları
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: 1b8568d69fea002e59925e1e9354407457954e42
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 9ebe4fec06996e908c619b6ac14af098b1c07a01
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978315"
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 
@@ -55,7 +55,7 @@ Bu örnekte, bir lambda bölümlerini gösterilmiştir:
 
 1. *trailing-return-type* isteğe bağlı.
 
-1. *Lambda gövdesi*)
+1. *Lambda gövdesi*.
 
 ### <a name="capture-clause"></a>Yakalama Yan Tümcesi
 
@@ -102,9 +102,9 @@ void f(Args... args) {
 
 Bir sınıf yönteminin gövdesinde lambda ifadeleri kullanmak için geçirin **bu** işaretçisini yakalama yan tümcesi, kapsayan sınıfın yöntemlerini ve veri üyelerine erişim sağlamak için.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **bu** işaretçi yakalanıp değerle belirterek `*this` yakalama yan tümcesi içinde. Değere göre yakalama anlamına tüm *kapanış*, lambda ifadesi bu encapulates anonim bir işlev nesnesidir, lambda burada çağrıldığında her çağrı sitesine kopyalanır. Değere göre yakalama, özellikle mimarilerde belirli donanım NUMA gibi paralel veya zaman uyumsuz işlem olarak lambda yürütülür gerektiğinde faydalıdır.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **Bu** işaretçi yakalanıp değerle belirterek `*this` yakalama yan tümcesi içinde. Değere göre yakalama anlamına tüm *kapanış*, lambda ifadesi bu encapulates anonim bir işlev nesnesidir, lambda burada çağrıldığında her çağrı sitesine kopyalanır. Değere göre yakalama, özellikle mimarilerde belirli donanım NUMA gibi paralel veya zaman uyumsuz işlem olarak lambda yürütülür gerektiğinde faydalıdır.
 
-Lambda ifadelerini sınıf yöntemleriyle kullanmaya kullanmayı gösteren bir örnek için bkz: "Örnek: kullanarak bir Lambda ifadesi, bir yöntemi" [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).
+Lambda ifadelerini sınıf yöntemleriyle kullanmaya kullanmayı gösteren bir örnek için bkz. "Örnek: Bir Lambda ifadesini bir yöntemde kullanma" [Lambda ifadeleri örnekleri](../cpp/examples-of-lambda-expressions.md).
 
 Yakalama yan tümcesi kullanırken, özellikle lambdaları ile kullandığınızda aşağıdaki noktaları göz önünde bulundurun öneririz çoklu iş parçacığı kullanımı:
 
@@ -324,7 +324,7 @@ Daha fazla bilgi için [generate_n](../standard-library/algorithm-functions.md#g
 
 ## <a name="constexpr-lambda-expressions"></a>constexpr lambda ifadeleri
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir lambda ifadesi olarak bildirilebilir `constexpr` veya sabit bir ifadede kullanılamaz olduğunda her veri üyesinin başlatılması BT'nin yakalar veya tanıtır içinde bir sabit ifadesine izin verilir.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir lambda ifadesi olarak bildirilebilir `constexpr` veya sabit bir ifade içinde yakalayan veya tanıtır her bir veri üyesinin başlatılması izin verildiğinde sabit bir ifadede kullanılamaz.
 
 ```cpp
     int y = 32;
