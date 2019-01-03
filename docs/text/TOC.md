@@ -20,4 +20,4 @@
 ## [ANSI Desteği](support-for-ansi.md)
 ## [Tchar.h'de Genel Metin Eşlemeleri](generic-text-mappings-in-tchar-h.md)
 ### [_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma](using-tchar-h-data-types-with-mbcs-code.md)
-## [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](how-to-convert-between-various-string-types.md)
+## [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme](how-to-convert-between-various-string-types.md)
