@@ -12,5 +12,6 @@
 ## [C/C++ Özellikleri (Linux)](prop-pages/c-cpp-linux.md)
 ## [Bağlayıcı Özellikleri (Linux)](prop-pages/linker-linux.md)
 ## [Derleme Olayı Oluşturma (Linux)](prop-pages/build-events-linux.md)
-## [Özel Derleme Adımı Özellikleri (Linux)](prop-pages/custom-build-step-linux.md) 
+## [Özel Derleme Adımı Özellikleri (Linux)](prop-pages/custom-build-step-linux.md)
 ## [Derleme Görevleri Dosyası Özellikleri (Linux)](prop-pages/makefile-linux.md)
+## [Uzak Arşiv Özellikleri (Linux)](prop-pages/remote-ar-linux.md)

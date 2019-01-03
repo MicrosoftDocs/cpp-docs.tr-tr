@@ -1,0 +1,41 @@
+items:
+- name: Visual Studio’da C++
+  href: index.yml
+  items:
+  - name: Genel Bakış
+    items:
+    - name: Visual Studio 2017 Hakkında
+      href: visual-studio-ide-cpp.md
+    - name: Kod düzenleyicisi hakkında
+      href: /visualstudio/get-started/tutorial-editor
+    - name: Projeler ve çözümler hakkında
+      href: /visualstudio/get-started/tutorial-projects-solutions
+    - name: Diğer Visual Studio özellikleri
+      href: /visualstudio/ide/advanced-feature-overview?toc=/cpp/get-started/toc.json&bc=/cpp/get-started/breadcrumb/toc.json
+  - name: Öğreticiler
+    items:
+    - name: İlk C++ uygulamanızı oluşturma
+      href: tutorial-console-cpp.md
+    - name: UWP uygulaması oluşturma
+      href: /windows/uwp/cpp-and-winrt-apis/get-started
+    - name: Windows Masaüstü uygulaması oluşturma
+      href: /windows/desktop/learnwin32/learn-to-program-for-windows
+    - name: DirectX oyunu oluşturma
+      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+    expanded: true
+  - name: Visual Studio'yu öğrenin
+    items:
+    - name: Kodu yazma ve düzenleme
+      href: /visualstudio/get-started/tutorial-editor
+    - name: Derleme ve oluşturma
+      href: /visualstudio/ide/compiling-and-building-in-visual-studio
+    - name: Kodunuzda hata ayıklama
+      href: /visualstudio/debugger/getting-started-with-the-debugger-cpp
+    - name: Projenizi dağıtma
+      href: /visualstudio/deployment/index
+ms.openlocfilehash: 98c2cd9f86825506fcc8ef44c22188026fda9bea
+ms.sourcegitcommit: 235d974c14ad3ffa7a3b29dec3e320a52fb291b2
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53440315"
