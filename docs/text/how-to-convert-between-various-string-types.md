@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çeşitli dize türleri arasında dönüştürme'
+title: 'Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 09b211f32ac2eac114245f8e9fcaeae6bebba5a3
-ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
+ms.openlocfilehash: 549fd0409929beaefd24cceaa91370bb1df41aa0
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53978276"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031258"
 ---
-# <a name="how-to-convert-between-various-string-types"></a>Nasıl Yapılır: Çeşitli dize türleri arasında dönüştürme
+# <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli dize türleri arasında dönüştürme
 
 Bu konuda çeşitli Visual C++ dize türlerinin diğer dizelere dönüştürülebileceği gösterilmektedir. Kapsanan dize türleri `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), ve <xref:System.String?displayProperty=fullName>. Her durumda, yeni türe dönüştürüldüğünde dizenin kopyası yapılır. Yeni dizeye yapılan tüm değişiklikler orijinal dizeyi etkilemeyecektir ve bunun tersi de geçerlidir.
 
@@ -485,98 +485,94 @@ int main()
     // Set up a multibyte CStringA string.
     CStringA origa("Hello, World!");
     cout << origa << " (CStringA)" << endl;
-```
+    
+    // Set up a wide character CStringW string.
+    CStringW origw("Hello, World!");
+    wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
 
-```cpp
-// Set up a wide character CStringW string.
-CStringW origw("Hello, World!");
-wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
+    // Convert to a char* string from CStringA string
+    // and display the result.
+    const size_t newsizea = (origa.GetLength() + 1);
+    char *nstringa = new char[newsizea];
+    strcpy_s(nstringa, newsizea, origa);
+    cout << nstringa << " (char *)" << endl;
 
-// Convert to a char* string from CStringA string
-// and display the result.
-const size_t newsizea = (origa.GetLength() + 1);
-char *nstringa = new char[newsizea];
-strcpy_s(nstringa, newsizea, origa);
-cout << nstringa << " (char *)" << endl;
+    // Convert to a char* string from a wide character
+    // CStringW string. To be safe, we allocate two bytes for each
+    // character in the original string, including the terminating
+    // null.
+    const size_t newsizew = (origw.GetLength() + 1)*2;
+    char *nstringw = new char[newsizew];
+    size_t convertedCharsw = 0;
+    wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
+    cout << nstringw << " (char *)" << endl;
 
-// Convert to a char* string from a wide character
-// CStringW string. To be safe, we allocate two bytes for each
-// character in the original string, including the terminating
-// null.
-const size_t newsizew = (origw.GetLength() + 1)*2;
-char *nstringw = new char[newsizew];
-size_t convertedCharsw = 0;
-wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
-cout << nstringw << " (char *)" << endl;
+    // Convert to a wchar_t* from CStringA
+    size_t convertedCharsa = 0;
+    wchar_t *wcstring = new wchar_t[newsizea];
+    mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
+    wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-// Convert to a wchar_t* from CStringA
-size_t convertedCharsa = 0;
-wchar_t *wcstring = new wchar_t[newsizea];
-mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
-wcout << wcstring << _T(" (wchar_t *)") << endl;
+    // Convert to a wide character wchar_t* string from
+    // a wide character CStringW string.
+    wchar_t *n2stringw = new wchar_t[newsizew];
+    wcscpy_s( n2stringw, newsizew, origw );
+    wcout << n2stringw << _T(" (wchar_t *)") << endl;
 
-// Convert to a wide character wchar_t* string from
-// a wide character CStringW string.
-wchar_t *n2stringw = new wchar_t[newsizew];
-wcscpy_s( n2stringw, newsizew, origw );
-wcout << n2stringw << _T(" (wchar_t *)") << endl;
+    // Convert to a wide character _bstr_t string from
+    // a multibyte CStringA string.
+    _bstr_t bstrt(origa);
+    bstrt += _T(" (_bstr_t)");
+    wcout << bstrt << endl;
 
-// Convert to a wide character _bstr_t string from
-// a multibyte CStringA string.
-_bstr_t bstrt(origa);
-bstrt += _T(" (_bstr_t)");
-wcout << bstrt << endl;
+    // Convert to a wide character_bstr_t string from
+    // a wide character CStringW string.
+    bstr_t bstrtw(origw);
+    bstrtw += " (_bstr_t)";
+    wcout << bstrtw << endl;
 
-// Convert to a wide character_bstr_t string from
-// a wide character CStringW string.
-bstr_t bstrtw(origw);
-bstrtw += " (_bstr_t)";
-wcout << bstrtw << endl;
+    // Convert to a wide character CComBSTR string from
+    // a multibyte character CStringA string.
+    CComBSTR ccombstr(origa);
+    if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
+    {
+        // Convert the wide character string to multibyte
+        // for printing.
+        CW2A printstr(ccombstr);
+        cout << printstr << endl;
+    }
 
-// Convert to a wide character CComBSTR string from
-// a multibyte character CStringA string.
-CComBSTR ccombstr(origa);
-if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
-{
-    // Convert the wide character string to multibyte
-    // for printing.
-    CW2A printstr(ccombstr);
-    cout << printstr << endl;
-}
+    // Convert to a wide character CComBSTR string from
+    // a wide character CStringW string.
+    CComBSTR ccombstrw(origw);
+    // Append the type of string to it, and display the result.
 
-// Convert to a wide character CComBSTR string from
-// a wide character CStringW string.
-CComBSTR ccombstrw(origw);
-// Append the type of string to it, and display the result.
+    if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
+    {
+        CW2A printstrw(ccombstrw);
+        wcout << printstrw << endl;
+    }
 
-if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
-{
-    CW2A printstrw(ccombstrw);
-    wcout << printstrw << endl;
-}
+    // Convert a multibyte character CStringA to a
+    // multibyte version of a basic_string string.
+    string basicstring(origa);
+    basicstring += " (basic_string)";
+    cout << basicstring << endl;
 
-// Convert a multibyte character CStringA to a
-// multibyte version of a basic_string string.
-string basicstring(origa);
-basicstring += " (basic_string)";
-cout << basicstring << endl;
+    // Convert a wide character CStringW to a
+    // wide character version of a basic_string
+    // string.
+    wstring basicstringw(origw);
+    basicstringw += _T(" (basic_string)");
+    wcout << basicstringw << endl;
 
-// Convert a wide character CStringW to a
-// wide character version of a basic_string
-// string.
-wstring basicstringw(origw);
-basicstringw += _T(" (basic_string)");
-wcout << basicstringw << endl;
-
-// Convert a multibyte character CStringA to a
-// System::String.
-String ^systemstring = gcnew String(origa);
-systemstring += " (System::String)";
-Console::WriteLine("{0}", systemstring);
-delete systemstring;
-```
-
-```cpp
+    // Convert a multibyte character CStringA to a
+    // System::String.
+    String ^systemstring = gcnew String(origa);
+    systemstring += " (System::String)";
+    Console::WriteLine("{0}", systemstring);
+    delete systemstring;
+    
     // Convert a wide character CStringW to a
     // System::String.
     String ^systemstringw = gcnew String(origw);

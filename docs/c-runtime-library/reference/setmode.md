@@ -26,12 +26,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: 887936299dce0a13738f9dd891a168785d17c979
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67cca27ba03a99d7e192d438a98f1bb3a93845ee
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617444"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031284"
 ---
 # <a name="setmode"></a>_setmode
 
@@ -66,7 +66,12 @@ Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doser
 
 **_Setmode** işlevi ayarlar *modu* tarafından verilen dosya çevirisi modu *fd*. Geçirme **_O_TEXT** olarak *modu* (çevrilmiş) metin ayarlar modu. Satır başı satır besleme (CR-LF) birleşimleri tek bir satır besleme karakteri giriş çevrilir. Satır akış karakterleri çıkış CR-LF kombinasyonlarına çevrilir. Geçirme **_o_bınary** bu Çeviriler bastırılır kümeleri ikili (çevrilmemiş) modda,.
 
-De geçirebilirsiniz **_O_U16TEXT**, **_O_U8TEXT**, veya **_O_WTEXT** bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modu etkinleştirmek için. **_setmode** genellikle varsayılan çeviri modunu değiştirmek için kullanılan **stdin** ve **stdout**, ancak herhangi bir dosya kullanın. Uygularsanız, **_setmode** bir akış için dosya tanımlayıcısı için çağrı **_setmode** akışında giriş veya çıkış işlemleri gerçekleştirmeden önce.
+De geçirebilirsiniz **_O_U16TEXT**, **_O_U8TEXT**, veya **_O_WTEXT** bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modu etkinleştirmek için.
+
+> [!CAUTION]
+> Unicode modunda olduğu için geniş yazdırma işlevleri (örneğin, `wprintf`) ve dar yazdırma işlevleri için desteklenmez. Unicode modunda akışında dar bir yazdırma işlevinin bir onaylamadır tetikler.
+
+**_setmode** genellikle varsayılan çeviri modunu değiştirmek için kullanılan **stdin** ve **stdout**, ancak herhangi bir dosya kullanın. Uygularsanız, **_setmode** bir akış için dosya tanımlayıcısı için çağrı **_setmode** akışında giriş veya çıkış işlemleri gerçekleştirmeden önce.
 
 > [!CAUTION]
 > Verileri bir dosya akışı açıkça temizleme kodunu kullanarak yazdığınız [fflush](fflush.md) kullanmadan önce **_setmode** modunu değiştirmek için. Kodu temizleme değil, beklenmeyen davranışı alabilirsiniz. Veri akışına yazmadıysanız kod temizleme gerekmez.

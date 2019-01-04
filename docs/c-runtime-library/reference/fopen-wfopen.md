@@ -32,12 +32,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: 1397f3b3513fc9a3e93a69841a93b40c16e490cf
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: fb5f78411521dcbaddefda6c621b7fe44ce91736
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333234"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031297"
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 
@@ -160,25 +160,25 @@ Aşağıdaki seçenekler eklenerek *modu* ek davranışları belirtmek için.
 
 Geçerli karakterler için *modu* kullanılan dize **fopen** ve **_fdopen** karşılık *oflag* içindekullanılanbağımsızdeğişkenler[_aç](open-wopen.md) ve [_sopen](sopen-wsopen.md)aşağıdaki gibi.
 
-|Öğesindeki karakterler *modu* dize|Eşdeğer *oflag* _aç/_sopen değeri|
+|Öğesindeki karakterler *modu* dize|Eşdeğer *oflag* değerini \_açın /\_sopen|
 |-------------------------------|----------------------------------------------------|
-|**a**|**_O_WRONLY** &#124; **_O_APPEND** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND **)|
-|**bir +**|**_O_RDWR** &#124; **_O_APPEND** (genellikle **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
-|**r**|**_O_RDONLY**|
-|**r +**|**_O_RDWR**|
-|**w**|**_O_WRONLY** (genellikle **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC **)|
-|**w +**|**_O_RDWR** (genellikle **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
-|**b**|**_O_BINARY**|
-|**T**|**_O_TEXT**|
-|**c**|Yok.|
-|**n**|Yok.|
-|**S**|**_O_SEQUENTIAL**|
-|**R**|**_O_RANDOM**|
-|**T**|**_O_SHORTLIVED**|
-|**D**|**_O_TEMPORARY**|
-|**ccs UNICODE =**|**_O_WTEXT**|
-|**ccs = UTF-8**|**_O_UTF8**|
-|**ccs UTF-16LE =**|**_O_UTF16**|
+|**a**|**\_O\_WRONLY** &#124;  **\_O\_ekleme** (genellikle  **\_O\_WRONLY** &#124;  **\_O\_CREAT** &#124;  **\_O\_ekleme**)|
+|**bir +**|**\_O\_RDWR** &#124;  **\_O\_ekleme** (genellikle  **\_O\_RDWR** &#124;  **\_ O\_ekleme** &#124;  **\_O\_CREAT** )|
+|**r**|**\_O\_RDONLY**|
+|**r +**|**\_O\_RDWR**|
+|**w**|**\_O\_WRONLY** (genellikle  **\_O\_WRONLY** &#124;  **\_O\_CREAT** &#124;  **\_O\_TRUNC**)|
+|**w +**|**\_O\_RDWR** (genellikle  **\_O\_RDWR** &#124;  **\_O\_CREAT** &#124;  **\_ O\_TRUNC**)|
+|**b**|**\_O\_İKİLİ**|
+|**T**|**\_O\_METİN**|
+|**c**|Hiçbiri|
+|**n**|Hiçbiri|
+|**S**|**\_O\_SIRALI**|
+|**R**|**\_O\_RASGELE**|
+|**T**|**\_O\_SHORTLIVED**|
+|**D**|**\_O\_GEÇİCİ**|
+|**ccs UNICODE =**|**\_O\_WTEXT**|
+|**ccs = UTF-8**|**\_O\_UTF8**|
+|**ccs UTF-16LE =**|**\_O\_UTF16**|
 
 Kullanıyorsanız **rb** modu sahip olmadığınız kodunuzu bağlantı noktasına ve çoğu büyük dosyaları okumayı bekleyen ya da ağ performansını önemsemiyorsanız, ayrıca bellek kullanmak için Win32 dosya bir seçenek olarak eşlemli düşünebilirsiniz.
 

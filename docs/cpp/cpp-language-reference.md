@@ -8,16 +8,16 @@ helpviewer_keywords:
 - language reference, Visual C++
 - Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 69b244a1559a4570cc00a72d86426a7929ffc474
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d184e70e6a7284d07e706ce8b8c247c96442750
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469387"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031271"
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 
-Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş *Annotated C++ Reference Manual* Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
+Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş [ *Annotated C++ Reference Manual* ](http://www.stroustrup.com/arm.html) Margaret Ellis ve Bjarne Stroustrup tarafından ve ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.
 
 Modern C++ programlama uygulamalarını genel bakış için bkz. [Hoş Geldiniz geri c++](welcome-back-to-cpp-modern-cpp.md).
 
