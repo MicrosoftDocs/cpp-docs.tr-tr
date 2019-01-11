@@ -8,19 +8,18 @@ helpviewer_keywords:
 - CLOCKS_PER_SEC
 - CLK_TCK constant
 ms.assetid: bc285106-383d-44cb-91bf-276ad7de57bf
-ms.openlocfilehash: 40401028ef16f0d46baec92a37b2ba422d1e56ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a604425809f43be238cbcc7b9148782bb937e00f
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220367"
 ---
 # <a name="clockspersec-clktck"></a>CLOCKS_PER_SEC, CLK_TCK
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <time.h>
 ```
 

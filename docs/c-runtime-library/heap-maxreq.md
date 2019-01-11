@@ -9,19 +9,18 @@ helpviewer_keywords:
 - _HEAP_MAXREQ constants
 - heap constants
 ms.assetid: c2dbc2ea-35ad-45d8-b459-d76ba0089ff7
-ms.openlocfilehash: 98a78a3ad54ed2e91c85ae043a98abeef9774b74
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: f779631c41642b2615731371407974e04bc233b2
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220705"
 ---
 # <a name="heapmaxreq"></a>_HEAP_MAXREQ
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <malloc.h>
 ```
 

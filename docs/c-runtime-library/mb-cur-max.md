@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MB_CUR_MAX constant
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
-ms.openlocfilehash: b5c1cfaccdc64eb3fd84476ac9c5637b55d305c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 640821f920021435f8e79d9316d5eb0836c5f145
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549844"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220133"
 ---
 # <a name="mbcurmax"></a>MB_CUR_MAX
 
@@ -19,11 +19,13 @@ ms.locfileid: "50549844"
 
 ## <a name="syntax"></a>Sözdizimi
 
-`#include <stdlib.h>`
+```
+#include <stdlib.h>
+```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlam: ANSI çok baytlı ve geniş karakter dönüştürme işlevleri
+İçerik: ANSI çok baytlı ve geniş karakter dönüştürme işlevleri
 
 Değerini `MB_CUR_MAX` en fazla bir çok baytlı karakterin geçerli yerel ayarı için bayt sayısıdır.
 

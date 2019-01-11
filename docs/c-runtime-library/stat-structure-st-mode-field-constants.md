@@ -35,19 +35,18 @@ helpviewer_keywords:
 - _S_IREAD constant
 - _S_IFCHR constant
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
-ms.openlocfilehash: edb88c70a58c501ae09342c91b6c5ec667b8151c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 081d96fcf9b0d0d8d5183e3ed6d0fc69c5a29206
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220237"
 ---
 # <a name="stat-structure-stmode-field-constants"></a>_stat Yapı st_mode Alanı Sabitleri
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <sys/stat.h>
 ```
 

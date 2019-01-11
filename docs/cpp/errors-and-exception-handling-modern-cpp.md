@@ -3,12 +3,12 @@ title: Hatalar ve Özel Durum İşleme (Modern C++)
 ms.date: 09/17/2018
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
-ms.openlocfilehash: d6192ab800667ceb35bf2e18dcbdc0be95ec70f5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: c3def77d8b7a22be05259784e3b80562c8728c15
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523294"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220575"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>Hatalar ve Özel Durum İşleme (Modern C++)
 
@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-C++ içindeki özel durumlar bu C# ve Java gibi dillerdeki benzer. İçinde **deneyin** bir özel durum bloğunda *durum* olacaktır *yakalandı* ilk ilişkili **catch** olan türüyle eşleşen blok özel durum. Yürütme başka bir deyişle, atlar **throw** ifadesine **catch** deyimi. Kullanılabilir catch bloğu bulunduysa `std::terminate` çağrılır ve programdan çıkılır. C++'da, herhangi bir tür oluşturulabilir; Ancak, doğrudan veya dolaylı olarak türetir tür throw öneririz `std::exception`. Önceki örnekte, özel durum türü [invalid_argument](../standard-library/invalid-argument-class.md), standart kitaplıkta tanımlanan [ \<stdexcept >](../standard-library/stdexcept.md) üst bilgi dosyası. C++ sağlamaz ve gerektirmeyen bir **son** bir özel durum oluşturulursa tüm kaynakların serbest bırakıldığından emin olmak için blok. Kaynak alımı başlatma (RAII) deyimidir, akıllı işaretçiler kullanan kaynak Temizleme için gereken işlevselliği sağlar ' dir. Daha fazla bilgi için [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md). C++ yığın geriye doğru izleme mekanizması hakkında daha fazla bilgi için bkz: [özel durumlar ve yığını geriye doğru izleme](../cpp/exceptions-and-stack-unwinding-in-cpp.md).
+C++ içindeki özel durumlar bu C# ve Java gibi dillerdeki benzer. İçinde **deneyin** bir özel durum bloğunda *durum* olacaktır *yakalandı* ilk ilişkili **catch** olan türüyle eşleşen blok özel durum. Yürütme başka bir deyişle, atlar **throw** ifadesine **catch** deyimi. Kullanılabilir catch bloğu bulunduysa `std::terminate` çağrılır ve programdan çıkılır. C++'da, herhangi bir tür oluşturulabilir; Ancak, doğrudan veya dolaylı olarak türetir tür throw öneririz `std::exception`. Önceki örnekte, özel durum türü [invalid_argument](../standard-library/invalid-argument-class.md), standart kitaplıkta tanımlanan [ \<stdexcept >](../standard-library/stdexcept.md) üst bilgi dosyası. C++ sağlamaz ve gerektirmeyen bir **son** bir özel durum oluşturulursa tüm kaynakların serbest bırakıldığından emin olmak için blok. Kaynak alımı başlatma (RAII) deyimidir, akıllı işaretçiler kullanan kaynak Temizleme için gereken işlevselliği sağlar ' dir. Daha fazla bilgi için [nasıl yapılır: Özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md). C++ yığın geriye doğru izleme mekanizması hakkında daha fazla bilgi için bkz: [özel durumlar ve yığını geriye doğru izleme](../cpp/exceptions-and-stack-unwinding-in-cpp.md).
 
 ## <a name="basic-guidelines"></a>Temel yönergeler
 
@@ -70,7 +70,7 @@ Herhangi bir programlama dilinde güçlü hata işleme zordur. Özel durumlar ha
 
 - Hatayı işleyen kodun hatayı algılayan koddan bir veya daha fazla işlev çağrısıyla ayrılabileceği durumlarda özel durumları kullanın. Hatayı işleyen kod, algıladığı koda sıkıca bağlı olduğunda hata kodları performans açısından kritik döngüler yerine kullanıp kullanmayacağınızı düşünün.
 
-- Throw veya bir özel durum yayan her işlev için üç özel durum garantisinden birini sağlayın: güçlü garanti, temel garanti veya nothrow (noexcept) garantisi. Daha fazla bilgi için [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).
+- Throw veya bir özel durum yayan her işlev için üç özel durum garantisinden birini sağlayın: güçlü garanti, temel garanti veya nothrow (noexcept) garantisi. Daha fazla bilgi için [nasıl yapılır: Özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).
 
 - Özel durumları değere göre oluşturun, başvuruya göre yakalayın. İşleyemeyeceğiniz hiçbir öğeyi yakalamayın.
 
@@ -100,7 +100,7 @@ SEH hakkında daha fazla bilgi için bkz: [yapılandırılmış özel durum işl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
+[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

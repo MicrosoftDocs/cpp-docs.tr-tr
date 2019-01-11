@@ -12,19 +12,18 @@ helpviewer_keywords:
 - maximum number of files
 - open files, maximum
 ms.assetid: 39cf5196-250a-459d-ae90-ce3d99f79039
-ms.openlocfilehash: 41c9f2f1297c7338ff7b4b91dd7663fc1348ce81
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2e240c7f797e385cc96fd414e0e4484cc1fdc82e
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220302"
 ---
 # <a name="fopenmax-sysopen"></a>FOPEN_MAX, _SYS_OPEN
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <stdio.h>
 ```
 

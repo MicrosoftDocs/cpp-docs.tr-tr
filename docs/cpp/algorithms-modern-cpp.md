@@ -3,12 +3,12 @@ title: Algoritmalar (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6f758d3c-a7c7-4a50-92bb-97b2f6d4ab27
-ms.openlocfilehash: 7306b28e255d68d68ad137ebedea414f0ac28744
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b972e575c982ae2523ec560a6237eac76ceaf834
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220159"
 ---
 # <a name="algorithms-modern-c"></a>Algoritmalar (Modern C++)
 
@@ -75,6 +75,6 @@ SIR değildir, eski CRT `rand()` en length C++ topluluğu içinde açıklanan pe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>

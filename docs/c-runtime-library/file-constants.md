@@ -25,19 +25,18 @@ helpviewer_keywords:
 - O_RDONLY constant
 - _O_WRONLY constant
 ms.assetid: c8fa5548-9ac2-4217-801d-eb45e86f2fa4
-ms.openlocfilehash: 672297b2a1d6466f28a7addf74b8d88e2460b15e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2dc473db50b1835d4e1495ce255c0a826563b70a
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220445"
 ---
 # <a name="file-constants"></a>Dosya Sabitleri
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <fcntl.h>
 ```
 

@@ -23,19 +23,18 @@ helpviewer_keywords:
 - _PLOSS constant
 - math error constants
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
-ms.openlocfilehash: f51d9a3a28118d922f81a44e31c9abc610645f13
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: b159d5dbe434f4ce63b7b93f60aca89b51437812
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220029"
 ---
 # <a name="math-error-constants"></a>Matematik Hatası Sabitleri
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <math.h>
 ```
 

@@ -12,19 +12,18 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-ms.openlocfilehash: 0e4a60b5f3dad70f881387d5befca2def9bff7f3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: c0c5e02458fa6b5436b029392a40bd2f54f22c0c
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220289"
 ---
 # <a name="file-permission-constants"></a>Dosya İzin Sabitleri
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <sys/stat.h>
 ```
 

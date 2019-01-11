@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: unique_ptr Örnekleri Oluşturma ve Kullanma'
+title: 'Nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma'
 ms.custom: how-to
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-ms.openlocfilehash: a3e5705b47a4cfdf17b9a4b4829f1e13565dd7ce
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 48e459b69592bf4c231407c2a378a7b7e01ff4ae
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220588"
 ---
-# <a name="how-to-create-and-use-uniqueptr-instances"></a>Nasıl yapılır: unique_ptr Örnekleri Oluşturma ve Kullanma
+# <a name="how-to-create-and-use-uniqueptr-instances"></a>Nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma
 
 A [unique_ptr](../standard-library/unique-ptr-class.md) işaretçisini paylaşmaz. Bunu başka kopyalanamaz `unique_ptr`, bir işleve değer olarak geçilemez veya yapılacak kopya oluşturmayı gerektiren herhangi bir C++ Standart Kitaplığı algoritmasında kullanılamaz. A `unique_ptr` yalnızca taşınabilir. Bu bellek kaynağının sahipliğinin başka aktarılır anlamına gelir `unique_ptr` ve özgün `unique_ptr` INI artık belleğe sahip. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Bu nedenle, bir C++ nesnesi için akıllı bir işaretçi gerektiğinde kullanmanız `unique_ptr`, oluşturduğunuzda bir `unique_ptr`, kullanın [make_unique](../standard-library/memory-functions.md#make_unique) yardımcı işlevi.
 
@@ -53,5 +53,5 @@ Daha fazla örnek için bkz. [make_unique](../standard-library/memory-functions.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md)<br/>
+[Akıllı İşaretçiler (Modern C++)](../cpp/smart-pointers-modern-cpp.md)<br/>
 [make_unique](../standard-library/memory-functions.md#make_unique)

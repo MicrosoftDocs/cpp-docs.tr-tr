@@ -1,25 +1,25 @@
 ---
 title: DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
-ms.date: 11/04/2016
+ms.date: 01/09/2018
 helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: e4351d8eca6c6c580430aa8988344bf7f57e0a9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f485353d344b17dabbf0f56a4c7ded2cbccce76
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220718"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 
-Bir modül-tanımlama (.def) dosyası, bir DLL'nin çeşitli özniteliklerini tanımlayan bir veya daha fazla modül deyimi içeren bir metin dosyasıdır. Kullanmıyorsanız, **__declspec(dllexport)** DLL işlevlerini dışa aktarmak için anahtar sözcüğü DLL .def dosyası gerektirir.
+Modül-tanımlama veya DEF dosyası (*.def) bir DLL'nin çeşitli özniteliklerini tanımlayan bir veya daha fazla modül deyimi içeren bir metin dosyası var. Kullanmıyorsanız, **__declspec(dllexport)** DLL işlevlerini dışa aktarmak için anahtar sözcüğü DLL DEF dosyası gerektirir.
 
-En az bir .def dosyası aşağıdaki modül tanımlama deyimlerini içermelidir:
+Bir minimal DEF dosyası aşağıdaki modül tanımlama deyimlerini içermelidir:
 
-- Dosyadaki ilk deyim LIBRARY deyimi olmalıdır. Bu ifade, .def dosyanın DLL'ye ait olarak tanımlar. LIBRARY deyimini DLL'in adı tarafından izlenir. Bağlayıcı, bu adı DLL'in içe aktarma kitaplığına yerleştirir.
+- Dosyadaki ilk deyim LIBRARY deyimi olmalıdır. Bu bildirimi DEF dosyanın DLL'ye ait olarak tanımlar. LIBRARY deyimini DLL'in adı tarafından izlenir. Bağlayıcı, bu adı DLL'in içe aktarma kitaplığına yerleştirir.
 
 - EXPORTS deyimi, ad ve isteğe bağlı olarak DLL tarafından dışarı aktarılan işlevlerin sıralı değerlerini listeler. İşlev adının takip ederek sıralı bir değer atadığınız işlevi bir at işareti (@) ve bir sayı. Sıralı değerleri belirttiğinizde, burada N DLL'in dışarı aktardığı işlev sayısı olan N-1 aralığında olmalıdır. Sıralı olarak işlevleri dışarı aktarmak istiyorsanız, bkz. [DLL'den işlevleri yerine ada göre bir DLL](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) bu konuda yanı sıra.
 
@@ -34,11 +34,11 @@ EXPORTS
    Min   @4
 ```
 
-Kullanırsanız [MFC DLL Sihirbazı](../mfc/reference/mfc-dll-wizard.md) MFC DLL'yi oluşturmak için sihirbaz sizin için iskelet .def dosyasını oluşturur ve projenize otomatik olarak ekler. Bu dosyaya dışa aktarılacak işlevlerin adlarını ekleyin. MFC dışı DLL'ler için .def dosyasını kendiniz oluşturmalı ve projenize eklemeniz gerekir.
+Kullanırsanız [MFC DLL Sihirbazı](../mfc/reference/mfc-dll-wizard.md) MFC DLL'yi oluşturmak için sihirbaz sizin için iskelet bir DEF dosyası oluşturur ve projenize otomatik olarak ekler. Bu dosyaya dışa aktarılacak işlevlerin adlarını ekleyin. İçin MFC olmayan DLL'leri, DEF dosyasını kendiniz oluşturmalı ve projenize ekleyin. Ardından **proje** > **özellikleri** > **bağlayıcı** > **giriş**  >  **Modül tanım dosyası** ve DEF dosyası adını girin. Her yapılandırma ve platform için bu adımı yineleyin veya bunu tek seferde seçerek **yapılandırma tüm yapılandırmaları =**, ve **Platform tüm platformlar =**.
 
-C++ dosyasındaki işlevleri dışa aktarıyorsanız, düzenlenmiş adları .def dosyasına yerleştirmeniz veya extern "C"'ı kullanarak dışa aktarılan işlevlerinizi standart C bağlantısıyla tanımlamanız gerekir. Düzenlenmiş adları .def dosyasına koymanız gerekiyorsa, bunları kullanarak alabilirsiniz [DUMPBIN](../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../build/reference/map-generate-mapfile.md) seçeneği. Derleyici tarafından üretilen düzenlenmiş adların derleyiciye özel olduğunu unutmayın. Düzenlenmiş adları .def dosyasına Visual C++ derleyicisi tarafından üretilen yerleştirirseniz, bağlanan uygulamalar da böylece uygulamadaki düzenlenmiş adlar DLL'nin .de dışarı aktarılan adların aynı Visual C++ sürümü kullanılarak oluşturulmalıdır f dosyası.
+C++ dosyasındaki işlevleri dışa aktarıyorsanız, düzenlenmiş adları DEF dosyasında yerleştirin veya extern "C"'ı kullanarak dışa aktarılan işlevlerinizi standart C bağlantısıyla tanımlamanız gerekir. Düzenlenmiş adlar DEF dosyasına koymanız gerekiyorsa, bunları kullanarak elde edebilirsiniz [DUMPBIN](../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../build/reference/map-generate-mapfile.md) seçeneği. Derleyici tarafından üretilen düzenlenmiş adların derleyiciye özel olduğunu unutmayın. DEF dosyasına Visual C++ Derleyici tarafından üretilen düzenlenmiş adların yerleştirirseniz, bağlanan uygulamalar da böylece uygulamadaki düzenlenmiş adlar DLL'nin DEF f dışa aktarılan adlarla eşleşen aynı Visual C++ sürümü kullanılarak oluşturulmalıdır ile.
 
-Oluşturuyorsanız bir [uzantı DLL'si](../build/extension-dlls-overview.md), ve bir .def dosyası kullanarak dışa aktarıyorsanız aşağıdaki kodu dışa aktarılan sınıfları içeren üstbilgi dosyalarınızın başında ve sonunda:
+Oluşturuyorsanız bir [uzantı DLL'si](../build/extension-dlls-overview.md), ve bir DEF dosyası kullanarak dışa aktarıyorsanız aşağıdaki kodu dışa aktarılan sınıfları içeren üstbilgi dosyalarınızın başında ve sonunda:
 
 ```
 #undef AFX_DATA
@@ -50,9 +50,9 @@ Oluşturuyorsanız bir [uzantı DLL'si](../build/extension-dlls-overview.md), ve
 
 Bu satırlar, içerde kullanılan veya sınıflarınıza eklenen MFC değişkenlerinin olduğundan emin olun verilen (veya içeri aktarılan) MFC uzantısı DLL. Örneğin, kullanarak bir sınıf türetirken `DECLARE_DYNAMIC`, eklemek için makro genişler bir `CRuntimeClass` sınıfınıza üye değişkeni. Bu dört satırı dışarıda bırakmak DLL'NİZİN yanlış derleme veya istemci uygulaması DLL'nize bağlandığında hataya neden neden olabilir.
 
-DLL'yi oluştururken, bağlayıcı dışarı aktarma (.exp) dosyası oluşturmak için .def dosyası ve bir içeri aktarma kitaplık (.lib) dosyası kullanır. Bağlayıcı sonra DLL'i oluşturmak için dışa aktarma dosyası kullanır. Oluşturulduklarında içeri aktarma kitaplığının DLL bağlantısını için örtük olarak bağlama yürütülebilir.
+DLL'yi oluştururken, bağlayıcı dışarı aktarma (.exp) dosyası oluşturmak için DEF dosyası ve bir içeri aktarma kitaplık (.lib) dosyası kullanır. Bağlayıcı sonra DLL'i oluşturmak için dışa aktarma dosyası kullanır. Oluşturulduklarında içeri aktarma kitaplığının DLL bağlantısını için örtük olarak bağlama yürütülebilir.
 
-MFC'nin MFCx0.DLL'den işlevleri ve sınıfları dışarı aktarmak için .def dosyası kullandığını unutmayın.
+MFC'nin MFCx0.DLL'den işlevleri ve sınıfları dışarı aktarmak için DEF dosyaları kullandığına dikkat edin.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 

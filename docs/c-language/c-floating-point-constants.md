@@ -9,12 +9,12 @@ helpviewer_keywords:
 - floating-point constants, about floating-point constants
 - double data type, floating-point constants
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
-ms.openlocfilehash: d7879f3382016e098db0c8073322b99d596e8f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bde8ecdfa7e93160a86829c466ab9a78b71d48e
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220380"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
 
@@ -48,7 +48,7 @@ Rakamları ondalık (değer tamsayı kısmını) önce veya basamak (kesirli kı
 
 Aşağıdaki örnekler, kayan nokta sabitleri ve ifadeler bazı forms gösterir:
 
-```
+```C
 15.75
 1.575E1   /* = 15.75   */
 1575e-2   /* = 15.75   */
@@ -60,16 +60,16 @@ Bunlar bir eksi işareti tarafından öncelenen sürece kayan nokta sabitleri po
 
 Bir kayan noktalı sabit olmayan bir **f**, **F**, **l**, veya **L** soneki türüne sahip `double`. Varsa harfi **f** veya **F** soneki sabiti türüne sahip olan `float`. Harfinin olup olmadığını **l** veya **L**, türüne sahip `long double`. Örneğin:
 
-```
-100L  /* Has type long double  */
-100F  /* Has type float        */
+```C
+10.0L  /* Has type long double  */
+10.0F  /* Has type float        */
 ```
 
 Microsoft C derleyicisi dahili olarak temsil eden Not `long double` türle aynı `double`. Bkz: [temel türlerin depolanması](../c-language/storage-of-basic-types.md) türü hakkında bilgi için `double`, `float`, ve `long double`.
 
 Aşağıdaki örneklerde gösterildiği gibi kayan noktalı sabit tamsayı kısmını atlayabilirsiniz. Aşağıdakiler dahil olmak üzere birçok şekilde.75 sayısı belirtilebilir:
 
-```
+```C
 .0075e2
 0.075e1
 .075e1

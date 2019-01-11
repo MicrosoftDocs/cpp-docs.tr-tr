@@ -8,19 +8,18 @@ helpviewer_keywords:
 - WEOF function
 - end of file
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
-ms.openlocfilehash: 9317fdad16121374b31e0862f3326f4150c71579
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4c35518130fc233afd055133704bcb0abaccca8
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220731"
 ---
 # <a name="eof-weof"></a>EOF, WEOF
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <stdio.h>
 ```
 

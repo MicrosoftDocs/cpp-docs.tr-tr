@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-ms.openlocfilehash: f7b33767155c4781d131a008d6d42dcc4015d07b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 94f26a6baeb4d3440d7f16af298b9880b91860f2
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220497"
 ---
 # <a name="umul128"></a>_umul128
 
@@ -48,13 +48,13 @@ unsigned __int64 _umul128(
 
 |İç|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_umul128`|ARM, x64|\<intrin.h >|
+|`_umul128`|X64|\<intrin.h >|
 
 ## <a name="example"></a>Örnek
 
 ```
 // umul128.c
-// processor: IPF, x64
+// processor: x64
 
 #include <stdio.h>
 #include <intrin.h>

@@ -3,12 +3,12 @@ title: Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-ms.openlocfilehash: 9a73ea1df099003061081d108a3f3f6eef601fb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e114e2802dd4b2e5d1497867e2224be90c4752d
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220692"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 
@@ -59,6 +59,6 @@ Oluşturmayan takas özelleştirmesi için destek eklenip eklenmeyeceğini göz 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

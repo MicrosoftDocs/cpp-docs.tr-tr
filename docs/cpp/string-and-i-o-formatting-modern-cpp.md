@@ -3,12 +3,12 @@ title: Dize ve g-Ç biçimlendirme (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
-ms.openlocfilehash: 816eb71dae011f853a6e7ade1a1a2a8144a457c5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c051a7d70042456d30bee0ebb2b362c5d05b8e37
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220510"
 ---
 # <a name="string-and-io-formatting-modern-c"></a>Dize ve G/Ç Biçimlendirme (Modern C++)
 
@@ -44,7 +44,7 @@ Boost.Format avantajlarından bazıları şunlardır:
 
 - Güvenli: Tür açısından güvenlidir ve hatalar için bir özel durum oluşturur; Örneğin, çok az veya çok fazla öğe belirtimi.
 
-- Genişletilebilir: Yapılabilen herhangi bir türü çalışır.
+- Genişletilebilir: Yapılabilen herhangi bir tür için çalışır.
 
 - Kullanışlı: Standart Posix ve benzer biçim dizeleri.
 
@@ -64,7 +64,7 @@ Aşağıdaki kod Boost biçimlendirme özelliklerinin bazılarını gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
 [\<iostream >](../standard-library/iostream.md)<br/>

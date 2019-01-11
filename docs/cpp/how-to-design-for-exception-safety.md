@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Özel Durum Güvenliği Tasarımı'
+title: 'Nasıl yapılır: Özel durum güvenliği tasarımı'
 ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: f384da3eee0c7bca80d8d6c61f8d8cf0cfaece92
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 2dada25ea712b7bb6d48d80525c824a0457b18cf
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220562"
 ---
-# <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel Durum Güvenliği Tasarımı
+# <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel durum güvenliği tasarımı
 
 Avantajlarından biri özel durum mekanizması birlikte özel durum hakkındaki verileri bu yürütme, catch işleme deyimi deyimden öncelikle özel durum oluşturan doğrudan atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Throw deyimi try deyimi arasında çağıran işlevler oluşturulan özel durum hakkında bir şey bilmek için gerekli değildir.  Bununla birlikte, kapsamı "beklenmedik bir şekilde dışında" gidebilirsiniz olacak şekilde tasarlanmış olması burada bir özel durum yukarı gelen aşağıda yayar ve bu nedenle kısmen oluşturulan nesnelerin arkasında çıkmadan sızmasına bellek herhangi bir noktasını veya kullanılamaz durumda olmadığından veri yapılarını sahiptirler.
 
@@ -95,7 +95,7 @@ Genellikle, özel durum güvenliği bir işlev sağlayan üç özel durum garant
 
 Hayır-başarısız (veya "fırlatmasız") garantisi, bir işlev sağlayan güçlü garanti yoktur. Bu işlev değil bir özel durum veya bir yayılmasına izin olduğunu belirtir. Ancak, (a) bu işlevi çağıran tüm işlevleri no-başarısız olduğunu bilmediği sürece bir böyle bir garanti güvenilir bir şekilde sağlayamaz veya (b), bu işlev ulaşmadan önce attığı özel durumları yakalanır bildiğiniz veya nasıl catch (c), bildiğiniz ve Bu işlev ulaşan tüm istisnalarla başa.
 
-Hem güçlü garanti hem de temel garanti yok ediciler Hayır çökme varsayımına güvenir. Tüm kapsayıcıları ve standart kitaplık türleri, Yıkıcılar değil throw garanti. De ters gereksinim mevcuttur: Standart Kitaplığı gerektiren kullanıcı tanımlı türler, kendisine verilen — Örneğin, şablon bağımsız değişkenleri olarak — oluşturmayan Yıkıcılar olması gerekir.
+Hem güçlü garanti hem de temel garanti yok ediciler Hayır çökme varsayımına güvenir. Tüm kapsayıcıları ve standart kitaplık türleri, Yıkıcılar değil throw garanti. Ters gereksinimi vardır: Kullanıcı tanımlı türler, standart kitaplık gerektirir kendisine verilen — Örneğin, şablon bağımsız değişkenleri olarak — oluşturmayan Yıkıcılar olması gerekir.
 
 ### <a name="strong-guarantee"></a>Güçlü garanti
 
@@ -121,5 +121,5 @@ Hayır çökme tüm yerleşik türler ve temel garanti en az standart kitaplık 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)
+[Hatalar ve Özel Durum İşleme (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)

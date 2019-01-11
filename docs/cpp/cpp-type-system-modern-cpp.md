@@ -3,12 +3,12 @@ title: C++ Tür Sistemi (Modern C++)
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 476ebabc4bfc19f995119649d6f012d4b39d8369
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ea4d8da9af10df2fb930daaad8374d70b6704d28
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220679"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 
@@ -16,9 +16,9 @@ Kavramını *türü* C++'da çok önemlidir. Her değişken, işlev bağımsız 
 
 ## <a name="terminology"></a>Terminoloji
 
-**Değişken**: sembolik adı başvurduğu için tanımlanmış olduğu yerlerde kod kapsamında verilere erişmek için kullanılabilir, böylece veri miktarını adı. C++ ' ta *değişkeni* diğer örnek türleri genellikle olarak adlandırılır genelde skalar veri türlerine örneğine başvurmak için kullanılan *nesneleri*.
+**Değişken**: Simgesel Adı başvurduğu için tanımlanmış olduğu yerlerde kod kapsamında verilere erişmek için kullanılabilir, böylece veri miktarını adı. C++ ' ta *değişkeni* diğer örnek türleri genellikle olarak adlandırılır genelde skalar veri türlerine örneğine başvurmak için kullanılan *nesneleri*.
 
-**Nesne**: kolaylık ve tutarlılık için bu makalede terimi kullanılmaktadır *nesne* başvurmak için herhangi bir örneği ve bir sınıf veya yapının genel anlamda kullanıldığında tüm türleri içerir bile skalar değişkenler.
+**Nesne**: Kolaylık ve tutarlılık için bu makalede terimi kullanılmaktadır *nesne* başvurmak için herhangi bir örneği ve bir sınıf veya yapının genel anlamda kullanıldığında tüm türleri içerir bile skalar değişkenler.
 
 **POD türü** (düz eski veriler): C++ içindeki veri türleri için resmi olmayan bu kategori skalar türlere başvurur (temel türler bölümüne bakın) veya *POD sınıflarıdır*. POD olmayan statik veri üyeleri, kullanıcı tanımlı oluşturucular veya kullanıcı tanımlı atama işleçleri POD sınıfına dahil değildir. Ayrıca, bir POD sınıfının hiçbir sanal işlevi, hiçbir temel sınıfı ve hiçbir özel veya korumalı statik olmayan veri üyesi bulunmaz. POD türleri genellikle dış veri değişimi için örneğin, (yalnızca POD türleri olan) C dilinde yazılmış bir modül ile birlikte kullanılır.
 
@@ -170,6 +170,6 @@ C++ tür sistemi hakkında daha fazla bilgi için aşağıdaki konulara bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

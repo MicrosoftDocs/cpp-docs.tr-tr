@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma'
+title: 'Nasıl yapılır: Oluşturma ve CComPtr ve CComQIPtr örnekleri kullanma'
 ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
-ms.openlocfilehash: 8065e0b8782c1c28d83aa6fc9690150793fe51ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bcabfe80185939b899c84fc44f71b98608fc3c7
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220560"
 ---
-# <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma
+# <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: Oluşturma ve CComPtr ve CComQIPtr örnekleri kullanma
 
 Klasik Windows programlamada kitaplıkları genellikle COM nesneleri (veya daha kesin olarak COM sunucuları) uygulanır. Çoğu Windows işletim sistemi bileşenleri COM sunucuları olarak uygulanır ve bu formda kitaplıkları, çok sayıda katkıda sağlar. COM temelleri hakkında daha fazla bilgi için bkz. [Bileşen Nesne Modeli (COM)](/windows/desktop/com/component-object-model--com--portal).
 
@@ -39,4 +39,4 @@ ATL ayrıca sağlar `CComQIPtr`, ek bir arabirimi almak için bir COM nesnesi so
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md)
+[Akıllı İşaretçiler (Modern C++)](../cpp/smart-pointers-modern-cpp.md)

@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim'
+title: 'Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim'
 ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-ms.openlocfilehash: b6da1142ee04668033a516f2c20c4a2354ff5598
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8ff92f965f48faa7954ae0364ec7877428e519c
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220637"
 ---
-# <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim
+# <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim
 
 Bu makalede, bir C++ modülünde tutarlı özel durum işleme gerçekleştirme ve ayrıca bu özel durumların özel durum sınırlarındaki hata kodlarına/kodlarından çevirmek nasıl açıklar.
 
@@ -19,7 +19,7 @@ Bir C++ modülünün bazen gerekir (durumsuz kod) özel durumlar kullanmayan kod
 
 ## <a name="calling-non-exceptional-functions-from-c"></a>C++'tan olmayan durum fonksiyonlarını çağırma
 
-C++'dan olağanüstü olmayan bir işlev çağırdığınızda, bu işlev hatalar varsa algılayan ve muhtemelen bir istisna atan bir C++ işlev içinde sarmalamak olur. Böyle bir sarmalayıcı işlevi tasarlarken, öncelikle sağlamak için özel durum garantisi türüne karar verin: fırlatmasız, güçlü veya temel. İkinci olarak, bir özel durum oluşturulursa tüm kaynakların, örneğin dosya tanıtıcılarının doğru yayımlanır böylece işlev tasarlayın. Genellikle, bu kaynaklara sahip olmak için akıllı işaretçiler veya benzer kaynak yöneticileri kullanmanız anlamına gelir. Tasarım konuları hakkında daha fazla bilgi için bkz. [nasıl yapılır: özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).
+C++'dan olağanüstü olmayan bir işlev çağırdığınızda, bu işlev hatalar varsa algılayan ve muhtemelen bir istisna atan bir C++ işlev içinde sarmalamak olur. Böyle bir sarmalayıcı işlevi tasarlarken, öncelikle sağlamak için özel durum garantisi türüne karar verin: fırlatmasız, güçlü veya temel. İkinci olarak, bir özel durum oluşturulursa tüm kaynakların, örneğin dosya tanıtıcılarının doğru yayımlanır böylece işlev tasarlayın. Genellikle, bu kaynaklara sahip olmak için akıllı işaretçiler veya benzer kaynak yöneticileri kullanmanız anlamına gelir. Tasarım konuları hakkında daha fazla bilgi için bkz. [nasıl yapılır: Özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).
 
 ### <a name="example"></a>Örnek
 
@@ -236,5 +236,5 @@ Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Nasıl yapılır: Özel Durum Güvenliği Tasarımı](../cpp/how-to-design-for-exception-safety.md)<br/>
+[Hatalar ve Özel Durum İşleme (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Nasıl yapılır: Özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md)<br/>

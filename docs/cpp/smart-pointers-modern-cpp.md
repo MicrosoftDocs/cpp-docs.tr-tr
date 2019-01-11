@@ -3,12 +3,12 @@ title: Akıllı İşaretçiler (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-ms.openlocfilehash: 5f04a4ab23241d63fc1694d419f85d8b694b7fff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c976f9ec72929f2c8ff91fb9f9594d91c7457365
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220666"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 
@@ -68,23 +68,23 @@ Aşağıdaki bölümde Windows programlama ortamında bulunan farklı türden ak
 Bu akıllı işaretçileri eski C++ nesnelerine (POCO) işaretçi kapsüllemek için ilk seçenek olarak kullanın.
 
 - `unique_ptr`<br/>
-   Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İhtiyacınız olan belirli bilmiyorsanız varsayılan seçenek olarak değilseniz POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr` küçük ve verimli değildir; boyutu bir işaretçidir ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonu alma için rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).
+   Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İhtiyacınız olan belirli bilmiyorsanız varsayılan seçenek olarak değilseniz POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr` küçük ve verimli değildir; boyutu bir işaretçidir ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonu alma için rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).
 
 - `shared_ptr`<br/>
-   Başvuru sayımı olan akıllı işaretçi. Birden fazla sahibe tek bir ham işaretçi atamak istediğinizde kullanın, örnek olarak bir kapsayıcıdan işaretçi kopyası döndürüp orijinalini saklamak istediğinizde kullanın. Ham işaretçiyi tüm kadar silinmez `shared_ptr` sahipleri kapsam dışında çıkmadan veya aksi halde. Boyut iki işaretçi kadardır; biri nesne için ve biri başvuru sayısını içeren paylaşılan denetim bloğu için. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-shared-ptr-instances.md) ve [shared_ptr sınıfı](../standard-library/shared-ptr-class.md).
+   Başvuru sayımı olan akıllı işaretçi. Birden fazla sahibe tek bir ham işaretçi atamak istediğinizde kullanın, örnek olarak bir kapsayıcıdan işaretçi kopyası döndürüp orijinalini saklamak istediğinizde kullanın. Ham işaretçiyi tüm kadar silinmez `shared_ptr` sahipleri kapsam dışında çıkmadan veya aksi halde. Boyut iki işaretçi kadardır; biri nesne için ve biri başvuru sayısını içeren paylaşılan denetim bloğu için. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: Shared_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-shared-ptr-instances.md) ve [shared_ptr sınıfı](../standard-library/shared-ptr-class.md).
 
 - `weak_ptr`<br/>
-    Özel durum akıllı işaretçisi ile kullanılmak üzere `shared_ptr`. A `weak_ptr` bir veya daha fazla sahip olduğu bir nesneye erişim sağlar `shared_ptr` örnekler, ancak başvuru sayımına değil. Bir nesneyi görmek istiyorsanız ancak canlı kalmasını istemiyorsanız kullanın. Bazı durumlarda arasındaki döngüsel başvuruları bölmek için gereken `shared_ptr` örnekleri. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-weak-ptr-instances.md) ve [weak_ptr sınıfı](../standard-library/weak-ptr-class.md).
+    Özel durum akıllı işaretçisi ile kullanılmak üzere `shared_ptr`. A `weak_ptr` bir veya daha fazla sahip olduğu bir nesneye erişim sağlar `shared_ptr` örnekler, ancak başvuru sayımına değil. Bir nesneyi görmek istiyorsanız ancak canlı kalmasını istemiyorsanız kullanın. Bazı durumlarda arasındaki döngüsel başvuruları bölmek için gereken `shared_ptr` örnekleri. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: Weak_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-weak-ptr-instances.md) ve [weak_ptr sınıfı](../standard-library/weak-ptr-class.md).
 
 ### <a name="smart-pointers-for-com-objects-classic-windows-programming"></a>{1&gt;COM Nesneleri (Klasik Windows Programlama) için Akıllı İşaretçiler&lt;1}
 
 COM nesneleriyle çalışırken, arabirim işaretçilerini uygun akıllı işaretçi türüne sarın. Etkin Şablon Kitaplığı (ATL) çeşitli amaçlar için birçok akıllı işaretçi tanımlar. Ayrıca `_com_ptr_t` .tlb dosyalarından sarmalayıcı sınıflar oluşturduğunda, derleyicinin kullandığı akıllı işaretçi türü. ATL üstbilgi dosyalarını eklemek istemediğinizde en iyi seçenektir.
 
 [CComPtr Sınıfı](../atl/reference/ccomptr-class.md)<br/>
-ATL kullanabiliyorsanız bunu kullanın. Kullanarak başvuru sayımı gerçekleştirir `AddRef` ve `Release` yöntemleri. Daha fazla bilgi için [nasıl yapılır: oluşturma ve kullanım CComPtr ve CComQIPtr örnekleri](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).
+ATL kullanabiliyorsanız bunu kullanın. Kullanarak başvuru sayımı gerçekleştirir `AddRef` ve `Release` yöntemleri. Daha fazla bilgi için [nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).
 
 [CComQIPtr Sınıfı](../atl/reference/ccomqiptr-class.md)<br/>
-Benzer `CComPtr` arama için Basitleştirilmiş söz dizimi sağlar `QueryInterface` COM nesnelerinde. Daha fazla bilgi için [nasıl yapılır: oluşturma ve kullanım CComPtr ve CComQIPtr örnekleri](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).
+Benzer `CComPtr` arama için Basitleştirilmiş söz dizimi sağlar `QueryInterface` COM nesnelerinde. Daha fazla bilgi için [nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).
 
 [CComHeapPtr Sınıfı](../atl/reference/ccomheapptr-class.md)<br/>
 Kullanan nesneler için akıllı işaretçi `CoTaskMemFree` belleği boşaltmak için.
@@ -116,6 +116,6 @@ Listesini yönlendirmeye yönelik yöntemleri kapsülleyen sınıftır `CAutoPtr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

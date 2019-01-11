@@ -41,19 +41,18 @@ helpviewer_keywords:
 - EXDEV constant
 - EILSEQ constant
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
-ms.openlocfilehash: c7c623b81d626b3d653dbd731521ffe2649671ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d092f9c1626f48dcdb006e18ece2a45bfeed36e
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645607"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220614"
 ---
 # <a name="errno-constants"></a>errno Sabitleri
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 #include <errno.h>
 ```
 
@@ -73,7 +72,7 @@ Aşağıdaki **errno** değerler desteklenir:
 |**EAGAIN**|Daha fazla işlem yok. Daha fazla işlem yuva yok, veya bellek yeterli değil veya iç içe geçme düzeyi üst sınırına ulaşıldı yeni bir işlem oluşturma girişimi başarısız oldu.|
 |**E2BIG**|Bağımsız değişken listesi çok uzun.|
 |**SPAWN**|İzin reddedildi. Dosya izin ayarının belirtilen erişim izin vermez. Bu hata, bir dosyaya erişmek için girişiminde bulunuldu belirtir (veya bazı durumlarda, bir dizin), dosya özniteliklerini bir şekilde uyumsuz.<br/><br/>Örneğin, yazma için mevcut bir salt okunur dosyasını açın veya bir dizin dosyası açmak için açık değil, bir dosyadan okuma denemesi yapıldığında hata oluşabilir. MS-DOS işletim sistemi sürümlerinde 3.0 ve sonraki sürümler altında **SPAWN** bir kilitleme veya paylaşım ihlali da gösterebilir.<br/><br/>Hata, bir dosya veya dizin yeniden adlandırmak veya varolan bir dizin kaldırmak için bir girişimi de oluşabilir.|
-|**EBADF**|Hatalı dosya numarası. İki olası nedeni vardır: 1) belirtilen dosya tanımlayıcısı geçerli bir değer değil veya açık olan bir dosyaya başvurmuyor. (2) bir dosya veya cihaz için yalnızca okuma erişimi açılan yazmak için girişimde bulunuldu.|
+|**EBADF**|Hatalı dosya numarası. İki olası nedeni vardır: (1) belirtilen dosya tanımlayıcısı, geçerli bir değer değil veya açık olan bir dosyaya başvurmuyor. (2) bir dosya veya cihaz için yalnızca okuma erişimi açılan yazmak için girişimde bulunuldu.|
 |**EDEADLOCK**|Kaynak kilitlenmesi oluşabilir. Bir matematiksel işlev için bağımsız değişken işlev etki alanında değil.|
 |**EDOM**|Matematik bağımsız değişkeni.|
 |**EEXIST**|Dosya mevcut. Zaten bir dosya oluşturmak için girişiminde bulunuldu. Örneğin, **_O_CREAT** ve **_O_EXCL** bayrakları içinde belirtilen bir **_aç** çağrısı, ancak adlandırılmış dosyanın zaten mevcut.|
