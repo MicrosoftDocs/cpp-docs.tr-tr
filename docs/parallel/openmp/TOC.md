@@ -1,13 +1,15 @@
+---
+ms.openlocfilehash: 5f74861f75ed3cd431379f26f9802c0fb29a8bea
+ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54397322"
+---
 # [Visual C++'da OpenMP](openmp-in-visual-cpp.md)
 # [OpenMP C ve C++ Uygulaması Program Arabirimi](openmp-c-and-cpp-application-program-interface.md)
 ## [İçindekiler](contents.md)
 ## [1. Giriş](1-introduction.md)
-### [1.1 Kapsam](1-1-scope.md)
-### [1.2 Terimlerin Tanımı](1-2-definition-of-terms.md)
-### [1.3 Yürütme Modeli](1-3-execution-model.md)
-### [1.4 Uyumluluk](1-4-compliance.md)
-### [1.5 Örnek Oluşturan Başvurular](1-5-normative-references.md)
-### [1.6 Organizasyon](1-6-organization.md)
 ## [2. Yönergeler](2-directives.md)
 ### [2.1 Yönerge Biçimi](2-1-directive-format.md)
 ### [2.2 Koşullu Derleme](2-2-conditional-compilation.md)
@@ -61,10 +63,6 @@
 #### [3.3.1 omp_get_wtime İşlevi](3-3-1-omp-get-wtime-function.md)
 #### [3.3.2 omp_get_wtick İşlevi](3-3-2-omp-get-wtick-function.md)
 ## [4. Ortam Değişkenleri](4-environment-variables.md)
-### [4.1 OMP_SCHEDULE](4-1-omp-schedule.md)
-### [4.2 OMP_NUM_THREADS](4-2-omp-num-threads.md)
-### [4.3 OMP_DYNAMIC](4-3-omp-dynamic.md)
-### [4.4 OMP_NESTED](4-4-omp-nested.md)
 ## [A. Örnekler](a-examples.md)
 ### [A.1   Basit Döngüyü Paralel Yürütme](a-1-executing-a-simple-loop-in-parallel.md)
 ### [A.2   Koşullu Derlemeyi Belirtme](a-2-specifying-conditional-compilation.md)
@@ -99,8 +97,6 @@
 ### [A.31   İş Parçacığı Güvenli Kilit İşlevleri](a-31-thread-safe-lock-functions.md)
 ## [B. Çalışma Zamanı Kitaplık İşlevleri için Saplamalar](b-stubs-for-run-time-library-functions.md)
 ## [C. OpenMP C ve C++ Dil Bilgisi](c-openmp-c-and-cpp-grammar.md)
-### [C.1 Gösterim](c-1-notation.md)
-### [C.2 Kurallar](c-2-rules.md)
 ## [D. schedule Yan Tümcesini Kullanma](d-using-the-schedule-clause.md)
 ## [E. OpenMP C/C++'daki Uygulama Tanımlı Davranışlar](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
 ## [F. 2.0 Sürümündeki Yeni Özellikler ve Açıklamalar](f-new-features-and-clarifications-in-version-2-0.md)
