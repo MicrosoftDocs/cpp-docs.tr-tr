@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, detect_mismatch
 - detect_mismatch pragma
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
-ms.openlocfilehash: 2973a4738aa54e9f454190b18bcabff92077b284
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb6f147f1591f010298e84cb28f05b40dafaeb63
+ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633330"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417635"
 ---
 # <a name="detectmismatch"></a>detect_mismatch
 Bir nesneyi bir kayıt yerleştirir. Bağlayıcı, bu kayıtları olası uyuşmazlıkları denetler.
@@ -21,7 +21,7 @@ Bir nesneyi bir kayıt yerleştirir. Bağlayıcı, bu kayıtları olası uyuşma
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-#pragma detect_mismatch( "name", "value"))
+#pragma detect_mismatch("name", "value")
 ```
 
 ## <a name="remarks"></a>Açıklamalar

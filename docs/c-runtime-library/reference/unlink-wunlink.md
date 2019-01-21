@@ -32,12 +32,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: 7565679c58af83d64fd59419e8e841ee48133edf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec59a02f1302fe4a2149889cf1b48090d061d6b2
+ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544206"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417622"
 ---
 # <a name="unlink-wunlink"></a>_unlink, _wunlink
 
@@ -61,7 +61,7 @@ Kaldırmak için dosyanın adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarılı olursa 0 döndürür. Aksi halde, işlev -1 döndürür ve kümelerini **errno** için **SPAWN**, salt okunur bir dosya yolu yani belirtir veya **ENOENT**, yani dosya veya yol bulunamadı veya bir dizin yolu belirtildi.
+Bu işlevlerin her biri, başarılı olursa 0 döndürür. Aksi halde, işlev -1 döndürür ve kümelerini **errno** için **SPAWN**, salt okunur bir dosya veya dizin yolunu yani belirtir veya **ENOENT**, dosya veya yol olduğu anlamına gelir bulunamadı.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 

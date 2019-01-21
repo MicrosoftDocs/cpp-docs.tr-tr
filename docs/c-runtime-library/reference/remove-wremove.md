@@ -30,12 +30,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: d5636912ea36fd1b1412a556d516ac3e8184e0b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05f1c5b6760520e5a982777faa903b3c5116ad05
+ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613982"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417609"
 ---
 # <a name="remove-wremove"></a>kaldır, _wremove
 
@@ -59,7 +59,7 @@ Kaldırılacak dosyanın yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya başarıyla silinirse bu işlevlerin her biri 0 döndürür. Aksi takdirde, -1 döndürür ve ayarlar **errno** ya da **SPAWN** salt okunur bir dosya yolunu belirtir ya da dosya açıksa belirtmek üzere veya **ENOENT** göstermek için Dosya adı veya yolu bulunamadı veya yol bir dizin belirtir.
+Dosya başarıyla silinirse bu işlevlerin her biri 0 döndürür. Aksi takdirde, -1 döndürür ve ayarlar **errno** ya da **SPAWN** yolunu salt okunur bir dosya belirtir belirtmek için bir dizini belirtir ya da dosya açıksa veya **ENOENT** Dosya adı veya yolu bulunamadı belirtmek için.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için.
 

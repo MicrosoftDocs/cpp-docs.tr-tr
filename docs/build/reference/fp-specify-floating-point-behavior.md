@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: 78abe5e3b491ec0d658a40628dadc81e334c212f
-ms.sourcegitcommit: d94714522428834a02ede6e6884572f0f6ca9824
+ms.openlocfilehash: 77e6d0c97f1d0381fe32ae23f8d7e8bd02ddf219
+ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597544"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417648"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/FP (kayan nokta davranışını belirt)
 
@@ -71,13 +71,13 @@ Birden çok **/FP** seçenekleri aynı derleyici komut satırında belirtilebili
 
 ### <a name="using-pragmas-to-control-floating-point-behavior"></a>Pragmalar denetimi kayan nokta davranışı için kullanma
 
-Derleyici komut satırında belirtilen kayan nokta davranışı geçersiz kılmak için üç pragma directivess sağlar: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md), ve [fp_contract](../../preprocessor/fp-contract.md). İşlev düzeyi, bir işlev içinde değil, kayan nokta davranışını denetlemek için bu pragmaları kullanabilirsiniz. Bu pragmaları doğrudan benzemez Not **/FP** seçenekleri. Bu tabloda gösterilir nasıl **/FP** seçenekleri ve pragmalar harita arasındaki ilişki. Daha fazla bilgi için pragmalar ve ayrı ayrı seçenekler için belgelere bakın.
+Derleyici komut satırında belirtilen kayan nokta davranışı geçersiz kılmak için üç pragma yönergeleri sağlar: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md), ve [fp_contract](../../preprocessor/fp-contract.md). İşlev düzeyi, bir işlev içinde değil, kayan nokta davranışını denetlemek için bu pragmaları kullanabilirsiniz. Bu pragmaları doğrudan benzemez Not **/FP** seçenekleri. Bu tabloda gösterilir nasıl **/FP** seçenekleri ve pragmalar harita arasındaki ilişki. Daha fazla bilgi için pragmalar ve ayrı ayrı seçenekler için belgelere bakın.
 
 ||float_control(Precise)|float_control(except)|fenv_access|fp_contract|
 |-|-|-|-|-|
-|**Fast**|Kapalı|Kapalı|Kapalı|on|
-|**/ FP: precise**|on|Kapalı|Kapalı|on|
-|**/ FP: except**|on|on|on|Kapalı|
+|**/fp:fast**|kapalı|kapalı|kapalı|on|
+|**/fp:precise**|on|kapalı|kapalı|on|
+|**/ FP: except**|on|on|on|kapalı|
 
 ### <a name="the-default-floating-point-environment"></a>Kayan nokta varsayılan ortam
 
