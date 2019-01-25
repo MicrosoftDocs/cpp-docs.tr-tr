@@ -1,5 +1,5 @@
 ---
-title: CFileTimeSpan sınıfı
+title: CFileTimeSpan Class
 ms.date: 10/18/2018
 f1_keywords:
 - CFileTimeSpan
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - shared classes, CFileTimeSpan
 - CFileTimeSpan class
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-ms.openlocfilehash: dc59a300fc48f180fb593500ed85ee1a4c34c07e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d384ced5de588a348eb72b9852697694b370ee4
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468932"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894165"
 ---
-# <a name="cfiletimespan-class"></a>CFileTimeSpan sınıfı
+# <a name="cfiletimespan-class"></a>CFileTimeSpan Class
 
 Bu sınıf, göreli tarih ve saat değerleri bir dosyayla ilgili yönetmek için yöntemler sağlar.
 
@@ -47,14 +47,14 @@ class CFileTimeSpan
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFileTimeSpan::operator-](#operator_-)|Çıkarma gerçekleştirir bir `CFileTimeSpan` nesne.|
-|[CFileTimeSpan::operator! =](#operator_neq)|İki karşılaştırır `CFileTimeSpan` nesneleri için eşitsizlik.|
+|[CFileTimeSpan::operator -](#operator_-)|Çıkarma gerçekleştirir bir `CFileTimeSpan` nesne.|
+|[CFileTimeSpan::operator !=](#operator_neq)|İki karşılaştırır `CFileTimeSpan` nesneleri için eşitsizlik.|
 |[CFileTimeSpan::operator +](#operator_add)|Ayrıca gerçekleştiren bir `CFileTimeSpan` nesne.|
 |[CFileTimeSpan::operator +=](#operator_add_eq)|Ayrıca gerçekleştiren bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|
 |[CFileTimeSpan::operator &lt;](#operator_lt)|İki karşılaştırır `CFileTimeSpan` küçük olanı belirlemek için nesneleri.|
 |[CFileTimeSpan::operator &lt;=](#operator_lt_eq)|İki karşılaştırır `CFileTimeSpan` eşitlik ya da küçük olanı belirlemek için nesneleri.|
 |[CFileTimeSpan::operator =](#operator_eq)|Atama işleci.|
-|[CFileTimeSpan::operator-=](#operator_-_eq)|Çıkarma gerçekleştirir bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|
+|[CFileTimeSpan::operator -=](#operator_-_eq)|Çıkarma gerçekleştirir bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|
 |[CFileTimeSpan::operator ==](#operator_eq_eq)|İki karşılaştırır `CFileTimeSpan` eşitlik için nesneleri.|
 |[CFileTimeSpan::operator &gt;](#operator_gt)|İki karşılaştırır `CFileTimeSpan` büyük belirlemek için nesneleri.|
 |[CFileTimeSpan::operator &gt;=](#operator_gt_eq)|İki karşılaştırır `CFileTimeSpan` eşitlik ya da daha büyük belirlemek için nesneleri.|
@@ -83,7 +83,7 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 Varolan bir `CFileTimeSpan` nesnesi.
 
 *nSpan*<br/>
@@ -115,7 +115,7 @@ CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -132,7 +132,7 @@ bool operator!=(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CFileTimeSpan` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -149,7 +149,7 @@ CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -166,7 +166,7 @@ CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -183,7 +183,7 @@ bool operator<(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CFileTimeSpan` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -200,7 +200,7 @@ bool operator<=(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CFileTimeSpan` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -217,7 +217,7 @@ CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -234,7 +234,7 @@ CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -251,7 +251,7 @@ bool operator==(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CFileTimeSpan` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -268,7 +268,7 @@ bool operator>(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CFileTimeSpan` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -285,7 +285,7 @@ bool operator>=(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CFileTimeSpan` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -307,7 +307,7 @@ Milisaniye cinsinden zaman aralığı için yeni değer.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTime Sınıfı](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

@@ -1,5 +1,5 @@
 ---
-title: 'TN001: Pencere Sınıfı Kaydı'
+title: 'TN001: Pencere sınıfı kaydı'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.registration
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - WNDCLASS [MFC]
 - AfxRegisterClass function
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-ms.openlocfilehash: 8f16480d238ca2a3e683219984c54d67159f806d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 4ae94d1c9c57f6c315ae482e44576ae25194c00f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894269"
 ---
-# <a name="tn001-window-class-registration"></a>TN001: Pencere Sınıfı Kaydı
+# <a name="tn001-window-class-registration"></a>TN001: Pencere sınıfı kaydı
 
 Bu Not özel kayıt MFC yordamları açıklar [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa)es Microsoft Windows tarafından gerekli. Belirli `WNDCLASS` MFC ve Windows tarafından kullanılan öznitelikler ele alınmıştır.
 
@@ -31,7 +31,7 @@ Bu `WNDCLASS` dört biri aracılığıyla kayıtlı olması gerekir:
 
 - MFC çağırarak açıkça [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) veya [AfxRegisterClass](../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-- Windows yordam çağırarak açıkça [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586).
+- Windows yordam çağırarak açıkça [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa).
 
 ## <a name="wndclass-fields"></a>WNDCLASS alanları
 
@@ -61,7 +61,7 @@ Belirtilen kaynak kimliği (örneğin, AFX_IDI_STD_FRAME) sahip bir kaynak uygul
 
 - sınıf stili: CS_DBLCLKS &#124; CS_HREDRAW &#124; CS_VREDRAW;
 
-- AFX_IDI_STD_FRAME simgesi
+- icon AFX_IDI_STD_FRAME
 
 - İmleç oku
 

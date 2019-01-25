@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: 26a0feadfd6603f74ce222e4850f0da9cf71e7d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48b02843cc957994aa3f3109a82cb2188dd9acff
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509598"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894204"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 
@@ -412,7 +412,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi veya bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne. Geçerli saati alır.
 
 *pDateTime*<br/>
-Bir işaretçi bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) şu anda seçili olan tarih bilgi alacak yapısı. Bu parametre, geçerli bir adres olmalıdır ve NULL olamaz.
+Bir işaretçi bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) şu anda seçili olan tarih bilgi alacak yapısı. Bu parametre, geçerli bir adres olmalıdır ve NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -579,7 +579,7 @@ Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-clas
 Bir başvuru bir `COleDateTime` veya `CTime` izin verilen maksimum tarih içeren bir nesne.
 
 *pMinRange*<br/>
-Bir işaretçi bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) aralığının en düşük bitiş tarihini içeren yapısı.
+Bir işaretçi bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) aralığının en düşük bitiş tarihini içeren yapısı.
 
 *pMaxRange*<br/>
 Bir işaretçi bir `SYSTEMTIME` tarih aralığı en sonunda içeren yapısı.
@@ -625,10 +625,10 @@ DWORD GetRange(
 ### <a name="parameters"></a>Parametreler
 
 *pMinRange*<br/>
-Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) aralığının en düşük bitiş tarihini içeren yapısı.
+Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) aralığının en düşük bitiş tarihini içeren yapısı.
 
 *pMaxRange*<br/>
-Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) tarih aralığı en sonunda içeren yapısı.
+Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) tarih aralığı en sonunda içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -674,7 +674,7 @@ Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-clas
 Bir başvuru bir `COleDateTime` veya `CTime` izin verilen maksimum tarih içeren bir nesne.
 
 *pMinRange*<br/>
-Bir işaretçi bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) aralığının en düşük bitiş tarihini içeren yapısı.
+Bir işaretçi bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) aralığının en düşük bitiş tarihini içeren yapısı.
 
 *pMaxRange*<br/>
 Bir işaretçi bir `SYSTEMTIME` tarih aralığı en sonunda içeren yapısı.
@@ -705,7 +705,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veya [CTime](../../atl-mfc-shared/reference/ctime-class.md) geçerli günü gösteren nesne.
 
 *pDateTime*<br/>
-Bir işaretçi bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) tarih bilgilerini alacak yapısı. Bu parametre, geçerli bir adres olmalıdır ve NULL olamaz.
+Bir işaretçi bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) tarih bilgilerini alacak yapısı. Bu parametre, geçerli bir adres olmalıdır ve NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -979,7 +979,7 @@ BOOL SetCurSel(const CTime& refDateTime);
 Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) veya [CTime](../../atl-mfc-shared/reference/ctime-class.md) seçili aylık takvim denetiminin gösteren nesne.
 
 *pDateTime*<br/>
-İşaretçi bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) geçerli seçimi olarak ayarlanması tarihi içeren yapısı.
+İşaretçi bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) geçerli seçimi olarak ayarlanması tarihi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1104,7 +1104,7 @@ int SetMonthDelta(int iDelta);
 
 ### <a name="parameters"></a>Parametreler
 
-*numaralandırması Idelta*<br/>
+*iDelta*<br/>
 Denetimin kaydırma oranı ayarlanacak ayların sayısı. Bu değeri sıfır ise, ay delta denetimde görüntülenen ay sayısı, varsayılan olarak sıfırlanıyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1164,7 +1164,7 @@ BOOL SetRange(
 ### <a name="parameters"></a>Parametreler
 
 *pMinRange*<br/>
-Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) aralığının en düşük bitiş tarihini içeren yapısı.
+Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) aralığının en düşük bitiş tarihini içeren yapısı.
 
 *pMaxRange*<br/>
 Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya `SYSTEMTIME` tarih aralığı en sonunda içeren yapısı.
@@ -1202,7 +1202,7 @@ BOOL SetSelRange(
 ### <a name="parameters"></a>Parametreler
 
 *pMinRange*<br/>
-Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) aralığının en düşük bitiş tarihini içeren yapısı.
+Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) aralığının en düşük bitiş tarihini içeren yapısı.
 
 *pMaxRange*<br/>
 Bir işaretçi bir `COleDateTime` nesnesi bir `CTime` nesnesi veya `SYSTEMTIME` tarih aralığı en sonunda içeren yapısı.
@@ -1231,7 +1231,7 @@ void SetToday(const CTime* pDateTime);
 Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) geçerli tarihi içeren nesne.
 
 *pDateTime*<br/>
-İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) geçerli tarih bilgileri içeren nesne. Üçüncü sürümünde, bir işaretçi bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) geçerli tarih bilgileri içeren yapısı.
+İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) geçerli tarih bilgileri içeren nesne. Üçüncü sürümünde, bir işaretçi bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) geçerli tarih bilgileri içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

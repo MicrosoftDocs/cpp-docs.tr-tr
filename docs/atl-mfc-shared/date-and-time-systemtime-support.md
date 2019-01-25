@@ -11,18 +11,18 @@ helpviewer_keywords:
 - dates [C++], MFC
 - formatting [C++], time
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
-ms.openlocfilehash: db19d236d0f0d8672f08c808237de471bf5bc64d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: e4aac4078ce6d75fb1613c158cdf790f2a596a01
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177739"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893502"
 ---
 # <a name="date-and-time-systemtime-support"></a>Tarih ve saat: SYSTEMTIME desteği
 
 [CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı Win32 sistem ve dosya sürelerinden kabul oluşturucular sahiptir. Kullanırsanız `CTime` nesneler bu amaçlar için başlatma bu makalede açıklandığı gibi uygun şekilde değiştirmeniz gerekir.
 
-SYSTEMTIME yapısı hakkında daha fazla bilgi için bkz: [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950). FILETIME yapısı hakkında daha fazla bilgi için bkz: [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284).
+SYSTEMTIME yapısı hakkında daha fazla bilgi için bkz: [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime). FILETIME yapısı hakkında daha fazla bilgi için bkz: [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 MFC hala sağlar `CTime` MS-DOS stilde zamanı bağımsız değişkenleri, ancak sürüm 3.0 MFC'de başlangıç alan oluşturucular `CTime` sınıfı ayrıca bir Win32 alan bir oluşturucu destekler `SYSTEMTIME` yapısı ve başka bir Win32 alan `FILETIME` yapısı.
 

@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-ms.openlocfilehash: 71b3b8621f4148f680337e9bce6ef469b90de746
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12a8159cbf28c64efe36357761f4f404ccff9541
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614389"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894022"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
 
@@ -193,7 +193,7 @@ Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri, sistemin be
 Dosya görünümü için dosya eşlendiğinde istenen koruma. Bkz: *flProtect* içinde [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK.
 
 *dwViewDesiredAccess*<br/>
-Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
+Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -201,7 +201,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutu aşmamalıdır; varsa, dosya içeriğinin tamamını paylaşmak için kullanılabilir. Daha fazla ayrıntı için [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) ve [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
+Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutu aşmamalıdır; varsa, dosya içeriğinin tamamını paylaşmak için kullanılabilir. Daha fazla ayrıntı için [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) ve [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK.
 
 ### <a name="example"></a>Örnek
 
@@ -239,7 +239,7 @@ Gerekirse TRUE eşleme nesnesi zaten ayarlanmış bir BOOL değeri noktalarına 
 Dosya görünümü için dosyanın eşlendiğinde istenen koruma. Bkz: *flProtect* içinde `CreateFileMapping` Windows SDK.
 
 *dwViewDesiredAccess*<br/>
-Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
+Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -273,7 +273,7 @@ Eşleme boyutu. 0 ise, dosya eşleme nesnesinin boyutu tarafından tanımlanan d
 Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri, sistemin bellek ayırma tanecikliliğinin bir katı olmalıdır.
 
 *dwViewDesiredAccess*<br/>
-Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
+Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -314,7 +314,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [UnmapViewOfFile](https://msdn.microsoft.com/library/windows/desktop/aa366882) daha fazla ayrıntı için Windows SDK.
+Bkz: [UnmapViewOfFile](/windows/desktop/api/memoryapi/nf-memoryapi-unmapviewoffile) daha fazla ayrıntı için Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

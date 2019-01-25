@@ -1,5 +1,5 @@
 ---
-title: CAtlServiceModuleT sınıfı
+title: CAtlServiceModuleT Class
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlServiceModuleT
@@ -35,14 +35,14 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: b577ee002e34fa051b6e1dd5ffca71f935d93433
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad682980fbc885d79598b41a5dcc094bb65db8cf
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619147"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893541"
 ---
-# <a name="catlservicemodulet-class"></a>CAtlServiceModuleT sınıfı
+# <a name="catlservicemodulet-class"></a>CAtlServiceModuleT Class
 
 Bu sınıf, bir hizmet uygular.
 
@@ -432,7 +432,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. SW_HIDE varsayılan değerdir.
+Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü. SW_HIDE varsayılan değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -492,7 +492,7 @@ HRESULT Start(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.
+Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -553,7 +553,7 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.
+Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

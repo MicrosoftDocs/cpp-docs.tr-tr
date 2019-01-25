@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-ms.openlocfilehash: cec3a0fce1147ca58f2ee2c51b9d728d81dddda4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d31dd9ed1d30633b8f7078794dad06d51ec119f2
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893447"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 
@@ -284,7 +284,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. Varsayılan olarak SW_HIDE.
+Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü. Varsayılan olarak SW_HIDE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -341,7 +341,7 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.
+Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

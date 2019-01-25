@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 4012f1f0729ff0f46a8504c44f27a37cd55c77e5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 6c6364dcf5d558bcdd25a2957721df1863d1f73f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327453"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893671"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -135,7 +135,7 @@ Bu makro benzer [begın_message_map](message-map-macros-mfc.md#begin_message_map
 
 Sınıfınızın yöntemi uygulama bölümünde ile BEGIN_TEMPLATE_MESSAGE_MAP makrosu ileti eşlemede Başlat; standart ileti eşlemesi için yaptığınız gibi makrosu girişleri her ileti işleyicisi yöntemlerinizi ekleyin. Begın_message_map makrosu ile şablon ileti eşlemesi ile tamamlarken [END_MESSAGE_MAP](message-map-macros-mfc.md#end_message_map) makrosu.
 
-İleti eşlemeleri için şablon sınıfları uygulama ile ilgili daha fazla bilgi için [nasıl yapılır: bir şablon sınıfı için ileti eşlemesi oluşturma](../how-to-create-a-message-map-for-a-template-class.md).
+İleti eşlemeleri için şablon sınıfları uygulama ile ilgili daha fazla bilgi için [nasıl yapılır: Bir şablon sınıfı için ileti eşlemesi oluşturma](../how-to-create-a-message-map-for-a-template-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -228,7 +228,7 @@ END_MESSAGE_MAP()
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ## <a name="on_command_ex"></a>  ON_COMMAND_EX
 
@@ -252,7 +252,7 @@ Komut için eşlenmiş ileti işleyici işlevinin adı.
 
 Genişletilmiş bir form komut ileti işleyicileri, İleri düzey kullanıcılar için kullanılabilir. ON_COMMAND_EX makrosu gibi ileti işleyicileri için kullanılır ve bir alt kümesi sağlayan [ON_COMMAND](message-map-macros-mfc.md#on_command) işlevselliği. Genişletilmiş komut işleyici üye işlevleri, tek bir parametre, komut Kimliğini içeren bir UINT ve BOOL döndürür. Dönüş değeri komut işlendiğini göstermek için TRUE olmalıdır; Aksi takdirde yönlendirme diğer komut hedef nesnelere devam eder.
 
-Daha fazla bilgi için bkz. Teknik Not [TN006: ileti eşlemeleri] tm006 ileti maps.md).
+Daha fazla bilgi için bkz. Teknik Not [TN006: İleti eşlemeleri] tm006-message-maps.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -261,7 +261,7 @@ Daha fazla bilgi için bkz. Teknik Not [TN006: ileti eşlemeleri] tm006 ileti ma
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: İleti Eşlemeleri](../tn006-message-maps.md)
+[TN006: İleti eşlemeleri](../tn006-message-maps.md)
 
 ## <a name="on_control"></a>  ON_CONTROL
 
@@ -294,7 +294,7 @@ Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](..
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ## <a name="on_message"></a>  ON_MESSAGE
 
@@ -352,7 +352,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ## <a name="on_olecmd"></a>  ON_OLECMD
 
@@ -389,19 +389,19 @@ Düzen temizleme komutu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_CLEARSELECTION, ID_EDIT_CLEAR)`
 
-**ON_OLECMD_COPY)**
+**ON_OLECMD_COPY( )**
 
 Kopya Düzenle komutu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_COPY, ID_EDIT_COPY)`
 
-**ON_OLECMD_CUT)**
+**ON_OLECMD_CUT( )**
 
 Düzen Kes komutu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_CUT, ID_EDIT_CUT)`
 
-**ON_OLECMD_NEW)**
+**ON_OLECMD_NEW( )**
 
 Dosya yeni komutunun gönderir. Halinde uygulanır:
 
@@ -443,31 +443,31 @@ Dosya Yazdırma Önizleme komutunu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_PRINTPREVIEW, ID_FILE_PRINT_PREVIEW)`
 
-**ON_OLECMD_REDO)**
+**ON_OLECMD_REDO( )**
 
 Düzen Yinele komut gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_REDO, ID_EDIT_REDO)`
 
-**ON_OLECMD_SAVE)**
+**ON_OLECMD_SAVE( )**
 
 Dosya Kaydet komutunu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_SAVE, ID_FILE_SAVE)`
 
-**ON_OLECMD_SAVE_AS)**
+**ON_OLECMD_SAVE_AS( )**
 
 Dosyayı Farklı Kaydet komutu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_SAVEAS, ID_FILE_SAVE_AS)`
 
-**ON_OLECMD_SAVE_COPY_AS)**
+**ON_OLECMD_SAVE_COPY_AS( )**
 
 Dosya kopyalama Kaydet komutunu gönderir. Halinde uygulanır:
 
 `ON_OLECMD(NULL, OLECMDID_SAVECOPYAS, ID_FILE_SAVE_COPY_AS)`
 
-**ON_OLECMD_SELECTALL)**
+**ON_OLECMD_SELECTALL( )**
 
 Tümünü Seç Düzenle komutu gönderir. Halinde uygulanır:
 
@@ -524,11 +524,11 @@ END_MESSAGE_MAP()
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ### <a name="see-also"></a>Ayrıca Bkz.
 
-[RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)<br/>
+[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
 [Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
@@ -555,7 +555,7 @@ RegisterWindowMessage, sistem genelinde benzersiz olması garanti yeni bir pence
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE
 
@@ -668,7 +668,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE
 
@@ -699,7 +699,7 @@ Kendiniz makro yerleştirmeniz gerekir böylece ileti eşleme aralıkları için
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h
 
 ## <a name="on_control_range"></a>  ON_CONTROL_RANGE
 
@@ -735,4 +735,4 @@ Bir dizi Denetim kimliklerinin işleyici işlevlerini uygulama ile ilgili daha f
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmsg_.h
+**Header:** afxmsg_.h

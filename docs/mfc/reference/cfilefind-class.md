@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CFileFind [MFC], CloseContext
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-ms.openlocfilehash: 983c8c46100312947f9b5c357df23b51d6eaabc7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9eb192e546bcfbba385beea4f1716ce03bbc8ade
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462166"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894061"
 ---
 # <a name="cfilefind-class"></a>CFileFind sınıfı
 
@@ -332,7 +332,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### <a name="parameters"></a>Parametreler
 
 *pTimeStamp*<br/>
-Bir işaretçi bir [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı içeren dosyanın oluşturulduğu zaman.
+Bir işaretçi bir [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısı içeren dosyanın oluşturulduğu zaman.
 
 *refTime*<br/>
 Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.
@@ -473,7 +473,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.
 
 *pTimeStamp*<br/>
-Bir işaretçi bir [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son erişildi zaman yapısı.
+Bir işaretçi bir [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) içeren dosyanın son erişildi zaman yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -502,7 +502,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### <a name="parameters"></a>Parametreler
 
 *pTimeStamp*<br/>
-Bir işaretçi bir [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son kaydedilmişti zaman yapısı.
+Bir işaretçi bir [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) içeren dosyanın son kaydedilmişti zaman yapısı.
 
 *refTime*<br/>
 Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.

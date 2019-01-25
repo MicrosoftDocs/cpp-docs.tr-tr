@@ -25,12 +25,12 @@ helpviewer_keywords:
 - _sleep function
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-ms.openlocfilehash: 76c7a710b577d0fef4fe2a74dbee2a722c7f98b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f42593620c3457694bd57ccdc5a90216b3a28f1
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677428"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893892"
 ---
 # <a name="obsolete-functions"></a>Kullanılmayan işlevler
 
@@ -45,7 +45,7 @@ Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğer
 |`_unloaddll`|[FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)|
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|
 |`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621)|
-|`_beep`|[Bip sesi](https://msdn.microsoft.com/library/windows/desktop/ms679277)|
+|`_beep`|[Bip sesi](/windows/desktop/api/utilapiset/nf-utilapiset-beep)|
 |`_sleep`|[Uyku](/windows/desktop/api/synchapi/nf-synchapi-sleep)|
 |`_getsystime`|[GetLocalTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getlocaltime)|
 |`_setsystime`|[SetLocalTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-setlocaltime)|
@@ -56,14 +56,14 @@ Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğer
 |-----------------------|-----------------|
 |[_cgets, _cgetws](../c-runtime-library/cgets-cgetws.md)|[_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)|
 |[gets, _getws](../c-runtime-library/gets-getws.md)|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|
-|[_get_output_format](../c-runtime-library/get-output-format.md)|Yok.|
-|[_heapadd](../c-runtime-library/heapadd.md)|Yok.|
-|[_heapset](../c-runtime-library/heapset.md)|Yok.|
-|[inp, inpw](../c-runtime-library/inp-inpw.md)|Yok.|
-|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|Yok.|
-|[outp, outpw](../c-runtime-library/outp-outpw.md)|Yok.|
-|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|Yok.|
-|[_set_output_format](../c-runtime-library/set-output-format.md)|Yok.|
+|[_get_output_format](../c-runtime-library/get-output-format.md)|Hiçbiri|
+|[_heapadd](../c-runtime-library/heapadd.md)|Hiçbiri|
+|[_heapset](../c-runtime-library/heapset.md)|Hiçbiri|
+|[inp, inpw](../c-runtime-library/inp-inpw.md)|Hiçbiri|
+|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|Hiçbiri|
+|[outp, outpw](../c-runtime-library/outp-outpw.md)|Hiçbiri|
+|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|Hiçbiri|
+|[_set_output_format](../c-runtime-library/set-output-format.md)|Hiçbiri|
 
 ## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>Visual Studio'nun önceki sürümlerinde CRT kaldırıldı
 

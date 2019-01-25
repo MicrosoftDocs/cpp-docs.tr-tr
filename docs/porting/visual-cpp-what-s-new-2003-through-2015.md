@@ -2,12 +2,12 @@
 title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 6d79406e07b8839e196f15d9bc3aed96cbc3dca8
-ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
+ms.openlocfilehash: bc0092aeb8910f960befc174c1f71ce05c4eb131
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51520188"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894360"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
@@ -34,7 +34,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 ### <a name="VS_RTM"></a> Visual Studio 2015'te uyumluluk geliştirmeleri
 
-- **/ZC:forScope-seçeneği**
+- **/Zc:forScope- option**
 
    Derleyici seçeneği `/Zc:forScope-` kullanım dışıdır ve gelecek sürümde kaldırılacak.
 
@@ -1781,11 +1781,11 @@ Kod Kapsamı aracı ikili çalışma zamanında dinamik olarak güncelleştirild
 
 **decltype türü tanımlayıcısı.** **Decltype** tür belirticisi belirtilen ifade türünü döndürür. Kullanım **decltype** tür tanımlayıcısı ile birlikte **otomatik** derleyici için yalnızca bilinen ya da karmaşık bir türü bildirmek için anahtar sözcüğü. Örneğin, dönüş türü şablon bağımsız değişkenlerinin türlerine bağlıdır bir şablon işlevi bildirmek için birlikte kullanın. Veya başka bir işlevi çağırır ve sonra çağrılan işlevin dönüş türü döndüren bir şablon işlevi bildirmek.
 
-**Lambda ifadeleri.** Lambda işlevleri bir işlev gövdesinin ancak ad var. Lambda işlevi, en iyi özelliklerini işlev işaretçilerini ve işlev nesnelerini birleştirin. Bir lambda işlevi tek başına veya birlikte bir işlev nesnesi yerine bir şablon işlevi parametre olarak kullanın **otomatik** türü bir değişken bildirmek için anahtar sözcüğü bir lambdadır.
+**Lambda Expressions.** Lambda işlevleri bir işlev gövdesinin ancak ad var. Lambda işlevi, en iyi özelliklerini işlev işaretçilerini ve işlev nesnelerini birleştirin. Bir lambda işlevi tek başına veya birlikte bir işlev nesnesi yerine bir şablon işlevi parametre olarak kullanın **otomatik** türü bir değişken bildirmek için anahtar sözcüğü bir lambdadır.
 
 **Rvalue başvuru.** Rvalue başvuru bildirimcisi (& &) bir rvalue başvuru bildirir. Kullandığınız bir rvalue başvurusu sağlar, semantiği ve daha verimli Oluşturucular, işlevleri ve şablon yazmak için kusursuz iletme taşıyın.
 
-**static_assert bildirimi.** A **static_assert** bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine bir yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen hata iletisi verilir.
+**static_assert Declaration.** A **static_assert** bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine bir yazılım onayını sınar. Onaylama başarısız olursa, derleme başarısız olur ve belirtilen hata iletisi verilir.
 
 **nullptr ve __nullptr anahtar sözcükler.** Visual C++ derleyicisi kullanmanıza olanak tanıyan **nullptr** yerel kod veya yönetilen kod ile anahtar sözcüğü. **Nullptr** anahtar sözcüğü bir nesne tanıtıcısı, iç işaretçi veya yerel bir işaretçi türü bir nesneye göstermiyor gösterir. Derleyici, Yorumlar **nullptr** olmasını kullandığınızda yönetilen kod `/clr` derleyici seçeneği ve kullandığınızda, yerel kod `/clr` seçeneği.
 Microsoft'a özgü **__nullptr** anahtar sözcüğü sahip aynı anlamı **nullptr**, ancak yalnızca yerel kod için geçerlidir. Yerel C/C++ kod kullanarak derlerseniz `/clr` derleyici seçeneği, derleyicinin belirleyemiyor olmadığını **nullptr** anahtar sözcüğü, bir yerel veya yönetilen bir terim. Amacınız, derleyicinin Temizle hale getirmek için yönetilen terimi belirtmek için nullptr anahtar sözcüğü kullanın ve **__nullptr** yerel terimi belirtmek için.
@@ -1797,7 +1797,7 @@ Bir trigraf iki ardışık soru benzersiz bir üçüncü karakter işareti (?) o
 
 **Yeni ortak dil çalışma zamanı (CLR) seçeneği using'ler.** Yeni bir seçenek için eklenen `/clr` (ortak dil çalışma zamanı derlemesi). Aynı kitaplıkların farklı sürümleri varsa, bir derleme hatası verilir. Yeni seçenek programınız belirtilen sürümü kullanabilmesi için varsayılan CLR kitaplıkları dışlamanıza olanak sağlar.
 
-**Yeni pragma yönergesi detect_mistmatch.** Pragma yönergesi detect_mismatch, bir etiketi, aynı ada sahip diğer etiketler dosyalarınızda karşılaştırılır yerleştirmenizi sağlar. Bağlayıcı, aynı adı için birden çok değer varsa bir hata verir.
+**Yeni pragma yönergesi detect_mismatch.** Pragma yönergesi detect_mismatch, bir etiketi, aynı ada sahip diğer etiketler dosyalarınızda karşılaştırılır yerleştirmenizi sağlar. Bağlayıcı, aynı adı için birden çok değer varsa bir hata verir.
 
 **XOP yapı içleri FMA4 İç bilgileri ve LWP İç bilgileri.** Yeni İç işlevleri XOP yapı içleri eklenen Visual Studio 2010 SP1, yapı içleri FMA4 İç eklenen için Visual Studio 2010 SP1 ve yapı içleri LWP eklenen için Visual Studio 2010 SP1 işlemci teknolojileri için desteklemek için eklendi. __Cpuid, belirli bir bilgisayarda hangi işlemci teknolojileri desteklendiğini belirlemek üzere __cpuidex kullanın.
 
@@ -1836,7 +1836,7 @@ Bir trigraf iki ardışık soru benzersiz bir üçüncü karakter işareti (?) o
 
 **Yüksek DPI tanıma.** Varsayılan olarak, MFC uygulamaları artık yüksek-DPI kullanan uygulamalardır. Yüksek DPI (yüksek nokta / inç) kullanan bir uygulama ise, işletim sistemi, windows, metin ve diğer kullanıcı Arabirimi öğeleri için geçerli ekran çözünürlüğü ölçeklendirebilirsiniz. Bu ölçeklendirilmiş bir görüntü doğru düzenlendiği ve değil kırpılarak olma olasılığı daha yüksektir anlamına gelir veya pixelated.
 
-**Yeniden başlatma Yöneticisi.** Yeniden başlatma Yöneticisi'ni otomatik olarak belgeleri kaydeder ve beklenmedik bir şekilde kapatılır veya yeniden başlatır, uygulamanızı yeniden başlatır. Örneğin, bir otomatik güncelleştirme tarafından kapatıldıktan sonra uygulamanızı başlatmak için yeniden başlatma Yöneticisi'ni kullanabilirsiniz. Uygulamanızı yeniden başlatma Yöneticisi'ni kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. **nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme**.
+**Yeniden başlatma Yöneticisi.** Yeniden başlatma Yöneticisi'ni otomatik olarak belgeleri kaydeder ve beklenmedik bir şekilde kapatılır veya yeniden başlatır, uygulamanızı yeniden başlatır. Örneğin, bir otomatik güncelleştirme tarafından kapatıldıktan sonra uygulamanızı başlatmak için yeniden başlatma Yöneticisi'ni kullanabilirsiniz. Uygulamanızı yeniden başlatma Yöneticisi'ni kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. **nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme**.
 
 **CTaskDialog.** `CTaskDialog` Sınıfı yerine standart kullanılabilir `AfxMessageBox` ileti kutusu. `CTaskDialog` Sınıfı standart bir ileti kutusu sağladığından daha fazla bilgi toplar ve görüntüler.
 
@@ -1854,7 +1854,7 @@ Yeni makroları PROP_ENTRY_TYPE ve PROP_ENTRY_TYPE_EX işlevlerini genişletmek 
 
 #### <a name="animation-and-d2d-support"></a>Animasyon ve D2D desteği
 
-MFC, animasyon ve Direct2D grafikler artık desteklemektedir. MFC Kitaplığı, birkaç yeni MFC sınıfları ve bu işlevselliği desteklemek için işlevleri vardır. D2D nesnesi ve bir animasyon nesne bir projeye ekleme göstermek için iki yeni izlenecek yollar vardır. Bu izlenecek olan **izlenecek yol: bir MFC projesine D2D nesnesi ekleme** ve **izlenecek yol: bir MFC projesine animasyon ekleme**.
+MFC, animasyon ve Direct2D grafikler artık desteklemektedir. MFC Kitaplığı, birkaç yeni MFC sınıfları ve bu işlevselliği desteklemek için işlevleri vardır. D2D nesnesi ve bir animasyon nesne bir projeye ekleme göstermek için iki yeni izlenecek yollar vardır. Bu izlenecek olan **izlenecek yol: Bir MFC projesine D2D nesnesi ekleme** ve **izlenecek yol: Bir MFC projesine animasyon ekleme**.
 
 ### <a name="ide"></a>IDE
 
@@ -2197,7 +2197,7 @@ Derleyici, bu sürümdeki bozucu değişiklikler var.
 
 - Yönetilen Uzantılar'ile güncel sürümün derleyici çalışma zamanının önceki bir sürümünde oluşturulan C++ uygulama için çalıştırma hakkında bilgiler.
 - Sık sorulan sorular C++ için Yönetilen Uzantılar.
-- C++ için Yönetilen Uzantılar'ı kullanmak için mevcut, yerel bir uygulama bağlantı noktası gösteren bir anlatım eklendi: izlenecek yol: .NET Framework bileşenleri ile Interoperate için var olan bir yerel C++ uygulaması taşıma.
+- C++ için Yönetilen Uzantılar'ı kullanmak için mevcut, yerel bir uygulama bağlantı noktası gösteren bir anlatım eklenmiştir: İzlenecek yol: .NET Framework bileşenleri ile çalışmak için var olan bir yerel C++ uygulama taşıma.
 - Bu gibi durumlarda, bir temsilci artık bir değer türünün bir yöntem oluşturabilirsiniz.
 - C++ standardı ile uyum derleyicinin için Visual C++ .NET 2003 önemli ölçüde geliştirilmiştir.
 - `/arch` derleyici seçeneği eklendi.

@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-ms.openlocfilehash: 9469770dc0538b968cfaafa2de45f28bd864193c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ecde92cbd9fb9e028e79c9a0ce75859ce85790a
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532008"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893463"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 
@@ -248,7 +248,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tanıtıcı kaldırıldığında [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) geçildi ilişkili nesne üzerinde çağrılacak [AddHandle](#addhandle). Bu çağrı başarısız olursa `CWorkerThread` Windows'ın arayacağı [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) tutamacı işlevi.
+Tanıtıcı kaldırıldığında [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) geçildi ilişkili nesne üzerinde çağrılacak [AddHandle](#addhandle). Bu çağrı başarısız olursa `CWorkerThread` Windows'ın arayacağı [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) tutamacı işlevi.
 
 ##  <a name="shutdown"></a>  CWorkerThread::Shutdown
 
@@ -277,5 +277,5 @@ Nesnesini yeniden kullanmak için çağrı [CWorkerThread::Initialize](#initiali
 
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>
-[Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../../parallel/multithreading-creating-worker-threads.md)<br/>
+[Çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md)<br/>
 [IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)

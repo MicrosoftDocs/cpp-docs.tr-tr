@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wWinMain function
 - wmain function
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-ms.openlocfilehash: 4dabb10bc4e0a53b0ad86f72ef7ddc5a5559cc21
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 4ef970174a56361fdbd2102f363b4849ad4af9f3
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331925"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894191"
 ---
 # <a name="support-for-using-wmain"></a>wmain Kullanma Desteği
 
@@ -34,4 +34,4 @@ Benzer şekilde, programınız kullanıyorsa bir **wmain** işlevi, bir geniş k
 
 [Unicode Desteği](../text/support-for-unicode.md)<br/>
 [Unicode Programlama Özeti](../text/unicode-programming-summary.md)<br/>
-[WinMain işlevi](https://msdn.microsoft.com/library/windows/desktop/ms633559)
+[WinMain işlevi](/windows/desktop/api/winbase/nf-winbase-winmain)

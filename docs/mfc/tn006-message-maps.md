@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-ms.openlocfilehash: ab08476923f253d666e024d8944aec64ed0af8da
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 3536cb215da04fb7114853d3fa5d764585cbb58e
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693681"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894087"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 
@@ -121,7 +121,7 @@ Bu yaklaşımı kullanın, kullanıcı tarafından tanımlanan iletilerin WM_USE
 
 ## <a name="registered-windows-messages"></a>Kayıtlı Windows iletileri
 
-[RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) işlevi, sistem genelinde benzersiz olması garanti yeni bir pencere iletisi tanımlamak için kullanılır. On_regıstered_message makrosu, bu iletileri işlemek için kullanılır. Bu makro adını kabul eden bir *UINT yakın* kayıtlı windows ileti kimliği içeren değişken Örneğin
+[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) işlevi, sistem genelinde benzersiz olması garanti yeni bir pencere iletisi tanımlamak için kullanılır. On_regıstered_message makrosu, bu iletileri işlemek için kullanılır. Bu makro adını kabul eden bir *UINT yakın* kayıtlı windows ileti kimliği içeren değişken Örneğin:
 
 ```cpp
 class CMyWnd : public CMyParentWndClass

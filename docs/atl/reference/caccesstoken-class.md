@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: e8fadb6825bbdc970e952d2ea6c26a27b4837dfc
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: e53160860211ba09114f2d4d101a2eaaf7de941f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694536"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894253"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
@@ -224,7 +224,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateImpersonationToken` çağrıları [DuplicateToken](https://msdn.microsoft.com/library/windows/desktop/aa446616) yeni bir özellik alma belirteci oluşturmak için.
+`CreateImpersonationToken` çağrıları [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) yeni bir özellik alma belirteci oluşturmak için.
 
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken
 
@@ -661,7 +661,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [OpenProcessToken](https://msdn.microsoft.com/library/aa379295) Win32 işlevi.
+Çağrıları [OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 işlevi.
 
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile
 
@@ -1093,7 +1093,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `PrivilegeCheck` döndürür, `Attributes` her üyesi [LUID_AND_ATTRIBUTES konusuna](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) karşılık gelen ayrıcalık etkinse yapısı SE_PRIVILEGE_USED_FOR_ACCESS için ayarlanır. Bu yöntemin çağırdığı [PrivilegeCheck](https://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 işlevi.
+Zaman `PrivilegeCheck` döndürür, `Attributes` her üyesi [LUID_AND_ATTRIBUTES konusuna](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) karşılık gelen ayrıcalık etkinse yapısı SE_PRIVILEGE_USED_FOR_ACCESS için ayarlanır. Bu yöntemin çağırdığı [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 işlevi.
 
 ##  <a name="revert"></a>  CAccessToken::Revert
 

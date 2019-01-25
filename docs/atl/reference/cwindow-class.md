@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: 4ce3c93c7cb8c26ae6008516c93faa8c8a5b37fb
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: f420715f0e90cbdf811d9a4f731885bd4f382d11
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694601"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894464"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -521,7 +521,7 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ChildWindowFromPointEx](https://msdn.microsoft.com/library/windows/desktop/ms632677) Windows SDK içinde.
+Bkz: [ChildWindowFromPointEx](/windows/desktop/api/winuser/nf-winuser-childwindowfrompointex) Windows SDK içinde.
 
 ##  <a name="clienttoscreen"></a>  CWindow::ClientToScreen
 
@@ -669,7 +669,7 @@ HDWP DeferWindowPos(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows SDK içinde.
+Bkz: [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) Windows SDK içinde.
 
 ##  <a name="destroywindow"></a>  CWindow::DestroyWindow
 
@@ -1456,7 +1456,7 @@ Metin başarıyla kopyalanır, dönüş değeri TRUE ise; Aksi takdirde, dönü�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [GetWindowText](https://msdn.microsoft.com/library/windows/desktop/ms633520) Windows SDK içinde.
+Bkz: [GetWindowText](/windows/desktop/api/winuser/nf-winuser-getwindowtexta) Windows SDK içinde.
 
 Dosyanın ikinci sürümü bu yöntemin içindeki metni depolamanıza olanak tanır; Üçüncü sürüm sonucunda depolamanıza olanak tanır bir [CString](../../atl-mfc-shared/reference/cstringt-class.md), bu yana `CSimpleString` taban sınıfıdır `CString`.
 
@@ -2629,7 +2629,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [SetWindowText](https://msdn.microsoft.com/library/windows/desktop/ms633546) Windows SDK içinde.
+Bkz: [SetWindowText](/windows/desktop/api/winuser/nf-winuser-setwindowtexta) Windows SDK içinde.
 
 ### <a name="example"></a>Örnek
 

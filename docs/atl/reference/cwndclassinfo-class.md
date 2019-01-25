@@ -1,5 +1,5 @@
 ---
-title: Cwndclassınfo sınıfı
+title: CWndClassInfo Class
 ms.date: 11/04/2016
 f1_keywords:
 - CWndClassInfo
@@ -15,14 +15,14 @@ f1_keywords:
 helpviewer_keywords:
 - CWndClassInfo class
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
-ms.openlocfilehash: 2ffe37059eb6ab81eb9dd67243ba125766b92dfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f831980c803fcbce45e502321e39440b72382f95
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467307"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893749"
 ---
-# <a name="cwndclassinfo-class"></a>Cwndclassınfo sınıfı
+# <a name="cwndclassinfo-class"></a>CWndClassInfo Class
 
 Bu sınıf, bir pencere sınıfının bilgileri kaydetmek için yöntemler sağlar.
 
@@ -141,7 +141,7 @@ TCHAR m_szAutoName[13];
 
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc
 
-Pencere sınıfı bilgileri tutar bir [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577) yapısı.
+Pencere sınıfı bilgileri tutar bir [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa) yapısı.
 
 ```
 WNDCLASSEX m_wc;

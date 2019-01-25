@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: 36ef44534803e35d3544b53dbeeca75a7fb3f475
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 5acac454bd0b22b994b74a052bd3cf0b0eee2614
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178531"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894347"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
@@ -353,7 +353,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 İlk sürümünde, bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. Dosyanın ikinci sürümü, bir başvuru olarak bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.
 
 *pTimeDest*<br/>
-Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.
+Bir işaretçi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -583,7 +583,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 Bir başvuru bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesini içeren için Denetim ayarlanır.
 
 *pTimeNew*<br/>
-İkinci Sürüm yukarıda, işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak saati içeren bir nesne. Bir işaretçi yukarıdaki üçüncü sürümünde bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zaman içeren yapısı.
+İkinci Sürüm yukarıda, işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak saati içeren bir nesne. Bir işaretçi yukarıdaki üçüncü sürümünde bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) için Denetim ayarlanacak zaman içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

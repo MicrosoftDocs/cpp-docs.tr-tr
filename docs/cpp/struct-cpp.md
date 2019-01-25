@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: 9b70a4caea2b9aa5d86c0e97b97eae784594ec87
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 78d3df4a96cb769cb31760c53c8486c86189e00c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326114"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893346"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -20,7 +20,7 @@ ms.locfileid: "51326114"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-[template-spec] struct[ms-decl-spec] [tag [: base-list ]]
+[template-spec] struct [ms-decl-spec] [tag [: base-list ]]
 {
    member-list
 } [declarators];
@@ -48,7 +48,7 @@ Bu yapının üyelerini derleyeceği isteğe bağlı sınıf veya yapı listesi.
 Yapı üyeleri listesi. Başvurmak [sınıf üyelerine genel bakış](../cpp/class-member-overview.md) daha fazla bilgi için. Burada tek fark **yapı** yerine kullanılan **sınıfı**.
 
 *Bildirimciler*<br/>
-Sınıfın adlarını belirten bildirimci listesi. Bildirimci listeleri yapı türünün bir veya daha fazla örneğini bildirir. Bildirimciler, sınıfın tüm veri üyeleri ise Başlatıcı Listeleri içerebilir **genel**. Veri üyeleri olduğundan Başlatıcı Listeleri yapılarda ortaktır **genel** varsayılan olarak.  Bkz: [genel bakış, Bildirimcileri](../cpp/overview-of-declarators.md) daha fazla bilgi için.
+Yapı adlarını belirten bildirimci listesi. Bildirimci listeleri yapı türünün bir veya daha fazla örneğini bildirir. Bildirimciler, yapının tüm veri üyeleri ise Başlatıcı Listeleri içerebilir **genel**. Veri üyeleri olduğundan Başlatıcı Listeleri yapılarda ortaktır **genel** varsayılan olarak.  Bkz: [genel bakış, Bildirimcileri](../cpp/overview-of-declarators.md) daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 

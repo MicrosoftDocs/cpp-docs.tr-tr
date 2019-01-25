@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: 5692e07e71683b1c24f86a43e989ee3df1fbe904
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bafdb65f255ddf33964d22e5ea80a62446c2ad45
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570618"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893528"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -25,7 +25,7 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*type*<br/>
 (İsteğe bağlı) Aşağıdakilerden biri olabilir:
 
 - `dll` İşlevleri ve işlemde COM sunucusu olarak çalışabilmesi ortaya çıkan DLL'yi izin sınıflar ekler. Varsayılan değer budur.
@@ -101,11 +101,11 @@ Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davran
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain).
 
 - `type` = **Hizmet**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain).
 
 - `type` = **Belirtilmemiş**
 
@@ -154,8 +154,8 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 |-|-|
 |**İçin geçerlidir**|Her yerde|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikleri**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

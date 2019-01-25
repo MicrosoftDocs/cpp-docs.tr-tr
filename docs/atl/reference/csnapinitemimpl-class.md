@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CSnapInItemImpl class
 - snap-ins
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
-ms.openlocfilehash: 19c957ae80267efda89a3b151f57c453ecb935bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff7336d393ca4680b4d448b9c775888063125b86
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609425"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893619"
 ---
 # <a name="csnapinitemimpl-class"></a>Csnapınıtemımpl sınıfı
 
@@ -106,7 +106,7 @@ Nesnenin ek uzantı ise TRUE; Aksi durumda FALSE.
 
 ##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems
 
-Bu yöntem Win32 işlevini uygulayan [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841).
+Bu yöntem Win32 işlevini uygulayan [IExtendContextMenu::AddMenuItems](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems).
 
 ```
 AddMenuItems(
@@ -131,7 +131,7 @@ AddMenuItems(
 
 - CCM_INSERTIONALLOWED_VIEW öğeleri araç Görünüm menüsü ya da sonuç bölmesi bağlam menüsü Görünüm alt eklenebilir.
 
-*Türü*<br/>
+*type*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -144,7 +144,7 @@ AddMenuItems(
 
 ##  <a name="command"></a>  CSnapInItemImpl::Command
 
-Bu yöntem Win32 işlevini uygulayan [IExtendContextMenu::Command](https://msdn.microsoft.com/library/aa814842).
+Bu yöntem Win32 işlevini uygulayan [IExtendContextMenu::Command](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-command).
 
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -155,7 +155,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 *lCommandID*<br/>
 [in] Menü öğesinin komut tanımlayıcısını belirtir.
 
-*Türü*<br/>
+*type*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -168,7 +168,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages
 
-Bu yöntem Win32 işlevini uygulayan [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846).
+Bu yöntem Win32 işlevini uygulayan [IExtendPropertySheet::CreatePropertyPages](/windows/desktop/api/mmc/nn-mmc-iextendpropertysheet2).
 
 ```
 CreatePropertyPages(
@@ -189,7 +189,7 @@ CreatePropertyPages(
 *pUnk*<br/>
 [in] İşaretçi `IExtendPropertySheet` arabiriminde düğüm hakkında bağlam bilgisi içeren nesne.
 
-*Türü*<br/>
+*type*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -294,7 +294,7 @@ SCOPEDATAITEM m_scopeDataItem;
 
 ##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem
 
-[RESULTDATAITEM](https://msdn.microsoft.com/library/aa815165) yapısını ek veri nesnesi.
+[RESULTDATAITEM](/windows/desktop/api/mmc/ns-mmc-resultdataitem) yapısını ek veri nesnesi.
 
 ```
 RESULTDATAITEM m_resultDataItem;
@@ -359,7 +359,7 @@ STDMETHOD(Notify)(
 *pComponent*<br/>
 [out] Uygulayan nesne işaretçisi `IComponent`. Bildirim alanından gönderilmekte olduğu değil, bu parametre null `IComponent::Notify`.
 
-*Türü*<br/>
+*type*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.

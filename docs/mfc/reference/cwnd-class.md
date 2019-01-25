@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 0a27b78d873b0a561b84b13cc16c67aef9ff2e8b
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: ebb0d0abcff069deca4597ffb5a3a2d4e67cab9c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179090"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894542"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -3086,7 +3086,7 @@ Aranacak olan alt pencereleri olan üst pencere tanıtıcısı.
 Bir alt pencereye işleyin. Sonraki alt pencerenin Z düzeninde arama başlar. Doğrudan alt pencerenin alt pencerenin olmalıdır *hwndParent*, yalnızca bir alt pencere.
 
 *lpszClass*<br/>
-Sınıf adı veya önceki bir çağrı tarafından oluşturulan bir sınıf atomu belirtir null ile sonlandırılmış bir dize işaretçisi [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586) veya [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa).
+Sınıf adı veya önceki bir çağrı tarafından oluşturulan bir sınıf atomu belirtir null ile sonlandırılmış bir dize işaretçisi [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa) veya [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa).
 
 *lpszWindow*<br/>
 Pencere adının (pencere başlığı) belirten bir null ile sonlandırılmış dize işaretçisi. Bu parametre NULL ise, tüm pencere adlarla eşleşir.
@@ -6022,7 +6022,7 @@ afx_msg void OnCancelMode();
 
 Varsa `CWnd` nesnesinde odağı kendi `OnCancelMode` bir iletişim kutusu veya ileti kutusu görüntülendiğinde, üye işlevi çağrılır. Bu verir `CWnd` fare yakalamayı gibi modları iptal olanağı.
 
-Varsayılan uygulama çağırarak yanıt [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) Windows işlevi. Bu modlardan işlemek için türetilmiş sınıfın üye işlevinde geçersiz kılar.
+Varsayılan uygulama çağırarak yanıt [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) Windows işlevi. Bu modlardan işlemek için türetilmiş sınıfın üye işlevinde geçersiz kılar.
 
 ##  <a name="oncapturechanged"></a>  CWnd::OnCaptureChanged
 
@@ -6039,7 +6039,7 @@ Pencereye fare yakalamayı elde etmek için bir işaretçi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı olsa bile pencere şu iletiyi alıyor [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) kendisi. Bir uygulama bu iletiye yanıt olarak fare yakalama ayarlanacak denememeniz gerekir. Bu ileti aldığında, bir pencere kendisi, gerekirse, yeni fare yakalamayı durumu yansıtacak şekilde yeniden çizmeniz gerekir.
+Çağrı olsa bile pencere şu iletiyi alıyor [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) kendisi. Bir uygulama bu iletiye yanıt olarak fare yakalama ayarlanacak denememeniz gerekir. Bu ileti aldığında, bir pencere kendisi, gerekirse, yeni fare yakalamayı durumu yansıtacak şekilde yeniden çizmeniz gerekir.
 
 Bilgi için Windows SDK'sı bakın `ReleaseCapture` Windows işlevi.
 
@@ -6999,7 +6999,7 @@ Bir veya daha fazla uygulama işlemleri girişin tür gösteren aşağıdaki de�
 
 - DLGC_WANTMESSAGE tüm klavye girişi. Uygulama denetimi açın bu ileti geçirir.
 
-- DLGC_WANTTAB sekme.
+- DLGC_WANTTAB TAB key.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7119,7 +7119,7 @@ afx_msg void OnHotKey(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, en sık kullanılan tuş kayıtlı iş parçacığıyla ilişkilendirilmiş ileti kuyruğu üstündeki yerleştirilir. Kullanım [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) sistem genelinde bir kısayol tuşu kaydetmek için işlevi.
+Bu yöntem alır [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, en sık kullanılan tuş kayıtlı iş parçacığıyla ilişkilendirilmiş ileti kuyruğu üstündeki yerleştirilir. Kullanım [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) sistem genelinde bir kısayol tuşu kaydetmek için işlevi.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8597,7 +8597,7 @@ void OnNcXButtonDblClk(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
+|*nButton*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
 |*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -8623,7 +8623,7 @@ afx_msg void OnNcXButtonDown(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|*Ndüğme*|[in] İlk X fare düğmesini basılı, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine basıldığında.|
+|*nButton*|[in] İlk X fare düğmesini basılı, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine basıldığında.|
 |*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -8649,7 +8649,7 @@ afx_msg void OnNcXButtonUp(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|*Ndüğme*|[in] İlk X fare düğmesi serbest bırakıldığında, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine yayımlanır.|
+|*nButton*|[in] İlk X fare düğmesi serbest bırakıldığında, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine yayımlanır.|
 |*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -8732,7 +8732,7 @@ afx_msg UINT OnNotifyFormat(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*pWnd*|[in] Bir işaretçi bir `CWnd` penceresine gönderilmesi temsil eden nesne [wm_notıfy](/windows/desktop/controls/wm-notify) ileti.<br /><br /> Bu parametre bir denetim için bir işaretçi ise *nyürütülen komut* parametresi ise NF_QUERY veya işaretçiyi bir denetimin ana penceresine *nyürütülen komut* NF_REQUERY olduğu.|
-|*nyürütülen komut*|[in] Wm_notıfy iletisi uzmanlaşmış komut değeri. Olası değerler şunlardır:<br /><br /> -NF_QUERY-<br />     İleti, ANSI ya da Unicode yapıları wm_notıfy iletileri kullanılması gerekip gerekmediğini belirlemek için kullanılan bir sorgudur. Bu ileti bir denetimden denetim ve bu iletinin NF_REQUERY forma yanıt oluşturma sırasında üst pencereye gönderilir.<br />-NF_REQUERY-<br />     Bu iletinin NF_QUERY formun üst pencereye göndermek bir denetim için bir istek iletisidir. Bu istek üst penceresinden gönderilir ve wm_notıfy iletileri kullanmak için bir yapı türü hakkında üst sorgulayacak denetimin sorar. Varsa *nyürütülen komut* parametre NF_REQUERY ve sorgulamayı işleminin sonucu dönüş değeridir.|
+|*nCommand*|[in] Wm_notıfy iletisi uzmanlaşmış komut değeri. Olası değerler şunlardır:<br /><br /> -NF_QUERY-<br />     İleti, ANSI ya da Unicode yapıları wm_notıfy iletileri kullanılması gerekip gerekmediğini belirlemek için kullanılan bir sorgudur. Bu ileti bir denetimden denetim ve bu iletinin NF_REQUERY forma yanıt oluşturma sırasında üst pencereye gönderilir.<br />-NF_REQUERY-<br />     Bu iletinin NF_QUERY formun üst pencereye göndermek bir denetim için bir istek iletisidir. Bu istek üst penceresinden gönderilir ve wm_notıfy iletileri kullanmak için bir yapı türü hakkında üst sorgulayacak denetimin sorar. Varsa *nyürütülen komut* parametre NF_REQUERY ve sorgulamayı işleminin sonucu dönüş değeridir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -9350,7 +9350,7 @@ afx_msg void OnSize(
 
 - Başka bir pencere eski boyutuna yüklendi, tüm açılır pencerelere SIZE_MAXSHOW ileti gönderilir.
 
-*CX*<br/>
+*cx*<br/>
 Yeni istemci alanının genişliğini belirtir.
 
 *CY*<br/>
@@ -9468,7 +9468,7 @@ Pencerenin genişletilmiş veya nonextended stilleri değişmiş olduğunu belir
 - Pencerenin nonextended stilleri GWL_STYLE değişti.
 
 *lpStyleStruct*<br/>
-İşaret eden bir [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) penceresi için yeni stilleri içeren yapısı. Bir uygulama stilleri inceleyebilirsiniz, ancak bunları değiştiremezsiniz.
+İşaret eden bir [STYLESTRUCT](/windows/desktop/api/winuser/ns-winuser-stylestruct) penceresi için yeni stilleri içeren yapısı. Bir uygulama stilleri inceleyebilirsiniz, ancak bunları değiştiremezsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9495,7 +9495,7 @@ Pencerenin genişletilmiş veya nonextended stilleri değişmiş olduğunu belir
 - Pencerenin nonextended stilleri GWL_STYLE değişti.
 
 *lpStyleStruct*<br/>
-İşaret eden bir [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) penceresi için yeni stilleri içeren yapısı. Bir uygulama, stilleri inceleyin ve bunları değiştirin.
+İşaret eden bir [STYLESTRUCT](/windows/desktop/api/winuser/ns-winuser-stylestruct) penceresi için yeni stilleri içeren yapısı. Bir uygulama, stilleri inceleyin ve bunları değiştirin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10311,7 +10311,7 @@ afx_msg void OnXButtonDblClk(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
+|*nButton*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
 |*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -10349,7 +10349,7 @@ afx_msg void OnXButtonDown(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine tıkladıysanız XBUTTON1 değerini veya XBUTTON2, ikinci X düğmeye tıkladı.|
+|*nButton*|[in] İlk Microsoft IntelliMouse X düğmesine tıkladıysanız XBUTTON1 değerini veya XBUTTON2, ikinci X düğmeye tıkladı.|
 |*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -10387,7 +10387,7 @@ afx_msg void OnXButtonUp(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
+|*nButton*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
 |*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -11044,7 +11044,7 @@ Varsa [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) ve
 
 Pencerenin varsa [ws_clıpchıldren](/windows/desktop/api/winuser/nf-winuser-createwindowa) stil, döndürülen alanları tarafından belirtilen *prgnUpdate* ve *lpRectUpdate* gerekir kaydırılan penceresinin toplam alanı temsil eder , herhangi bir alanda güncelleştirilmesi gereken alt öğe pencerelerini de dahil olmak üzere güncelleştirilmesi.
 
-Varsa [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) Windows düzgün şekilde güncelleştirilmez ekranın alt pencere parçası kaydırırsanız, bayrağı belirtildi. Kaynak dikdörtgenin dışında kalan kaydırılan alt pencerenin parçası silinmeyecektir ve düzgün bir şekilde yeni hedefine çizilir değil. Kullanım [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows işleve tamamen içinde yer alan değil taşıma alt pencereler *lpRectScroll* dikdörtgen. İmleç SW_SCROLLCHILDREN bayrağı ayarlanmışsa ve kaydırma dikdörtgen giriş işaretini dikdörtgen kesişip yeniden konumlandırıldığında.
+Varsa [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) Windows düzgün şekilde güncelleştirilmez ekranın alt pencere parçası kaydırırsanız, bayrağı belirtildi. Kaynak dikdörtgenin dışında kalan kaydırılan alt pencerenin parçası silinmeyecektir ve düzgün bir şekilde yeni hedefine çizilir değil. Kullanım [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) Windows işleve tamamen içinde yer alan değil taşıma alt pencereler *lpRectScroll* dikdörtgen. İmleç SW_SCROLLCHILDREN bayrağı ayarlanmışsa ve kaydırma dikdörtgen giriş işaretini dikdörtgen kesişip yeniden konumlandırıldığında.
 
 Tüm giriş ve çıkış koordinatları (için *lpRectScroll*, *lpRectClip*, *lpRectUpdate*, ve *prgnUpdate*) içinde olduğu varsayılır İstemci koordinatları, pencerenin CS_OWNDC veya CS_CLASSDC sınıfı stili olup ne olursa olsun. Kullanım [LPtoDP](/windows/desktop/api/wingdi/nf-wingdi-lptodp) ve [DPtoLP](/windows/desktop/api/wingdi/nf-wingdi-dptolp) mantıksal koordinatları, gelen ve gerekirse dönüştürmek için Windows işlevleri.
 
@@ -11247,7 +11247,7 @@ Daha önce tüm fare girişi alınan pencere nesnesi için bir işaretçi. Böyl
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `CWnd` artık uygulamayı çağırması gerekir ve tüm giriş fare gerektirir [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) diğer pencereleri fare girişi alabilmesi işlev.
+Zaman `CWnd` artık uygulamayı çağırması gerekir ve tüm giriş fare gerektirir [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) diğer pencereleri fare girişi alabilmesi işlev.
 
 Fare girişi yakalanırken etkin pencereyi wm_nchıttest veya WM_SETCURSOR ileti gönderilir.
 
@@ -11852,7 +11852,7 @@ Pencerenin sol tarafındaki yeni konumunu belirtir.
 *Y*<br/>
 Pencerenin üstündeki yeni konumunu belirtir.
 
-*CX*<br/>
+*cx*<br/>
 Yeni pencerenin genişliğini belirtir.
 
 *CY*<br/>

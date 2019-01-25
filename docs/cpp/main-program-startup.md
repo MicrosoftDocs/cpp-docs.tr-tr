@@ -1,5 +1,5 @@
 ---
-title: 'main: Program Başlatma'
+title: 'Ana: Program başlatma'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.main.startup
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - startup code, main function
 - main function, program startup
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
-ms.openlocfilehash: 76c580d4b48e1651803ae9bf62f0e2346e19e06c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 358ae8ec88281bab741393b1196ee2a1e615e896
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603287"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894308"
 ---
-# <a name="main-program-startup"></a>main: Program Başlatma
+# <a name="main-program-startup"></a>Ana: Program başlatma
 
 Adlı bir özel işlev **ana** yürütme tüm C ve C++ programları için başlangıç noktasıdır. Unicode programlama modelini aynılarını kod yazma, kullanabileceğiniz `wmain`, geniş karakter sürümünü olduğu **ana**.
 
@@ -51,7 +51,7 @@ veya isteğe bağlı olarak,
 int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 ```
 
-Ayrıca `_tmain`, TCHAR.h içinde tanımlanır. `_tmain` çözümler **ana** _UNICODE tanımlanmış sürece. Bu durumda, `_tmain` çözümler `wmain`.
+Ayrıca `_tmain`, tchar.h içinde tanımlanır. `_tmain` çözümler **ana** _UNICODE tanımlanmış sürece. Bu durumda, `_tmain` çözümler `wmain`.
 
 Alternatif olarak, **ana** ve `wmain` olarak döndüren işlevleri bildirilebilir **void** (dönüş değeri). Bildirirseniz **ana** veya `wmain` döndüren olarak **void**, kullanarak üst işleme ya da işletim sistemi için bir çıkış kodu döndürülemez bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) deyimi. Döndürülecek bir çıkış kodu ne zaman **ana** veya `wmain` olarak bildirilen **void**, kullanmalısınız [çıkmak](../cpp/exit-function.md) işlevi.
 

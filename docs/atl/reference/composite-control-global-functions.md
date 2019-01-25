@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 3b4abc1afc99a00d83c25574df06ebfb27141c65
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 26d8d004c933e48833047f85727ae6282c4b43d7
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694185"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893866"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -77,7 +77,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] İletişim kutusunun sahibi penceresini tanımlar.
 
 *lpDialogProc*<br/>
-[in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
@@ -95,7 +95,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](/windows/desktop/menurc/common-control-parameters) altında Windows SDK'sı: SDK Tools.
+Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](/windows/desktop/menurc/common-control-parameters) Windows SDK'sı altında: SDK Tools.
 
 Genel iletişim kutularında hakkında daha fazla bilgi için başvurmak [iletişim](/windows/desktop/api/winuser/nf-winuser-dialogboxa) ve [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK.
 
@@ -124,7 +124,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] İletişim kutusunun sahibi penceresini tanımlar.
 
 *lpDialogProc*<br/>
-[in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
@@ -476,7 +476,7 @@ Başlatma kodu barındırma denetimi başarılı olursa sıfır dışı; Aksi du
 
 Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) veya [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK içinde açıklandığı gibi.
 
-##  <a name="atlaxwinterm"></a>  Zaman AtlAxWinTerm
+##  <a name="atlaxwinterm"></a>  AtlAxWinTerm
 
 Bu işlev ATL'nin denetim barındırma kodunu kaydını silerek başlamasını iptal eder **"AtlAxWin80"** ve **"AtlAxWinLic80"** pencere sınıfları.
 

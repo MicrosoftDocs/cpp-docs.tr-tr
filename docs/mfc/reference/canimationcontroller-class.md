@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: bd0bdd1a3f423257b2f73745d7260d1fac12a0d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93189c5c9301e513cfbdf110cf7753e211420fef
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556669"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894139"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 
@@ -127,7 +127,7 @@ class CAnimationController : public CObject;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CAnimationController::CAnimationController](#canimationcontroller)|Bir animasyon denetleyicisi oluşturur.|
-|[CAnimationController:: ~ CAnimationController](#canimationcontroller__~canimationcontroller)|Yıkıcı. Animasyon denetleyicisini nesne yok ediliyorken çağırılır.|
+|[CAnimationController::~CAnimationController](#canimationcontroller__~canimationcontroller)|Yıkıcı. Animasyon denetleyicisini nesne yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -206,7 +206,7 @@ CAnimationController sınıfı animasyonları yöneten temel sınıftır. Animas
 
 **Başlık:** afxanimationcontroller.h
 
-##  <a name="_dtorcanimationcontroller"></a>  CAnimationController:: ~ CAnimationController
+##  <a name="_dtorcanimationcontroller"></a>  CAnimationController::~CAnimationController
 
 Yıkıcı. Animasyon denetleyicisini nesne yok ediliyorken çağırılır.
 
@@ -419,7 +419,7 @@ UI_ANIMATION_PHT_ birleşimi (bkz. Notlar), ayarlamak veya yayın için hangi i�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işleyici (etkin) olarak ayarlandığında, Windows animasyon dwHandlerType bağlı olarak aşağıdaki sanal yöntemleri çağırır: OnHasPriorityCancel, OnHasPriorityConclude, OnHasPriorityTrim, OnHasPriorityCompress. dwHandler aşağıdaki bayrakların birleşimi olabilir: UI_ANIMATION_PHT_NONE - sürüm tüm işleyiciler UI_ANIMATION_PHT_CANCEL - Ayarla iptal karşılaştırma işleyici UI_ANIMATION_PHT_CONCLUDE - Conclude karşılaştırma işleyici UI_ANIMATION_PHT_COMPRESS ayarlama - ayarlayın Sıkıştırma karşılaştırma işleyici - kırpma karşılaştırma işleyicisini UI_ANIMATION_PHT_CANCEL_REMOVE - iptal karşılaştırma işleyici UI_ANIMATION_PHT_CONCLUDE_REMOVE Kaldır - UI_ANIMATION_PHT_TRIM Conclude karşılaştırma işleyici UI_ANIMATION_PHT_COMPRESS_ Kaldır REMOVE - sıkıştırma karşılaştırma işleyici UI_ANIMATION_PHT_TRIM_REMOVE - remove kırpma karşılaştırma işleyici Kaldır
+Bir işleyici (etkin) kümesi Windows animasyon çağrıları dwHandlerType bağlı olarak aşağıdaki sanal yöntemler olduğunda: OnHasPriorityCancel, OnHasPriorityConclude, OnHasPriorityTrim, OnHasPriorityCompress. dwHandler aşağıdaki bayrakların birleşimi olabilir: UI_ANIMATION_PHT_NONE - sürüm tüm işleyiciler UI_ANIMATION_PHT_CANCEL - Ayarla iptal karşılaştırma işleyici UI_ANIMATION_PHT_CONCLUDE - Ayarla Conclude karşılaştırma işleyici UI_ANIMATION_PHT_COMPRESS - sıkıştırma karşılaştırma işleyici UI_ANIMATION_PHT_TRIM ayarlama - Ayarla Karşılaştırma işleyici UI_ANIMATION_PHT_CANCEL_REMOVE trim - iptal karşılaştırma işleyici UI_ANIMATION_PHT_CONCLUDE_REMOVE - remove Conclude karşılaştırma işleyici UI_ANIMATION_PHT_COMPRESS_REMOVE - remove sıkıştırma karşılaştırma işleyici UI_ANIMATION_PHT Kaldır _TRIM_REMOVE - kırpma karşılaştırma işleyici Kaldır
 
 ##  <a name="enablestoryboardeventhandler"></a>  CAnimationController::EnableStoryboardEventHandler
 
@@ -871,7 +871,7 @@ Görsel taslak pGroupNew tarafından sahip olunan önceliği ise TRUE döndürme
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_CANCEL'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](https://msdn.microsoft.com/library/dd371759).
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_CANCEL'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onhasprioritycompress"></a>  CAnimationController::OnHasPriorityCompress
 
@@ -901,7 +901,7 @@ Görsel taslak pGroupNew tarafından sahip olunan önceliği ise TRUE döndürme
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_COMPRESS'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](https://msdn.microsoft.com/library/dd371759).
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_COMPRESS'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onhaspriorityconclude"></a>  CAnimationController::OnHasPriorityConclude
 
@@ -931,7 +931,7 @@ Görsel taslak pGroupNew tarafından sahip olunan önceliği ise TRUE döndürme
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_CONCLUDE'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](https://msdn.microsoft.com/library/dd371759).
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_CONCLUDE'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onhasprioritytrim"></a>  CAnimationController::OnHasPriorityTrim
 
@@ -961,7 +961,7 @@ Görsel taslak pGroupNew tarafından sahip olunan önceliği ise TRUE döndürme
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_TRIM'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](https://msdn.microsoft.com/library/dd371759).
+CAnimationController::EnablePriorityComparisonHandler kullanarak öncelik karşılaştırma olayları etkinleştirmektedir ve UI_ANIMATION_PHT_TRIM'ı belirtirseniz, bu yöntem çağrılır. Uygulamaya özgü eylemleri için türetilen bir sınıfta geçersiz kılabilir. Windows animasyon API belgelerini okuma hakkında daha fazla bilgi için [çakışma Yönetim](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onstoryboardstatuschanged"></a>  CAnimationController::OnStoryboardStatusChanged
 

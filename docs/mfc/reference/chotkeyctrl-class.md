@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 9a06f3bd8a8c5646f384c3f788518078b121bfe1
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 0b673c873f773844c13894d3f0448536f297dc53
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178141"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894516"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 
@@ -67,7 +67,7 @@ Bu denetimi (ve bu nedenle `CHotKeyCtrl` sınıfı) ve üzeri yalnızca Windows 
 
 Bir tuş bileşimi kullanıcının seçtiği zaman uygulama belirtilen tuş bileşimi denetiminden almak ve WM_SETHOTKEY ileti sistemde etkin anahtar ayarlamak için kullanın. Her kullanıcının kısayol tuşu bundan sonra sistemin herhangi bir bölümünden bastığında WM_SETHOTKEY iletisinde belirtilen pencere SC_HOTKEY belirten bir WM_SYSCOMMAND iletisini alır. Bu iletiyi aldıktan sonra pencereyi etkinleştirir. Kısayol tuşu WM_SETHOTKEY çıkar çağıran uygulama kadar geçerli kalır.
 
-Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) ve [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) işlevleri.
+Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) ve [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) işlevleri.
 
 Kullanma hakkında daha fazla bilgi için `CHotKeyCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [kullanarak CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).
 
@@ -300,17 +300,17 @@ Geçersiz anahtar belirten bayrakları dizisi. Bu, aşağıdaki değerleri birle
 
 - HKCOMB_C CTRL
 
-- HKCOMB_CA CTRL + ALT
+- HKCOMB_CA CTRL+ALT
 
 - HKCOMB_NONE değiştirilmemiş anahtarları
 
 - HKCOMB_S KAYDIRMA
 
-- HKCOMB_SA SHIFT + ALT
+- HKCOMB_SA SHIFT+ALT
 
-- HKCOMB_SC SHIFT + CTRL
+- HKCOMB_SC SHIFT+CTRL
 
-- HKCOMB_SCA SHIFT + CTRL + ALT
+- HKCOMB_SCA SHIFT+CTRL+ALT
 
 *wModifiers*<br/>
 Kullanıcı obsahuje neplatnou kombinaci girdiğinde kullanmak için bir tuş bileşimini belirtir bayrakları dizisi. Değiştirici bayrakları hakkında daha fazla bilgi için bkz. [GetHotKey](#gethotkey).

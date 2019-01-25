@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-ms.openlocfilehash: 9cb4ec679e26adc32ffc6d68ebff9b1ed73c2f43
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 852656b33eca1a8c87c6931b58cd49c0c41fe3dc
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694237"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893645"
 ---
 # <a name="caxdialogimpl-class"></a>Caxdialogımpl sınıfı
 
@@ -255,7 +255,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-İşaretçi bir [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) denetlenecek iletiyi içeren yapısı.
+İşaretçi bir [MSG](/windows/desktop/api/winuser/ns-winuser-msg) denetlenecek iletiyi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: cedd1bfd4ea955f920e13b5d01beb3a478656b69
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: a73baab3e43467b76c1b4e3592314a4323d22ffb
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178128"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893983"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 
@@ -57,7 +57,7 @@ class CTime
 |[CTime::Format](#format)|Dönüştürür bir `CTime` bir biçimlendirilmiş dize nesnesine — yerel saat dilimi temel alınarak.|
 |[CTime::FormatGmt](#formatgmt)|Dönüştürür bir `CTime` bir biçimlendirilmiş dize nesnesine — UTC temel.|
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Depolanan saat bilgisi dönüştürür `CTime` Win32 uyumlu DBTIMESTAMP yapısı için nesne.|
-|[CTime::GetAsSystemTime](#getassystemtime)|Depolanan saat bilgisi dönüştürür `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.|
+|[CTime::GetAsSystemTime](#getassystemtime)|Depolanan saat bilgisi dönüştürür `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı.|
 |[CTime::GetCurrentTime](#getcurrenttime)|Oluşturur bir `CTime` (statik üye işlevini) geçerli zamanı temsil eden nesne.|
 |[CTime::GetDay](#getday)|Günü temsil tarafından döndürür `CTime` nesne.|
 |[CTime::GetDayOfWeek](#getdayofweek)|Tarafından temsil edilen haftanın gününü döndürür `CTime` nesne.|
@@ -169,10 +169,10 @@ Günışığından yararlanmanın etkin olup olmadığını gösterir. Üç değ
 Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `CTime` nesne.
 
 *St*<br/>
-A [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
+A [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
 
 *ft*<br/>
-A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
 
 *dbts*<br/>
 Geçerli yerel saat içeren bir DBTIMESTAMP yapısı bir başvuru.
@@ -209,7 +209,7 @@ Her Oluşturucu, aşağıda açıklanmıştır:
    > [!NOTE]
    > Oluşturucu kullanılarak `DBTIMESTAMP` parametresi, yalnızca kullanılabilir biçim dahil edildiğinde.
 
-Daha fazla bilgi için [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK'sındaki yapısı. Ayrıca bkz: [MS-DOS tarih ve saat](/windows/desktop/SysInfo/ms-dos-date-and-time) Windows SDK'sı girişi.
+Daha fazla bilgi için [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) ve [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) Windows SDK'sındaki yapısı. Ayrıca bkz: [MS-DOS tarih ve saat](/windows/desktop/SysInfo/ms-dos-date-and-time) Windows SDK'sı girişi.
 
 ### <a name="example"></a>Örnek
 
@@ -304,7 +304,7 @@ Sonuçta elde edilen zaman başvurulan depolar *dbts* yapısı. `DBTIMESTAMP` Bu
 
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime
 
-Depolanan saat bilgisi dönüştürmek için bu üye işlevi çağrısı `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.
+Depolanan saat bilgisi dönüştürmek için bu üye işlevi çağrısı `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı.
 
 ```
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -313,7 +313,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *timeDest*<br/>
-Bir başvuru bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerini tutacak yapısı `CTime` nesne.
+Bir başvuru bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) dönüştürülen bir tarih/saat değerini tutacak yapısı `CTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -586,7 +586,7 @@ CTimeSpan operator-(CTime time) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Zaman aralığı*<br/>
+*timeSpan*<br/>
 `CTimeSpan` Eklenirken veya çıkarılırken için nesne.
 
 *saat*<br/>
@@ -615,7 +615,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 `CTimeSpan` Eklenirken veya çıkarılırken için nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

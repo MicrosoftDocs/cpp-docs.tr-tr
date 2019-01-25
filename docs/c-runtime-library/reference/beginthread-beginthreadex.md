@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: d7e98ae38d91fbc0c1d428e94c6fa29fd8651e85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d70d2fb0ecb647d4854a6277d6c69cd9886e072f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626791"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894217"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -121,7 +121,7 @@ Kullanılması daha güvenlidir **_beginthreadex** daha **_beginthread**. Varsa 
 
 Çağırabilirsiniz [_endthread](endthread-endthreadex.md) veya **_endthreadex** açıkça bir iş parçacığını sonlandırmak için ancak **_endthread** veya **_endthreadex** çağrılır otomatik olarak bir parametre olarak iletilen bir yordamdan gelen zaman iş parçacığı döndürür. Çağrısıyla bir iş parçacığı sonlandırma **_endthread** veya **_endthreadex** iş parçacığına ayrılan kaynakların doğru şekilde kurtarılmasını sağlamaya yardımcı olur.
 
-**_endthread** otomatik olarak iş parçacığı işleyicisini yapmadığında **_endthreadex** desteklemez. Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. Bu davranış, Win32 farklıdır [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
+**_endthread** otomatik olarak iş parçacığı işleyicisini yapmadığında **_endthreadex** desteklemez. Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) API. Bu davranış, Win32 farklıdır [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
 
 > [!NOTE]
 > LIBCMT.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın **ExitThread** API çalışma zamanı sistemi tekrar kullanılabilir hale önlememiş böylece ayrılan kaynaklar. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanır ve sonra çağrı **ExitThread**.

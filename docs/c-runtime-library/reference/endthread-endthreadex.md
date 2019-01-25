@@ -30,12 +30,12 @@ helpviewer_keywords:
 - _endthreadex function
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
-ms.openlocfilehash: 48a2ce90b6bc90d40f6071898e1e5182502e938f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f54ca9c4cd5e863ca960f1d9c3634b85e7896dd
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893308"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
@@ -62,7 +62,7 @@ void _endthreadex(
 > [!NOTE]
 > LIBCMT.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API; Bu, ayrılan kaynakları tekrar kullanılabilir hale çalışma zamanı sistemi engeller. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanır ve sonra çağrı **ExitThread**.
 
-**_endthread** iş parçacığı işleyicisini otomatik olarak kapanır. (Bu davranış, Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
+**_endthread** iş parçacığı işleyicisini otomatik olarak kapanır. (Bu davranış, Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) API.
 
 Win32 gibi **ExitThread** API **_endthreadex** iş parçacığı işleyicisini kapatmaz. Bu nedenle, kullandığınız zaman **_beginthreadex** ve **_endthreadex**, iş parçacığı işleyicisini Win32 çağırarak kapatmalısınız **CloseHandle** API.
 

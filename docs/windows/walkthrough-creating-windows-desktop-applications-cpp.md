@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: da95b1dac2f058de67719b4754d2df6dbeb6f7f0
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 07da91ea092b4e7bee974b0387e72ea0cacaec8e
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694055"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893905"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -44,7 +44,7 @@ Windows masaüstü uygulaması için bir çalışma kodu girin ve ilk Windows Ma
 
 1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **yüklü** > **Visual C++**, ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
 
-   İçinde **adı** kutusunda, proje için bir ad yazın örneğin, *DesktopApp*. Seçin **Tamam**.
+   İçinde **adı** kutusunda, proje için bir ad yazın örneğin, *DesktopApp*. **Tamam**’ı seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
@@ -68,7 +68,7 @@ Projeniz oluşturuldu ve kaynak dosyanızı Düzenleyicisi'nde açılır. Devam 
 
 1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **yüklü** > **şablonları** > **Visual C++** ve ardından **Win32**. Orta bölmede seçin **Win32 projesi**.
 
-   İçinde **adı** kutusunda, proje için bir ad yazın örneğin, *DesktopApp*. Seçin **Tamam**.
+   İçinde **adı** kutusunda, proje için bir ad yazın örneğin, *DesktopApp*. **Tamam**’ı seçin.
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-150.png "DesktopApp projesini adlandırın")
 
@@ -107,7 +107,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    );
    ```
 
-   Parametreler ve bu işlevin dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   Parametreler ve bu işlevin dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/desktop/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
    > Tüm bu ek sözcükler gibi nelerdir `CALLBACK`, veya `HINSTANCE`, veya `_In_`? Tür tanımları geleneksel Windows API kullanır ve kapsamlı bir şekilde hemen soyutlamak için Önişlemci makroları ayrıntılarını türleri ve platforma özgü bazı kod, çağırma kuralları, gibi **__declspec** bildirimler ve pragmalar derleyici. Visual Studio IntelliSense kullanabileceğiniz [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliği bu tür tanımlarının ve makroları tanımlayın görmek için. Fare, ilgilenilen sözcüğün üzerinde gelin veya görseli seçip **Ctrl**+**K**, **Ctrl**+**miyim** için bir tanımını içeren küçük açılır pencere. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, sık kullandığınız *SAL ek açıklamalarını* yardımcı olması için programlama hatalarını yakalama. Daha fazla bilgi için [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanarak](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
@@ -136,7 +136,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain işlevine işlevsellik eklemek için
 
-1. İçinde `WinMain` işlevi, bir yapı türünü doldurmak [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577). Yapısı, örneğin, uygulama simgesi, pencerenin başlık çubuğunda ve da önemlisi, bir işlev işaretçisi, pencere yordamı için görüntülenecek ad arka plan rengi pencere hakkında bilgiler içerir. Aşağıdaki örnekte gösterilmektedir `WNDCLASSEX` yapısı.
+1. İçinde `WinMain` işlevi, bir yapı türünü doldurmak [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa). Yapısı, örneğin, uygulama simgesi, pencerenin başlık çubuğunda ve da önemlisi, bir işlev işaretçisi, pencere yordamı için görüntülenecek ad arka plan rengi pencere hakkında bilgiler içerir. Aşağıdaki örnekte gösterilmektedir `WNDCLASSEX` yapısı.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -155,7 +155,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   Yukarıdaki yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
+   Yukarıdaki yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa).
 
 1. Kayıt `WNDCLASSEX` BT'nin pencerenizin ve iletileri göndermek nasıl hakkında bilmesi için Windows ile. Kullanım [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) işlev ve pencere sınıf yapısını bir bağımsız değişken olarak geçirin. `_T` Kullandığımızdan makrosu kullanılır `TCHAR` türü.
 
@@ -237,7 +237,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    return (int) msg.wParam;
    ```
 
-   Yapılar ve ileti döngüsü işlevler hakkında daha fazla bilgi için bkz: [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), ve [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   Yapılar ve ileti döngüsü işlevler hakkında daha fazla bilgi için bkz: [MSG](/windows/desktop/api/winuser/ns-winuser-msg), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), ve [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    Bu noktada, `WinMain` işlevi aşağıdaki kodu benzemesi gerekir.
 

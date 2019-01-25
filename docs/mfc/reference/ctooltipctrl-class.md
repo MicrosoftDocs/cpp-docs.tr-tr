@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: 808d8b5f023e88b67458c514e871692aac94ccd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 177f6eeada942440c33f7dd0a0cbc6d9e59d867c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500418"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894152"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 
@@ -287,7 +287,7 @@ Gösterimiyse `CToolTipCtrl` nesne başarıyla oluşturuldu; Aksi durumda 0.
 
 Oluşturmak bir `CToolTipCtrl` iki adımda. İlk olarak oluşturmak için oluşturucu çağrısı `CToolTipCtrl` nesnesi ve ardından arama `Create` araç ipucunu denetimini oluşturup buna eklemek için `CToolTipCtrl` nesne.
 
-*DwStyle* parametresi, herhangi bir birleşimi olabilir [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Ayrıca, iki sınıf özel stilleri bir araç ipucunu denetimini sahiptir: TTS_ALWAYSTIP ve TTS_NOPREFIX.
+*DwStyle* parametresi, herhangi bir birleşimi olabilir [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Ayrıca, bir araç ipucunu denetimini iki sınıf özel stilleri sahiptir: TTS_ALWAYSTIP ve TTS_NOPREFIX.
 
 |Stil|Açıklama|
 |-----------|-------------|
@@ -693,7 +693,7 @@ void RelayEvent(LPMSG lpMsg);
 ### <a name="parameters"></a>Parametreler
 
 *lpMsg*<br/>
-İşaretçi bir [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) geçiş iletisi içeren yapısı.
+İşaretçi bir [MSG](/windows/desktop/api/winuser/ns-winuser-msg) geçiş iletisi içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

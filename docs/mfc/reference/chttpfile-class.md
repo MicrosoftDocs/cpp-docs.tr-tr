@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: 1fa1b63ed045c176841565473476185bb15999e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ee92a6cb627cee701b9b98a8a32666a0877f62c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564469"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893658"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 
@@ -293,7 +293,7 @@ BOOL QueryInfo(
 
 - Uygulama yanıt üstbilgilerini genellikle HTTP_QUERY_FLAG_REQUEST_HEADERS sorgular, ancak bir uygulama da istek üst bilgilerini bu bayrağı kullanarak sorgulayabilirsiniz.
 
-- HTTP_QUERY_FLAG_SYSTEMTIME değeri olan "En son değiştiren-zamanı" gibi bir tarih/saat dizesinin bu üst bilgiler için bu bayrağı döndürür üst bilgi değeri olarak standart bir Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) uygulamaya gerektirmeyen yapısı ayrıştırılması denenecek veriler. Bu bayrağı kullanmanız durumunda kullanmak isteyebilirsiniz `SYSTEMTIME` işlevi geçersiz kılar.
+- HTTP_QUERY_FLAG_SYSTEMTIME değeri olan "En son değiştiren-zamanı" gibi bir tarih/saat dizesinin bu üst bilgiler için bu bayrağı döndürür üst bilgi değeri olarak standart bir Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) uygulamaya gerektirmeyen yapısı ayrıştırılması denenecek veriler. Bu bayrağı kullanmanız durumunda kullanmak isteyebilirsiniz `SYSTEMTIME` işlevi geçersiz kılar.
 
 - HTTP_QUERY_FLAG_NUMBER durum kodu gibi bir sayı olan değerdir, bu üst bilgiler için bu bayrağı veri 32 bit bir sayı döndürür.
 
@@ -315,7 +315,7 @@ Bir başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) döndü
 Bir dizin değeri. Bkz: *lpdwIndex*.
 
 *pSysTime*<br/>
-Bir Win32 işaretçisi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.
+Bir Win32 işaretçisi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

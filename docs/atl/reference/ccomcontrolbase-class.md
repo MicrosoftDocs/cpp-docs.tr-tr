@@ -1,5 +1,5 @@
 ---
-title: CComControlBase sınıfı
+title: CComControlBase Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComControlBase
@@ -80,14 +80,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-ms.openlocfilehash: def8334cf0ed9b6b2ee821e1e0f1a717d90f2163
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 67d2be23aa6209c36b1a72eca3322efd1e977447
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694588"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894438"
 ---
-# <a name="ccomcontrolbase-class"></a>CComControlBase sınıfı
+# <a name="ccomcontrolbase-class"></a>CComControlBase Class
 
 Bu sınıf, oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.
 
@@ -511,7 +511,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 ### <a name="parameters"></a>Parametreler
 
 *ppFont*<br/>
-Kapsayıcı için bir işaretçi ortam [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) gönderme arabirimi.
+Kapsayıcı için bir işaretçi ortam [IFontDisp](/windows/desktop/api/ocidl/nn-ocidl-ifontdisp) gönderme arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -587,7 +587,7 @@ HRESULT GetAmbientPalette(HPALETTE& hPalette);
 ### <a name="parameters"></a>Parametreler
 
 *hPalette*<br/>
-Özellik DISPID_AMBIENT_PALETTE.
+The property DISPID_AMBIENT_PALETTE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -768,7 +768,7 @@ HRESULT GetAmbientUserMode(BOOL& bUserMode);
 ### <a name="parameters"></a>Parametreler
 
 *bUserMode*<br/>
-Özellik DISPID_AMBIENT_USERMODE.
+The property DISPID_AMBIENT_USERMODE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

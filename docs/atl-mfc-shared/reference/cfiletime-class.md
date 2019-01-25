@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CFileTime class
 - shared classes, CFileTime
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
-ms.openlocfilehash: 5d3c81a31d49a2817b4605f734d5348dc518076a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42c89bcfa064bbb151f9d110cbd25763dbd44185
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614233"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893944"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
 
@@ -124,7 +124,7 @@ CFileTime(ULONGLONG nTime) throw();
 ### <a name="parameters"></a>Parametreler
 
 *ft*<br/>
-A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısı.
 
 *nZaman*<br/>
 Tarih ve saat 64-bit bir değer ifade edilir.
@@ -236,7 +236,7 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 *ft*<br/>
@@ -273,7 +273,7 @@ CFileTime operator+(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -290,7 +290,7 @@ CFileTime& operator+=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -362,7 +362,7 @@ CFileTime& operator-=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 A `CFileTimeSpan` çıkarılacak göreli zaman içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -475,7 +475,7 @@ static const ULONGLONG Week = Day* 7;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan Sınıfı](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

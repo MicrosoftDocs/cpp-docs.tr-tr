@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: e891a6694f0a85715a7d76d196865e3238695753
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: abf230f8c9e68365f8d1db8b654174ad3e152862
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571190"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894412"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 
@@ -81,7 +81,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 ## <a name="remarks"></a>Açıklamalar
 
-Diğer Windows ortak iletişim kutuları, farklı `CFindReplaceDialog` nesnelerdir geçici, kullanıcıların ekranda sırasında diğer windows ile etkileşim kurmasına izin verme. İki tür vardır, `CFindReplaceDialog` nesneleri: Bul iletişim kutuları ve Bul/Değiştir iletişim kutuları. Kullanıcı Giriş arama ve arama/yer değiştirme dizeleri için iletişim kutularını izin verse de, bunlar herhangi bir arama veya değiştirme işlevleri gerçekleştirmeyin. Bu uygulamaya eklemeniz gerekir.
+Diğer Windows ortak iletişim kutuları, farklı `CFindReplaceDialog` nesnelerdir geçici, kullanıcıların ekranda sırasında diğer windows ile etkileşim kurmasına izin verme. İki tür vardır, `CFindReplaceDialog` nesneler: İletişim kutuları ve Bul/Değiştir iletişim kutuları bulun. Kullanıcı Giriş arama ve arama/yer değiştirme dizeleri için iletişim kutularını izin verse de, bunlar herhangi bir arama veya değiştirme işlevleri gerçekleştirmeyin. Bu uygulamaya eklemeniz gerekir.
 
 Oluşturmak için bir `CFindReplaceDialog` nesne, (herhangi bir bağımsız değişken olan) sağlanan bir oluşturucu kullanın. Bu modsuz iletişim kutusu olduğundan, nesne yığını kullanarak şirket ayrılamadı **yeni** işleç yerine yığında.
 
@@ -89,7 +89,7 @@ Bir kez bir `CFindReplaceDialog` nesne oluşturulur, çağırmalısınız [Oluş
 
 Kullanım [m_fr](#m_fr) çağırmadan önce iletişim kutusunu başlatmak için yapı `Create`. `m_fr` Yapısıdır türünü [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
 
-Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) işlev ve kullanmak [on_regıstered_message](message-map-macros-mfc.md#on_registered_message) çerçeveniz içinde ileti eşleme makrosu Bu kayıtlı ileti işler penceresini açın.
+Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) işlev ve kullanmak [on_regıstered_message](message-map-macros-mfc.md#on_registered_message) çerçeveniz içinde ileti eşleme makrosu Bu kayıtlı ileti işler penceresini açın.
 
 Kullanıcı iletişim kutusu sonlandırmak verdi olup olmadığını belirlemek `IsTerminating` üye işlevi.
 
@@ -175,7 +175,7 @@ Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarl
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) işlevi dönüş değeri olan uygulama örneği için benzersiz bir ileti numarası. Geri çağırma işlevi bildiren bir ileti eşleme girişi, çerçeve penceresi olmalıdır ( `OnFindReplace` örnekte) kayıtlı bu iletiyi işleyen. Aşağıdaki kod parçası adlı bir çerçeve penceresi sınıfı için bunun nasıl yapılacağını örneğidir `CMyRichEditView`:
+Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) işlevi dönüş değeri olan uygulama örneği için benzersiz bir ileti numarası. Geri çağırma işlevi bildiren bir ileti eşleme girişi, çerçeve penceresi olmalıdır ( `OnFindReplace` örnekte) kayıtlı bu iletiyi işleyen. Aşağıdaki kod parçası adlı bir çerçeve penceresi sınıfı için bunun nasıl yapılacağını örneğidir `CMyRichEditView`:
 
 [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]
 
