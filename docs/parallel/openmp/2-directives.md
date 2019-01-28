@@ -2,12 +2,12 @@
 title: 2. Yönergeler
 ms.date: 01/18/2019
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
-ms.openlocfilehash: bf96d5ee6963a76c2b2462d5b3a0639c1141ea15
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 125d2d83b277e62d007e3a208e426ea717d52790
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894256"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087346"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 
@@ -60,7 +60,7 @@ Aşağıdaki yönerge bir bölgesi paralel birçok iş parçacığı tarafından
 - `default(shared | none)`
 - `shared(` *değişken listesi* `)`
 - `copyin(` *değişken listesi* `)`
-- `reduction(` *İşleç* `:` *değişken listesi*  `)`
+- `reduction(` *İşleç* `:` *değişken listesi* `)`
 - `num_threads(` *tamsayı ifadesi* `)`
 
 Bir iş parçacığı için paralel bir yapı alır, aşağıdaki durumlarda biri true ise, bir takım iş parçacıkları oluşturulur:
@@ -111,12 +111,12 @@ Kısıtlamaları `parallel` yönerge aşağıdaki gibidir:
 ### <a name="cross-references"></a>Çapraz başvuruları
 
 - `private`, `firstprivate`, `default`, `shared`, `copyin`, ve `reduction` yan tümceleri ([bölümünde 2.7.2](#272-data-sharing-attribute-clauses))
-- [OMP_NUM_THREADS](4-2-omp-num-threads.md) ortam değişkeni
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) kitaplığı işlevi
-- [Omp_dynamıc](4-3-omp-dynamic.md) ortam değişkeni
-- [omp_set_nested](3-1-9-omp-set-nested-function.md) işlevi
-- [OMP_NESTED](4-4-omp-nested.md) ortam değişkeni
-- [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md) kitaplığı işlevi
+- [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) ortam değişkeni
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) kitaplığı işlevi
+- [Omp_dynamıc](4-environment-variables.md#43-omp_dynamic) ortam değişkeni
+- [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) işlevi
+- [OMP_NESTED](4-environment-variables.md#44-omp_nested) ortam değişkeni
+- [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) kitaplığı işlevi
 
 ## <a name="24-work-sharing-constructs"></a>2.4 iş paylaşım yapıları
 
@@ -227,7 +227,7 @@ Kısıtlamaları `for` yönerge aşağıdaki gibidir:
 #### <a name="cross-references"></a>Çapraz başvuruları
 
 - `private`, `firstprivate`, `lastprivate`, ve `reduction` yan tümceleri ([bölümünde 2.7.2](#272-data-sharing-attribute-clauses))
-- [OMP_SCHEDULE](4-1-omp-schedule.md) ortam değişkeni
+- [OMP_SCHEDULE](4-environment-variables.md#41-omp_schedule) ortam değişkeni
 - [Sıralı](#266-ordered-construct) oluşturun
 - [zamanlama](d-using-the-schedule-clause.md) yan tümcesi
 
@@ -250,7 +250,7 @@ Yan tümcesi aşağıdakilerden biridir:
 - `private(` *değişken listesi* `)`
 - `firstprivate(` *değişken listesi* `)`
 - `lastprivate(` *değişken listesi* `)`
-- `reduction(` *İşleç* `:` *değişken listesi*  `)`
+- `reduction(` *İşleç* `:` *değişken listesi* `)`
 - `nowait`
 
 Her bölümde öncesinde bir `section` yönergesi, ancak `section` yönergesi, ilk bölüm için isteğe bağlıdır. `section` Yönergeleri sözcük kapsamı içinde görünmelidir `sections` yönergesi. Sonunda örtük bir engel olan bir `sections` sürece oluşturmak bir `nowait` belirtilir.
@@ -520,7 +520,7 @@ Kısıtlamaları `ordered` yönerge aşağıdaki gibidir:
 
 Bu bölüm, bir yönerge ve veri ortamı paralel bölgeleri yürütülmesi sırasında şu şekilde denetlemek için birkaç yan tümceleri sunar:
 
-- A `threadprivate` yönergesi dosya kapsam, ad alanı kapsamında veya blok kapsamı statik değişkenleri bir iş parçacığına yerel hale getirmek için sağlanır (aşağıdaki bölüme bakın).
+- A [threadprivate](#271-threadprivate-directive) yönergesi, dosya kapsam, ad alanı kapsamında veya blok kapsamı statik değişkenleri bir iş parçacığına yerel hale getirmek için sağlanır.
 
 - Paralel veya iş paylaşım yapıları süresi boyunca değişkenlerin paylaşım öznitelikleri denetlemek için yönergeleri belirtilebilir yan tümceleri içinde açıklanmıştır [bölümünde 2.7.2](#272-data-sharing-attribute-clauses).
 
@@ -582,8 +582,8 @@ void f(int n) {
 
 #### <a name="cross-references"></a>Çapraz başvuruları
 
-- [dinamik iş parçacıkları](3-1-7-omp-set-dynamic-function.md)
-- [Omp_dynamıc](4-3-omp-dynamic.md) ortam değişkeni
+- [dinamik iş parçacıkları](3-run-time-library-functions.md#317-omp_set_dynamic-function)
+- [Omp_dynamıc](4-environment-variables.md#43-omp_dynamic) ortam değişkeni
 
 ### <a name="272-data-sharing-attribute-clauses"></a>2.7.2 veri paylaşım öznitelik yan tümceleri
 

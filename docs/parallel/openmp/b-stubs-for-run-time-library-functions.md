@@ -1,24 +1,24 @@
 ---
 title: B. Çalışma zamanı kitaplık işlevleri için saplamalar
-ms.date: 11/04/2016
+ms.date: 01/22/2019
 ms.assetid: fdfdabe0-f678-4551-80d5-827b62354427
-ms.openlocfilehash: 3b2d48155a3baf4d317d3114bb5ae5a8ed306bef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e8d439eefad005c673cfb6c4ea12399b8236fb5
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551456"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087268"
 ---
 # <a name="b-stubs-for-run-time-library-functions"></a>B. Çalışma zamanı kitaplık işlevleri için saplamalar
 
-Bu bölümde, OpenMP C ve C++ API tanımlanmış çalışma zamanı kitaplık işlevleri için saplamalar sağlar. Saptamalar OpenMP C ve C++ API desteği olmayan platformlar için taşınabilirlik etkinleştirmek için sağlanır. Bu platformlarda OpenMP programlar bu saplama işlevler içeren bir kitaplık ile bağlanmalıdır. Saplama işlevleri OpenMP program yönergelerinde göz ardı edilir varsayılır. Bu nedenle, seri semantiği taklit.
+Bu bölümde, OpenMP C ve C++ API tanımlanmış çalışma zamanı kitaplık işlevleri için saplamalar sağlar. Saptamalar OpenMP C ve C++ API desteklemeyen platformlara taşınabilirlik etkinleştirmek için sağlanır. Bu platformlarda OpenMP programlar bu saplama işlevler içeren bir kitaplık ile bağlanmalıdır. Saplama işlevleri OpenMP program yönergelerinde göz ardı edilir varsayılır. Bu nedenle, seri semantiği taklit.
 
 > [!NOTE]
->  Kilit işlevleri görünen kilit değişkeni özel olarak bu işlevleri aracılığıyla erişilmelidir. Bunu başlatılmamış veya aksi takdirde kullanıcı programı değiştirdi. Kullanıcılar, saplama işlevleri tarafından kullanılan şema temel kilitleri uygulamak için OpenMP C ve C++ uygulamaları tarafından kullanılan mekanizmaları hakkında varsayımlar yapmamanız gerekir.
+> Kilit işlevleri görünen kilit değişkeni özel olarak bu işlevleri aracılığıyla erişilmelidir. Bunu başlatılmamış veya aksi takdirde kullanıcı programı değiştirdi. Kullanıcılar, saplama işlevleri tarafından kullanılan şema temel kilitleri uygulamak için OpenMP C ve C++ uygulamaları tarafından kullanılan mekanizmaları hakkında varsayımlar yapmamanız gerekir.
 
-### <a name="code"></a>Kod
+## <a name="code"></a>Kod
 
-```
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include "omp.h"

@@ -2,12 +2,12 @@
 title: 3. Çalışma zamanı kitaplık işlevleri
 ms.date: 01/17/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-ms.openlocfilehash: 7d48338683037c06ca208bff32c5c2e9b546a9fe
-ms.sourcegitcommit: 774db6a005a85e2a1268ca34309b993792701819
+ms.openlocfilehash: 4e72d2d74bb26f8eeeb422881cabf92630cced43
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55065028"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087320"
 ---
 # <a name="3-run-time-library-functions"></a>3. Çalışma zamanı kitaplık işlevleri
 
@@ -49,7 +49,7 @@ Bu bölümde açıklanan işlevleri etkiler ve iş parçacıkları, işlemci ve 
 void omp_set_num_threads(int num_threads);
 ```
 
-Parametresinin değeri *num_threads* pozitif bir tamsayı olmalıdır. İş parçacığı sayısını yerleştirmenin dinamik ayarına etkin bağlı etkisini bağlıdır. Kurallar arasındaki etkileşimi hakkında kapsamlı bir dizi için `omp_set_num_threads` işlev ve iş parçacıklarını yerleştirmenin dinamik ayarına 2.3 bölümüne bakın.
+Parametresinin değeri *num_threads* pozitif bir tamsayı olmalıdır. İş parçacığı sayısını yerleştirmenin dinamik ayarına etkin bağlı etkisini bağlıdır. Kurallar arasındaki etkileşimi hakkında kapsamlı bir dizi için `omp_set_num_threads` işlev ve iş parçacıklarını yerleştirmenin dinamik ayarına bkz [bölümünde 2.3](2-directives.md#23-parallel-construct).
 
 Bu işlev, bir program bölümünden çağrıldığında yukarıda açıklanan etkisi burada `omp_in_parallel` işlev, sıfır döndürür. Bir program bölümünden çağrılırsa burada `omp_in_parallel` işlevi sıfır dışında bir değeri döndürür, bu işlevin davranış tanımlanmamıştır.
 
@@ -60,7 +60,7 @@ Bu çağrı, üzerinde önceliğe sahiptir. `OMP_NUM_THREADS` ortam değişkeni.
 - [omp_set_dynamic](#317-omp_set_dynamic-function) işlevi
 - [omp_get_dynamic](#318-omp_get_dynamic-function) işlevi
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) ortam değişkeni
-- [num_threads](2-3-parallel-construct.md) yan tümcesi
+- [num_threads](2-directives.md#23-parallel-construct) yan tümcesi
 
 ### <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads işlevi
 
@@ -78,8 +78,8 @@ int omp_get_num_threads(void);
 #### <a name="cross-references"></a>Çapraz başvuruları
 
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads)
-- [num_threads](2-3-parallel-construct.md)
-- [parallel](2-3-parallel-construct.md)
+- [num_threads](2-directives.md#23-parallel-construct)
+- [parallel](2-directives.md#23-parallel-construct)
 
 ### <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads function
 
@@ -107,7 +107,7 @@ Paralel bir diğerine, bölge kullandığına dikkat edin `num_threads` iş par�
 - [omp_get_num_threads](#312-omp_get_num_threads-function)
 - [omp_set_num_threads](#311-omp_set_num_threads-function)
 - [omp_set_dynamic](#317-omp_set_dynamic-function)
-- [num_threads](2-3-parallel-construct.md)
+- [num_threads](2-directives.md#23-parallel-construct)
 
 ### <a name="314-ompgetthreadnum-function"></a>3.1.4 omp_get_thread_num işlevi
 

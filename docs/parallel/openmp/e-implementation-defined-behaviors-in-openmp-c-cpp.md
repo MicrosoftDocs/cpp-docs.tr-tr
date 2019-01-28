@@ -1,13 +1,13 @@
 ---
 title: E. OpenMP C/C++'daki uygulama tanımlı davranışlar
-ms.date: 11/04/2016
+ms.date: 01/22/2019
 ms.assetid: b8d660ca-9bb3-4b6b-87af-45c67d43a731
-ms.openlocfilehash: 704062f36102a06e6e7b8cf015f6330f925a6bba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3d8e9493cad1fce02e5d482cd5e612afb44bb37b
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619355"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087229"
 ---
 # <a name="e-implementation-defined-behaviors-in-openmp-cc"></a>E. OpenMP C/C++'daki uygulama tanımlı davranışlar
 
@@ -17,50 +17,50 @@ Bu ekte, "uygulama tanımlı" Bu API olarak açıklanan davranışları özetler
 
 Bir uygulama tanımlamak ve bu gibi durumlarda davranışını belge için gerekli değildir, ancak bu liste eksik olabilir.
 
-- **İş parçacığı sayısı:** bulunursa bir paralel bölgenin iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakıldı ve çalışma zamanı sistemi sağlayabilirler, davranışını numarası için paralel bölgenin istenen iş parçacığı sayısını aşıyor program uygulaması-(9 sayfasında bakın) tanımlanır.
+- **İş parçacığı sayısı:** Bir paralel bölgenin iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakıldı ve paralel bölge için istenen iş parçacığı sayısını çalışma zamanı sistemi sağladığınız sayısından fazla karşılaşılırsa, davranıştır programı uygulama tanımlı-(9 sayfasında bakın).
 
    Visual C++'da bir yuvalı olmayan paralel bir bölge için 64 iş parçacığı (maksimum) sağlanır.
 
-- **İşlemci sayısı:** aslında iş parçacığı herhangi bir zamanda barındıran fiziksel işlemcilerin sayısını uygulama-(10 sayfasında bakın) tanımlanır.
+- **İşlemci sayısı:** Aslında iş parçacığı herhangi bir zamanda barındıran fiziksel işlemcilerin sayısını uygulama-(10 sayfasında bakın) tanımlanır.
 
-   Visual C++ ' ta bu sayının sabit değil ve işletim sistemi tarafından denetlenir.
+   Visual C++ ' ta bu sayının sabit değildir ve işletim sistemi tarafından denetlenir.
 
-- **Takımlar, iş parçacığı oluşturma:** iç içe geçmiş bir paralel bölgenin yürüten iş parçacığı ekip uygulama tanımlı sayısıdır. () 10 sayfasında bakın).
+- **Takımlar, iş parçacığı oluşturma:** İç içe geçmiş bir paralel bölgenin yürütme iş parçacığı ekip sayısını uygulama-(10 sayfasında bakın) tanımlanır.
 
-   Visual C++'da, bu işletim sistemi tarafından belirlenir.
+   Visual C++'da, bu sayı işletim sistemi tarafından belirlenir.
 
-- **Schedule(Runtime):** ilgili planlama çalışma zamanına kadar ertelenmiş karar. Zamanlama türü ve Öbek boyutu ayarlayarak çalışma zamanında seçilebilir `OMP_SCHEDULE` ortam değişkeni. Bu ortam değişkeni ayarlanmazsa, sonuçta elde edilen zamanlama uygulama-(13 sayfasında bakın) tanımlanır.
+- **Schedule(Runtime):** Zamanlama hakkında karar çalışma zamanına kadar ertelenir. Zamanlama türü ve Öbek boyutu ayarlayarak çalışma zamanında seçilebilir `OMP_SCHEDULE` ortam değişkeni. Bu ortam değişkeni ayarlanmamış ise sonuç zamanlama uygulama-(13 sayfasında bakın) tanımlanır.
 
    Visual C++'da, zamanlama türü olan `static` öbek boyutu yok.
 
-- **Varsayılan zamanlama:** zamanlama yan tümcesinin olmaması durumunda, varsayılan zamanlama uygulama-(13 sayfasında bakın) tanımlanır.
+- **Zamanlama varsayılan:** Zamanlama yan tümcesinin olmaması durumunda, varsayılan zamanlama uygulama-(13 sayfasında bakın) tanımlanır.
 
    Visual C++'da, varsayılan zamanlama türüdür `static` öbek boyutu yok.
 
-- **ATOMİK:** olup tüm uygulama değiştirir uygulama tanımlı olduğu `atomic` yönergeleri ile **kritik** aynı benzersiz adı (bkz: sayfa 20) yönergeleri.
+- **ATOMİK:** Bu uygulama tüm olup yerini alır uygulama tanımlı `atomic` yönergeleri ile `critical` aynı benzersiz adı (bkz: sayfa 20) yönergeleri.
 
-   Görsel verileri değiştiren, C++ ' ta [atomik](../../parallel/openmp/reference/atomic.md) üzerinde bir doğal hizalama değil veya bu özelliği karşılayan tüm uzun atomik işlemler, 1 veya 2 bayt ise bir kritik bölüm kullanır. Aksi takdirde, kritik bölümleri kullanılmaz.
+   Görsel verileri değiştiren, C++ ' ta [atomik](reference/openmp-directives.md#atomic) üzerinde bir doğal hizalama değil veya bu özelliği karşılayan tüm atomik işlemler, bir veya iki bayt uzun olması durumunda, bir kritik bölüm kullanır. Aksi takdirde, kritik bölümleri kullanılmaz.
 
-- **omp_get_num_threads:** uygulama tanımlı varsayılan iş parçacığı sayısı kullanıcı tarafından açıkça ayarlanmamış ise (9, sayfasına bakın ve [bölümü 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) sayfasında 37).
+- **[omp_get_num_threads](3-run-time-library-functions.md#312-omp_get_num_threads-function):** İş parçacığı sayısı kullanıcı tarafından açıkça ayarlanmamışsa, varsayılan uygulama-(9 sayfasında bakın) tanımlanır.
 
    Visual C++'da varsayılan iş parçacığı sayısını işlemci sayısına eşittir.
 
-- **omp_set_dynamic:** için dinamik iş parçacığı ayarlama varsayılan uygulama tanımlanır (bkz [bölümü 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39).
+- **[omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function):** İçin dinamik iş parçacığı ayarlama varsayılan uygulama tanımlanır.
 
    Visual C++'da, varsayılan değer `FALSE`.
 
-- **omp_set_nested:** iç içe geçmiş paralellik etkinleştirildiğinde, uygulama tarafından tanımlanan iç içe geçmiş paralel bölgeleri yürütmek için kullanılan iş parçacıklarının sayısını (bkz [bölümü 3.1.9](../../parallel/openmp/3-1-9-omp-set-nested-function.md) sayfasında 40).
+- **[omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function):** İç içe geçmiş paralellik etkinleştirildiğinde, uygulama tarafından tanımlanan iç içe geçmiş paralel bölgeleri yürütmek için kullanılan iş parçacıklarının sayısı.
 
    Visual C++'da iş parçacığı sayısını işletim sistemi tarafından belirlenir.
 
-- `OMP_SCHEDULE` ortam değişkeni: Bu ortam değişkeni için varsayılan değer uygulama tanımlanır (bkz [bölümü 4.1](../../parallel/openmp/4-1-omp-schedule.md) sayfasında 48).
+- [OMP_SCHEDULE](4-environment-variables.md#41-omp_schedule) ortam değişkeni: Bu ortam değişkeni için varsayılan değer uygulama tarafından tanımlanır.
 
    Visual C++'da, zamanlama türü olan `static` öbek boyutu yok.
 
-- `OMP_NUM_THREADS` ortam değişkeni: için hiçbir değer belirtilmemişse `OMP_NUM_THREADS` ortam değişkeni veya belirtilen değer pozitif bir tamsayı değil veya değeri, iş parçacıkları sistem desteklediği en fazla sayısından büyükse, kullanılacak iş parçacığı sayısı uygulama tanımlı (bkz [bölümü 4.2](../../parallel/openmp/4-2-omp-num-threads.md) sayfasında 48).
+- [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) ortam değişkeni: İçin hiçbir değer belirtilmemişse `OMP_NUM_THREADS` ortam değişkeni veya belirtilen değer pozitif bir tamsayı değilse veya değer, iş parçacıkları sistem desteklediği en fazla sayısından büyükse, uygulama tanımlı kullanılacak iş parçacığı sayısı.
 
    Visual C++ ' ta değeri belirtilmişse sıfır veya daha az iş parçacığı sayısını işlemci sayısına eşit değil.  Değeri 64 ' büyükse, iş parçacığı sayısı 64'tür.
 
-- `OMP_DYNAMIC` ortam değişkeni: varsayılan değer uygulama tarafından tanımlanır (bkz [bölümü 4.3](../../parallel/openmp/4-3-omp-dynamic.md) sayfasında 49).
+- [Omp_dynamıc](4-environment-variables.md#43-omp_dynamic) ortam değişkeni: Uygulama tanımlı varsayılan değerdir.
 
    Visual C++'da, varsayılan değer `FALSE`.
