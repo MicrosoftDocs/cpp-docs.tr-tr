@@ -8,27 +8,65 @@ helpviewer_keywords:
 - controls [C++], selecting
 - size, controls
 - controls [C++], dominant
+- controls [C++], removing from groups
+- Dialog Editor [C++], dominant control
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
-ms.openlocfilehash: ccef63ae6388f376c4be96a34f2857fcedde0ea9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.author: Michael.Blome
+ms.topic: tutorial
+ms.service: cpp
+author: mikeblome
+ms.openlocfilehash: 008c99ae4b2cba5ff8f8b9ab069bb1b8085b7524
+ms.sourcegitcommit: b488462a6e035131121e6f32d8f3b108cc798b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637105"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55293643"
 ---
 # <a name="selecting-controls"></a>Denetimleri Seçme
 
-Boyuta denetimleri seçin, hizalama, taşıyın, kopyalayın, veya silin ve sonra istediğiniz işlemi gerçekleştirin. Çoğu durumda, boyutu ve hizalama araçları kullanmak üzere birden fazla denetim seçmeniz gerekir [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+Boyuta denetimleri seçin, hizalama, taşıyın, kopyalayın, veya silin ve ardından istediğiniz işlemi tamamlayın. Çoğu durumda, boyutu ve hizalama araçları kullanmak üzere birden fazla denetim seçmeniz gerekir [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
-Bir denetim seçili durumdayken, etrafında gölgeli bir kenarlık kesintisiz (etkin) sahip veya boş (etkin olmayan) "boyutlandırma tutamaçlarını" küçük kareler, zaman içinde seçim kenarlığı görüntülenir. Birden çok Denetim seçildiğinde, baskın denetimi düz boyutlandırma tutamaçlarını sahiptir; diğer seçilen tüm denetimleri boş boyutlandırma tutamaçlarını vardır.
+Bir denetim seçili durumdayken, etrafında gölgeli bir kenarlık kesintisiz (etkin) sahip veya boş (etkin olmayan) "boyutlandırma tutamaçlarını" küçük kareler, zaman içinde seçim kenarlığı görüntülenir. Birden çok Denetim seçildiğinde, baskın denetimi düz boyutlandırma ve diğer seçilen tüm denetimleri boş boyutlandırma tutamaçlarını sahip olduğunuz.
 
-Boyutlandırma veya birden çok denetimi hizalama **iletişim** Düzenleyicisi kullanır "baskın denetimi" diğer denetimlerin nasıl boyutlandırılmış veya hizalı belirlemek için. Varsayılan olarak, baskın denetim seçili ilk bir denetimdir.
+Boyutlandırma ya da birden çok denetimi hizalama **iletişim** Düzenleyicisi kullanır "baskın denetimi" diğer denetimlerin nasıl boyutlandırılmış veya hizalı belirlemek için. Varsayılan olarak, baskın denetim seçili ilk bir denetimdir.
 
-- [Birden Çok Denetim Seçme](../windows/selecting-multiple-controls.md)
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
-- [Baskın Denetimi Belirtme](../windows/specifying-the-dominant-control.md)
+## <a name="to-select-multiple-controls"></a>Birden çok denetim seçin
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+1. İçinde [araç penceresi](/visualstudio/ide/reference/toolbox)seçin **işaretçi** aracı.
+
+1. İletişim kutusunda istediğiniz denetimlerin çevresinde bir seçim kutusu çizmek için işaretçiyi sürükleyin.
+
+   Fare düğmesini bıraktığınızda, tüm denetimleri iç ve seçim kutusu seçili kesişen.
+
+   \- veya -
+
+   Basılı **Shift** anahtar ve seçime dahil etmek istediğiniz denetimleri seçin.
+
+   \- veya -
+
+   Basılı **Ctrl** anahtar ve seçime dahil etmek istediğiniz denetimleri seçin.
+
+## <a name="to-remove-a-control-from-a-group-of-selected-controls-or-to-add-a-control-to-a-group-of-selected-controls"></a>Bir denetim seçili denetimlerin bir gruptan kaldırmak için veya bir denetim seçili denetimlerin bir gruba eklemek için
+
+1. Seçili denetimleri grubuyla basılı **Shift** anahtar ve mevcut seçime Ekle veya kaldırmak istediğiniz denetimi seçin.
+
+   > [!NOTE]
+   > Basılı **Ctrl** anahtarı ve bir seçim içindeki bir kontrolü seçme hale getirir, bu seçimdeki baskın denetim.
+
+## <a name="to-specify-the-dominant-control"></a>Baskın denetimi belirtmek için
+
+1. Basılı **Ctrl** anahtar ve diğer denetimleri konumunu ve boyutunu etkilemek için kullanmak istediğiniz denetimi *ilk*.
+
+> [!NOTE]
+> Bağımlı denetimlerin tutamaçları boş baskın denetimi boyutlandırma tutamaçlarını düz bağlıdır. Baskın denetimi tüm daha fazla yeniden boyutlandırma veya hizalama temel alır.
+
+## <a name="to-change-the-dominant-control"></a>Baskın denetimi değiştirmek için
+
+1. Şu anda seçili tüm denetimlerin dışındaki tıklayarak geçerli seçimi temizleyin.
+
+1. Farklı bir denetim ilk seçerek önceki yordamı yineleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
