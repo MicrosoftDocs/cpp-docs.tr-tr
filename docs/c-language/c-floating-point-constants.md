@@ -28,7 +28,7 @@ ms.locfileid: "54220380"
 
 *Sabit kesirli*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi***.**
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*  **.**
 
 *Üs bölümü*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*<br/>
