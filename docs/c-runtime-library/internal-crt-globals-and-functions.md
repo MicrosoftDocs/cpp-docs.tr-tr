@@ -1,6 +1,6 @@
 ---
 title: İç CRT genel değişkenleri ve işlevleri
-ms.date: 11/04/2016
+ms.date: 01/22/2019
 apiname:
 - __acrt_iob_func
 - __AdjustPointer
@@ -44,6 +44,7 @@ apiname:
 - __crtCreateEventExW
 - __crtCreateSemaphoreExW
 - __crtCreateSymbolicLinkW
+- _crt_debugger_hook
 - __crtEnumSystemLocalesEx
 - __crtFlsAlloc
 - __crtFlsFree
@@ -208,6 +209,7 @@ apiname:
 - _pwctype
 - __pwctype_func
 - __pxcptinfoptrs
+- _query_app_type
 - _realloc_base
 - _register_thread_local_exe_atexit_callback
 - __report_gsfailure
@@ -335,6 +337,7 @@ f1_keywords:
 - __crtCreateEventExW
 - __crtCreateSemaphoreExW
 - __crtCreateSymbolicLinkW
+- _crt_debugger_hook
 - __crtEnumSystemLocalesEx
 - __crtFlsAlloc
 - __crtFlsFree
@@ -499,6 +502,7 @@ f1_keywords:
 - _pwctype
 - __pwctype_func
 - __pxcptinfoptrs
+- _query_app_type
 - _realloc_base
 - _register_thread_local_exe_atexit_callback
 - __report_gsfailure
@@ -609,6 +613,7 @@ helpviewer_keywords:
 - __crtCreateEventExW
 - __crtCreateSemaphoreExW
 - __crtCreateSymbolicLinkW
+- _crt_debugger_hook
 - __crtEnumSystemLocalesEx
 - __crtFlsAlloc
 - __crtFlsFree
@@ -773,6 +778,7 @@ helpviewer_keywords:
 - _pwctype
 - __pwctype_func
 - __pxcptinfoptrs
+- _query_app_type
 - _realloc_base
 - _register_thread_local_exe_atexit_callback
 - __report_gsfailure
@@ -841,12 +847,12 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 64288cec680c1c10b6ee3f8b0f046fb22d25ab7c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70b6036befb1f5da012375475a00d4f771c0e5cb
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485624"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703174"
 ---
 # <a name="internal-crt-globals-and-functions"></a>İç CRT genel değişkenleri ve işlevleri
 
@@ -926,6 +932,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__crtCreateEventExW|
 |__crtCreateSemaphoreExW|
 |__crtCreateSymbolicLinkW|
+|_crt_debugger_hook|
 |__crtEnumSystemLocalesEx|
 |__crtFlsAlloc|
 |__crtFlsFree|
@@ -974,7 +981,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__dstbias|
 |_dtest|
 |_EH_prolog|
-|gt; _errno &|
+|_errno|
 |_except_handler2|
 |[_except_handler3](../c-runtime-library/except-handler3.md)|
 |_except_handler4_common|
@@ -1104,6 +1111,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_pwctype|
 |__pwctype_func|
 |__pxcptinfoptrs|
+|_query_app_type|
 |_realloc_base|
 |[_register_onexit_function](../c-runtime-library/execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
 |_register_thread_local_exe_atexit_callback|

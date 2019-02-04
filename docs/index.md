@@ -4,12 +4,12 @@ title: Visual C++ belgeleri
 description: C++ uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için geliştirmek için kullanmayı öğrenin.
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 9b5629adf14e1ba5caad4157a28db65b4198b904
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e8fe8dec14560579e255446c4de3ee5a17e302f6
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328298"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703213"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -156,7 +156,7 @@ ms.locfileid: "51328298"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/windows/uwp/gaming/e2e">
+                                <a href="/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -11,6 +11,7 @@ apilocation:
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - msvcr110.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - CIcos
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - _CIcos intrinsic
 - CIcos intrinsic
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
-ms.openlocfilehash: fc6cb9a45a7467e63129bd859817ebdfc23a0160
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fef9ef9e197dcd6e8a1880c3acdfa2755ccf1ae1
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497246"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702732"
 ---
 # <a name="cicos"></a>_CIcos
 

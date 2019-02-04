@@ -14,6 +14,7 @@ apilocation:
 - msvcrt.dll
 - msvcr90.dll
 - msvcr120.dll
+- api-ms-win-crt-locale-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - ___mb_cur_max_func
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
-ms.openlocfilehash: cb84c77ebafc7fb53c1544f9ec07db3fba6f02d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e59f487825b49c8ee6fefe41b41100b571619c6c
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657047"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702797"
 ---
 # <a name="mbcurmaxfunc-mbcurmaxlfunc-pmbcurmax-mbcurmax"></a>___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 
@@ -66,7 +67,7 @@ Geçerli değerini almak için CRT kullanan bir iç işlev budur [MB_CUR_MAX](..
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<CType.h >, \<stdlib.h >|
+|`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<ctype.h>, \<stdlib.h>|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

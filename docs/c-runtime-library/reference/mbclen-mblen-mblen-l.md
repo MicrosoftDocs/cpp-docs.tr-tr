@@ -1,10 +1,11 @@
 ---
-title: _mbclen, mblen, _mblen_l
-ms.date: 11/04/2016
+title: _mbclen, mblen, _mblen_l, _mbclen_l
+ms.date: 01/22/2019
 apiname:
 - _mbclen
 - mblen
 - _mblen_l
+- _mbclen_l
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,6 +24,7 @@ f1_keywords:
 - mblen
 - ftclen
 - _mbclen
+- _mbclen_l
 - tclen
 - _ftclen
 - _tclen
@@ -33,17 +35,18 @@ helpviewer_keywords:
 - _tclen function
 - mblen_l function
 - _mbclen function
+- _mbclen_l function
 - mbclen function
 - mblen function
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70
-ms.openlocfilehash: dddf7d3a1705460d2c8d42cc1b36230d7bdaf942
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b7888b0b8c87a632dcbb63f54ade11080c7a309a
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434392"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702966"
 ---
-# <a name="mbclen-mblen-mblenl"></a>_mbclen, mblen, _mblen_l
+# <a name="mbclen-mblen-mblenl-mbclenl"></a>_mbclen, mblen, _mblen_l, _mbclen_l
 
 Uzunluğu alır ve çok baytlı karakterin geçerliliğini belirler.
 
@@ -55,6 +58,10 @@ Uzunluğu alır ve çok baytlı karakterin geçerliliğini belirler.
 ```C
 size_t _mbclen(
    const unsigned char *c
+);
+size_t _mbclen_l(
+   unsigned char const* c,
+   _locale_t locale
 );
 int mblen(
    const char *mbstr,
@@ -83,15 +90,15 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbclen** döndürür 1 veya 2 olup olmadığına göre çok baytlı karakterin *c* 1 veya 2 bayt uzunluğunda. Herhangi bir hata için dönüş **_mbclen**. Varsa *mbstr* değil **NULL**, **mblen** çok baytlı karakterinin bayt cinsinden uzunluğunu döndürür. Varsa *mbstr* olduğu **NULL** veya geniş karakterli null karakterini gösteriyorsa **mblen** 0 döndürür. Nesne, *mbstr* noktalarına geçerli çok baytlı bir karakterin ilk form değil *sayısı* karakter **mblen** -1 döndürür.
+**_mbclen** döndürür 1 veya 2 olup olmadığına göre çok baytlı karakterin *c* 1 veya 2 bayt uzunluğunda. Herhangi bir hata için dönüş **_mbclen**. Varsa *mbstr* değil **NULL**, **mblen** çok baytlı karakterinin bayt cinsinden uzunluğunu döndürür. Varsa *mbstr* olduğu **NULL** veya geniş karakterli null karakterini gösteriyorsa **mblen** 0 döndürür. Nesne, *mbstr* noktalarına değil geçerli çok baytlı bir karakterin ilk form *sayısı* karakter **mblen** -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbclen** işlevi çok baytlı karakterinin bayt cinsinden uzunluğunu döndürür *c*. Varsa *c* örtük çağrıyla tarafından belirlenen şekilde bir çok baytlı karakterin ön baytı saptandığı **_ismbblead**, sonucunu **_mbclen** tahmin edilemez.
+**_Mbclen** işlevi çok baytlı karakterinin bayt cinsinden uzunluğunu döndürür *c*. Varsa *c* örtük çağrıyla tarafından belirlendiği çok baytlı karakterin ön baytını işaret etmiyor **_ismbblead**, sonucunu **_mbclen** tahmin edilemez.
 
 **mblen** bayt cinsinden uzunluğunu döndürür *mbstr* geçerli çok baytlı karakterse ve kod sayfasıyla ilişkili çok baytlı karakter geçerliliğini belirler. **mblen** inceler *sayısı* veya içindeki daha az baytı *mbstr*, fazlasını **MB_CUR_MAX** bayt.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri tarafından etkilenen **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_L** sonekli sürümleri aynı davranır, ancak bunun yerine iletilmiş yerel ayar parametresini kullanırlar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

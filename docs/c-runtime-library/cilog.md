@@ -11,6 +11,7 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - msvcrt.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _CIlog
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - _CIlog intrinsic
 - CIlog intrinsic
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec
-ms.openlocfilehash: 731c30e08c40f839c99d028aa46d5b61e5fd7c92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d55376688e2e7b01edb07ad9c4520024e940416a
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566406"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703278"
 ---
 # <a name="cilog"></a>_CIlog
 

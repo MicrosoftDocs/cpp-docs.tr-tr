@@ -4,6 +4,16 @@ ms.date: 11/04/2016
 apiname:
 - _findfirst
 - _wfindfirst
+- _findfirst32
+- _wfindfirst32
+- _findfirst32i64
+- _wfindfirst32i64
+- _findfirst64
+- _wfindfirst64
+- _findfirst64i32
+- _wfindfirst64i32
+- _findfirsti64
+- _wfindfirsti64
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -90,12 +100,12 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: ceaa8fea4414bab4bbb035aa4525b415ca7ac0b8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 47a1d7301b59a942a1af860f310e1f1f9da12ec7
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331444"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703148"
 ---
 # <a name="findfirst-findfirst32-findfirst32i64-findfirst64-findfirst64i32-findfirsti64-wfindfirst-wfindfirst32-wfindfirst32i64-wfindfirst64-wfindfirst64i32-wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 

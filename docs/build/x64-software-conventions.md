@@ -5,12 +5,12 @@ helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-ms.openlocfilehash: eea2059a8c06a8ba4d032b87fb41d7d51bc8eac2
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 55be8f381b39ee566b389350ff70a9b0a3fe7694
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627312"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702074"
 ---
 # <a name="x64-software-conventions"></a>x64 yazılım kuralları
 
@@ -141,7 +141,7 @@ _declspec(align(8)) struct {
 #### <a name="example-3"></a>Örnek 3
 
 ```C
-// Total size = 22 bytes, alignment = 4 bytes (doubleword).
+// Total size = 12 bytes, alignment = 4 bytes (doubleword).
 
 _declspec(align(4)) struct {
     char a;       // +0; size = 1 byte
@@ -194,7 +194,7 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları arasında nasıl kullanı
 ||||
 |-|-|-|
 |Yazmaç|Durum|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
-|RAX'DAKİ|Volatile|Dönüş değeri kaydı|
+|RAX|Volatile|Dönüş değeri kaydı|
 |RCX|Volatile|İlk tamsayı bağımsız değişkeni|
 |RDX|Volatile|İkinci bağımsız değişken|
 |R8|Volatile|Üçüncü bağımsız değişken|
@@ -207,11 +207,11 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları arasında nasıl kullanı
 |RBP|Kalıcı|Çerçeve işaretçisi olarak kullanılabilir. Aranan tarafından korunması gerekir|
 |RSP|Kalıcı|Yığın işaretçisi|
 |XMM0, YMM0|Volatile|İlk FP bağımsız değişkeni; ilk vektör türü bağımsız değişken olduğunda `__vectorcall` kullanılır|
-|XMM1'DE, YMM1|Volatile|İkinci FP bağımsız değişkeni; vektör türü bağımsız değişken ikinci zaman `__vectorcall` kullanılır|
+|XMM1, YMM1|Volatile|İkinci FP bağımsız değişkeni; vektör türü bağımsız değişken ikinci zaman `__vectorcall` kullanılır|
 |XMM2, YMM2|Volatile|Üçüncü FP bağımsız değişkeni; Üçüncü vektör türü bağımsız değişken olduğunda `__vectorcall` kullanılır|
 |XMM3, YMM3|Volatile|Dördüncü FP bağımsız değişkeni; Dördüncü vektör türü bağımsız değişken olduğunda `__vectorcall` kullanılır|
 |XMM4, YMM4|Volatile|Çağıran tarafından gerektiği şekilde korunması gerekir; Beşinci vektör türü bağımsız değişken olduğunda `__vectorcall` kullanılır|
-|XMM5, YMM5 ARASINDA|Volatile|Çağıran tarafından gerektiği şekilde korunması gerekir; Altıncı vektör türü bağımsız değişken olduğunda `__vectorcall` kullanılır|
+|XMM5, YMM5|Volatile|Çağıran tarafından gerektiği şekilde korunması gerekir; Altıncı vektör türü bağımsız değişken olduğunda `__vectorcall` kullanılır|
 |XMM6:XMM15, YMM6:YMM15|Kalıcı (XMM) Volatile (YMM üst kısmında)|Aranan tarafından korunmalıdır. YMM kayıtları, çağıran tarafından gerektiği şekilde korunmalıdır.|
 
 İşlev çıkmadan ve C çalışma zamanı kitaplığı çağrıları ve Windows sistem çağrıları işlev girişi, CPU yön bayrağı bayrakları kayıt temizlenmesi bekleniyor.

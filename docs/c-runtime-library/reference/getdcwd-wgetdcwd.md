@@ -16,6 +16,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-environment-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - wgetdcwd
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-ms.openlocfilehash: 87cccec82ce648498c2bd3a7ac0ecbe436cb9baf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 464a254775d9a1d2488247d6dafb4b85cd763f10
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677025"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702940"
 ---
 # <a name="getdcwd-wgetdcwd"></a>_getdcwd, _wgetdcwd
 
@@ -64,7 +65,7 @@ wchar_t *_wgetdcwd(
 *Sürücü*<br/>
 Sürücüyü belirten negatif olmayan tamsayı (0 = varsayılan sürücü, 1 = A, 2 = B vb.).
 
-Belirtilen sürücü kullanılamıyorsa veya sürücü türünü (örneğin, çıkarılabilir, sabit, CD-ROM, RAM disk veya ağ sürücüsü) saptanamıyorsa, açıklanan geçersiz parametre işleyicisi [Parameter Validation](../../c-runtime-library/parameter-validation.md), olan çağrılır.
+Belirtilen sürücü kullanılamıyorsa veya sürücü türünü (örneğin, çıkarılabilir, sabit, CD-ROM, RAM disk veya ağ sürücüsü) belirlenemiyor, geçersiz parametre işleyicisi çağrılır. Daha fazla bilgi için [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 *Arabellek*<br/>
 Yol için depolama konumu veya **NULL**.
@@ -74,13 +75,13 @@ Varsa **NULL** belirtilirse, bu işlev bir arabellek en az ayırır *maxlen* kul
 *maxlen*<br/>
 Karakter yolun maksimum uzunluğunu belirten sıfır olmayan pozitif bir tamsayı: **char** için **_getdcwd** ve **wchar_t** için **_wgetdcwd**.
 
-Varsa *maxlen* açıklanan geçersiz parametre işleyicisi sıfırdan büyük değilse [Parameter Validation](../../c-runtime-library/parameter-validation.md), çağrılır.
+Varsa *maxlen* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır. Daha fazla bilgi için [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Belirtilen sürücüdeki geçerli çalışma dizininin tam yolu temsil eden bir dize işaretçisi veya **NULL**, bir hata gösterir.
 
-Varsa *arabellek* olarak belirtilen **NULL** ve ayırmak için yeterli bellek *maxlen* karakter, bir hata oluşur ve **errno** olduğu kümesine **ENOMEM**. Sondaki null karakter içeren yolun uzunluğu aşması durumunda *maxlen*, bir hata oluşur ve **errno** ayarlanır **ERANGE**. Bu hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Varsa *arabellek* olarak belirtilen **NULL** ve ayırmak için yeterli bellek *maxlen* karakter, bir hata oluşur ve **errno** olduğu kümesine **ENOMEM**. Sondaki null karakter de dahil olmak üzere yolunun uzunluğu aşması durumunda *maxlen*, bir hata durumunda ve **errno** ayarlanır **ERANGE**. Bu hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 

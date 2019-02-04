@@ -11,18 +11,19 @@ apilocation:
 - msvcr110.dll
 - msvcr110_clr0400.dll
 - msvcr100.dll
+- api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - __p__fmode
 helpviewer_keywords:
 - __p__fmode
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
-ms.openlocfilehash: 59687cca87d283682c4b7231b5f8c1a55ff512db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdb390ef5ae7254c463a3abd66860559cebeeeb9
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579727"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703057"
 ---
 # <a name="pfmode"></a>__p__fmode
 

@@ -1,6 +1,31 @@
 ---
 title: Kullanılmayan işlevler
-ms.date: 11/04/2016
+ms.date: 01/22/2019
+apiname:
+- _beep
+- _sleep
+- _loaddll
+- _getdllprocaddr
+- _seterrormode
+- is_wctype
+- _getsystime
+- _setsystime
+apilocation:
+- msvcrt.dll
+- msvcr80.dll
+- msvcr90.dll
+- msvcr100.dll
+- msvcr100_clr0400.dll
+- msvcr110.dll
+- msvcr110_clr0400.dll
+- msvcr120.dll
+- msvcr120_clr0400.dll
+- ucrtbase.dll
+- api-ms-win-crt-process-l1-1-0.dll
+- api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-string-l1-1-0.dll
+- api-ms-win-crt-time-l1-1-0.dll
+apitype: DLLExport
 f1_keywords:
 - is_wctype
 - _loaddll
@@ -25,12 +50,12 @@ helpviewer_keywords:
 - _sleep function
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-ms.openlocfilehash: 2f42593620c3457694bd57ccdc5a90216b3a28f1
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: edac8fde530752c911058acdaccccea6d0318b8c
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893892"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702680"
 ---
 # <a name="obsolete-functions"></a>Kullanılmayan işlevler
 

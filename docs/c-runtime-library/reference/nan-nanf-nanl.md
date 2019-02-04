@@ -1,6 +1,6 @@
 ---
 title: nan, nanf, nanl
-ms.date: 94/05/2018
+ms.date: 01/31/2019
 apiname:
 - nanf
 - nan
@@ -27,12 +27,12 @@ helpviewer_keywords:
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-ms.openlocfilehash: 22b0e14094a0b6f0f3571c4d7551552210177a22
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df3985a28bc351bdf196c0a1561bd3e25b661c87
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610268"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703002"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
@@ -63,11 +63,14 @@ Bir dize değeri.
 
 |İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
-|**NaN**, **nanf**, **nanl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**nan**, **nanf**, **nanl**|\<Math.h >|\<cmath > veya \<math.h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[_finite, _finitef](finite-finitef.md)<br/>
+[fpclassify](fpclassify.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
+[isfinite, _finite, _finitef](finite-finitef.md)<br/>
+[isinf](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
+[isnormal](isnormal.md)<br/>

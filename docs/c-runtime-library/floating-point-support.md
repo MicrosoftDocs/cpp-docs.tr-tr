@@ -1,6 +1,6 @@
 ---
 title: Matematik ve kayan nokta desteği
-ms.date: 04/06/2018
+ms.date: 01/31/2019
 f1_keywords:
 - c.math
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: 9e1baeb7236e5b1144b52df0bd83cc0f4a4b7796
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d03333dee12989af5897c34ba96484930a39673
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558242"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703135"
 ---
 # <a name="math-and-floating-point-support"></a>Matematik ve kayan nokta desteği
 
@@ -69,7 +69,6 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16-bit sürümleri *
 [fesetround](../c-runtime-library/reference/fegetround-fesetround2.md)|Belirtilen kayan nokta yuvarlama modu ayarlar
 [fetestexcept](../c-runtime-library/reference/fetestexcept1.md)|Hangi kayan nokta özel durum durumu bayrakları ayarlanmış belirler
 [feupdateenv](../c-runtime-library/reference/feupdateenv.md)|Bir kayan nokta ortamı geri yükler, sonra önceki özel durum başlatır
-[_finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Bir değer sınırlı olup olmadığını belirler
 [floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|Tabanını hesaplar.
 [fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)|Fused Çarp hesaplar
 [fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)|Bağımsız değişkenlerin sayısı üst sınırını hesaplar.
@@ -87,7 +86,11 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16-bit sürümleri *
 [ilogb, ilogbf, ilogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|Tamsayı 2 tabanında üssünü hesaplar.
 [imaxabs](../c-runtime-library/reference/imaxabs.md)|Bir tamsayı türü mutlak değerini hesaplar.
 [imaxdiv](../c-runtime-library/reference/imaxdiv.md)|Bölümü ve iki tamsayı değerinin kalanını hesaplar
+[isfinite, _finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Bir değer sınırlı olup olmadığını belirler
+[isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered](../c-runtime-library/reference/floating-point-ordering.md)|İki sırasını karşılaştırma kayan nokta değerleri
+[isinf](../c-runtime-library/reference/isinf.md)|Sonsuz kayan nokta değeri olup olmadığını belirler
 [isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)|Bir kayan nokta değeri NaN için test eder
+[isnormal](../c-runtime-library/reference/isnormal.md)|Bir kayan nokta değeri sınırlı olan ve olmayan subnormal olup olmadığını test eder
 [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevi hesaplar
 [ldexp, ldexpf, ldexpl](../c-runtime-library/reference/ldexp.md)|Hesaplar x * 2<sup>n</sup>
 [lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|Gama fonksiyonu mutlak değerini doğal logaritmasını hesaplar.
@@ -118,6 +121,7 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16-bit sürümleri *
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Bir kayan noktalı sayı bir tam sayı gücünü tarafından çarpar **flt_radıx**
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Kayan nokta denetim sözcüğünü ayarlar
 [_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Etkinleştirir veya SSE2 yönergelerini devre dışı bırakır
+[signbit](../c-runtime-library/reference/signbit.md)|Bir kayan nokta değerinin imza biti testleri
 [sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Sinüsünü hesaplar.
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsünü hesaplar.
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Kare kökünü hesaplar.
@@ -134,3 +138,4 @@ Microsoft C/C++ ve desteklenen Microsoft Visual C++ önceki 16-bit sürümleri *
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kayan nokta temelleri](../c-runtime-library/reference/floating-point-primitives.md)<br/>

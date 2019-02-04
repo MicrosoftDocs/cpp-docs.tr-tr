@@ -11,6 +11,7 @@ apilocation:
 - msvcr110.dll
 - msvcr90.dll
 - msvcr120.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _CItan
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - CItan intrinsic
 - _CItan intrinsic
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
-ms.openlocfilehash: fdefe8674ede78de194fbb884bd2c90fe0a96d06
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d64ce3e187a055185a82868988825c418b3f54bd
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650723"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702875"
 ---
 # <a name="citan"></a>_CItan
 

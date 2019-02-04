@@ -1,6 +1,6 @@
 ---
-title: c16rtomb, c32rtomb1
-ms.date: 11/04/2016
+title: c16rtomb, c32rtomb
+ms.date: 01/22/2018
 apiname:
 - c16rtomb
 - c32rtomb
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - c16rtomb function
 - c32rtomb function
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
-ms.openlocfilehash: 0d735363bbb317b06c1ebc73a2b0678479a243ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad58184c7bab6f95a842bda5f9eb545f09434a3e
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536597"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702784"
 ---
 # <a name="c16rtomb-c32rtomb"></a>c16rtomb, c32rtomb
 
@@ -79,7 +79,7 @@ Varsa *mbchar* bir null işaretçiyse davranıştır bir iç arabellek için de�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**c16rtomb**, **c32rtomb**|C, C++: \<uchar.h >|
+|**c16rtomb**, **c32rtomb**|C, C++: \<uchar.h>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

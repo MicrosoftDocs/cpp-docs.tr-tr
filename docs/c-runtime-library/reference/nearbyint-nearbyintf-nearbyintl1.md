@@ -4,7 +4,7 @@ ms.date: 04/05/2018
 apiname:
 - nearbyint
 - nearbyintf
-- nerabyintl
+- nearbyintl
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -30,12 +30,12 @@ helpviewer_keywords:
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-ms.openlocfilehash: 4a36bddb28db9fb4c5809432dfaef9ca3ece4328
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 827286c840c6564c8c3f8b351197b0201509d241
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668318"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703005"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
@@ -66,7 +66,7 @@ Başarılı olursa döndürür *x*, geçerli yuvarlama biçimi tarafından rapor
 |Sorun|döndürülecek|
 |-----------|------------|
 |*x* ±INFINITY =|±INFINITY, değiştirilmemiş|
-|*x* ±0 =|±0, değiştirilmemiş|
+|*x* = ±0|±0, değiştirilmemiş|
 |*x* NaN =|NaN|
 
 Hataları aracılığıyla bildirilmez [_matherr](matherr.md); özellikle, bu işlev herhangi raporlamaz **FE_INEXACT** özel durumlar.
