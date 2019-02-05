@@ -62,7 +62,7 @@ Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz
 
 1. İçinde **Çözüm Gezgini**seçin **oyun yükleyici** projesini ve ardından **görünümü** > **Özellikler penceresi** veya isabet **F4** açmak için **özellikleri** penceresi.
 
-1. Yükleyicide görünmesini istediğiniz kadar ek ayrıntıları belirtin.  Örneğin, *Contoso* için **üretici**, *oyun yükleyici* için **ürün adı**, ve *http\:/ / www.contoso.com* için **SupportUrl**.
+1. Yükleyicide görünmesini istediğiniz kadar ek ayrıntıları belirtin.  Örneğin, *Contoso* için **üretici**, *oyun yükleyici* için **ürün adı**, ve *http\://www.contoso.com* için **SupportUrl**.
 
 1. Menü çubuğunda, **derleme** > **Configuration Manager**. İçinde **proje** tablosuna ve altında **derleme** sütun için kutuyu **oyun yükleyici**. **Kapat**'ı tıklatın.
 
