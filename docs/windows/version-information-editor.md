@@ -3,17 +3,32 @@ title: Sürüm bilgileri Düzenleyicisi (C++)
 ms.date: 11/04/2016
 f1_keywords:
 - vc.editors.version.F1
+- vc.editors.version
 helpviewer_keywords:
 - Version Information editor [C++], about Version Information editor
 - editors, Version Information
 - resource editors [C++], Version Information editor
+- version information resources [C++]
+- resources [C++], editing version information
+- languages, version information
+- New Version Info Block
+- blocks, adding
+- resources [C++], adding version information
+- version information, adding for languages
+- blocks, deleting
+- version information, deleting blocks
+- resources [C++], deleting version information
+- VerQueryValue
+- version information, accessing from within programs
+- GetFileVersionInfo
+- version information
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-ms.openlocfilehash: 817092af316fbc39b696e1ed19e1c67f9a799bd7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94afb429af6eb1b0d570a444f49145a31c2fec1f
+ms.sourcegitcommit: 52c05e10b503e834c443ef11e7ca1987e332f876
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667499"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742680"
 ---
 # <a name="version-information-editor-c"></a>Sürüm bilgileri Düzenleyicisi (C++)
 
@@ -24,26 +39,60 @@ Sürüm bilgileri kaynağında bir üst bloğu ve bir veya daha fazla alt blokla
 > [!NOTE]
 > Windows standart VS_VERSION_INFO adlı yalnızca bir sürümü kaynak sağlamaktır.
 
-**Sürüm bilgisi** Düzenleyicisi olanak sağlar:
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
-- [Sürüm bilgileri kaynağında dize düzenleme](../windows/editing-a-string-in-a-version-information-resource.md)
+**Sürüm bilgisi** Düzenleyicisi sağlar:
 
-- [(Yeni sürüm bilgi bloğu) başka bir dil için sürüm bilgileri ekleme](../windows/adding-version-information-for-another-language.md)
+## <a name="to-edit-a-string-in-a-version-information-resource"></a>Sürüm bilgileri kaynağında dize düzenleme
 
-- [Sürüm bilgi bloğu silinsin](../windows/deleting-a-version-information-block.md)
-
-- [Programınızdan erişim sürüm bilgileri](../windows/accessing-version-information-from-within-your-program.md)
+Düzenlemeye başlamak için daha sonra tekrar seçmek için bir kez öğesi seçin. Doğrudan bir değişiklik **sürüm bilgisi** tablo veya [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Her iki yerde de yaptığınız değişiklikler yansıtılır.
 
    > [!NOTE]
-   > Kullanırken **sürüm bilgisi** düzenleyicisinde birçok örneği sağ kaynağa özgü komutların kısayol menüsünü görüntüleyin. Örneğin, bir blok üstbilgisi girişine işaret ederken tıklarsanız, kısayol menüsünü gösterir **yeni sürüm blok bilgisi** ve **sürüm blok bilgisi silme** komutları.
+   > Düzenleme yaparken `FILEFLAGS` anahtarını **sürüm bilgisi** Düzenleyicisi seçeneğinde, ayarlayamıyor **hata ayıklama**, **özel derleme**, veya **özel Derleme** özellikleri (içinde **özellikleri** pencere) .rc dosyası için:
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+   - **Sürüm bilgisi** Düzenleyicisi kümeleri **hata ayıklama** özelliğiyle bir `#ifdef` kaynak kodda temel alarak `_DEBUG` bayrağı oluşturun.
+
+   - Varsa `Private Build` anahtara sahip bir **değer** kümesinde **sürüm bilgisi** tablosundaki karşılık gelen **özel derleme** özelliği (içinde **özellikleri**  pencere) için `FILEFLAGS` anahtar olacaktır **True**. Varsa **değer** olan özelliği boş olacaktır **False**. Benzer şekilde, **özel yapı** anahtarı (içinde **sürüm bilgisi** tablo) bağlıdır **özel yapı** özelliği `FILEFLAGS` anahtarı.
+
+Dize blok bilgi dizisini tıklayarak sıralayabilirsiniz **anahtarı** veya **değer** sütun başlıkları. Bu başlıkları seçili sıra bilgilerini otomatik olarak yeniden düzenleyin.
+
+## <a name="to-add-version-information-for-another-language-new-version-info-block"></a>(Yeni sürüm bilgi bloğu) başka bir dil için sürüm bilgileri ekleme
+
+1. Sürüm bilgileri kaynağında çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+
+1. İçinde sürüm bilgileri tabloya sağ tıklayıp seçin **yeni sürüm bilgi bloğu** kısayol menüsünden.
+
+   Bu komut bir ek bilgi bloğu geçerli sürüm bilgileri kaynağında için ekler ve karşılık gelen özelliklerini açar [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+
+1. İçinde **özellikleri** penceresinde ilgili dili seçin ve karakter kümesi için yeni bir blok.
+
+## <a name="to-delete-a-version-information-block"></a>Sürüm bilgi bloğu silmek için
+
+1. Sürüm bilgileri kaynağında simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+
+1. Ardından silmek istediğiniz blok başlığına sağ tıklayarak **sürüm bilgi bloğunu silme** kısayol menüsünden.
+
+   Bu komut, seçilen üst bilgi siler ve sürüm bilgileri geri kalanını dokunmaz. Eylemi geri alamazsınız.
+
+## <a name="to-access-version-information-from-within-your-program"></a>Programınızdan sürüm bilgilerine erişmek için
+
+Programınızdan sürüm bilgilerine erişmek istiyorsanız, kullanmanız [GetFileVersionInfo](/windows/desktop/api/winver/nf-winver-getfileversioninfoa) işlevi ve [VerQueryValue](/windows/desktop/api/winver/nf-winver-verqueryvaluea) işlevi.
+
+   > [!NOTE]
+   > Kullanırken **sürüm bilgisi** düzenleyicisinde birçok örneği sağ kaynağa özgü komutların kısayol menüsünü görüntüleyin. Örneğin, bir blok üstbilgisi girişine işaret ederken seçin, kısayol menüsünü gösterir **yeni sürüm blok bilgisi** ve **sürüm blok bilgisi silme** komutları.
 
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
-[Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+[Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
+[Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
