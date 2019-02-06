@@ -4,13 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC symbols
 - symbols [C++], MFC
+- MFC database programming symbols
+- symbols [C++], MFC
+- databases [C++], MFC programming model
+- Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 2ad7b7cb43e28ac4d3d0e0e3c0c7d7c755f1cb11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf97ba0c4a6d29dfa0a3341f421da609b0c7ee70
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592630"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55764070"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 
@@ -24,7 +28,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 #include <afxcmn.h>      //MFC support for Windows common controls.
 ```
 
-Üst bilgi dosyaları, MFC ortak değerleri için Sembol kimliği değerlerini içerir. Bu simgeleri, yalnızca bir MFC projesinde çalışırken kullanılabilir. Not AFX_ önek standart sembol adı önekleri tarafından izlenir.
+Üst bilgi dosyaları, MFC ortak değerleri için Sembol kimliği değerlerini içerir. Bu simgeleri, yalnızca bir MFC projesinde çalışırken kullanılabilir. AFX_ önek standart sembol adı önekleri tarafından izlenir.
 
 |||
 |-|-|
@@ -81,7 +85,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDP_ASK_TO_SAVE|AFX_IDP_ASK_TO_UPDATE|
 |AFX_IDP_BAD_VERB|AFX_IDP_COMMAND_FAILURE|
 |AFX_IDP_DAO_BADBINDINFO|AFX_IDP_DAO_COLUMNUNAVAILABLE|
-|AFX_IDP_DAO_DFX_BIND|AFX_IDP_DAO_ENGINE_ BAŞLATMA|
+|AFX_IDP_DAO_DFX_BIND|AFX_IDP_DAO_ENGINE_ INITIALIZATION|
 |AFX_IDP_DAO_OBJECT_NOT_OPEN|AFX_IDP_DAO_ROWTOOSHORT|
 |AFX_IDP_DLL_BAD_VERSION|AFX_IDP_DLL_LOAD_FAILED|
 |AFX_IDP_E_BADFILEMODE|AFX_IDP_E_BADFILENAME|
@@ -177,7 +181,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDS_LINKSOURCE_FORMAT|AFX_IDS_MANUAL|
 |AFX_IDS_MDICHILD|AFX_IDS_MEMORY_EXCEPTION|
 |AFX_IDS_METAFILE_FORMAT|AFX_IDS_MINI YAZI TİPİ|
-|AFX_IDS_NOT_DOCOBJECT|AFX_IDS_NOT_SUPPORTED_ ÖZEL DURUMU|
+|AFX_IDS_NOT_DOCOBJECT|AFX_IDS_NOT_SUPPORTED_ EXCEPTION|
 |AFX_IDS_OBJ_TITLE_INPLACE|AFX_IDS_OBJECT_MENUITEM|
 |AFX_IDS_OCC_SCALEUNITS_PIXELS|AFX_IDS_ONEPAGE|
 |AFX_IDS_OPENFILE|AFX_IDS_PASTELINKEDTYPE|
@@ -207,11 +211,74 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDS_UPDATING_ITEMS|AFX_IDS_USER_EXCEPTION|
 |AFX_IDS_VERB_EDIT|AFX_IDS_VERB_PROPERTIES|
 
+## <a name="mfc-database-programming-symbols"></a>MFC veritabanı programlama sembolleri
+
+Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projesinde görünür. Bunlar, SQL sunucuları ve veritabanı programlama MFC bağlantıyı destekler.
+
+|||
+|-|-|
+|AFX_IDP_SQL_API_CONFORMANCE|AFX_IDP_SQL_BOOKMARKS_ NOT_ENABLED|
+|AFX_IDP_SQL_BOOKMARKS_ NOT_SUPPORTED|AFX_IDP_SQL_CONNECT_FAIL|
+|AFX_IDP_SQL_DATA_TRUNCATED|AFX_IDP_SQL_DYNAMIC_CURSOR_ NOT_SUPPORTED|
+|AFX_IDP_SQL_DYNASET_ NOT_SUPPORTED|AFX_IDP_SQL_EMPTY_COLUMN_LIST|
+|AFX_IDP_SQL_FIELD_NOT_FOUND|AFX_IDP_SQL_FILED_SCHEMA_ MISMATCH|
+|AFX_IDP_SQL_ILLEGAL_MODE|AFX_IDP_SQL_INCORRECT_ODBC|
+|AFX_IDP_SQL_LOCK_MODE_ NOT_SUPPORTED|AFX_IDP_SQL_MULTIPLE_ ROWS_AFFECTED|
+|AFX_IDP_SQL_NO_CURRENT_RECORD|AFX_IDP_SQL_NO_DATA_FOUND|
+|AFX_IDP_SQL_NO_POSITIONED_ UPDATES|AFX_IDP_SQL_NO_ROWS_AFFECTED|
+|AFX_IDP_SQL_ODBC_LOAD_FAILED|AFX_IDP_SQL_ODBC_V2_REQUIRED|
+|AFX_IDP_SQL_RECORDSET_ FORWARD_ONLY|AFX_IDP_SQL_RECORDSET_READONLY|
+|AFX_IDP_SQL_ROW_FETCH|AFX_IDP_SQL_ROW_UPDATE_ NOT_SUPPORTED|
+|AFX_IDP_SQL_SNAPSHOT_ NOT_SUPPORTED|AFX_IDP_SQL_SQL_CONFORMANCE|
+|AFX_IDP_SQL_SQL_NO_TOTAL|AFX_IDP_SQL_UPDATE_DELETE_FAILED|
+
+## <a name="mfc-windows-programming-symbols"></a>MFC Windows programlama sembolleri
+
+Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler menülerle kullanılır. Menülerde ile çalışırken **Menü Düzenleyici**, bu simgeler görünür **özellik penceresi** ortak menü komutları ile ilişkili. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+
+||||
+|-|-|-|
+|ID_APP_ABOUT|ID_APP_EXIT|ID_APPLY_NOW|
+|ID_CONTEXT_HELP|ID_DEFAULT_HELP|ID_EDIT_CLEAR|
+|ID_EDIT_CLEAR_ALL|ID_EDIT_COPY|ID_EDIT_CUT|
+|ID_EDIT_FIND|ID_EDIT_PASTE|ID_EDIT_PASTE_LINK|
+|ID_EDIT_PASTE_SPECIAL|ID_EDIT_REDO|ID_EDIT_REPEAT|
+|ID_EDIT_REPLACE|ID_EDIT_SELECT_ALL|ID_EDIT_UNDO|
+|ID_FILE_CLOSE|ID_FILE_MRU_FILE1|ID_FILE_MRU_FILE10|
+|ID_FILE_MRU_FILE11|ID_FILE_MRU_FILE12|ID_FILE_MRU_FILE13|
+|ID_FILE_MRU_FILE14|ID_FILE_MRU_FILE15|ID_FILE_MRU_FILE16|
+|ID_FILE_MRU_FILE2|ID_FILE_MRU_FILE3|ID_FILE_MRU_FILE4|
+|ID_FILE_MRU_FILE5|ID_FILE_MRU_FILE6|ID_FILE_MRU_FILE7|
+|ID_FILE_MRU_FILE8|ID_FILE_MRU_FILE9|ID_FILE_MRU_FIRST|
+|ID_FILE_MRU_LAST|ID_FILE_NEW|ID_FILE_NEW_FRAME|
+|ID_FILE_OPEN|ID_FILE_PAGE_SETUP|ID_FILE_PRINT|
+|ID_FILE_PRINT_DIRECT|ID_FILE_PRINT_PREVIEW|ID_FILE_PRINT_SETUP|
+|ID_FILE_SAVE|ID_FILE_SAVE_AS|ID_FILE_SAVE_COPY_AS|
+|ID_FILE_SEND_MAIL|ID_FILE_UPDATE|ID_FORMAT_FONT|
+|ID_HELP|ID_HELP_FINDER|ID_HELP_INDEX|
+|ID_HELP+USING|ID_INDICATOR_CAPS|ID_INDICATOR_EXT|
+|ID_INDICATOR_KANA|ID_INDICATOR_NUM|ID_INDICATOR_OVR|
+|ID_INDICATOR_REC|ID_INDICATOR_SCRL|ID_NEXT_PANE|
+|ID_OLE_EDIT_CHANGE_ICON|ID_OLE_EDIT_CONVERT|ID_OLE_EDIT_LINKS|
+|ID_OLE_EDIT_PROPERTIES|ID_OLE_INSERT_NEW|ID_OLE_VERB_FIRST|
+|ID_PREV_PANE|ID_REC_FIRST|ID_RECORD_LAST|
+|ID_RECORD_NEXT|ID_RECORD_PREV|ID_SEPARATOR|
+|ID_VIEW_AUTOARRANGE|ID_VIEW_BYNAME|ID_VIEW_DETAILS|
+|ID_VIEW_LARGEICON|ID_VIEW_LINEUP|ID_VIEW_LIST|
+|ID_VIEW_REBAR|ID_VIEW_SMALLICON|ID_VIEW_STATUS_BAR|
+|ID_VIEW_TOOLBAR|ID_WINDOW_ARRANGE|ID_WINDOW_CASCADE|
+|ID_WINDOW_NEW|ID_WINDOW_SPLIT|ID_WINDOW_TILE_HORIZ|
+|ID_WINDOW_TILE_VERT|ID_WIZBACK|ID_WIZFINISH|
+|ID_WIZNEXT|IDABORT|IDC_STATIC|
+|IDCANCEL|IDD_ABOUTBOX|IDIGNORE|
+|IDNO|IDOK|IDP_OLE_INIT_FAILED|
+|IDRETRY|IDYES||
+
 ## <a name="requirements"></a>Gereksinimler
 
 MFC
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
 [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

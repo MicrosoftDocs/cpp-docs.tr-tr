@@ -1,14 +1,14 @@
 ---
 title: Visual Studio'da C++ Linux iş yükünü yükleyin
 description: İndirme, yükleme ve Linux iş yükünü Visual Studio'da C++ için Kurulum açıklar.
-ms.date: 10/12/2018
+ms.date: 02/06/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 2fa4036ece6dd161c73a5176740870c5593f4669
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c01c8ddeeb8439a7610c0f6c7c11b608ab3675d8
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441931"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763898"
 ---
 # <a name="download-install-and-setup-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükünü Kurulumu
 
@@ -16,7 +16,7 @@ Visual Studio IDE içinde Windows oluşturmak, düzenlemek ve bir Linux fiziksel
 
 ## <a name="visual-studio-setup"></a>Visual Studio Kurulumu
 
-1. Windows Arama kutusuna "Visual Studio yükleyicisi" yazın: ![Windows Arama kutusuna](media/visual-studio-installer-search.png)
+1. "Visual Studio yükleyicisi" Windows Arama kutusuna yazın: ![Windows Arama kutusuna](media/visual-studio-installer-search.png)
 2. Yükleyici altında arayın **uygulamaları** sonuçlanır ve çift tıklayın. Yükleyici açıldığında seçin **Değiştir**ve ardından **iş yükleri** sekmesi. Ekranı aşağı kaydırarak **diğer araç takımları** seçip **C++ ile Linux geliştirme** iş yükü.
 
    ![Linux geliştirme iş yükü için Visual C++](media/linuxworkload.png)
@@ -53,7 +53,7 @@ Fedora çalıştıran hedef makine **dnf** Yükleyici paketi. İndirmek için **
 
 1. Linux bilgisayarınızda bir kabuk isteminde çalıştırın:
 
-   `sudo dnf install openssh-server g++ gdb gdbserver zip`
+   `sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip`
 
    Sudo komutu nedeniyle, kök parolası istenebilir.  Bu durumda, girin ve devam edin. İşlem tamamlandıktan sonra gerekli hizmetler ve Araçlar yüklenir.
 

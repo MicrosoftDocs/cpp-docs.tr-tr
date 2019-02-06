@@ -1,6 +1,6 @@
 ---
 title: '&lt;bellek&gt; işlevleri'
-ms.date: 11/04/2016
+ms.date: 02/06/2019
 f1_keywords:
 - memory/std::addressof
 - memory/std::align
@@ -74,12 +74,12 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.openlocfilehash: e0a62b7afd215a9cad62ba1d0469f68459e6f403
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 71cae7bfbb8bfc0bef79a087d4450505c2880e5c
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519184"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763940"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 
@@ -647,13 +647,13 @@ Yeni bir dizi için alan ayırmak için öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk aşırı yükleme tek nesneler için kullanılır, ikinci aşırı yükleme diziler için çağrılır ve üçüncü aşırı yükleme engeller tür bağımsız değişkeni bir dizi boyutu belirtmelerini engeller (make_unique\<T [N] >); bu oluşturma desteklenmiyor Geçerli standardına göre. Kullanırken `make_unique` oluşturmak için bir `unique_ptr` diziye bir dizi öğelerini ayrı ayrı başlatmanız gerekir. Bu aşırı yükleme düşünüyorsanız belki de daha iyi bir seçenek kullanmaktır bir [std::vector](../standard-library/vector-class.md).
+İlk aşırı yükleme tek nesneler için kullanılır, ikinci aşırı yükleme diziler için çağrılır ve üçüncü aşırı yükleme, tür bağımsız değişkeni bir dizi boyutu belirtmelerini engeller. (make_unique\<T [N] >); Bu yapı, geçerli tarafından desteklenmiyor Standart. Kullanırken `make_unique` oluşturmak için bir `unique_ptr` diziye bir dizi öğelerini ayrı ayrı başlatmanız gerekir. Bu aşırı yükleme düşünüyorsanız belki de daha iyi bir seçenek kullanmaktır bir [std::vector](../standard-library/vector-class.md).
 
 Çünkü `make_unique` dikkatle olan özel durum güvenliği için uygulanan kullanmanızı öneririz `make_unique` doğrudan çağırmak yerine `unique_ptr` oluşturucular.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `make_unique`. Daha fazla örnek için bkz. [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md).
+Aşağıdaki örnek nasıl kullanılacağını gösterir `make_unique`. Daha fazla örnek için bkz. [nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md).
 
 [!code-cpp[stl_smart_pointers#214](../cpp/codesnippet/CPP/memory-functions_1.cpp)]
 

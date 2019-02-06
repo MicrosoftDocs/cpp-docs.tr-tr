@@ -20,12 +20,12 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 6a4320b1f2c5d0c47dac64c486e7fb70ea5991bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a6de35f9e3154b6d182eddcc51fd7a14cbd0dd5
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481828"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55764018"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -476,7 +476,7 @@ Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_Fi
 
   **Üst bilgi** afxdao.h
 
-  ## <a name="nameddxfieldslidera--ddxfieldslider"></a>name="ddx_fieldslider"></a>  DDX_FieldSlider
+  ## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
 `DDX_FieldSlider` İşlevi kayıt görünümü bir kaydırıcı denetimi thumb konumunu eşitler ve **int** alan veri üyesi kayıt görünümü ile (veya seçtiğiniz için eşlemek için hangi tamsayı değişkeni) ilişkili bir kayıt kümesi.
 
 ### <a name="syntax"></a>Sözdizimi
