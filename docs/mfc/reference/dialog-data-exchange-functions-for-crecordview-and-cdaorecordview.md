@@ -20,12 +20,12 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 7a6de35f9e3154b6d182eddcc51fd7a14cbd0dd5
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 36341a1b122e6dcb1c475f2f95e03d384c3a034f
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764018"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850041"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -527,10 +527,6 @@ Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_Fi
 
 **Başlık:** afxdao.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)
-
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
 `DDX_FieldText` İşlevi aktarımını yöneten **int**, **kısa**, **uzun**, DWORD, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **çift**, **BOOL**, veya **bayt** düzenleme kutusu denetimi alan veri üyeleri bir kayıt kümesi arasında verileri.
@@ -679,4 +675,4 @@ Aşağıdaki `DoDataExchange` için işlev bir [CRecordView](../../mfc/reference
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)

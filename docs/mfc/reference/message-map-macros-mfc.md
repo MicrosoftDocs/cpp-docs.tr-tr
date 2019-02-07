@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 6c6364dcf5d558bcdd25a2957721df1863d1f73f
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 09c023f6dcbf1fd33a0caac17af75f449d80c509
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893671"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850278"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -258,11 +258,6 @@ Daha fazla bilgi için bkz. Teknik Not [TN006: İleti eşlemeleri] tm006-message
 
 Üst bilgi dosyası: afxmsg_.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: İleti eşlemeleri](../tn006-message-maps.md)
-
 ## <a name="on_control"></a>  ON_CONTROL
 
 Hangi işlev bir özel denetim bildirim iletisini işleyecek gösterir.
@@ -483,11 +478,6 @@ Düzen geri alma komutu gönderir. Halinde uygulanır:
 
 **Başlık:** afxdocob.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[COleCmdUI Sınıfı](colecmdui-class.md)<br/>
-[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)
-
 ## <a name="on_registered_message"></a>  ON_REGISTERED_MESSAGE
 
 Windows `RegisterWindowMessage` işlevi, sistem genelinde benzersiz olması garanti yeni bir pencere iletisi tanımlamak için kullanılır.
@@ -525,11 +515,6 @@ END_MESSAGE_MAP()
 ### <a name="requirements"></a>Gereksinimler
 
 **Header:** afxmsg_.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
-[Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
 
@@ -610,10 +595,6 @@ Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](..
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxole.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CCmdUI Sınıfı](ccmdui-class.md)
 
 ## <a name="on_command_range"></a>  ON_COMMAND_RANGE
 
@@ -736,3 +717,13 @@ Bir dizi Denetim kimliklerinin işleyici işlevlerini uygulama ile ilgili daha f
 ### <a name="requirements"></a>Gereksinimler
 
 **Header:** afxmsg_.h
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
+[TN006: İleti eşlemeleri](../tn006-message-maps.md)<br/>
+[COleCmdUI Sınıfı](colecmdui-class.md)<br/>
+[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)<br/>
+[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
+[Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)<br/>
+[CCmdUI Sınıfı](ccmdui-class.md)

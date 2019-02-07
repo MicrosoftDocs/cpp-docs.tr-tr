@@ -23,12 +23,12 @@ helpviewer_keywords:
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-ms.openlocfilehash: 8c8ce8bdf8ab40cae45ecec9c4b182bdf3d6bc82
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22a63002c900d69e8a7706a54acedf0b4b4f6376
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563988"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850416"
 ---
 # <a name="malloca"></a>_malloca
 
@@ -51,13 +51,13 @@ Yığından ayrılacak bayt sayısı.
 
 **_Malloca** rutin döndürür bir **void** nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti ayrılan alanı işaretçisi. Varsa *boyutu* 0 ' dır **_malloca** sıfır uzunluklu öğeyi ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-Alanı ayırdığınızda, bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işleme kullanmak yerine, kullanmanız gerekir [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
+Varsa *boyutu* büyüktür **_ALLOCA_S_THRESHOLD**, ardından **_malloca** yığında ayırmaya çalışır ve alanı ayırdığınızda, bir null işaretçi döndürür. Varsa *boyutu* küçüktür veya eşittir **_ALLOCA_S_THRESHOLD**, ardından **_malloca** yığını ve yığın taşması özel ayrılamadı denemeleri alanı algılanamıyorsa oluşturulur ayrılması. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işleme kullanmak yerine, kullanmanız gerekir [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) bu özel durumu yakalamak için (SEH).
 
 ## <a name="remarks"></a>Açıklamalar
 
 **_malloca** ayırır *boyutu* bayt program yığınına veya belirli bir boyuta tarafından verilen bayt cinsinden istek aşarsa, yığın **_ALLOCA_S_THRESHOLD**. Arasındaki fark **_malloca** ve **_alloca** olan **_alloca** yığında boyutundan bağımsız olarak her zaman ayırır. Farklı **_alloca**, hangi gerektirmez veya buna izin vermek için bir çağrı **ücretsiz** ayrılmış şekilde, belleği boşaltmak için **_malloca** gerektirir [_freea](freea.md)belleği boşaltmak için. Hata ayıklama modunda **_malloca** her zaman yığından belleği ayırır.
 
-Açıkça çağırmak için kısıtlamalar **_malloca** bir özel durum işleyicisi (EH). X86 sınıfı işlemciler üzerinde çalışan EH düzenleri kendi bellek çerçevede çalışmak: yığın işaretçisi kapsayan işlevin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirdikleri görevleri. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_malloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
+Açıkça çağırmak için kısıtlamalar **_malloca** bir özel durum işleyicisi (EH). Kendi bellek çerçevede x86 sınıfı işlemciler üzerinde çalışan EH düzenleri çalışır: Kapsayan işlevin yığın işaretçisi geçerli konumuna bağlı olmayan bellek alanı bunlar görevlerini gerçekleştirin. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_malloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
 
 - Windows NT SEH özel durum filtre ifadesinin: **__except** (`_malloca ()` )
 

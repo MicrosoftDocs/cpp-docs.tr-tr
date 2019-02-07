@@ -6,12 +6,12 @@ helpviewer_keywords:
 - event map macros [MFC]
 - interface map macros [MFC]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
-ms.openlocfilehash: cd1f38236baf2caca9f2a2a426f28f797291fb13
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8f48b916f7130551fc8d4da5bb2ebc75d8d728d5
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524657"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850209"
 ---
 # <a name="delegate-and-interface-map-macros"></a>Temsilci ve arabirim eşleme makroları
 
@@ -50,10 +50,6 @@ Bu makro bir temsilci harita oluşturma temsilci girişlerinin listesini başlan
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** msclr\event.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
 ##  <a name="begin_interface_map"></a>BEGIN_INTERFACE_MAP
 
@@ -102,17 +98,13 @@ Komut kimliği.
 
 Bu temsilci, geri çağırma yöntemleri ile bir komut kaynak kaydeder. Komut kaynak nesnesine bir temsilci eklediğinizde, geri çağırma yöntemi, belirtilen kaynaktan gelen komutların için bir işleyici haline gelir.
 
-Daha fazla bilgi için [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
+Daha fazla bilgi için [nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
 
 ##  <a name="commanduihandler"></a>Commanduıhandler
 
@@ -142,11 +134,6 @@ Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Window
 
 **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
-[CommandHandler](#commandhandler)
-
 ##  <a name="end_delegate_map"></a>END_DELEGATE_MAP
 
 Bir temsilci harita sona erer.
@@ -165,10 +152,6 @@ Bu makro, bir temsilci harita oluşturma temsilci girişlerinin listesini sonunu
 
 **Başlık:** msclr\event.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
-
 ##  <a name="end_interface_map"></a>END_INTERFACE_MAP
 
 Arabirim eşlemesini uygulama dosyasında sona erer.
@@ -186,11 +169,6 @@ Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxwin.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[BEGIN_INTERFACE_MAP](#begin_interface_map)
 
 ##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
 
@@ -230,12 +208,6 @@ END_DELEGATE_MAP()
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** msclr\event.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[MAKE_DELEGATE](#make_delegate)<br/>
-[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](#end_delegate_map)
 
 ##  <a name="interface_part"></a>INTERFACE_PART
 
@@ -306,9 +278,8 @@ void CMyView::OnInitialUpdate()
 
 **Başlık:** msclr\event.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](#end_delegate_map)<br/>
-[EVENT_DELEGATE_ENTRY](#event_delegate_entry)
-
+[Nasıl yapılır: Yerel C++ Sınıflarından Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)<br/>
+[Nasıl yapılır: Windows Forms Denetimine Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>

@@ -4,12 +4,12 @@ ms.date: 04/03/2017
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 66c3477c7f2901cd9986a8b52e3d9287191e7b4b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 1d0cbd1f702a1d26dd2eaafd88efcfd61f52ff78
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329598"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850222"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -85,10 +85,6 @@ Modül durumları ve MFC ile ilgili daha fazla bilgi için bkz: "Yönetme durumu
 
 **Başlık:** afxstat_.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[AfxGetStaticModuleState](#afxgetstaticmodulestate)
-
 ## <a name="a-nameafxoleinitmodulea-afxoleinitmodule"></a><a name="afxoleinitmodule"><a/> AfxOleInitModule
 
 Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN OLE destek için Normal MFC DLL içinde bu işlevi çağırın `CWinApp::InitInstance` MFC OLE DLL işlevi.
@@ -109,11 +105,6 @@ Bir OLE denetim oluşturma ve kullanıyorsanız `COleControlModule`, değil, ça
 
 **Üst bilgi**: \<afxdll_.h >
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
-
 ## <a name="afxnetinitmodule"></a>  AfxNetInitModule
 
 Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN gelen MFC yuva desteği sağlamak için bu işlev çağrısı, Normal MFC DLL içinde ekleyin `CWinApp::InitInstance` yuva MFC DLL işlevi.
@@ -131,11 +122,6 @@ MFC yuva DLL bir MFC uzantılı DLL dosyasıdır; bir MFC uzantılı DLL içine 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** \<afxdll_.h >
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
 
 ## <a name="afxgetambientactctx"></a> AfxGetAmbientActCtx
 
@@ -162,13 +148,6 @@ Bir modül bağlamında, bildirimindeki modülü kaynaklar genellikle katıştı
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxcomctl32.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AFX_MANAGE_STATE](#afx_manage_state)<br/>
-[MFC Modüllerinin Durum Verisini Yönetme](../managing-the-state-data-of-mfc-modules.md)<br/>
-[AfxSetAmbientActCtx](#setambientactctx)
 
 ## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
 
@@ -259,11 +238,6 @@ MFC uzantısı DLL'leri iki şeyler gerek kendi `DllMain` işlevi:
 
 **Başlık:** afxdll_.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AfxTermExtensionModule](#afxtermextensionmodule)
-
 ## <a name="afxsetambientactctx"></a>  AfxSetAmbientActCtx
 
 MFC WinSxS davranışını etkileyen modül başına durumunu bayrağını ayarlamak için bu işlevi kullanın.
@@ -298,13 +272,6 @@ BOOL CMFCListViewApp::InitInstance()
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxcomctl32.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AfxGetAmbientActCtx](#afxgetambientactctx)<br/>
-[AFX_MANAGE_STATE](#afx_manage_state)<br/>
-[MFC Modüllerinin Durum Verisini Yönetme](../managing-the-state-data-of-mfc-modules.md)
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
@@ -366,7 +333,8 @@ MFC uzantısı DLL'leri çağırmak için gereken [AfxInitExtensionModule](#afxi
 
 **Başlık:** afxdll_.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AfxInitExtensionModule](#afxinitextensionmodule)
+[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
+[MFC Modüllerinin Durum Verisini Yönetme](../managing-the-state-data-of-mfc-modules.md)<br/>

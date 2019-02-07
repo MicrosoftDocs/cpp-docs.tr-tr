@@ -1,18 +1,18 @@
 ---
 title: / Validate-Charset (uyumlu karakterler için Doğrula)
-ms.date: 11/04/2016
+ms.date: 02/06/2019
 f1_keywords:
 - /validate-charset
 - validate-charset
 helpviewer_keywords:
 - /validate-charset compiler option
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
-ms.openlocfilehash: 243d225f5acde0c6099050539687726ea082c898
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69b43b603ef4711e1acc0bd612e0e1c949722dc9
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590495"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850084"
 ---
 # <a name="validate-charset-validate-for-compatible-characters"></a>/ Validate-Charset (uyumlu karakterler için Doğrula)
 
@@ -38,7 +38,7 @@ Visual Studio, UTF-8 iç karakter kaynak karakter kümesi ve yürütme karakter 
 
 1. Genişletin **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.
 
-1. İçinde **Gelişmiş Seçenekler**, ekleme **/Validate-Charset** seçenek ve tercih edilen kodlamayı belirtin.
+1. İçinde **ek seçenekler**, ekleme **/Validate-Charset** seçenek ve tercih edilen kodlamayı belirtin.
 
 1. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 

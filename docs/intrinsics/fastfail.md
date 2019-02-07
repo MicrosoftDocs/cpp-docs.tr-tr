@@ -2,12 +2,12 @@
 title: __fastfail
 ms.date: 11/04/2016
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-ms.openlocfilehash: b05c86148014a4a34d852d1a00caeb71ee136548
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e96d981be5c5186d6cc472cc8f4dffcbf1c2b7bf
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521391"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849482"
 ---
 # <a name="fastfail"></a>__fastfail
 
@@ -41,6 +41,7 @@ Dahili olarak `__fastfail` mimariye özgü çeşitli mekanizmalar kullanılarak 
 |x86|int 0x29|ecx|
 |X64|int 0x29|rcx|
 |ARM|0xDEFB opcode|r0|
+|ARM64|Opcode 0xF003|x0|
 
 Hızlı başarısız istek bağımsızdır ve bu normalde yalnızca iki yönergeleri yürütmek için gerektirir. Hızlı başarısız istek yürütüldü sonra çekirdek, daha sonra uygun tedbiri alır. Kullanıcı modu kodunda var. yönerge işaretçisini ötesinde bellek bağımlılık hızlı başarısız olayı oluşturulduğunda Ciddi Bellek Bozulması olsa bile bu ve güvenilirliği en üst düzeye çıkarır.
 
@@ -56,7 +57,7 @@ Windows 8'de yerel hızlı başarısız mekanizması desteği başladı. Erişim
 
 |İç|Mimari|
 |---------------|------------------|
-|`__fastfail`|x86, x 64, ARM|
+|`__fastfail`|x86, x64, ARM, ARM64|
 
 **Üst bilgi dosyası** \<intrin.h >
 

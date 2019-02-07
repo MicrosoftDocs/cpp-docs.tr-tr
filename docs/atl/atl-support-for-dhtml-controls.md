@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DHTML controls, ATL support
 - DHTML controls
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
-ms.openlocfilehash: 321c8c14f2049622b43741cfa9d856cb00e2cd61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0aa7c7d997ba00495f0ed05ad5e0dfc4b5773a3
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638691"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849413"
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML Denetimleri İçin ATL Desteği
 
@@ -21,7 +21,7 @@ ATL kullanarak dinamik HTML (DHTML) özelliğine sahip bir denetim oluşturabili
 
 - , HTML, DHTML denetimi kullanıcı arabirimini (UI) kullanarak belirtir.
 
-- WebBrowser nesne ve onun yöntemleri kendi arabirimi üzerinden erişir [Iwebbrowser2](https://msdn.microsoft.com/library/aa752127.aspx).
+- WebBrowser nesne ve onun yöntemleri kendi arabirimi üzerinden erişir [Iwebbrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\)).
 
 - C++ kodu HTML arasındaki iletişimi yönetir.
 

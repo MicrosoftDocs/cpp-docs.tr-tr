@@ -25,12 +25,12 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: a97f914905c2f98bc948b76e1d79d4af0f5dbadd
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 2a076b666577920c940413fba4951f7de5f24fc6
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327505"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850265"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 
@@ -721,7 +721,7 @@ Kodlanmış veri tutabilen bir arabellek için gereken karakter sayısı *nSrcLe
 
 Bu uuencoding uygulama POSIX P1003.2b/D11 izler.
 
-### <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)
+[Kavramları](../active-template-library-atl-concepts.md)<br/>
+[ATL COM Masaüstü Bileşenleri](../atl-com-desktop-components.md)

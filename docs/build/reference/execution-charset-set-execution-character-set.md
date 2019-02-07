@@ -1,6 +1,6 @@
 ---
 title: / Execution-Charset (yürütme karakter kümesini Ayarla)
-ms.date: 11/04/2016
+ms.date: 02/06/2019
 f1_keywords:
 - execution-charset
 - /execution-charset
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /execution-charset compiler option
 - -execution-charset compiler option
 ms.assetid: 0e02f487-2236-45bc-95f3-5760933a8f96
-ms.openlocfilehash: 3535b60d7aad50f7efc5d1f32726560431ac86a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 13ff185cf7026f1b42f732aae26c11e98d13e9a2
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663976"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849615"
 ---
 # <a name="execution-charset-set-execution-character-set"></a>/ Execution-Charset (yürütme karakter kümesini Ayarla)
 
@@ -47,7 +47,7 @@ Kaynak karakter kümesi hem yürütme karakter kümesini UTF-8'e ayarlamak istiy
 
 1. Genişletin **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.
 
-1. İçinde **Gelişmiş Seçenekler**, ekleme **/Execution-Charset** seçenek ve tercih edilen kodlamayı belirtin.
+1. İçinde **ek seçenekler**, ekleme **/Execution-Charset** seçenek ve tercih edilen kodlamayı belirtin.
 
 1. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 

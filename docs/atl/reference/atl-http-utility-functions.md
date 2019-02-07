@@ -2,12 +2,12 @@
 title: ATL HTTP yardımcı işlevleri
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: 43813d91daf572ad6094a5a9fe070234e5086593
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be38dc8b8547574ea47021f8b14f21060a0755f0
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481724"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849654"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı işlevleri
 
@@ -75,10 +75,6 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 ### <a name="remarks"></a>Açıklamalar
 
 Geçerli sürümü gibi davranır [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
 
 ## <a name="atlcombineurl"></a> AtlCombineUrl
 
@@ -287,5 +283,6 @@ RFC 2616'da tanımlanan HTTP tarih saat almak için bir dize değişkeni başvur
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)
+[Kavramları](../active-template-library-atl-concepts.md)<br/>
+[ATL COM Masaüstü Bileşenleri](../atl-com-desktop-components.md)<br/>
+[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-ms.openlocfilehash: 06153a72ce6ed6e5422022255eec333110709778
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 374618aba297fb2c055ce02f93d0c7c93b38dc06
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618315"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850183"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
 
@@ -278,16 +278,11 @@ Bir başvuru bir [CWinFormsControl sınıfı](cwinformscontrol-class.md) nesne.
 
 `DDX_ManagedControl` çağrıları [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanım `DDX_ManagedControl` kaynak kimlikleri denetimleri oluşturmak için [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). Veri değişimi için Windows Forms denetimleri ile DDX/DDV işlevler kullanın gerekmez.
 
-Daha fazla bilgi için [nasıl yapılır: yapmak DDX/DDV veri bağlaması Windows Forms ile](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).
+Daha fazla bilgi için [nasıl yapılır: Windows Forms ile DDX/DDV veri bağlaması yapma](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxwinforms.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
-[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
 
 ##  <a name="ddx_ipaddress"></a>  Ddx_ıpaddress
 
@@ -656,5 +651,7 @@ DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Standart İletişim Kutusu Veri Doğrulama Rutinleri](../../mfc/reference/standard-dialog-data-validation-routines.md)<br/>
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Standart İletişim Kutusu Veri Doğrulama Rutinleri](standard-dialog-data-validation-routines.md)<br/>
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
+[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)

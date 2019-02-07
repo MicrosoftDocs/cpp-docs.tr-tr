@@ -20,12 +20,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: dbb243453b6d869082a4232b12b27f5510d84aa5
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: a4979ab7bbc0e396de5629fba1b86f3bfb602dcf
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657636"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850446"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -59,7 +59,7 @@ Ayrıca, C çalışma zamanı kitaplığı, Tanılama işlevleri, uygulamaların
 |[Emin olun ve ENSURE_VALID](#ensure)|Veri doğruluğunu doğrulamak için kullanın.|
 |[THIS_FILE](#this_file)|Derleniyor dosyasının adına genişletir.|
 |[İZLEME](#trace)|Sağlar `printf`-kitaplığı hata ayıklama sürümünü özelliği ister.|
-|[DOĞRULAYIN](#verify)|ASSERT benzer, ancak kitaplığı hata ayıklama sürümü olduğu gibi de yayın sürümünde ifade değerlendirir.|
+|[VERIFY](#verify)|ASSERT benzer, ancak kitaplığı hata ayıklama sürümü olduğu gibi de yayın sürümünde ifade değerlendirir.|
 
 ### <a name="mfc-general-diagnostic-variables-and-functions"></a>MFC genel tanılama değişkenlerin ve işlevlerin
 
@@ -75,9 +75,9 @@ Ayrıca, C çalışma zamanı kitaplığı, Tanılama işlevleri, uygulamaların
 |[AfxDumpStack](#afxdumpstack)|Geçerli yığın görüntüsü oluşturur. Bu işlev her zaman statik olarak bağlanır.|
 |[AfxEnableMemoryLeakDump](#afxenablememoryleakdump)|Bellek sızıntısı dökümü sağlar.|
 |[AfxEnableMemoryTracking](#afxenablememorytracking)|Açma ve kapatma izleme bellek kapatır.|
-|[Afxısmemoryblock](#afxismemoryblock)|Bir bellek bloğunu düzgün şekilde ayrıldığını doğrular.|
-|[Afxısvalidaddress](#afxisvalidaddress)|Bir bellek adresi aralığı programın sınırları içinde olduğunu doğrular.|
-|[Afxısvalidstring](#afxisvalidstring)|Bir dizeye bir işaretçi geçerli olup olmadığını belirler.|
+|[AfxIsMemoryBlock](#afxismemoryblock)|Bir bellek bloğunu düzgün şekilde ayrıldığını doğrular.|
+|[AfxIsValidAddress](#afxisvalidaddress)|Bir bellek adresi aralığı programın sınırları içinde olduğunu doğrular.|
+|[AfxIsValidString](#afxisvalidstring)|Bir dizeye bir işaretçi geçerli olup olmadığını belirler.|
 |[AfxSetAllocHook](#afxsetallochook)|Arama her bellek ayırmada bir işlevin sağlar.|
 
 ### <a name="mfc-object-diagnostic-functions"></a>MFC nesne Tanılama işlevleri
@@ -320,12 +320,6 @@ Makro ENSURE_ARG olun makrosu gibi davranır.
 
 **Başlık:** afx.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[DOĞRULAYIN](#verify)<br/>
-[ATLENSURE](#altensure)
-
 ## <a name="this_file"></a> THIS_FILE
 
 Derleniyor dosyasının adına genişletir.
@@ -355,12 +349,6 @@ static char THIS_FILE[] = __FILE__;
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afx.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[ASSERT](#assert)<br/>
-[DOĞRULAYIN](#verify)
 
 ##  <a name="trace"></a>  İZLEME
 
@@ -464,10 +452,6 @@ Program kodunuza çağırmamalıdır `AfxDump`, ancak bunun yerine çağırmalı
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afx.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CObject::Dump](cobject-class.md#dump)
 
 ##  <a name="afxmemdf"></a>  afxMemDF
 
@@ -581,10 +565,6 @@ Program kodunuza çağırmamalıdır `AfxDump`, ancak bunun yerine çağırmalı
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afx.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CObject::Dump](cobject-class.md#dump)
 
 ##  <a name="afxdumpstack"></a>  AfxDumpStack
 
@@ -940,6 +920,7 @@ Yığın, genel veya katıştırılmış nesneleri listelenmiş değil. İşaret
 
 [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[CObject::Dump](cobject-class.md#dump)

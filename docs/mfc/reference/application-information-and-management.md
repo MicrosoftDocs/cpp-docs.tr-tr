@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: c1e742d3320dae4140cc4886c47d34dbe9b6071f
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 6bdcf97c921dc45939ab9ddf18f1d624c2fd83b8
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178349"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850304"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 
@@ -30,15 +30,15 @@ Microsoft Foundation Class Kitaplığı, bu görevleri gerçekleştirmenize yard
 |[AfxFreeLibrary](#afxfreelibrary)|Yüklenen dinamik bağlantı kitaplığı (DLL) modülün başvuru sayısını azaltır; başvuru sayısı sıfır ulaştığında eşlenmemiş bir modüldür.|
 |[AfxGetApp](#afxgetapp)|Tek bir uygulama için bir işaretçi döndürür `CWinApp` nesne.|
 |[AfxGetAppName](#afxgetappname)|Uygulamanın adını içeren bir dize döndürür.|
-|[Afxgetınstancehandle](#afxgetinstancehandle)|Uygulamanın bu örneği temsil eden bir HINSTANCE döndürür.|
+|[AfxGetInstanceHandle](#afxgetinstancehandle)|Uygulamanın bu örneği temsil eden bir HINSTANCE döndürür.|
 |[AfxGetMainWnd](#afxgetmainwnd)|OLE dışı uygulamanızın "ana" geçerli pencere ya da yerinde çerçeve penceresini bir sunucu uygulaması için bir işaretçi döndürür.|
 |[AfxGetPerUserRegistration](#afxgetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını belirlemek için bu işlevi kullanın **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|
 |[AfxGetResourceHandle](#afxgetresourcehandle)|Uygulamanın varsayılan kaynaklar kaynağına bir HINSTANCE döndürür. Uygulamanın kaynaklarını doğrudan erişmek için bunu kullanın.|
 |[AfxGetThread](#afxgetthread)|Geçerli bir işaretçi alır [CWinThread](../../mfc/reference/cwinthread-class.md) nesne.|
-|[Afxınitrichedit](#afxinitrichedit)|Sürüm 1.0 zengin düzenleme denetiminden uygulama başlatır.|
-|[Afxınitrichedit2](#afxinitrichedit2)|Sürüm 2.0 ve sonraki zengin düzenleme denetimi uygulamanın başlatır.|
-|[Afxısextendedframeclass](#afxisextendedframeclass)|Verilen aralığında bir genişletilmiş çerçeve nesnesi olup olmadığını belirler.|
-|[Afxısmfctoolbar](#afxismfctoolbar)|Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.|
+|[AfxInitRichEdit](#afxinitrichedit)|Sürüm 1.0 zengin düzenleme denetiminden uygulama başlatır.|
+|[AfxInitRichEdit2](#afxinitrichedit2)|Sürüm 2.0 ve sonraki zengin düzenleme denetimi uygulamanın başlatır.|
+|[AfxIsExtendedFrameClass](#afxisextendedframeclass)|Verilen aralığında bir genişletilmiş çerçeve nesnesi olup olmadığını belirler.|
+|[AfxIsMFCToolBar](#afxismfctoolbar)|Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.|
 |[AfxKeyboardManager](#afxkeyboardmanager)|Genel işaretçisine [klavye manager](ckeyboardmanager-class.md).|
 |[AfxLoadLibrary](#afxloadlibrary)|DLL modülü eşler ve bir DLL işlevinin adresini almak için kullanılan bir tanıtıcı döndürür.|
 |[AfxMenuTearOffManager](#afxmenutearoffmanager)|Genel işaretçisine [bölme menü manager](cmenutearoffmanager-class.md).|
@@ -48,9 +48,9 @@ Microsoft Foundation Class Kitaplığı, bu görevleri gerçekleştirmenize yard
 |[AfxSetPerUserRegistration](#afxsetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|
 |[AfxSetResourceHandle](#afxsetresourcehandle)|Uygulamanın varsayılan kaynakları burada yüklenen HINSTANCE tanıtıcı ayarlar.|
 |[AfxShellManager](#afxshellmanager)|Genel işaretçisine [Kabuk yöneticisini](cshellmanager-class.md). |
-|[Afxsocketınit](#afxsocketinit)|Adlı bir `CWinApp::InitInstance` Windows Sockets başlatmak için geçersiz kılın.|
+|[AfxSocketInit](#afxsocketinit)|Adlı bir `CWinApp::InitInstance` Windows Sockets başlatmak için geçersiz kılın.|
 |[AfxUserToolsManager](#afxusertoolsmanager)|Genel işaretçisine [kullanıcı araçları Yöneticisi](cusertoolsmanager-class.md).|
-|[Afxwinınit](#afxwininit)|MFC tarafından sağlanan tarafından adlandırılan `WinMain` işlevi, bir parçası olarak [CWinApp](../../mfc/reference/cwinapp-class.md) MFC başlatmak için bir GUI tabanlı bir uygulama başlatma. MFC kullanan doğrudan konsol uygulamaları için çağrılmalıdır.|
+|[AfxWinInit](#afxwininit)|MFC tarafından sağlanan tarafından adlandırılan `WinMain` işlevi, bir parçası olarak [CWinApp](../../mfc/reference/cwinapp-class.md) MFC başlatmak için bir GUI tabanlı bir uygulama başlatma. MFC kullanan doğrudan konsol uygulamaları için çağrılmalıdır.|
 
 ##  <a name="afxbeginthread"></a>  AfxBeginThread
 
@@ -138,10 +138,6 @@ CContextMenuManager* afxContextMenuManager;
 
 **Başlık:** afxcontextmenumanager.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CContextMenuManager Sınıfı](ccontextmenumanager-class.md)
-
 ##  <a name="afxendthread"></a>  AfxEndThread
 
 Yürütülmekte olan iş parçacığını sonlandırmak için bu işlevi çağırın.
@@ -209,10 +205,6 @@ Modüller, bu sırada aranır:
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxwin.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)
 
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary
 
@@ -414,7 +406,7 @@ Yürütülmekte olan iş parçacığını işaretçi; bulunmazsa null değerini 
 
   **Üst bilgi** afxwin.h
 
-##  <a name="afxinitrichedit"></a>  Afxınitrichedit
+##  <a name="afxinitrichedit"></a>  AfxInitRichEdit
 
 Uygulama için zengin düzenleme denetimi (sürüm 1.0) başlatmak için bu işlevi çağırın.
 
@@ -436,7 +428,7 @@ Kitaplık zaten işlem için başlatılmamış ise bu işlev Ayrıca ortak denet
 
   **Üst bilgi** afxwin.h
 
-##  <a name="afxinitrichedit2"></a>  Afxınitrichedit2
+##  <a name="afxinitrichedit2"></a>  AfxInitRichEdit2
 
 Uygulama için zengin düzenleme denetimi (sürüm 2.0 ve üzeri) başlatmak için bu işlevi çağırın.
 
@@ -490,12 +482,7 @@ Bir işlev veya metot parametre bir genişletilmiş çerçeve penceresi olduğun
 
 **Başlık:** afxpriv.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CWnd Sınıfı](cwnd-class.md)<br/>
-[CFrameWndEx Sınıfı](cframewndex-class.md)
-
-## <a name="afxismfctoolbar"></a> Afxısmfctoolbar
+## <a name="afxismfctoolbar"></a> AfxIsMFCToolBar
 
 Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.
 
@@ -522,11 +509,6 @@ Bu yöntem döndürür `TRUE` varsa *pWnd* türetildiği `CMFCToolBar`. İşlev 
 
 **Başlık:** afxpriv.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CWnd Sınıfı](cwnd-class.md)<br/>
-[CMFCToolBar Sınıfı](cmfctoolbar-class.md)
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 Genel işaretçisine [klavye manager](ckeyboardmanager-class.md).
@@ -540,11 +522,6 @@ CKeyboardManager* afxKeyboardManager;
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxkeyboardmanager.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makrolar, genel işlevler ve genel değişkenler](mfc-macros-and-globals.md)<br/>
-[CKeyboardManager Sınıfı](ckeyboardmanager-class.md)
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -613,10 +590,6 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 
 **Başlık:** afxmenutearoffmanager.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CMenuTearOffManager Sınıfı](cmenutearoffmanager-class.md)
-
 ## <a name="afxmousemanager"></a>  AfxMouseManager
 
 Genel işaretçisine [fare manager](cmousemanager-class.md).
@@ -630,10 +603,6 @@ CMouseManager* afxMouseManager;
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxmousemanager.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CMouseManager Sınıfı](cmousemanager-class.md)
 
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
@@ -787,11 +756,7 @@ CShellManager* afxShellManager;
 
 **Başlık:** afxshellmanager.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CShellManager Sınıfı](cshellmanager-class.md)
-
-##  <a name="afxsocketinit"></a>  Afxsocketınit
+##  <a name="afxsocketinit"></a>  AfxSocketInit
 
 Bu işlevi çağırmak, `CWinApp::InitInstance` Windows Sockets başlatmak için geçersiz kılın.
 
@@ -829,10 +794,6 @@ CUserToolsManager* afxUserToolsManager;
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxusertoolsmanager.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[CUserToolsManager Sınıfı](cusertoolsmanager-class.md)
 
 ##  <a name="afxwininit"></a>  Afxwinınit
 
@@ -877,7 +838,16 @@ Eğer `AfxWinInit` kendiniz bir örneğini bildirmeniz gerekir bir `CWinApp` sı
 
   **Üst bilgi** afxwin.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[CWinApp Sınıfı](cwinapp-class.md)<br/>
+[CContextMenuManager Sınıfı](ccontextmenumanager-class.md)<br/>
+[CWnd Sınıfı](cwnd-class.md)<br/>
+[CFrameWndEx Sınıfı](cframewndex-class.md)<br/>
+[CMFCToolBar Sınıfı](cmfctoolbar-class.md)<br/>
+[CKeyboardManager Sınıfı](ckeyboardmanager-class.md)<br/>
+[CMenuTearOffManager Sınıfı](cmenutearoffmanager-class.md)<br/>
+[CMouseManager Sınıfı](cmousemanager-class.md)<br/>
+[CShellManager Sınıfı](cshellmanager-class.md)<br/>
+[CUserToolsManager Sınıfı](cusertoolsmanager-class.md)

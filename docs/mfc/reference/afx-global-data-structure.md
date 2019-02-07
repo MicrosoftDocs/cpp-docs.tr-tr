@@ -55,12 +55,12 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA structure [MFC]
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-ms.openlocfilehash: 9b6a462cf359bbd31958509c4fe7d0d71e490d11
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 0fd8143564beecccd8943f3ceba531e8697151d1
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694315"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850330"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 
@@ -154,11 +154,6 @@ Verilerin çoğu `AFX_GLOBAL_DATA` yapısı, uygulamanız başlatıldığında b
 
 **Başlık:** afxglobals.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-
 ## <a name="bisosalphablendingsupport"></a> AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
 
 İşletim sistemi alfa karıştırma destekleyip desteklemediğini belirtir.
@@ -198,7 +193,7 @@ Saat yönünde bir döndürme derece cinsinden açı.
 *Merkezi*<br/>
 Döndürmek istediğiniz hakkında noktası.
 
-*Matris*<br/>
+*matrix*<br/>
 Bu yöntem döndürüldüğünde, yeni döndürme dönüşümü içerir. Bu parametre için depolama ayırmanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -289,16 +284,6 @@ Belirtilen metni çizmek için bir tema kullanılıyorsa TRUE; Aksi takdirde FAL
 
 Bir tema, bir uygulamanın görsel stil tanımlar. Bir tema, metin çizmek için kullanılan değil *hTheme* parametredir NULL veya [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi desteklenmiyor veya [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) (DWM) kompozisyonu devre dışı bırakıldı.
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Bölümler ve durumlar](/windows/desktop/controls/parts-and-states)<br/>
-[CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)<br/>
-[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
-[Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)<br/>
-[DWM bileşimini etkinleştir ve denetle](/windows/desktop/dwm/composition-ovw)
-
 ## <a name="enableaccessibilitysupport"></a> AFX_GLOBAL_DATA::EnableAccessibilitySupport
 
 Etkinleştirir veya Microsoft Active Accessibility desteğini devre dışı bırakır.
@@ -317,11 +302,6 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 Etkin Erişilebilirlik şekilde programları ve Windows işletim sistemi iş yardımcı teknoloji ürünlerinin birlikte geliştiren bir COM tabanlı bir teknolojidir. Bu, kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için güvenilir yöntemleri sağlar. Ancak, Microsoft UI Otomasyonu adlı yeni bir erişilebilirlik modeli kullanıma sunulmuştur. İki teknolojileri karşılaştırması için bkz: [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).
 
 Kullanım [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) Microsoft Active Accessibility desteği etkin olup olmadığını belirlemek için yöntemi.
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
-[AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport)
 
 ## <a name="excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
 
@@ -361,10 +341,10 @@ Simgeler aşağıdaki tabloda belirtilen arabellekteki kaçış karakterleri kod
 
 |Sembol|Atlatma karakteri|
 |------------|----------------------|
-|_T ("\\\t")|_T("\t")|
+|_T("\\\t")|_T("\t")|
 |_T ("\\\n")|_T("\n")|
-|_T ("\\\r")|_T("\r")|
-|_T ("\\\b")|_T("\b")|
+|_T("\\\r")|_T("\r")|
+|_T("\\\b")|_T("\b")|
 |_T("LT")|_T ("\<")|
 |_T("GT")|_T("&GT;")|
 |_T("AMP")|_T("&AMP;")|
@@ -389,12 +369,6 @@ Belirtilen kullanıcı arabirimi öğesi RGB renk değeri. Daha fazla bilgi içi
 ### <a name="remarks"></a>Açıklamalar
 
 Varsa *nColor* parametresi aralık dışında olduğundan, dönüş değeri sıfırdır. Sıfır da geçerli bir RGB değeri olduğundan, sistem rengi geçerli işletim sistemi tarafından desteklenip desteklenmediğini belirlemek için bu yöntemi kullanamazsınız. Bunun yerine, [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) rengi desteklenmiyorsa NULL döndüren bir yöntem.
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[GetSysColor işlevi](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
 
 ## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
 
@@ -436,10 +410,6 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[NONCLIENTMETRICS yapısı](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)
 
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
 
@@ -538,10 +508,6 @@ Microsoft Active Accessibility uygulamaları erişilebilir yapmak için önceki 
 
 Kullanım [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport) etkinleştirme veya devre dışı Active Accessibility desteği yöntemi.
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)
-
 ## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
 
 D2D başlatılmış olup olmadığını belirler
@@ -565,11 +531,6 @@ BOOL IsDwmCompositionEnabled();
 ### <a name="return-value"></a>Dönüş Değeri
 
 TRUE ise [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) (DWM) kompozisyonu etkinse; Aksi takdirde FALSE.
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)<br/>
-[DWM bileşimini etkinleştir ve denetle](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
 
@@ -743,11 +704,6 @@ Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, b
 
 Dönüş değeri, virgülle ayrılmış listesidir *lpszClassNamePrefix* parametre dizesi ve geçerli uygulama örneğinin; tutamaçları onaltılı metin temsillerini ok uygulama imleci İmleç; olan bir tanımlayıcıdır IDC_ARROW ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz. [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass)<br/>
-[AfxThrowResourceException](../../mfc/reference/exception-processing.md#afxthrowresourceexception)
-
 ## <a name="resume"></a> AFX_GLOBAL_DATA::Resume
 
 Görsel stiller ve Windows temaları destekleyen yöntemlere erişmek iç işlev işaretçileri yeniden başlatır.
@@ -793,11 +749,6 @@ BOOL SetLayeredAttrib(
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
 
 ## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont
 
@@ -903,7 +854,7 @@ int GetShellAutohideBars();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir tamsayı değeri otomatik konumlarını belirtin kodlanmış bayrağı ile çubukları gizleyin. Aşağıdaki değerleri birleştirmek: AFX_AUTOHIDE_BOTTOM, AFX_AUTOHIDE_TOP, AFX_AUTOHIDE_LEFT, AFX_AUTOHIDE_RIGHT.
+Bir tamsayı değeri otomatik konumlarını belirtin kodlanmış bayrağı ile çubukları gizleyin. Bunu, aşağıdaki değerleri birleştirmek: AFX_AUTOHIDE_BOTTOM, AFX_AUTOHIDE_TOP, AFX_AUTOHIDE_LEFT, AFX_AUTOHIDE_RIGHT.
 
 ## <a name="releasetaskbarrefs"></a> AFX_GLOBAL_DATA::ReleaseTaskBarRefs
 
@@ -943,3 +894,20 @@ Başvuru için bir arabirim kimliği.
 
 Başarılıysa; başarılıysa S_OK döndürür Aksi takdirde bir hata değeri.
 
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Hiyerarşi Grafiği](../hierarchy-chart.md)<br/>
+[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](structures-styles-callbacks-and-message-maps.md)<br/>
+[COLORREF](/windows/desktop/gdi/colorref)<br/>
+[Bölümler ve durumlar](/windows/desktop/controls/parts-and-states)<br/>
+[CDC::DrawText](cdc-class.md#drawtext)<br/>
+[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
+[Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)<br/>
+[DWM bileşimini etkinleştir ve denetle](/windows/desktop/dwm/composition-ovw)<br/>
+[UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
+[GetSysColor işlevi](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
+[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)<br/>
+[NONCLIENTMETRICS yapısı](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)<br/>
+[AfxRegisterClass](application-information-and-management.md#afxregisterclass)<br/>
+[AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)<br/>
+[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)

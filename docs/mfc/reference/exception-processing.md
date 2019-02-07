@@ -13,12 +13,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: d44928d9fda20082496df1c475d8b3ab05ba4fc4
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8b40afbfcc453a4908b434dc53b7b86959673453
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522096"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851688"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
@@ -372,12 +372,6 @@ Geçersiz bağımsız değişkenler kullanıldığında bu işlev çağrılır.
 
 **Başlık:** afx.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[CInvalidArgException Sınıfı](cinvalidargexception-class.md)<br/>
-[THROW](#throw)
-
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException
 
 Bir bellek özel durumu oluşturur.
@@ -491,7 +485,7 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
 
 ### <a name="parameters"></a>Parametreler
 
-*SC*<br/>
+*sc*<br/>
 Özel durumun nedenini gösteren bir OLE durum kodu.
 
 *İK*<br/>
@@ -527,7 +521,7 @@ DAO, SCODE türünde bir OLE hata kodu. Bilgi için [CDaoException::m_scode](../
 
 Framework de çağırır `AfxThrowDaoException`. Çağrınızda, parametrelerden biri veya her ikisini de geçirebilirsiniz. Aşağıdakilerden birini yükseltmek istiyorsanız, örneğin, hataları tanımlanan **CDaoException::nAfxDaoError** ancak verdiğiniz değil *scode* parametresi, geçerli bir kod geçirmek *nAfxDaoError* parametresi için varsayılan değeri kabul *scode*.
 
-MFC DAO sınıflarına ilgili özel durumları hakkında daha fazla bilgi için bkz. `CDaoException` bu kitap ve makale [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
+MFC DAO sınıflarına ilgili özel durumları hakkında daha fazla bilgi için bkz. `CDaoException` bu kitap ve makale [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -587,5 +581,6 @@ void  AfxAbort();
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CException Sınıfı](../../mfc/reference/cexception-class.md)
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[CException Sınıfı](cexception-class.md)<br/>
+[CInvalidArgException Sınıfı](cinvalidargexception-class.md)

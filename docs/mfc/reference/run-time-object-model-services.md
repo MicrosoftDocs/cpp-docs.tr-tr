@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: fb5d35782e70924605fd344e2c330e18d611f44c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fce6fb938b501da7bc9251de51c71714e4613fd5
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519216"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850291"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
@@ -25,7 +25,7 @@ Dinamik Nesne oluşturma, çalışma zamanında belirtilen sınıfın bir nesnes
 
 Aşağıdaki tablo, çalışma zamanı sınıf bilgileri, seri hale getirme ve dinamik oluşturma desteği MFC makrolarını listeler.
 
-Bu çalışma zamanı nesne Hizmetleri ve seri hale getirme hakkında daha fazla bilgi için bkz [CObject sınıfı: çalışma süresi sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).
+Bu çalışma zamanı nesne Hizmetleri ve seri hale getirme hakkında daha fazla bilgi için bkz [CObject sınıfı: Çalışma süresi sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).
 
 ### <a name="run-time-object-model-services-macros"></a>Çalışma süresi nesne modeli Hizmetleri makroları
 
@@ -79,11 +79,6 @@ Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını
 
 afxcomctl32.h, afxcomctl32.inl
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[MFC Ortak Denetimler Kitaplığını Yalıtma](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)
-
 ## <a name="afx_comctl32_if_exists2"></a>  AFX_COMCTL32_IF_EXISTS2
 
 Ortak Denetimler kitaplığını belirtilen API uygulayıp uygulamadığını belirler (Unicode sürümü budur [afx_comctl32_ıf_exısts](#afx_comctl32_if_exists)).
@@ -106,11 +101,6 @@ Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını
 ### <a name="requirements"></a>Gereksinimler
 
 afxcomctl32.h, afxcomctl32.inl
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[MFC Ortak Denetimler Kitaplığını Yalıtma](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
 
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
@@ -200,10 +190,6 @@ Denetim sınıfı adı.
 
 **Başlık:** afxctl.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[IMPLEMENT_OLECTLTYPE](#implement_olectltype)
-
 ## <a name="declareproppageids"></a>DECLARE_PROPPAGEIDS
 
 OLE denetim özelliklerini görüntülemek için özellik sayfalarının bir listesini sağlar bildirir.
@@ -223,16 +209,11 @@ DECLARE_PROPPAGEIDS( class_name )
 
 Kullanım `DECLARE_PROPPAGEIDS` makrosu, sınıf bildiriminin sonuna. Ardından, sınıfın üye işlevleri tanımlar .cpp dosyasını kullanın `BEGIN_PROPPAGEIDS` makrosu, her denetimin özellik sayfaları, bir makro girişleri ve `END_PROPPAGEIDS` özellik sayfası listesinin sonuna bildirmek için makrosu.
 
-Özellik sayfaları hakkında daha fazla bilgi için bkz [ActiveX denetimleri: özellik sayfaları](../mfc-activex-controls-property-pages.md).
+Özellik sayfaları hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Özellik sayfaları](../mfc-activex-controls-property-pages.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxctl.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[BEGIN_PROPPAGEIDS](#begin_proppageids)<br/>
-[END_PROPPAGEIDS](#end_proppageids)
 
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL
 
@@ -382,12 +363,6 @@ OLE sınıf kimliği bir nesne için benzersiz 128-bit tanımlayıcısıdır. Bi
 
 **Başlık:** afxdisp.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[DECLARE_OLECREATE](#declare_olecreate)<br/>
-[CLSID anahtarı](/windows/desktop/com/clsid-key-hklm)
-
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
 
 Implements `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir üye işlevleri.
@@ -416,16 +391,11 @@ Implement_olectltype ek olarak, denetim sınıf bildiriminizin DECLARE_OLECTLTYP
 `GetUserTypeNameID` Üye işlevi denetim sınıfınıza tanımlayan kaynak dizesi döndürür. `GetMiscStatus` OLEMISC bitlerin denetiminizin döndürür. Bu numaralandırma denetiminizin çeşitli özelliklerini açıklayan bir ayarlar koleksiyonu belirtir. OLEMISC ayarlarının tam bir açıklaması için bkz. [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK.
 
 > [!NOTE]
->  ActiveX ControlWizard tarafından kullanılan varsayılan ayarlar şunlardır: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST OLEMISC_INSIDEOUT OLEMISC_CANTLINKINSIDE ve OLEMISC_RECOMPOSEONRESIZE.
+>  ActiveX ControlWizard tarafından kullanılan varsayılan ayarlar şunlardır: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE ve OLEMISC_RECOMPOSEONRESIZE.
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxctl.h
-
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[DECLARE_OLECTLTYPE](#declare_olectltype)
 
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL
 
@@ -547,7 +517,9 @@ OLE sınıf kimliği bir nesne için benzersiz 128-bit tanımlayıcısıdır. Bi
 
 **Üst bilgi**: afxdisp.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[MFC Ortak Denetimler Kitaplığını Yalıtma](../isolation-of-the-mfc-common-controls-library.md)<br/>
+[CLSID anahtarı](/windows/desktop/com/clsid-key-hklm)
 

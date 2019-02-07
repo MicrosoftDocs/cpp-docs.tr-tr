@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-ms.openlocfilehash: b5813600bbf8eb2a7b25992b3e1b020fcf8dfa02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dce982f76e25da424c02d621c1b760ec29e88918
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513951"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850170"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 
@@ -28,7 +28,7 @@ Bu konu, genel MFC iletişim kutusu denetimleri için kullanılan standart ileti
 |[DDV_MinMaxDouble](#ddv_minmaxdouble)|Verilen denetim değerini aşmayan doğrular bir verilen **çift** aralığı.|
 |[DDV_MinMaxDWord](#ddv_minmaxdword)|Verilen denetim değerini aşmayan doğrular bir verilen **DWORD** aralığı.|
 |[DDV_MinMaxFloat](#ddv_minmaxfloat)|Verilen denetim değerini aşmayan doğrular bir verilen **float** aralığı.|
-|[Ddv_minmaxınt](#ddv_minmaxint)|Verilen denetim değerini aşmayan doğrular bir verilen **int** aralığı.|
+|[DDV_MinMaxInt](#ddv_minmaxint)|Verilen denetim değerini aşmayan doğrular bir verilen **int** aralığı.|
 |[DDV_MinMaxLong](#ddv_minmaxlong)|Verilen denetim değerini aşmayan doğrular bir verilen **uzun** aralığı.|
 |[DDV_MinMaxLongLong](#ddv_minmaxlonglong)|Verilen denetim değerini aşmayan doğrular bir verilen **LONGLONG** aralığı.|
 |[DDV_MinMaxMonth](#ddv_minmaxmonth)|Belirli bir tarih aralığındaki verilen denetim değeri aşmadığını denetler.|
@@ -522,11 +522,6 @@ DDV hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[Standart İletişim Kutusu Veri Değişimi Rutinleri](../../mfc/reference/standard-dialog-data-exchange-routines.md)<br/>
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
-
 ## <a name="ddvminmaxunsigned"></a>DDV_MinMaxUnsigned
 
 Çağrı `DDV_MinMaxUnsigned` denetimi değeri ile ilişkili doğrulamak için *değer* arasında kalan *minVal* ve *maxVal*.
@@ -563,9 +558,10 @@ DDV hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 
 **Başlık:** afxdd_.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
+[Standart İletişim Kutusu Veri Değişimi Rutinleri](standard-dialog-data-exchange-routines.md)<br/>
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[DDX_Slider](#ddx_slider)<br/>
-[DDX_FieldSlider](#ddx_fieldslider)
+[DDX_Slider](standard-dialog-data-exchange-routines.md#ddx_slider)<br/>
+[DDX_FieldSlider](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md#ddx_fieldslider)
 

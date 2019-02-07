@@ -7,12 +7,12 @@ helpviewer_keywords:
 - parsing, URLs
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-ms.openlocfilehash: 8765a0712fc79ee60041f9142fbd25f744246ac8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 144ca5cddb70dd04bf25d790c493d15d75b8163a
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477161"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850140"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
 
@@ -29,8 +29,8 @@ Bir istemci Internet sunucusuna bir sorgu gönderdiğinde, bu URL Ayrıştırma 
 
 |||
 |-|-|
-|[Afxthrowınternetexception](#afxthrowinternetexception)|İnternet bağlantısı ilgili özel durum oluşturur.|
-|[Afxgetınternethandletype](#afxgetinternethandletype)|Bir Internet tanıtıcısı türünü belirler.|
+|[AfxThrowInternetException](#afxthrowinternetexception)|İnternet bağlantısı ilgili özel durum oluşturur.|
+|[AfxGetInternetHandleType](#afxgetinternethandletype)|Bir Internet tanıtıcısı türünü belirler.|
 
 ##  <a name="afxparseurl"></a>  AfxParseURL
 
@@ -102,13 +102,13 @@ Bu, bir URL dizeyi ayrıştırır ve hizmet ve bileşenlerinin türünü döndü
 
 Örneğin, `AfxParseURL` biçimindeki URL'ler ayrıştırır *service://server/dir/dir/object.ext:port* ve şu şekilde depolanan bileşenleri döndürür:
 
-*strServer* "server" ==
+*strServer* == "server"
 
-*strObject* == "/ dir/dir/object/object.ext"
+*strObject* == "/dir/dir/object/object.ext"
 
 *nbağlantı noktası* #port ==
 
-*dwServiceType* #service ==
+*dwServiceType* == #service
 
 > [!NOTE]
 >  Bu işlevi çağırmak için projenizi AFXINET içermelidir. H
@@ -214,11 +214,7 @@ Bu, bir URL dizeyi ayrıştırır ve hizmet ve bileşenlerinin yanı kullanıcı
 
   **Üst bilgi** afxinet.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
-
-## <a name="afxgetinternethandletype"></a>  Afxgetınternethandletype
+## <a name="afxgetinternethandletype"></a>  AfxGetInternetHandleType
 
 Bu genel işlev, bir Internet tanıtıcı türü belirlemek için kullanın.
 
@@ -274,11 +270,6 @@ Aşağıdaki liste, olası Internet türleri tarafından döndürülen içermekt
 
 **Başlık:** afxinet.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
-
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
-[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
-
 ## <a name="afxthrowinternetexception"></a>  Afxthrowınternetexception
 
 Bir Internet özel durum oluşturur.
@@ -308,9 +299,9 @@ Hataya neden olan işlem bağlam tanımlayıcısı. Varsayılan değer olan *dwC
 
 **Başlık:** afxinet.h
 
-### <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [CInternetException Sınıfı](cinternetexception-class.md)<br/>
-[THROW](#throw)
+[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
 
