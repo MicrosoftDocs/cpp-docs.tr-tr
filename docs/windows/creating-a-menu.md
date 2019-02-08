@@ -1,5 +1,5 @@
 ---
-title: Menü (C++) oluşturma
+title: Menüler (C++) oluşturma
 ms.date: 11/04/2016
 f1_keywords:
 - vc.editors.menu
@@ -10,15 +10,28 @@ helpviewer_keywords:
 - menus [C++], adding items
 - commands [C++], adding to menus
 - menu items, adding to menus
+- submenus
+- submenus [C++], creating
+- menus [C++], creating
+- context menus [C++], Menu Editor
+- pop-up menus [C++], creating
+- menus [C++], pop-up
+- menus [C++], creating
+- shortcut menus [C++], creating
+- pop-up menus [C++], displaying
+- pop-up menus [C++], connecting to applications
+- context menus [C++], connecting to applications
+- shortcut menus [C++], connecting to applications
+- pop-up menus
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
-ms.openlocfilehash: 438480032f1fe9208e406b4ee499267e42148a48
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: e3b3cc58b82f68c55ac98601fd11775422c901e5
+ms.sourcegitcommit: 5a7dbd640376e13379f5d5b2cf66c4842e5e737b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702810"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905777"
 ---
-# <a name="creating-a-menu-c"></a>Menü (C++) oluşturma
+# <a name="creating-menus-c"></a>Menüler (C++) oluşturma
 
 > [!NOTE]
 > **Kaynak penceresi** Express sürümlerinde kullanılamaz.
@@ -45,6 +58,14 @@ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaü
 
    > [!NOTE]
    > Menü çubuğunda bir tek öğesi menüsü oluşturmak için **açılan** özelliğini **False**.
+
+## <a name="to-create-a-submenu"></a>Alt menü oluşturma
+
+1. Alt menü oluşturmak istediğiniz komutu seçin.
+
+1. İçinde **yeni öğe** sağda açılan kutusunda yeni menü komutunu adını yazın. Bu yeni komut ilk alt menüsünde görüntülenir.
+
+1. Ek menü komutları, alt menüyü ekleyin.
 
 ## <a name="to-insert-a-new-menu-between-existing-menus"></a>Mevcut menülerin arasına yeni menü eklemek için
 
@@ -83,10 +104,57 @@ Menü çubuğunda sağ tıklatın ve seçin **yeni Ekle** kısayol menüsünden.
 
    Ek menü komutlarını oluşturmak için yeni bir öğe kutusunda seçilir.
 
+## <a name="to-create-pop-up-menus"></a>Açılır menüler oluşturma
+
+[Açılır menüler](../mfc/menus-mfc.md) görüntü sık kullanılan komutları. Bağlama duyarlı işaretçisi konumunu olabilirler. Uygulamanıza açılır menüleri kullanarak menü oluşturmak ve ardından uygulama koduna bağlanmayı gerektirir.
+
+Menü kaynağı oluşturduktan sonra uygulama kodunuz menü kaynağı yüklemek ve kullanmak gereken [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) menüsünün görünmesi neden olacak. Kullanıcı açılır menüyü dışında seçerek kapatıldı veya bir komut seçilmiş sonra bu işlev döndürür. Kullanıcı komut seçerse, tanıtıcı geçirildi penceresine komut ileti gönderilir.
+
+### <a name="to-create-a-pop-up-menu"></a>Açılır menü oluşturmak için
+
+1. [Menü oluşturmak](../windows/creating-a-menu.md) boş bir başlığa sahip (sağlamayan bir **açıklamalı alt yazı**).
+
+1. [Yeni menüsüne bir menü komutu eklemek](../windows/adding-commands-to-a-menu.md). Boş Menü başlığının altında ilk menü Komut çubuğuna Taşı (geçici açıklamalı alt yazı yazan `Type Here`). Tür a **açıklamalı alt yazı** ve diğer bilgiler.
+
+   Diğer bir menü komutları açılır menüde için bu işlemi yineleyin.
+
+1. Menü kaynağı kaydedin.
+
+### <a name="to-connect-a-pop-up-menu-to-your-application"></a>Açılır menü, uygulamanızı bağlamak için
+
+1. Bir ileti işleyicisi WM_CONTEXTMENU için (örneğin) ekleyin. Daha fazla bilgi için [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).
+
+1. Aşağıdaki kodu için ileti işleyicisi ekleyin:
+
+    ```cpp
+    CMenu menu;
+    VERIFY(menu.LoadMenu(IDR_MENU1));
+    CMenu* pPopup = menu.GetSubMenu(0);
+    ASSERT(pPopup != NULL);
+    pPopup->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, AfxGetMainWnd());
+    ```
+
+   > [!NOTE]
+   > [CPoint](../atl-mfc-shared/reference/cpoint-class.md) geçirilen ekran koordinatlarında ileti işleyicisidir.
+
+   > [!NOTE]
+   > Uygulamanıza açılır menü bağlantısı MFC gerektirir.
+
+### <a name="to-view-a-menu-resource-as-a-pop-up-menu"></a>Açılır menü olarak menü kaynağı görüntülemek için
+
+Normalde, ne zaman çalışmakta olduğunuz **menü** Düzenleyicisi, bir menü kaynağı bir menü çubuğu görüntülenir. Ancak, program çalışırken uygulamanın menü çubuğuna eklediğiniz menü kaynaklarınız olabilir.
+
+Menüyü sağ tıklatın ve seçin **pencerede görüntüle** kısayol menüsünden.
+
+   Bu seçenek yalnızca görüntüleme tercihi olan ve menünüzde değiştirmez.
+
+   > [!NOTE]
+   > Menü çubuğunun görünümünü değiştirmek için tıklayın **pencerede görüntüle** yeniden (onay işaretini kaldırır ve menü çubuğu görünümünüzü döndürür).
+
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Menü Düzenleyicisi](../windows/menu-editor.md)

@@ -3,6 +3,7 @@ title: 'Nasıl yapılır: Bir kaynak betik dosyası (C++) oluştur'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.editors.resource
+- vc.resvw.add.MFC
 helpviewer_keywords:
 - rc files [C++], creating
 - .rc files [C++], creating
@@ -14,20 +15,24 @@ helpviewer_keywords:
 - resource script files [C++], opening in text format
 - .rc files [C++], opening in text format
 - rc files [C++], opening in text format
+- rc files [C++], adding MFC support
+- .rc files [C++], adding MFC support
+- MFC, adding support to resource scripts files
+- resource script files [C++], adding MFC support
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
-ms.openlocfilehash: f3f0adff256742c98a672e40e6b31de9bd7a84ed
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 9055e0f787c238276d3134c2fa6a8afae0102433
+ms.sourcegitcommit: 5a7dbd640376e13379f5d5b2cf66c4842e5e737b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849964"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905686"
 ---
 # <a name="how-to-create-a-resource-script-file-c"></a>Nasıl yapılır: Bir kaynak betik dosyası (C++) oluştur
 
 > [!NOTE]
 > **Kaynak Düzenleyicisi** Express sürümlerinde kullanılamaz.
 >
-> Bu yazıda, Windows Masaüstü uygulamaları için geçerlidir. .NET dilleri projelerde kaynak betik dosyalarına kullanmayın. Daha fazla bilgi için [kaynak dosyaları](../windows/resource-files-visual-studio.md), daha fazla bilgi için.
+> Bu yazıda, Windows Masaüstü uygulamaları için geçerlidir. .NET dilleri projelerde kaynak betik dosyalarına kullanmayın. Daha fazla bilgi için [kaynak dosyaları](../windows/resource-files-visual-studio.md).
 
 ## <a name="to-create-a-new-resource-script-rc-file"></a>Yeni bir kaynak betiği (.rc) dosyası oluşturmak için
 
@@ -120,11 +125,39 @@ Kaynak dosya, içerdiği tüm kaynakları görüntülemek ve metin düzenleyicis
 
 1. Kısayol menüsünden **birlikte Aç...** , ardından **kaynak kodu (metin) Düzenleyicisi**.
 
+## <a name="to-add-mfc-support-to-resource-script-files"></a>Kaynak betik dosyalarına MFC desteği eklemek için
+
+Normalde, Windows kullanmaya yönelik bir MFC uygulaması oluşturduğunuzda [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation'ın temel özelliklerini içeren temel bir kümesi (kaynak betiği (.rc) dosyası da dahil olmak üzere) dosyaları sihirbaz oluşturur sınıfları (MFC). Ancak, MFC'ye dayalı olmayan bir Windows uygulaması için bir .rc dosyasını düzenliyorsanız MFC çerçevesine özgü aşağıdaki özellikler kullanılamaz:
+
+- MFC kodu sihirbazları
+
+- Menü komut istemi dizeleri
+
+- Birleşik giriş kutusu denetimleri için Liste içeriği
+
+- ActiveX denetimi barındırma
+
+Ancak sahip olmayan var olan .rc dosyalarına MFC desteği ekleyebilirsiniz.
+
+> [!NOTE]
+> MFC adımları gerektirir.
+
+### <a name="to-add-mfc-support-to-rc-files"></a>.Rc dosyalarına MFC desteği eklemek için
+
+1. Kaynak betik dosyasını açın.
+
+1. İçinde [kaynak görünümü](../windows/resource-view-window.md), (örneğin, MFC.rc) kaynaklar klasörünü vurgulayın.
+
+1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window)ayarlayın **MFC modu** özelliğini **True**.
+
+   > [!NOTE]
+   > Bu bayrağı ayarlamanın yanı sıra .rc dosyası bir MFC projesinin bir parçası olmalıdır. Örneğin, yalnızca ayarlamak **MFC modu** için **True** bir .rc dosyasının bir Win32 Proje MFC özelliklerinden hiçbirini size olmaz.
+
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)
