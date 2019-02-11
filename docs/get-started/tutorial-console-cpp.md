@@ -6,16 +6,16 @@ ms.date: 12/12/2017
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: c47298b0432936b39de9658d93b815ec30fd8786
-ms.sourcegitcommit: 235d974c14ad3ffa7a3b29dec3e320a52fb291b2
+ms.openlocfilehash: 49fc20f3040f50ddc1b8014cc4dcf8df20f7af87
+ms.sourcegitcommit: 966e4466f10c93fc12faf33d28e03b39489423fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53440366"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987065"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
-Her zamanki başlangıç noktası C++ programcısı için bir "Hello, world!" komut satırı üzerinde çalışan uygulama. Hangi Visual Studio'da bu adımda oluşturacağınız olmasıdır.
+Her zamanki başlangıç noktası C++ programcısı için bir "Hello, world!" komut satırı üzerinde çalışan uygulama. Hangi Visual Studio'da bu makaledeki oluşturacağınız olmasıdır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -383,7 +383,7 @@ Ayrıca kodun kendisi nerede yürütülmesi şu anda duraklatıldı geçerli de�
 
 Tebrikler! Siz hesaplayıcı uygulama kodunu ve yerleşik tamamlayıp Visual Studio'da hata ayıklaması.
 
-   ![Hesap Makinesi konsol uygulaması](./media/calculator-app.gif "hesap makinesi konsol uygulaması")
+![Hesap Makinesi konsol uygulaması](./media/calculator-app.gif "hesap makinesi konsol uygulaması")
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
