@@ -5,12 +5,12 @@ helpviewer_keywords:
 - character data types [C]
 - types [C], character
 ms.assetid: d3ca8cda-c0d7-43af-9472-697e8ef015ce
-ms.openlocfilehash: 7ca87ec1cb11f8a00beb6f5eb670b3e292bb1f70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f894114d4e980b11edf55c4d4b7c4e60af396fb1
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619342"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151591"
 ---
 # <a name="character-types"></a>Karakter Türleri
 
@@ -26,6 +26,6 @@ wchar_t wchar = L'x';   /* A wide-character constant for
 
 Geniş karakter sabitleri, 16 bit genişliğinde olan ve genişletilmiş yürütme karakter kümesi üyeleri belirtin. Karakter türüne göre gösterilemeyecek kadar çok büyük harfler express izin `char`. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) geniş karakterler hakkında daha fazla bilgi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Karakter Sabitleri](../c-language/c-character-constants.md)

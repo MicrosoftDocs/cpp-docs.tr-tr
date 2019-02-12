@@ -8,12 +8,12 @@ helpviewer_keywords:
 - statements, about statements
 - Visual C, statements
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-ms.openlocfilehash: 906beb7c5c2edfc448daadb1f4c5a111f7877b91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b5863a021fd74bb80162d589af7c2a1a5b36f9b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613726"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147054"
 ---
 # <a name="overview-of-c-statements"></a>C Deyimlerine Genel Bakış
 
@@ -43,6 +43,6 @@ Deyim gövdesi çoğu zaman bir "bileşik deyim" olur. Bileşik deyim, anahtar s
 
 Bir C deyimi, ad ve üst üste iki noktadan oluşan bir tanımlama etiketi ile başlayabilir. Yalnızca `goto` deyimi deyim etiketlerini tanıdığı için deyim etiketleri `goto` ile ele alınır. Bkz: [goto ve etiketli deyimleri](../c-language/goto-and-labeled-statements-c.md) daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Deyimler](../c-language/statements-c.md)

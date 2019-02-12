@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [C++], initializing
 - initializing arrays, strings
 ms.assetid: 0ab8079d-d0d3-48f9-afd1-36a7bb439b29
-ms.openlocfilehash: 85fa3258b69aacd094501b1bb1599190eb0487df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9dbad72314e9ce01d022d26209e2132c29c106a
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579734"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147938"
 ---
 # <a name="initializing-strings"></a>Başlatma Dizeleri
 
@@ -29,7 +29,8 @@ Tanımlayıcı listesi, yalnızca başlatılacak tanımlayıcıların sayısı k
 char code[3] = "abcd";
 ```
 
-Başlatıcının yalnızca ilk üç karakteri `code` öğesine atanır. `d` karakteri ve dizeyi sonlandıran null karakteri atılır. Bunun, sonlandırılmayan bir dize (yani sonunu gösteren bir 0 değeri olmayan bir dize) ve bu durumu gösteren bir tanılama iletisi oluşturduğunu unutmayın.
+Başlatıcının yalnızca ilk üç karakteri `code` öğesine atanır. 
+  `d` karakteri ve dizeyi sonlandıran null karakteri atılır. Bunun, sonlandırılmayan bir dize (yani sonunu gösteren bir 0 değeri olmayan bir dize) ve bu durumu gösteren bir tanılama iletisi oluşturduğunu unutmayın.
 
 Bildirim
 
@@ -52,6 +53,6 @@ Microsoft C'de, dize sabit değerlerinin uzunluğu en fazla 2048 bayt olabilir.
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Başlatma](../c-language/initialization.md)

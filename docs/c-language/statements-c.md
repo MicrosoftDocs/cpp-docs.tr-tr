@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C, statements
 - statements
 ms.assetid: df3891cd-6195-4663-aecf-7fe7dc3ed9c3
-ms.openlocfilehash: b9fafec9b37499551943b51f55172cf64c97636e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0fb6a9c3742efd414581124e56d01356e4448614
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463732"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151929"
 ---
 # <a name="statements-c"></a>Deyimler (C)
 
@@ -27,6 +27,6 @@ Bir C programının deyimleri, program yürütmenin akışını denetler. C'de, 
 |[For deyimi](../c-language/for-statement-c.md)|[try-finally deyimi](../c-language/try-finally-statement-c.md)|
 |[goto ve etiketli deyimler](../c-language/goto-and-labeled-statements-c.md)|[while deyimi](../c-language/while-statement-c.md)|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Dil Başvurusu](../c-language/c-language-reference.md)

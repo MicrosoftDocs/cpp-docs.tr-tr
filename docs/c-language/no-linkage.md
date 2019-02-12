@@ -5,12 +5,12 @@ helpviewer_keywords:
 - no linkage
 - linkage [C++], none
 ms.assetid: 5a413082-1034-4e04-b76b-8d14668bf434
-ms.openlocfilehash: 9775270c5c1fb0b6758f994c432104d75e19d38d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c80cb814145ac986864fe351e664d8472f3bf880
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505085"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152852"
 ---
 # <a name="no-linkage"></a>Bağlantı Yok
 
@@ -22,10 +22,11 @@ Aşağıdaki tanımlayıcıların bağlantısı yoktur:
 
 - Bir işlev parametresi olarak bildirilmiş bir tanımlayıcı
 
-- `extern` depolama sınıfı tanımlayıcısı olmadan bildirilmiş bir nesneye yönelik blok kapsamı tanımlayıcısı
+- 
+  `extern` depolama sınıfı tanımlayıcısı olmadan bildirilmiş bir nesneye yönelik blok kapsamı tanımlayıcısı
 
 Tanımlayıcının hiçbir bağlantı yoksa, aynı kapsamda aynı adın yeniden bildirilmesi (bildirimcide veya tür tanımlayıcısında) simge yeniden tanımlama hatası oluşturur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - main function
 - programs [C++], terminating
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
-ms.openlocfilehash: e975f09b62ffbb536790c13eb8614453b1c1e8b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d16f8a5b7b6b23ad90aad886bbb9654e706549cb
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610437"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151046"
 ---
 # <a name="main-function-and-program-execution"></a>main İşlevi ve Program Yürütme
 
@@ -32,11 +32,12 @@ Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görev
 
 Herhangi bir işlevi bildirebilir dahil olmak üzere **ana**parametrelere sahip olacak şekilde. "Parametre" veya "biçimsel parametre" terimi, işleve geçirilen bir değeri alan tanımlayıcı anlamına gelir. Bkz: [parametreleri](../c-language/parameters.md) bağımsız değişkenleri parametrelere geçirme hakkında bilgi. Bir işlev diğerini çağırdığında, çağrılan işlev çağıran işlevden parametrelerine yönelik değerleri alır. Bu değerlere "bağımsız değişkenler" adı verilir. Biçimsel parametreler bildirebilirsiniz **ana** bağımsız değişkenleri komut satırından şu biçimi kullanarak alabilmesi:
 
-Bilgi aktarmak istediğinizde **ana** gibi parametreleri işlevi, geleneksel olarak adlandırılan `argc` ve `argv`, C derleyicisi bu adlar gerekli olmasa da. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü parametresi geçirilir **ana**, bu parametrenin adlı `envp`. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
+Bilgi aktarmak istediğinizde **ana** gibi parametreleri işlevi, geleneksel olarak adlandırılan `argc` ve `argv`, C derleyicisi bu adlar gerekli olmasa da. 
+  `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü parametresi geçirilir **ana**, bu parametrenin adlı `envp`. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
 
 Bkz: [wmain kullanma](../c-language/using-wmain.md) geniş karakter sürümünü açıklamasını **ana**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[main: Program Başlatma](../cpp/main-program-startup.md)<br/>
+[Ana: Program başlatma](../cpp/main-program-startup.md)<br/>
 [C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma](../c-language/parsing-c-command-line-arguments.md)

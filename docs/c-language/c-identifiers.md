@@ -9,12 +9,12 @@ helpviewer_keywords:
 - identifiers, case sensitivity
 - symbols, case sensitivity
 ms.assetid: d02edbbc-85a0-4118-997b-84ee6b972eb6
-ms.openlocfilehash: 6ec1fc7303a6f5600837e919d96904abde7987e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f3abf304e6fda52e2571d0bccb8d4db5a414dfe
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474148"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152592"
 ---
 # <a name="c-identifiers"></a>C Tanımlayıcıları
 
@@ -48,7 +48,7 @@ Bildirilen sonra sonraki program deyimlerinde tanımlayıcı ilişkili değerine
 &nbsp;&nbsp;&nbsp;&nbsp;**BİR B C D E F G H MİYİM J K L MN O P Q R S T U V W X, Y, Z**
 
 *basamak*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
 Bir tanımlayıcı adının ilk karakter bir `nondigit` (diğer bir deyişle, ilk karakteri bir alt çizgi veya bir büyük harf veya küçük harf olması gerekir). Dış bir tanımlayıcının adı altı önemli karakterler ve 31 adları (bir işlevde) iç tanımlayıcılar için ANSI sağlar. Dış tanımlayıcıları (olanları genel kapsamda bildirilen veya depolama sınıfı ile bildirilen `extern`) bu tanımlayıcıları linkers gibi diğer yazılımlar tarafından işlenmek üzere olduğundan ek adlandırma sınırlamalara tabi olabilir.
 
@@ -96,6 +96,6 @@ Microsoft bağlayıcı büyük/küçük harfe duyarlıdır. Tüm tanımlayıcıl
 
 Bir tanımlayıcının "bölgesi, programın adı verilir ve"başka bir kapsamda aynı ada için aynı tanımlayıcıyı belirtir olup olmadığını belirleyen bağlantı,"kapsamı," vardır. Bu konularda açıklandığı [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Öğeleri](../c-language/elements-of-c.md)

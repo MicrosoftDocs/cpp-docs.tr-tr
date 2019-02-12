@@ -9,12 +9,12 @@ helpviewer_keywords:
 - floating-point constants, about floating-point constants
 - double data type, floating-point constants
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
-ms.openlocfilehash: 2bde8ecdfa7e93160a86829c466ab9a78b71d48e
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 5e17490926ee328c3a4ca03b1de9cb6e752959a0
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220380"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148705"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
 
@@ -76,6 +76,6 @@ Aşağıdaki örneklerde gösterildiği gibi kayan noktalı sabit tamsayı kısm
 75e-2
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Sabitleri](../c-language/c-constants.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - memory, access using volatile
 - volatile keyword [C], type specifier
 ms.assetid: bb4c6744-1dd7-40a8-b4eb-f5585be30908
-ms.openlocfilehash: 31cfa4d0d443cc6bb854e8010f1e1535cd39b51b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5cb7ab3de8938b77dc95be3ee442f71d3b18b42
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507695"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147314"
 ---
 # <a name="type-qualifiers"></a>Tür Niteleyicileri
 
@@ -63,6 +63,6 @@ Bu listeyi nasıl kullanılacağını açıklar **const** ve `volatile`.
 
 - Bir öğe olmalı **const** ve `volatile`, bu durumda öğe kendi program tarafından yasal olarak değiştirilemedi, ancak bazı zaman uyumsuz bir işlem tarafından değiştirilmiş.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve Türler](../c-language/declarations-and-types.md)

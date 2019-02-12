@@ -7,12 +7,12 @@ helpviewer_keywords:
 - bitwise-shift operators
 - operators [C++], shift
 ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
-ms.openlocfilehash: d0873e3975e69bbfac01d437006561f0bf88ee31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: acf31fbfbe534e3f7eba1492c5aaf173fcb8b31c
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485364"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150421"
 ---
 # <a name="bitwise-shift-operators"></a>Bit Düzeyinde Kaydırma İşleçleri
 
@@ -60,6 +60,6 @@ Negatif bir değer sağa kaydırarak aşağı yuvarlanmasını özgün yarım de
 
 Sağa kaydırmalar imza biti korur. İmzalı bir tamsayı sağa kaydırır en anlamlı biti ayarlanmış olarak kalır. En anlamlı bit işaretsiz tamsayı sağ geçtiğinde temizlenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sol Kaydırma ve Sağ Kaydırma İşleçleri (>> ve <<)](../cpp/left-shift-and-right-shift-operators-input-and-output.md)

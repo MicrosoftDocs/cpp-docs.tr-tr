@@ -5,12 +5,12 @@ helpviewer_keywords:
 - operators [C++], addition
 - additive operators
 ms.assetid: 7d54841e-436d-4ae8-9865-1ac1829e6f22
-ms.openlocfilehash: 78dc559a83626057603027e30742435b1128e31c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e2d802a77c56b8f458b614b29e86e2e1d30a55e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557696"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151435"
 ---
 # <a name="using-the-additive-operators"></a>Ek İşleçlerini Kullanma
 
@@ -37,6 +37,6 @@ j = &x[i] - &x[i-2];
 
 Bu örnekte, üçüncü `x` öğesinin (`x[i-2]` tarafından verilmiştir) adresi, beşinci `x` öğesinin (`x[i]` tarafından verilmiştir) adresinden çıkarılır. Fark uzunluğuna bölünür bir **float**; tamsayı değeri 2 sonucudur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Ek İşleçleri](../c-language/c-additive-operators.md)

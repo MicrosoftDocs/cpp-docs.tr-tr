@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch keyword [C]
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a
-ms.openlocfilehash: 5bd2f3a4d17f991853de104b9f491b0ba77b07a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f781147bf4ed020cf925ca29c2ba1b0f601cde1
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515381"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148198"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C)
 
@@ -110,6 +110,6 @@ Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş ol
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [switch Deyimi (C++)](../cpp/switch-statement-cpp.md)

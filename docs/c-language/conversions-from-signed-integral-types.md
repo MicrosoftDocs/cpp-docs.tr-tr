@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data type conversion [C++], signed and unsigned integers
 - type conversion [C++], signed and unsigned integers
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
-ms.openlocfilehash: aec00ce21887759b2016523ff4044eb8389131fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d2f0ab43adf3cbad3d1ffa244551c67883c6606
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431726"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152787"
 ---
 # <a name="conversions-from-signed-integral-types"></a>İmzalı Tam Sayı Türlerinden Dönüştürmeler
 
@@ -68,6 +68,6 @@ Microsoft 32-bit C derleyicisi için bir tamsayı değerine eşdeğer olan bir *
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Atama Dönüştürmeleri](../c-language/assignment-conversions.md)

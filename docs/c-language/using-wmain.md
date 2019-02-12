@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - wmain function
 ms.assetid: d0300812-adc4-40c6-bba3-b2da25468c80
-ms.openlocfilehash: 65efacb76e80dedee13d8e1af017686075c1168e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d467d50a7188cd665f64de8b6f0ce6e6a37df752
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460599"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148497"
 ---
 # <a name="using-wmain"></a>wmain Kullanma
 
@@ -35,6 +35,6 @@ MBCS ortamı hakkında daha fazla bilgi için bkz. [uluslararası duruma getirme
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

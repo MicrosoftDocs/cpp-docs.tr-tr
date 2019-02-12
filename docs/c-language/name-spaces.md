@@ -10,12 +10,12 @@ helpviewer_keywords:
 - tags, structure tags
 - union keyword [C]
 ms.assetid: b4bda1d1-cb5e-4f60-ac2b-29af93d8a9a2
-ms.openlocfilehash: ebf1961d83d14bf95633d4248c2f970c54923274
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 76ad9b797a4f192e8f22f8c040f5a308371a461b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325997"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148419"
 ---
 # <a name="name-spaces"></a>Ad Alanları
 
@@ -48,6 +48,6 @@ struct student {
 
 Zaman `student` sonra görünen **yapı** anahtar sözcüğü, derleyiciye tanır, yapısı etiket olarak. Zaman `student` üye seçme işlecinden sonra görünür (**->** veya **.**), yapı üyesine adıdır. Diğer bağlamlarda `student` yapısı değişkenine başvuruyor. Anlamı gizler beri ancak etiket ad alanı aşırı önerilmez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Program Yapısı](../c-language/program-structure.md)

@@ -2,12 +2,12 @@
 title: Ortam Adları
 ms.date: 11/04/2016
 ms.assetid: 9af409a5-e724-465a-9a21-88d3586c2e92
-ms.openlocfilehash: 67c49c256945eb60b10b9bc19b0dca8ba0b73a84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43e1254b4c1ee61a92fbb6499d9396e8b15a3047
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516981"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148003"
 ---
 # <a name="environment-names"></a>Ortam Adları
 
@@ -27,7 +27,7 @@ bir komut kabuğunu (cmd kopyasını çalıştırmanız EXE) LIB ortam değişke
 
 Benzer şekilde, tarafından yapılan değişiklikleri `_putenv` yalnızca program sonlanana kadar son işlev.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kitaplık İşlevleri](../c-language/library-functions.md)<br/>
 [_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)<br/>

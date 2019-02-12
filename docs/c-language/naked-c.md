@@ -7,12 +7,12 @@ helpviewer_keywords:
 - prolog code
 - epilog code
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
-ms.openlocfilehash: c79502d1793df2a3340eed26c67cca5d2a8b0d9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 519d7bceb700e9862f0d0025b755cf28fb0fbc0c
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537247"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149784"
 ---
 # <a name="naked-c"></a>Naked (C)
 
@@ -24,6 +24,6 @@ ms.locfileid: "50537247"
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)

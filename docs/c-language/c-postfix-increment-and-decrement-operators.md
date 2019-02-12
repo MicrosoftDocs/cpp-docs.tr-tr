@@ -6,12 +6,12 @@ helpviewer_keywords:
 - scalar operators
 - types [C], scalar
 ms.assetid: 56ba218d-65f9-405f-8684-caccc0ca33aa
-ms.openlocfilehash: 8d45ce34457779e668124d9f48b82a5b74da1c56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c2e3ba50ce3e768b377a588cd3e82ad29df79ee
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506862"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150645"
 ---
 # <a name="c-postfix-increment-and-decrement-operators"></a>C Sonek Arttırma ve Azaltma İşleçleri
 
@@ -32,6 +32,6 @@ if( var++ > 0 )
 
 Bu örnekte, değişken `var` 0 olarak karşılaştırıldığında sonra artar. Varsa `var` pozitif artan önce sonraki deyimi yürütülür. İlk olarak, nesnenin değeri tarafından işaret edilen `q` tarafından işaret edilen nesnenin atandığı `p`. Ardından, `q` ve `p` artırılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Son Ek Arttırma ve Azaltma İşleçleri: ++ ve --](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)

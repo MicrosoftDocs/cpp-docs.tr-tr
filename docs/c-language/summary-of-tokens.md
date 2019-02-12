@@ -2,12 +2,12 @@
 title: Belirteçlerin Özeti
 ms.date: 11/04/2016
 ms.assetid: 2978cbf6-e66e-46fc-9938-caa052f2ccf7
-ms.openlocfilehash: f295f59ce5767fce5416dde3545188cb0b1d4408
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4fdc1cf4c4e5a89cc9ecf029e64b6eb5422cd6a3
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549545"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149121"
 ---
 # <a name="summary-of-tokens"></a>Belirteçlerin Özeti
 
@@ -44,6 +44,6 @@ ms.locfileid: "50549545"
 &nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***E***oturum*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***.**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)

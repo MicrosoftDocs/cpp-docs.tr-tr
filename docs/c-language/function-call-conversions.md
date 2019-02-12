@@ -6,12 +6,12 @@ helpviewer_keywords:
 - function calls, argument type conversions
 - functions [C], argument conversions
 ms.assetid: 04ea0f81-509a-4913-8b12-0937a81babcf
-ms.openlocfilehash: 9fdc9ef467980a079198ca06360766d84a85923f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9f205bbbbac353b57743f8e1211b20fa3d32f05
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441151"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152488"
 ---
 # <a name="function-call-conversions"></a>İşlev Çağrısı Dönüşümleri
 
@@ -21,6 +21,6 @@ Bir işlev prototipi varsa ve bildirilen bağımsız değişken türlerini içer
 
 İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Diğer bir deyişle bir **float** değerinin bir **çift**; `char` veya **kısa** değerinin bir `int`; ve bir `unsigned char` veya **işaretsiz** dönüştürülür bir `unsigned int`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Dönüştürmeleri](../c-language/type-conversions-c.md)

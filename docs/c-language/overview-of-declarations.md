@@ -5,12 +5,12 @@ helpviewer_keywords:
 - declarations, about declarations
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-ms.openlocfilehash: 4e6c166763afd18db79798024d8b2f159ffed76d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 439bc878bbcd1c9778fb74738cb3b32b908a5943
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582763"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148354"
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 
@@ -65,7 +65,7 @@ Tür tanımlayıcıları, tanımlayıcıların veri türleri hakkında bazı bil
 
 İki *tür niteleyici* terminaller: **const** ve `volatile`. Bu niteleyiciler yalnızca bu tür nesneleri l-değerler erişirken ilgilendiren türlerinin ek özellikleri belirtin. Daha fazla bilgi için **const** ve `volatile`, bkz: [tür niteleyicileri](../c-language/type-qualifiers.md). L-değerler tanımı için bkz [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)<br/>
 [Bildirimler ve Türler](../c-language/declarations-and-types.md)<br/>

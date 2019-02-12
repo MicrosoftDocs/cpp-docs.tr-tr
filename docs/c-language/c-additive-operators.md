@@ -8,12 +8,12 @@ helpviewer_keywords:
 - additive operators
 - arithmetic operators [C++], additive operators
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
-ms.openlocfilehash: af7302adaafc3a91287f6d15a11c8e784f35c33d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29bea87e56aa90a8deab7ad7280b3fbdfb45c82b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650722"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151201"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 
@@ -33,6 +33,6 @@ Ek işleçlerini eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).
 
 Ek işleçlerini olağan aritmetik dönüştürmeler integral ve kayan işlenenler üzerinde gerçekleştirin. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür. Toplama işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamaz olduğundan, dönüştürme işleminden sonra bir toplama işleminin sonucu işlenenler türünü temsil edilemiyorsa bilgiler kaybolabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ek İşleçler: + and -](../cpp/additive-operators-plus-and.md)

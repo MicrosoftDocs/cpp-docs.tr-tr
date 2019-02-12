@@ -5,12 +5,12 @@ helpviewer_keywords:
 - text files
 - text files, truncation
 ms.assetid: 238307b3-c580-4280-ac6f-51345a2365bc
-ms.openlocfilehash: 6aefbe99baefdaa436e3ac077df8851e7caf38ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab7cecc2f784c9a8968d6a4103ec9323aa913046
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544956"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147379"
 ---
 # <a name="truncation-of-text-files"></a>Metin Dosyalarının Kesilmesi
 
@@ -18,6 +18,6 @@ ms.locfileid: "50544956"
 
 Bir metin akışına yazma, dosyayı bu noktanın ötesinde kesmez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kitaplık İşlevleri](../c-language/library-functions.md)

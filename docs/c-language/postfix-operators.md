@@ -5,12 +5,12 @@ helpviewer_keywords:
 - operators [C], postfix
 - postfix operators
 ms.assetid: 76260011-1624-484e-8bef-72ae7ab556cc
-ms.openlocfilehash: 45f7b67b62657c498bdd9ebcf5d85379cdcdd211
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a86ede25feeaee3a9fb1c6b146cf9667b85c0c2f
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440710"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147912"
 ---
 # <a name="postfix-operators"></a>Sonek İşleçleri
 
@@ -29,6 +29,6 @@ Sonek işleçleri ifade değerlendirmesinde (tightest bağlama) en yüksek önce
 
 Bu öncelik düzeyi işleci bir dizi indisi, işlev çağrıları, yapı ve birleşim üyeleri ve sonek artırma ve azaltma işleçleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C İşleçleri](../c-language/c-operators.md)

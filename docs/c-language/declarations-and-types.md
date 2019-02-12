@@ -7,12 +7,12 @@ helpviewer_keywords:
 - declarations [C++], C
 - declarations [C++], types
 ms.assetid: 432a2286-cf42-42ce-8baf-c908ffb57ca8
-ms.openlocfilehash: b2caf3022f5a1b23d50d994c3408cf4024c69ea2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75ffbeda8b120b9a1bb9f1bb28c570695ed2c8c8
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607343"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150252"
 ---
 # <a name="declarations-and-types"></a>Bildirimler ve Türler
 
@@ -40,6 +40,6 @@ Bu bölümde, değişkenlerin, işlevlerin ve türlerin bildirimi ve başlatılm
 
 - [Genişletilmiş depolama sınıfı öznitelikler](../c-language/c-extended-storage-class-attributes.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Dil Başvurusu](../c-language/c-language-reference.md)

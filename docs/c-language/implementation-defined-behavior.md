@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ANSI [C++], C standard
 - implementation-defined behavior
 ms.assetid: c9f50670-23cb-401f-8ad7-136972012eb9
-ms.openlocfilehash: e74d4bceee722ced42ccf63e89fe8ad2a4b866e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1eb5e276d8292f67018150427e6c9d8ecf0ccee0
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447105"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147301"
 ---
 # <a name="implementation-defined-behavior"></a>Uygulama Tanımlı Davranış
 
@@ -23,6 +23,6 @@ Bu bölümde, ANSI bölüm aynı sırada izler. Her öğe kapsamdaki uygulama ta
 > [!NOTE]
 >  Bu bölümde, ABD açıklanmaktadır. C derleyicisi yalnızca İngilizce sürümü. Microsoft C uygulamaları diğer diller için biraz farklı olabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Dil Başvurusu](../c-language/c-language-reference.md)

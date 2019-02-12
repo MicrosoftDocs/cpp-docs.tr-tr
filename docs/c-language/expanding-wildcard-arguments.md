@@ -7,12 +7,12 @@ helpviewer_keywords:
 - expanding wildcard arguments
 - wildcards, expanding
 ms.assetid: 80a11c4b-0199-420e-a342-cf1d803be5bc
-ms.openlocfilehash: 2224d01eeb3ec54a9c0ff895dfa45574135f7c0c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1fb964fe98223fb7187b83c7101027ed1f9cbea
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443426"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149056"
 ---
 # <a name="expanding-wildcard-arguments"></a>Joker Karakter Bağımsız Değişkenlerini Genişletme
 
@@ -30,7 +30,7 @@ Joker karakter, işletim sistemi komutları aynı şekilde genişletilir. (Joker
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlantı Seçenekleri](../c-runtime-library/link-options.md)<br/>
 [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

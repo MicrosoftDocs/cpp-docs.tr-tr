@@ -8,12 +8,12 @@ helpviewer_keywords:
 - argv argument
 - argc argument
 ms.assetid: 91c2cbe3-9aca-4277-afa1-6137eb8fb704
-ms.openlocfilehash: 64c94798587ad64f369ca0ed03a7251d0eb9acb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71301bd5eedf2806e97b8d24d95beaf2843427ad
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447157"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148510"
 ---
 # <a name="argument-description"></a>Bağımsız Değişken Tanımı
 
@@ -33,6 +33,6 @@ Son işaretçi (`argv[argc]`) olan **NULL**. (Bkz [getenv](../c-runtime-library/
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

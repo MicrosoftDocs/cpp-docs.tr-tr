@@ -11,16 +11,12 @@ helpviewer_keywords:
 - controls [C++], removing from groups
 - Dialog Editor [C++], dominant control
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
-ms.author: Michael.Blome
-ms.topic: tutorial
-ms.service: cpp
-author: mikeblome
-ms.openlocfilehash: 008c99ae4b2cba5ff8f8b9ab069bb1b8085b7524
-ms.sourcegitcommit: b488462a6e035131121e6f32d8f3b108cc798b5e
+ms.openlocfilehash: a0a21942f6e2c37b96a7a704fadbb9bacc4761c8
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55293643"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149680"
 ---
 # <a name="selecting-controls"></a>Denetimleri Seçme
 

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - multibyte characters, converting
 ms.assetid: bbee7586-6a60-4168-bb98-0d1c8aa823a1
-ms.openlocfilehash: 890b95fd77ed08ff94528e5df61dab5a6832c631
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef1e6d64e508c06cb682e91870ce17a3bc688187
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538924"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149290"
 ---
 # <a name="converting-multibyte-characters"></a>Birden Çok Baytlı Karakterleri Dönüştürme
 
@@ -17,6 +17,6 @@ ms.locfileid: "50538924"
 
 Geçerli yerel ayar varsayılan olarak "C" yerel ayarıdır. İle değiştirilebilir [#pragma setlocale](../preprocessor/setlocale.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Karakterler](../c-language/characters.md)

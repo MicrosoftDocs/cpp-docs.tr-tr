@@ -12,12 +12,12 @@ helpviewer_keywords:
 - automatic storage class
 - types [C], initializing
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
-ms.openlocfilehash: f991eff82e5b6919f7960513ae9bc502cad77069
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3cf7eddcf43a65a787de60c391863d6471be7bcf
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641096"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151149"
 ---
 # <a name="initializing-scalar-types"></a>Ölçekli Türleri Başlatma
 
@@ -104,6 +104,6 @@ int function( void )
 
 Genel değişken `GLOBAL` genel ömrü sahiptir dış düzeyinde bildirilir. Yerel değişken `LOCAL` sahip **otomatik** depolama sınıfı ve yalnızca bu bildirilen işlev yürütülürken bir adresine sahiptir. Bu nedenle, başlatılmaya çalışılırken **statik** işaretçi değişkeninin `lp` adresiyle `LOCAL` izin verilmez. **Statik** işaretçi değişkeninin `gp` adresine başlatılabilir `GLOBAL` bu adrese her zaman aynı olduğu için. Benzer şekilde, `*rp` çünkü başlatılabilir `rp` yerel bir değişkendir ve nonconstant başlatıcısına sahip olabilir. Blok, her girildiğinde `LOCAL` sonra atanan yeni bir adresi olan `rp`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Başlatma](../c-language/initialization.md)

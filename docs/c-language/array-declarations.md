@@ -6,12 +6,12 @@ helpviewer_keywords:
 - declaring arrays
 - arrays [C++], declaring
 ms.assetid: 5f958b97-cef0-4058-bbc6-37c460aaed9b
-ms.openlocfilehash: 43fd2829d8a2d9984a068d74b4e7972a9f1b116c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bc75e86601da77758490544cc5b02c485dcee46
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449926"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147782"
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 
@@ -94,6 +94,6 @@ Bir dizinin en büyük boyutunu barındırmak için gereken tamsayı türü boyu
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

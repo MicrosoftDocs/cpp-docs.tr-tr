@@ -6,12 +6,12 @@ helpviewer_keywords:
 - multidimensional arrays
 - subscript expressions
 ms.assetid: 4ba5c360-1f17-4575-b370-45f62e1f2bc2
-ms.openlocfilehash: cd17eb060a6151417cbbe8dfdbfdc42ffe88ce98
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34f5c60ba9ba5da869426ae4971808a5d75fee2f
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623944"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151019"
 ---
 # <a name="multidimensional-arrays-c"></a>Çok Boyutlu Diziler (C)
 
@@ -34,7 +34,8 @@ int prop[3][4][6];
 int i, *ip, (*ipp)[6];
 ```
 
-`prop` dizisine yapılan başvuru aşağıdaki gibi görünür:
+
+  `prop` dizisine yapılan başvuru aşağıdaki gibi görünür:
 
 ```
 i = prop[0][0][1];
@@ -68,6 +69,6 @@ Bu deyimlerin ilkinde, `prop[2][1]` ifadesi üç boyutlu `prop` dizisinin geçer
 
 Benzer şekilde, ikinci `prop[2]` deyimindeki `ipp = prop[2];` ifadesinin sonucu, iki boyutlu diziye yönelik olan bir işaretçi değeridir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alt Simge İşleci:](../cpp/subscript-operator.md)

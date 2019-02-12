@@ -11,18 +11,18 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: a0a5a51bfcb5265f7b415433c3f6b64423840ebe
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: a6424f3414d9da17e52c0a9f78290497f5e5e01e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522465"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56146898"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
 **Microsoft'a özgü**
 
-Bir sayar BITS (nüfus sayımı) bir 16, 32 veya 64 bayt işaretsiz tamsayı.
+Bir sayar BITS (nüfus sayımı) bir 16, 32 veya 64-bit işaretsiz tamsayı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,7 +59,7 @@ Bir bit sayısı `value` parametresi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her biri bu iç oluşturur `popcnt` yönergesi.  Değer boyutu, `popcnt` yönerge boyutu bağımsız olarak aynı döndürür.  32 bit modunda 64 bit Hayır 64-bit genel amaçlı yazmaç yok, bu nedenle vardır `popcnt`.
+Her biri bu iç oluşturur `popcnt` yönergesi. 32 bit modunda 64 bit Hayır 64-bit genel amaçlı yazmaç yok, bu nedenle vardır `popcnt`.
 
 İçin donanım desteği belirlemek için `popcnt` yönerge, çağrı `__cpuid` ile iç `InfoType=0x00000001` ve 23 bit `CPUInfo[2] (ECX)`. Bu bit Aksi takdirde yönerge destekleniyorsa 1 ve 0 olur. Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `popcnt` yönergesi, sonuçların tahmin edilemeyeceğine.
 

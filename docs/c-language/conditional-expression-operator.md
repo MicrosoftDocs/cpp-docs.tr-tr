@@ -6,12 +6,12 @@ helpviewer_keywords:
 - operators [C++], conditional
 - expressions [C++], conditional
 ms.assetid: c4f1a5ca-0844-44a7-a384-eca584d4e3dd
-ms.openlocfilehash: b93e99aef4b7d8a1b20373fda1e4d9672b416b7c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9dc93a47d36af92fe370e3f56f504682d49bd1dd
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506151"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150629"
 ---
 # <a name="conditional-expression-operator"></a>Koşullu İfade İşleci
 
@@ -68,6 +68,6 @@ int y;
 
 Bu örnekte, iki işlev `f1` ve `f2`ve iki değişken `x` ve `y`, bildirilir. Programda daha sonra iki değişken aynı değeri, işlev varsa `f1` çağrılır. Aksi takdirde, `f2` çağrılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Koşullu İşleç: ? :](../cpp/conditional-operator-q.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - simple assignment operator
 - equal sign
 ms.assetid: e7140a0a-7104-4b3a-b293-7adcc1fdd52b
-ms.openlocfilehash: 76c48fc6774f97bab69f916ad7e5176e91d004ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 77c61101e9540a0d9469e7176eb15992a73b4b09
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574921"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148978"
 ---
 # <a name="simple-assignment-c"></a>Basit Atama (C)
 
@@ -29,6 +29,6 @@ x = y;
 
 Bu örnekte, değerini `y` türüne dönüştürülür **çift** ve atanan `x`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Atama İşleçleri](../c-language/c-assignment-operators.md)

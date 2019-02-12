@@ -21,12 +21,12 @@ helpviewer_keywords:
 - unsigned types [C++], storage
 - data types [C], storage
 ms.assetid: bd1f33c1-c6b9-4558-8a72-afb21aef3318
-ms.openlocfilehash: fe6d3fb861143a44047e01f338282dbb0d10ffae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51b67b375cf7a4608d3080e5922cabbf3135ddfe
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555005"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152254"
 ---
 # <a name="storage-of-basic-types"></a>Temel Türleri Depolama
 
@@ -46,6 +46,6 @@ Aşağıdaki tabloda her bir temel türü ile ilişkili depolama özetlenmektedi
 
 C veri türleri, genel kategoriye ayrılır. "Tam sayı türleri" dahil `char`, `int`, **kısa**, **uzun**, **imzalı**, `unsigned`, ve `enum`. "Kayan" türler **float**, **çift**, ve `long double`. "Aritmetik türleri" tüm kayan ve tam sayı türleri içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve Türler](../c-language/declarations-and-types.md)

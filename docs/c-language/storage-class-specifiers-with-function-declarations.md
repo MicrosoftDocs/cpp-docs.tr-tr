@@ -9,12 +9,12 @@ helpviewer_keywords:
 - external linkage, function declarations
 - external linkage, storage-class specifiers
 ms.assetid: 801d7df2-efa9-4924-a725-274a5654cfd4
-ms.openlocfilehash: d38bb9350a59127dd6c224cef29b6197244a57c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69d6fa2b17523f2bb4068cd05a11265d91750021
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447066"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152267"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 
@@ -40,6 +40,6 @@ Microsoft şemadaki sağlayan bir `extern` tanımlayıcı olarak **statik**.
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Depolama Sınıfları](../c-language/c-storage-classes.md)

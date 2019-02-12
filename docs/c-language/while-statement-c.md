@@ -7,12 +7,12 @@ helpviewer_keywords:
 - while keyword [C]
 - while keyword [C], syntax
 ms.assetid: d0c970b8-12a9-4827-afb2-a051111834b7
-ms.openlocfilehash: d774971910fe69ed707bc545e4c0e022282a1d17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a789f248702f33342a19f95710a8ae313da1d94
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662351"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151903"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C)
 
@@ -45,6 +45,6 @@ while ( i >= 0 )
 
 Bu örnek, karakteri kopyalar `string2` için `string1`. Varsa `i` değerinden büyükse veya eşitse 0 `string2[i]` atandığı `string1[i]` ve `i` azaltılır. Zaman `i` ulaştığında veya yürütülmesini 0 düştüğünde `while` deyimini sonlandırır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [while Deyimi (C++)](../cpp/while-statement-cpp.md)

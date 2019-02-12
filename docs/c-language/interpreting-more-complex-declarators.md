@@ -5,12 +5,12 @@ helpviewer_keywords:
 - complex declarators
 - interpreting complex declarators
 ms.assetid: dd5b7019-c86d-4645-a5cc-21f834de6f4a
-ms.openlocfilehash: a6049f060a81f75f6c85686a6526b590de688eaa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 13c81728f02963863b641348b58380da099b0013
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581551"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148250"
 ---
 # <a name="interpreting-more-complex-declarators"></a>Daha Karmaşık Bildirimcileri Yorumlama
 
@@ -126,6 +126,6 @@ union sign *(*var[5])[5]; /* Array of pointers to arrays
 
 Bu örnekte, parantezler yerleşimini bildirim anlamını nasıl değiştiğini gösterir. Bu örnekte, `var` birleşimler işaretçiler beş öğe diziler işaretçilere beş öğe dizisidir. Nasıl kullanılacağına ilişkin örnekler için `typedef` karmaşık bildirimlerinden kaçınmak için bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve Türler](../c-language/declarations-and-types.md)

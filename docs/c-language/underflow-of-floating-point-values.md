@@ -2,12 +2,12 @@
 title: Kayan Nokta Değerlerinin Yetersiz Kalması
 ms.date: 11/04/2016
 ms.assetid: 78af8016-643c-47db-b4f1-7f06cb4b243e
-ms.openlocfilehash: cd4aadc5ab006b79a43e31348fa101d40e8ca03a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93230b50b81ede44a9c55406db1566df2660c1ba
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477369"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149944"
 ---
 # <a name="underflow-of-floating-point-values"></a>Kayan Nokta Değerlerinin Yetersiz Kalması
 
@@ -15,6 +15,6 @@ ms.locfileid: "50477369"
 
 Bir kayan nokta yetersizliği `errno` ifadesini `ERANGE` olarak ayarlamaz. Bir değer sıfıra yaklaştığında ve en sonunda yetersiz kaldığında, değer sıfır olarak ayarlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kitaplık İşlevleri](../c-language/library-functions.md)

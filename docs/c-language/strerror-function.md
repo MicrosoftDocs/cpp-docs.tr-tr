@@ -4,18 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - strerror function
 ms.assetid: 9fb9366e-d9a8-47d4-ad51-d98774a0617f
-ms.openlocfilehash: 44289743195deacaa982dd08432209fcc185c50b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2bcfef0ad7c2c432b84efdff76c88a87f6f84c9
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539366"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147392"
 ---
 # <a name="strerror-function"></a>strerror İşlevi
 
 **ANSI 4.11.6.2** içeriğini bir hata iletisi tarafından döndürülen dizeler `strerror` işlevi
 
-`strerror` işlevi bu iletileri oluşturur:
+
+  `strerror` işlevi bu iletileri oluşturur:
 
 ```
 0   Error 0
@@ -57,6 +58,6 @@ ms.locfileid: "50539366"
 36  Resource deadlock would occur
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kitaplık İşlevleri](../c-language/library-functions.md)

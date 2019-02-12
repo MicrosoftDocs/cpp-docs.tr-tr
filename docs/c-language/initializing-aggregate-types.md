@@ -8,12 +8,12 @@ helpviewer_keywords:
 - union keyword [C]
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-ms.openlocfilehash: ebc7f6185c8115df6e6b77a034307f8998b1c2ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6816a6f63de262b927a3c5aeed8774ba29c2eaa
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530314"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151500"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 
@@ -150,6 +150,6 @@ union
 
 Birleşim değişkenini `y`, bu örnekte, başlatılır. Başlatıcı bir toplu Başlatıcı birleşimin ilk öğeyi bir dizi olduğundan. Başlatıcı listesi `{'1'}` dizinin ilk satırına değerleri atar. Yalnızca bir değer listede görünür olduğundan, öğeyi ilk sütunda karakter başlatılır `1`, ve kalan iki öğe sıradaki değeri 0 varsayılan olarak başlatılır. Benzer şekilde, ikinci satırının ilk öğeyi `x` karakter başlatılır `4`, ve kalan iki öğe sıradaki değeri 0 olarak başlatılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Başlatma](../c-language/initialization.md)

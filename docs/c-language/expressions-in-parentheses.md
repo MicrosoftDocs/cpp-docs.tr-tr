@@ -7,12 +7,12 @@ helpviewer_keywords:
 - expressions [C++], evaluating
 - parentheses, expressions
 ms.assetid: b8636147-6982-408c-9e64-29e40678ee43
-ms.openlocfilehash: 0b58ed2483b404df957b8e9e95e41442403036c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0105556530161991b46c5ee25cd73f2f995063f
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505553"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149355"
 ---
 # <a name="expressions-in-parentheses"></a>Parantezlerdeki İfadeler
 
@@ -39,6 +39,6 @@ Derleyici, herhangi bir sırada çarpma iki tarafının değerlendirmek ücretsi
 
 Özel durum yan etkilerden kaynaklanan açıklanmıştır [yan etkileri](../c-language/side-effects.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Birincil İfadeler](../c-language/c-primary-expressions.md)

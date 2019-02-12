@@ -5,12 +5,12 @@ helpviewer_keywords:
 - expression evaluation, side effects
 - side effects in expression evaluation
 ms.assetid: d9b3004a-830e-43a0-bea5-8989d501d670
-ms.openlocfilehash: 97fbb2bc382216e27139a01d1e803a15bd16160b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de5e398afd8b95cfe5596f487a36b6a2d27e3287
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582574"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147483"
 ---
 # <a name="side-effects"></a>Yan Etkiler
 
@@ -31,6 +31,6 @@ Bu örnekte, değerini `x` diğer bir deyişle değiştirilmiş tahmin edilemez.
 
 C yan etkileri değerlendirme sırası tanımlamıyor yukarıda açıklanan iki değerlendirme yöntem doğru olduğundan ve ya da uygulanabilir. Kodunuzun taşınabilir ve açık olduğundan emin olmak için değerlendirme yan etkileri için belirli bir sıraya bağlıdır deyimleri kaçının.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İfade Değerlendirme](../c-language/expression-evaluation-c.md)

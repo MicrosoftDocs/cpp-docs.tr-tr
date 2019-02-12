@@ -6,12 +6,12 @@ helpviewer_keywords:
 - compound assignment operators
 - assignment operators, compound
 ms.assetid: db7b5893-cd56-4f1c-9981-5a024200ab63
-ms.openlocfilehash: 102f53378430074a59636eb18488a7ab51289731
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39a9391e2a62a59c5e7fd7937c1f3d12509b76ad
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445142"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148770"
 ---
 # <a name="c-compound-assignment"></a>C Bileşik Atama
 
@@ -35,6 +35,6 @@ n &= MASK;
 
 Bu örnekte, üzerinde bir bit düzeyinde kapsamlı-ve işlem gerçekleştirilir `n` ve `MASK`, ve sonucu atandığı `n`. Bildirim sabiti `MASK` ile tanımlanmış bir [#define](../preprocessor/hash-define-directive-c-cpp.md) önişlemci yönergesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Atama İşleçleri](../c-language/c-assignment-operators.md)

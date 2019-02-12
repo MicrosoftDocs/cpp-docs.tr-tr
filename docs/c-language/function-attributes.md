@@ -7,12 +7,12 @@ helpviewer_keywords:
 - functions [C], attributes
 - function attributes
 ms.assetid: f0c03e20-94f2-47b5-a166-993a949a1a40
-ms.openlocfilehash: 792f8d3d89d28613c7a357224cfaede5e2db234f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf22eb4cd4a1750c3006146ba1377e8e472d89d4
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467879"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149537"
 ---
 # <a name="function-attributes"></a>İşlev Öznitelikleri
 
@@ -22,6 +22,6 @@ ms.locfileid: "50467879"
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C İşlev Tanımları](../c-language/c-function-definitions.md)

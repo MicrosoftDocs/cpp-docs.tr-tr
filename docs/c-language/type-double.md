@@ -7,12 +7,12 @@ helpviewer_keywords:
 - portability [C++], type double
 - double data type
 ms.assetid: 17c85b24-1475-4d41-a03c-ddf2d6561d34
-ms.openlocfilehash: 42f8ed943fd9d034d5cae8cb057e094363b27d8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43e6cc444f4d6a973fc58b5ce550e468066aca1b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532268"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151865"
 ---
 # <a name="type-double"></a>Tür double
 
@@ -20,10 +20,10 @@ Double türündeki çift duyarlıklı değerler 8 bayta sahiptir. Biçim, 11 bit
 
 **Microsoft'a özgü**
 
-Double türü 64 bit içerir: işaret için 1, üs için 11 ve mantis için 52. Kendi +/-1.7E308 en az 15 duyarlılık basamağıyla ile rozsah.
+Double türü 64 bit içerir: işaret için 1 üs için 11 ve Mantis için 52. Kendi +/-1.7E308 en az 15 duyarlılık basamağıyla ile rozsah.
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

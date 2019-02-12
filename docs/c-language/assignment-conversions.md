@@ -5,12 +5,12 @@ helpviewer_keywords:
 - conversions, assignment
 - assignment conversions
 ms.assetid: 4ee01013-de32-4aae-b12e-0051d0cde927
-ms.openlocfilehash: fb3da57af62171ef9670267f94f01ccc097e5942
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6caed3d7a8079bc6b02e9ad17859cd4062cbee7f
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649117"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152722"
 ---
 # <a name="assignment-conversions"></a>Atama Dönüştürmeleri
 
@@ -28,6 +28,6 @@ Atama işlemlerinde, atanan değerin türü atamayı alan değişkenin türüne 
 
 Tür niteleyicileri olsa da dönüştürmenin allowability etkilemez bir **const** l değeri atamanın solunda kullanılamaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Dönüştürmeleri](../c-language/type-conversions-c.md)

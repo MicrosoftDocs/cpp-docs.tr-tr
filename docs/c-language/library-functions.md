@@ -2,12 +2,12 @@
 title: Kitaplık İşlevleri
 ms.date: 11/04/2016
 ms.assetid: 90c096ab-31df-479e-91d8-289900dc0bff
-ms.openlocfilehash: 5ac2f67eb69cadfdc5b45022ad2fdf82a8612bf2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6cb9c0197ad625487a2c0e98d176c46c4bba4139
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664288"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149524"
 ---
 # <a name="library-functions"></a>Kitaplık İşlevleri
 
@@ -73,6 +73,6 @@ ms.locfileid: "50664288"
 
 - [Clock işlevi](../c-language/clock-function-c.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

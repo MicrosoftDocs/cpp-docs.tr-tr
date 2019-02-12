@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ellipses (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-ms.openlocfilehash: 2b4b549ae6059cddf3ab868950cda215fb043d8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0652fe6076899020050d94378649018721b4b188
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506944"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147236"
 ---
 # <a name="parameters"></a>Parametreler
 
@@ -74,6 +74,6 @@ En az bir parametre parametre listesinde ortaya çıkarsa, liste üç nokta bir 
 
 Derleyici olağan aritmetik dönüştürmeler bağımsız olarak her bir parametre ve her bağımsız değişken gerekirse gerçekleştirir. Dönüştürme işleminden sonra hiçbir parametre türünden daha kısa bir `int`, ve bir parametre yok **float** parametre türü olarak açıkça belirtilmediği sürece yazın **float** prototipteki. Bu, örneğin, bu parametre olarak bildirme anlamına gelir bir `char` olarak bildirme aynı etkiye sahip bir `int`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C İşlev Tanımları](../c-language/c-function-definitions.md)

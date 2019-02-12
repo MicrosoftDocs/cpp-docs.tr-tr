@@ -2,12 +2,12 @@
 title: Satırbaşı Karakterlerini Sonlandırma
 ms.date: 11/04/2016
 ms.assetid: ab145180-a098-41b5-8db0-2520272964ba
-ms.openlocfilehash: 5eff71a0faa80b541245cc602549067722934031
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e600ad6a515965c6ce01280d555e7eab3134b8fd
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519775"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150811"
 ---
 # <a name="terminating-newline-characters"></a>Satırbaşı Karakterlerini Sonlandırma
 
@@ -15,6 +15,6 @@ ms.locfileid: "50519775"
 
 Akış işlevleri yeni bir satırı veya dosya sonunu bir satır sonlandırıcı karakter olarak kabul eder.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kitaplık İşlevleri](../c-language/library-functions.md)

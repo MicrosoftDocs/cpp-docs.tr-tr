@@ -13,12 +13,12 @@ helpviewer_keywords:
 - logical negation
 - '! operator, unary arithmetic operators'
 ms.assetid: 78c91415-d469-499e-9dfe-4435350fd333
-ms.openlocfilehash: fb10bac4a7c0299bccd98249e08a6e270c2c5ffe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f64bc5107cf0df55fd445d04d557e952702deaee
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625010"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150837"
 ---
 # <a name="unary-arithmetic-operators"></a>Birli Aritmetik İşleçler
 
@@ -55,8 +55,10 @@ Bu örnekte, `y` öğesine atanan yeni değer, 0xAAAA veya 0x5555 değerine ili�
 if( !(x < y) )
 ```
 
-`x`, `y` öğesine eşit veya ondan büyükse, ifadenin sonucu 1'dir (doğru). `x`, `y` öğesinden küçükse, sonuç 0'dır (yanlış).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+  `x`, `y` öğesine eşit veya ondan büyükse, ifadenin sonucu 1'dir (doğru). 
+  `x`, `y` öğesinden küçükse, sonuç 0'dır (yanlış).
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - default signals
 - defaults, signals
 ms.assetid: db9fc17b-75c0-4d33-86be-c536584bbede
-ms.openlocfilehash: 91d054f32a072f9ad9ebc15a8932bf2d52a43597
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb84e168d0693313373395e8d5f44be0eca9891e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647752"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152566"
 ---
 # <a name="default-signals"></a>Varsayılan Sinyaller
 
@@ -18,6 +18,6 @@ ms.locfileid: "50647752"
 
 Bir program çalışmaya başladığında, sinyaller varsayılan durumlarına ayarlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kitaplık İşlevleri](../c-language/library-functions.md)

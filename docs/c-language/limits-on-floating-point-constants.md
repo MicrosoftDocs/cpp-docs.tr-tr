@@ -9,12 +9,12 @@ helpviewer_keywords:
 - limits, floating-point constants
 - floating-point numbers, floating limits
 ms.assetid: 2d975868-2af6-45d7-a8af-db79f2c6b67b
-ms.openlocfilehash: 545c8fc356d7e1a6c56fdd5c144fa9a55120c97f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df39ee719a4474f6dfd55d31a2848169a1168390
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664119"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148757"
 ---
 # <a name="limits-on-floating-point-constants"></a>Kayan Nokta Sabitleri Sınırlamaları
 
@@ -44,6 +44,6 @@ Yukarıdaki tabloda yer alan bilgilerin gelecekteki uygulamalarda değişebilece
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Kayan Nokta Sabitleri](../c-language/c-floating-point-constants.md)

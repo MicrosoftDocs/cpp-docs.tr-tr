@@ -7,12 +7,12 @@ helpviewer_keywords:
 - storing structures
 - packing structures
 ms.assetid: 60ff292f-2595-4f37-ae00-4c4b4f047196
-ms.openlocfilehash: 4dc04eda222b4fed4fb24f8d9ef138f9503093ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e15f39b5a7a78da117c3b8a551ebfba5e07c194
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460625"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150343"
 ---
 # <a name="storage-and-alignment-of-structures"></a>Yapıların Depolanması ve Hizalanması
 
@@ -40,6 +40,6 @@ Bit alanları varsayılan olarak **uzun** Microsoft C derleyicisi için. Yapı �
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapı Bildirimleri](../c-language/structure-declarations.md)

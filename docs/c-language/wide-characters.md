@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - wide characters
 ms.assetid: 165c4a12-8ab9-45fb-9964-c55e9956194c
-ms.openlocfilehash: 619adfd398f3955708df3267613de40e71e15fa6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 868acf0abd26a1f4b5533bb997fb9ea09a27954b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452071"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151968"
 ---
 # <a name="wide-characters"></a>Geniş Karakterler
 
@@ -19,6 +19,6 @@ Normal karakter sabiti 'ab', (int)0x6162 tamsayı değerine sahiptir. Birden faz
 
 Çok baytlı karakter sabiti, yukarıdaki gibi okunur ve `mbtowc` çalışma zamanı işlevi kullanılarak geniş karakter sabitine dönüştürülür. Sonuç geçerli bir geniş karakter sabiti değilse, bir hata verilir. Herhangi bir durumda, `mbtowc` işlevi tarafından incelenen bayt sayısı `MB_CUR_MAX` değeriyle sınırlıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Karakterler](../c-language/characters.md)

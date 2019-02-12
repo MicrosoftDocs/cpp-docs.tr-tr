@@ -6,18 +6,19 @@ helpviewer_keywords:
 - inline functions, __inline keyword
 - functions [C++], inline functions
 ms.assetid: 00f4b2ff-8ad0-4165-9f4c-2ef157d03f31
-ms.openlocfilehash: 2f2ed8ccff0ecbdeff7f3ebac94d5e19ec8042f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebe0fd3d785903c149999bd4ec8de9eabeabdb05
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452643"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147264"
 ---
 # <a name="inline-functions"></a>Satır İçi İşlevler
 
 **Microsoft'a özgü**
 
-`__inline` anahtar sözcüğü, derleyiciye işlev tanımı içindeki kodu bir işlev çağrısının her örneğiyle değiştirmesini söyler. Ancak, değiştirme yalnızca derleyicinin denetiminde gerçekleştirilir. Örneğin, derleyici bir işlevi adresi alınmışsa veya satır içine alınmak için çok büyükse satır içine almaz.
+
+  `__inline` anahtar sözcüğü, derleyiciye işlev tanımı içindeki kodu bir işlev çağrısının her örneğiyle değiştirmesini söyler. Ancak, değiştirme yalnızca derleyicinin denetiminde gerçekleştirilir. Örneğin, derleyici bir işlevi adresi alınmışsa veya satır içine alınmak için çok büyükse satır içine almaz.
 
 Bir işlevin satır içine alınabilecek bir aday olarak değerlendirilebilmesi için yeni stilde işlev tanımını kullanması gerekir.
 
@@ -33,11 +34,11 @@ Satır içi işlevlerin kullanımı, aşağıdaki nedenlerden dolayı daha hızl
 
 - Derleyici yordamlar arası iyileştirme gerçekleştirmediği için satır içinde oluşturulan işlevlere normal işlevlerde kullanılamayan kod iyileştirmeleri uygulanır.
 
-`__inline` kullanan işlevler satır içi derleyici koduyla karıştırılmamalıdır. Bkz: [satır içi Assembler](../c-language/inline-assembler-c.md) daha fazla bilgi için.
+
+  `__inline` kullanan işlevler satır içi derleyici koduyla karıştırılmamalıdır. Bkz: [satır içi Assembler](../c-language/inline-assembler-c.md) daha fazla bilgi için.
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Satır içi, __inline, \__forceinline](../cpp/inline-functions-cpp.md)
-
+[inline, __inline, \__forceinline](../cpp/inline-functions-cpp.md)

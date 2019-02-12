@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - identifiers, designating objects
 ms.assetid: d4602fe6-e7e6-40cc-9823-3b1ebf5d3d38
-ms.openlocfilehash: 49b5aa2fd895d96f58e24029b86c8b31c24a7758
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 053720bcdf635a7e09363712259b558d93a2972c
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499730"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151461"
 ---
 # <a name="identifiers-in-primary-expressions"></a>Birincil İfadelerdeki Tanımlayıcılar
 
@@ -19,6 +19,6 @@ Bir dizi tanımlayıcısına bir atama işleminin sol işleneni biçiminin olama
 
 Bir işlev olarak bildirilen bir tanımlayıcı işlevi adresi değeri olduğu bir işaretçiyi temsil eder. Belirtilen türde bir değer döndüren bir işlev işaretçisi ele alır. Bu nedenle, işlev tanımlayıcıları l-değerler atama işlemlerinde olamaz. Daha fazla bilgi için [tanımlayıcıları](../c-language/c-identifiers.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Birincil İfadeler](../c-language/c-primary-expressions.md)

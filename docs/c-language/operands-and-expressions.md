@@ -6,12 +6,12 @@ helpviewer_keywords:
 - operands, definition
 - operands
 ms.assetid: 8453b095-a017-4c70-9a64-e3b2bd1e35e5
-ms.openlocfilehash: 457565e2a29035224b42937e251db2926be7d0c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7e389279c943d6343b28184e6933b62535daae0
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650274"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150720"
 ---
 # <a name="operands-and-expressions"></a>İşlenenler ve İfadeler
 
@@ -25,6 +25,6 @@ ms.locfileid: "50650274"
 
 C içindeki işlenenler şunları içerir; sabitler, tanımlayıcılar, dizeler, işlev çağrıları, alt simge ifadeler, üye seçimi ifadeleri ve işlenenleri işleçlerle birleştirerek veya işlenenleri parantez içine alarak yapılan karmaşık ifadeler. Bu işlenenlerin sözdizimi verilen [birincil ifadeler](../c-language/c-primary-expressions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - const keyword [C]
 - pointers, declarations
 ms.assetid: 8b3b7fc7-f44d-480d-b6f9-cebe4e5462a6
-ms.openlocfilehash: c09e73eec0f020ccc334d443248feb09631a0f7f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ee6e9e78f3793cd1912ece7f8627a4be68e929c
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432486"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152007"
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 
@@ -114,6 +114,6 @@ struct id
 
 Değişken *kayıt* yapı türüne sahip *kimliği*. Unutmayın *sağlayıcı adı* adlı başka bir yapı türü için bir işaretçi olarak bildirilen *adı*. Bu bildirim önce görünebilir *adı* türü tanımlanmıştır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

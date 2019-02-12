@@ -10,12 +10,12 @@ helpviewer_keywords:
 - square brackets [ ], arrays
 - subscript expressions
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
-ms.openlocfilehash: 2e1d168cd3b6f3a5ca29cf9e6d981430d5bf671a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd3b495483a460f01fe1951ee4c8b5ac3b447701
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506268"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147653"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 
@@ -59,6 +59,6 @@ Toplama işleci dönüştürme kurallarına göre (içinde verilen [toplama işl
 
 Alt simge ifadesi `line[0]` satırının ilk öğenin değeri tarafından temsil edilen adrese uzaklığı beri temsil eden `line` 0'dır. Benzer şekilde, bir ifade gibi `line[5]` satır öğesi uzaklığı beş konumdan veya dizinin altıncı öğesinin anlamına gelir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alt Simge İşleci:](../cpp/subscript-operator.md)

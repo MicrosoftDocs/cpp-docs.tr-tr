@@ -2,12 +2,12 @@
 title: Örnek Program
 ms.date: 11/04/2016
 ms.assetid: fc22ef82-9caa-425f-b201-2891bc123d1f
-ms.openlocfilehash: 31e8f822462dad7b3935548c9c25e7334a82b377
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc00ee391fd845039791b8cec727623074a7aeff
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608629"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147132"
 ---
 # <a name="example-program"></a>Örnek Program
 
@@ -73,6 +73,6 @@ FILE1'DE. Genel değişkenler başlatmak için bildirimleri tanımlama C kulland
 
 Ömür ve görünürlük tanımlayıcıların ele alınmıştır [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md). İşlevler hakkında daha fazla bilgi için bkz. [işlevleri](../c-language/functions-c.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - constants, C
 ms.assetid: 4158234c-e189-4e25-970f-52a04bc6380a
-ms.openlocfilehash: 1da2a7434ced7f38fa199e5911e01709983fda91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f927d977d818bed28c5fd7392f7933cd1a63ced3
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547868"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150031"
 ---
 # <a name="summary-of-constants"></a>Sabitlerin Özeti
 
@@ -25,7 +25,7 @@ ms.locfileid: "50547868"
 
 *Sabit kesirli*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi***.**
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*  **.**
 
 *Üs bölümü*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*<br/>
@@ -71,7 +71,7 @@ ms.locfileid: "50547868"
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
 
 *onaltılık basamak*: biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**B C D E F**
 
@@ -111,9 +111,9 @@ ms.locfileid: "50547868"
 &nbsp;&nbsp;&nbsp;&nbsp;**\\** *sekizlik basamak* *sekizlik basamak* *sekizlik basamak*
 
 *onaltılık kaçış sırası*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**\x** *onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\x** *hexadecimal-digit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık kaçış sırası* *onaltılık basamak*
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)<br/>

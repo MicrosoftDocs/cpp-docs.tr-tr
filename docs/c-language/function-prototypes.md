@@ -8,12 +8,12 @@ helpviewer_keywords:
 - functions [C], return types
 - prototypes [C++], function
 ms.assetid: d152f8e6-971e-432c-93ca-5a91400653c2
-ms.openlocfilehash: b424f07fb139e3ece48da7bfb5cff94f7b84334c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c75db3e1550927af57054a2cc1561d9df1567a4
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596813"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148810"
 ---
 # <a name="function-prototypes"></a>İşlev Prototipleri
 
@@ -85,6 +85,6 @@ void func1( struct S * );
 
 Altında **/Ze**, etiket yine de genel kapsamda girilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İşlevler](../c-language/functions-c.md)

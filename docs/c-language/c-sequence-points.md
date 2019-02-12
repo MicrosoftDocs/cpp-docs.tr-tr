@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - sequence points
 ms.assetid: c84885a5-4336-4eba-a643-058df4249903
-ms.openlocfilehash: 995f4176c046da5d34a43860c8e8f01330aee56c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 13d6044269f60dc426a8b0b9b03463f387dfaa10
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650833"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152644"
 ---
 # <a name="c-sequence-points"></a>C Sıralama Noktaları
 
@@ -37,6 +37,6 @@ Arasında ardışık "dizi noktaları bir nesnenin değerini değiştirilebilir 
 
 - İfade bir `return` deyimi. İfade tamamen değerlendirilir ve denetim çağırma işlevine döndürmeden önce tüm yan etkiler tamamlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İfade Değerlendirme](../c-language/expression-evaluation-c.md)

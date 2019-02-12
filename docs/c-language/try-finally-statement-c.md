@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __finally keyword [C]
 - structured exception handling, try-finally
 ms.assetid: 514400c1-c322-4bf3-9e48-3047240b8a82
-ms.openlocfilehash: ada38f80ff16f91a676803134854bca0b0dd4f14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82cc5ffa3f50196fc5f518b8bb5b2080ff14fd8d
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523961"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151838"
 ---
 # <a name="try-finally-statement-c"></a>try-finally Deyimi (C)
 
@@ -50,6 +50,6 @@ Sonlandırma işleyicisi bir işlem yürütülürken sonlandırılırsa çağrı
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [try-finally Deyimi](../cpp/try-finally-statement.md)

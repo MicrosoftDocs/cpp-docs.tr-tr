@@ -9,12 +9,12 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
-ms.openlocfilehash: a1c584b324aced32fea6b1b87b9744dedeaa4e5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc238dd0088558233d84f8bbd15d06743e133449
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474262"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149238"
 ---
 # <a name="c-enumeration-declarations"></a>C Numaralandırma Bildirimleri
 
@@ -144,6 +144,6 @@ Adsız Numaralandırıcı veri türleri de bildirilebilir. Veri türü adını a
 enum { yes, no } response;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sabit Listeleri](../cpp/enumerations-cpp.md)

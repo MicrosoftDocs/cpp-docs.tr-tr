@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-ms.openlocfilehash: 98e685556fe5dc874f2af818d8c86d0dcadefe29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d5664634687c689316427c8652865ba9423e24f4
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575675"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147821"
 ---
 # <a name="storage-class"></a>Depolama Sınıfı
 
@@ -41,7 +41,8 @@ Bir işlev tanımı içermiyorsa bir *depolama sınıfı tanımlayıcısı*, dep
 
 Bir işlevin bildirimi içeriyorsa *depolama sınıfı tanımlayıcısı* `extern`, tanımlayıcı tanımlayıcı dosya konumuna sahip tanımlayıcının görünür bildirimiyle aynı bağlantıya sahiptir. Dosya kapsamına sahip görünür bir bildirim yoksa, tanımlayıcının dış bağlantısı vardır. Tanımlayıcının dosya kapsamı ve Hayır varsa *depolama sınıfı tanımlayıcısı*, tanımlayıcının dış bağlantısı vardır. Dış bağlantı, tanımlayıcının her örneğinin aynı nesneyi veya işlevi gösterdiği anlamına gelir. Bkz: [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) bağlantı ve dosya kapsamı hakkında daha fazla bilgi.
 
-`extern` dışında depolama sınıfı tanımlayıcısına sahip blok kapsamı işlev bildirimleri hata oluşturur.
+
+  `extern` dışında depolama sınıfı tanımlayıcısına sahip blok kapsamı işlev bildirimleri hata oluşturur.
 
 Bir işlev ile **statik** depolama sınıfı içinde tanımlanmış olduğu yalnızca kaynak dosyasında görülebilir. Diğer tüm işlevler, ister açıkça ister örtük olarak `extern` depolama sınıfı verilsin, programdaki tüm kaynak dosyalarında görülür. Varsa **statik** depolama sınıfı isteniyorsa, bu işlevin bildiriminin (varsa) ilk örneğinde ve işlevin tanımı bildirilmesi gerekir.
 
@@ -53,6 +54,6 @@ Microsoft uzantıları etkinleştirildiğinde, bir işlevi olarak bildirilen bir
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C İşlev Tanımları](../c-language/c-function-definitions.md)

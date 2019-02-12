@@ -2,12 +2,12 @@
 title: Etkileşimli Cihazlar
 ms.date: 11/04/2016
 ms.assetid: a15ac95d-faf8-4fcf-80ab-0e346d1a5b5a
-ms.openlocfilehash: ffd5baa4e64e31aca15e87405b695354b48b6783
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b6c4b13f352e86217177dfa4b9cfed760462c124
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597138"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148380"
 ---
 # <a name="interactive-devices"></a>Etkileşimli Cihazlar
 
@@ -15,6 +15,6 @@ ms.locfileid: "50597138"
 
 Microsoft C, klavye ve ekranı etkileşimli cihazlar olarak tanımlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ortam](../c-language/environment.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - suppressing environment processing
 - _exec function
 ms.assetid: c20fa11d-b35b-4f3e-93b6-2cd5a1c3c993
-ms.openlocfilehash: 9f7bc78c20aee4b91bf00fefd2615ba1a6611010
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1abdb0c104755efc86543ac4773359078e855999
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623606"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147041"
 ---
 # <a name="customizing-c-command-line-processing"></a>C Komut Satırı İşlemini Özelleştirme
 
@@ -27,6 +27,6 @@ Benzer şekilde, hiçbir zaman ortam tablosuna aracılığıyla erişiyorsanız 
 
 Programınız için çağrılar yaparsa **_spawn** veya **_exec** C Çalışma Zamanı Kitaplığı'ndaki yordamlara ailesi, size değil bastırmak ortam işleme yordamı geçirmek için bu yordamı kullanıldığından bir Yeni işlem ortamı spawning işlemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

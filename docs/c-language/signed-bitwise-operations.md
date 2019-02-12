@@ -5,12 +5,12 @@ helpviewer_keywords:
 - bitwise operations
 - signed bitwise operations
 ms.assetid: 1e5cf65b-ee32-41a0-a5c2-82c1854091f6
-ms.openlocfilehash: d178900a25a5d7a080068fb1919fcba2853bef14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43f65fd5d1ea14ef5e15f18d9c8516ccf5fb1e08
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652016"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147600"
 ---
 # <a name="signed-bitwise-operations"></a>İmzalı Bit Düzeyinde İşlemler
 
@@ -27,6 +27,6 @@ ms.locfileid: "50652016"
 
 Bit düzeyinde AND'in sonucu 96'dır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tam Sayılar](../c-language/integers.md)

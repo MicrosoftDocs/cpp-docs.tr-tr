@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointers, based
 - based addressing
 ms.assetid: b5446920-89e0-4e2f-91f3-1f2a769a08e8
-ms.openlocfilehash: 7d41d1b7a4d19a7837f5aac1eb7975d6cec8c979
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5d8c529adfb92c9db1fdcc5a38f688853606d5d
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581460"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150785"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C)
 
@@ -40,10 +40,11 @@ struct llist_t
 };
 ```
 
-`vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
+
+  `vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-ms.openlocfilehash: 4a4f3392f340fbe3ef1f5cf0a22a1a55f98e9384
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f781e59672764dc518f3c6fad61d4021720362a
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497059"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148146"
 ---
 # <a name="return-type"></a>Dönüş Türü
 
@@ -97,6 +97,6 @@ Bu örnek, bir karakter dizisine bir işaretçi döndüren bir işlevin tanımla
 
 İşlevleri bildirmelisiniz olmayan `int` dönüş türü, çağırmadan önce rağmen böylece doğru tür bağımsız değişkenleri ve dönüş değerleri için denetimini etkin prototipleri önerilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C İşlev Tanımları](../c-language/c-function-definitions.md)

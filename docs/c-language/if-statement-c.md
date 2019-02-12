@@ -11,12 +11,12 @@ helpviewer_keywords:
 - if keyword [C], if statement syntax
 - nested statements
 ms.assetid: d7fc16a0-fdbc-4f39-b596-76e1ca4ad4a5
-ms.openlocfilehash: 3561bcb4edde35b72c6db801f5c32f3f0cfdf6fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b6df50d483a6e2958de3100a07c18b89b0c4f12f
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555044"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152618"
 ---
 # <a name="if-statement-c"></a>if Deyimi (C)
 
@@ -70,6 +70,6 @@ else
 
 İç çevreleyen parantezler **varsa** Bu örnekte deyimi yap **başka** dış yan tümcesi parçası **varsa** deyimi. Varsa `i` 0, küçük veya ona eşit `i` atandığı `x`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [if-else Deyimi (C++)](../cpp/if-else-statement-cpp.md)

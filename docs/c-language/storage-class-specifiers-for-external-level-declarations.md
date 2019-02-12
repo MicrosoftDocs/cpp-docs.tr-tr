@@ -16,12 +16,12 @@ helpviewer_keywords:
 - visibility, variables
 - static storage class specifiers
 ms.assetid: b76b623a-80ec-4d5d-859b-6cef422657ee
-ms.openlocfilehash: 35b8b3082841c14f1cb82778978a84c89a17618d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 941994f668fa035b569f9ccae2c301ebf42bcda6
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587882"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152085"
 ---
 # <a name="storage-class-specifiers-for-external-level-declarations"></a>Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 
@@ -125,6 +125,6 @@ programın başka bir çeviri biriminde görünür.
 
 Değişken `i` değil olsaydı başlatılır, 0'a otomatik olarak ayarlanacak. Bu durumda, değerler 1, 2 ve 3 yazdırılmış. Bkz: [başlatma](../c-language/initialization.md) değişken başlatma hakkında bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Depolama Sınıfları](../c-language/c-storage-classes.md)

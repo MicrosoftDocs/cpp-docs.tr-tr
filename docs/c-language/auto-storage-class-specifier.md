@@ -2,12 +2,12 @@
 title: auto Depolama Sınıfı Tanımlayıcısı
 ms.date: 11/04/2016
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332
-ms.openlocfilehash: 926322fa55a14cc736dc41fbebd5c276ad61f020
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6bd36fd534602a5a4df95047a830058e8c5ef163
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619914"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147015"
 ---
 # <a name="auto-storage-class-specifier"></a>auto Depolama Sınıfı Tanımlayıcısı
 
@@ -15,6 +15,6 @@ ms.locfileid: "50619914"
 
 Bir iç **statik** değişken (statik değişkeni yerel veya blok kapsamı) herhangi bir dış adresi ile başlatılabilir veya **statik** öğesi, ancak başka bir **otomatik**  , çünkü madde adresini bir **otomatik** öğesi bir sabit değil.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [auto Anahtar Sözcüğü](../cpp/auto-keyword.md)

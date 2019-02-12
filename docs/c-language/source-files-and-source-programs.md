@@ -7,12 +7,12 @@ helpviewer_keywords:
 - source files, specifying in compiler
 - source programs
 ms.assetid: 18bb2826-17da-48e5-92a2-10e649f1bc9f
-ms.openlocfilehash: c9a7c17c5cf52cb263d61fe79baa331c5b4d57a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4562f8397e9d2d3e044086b8da8d56ba25047ebd
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637159"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152540"
 ---
 # <a name="source-files-and-source-programs"></a>Kaynak Dosyalar ve Kaynak Programlar
 
@@ -39,6 +39,6 @@ C "kaynak programı" yönergeler, pragmalar, bildirimler, tanımlar, deyim blokl
 
 Kaynak dosyalarının yürütülebilir deyimleri içermesine gerek yoktur. Örneğin, değişkenlerin tanımlarını bir kaynak dosyasına yerleştirmeyi ve ardından bu değişkenlere yapılan başvuruları bunları kullanan başka kaynak dosyalarında bildirmeyi yararlı bulabilirsiniz. Bu teknik, gerektiğinde tanımların bulunmasını ve güncelleştirilmesini kolaylaştırır. Aynı nedenle sabitler ve makrolar, çoğu zaman gerektiğinde kaynak dosyalarında başvurulabilen "içerme dosyaları" veya "üstbilgi dosyaları" adlı ayrı dosyalar halinde düzenlenebilir. Bkz: *önişlemci başvurusu* hakkında bilgi için [makroları](../preprocessor/macros-c-cpp.md) ve [içerme dosyaları](../preprocessor/hash-include-directive-c-cpp.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Program Yapısı](../c-language/program-structure.md)

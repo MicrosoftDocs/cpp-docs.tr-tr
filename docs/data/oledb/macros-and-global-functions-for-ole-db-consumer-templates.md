@@ -1,6 +1,6 @@
 ---
 title: OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
-ms.date: 11/04/2016
+ms.date: 02/11/2019
 f1_keywords:
 - vc.templates.ole
 - ATL.AtlTraceErrorRecords
@@ -100,12 +100,12 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: 4254c2637c4ed937a3196310ffa83c48504911af
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 1826f674e219b850e62fdae07b3a97e8b8cf2d48
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557121"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149004"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 
@@ -198,11 +198,7 @@ inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);
 
 #### <a name="remarks"></a>Açıklamalar
 
-Varsa *hErr* S_OK, değil `AtlTraceErrorRecords` OLE DB hata kaydı bilgi döküm cihaza dökümleri ( **hata ayıklama** sekmesine çıkış penceresine veya bir dosya). Sağlayıcıdan alınan hata kaydı bilgileri her bir hata kayıt girişi için satır numarası, kaynak, açıklama, Yardım dosyası, bağlam ve GUID içerir. `AtlTraceErrorRecords` Bu bilgileri yalnızca hata ayıklama dökümleri. Sürüm yapılandırmasında bu çıkış iyileştirilmiş boş bir saptama olur.
-
-#### <a name="see-also"></a>Ayrıca Bkz.
-
-[CDBErrorInfo Sınıfı](../../data/oledb/cdberrorinfo-class.md)
+Varsa *hErr* S_OK, değil `AtlTraceErrorRecords` OLE DB hata kaydı bilgi döküm cihaza dökümleri ( **hata ayıklama** sekmesine çıkış penceresine veya bir dosya). Sağlayıcıdan alınan hata kaydı bilgileri her bir hata kayıt girişi için satır numarası, kaynak, açıklama, Yardım dosyası, bağlam ve GUID içerir. `AtlTraceErrorRecords` Bu bilgileri yalnızca hata ayıklama dökümleri. Sürüm yapılandırmasında bu çıkış iyileştirilmiş boş bir saptama olur. Daha fazla bilgi için [Cdberrorınfo sınıfı](../../data/oledb/cdberrorinfo-class.md).
 
 ### <a name="begin_accessor"></a> BEGIN_ACCESSOR
 
@@ -669,10 +665,7 @@ END_COLUMN_MAP()
 };
 ```
 
-#### <a name="see-also"></a>Ayrıca Bkz.
-
-[CBookmark Sınıfı](../../data/oledb/cbookmark-class.md)<br/>
-[DBPROP_BOOKMARKS](https://docs.microsoft.com/previous-versions/windows/desktop/ms709728(v=vs.85))
+Daha fazla bilgi için [kullanarak yer işaretleri](using-bookmarks.md) ve [CBookmark sınıfı](../../data/oledb/cbookmark-class.md).
 
 ### <a name="column_entry"></a> COLUMN_ENTRY
 
@@ -1579,7 +1572,7 @@ SET_PARAM_TYPE(type)
 
 #### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*type*<br/>
 [in] İçin parametre türü.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -1640,7 +1633,7 @@ END_COLUMN_MAP()
 
 **Başlık:** atldbcli.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

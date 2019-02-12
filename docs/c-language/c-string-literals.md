@@ -6,12 +6,12 @@ helpviewer_keywords:
 - strings [C++], string literals
 - literal strings, C
 ms.assetid: 4b05523e-49a2-4900-b21a-754350af3328
-ms.openlocfilehash: bd8b49645e34224cbea7e801f197bfbcbc012915
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31028b51b8010dd7e598ca5e635a35562379bf40
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635632"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152319"
 ---
 # <a name="c-string-literals"></a>C Dize Değişmez Değerleri
 
@@ -43,6 +43,6 @@ char *amessage = "This is a string literal.";
 
 Tüm çıkış kodları listelenir [kaçış dizileri](../c-language/escape-sequences.md) tablo dize değişmez değerleri geçerlidir. Bir dize sabit değerinde çift tırnak işareti temsil etmek için kaçış sırasını kullanın  **\\"**. Tek tırnak işareti (**'**) çıkış sırası olmadan temsil edilebilir. Ters eğik çizgi (**\\**) ikinci bir ters eğik çizgiyle gelmelidir (**\\\\**) bir dize içinde olduğunda görünür. Ters eğik çizgi bir satırın sonunda göründüğünde, her zaman bir satır devamlılığı karakteri yorumlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Öğeleri](../c-language/elements-of-c.md)
