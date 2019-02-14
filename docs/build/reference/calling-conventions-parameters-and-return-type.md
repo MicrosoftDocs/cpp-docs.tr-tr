@@ -1,17 +1,17 @@
 ---
 title: Çağırma Kuralları, Parametreler ve Dönüş Türü
-ms.date: 11/04/2016
+ms.date: 02/13/2019
 helpviewer_keywords:
 - calling conventions, helper functions
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 8343c17828040ca36b042cb99e0c51c37548d3b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15631b305246cbfd7dcd8081cb1ee488bf225fec
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654434"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264809"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>Çağırma Kuralları, Parametreler ve Dönüş Türü
 
@@ -27,12 +27,12 @@ FARPROC WINAPI __delayLoadHelper2(
 ### <a name="parameters"></a>Parametreler
 
 *pidd*<br/>
-A `const` işaretçi bir `ImgDelayDescr` (delayimp.h bakın) içeren çeşitli içeri aktarma ile ilgili veriler, bağlama bilgileri için bir zaman damgası ve tanımlayıcı içerik hakkında daha fazla bilgi sağlayan öznitelikler kümesi uzaklık. Şu anda yalnızca bir öznitelik yoktur `dlattrRva`, adresleri tanımlayıcısındaki göreli sanal adreslerine (aksine, sanal adresler) olduğunu gösterir.
+A `const` işaretçi bir `ImgDelayDescr` uzaklıklarını içeri aktarma ile ilgili çeşitli veri bağlama bilgileri için bir zaman damgası ve tanımlayıcı içerik hakkında daha fazla bilgi sağlayan öznitelikler kümesi içerir. Şu anda yalnızca bir öznitelik yoktur `dlattrRva`, adresleri tanımlayıcısındaki göreli sanal adreslerine olduğunu gösterir. Daha fazla bilgi için bkz: bildirimlerinde *delayimp.h*.
 
 Tanımını `PCImgDelayDescr` yapısı için bkz: [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).
 
 *ppfnIATEntry*<br/>
-Gecikme yükü yuvada bir işaretçiye adres tablosunu içeri aktarılan bir işlevin adresi ile güncelleştirilmesi (IAT) içeri aktarın. Bu konuma döndüren aynı değeri depolamak yardımcı yordamı gerekir.
+İçeri aktarılan bir işlevin adresini ile güncelleştirilen gecikme yük içeri aktarma adres tablosunda (IAT) yuva için bir işaretçi. Bu konuma döndürdüğü değerin depolanacağı Yardımcısı yordamı gerekir.
 
 ## <a name="expected-return-values"></a>Beklenen dönüş değerleri
 
@@ -50,7 +50,7 @@ Bu özel durumları işlemek için sizin sorumluluğunuzdur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yardımcı işlevini çağırma kuralının olduğunu `__stdcall`. Dönüş değeri türünü ilgili değil FARPROC kullanılır. Bu işlev, C bağlantısına sahip.
+Yardımcı işlevini çağırma kuralının olduğunu `__stdcall`. Bu nedenle FARPROC kullanılır dönüş değeri türünü ilgili değildir. Bu işlev, C bağlantısına sahip.
 
 Bir bildirim kancası kullanılan yardımcı alışkanlık istemediğiniz sürece gecikme yük yardımcı dönüş değerini geçirilen işlev işaretçisi konumda depolanması gerekir. Bu durumda, geri dönmek için uygun bir işlev işaretçisi bulmak için kodunuzu sorumludur. Ardından bağlayıcı oluşturur dönüştürücü kod gerçek içeri aktarma hedefi olarak, dönüş değeri alır ve ona doğrudan atlar.
 
@@ -131,10 +131,10 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 
 /*
 and then at global scope somewhere
-PfnDliHook __pfnDliNotifyHook2 = delayHook;
+const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 */
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yardımcı İşlevini Anlama](../../build/reference/understanding-the-helper-function.md)

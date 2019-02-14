@@ -1,6 +1,6 @@
 ---
 title: _read
-ms.date: 11/04/2016
+ms.date: 02/13/2019
 apiname:
 - _read
 apilocation:
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-ms.openlocfilehash: 8c43cbbc2681433bda02038ae73a827fad904835
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40f52ea37ae5419fe986aa505aad4fddfe8403ff
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658451"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264796"
 ---
 # <a name="read"></a>_read
 
@@ -41,9 +41,9 @@ Bir dosyadan verileri okur.
 
 ```C
 int _read(
-   int fd,
-   void *buffer,
-   unsigned int count
+   int const fd,
+   void * const buffer,
+   unsigned const buffer_size
 );
 ```
 
@@ -55,22 +55,22 @@ Açık dosyaya başvuran dosya tanımlayıcısı.
 *Arabellek*<br/>
 Veri için depolama konumu.
 
-*Sayısı*<br/>
-En fazla bayt sayısı.
+*buffer_size*<br/>
+Okunacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_read** , küçük olabilir, okunan bayt sayısını döndürür daha *sayısı* değerinden daha az *sayısı* bayt sol dosyasında veya dosyanın metin modunda açıldıysa, her bir satır başı durumda başı satır besleme çifti '\r\n' bir '\n' tek satır besleme karakteri ile değiştirilir. Yalnızca tek bir satır besleme karakteri, dönüş değeri olarak sayılır. Değiştirilen dosya işaretçisini etkilemez.
+**_read** , küçük olabilir, okunan bayt sayısını döndürür daha *buffer_size* değerinden daha az *buffer_size* bayt sol dosyasında veya dosyanın metin modunda açıldıysa. Metin modunda çifti her satır başı satır besleme `\r\n` tek satır besleme karakteri ile değiştirilir `\n`. Yalnızca tek bir satır besleme karakteri, dönüş değeri olarak sayılır. Değiştirilen dosya işaretçisini etkilemez.
 
-İşlev dosya sonunda okumaya çalışır, 0 döndürür. Varsa *fd* olduğundan geçerli değil, dosya okuma için açık değil veya dosyanın kilitli, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EBADF**.
+İşlev dosya sonunda okumaya çalışır, 0 döndürür. Varsa *fd* olduğundan geçerli değil, dosyanın okunması için açık olmadığından veya dosyanın kilitli, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EBADF**.
 
-Varsa *arabellek* olduğu **NULL**, geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** ayarlanır **EINVAL**.
+Varsa *arabellek* olduğu **NULL**, veya *buffer_size* > **INT_MAX**, geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** ayarlanır **EINVAL**.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Read** işlevi, en fazla okur *sayısı* baytlara *arabellek* ilişkili dosyasından *fd*. Belirtilen dosya ile ilişkili dosya işaretçisi konumunu okuma işlemi başlar. Sonra okuma işlemi, dosya işaretçisini okunmamış sonraki karaktere işaret eder.
+**_Read** işlevi, en fazla okur *buffer_size* baytlara *arabellek* ilişkili dosyasından *fd*. Belirtilen dosya ile ilişkili dosya işaretçisi konumunu okuma işlemi başlar. Sonra okuma işlemi, dosya işaretçisini okunmamış sonraki karaktere işaret eder.
 
 Dosyayı metin modunda açıldıysa, salt okunur olduğunda sonlandırır **_read** bir dosya sonu göstergesi olarak kabul edilir bir CTRL + Z karakterini karşılaşır. Kullanım [_lseek](lseek-lseeki64.md) dosya sonu göstergesi temizleyin.
 
@@ -106,18 +106,18 @@ char buffer[60000];
 
 int main( void )
 {
-   int fh;
-   unsigned int nbytes = 60000, bytesread;
+   int fh, bytesread;
+   unsigned int nbytes = 60000;
 
    /* Open file for input: */
-   if( _sopen_s( &fh, "crt_read.txt", _O_RDONLY, _SH_DENYNO, 0 ) )
+   if ( _sopen_s( &fh, "crt_read.txt", _O_RDONLY, _SH_DENYNO, 0 ))
    {
       perror( "open failed on input file" );
       exit( 1 );
    }
 
    /* Read in input: */
-   if( ( bytesread = _read( fh, buffer, nbytes ) ) <= 0 )
+   if (( bytesread = _read( fh, buffer, nbytes )) <= 0 )
       perror( "Problem reading file" );
    else
       printf( "Read %u bytes from file\n", bytesread );

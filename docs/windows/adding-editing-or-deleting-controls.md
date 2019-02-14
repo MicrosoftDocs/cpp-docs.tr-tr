@@ -36,13 +36,19 @@ helpviewer_keywords:
 - variables, dialog box control member variables
 - controls [C++], member variables
 - Dialog Editor [C++], defining member variables for controls
+- controls [C++], troubleshooting
+- Dialog Editor [C++], troubleshooting
+- dialog boxes [C++], troubleshooting
+- InitCommonControls
+- RichEdit 1.0 control
+- rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: b4edb5b7a51e4f6d368759ebc2e05a1cc585f19a
-ms.sourcegitcommit: 52c05e10b503e834c443ef11e7ca1987e332f876
+ms.openlocfilehash: 648ac3329409ba221881f75eaa51e1779091b0f0
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742758"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264874"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>Denetimleri Ekleme, Düzenleme veya Silme
 
@@ -51,44 +57,6 @@ Kullanarak **iletişim** Düzenleyicisi, yeniden boyutlandırma ekleyebilir, dü
 **İletişim kutusu Düzenleyicisi** sekme görünür [araç penceresi](/visualstudio/ide/reference/toolbox) çalışırken **iletişim** Düzenleyici. Ayrıca özelleştirebilirsiniz **araç kutusu** penceresi daha kolay kullanım için. Daha fazla bilgi için [araç kutusunu kullanma](/visualstudio/ide/using-the-toolbox) ve [göster veya gizle Araç kutusu penceresini](showing-or-hiding-the-dialog-editor-toolbar.md).
 
 Kısayol menüsünde kullanabileceğiniz **iletişim** Düzenleyicisi hızlı bir şekilde eklemek için kayıtlı bir iletişim kutusuna ActiveX denetimleri ve ActiveX denetimlerine ekleyebilirsiniz **araç kutusu** hızlı erişim için.
-
-Kullanılabilir standart denetimler **araç kutusu** varsayılan olaylar şunlardır:
-
-|Denetim adı|Varsayılan olay|
-|---|---|
-|[Düğme denetimi](../mfc/reference/cbutton-class.md)|BN_CLICKED|
-|[Onay kutusu denetimi](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
-|[Birleşik giriş kutusu denetimi](../mfc/reference/ccombobox-class.md)|CBN_SELCHANGE|
-|[Düzenleme denetimi](../mfc/reference/cedit-class.md)|EN_CHANGE|
-|Grup kutusu|(Uygulanamaz)|
-|[Liste kutusu denetimi](../mfc/reference/clistbox-class.md)|LBN_SELCHANGE|
-|[Radyo düğmesi denetimini](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
-|[Statik metin denetimi](../mfc/reference/cstatic-class.md)|(Uygulanamaz)|
-|[Resim denetimi](../mfc/reference/cpictureholder-class.md)|(Uygulanamaz)|
-|[Zengin düzenleme 2.0 denetimi](../mfc/using-cricheditctrl.md)|EN_CHANGE|
-|[Kaydırma çubuğu denetimi](../mfc/reference/cscrollbar-class.md)|NM_THEMECHANGED|
-
-Kullanma hakkında daha fazla bilgi için **RichEdit 1.0** MFC ile denetlemek için bkz: [MFC ile RichEdit 1.0 denetimini kullanma](../windows/using-the-richedit-1-0-control-with-mfc.md) ve [zengin düzenleme denetimine örnekler](../mfc/rich-edit-control-examples.md).
-
-[Windows ortak denetimleri](../mfc/controls-mfc.md) bulunan **araç kutusu** uygulamanızdaki işlevsellik sağlar. Bunlara aşağıdakiler dahildir:
-
-|Denetim adı|Varsayılan olay|
-|---|---|
-|[Kaydırıcı denetimi](../mfc/slider-control-styles.md)|NM_CUSTOMDRAW|
-|[Döndürme denetimi](../mfc/using-cspinbuttonctrl.md)|UDN_DELTAPOS|
-|[İlerleme denetimi](../mfc/styles-for-the-progress-control.md)|NM_CUSTOMDRAW|
-|[Sık kullanılan anahtarı denetimi](../mfc/using-a-hot-key-control.md)|NM_OUTOFMEMORY|
-|[Liste denetimi](../mfc/list-control-and-list-view.md)|LVN_ITEMCHANGE|
-|[Ağaç denetimi](../mfc/tree-control-styles.md)|TVN_SELCHANGE|
-|[Sekme denetimi](../mfc/tab-controls-and-property-sheets.md)|TCN_SELCHANGE|
-|[Animasyon denetimi](../mfc/using-an-animation-control.md)|ACN_START|
-|[Tarih Saat Seçici denetimi](../mfc/creating-the-date-and-time-picker-control.md)|DTN_DATETIMECHANGE|
-|[Ay takvim denetimi](../mfc/month-calendar-control-examples.md)|MCN_SELCHANGE|
-|[IP adresi denetimi](../mfc/reference/cipaddressctrl-class.md)|IPN_FIELDCHANGED|
-|[Genişletilmiş Birleşik giriş kutusu denetimi](../mfc/creating-an-extended-combo-box-control.md)||
-|[Özel Denetim](custom-controls-in-the-dialog-editor.md)|TTN_GETDISPINFO|
-
-Daha fazla bilgi için [denetim sınıfları](../mfc/control-classes.md), [iletişim kutusu sınıfları](../mfc/dialog-box-classes.md), ve [kaydırma çubuğu stilleri](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles).
 
 Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
@@ -239,14 +207,53 @@ Ayrıca **üye değişkenleri** sekmesinde [MFC Sınıf Sihirbazı](../mfc/refer
    > [!TIP]
    > Kullanırken **iletişim** düzenleyicisinde birçok örneği, sık kullanılan komutlar kısayol menüsünü görüntülemek için sağ fare düğmesine tıklayabilirsiniz.
 
+## <a name="known-issue"></a>Bilinen sorun
+
+Bir iletişim kutusu için bir ortak denetimi veya zengin düzenleme denetimi ekledikten sonra iletişim kutusunu test ya da iletişim görünmez görünmez.
+
+Sorunun bir örnek görmek için:
+
+1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarları değiştirme bir Win32 projesi oluşturun.
+
+1. İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasına çift tıklayın.
+
+1. İletişim seçeneği altında çift **hakkında** kutusu.
+
+1. Ekleme bir **IP adresi denetimi** iletişim kutusu.
+
+1. Kaydet ve **tümünü yeniden derle**.
+
+1. Programı çalıştırın.
+
+1. İletişim kutusunun üzerinde **yardımcı** menüsünde tıklatın **hakkında** komut; hiçbir iletişim kutusu görüntülenir.
+
+Şu anda **iletişim** Düzenleyicisi değil otomatik olarak Ekle kod projenize aşağıdaki ortak denetimleri sürükleyip veya zengin düzenleme denetimleri üzerine bir iletişim kutusu. Ya da bu sorun ortaya çıktığında, Visual Studio bir hata veya uyarı sağlar. Sorunu gidermek için el ile denetim için kod ekleyin.
+
+||||
+|-|-|-|
+|Kaydırıcı denetimi|Ağaç denetimi|Tarih Saat Seçici|
+|Döndürme denetimi|Sekme denetimi|Aylık takvim|
+|İlerleme denetimi|Animasyon denetimi|IP adresi denetimi|
+|Kısayol tuşu|Zengin düzenleme denetimi|Genişletilmiş Birleşik giriş kutusu|
+|Liste denetimi|Zengin düzenleme 2.0 denetimi|Özel Denetim|
+
+İletişim kutusunda ortak denetimleri kullanmak için çağrı gerekir [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) veya `AFXInitCommonControls` iletişim kutusu oluşturmadan önce.
+
+RichEdit denetimleri kullanmak için çağırmalıdır `LoadLibrary`. Daha fazla bilgi için [hakkında zengin düzenleme denetimleri](/windows/desktop/Controls/about-rich-edit-controls) Windows SDK ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
+
+> [!NOTE]
+> MFC ile RichEdit denetimini kullanmak için öncelikle çağırmalısınız [Afxınitrichedit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) RichEdit 2.0 denetimi (RICHED20. yüklemek için DLL) veya çağrı [Afxınitrichedit](../mfc/reference/application-information-and-management.md#afxinitrichedit) eski RichEdit 1.0 denetimini (RICHED32. yüklemek için DLL).
+>
+> Geçerli kullanabilir [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) eski RichEdit 1.0 denetimi sınıfıyla ancak `CRichEditCtrl` yalnızca 2.0 RichEdit denetimini desteklemek için tasarlanmıştır. RichEdit 1.0 ve 2.0 RichEdit benzer olduğundan, çoğu yöntemleri çalışır. Ancak, bazı yöntemler yanlış çalışmasına veya hiç çalışmıyor 1.0 ve 2.0 denetimlerini arasında bazı farklar vardır unutmayın.
+
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
 [İletişim Kutularındaki Denetimler](controls-in-dialog-boxes.md)<br/>
-[İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)<br/>
 [Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 
 <!-- excluded links
