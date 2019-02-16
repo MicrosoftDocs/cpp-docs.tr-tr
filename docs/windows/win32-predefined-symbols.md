@@ -1,17 +1,17 @@
 ---
 title: Win32 Önceden Tanımlanmış Semboller
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Win32 [C++], predefined symbols
 - symbols [C++], Win32 predefined
 - Windows API [C++], predefined symbols
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
-ms.openlocfilehash: 703e00ebcf50c987fe3a0a9399cd7497bb9c95f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b282db2680b2459fdbece41d3c0e0d15f523e44
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434703"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320451"
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 
@@ -19,20 +19,20 @@ Bu simgeler Win32 üstbilgi dosyalarında tanımlanır ve standart Windows uygul
 
 |||
 |-|-|
-|IDABORT|Denetim: İletişim kutusunda İptal düğmesi|
+|IDABORT|Denetimi: İletişim kutusunda İptal düğmesi|
 |IDC_STATIC|Denetimi: İletişim kutusunda statik metin|
-|IDCANCEL|Denetim: İletişim kutusunda İptal düğmesi|
-|IDD_ABOUTBOX|İletişim: Ürün hakkında iletişim kutusu|
+|IDCANCEL|Denetimi: İletişim kutusunda İptal düğmesi|
+|IDD_ABOUTBOX|İletişim kutusunda: Ürün hakkında iletişim kutusu|
 |IDI_PROJECTNAME|Simge: Geçerli proje simgesi|
 |IDI_SMALL|Simge: Geçerli proje küçük simge|
-|IDIGNORE|Denetim: iletişim kutuları yoksay düğmesi ile kullanılan|
-|IDM_ABOUT|Menü öğesi: Yardım kullanılan... Hakkında...|
-|IDM_EXIT|Menü öğesi: Dosyayla kullanılan... Çıkış...|
-|IDNO|Denetim: İletişim kutusu düğmesi yok|
-|IDOK|Denetim: İletişim kutusunda Tamam düğmesi|
-|IDRETRY|Denetim: İletişim kutusunu yeniden dene düğmesi|
-|IDS_APP_TITLE|Dizesi: Geçerli uygulama adı|
-|IDYES|Denetimi: Button iletişim kutusu Evet|
+|IDIGNORE|Denetimi: İletişim kutuları yoksay düğmesi ile kullanılan|
+|IDM_ABOUT|Menü öğesi: Yardım ile kullanılan... Hakkında...|
+|IDM_EXIT|Menü öğesi: Dosya ile kullanılan... Çıkış...|
+|IDNO|Denetimi: İletişim kutusu düğmesi yok|
+|IDOK|Denetimi: İletişim kutusunda Tamam düğmesi|
+|IDRETRY|Denetimi: İletişim kutusunu yeniden dene düğmesi|
+|IDS_APP_TITLE|Dize: Geçerli uygulama adı|
+|IDYES|Denetimi: İletişim kutusu Evet düğmesi|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -41,4 +41,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)
+[MFC Önceden Tanımlanmış Semboller](../windows/mfc-predefined-symbols.md)<br/>
+[ATL Önceden Tanımlanmış Semboller](../windows/atl-predefined-symbols.md)<br/>

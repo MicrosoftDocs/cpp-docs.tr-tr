@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Kaynaklar (C++) yönetme'
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.resvw.resource.copying
 - vs.resvw.resource.copying
@@ -30,18 +30,16 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: e8b976f974e397b8012ebf59ede08ee64f4f7191
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: 1f176b3fa19374b402039ecca60e690ade5c0cef
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56150798"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320633"
 ---
 # <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynaklar (C++) yönetme
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
-
-## <a name="to-copy-resources"></a>Kaynak kopyalamak için
+## <a name="copy-resources"></a>Kaynakları Kopyala
 
 Kaynakları bir dosyadan başka değişiklik yapmadan kopyalayabilir veya kopyalama sırasında dilini veya koşulunu kaynağın değiştirebilirsiniz.
 
@@ -77,7 +75,7 @@ Açık olan .rc dosyası arasında sürükle ve bırak yöntemi kullanabileceği
    > [!NOTE]
    > Yeni dosyayı kopyaladığınızda, sembol adlarını veya var olan dosyayı değerleri ile çakışmaları önlemek için Visual C++ aktarılan kaynak sembol değeri veya sembol adını ve değerini değişebilir.
 
-### <a name="to-change-the-language-or-condition-of-a-resource-while-copying"></a>Kopyalanırken dilini veya koşulunu bir kaynağı değiştirmek için
+### <a name="change-the-language-or-condition-of-a-resource-while-copying"></a>Kopyalarken dilini veya koşulunu bir kaynağı değiştirme
 
 Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini veya her ikisi de değiştirebilirsiniz.
 
@@ -91,23 +89,21 @@ Dil ve kaynak durumu, parantez içine kaynak adından sonra gösterilir **çalı
 IDD_AboutBox (Finnish - XX33)
 ```
 
-Mevcut bir kaynağı kopyalayın ve kendi dilini veya koşulunu değiştirme için:
+#### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>Mevcut bir kaynağı kopyalayın ve kendi dilini veya koşulunu değiştirme
 
 1. .Rc dosyasının veya [kaynak görünümü](../windows/resource-view-window.md) penceresi, kopyalamak istediğiniz kaynağa sağ tıklayın.
 
-1. Seçin **Ekle kopyalama** kısayol menüsünden.
-
-1. İçinde **kaynak kopyasını Ekle** iletişim kutusunda:
+1. Seçin **Ekle kopyalama** kısayol menüsünü ve aşağıdaki ayarla:
 
    - İçin **dil** liste kutusunda, bir dil seçin.
 
    - İçinde **koşul** koşul yazın.
 
-## <a name="to-edit-managed-resource-files"></a>Yönetilen kaynak dosyalarını düzenlemek için
+## <a name="edit-resources"></a>Kaynakları düzenleme
 
 Yönetilen kaynak dosyalarını (.resx) XML dosyalarıdır. Yönetilen kaynak dosyasını projenizden eklediğinizde **Yeni Öğe Ekle** iletişim kutusu, **yönetilen kaynaklar düzenleyicisini** varsayılan olarak açılır.
 
-## <a name="to-import-and-export-resources"></a>İçeri ve dışarı kaynakları
+## <a name="import-and-export-resources"></a>İçeri ve dışarı aktarma kaynakları
 
 Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları), HTML dosyaları ve Visual C++'ta kullanmak için özel kaynaklar içeri aktarabilirsiniz. Geliştirme ortamının dışında kullanılan dosyaları ayırmak için bir Visual C++ projesi aynı dosya türlerini dışarı aktarabilirsiniz.
 
@@ -131,9 +127,7 @@ Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları)
 
 1. İçinde **kaynak** görüntülemek için dışa aktarmak istediğiniz kaynağa sağ tıklayın.
 
-1. Seçin **dışarı** kısayol menüsünde.
-
-1. İçinde **kaynağı dışarı aktarın** iletişim kutusunda, geçerli dosya adı kabul edin veya yeni bir tane girin.
+1. Seçin **dışarı** kısayol menüsünde ve geçerli dosya adı kabul edin veya yeni bir ad yazın.
 
 1. Dosyayı kaydedin ve istediğiniz klasöre gidin **dışarı**.
 
@@ -141,7 +135,8 @@ Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları)
 
 Win32
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)
+[Kaynakları oluşturma](../windows/how-to-create-a-resource-script-file.md)<br/>
+[Derleme sırasında kaynak ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>

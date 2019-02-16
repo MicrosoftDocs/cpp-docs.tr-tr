@@ -1,6 +1,6 @@
 ---
 title: Hızlandırma tuşları (C++)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.accelerator
 helpviewer_keywords:
@@ -10,16 +10,14 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 1e87d80b8995760eecda34334dab702480bd9669
-ms.sourcegitcommit: 5beace7dcc6bf0e8b8cc96a930e7424f9daa05cb
+ms.openlocfilehash: 6ef8f84564d6fd1957452971cb1e88dc99aa27e9
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232129"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320516"
 ---
 # <a name="accelerator-keys-c"></a>Hızlandırma tuşları (C++)
-
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
 
 ## <a name="predefined-accelerator-keys"></a>Önceden Tanımlanmış Hızlandırıcı Tuşları
 
@@ -79,7 +77,7 @@ Bir Windows uygulaması projesi parçası olabilecek önceden tanımlanmış Hı
 |VK_XBUTTON1|Windows: X1 fare düğmesi|
 |VK_XBUTTON2|Windows: X2 fare düğmesi|
 
-## <a name="associating-an-accelerator-key-with-a-menu-item"></a>Hızlandırıcı Tuşunu Menü Öğesiyle İlişkilendirme
+## <a name="accelerator-key-association"></a>Hızlandırıcı anahtar ilişkilendirmesi
 
 Çoğu zaman, bir menü öğesi ve aynı programı komutu vermek için bir tuş bileşimini istersiniz. Menü öğesi ve uygulamanızın Hızlandırıcı tablosunda bir giriş için aynı kaynak tanımlayıcısını (ID) atayarak bunu yapabilirsiniz. Hızlandırıcı adını göstermek için menü öğesinin resim yazısı Düzenle. Menü öğeleri ve kısayol tuşları hakkında daha fazla bilgi için bkz. [menü öğesi, bir Hızlandırıcı tuşuyla ilişkilendirme](../windows/associating-a-menu-command-with-an-accelerator-key.md).
 
@@ -90,4 +88,3 @@ Win32
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)<br/>
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)

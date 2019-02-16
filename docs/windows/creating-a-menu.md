@@ -23,13 +23,23 @@ helpviewer_keywords:
 - context menus [C++], connecting to applications
 - shortcut menus [C++], connecting to applications
 - pop-up menus
+- menu commands [C++], selecting
+- menus [C++], selecting
+- commands [C++], menu commands
+- commands [C++], copying on menus
+- menu items, moving
+- commands [C++], moving on menus
+- menu items, copying
+- menu items, deleting
+- commands [C++], deleting from menus
+- menus [C++], deleting
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
-ms.openlocfilehash: e3b3cc58b82f68c55ac98601fd11775422c901e5
-ms.sourcegitcommit: 5a7dbd640376e13379f5d5b2cf66c4842e5e737b
+ms.openlocfilehash: da5fc355ae11ee5efb1c58be9e33bd4fb8bff02d
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55905777"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320529"
 ---
 # <a name="creating-menus-c"></a>Menüler (C++) oluşturma
 
@@ -38,7 +48,7 @@ ms.locfileid: "55905777"
 
 Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
-## <a name="to-create-a-standard-menu"></a>Standart menü oluşturmak için
+## <a name="create-a-standard-menu"></a>Standart menü oluşturma
 
 1. Gelen **görünümü** menüsünde **kaynak görünümü** ve ardından sağ tıklayarak **menü** başlık ve seçin **kaynak Ekle**. Seçin **menü**.
 
@@ -59,7 +69,7 @@ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaü
    > [!NOTE]
    > Menü çubuğunda bir tek öğesi menüsü oluşturmak için **açılan** özelliğini **False**.
 
-## <a name="to-create-a-submenu"></a>Alt menü oluşturma
+## <a name="create-a-submenu"></a>Bir alt menü oluşturma
 
 1. Alt menü oluşturmak istediğiniz komutu seçin.
 
@@ -75,7 +85,7 @@ Var olan bir menü adı ve ENTER tuşuna seçin **Ekle** anahtarı. **Yeni öğe
 
 Menü çubuğunda sağ tıklatın ve seçin **yeni Ekle** kısayol menüsünden.
 
-## <a name="to-add-commands-to-a-menu"></a>Bir menü komutları eklemek için
+## <a name="add-commands-to-a-menu"></a>Menüye komut ekleme
 
 1. Bir menü oluşturun.
 
@@ -104,7 +114,7 @@ Menü çubuğunda sağ tıklatın ve seçin **yeni Ekle** kısayol menüsünden.
 
    Ek menü komutlarını oluşturmak için yeni bir öğe kutusunda seçilir.
 
-## <a name="to-create-pop-up-menus"></a>Açılır menüler oluşturma
+## <a name="create-pop-up-menus"></a>Açılır menüler oluşturma
 
 [Açılır menüler](../mfc/menus-mfc.md) görüntü sık kullanılan komutları. Bağlama duyarlı işaretçisi konumunu olabilirler. Uygulamanıza açılır menüleri kullanarak menü oluşturmak ve ardından uygulama koduna bağlanmayı gerektirir.
 
@@ -150,6 +160,52 @@ Menüyü sağ tıklatın ve seçin **pencerede görüntüle** kısayol menüsün
 
    > [!NOTE]
    > Menü çubuğunun görünümünü değiştirmek için tıklayın **pencerede görüntüle** yeniden (onay işaretini kaldırır ve menü çubuğu görünümünüzü döndürür).
+
+## <a name="edit-multiple-menus-or-menu-commands"></a>Birden çok menü veya menü komutlarını Düzenle
+
+### <a name="to-select-multiple-menu-commands"></a>Birden çok menü komutları seçmek için
+
+Birden çok menü adları veya özelliklerini değiştirme veya silme gibi toplu işlemleri çalıştırmak için menü komutları seçebilirsiniz.
+
+Tutarken **Ctrl** anahtar, menüler ya da alt menü komutları, istediğiniz seçin.
+
+### <a name="to-move-and-copy-menus-and-menu-commands"></a>Taşıma ve kopyalama menüleri ve menü komutları
+
+Taşıma veya kopyalama menüleri ve menü komutlarını sürükle ve bırak yöntemini kullanarak veya kısayol menüsünden (sağ tıklama menüsü) komutlarını kullanarak.
+
+#### <a name="to-move-or-copy-menus-or-menu-commands-using-the-drag-and-drop-method"></a>Menüleri ve menü komutlarını sürükle ve bırak yöntemiyle taşınacak veya kopyalanacak
+
+1. Sürükleyin veya taşımak istediğiniz öğeyi kopyalayın:
+
+   - Geçerli menüsünden Yeni bir konum.
+
+   - Farklı bir menü. (Fare işaretçisi sürükleyerek diğer menülere gidebilirsiniz.)
+
+1. İstediğiniz yere klavuzunu gösterdiği durumlarda menü komutunu bırakın.
+
+#### <a name="to-move-or-copy-menus-or-menu-commands-using-shortcut-menu-commands"></a>Taşıma veya kopyalama menü veya menü komutu kısayol menü komutlarını kullanmak için
+
+1. Bir veya birden çok menü veya menü komutu sağ tıklayın.
+
+1. Kısayol menüsünden **Kes** (taşımak için) veya **kopyalama**.
+
+1. Başka bir menü öğeleri taşıyorsanız kaynak veya kaynak betik dosyasını [başka bir pencerede açmak](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+
+1. Menü veya menü komutu taşımak veya kopyalamak istediğiniz konumu seçin.
+
+1. Kısayol menüsünden **Yapıştır**. Seçtiğiniz öğe önce taşınmış ya da kopyalanmış öğesi yerleştirilir.
+
+   > [!NOTE]
+   > Sürükleyin, kopyalamak ve diğer menü windows diğer menülere yapıştırın.
+
+### <a name="to-delete-a-menu-or-menu-command"></a>Bir menü veya menü komutu silmek için
+
+1. Menü adına veya komuta sağ tıklayın.
+
+1. Seçin **Sil** kısayol menüsünden.
+
+   > [!NOTE]
+   > Benzer şekilde, kopyalama, kesme, yapıştırma, yeni, Ekle ayırıcı, kimlikleri, düzenleme görünümü açılır, anımsatıcıları kontrol edin, vb. olarak Ekle gibi diğer eylemleri gerçekleştirmek için kısayol menüsünü kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 

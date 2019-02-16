@@ -1,37 +1,37 @@
 ---
 title: Kaynak dosyaları (C++) ile çalışma
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 helpviewer_keywords:
 - resources [C++], about resources
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 276a63f01eba3cfc8c4fd45e0f875d78ada1942a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a989eddd0800062ecfaabf9de857e4ab04e873bd
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483323"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320490"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
 > [!WARNING]
 > Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](/windows/uwp/app-resources/).
 >
-> C + için kaynak ekleme hakkında bilgi için +/ CLI projeleri için bkz. Lütfen [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+> C + için kaynak ekleme hakkında bilgi için +/ (yönetilen) CLI projeleri için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
 
-Kaynakları sunduğu geniş kapsamlı bilgilerini (örneğin bir bit eşlem, simgesi veya imleci); kullanıcı arabirimi öğeleri içeren öğelerin oluşabilir bir uygulamanın gereken verileri içeren özel kaynakları Kurulum API'leri tarafından kullanılan kaynakları sürümü; ve menü ve iletişim kutusu kaynakları.
+Kaynakları oluşan öğeleri, Kurulum API'leri tarafından kullanılan sürümü kaynak bilgilerini (örneğin bit eşlem, simgesi veya imleci) kullanıcı arabirimi öğelerini, uygulamanın gerekli verileri içeren özel kaynaklar dahil olmak üzere çeşitli, ve menü ve iletişim kutusu kaynakları.
 
 Yeni kaynakları projenize ekleyin ve kaynaklarla ilgili kaynak Düzenleyicisi'ni kullanarak değiştirin. Çoğu Visual C++ sihirbazları, projeniz için bir .rc dosyasını otomatik olarak oluşturur.
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
-Kaynak dosyaları ve Windows masaüstü uygulamalarında nasıl kullanılacağını açıklar. Ayrıca, kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar sağlar.
+Kaynak dosyaları ve bunların Windows masaüstü uygulamalarında nasıl kullanıldığı açıklanmaktadır. Ayrıca kaynak dosyaları kullanmayı açıklayan makaleleri için bağlantılar sağlar.
 
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
 Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>

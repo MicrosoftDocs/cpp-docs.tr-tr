@@ -11,18 +11,18 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: 0b3ca7c6b09d85cddb519242e63af0b8097e3fec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44566408a3afcfee7a15299a5845b5af385aeef8
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558788"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320698"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 
 A *ipucu dosyası* yardımcı olan Visual Studio tümleşik geliştirme ortamı (IDE) Visual C++ tanımlayıcıları, işlevlerle makrolar adları gibi yorumlar. Bir Visual C++ projesinin, IDE açtığınızda *sistem ayrıştırma* projedeki her kaynak dosyasındaki kodu inceler ve her bir tanımlayıcı hakkında bilgi toplar. IDE özellikleri desteklemek için bu bilgileri kullanır. ardından **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.
 
-Visual C++ 2010'da sunulan ayrıştırma sistem C/C++ sözdizimi anlar, ancak bir makro içeren bir ifade hatalı yorumlayan. Makro yazılan sözdizimsel olarak yanlış olması için kaynak kodu neden olursa, deyim anlaşılabilir. Kaynak kod derlenir ve dosyaların konumudur değiştirir, deyim sözdizimsel olarak doğru dönüşebilir [makro tanımlayıcısı](../preprocessor/hash-define-directive-c-cpp.md) tanımına sahip. Ayrıştırma sistem makroları yorumlamak için ipucu dosyaları kullandığından projesi oluşturmaya gerek kalmadan çalışır. Bu nedenle, bir tarama özelliği gibi **sınıf görünümü** hemen kullanılabilir.
+Visual C++ 2010'da sunulan ayrıştırma sistem C/C++ sözdizimi anlar, ancak bir makro içeren bir ifade hatalı yorumlayan. Makro yazılan sözdizimsel olarak yanlış olması için kaynak kodu neden olursa, deyim anlaşılabilir. Kaynak kod derlenir ve önişlemci değiştirir, deyim sözdizimsel olarak doğru dönüşebilir [makro tanımlayıcısı](../preprocessor/hash-define-directive-c-cpp.md) tanımına sahip. Ayrıştırma sistem makroları yorumlamak için ipucu dosyaları kullandığından projesi oluşturmaya gerek kalmadan çalışır. Bu nedenle, bir tarama özelliği gibi **sınıf görünümü** hemen kullanılabilir.
 
 Kullanıcı tarafından özelleştirilebilir ipucu dosyada *ipuçları*, C/C++ makro tanımları aynı söz dizimini sahip. Visual C++ çoğu proje için yeterli olan bir yerleşik ipucu dosyası içerir, ancak Visual Studio tanımlayıcıları işleme iyileştirmek için kendi ipucu dosyaları oluşturabilirsiniz.
 
@@ -99,7 +99,7 @@ Yalnızca olağan dışı bir söz dizimi öğeleri `@<`, `@=`, ve `@>` değişt
 
 |Sözdizimi|Açıklama|
 |------------|-------------|
-|`#define` *İpucu-name* *değiştirme dizesi*<br /><br /> `#define` *İpucu-name* `(` *parametre*,... `)` *değiştirme dizesi*|Yeni bir ipucu tanımlar veya mevcut bir ipucu'ı yeniden tanımladığı dosyaların konumudur yönergesi. Yönergesinden sonra önişlemci her oluşumunun değiştirir *ipucu adı* ile kaynak kodundaki *değiştirme dizesi*.<br /><br /> İkinci sözdizimi formu, bir işlev benzeri ipucu tanımlar. Kaynak kodunda bir işlev benzeri ipucu ortaya çıkarsa, önişlemci önce her örneğini değiştirir *parametre* içinde *değiştirme dizesi* karşılık gelen bağımsız kaynak kodu ve ardından değiştirir *ipucu adı* ile *değiştirme dizesi*.|
+|`#define` *İpucu-name* *değiştirme dizesi*<br /><br /> `#define` *İpucu-name* `(` *parametre*,... `)` *değiştirme dizesi*|Yeni bir ipucu tanımlar veya mevcut bir ipucu'ı yeniden tanımladığı bir önişlemci yönergesi. Yönergesinden sonra önişlemci her oluşumunun değiştirir *ipucu adı* ile kaynak kodundaki *değiştirme dizesi*.<br /><br /> İkinci sözdizimi formu, bir işlev benzeri ipucu tanımlar. Kaynak kodunda bir işlev benzeri ipucu ortaya çıkarsa, önişlemci önce her örneğini değiştirir *parametre* içinde *değiştirme dizesi* karşılık gelen bağımsız kaynak kodu ve ardından değiştirir *ipucu adı* ile *değiştirme dizesi*.|
 |`@<`|İpucu dosyası belirli bir *değiştirme dizesi* harita öğeleri kümesi başlangıcını gösterir.|
 |`@=`|İpucu dosyası belirli bir *değiştirme dizesi* Ara harita öğesi belirtir. Bir eşleme, birden çok harita öğelerine sahip olabilir.|
 |`@>`|İpucu dosyası belirli bir *değiştirme dizesi* harita öğeleri kümesi sonunu gösterir.|
@@ -123,7 +123,7 @@ Aşağıdaki kaynak kodunda tür parametresi için `FormatWindowClassName()` iş
 static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
 ```
 
-**Stratejisi:** tanımı Null
+**Stratejisi:** Null tanımı
 
 Bu durumda bunlar yok edildiğinde SAL ek açıklamalarını değerlendirilecek stratejisidir. Bunu yapmak için bir değiştirme dizesi null bir ipucu belirtin. Sonuç olarak, ayrıştırma, ek açıklamalar yoksayar ve **sınıf görünümü** tarayıcı bunları göstermez. (Visual C++ SAL ek açıklaması gizleyen bir yerleşik ipucu dosyası içerir.)
 
@@ -145,7 +145,7 @@ Aşağıdaki kaynak kodundaki `START_NAMESPACE` makro gizler eşlenmemiş bir so
 #define START_NAMESPACE namespace MyProject {
 ```
 
-**Stratejisi:** doğrudan kopyalama
+**Stratejisi:** Doğrudan kopyalama
 
 Makro semantiği için gözatma deneyimini kritik, makro için aynı olan bir ipucu oluşturun. Ayrıştırma sistem Makro tanımında ipucu dosyası çözümler.
 
@@ -175,7 +175,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
    return( pMap ); }
 ```
 
-**Stratejisi:** harita öğelerine tanımlayın
+**Stratejisi:** Harita öğelerine tanımlayın
 
 İpuçları başlangıç, Orta (varsa) ve bitiş için belirtin bir eşlemin öğelerini. Özel Harita değiştirme dizelerini kullanma `@<`, `@=`, ve `@>`. Daha fazla bilgi için `Syntax` bölümüne bakın.
 
@@ -204,7 +204,7 @@ Aşağıdaki kaynak kodunu içeren `START_NAMESPACE` ad alanı kapsamında başl
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
 ```
 
-**Stratejisi:** doğrudan kopyalama
+**Stratejisi:** Doğrudan kopyalama
 
 İpuçları oluşturma `START_NAMESPACE` ve `BEGIN_CATEGORY_MAP` makroları ve ipucu oluşturup `NSandMAP` aynı kaynak kodu daha önce gösterildiği gibi makrosu. Alternatif olarak, bileşik bir makro yalnızca kesintiye uğratan makroları ve boşluk içeriyorsa, bir değiştirme dizesi null bir tanımıdır ipucu tanımlayabilirsiniz.
 
@@ -226,7 +226,7 @@ Bazı makrolar ayrıştırma sistem tarafından yorumlanabilir, ancak kaynak kod
 #define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)
 ```
 
-**Stratejisi:** basitleştirme
+**Stratejisi:** Basitleştirme
 
 Daha basit bir makro tanımı görüntüleyen bir ipucu oluşturun.
 

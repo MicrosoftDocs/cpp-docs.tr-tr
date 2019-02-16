@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Simgeler (C++) oluştur'
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.creating
 - vc.editors.symbol.managing
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - View Use button
 - resource editors [C++], resource symbols
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-ms.openlocfilehash: 49860f2277dbb462c7e1cd8cb59b86a3edbd3cc9
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: 01b810d162da4d59c2044fe02a1da5c0929d41b9
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226338"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320607"
 ---
 # <a name="how-to-create-symbols-c"></a>Nasıl yapılır: Simgeler (C++) oluştur
 
@@ -35,7 +35,7 @@ Yeni bir proje başlıyor olun ister, atanmış oldukları kaynakları oluşturm
 İletişim kutusunda, aşağıdaki özellikleri içerir:
 
 |Özellik|Açıklama|
-|---|---|
+|--------------------------|------------------------------------------|
 |**Ad**|Simgenin adını görüntüler. Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md).|
 |**Değer**|Sembolün sayısal değerini görüntüler. Daha fazla bilgi için [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).|
 |**Kullanımda**|Bu onay kutusu seçildiğinde, simge bir veya daha fazla kaynak tarafından kullanılmakta olduğunu belirtir. Kaynak veya kaynak kutusu tarafından kullanılan listelenir.|
@@ -45,9 +45,9 @@ Yeni bir proje başlıyor olun ister, atanmış oldukları kaynakları oluşturm
 |**Değişiklik**|Açılır **sembol değiştirme** adı ya da bir sembolün değerini değiştirmek izin veren iletişim kutusu. Simge bir denetim veya kaynağı için ise, simge yalnızca ilgili kaynak Düzenleyicisi'nden değiştirilebilir. Daha fazla bilgi için [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).|
 |**Görünüm kullanımı**|Karşılık gelen kaynak Düzenleyicisi sembolü içeren kaynak açılır.|
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+## <a name="create-symbols"></a>Semboller oluşturma
 
-## <a name="to-create-a-new-symbol"></a>Yeni bir sembolü oluşturmak için
+### <a name="to-create-a-new-symbol"></a>Yeni bir sembolü oluşturmak için
 
 1. İçinde **kaynak sembolleri** iletişim kutusunda **yeni**.
 
@@ -60,7 +60,7 @@ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaü
 > [!NOTE]
 > Zaten bir sembol adı yazarsanız, bu ada sahip bir simge zaten tanımlandı belirten bir ileti kutusu görünür. Aynı ada sahip iki veya daha fazla sembolleri tanımlanamaz, ancak aynı sayısal değere sahip farklı bir simge tanımlayabilirsiniz. Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md) ve [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).
 
-## <a name="to-view-resource-symbols"></a>Kaynak sembolleri görüntülemek için
+### <a name="to-view-resource-symbols"></a>Kaynak sembolleri görüntülemek için
 
 1. İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasına sağ tıklayın.
 
@@ -72,11 +72,11 @@ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaü
    > [!NOTE]
    > Önceden tanımlanmış semboller görmek için **salt okunur sembolleri Göster** onay kutusu.
 
-## <a name="to-open-the-resource-editor-for-a-given-symbol"></a>Belirli bir sembol için kaynak düzenleyicisini açmak için
+### <a name="to-open-the-resource-editor-for-a-given-symbol"></a>Belirli bir sembol için kaynak düzenleyicisini açmak için
 
 Ne zaman, tarama sembolleri **kaynak sembolleri**, belirli bir sembolle nasıl kullanıldığı hakkında daha fazla bilgi isteyebilirsiniz. **Görünüm kullanımı** düğmesi, bu bilgileri almak için hızlı bir yol sağlar.
 
-### <a name="to-move-to-the-resource-editor-where-a-symbol-is-being-used"></a>Kaynak Düzenleyicisi için bir simge kullanıldığı yerin taşımak için
+#### <a name="to-move-to-the-resource-editor-where-a-symbol-is-being-used"></a>Kaynak Düzenleyicisi için bir simge kullanıldığı yerin taşımak için
 
 1. Dosyasındaki bir simge seçin **adı** kutusunun **kaynak sembolleri** iletişim kutusu.
 
@@ -90,7 +90,8 @@ Ne zaman, tarama sembolleri **kaynak sembolleri**, belirli bir sembolle nasıl k
 
 Win32
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)<br/>
-[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Semboller yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>

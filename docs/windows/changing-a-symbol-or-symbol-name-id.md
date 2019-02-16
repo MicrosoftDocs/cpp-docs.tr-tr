@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Semboller yönetme'
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.changing
 - vc.editors.symbol.restrictions.name
@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: 4bc0376b6b5ff402f0cc9f40093e000763ad6656
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: 4f1c44e8fc2ae34ddcb65ec23ca8d98e11d50ec0
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226377"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320594"
 ---
 # <a name="how-to-manage-symbols"></a>Nasıl yapılır: Semboller yönetme
 
@@ -50,12 +50,10 @@ Tek bir kaynakla ilişkili semboller için de kullanabilirsiniz **özellikleri**
 
 Normalde tüm sembol tanımlarını kaydedilir `Resource.h`. Ancak, bunu değiştirmeniz gerekebilir, örneğin, birden fazla kaynak dosyayla aynı dizinde çalışabilir böylece dosya adı içermelidir.
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
-
 > [!NOTE]
 > Projenize bir .rc dosyası yoksa, bkz. [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
-## <a name="symbol-name-restrictions"></a>Sembol adı kısıtlamaları
+## <a name="symbol-name-restrictions"></a>Sembol Adı Kısıtlamaları
 
 Sembol adı kısıtlamaları aşağıdaki gibidir:
 
@@ -93,7 +91,7 @@ Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklay�
 
 Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış sembol adlarını değiştirmek için.
 
-## <a name="symbol-value-restrictions"></a>Sembol değeri kısıtlamaları
+## <a name="symbol-value-restrictions"></a>Sembol Değeri Kısıtlamaları
 
 Sembol değeri için normal şekilde ifade edilen herhangi bir tamsayı olabilir # önişlemci yönergeleri define. Sembol değerlerinin bazı örnekleri aşağıda verilmiştir:
 
@@ -142,7 +140,7 @@ Aralık sayısı hakkında daha fazla bilgi için bkz. [TN023: Standart MFC kayn
 
 Yeni değer proje kaydettiğinizde sembol üstbilgi dosyasında depolanır. Sembol adı kimliği kutusuna görünür kalır; Bunlar doğrulanmış sonra eşittir işareti ve değer görüntülenmez.
 
-## <a name="change-or-delete-unassigned-symbols"></a>Atanmamış sembolleri silme veya değiştirme
+## <a name="change-or-delete-symbols"></a>Değiştirme veya silme semboller
 
 İçinde çalışırken [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), düzenlemek veya bir kaynak veya nesne zaten atanmamış varolan sembolleri Sil.
 
@@ -162,7 +160,7 @@ Yeni değer proje kaydettiğinizde sembol üstbilgi dosyasında depolanır. Semb
    > [!NOTE]
    > Kullanılmayan bir sembol kaynak dosya silinmeden önce başka bir program veya kaynak dosyaları derleme zamanında dahil tarafından kullanılmadığından emin olun.
 
-## <a name="include-shared-read-only-or-calculated-symbols"></a>İçerir (salt okunur) paylaşılan veya hesaplanan sembolleri ekleme
+## <a name="include-symbols"></a>Simgeleri dahil et
 
 Geliştirme ortamını başka bir uygulama tarafından oluşturulan bir kaynak dosyasını okur ilk kez tüm bulunan üst bilgi dosyaları salt okunur olarak işaretler. Kullanabilirsiniz ancak [kaynak içerikleri iletişim kutusu](../windows/resource-includes-dialog-box.md) ek salt okunur sembol üst bilgi dosyaları eklemek için.
 
@@ -215,8 +213,8 @@ Ortamı doğru olduğu sürece bu hesaplanan semboller yorumlar:
 
 Win32
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
+[Semboller oluşturma](../windows/creating-new-symbols.md)<br/>
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
-[Kaynak Sembollerini Görüntüleme](../windows/viewing-resource-symbols.md)<br/>

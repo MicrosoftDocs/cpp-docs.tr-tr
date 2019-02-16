@@ -1,6 +1,6 @@
 ---
 title: Dize Düzenleyicisi'ni (C++)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.string.F1
 - vc.editors.string
@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-ms.openlocfilehash: 24e4e6ba5b9c2dff1a179bea39830f4a3bbe5879
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 8f33ef6d0198f083e7cf1b1e1dc2129be9b3fab4
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702999"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320568"
 ---
 # <a name="string-editor-c"></a>Dize Düzenleyicisi'ni (C++)
 
@@ -47,18 +47,15 @@ Bir uygulama geliştirirken birden çok dize tabloları olabilir — her dilini 
 
 Dize tabloları uygulamanızın farklı dillere yerelleştirilmesi kolaylaştırır. Tüm dizeler dize tablosunda, dizeleri (ve diğer kaynakları) kaynak kodunda değişiklik yapmadan çevirerek uygulama yerelleştirebilirsiniz. Bu durum, el ile dizeleri bulma ve çeşitli kaynak dosyalarında değiştirme daha fazla tercih edilir.
 
-(Ortak dil çalışma zamanını hedefleyen projeler) yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarının konumunu bulma](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3).
+## <a name="how-to"></a>Nasıl Yapılır Konuları
 
 Kullanım **dize** Düzenleyicisi aşağıdaki eylemleri için:
 
-## <a name="to-find-a-string-resource-in-the-string-table"></a>Dize tablosunda bir dize kaynağı bulunamadı
+### <a name="to-find-a-string-resource-in-the-string-table"></a>Dize tablosunda bir dize kaynağı bulunamadı
 
 Dize tablosunda bir veya daha fazla dizeleri arayın ve kullanmak [normal ifadeler](/visualstudio/ide/using-regular-expressions-in-visual-studio) ile **dosyalarda Bul** komut (**Düzenle** menüsü) dizeleri tüm örneklerini bulmak için bir desen eşleşmesi.
 
 1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
-
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 1. Üzerinde **Düzenle** menüsünde **Bul ve Değiştir**, ardından **Bul**.
 
@@ -71,18 +68,15 @@ Dize tablosunda bir veya daha fazla dizeleri arayın ve kullanmak [normal ifadel
    > [!TIP]
    > Normal ifadeler dosya ararken kullanmak için **dosyalarda Bul** komutu. Sağındaki düğmeyi seçin veya bir desenle eşleşen normal bir ifade yazın **Aranan** normal arama listesini görüntülemek için kutusu. Bu listeden bir ifade seçtiğinizde, arama metni olarak geçmesidir **Aranan** kutusu. Normal ifadeler kullanırsanız, mutlaka **kullanın: Normal ifadeler** onay kutusu seçilidir.
 
-## <a name="to-add-or-delete-a-string-resource"></a>Ekleme veya bir dize kaynağı silme
+### <a name="to-add-or-delete-a-string-resource"></a>Ekleme veya bir dize kaynağı silme
 
 Hızlı ekleme veya silme kullanarak dize tablo girişleri **dize** Düzenleyici. Yeni dizeler tablonun sonuna yerleştirilir ve sonraki kullanılabilir tanımlayıcı verilir. Daha sonra düzenleyebilirsiniz **kimliği**, **değer**, veya **açıklamalı alt yazı** özelliklerinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) gerektiğinde.
 
 **Dize** Düzenleyicisi sağlar zaten kullanımda bir kimliği kullanmayın. Bir kimliği kullanımda, zaten seçerseniz **dize** Düzenleyicisi bunu size bildirir ve ardından genel benzersiz kimliği örneğin Ata `IDS_STRING58113`.
 
-### <a name="to-add-a-string-table-entry"></a>Dize tablo girdisi eklemek için
+#### <a name="to-add-a-string-table-entry"></a>Dize tablo girdisi eklemek için
 
 1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
-
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 1. Dize tablosu içinde sağ tıklatın ve seçin **yeni dize** kısayol menüsünden.
 
@@ -95,26 +89,19 @@ Hızlı ekleme veya silme kullanarak dize tablo girişleri **dize** Düzenleyici
    > [!NOTE]
    > Null dizeler Windows dize tablolarında izin verilmez. Boş bir dize olan dize tablosunda bir giriş oluşturmak, "Lütfen gir bir dize Bu tablo girişi için" için soran bir ileti alırsınız.
 
-### <a name="to-delete-a-string-table-entry"></a>Dize tablosu girişi silmek için
+#### <a name="to-delete-a-string-table-entry"></a>Dize tablosu girişi silmek için
 
-1. Silmek istediğiniz girişini seçin.
+Silmek istediğiniz girişini seçin. Ardından aşağıdakilerden birini yapın:
 
-1. Üzerinde **Düzenle** menüsünde **Sil**.
+- Üzerinde **Düzenle** menüsünde **Sil**.
 
-\- veya -
+- Sağ tıklayın ve silmek istediğiniz dizeyi **Sil** kısayol menüsünden.
 
- Sağ tıklayın ve silmek istediğiniz dizeyi **Sil** kısayol menüsünden.
+- Tuşuna **Sil** anahtarı.
 
-\- veya -
-
- Tuşuna **Sil** anahtarı.
-
-## <a name="to-move-a-string-from-one-resource-script-file-to-another"></a>Bir dizeyi bir kaynak betik dosyasını diğerine taşımak için
+### <a name="to-move-a-string-from-one-resource-script-file-to-another"></a>Bir dizeyi bir kaynak betik dosyasını diğerine taşımak için
 
 1. Dize tabloları içinde her iki .rc dosyası açın. (Daha fazla bilgi için [kaynaklar içinde bir kaynak betik dosyası dışında sonuna bir proje görüntüleme](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).)
-
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 1. Sağ tıklayın, istediğiniz Taşı ve dize **Kes** kısayol menüsünden.
 
@@ -125,18 +112,15 @@ Hızlı ekleme veya silme kullanarak dize tablo girişleri **dize** Düzenleyici
    > [!NOTE]
    > Varsa **kimliği** veya **değer** ile varolan taşınan dize çakışmalar **kimliği** veya **değer** hedef dosyasında ya da **Kimliği** veya **değer** taşınan dize değişiklikleri. Bir dize ile aynı varsa **kimliği**, **kimliği** taşınan dize değişiklikleri. Bir dize ile aynı varsa **değer**, **değer** taşınan dize değişiklikleri.
 
-## <a name="to-change-the-properties-of-a-string-resource"></a>Bir dize kaynağının özelliklerini değiştirmek için
+### <a name="to-change-the-properties-of-a-string-resource"></a>Bir dize kaynağının özelliklerini değiştirmek için
 
 Yerinde düzenleme kimliği, değer ve açıklamalı alt yazı özelliklerini değiştirmek için kullanabilirsiniz.
 
-### <a name="to-change-a-string-or-its-identifier"></a>Bir dize veya tanımlayıcısını değiştirmek için
+#### <a name="to-change-a-string-or-its-identifier"></a>Bir dize veya tanımlayıcısını değiştirmek için
 
 1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
 
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
-
-2. Düzenle ve çift dize seçin **kimliği**, **değer**, veya **açıklamalı alt yazı** sütun. Artık şunları yapabilirsiniz:
+1. Düzenle ve çift dize seçin **kimliği**, **değer**, veya **açıklamalı alt yazı** sütun. Artık şunları yapabilirsiniz:
 
    - Seçin bir **kimliği** gelen **kimliği açılan** liste veya türü bir `ID` doğrudan yerinde.
 
@@ -147,12 +131,9 @@ Yerinde düzenleme kimliği, değer ve açıklamalı alt yazı özelliklerini de
         > [!NOTE]
         >  Bir dizenin özelliklerini de düzenleyebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 
-### <a name="to-change-the-caption-property-of-multiple-string-resources"></a>Birden çok dize kaynakları resim yazısı özelliğini değiştirmek için
+#### <a name="to-change-the-caption-property-of-multiple-string-resources"></a>Birden çok dize kaynakları resim yazısı özelliğini değiştirmek için
 
 1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
-
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 1. Basılı tutarak değiştirmek istediğiniz dizeleri seçin **Ctrl** anahtar her birini seçin.
 
@@ -160,12 +141,9 @@ Yerinde düzenleme kimliği, değer ve açıklamalı alt yazı özelliklerini de
 
 1. Tuşuna **girin**.
 
-## <a name="to-add-formatting-or-special-characters-to-a-string-resource"></a>Biçimlendirme veya özel karakterler için bir dize kaynağı eklemek için
+### <a name="to-add-formatting-or-special-characters-to-a-string-resource"></a>Biçimlendirme veya özel karakterler için bir dize kaynağı eklemek için
 
 1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
-
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 1. Değiştirmek istediğiniz dizeyi seçin.
 
@@ -193,7 +171,6 @@ Win32
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Dizeler](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)<br/>
 [Dizeleri hakkında](/windows/desktop/menurc/about-strings)<br/>
 [Pencere düzenlerini özelleştirme](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

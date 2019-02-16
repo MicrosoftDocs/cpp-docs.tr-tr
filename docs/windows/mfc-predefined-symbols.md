@@ -1,6 +1,6 @@
 ---
 title: MFC Önceden Tanımlanmış Semboller
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 helpviewer_keywords:
 - MFC symbols
 - symbols [C++], MFC
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: bf97ba0c4a6d29dfa0a3341f421da609b0c7ee70
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 2f36f42ce24c2cdf1f3ac4c93248d430ec75f30a
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764070"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320867"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 
@@ -278,7 +278,8 @@ Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Wi
 
 MFC
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)
+[ATL Önceden Tanımlanmış Semboller](../windows/atl-predefined-symbols.md)<br/>
+[Win32 Önceden Tanımlanmış Semboller](../windows/win32-predefined-symbols.md)<br/>

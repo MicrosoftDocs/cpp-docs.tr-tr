@@ -1,6 +1,6 @@
 ---
 title: Hızlandırıcı Düzenleyicisi (C++)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.accelerator.F1
 - vc.editors.accelerator
@@ -33,12 +33,12 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: 5ece5c7e85a3ef59b728474746e9553a751d43c6
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: 90ef142336cf88c5e40f78f6cc651b2bb35a0f6c
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226351"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320646"
 ---
 # <a name="accelerator-editor-c"></a>Hızlandırıcı Düzenleyicisi (C++)
 
@@ -55,8 +55,6 @@ Kullanabileceğiniz [sınıf görünümü](/visualstudio/ide/viewing-the-structu
 
    > [!NOTE]
    > Windows, boş bir Hızlandırıcı tabloları oluşturmak izin vermez. Hızlandırıcı tablosunu giriş yok oluşturursanız, tabloyu kaydettiğinizde otomatik olarak silinir.
-
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ## <a name="accelerator-properties"></a>Hızlandırıcı özellikleri
 
@@ -123,9 +121,6 @@ Her Hızlandırıcı kimliği için üç özellik vardır: **değiştiricisi** �
 Bir C++ projesinde, doğrudan yerinde düzenlemeyle Hızlandırıcı tablosunu düzenleyebilirsiniz **hızlandırıcı** Düzenleyici.
 
 Standart özellik sayfalarının kullanımı için aşağıdaki yordamlara bakın, ancak aynı sonucu yerinde düzenleme ve özellik sayfası yöntemi vardır. Özellik sayfaları veya yerinde düzenlemeyi kullanarak yapılan değişiklikler hemen Hızlandırıcı tablosunda yansıtılır.
-
-> [!NOTE]
-> Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 ### <a name="to-edit-in-an-accelerator-table"></a>Hızlandırıcı tablosunu düzenleme
 
@@ -209,9 +204,7 @@ Listenin tarama ve girişini bulun.
 
 Win32
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)
-
-[Hızlandırıcı Tablosunu Düzenleme](../windows/editing-in-an-accelerator-table.md)<br/>
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Önceden Tanımlanmış Hızlandırıcı Tuşları](../windows/predefined-accelerator-keys.md)<br/>
