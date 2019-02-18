@@ -1,6 +1,6 @@
 ---
 title: Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++)
-ms.date: 11/04/2016
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - accelerator keys
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
-ms.openlocfilehash: 062b860849d968e18657afb66b568a1bf6f2b6d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 604f97edc8e4e49bad477d76e0e46334b8cf726b
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505111"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336546"
 ---
 # <a name="accelerator-keys-c-image-editor-for-icons"></a>Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++)
 
@@ -47,7 +47,7 @@ Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları
 |Image.OutlinedRectangleTool|**Shift** + **Alt** + **R**|Bir dış dolu bir dikdörtgen çizer.|
 |Image.OutlinedRoundRectangleTool|**Shift** + **Alt** + **W**|Bir dış dolu bir Yuvarlatılmış dikdörtgen çizer.|
 |Image.PencilTool|**CTRL** + **ediyorum**|Tek piksellik bir kalem kullanarak çizer.|
-|Image.PreviousColor|**CTRL** + **[**<br /><br /> - veya -<br /><br /> **CTRL** + **sol ok**|Çizim ön plan rengini önceki palet rengine değiştirir.|
+|Image.PreviousColor|**Ctrl** + **[**<br /><br /> - veya -<br /><br /> **CTRL** + **sol ok**|Çizim ön plan rengini önceki palet rengine değiştirir.|
 |Image.PreviousRightColor|**CTRL** + **Shift** + **[**<br /><br /> - veya -<br /><br /> **Shift** + **Ctrl** + **sol ok**|Çizim arkaplan rengini önceki palet rengine değiştirir.|
 |Image.RectangleSelectionTool|**Shift** + **Alt** + **S**|Taşıma, kopyalama veya düzenlemek üzere görüntünün dikdörtgen bir bölümünü seçer.|
 |Image.RectangleTool|ATL + R|Seçilen çizgi genişliği ve rengine sahip bir dikdörtgen çizer.|
@@ -62,11 +62,9 @@ Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları
 |Image.ZoomIn|**CTRL** + **Shift** + **.** (nokta)<br /><br /> - veya -<br /><br /> **CTRL** + **yukarı ok**|Geçerli görünümün büyütmesini artırır.|
 |Image.ZoomOut|**CTRL** + **,** (virgül)<br /><br /> - veya -<br /><br /> **CTRL** + **aşağı ok**|Geçerli görünümün büyütmesini azaltır.|
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
-
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

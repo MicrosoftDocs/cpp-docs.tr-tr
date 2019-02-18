@@ -1,6 +1,6 @@
 ---
 title: (C++) iletişim kutularındaki denetimler | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 02/15/2019
 f1_keywords:
 - Custom Control
 helpviewer_keywords:
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 1f231a376b335d7fb711ef2039c13f49624e6bfb
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: 6360491ebb4478ee4ce22115eced7ed672866565
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264848"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336520"
 ---
 # <a name="controls-in-dialog-boxes-c"></a>(C++) iletişim kutularındaki denetimler
 
@@ -30,25 +30,11 @@ En hızlı yolu, iletişim kutusuna denetimler ekleme, mevcut denetimleri yenide
 
 İletişim kutusuna bir denetimi ekledikten sonra özellikleri gibi başlığı değiştirebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Birden çok denetim seçin ve özelliklerini tamamını aynı anda değiştirebilirsiniz.
 
-- [Denetimleri Ekleme, Düzenleme veya Silme](adding-editing-or-deleting-controls.md)
+- [Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri](adding-editing-or-deleting-controls.md)
 
-- [Denetim Seçme](../windows/selecting-controls.md)
+- [Nasıl yapılır: Denetimleri düzenleme](../windows/arrangement-of-controls-on-dialog-boxes.md)
 
-- [Tek Denetimleri Boyutlandırma](../windows/sizing-individual-controls.md)
-
-- [Denetimleri Aynı Genişliğe, Yüksekliğe veya Boyuta Getirme](../windows/making-controls-the-same-width-height-or-size.md)
-
-- [Birleşik Giriş Kutusu ve Aşağı Açılan Listesinin Boyutunu Ayarlama](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)
-
-- [Birleşik Giriş Kutusu Denetimine Değer Ekleme](../windows/adding-values-to-a-combo-box-control.md)
-
-- [Yatay Kaydırma Çubuğunun Genişliğini Ayarlama](../windows/setting-the-width-of-a-horizontal-scroll-bar.md)
-
-- [İletişim kutularındaki denetimlerin düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)
-
-- [Anımsatıcıları Tanımlama (Erişim Tuşları)](../windows/defining-mnemonics-access-keys.md)
-
-- [İletişim Kutusunun Boyutunu ve Konumunu Belirtme](../windows/specifying-the-location-and-size-of-a-dialog-box.md)
+- [Nasıl yapılır: Erişimi denetlemek ve değerleri tanımlayın](../windows/defining-mnemonics-access-keys.md)
 
 Kullanılabilir standart denetimler **araç kutusu** varsayılan olaylar şunlardır:
 
@@ -110,8 +96,6 @@ Bu özel denetimler için sınırlı olursunuz:
 - Denetimin stilini ayarlar bir 32 bit onaltılık değer yazarak.
 
 - Genişletilmiş stili ayarlanıyor.
-
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ## <a name="requirements"></a>Gereksinimler
 

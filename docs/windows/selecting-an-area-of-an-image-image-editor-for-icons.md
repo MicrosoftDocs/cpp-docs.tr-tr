@@ -1,6 +1,6 @@
 ---
-title: Görüntüyü düzenleme
-ms.date: 11/04/2016
+title: 'Nasıl yapılır: Görüntü Düzenle'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.image.editing
 - vc.editors.image.editing
@@ -40,14 +40,14 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: 928a37d1b85378c3c50f41dba441259ace2d3af9
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 906244b692253a8423af55eb91d46622087713e3
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320685"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336544"
 ---
-# <a name="editing-an-image"></a>Görüntüyü düzenleme
+# <a name="how-to-edit-an-image"></a>Nasıl yapılır: Görüntü Düzenle
 
 Seçim araçları, kesme, kopyalama, Temizle, yeniden boyutlandırma, Ters Çevir veya taşımak istediğiniz görüntüyü bir alanı tanımlamak için kullanabilirsiniz. İle **dikdörtgen seçim** aracı tanımlayabilir ve görüntünün dikdörtgen bir bölge seçin. İle **düzensiz seçim** aracı seçmek için kesme, kopyalama veya başka bir işlem için istediğiniz alanı serbest bir özetini çizebilir.
 
@@ -56,9 +56,7 @@ Seçim araçları, kesme, kopyalama, Temizle, yeniden boyutlandırma, Ters Çevi
 
 Özel fırça seçimden de oluşturabilirsiniz. Daha fazla bilgi için [özel Fırça oluşturma](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
-
-## <a name="selecting-an-image"></a>Görüntü seçme
+## <a name="select-an-image"></a>Bir görüntü seçin
 
 1. Üzerinde **Resim Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komut), istediğiniz seçim aracını seçin.
 
@@ -72,7 +70,7 @@ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaü
 
 1. Geçerli seçimi dışında görüntüsünü seçin. Seçim kenarlığı odak değiştikçe ve görüntünün tamamını yeniden kapsar.
 
-## <a name="editing-parts-of-an-image"></a>Görüntünün Parçalarını Düzenleme
+## <a name="edit-parts-of-an-image"></a>Görüntünün parçalarını düzenleme
 
 Standart düzenleme işlemleri gerçekleştirebileceğiniz — kesme, kopyalama, silme ve taşıma — üzerinde bir [seçimi](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), görüntünün tamamını veya yalnızca bir kısmını seçim olup olmadığını. Çünkü **görüntü** Düzenleyicisi kullanan **Windows Pano**, görüntülerin arasında aktarabilirsiniz **görüntü** Düzenleyicisi ve diğer uygulamalar için Windows.
 
@@ -119,7 +117,7 @@ Gelen **Düzenle** menüsünde seçin **Sil**.
 
 Çizim ile bir seçim hakkında daha fazla bilgi için bkz. [özel Fırça oluşturma](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-## <a name="flipping-an-image"></a>Görüntüyü Çevirme
+## <a name="flip-an-image"></a>Görüntüyü çevirme
 
 Özgün bir Ayna görüntüsünü oluşturun, görüntüyü baş aşağı döndürmek veya resmi sağa aynı anda 90 derece döndür görüntü döndürme ya da ters çevir.
 
@@ -132,7 +130,7 @@ Gelen **Düzenle** menüsünde seçin **Sil**.
    > [!NOTE]
    > Ayrıca [(kısayol) Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md) bu komutların veya kısayol menüsünden (Resim Düzenleyicisi sırada görüntüde dışında tıklayın) komutlara erişin.
 
-## <a name="resizing-an-image"></a>Görüntüyü Yeniden Boyutlandırma
+## <a name="resize-an-image"></a>Görüntüyü yeniden boyutlandırma
 
 Davranışını **görüntü** görüntüyü yeniden boyutlandırma sırasında Düzenleyicisi bağlı olup seçtiğiniz [seçili](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) görüntünün tamamını veya yalnızca bir bölümü.
 
@@ -185,7 +183,7 @@ Normalde, **görüntü** Düzenleyicisi kırpar veya bir görüntü yeniden boyu
 
 1. Boyutlandırma tutamaçlarından birinin doğru boyut seçimi olana kadar sürükleyin.
 
-## <a name="editing-an-image-outside-of-a-project"></a>Proje Dışındaki Görüntüyü Düzenleme
+## <a name="edit-an-image-outside-of-a-project"></a>Proje dışındaki görüntüyü düzenleme
 
 Açın ve görüntülerini geliştirme ortamında herhangi bir grafik uygulamasında yaptığınız gibi düzenleyin. Birlikte çalıştığınız görüntüleri, tek başına düzenlemek için Visual Studio projesinin bir parçası olması gerekmez.
 
@@ -197,7 +195,7 @@ Açın ve görüntülerini geliştirme ortamında herhangi bir grafik uygulamas�
 
 1. Bulun ve düzenlemek istediğiniz görüntüyü açın.
 
-## <a name="changing-image-properties"></a>Görüntü Özelliklerini Değiştirme
+## <a name="change-image-properties"></a>Görüntü özelliklerini değiştir
 
 Ayarlayabilir veya kullanmanın bir görüntü özelliklerini değiştirme [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 

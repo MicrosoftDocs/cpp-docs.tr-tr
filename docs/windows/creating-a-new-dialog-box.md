@@ -1,6 +1,6 @@
 ---
-title: İletişim kutusu (C++) oluşturma
-ms.date: 11/04/2016
+title: 'Nasıl yapılır: Oluştur iletişim kutusu (C++)'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog
 helpviewer_keywords:
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: a3b8143d3a70906f910a445816a188913a593e5d
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: c757c82978a5107374e6de2f8cff24319ed64f9c
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264822"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336481"
 ---
-# <a name="creating-a-dialog-box-c"></a>İletişim kutusu (C++) oluşturma
+# <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Oluştur iletişim kutusu (C++)
 
 Boyutu ve bir C++ iletişim kutusunda, konumu ve denetimleri içindeki boyutunu ve konumunu iletişim birimleriyle ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerleri tek tek denetimler ve iletişim kutusu görünür.
 
@@ -39,8 +39,6 @@ Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınız�
    > Sihirbazları kullanarak yapılan iletişim kutusu kodu bağlantıları benzetime dahil edilmez.
 
 Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresiyle ilişkili bir konumda görüntüler. İletişim kutusunun ayarladıysanız **mutlak hizalama** özelliğini **True**, ekranın sol üst köşesine göre olan konumda iletişim kutusunu görüntüler.
-
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ## <a name="to-create-a-new-dialog-box"></a>Yeni iletişim kutusu oluşturmak için
 
@@ -82,7 +80,7 @@ Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluştu
 
 1. Zaman **iletişim** Düzenleyicisi etkin pencere menü çubuğunda, seçin **biçimi** > **Test iletişim**.
 
-1. Benzetimi bitirmek için basın **Esc**, veya yalnızca seçin **Kapat** test iletişim kutusu düğmesi.
+1. Benzetimi bitirmek için basın **Esc** veya **Kapat** test iletişim kutusu düğmesi.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -91,6 +89,6 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)<br/>
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
+[Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
 [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>

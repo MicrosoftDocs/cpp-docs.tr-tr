@@ -1,6 +1,6 @@
 ---
-title: Çizim Aracı Kullanma
-ms.date: 11/04/2016
+title: 'Nasıl yapılır: Çizim aracı kullanma'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.image.drawing
 helpviewer_keywords:
@@ -16,16 +16,18 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-ms.openlocfilehash: 72224581e021a22b31ec5e6fa5940ff5a568a4e0
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 135509626e20044b0d4ec8e63d8916f4c537388e
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320555"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336559"
 ---
-# <a name="using-a-drawing-tool"></a>Çizim Aracı Kullanma
+# <a name="how-to-use-a-drawing-tool"></a>Nasıl yapılır: Çizim aracı kullanma
 
 **Görüntü** Düzenleyicisi çizim ve aynı şekilde tüm iş araçları silme serbest: Aracı'nı seçin ve gerekirse [ön plan ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından görüntüyü işaretçiyi ve tıklar veya çizmek ve silmek için sürükleyin.
+
+## <a name="drawing-tools"></a>Çizim Araçları
 
 Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçenek belirleyici, Aracı'nın seçenekleri görüntüler.
 
@@ -34,7 +36,7 @@ Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçe
 
 Çizim araçlarından herhangi birinden seçebilirsiniz **Resim Düzenleyicisi** araç veya **görüntü** menüsü.
 
-## <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>Seçin ve Resim Düzenleyicisi araç çubuğundan bir çizim aracı kullanma
+### <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>Seçin ve Resim Düzenleyicisi araç çubuğundan bir çizim aracı kullanma
 
 1. Bir düğme seçin **Resim Düzenleyicisi** araç çubuğu.
 
@@ -65,7 +67,7 @@ Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçe
 
 1. Basamaklı alt menüsünde kullanmak istediğiniz aracı seçin.
 
-## <a name="drawing-lines-or-closed-figures"></a>Çizgi veya Kapalı Şekiller Çizme
+## <a name="lines-or-closed-figures"></a>Çizgi veya kapalı şekiller
 
 Resim Düzenleyicisi araçları için satırlar çizme ve tüm kapalı şekiller aynı şekilde çalışır: bir noktada ekleme noktasını yerleştirin ve diğerine sürükleyin. Satırlar için bu uç noktalardır. Kapalı şekiller için bu, Şekil sınırlayıcı bir dikdörtgen zıt köşe noktalarıdır.
 
@@ -97,7 +99,7 @@ Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizil
 
 1. Çapraz zıt köşe için işaretçiyi sürükleyin.
 
-## <a name="create-a-custom-brush"></a>Özel Fırça oluşturma
+## <a name="custom-brushes"></a>Özel Fırçalar
 
 Özel fırça almak ve biri gibi kullanabileceğiniz görüntünün dikdörtgen kısmıdır **görüntü** düzenleyicinin hazır Fırçalar. Seçime göre gerçekleştirebileceğiniz tüm işlemler bir özel fırça üzerinde gerçekleştirebilirsiniz.
 
@@ -105,11 +107,7 @@ Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizil
 
 1. [Görüntünün seçin](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) fırça için kullanmak istediğiniz.
 
-1. Bulunduran **Shift** aşağı anahtar, seçimdeki seçin ve görüntünün arasında sürükleyin.
-
-   \- veya -
-
-1. Gelen **görüntü** menüsünde seçin **fırça olarak kullanma seçimi**.
+1. Basılı **Shift** aşağı anahtar, seçimdeki seçin ve görüntünün arasında sürükleyin. Veya **görüntü** menüsünde seçin **fırça olarak kullanma seçimi**.
 
    Seçimdeki renkleri arasında görüntüyü dağıtır özel bir fırça seçiminizi olur. Seçimin bir kopyasını sürükleyerek yol boyunca bırakılır. Daha yavaş sürükleyin, kopya yapılmaz.
 
@@ -138,15 +136,13 @@ Basın **artı** (**+**) fırça boyutunu çift anahtarı veya **eksi işareti**
 
 Tuşuna **Esc** veya başka bir çizim Aracı'nı seçin.
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
-
 ## <a name="requirements"></a>Gereksinimler
 
 Hiçbiri
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)
+[Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)

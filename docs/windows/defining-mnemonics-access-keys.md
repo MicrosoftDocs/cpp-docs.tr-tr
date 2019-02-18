@@ -1,6 +1,6 @@
 ---
 title: Erişimi denetlemek ve değerleri tanımlama
-ms.date: 11/04/2016
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.combo
 helpviewer_keywords:
@@ -22,16 +22,14 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 3a885ad57ba05304d51cb45d0b498d81ad37a148
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: 20319cd08d6d1e77faef1275e63bf3ffd354356b
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264861"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336494"
 ---
 # <a name="defining-control-access-and-values"></a>Erişimi denetlemek ve değerleri tanımlama
-
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ## <a name="change-the-tab-order-of-controls"></a>Denetimlerin sekme sırasını değiştirme
 
@@ -48,11 +46,7 @@ Yoksa bile denetimleri **sekme durağı** özelliğini **True** sekme sırasın�
 
 ### <a name="to-view-the-current-tab-order-for-all-controls-in-a-dialog-box"></a>Geçerli sekme sırasını tüm denetimleri için iletişim kutusunda görüntülemek için
 
-Üzerinde **biçimi** menüsünde **sekme sırasını**.
-
-\- veya -
-
-- Tuşuna **Ctrl** + **D**.
+Git **biçimi** menü ve select **sekme sırasını**, veya basın **Ctrl** + **D**.
 
 ### <a name="to-change-the-tab-order-for-all-controls-in-a-dialog-box"></a>İletişim kutusundaki tüm denetimlerin sekme sırasını değiştirmek için
 
@@ -60,7 +54,7 @@ Yoksa bile denetimleri **sekme durağı** özelliğini **True** sekme sırasın�
 
    Her denetimin sol üst köşedeki birkaç onun yerine geçerli sekme sırasının gösterir.
 
-1. Her denetim, istediğiniz sırayla tıklayarak bir sekme sırasını ayarlama **sekmesini** izlemek için anahtar.
+1. İstediğiniz sırayla her denetimi seçerek sekme sırasını ayarlama **sekmesini** izlemek için anahtar.
 
 1. Tuşuna **Enter** çıkmak için **sekme sırasını** modu.
 
@@ -90,9 +84,9 @@ Normalde, klavye kullanıcıları içeren bir iletişim kutusu alanındaki başk
 
 1. İletişim kutusunda bir denetimi seçin.
 
-2. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **açıklamalı alt yazı** özelliği, ve işareti yazarak denetim için yeni bir ad yazın (`&`) Bu denetim için erişim anahtarı olarak istediğiniz harfi önünde. Örneğin: `&Radio1`
+1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **açıklamalı alt yazı** özelliği, ve işareti yazarak denetim için yeni bir ad yazın (`&`) Bu denetim için erişim anahtarı olarak istediğiniz harfi önünde. Örneğin: `&Radio1`
 
-3. Tuşuna **girin**.
+1. Tuşuna **girin**.
 
    Örneğin, erişim anahtarı belirtmek için görüntülenen resim bir çizgi görünür **R**adio1.
 
@@ -100,17 +94,14 @@ Normalde, klavye kullanıcıları içeren bir iletişim kutusu alanındaki başk
 
 1. Denetim için bir başlık kullanarak yapmak bir **statik metin** denetim [araç kutusu](/visualstudio/ide/reference/toolbox).
 
-2. Statik metin başlığı ve işareti yazın (`&`) erişim anahtarı olarak istediğiniz harfi önünde.
+1. Statik metin başlığı ve işareti yazın (`&`) erişim anahtarı olarak istediğiniz harfi önünde.
 
-3. Statik metin denetimi sekme sırasının etiket denetimi karaktere emin olun.
+1. Statik metin denetimi sekme sırasının etiket denetimi karaktere emin olun.
 
-Bir iletişim kutusu içindeki tüm erişim anahtarları benzersiz olmalıdır.
+> [!NOTE]
+> Bir iletişim kutusu içindeki tüm erişim anahtarları benzersiz olmalıdır. Yinelenen erişim tuşları denetlemek için Git **biçimi** menü ve select **anımsatıcıları kontrol**.
 
-### <a name="to-check-for-duplicate-access-keys"></a>Yinelenen erişim tuşları denetlemek için
-
-1. Üzerinde **biçimi** menüsünde tıklatın **anımsatıcıları kontrol**.
-
-## <a name="add-values-to-a-combo-box-control"></a>Bir birleşik giriş kutusu denetimine değer ekleme
+## <a name="combo-box-values"></a>Birleşik giriş kutusu değerleri
 
 Sahip olduğunuz sürece bir birleşik giriş kutusu denetimine değer ekleyebilirsiniz **iletişim** Düzenleyicisi'ni açın.
 
@@ -119,7 +110,7 @@ Sahip olduğunuz sürece bir birleşik giriş kutusu denetimine değer ekleyebil
 
 ### <a name="to-enter-values-into-a-combo-box-control"></a>Bir birleşik giriş kutusu denetimine değer girmek için
 
-1. Birleşik giriş kutusu denetimine tıklayarak seçin.
+1. Birleşik giriş kutusu denetimi seçerek seçin.
 
 1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), ekranı aşağı kaydırarak **veri** özelliği.
 
@@ -129,7 +120,7 @@ Sahip olduğunuz sürece bir birleşik giriş kutusu denetimine değer ekleyebil
 1. Değer alanı için seçin **veri** özelliği ve türü, veri değerleri noktalı virgülle ayrılmış.
 
    > [!NOTE]
-   > Aşağı açılan listesinde alfabetik hale getirme ile alanları müdahale çünkü değerleri arasında boşluk koymayın.
+   > Aşağı açılan listesinde alfabetik hale getirme ile alanları müdahale çünkü değerleri arasında boşluk yerleştirmeyin.
 
 1. Tuşuna **Enter** değerleri eklemeyi tamamladığınızda.
 
@@ -146,11 +137,45 @@ Değerleri girdikten sonra **veri** özelliği, select **Test** düğmesini [ile
 
    Tuşuna **Esc** dönmek için **iletişim kutusu** Düzenleyici.
 
+   Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
+Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
+
+## <a name="radio-button-values"></a>Radyo düğmesi değerleri
+
+Radyo düğmeleri iletişim kutusuna eklediğinizde, bunları bir grup olarak ayarlayarak ele almanız bir **grubu** özelliğinde **özellikleri** gruptaki ilk düğmenin penceresi. Denetim Kimliği bu radyo düğmesi için daha sonra yer [üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md), radyo düğmesi grubunu için bir üye değişkeni ekleme etmenize imkan sağlar.
+
+İletişim kutusundaki radyo düğmelerini birden fazla grup olabilir. Aşağıdaki yordamı kullanarak her bir grup ekleyin.
+
+### <a name="to-add-a-group-of-radio-buttons-to-a-dialog-box"></a>Bir iletişim kutusu için bir grup radyo düğmeleri eklemek için
+
+1. Radyo düğmesi denetiminde seçme [araç penceresi](/visualstudio/ide/reference/toolbox) ve konumu iletişim kutusuna denetim yerleştirileceği yeri seçin.
+
+1. Gereksinim duyduğunuz kadar çok radyo düğmeleri eklemek için yukarıdaki adımı yineleyin. Radyo düğmesi grubunda sekme sırasının ardışık olduğundan emin olun.
+
+1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window)ayarlayın **grubu** özelliği *ilk* radyo düğmesi için sekmesinde sırayla **True**.
+
+   Değiştirme **grubu** özelliğini **True** WS_GROUP stili kaynak betiği iletişim nesnesinin düğmenin girişi ekler ve birden fazla radyo düğmesini seçerek bir zamanında kullanıcı engeller (kullanıcı seçer bir radyo düğmesi grubundaki diğer temizlendiğinde) düğmesi grubunda.
+
+   > [!NOTE]
+   > Yalnızca ilk radyo düğmesi grubunda olmalıdır **grubu** özelliğini **True**. Düğmesi grubunun parçası olmayan ek denetimleri varsa Ayarla **grubu** ilk denetiminin özelliği *grubun dışına olan* için **True** de. İlk denetim grubu dışında kullanarak hızlıca tanımlayabilirsiniz **Ctrl**+**D** sekme sırasını görüntülemek için.
+
+### <a name="to-add-a-member-variable-for-the-radio-button-group"></a>Radyo düğmesi grubunda için üye değişkeni eklemek için
+
+1. Sekme sırasında ilk radyo düğmesi denetimini sağ tıklayın (baskın denetimi ve bir **grubu** özelliğini **True**) seçip **değişken Ekle** gelen kısayol menüsü.
+
+1. İçinde [üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md)seçin **denetim değişkeni** onay kutusunu işaretleyin ve ardından **değer** radyo düğmesi.
+
+1. İçinde **değişken adı** yeni bir üye değişkeni için bir ad yazın.
+
+1. İçinde **değişken türü** liste kutusu, select **int** veya türü *int*.
+
+   Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
+
 ## <a name="requirements"></a>Gereksinimler
 
 Win32
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

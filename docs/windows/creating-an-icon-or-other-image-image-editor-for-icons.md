@@ -1,6 +1,6 @@
 ---
-title: Simge veya Başka Görüntü Oluşturma
-ms.date: 11/04/2016
+title: 'Nasıl yapılır: Simge veya başka görüntü oluşturma'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
@@ -87,14 +87,14 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-ms.openlocfilehash: 3ce4d10c9ab085973f1ab00dba205c22ff17f42f
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 69fffc71a7b5dfad12e70a9132fc61b11a0914cc
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320737"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336598"
 ---
-# <a name="creating-an-icon-or-other-image"></a>Simge veya Başka Görüntü Oluşturma
+# <a name="how-to-create-an-icon-or-other-image"></a>Nasıl yapılır: Simge veya başka görüntü oluşturma
 
 Yeni bir görüntü (bit eşlemi, simge, imleç veya araç) oluşturmak ve görünümünü özelleştirmek için görüntü Düzenleyicisi'ni kullanın. Desenli sonra yeni bir bit eşlem oluşturabilirsiniz bir [şablon](../windows/how-to-use-resource-templates.md).
 
@@ -133,13 +133,9 @@ Yeni simgesi veya imleci kaynak oluşturduğunuzda **görüntü** Düzenleyicisi
 
 Simgesi veya imleci kaynak açtığınızda [Resim Düzenleyicisi](../windows/image-editor-for-icons.md), görüntünün en yakın geçerli görüntü cihazı eşleşen varsayılan olarak açılır.
 
-#### <a name="new-ltdevicegt-image-type-dialog-box"></a>Yeni &lt;cihaz&gt; görüntü türü iletişim kutusu
-
 **Yeni &lt;cihaz&gt; görüntü türü** iletişim kutusu belirtilen bir türün yeni cihaz görüntüsü oluşturmanıza olanak sağlar. Açmak için **yeni \<cihaz > Görüntü** iletişim kutusunda **yeni görüntü tipi** üzerinde **görüntü** menüsü. Dahil edilen aşağıdaki özellikler **hedef görüntü tipi** ve **özel**.
 
-##### <a name="target-image-type"></a>Hedef görüntü türü
-
-Mevcut görüntü türlerini listeler. Açmak istediğiniz görüntü türünü seçin:
+**Hedef görüntü tipi** özelliği kullanılabilir görüntü türlerini listeler. Açmak istediğiniz görüntü türünü seçin:
 
 ||||
 |-|-|-|
@@ -153,9 +149,7 @@ Mevcut görüntü türlerini listeler. Açmak istediğiniz görüntü türünü 
 > [!NOTE]
 > Bu listede herhangi bir mevcut görüntü görüntülenmez.
 
-##### <a name="custom"></a>Özel
-
-Açılır **özel görüntü** içinde oluşturabileceğiniz yeni bir görüntü özel boyutu ve renklerin sayısı ile iletişim kutusu.
+**Özel** özelliği açılır **özel görüntü** içinde oluşturabileceğiniz yeni bir görüntü özel boyutu ve renklerin sayısı ile iletişim kutusu.
 
 **Özel görüntü** iletişim kutusu özel boyutu ve renk sayısını yeni bir görüntü oluşturmanıza olanak sağlar. Dahil edilen aşağıdaki özellikler şunlardır:
 
@@ -164,8 +158,6 @@ Açılır **özel görüntü** içinde oluşturabileceğiniz yeni bir görüntü
 |**Genişlik**|Özel görüntü genişliğini piksel cinsinden (1-512 sınırını 2048) girmeniz için bir alan sağlar.|
 |**Yükseklik**|Özel görüntü (1-512 sınırını 2048) piksel cinsinden yüksekliği girmek bir alan sağlar.|
 |**Renkler**|Özel görüntü için renk sayısını seçmenize olanak sağlar: 2, 16 veya 256.|
-
-#### <a name="open-ltdevicegt-image-dialog-box"></a>Açık &lt;cihaz&gt; görüntü iletişim kutusu
 
 Kullanım **açın &lt;cihaz&gt; görüntü** C++ projelerinde cihaz görüntüleri açmak için iletişim kutusu. Geçerli kaynak (geçerli kaynak bir parçası olan görüntüleri) var olan cihaz görüntülerinde listeler. Dahil edilen aşağıdaki özelliğidir:
 
@@ -184,13 +176,13 @@ Kullanım **açın &lt;cihaz&gt; görüntü** C++ projelerinde cihaz görüntül
 
    Bir artı işareti (**+**) görüntü kaynak türünü yanında **kaynak Ekle** iletişim kutusu, geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
 
-### <a name="add-an-image-for-a-different-display-device"></a>Farklı görüntüleme cihazı için görüntü ekleme
+### <a name="to-add-an-image-for-a-different-display-device"></a>Farklı görüntüleme cihazı için görüntü ekleme
 
 1. Üzerinde **görüntü** menüsünde **yeni cihaz görüntüsü** (veya sağ **Resim Düzenleyicisi** bölmesinde seçin **yeni cihaz görüntüsü** gelen kısayol menüsü).
 
 1. Eklemek istediğiniz görüntü türünü seçin. Belirleyebilirsiniz **özel** boyutu varsayılan listesinde kullanılabilir olmayan bir simge oluşturmak için.
 
-### <a name="copy-a-device-image"></a>Cihaz görüntüsü kopyalama
+### <a name="to-copy-a-device-image"></a>Cihaz görüntüsü kopyalama
 
 1. Üzerinde **görüntü** menüsünde **açık cihaz görüntüsü** ve geçerli görüntüleri listesinden görüntü seçin. Örneğin, 32 × 32 bir simge 16 renk sürümünü seçin.
 
@@ -200,14 +192,14 @@ Kullanım **açın &lt;cihaz&gt; görüntü** C++ projelerinde cihaz görüntül
 
 1. Simge görüntüsü yapıştırın (**Ctrl**+**V**) birinden **Resim Düzenleyicisi** diğer pencere. Daha büyük bir boyutu daha küçük bir boyuta yapıştırıyorsanız, görüntüyü yeniden boyutlandırmak için simge tutamaçlarını kullanabilirsiniz.
 
-### <a name="delete-a-device-image"></a>Cihaz görüntüsünü silme
+### <a name="to-delete-a-device-image"></a>Cihaz görüntüsünü silme
 
 Simge görüntüsü görüntülenirken **görüntü** Düzenleyicisi'ni seçin **cihaz görüntüsünü silme** gelen **görüntü** menüsü. Kaynak son simge görüntüsü sildiğinizde, kaynak da silinir.
 
    > [!NOTE]
    > Bastığınızda **Del** anahtar, bir simge çizilmiş renkleri ve görüntüleri silinir ancak simge kalır; artık bunu tasarlayabilirsiniz. Basarsanız **Del** yanlışlıkla basabilirsiniz **Ctrl**+**Z** eylemi geri alamazsınız.
 
-### <a name="create-transparent-or-inverse-regions-in-device-images"></a>Cihaz görüntülerinde saydam veya ters bölgeler oluşturma
+### <a name="to-create-transparent-or-inverse-regions-in-device-images"></a>Cihaz görüntülerinde saydam veya ters bölgeler oluşturma
 
 İçinde [Resim Düzenleyicisi](../windows/image-editor-for-icons.md), ilk simgesi veya imleci görüntünün saydam bir öznitelik vardır. Simge ve imleç görüntü dikdörtgen olsa da, görüntünün bölümlerini şeffaf olduğundan çok bunu görünmez; temel alınan görüntünün ekranında simgesi veya imleci gösterilir. Simge sürüklediğinizde, bir ters renkte bölümleri görünebilir. Ekran rengi ve ters renk ayarlayarak bu etkiyi oluşturmak [renkler penceresini](../windows/colors-window-image-editor-for-icons.md).
 
@@ -344,13 +336,11 @@ GIF veya JPEG resimleri açabileceğiniz **görüntü** Düzenleyicisi ve bit e�
    > [!NOTE]
    > Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez. Daha fazla bilgi için [Creating Resource Files](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) içinde *.NET Framework Geliştirici Kılavuzu*.
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
-
 ## <a name="requirements"></a>Gereksinimler
 
 Hiçbiri
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Bit Eşlemleri Araç Çubuklarına Dönüştürme](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [Yeni Araç Çubukları Oluşturma](../windows/creating-new-toolbars.md)<br/>

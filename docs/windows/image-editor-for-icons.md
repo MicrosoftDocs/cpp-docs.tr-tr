@@ -1,6 +1,6 @@
 ---
-title: Simgeler İçin Görüntü Düzenleyicisi
-ms.date: 10/17/2018
+title: Simgeler (C++) için görüntü Düzenleyicisi
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.cursor.F1
 - vc.editors.icon.F1
@@ -42,14 +42,14 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: 48b363b7b9021042fe6242be70c74f0daeade0c2
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 782462a4aeba72252c4d6043bd192f6892a3966f
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320711"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336585"
 ---
-# <a name="image-editor-for-icons"></a>Simgeler İçin Görüntü Düzenleyicisi
+# <a name="image-editor-for-icons-c"></a>Simgeler (C++) için görüntü Düzenleyicisi
 
 Bir görüntü dosyası (.ico, .bmp, .png) Çözüm Gezgini'nde tıkladığınızda, görüntü Kod Düzenleyicisi'nde kod dosyaları açmak aynı şekilde Resim Düzenleyicisi'nde açılır. Bir Resim Düzenleyicisi sekmesi etkin olduğunda, görüntü oluşturmaya ve düzenlemeye için birçok araç çubuklarıyla bakın. Bit eşlemler, simgeler ve imleçlerin yanı sıra komutlarını kullanarak GIF veya JPEG biçimindeki görüntüleri de düzenleyebilirsiniz **görüntü** menü ve araçları **Resim Düzenleyicisi** araç çubuğu.
 
@@ -232,13 +232,11 @@ Tüm **Resim Düzenleyicisi** bölmeleri katsayısını 4 veya daha büyük ile 
 
 Kullanabileceğiniz **görüntü** Düzenleyicisi ve [ikili düzenleyiciyi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için bkz: [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
-
 ## <a name="requirements"></a>Gereksinimler
 
 Hiçbiri
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Simgeler](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)
