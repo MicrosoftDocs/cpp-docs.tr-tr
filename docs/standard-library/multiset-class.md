@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-ms.openlocfilehash: 8d2e298a2e4c6eb16a1851b3a9ce7ddc886a76f2
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: 3b059db877d24f5e4414745ba6c2f9ee4f6591e7
+ms.sourcegitcommit: 7cd712176e5bc341b9d8f899d41ad49f02f85e5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678476"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418724"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -188,7 +188,7 @@ C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya
 |[silme](#erase)|Bir öğenin veya öğelerin aralığını kaldırır bir `multiset` belirtilen konumları veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
 |[Bul](#find)|İçindeki bir öğenin birinci konumunu gösteren bir yineleyici döndüren bir `multiset` belirtilen anahtara eşit olan.|
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `multiset`.|
-|[Ekle](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `multiset`.|
+|[insert](#insert)|Bir öğe veya bir dizi öğelerine ekler bir `multiset`.|
 |[key_comp](#key_comp)|İki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan `multiset`.|
 |[lower_bound](#lower_bound)|İçindeki ilk öğeye bir yineleyici döndüren bir `multiset` belirtilen anahtardan daha büyük veya ona eşit bir anahtara sahip.|
 |[max_size](#max_size)|Öğesinin maksimum uzunluğunu döndürür `multiset`.|
@@ -471,7 +471,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -865,7 +865,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -984,7 +984,7 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir çoklu küme Aranmakta öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1421,7 +1421,7 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1929,7 +1929,7 @@ int main() {
       cout << *ms1_Iter << " ";
    cout << "." << endl;
 
-   // rend can be used to terminate an interation
+   // rend can be used to terminate an iteration
    // through a multiset in a reverse order
    cout << "The reversed multiset is: ";
    for ( ms1_rIter = ms1.rbegin( ) ; ms1_rIter != ms1.rend( ); ms1_rIter++ )
@@ -2096,7 +2096,7 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri

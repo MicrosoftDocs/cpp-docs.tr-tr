@@ -1,17 +1,17 @@
 ---
 title: / CETCOMPAT (denetim akışı zorlama teknolojisi ile uyumlu)
-ms.date: 02/01/2019
+ms.date: 02/19/2019
 f1_keywords:
 - /CETCOMPAT
 helpviewer_keywords:
 - /CETCOMPAT linker option
 - /CETCOMPAT
-ms.openlocfilehash: 3adb147804674b52a5d77030c48567ec04da6aa6
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 48eb1e2369e54d855bd19bb1d26ad057c903b9d0
+ms.sourcegitcommit: 7cd712176e5bc341b9d8f899d41ad49f02f85e5f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703375"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418698"
 ---
 # <a name="cetcompat-control-flow-enforcement-technology-compatible"></a>/ CETCOMPAT (denetim akışı zorlama teknolojisi ile uyumlu)
 
@@ -24,7 +24,7 @@ Bir yürütülebilir görüntü denetim akışı zorlama teknolojisi (CET) ile u
 ## <a name="arguments"></a>Arguments
 
 **YOK**<br/>
-Executalbe CET ile uyumlu işaretli olmamalıdır olduğunu belirtir.
+Yürütülebilir dosya ile CET uyumlu işaretli olmamalıdır olduğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -44,7 +44,7 @@ Denetim akışı zorlama teknolojisi (CET) belirli türde kötü amaçlı yazıl
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bu seçenek, bir program eşdeğerini yok.
+Bu seçenek, bir program eşdeğerini yok.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
