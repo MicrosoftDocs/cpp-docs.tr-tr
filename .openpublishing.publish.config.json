@@ -5,7 +5,7 @@
       "docset_name": "vcppdocs",
       "build_source_folder": "docs",
       "build_output_subfolder": "vcppdocs",
-      "locale": "tr-TR",
+      "locale": "tr-tr",
       "monikers": [],
       "moniker_ranges": [">= vs-2015"],
       "open_to_public_contributors": true,
@@ -19,9 +19,6 @@
     }
   ],
   "notification_subscribers": [],
-  "sync_notification_subscribers": [
-    "ceicnotifications@microsoft.com"
-  ],
   "branches_to_filter": [
     "live"
   ],
@@ -29,6 +26,7 @@
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
   "enable_incremental_build": true,
   "contribution_branch_mappings": {
     "live-sxs": "live"
