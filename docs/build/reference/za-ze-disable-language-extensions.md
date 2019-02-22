@@ -1,6 +1,6 @@
 ---
 title: /Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
-ms.date: 11/04/2016
+ms.date: 02/19/2019
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.DisableLanguageExtensions
 - /za
@@ -18,36 +18,34 @@ helpviewer_keywords:
 - Disable Language Extensions compiler option
 - Ze compiler option [C++]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2
-ms.openlocfilehash: a3d25f71739f9948f2c0237efbaeaf8fa89f2114
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d24affdf92222ac50ffe72b3a1606d3f7030de60
+ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549727"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56676480"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
 
-**/Za** derleyici seçeneği, ANSI C89 veya ISO C ++ 11 ile uyumlu olmayan dil yapıları için bir hata gösterir. **/Ze** derleyici seçeneği, varsayılan olarak açıktır, Microsoft uzantıları sağlar.
+**/Za** derleyici seçeneği devre dışı bırakır ve C için ANSI C89/ISO C90 ile uyumlu değil Microsoft uzantıları için hataları yayar. Kullanım dışı **/Ze** derleyici seçeneği Microsoft uzantıları sağlar. Microsoft uzantıları varsayılan olarak etkindir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/Za
-/Ze
-```
+> **/Za**<br/>
+> **/Ze**
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  **/Ze** davranışını varsayılan olarak açık olduğundan seçeneği kullanım dışı. Kullanmanızı öneririz [/Zc (Uyumluluk)](../../build/reference/zc-conformance.md) belirli bir dil uzantısı özellikleri denetlemek için derleyici seçenekleri. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** konusundaki [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+> Kullanımını **/Za** zaman kodu derlendiğinde gibi C++ önerilmez. **/Ze** davranışını varsayılan olarak açık olduğundan seçeneği kullanım dışı. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. [kullanım dışı ve kaldırılan derleyici seçenekleri](compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options).
 
-Visual C++ derleyicisi ANSI C89, ISO C99 veya ISO C++ standartlarına içinde belirtilen dışında özellikleri sunar. Bu özellikler, topluca C ve C++ için Microsoft uzantıları bilinir. Varsayılan olarak kullanılabilir ve kullanılabilir değil bu uzantılar ne zaman **/Za** seçeneği belirtildi. Belirli uzantılar hakkında daha fazla bilgi için bkz. [C ve C++ için Microsoft Extensions](../../build/reference/microsoft-extensions-to-c-and-cpp.md).
+Microsoft C/C++ derleyicisi, C kodu, derleme iki yolla destekler:
 
-Belirterek dil uzantılarını devre dışı öneririz **/Za** programınızı diğer ortamlara bağlantı noktası planlıyorsanız seçeneği. Zaman **/Za** belirtilirse, derleyici Microsoft genişletilmiş anahtar sözcükleri basit tanımlayıcıları olarak değerlendirir, diğer Microsoft uzantılarını devre dışı bırakır ve otomatik olarak tanımlar `__STDC__` C programları için önceden tanımlanmış makro.
+- Bir kaynak dosyası varsa derleyici C derleme modu varsayılan olarak kullanır. bir *.c* uzantısı veya [/Tc](tc-tp-tc-tp-specify-source-file-type.md) veya [/TC](tc-tp-tc-tp-specify-source-file-type.md) seçeneği belirtildi. C derleyicisi C diline yönelik Microsoft uzantıları varsayılan olarak etkinleştirir, C89/C90 derleyicisidir. Belirli uzantılar hakkında daha fazla bilgi için bkz. [C ve C++ için Microsoft Extensions](microsoft-extensions-to-c-and-cpp.md). Hem C derleme ve **/Za** seçeneği belirtilirse, C Derleyici uyumlu kesinlikle C89/C90 standart. Microsoft genişletilmiş anahtar sözcükleri basit tanımlayıcıları olarak değerlendirir, diğer Microsoft uzantılarını devre dışı bırakır ve otomatik olarak tanımlar derleyici [ \_ \_STDC\_ \_ ](../../preprocessor/predefined-macros.md) önceden tanımlanmış Makro C programları için.
 
-İle kullanılan diğer derleyici seçeneklerini **/Za** nasıl derleyici standartlara uyum sağlar etkileyebilir.
+- Derleyici C++ derleme modunda C kodu olarak derleyebilirsiniz. Bu, davranıştır olmayan kaynak dosyaları için varsayılan bir *.c* uzantısı ve ne zaman [/Tp](tc-tp-tc-tp-specify-source-file-type.md) veya [/TP](tc-tp-tc-tp-specify-source-file-type.md) seçeneği belirtildi. C++ derleme modunda, derleyici standart C++ dahil ISO C99 ve C11 standartları bölümlerine destekler. Neredeyse tüm C kodu aynı zamanda geçerli C++ kodudur. C anahtar sözcükleri ve kod yapıları az sayıda C++ kodu geçerli değil veya c++'ta farklı şekilde yorumlanır. Derleyici, bu gibi durumlarda standart C++ göre davranır. C++ derleme modunda **/Za** seçeneği beklenmeyen davranışlara neden olabilir ve önerilmez.
 
-Belirli standartlarla uyumlu davranışı ayarları belirtmek daha fazla yolu için bkz [/Zc](../../build/reference/zc-conformance.md) derleyici seçeneği.
+Diğer derleyici seçenekleri, derleyici standartlara uyumluluk nasıl sağlar? etkileyebilir. Belirli standart C ve C++ davranışı ayarları belirtmek daha fazla yolu için bkz [/Zc](zc-conformance.md) derleyici seçeneği. Ek C++ Standart uyumluluk ayarları için bkz [/ permissive-](permissive-standards-conformance.md) ve [/Std](std-specify-language-standard-version.md) derleyici seçenekleri.
 
 Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
@@ -55,16 +53,18 @@ Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [stand
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Gezinti bölmesinde **yapılandırma özellikleri**, **C/C++**, **dil**.
+1. Gezinti bölmesinde **yapılandırma özellikleri** > **C/C++** > **dil**.
 
 1. Değiştirme **dil uzantılarını devre dışı** özelliği.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguageExtensions%2A>.
+Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguageExtensions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)
+[Derleyici Seçenekleri](compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](setting-compiler-options.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>
+[/permissive- (Standartlara uyumluluk)](permissive-standards-conformance.md)<br/>
+[/std (Dil Standart Sürümünü Belirt)](std-specify-language-standard-version.md)<br/>

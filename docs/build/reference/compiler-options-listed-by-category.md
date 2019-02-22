@@ -4,18 +4,18 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: ef61ebbfad62e6a7bf764bad35204247e47d8ddb
-ms.sourcegitcommit: 6990f842fefc27b522b15cf352f3517b319d78da
+ms.openlocfilehash: 63b621bf99a1aeada10706badfe19cde417d7233
+ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248578"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56676506"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
 Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik liste için bkz: [seçenekleri alfabetik listelenmiş derleyici](compiler-options-listed-alphabetically.md).
 
-### <a name="optimization"></a>İyileştirme
+## <a name="optimization"></a>İyileştirme
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -31,7 +31,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/Oy](oy-frame-pointer-omission.md)|Çerçeve işaretçisini atlar. (yalnızca x86)|
 |[/ favor](favor-optimize-for-architecture-specifics.md)|Belirli bir mimari ya da bir dizi mimari için iyileştirilmiş kod oluşturur.|
 
-### <a name="code-generation"></a>Kod oluşturma
+## <a name="code-generation"></a>Kod oluşturma
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -53,8 +53,8 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/GS](gs-control-stack-checking-calls.md)|Yığın araştırmalarını denetler.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|İş parçacığı-yerel statik depolama alanı kullanılarak yer ayrılan veri için Fiber güvenliğini destekler.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|Denetim akışı koruyucusu güvenlik denetimleri ekler.|
-|[/GV](gd-gr-gv-gz-calling-convention.md)|Kullanan `__vectorcall` çağırma kuralı. (x86 ve yalnızca x64)|
-|[/GW](gw-optimize-global-data.md)|Tüm program Genel veri en iyi duruma getirme sağlar.|
+|[/Gv](gd-gr-gv-gz-calling-convention.md)|Kullanan `__vectorcall` çağırma kuralı. (x86 ve yalnızca x64)|
+|[/Gw](gw-optimize-global-data.md)|Tüm program Genel veri en iyi duruma getirme sağlar.|
 |[/GX](gx-enable-exception-handling.md)|Kullanım dışı. Zaman uyumlu özel durum işleme sağlar. Kullanım [/EH](eh-exception-handling-model.md) yerine.|
 |[/Gy](gy-enable-function-level-linking.md)|Etkinleştirir işlev seviyesinde bağlamayı.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Kullanım dışı. Hızlı kontrolleri etkinleştirir. (Aynı [rtc1](rtc-run-time-error-checks.md))|
@@ -72,7 +72,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ RTC](rtc-run-time-error-checks.md)|Çalışma zamanı hata denetimini etkinleştirir.|
 |[/ volatile](volatile-volatile-keyword-interpretation.md)|Uçucu sözcüğünün nasıl yorumlanacağını seçer.|
 
-### <a name="output-files"></a>Çıktı dosyaları
+## <a name="output-files"></a>Çıktı dosyaları
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -87,7 +87,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ FP](fp-name-dot-pch-file.md)|Önceden derlenmiş üst bilgi dosyası adını belirtir.|
 |[/ FR, /Fr](fr-fr-create-dot-sbr-file.md)|Oluşturulan .sbr tarayıcı dosyaları olarak adlandırın.|
 
-### <a name="preprocessor"></a>Ön işlemci
+## <a name="preprocessor"></a>Ön işlemci
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -105,7 +105,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/u](u-u-undefine-symbols.md)|Tüm ön tanımlı makroları kaldırır.|
 |[/X](x-ignore-standard-include-paths.md)|Standart yoksayar içeren dizin.|
 
-### <a name="language"></a>Dil
+## <a name="language"></a>Dil
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -129,7 +129,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ZS](zs-syntax-check-only.md)|Yalnızca söz dizimini denetler.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows çalışma zamanında çalışacak bir çıktı dosyası üretir.|
 
-### <a name="linking"></a>Bağlama
+## <a name="linking"></a>Bağlama
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -143,7 +143,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/MT](md-mt-ld-use-run-time-library.md)|Bir çok iş parçacıklı yürütülebilir dosyasını LIBCMT.lib kullanarak oluşturmak için derler.|
 |[/MTd](md-mt-ld-use-run-time-library.md)|Bir hata ayıklama çok iş parçacıklı yürütülebilir dosyasını Lıbcmtd.lib kullanarak oluşturmak için derler.|
 
-### <a name="miscellaneous"></a>Çeşitli
+## <a name="miscellaneous"></a>Çeşitli
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -163,7 +163,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ Kernel](kernel-create-kernel-mode-binary.md)|Derleyici ve bağlayıcı Windows çekirdeğinde yürütülebilecek bir ikili oluşturur.|
 |[/MP](mp-build-with-multiple-processes.md)|Aynı anda birden fazla kaynak dosyası oluşturur.|
 |[/nologo](nologo-suppress-startup-banner-c-cpp.md)|Oturum açma başlığının görüntülenmesini bastırır.|
-|[/ SDL](sdl-enable-additional-security-checks.md)|Ek güvenlik özelliklerini ve uyarılarını etkinleştirir.|
+|[/sdl](sdl-enable-additional-security-checks.md)|Ek güvenlik özelliklerini ve uyarılarını etkinleştirir.|
 |[/ showıncludes](showincludes-list-include-files.md)|Bir listesini görüntüler, derleme sırasında dosyaları içerir.|
 |[/TC](tc-tp-tc-tp-specify-source-file-type.md)|Bir C kaynak dosyasını belirtir.|
 |[/TC](tc-tp-tc-tp-specify-source-file-type.md)|C kaynak dosyalarının tümünü belirtir|
@@ -195,7 +195,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ permissive-](permissive-standards-conformance.md)|Standart uyumluluk modu olarak ayarlayın.|
 |[/ Std](std-specify-language-standard-version.md)|C++ Standart sürüm uyumluluğu Seçici.|
 
-### <a name="deprecated-and-removed-compiler-options"></a>Kullanım dışı ve kaldırılan derleyici seçenekleri
+## <a name="deprecated-and-removed-compiler-options"></a>Kullanım dışı ve kaldırılan derleyici seçenekleri
 
 |Seçenek|Amaç|
 |------------|-------------|
@@ -211,7 +211,7 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/V](v-version-number.md)|Kullanım dışı. .Obj dosya sürüm dizesini ayarlar.|
 |[/ Wp64](wp64-detect-64-bit-portability-issues.md)|Kullanımdan kalktı. 64 bitlik olasılık sorularını algılar.|
 |[/YD](yd-place-debug-information-in-object-file.md)|Kullanım dışı. Basamak tüm nesne dosyalarında hata ayıklama bilgileri tamamlayın. Kullanım [/zi](z7-zi-zi-debug-information-format.md) yerine.|
-|[/ZC:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Kullanım dışı. Döngü kapsamında uyumluluğu devre dışı bırakır.|
+|[/Zc:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Kullanım dışı. Döngü kapsamında uyumluluğu devre dışı bırakır.|
 |[/Ze](za-ze-disable-language-extensions.md)|Kullanım dışı. Dil uzantılarını etkinleştirir.|
 |[/Zg](zg-generate-function-prototypes.md)|Visual C++ 2015'te kaldırıldı. İşlev prototipleri üretir.|
 

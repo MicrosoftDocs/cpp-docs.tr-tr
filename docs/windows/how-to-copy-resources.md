@@ -30,76 +30,80 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 1f176b3fa19374b402039ecca60e690ade5c0cef
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: ce1cf1f6d0010475192ecf7ef3ce2416fac51dfd
+ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320633"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56676415"
 ---
 # <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynaklar (C++) yönetme
 
-## <a name="copy-resources"></a>Kaynakları Kopyala
+Projeniz tarafından için kaynakları yönetebilir:
 
-Kaynakları bir dosyadan başka değişiklik yapmadan kopyalayabilir veya kopyalama sırasında dilini veya koşulunu kaynağın değiştirebilirsiniz.
+- Kopyalama ve kaynakları düzenleme.
+
+- İçeri aktarma ve kaynak dışarı aktarma.
+
+## <a name="copy-and-edit-resources"></a>Kopyalama ve düzenleme kaynakları
+
+Kaynakları bir dosyadan başka değiştirmenizi veya kopyalama sırasında dilini veya koşulunu bir kaynağı değiştirme olmadan kopyalayabilirsiniz.
 
 Kolayca kaynakları bir var olan bir kaynak veya yürütülebilir dosyanın geçerli kaynak dosyaya kopyalayabilirsiniz. Kaynak kopyalamak için kaynakları içeren aynı anda hem dosyaları açmak ve öğeleri bir dosyadan sürükleyin veya kopyalayıp iki dosya arasında. Bu yöntem, kaynak betiği (.rc) dosyalarını ve kaynak şablonu (.rct) dosyaları ve yürütülebilir (.exe) dosyaları olarak çalışır.
 
 > [!NOTE]
 > Visual C++, kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için [küçük: Ortak kaynakları](https://github.com/Microsoft/VCSamples).
 
-Açık olan .rc dosyası arasında sürükle ve bırak yöntemi kullanabileceğiniz [proje dışında](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
+Projenin dışında açık olan .rc dosyası arasında sürükle ve bırak yöntemini kullanabilirsiniz.
 
-### <a name="to-copy-resources-between-files-using-the-drag-and-drop-method"></a>Sürükle ve bırak yöntemiyle dosyaları arasında kaynakları kopyalama
+### <a name="to-copy-resources"></a>Kaynak kopyalamak için
 
-1. Tek başına hem de kaynak dosyaları açabilir (daha fazla bilgi için [proje dışındaki bir .rc dosyasındaki kaynakları görüntülemek](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)). Örneğin, açmak *Source1.rc* ve *Source2.rc*.
+1. Tek başına hem de kaynak dosyalarını açın (bkz. nasıl [kaynak betik dosyasını açmak için](/how-to-create-a-resource-script-file#use-resource-script-files)). Örneğin, açmak *Source1.rc* ve *Source2.rc*.
 
-1. İlk .rc dosyası kopyalamak istediğiniz kaynağı seçin. Örneğin, *Source1.rc*seçin **IDD_DIALOG1**.
+1. İçinde ilk .rc dosyası ya da:
 
-1. Basılı **Ctrl** anahtar ve ikinci .rc dosyası için kaynak sürükleyin. Örneğin, sürükleyin **IDD_DIALOG1** gelen *Source1.rc* için *Source2.rc*.
+   - Sürükle ve bırak yöntemini kullanın
 
-   > [!NOTE]
-   > Basılı tutulmadan kaynak sürükleyerek **Ctrl** kopyalamak yerine kaynak anahtarı taşır.
+      1. Kopyalamak istediğiniz kaynağı seçin. Örneğin, *Source1.rc*seçin **IDD_DIALOG1**.
 
-### <a name="to-copy-resources-using-copy-and-paste"></a>Kopyalama kullanarak kaynakları kopyalamak ve yapıştırmak için
+      1. Basılı **Ctrl** anahtar ve ikinci .rc dosyası için kaynak sürükleyin. Örneğin, sürükleyin **IDD_DIALOG1** gelen *Source1.rc* için *Source2.rc*.
 
-1. Tek başına hem de kaynak dosyaları açabilir (daha fazla bilgi için [proje dışındaki bir .rc dosyasındaki kaynakları görüntülemek](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)). Örneğin, *Source1.rc* ve *Source2.rc*.
+         > [!TIP]
+         > Basılı tutulmadan kaynak sürükleyerek **Ctrl** kopyalamak yerine kaynak anahtarı taşır.
 
-1. İçinden istediğiniz bir kaynak kopyalamak kaynak dosyasında (örneğin, *Source1.rc*), bir kaynağa sağ tıklayın ve seçin **kopyalama** kısayol menüsünden.
+   - Kopyala ve Yapıştır yöntemi
 
-1. İçine istediğiniz kaynak yapıştırın kaynak dosyaya sağ tıklayın (örneğin, *Source2.rc*). Seçin **Yapıştır** kısayol menüsünden.
+      1. Kaynağa sağ sizinle kopyalamak için (örneğin, *Source1.rc*) seçip **kopyalama**.
 
-   > [!NOTE]
-   > Sürükleyin ve bırakın, kesme, kopyalayamaz veya projedeki kaynak dosyaları arasında yapıştırın (**kaynak görünümü**) ve tek başına .rc dosyaları (Bu belge pencerelerinin açık). Bu ürünün önceki sürümlerinde yapabilirsiniz.
+      1. İçine istediğiniz kaynak yapıştırın kaynak dosyaya sağ tıklayın (örneğin, *Source2.rc*) seçip **yapıştırın**.
 
-   > [!NOTE]
-   > Yeni dosyayı kopyaladığınızda, sembol adlarını veya var olan dosyayı değerleri ile çakışmaları önlemek için Visual C++ aktarılan kaynak sembol değeri veya sembol adını ve değerini değişebilir.
+> [!NOTE]
+> Sürükleyin ve bırakın, kesme, kopyalayamaz veya projedeki kaynak dosyaları arasında yapıştırın (**kaynak görünümü**) ve tek başına .rc dosyaları (Bu belge pencerelerinin açık). Bu ürünün önceki sürümlerinde yapabilirsiniz.
 
-### <a name="change-the-language-or-condition-of-a-resource-while-copying"></a>Kopyalarken dilini veya koşulunu bir kaynağı değiştirme
+> [!NOTE]
+> Yeni dosyayı kopyaladığınızda, sembol adlarını veya var olan dosyayı değerleri ile çakışmaları önlemek için Visual C++ aktarılan kaynak sembol değeri veya sembol adını ve değerini değişebilir.
 
 Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini veya her ikisi de değiştirebilirsiniz.
 
-- Kaynağın dilini yalnızca, kaynak için dil tanımlar. Dili tarafından kullanılan [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) , aradığınız kaynak belirlemenize yardımcı olması için. (Ancak metne ilişkili olmayan farklar her dil için kaynaklara sahip olabilir, örneğin, Japonca klavyede yalnızca işe yarayabilir Hızlandırıcıları ya da yalnızca yerelleştirilmiş Çince uygun olacağı bir bit eşlem oluşturur.)
+- Tarafından kullanılan dil olan bir kaynağın dilini belirtir [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) , aradığınız kaynak belirlemenize yardımcı olması için. Metne ilişkili olmayan farklar her dil için kaynaklara sahip olabilir, örneğin, Japonca klavyede yalnızca işe yarayabilir Hızlandırıcıları ya da yalnızca yerelleştirilmiş Çince uygun olacağı bir bit eşlem oluşturur.
 
 - Bir kaynağı tanımlayan bir koşul altında kullanılacak bu belirli kaynak kopyası olan bir tanımlanmış sembol durumdur.
 
-Dil ve kaynak durumu, parantez içine kaynak adından sonra gösterilir **çalışma** penceresi. Bu örnekte, kaynak adlı `IDD_AboutBox` kullanıyor `Finnish` kendi dil ve bunun koşul `XX33`.
+Dil ve kaynak durumu, parantez içine kaynak adından sonra gösterilir **çalışma** penceresi. Burada kaynak adlı `IDD_AboutBox` kullanıyor `Finnish` kendi dil ve bunun koşul `XX33`:
 
 ```cpp
 IDD_AboutBox (Finnish - XX33)
 ```
 
-#### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>Mevcut bir kaynağı kopyalayın ve kendi dilini veya koşulunu değiştirme
+Mevcut bir kaynağı kopyalayın ve kendi dilini veya koşulunu değiştirme
 
-1. .Rc dosyasının veya [kaynak görünümü](../windows/resource-view-window.md) penceresi, kopyalamak istediğiniz kaynağa sağ tıklayın.
-
-1. Seçin **Ekle kopyalama** kısayol menüsünü ve aşağıdaki ayarla:
+1. .Rc dosyasının veya [kaynak görünümü](../windows/resource-view-window.md) penceresinde kopyalayın ve istediğiniz kaynağa sağ **Ekle kopyalama**. Ardından aşağıdakileri ayarlayın:
 
    - İçin **dil** liste kutusunda, bir dil seçin.
 
    - İçinde **koşul** koşul yazın.
 
-## <a name="edit-resources"></a>Kaynakları düzenleme
+### <a name="to-edit-resources"></a>Kaynakları düzenlemek için
 
 Yönetilen kaynak dosyalarını (.resx) XML dosyalarıdır. Yönetilen kaynak dosyasını projenizden eklediğinizde **Yeni Öğe Ekle** iletişim kutusu, **yönetilen kaynaklar düzenleyicisini** varsayılan olarak açılır.
 
@@ -108,28 +112,24 @@ Yönetilen kaynak dosyalarını (.resx) XML dosyalarıdır. Yönetilen kaynak do
 Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları), HTML dosyaları ve Visual C++'ta kullanmak için özel kaynaklar içeri aktarabilirsiniz. Geliştirme ortamının dışında kullanılan dosyaları ayırmak için bir Visual C++ projesi aynı dosya türlerini dışarı aktarabilirsiniz.
 
 > [!NOTE]
-> Dize tabloları hızlandırıcıları ve iletişim kutuları gibi kaynak türleri içeri aktarılabilir veya tek başına dosya türleri değil olduklarından dışarı.
+> Dize tabloları hızlandırıcıları ve iletişim kutuları gibi kaynak türleri içeri aktarılabilir veya değil tek başına dosya türleri olduğundan dışarı.
 
-### <a name="to-import-an-individual-resource-into-your-current-resource-file"></a>Tek bir kaynağın geçerli kaynak dosyanızı içeri aktarmak için
+### <a name="to-import-a-resource-into-the-resource-script-file"></a>Kaynak betik dosyasına bir kaynak içeri aktarmak için
 
-1. İçinde [kaynak görünümü](../windows/resource-view-window.md), düğümü için kaynak betiği (* .rc) bir kaynak eklemek istediğiniz dosya.
+1. İçinde [kaynak görünümü](../windows/resource-view-window.md) düğümü istediğiniz bir kaynak ekleyin ve seçmek kaynak betiği (.rc) dosyasının **alma**.
 
-1. Seçin **alma** kısayol menüsünde.
+1. Bulun ve bit eşlem (.bmp), simge (.ico), imleç (.cur), html dosyası (.htm) veya başka bir dosyayı içeri aktarmak için dosya adını seçin.
 
-1. Bulun ve bit eşlem (.bmp), simge (.ico), imleç (.cur), Html dosyası (.htm) veya içeri aktarmak istediğiniz başka bir dosyayı dosya adını seçin.
+1. Seçin **Tamam** kaynak kaynak betik dosyasına eklenecek.
 
-1. Seçin **Tamam** 'teki Seçili dosyanın kaynak eklemek için **kaynak** görünümü.
+> [!NOTE]
+> İçeri aktarma işlemi hangi kaynak türünü olursa olsun seçtiğiniz aynı şekilde çalışır. İçeri aktarılan kaynak, kaynak türü doğru düğüme otomatik olarak eklenir.
 
-   > [!NOTE]
-   > Belirli kaynağı ne olursa olsun aynı şekilde türünü içeri aktarma işlemi works seçtiniz. İçeri aktarılan kaynak otomatik olarak bu kaynak türü için doğru düğümüne eklenir.
+### <a name="to-export-a-resource-for-use-outside-of-visual-c"></a>Visual C++ dışında kullanmak için bir kaynak dışarı aktarmak için
 
-### <a name="to-export-a-bitmap-icon-or-cursor-as-a-separate-file-for-use-outside-of-visual-c"></a>Bir bit eşlem, simgesi veya imleci (Visual C++ dışında kullanın için) ayrı bir dosya olarak dışarı aktarmak için
+1. İçinde [kaynak görünümü](../windows/resource-view-window.md), seçin ve dışarı aktarmak istediğiniz kaynağa sağ **dışarı**. Geçerli dosya adı kabul edin veya yeni bir tane girin.
 
-1. İçinde **kaynak** görüntülemek için dışa aktarmak istediğiniz kaynağa sağ tıklayın.
-
-1. Seçin **dışarı** kısayol menüsünde ve geçerli dosya adı kabul edin veya yeni bir ad yazın.
-
-1. Dosyayı kaydedin ve istediğiniz klasöre gidin **dışarı**.
+1. Dosyayı kaydedin ve seçmek için istediğiniz klasöre gidin **dışarı**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -137,6 +137,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
-[Kaynakları oluşturma](../windows/how-to-create-a-resource-script-file.md)<br/>
-[Derleme sırasında kaynak ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>
+[Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
+[Nasıl yapılır: Kaynak oluştur](../windows/how-to-create-a-resource-script-file.md)<br/>
+[Nasıl yapılır: Derleme Sırasında Kaynak Ekleme](../windows/how-to-include-resources-at-compile-time.md)<br/>
