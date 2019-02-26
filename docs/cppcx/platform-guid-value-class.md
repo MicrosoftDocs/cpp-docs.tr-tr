@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: ad71ed4965a3dd4846c9ba5d8ed2627ed8f7e056
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: bf7d73e1e50bb77a84267f3a5388c07a49c54c79
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334657"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809704"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 
@@ -38,7 +38,7 @@ public value struct Guid
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir oluşturma örneği için `Platform::Guid` Windows işlevini kullanarak [Cocreateguid'de](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), bkz: [WinRT bileşeni: Bir GUID oluşturun nasıl?](https://www.eternalcoding.com/?p=383)
+Yeni bir `Platform::Guid`, kullanın [Windows::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) statik yöntem.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -141,6 +141,10 @@ static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid
 ### <a name="return-value"></a>Dönüş Değeri
 
 TRUE ise iki `Platform::Guid` örnekleri eşit.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kullanmayı tercih `==` yerine işleci [Windows::Foundation::GuidHelper::Equals](/uwp/api/windows.foundation.guidhelper.equals) statik yöntem.
 
 ## <a name="operator-inequality"></a> Guid::operator! = işleci
 

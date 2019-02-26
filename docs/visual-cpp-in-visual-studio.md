@@ -2,18 +2,17 @@
 title: Visual Studio'da Visual C++
 description: Visual C++ için Microsoft C++ Derleyici, Kod Düzenleyicisi ve ilgili araçlar Visual Studio IDE'de addır. Programları Windows, Linux, Android ve iOS geliştirme için Visual C++ kullanın.
 ms.date: 09/26/2018
-ms.technology:
-- cpp-ide
+ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 0b5f263bb6716d4f66673257115d37cd17a59051
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 0dd7cc2aebb9ff0f95d11c839a104b94b3d37db6
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327193"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809658"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
@@ -56,7 +55,7 @@ Farklı Visual Studio sürümleri hakkında bilgi edinin.
 [Desteklenen Platformlar](supported-platforms-visual-cpp.md)<br/>
 Hangi platformların desteklendiğini öğrenin.
 
-## <a name="learn-c"></a>C++ öğrenin
+## <a name="learn-c"></a>Learn C++
 
 [C++ tekrar Hoş Geldiniz](cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 C stili programlama düşebileceğiniz tuzakları birçoğu önlemek ve daha hızlı yazmanıza olanak tanıyan C ++ 14 ve C ++ 11 dayalı programlama modern C++ hakkında güvenli kod öğrenin.
@@ -159,7 +158,7 @@ Ortak dil çalışma zamanı (CLR) için programlama.
 
 ## <a name="third-party-open-source-c-libraries"></a>Üçüncü taraf açık kaynak C++ kitaplıkları
 
-Platformlar arası **vcpkg** komut satırı aracı bulma ve yükleme 900 C++ açık kaynak kitaplıkların büyük ölçüde basitleştirir. Bkz: [vcpkg: C++ Windows için Paket Yöneticisi](vcpkg.md).
+Platformlar arası **vcpkg** komut satırı aracı bulma ve yükleme 900 C++ açık kaynak kitaplıkların büyük ölçüde basitleştirir. Bkz: [vcpkg: Windows için C++ Paket Yöneticisi](vcpkg.md).
 
 ## <a name="feedback-and-community"></a>Geri bildirim ve topluluk
 

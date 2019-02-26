@@ -1,17 +1,16 @@
 ---
 title: C++ uyumluluk geliştirmeleri
 ms.date: 10/31/2018
-ms.technology:
-- cpp-language
+ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: ad34e2721723e113417b45cf7c1da0da4575837f
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 855322f09c9c8f5292c6e299f946c3cec5d9949a
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694406"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809756"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#update_159)
 
@@ -49,7 +48,7 @@ Aralık tabanlı const_iterator ve end() aynı türe ait nesneleri iade döngül
 
 ## <a name="improvements_153"></a> Visual Studio 2017 sürüm 15.3 geliştirmeleri
 
-### <a name="constexpr-lambdas"></a>constexpr lambdaları
+### <a name="constexpr-lambdas"></a>constexpr lambdas
 
 Lambda ifadeleri artık sabit ifadelerde kullanılabilir. Daha fazla bilgi için [C++ constexpr lambda ifadelerinde](cpp/lambda-expressions-constexpr.md).
 
@@ -107,7 +106,7 @@ Visual Studio'nun önceki sürümlerinde, derleyici her zaman verdiğiniz bir `c
 
 [P0005R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html) `not_fn` yerini, `not1` ve `not2`.
 
-### <a name="rewording-enablesharedfromthis"></a>Enable_shared_from_this yeni ifade biçimiyle
+### <a name="rewording-enablesharedfromthis"></a>Rewording enable_shared_from_this
 
 [P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this` C ++ 11'de eklenmiştir. C ++ 17 standardı belirli köşe durumlarında daha iyi belirtimi güncelleştirir. [14]
 
@@ -123,7 +122,7 @@ Visual Studio'nun önceki sürümlerinde, derleyici her zaman verdiğiniz bir `c
 
 [P0302R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html) C ++ 17 önce sınıf şablonu `std::function` ayırıcı bağımsız değişken alan birçok oluşturucuya sahip. Ancak, bu bağlamda ayırıcılar kullanımını sorunlu ve semantiği belirsiz. Bu nedenle bu yapıcısı kaldırıldı.
 
-### <a name="fixes-for-notfn"></a>Not_fn() yönelik düzeltmeler
+### <a name="fixes-for-notfn"></a>Fixes for not_fn()
 
 [P0358R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html) için yeni ifade `std::not_fn` değeri kategori sarmalayıcı çağırma durumunda yayılmasının desteği sağlar.
 
@@ -548,7 +547,7 @@ template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember':
 // correct:  template <class T, ListNodeMember<T> M> class ListHead;
 ```
 
-### <a name="expression-sfinae"></a>İfade SFINAE
+### <a name="expression-sfinae"></a>Expression-SFINAE
 
 Şablonları bildirilen örneği yerine olduğunda ifade SFINAE desteği için derleyici artık decltype bağımsız değişkenleri ayrıştırır. Sonuç olarak, bağımlı olmayan özelleştirmesi decltype değişkeninde bulunursa, örnekleme zamanı ertelenmiş değil ve hemen işlenir ve ortaya çıkan hataları o anda tanı koydu.
 
@@ -865,7 +864,7 @@ Bu uyarı kapalı 15.3, varsayılan olarak, ancak şirket varsayılan 15.5 sür�
 
 ### <a name="decltype-and-calls-to-deleted-destructors"></a>decltype ve Silinen yıkıcı çağrıları
 
-Silinen bir yıkıcı çağrısı 'decltype' ile ilişkili ifadenin bağlamında gerçekleştiğinde, Visual Studio'nun önceki sürümlerinde, derleyici algılamadı. Visual Studio 2017 sürüm 15.3, aşağıdaki kod üretir "hatası C2280: ' A\<T >:: ~ A(void)': silinmiş bir işleve başvurmaya çalışıyor":
+Silinen bir yıkıcı çağrısı 'decltype' ile ilişkili ifadenin bağlamında gerçekleştiğinde, Visual Studio'nun önceki sürümlerinde, derleyici algılamadı. Visual Studio 2017 sürüm 15.3, aşağıdaki kod üretir "hatası C2280: \<T >:: ~ A(void)': silinmiş bir işleve başvurmaya çalışıyor ":
 
 ```cpp
 template<typename T>
@@ -888,7 +887,7 @@ void h()
 
 ### <a name="uninitialized-const-variables"></a>Başlatılmamış const değişkenleri
 
-Visual Studio 2017 RTW Sürüm 'const' değişken başlatılmadı içinde C++ derleyicisi bir tanılama verilmediğine değil bir gerileme vardı. Visual Studio 2017 sürüm 15.3 Bu gerileme düzeltildi. Aşağıdaki kod artık üretir "C4132 Uyarı: 'Value': const nesnenin başlatılması gerekir":
+Visual Studio 2017 RTW Sürüm 'const' değişken başlatılmadı içinde C++ derleyicisi bir tanılama verilmediğine değil bir gerileme vardı. Visual Studio 2017 sürüm 15.3 Bu gerileme düzeltildi. Aşağıdaki kod artık üretir "C4132 Uyarı: 'Value': const nesnenin başlatılması gerekir ":
 
 ```cpp
 const int Value; //C4132
@@ -1532,7 +1531,7 @@ struct D : B<T*> {
 };
 ```
 
-Visual Studio 2017 sürüm 15.7, içinde **/Std: c ++ 17** modunu gerektirir `typename` anahtar sözcüğünü `using` D. deyiminde Olmadan `typename` derleyici uyarı C4346 başlatır: *' B < T\*>:: türü ': bağımlı öğe adı bir tür değil* hatası C2061: *söz dizimi hatası: tanımlayıcı 'type'*:
+Visual Studio 2017 sürüm 15.7, içinde **/Std: c ++ 17** modunu gerektirir `typename` anahtar sözcüğünü `using` D. deyiminde Olmadan `typename` derleyici uyarı C4346 meydana getirir: *' B < T\*>:: türü ': bağımlı öğe adı bir tür değil* hatası C2061: *söz dizimi hatası: tanımlayıcı 'type'*:
 
 ```cpp
 template<typename T>
@@ -1685,7 +1684,7 @@ C++ standart iletme bildirimlerine veya tanımlarına ad alanında eklemek bir k
 
 Bazı zaman gelecekteki Microsoft bazı STL türlerinin tanımlandığı konumuna taşınır. Bu durumda, ad alanına bildirimleri ekler mevcut kodu keser `std`. Yeni bir uyarı C4643, bu tür kaynak sorunlarını belirlemenize yardımcı olur. Uyarı etkin **/varsayılan** modunu ve varsayılan olarak kapalıdır. İle derlenmiş programlar etkiler **/Wall** veya **wx**.
 
-Aşağıdaki kod artık C4643 başlatır: *İleri std C++ standardı tarafından izin verilmiyor ad alanındaki 'vektör' bildirme*.
+Aşağıdaki kod, şimdi C4643 başlatır: *İleri 'vektör' ad alanında std C++ standardı tarafından izin verilmiyor bildirme*.
 
 ```cpp
 namespace std {
@@ -1865,9 +1864,9 @@ cl /EHsc /std:c++17 m.ixx /experimental:module
 cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
 ```
 
-Derleyici C5050 her iki durumda başlatır: *C5050 Uyarı: modülün içeri aktarılması sırasında olası uyumlu ortamı 'M ': C++ sürümleri eşleşmiyor.  Geçerli "201402" Modül sürümü "201703"*.
+Her iki durumda C5050 derleyici başlatır: *C5050 Uyarı: Modülün içeri aktarılması sırasında olası uyumlu ortamı 'M ': C++ sürümleri eşleşmiyor.  Geçerli "201402" Modül sürümü "201703"*.
 
-Ayrıca, .ifc dosyası ile oynanmış her derleyici C7536 başlatır. Modül arabirimi üstbilgisi bir SHA2 karma aşağıdaki içeriği içerir. İçeri aktarma işlemi sırasında .ifc dosya aynı şekilde karma ve üst bilgide sağlanan karma karşılaştırılarak; Bu hata C7536 oluşturulur eşleşmiyorsa: *IFC bütünlük denetimi başarısız oldu.  Beklenen SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
+Ayrıca, .ifc dosyası ile oynanmış her derleyici C7536 başlatır. Modül arabirimi üstbilgisi bir SHA2 karma aşağıdaki içeriği içerir. İçeri aktarma işlemi sırasında .ifc dosya aynı şekilde karma ve üst bilgide sağlanan karma karşılaştırılarak; Bu hata C7536 oluşturulur eşleşmiyorsa: *IFC bütünlük denetimi başarısız oldu.  SHA2 bekleniyor: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
 
 ### <a name="partial-ordering-involving-aliases-and-non-deduced-contexts"></a>Kısmi sıralama içeren diğer adlar ve atanan bağlamları
 

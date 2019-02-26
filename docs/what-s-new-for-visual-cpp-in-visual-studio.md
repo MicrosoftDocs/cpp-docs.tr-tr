@@ -1,17 +1,16 @@
 ---
 title: Visual Studio'da Visual C++ yenilikleri
 ms.date: 11/15/2017
-ms.technology:
-- cpp-ide
+ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 5a9bbf86d6febfdec5ab5cbd9969cd5076672c52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 062052faf85b342629506a41c39b99a1b59502b9
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620149"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809795"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -25,23 +24,23 @@ Visual Studio 2017, Visual C++ ortamına birçok güncelleştirme ve düzeltme g
 
 Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özellikleri için desteği iyileştirecek, ayrıca C++17 standardına eklenmesi beklenen bazı özellikler için ön destek sağlayacak şekilde güncelleştirdik. Ayrıntılı bilgi için bkz. [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md).
 
-**Visual Studio 2017 sürüm 15.5**: derleyicinin yaklaşık %75 yapılandırılmış bağlamalar dahil olmak üzere C ++ 17'de yeni özellikleri destekler `constexpr` lambda ifadeleri, `if constexpr`, satır içi değişkenler, katlama ifadeleri ve ekleme `noexcept` için tür sistemi. Bunlar altında kullanılabilir **/Std: c ++ 17** seçeneği. Daha fazla bilgi için [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)
+**Visual Studio 2017 sürüm 15.5**: Derleyici, yaklaşık %75 yapılandırılmış bağlamalar dahil olmak üzere C ++ 17'de yeni özellikleri destekler `constexpr` lambda ifadeleri, `if constexpr`, satır içi değişkenler, katlama ifadeleri ve ekleme `noexcept` tür sistemine. Bunlar altında kullanılabilir **/Std: c ++ 17** seçeneği. Daha fazla bilgi için [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)
 
-**Visual Studio 2017 sürüm 15.7**: MSVC derleyici Araç Seti Visual Studio 15.7 Sürüm artık C++ standardı ile uyumlu. Daha fazla bilgi için [Announcing: MSVC uyan C++ standardına](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) ve [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md).
+**Visual Studio 2017 sürüm 15.7**: Visual Studio'da sürüm 15.7 MSVC derleyici araç takımı artık C++ standardı ile uyumludur. Daha fazla bilgi için [Announcing: MSVC C++ standartlarına uyup](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) ve [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md).
 
 ### <a name="new-compiler-options"></a>Yeni derleyici seçenekleri
 
-- [/ permissive-](build/reference/permissive-standards-conformance.md): tüm katı standartlar uyumluluk derleyici seçenekleri etkinleştirin ve çoğu özel Microsoft derleyici uzantılarını devre dışı bırak (ama `__declspec(dllimport)`, örneğin). Bu seçenek varsayılan olarak Visual Studio 2017 sürüm 15.5 açıktır.  **/ Permissive-** uyumluluk modu, iki aşamalı ad aramayı için destek içerir. Daha fazla bilgi için [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md).
+- [/ permissive-](build/reference/permissive-standards-conformance.md): Tüm katı standartlar uyumluluk derleyici seçenekleri etkinleştirin ve çoğu özel Microsoft derleyici uzantılarını devre dışı bırak (ama `__declspec(dllimport)`, örneğin). Bu seçenek varsayılan olarak Visual Studio 2017 sürüm 15.5 açıktır.  **/ Permissive-** uyumluluk modu, iki aşamalı ad aramayı için destek içerir. Daha fazla bilgi için [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md).
 
-- [/ Diagnostics](build/reference/diagnostics-compiler-diagnostic-options.md): satır numarası, satır numarası ve sütun veya satır numarası sütunu ve bir giriş işaretinin nerede tanılama hata veya uyarı bulunan kod satırı altında görünen etkinleştirin.
+- [/ Diagnostics](build/reference/diagnostics-compiler-diagnostic-options.md): Satır numarası, satır numarası ve sütun veya satır numarasını ve sütun ve şapka işareti tanılama hata veya uyarı bulunduğu kod satırının altında görüntülenmesini sağlar.
 
-- [/ Debug: fastlink](build/reference/debug-generate-debug-info.md): etkinleştirme % 30 daha hızlı artımlı bağlantı süreleri (vs. Visual Studio 2015) değil kopyalayarak tüm PDB dosyasına hata ayıklama bilgileri. PDB dosyası, yürütülebilir dosyayı oluşturmak için kullanılan nesne ve kitaplığı dosyaları için hata ayıklama bilgileri için bunun yerine işaret eder. Bkz: [daha hızlı C++ derleme/debug: fastlink ile VS "15" döngüsünde](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) ve [derlemeler Visual Studio'da C++ önerileri hızına](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
+- [/debug:fastlink](build/reference/debug-generate-debug-info.md): Etkinleştirme % 30 daha hızlı artımlı bağlantı süreleri (vs. Visual Studio 2015) değil kopyalayarak tüm PDB dosyasına hata ayıklama bilgileri. PDB dosyası, yürütülebilir dosyayı oluşturmak için kullanılan nesne ve kitaplığı dosyaları için hata ayıklama bilgileri için bunun yerine işaret eder. Bkz: [daha hızlı C++ derleme/debug: fastlink ile VS "15" döngüsünde](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) ve [derlemeler Visual Studio'da C++ önerileri hızına](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 
 - Visual Studio 2017 sağlayan kullanarak [/SDL](build/reference/sdl-enable-additional-security-checks.md) ile [/ await](build/reference/await-enable-coroutine-support.md). Kaldırdık [/RTC](build/reference/rtc-run-time-error-checks.md) eş yordamlar sınırlama.
 
    **Visual Studio 2017 sürüm 15.3**:
 
-- [/ Std: c ++ 14 ve/Std: c ++ Son](build/reference/std-specify-language-standard-version.md): Bu derleyici seçeneklerinin ISO C++ programlama dilini projesinde belirli sürümlerine katılımı olanak sağlar. Standart özellikler tarafından korunan yeni taslak çoğu **/Std: c ++ Son** seçeneği.
+- [/ Std: c ++ 14 ve/Std: c ++ Son](build/reference/std-specify-language-standard-version.md): Bu derleyici seçeneklerinin bir proje ISO C++ programlama dilinde belirli sürümlerine katılımı olanak sağlar. Standart özellikler tarafından korunan yeni taslak çoğu **/Std: c ++ Son** seçeneği.
 
 - [/ Std: c ++ 17](build/reference/std-specify-language-standard-version.md) derleyici tarafından uygulanan C ++ 17 özellikleri kümesini sağlar. Bu seçenek, C ++ 17 sonra derleyici ve değiştirilen özellikler veya yeni sürümlerinde C++ standart çalışma taslak ve hata güncelleştirmeleri standart kitaplığı desteği devre dışı bırakır. Bu özellikleri etkinleştirmek için **/Std: c ++ Son**.
 
@@ -49,11 +48,11 @@ Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özel
 
 Bu sürüm, iyileştirme, kod oluşturma, araç takımı sürümü oluşturma ve tanılama çeşitli iyileştirmeler getirir. Bazı önemli geliştirmeler şunlardır:
 
-- Döngüler için geliştirilmiş kod oluşturma: sabit tam sayıları bölme işlemleri için otomatik vektörleştirme desteği, memset desenlerinin daha iyi tanınması.
+- Döngüler için geliştirilmiş kod oluşturma: Otomatik vektörleştirme sabit tamsayı, memset desenlerinin daha iyi kimlik için destek.
 - Geliştirilmiş kod güvenliği: Geliştirilmiş arabellek taşma derleyici Tanılaması, arabellek ve [/Guard: cf](build/reference/guard-enable-control-flow-guard.md) artık atlama tablosu oluşturan deyimleri cf switch.
-- Sürüm oluşturma: Yerleşik önişlemci makrosunun değeri  **\_MSC\_VER** şu anda tekdüze her Visual C++ araç takımı güncelleştirmeyi güncelleştiriliyor. Daha fazla bilgi için [Visual C++ Derleyici sürümü](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
-- Yeni araç takımı Düzen: derleyici ve ilgili derleme araçları, geliştirme makinenizde yeni bir konum ve dizin yapısı sahip. Yeni düzen derleyici birden çok sürümünü yan yana yüklemesini sağlar. Daha fazla bilgi için [derleyici araçları Visual Studio "15" düzende](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
-- Geliştirilmiş Tanılama: şimdi çıkış penceresi bir hata oluştuğu sütunda görüntülenir. Daha fazla bilgi için [C++ Derleyici tanılama geliştirmeleri VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
+- Sürüm oluşturma: Yerleşik önişlemci makrosu değerini  **\_MSC\_VER** şu anda tekdüze her Visual C++ araç takımı güncelleştirmeyi güncelleştiriliyor. Daha fazla bilgi için [Visual C++ Derleyici sürümü](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
+- Yeni araç takımı düzeni: Derleyici ve ilgili derleme araçları, geliştirme makinenizde yeni bir konum ve dizin yapısı sahip. Yeni düzen derleyici birden çok sürümünü yan yana yüklemesini sağlar. Daha fazla bilgi için [derleyici araçları Visual Studio "15" düzende](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
+- Gelişmiş Tanılama: Çıkış penceresi bir hata oluştuğu sütunu artık gösterir. Daha fazla bilgi için [C++ Derleyici tanılama geliştirmeleri VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
 - Deneysel anahtar sözcüğü ortak yordamlar kullanılırken **yield** (altında kullanılabilir **/ await** seçeneği) kaldırıldı. Kodunuzu kullanacak şekilde güncelleştirilmesi `co_yield` yerine. Daha fazla bilgi için [Visual C++ Ekip bloguna](https://blogs.msdn.microsoft.com/vcblog/) bakın.
 
 **Visual Studio 2017 sürüm 15.3**:
@@ -312,7 +311,7 @@ C++ artık CTRL tuşuna basıp tıklayarak destekliyor **tanıma**, fare gezinme
 - Deneysel 'Hızlı Proje Yükleme' özelliğini C++ projeleri için. Artık açtığınız C++ projesi daha hızlı yüklenir. Aynı projeyi daha sonra tekrar açtığınızda çok daha hızlı yüklenir!
 - Bu özelliklerin bazıları diğer diller için ortaktır ve C++ için belirli bazılarıdır. Bu yeni özellikler hakkında daha fazla bilgi için bkz. [Duyurusu Visual Studio "15"](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/).
 
-**Visual Studio 1027 sürüm 15.7**: için ClangFormat desteği eklendi. Daha fazla bilgi için [Visual Studio 2017'de ClangFormat desteği](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/clangformat-support-in-visual-studio-2017-15-7-preview-1/).
+**Visual Studio 1027 sürüm 15.7**: Destek için ClangFormat eklendi. Daha fazla bilgi için [Visual Studio 2017'de ClangFormat desteği](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/clangformat-support-in-visual-studio-2017-15-7-preview-1/).
 
 ## <a name="non-msbuild-projects-with-open-folder"></a>MSBuild dışındaki projeleriyle klasörü aç
 
@@ -339,11 +338,11 @@ Visual Studio 2017 CMake projeleri için MSBuild proje dosyaları (.vcxproj) dö
 
   ![Cmake Klasör Aç](media/cmake_cpp.png "CMake Klasör Aç")
 
-**Visual Studio 2017 sürüm 15.3**: CMake Ninja oluşturucusunu için destek eklendi.
+**Visual Studio 2017 sürüm 15.3**: Destek için CMake Ninja oluşturucusunu eklendi.
 
-**Visual Studio 2017 sürüm 15.5**: mevcut CMake almak için eklenen destek önbelleğe alır.
+**Visual Studio 2017 sürüm 15.5**: Mevcut CMake önbellekleri almak için eklenen destek.
 
-**Visual Studio 2017 sürüm 15.7**: CMake 3.11, CMake projeleri, kod analizi için eklenen destek hedefler, Çözüm Gezgini'nde, önbellek oluşturma ve tek dosyalı derleme için seçenekleri görüntüleme. Daha fazla bilgi için [Visual Studio'da CMake desteği](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual C++'da CMake projeleri](ide/cmake-tools-for-visual-cpp.md).
+**Visual Studio 2017 sürüm 15.7**: Önbellek oluşturma ve tek dosyalı derleme için CMake 3.11, CMake projelerini kod analizi, Çözüm Gezgini, seçenekleri hedefleri görünümü için destek eklendi. Daha fazla bilgi için [Visual Studio'da CMake desteği](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual C++'da CMake projeleri](ide/cmake-tools-for-visual-cpp.md).
 
 ## <a name="windows-desktop-development-with-c"></a>C++ ile Windows Masaüstü geliştirme
 
@@ -389,7 +388,7 @@ Artık Visual Studio kullanarak Android ve iOS platformlarını hedefleyebilen m
 C++, Evrensel Windows Uygulaması iş yükü için isteğe bağlı bir bileşen olarak sağlanır.  C++ projelerinin şu anda el ile yükseltilmesi gerekiyor. Visual Studio 2017’de v140 hedefli bir UWP projesi açtığınızda, sisteminizde Visual Studio 2015 yüklü değilse proje özelliği sayfalarından v141 platformu araç kümesini seçmeniz gerekiyor.
 
 ## <a name="new-options-for-c-on-universal-windows-platform-uwp"></a>C++ için yeni seçenekler Evrensel Windows Platformu (UWP) üzerinde
-Artık yazma ve C++ uygulamaları Evrensel Windows platformu ve Windows Store için paketleme için yeni bir seçeneğiniz vardır: var olan bir masaüstü uygulaması veya COM nesnesi için Windows dağıtım paketi için Masaüstü köprüsü altyapı kullanabilirsiniz Store veya dışarıdan yükleme aracılığıyla var olan kanallarınız üzerinden. Windows 10'daki yeni özellikler Masaüstü uygulamanızı çeşitli yollarla UWP işlevselliği eklemek etkinleştirin. Daha fazla bilgi için [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
+Şimdi, yazma ve C++ uygulamaları Evrensel Windows platformu ve Windows Store için paketleme yeni seçeneğiniz de vardır: Masaüstü köprüsü altyapı, mevcut masaüstü uygulamasını veya Windows Store veya dışarıdan yükleme aracılığıyla var olan kanallarınız üzerinden dağıtımı için COM nesnesi paketlemek için kullanabilirsiniz. Windows 10'daki yeni özellikler Masaüstü uygulamanızı çeşitli yollarla UWP işlevselliği eklemek etkinleştirin. Daha fazla bilgi için [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
 **Visual Studio 2017 sürüm 15.5**: A **Windows uygulaması paketleme projesi** proje şablonu, büyük ölçüde basitleştirir, Masaüstü Köprüsü'nü kullanarak ile Masaüstü uygulamaları paketleme işi eklenir. Altında kullanılabilir **dosya | Yeni | Proje | Yüklü | Visual C++ | Evrensel Windows platformu**. Daha fazla bilgi için [Visual Studio (Masaüstü köprüsü) kullanarak bir uygulama paketini](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
@@ -407,9 +406,9 @@ Visual Studio 2017 artık destekliyor ile birlikte gönderilen Clang/C2 araç **
 
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck özellikler sayfası")
 
-**Visual Studio 2017 sürüm 15.3**: kaynak yönetimi ile ilgili kuralları için destek eklendi.
+**Visual Studio 2017 sürüm 15.3**: Kaynak yönetimi ile ilgili kuralları için eklenen destek.
 
-**Visual Studio 2017 sürüm 15.5**: yeni C++ temel yönergeleri denetimi kapsayan akıllı işaretçi doğruluğu, genel başlatıcıların doğru kullanımı ve yapılarına bayrak kullanımları `goto` ve hatalı atamaları.
+**Visual Studio 2017 sürüm 15.5**: Yeni C++ temel yönergeleri denetimi kapsayan akıllı işaretçi doğruluğu, genel başlatıcıların doğru kullanımı ve bayrak kullanır gibi yapıları, `goto` ve hatalı atamaları.
 
 15.3 sürümünde karşılaşabileceğiniz bazı uyarı numaraları 15.5 sürümünde artık mevcut değil. Bu uyarıların yerine daha belirgin denetimler kullanıma sunuldu.
 
@@ -433,7 +432,7 @@ Google Test bağdaştırıcısı ve Boost.Test bağdaştırıcısı bileşenleri
 - Destek Boost.Test dinamik kitaplık desteği eklendi.
 - Boost.Test öğe şablonu IDE içinde kullanıma sunuldu.
 
-Daha fazla bilgi için [Boost.Test birim testi: dinamik kitaplık desteği ve yeni öğe şablonu](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/).
+Daha fazla bilgi için [Boost.Test birim testi: Dinamik kitaplık desteği ve yeni öğe şablonu](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/).
 
 **Visual Studio 2017 sürüm 15.7**:
 
@@ -443,15 +442,15 @@ Daha fazla bilgi için [Boost.Test birim testi: dinamik kitaplık desteği ve ye
 
 Visual Studio grafik Tanılama, kaydetme ve Direct3D uygulamalar oluşturma ve performans sorunları çözümleme için araç kümesidir. Grafik tanılama özelliği, Windows PC, bir Windows cihaz öykünücüsü veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamaları ile kullanılabilir.
 
-- **Giriş ve çıkış için köşe ve geometri gölgelendirici:** giriş ve çıkış köşe gölgelendiricileri geometri gölgelendirici ve görüntüleme olanağı en çok istenen özelliklerden biri olmuştur ve araçları artık desteklenmektedir. Yalnızca kendi giriş inceleyerek başlatmak için ardışık düzen aşamaları görünümünde VS veya GS aşama seçin ve aşağıdaki tabloda çıkış.
+- **Giriş ve çıkış köşe ve geometri gölgelendirici için:** Giriş ve çıkış köşe gölgelendiricileri geometri gölgelendirici ve görüntüleme olanağı en çok istenen özelliklerden biri olmuştur ve araçları artık desteklenmektedir. Yalnızca kendi giriş inceleyerek başlatmak için ardışık düzen aşamaları görünümünde VS veya GS aşama seçin ve aşağıdaki tabloda çıkış.
 
   ![Gölgelendirici için giriş/çıkış](media/io-shaders.png)
 
-- **Arama ve filtre nesne tablosundaki:** kaynakları bulmak için hızlı ve kolay bir yolunu sağlar aradığınız.
+- **Arama ve nesne tablosu Filtresi:** Aradığınız kaynakları bulmak için hızlı ve kolay bir yol sağlar.
 
   ![Ara](media/search.png)
 
-- **Kaynak geçmişi:** bu yeni görünüm yakalanan çerçeve işlenmesi sırasında kullanıldı gibi bir kaynak tüm değişiklik geçmişini görmenizi, kolaylaştırılmış bir yol sağlar. Herhangi bir kaynak için geçmiş çağırmak için herhangi bir kaynak köprüye yanındaki saat simgesine tıklamanız yeterlidir.
+- **Kaynak geçmişi:** Bu yeni görünüm, yakalanan çerçeve işlenmesi sırasında kullanıldı gibi bir kaynak tüm değişiklik geçmişini görmenizi, kolaylaştırılmış bir yol sağlar. Herhangi bir kaynak için geçmiş çağırmak için herhangi bir kaynak köprüye yanındaki saat simgesine tıklamanız yeterlidir.
 
   ![Kaynak geçmişi](media/resource-history.png)
 
@@ -461,23 +460,23 @@ Visual Studio grafik Tanılama, kaydetme ve Direct3D uygulamalar oluşturma ve p
 
   Çerçevenizi tam çağrı yığınını yakalama etkin yakalandıysa unutmayın (**Visual Studio > Araçlar > Seçenekler** altında **grafik tanılama**), sonra her değişikliği olayının bağlamı hızlı bir şekilde olabilir atanan ve Visual Studio projenize içinde inceledi.
 
-- **API istatistikleri:** çerçeveniz içinde üst düzey API kullanımının özetini görüntüleyin. Bu, tüm yapıyorsanız bilmiyor olabilirler çağrıları veya çok fazla kuran çağrıları keşfetme kullanışlı olabilir. Bu pencere aracılığıyla kullanılabilir **Görüntüle > API istatistikleri** Visual Studio grafik Çözümleyicisi.
+- **API istatistikleri:** Çerçeveniz içinde üst düzey API kullanımının özetini görüntüleyin. Bu, tüm yapıyorsanız bilmiyor olabilirler çağrıları veya çok fazla kuran çağrıları keşfetme kullanışlı olabilir. Bu pencere aracılığıyla kullanılabilir **Görüntüle > API istatistikleri** Visual Studio grafik Çözümleyicisi.
 
   ![API istatistikleri](media/api-stats.png)
 
-- **Bellek istatistikleri:** çerçevede oluşturduğunuz sürücü kaynaklarını ayırma ne kadar bellek görüntüleyin. Bu pencere aracılığıyla kullanılabilir **Görüntüle > bellek istatistikleri** içinde **Visual Studio grafik Çözümleyicisi**. Veri kopyalanabilir Elektronik tablolardaki görüntülemek için bir CSV dosyasına sağ tıklayıp seçerek **Tümünü Kopyala**.
+- **Bellek istatistikleri:** Sürücü, kaynaklar için ayırma ne kadar bellek çerçevede oluşturduğunuz görüntüleyin. Bu pencere aracılığıyla kullanılabilir **Görüntüle > bellek istatistikleri** içinde **Visual Studio grafik Çözümleyicisi**. Veri kopyalanabilir Elektronik tablolardaki görüntülemek için bir CSV dosyasına sağ tıklayıp seçerek **Tümünü Kopyala**.
 
   ![Bellek istatistikleri](media/memory-stats.png)
 
-- **Çerçeve doğrulama:** yeni hatalar ve uyarılar listesini Direct3D hata ayıklama katmanı tarafından algılanan olası sorunları göre olay listenize gitmek için kolay bir yol sağlar. Tıklayın **Görüntüle > Çerçeve doğrulama** , Visual Studio grafik Çözümleyicisi aygıtını penceresini açın. Ardından **doğrulama çalışması** analiz başlatmak için. Bu çerçeve karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.
+- **Çerçeve doğrulama:** Yeni hataları ve Uyarıları listesi, Direct3D hata ayıklama katmanı tarafından algılanan olası sorunları göre olay listenize gitmek için kolay bir yol sağlar. Tıklayın **Görüntüle > Çerçeve doğrulama** , Visual Studio grafik Çözümleyicisi aygıtını penceresini açın. Ardından **doğrulama çalışması** analiz başlatmak için. Bu çerçeve karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.
 
   ![Çerçeve doğrulama](media/frame-validation.png)
 
-- **Çerçeve analizi için D3D12:** çizim çağrısı performansını analiz etmek için kullanım çerçeve analizi "what-if" denemeleri yönlendirilmiş. Çerçeve analizi sekmesine gidin ve raporu görüntülemek için analiz çalıştırın. Daha fazla ayrıntı için izleme [GoingNative 25: Visual Studio grafik çerçevesi analizi](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video.
+- **Çerçeve analizi D3D12 için:** Çerçeve Analizi ile yönlendirilen "what-if" denemeleri çizim çağrısı performansını analiz etmek için kullanın. Çerçeve analizi sekmesine gidin ve raporu görüntülemek için analiz çalıştırın. Daha fazla ayrıntı için izleme [GoingNative 25: Visual Studio grafik çerçevesi analizi](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video.
 
   ![Çerçeve analizi](media/frame-analysis.png)
 
-- **GPU kullanımı geliştirmeleri:** daha ayrıntılı analiz için GPU görünümü ya da Windows Performans Çözümleyicisi (WPA) aracı ile Visual Studio GPU kullanımı profiler aracılığıyla gerçekleştirilen izlemeleri açın. Varsa, Windows Performans Araç Seti yüklü WPA, diğeri GPU görünümünde, sağ alt köşesindeki oturum genel bakış için iki köprüler olacaktır.
+- **GPU kullanımı geliştirmeleri:** GPU görünümü ya da daha ayrıntılı analiz için Windows Performans Çözümleyicisi (WPA) aracı ile Visual Studio GPU kullanımı profiler aracılığıyla gerçekleştirilen izlemeleri açabilir. Varsa, Windows Performans Araç Seti yüklü WPA, diğeri GPU görünümünde, sağ alt köşesindeki oturum genel bakış için iki köprüler olacaktır.
 
   ![GPU kullanımı](media/gpu-usage.png)
 

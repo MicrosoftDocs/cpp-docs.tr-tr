@@ -3,18 +3,17 @@ title: vcpkg--bir C++ için Paket Yöneticisi Windows, Linux ve MacOS
 description: vcpkg edinme ve yükleme, açık kaynaklı C++ kitaplıklarının Windows üzerinde büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir.
 author: mikeblome
 ms.author: mblome
-ms.date: 05/14/2018
-ms.technology:
-- cpp-ide
+ms.date: 02/22/2019
+ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 2f7dc6f1d9c78d894c5cf0e6ba20c8bdfc54e67a
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: dc07086f271c9789629b335b58758b88e8e3d4e8
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518690"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809717"
 ---
-# <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: C++ Paket Yöneticisi Windows, Linux ve MacOS
+# <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi
 
 vcpkg edinme ve yükleme Windows, Linux ve Macos'ta üçüncü taraf kitaplıkların büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir. Projeniz üçüncü taraf kitaplıklarını kullanıyorsa, bunları yüklemek için vcpkg kullanmanızı öneririz. vcpkg hem açık kaynak hem de özel kütüphanelerini destekler. Vcpkg Windows katalogdaki tüm kitaplıkları Visual Studio 2015 ve Visual Studio 2017 ile uyumluluk için test edilmiştir. Mayıs 2018'den itibaren Windows kataloğunda ve Linux/MacOS kataloğunda 350 üzerinden 900 kitaplıkları vardır. C++ topluluğu, her iki kataloglarında düzenli olarak daha fazla kitaplıkları eklemektir.
 
@@ -32,7 +31,7 @@ Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynaklar�
 
 ## <a name="installation"></a>Yükleme
 
-Github'dan vcpkg deposunu kopyalayın: https://github.com/Microsoft/vcpkg. Tercih ettiğiniz herhangi bir klasör konumuna indirebilirsiniz.
+Github'dan vcpkg deposunu kopyalayın: [ https://github.com/Microsoft/vcpkg ](https://github.com/Microsoft/vcpkg). Tercih ettiğiniz herhangi bir klasör konumuna indirebilirsiniz.
 
 Önyükleyici kök klasöründe çalıştırın:
 

@@ -1,16 +1,15 @@
 ---
 title: Visual C++ araç takımı ile ilgili bir sorun bildirme
 ms.date: 06/21/2018
-ms.technology:
-- cpp-ide
+ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 34157063e9b19539fd22c24986193987cf41979b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7758905f6db537260ec9e8b6e516bfa409e97ad2
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586855"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809743"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımı veya belgeleri ile ilgili bir sorun bildirme
 
