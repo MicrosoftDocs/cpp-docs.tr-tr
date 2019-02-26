@@ -15,8 +15,7 @@ ms.locfileid: "56150473"
 
 **ANSI 4.10.4.3** tarafından döndürülen durum `atexit` bağımsız değişkenin değeri sıfır, exıt_success veya exıt_faılure dışında ise işlevi
 
-
-  `atexit` işlevi başarılı olursa sıfır değerini veya başarısız olursa sıfır olmayan bir değeri döndürür.
+`atexit` işlevi başarılı olursa sıfır değerini veya başarısız olursa sıfır olmayan bir değeri döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

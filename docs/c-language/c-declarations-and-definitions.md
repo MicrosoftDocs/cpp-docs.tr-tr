@@ -26,8 +26,7 @@ char find( fileptr ) {}
 int count( double f ) {}
 ```
 
-
-  `var` ve `val` değişkenleri `find` ve `count` işlevlerinde kullanılır; başka bildirime gerek yoktur. Ancak bu adlar `main`'de görünmez (erişilemez).
+`var` ve `val` değişkenleri `find` ve `count` işlevlerinde kullanılır; başka bildirime gerek yoktur. Ancak bu adlar `main`'de görünmez (erişilemez).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
