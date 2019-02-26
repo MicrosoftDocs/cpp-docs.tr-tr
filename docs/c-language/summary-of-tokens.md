@@ -42,7 +42,7 @@ ms.locfileid: "56149121"
 &nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* *rakam*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***e***oturum*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***E***oturum*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***.**
+&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* **.**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

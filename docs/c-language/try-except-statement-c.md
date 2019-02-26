@@ -27,9 +27,9 @@ ms.locfileid: "56152332"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*try haricinde deyimi*: **__try***bileşik deyim* 
+*try haricinde deyimi*: **__try** *bileşik deyim* 
 
-**__except (***ifade***)***bileşik deyim* 
+**__except (** *ifade* **)** *bileşik deyim* 
 
 Sonra gelen bileşik deyim `__try` yan tümcesi ise korunan bölümün. 
   `__except` yan tümcesinden sonra gelen bileşik deyim, özel durum işleyicisidir. İşleyici, bir dizi korunan bölümün yürütülmesi sırasında bir özel durum oluşturulursa gerçekleştirilecek eylemi belirtir. Yürütme aşağıdaki gibi çalışır:

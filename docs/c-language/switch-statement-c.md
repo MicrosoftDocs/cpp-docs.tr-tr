@@ -23,8 +23,8 @@ ms.locfileid: "56148198"
 &nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*
 
 *Etiketli deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi***sabit-ifade***:***deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:***deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi** *sabit-ifade* **:** *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:** *deyimi*
 
 Denetim özelliği deyime geçer **çalışması** *sabit-ifade* değeriyle eşleşen **geçiş (** *ifade* **)**. `switch` Deyimi herhangi bir sayıda içerebilir **çalışması** örnekleri, ancak hiçbir iki büyük/küçük harf sabitleri aynı `switch` deyimi aynı değere sahip olabilir. Deyim gövdesinin yürütülmesini seçili ifadede başlar ve gövde veya kadar sonuna kadar devam eder. bir **sonu** denetimi gövdenin dışında deyime aktarır.
 

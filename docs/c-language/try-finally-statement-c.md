@@ -20,9 +20,9 @@ ms.locfileid: "56151838"
 
 `try-finally` Deyimi, uygulamaların kod bloğunun yürütülmesi kesintiye uğradığında temizleme kodu yürütme garanti sağlayan C diline yönelik bir Microsoft uzantısıdır. Temizleme gibi görevleri belleğini, dosyaları kapatma ve dosya tanıtıcıları bırakarak oluşur. `try-finally` Sahip olduğu bir onay yapılır neden olabilecek bir hata için erken çeşitli yerlerde yordamlarını yordamından döndürmek için deyimi özellikle yararlıdır.
 
-*try-finally deyimi*: **__try***bileşik deyim* 
+*try-finally deyimi*: **__try** *bileşik deyim*  
 
-**__finally***bileşik deyim* 
+**__finally** *bileşik deyim* 
 
 Sonra gelen bileşik deyim `__try` yan tümcesi ise korunan bölümün. Sonra gelen bileşik deyim `__finally` yan tümcesi ise sonlandırma işleyicisi. İşleyici, korunan bölümün çıkıldı, standart fall (normal sonlandırması) üzerinden veya bir özel durum (olağan dışı sonlandırma) tarafından korunan bölümün çıkıldı olmadığını yürütme eylemleri kümesini belirtir.
 

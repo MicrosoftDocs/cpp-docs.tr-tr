@@ -22,7 +22,7 @@ ms.locfileid: "56152761"
 &nbsp;&nbsp;&nbsp;&nbsp;*try-finally deyimi*  / \* Microsoft Specific \*/
 
 *atlama-deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**goto***tanımlayıcı***;**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**goto** *tanımlayıcı* **;**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**devam edin.**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**BREAK;**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dönüş** *ifade*<sub>iyileştirilmiş</sub> **;**
@@ -43,24 +43,24 @@ ms.locfileid: "56152761"
 
 *Yineleme deyiminin*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**sırada (**  *ifade*  **)**  *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**yapmak***deyimi***sırada (***ifade***);**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**için (***ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **)** *deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;**yapmak** *deyimi* **sırada (***ifade***);**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**için (** *ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **)** *deyimi*
 
 *Seçimi deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**varsa (***ifade***)***deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**varsa (** *ifade* **)** *deyimi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**varsa (***ifade***)***deyimi***başka***deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (***ifade***)***deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*
 
 *Etiketli deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı***:***deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi***sabit-ifade***:***deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:***deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* **:** *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi** *sabit-ifade* **:** *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:** *deyimi*
 
 *try haricinde deyimi*: /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try***compound-statement* **__except (***ifade***)***bileşik deyim* 
+&nbsp;&nbsp;&nbsp;&nbsp;**__try** *compound-statement* **__except (** *ifade* **)** *bileşik deyim* 
 
 *try-finally deyimi*: /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try***compound-statement* **__finally***bileşik deyim* 
+&nbsp;&nbsp;&nbsp;&nbsp;**__try** *compound-statement* **__finally** *bileşik deyim* 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

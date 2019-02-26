@@ -24,7 +24,7 @@ Tür atamaları türleri açıkça dönüştürmek için kullanabilirsiniz.
 
 *Cast ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*birli ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(***tür adı***)***atama ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *tür adı* **)** *atama ifadesi* 
 
 *tür adı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Belirleyicisi niteleyici listesinin* *soyut bildirimci*<sub>iyileştirilmiş</sub>

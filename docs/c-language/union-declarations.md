@@ -42,7 +42,7 @@ Birleşim içeriği olarak tanımlanır
 
 *Yapı-declarator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Yapı bildirimcisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Yapı-declarator-list***,***yapı bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*Yapı-declarator-list* **,** *yapı bildirimcisi*
 
 Bir değişken **birleşim** türü türü tarafından tanımlanan değerlerden birini depolar. Yapı ve birleşim bildirimleri aynı kurallara yönetir. Birleşimler alanları bit.
 
