@@ -27,7 +27,7 @@ Bir *toplama* türü, bir yapı, birlik veya dizi türü. Bir toplama türünü 
 
 *Başlatıcı listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı listesi***,***Başlatıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı listesi* **,** *Başlatıcı*
 
 *Başlatıcı listesi* başlatıcılar virgülle ayrılmış listesidir. Listedeki her Başlatıcısı sabit bir ifade ya da bir başlatıcı listesi değil. Bu nedenle, başlatıcı listeleri yuvalanabilir. Bu formu, bu bölümdeki örneklerde gösterildiği gibi bir toplama türü üyeleri toplama başlatmak için yararlı olur. Ancak, tek bir ifade otomatik tanımlayıcı için Başlatıcı ise sabit bir ifade olmamalıdır; Bu yalnızca uygun bir tür tanımlayıcı atama için sahip olması gerekir.
 

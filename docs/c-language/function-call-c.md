@@ -20,7 +20,7 @@ A *işlev çağrısı* , çağrılan işlevin adını veya bir işlev işaretçi
 ## <a name="syntax"></a>Sözdizimi
 
 *sonek ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***(***bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **(** *bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**
 
 *bağımsız değişken ifade listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>

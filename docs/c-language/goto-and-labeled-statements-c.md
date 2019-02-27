@@ -26,10 +26,10 @@ ms.locfileid: "56151955"
 &nbsp;&nbsp;&nbsp;&nbsp;*atlama-deyimi*
 
 *atlama-deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**goto***tanımlayıcı***;**
+&nbsp;&nbsp;&nbsp;&nbsp;**goto** *tanımlayıcı* **;** 
 
 *Etiketli deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı***:***deyimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* **:** *deyimi*
 
 Bir bildirim etiketi yalnızca anlamlı bir `goto` deyimi; diğer herhangi bir bağlam içinde etiketli deyim etiketi bakılmaksızın yürütülür.
 

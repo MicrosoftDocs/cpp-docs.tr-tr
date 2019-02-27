@@ -20,7 +20,7 @@ ms.locfileid: "56147509"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yineleme deyiminin*: &nbsp; &nbsp; &nbsp; &nbsp; **yapmak***deyimi***sırada (** *ifade***);**
+*Yineleme deyiminin*: &nbsp; &nbsp; &nbsp; &nbsp; **yapmak** *deyimi* **sırada (** *ifade* **);**
 
 *İfade* içinde bir *yapın-sırada* deyimi, döngü gövdesinin yürütüldükten sonra değerlendirilir. Bu nedenle, döngü gövdesinin her zaman en az bir kez yürütülür.
 

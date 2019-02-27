@@ -34,8 +34,8 @@ Bağımsız değişkenler, işlev çağrısına göre bir işleve geçirilen de�
 &nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
 
 *doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***parametre türü listesi***)**  / \* yeni stil bildirimci \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**  / \* yeni stil bildirimci \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
 
 *parametre türü listesi*: /\* parametre listesi \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* <br/>
@@ -43,7 +43,7 @@ Bağımsız değişkenler, işlev çağrısına göre bir işleve geçirilen de�
 
 *parametre listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,***parametre bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,** *parametre bildirimi*
 
 *parametre bildirimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimcisi*<br/>

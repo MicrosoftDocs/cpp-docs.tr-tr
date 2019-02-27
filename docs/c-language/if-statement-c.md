@@ -24,9 +24,9 @@ ms.locfileid: "56152618"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Seçimi deyimi*: **varsa (***ifade***)***deyimi*
+*Seçimi deyimi*: **varsa (** *ifade* **)** *deyimi*
 
-**varsa (***ifade***)***deyimi***başka***deyimi*
+**varsa (** *ifade* **)** *deyimi* **başka** *deyimi*
 
 Her iki formu içinde **varsa** deyimi, bir yapı dışında herhangi bir değere sahip olabilir, ifadeler değerlendirilir, tüm yan etkileri de dahil olmak üzere.
 
