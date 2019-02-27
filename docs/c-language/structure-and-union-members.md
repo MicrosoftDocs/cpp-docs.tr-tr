@@ -23,7 +23,7 @@ ms.locfileid: "56151370"
 "Üye seçimi ifadesi", yapılar ve birleşimler üyelerine ifade eder. Böyle bir ifade, seçilen üyenin türü ve değeri vardır.
 
 > *sonek ifadesi* **.** *tanımlayıcı*
-> *sonek ifadesi* ** -> ** *tanımlayıcısı*
+> *sonek ifadesi* **->** *tanımlayıcısı*
 
 Bu liste, iki tür üye seçimi ifadeleri açıklar:
 

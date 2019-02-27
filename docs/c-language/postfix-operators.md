@@ -20,10 +20,10 @@ Sonek işleçleri ifade değerlendirmesinde (tightest bağlama) en yüksek önce
 
 *sonek ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Birincil ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***[***ifade***]** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***(***bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***.**  *tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***->***tanımlayıcısı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **[** *ifade* **]**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **(** *bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **.**   *tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi* **->** *tanımlayıcısı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
 

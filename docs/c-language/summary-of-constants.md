@@ -60,8 +60,8 @@ ms.locfileid: "56150031"
 &nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *sekizlik basamak*
 
 *onaltılık sabit*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 x***onaltılık basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 X***onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 x** *onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 X** *onaltılık basamak*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *onaltılık basamak*
 
 *sıfır olmayan basamak*: biri<br/>
