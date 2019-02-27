@@ -35,23 +35,23 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: 4f1c44e8fc2ae34ddcb65ec23ca8d98e11d50ec0
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: d3c8a747c1e66490c333ff050c7bfa6e6f723a87
+ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320594"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954906"
 ---
 # <a name="how-to-manage-symbols"></a>Nasıl yapılır: Semboller yönetme
 
-Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda, geliştirme ortamı varsayılan sembol adı, örneğin, IDD_DIALOG1 atar. Kullanabileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window) varsayılan sembol adı değiştirmek veya zaten bir kaynakla ilişkilendirilmiş herhangi bir sembol adını değiştirmek için.
+Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda, geliştirme ortamı, varsayılan bir sembol adı, örneğin atar `IDD_DIALOG1`. Kullanabileceğiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window) varsayılan sembol adı değiştirmek veya zaten bir kaynakla ilişkilendirilmiş herhangi bir sembol adını değiştirmek için.
 
 Tek bir kaynakla ilişkili semboller için de kullanabilirsiniz **özellikleri** penceresi simge değerini değiştirmek için. Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) sembolleri bir kaynağa atanmış değerini değiştirin.
 
 Normalde tüm sembol tanımlarını kaydedilir `Resource.h`. Ancak, bunu değiştirmeniz gerekebilir, örneğin, birden fazla kaynak dosyayla aynı dizinde çalışabilir böylece dosya adı içermelidir.
 
 > [!NOTE]
-> Projenize bir .rc dosyası yoksa, bkz. [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+> Projenize bir .rc dosyası yoksa, bkz. [nasıl yapılır: Kaynakları oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
 ## <a name="symbol-name-restrictions"></a>Sembol Adı Kısıtlamaları
 
@@ -67,14 +67,14 @@ Sembol adı kısıtlamaları aşağıdaki gibidir:
 
 - Sembol adları büyük küçük harfe duyarlı değildir, ancak ilk sembol tanımı durumu korunur. Sembolleri tanımlar üstbilgi dosyası, kaynaklar bir kaynak dosyasında tanımlanan başvurmak için hem kaynak derleyici/Düzenleyicisi hem de C++ programlarının tarafından kullanılır. Yalnızca kaynak derleyici/Düzenleyici tek bir sembole başvuru olarak her iki adlarını görür ancak C++ program iki ayrı sembolleri görür durumunda, iki sembol adları için farklı.
 
-   > [!NOTE]
-   > Standart sembol adı düzeni izlemeyin varsa (ID*_[keyword]) özetlenen aşağıda ve kaynak kod dosyasını derlenmeye çalışılıyor, kaynak kod derleyici bilinen bir anahtar sözcük görünüşte rastgele hatayla sonuçlanır. aynı olacak şekilde, sembol adı olur. tanı koymak güç oluşturma. Bunu önlemek için standart adlandırma şeması izliyor.
+> [!NOTE]
+> Standart sembol adı düzeni izlerseniz yok (ID*_[keyword]) özetlenen aşağıda ve kaynak kod dosyasını derlenmeye çalışılıyor, kaynak kod derleyici bilinen bir anahtar sözcük görünüşte rastgele hata oluşturma işleminde sonuçlanacağı aynı olması, sembol adı olur. tanı koymak güç olmasıdır. Bunu önlemek için standart adlandırma şeması izliyor.
 
-Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklayıcı önekleri vardır. Açıklayıcı bu ön ekler metin birleşim kimliği ile başlayın Microsoft Foundation Class Kitaplığı'nı (MFC) aşağıdaki tabloda gösterilen simge adlandırma kurallarını kullanır.
+Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklayıcı önekleri vardır. Açıklayıcı bu ön ekler metin birleşim kimliği ile başlayın Microsoft Foundation Class (MFC) kitaplığı aşağıdaki tabloda gösterilen simge adlandırma kuralları kullanır:
 
 |Kategori|Ön eki|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |--------------|------------|---------|
-|Kaynaklar|IDR_ IDD_ IDC_ IDI_ IDB_|Hızlandırıcı veya menü (ve ilişkili ya da özel kaynaklar) imleç simgesi bit eşlem iletişim kutusu|
+|Kaynaklar|IDR_ IDD_, IDC_ IDI_, IDB_|Hızlandırıcı veya menü (ve ilişkili ya da özel kaynaklar), iletişim kutusu, işaretçi, simge, bit eşlem|
 |Menü öğeleri|ID_|Menü öğesi|
 |Komutlar|ID_|Komut|
 |Denetimleri ve alt pencereler|IDC_|Denetim|
@@ -89,11 +89,12 @@ Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklay�
 
    Yeni bir sembol adı yazarsanız, bu otomatik olarak bir değer atanır.
 
-Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış sembol adlarını değiştirmek için.
+> [!NOTE]
+> Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış sembol adlarını değiştirmek için.
 
 ## <a name="symbol-value-restrictions"></a>Sembol Değeri Kısıtlamaları
 
-Sembol değeri için normal şekilde ifade edilen herhangi bir tamsayı olabilir # önişlemci yönergeleri define. Sembol değerlerinin bazı örnekleri aşağıda verilmiştir:
+Sembol değeri için normal şekilde ifade edilen herhangi bir tamsayı olabilir `#define` önişlemci yönergeleri. Sembol değerlerinin bazı örnekleri aşağıda verilmiştir:
 
 ```
 18
@@ -116,15 +117,13 @@ Sembol değerlerinin bazı kısıtlamalar şunlardır:
     #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported
     ```
 
-- Önişlemci makroları değer tanımlarla bağımsız değişkenlerle birlikte kullanamazsınız. Örneğin:
+- Önişlemci makroları değer tanımlarla bağımsız değişkenlerle birlikte kullanamazsınız. Aşağıdaki örnek ne bağımsız olarak geçerli bir ifade değil `ID` derleme zamanında değerlendirilir:
 
     ```cpp
     #define   IDD_ABOUT  ID(7) //not supported
     ```
 
-   ne bağımsız olarak geçerli bir ifade değil `ID` derleme zamanında değerlendirilir.
-
-- Uygulamanızın ifadeleri ile tanımlanan sembolleri içeren mevcut bir dosya olabilir. Salt okunur semboller symbols ekleme hakkında daha fazla bilgi için bkz. [kullanılarak paylaşılan (salt okunur) veya hesaplanan sembolleri](../windows/including-shared-read-only-or-calculated-symbols.md).
+- Uygulamanızın ifadeleri ile tanımlanan sembolleri içeren mevcut bir dosya olabilir.
 
 Aralık sayısı hakkında daha fazla bilgi için bkz. [TN023: Standart MFC kaynakları](../mfc/tn023-standard-mfc-resources.md).
 
@@ -138,7 +137,7 @@ Aralık sayısı hakkında daha fazla bilgi için bkz. [TN023: Standart MFC kayn
     IDC_EDITNAME=5100
     ```
 
-Yeni değer proje kaydettiğinizde sembol üstbilgi dosyasında depolanır. Sembol adı kimliği kutusuna görünür kalır; Bunlar doğrulanmış sonra eşittir işareti ve değer görüntülenmez.
+   Yeni değer proje kaydettiğinizde sembol üstbilgi dosyasında depolanır. Sembol adı kimliği kutusuna görünür kalır ve bunlar doğrulanmış sonra eşittir işareti ve değer görüntülenmez.
 
 ## <a name="change-or-delete-symbols"></a>Değiştirme veya silme semboller
 
@@ -151,14 +150,14 @@ Yeni değer proje kaydettiğinizde sembol üstbilgi dosyasında depolanır. Semb
 1. Simgenin adı veya değeri, verilen kutulara Düzenle **sembolü Değiştir** iletişim kutusu.
 
    > [!NOTE]
-   > Bir sembol değiştirmek için *olduğu* bir kaynağa veya nesne atanan kaynak düzenleyicisini kullanmanız gerekir veya **özellikleri** penceresi.
+   > Bir kaynak veya nesne atanmış bir sembol değiştirmek için kaynak düzenleyicisini kullanın veya **özellikleri** penceresi.
 
 ### <a name="to-delete-an-unassigned-unused-symbol"></a>Atanmamış bir (kullanılmayan) sembolü silmek için
 
 İçinde [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), silme ve istediğiniz simgeyi seçin **Sil**.
 
-   > [!NOTE]
-   > Kullanılmayan bir sembol kaynak dosya silinmeden önce başka bir program veya kaynak dosyaları derleme zamanında dahil tarafından kullanılmadığından emin olun.
+> [!NOTE]
+> Kullanılmayan bir sembol kaynak dosya silinmeden önce başka bir program veya kaynak dosyaları derleme zamanında dahil tarafından kullanılmadığından emin olun.
 
 ## <a name="include-symbols"></a>Simgeleri dahil et
 
@@ -193,9 +192,9 @@ Ortamı doğru olduğu sürece bu hesaplanan semboller yorumlar:
    Dosya Remove() çağırmayın `Resource.h`, normalde ana sembol başlık dosyası tarafından kullanılan dosya adı olduğundan.
 
    > [!NOTE]
-   > **Önemli** tam olarak yazdığınız sırada, salt okunur sembol yönergeleri kutusuna yazdığınız kaynak dosyasına dahil edilir. Ne tür emin yazım veya söz dizimi hataları içermiyor.
+   > İçinde yazdığınız **salt okunur sembol yönergeleri** kutusunu tam olarak yazdığınız sırada kaynak dosyasına eklenir. Ne tür emin yazım veya söz dizimi hataları içermiyor.
 
-   Kullanım **salt okunur sembol yönergeleri** sembol tanımlarını yalnızca dosyalarla kutusuna. Kaynak tanımları eklemeyin; Aksi takdirde, yinelenen kaynak tanımları dosyası kaydedildiğinde oluşturulur.
+   Kullanım **salt okunur sembol yönergeleri** sembol tanımlarını yalnızca dosyalarla kutusuna. Kaynak tanımları eklemeyin, aksi takdirde yinelenen kaynak tanımları dosyası kaydedildiğinde oluşturulur.
 
 1. Simgeler, belirtilen dosyada yerleştirin.
 
@@ -215,6 +214,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak Tanımlayıcıları (simge)](../windows/symbols-resource-identifiers.md)<br/>
-[Semboller oluşturma](../windows/creating-new-symbols.md)<br/>
+[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
+[Nasıl yapılır: Sembol Oluşturma](../windows/creating-new-symbols.md)<br/>
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>

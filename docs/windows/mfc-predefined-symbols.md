@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 2f36f42ce24c2cdf1f3ac4c93248d430ec75f30a
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 329d56f4a8e0e9992cb78987c559f74c7349f681
+ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320867"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954958"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 
@@ -23,12 +23,12 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 ```cpp
 #include <afxwin.h>      //MFC core and standard components
 #include <afxext.h>      //MFC extensions
-#include <afxdisp.h      //MFC automation classes
+#include <afxdisp.h>      //MFC automation classes
 #include <afxdtctl.h>   //MFC support for Internet Explorer common controls
 #include <afxcmn.h>      //MFC support for Windows common controls.
 ```
 
-Üst bilgi dosyaları, MFC ortak değerleri için Sembol kimliği değerlerini içerir. Bu simgeleri, yalnızca bir MFC projesinde çalışırken kullanılabilir. AFX_ önek standart sembol adı önekleri tarafından izlenir.
+Üst bilgi dosyaları, MFC ortak değerleri için Sembol kimliği değerlerini içerir. Bu simgeleri, yalnızca bir MFC projesinde çalışırken kullanılabilir. `AFX_` Önek standart sembol adı önekleri tarafından izlenen.
 
 |||
 |-|-|
@@ -211,7 +211,7 @@ MFC projeleri, her zaman windows destekleyen çeşitli üst bilgi dosyaları iç
 |AFX_IDS_UPDATING_ITEMS|AFX_IDS_USER_EXCEPTION|
 |AFX_IDS_VERB_EDIT|AFX_IDS_VERB_PROPERTIES|
 
-## <a name="mfc-database-programming-symbols"></a>MFC veritabanı programlama sembolleri
+## <a name="mfc-database-programming"></a>MFC veritabanı programlama
 
 Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projesinde görünür. Bunlar, SQL sunucuları ve veritabanı programlama MFC bağlantıyı destekler.
 
@@ -232,9 +232,11 @@ Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projes
 |AFX_IDP_SQL_SNAPSHOT_ NOT_SUPPORTED|AFX_IDP_SQL_SQL_CONFORMANCE|
 |AFX_IDP_SQL_SQL_NO_TOTAL|AFX_IDP_SQL_UPDATE_DELETE_FAILED|
 
-## <a name="mfc-windows-programming-symbols"></a>MFC Windows programlama sembolleri
+## <a name="mfc-windows-programming"></a>MFC Windows programlama
 
-Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler menülerle kullanılır. Menülerde ile çalışırken **Menü Düzenleyici**, bu simgeler görünür **özellik penceresi** ortak menü komutları ile ilişkili. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler menülerle kullanılır.
+
+Çalışırken menülerde ile **Menü Düzenleyici**, bu simgeler görünür **özellik penceresi** ortak menü komutları ile ilişkili. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 
 ||||
 |-|-|-|
