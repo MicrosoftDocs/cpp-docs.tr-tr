@@ -50,9 +50,9 @@ Bildirimciler, değer, değerleri ve belirtilen bir tür değerleri döndüren i
 *doğrudan bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**(***bildirimci***)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***[***sabit-ifade*<sub>iyileştirilmiş</sub> **]** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***parametre türü listesi***)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **[** *sabit-ifade*<sub>iyileştirilmiş</sub> **]** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**
 
 *İşaretçi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *tür niteleyici listesi*<sub>iyileştirilmiş</sub><br/>
