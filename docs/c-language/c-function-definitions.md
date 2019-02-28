@@ -53,8 +53,8 @@ Prototip Parametreler şunlardır:
 &nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
 
 *doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***parametre türü listesi***)**  / \* yeni stil bildirimci \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(***tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**  / \* yeni stil bildirimci \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
 
 Bir tanım parametre listesinde bu söz dizimini kullanır:
 
@@ -74,7 +74,7 @@ Eski stil işlev tanımı parametre listesinde bu söz dizimini kullanır:
 
 *tanımlayıcı listesi*: /\* eski stil işlev tanımları ve bildirimleri \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,***tanımlayıcısı*
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,** *tanımlayıcısı*
 
 İşlev gövdesi için sözdizimi aşağıdaki gibidir:
 

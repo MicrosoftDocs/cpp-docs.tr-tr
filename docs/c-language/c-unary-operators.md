@@ -26,9 +26,9 @@ Birli işleçler, önce kendi işleneni görünür ve sağdan sola ilişkilendir
 
 *birli işleci atama ifadesi*
 
-**sizeof***tekli ifade*
+**sizeof** *tekli ifade* 
 
-**sizeof (***tür adı***)**
+**sizeof (** *tür adı* **)** 
 
 *birli işleç*: biri  **&  \* + -** `~` **!**
 

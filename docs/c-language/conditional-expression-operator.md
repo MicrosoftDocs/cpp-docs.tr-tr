@@ -21,7 +21,7 @@ C sahip bir Üçlü işleç: koşullu ifade işleci (**?:**).
 
 *Koşullu ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Mantıksal OR ifadesi***?**  *ifade***:***koşullu ifade*
+&nbsp;&nbsp;&nbsp;&nbsp;*Mantıksal OR ifadesi* **?**   *ifade* **:** *koşullu ifade*
 
 *Mantıksal-veya-expression* integral, kayan veya işaretçi türünde olmalıdır. 0, denklik açısından değerlendirilir. Bir dizi noktası izleyen *mantıksal-veya-expression*. İşlenenlerin gibi çalışır:
 

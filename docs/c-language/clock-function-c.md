@@ -15,8 +15,7 @@ ms.locfileid: "56149707"
 
 **ANSI 4.12.2.1** dönemi `clock` işlevi
 
-
-  `clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1'de ölçülen süreleri döndürür /**CLOCKS_PER_SEC** (hangi eşittir 1/1000 Microsoft C için).
+`clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1'de ölçülen süreleri döndürür /**CLOCKS_PER_SEC** (hangi eşittir 1/1000 Microsoft C için).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

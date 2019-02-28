@@ -43,7 +43,7 @@ Bir işlev bildirimi işlev tanımı önündeki ve adı, dönüş türü, depola
 &nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
 
 *doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***(** *parametre türü listesi* **)**   / \* yeni stil bildirimci \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**   / \* yeni stil bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
 
 Kapatma parantezinden hemen ardından noktalı virgül tarafından sonlandırılır ve bu nedenle hiçbir gövdeye sahip prototipe işlev tanımı aynı biçime sahip. Her iki durumda da dönüş türü bir işlev tanımında belirtilen dönüş türüne sahip kabul etmesi gerekir.

@@ -48,7 +48,7 @@ ms.locfileid: "56152774"
 
 **\\**  *sekizlik basamak sekizlik basamak sekizlik basamak*
 
-*onaltılık kaçış sırası*: **\x***onaltılık basamak*
+*onaltılık kaçış sırası*: **\x** *onaltılık basamak*
 
 *onaltı basamaklı onaltılık kaçış sırası*
 

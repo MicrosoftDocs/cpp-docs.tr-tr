@@ -24,7 +24,7 @@ Bir "dizi bildirimi" dizi adları ve, öğelerinin türünü belirtir. Dizideki 
 
 *init-declarator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list***,***init-declarator*
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
 
 *init-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
@@ -34,7 +34,7 @@ Bir "dizi bildirimi" dizi adları ve, öğelerinin türünü belirtir. Dizideki 
 &nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
 
 *doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci***[***sabit-ifade*<sub>iyileştirilmiş</sub> **]** 
+&nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **[** *sabit-ifade*<sub>iyileştirilmiş</sub> **]** 
 
 Çünkü *sabit-ifade* söz dizimine sahip iki forms isteğe bağlıdır:
 
