@@ -2,17 +2,17 @@
 title: plus Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::plus
+- functional/std::plus
 helpviewer_keywords:
 - plus class
 - plus struct
 ms.assetid: 4594abd5-b2f2-4fac-9b6b-fc9a2723f8cf
-ms.openlocfilehash: 5cb37d0f0a1f3704176a4e419882f0dcfacd7921
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94ccd071d23479064f007079835134055ed79aa3
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454528"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006818"
 ---
 # <a name="plus-struct"></a>plus Yapısı
 

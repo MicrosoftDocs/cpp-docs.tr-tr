@@ -2,17 +2,17 @@
 title: not_equal_to Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::not_equal_to
+- functional/std::not_equal_to
 helpviewer_keywords:
 - not_equal_to function
 - not_equal_to struct
 ms.assetid: 333fce09-4f51-44e0-ba26-533bccffd485
-ms.openlocfilehash: a88afe6c6449711f249fc5af8b6805bd121ccb45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8dc0e5710790714bab2c0109db3a4aa41f0acbaf
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467411"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006298"
 ---
 # <a name="notequalto-struct"></a>not_equal_to Yapısı
 

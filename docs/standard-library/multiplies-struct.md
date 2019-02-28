@@ -2,17 +2,17 @@
 title: multiplies Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::multiplies
+- functional/std::multiplies
 helpviewer_keywords:
 - multiplies class
 - multiplies struct
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
-ms.openlocfilehash: e9566f9685ef0591a08f8b10886d20784c2147a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e91c834d3e56d4c0170c4e2f6b26b73dc925432
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571463"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006376"
 ---
 # <a name="multiplies-struct"></a>multiplies Yapısı
 

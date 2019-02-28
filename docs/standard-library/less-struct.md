@@ -2,17 +2,17 @@
 title: less Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::less
+- functional/std::less
 helpviewer_keywords:
 - less struct
 - less function
 ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7
-ms.openlocfilehash: 60a78859a9d218afa11174ef4117e86cbd2edea3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e24c7fb238c9c05d91cbdba7fab277878e6f5e24
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475133"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006610"
 ---
 # <a name="less-struct"></a>less Yapısı
 

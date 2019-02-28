@@ -1,6 +1,6 @@
 ---
 title: İpucu Dosyaları
-ms.date: 11/04/2016
+ms.date: 02/26/2019
 f1_keywords:
 - cpp.hint
 - vc.hint.file
@@ -11,53 +11,104 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: 44566408a3afcfee7a15299a5845b5af385aeef8
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: ca250849a0bcd150a6359abdad996b72c4372713
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320698"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006765"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 
-A *ipucu dosyası* yardımcı olan Visual Studio tümleşik geliştirme ortamı (IDE) Visual C++ tanımlayıcıları, işlevlerle makrolar adları gibi yorumlar. Bir Visual C++ projesinin, IDE açtığınızda *sistem ayrıştırma* projedeki her kaynak dosyasındaki kodu inceler ve her bir tanımlayıcı hakkında bilgi toplar. IDE özellikleri desteklemek için bu bilgileri kullanır. ardından **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.
+A *ipucu dosyası* Aksi takdirde C++ gözatma veritabanı ayrıştırıcı tarafından Atlanan bölgeleri neden makrolar içerir. Visual C++ projesi açtığınızda, ayrıştırıcının her proje kaynak dosyada kod analiz eder ve her bir tanımlayıcı hakkında bilgi içeren bir veritabanı oluşturur. IDE, kod gözatma desteği veren bilgiler gibi özellikleri kullanır **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.
 
-Visual C++ 2010'da sunulan ayrıştırma sistem C/C++ sözdizimi anlar, ancak bir makro içeren bir ifade hatalı yorumlayan. Makro yazılan sözdizimsel olarak yanlış olması için kaynak kodu neden olursa, deyim anlaşılabilir. Kaynak kod derlenir ve önişlemci değiştirir, deyim sözdizimsel olarak doğru dönüşebilir [makro tanımlayıcısı](../preprocessor/hash-define-directive-c-cpp.md) tanımına sahip. Ayrıştırma sistem makroları yorumlamak için ipucu dosyaları kullandığından projesi oluşturmaya gerek kalmadan çalışır. Bu nedenle, bir tarama özelliği gibi **sınıf görünümü** hemen kullanılabilir.
+C++ gözatma veritabanı ayrıştırıcı büyük miktarda kod kısa bir sürede ayrıştırabilen belirsiz bir ayrıştırıcısıdır. Hızlı nedenlerinden biri, içerik bloklarının atlar olmasıdır. Örneği için yalnızca bir işlevin parametreleri ve konumunu kaydeder ve içeriğini yok sayar. Belirli makrolar, başlangıç ve bitiş bloğunun belirlemek için kullanılan buluşsal yöntemler için sorunlara neden olabilir. Bu sorunlar, yanlış kaydedilecek bölgeleri neden.
 
-Kullanıcı tarafından özelleştirilebilir ipucu dosyada *ipuçları*, C/C++ makro tanımları aynı söz dizimini sahip. Visual C++ çoğu proje için yeterli olan bir yerleşik ipucu dosyası içerir, ancak Visual Studio tanımlayıcıları işleme iyileştirmek için kendi ipucu dosyaları oluşturabilirsiniz.
+Atlanan Bu bölgeler, birden çok yolla bildirilebilir:
+
+- Eksik türleri ve içindeki işlevler **sınıf görünümü**, **Git** ve **gezinti çubuğu**
+
+- Yanlış kapsamlarda **gezinti çubuğu**
+
+- Önerilerinizi **oluşturma bildirimi/tanımı** zaten tanımlanmış olan işlevler
+
+İpucu dosyası olarak C/C++ makro tanımları aynı söz dizimine sahip kullanıcı tarafından özelleştirilebilir ipuçları içerir. Visual C++, çoğu proje için yeterli olan bir yerleşik ipucu dosyası içerir. Ancak, projeniz için özel bir ayrıştırıcı iyileştirmek için kendi ipucu dosyaları oluşturabilirsiniz.
 
 > [!IMPORTANT]
-> Değiştirme ya da bir ipucu dosyası ekleyin, .sdf dosya ve/veya VC.db değişikliklerin etkili olması Çözüm dosyasındaki silmeniz gerekir.
+> Değiştirme ya da bir ipucu dosyası ekleyin, değişikliklerin etkili olması ek adımlar uygulamanız gerekir:
+> - Visual Studio 2017 sürüm 15.6 önce sürümlerde: .Sdf dosya ve/veya çözüm VC.db dosyada yapılan tüm değişiklikler silin.
+> - Visual Studio 2017 sürüm 15.6 15.9 aracılığıyla: Kapatın ve yeni ipucu dosyaları ekledikten sonra çözümü yeniden açın.
 
 ## <a name="scenario"></a>Senaryo
 
-Aşağıdaki kod ile inceleyin bir kaynak dosyası olduğunu varsayın **sınıf görünümü** tarayıcı. `STDMETHOD` Makro bildirir adlandırılmış bir yöntem `myMethod` bir parametre alır ve bir işaretçi döndüren bir **HRESULT**.
-
 ```cpp
-// Source code file.
-STDMETHOD(myMethod)(int parameter1);
+#define NOEXCEPT noexcept
+void Function() NOEXCEPT
+{
+}
 ```
 
-Aşağıdaki makro tanımları ayrı üstbilgi dosyasındadır.
+Bir ipucu dosyası olmadan `Function` içinde gösterilmesini **sınıf görünümü**, **Git** veya **gezinti çubuğu**. Bu Makro tanımında bir ipucu dosyası ekledikten sonra ayrıştırıcının artık anlar ve değiştirir `NOEXCEPT` işlevi düzgün ayrıştırılamadı izin veren makro:
 
-```cpp
-// Header file.
-#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)
-#define STDMETHODCALLTYPE __stdcall
-#define HRESULT void*
+```cpp.hint
+#define NOEXCEPT
 ```
 
-Adlı bir işlev için kaynak kodu ayrıştırma sistem yorumlanamıyor `STDMETHOD` bildirilmesi için görünür ve iki parametre listeleri olduğundan bildirimi sözdizimsel olarak yanlış. Tanımları için keşfetmek için üst bilgi dosyasını ayrıştırma sistem açmaz `STDMETHOD`, `STDMETHODCALLTYPE`, ve `HRESULT` makroları. Ayrıştırma sistem yorumlanamıyor çünkü `STDMETHOD` makrosu, tüm deyimi yoksayar ve daha sonra ayrıştırma devam eder.
+## <a name="disruptive-macros"></a>Kesintiye uğratan makroları
 
-Projenizin bir veya daha fazla önemli üstbilgi dosyalarına bağımlı çünkü ayrıştırma sistem üstbilgi dosyası kullanmaz. Herhangi bir üst bilgi dosyası değişirse, ayrıştırma sistem tüm üst bilgi dosyaları, projenizdeki IDE'nin performansı yavaşlattığını edilemeyeceğini gerekebilir. Bunun yerine, ayrıştırma sistem nasıl işleneceğini belirtin ipuçları kullanır `STDMETHOD`, `STDMETHODCALLTYPE`, ve `HRESULT` makroları.
+Ayrıştırıcının kesintiye makroları iki kategorisi vardır:
 
-Nasıl bir ipucu gerektiğini biliyor musunuz? Ve ne tür bir ipucu ihtiyacınız varsa oluşturmalısınız? Bir oturum ipucu gereklidir, bir tanımlayıcıda görünümünü **sınıf görünümü** görünümünde tutarsız **Düzenleyicisi**. Örneğin, **sınıf görünümü** var olduğunu bildiğiniz bir sınıf üyesinin görüntülemez olabilir veya üyenin adı yanlış. Sık karşılaşılan sorunları çözmek ipuçları türleri hakkında daha fazla bilgi için bkz: ne makroları gerektiren bir ipucu? Bu konunun ilerleyen bölümlerinde bölümü.
+- Bir işlev adorn anahtar sözcükleri kapsülleyen makroları
+
+   ```cpp
+   #define NOEXCEPT noexcept
+   #define STDMETHODCALLTYPE __stdcall
+   ```
+
+   Bu tür makroları, makro adı ipucu dosyasında gereklidir:
+
+   ```cpp.hint
+   #define NOEXCEPT
+   #define STDMETHODCALLTYPE
+   ```
+
+- Eşleşmeyen ayraç içeren makroları
+
+   ```cpp
+   #define BEGIN {
+   ```
+
+   Bu tür makroları, makro adı hem de içeriğini ipucu dosyasında gerekir:
+
+   ```cpp.hint
+   #define BEGIN {
+   ```
+
+## <a name="editor-support"></a>Düzenleyicisi desteği
+
+Visual Studio 2017 sürüm 15,8 kesintiye uğratan makroları tanımlamak için birkaç özellik vardır. başlangıç:
+
+- Ayrıştırıcı tarafından Atlanan bölgeleri içinde makroların vurgulanır.
+
+- Hızlı bir vurgulanan makro içeren bir ipucu dosyası oluşturmak için eylem veya makro ipucu dosyasına eklemek için bir varolan ipucu dosyası ise.
+
+![Vurgulanan makrosu. ](../ide/media/hint-squiggle-and-actions.png "İpucu kapalıysa ve hızlı Eylemler")
+
+Hızlı Eylemler birini yürütüldükten sonra ayrıştırıcının ipucu dosyası tarafından etkilenen dosyalar reparses.
+
+Varsayılan olarak, sorunu makrosu öneri olarak vurgulanır. Vurgulama kırmızı veya yeşil dalgalı çizgi gibi daha belirgin bir şey değiştirilebilir. Kullanım **makroları atlandı gözatma bölgelerde** seçeneğini **kod dalgalı çizgiler** bölümüne **Araçları** > **seçenekleri**  >  **Metin düzenleyici** > **C/C++** > **görünümü**.
+
+![Atlanan gözatma bölgeler seçenek makroları. ](../ide/media/skipped-regions-squiggle-option.png "Bölgeleri dalgalı çizgi seçenek atlandı.")
+
+## <a name="display-browsing-database-errors"></a>Gözatma veritabanı hataları görüntüleme
+
+**Proje** > **görünen gözatma veritabanı hataları** menü komutunu görüntüler olarak ayrıştırılamadı tüm bölgeler **hata listesi**. Komut, ilk ipucu dosyası derleme kolaylaştırmak için tasarlanmıştır. Ancak, ayrıştırıcının her hata değerlendirmelidir. böylece hatanın nedenini kesintiye uğratan bir makro olduğunu anlayamaz. Çalıştırma **görünen gözatma veritabanı hataları** komut ve etkilenen dosyayı düzenleyicide yüklenecek her bir hata gidin. Dosya yüklendiğinde makroların bölgenin içinde olduğunda vurgulanmış. Bunları bir ipucu dosyasına eklemek için hızlı Eylemler çağırabilirsiniz. İpucu dosyası güncelleştirmesinden sonra hata listesinde otomatik olarak güncelleştirilir. Alternatif olarak, el ile ipucu dosyası değiştiriyorsanız kullanabilirsiniz **yeniden tarama çözüm** güncelleştirme tetiklemek için komutu.
 
 ## <a name="architecture"></a>Mimari
 
-İpucu dosyaları fiziksel dizinlerle ilgilidir, mantıksal dizinleri içinde gösterilen **Çözüm Gezgini**. Projeniz bir etkiye sahip olma ipucu dosyası için bir ipucu dosyası eklemek gerekmez. Yalnızca kaynak dosyaları ayıklarken ayrıştırma sistem ipucu dosyaları kullanır.
+İpucu dosyaları ilişkili fiziksel dizinlerine, gösterilen mantıksal dizinleri **Çözüm Gezgini**. Projenize bir etkiye sahip olma ipucu dosyası için bir ipucu dosyası eklemeniz gerekmez. Yalnızca kaynak dosyaları ayıklarken ayrıştırma sistem ipucu dosyaları kullanır.
 
-Her ipucu dosyası adlı **cpp.hint**. Bu nedenle, birden çok dizini bir ipucu dosyası içerebilir ancak yalnızca bir ipucu dosyası belirli bir dizinde ortaya çıkabilir.
+Her ipucu dosyası adlı **cpp.hint**. Birden çok dizini bir ipucu dosyası içerebilir, ancak yalnızca bir ipucu dosyası belirli bir dizinde ortaya çıkabilir.
 
 Sıfır veya daha fazla ipucu dosyaları projenize etkilenebilir. İpucu dosya yoksa, ayrıştırma sistem şifresi çözülemeyen bir kaynak kodu yok sayılacak hata kurtarma teknikleri kullanır. Aksi takdirde ayrıştırma sistem bulmak ve ipuçları toplamak için aşağıdaki stratejisi kullanır.
 
@@ -69,33 +120,33 @@ Ayrıştırma sistem ipucu dosyaları için dizinleri şu sırayla arar.
 
 - Kaynak dosyayı içeren dizine kök dizininde bir kaynak dosyasının yolu. Normal bir Visual C++ projesinin kök dizinine çözüm veya proje dosyasını içerir.
 
-   Bu kuralın istisnası, bir *durdurma dosya* içinde kaynak dosyasının yolu. Durdurma dosya adında bir dosya arama sırası üzerinde ek denetim sunan ve **cpp.stop**. Kök dizininden başlayarak yerine, kaynak dosyasını içeren dizine durdurma dosyasını içeren dizinden ayrıştırma sistem arar. Tipik bir projede bir Durma dosyası gerekmez.
+   Bu kuralın istisnası, bir *durdurma dosya* içinde kaynak dosyasının yolu. Adlı bir dosyaya bir Durma dosyasıdır **cpp.stop**. Durdurma dosya arama sırası üzerinde ek denetim sağlar. Kök dizininden başlayarak yerine, kaynak dosyasını içeren dizine durdurma dosyasını içeren dizinden ayrıştırma sistem arar. Tipik bir projede bir Durma dosyası gerekmez.
 
 ### <a name="hint-gathering"></a>İpucu toplanıyor
 
 Sıfır veya daha fazla ipucu dosyası içeren *ipuçları*. İpucu tanımlanan veya yalnızca C/C++ makro gibi silindi. Diğer bir deyişle, `#define` önişlemci yönergesi oluşturur veya bir ipucu'ı yeniden tanımladığı ve `#undef` yönergesi bir ipucu siler.
 
-Ayrıştırma sistem her ipucu dosyası daha önce açıklanan arama düzenini açılır, her bir dosyanın ipuçları kümesi olarak birikir *etkili ipuçları*ve daha sonra kodunuzda tanımlayıcıları yorumlamak için etkili ipuçları kullanır.
+Ayrıştırma sistem daha önce açıklanan arama sırayla her ipucu dosyası açılır. Bir dizi her dosyanın ipuçları biriktirir *etkili ipuçları*ve daha sonra kodunuzda tanımlayıcıları yorumlamak için etkili ipuçları kullanır.
 
-Ayrıştırma sistem ipuçları ulaşıncaya kadar aşağıdaki kuralları kullanır.
+Ayrıştırma sistem ipuçları ulaşıncaya kadar bu kuralları kullanır:
 
-- Yeni ipucu zaten tanımlı olmayan bir ad belirtir, yeni ipucu için etkili ipuçları adını ekler.
+- Yeni ipucu zaten tanımlı olmayan bir ad belirtiyorsa, yeni ipucu için etkili ipuçları adını ekler.
 
 - Yeni ipucu zaten tanımlı bir ad belirtiyorsa, yeni ipucu mevcut ipucu yeniden tanımlar.
 
 - Yeni ipucu ise bir `#undef` yönergesi, var olan bir etkin ipucu belirtir, mevcut ipucu yeni ipucu siler.
 
-İlk kural etkili ipuçları önceden açılmış ipucu dosyalarından devralınır anlamına gelir. Son iki kural daha sonra arama sırayla ipuçları daha önce gerçekleşen ipuçları kılabilirsiniz anlamına gelir. Örneğin, bir kaynak dosyasını içeren dizin ipucu dosyası oluşturursanız, önceki açıklanmıyorsa geçersiz kılabilirsiniz.
+İlk kural etkili ipuçları önceden açılmış ipucu dosyalarından devralınır anlamına gelir. Son iki kural daha sonra arama sırası ipuçlarına önceki ipuçları kılabilirsiniz anlamına gelir. Örneğin, bir kaynak dosyasını içeren dizin ipucu dosyası oluşturursanız, önceki açıklanmıyorsa geçersiz kılabilirsiniz.
 
-İpuçları nasıl toplanır bir gösterimi için bkz. `Example` bu konunun ilerleyen bölümlerinde.
+İpuçları nasıl toplanır bir gösterimi için bkz. [örnek](#example) bölümü.
 
 ### <a name="syntax"></a>Sözdizimi
 
-İpuçları oluşturulur ve aynı söz dizimine oluşturun ve makroları silme önişlemci yönergeleri ile silinir. Aslında, ayrıştırma sistem ipuçları değerlendirmek için C/C++ ön işlemci kullanır. Önişlemci yönergeleri hakkında daha fazla bilgi için bkz: [#define yönergesi (C/C++)](../preprocessor/hash-define-directive-c-cpp.md) ve [#undef yönergesi (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md).
+Oluşturur ve ipuçları oluşturma ve silme makrolar önişlemci yönergeleri aynı söz dizimini kullanarak silin. Aslında, ayrıştırma sistem ipuçları değerlendirmek için C/C++ ön işlemci kullanır. Önişlemci yönergeleri hakkında daha fazla bilgi için bkz: [#define yönergesi (C/C++)](../preprocessor/hash-define-directive-c-cpp.md) ve [#undef yönergesi (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md).
 
-Yalnızca olağan dışı bir söz dizimi öğeleri `@<`, `@=`, ve `@>` değiştirme dizeleri. Bunlar yalnızca kullanılır ipucu dosyası belirli değiştirme dizelerini *harita* makroları. Harita veri, İşlevler ve olayları ile ilgili diğer verileri, işlevleri veya olay işleyicileri makroları kümesidir. Örneğin, `MFC` eşlemeleri oluşturmak için kullandığı [ileti eşlemeleri](../mfc/reference/message-maps-mfc.md), ve `ATL` eşlemeleri oluşturmak için kullandığı [nesne eşlemeleri](../atl/reference/object-map-macros.md). İpucu dosyası belirli değiştirme dizelerini, başlangıç, Orta ve bitiş bir eşlemin öğelerini gösterir. Yalnızca bir eşleme makro adı büyük/küçük harf önemlidir. Bu nedenle, her bir değiştirme dizesi makro uygulamasını kasıtlı olarak gizler.
+Yalnızca olağan dışı bir söz dizimi öğeleri `@<`, `@=`, ve `@>` değiştirme dizeleri. Bu ipucu dosyası özel bir yenileme dizeler yalnızca kullanılan *harita* makroları. Harita veri, İşlevler ve olayları ile ilgili diğer verileri, işlevleri veya olay işleyicileri makroları kümesidir. Örneğin, `MFC` eşlemeleri oluşturmak için kullandığı [ileti eşlemeleri](../mfc/reference/message-maps-mfc.md), ve `ATL` eşlemeleri oluşturmak için kullandığı [nesne eşlemeleri](../atl/reference/object-map-macros.md). İpucu dosyası belirli değiştirme dizelerini, başlangıç, Orta ve bitiş bir eşlemin öğelerini işaretleyin. Yalnızca bir eşleme makro adı büyük/küçük harf önemlidir. Bu nedenle, her bir değiştirme dizesi makro uygulamasını kasıtlı olarak gizler.
 
-İpuçları, aşağıdaki sözdizimini kullanın.
+İpuçları, bu sözdizimini kullanın:
 
 |Sözdizimi|Açıklama|
 |------------|-------------|
@@ -104,143 +155,14 @@ Yalnızca olağan dışı bir söz dizimi öğeleri `@<`, `@=`, ve `@>` değişt
 |`@=`|İpucu dosyası belirli bir *değiştirme dizesi* Ara harita öğesi belirtir. Bir eşleme, birden çok harita öğelerine sahip olabilir.|
 |`@>`|İpucu dosyası belirli bir *değiştirme dizesi* harita öğeleri kümesi sonunu gösterir.|
 |`#undef` *İpucu-name*|Önişlemci yönergesi var olan bir ipucu siler. İpucu adını tarafından sağlanan *ipucu adı* tanımlayıcısı.|
-|`//` *Açıklama*|Tek satırlı yorum.|
+|`//` *Açıklama*|Bir tek satır açıklama.|
 |`/*` *Açıklama* `*/`|Çok satırlı yorum.|
-
-## <a name="what-macros-require-a-hint"></a>Ne makroları gerektiren bir ipucu?
-
-Belirli türlerdeki makroları ayrıştırma sistemiyle engelleyebilir. Bu bölümde, bir soruna neden makroları türlerini ve bu sorunu çözmek için oluşturabileceğiniz ipucu türünü açıklar.
-
-### <a name="disruptive-macros"></a>Kesintiye uğratan makroları
-
-Bazı makrolar ayrıştırma sistem kaynak kodu hatalı yorumlayan neden, ancak tarama deneyiminizi azaltmıyorsa yoksayılabilir. Örneğin, kaynak kod ek açıklama dili ([SAL](../c-runtime-library/sal-annotations.md)) makroları yardımcı olan C++ öznitelikleri Bul programlama hataları çözün. Kod gezindikçe SAL ek açıklamalarını gözardı istiyorsanız, ek açıklama gizleyen bir ipucu dosyası oluşturmak isteyebilirsiniz.
-
-Aşağıdaki kaynak kodunda tür parametresi için `FormatWindowClassName()` işlevi `PXSTR`, ve parametre adı `szBuffer`. Ancak, ayrıştırma sistem hataları `_Pre_notnull_` ve `_Post_z_` SAL ek açıklamalarını parametre türü veya parametre adı.
-
-**Kaynak kodu:**
-
-```cpp
-static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
-```
-
-**Stratejisi:** Null tanımı
-
-Bu durumda bunlar yok edildiğinde SAL ek açıklamalarını değerlendirilecek stratejisidir. Bunu yapmak için bir değiştirme dizesi null bir ipucu belirtin. Sonuç olarak, ayrıştırma, ek açıklamalar yoksayar ve **sınıf görünümü** tarayıcı bunları göstermez. (Visual C++ SAL ek açıklaması gizleyen bir yerleşik ipucu dosyası içerir.)
-
-**İpucu dosyası:**
-
-```cpp.hint
-#define _Pre_notnull_
-```
-
-### <a name="concealed-cc-language-elements"></a>C/C++ altına gizlenmiş dil öğeleri
-
-Makro C/C++ gizler, ayrıştırma sistem kaynak kodu misinterprets sık karşılaşılan bir nedeni olduğundan [noktalama işaretçisi](../cpp/punctuators-cpp.md) veya [anahtar sözcüğü](../cpp/keywords-cpp.md) belirteci. Diğer bir deyişle, bir makro noktalama işaretçileri, bir çift yarısını gibi içerebilir `<>`, `[]`, `{}`, ve `()`.
-
-Aşağıdaki kaynak kodundaki `START_NAMESPACE` makro gizler eşlenmemiş bir sol ayraç (`{`).
-
-**Kaynak kodu:**
-
-```cpp
-#define START_NAMESPACE namespace MyProject {
-```
-
-**Stratejisi:** Doğrudan kopyalama
-
-Makro semantiği için gözatma deneyimini kritik, makro için aynı olan bir ipucu oluşturun. Ayrıştırma sistem Makro tanımında ipucu dosyası çözümler.
-
-Kaynak dosyadaki makrosu diğer makroları içeriyorsa, etkili ipuçları kümesinde zaten yalnızca olmaları durumunda bu makroları yorumlanmasını unutmayın.
-
-**İpucu dosyası:**
-
-```cpp.hint
-#define START_NAMESPACE namespace MyProject {
-```
-
-### <a name="maps"></a>Haritalar
-
-Bir eşleme bir başlangıç öğesi, bitiş öğesi ve sıfır veya daha fazla ara öğeler belirlediğiniz makroları oluşur. Ayrıştırma sistem, çünkü her eşleme makro C/C++ Dil öğelerini gizler ve eksiksiz bir C/C++ deyiminin sözdizimi birçok ayrı makroları arasında dağıtılır haritalar misinterprets.
-
-Aşağıdaki kaynak kodunu tanımlayan `BEGIN_CATEGORY_MAP`, `IMPLEMENTED_CATEGORY`, ve `END_CATEGORY_MAP` makroları.
-
-**Kaynak kodu:**
-
-```cpp
-#define BEGIN_CATEGORY_MAP(x)\
-static const struct ATL::_ATL_CATMAP_ENTRY* GetCategoryMap() throw() {\
-static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
-#define IMPLEMENTED_CATEGORY( catid ) { _ATL_CATMAP_ENTRY_IMPLEMENTED, &catid },
-#define END_CATEGORY_MAP()\
-   { _ATL_CATMAP_ENTRY_END, NULL } };\
-   return( pMap ); }
-```
-
-**Stratejisi:** Harita öğelerine tanımlayın
-
-İpuçları başlangıç, Orta (varsa) ve bitiş için belirtin bir eşlemin öğelerini. Özel Harita değiştirme dizelerini kullanma `@<`, `@=`, ve `@>`. Daha fazla bilgi için `Syntax` bölümüne bakın.
-
-**İpucu dosyası:**
-
-```cpp.hint
-// Start of the map.
-#define BEGIN_CATEGORY_MAP(x) @<
-// Intermediate map element.
-#define IMPLEMENTED_CATEGORY( catid ) @=
-// Intermediate map element.
-#define REQUIRED_CATEGORY( catid ) @=
-// End of the map.
-#define END_CATEGORY_MAP() @>
-```
-
-### <a name="composite-macros"></a>Bileşik makroları
-
-Bileşik makrolar, bir veya daha fazla ayrıştırma sistem işlemlerini birbirine karıştırmaktadır makrosu türlerini içerir.
-
-Aşağıdaki kaynak kodunu içeren `START_NAMESPACE` ad alanı kapsamında başlangıcını belirtir, makro ve `BEGIN_CATEGORY_MAP` makrosu olarak bir harita başlangıcını belirtir.
-
-**Kaynak kodu:**
-
-```cpp
-#define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```
-
-**Stratejisi:** Doğrudan kopyalama
-
-İpuçları oluşturma `START_NAMESPACE` ve `BEGIN_CATEGORY_MAP` makroları ve ipucu oluşturup `NSandMAP` aynı kaynak kodu daha önce gösterildiği gibi makrosu. Alternatif olarak, bileşik bir makro yalnızca kesintiye uğratan makroları ve boşluk içeriyorsa, bir değiştirme dizesi null bir tanımıdır ipucu tanımlayabilirsiniz.
-
-Bu örnekte, varsayalım `START_NAMESPACE` ipucu bu konuda açıklandığı zaten `Concealed C/C++ Language Elements` alt başlığı. Ve varsayar `BEGIN_CATEGORY_MAP` daha önce açıklandığı gibi bir ipucu sahip `Maps`.
-
-**İpucu dosyası:**
-
-```cpp.hint
-#define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```
-
-### <a name="inconvenient-macros"></a>Kullanışsız makroları
-
-Bazı makrolar ayrıştırma sistem tarafından yorumlanabilir, ancak kaynak kodunu makrosu uzun veya çok karmaşık olduğu için okuma zordur. Okunabilirlik açısından, makro görüntülenmesini basitleştiren bir ipucu sağlar.
-
-**Kaynak kodu:**
-
-```cpp
-#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)
-```
-
-**Stratejisi:** Basitleştirme
-
-Daha basit bir makro tanımı görüntüleyen bir ipucu oluşturun.
-
-**İpucu dosyası:**
-
-```cpp.hint
-#define STDMETHOD(methodName) void* methodName
-```
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ipuçları ipucu dosyalarından nasıl toplanır gösterir. Bu örnekte, Dur dosyaları kullanılmaz.
+Bu örnek nasıl ipuçları ipucu dosyalarından biriktirilir gösterir. Bu örnekte durdurma dosyaları kullanılmaz.
 
-Aşağıdaki çizimde, bir Visual C++ projesinde fiziksel dizinlerle bazıları gösterilmektedir. İpucu dosyalar, `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
+Çizim, bazı fiziksel dizinlerin bir Visual C++ projesinde gösterir. İpucu dosyaları vardır `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
 
 ### <a name="hint-file-directories"></a>İpucu dosyası dizinleri
 
@@ -248,7 +170,7 @@ Aşağıdaki çizimde, bir Visual C++ projesinde fiziksel dizinlerle bazıları 
 
 ### <a name="directories-and-hint-file-contents"></a>Dizinler ve ipucu dosyası içeriği
 
-Aşağıdaki listede, bu projede ipucu dosyaları ve bu ipucu dosyaların içeriğini içeren dizinleri gösterir. Birçok ipuçları, yalnızca bazıları `vcpackages` dizin ipucu dosyası listelenir.
+Bu liste, bu projede ipucu dosyaları ve bu ipucu dosyaların içeriğini içeren dizinleri gösterir. Birçok ipuçları, yalnızca bazıları `vcpackages` dizin ipucu dosyası listelenmiştir:
 
 - vcpackages
 
@@ -290,7 +212,7 @@ Aşağıdaki listede, bu projede ipucu dosyaları ve bu ipucu dosyaların içeri
 
 ### <a name="effective-hints"></a>Etkili ipuçları
 
-Aşağıdaki tabloda, bu projede kaynak dosyaları için etkili ipuçları listeler.
+Bu tabloda, bu projede kaynak dosyaları için etkili ipuçları listelenmiştir:
 
 - Kaynak dosya: A1_A2_B.cpp
 
@@ -310,7 +232,7 @@ Aşağıdaki tabloda, bu projede kaynak dosyaları için etkili ipuçları liste
     #define END_NAMESPACE }
     ```
 
-Aşağıdaki notlar, yukarıdaki listeye geçerlidir.
+Bu Notlar Yukarıdaki listeye geçerlidir:
 
 - Etkili ipuçları arasındadır `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
 
@@ -325,7 +247,3 @@ Aşağıdaki notlar, yukarıdaki listeye geçerlidir.
 [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)<br>
 [#define Yönergesi (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Yönergesi (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
-[SAL Ek Açıklamaları](../c-runtime-library/sal-annotations.md)<br>
-[İleti eşlemeleri](../mfc/reference/message-maps-mfc.md)<br>
-[İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)<br>
-[Nesne İşleme Makroları](../atl/reference/object-map-macros.md)

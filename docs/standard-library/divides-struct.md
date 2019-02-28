@@ -2,17 +2,17 @@
 title: divides Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::divides
+- functional/std::divides
 helpviewer_keywords:
 - divides struct
 - divides class
 ms.assetid: b9cf8e9c-6981-43a6-a6a3-8f761987dd7a
-ms.openlocfilehash: 45555ea8e4ce53d97412c54cdc9fa8b4e87d86c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9632227619d0cad337a1cb026a20c9af0ec9d2a7
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568073"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006415"
 ---
 # <a name="divides-struct"></a>divides Yapısı
 

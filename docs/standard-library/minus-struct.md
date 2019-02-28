@@ -2,17 +2,17 @@
 title: minus Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::minus
+- functional/std::minus
 helpviewer_keywords:
 - minus struct
 - minus class
 ms.assetid: 7bce784e-2be6-413a-b516-004e9ecb2a39
-ms.openlocfilehash: 90bfe62e01b0e49b9998682d3f1d6d19393e7cc1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8683aca2656a4fd519be1dd7929448dfd221feac
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566197"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006410"
 ---
 # <a name="minus-struct"></a>minus Yapısı
 

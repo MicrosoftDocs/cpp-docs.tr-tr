@@ -1,21 +1,21 @@
 ---
 title: binary_function Yapısı
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- functional/std::binary
+- functional/std::binary_function
 helpviewer_keywords:
 - binary_function class
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-ms.openlocfilehash: 5a153d85f9f6dcb93a074725ee9582ccfc1a66ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a6735ab558480039a0d2fa0e83ee4c5de02c5f2
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466774"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006274"
 ---
 # <a name="binaryfunction-struct"></a>binary_function Yapısı
 
-Bir ikili bir işlev nesnesi sağlayan türetilen sınıfları tarafından devralındığından türlerini tanımlayan boş bir temel yapı.
+Bir ikili bir işlev nesnesi sağlayan türetilen sınıfları tarafından devralındığından türlerini tanımlayan boş bir temel yapı. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ## <a name="syntax"></a>Sözdizimi
 

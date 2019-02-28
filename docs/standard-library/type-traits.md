@@ -1,22 +1,22 @@
 ---
 title: '&lt;type_traits&gt;'
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
 - <type_traits>
 helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: f56334cbb25132d45dfabb68cbcd5b832096a87c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c80629fd8771206d193b53aa7c32073de0ba45dd
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514692"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006737"
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 
-Tür bağımsız değişkenlerinin özellikleri hakkında bilgi verin ya da üretmek derleme zamanı sabitleri türleri dönüştürülür sağlayan şablonları tanımlar.
+Tür bağımsız değişkenlerinin özellikleri hakkında bilgi verin ya da dönüştürülmüş türleri üretmek derleme zamanı sabitleri için şablonları tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,29 +26,33 @@ Tür bağımsız değişkenlerinin özellikleri hakkında bilgi verin ya da üre
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfları ve şablonlarında \<type_traits > tür çıkarımı, Sınıflandırma ve derleme zamanında, genel kodunuzu iyileştirmenize yardımcı olmak ve türü ile ilgili hataları algılamak için dönüştürme desteklemek için kullanılır. Bu sınıflar ve şablonları, bir türden bir özelliği açıklamaktadır birli türü nitelikler türleri ve bir türün bir özelliği değiştirmek dönüştürme nitelikler arasında bir ilişki tanımlamak ikili tür özellikleri içerir.
+Sınıfları ve şablonlarında \<type_traits > tür çıkarımı, Sınıflandırma ve derleme zamanında dönüşümünü desteklemek için kullanılır. Bunlar ayrıca genel kodunuzu iyileştirmenize yardımcı olmak ve türü ile ilgili hataları algılamak için kullanılır. Birli türü nitelikler türüne bir özelliği tanımlamak, ikili türü nitelikler türü arasında bir ilişki tanımlamak ve dönüştürme nitelikler türüne bir özelliği değiştirin.
 
-Tür özellikleri, bir yardımcı sınıfı desteklemek için `integral_constant`, tanımlanır. Şablon uzmanlıkları sahip `true_type` ve `false_type` tür koşulları için temel sınıflar oluşturur. A *tür koşulu* bir veya daha fazla tür bağımsız değişkenlerini alan bir şablondur. Bir tür koşulu, *korumadıkça*, genel olarak, doğrudan veya dolaylı olarak türetilmiş gelen [true_type](../standard-library/type-traits-typedefs.md#true_type). Bir tür koşulu, *yanlışlığını korumadıkça*, genel olarak, doğrudan veya dolaylı olarak türetilmiş gelen [false_type](../standard-library/type-traits-typedefs.md#false_type).
+Yardımcısı sınıfı `integral_constant` ve kendi şablon uzmanlıkları `true_type` ve `false_type` tür koşulları için temel sınıflar oluşturur. A *tür koşulu* bir veya daha fazla tür bağımsız değişkenlerini alan bir şablondur. Bir tür koşulu, *korumadıkça*, genel olarak, doğrudan veya dolaylı olarak türetilmiş gelen [true_type](../standard-library/type-traits-typedefs.md#true_type). Bir tür koşulu, *yanlışlığını korumadıkça*, genel olarak, doğrudan veya dolaylı olarak türetilmiş gelen [false_type](../standard-library/type-traits-typedefs.md#false_type).
 
 A *tür değiştiricisi* veya *nitelik dönüştürme* şablondan bir veya daha fazla şablon bağımsız değişkeni alır ve bir üye `type`, değiştirilen türü için bir eşanlamlı olduğu.
 
 ### <a name="alias-templates"></a>Diğer ad şablonları
 
-Türü nitelikler ifadeleri basitleştirmek için [diğer ad şablonları](../cpp/aliases-and-typedefs-cpp.md) için `typename some_trait<T>::type` , burada sağlanan " `some_trait`" Şablon sınıfı adı. Örneğin, [add_const](../standard-library/add-const-class.md) kendi türü için bir diğer ad şablonda `add_const_t`, olarak tanımlanır:
+Türü nitelikler ifadeleri basitleştirmek için [diğer ad şablonları](../cpp/aliases-and-typedefs-cpp.md) için `typename some_trait<T>::type` , burada sağlanan *some_trait* Şablon sınıfı adı. Örneğin, [add_const](../standard-library/add-const-class.md) kendi türü için bir diğer ad şablonda `add_const_t`, olarak tanımlanır:
 
 ```cpp
 template <class T>
 using add_const_t = typename add_const<T>::type;
 ```
 
-|||||
-|-|-|-|-|
-|add_const_t|aligned_storage_t|make_signed_t|remove_pointer_t|
-|add_cv_t|aligned_union_t|make_unsigned_t|remove_reference_t|
-|add_lvalue_reference_t|common_type_t|remove_all_extents_t|remove_volatile_t|
-|add_pointer_t|conditional_t|remove_const_t|result_of_t|
-|add_rvalue_reference_t|decay_t|remove_cv_t|underlying_type_t|
-|add_volatile_t|enable_if_t|remove_extent_t||
+Sağlanan diğer adlar için bunlar `type` üyeleri:
+
+||||
+|-|-|-|
+| add_const_t | add_cv_t | add_lvalue_reference_t |
+| add_pointer_t | add_rvalue_reference_t | add_volatile_t |
+| aligned_storage_t | aligned_union_t | common_type_t |
+| conditional_t | decay_t | enable_if_t |
+| invoke_result_t | make_signed_t | make_unsigned_t |
+| remove_all_extents_t | remove_const_t | remove_cv_t |
+| remove_extent_t | remove_pointer_t | remove_reference_t |
+| remove_volatile_t | result_of_t | underlying_type_t |
 
 ### <a name="classes"></a>Sınıflar
 
@@ -133,13 +137,17 @@ Tür özellikleri
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|Türü taşıma atanabilir ve atama değil throw bilinen olup olmadığını sınar.|
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|Yıkıcı bir türdür ve yok edici değil throw bilinen olup olmadığını sınar.|
 |`has_virtual_destructor`|Sanal bir yıkıcı türüne sahip olup olmadığını sınar.|
+| [is_invocable](is-invocable-classes.md) | Belirtilen bağımsız değişken türleri kullanılarak çağrılabilir türü çağrılabilir olup olmadığını sınar.<br/> C ++ 17'de eklendi. |
+| [is_invocable_r](is-invocable-classes.md) | Testler belirtilen bağımsız değişken türleri ve sonucu kullanılarak çağrılabilir türü olup olmadığını çağrılabilen belirtilen türe dönüştürülebilir.<br/> C ++ 17'de eklendi. |
+| [is_nothrow_invocable](is-invocable-classes.md) | Türleri ve özel durum oluşturması beklenmiyor bilinen çağrılabilir türü belirtilen bağımsız değişken kullanılarak çağrılan olup olmadığını sınar.<br/> C ++ 17'de eklendi. |
+| [is_nothrow_invocable_r](is-invocable-classes.md) | Testleri çağrılabilir türü belirtilen bağımsız değişken türleri kullanılarak çağrılabilen ve özel durumlar ve sonucu oluşturması beklenmiyor bilinen belirtilen türe dönüştürülebilir.<br/> C ++ 17'de eklendi. |
 
 Tür özelliği sorguları
 
 |||
 |-|-|
 |[alignment_of](../standard-library/alignment-of-class.md)|Bir tür hizalamasını alır.|
-|[boyut sayısı](../standard-library/rank-class.md)|Dizi boyut sayısını alır.|
+|[rank](../standard-library/rank-class.md)|Dizi boyut sayısını alır.|
 |[Kapsam](../standard-library/extent-class.md)|Belirtilen dizinin boyutun öğe sayısını alır.|
 
 Tür ilişkileri
@@ -200,7 +208,8 @@ Diğer dönüşümleri
 |[Koşullu](../standard-library/conditional-class.md)|Koşul true ise ilk belirtilen tür, aksi takdirde ikinci belirtilen türü üretir.|
 |[decay](../standard-library/decay-class.md)|Türü, değer olarak geçilemez olarak oluşturur. Başvuru olmayan, sabit olmayan veya geçici olmayan tür veya tür işaretçisi yapar.|
 |[enable_if](../standard-library/enable-if-class.md)|Koşul true ise, belirtilen tür, aksi takdirde hiçbir tür üretir.|
-|[result_of](../standard-library/result-of-class.md)|Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler.|
+|[invoke_result](invoke-result-class.md)|Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler. <br/>C ++ 17'de eklendi. |
+|[result_of](../standard-library/result-of-class.md)|Belirtilen bağımsız değişken türleri alan çağrılabilir türü dönüş türünü belirler. <br/>C ++ 17'de kullanımdan C ++ 14, eklendi. |
 |[underlying_type](../standard-library/underlying-type-class.md)|Bir numaralandırma türünün temel alınan integral türü üretir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -1,21 +1,21 @@
 ---
 title: binder1st Sınıfı
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::binder1st
+- functional/std::binder1st
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: a8e962e118d162e46e2edfca3ce11e7cbf322e10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f70a1a4a0903b66edf5f42e59788b9a2d97fc967
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439643"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006636"
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 
-Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı. Şunun için C ++ 11'de kullanım dışı [bağlama](functional-functions.md#bind)ve C ++ 17 sürümünde kaldırılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,7 +29,7 @@ public:
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder1st(
-        const Operation& Func,
+        const Operation& binary_fn,
         const typename Operation::first_argument_type& left);
 
     result_type operator()(const argument_type& right) const;
@@ -43,7 +43,7 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC*<br/>
+*binary_fn*<br/>
 Birli işlevi nesnesine dönüştürülecek ikili fonksiyon nesnesi.
 
 *Sol*<br/>
@@ -58,9 +58,9 @@ Uyarlanmış ikili nesne sabit değeri ikinci bağımsız değişkeni olarak kar
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir ikili fonksiyon nesnesinin bir kopyasını depolar *Func* içinde `op`ve bir kopyasını *sol* içinde `value`. Onun üye işlevini tanımlar `operator()` döndüren olarak **op**( **değer**, `right`).
+Şablon sınıfı bir ikili fonksiyon nesnesinin bir kopyasını depolar *binary_fn* içinde `op`ve bir kopyasını *sol* içinde `value`. Onun üye işlevini tanımlar `operator()` döndüren olarak `op( value, right )`.
 
-Varsa *Func* türünde bir nesnedir `Operation` ve `c` bir sabit ise [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) değerine eşdeğer olan `binder1st` sınıf oluşturucusu `binder1st` \< **İşlemi**> ( `Func`, `c` ) ve daha kolay.
+Varsa *binary_fn* türünde bir nesnedir `Operation` ve `c` bir sabit ise `bind1st( binary_fn, c )` daha kullanışlı bir eşdeğeridir `binder1st<Operation>( binary_fn, c )`. Daha fazla bilgi için [bind1st](../standard-library/functional-functions.md#bind1st).
 
 ## <a name="example"></a>Örnek
 

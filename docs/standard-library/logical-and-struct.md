@@ -2,17 +2,17 @@
 title: logical_and Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::logical_and
+- functional/std::logical_and
 helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-ms.openlocfilehash: 27cb49b851bce1d63b7e3a11e7a3bbb9db06fefa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0a8d8c0fba8b1ad621e80fb96336eefe2aec5dd8
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495621"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006649"
 ---
 # <a name="logicaland-struct"></a>logical_and Yapısı
 

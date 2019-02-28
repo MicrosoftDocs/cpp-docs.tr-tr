@@ -1,21 +1,21 @@
 ---
 title: unary_negate Sınıfı
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::unary_negate
+- functional/std::unary_negate
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: b43db182d9274281020d7ce92cfa1b3efe724197
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 96d70a24b87a84275f17813e76473a82fbff90da
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326023"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006714"
 ---
 # <a name="unarynegate-class"></a>unary_negate Sınıfı
 
-Belirtilen birli işlevi dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı.
+Belirtilen birli işlevi dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı. Şunun için C ++ 17'de kullanımdan [not_fn](functional-functions.md#not_fn).
 
 ## <a name="syntax"></a>Sözdizimi
 

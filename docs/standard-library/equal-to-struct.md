@@ -2,17 +2,17 @@
 title: equal_to Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::equal_to
+- functional/std::equal_to
 helpviewer_keywords:
 - equal_to function
 - equal_to struct
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
-ms.openlocfilehash: ffea2a9329e08796c49aa06888b8cc9a6dac8642
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d441d171db518352289a76ca50e807e4042ad23f
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607434"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006597"
 ---
 # <a name="equalto-struct"></a>equal_to Yapısı
 

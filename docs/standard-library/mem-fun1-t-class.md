@@ -1,21 +1,21 @@
 ---
 title: mem_fun1_t Sınıfı
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::mem_fun1_t
+- functional/std::mem_fun1_t
 helpviewer_keywords:
 - mem_fun1_t class
 ms.assetid: 01a8c2c2-b2f7-4e3f-869c-5b5b9f06ea54
-ms.openlocfilehash: 9a1fe26e66eb2ad20e6889b95640fadd2b3c45a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42a6ee7c169d078e216b82365ab26d10838798c6
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613217"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006441"
 ---
 # <a name="memfun1t-class"></a>mem_fun1_t Sınıfı
 
-İzin veren bir bağdaştırıcı sınıfı bir `non_const` bir işaretçi bağımsız değişkeni ile hazırlarken bir ikili fonksiyon nesnesi olarak çağrılan tek bir bağımsız değişken alan üye işlevi.
+İzin veren bir bağdaştırıcı sınıfı bir `non_const` bir işaretçi bağımsız değişkeni ile hazırlarken bir ikili fonksiyon nesnesi olarak çağrılan tek bir bağımsız değişken alan üye işlevi. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ## <a name="syntax"></a>Sözdizimi
 

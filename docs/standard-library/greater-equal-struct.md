@@ -2,17 +2,17 @@
 title: greater_equal Yapısı
 ms.date: 11/04/2016
 f1_keywords:
-- xfunctional/std::greater_equal
+- functional/std::greater_equal
 helpviewer_keywords:
 - greater_equal struct
 - greater_equal function
 ms.assetid: a8ba911b-7af8-4653-b972-d8618f4df7d5
-ms.openlocfilehash: 89591fbcb2b520a83b6e49bd8e7450784258cf3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91d8265fa699bbaafe946c44a55dd63c13f44b42
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594200"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006506"
 ---
 # <a name="greaterequal-struct"></a>greater_equal Yapısı
 

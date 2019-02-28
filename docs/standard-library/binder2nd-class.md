@@ -1,21 +1,21 @@
 ---
 title: binder2nd Sınıfı
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::binder2nd
+- functional/std::binder2nd
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: bb7b867be4ef7ff0f5bcd9ad54538bf449ccd071
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c1ed74da939c5f5cc83a2a109d32b43b5ac7f41
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464668"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006493"
 ---
 # <a name="binder2nd-class"></a>binder2nd Sınıfı
 
-Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ## <a name="syntax"></a>Sözdizimi
 
