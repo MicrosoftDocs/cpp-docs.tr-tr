@@ -1,21 +1,22 @@
 ---
 title: '&lt;işlevsel&gt; işlevleri'
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
 - functional/std::bind
-- xfunctional/std::bind1st
-- xfunctional/std::bind2nd
-- xfunctional/std::bit_and
-- xfunctional/std::bit_not
-- xfunctional/std::bit_or
-- xfunctional/std::bit_xor
+- functional/std::bind1st
+- functional/std::bind2nd
+- functional/std::bit_and
+- functional/std::bit_not
+- functional/std::bit_or
+- functional/std::bit_xor
 - functional/std::cref
 - type_traits/std::cref
-- xfunctional/std::mem_fn
-- xfunctional/std::mem_fun_ref
-- xfunctional/std::not1
-- xfunctional/std::not2
-- xfunctional/std::ptr_fun
+- functional/std::mem_fn
+- functional/std::mem_fun_ref
+- functional/std::not1
+- functional/std::not2
+- functional/std::not_fn
+- functional/std::ptr_fun
 - functional/std::ref
 - functional/std::swap
 helpviewer_keywords:
@@ -28,25 +29,36 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-ms.openlocfilehash: cd89386ff421c199705856b9cf5f6b58ff25f7f5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 559110361b9d3d8c66ff261860f8885ff56d44d5
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519704"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006740"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;işlevsel&gt; işlevleri
 
 ||||
 |-|-|-|
-|[bağlama](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|
-|[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|
-|[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|
-|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[Not1](#not1)|
-|[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|
-|[değiştirme](#swap)|
+| [bağlama](#bind) | [bit_and](#bit_and) | [bit_not](#bit_not) |
+| [bit_or](#bit_or) | [bit_xor](#bit_xor) | [cref](#cref) |
+| [çağırma](#invoke) | [mem_fn](#mem_fn) | [not_fn](#not_fn) |
+| [ref](#ref) | [değiştirme](#swap) | |
 
-## <a name="bind"></a>  bağlama
+Bu işlevler C ++ 11'de kullanım dışı ve C ++ 17 sürümünde kaldırılmıştır:
+
+||||
+|-|-|-|
+| [bind1st](#bind1st) | [bind2nd](#bind2nd) | [mem_fun](#mem_fun) |
+| [mem_fun_ref](#mem_fun_ref) | [ptr_fun](#ptr_fun) | |
+
+Bu işlevler, C ++ 17'de kullanım dışı bırakılmıştır:
+
+|||
+|-|-|
+| [Not1](#not1) | [not2](#not2) |
+
+## <a name="bind"></a> bağlama
 
 Bağımsız değişkenler çağrılabilir nesnesine bağlar.
 
@@ -76,7 +88,7 @@ Nth çağrı bağımsız değişkeni.
 
 Türleri `Fty, T1, T2, ..., TN` kopyalama atmamalıdır, ve `INVOKE(fn, t1, ..., tN)` bazı değerler için geçerli bir ifade olmalıdır `w1, w2, ..., wN`.
 
-Bir iletme çağrı ilk şablon işlevinin döndürdüğü sarmalayıcı `g` zayıf sonuç türü. Etkisini `g(u1, u2, ..., uM)` olduğu `INVOKE(f, v1, v2, ..., vN, ` [result_of](../standard-library/result-of-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`burada `cv` , cv niteleyicileri olan `g` ve değerleri ve de ilişkili bağımsız değişken türlerinin `v1, v2, ..., vN` olarak belirlenir Aşağıda belirtilen. Bir özel olarak uyarlanmış bir bağımsız değişken listesi ile çağrılabilir bir nesne haline getirmek için çağrılabilen bir nesne bağımsız değişkenleri bağlamak için kullanın.
+Bir iletme çağrı ilk şablon işlevinin döndürdüğü sarmalayıcı `g` zayıf sonuç türü. Etkisini `g(u1, u2, ..., uM)` olduğu `INVOKE(f, v1, v2, ..., vN, ` [invoke_result](../standard-library/invoke-result-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`burada `cv` , cv niteleyicileri olan `g` ve değerleri ve de ilişkili bağımsız değişken türlerinin `v1, v2, ..., vN` belirlenir Aşağıda belirtildiği gibi. Bir özel olarak uyarlanmış bir bağımsız değişken listesi ile çağrılabilir bir nesne haline getirmek için çağrılabilen bir nesne bağımsız değişkenleri bağlamak için kullanın.
 
 Bir iletme çağrı ikinci şablon işlevinin döndürdüğü sarmalayıcı `g` iç içe geçmiş bir tür ile `result_type` diğer bir deyişle ilişkin bir eşanlam `Ret`. Etkisini `g(u1, u2, ..., uM)` olduğu `INVOKE(f, v1, v2, ..., vN, Ret)`burada `cv` , cv niteleyicileri olan `g` ve değerleri ve de ilişkili bağımsız değişken türlerinin `v1, v2, ..., vN` aşağıda belirtildiği gibi belirlendikten. Belirtilen dönüş türüne sahip bir özel olarak uyarlanmış bir bağımsız değişken listesi ile çağrılabilir bir nesne haline getirmek için çağrılabilen bir nesne bağımsız değişkenleri bağlamak için kullanın.
 
@@ -147,9 +159,9 @@ int main()
 3^2 == 9
 ```
 
-## <a name="bind1st"></a>  bind1st
+## <a name="bind1st"></a> bind1st
 
-Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ```cpp
 template <class Operation, class Type>
@@ -241,9 +253,9 @@ The number of elements in v1 greater than 5 is: 4.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bind2nd"></a>  bind2nd
+## <a name="bind2nd"></a> bind2nd
 
-Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev.
+Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürmek için bir bağdaştırıcı oluşturan yardımcı şablonu işlev. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ```cpp
 template <class Operation, class Type>
@@ -335,7 +347,7 @@ The number of elements in v1 greater than 15 is: 2.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bit_and"></a>  bit_and
+## <a name="bit_and"></a> bit_and
 
 Bit düzeyinde AND işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator&`) üzerinde bağımsız değişkenleri.
 
@@ -375,9 +387,9 @@ Sonucu `Left & Right`. Özelleşmiş şablon tarafından döndürülen türünde
 
 `bit_and` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya bu uygulama ikili türleri için kullanıcı tanımlı `operator&`.
 
-## <a name="bit_not"></a>  bit_not
+## <a name="bit_not"></a> bit_not
 
-Bit düzeyinde tamamlayıcı (değil) işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (birli `operator~`) bağımsız değişken üzerinde.
+Bit düzeyinde tamamlayıcı (değil) işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (birli `operator~`) bağımsız değişken üzerinde. C ++ 14'te eklendi.
 
 ```cpp
 template <class Type = void>
@@ -391,13 +403,13 @@ template <>
 struct bit_not<void>
 {
     template <class Type>
-    auto operator()(Type&& Right) const  ->  decltype(~std::forward<Type>(Right));
+    auto operator()(Type&& Right) const -> decltype(~std::forward<Type>(Right));
 };
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*Tür*<br/>
 Bir birli destekleyen bir türü `operator~`.
 
 *sağ*<br/>
@@ -411,7 +423,7 @@ Sonucu `~ Right`. Özelleşmiş şablon tarafından döndürülen türünde sonu
 
 `bit_not` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya bu uygulama ikili türleri için kullanıcı tanımlı `operator~`.
 
-## <a name="bit_or"></a>  bit_or
+## <a name="bit_or"></a> bit_or
 
 Bit düzeyinde OR işlem gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (`operator|`) üzerinde bağımsız değişkenleri.
 
@@ -429,7 +441,7 @@ struct bit_or<void>
 {
     template <class T, class U>
     auto operator()(T&& Left, U&& Right) const
-        ->  decltype(std::forward<T>(Left) | std::forward<U>(Right));
+        -> decltype(std::forward<T>(Left) | std::forward<U>(Right));
 };
 ```
 
@@ -451,7 +463,7 @@ Sonucu `Left | Right`. Özelleşmiş şablon tarafından döndürülen türünde
 
 `bit_or` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya uygulayan türler için kullanıcı tanımlı `operator|`.
 
-## <a name="bit_xor"></a>  bit_xor
+## <a name="bit_xor"></a> bit_xor
 
 Bit düzeyinde XOR işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator^`) üzerinde bağımsız değişkenleri.
 
@@ -491,7 +503,7 @@ Sonucu `Left ^ Right`. Özelleşmiş şablon tarafından döndürülen türünde
 
 `bit_xor` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya bu uygulama ikili türleri için kullanıcı tanımlı `operator^`.
 
-## <a name="cref"></a>  cref
+## <a name="cref"></a> cref
 
 Bir const yapıları `reference_wrapper` bir bağımsız.
 
@@ -547,7 +559,114 @@ cref(i) = 1
 cref(neg)(i) = -1
 ```
 
-## <a name="mem_fn"></a>  mem_fn
+## <a name="invoke"></a> çağırma
+
+Belirtilen bağımsız değişkenlerle çağrılabilir herhangi bir nesne çağırır. C ++ 17'de eklendi.
+
+```cpp
+template <class Callable, class... Args>
+invoke_result_t<Callable, Args...>
+    invoke(Callable&& fn, Args&&... args) noexcept(/* specification */);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Çağrılabilir*<br/>
+Aranacak nesne türü.
+
+*Args*<br/>
+Çağrı bağımsız değişkenlerinin türleri.
+
+*fn*<br/>
+Aranacak nesne.
+
+*bağımsız değişken*<br/>
+Çağrı bağımsız değişkenleri.
+
+*Belirtimi*<br/>
+**Noexcept** belirtimi `std::is_nothrow_invocable_v<Callable, Args>)`.
+
+### <a name="remarks"></a>Açıklamalar
+
+Çağrılabilir nesne çağırır *fn* parametreleri kullanarak *args*. Etkili bir şekilde `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)`burada sözde işlevi `INVOKE(f, t1, t2, ..., tN)` aşağıdaki şeylerden biri anlamına gelir:
+
+- `(t1.*f)(t2, ..., tN)` zaman `f` sınıfının üye işlevinde işaretçisidir `T` ve `t1` türünde bir nesnedir `T` veya türünde bir nesne başvurusu `T` veya türetilmiş bir türde bir nesne başvuru `T`. Diğer bir deyişle, `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` geçerlidir.
+
+- `(t1.get().*f)(t2, ..., tN)` zaman `f` sınıfının üye işlevinde işaretçisidir `T` ve `std::decay_t<decltype(t1)>` özelleştirmesi olan `std::reference_wrapper`.
+
+- `((*t1).*f)(t2, ..., tN)` zaman `f` sınıfının üye işlevinde işaretçisidir `T` ve `t1` önceki türlerinden biri değil.
+
+- `t1.*f` zaman N 1 == ve `f` bir sınıfın üye verileri işaretçisidir `T` ve `t1` türünde bir nesnedir `T` veya türünde bir nesne başvurusu `T` veya türetilmiş bir türde bir nesne başvuru `T`.  Diğer bir deyişle, `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` geçerlidir.
+
+- `t1.get().*f` zaman N 1 == ve `f` bir sınıfın üye verileri işaretçisidir `T` ve `std::decay_t<decltype(t1)>` özelleştirmesi olan `std::reference_wrapper`.
+
+- `(*t1).*f` zaman N 1 == ve `f` bir sınıfın üye verileri işaretçisidir `T` ve `t1` önceki türlerinden biri değil.
+
+- `f(t1, t2, ..., tN)` Diğer durumlarda.
+
+Çağrılabilir nesnesinin sonucu türü hakkında daha fazla bilgi için bkz: [invoke_result](invoke-result-class.md). Çağrılabilir türleri hakkında daha fazla doğrulamaları için bkz: [is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r sınıfları](is-invocable-classes.md).
+
+### <a name="example"></a>Örnek
+
+```cpp
+// functional_invoke.cpp
+// compile using: cl /EHsc /std:c++17 functional_invoke.cpp
+#include <functional>
+#include <iostream>
+
+struct Demo
+{
+    int n_;
+
+    Demo(int const n) : n_{n} {}
+
+    void operator()(int const i, int const j) const
+    {
+        std::cout << "Demo operator( " << i << ", "
+            << j << " ) is " << i * j << std::endl;
+    }
+
+    void difference(int const i) const 
+    {
+        std::cout << "Demo.difference( " << i << " ) is "
+            << n_ - i << std::endl;
+    }
+};
+
+void divisible_by_3(int const i)
+{
+    std::cout << i;
+    (i % 3) ? std::cout << " isn't divisible by 3."
+        : std::cout << " is divisible by 3.";
+    std::cout << std::endl;
+}
+
+int main()
+{
+    // Invoke a function object (call operator).
+    Demo d{ 42 };
+    std::invoke( d, 3, -7 );
+
+    // Invoke a member function.
+    std::invoke(&Demo::difference, d, 29);
+
+    // Invoke a data member.
+    std::cout << "n_: " << std::invoke(&Demo::n_, d) << '\n';
+
+    // Invoke a stand-alone (free) function.
+    std::invoke( divisible_by_3, 42 );
+
+    // Invoke a lambda.
+    std::invoke( [](int const i){
+        std::cout << i; 
+        (i % 7) ? std::cout << " isn't divisible by 7."
+            : std::cout << " is divisible by 7.";
+        std::cout << std::endl;
+    }, 42 );
+}
+```
+
+## <a name="mem_fn"></a> mem_fn
 
 Basit Arama bir sarmalayıcı oluşturur.
 
@@ -610,9 +729,9 @@ int main()
 3*2 == 6
 ```
 
-## <a name="mem_fun"></a>  mem_fun
+## <a name="mem_fun"></a> mem_fun
 
-İşaretçi bağımsız değişkenler ile hazırlarken üye işlevler için işlev nesnesi bağdaştırıcıları oluşturmak için kullanılan yardımcı şablon işlevleri.
+İşaretçi bağımsız değişkenler ile hazırlarken üye işlevler için işlev nesnesi bağdaştırıcıları oluşturmak için kullanılan yardımcı şablon işlevleri. Şunun için C ++ 11'de kullanım dışı [mem_fn](#mem_fn) ve [bağlama](#bind)ve C ++ 17 sürümünde kaldırılmıştır.
 
 ```cpp
 template <class Result, class Type>
@@ -697,9 +816,9 @@ int main( )
 }
 ```
 
-## <a name="mem_fun_ref"></a>  mem_fun_ref
+## <a name="mem_fun_ref"></a> mem_fun_ref
 
-İşlev nesnesi bağdaştırıcılarını başvuru bağımsız değişkenleri kullanılarak başlatılan, üye işlevleri oluşturmak için kullanılan yardımcı şablon işlevleri.
+İşlev nesnesi bağdaştırıcılarını başvuru bağımsız değişkenleri kullanılarak başlatılan, üye işlevleri oluşturmak için kullanılan yardımcı şablon işlevleri. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ```cpp
 template <class Result, class Type>
@@ -802,9 +921,9 @@ The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13
 With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
 ```
 
-## <a name="not1"></a>  Not1
+## <a name="not1"></a> Not1
 
-Birli koşulu tümleme döndürür.
+Birli koşulu tümleme döndürür. Sunulmasıyla kullanım dışı [not_fn](#not_fn) içinde C ++ 17.
 
 ```cpp
 template <class UnaryPredicate>
@@ -874,9 +993,9 @@ The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.
 ```
 
-## <a name="not2"></a>  not2
+## <a name="not2"></a> not2
 
-Bir ikili koşula tümleme döndürür.
+Bir ikili koşula tümleme döndürür. Sunulmasıyla kullanım dışı [not_fn](#not_fn) içinde C ++ 17.
 
 ```cpp
 template <class BinaryPredicate>
@@ -950,9 +1069,109 @@ Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
 Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 ```
 
-## <a name="ptr_fun"></a>  ptr_fun
+## <a name="not_fn"></a> not_fn
 
-Tekli veya ikili fonksiyon işaretçileri, tekli veya ikili uyarlanabilir işlevleri sırasıyla dönüştürmek için kullanılan yardımcı şablon işlevleri.
+`not_fn` İşlev şablonu çağrılabilir nesnesini alır ve aranabilir bir nesne döndürür. Döndürülen çağrılabilir nesnesi daha sonra bazı bağımsız değişkenlerle çağrılır, bunları çağrılabilir özgün nesneye geçirir ve mantıksal olarak sonucu olumsuz duruma getirir. Bu, sarmalanmış çağrılabilir nesnesinin const nitelik ve değer kategori davranışı korur. `not_fn` C ++ 17'de yenidir ve kullanım dışı değiştirir `std::not1`, `std::not2`, `std::unary_negate` ve `std::binary_negate`.
+
+```cpp
+template <class Callable>
+/* unspecified */ not_fn(Callable&& func);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*FUNC*<br/>
+İletme çağrı oluşturmak için kullanılan çağrılabilir bir nesne sarmalayıcı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Şablon işlevi çağrısı sarmalayıcı eşdeğer döndürür `return call_wrapper(std::forward<Callable>(func))` bu yalnızca exposition sınıfına göre:
+
+```cpp
+class call_wrapper
+{
+   using FD = decay_t<Callable>;
+   explicit call_wrapper(Callable&& func);
+
+public:
+   call_wrapper(call_wrapper&&) = default;
+   call_wrapper(call_wrapper const&) = default;
+
+   template<class... Args>
+     auto operator()(Args&&...) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
+
+private:
+  FD fd;
+};
+```
+
+Çağrılabilir nesne üzerinde açık Oluşturucu *func* ihtiyaç duyacağı `std::decay_t<Callable>` gereksinimlerini karşılamak için `MoveConstructible`, ve `is_constructible_v<FD, Callable>` doğru olması gerekir. Sarmalanan çağrılabilir nesneyi başlatır `fd` gelen `std::forward<Callable>(func)`ve, oluşumunu tarafından oluşturulan tüm özel durumları oluşturabilir `fd`.
+
+Sarmalayıcı sunan lvalue veya rvalue başvuru kategorisi ve burada gösterildiği gibi const nitelenmiş ayırt çağrısı işleçleri
+
+```cpp
+template<class... Args> auto operator()(Args&&... args) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
+```
+
+İlk iki eşdeğer `return !INVOKE(fd, std::forward<Args>(args)...)`, ve ikinci iki eşdeğer `return !INVOKE(std::move(fd), std::forward<Args>(args)...)`.
+
+### <a name="example"></a>Örnek
+
+```cpp
+// functional_not_fn_.cpp
+// compile with: /EHsc /std:c++17
+#include <vector>
+#include <algorithm>
+#include <functional>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v1 = { 99, 6264, 41, 18467, 6334, 26500, 19169 };
+    auto divisible_by_3 = [](int i){ return i % 3 == 0; };
+
+    std::cout << "Vector v1 = ( " ;
+    for (const auto& item : v1)
+    {
+        std::cout << item << " ";
+    }
+    std::cout << ")" << std::endl;
+
+    // Count the number of vector elements divisible by 3.
+    int divisible =
+        std::count_if(v1.begin(), v1.end(), divisible_by_3);
+    std::cout << "Elements divisible by three: "
+        << divisible << std::endl;
+
+    // Count the number of vector elements not divisible by 3.
+    int not_divisible =
+        std::count_if(v1.begin(), v1.end(), std::not_fn(divisible_by_3));
+    std::cout << "Elements not divisible by three: "
+        << not_divisible << std::endl;
+}
+```
+
+```Output
+Vector v1 = ( 99 6264 41 18467 6334 26500 19169 )
+Elements divisible by three: 2
+Elements not divisible by three: 5
+```
+
+## <a name="ptr_fun"></a> ptr_fun
+
+Tekli veya ikili fonksiyon işaretçileri, tekli veya ikili uyarlanabilir işlevleri sırasıyla dönüştürmek için kullanılan yardımcı şablon işlevleri. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
 
 ```cpp
 template <class Arg, class Result>
@@ -981,7 +1200,7 @@ Bir işlev işaretçisi işlev nesnesi ve bir işlev bir parametre olarak beklen
 
 [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]
 
-## <a name="ref"></a>  başvuru
+## <a name="ref"></a> başvuru
 
 Oluşturur bir `reference_wrapper` bir bağımsız.
 
@@ -1073,7 +1292,7 @@ tiger lion cougar
 tiger cougar
 ```
 
-## <a name="swap"></a>  değiştirme
+## <a name="swap"></a> değiştirme
 
 İki değiştirir `function` nesneleri.
 
@@ -1087,7 +1306,7 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 *Fty*<br/>
 İşlev nesneleri tarafından kontrol edilen tür.
 
-*F1*<br/>
+*f1*<br/>
 İlk işlev nesnesi.
 
 *F2*<br/>
