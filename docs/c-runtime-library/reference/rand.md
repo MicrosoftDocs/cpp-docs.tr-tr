@@ -15,6 +15,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - rand
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 67e128fc4adea345807a2d59078a00e3c4bd1f07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 868c6239ac1b86dfc9ac72cc8cc83d1ba3002b4a
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440735"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210425"
 ---
 # <a name="rand"></a>rand
 

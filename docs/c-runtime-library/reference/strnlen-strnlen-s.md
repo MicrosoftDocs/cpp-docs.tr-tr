@@ -23,6 +23,7 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - wcsnlen
@@ -57,12 +58,12 @@ helpviewer_keywords:
 - string length
 - strnlen_l function
 ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
-ms.openlocfilehash: f7f5050a0ab4ff0f35a28faf039688eedc2f3a8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 960d57ed8c2b1d1dbc6843932b8c76fef35c34a0
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602572"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210672"
 ---
 # <a name="strnlen-strnlens-wcsnlen-wcsnlens-mbsnlen-mbsnlenl-mbstrnlen-mbstrnlenl"></a>strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 

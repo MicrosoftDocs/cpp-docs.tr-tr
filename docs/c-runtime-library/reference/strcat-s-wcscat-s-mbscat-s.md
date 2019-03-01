@@ -19,6 +19,7 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - strcat_s
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _mbscat_s_l function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-ms.openlocfilehash: 92829421cc0adac0ff9bbd2354fe4438a7b22871
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: bd7894ba77e7fa67fa3844587394bd3e2e821391
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702927"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210399"
 ---
 # <a name="strcats-wcscats-mbscats-mbscatsl"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 

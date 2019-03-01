@@ -17,6 +17,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - swprintf_s
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _sprintf_s_l function
 - formatted text [C++]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f
-ms.openlocfilehash: 51469ccec348545ff780d14d5f433099def3eb69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d4bec339caccf9b0843afada4b56b435243dd11
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511949"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210893"
 ---
 # <a name="sprintfs-sprintfsl-swprintfs-swprintfsl"></a>sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 

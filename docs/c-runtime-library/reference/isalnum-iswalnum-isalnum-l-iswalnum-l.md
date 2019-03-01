@@ -18,6 +18,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - _istalnum_l
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _istalnum_l function
 - _iswalnum_l function
 ms.assetid: 0dc51306-ade8-4944-af27-e4176fc89093
-ms.openlocfilehash: 97ac18eb85c62861c701f1498da0b4851021ca74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3aa9adada9ad904221b91e41ac2d843b174677ae
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456634"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57209892"
 ---
 # <a name="isalnum-iswalnum-isalnuml-iswalnuml"></a>isalnum, iswalnum, _isalnum_l, _iswalnum_l
 

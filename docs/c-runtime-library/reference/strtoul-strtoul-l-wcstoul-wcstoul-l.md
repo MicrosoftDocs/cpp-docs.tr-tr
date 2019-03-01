@@ -18,6 +18,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - strtoul
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - strtoul_l function
 - tcstoul function
 ms.assetid: 38f2afe8-8178-4e0b-8bbe-d5c6ad66e3ab
-ms.openlocfilehash: c1ef17b7b5cf1dac2d10cd16889241c40f89a507
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4d974084c9249740d565f879f471bc7dfc697bd
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436162"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210789"
 ---
 # <a name="strtoul-strtoull-wcstoul-wcstoull"></a>strtoul, _strtoul_l, wcstoul, _wcstoul_l
 

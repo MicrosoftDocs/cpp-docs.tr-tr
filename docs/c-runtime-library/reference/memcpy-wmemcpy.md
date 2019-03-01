@@ -15,6 +15,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - wmemcpy
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-ms.openlocfilehash: 0c71bd7b1a661a0964576e831e008d23692d4c2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: afdb854bd28b55735cc6b5e26788307e2db0caa6
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611191"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211062"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 

@@ -16,6 +16,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - wctomb
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-ms.openlocfilehash: b7d7907d14052aead789471bf80f0bc17a457d0d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df0abdd644027f9bab8cd177dfd4d0af4c98df35
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652159"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210490"
 ---
 # <a name="wctomb-wctombl"></a>wctomb, _wctomb_l
 

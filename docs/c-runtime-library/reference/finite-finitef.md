@@ -16,6 +16,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - isfinite
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-ms.openlocfilehash: 1be5aa204a7db3054a49c2e05a8fd77b12ae8a3d
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: d727839521978be66c3dc9ee173ee2ba0a567445
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702758"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210386"
 ---
 # <a name="isfinite-finite-finitef"></a>isfinite, _finite, _finitef
 

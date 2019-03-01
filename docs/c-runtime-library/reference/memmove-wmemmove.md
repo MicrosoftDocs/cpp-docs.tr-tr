@@ -16,6 +16,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ntdll.dll
 - ucrtbase.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - memmove
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - wmemmove function
 - memmove function
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-ms.openlocfilehash: 8801e43ee10f99b5c18a6b2340449da7a433aaf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 988af1c2678e20ea40ce4dfe331a3b6c49db0547
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599868"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210100"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 

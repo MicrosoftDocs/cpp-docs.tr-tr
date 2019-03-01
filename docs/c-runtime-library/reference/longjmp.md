@@ -14,6 +14,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - longjmp
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - restoring stack environment and execution locale
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
-ms.openlocfilehash: 56f050b5f59767fff04586d7d985cafe6d529b83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5189ff7cb850acd9c9a1280f47fc9a1270f8b68
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626713"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211010"
 ---
 # <a name="longjmp"></a>longjmp
 
@@ -43,7 +44,7 @@ void longjmp(
 
 ### <a name="parameters"></a>Parametreler
 
-*Env*<br/>
+*env*<br/>
 Ortam depolandığı değişken.
 
 *value*<br/>

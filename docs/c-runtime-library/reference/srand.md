@@ -15,6 +15,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - srand
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - pseudorandom numbers
 - starting points, setting random
 - starting points
-ms.openlocfilehash: e1670c030d8f073d928ccf23f38ac4b611e68632
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6545d4eba6c17fd55bb2b8cf23fb0319d1c96bee
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530227"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57209827"
 ---
 # <a name="srand"></a>srand
 

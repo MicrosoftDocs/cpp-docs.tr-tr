@@ -15,6 +15,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - memchr
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: 1de8826d2f072c689ed3363902d1e4742cf187b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cbd8b80ed42a6532fb7161fab7217a772a2cb777
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438551"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57209905"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 

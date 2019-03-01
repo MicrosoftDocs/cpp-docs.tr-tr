@@ -18,6 +18,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - isupper
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _iswupper_l function
 - isupper function
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
-ms.openlocfilehash: 498644fc2de8a687e2b9b63a88591385055db6c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c7ae7016428f966e8191d9d40c1769152d679c6
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588441"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210776"
 ---
 # <a name="isupper-isupperl-iswupper-iswupperl"></a>isupper, _isupper_l, iswupper, _iswupper_l
 
