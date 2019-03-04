@@ -14,12 +14,12 @@ helpviewer_keywords:
 - TN031
 - styles [MFC], control bars
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-ms.openlocfilehash: 9029b8c0fb6aa20de62dbdf21aedeae6d8a15994
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07178597e66975a006a0ea5293192ee7ea099e42
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286472"
 ---
 # <a name="tn031-control-bars"></a>TN031: Denetim Çubukları
 
@@ -109,10 +109,10 @@ Durum çubuğunda kullanılan renkleri de Windows arabirimi uygulaması Tasarım
 
 |Öğe|Windows renk değeri|Varsayılan RGB|
 |----------|-------------------------|-----------------|
-|Durum çubuğu arka plan|COLOR_BTNFACE|RGB (192, 192, 192)|
+|Durum çubuğu arka plan|COLOR_BTNFACE|RGB(192, 192, 192)|
 |Durum çubuğu metni|COLOR_BTNTEXT|RGB (000 000, 000)|
-|Durum çubuğu üst/sol kenarlar|COLOR_BTNHIGHLIGHT|RGB (255, 255, 255)|
-|Durum çubuğu bot/sağ kenarlar|COLOR_BTNSHADOW|RGB (128, 128, 128)|
+|Durum çubuğu üst/sol kenarlar|COLOR_BTNHIGHLIGHT|RGB(255, 255, 255)|
+|Durum çubuğu bot/sağ kenarlar|COLOR_BTNSHADOW|RGB(128, 128, 128)|
 
 **CStatusBar Ccmduı desteği**
 
@@ -120,7 +120,7 @@ Göstergeleri genellikle güncelleştirilir on_update_command_uı mekanizma arac
 
 On_update_command_uı işleyici çağırabilirsiniz:
 
-- `Enable`: Etkinleştirmek veya devre dışı bölmesi için. Devre dışı bırakılmış bir bölme tam olarak bir etkin bölmesi gibi görünüyor, ancak metni görünmezdir (diğer bir deyişle, metin göstergesi devre dışı bırakır).
+- `Enable`: Etkinleştirmek veya bölmesinde devre dışı bırakmak için. Devre dışı bırakılmış bir bölme tam olarak bir etkin bölmesi gibi görünüyor, ancak metni görünmezdir (diğer bir deyişle, metin göstergesi devre dışı bırakır).
 
 - `SetText`: Metni değiştirmek için. Bölmesinde değil otomatik olarak yeniden boyutlandırılır çünkü bu kullanırsanız, dikkatli olun.
 
@@ -151,9 +151,9 @@ Ayrıca, standart Windows düğme denetimleri gibi davranarak düğmeler bit eş
 |RGB değeri|Dinamik olarak eşlenen renk değeri|
 |---------------|------------------------------------|
 |RGB (000 000, 000)|COLOR_BTNTEXT|
-|RGB (128, 128, 128)|COLOR_BTNSHADOW|
-|RGB (192, 192, 192)|COLOR_BTNFACE|
-|RGB (255, 255, 255)|COLOR_BTNHIGHLIGHT|
+|RGB(128, 128, 128)|COLOR_BTNSHADOW|
+|RGB(192, 192, 192)|COLOR_BTNFACE|
+|RGB(255, 255, 255)|COLOR_BTNHIGHLIGHT|
 
 Sınıfa başvurmak [CToolBar](../mfc/reference/ctoolbar-class.md) *sınıf kitaplığı başvurusu* hakkındaki ayrıntılar için `CToolBar` oluşturma ve özelleştirme API'leri. Çoğu araç çubuklarını özelleştirme araç çubuğu başlangıçta görünür hale gelir önce yapılmalıdır.
 
@@ -165,11 +165,11 @@ Araç çubuğu düğmeleri her zaman güncelleştirilir on_update_command_uı me
 
 On_update_command_uı işleyici çağırabilirsiniz:
 
-- `Enable`: Etkinleştirmek veya düğmesini devre dışı bırak için. Bu, eşit olarak pushbuttons ve onay kutusu düğmeleri için çalışır.
+- `Enable`: Etkinleştirme veya düğmeyi devre dışı bırakma. Bu, eşit olarak pushbuttons ve onay kutusu düğmeleri için çalışır.
 
 - `SetCheck`: Bir düğme denetimi durumunu ayarlamak için. Toolbar düğmesi için bunu çağıran bir onay kutusu düğmesi açar. `SetCheck` (işaretli) 0, 1 (işaretli) veya 2 (belirsiz) olabilecek bir parametre alır
 
-- `SetRadio`: İçin kestirme `SetCheck`.
+- `SetRadio`: İçin Toplu özellik `SetCheck`.
 
 Onay kutusu düğmeleri, "AUTO" onay kutusu düğmeleri değildir; kullanıcı bunları bastığında diğer bir deyişle, bunlar hemen durumu değişir. Aşağı ya da basılı durumu denetlenir. Bir düğmeyi "belirsiz" durumuna değiştirmek için yerleşik kullanıcı arabirimi bir yolu yoktur; Bu kod yapılmalıdır.
 
@@ -179,17 +179,17 @@ Araç çubuğu düğmeleri, normalde on_update_command_uı işleyici sağlayan a
 
 Görüntü durumları için kullanılan dört araç çubuğu düğmesi stilleri (TBBS_ değerler) vardır:
 
-- TBBS_CHECKED: onay kutusunu (basılı) şu anda denetlenir.
+- TBBS_CHECKED:   Onay kutusu, şu anda (basılı) denetlenir.
 
-- TBBS_INDETERMINATE: onay kutusunu şu anda belirsiz.
+- TBBS_INDETERMINATE:   Onay kutusu, şu anda belirsiz.
 
-- TBBS_DISABLED: Şu anda düğmesi devre dışıdır.
+- TBBS_DISABLED:   Düğmesi devre dışıdır.
 
-- TBBS_PRESSED: Şu anda düğmeye basıldığında.
+- TBBS_PRESSED:   Şu anda, düğmeye basıldığında.
 
 Altı resmi Windows arabirimi uygulaması Tasarım Kılavuzu düğme stilleri aşağıdaki TBBS değerlerle temsil edilir:
 
-- En fazla = 0
+- Up = 0
 
 - Fare aşağı TBBS_PRESSED = (&#124; başka bir stil)
 
@@ -223,8 +223,7 @@ On_update_command_uı işleyici çağırabilirsiniz:
 
 Özelleştirme standart penceresi manager API'leri yapılabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

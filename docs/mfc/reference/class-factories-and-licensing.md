@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-ms.openlocfilehash: bfe4957312a3e1f5c08768af6fe96eb0c2e8b1f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3788d904bf903481d57dd73a28bf6eafadd5f019
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514406"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289590"
 ---
 # <a name="class-factories-and-licensing"></a>Sınıf Oluşturucular ve Lisanslama
 
 OLE denetim örneği oluşturmak için bir kapsayıcı uygulaması denetimin sınıf üreteci üye işlevi çağırır. Gerçek bir OLE nesne denetiminizin olduğu için sınıf üreteci denetiminizin örnekleri oluşturmak için sorumludur. Her bir OLE denetim sınıfı, bir sınıf üreteci olması gerekir.
 
-OLE denetimleri başka bir önemli özelliği, lisans zorlamak için kendi olanağıdır. ControlWizard, Denetim projeniz oluşturulurken lisans eklemenizi sağlar. Denetimini lisanslama ile ilgili daha fazla bilgi için bkz [ActiveX denetimleri: bir ActiveX denetimini lisanslama](../../mfc/mfc-activex-controls-licensing-an-activex-control.md).
+OLE denetimleri başka bir önemli özelliği, lisans zorlamak için kendi olanağıdır. ControlWizard, Denetim projeniz oluşturulurken lisans eklemenizi sağlar. Denetimini lisanslama ile ilgili daha fazla bilgi için bkz [ActiveX denetimleri: ActiveX denetimini lisanslama](../../mfc/mfc-activex-controls-licensing-an-activex-control.md).
 
 Aşağıdaki tabloda çeşitli makrolar ve bildirmek ve denetim sınıf üreteci uygulamak için kullanılan işlevleri listeler ve denetiminizin lisans.
 
@@ -174,6 +174,6 @@ Varsa *cch* -1, bu işlev kullanır:
 
   **Üst bilgi** afxctl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

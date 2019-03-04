@@ -5,12 +5,12 @@ helpviewer_keywords:
 - mdi [MFC], tabbed groups
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-ms.openlocfilehash: cefd97b377c2755b158830d8e649ac40f90fee11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b68d1bc06a6827ca94b05fa2760206f424d40fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544501"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289526"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI Sekmeli Grupları
 
@@ -60,7 +60,7 @@ MDI sekmeli grupları ile yaygın olarak gerçekleştirilen görevler şunlardı
 
 - MDI sekmeli gruplarının düzenini uygulamayı kaydetmek için çağrı `CMDIFrameWndEx::SaveMDIState`. Grup profili önceden kaydedilmiş bir MDI yüklemek için sekmeli, çağrı `CMDIFrameWndEx::LoadMDIState`. Ayrıca yüklemek veya bir MDI uygulamasında açılmış belgelerin listesini kaydetmek için bu yöntemleri çağırabilirsiniz. Kaydetme ve yükleme MDI durumu hakkında daha fazla bilgi için bkz. [CMDIFrameWndEx::LoadMDIState](../mfc/reference/cmdiframewndex-class.md#loadmdistate).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
 [CMDIFrameWndEx Sınıfı](../mfc/reference/cmdiframewndex-class.md)<br/>

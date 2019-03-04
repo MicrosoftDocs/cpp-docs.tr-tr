@@ -1,5 +1,5 @@
 ---
-title: 'Veri Nesneleri ve Veri Kaynakları: Düzenleme'
+title: 'Veri nesneleri ve veri kaynakları: Düzenleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data objects [MFC], manipulating
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - delayed rendering [MFC]
 - OLE [MFC], data sources
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-ms.openlocfilehash: ee5cb320cb07a656675bd6735d6761cb69573d0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81dfe911866c4d1ba1720ee2c9854076c499f0a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636156"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286757"
 ---
-# <a name="data-objects-and-data-sources-manipulation"></a>Veri Nesneleri ve Veri Kaynakları: Düzenleme
+# <a name="data-objects-and-data-sources-manipulation"></a>Veri nesneleri ve veri kaynakları: Düzenleme
 
 Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra ekleme ve kaldırma verileri, verilerin bulunduğu biçimleri numaralandırma gibi verileri ve daha fazla yaygın işlemlerin sayısı gerçekleştirebilirsiniz. Bu makalede, en yaygın işlemlerin tamamlanması gereken teknikleri açıklar. Konular şunlardır:
 
@@ -37,7 +37,7 @@ Veriler bir veri kaynağına nasıl eklenir olup verileri hemen sağlanan üzeri
 
 - Çağrı `COleDataSource::CacheGlobalData` art arda içinde sağladığınız verileri her Pano biçimi. Kullanılacak, Pano biçimi geçirmek verileri içeren bellek için bir tanıtıcı ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı.
 
-     veya
+     -veya-
 
 - İle doğrudan çalışmak istiyorsanız **STGMEDIUM** yapıları çağırmanızı `COleDataSource::CacheData` yerine `COleDataSource::CacheGlobalData` yukarıdaki seçeneği.
 
@@ -47,7 +47,7 @@ Bu gelişmiş bir konudur.
 
 - Çağrı `COleDataSource::DelayRenderData` art arda içinde sağladığınız verileri her Pano biçimi. Pano biçimi kullanılacak geçirin ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı. Veri istendiğinde, çerçeve çağıracak `COleDataSource::OnRenderData`, hangi geçersiz kılmanız gerekir.
 
-     veya
+     -veya-
 
 - Kullanıyorsanız bir `CFile` veri sağlamak için nesne çağrısı `COleDataSource::DelayRenderFileData` yerine `COleDataSource::DelayRenderData` önceki seçeneği. Veri istendiğinde, çerçeve çağıracak `COleDataSource::OnRenderFileData`, hangi geçersiz kılmanız gerekir.
 
@@ -67,7 +67,7 @@ Bir uygulama veri yapıştırın kullanıcıya vermeden önce işleyebileceği p
 
    - Veri nesnesinin çağrı `BeginEnumFormats` panoya biçimlerinden numaralandırma başlatmak için üye işlevi. Ardından çağırın `GetNextFormat` Pano dönene kadar uygulamanızın bir biçimini destekler veya daha fazla hiçbir biçimi vardır.
 
-Kullanıyorsanız **on_update_command_uı**, yapıştırma ve muhtemelen, Düzen menüsündeki Özel Yapıştır öğeler artık etkinleştirebilirsiniz. Bunu yapmak için çağırın ya da `CMenu::EnableMenuItem` veya `CCmdUI::Enable`. Hangi kapsayıcı hakkında daha fazla bilgi için uygulamalar ile menü öğesi yapın ve gerekir, bkz [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
+Kullanıyorsanız **on_update_command_uı**, yapıştırma ve muhtemelen, Düzen menüsündeki Özel Yapıştır öğeler artık etkinleştirebilirsiniz. Bunu yapmak için çağırın ya da `CMenu::EnableMenuItem` veya `CCmdUI::Enable`. Hangi kapsayıcı hakkında daha fazla bilgi için uygulamalar ile menü öğesi yapın ve gerekir, bkz [menüler ve kaynaklar: Kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
 
 ##  <a name="_core_retrieving_data_from_a_data_object"></a> Bir veri nesnesinden veriyi geri alma
 
@@ -91,7 +91,7 @@ Belgeye verileri Ekle, diğer tüm veriler aynı biçimde için olduğu gibi art
 
 - [Pano](../mfc/clipboard.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
 [COleDataObject Sınıfı](../mfc/reference/coledataobject-class.md)<br/>

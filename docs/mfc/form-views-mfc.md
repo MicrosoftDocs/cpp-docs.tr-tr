@@ -8,12 +8,12 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 - forms [MFC], adding to applications
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-ms.openlocfilehash: d5bb61aaad767b1322c12f57ec16ae59cb75148c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: f93f65e949c18ddb1ad5dba859ba8c4832abac8f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331548"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289279"
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 
@@ -62,6 +62,6 @@ Daha fazla bilgi için bkz.:
 
 - [Bir Projeye Form Ekleme](../mfc/inserting-a-form-into-a-project.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

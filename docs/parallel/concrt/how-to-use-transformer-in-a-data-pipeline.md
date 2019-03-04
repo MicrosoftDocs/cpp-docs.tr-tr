@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma'
+title: 'Nasıl yapılır: Veri ardışık düzeninde transformer kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - transformer class, example
 - data pipelines, using transformer [Concurrency Runtime]
 - using transformer in data pipelines [Concurrency Runtime]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
-ms.openlocfilehash: b94cf3fb7554ba32c03a404fa6616ef1b187e008
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59c4854eea985b3c91fad6e7dc6c47ca9b07d333
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461431"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291477"
 ---
-# <a name="how-to-use-transformer-in-a-data-pipeline"></a>Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma
+# <a name="how-to-use-transformer-in-a-data-pipeline"></a>Nasıl yapılır: Veri ardışık düzeninde transformer kullanma
 
-Bu konu nasıl kullanılacağını gösteren temel bir örnek içeren [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) veri ardışık düzeninde sınıfı. Görüntü işleme gerçekleştirmek için veri işlem hattı kullanan daha eksiksiz bir örnek için bkz. [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Bu konu nasıl kullanılacağını gösteren temel bir örnek içeren [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) veri ardışık düzeninde sınıfı. Görüntü işleme gerçekleştirmek için veri işlem hattı kullanan daha eksiksiz bir örnek için bkz. [izlenecek yol: Görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 *Veri ardışık* yaygın eş zamanlı programlama modelidir. Veri işlem hattı bir dizi burada her bir aşama işini gerçekleştirir ve ardından o iş sonucu sonraki aşamaya geçirir aşamadan oluşur. `transformer` Önemli bileşenlerinden veri işlem hatları bir giriş değeri aldığından sınıfı bu değeri temel çalışma gerçekleştirir ve ardından başka bir bileşeni kullanmak için bir sonuç üretir.
 
@@ -54,9 +54,8 @@ The result is -42.
 
 **cl.exe/ehsc veri pipeline.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [İzlenecek yol: Görüntü İşleme Ağı Oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
-

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CGopherLocator [MFC], CGopherLocator
 - CGopherLocator [MFC], GetLocatorType
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
-ms.openlocfilehash: 336997fd4094f4e5e1eb73f467734e40440b63a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79adbf126438c7d9f2884987c53b573991f92cf1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641356"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291394"
 ---
 # <a name="cgopherlocator-class"></a>CGopherLocator sınıfı
 
@@ -151,7 +151,7 @@ Dizenin veri karakter işaretçisi.
 
 Hiçbir karakter kopyalanır; yalnızca bir işaretçi döndürülür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

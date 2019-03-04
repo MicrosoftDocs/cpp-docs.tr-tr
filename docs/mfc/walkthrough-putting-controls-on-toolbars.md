@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme'
+title: 'İzlenecek yol: Araç çubuklarına denetimler yerleştirme'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - Customize dialog box, adding controls
 - toolbars [MFC], adding controls
 ms.assetid: 8fc94bdf-0da7-45d9-8bc4-52b7b1edf205
-ms.openlocfilehash: 3e0cc066e39cc71833e2061a1964619d04a80be3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b5b8685b3062bf63187a765b7e90e26f8c65681
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580303"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291398"
 ---
-# <a name="walkthrough-putting-controls-on-toolbars"></a>İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme
+# <a name="walkthrough-putting-controls-on-toolbars"></a>İzlenecek yol: Araç çubuklarına denetimler yerleştirme
 
 Bu makalede, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu düğmesi eklemeyi açıklar. MFC içinde araç çubuğu düğmesi olmalıdır bir [CMFCToolBarButton sınıfı](../mfc/reference/cmfctoolbarbutton-class.md)-türetilmiş sınıf, örneğin [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton sınıfı](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton sınıfı](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), veya [CMFCToolBarMenuButton sınıfı](../mfc/reference/cmfctoolbarmenubutton-class.md).
 
@@ -39,7 +39,7 @@ Araç çubuğuna bir denetim eklemek için aşağıdaki adımları izleyin:
 
 Özelleştirme etkinleştirdiğinizde, oluşturduğunuz **Özelleştir** özelleştirme işleyici iletişim kutusunda `OnViewCustomize` kullanarak [CMFCToolBarsCustomizeDialog sınıfı](../mfc/reference/cmfctoolbarscustomizedialog-class.md) sınıfı. Görüntü önce **Özelleştir** iletişim kutusunu çağırarak [CMFCToolBarsCustomizeDialog::Create](../mfc/reference/cmfctoolbarscustomizedialog-class.md#create), çağrı [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) değiştirmek için Yeni denetimi ile standart düğmesi.
 
-## <a name="example-creating-a-find-combo-box"></a>Örnek: Bul birleşik giriş kutusu oluşturma
+## <a name="example-creating-a-find-combo-box"></a>Örnek: Bir bulma birleşik giriş kutusu oluşturma
 
 Bu bölüm nasıl oluşturulacağını açıklar bir **Bul** araç çubuğunda görünür ve son kullanılan arama dizelerini içeren birleşik giriş kutusu denetimi. Kullanıcı denetiminde bir dizeyi yazın ve ardından bir belge aramak için enter tuşuna basın veya ana kareye odağı dönmek için ESC tuşuna basın. Bu örnekte, belgeyi görüntülendiğini varsayılmaktadır. bir [CEditView sınıfı](../mfc/reference/ceditview-class.md)-görünüm türetilmiş.
 
@@ -98,7 +98,7 @@ Birleşik giriş kutusu düğmesi eklemek için bu adımları izleyin:
 
 Özelleştirme işleyicisinde `OnViewCustomize`, çağrı [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) değiştirmek için **Bul** düğmesine (diğer bir deyişle, komut kimliği düğmeyle `ID_EDIT_FIND`) bir ile`CFindComboButton` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../mfc/reference/mfc-classes.md)<br/>

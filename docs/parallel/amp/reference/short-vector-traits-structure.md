@@ -7,12 +7,12 @@ f1_keywords:
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
-ms.openlocfilehash: fd86228417234f705d3f765624cd942c982df875
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c407c42e5c6a7035e911218ecb41c2da62967787
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456192"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289617"
 ---
 # <a name="shortvectortraits-structure"></a>short_vector_traits Yapısı
 
@@ -107,7 +107,7 @@ struct short_vector_traits<double_4>;
 
 **Başlık:** amp_short_vectors.h
 
-**Namespace:** Concurrency::graphics
+**Namespace:** CONCURRENCY::Graphics
 
 ##  <a name="ctor"></a>  short_vector_traits::short_vector_traits Oluşturucusu
 
@@ -121,6 +121,6 @@ short_vector_traits();
 static int const size = 1;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

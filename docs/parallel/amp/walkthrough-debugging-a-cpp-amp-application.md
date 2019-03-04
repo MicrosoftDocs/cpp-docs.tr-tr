@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama'
+title: 'İzlenecek yol: C++ AMP uygulamasında hata ayıklama'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - debugging, C++ Accelerated Massive Parallelism
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 610cf317982204715d55d12ece510cb477543f4d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 5312ba7354c28286cafb092711d66d56a920581a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176698"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286919"
 ---
-# <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama
+# <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP uygulamasında hata ayıklama
 
 Bu konuda, grafik işlemci birimi (GPU) yararlanmak için C++ Accelerated Massive Parallelism (C++ AMP) kullanan bir uygulamanın hatalarını ayıklamak gösterilmektedir. Bu, büyük bir tamsayı dizisi toplayan bir paralel azaltma program kullanır. Bu izlenecek yol aşağıdaki görevleri gösterir:
 
@@ -36,7 +36,7 @@ Bu kılavuza başlamadan önce:
 
 - Okuma [C++ AMP'ye genel bakış](../../parallel/amp/cpp-amp-overview.md).
 
-- Bu satırı emin olun. sayılar, Metin Düzenleyicisi'nde görüntülenir. Daha fazla bilgi için [nasıl yapılır: düzenleyicide satır numaralarını görüntüleme](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
+- Bu satırı emin olun. sayılar, Metin Düzenleyicisi'nde görüntülenir. Daha fazla bilgi için [nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
 
 - Windows 8 veya Windows Server 2012 yazılım benzetmesi üzerinde hata ayıklamayı desteklemek için çalışmadığından emin olun.
 
@@ -44,7 +44,7 @@ Bu kılavuza başlamadan önce:
 
 ### <a name="to-create-the-sample-project"></a>Örnek proje oluşturmak için
 
-1. Visual Studio'yu başlatın.
+1. Visual Studio’yu çalıştırın.
 
 2. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
@@ -335,7 +335,7 @@ Bunları işaretlemesini belirli GPU iş parçacıkları işaretleyebilirsiniz *
 
 ## <a name="freezing-and-thawing-gpu-threads"></a>Dondurma ve GPU iş parçacıkları çözme
 
-Freeze (askıya alma) ve (devam) GPU iş parçacıkları veya çözme **GPU iş parçacıkları** penceresi veya **paralel izleme** penceresi. Dondurma ve aynı şekilde CPU iş parçacıklarını çözme; bilgi için [nasıl yapılır: iş parçacıkları penceresini kullanma](/visualstudio/debugger/how-to-use-the-threads-window).
+Freeze (askıya alma) ve (devam) GPU iş parçacıkları veya çözme **GPU iş parçacıkları** penceresi veya **paralel izleme** penceresi. Dondurma ve aynı şekilde CPU iş parçacıklarını çözme; bilgi için [nasıl yapılır: İş parçacıkları penceresini kullanma](/visualstudio/debugger/how-to-use-the-threads-window).
 
 ### <a name="to-freeze-and-thaw-gpu-threads"></a>Freeze ve GPU iş parçacıklarını çözme
 
@@ -383,10 +383,10 @@ Kullanarak imlecin bulunduğu satıra verilen döşemedeki tüm iş parçacıkla
 
    Daha önce engel satır 21, engellenen 24 iş parçacığı 32 satırına progressed. Bu gösterilen **GPU iş parçacıkları** penceresi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ AMP'ye Genel Bakış](../../parallel/amp/cpp-amp-overview.md)<br/>
 [GPU Kodunda Hata Ayıklama](/visualstudio/debugger/debugging-gpu-code)<br/>
-[Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma](/visualstudio/debugger/how-to-use-the-gpu-threads-window)<br/>
-[Nasıl Yapılır: Paralel İzleme Penceresini Kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window)<br/>
+[Nasıl yapılır: GPU İş Parçacıkları Penceresini Kullanma](/visualstudio/debugger/how-to-use-the-gpu-threads-window)<br/>
+[Nasıl yapılır: Paralel İzleme Penceresini Kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window)<br/>
 [Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)

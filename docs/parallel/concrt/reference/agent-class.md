@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-ms.openlocfilehash: ad096eea3467346d85ce4249e910915cbd73488d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 98ad5f817361d8410e5a60648fb23baec06c42d7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560257"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289149"
 ---
 # <a name="agent-class"></a>agent Sınıfı
 
@@ -48,7 +48,7 @@ class agent;
 |Ad|Açıklama|
 |----------|-----------------|
 |[İptal](#cancel)|Bir aracı herhangi birinden taşır `agent_created` veya `agent_runnable` için durumları `agent_canceled` durumu.|
-|[Başlangıç](#start)|Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlanır.|
+|[start](#start)|Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlanır.|
 |[Durumu](#status)|Aracı durumu bilgileri, zaman uyumlu bir kaynağı.|
 |[status_port](#status_port)|Zaman uyumsuz bir Aracıdan durum bilgileri kaynağı.|
 |[bekleme](#wait)|Bir aracı, görevini tamamlamak üzere bekler.|
@@ -60,7 +60,7 @@ class agent;
 |Ad|Açıklama|
 |----------|-----------------|
 |[Bitti](#done)|Bir aracı içine taşır `agent_done` durumu, aracının tamamlandığı gösterilir.|
-|[Çalıştırma](#run)|Ana görevi bir aracının temsil eder. `run` türetilen bir sınıfta geçersiz kılınmalıdır ve aracının ne yapması gerektiğini belirtir, başlatıldıktan sonra.|
+|[run](#run)|Ana görevi bir aracının temsil eder. `run` türetilen bir sınıfta geçersiz kılınmalıdır ve aracının ne yapması gerektiğini belirtir, başlatıldıktan sonra.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -284,6 +284,6 @@ Aracıyı girdiğinde bir aracı görevi tamamlandıktan `agent_canceled` veya `
 
 Parametre `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) aracı görevi tamamlanmadan önce belirtilen sürede sona ererse oluşturulur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

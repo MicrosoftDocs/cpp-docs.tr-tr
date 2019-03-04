@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ISpecifyPropertyPages method
 - property pages, specifying
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
-ms.openlocfilehash: c78a48d369f25f5432158ee6f09ee4cda499e7c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d738759dfba50f26b788ee1b0761baf8bc4b00ab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642249"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287156"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 
@@ -37,7 +37,7 @@ Uyum gösteren kapsayıcıları aynı sırada özellik eşlemesi PROP_PAGE giri�
 
 [!code-cpp[NVC_ATL_Windowing#72](../atl/codesnippet/cpp/specifying-property-pages_1.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../atl/atl-com-property-pages.md)<br/>
 [ATLPages örnek](../visual-cpp-samples.md)

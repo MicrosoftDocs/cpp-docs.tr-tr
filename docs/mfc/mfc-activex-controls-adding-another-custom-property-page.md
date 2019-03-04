@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme'
+title: 'MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - property pages [MFC], MFC ActiveX controls
@@ -7,26 +7,26 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: ac72258e881d10723a02b5103c602ac5cec6a1f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87b71fdddc5b52f66c34cdbcdb234c83616d0850
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289561"
 ---
-# <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
+# <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme
 
 Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmazsa daha fazla özellik gerekir. Bu durumda, bu özellikleri görüntülemek için ActiveX denetimi özellik sayfaları ekleyebilirsiniz.
 
-Bu makalede, en az bir özellik sayfası zaten olan bir ActiveX denetimine yeni özellik sayfaları ekleme açıklanmaktadır. Stok özellik ekleme hakkında daha fazla bilgi sayfaları (yazı tipi, resim veya renk) makalesine bakın [MFC ActiveX denetimleri: stok özellik sayfalarını kullanarak](../mfc/mfc-activex-controls-using-stock-property-pages.md).
+Bu makalede, en az bir özellik sayfası zaten olan bir ActiveX denetimine yeni özellik sayfaları ekleme açıklanmaktadır. Stok özellik ekleme hakkında daha fazla bilgi sayfaları (yazı tipi, resim veya renk) makalesine bakın [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md).
 
 ActiveX Denetim Sihirbazı tarafından oluşturulan bir örnek ActiveX denetim çerçevesi aşağıdaki yordamları kullanın. Bu nedenle, sınıf adları ve tanımlayıcıları Bu örnek için benzersizdir.
 
 ActiveX denetiminde özellik sayfalarını kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [MFC ActiveX Denetimleri: Özellik Sayfaları](../mfc/mfc-activex-controls-property-pages.md)
+- [MFC ActiveX denetimleri: Özellik sayfaları](../mfc/mfc-activex-controls-property-pages.md)
 
-- [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
     > [!NOTE]
     >  Bu yeni özellik sayfaları ActiveX denetimi özellik sayfaları için standart boyutu bağlı kalmayı önemle tavsiye edilir. Ölçü 250 x 62 iletişim kutusu birimleri (DLU) resmi ve renk stoğu özellik sayfaları. Standart yazı tipi özellik sayfası 250 x 110 Dlu'lar ' dir. ActiveX Denetim Sihirbazı tarafından oluşturulan varsayılan özellik sayfası 250 x 62 DLU standardını kullanır.
@@ -107,7 +107,6 @@ Sonraki adım, yeni özellik sayfası için bir tür adı ve açıklamalı alt y
 
 Projenizi yeniden derleyin ve yeni özellik sayfasını sınamak için sınama Kapsayıcınızı kullanmak gerekli değişiklikleri yaptıktan sonra. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

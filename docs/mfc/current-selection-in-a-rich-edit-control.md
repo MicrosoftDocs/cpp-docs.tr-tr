@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], current selection in
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-ms.openlocfilehash: 4b4b4d0b3419201cd1243bf6f846ab0e1b5ed686
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4516c4506419169ac3ab284e6c59cae71595be59
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636518"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286870"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 
@@ -26,8 +26,7 @@ Seçili metnin bir zengin düzenleme denetimini almak için kullanın [GetSelTex
 
 Bir zengin düzenleme denetimindeki bir dize kullanarak arayabilirsiniz [FindText](../mfc/reference/cricheditctrl-class.md#findtext) üye işlevi [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-_findtextexa) bu işlevle kullanılan yapısı metin aralığı arama yapma ve aranacak dizeyi belirtir. Bu seçenekler ayrıca arama büyük/küçük harfe olup olarak da belirtebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRichEditCtrl Kullanma](../mfc/using-cricheditctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

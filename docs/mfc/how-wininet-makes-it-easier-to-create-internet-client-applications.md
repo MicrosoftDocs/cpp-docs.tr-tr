@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WinInet classes [MFC], vs. WinSock
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-ms.openlocfilehash: 2bca338aa2a1b18e8c9ab41a887678767cf6c8c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6da2ef1595e525bcfd407d67c806aa80cf90f1c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636871"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286770"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 
@@ -45,8 +45,7 @@ Visual C++ WinINet kullanabilmeniz için iki yol sunar. Win32 Internet işlevler
 
 Bilgisayarınızın Internet üzerindeki diğer bilgisayarlara bir istemci olarak gerçekleştirilen birçok işlem uzun sürebilir. Hızı bu işlemlerin genellikle ağ bağlantınızın hızına göre sınırlıdır, ancak bunlar aynı zamanda diğer ağ trafiğini ve işlem karmaşıklığı tarafından etkilenebilir. Uzak bir FTP sunucusuna bağlanma, örneğin, bilgisayarınızı adresini bulmak için sunucu adını ilk bakış gerektirir. Uygulamanızı daha sonra bu adresteki sunucuya bağlanma dener. Bağlantı açıldıktan sonra bilgisayarınız ve uzak sunucu dosyaları almak için bağlantı gerçekten kullanmadan önce Dosya Aktarım Protokolü ile bir konuşma başlatır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
-

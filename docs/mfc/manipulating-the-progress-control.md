@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-ms.openlocfilehash: c7c602dcdd70a3539f9137589d31820ee5470e49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9da6f8048adf1c7da184570ff7f94deee7441e5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461587"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289162"
 ---
 # <a name="manipulating-the-progress-control"></a>İlerleme Durumu Denetimini Düzenleme
 
@@ -47,8 +47,7 @@ ms.locfileid: "50461587"
 
 Genellikle, ilerleme durumu denetimini yalnızca çıktı için kullanılır. Yeni bir değer belirtmeden geçerli konumunu almak için kullanın [GetPos](../mfc/reference/cprogressctrl-class.md#getpos).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CProgressCtrl Kullanma](../mfc/using-cprogressctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

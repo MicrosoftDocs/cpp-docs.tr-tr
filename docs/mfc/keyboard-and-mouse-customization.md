@@ -5,12 +5,12 @@ helpviewer_keywords:
 - customizations [MFC], keyboard and mouse (MFC Extensions)
 - keyboard and mouse customizations (MFC Extensions)
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
-ms.openlocfilehash: 0ccbe83185c48439273024a97c881f1c32a2ddc7
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 55eaac9d800730f3a01dcdb2eef943eb48d147b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175692"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289188"
 ---
 # <a name="keyboard-and-mouse-customization"></a>Klavye ve Fare Özelleştirmesi
 
@@ -66,10 +66,9 @@ Ayrıca, bu tür bir saldırıya kullanıcı arabirimi koruma devre dışı bır
 
 Bu tür bir saldırıya karşı koruma sağlamak için bir komut çalıştırılmadan önce geçerli olduğunu doğrulamak için uygulama komut işleyicisi için kod ekleyin. Uygulamaya gönderilen bir komut önlemek için kullanıcı arabiriminde güvenmeyin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC için Özelleştirme](../mfc/customization-for-mfc.md)<br/>
 [CKeyboardManager Sınıfı](../mfc/reference/ckeyboardmanager-class.md)<br/>
 [CMouseManager Sınıfı](../mfc/reference/cmousemanager-class.md)<br/>
 [Özelleştirmenin Güvenlikle İlgili Etkileri](../mfc/security-implications-of-customization.md)
-

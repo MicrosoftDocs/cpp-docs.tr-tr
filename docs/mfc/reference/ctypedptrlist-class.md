@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CTypedPtrList [MFC], RemoveTail
 - CTypedPtrList [MFC], SetAt
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
-ms.openlocfilehash: 485550fbd4d3fc483303cd6ba73d74e29cc7a006
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 756ef5043468f614c6ab3ac64598d62b29b2dc41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555891"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286029"
 ---
 # <a name="ctypedptrlist-class"></a>CTypedPtrList sınıfı
 
@@ -46,7 +46,7 @@ class CTypedPtrList : public BASE_CLASS
 
 #### <a name="parameters"></a>Parametreler
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 Türü belirtilmiş işaretçi liste sınıfın temel sınıfına; bir işaretçi liste sınıfı olmalıdır ( `CObList` veya `CPtrList`).
 
 *TÜRÜ*<br/>
@@ -120,7 +120,7 @@ Temel sınıf listesinde depolanan öğelerin türü.
 *newElement*<br/>
 Bu listeye eklenecek nesne işaretçisi. NULL değerine izin verilir.
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 Türü belirtilmiş işaretçi liste sınıfın temel sınıfına; bir işaretçi liste sınıfı olmalıdır ( [CObList](../../mfc/reference/coblist-class.md) veya [CPtrList](../../mfc/reference/cptrlist-class.md)).
 
 *pNewList*<br/>
@@ -151,7 +151,7 @@ Temel sınıf listesinde depolanan öğelerin türü.
 *newElement*<br/>
 Bu listeye eklenecek nesne işaretçisi. NULL değerine izin verilir.
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 Türü belirtilmiş işaretçi liste sınıfın temel sınıfına; bir işaretçi liste sınıfı olmalıdır ( [CObList](../../mfc/reference/coblist-class.md) veya [CPtrList](../../mfc/reference/cptrlist-class.md)).
 
 *pNewList*<br/>
@@ -377,7 +377,7 @@ KONUM değeri geçerli bir konum listesinde temsil ettiğini emin olmanız gerek
 
 Daha ayrıntılı açıklamalar için bkz. [CObList::SetAt](../../mfc/reference/coblist-class.md#setat).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek Topla](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

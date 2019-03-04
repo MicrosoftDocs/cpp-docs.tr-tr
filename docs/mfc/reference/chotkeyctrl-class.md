@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 0b673c873f773844c13894d3f0448536f297dc53
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: f7887b1c9ddaf9d51da584df371acbed6726643b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894516"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291307"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 
@@ -319,8 +319,7 @@ Kullanıcı obsahuje neplatnou kombinaci girdiğinde kullanmak için bir tuş bi
 
 Bir kullanıcı girdiğinde geçersiz bir tuş bileşimi belirtilen bayraklar tarafından tanımlandığı gibi *wInvalidComb*, sistem, belirtilen bayrağı ile kullanıcı tarafından girilen anahtarları birleştirmek için veya işlecini kullanır. *wModifiers*. Elde edilen tuş bileşimi bir dizeye dönüştürülür ve ardından sık kullanılan tuş denetimi içinde görüntülenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

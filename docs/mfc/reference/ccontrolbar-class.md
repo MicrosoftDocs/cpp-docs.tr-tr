@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CControlBar [MFC], m_bAutoDelete
 - CControlBar [MFC], m_pInPlaceOwner
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
-ms.openlocfilehash: e9fba929017edfe547f2cc20105ea4f4bcdc9c33
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ac9ad66a076202113f0c59dafae243b6951ee4c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291632"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar sınıfı
 
@@ -141,7 +141,7 @@ Yatay veya dikey bağlı olarak, denetim çubuğunun istenen boyutu *dwMode*.
 *nMode*<br/>
 Aşağıdaki önceden tanımlanmış bayrakları dinamik denetim çubuğu genişliği ve yüksekliği belirlemek için kullanılır. Bit düzeyinde OR kullanın (&#124;) bayraklarını birleştirmek istiyorsanız işleci.
 
-|Düzen modu bayrakları|Anlamı nedir?|
+|Düzen modu bayrakları|Anlamı|
 |-----------------------|-------------------|
 |LM_STRETCH|Denetim çubuğu çerçevenin boyutuna esnetilmiş olup olmadığını gösterir. Çubuk (yerleştirme için kullanılamaz) bir takma çubuğu değilse ayarlayın. Çubuk yerleşik veya kayan olduğunda (yerleştirme için kullanılabilir) ayarlanmadı. Ayarlanırsa, LM_STRETCH yoksayar, *nLength* ve boyutları LM_HORZ durumuna göre döndürür. Benzer şekilde çalışır LM_STRETCH *bStretch* kullanılan parametre [CalcFixedLayout](#calcfixedlayout); bu üye işlevi yönlendirme esnetmeyi ve arasındaki ilişki hakkında daha fazla bilgi için bkz.|
 |LM_HORZ|Çubuk yatay veya dikey yönlendirilmiş olduğunu gösterir. Çubuk yatay olarak yönlendirilmiş olur ve dikey yönlendirilmiş ise ayarlı değil ayarlayın. Benzer şekilde çalışır LM_HORZ *bHorz* kullanılan parametre [CalcFixedLayout](#calcfixedlayout); bu üye işlevi yönlendirme esnetmeyi ve arasındaki ilişki hakkında daha fazla bilgi için bkz.|
@@ -187,7 +187,7 @@ Denetim çubukları araç çubukları gibi yatay olarak genişletmek veya dikey 
 
 Varsa *bStretch* TRUE ise boyut tarafından sağlanan yönlendirmesini boyunca esnetme *bHorz*. Diğer bir deyişle, varsa *bHorz* yanlış, denetim çubuğu dikey olarak genişletilir. Varsa *bStretch* yanlış hiçbir esnetme gerçekleşir. Aşağıdaki tabloda, olası permutasyonları ve sonuçta elde edilen denetim çubuğu stilleri gösterir *bStretch* ve *bHorz*.
 
-|bStretch|bHorz|Uzatma|Yönlendirme|Yerleştirme olmayan yerleştirme|
+|bStretch|bHorz|Uzatma|Hizalama|Yerleştirme olmayan yerleştirme|
 |--------------|-----------|----------------|-----------------|--------------------------|
 |TRUE|TRUE|Yatay uzatma|Yatay olarak yönelik|Yerleştirme değil|
 |TRUE|FALSE|Dikey uzatma|Dikey yönelik|Yerleştirme değil|
@@ -541,7 +541,7 @@ Bir işaretçi bir `CWnd` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLBARS](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

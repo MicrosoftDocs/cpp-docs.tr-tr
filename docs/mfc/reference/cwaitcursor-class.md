@@ -1,5 +1,5 @@
 ---
-title: CWaitCursor sınıfı
+title: CWaitCursor Class
 ms.date: 11/04/2016
 f1_keywords:
 - CWaitCursor
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: 10daa8c5af84b17d70cc18c9407686d4698e98a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ce81e62ec6498ad84349108b4c4a07090b17de5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533633"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287158"
 ---
-# <a name="cwaitcursor-class"></a>CWaitCursor sınıfı
+# <a name="cwaitcursor-class"></a>CWaitCursor Class
 
 Uzun bir işlem yaparken, genellikle bir kum saati görüntülenen bekleme imlecini göstermek için bir yol sağlar.
 
@@ -114,12 +114,11 @@ Bekleme imleci dışında olan bir işlevde sırada geri yüklemeniz gerekirse `
 
 [!code-cpp[NVC_MFCWindowing#64](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_3.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor)<br/>
 [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)<br/>
 [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)<br/>
 [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)<br/>
-[Nasıl Yaparım: bir Microsoft Foundation sınıf uygulaması fare imlecini değişiklik olur mu](http://go.microsoft.com/fwlink/p/?linkid=128044)
-
+[Nasıl Yaparım Bir Microsoft Foundation Class uygulamasında fare imlecini değiştir](http://go.microsoft.com/fwlink/p/?linkid=128044)

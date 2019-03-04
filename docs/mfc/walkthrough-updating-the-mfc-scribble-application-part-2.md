@@ -1,17 +1,17 @@
 ---
-title: 'İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)'
+title: 'İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-ms.openlocfilehash: 6a52486658307f001001e91772dad1167730def2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: c4c4ecce92bce3fbd2cb37f69b9aa02a9af4d7c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519275"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291437"
 ---
-# <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)
+# <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme
 
 [1. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) Klasik'ten Office Fluent Şerit ekleme gösterdi bu kılavuzun uygulama karalama. Bu bölüm, Şerit paneli ve kullanıcıların, menüler ve komutlar yerine kullanabileceği denetimler ekleme işlemi gösterilmektedir.
 
@@ -335,7 +335,7 @@ Ardından, rengini ve genişliğini kalemler başlatın. Son olarak, kaydedin ve
 
 MFC karalama uygulamasını güncelleştirdik. Bu izlenecek yol, mevcut uygulamalarınızı değiştirdiğinizde bir kılavuz olarak kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)<br/>
-[İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (1. Bölüm)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
+[İzlenecek yol: (Kısım 1) MFC karalama uygulamasını güncelleştirme](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

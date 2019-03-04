@@ -1,5 +1,5 @@
 ---
-title: 'Özel Durumlar: Özel Durumları Yakalama ve Silme'
+title: 'Özel durumlar: Yakalama ve özel durumları silme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exceptions [MFC], deleting
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - catch blocks [MFC], catching and deleting exceptions
 - execution [MFC], returns from within catch block
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
-ms.openlocfilehash: 370062d3e17127e711f2b4356cbb133a6c1d20b9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 511850c3c17a4eb70529202f4b0c2b36132fc8ff
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625922"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287210"
 ---
-# <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
+# <a name="exceptions-catching-and-deleting-exceptions"></a>Özel durumlar: Yakalama ve özel durumları silme
 
 Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme işlemini göstermektedir. Daha fazla bilgi için **deneyin**, **catch**, ve **throw** anahtar bkz [C++ özel durum işleme](../cpp/cpp-exception-handling.md).
 
@@ -51,7 +51,6 @@ Bu kod bir özel durumu yakalar her bir bellek sızıntısı özel durum silme h
 
 Daha fazla bilgi için [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

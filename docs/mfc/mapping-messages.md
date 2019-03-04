@@ -11,12 +11,12 @@ helpviewer_keywords:
 - mappings [MFC], messages
 - messages [MFC], mapping
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
-ms.openlocfilehash: 1f31bc2e3c6af9c4b899167ba99c152a231a929d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82c55c82d6b7a3faa65906345137885555a57d08
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665848"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287290"
 ---
 # <a name="mapping-messages"></a>Eşleme İletileri
 
@@ -24,7 +24,6 @@ ms.locfileid: "50665848"
 
 Her ikisi de tanıtıcı eşlemeleri ileti adı "ileti eşlemesi," artma iletileri ve komutları — iletilerinin listelenen üç kategorinin tümü [ileti kategorileri](../mfc/message-categories.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
-

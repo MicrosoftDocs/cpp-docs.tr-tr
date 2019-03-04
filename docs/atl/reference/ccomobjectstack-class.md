@@ -1,5 +1,5 @@
 ---
-title: CComObjectStack sınıfı
+title: CComObjectStack Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectStack
@@ -12,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectStack class
 ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80
-ms.openlocfilehash: dfe8c58803a0eb06ea17ae1b241e1e435f0263f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19fd226e617e4cdb1bba8a113b8984c36bf28d59
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579276"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287167"
 ---
-# <a name="ccomobjectstack-class"></a>CComObjectStack sınıfı
+# <a name="ccomobjectstack-class"></a>CComObjectStack Class
 
 Bu sınıf, geçici bir COM nesnesi oluşturur ve ile iskelet bir uygulamasını sağlar `IUnknown`.
 
@@ -49,7 +49,7 @@ Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-cl
 |Ad|Açıklama|
 |----------|-----------------|
 |[CComObjectStack::AddRef](#addref)|Sıfır döndürür. Hata ayıklama modunda çağrı `_ASSERTE`.|
-|[CComObjectStack::QueryInterface](#queryinterface)|E_noınterface döndürür. Hata ayıklama modunda çağrı `_ASSERTE`.|
+|[CComObjectStack::QueryInterface](#queryinterface)|Returns E_NOINTERFACE. Hata ayıklama modunda çağrı `_ASSERTE`.|
 |[CComObjectStack::Release](#release)|Sıfır döndürür. Hata ayıklama modunda çağrı `_ASSERTE`. ~|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
@@ -128,7 +128,7 @@ HRESULT    m_hResFinalConstruct;
 
 ##  <a name="queryinterface"></a>  CComObjectStack::QueryInterface
 
-E_noınterface döndürür.
+Returns E_NOINTERFACE.
 
 ```
 HRESULT    QueryInterface(REFIID, void**);
@@ -136,7 +136,7 @@ HRESULT    QueryInterface(REFIID, void**);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_noınterface döndürür.
+Returns E_NOINTERFACE.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -158,7 +158,7 @@ Sıfır döndürür.
 
 Hata ayıklama modunda çağrı `_ASSERTE`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
 [CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>

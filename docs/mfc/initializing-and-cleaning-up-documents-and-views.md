@@ -11,12 +11,12 @@ helpviewer_keywords:
 - document objects [MFC], life cycle of
 - initializing views [MFC]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
-ms.openlocfilehash: 7bfc80e636a3018e52dec411f17bdf25073cf4c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59e86f4000e2da588749ca48887d34c3effdfc3a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584645"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286853"
 ---
 # <a name="initializing-and-cleaning-up-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma ve Temizleme
 
@@ -49,7 +49,6 @@ Belge ilk oluşturulduğunda sonra bir SDI uygulamasında, 1. adım gerçekleşt
 
 - [Belgeleri ve Görünümleri Temizleme](../mfc/cleaning-up-documents-and-views.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
-

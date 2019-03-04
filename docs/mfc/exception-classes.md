@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exception handling [MFC], exception classes
 - MFC, exceptions
 ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
-ms.openlocfilehash: fad88fa36c64bd9d8ca28135c09a3f0ce8fe3c0c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99a2764dcad15267b1aab8a60951f99f21352726
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441944"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286328"
 ---
 # <a name="exception-classes"></a>Özel Durum Sınıfları
 
@@ -54,7 +54,6 @@ Bir Windows kaynağı yüklemek için bir hatasından kaynaklanan bir özel duru
 [CUserException](../mfc/reference/cuserexception-class.md)<br/>
 Kullanıcı tarafından başlatılan bir işlemin durdurmak için kullanılan bir özel durum. Genellikle, bu özel durum önce kullanıcı sorun bildirildi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

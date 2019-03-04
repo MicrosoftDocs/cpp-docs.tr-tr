@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DateTimePicker control [MFC], display styles
 - DateTimePicker control [MFC]
 ms.assetid: 7d577f03-6ca0-4597-9093-50b78f304719
-ms.openlocfilehash: 2e3e980649264a6842abcc9491171e5105dbab17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8da5ecaf473d6d3c35ddc1b95ac856ce8c12f163
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557518"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286892"
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 
@@ -31,8 +31,7 @@ Aşağıdaki kod örneği (burada *m_dtPicker* olduğu `CDateTimeCtrl` nesnesi) 
 
 Özel biçim dizelerine ek olarak, tarih ve Saat Seçici desteği de denetimleri [geri çağrı alanlarını](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDateTimeCtrl Kullanma](../mfc/using-cdatetimectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-
