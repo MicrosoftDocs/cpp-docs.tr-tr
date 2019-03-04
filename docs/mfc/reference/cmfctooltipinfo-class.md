@@ -1,5 +1,5 @@
 ---
-title: Cmfctooltipınfo sınıfı
+title: CMFCToolTipInfo Class
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolTipInfo
@@ -32,14 +32,14 @@ helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_nGradientAngle
 - CMFCToolTipInfo [MFC], m_nMaxDescrWidth
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-ms.openlocfilehash: 07f2882570e77d554230853dff87bc81df80e4cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b38c3a62cca376ef7a19a111fe3a34c923983d1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668630"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270221"
 ---
-# <a name="cmfctooltipinfo-class"></a>Cmfctooltipınfo sınıfı
+# <a name="cmfctooltipinfo-class"></a>CMFCToolTipInfo Class
 
 Araç ipuçlarının görsel görünümünü hakkındaki bilgileri depolar.
 
@@ -55,7 +55,7 @@ class CMFCToolTipInfo
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolTipInfo::operator =](#operator_eq)||
+|[CMFCToolTipInfo::operator=](#operator_eq)||
 
 ### <a name="data-members"></a>Veri üyeleri
 
@@ -255,7 +255,7 @@ CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

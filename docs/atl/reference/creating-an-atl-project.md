@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _ATL_MIN_CRT macro
 - distributing files with ATL components
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
-ms.openlocfilehash: c6fb81ad1a6a5233eb27f67fb7985e23b0c0f4b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f83e56e3e9b8468b71534d225080ff5874731b74
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443803"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268895"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
 
@@ -35,7 +35,7 @@ Bir ATL projesi oluşturmak için en kolay yolu bulunan ATL projesi Sihirbazı, 
 
 Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md). Yapılandırmalar yeni ATL projesi ve ayarların nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)

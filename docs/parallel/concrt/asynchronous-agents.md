@@ -5,12 +5,12 @@ helpviewer_keywords:
 - asynchronous agents
 - agents [Concurrency Runtime]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-ms.openlocfilehash: a99400e4df49e36e1cddda7068f315485b976cde
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ff6fa851519066c3c399a28557fd8f103d0e94be
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176542"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268947"
 ---
 # <a name="asynchronous-agents"></a>Zaman Uyumsuz Aracılar
 
@@ -44,8 +44,8 @@ Aşağıdaki tabloda ait önemli yöntemlerden bazıları gösterilmektedir `age
 
 |Yöntem|Açıklama|
 |------------|-----------------|
-|[Başlangıç](reference/agent-class.md#start)|Zamanlamalar `agent` yürütme için nesne ve ayarlar `agent_runnable` durumu.|
-|[Çalıştırma](reference/agent-class.md#run)|Tarafından gerçekleştirilmesi gereken görev yürütülmeden `agent` nesne.|
+|[start](reference/agent-class.md#start)|Zamanlamalar `agent` yürütme için nesne ve ayarlar `agent_runnable` durumu.|
+|[run](reference/agent-class.md#run)|Tarafından gerçekleştirilmesi gereken görev yürütülmeden `agent` nesne.|
 |[Bitti](reference/agent-class.md#done)|Aracıya taşır `agent_done` durumu.|
 |[İptal](../../parallel/concrt/cancellation-in-the-ppl.md#cancel)|Aracı başlatılmadıysa, bu yöntem aracısının yürütme iptal eder ve ayarlar `agent_canceled` durumu.|
 |[Durumu](reference/agent-class.md#status)|Geçerli durumunu alır `agent` nesne.|
@@ -59,9 +59,8 @@ Bir aracı nesnesi oluşturduktan sonra çağrı [concurrency::agent::start](ref
 
 ## <a name="example"></a>Örnek
 
-Temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını gösteren bir örnek için bkz: [izlenecek yol: aracı temelli uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).
+Temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını gösteren bir örnek için bkz: [izlenecek yol: Aracı tabanlı uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
-

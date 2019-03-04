@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: cd3eed89753031de64d35a2b3602b1fb42356123
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c782d5761323129eccf7ee129d877128c400d93a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613544"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270728"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 
@@ -612,9 +612,8 @@ void SetScrollPos(int iPos);
 
 Bu yöntem gönderir [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) Windows SDK'da açıklanan ileti.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CPagerCtrl Sınıfı](../../mfc/reference/cpagerctrl-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sayfa denetimleri](/windows/desktop/Controls/pager-controls)
-

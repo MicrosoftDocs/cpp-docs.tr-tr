@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme'
+title: 'MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme'
 ms.date: 09/12/2018
 f1_keywords:
 - LocaleID
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-ms.openlocfilehash: 0a9c45873f784cf639ccf7e886f65527a6a78f2f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e9ef9a2f79bda5d41c01984f063622b3b73fb51
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613218"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268220"
 ---
-# <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme
+# <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme
 
 ActiveX denetim arabirimleri yerelleştirme için yordamlar anlatılmaktadır.
 
@@ -100,7 +100,6 @@ Bir denetimin özellik sayfası yerelleştirmek için de aynı mantığı kullan
 
 [!code-cpp[NVC_MFC_AxLoc#5](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_5.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

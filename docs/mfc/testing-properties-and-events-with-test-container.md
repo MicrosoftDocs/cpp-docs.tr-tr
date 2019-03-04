@@ -10,12 +10,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], testing
 - properties [MFC], testing
 ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
-ms.openlocfilehash: cf36514c6ce2cd25a49901165fcf919cffd5da7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b1d023488e8d547217dafffd224ab9fc05bd876
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633373"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267907"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme
 
@@ -54,8 +54,7 @@ Bu noktada, denetimin özellikleri veya etkinlikleri test edebilirsiniz.
 
 1. Olay bilgilerini hedefini belirtin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[Nasıl Yapılır: ActiveX Denetiminde Hata Ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)
-
+[Nasıl yapılır: ActiveX Denetiminde Hata Ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)

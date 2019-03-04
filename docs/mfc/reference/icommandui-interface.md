@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: dd5f79b8ecd65428ce1231777fa6632777859a00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31157ba2445a432af274650011b839fb3df9b3c2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467117"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268180"
 ---
 # <a name="icommandui-interface"></a>Icommanduı arabirimi
 
@@ -51,7 +51,7 @@ Bu arabirim, yöntemleri ve kullanıcı arabirimi komutlarını Yönet özellikl
 
 `ICommandUI` on_update_command_uı işleyicisinde içinde kullanılan bir [Icommandtarget'a](../../mfc/reference/icommandtarget-interface.md)-türetilmiş sınıf. Bir uygulamanın kullanıcı (seçer veya tıklama) etkinleştirirken her bir menü öğesi bir menü etkin olarak görüntülenen veya devre dışı. Her menü komut hedefinin on_update_command_uı işleyici uygulayarak bu bilgileri sağlar. Her komut kullanıcı arabirimi nesnelerinin uygulamanızdaki bir ileti eşleme girişi ve işlev prototipi her işleyicisi oluşturmak için Özellikler penceresini kullanın.
 
-İlgili daha fazla bilgi için `ICommandUI` arabirimi komut yönlendirme olarak kullanılır, bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme Ekle](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
+Daha fazla bilgi için nasıl `ICommandUI` arabirimi komut yönlendirme olarak kullanılır, bkz [nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
@@ -80,7 +80,7 @@ void ContinueRouting();
 
 ## <a name="remarks"></a>Açıklamalar
 
-FALSE döndüren bir ON_COMMAND_EX işleyicisi ile birlikte kullanılması gereken bir Gelişmiş üye işlev budur. Daha fazla bilgi için bkz. Teknik Not TN006: ileti eşlemeleri.
+FALSE döndüren bir ON_COMMAND_EX işleyicisi ile birlikte kullanılması gereken bir Gelişmiş üye işlev budur. Teknik Not TN006 daha fazla bilgi için bkz: İleti eşlemeleri.
 
 ## <a name="enabled"></a> ICommandUI::Enabled
 
@@ -141,6 +141,6 @@ Bu özellik, bu komut için kullanıcı arabirimi öğesinin metin ayarlar. Metn
 
 **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleConvertDialog [MFC], GetSelectionType
 - COleConvertDialog [MFC], m_cv
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
-ms.openlocfilehash: e1e13f96eb90c81127723afcacf463478b75a894
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0d2f83a6340224cf0fd6318e470fcfae103d72b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569760"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267738"
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog sınıfı
 
@@ -276,7 +276,7 @@ Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla deği�
 
 Daha fazla bilgi için [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK'sındaki yapısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

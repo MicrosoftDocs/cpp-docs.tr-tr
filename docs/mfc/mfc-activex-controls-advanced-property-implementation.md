@@ -1,19 +1,19 @@
 ---
-title: 'MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama'
+title: 'MFC ActiveX denetimleri: Gelişmiş özellik uygulama'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], error codes
 - properties [MFC], ActiveX controls
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-ms.openlocfilehash: d26dbcb1c18c3c939214051d9010cb5b6db90929
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 438c95c56961cc587b64e494678ade191f18ab6b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568031"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266971"
 ---
-# <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama
+# <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX denetimleri: Gelişmiş özellik uygulama
 
 Bu makalede, bir ActiveX denetimi özelliklerini Gelişmiş uygulama için ilgili konuları açıklanır.
 
@@ -69,11 +69,11 @@ Yardımcı işlevleri mevcut SCODEs, en yaygın gibi önceden tanımlanmış [CO
 > [!NOTE]
 >  `ThrowError` bir özelliğin Get veya Set içindeki bir hatadan döndüren yalnızca bir yol olarak kullanılmak üzere tasarlanmıştır işlevi veya Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyicisi olacak kez yığında sunar.
 
-Diğer alanlarda özel durumları kodun Raporlama ile ilgili daha fazla bilgi için [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konuları.
+Diğer alanlarda özel durumları kodun Raporlama ile ilgili daha fazla bilgi için [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

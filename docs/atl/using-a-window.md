@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CWindow class, about CWindow class
 - windows [C++], ATL
 ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
-ms.openlocfilehash: 7446196e9eec4b9d9236d4ab55afd9fcf859254b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3a1843bfedc30e7d3b47c2916af08c8b53aaa965
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568668"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268878"
 ---
 # <a name="using-a-window"></a>Pencere kullanma
 
@@ -21,7 +21,6 @@ Sınıf [CWindow](../atl/reference/cwindow-class.md) pencere kullanmanıza olana
 
 Kullanmanın yanı sıra `CWindow` doğrudan da veriler veya kod sınıfı eklemek için türetebilirsiniz. ATL kendisini üç sınıflarından türetilen `CWindow`: [Cwindowımpl](../atl/implementing-a-window.md), [Cdialogımpl](../atl/implementing-a-dialog-box.md), ve [CContainedWindowT](../atl/using-contained-windows.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere sınıfları](../atl/atl-window-classes.md)
-

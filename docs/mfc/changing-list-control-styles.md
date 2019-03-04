@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CListCtrl class [MFC], styles
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-ms.openlocfilehash: cfaae07d0bb96cbdf40de5afa701b73ae82485e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ba9ae81f7b1693be0df3565256a65e4e3561fd3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645152"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266880"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 
@@ -30,8 +30,7 @@ Bir list denetimi için standart stilleri yanı sıra başka bir kümesi, Geniş
 > [!NOTE]
 >  Üzerine gelindiğinde kullanılacak seçim çalışmak de sahip olmanız gerekir **LVS_EX_ONECLICKACTIVATE** veya **LVS_EX_TWOCLICKACTIVATE** açık.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

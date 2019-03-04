@@ -7,12 +7,12 @@ helpviewer_keywords:
 - windows [MFC], creating
 - sequence [MFC]
 ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
-ms.openlocfilehash: f69d32ea846e93974bc71340777b23750da73ba7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 949cf72910654b502ca4b57be72bedc2db63c315
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446793"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269233"
 ---
 # <a name="general-window-creation-sequence"></a>Genel Pencere Oluşturma Dizisi
 
@@ -37,7 +37,6 @@ MFC kullanan tarafından sağlanan tüm pencere sınıflarının [iki aşamalı 
 
 - [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencereler Oluşturma](../mfc/creating-windows.md)
-

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - connection points [C++], container
 - IConnectionPointContainerImpl class
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
-ms.openlocfilehash: 247013322925ad6fe246b079bcff7e0521e5561d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06baa4dac3248d783648b8ce37e51250e0de2498
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551651"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269311"
 ---
 # <a name="iconnectionpointcontainerimpl-class"></a>Iconnectionpointcontainerımpl sınıfı
 
@@ -88,7 +88,7 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 
 Bkz: [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

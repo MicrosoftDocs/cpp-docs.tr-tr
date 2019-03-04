@@ -19,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - single_assignment class
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
-ms.openlocfilehash: 5a27fb6cdc13fbbd3ceb8a85adacf5491ddc3ce1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 436d0d4cc16ee18449178782b775a25bb1d8592a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593485"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268973"
 ---
 # <a name="singleassignment-class"></a>single_assignment Sınıfı
 
@@ -328,9 +328,8 @@ Saklı iletinin yükü.
 
 Bu yöntem, ileti içinde depolanıyorsa, bir ileti gelene kadar bekler `single_assignment` ileti bloğu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [overwrite_buffer Sınıfı](overwrite-buffer-class.md)<br/>
-[unbounded_buffer sınıfı](unbounded-buffer-class.md)
-
+[unbounded_buffer Sınıfı](unbounded-buffer-class.md)

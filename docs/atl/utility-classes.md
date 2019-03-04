@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - utility classes
 ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
-ms.openlocfilehash: 0ea5350dbb169383e752e5c202e4276fa6224704
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21e4f1997977f0b0663e6b30172ed834b9f2f11a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484597"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271612"
 ---
 # <a name="utility-classes"></a>Yardımcı program sınıfları
 
@@ -32,7 +32,6 @@ Aşağıdaki bağımsız MFC yardımcı sınıflar sağlanır:
 
 - [_U_RECT](../atl/reference/u-rect-class.md) ya da izin veren bir bağımsız değişken bağdaştırıcı sınıfı `RECT` işaretçiler veya başvurular açısından işaretçileri uygulanan bir işleve geçirilecek.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../atl/atl-class-overview.md)
-

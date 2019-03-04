@@ -1,5 +1,5 @@
 ---
-title: CReBar sınıfı
+title: CReBar Class
 ms.date: 11/19/2018
 f1_keywords:
 - CReBar
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - CReBar [MFC], Create
 - CReBar [MFC], GetReBarCtrl
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
-ms.openlocfilehash: 344886ca4af45d55b85cc7471c1e558d73cbebf6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 4216898e85ebbec748598e10ebb31ce5510f7908
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175892"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267790"
 ---
-# <a name="crebar-class"></a>CReBar sınıfı
+# <a name="crebar-class"></a>CReBar Class
 
 Düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu.
 
@@ -173,9 +173,8 @@ Kullanma hakkında daha fazla bilgi için `CReBarCtrl` , çubuk barınağı öze
 
 [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/cpp/crebar-class_2.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MFCIE](../../visual-cpp-samples.md)<br/>
 [CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

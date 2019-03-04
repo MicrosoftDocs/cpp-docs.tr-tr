@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 26f24e922769a565c88264032373662116eee290
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: da77e2ba93554cb65d4cc92353d05d54467b50d4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176997"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269649"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -58,7 +58,7 @@ Kodun önemli bölümleri aşağıdaki gibidir:
 
 - Yineleme: İlk `for` döngüsü dizilerde öğelerin arasında dolaşmak için bir mekanizma sağlar. Toplamları hesaplamak için yürütmek istediğiniz kod ilk bulunan `for` blok.
 
-- Dizin: `idx` değişkeni dizilerin tek tek öğelerine erişir.
+- Dizini: `idx` Değişkeni dizilerin tek tek öğelerine erişir.
 
 C++ AMP kullanarak, aşağıdaki kodu yerine yazabilirsiniz.
 
@@ -100,9 +100,9 @@ Aynı temel öğeler vardır, ancak C++ AMP yapıları kullanılır:
 
 - Veri: C++ dizilerini üç C++ AMP oluşturmak için kullandığınız [array_view](../../parallel/amp/reference/array-view-class.md) nesneleri. Oluşturmak için 4 değer sağlarsınız bir `array_view` nesne: veri değerleri, boyut, öğe türü ve uzunluğunu `array_view` her boyutundaki nesne. Boyut sayısı ve türü, tür parametreleri geçirilir. Veri ve uzunluk Oluşturucu parametreler olarak geçirilir. Bu örnekte, oluşturucuya iletilen C++ dizisi tek boyutlu. Boyut sayısı ve uzunluğu dikdörtgen şeklindeki verileri oluşturmak için kullanılan `array_view` nesnesi ve veri değerleri diziyi doldurmak için kullanılır. Ayrıca çalışma zamanı kitaplığı içeren [array sınıfı](../../parallel/amp/reference/array-class.md), benzer bir arabirim olduğu `array_view` sınıfı ve bu makalenin sonraki bölümlerinde ele alınmıştır.
 
-- Yineleme: [parallel_for_each işlevi (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) veri öğeleri boyunca yineleme için bir mekanizma sağlar veya *hesaplama alanı*. Bu örnekte, hesaplama alanı tarafından belirtilen `sum.extent`. Yürütmek istediğiniz kod bir lambda ifadesinde bulunan veya *çekirdek işlevi*. `restrict(amp)` Yalnızca C++ AMP'nin hızlandırabileceği C++ dilinin alt kullanıldığını gösterir.
+- Yineleme: [Parallel_for_each işlevi (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) veri öğeleri boyunca yineleme için bir mekanizma sağlar veya *hesaplama alanı*. Bu örnekte, hesaplama alanı tarafından belirtilen `sum.extent`. Yürütmek istediğiniz kod bir lambda ifadesinde bulunan veya *çekirdek işlevi*. `restrict(amp)` Yalnızca C++ AMP'nin hızlandırabileceği C++ dilinin alt kullanıldığını gösterir.
 
-- Dizin: [index sınıfı](../../parallel/amp/reference/index-class.md) değişken `idx`, bir boyut sayısı eşleştirilecek derecesi ile bildirilen `array_view` nesne. Dizini kullanarak, tek tek öğelerine erişebilirsiniz `array_view` nesneleri.
+- Dizini: [İndex sınıfı](../../parallel/amp/reference/index-class.md) değişken `idx`, bir boyut sayısı eşleştirilecek derecesi ile bildirilen `array_view` nesne. Dizini kullanarak, tek tek öğelerine erişebilirsiniz `array_view` nesneleri.
 
 ## <a name="shaping-and-indexing-data-index-and-extent"></a>Veri şekillendirme ve dizinleme: dizin ve kapsam
 
@@ -457,11 +457,11 @@ void MathExample() {
 
 C++ AMP hızlandırılmış grafik programlama için tasarlanmış bir grafik kitaplığı içerir. Bu kitaplık sadece doğal grafik işlevselliği destekleyen cihazlarda kullanılır. Yöntemler [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md) ve içerdiği \<amp_graphics.h > üst bilgi dosyası. Grafik kitaplığı anahtar bileşenleri şunlardır:
 
-- [texture sınıfı](../../parallel/amp/reference/texture-class.md): doku sınıfını kullanarak bellekten ya da bir dosyadan doku oluşturmak için kullanabilirsiniz. Dokular veri içerdikleri ve bunların atama ve kopya oluşumuna göre C++ Standart Kitaplığı kapsayıcıları benzer çünkü dizilerine benzer. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../../standard-library/stl-containers.md). Şablon parametreleri için `texture` öğe türü ve boyut sınıfı bulunur. Boyut sayısı 1, 2 veya 3 olabilir. Öğe türü, bu makalenin sonraki bölümlerinde açıklanan kısa vektör türlerinden biri olabilir.
+- [texture sınıfı](../../parallel/amp/reference/texture-class.md): Doku sınıfını kullanarak bellekten ya da bir dosyadan doku oluşturmak için kullanabilirsiniz. Dokular veri içerdikleri ve bunların atama ve kopya oluşumuna göre C++ Standart Kitaplığı kapsayıcıları benzer çünkü dizilerine benzer. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../../standard-library/stl-containers.md). Şablon parametreleri için `texture` öğe türü ve boyut sınıfı bulunur. Boyut sayısı 1, 2 veya 3 olabilir. Öğe türü, bu makalenin sonraki bölümlerinde açıklanan kısa vektör türlerinden biri olabilir.
 
-- [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): herhangi bir dokuya salt yazılır erişim sağlar.
+- [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): Herhangi bir dokuya salt yazılır erişim sağlar.
 
-- Kısa vektör kitaplığı: uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm ](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).
+- Kısa vektör kitaplığı: Uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).
 
 ## <a name="universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları
 
@@ -469,7 +469,7 @@ Diğer C++ kitaplıkları gibi UWP uygulamalarında C++ AMP kullanabilirsiniz. B
 
 - [UWP Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [İzlenecek yol: C++ ve JavaScript çağırma temel bir Windows çalışma zamanı bileşeni oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249077)
+- [İzlenecek yol: C++ uygulamasında temel bir Windows çalışma zamanı bileşeni oluşturma ve JavaScript'ten çağırma](http://go.microsoft.com/fwlink/p/?linkid=249077)
 
 - [Bing Haritalar seyahat iyileştirici, JavaScript ve C++'ta bir pencere Store uygulaması](http://go.microsoft.com/fwlink/p/?linkid=249078)
 
@@ -499,7 +499,7 @@ Eşzamanlılık görselleştiricisi C++ AMP kod performansını çözümlemek i�
 
 İşaretsiz tamsayılar sayılarda işaretli tam sayılarda önemli ölçüde daha iyi performansa sahip. Mümkün olduğunda, işaretsiz tamsayılar kullanmanızı öneririz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda İfadesi Söz Dizimi](../../cpp/lambda-expression-syntax.md)<br/>

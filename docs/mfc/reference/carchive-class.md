@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CArchive [MFC], WriteString
 - CArchive [MFC], m_pDocument
 ms.assetid: 9e950d23-b874-456e-ae4b-fe00781a7699
-ms.openlocfilehash: f1e5701e95ec080845f3d2422da5d6ce4b9c906b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f169964c6a313f37b5ea50a5105af29af7b59b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465617"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266334"
 ---
 # <a name="carchive-class"></a>CArchive sınıfı
 
@@ -132,7 +132,7 @@ Aşırı yüklenmiş çıkarma ( **>>**) ve ekleme ( **<<**) işleçleridir hem 
 
 `CArchive` Ayrıca, Windows Sockets MFC sınıfları ile programlama destekler [CSocket](../../mfc/reference/csocket-class.md) ve [CSocketFile](../../mfc/reference/csocketfile-class.md). [IsBufferEmpty](#isbufferempty) üye işlevi bu kullanımını destekler.
 
-Daha fazla bilgi için `CArchive`, makalelere göz atın [serileştirme](../../mfc/serialization-in-mfc.md) ve [Windows Yuvaları: yuvaların arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
+Daha fazla bilgi için `CArchive`, makalelere göz atın [serileştirme](../../mfc/serialization-in-mfc.md) ve [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -298,7 +298,7 @@ Bu işlev, Windows Sockets MFC sınıfı ile programlamayı desteklemek için sa
 
 Kullanılmasının nedeni `IsBufferEmpty` ile ilişkili bir arşiv bir `CSocketFile` nesnedir arşivin arabellek birden fazla ileti veya kayıt içerebilir. Bir iletiyi aldıktan sonra kullanmanız gereken `IsBufferEmpty` arabellek boş olana kadar veri almaya devam eden bir döngüyü denetlemek üzere. Daha fazla bilgi için [alma](../../mfc/reference/casyncsocket-class.md#receive) sınıfının üye işlevinde `CAsyncSocket`, nasıl kullanılacağını göstermektedir `IsBufferEmpty`.
 
-Daha fazla bilgi için [Windows Yuvaları: yuvaların arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
+Daha fazla bilgi için [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
 ##  <a name="isloading"></a>  CArchive::IsLoading
 
@@ -879,7 +879,7 @@ Sondaki boş karakter ('\0') dosyasına yazılır değil; ya da yeni bir satır 
 
 [!code-cpp[NVC_MFCSerialization#30](../../mfc/codesnippet/cpp/carchive-class_23.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>

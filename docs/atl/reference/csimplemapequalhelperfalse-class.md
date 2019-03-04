@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMapEqualHelperFalse class
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-ms.openlocfilehash: 7ccfe59e6741c267aded8f59828947a1d98bfbc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c4241049ad323047f06c0b29f946521f2c02167
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572698"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268908"
 ---
 # <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse sınıfı
 
@@ -86,7 +86,7 @@ Yanlış değerini döndürür.
 
 Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız hiç olmadığı kadar başvurulan yoksa false. Amacı `CSimpleMapEqualHelperFalse::IsEqualValue` yöntemleri karşılaştırmalar eşitliği testleri yeterince tanımlanmamış iyi tanımlanmış bir şekilde başarısız kullanmayı zorlamak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSimpleMapEqualHelper Sınıfı](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

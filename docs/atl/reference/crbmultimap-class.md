@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
-ms.openlocfilehash: f421848a87ea3cc38309e85eb39c9453530ce4fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 03a9639e8b0b3d11a414e5db0ce874d7ca8f2d45
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659101"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267491"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 
@@ -138,7 +138,7 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bulunacak öğe tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -173,7 +173,7 @@ V& GetNextValueWithKey(
 *POS*<br/>
 Ya da bir çağrı ile elde edilen konum değeri [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextWithKey](#getnextwithkey), veya önceki bir çağrı `GetNextValueWithKey`.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bulunacak öğe tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -208,7 +208,7 @@ CPair* GetNextWithKey(
 *POS*<br/>
 Ya da bir çağrı ile elde edilen konum değeri [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), veya önceki bir çağrı `GetNextWithKey`.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bulunacak öğe tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -231,7 +231,7 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Eklenecek anahtar değeri `CRBMultiMap` nesne.
 
 *value*<br/>
@@ -259,7 +259,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Silinecek öğeyi/öğeleri tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -276,7 +276,7 @@ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class
 
 Örneğin bakın [CRBMultiMap::CRBMultiMap](#crbmultimap).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRBTree Sınıfı](../../atl/reference/crbtree-class.md)<br/>
 [CAtlMap Sınıfı](../../atl/reference/catlmap-class.md)<br/>

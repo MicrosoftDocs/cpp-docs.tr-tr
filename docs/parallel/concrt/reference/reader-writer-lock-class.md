@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - reader_writer_lock class
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
-ms.openlocfilehash: 1c2696695992cac9d51d547913c41234beaecf57
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 111d48b9c4a575078f2342bfaa944871bbd628f5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585997"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268661"
 ---
 # <a name="readerwriterlock-class"></a>reader_writer_lock Sınıfı
 
@@ -220,7 +220,7 @@ void unlock();
 
 Kilit bekleyen yazıcılar varsa, kilit sürümü her zaman sonraki yazıcı FIFO sırayla geçer. Bu kilit yazıcılar doğru güçlü eğilimi nedeniyle ve yazıcılar sürekli bir yük altında okuyucular yeterli kaynak kalmamasına neden.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [critical_section Sınıfı](critical-section-class.md)

@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: 0b39109bd97e2bb83b7a51fdd6e626b63c4c8798
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef0756ee1dd0aa7d82caf218aa2c417df0c2778c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604993"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269260"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes sınıfı
 
@@ -96,7 +96,7 @@ Yeni bir işlem oluşturulurken döndürülen tanıtıcının devralınan olup o
 
 Bu yöntem başlatmak için oluşturucu tarafından kullanılan `CSecurityAttributes` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Güvenliği örneği](../../visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)<br/>

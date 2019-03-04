@@ -9,12 +9,12 @@ helpviewer_keywords:
 - window objects [MFC], deallocating memory for
 - storage for window objects [MFC], allocating
 ms.assetid: 7c962539-8461-4846-b5ca-fe3b15c313dc
-ms.openlocfilehash: a9bbf92a586a910dfa4e81774ce4817c9cf458e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60f99c01c7a311c31602269b49efaf434d16827a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582502"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267803"
 ---
 # <a name="allocating-and-deallocating-window-memory"></a>Pencere Belleğini Ayırma ve Serbest Bırakma
 
@@ -28,7 +28,6 @@ C++ kullanmayın **Sil** işlecini bir çerçeve penceresinin veya Görünüm yo
 
 - [Bir cwnd'i hwnd'inden ayırma](../mfc/detaching-a-cwnd-from-its-hwnd.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Nesnelerini Yok Etme](../mfc/destroying-window-objects.md)
-

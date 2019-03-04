@@ -12,12 +12,12 @@ helpviewer_keywords:
 - reading files
 - writing to files [MFC]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
-ms.openlocfilehash: 14bd6d57f4b3fa9bacc46fb70cb2abd2958117c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab1ddc58ec6cc2b67e5843f46afbead3ead54eba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591193"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267686"
 ---
 # <a name="reading-and-writing-files"></a>Dosyaları Okuma ve Yazma
 
@@ -27,7 +27,7 @@ C çalışma zamanı kitaplığı dosyası işleme işlevlerini kullandıysanız
 
 1. Kullanım `Read` ve `Write` üye işlevleri dosyasına veri yazma ve okuma için.
 
-     veya
+     -veya-
 
 1. `Seek` Bir üye işlevidir Ayrıca belirli bir uzaklıkta dosyası içinde taşımak için kullanılabilir.
 
@@ -38,7 +38,6 @@ C çalışma zamanı kitaplığı dosyası işleme işlevlerini kullandıysanız
 > [!NOTE]
 >  Normalde giriş/çıkış işlemi içinde yürütülmesi bir **deneyin**/**catch** özel durum işleme bloğu. Daha fazla bilgi için [özel durum işleme (MFC)](../mfc/exception-handling-in-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dosyalar](../mfc/files-in-mfc.md)
-

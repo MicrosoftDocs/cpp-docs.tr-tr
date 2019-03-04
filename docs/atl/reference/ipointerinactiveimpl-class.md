@@ -12,12 +12,12 @@ helpviewer_keywords:
 - inactive objects
 - IPointerInactiveImpl class
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
-ms.openlocfilehash: 2c072dd158616b04d10e4aed091c7e26a3512ce1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7d9f048fceb3a569b024d7fe2b87f30a828b68e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487899"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266841"
 ---
 # <a name="ipointerinactiveimpl-class"></a>Ipointerınactiveımpl sınıfı
 
@@ -78,7 +78,7 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -98,7 +98,7 @@ HRESULT OnInactiveMouseMove(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -119,12 +119,12 @@ HRESULT OnInactiveSetCursor(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bkz: [IPointerInactive::OnInactiveSetCursor](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

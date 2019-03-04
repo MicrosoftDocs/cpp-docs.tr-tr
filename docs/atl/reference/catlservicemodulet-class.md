@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: ad682980fbc885d79598b41a5dcc094bb65db8cf
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 2d4d5d4a5c4d8a52f792cc04a968974967c1e13a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893541"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270507"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT Class
 
@@ -563,7 +563,7 @@ Hizmetin dönüş değeri döndürür.
 
 Bu yöntem, komut satırında işler (ile [CAtlServiceModuleT::ParseCommandLine](#parsecommandline)) ve ardından hizmeti başlatır (kullanarak [CAtlServiceModuleT::Start](#start)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlExeModuleT Sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

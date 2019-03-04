@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-ms.openlocfilehash: 3b6803b0ddfe09feb37a6e0d3072d8afa422de8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2236b1a1b72f307dae1efa0cfe197e222820c460
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476661"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270195"
 ---
 # <a name="extent-class-c-amp"></a>extent Sınıfı (C++ AMP)
 
@@ -39,7 +39,7 @@ Boyut sayısı `extent` nesne.
 
 **Başlık:** amp.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
 ## <a name="members"></a>Üyeler
 
@@ -393,6 +393,6 @@ Döşenmiş kapsamın sonraki-en-önemli bileşeni.
 *_Dim2*<br/>
 Döşenmiş kapsamın en az önemli bileşeni.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

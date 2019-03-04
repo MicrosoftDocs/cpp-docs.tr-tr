@@ -18,12 +18,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - OLE menus and resources [MFC]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
-ms.openlocfilehash: 8b8e278564c2c293cabfcd56ab9ce2cdb4807e19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e8f8c7fa8e24349a741b99822f13d5473373e17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511741"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268531"
 ---
 # <a name="menus-and-resources-ole"></a>Menüler ve Kaynaklar (OLE)
 
@@ -39,7 +39,7 @@ OLE görsel düzenleme ek gereksinimler menü ve hangi iki kapsayıcı modların
 
 Bu, bir uygulamanın olası her modu için üç ayrı menü düzenlerini gerektirir. Hızlandırıcı tablolarını, ayrıca her yeni modu için gereklidir. Kapsayıcılı bir uygulama olabilir veya yerinde etkinleştirme desteklemiyor olabilir; varsa, yeni bir menüsü yapısı gerekir ve Hızlandırıcı tablolarını ilişkili.
 
-Yerinde etkinleştirme kapsayıcı ve sunucu uygulamaları için menüsü araç çubuğu ve durum çubuğu alanı anlaşmaları gerekir gerektirir. Tüm kaynaklar bunu aklınızda tasarlanmalıdır. Makaleyi [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md) bu konuda ayrıntılı ele alınmıştır.
+Yerinde etkinleştirme kapsayıcı ve sunucu uygulamaları için menüsü araç çubuğu ve durum çubuğu alanı anlaşmaları gerekir gerektirir. Tüm kaynaklar bunu aklınızda tasarlanmalıdır. Makaleyi [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md) bu konuda ayrıntılı ele alınmıştır.
 
 Bu sorunları nedeniyle uygulama Sihirbazı ile oluşturulan OLE belge uygulamaları en fazla dört ayrı menülerini ve Hızlandırıcı tablo kaynaklarını olabilir. Bunlar, aşağıdaki nedenlerden dolayı kullanılır:
 
@@ -54,13 +54,12 @@ Bu kaynak adlarının her biri bir menü ve genellikle Hızlandırıcı tablosun
 
 Aşağıdaki makaleler, kapsayıcılar, sunucuları ve menü yerinde etkinleştirme uygulamak için gerekli birleştirme ile ilgili konular açıklanmaktadır:
 
-- [Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)
+- [Menüler ve kaynaklar: Kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md)
 
-- [Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)
+- [Menüler ve kaynaklar: Sunucu ekleme](../mfc/menus-and-resources-server-additions.md)
 
-- [Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)
+- [Menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)
-

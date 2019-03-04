@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DBrushProperties [MFC], CD2DBrushProperties
 - CD2DBrushProperties [MFC], CommonInit
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
-ms.openlocfilehash: 8fa93a6dda6b15b972ea399fc6522a8dec7c8de5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ca791af658ee719b2e6d6ea78f82e23a66edc98
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539028"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270880"
 ---
 # <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties sınıfı
 
@@ -80,6 +80,6 @@ Nesneyi başlatır
 void CommonInit();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

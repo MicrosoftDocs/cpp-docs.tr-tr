@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-ms.openlocfilehash: e69ea2b7446e784bb643050bd122c93ea53a0676
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 031d72903d72af77f6929072e4605d32d81585a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463784"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270208"
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager sınıfı
 
@@ -194,7 +194,7 @@ Oluşturulacak veya açılmış bir nesnenin adı.
 Okuma, yazma, her iki ya da hiçbiri (sıfır) özetlenebilir nesneye erişim. GENERIC_READ, GENERIC_WRITE veya her ikisi de en sık kullanılan değerler şunlardır: GENERIC_READ &#124; GENERIC_WRITE.
 
 *dwShareMode*<br/>
-Paylaşım modu okuma, yazma, her ikisi de olması, silme, bunların tümü veya hiçbiri bir nesnenin: 0, FILE_SHARE_DELETE, FILE_SHARE_READ FILE_SHARE_WRITE.
+, Okuma, yazma, her ikisi de olması, silin, bir nesnenin, bunların tümü veya hiçbiri Paylaşım modu: 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.
 
 *lpSecurityAttributes*<br/>
 Bir işaretçi SECURITY_ATTRIBUTES yapısına bir isteğe bağlı bir güvenlik tanımlayıcısı içerir ve ayrıca döndürülen tanıtıcının alt işlemler tarafından devralınıp olup olmadığını belirler. Parametre NULL olabilir.
@@ -414,7 +414,7 @@ Döndürülen tanıtıcının alt işlemler tarafından devralınıp alınmayaca
 Açılan veya oluşturulan anahtarı için bir tanıtıcı alan bir değişken için bir işaretçi. Anahtar önceden tanımlanmış bir kayıt defteri anahtarlarından biri değilse, çağrı `RegCloseKey` işleci kullanılarak tamamladıktan sonra çalışmaz.
 
 *lpdwDisposition*<br/>
-Aşağıdaki değerlendirme değerlerinden birini alan bir değişken işaretçisi: REG_CREATED_NEW_KEY veya REG_OPENED_EXISTING_KEY.
+Aşağıdaki değerlendirme değerlerinden birini alan bir değişken için bir işaretçi: REG_CREATED_NEW_KEY veya REG_OPENED_EXISTING_KEY.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -521,6 +521,6 @@ Dosya için ayarlanacak dosya öznitelikleri. Daha fazla bilgi için [SetFileAtt
 
 Bu sarmalayıcı çağırır `SetFileAttributesTransacted` işlevi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)

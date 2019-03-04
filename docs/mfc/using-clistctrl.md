@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CListCtrl class [MFC], using
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-ms.openlocfilehash: 9b9e4fe40d0d9f724c2cf7a1b28c4ed72e71855b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e8998000187b65b62886660116c4758c1f03962
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270156"
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 
@@ -52,7 +52,6 @@ Bazı görünümlerde kullanıcılar simgeler farklı konumlara sürükleyin vey
 
 - [Listesi Denetimini Yok Etme](../mfc/destroying-the-list-control.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimler](../mfc/controls-mfc.md)
-

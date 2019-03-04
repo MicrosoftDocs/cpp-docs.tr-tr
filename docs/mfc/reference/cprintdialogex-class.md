@@ -1,5 +1,5 @@
 ---
-title: CPrintDialogEx sınıfı
+title: CPrintDialogEx Class
 ms.date: 11/04/2016
 f1_keywords:
 - CPrintDialogEx
@@ -38,14 +38,14 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-ms.openlocfilehash: fb88cc39ddaffe51b80484bbe8460507a1d0aecb
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: e5ddb2f7b5616acc0f275ad21599abedfbd8d060
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178453"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268971"
 ---
-# <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
+# <a name="cprintdialogex-class"></a>CPrintDialogEx Class
 
 Windows Print özellik sayfası tarafından sağlanan hizmetleri kapsüller.
 
@@ -372,7 +372,7 @@ BOOL PrintSelection() const;
 
 Seçili öğeleri yazdırılması, yalnızca TRUE; Aksi durumda FALSE.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

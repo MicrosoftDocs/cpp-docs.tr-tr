@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CInternetException [MFC], m_dwContext
 - CInternetException [MFC], m_dwError
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
-ms.openlocfilehash: e89293d7b7803cf661bce7a91ea6df72b9a06122
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dedf8926f02dd36dc8d6ac8ab5ff4056b60dfc91
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531579"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270272"
 ---
 # <a name="cinternetexception-class"></a>Cınternetexception sınıfı
 
@@ -105,7 +105,7 @@ Bu hata değeri bir sistem olabilir WINERROR içinde bulunan bir hata kodu. H ve
 
 Win32 hata kodlarına listesi için bkz. [hata kodları](/windows/desktop/Debug/system-error-codes). Internet özel hata iletileri bir listesi için bkz. Windows SDK'yı hem konulardır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

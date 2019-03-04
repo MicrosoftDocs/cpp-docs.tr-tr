@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CMFCHeaderCtrl [MFC], OnDrawSortArrow
 - CMFCHeaderCtrl [MFC], OnFillBackground
 ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
-ms.openlocfilehash: 10d7dda39223e1d6206d2ede96874d9d546c8776
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86674e086da482e59b2711f5ba9154848ff05a6f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538508"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269441"
 ---
 # <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl sınıfı
 
@@ -323,7 +323,7 @@ void SetSortColumn(
 *bAscending*<br/>
 [in] Sütunun sıralama düzenini belirtir, *iColumn* parametre belirtir. Artan düzende ayarlamak için TRUE; Azalan ayarlamak için FALSE. Varsayılan değer True'dur.
 
-*Bekle*<br/>
+*bAdd*<br/>
 [in] TRUE sütunun sıralama düzenini kümesi *iColumn* parametre belirtir.
 
 Üstbilgi denetimine geçerli ise *birden çok sütunu sıralama* modu, bu yöntem, belirtilen sütun sıralama sütunlar listesine ekler. Kullanım [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) birden çok sütunu sıralama modu ayarlamak için.
@@ -336,7 +336,7 @@ FALSE ilk olarak, tüm sütunları sıralama sütunları listeden kaldırın ve 
 
 Bir sütunun sıralama düzenini ayarlamak için bu yöntemi kullanın. Gerekirse, bu yöntem Sütun sıralama sütunlar listesine ekler. Üstbilgi denetimi yukarı veya aşağı işaret eden bir sıralama ok çizmek için sıralama düzeni kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma'
+title: 'MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama işlemini kullanma'
 ms.date: 11/19/2018
 f1_keywords:
 - bindable
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: a5cb73496cd6678e3f45500d9d53c2127b0fb17c
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: e21a31b71e681cdffed555c10079c2598967543f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175815"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265957"
 ---
-# <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
+# <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetiminde veri bağlama işlemini kullanma
 
 ActiveX denetimleri daha güçlü kullanımlarını sağlayan bir veritabanında belirli bir alanla bağlamak için denetimin bir özelliğine veri bağlama biridir. Bir kullanıcı bu bağlı özelliğin veri değiştirdiğinde, Denetim veritabanı ve kayıt alanı güncelleştirilmesi istekleri bildirir. Veritabanı denetimi başarılı veya başarısız istek sonra bildirir.
 
@@ -133,7 +133,6 @@ Bir veri alma/ayarlama yöntemi bağlantılı yanı sıra da oluşturabilirsiniz
 
 Artık denetim kaydolacak proje oluşturabilirsiniz. Bir iletişim kutusu denetimi eklediğinizde **veri alanı** ve **veri kaynağı** özellikler eklendi ve artık bir veri kaynağı ve Denetimde görüntülenecek alan seçebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

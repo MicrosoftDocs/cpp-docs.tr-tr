@@ -5,12 +5,12 @@ helpviewer_keywords:
 - security, MFC Feature Pack
 - MFC Feature Pack, security
 ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
-ms.openlocfilehash: cdb8e0d39a76f749011ca3c680e25b86212b6519
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9164983a6634e069195f3498bea56b595a2a2381
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434431"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267452"
 ---
 # <a name="security-implications-of-customization"></a>Özelleştirmenin Güvenlikle İlgili Etkileri
 
@@ -32,7 +32,6 @@ Kayıt defteri güvenlik açıklarını kapatmak için bu üç yoldan herhangi b
 
 - Özelleştirmeleri uygulamanızda da devre dışı bırakabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC için Özelleştirme](../mfc/customization-for-mfc.md)
-

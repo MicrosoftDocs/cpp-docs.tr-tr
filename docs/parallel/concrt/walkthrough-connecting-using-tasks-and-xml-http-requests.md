@@ -1,19 +1,19 @@
 ---
-title: 'İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma'
+title: 'İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - connecting to web services, UWP apps [C++]
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: dfe4f111e130520f1c4948dc00fdf340e4d3113e
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: f78adda7625d3a3def60de968c5e7be97f282a7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175853"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266516"
 ---
-# <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma
+# <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma
 
 Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimleri birlikte bir web hizmeti, bir evrensel Windows Platformu (UWP HTTP GET ve POST istekleri göndermek için görevler ) uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte diğer görevlerle ölçeklemesini kod yazabilirsiniz. Örneğin, indirme görev görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal edildiğinde indirme görev de yanıt verebilirsiniz.
 
@@ -106,7 +106,7 @@ Bu bölümde, nasıl kullanılacağını gösteren `HttpRequest` bir UWP uygulam
 
 [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>

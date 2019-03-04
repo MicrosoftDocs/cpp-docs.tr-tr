@@ -6,12 +6,12 @@ helpviewer_keywords:
 - exchanging data with property sheets [MFC]
 - DDX (dialog data exchange) [MFC], property sheets
 ms.assetid: 689f02d0-51a9-455b-8ffb-5b44f0aefa28
-ms.openlocfilehash: 84e2ff9478cb3606bafb7f0408b7e2cc8fee2c00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de82a337f19b7b2ac6039fd3f3c16ab67aa1dc99
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569643"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265931"
 ---
 # <a name="exchanging-data"></a>Veri Değişimi
 
@@ -25,7 +25,6 @@ Aşağıdaki örnek bir görünümü ve bir özellik sayfası iki sayfaları ara
 
 [!code-cpp[NVC_MFCDocView#4](../mfc/codesnippet/cpp/exchanging-data_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik sayfaları](../mfc/property-sheets-mfc.md)
-

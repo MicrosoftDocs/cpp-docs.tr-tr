@@ -268,12 +268,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::rba
 - amp_short_vectors/Concurrency::graphics::uint_4::set_yzx
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-ms.openlocfilehash: e763c2654f0edaa02ceaa5294eb33ef02e69ee9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5c0482854a08973593e9c67f2f51d5706304831
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579042"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266815"
 ---
 # <a name="uint4-class"></a>uint_4 Sınıfı
 
@@ -464,10 +464,10 @@ class uint_4;
 |Ad|Açıklama|
 |----------|-----------------|
 |uint_4::a||
-|uint_4::AB||
+|uint_4::ab||
 |uint_4::abg||
 |uint_4::abgr||
-|uint_4::ABR||
+|uint_4::abr||
 |uint_4::abrg||
 |uint_4::AG||
 |uint_4::agb||
@@ -478,7 +478,7 @@ class uint_4;
 |uint_4::arb||
 |uint_4::arbg||
 |uint_4::arg||
-|uint_4::ARGB||
+|uint_4::argb||
 |uint_4::b||
 |uint_4::ba||
 |uint_4::BAG||
@@ -486,7 +486,7 @@ class uint_4;
 |uint_4::bar||
 |uint_4::barg||
 |uint_4::bg||
-|uint_4::BGA||
+|uint_4::bga||
 |uint_4::bgar||
 |uint_4::BGR||
 |uint_4::bgra||
@@ -496,7 +496,7 @@ class uint_4;
 |uint_4::brg||
 |uint_4::brga||
 |uint_4::g||
-|uint_4::GA||
+|uint_4::ga||
 |uint_4::gab||
 |uint_4::gabr||
 |uint_4::gar||
@@ -517,7 +517,7 @@ class uint_4;
 |uint_4::rabg||
 |uint_4::rag||
 |uint_4::ragb||
-|uint_4::RB||
+|uint_4::rb||
 |uint_4::rba||
 |uint_4::rbag||
 |uint_4::rbg||
@@ -600,7 +600,7 @@ class uint_4;
 
 **Başlık:** amp_short_vectors.h
 
-**Namespace:** Concurrency::graphics
+**Namespace:** CONCURRENCY::Graphics
 
 ## <a name="uint_4__ctor"></a> uint_4
 
@@ -667,6 +667,6 @@ Başlatmak için kullanılan nesne.
 static const int size = 4;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

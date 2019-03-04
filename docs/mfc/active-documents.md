@@ -9,12 +9,12 @@ helpviewer_keywords:
 - views [MFC], active documents
 - active documents [MFC], views
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-ms.openlocfilehash: e6f8161432cc951b5e224ec28142429efbdf0726
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 519dd51ab9b46adf862999104e97c6e478ccd86b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639666"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269246"
 ---
 # <a name="active-documents"></a>Etkin Belgeler
 
@@ -98,7 +98,6 @@ Etkin belge yalnızca tek bir görünümde destekliyorsa, sonra etkin belgeyi ve
 
 Bir komut hedefi bir görünüm nesnesi yapılabilir. Uygulayarak `IOleCommandTarget` kapsayıcının kullanıcı arabiriminde kaynaklanan komutları bir görünümünü alabilir (gibi **yeni**, **açık**, **Kaydet**,  **Yazdırma** üzerinde **dosya** menüsü ve **kopyalama**, **Yapıştır**, **geri** üzerinde **Düzenle** menü). Daha fazla bilgi için [ileti işleme ve komut hedefleri](../mfc/message-handling-and-command-targets.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
-

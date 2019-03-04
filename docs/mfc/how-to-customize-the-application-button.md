@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Uygulama Düğmesini Özelleştirme'
+title: 'Nasıl yapılır: Uygulama düğmesini özelleştirme'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - application button [MFC], customizing
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-ms.openlocfilehash: ba29e9ad65e0bb1d2163e4051c7c7b53664d8817
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: d45ceaf1cce21f77871e966e0e8f525f95cb4c37
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175333"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269545"
 ---
-# <a name="how-to-customize-the-application-button"></a>Nasıl yapılır: Uygulama Düğmesini Özelleştirme
+# <a name="how-to-customize-the-application-button"></a>Nasıl yapılır: Uygulama düğmesini özelleştirme
 
 Uygulama Düğmeye tıkladığınızda, komutları içeren bir menü görüntülenir. Genellikle, menü gibi dosya ile ilgili komutları içeren **açık**, **Kaydet**, **yazdırma**, ve **çıkış**.
 
@@ -45,7 +45,7 @@ Aşağıdaki tabloda, uygulama düğmesini özelliklerini tanımlar.
 |**Ana öğeler**|Uygulama menüsünde görüntülenen menü öğelerinin bir koleksiyonunu içerir.|
 |**MRU başlığı**|Son liste Panoda görüntülenen metni belirtir.|
 |**Küçük resimler**|Bir dizi 16 x 16 simgeleri içeren görüntünün tanımlayıcısını belirtir. Simge düğmeleri koleksiyondaki düğmeleri tarafından kullanılır.|
-|**Kullanın**|Etkinleştirir veya yeni liste bölmesi devre dışı bırakır. Uygulama menüsünde Yeni liste bölmesi görünür.|
+|**Kullanma**|Etkinleştirir veya yeni liste bölmesi devre dışı bırakır. Uygulama menüsünde Yeni liste bölmesi görünür.|
 |**Genişlik**|Yeni liste bölmesi piksel cinsinden genişliğini belirtir.|
 
 Uygulama menüsünde tasarım yüzeyinde görünmüyor. Bunu görüntülemek için şeridi önizlemenizi veya uygulamayı çalıştırın.
@@ -54,6 +54,6 @@ Uygulama menüsünde tasarım yüzeyinde görünmüyor. Bunu görüntülemek iç
 
 - Üzerinde **Şerit Düzenleyici araç çubuğu**, tıklayın **şeridi Sına**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)

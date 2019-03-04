@@ -20,12 +20,12 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: b37105cf1afdcf966176a2e2615f9c141022088d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2b2d0935380caed8ad9d6741b9107a5f879f7903
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520524"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268069"
 ---
 # <a name="colevariant-class"></a>COleVariant sınıfı
 
@@ -157,7 +157,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) yeni içine kopyal
 *curSrc*<br/>
 A [COleCurrency](../../mfc/reference/colecurrency-class.md) yeni içine kopyalanacak nesne `COleVariant` nesne.
 
-*fltsrc &*, *; dblsrc &*<br/>
+*fltSrc*, *dblSrc*<br/>
 Yeni içine kopyalanacak bir sayısal değer `COleVariant` nesne.
 
 *timeSrc*<br/>
@@ -399,6 +399,6 @@ Parametre *vtSrc* VT_BSTR (UNICODE) veya VT_BSTRT (ANSI) olmalıdır. `SetString
 
 DAO kayıt kümesinde bir UNICODE olmayan derleme dizeleri ANSI olmasını bekliyor. Bu nedenle, kullanan işlevler için DAO `COleVariant` nesneleri, UNICODE kayıt oluşturmuyorsanız, kullanmalıdır **COleVariant::COleVariant (** *lpszSrc* **,** *vtSrc* **)** oluşturucuyla biçiminin *vtSrc* VT_BSTRT (ANSI) olarak ayarlayabilir veya kullanabilirsiniz `SetString` ile *vtSrc* VT için ayarlayın ANSI dizelerini yapmak _BSTRT. Örneğin, `CDaoRecordset` işlevleri [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) kullanın `COleVariant` parametre olarak nesne. DAO kayıt UNICODE değilse, bu nesnelerin ANSI olması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

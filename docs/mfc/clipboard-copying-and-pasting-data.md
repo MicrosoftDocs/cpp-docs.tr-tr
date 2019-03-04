@@ -1,18 +1,18 @@
 ---
-title: 'Pano: Veri Kopyalama ve Yapıştırma'
+title: 'Pano: Veri kopyalama ve yapıştırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: 7f22418b4006bcb9fac1d4430660c8721bc7e903
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da589743e98b2ac020e006aedb0ccc0415998f17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437046"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270741"
 ---
-# <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri Kopyalama ve Yapıştırma
+# <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri kopyalama ve yapıştırma
 
 Bu konu, kopyalama ve OLE uygulamanızda panodan yapıştırma uygulamak gerekli en düşük iş açıklar. Okumanızı tavsiye edilir [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) devam etmeden önce konuları.
 
@@ -67,7 +67,6 @@ Düzen menüsündeki Özel Yapıştır seçeneği işlemek için Ek Yardım konu
 
 - [OLE](../mfc/ole-background.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Pano: OLE Pano Mekanizmasını Kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
-
+[Pano: OLE Pano mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)

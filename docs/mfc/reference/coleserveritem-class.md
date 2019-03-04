@@ -74,12 +74,12 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-ms.openlocfilehash: e0d48d37d8262c4e82a8532333bbd12f193087b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f774a8db1121dd293db8e58f7cd92aaabaeabada
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604142"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270559"
 ---
 # <a name="coleserveritem-class"></a>Coleserverıtem sınıfı
 
@@ -155,7 +155,7 @@ Bağlantılı bir öğe bazılarını veya tümünü bir sunucu belgeyi temsil e
 
 Kullanılacak `COleServerItem`, bir sınıf türetmeniz ve uygulama [OnDraw](#ondraw) ve [serileştirme](../../mfc/reference/cobject-class.md#serialize) üye işlevleri. `OnDraw` İşlevi bir bileşik belge kapsayıcı Uygulaması açıldığında görüntülenen izin veren bir öğenin meta dosyası temsili sağlar. `Serialize` İşlevi `CObject` yerel gösterimine izin vererek sunucu ve kapsayıcı uygulamalar arasında aktarılması gömülü bir öğe, bir öğenin sağlar. [OnGetExtent](#ongetextent) öğesi boyutu kapsayıcıya etkinleştirme kapsayıcı öğenin doğal bir boyut sağlar.
 
-Sunucuları ve ilgili konular hakkında daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md) ve "Oluşturma bir kapsayıcı/sunucu uygulaması" makalesinde [kapsayıcılar: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).
+Sunucuları ve ilgili konular hakkında daha fazla bilgi için bkz [sunucuları: Sunucu uygulama](../../mfc/servers-implementing-a-server.md) ve "Oluşturma bir kapsayıcı/sunucu uygulaması" makalesinde [kapsayıcıları: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -995,7 +995,7 @@ void SetItemName(LPCTSTR lpszItemName);
 
 Ad bu belgenin içinde benzersiz olmalıdır. Bağlantılı bir öğeyi düzenlemek için bir sunucu uygulaması çağrıldığında, uygulama öğeyi bulmak için bu adı kullanır. Katıştırılmış öğeleri için bu işlevi çağırın gerekmez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [CDocItem Sınıfı](../../mfc/reference/cdocitem-class.md)<br/>

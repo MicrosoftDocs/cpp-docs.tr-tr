@@ -11,12 +11,12 @@ helpviewer_keywords:
 - painting classes [MFC]
 - output classes [MFC]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
-ms.openlocfilehash: 6bddebb17663e8d22a4bf784d2a9d08a2f912e59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d76570e7bfd4ce587b3803235394ec5406d30b2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651834"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266659"
 ---
 # <a name="output-device-context-classes"></a>Çıktı (Cihaz Bağlamı) Sınıfları
 
@@ -65,7 +65,6 @@ Standart iletişim kutusu, yazı tipi seçmek için sağlar.
 [CPrintDialog](../mfc/reference/cprintdialog-class.md)<br/>
 Dosya yazdırma için standart bir iletişim kutusu sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

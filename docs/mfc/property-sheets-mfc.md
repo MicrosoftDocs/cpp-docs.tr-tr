@@ -7,12 +7,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], property sheets
 - tab dialog boxes
 ms.assetid: 09439f65-921d-45a2-b3cc-e13884a087b1
-ms.openlocfilehash: efcaaec38309cd6d675ebaa418f3bb0f0683547b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b33f123c7b024e0de0853f8d30211272fd8de58a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514991"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267608"
 ---
 # <a name="property-sheets-mfc"></a>Özellik Sayfaları (MFC)
 
@@ -40,6 +40,6 @@ Bu makaleler ailesi, özellik sayfaları desteği, MFC uygulamalarında uygulama
 
 - [Örnek](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

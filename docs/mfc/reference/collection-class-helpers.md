@@ -10,16 +10,16 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-ms.openlocfilehash: 639c4f7952abcf18c29aa3cb0d9fee45b50430af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3992e6c0cf25925e01858016e4bac93d5552fe8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567475"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266152"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
-Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalama ve öğeleri seri hale getirme gibi amaçlar için şablonlu genel yardımcı işlevleri kullanın. Temel sınıflar, uygulamanızın bir parçası olarak `CMap`, `CList`, ve `CArray`, gerektiğinde bu işlevlerin sürümleri eşlemesi, liste veya dizi depolanan verilerin türünü uyarlanmış geçersiz kılmanız gerekir. Gibi yardımcı işlevleri geçersiz kılma hakkında daha fazla bilgi için `SerializeElements`, makaleye göz atın [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Unutmayın `ConstructElements` ve `DestructElements` kullanım dışı bırakıldı.
+Koleksiyon sınıfları `CMap`, `CList`, ve `CArray` karşılaştırma, kopyalama ve öğeleri seri hale getirme gibi amaçlar için şablonlu genel yardımcı işlevleri kullanın. Temel sınıflar, uygulamanızın bir parçası olarak `CMap`, `CList`, ve `CArray`, gerektiğinde bu işlevlerin sürümleri eşlemesi, liste veya dizi depolanan verilerin türünü uyarlanmış geçersiz kılmanız gerekir. Gibi yardımcı işlevleri geçersiz kılma hakkında daha fazla bilgi için `SerializeElements`, makaleye göz atın [koleksiyonlar: Tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Unutmayın `ConstructElements` ve `DestructElements` kullanım dışı bırakıldı.
 
 Microsoft Foundation Class Kitaplığı afxtempl.h koleksiyon sınıflarınızı özelleştirmenize yardımcı olması için aşağıdaki genel işlevler sağlar:
 
@@ -105,7 +105,7 @@ Kopyalanacak öğe sayısı.
 
 Varsayılan uygulama kullanan basit atama işleci ( **=** ) kopyalama işlemini gerçekleştirmek için. Kopyalanan türü aşırı yüklenmiş bir işleç yoksa varsayılan uygulama bit düzeyinde bir kopyalama gerçekleştirir. ardından, =.
 
-Uygulama bu ve diğer yardımcı işlevleri hakkında daha fazla bilgi için bkz [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
+Uygulama bu ve diğer yardımcı işlevleri hakkında daha fazla bilgi için bkz [koleksiyonlar: Tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -161,7 +161,7 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
 *ARG_KEY*<br/>
 Harita anahtarlarını erişmek için kullanılan veri türü belirten bir şablon parametre.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Karma değeri hesaplanacak olan anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -216,17 +216,17 @@ Arşivlenen öğe sayısı
 
 Varsayılan uygulama bit düzeyinde mu okuma veya yazma.
 
-Uygulama bu ve diğer yardımcı işlevleri hakkında daha fazla bilgi için bkz [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
+Uygulama bu ve diğer yardımcı işlevleri hakkında daha fazla bilgi için bkz [koleksiyonlar: Tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="example"></a>Örnek
 
-Makaleyi örneğe bakın [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
+Makaleyi örneğe bakın [koleksiyonlar: Tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
   **Üst bilgi** afxtempl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [CMap Sınıfı](cmap-class.md)<br/>

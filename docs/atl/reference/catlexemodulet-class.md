@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-ms.openlocfilehash: d31dd9ed1d30633b8f7078794dad06d51ec119f2
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 3891741cb6998ec8621795801ce409aa40ab6d1d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893447"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270390"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 
@@ -351,7 +351,7 @@ Yürütülebilir dosya'nın dönüş değeri döndürür.
 
 Bu yöntem geçersiz kılınabilir. Kılıyorsa [CAtlExeModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::PostMessageLoop](#postmessageloop), veya [CAtlExeModuleT::RunMessageLoop](#runmessageloop) yeterli esneklik sağlamaz , geçersiz kılmak mümkündür `WinMain` bu yöntemi kullanarak işlev.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATLDuck örnek](../../visual-cpp-samples.md)<br/>
 [CAtlModuleT Sınıfı](../../atl/reference/catlmodulet-class.md)<br/>

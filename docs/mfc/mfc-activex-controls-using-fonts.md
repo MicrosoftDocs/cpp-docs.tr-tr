@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma'
+title: 'MFC ActiveX denetimleri: Yazı tiplerini kullanma'
 ms.date: 11/19/2018
 f1_keywords:
 - OnFontChanged
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-ms.openlocfilehash: 9fb7668f65b04372b87059034c3ec6cd20abc48d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ce1e913bb3bd1c3b74db43dc02d9d360b9cfd00c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175827"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271313"
 ---
-# <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
+# <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX denetimleri: Yazı tiplerini kullanma
 
 ActiveX denetimi metin görüntülüyorsa, denetimi kullanıcısı bir yazı tipi özelliğini değiştirerek metni görünümünü değiştirmek izin verebilirsiniz. Yazı tipi özellikleri yazı tipi nesneleri olarak uygulanır ve iki türden biri olabilir: kullanıma hazır veya özel. Stok yazı tipi özellikleri, Özellik Ekleme Sihirbazı'nı kullanarak ekleyebilirsiniz preimplemented yazı tipi özelliklerdir. Özel yazı tipi özellikleri değil preimplemented ve özelliğin davranışlarını ve kullanım denetimi Geliştirici belirler.
 
@@ -42,7 +42,7 @@ Stok yazı tipi özellikleri sınıfı tarafından preimplemented [COleControl](
 
 Yazı tipi nesnesi aracılığıyla erişmesine [GetFont](../mfc/reference/colecontrol-class.md#getfont), [SetFont](../mfc/reference/colecontrol-class.md#setfont), ve [InternalGetFont](../mfc/reference/colecontrol-class.md#internalgetfont) işlevlerini `COleControl`. Yazı tipi nesnesinin aracılığıyla denetim kullanıcı erişecek `GetFont` ve `SetFont` herhangi bir Get/Set özelliği ile aynı şekilde işlevleri. Yazı nesnesine erişim gelen denetim gerekli olduğunda kullanın `InternalGetFont` işlevi.
 
-Bölümünde açıklandığı gibi [MFC ActiveX denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md), stok Özellikler ekleme ile kolay [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md). Font özelliği seçin ve Özellik Ekleme Sihirbazı'nı denetimin dağıtım eşlemesi stok yazı tipi girişine otomatik olarak ekler.
+Bölümünde açıklandığı gibi [MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md), stok Özellikler ekleme ile kolay [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md). Font özelliği seçin ve Özellik Ekleme Sihirbazı'nı denetimin dağıtım eşlemesi stok yazı tipi girişine otomatik olarak ekler.
 
 #### <a name="to-add-the-stock-font-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak stok yazı tipi özellik eklemek için
 
@@ -233,9 +233,8 @@ Başlık yazı tipi (Denetim oluşturucuda) başlatır kodda değişiklik &*m_xF
 
 Projenize bu değişiklikler yapıldıktan sonra projeyi yeniden derleyin ve arabirimi testi için Test kapsayıcısını kullanın. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: ActiveX Denetiminde Resim Kullanma](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
-[MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
-
+[MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
+[MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)

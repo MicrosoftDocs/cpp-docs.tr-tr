@@ -5,12 +5,12 @@ helpviewer_keywords:
 - threading [C++], about threading
 - multithreading [C++], about threads
 ms.assetid: 02443596-f7e1-48d0-b3a4-39ee0e54e444
-ms.openlocfilehash: 0b79fe84fbf7d910d53cb5bc333668b7d99ab8ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd10893ecd33d39b531b9451dec708ea31c121d4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502057"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267322"
 ---
 # <a name="multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlar
 
@@ -20,6 +20,6 @@ Bir işlem bir veya daha fazla iş parçacığı ve kod, veri ve diğer kaynakla
 
 Bir işlemdeki her iş parçacığı bağımsız olarak çalışır. Bunları birbirine görünür yaptığınız sürece, iş parçacıkları tek tek yürütün ve diğer iş parçacığı bir işlemdeki farkında değildir. Ortak kaynakları paylaşma iş parçacıkları ancak iş parçacıklarıyla veya işlemler arası iletişim başka bir yöntem kullanılarak koordine etmeleri gerekir. İş parçacıklarını eşitleme hakkında daha fazla bilgi için bkz. [bir çoklu iş parçacığı kullanan Win32 programı yazma](writing-a-multithreaded-win32-program.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

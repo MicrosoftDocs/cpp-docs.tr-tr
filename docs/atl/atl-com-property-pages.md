@@ -9,12 +9,12 @@ helpviewer_keywords:
 - COM objects, ATL
 - ATL property pages
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
-ms.openlocfilehash: 5bc17bfc415576d50c84e880bef955e49d926c86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90dafc411f3262dc458c5158df049740a9d7a683
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595566"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266906"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
 
@@ -42,7 +42,6 @@ Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](/windows/de
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../atl/active-template-library-atl-concepts.md)
-

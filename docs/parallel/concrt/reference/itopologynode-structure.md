@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - ITopologyNode structure
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
-ms.openlocfilehash: 4f880e3c44cd9f301aa65d45500ed7f1d1725bc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 867e0543d1b9f2810a3fe761f038947c4d88da4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636663"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268635"
 ---
 # <a name="itopologynode-structure"></a>ITopologyNode Yapısı
 
@@ -125,6 +125,6 @@ Windows, bu kaynak yöneticisi düğümünün ait olduğu NUMA düğüm numaras�
 
 Bu düğüme ait bir sanal işlemci kökünde çalışan iş parçacığı proxy en az benzeşimi olacaktır NUMA nodu düzeyinde bu yöntem tarafından döndürülen NUMA düğümü için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

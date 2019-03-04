@@ -11,12 +11,12 @@ helpviewer_keywords:
 - constructors [MFC], declaring
 - instance constructors, code comments
 ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
-ms.openlocfilehash: ee36ad991f2a19211b494010d6ff0a5338b80557
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0d02af016a0c7bfb0869b7cdd30fe0db2975102
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480710"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265815"
 ---
 # <a name="-constructors-comment"></a>// Oluşturucu Açıklaması
 
@@ -24,11 +24,10 @@ ms.locfileid: "50480710"
 
 Örneğin, sınıf `CStdioFile` biri altında listesinde gösterilir, üç Oluşturucusu vardır [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)<br/>
 [Uygulama açıklaması](../mfc/decrement-implementation-comment.md)<br/>
 [Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)<br/>
 [/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)<br/>
 [Geçersiz kılınabilen öğelerle ilgili açıklama](../mfc/decrement-overridables-comment.md)
-

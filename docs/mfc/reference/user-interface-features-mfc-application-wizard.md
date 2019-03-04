@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, user interface features
 ms.assetid: 59e7b829-a665-42eb-be23-3f2a36eb2dad
-ms.openlocfilehash: 99785e2e6ef1c0644833d582774380bff792ac9c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ca67d4cac3786ce8bb059464d47acf17e3ecdc7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429282"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266074"
 ---
 # <a name="user-interface-features-mfc-application-wizard"></a>Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı
 
@@ -61,7 +61,6 @@ Bu konuda, uygulamanızın görünümünü belirtmek için kullanabileceğiniz s
 
    İçin [CDialog sınıfı](../../mfc/reference/cdialog-class.md)-Bu konu başlığı iletişim kutusunun başlık çubuğunda görünür tabanlı uygulamaları yalnızca. Bu alan düzenlemek için önce seçmelisiniz **iletişim kutusu tabanlı** altındaki **uygulama türü**. Daha fazla bilgi için [Application Type, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)
-

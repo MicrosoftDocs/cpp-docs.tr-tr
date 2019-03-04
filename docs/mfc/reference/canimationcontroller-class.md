@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: 93189c5c9301e513cfbdf110cf7753e211420fef
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 114b6bffdc63ecadc951965f8f199b229f0f7672
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894139"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270286"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 
@@ -1129,6 +1129,6 @@ virtual void UpdateAnimationManager();
 
 Bu yöntem geçerli zamanı animasyon yöneticiye ilerler arama, gerektiği şekilde film şeritleri durumlarını değiştirme ve herhangi bir animasyon değişkenini uygun güncelleştirme değerleri ilişkilendirilmiş. Dahili olarak IUIAnimationTimer::GetTime(timeNow) ve IUIAnimationManager::Update(timeNow) bu yöntemi çağırır. Türetilen bir sınıfta bu davranışını özelleştirmek için bu yöntemi yok sayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

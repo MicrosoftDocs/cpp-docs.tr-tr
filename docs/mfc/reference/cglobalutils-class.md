@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CGlobalUtils [MFC], StringFromCy
 - CGlobalUtils [MFC], StringFromDecimal
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-ms.openlocfilehash: bd382a7f0143d1dce75815430741ef58cee0f8c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c92d3d74bac5e14ed791c6d77cca21eb66a4735
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643319"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271664"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils sınıfı
 
@@ -392,7 +392,7 @@ BOOL StringFromDecimal(
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

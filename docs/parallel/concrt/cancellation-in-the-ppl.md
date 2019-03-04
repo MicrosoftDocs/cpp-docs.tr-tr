@@ -9,19 +9,19 @@ helpviewer_keywords:
 - parallel work trees [Concurrency Runtime]
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-ms.openlocfilehash: 1cb5404ff8c18492b940f7396ab4c8f4154d69e6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: fae45e04d8b573cca29cc31403a39fc7ee53cc6a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177023"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271742"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 
 Bu belge, paralel Desen kitaplığı (PPL), paralel işi iptal etmek nasıl ve ne zaman paralel işi iptal edildi belirleme iptal rolünü açıklar.
 
 > [!NOTE]
->  Çalışma zamanı özel durum işleme iptal uygulamak için kullanır. Catch değildir veya kodunuzda bu özel durumları işleme. Ayrıca, görevleriniz için işlev gövdeleri içinde özel durum-güvenli kod yazma öneririz. Örneği için kullanabileceğiniz *olduğu kaynak alımı başlatma* (RAII) deseni, bir görev gövdesinde bir özel durum oluştuğunda kaynaklar düzgün şekilde işlendiğinden emin olmak için. İptal edilebilen bir görevi kaynak temizlemek için RAII deseni kullanan tam bir örnek için bkz [izlenecek yol: bir kullanıcı arabirimi iş parçacığı kaldırma çalışma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md).
+>  Çalışma zamanı özel durum işleme iptal uygulamak için kullanır. Catch değildir veya kodunuzda bu özel durumları işleme. Ayrıca, görevleriniz için işlev gövdeleri içinde özel durum-güvenli kod yazma öneririz. Örneği için kullanabileceğiniz *olduğu kaynak alımı başlatma* (RAII) deseni, bir görev gövdesinde bir özel durum oluştuğunda kaynaklar düzgün şekilde işlendiğinden emin olmak için. İptal edilebilen bir görevi kaynak temizlemek için RAII deseni kullanan tam bir örnek için bkz [izlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md).
 
 ## <a name="key-points"></a>Önemli Noktalar
 
@@ -71,7 +71,7 @@ Ayrıca [concurrency::task_group](reference/task-group-class.md) benzer bir iş 
 
 Paralel işi iptal etmek için birden çok yolu vardır. Tercih edilen yol, bir iptal belirteci kullanmaktır. Görev grupları da desteği [concurrency::task_group::cancel](reference/task-group-class.md#cancel) yöntemi ve [CONCURRENCY::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) yöntemi. Son özel durum bir görev iş işlevin gövdesinde yöntemdir. Seçtiğiniz yöntem ne olursa olsun, iptal hemen gerçekleşmez anlayın. Bir görevi veya görev grubunu iptal ederseniz yeni iş başlatılmadı olsa da, etkin çalışma denetleyin ve iptal için yanıt.
 
-Paralel görevleri iptal etme daha fazla örnek için bkz [izlenecek yol: görevleri kullanarak bağlanma ve XML HTTP isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [nasıl yapılır: paralel bir döngüden kullanım İptalden sona](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), ve [nasıl yapılır: kullanın Özel durum paralel bir döngüden kurtulmak için işlemeyi](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
+Paralel görevleri iptal etme daha fazla örnek için bkz. [izlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [nasıl yapılır: İptal paralel bir döngüden kurtulmak için](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), ve [nasıl yapılır: Özel durum paralel bir döngüden kurtulmak için işlemeyi kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
 
 ###  <a name="tokens"></a> Paralel işi iptal etmek için bir iptal belirteci kullanma
 
@@ -244,8 +244,8 @@ Her iptal yöntemi diğer avantajları vardır. Belirli ihtiyaçlarınıza uygun
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için İptal](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)|Paralel arama algoritması uygulamak için İptal kullanmayı gösterir.|
-|[Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için Özel Durum İşlemeyi Kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Nasıl kullanılacağını gösterir `task_group` temel ağaç yapısı için bir arama algoritması yazma sınıfı.|
+|[Nasıl yapılır: Paralel Döngüden Kurtulmak için İptal Kullanma](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)|Paralel arama algoritması uygulamak için İptal kullanmayı gösterir.|
+|[Nasıl yapılır: Paralel Döngüden Kurtulmak için Özel Durum İşlemeyi Kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Nasıl kullanılacağını gösterir `task_group` temel ağaç yapısı için bir arama algoritması yazma sınıfı.|
 |[Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Çalışma zamanının görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işlediğini ve uygulamalarınızda özel durumları yanıt verecek şekilde nasıl açıklar.|
 |[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Görevler, görev grupları nasıl ilişkili olduğunu ve yapılandırılmamış ve yapılandırılmış görevler uygulamalarınızda nasıl kullanabileceğinizi açıklar.|
 |[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Eşzamanlı koleksiyon veri çalışma gerçekleştirme paralel algoritmalar açıklar|
@@ -259,9 +259,8 @@ Her iptal yöntemi diğer avantajları vardır. Belirli ihtiyaçlarınıza uygun
 
 [cancellation_token Sınıfı](../../parallel/concrt/reference/cancellation-token-class.md)
 
-[task_group sınıfı](reference/task-group-class.md)
+[task_group Sınıfı](reference/task-group-class.md)
 
 [structured_task_group Sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)
 
 [parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)
-

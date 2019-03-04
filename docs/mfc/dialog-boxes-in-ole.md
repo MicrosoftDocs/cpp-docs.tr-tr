@@ -10,12 +10,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: 53e802e973ca78619252fcc4100a7cc50009f2ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1081a831cc2b9fc0ab22e2c80a4f657466534d86
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618519"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270897"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE'deki İletişim Kutuları
 
@@ -39,9 +39,8 @@ Edit Links iletişim kutusu kaynağı bağlı nesnede hakkındaki bilgileri değ
 *Sunucu meşgul veya sunucu yanıt vermiyor*<br/>
 Kullanıcı bir öğeyi etkinleştirmeyi dener ve sunucu isteği işlemek genellikle sunucunun olduğundan başka bir kullanıcı tarafından kullanımda veya görev şu anda işleyemiyor sunucu meşgul iletişim kutusu görüntülenir. Sunucu etkinleştirme isteği hiç yanıt vermezse, sunucunun yanıt vermemesine iletişim kutusu görüntülenir. Bu iletişim kutularından aracılığıyla görüntülenen `COleMessageFilter`OLE arabiriminin göre `IMessageFilter`, ve kullanıcı etkinleştirme isteği yeniden denemek karar verebilirsiniz. Kullanım [COleBusyDialog](../mfc/reference/colebusydialog-class.md) bu iletişim kutusunu görüntülemek için sınıf.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
 [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [OLE](../mfc/ole-in-mfc.md)
-

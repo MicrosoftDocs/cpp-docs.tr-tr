@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleCmdUI [MFC], SetCheck
 - COleCmdUI [MFC], SetText
 ms.assetid: a2d5ce08-6657-45d3-8673-2a9f32d50eec
-ms.openlocfilehash: 30caf7b42cf570a5dcd92d48817ef3743cf63811
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5dc4e9504805146a9eff0f5ab937868226e4516e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677441"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270875"
 ---
 # <a name="colecmdui-class"></a>Colecmduı sınıfı
 
@@ -136,8 +136,7 @@ virtual void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 Komutu ile kullanılacak metin işaretçisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

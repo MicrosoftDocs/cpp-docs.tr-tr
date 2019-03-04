@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], SetPalette
 - CMFCRibbonColorButton [MFC], UpdateColor
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-ms.openlocfilehash: f0a55fa9cb431900a0454d481a77efc4e63372ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7901619110652423a2ab00d8088d6b9213fe202
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644840"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266283"
 ---
 # <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton sınıfı
 
@@ -427,7 +427,7 @@ void UpdateColor(COLORREF color);
 
 `CMFCRibbonColorButton::UpdateColor` Yöntemi şu anda seçili düğmenin rengini değiştirir ve kendi üst WM_COMMAND ileti ile BN_CLICKED standart bildirim göndererek size bildirir. Kullanım [CMFCRibbonColorButton::GetColor](#getcolor) seçilen rengin almak için yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,18 +1,18 @@
 ---
-title: 'Kapsayıcılar: Bir Kapsayıcı Uygulama'
+title: 'Kapsayıcılar: Bir kapsayıcı uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [OLE], OLE container
 - OLE containers [MFC], implementing
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-ms.openlocfilehash: 89bb8b483dba6e635eef5d9857bb558eca8e8fec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ab91316c9ee07296fbc46f9f17b3c46c71ee96f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546711"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271430"
 ---
-# <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir Kapsayıcı Uygulama
+# <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir kapsayıcı uygulama
 
 Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalar kapsayıcılar uygulama hakkında daha ayrıntılı sağlayan diğer makalelere gösterir. Ayrıca, uygulamak istediğiniz bazı isteğe bağlı OLE özellikleri ve bu özellikleri açıklayan makaleleri listeler.
 
@@ -46,7 +46,7 @@ Uygulama bu özelliklerin bir uygulamadan diğerine önemli ölçüde değişir 
 
 Uygulama Sihirbazı'nı sizin için sınıf derleyeceği fakat geçersiz kılmak büyük olasılıkla gerekir `OnChange` ve diğer işlevler önceki yordamdaki 2. adımda birlikte listelenir. Bu işlevleri farklı bir uygulamadan diğerine uygulanır nedeniyle iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekir. Bu örnekler için bkz. MFC örnekleri [DRAWCLI](../visual-cpp-samples.md) ve [KAPSAYICI](../visual-cpp-samples.md).
 
-OLE desteklemek için kapsayıcı uygulama menüsü yapısı birçok öğe eklemeniz gerekir. Bunlar hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
+OLE desteklemek için kapsayıcı uygulama menüsü yapısı birçok öğe eklemeniz gerekir. Bunlar hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: Kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
 
 Aşağıdaki özelliklerden bazıları kapsayıcı uygulamanızı desteklemek isteyebilirsiniz:
 
@@ -60,10 +60,9 @@ Aşağıdaki özelliklerden bazıları kapsayıcı uygulamanızı desteklemek is
 
 - Katıştırılmış nesneler ya da birlikte kapsayıcı/sunucu uygulamaları bağlar.
 
-   Daha fazla bilgi için [kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md).
+   Daha fazla bilgi için [kapsayıcıları: Gelişmiş Özellikler](../mfc/containers-advanced-features.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kapsayıcılar](../mfc/containers.md)<br/>
-[Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)
-
+[Kapsayıcılar: İstemci öğeleri](../mfc/containers-client-items.md)

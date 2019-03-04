@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Afx naming convention
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-ms.openlocfilehash: 2dfb2c1c5062f742b728ea651a292be84e33f6d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 27664d4e48c0c4e09439f9e970ded9f2a630d90d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566783"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268193"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 
@@ -30,7 +30,7 @@ MFC makroları ve genel öğeleri aşağıdaki kategorilerde işlevselliği suna
 
 ## <a name="general-mfc"></a>Genel MFC
 
-- [veri türleri](data-types-mfc.md)
+- [Veri türleri](data-types-mfc.md)
 
 - [Tür atama, MFC sınıf nesnelerine](type-casting-of-mfc-class-objects.md)
 
@@ -125,7 +125,6 @@ Bu bölümde ilk bölümünü kısaca önceki kategorilerden her biri açıklan�
 > [!NOTE]
 >  Birçok genel işlevleri "Afx" önekiyle başlayan, ancak bazı, örneğin, iletişim kutusu veri değişimi (DDX) işlevleri ve çoğu veritabanı işlevleri bu kuralı izlemeyin. Tüm genel değişkenler "ile afx" ön eki olarak başlatın. Makrolar, belirli herhangi bir önek ile başlamaz, ancak büyük harflerle yazılmış.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../mfc/class-library-overview.md)
-

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - activation contexts [MFC]
 - activation contexts [MFC], MFC support
 ms.assetid: 1e49eea9-3620-46dd-bc5f-d664749567c7
-ms.openlocfilehash: c5e3d5c9195f18c54de63ec7ecd38b165feca5df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a2e5f56eeb323f1bd5f20c5920bbdbe4a658554d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619029"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267868"
 ---
 # <a name="support-for-activation-contexts-in-the-mfc-module-state"></a>MFC Modül Durumunda Etkinleştirme Bağlamları Desteği
 
@@ -40,12 +40,11 @@ Etkinleştirme bağlamı oluşturulan [Afxwinınit](../mfc/reference/application
 
 [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) makrosu etkinleştirir ve etkinleştirme bağlamı'nı devre dışı bırakır. `AFX_MANAGE_STATE` statik MFC kitaplıkları, yanı sıra MFC DLL'leri kullanıcı DLL tarafından seçilen uygun etkinleştirme bağlamı yürütmek için MFC kodu izin vermek için etkinleştirilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Etkinleştirme bağlamları](/windows/desktop/SbsCs/activation-contexts)<br/>
 [Uygulama bildirimleri](/windows/desktop/SbsCs/application-manifests)<br/>
 [Derleme bildirimleri](/windows/desktop/SbsCs/assembly-manifests)<br/>
-[Afxwinınit](../mfc/reference/application-information-and-management.md#afxwininit)<br/>
+[AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit)<br/>
 [AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate)<br/>
 [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state)
-

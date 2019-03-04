@@ -7,12 +7,12 @@ helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: 4f8e56ed4be6bf4c7a5283894493ee46c4ed2ff4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2f75044c7cfbc1f9d2af1d9bda5c108f9afa881
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620915"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269220"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 
@@ -28,14 +28,14 @@ Bu veri eşleme mekanizmasını OLE denetimi özellikler için özellik sayfası
 |[DDP_CBString](#ddp_cbstring)|Bir denetimin bir özelliğine sahip bir birleşik giriş kutusunda seçili dizeyi bağlar. Seçili dizeyi özelliğinin değeri olarak aynı harfler ile başlayabilir, ancak tam olarak eşleşmesi gerekmez.|
 |[DDP_CBStringExact](#ddp_cbstringexact)|Bir denetimin bir özelliğine sahip bir birleşik giriş kutusunda seçili dizeyi bağlar. Seçili dizeyi ve özelliğinin dize değerini tam olarak eşleşmelidir.|
 |[DDP_Check](#ddp_check)|Bir denetimin özelliğiyle denetimin özellik sayfası'ndaki bir onay kutusu bağlar.|
-|[Ddp_lbındex](#ddp_lbindex)|Bir denetimin özelliği ile bir liste kutusunda seçili dizenin dizin bağlar.|
+|[DDP_LBIndex](#ddp_lbindex)|Bir denetimin özelliği ile bir liste kutusunda seçili dizenin dizin bağlar.|
 |[DDP_LBString](#ddp_lbstring)|Bir denetimin özelliği ile bir liste kutusunda seçili dizeyi bağlar. Seçili dizeyi özelliğinin değeri olarak aynı harfler ile başlayabilir, ancak tam olarak eşleşen yok.|
 |[DDP_LBStringExact](#ddp_lbstringexact)|Bir denetimin özelliği ile bir liste kutusunda seçili dizeyi bağlar. Seçili dizeyi ve özelliğinin dize değerini tam olarak eşleşmelidir.|
 |[DDP_PostProcessing](#ddp_postprocessing)|Özellik değerleri, denetiminden aktarımı tamamlanır.|
 |[DDP_Radio](#ddp_radio)|Denetimin özellik sayfası bir denetim özelliğine sahip bir radyo düğmesi grubunda bağlar.|
 |[DDP_Text](#ddp_text)|Bir denetimin özelliğiyle denetimin özellik sayfası denetiminde bağlar. Bu işlev gibi özellikler, birkaç farklı türde işler **çift**, **kısa**, BSTR, ve **uzun**.|
 
-Hakkında daha fazla bilgi için `DoDataExchange` işlevi ve özellik sayfaları makaleye göz atın [ActiveX denetimleri: özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
+Hakkında daha fazla bilgi için `DoDataExchange` işlevi ve özellik sayfaları makaleye göz atın [ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
 
 Makrolar oluşturmak ve yönetmek için bir OLE denetim özelliği sayfaları için kullanılan bir listesi verilmiştir:
 
@@ -438,7 +438,7 @@ Sayfaları hangi özelliği için belirtilen denetim sınıfı adı.
 
 Sınıfınız için üye işlevleri tanımlayan uygulama dosyasında (.cpp), özellik sayfasında listesini begın_proppageıds makrosu ile Başlat sonra her biri, özellik sayfaları için makro girişler ekleyin ve end_proppageıds özellik sayfası listesiyle tamamlayın Makro.
 
-Özellik sayfaları hakkında daha fazla bilgi için bkz [ActiveX denetimleri: özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
+Özellik sayfaları hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -482,6 +482,6 @@ Tüm PROPPAGEID makroları denetiminizin uygulamasını dosyadaki begın_proppag
 
   **Üst bilgi** afxctl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

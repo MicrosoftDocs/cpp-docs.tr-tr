@@ -1,19 +1,19 @@
 ---
-title: 'Windows Yuvaları: Yuva Sınıflarından Türetme'
+title: 'Windows Yuvaları: Yuva sınıflarından türetme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - derived classes [MFC], from socket classes
 - Windows Sockets [MFC], deriving from socket classes
 - sockets [MFC], deriving from socket classes
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
-ms.openlocfilehash: d860aacef164155f87db33355211b1a8e598c91b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12ab66cfd9212cd79752e2f6359b857194c6428c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648818"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270334"
 ---
-# <a name="windows-sockets-deriving-from-socket-classes"></a>Windows Yuvaları: Yuva Sınıflarından Türetme
+# <a name="windows-sockets-deriving-from-socket-classes"></a>Windows Yuvaları: Yuva sınıflarından türetme
 
 Bu makalede kendi sınıf bir yuva sınıflarından türetme tarafından elde edebilir işlevsellik açıklanır.
 
@@ -27,17 +27,16 @@ Varsayılan sürümü `OnMessagePending` sınıfında sağlanan `CSocket` mesaj 
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md)
 
-- [Windows Yuvaları: Bayt Sıralama](../mfc/windows-sockets-byte-ordering.md)
+- [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md)
 
-- [Windows Yuvaları: Dizeleri Dönüştürme](../mfc/windows-sockets-converting-strings.md)
+- [Windows Yuvaları: Dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
-

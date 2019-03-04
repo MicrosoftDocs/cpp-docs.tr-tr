@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CDaoErrorInfo structure [MFC]
 - DAO (Data Access Objects), Errors collection
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
-ms.openlocfilehash: 6afe6c711d3bd6a6bb6f277121b63c924d082057
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd9610fce88c18ac42de81ed712492766ee705de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659538"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266017"
 ---
 # <a name="cdaoerrorinfo-structure"></a>CDaoErrorInfo Yapısı
 
@@ -52,7 +52,7 @@ Microsoft Windows Yardım dosyasındaki bir konu için bir bağlam kimliği. Ayr
 
 MFC DAO hata nesneleri bir sınıftaki kapsamayan. Bunun yerine, [CDaoException](../../mfc/reference/cdaoexception-class.md) sınıfı DAO'da bulunan hatalar koleksiyonuna erişmek için bir arabirim sağlayan `DBEngine` nesnesi, ayrıca tüm çalışma alanlarını içeren nesne. Ne zaman bir MFC DAO işlemi oluşturur bir `CDaoException` nesne, catch, MFC dolduran bir `CDaoErrorInfo` yapısı ve özel durum nesne depolar [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) üyesi. (DAO doğrudan çağırmak tercih ederseniz özel durum nesnenin çağırmalıdır [Geterrorınfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) üye işlevi doldurmak için kendiniz `m_pErrorInfo`.)
 
-DAO hataları işleme hakkında daha fazla bilgi için bkz [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md). İlgili bilgiler için DAO Yardımı'nda "hata nesnesi" konusuna bakın.
+DAO hataları işleme hakkında daha fazla bilgi için bkz [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md). İlgili bilgiler için DAO Yardımı'nda "hata nesnesi" konusuna bakın.
 
 Tarafından alınan bilgileri [CDaoException::GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) üye işlevi depolanan bir `CDaoErrorInfo` yapısı. İnceleme [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) veri üyesi bir `CDaoException` bir özel durum işleyicisi veya çağrı catch nesne `GetErrorInfo` gelen bir `CDaoException` olabilecek hataları denetlemek için oluşturduğunuz nesnesi DAO arabirimler doğrudan çağrı sırasında oluştu. `CDaoErrorInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoErrorInfo` nesne.
 
@@ -60,7 +60,7 @@ Tarafından alınan bilgileri [CDaoException::GetErrorInfo](../../mfc/reference/
 
 **Başlık:** afxdao.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoException Sınıfı](../../mfc/reference/cdaoexception-class.md)

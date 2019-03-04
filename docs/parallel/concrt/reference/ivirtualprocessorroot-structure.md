@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IVirtualProcessorRoot structure
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
-ms.openlocfilehash: 6e3f874aa7c20494483172d7c7c3efee362cf6a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25ede76a81a77d489d0f2316bd3ae4cb7f84d704
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569877"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268622"
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot Yapısı
 
@@ -152,6 +152,6 @@ virtual unsigned int GetId() const = 0;
 
 Bir tamsayı tanımlayıcısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

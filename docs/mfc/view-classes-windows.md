@@ -8,12 +8,12 @@ helpviewer_keywords:
 - splitter window classes [MFC]
 - view classes [MFC], Windows
 ms.assetid: b11683fb-9f43-4de3-9499-2b55775f9870
-ms.openlocfilehash: 5fc08ec23e0a2b2ba105aa3a633ee862dc452450
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad58fd6fa2548c2cf320baf75b8fc33a835ddd55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462311"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267101"
 ---
 # <a name="view-classes-windows"></a>Görünüm Sınıfları (Windows)
 
@@ -83,7 +83,6 @@ Bulunan bir OLE istemci öğeleri listesini tutar bir `CRichEditView`.
 [Cricheditcntrıtem](../mfc/reference/cricheditcntritem-class.md)<br/>
 Öğesi içinde depolanan bir OLE istemci-tarafı erişim sağlayan bir `CRichEditView`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

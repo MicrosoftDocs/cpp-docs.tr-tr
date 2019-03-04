@@ -16,12 +16,12 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-ms.openlocfilehash: b6be476e4b9f7d1aaa09a588e1c06e72032f48c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6246db7dfb2837f5d94fa51f8433b46722c43663
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629885"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267751"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 
@@ -69,7 +69,7 @@ Bir Internet istemcisi (örneğin dosya okuma) tarafından gerçekleştirilen ba
 |Bir gopher dosyasını açın.|Bir gopher bağlantı kurun. Bir gopher ile Bulucu [CGopherConnection::CreateLocator](../mfc/reference/cgopherconnection-class.md#createlocator) veya bulma ile bir Bulucu [CGopherFileFind::GetLocator](../mfc/reference/cgopherfilefind-class.md#getlocator). Çağrı [CGopherConnection::OpenFile](../mfc/reference/cgopherconnection-class.md#openfile).|
 |Bir gopher dosyasını okuyun.|Bir gopher dosyasını açın. Kullanım [CGopherFile](../mfc/reference/cgopherfile-class.md).|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-ms.openlocfilehash: 388b3d1961f9c7cf3598db08a986c2205ac34bc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cbd993e7172ca9a25f25db18d5d0fa042db847b3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624815"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271157"
 ---
 # <a name="connection-maps"></a>Bağlantı Eşlemeleri
 
@@ -137,7 +137,7 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 *Sınıfın*<br/>
 Bu eşleme olan bağlantı denetimi sınıfın adını belirtir.
 
-*Temel*<br/>
+*theBase*<br/>
 Taban sınıfının adını belirtir *sınıfın*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -275,6 +275,6 @@ Bir bağlantı kesildi olursa sıfır dışı; Aksi durumda 0.
 
 **Başlık:** afxctl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

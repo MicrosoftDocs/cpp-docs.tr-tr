@@ -6,12 +6,12 @@ helpviewer_keywords:
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-ms.openlocfilehash: ceedf5c02d92059058bc72942a74852eb8146d38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a55bfae8599e2b221cb853cb17bd4113839fb9c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564729"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270975"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 
@@ -33,7 +33,7 @@ MFC çerçevesi Uzman programcıları için Windows iş sınayabilmesi olanak ta
 
 [Framework'te Derleme](../mfc/building-on-the-framework.md)
 
-[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
 
 [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)
 
@@ -47,7 +47,7 @@ MFC çerçevesi Uzman programcıları için Windows iş sınayabilmesi olanak ta
 
 [Windows Vista Ortak Denetimleri için Derleme Gereksinimleri](../mfc/build-requirements-for-windows-vista-common-controls.md)
 
-[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../mfc/how-to-add-restart-manager-support.md)
+[Nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../mfc/how-to-add-restart-manager-support.md)
 
 [Dinamik Düzen](../mfc/dynamic-layout.md)
 
@@ -55,7 +55,6 @@ MFC başvurusu belgelere genel bakış için bkz. [Microsoft Foundation Class Ki
 
 ATL hakkında daha fazla bilgi için bkz. [Etkin Şablon kitaplığı başvurusu](../atl/atl-class-overview.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Nesneleriyle Çalışma](../mfc/working-with-window-objects.md)
-

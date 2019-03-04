@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - target_block class
 ms.assetid: 3ce181b4-b94a-4894-bf7b-64fc09821f9f
-ms.openlocfilehash: cb8880b66ebeef12018ef7449c9c383b99ec396c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6033da1347e116b4b68cf719a461a1cf6ff5d04f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656900"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269454"
 ---
 # <a name="targetblock-class"></a>target_block Sınıfı
 
@@ -377,7 +377,7 @@ void wait_for_async_sends();
 
 Bu yöntem, tüm zaman uyumsuz işlemler blok yok etme öncesinde tamamlamak için bir süre beklendiğinden emin olmak için ileti bloğu yok ediciler tarafından kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [ITarget Sınıfı](itarget-class.md)

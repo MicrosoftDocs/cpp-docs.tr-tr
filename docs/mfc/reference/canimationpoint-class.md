@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CAnimationPoint [MFC], m_xValue
 - CAnimationPoint [MFC], m_yValue
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
-ms.openlocfilehash: 15f18a43fcda76bb5531434de84d97a349cb7f39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15f06d2fa3478570d2f784879a13e7b68515e746
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497209"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271274"
 ---
 # <a name="canimationpoint-class"></a>CAnimationPoint sınıfı
 
@@ -300,6 +300,6 @@ Varsayılan noktası değeri belirtir.
 
 Animasyon nesnesine bir varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntemleri atar varsayılan değerler animasyon noktasının X ve Y koordinatları. Ayrıca bunlar oluşturulmuşsa temel COM nesneleri yeniden oluşturur. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesnesine abone, bu olayları yeniden etkinleştirmeniz gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

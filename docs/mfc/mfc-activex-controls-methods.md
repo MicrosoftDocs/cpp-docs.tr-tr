@@ -1,23 +1,23 @@
 ---
-title: 'MFC ActiveX Denetimleri: Yöntemler'
+title: 'MFC ActiveX denetimleri: Yöntemler'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 ms.assetid: e20271de-6ffa-4ba0-848b-bafe6c9e510c
-ms.openlocfilehash: 9e8bc35989dc0e933cdb67c2574fb3bf6a4d99de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71c4cdd5ea07b3468b7878a221129a0de5eb4974
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524585"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268414"
 ---
-# <a name="mfc-activex-controls-methods"></a>MFC ActiveX Denetimleri: Yöntemler
+# <a name="mfc-activex-controls-methods"></a>MFC ActiveX denetimleri: Yöntemler
 
 ActiveX denetimi kendisi ve denetim kapsayıcısı arasında iletişim kurmak için olayları tetikler. Bir kapsayıcı da yöntemleri ve özellikleri kullanarak bir denetimi ile iletişim kurabilir. Yöntemler, İşlevler olarak da adlandırılır.
 
-Dışarı aktarılan arabirimin yöntemlerini ve özelliklerini kullanmak için Otomasyon istemcileri ve ActiveX denetim kapsayıcıları gibi diğer uygulamalar tarafından sağlar. ActiveX denetimi özellikleri hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md).
+Dışarı aktarılan arabirimin yöntemlerini ve özelliklerini kullanmak için Otomasyon istemcileri ve ActiveX denetim kapsayıcıları gibi diğer uygulamalar tarafından sağlar. ActiveX denetimi özellikleri hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md).
 
-Yöntemleri kullanın ve amaçlı C++ sınıf üye işlevleri için benzerdir. Denetiminiz uygulayabilirsiniz yöntemleri iki tür vardır: stok ve özel. Bu yöntem, olayları stok yöntemleri hisse senedi için benzer [COleControl](../mfc/reference/colecontrol-class.md) bir uygulamasını sağlar. Stok yöntemleri hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md). Geliştirici tarafından tanımlanan özel yöntemler denetimin ek özelleştirmeye izin verir. Daha fazla bilgi için bkz [MFC ActiveX denetimleri: özel yöntemler ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md).
+Yöntemleri kullanın ve amaçlı C++ sınıf üye işlevleri için benzerdir. Denetiminiz uygulayabilirsiniz yöntemleri iki tür vardır: stok ve özel. Bu yöntem, olayları stok yöntemleri hisse senedi için benzer [COleControl](../mfc/reference/colecontrol-class.md) bir uygulamasını sağlar. Stok yöntemleri hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: Stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md). Geliştirici tarafından tanımlanan özel yöntemler denetimin ek özelleştirmeye izin verir. Daha fazla bilgi için bkz [MFC ActiveX denetimleri: Özel yöntemler ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md).
 
 Microsoft Foundation Class Kitaplığı'nı (MFC), stok ve özel yöntemler desteklemek, denetim sağlayan bir mekanizma uygular. İlk bölümü sınıftır `COleControl`. Türetilmiş `CWnd`, `COleControl` üye işlevlerini destekleyen tüm ActiveX denetimleri için ortak olan stok yöntemler. Bu mekanizma ikinci bölümü, gönderme haritasıdır. Dağıtım eşlemesi için ileti eşlemesi benzer. Ancak, bir Windows ileti kimliği için bir işlev eşlemesi yerine bir dağıtım eşlemesi IDispatch KİMLİKLERİ için bir sanal üye işlev eşler.
 
@@ -34,13 +34,12 @@ Kullandıysanız [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-c
 
 Aşağıdaki makaleler ayrıntılı yöntemler açıklanmaktadır:
 
-- [MFC ActiveX Denetimleri: Stok Yöntemler Ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md)
+- [MFC ActiveX denetimleri: Stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md)
 
-- [MFC ActiveX Denetimleri: Özel Yöntemler Ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md)
+- [MFC ActiveX denetimleri: Özel yöntemler ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md)
 
-- [MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme](../mfc/mfc-activex-controls-returning-error-codes-from-a-method.md)
+- [MFC ActiveX denetimleri: Bir Metottan hata kodları döndürme](../mfc/mfc-activex-controls-returning-error-codes-from-a-method.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

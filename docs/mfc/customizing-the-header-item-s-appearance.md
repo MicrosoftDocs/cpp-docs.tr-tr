@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], customizing the items
 - HDS_ styles
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
-ms.openlocfilehash: 8610a3fcc489e69d95f0b0d2e78987664130555e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 081260bd5c1cf6335d398a4fd773c9590dbc8030
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511027"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268843"
 ---
 # <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi özelleştirme&#39;görünümünü
 
@@ -33,8 +33,7 @@ Ayarlayabileceğiniz stilleri ve bunların amacı bazıları aşağıda verilmi�
 
 Bu özellikler hakkında daha fazla bilgi için bkz. [öğeleri](/windows/desktop/Controls/header-controls) Windows SDK. Üstbilgi denetimine öğe ekleme hakkında daha fazla bilgi için bkz: [üstbilgi denetimine öğe eklemeyi](../mfc/adding-items-to-the-header-control.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

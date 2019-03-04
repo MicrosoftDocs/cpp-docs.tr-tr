@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma'
+title: 'İzlenecek yol: MFC kullanarak Şerit uygulaması oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon application, creating (MFC)
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
-ms.openlocfilehash: 16413b6027a36ec550ae2bf3e04604b32a8454c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a74e8863c32199d1c0309f70bceae867993ce721
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557519"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271339"
 ---
-# <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma
+# <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC kullanarak Şerit uygulaması oluşturma
 
 Bu izlenecek yolda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı** varsayılan olarak şeridi olan bir uygulama oluşturmak için. Ardından, ekleyerek Şerit genişletebilirsiniz bir **özel** sahip Şerit kategorisi bir **Sık Kullanılanlar** Şerit paneli ve ardından bazı sık kullanılan komutları panele ekleyerek.
 
@@ -83,13 +83,13 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-[Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)
+[Nasıl yapılır: Hızlı Erişim Araç çubuğunu özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)
 
-[Nasıl yapılır: Uygulama Düğmesini Özelleştirme](../mfc/how-to-customize-the-application-button.md)
+[Nasıl yapılır: Uygulama düğmesini özelleştirme](../mfc/how-to-customize-the-application-button.md)
 
 Uçtan uca örnekler için bkz: [örnekler (MFC özellik paketi)](../visual-cpp-samples.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)<br/>
 [Örnekler (MFC özellik paketi)](../visual-cpp-samples.md)

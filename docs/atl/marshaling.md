@@ -6,12 +6,12 @@ helpviewer_keywords:
 - marshaling
 - COM interfaces, marshaling
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-ms.openlocfilehash: a6129ba96cf3ac11339a8ab953e0838127f8fb3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0661a4cdde0a3a875cf27221e884f6c65b9fea55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569799"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269688"
 ---
 # <a name="marshaling"></a>Hazırlama
 
@@ -20,8 +20,7 @@ Hazırlama COM tekniği nesneyi başka bir işlemde kullanılmak üzere bir işl
 > [!NOTE]
 >  Nesne olarak aynı işlemde bir nesne tarafından sağlanan bir arabirimi kullanılırken hazırlama genellikle gerekli değildir. Ancak, hazırlama iş parçacıkları arasında gerekli olabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COM’a Giriş](../atl/introduction-to-com.md)<br/>
 [Hazırlama ayrıntıları](/windows/desktop/com/marshaling-details)
-

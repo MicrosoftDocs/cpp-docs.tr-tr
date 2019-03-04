@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - DHTML, calling C++ code from
 ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
-ms.openlocfilehash: 0fa4f51f4488be61edb0f01d9fddc956cd7a45b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb63f8671770f57972a4c789d983bdf9658d5ecb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555200"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270182"
 ---
 # <a name="calling-c-code-from-dhtml"></a>DHTML'den C++ kodu çağırma
 
@@ -41,7 +41,6 @@ HTML kod penceresi dış yöntem yukarıda `OnClick`, düğmesi etiketinin bir p
 
 Bkz: [ATL DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md) kendi yöntemleri sağlama hakkında daha fazla bilgi için. Bkz: [DHTML denetim projesinin öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md) HTML dosyası hakkında daha fazla bilgi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)
-

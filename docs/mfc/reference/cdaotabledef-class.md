@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDAOTableDef
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-ms.openlocfilehash: b2f431b250da4b791c06a629315d59bbc7935802
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 485fe3533916e5e59bc87084f58acfb37368ac32
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579249"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270234"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef sınıfı
 
@@ -582,9 +582,9 @@ Hangi bilgilerin alınacağı alan hakkında belirtin seçenekleri. Kullanılabi
 
 - `AFX_DAO_PRIMARY_INFO` (Varsayılan) Adı, türü, boyut öznitelikleri. Hızlı performans için bu seçeneği kullanın.
 
-- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: sıra gerekli, konum, sıfır uzunluk harmanlama sırası, yabancı adı, kaynak alan kaynak tablosunda izin ver
+- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: Gerekli, sıralı konumu harmanlama sırası, yabancı adı, kaynak alanı, kaynak tablosu için sıfır uzunluk, izin ver
 
-- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, artı: doğrulama kuralı, doğrulama metin, varsayılan değer
+- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, ayrıca: Doğrulama kuralı, doğrulama metin, varsayılan değeri
 
 *lpszName*<br/>
 Ada göre arama için alan nesne adını bir işaretçi. Benzersiz alan adları en fazla 64 karakter dizesiyle addır.
@@ -644,9 +644,9 @@ Seçenekler hangi bilgilerini almak için dizini belirtin. Kullanılabilir seçe
 
 - `AFX_DAO_PRIMARY_INFO` Ad alanı bilgi alanları. Hızlı performans için bu seçeneği kullanın.
 
-- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: birincil, benzersiz, kümelenmiş, Yoksay gerekli, null değerlere, yabancı
+- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: Birincil, benzersiz kümelenmiş, null değerler, gerekli, yabancı yoksay
 
-- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, artı: ayrı sayım
+- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, ayrıca: Ayrı sayım
 
 *lpszName*<br/>
 Ada göre arama için dizin nesnesi adı için bir işaretçi.
@@ -876,7 +876,7 @@ Aşağıdaki tabloda, olası veritabanı türleri ve karşılık gelen veritaban
 |HTML içeri aktarma|"HTML alma;"|" `drive`:\\\ *yolu*\ *filename*"|
 |HTML dışarı aktarma|"HTML dışarı aktarma;"|" `drive`:\\\ *yolu*"|
 |Metin|"Metin"|"sürücü:\\\path"|
-|ODBC|"ODBC; Veritabanı = `database`; UID = *kullanıcı*; PWD = *parola*; DSN = *datasourcename;* LOGINTIMEOUT = *saniye;*" (Bu tüm sunucular için bir tam bağlantı dizesi olmayabilir; yalnızca örnek olarak verilmiştir. Parametreleri arasında boşluk olmayan çok önemlidir.)|Yok.|
+|ODBC|"ODBC; Veritabanı = `database`; UID = *kullanıcı*; PWD = *parola*; DSN = *datasourcename;* LOGINTIMEOUT = *saniye;*" (Bu tüm sunucular için bir tam bağlantı dizesi olmayabilir; yalnızca örnek olarak verilmiştir. Parametreleri arasında boşluk olmayan çok önemlidir.)|Hiçbiri|
 |Exchange|"Exchange;<br /><br /> MAPILEVEL = *folderpath*;<br /><br /> [TABLETYPE = {0 &AMP;#124; 1};]<br /><br /> [PROFİL = *profili*;]<br /><br /> [PWD = *parola*;]<br /><br /> [VERİTABANI = `database`;] "|*"sürücü*:\\\ *yolu*\\\ *filename*. MDB"|
 
 > [!NOTE]
@@ -972,7 +972,7 @@ Eklenen tablonun doğrulama metni olarak ayarlanamıyor.
 
 İlgili bilgiler için DAO Yardımı'nda "ValidationText özelliği" konusuna bakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
