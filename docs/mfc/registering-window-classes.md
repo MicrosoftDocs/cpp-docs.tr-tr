@@ -14,12 +14,12 @@ helpviewer_keywords:
 - WinMain method [MFC]
 - registering window classes [MFC]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
-ms.openlocfilehash: c1fc6628b2b5e8e6fa657f4cf99be2256377a5b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c459b909a60fff2b7aeded9ea8d79a39ced24e4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540588"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258430"
 ---
 # <a name="registering-window-classes"></a>Pencere Sınıflarını Kaydetme
 
@@ -35,7 +35,6 @@ Buna karşılık, çoğu pencere sınıfı kaydı etkinliği bir MFC çerçeve p
 
 Daha fazla bilgi için [Teknik Not 1](../mfc/tn001-window-class-registration.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencereler Oluşturma](../mfc/creating-windows.md)
-

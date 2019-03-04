@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComHeapPtr class
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
-ms.openlocfilehash: eaa21700f63ae07565dba4b8b3b5dabac69e0168
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ace8dbb174bd6585e61bd941a60dad28296af72a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553744"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273261"
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr sınıfı
 
@@ -73,7 +73,7 @@ Varolan bir `CComHeapPtr` nesnesi.
 
 Yığın işaretçisi isteğe bağlı olarak var olan bir oluşturulabilir `CComHeapPtr` nesne. Bu durumda, yeni `CComHeapPtr` nesne yeni işaretçi ve kaynaklarını yönetme sorumluluğunu varsayar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
 [CHeapPtrBase Sınıfı](../../atl/reference/cheapptrbase-class.md)<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-ms.openlocfilehash: 1af16f7009ceb97ea86d641f47cf56ea5a398c26
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 5643e1e9f4f558163c1c2a3b65070f90afdc7dba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694302"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278229"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>Gelişmiş Özellikler, MFC Uygulama Sihirbazı
 
@@ -21,7 +21,7 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
    Bağlama duyarlı Yardım için F1 ve Yardım menüsünü kullanarak veya tıklayarak kullanılabilir Yardım dosyaları kümesi üretir bir **yardımcı** bir iletişim kutusu düğmesine. Yardım desteği yardım derleyicisi gerektirir. Yardım derleyicisini yüklemediyseniz, Kur'u yeniden çalıştırarak yükleyebilirsiniz.
 
-   Bkz: [HTML Yardımı: Programlarınız için Bağlama Duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../ide/help-files-html-help.md) daha fazla bilgi için.
+   Bkz: [HTML Yardımı: Programlarınızı için bağlama duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../ide/help-files-html-help.md) daha fazla bilgi için.
 
 - **Yazdırmayı ve Baskı Önizleme**
 
@@ -57,7 +57,7 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
 - **Yeniden başlatma Yöneticisi desteği**
 
-   İçin destek ekler [Windows yeniden başlatma Yöneticisi](/windows/desktop/RstMgr/using-restart-manager). Bu videoda, MFC'den yeniden başlatma Yöneticisi işlemi gösterilir: [nasıl: kullanma yeni yeniden başlatma Yöneticisi](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100)).
+   İçin destek ekler [Windows yeniden başlatma Yöneticisi](/windows/desktop/RstMgr/using-restart-manager). Bu videoda, MFC'den yeniden başlatma Yöneticisi kullanma işlemini gösterir: [Nasıl Yaparım Yeni yeniden başlatma Yöneticisi'ni](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100)).
 
 - **Gelişmiş çerçeve bölmeleri**
 
@@ -73,7 +73,6 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
    En son kullanılan listesinde listelenen dosyaların sayısını belirtir. Varsayılan sayı 4'tür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)
-

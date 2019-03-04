@@ -5,12 +5,12 @@ helpviewer_keywords:
 - classes [C++], ATL
 - ATL, classes
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
-ms.openlocfilehash: 937edb799729005619325cda15f5a720264e9bfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 561d6cb41ca066f5a2435b4eb1e8710ccaa99ea1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512547"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265580"
 ---
 # <a name="atl-classes-and-structs"></a>ATL sınıfları ve yapıları
 
@@ -183,17 +183,17 @@ Aşağıdaki sınıflar ve yapılar Etkin Şablon kitaplığı (ATL) içerir. Be
 |[IAxWinHostWindow](../../atl/reference/iaxwinhostwindow-interface.md)|Bu arabirim, Denetim ve onun ana nesneyi düzenlemek için yöntemler sağlar.|atlbase.h, ATLIFace.h|
 |[IAxWinHostWindowLic](../../atl/reference/iaxwinhostwindowlic-interface.md)|Bu arabirim, lisanslı bir denetim ve onun ana nesneyi işlemek için yöntemler sağlar.|atlbase.h, ATLIFace.h|
 |[Icollectiononstlımpl](../../atl/reference/icollectiononstlimpl-class.md)|Bu sınıf, bir koleksiyon sınıfı tarafından kullanılan yöntemleri sağlar.|atlcom.h|
-|[Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md)|Bu sınıfın uyguladığı bir koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri.|atlcom.h|
+|[IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md)|Bu sınıfın uyguladığı bir koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri.|atlcom.h|
 |[Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md)|Bu sınıf, bir bağlantı noktası uygular.|atlcom.h|
 |[Idataobjectımpl](../../atl/reference/idataobjectimpl-class.md)|Bu sınıf, Tekdüzen veri aktarımı destekleyen ve bağlantıları yönetmek için yöntemler sağlar.|atlctl.h|
 |[Idispatchımpl](../../atl/reference/idispatchimpl-class.md)|Bu sınıf için varsayılan bir uygulama sağlar `IDispatch` çift arabirim kısmı.|atlcom.h|
-|[Idispeventımpl](../../atl/reference/idispeventimpl-class.md)|Bu sınıf uygulamalarını sağlar `IDispatch` yöntemleri.|atlcom.h|
+|[IDispEventImpl](../../atl/reference/idispeventimpl-class.md)|Bu sınıf uygulamalarını sağlar `IDispatch` yöntemleri.|atlcom.h|
 |[IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md)|Bu sınıf uygulamalarını sağlar `IDispatch` yöntemleri olmadan bir tür kitaplığından türü bilgileri alınıyor.|atlcom.h|
 |[IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md)|Bir arabirim Microsoft HTML Ayrıştırma ve işleme altyapısı.|atlbase.h, ATLIFace.h|
-|[Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md)|Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir numaralandırıcı arabirimi tanımlar.|atlcom.h|
+|[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)|Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir numaralandırıcı arabirimi tanımlar.|atlcom.h|
 |[IObjectSafetyImpl](../../atl/reference/iobjectsafetyimpl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar `IObjectSafety` almak ve bir nesnenin güvenlik düzeylerini ayarlamak bir istemci izin vermek için arabirim.|atlctl.h|
 |[IObjectWithSiteImpl](../../atl/reference/iobjectwithsiteimpl-class.md)|Bu sınıf, siteyle iletişim için bir nesne sağlayan yöntemlerini sağlar.|atlcom.h|
-|[Iolecontrolımpl](../../atl/reference/iolecontrolimpl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar `IOleControl` uygular ve arabirimi `IUnknown`.|atlctl.h|
+|[IOleControlImpl](../../atl/reference/iolecontrolimpl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar `IOleControl` uygular ve arabirimi `IUnknown`.|atlctl.h|
 |[IOleInPlaceActiveObjectImpl](../../atl/reference/ioleinplaceactiveobjectimpl-class.md)|Bu sınıf, bir yerinde denetim kapsayıcısı arasındaki iletişimi uygulayıcılarına yardımcı yöntemleri sağlar.|atlctl.h|
 |[IOleInPlaceObjectWindowlessImpl](../../atl/reference/ioleinplaceobjectwindowlessimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve pencere iletileri almak ve sürükle ve bırak işlemleri katılmak için penceresiz denetime olanak tanıyan yöntemler sağlar.|atlctl.h|
 |[IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve kapsayıcı bir denetimle iletişim asıl arabirimidir.|atlctl.h|
@@ -219,11 +219,10 @@ Aşağıdaki sınıflar ve yapılar Etkin Şablon kitaplığı (ATL) içerir. Be
 |[_U_strıngorıd](../../atl/reference/u-stringorid-class.md)|Bu bağımsız değişken bağdaştırıcısı sınıfı (LPCTSTRs) kaynak adları ya da kaynak kimlikleri (arayan kimliği MAKEINTRESOURCE makrosu kullanarak bir dizeye dönüştürmek gerek kalmadan bir işleve geçirilecek sınıfta) sağlar.|atlwin.h|
 |[Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)|Bu sınıf için bir Windows iş parçacığı oluşturma işlevi sağlar. Bu sınıf, iş parçacığı CRT işlevleri kullanmayacaksa kullanın.|atlbase.h|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [İşlevler](../../atl/reference/atl-functions.md)<br/>
 [Global Değişkenler](../../atl/reference/atl-global-variables.md)<br/>
 [Tür tanımları](../../atl/reference/atl-typedefs.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)
-

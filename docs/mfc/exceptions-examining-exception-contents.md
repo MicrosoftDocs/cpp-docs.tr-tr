@@ -1,5 +1,5 @@
 ---
-title: 'Özel Durumlar: Özel Durum İçeriklerini İnceleme'
+title: 'Özel durumlar: Özel durum içeriklerini İnceleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exception handling [MFC], MFC
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - try-catch exception handling [MFC], exception contents
 - throwing exceptions [MFC], exception contents
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
-ms.openlocfilehash: 4355a575f29741d0c7b9f1e12e40ca9d977219b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6f9bca6f6b7ca9d104cb492c760ab89f7163afd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630085"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259392"
 ---
-# <a name="exceptions-examining-exception-contents"></a>Özel Durumlar: Özel Durum İçeriklerini İnceleme
+# <a name="exceptions-examining-exception-contents"></a>Özel durumlar: Özel durum içeriklerini İnceleme
 
 Ancak bir **catch** bloğun bağımsız değişkeni, neredeyse her veri türü olabilir, özel durum sınıfından türetilen türlerin MFC işlevleri throw `CException`. Bir MFC işlevi tarafından oluşturulan bir özel durum yakalamak için ardından yazdığınız bir **catch** , bağımsız değişken bir işaretçidir bloğu için bir `CException` nesnesi (veya bir nesne öğesinden türetilen `CException`, gibi `CMemoryException`). Özel durumun tam türüne bağlı olarak, özel durumun belirli nedeni hakkında bilgi toplamak için özel durum nesnesi veri üyeleri inceleyebilirsiniz.
 
@@ -26,9 +26,8 @@ Aşağıdaki örnek, içeriğini incelemek gösterilmiştir bir `CFileException`
 
 [!code-cpp[NVC_MFCExceptions#13](../mfc/codesnippet/cpp/exceptions-examining-exception-contents_1.cpp)]
 
-Daha fazla bilgi için [özel durumlar: özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md) ve [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Daha fazla bilgi için [özel durumlar: Özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md) ve [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Handler method
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
-ms.openlocfilehash: 74c52e07f5be4ac16c8f9a20115a623c53f46090
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e344fd36ad6c70a80486eef6a10eacd8a88a2baf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553692"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273380"
 ---
 # <a name="catlservicemodulethandler-function"></a>CAtlServiceModuleT::Handler işlevi
 
@@ -21,8 +21,7 @@ ms.locfileid: "50553692"
 
 Daha fazla yönerge işlemek için değiştirmeniz gerekir `m_status` veri üyesi başlatıldı olarak `CAtlServiceModuleT` Oluşturucusu. Bu veri üyesi düğmeleri hizmetinin Hizmetler Denetim Masası uygulamasında seçildiğinde etkinleştirmek için SCM söyler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hizmetler](../atl/atl-services.md)<br/>
 [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
-

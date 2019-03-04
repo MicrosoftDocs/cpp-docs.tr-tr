@@ -1,5 +1,5 @@
 ---
-title: 'TN020: Kimlik Adlandırma ve Numaralandırma Kuralları'
+title: 'TN020: Kimlik adlandırma ve numaralandırma kuralları'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.id
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - resource identifiers, naming and numbering
 - resource identifiers
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-ms.openlocfilehash: 9e575ee99b78b8efa75096cac4559eb9aea7fd21
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: f1cd44ed448cc4c0fc60d490a613f0ad91071376
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518677"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267400"
 ---
-# <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik Adlandırma ve Numaralandırma Kuralları
+# <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik adlandırma ve numaralandırma kuralları
 
 Bu Not, kimlik adlandırma ve kaynakları, komutları, dizeler, denetimleri ve alt pencereler için MFC 2.0 kullanan numaralandırma kuralları açıklar.
 
@@ -103,8 +103,7 @@ Bu aralığı sınırları nedenleri:
 
 - 0x8000 ile 0xFFFF dizeler için çeşitli komutlar için menü istemleri için ayrılmıştır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

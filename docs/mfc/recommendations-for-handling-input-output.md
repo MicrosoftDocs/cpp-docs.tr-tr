@@ -8,12 +8,12 @@ helpviewer_keywords:
 - I/O [MFC], options
 - I/O [MFC], file-based options
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
-ms.openlocfilehash: 1144337df9657d63c53a13e03cf31eb487ce4068
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 760c213c3af7f9c75374f04e3dfc6b9499eade5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585464"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261979"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>Giriş/Çıkış İşleme için Öneriler
 
@@ -47,6 +47,6 @@ Dosya menüsünde komutları kaydedip, kaydetme açık desteklemek için Belge S
 
 Seri hale getirme hakkında daha fazla bilgi için bkz. [serileştirme](../mfc/serialization-in-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Seri Hale Getirme: Seri Hale Getirme ile Veritabanı giriş/çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)
+[Seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)

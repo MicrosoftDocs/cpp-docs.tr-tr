@@ -15,12 +15,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 76c2f303713644c5f78f20d2ea868bd67b9eae71
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 939230753f25db38e6ba2f26340f40ddf74d23bf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175385"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271144"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 
@@ -71,7 +71,7 @@ Başka bir ortak kullanımı genellikle birden çok görünüm çerçeve çerçe
 
 - [Dinamik veri değişimine (DDE) yanıt verme](../mfc/responding-to-dynamic-data-exchange-dde.md)
 
-- [Yarı kalıcı durumlar: (diğer pencere işlemlerini) Windows Context-sensitive Help](../mfc/orchestrating-other-window-actions.md)
+- [Yarı kalıcı durumlar: Windows içerebilir (diğer pencere işlemlerini)](../mfc/orchestrating-other-window-actions.md)
 
 - [Yarı kalıcı durumlar: yazdırmayı ve Baskı Önizleme (diğer pencere işlemlerini)](../mfc/orchestrating-other-window-actions.md)
 
@@ -83,7 +83,6 @@ Başka bir ortak kullanımı genellikle birden çok görünüm çerçeve çerçe
 
 - [Denetimler](../mfc/controls-mfc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows](../mfc/windows.md)
-

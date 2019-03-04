@@ -6,12 +6,12 @@ helpviewer_keywords:
 - servers [MFC], active document
 - active document servers [MFC]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-ms.openlocfilehash: ad9b43444cfa18698371d93acb858c0d929c30bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7050b810bb5e1f0c240222cd9b8c4922ced4238a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657678"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270780"
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 
@@ -29,7 +29,6 @@ Normal bir MFC sunucusu kendi kancaları `COleServerItem`-türetilmiş sınıf. 
 
 `COleDocObjectItem` Sınıfı bir OLE kapsayıcısı etkin belge kapsayıcı olmasını sağlar. MFC Uygulama Sihirbazı'nı seçerek bir etkin belge kapsayıcısı oluşturmak için kullanabileceğiniz **etkin belge kapsayıcı** MFC Uygulama Sihirbazı bileşik belge desteği sayfanın onay kutusunu işaretleyin. Daha fazla bilgi için [bir etkin belge kapsayıcı uygulaması oluşturma](../mfc/creating-an-active-document-container-application.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
-

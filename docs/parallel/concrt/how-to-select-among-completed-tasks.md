@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Tamamlanan Görevler Arasında Seçim Yapma'
+title: 'Nasıl yapılır: Tamamlanan görevler arasında seçim'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - selecting among completed tasks [Concurrency Runtime]
 - completed tasks, selecting among [Concurrency Runtime]
 ms.assetid: c8ccc160-043f-4599-847b-32ed270bb257
-ms.openlocfilehash: c9137c3d1e354a5e3f50f0d281ecbbd247642597
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d31f9bd16aaa70cc773e60e4f1193e66ec520f0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551638"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278034"
 ---
-# <a name="how-to-select-among-completed-tasks"></a>Nasıl yapılır: Tamamlanan Görevler Arasında Seçim Yapma
+# <a name="how-to-select-among-completed-tasks"></a>Nasıl yapılır: Tamamlanan görevler arasında seçim
 
 Bu örnek nasıl kullanılacağını gösterir [concurrency::choice](../../parallel/concrt/reference/choice-class.md) ve [concurrency::join](../../parallel/concrt/reference/join-class.md) sınıflar arama algoritması tamamlamak için ilk görevi seçin.
 
@@ -51,7 +51,7 @@ Bu örnekte [concurrency::make_choice](reference/concurrency-namespace-functions
 
 **cl.exe/ehsc Bul-employee.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

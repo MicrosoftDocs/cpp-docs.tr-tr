@@ -5,12 +5,12 @@ helpviewer_keywords:
 - rebar controls [MFC], working with bands in
 - bands, in rebar controls
 ms.assetid: b647e7a5-9ea7-48b1-8e5f-096d104748f0
-ms.openlocfilehash: aa20e44825ec57dba19dad0b2a11ca51f315743e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bb7b4aeab1478138aa2b52649f41ca943b5daa4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582058"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276071"
 ---
 # <a name="rebar-controls-and-bands"></a>Rebar Denetimleri ve Bantları
 
@@ -38,8 +38,7 @@ Aşağıdaki örnek, bir araç çubuğu bant ekleme gösterir (*m_wndToolBar*) v
 
 [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CReBarCtrl Kullanma](../mfc/using-crebarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

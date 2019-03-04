@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSocketFile [MFC], CSocketFile
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-ms.openlocfilehash: f31bbda1bb6428b6bcca25d6eddce98156fac1d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3fa73320ae34283b0cdac559111a53a879c031c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588844"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274278"
 ---
 # <a name="csocketfile-class"></a>CSocketFile sınıfı
 
@@ -50,7 +50,7 @@ Aşağıdaki örnekte, `m_dwExpected` yaklaşık kullanıcı almak için bekliyo
 
 [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocketfile-class_1.cpp)]
 
-Daha fazla bilgi için [MFC'de Windows Yuvaları](../../mfc/windows-sockets-in-mfc.md), [Windows Yuvaları: yuvaların arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md), yanı [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).
+Daha fazla bilgi için [MFC'de Windows Yuvaları](../../mfc/windows-sockets-in-mfc.md), [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md), yanı [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -93,9 +93,9 @@ Nesne kapsam dışına gider veya silinen nesnenin yok Edicisi kendisini yuva ne
 
 İle `CSocketFile`ancak, veri tabanlı ileti; arabellek birden fazla ileti içerebilir, bu nedenle, istenen bayt sayısından daha az alan değil yaptığından dosya sonu. Uygulama ile olabileceği gibi bu durumda engellemez `CFile`, arabellek boş olana kadar iletilerini arabellekteki okuma devam edebilir. [CArchive::IsBufferEmpty](../../mfc/reference/carchive-class.md#isbufferempty) işlevi arşivin arabellek böyle bir durumda durumunu izlemek için yararlıdır.
 
-Kullanımı hakkında daha fazla bilgi için `CSocketFile`, makalelere göz atın [Windows Yuvaları: yuvaların arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md) ve [Windows Yuvaları: örnek, yuva kullanarak arşivleri](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
+Kullanımı hakkında daha fazla bilgi için `CSocketFile`, makalelere göz atın [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md) ve [Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

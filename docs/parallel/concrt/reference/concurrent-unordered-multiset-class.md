@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_multiset class
 ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
-ms.openlocfilehash: 8b03245790bf011941cabcb18600bbb1e69c37d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7acb79bf5b7c1831027cc47f4da7faa6f1669c21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543942"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276012"
 ---
 # <a name="concurrentunorderedmultiset-class"></a>concurrent_unordered_multiset Sınıfı
 
@@ -88,7 +88,7 @@ Ayırma ve eşzamanlı vektör için bellek ayırmayı kaldırma hakkındaki ayr
 |Ad|Açıklama|
 |----------|-----------------|
 |[hash_function](#hash_function)|Depolanan karma işlevi nesnesini döndürür.|
-|[Ekle](#insert)|Fazla Yüklendi. Öğeler ekler `concurrent_unordered_multiset` nesne.|
+|[insert](#insert)|Fazla Yüklendi. Öğeler ekler `concurrent_unordered_multiset` nesne.|
 |[key_eq](#key_eq)|Depolanan eşitlik karşılaştırma işlevi nesnesi.|
 |[değiştirme](#swap)|İki içeriğini değiştirir `concurrent_unordered_multiset` nesneleri. Bu yöntem eşzamanlı güvenli değil.|
 |[unsafe_erase](#unsafe_erase)|Fazla Yüklendi. Öğeleri kaldırır `concurrent_unordered_multiset` belirtilen konumlarda. Bu yöntem eşzamanlı güvenli değil.|
@@ -113,7 +113,7 @@ Hakkında ayrıntılı bilgi için `concurrent_unordered_multiset` sınıfı [pa
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concurrent_unordered_set.h
+**Header:** concurrent_unordered_set.h
 
 **Namespace:** eşzamanlılık
 
@@ -706,8 +706,7 @@ size_type unsafe_max_bucket_count() const;
 
 Bu kapsayıcı demet sayısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Paralel Kapsayıcılar ve Nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
-

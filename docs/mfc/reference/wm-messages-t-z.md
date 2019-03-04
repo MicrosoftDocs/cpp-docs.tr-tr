@@ -1,5 +1,5 @@
 ---
-title: 'WM_ İletileri: T - Z'
+title: 'WM_ iletileri: T - Z'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_TCARD
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - ON_WM_VKEYTOITEM [MFC]
 - ON_WM_VSCROLL
 ms.assetid: c528bb2e-ddb5-4da6-b652-432a387408b8
-ms.openlocfilehash: 1f543489271c6bc6e5cef2bc61de0d6df3f52748
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b5dbcb52ef7a61712f2c59c217a71f533799f67
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50433559"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271859"
 ---
-# <a name="wm-messages-t---z"></a>WM_ İletileri: T - Z
+# <a name="wm-messages-t---z"></a>WM_ iletileri: T - Z
 
 Aşağıdaki eşleme girişleri için işlev prototipleri karşılık gelir:
 
@@ -53,8 +53,7 @@ Aşağıdaki eşleme girişleri için işlev prototipleri karşılık gelir:
 |ON_WM_XBUTTONDOWN()|afx_msg void [OnXButtonDown](../../mfc/reference/cwnd-class.md#onxbuttondown)(UINT, UINT, CPoint);|
 |ON_WM_XBUTTONUP()|afx_msg void [OnXButtonUp](../../mfc/reference/cwnd-class.md#onxbuttonup)(UINT, UINT, CPoint);|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
-

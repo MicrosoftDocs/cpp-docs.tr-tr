@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], macros
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
-ms.openlocfilehash: ac00b1c5a937c32ecc02e11e735541119c388588
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb8d6f696980ef91d7b43c960dc50289ea8500a6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605796"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258248"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
 
@@ -99,7 +99,7 @@ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı nokta
 
 [!code-cpp[NVC_ATL_Windowing#128](../../atl/codesnippet/cpp/connection-point-macros_3.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)<br/>
 [Bağlantı Noktası Genel İşlevleri](../../atl/reference/connection-point-global-functions.md)

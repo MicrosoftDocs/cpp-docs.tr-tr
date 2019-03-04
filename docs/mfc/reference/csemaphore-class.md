@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSemaphore [MFC], CSemaphore
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
-ms.openlocfilehash: e8e71af6fa33dc748bfb8d19266a72495f216502
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f2a05963f39393bcc73650beb44c5dbb8e5535ee
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447027"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274225"
 ---
 # <a name="csemaphore-class"></a>CSemaphore sınıfı
 
@@ -45,7 +45,7 @@ Denetlenen kaynaklarına erişmek için `CSemaphore` nesnelere bu şekilde, ilk 
 
 Alternatif olarak, oluşturabileceğiniz bir `CSemaphore` tek başına nesne ve denetimli bir kaynağa erişmeyi denemeden önce açıkça erişim. Bu, kaynak kodunuzu okuyan kişi daha anlaşılır sırasında daha fazla hataya yöntemidir.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CSemaphore` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Nasıl kullanılacağı hakkında daha fazla bilgi için `CSemaphore` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -92,8 +92,7 @@ Erişim veya yayın için bir `CSemaphore` nesne, oluşturun bir [CMultiLock](..
 > [!IMPORTANT]
 >  Oluşturduktan sonra `CSemaphore` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSyncObject Sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

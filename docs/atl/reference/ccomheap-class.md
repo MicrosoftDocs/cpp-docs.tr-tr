@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComHeap class
 ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
-ms.openlocfilehash: ae076ee7e2b1e04a997d0b345a2d89b4cc59183d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f8966c215ed53279f1391ce00adfc783f34f2d1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496076"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276173"
 ---
 # <a name="ccomheap-class"></a>CComHeap sınıfı
 
@@ -58,7 +58,7 @@ class CComHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ATLComMem.h
+**Üst bilgi:** ATLComMem.h
 
 ##  <a name="allocate"></a>  CComHeap::Allocate
 
@@ -147,7 +147,7 @@ Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
 
 Kullanılarak uygulanan [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DynamicConsumer örnek](../../visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>

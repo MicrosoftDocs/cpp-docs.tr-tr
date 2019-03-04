@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-ms.openlocfilehash: 84e12a8f4ca0ce6384bc60b2fa01bfaf7824c864
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d60ae52225ddd993c1768d0b5ce1989ab0192e45
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585426"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275395"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 
@@ -38,6 +38,6 @@ Nasıl Özellikler penceresinde belirli bir ileti işleyicisi işlevi çatısın
 
 Kural olarak, bu işleyiciler adlarını ön ekine sahip "." Başlangıç tarihi Diğer birçok alırken bazı bu işleyiciler, bağımsız değişken almaz. Ayrıca bir dönüş türü dışındaki sahip **void**. Tüm varsayılan işleyicileri **WM_** iletileri belgelenir *MFC başvurusu* sınıfın üye işlevleri olarak `CWnd` başlamak, adları "On ile." Üye işlevi bildirimlerinde `CWnd` ön eki **afx_msg**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti İşleyici İşlevlerini Bildirme](../mfc/declaring-message-handler-functions.md)

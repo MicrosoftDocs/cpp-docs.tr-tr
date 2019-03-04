@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CAnimationBaseObject [MFC], m_nObjectID
 - CAnimationBaseObject [MFC], m_pParentController
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
-ms.openlocfilehash: 6527abf5c91cf440bbbe76d0d5fe49ce2c5dbef7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18b2319ea3c51edf79b6a90095b8363db830d66c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430452"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258924"
 ---
 # <a name="canimationbaseobject-class"></a>CAnimationBaseObject sınıfı
 
@@ -315,7 +315,7 @@ Bir animasyon nesnede bulunan animasyon değişkenleriyle doldurulması gereken 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen bir sınıfta geçersiz kılınması saf bir sanal yöntem budur. Bir veya daha fazla animasyon değişkenleri kendi türüne bağlı olarak bir animasyon nesne içerir. Örneğin, sırasıyla X ve Y koordinatları CAnimationPoint iki değişken içerir. Animasyon değişkenler listesini hareket bazı genel yöntemleri taban sınıf CAnimationBaseObject uygular: ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. Bu yöntemler türetilen bir sınıfta, belirli bir animasyon bir nesnede bulunan gerçek animasyon değişkenleri ile doldurulan, GetAnimationVariableList çağırın, sonra liste üzerinde döngü ve gerekli eylemleri gerçekleştirin. Özel Animasyon nesne oluşturursanız, o nesnenin içerdiği tüm animasyon değişkenleri için lst eklemeniz gerekir.
+Türetilen bir sınıfta geçersiz kılınması saf bir sanal yöntem budur. Bir veya daha fazla animasyon değişkenleri kendi türüne bağlı olarak bir animasyon nesne içerir. Örneğin, sırasıyla X ve Y koordinatları CAnimationPoint iki değişken içerir. Temel sınıf CAnimationBaseObject animasyon değişkenler listesini hareket bazı genel yöntemleri uygular: ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. Bu yöntemler türetilen bir sınıfta, belirli bir animasyon bir nesnede bulunan gerçek animasyon değişkenleri ile doldurulan, GetAnimationVariableList çağırın, sonra liste üzerinde döngü ve gerekli eylemleri gerçekleştirin. Özel Animasyon nesne oluşturursanız, o nesnenin içerdiği tüm animasyon değişkenleri için lst eklemeniz gerekir.
 
 ##  <a name="getautodestroytransitions"></a>  CAnimationBaseObject::GetAutodestroyTransitions
 
@@ -489,6 +489,6 @@ void SetUserData (DWORD dwUserData);
 
 Özel veri bir animasyon nesnesiyle ilişkilendirmek için bu yöntemi kullanın. Bu veriler daha sonra çalışma zamanında GetUserData tarafından alınabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

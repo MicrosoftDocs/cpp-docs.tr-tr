@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CDCRenderTarget [MFC], GetDCRenderTarget
 - CDCRenderTarget [MFC], m_pDCRenderTarget
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
-ms.openlocfilehash: e172d175bba5b4c379f7cd29451d7ad4215d9c68
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70169d2b89d9ea657898f7a96dea27556023d4e2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541719"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268284"
 ---
 # <a name="cdcrendertarget-class"></a>CDCRenderTarget sınıfı
 
@@ -183,6 +183,6 @@ operator ID2D1DCRenderTarget*();
 
 Bir ID2D1DCRenderTarget arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

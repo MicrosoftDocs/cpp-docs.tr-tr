@@ -1,5 +1,5 @@
 ---
-title: CComObjectGlobal sınıfı
+title: CComObjectGlobal Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectGlobal
@@ -12,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectGlobal class
 ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
-ms.openlocfilehash: ebaec439393a67331293cbf47abd08a5e7e416af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec3abd04ce72cce98dae72a1ed8cbb8d9fe72079
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485572"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267439"
 ---
-# <a name="ccomobjectglobal-class"></a>CComObjectGlobal sınıfı
+# <a name="ccomobjectglobal-class"></a>CComObjectGlobal Class
 
 Bu sınıf modül bulunduğu bir başvuru sayısını yönetir, `Base` nesne.
 
@@ -162,7 +162,7 @@ Hata ayıklama yapılarında `Release` tanılama için kullanışlı ve test ola
 
 Varsayılan olarak, `Release` çağrıları `_Module::Unlock`burada `_Module` genel örneğinin [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComObjectStack Sınıfı](../../atl/reference/ccomobjectstack-class.md)<br/>
 [CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>

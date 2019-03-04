@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC], developing
 ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
-ms.openlocfilehash: b99a6b0e9f9728d74057d05f7ad9082017e31005
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3c165a0bf495da4e6cda05c7e109b338b0a364f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623554"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278684"
 ---
 # <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC Uygulamaları Oluşturmak için İşlem Dizisi
 
@@ -41,10 +41,9 @@ MFC Uygulamanızı geliştirirken, genellikle uygulayabilir genel sıra aşağı
 |Bölümlendirici pencereler ekleyin.|Bölme penceresi desteklemek istiyorsanız, ekleme bir [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) nesne, SDI çerçeve penceresinin veya MDI alt penceresi ve pencerenin takma [OnCreateClient](../mfc/reference/cframewnd-class.md#oncreateclient) üye işlevi.|Framework, kaydırma çubukları yanındaki Bölümlendirici kutusu denetimleri sağlar ve birden fazla bölme, görünüme bölme yönetir. Kullanıcı bir pencereyi ayırır, framework oluşturur ve ek görünüm nesneleri belgeye ekler.|
 |Derleme, test etme ve uygulamanızı hata ayıklama.|Derleme, test etme ve uygulamanızda hata ayıklamak için Visual C++ özelliklerini kullanın.|Visual C++ derleme, bağlantı ve diğer seçenekleri ayarlamanıza olanak tanır. Ayrıca, kaynak kodu ve sınıf yapısı Gözat sağlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
 [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
 [Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)<br/>
 [Framework'te Derleme](../mfc/building-on-the-framework.md)
-

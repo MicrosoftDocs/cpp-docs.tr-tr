@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek yol: COM Özellikli bir Uygulamada Eşzamanlılık Çalışma Zamanını Kullanma'
+title: 'İzlenecek yol: COM özellikli bir uygulamada eşzamanlılık çalışma zamanı kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, use with COM
 - COM, use with the Concurrency Runtime
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
-ms.openlocfilehash: 227d06c74826b8936909b774d1a7e3a222ac8023
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d306377be4a000c54fb5556b15263a15b2d4618
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554940"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278203"
 ---
-# <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>İzlenecek yol: COM Özellikli bir Uygulamada Eşzamanlılık Çalışma Zamanını Kullanma
+# <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>İzlenecek yol: COM özellikli bir uygulamada eşzamanlılık çalışma zamanı kullanma
 
 Bu belge Bileşen Nesne Modeli (COM) kullanan bir uygulamada eşzamanlılık çalışma zamanı nasıl yapılacağı açıklanır.
 
@@ -153,7 +153,7 @@ fib(12) = 144
 
 **cl.exe/ehsc paralel scripts.cpp/Link ole32.lib**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -162,4 +162,3 @@ fib(12) = 144
 [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
 [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add Class from TypeLib Wizard [MFC]
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: c0423ac06aa46b65c1fb0ffb3935d4bb54821ee9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a2c291e1c9e78d288bdb2d15f224520d764dfa1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654343"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273887"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Tür Kitaplığı Sihirbazından Sınıf Ekleme
 
@@ -34,7 +34,7 @@ Bir kullanılabilir tür kitaplığından bir MFC sınıfı eklemek için bu sih
 
    Şu anda sistemde kayıtlı tür kitaplıkları listeler. Bu listeden arabirimlerinden içinde görüntülemek için bir tür kitaplığını seçin **arabirimleri** listesi.
 
-   "İçinde dağıtılmış COM: tür kitaplıklarını ve dil tümleştirme" tür kitaplıklarını kaydetme hakkında daha fazla bilgi için MSDN Kitaplığı'nda bkz.
+   Bkz: "içinde dağıtılmış COM: Kitaplıkları ve dil tümleştirme tür kitaplıklarını kaydetme hakkında daha fazla bilgi için MSDN Kitaplığı'nda tür".
 
 - **Konum**
 
@@ -67,8 +67,7 @@ Bir kullanılabilir tür kitaplığından bir MFC sınıfı eklemek için bu sih
 
    Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf bildirimi dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür kitaplığından MFC sınıfı](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
-[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../../mfc/automation-clients-using-type-libraries.md)
-
+[Otomasyon istemcileri: Tür kitaplıklarını kullanma](../../mfc/automation-clients-using-type-libraries.md)

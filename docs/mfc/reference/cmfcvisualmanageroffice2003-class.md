@@ -92,12 +92,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOffice2003 Class [MFC]
 ms.assetid: 115482cd-e349-450a-8dc4-c6023d092aab
-ms.openlocfilehash: 1b811de23b4a049bd462ddbb3f9b96e80ae25be0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c3b0a031db8ff843bb43f7dfa69f046d6ae99a96
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558818"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273276"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 sınıfı
 
@@ -892,7 +892,7 @@ virtual void OnDrawCheckBoxEx(
 [in] Onay kutusu sınırlayıcı dikdörtgenini.
 
 *nDurum*<br/>
-[in] Onay durumu: 0 işaretlenmemişse, işaretli ise 2 karışık işaretlediyseniz 1.
+[in] Onay durumu: 0 işaretlenmemişse, eğer denetlenmişse 2 karışık işaretlediyseniz 1.
 
 *bHighlighted*<br/>
 [in] Onay kutusunu vurgulanan ya da aksi takdirde FALSE ise TRUE.
@@ -2508,7 +2508,7 @@ Varsa bir `CMFCVisualManagerOffice2003` nesne genel bir tema kullanır, GUI öğ
 
 Varsa bir `CMFCVisualManagerOffice2003` nesne genel bir tema kullanmaz, GUI öğelerini kullanarak çizer [CMFCVisualManagerOfficeXP sınıfı](../../mfc/reference/cmfcvisualmanagerofficexp-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

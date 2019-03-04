@@ -7,12 +7,12 @@ helpviewer_keywords:
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-ms.openlocfilehash: 9972586bd0cc4059e81d81be954a8cf0cada1f0d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61b38f6147a8bde4f6eb42cd144f9f64dac8dbd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594511"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269298"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC'de Kullanılabilen Türetilmiş Görünüm Sınıfları
 
@@ -38,9 +38,8 @@ Aşağıdaki tablo, MFC'nin görünümü sınıflar ve ilişkileri birbirine gö
 > [!NOTE]
 >  MFC sürüm 4.0 itibariyle `CEditView` türetilir `CCtrlView`.
 
-Bu sınıfların kullanmak için onlardan uygulamanın görünüm sınıfları türetin. İlgili bilgiler için bkz. [kaydırma ve ölçeklendirme görünümleri](../mfc/scrolling-and-scaling-views.md). Veritabanı sınıfları hakkında daha fazla bilgi için bkz. [genel bakış: veritabanı programlama](../data/data-access-programming-mfc-atl.md).
+Bu sınıfların kullanmak için onlardan uygulamanın görünüm sınıfları türetin. İlgili bilgiler için bkz. [kaydırma ve ölçeklendirme görünümleri](../mfc/scrolling-and-scaling-views.md). Veritabanı sınıfları hakkında daha fazla bilgi için bkz. [genel bakış: Veritabanı programlama](../data/data-access-programming-mfc-atl.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görünümleri Kullanma](../mfc/using-views.md)
-

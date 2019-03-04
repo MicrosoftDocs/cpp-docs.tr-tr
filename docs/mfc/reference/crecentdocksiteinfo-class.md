@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CRecentDockSiteInfo [MFC], SetInfo
 - CRecentDockSiteInfo [MFC], StoreDockInfo
 ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
-ms.openlocfilehash: aee66ea9893325921c62bfaef9cd501ef40e817a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a522d4dc88e7d1937ffa5b859aec32615939f21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615286"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275252"
 ---
 # <a name="crecentdocksiteinfo-class"></a>Crecentdocksiteınfo sınıfı
 
@@ -83,7 +83,7 @@ A `CRecentDockSiteInfo` nesnesi bir bölme oluşturulan her zaman oluşturulur. 
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[Crecentdocksiteınfo](../../mfc/reference/crecentdocksiteinfo-class.md)
+[CRecentDockSiteInfo](../../mfc/reference/crecentdocksiteinfo-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -271,7 +271,7 @@ virtual void StoreDockInfo(
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

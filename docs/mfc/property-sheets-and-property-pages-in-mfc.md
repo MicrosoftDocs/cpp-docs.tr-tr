@@ -7,12 +7,12 @@ helpviewer_keywords:
 - property sheets, MFC
 - tab dialog boxes
 ms.assetid: e1bede2b-0285-4b88-a052-0f8a372807a2
-ms.openlocfilehash: fa5e48459b4d53ff6e5a80e7b315826f266de29f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa8ee3518ad2b32e0eace77f0961eb86ccde1822
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654395"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261199"
 ---
 # <a name="property-sheets-and-property-pages-in-mfc"></a>MFC'de Özellik Bölümleri ve Özellik Sayfaları
 
@@ -27,7 +27,6 @@ Bir özellik sayfası iletişim kutusu, genel bir görünüm geçerli seçimde g
 > [!NOTE]
 >  Bir özellik sayfasını kullanarak göstermek çalışırken `CPropertySheet::DoModal`, sistemin ilk fırsat özel durum oluşturabilir. Sistem değiştirilmeye çalışılırken özel durum oluşur [pencere stilleri](../mfc/reference/styles-used-by-mfc.md#window-styles) nesne oluşturulmadan önce nesne. Bu özel durum ve onu önlemenin veya bunu işlemek nasıl hakkında daha fazla bilgi için bkz. [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik sayfaları](../mfc/property-sheets-mfc.md)
-

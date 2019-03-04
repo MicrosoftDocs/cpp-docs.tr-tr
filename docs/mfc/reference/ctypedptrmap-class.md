@@ -1,5 +1,5 @@
 ---
-title: CTypedPtrMap sınıfı
+title: CTypedPtrMap Class
 ms.date: 11/04/2016
 f1_keywords:
 - CTypedPtrMap
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], RemoveKey
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-ms.openlocfilehash: 4c6d20279792788c1013df8540080b2715ade1f2
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 05689001f8c385191057a8dc824a508189a43f05
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657389"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266069"
 ---
-# <a name="ctypedptrmap-class"></a>CTypedPtrMap sınıfı
+# <a name="ctypedptrmap-class"></a>CTypedPtrMap Class
 
 Bir tür açısından güvenli, işaretçi eşleme sınıflarındaki nesneler için "sarmalayıcı" sağlar `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, ve `CMapStringToPtr`.
 
@@ -34,7 +34,7 @@ class CTypedPtrMap : public BASE_CLASS
 
 #### <a name="parameters"></a>Parametreler
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 Türü belirtilmiş işaretçi eşleme sınıfının temel sınıfı; bir işaretçi eşlem sınıfı olmalıdır ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, veya `CMapStringToPtr`).
 
 *KEY*<br/>
@@ -124,7 +124,7 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 Şablon parametresi bu haritanın sınıfın temel sınıfına belirtme.
 
 *anahtar*<br/>
@@ -157,7 +157,7 @@ VALUE& operator[ ](base_class ::base_arg_key key);
 *DEĞER*<br/>
 Şablon parametresi bu eşlemesinde depolanan değerlerin türü belirtme.
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 Şablon parametresi bu haritanın sınıfın temel sınıfına belirtme.
 
 *anahtar*<br/>
@@ -214,7 +214,7 @@ Yeni öğe değeri nesne işaretçisi belirtir.
 
 Daha ayrıntılı açıklamalar için bkz. [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek Topla](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

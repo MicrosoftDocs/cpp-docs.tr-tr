@@ -1,5 +1,5 @@
 ---
-title: 'TN042: ODBC Sürücü Geliştirici Önerileri'
+title: 'TN042: ODBC sürücü Geliştirici önerileri'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.odbc
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - databases [MFC], ODBC
 - TN042
 ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
-ms.openlocfilehash: 2140261c2e90eaee7930d4be3282ec31bda29759
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 462f8229d995add79f48f34b7f81257710b4a8b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502059"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276617"
 ---
-# <a name="tn042-odbc-driver-developer-recommendations"></a>TN042: ODBC Sürücü Geliştirici Önerileri
+# <a name="tn042-odbc-driver-developer-recommendations"></a>TN042: ODBC sürücü Geliştirici önerileri
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -116,8 +116,7 @@ Bir dinamik açmak için gereken en düşük destek aşağıdadır:
 
 Kötümser kilitleme istenip istenmediğini Ayrıca, bir çağrı `SQLSetPos` IRow 1, FALSE fRefresh ve fLock **SQL_LCK_EXCLUSIVE** hale getirilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

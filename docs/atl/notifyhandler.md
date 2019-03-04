@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: 72c8fa3a0773a67c32a0652eb048885564a734be
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 204309c334a8f5cd5be702bba016678537d66211
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694614"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275707"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
@@ -46,7 +46,7 @@ Adresi bir [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) bildirimi k
 
 Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Uygulama](../atl/implementing-a-window.md)<br/>
 [İleti eşlemeleri](../atl/message-maps-atl.md)<br/>

@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-ms.openlocfilehash: 7c8915b8d82f96ed0bd1fad11e1a4f0687b40493
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c21f89215e08523188eb32490d7b1d5506299fb5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530175"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259457"
 ---
 # <a name="cwordarray-class"></a>CWordArray sınıfı
 
@@ -136,7 +136,7 @@ interface class ICommandSource
 
 MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak, kullanıcı denetimine bir başvuru size `ICommandSource` nesne.
 
-Bkz [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
+Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
@@ -162,7 +162,7 @@ Komut işleyicisi yöntemi için bir tanıtıcı.
 
 Bu yöntem komut işleyici ekler *cmdHandler* komut kaynak nesnesine ve işleyiciye eşler *cmdID*.
 
-Bkz [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `AddCommandHandler`.
+Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `AddCommandHandler`.
 
 ##  <a name="addcommandrangehandler"></a>  ICommandSource::AddCommandRangeHandler
 
@@ -362,7 +362,7 @@ interface class ICommandTarget
 
 MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak `ICommandTarget`, kullanıcı denetimi nesnesine bir başvuru sağlar.
 
-Bkz [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
+Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
@@ -383,7 +383,7 @@ Komut kaynak nesnesine yönelik bir tanıtıcı.
 
 MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını işlemelerine izin vermek için kullanıcı denetimi için.
 
-Bu yöntem, komut hedef nesnesini başlatır ve belirtilen komut kaynak nesnesi ile ilişkilendirir *cmdSource*. Kullanıcı denetimi sınıf uygulamasında çağrılmalıdır. Başlatma sırasında komut işleyicileri komut kaynak nesnesi ile çağırarak kayıt [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) içinde `Initialize` uygulaması. Bkz [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `Initialize` Bunu yapmak için.
+Bu yöntem, komut hedef nesnesini başlatır ve belirtilen komut kaynak nesnesi ile ilişkilendirir *cmdSource*. Kullanıcı denetimi sınıf uygulamasında çağrılmalıdır. Başlatma sırasında komut işleyicileri komut kaynak nesnesi ile çağırarak kayıt [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) içinde `Initialize` uygulaması. Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `Initialize` Bunu yapmak için.
 
 ##  <a name="icommandui_interface"></a>  Icommanduı arabirimi
 
@@ -399,7 +399,7 @@ Bu arabirim, yöntemleri ve kullanıcı arabirimi komutlarını Yönet özellikl
 
 `ICommandUI` içinde kullanılan bir `ON_UPDATE_COMMAND_UI` işleyici türetilmiş sınıf içinde. Bir uygulamanın kullanıcı (seçer veya tıklama) etkinleştirirken her bir menü öğesi bir menü etkin olarak görüntülenen veya devre dışı. Her menü komut hedefinin uygulayarak bu bilgileri sağlar. bir `ON_UPDATE_COMMAND_UI` işleyici. Her komut kullanıcı arabirimi nesnelerinin uygulamanızdaki bir ileti eşleme girişi ve işlev prototipi her işleyicisi oluşturmak için Özellikler penceresini kullanın.
 
-İlgili daha fazla bilgi için `ICommandUI` arabirimi komut yönlendirme olarak kullanılır, bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme Ekle](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
+Daha fazla bilgi için nasıl `ICommandUI` arabirimi komut yönlendirme olarak kullanılır, bkz [nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
@@ -433,7 +433,7 @@ void ContinueRouting();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ile birlikte kullanılması gereken bir Gelişmiş bir üye işlevidir bir [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) işleyici false değerini döndürür. Daha fazla bilgi için bkz. Teknik Not [TN006: ileti eşlemeleri](../../mfc/tn006-message-maps.md).
+Bu ile birlikte kullanılması gereken bir Gelişmiş bir üye işlevidir bir [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) işleyici false değerini döndürür. Daha fazla bilgi için bkz. Teknik Not [TN006: İleti eşlemeleri](../../mfc/tn006-message-maps.md).
 
 ##  <a name="enabled"></a>  ICommandUI::Enabled
 
@@ -544,9 +544,8 @@ void OnUpdate();
 
 Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirilecek görünümü sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek Topla](../../visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

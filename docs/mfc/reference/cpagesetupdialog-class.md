@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: d3fdcfa664de93f62b8b4dbcbc6184d08fdf591c
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 9a8940aa23b23281a6de6ce7e75bb1e43341b14a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178088"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277891"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 
@@ -403,9 +403,8 @@ Kağıt veya Zarf yönünü belirtir ve yazıcı iğneli veya HPPCL (Hewlett Pac
 
 Resmin çizim özelleştirmek için bu işlevi geçersiz kılar. Bu işlev geçersiz kılma ve TRUE döndürün, görüntünün çizin gerekir. Bu işlev geçersiz kılma ve false değerini döndürür, tüm varsayılan görüntü framework tarafından çekilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-ms.openlocfilehash: d152153ac4e379f4159c4ade5dfc044288f69720
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e523b2a145254cd9b7adf2b066605a679349f6c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541414"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273458"
 ---
 # <a name="cdatabase-class"></a>CDatabase sınıfı
 
@@ -111,11 +111,11 @@ class CDatabase : public CObject
 Bir veri kaynağı, bazı veritabanı yönetim sistemi (DBMS) tarafından barındırılan bir veri, belirli bir örneğidir. Microsoft SQL Server, Microsoft Access, Borland'da dBASE ve xBASE verilebilir. Bir veya daha fazla olabilir `CDatabase` nesneleri, uygulamanız bir anda etkin.
 
 > [!NOTE]
->  Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
+>  Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
 Kullanılacak `CDatabase`, oluşturun bir `CDatabase` nesne ve çağrı kendi `OpenEx` üye işlevi. Bu, bir bağlantı açar. Ardından oluşturmak zaman `CRecordset` bağlı veri kaynağı üzerinde çalışmak nesnelerini geçirmek kayıt oluşturucusu için bir işaretçi, `CDatabase` nesne. Bağlantıyı kullanmayı bitirdiğinizde, çağrı `Close` üye işlevi ve yok et `CDatabase` nesne. `Close` önceden kapattıysanız değil tüm kayıt kümelerini kapatır.
 
-Hakkında daha fazla bilgi için `CDatabase`, makalelere göz atın [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md) ve [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
+Hakkında daha fazla bilgi için `CDatabase`, makalelere göz atın [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md) ve [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -146,7 +146,7 @@ Bir veya daha fazla işlem oluşan `AddNew`, `Edit`, `Delete`, ve `Update` üye 
 > [!CAUTION]
 >  ODBC sürücüsünün bağlı olarak, bir kayıt kümesi çağırmadan önce açma `BeginTrans` çağırırken sorunlara neden `Rollback`. Kullanmakta olduğunuz belirli sürücü denetlemeniz gerekir. Örneğin, Microsoft ODBC Masaüstü Sürücü Paketi 3.0 dahil Microsoft Access sürücüsü kullanılırken, açık bir imleç sahip herhangi bir veritabanı üzerinde bir işlem başlamamalıdır Jet veritabanı altyapısının gereksinim için dikkate alması gerekir. MFC veritabanı sınıfları açık bir imleç açık anlamına gelir. `CRecordset` nesne. Daha fazla bilgi için [Teknik Not 68](../../mfc/tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver.md).
 
-`BeginTrans` Ayrıca veri kayıtlarının sunucuda istenen eşzamanlılık ve veri kaynağının özelliklerini bağlı olarak, kilit. Kilitleme veriler hakkında daha fazla bilgi için bkz [kayıt kümesi: kayıtları kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).
+`BeginTrans` Ayrıca veri kayıtlarının sunucuda istenen eşzamanlılık ve veri kaynağının özelliklerini bağlı olarak, kilit. Kilitleme veriler hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).
 
 İşlem kullanıcı tarafından tanımlanan makalesinde açıklanan [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
 
@@ -161,7 +161,7 @@ Bir veya daha fazla işlem oluşan `AddNew`, `Edit`, `Delete`, ve `Update` üye 
 
 ### <a name="example"></a>Örnek
 
-  Makaleye göz atın [işlem: bir kayıt kümesi (ODBC) işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
+  Makaleye göz atın [işlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
 
 ##  <a name="bindparameters"></a>  CDatabase::BindParameters
 
@@ -288,7 +288,7 @@ Bir dizi çağrıda bir işlem oluşan `AddNew`, `Edit`, `Delete`, ve `Update` �
 
 ### <a name="example"></a>Örnek
 
-  Makaleye göz atın [işlem: bir kayıt kümesi (ODBC) işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
+  Makaleye göz atın [işlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
 
 ##  <a name="executesql"></a>  CDatabase:: Executesql'den
 
@@ -341,7 +341,7 @@ Aşağıdaki tablo, dönüş değeri için birleştirilebilen bit maskesi değer
 |SQL_BP_UPDATE|Bir satır için yer işareti sonra geçerli bir `Update` satırının işlemi.|
 |SQL_BP_OTHER_HSTMT|Bir kayıt kümesi nesnesi ile ilişkili yer işaretleri, ikinci kayıt üzerinde geçerlidir.|
 
-Bu dönüş değeri hakkında daha fazla bilgi için bkz: ODBC API işlevini `SQLGetInfo` Windows SDK. Yer işaretleri hakkında daha fazla bilgi için bkz [kayıt kümesi: yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
+Bu dönüş değeri hakkında daha fazla bilgi için bkz: ODBC API işlevini `SQLGetInfo` Windows SDK. Yer işaretleri hakkında daha fazla bilgi için bkz [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
 ##  <a name="getconnect"></a>  CDatabase::GetConnect
 
@@ -600,7 +600,7 @@ Bir geri alma sonra geri alma önce geçerli kaydı geçerli olmaya devam eder. 
 
 ### <a name="example"></a>Örnek
 
-  Makaleye göz atın [işlem: bir kayıt kümesi (ODBC) işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
+  Makaleye göz atın [işlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
 
 ##  <a name="setlogintimeout"></a>  CDatabase::SetLoginTimeout
 
@@ -640,7 +640,7 @@ Bir işlem nedeniyle ağ erişim sorunları, aşırı miktarda sorgu işleme sü
 
 Sorgu zaman aşımı için'varsayılan değer 15 saniyedir. Tüm veri kaynakları sorgu zaman aşımı değerini ayarlama özelliğini destekler. Sorgu zaman aşımı değerini 0 olarak ayarlarsanız, hiçbir zaman aşımı oluşur; veri kaynağı ile iletişimi yanıt vermemeye başlayabilir. Bu davranış, geliştirme sırasında yararlı olabilir. Veri kaynağı zaman aşımı desteklemiyorsa, izleme çıktısı, ancak bir özel alın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

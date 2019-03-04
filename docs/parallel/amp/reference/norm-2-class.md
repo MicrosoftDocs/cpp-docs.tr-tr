@@ -28,12 +28,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_2
 - amp_short_vectors/Concurrency::graphics::norm_2::operator--
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
-ms.openlocfilehash: ebf1a80a695f1d25652f239f66d8d40c0e1099ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c48e6dd573e3303307cc8a0247a955aba62d809e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542226"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271183"
 ---
 # <a name="norm2-class"></a>norm_2 Sınıfı
 
@@ -116,7 +116,7 @@ class norm_2;
 
 **Başlık:** amp_short_vectors.h
 
-**Namespace:** Concurrency::graphics
+**Namespace:** CONCURRENCY::Graphics
 
 ##  <a name="ctor"></a> norm_2
 
@@ -194,6 +194,6 @@ Başlatmak için kullanılan nesne.
 static const int size = 2;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

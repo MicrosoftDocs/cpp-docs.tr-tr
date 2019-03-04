@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultCompareTraits class
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-ms.openlocfilehash: b7f51ccd266fce1b5d614dfe2c725e20fde6f297
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5f4ab3737838af11501c4a0f2037b57087939c9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575311"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273601"
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits sınıfı
 
@@ -105,6 +105,6 @@ Aşağıdaki tabloyu temel alan bir tamsayı döndürür:
 
 Bu işlev varsayılan uygulamasını kullanan **==**, **\<**, ve **>** işleçleri. Basit veri türleri dışındaki nesneler için bu işlev geçersiz kılınması gerekebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

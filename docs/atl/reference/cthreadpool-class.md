@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-ms.openlocfilehash: b1cf1dfc623edbb2b6e71aa6476a2fe0cccbc20b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d363de0d787ecc5015093005b39a379acd82e71
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677194"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262707"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 
@@ -346,7 +346,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 Bu yöntem, havuzdaki tüm iş parçacıkları bir kapatma isteği gönderir. Zaman aşımı süresi dolarsa, bu yöntemi çağıran [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) değil çıkmak herhangi bir iş parçacığı üzerinde. Bu yöntem, sınıf yok ediciden otomatik olarak çağrılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IThreadPoolConfig Arabirimi](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - tree controls [MFC], item position
 - position, CTreeCtrl items
 ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
-ms.openlocfilehash: d39e48cf940f3e5e903fc8a1c82952d5c2550c05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 238cb40319d28a53592a594a72947f400720f935
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501211"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278385"
 ---
 # <a name="tree-control-item-position"></a>Ağaç Denetim Öğesi Konumu
 
@@ -24,8 +24,7 @@ Zaman `TVI_FIRST` veya `TVI_LAST` belirtilirse, ağaç denetimi, belirli bir üs
 
 [SortChildrenCB](../mfc/reference/ctreectrl-class.md#sortchildrencb) üye işlevi, belirlediğiniz ölçütlere göre alt öğeleri sıralama olanak tanır. Bu işlev çağırdığınızda, iki alt öğelerin göreli sırasını kampanyanızın olması gerektiğinde ağaç denetimi çağırabilen bir uygulama tanımlı geri çağırma işlevi belirtin. Uygulama tanımlı iki 32-bit değerleri karşılaştırılan öğelerin ve çağırırken belirttiğiniz üçüncü bir 32-bit değeri geri çağırma işlevini alır `SortChildrenCB`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

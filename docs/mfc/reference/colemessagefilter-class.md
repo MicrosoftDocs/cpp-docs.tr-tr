@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COleMessageFilter [MFC], SetMessagePendingDelay
 - COleMessageFilter [MFC], SetRetryReply
 ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
-ms.openlocfilehash: 4e12b4dc41c0e384025a2af567cb118d066aaa72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a06891f9413979895175808e109cc4abb7d75e09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478253"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259106"
 ---
 # <a name="colemessagefilter-class"></a>COleMessageFilter sınıfı
 
@@ -78,7 +78,7 @@ Varsayılan olarak, bir `COleMessageFilter` nesne, uygulama başlatıldığında
 
 Bu gelişmiş bir sınıftır; nadiren ile doğrudan çalışmanız gerekiyor.
 
-Daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).
+Daha fazla bilgi için bkz [sunucuları: Sunucu uygulama](../../mfc/servers-implementing-a-server.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -284,7 +284,7 @@ Klavye veya fare bir ileti olduğunda bekleyen bir çağrı ve çağrı sırası
 
 İletişim kutularını devre dışı bırakıldığında geçerli "yeniden deneme yanıt" her zaman çağrılar yoğun uygulamalar için kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

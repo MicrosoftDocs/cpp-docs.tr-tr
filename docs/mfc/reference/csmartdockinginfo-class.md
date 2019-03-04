@@ -1,5 +1,5 @@
 ---
-title: Csmartdockingınfo sınıfı
+title: CSmartDockingInfo Class
 ms.date: 11/19/2018
 f1_keywords:
 - CSmartDockingInfo
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-ms.openlocfilehash: e8931af856bc75bd499d8237278998adfcdb02a6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: d5f918b591e1db9ff67288a8761f7554698fa761
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176776"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273471"
 ---
-# <a name="csmartdockinginfo-class"></a>Csmartdockingınfo sınıfı
+# <a name="csmartdockinginfo-class"></a>CSmartDockingInfo Class
 
 Akıllı Yerleştirme işaretçilerinin görünümünü tanımlar.
 
@@ -99,7 +99,7 @@ Aşağıdaki çizimde özelleştirilmiş akıllı yerleştirme işaretçilerinin
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[Csmartdockingınfo](../../mfc/reference/csmartdockinginfo-class.md)
+[CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -244,7 +244,7 @@ params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;
 params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - icons, using in status bars
 - CStatusBarCtrl class [MFC], declaring parts of
 ms.assetid: 60e8f285-d2d8-424a-a6ea-2fc548370303
-ms.openlocfilehash: c813ef53f94fb773b62f102a484eed2be859772e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f00aee03a74799bf14563653b50c487ff001d02
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662169"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264345"
 ---
 # <a name="initializing-the-parts-of-a-cstatusbarctrl-object"></a>Bir CStatusBarCtrl Nesnesinin Bölümlerini Başlatma
 
@@ -31,8 +31,7 @@ Aşağıdaki örnekte mevcut bir başlatır `CStatusBarCtrl` nesne (`m_StatusBar
 
 Modunu ayarlama hakkında daha fazla bilgi için bir `CStatusBarCtrl` basit, bkz: nesnesine [CStatusBarCtrl nesnesinin modunu ayarlama](../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CStatusBarCtrl Kullanma](../mfc/using-cstatusbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

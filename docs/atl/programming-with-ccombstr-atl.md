@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CComBSTR class, programming with
 - Unicode, using CComBSTR [ATL]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
-ms.openlocfilehash: 44689b45d567c524d6db1446cd65201c21499c91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 806d23730a0657fc1e0c154e20dc9abd62f7e8af
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633122"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259418"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR (ATL) ile programlama
 
@@ -76,10 +76,9 @@ Sızıntısını önlemek için çağrı `Empty` mevcut yöntemi `CComBSTR` adre
 
 İşlev parametresi varsa aynı kodu sızıntı neden olmaz, Not **[içinde out]**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
 [CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [wstring](../standard-library/basic-string-class.md)<br/>
 [Dize Dönüşüm Makroları](../atl/reference/string-conversion-macros.md)
-

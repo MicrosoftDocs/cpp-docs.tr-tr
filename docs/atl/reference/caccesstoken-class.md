@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: e53160860211ba09114f2d4d101a2eaaf7de941f
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: eb49ee135dce4ee0d5e37acd2382a34e1d99b083
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894253"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265489"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
@@ -1179,7 +1179,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 Bu erişim belirteci etkin durumdayken oluşturulan yeni nesneler için varsayılan grup birincil grubudur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATLSecurity örnek](../../visual-cpp-samples.md)<br/>
 [Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)<br/>

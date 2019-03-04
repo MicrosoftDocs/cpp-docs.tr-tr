@@ -6,12 +6,12 @@ helpviewer_keywords:
 - asynchronous message blocks
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
-ms.openlocfilehash: b78b4db4dda33e0a94da3624ea1ffd8748a601f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de6a433ab733207d5c56b46e693837056a0cd8b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586127"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274173"
 ---
 # <a name="asynchronous-message-blocks"></a>Zaman Uyumsuz İleti Blokları
 
@@ -27,7 +27,7 @@ Bu konu aşağıdaki bölümleri içermektedir:
 
 - [İleti bloğu türlerine genel bakış](#overview)
 
-- [unbounded_buffer sınıfı](#unbounded_buffer)
+- [unbounded_buffer Sınıfı](#unbounded_buffer)
 
 - [overwrite_buffer Sınıfı](#overwrite_buffer)
 
@@ -97,13 +97,13 @@ Bir ileti hedef bloğa düzenli aralıklarla gönderir.
 
 Bu ileti bloğu türleri farklı durumlar için yararlı hale farklı özelliklere sahiptir. Bu özelliklerin bazıları şunlardır:
 
-- *Yayma türü*: olup ileti bloğu verileri, verilerin bir alıcı veya ikisinin bir kaynak olarak davranır.
+- *Yayma türü*: Olup ileti bloğu verileri, verilerin bir alıcı veya ikisinin bir kaynak olarak davranır.
 
-- *Mesaj sıralama*: olup ileti bloğu iletiler, gönderilen veya alınan özgün sırasını korur. Her önceden tanımlı bir ileti bloğu türü olan gönderdiğinde veya ileti aldığında özgün sırasını korur.
+- *Mesaj sıralama*: Olup ileti bloğu iletileri gönderilen veya alınan özgün sırasını korur. Her önceden tanımlı bir ileti bloğu türü olan gönderdiğinde veya ileti aldığında özgün sırasını korur.
 
-- *Kaynak sayısı*: ileti bloğu okuyabileceği kaynakları sayısı.
+- *Kaynak sayısı*: İleti bloğu okuyabileceği kaynakları maksimum sayısı.
 
-- *Hedef sayısının*: ileti bloğu yazabilirsiniz hedefleri sayısı.
+- *Hedef sayısının*: İleti bloğu yazabilirsiniz hedefleri maksimum sayısı.
 
 Aşağıdaki tabloda, bu özellikleri için çeşitli ileti bloğu türleri nasıl ilişkili olduğunu gösterir.
 
@@ -125,7 +125,8 @@ Aşağıdaki bölümlerde daha ayrıntılı ileti bloğu türleri açıklanmakta
 
 ##  <a name="unbounded_buffer"></a> unbounded_buffer sınıfı
 
-[Concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) sınıfı, genel amaçlı bir zaman uyumsuz ileti yapısını temsil eder. Bu sınıf, iletilerin birden çok kaynak tarafından yazılabilen veya birden çok hedef tarafından okunabilen bir ilk giren ilk çıkar (FIFO) sırasını tutar. Bir hedefe bir ileti aldığında bir `unbounded_buffer` nesnesi, bu iletiyi, ileti sırasından kaldırılır. Bu nedenle, ancak bir `unbounded_buffer` nesne birden çok hedefe sahip olabilir, her ileti yalnızca bir hedef alır. `unbounded_buffer` sınıfı, başka bir bileşene birden çok ileti geçirmek istediğinizde ve bu bileşenin her iletiyi alması gerektiğinde kullanışlıdır.
+[Concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) sınıfı, genel amaçlı bir zaman uyumsuz ileti yapısını temsil eder. Bu sınıf, iletilerin birden çok kaynak tarafından yazılabilen veya birden çok hedef tarafından okunabilen bir ilk giren ilk çıkar (FIFO) sırasını tutar. Bir hedefe bir ileti aldığında bir `unbounded_buffer` nesnesi, bu iletiyi, ileti sırasından kaldırılır. Bu nedenle, ancak bir `unbounded_buffer` nesne birden çok hedefe sahip olabilir, her ileti yalnızca bir hedef alır. 
+  `unbounded_buffer` sınıfı, başka bir bileşene birden çok ileti geçirmek istediğinizde ve bu bileşenin her iletiyi alması gerektiğinde kullanışlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -139,7 +140,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 334455
 ```
 
-Nasıl kullanılacağını gösteren tam bir örnek `unbounded_buffer` sınıfı [nasıl yapılır: çeşitli üretici-tüketici desenlerini uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
+Nasıl kullanılacağını gösteren tam bir örnek `unbounded_buffer` sınıfı [nasıl yapılır: Çeşitli üretici-tüketici desenlerini uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
 
 [[Üst](#top)]
 
@@ -161,13 +162,14 @@ Bu örnek aşağıdaki çıktıyı üretir:
 555555
 ```
 
-Nasıl kullanılacağını gösteren tam bir örnek `overwrite_buffer` sınıfı [nasıl yapılır: çeşitli üretici-tüketici desenlerini uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
+Nasıl kullanılacağını gösteren tam bir örnek `overwrite_buffer` sınıfı [nasıl yapılır: Çeşitli üretici-tüketici desenlerini uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
 
 [[Üst](#top)]
 
 ##  <a name="single_assignment"></a> single_assignment sınıfı
 
-[Concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) sınıfına benzer `overwrite_buffer` ancak bir `single_assignment` nesne yalnızca bir kez yazılabilir. `overwrite_buffer` sınıfı gibi, hedef de bir `single_assignment` nesnesinden ileti aldığında, o ileti nesneden kaldırılmaz. Bu nedenle, birden çok hedef iletinin bir kopyasını alır. `single_assignment` Sınıfı, bir iletiyi birden çok bileşene yayınlamak istediğinizde yararlıdır.
+[Concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) sınıfına benzer `overwrite_buffer` ancak bir `single_assignment` nesne yalnızca bir kez yazılabilir. 
+  `overwrite_buffer` sınıfı gibi, hedef de bir `single_assignment` nesnesinden ileti aldığında, o ileti nesneden kaldırılmaz. Bu nedenle, birden çok hedef iletinin bir kopyasını alır. `single_assignment` Sınıfı, bir iletiyi birden çok bileşene yayınlamak istediğinizde yararlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -181,7 +183,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 333333
 ```
 
-Nasıl kullanılacağını gösteren tam bir örnek `single_assignment` sınıfı [izlenecek yol: vadeli işlemleri uygulama](../../parallel/concrt/walkthrough-implementing-futures.md).
+Nasıl kullanılacağını gösteren tam bir örnek `single_assignment` sınıfı [izlenecek yol: Vadeli işlemleri uygulama](../../parallel/concrt/walkthrough-implementing-futures.md).
 
 [[Üst](#top)]
 
@@ -201,7 +203,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 334455
 ```
 
-Nasıl kullanılacağını gösteren tam bir örnek `call` sınıfı [nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlayan](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md).
+Nasıl kullanılacağını gösteren tam bir örnek `call` sınıfı [nasıl yapılır: Call ve transformer sınıflarına iş işlevleri sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md).
 
 [[Üst](#top)]
 
@@ -225,7 +227,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 10.8914.5218.15
 ```
 
-Nasıl kullanılacağını gösteren tam bir örnek `transformer` sınıfı [nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).
+Nasıl kullanılacağını gösteren tam bir örnek `transformer` sınıfı [nasıl yapılır: Veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).
 
 [[Üst](#top)]
 
@@ -255,7 +257,7 @@ fib35 received its value first. Result = 9227465
 
 Bu örnekte [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) paralel Fibonacci sayıları hesaplamak için kullanılan algoritma. Hakkında daha fazla bilgi için `parallel_invoke`, bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-Nasıl kullanılacağını gösteren tam bir örnek `choice` sınıfı [nasıl yapılır: Tamamlanan görevler arasından seçin](../../parallel/concrt/how-to-select-among-completed-tasks.md).
+Nasıl kullanılacağını gösteren tam bir örnek `choice` sınıfı [nasıl yapılır: Tamamlanan görevler arasından seçme](../../parallel/concrt/how-to-select-among-completed-tasks.md).
 
 [[Üst](#top)]
 
@@ -287,7 +289,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
 
 Bu örnekte [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) paralel Fibonacci sayıları hesaplamak için kullanılan algoritma. Hakkında daha fazla bilgi için `parallel_invoke`, bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-Nasıl kullanılacağını gösteren tam örnekler `join` sınıfı [nasıl yapılır: Tamamlanan görevler arasından seçin](../../parallel/concrt/how-to-select-among-completed-tasks.md) ve [izlenecek yol: kilitlenmeyi önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
+Nasıl kullanılacağını gösteren tam örnekler `join` sınıfı [nasıl yapılır: Tamamlanan görevler arasından seçme](../../parallel/concrt/how-to-select-among-completed-tasks.md) ve [izlenecek yol: Kilitlenmeyi önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
 
 [[Üst](#top)]
 
@@ -313,7 +315,7 @@ Bu örnek, örnek aşağıdaki çıktıyı üretir:
 Computing fib(42)..................................................result is 267914296
 ```
 
-Nasıl kullanılacağını gösteren tam bir örnek `timer` sınıfı [nasıl yapılır: düzenli aralıkla ileti gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md).
+Nasıl kullanılacağını gösteren tam bir örnek `timer` sınıfı [nasıl yapılır: Düzenli aralıkla ileti gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md).
 
 [[Üst](#top)]
 
@@ -340,7 +342,7 @@ bool (T const &)
 
 Gereksiz verilerin kopyalanmasını ortadan kaldırmak için değere göre yayılan bir toplam değer türüne sahip olduğunda ikinci formu kullanın.
 
-İleti filtreleme destekler *veri akışı* hangi bileşenlerin gerçekleştirmek hesaplamalar veri aldıklarında bir programlama modeli. Filtre işlevleri ileti geçirme ağdaki veri akışını denetlemek için kullandığı örnekleri için bkz. [nasıl yapılır: ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md), [izlenecek yol: bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md), ve [ İzlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+İleti filtreleme destekler *veri akışı* hangi bileşenlerin gerçekleştirmek hesaplamalar veri aldıklarında bir programlama modeli. Filtre işlevleri ileti geçirme ağdaki veri akışını denetlemek için kullandığı örnekleri için bkz. [nasıl yapılır: Bir ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md), [izlenecek yol: Bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md), ve [izlenecek yol: Görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 [[Üst](#top)]
 
@@ -352,11 +354,10 @@ Doyumsuz olmayan ve doyumsuz birleştirme göz önünde bulundurun. Bunların he
 
 Ayrıca bir dizi kaynaktan giriş iletileri okur, doyumsuz birleştirme, her bir kaynaktan bir ileti almak için beklerken ek iletileri okumak için ileti rezervasyonlarına kullanır. Örneğin, iletiler alan ileti bloklarından doyumsuz birleştirme düşünün `A` ve `B`. Doyumsuz birleştirme B'den iki ileti alır, ancak henüz bir ileti alındı `A`, doyumsuz birleştirme ikinci iletisinden benzersiz İleti tanımlayıcısı kaydeder `B`. Doyumsuz birleştirme gelen iletiyi aldıktan sonra `A` ve bu iletileri, ikinci gelen ileti olmadığını görmek için kaydedilen iletinin tanımlayıcısı kullandığı `B` hala kullanılabilir.
 
-Kendi özel ileti bloğu türleri uyguladığınızda, ileti rezervasyonlarına kullanabilirsiniz. Özel ileti bloğu türünün nasıl oluşturulacağı hakkında bir örnek için bkz. [izlenecek yol: özel bir ileti bloğu oluşturma](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md).
+Kendi özel ileti bloğu türleri uyguladığınızda, ileti rezervasyonlarına kullanabilirsiniz. Özel ileti bloğu türünün nasıl oluşturulacağı hakkında bir örnek için bkz [izlenecek yol: Özel ileti bloğu oluşturma](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md).
 
 [[Üst](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
-

@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 10107d7b815f8a3c479a28de8ff07439b5da2fda
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88cc4a433c774dc7767efaaa62edc71ce8b904d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456049"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273042"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
 
@@ -146,7 +146,7 @@ Tüm yöntemleri `CDataRecoveryHandler` sanal sınıf. Kendi özel veri kurtarma
 
 Kullanabilmeniz için önce bir `CDataRecoveryHandler` nesne çağırmanız [CDataRecoveryHandler::Initialize](#initialize).
 
-Çünkü `CDataRecoveryHandler` sınıfı yakından yeniden başlatma Yöneticisi'ne bağlı `CDataRecoveryHandler` genel parametresine bağlı `m_dwRestartManagerSupportFlags`. Bu parametre hangi izinlere sahip bir yeniden başlatma Yöneticisi ve uygulamanızla nasıl etkileşim kurduğunu belirler. Mevcut bir uygulamaya yeniden başlatma Yöneticisi eklemek için atamanız gerekir `m_dwRestartManagerSupportFlags` Oluşturucusu ana uygulamanızı, uygun değeri. Yeniden başlatma Yöneticisi'ni kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md).
+Çünkü `CDataRecoveryHandler` sınıfı yakından yeniden başlatma Yöneticisi'ne bağlı `CDataRecoveryHandler` genel parametresine bağlı `m_dwRestartManagerSupportFlags`. Bu parametre hangi izinlere sahip bir yeniden başlatma Yöneticisi ve uygulamanızla nasıl etkileşim kurduğunu belirler. Mevcut bir uygulamaya yeniden başlatma Yöneticisi eklemek için atamanız gerekir `m_dwRestartManagerSupportFlags` Oluşturucusu ana uygulamanızı, uygun değeri. Yeniden başlatma Yöneticisi'ni kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -684,10 +684,9 @@ Bir kullanıcı bir belgeyi kaydederken, artık gerekli olmadığından uygulama
 
 Bu yöntemi kullanmak için AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ayarlanmalıdır *m_dwRestartManagerSupportFlags*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../../mfc/how-to-add-restart-manager-support.md)
-
+[Nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md)

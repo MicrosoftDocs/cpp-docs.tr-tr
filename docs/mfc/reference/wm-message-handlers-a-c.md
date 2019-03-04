@@ -1,5 +1,5 @@
 ---
-title: 'WM_ İleti İşleyicileri: A - C'
+title: 'WM_ ileti işleyicileri: A - C'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_CREATE
@@ -35,14 +35,14 @@ helpviewer_keywords:
 - ON_WM_ACTIVATEAPP [MFC]
 - ON_WM_CHANGECBCHAIN
 ms.assetid: 4e315896-d646-4b87-b0ab-41a4a753b045
-ms.openlocfilehash: 67ab1620d0ad815cc070935a2b314bbfa2ef1408
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08221e7569a8b4c4f4e8decba410bd1fe40f04d7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596839"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266035"
 ---
-# <a name="wm-message-handlers-a---c"></a>WM_ İleti İşleyicileri: A - C
+# <a name="wm-message-handlers-a---c"></a>WM_ ileti işleyicileri: A - C
 
 Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşılık gelir:
 
@@ -67,8 +67,7 @@ Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşıl
 |ON_WM_CREATE()|afx_msg int [OnCreate](../../mfc/reference/cwnd-class.md#oncreate)(LPCREATESTRUCT);|
 |ON_WM_CTLCOLOR()|HBRUSH afx_msg [OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)(CDC\*, CWnd\*, UINT);|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
-

@@ -1,5 +1,5 @@
 ---
-title: CMFCEditBrowseCtrl sınıfı
+title: CMFCEditBrowseCtrl Class
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCEditBrowseCtrl
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-ms.openlocfilehash: a16d7508f273fc444be65c1e6cc176911fd28e03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d1f603f8439815c92360af40ccb807446d0e84a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643307"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273289"
 ---
-# <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
+# <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl Class
 
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren düzenlenebilir metin kutusu olan düzenleme Gözat denetimini destekler. Kullanıcı gözatma düğmesini tıkladığında denetim özel bir eylem gerçekleştirir veya dosya Gezgini veya klasör Gezgini içeren standart iletişim kutusunu görüntüler.
 
@@ -88,7 +88,7 @@ Bir dosya veya klasör adı seçmek için bir düzenleme Gözat denetimini kulla
 
    Kullanıcı gözatma düğmesini tıkladığında bir standart klasör seçimi iletişim kutusu görüntülenir.
 
-## <a name="how-to-specify-an-edit-browse-control"></a>Nasıl yapılır: bir düzenleme Gözat denetimi belirtin
+## <a name="how-to-specify-an-edit-browse-control"></a>Nasıl yapılır: Bir düzenleme Gözat denetimi belirtin
 
 Uygulamanızdaki bir düzenleme Gözat denetimini eklemek için aşağıdaki adımları gerçekleştirin:
 
@@ -337,7 +337,7 @@ Bu dosya adı, dosya iletişim kutusu daha fazla sınırlandıramazsınız geçi
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

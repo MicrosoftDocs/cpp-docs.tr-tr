@@ -8,12 +8,12 @@ helpviewer_keywords:
 - printing [MFC], print preview
 - print preview [MFC], modifications to MFC
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
-ms.openlocfilehash: 2a57b3c8ef6df46c2e2524cb44dd29d68751389b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea80b67b3f6bb6980e4e8f7f12a967cb7bb5b6c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569701"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261524"
 ---
 # <a name="print-preview-architecture"></a>Baskı Önizleme Mimarisi
 
@@ -55,7 +55,7 @@ Bazen isteyebilirsiniz `OnPreparePrinting` olup bir yazdırma işi ya da yazdır
 
 `CPrintInfo` Yapı ayrıca adında bir üye içeriyor *m_strPageDesc*, tek sayfalık ve birden çok sayfalı modda ekranın alt kısmındaki görüntülenen dizeleri biçimlendirmek için kullanılır. Varsayılan olarak bu dize biçimindedir "sayfası *n*" ve "sayfaları *n* - *m*," ancak değiştirebilirsiniz *m_strPageDesc* gelen içinde `OnPreparePrinting` ve daha karmaşık bir şey için dizeleri ayarlayın. Bkz: [Cprintınfo yapısı](../mfc/reference/cprintinfo-structure.md) içinde *MFC başvurusu* daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [{1&gt;Yazdırma ve yazdırma önizleme&lt;1}](../mfc/printing-and-print-preview.md)<br/>
 [Yazdırma](../mfc/printing.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - events [MFC], event-driven programming
 - message-driven programming [MFC]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-ms.openlocfilehash: 0539992ac3f9394972b1de36dde0e85ed592413a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ddfd0a5ff506e17efeb63624b7cb8c6a8b1eda4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636130"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262200"
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 
@@ -36,7 +36,6 @@ Aşağıdaki konular, iletiler ve komutlar tartışmak için makale ailesi geri 
 
 - [Komut hedefleri](../mfc/command-targets.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
-

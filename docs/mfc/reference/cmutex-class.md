@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-ms.openlocfilehash: 823f38a6292152774f72c97963b9add5d429d2f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f85e562af9d048503be20d1ab5d219fe8d2d039f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508790"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273302"
 ---
 # <a name="cmutex-class"></a>CMutex sınıfı
 
@@ -43,7 +43,7 @@ Alternatif bir yöntem kullanarak `CMutex` türünde bir değişken eklemek içi
 
 Denetlenen kaynaklarına erişmek için `CMutex` nesnelere bu şekilde, ilk iki türünde bir değişken oluşturun [CSingleLock](../../mfc/reference/csinglelock-class.md) veya türü [CMultiLock](../../mfc/reference/cmultilock-class.md) kaynağınızın erişim üye işlev. Ardından kilit nesnenin çağrı `Lock` üye işlevi (örneğin, [CSingleLock::Lock](../../mfc/reference/csinglelock-class.md#lock)). Bu noktada, iş parçacığı ya da kaynağa erişim, kaynak serbest bırakılması ve erişim veya zaman aşımı, kaynağa erişmek başarısız olan ve kaynak yayımlanacak bekleyin için bekleyin. Her iki durumda da, kaynak, bir iş parçacığı açısından güvenli şekilde erişilmedi. Kaynağı serbest bırakmak için kilit nesnenin kullanın `Unlock` üye işlevi (örneğin, [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock)), veya kilit nesne kapsam dışına düşen izin verin.
 
-Kullanma hakkında daha fazla bilgi için `CMutex` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Kullanma hakkında daha fazla bilgi için `CMutex` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -86,8 +86,7 @@ Erişim veya yayın için bir `CMutex` nesne, oluşturun bir [CMultiLock](../../
 > [!IMPORTANT]
 >  Oluşturduktan sonra `CMutex` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSyncObject Sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTask [MFC], m_strName
 - CMFCTasksPaneTask [MFC], m_uiCommandID
 ms.assetid: c5a7513b-cd8f-4e2e-b16f-650e1fe30954
-ms.openlocfilehash: 7d7f5a87dc005ee67f9ce65f4ad686cb27d007c2
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 95a2e4f2a1f2e3344936af33fb2258b496b1be93
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176555"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279256"
 ---
 # <a name="cmfctaskspanetask-class"></a>CMFCTasksPaneTask sınıfı
 
@@ -276,7 +276,7 @@ virtual BOOL SetACCData(
 
 TRUE ise *veri* parametre başarıyla geçerli görevin erişilebilirlik verilerle doldurulmuş; Aksi takdirde FALSE.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

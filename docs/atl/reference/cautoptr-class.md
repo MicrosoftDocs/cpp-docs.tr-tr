@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtr class
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
-ms.openlocfilehash: b328d58116d3b26645a2b3a3981c11fa705878ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f4f446aa97f2bf3843b830bd7fb4c4a5d74ffdb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615260"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259795"
 ---
 # <a name="cautoptr-class"></a>CAutoPtr sınıfı
 
@@ -267,7 +267,7 @@ Sınıf şablonunda tanımlanan nesne veri türü bir işaretçi döndürür.
 
 Örnekte bakın [CAutoPtr genel bakış](../../atl/reference/cautoptr-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
 [CAutoVectorPtr Sınıfı](../../atl/reference/cautovectorptr-class.md)<br/>

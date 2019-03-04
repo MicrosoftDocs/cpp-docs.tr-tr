@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CPropertySheet class [MFC], property sheets and pages
 - property sheets, propert pages
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
-ms.openlocfilehash: 971b8cde1560e54f87269e8b85a41cdec55c091d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ff2851cc4ed04a64f1a49d68b6e3143b5edccd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445402"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278773"
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>Özellik Bölümleri ve Özellik Sayfaları (MFC)
 
@@ -25,7 +25,7 @@ MFC sürüm 4.0 itibariyle özellik bölümleri ve özellik sayfaları Windows 9
 
 Konu oluşturma ve özellik sayfaları ile çalışma hakkında daha fazla bilgi için bkz. [özellik sayfalarını](../mfc/property-sheets-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
 [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
@@ -33,4 +33,3 @@ Konu oluşturma ve özellik sayfaları ile çalışma hakkında daha fazla bilgi
 [Veri Değişimi](../mfc/exchanging-data.md)<br/>
 [Kalıcı Olmayan Özellik Sayfası Oluşturma](../mfc/creating-a-modeless-property-sheet.md)<br/>
 [Uygula Düğmesini İşleme](../mfc/handling-the-apply-button.md)
-

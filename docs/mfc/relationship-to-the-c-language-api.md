@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Visual C, Windows API calls
 - Windows API [MFC], and MFC
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
-ms.openlocfilehash: 8f58a33d3accb8eb81299877df1b0c8a4ebe0576
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe83af2d05af8e3b9da8d0c62f6974b0a5410bfc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525703"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278957"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C Dili API'sına yönelik ilişki
 
@@ -26,6 +26,6 @@ Bazen yerel Windows işlev çağrıları yapmanız gerektiğinden, C dili Window
 > [!NOTE]
 >  MFC Kitaplığı Framework'te nasıl çalıştığı genel bakış için bkz: [yazma uygulamaları için Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Sınıf Tasarımı Felsefesi](../mfc/general-class-design-philosophy.md)

@@ -10,20 +10,19 @@ helpviewer_keywords:
 - frame windows [MFC], dragging and dropping files in
 - drag and drop [MFC], Windows Explorer
 ms.assetid: 85560fe9-121b-4105-bd7b-216b966e19fa
-ms.openlocfilehash: 34fb6ec6d57bcf8bc1cf51a3ac0c0db5203b3ffa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0129b939e0fe2afd5dd29623bb44418bfd16c20d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498869"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260421"
 ---
 # <a name="dragging-and-dropping-files-in-a-frame-window"></a>Bir Çerçeve Penceresinde Dosyaları Sürükleme ve Bırakma
 
 Çerçeve penceresi dosya Gezgini ya da Dosya Yöneticisi ile bir ilişki yönetir.
 
-Tarafından birkaç başlatma ekleme çağırır geçersiz kılmada `CWinApp` üye işlevi `InitInstance`anlatılan şekilde [CWinApp: uygulama sınıfı](../mfc/cwinapp-the-application-class.md), dolaylı olarak açık dosyalar sürüklenen dosyasından, çerçeve penceresi olabilir Gezgini ya da Dosya Yöneticisi ve çerçeve penceresinde bırakıldı. Bkz: [Dosya Yöneticisi sürükleme ve bırakma](../mfc/special-cwinapp-services.md).
+Tarafından birkaç başlatma ekleme çağırır geçersiz kılmada `CWinApp` üye işlevi `InitInstance`anlatılan şekilde [CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md), dolaylı olarak dosya Gezgini'ni veya Dosya Yöneticisi sürüklenen ve çerçeve penceresinde bırakılan dosyaları açmak, çerçeve penceresi olabilir. Bkz: [Dosya Yöneticisi sürükleme ve bırakma](../mfc/special-cwinapp-services.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
-

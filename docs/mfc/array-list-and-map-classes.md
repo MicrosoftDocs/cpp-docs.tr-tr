@@ -10,12 +10,12 @@ helpviewer_keywords:
 - map classes [MFC]
 - collection classes [MFC], lists
 ms.assetid: 81a13a7f-0c2c-4efd-b6bb-b4e624a0743d
-ms.openlocfilehash: 0856a9de06d07b3851dc748644e84ba9c4b56c4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b89b99abb79fe689274f9e0b89a85bb33643d324
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601051"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274381"
 ---
 # <a name="array-list-and-map-classes"></a>Dizi, Liste ve Eşleme Sınıfları
 
@@ -27,7 +27,6 @@ Listeler, diziler için benzer, ancak çok farklı şekilde depolanır. Listedek
 
 Haritalar için veri değeri bir anahtar değeri ilgilidir. Örneğin, bir harita anahtarı bir dize ve verileri bir listesine bir işaretçi olabilir. Belirli bir dize ile ilişkili işaretçi size harita sorduğu. Harita aramaları hızlı olduğu anahtar aramaları için karma tablo eşlemeleri kullanın. Ayrıca öğelerini eklemeyi ve silmeyi hızlı çalışır. Haritalar, genellikle ikincil dizinler diğer veri yapılarını ile kullanılır. MFC kullanan harita olarak adlandırılan özel bir tür bir [ileti eşlemesi](../mfc/mapping-messages.md) Windows iletileri için bu ileti işleyici işlevine bir işaretçi eşlemek için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - WSOCK32.DLL
 - sockets [MFC], MFC
 ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
-ms.openlocfilehash: 0c4f83ccd9bf431f7eb910f77409199da2b1325f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9992d2054c04eea1b3b63d591601acf0091acb5e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476108"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266795"
 ---
 # <a name="windows-sockets-in-mfc"></a>MFC'de Windows Yuvaları
 
@@ -24,7 +24,7 @@ ms.locfileid: "50476108"
 
 MFC, iki MFC sınıfları düzenlenen Windows Sockets ile ağ iletişimi programları yazmak için iki modeli sağlar. Bu makalede bu modeller ve daha ayrıntılı bilgi MFC yuva desteği. "Yuva" olan bir uç nokta iletişim: üzerinden uygulamanızı iletişim kuran diğer Windows Sockets uygulamaları ile bir ağ üzerinden bir nesne.
 
-Yuva kavram, bir açıklama da dahil olmak üzere Windows Sockets hakkında bilgi için bkz. [Windows Yuvaları: arka plan](../mfc/windows-sockets-background.md).
+Yuva kavram, bir açıklama da dahil olmak üzere Windows Sockets hakkında bilgi için bkz. [Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md).
 
 ##  <a name="_core_sockets_programming_models"></a> Yuva programlama modelleri
 
@@ -38,7 +38,7 @@ MFC Windows programlama modellerini iki yuva aşağıdaki sınıflar tarafından
 
    Bu sınıf, türetilen `CAsyncSocket`, yuva aracılığıyla bir MFC ile çalışmak için daha yüksek bir düzeyinde Özet sağlayan [CArchive](../mfc/reference/carchive-class.md) nesne. Bir yuva büyük ölçüde ile bir arşiv kullanarak MFC'nin dosya serileştirme protokolü kullanarak benzer. Bu sayede daha kolay daha `CAsyncSocket` modeli. [CSocket](../mfc/reference/csocket-class.md) birçok üye işlevleri devralan `CAsyncSocket` Windows Sockets API'leri kapsülleyen; bu işlevler bazılarını kullanmak ve yuva programlamasında genellikle anlamak gerekir. Ancak `CSocket` ham API veya sınıfı kullanarak kendiniz yapmak zorunda iletişim birçok yönüyle yönetir `CAsyncSocket`. En önemlisi, `CSocket` sağlar (arka plan Windows iletilerinin işlenmesini ile), engelleyici eşzamanlı işlemi için gerekli olan `CArchive`.
 
-Oluşturma ve kullanma `CSocket` ve `CAsyncSocket` nesneleri açıklanan [Windows Yuvaları: yuvaların arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md) ve [Windows Yuvaları: sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md).
+Oluşturma ve kullanma `CSocket` ve `CAsyncSocket` nesneleri açıklanan [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md) ve [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md).
 
 ##  <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Yuvaları: DLL'leri
 
@@ -46,33 +46,32 @@ Microsoft Windows işletim sistemleri, Windows Sockets dinamik bağlantı kitapl
 
 Windows Yuvaları hakkında daha fazla bilgi için bkz:
 
-- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
-- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: İşlem Dizisi](../mfc/windows-sockets-sequence-of-operations.md)
+- [Windows Yuvaları: İşlem dizisi](../mfc/windows-sockets-sequence-of-operations.md)
 
-- [Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md)
+- [Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md)
 
-- [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
+- [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows Yuvaları: Yuva Bildirimleri](../mfc/windows-sockets-socket-notifications.md)
+- [Windows Yuvaları: Yuva bildirimleri](../mfc/windows-sockets-socket-notifications.md)
 
 - [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md)
 
-- [Windows Yuvaları: Bayt Sıralama](../mfc/windows-sockets-byte-ordering.md)
+- [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md)
 
-- [Windows Yuvaları: Dizeleri Dönüştürme](../mfc/windows-sockets-converting-strings.md)
+- [Windows Yuvaları: Dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md)
 
-- [Windows Yuvaları: Bağlantı Noktaları ve Yuva Adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)
+- [Windows Yuvaları: Bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Yuvaları](../mfc/windows-sockets.md)
-

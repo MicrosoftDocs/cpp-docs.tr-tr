@@ -1,5 +1,5 @@
 ---
-title: CTypedPtrArray sınıfı
+title: CTypedPtrArray Class
 ms.date: 11/04/2016
 f1_keywords:
 - CTypedPtrArray
@@ -22,14 +22,14 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: 767d4782ec637a0404051e6871d584f73cefdcd2
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 8a6fc0786a169f9c1e73eb8acadfc51d063334c9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657480"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275343"
 ---
-# <a name="ctypedptrarray-class"></a>CTypedPtrArray sınıfı
+# <a name="ctypedptrarray-class"></a>CTypedPtrArray Class
 
 Sınıfındaki nesneler için tür açısından güvenli bir "sarmalayıcı" sağlar `CPtrArray` veya `CObArray`.
 
@@ -42,7 +42,7 @@ class CTypedPtrArray : public BASE_CLASS
 
 #### <a name="parameters"></a>Parametreler
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( `CObArray` veya `CPtrArray`).
 
 *TÜRÜ*<br/>
@@ -123,7 +123,7 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( [CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray](../../mfc/reference/cptrarray-class.md)).
 
 *TÜRÜ*<br/>
@@ -150,7 +150,7 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( [CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray](../../mfc/reference/cptrarray-class.md)).
 
 *TÜRÜ*<br/>
@@ -243,7 +243,7 @@ Bu öğe olmalıdır sayısı (varsayılan 1) eklenir.
 *nStartIndex*<br/>
 Tarafından döndürülen değeri,'den büyük bir tamsayı dizini `CObArray::GetUpperBound`.
 
-*$BASE_CLASS*<br/>
+*BASE_CLASS*<br/>
 İşaretçi türü belirlenmiş dizi sınıfın temel sınıfına; array sınıfı olmalıdır ( [CObArray](../../mfc/reference/cobarray-class.md) veya [CPtrArray](../../mfc/reference/cptrarray-class.md)).
 
 *pNewArray*<br/>
@@ -326,7 +326,7 @@ Bu diziye eklenecek nesne işaretçisi. A **NULL** değere izin verilir.
 
 Daha ayrıntılı açıklamalar için bkz. [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek Topla](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSingleLock [MFC], Lock
 - CSingleLock [MFC], Unlock
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
-ms.openlocfilehash: 2d65af79971aab88884efe1f92d1090194b737d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31bd43f7f7a6fbccd4680db013ac5c654123061e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459572"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259899"
 ---
 # <a name="csinglelock-class"></a>CSingleLock sınıfı
 
@@ -55,7 +55,7 @@ Eşitleme sınıfları kullanmak için [CSemaphore](../../mfc/reference/csemapho
 
 Kullanılacak bir `CSingleLock` nesne, denetimli kaynak sınıfının oluşturucusuna bir üye işlevin içindeki çağırın. Ardından çağırın [IsLocked](#islocked) kaynak kullanılabilir olup olmadığını belirlemek için üye işlevi. İse, üye işlevi geri kalanı ile devam edin. Kaynak kullanılamıyorsa, zaman yayımlanacak kaynak için belirli bir süre bekleyin veya hata döndürür. Kaynak kullanımını tamamlandıktan sonra ya da çağrı [kilidini](#unlock) işlevinin `CSingleLock` nesnedir izin ver veya yeniden kullanılmak üzere `CSingleLock` nesne yok.
 
-`CSingleLock` nesneleri gerektiren türetilmiş bir nesnenin durum [CSyncObject](../../mfc/reference/csyncobject-class.md). Denetimli kaynak sınıfının veri üyesi genellikle budur. Nasıl kullanılacağı hakkında daha fazla bilgi için `CSingleLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+`CSingleLock` nesneleri gerektiren türetilmiş bir nesnenin durum [CSyncObject](../../mfc/reference/csyncobject-class.md). Denetimli kaynak sınıfının veri üyesi genellikle budur. Nasıl kullanılacağı hakkında daha fazla bilgi için `CSingleLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -166,7 +166,7 @@ Semafor birden fazla erişim sayısı serbest bırakmak gerekiyorsa ikinci biçi
 
 [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CMultiLock Sınıfı](../../mfc/reference/cmultilock-class.md)

@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CGlobalHeap class
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-ms.openlocfilehash: a4bc8b18a1c29049e17576082a30de4a8704eaee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cba15421fd0329df7a66a35979ed54b863b7cca0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468958"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278307"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap sınıfı
 
@@ -150,7 +150,7 @@ Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
 
 Kullanılarak uygulanan [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)<br/>

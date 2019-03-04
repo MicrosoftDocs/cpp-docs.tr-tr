@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - security classes [C++]
 ms.assetid: 0477f1a4-c1af-4c4f-bbca-08f7b844e028
-ms.openlocfilehash: e5218e7d805a5dbe13658778b417f969691b88b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80c688baa1741e03a9f32a8ee1725c0091bbf8ab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534114"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275331"
 ---
 # <a name="security-classes"></a>Güvenlik sınıfları
 
@@ -36,8 +36,7 @@ Bu ortak Win32 güvenlik sınıflar ve nesneler için sarmalayıcıları sınıf
 
 - [CTokenPrivileges](../atl/reference/ctokenprivileges-class.md) Bu sınıf için bir sarmalayıcı olan `TOKEN_PRIVILEGES` yapısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../atl/reference/security-global-functions.md)
-

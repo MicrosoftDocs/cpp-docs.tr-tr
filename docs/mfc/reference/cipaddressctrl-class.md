@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: fe5503eb78954bf39a135cd0e4acda6c37fc5fa9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e569829c100a581e24b5ce05df2f90ac7088024b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568707"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266301"
 ---
 # <a name="cipaddressctrl-class"></a>Cıpaddressctrl sınıfı
 
@@ -329,8 +329,7 @@ Bu IP adresi denetimi belirtilen alan sayısı üst sınırını alma tamsayı b
 
 Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange)Windows SDK içinde açıklandığı gibi. İki parametre kullanmak *nLower* ve *nUpper*yerine alan alt ve üst sınırlarını belirtmek için *wRange* Win32 iletinin kullanılan parametre.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

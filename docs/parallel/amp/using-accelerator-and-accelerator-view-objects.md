@@ -2,12 +2,12 @@
 title: Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-ms.openlocfilehash: 4144adf288ddefd7f7dd00ada91f97aea94e6bce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05ca53d075867fefa43f7471bb795040d075274e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668604"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272912"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 
@@ -168,7 +168,7 @@ Uygulamanızda çoklu Hızlandırıcı kullanmak için iki yolu vardır:
 
 Üç özel hızlandırıcının cihaz yolları özellikleri olarak kullanılabilir `accelerator` sınıfı:
 
-- [Accelerator::direct3d_ref veri üyesi](reference/accelerator-class.md#direct3d_ref): bir genel grafik kartını benzetmede CPU üzerinde bu tek iş parçacıklı Hızlandırıcı yazılım kullanır. Hata ayıklama için varsayılan olarak kullanılır, ancak donanım hızlandırıcılardan yavaş olduğundan üretimde kullanışlı olduğu değil. Ayrıca, yalnızca DirectX SDK ve Windows SDK'sı bulunur ve müşterilerinizin bilgisayarlarında yüklü beklenmez. Daha fazla bilgi için [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).
+- [Accelerator::direct3d_ref veri üyesi](reference/accelerator-class.md#direct3d_ref): Bu tek iş parçacıklı Hızlandırıcı, CPU üzerinde bir genel grafik kartını benzetmede yazılım kullanır. Hata ayıklama için varsayılan olarak kullanılır, ancak donanım hızlandırıcılardan yavaş olduğundan üretimde kullanışlı olduğu değil. Ayrıca, yalnızca DirectX SDK ve Windows SDK'sı bulunur ve müşterilerinizin bilgisayarlarında yüklü beklenmez. Daha fazla bilgi için [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).
 
 - [Accelerator::direct3d_warp veri üyesi](reference/accelerator-class.md#direct3d_warp): Bu Hızlandırıcı, Streaming SIMD uzantılarını (SSE) kullanan çok çekirdekli CPU üzerinde C++ AMP kodunu yürütmek için bir geri dönüş çözümü sağlar.
 
@@ -178,7 +178,7 @@ Uygulamanızda çoklu Hızlandırıcı kullanmak için iki yolu vardır:
 
 C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `accelerator_view` sınıfı ile Direct3D [ıd3d11device arabirimi](/windows/desktop/api/d3d11/nn-d3d11-id3d11device). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) yöntemi bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesne. [Get_device](reference/concurrency-direct3d-namespace-functions-amp.md#get_device) yöntemi bir `accelerator_view` nesne ve döndürür bir `IUnknown` arabirimi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [GPU Kodunda Hata Ayıklama](/visualstudio/debugger/debugging-gpu-code)<br/>

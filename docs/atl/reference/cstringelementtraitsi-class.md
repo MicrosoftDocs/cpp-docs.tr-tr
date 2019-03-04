@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CStringElementTraitsI class
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-ms.openlocfilehash: 35215546268c4c48f913e7aef763768fffc76d59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 77357aa2be326ebebaaf5a8614faaf88a0c3c06b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551729"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276150"
 ---
 # <a name="cstringelementtraitsi-class"></a>Cstringelementtraitsı sınıfı
 
@@ -149,7 +149,7 @@ Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
 typedef T& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CElementTraitsBase Sınıfı](../../atl/reference/celementtraitsbase-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>

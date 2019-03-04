@@ -1,19 +1,19 @@
 ---
-title: 'Windows Yuvaları: Akış Yuvaları'
+title: 'Windows Yuvaları: Stream yuva'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], stream sockets
 - sockets [MFC], stream sockets
 - stream sockets [MFC]
 ms.assetid: 31faaa34-a995-493f-a30b-b8115293d619
-ms.openlocfilehash: 298428bd5e81d11eb62907dfbac39acda24524f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91f06c4a36e76638708edf085987e51418913fd6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560231"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271300"
 ---
-# <a name="windows-sockets-stream-sockets"></a>Windows Yuvaları: Akış Yuvaları
+# <a name="windows-sockets-stream-sockets"></a>Windows Yuvaları: Stream yuva
 
 Bu makalede, akış yuvaları iki Windows yuva türlerinden birini açıklar. (Diğer tür [veri birimi yuva](../mfc/windows-sockets-datagram-sockets.md).)
 
@@ -40,8 +40,7 @@ Akış yuvaları kullanılması nedeniyle yayın için ağdaki tüm alıcı yuva
     > [!NOTE]
     >  Sınıfı kullanırsanız `CSocket`, bir akış kullanmanız gerekir. Yuva türü olarak belirtirseniz MFC onaylama başarısız **SOCK_DGRAM**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
-[Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
-
+[Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md)

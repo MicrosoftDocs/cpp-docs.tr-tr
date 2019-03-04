@@ -7,12 +7,12 @@ helpviewer_keywords:
 - wizards (MFC)
 - MFC Class Wizard
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
-ms.openlocfilehash: d80dc10467b5180158fcb0f681bbc728ada60764
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59f0b39afe467267d61d7b851e654cc8bddc7b36
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471779"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265971"
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
 
@@ -104,6 +104,6 @@ Açmak için **MFC Sınıf Sihirbazı**, **proje** menüsünü tıklatın **sın
 
    Bir tanımı görüntülemek için bir öğeye çift **yöntemleri** listesi. Veya, bir öğe seçin **yöntemleri** listeleyin ve ardından **Tanıma Git** düğmesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)

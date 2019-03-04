@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: a96fdac743531a47c7d2e586292e87e1bbf9e249
-ms.sourcegitcommit: fd15246715907f7c0415e3a0c3eb80f7303d1139
+ms.openlocfilehash: 3cdaba750060290fa25007d4097b6782d6f20fbf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52255716"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258638"
 ---
 # <a name="mfc-application-wizard"></a>MFC Uygulama Sihirbazı
 
@@ -79,7 +79,7 @@ Bu varsayılan ayarları değiştirmek için sihirbazın sol sütununda uygun se
 
 Bir MFC uygulaması projesi oluşturduktan sonra nesneler veya denetimler Visual C++ kullanarak projenize ekleyebilirsiniz [kod sihirbazları](../../ide/adding-functionality-with-code-wizards-cpp.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulaması Oluşturma](../../mfc/reference/creating-an-mfc-application.md)<br/>
 [MFC Masaüstü Uygulamaları](../../mfc/mfc-desktop-applications.md)<br/>

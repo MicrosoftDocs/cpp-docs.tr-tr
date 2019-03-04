@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CD2DGeometrySink [MFC], SetSegmentFlags
 - CD2DGeometrySink [MFC], m_pSink
 ms.assetid: e5e07f41-0343-4ab1-9d6b-8c62ed33c04a
-ms.openlocfilehash: ff68cc737f28763e5545b0ccaf2c0122e78cb051
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48c88f0b837b2e49e4c87f07a9aa28c16a66c1e3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654693"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271209"
 ---
 # <a name="cd2dgeometrysink-class"></a>CD2DGeometrySink sınıfı
 
@@ -62,7 +62,7 @@ class CD2DGeometrySink;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CD2DGeometrySink::CD2DGeometrySink](#cd2dgeometrysink)|CD2DPathGeometry nesnesinden CD2DGeometrySink bir nesne oluşturur.|
-|[CD2DGeometrySink:: ~ CD2DGeometrySink](#_dtorcd2dgeometrysink)|Yıkıcı. D2D geometri havuz nesnesi yok ediliyorken çağırılır.|
+|[CD2DGeometrySink::~CD2DGeometrySink](#_dtorcd2dgeometrysink)|Yıkıcı. D2D geometri havuz nesnesi yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -103,7 +103,7 @@ class CD2DGeometrySink;
 
 **Başlık:** afxrendertarget.h
 
-##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink:: ~ CD2DGeometrySink
+##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink::~CD2DGeometrySink
 
 Yıkıcı. D2D geometri havuz nesnesi yok ediliyorken çağırılır.
 
@@ -134,7 +134,7 @@ void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bezier*<br/>
+*bezier*<br/>
 Denetim noktalarını ve uç noktası eklemek için Bezier eğrisinin açıklar yapısı.
 
 ##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers
@@ -149,7 +149,7 @@ void AddBeziers(
 
 ### <a name="parameters"></a>Parametreler
 
-*bezierler*<br/>
+*beziers*<br/>
 Bezier parçaları oluşturmak için Bezier eğrileri açıklayan dizisi. Eğri geometri havuz'ın geçerli noktasından (bitiş noktası çizilmiş son segmenti veya BeginFigure tarafından belirtilen konuma) uç noktasına dizideki ilk Bezier kesiminin çizilir. bir dizi ek Bezier segmentler içeriyorsa, her bir sonraki Bezier kesim önceki Bezier kesiminin uç noktası, başlangıç noktası olarak kullanır.
 
 ##  <a name="addline"></a>  CD2DGeometrySink::AddLine
@@ -190,7 +190,7 @@ void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bezier*<br/>
+*bezier*<br/>
 Denetim noktası ve bitiş noktası eklemek için ikinci dereceden Bezier eğrisi açıklar yapısı.
 
 ##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers
@@ -205,7 +205,7 @@ void AddQuadraticBeziers(
 
 ### <a name="parameters"></a>Parametreler
 
-*bezierler*<br/>
+*beziers*<br/>
 İkinci dereceden Bezier parçaları bir dizi dizisi.
 
 ##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure
@@ -334,6 +334,6 @@ void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 *vertexFlags*<br/>
 Geometri havuza eklenen yeni kesimleri uygulanacak vuruş ve Birleştirme Seçenekleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

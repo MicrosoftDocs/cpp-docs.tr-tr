@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CPaneFrameWnd [MFC], OnDrawBorder
 - CPaneFrameWnd [MFC], m_bUseSaveBits
 ms.assetid: ea3423a3-2763-482e-b763-817036ded10d
-ms.openlocfilehash: e31b390d9464b3cbe6babd744e987ce7222e58bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3172556b3b12141aaae45992dee36061aebf2a15
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450173"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278827"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd sınıfı
 
@@ -285,7 +285,7 @@ static BOOL __stdcall AddRemovePaneFromGlobalList(
 *pWnd*<br/>
 [in] Eklemek veya kaldırmak için bölme.
 
-*Bekle*<br/>
+*bAdd*<br/>
 [in] Sıfır olmayan, bölmesi ekleme. 0 ise, bölmesini kaldırın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1273,7 +1273,7 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

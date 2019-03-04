@@ -7,12 +7,12 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
-ms.openlocfilehash: 973c4a12f3b3bdc91269736874b7193130290a76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 079dc26fdd355c5b5e3f89f28219902e5fd74a79
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548921"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268830"
 ---
 # <a name="handling-tool-tip-notifications"></a>Araç İpucu Bildirimlerini İşleme
 
@@ -43,8 +43,7 @@ Ek olarak **TTN_NEEDTEXT** bildirim, bir araç ipucunu denetimini gönderebilir 
 
 Bir örnek işleyici işlevi ve araç ipuçlarını etkinleştirme hakkında daha fazla bilgi için bkz: [araç ipuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

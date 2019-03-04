@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Simple Object Wizard, options
 ms.assetid: 125fe179-942d-4181-8b82-33e92e1fd779
-ms.openlocfilehash: efd79c877fcf71ae33b1539e41d3d13379b834de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 327c78b00cbe69fcce4f055b0ae63c4dc2e5a7d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650510"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273404"
 ---
 # <a name="options-atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı Seçenekleri
 
@@ -63,9 +63,8 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL
    |**Ücretsiz iş parçacıklı Sıralayıcı**|Aynı işlemdeki iş parçacıkları arasında verimli bir şekilde arabirim işaretçilerini sıralama bir ücretsiz iş parçacıklı bir Sıralayıcı nesnesini oluşturur. Nesnesi için kullanılabilir **hem** iş parçacığı modeli olarak.|
    |**IObjectWithSite** (IE nesne desteği)|Implements [Iobjectwithsiteımpl](../../atl/reference/iobjectwithsiteimpl-class.md), bir kapsayıcıda bir nesne ve alt site arasındaki iletişimi desteklemek için basit bir yol sağlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Basit Nesne Sihirbazı](../../atl/reference/atl-simple-object-wizard.md)<br/>
 [ATL Basit Nesne](../../atl/reference/adding-an-atl-simple-object.md)<br/>
 [İşlem sunucusu iş parçacığı oluşturma sorunları](/windows/desktop/com/in-process-server-threading-issues)
-

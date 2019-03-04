@@ -1,5 +1,5 @@
 ---
-title: 'Sunucular: Sunucu Öğeleri'
+title: 'Sunucular: Sunucu öğeleri'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - server items, implementing
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - server items
 - OLE server applications [MFC], server items
 ms.assetid: 28ba81a1-726a-4728-a52d-68bc7efd5a3c
-ms.openlocfilehash: ea04a3eefff0f127873ffbf67ea39ade3a6b9b85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0adaea1c4f1dd0525ead82dfffdf267326ac865c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453696"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262291"
 ---
-# <a name="servers-server-items"></a>Sunucular: Sunucu Öğeleri
+# <a name="servers-server-items"></a>Sunucular: Sunucu öğeleri
 
 Bir kapsayıcı, bir kullanıcı bir gömülü veya bağlantılı OLE öğesi düzenleyebilmesi bir sunucu başlattığında, sunucu uygulaması bir "sunucu öğesi." oluşturur. Türetilen bir sınıfın bir nesnesi olan sunucu öğesi `COleServerItem`, sunucu belgesi ve kapsayıcı uygulaması arasında bir arabirim sağlar.
 
@@ -35,7 +35,7 @@ Uygulamanız için "Başlangıç" kod üretmek için Uygulama Sihirbazı'nı kul
 
    Framework çağrıları `OnDraw` OLE öğesini bir meta dosyasında işlemek için. Kapsayıcı uygulamasını bu meta öğesi işlemek için kullanır. Ayrıca, uygulamanızın görünüm sınıfı olan bir `OnDraw` sunucu uygulamasının etkin olduğunda, öğe işlemek için kullanılan üye işlevi.
 
-1. Geçersiz kılma uygulama `OnGetEmbeddedItem` sunucu belgesinin sınıfınız için. Daha fazla bilgi için bkz [sunucular: sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md) ve MFC OLE örnek [HIERSVR](../visual-cpp-samples.md).
+1. Geçersiz kılma uygulama `OnGetEmbeddedItem` sunucu belgesinin sınıfınız için. Daha fazla bilgi için bkz [sunucuları: Sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md) ve MFC OLE örnek [HIERSVR](../visual-cpp-samples.md).
 
 1. Sunucu öğesi sınıfınızın uygulamak `OnGetExtent` üye işlevi. Framework öğenin boyutunu almak için bu işlevi çağırır. Varsayılan uygulama, hiçbir şey yapmaz.
 
@@ -49,7 +49,6 @@ Görünüm ve öğe `OnDraw` üye işlevleri, çünkü bunlar farklı koşullar 
 
 Daha fazla bilgi için [CView::OnDraw](../mfc/reference/cview-class.md#ondraw), [Coleserverıtem](../mfc/reference/coleserveritem-class.md), [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw), ve [COleServerDoc::OnGetEmbeddedItem](../mfc/reference/coleserverdoc-class.md#ongetembeddeditem)içinde *sınıf kitaplığı başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sunucular](../mfc/servers.md)
-

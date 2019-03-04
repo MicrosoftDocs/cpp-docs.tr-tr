@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-ms.openlocfilehash: 60b09b674bec58a7d35a9a37d9a8f4c40d8cd522
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: aa4945bb5f9ef28937487ba504e23c461992b263
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522733"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267023"
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 
@@ -359,7 +359,7 @@ _Payload_type const& value();
 
 Çünkü bir `choice` ileti engelleme, farklı yük türleri ile girişleri alabilir, yükü alma noktasında türünü belirtmeniz gerekir. Sonucuna göre türü belirleyebilir `index` yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [join Sınıfı](join-class.md)<br/>

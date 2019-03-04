@@ -12,19 +12,18 @@ helpviewer_keywords:
 - rich edit controls [MFC], and CRichEditDoc
 - CRichEditView class [MFC], and CRichEditCtrl
 ms.assetid: 4b31c2cc-6ea1-4146-b7c5-b0b5b419f14d
-ms.openlocfilehash: 92134d0bd4d02bff7aeadd5e9ca7438c61de3bec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 349a8b5c26b7260c9af496d0f4a3a997ee753020
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586166"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258105"
 ---
 # <a name="classes-related-to-rich-edit-controls"></a>Zengin Düzenleme Denetimleriyle İlgili Sınıflar
 
 [CRichEditView](../mfc/reference/cricheditview-class.md), [CRichEditDoc](../mfc/reference/cricheditdoc-class.md), ve [Cricheditcntrıtem](../mfc/reference/cricheditcntritem-class.md) sınıfları zengin düzenleme denetimi işlevlerini sağlar ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) MFC'nin belge/görünüm mimarisi bağlamında. `CRichEditView` metin biçimlendirme özelliği ve metin tutar. `CRichEditDoc` Görünümü'nde OLE istemci öğeleri listesini tutar. `CRichEditCntrItem` bir OLE istemci öğesi kapsayıcı tarafı erişim sağlar. İçeriğini değiştirmek için bir `CRichEditView`, kullanın [CRichEditView::GetRichEditCtrl](../mfc/reference/cricheditview-class.md#getricheditctrl) temel erişmek için zengin düzenleme denetimi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRichEditCtrl Kullanma](../mfc/using-cricheditctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

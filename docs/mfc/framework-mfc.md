@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: ff29a867a8351a51ad7f09a5ca31d871fc67bab8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 933fcf97c24ed0903395e2c718f8c89d42473494
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589312"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269025"
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 
@@ -41,7 +41,7 @@ Kapsülleme anlamına C++ sınıfı `CWnd`, örneğin, bir üye değişkeni tür
 
 [Framework'ün Kodunuzu Çağırması](../mfc/how-the-framework-calls-your-code.md)
 
-[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
 
 [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)
 
@@ -49,6 +49,6 @@ Kapsülleme anlamına C++ sınıfı `CWnd`, örneğin, bir üye değişkeni tür
 
 [Pencere Nesneleri](../mfc/window-objects.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

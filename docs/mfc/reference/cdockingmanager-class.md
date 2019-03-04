@@ -1,5 +1,5 @@
 ---
-title: CDockingManager sınıfı
+title: CDockingManager Class
 ms.date: 11/04/2016
 f1_keywords:
 - CDockingManager
@@ -160,14 +160,14 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: e1cc4a4a0d6841523aaafcc1865173ba5402948c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 268a46e1bdecc1ea468c152fd0ed480873c36591
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519990"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260393"
 ---
-# <a name="cdockingmanager-class"></a>CDockingManager sınıfı
+# <a name="cdockingmanager-class"></a>CDockingManager Class
 
 Ana çerçeve penceresindeki yerleştirme düzeni denetleyen temel işlevselliğini uygular.
 
@@ -1764,7 +1764,7 @@ Aşağıdaki numaralandırılmış değerlerden birini döndürür: AFX_SDT_DEFA
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - controls [MFC], adding to dialog boxes
 - common controls [MFC], adding
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
-ms.openlocfilehash: cf665247dd1ef24bb71d160097fa9514ff8be147
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c70539b49fcf2aa87f0bee375a87b38277b6ed42
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589402"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270767"
 ---
 # <a name="adding-controls-by-hand"></a>El İle Denetim Ekleme
 
@@ -33,9 +33,8 @@ Aşağıdaki `OnInitDialog` işlevi bir dikdörtgen ayarlar daha sonra çağır�
 
 Düzenleme nesnesini oluşturduktan sonra da giriş odağı denetimi çağırarak ayarlayabilirsiniz `SetFocus` üye işlevi. Son olarak, 0'dan iade `OnInitDialog` odağı ayarlamasını gösterilecek. Sıfır olmayan bir değer döndürürse, iletişim kutusu yöneticisini odak ilk iletişim kutusu öğe listesi denetim öğesini ayarlar. Çoğu durumda, denetimleri, iletişim kutuları için iletişim kutusu Düzenleyicisi ile eklemek isteyebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)<br/>
 [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
-

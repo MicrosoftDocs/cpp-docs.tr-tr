@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - propagator_block class
 ms.assetid: 86aa75fd-eda5-42aa-aadf-25c0c1c9742d
-ms.openlocfilehash: 38b7c920f8ffcab6d709d9484f308a56cd6b8425
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f466ad8f474ddb73d2235d9999c3dbeae627672
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613284"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272951"
 ---
 # <a name="propagatorblock-class"></a>propagator_block Sınıfı
 
@@ -316,7 +316,7 @@ Bu, tüm kaynak bloklar olan bağlantısını kesen `propagator_block` nesne.
 virtual void unlink_sources();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [source_block Sınıfı](source-block-class.md)<br/>

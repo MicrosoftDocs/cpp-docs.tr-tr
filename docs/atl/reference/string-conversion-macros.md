@@ -11,12 +11,12 @@ f1_keywords:
 - atlconv/ATL::DEVMODEW2A
 - atlconv/ATL::TEXTMETRICW2A
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-ms.openlocfilehash: 1cad89fe065c0827169a22cc9699b677323d8594
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 889f8459e81418197420bc2efd410225d4f220bc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544530"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271768"
 ---
 # <a name="string-conversion-macros"></a>Dize dönüşüm makroları
 
@@ -70,6 +70,6 @@ Aşağıdaki tabloda `DEVMODE` ve `TEXTMETRIC` dize dönüşüm makroları.
 |DEVMODET2OLE|TEXTMETRICT2OLE|
 |DEVMODEW2A|TEXTMETRICW2A|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)

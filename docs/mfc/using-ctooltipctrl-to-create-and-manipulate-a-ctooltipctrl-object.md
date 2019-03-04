@@ -7,12 +7,12 @@ helpviewer_keywords:
 - tool tips [MFC], creating
 - CToolTipCtrl class [MFC], using
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
-ms.openlocfilehash: cc5ea515aa132bb390fa5e273cedc5f125bb3046
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b0f008c70eeb43455408e5b0ad302df6b923608e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561258"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261212"
 ---
 # <a name="using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object"></a>CToolTipCtrl Kullanarak bir CToolTipCtrl Nesnesi Oluşturma ve Düzenleme
 
@@ -34,8 +34,7 @@ ms.locfileid: "50561258"
 
 1. Çağrı [GetToolCount](../mfc/reference/ctooltipctrl-class.md#gettoolcount) araçları sayısını almak için kayıtlı araç ipucunu denetimini.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CToolTipCtrl Kullanma](../mfc/using-ctooltipctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

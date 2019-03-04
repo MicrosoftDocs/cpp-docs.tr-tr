@@ -7,12 +7,12 @@ helpviewer_keywords:
 - messages [MFC], reflected
 - message handling [MFC], reflected messages
 ms.assetid: 5a403528-58c5-46e7-90d5-4a77f0ab9b9c
-ms.openlocfilehash: 89cb1631be7b8588d02518eacbc93b466a275828
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 250d1a838787d1ace682c084bdceeb0e1e6d3c92
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531882"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278970"
 ---
 # <a name="defining-a-message-handler-for-a-reflected-message"></a>Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama
 
@@ -47,7 +47,7 @@ Oluşturmak için bir [ActiveX denetimi](../../mfc/activex-controls-on-the-inter
 
 9. Düzenleme ya da bir ileti işleyicisi silmek için 4-7 arası adımları yineleyin. Düzenleyin veya silin uygun göreve tıklayın işleyici adını içeren hücreye tıklayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

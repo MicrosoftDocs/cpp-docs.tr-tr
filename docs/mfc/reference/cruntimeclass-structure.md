@@ -9,12 +9,12 @@ helpviewer_keywords:
 - runtime [MFC], class information
 - run-time class [MFC], CRuntimeClass structure
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
-ms.openlocfilehash: 83c10d5a87c7d5782505fcd93e46c678a97b8b5d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 92979a10c18d9759e0ecc9f0785e56a97c0f0642
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521964"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274303"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass yapısı
 
@@ -88,7 +88,7 @@ Yeni oluşturulan nesne veya sınıf adı bulunamadı veya nesneyi oluşturmak i
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilen sınıflar `CObject` çalışma zamanında belirtilen sınıfın bir nesnesi oluşturma özelliği olan dinamik oluşturma destekleyebilir. Örneğin, belge, Görünüm ve çerçeve sınıfları dinamik oluşturma desteklemelidir. Dinamik oluşturma hakkında daha fazla bilgi ve `CreateObject` üyesi bkz [CObject sınıfı](../../mfc/using-cobject.md) ve [CObject sınıfı: düzeyleri işlevi belirterek](../../mfc/specifying-levels-of-functionality.md).
+Türetilen sınıflar `CObject` çalışma zamanında belirtilen sınıfın bir nesnesi oluşturma özelliği olan dinamik oluşturma destekleyebilir. Örneğin, belge, Görünüm ve çerçeve sınıfları dinamik oluşturma desteklemelidir. Dinamik oluşturma hakkında daha fazla bilgi ve `CreateObject` üyesi bkz [CObject sınıfı](../../mfc/using-cobject.md) ve [CObject sınıfı: İşlevsellik düzeylerini belirtme](../../mfc/specifying-levels-of-functionality.md).
 
 ### <a name="example"></a>Örnek
 
@@ -141,7 +141,7 @@ TRUE ise sınıfı arama `IsDerivedFrom` temelden türetilmiş sınıfının `CR
 > [!NOTE]
 >  Kullanılacak `CRuntimeClass` yapısı, çalışma zamanı nesne bilgileri almak istediğiniz sınıfının uygulamasında ımplement_dynamıc, IMPLEMENT_DYNCREATE veya ımplement_serıal makrosu içermelidir.
 
-Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye göz atın [CObject sınıfı: çalışma süresi sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).
+Kullanma hakkında daha fazla bilgi için `CRuntimeClass`, makaleye göz atın [CObject sınıfı: Çalışma süresi sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md).
 
 ### <a name="example"></a>Örnek
 
@@ -215,7 +215,7 @@ Uygulamanızı MFC kitaplığına statik değilse [m_pBaseClass](#m_pbaseclass).
 
   Örneğin bakın [IsDerivedFrom](#isderivedfrom).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)<br/>
@@ -224,4 +224,3 @@ Uygulamanızı MFC kitaplığına statik değilse [m_pBaseClass](#m_pbaseclass).
 [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)<br/>
 [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)<br/>
 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
-

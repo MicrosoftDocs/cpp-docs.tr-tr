@@ -30,12 +30,12 @@ helpviewer_keywords:
 - COccManager [MFC], SetDefaultButton
 - COccManager [MFC], SplitDialogTemplate
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
-ms.openlocfilehash: 804db7be4ba796a67042e6772ae4cb631c0c232b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a83f58b8de2411577d9fc025f7a8f8dc535ea8b3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440189"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276656"
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 
@@ -400,7 +400,7 @@ Herhangi bir ActiveX denetim bulunan varsa, şablonu analiz edilir ve yalnızca 
 
 Bu işlev, bu işlemi özelleştirmek için geçersiz kılın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleControlSite Sınıfı](../../mfc/reference/colecontrolsite-class.md)<br/>

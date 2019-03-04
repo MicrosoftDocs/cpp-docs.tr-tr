@@ -9,12 +9,12 @@ helpviewer_keywords:
 - containers [MFC], creating
 - OLE controls [MFC], containers
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-ms.openlocfilehash: 04c271db18bc8d8ba273f16f7493bbbb1da96421
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0d5fe419375535ab8c52378b9005df88634e99a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544995"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275902"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX Denetimi Kapsayıcısı Oluşturma
 
@@ -27,7 +27,7 @@ Bir MFC kapsayıcı programını kullanarak oluşturma [MFC Uygulama Sihirbazı]
 
 - **Yeni bir MFC uygulaması**. Otomasyon içeren yeni bir MFC programı oluşturmak için görsel düzenleme, dosyalar, bileşik veya destek denetlemek, MFC Uygulama Sihirbazı'nı kullanın ve uygun Otomasyon seçenekleri belirleyin.
 
-- **Varolan bir MFC uygulamasına**. Varolan bir MFC uygulamasına denetimi kapsamasını ekliyorsanız, bkz. [OLE denetim kapsayıcıları: el ile etkinleştirme OLE denetim kapsamı](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md).
+- **Varolan bir MFC uygulamasına**. Varolan bir MFC uygulamasına denetimi kapsamasını ekliyorsanız, bkz. [OLE denetim kapsayıcıları: OLE denetimi kapsamasını el ile etkinleştirme](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md).
 
 ### <a name="to-create-an-activex-container-for-any-of-the-following-types-of-applications"></a>Aşağıdaki uygulama türlerini herhangi bir ActiveX kapsayıcısı oluşturmak için
 
@@ -37,7 +37,6 @@ Bir MFC kapsayıcı programını kullanarak oluşturma [MFC Uygulama Sihirbazı]
 
 1. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)
-

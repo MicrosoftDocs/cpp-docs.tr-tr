@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CPaintDC [MFC], m_ps
 - CPaintDC [MFC], m_hWnd
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-ms.openlocfilehash: e4e6ded945bac15b6584eadc21d8648f1a0f9ab3
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 5dbe08eae911433c256d3f8dd1f60dea2db9478c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178336"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274433"
 ---
 # <a name="cpaintdc-class"></a>CPaintDC sınıfı
 
@@ -126,9 +126,8 @@ Cihaz bağlamı tanıtıcı aracılığıyla erişebileceğiniz Not `PAINTSTRUCT
 
   Örneğin bakın [CPaintDC::m_hWnd](#m_hwnd).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MDI](../../visual-cpp-samples.md)<br/>
 [CDC Sınıfı](../../mfc/reference/cdc-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

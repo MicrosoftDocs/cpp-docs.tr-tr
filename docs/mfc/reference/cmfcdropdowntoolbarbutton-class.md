@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCDropDownToolbarButton [MFC], SetDefaultCommand
 - CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
-ms.openlocfilehash: 3544bbd65b5e0c754552f93b45263f768b73fe69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b33e50328fd3c8997774515f248780edda6bcc75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625322"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275499"
 ---
 # <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton sınıfı
 
@@ -391,7 +391,7 @@ Düğme yardım iletisini işler olursa sıfır dışı; Aksi durumda 0.
 
 Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)) çağırarak [CMFCDropDownToolbarButton::OnClick](#onclick) yöntemiyle *bDelay*FALSE olarak ayarlayın. Bu yöntem tarafından döndürülen değeri döndürür [CMFCDropDownToolbarButton::OnClick](#onclick).
 
-WM_HELPHITTEST ileti hakkında daha fazla bilgi için bkz. [TN028: Context-Sensitive Yardım desteği](../../mfc/tn028-context-sensitive-help-support.md).
+WM_HELPHITTEST ileti hakkında daha fazla bilgi için bkz. [TN028: Bağlama duyarlı Yardım desteği](../../mfc/tn028-context-sensitive-help-support.md).
 
 ##  <a name="oncustomizemenu"></a>  CMFCDropDownToolbarButton::OnCustomizeMenu
 
@@ -538,12 +538,11 @@ void SetDefaultCommand(UINT uiCmd);
 
 Kullanıcı düğmeye tıkladığında framework yürüten varsayılan komutu belirtmek için bu yöntemi çağırın. Bir öğe tarafından belirtilen komut kimliği ile *uiCmd* üst açılan araç çubuğunda yer alması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCDropDownToolBar Sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
 [CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [CMFCToolBarMenuButton Sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
-[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

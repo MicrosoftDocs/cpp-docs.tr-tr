@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArrayEqualHelperFalse class
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-ms.openlocfilehash: 91987d369291a092b6dfb5f7db9ca8ba1434a7cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35207fdcbffc0e0367d86682b5f731eef617d761
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594915"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269064"
 ---
 # <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse sınıfı
 
@@ -63,7 +63,7 @@ Yanlış değerini döndürür.
 
 Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` bağımsız başvurulan yoksa false. Amacı `CSimpleArrayEqualHelperFalse::IsEqual` yöntemleri karşılaştırmalar eşitliği testleri yeterince tanımlanmamış iyi tanımlanmış bir şekilde başarısız kullanmayı zorlamak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSimpleArrayEqualHelper Sınıfı](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

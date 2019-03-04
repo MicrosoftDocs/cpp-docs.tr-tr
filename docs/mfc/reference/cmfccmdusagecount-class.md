@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-ms.openlocfilehash: af48451bcba9bf0d5f07cd96da99be4c2a6ae99b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4ad9a60831feb6fa1147ea3f8bcfd5c6badd06c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549402"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275369"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount sınıfı
 
@@ -206,7 +206,7 @@ virtual void Serialize(CArchive& ar);
 
 Bu yöntem komut sayıları harita yapısını serileştiren `m_CmdUsage`ve toplam komut kullanım `m_nTotalUsage`, ya da belirtilen arşive sayaç.
 
-Serileştirme örnekler için bkz [seri hale getirme: bir nesneyi serileştirmek](../../mfc/serialization-serializing-an-object.md).
+Serileştirme örnekler için bkz [seri hale getirme: Bir nesneyi serileştirmek](../../mfc/serialization-serializing-an-object.md).
 
 ##  <a name="setoptions"></a>  CMFCCmdUsageCount::SetOptions
 
@@ -236,7 +236,7 @@ Bu yöntem paylaşılan ayarlar `CMFCCmdUsageCount` sınıf veri üyeleri `m_nSt
 
 Hata ayıklama derlemelerinde, bu yöntem bir onaylama işlemi hatası oluşturur *nMinUsagePercentage* parametredir 100'değerine eşit veya daha büyük.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

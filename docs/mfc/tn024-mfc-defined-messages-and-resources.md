@@ -1,5 +1,5 @@
 ---
-title: 'TN024: MFC Tanımlı İletiler ve Kaynaklar'
+title: 'TN024: MFC tanımlı iletiler ve kaynaklar'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.messages
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - messages [MFC], MFC
 - TN024
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
-ms.openlocfilehash: 26f6effbafd8136661f0b1dc9a6b22138a23e547
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 029177821d37d5d26abe0b39ea1581e8a5ad602b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639640"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278138"
 ---
-# <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC Tanımlı İletiler ve Kaynaklar
+# <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC tanımlı iletiler ve kaynaklar
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -168,7 +168,7 @@ Bu iletiler, bağlama duyarlı Yardım uygulamasında kullanılır. Lütfen [Tek
 
 AppWizard tarafından sağlanan varsayılan araç MFC 4. 0'da sunulan bir RT_TOOLBAR özel kaynak, temel alır. Araç çubuğu Düzenleyicisi'ni kullanarak bu kaynak düzenleyebilirsiniz.
 
-## <a name="rtdlginit-resource-format"></a>RT_DLGINIT kaynak biçimi
+## <a name="rtdlginit-resource-format"></a>RT_DLGINIT Resource Format
 
 Bir MFC özel kaynak biçimi ek iletişim başlatma bilgileri depolamak için kullanılır. Bu, açılan kutuda depolanan ilk dizeleri içerir. Bu kaynak biçimi el ile düzenlenmesi için tasarlanmamıştır, ancak Visual C++ tarafından işlenir.
 
@@ -197,10 +197,9 @@ Denetim kimliği, ileti göndermek için yinelenen bir bölüm içeren ileti gö
 SendDlgItemMessage(<Control ID>, <Message #>, 0, &<Data>);
 ```
 
-Tüm Windows iletilerini ve veri içeriğini sağlayan bir çok genel biçim budur. MFC ve Visual C++ kaynak Düzenleyicisi yalnızca sınırlı bir alt kümesinde Windows iletileri destekler: birleşik giriş kutuları (verileri bir metin dizesi olan) için ilk ve liste tercihlerinin CB_ADDSTRING.
+Tüm Windows iletilerini ve veri içeriğini sağlayan bir çok genel biçim budur. MFC ve Visual C++ kaynak Düzenleyicisi yalnızca sınırlı bir alt kümesinde Windows iletileri destekler: İlk liste seçenekleri için birleşik giriş kutuları (verileri bir metin dizesi olan) için CB_ADDSTRING.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

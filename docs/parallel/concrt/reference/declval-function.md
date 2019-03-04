@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - ppltasks/stdx::declval
 ms.assetid: 9f57ba7a-e050-4ea6-80c6-8b5a38e958f5
-ms.openlocfilehash: 215221e4180400253d227bf62285f60b336fb264
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6fcf1fda59b3716e656ebb4a390fbde8c1201b7a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520399"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264748"
 ---
 # <a name="declval-function"></a>declval İşlevi
 
@@ -32,6 +32,6 @@ _T&& declval();
 
 **Namespace:** stdx
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [stdx Ad Alanı](stdx-namespace.md)

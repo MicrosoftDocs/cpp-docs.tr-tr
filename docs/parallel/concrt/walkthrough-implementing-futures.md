@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek yol: Vadeli İşlemleri Uygulama'
+title: 'İzlenecek yol: Vadeli işlemleri uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - implementing futures [Concurrency Runtime]
 - futures, implementing [Concurrency Runtime]
 ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
-ms.openlocfilehash: 4c43719199ef4009433ec65d54fcc238d82ac305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7164919d649751ac11fefa5be3cb2e5b7798ee4f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525683"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262135"
 ---
-# <a name="walkthrough-implementing-futures"></a>İzlenecek yol: Vadeli İşlemleri Uygulama
+# <a name="walkthrough-implementing-futures"></a>İzlenecek yol: Vadeli işlemleri uygulama
 
 Bu konuda, uygulamanıza vadeli gösterilmektedir. Konu nasıl daha fazlasını yapan varolan işlevsellikte eşzamanlılık çalışma zamanı değerlerinizden birleştirileceğini gösterir.
 
@@ -89,9 +89,9 @@ Eşzamanlılık Çalışma zamanı özel durum işleme modeli hakkında daha faz
 
 **cl.exe/ehsc futures.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[task_group sınıfı](reference/task-group-class.md)<br/>
+[task_group Sınıfı](reference/task-group-class.md)<br/>
 [single_assignment Sınıfı](../../parallel/concrt/reference/single-assignment-class.md)

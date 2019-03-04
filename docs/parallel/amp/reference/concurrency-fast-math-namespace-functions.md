@@ -46,12 +46,12 @@ f1_keywords:
 - amp_math/Concurrency::fast_math::tanhf
 - amp_math/Concurrency::fast_math::trunc
 ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
-ms.openlocfilehash: fa024c781804d404870a0362a027e1bc436902ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96178ee72073e5063fc009f17ab21565f3cf1ab5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667642"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259873"
 ---
 # <a name="concurrencyfastmath-namespace-functions"></a>CONCURRENCY::fast_math ad alanı işlevleri
 
@@ -1078,7 +1078,7 @@ Kayan nokta değeri
 *_YANLARI*<br/>
 _X'in sinüs değerini döndürür
 
-*_K*<br/>
+*_C*<br/>
 _X Kosinüs değerini döndürür
 
 ##  <a name="sincosf"></a>  sincosf
@@ -1100,7 +1100,7 @@ Kayan nokta değeri
 *_YANLARI*<br/>
 _X'in sinüs değerini döndürür
 
-*_K*<br/>
+*_C*<br/>
 _X Kosinüs değerini döndürür
 
 ##  <a name="sinh"></a>  SİNH
@@ -1275,8 +1275,8 @@ Bağımsız değişken tamsayı bileşenini döndürür
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp_math.h **Namespace:** Concurrency::fast_math
+**Başlık:** amp_math.h **Namespace:** CONCURRENCY::fast_math
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::fast_math Ad Alanı](concurrency-fast-math-namespace.md)

@@ -8,14 +8,14 @@ helpviewer_keywords:
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-ms.openlocfilehash: 286ef403ec4bd51b035945f3ca268b59fee4d9d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d356f094759775f709838de149769b1671fdf9ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567044"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260120"
 ---
-# <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/Veritabanı Desteği
+# <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/veritabanı desteği
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -101,7 +101,7 @@ Anlamak için gerekli değil nasıl güncelleştiren bir `CLongBinary` çalış�
 
 Güncelleştirirken bir `CLongBinary` alan, ODBC veritabanı sınıfları kullanın **DATA_AT_EXEC** mekanizması (ODBC belgelerine bakın `SQLSetPos`'s rgbValue bağımsız değişkeni). Ne zaman framework hazırlar işaret yerine INSERT nebo update deyimi `HGLOBAL` verilerini içeren *adresi* , `CLongBinary` olarak ayarlandığından *değer* sütun Bunun yerine ve kümesine uzunluğu göstergesi **SQL_DATA_AT_EXEC**. Daha sonra güncelleştirme bildirimi veri kaynağı için gönderildiğinde `SQLExecDirect` döndüreceği **SQL_NEED_DATA**. Bu sütun için parametre değeri gerçekten adresi olduğunu framework bu uyarı bir `CLongBinary`. Framework çağrıları `SQLGetData` kez küçük bir arabellek ile gerçek veri uzunluğu döndürülecek sürücü bekleniyor. Sürücü ikili büyük nesne (BLOB) gerçek uzunluğunu döndürürse, MFC kadar alanı BLOB getirmek için gerektiği şekilde yeniden ayırır. Veri kaynağı döndürür **SQL_NO_TOTAL**, BLOB boyutu belirlenemiyor gösteren, MFC daha küçük bir blok oluşturur. Varsayılan başlangıç boyutu 64 K'dır ve sonraki blokları iki katına olacaktır; Örneğin, ikinci 128 K, üçüncü 256 K ve bu şekilde devam eder. Başlangıç boyutu yapılandırılabilir.
 
-## <a name="not-binding-retrievingsending-data-directly-from-odbc-with-sqlgetdata"></a>Bağlama değil: Alma/veri SQLGetData ile ODBC'den doğrudan gönderme
+## <a name="not-binding-retrievingsending-data-directly-from-odbc-with-sqlgetdata"></a>Bağlama değil: ODBC SQLGetData ile doğrudan veri alma/gönderme
 
 Bu yöntem, tamamen atlama veritabanı sınıfları ile uzun veri sütununun kendiniz Dağıt.
 
@@ -118,8 +118,7 @@ Bu durumda, uzun veri sütununun kümesinin seçim listesinde olmalıdır, ancak
 > [!NOTE]
 >  Long veri sütununuzu framework tarafından bağlı olmadığından, bu değişiklikler ile işlenmeyecek `CRecordset::Update` çağırır. Oluşturma ve gönderme gerekli SQL **Ekle** ve **güncelleştirme** deyimleri kendiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

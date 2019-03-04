@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme'
+title: 'Nasıl yapılır: Belirli Zamanlayıcı ilkeleri belirtme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-ms.openlocfilehash: 1334b8dcf8b6615120d4be8db8530af60df9d668
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c03ef6661ebefe0bfe9fab62938ce9987a4bca1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520035"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277865"
 ---
-# <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme
+# <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı ilkeleri belirtme
 
 Zamanlayıcı ilkeleri görevleri yönettiğinde, Zamanlayıcı kullanan stratejisi denetlemenize olanak tanır. Bu konuda, bir zamanlayıcı İlkesi bir İlerleme göstergesi konsola yazdırır. bir görevin iş parçacığı öncelik sırasını artırmak için nasıl kullanılacağını gösterir.
 
-Zaman uyumsuz aracılar ile birlikte özel Zamanlayıcı ilkelerini kullanan bir örnek için bkz: [nasıl yapılır: aracılar, kullanım belirli Zamanlayıcı ilkeleri oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).
+Zaman uyumsuz aracılar ile birlikte özel Zamanlayıcı ilkelerini kullanan bir örnek için bkz: [nasıl yapılır: Belirli Zamanlayıcı ilkelerini kullanan aracılar oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).
 
 ## <a name="example"></a>Örnek
 
@@ -49,9 +49,8 @@ Scheduler that has a custom policy:
 
 **cl.exe/ehsc Zamanlayıcı-policy.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Scheduler İlkeleri](../../parallel/concrt/scheduler-policies.md)<br/>
 [Nasıl yapılır: Zamanlayıcı Örneğini Yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [Nasıl yapılır: Belirli Zamanlayıcı İlkelerini Kullanan Aracılar Oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
-

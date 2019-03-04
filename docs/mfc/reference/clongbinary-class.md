@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CLongBinary class [MFC]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
-ms.openlocfilehash: a7dbb7e38ec01743d994dafd6c7945e306de51ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed3a153ec89785a9c9da43037d20f7d88b5661ff
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656046"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260718"
 ---
 # <a name="clongbinary-class"></a>CLongBinary sınıfı
 
@@ -53,7 +53,7 @@ Kullanılacak bir `CLongBinary` nesnesi alan veri üyesi türünün bildirmek `C
 
 Yok, kayıt, katıştırılmış `CLongBinary` nesne de yok edilir ve yok edici kaldırır `HGLOBAL` veri işleyici.
 
-Büyük nesneler ve kullanımı hakkında daha fazla bilgi için `CLongBinary`, makalelere göz atın [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md) ve [kayıt kümesi: büyük veri öğeleri (ODBC) ile çalışmaya](../../data/odbc/recordset-working-with-large-data-items-odbc.md).
+Büyük nesneler ve kullanımı hakkında daha fazla bilgi için `CLongBinary`, makalelere göz atın [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md) ve [kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -93,7 +93,7 @@ Windows HGLOBAL işleyici gerçek ikili büyük nesne verilerini depolar.
 HGLOBAL m_hData;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

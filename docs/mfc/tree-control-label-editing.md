@@ -7,12 +7,12 @@ helpviewer_keywords:
 - label editing in CTreeCtrl class [MFC]
 - tree controls [MFC], label editing
 ms.assetid: 6cde2ac3-43ee-468f-bac2-cf1a228ad32d
-ms.openlocfilehash: 80d4f37ef8b67c2902e5d34cb4ec8aa4cf35a616
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 446db94ec49859e2213f00d205df57e332c85af2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647999"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264150"
 ---
 # <a name="tree-control-label-editing"></a>Ağaç Denetimi Etiketini Düzenleme
 
@@ -24,8 +24,7 @@ Bir ağaç denetimi etiketini düzenleme tamamlandı ya da iptal edildiğinde, g
 
 Etiket, genellikle yanıt olarak düzenleme sırasında [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) bildirim iletisini kullanarak etiketi düzenlemek için kullanılan düzenleme denetimi için bir işaretçi alabilirsiniz [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) üyesi işlev. Düzenleme denetiminin çağırabilirsiniz [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) bir kullanıcının girebileceği metin ya da alt kesecek ve atmak geçersiz karakterler düzenleme denetimine miktarını sınırlamak için üye işlevi. Ancak, düzenleme denetiminin yalnızca görüntülendiğini unutmayın *sonra* **TVN_BEGINLABELEDIT** gönderilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

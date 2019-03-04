@@ -13,12 +13,12 @@ f1_keywords:
 - AMPRT/Concurrency::completion_future::wait_for
 - AMPRT/Concurrency::completion_future::wait_until
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
-ms.openlocfilehash: d121477cf63236ee40df826a63dd7c7c9880d142
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 663122c2d8cd430e921773e75dfd7975e4a41516
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535300"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272925"
 ---
 # <a name="completionfuture-class"></a>completion_future Sınıfı
 
@@ -287,6 +287,6 @@ Yok eder `completion_future` nesne.
 ~completion_future();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

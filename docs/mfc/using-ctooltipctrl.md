@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CToolTipCtrl class [MFC], creating tool tips
 - CToolTipCtrl class
 ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
-ms.openlocfilehash: 039b57d5dce71a090dd238016b593b195f356719
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06f296fc21a6ad4480755289d30b5ff4ac27ca8e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654382"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273965"
 ---
 # <a name="using-ctooltipctrl"></a>CToolTipCtrl Kullanma
 
@@ -28,8 +28,7 @@ ms.locfileid: "50654382"
 
 - [Araç İpucunu Denetimini Düzenleme](../mfc/manipulating-the-tool-tip-control.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

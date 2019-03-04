@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-ms.openlocfilehash: 6b3e3fac575d6a1308a9f61b3bf827d76785e94d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96118645aa656e97fcb93a0fd223045208ab03a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639339"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273900"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 
@@ -1130,9 +1130,9 @@ Seçenekleri hangi bilgilerini almak için kayıt kümesi belirtin. Kullanılabi
 
 - `AFX_DAO_PRIMARY_INFO` (Varsayılan) Adı, türü, boyut öznitelikleri
 
-- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: sıra gerekli, konum, sıfır uzunluk harmanlama sırası, yabancı adı, kaynak alan kaynak tablosunda izin ver
+- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: Gerekli, sıralı konumu harmanlama sırası, yabancı adı, kaynak alanı, kaynak tablosu için sıfır uzunluk, izin ver
 
-- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, artı: varsayılan değer, doğrulama kuralı doğrulaması metni
+- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, ayrıca: Varsayılan değer, doğrulama kuralı, doğrulama metin
 
 *lpszName*<br/>
 Alanın adı.
@@ -1237,9 +1237,9 @@ Seçenekler hangi bilgilerini almak için dizini belirtin. Kullanılabilir seçe
 
 - `AFX_DAO_PRIMARY_INFO` (Varsayılan) Ad alanı bilgisi alanları
 
-- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: birincil, benzersiz, kümelenmiş, gerekli IgnoreNulls, yabancı
+- `AFX_DAO_SECONDARY_INFO` Birincil bilgilerin yanı sıra: Birincil, benzersiz ve kümelenmiş, IgnoreNulls, gerekli, yabancı
 
-- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, artı: ayrı sayım
+- `AFX_DAO_ALL_INFO` Birincil ve ikincil bilgileri, ayrıca: Ayrı sayım
 
 *lpszName*<br/>
 Ada göre arama için dizin nesnesi adı için bir işaretçi.
@@ -1500,10 +1500,10 @@ Bu tabloda, farklı birleşimlerini ile hangi taşıma işlemlerine izin göster
 
 ||MoveFirst MoveLast|MovePrev,<br /><br /> < 0 Taşı|0 Taşı|MoveNext,<br /><br /> > 0 Taşı|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
-|`IsBOF`sıfır olmayan =<br /><br /> `IsEOF`=0|İzin verilen|Özel Durum|Özel Durum|İzin verilen|
-|`IsBOF`=0,<br /><br /> `IsEOF`sıfır olmayan =|İzin verilen|İzin verilen|Özel Durum|Özel Durum|
+|`IsBOF`sıfır olmayan =<br /><br /> `IsEOF`=0|İzin Verildi|Özel Durum|Özel Durum|İzin Verildi|
+|`IsBOF`=0,<br /><br /> `IsEOF`sıfır olmayan =|İzin Verildi|İzin Verildi|Özel Durum|Özel Durum|
 |Her ikisi de sıfır olmayan|Özel Durum|Özel Durum|Özel Durum|Özel Durum|
-|Her iki 0|İzin verilen|İzin verilen|İzin verilen|İzin verilen|
+|Her iki 0|İzin Verildi|İzin Verildi|İzin Verildi|İzin Verildi|
 
 Bir taşıma işlemi izin verme işlemi başarıyla bir kaydı bulmak anlamına gelmez. Yalnızca belirtilen taşıma işlemi gerçekleştirme girişimi izin verilir ve bir özel durum oluşturmayacağını belirtir. Değerini `IsBOF` ve `IsEOF` üye işlevleri, denenen taşıma nedeniyle değişebilir.
 
@@ -1573,10 +1573,10 @@ Bu tabloda, farklı birleşimlerini ile hangi taşıma işlemlerine izin göster
 
 ||MoveFirst MoveLast|MovePrev,<br /><br /> < 0 Taşı|0 Taşı|MoveNext,<br /><br /> > 0 Taşı|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
-|`IsBOF`sıfır olmayan =<br /><br /> `IsEOF`=0|İzin verilen|Özel Durum|Özel Durum|İzin verilen|
-|`IsBOF`=0,<br /><br /> `IsEOF`sıfır olmayan =|İzin verilen|İzin verilen|Özel Durum|Özel Durum|
+|`IsBOF`sıfır olmayan =<br /><br /> `IsEOF`=0|İzin Verildi|Özel Durum|Özel Durum|İzin Verildi|
+|`IsBOF`=0,<br /><br /> `IsEOF`sıfır olmayan =|İzin Verildi|İzin Verildi|Özel Durum|Özel Durum|
 |Her ikisi de sıfır olmayan|Özel Durum|Özel Durum|Özel Durum|Özel Durum|
-|Her iki 0|İzin verilen|İzin verilen|İzin verilen|İzin verilen|
+|Her iki 0|İzin Verildi|İzin Verildi|İzin Verildi|İzin Verildi|
 
 Bir taşıma işlemi izin verme işlemi başarıyla bir kaydı bulmak anlamına gelmez. Yalnızca belirtilen taşıma işlemi gerçekleştirme girişimi izin verilir ve bir özel durum oluşturmayacağını belirtir. Değerini `IsBOF` ve `IsEOF` üye işlevleri, denenen taşıma nedeniyle değişebilir.
 
@@ -2525,7 +2525,7 @@ Kayıt kümesi nesnesi çok kullanıcılı bir ortamda zor kilitliyken kayıt ki
 
 İlgili bilgiler için "AddNew yöntemi", "CancelUpdate yöntemi", "Delete yöntemi", "LastModified özelliği", "Güncelleştirme yöntemi" ve DAO Yardımı'nda "EditMode özelliği" konulara bakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

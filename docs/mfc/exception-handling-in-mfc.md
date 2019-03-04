@@ -33,12 +33,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: 4b520072bd0c07e261f2cf4baf51d7ea3d14a5ab
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: cb11a74932e44f94f481a2fdc48b8d6ee359f9e8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694562"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260549"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 
@@ -52,7 +52,7 @@ MFC kullanarak yeni bir uygulama yazıyorsanız, C++ mekanizmasını kullanmanı
 
 C++ özel durumlarını yerine MFC özel durum makroları kullanmak için mevcut kodu kolayca dönüştürebilirsiniz. Bunu yapmak için yönergeleri ve kod dönüştürme avantajları makalesinde açıklanan [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).
 
-MFC özel durum makroları kullanarak uygulama geliştirdiyseniz Bu makrolar, yeni kodunuzda C++ özel durumlarını kullanırken mevcut kodunuzu kullanmaya devam edebilirsiniz. Makaleyi [özel durumlar: sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) Bunu yapmak için yönergeler sağlar.
+MFC özel durum makroları kullanarak uygulama geliştirdiyseniz Bu makrolar, yeni kodunuzda C++ özel durumlarını kullanırken mevcut kodunuzu kullanmaya devam edebilirsiniz. Makaleyi [özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) Bunu yapmak için yönergeler sağlar.
 
 > [!NOTE]
 >  C++ özel durum işleme kodunuzda etkinleştirmek için C/C++ klasörü projeye ait kod oluşturma sayfasında C++ özel durumlarını etkinleştir seçin [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu veya kullanım [/ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.
@@ -109,28 +109,27 @@ MFC tarafından sağlanan önceden tanımlanmış özel durumlar aşağıdaki ta
 
 Aşağıdaki makaleler, özel durum teslim etme için MFC Kitaplığı'nı kullanarak açıklar:
 
-- [Özel Durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)
+- [Özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md)
 
-- [Özel Durumlar: Özel Durum İçeriklerini İnceleme](../mfc/exceptions-examining-exception-contents.md)
+- [Özel durumlar: Özel durum içeriklerini İnceleme](../mfc/exceptions-examining-exception-contents.md)
 
-- [Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md)
+- [Özel durumlar: Özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md)
 
-- [Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md)
+- [Özel durumlar: Kendi İşlevlerinizden özel durumları atma](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md)
 
-- [Özel durumlar: Veritabanı Özel Durumları](../mfc/exceptions-database-exceptions.md)
+- [Özel durumlar: Veritabanı özel durumları](../mfc/exceptions-database-exceptions.md)
 
-- [Özel durumlar: OLE Özel Durumları](../mfc/exceptions-ole-exceptions.md)
+- [Özel durumlar: OLE özel durumları](../mfc/exceptions-ole-exceptions.md)
 
 Aşağıdaki makaleler, C++ özel durum anahtar sözcüklerini MFC özel durum makroları karşılaştırın ve kodunuzu nasıl uyarlayabileceğiniz açıklanmaktadır:
 
-- [Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
+- [Özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
 
-- [Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md)
+- [Özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md)
 
-- [Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
+- [Özel durumlar: MFC makroları ve C++ özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)<br/>
-[Nasıl yapılır: verilerimi kendi özel durum sınıfları oluşturma](http://go.microsoft.com/fwlink/p/?linkid=128045)
-
+[Nasıl Yaparım Kendi özel durum sınıfları oluşturma](http://go.microsoft.com/fwlink/p/?linkid=128045)

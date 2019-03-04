@@ -13,12 +13,12 @@ helpviewer_keywords:
 - data storage [MFC], CArchive class
 - CArchive class [MFC], constructor
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
-ms.openlocfilehash: a97223602e9994647a8af16cc68de5394494c1ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80e3e73840bce53691c3f5fdafb62c60bdb8f832
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659933"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273809"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
 
@@ -60,7 +60,7 @@ Bir belge çerçevesi aracılığıyla serileştirmek yanı sıra, ne zaman ihti
 
    İkinci bağımsız değişkeni `CArchive` oluşturucudur arşiv depolama ve veri ya da yükleme dosyasından kullanılıp kullanılmayacağını belirten bir numaralandırılmış değeri. `Serialize` Bir nesnenin işlev çağırarak bu durumu denetler `IsStoring` arşiv nesne için işlevi.
 
-Depolama veya veri yüklemeyi tamamladıktan sonra `CArchive` nesne, kapatın. Ancak `CArchive` (ve `CFile`) nesneleri otomatik olarak kapatılır arşiv (ve dosya), açıkça kurtarma hataları kolaylaştırır olduğundan Bunu yapmak için iyi bir uygulamadır. Hata işleme hakkında daha fazla bilgi için bkz [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Depolama veya veri yüklemeyi tamamladıktan sonra `CArchive` nesne, kapatın. Ancak `CArchive` (ve `CFile`) nesneleri otomatik olarak kapatılır arşiv (ve dosya), açıkça kurtarma hataları kolaylaştırır olduğundan Bunu yapmak için iyi bir uygulamadır. Hata işleme hakkında daha fazla bilgi için bkz [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
 #### <a name="to-close-the-carchive-object"></a>CArchive nesnesi kapatmak için
 
@@ -68,7 +68,6 @@ Depolama veya veri yüklemeyi tamamladıktan sonra `CArchive` nesne, kapatın. A
 
    [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
-
+[Seri hale getirme: Bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)

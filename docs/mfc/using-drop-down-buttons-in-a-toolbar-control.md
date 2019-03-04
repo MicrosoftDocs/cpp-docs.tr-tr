@@ -11,12 +11,12 @@ helpviewer_keywords:
 - TBSTYLE_EX_DRAWDDARROWS
 - TBN_DROPDOWN notification [MFC]
 ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
-ms.openlocfilehash: fe314e0fdff70979dfc858bb89578170f9a9ee02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d1a13b1921f111d97bb515e7932a0116277f9ed
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453502"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261049"
 ---
 # <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 
@@ -47,8 +47,7 @@ Aşağıdaki yordamda, açılır menü ile bir açılan araç çubuğu düğmesi
 
    [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

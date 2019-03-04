@@ -5,12 +5,12 @@ helpviewer_keywords:
 - functions [ATL]
 - ATL, global functions
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-ms.openlocfilehash: 5cf56d21be605094c3ae812bd7aa39b573d2b733
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f0c6ccaa049290d3e183ae682c19ab7e497c2b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564924"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261745"
 ---
 # <a name="atl-functions"></a>ATL işlevleri
 
@@ -58,7 +58,7 @@ Kaydetme ve sunucu nesneleri nesne eşlemesindeki kaydını kaldırmak için des
 [WinModule Genel İşlevleri](../../atl/reference/winmodule-global-functions.md)<br/>
 İçin destek sağlayan `_AtlCreateWndData` yapı işlemleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [Makroları](../../atl/reference/atl-macros.md)<br/>

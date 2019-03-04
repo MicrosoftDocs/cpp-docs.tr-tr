@@ -7,12 +7,12 @@ helpviewer_keywords:
 - toolbar controls [MFC], creating
 - CToolBarCtrl class [MFC], creating toolbars
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
-ms.openlocfilehash: ad75f346e21262b894d01efd351e6bb0a3ede3a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0f41731e3a4db7b15d4f2a7ebaac94135d5350d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564677"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265112"
 ---
 # <a name="creating-a-ctoolbarctrl-object"></a>CToolBarCtrl Nesnesi Oluşturma
 
@@ -32,8 +32,7 @@ Kullanılacak bir `CToolBarCtrl` nesnesi, genellikle şu adımları izleyin:
 
 1. Kullanıcı araç çubuğunu özelleştirme yapmak istiyorsanız, sahip penceresine özelleştirme bildirim iletilerini açıklandığı işlemek [özelleştirme bildirimlerini işleme](../mfc/handling-customization-notifications.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

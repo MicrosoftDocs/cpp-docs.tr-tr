@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - scheduler_resource_allocation_error class
 ms.assetid: 8b40449a-7abb-4d0a-bb85-c0e9a495ae97
-ms.openlocfilehash: d8b94a17c4d842e97901e97dd2197692252eed43
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f7254306253aabc33f46694f3da16734e6efccf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613167"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276500"
 ---
 # <a name="schedulerresourceallocationerror-class"></a>scheduler_resource_allocation_error Sınıfı
 
@@ -89,6 +89,6 @@ Hatanın açıklayıcı bir iletisi.
 *_Hresult*<br/>
 `HRESULT` Özel duruma neden olan hata değeri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

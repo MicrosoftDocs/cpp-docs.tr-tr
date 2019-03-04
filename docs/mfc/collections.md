@@ -17,12 +17,12 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: f7ded70431b80257433058cc9af89bcb137c4247
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b74ee8a779ad2fffa801749d9818f985bc8c352
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490863"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273315"
 ---
 # <a name="collections"></a>Koleksiyonlar
 
@@ -98,7 +98,7 @@ MFC koleksiyon sınıfları özellikleri tablosu içinde [koleksiyon sınıfı s
 
 - [Koleksiyon Sınıfı Seçme Önerileri](../mfc/recommendations-for-choosing-a-collection-class.md)
 
-- [Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma](../mfc/how-to-make-a-type-safe-collection.md)
+- [Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma](../mfc/how-to-make-a-type-safe-collection.md)
 
 - [Yığın ve Kuyruk Koleksiyonları Oluşturma](../mfc/creating-stack-and-queue-collections.md)
 
@@ -114,8 +114,7 @@ MFC koleksiyon sınıfları özellikleri tablosu içinde [koleksiyon sınıfı s
 
 - [CObject Koleksiyonundaki Tüm Nesneleri Silme](../mfc/deleting-all-objects-in-a-cobject-collection.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)
-

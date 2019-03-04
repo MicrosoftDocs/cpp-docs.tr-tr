@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MFC, document templates
 - templates [MFC], document templates
 ms.assetid: c87f1821-7cbf-442e-9690-f126ae7fb783
-ms.openlocfilehash: f5c0691deab3d475a72cda0e86d681ea0c4ddfa0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85ff6ad47b37d85c812608dbee918f0543730eae
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480177"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271684"
 ---
 # <a name="document-template-creation"></a>Belge Şablonu Oluşturma
 
@@ -25,10 +25,9 @@ Belge şablonu Oluşturucu, belgeler, pencereler ve görünümler şablonu oluş
 
 Yeni bir işaretçi `CMultiDocTemplate` nesnesi bağımsız değişkeni olarak kullanılır [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate). Bağımsız değişkenleri `CMultiDocTemplate` Oluşturucusu belge türün menülerini ve Hızlandırıcı ile ilişkili kaynak Kimliğini içerir ve üç kullanır [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) makrosu. `RUNTIME_CLASS` döndürür [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) bağımsız değişken olarak adlandırılan C++ sınıfı için nesne. Üç `CRuntimeClass` belge şablonu oluşturucuya geçirilen nesneleri belge oluşturma işlemi sırasında belirtilen sınıfların yeni nesneler oluşturmak için gerekli bilgileri sağlayın. Örnek, oluşturur bir belge şablonu oluşturulmasını gösterir. `CScribDoc` nesnelerini `CScribView` bağlı nesneler. Görünümler, standart MDI alt çerçeve pencereleri tarafından çerçevelidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
 [FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)<br/>
 [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
-

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CSharedFile [MFC], Detach
 - CSharedFile [MFC], SetHandle
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-ms.openlocfilehash: 188330317a8d65060d0aad0e1617365723f4f928
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e86e64c1de232aba0c17a0fdfb3600e480567a57
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476498"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273081"
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 
@@ -128,7 +128,7 @@ Bellek bloğu büyümesine izin verilip verilmediğini belirtir.
 
 Varsa *bAllowGrow* sıfır olmayan, bellek blok boyutu yükseltilmiştir gerekirse, örneğin, bir denemesi, daha fazla bayt bellek bloğu için ayrılan daha dosyaya yazmak için yapılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CMemFile Sınıfı](../../mfc/reference/cmemfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

@@ -64,12 +64,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: a22a419018f3f4b2b7e6cee2471bf0f162b65f2e
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 148c9571bb37e2b9063ca9290f51caa1fabb2d21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894009"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270793"
 ---
 # <a name="cstockpropimpl-class"></a>Cstockpropımpl sınıfı
 
@@ -1163,7 +1163,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 Aynı [CStockPropImpl::put_Picture](#put_picture), ancak bir başvuru sayısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [IDispatchImpl Sınıfı](../../atl/reference/idispatchimpl-class.md)

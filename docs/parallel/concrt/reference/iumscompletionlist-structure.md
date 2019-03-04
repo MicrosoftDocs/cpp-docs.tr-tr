@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSCompletionList structure
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-ms.openlocfilehash: ec3c38ee609dfa7aec8d688269f1183d307be5b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 567b8668934d81c49757660d1a60ca74eb033e68
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438213"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273930"
 ---
 # <a name="iumscompletionlist-structure"></a>IUMSCompletionList Yapısı
 
@@ -63,7 +63,7 @@ Zinciri `IUMSUnblockNotification` arabirimleri.
 
 Döndürülen bildirimleri yürütme bağlamları filtrelerden geçersiz olur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [IUMSScheduler Yapısı](iumsscheduler-structure.md)<br/>

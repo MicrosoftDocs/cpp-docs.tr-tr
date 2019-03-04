@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267
-ms.openlocfilehash: 5ddafe5dd821fb21eb6dd03d63122fa98a56af51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0870eb046f1cec091a72d49c94a2fea41484340
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635376"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278697"
 ---
 # <a name="concurrency-namespace-c-amp"></a>Eşzamanlılık Ad Alanı (C++ AMP)
 
@@ -111,7 +111,6 @@ namespace Concurrency;
 
 **Başlık:** amp.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Başvuru (C++ AMP)](reference-cpp-amp.md)
-

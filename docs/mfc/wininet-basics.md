@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WinInet classes [MFC], displaying progress
 - WinInet classes [MFC], about WinInet classes
 ms.assetid: 665de5ac-e80d-427d-8d91-2ae466885940
-ms.openlocfilehash: f56d2bb6e6a0b49b3d69dbcc0bf6346b72e9f7b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79ec102aa27440c64f03c6e22b9f2fe959cac6b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519190"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264462"
 ---
 # <a name="wininet-basics"></a>WinInet Temelleri
 
@@ -63,8 +63,7 @@ Oluştururken bir `CInternetSession` belirtebileceğiniz nesnesi bir *dwContext*
 
 Örneğin, bir dosyayı okumak için bir FTP sunucusuna bir bağlantı oluşturur ve ayrıca bir Web sayfası almak için bir HTTP sunucusuna bağlanan bir uygulama yazıyorsanız, sahip olacaksınız bir `CInternetSession` nesnesi, iki `CInternetConnection` nesneleri (biri olacak bir `CFtpSession` ve diğer olacaktır bir `CHttpSession`) ve iki `CInternetFile` nesneleri (her bağlantı için bir tane). Varsayılan değerleri kullandıysanız *dwContext* parametreleri olmayan okunup arasında ayrım yapmak mümkün `OnStatusCallback` FTP bağlantı ve ilerleme durumunu gösteren etkinleştirmeleri için ilerlemeyi göstermek etkinleştirmeleri HTTP bağlantısı. Belirtirseniz bir *dwContext* , daha sonra için test edebilirsiniz kimliği `OnStatusCallback`, geri çağırma işlemi oluşturulan öğrenmiş olacaksınız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
 [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
-

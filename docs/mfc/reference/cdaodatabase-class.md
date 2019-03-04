@@ -58,12 +58,12 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pDAODatabase
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-ms.openlocfilehash: 6bdabafc905b1ae5d6ed9a1fcd83ab1982871c3b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1e9db1ddebe05d42cbb8c4ba242938d6d86cc81
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439293"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272911"
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase sınıfı
 
@@ -587,9 +587,9 @@ Seçenekleri hangi bilgilerini almak için kayıt kümesi belirtin. Kullanılabi
 
 - (Varsayılan) AFX_DAO_PRIMARY_INFO adı, türü
 
-- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: oluşturma tarihi, son güncelleştirme tarihi, kayıtları döndürür, güncelleştirilebilir
+- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: Son güncelleştirme, kayıtları döndürür, güncelleştirilebilir tarihi oluşturulma tarihi
 
-- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: SQL, bağlan, ODBCTimeout
+- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: SQL, ODBCTimeout Bağlan
 
 *lpszName*<br/>
 Ada göre arama, veritabanında tanımlanan bir sorgu adını içeren bir dize.
@@ -744,9 +744,9 @@ Seçenekler hangi bilgilerini almak için tabloyu belirtin. Kullanılabilir seç
 
 - Güncelleştirilebilir, AFX_DAO_PRIMARY_INFO (varsayılan) ad öznitelikleri
 
-- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: kaynak tablo adı, bağlantı oluşturma tarihi, son güncelleştirme tarihi
+- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: Oluşturulma tarihi, tarih kaynak tablo adı, en son güncelleştirilen bağlanma
 
-- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: doğrulama kuralı, doğrulama metin kayıt sayısı
+- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: Doğrulama kuralı, doğrulama metin kayıt sayısı
 
 *lpszName*<br/>
 Ada göre arama tabledef nesnesinin adı.
@@ -893,7 +893,7 @@ Sorgu zaman aşımı için'varsayılan değer 60 saniyedir. Tüm veritabanları,
 
 İlgili bilgiler için DAO Yardımı'nda "QueryTimeout özelliği" konusuna bakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

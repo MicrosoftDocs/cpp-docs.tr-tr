@@ -1,5 +1,5 @@
 ---
-title: 'Kapsayıcılar: İstemci Öğesi Durumları'
+title: 'Kapsayıcılar: İstemci öğesi durumları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE containers [MFC], client-item states
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - lifetime, lifetime states and OLE container client items
 - client items and OLE containers
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-ms.openlocfilehash: 866aa6f2265abe671ce0028e3be5f1c8ee1762a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1453ba3f96e49cefc9014a93ebcfbcfe5c6bc905
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575350"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273680"
 ---
-# <a name="containers-client-item-states"></a>Kapsayıcılar: İstemci Öğesi Durumları
+# <a name="containers-client-item-states"></a>Kapsayıcılar: İstemci öğesi durumları
 
 Bu makalede, yaşam sürelerinin başlarında istemci öğesi geçtiği farklı durumları açıklanmaktadır.
 
@@ -38,10 +38,10 @@ Bir öğenin sunucunun penceresinde açılan yerine, kapsayıcının belge yerin
 
 Bir öğenin yerinde etkinleştirildiğinde, genellikle yalnızca arabimini kısaca, etkin duruma aracılığıyla. Ardından, sunucu, menüleri, araç çubukları ve diğer kullanıcı arabirimi bileşenleri kapsayıcının değerlerle birleştirildi UI etkin duruma girer. Bu kullanıcı arabirimi bileşenleri varlığını etkin duruma kullanıcı Arabirimi etkin durumdan ayırır. Aksi takdirde, etkin duruma kullanıcı Arabirimi etkin duruma benzer. Sunucunun geri destekliyorsa, sunucuya yüklenmedi veya açık durumuna ulaşana kadar OLE öğesinin geri alma-durum bilgilerini korumak için gereklidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kapsayıcılar](../mfc/containers.md)<br/>
 [Etkinleştirme](../mfc/activation-cpp.md)<br/>
-[Kapsayıcılar: İstemci Öğesi Bildirimleri](../mfc/containers-client-item-notifications.md)<br/>
+[Kapsayıcılar: İstemci öğesi bildirimleri](../mfc/containers-client-item-notifications.md)<br/>
 [İzleyiciler](../mfc/trackers.md)<br/>
 [CRectTracker Sınıfı](../mfc/reference/crecttracker-class.md)

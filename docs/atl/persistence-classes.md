@@ -8,12 +8,12 @@ helpviewer_keywords:
 - persistence classes
 - persistence, classes
 ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
-ms.openlocfilehash: 4376b04bfe59f7bb0c6e344dadb7a2f2a522fc3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4dfc33d14fe11ec24bb22edf5d5d987bf507c7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534127"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261485"
 ---
 # <a name="persistence-classes"></a>Kalıcılık sınıfları
 
@@ -29,8 +29,7 @@ Aşağıdaki sınıflar, nesne Kalıcılık uygulayın:
 
 [ATL öğretici](../atl/active-template-library-atl-tutorial.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Özellik Eşleme Makroları](../atl/reference/property-map-macros.md)
-

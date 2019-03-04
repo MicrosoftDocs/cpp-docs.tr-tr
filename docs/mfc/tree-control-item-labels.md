@@ -8,12 +8,12 @@ helpviewer_keywords:
 - item labels, tree controls
 - item labels
 ms.assetid: fe834107-1a25-4280-aced-774c11565805
-ms.openlocfilehash: 0abfeee170dbc9cbb4639e896e7a22d7184b35a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c945556ff9236db1ca61b15f1072efdc2f49541f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438200"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278892"
 ---
 # <a name="tree-control-item-labels"></a>Ağaç Denetim Öğesi Etiketleri
 
@@ -23,8 +23,7 @@ Ağaç denetimi, her öğe depolamak için bellek ayırır; öğe etiketleri, me
 
 Ağaç denetimi ağaç denetimi oluşturan işlem yığından ayrılan bellek kullanır. Ağaç denetimindeki öğeler sayısı yığında kullanılabilir bellek miktarını temel alır. Her öğe 64 baytın alır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

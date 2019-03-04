@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: 1de59e4404960ed99dedaadfa576168bc31da444
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 30a5eff8b18df8372c23b5f400c90ff85bdad0eb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694796"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259821"
 ---
 # <a name="cbasepane-class"></a>CBasePane sınıfı
 
@@ -730,7 +730,7 @@ Kitaplık bölmeleri için birkaç yeni stiller ekler. Aşağıdaki tablo, yeni 
 |-----------|-----------------|
 |AFX_CBRS_FLOAT|Bölmesinde kaydırabilirsiniz.|
 |AFX_CBRS_AUTOHIDE|Otomatik gizleme modu bölmesinde destekler|
-|AFX_CBRS_RESIZE|Bölmesinde yeniden boyutlandırılabilir. **Önemli:** bu stil uygulanmadı.|
+|AFX_CBRS_RESIZE|Bölmesinde yeniden boyutlandırılabilir. **Önemli:**  Bu stil uygulanmadı.|
 |AFX_CBRS_CLOSE|Bölme kapatılabilir.|
 |AFX_CBRS_AUTO_ROLLUP|Bunu gezinen olduğunda bölmesinde sağlık dökümü.|
 |AFX_CBRS_REGULAR_TABS|Bir bölme bu stil sahip başka bir bölme noktalarını, normal bir sekmeli pencere oluşturulur. (Daha fazla bilgi için [CTabbedPane sınıfı](../../mfc/reference/ctabbedpane-class.md).)|
@@ -1925,7 +1925,7 @@ virtual HDWP SetWindowPos(
 *Y*<br/>
 [in] Pencerenin konumunu belirtir.
 
-*CX*<br/>
+*cx*<br/>
 [in] Pencerenin genişliğini belirtir.
 
 *CY*<br/>
@@ -2014,7 +2014,7 @@ Bölmesinde durumu işlemek veya bölmenin yerleştirme düzenden hariç tutmak 
 
 Bu bölme kullanmaya devam etmek istiyorsanız, çağırın ya da [CBasePane::DockPane](#dockpane) veya [CBasePane::FloatPane](#floatpane) bu yöntemi çağırmadan önce.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

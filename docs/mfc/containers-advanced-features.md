@@ -12,12 +12,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 95606818cf5673ef5d4a70361a8e79a9ed28d11b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d83ba601766f4b6fb84576571239a250169abb1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506086"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278710"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 
@@ -31,7 +31,7 @@ Bu makalede, isteğe bağlı Gelişmiş Özellikler mevcut kapsayıcı uygulamal
 
 Kapsayıcı/sunucu uygulaması, bir kapsayıcı ve bir sunucu gibi davranan bir uygulamadır. Windows için Microsoft Word, bu bir örnektir. Word için Windows belgeleri diğer uygulamalarda ekleyebilir ve Word için Windows belgelerine öğeleri de ekleyebilir. Kapsayıcı uygulamanızı bir kapsayıcı hem (bir birleşimi kapsayıcı/miniserver uygulama oluşturamaz) tam bir sunucu olarak değiştirme işlemi, bir tam sunucu oluşturma işlemi benzerdir.
 
-Makaleyi [sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md) bir sunucu uygulaması uygulamak için gereken görevlerin sayısını listeler. Kapsayıcılı bir uygulama bir kapsayıcı/sunucu uygulaması dönüştürün, sonra aynı bu görevlerden bazılarını gerçekleştirmek kapsayıcıya kod ekleme gerekir. Dikkate alınması gereken önemli noktalar aşağıda listelenmiştir:
+Makaleyi [sunucuları: Sunucu uygulama](../mfc/servers-implementing-a-server.md) bir sunucu uygulaması uygulamak için gereken görevlerin sayısını listeler. Kapsayıcılı bir uygulama bir kapsayıcı/sunucu uygulaması dönüştürün, sonra aynı bu görevlerden bazılarını gerçekleştirmek kapsayıcıya kod ekleme gerekir. Dikkate alınması gereken önemli noktalar aşağıda listelenmiştir:
 
 - Uygulama Sihirbazı tarafından önceden oluşturulmuş kapsayıcı kod OLE alt başlatır. Değiştirme veya ekleme desteği için herhangi bir şey gerekmez.
 
@@ -41,7 +41,7 @@ Makaleyi [sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md) b
 
    Örneğin, MFC OLE örnek [OCLIENT](../visual-cpp-samples.md) kapsayıcı/sunucu uygulamanız tarafından oluşturulan bir öğe katıştırılmış. OCLIENT uygulamayı açın ve yerinde kapsayıcı/sunucu uygulamanız tarafından oluşturulan öğenin düzenleyin. Uygulamanızın öğe düzenlenirken, MFC OLE örnek tarafından oluşturulan bir öğe eklemek istediğinize karar [HIERSVR](../visual-cpp-samples.md). Bunu yapmak için yerinde etkinleştirme kullanamazsınız. Tam olarak bu öğesini etkinleştirmek için HIERSVR açmanız gerekir. Microsoft Foundation Class Kitaplığı Bu OLE özellik desteklemediği için geçersiz kılma `COleClientItem::CanActivate` bu durum için denetleyin ve uygulamanızdaki olası bir çalışma zamanı hatası önlemeye olanak tanır.
 
-Yeni bir uygulama oluşturma ve kapsayıcı/sunucu uygulaması çalışabilmesi için istediğiniz seçeneği Uygulama Sihirbazı'nı ve bu destek OLE Seçenekler iletişim kutusundaki otomatik olarak oluşturulması'ı seçin. Daha fazla bilgi için bkz [genel bakış: bir ActiveX denetimi kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri MFC örnekleri hakkında daha fazla bilgi için bkz.
+Yeni bir uygulama oluşturma ve kapsayıcı/sunucu uygulaması çalışabilmesi için istediğiniz seçeneği Uygulama Sihirbazı'nı ve bu destek OLE Seçenekler iletişim kutusundaki otomatik olarak oluşturulması'ı seçin. Daha fazla bilgi için bkz [genel bakış: Bir ActiveX denetimi kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md). MFC örnekleri MFC örnekleri hakkında daha fazla bilgi için bkz.
 
 Kendi içine bir MDI uygulaması ekleyemeyeceğinizi unutmayın. Bir SDI uygulaması olmadığı sürece, bir kapsayıcı/sunucu olmayan bir uygulamanın kendi içine eklenemiyor.
 
@@ -71,8 +71,7 @@ Katıştırılmış nesneler özellik bağlanan kapsayıcı uygulamanızı için
 
 MFC OLE örnek [OCLIENT](../visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığına bir örnek için bkz `InitInstance` işlevi *OCLIENT. CPP* Bu örnek uygulamanın dosya.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kapsayıcılar](../mfc/containers.md)<br/>
 [Sunucular](../mfc/servers.md)
-

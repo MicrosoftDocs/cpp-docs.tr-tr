@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC DLL Wizard, application settings
 ms.assetid: 0a96b94f-ae36-4975-951b-c9ffb3def21c
-ms.openlocfilehash: 66e7b907e3ed50c97e5cc864d51c621713cbf992
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f021f2023af839413306c1e3d56dc741749cf216
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455958"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276604"
 ---
 # <a name="application-settings-mfc-dll-wizard"></a>Uygulama Ayarları, MFC DLL Sihirbazı
 
@@ -47,8 +47,7 @@ MFC DLL dosyanızı Otomasyon destekleyip desteklemeyeceğini ve onu Windows soc
 
    MFC DLL ile Windows yuva desteği oluşturulduğunda, [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) başlatır için yuva desteği ve MFC üst bilgi dosyası StdAfx.h AfxSock.h içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC DLL Sihirbazı](../../mfc/reference/mfc-dll-wizard.md)<br/>
 [MFC DLL Projesi Oluşturma](../../mfc/reference/creating-an-mfc-dll-project.md)
-

@@ -33,12 +33,12 @@ f1_keywords:
 - ppltasks/concurrency::when_all
 - ppltasks/concurrency::when_any
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-ms.openlocfilehash: 7550e6f0ef44abd19b3fab89127ff898c72738f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cb726ccc475d6d08e036229d0d06089e3fac31c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436185"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278216"
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 
@@ -105,7 +105,7 @@ Gönderilecek veri türü.
 *_Trg*<br/>
 Bir işaretçi veya başvuru veri gönderildiği hedef.
 
-*_Veri*<br/>
+*_Data*<br/>
 Gönderilecek verileri bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1447,7 +1447,7 @@ Yük türü.
 *_Trg*<br/>
 Bir işaretçi veya başvuru veri gönderildiği hedef.
 
-*_Veri*<br/>
+*_Data*<br/>
 Gönderilecek verileri bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1532,7 +1532,7 @@ Değiştirilecek öğeleri sağlayan eş zamanlı vektör veya öğeleri eş zam
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel kapsayıcı sınıfı üzerinde bir algoritma şablon işlevi olan `concurrent_vector` üye işlevini yürütmek için `_A`. [concurrent_vector::Swap](concurrent-vector-class.md#swap)( `_B`). İşlev şablonlarının kısmi derleyici tarafından sıralanması, örnekleri şunlardır. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel bir sürümü `template <class T> void swap(T&, T&)`, algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+Özel kapsayıcı sınıfı üzerinde bir algoritma şablon işlevi olan `concurrent_vector` üye işlevini yürütmek için `_A`. [concurrent_vector::swap](concurrent-vector-class.md#swap)( `_B`). İşlev şablonlarının kısmi derleyici tarafından sıralanması, örnekleri şunlardır. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel bir sürümü `template <class T> void swap(T&, T&)`, algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
 
 Bu yöntem eşzamanlı güvenli değil. Bu yöntemi çağırdığınızda başka bir iş parçacıklarının eş zamanlı vektör birini üzerinde işlem gerçekleştirme emin olmanız gerekir.
 
@@ -1757,6 +1757,6 @@ Giriş görevleri herhangi biri başarıyla tamamlandığında başarıyla tamam
 
 Daha fazla bilgi için [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

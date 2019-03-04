@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - Active document classes [MFC]
 ms.assetid: cc20af37-b658-406d-8148-7670737f4c03
-ms.openlocfilehash: 7dc8068dc36a5f2d8014b5d9cc2cdbae54e75097
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4087d8e223e08842d5b402bdf063a908d1e22bc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568005"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268882"
 ---
 # <a name="active-document-classes"></a>Etkin Belge Sınıfları
 
@@ -26,7 +26,6 @@ Etkin belge sunucuları için özel OLE sunucu fiilleri uygular.
 [Coledocobjectıtem](../mfc/reference/coledocobjectitem-class.md)<br/>
 Etkin belge kapsamı uygular.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

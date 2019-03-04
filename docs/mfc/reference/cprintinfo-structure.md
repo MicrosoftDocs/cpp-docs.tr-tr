@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrintInfo structure [MFC]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-ms.openlocfilehash: 259dfd6808a5e975fb22d11d0a8c569237733eae
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: e08885fc9893d175e819c0acbf571d96d425a2c4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524527"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273367"
 ---
 # <a name="cprintinfo-structure"></a>Cprintınfo yapısı
 
@@ -67,7 +67,7 @@ A `CPrintInfo` nesne framework ve görünüm sınıfınıza arasında yazdırma 
 
 Yazdırılan kadar belgenin uzunluğunu bilinmiyor çalışması başka bir örnektir. Bu durumda, görünüm sınıfı, her bir sayfa yazdırıldığında belgenin sonuna için test eder. Görünüm sınıfını sonuna ulaşıldığında ayarlar `m_bContinuePrinting` üyesi `CPrintInfo` için FALSE; Bu, yazdırma döngü durdurmak için framework bildirir.
 
-`CPrintInfo` üye işlevleri tarafından kullanılan `CView` listelenen altında "Ayrıca bkz." Microsoft Foundation Class Kitaplığı tarafından sağlanan yazdırma mimarisi hakkında daha fazla bilgi için bkz: [çerçeve Windows](../../mfc/frame-windows.md) ve [belge/görünüm mimarisi](../../mfc/document-view-architecture.md) ve makaleleri [ Yazdırma](../../mfc/printing.md) ve [yazdırma: birden fazla belge](../../mfc/multipage-documents.md).
+`CPrintInfo` üye işlevleri tarafından kullanılan `CView` listelenen altında "Ayrıca bkz." Microsoft Foundation Class Kitaplığı tarafından sağlanan yazdırma mimarisi hakkında daha fazla bilgi için bkz: [çerçeve Windows](../../mfc/frame-windows.md) ve [belge/görünüm mimarisi](../../mfc/document-view-architecture.md) ve makaleleri [ Yazdırma](../../mfc/printing.md) ve [yazdırma: Birden fazla belge](../../mfc/multipage-documents.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -315,7 +315,7 @@ Belgenin ilk sayfa numarası.
 
 Sayfa numarası, normalde 1'den başlar. Bu değer depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek DIBLOOK](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
@@ -325,4 +325,3 @@ Sayfa numarası, normalde 1'den başlar. Bu değer depolanan `CPrintDialog` tara
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
 [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-

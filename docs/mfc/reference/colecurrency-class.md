@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: e3b0a369071571fb343d1b5030eebbf7c471bc81
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 64f2b00c8a5aefe8a39c24d26af2a97625225059
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519197"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273185"
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
 
@@ -574,7 +574,7 @@ Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
 > [!CAUTION]
 >  Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Çoğunlukla, null veya geçersiz durumu ayarlamak için de kullanılır. Unutmayın atama işleci ( [işleç =](#operator_eq)) ve [SetCurrency](#setcurrency) kaynak değerleri üzerinde temel nesnenin durumunu ayarlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleVariant Sınıfı](../../mfc/reference/colevariant-class.md)

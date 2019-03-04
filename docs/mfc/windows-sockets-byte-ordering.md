@@ -1,21 +1,21 @@
 ---
-title: 'Windows Yuvaları: Bayt Sıralama'
+title: 'Windows Yuvaları: Bayt sıralama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - byte order issues in sockets programming
 - sockets [MFC], byte order issues
 - Windows Sockets [MFC], byte order issues
 ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
-ms.openlocfilehash: 74d3b53ae3ab476ef1224caed91f31929fcce1ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca572ad32a9a46756cacf0221d80b2953b710723
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453958"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278099"
 ---
-# <a name="windows-sockets-byte-ordering"></a>Windows Yuvaları: Bayt Sıralama
+# <a name="windows-sockets-byte-ordering"></a>Windows Yuvaları: Bayt sıralama
 
-Bu makale ve iki Yardımcısı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makale, bayt sıralama kapsar. Diğer sorunlar makalelerde ele alınmıştır: [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).
+Bu makale ve iki Yardımcısı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makale, bayt sıralama kapsar. Diğer sorunlar makalelerde ele alınmıştır: [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: Dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).
 
 Kullanıyorsanız veya sınıfından türetilir [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md), bu sorunları kendiniz yönetmeniz gerekecek. Kullanıyorsanız veya sınıfından türetilir [CSocket](../mfc/reference/csocket-class.md), MFC yönetir bunlar sizin için.
 
@@ -57,7 +57,7 @@ Aşağıdaki durumlarda bayt siparişlerini dönüştürme işi önleyebilirsini
 Her iki ucunda da iletişim yazarken MFC Yuvaları kullanma için ideal bir durumdur: MFC her iki uçta kullanma. Büyük olasılıkla ihtiyaç duyacağınız bayt-kendiniz arşiv nesnesine verileri geçirmeden önce değiştirme yönetmek iletişim gibi bir FTP sunucusuna MFC olmayan uygulamalar ile bir uygulama yazıyorsanız Windows Sockets dönüştürme rutinleri kullanarak**ntohs**, **ntohl**, **htons**, ve **htonl**. MFC olmayan uygulama ile iletişim kurulurken kullanılan bu işlevler bir örneği, bu makalenin sonraki bölümlerinde görünür.
 
 > [!NOTE]
->  Bir iletişim sonuna bir MFC uygulaması olmadığında, ayrıca türetilen C++ nesnelerinin akış kaçınmalısınız `CObject` , arşiv içine olduğundan alıcı işlemeye mümkün olmayacaktır. ' Ündeki nota bakın [Windows Yuvaları: yuvaların arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md).
+>  Bir iletişim sonuna bir MFC uygulaması olmadığında, ayrıca türetilen C++ nesnelerinin akış kaçınmalısınız `CObject` , arşiv içine olduğundan alıcı işlemeye mümkün olmayacaktır. ' Ündeki nota bakın [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md).
 
 Bayt hakkında daha fazla bilgi için bkz: Windows SDK'da bulunan Windows yuva belirtimi.
 
@@ -98,15 +98,14 @@ Burada `pMsg` sınıfından türetilen bir C++ nesne işaretçisidir `CObject`. 
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
+- [Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md)
 
-- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
-

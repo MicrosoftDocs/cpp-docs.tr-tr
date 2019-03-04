@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-ms.openlocfilehash: ae3daff2582b9e58cc325304fac449423fb673a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 62d42995a3d1b4a61dbd3ff38c48d9b300177798
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621435"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259548"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 
@@ -877,7 +877,7 @@ int SetMinTabWidth(int cx);
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 Sekme denetimi öğe için ayarlanacak minimum genişlik. Bu parametreyi -1 olarak ayarlarsanız, denetimin varsayılan sekme genişliği kullanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -922,7 +922,7 @@ Bir çağrı yaparak bir sekme denetimiyle ilişkili araç ipucunu denetimini al
 
   Örneğin bakın [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

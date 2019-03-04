@@ -16,12 +16,12 @@ helpviewer_keywords:
 - opening files [MFC]
 - exception handling [MFC], opening files
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-ms.openlocfilehash: a29485b8258503682d59abb51dcfa72e383f0b8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dab7a680d9b33a6e334da99a045b709fe00f215c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577718"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261160"
 ---
 # <a name="opening-files"></a>Dosyaları Açma
 
@@ -48,9 +48,8 @@ Aşağıdaki örnek, (önceki herhangi bir dosya aynı yol ile değiştirerek) o
 > [!NOTE]
 >  Bu örnek, oluşturur ve bir dosya açar. Sorunları varsa `Open` çağrı döndürebilir bir `CFileException` burada gösterildiği gibi son parametre nesne. TRACE makrosu hem dosya adını ve hatanın nedenini gösteren bir kod yazdırır. Çağırabilirsiniz `AfxThrowFileException` daha ayrıntılı hata raporlama gerekiyorsa işlev.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFile Sınıfı](../mfc/reference/cfile-class.md)<br/>
 [CFile::Open](../mfc/reference/cfile-class.md#open)<br/>
 [Dosyalar](../mfc/files-in-mfc.md)
-

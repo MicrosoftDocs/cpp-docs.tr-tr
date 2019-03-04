@@ -1,5 +1,5 @@
 ---
-title: 'Windows Yuvaları: Yuvaları Arşivlerle Kullanma'
+title: 'Windows Yuvaları: Yuvaları Arşivlerle kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], archives
@@ -7,24 +7,24 @@ helpviewer_keywords:
 - archives [MFC], and Windows Sockets
 - CSocket class [MFC], programming model
 ms.assetid: 17e71a99-a09e-4e1a-9fda-13d62805c824
-ms.openlocfilehash: 64c5c058404b977254ca54d5595193654b3f4479
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71a7ed1f1b67bed157805328679a18ceabf201d3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615399"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261511"
 ---
-# <a name="windows-sockets-using-sockets-with-archives"></a>Windows Yuvaları: Yuvaları Arşivlerle Kullanma
+# <a name="windows-sockets-using-sockets-with-archives"></a>Windows Yuvaları: Yuvaları Arşivlerle kullanma
 
 Bu makalede [CSocket programlama modeli](#_core_the_csocket_programming_model). Sınıf [CSocket](../mfc/reference/csocket-class.md) sınıfı sağladığından daha yüksek düzeyde soyutlama yuva desteği sağlayan [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md). `CSocket` bir yuva nesnesi aracılığıyla bir MFC gelen ve giden veri iletmek için MFC serileştirme protokol sürümü kullanan [CArchive](../mfc/reference/carchive-class.md) nesne. `CSocket` (Windows iletilerinin arka plan işlemesi yönetirken) engelleme sunar ve aşağıdakilere erişmenizi sağlar `CArchive`, ham API veya sınıfı kullanarak kendiniz yapmak zorunda iletişim birçok yönüyle yönetir `CAsyncSocket`.
 
 > [!TIP]
 >  Sınıf kullanabileceğiniz `CSocket` kendisi daha kullanışlı bir sürümü olarak `CAsyncSocket`, ancak basit bir programlama modeli kullanmaktır `CSocket` ile bir `CArchive` nesne.
 
-Yuvaların arşivlerle uygulamasını nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Windows Yuvaları: Yuva arşivler ile nasıl](../mfc/windows-sockets-how-sockets-with-archives-work.md). Örnek kod için bkz: [Windows Yuvaları: dizisi, işlemleri](../mfc/windows-sockets-sequence-of-operations.md) ve [Windows Yuvaları: örnek, yuva kullanarak arşivleri](../mfc/windows-sockets-example-of-sockets-using-archives.md). Kendi sınıflarınızı yuva sınıflarından türetme tarafından elde işlevlerinden bazıları hakkında bilgi için bkz [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md).
+Yuvaların arşivlerle uygulamasını nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md). Örnek kod için bkz: [Windows Yuvaları: İşlemlerin sırasını](../mfc/windows-sockets-sequence-of-operations.md) ve [Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md). Kendi sınıflarınızı yuva sınıflarından türetme tarafından elde işlevlerinden bazıları hakkında bilgi için bkz [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md).
 
 > [!NOTE]
->  C++ nesnelerinin arşiv aracılığıyla kurulan (MFC olmayan) sunucularıyla iletişim kurmak için bir MFC istemci programı yazıyorsanız göndermeyin. Göndermek istediğiniz nesne türlerini anlayan bir MFC uygulaması sunucu olmadığı sürece, alma ve nesnelerinizin seri durumdan mümkün olmayacaktır. MFC olmayan uygulamaları ile iletişim konuyla ilgili malzeme için Ayrıca bkz [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
+>  C++ nesnelerinin arşiv aracılığıyla kurulan (MFC olmayan) sunucularıyla iletişim kurmak için bir MFC istemci programı yazıyorsanız göndermeyin. Göndermek istediğiniz nesne türlerini anlayan bir MFC uygulaması sunucu olmadığı sürece, alma ve nesnelerinizin seri durumdan mümkün olmayacaktır. MFC olmayan uygulamaları ile iletişim konuyla ilgili malzeme için Ayrıca bkz [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
 
 ##  <a name="_core_the_csocket_programming_model"></a> CSocket programlama modeli
 
@@ -46,7 +46,7 @@ Kullanarak bir `CSocket` nesnesi oluşturma ve birlikte birkaç MFC sınıf nesn
 
 1. Yuva bir istemciyse, çağrı [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect) yuva nesnesi için bir sunucu yuvası bağlanmak için.
 
-     veya
+     -veya-
 
    Yuva bir sunucuysa, çağrı [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) başlamak için bir istemciden bağlanma girişimleri noktasında dinler. Bir bağlantı isteği aldıktan sonra çağırarak kabul [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
 
@@ -70,16 +70,15 @@ Kullanarak bir `CSocket` nesnesi oluşturma ve birlikte birkaç MFC sınıf nesn
     > [!NOTE]
     >  Sınıf `CArchive` sağlayan `IsBufferEmpty` üye işlev sınıfı ile kullanılmak üzere özel olarak `CSocket`. Örneğin, arabellek birden çok veri iletileri içeriyorsa, bunların tümünün okuyun ve arabellek temizlenir kadar döngü gerekir. Aksi takdirde, süresiz olarak alınacak veri olduğunu, sonraki bildirim gecikebilir. Kullanım `IsBufferEmpty` tüm verileri almak güvence altına almak için.
 
-Makaleyi [Windows Yuvaları: dizisi, işlemleri](../mfc/windows-sockets-sequence-of-operations.md) her iki tarafında bir örnek kod ile bu işlemi gösterilmektedir.
+Makaleyi [Windows Yuvaları: İşlemlerin sırasını](../mfc/windows-sockets-sequence-of-operations.md) her iki tarafında bir örnek kod ile bu işlemi gösterilmektedir.
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
 [CSocket::Create](../mfc/reference/csocket-class.md#create)
-

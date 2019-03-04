@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - out_of_memory class
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4
-ms.openlocfilehash: 2d5d028739bdf1b1ac31fafe3719b7f3a98fbb07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab498935039fad584220a84c388e337ee090c57d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591904"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275681"
 ---
 # <a name="outofmemory-class"></a>out_of_memory Sınıfı
 
@@ -45,7 +45,7 @@ class out_of_memory : public runtime_exception;
 
 **Başlık:** amprt.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 ## <a name="ctor"></a> out_of_memory
 
 Sınıfının yeni bir örneğini başlatır.
@@ -68,6 +68,6 @@ Hatanın açıklaması.
 
 Yeni bir örneğini `out_of_memory` sınıfı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

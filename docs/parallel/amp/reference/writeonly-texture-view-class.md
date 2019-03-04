@@ -8,12 +8,12 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::rank Constant
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
-ms.openlocfilehash: 022450469a69e9fe127f23a50b799092e7e057b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5244ae5df99b06c77f4eb27317e5829b21fabf24
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274394"
 ---
 # <a name="writeonlytextureview-class"></a>writeonly_texture_view Sınıfı
 
@@ -87,7 +87,7 @@ Dokunun boyut sayısı.
 
 **Başlık:** amp_graphics.h
 
-**Namespace:** Concurrency::graphics
+**Namespace:** CONCURRENCY::Graphics
 
 ##  <a name="dtor"></a> ~ writeonly_texture_view
 
@@ -166,6 +166,6 @@ Dokudaki öğelerin türü.
 *_Src*<br/>
 Oluşturmak için kullanılan doku `writeonly_texture_view`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

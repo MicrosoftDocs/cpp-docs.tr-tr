@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], drag and drop support
 - HDN_ notifications [MFC]
 ms.assetid: 93a152ec-804f-488f-b260-b3a438d0dc0f
-ms.openlocfilehash: 21ff14982baac93fac1cf3ee441353c079f4f760
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f30ad029742a01280abda85cbd1a81104d01d8cd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602975"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263728"
 ---
 # <a name="providing-drag-and-drop-support-for-header-items"></a>Üstbilgi Öğeleri için Sürükle ve Bırak Desteği Sağlama
 
@@ -23,7 +23,6 @@ Olarak ortak sürükle ve bırak işleviyle, sürükle ve bırak davranışı HD
 > [!NOTE]
 >  Liste denetimi bir katıştırılmış üstbilgi denetimindeki için sürükle ve bırak desteği sağlama, genişletilmiş stili bölümüne bakın. [liste denetim stillerini değiştirme](../mfc/changing-list-control-styles.md) konu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)
-

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-ms.openlocfilehash: 772388d069bdec274bd396b776d404711b694771
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4210399e32c2bb39008afa75b787c19e3338a7d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560387"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276366"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 
@@ -68,7 +68,7 @@ Framework türetilen bir nesne oluşturur `CPropExchange` bir OLE denetim özell
 
 `CPropExchange` bir denetimin özelliklerini serileştirmek veya bir denetim oluşturma ve yükleme sırasında bir denetimin özelliklerini başlatmak için kullanılabilir. `ExchangeProp` Ve `ExchangeFontProp` üye işlevleri `CPropExchange` özelliklerini depolamak ve bunları farklı medyadan yükle.
 
-Kullanma hakkında daha fazla bilgi için `CPropExchange`, makaleye göz atın [MFC ActiveX denetimleri: özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
+Kullanma hakkında daha fazla bilgi için `CPropExchange`, makaleye göz atın [MFC ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -290,8 +290,7 @@ BOOL IsLoading();
 
 Özellikler yükleniyor olursa sıfır dışı; Aksi durumda 0.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)
-

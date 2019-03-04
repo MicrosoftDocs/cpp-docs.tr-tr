@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CResourceException [MFC], CResourceException
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
-ms.openlocfilehash: aa7fd6e2caa15a256cec2eae5ede6c6e47cd1518
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b29112b4901a1fecac37aa7ae61496e874959370
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268115"
 ---
 # <a name="cresourceexception-class"></a>CResourceException sınıfı
 
@@ -65,8 +65,7 @@ CResourceException();
 
 Bu oluşturucu doğrudan kullanmaz, bunun yerine genel işlev çağrısı [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception). özel durumları hakkında daha fazla bilgi için bkz [MFC'de özel durum işleme](../exception-handling-in-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CException Sınıfı](cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../hierarchy-chart.md)
-

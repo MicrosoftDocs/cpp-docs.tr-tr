@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CComObjectRoot class, implementing
 - CComObjectRootEx class
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
-ms.openlocfilehash: c56777034445e89dd86db935fc725755ad43a617
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e533f8809238bc94bc95a689197d56f3c616f736
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273835"
 ---
 # <a name="implementing-ccomobjectrootex"></a>CComObjectRootEx uygulama
 
@@ -24,8 +24,7 @@ COM eşleme tablosu ile arabirimleri girebilirsiniz [COM_INTERFACE_ENTRY](refere
 
 [!code-cpp[NVC_ATL_COM#1](../atl/codesnippet/cpp/implementing-ccomobjectrootex_1.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [COM Eşleme Makroları](../atl/reference/com-map-macros.md)
-

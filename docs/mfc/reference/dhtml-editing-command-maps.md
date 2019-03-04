@@ -2,12 +2,12 @@
 title: DHTML Düzenleme Komutu Eşlemeleri
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: 6c03e8e4a7d84776c3657994c57a72a906046f37
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f84a56876f1108e9b02d44f6ef0dec50f065c57
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558463"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278268"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML Düzenleme Komutu Eşlemeleri
 
@@ -203,6 +203,6 @@ Bkz: [HTMLEdit örnek](../../visual-cpp-samples.md).
 
   **Üst bilgi** afxhtml.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

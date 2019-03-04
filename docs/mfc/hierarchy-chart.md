@@ -8,12 +8,12 @@ helpviewer_keywords:
 - classes [MFC], MFC hierarchy
 - MFC, object model
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
-ms.openlocfilehash: 0af7f6b9e2bb3027287ec33540c51e0784d3c56b
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 4b991c9dab2d3549ac64b5ba0b8689c6fe63f113
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175476"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275311"
 ---
 # <a name="hierarchy-chart"></a>Hiyerarşi Grafiği
 
@@ -29,9 +29,9 @@ Aşağıdaki çizim türetilmemiş MFC sınıflarını temsil eder `CObject`:
 
 ![CObject'ten türetilmemiş sınıfları](../mfc/media/mfc_hierarchy_chart3of3.png "CObject'ten türetilmemiş sınıfları")
 
-Grafiğin tamamını şu konumdan indirebilirsiniz: [MFC hiyerarşi grafikleri indirme](https://aka.ms/hxgg8e).
+Grafiğin tamamını şu konumdan indirebilirsiniz: [MFC hiyerarşi grafikleri yükleme](https://aka.ms/hxgg8e).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği Kategorileri](../mfc/hierarchy-chart-categories.md)<br/>
 [Sınıfına genel bakış](../mfc/class-library-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: CComDynamicUnkArray sınıfı
+title: CComDynamicUnkArray Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComDynamicUnkArray
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - connection points [C++], managing
 - CComDynamicUnkArray class
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
-ms.openlocfilehash: c18f28cac89288096b812635e77194bfb5dd224b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39f137f199db1d7519801c19375baea6cd08db93
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448691"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274169"
 ---
-# <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray sınıfı
+# <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray Class
 
 Bu sınıf, bir dizi depolar `IUnknown` işaretçileri.
 
@@ -238,7 +238,7 @@ Tanımlama bilgisi başvuru `IUnknown` işaretçi diziden kaldırılacak.
 
 İşaretçi kaldırılırsa, TRUE döndürür; Aksi durumda FALSE.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComUnkArray Sınıfı](../../atl/reference/ccomunkarray-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

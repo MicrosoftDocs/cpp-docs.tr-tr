@@ -17,12 +17,12 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComPolyObject class
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
-ms.openlocfilehash: 9f84c022ac1dee34b6dca2931abb349eefb7d690
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a8dbbc06d35d2606cc76e89cc555ba7f8577daa9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495894"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277943"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 
@@ -244,7 +244,7 @@ STDMETHOD_(ULONG, Release)();
 
 Hata ayıklama yapılarında `Release` tanılama için kullanışlı veya test olabilecek bir değer döndürür. Nondebug yapılarında `Release` her zaman 0 değerini döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)<br/>

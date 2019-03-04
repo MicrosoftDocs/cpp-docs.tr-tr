@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: 71ae39cb62da7938880973dc48b65ed69b9c8b92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a5adc5ae6b1981d7f8260d684a33d8bd7918e40
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569743"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272847"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 
@@ -244,7 +244,7 @@ BOOL GetBorders(
 *nHorz*<br/>
 Yatay kenarlığın genişliğini alır bir tamsayı başvuru.
 
-*Bırakırken*<br/>
+*nVert*<br/>
 Başvuru dikey kenarlığın genişliğini alır bir tamsayı.
 
 *nSpacing*<br/>
@@ -654,7 +654,7 @@ Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETTIPTEXT](/windows/desk
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

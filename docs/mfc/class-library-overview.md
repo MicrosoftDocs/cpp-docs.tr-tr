@@ -10,12 +10,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: 9e2bf534abcacbbb4997971376d3831705ab2310
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aec295ea93868ff1fe6e0d3d1d2370a344e47c73
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468639"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278775"
 ---
 # <a name="class-library-overview"></a>Sınıf Kitaplığına Genel Bakış
 
@@ -23,7 +23,7 @@ Bu genel bakışta, kategorilere ayırır ve sınıflar, Microsoft Foundation Cl
 
 Burada Kitaplık sınıfları aşağıdaki kategorilerde sunulan:
 
-- [Kök Sınıf: CObject](../mfc/root-class-cobject.md)
+- [Kök sınıf: CObject](../mfc/root-class-cobject.md)
 
 - [MFC Uygulama Mimarisi Sınıfları](../mfc/mfc-application-architecture-classes.md)
 
@@ -117,7 +117,6 @@ Bir sınıfın kalıtımını görmek için [sınıf hiyerarşisi grafiği](../m
 
 Bu genel bakışta listelenen sınıflara ek olarak MFC Kitaplığı genel işlevleri, genel değişken ve makro içerir. Bir genel bakış ve bu konudaki ayrıntılı listesi [MFC makroları ve genel öğeleri](../mfc/reference/mfc-macros-and-globals.md), izler ve MFC sınıflarına alfabetik başvuru.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)
-

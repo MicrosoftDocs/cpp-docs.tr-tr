@@ -16,12 +16,12 @@ helpviewer_keywords:
 - MFC object relationships
 - thread objects [MFC]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
-ms.openlocfilehash: e59e8b69dcdf0bf3b22d4286ba4692558a11e096
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 799035976ea55988a635f7dc9b667e87c48d8f7e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175762"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273510"
 ---
 # <a name="documents-views-and-the-framework"></a>Belgeler, Görünümler ve Çerçeve
 
@@ -64,6 +64,6 @@ MFC çerçevesi yaklaşımının temelindeki, belge ve görünüm kavramlardır.
 
 Bu makaleler ailesi geri kalanı, programlamada kullanımını framework araçları, MFC Uygulama Sihirbazı ve kaynak düzenleyicileri, bu nesneler oluşturma ve nasıl çalıştıkları açıklanır. Belgeler, görünümler ve çerçeve pencereleri daha ayrıntılı olarak açıklanmıştır [pencere nesneleri](../mfc/window-objects.md) ve [belge/görünüm mimarisi](../mfc/document-view-architecture.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

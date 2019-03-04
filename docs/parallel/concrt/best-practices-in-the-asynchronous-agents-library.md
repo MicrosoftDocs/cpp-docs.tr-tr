@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Asynchronous Agents Library, practices to avoid
 - practices to avoid, Asynchronous Agents Library
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
-ms.openlocfilehash: 70c979be0d37817cf199af0b6a3cbf114fced265
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c61393957a63895a9ecbdaaae8d83a5fbd710de3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494594"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266425"
 ---
 # <a name="best-practices-in-the-asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler
 
@@ -42,7 +42,7 @@ Genellikle veri üyelerinde basılı tutarak bir aracı durumda yalıtmak `priva
 
 [!code-cpp[concrt-simple-agent#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_1.cpp)]
 
-Tanımlamak ve aracıları kullanma hakkında tam örnekler için bkz. [izlenecek yol: aracı temelli uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md) ve [izlenecek yol: bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md).
+Tanımlamak ve aracıları kullanma hakkında tam örnekler için bkz. [izlenecek yol: Aracı tabanlı uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md) ve [izlenecek yol: Bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md).
 
 [[Üst](#top)]
 
@@ -58,7 +58,7 @@ Aşağıdaki temel örnek, semafor veri ardışık düzeninde iletilerin sayıs�
 
 Bu örnekte üretici, tüketici nispeten daha az sayıda iletileri gönderir. Bu nedenle, bu örnekte, olası bir düşük bellek veya bellek yetersiz koşulu gösterilmemiştir. Ancak, bu mekanizma veri işlem hattı görece yüksek sayıda ileti içerdiğinde yararlıdır.
 
-Bu örnekte kullanılan semafor sınıfı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bağlam sınıfını Guyana semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).
+Bu örnekte kullanılan semafor sınıfı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bağlam sınıfını işbirlikçi semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).
 
 [[Üst](#top)]
 
@@ -66,7 +66,7 @@ Bu örnekte kullanılan semafor sınıfı oluşturma hakkında daha fazla bilgi 
 
 Agents kitaplığı, bir veri işlem hattı tarafından gerçekleştirilen işi oldukça parçalı en yararlı olur. Örneğin, bir uygulama bileşeni bir dosya ya da bir ağ bağlantısı verileri okumak ve bazen bu verileri başka bir bileşene gönderin. Aracılar Kitaplığı iletilerini dağıtmak için kullandığı protokolü tarafından sağlanan görev paralel yapılar değerinden daha fazla ek yük ileti geçirme mekanizması neden [paralel desenler Kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL). Bu nedenle, bir veri işlem hattı tarafından gerçekleştirilen iş bu yükü dengelemek yeterince uzun olduğundan emin olun.
 
-Görevleri parçalı olduğunda bir veri işlem hattı en etkili olsa da, veri işlem hattının her aşama daha hassas iş gerçekleştirmek için görev grupları ve paralel algoritmalar gibi PPL yapıları kullanabilirsiniz. Her işleme aşamasında hassas paralellik kullanan bir parçalı verileri ağ bir örnek için bkz [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Görevleri parçalı olduğunda bir veri işlem hattı en etkili olsa da, veri işlem hattının her aşama daha hassas iş gerçekleştirmek için görev grupları ve paralel algoritmalar gibi PPL yapıları kullanabilirsiniz. Her işleme aşamasında hassas paralellik kullanan bir parçalı verileri ağ bir örnek için bkz [izlenecek yol: Görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 [[Üst](#top)]
 
@@ -114,13 +114,12 @@ receiver2: received resource 64
 Destroying resource 64...
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı En İyi Yöntemleri](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[İzlenecek Yol: Aracı Temelli Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
-[İzlenecek Yol: Veri Akışı Aracısı Oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>
+[İzlenecek yol: Aracı Tabanlı Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
+[İzlenecek yol: Veri Akış Aracısı Oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>
 [İzlenecek yol: Görüntü İşleme Ağı Oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [Paralel Desen Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 [Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-ms.openlocfilehash: b9b45142d0fb1d53ccecad31ace7ad1a6dd4ee40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a42128d097c9d63d82243090e2e215a250ff432b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524715"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276344"
 ---
 # <a name="cmditabinfo-class"></a>Cmdıtabınfo sınıfı
 
@@ -247,7 +247,7 @@ void Serialize(CArchive& ar);
 *ar*<br/>
 [in] A [CArchive sınıfı](../../mfc/reference/carchive-class.md) nesneyi serileştirmek için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)<br/>
 [MDI Sekmeli Grupları](../../mfc/mdi-tabbed-groups.md)<br/>

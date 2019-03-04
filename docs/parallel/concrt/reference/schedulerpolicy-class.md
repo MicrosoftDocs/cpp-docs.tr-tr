@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-ms.openlocfilehash: 0d1c28501abc86d09b683b0ed91f831fe8697306
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2eff40b11e4e9a5981ad85c37c8345abefb13fed
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462057"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265541"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy Sınıfı
 
@@ -75,7 +75,7 @@ unsigned int GetPolicyValue(PolicyElementKey key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 İçin bir değer almak için ilke anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -182,7 +182,7 @@ unsigned int SetPolicyValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 İçin bir değer ayarlamak için ilke anahtarı.
 
 *value*<br/>
@@ -200,11 +200,10 @@ Yöntemi [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.m
 
 Bu yöntem ayarlamak için izin verilmiyor Not `MinConcurrency` veya `MaxConcurrency` ilkeleri. Bu değerleri ayarlamak için kullanın [SetConcurrencyLimits](#setconcurrencylimits) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [CurrentScheduler Sınıfı](currentscheduler-class.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
 [Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-
