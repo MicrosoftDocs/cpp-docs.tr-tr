@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
-ms.openlocfilehash: 335489011076b1e30a9c36720a3bf2e94c7918b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9178fe989e476111a3da55861642e9aa6311872
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542200"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260588"
 ---
 # <a name="using-a-hot-key-control"></a>Bir Sık Kullanılan Tuş Denetimi Kullanma
 
@@ -28,8 +28,7 @@ Tipik bir kısayol tuşu denetimini kullanımını aşağıdaki deseni izler:
 
 - Sık kullanılan tuş denetimi bir iletişim kutusunda, varsa onu ve `CHotKeyCtrl` nesne otomatik olarak silinecektir. Her iki denetim sağlamak ihtiyacınız değil, varsa ve `CHotKeyCtrl` nesne düzgün bir şekilde yok.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHotKeyCtrl Kullanma](../mfc/using-chotkeyctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

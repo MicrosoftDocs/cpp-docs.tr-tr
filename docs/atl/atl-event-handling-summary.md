@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling, implementing
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-ms.openlocfilehash: e2b17e7b6849163ee0e8e12696df25169e2773cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e3a47719e3160170ed1bfa64b315415ddc7a1c8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654876"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265359"
 ---
 # <a name="atl-event-handling-summary"></a>ATL olay işleme özeti
 
@@ -29,7 +29,7 @@ ATL kullanarak arabirimi uygulama dört ana yolu vardır.
 |-----------------|---------------------------------|---------------------------------------------|-----------------------------------------|
 |Arabirimi|Vtable|Evet|Hayır|
 |[Idispatchımpl](../atl/reference/idispatchimpl-class.md)|Çift|Evet|Evet|
-|[Idispeventımpl](../atl/reference/idispeventimpl-class.md)|Dispinterface|Hayır|Evet|
+|[IDispEventImpl](../atl/reference/idispeventimpl-class.md)|Dispinterface|Hayır|Evet|
 |[IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|Dispinterface|Hayır|Hayır|
 
 \* ATL desteği sınıfları kullanırken, hiçbir zaman uygulamak için gerekli `IUnknown` veya `IDispatch` yöntemleri el ile.
@@ -45,8 +45,7 @@ Bildiren ve ATL kullanarak bir olay kaynağı unadvising başlıca üç yolu var
 |[CComCompositeControl::AdviseSinkMap(TRUE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|[CComCompositeControl::AdviseSinkMap(FALSE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|Bileşik denetimler ActiveX denetimlerinde|Hayır|`CComCompositeControl::AdviseSinkMap` tüm girişleri olay eşlemesi havuz önerir. Aynı işlevin girişleri unadvises. Bu yöntem tarafından otomatik olarak çağrılır `CComCompositeControl` sınıfı.|
 |[CAxDialogImpl::AdviseSinkMap(TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|Bir iletişim kutusuna ActiveX denetimleri|Hayır|`CAxDialogImpl::AdviseSinkMap` öneren ve iletişim kutusu kaynağı tüm ActiveX denetimlerinde unadvises. Bu otomatik olarak sizin yerinize gerçekleştirilir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Olay İşleme](../atl/event-handling-and-atl.md)<br/>
 [IDispEventImpl Destekleme](../atl/supporting-idispeventimpl.md)
-

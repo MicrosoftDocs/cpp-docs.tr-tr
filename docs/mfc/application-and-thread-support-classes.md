@@ -11,12 +11,12 @@ helpviewer_keywords:
 - synchronization classes [MFC], multithreading
 - application support classes [MFC]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
-ms.openlocfilehash: 5f69ea6a87d0e1ae16a6079a414d623af6dd88fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 667725a60fb0c907a9c2d017674f9d097d1f4946
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496271"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262046"
 ---
 # <a name="application-and-thread-support-classes"></a>Uygulama ve İş Parçacığı Destek Sınıfları
 
@@ -59,7 +59,7 @@ Bir uygulama bir olay gerçekleştiğinde bildiren bir eşitleme sınıfını.
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
-[Ccommandlineınfo](../mfc/reference/ccommandlineinfo-class.md)<br/>
+[CCommandLineInfo](../mfc/reference/ccommandlineinfo-class.md)<br/>
 Komut satırı ile programınızın başlatıldığından ayrıştırır.
 
 [CWaitCursor](../mfc/reference/cwaitcursor-class.md)<br/>
@@ -71,7 +71,6 @@ Kalıcı depolama, yerleştirme denetim çubukları için eyalet verilerini işl
 [CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
 En son kullanılan (MRU) dosya listesi tutar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

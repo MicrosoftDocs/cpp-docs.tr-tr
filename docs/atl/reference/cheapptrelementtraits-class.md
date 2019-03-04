@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtrElementTraits class
 ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
-ms.openlocfilehash: 4e5d66c3e596383fecfcf730c81c4d41c08d5e2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e535afb3a49a5720c8394cc1ab9186c360527fea
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610154"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257304"
 ---
 # <a name="cheapptrelementtraits-class"></a>CHeapPtrElementTraits sınıfı
 
@@ -86,7 +86,7 @@ Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
 typedef T *& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [CComHeapPtr Sınıfı](../../atl/reference/ccomheapptr-class.md)<br/>

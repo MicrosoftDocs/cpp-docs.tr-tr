@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ATLUTIL/ATL::ATL_URL_SCHEME
 ms.assetid: f4131046-8ba0-4ec1-8209-84203f05d20e
-ms.openlocfilehash: bcc503082aa3acfaeb627467903e20775c7554d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a63e58349d4339389870de46d5b961fd96db535f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435158"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264189"
 ---
 # <a name="atlurlscheme"></a>ATL_URL_SCHEME
 
@@ -35,7 +35,7 @@ enum ATL_URL_SCHEME{
 
 **Başlık:** atlutil.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../active-template-library-atl-concepts.md)<br/>
 [CUrl::SetScheme](curl-class.md#setscheme)<br/>

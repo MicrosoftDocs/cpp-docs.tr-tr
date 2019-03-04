@@ -1,5 +1,5 @@
 ---
-title: CComPtrBase sınıfı
+title: CComPtrBase Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComPtrBase
@@ -17,14 +17,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-ms.openlocfilehash: 8d7c96ff047a6340511ee1d67f025db0ad7c5368
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bb599b88671447e219421efacac7a2d8a5f7b06
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452695"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261706"
 ---
-# <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
+# <a name="ccomptrbase-class"></a>CComPtrBase Class
 
 Bu sınıf, COM tabanlı bellek yordamları kullanarak akıllı işaretçi sınıflar için temel sağlar.
 
@@ -69,7 +69,8 @@ Akıllı işaretçi tarafından başvurulabilmesi için nesne türü.
 |[CComPtrBase::operator T *](#operator_t_star)|Atama işleci.|
 |[CComPtrBase::operator!](#operator_not)|NOT işleci.|
 |[CComPtrBase::operator &](#operator_amp)|& İşleci.|
-|[CComPtrBase::operator *](#operator_star)|\* işleci.|
+|[CComPtrBase::operator *](#operator_star)|
+  \* işleci.|
 |[CComPtrBase::operator <](#ccomptrbase__operator lt)|Daha az-işleci.|
 |[CComPtrBase::operator ==](#operator_eq_eq)|Eşitlik işleci.|
 |[CComPtrBase::operator ->](#operator_ptr)|İşaretçi-üye işleci.|
@@ -269,7 +270,8 @@ Tarafından işaret edilen nesnenin adresini döndürür `CComPtrBase` nesne.
 
 ##  <a name="operator_star"></a>  CComPtrBase::operator \*
 
-\* işleci.
+
+  \* işleci.
 
 ```
 T& operator*() const throw();
@@ -415,6 +417,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 Bu yöntemin çağırdığı [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

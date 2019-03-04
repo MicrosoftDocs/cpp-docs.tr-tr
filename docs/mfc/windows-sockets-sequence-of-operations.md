@@ -1,5 +1,5 @@
 ---
-title: 'Windows Yuvaları: İşlem Dizisi'
+title: 'Windows Yuvaları: İşlem dizisi'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], operations
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - sockets [MFC], operations
 - stream sockets [MFC]
 ms.assetid: 43ce76f5-aad3-4247-b8a6-16cc7d012796
-ms.openlocfilehash: 98d06e005a09825d53f22330d6b0b58ccb2069fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f9fd339fdbdfee9381ea693568f40473c2397e9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578650"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265554"
 ---
-# <a name="windows-sockets-sequence-of-operations"></a>Windows Yuvaları: İşlem Dizisi
+# <a name="windows-sockets-sequence-of-operations"></a>Windows Yuvaları: İşlem dizisi
 
 Bu makalede, yan yana sunucu yuvası ve istemci yuvası için işlemlerin sırasını gösterir. Yuva kullandığından `CArchive` nesneler oldukları mutlaka [akış yuvaları](../mfc/windows-sockets-stream-sockets.md).
 
@@ -33,10 +33,10 @@ Oluşturma noktaya kadar bir `CSocketFile` nesnesi (birkaç parametre farklılı
 ||`// seek a connection`<br /><br /> `sockClient.Connect(strAddr, nPort);`3,4|
 |`// construct a new, empty socket`<br /><br /> `CSocket sockRecv;`<br /><br /> `// accept connection`<br /><br /> `sockSrvr.Accept( sockRecv );` 5||
 |`// construct file object`<br /><br /> `CSocketFile file(&sockRecv);`|`// construct file object`<br /><br /> `CSocketFile file(&sockClient);`|
-|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> veya<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> - veya her ikisi de-|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> veya<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> - veya her ikisi de-|
-|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> veya<br /><br /> `arOut << dwValue;`6|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> veya<br /><br /> `arOut << dwValue;`6|
+|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> -veya-<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> - veya her ikisi de-|`// construct an archive`<br /><br /> `CArchive arIn(&file, CArchive::load);`<br /><br /> -veya-<br /><br /> `CArchive arOut(&file, CArchive::store);`<br /><br /> - veya her ikisi de-|
+|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> -veya-<br /><br /> `arOut << dwValue;`6|`// use the archive to pass data:`<br /><br /> `arIn >> dwValue;`<br /><br /> -veya-<br /><br /> `arOut << dwValue;`6|
 
-1. Burada *nbağlantı noktası* bir bağlantı noktası numarasıdır. Bkz: [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md) bağlantı noktaları hakkında ayrıntılı bilgi için.
+1. Burada *nbağlantı noktası* bir bağlantı noktası numarasıdır. Bkz: [Windows Yuvaları: Bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md) bağlantı noktaları hakkında ayrıntılı bilgi için.
 
 2. İstemciler bağlanabilmesi için sunucu her zaman bir bağlantı noktası belirtmeniz gerekir. `Create` Çağrı, bazen de bir adresi belirtir. İstemci tarafında, tüm kullanılabilir bağlantı noktası kullanmayı MFC isteyin varsayılan parametreleri kullanın.
 
@@ -56,20 +56,19 @@ Yukarıdaki tabloda gösterilen çağrıları için bir akış yuva dizisidir. B
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Bağlantı Noktaları ve Yuva Adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)
+- [Windows Yuvaları: Bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md)
 
-- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
 [CSocket Sınıfı](../mfc/reference/csocket-class.md)<br/>
 [CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#create)<br/>
 [CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#close)
-

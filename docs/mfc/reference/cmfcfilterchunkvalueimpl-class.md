@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], SetTextValue
 - CMFCFilterChunkValueImpl [MFC], SetChunk
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-ms.openlocfilehash: a59cf087a52bd7b6a2eaa00d3091047e93e14d4d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b883d442342dd9fbbd074d9f8fcab76f81ef9864
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666849"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264449"
 ---
 # <a name="cmfcfilterchunkvalueimpl-class"></a>Cmfcfilterchunkvalueımpl sınıfı
 
@@ -119,7 +119,7 @@ hr = öbek. SetFileTimeValue (PKEY_ItemDate, ftLastModified);
 
 `ATL::IFilterChunkValue`
 
-[Cmfcfilterchunkvalueımpl](../../mfc/reference/cmfcfilterchunkvalueimpl-class.md)
+[CMFCFilterChunkValueImpl](../../mfc/reference/cmfcfilterchunkvalueimpl-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -693,6 +693,6 @@ Başarılıysa S_OK; Aksi takdirde bir hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

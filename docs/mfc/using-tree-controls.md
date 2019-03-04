@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CTreeCtrl class [MFC], using
 - tree controls [MFC], about tree controls
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
-ms.openlocfilehash: 2a42392253f158365af6bf9f7a5e4a1f4df93e95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cff48018d728ef9578be38c0d94300011265fa1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653410"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258326"
 ---
 # <a name="using-tree-controls"></a>Ağaç Denetimlerini Kullanma
 
@@ -30,8 +30,7 @@ Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-cla
 
 - Denetim ile işiniz bittiğinde, düzgün bir şekilde imha emin olun. Ağaç denetimi içinde bir iletişim kutusu ise ya da bir görünüm ise bunu ve `CTreeCtrl` nesne otomatik olarak silinecektir. Her iki denetim sağlamak ihtiyacınız değil, varsa ve `CTreeCtrl` nesne düzgün bir şekilde yok.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

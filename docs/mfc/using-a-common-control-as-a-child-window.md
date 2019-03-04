@@ -8,12 +8,12 @@ helpviewer_keywords:
 - common controls [MFC], child windows
 - Windows common controls [MFC], child windows
 ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
-ms.openlocfilehash: 690b48cf50e95265aaf5bdd454e2881b8f5fab3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 827690f273852dee8f9461aa9af51f1cf7f4ce6e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655136"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260679"
 ---
 # <a name="using-a-common-control-as-a-child-window"></a>Bir Ortak Denetimi Alt Pencere Olarak Kullanma
 
@@ -29,8 +29,7 @@ Windows ortak denetimleri başka bir pencere bir alt pencere olarak kullanılabi
 
 1. Denetim ile işiniz bittiğinde, kullanın [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) kontrol edilecek.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

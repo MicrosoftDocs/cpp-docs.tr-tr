@@ -1,5 +1,5 @@
 ---
-title: Iaxwinhostwindowlic arabirimi
+title: IAxWinHostWindowLic Interface
 ms.date: 11/04/2016
 f1_keywords:
 - IAxWinHostWindowLic
@@ -9,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
-ms.openlocfilehash: 791f0e4387a54448ffcf6573cf716c5ba122bcaa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aca3970d13db53ffa04fe9582bbe9b8db78e820d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511312"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257962"
 ---
-# <a name="iaxwinhostwindowlic-interface"></a>Iaxwinhostwindowlic arabirimi
+# <a name="iaxwinhostwindowlic-interface"></a>IAxWinHostWindowLic Interface
 
 Bu arabirim, lisanslı bir denetim ve onun ana nesneyi işlemek için yöntemler sağlar.
 
@@ -104,4 +104,3 @@ Bkz: [IAxWinHostWindow::CreateControlEx](../../atl/reference/iaxwinhostwindow-in
 ### <a name="example"></a>Örnek
 
 Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `IAxWinHostWindowLic::CreateControlLicEx`.
-

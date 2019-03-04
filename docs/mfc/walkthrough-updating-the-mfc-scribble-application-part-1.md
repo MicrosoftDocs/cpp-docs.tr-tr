@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor'
+title: 'İzlenecek yol: (Kısım 1) MFC karalama uygulamasını güncelleştirme'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - examples [MFC], update existing application
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 85ff0c17f8ec523fc5cb52101fb44cfc37dd9b50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 213bc8087b58eac232cc8fcfccc88e13785a807e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481854"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258768"
 ---
-# <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor
+# <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: (Kısım 1) MFC karalama uygulamasını güncelleştirme
 
 Bu yönerge Şerit kullanıcı arabirimini kullanarak varolan bir MFC uygulamasına değişiklik yapma gösterir. Visual Studio, hem Office 2007 Şerit hem de Windows 7, manzara Şerit destekler. Şerit kullanıcı arabirimini hakkında daha fazla bilgi için bkz: [şeritler](/windows/desktop/uxguide/cmd-ribbons).
 
@@ -24,7 +24,7 @@ Bu kılavuz satırı çizimler için fare kullanmanıza olanak sağlayan Klasik 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-[1.0 MFC karalama örnek](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). Visual Studio 2017'ye dönüştürme hakkında daha fazla yardım için bkz: [Taşıma Kılavuzu: MFC karalama](../porting/porting-guide-mfc-scribble.md).
+[1.0 MFC karalama örnek](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). Visual Studio 2017'ye dönüştürme hakkında daha fazla yardım için bkz: [Taşıma Kılavuzu: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ##  <a name="top"></a> Bölümleri
 
@@ -81,9 +81,9 @@ Bir Şerit destekleyen bir uygulama için bir menü destekleyen bir uygulamaya d
 
     Mainfrm.h dosyasında:
 
-    1. Değiştirin `CToolBar` ile `CMFCToolBar`.
+    1. `CToolBar` yerine `CMFCToolBar` yazın.
 
-    1. Değiştirin `CStatusBar` ile `CMFCStatusBar`.
+    1. `CStatusBar` yerine `CMFCStatusBar` yazın.
 
 1. Mainfrm.cpp dosyasında:
 
@@ -113,7 +113,7 @@ Bu kılavuzun sonraki dört adımları, bit eşlem kaynakları gerektirir. Çeş
 
 - Projeniz başka bir uygulamadan bir uygun kaynak dosyasını buraya kopyalayın ve ardından bit eşlemler bu dosyadan içeri aktarın.
 
-Bu izlenecek yolda oluşturulan örnek kaynak dosyalarını kopyalar [izlenecek yol: bir Şerit uygulama tarafından kullanarak MFC oluşturma](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md).
+Bu izlenecek yolda oluşturulan örnek kaynak dosyalarını kopyalar [izlenecek yol: MFC kullanarak Şerit uygulaması oluşturma](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md).
 
 ### <a name="to-add-bitmaps-to-the-project"></a>Bit eşlemler projeye eklemek için
 
@@ -169,7 +169,7 @@ Bir Şerit oluşan **uygulama** düğmesi, Şeridin sol tarafındaki büyük dü
 
 1. Özelleştirebileceğiniz **uygulama** özelliklerini değiştirerek düğmesi. Bu kodda kullanılan iletisi kimlikleri, menüde karalama 1.0 için önceden tanımlanmıştır.
 
-1. Tasarım görünümünde tıklayın **uygulama** özelliklerini görüntülemek için düğme. Özellik değerleri aşağıdaki gibi değiştirin: **görüntü** için `IDB_RIBBON_MAIN`, **istemi** için `File`, **anahtarları** için `f`, **büyük resimler** için `IDB_RIBBON_FILELARGE`, ve **küçük resimler** için `IDB_RIBBON_FILESMALL`.
+1. Tasarım görünümünde tıklayın **uygulama** özelliklerini görüntülemek için düğme. Özellik değerleri aşağıdaki gibi değiştirin: **Görüntü** için `IDB_RIBBON_MAIN`, **istemi** için `File`, **anahtarları** için `f`, **büyük resimler** için `IDB_RIBBON_FILELARGE`ve **Küçük resimler** için `IDB_RIBBON_FILESMALL`.
 
 1. Kullanıcı tıkladığında açılan menüden aşağıdaki değişiklikleri oluşturma **uygulama** düğmesi. Üç nokta simgesine tıklayın (**...** ) yanındaki **ana öğeler** açmak için **öğe düzenleyici**.
 
@@ -238,7 +238,7 @@ Oluşturduğunuz göre **uygulama** düğmesi, Şerit öğeleri ekleyebilirsiniz
 
 ### <a name="to-add-a-home-category-and-edit-panel"></a>Giriş Kategori ekleme ve panel düzenlemek için
 
-1. Karalama programın yalnızca bir kategori gerektirir. Tasarım görünümünde, **araç kutusu**, çift **kategori** ekleyin ve özelliklerini görüntülemek için. Özellik değerleri aşağıdaki gibi değiştirin: **açıklamalı alt yazı** için `&Home`, **büyük resimler** için `IDB_RIBBON_HOMELARGE`, **küçük resimler** için `IDB_RIBBON_HOMESMALL`.
+1. Karalama programın yalnızca bir kategori gerektirir. Tasarım görünümünde, **araç kutusu**, çift **kategori** ekleyin ve özelliklerini görüntülemek için. Özellik değerleri aşağıdaki gibi değiştirin: **Açıklamalı alt yazı** için `&Home`, **büyük resimler** için `IDB_RIBBON_HOMELARGE`, **küçük resimler** için `IDB_RIBBON_HOMESMALL`.
 
 1. Her Şerit kategorisi adlandırılmış bölmelere düzenlenmiştir. Her paneli, tam ilgili operations denetimleri kümesini içerir. Bu kategori, tek bir panel sahiptir. Tıklayın **paneli**ve ardından değiştirmek **açıklamalı alt yazı** için `Edit`.
 
@@ -266,7 +266,7 @@ A *görsel yöneticiyi* denetleyen bir uygulama için tüm çizim genel bir nesn
 
 Kullanılacak Klasik 1.0 MFC karalama örneğinin değiştirdiğiniz **Şerit Tasarımcısı**. Artık Git [2. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)<br/>
-[İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)
+[İzlenecek yol: (2. bölüm) MFC karalama uygulamasını güncelleştirme](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

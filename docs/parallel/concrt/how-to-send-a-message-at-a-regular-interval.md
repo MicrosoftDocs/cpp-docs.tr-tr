@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Düzenli Aralıkla İleti Gönderme'
+title: 'Nasıl yapılır: Düzenli aralıkla ileti gönderme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - timer class, example
 - sending messages at regular intervals [Concurrency Runtime]
 ms.assetid: 4b60ea6c-97c8-4d69-9f7b-ad79f3548026
-ms.openlocfilehash: 05777b0c00f587f588a50733d5113d9a7362d247
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bf5f93e2a570761874232a88a23289e59e58d94
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549623"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257624"
 ---
-# <a name="how-to-send-a-message-at-a-regular-interval"></a>Nasıl yapılır: Düzenli Aralıkla İleti Gönderme
+# <a name="how-to-send-a-message-at-a-regular-interval"></a>Nasıl yapılır: Düzenli aralıkla ileti gönderme
 
 Bu örnek, eşzamanlılık kullanmayı gösterir.::[timer sınıfı](../../parallel/concrt/reference/timer-class.md) düzenli aralıkla ileti göndermek için.
 
@@ -34,7 +34,7 @@ Performing a lengthy operation..........done.
 
 **cl.exe/ehsc rapor progress.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

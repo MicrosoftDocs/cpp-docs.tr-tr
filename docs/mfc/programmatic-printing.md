@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IPrint interface
 - printing [MFC]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
-ms.openlocfilehash: d01dcd901425fb3957201dca754a01042e629ebb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb8804610832f91f4b24487fddfe9c24a3799117
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630665"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264007"
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 
@@ -46,7 +46,7 @@ Ayrıca, `IPrint::SetInitialPageNum` bir numaralandırma sorunsuz bir şekilde, 
 
 Nesneleri destekleyen `IPrint` kayıt defterinde nesnenin CLSID altında depolanan "Printable" anahtarı ile işaretlenir:
 
-HKEY_CLASSES_ROOT\CLSID\\{...} \Printable
+HKEY_CLASSES_ROOT\CLSID\\{...}\Printable
 
 `IPrint` genellikle ya da destekleyen aynı nesne üzerinde uygulanan `IPersistFile` veya `IPersistStorage`. Çağıranlar "Printable" anahtarı için kayıt defterinde bakarak bazı sınıfı kalıcı durumunu program aracılığıyla yazdırma olanağı unutmayın. Şu anda "Yazdırılabilir" desteği için en az gösterir `IPrint`; diğer arabirimleri, ardından aracılığıyla kullanılabilirdi gelecekte tanımlanabilir `QueryInterface` burada `IPrint` yalnızca temel düzeyde desteği temsil eder.
 
@@ -69,7 +69,6 @@ En genel durumlarda `IContinueCallback::FContinue` işlevi düzenli aralıklarla
 
 `FContinue`, ancak bağlamında kullanılmaz `IPrint::Print`; bunun yerine, kullandığı yazdırma `IContinueCallback::FContinuePrint`. Herhangi bir yazdırma nesnesi düzenli aralıklarla çağırmalıdır `FContinuePrinting` yazdırma sayfa sayısı, yazdırılmasını sayfa numarası ve istemci (örneğin, "sayfası kullanıcıya tercih edebilirsiniz yazdırma durumunu açıklayan bir ek dize geçirme 5 / 19").
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 'Bellek Yönetimi: Çerçeve Ayırma'
+title: 'Bellek Yönetimi: Çerçeve ayırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - memory leaks [MFC], frame allocation
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-ms.openlocfilehash: 45b0242ec8acafa2345482893d14decb02c4a3f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcd691f8e99b558fcadfc1cf51990b673c5b760c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448002"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262213"
 ---
-# <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
+# <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve ayırma
 
 Çerçeve ayırma "olarak ayarlanmış yığın çerçevesini" adını alan her bir işlev çağrılır. Yığın çerçevesinin tutan geçici olarak bağımsız değişkenler tanımlanan tüm değişkenler yanı sıra işlev işleve yerel bellek alanıdır. Derleyicinin otomatik olarak alan için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenler çağrılır.
 
@@ -39,7 +39,6 @@ Bir nesne bir çerçeve değişken olarak tanımlandığında, yapıcısına tan
 
 Çerçevede nesneleri ayırma önemli bir avantajı, otomatik olarak silinir. Çerçeve, nesneleri ayırdığınızda, bellek sızıntılarının neden Unutulan nesneleri hakkında endişelenmeniz gerekmez. (Bellek sızıntılarını hakkında daha fazla bilgi için bkz [MFC'de bellek sızıntılarını algılama](/previous-versions/visualstudio/visual-studio-2010/c99kz476).) Çerçeve ayırma bir dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma ve çerçeve ayırma seçme içinde başka bir faktör büyük yapılar ve nesneler için genellikle yığın alanı çoğunlukla sınırlı olduğundan öbek için Depolama yığını yerine kullanılması daha iyidir olmasıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bellek Yönetimi](../mfc/memory-management.md)
-

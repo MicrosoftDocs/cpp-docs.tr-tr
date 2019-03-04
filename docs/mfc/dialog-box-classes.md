@@ -10,12 +10,12 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-ms.openlocfilehash: 3533a548f009a65462ce0d821d782db0ada9aa4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5747e4450816b803f97ad5ff6338b9e01ad41bca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490017"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264046"
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 
@@ -129,7 +129,6 @@ Bir form sağlar açık veritabanı bağlantısı (ODBC) kayıt nesneye doğruda
 [CPrintInfo](../mfc/reference/cprintinfo-structure.md)<br/>
 Bir yazdırma ya da yazdırma önizleme işinin hakkında bilgi içeren bir yapıya. Yazdırma mimarisi tarafından kullanılan [CView](../mfc/reference/cview-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

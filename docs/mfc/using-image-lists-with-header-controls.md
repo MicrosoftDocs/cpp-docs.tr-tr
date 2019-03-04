@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], image lists
 - image lists [MFC], header controls
 ms.assetid: d5e9b310-6278-406c-909c-eefa09549a47
-ms.openlocfilehash: 5c623024ef64f49e3379ef02154cda72d445a197
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3d9a4a0c655fa46c15d8c4d9b2b4e90cd34c2937
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545255"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264293"
 ---
 # <a name="using-image-lists-with-header-controls"></a>Üstbilgi Denetimleriyle Birlikte Görüntü Listeleri Kullanma
 
@@ -42,7 +42,6 @@ Kullanılan parametre değerlerini hakkında ayrıntılı bilgi için ilgili ba�
 > [!NOTE]
 >  Birden çok denetim aynı görüntü listesi kullanma olması mümkündür. Örneğin, standart liste görünümü denetimi olabilir hem küçük simge görünümünde bir liste görünümü denetimi ve liste görünümü denetimi üstbilgi öğeleri tarafından kullanılan bir görüntü listesi (16 x 16 piksel görüntülerin).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)
-

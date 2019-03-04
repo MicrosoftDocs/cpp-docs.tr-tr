@@ -1,5 +1,5 @@
 ---
-title: CDataPathProperty sınıfı
+title: CDataPathProperty Class
 ms.date: 11/04/2016
 f1_keywords:
 - CDataPathProperty
@@ -20,14 +20,14 @@ helpviewer_keywords:
 - CDataPathProperty [MFC], SetControl
 - CDataPathProperty [MFC], SetPath
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
-ms.openlocfilehash: 1d17b121854623e9919f434a44b6ab40c2db2691
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61c8dfa85363509ee09eaaccdb6d45d70390c344
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608193"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262772"
 ---
-# <a name="cdatapathproperty-class"></a>CDataPathProperty sınıfı
+# <a name="cdatapathproperty-class"></a>CDataPathProperty Class
 
 Uygulayan bir OLE denetim zaman uyumsuz olarak yüklenebilen özelliği.
 
@@ -215,7 +215,7 @@ void SetPath(LPCTSTR lpszPath);
 *lpszPath*<br/>
 Mutlak veya göreli zaman uyumsuz olarak yüklenen özelliğine olabilen bir yolu. `CDataPathProperty` URL değil dosya adlarını kullanır. İsterseniz bir `CDataPathProperty` önüne ekleyin, nesne için bir dosya `file://` yolu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örneği görüntüsü](../../visual-cpp-samples.md)<br/>
 [CAsyncMonikerFile Sınıfı](../../mfc/reference/casyncmonikerfile-class.md)<br/>

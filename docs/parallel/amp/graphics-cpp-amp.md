@@ -2,12 +2,12 @@
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: fcc1f11ff716654aadef91d86137b97e93b0a80f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a40575d84c9a0efedcb3c7c9717fc310870b530
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570332"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260887"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
@@ -406,7 +406,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `texture<T,1>` ve [ıd3d11texture1d arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248503), arasında `texture<T,2>` ve [ıd3d11texture2d arabirimi](http://go.microsoft.com/fwlink/p/?linkId=255317), arasında `texture<T,3>`ve [ıd3d11texture3d arabirimi](http://go.microsoft.com/fwlink/p/?linkId=255377). [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir `texture` nesne ve döndürür bir `IUnknown` arabirimi. [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirimi ve `accelerator_view` nesne ve döndürür bir `texture` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [double_2 Sınıfı](../../parallel/amp/reference/double-2-class.md)<br/>
 [double_3 Sınıfı](../../parallel/amp/reference/double-3-class.md)<br/>

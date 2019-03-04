@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 53d4a512-657c-4187-9609-e3f5339a78e0
-ms.openlocfilehash: e8cff11f745c3407218a828565232e5b115fc687
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: b1c48e087052308dfb6b27275c5b4997ed9cca7b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657324"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259717"
 ---
 # <a name="cbytearray-class"></a>CByteArray sınıfı
 
@@ -124,7 +124,7 @@ Kullanma hakkında daha fazla bilgi için `CByteArray`, makaleye göz atın [kol
 
 **Başlık:** afxcoll.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

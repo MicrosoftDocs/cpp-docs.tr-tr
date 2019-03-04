@@ -1,5 +1,5 @@
 ---
-title: 'Pano: Windows Panosunu Kullanma'
+title: 'Pano: Windows panosunu kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Clipboard commands
@@ -11,18 +11,18 @@ helpviewer_keywords:
 - Windows Clipboard [MFC]
 - Clipboard [MFC], Windows Clipboard API
 ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
-ms.openlocfilehash: 67bc337af2cf55a4f39698f730ce14a3369ef742
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49111e4efd2a12264d61030fe038d80b974514c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460703"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264800"
 ---
-# <a name="clipboard-using-the-windows-clipboard"></a>Pano: Windows Panosunu Kullanma
+# <a name="clipboard-using-the-windows-clipboard"></a>Pano: Windows panosunu kullanma
 
 Bu konuda, standart Windows panosu API'si MFC uygulamanızda kullanmayı açıklar.
 
-Çoğu uygulama için Windows kesme veya Windows panosuna veri kopyalama ve pano verilerini yapıştırma destekler. Pano veri biçimlerini, uygulamalar arasında farklılık gösterir. Framework, sınırlı sayıda sınıfları için yalnızca sınırlı sayıda Pano biçimlerini destekler. Pano ile ilgili komutları normalde uygular — Kes, Kopyala ve Yapıştır — görünümünüz için Düzen menüsünde. Komut kimlikleri bu komutları için sınıf kitaplığı tanımlar: **ıd_edıt_cut**, **ıd_edıt_copy**, ve **ıd_edıt_paste**. Kendi ileti satırı yönergeleri de tanımlanır.
+Çoğu uygulama için Windows kesme veya Windows panosuna veri kopyalama ve pano verilerini yapıştırma destekler. Pano veri biçimlerini, uygulamalar arasında farklılık gösterir. Framework, sınırlı sayıda sınıfları için yalnızca sınırlı sayıda Pano biçimlerini destekler. Pano ile ilgili komutları normalde uygular — Kes, Kopyala ve Yapıştır — görünümünüz için Düzen menüsünde. Sınıf kitaplığı, bu komutların komut kimlikleri tanımlar: **Id_edıt_cut**, **ıd_edıt_copy**, ve **ıd_edıt_paste**. Kendi ileti satırı yönergeleri de tanımlanır.
 
 [İletiler ve komutlar Framework](../mfc/messages-and-commands-in-the-framework.md) menü komutları, uygulamanızdaki bir işleyici işlevi için menü komutunu eşleyerek nasıl ele alınacağını açıklar. Uygulamanızın Düzen menüsündeki Pano komutları için işleyici işlevleri tanımlamıyor sürece devre dışı kalır. Kesme ve kopyalama komutları için işleyici işlevleri yazmak için uygulamanızda seçimi uygulayın. Paste komutu için bir işleyici işlevi yazmak için uygulamanızın kabul edebilen bir biçimde veri içerip içermediğini görmek için Pano sorgulayın. Örneğin, kopyalama komutu etkinleştirmek için bir işleyici aşağıdakine benzer bir şey yazabiliriz:
 
@@ -40,7 +40,6 @@ Menü komutları, geri alma gibi diğer uygulama Düzenle (**ıd_edıt_undo**) v
 
 - [OLE Pano mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pano](../mfc/clipboard.md)
-

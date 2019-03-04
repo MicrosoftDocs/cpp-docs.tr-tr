@@ -7,12 +7,12 @@ helpviewer_keywords:
 - registering OLE controls
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-ms.openlocfilehash: 08ed3771edbc0ebebfe98643a2651ff10c85d41e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c480696bdec3591f0509cbad04051a2b3af4070
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544800"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262161"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 
@@ -289,6 +289,6 @@ Tür kitaplığı kaydı başarıyla silindi olursa sıfır dışı; Aksi durumd
 
   **Üst bilgi** afxdisp.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

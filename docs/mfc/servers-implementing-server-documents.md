@@ -1,5 +1,5 @@
 ---
-title: 'Sunucular: Sunucu Belgeleri Uygulama'
+title: 'Sunucular: Sunucu belgeleri uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE server applications [MFC], managing server documents
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - servers, server documents
 - server documents [MFC], implementing
 ms.assetid: cca1451a-ad09-47ed-b56e-bccd78fc86d1
-ms.openlocfilehash: 17c90eb6350a2bf3cd5b695a99dea954dd89a033
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17ced1cdb0b40b13fbda68150030efde5735ba7b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436497"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261875"
 ---
-# <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu Belgeleri Uygulama
+# <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu belgeleri uygulama
 
 Bu makalede Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz sunucu belgesinin başarıyla uygulamak için gerçekleştirmeniz gereken adımlar açıklanmaktadır.
 
@@ -28,16 +28,15 @@ Bu makalede Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz sunuc
 
    `OnGetEmbeddedItem` bir kapsayıcı uygulamasının kullanıcı oluşturur veya düzenler gömülü bir öğe adı verilir. Tüm belgeyi temsil eden bir öğe döndürmesi gerekir. Bu nesnenin olmalıdır, `COleServerItem`-türetilmiş sınıf.
 
-1. Geçersiz kılma `Serialize` belgesinin içeriğini serileştirmek için üye işlevi. Yerel veri belge içinde temsil etmek için kullanmıyorsanız sunucu öğelerin listesini seri hale gerekmez. Daha fazla bilgi için *uygulama sunucu öğeleri* makaledeki [sunucular: sunucu öğeleri](../mfc/servers-server-items.md).
+1. Geçersiz kılma `Serialize` belgesinin içeriğini serileştirmek için üye işlevi. Yerel veri belge içinde temsil etmek için kullanmıyorsanız sunucu öğelerin listesini seri hale gerekmez. Daha fazla bilgi için *uygulama sunucu öğeleri* makaledeki [sunucuları: Sunucu öğeleri](../mfc/servers-server-items.md).
 
 Sunucu belgesinin oluşturulduğunda framework belge OLE sistem DLL'lerini otomatik olarak kaydeder. Bu sunucu belgeleri tanımlamak DLL'leri sağlar.
 
 Daha fazla bilgi için [Coleserverıtem](../mfc/reference/coleserveritem-class.md) ve [COleServerDoc](../mfc/reference/coleserverdoc-class.md) içinde *sınıf kitaplığı başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sunucular](../mfc/servers.md)<br/>
-[Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)<br/>
-[Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)<br/>
-[Sunucular: Yerinde Çerçeve Pencereleri Uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
-
+[Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)<br/>
+[Sunucular: Sunucu uygulama](../mfc/servers-implementing-a-server.md)<br/>
+[Sunucular: Yerinde çerçeve Windows uygulama](../mfc/servers-implementing-in-place-frame-windows.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComAutoDeleteCriticalSection class
 ms.assetid: 2396dbea-1c60-4841-b50e-c4e18af311a3
-ms.openlocfilehash: 93b9a266bba59b80a7661cf63046dcfe63f3edb2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d479adce489e0329be3a93b55a70aa3e58a0e038
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431180"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265138"
 ---
 # <a name="ccomautodeletecriticalsection-class"></a>CComAutoDeleteCriticalSection sınıfı
 
@@ -42,7 +42,7 @@ Bu sınıf, taban sınıfı hiçbir ek yöntemleri tanıtır. Bkz: [CComSafeDele
 
 **Başlık:** atlcore.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComSafeDeleteCriticalSection Sınıfı](../../atl/reference/ccomsafedeletecriticalsection-class.md)<br/>
 [CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CBaseTabbedPane sınıfı
+title: CBaseTabbedPane Class
 ms.date: 11/04/2016
 f1_keywords:
 - CBaseTabbedPane
@@ -62,14 +62,14 @@ helpviewer_keywords:
 - CBaseTabbedPane [MFC], SetAutoHideMode
 - CBaseTabbedPane [MFC], ShowTab
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
-ms.openlocfilehash: 51344a8cd0e5671f81e608b74363ed06c9200324
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7ffaa7274a8ed12944cdbc5dcbbdcb8fd3fd2b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640901"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259301"
 ---
-# <a name="cbasetabbedpane-class"></a>CBaseTabbedPane sınıfı
+# <a name="cbasetabbedpane-class"></a>CBaseTabbedPane Class
 
 İşlevselliğini genişletir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) sekmeli pencerelerin oluşturulmasını desteklemek için.
 
@@ -700,7 +700,7 @@ Otomatik gizleme modu sekmeli bölmesinde çıkarılabilir her bölme için ayar
 
 Sekmeli bir bölmeye program aracılığıyla otomatik gizleme moduna geçmek için bu yöntemi çağırın. Ana çerçeve penceresine bölmenin yerleştirilmiş olmalıdır ( [CDockablePane::GetDefaultPaneDivider](../../mfc/reference/cdockablepane-class.md#getdefaultpanedivider) geçerli işaretçi döndürmelidir [CPaneDivider](../../mfc/reference/cpanedivider-class.md)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

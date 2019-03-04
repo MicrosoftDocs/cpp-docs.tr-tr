@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-ms.openlocfilehash: 92b2827d556583524b46f88f8bd9efeb57a5d83a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6aa404c5eb543db198043dba68d55a4b925739c8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472871"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263461"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 
@@ -462,9 +462,9 @@ Alınacak veritabanıyla ilgili bilgileri belirtmenize seçenekleri. Kullanılab
 
 - (Varsayılan) AFX_DAO_PRIMARY_INFO adı, güncelleştirilebilir, işlemleri
 
-- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: sürüm, harmanlama sırası, sorgu zaman aşımı
+- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: Sorgu zaman aşımı harmanlama sırası, sürüm
 
-- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: bağlanma
+- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: Bağlanma
 
 *lpszName*<br/>
 Ada göre arama veritabanı nesnesinin adı. Yeni çalışma alanı nesnesi adlandıran bir 14 adede kadar karakter dizesiyle addır.
@@ -632,7 +632,7 @@ Seçenekler hangi almak için çalışma alanı bilgilerini belirtin. Kullanıla
 
 - AFX_DAO_PRIMARY_INFO (varsayılan) adı
 
-- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: kullanıcı adı
+- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: Kullanıcı adı
 
 - AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: ODBCTrans Ayır
 
@@ -888,7 +888,7 @@ Oturumu açmak için Microsoft SQL Server gibi bir ODBC veritabanı çalışırk
 
 İlgili bilgiler için DAO Yardımı'nda "LoginTimeout özelliği" konusuna bakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

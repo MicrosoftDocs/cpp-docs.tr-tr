@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ATL_MODULE70 structure
 - _ATL_MODULE70 structure
 ms.assetid: b059b2c8-dfd1-4ac9-b07d-39df638cc7b3
-ms.openlocfilehash: bf733a10a0be53eafb634c645dad6a4b58b8206d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d05683383fab64f027f198d49bfbf42aa593d582
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438850"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263435"
 ---
 # <a name="atlmodule70-structure"></a>_ATL_MODULE70 yapısı
 
@@ -53,7 +53,6 @@ ATL kapatıldığında çağrılacak kayıtlı işlevlerini izler.
 
 **Başlık:** atlbase.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
-

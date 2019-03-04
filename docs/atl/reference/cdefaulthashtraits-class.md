@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultHashTraits class
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
-ms.openlocfilehash: c8896ce27afc40ad095e02a2453628ffc05900da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a51b4460d7fcdf778fce24b6e404b75190f598f6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466150"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257312"
 ---
 # <a name="cdefaulthashtraits-class"></a>CDefaultHashTraits sınıfı
 
@@ -70,6 +70,6 @@ Karma değer döndürür.
 
 İçin varsayılan karma algoritması çok basittir: öğe numarası dönüş değeridir. Daha karmaşık bir algoritma gerekli olduğunda bu işlev geçersiz kılar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

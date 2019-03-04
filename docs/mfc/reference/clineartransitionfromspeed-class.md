@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CLinearTransitionFromSpeed [MFC], m_dblFinalValue
 - CLinearTransitionFromSpeed [MFC], m_dblSpeed
 ms.assetid: 8f159a1c-8893-4017-951e-09e5758aba7d
-ms.openlocfilehash: 9ef461124321e5e8fff11c1c7be1d90246c411a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1efa9806267958b4221ee112e56f242c7e25a8f0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563975"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260705"
 ---
 # <a name="clineartransitionfromspeed-class"></a>CLinearTransitionFromSpeed sınıfı
 
@@ -121,6 +121,6 @@ Hız değişkenin mutlak değeri.
 DOUBLE m_dblSpeed;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

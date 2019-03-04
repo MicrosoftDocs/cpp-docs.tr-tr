@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: ActiveX Denetiminde Resim Kullanma'
+title: 'MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma'
 ms.date: 11/04/2016
 f1_keywords:
 - LPPICTUREDISP
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - OnResetState method [MFC]
 - CLSID_CPicturePropPage [MFC]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-ms.openlocfilehash: fe239f864f4b7730d28372ee3fc9d298131d28d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86e9bd220d06e714030f7d44888b210ba35fd345
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462107"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264566"
 ---
-# <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Resim Kullanma
+# <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma
 
 Bu makalede, yaygın resim türünü ve ActiveX denetiminizin nasıl açıklar. Konular şunlardır:
 
@@ -31,7 +31,7 @@ Bu makalede, yaygın resim türünü ve ActiveX denetiminizin nasıl açıklar. 
 
 Resim türü, bazı ActiveX denetimleri için ortak türü biridir. Resim türü, meta dosyaları, bit eşlemler ve simgeleri işler ve ActiveX denetiminde görüntülenecek resim belirtmesini sağlar. Resim nesnesi ve kullanıcı erişimini denetlemek için resim özelliği sağlayan Get/Set işlevleri kullanarak özel resim özellikleri uygulanır. Denetim kullanıcılar hisse senedi resim özellik sayfasını kullanarak özel resim özelliği erişir.
 
-Ek olarak standart resim türü, yazı tipi ve renk türleri de mevcuttur. ActiveX denetiminizin standart yazı tipini kullanarak daha fazla bilgi için bkz [MFC ActiveX denetimleri: yazı tiplerini kullanarak](../mfc/mfc-activex-controls-using-fonts.md).
+Ek olarak standart resim türü, yazı tipi ve renk türleri de mevcuttur. ActiveX denetiminizin standart yazı tipini kullanarak daha fazla bilgi için bkz [MFC ActiveX denetimleri: Yazı tiplerini kullanma](../mfc/mfc-activex-controls-using-fonts.md).
 
 ActiveX denetim sınıfları denetiminde resim özelliği uygulamak için kullanabileceğiniz çeşitli bileşenleri sağlar. Bu bileşenler şunlardır:
 
@@ -41,11 +41,11 @@ ActiveX denetim sınıfları denetiminde resim özelliği uygulamak için kullan
 
 - Tür özellikleri için destek **LPPICTUREDISP**, Get/Set işlevleri ile uygulanan.
 
-   Sınıfı, hızla özel bir özellik veya özellikler ekleyebilirsiniz görünümünü kullanarak, resim türünü destekler. Sınıf Görünümü ile ActiveX denetimi Özellikler ekleme ile ilgili daha fazla bilgi için bkz [MFC ActiveX denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md).
+   Sınıfı, hızla özel bir özellik veya özellikler ekleyebilirsiniz görünümünü kullanarak, resim türünü destekler. Sınıf Görünümü ile ActiveX denetimi Özellikler ekleme ile ilgili daha fazla bilgi için bkz [MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md).
 
 - Bir denetimin resim özelliği veya özellikleri işleyen bir özellik sayfası.
 
-   Bu özellik sayfası stok özellik sayfalarını ActiveX denetimleri için kullanılabilir bir grubun bir parçasıdır. ActiveX denetimi özellik sayfaları hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+   Bu özellik sayfası stok özellik sayfalarını ActiveX denetimleri için kullanılabilir bir grubun bir parçasıdır. ActiveX denetimi özellik sayfaları hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 ##  <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> ActiveX denetiminizin özel resim özelliği uygulama
 
@@ -147,9 +147,8 @@ Tasarım zamanında eklenen çalışma zamanında gösterilir böylece resim öz
 
 Değişiklikleri tamamladıktan sonra özel resim özelliğinin yeni işlevsellikler eklemek ve yeni özelliği test etmek için Test kapsayıcı kullanmak için projenizi yeniden derleyin. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma](../mfc/mfc-activex-controls-using-fonts.md)<br/>
-[MFC ActiveX Denetimleri: Özellik Sayfaları](../mfc/mfc-activex-controls-property-pages.md)
-
+[MFC ActiveX denetimleri: Yazı tiplerini kullanma](../mfc/mfc-activex-controls-using-fonts.md)<br/>
+[MFC ActiveX denetimleri: Özellik sayfaları](../mfc/mfc-activex-controls-property-pages.md)

@@ -13,12 +13,12 @@ f1_keywords:
 - AMP/Concurrency::tiled_extent::tile_dim2
 - AMP/Concurrency::tiled_extent::tile_extent
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-ms.openlocfilehash: 77d16eefa61fb30614cb6527792014cc8655abe0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51e7696b8103e81d42beec0987a49f26fe041643
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476901"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264341"
 ---
 # <a name="tiledextent-class"></a>tiled_extent Sınıfı
 
@@ -103,7 +103,7 @@ En az önemli boyutun uzunluğu.
 
 **Başlık:** amp.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
 ## <a name="ctor"> </a>  tiled_extent Oluşturucusu
 
@@ -226,6 +226,6 @@ static const int tile_dim2 = _Dim2;
 __declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

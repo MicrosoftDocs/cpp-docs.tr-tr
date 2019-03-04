@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - multi_link_registry class
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-ms.openlocfilehash: 6f4e6db693a5839fd3add503bfb9697679a98dd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 388cc0082f69041368d1a444179855451d552ce6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635415"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264773"
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry Sınıfı
 
@@ -185,7 +185,7 @@ En fazla bağlantılar `multi_link_registry` nesne tutabilir.
 
 Bağımlı ayarlandıktan sonra bir giriş bağlantısını neden olacak `multi_link_registry` nesne değişmez bir duruma girmesini çağrıları burada daha fazla `add` oluşturmaz bir `invalid_link_target` özel durum.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [single_link_registry Sınıfı](single-link-registry-class.md)

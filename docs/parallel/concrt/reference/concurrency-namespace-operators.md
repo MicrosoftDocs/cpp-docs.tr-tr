@@ -5,12 +5,12 @@ f1_keywords:
 - concrt/concurrency::operator!=
 - concrt/concurrency:[operator&amp;&amp
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
-ms.openlocfilehash: 5982ae0ec3baff38b43b0ce504a47d512559390d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d790833e7dcecb5776d2adecd5e6bc1f681db1cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521615"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258807"
 ---
 # <a name="concurrency-namespace-operators"></a>Eşzamanlılık ad alanı işleçleri
 
@@ -341,6 +341,6 @@ Bu işleç davranışını eşdeğer operatör için aynı `vector` sınıfını
 
 Bu yöntem eşzamanlı güvenli eş zamanlı vektör birini değiştirebilir diğer yöntemleri göre değil `_A` veya `_B`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

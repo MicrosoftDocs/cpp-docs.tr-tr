@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IThreadProxy structure
 ms.assetid: feb89241-a555-4e61-ad48-40add54daeca
-ms.openlocfilehash: 606adf0e6984ebe93951c80620407f9f1c8775f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 906b05800711e89592e5230bec7fa0fe1640379f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533984"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265723"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 
@@ -136,7 +136,7 @@ Normal Windows, iş parçacığı tarafından desteklenen bir iş parçacığı 
 
 `YieldToSystem` çağrılmalıdır `IThreadProxy` yürütülmekte olan iş parçacığını veya sonuçlarını temsil eden arabirim tanımlanmamıştır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [IExecutionContext Yapısı](iexecutioncontext-structure.md)<br/>

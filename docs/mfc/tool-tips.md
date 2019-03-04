@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controls [MFC], tool tips
 - buttons [MFC], tool tips
 ms.assetid: 7f0bba86-7c55-4bf6-8455-687a4dcb2be8
-ms.openlocfilehash: 43e4d9bad06ded35f377839b177c30f4dd634dc2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec7795a524420d62b2307f26954bbf205d19dea9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549636"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263041"
 ---
 # <a name="tool-tips"></a>Araç İpuçları
 
@@ -27,6 +27,6 @@ Bir pencereyi denetimler için araç ipuçları:
 
 - [Cframewnd'den türetilmemiş Windows ipuçlarında](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

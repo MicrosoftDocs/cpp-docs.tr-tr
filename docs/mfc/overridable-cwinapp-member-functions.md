@@ -8,12 +8,12 @@ helpviewer_keywords:
 - application class [MFC]
 - CWinApp class [MFC], overridables
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
-ms.openlocfilehash: 9f1098e305606df9463e308466b7864b019d5a00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35db009f86a0cb984f70a349a3ecdd93bfefb0f0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459286"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261251"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>Geçersiz Kılınabilir CWinApp Üye İşlevleri
 
@@ -29,6 +29,6 @@ ms.locfileid: "50459286"
 
 Yalnızca `CWinApp` geçersiz kılmanız gerekir üye işlevi olan `InitInstance`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)

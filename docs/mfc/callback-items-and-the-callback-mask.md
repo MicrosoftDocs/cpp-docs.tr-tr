@@ -5,12 +5,12 @@ helpviewer_keywords:
 - callback items in CListCtrl class [MFC]
 - CListCtrl class [MFC], callback item and callback mask
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-ms.openlocfilehash: b48f203ae2f0ac0089e30c77e529c6a5eec8822b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35967f128c6cc59bc9cea90da559b32c51fb38d1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659660"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261082"
 ---
 # <a name="callback-items-and-the-callback-mask"></a>Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
 
@@ -34,8 +34,7 @@ Geri çağrı öğeleri tanımlanmasına ek olarak, denetimin geri çağrı mask
 
 Alınıyor ve bu maskesini ayarlama hakkında daha fazla bilgi için bkz. [CListCtrl::GetCallbackMask](../mfc/reference/clistctrl-class.md#getcallbackmask) ve [CListCtrl::SetCallbackMask](../mfc/reference/clistctrl-class.md#setcallbackmask).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

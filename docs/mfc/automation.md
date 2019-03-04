@@ -20,12 +20,12 @@ helpviewer_keywords:
 - MFC COM, Automation
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-ms.openlocfilehash: de376c6c5ab2be0da5f6b9495c6adb61e19d6622
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b26a08bbe9ef9b9151910871201abe05a44d2f6c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572763"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265576"
 ---
 # <a name="automation"></a>Otomatikleştirme
 
@@ -87,6 +87,6 @@ Otomasyon yöntemi oluşturma bir zorluk, otomasyon sunucuları ve istemciler ar
 
 - [Otomasyon istemcileri C++ olarak yazabilir.](../mfc/automation-clients.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC COM](../mfc/mfc-com.md)

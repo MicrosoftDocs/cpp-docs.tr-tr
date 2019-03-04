@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CDockState [MFC], SaveState
 - CDockState [MFC], m_arrBarInfo
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-ms.openlocfilehash: 56be735aa99cfebe4ec64ff76f53d28cc9b9779e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8c4b80d7182795d8919adb64491d506325976ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443608"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262694"
 ---
 # <a name="cdockstate-class"></a>CDockState sınıfı
 
@@ -58,7 +58,7 @@ Dock durumu, boyutunu ve konumunu çubuğu ve yerleştirilmiş olup olmadığın
 
 [CFrameWnd::GetDockState](../../mfc/reference/cframewnd-class.md#getdockstate) tüm çerçeve penceresinin durumu bilgilerini alır `CControlBar` nesneleri ve içine yerleştirir `CDockState` nesne. Ardından içeriğini yazabileceğiniz `CDockState` ile depolama nesnesine [serileştirme](../../mfc/reference/cobject-class.md#serialize) veya [CDockState::SaveState](#savestate). Daha sonra Denetim çubukları çerçeve penceresindeki durumunu geri yüklemek istiyorsanız, durumuyla yükleyebilir `Serialize` veya [CDockState::LoadState](#loadstate), ardından [CFrameWnd::SetDockState](../../mfc/reference/cframewnd-class.md#setdockstate) kaydedilen uygulamak için Çerçeve penceresinin denetim çubukları durumu.
 
-Denetim çubukları yerleştirme daha fazla bilgi için makalelere göz atın [denetim çubukları](../../mfc/control-bars.md), [araç çubukları: yerleşen ve kayan](../../mfc/docking-and-floating-toolbars.md), ve [çerçeve Windows](../../mfc/frame-windows.md).
+Denetim çubukları yerleştirme daha fazla bilgi için makalelere göz atın [denetim çubukları](../../mfc/control-bars.md), [araç çubukları: Yerleşen ve kayan](../../mfc/docking-and-floating-toolbars.md), ve [çerçeve Windows](../../mfc/frame-windows.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -140,8 +140,7 @@ Başlatma dosyası ya da durum bilgisi depolandığı Windows kayıt defteri ana
 
 Profil adı uygulamanın bölümüdür. INI dosyası veya kayıt defteri içeren denetim çubuğunun durum bilgileri. `SaveState` Geçerli ekran boyutu de kaydeder. Denetim çubuğu bilgileri kayıt defterinden alabilir veya. INI dosyasıyla `LoadState`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

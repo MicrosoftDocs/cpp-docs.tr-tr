@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CElementTraitsBase class
 ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
-ms.openlocfilehash: 769fa5abff223ad570847b8bf68378ce85df664e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 207207d26a2c43367a00b382f80761429159a7b4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509024"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263682"
 ---
 # <a name="celementtraitsbase-class"></a>CElementTraitsBase sınıfı
 
@@ -128,6 +128,6 @@ Dışında yeniden konumlandırmakta öğe sayısı.
 
 Bu yöntemin çağırdığı [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), çoğu veri türleri için yeterli olduğu. Taşınan nesnelerin kendi üye işaretçileri içeriyorsa, bu yöntemi geçersiz kılınması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

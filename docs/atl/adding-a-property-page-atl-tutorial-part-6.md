@@ -3,12 +3,12 @@ title: Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
-ms.openlocfilehash: bd9386395b0655eab68a6c772c8d6216b7eeafe5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9287b7a15e3653212ed6a5428cdfe5a530ececc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519489"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264774"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 
@@ -146,6 +146,6 @@ Ardından, denetiminizi Web sayfasında koyacaktır.
 
 [5. adım dön](../atl/adding-an-event-atl-tutorial-part-5.md) &#124; [açın 7. adım](../atl/putting-the-control-on-a-web-page-atl-tutorial-part-7.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Öğretici](../atl/active-template-library-atl-tutorial.md)

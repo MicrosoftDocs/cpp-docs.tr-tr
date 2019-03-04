@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-ms.openlocfilehash: dd1a13e7cef066350f8409782b0efeba11b9d11e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd42934107591905a1bbc273ee9eec4b37e58ea7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456218"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258794"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile sınıfı
 
@@ -240,11 +240,11 @@ virtual ULONGLONG Seek(
 *nFrom*<br/>
 İşaretçi taşıma modu. Aşağıdaki değerlerden biri olmalıdır:
 
-- `CFile::begin`: Taşıma dosya işaretçisini *lOff* dosyanın başından itibaren bayt iletin.
+- `CFile::begin`: Dosya işaretçiyi *lOff* dosyanın başından itibaren bayt iletin.
 
-- `CFile::current`: Taşıma dosya işaretçisini *lOff* dosyasındaki geçerli konumdan bayt.
+- `CFile::current`: Dosya işaretçiyi *lOff* dosyasındaki geçerli konumdan bayt.
 
-- `CFile::end`: Taşıma dosya işaretçisini *lOff* dosyasının sonuna gelen baytlar. Unutmayın *lOff* gerekir olması negatif mevcut aranacak dosya; pozitif değerleri, dosyanın sonundan arama.
+- `CFile::end`: Dosya işaretçiyi *lOff* dosyasının sonuna gelen baytlar. Unutmayın *lOff* gerekir olması negatif mevcut aranacak dosya; pozitif değerleri, dosyanın sonundan arama.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -291,7 +291,7 @@ Bu yöntem bir `CFileException*` yanıt olarak dosya sistemi hataları.
 
 [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_4.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

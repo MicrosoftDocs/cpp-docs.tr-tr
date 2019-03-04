@@ -8,12 +8,12 @@ helpviewer_keywords:
 - classes [MFC], map
 - map classes [MFC]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
-ms.openlocfilehash: 4a538e469521d8fdae6d2b74b155794bf559d6dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6136557bd436fb9964498384f277d48e8525a027
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496414"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262187"
 ---
 # <a name="ready-to-use-map-classes"></a>Kullanıma Hazır Eşleme Sınıfları
 
@@ -40,7 +40,6 @@ Veri türü kullanan **WORD** bulmak için `CObject` işaretçileri.
 [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
 Veri türü kullanan **WORD** bulunacak **void** işaretçileri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - serialization [MFC], MFC
 - serialization [MFC], bypassing
 ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
-ms.openlocfilehash: d439f5e13148d4359394739ec56048f00ceb35ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c7dec140635b6d83bdae936d1bb0cef144f825b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462770"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262148"
 ---
 # <a name="serialization-in-mfc"></a>MFC'de Seri Hale Getirme
 
@@ -27,7 +27,7 @@ Temel serileştirme bir nesneyi genellikle kalıcı depolama için üye değişk
 
 MFC kullanan bir nesnenin `CArchive` serileştirilecek nesnenin ve depolama ortamı arasında bir aracı olarak sınıf. Bu nesne her zaman ile ilişkili bir `CFile` seri hale getirme, dosya adı dahil olmak üzere gerekli bilgileri alır ve istenen işlem bir okuma veya yazma olup bir nesne. Bir seri hale getirme işlemi gerçekleştiren nesne kullanabilirsiniz `CArchive` depolama ortamı yapısını bakılmaksızın nesne.
 
-A `CArchive` nesnesini kullanan aşırı yüklenmiş ekleme (**<\<**) ve ayıklama (**>>**) yazma ve okuma işlemlerini gerçekleştirmek için işleçler. Daha fazla bilgi için bkz. [depolama ve Arşiv yükleniyor Cobject'leri](../mfc/storing-and-loading-cobjects-via-an-archive.md) makalede seri hale getirme: bir nesneyi seri hale getirme.
+A `CArchive` nesnesini kullanan aşırı yüklenmiş ekleme (**<\<**) ve ayıklama (**>>**) yazma ve okuma işlemlerini gerçekleştirmek için işleçler. Daha fazla bilgi için [depolama ve Arşiv yükleniyor Cobject'leri](../mfc/storing-and-loading-cobjects-via-an-archive.md) serileştirme makalede: Bir nesneyi seri hale getirme.
 
 > [!NOTE]
 >  Karıştırmayın `CArchive` sınıfı için olan genel amaçlı iostream sınıfları ile biçimlendirilmiş yalnızca metin. `CArchive` İkili biçime serileştirilmiş nesneler için bir sınıftır.
@@ -36,13 +36,13 @@ A `CArchive` nesnesini kullanan aşırı yüklenmiş ekleme (**<\<**) ve ayıkla
 
 Aşağıdaki makaleler, seri hale getirmek için gereken iki ana görevleri kapsar:
 
-- [Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma](../mfc/serialization-making-a-serializable-class.md)
+- [Seri hale getirme: Seri hale getirilebilir bir sınıf yapma](../mfc/serialization-making-a-serializable-class.md)
 
-- [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
+- [Seri hale getirme: Bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)
 
-Makaleyi [seri hale getirme: seri hale getirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md) serileştirme uygun bir giriş/çıkış teknik veritabanı uygulamalarında olduğunda açıklar.
+Makaleyi [seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md) serileştirme uygun bir giriş/çıkış teknik veritabanı uygulamalarında olduğunda açıklar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>

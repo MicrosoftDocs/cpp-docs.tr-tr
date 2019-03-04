@@ -1,5 +1,5 @@
 ---
-title: 'TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma'
+title: 'TN064: Apartman modeli iş parçacığı ActiveX denetimlerinde'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.controls.activex
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - multithread container [MFC]
 - apartment model threading [MFC]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
-ms.openlocfilehash: 37f8af1e4bd0fedf0b1ab14a90afdda3916c5391
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d6f02b2106693226f6380e935a54e04e10d5b4f8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665569"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261173"
 ---
-# <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma
+# <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: Apartman modeli iş parçacığı ActiveX denetimlerinde
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -107,8 +107,7 @@ Projenizi ControlWizard önceki bir sürümü tarafından üretilmişse, mevcut 
 
 Denetiminiz apartman modeli iş parçacığı kurallarını izlemiyorsa, değil geçmelidir *afxRegApartmentThreading* bu parametrede.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

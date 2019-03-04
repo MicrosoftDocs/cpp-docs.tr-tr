@@ -1,5 +1,5 @@
 ---
-title: 'CWinApp: Uygulama Sınıfı'
+title: 'CWinApp: Uygulama sınıfı'
 ms.date: 11/04/2016
 f1_keywords:
 - CWinApp
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - WinMain method [MFC], in MFC
 - CWinApp class [MFC], WinMain
 ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
-ms.openlocfilehash: a19d510dc4c8835497ff9e1bb7d5ca6242206fe9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9f0d4f5ba6b6b070b23ce98ecda8c7accf44934
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551326"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258716"
 ---
-# <a name="cwinapp-the-application-class"></a>CWinApp: Uygulama Sınıfı
+# <a name="cwinapp-the-application-class"></a>CWinApp: Uygulama sınıfı
 
 MFC ana uygulama sınıfında başlatma, çalışan ve Windows işletim sistemi için bir uygulamanın sonlandırma kapsüller. Framework üzerine inşa edilmiş bir uygulama olmalıdır ve türetilen bir sınıfın yalnızca bir nesne [CWinApp](../mfc/reference/cwinapp-class.md). Bu nesne, Windows oluşturulmadan önce oluşturulur.
 
@@ -37,10 +37,9 @@ Uygulamayı başlatmak için `WinMain` uygulama nesnenizin çağırır `InitAppl
 > [!NOTE]
 >  Gösterilen adları **kalın** bu belgede Microsoft Foundation Class Kitaplığı ve Visual C++ tarafından sağlanan öğe belirtin. Gösterilen adları `monospaced` türü veya geçersiz kılamazsınız öğeleri gösterir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
 [CWinApp ve MFC Uygulama Sihirbazı](../mfc/cwinapp-and-the-mfc-application-wizard.md)<br/>
 [Geçersiz Kılınabilir CWinApp Üye İşlevleri](../mfc/overridable-cwinapp-member-functions.md)<br/>
 [Özel CWinApp Hizmetleri](../mfc/special-cwinapp-services.md)
-

@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: 87f99b4f037c8cc881b33e1d07b4f07596ee9a1b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: aaa05fc3e97fe690e8d6a0cd9eba826c482b410d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694549"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262109"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 
@@ -251,7 +251,7 @@ Bazı `CFileDialog` yöntemleri altında Windows Vista veya sonraki desteklenmez
 
 - [CDialog::OnSetFont](../../mfc/reference/cdialog-class.md#onsetfont)
 
-Windows iletileri `CFileDialog` sınıfı hangi işletim sistemine göre değişir. Örneğin, Windows XP desteklemediği [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) ve [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) için `CFileDialog` sınıfı. Ancak, Windows Vista ve sonraki işletim sistemlerinde bunları destekler. Oluşturulan farklı iletileri ve bunlar alınan sırası hakkında daha fazla bilgi için bkz: [CFileDialog örnek: günlüğe kaydetme olayı sırası](../../visual-cpp-samples.md).
+Windows iletileri `CFileDialog` sınıfı hangi işletim sistemine göre değişir. Örneğin, Windows XP desteklemediği [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) ve [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) için `CFileDialog` sınıfı. Ancak, Windows Vista ve sonraki işletim sistemlerinde bunları destekler. Oluşturulan farklı iletileri ve bunlar alınan sırası hakkında daha fazla bilgi için bkz: [CFileDialog örnek: Günlük olayı sırası](../../visual-cpp-samples.md).
 
 Kullanılacak bir `CFileDialog` nesne, ilk kullanarak nesne oluşturma `CFileDialog` Oluşturucusu. İletişim kutusu oluşturulmuş sonra ayarlayabilir veya herhangi bir değer değiştirme [CFileDialog::m_ofn](#m_ofn) yapısı değerleri veya iletişim kutusu denetimleri durumları başlatılamadı. `m_ofn` Yapısıdır türünü `OPENFILENAME`. Daha fazla bilgi için [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı.
 
@@ -427,7 +427,7 @@ Kullanıcı tarafından kullanılabilir hale klasör yolu. Bu, yalnızca bir kla
 *fdap*<br/>
 Klasör listesi içinde nereye yerleştirileceğini belirtir.
 
-*PSI*<br/>
+*psi*<br/>
 Kullanıcı tarafından kullanılabilir olmasını klasörünü temsil eden bir IShellItem işaretçisi. Bu, yalnızca bir klasör olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1638,8 +1638,7 @@ Bu örnekte güncelleştirmeleri `CFileDialog` görüntülemeden önce. Güncell
 
 [!code-cpp[NVC_MFC_CFileDialog#1](../../mfc/reference/codesnippet/cpp/cfiledialog-class_7.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

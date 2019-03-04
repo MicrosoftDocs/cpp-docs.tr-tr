@@ -7,20 +7,20 @@ helpviewer_keywords:
 - DCOMCNFG utility
 - DCOM, configuring in ATL
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
-ms.openlocfilehash: 8bf85c32093051b124d007a04eed2bbf10a56039
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4845093d3343e899a18c707846145c2630d7ac1d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552652"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261498"
 ---
 # <a name="dcomcnfg"></a>DCOMCNFG
 
-DCOMCNFG kayıt defterinde çeşitli DCOM özel ayarları yapılandırmanıza olanak veren bir Windows NT 4.0 aracıdır. DCOMCNFG penceresi üç sayfası vardır: varsayılan güvenlik, varsayılan özellikler ve uygulamalar. Dördüncü sayfasında, protokolleri, varsayılan Windows 2000 altında mevcuttur.
+DCOMCNFG kayıt defterinde çeşitli DCOM özel ayarları yapılandırmanıza olanak veren bir Windows NT 4.0 aracıdır. DCOMCNFG penceresi üç sayfası vardır: Varsayılan güvenlik, varsayılan özellikleri ve uygulamaları. Dördüncü sayfasında, protokolleri, varsayılan Windows 2000 altında mevcuttur.
 
 ## <a name="default-security-page"></a>Varsayılan güvenlik sayfası
 
-Varsayılan güvenlik sayfası, sistemde nesneler için varsayılan izinleri belirtmek için kullanabilirsiniz. Varsayılan güvenlik sayfada üç bölüm yer alır: erişim, başlatma ve yapılandırma. Buna karşılık gelen bir bölümün varsayılanları değiştirmek için tıklayın **Düzenle varsayılan** düğmesi. Bu varsayılan güvenlik ayarları altındaki kayıt defterine depolanır `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE`.
+Varsayılan güvenlik sayfası, sistemde nesneler için varsayılan izinleri belirtmek için kullanabilirsiniz. Varsayılan güvenlik sayfada üç bölüm yer alır: Erişim, başlatma ve yapılandırma. Buna karşılık gelen bir bölümün varsayılanları değiştirmek için tıklayın **Düzenle varsayılan** düğmesi. Bu varsayılan güvenlik ayarları altındaki kayıt defterine depolanır `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE`.
 
 ## <a name="default-protocols-page"></a>Varsayılan protokolleri sayfası
 
@@ -44,7 +44,6 @@ Uygulama sayfasını ile belirli bir nesnesi için ayarları değiştirin. Yaln�
 
 - Uç noktaları sayfası protokolleri ve seçili DCOM sunucusunun istemciler tarafından kullanılabilir uç noktaları kümesini listeler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hizmetler](../atl/atl-services.md)
-

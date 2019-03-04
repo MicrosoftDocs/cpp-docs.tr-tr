@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 08db42929fb3c6a7feb79abae5110bd88169f11b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cf01f16fe21d0c5bea34bf168c6ea6bff04c195
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594967"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263617"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 
@@ -586,7 +586,7 @@ Bkz: *fEnable* içinde [IDocHostUIHandler::EnableModeless](https://msdn.microsof
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -729,7 +729,7 @@ Bkz: *ppDropTarget* içinde `IDocHostUIHandler::GetDropTarget` Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -947,7 +947,7 @@ Bkz: *dw* içinde `IDocHostUIHandler::GetOptionKeyPath` Windows SDK içinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -963,7 +963,7 @@ STDMETHOD(HideUI)(void);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1147,7 +1147,7 @@ Bkz: *fActivate* içinde [IDocHostUIHandler::OnDocWindowActivate](https://msdn.m
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1168,7 +1168,7 @@ Bkz: *fActivate* içinde [IDocHostUIHandler::OnFrameWindowActivate](https://msdn
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1236,7 +1236,7 @@ Bkz: *fFrameWindow* içinde `IDocHostUIHandler::ResizeBorder` Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ##  <a name="setcontrolproperty"></a>  CDHtmlDialog::SetControlProperty
 
@@ -1516,15 +1516,14 @@ STDMETHOD(UpdateUI)(void);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)Windows SDK içinde açıklandığı gibi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek DHtmlExplore](../../visual-cpp-samples.md)<br/>
 [DDX_DHtml Yardımcı Makroları](#ddx_dhtml_helper_macros)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Web browsers
 - Web applications [MFC], creating
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
-ms.openlocfilehash: 1fd61b3e6bcb2f429c43edcabb41e166bcec95c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 207a6e162da6bc14e27c575ac163b160ab8e1ac1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466163"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265603"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 
@@ -67,11 +67,10 @@ void CWebView::OnInitialUpdate()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MFCIE](https://github.com/Microsoft/VCSamples)<br/>
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Proje Özellikleriyle Çalışma](../../ide/working-with-project-properties.md)<br/>
 [Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)<br/>
 [Proje Özellikleriyle Çalışma](../../ide/working-with-project-properties.md)
-

@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Performansı arttırmak için combinable Kullanma'
+title: 'Nasıl yapılır: Performansı arttırmak için combinable kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - combinable class, example
 - improving parallel performance with combinable [Concurrency Runtime]
 ms.assetid: fa730580-1c94-4b2d-8aec-57c91dc0497e
-ms.openlocfilehash: 5d68335046b08aa41028be11d833b334c1dc0055
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8f4c40be84b2204e5b5632fe6d3d5a5d22b8719
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455273"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258131"
 ---
-# <a name="how-to-use-combinable-to-improve-performance"></a>Nasıl yapılır: Performansı arttırmak için combinable Kullanma
+# <a name="how-to-use-combinable-to-improve-performance"></a>Nasıl yapılır: Performansı arttırmak için combinable kullanma
 
 Bu örnek nasıl kullanılacağını gösterir [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sayıların toplamını hesaplamak için sınıf bir [std::array](../../standard-library/array-class-stl.md) asal olan nesne. `combinable` Sınıfı paylaşılan durum ortadan kaldırarak performansı artırır.
 
@@ -65,7 +65,7 @@ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın ve
 
 Kullanan harita ve işlemleri aynı sonuçları üretmek için azaltma bir örnek için bkz [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable Sınıfı](../../parallel/concrt/reference/combinable-class.md)<br/>

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - connection points [C++], examples
 - examples [ATL]
 ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
-ms.openlocfilehash: 9312db740171672e6b0f231855408e0d0a9e060d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3113637a3f777a56bc0b0994203ce709fbc189d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495998"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265073"
 ---
 # <a name="atl-connection-point-example"></a>ATL bağlantı noktası örneği
 
@@ -22,7 +22,6 @@ Belirtirken `IPropertyNotifySink` giden bir arabirim sınıfını kullanabilirsi
 
 [!code-cpp[NVC_ATL_Windowing#85](../atl/codesnippet/cpp/atl-connection-point-example_2.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlantı noktası](../atl/atl-connection-points.md)
-

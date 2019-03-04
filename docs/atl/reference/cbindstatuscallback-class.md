@@ -29,12 +29,12 @@ helpviewer_keywords:
 - data transfer [C++], asynchronous
 - CBindStatusCallback class
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-ms.openlocfilehash: 16e97b994ad30fdd4c255dac45e8b56fd04f663a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8c8d3f170803a792ca2ea8c7a37a18fd2cebd48
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583319"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259210"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 
@@ -236,7 +236,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ##  <a name="m_dwavailabletoread"></a>  CBindStatusCallback::m_dwAvailableToRead
 
@@ -534,6 +534,6 @@ Aşağıdaki örnekte (alınan [zaman UYUMSUZ](../../visual-cpp-samples.md) örn
 
 [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, database support
 ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
-ms.openlocfilehash: 9635b7e045812cc90c5d6e9662b8475e411a0b48
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a1e0519e1351a48bbd969168d62f163c9dde7e7e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654213"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259964"
 ---
 # <a name="database-support-mfc-application-wizard"></a>Veritabanı Desteği, MFC Uygulama Sihirbazı
 
@@ -23,8 +23,8 @@ Bu sayfa, veritabanının düzeyini belirtmenize olanak sağlayan seçenekler sa
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Yok**|Hiçbir veritabanı desteği sağlar. Varsayılan seçenek budur.|
-   |**Yalnızca üst bilgi dosyaları**|Uygulamanız için temel düzeyde bir veritabanı desteği sağlar. ODBC desteği altında seçerseniz **istemci türü**, MFC Uygulama Sihirbazı projenizde AFXDB üstbilgi dosyasını içerir. H Bağlantı kitaplıkları ekler, ancak herhangi bir veritabanı özgü sınıflar oluşturmaz. Daha sonra kayıt kümeleri oluşturma ve bunları inceleyin ve kayıtları güncelleştirmek için kullanın. OLE DB desteği altında seçerseniz **istemci türü**, aşağıdaki üst bilgi dosyaları dahil edilir: ATLBASE. H AFXOLEDB. H ATLPLUS. H|
+   |**Yok.**|Hiçbir veritabanı desteği sağlar. Varsayılan seçenek budur.|
+   |**Yalnızca üst bilgi dosyaları**|Uygulamanız için temel düzeyde bir veritabanı desteği sağlar. ODBC desteği altında seçerseniz **istemci türü**, MFC Uygulama Sihirbazı projenizde AFXDB üstbilgi dosyasını içerir. H Bağlantı kitaplıkları ekler, ancak herhangi bir veritabanı özgü sınıflar oluşturmaz. Daha sonra kayıt kümeleri oluşturma ve bunları inceleyin ve kayıtları güncelleştirmek için kullanın. OLE DB desteği altında seçerseniz **istemci türü**, aşağıdaki üst bilgi dosyaları dahil edilir: ATLBASE.H AFXOLEDB.H ATLPLUS.H|
    |**Dosya desteği olmadan veritabanı görünümü**|Veritabanı üst bilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve bir kayıt kümesi içerir. (Kullanılabilir olan uygulamalar için **belge/görünüm mimarisi desteği** seçeneğe [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfası.) Bu seçenek, belge desteği, ancak hiçbir serileştirme desteği içerir. Veritabanı görünümü dahil kullanmayı tercih ederseniz, veri kaynağı belirtmeniz gerekir.|
    |**Dosya destekli veritabanı görünümü**|Veritabanı üst bilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve bir kayıt kümesi içerir. (Kullanılabilir olan uygulamalar için **belge/görünüm mimarisi desteği** seçeneğe **uygulama türü** sayfası.) Bu seçenek, örneğin, bir kullanıcı profili dosyasını güncelleştirmek için kullanabileceğiniz Belge Serileştirme destekler. Yerine dosya ve bu nedenle temel serileştirme gerekmez veritabanı uygulamaları, genellikle kayıt başına temelinde çalışır. Ancak, serileştirme için özel bir kullanım olabilir. Veritabanı görünümü dahil kullanmayı tercih ederseniz, veri kaynağı belirtmeniz gerekir.|
 
@@ -64,7 +64,7 @@ Bu sayfa, veritabanının düzeyini belirtmenize olanak sağlayan seçenekler sa
 
    ODBC istemci için kullanılabilir. Seçili tablodaki tüm sütunları bağlanıp bağlanmadığını belirtir. Bu kutusunu seçerseniz, tüm sütunları bağlıdır; Bu kutuyu işaretlemeyin, hiçbir sütun bağlı ve el ile kayıt kümesi sınıfında bağlanmalıdır.
 
-- **Türü**
+- **Tür**
 
    ODBC istemci için kullanılabilir. Aşağıdaki tabloda açıklandığı gibi kayıt bir dinamik bir anlık görüntü olup olmadığını belirtir.
 
@@ -73,6 +73,6 @@ Bu sayfa, veritabanının düzeyini belirtmenize olanak sağlayan seçenekler sa
    |**Dynaset**|Kayıt kümesi bir dinamik olduğunu belirtir. Bir dinamik sorgulanan veritabanının verilerini dizinli bir görünüm sağlar bir sorgu sonucudur. Bir dinamik özgün verilere yalnızca integral dizin önbelleğe alır ve böylece bir anlık görüntü üzerinde bir performans sunar elde edin. Dizin noktaları doğrudan her kayıt için bir sorgu sonucunda bulunan ve bir kaydı kaldırılırsa, gösterir. Ayrıca güncel bilgilere sorgulanan kayıtlara erişebilirsiniz.|
    |**Anlık Görüntü**|Kayıt kümesi bir anlık görüntü olduğunu belirtir. Bir anlık görüntü sorgu sonucu ve zaman içinde bir noktadaki bir veritabanına görünümüdür. Özgün kayıtlarının değişiklikleri görmek için bir sorgu sonucunda bulunan tüm kayıtları önbelleğe alınır.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)

@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArray class
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-ms.openlocfilehash: 6395e324d5efdba208a7f77d86ca466fb7cdbb5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c050002549fc6b7a18acb34f0e4f9a2f278db82
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460469"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263409"
 ---
 # <a name="csimplearray-class"></a>CSimpleArray sınıfı
 
@@ -307,6 +307,6 @@ Belirtilen öğe için atanacak değer.
 
 DOĞRU başarılı, yanlış dizini geçerli değil, döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

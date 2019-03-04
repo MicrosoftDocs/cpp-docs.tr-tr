@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Internet applications [MFC], security
 - Web application security [MFC], Internet security approaches
 ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
-ms.openlocfilehash: e7892793a82f2b030a99465a712e33e1b9ef4673
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 184c8edf3e4a81be1f8b2a282a0db9758a75253f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486105"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259535"
 ---
 # <a name="internet-security-c"></a>Internet Güvenliği (C++)
 
@@ -28,8 +28,7 @@ Kod güvenliği geliştiriciler ve kullanıcılar Internet uygulamaları için �
 
 Bu durumda, uygulamanın herhangi bir zarar yapmaz ve uygulama kaynağı güven güven. İkinci, dijital imzalar, orjinalliği doğrulamak için kullanılır. Dijital imza tanımlamak ve kod yayımcısı ayrıntılarını sağlamak için kullanılan bir endüstri standardıdır. Bu teknoloji, RSA ve X.509 dahil olmak üzere standartlarını temel alır. Tarayıcılar, genellikle bunlar indirip bilinmeyen kaynaklardan gelen kodu çalıştırmak isteyip istemediklerini açmasına imkan tanıyın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
-

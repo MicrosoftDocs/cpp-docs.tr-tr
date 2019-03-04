@@ -7,20 +7,20 @@ helpviewer_keywords:
 - objects [MFC], graphic objects
 - one-stage and two-stage construction of objects [MFC]
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
-ms.openlocfilehash: bdfb7879bc926435bdcd72d6776646c449ffef80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 871db7abd2682d557bf2e80e9cb97624f0dc53a6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623320"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263643"
 ---
 # <a name="one-stage-and-two-stage-construction-of-objects"></a>Nesnelerin Tek Aşamalı ve İki Aşamalı Yapımı
 
 Arasında kalemler ve fırçalar gibi grafik nesneleri oluşturmak için iki teknik vardır:
 
-- *Tek aşamalı yapımı*: yapısı ve tüm Oluşturucu ile tek bir aşamada nesne başlatılamadı.
+- *Tek aşamalı yapımı*: Oluşturun ve tüm oluşturucusuna sahip bir aşamada nesnesini başlatır.
 
-- *İki aşamalı yapımı*: yapısı ve iki ayrı aşamadan içinde nesne başlatılamadı. Oluşturucu nesnesi oluşturur ve bunu bir başlangıç işlevini başlatır.
+- *İki aşamalı yapımı*: Oluşturun ve iki ayrı aşamada nesnesini başlatır. Oluşturucu nesnesi oluşturur ve bunu bir başlangıç işlevini başlatır.
 
 İki aşamalı yapımı her zaman daha güvenlidir. Tek aşamalı oluşturma, oluşturucu bağlanamazsa özel durum yanlış bağımsız değişkenleri sağlayın veya bellek ayırma başarısız. Bu sorun, hata için denetlenecek sahip, ancak iki aşamalı yapımı tarafından önlenmiş olur. Her iki durumda da, nesneyi yok etmek aynı işlemdir.
 
@@ -43,7 +43,6 @@ Bir pen nesnesi oluşturmak, her iki yöntem de aşağıdaki kısa örnek göste
 
 - [Bir Görünümde Çizim Yapma](../mfc/drawing-in-a-view.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Grafik Nesneler](../mfc/graphic-objects.md)
-

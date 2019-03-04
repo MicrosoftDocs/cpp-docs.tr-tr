@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-ms.openlocfilehash: 9b698616dbde06452e9ab08f37c646a2cedbc37c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 791901ab3181ad2c8ac862a970980250693d20f7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572776"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258287"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 
@@ -56,7 +56,7 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
    > [!NOTE]
    > Öznitelikleri kullanarak projenizi oluşturmak ya da özellik sayfasını öznitelikleri kullanır Bu sihirbaz sayfasındaki gösteriyorsa, ATL içermez çünkü bu seçeneği değiştiremezsiniz `coclass` özniteliği.
 
-- **Türü**
+- **Tür**
 
    Ayarlar kayıt defterinde görünür nesne açıklaması
 
@@ -64,9 +64,8 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
 
    Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Özellik Sayfası Sihirbazı Seçenekleri](../../atl/reference/options-atl-property-page-wizard.md)<br/>
 [Dizeleri, ATL Özellik Sayfası Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
-[Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)
-
+[Örnek: Özellik sayfası uygulama](../../atl/example-implementing-a-property-page.md)

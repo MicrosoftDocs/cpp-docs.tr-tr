@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: b138c4f84a10823d9c340218baefd530c016027a
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: ef486e653eaf78914ea25663e0c1ab744ab30cd4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179038"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260016"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 
@@ -819,7 +819,7 @@ Aşağıdaki seçenekler için desteklenen `GetSockOpt`. Tarafından ele alınan
 |SO_KEEPALIVE|BOOL|Gönderilen etkin tutma.|
 |SO_LINGER|`struct LINGER`|Geçerli lınger seçeneklerini döndürür.|
 |SO_OOBINLINE|BOOL|Bant dışı verileri normal veri akışında alınır.|
-|SO_SNDBUF|int|Arabellek boyutunu alır.|
+|SO_RCVBUF|int|Arabellek boyutunu alır.|
 |SO_REUSEADDR|BOOL|Yuva zaten kullanımda olan bir adresle bağlı olabilir.|
 |SO_SNDBUF|**int**|Arabellek boyutu için gönderir.|
 |SO_TYPE|**int**|' % S'yuva (örneğin, SOCK_STREAM) türü.|
@@ -1724,7 +1724,7 @@ Aşağıdaki seçenekler için desteklenen `SetSockOpt`. Tarafından ele alınan
 |SO_KEEPALIVE|BOOL|Canlı tutma gönderir.|
 |SO_LINGER|`struct LINGER`|Lınger `Close` , veri gönderilmedi.|
 |SO_OOBINLINE|BOOL|Bant dışı verileri normal veri akışında alırsınız.|
-|SO_SNDBUF|**int**|Arabellek boyutu için alan belirtin.|
+|SO_RCVBUF|**int**|Arabellek boyutu için alan belirtin.|
 |SO_REUSEADDR|BOOL|Yuva zaten kullanımda olan bir adres bağlı olmasını sağlar. (Bkz [bağlama](#bind).)|
 |SO_SNDBUF|**int**|Gönderen için arabellek boyutu belirtin.|
 |TCP_NODELAY|BOOL|Gönderme birleşim Nagle algoritmasını devre dışı bırakır.|
@@ -1755,7 +1755,7 @@ BOOL ShutDown(int nHow = sends);
 *nHow*<br/>
 Hangi tür işlem açıklayan bir bayrak artık, aşağıdaki numaralandırılmış değerlerden kullanarak izin verilir:
 
-- **alan = 0**
+- **receives = 0**
 
 - **gönderen = 1**
 
@@ -1835,7 +1835,7 @@ Döndürür `TRUE` başarı, `FALSE` başarısız.
 
 Bu yöntem bir yuva işleyicisini ayırır. Çağrılmayan [CAsyncSocket::Bind](#bind) çağrısı yapması için belirtilen bir adrese yuvası bağlama `Bind` yuva daha sonra belirtilen bir adresin bağlanacağı. Kullanabileceğiniz [CAsyncSocket::SetSockOpt](#setsockopt) önce bağlı olarak yuva seçeneği ayarlamak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

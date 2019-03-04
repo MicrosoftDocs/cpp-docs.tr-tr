@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, vs. MFC
 ms.assetid: 269325bb-11a8-4330-ad2b-a14a2458679e
-ms.openlocfilehash: b3c01a54c1250ae97d5377cb0b1ff49a17c3f7c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4e51f81bbdc54ff09980acfba22037df77abac9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468256"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259782"
 ---
 # <a name="recommendations-for-choosing-between-atl-and-mfc"></a>ATL ile MFC arasında seçim önerileri
 
@@ -28,7 +28,6 @@ MFC tüm uygulamalara, ActiveX denetimleri ve etkin belgeler oluşturmanıza ola
 
 Bir sihirbaz çalıştırarak var olan bir MFC projesinde ATL kullanma desteği ekleyebilirsiniz. Ayrıntılar için bkz [MFC projenize ATL desteği ekleme](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL’ye Giriş](../atl/introduction-to-atl.md)
-

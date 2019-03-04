@@ -13,12 +13,12 @@ helpviewer_keywords:
 - threading [MFC]
 - user interface threads [C++]
 ms.assetid: 979605f8-3988-44b5-ac9c-b8cce7fcce14
-ms.openlocfilehash: c707c1c117bbc0005b2b3da4ed39f083ae407b27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcffc2964d8e15fd47f437366863748175e12622
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643423"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258352"
 ---
 # <a name="multithreading-with-c-and-mfc"></a>C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
 
@@ -32,7 +32,7 @@ Bir iş parçacığı bir işlemdeki yürütme yoludur. Not Defteri'ni başlatt�
 
 MFC, iki tür iş parçacığını birbirinden ayırır: kullanıcı arabirimi iş parçacıkları ve çalışan iş parçacıkları. Kullanıcı arabirimi iş parçacıkları genellikle kullanıcı girişlerini işler ve olaylarını ve kullanıcı tarafından oluşturulan iletileri yanıtlamak için kullanılır. Çalışan iş parçacıkları genellikle kullanıcı girişi gerektirmeyen görevleri yeniden hesaplama gibi tamamlamak için kullanılır. Win32 API iş parçacığı türleri arasında ayrım yapmaz; yalnızca iş parçacığının yürütmeye başlayabilmesi için onun başlangıç adresini bilmesi gerekir. MFC özel kullanıcı arabirimdeki olaylar için bir ileti pompası sağlayarak kullanıcı arabirimi iş parçacıkları işler. `CWinApp` öğesinden türetildiği için kullanıcı arabirimi iş parçacığı nesnesi örnektir `CWinThread` ve olaylarını ve kullanıcı tarafından oluşturulan iletileri işler.
 
-İçin burada birden fazla iş parçacığı aynı nesneye erişim gerektirebileceği durumlara özellikle dikkat verilmelidir. [Çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md) bu durumlarda doğabilecek sorunları etrafında almak için kullanabileceğiniz teknikleri açıklar. [Çoklu iş parçacığı kullanımı: eşitleme sınıfları nasıl](multithreading-how-to-use-the-synchronization-classes.md) tek bir nesneye birden çok iş parçacığından erişimi senkronize etmek sınıflarının nasıl kullanılacağını açıklar.
+İçin burada birden fazla iş parçacığı aynı nesneye erişim gerektirebileceği durumlara özellikle dikkat verilmelidir. [Çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md) bu durumlarda doğabilecek sorunları etrafında almak için kullanabileceğiniz teknikleri açıklar. [Çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](multithreading-how-to-use-the-synchronization-classes.md) tek bir nesneye birden çok iş parçacığından erişimi senkronize etmek sınıflarının nasıl kullanılacağını açıklar.
 
 Yazma ve hata ayıklama çok iş parçacıklı programlama, karmaşık ve zor bir iş kendiliğinden nesneleri aynı anda birden fazla iş parçacığı tarafından erişilemeyen emin olmanız gerektiğinden değil. Çoklu iş parçacığı kullanımı konuları, birden çok iş parçacıklı programlama MFC çoklu iş parçacığı kullanan programınızda kullanmak nasıl yalnızca ilgili temel bilgileri öğretmez. Visual C++'de bulunan çoklu iş parçacığı kullanan MFC örnekleri birkaç çoklu iş parçacığı kullanan işlev ekleme ve MFC tarafından kapsanmayan Win32 API'ları gösterilmektedir; Ancak, bunlar yalnızca bir başlangıç noktası olacak şekilde tasarlanmıştır.
 
@@ -40,18 +40,18 @@ Yazma ve hata ayıklama çok iş parçacıklı programlama, karmaşık ve zor bi
 
 MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-- [Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma](multithreading-creating-user-interface-threads.md)
+- [Çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](multithreading-creating-user-interface-threads.md)
 
-- [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](multithreading-creating-worker-threads.md)
+- [Çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](multithreading-creating-worker-threads.md)
 
-- [Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıflarını Kullanma](multithreading-how-to-use-the-synchronization-classes.md)
+- [Çoklu iş parçacığı kullanımı: Eşitleme sınıflarını kullanma](multithreading-how-to-use-the-synchronization-classes.md)
 
-- [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](multithreading-terminating-threads.md)
+- [Çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma](multithreading-terminating-threads.md)
 
-- [Çoklu İş Parçacığı Kullanımı: Programlama İpuçları](multithreading-programming-tips.md)
+- [Çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md)
 
-- [Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıfları Ne Zaman Kullanılır?](multithreading-when-to-use-the-synchronization-classes.md)
+- [Çoklu iş parçacığı kullanımı: Zaman eşitleme sınıflarını kullanma](multithreading-when-to-use-the-synchronization-classes.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)

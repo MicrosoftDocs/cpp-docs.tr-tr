@@ -4,12 +4,12 @@ ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-ms.openlocfilehash: b8a08919ce6792babb9b8b1b809e242465a200f9
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 75491130e8e5fc426116685332490efd2c5fe60b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176451"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262876"
 ---
 # <a name="parallel-algorithms"></a>Paralel Algoritmalar
 
@@ -78,7 +78,7 @@ Bu örnek, örnek aşağıdaki çıktıyı üretir:
 
 Çünkü `parallel_for` her öğesine paralel algoritma davranır, değerleri konsola yazdırılır sırasını farklılık gösterir.
 
-Kullanan tam bir örnek `parallel_for` algoritmasını bkz [nasıl yapılır: parallel_for döngüsü yazma](../../parallel/concrt/how-to-write-a-parallel-for-loop.md).
+Kullanan tam bir örnek `parallel_for` algoritmasını bkz [nasıl yapılır: Parallel_for döngüsü yazma](../../parallel/concrt/how-to-write-a-parallel-for-loop.md).
 
 [[Üst](#top)]
 
@@ -104,7 +104,7 @@ Bu örnek, örnek aşağıdaki çıktıyı üretir:
 
 Çünkü `parallel_for_each` her öğesine paralel algoritma davranır, değerleri konsola yazdırılır sırasını farklılık gösterir.
 
-Kullanan tam bir örnek `parallel_for_each` algoritmasını bkz [nasıl yapılır: parallel_for_each döngüsü yazma](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md).
+Kullanan tam bir örnek `parallel_for_each` algoritmasını bkz [nasıl yapılır: Parallel_for_each döngüsü yazma](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md).
 
 [[Üst](#top)]
 
@@ -128,7 +128,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 108 11.2 HelloHello
 ```
 
-Kullanan tam örnekler için `parallel_invoke` algoritmasını bkz [nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) ve [nasıl yapılır: paralel işlemleri yürütmek için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md).
+Kullanan tam örnekler için `parallel_invoke` algoritmasını bkz [nasıl yapılır: Paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) ve [nasıl yapılır: Paralel işlemleri yürütmek için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md).
 
 [[Üst](#top)]
 
@@ -189,7 +189,7 @@ Aşağıdaki örnek, seri olarak ve paralel asal sayıları toplamını hesaplam
 
 [!code-cpp[concrt-parallel-map-reduce-sum-of-primes#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_7.cpp)]
 
-Bir eşleme gerçekleştirir ve paralel işlem azaltmak başka bir örnek için bkz: [nasıl yapılır: eşleme gerçekleştirme ve işlemleri paralel azaltma](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).
+Bir eşleme gerçekleştirir ve paralel işlem azaltmak başka bir örnek için bkz [nasıl yapılır: Eşleme gerçekleştirme ve işlemleri paralel olarak azaltma](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).
 
 [[Üst](#top)]
 
@@ -241,9 +241,9 @@ Aşağıdaki tabloda, üç paralel sıralama algoritmaları önemli özellikleri
 
 |Algoritması|Açıklama|Sıralama mekanizması|Sıralama kararlılık|Bellek gereksinimleri|Zaman karmaşıklığı|Yineleyici erişimi|
 |---------------|-----------------|-----------------------|--------------------|-------------------------|---------------------|---------------------|
-|`parallel_sort`|Genel amaçlı karşılaştırma tabanlı Sırala.|(Artan karşılaştırma tabanlı)|Kararsız|Yok.|O((N/P)log(N/P) + 2N((P-1)/P))|rastgele|
+|`parallel_sort`|Genel amaçlı karşılaştırma tabanlı Sırala.|(Artan karşılaştırma tabanlı)|Kararsız|Hiçbiri|O((N/P)log(N/P) + 2N((P-1)/P))|rastgele|
 |`parallel_buffered_sort`|O(N) alanı gerektiren daha hızlı genel amaçlı karşılaştırma tabanlı Sırala.|(Artan karşılaştırma tabanlı)|Kararsız|Ek O(N) alanı gereklidir|O((N/P)log(N))|rastgele|
-|`parallel_radixsort`|O(N) alanı gerektiren tamsayı anahtar tabanlı Sırala.|Karma tabanlı|Kararlı|Ek O(N) alanı gereklidir|O(N/P)|rastgele|
+|`parallel_radixsort`|O(N) alanı gerektiren tamsayı anahtar tabanlı Sırala.|Karma tabanlı|Dengeli|Ek O(N) alanı gereklidir|O(N/P)|rastgele|
 
 Aşağıdaki resimde, üç paralel sıralama algoritmaları önemli özelliklerini daha grafik şeklinde gösterir.
 
@@ -314,8 +314,8 @@ Bu örnekte, sıralama sırasında O(N) alan ayırmak için kabul edilebilir old
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[Nasıl yapılır: parallel_for Döngüsü Yazma](../../parallel/concrt/how-to-write-a-parallel-for-loop.md)|Nasıl kullanılacağını gösterir `parallel_for` matris çarpım gerçekleştirmek için kullanılan algoritma.|
-|[Nasıl yapılır: parallel_for_each Döngüsü Yazma](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md)|Nasıl kullanılacağını gösterir `parallel_for_each` sayısı içinde asal sayıları hesaplamak için algoritması bir [std::array](../../standard-library/array-class-stl.md) paralel nesne.|
-|[Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic sıralama algoritmasının performansını artırmak için algoritma.|
+|[Nasıl yapılır: parallel_for Döngüsü Yazma](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md)|Nasıl kullanılacağını gösterir `parallel_for_each` sayısı içinde asal sayıları hesaplamak için algoritması bir [std::array](../../standard-library/array-class-stl.md) paralel nesne.|
+|[Nasıl yapılır: Paralel Sıralama Yordamı Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic sıralama algoritmasının performansını artırmak için algoritma.|
 |[Nasıl yapılır: Paralel İşlemleri Yürütmek için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bir paylaşılan veri kaynağı üzerinde birden çok işlem gerçekleştiren bir programın performansını artırmak için kullanılan algoritma.|
 |[Nasıl yapılır: Eşleme Gerçekleştirme ve İşlemleri Paralel Olarak Azaltma](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md)|Nasıl kullanılacağını gösterir `parallel_transform` ve `parallel_reduce` bir eşleme gerçekleştirme ve oluşumlarını dosyaları sözcükleri sayar işlemi azaltmak için algoritmalar.|
 |[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|PPL, ölçeklenebilirlik ve kolayca eş zamanlı uygulamalar geliştirmeye yönelik kullanım yükseltir kesinlik temelli bir programlama modeli sunar açıklar.|
@@ -343,4 +343,3 @@ Bu örnekte, sıralama sırasında O(N) alan ayırmak için kabul edilebilir old
 [parallel_buffered_sort işlevi](reference/concurrency-namespace-functions.md#parallel_buffered_sort)
 
 [parallel_radixsort işlevi](reference/concurrency-namespace-functions.md#parallel_radixsort)
-

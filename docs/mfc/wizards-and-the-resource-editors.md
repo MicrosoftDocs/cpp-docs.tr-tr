@@ -12,12 +12,12 @@ helpviewer_keywords:
 - MFC, wizards
 - Class View tool, managing Windows messages
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-ms.openlocfilehash: fe55336d38393787988eac3a6f57394f3923260e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5316899b7eb8828847af6d7db95edf3d8ba3822a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472754"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265528"
 ---
 # <a name="wizards-and-the-resource-editors"></a>Sihirbazlar ve Kaynak Düzenleyicileri
 
@@ -50,6 +50,6 @@ Daha fazla yardımcı olmak için Microsoft Foundation Class Kitaplığı ortak 
 
 MFC Uygulama Sihirbazı, Visual C++ sihirbazları, kaynak düzenleyicileri ve MFC çerçevesi sizin için çok fazla iş yapın ve kodunuzu çok daha kolay yönetme yapın. Uygulamaya özel kodunuzun toplu, belge ve görünüm sınıfları ' dir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

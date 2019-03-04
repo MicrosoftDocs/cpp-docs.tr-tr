@@ -5,12 +5,12 @@ helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-ms.openlocfilehash: 9cf38d3d469da181d15a10434525b3aca63969f0
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: fa6dc78c95717f9201e18346f1cbe573fa3c48d2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175905"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262889"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 
@@ -66,7 +66,6 @@ Varsayılan olarak, her `CDockablePane` otomatik gizleme özelliğini destekler.
 
 Outlook çubuğu denetimini de sekmeli çubuklara dayalıdır. [CMFCOutlookBar sınıfı](../mfc/reference/cmfcoutlookbar-class.md) türetilir `CBaseTabbedPane`. Outlook Çubuğu kullanma hakkında daha fazla bilgi için bkz. [CMFCOutlookBar sınıfı](../mfc/reference/cmfcoutlookbar-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../mfc/mfc-concepts.md)
-

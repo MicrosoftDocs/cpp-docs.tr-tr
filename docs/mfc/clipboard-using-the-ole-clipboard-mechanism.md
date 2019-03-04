@@ -1,5 +1,5 @@
 ---
-title: 'Pano: OLE Pano Mekanizmasını Kullanma'
+title: 'Pano: OLE Pano mekanizmasını kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [OLE], Clipboard
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - OLE Clipboard, formats
 - formats [MFC], Clipboard for OLE
 ms.assetid: 229cc610-5bb1-435e-bd20-2c8b9964d1af
-ms.openlocfilehash: 3dadd2ae6774c684fe751e02fb3a80570accd30a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8ef93b306c0968adf2c23c841c792d2f7af5de3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661454"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262258"
 ---
-# <a name="clipboard-using-the-ole-clipboard-mechanism"></a>Pano: OLE Pano Mekanizmasını Kullanma
+# <a name="clipboard-using-the-ole-clipboard-mechanism"></a>Pano: OLE Pano mekanizmasını kullanma
 
 OLE Pano aracılığıyla verileri aktarmak için standard biçimleri ve bazı özel OLE biçimleri kullanır.
 
@@ -43,7 +43,6 @@ Panodan en çok bilgi almak için uygulamalar Pano verilerini yapıştırma önc
 
 - [OLE veri nesneleri ve veri kaynaklarını ve Tekdüzen veri aktarımı](../mfc/data-objects-and-data-sources-ole.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pano](../mfc/clipboard.md)
-

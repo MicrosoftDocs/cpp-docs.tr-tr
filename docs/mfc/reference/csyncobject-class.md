@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSyncObject [MFC], Unlock
 - CSyncObject [MFC], m_hObject
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
-ms.openlocfilehash: d72d167be874d0776ce8da02784c2e0c267c9175
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 842ff5f98f05425fbbb511d112ae3e4fd65ff076
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547439"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263724"
 ---
 # <a name="csyncobject-class"></a>CSyncObject sınıfı
 
@@ -62,7 +62,7 @@ class CSyncObject : public CObject
 
 Microsoft Foundation Class Kitaplığı ile türetilmiş birkaç sınıflarını sağlar `CSyncObject`. Bunlar [CEvent](../../mfc/reference/cevent-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CSemaphore](../../mfc/reference/csemaphore-class.md).
 
-Eşitleme nesneleri kullanma hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Eşitleme nesneleri kullanma hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -159,8 +159,7 @@ Varsayılan uygulama her zaman TRUE değerini döndürür.
 
 Varsayılan uygulama bildirimi iki parametre ile her zaman TRUE değerini döndürür. Bu işlev, çağıran iş parçacığına ait eşitleme nesnesi erişimi serbest bırakmak için çağrılır. Denetlenen bir kaynağın birden fazla erişim izni semaforlar gibi eşitleme nesneleri için ikinci bildirim sağlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

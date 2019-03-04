@@ -17,12 +17,12 @@ helpviewer_keywords:
 - ON_BN_HILITE [MFC]
 - ON_BN_CLICKED [MFC]
 ms.assetid: 410ea968-478f-4806-b7b8-5d7c8dc2bf42
-ms.openlocfilehash: 55bf42d88cca805a8a75165e6fa868b9925d4d4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b79c781243b0af02479d37865a86577311789da
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542382"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263448"
 ---
 # <a name="user-button-handlers"></a>Kullanıcı Düğmesi İşleyicileri
 
@@ -31,13 +31,12 @@ Aşağıdaki eşleme girişleri için işlev prototipleri karşılık gelir.
 |Eşleme girişi|İşlev prototipi|
 |---------------|------------------------|
 |ON_BN_CLICKED ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_BN_DISABLE ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_BN_DISABLE( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
 |ON_BN_DOUBLECLICKED ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_BN_HILITE ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_BN_PAINT ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_BN_UNHILITE ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_BN_HILITE( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_BN_PAINT( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_BN_UNHILITE( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
-

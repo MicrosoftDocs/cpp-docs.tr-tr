@@ -1,5 +1,5 @@
 ---
-title: 'TN070: MFC Pencere Sınıfı Adları'
+title: 'TN070: MFC pencere sınıfı adları'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.classes
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - window class names [MFC]
 - TN070 [MFC]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
-ms.openlocfilehash: 609cfade60b1b7b51fb2fd5597c4d491d3eb861c
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 8b06f7b3656284de18632185877fdbe382343f95
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692675"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260584"
 ---
-# <a name="tn070-mfc-window-class-names"></a>TN070: MFC Pencere Sınıfı Adları
+# <a name="tn070-mfc-window-class-names"></a>TN070: MFC pencere sınıfı adları
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -42,9 +42,8 @@ Yerini onaltılık basamak `%x` karakter doldurulur verilerden gelen [WNDCLASS](
 
 İlk form (`Afx:%x:%x`) kullanıldığında **hCursor**, **hbrBackground**, ve **hIcon** tümü **NULL**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)<br/>
-[TN020: Kimlik Adlandırma ve Numaralandırma Kuralları](../mfc/tn020-id-naming-and-numbering-conventions.md)
-
+[TN020: Kimlik adlandırma ve numaralandırma kuralları](../mfc/tn020-id-naming-and-numbering-conventions.md)

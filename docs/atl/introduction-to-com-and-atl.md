@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL, COM
 - COM objects, ATL
 ms.assetid: 35d6ae9c-abbb-42f0-9344-33f3c19ac3ce
-ms.openlocfilehash: c733d2f437a3cc8634b77edb8c76ad87a6bfd84e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdfee1969781af5efdfbcdadfbbbce3f64d2dda0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620746"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258417"
 ---
 # <a name="introduction-to-com-and-atl"></a>COM ve ATL'ye giriş
 
@@ -36,4 +36,3 @@ Active Template Library kullanarak programlama hakkında kavramsal konulara bağ
 
 [ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)<br/>
 Başvuru bilgileri ve ATL sınıfları için bağlantılar sağlar.
-

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - interfaces, availability
 - QueryInterface method
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
-ms.openlocfilehash: 552d0a0f5cbc93bd0d8fc6eb4a77eecee851add6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3ec3c6e0d2b534c3af49000202461a43a65dae9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477941"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261472"
 ---
 # <a name="queryinterface"></a>QueryInterface
 
@@ -24,8 +24,7 @@ Her arabirimi türetilir `IUnknown`her arabirim uygulaması vardır. Bu nedenle 
 
 Uyma gerekir Not [başvuru sayımı](../atl/reference-counting.md) kuralları her zaman. Eğer `Release` başvuru sayısı sıfır değerine düşürmek için bir arabirim işaretçisi üzerinde Bu işaretçi yeniden kullanmamanız gerekir. Bazen bir nesnenin zayıf bir başvuru elde etmeniz gerekebilir (diğer bir deyişle, başvuru sayısını artırmadan arabirimlerinden birini bir işaretçi alma iyi olabilir), ancak bunu çağırarak yapmak için kabul edilebilir değil `QueryInterface` ardından `Release`. Böyle bir şekilde elde edilen işaretçi, geçersiz ve kullanılmamalıdır. Bu daha kolay olduğunda görünür olur [_ATL_DEBUG_INTERFACES](reference/debugging-and-error-reporting-macros.md#_atl_debug_interfaces) bu makrosu tanımlama bulma başvuru sayım hataları için kullanışlı bir yol, bu nedenle, tanımlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COM’a Giriş](../atl/introduction-to-com.md)<br/>
-[QueryInterface: bir nesne içinde gezinme](/windows/desktop/com/queryinterface--navigating-in-an-object)
-
+[QueryInterface: Bir nesne içinde gezinme](/windows/desktop/com/queryinterface--navigating-in-an-object)

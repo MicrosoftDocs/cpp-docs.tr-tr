@@ -7,12 +7,12 @@ helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - tool tips [MFC], notifications
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-ms.openlocfilehash: d184b1d507579309051cd6c70ea6525463c44881
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d77ca7dc55273e6084e919323ed71e55fa68a2c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676518"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260601"
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT Yapısı
 
@@ -50,7 +50,6 @@ Ne zaman işleneceğini `TTN_NEEDTEXT` bildirim iletisi, aşağıdaki yollardan 
 
 - Kopyalamak için bir dize kaynağının tanımlayıcısını *lpszText* üye ve kopyalama kaynağı içeren örneğinin tutamacını *hinst* üyesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
-

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CAnimationSize [MFC], m_cxValue
 - CAnimationSize [MFC], m_cyValue
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-ms.openlocfilehash: ad7200ca53aa99104270209ca253b93d2393d8a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f52016afe39da900dca4847d29beccb97d829b60
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448652"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258262"
 ---
 # <a name="canimationsize-class"></a>CAnimationSize sınıfı
 
@@ -302,6 +302,6 @@ Yeni varsayılan boyutunu belirtir.
 
 Animasyon nesnesine bir varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntem, genişlik ve yükseklik animasyon boyutu için varsayılan değerleri atar. Ayrıca bunlar oluşturulmuşsa temel COM nesneleri yeniden oluşturur. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesnesine abone, bu olayları yeniden etkinleştirmeniz gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

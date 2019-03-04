@@ -8,12 +8,12 @@ helpviewer_keywords:
 - initializing objects [MFC], document objects
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-ms.openlocfilehash: 2fb557d55576678d8c1199bec20e1fa4c849e1b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0cf9faecbb7e0d74c2199a1a829aa68241e1c019
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612257"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264098"
 ---
 # <a name="initializing-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma
 
@@ -21,7 +21,6 @@ Her iki yönde belge sınıfınıza desteklemelidir şekilde iki farklı yolla b
 
 Görünüm belgelerini oluşturulduktan sonra oluşturulur. Framework belge çerçeve penceresi ve görünüm oluşturma tamamlandıktan sonra bir görünüm başlatmak için en iyi saattir. Geçersiz kılarak görünümünüzü başlatabilirsiniz [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) üye işlevinin [CView](../mfc/reference/cview-class.md). Yeniden başlatın veya hiçbir şey ayarlamak istiyorsanız, belge değişiklikleri her zaman, geçersiz kılabilirsiniz [OnUpdate](../mfc/reference/cview-class.md#onupdate).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belgeleri ve Görünümleri Başlatma ve Temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
-

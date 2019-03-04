@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-ms.openlocfilehash: 9ec6177b1f2cb071a6aa284c2936f3af4dbe4634
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea95de2bceab290f94bb7c0e7bbc94a90048ee13
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468282"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259262"
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
 
@@ -337,11 +337,11 @@ Bu görünüm için ayarlanacak eşleme modu. Olası değerler şunlardır:
 |Eşleme modu|Mantıksal birim|Pozitif y ekseni Extends...|
 |------------------|------------------|---------------------------------|
 |MM_TEXT|1 piksel|Aşağı|
-|MM_HIMETRIC|0,01 mm|Yukarı|
-|MM_TWIPS|1/1440|Yukarı|
-|MM_HIENGLISH|0,001 giriş|Yukarı|
-|MM_LOMETRIC|0,1 mm|Yukarı|
-|MM_LOENGLISH|0,01 giriş|Yukarı|
+|MM_HIMETRIC|0,01 mm|Upward|
+|MM_TWIPS|1/1440|Upward|
+|MM_HIENGLISH|0,001 giriş|Upward|
+|MM_LOMETRIC|0,1 mm|Upward|
+|MM_LOENGLISH|0,01 giriş|Upward|
 
 Tüm bu modlardan Windows tarafından tanımlanır. İki standart eşleme modu, MM_ISOTROPIC ve MM_ANISOTROPIC, için kullanılmaz `CScrollView`. Sınıf kitaplığı sağlar `SetScaleToFitSize` görünümüne pencere boyutunu ölçeklendirmeye yönelik üye işlevi. Yukarıdaki tablosunda üç sütun koordinat yönünü açıklar.
 
@@ -374,7 +374,7 @@ MM_ISOTROPIC veya MM_ANISOTROPIC dışında Windows eşleme modun herhangi birin
 
 [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek DIBLOOK](../../visual-cpp-samples.md)<br/>
 [CView Sınıfı](../../mfc/reference/cview-class.md)<br/>

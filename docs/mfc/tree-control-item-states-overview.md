@@ -6,12 +6,12 @@ helpviewer_keywords:
 - tree controls [MFC], item states overview
 - CTreeCtrl class [MFC], item states
 ms.assetid: 2db11ae0-0d87-499d-8c1f-5e0dbe9e94c8
-ms.openlocfilehash: 389c273f7c8727ecbb4ed5455987126e21e26a63
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57c6714073f4939ffb791a78454e9eac6342309b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467957"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264605"
 ---
 # <a name="tree-control-item-states-overview"></a>Ağaç Denetim Öğesi Durumlarına Genel Bakış
 
@@ -27,8 +27,7 @@ Bir öğenin katmana resmi ayarlama durumu değiştirmenin başka bir örnek ola
 
 Bir öğenin durumu resmi ayarlanacak *nStateMask* içermelidir `TVIS_STATEIMAGEMASK` değeri ve *nDurum* 12 BITS kullanarak sol tabanlı dizin kaydırılacak durum resminin içermelidir [ INDEXTOSTATEIMAGEMASK](/windows/desktop/api/commctrl/nf-commctrl-indextostateimagemask) makrosu. Dizin yok durumu görüntüyü belirtmek için 0 olabilir. Katman ve durum görüntüleri hakkında daha fazla bilgi için bkz. [ağaç denetim görüntü listeleri](../mfc/tree-control-image-lists.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

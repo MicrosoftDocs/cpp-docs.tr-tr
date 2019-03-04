@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CAnimationRect [MFC], m_szInitial
 - CAnimationRect [MFC], m_topValue
 ms.assetid: 0294156d-241e-4a57-92b2-31234fe557d6
-ms.openlocfilehash: 4e782a9325360b69e33dfaf6a3b0649d9368b32b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 84c4cf92894a9ece2021417445c9d7ab94ee6bdf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540185"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259496"
 ---
 # <a name="canimationrect-class"></a>CAnimationRect sınıfı
 
@@ -87,7 +87,7 @@ class CAnimationRect : public CAnimationBaseObject;
 |Ad|Açıklama|
 |----------|-----------------|
 |[RECT CAnimationRect::operator](#operator_rect)|Bir CAnimationRect RECT. için dönüştürür.|
-|[CAnimationRect::operator =](#operator_eq)|Rect CAnimationRect için atar.|
+|[CAnimationRect::operator=](#operator_eq)|Rect CAnimationRect için atar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
@@ -198,7 +198,7 @@ Kullanıcı tanımlı veri belirtir.
 *PT*<br/>
 Sol üst köşedeki koordinatı.
 
-*SZ*<br/>
+*sz*<br/>
 Dikdörtgen boyutu.
 
 *nLeft*<br/>
@@ -435,6 +435,6 @@ Sol, üst, sağ ve alt yeni varsayılan değerleri belirtir.
 
 Animasyon nesnesine bir varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntemleri dikdörtgenin sınırları için varsayılan değerleri atar. Ayrıca bunlar oluşturulmuşsa temel COM nesneleri yeniden oluşturur. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesnesine abone, bu olayları yeniden etkinleştirmeniz gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

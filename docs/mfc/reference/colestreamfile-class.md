@@ -20,12 +20,12 @@ helpviewer_keywords:
 - COleStreamFile [MFC], GetStream
 - COleStreamFile [MFC], OpenStream
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
-ms.openlocfilehash: 25d3da4ac9092fe53e84e446e93ff7aa030e6709
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bc943c74f456302b13db77bf28b6e4b21a5524b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577547"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258742"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile sınıfı
 
@@ -62,7 +62,7 @@ Bir `IStorage` nesne akışı açılamıyor veya bellek akışı olmadığı sü
 
 `COleStreamFile` nesneleri yönetilen tıpkı [CFile](../../mfc/reference/cfile-class.md) nesneleri.
 
-Akışları ve depolamayı düzenleme hakkında daha fazla bilgi için bkz [kapsayıcılar: bileşik dosyalar](../../mfc/containers-compound-files.md)...
+Akışları ve depolamayı düzenleme hakkında daha fazla bilgi için bkz [kapsayıcıları: Bileşik dosyalar](../../mfc/containers-compound-files.md)...
 
 Daha fazla bilgi için [IStream](/windows/desktop/api/objidl/nn-objidl-istream) ve [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) Windows SDK.
 
@@ -241,8 +241,7 @@ Açık başarısız olursa, bir dosya özel durum oluşturulur ve *pError* NULL 
 
 Daha fazla bilgi için [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

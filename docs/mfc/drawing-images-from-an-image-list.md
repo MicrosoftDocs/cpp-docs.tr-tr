@@ -1,5 +1,5 @@
 ---
-title: Görüntü Listesinden Görüntü Çizme
+title: Resim Listesinden Resim Çizme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CImageList class [MFC], drawing images from
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: 2ed309ec4a6e58fbc4a900bc541a80004d6be3d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2058c727620c9aae4ccd9a3fbeaae02c78ce8c6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490564"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260536"
 ---
-# <a name="drawing-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Çizme
+# <a name="drawing-images-from-an-image-list"></a>Resim Listesinden Resim Çizme
 
 Görüntü çizmek için [CImageList::Draw](../mfc/reference/cimagelist-class.md#draw) üye işlevi. Bir cihaz bağlamı nesnesi, çizmek için cihaz bağlamı veren görüntü çizme konumda görüntünün dizinini ve çizim stilini belirtmek için bayrakları bir dizi işaretçi belirteceksiniz.
 
@@ -30,8 +30,7 @@ Hedef cihaz kullanarak bağlamı nonmasked görüntü kopyalanır `SRCCOPY` ızg
 
 Çizme üye işlevi, başka bir işlev yanı sıra [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), görüntü işleme olanağına genişletir. `DrawIndirect` gerçekleştirilen işlemlerin, parametre olarak bir [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) yapısı. Bu yapı, işleme ızgara işlemi (KIRPMA) kodları kullanımı dahil olmak üzere geçerli görüntünün özelleştirmek için kullanılabilir. KIRPMA kodları hakkında daha fazla bilgi için bkz. [ızgara işlemi kodları](/windows/desktop/gdi/raster-operation-codes) ve [Fırçalar bit eşlemleri](/windows/desktop/gdi/bitmaps-as-brushes) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CImageList Kullanma](../mfc/using-cimagelist.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

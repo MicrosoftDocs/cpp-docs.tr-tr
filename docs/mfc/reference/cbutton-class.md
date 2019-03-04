@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 26dcf50cc3dc48fec5d6e4957ffd1ef340ad1dbf
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: b1a02d995594f5e079359151167ac970a3d1ab37
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178649"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260146"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 
@@ -1114,7 +1114,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 Bu üye işlevi BCM_SETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](/windows/desktop/controls/buttons) Windows SDK'sı bölümünü.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

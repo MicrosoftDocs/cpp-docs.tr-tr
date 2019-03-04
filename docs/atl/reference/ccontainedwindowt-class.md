@@ -1,5 +1,5 @@
 ---
-title: CContainedWindowT sınıfı
+title: CContainedWindowT Class
 ms.date: 11/04/2016
 f1_keywords:
 - CContainedWindowT
@@ -22,14 +22,14 @@ helpviewer_keywords:
 - contained windows
 - CContainedWindowT class
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
-ms.openlocfilehash: 96e279e8ab3080c0239f1e41895142ba23c5a7c9
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 7fd9a941210407edc3424454b3375040717a05a2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693979"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261667"
 ---
-# <a name="ccontainedwindowt-class"></a>CContainedWindowT sınıfı
+# <a name="ccontainedwindowt-class"></a>CContainedWindowT Class
 
 Bu sınıf, başka bir nesne içinde yer alan bir pencere uygular.
 
@@ -460,7 +460,7 @@ static LRESULT CALLBACK WindowProc(
 
 `WindowProc` tarafından tanımlanan ileti haritasına iletileri yönlendiren [m_dwMsgMapID](#m_dwmsgmapid). Gerekirse, `WindowProc` çağrıları [DefWindowProc](#defwindowproc) ek ileti işleme için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWindow Sınıfı](../../atl/reference/cwindow-class.md)<br/>
 [CWindowImpl Sınıfı](../../atl/reference/cwindowimpl-class.md)<br/>

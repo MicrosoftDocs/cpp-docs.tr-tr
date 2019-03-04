@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Özel Olaylar Ekleme'
+title: 'MFC ActiveX denetimleri: Özel olaylar ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], events [MFC]
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - custom events [MFC]
 - FireEvent method, adding custom events
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-ms.openlocfilehash: ad44cb097f03270b09612ad756d34725464a1765
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 626aae04e0b19dc951814e4741cad3729acd3b72
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554914"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263019"
 ---
-# <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
+# <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX denetimleri: Özel olaylar ekleme
 
 Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olaylardan farklı `COleControl`. Özel olay, olay olarak denetim geliştiricisi tarafından belirlenen belirli bir eylem, tanır. Özel olaylar için olay eşleme girişleri EVENT_CUSTOM makrosu tarafından temsil edilir. Aşağıdaki bölümde, ActiveX Denetim Sihirbazı'nı kullanarak oluşturulan bir ActiveX denetimi projesi için özel bir olay uygular.
 
@@ -131,8 +131,8 @@ Aşağıdaki yordamda özel bir tıklama ekler olay.
 
 1. Çağrı `FireClick` uygun yerlerde kodunuzu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

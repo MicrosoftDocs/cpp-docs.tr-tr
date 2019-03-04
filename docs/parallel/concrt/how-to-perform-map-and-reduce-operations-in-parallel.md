@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Eşleme Gerçekleştirme ve İşlemleri Paralel Olarak Azaltma'
+title: 'Nasıl yapılır: Eşleme gerçekleştirme ve işlemleri paralel olarak azaltma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - parallel_transform function, example
 - parallel map and reduce, example
 - parallel_reduce function, example
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
-ms.openlocfilehash: b73e46e63fc1b320a84322bf2b0efd7adf244ccb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba3ffb5cdae7dcc6f108f005fab33f9a1fee6a6f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651869"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258664"
 ---
-# <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>Nasıl yapılır: Eşleme Gerçekleştirme ve İşlemleri Paralel Olarak Azaltma
+# <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>Nasıl yapılır: Eşleme gerçekleştirme ve işlemleri paralel olarak azaltma
 
 Bu örnek nasıl kullanılacağını gösterir [concurrency::parallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) ve [concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algoritmaları ve [concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md)dosyalarında bir kelimelerin oluşumları için sınıf.
 
@@ -39,7 +39,7 @@ Bu örnekte, kullandığınız `concurrent_unordered_map` sınıfı — concurre
 
 Genellikle, yalnızca dış veya iç döngü paralel hale getirmek. İç döngü paralel hale nispeten daha az sayıda dosya varsa ve her dosya pek çok sözcük içerir. Dış döngü paralel hale oldukça fazla dosya varsa ve her dosya birkaç sözcük içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_transform işlevi](reference/concurrency-namespace-functions.md#parallel_transform)<br/>

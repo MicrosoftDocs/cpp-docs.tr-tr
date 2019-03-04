@@ -8,12 +8,12 @@ helpviewer_keywords:
 - dialog templates [MFC], MFC framework
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
-ms.openlocfilehash: cf01e7b881b8f5c9c5ba9847ccf4e15dee3e18d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88027df7433267925e91db2d368b744cee8a9e75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518592"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262746"
 ---
 # <a name="dialog-box-components-in-the-framework"></a>Framework'te İletişim Kutusu Bileşenleri
 
@@ -27,8 +27,7 @@ MFC çerçevesi içinde bir iletişim kutusu iki bileşenden oluşur:
 
    Bir iletişim kutusu, bir pencere ve bir Windows penceresi görünür olduğunda eklenir. İletişim kutusu penceresi oluşturulurken iletişim şablon kaynağı alt iletişim kutusu için pencere denetimleri oluşturmak için şablon olarak kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
 [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
-

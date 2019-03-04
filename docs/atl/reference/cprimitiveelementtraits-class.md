@@ -1,5 +1,5 @@
 ---
-title: CPrimitiveElementTraits sınıfı
+title: CPrimitiveElementTraits Class
 ms.date: 11/04/2016
 f1_keywords:
 - CPrimitiveElementTraits
@@ -9,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CPrimitiveElementTraits class
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
-ms.openlocfilehash: 7173cb5d28f574043710dffe91057f73358770e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 53d039b15c9f4a79956bd86fbb93600854f90e5f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444804"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263058"
 ---
-# <a name="cprimitiveelementtraits-class"></a>CPrimitiveElementTraits sınıfı
+# <a name="cprimitiveelementtraits-class"></a>CPrimitiveElementTraits Class
 
 Bu sınıfın sağladığı yöntemlerle varsayılan ve işlevleri koleksiyon sınıfı için temel veri türlerini oluşur.
 
@@ -79,7 +79,7 @@ Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
 typedef T& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

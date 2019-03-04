@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleInsertDialog [MFC], GetSelectionType
 - COleInsertDialog [MFC], m_io
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb
-ms.openlocfilehash: c99344c71d3f9789905516d661749b3668b57d50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 750243ddf6494ecc4a6a28c0cb47b05ca7089c33
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546321"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260692"
 ---
 # <a name="coleinsertdialog-class"></a>Coleınsertdialog sınıfı
 
@@ -302,7 +302,7 @@ Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla deği�
 
 Daha fazla bilgi için [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) Windows SDK'sındaki yapısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>

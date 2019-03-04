@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE applications [MFC], MFC application framework
 - database applications [MFC], creating
 ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
-ms.openlocfilehash: eaa1c178a8d93315d5477efa1213ed0698cd460c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8b3d7061c0ef06063d9c6993f24d23fc2e1f92e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517331"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265307"
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>Windows Uygulamaları Yazmak için Sınıfları Kullanma
 
@@ -38,7 +38,7 @@ Bu makaleler ailesi uygulama çerçevesi geniş kapsamlı bir bakış sunar. Ayr
 
 Framework'ün diğer bölümleri şunlardır:
 
-- [Pencere nesneleri: genel bakış](../mfc/window-objects.md)
+- [Pencere nesneleri: Genel Bakış](../mfc/window-objects.md)
 
 - [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)
 
@@ -70,7 +70,6 @@ Framework'ün diğer bölümleri şunlardır:
 
 MFC belge genel bir kılavuz için bkz [genel MFC konuları](../mfc/general-mfc-topics.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)
-

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-ms.openlocfilehash: 10ad0645e873a1a745168be9b839bbf97a1c05a6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: a33273c46562e8beba12910702d9ddc1a092575d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262616"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 
@@ -42,7 +42,7 @@ ActiveX denetimi tüm OLE kapsayıcısı içinde kullanılabilmesi için bir iş
 ![ActiveX denetimi kapsayıcısı ve denetim etkileşim özelliği](../mfc/media/vc37221.gif "etkileşim özelliği, ActiveX denetimi kapsayıcısı ve Denetim") <br/>
 Pencereli bir ActiveX denetimini ActiveX denetimi kapsayıcısı arasındaki etkileşimi
 
-ActiveX denetimleri, en iyi duruma getirme bazı son için bilgi [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
+ActiveX denetimleri, en iyi duruma getirme bazı son için bilgi [MFC ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md).
 
 MFC ActiveX denetimi oluşturmak için bkz [bir ActiveX denetimi projesi oluşturma](../mfc/reference/mfc-activex-control-wizard.md).
 
@@ -62,9 +62,9 @@ ActiveX denetimi, çeşitli programlama öğeleri verimli bir şekilde bir denet
 
 Geliştirdiğiniz her ActiveX denetimi nesne güçlü bir özellikler kümesi kendi MFC taban sınıfından devralan `COleControl`. Bu özellikler, yerinde etkinleştirme ve Otomasyon mantığı içerir. `COleControl` Denetim nesnesi olayları tetiklemesine olanağı yanı sıra bir MFC pencere nesnesi ile aynı işlevlere sağlayabilirsiniz. `COleControl` de sağlayabilirsiniz [penceresiz denetimleri](../mfc/providing-windowless-activation.md), bir pencere, kullanan bazı işlevlerini ile ilgili Yardım için kapsayıcı üzerindeki sağlar (fare yakalama, klavye odağı kaydırma), ancak çok daha hızlı görüntü sunar.
 
-Denetim sınıfı öğesinden türetildiği için `COleControl`gönderebilir devralan veya "fire," iletileri, olaylar, belirli koşullar karşılandığında denetim kapsayıcısı çağrılır. Bu olaylar, önemli bir şeyler olduğunda denetim kapsayıcısı denetiminde olur bildirmek için kullanılır. Olaya parametreleri ekleyerek denetim kapsayıcısı için bir olay hakkında ek bilgi gönderebilir. ActiveX denetim olayları hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: olaylar](../mfc/mfc-activex-controls-events.md).
+Denetim sınıfı öğesinden türetildiği için `COleControl`gönderebilir devralan veya "fire," iletileri, olaylar, belirli koşullar karşılandığında denetim kapsayıcısı çağrılır. Bu olaylar, önemli bir şeyler olduğunda denetim kapsayıcısı denetiminde olur bildirmek için kullanılır. Olaya parametreleri ekleyerek denetim kapsayıcısı için bir olay hakkında ek bilgi gönderebilir. ActiveX denetim olayları hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: Olayları](../mfc/mfc-activex-controls-events.md).
 
-Son öğeden bir dizi (yöntemler olarak adlandırılır) işlevleri ve denetim kullanıcı özniteliklerine (özellikler olarak adlandırılan) kullanıma sunmak için kullanılan gönderme haritasıdır. Denetim kapsayıcısı veya denetim kullanıcı denetimi çeşitli yollarla işlemek için özellikleri sağlar. Kullanıcı denetiminin görünümünü değiştirme, denetimin belirli değerleri değiştirin veya belirli bir parça denetiminde veri erişim denetiminin isteklerde. Bu arabirim denetim geliştiricisi tarafından belirlenir ve kullanılarak tanımlanan **sınıf görünümü**. ActiveX denetim yöntemleri ve özellikleri hakkında daha fazla bilgi için bkz: makaleleri [MFC ActiveX denetimleri: yöntemler](../mfc/mfc-activex-controls-methods.md) ve [özellikleri](../mfc/mfc-activex-controls-properties.md).
+Son öğeden bir dizi (yöntemler olarak adlandırılır) işlevleri ve denetim kullanıcı özniteliklerine (özellikler olarak adlandırılan) kullanıma sunmak için kullanılan gönderme haritasıdır. Denetim kapsayıcısı veya denetim kullanıcı denetimi çeşitli yollarla işlemek için özellikleri sağlar. Kullanıcı denetiminin görünümünü değiştirme, denetimin belirli değerleri değiştirin veya belirli bir parça denetiminde veri erişim denetiminin isteklerde. Bu arabirim denetim geliştiricisi tarafından belirlenir ve kullanılarak tanımlanan **sınıf görünümü**. ActiveX denetim yöntemleri ve özellikleri hakkında daha fazla bilgi için bkz: makaleleri [MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md) ve [özellikleri](../mfc/mfc-activex-controls-properties.md).
 
 ##  <a name="_core_interaction_between_controls_with_windows_and_activex_control_containers"></a> Windows denetimleriyle ActiveX denetim kapsayıcıları arasındaki etkileşimi
 
@@ -92,7 +92,7 @@ Windows ileti işleme bir pencereli ActiveX denetiminde (etkin olduğunda)
 
 Denetimin özelliklerini değerini kalıcı depolama alanına yazılacak bazen kalıcı adlandırılır, verileri seri hale getirme olanağı sağlar. Denetimleri nesnenin durumu depodan okuyarak daha sonra yeniden oluşturulabilir.
 
-Bir denetim depolama ortamına erişim almak için sorumlu olmadığını unutmayın. Bunun yerine, denetimin kapsayıcı uygun zamanlarda kullanmak için bir depolama ortamına ile denetim sağlamaktan sorumludur. Seri hale getirme hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: seri hale getirme](../mfc/mfc-activex-controls-serializing.md). Seri hale getirme en iyi duruma getirme hakkında daha fazla bilgi için bkz: [en iyi duruma getirme kalıcılığı ve başlatmayı](../mfc/optimizing-persistence-and-initialization.md) ActiveX denetimleri: iyileştirme.
+Bir denetim depolama ortamına erişim almak için sorumlu olmadığını unutmayın. Bunun yerine, denetimin kapsayıcı uygun zamanlarda kullanmak için bir depolama ortamına ile denetim sağlamaktan sorumludur. Seri hale getirme hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: Seri hale getirme](../mfc/mfc-activex-controls-serializing.md). Seri hale getirme en iyi duruma getirme hakkında daha fazla bilgi için bkz: [en iyi duruma getirme kalıcılığı ve başlatmayı](../mfc/optimizing-persistence-and-initialization.md) ActiveX denetimleri: En iyi duruma getirme.
 
 ##  <a name="_core_installing_activex_control_classes_and_tools"></a> ActiveX denetim sınıfları ve araçlarını yükleme
 
@@ -116,8 +116,8 @@ Varsayılan olarak, ActiveX denetim sınıfları ve araçları, Visual Studio .N
 
    MFC ActiveX denetimleri geliştirmek için gereken kitaplıkları içerir.
 
-MFC ActiveX denetimleri için örnekleri vardır. Bu örnekler hakkında daha fazla bilgi için bkz. [denetimleri örnekleri: MFC-Based ActiveX denetimleri](../visual-cpp-samples.md)
+MFC ActiveX denetimleri için örnekleri vardır. Bu örnekler hakkında daha fazla bilgi için bkz. [denetimleri örnekleri: MFC tabanlı ActiveX denetimleri](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL services, security
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-ms.openlocfilehash: 91b6465dd975a1e3227d1416f2b78a8abbd441ad
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 448a955f2e72e8c523bbf74d6ee7e122828915ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694329"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264423"
 ---
 # <a name="catlservicemoduletrun-function"></a>CAtlServiceModuleT::Run işlevi
 
@@ -25,11 +25,10 @@ Kendi güvenlik belirtmek için hizmet istemiyorsanız, geçersiz kılma `PreMes
 
 Güvenlik belirlendikten sonra yeni istemcilerin programa bağlanabilmesi nesne COM ile kaydedilir. Son olarak, program çalıştığı ve programın bir ileti döngüsü girer Hizmet Denetimi Yöneticisi (SCM) bildirir. Bir hizmet kapanması bağlı çıkış iletisi gönderir kadar program çalışan kalır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hizmetler](../atl/atl-services.md)<br/>
 [CSecurityDesc Sınıfı](../atl/reference/csecuritydesc-class.md)<br/>
 [CSid Sınıfı](../atl/reference/csid-class.md)<br/>
 [CDacl Sınıfı](../atl/reference/cdacl-class.md)<br/>
 [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
-

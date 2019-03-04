@@ -52,12 +52,12 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteLinkMenu
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-ms.openlocfilehash: 2f28178240f7d17e124970d91ec7eb338ef110e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f36557a4a993e8abd3004dc59372cc5a089e044
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452162"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259756"
 ---
 # <a name="coledocument-class"></a>COleDocument sınıfı
 
@@ -117,7 +117,7 @@ class COleDocument : public CDocument
 
 Basit kapsayıcılı bir uygulama yazıyorsanız, belge sınıfından türetilir `COleDocument`. Kendi belgeleri tarafından bulunan katıştırılmış öğelere bağlamayı destekleyen bir kapsayıcı uygulaması yazıyorsanız, belge sınıfından türetilir [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md). Bir sunucu uygulaması veya birleşim kapsayıcı/sunucu yazıyorsanız, belge sınıfından türetilir [COleServerDoc](../../mfc/reference/coleserverdoc-class.md). `COleLinkingDoc` ve `COleServerDoc` türetilmiştir `COleDocument`, kullanılabilen tüm hizmetler bu sınıfları devral `COleDocument` ve `CDocument`.
 
-Kullanılacak `COleDocument`, bir sınıf türetmeniz ve uygulamanın OLE olmayan verilerin yanı sıra gömülü veya bağlantılı öğeleri yönetmek için işlevsellik ekler. Tanımlarsanız `CDocItem`-türetilmiş sınıflar uygulamanın yerel verileri depolamak için kullanabileceğiniz tarafından tanımlanan varsayılan uygulama `COleDocument` OLE ve OLE dışı verileri depolamak için. OLE dışı verilerinizden ayrı olarak OLE öğeleri depolamak için kendi veri yapıları da tasarlayabilirsiniz. Daha fazla bilgi için bkz [kapsayıcılar: bileşik dosyalar](../../mfc/containers-compound-files.md)...
+Kullanılacak `COleDocument`, bir sınıf türetmeniz ve uygulamanın OLE olmayan verilerin yanı sıra gömülü veya bağlantılı öğeleri yönetmek için işlevsellik ekler. Tanımlarsanız `CDocItem`-türetilmiş sınıflar uygulamanın yerel verileri depolamak için kullanabileceğiniz tarafından tanımlanan varsayılan uygulama `COleDocument` OLE ve OLE dışı verileri depolamak için. OLE dışı verilerinizden ayrı olarak OLE öğeleri depolamak için kendi veri yapıları da tasarlayabilirsiniz. Daha fazla bilgi için bkz [kapsayıcıları: Bileşik dosyalar](../../mfc/containers-compound-files.md)...
 
 `CDocument` e-posta desteği (MAPI) varsa, belgenizi e-posta yoluyla göndermeyi destekler. `COleDocument` güncelleştirilmiş [OnFileSendMail](#onfilesendmail) bileşik belgeler doğru bir şekilde işlemek için. Daha fazla bilgi için makalelere bakın [MAPI](../../mfc/mapi.md) ve [MFC'de MAPI desteği](../../mfc/mapi-support-in-mfc.md)...
 
@@ -206,7 +206,7 @@ Bileşik dosya desteği etkin mi yoksa devre dışı mı olduğunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yapılandırılmış depolama olarak da adlandırılır. Genellikle oluşturucusunda bu işlevi çağırın, `COleDocument`-türetilmiş sınıf. Bileşik belgeler hakkında daha fazla bilgi için bkz [kapsayıcılar: bileşik dosyalar](../../mfc/containers-compound-files.md)...
+Bu yapılandırılmış depolama olarak da adlandırılır. Genellikle oluşturucusunda bu işlevi çağırın, `COleDocument`-türetilmiş sınıf. Bileşik belgeler hakkında daha fazla bilgi için bkz [kapsayıcıları: Bileşik dosyalar](../../mfc/containers-compound-files.md)...
 
 Bu üye işlevini çağırmayın, belgeleri şeylerle ("Düz") dosya biçiminde depolanır.
 
@@ -542,10 +542,9 @@ virtual void UpdateModifiedFlag();
 
 Bu belgedeki yerel veri değiştirilmemiş olsa bile belge kapatmadan önce kaydetmek için kullanıcıdan istemek çerçeve sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek KAPSAYICI](../../visual-cpp-samples.md)<br/>
 [MFC örnek MFCBIND](../../visual-cpp-samples.md)<br/>
 [CDocument Sınıfı](../../mfc/reference/cdocument-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

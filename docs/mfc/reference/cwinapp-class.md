@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 3f9afdf18fcaff0d3613b4204d8690f915079e7d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 6366638ebfd5e78ad517a8913e4276d5cd820670
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178947"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264684"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -1307,15 +1307,15 @@ Yeniden başlatma Yöneticisi'ni etkinleştirmek için `m_dwRestartManagerSuppor
 |-|-|
 |Bayrağı|Açıklama|
 |AFX_RESTART_MANAGER_SUPPORT_RESTART|Uygulamayı kullanarak kayıtlı [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager). Beklenmedik bir şekilde çıkarsa, bir uygulamayı yeniden başlatma için yeniden başlatma Yöneticisi sorumludur.|
-|-AFX_RESTART_MANAGER_SUPPORT_RECOVERY|Uygulama yeniden başlatma Yöneticisi ile kaydedilir ve uygulama yeniden başlatıldığında, yeniden başlatma Yöneticisi Kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevidir [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|-AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Otomatik kaydetme etkinleştirilmişse ve yeniden başlatma Yöneticisi kapanıyorsa tüm açık belgeleri uygulama yeniden başlatıldığında.|
-|-AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL|Otomatik kaydetme etkinleştirilmişse ve yeniden başlatma Yöneticisi kapanıyorsa düzenli aralıklarla tüm açık belgeleri. Aralığı tarafından tanımlanan [CWinApp::m_nAutosaveInterval](#m_nautosaveinterval).|
-|-AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES|Yeniden başlatma Yöneticisi, daha önce açık belgeler beklenmeyen bir çıkış uygulamadan yeniden başlattıktan sonra açılır. [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md) açık belgelerin listesini depolamak ve bunları geri işler.|
-|-AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES|Yeniden başlatma Yöneticisi uygulama yeniden başlatıldıktan sonra otomatik olarak kaydedilmiş dosyaları geri yükleme için kullanıcıya sorar. `CDataRecoveryHandler` Sınıfı kullanıcı sorgular.|
-|-AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE|AFX_RESTART_MANAGER_SUPPORT_RESTART AFX_RESTART_MANAGER_SUPPORT_RECOVER ve AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES birleşimi.|
-|-AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|
-|-AFX_RESTART_MANAGER_SUPPORT_RESTART_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|
-|-AFX_RESTART_MANAGER_SUPPORT_RECOVERY_ASPECTS|Birleşim ofAFX_RESTART_MANAGER_SUPPORT_RECOVERY, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES.|
+|- AFX_RESTART_MANAGER_SUPPORT_RECOVERY|Uygulama yeniden başlatma Yöneticisi ile kaydedilir ve uygulama yeniden başlatıldığında, yeniden başlatma Yöneticisi Kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevidir [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
+|- AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Otomatik kaydetme etkinleştirilmişse ve yeniden başlatma Yöneticisi kapanıyorsa tüm açık belgeleri uygulama yeniden başlatıldığında.|
+|- AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL|Otomatik kaydetme etkinleştirilmişse ve yeniden başlatma Yöneticisi kapanıyorsa düzenli aralıklarla tüm açık belgeleri. Aralığı tarafından tanımlanan [CWinApp::m_nAutosaveInterval](#m_nautosaveinterval).|
+|- AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES|Yeniden başlatma Yöneticisi, daha önce açık belgeler beklenmeyen bir çıkış uygulamadan yeniden başlattıktan sonra açılır. [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md) açık belgelerin listesini depolamak ve bunları geri işler.|
+|- AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES|Yeniden başlatma Yöneticisi uygulama yeniden başlatıldıktan sonra otomatik olarak kaydedilmiş dosyaları geri yükleme için kullanıcıya sorar. `CDataRecoveryHandler` Sınıfı kullanıcı sorgular.|
+|- AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE|AFX_RESTART_MANAGER_SUPPORT_RESTART AFX_RESTART_MANAGER_SUPPORT_RECOVER ve AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES birleşimi.|
+|- AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|
+|- AFX_RESTART_MANAGER_SUPPORT_RESTART_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES birleşimi.|
+|- AFX_RESTART_MANAGER_SUPPORT_RECOVERY_ASPECTS|Birleşim ofAFX_RESTART_MANAGER_SUPPORT_RECOVERY, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES ve AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES.|
 
 ##  <a name="m_ehelptype"></a>  CWinApp::m_eHelpType
 
@@ -2391,8 +2391,8 @@ Uygulama kullanıcı Model kimliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWinThread Sınıfı](../../mfc/reference/cwinthread-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Nasıl Yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md)
+[Nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md)
