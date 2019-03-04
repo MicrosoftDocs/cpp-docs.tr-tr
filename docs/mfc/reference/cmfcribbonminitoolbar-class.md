@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMFCRibbonMiniToolBar [MFC], Show
 - CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
-ms.openlocfilehash: 665de65d64262415e20ca5ac05e1e06b2c1862c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 462a4aa04ddc542db8aba734ed93ab0fae905dad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573387"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283845"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
 
@@ -190,7 +190,7 @@ virtual BOOL IsRibbonMiniToolBar() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -21,12 +21,12 @@ f1_keywords:
 - amp/Concurrency::direct3d::step
 - amp/Concurrency::direct3d::umin
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-ms.openlocfilehash: b721d19cd51a9eb1d07de8898b18728854decb4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0a2977faf094aafb6290063e39e062ffaeaaec81
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519745"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281345"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 
@@ -44,7 +44,7 @@ ms.locfileid: "50519745"
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** amp.h **Namespace:** eşzamanlılık
+**Başlık:** amp.h **Namespace:** Eşzamanlılık
 
 ##  <a name="abs"></a>  Abs
 
@@ -610,6 +610,6 @@ Tamsayı değeri
 
 Bağımsız değişkenlerin en düşük sayısal değerini döndürür
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

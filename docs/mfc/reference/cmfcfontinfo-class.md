@@ -1,5 +1,5 @@
 ---
-title: Cmfcfontınfo sınıfı
+title: CMFCFontInfo Class
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCFontInfo
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strName
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-ms.openlocfilehash: 606d70176e93de6f5526c30f182cee6f8c05499f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2377b7f6afdf78a0e8b7c8ac97a36a4920c06bb8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522375"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281193"
 ---
-# <a name="cmfcfontinfo-class"></a>Cmfcfontınfo sınıfı
+# <a name="cmfcfontinfo-class"></a>CMFCFontInfo Class
 
 `CMFCFontInfo` Sınıfı adı ve diğer bir yazı tipi özniteliklerini açıklar.
 
@@ -190,7 +190,7 @@ const CString m_strScript;
 
 Daha fazla bilgi için *lpszScript* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

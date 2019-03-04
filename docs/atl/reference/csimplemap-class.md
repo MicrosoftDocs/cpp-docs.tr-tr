@@ -23,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMap class
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
-ms.openlocfilehash: 1c1aa34d54f5754feee238fdf12fd6e55b8c32c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: afd9f017bb0fb9a95a0ed4fd135dcbd5ea4ddba2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666264"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284105"
 ---
 # <a name="csimplemap-class"></a>CSimpleMap sınıfı
 
@@ -114,7 +114,7 @@ BOOL Add(const TKey& key, const TVal& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar.
 
 *VAL*<br/>
@@ -178,7 +178,7 @@ int FindKey(const TKey& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Aranacak anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -266,7 +266,7 @@ TVal Lookup(const TKey& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -283,7 +283,7 @@ BOOL Remove(const TKey& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -346,7 +346,7 @@ BOOL SetAt(const TKey& key, const TVal& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar.
 
 *VAL*<br/>
@@ -372,7 +372,7 @@ BOOL SetAtIndex(
 *nIndex*<br/>
 Anahtar ve değer çifti değiştirmek için başvuran dizin.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Yeni anahtar.
 
 *VAL*<br/>
@@ -386,6 +386,6 @@ DOĞRU başarılı, yanlış dizini geçerli değil, döndürür.
 
 Hem anahtar hem de işaret ettiği değer güncelleştirmeleri *nIndex*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

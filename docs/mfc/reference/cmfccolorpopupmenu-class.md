@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-ms.openlocfilehash: a3bb6f4d2926f07f61891656613c06e5690c9099
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c2fed4aa239faa96abf692a46a27102ce9820a1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491462"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283403"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
 
@@ -240,7 +240,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 *pWndList*<br/>
 [in] Bir özellik Kılavuzu denetimini nesnesi işaretçisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

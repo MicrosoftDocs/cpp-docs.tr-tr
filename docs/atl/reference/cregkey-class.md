@@ -42,12 +42,12 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: cf2f97c1c3b389d0ee2b3d4bcdd2d9da2dbb3c8d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 56a3289d5546db21c42d22b5e8544913bdaa78cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694861"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283663"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 
@@ -69,7 +69,7 @@ class CRegKey
 |Ad|Açıklama|
 |----------|-----------------|
 |[CRegKey::CRegKey](#cregkey)|Oluşturucu.|
-|[CRegKey:: ~ CRegKey](#dtor)|Yıkıcı.|
+|[CRegKey::~CRegKey](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -221,7 +221,7 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir başvuru bir `CRegKey` nesne.
 
 *hKey*<br/>
@@ -234,7 +234,7 @@ CAtlTransactionManager nesne işaretçisi
 
 Yeni bir oluşturur `CRegKey` nesne. Varolan bir nesne oluşturulabilir `CRegKey` nesnesi veya bir kayıt defteri anahtarı için bir tanıtıcı.
 
-##  <a name="dtor"></a>  CRegKey:: ~ CRegKey
+##  <a name="dtor"></a>  CRegKey::~CRegKey
 
 Yıkıcı.
 
@@ -488,7 +488,7 @@ CRegKey& operator= (CRegKey& key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kopyalamak için anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1056,7 +1056,7 @@ Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan ha
 
 Üçüncü yöntem çağrılarını [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DCOM örnek](../../visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

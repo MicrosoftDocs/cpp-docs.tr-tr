@@ -5,12 +5,12 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d
 - amp_short_vectors/Concurrency::graphics::direct3d
 ms.assetid: be283331-07cf-46e4-91a1-e8aa85d4ec8e
-ms.openlocfilehash: 2a07aeab410750e38684f564df4cb89c1846b95e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fb03edd63c612fd070e50e2f5d229cd8e207812
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626830"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280803"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace"></a>Concurrency::graphics::direct3d Ad Alanı
 
@@ -38,8 +38,8 @@ namespace direct3d;
 
 **Başlık:** amp_graphics.h
 
-**Namespace:** Concurrency::graphics
+**Namespace:** CONCURRENCY::Graphics
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

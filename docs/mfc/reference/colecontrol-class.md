@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: ef44c917411efefeb6719af95185ddf7993fbab1
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 8587eb76f38c07d54234c810dfd6ab79f487e740
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179025"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283429"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 
@@ -1192,7 +1192,7 @@ Genellikle bu işlev doğrudan çağrılmamalıdır. Bunun yerine denetiminizin 
 |VTS_FONT|`IFontDisp*`|
 |VTS_HANDLE|HWND|
 |VTS_PICTURE|`IPictureDisp*`|
-|VTS_OPTEXCLUSIVE|OLE_OPTEXCLUSIVE *|
+|VTS_OPTEXCLUSIVE|OLE_OPTEXCLUSIVE*|
 |VTS_TRISTATE|OLE_TRISTATE|
 |VTS_XPOS_HIMETRIC|OLE_XPOS_HIMETRIC|
 |VTS_YPOS_HIMETRIC|OLE_YPOS_HIMETRIC|
@@ -1301,7 +1301,7 @@ void FireMouseDown(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ndüğme*<br/>
+*nButton*<br/>
 Sayısal değerini fare düğmesini basılı. Aşağıdaki değerlerden birini içerebilir:
 
 - LEFT_BUTTON sol fare düğmesini basılı.
@@ -1345,7 +1345,7 @@ void FireMouseMove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ndüğme*<br/>
+*nButton*<br/>
 Sayısal değer fare düğmesi basılı. Aşağıdaki değerlerinin bir birleşimini içerir:
 
 - Sol fare düğmesini basılı eylemi sırasında basıldığını LEFT_BUTTON.
@@ -1389,7 +1389,7 @@ void FireMouseUp(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ndüğme*<br/>
+*nButton*<br/>
 Fare düğmesini serbest sayısal değeri. Aşağıdaki değerlerden biri olabilir:
 
 - LEFT_BUTTON sol fare düğmesini serbest bırakıldı.
@@ -1517,7 +1517,7 @@ BOOL GetAmbientProperty(
 |VT_R8|`double*`|
 |VT_CY|`CY*`|
 |VT_COLOR|`OLE_COLOR*`|
-|GT; VT_DISPATCH &AMP;|`LPDISPATCH*`|
+|VT_DISPATCH|`LPDISPATCH*`|
 |VT_FONT|`LPFONTDISP*`|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3873,7 +3873,7 @@ BOOL SetControlSize(int cx, int cy);
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 Yeni denetimin genişliğini piksel cinsinden belirtir.
 
 *CY*<br/>
@@ -3978,7 +3978,7 @@ void SetInitialSize(
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 OLE denetimin piksel cinsinden başlangıç genişliği.
 
 *CY*<br/>
@@ -4085,7 +4085,7 @@ void ThrowError(
 
 ### <a name="parameters"></a>Parametreler
 
-*SC*<br/>
+*sc*<br/>
 Raporlanacak durum kodu değeri. Olası kodları tam listesi için bkz [ActiveX denetimleri: Gelişmiş konular](../../mfc/mfc-activex-controls-advanced-topics.md).
 
 *nDescriptionID*<br/>
@@ -4207,7 +4207,7 @@ Gönderilen iletinin dönüş değeri.
 
 Denetimin ileti eşlemesi aracılığıyla belirli iletilerini dağıtmak için bu işlevi çağırın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CIRC3](../../visual-cpp-samples.md)<br/>
 [MFC örnek TESTHELP](../../visual-cpp-samples.md)<br/>

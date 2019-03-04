@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - window traits
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
-ms.openlocfilehash: 0ab1a3c8f20a8e81304cdae68731bc70fbfc05c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29549e54051405fc3dd4d5d7ae70a382ad7a62ea
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647050"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280946"
 ---
 # <a name="understanding-window-traits"></a>Pencere özelliklerini anlama
 
@@ -36,7 +36,6 @@ ATL tarafından sağlanan şablonları özelleştirilmiş birinin olası durumda
 
 Bu işlevlerin her biri bazı stil değeri yeni bir stil değer oluşturmak için kullanabileceğiniz çalışma zamanında geçirilir. Pencere nitelikler sınıfınızın bir ATL pencere sınıfı için şablon bağımsız değişkeni olarak kullanılıyorsa, bu statik işlevlere geçirilen stil değerleri ne olursa olsun stil bağımsız değişken olarak geçirilen olacaktır [Oluştur](../atl/reference/cwindowimpl-class.md#create).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere sınıfları](../atl/atl-window-classes.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 'WM_ İletileri: S'
+title: 'WM_ iletileri: S'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_SYSDEADCHAR
@@ -37,14 +37,14 @@ helpviewer_keywords:
 - ON_WM_SYSKEYDOWN [MFC]
 - WM_ messages
 ms.assetid: 4b9aec79-a98f-4aa0-a3d9-110941b6dcbc
-ms.openlocfilehash: fcbb71713a3754f22325a36bce47e039d5d142b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f8bfb00172f2f4e2791374079c7eb3bb0559a76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553289"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281526"
 ---
-# <a name="wm-messages-s"></a>WM_ İletileri: S
+# <a name="wm-messages-s"></a>WM_ iletileri: S
 
 Aşağıdaki eşleme girişleri için işlev prototipleri karşılık gelir.
 
@@ -67,8 +67,7 @@ Aşağıdaki eşleme girişleri için işlev prototipleri karşılık gelir.
 |ON_WM_SYSKEYDOWN)|afx_msg void [OnSysKeyDown](../../mfc/reference/cwnd-class.md#onsyskeydown)(UINT, UINT, UINT);|
 |ON_WM_SYSKEYUP)|afx_msg void [OnSysKeyUp](../../mfc/reference/cwnd-class.md#onsyskeyup)(UINT, UINT, UINT);|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
-

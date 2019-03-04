@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DPointU [MFC], CD2DPointU
 ms.assetid: 04733f96-b6de-4a89-82e3-caad1e8087a9
-ms.openlocfilehash: 138916efe781d8bef69a1c4eb61a73c5a405be67
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d66793abbb83015891df348eef8384e5c97baf2c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551859"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281128"
 ---
 # <a name="cd2dpointu-class"></a>CD2DPointU sınıfı
 
@@ -83,6 +83,6 @@ operator CPoint();
 
 D2D noktası geçerli değeri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

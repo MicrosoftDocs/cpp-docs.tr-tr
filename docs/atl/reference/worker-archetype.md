@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-ms.openlocfilehash: bbfe75ad996841cd4ea78adab56c7cf91ac55f3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 790cf064fcffe1f0cd3c191c28ed0a0614062406
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565561"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283459"
 ---
 # <a name="worker-archetype"></a>Çalışan modeli
 
@@ -41,7 +41,7 @@ Bu sınıflar için bu archetype uyar:
 |-----------|-----------------|
 |[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|İş parçacığı havuzu isteklerini alır ve bunları oluşturulur ve imha her istek için bir alt nesnesi açın geçirir.|
 
-**Kullanın**
+**Kullanma**
 
 Bu şablon parametreleri için bu archetype uymak için sınıf bekler:
 
@@ -117,8 +117,7 @@ void Terminate(void* pvParam) throw();
 *pvParam*<br/>
 Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `WorkerArchetype::Execute`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)
-

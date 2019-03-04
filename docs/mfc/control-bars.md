@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-ms.openlocfilehash: 13d457350a6a75357752556bb08a582e8a59f333
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b75d9a96f091d0424592f34bdb1ed7ce76c2372
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519719"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283585"
 ---
 # <a name="control-bars"></a>Denetim Çubukları
 
@@ -66,6 +66,6 @@ Bir iletişim çubuğu modsuz iletişim kutusu işlevselliğini bir iletişim ş
 
 A [çubuk barınağı](../mfc/using-crebarctrl.md) çubuk barınağı denetimleri için Düzen, durum ve Kalıcılık yerleştirme bilgileri sağlayan denetim çubuğu. Bir rebar nesnesi çeşitli alt pencereleri düzenleme kutuları, araç çubukları ve liste kutuları gibi genellikle diğer denetimleri içerebilir. Bir rebar nesneyi kendi alt pencereleri belirtilen bir bit eşlem görüntüleyebilirsiniz. Bu otomatik olarak veya el ile tıklayarak veya kavrayıcı çubuğunu sürüklerken yeniden boyutlandırılabilir. Sınıfına bakın [CReBar](../mfc/reference/crebar-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

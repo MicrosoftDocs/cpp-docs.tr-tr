@@ -15,12 +15,12 @@ helpviewer_keywords:
 - stream classes [MFC]
 - memory file classes [MFC]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
-ms.openlocfilehash: a6a47372e77ca8b6adee44125705dc3f4d6b267b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 914325ec56f0cae30c7293305496d65f358f2731
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443114"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281661"
 ---
 # <a name="file-io-classes"></a>Dosya G/Ç Sınıfları
 
@@ -63,7 +63,6 @@ Standart iletişim kutusunu açmak veya dosyayı kaydetmek için sağlar.
 [CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
 En son kullanılan (MRU) dosya listesi tutar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

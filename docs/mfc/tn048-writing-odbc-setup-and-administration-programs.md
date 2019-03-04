@@ -1,5 +1,5 @@
 ---
-title: 'TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma'
+title: 'TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.odbc
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - ODBC, and MFC
 - MFC, database applications
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
-ms.openlocfilehash: b31ceb8bfc48decb5387d386ee8e8b64822f72ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2904ceb626fd1bfad0b24026deb08f2c5dcbcd4a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584141"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283897"
 ---
-# <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma
+# <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC veritabanı uygulamaları için ODBC Kurulum ve yönetim programları yazma
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -53,8 +53,7 @@ Bir iletişim kutusu ile bir kullanıcı ekleyebilir, değiştirebilir ve veri k
 
 Daha fazla bilgi için bkz: ODBC SDK *Programcının Başvurusu* Bölüm 23, Kurulum DLL işlev başvurusu ve Bölüm 24, yükleyici DLL işlev başvurusu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

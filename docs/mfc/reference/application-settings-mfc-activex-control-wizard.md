@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, application settings
 ms.assetid: 48475194-cc63-467f-8499-f142269a4c1c
-ms.openlocfilehash: 17d8ad581640611a5b517edd15609aa8052ecae4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3201b5882a1de4064d924fbb28ee1c575ab8ccbe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677142"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281167"
 ---
 # <a name="application-settings-mfc-activex-control-wizard"></a>Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı
 
@@ -38,9 +38,8 @@ Tasarım ve temel özelliklerine yeni MFC ActiveX projeye eklemek için MFC Acti
 
    - Projenin proje Yardım bit eşlem dosyaları ve Yardım konusu dosyasını içerecek şekilde HLP dizini içerir (*projname*.rtf). Bu Yardım konusu dosya için yaygın özellikleri, olayları ve çok sayıda ActiveX denetimi tarafından desteklenen yöntemleri standart Yardım konularını içerir. .Rtf dosyasının belirli Yardım konuları ekleyip düzenleyebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Denetim Adları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)<br/>
 [Denetim Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)
-

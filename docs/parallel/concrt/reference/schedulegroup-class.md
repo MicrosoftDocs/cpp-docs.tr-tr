@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - ScheduleGroup class
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
-ms.openlocfilehash: 6132ec6623a009c09a37b7d704ce683a58956a04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ce7734a1330f2d6e495565338879764482439d09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518722"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283858"
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup Sınıfı
 
@@ -40,7 +40,7 @@ class ScheduleGroup;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Kimliği](#id)|Grubun ait olduğu zamanlayıcıda benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.|
+|[Kimlik](#id)|Grubun ait olduğu zamanlayıcıda benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.|
 |[Başvuru](#reference)|Zamanlama grubu başvuru sayısını artırır.|
 |[Sürüm](#release)|Zamanlayıcı grubu başvuru sayısını azaltır.|
 |[ScheduleTask](#scheduletask)|Bir zamanlama grubundaki hafif görevi zamanlar.|
@@ -142,17 +142,16 @@ virtual void ScheduleTask(
 *_Proc*<br/>
 İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.
 
-*_Veri*<br/>
+*_Data*<br/>
 Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Çağırma `ScheduleTask` yöntemi örtülü olarak yerleştirir başvuru sayısını görev yürütüldükten sonra uygun bir zamanda çalışma zamanı tarafından kaldırılır zamanlama grubu üzerinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [CurrentScheduler Sınıfı](currentscheduler-class.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
 [Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

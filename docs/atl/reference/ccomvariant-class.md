@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: 6a6ad49533028dbcb8c45b63c55a51090533137e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 6be05b52b96ada7871f955c687036a83b4e0b493
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522499"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281102"
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 
@@ -155,10 +155,10 @@ CComVariant(const CComBSTR& bstrSrc);
 *vtSrc*<br/>
 [in] Değişken türü. İlk parametre olduğunda **int**, geçerli türler: VT_I4 ve VT_INT. İlk parametre olduğunda **uzun**, geçerli türler: VT_I4 ve VT_ERROR. İlk parametre olduğunda **çift**, geçerli türler: VT_R8 ve VT_DATE. İlk parametre olduğunda **işaretsiz int**, geçerli türler: VT_UI4 ve VT_UINT.
 
-*fltsrc &*<br/>
+*fltSrc*<br/>
 [in] **Float** başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_R4 olacaktır.
 
-*dblsrc &*<br/>
+*dblSrc*<br/>
 [in] **Çift** başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_R8 olacaktır.
 
 *cysrc &*<br/>
@@ -356,10 +356,10 @@ CComVariant& operator=(char cSrc) throw();
 *nSrc*<br/>
 [in] **İnt**, BYTE, **kısa**, **uzun**, LONGLONG, ULONGLONG, **işaretsiz**, **işaretsiz uzun**, veya **işaretsiz int** atanacak `CComVariant` nesne. Türünü `CComVariant` nesne olacak VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4, sırasıyla.
 
-*fltsrc &*<br/>
+*fltSrc*<br/>
 [in] **Float** atanacak `CComVariant` nesne. Türünü `CComVariant` nesne VT_R4 olacaktır.
 
-*dblsrc &*<br/>
+*dblSrc*<br/>
 [in] **Çift** atanacak `CComVariant` nesne. Türünü `CComVariant` nesne VT_R8 olacaktır.
 
 *cysrc &*<br/>
@@ -486,6 +486,6 @@ HRESULT WriteToStream(IStream* pStream);
 
 Standart bir HRESULT değerini.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

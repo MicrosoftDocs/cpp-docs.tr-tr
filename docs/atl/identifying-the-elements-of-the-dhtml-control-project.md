@@ -5,12 +5,12 @@ helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
-ms.openlocfilehash: e38b94e200754ce9dd37df2bfb17dfaa32cafe49
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3cb250c68d5ba36dc3cf502b871f62eec8f1861c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175719"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283884"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML denetim projesinin öğelerini tanımlama
 
@@ -51,7 +51,6 @@ ATL Denetim Sihirbazı'nı varsayılan kod denetimiyle HTML kaynak ve .cpp dosya
 
 Bkz: [ATL DHTML denetimi oluşturma](../atl/creating-an-atl-dhtml-control.md) DHTML denetimi oluşturmaya başlamak için. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) Test kapsayıcısı erişim hakkında daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)
-

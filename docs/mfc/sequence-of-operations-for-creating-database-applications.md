@@ -7,12 +7,12 @@ helpviewer_keywords:
 - database applications [MFC], creating
 - MFC, database applications
 ms.assetid: 9371da59-8536-43cd-8314-706ad320e2ec
-ms.openlocfilehash: 0f512408b54d6aa9cc5c2b44dbd359e31e8bc57f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: efd6b12b186ce0ef1c0caf57f313f6aa50425fec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624909"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283676"
 ---
 # <a name="sequence-of-operations-for-creating-database-applications"></a>Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi
 
@@ -31,9 +31,9 @@ Aşağıdaki tabloda, veritabanı uygulamaları yazılırken, rol ve framework'�
 |Ek Kayıt görünümü ve kayıt kümesi sınıflar gerektiği şekilde oluşturun.|Sınıf Görünümü sınıfları ve iletişim kutusunda, görünüm tasarlamak üzere düzenleyici oluşturmak için kullanın.|Sınıf Görünümü, yeni sınıflar için ek dosyalar oluşturur.|
 |Kayıt kümesi nesneleri kodunuzda gerektiği gibi oluşturun. Kayıtları işlemek için her bir kayıt kümesi kullan...|Türetilen sınıflar kümeleriniz dayalı [CRecordset](../mfc/reference/crecordset-class.md) sihirbazları kullanarak.|ODBC kayıt alanı değişimi (RFX) veritabanı ve kümenizin alan veri üyeleri arasında veri alışverişi yapmak için kullanır. Kayıt görünümü kullanıyorsanız, kayıt ve kayıt görünümü denetimleri arasındaki veri iletişim kutusu veri değişimi (DDX) değiştirir.|
 |.. veya açık bir oluşturma [CDatabase](../mfc/reference/cdatabase-class.md) açmak istediğiniz her veritabanı için kodunuzda.|Kayıt kümesi nesnelerinizi veritabanı nesneleri üzerinde temel alır.|Veritabanı nesnesini, veri kaynağı için bir arabirim sağlar.|
-|Veri sütunlarını dinamik olarak kümenize bağlayın.|ODBC içinde kod bağlama yönetmek için türetilmiş bir kayıt kümesi sınıfına ekleyin. Makaleye göz atın [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).||
+|Veri sütunlarını dinamik olarak kümenize bağlayın.|ODBC içinde kod bağlama yönetmek için türetilmiş bir kayıt kümesi sınıfına ekleyin. Makaleye göz atın [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).||
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'te Derleme](../mfc/building-on-the-framework.md)<br/>
 [MFC Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>

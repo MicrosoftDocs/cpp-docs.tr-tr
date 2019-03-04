@@ -6,12 +6,12 @@ helpviewer_keywords:
 - access keys [MFC], hot keys
 - CHotKeyCtrl class [MFC], setting hot key
 ms.assetid: 6f3bc141-e346-4dce-9ca7-3e6b2c453f3f
-ms.openlocfilehash: ebaddb4a64a4d9d47b82fd36f118c74527554e53
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: a77aad4881acd04c6dabb6dce90acc01be2cfbc8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893230"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281284"
 ---
 # <a name="setting-a-hot-key"></a>Sık Kullanılan Tuş Ayarlama
 
@@ -21,8 +21,7 @@ Uygulamanız bir kısayol tuşu tarafından sağlanan bilgileri kullanabilir ([C
 
 - Windows işlevini çağırarak iş parçacığına özgü sık kullanılan tuş ayarlamak [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHotKeyCtrl Kullanma](../mfc/using-chotkeyctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

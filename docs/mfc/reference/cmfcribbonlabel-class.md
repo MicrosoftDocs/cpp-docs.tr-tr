@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CMFCRibbonLabel [MFC], CMFCRibbonLabel
 - CMFCRibbonLabel [MFC], SetACCData
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-ms.openlocfilehash: ae185a81267dce68cda6bc27c5e327b3335a1018
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b79d6191d2deb0a295e81da1150cc7b38fd81232
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436405"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283468"
 ---
 # <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel sınıfı
 
@@ -104,7 +104,7 @@ virtual BOOL SetACCData(
 
 TRUE ise *veri* parametre başarıyla geçerli Şerit etiketin erişilebilirlik verilerle doldurulmuş; Aksi takdirde FALSE.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

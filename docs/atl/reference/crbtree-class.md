@@ -27,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-ms.openlocfilehash: a0f66e888220fbc5a4a484ddd37a3f28dff66065
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59416000eecf4be25746d9dedd86ea2af116087a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583280"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281349"
 ---
 # <a name="crbtree-class"></a>CRBTree sınıfı
 
@@ -159,7 +159,7 @@ POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -185,7 +185,7 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 *POS*<br/>
 Konum değeri.
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Değişken anahtarı alır.
 
 *value*<br/>
@@ -288,7 +288,7 @@ void GetNextAssoc(
 *POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Ağacının anahtar türünü belirten bir şablon parametre.
 
 *value*<br/>
@@ -490,6 +490,6 @@ typedef VTraits::INARGTYPE VINARGTYPE;
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

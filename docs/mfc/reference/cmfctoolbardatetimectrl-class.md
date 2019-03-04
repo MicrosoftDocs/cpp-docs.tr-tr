@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-ms.openlocfilehash: 1252f97a93e67348a00c9809e3f216d4ed63c4d8
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: c93d8a2a18518cad8b6fb7fe014828011f78a653
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893689"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280998"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl sınıfı
 
@@ -611,10 +611,9 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Belirtilen komut kimliği ile bir araç çubuğu düğmesi arar ve çağırarak bir tarih ve Saat Seçici denetiminde süreyi ayarlar [CMFCToolBarDateTimeCtrl::SetTime](#settime).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

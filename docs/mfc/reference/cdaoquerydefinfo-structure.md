@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DAO (Data Access Objects), QueryDefs collection
 - CDaoQueryDefInfo structure [MFC]
 ms.assetid: e20837dc-e78d-4171-a195-1b4075fb5d2a
-ms.openlocfilehash: f3c8b464a84bd33d15a19f24010b942bdea59620
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d88d919bb87f614d140d710aee9df3fdf4fd10bc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603001"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283936"
 ---
 # <a name="cdaoquerydefinfo-structure"></a>CDaoQueryDefInfo Yapısı
 
@@ -105,7 +105,7 @@ Tarih ve saat ayarları üzerinde querydef oluşturulduğu veya en son güncelle
 
 **Başlık:** afxdao.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoQueryDef Sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: 'Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma'
+title: 'Seri hale getirme: Seri hale getirilebilir bir sınıf yapma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - serializable class [MFC]
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - serialization [MFC], serializable classes
 - no default constructor
 ms.assetid: 59a14d32-1cc8-4275-9829-99639beee27c
-ms.openlocfilehash: aa9a7f6cb1cb28c701e3954cad27e60cf9f7df4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 995744381c8f82dc637e4aa0452e37af170b168b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486976"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281466"
 ---
-# <a name="serialization-making-a-serializable-class"></a>Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma
+# <a name="serialization-making-a-serializable-class"></a>Seri hale getirme: Seri hale getirilebilir bir sınıf yapma
 
 Başlıca beş adımı, bir sınıf serileştirilebilir yapmak için gereklidir. Bunlar aşağıda listelenen ve aşağıdaki bölümlerde açıklanmıştır:
 
@@ -92,9 +92,8 @@ Aşağıdaki örnek, bir sınıf için ımplement_serıal işlemi gösterilir `C
 
 [!code-cpp[NVC_MFCSerialization#4](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_4.cpp)]
 
-Seri hale getirilebilir bir sınıf oluşturduktan sonra makalesinde açıklandığı gibi bir sınıfın nesnelerini serileştirebiliyorsa [seri hale getirme: bir nesneyi serileştirmek](../mfc/serialization-serializing-an-object.md).
+Seri hale getirilebilir bir sınıf oluşturduktan sonra makalesinde açıklandığı gibi bir sınıfın nesnelerini serileştirebiliyorsa [seri hale getirme: Bir nesneyi serileştirmek](../mfc/serialization-serializing-an-object.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Serileştirme](../mfc/serialization-in-mfc.md)
-

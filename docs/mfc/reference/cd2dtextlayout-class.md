@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CD2DTextLayout [MFC], SetLocaleName
 - CD2DTextLayout [MFC], m_pTextLayout
 ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
-ms.openlocfilehash: 378c96622144a4acac27785cef844f0c1d21b98b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa51b050543b6a027e354afa18b5e9c002c6bca1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630951"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283975"
 ---
 # <a name="cd2dtextlayout-class"></a>CD2DTextLayout sınıfı
 
@@ -294,6 +294,6 @@ Bu değişiklik geçerli olduğu metin aralığı
 
 Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

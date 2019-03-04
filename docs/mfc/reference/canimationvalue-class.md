@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CAnimationValue [MFC], GetAnimationVariableList
 - CAnimationValue [MFC], m_value
 ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
-ms.openlocfilehash: 9a43536e3f9f90b70d5d68eb5ce5d277f9b42e00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86a2caa8946bcafeabf85687a24b2430ecefe790
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613804"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283546"
 ---
 # <a name="canimationvalue-class"></a>CAnimationValue sınıfı
 
@@ -66,7 +66,7 @@ class CAnimationValue : public CAnimationBaseObject;
 |----------|-----------------|
 |[CAnimationValue::operator çift](#operator_double)|CAnimationValue ve DOUBLE arasında dönüştürme sağlar.|
 |[CAnimationValue::operator Int32](#operator_int32)|CAnimationValue ve Int32 arasında dönüştürme sağlar.|
-|[CAnimationValue::operator =](#operator_eq)|Fazla Yüklendi. Bir Int32 değeri için CAnimationValue atar.|
+|[CAnimationValue::operator=](#operator_eq)|Fazla Yüklendi. Bir Int32 değeri için CAnimationValue atar.|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
@@ -273,6 +273,6 @@ Varsayılan değer belirtir.
 
 Varsayılan değer ayarlamak için bu yöntemi kullanın. Varsayılan değer, animasyon başlatılmadı ve/veya COM nesnesini oluşturulmadı, uygulamaya döndürülür. İçinde CAnimationVarible kapsüllenmiş COM nesnesini zaten oluşturulmuş olsa bile, bu yöntem yeniden oluşturur, bu nedenle EnableValueChanged/EnableIntegerValueChanged yöntemleri tekrar başvurmanız gerekebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

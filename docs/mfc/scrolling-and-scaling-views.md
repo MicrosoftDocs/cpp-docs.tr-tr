@@ -8,12 +8,12 @@ helpviewer_keywords:
 - scroll bars [MFC], messages
 - scrolling views [MFC]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-ms.openlocfilehash: acef79a89da88773da564fc965a607e2fd5b53f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2baa89f233eb6df93cde3adbde35ba1e6d35c093
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626123"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283715"
 ---
 # <a name="scrolling-and-scaling-views"></a>Görünümleri Kaydırma ve Ölçeklendirme
 
@@ -47,7 +47,6 @@ Ne kadar "(kullanıcı bir kaydırma çubuğu mil tıkladığında) bir sayfası
 
 Görünümü otomatik olarak alt çerçeve penceresi sığacak şekilde istediğiniz zaman kullanabileceğiniz `CScrollView` kaydırma yerine ölçeklendirme için. Mantıksal görünüm esnetildiğini veya pencerenin istemci alanını tam olarak sığması için küçültülebilir. Ölçeklendirilmiş bir görünüm, kaydırma çubukları vardır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görünümleri Kullanma](../mfc/using-views.md)
-

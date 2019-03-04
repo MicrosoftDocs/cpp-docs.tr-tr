@@ -66,12 +66,12 @@ helpviewer_keywords:
 - CDaoQueryDef [MFC], m_pDAOQueryDef
 - CDaoQueryDef [MFC], m_pDatabase
 ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
-ms.openlocfilehash: 07c508dcf4bd57855d09be5a305847d0b2981305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08fb2909a4fd2e5bda3dfc63d19224a515c7c699
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664535"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283650"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef sınıfı
 
@@ -435,9 +435,9 @@ Hangi bilgilerin alınacağı alan hakkında belirtin seçenekleri. Kullanılabi
 
 - (Varsayılan) AFX_DAO_PRIMARY_INFO adı, türü, boyut öznitelikleri
 
-- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: gerekli sıra konumu, sıfır uzunluk izni, kaynak alan, yabancı adı, kaynak tablosunda, harmanlama sırası
+- Artı AFX_DAO_SECONDARY_INFO birincil bilgileri: Sıfır uzunluk, kaynak alan, yabancı adı, kaynak tablosu harmanlama sırası, gerekli sıra konumu izin ver
 
-- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: varsayılan değer, doğrulama metin doğrulama kuralı
+- AFX_DAO_ALL_INFO birincil ve ikincil bilgi artı: Varsayılan değer, doğrulama metin, doğrulama kuralı
 
 *lpszName*<br/>
 Ada göre arama için istenen alanın adını içeren bir dize. Kullanabileceğiniz bir [CString](../../atl-mfc-shared/reference/cstringt-class.md).
@@ -835,7 +835,7 @@ Bir tam SQL deyimi yürütme için uygun içeren bir dize. Bu dize söz dizimi �
 
 Tipik bir kullanımı, `SetSQL` QueryDefs kullanılmak üzere bir SQL sorgusunu doğrudan yukarı ayardır. (Doğrudan SQL sorguları, hedefte DBMS sözdizimi, DBMS belgelerine bakın.)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

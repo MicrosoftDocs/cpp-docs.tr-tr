@@ -9,12 +9,12 @@ helpviewer_keywords:
 - sinks, notifying of changes
 - IPropertyNotifySinkCP class
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-ms.openlocfilehash: 6a80ff17b5d8083704b144686d8bff27be115b18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b96e5345923d04de74dace173a80b8c4d3ee917f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461613"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280595"
 ---
 # <a name="ipropertynotifysinkcp-class"></a>Ipropertynotifysinkcp sınıfı
 
@@ -53,7 +53,7 @@ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı nokta
 
 **Başlık:** atlctl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IConnectionPointImpl Sınıfı](../../atl/reference/iconnectionpointimpl-class.md)<br/>
 [IConnectionPointContainerImpl Sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>

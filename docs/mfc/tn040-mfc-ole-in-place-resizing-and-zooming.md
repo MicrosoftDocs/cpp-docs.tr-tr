@@ -1,5 +1,5 @@
 ---
-title: 'TN040: MFC-OLE yeniden boyutlandırma ve yakınlaştırma yerinde'
+title: 'TN040: MFC-OLE yerinde yeniden boyutlandırma ve yakınlaştırma'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.ole
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-ms.openlocfilehash: 072ebe0180bb44145cef694e2283e91a0cacf602
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2f6c6acfefaae877790fd2cc0926bc2474c79b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477213"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283767"
 ---
-# <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE Yerinde Yeniden Boyutlandırma ve Yakınlaştırma
+# <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE yerinde yeniden boyutlandırma ve yakınlaştırma
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -84,8 +84,7 @@ Bir sunucu (dereceye kadar), bu anlaşması sırasında neler denetleyebilirsini
 
 Özel yeniden boyutlandırma uygular ve hala tarafından sağlanan kullanıcı arabirimi yararlanarak `COleResizeBar` WM_SIZECHILD iletisinde kılarak, `COleIPFrameWnd` sınıfı. WM_SIZECHILD özellikleri hakkında daha fazla bilgi için bkz. [Teknik Not 24](../mfc/tn024-mfc-defined-messages-and-resources.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

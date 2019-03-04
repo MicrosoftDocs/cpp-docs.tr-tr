@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-ms.openlocfilehash: 79f620766e8d0888e606fcb45a0fd02c9de58fc9
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: de23c59fdb59f6f40e256589c5450a8118bb8e5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522603"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281258"
 ---
 # <a name="application-type-mfc-application-wizard"></a>Uygulama Türü, MFC Uygulama Sihirbazı
 
@@ -98,7 +98,7 @@ Bu sayfanın kullanın [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-applica
   |**Paylaşılan DLL'de MFC kullan**|MFC Kitaplığı uygulamanın paylaşılan DLL olarak bağlar. Uygulama çalışma zamanında MFC Kitaplığı çağrılar. Bu seçenek, MFC Kitaplığı kullanan birden fazla yürütülebilir dosya oluşan uygulamaları disk ve bellek gereksinimlerini azaltır. Win32 ve MFC uygulamaları (varsayılan), DLL işlevleri çağırabilir|
   |**MFC'yi statik kitaplıkta kullan**|Uygulamanın statik MFC Kitaplığı için derleme zamanında bağlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../../ide/file-types-created-for-visual-cpp-projects.md)

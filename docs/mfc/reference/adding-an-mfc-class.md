@@ -7,12 +7,12 @@ helpviewer_keywords:
 - classes [MFC], adding MFC
 - MFC, adding classes
 ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
-ms.openlocfilehash: f9bed3814c4489cf3850ccab97efb23caeb51730
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1cc3dc734917da46af99e67da40fe243941102e3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640810"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280673"
 ---
 # <a name="adding-an-mfc-class"></a>MFC Sınıfı Ekleme
 
@@ -31,9 +31,8 @@ Projenize Microsoft Foundation Class (MFC) kitaplığı sınıflarından türeti
 
 1. Tıklayın **son** sihirbazı kapatın ve yeni bir sınıf sınıf görüntüleyin. Sihirbazı tarafından oluşturulan dosyaları da görüntüleyebilirsiniz **Çözüm Gezgini**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Sınıfına genel bakış](../../mfc/class-library-overview.md)
-

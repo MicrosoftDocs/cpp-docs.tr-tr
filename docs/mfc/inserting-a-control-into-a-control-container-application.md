@@ -1,18 +1,18 @@
 ---
-title: 'ActiveX Denetim Kapsayıcıları: Bir Denetim Kapsayıcısı Uygulamasına Denetim Ekleme'
+title: 'ActiveX denetim kapsayıcıları: Bir denetim kapsayıcısı uygulamasına denetim ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ActiveX control containers [MFC], inserting controls
 - ActiveX controls [MFC], adding to projects
 ms.assetid: bbb617ff-872f-43d8-b4d6-c49adb16b148
-ms.openlocfilehash: 2ca503119df955e8b76f6f8c131421f3e2d85652
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f2b964d337ee882bff8acd904ad2fcf64879f88
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541381"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283637"
 ---
-# <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX Denetim Kapsayıcıları: Bir Denetim Kapsayıcısı Uygulamasına Denetim Ekleme
+# <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX denetim kapsayıcıları: Bir denetim kapsayıcısı uygulamasına denetim ekleme
 
 Bir ActiveX denetimini ActiveX denetimi kapsayıcısı uygulamasından erişebilmeniz için önce kapsayıcı kullanılarak uygulama ActiveX denetimini eklemelisiniz [ActiveX denetimi Ekle](../windows/insert-activex-control-dialog-box.md) iletişim kutusu.
 
@@ -22,7 +22,6 @@ Denetimi ekledikten sonra iletişim kutusu sınıfı için bir üye değişkeni 
 
 Üye değişkeni bir sınıf için bir sarmalayıcı sınıfı adlandırılan otomatik olarak oluşturulur ve projenize eklenir ekledikten sonra. Bu sınıf, Denetim kapsayıcısı ile eklenen denetimin arasında bir arabirim olarak kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
-

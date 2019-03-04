@@ -1,5 +1,5 @@
 ---
-title: CComObjectRootEx sınıfı
+title: CComObjectRootEx Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectRootEx
@@ -20,14 +20,14 @@ f1_keywords:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-ms.openlocfilehash: 63547405791f7f0391138dd2d23020c62c8a4a28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06a0c0e4b650945e10015c3220b926399ec9c6fd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655813"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280647"
 ---
-# <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
+# <a name="ccomobjectrootex-class"></a>CComObjectRootEx Class
 
 Bu sınıf, toplanmayan ve toplanan nesneler için nesne başvuru sayısı Yönetimi işlemek için yöntemler sağlar.
 
@@ -369,7 +369,7 @@ void Unlock();
 
 Bu yöntem, iş parçacığı modeli tek iş parçacıklı ise, hiçbir şey yapmaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
 [CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>

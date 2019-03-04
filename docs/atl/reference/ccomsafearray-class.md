@@ -28,12 +28,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
-ms.openlocfilehash: 861fdefe19a0c5b78a7874be3386873d6c253a3c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 0262764c950b01acdb610873a995a9a6fd912997
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521420"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280686"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray sınıfı
 
@@ -125,7 +125,7 @@ A `CComSafeArray` aşağıdaki alt VARIANT veri türü içerebilir:
 |VT_R4|float|
 |VT_R8|çift|
 |VT_DECIMAL|ondalık işaretçi|
-|VT_VARIANT BEKLENİYORDU|değişken işaretçisi|
+|VT_VARIANT|değişken işaretçisi|
 |VT_CY|Currency veri türü|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -462,7 +462,7 @@ VARTYPE GetType() const;
 |VT_R4|float|
 |VT_R8|çift|
 |VT_DECIMAL|ondalık işaretçi|
-|VT_VARIANT BEKLENİYORDU|değişken işaretçisi|
+|VT_VARIANT|değişken işaretçisi|
 |VT_CY|Currency veri türü|
 
 ##  <a name="getupperbound"></a>  CComSafeArray::GetUpperBound
@@ -660,7 +660,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 *BCopy* BSTR veya TÜREVLERİ türü öğeler için bir dizi eklendiğinde bayrağı dikkate alınır. Varsayılan değer true, diziye bir öğe eklendiğinde yeni bir kopya verilerinin yapılmasını sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [SAFEARRAY veri türü](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
 [CComSafeArray::Create](#create)<br/>

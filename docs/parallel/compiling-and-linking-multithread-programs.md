@@ -10,12 +10,12 @@ helpviewer_keywords:
 - compiling source code [C++], multithread programs
 - linking [C++], multithread programs
 ms.assetid: 27589afc-daf2-4f26-b868-a99de5c9dfec
-ms.openlocfilehash: 3d98f5341de1374c9119e2a4303c94fcfb005e29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc56c71c4c3c1367d35dd5995054b1d7371ae9de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558892"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283494"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programları Derleme ve Bağlama
 
@@ -43,6 +43,6 @@ Programları derlenen varsayılan olarak birden çok iş parçacıklı.
     CL BOUNCE.C
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

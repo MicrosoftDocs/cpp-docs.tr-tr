@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 26d8d004c933e48833047f85727ae6282c4b43d7
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: fb41134de21cc030ae4e96360cad67222026ce4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893866"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283442"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -541,7 +541,7 @@ Aşağıdaki örnek, bir olay havuzu sınıfı nasıl tanımlayabilir gösterir 
 
 [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İşlevler](../../atl/reference/atl-functions.md)<br/>
 [Bileşik Denetim Makroları](../../atl/reference/composite-control-macros.md)
