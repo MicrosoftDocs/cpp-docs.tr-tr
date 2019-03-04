@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-ms.openlocfilehash: 5006a648729e1fc561855fcb8cba1d658a9c82cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2501373c2ff5904343a6522e4fb18663f5de3843
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619056"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294427"
 ---
 # <a name="ole-background"></a>OLE Arka Planı
 
@@ -26,7 +26,7 @@ OLE uygulamaları arasında sorunsuz etkileşim hedefe hepsi birçok farklı kav
 
 - Bağlama ve katıştırma
 
-   Bağlama ve katıştırma başka bir uygulamada oluşturulan bir OLE belgesi içinde oluşturulan öğelerini depolamak için iki yöntemlerdir. İkisi arasındaki farklar hakkında genel bilgi için bkz [OLE arka planı: bağlama ve katıştırma](../mfc/ole-background-linking-and-embedding.md). Daha ayrıntılı bilgi için makalelerine bakın [kapsayıcıları](../mfc/containers.md) ve [sunucuları](../mfc/servers.md).
+   Bağlama ve katıştırma başka bir uygulamada oluşturulan bir OLE belgesi içinde oluşturulan öğelerini depolamak için iki yöntemlerdir. İkisi arasındaki farklar hakkında genel bilgi için bkz [OLE arka planı: Bağlama ve katıştırma](../mfc/ole-background-linking-and-embedding.md). Daha ayrıntılı bilgi için makalelerine bakın [kapsayıcıları](../mfc/containers.md) ve [sunucuları](../mfc/servers.md).
 
 - Yerinde etkinleştirme (görsel düzenleme)
 
@@ -42,7 +42,7 @@ OLE uygulamaları arasında sorunsuz etkileşim hedefe hepsi birçok farklı kav
 
 - Bileşik dosyalar
 
-   Bileşik dosyalar bileşik belge OLE uygulamaları için yapılandırılmış depolama basitleştiren bir standart dosya biçimi sağlayın. Bileşik bir dosya içindeki Pano'yu dizinleri özelliklerinin çoğu ve birçok özellik dosyalarının akışları sahiptir. Bu teknoloji, yapılandırılmış depolama olarak da adlandırılır. Bileşik dosyalar hakkında daha fazla bilgi için bkz [kapsayıcılar: bileşik dosyalar](../mfc/containers-compound-files.md).
+   Bileşik dosyalar bileşik belge OLE uygulamaları için yapılandırılmış depolama basitleştiren bir standart dosya biçimi sağlayın. Bileşik bir dosya içindeki Pano'yu dizinleri özelliklerinin çoğu ve birçok özellik dosyalarının akışları sahiptir. Bu teknoloji, yapılandırılmış depolama olarak da adlandırılır. Bileşik dosyalar hakkında daha fazla bilgi için bkz [kapsayıcıları: Bileşik dosyalar](../mfc/containers-compound-files.md).
 
 - Tekdüzen veri aktarımı
 
@@ -58,17 +58,16 @@ OLE uygulamaları arasında sorunsuz etkileşim hedefe hepsi birçok farklı kav
 
 Daha da önemlisi OLE konuların bazıları aşağıdaki makalelerde ele alınmıştır:
 
-- [OLE Arka Planı: Bağlama ve Katıştırma](../mfc/ole-background-linking-and-embedding.md)
+- [OLE arka planı: Bağlama ve katıştırma](../mfc/ole-background-linking-and-embedding.md)
 
-- [OLE Arka Planı: Kapsayıcılar ve Sunucular](../mfc/ole-background-containers-and-servers.md)
+- [OLE arka planı: Kapsayıcılar ve sunucular](../mfc/ole-background-containers-and-servers.md)
 
-- [OLE Arka Planı: Uygulama Stratejileri](../mfc/ole-background-implementation-strategies.md)
+- [OLE arka planı: Uygulama stratejileri](../mfc/ole-background-implementation-strategies.md)
 
-- [OLE Arka Planı: MFC Uygulaması](../mfc/ole-background-mfc-implementation.md)
+- [OLE arka planı: MFC uygulaması](../mfc/ole-background-mfc-implementation.md)
 
 Yukarıdaki makalelerinde bulunamadı genel OLE bilgi için MSDN'de OLE arayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)
-

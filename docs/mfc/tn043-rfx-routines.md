@@ -1,5 +1,5 @@
 ---
-title: 'TN043: RFX Rutinleri'
+title: 'TN043: RFX rutinleri'
 ms.date: 06/28/2018
 f1_keywords:
 - RFX
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - TN043
 - RFX (record field exchange)
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
-ms.openlocfilehash: 278351ad1cf81215f4c6033f4cff0b100adedf23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18820c7d17ddea355490ee32679d5d690ec3533e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658867"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294492"
 ---
-# <a name="tn043-rfx-routines"></a>TN043: RFX Rutinleri
+# <a name="tn043-rfx-routines"></a>TN043: RFX rutinleri
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -144,9 +144,9 @@ Varsayılan RFX mekanizmasını genişletmek için birkaç yolu vardır. Şunlar
 
 Kendi özel RFX işlevi yazmak için mevcut bir RFX işlevi kopyalayıp kendi amaçlarınız için değiştirebilirsiniz önerilir. Kopyalamak için sağ RFX seçmek, işinizi çok daha kolay yapabilirsiniz. Bazı RFX işlevleri kopyalanacağı karar verirken dikkate almanız benzersiz bazı özellikler vardır.
 
-`RFX_Long` ve `RFX_Int`: Basit RFX işlevleri şunlardır. Veri değeri herhangi bir özel yorumu gerekli değildir ve veri boyutu sabit.
+`RFX_Long` ve `RFX_Int`: En basit RFX işlevleri şunlardır. Veri değeri herhangi bir özel yorumu gerekli değildir ve veri boyutu sabit.
 
-`RFX_Single` ve `RFX_Double`: gibi RFX_Long ve yukarıdaki rfx_ınt, bu işlevler basittir ve yapabilirsiniz varsayılan uygulamasını kapsamlı bir şekilde kullanın. Bunlar dbflt.cpp yerine dbrfx.cpp, ancak yalnızca açıkça başvuru olduklarında noktası kitaplığı kayan çalışma zamanı yükleme etkinleştirmek için depolanır.
+`RFX_Single` ve `RFX_Double`: Bu işlevler RFX_Long ve rfx_ınt yukarıdaki gibi basittir ve yapabilirsiniz varsayılan uygulamasını kapsamlı bir şekilde kullanın. Bunlar dbflt.cpp yerine dbrfx.cpp, ancak yalnızca açıkça başvuru olduklarında noktası kitaplığı kayan çalışma zamanı yükleme etkinleştirmek için depolanır.
 
 `RFX_Text` ve `RFX_Binary`: Bu iki işlev dizesi/ikili bilgiyi tutmak için statik bir arabellek erişinceye ve kaydetme & değeri yerine bu arabellekleri ODBC SQLBindCol ile kaydetmeniz gerekir. Bu nedenle, bu iki işlev özel durum kodu bulunmaktadır.
 
@@ -158,7 +158,7 @@ Kendi yazarken **RFX_** işlevi, genellikle oluşturabileceksiniz kullanılacak 
 
 Çağrılacak önemlidir `IsFieldType` RFX işlevi ve hemen FALSE döndürürse dönüş başlangıcı. Bu mekanizma üzerinde gerçekleştirilen gelen parametre operations tutar *outputColumns*ve bunun tersi de geçerlidir (arama gibi `BindParam` üzerinde bir *outputColumn*). Ayrıca, `IsFieldType` otomatik olarak sayısını izler *outputColumns* (*m_nFields*) ve params (*m_nParams*).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

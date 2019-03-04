@@ -7,12 +7,12 @@ helpviewer_keywords:
 - image lists [MFC], dragging images from
 - images [MFC], dragging from image lists
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-ms.openlocfilehash: 9d42e9cdd8e2711fc6ed6aa0d08a19b8bc55d5f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba56a38cfc5ccf808c7d95f24666fff0313ecc43
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562207"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294518"
 ---
 # <a name="dragging-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Sürükleme
 
@@ -30,8 +30,7 @@ ms.locfileid: "50562207"
 
 Bir uygulama çağırdığında `BeginDrag`, sistemin geçici, iç görüntü listesi oluşturur ve kopya belirtilen görüntü iç listesine sürükleyin. Geçici Sürükle resim listesi için bir işaretçi kullanarak alabilirsiniz [GetDragImage](../mfc/reference/cimagelist-class.md#getdragimage) üye işlevi. İşlev ayrıca geçerli Sürükle konumu ve görüntüyü Sürükle Sürükle konumuna göre uzaklığı alır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CImageList Kullanma](../mfc/using-cimagelist.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

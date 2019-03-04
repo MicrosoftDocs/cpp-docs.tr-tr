@@ -4,12 +4,12 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-ms.openlocfilehash: a3f1dca05eee7710d07818fb660e35be535fbb78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94bc17f59e0d0a7ed5627d0ed20d31e471c22fd9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432793"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294505"
 ---
 # <a name="internet-information-by-task"></a>Göreve Göre Internet Bilgileri
 
@@ -48,7 +48,6 @@ Bu konudaki görevleri aşağıdaki kategorileri listelenmiştir:
 
 - [Bir Gopher istemci uygulaması yazma](../mfc/steps-in-a-typical-gopher-client-application.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
-

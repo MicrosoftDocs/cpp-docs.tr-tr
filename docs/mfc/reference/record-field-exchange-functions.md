@@ -45,12 +45,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-ms.openlocfilehash: 2970a722f79e9707f8721c1c8595bfd1d133f898
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 865c67b88c37e32ef33fa410ef178b81b7a6ecac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525950"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297079"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 
@@ -62,9 +62,9 @@ Toplu satır ODBC tabanlı sınıflarda getirme uygulanmadı ya da ClassWizard D
 
 Kayıt alanı değişim işlevleri her zaman çerçevesi çağıran veri aktarımı `DoFieldExchange` veya `DoBulkFieldExchange`. Her işlev bir özel veri türü aktarır.
 
-Bu işlevlerin nasıl kullanıldığı hakkında daha fazla bilgi için makalelere göz atın [kayıt alanı değişimi: nasıl RFX çalışır (ODBC)](../../data/odbc/record-field-exchange-how-rfx-works.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Bu işlevlerin nasıl kullanıldığı hakkında daha fazla bilgi için makalelere göz atın [kayıt alanı değişimi: RFX'in çalışması (ODBC)](../../data/odbc/record-field-exchange-how-rfx-works.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Dinamik olarak bağlama veri sütunlar için de RFX veya DFX işlevleri kendiniz makalelerinde açıklandığı gibi çağırabilirsiniz [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). Ayrıca, Teknik Not açıklandığı gibi kendi özel RFX veya DFX rutinleri yazabilirsiniz [43](../../mfc/tn043-rfx-routines.md) (ODBC için) ve Teknik Not [53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) (DAO için).
+Dinamik olarak bağlama veri sütunlar için de RFX veya DFX işlevleri kendiniz makalelerinde açıklandığı gibi çağırabilirsiniz [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). Ayrıca, Teknik Not açıklandığı gibi kendi özel RFX veya DFX rutinleri yazabilirsiniz [43](../../mfc/tn043-rfx-routines.md) (ODBC için) ve Teknik Not [53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) (DAO için).
 
 RFX ve toplu RFX örneği için işlevleri gibi görünürler `DoFieldExchange` ve `DoBulkFieldExchange` işlevleri, [RFX_Text](#rfx_text) ve #rfx_text_bulk [RFX_Text_Bulk]). DFX işlevleri RFX işlevleri için oldukça benzerdir.
 
@@ -77,7 +77,7 @@ RFX ve toplu RFX örneği için işlevleri gibi görünürler `DoFieldExchange` 
 |[RFX_Byte](#rfx_byte)|Tek bir bayt veri aktarır.|
 |[RFX_Date](#rfx_date)|Aktarımı saat ve tarih verilerini kullanan [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya TIMESTAMP_STRUCT.|
 |[RFX_Double](#rfx_double)|Çift duyarlıklı kayan veri aktarır.|
-|[Rfx_ınt](#rfx_int)|Tamsayı veri aktarır.|
+|[RFX_Int](#rfx_int)|Tamsayı veri aktarır.|
 |[RFX_Long](#rfx_long)|Tamsayı veri aktarımları uzun.|
 |[RFX_LongBinary](#rfx_longbinary)|Bir nesne ile ikili büyük nesne (BLOB) veri aktarımı [CLongBinary](clongbinary-class.md) sınıfı.|
 |[RFX_Single](#rfx_single)|Veri aktarımları kaydırın.|
@@ -92,7 +92,7 @@ RFX ve toplu RFX örneği için işlevleri gibi görünürler `DoFieldExchange` 
 |[RFX_Byte_Bulk](#rfx_byte_bulk)|Tek bayt dizilerini aktarır.|
 |[RFX_Date_Bulk](#rfx_date_bulk)|Veri türü TIMESTAMP_STRUCT dizileri aktarır.|
 |[RFX_Double_Bulk](#rfx_double_bulk)|Çift duyarlıklı, kayan nokta veri dizileri aktarır.|
-|[Rfx_ınt_bulk](#rfx_int_bulk)|Tamsayı veri dizileri aktarır.|
+|[RFX_Int_Bulk](#rfx_int_bulk)|Tamsayı veri dizileri aktarır.|
 |[RFX_Long_Bulk](#rfx_long_bulk)|Uzun tamsayı veri dizileri aktarır.|
 |[RFX_Single_Bulk](#rfx_single_bulk)|Kayan nokta veri dizileri aktarır.|
 |[RFX_Text_Bulk](#rfx_text_bulk)|Veri türü LPSTR dizileri aktarır.|
@@ -132,7 +132,7 @@ void RFX_Binary(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -171,7 +171,7 @@ void RFX_Bool(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -203,7 +203,7 @@ void RFX_Byte(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -245,7 +245,7 @@ void RFX_Date(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -285,7 +285,7 @@ void RFX_Double(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -317,7 +317,7 @@ void RFX_Int(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -350,7 +350,7 @@ value );
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -382,7 +382,7 @@ void RFX_LongBinary(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -414,7 +414,7 @@ void RFX_Single(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -449,7 +449,7 @@ void RFX_Text(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi `CFieldExchange`. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi `CFieldExchange`. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -514,7 +514,7 @@ void RFX_Binary_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -537,11 +537,11 @@ Başlatın, *prgByteVals* ve *prgLengths* null, ardından bunların işaret dizi
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir kolaylaştırmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -564,7 +564,7 @@ void RFX_Bool_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -584,11 +584,11 @@ Başlatın, *prgBoolVals* ve *prgLengths* null, ardından bunların işaret dizi
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -611,7 +611,7 @@ void RFX_Byte_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -631,11 +631,11 @@ Başlatın, *prgByteVals* ve *prgLengths* null, ardından bunların işaret dizi
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -658,7 +658,7 @@ void RFX_Date_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -678,11 +678,11 @@ Başlatın, *prgTSVals* ve *prgLengths* null, ardından bunların işaret dizile
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -705,7 +705,7 @@ void RFX_Double_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -725,17 +725,17 @@ Başlatın, *prgDblVals* ve *prgLengths* null, ardından bunların işaret dizil
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxdb.h
 
-## <a name="rfx_int_bulk"></a>  Rfx_ınt_bulk
+## <a name="rfx_int_bulk"></a>  RFX_Int_Bulk
 
 Alan veri üyeleri arasında tamsayı veri aktaran bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_SMALLINT yazın.
 
@@ -751,7 +751,7 @@ void RFX_Int(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Sınıfın bir nesnesi için bir işaretçi [CFieldExchange](cfieldexchange-class.md). Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. İşlemleri hakkında daha fazla bilgi için bir `CFieldExchange` nesnesi belirtebilirsiniz, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -784,7 +784,7 @@ void RFX_Long_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -804,11 +804,11 @@ Başlatın, *prgLongVals* ve *prgLengths* null, ardından bunların işaret dizi
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -831,7 +831,7 @@ void RFX_Single_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -851,11 +851,11 @@ Başlatın, *prgFltVals* ve *prgLengths* null, ardından bunların işaret dizil
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
+See [RFX_Text_Bulk](#rfx_text_bulk).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -879,7 +879,7 @@ void RFX_Text_Bulk(
 ### <a name="parameters"></a>Parametreler
 
 *pFX*<br/>
-Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX Works nasıl](../../data/odbc/record-field-exchange-how-rfx-works.md).
+Bir işaretçi bir [CFieldExchange](cfieldexchange-class.md) nesne. Bu nesne, işlevin her bir çağrı bağlamının tanımlamak için bilgi içerir. Daha fazla bilgi için bkz [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md).
 
 *szName*<br/>
 Bir veri sütununun adı.
@@ -902,7 +902,7 @@ Başlatın, *prgStrVals* ve *prgLengths* null, ardından bunların işaret dizil
 > [!NOTE]
 >  Toplu kayıt alanı değişimi yalnızca verileri veri kaynağından recordset nesnesine aktarır. Kümenizin güncelleştirilebilir yapmak için ODBC API işlevini kullanmalısınız `SQLSetPos`.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Daha fazla bilgi için makalelere bakın [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md) ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
 ### <a name="example"></a>Örnek
 
@@ -1434,10 +1434,9 @@ void CCustSet::DoFieldExchange(CDaoFieldExchange* pFX)
 
 **Başlık:** afxdao.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [CRecordset::DoFieldExchange](crecordset-class.md#dofieldexchange)<br/>
 [CRecordset::DoBulkFieldExchange](crecordset-class.md#dobulkfieldexchange)<br/>
 [CDaoRecordset::DoFieldExchange](cdaorecordset-class.md#dofieldexchange)
-

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-ms.openlocfilehash: 1168375606ef86061269454aa361a076efa331a4
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 7e5b553e6a10bee0e5b05bb32b9af3069269ca91
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176412"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294570"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 
@@ -465,7 +465,7 @@ void SetIconsList(HIMAGELIST hIcons);
 *uiImageListResID*<br/>
 [in] Görüntü listesi kaynak kimliği.
 
-*CX*<br/>
+*cx*<br/>
 [in] Simge görüntü listesinde piksel cinsinden genişliği.
 
 *clrTransparent*<br/>
@@ -516,7 +516,7 @@ Aşağıdaki tabloda belirtilebilir numaralandırma değerlerinin *Ara* parametr
 |`CMFCPropertySheet::PropSheetLook_OneNoteTabs`|Microsoft OneNote stilinde her bir özellik sayfası için bir sekme görüntüler. Framework sekmeleri özellik sayfasının üst kısmında görüntülenir ve kaydırma oklarının değerinden daha fazla sekme varsa tek bir satırda sığacak.|
 |`CMFCPropertySheet::PropSheetLook_List`|Özellik sayfasının sol tarafa bir listesini görüntüler. Her liste öğesi, bir özellik sayfasına karşılık gelir. Liste görünür alanında sığmayacak kadar çok daha fazla liste öğesi yoksa framework kaydırma okları görüntüler.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
