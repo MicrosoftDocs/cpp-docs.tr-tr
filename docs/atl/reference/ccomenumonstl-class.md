@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-ms.openlocfilehash: 7b1efb3bd574edde59f6d8845d73a51dfabea433
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56d0de1131791def3ea536c6e5a7f5ce0bef9617
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626622"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290514"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL sınıfı
 
@@ -79,7 +79,7 @@ Bkz: [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-
 
 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)
 
-[Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md)
+[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)
 
 `CComEnumOnSTL`
 
@@ -99,10 +99,10 @@ Bu şablon işlevi uygulamak için kullanılan `_NewEnum` aşağıda gösterildi
 
 Bu kod oluşturur bir **typedef** için `CComEnumOnSTL` oluşan bir vektörü sunan `CComVariant`s yoluyla `IEnumVariant` arabirimi. `CVariantCollection` Sınıfı yalnızca uzmanlaşmış `CreateSTLEnumerator` Numaralandırıcı bu tür nesnelerle çalışmayı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
-[ATLCollections örnek: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../visual-cpp-samples.md)<br/>
+[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[ATLCollections örneği: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>

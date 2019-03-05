@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-ms.openlocfilehash: 7ece96b26605c9f881ead2ba7cfcd1313a053faf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5175ffd615837fb10ba1bbced5da7f7733b6e193
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484909"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301564"
 ---
-# <a name="using-idispeventimpl"></a>Idispeventımpl kullanma
+# <a name="using-idispeventimpl"></a>Using IDispEventImpl
 
 Kullanırken `IDispEventImpl` olayları işlemek için yapmanız gerekir:
 
@@ -57,8 +57,7 @@ Aşağıdaki kod NotSoSimple.h içinde görünür. İlgili kod açıklamaları t
 
 [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/cpp/using-idispeventimpl_2.h)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Olay İşleme](../atl/event-handling-and-atl.md)<br/>
 [ATLEventHandling örnek](../visual-cpp-samples.md)
-

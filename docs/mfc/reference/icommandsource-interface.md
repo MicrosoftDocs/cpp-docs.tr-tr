@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandSource interface [MFC]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-ms.openlocfilehash: 4fca5a2ffef7e8da4f6dd79fcd99c72e92cfdf6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21c4f4544a6ccf2342580bc5859739fc1f50d0c2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538443"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296026"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
 
@@ -55,7 +55,7 @@ interface class ICommandSource
 
 MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak [ICommandTarget arabirimi](../../mfc/reference/icommandtarget-interface.md), kullanıcı denetimine bir başvuru size `ICommandSource` nesne.
 
-Bkz [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
+Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
@@ -82,7 +82,7 @@ Komut işleyicisi yöntemi için bir tanıtıcı.
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntem, komut işleyicisi cmdHandler komut kaynak nesnesine ekler ve işleyici için cmdID eşler.
-Bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler kullanma örneği için.
+Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler kullanma örneği için.
 
 ## <a name="addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
 
@@ -246,7 +246,7 @@ Gönderilecek iletinin komut kimliği.
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntem, zaman uyumlu olarak komutu tarafından belirtilen kimliği eşlenen bir ileti gönderir. Bu pencerenin ileti kuyrukta bir ileti yerleştirmek için CWnd::SendMessage çağırır ve bu pencere yordamını döndürmeden önce iletiyi işleyene kadar bekler.
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[Nasıl yapılır: Windows Forms Denetimine Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [ICommandTarget Arabirimi](../../mfc/reference/icommandtarget-interface.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-ms.openlocfilehash: 29575166a188b0691465bef0a72810d2e3d97624
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 79d24ef4b6687bce61295a92cdb90f4ce4a0d619
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174905"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290008"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi
 
-Çerçeve karmaşık kendi ilişkili görünümler ve çerçeve penceresi ile belge oluşturma işlemini yönetmek için iki belge şablonu sınıfları kullanır: [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI uygulamaları için ve [CMultiDocTemplate ](../mfc/reference/cmultidoctemplate-class.md) MDI uygulamaları için. A `CSingleDocTemplate` oluşturabilir ve aynı anda tek bir belge depolayabilir. A `CMultiDocTemplate` bir türdeki çok sayıda açık belgelerin listesini tutar.
+Karmaşık kendi ilişkili görünümler ve çerçeve penceresi ile belge oluşturma işlemini yönetmek için iki belge şablonu sınıfları framework kullanır: [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI uygulamaları için ve [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) MDI uygulamaları için. A `CSingleDocTemplate` oluşturabilir ve aynı anda tek bir belge depolayabilir. A `CMultiDocTemplate` bir türdeki çok sayıda açık belgelerin listesini tutar.
 
 Bazı uygulamalar birden çok belge türlerini destekler. Örneğin, bir uygulama, metin ve grafikleri belgeler desteklemiyor olabilir. Kullanıcı Dosya menüsündeki yeni komutu seçtiğinde bu tür bir uygulamada, bir iletişim kutusu açmak için olası yeni belge türlerinin bir listesini gösterir. Her bir desteklenen belge türü için ayrı bir belge şablonu nesnesi uygulama kullanır. Aşağıdaki şekil iki belge türlerini destekleyen ve çeşitli açık belgeleri gösteren bir MDI Uygulaması yapılandırmasını gösterir.
 
@@ -35,11 +35,10 @@ Bir simge kendi konumuna belge şablonları uygulama listesinde bağlı her bir 
 
 Örneğin, üç uygulama için üçüncü bir belge şablonu olur. Bu simge, uygulama 3 dizinindeki bir simge kaynağı ise belge şablonunu kullanılır. Aksi takdirde dizin 0 konumunda simgesi varsayılan olarak kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
 [Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
 [Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
 [FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)<br/>
 [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
-

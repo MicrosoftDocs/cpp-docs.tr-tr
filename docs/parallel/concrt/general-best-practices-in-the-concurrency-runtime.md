@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, general best practices
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-ms.openlocfilehash: 445e985117929cae2ec9a26a1e148b3eff55c2a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e25011e2466d76c946cc55421ed228c8ea174161
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647706"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285613"
 ---
 # <a name="general-best-practices-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler
 
@@ -84,7 +84,7 @@ Aşağıdaki işlev göz önünde bulundurun `download`, verilen URL'den dosyas�
 
 [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_3.cpp)]
 
-Çünkü `GetHttpFile` işlevi potansiyel olarak görünmeyen bir işlemi gerçekleştirir, gecikmeyi geçerli görev için veri bekler çalışması diğer görevleri etkinleştirebilirsiniz. Bu örneğin tam sürümü için bkz: [nasıl yapılır: kullanım gecikmeyi uzaklığı gecikme](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+Çünkü `GetHttpFile` işlevi potansiyel olarak görünmeyen bir işlemi gerçekleştirir, gecikmeyi geçerli görev için veri bekler çalışması diğer görevleri etkinleştirebilirsiniz. Bu örneğin tam sürümü için bkz: [nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
 [[Üst](#top)]
 
@@ -92,7 +92,7 @@ Aşağıdaki işlev göz önünde bulundurun `download`, verilen URL'den dosyas�
 
 Bellek Yönetimi işlevleri kullanmak [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) ve [concurrency::Free](reference/concurrency-namespace-functions.md#free), sık görece kısa ömürlü küçük nesneleri ayırmak hassas görevler vardır. Eşzamanlılık Çalışma zamanı, her bir çalışan iş parçacığı için ayrı bir önbellek tutar. `Alloc` Ve `Free` işlevleri bellek ayırıp bu önbellekler kilitler veya belleği engelleri kullanmadan öğesinden.
 
-Bu bellek yönetimi işlevleri hakkında daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Bu işlevler kullanan bir örnek için bkz: [nasıl yapılır: kullanım ayırma ve serbest bellek performansını artırmak için](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
+Bu bellek yönetimi işlevleri hakkında daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Bu işlevler kullanan bir örnek için bkz: [nasıl yapılır: Ayırma kullanın ve bellek performansını artırmak ücretsiz](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
 
 [[Üst](#top)]
 
@@ -124,7 +124,7 @@ Error details:
     negative balance: -76
 ```
 
-Eşzamanlılık nesnelerinin kullanım süresini yönetmek için RAII deseni kullanan diğer örnekler için [izlenecek yol: bir kullanıcı arabirimi iş parçacığı kaldırma çalışma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [nasıl yapılır: bağlam sınıfını bir Guyana uygulamak için kullanma Semafor](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md), ve [nasıl yapılır: gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+Eşzamanlılık nesnelerinin kullanım süresini yönetmek için RAII deseni kullanan diğer örnekler için [izlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [nasıl yapılır: Bağlam sınıfını işbirlikçi semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md), ve [nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
 [[Üst](#top)]
 
@@ -148,7 +148,7 @@ Eşzamanlılık Çalışma zamanı tarafından oluşturulan veri bölümü gibi 
 
 [[Üst](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı En İyi Yöntemleri](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
@@ -158,7 +158,7 @@ Eşzamanlılık Çalışma zamanı tarafından oluşturulan veri bölümü gibi 
 [Eşitleme Veri Yapılarını Windows API ile Karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)<br/>
 [Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)<br/>
 [Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)<br/>
-[Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
-[İzlenecek Yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
+[Nasıl yapılır: Bağlam Sınıfını İşbirliğine Dayalı Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
+[İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
 [Paralel Desen Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)

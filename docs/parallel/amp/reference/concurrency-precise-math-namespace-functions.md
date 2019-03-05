@@ -90,12 +90,12 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::trunc
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-ms.openlocfilehash: ccbb9bdda3132626a6bf76161104c9716a9b5c89
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7690c0629e7035d0130f0a7dbdcabf3e959ae7b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469361"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297352"
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>CONCURRENCY::precise_math ad alanı işlevleri
 
@@ -117,7 +117,7 @@ ms.locfileid: "50469361"
 |[expf](#expf)|[expm1](#expm1)|[expm1f](#expm1f)|
 |[fabs](#fabs)|[fabsf](#fabsf)|[Kat](#floor)|
 |[fdim](#fdim)|[fdimf](#fdimf)||
-|[floorf](#floorf)|[FMA](#fma)|[fmaf](#fmaf)|
+|[floorf](#floorf)|[fma](#fma)|[fmaf](#fmaf)|
 [fmax](#fmax)|[fmaxf](#fmaxf)||
 |[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|
 |[fmodf](#fmodf)|[fpclassify](#fpclassify)|[frexp](#frexp)|
@@ -2431,7 +2431,7 @@ Kayan nokta değeri
 *_YANLARI*<br/>
 _X'in sinüs değerini döndürür
 
-*_K*<br/>
+*_C*<br/>
 _X Kosinüs değerini döndürür
 
 ##  <a name="sincosf"></a>  sincosf
@@ -2453,7 +2453,7 @@ Kayan nokta değeri
 *_YANLARI*<br/>
 _X'in sinüs değerini döndürür
 
-*_K*<br/>
+*_C*<br/>
 _X Kosinüs değerini döndürür
 
 ##  <a name="sinh"></a>  SİNH
@@ -2744,6 +2744,6 @@ Kayan nokta değeri
 
 Bağımsız değişken tamsayı bileşenini döndürür
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::precise_math Ad Alanı](concurrency-precise-math-namespace.md)

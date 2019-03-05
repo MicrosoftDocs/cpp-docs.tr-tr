@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - operators [ATL]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
-ms.openlocfilehash: 361b0316e27ee06c64b3ed5e11c6aab10210596f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f1bd4f88b8d3a37f051a208a887c5264f61955a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476264"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293504"
 ---
 # <a name="atl-operators"></a>ATL işleçleri
 
@@ -163,4 +163,3 @@ Gerekirse TRUE döndürür adresini *lhs* büyüktür veya eşittir adresini *so
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlecin adresini davranır `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları ile uyumluluk sağlamak için kullanılır.
-

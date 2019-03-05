@@ -1,5 +1,5 @@
 ---
-title: 'TN028: Bağlama Duyarlı Yardım Desteği'
+title: 'TN028: Bağlama duyarlı Yardım desteği'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.help
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - TN028
 - resource identifiers, context-sensitive Help
 ms.assetid: 884f1c55-fa27-4d4c-984f-30907d477484
-ms.openlocfilehash: 580046810243593c17dbf7e1c3ca427b37bd14a8
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: e3ac2742f2c57c01c645c72c933234a96ece773a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520162"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288291"
 ---
-# <a name="tn028-context-sensitive-help-support"></a>TN028: Bağlama Duyarlı Yardım Desteği
+# <a name="tn028-context-sensitive-help-support"></a>TN028: Bağlama duyarlı Yardım desteği
 
 Bu Not, Yardım bağlamlarının kimlikleri ve diğer Yardım sorunları MFC'de atamak için kurallar açıklanmaktadır. Bağlama duyarlı Yardım desteği, Visual c++'ta kullanılabilir olan Yardım derleyicisi gerektirir.
 
 > [!NOTE]
->  Bağlama duyarlı Yardım WinHelp kullanan uygulama yanı sıra, MFC de HTML Yardımı kullanılmasını destekler. Bu desteği ve HTML Yardımı ile programlama hakkında daha fazla bilgi için bkz. [HTML Yardımı: Programlarınız için Bağlama Duyarlı Yardım](../mfc/html-help-context-sensitive-help-for-your-programs.md).
+>  Bağlama duyarlı Yardım WinHelp kullanan uygulama yanı sıra, MFC de HTML Yardımı kullanılmasını destekler. Bu desteği ve HTML Yardımı ile programlama hakkında daha fazla bilgi için bkz. [HTML Yardımı: Programlarınız için bağlama duyarlı Yardım](../mfc/html-help-context-sensitive-help-for-your-programs.md).
 
 ## <a name="types-of-help-supported"></a>Desteklenen Yardım türleri
 
@@ -176,8 +176,7 @@ Bu durumda, bu ileti kutusu için Yardım'ı gösteren 0 nIDHelp için varsayıl
 
 İkinci durumda, nIDHelp için varsayılan değer yardımcı kimliği nIDPrompt aynıdır gösterir -1 ' dir. Yalnızca uygulama Elbette Yardım etkin olduğunda Yardım çalışmaz). İleti kutusu Yardım desteği yok istiyorsanız 0 için nIDHelp sağlamanız gerekir. İletinin Yardım etkin, ancak nIDPrompt farklı Yardım Kimliğinden bağlamasına, nIDHelp nIDPrompt farklı yalnızca pozitif bir değer sağlayın istediğiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - best practices, Parallel Patterns Library
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-ms.openlocfilehash: 153dbf461176ee62f42dbe41a1c426a8c34ae716
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc120ecc122678b54c7dd27b95445f523bc114a6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503326"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293621"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 
@@ -76,7 +76,7 @@ Bu örnekte yükü zamanlama miktarını azaltmak için iç döngü paralel hale
 
 [!code-cpp[concrt-image-processing-filter#22](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_5.cpp)]
 
-Paralel olarak görüntü işleme gerçekleştirmek için bir işlem hattı kullanan benzer bir örnek için bkz. [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Paralel olarak görüntü işleme gerçekleştirmek için bir işlem hattı kullanan benzer bir örnek için bkz. [izlenecek yol: Görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 [[Üst](#top)]
 
@@ -90,7 +90,7 @@ Aşağıdaki örnek, kullanımını gösterir `parallel_invoke` bitonic sıralam
 
 Ek yükü, azaltmak için `parallel_invoke` algoritması, görev dizisini son arama bağlamda gerçekleştirir.
 
-Bu örneğin tam sürümü için bkz: [nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md). Hakkında daha fazla bilgi için `parallel_invoke` algoritmasını bkz [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+Bu örneğin tam sürümü için bkz: [nasıl yapılır: Paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md). Hakkında daha fazla bilgi için `parallel_invoke` algoritmasını bkz [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
 [[Üst](#top)]
 
@@ -102,7 +102,7 @@ Doğrudan bir görev grubu nesnesi ile çalışırken kullanmak [concurrency::ta
 
 [!code-cpp[concrt-parallel-array-search#2](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_7.cpp)]
 
-Paralel yineleme bir üst görev grubunu iptal ettiğinde, görev grupları, paralel algoritmalar kullanmak için genel görev iptal edildi. Bu örneğin tam sürümü için bkz: [nasıl yapılır: paralel bir döngüden sona kullanım İptalden](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md).
+Paralel yineleme bir üst görev grubunu iptal ettiğinde, görev grupları, paralel algoritmalar kullanmak için genel görev iptal edildi. Bu örneğin tam sürümü için bkz: [nasıl yapılır: İptal paralel bir döngüden kurtulmak için](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md).
 
 Özel durum işleme iptal mekanizması daha paralel işi iptal etmek için daha az verimli bir şekilde olsa da, özel durum işleme uygun olduğu durumlar vardır. Örneğin, aşağıdaki yöntemi `for_all`, yinelemeli olarak gerçekleştiren iş işlevi her düğümde bir `tree` yapısı. Bu örnekte, `_children` veri üyesi olan bir [std::list](../../standard-library/list-class.md) içeren `tree` nesneleri.
 
@@ -112,7 +112,7 @@ Paralel yineleme bir üst görev grubunu iptal ettiğinde, görev grupları, par
 
 [!code-cpp[concrt-task-tree-search#3](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_9.cpp)]
 
-Bu örneğin tam sürümü için bkz: [nasıl yapılır: kullanım özel durum işleme sonu için paralel bir döngüden gelen](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
+Bu örneğin tam sürümü için bkz: [nasıl yapılır: Özel durum paralel bir döngüden kurtulmak için işlemeyi kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
 
 Ppl Yapıları tarafından sağlanan özel durum işleme mekanizmasını ve iptal etme hakkında daha fazla genel bilgi için bkz: [ppl'de iptal](cancellation-in-the-ppl.md) ve [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
@@ -198,7 +198,7 @@ Aşağıdaki örnek Öncekine kullanarak değiştirir bir `combinable` yerine Ne
 
 [!code-cpp[concrt-parallel-sum-of-primes#3](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_16.cpp)]
 
-Bu örneğin tam sürümü için bkz: [nasıl yapılır: performansı arttırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md). Hakkında daha fazla bilgi için `combinable` sınıfı [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).
+Bu örneğin tam sürümü için bkz: [nasıl yapılır: Performansı arttırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md). Hakkında daha fazla bilgi için `combinable` sınıfı [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).
 
 [[Üst](#top)]
 
@@ -256,7 +256,7 @@ Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../
 
 [[Üst](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı En İyi Yöntemleri](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
@@ -265,9 +265,8 @@ Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
 [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [İzlenecek yol: Görüntü İşleme Ağı Oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
-[Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br/>
-[Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için İptal](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br/>
-[Nasıl yapılır: Performansı arttırmak için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
+[Nasıl yapılır: Paralel Sıralama Yordamı Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br/>
+[Nasıl yapılır: Paralel Döngüden Kurtulmak için İptal Kullanma](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br/>
+[Nasıl yapılır: Performansı Geliştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br/>
 [Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-

@@ -1,5 +1,5 @@
 ---
-title: CComCompositeControl sınıfı
+title: CComCompositeControl Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComCompositeControl
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - CComCompositeControl class
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-ms.openlocfilehash: 370f0bb2fc76e1377dce6ae4616861085ad44562
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1a9a2d0628b3683f047ce9858d809040438db03
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429051"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302006"
 ---
-# <a name="ccomcompositecontrol-class"></a>CComCompositeControl sınıfı
+# <a name="ccomcompositecontrol-class"></a>CComCompositeControl Class
 
 Bu sınıf, bileşik denetim uygulamak için gereken yöntemleri sağlar.
 
@@ -259,7 +259,7 @@ HRESULT SetBackgroundColorFromAmbient();
 
 Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)<br/>

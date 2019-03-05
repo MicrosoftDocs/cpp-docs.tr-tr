@@ -7,12 +7,12 @@ helpviewer_keywords:
 - event handling, global functions
 - global functions, event handling
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
-ms.openlocfilehash: 02066f2e6cd215fdb68fcdb594307b646ee69cad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb109c63b497420ad6e797cd8e0b366ce4dc0475
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660401"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292230"
 ---
 # <a name="event-handling-global-functions"></a>Olay işleme genel işlevleri
 
@@ -53,6 +53,6 @@ Nesne sinyal varsa TRUE değerini döndürür.
 
 Gerçekleşir ve gerçekleştirilecek bu bildirim bir nesnenin olay beklemek istiyor, ancak bekleme sırasında dağıtılması pencere iletilerini izin vermek yararlıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İşlevler](../../atl/reference/atl-functions.md)

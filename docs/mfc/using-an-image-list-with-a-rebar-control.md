@@ -5,12 +5,12 @@ helpviewer_keywords:
 - image lists [MFC], rebar controls
 - rebar controls [MFC], image lists
 ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
-ms.openlocfilehash: 3cf359a5d06396f9c2c31cbec511c04784053e53
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa5307c201850fc42439c79a1c638a0707379913
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641447"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285405"
 ---
 # <a name="using-an-image-list-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir Görüntü Listesi Kullanma
 
@@ -34,8 +34,7 @@ Aşağıdaki örnek iki görüntü sahip mevcut bir görüntü listesi nesnesi �
 
 [!code-cpp[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/cpp/using-an-image-list-with-a-rebar-control_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CReBarCtrl Kullanma](../mfc/using-crebarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

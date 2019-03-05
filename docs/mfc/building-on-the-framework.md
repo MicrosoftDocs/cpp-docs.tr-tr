@@ -7,12 +7,12 @@ helpviewer_keywords:
 - applications [MFC]
 - MFC, application development
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
-ms.openlocfilehash: 511d66821bf23c149fafb0bfd397929077f020ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 989aecdfafc0d57bfb28874ee84dbf40f8fefc30
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496245"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298340"
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
 
@@ -30,7 +30,6 @@ MFC çerçevesi ile bir uygulama yapılandırma, uygulamaya özgü kaynak kodu s
 
 Çoğunlukla, adımlardan bazıları diğer seçenekleri olsa da bu tablolar bir MFC uygulaması oluşturma adımları öğesinin bir dizisi olarak izleyebilirsiniz. Örneğin, çoğu uygulama, kullanılabilir birkaç türlerinden görünüm sınıfı bir türünü kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)
-

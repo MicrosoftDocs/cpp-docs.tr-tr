@@ -1,5 +1,5 @@
 ---
-title: CCachedDataPathProperty sınıfı
+title: CCachedDataPathProperty Class
 ms.date: 11/04/2016
 f1_keywords:
 - CCachedDataPathProperty
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - CCachedDataPathProperty [MFC], CCachedDataPathProperty
 - CCachedDataPathProperty [MFC], m_Cache
 ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
-ms.openlocfilehash: 1605d5fe1549ba5172f61583cce586a353c2ab56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e7394250c93bcc718d50f2ea9b3522256df7c820
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485663"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296733"
 ---
-# <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty sınıfı
+# <a name="ccacheddatapathproperty-class"></a>CCachedDataPathProperty Class
 
 Uygulayan bir OLE denetim, zaman uyumsuz olarak aktarılabilen ve bir bellek dosyasında önbelleğe özelliği.
 
@@ -111,7 +111,7 @@ CMemFile m_Cache;
 
 Bellek dosya RAM yerine diskte depolanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDataPathProperty Sınıfı](../../mfc/reference/cdatapathproperty-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - timer class
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
-ms.openlocfilehash: beb374efe26c25fed490b7407e087e2cc46043c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e36441f53c9b53c9826ee92b2892142a522d7243
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659842"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298158"
 ---
 # <a name="timer-class"></a>süreölçer Sınıfı
 
@@ -55,7 +55,7 @@ Bu çıktı iletilerini yük türü.
 |Ad|Açıklama|
 |----------|-----------------|
 |[Duraklat](#pause)|Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcıları, bu aynı etkiye sahiptir olarak bir `stop` çağırın.|
-|[Başlangıç](#start)|Başlar `timer` ileti bloğu. Belirtilen sayıda milisaniye sonra bu çağrılır, belirtilen değeri yayılan aşağı akış olarak bir `message`.|
+|[start](#start)|Başlar `timer` ileti bloğu. Belirtilen sayıda milisaniye sonra bu çağrılır, belirtilen değeri yayılan aşağı akış olarak bir `message`.|
 |[Durdur](#stop)|Durakları `timer` ileti bloğu.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
@@ -271,6 +271,6 @@ Yok eder bir `timer` ileti bloğu.
 ~timer();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

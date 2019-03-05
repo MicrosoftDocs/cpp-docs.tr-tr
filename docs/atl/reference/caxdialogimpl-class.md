@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-ms.openlocfilehash: 852656b33eca1a8c87c6931b58cd49c0c41fe3dc
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: d6f08553a9eff421923ef348caee2022849674ac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893645"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301993"
 ---
 # <a name="caxdialogimpl-class"></a>Caxdialogımpl sınıfı
 
@@ -273,7 +273,7 @@ Hata ayıklama yalnızca mevcut bir değişken oluşturur ve iletişim kutusunu 
 bool m_bModal;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDialogImpl Sınıfı](../../atl/reference/cdialogimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

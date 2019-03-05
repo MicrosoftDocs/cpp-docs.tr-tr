@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows common controls [MFC], deriving from
 - standard controls
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
-ms.openlocfilehash: a6ce915102a8b85f135aa2c59e5e824b4fee25cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5abdcc87dba937938ffa3643d19ff69431f62af4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666290"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300382"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>Standart Bir Denetimden Denetim Türetme
 
@@ -42,8 +42,7 @@ Türetilmiş bir denetim iletişim kutusunda kullanmak için ek çalışma gerek
 
 Türetilen denetim iletişim kutusu sınıfında gömülü olduğundan, iletişim kutusu oluşturulur ve iletişim kutusunu yok edildiğinde edileceği oluşturulur. Bu örnekte kodla karşılaştırın [ekleme denetimleri Yan taraftaki](../mfc/adding-controls-by-hand.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

@@ -1,5 +1,5 @@
 ---
-title: CHtmlEditView sınıfı
+title: CHtmlEditView Class
 ms.date: 11/04/2016
 f1_keywords:
 - CHtmlEditView
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - CHtmlEditView [MFC], GetDHtmlDocument
 - CHtmlEditView [MFC], GetStartDocument
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-ms.openlocfilehash: 9df4aa2b2418995f6e012c0baefb6dc8918eaee8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d1b28e2b3e279bc3b2e3ccb116ab24017c07cd2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559789"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301265"
 ---
-# <a name="chtmleditview-class"></a>CHtmlEditView sınıfı
+# <a name="chtmleditview-class"></a>CHtmlEditView Class
 
 MFC'nin belge/görünüm mimarisi bağlamında WebBrowser düzenleme platformu işlevlerini sağlar.
 
@@ -142,8 +142,7 @@ Bu görünüm için varsayılan belge adını alır.
 virtual LPCTSTR GetStartDocument();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [HTMLEdit örnek](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

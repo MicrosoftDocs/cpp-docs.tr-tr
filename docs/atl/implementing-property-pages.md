@@ -6,12 +6,12 @@ helpviewer_keywords:
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: 415dae4a54b71a901a7976bda92361690c150e5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e335c20464d8ea71fd75ce2e67f67ca14edacb0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299328"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
 
@@ -40,12 +40,12 @@ ATL kullanarak bir özellik sayfası oluşturmak için:
    |[Uygula](../atl/reference/ipropertypageimpl-class.md#apply)|Özellik ayarları doğrulayın ve nesneleri güncelleştirin.|Çağrı izleme dışında herhangi bir şey yapmaz beri taban sınıf uygulamasını çağıracak şekilde gerek yoktur.|
    |[Devre dışı bırak](../atl/reference/ipropertypageimpl-class.md#deactivate)|Pencere ile ilgili öğeleri temizleyin.|Taban sınıf uygulamasını temsil eden özellik sayfası iletişim kutusunu yok eder. İletişim kutusunu yok önce temizlemek gerekiyorsa, temel sınıfı çağırmadan önce kodunuzu eklemeniz gerekir.|
 
-Örnek özellik sayfası için bkz: [örnek: özellik sayfası uygulama](../atl/example-implementing-a-property-page.md).
+Örnek özellik sayfası için bkz: [örneği: Özellik sayfası uygulama](../atl/example-implementing-a-property-page.md).
 
 > [!NOTE]
 > Özellik sayfasında konak ActiveX denetimleri için isterseniz Değiştirme Sihirbazı tarafından oluşturulan sınıfının türetme gerekecektir. Değiştirin **Cdialogımpl\<CYourClass >** ile **Caxdialogımpl\<CYourClass >** temel sınıflar listesinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../atl/atl-com-property-pages.md)<br/>
 [ATLPages örnek](../visual-cpp-samples.md)

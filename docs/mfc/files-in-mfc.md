@@ -14,12 +14,12 @@ helpviewer_keywords:
 - files [MFC], manipulating
 - binary access [MFC]
 ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
-ms.openlocfilehash: 815239b0d4de1938a810153cb98f39b2642b6e2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf53c498e61bdf0a233d7638649b30e498e27cc5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459338"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297937"
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 
@@ -58,7 +58,7 @@ Hakkında bilgi için türetilmiş `CFile` sınıfları için bkz [MFC hiyerarş
 
 - [Store ve yük CObjects ve CObject türetilmiş nesneler aracılığıyla bir arşiv](../mfc/storing-and-loading-cobjects-via-an-archive.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 3eedf24fa4b0bb527b374dbc9f538408f20de953
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34cc49fff88399a6c3cf5f7db71410c88e5c9bab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548245"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289643"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 
 Sihirbazın bu sayfasındaki davranmaya denetimin nasıl istediğinizi belirtmek için kullanın. Örneğin, temel standart Windows Denetim türleri denetiminde kendi davranış ve görünümünü en iyi duruma veya denetim, diğer denetimler için kapsayıcı olarak görev yapabilir gösterir.
 
-Denetim verimliliğini en üst düzeye çıkarmak için bu sayfadaki seçenekler seçme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
+Denetim verimliliğini en üst düzeye çıkarmak için bu sayfadaki seçenekler seçme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
 - **Temel denetim oluşturma**
 
-   Bu listede, Denetim devraldığı denetim türünü seçebilirsiniz. Bir alt kümesi için kullanılabilir olan denetim sınıfları listedir `CreateWindowEx` ve commctrl.h içinde belirtilen ek ortak denetimleri. Seçiminiz denetiminde stilini belirler `PreCreateWindow` işlevi *ProjName*Ctrl.cpp dosya. Daha fazla bilgi için [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
+   Bu listede, Denetim devraldığı denetim türünü seçebilirsiniz. Bir alt kümesi için kullanılabilir olan denetim sınıfları listedir `CreateWindowEx` ve commctrl.h içinde belirtilen ek ortak denetimleri. Seçiminiz denetiminde stilini belirler `PreCreateWindow` işlevi *ProjName*Ctrl.cpp dosya. Daha fazla bilgi için [MFC ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
    |Denetim|Açıklama|
    |-------------|-----------------|
@@ -93,9 +93,8 @@ Denetim verimliliğini en üst düzeye çıkarmak için bu sayfadaki seçenekler
 
    Önceki herhangi bir zaman uyumsuz veri sıfırlanmasını sağlar ve yeni bir yük zaman uyumsuz özelliğinin denetimin başlatır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [Denetim Adları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
-

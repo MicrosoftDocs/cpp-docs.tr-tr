@@ -6,12 +6,12 @@ helpviewer_keywords:
 - flicker, MFC ActiveX controls
 - activation [MFC], flicker-free
 ms.assetid: bcb24b77-31d8-44a0-8c58-2ea6213b4c43
-ms.openlocfilehash: d979a6f633926bed1ad59de86829b9ac27b0d0cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fad24d6201260e87ff32436752a9fbf035e822ae
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438148"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287680"
 ---
 # <a name="providing-flicker-free-activation"></a>Titreşimsiz Etkinleştirme Sağlama
 
@@ -25,7 +25,6 @@ Seçerseniz bu bayrak eklenecek kodu otomatik olarak oluşturulan **titreşimsiz
 
 Penceresiz etkinleştirme kullanıyorsanız, bu en iyi duruma getirme bir etkisi yoktur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
-
+[MFC ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md)

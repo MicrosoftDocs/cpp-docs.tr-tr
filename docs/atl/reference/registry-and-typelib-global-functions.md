@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: 85af8504fffa980d495cef59729ff5fcb145e318
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f94dd1770ff194e47e2e38cc3a9b5cf0cbaebe58
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486601"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301837"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevleri
 
@@ -437,7 +437,7 @@ Makroları [BEGIN_RDX_MAP](registry-data-exchange-macros.md#begin_rdx_map) ve [E
 
 **Başlık:** atlbase.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İşlevler](atl-functions.md)<br/>
 [Kayıt Defteri Veri Değişim Makroları](registry-data-exchange-macros.md)

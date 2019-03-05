@@ -1,5 +1,5 @@
 ---
-title: CComClassFactory2 sınıfı
+title: CComClassFactory2 Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComClassFactory2
@@ -12,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactory2 class
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
-ms.openlocfilehash: ba5bda2e73964e7195c4955806e897f9496c244a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3b14fa59765aa72a1142e0eef41aa84abea35de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460209"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301859"
 ---
-# <a name="ccomclassfactory2-class"></a>CComClassFactory2 sınıfı
+# <a name="ccomclassfactory2-class"></a>CComClassFactory2 Class
 
 Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) arabirimi.
 
@@ -221,7 +221,7 @@ Arama için bir lisans anahtarı gereklidir [CreateInstanceLic](#createinstancel
 
 Çağrı [GetLicInfo](#getlicinfo) değerini almak için `fRuntimeKeyAvail`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComClassFactoryAutoThread Sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
 [CComClassFactorySingleton Sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>

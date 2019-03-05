@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-ms.openlocfilehash: 87545d67addb6a1f0931007d8912989968f7a74a
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 1b2b87173bf504455ba314fdd89ffae298cae6a8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177855"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301226"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 
@@ -276,9 +276,9 @@ Başarılı olursa nesnenin türü; Aksi durumda 0. Değerin aşağıdakilerden 
 
 - OBJ_FONT yazı tipi
 
-- OBJ_PAL paleti
+- OBJ_PAL Palette
 
-- OBJ_PEN kalem
+- OBJ_PEN Pen
 
 - Kalem OBJ_EXTPEN genişletilmiş
 
@@ -386,7 +386,7 @@ Sırada `UnrealizeObject` bir üye işlevidir `CGdiObject` sınıfı, bunu çağ
 
 `UnrealizeObject` İşlevi stok nesneleri ile kullanılmamalıdır. `UnrealizeObject` İşlevi yeni bir fırça kaynağını her çağrılmalıdır (yoluyla [CDC::SetBrushOrg](../../mfc/reference/cdc-class.md#setbrushorg) işlevi). `UnrealizeObject` İşlevi, değil şu anda seçili fırça veya herhangi bir görüntü bağlamının şu anda seçili palet için çağrılmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CBitmap Sınıfı](../../mfc/reference/cbitmap-class.md)<br/>

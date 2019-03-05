@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 3259780d73004c9d1654c26434b55627923cfe23
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 7bdb681754a500ab86538f3397b4c07284b850d0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178798"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300898"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 
@@ -1115,7 +1115,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*nStyle*|[in] Menü gizli, varsayılan olarak görünür ve odağa sahip olup olmadığını belirtir. *NStyle* parametresi, aşağıdaki değerleri içerebilir:<br /><br />-AFX_MBV_KEEPVISIBLE (0X01)-<br />     Menü, her zaman görüntülenir ve varsayılan olarak, odak noktası yok.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     Menü, varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için ALT tuşuna basın. Menü gösterilirse, menüyü Gizle için ALT ya da ESC tuşuna basın.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (karşılaştırmaya (veya)) - menüsünde varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için F10 tuşuna basın. Menü gösterilirse, veya menüyü Kapat odağı değiştirilecek F10 tuşuna basın. Kadar gizlemek için ALT ya da ESC tuşuna basın menüsü görüntülenir.|
+|*nStyle*|[in] Menü gizli, varsayılan olarak görünür ve odağa sahip olup olmadığını belirtir. *NStyle* parametresi, aşağıdaki değerleri içerebilir:<br /><br />- AFX_MBV_KEEPVISIBLE (0x01) -<br />     Menü, her zaman görüntülenir ve varsayılan olarak, odak noktası yok.<br />- AFX_MBV_DISPLAYONFOCUS (0x02) -<br />     Menü, varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için ALT tuşuna basın. Menü gösterilirse, menüyü Gizle için ALT ya da ESC tuşuna basın.<br />- AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (karşılaştırmaya (veya)) - menüsünde varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için F10 tuşuna basın. Menü gösterilirse, veya menüyü Kapat odağı değiştirilecek F10 tuşuna basın. Kadar gizlemek için ALT ya da ESC tuşuna basın menüsü görüntülenir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1273,7 +1273,7 @@ void ShowOwnedWindows(BOOL bShow);
 *bBilgi Göster*<br/>
 Şirkete ait windows gösterilen veya gizli olup olmadığını belirtir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

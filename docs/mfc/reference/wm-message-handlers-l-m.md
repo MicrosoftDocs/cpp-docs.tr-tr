@@ -1,5 +1,5 @@
 ---
-title: 'WM_ İleti İşleyicileri: L - M'
+title: 'WM_ ileti işleyicileri: M - M'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_MENUSELECT
@@ -33,14 +33,14 @@ helpviewer_keywords:
 - ON_WM_LBUTTONUP [MFC]
 - WM_ messages
 ms.assetid: 96ecaaf1-6d13-4e12-a454-535635967489
-ms.openlocfilehash: 395bd7f627fe85b8bb763bdb1e75ae36c91b3061
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ebf5ced1f8e36dc059922b67552b19ca4672443
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550468"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290529"
 ---
-# <a name="wm-message-handlers-l---m"></a>WM_ İleti İşleyicileri: L - M
+# <a name="wm-message-handlers-l---m"></a>WM_ ileti işleyicileri: M - M
 
 Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşılık gelir:
 
@@ -68,8 +68,7 @@ Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşıl
 |ON_WM_MOVE()|afx_msg void [OnMove](../../mfc/reference/cwnd-class.md#onmove)(int, int);|
 |ON_WM_MOVING()|afx_msg void [OnMoving](../../mfc/reference/cwnd-class.md#onmoving)(UINT, LPRECT);|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
-

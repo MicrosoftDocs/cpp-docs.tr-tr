@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: b37cff8bd3eb3bd05bc7030c4cc12b9b84568b1f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 69a04b49cf82c2b30ece3a32f76fbb2bc9a65f01
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333647"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296000"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 
@@ -1171,7 +1171,7 @@ virtual void OnCommandStateChange(
 
 ### <a name="parameters"></a>Parametreler
 
-*nyürütülen komut*<br/>
+*nCommand*<br/>
 Etkin durumu değişti komut tanımlayıcısı.
 
 *bSistemlerde*<br/>
@@ -2231,10 +2231,9 @@ void Stop();
 
 Internet Explorer ve WebBrowser için geçerlidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MFCIE](../../visual-cpp-samples.md)<br/>
 [CFormView Sınıfı](../../mfc/reference/cformview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Iwebbrowser2](https://msdn.microsoft.com/library/aa752127.aspx)
-

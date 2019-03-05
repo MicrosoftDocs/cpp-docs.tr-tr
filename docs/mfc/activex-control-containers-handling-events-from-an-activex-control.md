@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme'
+title: 'ActiveX denetim kapsayıcıları: Bir ActiveX denetimindeki etkinlikleri işleme'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - event handlers [MFC], ActiveX controls
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - BEGIN_EVENTSINK_MAP macro
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
-ms.openlocfilehash: 5deff0a50de813cc5faa43a86e591d3003a3c03e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8087d84d2203e4f910200acdd1b00e58d14f920e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659634"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293569"
 ---
-# <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme
+# <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX denetim kapsayıcıları: Bir ActiveX denetimindeki etkinlikleri işleme
 
 Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay işleyicileri yüklemek için Özellikler penceresini kullanarak açıklanmaktadır. Olay işleyicileri, belirli olaylar (denetiminden) bildirimleri almak ve yanıt olarak bazı eylemleri gerçekleştirmek için kullanılır. Bu bildirim, "olayı tetiklenmekte" adı verilir.
 
@@ -67,7 +67,6 @@ Olay havuzu makrolar hakkında daha fazla bilgi için bkz. [olay iç havuz eşle
 
 1. Uygulama olay işleyici kodunun atlamak için sınıf görünümünden yeni işleyici işlevi çift tıklayın (. CPP) dosyası `CContainerDlg`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
-

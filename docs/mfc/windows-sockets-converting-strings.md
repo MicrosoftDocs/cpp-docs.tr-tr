@@ -1,21 +1,21 @@
 ---
-title: 'Windows Yuvaları: Dizeleri Dönüştürme'
+title: 'Windows Yuvaları: Dizeleri dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], multibyte character string conversion
 - sockets [MFC], multibyte character string conversion issues
 - string conversion, multibyte character strings
 ms.assetid: 9df522b5-6b23-41e0-bb96-e4e623baf141
-ms.openlocfilehash: 984554c2405bf6b8ae6a522e545bcbba6ebae529
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eaf278fc2689f0afa9ab6ff30f1294c36de5d7ac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543736"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298369"
 ---
-# <a name="windows-sockets-converting-strings"></a>Windows Yuvaları: Dizeleri Dönüştürme
+# <a name="windows-sockets-converting-strings"></a>Windows Yuvaları: Dizeleri dönüştürme
 
-Bu makale ve iki Yardımcısı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makale, dizeleri dönüştürme kapsar. Diğer sorunlar ele alınmaktadır [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
+Bu makale ve iki Yardımcısı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makale, dizeleri dönüştürme kapsar. Diğer sorunlar ele alınmaktadır [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
 
 Kullanıyorsanız veya sınıfından türetilir [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md), bu sorunları kendiniz yönetmeniz gerekecek. Kullanıyorsanız veya sınıfından türetilir [CSocket](../mfc/reference/csocket-class.md), MFC yönetir bunlar sizin için.
 
@@ -25,17 +25,16 @@ Veya bunlardan birini ve ANSI karakter dizeleri kullanan bir uygulamanın farkl�
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
+- [Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md)
 
-- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+- [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
-

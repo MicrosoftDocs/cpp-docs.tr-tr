@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL projects, MFC support
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-ms.openlocfilehash: 21e3305ce2d2968a3809793eb487317e224351f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0aece6805f1de987b0164f405e50b99fd706fef4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489394"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297313"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projelerinde MFC desteği
 
@@ -50,9 +50,8 @@ int CProjNameApp::ExitInstance()
 
 Uygulama nesnesi sınıfı görüntüleyebilir ve `InitInstance` ve `ExitInstance` Sınıf Görünümü'nde işlevleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
-

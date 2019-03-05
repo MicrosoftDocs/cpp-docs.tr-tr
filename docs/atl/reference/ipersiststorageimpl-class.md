@@ -15,12 +15,12 @@ helpviewer_keywords:
 - storage, ATL
 - IPersistStorageImpl class
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
-ms.openlocfilehash: 320ef54c6148adf5354a6a7b1860a84e118dc6de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3239ed22e37ff694c9f399b05e765d63e97e99ee
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668994"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282521"
 ---
 # <a name="ipersiststorageimpl-class"></a>Ipersiststorageımpl sınıfı
 
@@ -173,7 +173,7 @@ Başarılıysa S_OK döndürür.
 
 Bkz: [IPersistStorage:SaveCompleted](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Depolar ve akışlar](/windows/desktop/Stg/storages-and-streams)<br/>
 [IPersistStreamInitImpl Sınıfı](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>

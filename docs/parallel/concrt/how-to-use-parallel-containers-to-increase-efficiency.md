@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Etkinliği Arttırmak için Paralel Kapsayıcılar Kullanma'
+title: 'Nasıl yapılır: Etkinliği arttırmak için paralel kapsayıcılar kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - increasing efficiency with parallel containers [Concurrency Runtime]
 - concurrent_queue class, examples
 - concurrent_vector class, examples
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-ms.openlocfilehash: a9c428ee54853fbd8106901434823e69b402eace
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2479915b167ee3dbc2ce43d9c2733efc74818bbe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439188"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300642"
 ---
-# <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>Nasıl yapılır: Etkinliği Arttırmak için Paralel Kapsayıcılar Kullanma
+# <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>Nasıl yapılır: Etkinliği arttırmak için paralel kapsayıcılar kullanma
 
 Bu konuda, verimli bir şekilde depolamak ve paralel verilere erişmek için paralel kapsayıcılar kullanma gösterilmektedir.
 
@@ -69,7 +69,7 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 **cl.exe/ehsc carmichael primes.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -77,4 +77,4 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 [concurrent_queue Sınıfı](../../parallel/concrt/reference/concurrent-queue-class.md)<br/>
 [parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)<br/>
 [parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)<br/>
-[task_group sınıfı](reference/task-group-class.md)
+[task_group Sınıfı](reference/task-group-class.md)

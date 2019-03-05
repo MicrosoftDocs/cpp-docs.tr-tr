@@ -64,12 +64,12 @@ f1_keywords:
 helpviewer_keywords:
 - AFX messages [MFC]
 ms.assetid: 3d601f3c-af6d-47d3-8553-34f1318fa74f
-ms.openlocfilehash: 45c6a9174cbd39c4c0c24ffbdfdefb9d184a3cc1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5caf40fc757e2c5c90c06e1698ce4c15d1ed6240
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594694"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284742"
 ---
 # <a name="afx-messages"></a>AFX İletileri
 
@@ -82,35 +82,35 @@ Aşağıdaki tabloda, MFC Kitaplığı'nda kullanılan mesajları listelenmekted
 ||||||
 |-|-|-|-|-|
 |İleti|Açıklama|[in] *wParam*|*lParam* (tüm parametreleri [in] aksi belirtilmedikçe bağlıdır.)|Dönüş Değeri|
-|AFX_WM_ACCGETOBJECT|Kullanılmadı.|Kullanılmadı.|Yok.|Yok.|
+|AFX_WM_ACCGETOBJECT|Kullanılmadı.|Kullanılmadı.|Uygulanamaz.|Uygulanamaz.|
 |AFX_WM_ACCGETSTATE|Erişilebilirlik desteği için kullanılır. Bu ileti gönder `CMFCPopupMenu` veya `CMFCRibbonPanelMenu` geçerli öğe durumu alınamadı.|Menü düğmesine veya ayırıcı öğenin dizini.|Kullanılmadı.|Öğe durumu. Dizin geçersiz, -1 ise 0 menü düğmesine özel özniteliklere sahip değildir. Aksi takdirde aşağıdaki bayraklar birleşiminden oluşur:<br /><br /> TBBS_DISABLED — öğesi devre dışı bırakıldı<br /><br /> TBBS_CHECKED — öğesi denetlenir.<br /><br /> TBBS_BUTTON — standart bir basma düğmesi öğesidir<br /><br /> TBBS_PRESSED — düğmeye basıldığında<br /><br /> TBBS_INDETERMINATE — tanımlanmamış durumu<br /><br /> TBBS_SEPARATOR - yerine bir menü düğmesi bu öğenin forms diğer menü öğeleri arasında ayrım a|
 |AFX_WM_CHANGE_ACTIVE_TAB|Framework yeniden boyutlandırılabilir denetim çubuğu denetimi için bu iletiyi gönderir. Bildirimleri almak için bu iletiyi işlemeli `CMFCTabCtrl` kullanıcı etkin bir sekme değiştirdiğinde nesneleri.|Sekme dizini.|Kullanılmadı.|Sıfır dışında.|
 |AFX_WM_CHANGE_CURRENT_FOLDER|Framework üst öğesi için bu iletiyi gönderir `CMFCShellListCtrl` kullanıcı geçerli klasörde değiştirilmemiş olduğunda.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
 |AFX_WM_CHANGEVISUALMANAGER|Kullanıcının geçerli Visual Yöneticisi değiştiğinde framework tüm çerçeve pencereleri için bu iletiyi gönderir. Yanıt olarak bu ileti, bir çerçeve penceresinin alt bölgeye yeniden hesaplar ve diğer parametrelerini gerektiği gibi ayarlar. Bu olay hakkında bildirim almak istiyorsanız, uygulamanızda AFX_WM_CHANGEVISUALMANAGER ileti işleyebilir. Temel sınıf işleyici çağırması gerekir (`OnChangeVisualManager`) framework iç emin olmak için bu olay işleme gerçekleşir.|Kullanılmadı.|Kullanılmadı.|Kullanılmadı.|
 |AFX_WM_CHANGING_ACTIVE_TAB|Üst öğesi için gönderilen `CMFCTabCtrl` nesne.  Bildirimleri almak istemiyorsanız, bu iletiyi işlemeli `CMFCTabCtrl` nesneleri, bir kullanıcı bir sekmeye sıfırlar.|Etkinleştirilmekte olan sekme dizini.|Kullanılmadı.|Sıfır dışında.|
-|AFX_WM_CHECKEMPTYMINIFRAME|Yalnızca iç kullanım içindir.|Yok.|Yok.|Yok.|
+|AFX_WM_CHECKEMPTYMINIFRAME|Yalnızca iç kullanım içindir.|Uygulanamaz.|Uygulanamaz.|Uygulanamaz.|
 |AFX_WM_CREATETOOLBAR|Gönderilen `CMFCToolBarsListPropertyPage` ne zaman bir kullanıcının oluşturduğu yeni bir araç çubuğu özelleştirme işlemi sırasında. CMFCToolBar türetilen özel bir nesne örneği oluşturmak için bu ileti işleyebilir. Bu iletiyi işlemek ve kendi araç oluşturabilir, varsayılan işleyici çağrısı atlayın.|Kullanılmadı.|Araç adı içeren bir dize işaretçisi.|Yeni oluşturulan araç için bir işaretçi. Araç çubuğu oluşturma iptal edildi NULL gösterir.|
 |AFX_WM_CUSTOMIZEHELP|Ana çerçeve penceresine özelleştirme özellik sayfasından gönderilen `CMFCToolbarCustomize Dialog` kullanıcının bastığında **yardımcı** düğme veya F1 tuşuna.|Etkin sayfa özelleştirme özellik sayfasının belirtir.|Bir işaretçi bir `CMFCToolbarCustomize Dialog` nesne.|Sıfır.|
 |AFX_WM_CUSTOMIZETOOLBAR|`CMFCToolbarCustomize Dialog` Üst çerçevenin kullanıcı yeni bir araç çubuğu öğesini oluşturmakta olduğunu bildirmek için bu iletiyi gönderir.|Özelleştirme tamamlandığında özelleştirme, yanlış başlatıldığında TRUE.|Kullanılmadı.|Sıfır.|
 |AFX_WM_DELETETOOLBAR|Kullanıcı bir araç çubuğu özelleştirme modunu silmek üzere olduğunda ana çerçeve penceresine Gönder.<br /><br /> Bir kullanıcı bir araç çubuğu özelleştirme modu sildiğinde ek işlemler gerçekleştirmeleri için bu iletiyi işler. Ayrıca, varsayılan işleyici çağırması gerekir (`OnToolbarDelete`), araç siler. Varsayılan işleyici araç çubuğunu silmek mümkün olup olmadığını belirten bir değer döndürür.|Kullanılmadı.|İşaretçi bir `CMFCToolBar` silinecek nesne.|Araç çubuğu silinemez olursa sıfır dışı; Aksi durumda 0.|
 |AFX_WM_GETDOCUMENTCOLORS|`CMFCColorMenuButton` Bu ileti, belge renkleri almak için ana çerçeve penceresine gönderir.|Kullanılmadı.|[out içinde] İşaretçi bir `CList<COLORREF, COLORREF>` nesne.|Sıfır.|
-|AFX_WM_GETDRAGBOUNDS|Yalnızca iç kullanım içindir.|Yok.|Yok.|Yok.|
+|AFX_WM_GETDRAGBOUNDS|Yalnızca iç kullanım içindir.|Uygulanamaz.|Uygulanamaz.|Uygulanamaz.|
 |AFX_WM_HIGHLIGHT_RIBBON_LIST_ITEM|Ana çerçeve penceresine bir kullanıcı bir Şerit liste öğesi vurguladığında Gönder.|Vurgulanan öğe dizini|Bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|
 |AFX_WM_ON_AFTER_SHELL_COMMAND|Üst öğesi için gönderilen `CMFCShellListCtrl` veya `CMFCShellTreeCtrl` Kabuk komutu yürütülürken bir kullanıcı tamamlandığında denetler.|Kullanıcı çalıştırılan komut kimliği|Kullanılmadı.|Uygulama bu iletiyi işleyen, sıfır döndürmelidir.|
 |AFX_WM_ON_BEFORE_SHOW_RIBBON_ITEM_MENU|Açılır menü görüntülemeden önce framework Şeridin üst öğeye bu iletiyi gönderir. Bu iletiyi işlemeli ve açılır menüler dilediğiniz zaman değiştirin.|Kullanılmadı.|Bir işaretçi `CMFCBaseRibbonElement`|Kullanılmadı.|
-|AFX_WM_ON_CANCELTABMOVE|Yalnızca iç kullanım içindir.|Yok.|Yok.||
+|AFX_WM_ON_CANCELTABMOVE|Yalnızca iç kullanım içindir.|Uygulanamaz.|Uygulanamaz.||
 |AFX_WM_ON_CHANGE_RIBBON_CATEGORY|Kullanıcı etkin Şerit denetimi kategori değiştiğinde framework ana kareye bu iletiyi gönderir.|Kullanılmadı.|Bir işaretçi `CMFCRibbonBar` kategorisi değişti.|Kullanılmadı.|
 |AFX_WM_ON_CLOSEPOPUPWINDOW|Framework sahibini bildirmek için bu iletiyi gönderir `CMFCDesktopAlertWnd` penceresi Kapatılmak üzere olduğunu.|Kullanılmadı.|Bir işaretçi `CMFCDesktopAlertWnd` nesne.|Kullanılmadı.|
-|AFX_WM_ON_DRAGCOMPLETE|Yalnızca iç kullanım içindir.|Yok.|Yok.|Yok.|
+|AFX_WM_ON_DRAGCOMPLETE|Yalnızca iç kullanım içindir.|Uygulanamaz.|Uygulanamaz.|Uygulanamaz.|
 |AFX_WM_ON_GET_TAB_TOOLTIP|Özel araç ipuçları etkinleştirilip etkinleştirilmediğini hakkında bir sekme için bir araç ipucu görüntülemek için sekmesinde pencere olduğunda ana çerçeve penceresine Gönder.|Kullanılmadı.|Bir işaretçi bir `CMFCTabToolTipInfo` yapısı.|Kullanılmadı.|
 |AFX_WM_ON_HSCROLL|Yeniden boyutlandırılabilir denetim çubuğu denetimine gönderilir. Bildirimleri almak için bu iletiyi işlemeli `CMFCTabCtrl` sekmeli pencere öğesi yatay kaydırma çubuğunun kaydırma olay meydana geldiğinde nesneleri.|Düşük düzey word kullanıcı belirten bir kaydırma çubuğu değer isteği kaydırma belirtir.  Daha fazla bilgi için bu konunun ilerleyen bölümlerinde tabloya bakın.|Kullanılmadı.|Sıfır dışında.|
 |AFX_WM_ON_MOVE_TAB|Bir kullanıcı yeni bir konuma bir sekme sürüklediğinde sekmeli pencere üstüne gönderilir.|Özgün konumuna sekmede sıfır tabanlı dizini.|[out] Yeni konumuna sekmede sıfır tabanlı dizini.|Sıfır.|
-|AFX_WM_ON_MOVETABCOMPLETE|Yalnızca iç kullanım içindir.|Yok.|Yok.|Yok.|
+|AFX_WM_ON_MOVETABCOMPLETE|Yalnızca iç kullanım içindir.|Uygulanamaz.|Uygulanamaz.|Uygulanamaz.|
 |AFX_WM_ON_MOVETOTABGROUP|MDI alt penceresine bir kullanıcı bir sekmeli grubundan diğerine taşır ana çerçeve penceresine gönderilir.|Sekmeli pencere için bir tanıtıcı (`CMFCTabCtrl`) öğesinden MDI alt penceresi kaldırıldı.|[out] Sekmeli pencere için bir tanıtıcı (`CMFCTabCtrl`) için MDI alt penceresi eklenmiş.|Yoksayıldı.|
 |AFX_WM_ON_PRESS_CLOSE_BUTTON|Üst öğesi için gönderilen `CDockablePane` kullanıcı tıkladığında **Kapat** denetim çubuğu başlığını düğmesi.|Kullanılmadı.|Bir işaretçi üzerinde kullanıcı tıkladı yerleştirilebilir bir bölmeye **Kapat** düğmesi.|Bir bölme kapattıysanız TRUE; Aksi durumda FALSE.|
 |AFX_WM_ON_RENAME_TAB|Düzenlenebilir bir sekme kullanıcı olarak yeniden adlandırıldı sekmeli penceresinin üst Gönder.|Yeniden adlandırılan sekmeye sıfır tabanlı dizini.|[out] Yeni sekme adı içeren bir dize işaretçisi.|Uygulama bu iletiyi işleyen olursa sıfır dışı; Çerçeve çağrı bastırır `CMFCBaseTabCtrl::SetTabLabel`.  Sıfır, sonra döndürülürse `CMFCBaseTabCtrl::SetTabLabel` framework tarafından çağırılır.|
 |AFX_WM_ON_RIBBON_CUSTOMIZE|Kullanıcı özelleştirme başlattığında ana kareye gönderilir. Kendi özelleştirme iletişim kutusunda görüntülemek istiyorsanız, bu iletiyi işlemeli.|Kullanılmadı.|Özelleştirilecek Şerit denetimi bir işaretçi.|Sıfır uygulama bu iletiyi işleyen ve kendi özelleştirme iletişim kutusunu görüntüler. Uygulama sıfır döndürürse, framework yerleşik özelleştirme iletişim kutusunu görüntüler.|
-|AFX_WM_ON_TABGROUPMOUSEMOVE|Yalnızca iç kullanım içindir.|Yok.|Yok.|Yok.|
+|AFX_WM_ON_TABGROUPMOUSEMOVE|Yalnızca iç kullanım içindir.|Uygulanamaz.|Uygulanamaz.|Uygulanamaz.|
 |AFX_WM_POSTSETPREVIEWFRAME|Ana çerçeve kullanıcı yazdırma Önizleme modundan değiştirdi bildirmek için gönderilen|TRUE, yazdırma Önizleme modundan ayarlandığını gösterir. FALSE, Baskı Önizleme modunu kapalı olduğunu gösterir.|Kullanılmadı.|Kullanılmadı.|
 |AFX_WM_PROPERTY_CHANGED|Özellik Kılavuzu denetimini sahibine Gönder (`CMFCPropertyGridCtrl`) kullanıcı seçili özelliğinin değeri değiştiğinde.|Özellik listesi denetiminin kimliği.|Özellik için bir işaretçi (`CMFCPropertyGridProperty`) değiştirilmiş.|Kullanılmadı.|
 |AFX_WM_RESETCONTEXTMENU|Kullanıcı bağlam menüsü özelleştirme sırasında sıfırlandıktan sonra ana çerçeve penceresine Gönder.|Bağlam menüsü kaynak kimliği.|Geçerli bağlam menüsüne bir işaretçi `CMFCPopupMenu`.|Kullanılmadı.|
@@ -156,6 +156,6 @@ Bayrak değerleri için aşağıdaki tabloda *lParam* AFX_WM_UPDATETOOLTIPS ilet
 |AFX_TOOLTIP_TYPE_TOOLBOX|0x0080|
 |AFX_TOOLTIP_TYPE_ALL|0xFFFF|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

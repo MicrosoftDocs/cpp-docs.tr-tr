@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMouseManager [MFC], SaveState
 - CMouseManager [MFC], SetCommandForDblClk
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-ms.openlocfilehash: b3c5104038e6d715977a211af5a535cc9a5d916f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d58293b94eeaf499c48f750972b15256e9c19794
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498156"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293192"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
 
@@ -267,10 +267,9 @@ void SetCommandForDblClk(
 
 Varsa *uiCmd* ayarlanmış 0 olarak belirtilen görünümü artık bir komut ile ilişkili değil.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
 [Klavye ve Fare Özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)
-

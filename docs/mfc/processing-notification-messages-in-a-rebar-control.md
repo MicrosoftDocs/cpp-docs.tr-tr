@@ -7,12 +7,12 @@ helpviewer_keywords:
 - RBN_ notification messages [MFC]
 - notifications [MFC], CReBarCtrl
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-ms.openlocfilehash: 4c35a1efb1c93aecf17e8f57b9e96c033aa4334a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 8ac225802bd1d0a0a4b0f30e017fa677f1072fd3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693190"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296299"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Bir Rebar Denetiminde Bildirim İletilerini İşleme
 
@@ -40,8 +40,7 @@ Aşağıdaki bildirim iletileri çubuk barınağı denetimi nesne tarafından g�
 
 Bu bildirimleri hakkında daha fazla bilgi için bkz. [Rebar denetimi başvuru](/windows/desktop/controls/rebar-control-reference) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CReBarCtrl Kullanma](../mfc/using-crebarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

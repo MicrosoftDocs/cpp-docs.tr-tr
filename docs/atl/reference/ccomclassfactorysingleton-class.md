@@ -1,5 +1,5 @@
 ---
-title: CComClassFactorySingleton sınıfı
+title: CComClassFactorySingleton Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComClassFactorySingleton
@@ -9,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactorySingleton class
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-ms.openlocfilehash: 760bf47ff818e301ddfbdeb8c44d318ab105b760
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 480b4c2a6e052e8e0823b97b548fc5d07b55230f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290397"
 ---
-# <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton sınıfı
+# <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton Class
 
 Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için.
 
@@ -110,7 +110,7 @@ Her çağrı [CreateInstance](#createinstance) yöntemi yalnızca bu nesne bir a
 
 Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComClassFactorySingleton` ATL önceki sürümlerinde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf üreteci ile aynı zamanda sunucu başlatma sırasında. Visual C++ .NET 2003 nesne gevşek, ilk isteği oluşturulur. Bu değişiklik, üzerinde erken başlatma kullanan programlar hatalara yol açabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
 [CComClassFactory2 Sınıfı](../../atl/reference/ccomclassfactory2-class.md)<br/>

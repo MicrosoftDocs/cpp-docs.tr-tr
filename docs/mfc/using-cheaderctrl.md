@@ -7,12 +7,12 @@ helpviewer_keywords:
 - header controls [MFC], using
 - CHeaderCtrl class [MFC]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
-ms.openlocfilehash: 7fde3596ef244afd611f790d62570b1ee4ba6f7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf99aad508aee52bc8d345ca084ef96ef40f803b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540471"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288646"
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl Kullanma
 
@@ -49,7 +49,6 @@ Sınıfı tarafından temsil edilen bir üstbilgi denetimi [CHeaderCtrl](../mfc/
 
 - [Üstbilgi Denetimi Bildirimlerini İşleme](../mfc/processing-header-control-notifications.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimler](../mfc/controls-mfc.md)
-

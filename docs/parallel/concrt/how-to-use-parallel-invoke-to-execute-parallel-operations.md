@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Paralel İşlemleri Yürütmek için parallel_invoke Kullanma'
+title: 'Nasıl yapılır: Paralel işlemleri yürütmek için parallel_invoke kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - parallel_invoke function, example
 - calling multiple functions in parallel [Concurrency Runtime]
 ms.assetid: a6aea69b-d647-4b7e-bf3b-e6a6a9880072
-ms.openlocfilehash: 2d4cd19a3cbb02b9c18b1733f8df6f64eb956803
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d618b5f202c6aaf454a60f4f37211d9000600562
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473690"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293531"
 ---
-# <a name="how-to-use-parallelinvoke-to-execute-parallel-operations"></a>Nasıl yapılır: Paralel İşlemleri Yürütmek için parallel_invoke Kullanma
+# <a name="how-to-use-parallelinvoke-to-execute-parallel-operations"></a>Nasıl yapılır: Paralel işlemleri yürütmek için parallel_invoke kullanma
 
 Bu örnek nasıl kullanılacağını gösterir [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) bir paylaşılan veri kaynağı üzerinde birden çok işlem gerçekleştiren bir programın performansını artırmak için kullanılan algoritma. Bir işlem kaynağını değiştirmek için bunlar basit bir şekilde paralel olarak gerçekleştirilebilir.
 
@@ -68,7 +68,7 @@ Bu örnekte `parallel_invoke` birden çok çağırmak için algoritma işlevleri
 
 Bu örnekte üç görevleri paralel olarak gerçekleştirir. çünkü üçten fazla işlemcilere sahip bilgisayarlarda ölçeklendirmek için performans beklememeniz gerekir. Daha fazla performansı artırmak için uzun soluklu görevlerin daha küçük görevlere bölün ve bu görevler paralel olarak çalışır.
 
-Kullanabileceğiniz `parallel_invoke` algoritması yerine [concurrency::task_group](reference/task-group-class.md) ve [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) iptal için destek gerekmiyorsa sınıfları. Kullanımını karşılaştıran bir örnek `parallel_invoke` görev grupları ve algoritma bkz [nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md).
+Kullanabileceğiniz `parallel_invoke` algoritması yerine [concurrency::task_group](reference/task-group-class.md) ve [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) iptal için destek gerekmiyorsa sınıfları. Kullanımını karşılaştıran bir örnek `parallel_invoke` görev grupları ve algoritma bkz [nasıl yapılır: Paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md).
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
@@ -76,8 +76,7 @@ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın ve
 
 **cl.exe/ehsc/MD/DUNICODE /D_AFXDLL paralel word mining.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)
-

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Patterns Library (PPL)
 ms.assetid: 40fd86b2-69fa-45e5-93d8-98a75636c242
-ms.openlocfilehash: deeede132a919084399be54d5559605b99c4e4fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 11440d56b9618d4763e1b7e47a21b365bbdc0c15
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459416"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290722"
 ---
 # <a name="parallel-patterns-library-ppl"></a>Paralel Desen Kitaplığı (PPL)
 
@@ -58,4 +58,3 @@ Döngünün her yinelemesinden tamamlamak için farklı bir süre gerektirir. Pe
 |[Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)|Çeşitli paralel kapsayıcılar ve ppl Yapıları tarafından sağlanan nesneler açıklar.|
 |[PPL'de İptal](cancellation-in-the-ppl.md)|Bir paralel algoritma tarafından gerçekleştirilen işi iptal etmek açıklanmaktadır.|
 |[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)|Eşzamanlılık paralel programlama basitleştirir ve ilgili konulara bağlantılar içeren çalışma zamanı, açıklar.|
-

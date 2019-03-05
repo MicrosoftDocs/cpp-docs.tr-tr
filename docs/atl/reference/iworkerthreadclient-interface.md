@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - IWorkerThreadClient interface
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
-ms.openlocfilehash: 22ea136dd91a514ff10e13cd02b796565b7b0307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1fa8a5e42d002260076f737d3d33cfa191ff297a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523646"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295285"
 ---
 # <a name="iworkerthreadclient-interface"></a>Iworkerthreadclient sınıfı
 
@@ -103,7 +103,7 @@ Aşağıdaki kod basit bir uygulamasını gösterir `IWorkerThreadClient::Execut
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iworkerthreadclient-interface_2.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>
 [CWorkerThread Sınıfı](../../atl/reference/cworkerthread-class.md)

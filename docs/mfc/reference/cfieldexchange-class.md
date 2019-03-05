@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CFieldExchange [MFC], IsFieldType
 - CFieldExchange [MFC], SetFieldType
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
-ms.openlocfilehash: e039a2deaf3372af5daac8fddd8f3a0672719f88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e66b3ed16d4f21d46567c37bfaf7929d32f63b8e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588233"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294986"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange sınıfı
 
@@ -55,7 +55,7 @@ A `CFieldExchange` nesnesi sağlar bağlam bilgisi kayıt alanı değişimi veya
 
 - `CFieldExchange::inoutParam` veri üyeleri için giriş/çıkış parametresi.
 
-Çoğu sınıfın üye işlevleri ve veri üyeleri, kendi özel RFX rutinleri yazmak için sağlanır. Kullanacağınız `SetFieldType` sık. Daha fazla bilgi için makalelere bakın [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md) ve [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). RFX ve toplu RFX genel işlevleri hakkında daha fazla ayrıntı için bkz: [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md) MFC makroları ve genel öğeleri bölümünde bu başvuru.
+Çoğu sınıfın üye işlevleri ve veri üyeleri, kendi özel RFX rutinleri yazmak için sağlanır. Kullanacağınız `SetFieldType` sık. Daha fazla bilgi için makalelere bakın [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md) ve [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). RFX ve toplu RFX genel işlevleri hakkında daha fazla ayrıntı için bkz: [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md) MFC makroları ve genel öğeleri bölümünde bu başvuru.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -124,7 +124,7 @@ Kayıt kümesi sınıfı Parametreleştirme varsa çağırmalıdır `SetFieldTyp
 
 RFX işlev çağrılarının alan veri üyeleri veya parametre veri üyeleri ile ilişkili her grup için bir çağrı tarafından genel olarak, gelmelidir `SetFieldType`. *NFieldType* her parametresinin `SetFieldType` çağrı izleyen RFX işlev çağrıları tarafından temsil edilen veri üyeleri türünü tanımlar `SetFieldType` çağırın.
 
-Çıkış ve giriş/çıkış parametreleri işleme hakkında daha fazla bilgi için bkz. `CRecordset` üye işlevi [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset). RFX ve toplu RFX işlevleri hakkında daha fazla bilgi için Ek Yardım konusuna [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md). Toplu satır getirme hakkında ilgili bilgi için bkz [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Çıkış ve giriş/çıkış parametreleri işleme hakkında daha fazla bilgi için bkz. `CRecordset` üye işlevi [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset). RFX ve toplu RFX işlevleri hakkında daha fazla bilgi için Ek Yardım konusuna [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md). Toplu satır getirme hakkında ilgili bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
@@ -132,7 +132,7 @@ Bu örnekte çağrıları eşlik eden ile RFX işlevleri çeşitli çağrılar g
 
 [!code-cpp[NVC_MFCDatabase#33](../../mfc/codesnippet/cpp/cfieldexchange-class_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - UpdateData method [MFC]
 - retrieving dialog box data [MFC]
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-ms.openlocfilehash: f80d80dc9e212dbe0d87da65ac92943ad1f0edad
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 338630aef358d9490461179288d5c45a2d3b821c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175502"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302328"
 ---
 # <a name="dialog-data-exchange"></a>İletişim Kutusu Veri Değişimi
 
@@ -49,9 +49,8 @@ MFC exchange farklı türde birçok DDX işlevleri sağlar. Aşağıdaki örnekt
 
 Kalıcı bir iletişim kutusu, kullanıcı iptal ederse `OnCancel` üye işlevi iletişim kutusunu sonlandırır ve `DoModal` değeri döndürür **IDCANCEL**. Bu durumda, veri iletişim nesnesi iletişim kutusu arasında değiştirilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim Kutusu Veri Değişimi ve Doğrulaması](../mfc/dialog-data-exchange-and-validation.md)<br/>
 [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [İletişim Verisi Doğrulama](../mfc/dialog-data-validation.md)
-

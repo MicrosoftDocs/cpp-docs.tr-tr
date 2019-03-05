@@ -1,19 +1,19 @@
 ---
-title: 'Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek'
+title: 'Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sockets [MFC], with archives
 - examples [MFC], Windows Sockets
 - Windows Sockets [MFC], with archives
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
-ms.openlocfilehash: 285053c79b13ebea23aedc7dae52eabe85f55a12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ea1e2911b156066360da09993fa7302db79f12b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436276"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295269"
 ---
-# <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek
+# <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek
 
 Bu makalede sınıfı kullanmanın bir örnek sunulmaktadır [CSocket](../mfc/reference/csocket-class.md). Örnek kullanan `CArchive` nesnelerin bir yuva aracılığıyla verileri seri hale getirme. Bu belge serileştirme için veya bir dosyadan olmadığını unutmayın.
 
@@ -43,17 +43,17 @@ Arşivin ayıklama işleci kullanması hariç, alan için işlev benzer şekilde
 Bu iletişimler modelde "Alınan" sözcüğü gönderilen ileti *strText* değişken olduğundan iletişim diğer uçtaki görüntülemek için belirli bir sayıda veri paketlerini yapıldığını alıcı kullanıcıya belirtir aldı. Alıcı, özgün gönderenin ekranda diyor "gönderilen", görüntü için benzer bir dize ile yanıtlar. İki dizenin giriş başarılı iletişim oluştuğunu gösterir.
 
 > [!CAUTION]
->  C++ nesnelerinin arşiv aracılığıyla kurulan (MFC olmayan) sunucularıyla iletişim kurmak için bir MFC istemci programı yazıyorsanız göndermeyin. Göndermek istediğiniz nesne türlerini anlayan bir MFC uygulaması sunucu olmadığı sürece, alma ve nesnelerinizin seri durumdan mümkün olmayacaktır. Bu makaledeki örnek [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md) bu tür bir iletişim gösterir.
+>  C++ nesnelerinin arşiv aracılığıyla kurulan (MFC olmayan) sunucularıyla iletişim kurmak için bir MFC istemci programı yazıyorsanız göndermeyin. Göndermek istediğiniz nesne türlerini anlayan bir MFC uygulaması sunucu olmadığı sürece, alma ve nesnelerinizin seri durumdan mümkün olmayacaktır. Bu makaledeki örnek [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md) bu tür bir iletişim gösterir.
 
 Daha fazla bilgi için Windows Sockets belirtime bakın: **htonl**, **htons**, **ntohl**, **ntohs**. Ayrıca, daha fazla bilgi için bkz:
 
-- [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
+- [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
-- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
+- [Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
 [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)<br/>
@@ -61,4 +61,3 @@ Daha fazla bilgi için Windows Sockets belirtime bakın: **htonl**, **htons**, *
 [CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
 [CArchive::Flush](../mfc/reference/carchive-class.md#flush)<br/>
 [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
-

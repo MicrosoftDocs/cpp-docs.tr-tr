@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: 9d9a2d33f61aa9033bb17c090989b4f08ee82bd7
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: d3fc71c3e294b26aea405b8800199cf88120fa08
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178388"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282454"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd sınıfı
 
@@ -457,7 +457,7 @@ Bir döşeme bayrak belirtir. Bu parametre aşağıdaki bayraklar herhangi biri 
 
 Örneğin bakın [CMDIFrameWnd::MDICascade](#mdicascade).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MDI](../../visual-cpp-samples.md)<br/>
 [MFC örnek MDIDOCVW](../../visual-cpp-samples.md)<br/>

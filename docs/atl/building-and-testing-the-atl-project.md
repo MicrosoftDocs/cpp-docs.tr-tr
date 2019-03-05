@@ -5,12 +5,12 @@ helpviewer_keywords:
 - composite controls, building and testing the project
 - composite controls, containers for
 ms.assetid: 5c1541f8-f6cb-4c22-bd22-c66bcfbaa077
-ms.openlocfilehash: 0a6363ca3c3cee7e23729121124457311e056a2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28d976aba48521df1429b27bb20b8277b72166ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483976"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295441"
 ---
 # <a name="building-and-testing-the-atl-project"></a>Oluşturma ve ATL projesinde test etme
 
@@ -18,7 +18,6 @@ Belirtildiği gibi [bileşik denetim ekleme](../atl/inserting-a-composite-contro
 
 Ayrıca Test kapsayıcı aracını veya bir ActiveX denetimini barındırmak başka bir uygulama kullanma, bileşik denetim test edebilirsiniz. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
-

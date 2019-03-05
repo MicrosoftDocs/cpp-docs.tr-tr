@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-ms.openlocfilehash: f143b2c58159d1bb0812152c68d3c31153d4570d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b9557a76d133d81a07320f1a64482d17c955ef2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467437"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301603"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>Iaxwinambientdispatch arabirimi
 
@@ -107,7 +107,7 @@ Bu arabirim tanımı aşağıdaki tabloda gösterildiği gibi formlar, bir süre
 |Tanım türü|Dosya|
 |---------------------|----------|
 |IDL|atliface.idl|
-|Tür kitaplığı|ATL.|
+|Tür kitaplığı|ATL.dll|
 |C++|atliface.h (ATLBase.h içinde de dahil)|
 
 ##  <a name="get_allowcontextmenu"></a>  IAxWinAmbientDispatch::get_AllowContextMenu
@@ -692,10 +692,9 @@ Standart bir HRESULT değerini.
 
 ATL konak nesnesi uygulama VARIANT_TRUE bu özelliğin varsayılan değeri kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IAxWinAmbientDispatchEx Arabirimi](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
 [IAxWinHostWindow Arabirimi](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

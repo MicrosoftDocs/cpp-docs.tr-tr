@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ICollectionOnSTLImpl interface
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-ms.openlocfilehash: b82599bd95abb473a361a962566669ed1ef7a35b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90583f34c9e9fb500bb48fdbd3c1a17d343d865f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530487"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292932"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>Bir C++ Standart Kitaplığı temelli koleksiyon uygulama
 
@@ -99,7 +99,7 @@ Vektör verilerle doldurmak için kalan gereken tek şey var. Bu basit örnekte,
 
 Artık, seçtiğiniz istemci ile kodu test edebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)<br/>
 [ATLCollections örnek](../visual-cpp-samples.md)<br/>

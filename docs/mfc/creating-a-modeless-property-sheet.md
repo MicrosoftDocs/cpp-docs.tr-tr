@@ -6,12 +6,12 @@ helpviewer_keywords:
 - property sheets, modeless
 - Create method [MFC], property sheets
 ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
-ms.openlocfilehash: 9012700ef145079cf01ee1eac1cee58449ab5b79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39285927b67091f5b8762dab56009712d806d259
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524906"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302266"
 ---
 # <a name="creating-a-modeless-property-sheet"></a>Kalıcı Olmayan Özellik Sayfası Oluşturma
 
@@ -27,9 +27,8 @@ Kalıcı olmayan özellik sayfası ve dış arasında iletişim kurmak için bir
 
 Kalıcı olmayan özellik sayfası ayarları için bir dış nesne ne zaman uygulanması gereken belirlemek için çok sayıda kullanıcı arabirimi seçenekleri vardır. Bir kullanıcının herhangi bir değer değiştiğinde geçerli özellik sayfası ayarları uygulamak için alternatiftir. Başka bir alternatif için dış nesne yapmadan önce değişiklikleri özellik sayfalarındaki accumulate izin verir ve Uygula düğmesini, sağlamaktır. Uygula düğmesini işleme için yollar hakkında daha fazla bilgi için bkz [Uygula düğmesini işleme](../mfc/handling-the-apply-button.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik sayfaları](../mfc/property-sheets-mfc.md)<br/>
 [Veri Değişimi](../mfc/exchanging-data.md)<br/>
 [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
-

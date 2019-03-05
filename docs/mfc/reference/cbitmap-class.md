@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 6722011bf343a391fcc7180558eead5c039afc59
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 97d4561da12492c158673c4cc79c2baefd973c75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178180"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296741"
 ---
 # <a name="cbitmap-class"></a>CBitmap sınıfı
 
@@ -519,9 +519,8 @@ Bit eşlem (birimlerindeki 0,1 milimetre) yüksekliğini belirtir.
 
 Bir uygulama çağırdığında dışında döndürmek üzere bu değerleri GDI kullanmaz [GetBitmapDimension](#getbitmapdimension) üye işlevi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MDI](../../visual-cpp-samples.md)<br/>
 [CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

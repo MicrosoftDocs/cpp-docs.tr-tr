@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme'
+title: 'Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, parallel for loops
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - parallel for loops, converting from OpenMP to the Concurrency Runtime
 - parallel loops, converting from OpenMP to the Concurrency Runtime
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
-ms.openlocfilehash: 9ab80df8bfe4c06ee36e0a60db4800be68576909
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc408465f34f0558e9f426ae35b83d4610898414
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488571"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296143"
 ---
-# <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme
+# <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak üzere döngü için bir OpenMP paralelini dönüştürme
 
 Bu örnekte OpenMP kullanan temel bir döngü dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) ve [için](../../parallel/openmp/reference/for-openmp.md) eşzamanlılık çalışma zamanı kullanmak için yönergeleri [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritma.
 
@@ -51,9 +51,8 @@ Bu örnek Öncekine gerçekleştirileceği değiştirir bir [std::array](../../s
 
 **cl.exe/ehsc/OpenMP concrt-omp-count-primes.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
 [Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)
-

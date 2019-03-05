@@ -7,12 +7,12 @@ helpviewer_keywords:
 - containers [MFC], active document
 - MFC COM, active document containment
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-ms.openlocfilehash: bfd4018496f1516f8016bb56da2406f2e4b04c08
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 6e4defaf347f0d539ef023ee9c0e1e85dd2390db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176789"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288967"
 ---
 # <a name="active-document-containers"></a>Etkin Belge Kapsayıcıları
 
@@ -83,7 +83,6 @@ Kapsayıcının çerçeve, çoğunlukla, nesnedir yerinde etkinleştirme OLE bel
 
 Etkin belge kapsayıcı çerçeve ekleyerek iyileştirebilirsiniz `IOleCommandTarget`. Bu etkin belgenin kullanıcı arabiriminde aynı şekilde bu arabirimi aynı komutları göndermek bir kapsayıcı izin verebilirsiniz kaynaklanan komutları almasına izin verir (gibi **dosya yeni**, **açık**,  **Farklı Kaydet**, **yazdırma**; **Kopya Düzenle**, **Yapıştır**, **geri**ve diğerleri) etkin bir belge için. Daha fazla bilgi için [komut hedefleri](../mfc/message-handling-and-command-targets.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
-

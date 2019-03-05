@@ -9,12 +9,12 @@ helpviewer_keywords:
 - combo boxes [MFC], CComboBoxEx class
 - CComboBox class [MFC], extended
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
-ms.openlocfilehash: 18350a5f4ac8056676eeb275f9fc95478b3a8e10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e119b41bbca42a1cbc0dbb5e721947c5bd7f1bc8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596644"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288499"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx Kullanma
 
@@ -32,7 +32,6 @@ El ile öğesi grafik çizim yapmak zorunda kalmadan bir birleşik giriş kutusu
 
 - [Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimler](../mfc/controls-mfc.md)
-

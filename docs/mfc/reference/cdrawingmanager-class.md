@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: c7295d8003b364b36a84fcb5b2c5921ae9899b51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a729c8d32c851c4401a0af7dd7323912a476530f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465994"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293452"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 
@@ -298,7 +298,7 @@ void DrawLineA(
 |-|-|
 |Parametre|Açıklama|
 |*x1*|[in] Çizginin başladığı x koordinatı.|
-|*Y1*|[in] Çizginin başladığı y koordinatı.|
+|*y1*|[in] Çizginin başladığı y koordinatı.|
 |*x2*|[in] Satırı sona ereceği x koordinatı.|
 |*y2*|[in] Satırı sona ereceği y koordinatı.|
 |*clrLine*|[in] Çizginin rengi.|
@@ -714,7 +714,7 @@ static BYTE __stdcall HueToRGB(
 *rm2*<br/>
 [in] Açıklamalara bakın.
 
-*RH*<br/>
+*rh*<br/>
 [in] Açıklamalara bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -968,7 +968,7 @@ static void __stdcall SetPixel(
 |-|-|
 |Parametre|Açıklama|
 |*pBits*|[in] Bit eşlem bit değerleri için bir işaretçi.|
-|*CX*|[in] Bit eşlem toplam genişliği.|
+|*cx*|[in] Bit eşlem toplam genişliği.|
 |*CY*|[in] Bit eşlem toplam yüksekliği.|
 |*x*|[in] X koordinatı değiştirmek için bit eşlemin piksel.|
 |*Y*|[in] Y koordinatını değiştirmek için bit eşlemin piksel.|
@@ -1032,7 +1032,7 @@ TRUE, döndürme + 90 derece gösterir; FALSE-90 derece döndür gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], SetSortColumn
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-ms.openlocfilehash: 7d289dc25dfdb07ae581c4669154517882867f2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2434671ecdca4e68f3a83c21f1916b42928ffcd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642277"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294241"
 ---
 # <a name="cmfclistctrl-class"></a>CMFCListCtrl sınıfı
 
@@ -309,7 +309,7 @@ void SetSortColumn(
 *bAscending*<br/>
 [in] Sıralama düzenini belirten bir Boole değeri.
 
-*Bekle*<br/>
+*bAdd*<br/>
 [in] Yöntemi tarafından belirtilen sütun ekler olup olmadığını belirten Boolean bir değer *iColumn* sütunları sıralama listesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -335,10 +335,10 @@ virtual void Sort(
 *bAscending*<br/>
 [in] Sıralama düzenini belirten bir Boole değeri.
 
-*Bekle*<br/>
+*bAdd*<br/>
 [in] Bu yöntem tarafından belirtilen sütun ekler olup olmadığını belirten Boolean bir değer *iColumn* sütunları sıralama listesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WNDCLASS [MFC]
 - AfxRegisterClass function
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-ms.openlocfilehash: 4ae94d1c9c57f6c315ae482e44576ae25194c00f
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 68c851ae6a6b1b8578df90e2618f257122797aa5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894269"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294154"
 ---
 # <a name="tn001-window-class-registration"></a>TN001: Pencere sınıfı kaydı
 
@@ -106,8 +106,7 @@ Yapmak istiyorsanız herhangi bir şey daha ne karmaşık `AfxRegisterWndClass` 
 
 Kullanmak önemlidir `AfxRegisterClass` (veya `AfxRegisterWndClass`) bir Win32 DLL içinde. Win32 DLL sonlandırıldığında sınıfları açıkça kaydını silmeniz gerekir, böylece bir DLL tarafından kayıtlı sınıfları otomatik olarak kaydını değil. Kullanarak `AfxRegisterClass` yerine `RegisterClass` bu otomatik olarak sizin yerinize gerçekleştirilir. `AfxRegisterClass` benzersiz sınıfları listesi, DLL tarafından kaydedilmiş ve DLL sonlandığında otomatik olarak bunları kaldıran korur. Kullanırken `RegisterClass` bir DLL içinde DLL sonlandırıldığında tüm sınıflar kaydı olmasına dikkat edin (içinde [DllMain](/windows/desktop/Dlls/dllmain) işlevi). Bunun yapılmaması neden olabilecek `RegisterClass` başka bir istemci uygulaması, DLL dosyanızı kullanmayı dener beklenmedik şekilde başarısız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

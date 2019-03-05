@@ -12,12 +12,12 @@ helpviewer_keywords:
 - debugging [MFC], memory leaks
 - memory leaks, MFC debug classes
 ms.assetid: d79e084a-8326-4251-8700-4efac07c511e
-ms.openlocfilehash: 6cabd2fb35a60f1b6b53d47d19e95fa65d92c620
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90a21b260185bb2202eed66b8e4144eb7183c157
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521352"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301187"
 ---
 # <a name="debugging-support-classes"></a>Destek Sınıflarında Hata Ayıklama
 
@@ -29,7 +29,6 @@ Tanılama dökümleri için bir hedef sağlar.
 [CMemoryState](../mfc/reference/cmemorystate-structure.md)<br/>
 Bellek kullanımı anlık görüntüleri sağlar yapısı. Ayrıca, önceki ve sonraki bellek anlık görüntüsünü karşılaştırmak için kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

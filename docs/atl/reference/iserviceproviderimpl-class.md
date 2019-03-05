@@ -9,12 +9,12 @@ helpviewer_keywords:
 - IServiceProviderImpl class
 - IServiceProvider interface, ATL implementation
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-ms.openlocfilehash: 231c65d92ff287e35d5475109e70d21f5a047baa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e52c28d528e187713d2d0925fed23bd8cd4493d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609891"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298678"
 ---
 # <a name="iserviceproviderimpl-class"></a>Iserviceproviderımpl sınıfı
 
@@ -48,7 +48,7 @@ Sınıfınız, türetilen `IServiceProviderImpl`.
 
 `IServiceProviderImpl` ile başlayarak, bir hizmet eşlemesini kullanır [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) ve ile biten [END_SERVICE_MAP](service-map-macros.md#end_service_map).
 
-Hizmet eşlemesi iki girişler içeriyor: [SERVICE_ENTRY](service-map-macros.md#service_entry), nesne tarafından desteklenen bir belirtilen hizmet kimliği (SID) belirtir ve [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), çağıran `QueryService` başka zincirdeki nesne.
+Hizmet eşlemesi, iki giriş içerir: [SERVICE_ENTRY](service-map-macros.md#service_entry), nesne tarafından desteklenen bir belirtilen hizmet kimliği (SID) belirtir ve [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), çağıran `QueryService` zincirdeki başka bir nesne.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -110,6 +110,6 @@ Arabirimini uygulayan nesnenin ayrıca diğer hizmetleri arabirimleri uygulayabi
 
 Hiçbir şey iki hizmet arasında ortak arabiriminin uygulamasını sahip olsanız bile SID_SMyService ve SID_SYourService, gibi iki farklı hizmet her ikisi de aynı arabirimi kullanımını belirtebilirsiniz. Bu, çalışır çünkü bir çağrı `QueryService` (SID_SMyService, IID_IDispatch) değerinden farklı bir nesne döndürebilir `QueryService` (SID_SYourService, IID_IDispatch). Farklı hizmet tanımlayıcısı belirttiğinizde nesne kimliğini kabul değil.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

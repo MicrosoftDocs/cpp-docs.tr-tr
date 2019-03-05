@@ -1,19 +1,19 @@
 ---
-title: 'OLE Arka Planı: Uygulama Stratejileri'
+title: 'OLE arka planı: Uygulama stratejileri'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE [MFC], development strategy
 - OLE applications [MFC], implementing OLE
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-ms.openlocfilehash: a9bcbc16b08f16953df92efe5a83db39f9a33cc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40c74d48b76921f770740602a39d28804a7e3c09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624399"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284820"
 ---
-# <a name="ole-background-implementation-strategies"></a>OLE Arka Planı: Uygulama Stratejileri
+# <a name="ole-background-implementation-strategies"></a>OLE arka planı: Uygulama stratejileri
 
 Uygulamanızın bağlı olarak, dört olası uygulama stratejileri OLE desteği ekleme vardır:
 
@@ -35,10 +35,9 @@ Uygulamanızın bağlı olarak, dört olası uygulama stratejileri OLE desteği 
 
 Bir stratejisi verdikten sonra her iki okuma gereken [kapsayıcıları](../mfc/containers.md) veya [sunucuları](../mfc/servers.md) makaleler (yazdığınız uygulama türünü bağlı olarak) veya örnek programlardan veya her ikisi de inceleyin. MFC OLE örnekleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md) nasıl kapsayıcılar ve sunucular, çeşitli yönlerini sırasıyla uygulandığını göstermektedir. Bu makaleler boyunca çeşitli noktalarda belirli işlevlere Bu örnekte açıklanan teknikleri örnekleri olarak anılacaktır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE Arka Planı](../mfc/ole-background.md)<br/>
-[Kapsayıcılar: Bir Kapsayıcı Uygulama](../mfc/containers-implementing-a-container.md)<br/>
-[Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)<br/>
+[Kapsayıcılar: Bir kapsayıcı uygulama](../mfc/containers-implementing-a-container.md)<br/>
+[Sunucular: Sunucu uygulama](../mfc/servers-implementing-a-server.md)<br/>
 [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)
-

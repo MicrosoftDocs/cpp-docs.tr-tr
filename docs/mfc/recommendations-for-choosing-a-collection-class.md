@@ -16,12 +16,12 @@ helpviewer_keywords:
 - collection classes [MFC], duplicates allowed
 - collection classes [MFC], shapes
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-ms.openlocfilehash: 2c8cb323feb44618909895a4ee536ad3b7832173
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c72a57385b0036d98629d1ee24111500b9d2f8ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446741"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288044"
 ---
 # <a name="recommendations-for-choosing-a-collection-class"></a>Koleksiyon Sınıfı Seçme Önerileri
 
@@ -53,7 +53,7 @@ Aşağıdaki tabloda, [koleksiyonu şekli özellikleri](#_core_collection_shape_
 |-----------|--------------|--------------|-----------------------|----------------------------------|-------------------------|
 |List|Evet|Hayır|Hızlı|Yavaş|Evet|
 |Dizi|Evet|Tarafından int|Yavaş|Yavaş|Evet|
-|Harita|Hayır|Anahtara göre|Hızlı|Hızlı|Evet (değerler) (anahtar)|
+|Eşleme|Hayır|Anahtara göre|Hızlı|Hızlı|Evet (değerler) (anahtar)|
 
 Aşağıdaki tabloda, [MFC koleksiyon sınıfları özellikleri](#_core_characteristics_of_mfc_collection_classes), seçim kılavuzu olarak belirli MFC koleksiyon sınıfları diğer önemli özelliklerini özetler. Öğeleri MFC'nin belge seri hale getirilebilir olup olmadığını seçtiğiniz olup C++ şablonları temel sınıf alan değişebilir [serileştirme](../mfc/serialization-in-mfc.md) mekanizması, öğeleri MFC yazılan olmadığını mekanizması dökme Tanılama veya sınıfı, tür kullanımı uyumlu olup — diğer bir deyişle, öğelerin türü garanti edebilir ve depolanan bir koleksiyon sınıfına göre alınır.
 
@@ -91,10 +91,9 @@ Aşağıdaki tabloda, [MFC koleksiyon sınıfları özellikleri](#_core_characte
 
 3. Sağlanan beklendiği gibi kullanın Bu sütunda Evet işaretliyse, şablon Olmayandan koleksiyon sınıfı tür bakımından güvenlidir. Örneğin, bayt cinsinden depoladığınızda bir `CByteArray`, dizi tür bakımından güvenlidir. Ancak karakter depolamak için kullanmak, kendi tür güvenliği belirli daha az.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Koleksiyonlar](../mfc/collections.md)<br/>
 [Şablona Dayalı Sınıflar](../mfc/template-based-classes.md)<br/>
-[Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma](../mfc/how-to-make-a-type-safe-collection.md)<br/>
+[Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma](../mfc/how-to-make-a-type-safe-collection.md)<br/>
 [Bir Koleksiyonun Tüm Üyelerine Erişme](../mfc/accessing-all-members-of-a-collection.md)
-

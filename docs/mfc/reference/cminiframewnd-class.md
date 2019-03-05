@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CMiniFrameWnd [MFC], Create
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-ms.openlocfilehash: a6fdef34ba5873718caed509100cbe7e905d880d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 70f090e2d9830ccfdd98640b54ff07440064d542
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693535"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293270"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd sınıfı
 
@@ -204,7 +204,7 @@ Ws_vısıble stili belirtilmezse, Windows penceresi penceresini görüntüleyin 
 
 Eski stil palet araç kutusu windows artık desteklenmemektedir. Bir "X" Kapat düğmesi yoktu, eski stil bir MFC uygulaması, Windows, önceki sürümleri üzerinde çalışırken desteklenir, ancak Visual C++ .NET içinde artık desteklenmiyor. Yalnızca yeni ws_ex_toolwındow stil artık desteklenir. Bu stil açıklaması için bkz: [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

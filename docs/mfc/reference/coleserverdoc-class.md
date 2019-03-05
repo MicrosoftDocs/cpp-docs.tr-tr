@@ -82,12 +82,12 @@ helpviewer_keywords:
 - COleServerDoc [MFC], OnSetItemRects
 - COleServerDoc [MFC], OnShowDocument
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
-ms.openlocfilehash: b9d339b11b3e1fa8452c845cfa8a8f41c5194f8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3069c5f53b37984cbeae8bee1379bb8b0c36ccc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604953"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285288"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc sınıfı
 
@@ -168,7 +168,7 @@ Bağlantılı öğeler desteklemek için `COleServerDoc` sağlar [OnGetLinkedIte
 
 Bir gereksinim duyduğunuz `COleServerDoc`-uygulamanızın desteklediği her sunucu türünü belge için türetilmiş sınıf. Sunucu uygulamanızı çalışma sayfaları ve grafikleri destekler, örneğin, iki gerekiyorsa, `COleServerDoc`-türetilmiş sınıflar.
 
-Sunucuları hakkında daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).
+Sunucuları hakkında daha fazla bilgi için bkz [sunucuları: Sunucu uygulama](../../mfc/servers-implementing-a-server.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -941,7 +941,7 @@ Sunucu belgesinin kullanıcı değiştirdikten sonra genellikle bu işlevi çağ
 
 Bu işlev çağrıları `OnUpdate` öğesi, geçirme gönderme dışında belgenin öğelerin her biri için üye işlevi *pHint*, *lHint*, ve *nDrawAspect*. Öğeleri belgeye yapılan değişiklikler hakkında bilgi geçirmek için şu parametreleri kullan. Bilgi'ı kullanarak kodlama *lHint* veya tanımlayabilirsiniz bir `CObject`-türetilmiş sınıf değişiklikler hakkında bilgi depolayabilir ve bu sınıfı kullanmanın bir nesne için *pHint*. Geçersiz kılma `OnUpdate` üye işlevinde, `COleServerItem`-türetilmiş sınıf kendi sunusu değiştirilip bağlı olarak her bir öğe güncelleştirilirken en iyi duruma getirme.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [COleLinkingDoc Sınıfı](../../mfc/reference/colelinkingdoc-class.md)<br/>

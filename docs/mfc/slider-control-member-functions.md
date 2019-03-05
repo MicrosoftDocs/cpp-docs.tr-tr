@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CSliderCtrl class [MFC], methods
 - slider controls [MFC], member functions
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-ms.openlocfilehash: 25414b1d98c87c67c1dc8e13bb44bdc25869db94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a88dd1a49eb928261393a4473ee7eb53628c607a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472656"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296910"
 ---
 # <a name="slider-control-member-functions"></a>Kaydırıcı Denetimi Üye İşlevleri
 
@@ -34,8 +34,7 @@ Bir uygulama, üye işlevleri, bir kaydırıcı denetimi boyutlarını almak iç
 
 Bir kaydırıcı denetimi TBS_ENABLESELRANGE stili varsa, kullanıcı bitişik değer aralığını seçebilirsiniz. Üye işlevleri sayısını dinamik olarak ayarlanacak seçenek aralığındaki izin verin. [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) üye işlevi, başlangıç ve bitiş konumları seçilen ayarlar. Kullanıcı bir seçim aralığını ayarlama tamamlandığında, uygulama ayarlarını kullanarak alabilirsiniz [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) üye işlevi. Bir kullanıcının seçiminin silmek için kullanın [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) üye işlevi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSliderCtrl Kullanma](../mfc/using-csliderctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

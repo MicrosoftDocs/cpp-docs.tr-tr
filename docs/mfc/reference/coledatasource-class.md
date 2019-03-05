@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: 539f3f1611d4d9d83d37754b66986c6b4f59549c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc3d9f089dc6289331c79c6a1e18eccbc9ff4993
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614207"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296981"
 ---
 # <a name="coledatasource-class"></a>COleDataSource sınıfı
 
@@ -130,7 +130,7 @@ Kullanarak veri kaynağı bir [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-
 
 Çağrısından sonra `CacheData` `ptd` üyesi `lpFormatEtc` ve içeriğini *lpStgMedium* çağıran tarafından değil bir veri nesnesi tarafından sahip olunan.
 
-Gecikmeli işleme kullanmak için çağrı [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Gecikmeli işleme kullanmak için çağrı [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Daha fazla bilgi için [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) ve [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) yapıları, Windows SDK'sı.
 
@@ -162,7 +162,7 @@ Belirtilen biçimde verileri içeren genel bellek bloğuna işleyin.
 
 Bu işlev, işlev çağrılırken veri sağlamalısınız hemen işleme kullanarak veri sağlar. veriler, gerekli olana kadar önbelleğe alınır. Kullanım `CacheData` büyük miktarda veri veya yapılandırılmış depolama ortamına gerektirip gerektirmediğini sağlamış olursunuz, üye işlevi.
 
-Gecikmeli işleme kullanmak için çağrı [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Gecikmeli işleme kullanmak için çağrı [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Daha fazla bilgi için [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK'sındaki yapısı.
 
@@ -198,7 +198,7 @@ Verileri sunmak için olduğu Pano biçimi. Bu parametre bir ön tanımlı Pano 
 
 Bu işlev, verileri hemen sağlanmazsa Gecikmeli işleme kullanarak verileri sağlar. [OnRenderData](#onrenderdata) veya [OnRenderGlobalData](#onrenderglobaldata) üye işlevi, veri istemek için çağrılır.
 
-Verilerinizi aracılığıyla sağlamak kullanmayacaksanız bu işlevi kullanın. bir `CFile` nesne. Aracılığıyla veri sağlamak için kullanacaksanız bir `CFile` nesne, çağrı [DelayRenderFileData](#delayrenderfiledata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Verilerinizi aracılığıyla sağlamak kullanmayacaksanız bu işlevi kullanın. bir `CFile` nesne. Aracılığıyla veri sağlamak için kullanacaksanız bir `CFile` nesne, çağrı [DelayRenderFileData](#delayrenderfiledata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Hemen işleme kullanmak için çağrı [CacheData](#cachedata) veya [CacheGlobalData](#cacheglobaldata) üye işlevi.
 
@@ -228,7 +228,7 @@ Verileri sunmak için olduğu Pano biçimi. Bu parametre bir ön tanımlı Pano 
 
 Bu işlev, verileri hemen sağlanmazsa Gecikmeli işleme kullanarak verileri sağlar. [OnRenderFileData](#onrenderfiledata) üye işlevi, veri istemek için çağrılır.
 
-Kullanmak için kullanacaksanız bu işlevi kullanın. bir `CFile` veri sağlamak için nesne. Kullanılacak kullanmayacaksanız bir `CFile` nesne, çağrı [DelayRenderData](#delayrenderdata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Kullanmak için kullanacaksanız bu işlevi kullanın. bir `CFile` veri sağlamak için nesne. Kullanılacak kullanmayacaksanız bir `CFile` nesne, çağrı [DelayRenderData](#delayrenderdata) üye işlevi. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Hemen işleme kullanmak için çağrı [CacheData](#cachedata) veya [CacheGlobalData](#cacheglobaldata) üye işlevi.
 
@@ -310,7 +310,7 @@ Gecikme süresi, bir kayıt defteri anahtarı ayarı tarafından belirtilir. Gec
 
 Gecikme bilgilerini sürükleyin hakkında daha fazla bilgi için her iki kayıt defterinde depolanır veya. INI dosyası bkz [WriteProfileString](/windows/desktop/api/winbase/nf-winbase-writeprofilestringa) Windows SDK.
 
-Daha fazla bilgi için bkz [sürükle ve bırak: bir bırakma kaynağı uygulama](../../mfc/drag-and-drop-implementing-a-drop-source.md).
+Daha fazla bilgi için bkz [sürükle ve bırak: Bir bırakma kaynağı uygulama](../../mfc/drag-and-drop-implementing-a-drop-source.md).
 
 ##  <a name="empty"></a>  COleDataSource::Empty
 
@@ -374,7 +374,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim biridir daha önce bulundukları `COleDataSource` kullanarak nesne [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) Gecikmeli işleme için üye işlevi. Bu işlev varsayılan uygulamasını çağıracak [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata) sağlanan depolama ortamına bir dosya veya bellek, sırasıyla ise. Bu biçimler hiçbiri sağlanırsa, ardından varsayılan uygulama 0 döndürür ve hiçbir şey yapma. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Belirtilen biçim biridir daha önce bulundukları `COleDataSource` kullanarak nesne [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) Gecikmeli işleme için üye işlevi. Bu işlev varsayılan uygulamasını çağıracak [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata) sağlanan depolama ortamına bir dosya veya bellek, sırasıyla ise. Bu biçimler hiçbiri sağlanırsa, ardından varsayılan uygulama 0 döndürür ve hiçbir şey yapma. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Varsa *lpStgMedium*-> *ortam türü* TYMED_NULL, olan `STGMEDIUM` tarafından belirtilen doldurulmuş ve ayrılan gerekir *lpFormatEtc -> ortam türü*. TYMED_NULL, değilse `STGMEDIUM` yerde verilerle doldurulması gerekir.
 
@@ -408,7 +408,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Belirtilen biçim biridir daha önce bulundukları `COleDataSource` kullanarak nesne [DelayRenderData](#delayrenderdata) Gecikmeli işleme için üye işlevi. Bu işlev varsayılan uygulaması yalnızca false değerini döndürür.
 
-Bu gelişmiş bir, geçersiz kılınabilir. Bu işlev, Orta ve istenen biçimi verilerinizdeki sağlamak için geçersiz kılın. Verilerinizi bağlı olarak, bunun yerine, bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Birden çok depolama medyası işlemek isterseniz, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma `OnRenderFileData`. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Bu gelişmiş bir, geçersiz kılınabilir. Bu işlev, Orta ve istenen biçimi verilerinizdeki sağlamak için geçersiz kılın. Verilerinizi bağlı olarak, bunun yerine, bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Birden çok depolama medyası işlemek isterseniz, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma `OnRenderFileData`. MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Daha fazla bilgi için [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) yapısı ve [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK.
 
@@ -440,7 +440,7 @@ Belirtilen biçim biridir daha önce bulundukları `COleDataSource` kullanarak n
 
 Varsa *phGlobal* yeni HGLOBAL ayrılan verilecek ve döndürülen sonra NULL ise *phGlobal*. Aksi takdirde, tarafından belirtilen HGLOBAL *phGlobal* verilerle doldurulması gerekir. Geçerli bellek blok boyutu içinde HGLOBAL yerleştirilen veri miktarı aşmamalıdır. Ayrıca, daha büyük bir boyuta blok ayrılamaz.
 
-Bu gelişmiş bir, geçersiz kılınabilir. Bu işlev, Orta ve istenen biçimi verilerinizdeki sağlamak için geçersiz kılın. Verilerinizi bağlı olarak, bunun yerine bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Birden çok depolama medyası işlemek isterseniz, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma [OnRenderFileData](#onrenderfiledata). MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
+Bu gelişmiş bir, geçersiz kılınabilir. Bu işlev, Orta ve istenen biçimi verilerinizdeki sağlamak için geçersiz kılın. Verilerinizi bağlı olarak, bunun yerine bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Birden çok depolama medyası işlemek isterseniz, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma [OnRenderFileData](#onrenderfiledata). MFC tarafından işlenmiş olarak hakkında daha fazla bilgi için Gecikmeli işleme bkz [veri nesneleri ve veri kaynakları: İşleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
 Daha fazla bilgi için [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) yapısı ve [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK.
 
@@ -486,7 +486,7 @@ Daha fazla bilgi için [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgm
 void SetClipboard();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>

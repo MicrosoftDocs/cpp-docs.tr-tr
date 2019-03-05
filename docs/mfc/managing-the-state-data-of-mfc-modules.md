@@ -12,12 +12,12 @@ helpviewer_keywords:
 - multiple modules [MFC]
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
-ms.openlocfilehash: d1bed6f3b0dddf0d4ae5e8309d683e52c9e82410
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 0cdb368dc70b73ba70b3721fecdaf47de36686d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174898"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293803"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC Modüllerinin Durum Verisini Yönetme
 
@@ -44,6 +44,6 @@ Diğer bir deyişle, her Modülü doğru şekilde kendi giriş noktalarının hi
 
 - [Pencere yordamları](../mfc/window-procedure-entry-points.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)

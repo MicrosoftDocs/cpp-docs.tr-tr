@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - amprt/concurrency::direct3d::adopt_d3d_access_lock_t
 ms.assetid: ef10bb06-88d6-420b-bb81-35895b2e02e6
-ms.openlocfilehash: 0d6fd347c4a06a2da191f3c6200fc83e6874580d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d72902a0a11ff7e9c76db2b8b6a8a76199a40dd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501458"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285483"
 ---
 # <a name="adoptd3daccesslockt-structure"></a>adopt_d3d_access_lock_t Yapısı
 
@@ -33,6 +33,6 @@ struct adopt_d3d_access_lock_t;
 
 **Namespace:** concurrency::direct3d
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

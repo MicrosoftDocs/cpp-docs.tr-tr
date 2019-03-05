@@ -10,12 +10,12 @@ helpviewer_keywords:
 - IPropertyPage2 ATL implementation
 - IPropertyPage2Impl class
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
-ms.openlocfilehash: fd2d53c79ee372c9997e1da2b189ef18129e67f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf76182242f7b76e3a2c18f85b72674e88afa737
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617340"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287511"
 ---
 # <a name="ipropertypage2impl-class"></a>Ipropertypage2ımpl sınıfı
 
@@ -76,13 +76,13 @@ HRESULT EditProperty(DISPID dispID);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bkz: [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IPerPropertyBrowsingImpl Sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
 [ISpecifyPropertyPagesImpl Sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>

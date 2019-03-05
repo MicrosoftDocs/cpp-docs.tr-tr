@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, document template strings
 ms.assetid: 8109f662-3182-4682-977a-2503321c678a
-ms.openlocfilehash: 24a5fcaea272924e20c55b8c1f5d58111e4eba13
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 563cdf51c8104035fe29cb2e11d6c2bc8155d97b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622251"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297469"
 ---
 # <a name="document-template-strings-mfc-application-wizard"></a>Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı
 
@@ -39,7 +39,6 @@ Bu sayfada MFC Uygulama Sihirbazı sağlayın veya belge yönetimi ve yerelleşt
    |**Dosya yeni kısa adı**|Standart Windows içinde görünen adını ayarlar **yeni** iletişim kutusunda, yeni bir belge şablonu birden fazla ise. Uygulamanız bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, proje adı.|
    |**Dosya türü uzun adı**|Dosya türü adı, sistem kayıt defterinde ayarlar. Uygulamanız Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, artı proje adı. Belge.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)
-

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComQIPtrElementTraits class
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-ms.openlocfilehash: df1bbf5cb36e45b6b47acbd4263c34a7353fd6ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42662a971f5d293cff404ca1eda161a3b87b13b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603742"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285132"
 ---
 # <a name="ccomqiptrelementtraits-class"></a>Ccomqıptrelementtraits sınıfı
 
@@ -73,7 +73,7 @@ Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.
 typedef I* INARGTYPE;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: CPrivateObjectSecurityDesc sınıfı
+title: CPrivateObjectSecurityDesc Class
 ms.date: 11/04/2016
 f1_keywords:
 - CPrivateObjectSecurityDesc
@@ -12,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: 2617113f2805f8d1c56e7fa6cbebfe669709c100
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 99b47c15af4cdb87fb35d5c7342ea2719d341868
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694042"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284391"
 ---
-# <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
+# <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc Class
 
 Bu sınıf, bir özel nesneye güvenli tanımlayıcısı nesnesi temsil eder.
 
@@ -36,7 +36,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 |Ad|Açıklama|
 |----------|-----------------|
 |[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc)|Oluşturucu.|
-|[CPrivateObjectSecurityDesc:: ~ CPrivateObjectSecurityDesc](#dtor)|Yıkıcı.|
+|[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -115,7 +115,7 @@ CPrivateObjectSecurityDesc() throw();
 
 Başlatır `CPrivateObjectSecurityDesc` nesne.
 
-##  <a name="dtor"></a>  CPrivateObjectSecurityDesc:: ~ CPrivateObjectSecurityDesc
+##  <a name="dtor"></a>  CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc
 
 Yıkıcı.
 
@@ -275,7 +275,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 İkinci yöntem, nesnenin nesne türü GUID belirterek veya ACE nasıl devralınır denetleme izin verir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>

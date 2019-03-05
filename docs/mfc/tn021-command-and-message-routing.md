@@ -1,5 +1,5 @@
 ---
-title: 'TN021: Komut ve İleti Yönlendirme'
+title: 'TN021: Komut ve ileti yönlendirme'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.routing
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - command routing [MFC], technical note TN021
 - Windows messages [MFC], routing
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
-ms.openlocfilehash: 4a0774234e6314ff6811bbeafa11403f19cf568e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ce8aa2013c8f2f351ca1028f0d6103135ba5ecd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635714"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294401"
 ---
-# <a name="tn021-command-and-message-routing"></a>TN021: Komut ve İleti Yönlendirme
+# <a name="tn021-command-and-message-routing"></a>TN021: Komut ve ileti yönlendirme
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -203,7 +203,7 @@ Yan Not üzerinde var olan iki **CWnd** durum belirtilen kaydırma çubuğu stil
 
 İçin **CSplitterWnd** kaydırma çubuğu stilleri özel paylaşılan kaydırma çubuklarının Bölümlendirici bölgeleri için geçerlidir. Statik Bölümlendirici pencereler için ya da kaydırma çubuğu stili olarak normalde. Dinamik Bölümlendirici pencereler için kaydırma çubuğunu stil kümesi ikiye bölerek, diğer bir deyişle, yön için genellikle olacaktır **WS_HSCROLL** satır bölmeniz **WS_VSCROLL** sütunları bölmeniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

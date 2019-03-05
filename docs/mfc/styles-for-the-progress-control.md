@@ -7,12 +7,12 @@ helpviewer_keywords:
 - PBS_VERTICAL style
 - CProgressCtrl class [MFC], styles
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
-ms.openlocfilehash: 5d33e9306c1d70bb58ad628297360bc6e34e6ce2
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3adbd32456b1375bd2dc8574220e083ca3d83ee9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296338"
 ---
 # <a name="styles-for-the-progress-control"></a>İlerleme Denetimi için Stiller
 
@@ -42,7 +42,6 @@ PBS_SMOOTH stili:
 
 Daha fazla bilgi için [pencere stilleri](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) içinde *MFC başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CProgressCtrl Kullanma](../mfc/using-cprogressctrl.md)
-

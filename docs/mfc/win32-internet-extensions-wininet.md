@@ -7,12 +7,12 @@ helpviewer_keywords:
 - client applications [MFC], Win32 Internet
 - WinInet classes [MFC], about WinInet classes
 ms.assetid: f8c80f0b-ce14-4f0d-a3cf-4f7d8c5cca59
-ms.openlocfilehash: 3fce3960723beac15cae6ea33cf8232e8a98fb77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 64e699753a3cf266f1162df848afab6ab0b3904f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612400"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285899"
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
 
@@ -46,8 +46,7 @@ Aşağıdaki konular, tipik WinINet görevlerini gerçekleştirmek için adımla
 
 - [Tipik Bir HTTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-http-client-application.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
 [WinInet Temelleri](../mfc/wininet-basics.md)
-

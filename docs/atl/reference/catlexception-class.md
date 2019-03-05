@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlException class
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-ms.openlocfilehash: d8ad46fa219ec29c7973677e2184e7b6d65c74b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6ed6062be02fddc111e4eda4d26226b7a7a0c63
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468880"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296091"
 ---
 # <a name="catlexception-class"></a>CAtlException sınıfı
 
@@ -90,7 +90,7 @@ HRESULT m_hr;
 
 Hata koşulu depolar veri üyesi. HRESULT değerini Oluşturucu tarafından ayarlanan [CAtlException::CAtlException](#catlexception).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çeşitlemeleri](debugging-and-error-reporting-global-functions.md#atlthrow)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ATL projects, adding controls
 - controls [ATL], adding to projects
 ms.assetid: 10223e7e-fdb7-4163-80c6-44aeafa8e6ce
-ms.openlocfilehash: 26667c2ad3bb2cedb42767fe42ff0ad358fa6d66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 836b19cef38549bcdf6cddeeda5bbb7fee08a1c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487691"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298444"
 ---
 # <a name="adding-an-atl-control"></a>ATL denetimi ekleme
 
@@ -34,7 +34,7 @@ Kullanarak **ATL denetimi Sihirbazı**, üç tür denetim oluşturabilirsiniz:
 
 Ayrıca, denetimin boyutunu azaltın ve seçerek çoğu kapsayıcı tarafından kullanılmayan arabirimleri Kaldır **en az bir denetim** üzerinde **seçenekleri** Sihirbazı sayfası.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bileşik Denetime İşlevsellik Ekleme](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)

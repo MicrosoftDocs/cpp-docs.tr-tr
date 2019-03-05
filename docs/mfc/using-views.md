@@ -13,12 +13,12 @@ helpviewer_keywords:
 - user input [MFC], interpreting through view class [MFC]
 - view classes [MFC], role in displaying application data
 ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
-ms.openlocfilehash: 2038f2669d3aa8b5c4bf91b0ba0b38fbec9a1fc8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81668f7409f2b1a4480bde958dc06ce1156e03fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605706"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291177"
 ---
 # <a name="using-views"></a>Görünümleri Kullanma
 
@@ -46,10 +46,9 @@ Ayrıca, diğer geçersiz kılmanız gerekebilir `CView` türetilmiş görünüm
 
 - [Başlatma ve belgeleri ve görünümleri temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)<br/>
 [CFormView Sınıfı](../mfc/reference/cformview-class.md)<br/>
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
 [Seri Hale Getirme Mekanizmasını Atlama](../mfc/bypassing-the-serialization-mechanism.md)
-

@@ -1,5 +1,5 @@
 ---
-title: Iaxwinambientdispatchex arabirimi
+title: IAxWinAmbientDispatchEx Interface
 ms.date: 11/04/2016
 f1_keywords:
 - IAxWinAmbientDispatchEx
@@ -8,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: 5b4afabe2c12dff048bc6a6fb904a82b3cea4d01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae91921ecd5f53f4551e46e1d03cf027ce3e1f3b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539444"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292414"
 ---
-# <a name="iaxwinambientdispatchex-interface"></a>Iaxwinambientdispatchex arabirimi
+# <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx Interface
 
 Bu arabirim, barındırılan bir denetim için ek ortam özelliklerine uygular.
 
@@ -38,7 +38,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirimi statik olarak, ATL ve konak ActiveX denetimleri, özellikle ActiveX ortam özelliklerine sahip denetimler için bağlı olan ATL uygulamaları içermektedir. Bu arabirim içermeden assertion oluşturacağını: "için Ccommodule::Init LIBID geçirilecek unuttunuz"
+Bu arabirimi statik olarak, ATL ve konak ActiveX denetimleri, özellikle ActiveX ortam özelliklerine sahip denetimler için bağlı olan ATL uygulamaları içermektedir. Bu arabirim dahil değil, bu onay oluşturur: "Kitaplık kimliği için Ccommodule::Init geçirilecek unuttunuz"
 
 Bu arabirim, nesneler barındırma ATL'nin ActiveX denetimi tarafından kullanıma sunulur. Türetilmiş [Iaxwinambientdispatch](../../atl/reference/iaxwinambientdispatch-interface.md), `IAxWinAmbientDispatchEx` biriyle kendi ATL tarafından sağlanan ortam özelliği arabirimi desteklemek üzere izin veren bir yöntem ekler.
 
@@ -55,7 +55,7 @@ Bu arabirim tanımı aşağıdaki tabloda gösterildiği gibi formlar, bir süre
 |Tanım türü|Dosya|
 |---------------------|----------|
 |IDL|atliface.idl|
-|Tür kitaplığı|ATL.|
+|Tür kitaplığı|ATL.dll|
 |C++|atliface.h (ATLBase.h içinde de dahil)|
 
 ##  <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch
@@ -79,6 +79,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 Zaman `SetAmbientDispatch` çağrılır yeni bir arabirim işaretçisi ile tüm özellikler veya yöntemler için bu özellikleri zaten tarafından sağlanmazsa barındırılan denetim tarafından sorulan çağırmak için bu yeni arabirim kullanılacak [Iaxwinambientdispatch](../../atl/reference/iaxwinambientdispatch-interface.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IAxWinAmbientDispatch Arabirimi](../../atl/reference/iaxwinambientdispatch-interface.md)

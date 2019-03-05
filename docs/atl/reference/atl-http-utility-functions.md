@@ -2,12 +2,12 @@
 title: ATL HTTP yardımcı işlevleri
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: be38dc8b8547574ea47021f8b14f21060a0755f0
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: ed01253c579cb6bb529c65e65b7e5ce8686e0b27
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849654"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299822"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı işlevleri
 
@@ -281,7 +281,7 @@ Bir HTTP biçim dizesi alınması için sistem saati.
 *strTime*<br/>
 RFC 2616'da tanımlanan HTTP tarih saat almak için bir dize değişkeni başvuru ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) ve RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../atl-com-desktop-components.md)<br/>

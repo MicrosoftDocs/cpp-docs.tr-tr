@@ -11,12 +11,12 @@ f1_keywords:
 - atlsnap/ATL::SNAPINMENUID
 - atlsnap/ATL::SNAPINTOOLBARID_ENTRY
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-ms.openlocfilehash: e3eec62e2bea92f1f308b149046b83be1b9085b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b75dd04bed4895d722939d1bf9c0a6dfff2126e0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656943"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292616"
 ---
 # <a name="snap-in-object-macros"></a>Ek Bileşen Nesne makroları
 
@@ -184,6 +184,6 @@ SNAPINTOOLBARID_ENTRY( id )
 
 Örneğin bakın [BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)

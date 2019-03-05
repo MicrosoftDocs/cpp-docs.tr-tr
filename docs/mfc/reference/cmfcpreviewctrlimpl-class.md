@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], m_font
 - CMFCPreviewCtrlImpl [MFC], m_pDocument
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-ms.openlocfilehash: 3ec1acd1872bc0e51117602ef723116170458afd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f66ed8478023bd42e185da4f21740d1de2536140
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636741"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295753"
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>Cmfcpreviewctrlımpl sınıfı
 
@@ -103,7 +103,7 @@ class CMFCPreviewCtrlImpl : public CWnd;
 
 [CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cmfcpreviewctrlımpl](../../mfc/reference/cmfcpreviewctrlimpl-class.md)
+[CMFCPreviewCtrlImpl](../../mfc/reference/cmfcpreviewctrlimpl-class.md)
 
 ## <a name="cmfcpreviewctrlimpl"></a> CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl
 
@@ -338,4 +338,3 @@ Konak denetimi yeniden boyutlandırdığınızda, genellikle yeni sınırlayıc�
 ```
 virtual ~CMFCPreviewCtrlImpl();
 ```
-

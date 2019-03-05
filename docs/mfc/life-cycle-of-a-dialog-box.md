@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], life cycle
 - life cycle of dialog boxes [MFC]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-ms.openlocfilehash: e92489499a3a5aaaf2fb97e8908cb30d5e168240
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3772a180e35a57c997446fcf2268d84bec2daa5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577625"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291112"
 ---
 # <a name="life-cycle-of-a-dialog-box"></a>Bir İletişim Kutusunun Yaşam Döngüsü
 
@@ -49,7 +49,6 @@ Kalıcı iletişim kutuları için işleyicinizi iletişim kutusu kapatıldıkta
 
 - [Özellik sayfası iletişim kutuları](../mfc/property-sheets-and-property-pages-mfc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletişim Kutuları](../mfc/dialog-boxes.md)
-

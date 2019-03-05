@@ -1,5 +1,5 @@
 ---
-title: "Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler"
+title: 'Özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ exception handling [MFC], upgrade considerations
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: 54826ee7a7ac129ae69715b45770a0a66596a2a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb51ad91e001f0ed153bf4fdb5aa598ab5ba5042
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607993"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291229"
 ---
-# <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
+# <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler
 
 Bu gelişmiş bir konudur.
 
@@ -58,9 +58,8 @@ Bir catch bloğu, yakalanan aynı özel durum işaretçisi nelze vyvolat.
 
 Kullanarak **THROW** catch bloğu işaretçi neden `e` silinecek, böylece dış catch site geçersiz bir işaretçi alır. Kullanım **THROW_LAST** yeniden harekete geçirileceğini `e`.
 
-Daha fazla bilgi için [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Daha fazla bilgi için [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CPictureHolder [MFC], SetPictureDispatch
 - CPictureHolder [MFC], m_pPict
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-ms.openlocfilehash: 14ffcbc043d80bfd296bcf52d125d288039f0501
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5386240114550826e4bf557b63310a91590afb55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509591"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284222"
 ---
 # <a name="cpictureholder-class"></a>CPictureHolder sınıfı
 
@@ -79,7 +79,7 @@ class CPictureHolder
 
 Stok resim özelliği ile bir bit eşlemi, simge veya görüntülemek için meta Geliştirici belirtebilirsiniz.
 
-Özel Resim özellikleri oluşturma hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: ActiveX denetimini kullanarak resimleri](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md).
+Özel Resim özellikleri oluşturma hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -318,7 +318,7 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 *pDisp*<br/>
 İşaretçi yeni `IPictureDisp` arabirimi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CFontHolder Sınıfı](../../mfc/reference/cfontholder-class.md)

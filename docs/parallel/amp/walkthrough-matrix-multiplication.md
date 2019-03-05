@@ -1,15 +1,15 @@
 ---
-title: 'İzlenecek yol: Matris Çarpım'
+title: 'İzlenecek yol: Matris çarpım'
 ms.date: 11/19/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: ae86ff5a111348404616c8bb4fecd3bf22afc90c
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 597ba0f47c7b081f62c82bf8e1ca01c286d35140
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176165"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300979"
 ---
-# <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
+# <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris çarpım
 
 Bu adım adım izlenecek yol, C++ AMP matris çarpım yürütülmesini hızlandırmak için nasıl kullanılacağını gösterir. İki algoritması sunulur, döşeme olmayan ve döşeme ile.
 
@@ -293,7 +293,7 @@ void main() {
 
 4. Seçin **alanı** çubuğundaki uygulamadan çıkın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
-[İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)
+[İzlenecek yol: C++ AMP uygulamasında hata ayıklama](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)

@@ -1,5 +1,5 @@
 ---
-title: Canimationvariableıntegerchangehandler sınıfı
+title: CAnimationVariableIntegerChangeHandler Class
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationVariableIntegerChangeHandler
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged
 - CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-ms.openlocfilehash: 66d740d7042ed2e19b6fe3a87345d7abb096f12c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1c3dc080c23ba4ac05539674047a66059ce52d0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449640"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296585"
 ---
-# <a name="canimationvariableintegerchangehandler-class"></a>Canimationvariableıntegerchangehandler sınıfı
+# <a name="canimationvariableintegerchangehandler-class"></a>CAnimationVariableIntegerChangeHandler Class
 
 Animasyon değişkeninin bir değeri değiştiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
 
@@ -137,6 +137,6 @@ void SetAnimationController(CAnimationController* pAnimationController);
 *pAnimationController*<br/>
 Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

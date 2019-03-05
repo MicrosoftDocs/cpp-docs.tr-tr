@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: 6fcff646a577500fd05b7c938b2c336ebe725957
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 02b7cbb9e66e1e8297699503fc510247efed1629
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894321"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301902"
 ---
 # <a name="csid-class"></a>CSid sınıfı
 
@@ -572,7 +572,7 @@ Durumunu açıklayan bir değer depolar veri üyesinin değerini döndürür `CS
 
 Çağrı [CSid::LoadAccount](#loadaccount) güncelleştirilecek `CSid` çağırmadan önce nesne `SidNameUse` durumuna döndürmek için. `SidNameUse` Nesne durumunu değiştirmez (için çağırarak `LookupAccountName` veya `LookupAccountSid`), ancak yalnızca geçerli durumunu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Güvenliği örneği](../../visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>

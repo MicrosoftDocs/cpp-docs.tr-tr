@@ -268,12 +268,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unorm_4::rb
 - amp_short_vectors/Concurrency::graphics::unorm_4::get_wzyx
 ms.assetid: dd216a9d-95f7-4978-8e78-6cb9c781a7e9
-ms.openlocfilehash: f8a76e09adf606d9f366e8ed5657791fae497a2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4996f65f4b7f707f6b86e05571cacd6987c83a4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619368"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302526"
 ---
 # <a name="unorm4-class"></a>unorm_4 Sınıfı
 
@@ -464,10 +464,10 @@ class unorm_4;
 |Ad|Açıklama|
 |----------|-----------------|
 |unorm_4::a||
-|unorm_4::AB||
+|unorm_4::ab||
 |unorm_4::abg||
 |unorm_4::abgr||
-|unorm_4::ABR||
+|unorm_4::abr||
 |unorm_4::abrg||
 |unorm_4::AG||
 |unorm_4::agb||
@@ -478,7 +478,7 @@ class unorm_4;
 |unorm_4::arb||
 |unorm_4::arbg||
 |unorm_4::arg||
-|unorm_4::ARGB||
+|unorm_4::argb||
 |unorm_4::b||
 |unorm_4::BA||
 |unorm_4::BAG||
@@ -502,7 +502,7 @@ class unorm_4;
 |unorm_4::gar||
 |unorm_4::garb||
 |unorm_4::GB||
-|unorm_4::Gba||
+|unorm_4::gba||
 |unorm_4::gbar||
 |unorm_4::GBR||
 |unorm_4::gbra||
@@ -525,7 +525,7 @@ class unorm_4;
 |unorm_4::rg||
 |unorm_4::rga||
 |unorm_4::rgab||
-|unorm_4::RGB||
+|unorm_4::rgb||
 |unorm_4::rgba||
 |unorm_4::w||
 |unorm_4::wx||
@@ -600,7 +600,7 @@ class unorm_4;
 
 **Başlık:** amp_short_vectors.h
 
-**Namespace:** Concurrency::graphics
+**Namespace:** CONCURRENCY::Graphics
 
 ##  <a name="ctor"></a> unorm_4
 
@@ -683,6 +683,6 @@ Başlatmak için kullanılan nesne.
 static const int size = 4;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

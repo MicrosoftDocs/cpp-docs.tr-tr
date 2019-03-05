@@ -6,12 +6,12 @@ helpviewer_keywords:
 - composite controls, handling events
 - ActiveX controls [C++], events
 ms.assetid: 98f85681-9564-480d-af38-03f9733fe58b
-ms.openlocfilehash: 1f0759c9182ad2a7e572bacee7707963d9b6ae2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ad7ef3d80579804ac614fbefac1a042a9cf2fba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532680"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299770"
 ---
 # <a name="adding-functionality-to-the-composite-control"></a>Bileşik denetime işlevsellik ekleme
 
@@ -30,7 +30,6 @@ ActiveX denetimi iletişim kaynak ekleme sonra denetime sağ tıklayın ve **ola
 
 Bileşik denetim ActiveX denetimleri için bağlantı noktaları otomatik olarak bağlı ve çağrılar aracılığıyla bağlı [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
-

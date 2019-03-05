@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma'
+title: 'MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma'
 ms.date: 09/12/2018
 f1_keywords:
 - GetWindowsDirectory
@@ -25,14 +25,14 @@ helpviewer_keywords:
 - registering controls
 - OLEPRO32.DLL
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
-ms.openlocfilehash: 26ea2cce8891d145740d2f91e06e15c2a1161566
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 409ace2197396cf7adbd330cfbd891745a23cf53
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513743"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300132"
 ---
-# <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
+# <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma
 
 Bu makalede, ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:
 
@@ -79,7 +79,6 @@ Denetimi doğrudan kaydetme avantajı, çağırma ve ayrı bir işlemde (yani, R
 
 MFCx0.DLL kaydetmeniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

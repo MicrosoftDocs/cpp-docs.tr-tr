@@ -1,5 +1,5 @@
 ---
-title: 'TN029: Bölünmüş Pencereler'
+title: 'TN029: Bölümlendirici Windows'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.windows.splitter
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - TN029
 - splitter windows [MFC], about splitter windows
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
-ms.openlocfilehash: 245ad33dd7bc7d3b6365463d4d2ae9538a12bfdc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c27545c6f425eda952e87c80ed1d37de9e1093a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501991"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294999"
 ---
-# <a name="tn029-splitter-windows"></a>TN029: Bölünmüş Pencereler
+# <a name="tn029-splitter-windows"></a>TN029: Bölümlendirici Windows
 
 Bu Not MFC açıklar [CSplitterWnd sınıfı](../mfc/reference/csplitterwnd-class.md), pencere ayırır ve diğer bölmesinde pencerelerin yeniden boyutlandırmasının yönetir sağlar.
 
@@ -56,11 +56,11 @@ Bölümlendirici pencereler için belirli koşullar listesi şu şekildedir:
 
 `CSplitterWnd`: Denetimleri bölmesinde bölme ve bir satır veya sütun tüm bölmeler arasında paylaşılan bir kaydırma çubukları sağlar bir pencere. Satırları ve sütunları ile sıfır tabanlı numaralarını belirtme (satır ilk bölmesidir = 0 ve sütun = 0).
 
-Bölme: Bir uygulamaya özgü penceresi, bir `CSplitterWnd` yönetir. Bir bölme genellikle türetilen bir nesnedir [CView sınıfı](../mfc/reference/cview-class.md), ancak herhangi biri [CWnd](../mfc/reference/cwnd-class.md) uygun alt penceresi kimliğe sahip nesne
+Bölmesi: Bir uygulamaya özgü penceresi, bir `CSplitterWnd` yönetir. Bir bölme genellikle türetilen bir nesnedir [CView sınıfı](../mfc/reference/cview-class.md), ancak herhangi biri [CWnd](../mfc/reference/cwnd-class.md) uygun alt penceresi kimliğe sahip nesne
 
 Kullanılacak bir `CWnd`-türetilmiş nesne, nesnenin RUNTIME_CLASS geçirmek `CreateView` işlevini kullandıysanız, olduğu gibi bir `CView`-türetilmiş sınıf. Çalışma zamanında dinamik oluşturma framework kullandığından sınıfınıza DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE kullanmanız gerekir. Çok fazla kod olsa `CSplitterWnd` özgü olan `CView` sınıfı [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) bu eylemlerin gerçekleştirilmesi önce her zaman kullanılır.
 
-Ayırıcıyı: satırları ve sütunları bölme yerleştirilen denetimdir. Satır boyutunu veya sütunları bölme ayarlamak için kullanılabilir.
+Ayırıcıyı: Satırları ve sütunları bölme yerleştirilen bir denetimdir. Satır boyutunu veya sütunları bölme ayarlamak için kullanılabilir.
 
 Bölümlendirici kutusu: Bir denetimi dinamik olarak `CSplitterWnd` yeni satırları veya sütunları bölme oluşturmak için kullanabilirsiniz. Dikey kaydırma çubuklarının veya yatay kaydırma çubuklarını solundaki üstünde bulunur.
 
@@ -136,8 +136,7 @@ Bu işlevler, dinamik Bölümlendirici penceresinin mantığını uygular. Daha 
 
    Komutu, genellikle "Window Split" klavye yürütür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-ms.openlocfilehash: 83ac810538bf189d026c0cb9b2a76ded49fdd86c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80975047b300f270c0ac58c8b8abfc59ff2b17ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499696"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293790"
 ---
 # <a name="catlmap-class"></a>CAtlMap sınıfı
 
@@ -291,7 +291,7 @@ CPair* GetAt(POSITION& pos) throw();
 *POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Haritanın anahtar türünü belirten bir şablon parametre.
 
 *value*<br/>
@@ -388,7 +388,7 @@ void GetNextAssoc(
 *POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Haritanın anahtar türünü belirten bir şablon parametre.
 
 *value*<br/>
@@ -558,7 +558,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bakılacak öğeyi tanımlayan anahtar belirtir.
 
 *value*<br/>
@@ -582,7 +582,7 @@ V& operator[](kinargtype key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Eklenecek veya değiştirilecek öğenin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -649,7 +649,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Kaldırmak istediğiniz anahtar karşılık gelen bir öğe çifti.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -672,7 +672,7 @@ POSITION SetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Eklenecek anahtar değeri `CAtlMap` nesne.
 
 *value*<br/>
@@ -780,7 +780,7 @@ V  m_value;
 *V*<br/>
 Değer öğe türü.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan örnek](../../visual-cpp-samples.md)<br/>
 [Oluşturma](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>

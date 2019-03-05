@@ -1,31 +1,31 @@
 ---
-title: 'Windows Yuvaları: Yuva Bildirimleri'
+title: 'Windows Yuvaları: Yuva bildirimleri'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], notifications
 - notifications [MFC], socket
 - sockets [MFC], notifications
 ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
-ms.openlocfilehash: e49001e9693872d23162284df49f128097e68784
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c08305b8aeeca00eaf41e4f1c24b51a46a8c4254
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476485"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289916"
 ---
-# <a name="windows-sockets-socket-notifications"></a>Windows Yuvaları: Yuva Bildirimleri
+# <a name="windows-sockets-socket-notifications"></a>Windows Yuvaları: Yuva bildirimleri
 
 Bu makalede, yuva sınıflarından bildirim işlevleri açıklanmaktadır. Bu üye işlevleri framework yuva nesnenizin önemli olayları bildirmek için çağırdığı geri çağırma işlevlerdir. Bildirim işlevler şunlardır:
 
-- [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive): olduğundan veri arabelleği için çağırarak almak için bu yuva bildirir [alma](../mfc/reference/casyncsocket-class.md#receive).
+- [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive): Bu yuva olduğundan veri arabelleği için çağırarak almak için bildirir [alma](../mfc/reference/casyncsocket-class.md#receive).
 
 - [OnSend](../mfc/reference/casyncsocket-class.md#onsend): Bu yuva artık veri çağırarak gönderebilmesi gerektiğini bildirir [Gönder](../mfc/reference/casyncsocket-class.md#send).
 
-- [OnAccept](../mfc/reference/casyncsocket-class.md#onaccept): çağırarak bağlantı isteklerini kabul edebilirsiniz dinleme bu yuva bildirir [kabul](../mfc/reference/casyncsocket-class.md#accept).
+- [OnAccept](../mfc/reference/casyncsocket-class.md#onaccept): Çağırarak bağlantı isteklerini kabul edebilirsiniz dinleme bu yuva bildirir [kabul](../mfc/reference/casyncsocket-class.md#accept).
 
-- [Tetiklediğinde çalıştırılan](../mfc/reference/casyncsocket-class.md#onconnect): kendi bağlantı denemesi tamamlanan bu yuva bağlantı bildirir: belki de başarıyla veya belki de hata.
+- [Tetiklediğinde çalıştırılan](../mfc/reference/casyncsocket-class.md#onconnect): Kendi bağlantı denemesi tamamlanan bu yuva bağlantı bildirir: belki de başarıyla veya belki de hata.
 
-- [OnClose](../mfc/reference/casyncsocket-class.md#onclose): uygulamanın bağlı olduğu yuva kapatıldı bu yuva bildirir.
+- [OnClose](../mfc/reference/casyncsocket-class.md#onclose): Bağlı yuva kapatıldı bu yuva bildirir.
 
     > [!NOTE]
     >  Ek bildirim işlevi [OnOutOfBandData](../mfc/reference/casyncsocket-class.md#onoutofbanddata). Bu bildirim alma yuvası göndermek için "bant-" veri gönderme yuva olduğunu bildirir. Bant dışı verileri, her bağlı Akış yuvaları çifti ile ilişkili mantıksal olarak bağımsızdır bir kanaldır. Bant dışı kanal, genellikle "Acil" veri göndermek için kullanılır. MFC, bant dışı verileri destekler. Sınıfıyla çalışan kullanıcılar Gelişmiş [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md) bant dışı kanal, ancak kullanıcılar sınıfı kullanmanız gerekebilir [CSocket](../mfc/reference/csocket-class.md) kullanmasını önerilmez. Daha kolay yolu, bu tür verileri geçirmek için ikinci bir yuva oluşturmaktır. Bant dışı veriler hakkında daha fazla bilgi için bkz: Windows SDK'da bulunan Windows yuva belirtimi.
@@ -47,19 +47,18 @@ Veri gönderme veya alma gibi bir işlem sırasında bir `CSocket` nesne zaman u
 
 Daha fazla bilgi için bkz.:
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
+- [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
 - [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md)
 
-- [Windows Yuvaları: Bayt Sıralama](../mfc/windows-sockets-byte-ordering.md)
+- [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md)
 
-- [Windows Yuvaları: Dizeleri Dönüştürme](../mfc/windows-sockets-converting-strings.md)
+- [Windows Yuvaları: Dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
-

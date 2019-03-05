@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Relations collection
 - CDaoRelationFieldInfo structure [MFC]
 ms.assetid: 47cb89ca-dc80-47ce-96fd-cc4b88512558
-ms.openlocfilehash: 9a00d1cbaf58729863a85d4e9053c9241e9566ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85dd853a9aae41a87bbe7ef5c69e22846678cf8a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599413"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298431"
 ---
 # <a name="cdaorelationfieldinfo-structure"></a>CDaoRelationFieldInfo Yapısı
 
@@ -48,7 +48,7 @@ DAO ilişki nesnesi alanları birincil tabloya ve bu ilişkiyi tanımlayan bir d
 
 **Başlık:** afxdao.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoRelationInfo Yapısı](../../mfc/reference/cdaorelationinfo-structure.md)

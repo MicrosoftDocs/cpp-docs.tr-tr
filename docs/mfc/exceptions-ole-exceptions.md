@@ -1,5 +1,5 @@
 ---
-title: 'Özel durumlar: OLE Özel Durumları'
+title: 'Özel durumlar: OLE özel durumları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE, exceptions
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - exception handling [MFC], OLE
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
-ms.openlocfilehash: 2732f571d305fda2b739be02661ab9558f8bc653
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e404005a88398ec909e3043cfa55c7e8fbe2f594
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515430"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297911"
 ---
-# <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE Özel Durumları
+# <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE özel durumları
 
 Teknikleri ve özellikleri OLE özel durumları işleme için bu diğer özel durumları işlemek için aynıdır. Özel durum işleme hakkında daha fazla bilgi için bkz [C++ özel durum işleme](../cpp/cpp-exception-handling.md).
 
@@ -41,7 +41,6 @@ Bu iki sınıf arasındaki farktır kullanıldıkları ve sağladıkları bilgi 
 
 İki genel işlevleri, iki OLE özel durum sınıfları karşılık gelir: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) ve [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Genel OLE özel durumları ve OLE gönderme özel durumları, sırasıyla throw için bunları kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

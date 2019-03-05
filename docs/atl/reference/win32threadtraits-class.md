@@ -10,12 +10,12 @@ helpviewer_keywords:
 - threading [ATL], creation functions
 - Win32ThreadTraits class
 ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
-ms.openlocfilehash: 79d4d1a4fbbd5b2bddeafeaa9ea37b43d1b8c259
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da4b8b3d5a41ab16dc2027fd632c56158afd3b97
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574817"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288746"
 ---
 # <a name="win32threadtraits-class"></a>Win32ThreadTraits sınıfı
 
@@ -98,6 +98,6 @@ Bkz: [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-
 
 Bu işlev çağrıları `CreateThread` iş parçacığı oluşturmak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

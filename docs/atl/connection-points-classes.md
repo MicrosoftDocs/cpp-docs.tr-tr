@@ -8,12 +8,12 @@ helpviewer_keywords:
 - classes [C++], connection points
 - connection points classes
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
-ms.openlocfilehash: 4965e5e371bd96903cad4d7f1e2b0ce3216107ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 24b65d54fe303e33e100299cf8a95d22ebc72cdc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593979"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299211"
 ---
 # <a name="connection-points-classes"></a>Bağlantı noktası sınıfları
 
@@ -41,9 +41,8 @@ Aşağıdaki sınıflar, bağlantı noktaları için destek sağlar:
 
 [Olay İşleme ve ATL](../atl/event-handling-and-atl.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Bağlantı Noktası Makroları](../atl/reference/connection-point-macros.md)<br/>
 [Bağlantı Noktası Genel İşlevleri](../atl/reference/connection-point-global-functions.md)
-

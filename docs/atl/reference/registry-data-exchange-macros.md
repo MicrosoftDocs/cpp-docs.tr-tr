@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, macros
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-ms.openlocfilehash: c1a746487b799979cd83f2900a0f7a12d21a6837
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69b823cbcd85ebaaeb05979283ea4f8fea80f4b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524874"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290696"
 ---
 # <a name="registry-data-exchange-macros"></a>Kayıt defteri veri değişim makroları
 
@@ -200,8 +200,7 @@ Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.
 
 Bu makro, bir üye değişkeni bir belirli kayıt defteri girişi ile ilişkilendirilecek BEGIN_RDX_MAP ve END_RDX_MAP makroları ile birlikte kullanılır. Genel işlev [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), veya üye değişkenleri arasındaki sistem kayıt defteri veri değişim yapması BEGIN_RDX_MAP ve END_RDX_MAP makroları tarafından oluşturulan aynı ada sahip bir üye işlevi kullanılmalıdır RDX haritada.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)<br/>
 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
-

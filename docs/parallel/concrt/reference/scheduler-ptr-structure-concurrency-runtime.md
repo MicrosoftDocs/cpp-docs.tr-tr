@@ -8,12 +8,12 @@ f1_keywords:
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-ms.openlocfilehash: 0da45fa18d12b3f1c93df6b8c8736ed1bfb58ade
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2373fe3bc8cac501d1b6b32ca66996eff47ba6f3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525013"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295051"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr yapısı
 
@@ -101,6 +101,6 @@ Dönüştürülecek Zamanlayıcı.
 *pScheduler*<br/>
 Dönüştürülecek Zamanlayıcı işaretçisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

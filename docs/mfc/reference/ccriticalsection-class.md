@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CCriticalSection [MFC], Unlock
 - CCriticalSection [MFC], m_sect
 ms.assetid: f776f74b-5b0b-4f32-9c13-2b8e4a0d7b2b
-ms.openlocfilehash: 152efe6b1c5e8be67a3c37cc7e56b12c88c1b4dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c89647afc8a9a8c6564d25afe20d48818a643f2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641482"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291047"
 ---
 # <a name="ccriticalsection-class"></a>CCriticalSection sınıfı
 
@@ -75,7 +75,7 @@ Kullanmak için iki farklı yöntemle bir `CCriticalSection` nesne: tek başına
 
 - Yöntemi de paylaşabilirsiniz bir sınıf ile birden çok iş parçacığı ekleyerek katıştırılmış bir `CCriticalSection`-türü veri üyesi sınıfı ve gerektiğinde veri üyesi kilitleme.
 
-Kullanma hakkında daha fazla bilgi için `CCriticalSection` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Kullanma hakkında daha fazla bilgi için `CCriticalSection` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -179,7 +179,7 @@ Varsa `CCriticalSection` tek başına kullanılan `Unlock` kritik bölümü tara
 
   Örneğin bakın [CCriticalSection::Lock](#lock).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSyncObject Sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

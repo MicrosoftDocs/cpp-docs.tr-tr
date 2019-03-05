@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Add Class Wizard, document control strings
 ms.assetid: 14e1c834-5e79-4dbd-811f-ec8f0a9cdcb2
-ms.openlocfilehash: a5664a539af351051f9ae3642c089e51b54bc8cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de0b483b6b3d242ee05680c47ae29ed675d54a36
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662429"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285275"
 ---
 # <a name="document-template-strings-mfc-add-class-wizard"></a>Belge Şablonu Dizeleri, MFC Sınıf Ekleme Sihirbazı
 
@@ -71,7 +71,7 @@ Formlar ve okuma ve uygulamanın kullanıcı tarafından kullanılan dizelerin y
 
    Projenin belge sınıfı gösterir. Varsayılan olarak, bu sınıf ana uygulamanın belge sınıfı bağlantısında listelendiği gibi [gözden geçirme oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası. Projede diğer belge sınıfları eklediyseniz başka bir belge sınıfı listeden seçebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Sınıf Ekleme Sihirbazı](../../mfc/reference/mfc-add-class-wizard.md)<br/>
 [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>

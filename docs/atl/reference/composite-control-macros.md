@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, macros
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
-ms.openlocfilehash: 10965fed5aac2eb037cf9894998688e3e7c2bffa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c6d3e350755ef4a0cf4a84561e34619ab3974be
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499023"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299121"
 ---
 # <a name="composite-control-macros"></a>Bileşik Denetim makroları
 
@@ -164,7 +164,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 
 İlk dört makro parametrelerini için aynıdır [SINK_ENTRY_EX](#sink_entry_ex) makrosu. Son parametresi, olay için tür bilgisini sağlar. ActiveX olayı havuzlarını yalnızca destekler dönüş türü değerlerinin HRESULT ya da geçersiz kılma, olay işleyicisi yöntemleri gelen CE ATL uygulaması; herhangi bir dönüş değeri desteklenmiyor ve davranışı tanımlanmamış olur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)<br/>
 [Bileşik Denetim Genel İşlevleri](../../atl/reference/composite-control-global-functions.md)

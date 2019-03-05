@@ -7,12 +7,12 @@ helpviewer_keywords:
 - status bar controls [MFC], settings
 - CStatusBarCtrl class [MFC], settings
 ms.assetid: adeba0c3-17f3-435c-b140-a57845e9ce49
-ms.openlocfilehash: a4806cdc81a536aac0b9472ca043d4d2de027495
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b41997fb9342a651260bc2196d212016dc0deb7e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676531"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285184"
 ---
 # <a name="settings-for-the-cstatusbarctrl"></a>CStatusBarCtrl Ayarları
 
@@ -31,8 +31,7 @@ Bir durum pencerenin çizim alanının en küçük yüksekliğini çağırarak a
 
 Bir durum pencere kenarlıklarını genişliğini çağırarak alma [GetBorders](../mfc/reference/cstatusbarctrl-class.md#getborders). Bu üye işlevi, yatay kenarlık, Dikey kenarlık ve dikdörtgenler arasındaki kenarlığın genişliği alan üç öğeli bir dizi işaretçi içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CStatusBarCtrl Kullanma](../mfc/using-cstatusbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

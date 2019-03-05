@@ -2,12 +2,12 @@
 title: OpenMP C ve C++ Uygulaması Program Arabirimi
 ms.date: 11/04/2016
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4
-ms.openlocfilehash: 749d4a0a4fcbeed1f8cb61108c5b4d13dcdc3047
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c389029b6e9d2690899e086a59c6e023288e4b4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481698"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290215"
 ---
 # <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C ve C++ Uygulaması Program Arabirimi
 
@@ -19,7 +19,7 @@ Telif Hakkı 1997-2002 OpenMP mimarisini gözden geçirme Pano.
 
 Sağlanan OpenMP mimarisi Review Board telif hakkı bildirimi tüm ücret veya malzemesinin bu bölümü kopyalamak için izin verilir ve bu belgenin başlığı görüntülenir. Kopyalama OpenMP mimarisi Review Board izinle olması koşuluyla, bildirim olduğu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md)<br/>
 [İçindekiler](../../parallel/openmp/contents.md)

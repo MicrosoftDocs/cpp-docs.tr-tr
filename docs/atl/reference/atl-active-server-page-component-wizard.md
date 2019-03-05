@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ASP components, creating in ATL
 - ATL Active Server Page Component Wizard
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-ms.openlocfilehash: 80d7eefaa4b12d5aab8970f4b3c81fc644226e07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f020ed9b58f631bfff09fe54c70e36146eb03368
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510870"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288096"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page bileşeni Sihirbazı
 
@@ -75,7 +75,7 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
 
    Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfı adını ayarlar. Projenizi veya bu nesne öznitelikleri kullanıyorsa, ATL içermez çünkü bu seçeneği değiştiremezsiniz **coclass'ı** özniteliği.
 
-- **Türü**
+- **Tür**
 
    Coclass'ı için kayıt defterinde görünür nesne açıklaması ayarlar.
 
@@ -87,6 +87,6 @@ Nesne için COM işlevleri hakkında bilgi sağlar.
 
    Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Active Server Page bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)

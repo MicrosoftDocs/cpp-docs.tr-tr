@@ -5,12 +5,12 @@ helpviewer_keywords:
 - toolbar controls [MFC], about toolbar controls
 - CToolBarCtrl class [MFC], settings
 ms.assetid: 025ba920-b3ee-4d82-9367-e652cd7875b9
-ms.openlocfilehash: 5b5a91b4b78737866a0718865ae45fc62d1ca71a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baccc2f486bb49a52f1297c01941a90e9ee01b7a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489082"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297092"
 ---
 # <a name="settings-for-the-toolbar-control"></a>Araç Çubuğu Denetimi için Ayarlar
 
@@ -18,8 +18,7 @@ Araç çubuğundaki düğmeler, bit eşlem, bir dize veya her ikisini de görün
 
 Araç çubuğu eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcının olanak tanıyan bir sistem tarafından tanımlanan özelleştirme iletişim kutusunda da dahil olmak üzere yerleşik özelleştirme özelliklerine sahip olabilir. Bir uygulamayı özelleştirme özelliklerini kullanıcı tarafından kullanılabilir ve kullanıcı araç çubuğunu özelleştirme uzantı denetimlerini belirler. Araç çubuğunu özelleştirme hakkında daha fazla bilgi için bkz. [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) içinde *MFC başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

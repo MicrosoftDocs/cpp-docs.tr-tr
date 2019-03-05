@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-ms.openlocfilehash: 5ecde92cbd9fb9e028e79c9a0ce75859ce85790a
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: d4645f4a57ce70c3683972c22e0f99cbce87ca6b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893463"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287784"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 
@@ -273,7 +273,7 @@ Nesnesini yeniden kullanmak için çağrı [CWorkerThread::Initialize](#initiali
 
 Çağırmanın Not `Shutdown` başka bir işaretçi ile başlatılan bir nesne üzerinde `CWorkerThread` nesne hiçbir etkisi yoktur ve her zaman S_OK döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>

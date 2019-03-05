@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl Yapılır: Eşzamanlılık Çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme'
+title: 'Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exception handling, converting from OpenMP to the Concurrency Runtime
 - converting from OpenMP to the Concurrency Runtime, exception handling
 ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
-ms.openlocfilehash: 9fa5ff2bcdfa6680dde6e9316d143089bf586671
-ms.sourcegitcommit: ee0103752884425843556a19cf418a504dc3cd02
+ms.openlocfilehash: 118cf3e485fa78ae3eaa5efe34708924b89d6588
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738099"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285158"
 ---
-# <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>Nasıl Yapılır: Eşzamanlılık Çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme
+# <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme
 
 Bu örnek bir OpenMP dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) eşzamanlılık çalışma zamanı özel durum işleme mekanizmasını kullanmak için özel durum işleme gerçekleştiren bir döngü.
 
@@ -58,9 +58,8 @@ Hakkında daha fazla bilgi için `parallel_for` ve diğer paralel algoritmalar i
 
 **cl.exe/ehsc/OpenMP concrt-omp-exceptions.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)
-

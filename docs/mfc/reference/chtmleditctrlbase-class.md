@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 11bfa8304b51ed25b934a97109db7da7bb39f49a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebc296c66ee818e5c72207e0ca7b436f386fb68d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590144"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293946"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 
@@ -395,7 +395,7 @@ Etiket adı (örneğin, "P" veya "Tablo").
 Görüntü URL'si.
 
 *nTagType*<br/>
-Etiket türü: 0, görüntü için açılış etiketi yalnızca olduğu anlamına gelir. 1 görüntü için kapanış etiketi yalnızca anlamına gelir. 2 görüntü açılış ve kapanış etiketlerinin için anlamına gelir. Br ve açıklaması gibi tek etiketleri 0 olarak ayarlanmış etiket türü ile eklenmesi gerekir.
+Etiket türü: 0 için açılış etiketi yalnızca görüntüdür anlamına gelir. 1 görüntü için kapanış etiketi yalnızca anlamına gelir. 2 görüntü açılış ve kapanış etiketlerinin için anlamına gelir. Br ve açıklaması gibi tek etiketleri 0 olarak ayarlanmış etiket türü ile eklenmesi gerekir.
 
 *nAlignment*<br/>
 Hizalama (yalnızca dikdörtgen öğeleri): Bu parametre, görüntüyü bir hizalama özniteliğine sahip bir öğe için olduğunu gösterir. Sol = 0, merkezi = 1, sağ = 2 ve undefined = 3. Sol, sağ, veya center öznitelikleri açıkça öğesinde ayarlanmalıdır.
@@ -714,7 +714,7 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*SA*<br/>
+*sa*<br/>
 Dize dizisi olarak kullanılabilen blok biçimi etiketler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2562,8 +2562,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 Bu yöntem gönderir [IDM UNORDERLIST komut kimliği](https://msdn.microsoft.com/library/aa769987.aspx) WebBrowser denetimi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [HTMLEdit örnek](../../visual-cpp-samples.md)
-

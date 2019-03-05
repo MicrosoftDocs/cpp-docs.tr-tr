@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-ms.openlocfilehash: ed715cd822aaf0f55b8898efc80b5514938ca8ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c61f666865d3e1db4cdcf2dc6d3e07c2113a79c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668080"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290029"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL özellik sayfası ekleme
 
@@ -32,8 +32,8 @@ Bir özellik sayfası denetimi için ekliyorsanız, denetiminizin desteklemelidi
 
 Bir denetim için bir özellik sayfası oluşturduktan sonra sağlamanız gereken [PROP_PAGE](property-map-macros.md#prop_page) girişi denetimi için özellik eşlemesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../../atl/atl-com-property-pages.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
-[Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)
+[Örnek: Özellik sayfası uygulama](../../atl/example-implementing-a-property-page.md)

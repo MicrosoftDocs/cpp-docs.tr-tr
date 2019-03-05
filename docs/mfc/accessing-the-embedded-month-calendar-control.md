@@ -9,12 +9,12 @@ helpviewer_keywords:
 - month calendar controls [MFC], changing the font
 - DateTimePicker control [MFC]
 ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
-ms.openlocfilehash: 56a735f9e79ca4f5423201139adc740878afb279
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dfe6fa220e19deebd86e7c8b7bd25dab60165f73
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652544"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292148"
 ---
 # <a name="accessing-the-embedded-month-calendar-control"></a>Katıştırılmış Aylık Takvim Denetimine Erişme
 
@@ -37,8 +37,7 @@ Eklenen denetimin kapatıldı daha önce belirtildiği gibi aylık takvim deneti
 
 Yazı tipi, çağrısıyla değiştirilmişse `CDateTimeCtrl::SetMonthCalFont`, yeni yazı tipi depolanır ve bir ay takvimi görüntülenecek olduğunda kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDateTimeCtrl Kullanma](../mfc/using-cdatetimectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

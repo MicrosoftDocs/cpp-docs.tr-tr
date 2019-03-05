@@ -1,18 +1,18 @@
 ---
-title: 'MFC ActiveX Denetimleri: Özel Özellikler Ekleme'
+title: 'MFC ActiveX denetimleri: Özel Özellikler ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-ms.openlocfilehash: 2cc9cfa1886c6ba8e714736e0192b56bf3b154f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e02d5523b894f89aa93c8d2765a128920afa2353
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496430"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284209"
 ---
-# <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
+# <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX denetimleri: Özel Özellikler ekleme
 
 Özel özellikler stok özelliklerini içeren özel özellikler tarafından zaten uygulanmadı farklı `COleControl` sınıfı. Özel bir özellik, belirli bir durumu veya bir ActiveX denetimine denetimini kullanarak Programcı görünümünü göstermek için kullanılır.
 
@@ -22,7 +22,7 @@ Bu makalede, Özellik Ekleme Sihirbazı'nı kullanarak bir ActiveX denetimi içi
 
 - [Özel özellikler için özellik Sihirbazı değişiklikleri ekleyin](#_core_classwizard_changes_for_custom_properties)
 
-Özel özellikler gelen uygulama dört çeşitleri: üye değişkeni, üye değişken bildirimi, Get/Set yöntemleri ve Parameterized.
+Özel Özellikler uygulama dört çeşitleri gelir: Üye değişkeni, üye değişkeni bildirimiyle Get/Set yöntemleri ve parametreli.
 
 - Üye değişkeni uygulama
 
@@ -92,9 +92,9 @@ Son olarak, uygulamaları `GetCircleOffset` ve `SetCircleOffset` işlevleri, den
 
 Özellik Ekleme Sihirbazı'nı otomatik olarak bir çağrı çok dikkat edin [SetModifiedFlag](../mfc/reference/colecontrol-class.md#setmodifiedflag), kümesi işlevinin gövdesi için. Bu işlev çağırma denetimi değiştirilmiş olarak işaretlenir. Bir denetim değiştirilmişse, yeni durumuna kapsayıcı kaydedildiğinde kaydedilir. Bu işlev, denetimin kalıcı durum bir parçası olarak kaydedilmiş bir özellik değeri değiştiğinde çağrılmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - threading [ATL], creation functions
 - threading [ATL], CRT threads
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343
-ms.openlocfilehash: 1e54b4db2605c3006697d0a26d34066de666f0fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5e13bad907e76968c4d4343e6617903e309e40f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641954"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282610"
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits sınıfı
 
@@ -98,6 +98,6 @@ Bkz: [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-
 
 Bu işlev çağrıları [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) iş parçacığı oluşturmak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

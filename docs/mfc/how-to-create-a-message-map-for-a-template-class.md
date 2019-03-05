@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma'
+title: 'Nasıl yapılır: Bir şablon sınıfı için ileti eşlemesi oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - template classes [MFC], creating message maps
 - message maps [MFC], template classes
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
-ms.openlocfilehash: 437fdf59ae9c9d3428654fc412fd78bf1348a701
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 676e698a899327eee8305731b5d609b5b95ece76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586244"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296780"
 ---
-# <a name="how-to-create-a-message-map-for-a-template-class"></a>Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma
+# <a name="how-to-create-a-message-map-for-a-template-class"></a>Nasıl yapılır: Bir şablon sınıfı için ileti eşlemesi oluşturma
 
 MFC ileti eşlemede uygun C++ nesne örneği Windows iletilerini yönlendirmek için etkili bir yol sağlar. MFC ileti Haritası hedefleri uygulama sınıfları, belge ve görünüm sınıfları, Denetim sınıfları ve benzeri örneklerindendir.
 
@@ -60,8 +60,7 @@ Testin tamamlanması `StringizeElement` işlevi özelleştirilmiş, birlikte ça
 
 [!code-cpp[NVC_MFC_CListBox#48](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_7.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [BEGIN_TEMPLATE_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_template_message_map)<br/>
 [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
-

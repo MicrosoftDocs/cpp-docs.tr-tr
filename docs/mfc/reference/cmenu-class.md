@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: 2834de457ce9e2a71537e706f0fdf84463b16a8d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: bdc5f2ebf20949f63b3892ee8e8c6eedf05e2838
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178934"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293868"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 
@@ -1482,7 +1482,7 @@ Açılır menü sahip olan ve oluşturulan menüsünden iletileri alma penceresi
 
 Kayan bir açılır menü, ekranda her yerde görünebilir. Açılır menü oluştururken, hataları işleme ile ilgili daha fazla bilgi için bkz: [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLTEST](../../visual-cpp-samples.md)<br/>
 [MFC örnek DYNAMENU](../../visual-cpp-samples.md)<br/>

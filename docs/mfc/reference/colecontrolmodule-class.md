@@ -9,12 +9,12 @@ helpviewer_keywords:
 - COleControlModule class [MFC]
 - control modules [MFC]
 ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
-ms.openlocfilehash: a2480407ddb9f937b0691f3e07103eb159fea8b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42239ff060d5e081f273ce9dd7d87d1dbbeca716
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556396"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302162"
 ---
 # <a name="colecontrolmodule-class"></a>COleControlModule sınıfı
 
@@ -48,8 +48,7 @@ Kullanma hakkında daha fazla bilgi için `COleControlModule` sınıfı [CWinApp
 
 **Başlık:** afxctl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek TESTHELP](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

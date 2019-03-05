@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: 8ea466abe153bd31ef15c41b277b57f90cd2b50b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5fd3a682aa649091712a09a9131081c06d29ca6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450940"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300628"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -647,8 +647,8 @@ void PressButton(int nButton);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ndüğme*<br/>
-Ndüğme: düğmesine basıldığında tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
+*nButton*<br/>
+Ndüğme: Düğmeye basıldığında tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
 
 - PSBTN_BACK geri düğmesini seçer.
 
@@ -828,7 +828,7 @@ Bir anahtar Özellik Sayfası Sihirbazı kullanıcı kullanarak ileri gider veya
 
 [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/cpp/cpropertysheet-class_15.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>

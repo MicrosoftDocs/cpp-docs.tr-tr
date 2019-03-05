@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Bir ActiveX Denetimine Stok Olaylar Ekleme'
+title: 'MFC ActiveX denetimleri: Bir ActiveX denetimine stok olaylar ekleme'
 ms.date: 11/04/2016
 f1_keywords:
 - EVENT__STOCK_ERROR
@@ -42,14 +42,14 @@ helpviewer_keywords:
 - EVENT_STOCK_READYSTATECHANGE event
 - EVENT_STOCK_KEYPRESS event
 ms.assetid: 3eeadc67-4b3d-4444-8caa-53054073988a
-ms.openlocfilehash: d224bfada94878fcec69b0675bd0faa03575ed27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f6f3c63f0436296791df428c704bce96eca3ec0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540016"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291125"
 ---
-# <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX Denetimleri: Bir ActiveX Denetimine Stok Olaylar Ekleme
+# <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX denetimleri: Bir ActiveX denetimine stok olaylar ekleme
 
 Stok olaylar farklı özel olayları otomatik olarak bir sınıf tarafından tetiklenen, [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` Ortak Eylemler kaynaklanan olayları tetiklemesine önceden tanımlanmış üye işlevleri içerir. Bazı ortak eylemler tarafından uygulanan `COleControl` tek - ve çift - clicks denetim, klavye olaylarını ve değişiklikleri fare düğmesi durumunda içerir. Olay eşleme girişi olayları her zaman EVENT_STOCK öneki tarafından öncelenen hisse senedi için.
 
@@ -61,16 +61,16 @@ Stok olaylar farklı özel olayları otomatik olarak bir sınıf tarafından tet
 
 |Olay|Tetikleme işlevi|Açıklamalar|
 |-----------|---------------------|--------------|
-|Şuna tıklayın|**void FireClick)**|Denetim her fareyi yakaladığında harekete **BUTTONUP** (sol, Orta veya sağ) ileti alındığında ve düğmesi denetimin üzerine serbest bırakıldığında. MouseUp olayları ve stok MouseDown önce bu olayı oluşur.<br /><br /> Olay eşleme girişi: **event_stock_clıck)**|
-|DblClick|**void FireDblClick)**|Tıkla benzer ancak harekete ne zaman bir **BUTTONDBLCLK** iletisi aldı.<br /><br /> Olay eşleme girişi: **event_stock_dblclıck)**|
+|Şuna tıklayın|**void FireClick)**|Denetim her fareyi yakaladığında harekete **BUTTONUP** (sol, Orta veya sağ) ileti alındığında ve düğmesi denetimin üzerine serbest bırakıldığında. MouseUp olayları ve stok MouseDown önce bu olayı oluşur.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_CLICK( )**|
+|DblClick|**void FireDblClick)**|Tıkla benzer ancak harekete ne zaman bir **BUTTONDBLCLK** iletisi aldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_DBLCLICK( )**|
 |Hata|**FireError void (SCODE***scode* **, LPCSTR** `lpszDescription` **, UINT**`nHelpID`**= 0)**|Bir yöntem çağrısı veya özellik erişim kapsamı dışında ActiveX denetimi içinde bir hata meydana geldiğinde tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_ERROREVENT)**|
-|KeyDown|**void FireKeyDown (kısa** `nChar` **, kısa**`nShiftState`**)**|Ne zaman tetiklenen bir `WM_SYSKEYDOWN` veya `WM_KEYDOWN` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYDOWN)**|
-|Tuş Basışı|**void FireKeyPress (kısa** <strong>\*</strong> `pnChar` **)**|Ne zaman tetiklenen bir `WM_CHAR` iletisi aldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYPRESS)**|
-|KeyUp|**void FireKeyUp (kısa** `nChar` **, kısa**`nShiftState`**)**|Ne zaman tetiklenen bir `WM_SYSKEYUP` veya `WM_KEYUP` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYUP)**|
-|MouseDown|**void FireMouseDown (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|Varsa harekete **BUTTONDOWN** (sol, Orta veya sağ) alındığında. Bu olay harekete hemen geçirilmeden önce fare yakalanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEDOWN)**|
+|KeyDown|**void FireKeyDown (kısa** `nChar` **, kısa**`nShiftState`**)**|Ne zaman tetiklenen bir `WM_SYSKEYDOWN` veya `WM_KEYDOWN` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYDOWN( )**|
+|Tuş Basışı|**void FireKeyPress (kısa** <strong>\*</strong> `pnChar` **)**|Ne zaman tetiklenen bir `WM_CHAR` iletisi aldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYPRESS( )**|
+|KeyUp|**void FireKeyUp (kısa** `nChar` **, kısa**`nShiftState`**)**|Ne zaman tetiklenen bir `WM_SYSKEYUP` veya `WM_KEYUP` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYUP( )**|
+|MouseDown|**void FireMouseDown (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|Varsa harekete **BUTTONDOWN** (sol, Orta veya sağ) alındığında. Bu olay harekete hemen geçirilmeden önce fare yakalanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEDOWN( )**|
 |MouseMove|**void FireMouseMove (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|WM_MOUSEMOVE iletisi alındığında tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEMOVE)**|
 |MouseUp|**void FireMouseUp (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|Varsa harekete **BUTTONUP** (sol, Orta veya sağ) alındığında. Bu olay harekete önce fare yakalama serbest bırakılır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEUP)**|
-|ReadyStateChange|**void FireReadyStateChange)**|Denetim geçişlerinden sonraki hazır duruma alınan veri miktarı nedeniyle başlatıldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_READYSTATECHANGE)**|
+|ReadyStateChange|**void FireReadyStateChange)**|Denetim geçişlerinden sonraki hazır duruma alınan veri miktarı nedeniyle başlatıldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_READYSTATECHANGE( )**|
 
 ##  <a name="_core_adding_a_stock_event_using_classwizard"></a> Kullanarak stok olayı ekleme olay Ekleme Sihirbazı
 
@@ -104,8 +104,8 @@ Olay Ekleme Sihirbazı'nı aşağıdaki kod satırını denetimin ekler. IDL dos
 
 Bu satır, tuş basışı olayını kendi standart dağıtım kimliği ile ilişkilendirir ve kapsayıcının tuş basışı olayını tahmin izin verir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

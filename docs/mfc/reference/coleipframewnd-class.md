@@ -12,12 +12,12 @@ helpviewer_keywords:
 - COleIPFrameWnd [MFC], OnCreateControlBars
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-ms.openlocfilehash: 78b846a6b17fb18f533139e9ac6444babd4baac5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 307bf991853264fcf03dfc5b22eed8e91a3e7aa8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498862"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301408"
 ---
 # <a name="coleipframewnd-class"></a>Coleıpframewnd sınıfı
 
@@ -130,7 +130,7 @@ virtual void RepositionFrame(
 
 Denetim çubukları kapsayıcı penceresinde düzenini farklıdır bir OLE dışı çerçeve penceresi tarafından gerçekleştirilen. OLE dışı çerçeve penceresi, Denetim çubuklarını ve belirtilen çerçeve pencere boyutu, bir çağrı olduğu gibi diğer nesnelerden konumlarını hesaplar [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). Denetim çubukları ve diğer nesneler için boşluk çıkarılır sonra kalan istemci alanıdır. A `COleIPFrameWnd` penceresi, diğer taraftan, araç çubukları bir verilen istemci alanını uygun olarak yerleştirir. Diğer bir deyişle, `CFrameWnd::RecalcLayout` çalışır "dışarıdan," ise `COleIPFrameWnd::RepositionFrame` çalışır "Inside out."
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMultiLock [MFC], Lock
 - CMultiLock [MFC], Unlock
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
-ms.openlocfilehash: 27c0eb396ac1384b691f51bf7089f6820157cf8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 107ed227c5515cbf2fcb08e957a64a4a17d8287a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613427"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288675"
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 
@@ -57,7 +57,7 @@ Kullanılacak bir `CMultiLock` nesne, ilk beklemesi istediğiniz eşitleme nesne
 
 `CMultiLock` çok sayıda iş parçacığı sahip olduğunda nesneleri faydalı `CEvent` nesneleri için yanıtlayabilir. Tümünü içeren bir dizi oluşturmak `CEvent` işaretçiler ve çağrı `Lock`. Bu olaylardan biri sinyal kadar beklenecek iş parçacığının neden olur.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CMultiLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Nasıl kullanılacağı hakkında daha fazla bilgi için `CMultiLock` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -188,7 +188,6 @@ Bu işlevi çağıran `CMultiLock`'s yıkıcı.
 
 İlk formu `Unlock` tarafından yönetilen nesne eşitleme kilidini açmak çalışır `CMultiLock`. İkinci form, `Unlock` kilidini açmak çalışır `CSemaphore` tarafından sahip olunan nesneler `CMultiLock`. Varsa `CMultiLock` herhangi bulunmaz kilitli `CSemaphore` işlevi nesnesini döndürür FALSE; Aksi takdirde, TRUE döndürür. *lCount* ve *lpPrevCount* parametrelerinin tam olarak aynıdır [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). İkinci form, `Unlock` nadiren multilock durumlar için geçerlidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

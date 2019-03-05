@@ -1,5 +1,5 @@
 ---
-title: CRichEditDoc sınıfı
+title: CRichEditDoc Class
 ms.date: 11/04/2016
 f1_keywords:
 - CRichEditDoc
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: 8e97b17a3620d75660a5ac2109bc440f8ad27b16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c2021128dcc06a76cf3b68c0ec49b72a5860046
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453468"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295142"
 ---
-# <a name="cricheditdoc-class"></a>CRichEditDoc sınıfı
+# <a name="cricheditdoc-class"></a>CRichEditDoc Class
 
 İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [Cricheditcntrıtem](../../mfc/reference/cricheditcntritem-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.
 
@@ -45,7 +45,7 @@ class CRichEditDoc : public COleServerDoc
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Serileştiriyorsanız](#m_brtf)|Akış g/ç biçimlendirme içerip içermeyeceğini belirtir.|
+|[CRichEditDoc::m_bRTF](#m_brtf)|Akış g/ç biçimlendirme içerip içermeyeceğini belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -136,7 +136,7 @@ virtual CRichEditView* GetView() const;
 
 Metin ve biçimlendirme bilgileri bulunan `CRichEditView` nesne. `CRichEditDoc` Nesne seri hale getirme için OLE öğeleri tutar. Bulunmamalıdır tek `CRichEditView` her `CRichEditDoc`.
 
-##  <a name="m_brtf"></a>  Serileştiriyorsanız
+##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF
 
 TRUE olduğunda belirten [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) ve [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) paragraf ve karakter biçimlendirme özelliklerine depolamanız gerekir.
 
@@ -144,7 +144,7 @@ TRUE olduğunda belirten [CRichEditCtrl::StreamIn](../../mfc/reference/crichedit
 BOOL m_bRTF;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
 [COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)<br/>

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - template-based collection classes [MFC]
 - simple list collection classes [MFC]
 ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
-ms.openlocfilehash: 8bd64e1c5efd1f80f43cb3460719326f30d5416c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40633c8b2b09d27e97443364ed3ce711ee217e18
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557865"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284664"
 ---
 # <a name="template-based-classes"></a>Şablona Dayalı Sınıflar
 
@@ -53,7 +53,7 @@ Basit koleksiyon şablonlarını kullanmak için ne tür veriler bu koleksiyonla
 
 ###  <a name="_core_simple_array_and_list_usage"></a> Basit dizi ve kullanımı Listele
 
-Liste sınıfları ve Basit dizi [CArray](../mfc/reference/carray-class.md) ve [CList](../mfc/reference/clist-class.md), iki parametre alır: *türü* ve `ARG_TYPE`. Bu sınıfların belirttiğiniz herhangi bir veri türü depolayabilirsiniz *türü* parametresi:
+Liste sınıfları ve Basit dizi [CArray](../mfc/reference/carray-class.md) ve [CList](../mfc/reference/clist-class.md), iki parametre alır: *TÜR* ve `ARG_TYPE`. Bu sınıfların belirttiğiniz herhangi bir veri türü depolayabilirsiniz *türü* parametresi:
 
 - Gibi temel bir C++ veri türleri **int**, **char**, ve **float**
 
@@ -71,7 +71,7 @@ Kolaylık ve verimlilik için kullanabileceğiniz *ARG_TYPE* parametresinin tür
 
 ###  <a name="_core_simple_map_usage"></a> Basit eşleme kullanımı
 
-Basit bir eşlem sınıfı, [CMap](../mfc/reference/cmap-class.md), dört parametre alır: *anahtarı*, *ARG_KEY*, *değer*, ve *ARG_VALUE*. Dizi ve liste sınıflar gibi herhangi bir veri türü eşleme sınıfları depolayabilirsiniz. , Diziler ve dizin ve bunlar depolamak verileri sıralayabilir, listeler, haritalar anahtarları ve değerleri ilişkilendirin: değer ilişkili anahtar belirterek bir eşlem içinde depolan bir değer erişim. *Anahtar* parametresi eşlemesinde depolanan verilere erişmek için kullanılan anahtarları veri türünü belirtir. Varsa türünü *anahtarı* yapısı veya sınıf *ARG_KEY* parametresi, genellikle belirtilen türe başvuru *anahtar*. *Değer* parametresi eşlemesinde depolanan öğelerin türünü belirtir. Varsa türünü *ARG_VALUE* yapısı veya sınıf *ARG_VALUE* parametresi, genellikle belirtilen türe başvuru *değer*. Örneğin:
+Basit bir eşlem sınıfı, [CMap](../mfc/reference/cmap-class.md), dört parametre alır: *ANAHTAR*, *ARG_KEY*, *değer*, ve *ARG_VALUE*. Dizi ve liste sınıflar gibi herhangi bir veri türü eşleme sınıfları depolayabilirsiniz. , Diziler ve dizin ve bunlar depolamak verileri sıralayabilir, listeler, haritalar anahtarları ve değerleri ilişkilendirin: Değerin ilişkili anahtar belirterek bir eşlem içinde depolan bir değer erişin. *Anahtar* parametresi eşlemesinde depolanan verilere erişmek için kullanılan anahtarları veri türünü belirtir. Varsa türünü *anahtarı* yapısı veya sınıf *ARG_KEY* parametresi, genellikle belirtilen türe başvuru *anahtar*. *Değer* parametresi eşlemesinde depolanan öğelerin türünü belirtir. Varsa türünü *ARG_VALUE* yapısı veya sınıf *ARG_VALUE* parametresi, genellikle belirtilen türe başvuru *değer*. Örneğin:
 
 [!code-cpp[NVC_MFCCollections#3](../mfc/codesnippet/cpp/template-based-classes_3.cpp)]
 
@@ -87,7 +87,7 @@ Yazılan işaretçi toplama şablonlarını kullanmak için koleksiyon bildiriml
 
 ###  <a name="_core_typed.2d.pointer_array_and_list_usage"></a> İşaretçi türü belirlenmiş dizi ve kullanımı Listele
 
-Liste sınıfları ve işaretçi türü belirlenmiş dizi [CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md) ve [CTypedPtrList](../mfc/reference/ctypedptrlist-class.md), iki parametre alır: *$base_class* ve *türü*. Bu sınıfların belirttiğiniz herhangi bir veri türü depolayabilirsiniz *türü* parametresi. İşaretçileri depolar sınıflarındaki koleksiyon sınıflarının birinden, türetilmiş; Bu temel sınıfta belirttiğiniz *$base_class*. Diziler için kullanın `CObArray` veya `CPtrArray`. Listeler için kullanın `CObList` veya `CPtrList`.
+Liste sınıfları ve işaretçi türü belirlenmiş dizi [CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md) ve [CTypedPtrList](../mfc/reference/ctypedptrlist-class.md), iki parametre alır: *$Base_class* ve *türü*. Bu sınıfların belirttiğiniz herhangi bir veri türü depolayabilirsiniz *türü* parametresi. İşaretçileri depolar sınıflarındaki koleksiyon sınıflarının birinden, türetilmiş; Bu temel sınıfta belirttiğiniz *$base_class*. Diziler için kullanın `CObArray` veya `CPtrArray`. Listeler için kullanın `CObList` veya `CPtrList`.
 
 Aslında, temel alan bir koleksiyon bildirdiğinizde söyleyin `CObList`, yeni bir sınıf yalnızca temel sınıfının üyelerini devralır, ancak bunu Ayrıca birkaç ek tür kullanımı uyumlu üye işlevler ve işleçler kapsülleyerek tür güvenliğini sağlamaya yardımcı bildirir temel sınıf üyelerinin çağrıları. Bu encapsulations tüm gerekli tür dönüştürme yönetin. Örneğin:
 
@@ -99,7 +99,7 @@ Aslında, temel alan bir koleksiyon bildirdiğinizde söyleyin `CObList`, yeni b
 
 ###  <a name="_core_typed.2d.pointer_map_usage"></a> Yazılan işaretçi eşleme kullanımı
 
-Yazılan işaretçi eşlem sınıfı [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md), üç parametre alır: *$base_class*, *anahtarı*, ve *değer*. *$Base_class* parametresi, yeni bir sınıf türetmek sınıf belirtir: `CMapPtrToWord`, `CMapPtrToPtr`, `CMapStringToPtr`, `CMapWordToPtr`, `CMapStringToOb`ve benzeri. *ANAHTAR* için benzer *anahtarı* içinde `CMap`: aramalar için kullanılan anahtar türünü belirtir. *DEĞER* için benzer *değer* içinde `CMap`: eşlem içinde depolan bir nesne türünü belirtir. Örneğin:
+Yazılan işaretçi eşlem sınıfı [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md), üç parametre alır: *$Base_class*, *anahtarı*, ve *değer*. *$Base_class* parametresi, yeni bir sınıf türetmek sınıf belirtir: `CMapPtrToWord`, `CMapPtrToPtr`, `CMapStringToPtr`, `CMapWordToPtr`, `CMapStringToOb`ve benzeri. *ANAHTAR* için benzer *anahtarı* içinde `CMap`: Bu aramalar için kullanılan anahtar türünü belirtir. *DEĞER* için benzer *değer* içinde `CMap`: Bu, bir eşlem içinde depolan bir nesne türünü belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCCollections#6](../mfc/codesnippet/cpp/template-based-classes_6.cpp)]
 
@@ -112,7 +112,6 @@ Temel bir harita ikinci örnektir `CMapStringToOb` — saklı işaretçileri eş
 
 Daha fazla bilgi için [tür kullanımı uyumlu koleksiyon yapma](../mfc/how-to-make-a-type-safe-collection.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Koleksiyonlar](../mfc/collections.md)
-

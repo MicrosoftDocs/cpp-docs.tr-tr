@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_map class
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-ms.openlocfilehash: 50868d020224e7bade9766f7307bfcc46ce4be47
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 43ad777b0dfb1285a82d662f37329c079410c78d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657597"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284352"
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map Sınıfı
 
@@ -98,7 +98,7 @@ Ayırma ve eşzamanlı sıralanmamış eşleme için bellek ayırmayı kaldırma
 |----------|-----------------|
 |[konumunda](#at)|Fazla Yüklendi. Bir öğe bulur bir `concurrent_unordered_map` belirtilen anahtar değere sahip... Bu yöntem eşzamanlı güvenlidir.|
 |[hash_function](#hash_function)|Depolanan karma işlevi nesnesini alır.|
-|[Ekle](#insert)|Fazla Yüklendi. Öğeler ekler `concurrent_unordered_map` nesne.|
+|[insert](#insert)|Fazla Yüklendi. Öğeler ekler `concurrent_unordered_map` nesne.|
 |[key_eq](#key_eq)|Depolanan eşitlik karşılaştırma işlevi nesnesini alır.|
 |[değiştirme](#swap)|İki içeriğini değiştirir `concurrent_unordered_map` nesneleri. Bu yöntem eşzamanlı güvenli değil.|
 |[unsafe_erase](#unsafe_erase)|Fazla Yüklendi. Öğeleri kaldırır `concurrent_unordered_map` belirtilen konumlarda. Bu yöntem eşzamanlı güvenli değil.|
@@ -779,8 +779,7 @@ size_type unsafe_max_bucket_count() const;
 
 Bu kapsayıcı demet sayısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Paralel Kapsayıcılar ve Nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 'Menüler ve Kaynaklar: Menü Birleştirme'
+title: 'Menüler ve kaynaklar: Menü birleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - status bars [MFC], OLE document applications
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-ms.openlocfilehash: 30663afae0bfd30b42f99daf95cb8ff35979ee50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e00464e59de5e20627fd2423c101c23629d7c4d2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438447"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300355"
 ---
-# <a name="menus-and-resources-menu-merging"></a>Menüler ve Kaynaklar: Menü Birleştirme
+# <a name="menus-and-resources-menu-merging"></a>Menüler ve kaynaklar: Menü birleştirme
 
 Bu makalede OLE belge uygulamaları ve düzgün şekilde yerinde etkinleştirme görsel düzenleme işlemek gerekli adımları ayrıntılı olarak açıklanmaktadır. Yerinde etkinleştirme (Bileşen) uygulamalarının kapsayıcı hem sunucusu için bir sınama oluşturur. Kullanıcı (kapsayıcı belge bağlamında) aynı çerçeve penceresi içinde kalır, ancak başka bir uygulama (sunucu) gerçekte çalışıyor. Bu, kapsayıcı hem de sunucu uygulamalarına kaynaklar arasında koordinasyon gereksinimini olabildiğince gerektirir.
 
@@ -105,12 +105,11 @@ Gömülü bir öğe yerinde etkinleştirildiğinde framework yerinde menü yükl
 
 Sunucu uygulamaları, yeni bir araç çubuğu oluşturma ve kendi bit eşlem ayrı bir dosyada depolar. Uygulama Sihirbazı tarafından oluşturulan uygulamalar, bu bit eşlem ITOOLBAR adlı bir dosyada depolar. BMP. Yeni araç çubuğu sunucunuzun öğesi yerinde etkinleştirilir ve, normal bir araç olarak aynı öğeleri içeriyor, ancak dosya ve pencere menü öğeleri temsil eden simgeler kaldırmanız kapsayıcı uygulamasının araç değiştirir.
 
-Bu araç çubuğu yüklü olduğu, `COleIPFrameWnd`-türetilmiş sınıf, sizin için Uygulama Sihirbazı tarafından oluşturuldu. Durum çubuğu kapsayıcı uygulama tarafından gerçekleştirilir. Yerinde çerçeve pencereleri uygulama hakkında daha fazla bilgi için bkz. [sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md).
+Bu araç çubuğu yüklü olduğu, `COleIPFrameWnd`-türetilmiş sınıf, sizin için Uygulama Sihirbazı tarafından oluşturuldu. Durum çubuğu kapsayıcı uygulama tarafından gerçekleştirilir. Yerinde çerçeve pencereleri uygulama hakkında daha fazla bilgi için bkz. [sunucuları: Sunucu uygulama](../mfc/servers-implementing-a-server.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Etkinleştirme](../mfc/activation-cpp.md)<br/>
 [Sunucular](../mfc/servers.md)<br/>
 [Kapsayıcılar](../mfc/containers.md)
-

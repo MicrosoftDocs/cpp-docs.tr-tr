@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma'
+title: 'Nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - schedule groups, using [Concurrency Runtime]
 - using schedule groups [Concurrency Runtime]
 ms.assetid: 73124194-fc3a-491e-a23f-fbd7b5a4455c
-ms.openlocfilehash: 1117e0d24aae023fbb4dec4fbb9721e6da2ad768
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99e0383fc8d16f3eeb6e43e59424ab0984ee5c14
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284365"
 ---
-# <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma
+# <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>Nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma
 
 Eşzamanlılık Çalışma zamanı içinde hangi görevlerin zamanlandığı sırasını belirleyici değildir. Ancak, görevleri çalışma sırasını etkilemek için zamanlama ilkelerini kullanabilirsiniz. Bu konu ile birlikte zamanlama grupları kullanma işlemi gösterilmektedir [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#policyelementkey) görevleri çalıştırarak sırasını etkilemek için Zamanlayıcı ilkesini.
 
@@ -108,8 +108,7 @@ Her iki ilkeyi aynı olayları dizisi üretir. Ancak, ilkeyi kullanan `EnhanceSc
 
 **zamanlama cl.exe/ehsc-protocol.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zamanlama Grupları](../../parallel/concrt/schedule-groups.md)<br/>
 [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
-

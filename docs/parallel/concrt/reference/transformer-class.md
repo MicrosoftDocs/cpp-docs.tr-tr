@@ -1,5 +1,5 @@
 ---
-title: transformer Sınıfı
+title: dönüştürücü Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - transformer
@@ -18,14 +18,14 @@ f1_keywords:
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-ms.openlocfilehash: cc35a4e2de2b29bb6d437dfcbf48ef361fefdfa3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c07017539bc0125e9e8c27e208480a50ccc7a719
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618289"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299185"
 ---
-# <a name="transformer-class"></a>transformer Sınıfı
+# <a name="transformer-class"></a>dönüştürücü Sınıfı
 
 A `transformer` ileti bloğu tek-hedef birden çok kaynak, sıralı `propagator_block` bir türden iletileri kabul edebilir ve sınırsız sayıda farklı türden iletileri depolayabilen özelliğine sahiptir.
 
@@ -313,7 +313,7 @@ Yok eder `transformer` ileti bloğu.
 ~transformer();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [call Sınıfı](call-class.md)

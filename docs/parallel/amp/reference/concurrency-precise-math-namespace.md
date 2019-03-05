@@ -133,12 +133,12 @@ f1_keywords:
 - AMP_MATH/Concurrency::trunc
 - AMP_MATH/Concurrency::truncf
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
-ms.openlocfilehash: 6d4f05595f1501fb55938d6875f21b9a9079d043
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc023d1cc27601b7da0a87aee7c3c1ac66479a7c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462341"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288336"
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math Ad Alanı
 
@@ -206,7 +206,7 @@ namespace precise_math;
 |[fdimf](concurrency-precise-math-namespace-functions.md#fdimf)|Bağımsız değişkenler arasındaki pozitif farkı belirler|
 |[Kat](concurrency-precise-math-namespace-functions.md#floor)|Fazla Yüklendi. Bağımsız değişkenin tabanını hesaplar.|
 |[floorf](concurrency-precise-math-namespace-functions.md#floorf)|Bağımsız değişkenin tabanını hesaplar.|
-|[FMA](concurrency-precise-math-namespace-functions.md#fma)|Fazla Yüklendi. İşlem (_X \* _Y) + _Z, Üçlü tek bir işlem olarak yuvarlanır|
+|[fma](concurrency-precise-math-namespace-functions.md#fma)|Fazla Yüklendi. İşlem (_X \* _Y) + _Z, Üçlü tek bir işlem olarak yuvarlanır|
 |[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|İşlem (_X \* _Y) + _Z, Üçlü tek bir işlem olarak yuvarlanır|
 |[fmax](concurrency-precise-math-namespace-functions.md#fmax)|Fazla Yüklendi. Bağımsız değişkenlerin en büyük sayısal değerini belirler|
 |[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|Bağımsız değişkenlerin en büyük sayısal değerini belirler|
@@ -294,8 +294,8 @@ namespace precise_math;
 
 **Başlık:** amp_math.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

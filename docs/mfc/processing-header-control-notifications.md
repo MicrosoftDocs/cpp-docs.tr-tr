@@ -8,12 +8,12 @@ helpviewer_keywords:
 - header controls [MFC], processing notifications
 - header control notifications
 ms.assetid: e6c6af7c-d458-4d33-85aa-48014ccde5f6
-ms.openlocfilehash: 42113b43249b87a351047ab451cb1798aec1f022
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 3c5d147741123f97a53b18a854db9204738d0a2f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693353"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287693"
 ---
 # <a name="processing-header-control-notifications"></a>Üstbilgi Denetimi Bildirimlerini İşleme
 
@@ -21,8 +21,7 @@ Görünüm veya iletişim kutusu sınıfında oluşturmak için Özellikler penc
 
 Üstbilgi denetimiyle ilişkili bildirim iletilerini listelenen [üstbilgi denetim başvurusu](/windows/desktop/controls/header-control-reference) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

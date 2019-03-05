@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma'
+title: 'ActiveX denetim kapsayıcıları: Bir iletişim kutusu dışındaki kapsayıcılarda denetimleri kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Create method [MFC], ActiveX controls
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], non-dialog containers
 - ActiveX control containers [MFC], inserting controls
 ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
-ms.openlocfilehash: b31581b77743104a92236336c4db380f1693ea55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70a67a6952d5361177b89e3ba514d7036b5799b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284248"
 ---
-# <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma
+# <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX denetim kapsayıcıları: Bir iletişim kutusu dışındaki kapsayıcılarda denetimleri kullanma
 
 Bazı gibi bir SDI uygulamaları veya MDI uygulaması, bir uygulama penceresinde bir denetim eklemek isteyeceksiniz. **Oluştur** Visual C++ tarafından eklenen sarmalayıcı sınıfının üye işlevinde bir örneğini oluşturabilirsiniz denetimi dinamik olarak bir iletişim kutusu gerek kalmadan.
 
@@ -61,7 +61,6 @@ Bu özelliği uygulamak dört adımlık bir işlemdir.
 
 1. Projeyi yeniden derleyin. Uygulamanın görünümü oluşturulduğunda Dai denetimi dinamik olarak oluşturulur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
-

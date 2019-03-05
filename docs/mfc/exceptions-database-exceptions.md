@@ -11,12 +11,12 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: 17a52787462301e839cb2e960fad8b480380ba49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f7f3bff9f28968361ecfa7374a235a727443004
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492809"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285561"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 
@@ -74,7 +74,6 @@ Tarafından döndürülen hata bilgileri hakkında ayrıntılı bilgi için bir 
 
 ODBC ile çalışırken, Microsoft Jet (.mdb) veritabanlarında ve çoğu durumda çalışırken, yalnızca bir hata nesnesi olur. Nadir durumlarda ODBC veri kaynağını kullanan ve birden çok hata yoksa, DAO'ın hatalar koleksiyonuna tarafından döndürülen hataları sayısına bağlı döngü [CDaoException::GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount). Döngü, her zaman çağrı [CDaoException::GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) puanı almak için `m_pErrorInfo` veri üyesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

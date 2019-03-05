@@ -24,18 +24,18 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: 026c7392c3eb93b37a712059939683e3e0ab852c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4aaede3eb2d5c922c196e2bdfbbe533c4e65e47
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629002"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295038"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 
 Modsuz sekme iletişim kutusu ( [CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)) araç çubuklarını, menüleri, klavye kısayolları, kullanıcı tanımlı Araçlar ve uygulamada görsel stil özelleştirmek için kullanıcı sağlar. Genellikle, bu iletişim kutusunu erişen seçerek kullanıcı **Özelleştir** gelen **Araçları** menüsü.
 
-**Özelleştir** iletişim kutusunda altı sekme bulunur: **komutları**, **araç çubukları**, **Araçları**, **klavye**,  **Menü**, ve **seçenekleri**.
+**Özelleştir** iletişim kutusunda altı sekme bulunur: **Komutları**, **araç çubukları**, **Araçları**, **klavye**, **menü**, ve **seçenekleri**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -750,7 +750,7 @@ Yöntem başarılı olursa TRUE; Aksi durumda FALSE.
 
 Şu anda kullanıcı kategorisi ayarı framework tarafından kullanılmaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

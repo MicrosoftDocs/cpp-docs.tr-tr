@@ -1,5 +1,5 @@
 ---
-title: 'Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma'
+title: 'Otomasyon istemcileri: Tür kitaplıklarını kullanma'
 ms.date: 11/04/2016
 f1_keywords:
 - MkTypLib
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - MkTypLib tool
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-ms.openlocfilehash: bd11bd8f2666bb2c211f7abe93d473f466963bd6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 32179f3913b52ca46f9ea7314b9957f4f4970713
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437056"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282948"
 ---
-# <a name="automation-clients-using-type-libraries"></a>Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma
+# <a name="automation-clients-using-type-libraries"></a>Otomasyon istemcileri: Tür kitaplıklarını kullanma
 
 Otomasyon istemcileri istemcileridir sunucularının nesneleri değiştirmek için sunucu nesneleri özellikler ve yöntemler hakkında bilgi olması gerekir. Özellikleri, veri türlerine sahip; yöntemler, genellikle dönüş değerleri ve parametreleri kabul eder. İstemci, sunucu nesne türü için statik olarak bağlamak için bunların hepsi veri türleri hakkında daha fazla bilgi gerektirir.
 
@@ -58,7 +58,6 @@ Projeyi oluşturduğunuzda Otomasyon eklemeyi seçtiyseniz visual C++, sizin iç
 
    Sihirbazı'nı, ardından belirtilen sınıf ve dosya adlarını kullanarak, gönderme sınıflar için kod yazacaksınız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Otomasyon İstemcileri](../mfc/automation-clients.md)
-

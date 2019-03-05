@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - _ATL_MIN_CRT macro
 ms.assetid: 49b485f7-9487-49e4-b12a-0f710b620e2b
-ms.openlocfilehash: b4c91b7fe5182c8457d16de57792ba1b5ab7b3be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc322c704374374d6e7c075dbf466fc2b038b0ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496997"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283221"
 ---
 # <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntemi
 
@@ -22,9 +22,8 @@ Proje, dinamik veya statik olarak CRT ile bağlayabilirsiniz. Aşağıdaki tablo
 
 Konu [CRT projenize ATL içinde bağlama](../atl/linking-to-the-crt-in-your-atl-project.md) seçin CRT'ye bağlanmak bir şekilde anlatılmaktadır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)<br/>
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
-

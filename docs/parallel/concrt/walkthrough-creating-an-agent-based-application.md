@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek Yol: Aracı Temelli Uygulama Oluşturma'
+title: 'İzlenecek yol: Aracı tabanlı uygulama oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 1d5e7ed085481b714423760cebf2984084626645
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d55c9879a3dd90bb4a40b61a3bf958dbe960bc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509350"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290098"
 ---
-# <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
+# <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek yol: Aracı tabanlı uygulama oluşturma
 
 Bu konu, temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını açıklar. Bu kılavuzda, bir metin dosyasından verileri okur, zaman uyumsuz olarak bir aracı oluşturabilirsiniz. Uygulama, bu dosyanın içeriğini toplamını hesaplamak için Adler 32 sağlama algoritması kullanır.
 
@@ -180,13 +180,12 @@ Her zaman çağrı [concurrency::agent:: Bitti](reference/agent-class.md#done) a
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Aracı tabanlı bir uygulamaya başka bir örnek için bkz [izlenecek yol: kilitlenmeyi önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
+Aracı tabanlı bir uygulamaya başka bir örnek için bkz [izlenecek yol: Kilitlenmeyi önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)<br/>
 [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)<br/>
-[İzlenecek Yol: Kilitlenmeyi Önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
-
+[İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)

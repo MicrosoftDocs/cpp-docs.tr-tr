@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: f1a1e7fe00218efe7514fe59ea78ea30b33b878f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 3cf1c773c96a2bf1bc6c67420d72052e68ee2a53
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329572"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297599"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 
@@ -365,11 +365,10 @@ Standart bir HRESULT değerini.
 
 Dış `IDocHostUIHandlerDispatch` arabirimi ana bilgisayarın site için sorgu denetimler tarafından kullanılır `IDocHostUIHandlerDispatch` arabirimi. WebBrowser denetimi bunu yapan bir denetimdir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATLCON örnek](../../visual-cpp-samples.md)<br/>
 [CWindow Sınıfı](../../atl/reference/cwindow-class.md)<br/>
 [Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Denetim kapsamı SSS](../../atl/atl-control-containment-faq.md)
-

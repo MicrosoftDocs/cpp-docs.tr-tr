@@ -8,12 +8,12 @@ helpviewer_keywords:
 - dialog bars
 - dialog bars [MFC], about dialog bars
 ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
-ms.openlocfilehash: 800cc208df7299cf440508c2705b0b0ddb9ae665
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: b4f8975cb67f754778280f84ece98de2ef949c1a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175359"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297768"
 ---
 # <a name="dialog-bars"></a>İletişim Kutusu Çubukları
 
@@ -30,8 +30,7 @@ Bir iletişim çubuğu
 
 Kendi iletişim sınıflarından normal olsa `CDialog`, genellikle bir iletişim çubuğu için kendi sınıfınızı türetilen değil. İletişim kutusu çubukları olan ana pencere ve herhangi bir iletişim çubuğu denetim bildirimi iletileri için uzantıları gibi **BN_CLICKED** veya **EN_CHANGE**, çubuk, ana pencereyi iletişim kutusunun üst gönderilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
 [Örnek](../visual-cpp-samples.md)
-

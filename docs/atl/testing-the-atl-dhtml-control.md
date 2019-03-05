@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DHTML controls
 - DHTML controls, testing
 ms.assetid: 0e4b4358-80ce-4505-8b06-ef4f30b1d1f0
-ms.openlocfilehash: e808a21fe890db6e711bc66adf02b3e71f801dba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 510b24b383f6ae0489a1c54d701c632159140c2a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522531"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289955"
 ---
 # <a name="testing-the-atl-dhtml-control"></a>ATL DHTML denetimini test etme
 
@@ -36,6 +36,6 @@ Projeniz oluşturulduktan sonra oluşturun ve örnek denetim test edebilirsiniz.
 
 Ardından, deneyin [DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)

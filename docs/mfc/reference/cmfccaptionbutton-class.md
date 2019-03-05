@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCCaptionButton [MFC], OnDraw
 - CMFCCaptionButton [MFC], SetMiniFrameButton
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-ms.openlocfilehash: 4fa9d6a57cb2ee70e9da7853954241955d724a5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2020f6cb2f0feec28996f69791899c648600b600
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604310"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301057"
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton sınıfı
 
@@ -287,7 +287,7 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 *bInternet*<br/>
 [in] Mini başlık çubuğu yüksekliği için TRUE; Varsayılan başlık çubuğu yüksekliği için FALSE.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

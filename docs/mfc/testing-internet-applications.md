@@ -8,12 +8,12 @@ helpviewer_keywords:
 - debugging [MFC], Web applications
 - Internet debugging and testing
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
-ms.openlocfilehash: 934d336f8c7544bafa412a7b52404a657e8dc9ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e582fd006a49e672fb21c86b054b8d35f489698f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439370"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290949"
 ---
 # <a name="testing-internet-applications"></a>Internet Uygulamalarını Test Etme
 
@@ -23,8 +23,7 @@ Gerçek koşullar altında test etmek istersiniz: düşük hızlı seri satırla
 
 Internet programlamayı zorlukları görünürlüğü biridir. Sitenizde çok sayıda erişim, sunucuyu yavaşlatabilir. Sunucunuzu düzgün bir şekilde kullanmanız gerekir. Uygulamanız (örneğin, veri bozulması kayıt defterine yazarken veya istemcide tanımlama bilgilerini yazılırken) başarısız olursa, bir kullanıcının bilgisayarına zararlı olabilecek herhangi bir şey önlemek isteyebilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
-

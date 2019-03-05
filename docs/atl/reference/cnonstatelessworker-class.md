@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CNonStatelessWorker class
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
-ms.openlocfilehash: 7aaae3728113cfd91c0655d2eac445cdd4b34246
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: abfd3e585c843fcc4ed4ad273c8ed217eaaccb7d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619637"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283163"
 ---
 # <a name="cnonstatelessworker-class"></a>CNonStatelessWorker sınıfı
 
@@ -118,7 +118,7 @@ void Terminate(void* /* pvParam */) throw();
 
 Bu sınıfın tüm temizleme işlemlerini yapmaz `Terminate`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CThreadPool Sınıfı](../../atl/reference/cthreadpool-class.md)<br/>
 [Çalışan Modeli](../../atl/reference/worker-archetype.md)<br/>

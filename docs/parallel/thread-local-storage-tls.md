@@ -1,5 +1,5 @@
 ---
-title: İş Parçacığında Yerel Depolama (TLS)
+title: İş Parçacığı Yerel Depolaması (TLS)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multithreading [C++], Thread Local Storage
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: 02c699ec64fe03a1f892fc3c7e8bf9f6b9c05dfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5a75f7964b0291a980b22d36e7ce6a0a87d3dc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507594"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293465"
 ---
-# <a name="thread-local-storage-tls"></a>İş Parçacığında Yerel Depolama (TLS)
+# <a name="thread-local-storage-tls"></a>İş Parçacığı Yerel Depolaması (TLS)
 
 İş parçacığı yerel depolaması (TLS) tarafından verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığının iş parçacığına özgü verileri depolamak konumlar ayırabilirsiniz yöntemidir. Dinamik olarak bağlama (çalışma zamanı) iş parçacığına özgü verileri TLS API yoluyla desteklenir ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 ve Visual C++ derleyicisi artık statik olarak bağlı (yükleme zamanı) iş parçacığı başına veri mevcut API uygulamasına ek olarak destekler.
 
 ##  <a name="_core_compiler_implementation_for_tls"></a> TLS derleyici uygulaması
 
-**C ++ 11:** `thread_local` depolama sınıfı tanımlayıcısı olan nesneler için iş parçacığı-yerel depolamayı belirtin ve sınıf üyeleri için önerilen yol. Daha fazla bilgi için [depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).
+**C ++ 11:**  `thread_local` Depolama sınıfı tanımlayıcısı olan nesneler için iş parçacığı-yerel depolamayı belirtin ve sınıf üyeleri için önerilen yol. Daha fazla bilgi için [depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).
 
 Visual C++, ayrıca bir Microsoft'a özel öznitelik sağlar [iş parçacığı](../cpp/thread.md), genişletilmiş depolama sınıfı değiştiricisi olarak. Kullanım **__declspec** bildirmek için anahtar sözcüğü bir **iş parçacığı** değişkeni. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bir değer ile başlatır:
 
@@ -106,6 +106,6 @@ Aşağıdaki yönergeler, statik olarak bildirme iş parçacığı yerel nesnele
 
 - Önce Windows Vista, Windows işletim sistemlerinde `__declspec`(iş parçacığı), bazı sınırlamalar vardır. Bir DLL herhangi bir veri veya nesne olarak bildirirse `__declspec`(iş parçacığı) sebep olabilir koruma hatası dinamik olarak yüklü. DLL ile yüklendikten sonra [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), her kod başvurduğunda sistem hatasına neden olur `__declspec`(iş parçacığı) veri. Çalışma zamanında genel değişken alan bir iş parçacığı için ayrıldığından, bu alanı boyutu hesaplanması uygulama gereksinimlerini gereksinimlerinin ve statik olarak bağlı DLL'lerin temel alır. Kullanırken `LoadLibrary`, iş parçacığı yerel değişkenleri izin vermek için bu alanı genişletilemez `__declspec`(iş parçacığı). TLS API'leri gibi kullanın [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), DLL'nin yüklenmesine, TLS ayırmak için bir DLL dosyanız içinde `LoadLibrary`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

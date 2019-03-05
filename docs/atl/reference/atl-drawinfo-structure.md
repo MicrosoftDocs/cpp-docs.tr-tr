@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-ms.openlocfilehash: 3e332213ad8b2697445b13aded6bef605dab32de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70329d3b2c18c8cd8e94854f40ff971c0b39a8f4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442633"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301824"
 ---
 # <a name="atldrawinfo-structure"></a>Atl_drawınfo yapısı
 
@@ -90,7 +90,7 @@ Bu yapı, hedef cihaz için bir nesnenin görünümü işlemek için kullanılan
 
 **Başlık:** atlctl.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)<br/>
 [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>

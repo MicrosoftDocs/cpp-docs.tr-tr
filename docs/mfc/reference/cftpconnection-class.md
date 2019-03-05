@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-ms.openlocfilehash: 71e5c8629a1aa1c489cc51224f9d008c4cdd3397
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12ef4de16279c5c2033a95df5928a6dfb7a2a652
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504253"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295129"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 
@@ -535,7 +535,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa
 
 Kullanım [GetCurrentDirectory](#getcurrentdirectory) bir FTP sunucusunun geçerli çalışma dizini belirlemek için. Uzak sistem kök dizine bağlandı varsaymayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CInternetConnection Sınıfı](../../mfc/reference/cinternetconnection-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

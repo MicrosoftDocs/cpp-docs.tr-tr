@@ -7,12 +7,12 @@ helpviewer_keywords:
 - threading [MFC], hot keys in CHotKeyCtrl
 - access keys [MFC], hot keys
 ms.assetid: b6021274-1498-483f-bcbf-ba5723547cc8
-ms.openlocfilehash: 68c50ec5f29dab271f9af9abc50eb72ec15157e7
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: a54aa878b0160132157879127f8335c951e91785
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893333"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290995"
 ---
 # <a name="thread-specific-hot-keys"></a>İş Parçacığına Özgü Sık Kullanılan Tuşlar
 
@@ -20,8 +20,7 @@ Bir uygulama bir iş parçacığına özgü sık kullanılan tuş ayarlar ([CHot
 
 Kaydırma durumu bayrakları çağrısında kullanılan Not `RegisterHotKey` olanlar tarafından döndürülen aynı değildir [GetHotKey](../mfc/reference/chotkeyctrl-class.md#gethotkey) ; üye işlevini çağırmadan önce bu bayraklar çevirmek zorunda kalırsınız `RegisterHotKey`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CHotKeyCtrl Kullanma](../mfc/using-chotkeyctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

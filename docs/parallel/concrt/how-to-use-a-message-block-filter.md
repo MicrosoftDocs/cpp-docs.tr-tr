@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: İleti Bloğu Filtresini Kullanma'
+title: 'Nasıl yapılır: Bir ileti bloğu filtresini kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message-block filters, using [Concurrency Runtime]
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-ms.openlocfilehash: 512dda6503d5980dbdcc20a55ca0ee836d4d08e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1bfa11953d27dc7e013e715b3f58111f124caeaf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660141"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284300"
 ---
-# <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
+# <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: Bir ileti bloğu filtresini kullanma
 
 Bu belge, kabul etme veya reddetme söz konusu iletinin yükü boyutuna göre bir iletiyi için bir zaman uyumsuz ileti bloğu etkinleştirmek için bir filtre işlevi nasıl yapılacağı açıklanır.
 
@@ -20,7 +20,7 @@ Oluşturduğunuzda, bir ileti bloğu nesnesi gibi bir [concurrency::unbounded_bu
 
 Filtre işlevleri, bunlar için form ileti blokları bağlanmanıza imkan sağlamak için önemlidir *veri akışı ağları*. Bir veri akışı ağında, yalnızca belirli ölçütlere uyan iletileri işleyerek, veri akışını ileti blokları denetler. Bu veri akışını gibi koşullu deyimleri, döngüler, Denetim yapıları kullanarak burada düzenlenen denetim akışı modeli, karşılaştırma vb. kullanın.
 
-Bu belge, bir ileti filtresi kullanmak nasıl basit bir örneği sağlar. İleti bloklarına bağlanma ileti filtreleri ve veri akışı modelini kullanan diğer örnekler için [izlenecek yol: bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) ve [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md) .
+Bu belge, bir ileti filtresi kullanmak nasıl basit bir örneği sağlar. İleti bloklarına bağlanma ileti filtreleri ve veri akışı modelini kullanan diğer örnekler için [izlenecek yol: Bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) ve [izlenecek yol: Görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 ## <a name="example"></a>Örnek
 
@@ -50,7 +50,7 @@ Aşağıdaki kod, tam bir örnek gösterir. Örnek her ikisi de çağırır `cou
 
 Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `primes-filter.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc primes filter.cpp**
+**cl.exe /EHsc primes-filter.cpp**
 
 ## <a name="robust-programming"></a>Güçlü Programlama
 
@@ -63,9 +63,9 @@ bool (T const &)
 
 Gereksiz verilerin kopyalanmasını ortadan kaldırmak için değer tarafından gönderilen bir toplam değer türüne sahip olduğunda ikinci formu kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[İzlenecek Yol: Veri Akışı Aracısı Oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>
+[İzlenecek yol: Veri Akış Aracısı Oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>
 [İzlenecek yol: Görüntü İşleme Ağı Oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [transformer Sınıfı](../../parallel/concrt/reference/transformer-class.md)

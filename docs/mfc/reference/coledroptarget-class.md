@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleDropTarget [MFC], Register
 - COleDropTarget [MFC], Revoke
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
-ms.openlocfilehash: f4294bbbf9563b55f2047f297eac1a33ca55141f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 127245385ebd89e51a1cc77d1efaa16729d73fe7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502901"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300134"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
 
@@ -115,7 +115,7 @@ virtual DROPEFFECT OnDragEnter(
 Bırakılabilir verileri içeren veri nesnesi işaret eder.
 
 *dwKeyState*<br/>
-Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 *Noktası*<br/>
 İstemci koordinatları imleç geçerli konumunu içerir.
@@ -180,7 +180,7 @@ virtual DROPEFFECT OnDragOver(
 Bırakılmasına verileri içeren veri nesneyi işaret eder.
 
 *dwKeyState*<br/>
-Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 *Noktası*<br/>
 İstemci koordinatları imleç geçerli konumunu içerir.
@@ -226,7 +226,7 @@ virtual DROPEFFECT OnDragScroll(
 İmleç o sırada üzerinde olduğu penceresi işaret eder.
 
 *dwKeyState*<br/>
-Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 *Noktası*<br/>
 İmleç, piksel cinsinden ekranına göre konumunu içerir.
@@ -384,7 +384,7 @@ Bu işlev otomatik olarak çağrılır [OnDestroy](../../mfc/reference/cwnd-clas
 
 Daha fazla bilgi için [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revokedragdrop) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>

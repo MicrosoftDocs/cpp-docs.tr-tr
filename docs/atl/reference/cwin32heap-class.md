@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWin32Heap class
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
-ms.openlocfilehash: 8ab0d7b8a0eda44adc900884ef5337b22e621806
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35c12a58adc846e0db6d7ee23f19984acbcfa861
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508322"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297261"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap sınıfı
 
@@ -267,7 +267,7 @@ Yeni ayrılan bellek bloğu için bir işaretçi döndürür.
 
 Varsa *p* NULL ise bellek bloğu henüz ayrılmadı olduğunu kabul edilir ve [CWin32Heap::Allocate](#allocate) bir bağımsız değişkenle çağrıldığında *nBytes*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [IAtlMemMgr Sınıfı](../../atl/reference/iatlmemmgr-class.md)<br/>

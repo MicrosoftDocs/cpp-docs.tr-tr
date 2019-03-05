@@ -1,5 +1,5 @@
 ---
-title: CMFCPropertyGridCtrl sınıfı
+title: CMFCPropertyGridCtrl Class
 ms.date: 11/19/2018
 f1_keywords:
 - CMFCPropertyGridCtrl
@@ -150,14 +150,14 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: 8fe22924039cc0e2547df2cc07b0c4387ad908bd
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: f194879cf4a1388fc156fa4e92f4f9bea5056191
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177062"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296013"
 ---
-# <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
+# <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl Class
 
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
 
@@ -1639,7 +1639,7 @@ Her zaman TRUE.
 
 Bu yöntemi geçersiz kılarsanız, belirtilen özellik veriler geçerliyse TRUE döndürür. Aksi takdirde, bu durumda framework özelliği güncelleştirmez yanlış döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

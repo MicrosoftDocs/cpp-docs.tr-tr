@@ -10,12 +10,12 @@ helpviewer_keywords:
 - OLE server applications [MFC], server types
 - server applications [MFC]
 ms.assetid: e45172e8-eae3-400a-8139-0fa009a42fdc
-ms.openlocfilehash: d1e0a8ca85055c289d1ef8e1c36fcd35eab61c91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b1eb0df439bcfde3aa295f23a90291e865df3a9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526510"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290813"
 ---
 # <a name="servers"></a>Sunucular
 
@@ -43,17 +43,17 @@ Sunucu uygulamasının OLE sistem DLL'lerini başka bir kapsayıcı hizmetlerini
 
 Sunucuları hakkında daha fazla bilgi için bkz:
 
-- [Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)
+- [Sunucular: Sunucu uygulama](../mfc/servers-implementing-a-server.md)
 
-- [Sunucular: Sunucu Belgeleri Uygulama](../mfc/servers-implementing-server-documents.md)
+- [Sunucular: Sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md)
 
-- [Sunucular: Yerinde Çerçeve Pencereleri Uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
+- [Sunucular: Yerinde çerçeve Windows uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
 
-- [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
+- [Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)
 
-- [Sunucular: Kullanıcı Arabirimi Sorunları](../mfc/servers-user-interface-issues.md)
+- [Sunucular: Kullanıcı arabirimi sorunları](../mfc/servers-user-interface-issues.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Kapsayıcılar](../mfc/containers.md)<br/>
@@ -61,4 +61,3 @@ Sunucuları hakkında daha fazla bilgi için bkz:
 [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Kayıt](../mfc/registration.md)<br/>
 [Otomasyon Sunucuları](../mfc/automation-servers.md)
-

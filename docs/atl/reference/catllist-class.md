@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: 9e657bbf375a8babf1c03cc7254310956131d62b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: faed99197eb14da8ea095bef81d0d1a9845b18ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449380"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285509"
 ---
 # <a name="catllist-class"></a>CAtlList sınıfı
 
@@ -796,7 +796,7 @@ Belirtilen iki konumlarda öğeleri değiştirir. Hata ayıklama derlemelerinde,
 
 [!code-cpp[NVC_ATL_Utilities#31](../../atl/codesnippet/cpp/catllist-class_19.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CList Sınıfı](../../mfc/reference/clist-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

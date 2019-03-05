@@ -14,12 +14,12 @@ helpviewer_keywords:
 - frame window classes [MFC], created by application wizards
 - CMainFrame class [MFC]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
-ms.openlocfilehash: 581ceb25e675da6506d06bca3798fb22ca8fd389
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0610ae901b817a1c8f7707d9ba87c15d634e134
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629261"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298067"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
 
@@ -33,8 +33,7 @@ Bir araç desteği seçerseniz, sınıf türünün üye değişkenleri de vardı
 
 Bu çerçeve penceresi sınıfları oluşturulduğu şekilde çalışır ancak bunların işlevselliğini geliştirmek için üye değişkenleri ve üye işlevleri eklemeniz gerekir. Diğer Windows iletilerini işleme pencere sınıflarınızı olmasını isteyebilirsiniz. Daha fazla bilgi için [penceresinde oluşturulan MFC tarafından stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çerçeve Penceresi Sınıfları](../mfc/frame-window-classes.md)<br/>
 [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)
-

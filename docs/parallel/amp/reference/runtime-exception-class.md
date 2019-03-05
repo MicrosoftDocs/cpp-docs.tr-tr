@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - runtime_exception class
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-ms.openlocfilehash: 627fc6788dd359779bf07da3da1901be4c3aeafd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5260d2f1d2e5a6a6498d501599037a90bc7bc9a0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630691"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289669"
 ---
 # <a name="runtimeexception-class"></a>runtime_exception Sınıfı
 
@@ -57,7 +57,7 @@ class runtime_exception : public std::exception;
 
 **Başlık:** amprt.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
 ## <a name="runtime_exception__ctor"></a>  runtime_exception Oluşturucusu
 
@@ -134,6 +134,6 @@ runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 
 Bu başvuru `runtime_exception` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CFontHolder [MFC], SetFont
 - CFontHolder [MFC], m_pFont
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
-ms.openlocfilehash: 24a33aafa279f47bcfabd1ac3f3ee8d4abd4c731
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 623ce5da46716e3f9a562862fc0375fb8704bb21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659651"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297885"
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
 
@@ -74,7 +74,7 @@ class CFontHolder
 
 `CFontHolder` bir temel sınıfa sahip değil.
 
-Bu sınıf, özel yazı tipi özellikleri denetlemek için uygulamak için kullanın. Tür özellikleri oluşturma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: yazı tiplerini kullanarak](../../mfc/mfc-activex-controls-using-fonts.md).
+Bu sınıf, özel yazı tipi özellikleri denetlemek için uygulamak için kullanın. Tür özellikleri oluşturma hakkında daha fazla bilgi için bkz [ActiveX denetimleri: Yazı tiplerini kullanma](../../mfc/mfc-activex-controls-using-fonts.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -264,7 +264,7 @@ void SetFont(LPFONT pNewFont);
 *pNewFont*<br/>
 İşaretçi yeni `IFont` arabirimi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CPropExchange Sınıfı](../../mfc/reference/cpropexchange-class.md)

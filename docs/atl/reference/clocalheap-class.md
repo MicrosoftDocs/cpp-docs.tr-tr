@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CLocalHeap class
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
-ms.openlocfilehash: 7f4fa6b6035b9f0dda35a8e989192505ccf126d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 53288bea8a50f62437eab4dd81d5d816abf78f44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515472"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283091"
 ---
 # <a name="clocalheap-class"></a>CLocalHeap sınıfı
 
@@ -150,7 +150,7 @@ Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
 
 Kullanılarak uygulanan [LocalReAlloc](/windows/desktop/api/winbase/nf-winbase-localrealloc).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)<br/>

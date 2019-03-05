@@ -1,5 +1,5 @@
 ---
-title: 'Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama'
+title: 'Sürükle ve bırak: Bir bırakma kaynağı uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE drag and drop [MFC], initiating drag operations
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - drag and drop [MFC], initiating drag operations
 - drag and drop [MFC], drop source
 ms.assetid: 0ed2fda0-63fa-4b1e-b398-f1f142f40035
-ms.openlocfilehash: ac925ac83b5ef019e3140dcc93034ccdf221ed7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cceed8517c7b63588c7b1b90e3306d90f0921b78
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586738"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300758"
 ---
-# <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama
+# <a name="drag-and-drop-implementing-a-drop-source"></a>Sürükle ve bırak: Bir bırakma kaynağı uygulama
 
 Bu makalede, bir Sürükle ve bırak işlemi verilerini sağlamak için uygulamanızı açıklanmaktadır.
 
 Bir bırakma kaynağı uygulaması oldukça basittir. İlk adım, hangi olayların bir sürükleme işlemi başlamadan belirlemektir. Kullanıcı arabirimi yönergelerine tanımlayan bir sürükleme işlemi başına veri seçimi önerilen ve **WM_LBUTTONDOWN** içinde seçili veri noktasına oluşan olay. MFC OLE örnekleri [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md) aşağıdaki yönergeleri izleyin.
 
-Uygulamanızı bir kapsayıcı, seçilen veri bağlantılı veya katıştırılmış nesne türü ise `COleClientItem`, arama, `DoDragDrop` üye işlevi. Aksi takdirde, oluşturun bir `COleDataSource` nesne, seçimi başlatın ve veri kaynağı nesnesinin çağrı `DoDragDrop` üye işlevi. Uygulamanız bir sunucu ise kullanın `COleServerItem::DoDragDrop`. Standart sürükle-bırak davranışı özelleştirme hakkında daha fazla bilgi için bkz [sürükle ve bırak: özelleştirme](../mfc/drag-and-drop-customizing.md).
+Uygulamanızı bir kapsayıcı, seçilen veri bağlantılı veya katıştırılmış nesne türü ise `COleClientItem`, arama, `DoDragDrop` üye işlevi. Aksi takdirde, oluşturun bir `COleDataSource` nesne, seçimi başlatın ve veri kaynağı nesnesinin çağrı `DoDragDrop` üye işlevi. Uygulamanız bir sunucu ise kullanın `COleServerItem::DoDragDrop`. Standart sürükle-bırak davranışı özelleştirme hakkında daha fazla bilgi için bkz [sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md).
 
 Varsa `DoDragDrop` döndürür **DROPEFFECT_MOVE**, kaynak verileri kaynak belgedeki hemen silin. Diğer dönüş değeri gelen `DoDragDrop` bir bırakma kaynağı üzerinde hiçbir etkisi olmaz.
 
@@ -36,10 +36,9 @@ Daha fazla bilgi için bkz.:
 
 - [OLE veri nesneleri ve veri kaynakları düzenleme](../mfc/data-objects-and-data-sources-manipulation.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sürükleme ve Bırakma (OLE)](../mfc/drag-and-drop-ole.md)<br/>
 [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop)<br/>
 [COleClientItem::DoDragDrop](../mfc/reference/coleclientitem-class.md#dodragdrop)<br/>
 [CView::OnDragLeave](../mfc/reference/cview-class.md#ondragleave)
-
