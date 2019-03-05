@@ -9,12 +9,12 @@ helpviewer_keywords:
 - drag and drop [MFC], about OLE drag and drop
 - OLE drag and drop [MFC]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
-ms.openlocfilehash: 956c746d6eef84edd7be3ab9b6c6d15107269b1c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 277f82874426a008f598c052966ad81f46c45732
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450355"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305048"
 ---
 # <a name="drag-and-drop-ole"></a>Sürükleme ve Bırakma (OLE)
 
@@ -26,20 +26,19 @@ OLE sürükle ve bırak kullandığınızda, işlemden iki adımları kaldırabi
 
 OLE sürükle ve bırak kullanarak, verileri bir konumdan diğerine uygulamalar arasında veya farklı belgelerini bir belge içindeki aktarılabilir. Bir kapsayıcı veya bir sunucu uygulaması uygulanabilir ve herhangi bir uygulama bir bırakma kaynağı, bir bırakma hedefi veya her ikisi de olabilir. Bir uygulamanın uygulanan hem bırakma kaynağı hem de bırakma hedefi destek varsa, sürükle ve bırak etkin alt pencereler arasında veya bir pencere içinde. Bu özellik, uygulamanızı kullanmak çok daha kolay hale getirebilirsiniz.
 
-OLE sürükle ve bırak özelliklerini kullanmak istiyorsanız, bkz [sürükle ve bırak: özelleştirme](../mfc/drag-and-drop-customizing.md). OLE dışı uygulamalar kaynakları bırakın yapmak için bu makalede açıklanan teknikleri kullanabilirsiniz. Makaleyi [sürükle ve bırak: bir bırakma hedefi uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md) OLE hem OLE olmayan uygulamaları için destek bırakma hedefi uygulama açıklar. Bu da MFC OLE örnekleri incelemek yararlı olacaktır [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md).
+OLE sürükle ve bırak özelliklerini kullanmak istiyorsanız, bkz [sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md). OLE dışı uygulamalar kaynakları bırakın yapmak için bu makalede açıklanan teknikleri kullanabilirsiniz. Makaleyi [sürükle ve bırak: Bir bırakma hedefi uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md) OLE hem OLE olmayan uygulamaları için destek bırakma hedefi uygulama açıklar. Bu da MFC OLE örnekleri incelemek yararlı olacaktır [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md).
 
 Değil okumadıysanız [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) makaleleri ailesi, bunu şimdi yapmak isteyebilirsiniz. Bu makaleler, veri aktarımı ve uygulamalarınızda nasıl temellerini açıklar.
 
 Sürükleme ve bırakma hakkında daha fazla bilgi için bkz:
 
-- [Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama](../mfc/drag-and-drop-implementing-a-drop-source.md)
+- [Sürükle ve bırak: Bir bırakma kaynağı uygulama](../mfc/drag-and-drop-implementing-a-drop-source.md)
 
-- [Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md)
+- [Sürükle ve bırak: Bir bırakma hedefi uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md)
 
-- [Sürükle ve Bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md)
+- [Sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)
-

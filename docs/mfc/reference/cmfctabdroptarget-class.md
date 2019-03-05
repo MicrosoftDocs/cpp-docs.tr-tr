@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-ms.openlocfilehash: bd68179be21fec85c0ebb901c2a8c9a4491ff401
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b24d7679edfaab4d4eeb6d59770f30cd4253580
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534840"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303943"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 
@@ -98,7 +98,7 @@ virtual DROPEFFECT OnDragEnter(
 |Parametre|Açıklama|
 |*pWnd*|[in] Kullanılmayan.|
 |*pDataObject*|[in] Kullanıcının sürüklediği nesneye bir işaretçi.|
-|*dwKeyState*|[in] Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|
+|*dwKeyState*|[in] Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|
 |*Noktası*|[in] İstemci koordinatları imleç konumu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -159,7 +159,7 @@ virtual DROPEFFECT OnDragOver(
 |Parametre|Açıklama|
 |*pWnd*|[in] Kullanılmayan.|
 |*pDataObject*|[in] Kullanıcının sürüklediği nesneye bir işaretçi.|
-|*dwKeyState*|[in] Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|
+|*dwKeyState*|[in] Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|
 |*Noktası*|[in] Fare işaretçisi istemci koordinatlarına göre konumu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -249,9 +249,8 @@ Kayıt başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Bu yöntemin çağırdığı [COleDropTarget::Register](../../mfc/reference/coledroptarget-class.md#register) denetimi sürükle ve bırak işlemleri için kaydedilecek.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [Sürükleme ve Bırakma (OLE)](../../mfc/drag-and-drop-ole.md)
-

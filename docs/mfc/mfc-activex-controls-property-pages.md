@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Özellik Sayfaları'
+title: 'MFC ActiveX denetimleri: Özellik Sayfaları'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - DDP_ functions [MFC]
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 7027a58960e07903c9d774e07379c8050bc489b8
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3fe092e412cf11f7bf8600e8d0d7d43abb0e11c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176464"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303904"
 ---
-# <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX Denetimleri: Özellik Sayfaları
+# <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX denetimleri: Özellik Sayfaları
 
 Özellik sayfaları ActiveX denetimi özelliklerini görüntülemek ve değiştirmek bir ActiveX denetimi verin. Bu özellikler, görüntüleme ve denetim özelliklerini düzenleme için özelleştirilmiş, grafik bir arabirim sağlayan bir veya daha fazla özellik sayfaları içeren bir denetim özellikleri iletişim kutusu çağırarak erişilir.
 
@@ -45,15 +45,15 @@ Bu makalede, bir ActiveX denetimi özellik sayfaları kullanmayla ilgili konular
 
 ActiveX denetiminde özellik sayfalarını kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
+- [MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 Bir MFC uygulaması dışında bir ActiveX denetimi içinde özellik sayfalarını kullanma hakkında daha fazla bilgi için bkz: [özellik sayfalarını](../mfc/property-sheets-mfc.md).
 
 ##  <a name="_core_implementing_the_default_property_page"></a> Varsayılan özellik sayfası uygulama
 
-ActiveX Denetim Sihirbazı'nı Denetim projenizi oluşturmak için kullandığınız öğesinden türetilen denetim için ActiveX Denetim Sihirbazı'nı varsayılan özellik sayfası sınıfının sağlar [COlePropertyPage sınıfı](../mfc/reference/colepropertypage-class.md). Başlangıçta, bu özellik sayfası boş olur, ancak herhangi bir iletişim kutusu denetimi veya denetimleri için ekleyebilirsiniz. Varsayılan olarak, ek özellik sayfası sınıfları ActiveX Denetim Sihirbazı'nı yalnızca bir özellik sayfası sınıfının oluşturduğundan (Ayrıca türetilen `COlePropertyPage`) Sınıf Görünümü kullanılarak oluşturulmalıdır. Bu yordamı hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md).
+ActiveX Denetim Sihirbazı'nı Denetim projenizi oluşturmak için kullandığınız öğesinden türetilen denetim için ActiveX Denetim Sihirbazı'nı varsayılan özellik sayfası sınıfının sağlar [COlePropertyPage sınıfı](../mfc/reference/colepropertypage-class.md). Başlangıçta, bu özellik sayfası boş olur, ancak herhangi bir iletişim kutusu denetimi veya denetimleri için ekleyebilirsiniz. Varsayılan olarak, ek özellik sayfası sınıfları ActiveX Denetim Sihirbazı'nı yalnızca bir özellik sayfası sınıfının oluşturduğundan (Ayrıca türetilen `COlePropertyPage`) Sınıf Görünümü kullanılarak oluşturulmalıdır. Bu yordamı ile ilgili daha fazla bilgi için bkz [MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md).
 
 Uygulayan bir özellik sayfa (Bu durumda, varsayılan), üç adımlık bir işlemdir:
 
@@ -115,7 +115,7 @@ Eklenen özellik sayfası denetimi yaptıktan sonra özellik sayfası denetimi, 
 |`DDP_Radio`|Bir radyo düğmesi denetimi özelliğine sahip.|
 |`DDP_Text`|Metin denetimi özelliğine sahip.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
 [COlePropertyPage Sınıfı](../mfc/reference/colepropertypage-class.md)

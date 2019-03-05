@@ -1,19 +1,19 @@
 ---
-title: Görüntü Listelerini Düzenleme
+title: Resim Listelerini Düzenleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - image lists [MFC], manipulating
 - lists [MFC], image
 - CImageList class [MFC], manipulating
 ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
-ms.openlocfilehash: 7ec641f1e7090e27edd367203b430b932ede52a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e86961980c91ade47a3d6510dec5c04ac36cffb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643774"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304853"
 ---
-# <a name="manipulating-image-lists"></a>Görüntü Listelerini Düzenleme
+# <a name="manipulating-image-lists"></a>Resim Listelerini Düzenleme
 
 [Değiştirin](../mfc/reference/cimagelist-class.md#replace) üye işlevi bir görüntü listesi görüntüde değiştirir ([Cımagelist](../mfc/reference/cimagelist-class.md)) ile yeni bir görüntüsü. Bu işlev, ayrıca dinamik olarak bir görüntü listesi nesne görüntülerdeki sayısını artırmanız gerekiyorsa yararlıdır. [SetImageCount](../mfc/reference/cimagelist-class.md#setimagecount) işlevi, depolanan görüntü listesinden görüntü sayısını dinamik olarak değişir. Görüntü listesi boyutunu artırmak için çağrı `Replace` görüntüleri için yeni görüntü yuva eklemek için. Görüntü listesi boyutu azaltırsanız, yeni boyut ötesinde görüntüleri kurtulurlar.
 
@@ -27,8 +27,7 @@ Tüm görüntüleri birleştirilir ve yeni görüntüyü Liste nesnesine eklenen
 
 [GetSafeHandle](../mfc/reference/cimagelist-class.md#getsafehandle), [iliştirme](../mfc/reference/cimagelist-class.md#attach), ve [ayırma](../mfc/reference/cimagelist-class.md#detach) üye işlevleri bağlı görüntü listesinin tanıtıcı değiştirmenize izin `CImageList` nesnesi sırada [DeleteImageList](../mfc/reference/cimagelist-class.md#deleteimagelist) üye işlevini, yok etme olmadan görüntü listesi siler `CImageList` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CImageList Kullanma](../mfc/using-cimagelist.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

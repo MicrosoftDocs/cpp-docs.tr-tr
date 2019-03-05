@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-ms.openlocfilehash: eb0580f6fef39df29d66e15cfd051a0460cb8d56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 515c4e90ee6ab77a6c7c1ae108393ea1aafb7c17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584021"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304073"
 ---
 # <a name="cobject-class"></a>CObject sınıfı
 
@@ -366,7 +366,7 @@ Kullanım [CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading)
 
 `Serialize` çağıran [CArchive::ReadObject](../../mfc/reference/carchive-class.md#readobject) ve [CArchive::WriteObject](../../mfc/reference/carchive-class.md#writeobject). Bu işlevler ile ilişkili `CArchive` ekleme operatörü ( **< \<**) ve çıkarma işleci ( **>>**).
 
-Serileştirme örnekler için bkz [seri hale getirme: bir nesneyi serileştirmek](../../mfc/serialization-serializing-an-object.md).
+Serileştirme örnekler için bkz [seri hale getirme: Bir nesneyi serileştirmek](../../mfc/serialization-serializing-an-object.md).
 
 ### <a name="example"></a>Örnek
 
@@ -374,7 +374,6 @@ Bkz: [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) bir listes
 
 [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

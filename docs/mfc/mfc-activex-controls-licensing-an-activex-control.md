@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama'
+title: 'MFC ActiveX denetimleri: ActiveX denetimini lisanslama'
 ms.date: 11/19/2018
 f1_keywords:
 - COleObjectFactory
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - GetLicenseKey method [MFC]
 - licensing ActiveX controls
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-ms.openlocfilehash: 35ca5d410f642f2557d9ee797eda2d9529f7f4d1
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: eda2ea08c6bd3526befb71c704aa20eba6935b04
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176371"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304632"
 ---
-# <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama
+# <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetimini lisanslama
 
 Destek lisanslama, ActiveX denetimlerinin, isteğe bağlı bir özellik sayesinde kullanın veya denetim dağıtmak mümkün olan denetim. (Lisans sorunları ek açıklaması için bkz: Lisans sorunları [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).)
 
@@ -122,8 +122,7 @@ Kod ayrıca ekleyebilirsiniz `VerifyLicenseKey` işlevi oluşturma denetleyen ku
 
 Lisanslama sorunları lisans sorunları ek açıklaması için bkz. [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md)
-

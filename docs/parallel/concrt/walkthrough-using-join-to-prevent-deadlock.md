@@ -7,12 +7,12 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: b62f4007a79faaff479e4e8ff998a8b48e4d5dd1
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 2f9e0f50866ed0635fbaa4b700dbf522f09458d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175927"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303059"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 
@@ -26,7 +26,7 @@ Bu kılavuza başlamadan önce aşağıdaki konuları okuyun:
 
 - [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
 
-- [İzlenecek Yol: Aracı Temelli Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
+- [İzlenecek yol: Aracı Tabanlı Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
 
 - [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -152,7 +152,7 @@ plato ate 50 times.
 
 [[Üst](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>

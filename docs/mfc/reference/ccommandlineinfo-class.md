@@ -1,5 +1,5 @@
 ---
-title: Ccommandlineınfo sınıfı
+title: CCommandLineInfo Class
 ms.date: 11/04/2016
 f1_keywords:
 - CCommandLineInfo
@@ -28,14 +28,14 @@ helpviewer_keywords:
 - CCommandLineInfo [MFC], m_strPrinterName
 - CCommandLineInfo [MFC], m_strRestartIdentifier
 ms.assetid: 3e313ddb-0a82-4991-87ac-a27feff4668c
-ms.openlocfilehash: 60c0ae66234d5fb3be61d9249cf61ee77dff41ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e4b535da00fdcecf4ce52fad696cb5d2bc55efa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481477"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303033"
 ---
-# <a name="ccommandlineinfo-class"></a>Ccommandlineınfo sınıfı
+# <a name="ccommandlineinfo-class"></a>CCommandLineInfo Class
 
 Uygulama başlangıcında komut satırını ayrıştırma Yardımcıları.
 
@@ -322,10 +322,9 @@ Varsayılan uygulama ayrıca ayarlar [m_bShowSplash](#m_bshowsplash) yalnızca y
 
 Bu işlev diğer bayrağı ve parametre değerlerini işlemek için türetilmiş sınıf içinde geçersiz kılar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline)<br/>
 [CWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand)
-

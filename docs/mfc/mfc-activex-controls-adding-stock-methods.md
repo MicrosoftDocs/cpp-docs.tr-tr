@@ -1,31 +1,31 @@
 ---
-title: 'MFC ActiveX Denetimleri: Stok Yöntemler Ekleme'
+title: 'MFC ActiveX denetimleri: Stok yöntemler ekleme'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], stock methods
 - MFC ActiveX controls [MFC], methods
 - DoClick method [MFC]
 ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
-ms.openlocfilehash: 1e47e45efe27c9562cf8500f8941bcf0e259448a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29cb0d6f53d4e8fbbce12a83b2eecb8658c82697
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585035"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305217"
 ---
-# <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
+# <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX denetimleri: Stok yöntemler ekleme
 
 Sınıfı tarafından zaten uygulandı, stok metodu bir özel yönteminden farklıdır [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetim için yenileme yöntemi destekleyen önceden tanımlı üye işlevi içeriyor. Bu hisse senedi yöntemi için gönderme eşleme girişi DISP_STOCKFUNC_REFRESH ' dir.
 
 >[!IMPORTANT]
 > ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
-`COleControl` Stok iki yöntemi destekler: DoClick ve yenileme. Yenileme denetiminin görünüşünü hemen güncelleştirmek için denetimin kullanıcı tarafından çağrılır; DoClick denetimin tıklatın ateşlenmesine çağrıldığında olay.
+`COleControl` Stok iki yöntemi destekler: DoClick ve yenilemek zorundadır. Yenileme denetiminin görünüşünü hemen güncelleştirmek için denetimin kullanıcı tarafından çağrılır; DoClick denetimin tıklatın ateşlenmesine çağrıldığında olay.
 
 |Yöntem|Gönderme eşleme girişi|Yorum|
 |------------|------------------------|-------------|
-|`DoClick`|**DISP_STOCKPROP_DOCLICK)**|Bir tıklama olayı tetikler.|
-|`Refresh`|**DISP_STOCKPROP_REFRESH)**|Hemen bir denetimin görünümünü güncelleştirir.|
+|`DoClick`|**DISP_STOCKPROP_DOCLICK( )**|Bir tıklama olayı tetikler.|
+|`Refresh`|**DISP_STOCKPROP_REFRESH( )**|Hemen bir denetimin görünümünü güncelleştirir.|
 
 ##  <a name="_core_adding_a_stock_method_using_classwizard"></a> Stok yöntemi kullanarak bir ekleme yöntem Ekleme Sihirbazı
 
@@ -61,7 +61,6 @@ Aşağıdaki satırı denetimin eklenir. IDL dosyası:
 
 Bu satırı Refresh yöntemi belirli bir kimlik numarası atar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

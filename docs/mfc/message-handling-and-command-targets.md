@@ -9,12 +9,12 @@ helpviewer_keywords:
 - IOleCommandTarget interface [MFC]
 - command routing [MFC], command targets
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-ms.openlocfilehash: f9212e32605a1fed179c931d4f63833e17870b5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 702cb96da13d6109c17a28e58c08a30af3f77fd4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442542"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302747"
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 
@@ -49,7 +49,6 @@ interface IOleCommandTarget : IUnknown
 
 `QueryStatus` Yöntemi burada komutları belirli bir kümesini, küme ile tanımlanmasını olup olmadığını test eder bir **GUID**, desteklenir. Bu çağrı bir dizi doldurur **OLECMD** (yapıları) değerlerle komutları yanı sıra bir komutu ve/veya durum bilgisi adını açıklayan metin döndüren desteklenen listesi. Arayan, bir komut çağrılacak istediğinde komutu geçirebilirsiniz (ve kümesi **GUID**) için `Exec` seçenekleri ve bağımsız değişkenleri yanı sıra bir dönüş değeri geri alamazsınız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
-

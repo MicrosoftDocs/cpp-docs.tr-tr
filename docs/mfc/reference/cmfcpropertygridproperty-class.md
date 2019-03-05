@@ -1,5 +1,5 @@
 ---
-title: CMFCPropertyGridProperty sınıfı
+title: CMFCPropertyGridProperty Class
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCPropertyGridProperty
@@ -166,14 +166,14 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: f7a8cca3da85e3ac0b7b7e63e83d394a0e8a9899
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 550f238ae66bcaf7d5afc245b709c42c78769949
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524741"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305074"
 ---
-# <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty sınıfı
+# <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty Class
 
 A `CMFCPropertyGridProperty` nesnesi bir özellik liste denetiminin bir liste öğesini temsil eder.
 
@@ -801,7 +801,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 
 Bu özelliğin bir alt öğesi olan bir özellik nesne işaretçisi.
 
-veya
+-veya-
 
 Perakende modunda yoksa NULL *nIndex* parametresi geçersiz. Hata ayıklama modunda, bu yöntem onaylar.
 
@@ -1501,7 +1501,7 @@ Geçerli özellik değişken türde veya değerlerin bir listesini ve bu yöntem
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, aşağıdaki değişken türlerini destekler: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8 ve VT_BSTR.
+Bu yöntem, aşağıdaki değişken türlerini destekler: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, and VT_BSTR.
 
 ##  <a name="onsetselection"></a>  CMFCPropertyGridProperty::OnSetSelection
 
@@ -1550,7 +1550,7 @@ Düzenleme işlemi devam ediyor durumunda TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, değerlerin bir listesini ya da değişken şu türlerden biri bir özelliği destekler: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8 ve VT_BSTR.
+Bu yöntem, değerlerin bir listesini veya şu değişken türlerinin bir özelliği destekler: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, and VT_BSTR.
 
 ##  <a name="redraw"></a>  CMFCPropertyGridProperty::Redraw
 
@@ -1710,7 +1710,7 @@ void Show(
 *bAdjustLayout*<br/>
 [in] Bir özelliğin değerini ve etiket çizmek ve sonra özellik çizin nasıl yeniden hesaplamak için TRUE; Özellik çizmek için var olan hesaplamalar kullanmak için FALSE. Varsayılan değer True'dur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - common controls [MFC]
 - controls [MFC]
 ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
-ms.openlocfilehash: fe427b2330441b5d9d38a8947ded85dedbb4e086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0738128d20839046e0885e7489b494d84349e4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472715"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304541"
 ---
 # <a name="controls-mfc"></a>Denetimler (MFC)
 
@@ -104,8 +104,7 @@ Aşağıdaki tabloda kısaca denetim MFC sarmalayıcı sınıfı dahil olmak üz
 
 Windows SDK'sındaki Windows ortak denetimleri hakkında daha fazla bilgi için bkz. [ortak denetimleri](/windows/desktop/Controls/common-controls-intro).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
-

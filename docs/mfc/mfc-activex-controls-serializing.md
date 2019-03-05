@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Seri Hale Getirme'
+title: 'MFC ActiveX denetimleri: Seri hale getirme'
 ms.date: 09/12/2018
 f1_keywords:
 - _wVerMinor
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - versioning ActiveX controls
 - wVerMajor global constant
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
-ms.openlocfilehash: fddd09ad7a3dc7d9211480bb21ac434419a48758
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c1c845640be2dfaa6aeda2defb478afb650b83b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522219"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303358"
 ---
-# <a name="mfc-activex-controls-serializing"></a>MFC ActiveX Denetimleri: Seri Hale Getirme
+# <a name="mfc-activex-controls-serializing"></a>MFC ActiveX denetimleri: Seri hale getirme
 
 Bu makalede, bir ActiveX denetimini serileştirmek anlatılmaktadır. Seri hale getirme okuma veya bir disk dosyası gibi bir kalıcı depolama ortamı için yazma işlemidir. Microsoft Foundation Class (MFC) kitaplığı, sınıf serileştirme için yerleşik destek sağlar. `CObject`. `COleControl` Bu destek özelliği değişimi mekanizması kullanılarak ActiveX denetimlerine genişletir.
 
@@ -54,20 +54,20 @@ Aşağıdaki tabloda, denetimin özelliklerini seri hale getirmek için kullanab
 
 |Özelliği değişimi işlevleri|Amaç|
 |---------------------------------|-------------|
-|**PX_Blob)**|İkili büyük nesne (BLOB) veri özelliği türü serileştirir.|
-|**PX_Bool)**|Bir Boolean özelliği türü serileştirir.|
-|**PX_Color)**|Türü color özelliğine serileştirir.|
-|**PX_Currency)**|Bir tür serileştiren **CY** (para birimi) özelliği.|
-|**PX_Double)**|Bir tür serileştiren **çift** özelliği.|
-|**PX_Font)**|Bir yazı tipi tür özelliği serileştirir.|
-|**PX_Float)**|Bir tür serileştiren **float** özelliği.|
+|**PX_Blob( )**|İkili büyük nesne (BLOB) veri özelliği türü serileştirir.|
+|**PX_Bool( )**|Bir Boolean özelliği türü serileştirir.|
+|**PX_Color( )**|Türü color özelliğine serileştirir.|
+|**PX_Currency( )**|Bir tür serileştiren **CY** (para birimi) özelliği.|
+|**PX_Double( )**|Bir tür serileştiren **çift** özelliği.|
+|**PX_Font( )**|Bir yazı tipi tür özelliği serileştirir.|
+|**PX_Float( )**|Bir tür serileştiren **float** özelliği.|
 |**Px_ıunknown)**|Vlastnost typu serileştiren `LPUNKNOWN`.|
-|**PX_Long)**|Bir tür serileştiren **uzun** özelliği.|
-|**PX_Picture)**|Bir tür resim özelliği serileştirir.|
-|**PX_Short)**|Bir tür serileştiren **kısa** özelliği.|
-|**PXstring)**|Bir tür serileştiren `CString` özelliği.|
-|**PX_ULong)**|Bir tür serileştiren **ULONG** özelliği.|
-|**PX_UShort)**|Bir tür serileştiren **USHORT** özelliği.|
+|**PX_Long( )**|Bir tür serileştiren **uzun** özelliği.|
+|**PX_Picture( )**|Bir tür resim özelliği serileştirir.|
+|**PX_Short( )**|Bir tür serileştiren **kısa** özelliği.|
+|**PXstring( )**|Bir tür serileştiren `CString` özelliği.|
+|**PX_ULong( )**|Bir tür serileştiren **ULONG** özelliği.|
+|**PX_UShort( )**|Bir tür serileştiren **USHORT** özelliği.|
 
 Bu özellik değişim işlevleri hakkında daha fazla bilgi için bkz. [Kalıcılık, OLE denetimleri](../mfc/reference/persistence-of-ole-controls.md) içinde *MFC başvurusu*.
 
@@ -93,7 +93,6 @@ Aşağıdaki örnekte, bu örnek denetimin sürüm 1 yalnızca "ReleaseDate" öz
 
 Varsayılan olarak, bir denetim "eski verileri en son biçime dönüştürür". Sürüm 2 denetimi sürüm 1'tarafından kaydedilmiş olan veri yüklerse, tekrar kaydedildiğinde, bu sürüm 2 biçimi yazılacaktır. Veri biçimi son okuma kaydetmek için denetleme isterseniz, geçmesi **FALSE** çağırırken üçüncü parametre olarak `ExchangeVersion`. Bu üçüncü parametresi isteğe bağlıdır ve **TRUE** varsayılan olarak.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

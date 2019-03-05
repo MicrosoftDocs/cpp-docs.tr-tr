@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-ms.openlocfilehash: e6b1b25f9125701a212f379c925a80ff888d58f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3514c76d4136fe2bc0b096cc382e6f7f4dd3392
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485832"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305126"
 ---
 # <a name="cfileexception-class"></a>CFileException sınıfı
 
@@ -187,35 +187,35 @@ int m_cause;
 
 Bu veri üyesi türünün genel bir değişkendir **int**. Numaralandırıcılar ve bunların anlamlarını açıklayan aşağıdaki gibidir:
 
-- `CFileException::none` 0: herhangi bir hata oluştu.
+- `CFileException::none` 0: Herhangi bir hata oluştu.
 
-- `CFileException::genericException` 1: belirlenemeyen bir hata oluştu.
+- `CFileException::genericException` 1: Belirtilmeyen bir hata oluştu.
 
-- `CFileException::fileNotFound` 2: dosya bulunamadı.
+- `CFileException::fileNotFound` 2: Dosya bulunamadı.
 
-- `CFileException::badPath` 3: yolun bir bölümünü veya tümünü geçersiz.
+- `CFileException::badPath` 3: Yolun bir bölümünü veya tümünü geçersiz.
 
-- `CFileException::tooManyOpenFiles` 4: izin verilen açık dosya sayısı aşıldı.
+- `CFileException::tooManyOpenFiles` 4: İzin verilen açık dosya sayısı aşıldı.
 
-- `CFileException::accessDenied` 5: dosyaya erişilemedi.
+- `CFileException::accessDenied` 5: Dosyaya erişilemedi.
 
-- `CFileException::invalidFile` 6: geçersiz bir dosya işlemesi kullanma girişimi oldu.
+- `CFileException::invalidFile` 6: Geçersiz bir dosya işlemesi kullanma girişimi oldu.
 
-- `CFileException::removeCurrentDir` 7: geçerli çalışma dizini kaldırılamıyor.
+- `CFileException::removeCurrentDir` 7: Geçerli çalışma dizini kaldırılamıyor.
 
-- `CFileException::directoryFull` 8: daha fazla dizin girdisi yok.
+- `CFileException::directoryFull` 8: Başka dizin girdisi yok vardır.
 
-- `CFileException::badSeek` 9: dosya işaretçisini ayarlamaya çalışırken bir hata oluştu.
+- `CFileException::badSeek` 9: Dosya işaretçisini ayarlamaya çalışırken bir hata oluştu.
 
-- `CFileException::hardIO` 10: bir donanım hatası oluştu.
+- `CFileException::hardIO` 10: Bir donanım hatası oluştu.
 
-- `CFileException::sharingViolation` 11: PAYLAŞIMI. EXE yüklü değildi veya paylaşılan bölge kilitliydi.
+- `CFileException::sharingViolation` 11: Paylaş. EXE yüklü değildi veya paylaşılan bölge kilitliydi.
 
-- `CFileException::lockViolation` 12: zaten kilitli olan bölge kilitlenmeye girişimi oldu.
+- `CFileException::lockViolation` 12: Zaten kilitli olan bölge kilitlenmeye girişimi oldu.
 
-- `CFileException::diskFull` 14: disk dolu.
+- `CFileException::diskFull` 14: Disk dolu.
 
-- `CFileException::endOfFile` 15: dosya sonuna ulaşıldı.
+- `CFileException::endOfFile` 15: Dosya sonuna ulaşıldı.
 
     > [!NOTE]
     >  Bunlar `CFileException` neden numaralandırıcılar kodundan `CArchiveException` numaralandırıcılar neden olur.
@@ -308,9 +308,8 @@ Dosya adını içeren dize işaretçisi varsa özel durum neden.
 
 [!code-cpp[NVC_MFCFiles#29](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_6.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Özel Durum İşleme](../../mfc/reference/exception-processing.md)
-

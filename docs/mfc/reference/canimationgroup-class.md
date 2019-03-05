@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-ms.openlocfilehash: b05de00697aa019382014402f7701a8341da5198
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9be0a5b76f91ddf4dc3d1c4ff2816b7ffd5a1986
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512924"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304385"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
 
@@ -387,6 +387,6 @@ Geçişleri yok etmek nasıl belirtir.
 
 Bu değer yalnızca yığında geçişleri ayırdığınızda FALSE ayarlayın. Varsayılan değer doğru ise, bu nedenle, yüksek oranda işleci kullanarak yeni geçiş nesneleri ayırmak için önerilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

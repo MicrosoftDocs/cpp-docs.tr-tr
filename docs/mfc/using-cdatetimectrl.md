@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - DateTimePicker control [MFC], CDateTimeCtrl class
 ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
-ms.openlocfilehash: b533cc1590b0c9c1b86407a8d55ae4995b10250a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 251528cafcbedb0352a1962d70452f8b8778f10b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542954"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303982"
 ---
 # <a name="using-cdatetimectrl"></a>CDateTimeCtrl Kullanma
 
@@ -34,7 +34,6 @@ Tarih ve Saat Seçici denetimini ([CDateTimeCtrl](../mfc/reference/cdatetimectrl
 
 - [Tarih ve Saat Seçici Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-date-and-time-picker-controls.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimler](../mfc/controls-mfc.md)
-

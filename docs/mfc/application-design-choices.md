@@ -11,12 +11,12 @@ helpviewer_keywords:
 - server applications [MFC], vs. client applications on Internet
 - client applications [MFC], vs. server applications on Internet
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-ms.openlocfilehash: b9b794070d1c4ff4f05f33895a7af5532a524ad1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdb294e4ab808a7e4cbcec457f6e744eff9f12cb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602936"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302825"
 ---
 # <a name="application-design-choices"></a>Uygulama Tasarımı Seçimleri
 
@@ -86,10 +86,9 @@ Aşağıdaki tabloda Internet üzerinden veri aktarımı için MFC kullanarak ç
 |[WinINet](../mfc/win32-internet-extensions-wininet.md)|HTTP, FTP ve gopher Internet protokolleri için. Veriler zaman uyumlu veya zaman uyumsuz olarak aktarılabilen ve bir sistem genelinde önbellekte depolanır.|[Cınternetsession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md), [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)ve çok daha fazlası.|
 |[WinSock](../mfc/windows-sockets-in-mfc.md)|En yüksek verimlilik ve denetim için. Yuva ve TCP/IP protokolleri düzeyde bilinmesini gerektirir.|[CSocket](../mfc/reference/csocket-class.md), [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md)|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
 [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)
-

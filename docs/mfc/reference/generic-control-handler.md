@@ -9,12 +9,12 @@ helpviewer_keywords:
 - GenericControl Handler [MFC]
 - ON_CONTROL macro [MFC]
 ms.assetid: 1e25e583-5d5a-4363-8904-839991a8570d
-ms.openlocfilehash: fed8e40b54728ee2a84f86b1a9a8ade2c44e0fe7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26d1bcda73670687b73f0c6cda864f8b6bcae784
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586332"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302824"
 ---
 # <a name="generic-control-handler"></a>Genel Denetim İşleyicisi
 
@@ -24,7 +24,6 @@ Aşağıdaki eşleme girişi için işlev prototipi karşılık gelir.
 |---------------|------------------------|
 |ON_CONTROL ( \<wNotifyCode >, \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
-

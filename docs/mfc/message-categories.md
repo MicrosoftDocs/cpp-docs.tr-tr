@@ -10,12 +10,12 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-ms.openlocfilehash: e8b7385a233c2074fe9bfc491d89de7629c730c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07d9e706e8ed01a81ee580e7c4e11fa1f1a7a8df
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619862"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326251"
 ---
 # <a name="message-categories"></a>İleti Kategorileri
 
@@ -43,7 +43,6 @@ ms.locfileid: "50619862"
 
 İletileri kategorisinde 3 — komutları — çeşitli nesneleri tarafından işlenebilir: belgeleri ve belge şablonları uygulama nesnesinin kendisi yanı sıra windows ve görünümler. Bir komut bazı belirli nesne doğrudan etkilediğinde, söz konusu nesne komutunu işlemek için mantıklıdır. Örneğin, Dosya menüsündeki Aç komutunu uygulamayla mantıksal olarak ilişkili: komut alındıktan sonra belirtilen bir belge uygulama açılır. Bu nedenle açık komut işleyicisi uygulama sınıfının bir üye işlevidir. Komutlar ve nesnelere nasıl yönlendirileceğini hakkında daha fazla bilgi için bkz. [Framework'ün işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
-

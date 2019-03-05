@@ -7,12 +7,12 @@ helpviewer_keywords:
 - message handlers [MFC]
 - message handling [MFC], editing handlers
 ms.assetid: 7babb496-1f14-43b1-a14d-2e54402a92e2
-ms.openlocfilehash: c316b4cf138c21b697181bcf132fa3766128a7ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 851b07c46fbc173031da838211beac7ba2d76954
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632719"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304775"
 ---
 # <a name="editing-a-message-handler"></a>İleti İşleyicisini Düzenleme
 
@@ -22,7 +22,7 @@ Bir üye işlev tanımından atlamak için [iletişim kutusu Düzenleyicisi](../
 
 Bir üye işlev tanımından atlamak için [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), Sınıf Görünümü'nde işlev adına çift tıklayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

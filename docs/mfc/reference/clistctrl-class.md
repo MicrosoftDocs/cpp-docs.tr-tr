@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 4bc50a8a77a4964cf92d003ed1e06213398f401c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 850c16420606452414cbe284c5f9f25031859c93
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525554"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304528"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -446,7 +446,7 @@ Liste Görünümü denetimi "görünümler" adlı dört farklı şekilde, bunlar
 
 - Rapor görünümü
 
-   Her öğe kendi satırında sağa sütun düzenlenir ek bilgilerle görünür. En soldaki sütuna etiket ve küçük simge ve uygulama tarafından belirtilen alt öğeleri sonraki sütunları içerir. Bir katıştırılmış üstbilgi denetimi (sınıfı [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) bu sütunların uygular. Üstbilgi denetimi ve bir rapor görünümünde sütunları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: (rapor görünümü) denetimine sütunlar ekleme](../../mfc/adding-columns-to-the-control-report-view.md).
+   Her öğe kendi satırında sağa sütun düzenlenir ek bilgilerle görünür. En soldaki sütuna etiket ve küçük simge ve uygulama tarafından belirtilen alt öğeleri sonraki sütunları içerir. Bir katıştırılmış üstbilgi denetimi (sınıfı [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) bu sütunların uygular. Üstbilgi denetimi ve bir rapor görünümünde sütunları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: Sütun ekleme (rapor görünümü) denetimine](../../mfc/adding-columns-to-the-control-report-view.md).
 
 Geçerli görünümü geçerli liste görünüm denetiminin stilini belirler. Bu stiller ve kullanımları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: Liste Denetim stillerini değiştirme](../../mfc/changing-list-control-styles.md).
 
@@ -460,7 +460,7 @@ Standart liste stilleri yanı sıra, sınıf `CListCtrl` zenginleştirilmiş iş
 
 - Sanal liste görünümleri
 
-   Etkin olduğunda, DWORD öğeyi destekleyebilir desteklemek bir denetim sağlar. Uygulama üzerindeki öğesi verileri yönetme yükü yerleştirerek bu mümkündür. Öğe seçimi ve odak bilgileri dışında tüm öğe bilgi uygulama tarafından yönetiliyor olması gerekir. Daha fazla bilgi için [CListCtrl kullanma: sanal liste denetimleri](../../mfc/virtual-list-controls.md).
+   Etkin olduğunda, DWORD öğeyi destekleyebilir desteklemek bir denetim sağlar. Uygulama üzerindeki öğesi verileri yönetme yükü yerleştirerek bu mümkündür. Öğe seçimi ve odak bilgileri dışında tüm öğe bilgi uygulama tarafından yönetiliyor olması gerekir. Daha fazla bilgi için [CListCtrl kullanma: Sanal liste denetimleri](../../mfc/virtual-list-controls.md).
 
 - Tek ve iki tıklamayla etkinleştirme
 
@@ -478,7 +478,7 @@ Her öğe bir liste görünümü denetimi, bir simge (bir görüntü listesinden
 
 Sınıf `CListCtrl` ekleme, silme, bulma ve bu öğeleri değiştirmek için çeşitli işlevler sağlar. Daha fazla bilgi için [CListCtrl::GetItem](#getitem), [CListCtrl::InsertItem](#insertitem), ve [CListCtrl::FindItem](#finditem), [Denetimöğeleriekleme](../adding-items-to-the-control.md), ve [düzenleme, sıralama ve bulma liste denetimlerinde kaydırma,](../scrolling-arranging-sorting-and-finding-in-list-controls.md).
 
-Varsayılan olarak, bir öğenin simge ve metin öznitelikleri depolamak için liste görünümü denetimi sorumludur. Ancak, bu öğe türlerine ek olarak, sınıf `CListCtrl` "geri çağrı öğeleri" destekler Bir liste görünümü öğesi olan bir "geri çağırma öğesi" olan uygulama — denetimi yerine — metin, simge ya da her ikisini de depolar. Bir geri çağrı maskesi (metin ve/veya simge) hangi öğesi öznitelikleri uygulama tarafından sağlanan belirtmek için kullanılır. Uygulama geri çağrı öğeleri kullanıyorsa, isteğe bağlı metin ve/veya simge öznitelikleri sağlamak mümkün olması gerekir. Uygulamanız zaten bu bilgilerin bazıları olduğunda geri çağrı öğeleri yararlı olur. Daha fazla bilgi için [CListCtrl kullanma: geri çağrı öğeleri ve geri çağrı maskesi](../callback-items-and-the-callback-mask.md).
+Varsayılan olarak, bir öğenin simge ve metin öznitelikleri depolamak için liste görünümü denetimi sorumludur. Ancak, bu öğe türlerine ek olarak, sınıf `CListCtrl` "geri çağrı öğeleri" destekler Bir liste görünümü öğesi olan bir "geri çağırma öğesi" olan uygulama — denetimi yerine — metin, simge ya da her ikisini de depolar. Bir geri çağrı maskesi (metin ve/veya simge) hangi öğesi öznitelikleri uygulama tarafından sağlanan belirtmek için kullanılır. Uygulama geri çağrı öğeleri kullanıyorsa, isteğe bağlı metin ve/veya simge öznitelikleri sağlamak mümkün olması gerekir. Uygulamanız zaten bu bilgilerin bazıları olduğunda geri çağrı öğeleri yararlı olur. Daha fazla bilgi için [CListCtrl kullanma: Geri çağrı öğeleri ve geri çağrı maskesi](../callback-items-and-the-callback-mask.md).
 
 ## <a name="image-lists"></a>Görüntü listeleri
 
@@ -500,7 +500,7 @@ Simgeler, üstbilgi öğesi görüntüler ve uygulama - liste görünümü öğe
 
    Rapor Görünümü'nde, her üstbilgi denetim öğesinde görünen küçük resimler için kullanılır.
 
-Varsayılan olarak, bir liste görünümü denetimi, kaldırıldığında kendisine atanan görüntü listeleri yok eder; Ancak, geliştirici, artık kullanıldığında, her bir görüntü listesi uygulama tarafından belirlenen şekilde yok edilirken bu davranışı özelleştirebilirsiniz. Daha fazla bilgi için [CListCtrl kullanma: liste öğeleri ve görüntü listeleri](../list-items-and-image-lists.md).
+Varsayılan olarak, bir liste görünümü denetimi, kaldırıldığında kendisine atanan görüntü listeleri yok eder; Ancak, geliştirici, artık kullanıldığında, her bir görüntü listesi uygulama tarafından belirlenen şekilde yok edilirken bu davranışı özelleştirebilirsiniz. Daha fazla bilgi için [CListCtrl kullanma: Liste öğeleri ve görüntü listeleri](../list-items-and-image-lists.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -529,7 +529,7 @@ CSize ApproximateViewRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*SZ*<br/>
+*sz*<br/>
 Önerilen boyutlar denetimin piksel cinsinden. Boyutlar belirtilmezse, çerçeve denetimi geçerli genişlik ve yükseklik değerlerini kullanır.
 
 *iCount*<br/>
@@ -3320,7 +3320,7 @@ BOOL SetColumnWidth(
 *nCol*<br/>
 Genişliğini ayarlamak için sütun dizini. Liste görünümünde Bu parametre 0 olmalıdır.
 
-*CX*<br/>
+*cx*<br/>
 Yeni sütun genişliği. LVSCW_AUTOSIZE ya da LVSCW_AUTOSIZE_USEHEADER, açıklandığı olabilir [LVM_SETCOLUMNWIDTH](/windows/desktop/Controls/lvm-setcolumnwidth) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3490,7 +3490,7 @@ CSize SetIconSpacing(CSize size);
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 X eksenindeki simge arasındaki uzaklığı (piksel cinsinden).
 
 *CY*<br/>
@@ -4420,10 +4420,9 @@ LVS_AUTOARRANGE stili varsa, bu işlev Ayrıca liste görünümü denetimi düze
 
   Örneğin bakın [CListCtrl::GetSelectedCount](#getselectedcount).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek ROWLIST](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../hierarchy-chart.md)<br/>
 [CImageList Sınıfı](cimagelist-class.md)
-

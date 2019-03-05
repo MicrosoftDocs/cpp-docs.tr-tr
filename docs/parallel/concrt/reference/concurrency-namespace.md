@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-ms.openlocfilehash: ccfa168f811b2c357a3760097ca7bbaab4f5ed3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa2fe7dedd1c7e1a8b5a72e01508b4201bd72a7d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629859"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303397"
 ---
 # <a name="concurrency-namespace"></a>concurrency Ad Alanı
 
@@ -123,12 +123,12 @@ namespace concurrency;
 |[task_canceled Sınıfı](task-canceled-class.md)|Bu sınıf, geçerli görevi iptal etmek için zorlamak için PPL görev katmanı tarafından verilen bir özel durumu anlatmaktadır. Ayrıca tarafından oluşturulur `get()` metodunda [görev](task-class.md), iptal edilen bir görev için.|
 |[task_completion_event Sınıfı](task-completion-event-class.md)|`task_completion_event` Sınıfı bir koşul sağlanana kadar bir görevin yürütülmesini geciktirmek veya dış bir olaya yanıt olarak bir görevi başlatma olanak tanır.|
 |[task_continuation_context Sınıfı](task-continuation-context-class.md)|`task_continuation_context` Sınıfı bir devamlılığın yürütülmesini istediğiniz belirtmenize olanak verir. Yalnızca, bu sınıftan bir UWP uygulaması kullanmak kullanışlıdır. Windows Runtime uygulamalar için görev devamlılığı yürütme içeriği, çalışma zamanı tarafından belirlenen ve yapılandırılabilir.|
-|[task_group sınıfı](task-group-class.md)|`task_group` Sınıf beklenen veya iptal edilen paralel iş koleksiyonunu temsil eder.|
+|[task_group Sınıfı](task-group-class.md)|`task_group` Sınıf beklenen veya iptal edilen paralel iş koleksiyonunu temsil eder.|
 |[task_handle Sınıfı](task-handle-class.md)|`task_handle` Sınıfı, tek bir paralel iş öğesinin temsil eder. Bu yönergeler ve bir parça işin yürütme için gerekli verileri saklar.|
 |[task_options Sınıfı (Eşzamanlılık Çalışma Zamanı)](task-options-class-concurrency-runtime.md)|Bir görev oluşturmak için izin verilen seçenekleri temsil eder|
 |[timer Sınıfı](timer-class.md)|A `timer` ileti bloğu tek hedef `source_block` gönderebilen bir ileti hedefine belirtilen süre geçtikten sonra veya belirli aralıklarla.|
 |[transformer Sınıfı](transformer-class.md)|A `transformer` ileti bloğu tek-hedef birden çok kaynak, sıralı `propagator_block` bir türden iletileri kabul edebilir ve sınırsız sayıda farklı türden iletileri depolayabilen özelliğine sahiptir.|
-|[unbounded_buffer sınıfı](unbounded-buffer-class.md)|Bir `unbounded_buffer` ileti bloğu birden çok hedef birden çok kaynak, sıralı `propagator_block` iletilerin sınırsız sayıda depolama özelliğine sahip.|
+|[unbounded_buffer Sınıfı](unbounded-buffer-class.md)|Bir `unbounded_buffer` ileti bloğu birden çok hedef birden çok kaynak, sıralı `propagator_block` iletilerin sınırsız sayıda depolama özelliğine sahip.|
 |[unsupported_os Sınıfı](unsupported-os-class.md)|Bu sınıf, desteklenmeyen bir işletim sistemi kullanıldığında oluşturulan bir özel durum açıklar.|
 
 ### <a name="structures"></a>Yapılar
@@ -180,7 +180,7 @@ namespace concurrency;
 |[cancel_current_task işlevi](concurrency-namespace-functions.md#cancel_current_task)|Şu anda yürütülmekte olan görevi iptal eder. Bu işlev görevin yürütülmesini durdurmak ve girmesine neden bir görevin gövdesinden çağrılabilir `canceled` durumu.<br /><br /> Gövdesinde değilseniz bu işlevin çağrılmasında desteklenen bir senaryo değil bir `task`. Bunun yapılması bir kilitlenme veya uygulamanızdaki bir takılma gibi tanımsız davranışa neden olur.|
 |[create_async işlevi](concurrency-namespace-functions.md#create_async)|Bir kullanıcı tarafından sağlanan lambda veya işlev nesnesine bağlı bir Windows çalışma zamanı zaman uyumsuz bir yapı oluşturur. Dönüş türünü `create_async` herhangi biri `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, veya `IAsyncOperationWithProgress<TResult, TProgress>^` yönteme geçirilen lambda'nın imzası göre.|
 |[create_task işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Oluşturur [görev](task-class.md) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.|
-|[CreateResourceManager işlevi](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin tekil örneğini temsil eden bir arabirim döndürür. Kaynak Yöneticisi birbirleriyle işbirliği istediğiniz planlayıcılar için kaynakları atamak ile sorumludur.|
+|[CreateResourceManager Function](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin tekil örneğini temsil eden bir arabirim döndürür. Kaynak Yöneticisi birbirleriyle işbirliği istediğiniz planlayıcılar için kaynakları atamak ile sorumludur.|
 |[DisableTracing işlevi](concurrency-namespace-functions.md#disabletracing)|Eşzamanlılık Çalışma zamanında izleme devre dışı bırakır. ETW İzleme, varsayılan olarak kaydı olduğundan, bu işlev kullanım dışı bırakılmıştır.|
 |[EnableTracing işlevi](concurrency-namespace-functions.md#enabletracing)|Eşzamanlılık Çalışma zamanında izleme sağlar. ETW İzleme şu anda varsayılan olarak etkin olduğundan, bu işlev kullanım dışı bırakılmıştır.|
 |[Free işlevi](concurrency-namespace-functions.md#free)|Tarafından önceden ayrılan bellek bloğunu serbest bırakır `Alloc` eşzamanlılık çalışma zamanı önbelleğe alma ayırıcısını için yöntemi.|
@@ -212,7 +212,7 @@ namespace concurrency;
 |[swap işlevi](concurrency-namespace-functions.md#swap)|İki öğeleri birbiriyle değiştirir `concurrent_vector` nesneleri.|
 |[task_from_exception işlevi (eşzamanlılık çalışma zamanı)](concurrency-namespace-functions.md#task_from_exception)||
 |[task_from_result işlevi (eşzamanlılık çalışma zamanı)](concurrency-namespace-functions.md#task_from_result)||
-|[Trace_agents_register_name işlevi](concurrency-namespace-functions.md#trace_agents_register_name)|Ad ileti bloğu veya ETW İzleme Aracısı ile ilişkilendirir.|
+|[Trace_agents_register_name Function](concurrency-namespace-functions.md#trace_agents_register_name)|Ad ileti bloğu veya ETW İzleme Aracısı ile ilişkilendirir.|
 |[try_receive işlevi](concurrency-namespace-functions.md#try_receive)|Fazla Yüklendi. Genel deneyin-alma uygulaması, tam olarak bir kaynaktan gelen veriler arayabilir ve kabul edilen değerler filtrelemek bir bağlam sağlar. Veriler hazır değilse, yöntem false döndürür.|
 |[wait işlevi](concurrency-namespace-functions.md#wait)|Belirtilen bir zaman miktarı için geçerli bağlam duraklatır.|
 |[when_all işlevi](concurrency-namespace-functions.md#when_all)|Tüm bağımsız değişken olarak sağlanan görevleri başarıyla tamamladığında başarıyla tamamlanacak bir görev oluşturur.|
@@ -258,7 +258,6 @@ namespace concurrency;
 
 **Başlık:** agents.h, concrt.h, concrtrm.h, concurrent_priority_queue.h, concurrent_queue.h, concurrent_unordered_map.h, concurrent_unordered_set.h, concurrent_vector.h, internal_concurrent_hash.h, internal_split_ordered_ List.h, ppl.h, pplcancellation_token.h, pplconcrt.h, pplinterface.h, ppltasks.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Başvuru](reference-concurrency-runtime.md)
-

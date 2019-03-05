@@ -1,5 +1,5 @@
 ---
-title: CRichEditCtrl sınıfı
+title: CRichEditCtrl Class
 ms.date: 11/04/2016
 f1_keywords:
 - CRichEditCtrl
@@ -152,14 +152,14 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: c42f7b77c04b2c94923908fa8b9542bea313b154
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: ca6185e7ee41726c7bf583056cb66eeb1be7021c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178999"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303440"
 ---
-# <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
+# <a name="cricheditctrl-class"></a>CRichEditCtrl Class
 
 Zengin düzenleme denetimi işlevlerini sağlar.
 
@@ -2196,7 +2196,7 @@ Daha fazla bilgi için [EM_UNDO](/windows/desktop/Controls/em-undo) Windows SDK.
 
   Örneğin bakın [CanUndo](#canundo).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek WORDPAD](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

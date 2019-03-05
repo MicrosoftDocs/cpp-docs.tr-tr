@@ -1,5 +1,5 @@
 ---
-title: 'Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme'
+title: 'Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - destroying data objects [MFC]
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - destruction [MFC], data objects
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-ms.openlocfilehash: a46cc15a101618699b9e7fa988155517de673fdb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74119d7ea33eef68f0cb4a67c8419514cbb73c10
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614974"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304456"
 ---
-# <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme
+# <a name="data-objects-and-data-sources-creation-and-destruction"></a>Veri nesneleri ve veri kaynakları: Oluşturma ve yok etme
 
 Makalesinde açıklandığı gibi [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md), veri nesneleri ve veri kaynakları her iki tarafında bir veri aktarımı temsil eder. Bu makalede, oluşturmak ve bu nesneleri ve veri aktarımlarınız düzgün bir şekilde gerçekleştirmek için kaynakları yok etmek ne zaman dahil olmak üzere açıklanmaktadır:
 
@@ -70,7 +70,7 @@ Veri kaynakları, bir uygulama verileri panoya kopyalamak gerektiğinde oluştur
 
 Bu senaryo, MFC OLE örnekleri tarafından uygulanan [OCLIENT](../visual-cpp-samples.md) ve [HIERSVR](../visual-cpp-samples.md). Her uygulama kaynağı bakın `CView`-türetilmiş sınıf için tüm `GetClipboardData` ve `OnGetClipboardData` işlevleri. Bu iki işlevler ötekisi `COleClientItem` veya `COleServerItem`-türetilmiş sınıf uygulamaları. Bu örnek programları nasıl uygulanacağını bu kavramları iyi bir örnek sağlar.
 
-İçinde oluşturmak istediğiniz bir durum bir `COleDataSource` nesnesi, bir Sürükle ve bırak işlemi varsayılan davranışını değiştiriyorsanız gerçekleşir. Daha fazla bilgi için [sürükle ve bırak: özelleştirme](../mfc/drag-and-drop-customizing.md) makalesi.
+İçinde oluşturmak istediğiniz bir durum bir `COleDataSource` nesnesi, bir Sürükle ve bırak işlemi varsayılan davranışını değiştiriyorsanız gerçekleşir. Daha fazla bilgi için [sürükle ve bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md) makalesi.
 
 ##  <a name="_core_destroying_data_sources"></a> Veri kaynakları yok etme
 
@@ -82,7 +82,7 @@ Veri kaynağınız için OLE devredildiği değil, siz gibi tipik bir C++ nesnes
 
 Daha fazla bilgi için [sürükle ve bırak](../mfc/drag-and-drop-ole.md), [Pano](../mfc/clipboard.md), ve [düzenleme veri nesneleri ve veri kaynakları](../mfc/data-objects-and-data-sources-manipulation.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
 [COleDataObject Sınıfı](../mfc/reference/coledataobject-class.md)<br/>

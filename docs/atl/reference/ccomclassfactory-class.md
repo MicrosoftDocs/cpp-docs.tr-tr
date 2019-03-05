@@ -1,5 +1,5 @@
 ---
-title: CComClassFactory sınıfı
+title: CComClassFactory Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComClassFactory
@@ -9,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactory class
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
-ms.openlocfilehash: 61dd67a4a34be447807799537971c19c11d09e5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85ef287a905abc7b3151628c0f5dc29b9050b187
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575233"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326574"
 ---
-# <a name="ccomclassfactory-class"></a>CComClassFactory sınıfı
+# <a name="ccomclassfactory-class"></a>CComClassFactory Class
 
 Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimi.
 
@@ -105,7 +105,7 @@ Standart bir HRESULT değerini.
 
 Çağırma `LockServer` bir istemci birden çok nesne hızla oluşturulabilen bir sınıf üreteci tutacak sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CMFCToolBarComboBoxButton sınıfı
+title: CMFCToolBarComboBoxButton Class
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarComboBoxButton
@@ -64,14 +64,14 @@ helpviewer_keywords:
 - CMFCToolBarComboBoxButton [MFC], SetDropDownHeight
 - CMFCToolBarComboBoxButton [MFC], SetFlatMode
 ms.assetid: 32fa39f7-8e4e-4f0a-a31d-7b540d969a6c
-ms.openlocfilehash: 2dd300e4bbf63ed59554d5722c716f8a3f795570
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fae70e44657023b7a7b93f72599bef4ba6faf307
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561427"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303176"
 ---
-# <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton sınıfı
+# <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton Class
 
 Birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi ( [CComboBox sınıfı](../../mfc/reference/ccombobox-class.md)).
 
@@ -132,7 +132,7 @@ Birleşik giriş kutusu düğmesi için araç çubuğu eklemek için bu adımlar
 
 3. AFX_WM_RESETTOOLBAR iletiyi işleyen ileti işleyicisi işlevsiz düğmesini kullanarak yeni bir birleşik giriş kutusu düğmesi ile değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).
 
-Daha fazla bilgi için [izlenecek yol: temel denetimler koyma araç'çubukları](../../mfc/walkthrough-putting-controls-on-toolbars.md). Örneği bir birleşik giriş kutusu araç çubuğu düğmesi için örnek proje VisualStudioDemo bakın.
+Daha fazla bilgi için [izlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md). Örneği bir birleşik giriş kutusu araç çubuğu düğmesi için örnek proje VisualStudioDemo bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -1328,12 +1328,11 @@ void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 [in] Düzenleme kutusu metni içeren bir dize işaretçisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [CComboBox Sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: a0e6861ecf3a6704ddb31c39f7bb2c44cb75ccd8
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 6ba0c2b5449cb0058c1b274d9d9c0d7ae33bcd7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179012"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302993"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 
@@ -1680,7 +1680,7 @@ afx_msg void OnSize(
 *nTür*<br/>
 [in] Yeniden boyutlandırma türü. Olası değerler için parametre bkz *wParam* içinde [WM_SIZE bildirim](/windows/desktop/winmsg/wm-size).
 
-*CX*<br/>
+*cx*<br/>
 [in] Yeni çerçevenin piksel cinsinden genişliği.
 
 *CY*<br/>
@@ -2113,7 +2113,7 @@ Help komutu. Olası değerler listesi için bkz. [WinHelp](/windows/desktop/api/
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

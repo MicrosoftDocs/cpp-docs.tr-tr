@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-ms.openlocfilehash: 36e4b5956e0739b44481fbabe6114c9648e7b229
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d5bbd361dc2dedc24c2a59050ffa680517186494
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477096"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304697"
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue Sınıfı
 
@@ -279,6 +279,6 @@ Eşzamanlı kuyruk boyutu.
 
 `unsafe_size` Eşzamanlılık açısından güvenli değildir ve yöntemlere yapılan çağrılar eşzamanlı çağrılırsa hatalı sonuçlar üretebilir `push`, `try_pop`, ve `empty`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

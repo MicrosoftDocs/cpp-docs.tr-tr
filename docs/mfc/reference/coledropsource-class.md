@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-ms.openlocfilehash: 51d524054b67a5cecc5aa7791b0aeea0cc076813
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 587aa0730502d5e8f90c4fec57bb87886b79fb3f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457791"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304983"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 
@@ -147,7 +147,7 @@ virtual SCODE QueryContinueDrag(
 ESC tuşuna son çağrısından sonra basıldığını olup olmadığını belirten `COleDropSource::QueryContinueDrag`.
 
 *dwKeyState*<br/>
-Değiştirici tuşlarını durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşlarını durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -161,10 +161,9 @@ Varsayılan uygulama açılır başlatır veya sürükleme şu şekilde iptal ed
 
 Bu işlev sık çağrıldığından, mümkün olduğunca hale getirilmiştir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

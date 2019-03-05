@@ -7,12 +7,12 @@ helpviewer_keywords:
 - type libraries, Automation clients
 - clients
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-ms.openlocfilehash: 30511ec6c9f0e00f4cec51e00f85ea5e32453327
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 098c41ea981d9d0069130d5439632aa7b0d6cbbd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465500"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304502"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 
@@ -38,9 +38,8 @@ Ardından sunucu uygulamasının nesnesinin işlevlerini ve özelliklerini açı
 
 Otomasyon istemcinizi olayları işlemek istiyorsanız, bir havuzu arabirimini eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimler, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../mfc/automation-clients-using-type-libraries.md)<br/>
+[Otomasyon istemcileri: Tür kitaplıklarını kullanma](../mfc/automation-clients-using-type-libraries.md)<br/>
 [Otomatikleştirme](../mfc/automation.md)<br/>
 [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)
-

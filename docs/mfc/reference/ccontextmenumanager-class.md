@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CContextMenuManager [MFC], ShowPopupMenu
 - CContextMenuManager [MFC], TrackPopupMenu
 ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
-ms.openlocfilehash: 49e9b1cd12bee562daaf4ffb40492c80d8549ec3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 594b78fd36dcb1ff92c63867688c38eac7520eba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639352"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304345"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager sınıfı
 
@@ -372,7 +372,7 @@ Kullanıcı komut menü komut kimliği; 0 kullanıcı kısayol menüsünü menü
 
 Bu yöntem, bir kısayol menüsünü görüntülemek için kalıcı bir çağrı işlev görür. Kullanıcı kısayol menüsünü kapatır veya komut seçtiğinde kadar uygulama aşağıdaki kod satırında devam etmeyecek. Bir kısayol menüsünü görüntülemek için kullanabileceğiniz alternatif bir yöntem [CContextMenuManager::ShowPopupMenu](#showpopupmenu). Bu yöntem, kalıcı bir çağrı değildir ve seçili komut Kimliğini döndürmez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

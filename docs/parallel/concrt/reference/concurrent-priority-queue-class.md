@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_priority_queue class
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
-ms.openlocfilehash: a75d413874056d57f0d474f44e514cf93f273626
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5804675ffdaf6de2e73327103398316566b41627
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492309"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304788"
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
 
@@ -93,7 +93,7 @@ Hakkında ayrıntılı bilgi için `concurrent_priority_queue` sınıfı [parale
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** concurrent_priority_queue.h
+**Header:** concurrent_priority_queue.h
 
 **Namespace:** eşzamanlılık
 
@@ -279,8 +279,7 @@ Sıranın boş olması durumunda yüksek öncelikli öğeyle doldurulur bir değ
 
 **doğru** bir değer POP, **false** Aksi takdirde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Paralel Kapsayıcılar ve Nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
-

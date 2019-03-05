@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: 50fb7da1a59d35d96f1f65428b3a361e3a226607
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: efcf5057481345c001cc48224f53c666623d0780
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694460"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304996"
 ---
 # <a name="cmdichildwnd-class"></a>Cmdıchildwnd sınıfı
 
@@ -285,7 +285,7 @@ Bir Hızlandırıcı kaynak tanıtıcısı.
 
 MDI alt penceresi nesne tarafından kullanılan menüsü ve Hızlandırıcı kaynakları ayarlamak için bu işlevi çağırın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MDI](../../visual-cpp-samples.md)<br/>
 [MFC örnek MDIDOCVW](../../visual-cpp-samples.md)<br/>

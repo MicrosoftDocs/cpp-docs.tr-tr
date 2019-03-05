@@ -1,18 +1,18 @@
 ---
-title: 'MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme'
+title: 'MFC ActiveX denetimleri: Ortam özelliklerine erişme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], accessing ambient properties
 - properties [MFC], accessing ambient
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
-ms.openlocfilehash: f6daff09969e82daa4e8f76c8b1eb4972ddd6eeb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 585ec8720a654bbcb728330d70ddb914f2543e41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585633"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305230"
 ---
-# <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme
+# <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX denetimleri: Ortam özelliklerine erişme
 
 Bu makalede, bir ActiveX denetimini denetim kapsayıcısının ortam özelliklerine nasıl erişebilir açıklanmaktadır.
 
@@ -55,7 +55,6 @@ Size kolaylık sağlamak için `COleControl` birçok yaygın olarak kullanılan 
 
 (Bazı eylem kapsayıcının), bir ortam özelliğinin değeri değiştiğinde `OnAmbientPropertyChanged` denetimin üye işlevi çağrılır. Böyle bir bildirim işlemek için bu üye işlevini geçersiz kılar. Parametresi için `OnAmbientPropertyChanged` etkilenen ortam özelliğinin dağıtım kimliğidir. Bu dağıtım kimliği değerini gösteren bir veya daha fazla ortam özelliklerine değişti, DISPID_UNKNOWN olabilir ancak hangi özellikleri etkilenmiştir bilgileri kullanılamıyor.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

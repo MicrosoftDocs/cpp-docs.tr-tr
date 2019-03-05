@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: a9d6823a5f82e3d52f82f568d3e3c00b68236fef
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 2af1898312a4f448d618fcfc4e43ea93f5f0bc76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329221"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302786"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)
 
@@ -17,7 +17,7 @@ Visual Studio hata ayıklama ve profil oluşturma çok iş parçacıklı uygulam
 
 ## <a name="debugging"></a>Hata Ayıklama
 
-Visual Studio hata ayıklayıcı içerir **Paralel Yığınlar** penceresinde **Paralel Görevler** penceresinde ve **paralel izleme** penceresi. Daha fazla bilgi için [izlenecek yol: paralel uygulamada hata ayıklama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) ve [nasıl yapılır: paralel İzleme penceresini kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window).
+Visual Studio hata ayıklayıcı içerir **Paralel Yığınlar** penceresinde **Paralel Görevler** penceresinde ve **paralel izleme** penceresi. Daha fazla bilgi için [izlenecek yol: Paralel uygulamada hata ayıklama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) ve [nasıl yapılır: Paralel İzleme penceresini kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window).
 
 ## <a name="profiling"></a>Profil Oluşturma
 
@@ -63,7 +63,6 @@ Aşağıdaki örnekte bir çağrı için izlemenin nasıl etkinleştirileceği g
 
 Çalışma zamanı, çağrı sayısını izler `EnableTracing` ve `DisableTracing`. Bu nedenle, eğer `EnableTracing` birden çok kez çağırmanız gerekir `DisableTracing` izlemeyi devre dışı bırakmak için aynı sayısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)
-

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MFC applications [MFC], Windows Explorer-style
 - Explorer-style applications [MFC], creating
 ms.assetid: f843ab5d-2d5d-41ca-88a4-badc0d2f8052
-ms.openlocfilehash: 3ddeb2e875ccdb45dd0bc2b29a2da3c1498138ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16969b7ef9c0447dfce971af8d329c5b93367041
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564768"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304892"
 ---
 # <a name="creating-a-file-explorer-style-mfc-application"></a>Dosya Gezgini Stilinde MFC Uygulaması Oluşturma
 
@@ -49,9 +49,8 @@ Daha fazla bilgi için bkz.:
 
 - [Uygulama Tasarımı Seçimleri](../../mfc/application-design-choices.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)<br/>
 [Form Tabanlı MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)
-

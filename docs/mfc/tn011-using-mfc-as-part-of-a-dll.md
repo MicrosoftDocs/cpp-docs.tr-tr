@@ -1,5 +1,5 @@
 ---
-title: "TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma"
+title: "TN011: Bir DLL'in bir parçası MFC kullanma"
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.dll
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: f1c98056d5a5e2565e57044b1fb551db4f354f34
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 63e97c3b9260465259d76cf6996d1d389f65ee41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326211"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326458"
 ---
-# <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
+# <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir parçası MFC kullanma
 
 Bu Not, MFC kitaplığını Windows dinamik bağlantı kitaplığı (DLL) bir parçası olarak kullanmanıza olanak sağlayan Normal MFC DLL'leri açıklar. Bu, Windows DLL'leri ve bunları oluşturma konusunda bilgi sahibi olduğunuzu varsayar. MFC uzantı DLL'leri hakkında daha fazla bilgi için oluşturabileceğiniz ile MFC Kitaplığı için uzantıları bakın [MFC DLL sürümü](../mfc/tn033-dll-version-of-mfc.md).
 
@@ -77,7 +77,7 @@ Bu işlev kullanım ile ilgili örnek bakın.
 
 Normal MFC, MFC DLL'lerine DLL'ler ile DLL dosyanızı Nafxcwd.lib veya Nafxcw.lib ve LIBCMT.lib adlı C çalışma zamanı sürümü ile bağlanması gerekir. Bu kitaplıklar, önceden oluşturulmuş ve Visual C++ Kurulum'u çalıştırdığınızda bunları belirterek yüklenebilir.
 
-## <a name="sample-code"></a>Örnek kod
+## <a name="sample-code"></a>Örnek Kod
 
 MFC Gelişmiş kavramlar örneği ile ilgili eksiksiz bir örnek için program bakın. Bu örnekte dikkat edilecek bazı ilgi çekici noktalar aşağıdaki gibidir:
 
@@ -111,8 +111,7 @@ BOOL PromptTraceFlags(TracerData FAR* lpData);
 
 API'sı tarafından kullanılan yapılara, MFC sınıflarından türetilmiş değil ve API üstbilgisinde tanımlanır. Bu DLL ve uygulama arasındaki arabirim karmaşıklığını azaltır ve DLL C programları tarafından kullanılabilir hale getirir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-
