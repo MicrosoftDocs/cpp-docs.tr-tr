@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: 80d28aa6a71adb72b8a3e0f5cd997577d61d0a52
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: ec3048e7bd033e5c296b558dd2083c648bc377e7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678593"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295363"
 ---
 # <a name="coleclientitem-class"></a>Coleclientıtem sınıfı
 
@@ -287,7 +287,7 @@ OLE öğesini katıştırılmış bağlı veya. Katıştırılmış, kendi veri 
 
 `COleClientItem` ile birlikte kullanılabilir [COleDocument](../../mfc/reference/coledocument-class.md), [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), veya [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) sınıfı. Kullanılacak `COleClientItem`, bir sınıf türetmeniz ve uygulama [OnChange](#onchange) tanımlayan kapsayıcı öğe için değişiklikleri nasıl yanıt vereceğini üye işlevi. Yerinde etkinleştirmeyi desteklemek için geçersiz kılma [Ongetıtemposition](#ongetitemposition) üye işlevi. Bu işlev, OLE öğesinin görüntülenen konumu hakkında bilgi sağlar.
 
-Kapsayıcı arabirimi kullanma hakkında daha fazla bilgi için makalelere göz atın [kapsayıcıları: bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [etkinleştirme](../../mfc/activation-cpp.md).
+Kapsayıcı arabirimi kullanma hakkında daha fazla bilgi için makalelere göz atın [kapsayıcıları: Bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [etkinleştirme](../../mfc/activation-cpp.md).
 
 > [!NOTE]
 >  Windows SDK'sı katıştırılmış ve bağlantılı öğeler "nesneler" olarak ifade eder ve "sınıflar" olarak öğelerinin türlerini belirtir Bu başvuru, karşılık gelen bir C++ nesnesi ve OLE kategorisi C++ sınıfı ayırt etmek için "türü" terimi OLE varlık ayırmak için "Item" terimini kullanır.
@@ -1328,13 +1328,13 @@ UINT GetItemState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `COleClientItem::ItemState` numaralandırılmış aşağıdakilerden biri olabilecek değeri: `emptyState`, `loadedState`, `openState`, `activeState`, `activeUIState`. Bu durumları hakkında daha fazla bilgi için bkz [kapsayıcılar: istemci öğesi durumları](../../mfc/containers-client-item-states.md).
+A `COleClientItem::ItemState` numaralandırılmış aşağıdakilerden biri olabilecek değeri: `emptyState`, `loadedState`, `openState`, `activeState`, `activeUIState`. Bu durumları hakkında daha fazla bilgi için bkz [kapsayıcıları: İstemci öğesi durumları](../../mfc/containers-client-item-states.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
 OLE öğesinin durumu değiştiğinde bildirim almak kullanın [OnChange](#onchange) üye işlevi.
 
-Daha fazla bilgi için bkz [kapsayıcılar: istemci öğesi durumları](../../mfc/containers-client-item-states.md).
+Daha fazla bilgi için bkz [kapsayıcıları: İstemci öğesi durumları](../../mfc/containers-client-item-states.md).
 
 ##  <a name="getlaststatus"></a>  COleClientItem::GetLastStatus
 
@@ -1780,7 +1780,7 @@ virtual void OnInsertMenus(
 Boş bir menüye işaret eder.
 
 *lpMenuWidths*<br/>
-Bir dizi kaç menüleri her biri aşağıdaki menü grupları içinde olduğunu gösteren altı uzun değere işaret: dosya, düzenleme, kapsayıcı nesnesini penceresinde Yardım. Kapsayıcı uygulaması, 0, 2 ve 4 bu dizinin öğelerine karşılık gelen dosya, kapsayıcı ve pencere menü grupları sorumludur.
+Altı uzun değerler kaç menüleri her biri aşağıdaki menü grupları içinde olduğunu gösteren bir dizi noktaları: Dosya, düzenleme, kapsayıcı nesnesini penceresinde Yardım. Kapsayıcı uygulaması, 0, 2 ve 4 bu dizinin öğelerine karşılık gelen dosya, kapsayıcı ve pencere menü grupları sorumludur.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2185,7 +2185,7 @@ Bağlantılı öğeler için yeni bir sunum için OLE öğesini almak için bağ
 
 Daha fazla bilgi için [IOleLink::Update](/windows/desktop/api/oleidl/nf-oleidl-iolelink-update) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MFCBIND](../../visual-cpp-samples.md)<br/>
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>

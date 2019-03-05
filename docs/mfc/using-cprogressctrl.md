@@ -9,12 +9,12 @@ helpviewer_keywords:
 - progress controls [MFC], CProgressCtrl
 - progress controls [MFC], using
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
-ms.openlocfilehash: 796eeb13a210bfbfd859e20dcdd001c502560483
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb332d0c6eb55dddcd20d6d4f07fe6f666c015ab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528788"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283117"
 ---
 # <a name="using-cprogressctrl"></a>CProgressCtrl Kullanma
 
@@ -32,7 +32,6 @@ ms.locfileid: "50528788"
 
 - [İlerleme Durumu Denetimini Düzenleme](../mfc/manipulating-the-progress-control.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetimler](../mfc/controls-mfc.md)
-

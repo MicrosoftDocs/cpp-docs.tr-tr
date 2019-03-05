@@ -1,5 +1,5 @@
 ---
-title: CComObjectRoot sınıfı
+title: CComObjectRoot Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectRoot
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectRoot class
 ms.assetid: f8797c38-6e73-4f67-85c2-71654cffa8eb
-ms.openlocfilehash: 4761aa9ae9c8ffacfb393311d7e058b1450b4628
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a9ffa1813fb15297d209894050b6bcce6802df2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554982"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298652"
 ---
-# <a name="ccomobjectroot-class"></a>CComObjectRoot sınıfı
+# <a name="ccomobjectroot-class"></a>CComObjectRoot Class
 
 Bu tür tanımı, [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) iş parçacığı modeli sunucusunun varsayılan şablonlaştırılmış.
 
@@ -34,7 +34,7 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
 
 **Başlık:** atlcom.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>

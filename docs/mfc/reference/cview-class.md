@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: 679cdc5b5a0a85ade09fe1999e8de40300a8ae8e
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: fe9b282fd248f8dd03a6a7f078c03866d1b14b2d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694393"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305022"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
@@ -334,7 +334,7 @@ virtual DROPEFFECT OnDragEnter(
 İşaret [COleDataObject](../../mfc/reference/coledataobject-class.md) görünümün bırakma alanına sürüklenen.
 
 *dwKeyState*<br/>
-Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 *Noktası*<br/>
 Fare konumunu istemci alanına göre görüntüle.
@@ -357,7 +357,7 @@ Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../vi
 
 Varsayılan uygulama, hiçbir şey yapma ve DROPEFFECT_NONE dönüş sağlamaktır.
 
-Bu işlev gelecekteki çağrılar için hazırlamak için geçersiz kılma [OnDragOver](#ondragover) üye işlevi. Daha sonra kullanmak için şu anda veri nesnesinden gerekli herhangi bir veri alınacağını `OnDragOver` üye işlevi. Görünüm ayrıca kullanıcıya görsel geribildirim vermek için şu anda güncelleştirilmelidir. Daha fazla bilgi için bkz [sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).
+Bu işlev gelecekteki çağrılar için hazırlamak için geçersiz kılma [OnDragOver](#ondragover) üye işlevi. Daha sonra kullanmak için şu anda veri nesnesinden gerekli herhangi bir veri alınacağını `OnDragOver` üye işlevi. Görünüm ayrıca kullanıcıya görsel geribildirim vermek için şu anda güncelleştirilmelidir. Daha fazla bilgi için bkz [sürükle ve bırak: Bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).
 
 ##  <a name="ondragleave"></a>  CView::OnDragLeave
 
@@ -388,7 +388,7 @@ virtual DROPEFFECT OnDragOver(
 İşaret [COleDataObject](../../mfc/reference/coledataobject-class.md) bırakma hedefi sürüklenen.
 
 *dwKeyState*<br/>
-Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 *Noktası*<br/>
 Görünüm istemci alanına göre fare geçerli konumu.
@@ -411,7 +411,7 @@ Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../vi
 
 Hiçbir şey yapma ve DROPEFFECT_NONE döndürmek için varsayılan uygulamasıdır.
 
-Sürükleme işlemi sırasında kullanıcıya görsel geribildirim vermek için bu işlevi geçersiz kılar. Bu işlev sürekli olarak adlandırılır olduğundan, içerdiği herhangi bir kod mümkün olduğunca hale getirilmiştir. Daha fazla bilgi için bkz [sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).
+Sürükleme işlemi sırasında kullanıcıya görsel geribildirim vermek için bu işlevi geçersiz kılar. Bu işlev sürekli olarak adlandırılır olduğundan, içerdiği herhangi bir kod mümkün olduğunca hale getirilmiştir. Daha fazla bilgi için bkz [sürükle ve bırak: Bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).
 
 ##  <a name="ondragscroll"></a>  CView::OnDragScroll
 
@@ -426,7 +426,7 @@ virtual DROPEFFECT OnDragScroll(
 ### <a name="parameters"></a>Parametreler
 
 *dwKeyState*<br/>
-Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
 
 *Noktası*<br/>
 İmleç, piksel cinsinden ekranına göre konumunu içerir.
@@ -449,7 +449,7 @@ Daha fazla bilgi için bkz. MFC Gelişmiş kavramlar örneği [OCLIENT](../../vi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu olay için özel davranış sağlamak istediğinizde bu işlev geçersiz kılar. İmleç varsayılan kaydırma bölgesi içinde her Pencere kenarlığını içine sürüklendiğinde varsayılan uygulama, windows otomatik olarak kayar. Daha fazla bilgi için bkz [sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).
+Bu olay için özel davranış sağlamak istediğinizde bu işlev geçersiz kılar. İmleç varsayılan kaydırma bölgesi içinde her Pencere kenarlığını içine sürüklendiğinde varsayılan uygulama, windows otomatik olarak kayar. Daha fazla bilgi için bkz [sürükle ve bırak: Bir bırakma hedefi uygulama](../../mfc/drag-and-drop-implementing-a-drop-target.md).
 
 ##  <a name="ondraw"></a>  CView::OnDraw
 
@@ -869,7 +869,7 @@ Genellikle, herhangi bir doğrudan çizim gerçekleştirmemelisiniz `OnUpdate`. 
 
 Varsa *lHint* 0'dır ve *pHint* null, belge genel güncelleştirme bildirim gönderdi. Bir görünüm genel güncelleştirme bildirim aldığında veya ipucu çözülemiyor, onun tüm istemci alanını geçersiz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek MDIDOCVW](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

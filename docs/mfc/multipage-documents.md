@@ -25,12 +25,12 @@ helpviewer_keywords:
 - printing [MFC], pagination
 - documents [MFC], paginating
 ms.assetid: 69626b86-73ac-4b74-b126-9955034835ef
-ms.openlocfilehash: b4ec9f456443b9cd180f1558946829281bc10a36
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 81e03657977d31827c5c7c3d3272e3d4255a4a8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176386"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295012"
 ---
 # <a name="multipage-documents"></a>Birden Fazla Belge
 
@@ -99,7 +99,7 @@ Yazdırılacak belgenin her sayfa için framework görünümü sınıfınızda, 
 
 [OnPrint](../mfc/reference/cview-class.md#onprint) sayfanın yazdırma üye işlevini gerçekleştirir. Makaleyi [nasıl varsayılan yazdırma yapılır](../mfc/how-default-printing-is-done.md) Framework'ün çağırması gösterir [OnDraw](../mfc/reference/cview-class.md#ondraw) yazdırma gerçekleştirmek için bir yazıcı cihaz bağlamı ile. Daha kesin framework çağrıları `OnPrint` ile bir `CPrintInfo` yapısı ve bir cihaz bağlamı ve `OnPrint` cihaz bağlamına geçirir `OnDraw`. Geçersiz kılma `OnPrint` yazdırma sırasında yalnızca ve ekran için yapılması herhangi bir işleme gerçekleştirmek için. Örneğin, üstbilgilerinde veya altbilgilerinde yazdırmak için (bkz [üstbilgiler ve altbilgiler](../mfc/headers-and-footers.md) daha fazla bilgi için). Ardından çağırın `OnDraw` geçersiz kılmasını gelen `OnPrint` hem ekran için ortak işleme ve yazdırma.
 
-Olgu, `OnDraw` hem de görüntüleme ekranı ve yazdırma anlamına gelir, uygulamanızın WYSIWYG olduğunu işleme desteklemez: "ne görüyorsanız onu alırsınız sağlıyor." Ancak, bir WYSIWYG uygulama yazma olmayan varsayalım. Örneğin, bir metin düzenleyicisi yazdırma için kalın yazı tipi kullanan, ancak ekranda kalın metin göstermek için denetim kodlarını görüntüler göz önünde bulundurun. Böyle bir durumda, kullandığınız `OnDraw` kesinlikle için ekran görüntüsü. Ne zaman geçersiz kılmanız `OnPrint`, çağrı yerine `OnDraw` ayrı bir çizim işlevi çağrısı. Bu işlev, ekranda gösterme öznitelikleri kullanarak kağıda görüntülenme şeklini belge çizer.
+Olgu, `OnDraw` hem de görüntüleme ekranı ve yazdırma anlamına gelir, uygulamanızın WYSIWYG olduğunu işleme desteklemez: "Aldığınızdır gördüğünüz." Ancak, bir WYSIWYG uygulama yazma olmayan varsayalım. Örneğin, bir metin düzenleyicisi yazdırma için kalın yazı tipi kullanan, ancak ekranda kalın metin göstermek için denetim kodlarını görüntüler göz önünde bulundurun. Böyle bir durumda, kullandığınız `OnDraw` kesinlikle için ekran görüntüsü. Ne zaman geçersiz kılmanız `OnPrint`, çağrı yerine `OnDraw` ayrı bir çizim işlevi çağrısı. Bu işlev, ekranda gösterme öznitelikleri kullanarak kağıda görüntülenme şeklini belge çizer.
 
 ##  <a name="_core_printer_pages_vs.._document_pages"></a> Yazıcı sayfaları vs. Belge sayfaları
 
@@ -123,7 +123,7 @@ Varsayılan uygulaması `OnPrepareDC` ayarlar *m_bContinuePrinting* için **FALS
 
 - [GDI kaynaklarını ayırma](../mfc/allocating-gdi-resources.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yazdırma](../mfc/printing.md)<br/>
 [CView Sınıfı](../mfc/reference/cview-class.md)<br/>

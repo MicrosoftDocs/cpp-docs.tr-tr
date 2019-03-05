@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-ms.openlocfilehash: b7d1a5bbc63781e865be8053cb4365d6a8590935
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d511f8fa751d61c3c490a184dae660096dd9f76f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529183"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285912"
 ---
 # <a name="contexts"></a>Bağlamlar
 
@@ -26,7 +26,7 @@ Bu belge, eşzamanlılık çalışma zamanı bağlamları rolünü açıklar. Bi
 
 ### <a name="example"></a>Örnek
 
-Kullanan bir örnek için `wait` geçerli bağlam elde etmek üzere işlev ve diğer bağlamlarda çalıştırmak bkz. Bu nedenle izin [nasıl yapılır: yürütme sırasını etkisi için zamanlama grupları kullanın](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
+Kullanan bir örnek için `wait` geçerli bağlam elde etmek üzere işlev ve diğer bağlamlarda çalıştırmak bkz. Bu nedenle izin [nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
 
 ## <a name="the-context-class"></a>Bağlam sınıfı
 
@@ -46,7 +46,7 @@ Her bir çifti yapılan çağrıların eşleşmelidir `Context::Block` ve `Conte
 
 #### <a name="example"></a>Örnek
 
-Kullanan bir örnek için `Context::Block`, `Context::Unblock`, ve `Context::Yield` işbirlikçi semafor sınıfını uygulamak için bkz [nasıl yapılır: bağlam sınıfını Guyana semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).
+Kullanan bir örnek için `Context::Block`, `Context::Unblock`, ve `Context::Yield` işbirlikçi semafor sınıfını uygulamak için bkz [nasıl yapılır: Bağlam sınıfını işbirlikçi semafor uygulamak için kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md).
 
 ##### <a name="oversubscription"></a>Aşırı abonelik
 
@@ -66,12 +66,11 @@ Aşırı abonelik birden çok kez geçerli bağlamdan etkinleştirebilirsiniz, a
 
 ###### <a name="example"></a>Örnek
 
-Bir ağ bağlantısından veri okuyarak neden dengelemek için aşırı talep kullanan bir örnek için bkz: [nasıl yapılır: kullanım gecikmeyi uzaklığı gecikme](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+Bir ağ bağlantısından veri okuyarak neden dengelemek için aşırı talep kullanan bir örnek için bkz: [nasıl yapılır: Gecikmeyi dengelemek için aşırı aboneliği kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)<br/>
-[Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
+[Nasıl yapılır: Bağlam Sınıfını İşbirliğine Dayalı Semafor Uygulamak için Kullanma](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
 [Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)
-

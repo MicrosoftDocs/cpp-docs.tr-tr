@@ -8,12 +8,12 @@ helpviewer_keywords:
 - windows [C++], ATL
 - ATL, message handlers
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
-ms.openlocfilehash: 6d812c70e7cec4739ee9477d30ad9744b4fddc50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cc7631ac9e02891cee725b47133a273e756759d6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565509"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302461"
 ---
 # <a name="adding-an-atl-message-handler"></a>ATL ileti işleyicisi ekleme
 
@@ -27,7 +27,6 @@ ATL ileti işleyicisi ekleme için yalnızca aşağıdaki koşullar geçerlidir:
 
 - Yeni ileti eşlemesi girişleri ana ileti eşlemesine eklenir. Sihirbaz, diğer ileti eşlemeleri ve zincirleme algılamaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Uygulama](../atl/implementing-a-window.md)
-

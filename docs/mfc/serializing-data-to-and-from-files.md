@@ -12,12 +12,12 @@ helpviewer_keywords:
 - data [MFC], serializing
 - document data [MFC]
 ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
-ms.openlocfilehash: 87e216f1959a7c169673822ffa7041ed511817d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: af3cde9445ae4b128e7e54a5f154db01b2eecd3b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473625"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279269"
 ---
 # <a name="serializing-data-to-and-from-files"></a>Dosyalarda Verileri Seri Hale Getirme
 
@@ -45,7 +45,6 @@ Otomatik olarak yanıt veren Dosya menüsünün açık olarak framework kaydedin
 
 Genel olarak, sınıf türü verilerini kendisini seri hale getiremiyor olmalıdır. Diğer bir deyişle, bir nesne için bir arşiv geçirdiğinizde, nesnenin kendisini arşive yazma ve kendisini arşivden okuma bilmeniz gerekir. MFC sınıfları bu şekilde serileştirilebilir yapmak için destek sağlar. Bir veri türü tanımlamak için bir sınıf tasarlamak ve bu tür veriler seri hale getirmek istediğinize, seri hale getirme için tasarlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belgeleri Kullanma](../mfc/using-documents.md)
-

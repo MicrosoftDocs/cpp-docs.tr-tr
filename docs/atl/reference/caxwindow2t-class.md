@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAxWindow2 class
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
-ms.openlocfilehash: 3e28bfe15c55342cbdfb50b125243c170ba97698
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d5991dcbf79d1c2415594636a09908586d1dc2f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665443"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326523"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T sınıfı
 
@@ -220,7 +220,7 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 *hWnd*<br/>
 Var olan bir pencere tanıtıcısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Denetim kapsamı SSS](../../atl/atl-control-containment-faq.md)

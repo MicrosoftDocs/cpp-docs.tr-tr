@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-ms.openlocfilehash: 6c439ace92a407c8de3a200dedd61428b9bdbc28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca9035ecfcde0c2e82628c5509a16557a487b8cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437381"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290462"
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 
@@ -263,7 +263,7 @@ Yüklü simgesi için bir tanıtıcı.
 
 Menü öğesi üzerinde görüntülenecek simge yüklemek için bu yöntemi çağırın. Bu yöntem aracını kullanan yürütülebilir dosya simge arar. Varsayılan bir simge yoksa simgesi sağlanan [CUserTool::LoadDefaultIcon](#loaddefaulticon) yerine kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

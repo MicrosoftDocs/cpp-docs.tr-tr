@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, options
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
-ms.openlocfilehash: e607e35b2b3970f329692ba8d2c612d7f6a6591b
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1dd136739162c72d8064deb9b1498794f1985e1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522317"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282987"
 ---
 # <a name="options-atl-control-wizard"></a>ATL denetimi Sihirbazı, Seçenekler
 
@@ -23,9 +23,9 @@ Sihirbazın bu sayfası, oluşturmakta olduğunuz denetim türünü ve içerdiğ
 
 Oluşturmak istediğiniz denetim türü.
 
-- **Standart denetim**: bir ActiveX denetimi.
+- **Standart denetim**: ActiveX denetimi.
 
-- **Bileşik Denetim**: (iletişim kutusuna benzer) içeren bir ActiveX denetimi diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim şunları içerir:
+- **Bileşik Denetim**: (İletişim kutusuna benzer) içerebilir bir ActiveX denetimini diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim şunları içerir:
 
   - Bileşik Denetim uygulayan iletişim kutusu için bir şablon.
 
@@ -39,7 +39,7 @@ Oluşturmak istediğiniz denetim türü.
 
     Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true. Bir havuz eşleme uygular. Daha fazla bilgi için [DHTML denetimi desteği](../../atl/atl-support-for-dhtml-controls.md).
 
-- **DHTML denetimi**: HTML kullanarak kullanıcı arabirimi, bir ATL DHTML denetimini belirtir. DHTML kullanıcı Arabirimi sınıfı bir COM eşlemesi içerir. Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true.
+- **DHTML denetimi**: ATL DHTML denetimini kullanarak HTML kullanıcı arabirimi belirtir. DHTML kullanıcı Arabirimi sınıfı bir COM eşlemesi içerir. Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true.
 
    Daha fazla bilgi için [DHTML denetim projesinin öğelerini tanımlama](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
@@ -51,27 +51,27 @@ Oluşturmak istediğiniz denetim türü.
 
 Oluşturmakta olduğunuz Denetim toplama desteği ekler. Daha fazla bilgi için [toplama](../../atl/aggregation.md).
 
-- **Evet**: toplanabilir bir denetim oluşturursunuz.
+- **Evet**: Toplanabilir bir denetim oluşturursunuz.
 
-- **Hayır**: toplanamaz bir denetim oluşturursunuz.
+- **Hayır**: Toplanamaz bir denetim oluşturursunuz.
 
-- **Yalnızca**: yalnızca toplama oluşturulan bir denetim oluşturursunuz.
+- **Yalnızca**: Yalnızca toplama oluşturulan bir denetim oluşturursunuz.
 
 ### <a name="threading-model"></a>İş parçacığı modeli
 
 İş parçacığı modeli denetim tarafından kullanılan belirtir.
 
-- **Tek**: denetim, yalnızca birincil COM iş parçacığında çalışır.
+- **Tek**: Denetim, yalnızca birincil COM iş parçacığında çalışır.
 
-- **Apartman**: denetimin herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.
+- **Apartman**: Denetimin tüm tek iş parçacığı grubu oluşturulabilir. Varsayılan.
 
 ### <a name="interface"></a>Arabirim
 
 Arabirim türü bu denetim için kapsayıcı gösterir.
 
-- **Çift**: özellikler ve yöntemler aracılığıyla kullanıma sunduğu bir arabirim oluşturur `IDispatch` ve doğrudan VTBL.
+- **Çift**: Özellikler ve yöntemler aracılığıyla kullanıma sunduğu bir arabirim oluşturur `IDispatch` ve doğrudan VTBL.
 
-- **Özel**: doğrudan bir VTBL aracılığıyla yöntemlerini gösteren bir arabirim oluşturur.
+- **Özel**: Doğrudan bir VTBL aracılığıyla yöntemlerini gösteren bir arabirim oluşturur.
 
    Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](/windows/desktop/com/marshaling-details) daha fazla bilgi için Windows SDK.
 
@@ -81,11 +81,10 @@ Arabirim türü bu denetim için kapsayıcı gösterir.
 
 Ek çeşitli destek denetimi için ayarlar.
 
-- **Bağlantı noktaları**: nesneniz için bağlantı noktaları sağlar, nesnenin sınıfı türetilen yaparak [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve bir kaynak arabirimi kullanıma izin veren.
+- **Bağlantı noktaları**: Nesneniz için bağlantı noktaları, nesnenin sınıfı türetilen yaparak sağlar [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve bir kaynak arabirimi kullanıma olanak tanır.
 
-- **Lisanslı**: denetim için destek ekler [lisanslama](/windows/desktop/com/licensing). Lisanslı Denetimler, yalnızca istemci makinede doğru lisansa varsa barındırılabilir.
+- **Lisanslı**: Denetim için destek ekler [lisanslama](/windows/desktop/com/licensing). Lisanslı Denetimler, yalnızca istemci makinede doğru lisansa varsa barındırılabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
-

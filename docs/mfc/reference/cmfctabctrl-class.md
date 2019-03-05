@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 8388a79bf7c85f3d603bd4ef234947e872534cba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8dc8c51cc1847d29b76e2017db4c1368b35b9a9f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505133"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281687"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 
@@ -322,7 +322,7 @@ BOOL Create(
 *nID*<br/>
 [in] Sekme denetiminin kimliği.
 
-*Konum*<br/>
+*konum*<br/>
 [in] Sekmeleri konumu. LOCATION_BOTTOM varsayılan değerdir. Daha fazla bilgi için açıklamalara bakın.
 
 *bCloseBtn*<br/>
@@ -874,7 +874,7 @@ virtual DROPEFFECT OnDragEnter(
 [in] Kullanıcının sürüklediği verilerini içeren bir veri nesnesi işaret eder.
 
 *dwKeyState*<br/>
-[in] Değiştirici tuşları durumunu içerir. Bu parametre aşağıdaki değerlerden biri bit düzeyinde bir birleşim (veya) olan: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON. Daha fazla bilgi için **ileti parametreleri** bölümünü [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).
+[in] Değiştirici tuşları durumunu içerir. Bu parametre aşağıdaki değerlerden biri bit düzeyinde bir birleşim (veya) verilmiştir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON. Daha fazla bilgi için **ileti parametreleri** bölümünü [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).
 
 *Noktası*<br/>
 [in] İstemci koordinatları imleç geçerli konumunu içerir.
@@ -1042,7 +1042,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 *uiID*<br/>
 [in] Görüntü listesi içeren bir bit eşlemi kaynak kimliği.
 
-*CX*<br/>
+*cx*<br/>
 [in] Her resminin piksel cinsinden genişliği. Varsayılan değer 15'tir.
 
 *clrTransp*<br/>
@@ -1135,7 +1135,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 Bu yöntem yalnızca düz sekmeleri görüntüleyen bir sekme denetimi etkiler. Kaydırma çubuğu, aynı anda tüm sekmeler etkiler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

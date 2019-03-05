@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma'
+title: 'Nasıl yapılır: Ayırma kullanın ve bellek performansını artırmak ücretsiz'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Alloc and Free, using [Concurrency Runtime]
 - Using Alloc and Free [Concurrency Runtime]
 ms.assetid: e1fab9e8-a97d-4104-bead-e95958db79f9
-ms.openlocfilehash: d91734859cd7d3499979566f427c10a0f026941b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f55bf360ac2b4c7162c1ed2b917ac6ce8c7cd11f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467827"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296130"
 ---
-# <a name="how-to-use-alloc-and-free-to-improve-memory-performance"></a>Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma
+# <a name="how-to-use-alloc-and-free-to-improve-memory-performance"></a>Nasıl yapılır: Ayırma kullanın ve bellek performansını artırmak ücretsiz
 
 Bu belgenin nasıl kullanıldığını gösterir [concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) ve [concurrency::Free](reference/concurrency-namespace-functions.md#free) bellek performansını artırmak için işlevleri. Üç farklı türleri için paralel bir dizinin öğeleri tersine çevirmek için gerekli zamanı karşılaştırır her belirtin `new` ve `delete` işleçleri.
 
@@ -58,9 +58,8 @@ Bu örnekte, bir tür kullanan `Alloc` ve `Free` işlevleri sağlayan en iyi bel
 
 **cl.exe/ehsc allocators.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bellek Yönetimi İşlevleri](../../parallel/concrt/memory-management-functions.md)<br/>
 [Alloc işlevi](reference/concurrency-namespace-functions.md#alloc)<br/>
 [Free işlevi](reference/concurrency-namespace-functions.md#free)
-

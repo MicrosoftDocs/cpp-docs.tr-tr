@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CSettingsStoreSP [MFC], Create
 - CSettingsStoreSP [MFC], SetRuntimeClass
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
-ms.openlocfilehash: f6bcbce291aec1941359504518e26ca936edb9e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c7a992b983552340ebe21e59d2ee9a667841ec0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604483"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275200"
 ---
 # <a name="csettingsstoresp-class"></a>CSettingsStoreSP sınıfı
 
@@ -145,7 +145,7 @@ Başarılı olursa TRUE; YANLIŞ bir sınıf tarafından tanımlanan *pRTI* tür
 
 Kullanabileceğiniz [CSettingsStoreSP sınıfı](../../mfc/reference/csettingsstoresp-class.md) sınıflardan türetme `CSettingsStore`. Bu yöntemi kullanmak `SetRuntimeClass` türetilen özel bir sınıfın nesnelerini oluşturmak istiyorsanız `CSettingsStore`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

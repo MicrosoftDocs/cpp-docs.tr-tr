@@ -19,12 +19,12 @@ helpviewer_keywords:
 - TVS_HASBUTTONS [MFC]
 - tree controls [MFC], styles
 ms.assetid: f43faebd-a355-479e-888a-bf0673d5e1b4
-ms.openlocfilehash: 59cbed32d9be8fac84284b621bd4d1e17d5d92cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d03961c1c905689af5894897a59262c8f00e73fa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453475"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290775"
 ---
 # <a name="tree-control-styles"></a>Ağaç Denetimi Stilleri
 
@@ -40,8 +40,7 @@ Sahip bir ağaç denetimi **TVS_HASBUTTONS** stili, her bir üst öğenin sol ta
 
 **TVS_NOTOOLTIPS** stili, ağaç görünümü denetimleri otomatik araç ipucu özelliğini devre dışı bırakır. Bu özellik otomatik olarak tüm başlığını şu anda görünür değilse, fare imleci altında öğesinin başlığını içeren bir araç ipucu görüntülenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

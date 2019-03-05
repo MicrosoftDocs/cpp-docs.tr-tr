@@ -1,19 +1,19 @@
 ---
-title: 'Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma'
+title: 'Özel durumlar: Kendi İşlevlerinizden özel durumları atma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - throwing exceptions [MFC], from functions
 - functions [MFC], throwing exceptions
 - exceptions [MFC], throwing
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
-ms.openlocfilehash: 4d0961bff706ccf86eb09d2dcbe695a13bfa8702
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 030bf3db9ff305f35cbfb0b518c8704114ce083d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558999"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297950"
 ---
-# <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
+# <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel durumlar: Kendi İşlevlerinizden özel durumları atma
 
 Yalnızca MFC veya diğer kitaplıkları olarak işlevleri tarafından gönderilen özel durumları yakalamasını MFC özel durum işleme paradigma kullanmak mümkündür. Özel durumları olarak sınırlamasıyla işlevleri yazıyorsanız kitaplık kodu tarafından oluşturulan özel durumları yakalama ek olarak, özel durumlar kendi kodunuza oluşturabilecek.
 
@@ -40,7 +40,6 @@ Bir özel durum oluştuğunda yürütme geçerli işlevin durdurulur ve doğruda
 > [!NOTE]
 >  MFC'nin varsayılan özel durumların işlenmesiyle uygulandığı yalnızca işaretçiler `CException` nesneleri (ve nesnelerin `CException`-türetilmiş sınıflar). Yukarıdaki örnekte, özel durum mekanizması MFC'nin atlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

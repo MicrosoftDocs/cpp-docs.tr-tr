@@ -7,12 +7,12 @@ helpviewer_keywords:
 - overriding, Overridables comment in MFC source files
 - comments, MFC
 ms.assetid: 8968dea5-0d94-451f-bcb2-991580e65ba2
-ms.openlocfilehash: 9efba74676ba118659601522fc915bf25f607116
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90d6a585f62de589299147edce87332d96c6dbb8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554178"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282051"
 ---
 # <a name="-overridables-comment"></a>// Geçersiz Kılınabilen Öğelerle İlgili Açıklama
 
@@ -29,7 +29,7 @@ Bazı sınıflarda da yorumu görebilirsiniz `// Advanced Overridables`. Bunlar 
 > [!NOTE]
 >  Bu makalede açıklanan kuralları aynı zamanda da genel olarak, otomasyon (eski adıyla OLE Otomasyonu da bilinir) yöntemleri ve özellikleri için çalışır. Otomasyon yöntemleri MFC işlemlerine benzer. Otomasyon özellikleri, MFC öznitelikleri benzerdir. Otomasyon olaylarına (eski adı OLE denetimleri bilinen, ActiveX denetimleri için desteklenir) için MFC geçersiz kılınabilir üye işlevleri benzerdir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)<br/>
 [Açıklamalara Bir Örnek](../mfc/an-example-of-the-comments.md)<br/>
@@ -37,4 +37,3 @@ Bazı sınıflarda da yorumu görebilirsiniz `// Advanced Overridables`. Bunlar 
 [/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)<br/>
 [Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)<br/>
 [/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)
-

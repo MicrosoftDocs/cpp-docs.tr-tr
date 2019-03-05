@@ -17,12 +17,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-ms.openlocfilehash: e2deed5e3fb63f46d83cf4c6f0d3c13525e93a2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90c80dbc5c8b6788f3afad3cf77d796139fbd946
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592545"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326653"
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml yardımcı makroları
 
@@ -257,6 +257,6 @@ Bir görüntü öğesi için kaynak özelliği almak için DDX_DHtml_Img_Src mak
 
 Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLIMGELEMENT_SRC kullanarak dağıtım kimliği
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDHtmlDialog Sınıfı](../../mfc/reference/cdhtmldialog-class.md)

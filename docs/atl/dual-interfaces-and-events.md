@@ -5,12 +5,12 @@ helpviewer_keywords:
 - events [C++], dual interfaces
 - dual interfaces, events
 ms.assetid: bb382f7c-e885-4274-bf07-83f3602615d2
-ms.openlocfilehash: f94e87f077846af8d61b06145f776f385051e79f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01233edb63145d69d335349bb9dff91e6a4aca5a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640602"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292564"
 ---
 # <a name="dual-interfaces-and-events"></a>Çift arabirimler ve olaylar
 
@@ -21,7 +21,6 @@ Bir çift olarak bir olay arabirimi tasarlamak mümkün olsa da, bunu yapmak iç
 
 Daha fazla çift olay arabirimlerden kaçının nedenleri vardır; Visual Basic ya da Internet Explorer bunları destekler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
-

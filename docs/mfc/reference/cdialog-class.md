@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: 9eac0f7efdacc6181d8aaa15398f4d7365c0edd3
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: d3c3bca7932b9e9c7e7723b286c83ca3694a9968
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178505"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305100"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 
@@ -556,10 +556,9 @@ void SetHelpID(UINT nIDR);
 *nIDR*<br/>
 Bağlama duyarlı Yardım kimliğini belirtir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek DLGCBR32](../../visual-cpp-samples.md)<br/>
 [MFC örnek DLGTEMPL](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

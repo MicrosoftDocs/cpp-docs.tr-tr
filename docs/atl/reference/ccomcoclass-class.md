@@ -1,5 +1,5 @@
 ---
-title: CComCoClass sınıfı
+title: CComCoClass Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComCoClass
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - CComCoClass class
 - aggregation [C++], aggregation models
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
-ms.openlocfilehash: 51da70cc1972e6a69e28d7699703f803b6fa8701
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c52e1a95483807f9c842b0b904cd2314258f0e26
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630704"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282649"
 ---
-# <a name="ccomcoclass-class"></a>CComCoClass sınıfı
+# <a name="ccomcoclass-class"></a>CComCoClass Class
 
 Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak için yöntemler sağlar.
 
@@ -221,6 +221,6 @@ Varsayılan uygulama, NULL döndürür. Bu yöntem ile geçersiz kılabilirsiniz
 
 ATL projesi Sihirbazı hakkında daha fazla bilgi için bkz [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

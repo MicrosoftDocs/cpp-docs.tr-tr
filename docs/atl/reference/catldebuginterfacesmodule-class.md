@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _ATL_DEBUG_QI macro
 - CAtlDebugInterfacesModule class
 ms.assetid: a193b567-8191-4115-a963-a10805972bac
-ms.openlocfilehash: 014d9ad3e503b0927dabac2cacb43fa38c48114a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a056ccd4f78daaf16a97f0447999a8fbc828b99
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483453"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292789"
 ---
 # <a name="catldebuginterfacesmodule-class"></a>Catldebugınterfacesmodule sınıfı
 
@@ -33,7 +33,7 @@ class CAtlDebugInterfacesModule
 
 **Başlık:** atlbase.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

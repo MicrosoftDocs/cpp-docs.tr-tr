@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Internet applications [MFC], ActiveX controls
 - networks [MFC], downloading with ActiveX controls
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-ms.openlocfilehash: 7becf4d4f579fa4b9b954935f55a06b2fed78593
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c019c922a5690d4ead861c40bed3c0c1c76cea28
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603716"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283013"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 
@@ -49,7 +49,7 @@ ActiveX denetimleri, Internet'e sınırlı değildir. Denetimin, kapsayıcı tar
 
 Denetimlerinizi performansını artırmak için verimlilik konuları üzerinde bu ipuçlarını izleyin:
 
-- Makalesinde açıklanan teknikleri uygulamak [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
+- Makalesinde açıklanan teknikleri uygulamak [ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md).
 
 - Bir denetimi nasıl örneği göz önünde bulundurun.
 
@@ -89,7 +89,7 @@ Uygulama Sihirbazı'nı kullanarak yeni bir denetim oluştururken, zaman uyumsuz
 
 1. Üzerinde **denetim ayarları** sayfasında **zaman uyumsuz olarak özelliklerini yükler**. Bu seçeneğin belirlenmesi hazır durumda özelliği ve hazır durumu değişti olayını sizin için ayarlar.
 
-   Diğer iyileştirmeler gibi seçebilirsiniz **penceresiz etkinleştirme**, açıklanan [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
+   Diğer iyileştirmeler gibi seçebilirsiniz **penceresiz etkinleştirme**, açıklanan [ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md).
 
 1. Seçin **son** projeyi oluşturmak için.
 
@@ -183,7 +183,7 @@ Bir nesne etiketi ve özniteliklerinin bir denetimi Web sayfasına eklemek için
 
 ## <a name="updating-an-existing-ole-control-to-use-new-activex-control-features"></a>Yeni bir ActiveX denetimi özelliklerini kullanmak için mevcut bir OLE denetim güncelleştiriliyor
 
-OLE denetim 4.2 önce Visual C++'ın bir sürümüyle oluşturulduysa, performansı ve işlevselliği geliştirmek için atabileceğiniz adımlar vardır. Bu değişiklikler hakkında ayrıntılı bilgi için bkz: [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
+OLE denetim 4.2 önce Visual C++'ın bir sürümüyle oluşturulduysa, performansı ve işlevselliği geliştirmek için atabileceğiniz adımlar vardır. Bu değişiklikler hakkında ayrıntılı bilgi için bkz: [ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md).
 
 Varolan bir denetimi zaman uyumsuz bir özellik destek ekliyorsanız, hazır durumunda özellik eklemeniz gerekir ve `ReadyStateChange` olay kendiniz. Denetiminiz için bir oluşturucuda ekleyin:
 
@@ -191,8 +191,7 @@ Varolan bir denetimi zaman uyumsuz bir özellik destek ekliyorsanız, hazır dur
 
 Kodunuzu çağırarak indirilen olarak hazır durumda güncelleştirilir [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate). Tek bir yerde, çağırın `InternalSetReadyState` dandır `OnProgress` , geçersiz kılma `CDataPathProperty`-türetilmiş sınıf.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
-

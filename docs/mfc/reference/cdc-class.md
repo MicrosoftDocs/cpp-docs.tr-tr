@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 0c8944846e249e4f752183b057bf8d2857022ab5
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: fc5d41221ab0f9679e7d38a399464efc1a38dd52
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179064"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305087"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -551,7 +551,7 @@ class CDC : public CObject
 |[CDC::LPtoHIMETRIC](#lptohimetric)|Mantıksal birimler HIMETRIC birimleri dönüştürür.|
 |[CDC::MaskBlt](#maskblt)|Verilen maske ve ızgara işlemi kullanarak kaynak ve hedef bit eşlemler için renk verileri birleştirir.|
 |[CDC::ModifyWorldTransform](#modifyworldtransform)|Gerçek koordinat dönüştürmesini için belirtilen modu kullanarak bir cihaz bağlamı değiştirir.|
-|[CDC::moveTo](#moveto)|Geçerli konumun taşır.|
+|[CDC::MoveTo](#moveto)|Geçerli konumun taşır.|
 |[CDC::OffsetClipRgn](#offsetcliprgn)|Belirli bir cihazın kırpma bölgesini taşır.|
 |[CDC::OffsetViewportOrg](#offsetviewportorg)|Geçerli Görünüm penceresinin başlangıç noktası koordinatları göre Görünüm penceresi kaynağı değiştirir.|
 |[CDC::OffsetWindowOrg](#offsetwindoworg)|Göreli koordinatları geçerli pencere kaynak penceresi kaynağı değiştirir.|
@@ -661,7 +661,7 @@ Belirli kullanımlar için Microsoft Foundation Class Kitaplığı ile türetilm
 
 Ne zaman ihtiyacınız olabilecek her ikisi de metin ölçüm bilgileri zamanlar `m_hDC` ve `m_hAttribDC` cihaz bağlamları. Bu özellik aşağıdaki çiftleri işlevleri sağlar:
 
-|M_hAttribDC kullanır|M_hDC kullanır|
+|Uses m_hAttribDC|M_hDC kullanır|
 |-----------------------|-----------------|
 |[GetTextExtent](#gettextextent)|[GetOutputTextExtent](#getoutputtextextent)|
 |[GetTabbedTextExtent](#gettabbedtextextent)|[GetOutputTabbedTextExtent](#getoutputtabbedtextextent)|
@@ -888,7 +888,7 @@ BOOL Arc(
 *x1*<br/>
 (Mantıksal birimler cinsinden içinde) sınırlayıcı dikdörtgenin sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 (Mantıksal birimler cinsinden içinde) sınırlayıcı dikdörtgenin sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -906,7 +906,7 @@ Yayı tanımlayan noktasının y koordinatını (mantıksal birimler cinsinden) 
 *X4*<br/>
 Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının x koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
-*Y4*<br/>
+*y4*<br/>
 Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının y koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
 *lpRect*<br/>
@@ -958,7 +958,7 @@ BOOL ArcTo(
 *x1*<br/>
 (Mantıksal birimler cinsinden içinde) sınırlayıcı dikdörtgenin sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 (Mantıksal birimler cinsinden içinde) sınırlayıcı dikdörtgenin sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -976,7 +976,7 @@ Yayı tanımlayan noktasının y koordinatını (mantıksal birimler cinsinden) 
 *X4*<br/>
 Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının x koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
-*Y4*<br/>
+*y4*<br/>
 Yayın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının y koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
 *lpRect*<br/>
@@ -1141,7 +1141,7 @@ BOOL Chord(
 *x1*<br/>
 Akorun sol üst köşesinin x koordinatını (mantıksal birimler cinsinden) dikdörtgene sınırlayıcı belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Akorun sol üst köşesinin y koordinatını (mantıksal birimler cinsinden) dikdörtgene sınırlayıcı belirtir.
 
 *x2*<br/>
@@ -1159,7 +1159,7 @@ Tel tanımlayan noktasının y koordinatını (mantıksal birimler cinsinden) no
 *X4*<br/>
 Tel'ın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının x koordinatını belirtir.
 
-*Y4*<br/>
+*y4*<br/>
 Tel'ın uç noktası (mantıksal birimler cinsinden) tanımlayan noktasının y koordinatını belirtir.
 
 *lpRect*<br/>
@@ -1434,7 +1434,7 @@ Alt rengini ve üç boyutlu dikdörtgenin sol tarafında belirtir.
 *Y*<br/>
 Üç boyutlu dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
 
-*CX*<br/>
+*cx*<br/>
 Üç boyutlu dikdörtgenin genişliğini belirtir.
 
 *CY*<br/>
@@ -1929,7 +1929,7 @@ BOOL Ellipse(LPCRECT lpRect);
 *x1*<br/>
 Mantıksal x koordinatını elips'ın sınırlayıcı dikdörtgenin sol üst köşesinin belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Mantıksal y koordinatını elips'ın sınırlayıcı dikdörtgenin sol üst köşesinin belirtir.
 
 *x2*<br/>
@@ -2165,7 +2165,7 @@ int ExcludeClipRect(LPCRECT lpRect);
 *x1*<br/>
 Dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
 
 *x2*<br/>
@@ -2429,7 +2429,7 @@ Dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
 *Y*<br/>
 Hedef dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
 
-*CX*<br/>
+*cx*<br/>
 Dikdörtgenin genişliğini belirtir.
 
 *CY*<br/>
@@ -3187,7 +3187,7 @@ Zaman değerini *nFormat* 0 ise, işlev doldurur bir [GLYPHMETRICS](/windows/des
 *lpgm*<br/>
 Karakter karakter hücrede yerleşimini açıklayan GLYPHMETRICS yapısına işaret eder.
 
-*Az*<br/>
+*cbBuffer*<br/>
 Anahat karakter hakkında bilgi işlevi içine kopyalar arabellek boyutunu belirtir. Bu değer 0 ise ve *nFormat* parametredir GGO_BITMAP veya GGO_NATIVE değerler, gerekli arabellek boyutu işlevi döndürür.
 
 *lpBuffer*<br/>
@@ -4174,7 +4174,7 @@ int IntersectClipRect(LPCRECT lpRect);
 *x1*<br/>
 Dikdörtgenin sol üst köşesinin mantıksal x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Dikdörtgenin sol üst köşesinin mantıksal y koordinatını belirtir.
 
 *x2*<br/>
@@ -4688,7 +4688,7 @@ BOOL Pie(
 *x1*<br/>
 (Mantıksal birimler cinsinden içinde) sınırlayıcı dikdörtgenin sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 (Mantıksal birimler cinsinden içinde) sınırlayıcı dikdörtgenin sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -4706,7 +4706,7 @@ Yayın (mantıksal birimler cinsinden) cinsinden başlangıç noktasının y koo
 *X4*<br/>
 Yayın uç noktası (mantıksal birimler cinsinden) x koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
-*Y4*<br/>
+*y4*<br/>
 Yayın uç noktası (mantıksal birimler cinsinden) y koordinatını belirtir. Bu noktaya yay tam olarak üzerinde yer alan yok.
 
 *lpRect*<br/>
@@ -5173,7 +5173,7 @@ BOOL Rectangle(LPCRECT lpRect);
 *x1*<br/>
 Dikdörtgenin (mantıksal birimler cinsinden) sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Dikdörtgenin (mantıksal birimler cinsinden) sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -5313,7 +5313,7 @@ BOOL RoundRect(
 *x1*<br/>
 Dikdörtgenin (mantıksal birimler cinsinden) sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Dikdörtgenin (mantıksal birimler cinsinden) sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -5681,13 +5681,13 @@ virtual CGdiObject* SelectStockObject(int nIndex);
 
 - LTGRAY_BRUSH açık gri fırça.
 
-- Fırça NULL_BRUSH Null.
+- NULL_BRUSH Null brush.
 
 - WHITE_BRUSH beyaz fırça.
 
 - BLACK_PEN siyah kalem.
 
-- Kalem NULL_PEN Null.
+- NULL_PEN Null pen.
 
 - WHITE_PEN beyaz kalem.
 
@@ -5742,7 +5742,7 @@ Microsoft Visual C++ özelliklerinin geçirilen geri çağırma işlevi oluştur
 
 Ayrıca işlev adı dışarı gerekmez bir **dışarı AKTARMALARI** uygulamanızın modül tanım dosyasını deyiminde. Bunun yerine kullanabileceğiniz **dışarı** gibi işlev değiştiricisi
 
-**BOOL geri ÇAĞIRMA dışarı aktarma** DOM ( **HDC**, `int` **);**
+**BOOL CALLBACK EXPORT** AFunction( **HDC**, `int`**);**
 
 dışarı aktarma için doğru dışa aktarma kayıt yumuşatma olmadan yalnızca adla dönüştüğünde derleyicinin neden olacak. Bu, çoğu ihtiyaçları için çalışır. Bir işlev sıra ya da diğer ad kullanımı dışarı aktarma, dışarı aktarma gibi bazı özel durumlar için kullanılacak yine bir **dışarı AKTARMALARI** deyimi bir modül tanım dosyası içinde.
 
@@ -6487,7 +6487,7 @@ CSize SetViewportExt(SIZE size);
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 Görünüm penceresinin (cihaz birimlerindeki) x kapsamını belirtir.
 
 *CY*<br/>
@@ -6568,7 +6568,7 @@ CSize SetWindowExt(SIZE size);
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 X-kapsam (mantıksal birimler cinsinden) penceresinin belirtir.
 
 *CY*<br/>
@@ -7057,7 +7057,7 @@ BOOL WidenPath();
 
 Bu işlev yalnızca geçerli kalem ikinci sürümü tarafından oluşturulmuş bir geometrik kalem ise başarılı, `CreatePen` üye işlevini veya kalem ilk sürümü ile oluşturulursa `CreatePen` ve cihaz birimi, 1'den büyük bir genişliğe sahiptir. Cihaz bağlamı kapalı bir yol içermesi gerekir. Yolun tüm Bzier Eğriler genişletti eğrileri approximating düz çizgiler dizileri için dönüştürülür. Bu nedenle, hiçbir Bzier eğrileri yolu sonra kalan `WidenPath` çağrılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

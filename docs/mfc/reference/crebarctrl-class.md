@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 072fcec4944088ab087a6a39c7d8b916c3bc80e2
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: f1e9c6e4505c67b881d479817ec8b45e4ae5dc8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177036"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304565"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -958,7 +958,7 @@ DWORD SetExtendedStyle(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwMask*|[in] Bitsel bir birleşimi (veya) hangi bayrak belirten bayrakları *dwStyleEx* parametresi geçerlidir. Bir veya daha fazla aşağıdaki değerleri kullanın:<br /><br /> RBS_EX_SPLITTER: varsayılan olarak, bölme ve en altında yatay modda ve sağa doğru dikey modda gösterir.<br /><br /> RBS_EX_TRANSPARENT: İleri [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) üst penceresine ileti.|
+|*dwMask*|[in] Bitsel bir birleşimi (veya) hangi bayrak belirten bayrakları *dwStyleEx* parametresi geçerlidir. Bir veya daha fazla aşağıdaki değerleri kullanın:<br /><br /> RBS_EX_SPLITTER: Varsayılan olarak, bölme ve en altında yatay modda ve sağa doğru dikey modda gösterir.<br /><br /> RBS_EX_TRANSPARENT: İleri [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) üst penceresine ileti.|
 |*dwStyleEx*|[in] Bitsel bir birleşimi (veya) stilleri uygulamak için belirten bayrak. Stil ayarlamak için kullanılan aynı bayrağını belirtin *dwMask* parametresi. Bir stil sıfırlamak için ikili sıfır belirtin.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1133,8 +1133,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 Bu üye işlevi kullanan Not bir `CRect` bir parametre olarak nesne yerine `RECT` yapısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

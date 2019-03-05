@@ -1,5 +1,5 @@
 ---
-title: 'WM_ İleti İşleyicileri: N - O'
+title: 'WM_ ileti işleyicileri: N - O'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_NCHITTEST
@@ -37,14 +37,14 @@ helpviewer_keywords:
 - ON_WM_NCMBUTTONUP [MFC]
 - WM_ messages
 ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
-ms.openlocfilehash: 21c1ea3dfee864a4e28a0cbadfdfb73744e2d7da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59fd895823ff13039e6f78b8164cd19f3eac2af9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619784"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285366"
 ---
-# <a name="wm-message-handlers-n---o"></a>WM_ İleti İşleyicileri: N - O
+# <a name="wm-message-handlers-n---o"></a>WM_ ileti işleyicileri: N - O
 
 Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşılık gelir:
 
@@ -68,14 +68,13 @@ Aşağıdaki eşleme girişleri sol, sağ taraftaki işlev prototipleri karşıl
 |ON_WM_NCRBUTTONDBLCLK()|afx_msg void [OnNcRButtonDblClk](../../mfc/reference/cwnd-class.md#onncrbuttondblclk)(UINT, CPoint);|
 |ON_WM_NCRBUTTONDOWN()|afx_msg void [OnNcRButtonDown](../../mfc/reference/cwnd-class.md#onncrbuttondown)(UINT, CPoint);|
 |ON_WM_NCRBUTTONUP()|afx_msg void [OnNcRButtonUp](../../mfc/reference/cwnd-class.md#onncrbuttonup)(UINT, CPoint);|
-|ON_WM_NCXBUTTONDBLCLK()|void [OnNcXButtonDblClk](../../mfc/reference/cwnd-class.md#onncxbuttondblclk)(kısa, UINT, CPoint);|
-|ON_WM_NCXBUTTONDOWN()|afx_msg void [OnNcXButtonDown](../../mfc/reference/cwnd-class.md#onncxbuttondown)(kısa, UINT, CPoint);|
+|ON_WM_NCXBUTTONDBLCLK()|void [OnNcXButtonDblClk](../../mfc/reference/cwnd-class.md#onncxbuttondblclk)(short, UINT, CPoint);|
+|ON_WM_NCXBUTTONDOWN()|afx_msg void [OnNcXButtonDown](../../mfc/reference/cwnd-class.md#onncxbuttondown)(short, UINT, CPoint);|
 |ON_WM_NCXBUTTONUP()|afx_msg void [OnNcXButtonUp](../../mfc/reference/cwnd-class.md#onncxbuttonup)(kısa, UINT, CPoint);|
 |ON_WM_NEXTMENU()|afx_msg void [OnNextMenu](../../mfc/reference/cwnd-class.md#onnextmenu)(UINT, LPMDINEXTMENU);|
 |ON_WM_NOTIFYFORMAT()|UINT afx_msg [OnNotifyFormat](../../mfc/reference/cwnd-class.md#onnotifyformat)(CWnd *, UINT);|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
-

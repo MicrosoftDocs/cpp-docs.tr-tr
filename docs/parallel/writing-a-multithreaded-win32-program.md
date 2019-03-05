@@ -14,12 +14,12 @@ helpviewer_keywords:
 - mutex [C++]
 - threading [C++], thread stacks
 ms.assetid: 1415f47d-417f-4f42-949b-946fb28aab0e
-ms.openlocfilehash: c7d9790cfee39fbddd9ab545d48fa375d56f3a05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8536505882ca9a87aec385ca1c42d652ea84ff7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561336"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326549"
 ---
 # <a name="writing-a-multithreaded-win32-program"></a>Çoklu İş Parçacığı Kullanan Win32 Programı Yazma
 
@@ -28,7 +28,7 @@ Birden çok iş parçacığı bir programla yazdığınızda, davranışları ko
 ##  <a name="_core_sharing_common_resources_between_threads"></a> İş parçacıkları arasında ortak kaynakları paylaşma
 
 > [!NOTE]
->  MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](multithreading-when-to-use-the-synchronization-classes.md).
+>  MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md) ve [çoklu iş parçacığı kullanımı: Zaman eşitleme sınıflarını kullanma](multithreading-when-to-use-the-synchronization-classes.md).
 
 Her iş parçacığı kendi yığınını vardır ve kendi CPU kopyasını kaydeder. Dosyaları ve statik veri yığın bellek gibi diğer kaynaklar işlemdeki tüm iş parçacıkları tarafından paylaşılır. Bu ortak kaynakları kullanarak iş parçacıkları eşitlenmelidir. Win32 kaynakları semafor, kritik bölüm, olayları ve mutex'leri dahil olmak üzere, eşitleme için birçok yol sağlar.
 
@@ -61,6 +61,6 @@ Her iş parçacığı kendi yığınını olduğundan, veri öğeleri üzerinde 
 
 Win32 iş parçacığı yerel depolama (iş parçacığı başına verileri depolamak için TLS) de sağlar. Daha fazla bilgi için [iş parçacığı yerel depolaması (TLS)](thread-local-storage-tls.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

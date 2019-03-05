@@ -29,12 +29,12 @@ helpviewer_keywords:
 - CComBSTR class
 - CComBSTR
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
-ms.openlocfilehash: 52e8472e315932978af38d405c753b0a62fcbe45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48447b9e6a211927d8e729dd761d2e14ecd89615
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475653"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282363"
 ---
 # <a name="ccombstr-class"></a>CComBSTR sınıfı
 
@@ -53,7 +53,7 @@ class CComBSTR
 |Ad|Açıklama|
 |----------|-----------------|
 |[CComBSTR::CComBSTR](#ccombstr)|Oluşturucu.|
-|[CComBSTR:: ~ CComBSTR](#dtor)|Yıkıcı.|
+|[CComBSTR::~CComBSTR](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -84,7 +84,7 @@ class CComBSTR
 |----------|-----------------|
 |[BSTR CComBSTR::operator](#operator_bstr)|Yayınları bir `CComBSTR` BSTR için nesne.|
 |[CComBSTR::operator!](#operator_not)|TRUE veya FALSE bağlı olarak döndürür `m_str`null.|
-|[CComBSTR::operator! =](#operator_neq)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
+|[CComBSTR::operator !=](#operator_neq)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
 |[CComBSTR::operator &](#operator_amp)|Adresini döndürür `m_str`.|
 |[CComBSTR::operator +=](#operator_add_eq)|Ekler bir `CComBSTR` nesneye.|
 |[CComBSTR::operator <](#operator_lt)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
@@ -320,7 +320,7 @@ CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 *nSize*<br/>
 [in] Kopyalanacak karakter sayısını *sz* veya ilk boyutu için karakter cinsinden `CComBSTR`.
 
-*SZ*<br/>
+*sz*<br/>
 [in] Kopyalamak için bir dize. Unicode sürümü bir LPCOLESTR belirtir. ANSI sürümü bir LPCSTR belirtir.
 
 *pSrc*<br/>
@@ -346,7 +346,7 @@ Yok edici işaret ettiği bir dizeyi boşaltır `m_str`.
 
 [!code-cpp[NVC_ATL_Utilities#37](../../atl/codesnippet/cpp/ccombstr-class_6.cpp)]
 
-##  <a name="dtor"></a>  CComBSTR:: ~ CComBSTR
+##  <a name="dtor"></a>  CComBSTR::~CComBSTR
 
 Yıkıcı.
 
@@ -761,7 +761,7 @@ BSTR içeriğinden stream kullanarak yeniden oluşturabilirsiniz [ReadFromStream
 
 [!code-cpp[NVC_ATL_Utilities#45](../../atl/codesnippet/cpp/ccombstr-class_18.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md)

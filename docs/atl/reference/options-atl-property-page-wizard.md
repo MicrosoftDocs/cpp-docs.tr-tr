@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: e891bd9e37bbf2fbedcdd71649305cdc366065fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c92c7a3f03c3ddedbea02647e2317d77a7655609
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642019"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298990"
 ---
 # <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
 
@@ -38,8 +38,7 @@ Sihirbazın bu sayfasındaki özellik sayfası oluşturmakta olduğunuz iş par�
    |**Yok**|Toplanamaz bir özellik sayfası oluşturun.|
    |**Yalnızca**|Yalnızca toplama oluşturulan özellik sayfası oluşturun.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Özellik Sayfası Sihirbazı](../../atl/reference/atl-property-page-wizard.md)<br/>
 [Dizeleri, ATL Özellik Sayfası Sihirbazı](../../atl/reference/strings-atl-property-page-wizard.md)
-

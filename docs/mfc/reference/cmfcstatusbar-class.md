@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: c4891c6bb66fe5e4b737ca9b128a01bcedcf39e7
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 94876dcf6549842a5fedbd96a93ef2cc760225ce
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176581"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326757"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 
@@ -783,7 +783,7 @@ void SetPaneWidth(
 *nIndex*<br/>
 [in] Yeni bir genişlik ayarlanacak durum çubuğu bölmesinin dizini.
 
-*CX*<br/>
+*cx*<br/>
 [in] Durum çubuğu bölmesinin piksel cinsinden yeni genişliği.
 
 ##  <a name="settiptext"></a>  CMFCStatusBar::SetTipText
@@ -804,7 +804,7 @@ void SetTipText(
 *pszTipText*<br/>
 [in] Yeni araç ipucu metni.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

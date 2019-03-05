@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DRoundedRect [MFC], CD2DRoundedRect
 ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531
-ms.openlocfilehash: 6c1aa2bb9593cdf12aadc39ef8a85cc8ad14078a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51913a0d261a0bc91aef8f8504547a10c3e1cf36
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677480"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285847"
 ---
 # <a name="cd2droundedrect-class"></a>CD2DRoundedRect sınıfı
 
@@ -64,6 +64,6 @@ Kaynak dikdörtgenin
 *sizeRadius*<br/>
 RADIUS boyutu
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

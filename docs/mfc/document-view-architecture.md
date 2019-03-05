@@ -12,12 +12,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: f0886f364637c8844aceb5d5d7b6b2ed7175225d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ec933d29474695c1b94b72e712d68a9b3a08bd4e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176857"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326588"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 
@@ -82,7 +82,7 @@ Belgeler, kendi ilişkili görünümler ve görünümlerin çerçeve çerçeve p
 
 - [Örnekler](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
 [Windows](../mfc/windows.md)<br/>
@@ -90,4 +90,3 @@ Belgeler, kendi ilişkili görünümler ve görünümlerin çerçeve çerçeve p
 [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
 [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
-

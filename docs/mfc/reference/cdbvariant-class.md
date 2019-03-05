@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CDBVariant [MFC], m_pstringA
 - CDBVariant [MFC], m_pstringW
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-ms.openlocfilehash: 2a600aa893ae86abebb4146eda4864e69da3c35c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41ea20bcddc53142773d474af41021e9c71af1aa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485312"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289879"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant sınıfı
 
@@ -69,7 +69,7 @@ class CDBVariant
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir. `DWORD`yazın.|
+|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir.  `DWORD`yazın.|
 
 ### <a name="public-union-members"></a>Genel birleşim üyeleri
 
@@ -242,7 +242,7 @@ Bir geniş yönelik bir işaretçi depolayan [CString](../../atl-mfc-shared/refe
 
 `m_pstringW` Veri üyesine ait bir birleşime. Erişmeden önce `m_pstringW`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_WSTRING için sonra ayarlanır `m_pstringW` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pstringW` güvenilir olmayan sonuçlar oluşturabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

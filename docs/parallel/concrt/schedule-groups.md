@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - schedule groups
 ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
-ms.openlocfilehash: 60d6bdaf863e60fa9923f7d7447309338c5dbed2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: febcc0a9c7af75801962ea6be687ce87cc5501d4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453530"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295986"
 ---
 # <a name="schedule-groups"></a>Zamanlama Grupları
 
@@ -20,7 +20,7 @@ Bu belge, zamanlama grupları eşzamanlılık çalışma zamanındaki rolünü a
 
 Her `Scheduler` nesnenin bir zamanlama her düğümü için varsayılan zamanlama grubu vardır. A *zamanlamayı* temel sistem topolojiye eşler. Çalışma zamanı her işlemci paket için bir zamanlama düğümü veya Tekdüzen olmayan bellek mimarisi (NUMA) düğümü oluşturur, hangi daha büyük bir sayıdır. Bir görev bir zamanlama grubu ile açıkça ilişkilendirmezseniz, Zamanlayıcı görevin ekleneceği hangi Grup seçer.
 
-`SchedulingProtocol` Zamanlayıcı ilkesini Zamanlayıcı her zamanlama grubu görevleri yürütür sırasını etkiler. Zaman `SchedulingProtocol` ayarlanır `EnhanceScheduleGroupLocality` (varsayılan değer olan), Görev Zamanlayıcı'yı sonraki görev geçerli görev tamamlandığında veya işbirliği içerisinde devamlılığı verir, üzerinde çalışmakta olduğu zamanlama grubu seçer. Sonraki kullanılabilir gruba taşınmadan önce Görev Zamanlayıcı iş için geçerli zamanlama grubu arar. Buna karşılık, `SchedulingProtocol` ayarlanır `EnhanceForwardProgress`, her görev tamamlandığında veya verir sonra sonraki zamanlama grubu için Zamanlayıcı taşır. Bu ilkeler karşılaştıran bir örnek için bkz [nasıl yapılır: yürütme sırasını etkisi için zamanlama grupları kullanın](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
+`SchedulingProtocol` Zamanlayıcı ilkesini Zamanlayıcı her zamanlama grubu görevleri yürütür sırasını etkiler. Zaman `SchedulingProtocol` ayarlanır `EnhanceScheduleGroupLocality` (varsayılan değer olan), Görev Zamanlayıcı'yı sonraki görev geçerli görev tamamlandığında veya işbirliği içerisinde devamlılığı verir, üzerinde çalışmakta olduğu zamanlama grubu seçer. Sonraki kullanılabilir gruba taşınmadan önce Görev Zamanlayıcı iş için geçerli zamanlama grubu arar. Buna karşılık, `SchedulingProtocol` ayarlanır `EnhanceForwardProgress`, her görev tamamlandığında veya verir sonra sonraki zamanlama grubu için Zamanlayıcı taşır. Bu ilkeler karşılaştıran bir örnek için bkz [nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
 
 Çalışma zamanı kullanan [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) zamanlama grupları temsil eden sınıf. Oluşturmak için bir `ScheduleGroup` nesne, çağrı [concurrency::CurrentScheduler::CreateScheduleGroup](reference/currentscheduler-class.md#createschedulegroup) veya [concurrency::Scheduler::CreateScheduleGroup](reference/scheduler-class.md#createschedulegroup) yöntemi. Çalışma zamanı ömrünü denetlemek için bir başvuru sayım mekanizması kullanır. `ScheduleGroup` nesneleri ile çalıştığı gibi `Scheduler` nesneleri. Oluştururken bir `ScheduleGroup` nesnesi, çalışma zamanı başvurusu bir sayaç ayarlar. [Concurrency::ScheduleGroup::Reference](reference/schedulegroup-class.md#reference) yöntemi bir başvuru sayacını artırır. [Concurrency::ScheduleGroup::Release](reference/schedulegroup-class.md#release) yöntemi azaltır birer birer başvuru sayacı.
 
@@ -30,11 +30,10 @@ Ayrıca [concurrency::ScheduleGroup::ScheduleTask](reference/schedulegroup-class
 
 ## <a name="example"></a>Örnek
 
-Kullanan görev yürütme sırasını denetlemek için Grup zamanlamak ve bir örnek için bkz [nasıl yapılır: yürütme sırasını etkisi için zamanlama grupları kullanın](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
+Kullanan görev yürütme sırasını denetlemek için Grup zamanlamak ve bir örnek için bkz [nasıl yapılır: Yürütme sırasını etkilemek için zamanlama grupları kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Zamanlayıcı Örnekleri](../../parallel/concrt/scheduler-instances.md)<br/>
 [Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)
-

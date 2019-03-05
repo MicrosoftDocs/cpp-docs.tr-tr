@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-ms.openlocfilehash: 883f3065c9d15ad793e6c0d548b911f10d166c0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7731c87c6d6b0ebdec9a0c72c24b04334aa0662
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667908"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300277"
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 
@@ -66,7 +66,7 @@ Alternatif bir yöntem kullanarak `CEvent` türünde bir değişken eklemek içi
 
 Denetlenen bir kaynağa erişmek için bir `CEvent` nesne bu şekilde, ilk iki türünde bir değişken oluşturun [CSingleLock](../../mfc/reference/csinglelock-class.md) veya türü [CMultiLock](../../mfc/reference/cmultilock-class.md) kaynağınızın erişim yönteminde. Ardından çağırın `Lock` yöntemi nesnesi kilitlenemedi (örneğin, [CMultiLock::Lock](../../mfc/reference/cmultilock-class.md#lock)). Bu noktada, iş parçacığı ya da kaynak, kaynağın yayımlanması ve erişmek veya kaynak yayımlanacak bekleyin tamamlanmasını bekleyin, zaman aşımı erişebilir ve kaynağa erişmek başarısız. Her iki durumda da, kaynak, bir iş parçacığı açısından güvenli şekilde erişilmedi. Kaynağı serbest bırakmak için çağrı `SetEvent` olay nesnesinin sinyal ve ardından `Unlock` yöntemi nesnesi kilitlenemedi (örneğin, [CMultiLock::Unlock](../../mfc/reference/cmultilock-class.md#unlock)), veya kapsam dışına düşen nesnesi kilitlenemedi.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CEvent` nesneleri bkz [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Nasıl kullanılacağı hakkında daha fazla bilgi için `CEvent` nesneleri bkz [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="example"></a>Örnek
 
@@ -191,8 +191,7 @@ Olay nesnesiyle ve olay iş parçacığına ait sıfır olmayan bir otomatik ola
 
 Bu üye işlevi, şu anda bunlar bitirdikten sonra nesnesi kilitlenemedi yeniden kullanılabilir ise, serbest bırakmak için otomatik olay kendi iş parçacıkları tarafından çağrılır. Kilit nesnesi değil yeniden kullanılabilir ise, bu işlev tarafından kilit nesnenin yok Edicisi çağrılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSyncObject Sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

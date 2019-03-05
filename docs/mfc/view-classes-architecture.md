@@ -9,12 +9,12 @@ helpviewer_keywords:
 - control views [MFC]
 - view classes [MFC], architecture
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
-ms.openlocfilehash: 7855f152e340b488d64f01dbf290034e1bdbc9b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15b120f0354c483480351b8d3abf995334779411
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647311"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299419"
 ---
 # <a name="view-classes-architecture"></a>Görünüm Sınıfları (Mimari)
 
@@ -68,7 +68,6 @@ Windows liste denetimi içeren bir görünümü (bkz [CListCtrl](../mfc/referenc
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 Bir Windows ağaç denetimi içeren bir görünümü (bkz [CTreeCtrl](../mfc/reference/ctreectrl-class.md)). Ağaç denetimi, simgeler ve dosya Gezgini'nin sol bölmeye benzer şekilde, bir hiyerarşideki düzenlenmiş dizeleri görüntüler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

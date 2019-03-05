@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: f420715f0e90cbdf811d9a4f731885bd4f382d11
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: b27d6bb01b9e94ebe38be5455ffcc870806ac33b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894464"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298354"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -2770,6 +2770,6 @@ BOOL WinHelp(
 
 Bkz: [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

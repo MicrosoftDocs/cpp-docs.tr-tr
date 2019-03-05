@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - _endthreadex function
 ms.assetid: 39d0529c-c392-4c6f-94f5-105d1e8054e4
-ms.openlocfilehash: ea04e42730b0e7d1f0fafe5d3139d2b1a6aed970
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 392fc8e842d86a17013502ffc68c89eb65ba23db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572165"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299991"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>İş Parçacığı Denetimi için C Çalışma Süresi Kitaplık İşlevleri
 
@@ -43,6 +43,6 @@ Win32 programlar en az bir iş parçacığı vardır. Herhangi bir iş parçacı
 
 [_Endthread](../c-runtime-library/reference/endthread-endthreadex.md) işlevi tarafından oluşturulan bir iş parçacığı sonlandırır `_beginthread` (ve benzer şekilde, `_endthreadex` tarafından oluşturulan bir iş parçacığı sonlandırıldığında `_beginthreadex`). İş parçacıkları tamamladığınızda, otomatik olarak sonlandır. `_endthread` ve `_endthreadex` bir iş parçacığı koşullu sonlandırma için kullanışlıdır. İletişim bağlantı noktası denetim alınamıyor ise işleme, iletişim için adanmış bir iş parçacığı gibi çıkabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

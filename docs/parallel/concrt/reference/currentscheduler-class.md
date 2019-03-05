@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - CurrentScheduler class
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
-ms.openlocfilehash: 46bd55c39e79ca01664c3800d10e4efa8cf7d042
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a27ec7c25962b6addd26e61af8f33130d4c653ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619186"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326796"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 
@@ -46,7 +46,7 @@ class CurrentScheduler;
 |[Al](#get)|Geçerli bir zamanlayıcı da bilinir arama bağlamı ilişkili Zamanlayıcı bir işaretçi döndürür.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Geçerli sanal işlemci sayısını, çağrı bağlamla ilişkili Zamanlayıcı döndürür.|
 |[GetPolicy](#getpolicy)|Geçerli Zamanlayıcı ile oluşturulan ilkeyi bir kopyasını döndürür.|
-|[Kimliği](#id)|Geçerli Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
+|[Kimlik](#id)|Geçerli Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
 |[Isavailablelocation](#isavailablelocation)|Belirli bir konuma geçerli Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|
 |[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenleri `_ShutdownEvent` parametresi geçerli bağlam ile ilişkili Zamanlayıcı kapanır ve kendisini yok eder, sinyal. Olay sinyalini zaman, Zamanlayıcı için zamanlanan tüm iş tamamlanmıştır. Birden fazla kapatma olayları, bu yöntem kullanılarak kaydedilebilir.|
 |[ScheduleTask](#scheduletask)|Fazla Yüklendi. Çağrı bağlamla ilişkili Zamanlayıcı hafif bir görevi zamanlar. Çalışma zamanı tarafından belirlenen bir zamanlama grubundaki hafif görev yerleştirilir. Parametre sürüm `_Placement` görevi belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
@@ -257,7 +257,7 @@ static void __cdecl ScheduleTask(
 *_Proc*<br/>
 İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.
 
-*_Veri*<br/>
+*_Data*<br/>
 Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.
 
 *Y_erleştirme*<br/>
@@ -267,10 +267,9 @@ Burada basit görev sırasında yürütülen doğru güçlü eğilimi nedeniyle 
 
 Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

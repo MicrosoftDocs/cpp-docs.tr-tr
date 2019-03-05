@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma'
+title: 'İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 1230cf2b3fa510aeca8516e41cf30f9665987d05
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 1838ad0d6adb146adacb8b3a395f44f76e2a8d3f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176321"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304723"
 ---
-# <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
+# <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma
 
 Bu belge, bir çalışan iş parçacığı için Microsoft Foundation Classes (MFC) uygulamasında kullanıcı arabirimi (UI) iş parçacığı tarafından gerçekleştirilen iş taşımak için eşzamanlılık çalışma zamanı nasıl yapılacağı açıklanır. Bu belge ayrıca uzun bir çizim işlem performansını gösterir.
 
@@ -222,7 +222,7 @@ Pencereyi yeniden boyutlandırıldığında çizim etkin görevleri iptal etmek 
 
 [[Üst](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

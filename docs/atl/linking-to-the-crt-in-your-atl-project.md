@@ -12,12 +12,12 @@ helpviewer_keywords:
 - wWinMainCRTStartup method
 - ATL, C Run-Time library (CRT)
 ms.assetid: 650957ae-362c-4ecf-8b03-5d49138e8b5b
-ms.openlocfilehash: fc8c3c591b04d62c6dd7cf72bedde7a668e9f146
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b117165c82e51a59fe691b90f8ef92d0ba802cbc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516467"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287953"
 ---
 # <a name="linking-to-the-crt-in-your-atl-project"></a>ATL projenizde CRT bağlanma
 
@@ -35,8 +35,7 @@ Daha fazla bilgi için bağlayıcı konusuna [/Entry (giriş noktası simgesi)](
 
 Nowın98 bağlayıcı seçeneğini kullanarak daha fazla varsayılan ATL denetimi tarafından 10 bin adresindeki expense, yüklenme zamanı Windows 98 sistemlerinde artırılmış azaltabilir. Bağlantı seçenekleri ile ilgili daha fazla bilgi için bkz: [OPT (iyileştirmeler)](../build/reference/opt-optimizations.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)
-

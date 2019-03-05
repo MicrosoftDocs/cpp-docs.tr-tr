@@ -1,5 +1,5 @@
 ---
-title: 'TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri'
+title: 'TN053: DAO veritabanı sınıfları için özel DFX rutinleri'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.dfx
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - DFX (DAO record field exchange) [MFC]
 - custom DFX routines [MFC]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-ms.openlocfilehash: 81529dd1e34d06dd3e5d541d39dbe91bb5eda1b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b610604c1b7a68128dc9eb6fb5515225ed22b16e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517773"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282415"
 ---
-# <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri
+# <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO veritabanı sınıfları için özel DFX rutinleri
 
 > [!NOTE]
 >  Sihirbazlar ve Visual C++ ortamına DAO (DAO sınıflarına eklenmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, kullanmanızı önerir [OLE DB Şablonları](../data/oledb/ole-db-templates.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) yeni projeler için. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.
@@ -216,8 +216,7 @@ Kalan tüm işlemleri, yalnızca veri önbelleğini kullanmaya ilgilenir. Veri �
 > [!TIP]
 > Standart veri türleri için mevcut DFX rutinleri üzerinde özel DFX rutinleri model.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

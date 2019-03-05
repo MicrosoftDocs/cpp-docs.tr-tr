@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], creating
 - TCS_EX_FLATSEPARATORS extended style
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-ms.openlocfilehash: c444c938c88c2e8bf079f0f3eba80776c54af5ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4627009e2e07d1c5692d83d8d6262a9fcd37977e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573413"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304918"
 ---
 # <a name="creating-the-tab-control"></a>Sekme Denetimi Oluşturma
 
@@ -58,8 +58,7 @@ NET **TCS_EX_FLATSEPARATORS** gelen stili bir `CTabCtrl` aşağıdaki kod satır
 
 Bu düğmeler arasında görünür ayırıcılar kaldırır, `CTabCtrl` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CTabCtrl Kullanma](../mfc/using-ctabctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

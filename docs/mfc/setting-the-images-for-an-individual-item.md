@@ -1,18 +1,18 @@
 ---
-title: Ayrı Bir Öğe için Görüntüleri Ayarlama
+title: Ayrı Bir Öğe için Resimleri Ayarlama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - extended combo boxes [MFC], images
 - images [MFC], combo box items
 ms.assetid: bde83db8-23a7-4e35-837a-c86447d2c0af
-ms.openlocfilehash: 61e152534dbea09fbca0af819b0847e82a1c4146
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39aa4761dbc753c42f1aedbb18f1832eab471e50
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512079"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294713"
 ---
-# <a name="setting-the-images-for-an-individual-item"></a>Ayrı Bir Öğe için Görüntüleri Ayarlama
+# <a name="setting-the-images-for-an-individual-item"></a>Ayrı Bir Öğe için Resimleri Ayarlama
 
 Genişletilmiş Birleşik giriş kutusu öğe tarafından kullanılan görüntüler farklı türde değerler tarafından belirlenir *iImage*, *iSelectedImage*, ve *IOverlay* üyeleri[ COMBOBOXEXITEM](/windows/desktop/api/commctrl/ns-commctrl-tagcomboboxexitema) yapısı. Her değer denetim ilişkili görüntü listesinden görüntü dizinidir. Varsayılan olarak, bu üyeler görüntü öğe için gösterilecek denetim neden 0 olarak ayarlanır. Belirli bir öğe için görüntüleri kullanmak istiyorsanız, yapı buna göre birleşik giriş kutusu öğesi eklerken ya da mevcut bir birleşik giriş kutusu öğesini değiştirerek değiştirebilirsiniz.
 
@@ -42,8 +42,7 @@ Aşağıdaki örnek, üçüncü Genişletilmiş Birleşik giriş kutusu öğesin
 
 [!code-cpp[NVC_MFCControlLadenDialog#13](../mfc/codesnippet/cpp/setting-the-images-for-an-individual-item_2.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComboBoxEx Kullanma](../mfc/using-ccomboboxex.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

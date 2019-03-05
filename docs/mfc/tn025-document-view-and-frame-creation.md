@@ -1,5 +1,5 @@
 ---
-title: 'TN025: Belge, Görünüm ve Çerçeve Oluşturma'
+title: 'TN025: Belge, Görünüm ve çerçeve oluşturma'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.creation
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - documents [MFC], view and frame creation
 - TN025
 ms.assetid: 09254d72-6e1d-43db-80e9-693887dbeda2
-ms.openlocfilehash: aa8bc305848ce95e0b5bfef1ac6785b18bc84015
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4958e7c4ca2c3cf9eed6420d72d0399fa112098d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50634765"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284690"
 ---
-# <a name="tn025-document-view-and-frame-creation"></a>TN025: Belge, Görünüm ve Çerçeve Oluşturma
+# <a name="tn025-document-view-and-frame-creation"></a>TN025: Belge, Görünüm ve çerçeve oluşturma
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -25,7 +25,7 @@ Bu Not, WinApps, DocTemplates, belgeler, çerçeveler ve görünümler oluşturm
 
 Bir `CWinApp` sistem nesnesi.
 
-Bu statik olarak oluşturulur ve framework'ün iç uygulaması tarafından başlatılan `WinMain`. Öğesinden türetilmelidir `CWinApp` faydalı bir şey için (özel durum: MFC uzantısı DLL'leri olmamalıdır bir `CWinApp` örneği — başlatma gerçekleştirilir `DllMain` yerine).
+Bu statik olarak oluşturulur ve framework'ün iç uygulaması tarafından başlatılan `WinMain`. Öğesinden türetilmelidir `CWinApp` faydalı bir şey için (özel durum: MFC uzantı DLL'leri olmamalıdır bir `CWinApp` örneği — başlatma gerçekleştirilir `DllMain` yerine).
 
 Bir `CWinApp` nesneye sahip bir belge şablonları listesi (bir `CPtrList`). Uygulama başına bir veya birden çok belge şablonu yoktur. DocTemplates genellikle yüklenir (diğer bir deyişle, bir dize dizisi) kaynak dosyasından `CWinApp::InitInstance`.
 
@@ -67,8 +67,7 @@ A `CFrameWnd` (çerçeve olarak da bilinir) ancak şimdi MFC 1.0, olduğu gibi a
 
 Bir MDI çerçeve penceresi tüm MDI alt çerçeve Pencereleri üst sırayla olan MDICLIENT denetimi ile istemci alanını doldurulur. Bir SDI çerçeve penceresinin veya MDI alt çerçeve için istemci alanını genellikle renkle doldurulup bir `CView`-türetilmiş pencere nesnesi. Durumunda, `CSplitterWnd`, görünüm istemci alanının doldurulup `CSplitterWnd` pencere nesnesi ve `CView`-türetilen pencere nesneleri (tek başına parçalı bölme) alt pencereler gibi oluşturulur `CSplitterWnd`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

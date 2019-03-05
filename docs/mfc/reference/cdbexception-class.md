@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CDBException [MFC], m_strError
 - CDBException [MFC], m_strStateNativeOrigin
 ms.assetid: eb9e1119-89f5-49a7-b9d4-b91cee1ccc82
-ms.openlocfilehash: 6ae0ebb94952408aa2576d4320ce4e00308c458f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8a5195d4d2a3662d79d515c28dc66d1b0a27b24
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549519"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295025"
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
 
@@ -44,13 +44,13 @@ class CDBException : public CException
 Sınıfı özel durumun nedenini belirlemek için ya da özel durumu açıklayan bir mesaj görüntülemek için kullanabileceğiniz iki genel veri üyelerini içerir. `CDBException` nesneleri oluşturulur ve veritabanı sınıfları üye işlevleri tarafından oluşturulur.
 
 > [!NOTE]
->  Bu sınıf, açık veritabanı bağlantısı (ODBC) sınıfları MFC'nin biridir. Bunun yerine daha yeni bir veri erişim nesneleri (DAO) sınıfları'ı kullanıyorsanız, [CDaoException](../../mfc/reference/cdaoexception-class.md) yerine. Tüm DAO sınıf adları "CDao" ön eki olarak vardır. Daha fazla bilgi için bkz [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
+>  Bu sınıf, açık veritabanı bağlantısı (ODBC) sınıfları MFC'nin biridir. Bunun yerine daha yeni bir veri erişim nesneleri (DAO) sınıfları'ı kullanıyorsanız, [CDaoException](../../mfc/reference/cdaoexception-class.md) yerine. Tüm DAO sınıf adları "CDao" ön eki olarak vardır. Daha fazla bilgi için bkz [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
 Özel durumlar durumlarda veri kaynağı gibi programın denetimin dışında kalan koşullar ile ilgili olağan dışı yürütme veya ağ g/ç hataları. Genellikle, program yürütmenin normal kursun görmeyi beklediğiniz hataları özel durumları dikkate alınmaz.
 
 Bu nesneler kapsamında erişebileceğiniz bir **CATCH** ifade. Ayrıca oluşturabilecek `CDBException` kendi kodunuzla nesnelerden `AfxThrowDBException` genel işlev.
 
-Özel durum genel veya hakkında işleme hakkında daha fazla bilgi için `CDBException` nesneleri makalelere bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
+Özel durum genel veya hakkında işleme hakkında daha fazla bilgi için `CDBException` nesneleri makalelere bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -134,7 +134,7 @@ Dize biçimi kodları sırayla açıklayan değerler tarafından değiştirildi�
 
 - Beş karakterli hata kodu içeren null ile sonlandırılmış bir dize döndürdü SQLSTATE *szSqlState* ODBC işlevinin parametresi `SQLError`. SQLSTATE değerleri Ek A'da listelenen [ODBC hata kodları](/previous-versions/windows/desktop/ms714687), *ODBC Programcının Başvurusu*. Örnek: "S0022".
 
-- Veri kaynağı için özel yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207'de.
+- Veri kaynağı için özel yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207.
 
 - Döndürülen hata iletisi metni *szErrorMsg* parametresinin `SQLError` işlevi. Bu ileti, birden fazla parantezli adlarını oluşur. Kullanıcıya bir hata kaynağından geçirilen gibi kendi adına her bir ODBC bileşeni (veri kaynağı, sürücüsü, Sürücü Yöneticisi) ekler. Bu bilgiler hata kökenini belirlemenize yardımcı olur. Örnek: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server]
 
@@ -146,11 +146,11 @@ Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz. [SQLErro
 
   ODBC'den: "Durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server] Geçersiz sütun adı 'ColName'"
 
-İçinde `m_strStateNativeOrigin`: "durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server]"
+İçinde `m_strStateNativeOrigin`: "Durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server]"
 
-İçinde `m_strError`: "geçersiz sütun adı 'ColName'"
+İçinde `m_strError`: "Geçersiz sütun adı 'ColName'"
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

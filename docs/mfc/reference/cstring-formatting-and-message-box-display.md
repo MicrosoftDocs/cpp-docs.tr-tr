@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-ms.openlocfilehash: b22eea0a20623bb6dfbbf60703b3db25ac4065d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fee8ba89605e6425b511407dab62be1f32e94a9d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487938"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272652"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 
@@ -214,7 +214,7 @@ Bu ilk formu aşırı yüklenmiş bir metin dizesi tarafından işaret edilen i�
 
 [!code-cpp[NVC_MFCWindowing#133](../../mfc/reference/codesnippet/cpp/cstring-formatting-and-message-box-display_4.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CStringT Sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)

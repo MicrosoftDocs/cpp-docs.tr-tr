@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-ms.openlocfilehash: f66936c597b8c595dc21ae6994d7af0477e8d2aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcc79f781be3a0292398e4f211ea55f5403b6b8f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528654"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302890"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer sınıfı
 
@@ -53,7 +53,7 @@ Bu sınıf sınıfından türetilir [COleObjectFactory](../../mfc/reference/cole
 
 `COleTemplateServer` geçersiz kılmalar `OnCreateInstance` üye işlevi tarafından tanımlanan `COleObjectFactory`. Bu üye işlevi uygun türde bir C++ nesnesi oluşturmak için framework tarafından çağırılır.
 
-Sunucuları hakkında daha fazla bilgi için bkz [sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md).
+Sunucuları hakkında daha fazla bilgi için bkz [sunucuları: Sunucu uygulama](../../mfc/servers-implementing-a-server.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -169,7 +169,7 @@ Bilgiler, bağımsız değişkenler *rglpszRegister* ve *rglpszOverwrite* yapıl
 
 Daha fazla bilgi için [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
 [COleObjectFactory Sınıfı](../../mfc/reference/coleobjectfactory-class.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CDaoDatabaseInfo structure [MFC]
 - DAO (Data Access Objects), Databases collection
 ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
-ms.openlocfilehash: 43095707718fe00a746d082d30c689dbd05292bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 920301af6f660aeac010ecbf844b80ea628bbfd7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285639"
 ---
 # <a name="cdaodatabaseinfo-structure"></a>CDaoDatabaseInfo Yapısı
 
@@ -104,7 +104,7 @@ Tarafından alınan bilgileri [CDaoWorkspace::GetDatabaseInfo](../../mfc/referen
 
 **Başlık:** afxdao.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoWorkspace Sınıfı](../../mfc/reference/cdaoworkspace-class.md)<br/>

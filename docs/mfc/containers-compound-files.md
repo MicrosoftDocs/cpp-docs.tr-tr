@@ -1,5 +1,5 @@
 ---
-title: 'Kapsayıcılar: Bileşik Dosyalar'
+title: 'Kapsayıcılar: Bileşik dosyalar'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - compound files [MFC]
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - OLE containers [MFC], compound files
 - access modes for files [MFC]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
-ms.openlocfilehash: 5a8ba0821d92ab41a4b95fb7b2a26da63c1df285
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8ae701af3dbf45a1b48ef223f421d17f6abee213
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643279"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326635"
 ---
-# <a name="containers-compound-files"></a>Kapsayıcılar: Bileşik Dosyalar
+# <a name="containers-compound-files"></a>Kapsayıcılar: Bileşik dosyalar
 
 Bu makalede, bileşenleri ve uygulama bileşik dosyalar ve avantajları ve dezavantajları uygulamalarınızdaki OLE bileşik dosyalarını kullanarak açıklanmaktadır.
 
@@ -82,9 +82,9 @@ Türetilen bir belge sınıf olan başarıyla bir uygulama oluşturma sonra `COl
 
 İçinde *OLE Programcı Başvurusu*, bkz: [IStream](/windows/desktop/api/objidl/nn-objidl-istream), [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage), ve [Ilockbytes](/windows/desktop/api/objidl/nn-objidl-ilockbytes).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kapsayıcılar](../mfc/containers.md)<br/>
-[Kapsayıcılar: Kullanıcı Arabirimi Sorunları](../mfc/containers-user-interface-issues.md)<br/>
+[Kapsayıcılar: Kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md)<br/>
 [COleStreamFile Sınıfı](../mfc/reference/colestreamfile-class.md)<br/>
 [COleDocument Sınıfı](../mfc/reference/coledocument-class.md)

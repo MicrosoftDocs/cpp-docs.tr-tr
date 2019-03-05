@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: ee44c05fa6417aaca367798d7a94a900d521b896
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 51198b44346785369771f63b80164c1a131f6950
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176244"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279698"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
 
@@ -245,7 +245,7 @@ Kullanım [CNetAddressCtrl::SetAllowType](#setallowtype) geçerli ağ adresi den
 
 Bu ileti çağırır [NetAddr_SetAllowType](/windows/desktop/api/shellapi/nf-shellapi-netaddr_setallowtype) Windows SDK'da açıklanan makrosu. Bu makro NCM_SETALLOWTYPE iletiyi gönderir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CNetAddressCtrl Sınıfı](../../mfc/reference/cnetaddressctrl-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

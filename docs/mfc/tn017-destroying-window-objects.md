@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-ms.openlocfilehash: 06553677e67a4314116077e7942381bd847c64d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e52112bed0f583a3f5652f9213bd5049d543a80
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502238"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294117"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017: Pencere Nesnelerini Yok Etme
 
@@ -93,8 +93,7 @@ Otomatik temizleme işlemleri yapma C++ Windows nesneleri söz konusu olduğunda
 
 Arama sonra `DestroyWindow` otomatik temizleme nesne üzerinde C++ nesne çevresinde, olmaya devam eder ancak *m_hWnd* NULL olacaktır. Arama sonra `DestroyWindow` otomatik temizleme nesnesinde bir C++ nesnesi otomatik temizleme uygulamalarında C++ delete işleci ile serbest, kaybolur `PostNcDestroy`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

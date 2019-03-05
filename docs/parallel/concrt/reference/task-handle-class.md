@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-ms.openlocfilehash: 060be8614fc3a0a93d446c747b65de82b863ab3c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 4193c2d1e08c1b5a43dc728edd24efd19be87268
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518887"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298093"
 ---
 # <a name="taskhandle-class"></a>task_handle Sınıfı
 
@@ -101,8 +101,8 @@ Yok eder `task_handle` nesne.
 ~task_handle();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[task_group sınıfı](task-group-class.md)<br/>
+[task_group Sınıfı](task-group-class.md)<br/>
 [structured_task_group Sınıfı](structured-task-group-class.md)

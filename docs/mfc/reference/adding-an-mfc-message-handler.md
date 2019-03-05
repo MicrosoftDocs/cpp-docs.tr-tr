@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: edb48b510be1de73abe3361f9bd409a8fed929d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4b0a4507df7f352355fc95354e1e83aa7b6d0a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593550"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292410"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC İleti İşleyicisi Ekleme
 
@@ -22,7 +22,7 @@ Yapabilecekleriniz [ileti işleyicisi eklemek için Özellikler penceresini kull
 > [!NOTE]
 >  Özellikler penceresini kullanarak bir ATL sınıfı için ileti işleyicisi ekleyebilirsiniz; Ancak, bazı sonuçlar farklılık gösterebilir. Daha fazla bilgi için ATL konusuna [ATL ileti işleyicisi ekleme](../../atl/adding-an-atl-message-handler.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
@@ -31,4 +31,3 @@ Yapabilecekleriniz [ileti işleyicisi eklemek için Özellikler penceresini kull
 [Bir sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [Sınıf yapısında gezinme](../../ide/navigating-the-class-structure-visual-cpp.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../../windows/dialog-editor.md)
-

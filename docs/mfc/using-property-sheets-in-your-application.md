@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Create method [MFC], property sheets
 - CPropertyPage class [MFC], styles
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-ms.openlocfilehash: ac6315d1b450fa41158f1393471d723627ecec24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76acbfa9625fe6cb9a575244b0ed6954eeaaf3f2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301694"
 ---
 # <a name="using-property-sheets-in-your-application"></a>Uygulamanızdaki Özellik Sayfalarını Kullanma
 
@@ -42,7 +42,7 @@ Bir özellik sayfası kullanmak için aşağıdaki adımları tamamlayın:
 
 1. Üye, bu özellik sayfası için değerleri tutması için değişkenleri oluşturun. Özelleştirilmiş bir iletişim kutusu bir özellik sayfası olduğu için üye değişkenleri için özellik sayfası ekleme işlemi tam olarak bir iletişim kutusu için üye değişkenleri ekleme aynıdır. Daha fazla bilgi için [iletişim kutusu denetimleri için üye değişkenleri tanımlama](../windows/defining-member-variables-for-dialog-controls.md).
 
-1. Oluşturmak bir [CPropertySheet](../mfc/reference/cpropertysheet-class.md) , kaynak kodunuzdaki nesne. Genellikle, işlevi `CPropertySheet` özellik sayfası görüntüler komut işleyicisi nesnesi. Bu nesne tüm özellik sayfasını temsil eder. Bir kalıcı özellik sayfasını ile oluşturursanız [DoModal](../mfc/reference/cpropertysheet-class.md#domodal) işlevi, framework, varsayılan olarak üç komut düğmeleri sağlar: Tamam, iptal et ve Uygula. Kalıcı olmayan özellik sayfaları ile oluşturulan hiçbir komut düğmeleri framework oluşturur [Oluştur](../mfc/reference/cpropertysheet-class.md#create) işlevi. Öğesinden bir sınıf türetin gerekmez `CPropertySheet` diğer denetimler (örneğin, bir önizleme penceresi) ekleyebilir veya kalıcı olmayan özellik sayfası görüntülemek istediğiniz sürece. Özellik sayfasını kapatmak için kullanılabilecek herhangi bir varsayılan denetim içermez çünkü kalıcı olmayan özellik sayfaları için bu adım gereklidir.
+1. Oluşturmak bir [CPropertySheet](../mfc/reference/cpropertysheet-class.md) , kaynak kodunuzdaki nesne. Genellikle, işlevi `CPropertySheet` özellik sayfası görüntüler komut işleyicisi nesnesi. Bu nesne tüm özellik sayfasını temsil eder. Bir kalıcı özellik sayfasını ile oluşturursanız [DoModal](../mfc/reference/cpropertysheet-class.md#domodal) işlevi, framework, varsayılan olarak üç komut düğmeleri sağlar: Tamam, iptal etmek ve uygulayın. Kalıcı olmayan özellik sayfaları ile oluşturulan hiçbir komut düğmeleri framework oluşturur [Oluştur](../mfc/reference/cpropertysheet-class.md#create) işlevi. Öğesinden bir sınıf türetin gerekmez `CPropertySheet` diğer denetimler (örneğin, bir önizleme penceresi) ekleyebilir veya kalıcı olmayan özellik sayfası görüntülemek istediğiniz sürece. Özellik sayfasını kapatmak için kullanılabilecek herhangi bir varsayılan denetim içermez çünkü kalıcı olmayan özellik sayfaları için bu adım gereklidir.
 
 1. Özellik sayfasına eklenecek her sayfa için aşağıdakileri yapın:
 
@@ -60,7 +60,6 @@ Bir özellik sayfası kullanmak için aşağıdaki adımları tamamlayın:
 
 MFC genel örnek özellik sayfalarını kullanma örneği için bkz. [PROPDLG](../visual-cpp-samples.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik sayfaları](../mfc/property-sheets-mfc.md)
-

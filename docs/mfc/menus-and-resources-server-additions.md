@@ -1,5 +1,5 @@
 ---
-title: 'Menüler ve Kaynaklar: Sunucu Ekleme'
+title: 'Menüler ve kaynaklar: Sunucu ekleme'
 ms.date: 11/04/2016
 f1_keywords:
 - IDP_OLE_INIT_FAILED
@@ -17,14 +17,14 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: 8b4e7787029fc9401ece02860f09b8159f086afe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0cf5b495ca1e3f6e7b0ae434c09e014a29eadb00
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592601"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281962"
 ---
-# <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
+# <a name="menus-and-resources-server-additions"></a>Menüler ve kaynaklar: Sunucu ekleme
 
 Bu makalede, menüler ve diğer kaynakları görsel düzenleme sunucu (Bileşen) uygulaması, yapılması gereken değişiklikleri açıklar. Sunucu uygulaması, birçok ekleme menüsü yapısı ve diğer kaynaklara gerektirir, çünkü bu üç moddan birini başlatılabilir: tek başına, katıştırılmış, ya da yerinde bekleyin. Bölümünde anlatıldığı gibi [menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md) makalesi, en fazla dört menüleri kümesi vardır. Dört yalnızca üç bir miniserver için kullanılan bir MDI tam sunucu uygulaması için kullanılabilir. Uygulama Sihirbazı'nı menüsü düzeni için kullanmak istediğiniz sunucu türünü oluşturur. Bazı özelleştirme gerekli olabilir.
 
@@ -44,7 +44,7 @@ Bu makalede ele alınan konular:
 
 Sunucu (Bileşen) uygulamalarının OLE görsel düzenleme desteklemek için eklenen menüsü kaynaklarını olması gerekir. Tek başına modunda uygulama çalıştırıldığında kullanılan menülerde değiştirilmesi gerekmez, ancak uygulamayı oluşturmadan önce iki yeni menü kaynağı eklemeniz gerekir: bir yerinde etkinleştirme ve tam olarak açık olan sunucusunu desteklemek için bir destek. Her iki menüsü kaynaklarını tam ve miniserver uygulamalar tarafından kullanılır.
 
-- Yerinde etkinleştirmeyi desteklemek için tek başına modunda çalıştırdığınızda kullanılan menü kaynağı çok benzer bir menü kaynağı oluşturmanız gerekir. Bu menüde Dosya ve pencere öğelerini (ve uygulama ve veri ile ilgilenirken siz herhangi bir menü öğeleri) eksik olduğunu farktır. Bu menü öğeleri kapsayıcı uygulamasını kullanacaksınız. Daha fazla bilgi ve örnek olarak, bu menü birleştirme teknik için bkz [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+- Yerinde etkinleştirmeyi desteklemek için tek başına modunda çalıştırdığınızda kullanılan menü kaynağı çok benzer bir menü kaynağı oluşturmanız gerekir. Bu menüde Dosya ve pencere öğelerini (ve uygulama ve veri ile ilgilenirken siz herhangi bir menü öğeleri) eksik olduğunu farktır. Bu menü öğeleri kapsayıcı uygulamasını kullanacaksınız. Daha fazla bilgi ve örnek olarak, bu menü birleştirme teknik için bkz [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 - Tamamen açık etkinleştirmeyi desteklemek için tek başına modunda çalıştırıldığında bir menü kaynağı kullanılan menü kaynağı neredeyse aynı oluşturmanız gerekir. Yalnızca bu menü kaynağı güncelleştirdiğinde, bazı öğeler bir bileşik belgeye gömülü bir öğe üzerinde sunucu işletim olgu yansıtacak şekilde yeniden ifade edilen emin olur.
 
@@ -70,8 +70,7 @@ Yalnızca bir dize tablosu ek bir sunucu uygulamasında gereklidir; OLE başlatm
 
 Aynı eklemeleri miniservers Yukarıda listelenenler olarak geçerli tam sunucuları için. Tek başına modunda bir miniserver çalıştırılamadığı ana menüsü çok daha küçüktür. Uygulama Sihirbazı tarafından oluşturulan ana menü yalnızca bir dosya menüsü, yalnızca çıkış öğeleri içeren vardır ve ilgili. Katıştırılmış ve yerinde menülerini ve Hızlandırıcı miniservers için bu tam sunucu için aynıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)
-
+[Menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md)

@@ -1,25 +1,25 @@
 ---
-title: 'Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama'
+title: 'Nasıl yapılır: Call ve transformer sınıflarına iş işlevleri sağlama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - call class, example
 - using the transformer class [Concurrency Runtime]
 - using the call class [Concurrency Runtime]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-ms.openlocfilehash: d9d472ddd8d5c7baf3cb16e1df33a2bdb74c5381
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c41c29dae277105f268171503e662e2a02e3857e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501012"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277698"
 ---
-# <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama
+# <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: Call ve transformer sınıflarına iş işlevleri sağlama
 
 Bu konuda iş işlevleri sağlama için çeşitli yollar gösterir [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfları.
 
 İlk örnek, bir lambda ifadesi geçirilecek gösterilmiştir bir `call` nesne. İkinci örnek, bir işlev nesnesi geçirilecek gösterilmiştir bir `call` nesne. Üçüncü örnek, bir sınıf yönteme bağlama işlemi gösterilmektedir bir `call` nesne.
 
-Çizim için bu konudaki her örnekte `call` sınıfı. Kullanan bir örnek için `transformer` sınıfı [nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).
+Çizim için bu konudaki her örnekte `call` sınıfı. Kullanan bir örnek için `transformer` sınıfı [nasıl yapılır: Veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).
 
 ## <a name="example"></a>Örnek
 
@@ -57,7 +57,7 @@ Sonucunu da atayabilirsiniz `bind1st` işlevi bir [std::function](../../standard
 
 **cl.exe/ehsc call.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

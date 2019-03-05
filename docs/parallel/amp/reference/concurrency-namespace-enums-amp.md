@@ -5,12 +5,12 @@ f1_keywords:
 - amp/Concurrency::access_type
 - amp/Concurrency::queuing_mode
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-ms.openlocfilehash: d78299a9ce47760e6b1340c69d8be699a5eed8a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: adfc1743d887f2a670111eff31cf4653d2df1bee
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50433581"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326081"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 
@@ -51,6 +51,6 @@ enum queuing_mode;
 |`queuing_mode_immediate`|Örneğin, herhangi bir belirten bir sıralama modu komutları [parallel_for_each işlevi (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each), bunlar çağırana dönmez ilgili Hızlandırıcı cihaza gönderilir.|
 |`queuing_mode_automatic`|Komutları için karşılık gelen bir komut sırası üzerinde sırada olduğunu belirten bir sıralama modu [accelerator_view](accelerator-view-class.md) nesne. Komutları cihaza gönderilen zaman [accelerator_view::flush](accelerator-view-class.md#flush) çağrılır.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

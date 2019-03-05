@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ATL, module classes
 - module classes
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
-ms.openlocfilehash: 47ab7f69e5df98dbd9b09adaa2676c22fdf72bed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2fe659b47893f821aab4cda31ab1a4e9a6788ec6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505279"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295467"
 ---
 # <a name="atl-module-classes"></a>ATL Modül Sınıfları
 
@@ -55,8 +55,7 @@ Bu konu, ATL 7. 0'yeni modül sınıfları açıklar.
 
    Init ve terimi yöntemleri için modül sınıfları oluşturucular ve Yıkıcılar taşındı; artık Init ve istediğiniz dönemi çağırmaya gerek yoktur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
 [Sınıfına genel bakış](../atl/atl-class-overview.md)
-

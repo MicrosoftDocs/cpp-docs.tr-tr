@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: 8d77175b271d144983aecd1168eb0d66eb46d6ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c973d92550469804a5389b84f53005e4f2c154f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526431"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290436"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 
@@ -397,7 +397,7 @@ Denetimi üst ve alt sınırları. İçin `SetRange`, hiçbir sınır UD_MAXVAL 
 > [!NOTE]
 >  Değer değiştirme düğmesi için varsayılan aralığı sıfır (0) olarak ayarlayın en fazla ve en az 100'e ayarlayın sahiptir. Maksimum değer minimum değerden daha az olduğundan, konumu yukarı oka tıklayarak azaltır ve aşağı oka tıklayarak da artacaktır. Kullanım `CSpinButtonCtrl::SetRange` bu değerleri ayarlamak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

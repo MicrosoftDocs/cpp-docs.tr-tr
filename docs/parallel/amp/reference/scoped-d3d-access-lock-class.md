@@ -6,12 +6,12 @@ f1_keywords:
 - AMPRT/scoped_d3d_access_lock
 - AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock
 ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1
-ms.openlocfilehash: 08b6edc415d08d6dfb863fb90ff27bac6ce0960a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e36c3c2cfa9d1b617e377a7e340f98875457bdf1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598451"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272470"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
 
@@ -108,6 +108,6 @@ D3D erişim kilidinin taşınacağı, accelerator_view.
 
 Bu başvuru `scoped_accelerator_view_lock`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

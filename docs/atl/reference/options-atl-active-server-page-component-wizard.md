@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Active Server Page Component Wizard, options
 ms.assetid: 54f34e26-53c7-4456-9675-cb86e356bde0
-ms.openlocfilehash: d8d8eaa6190bd04d626b9a23c9d27d1f9daeb003
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e9740a67f265484c349a4df644be882dba30c13
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595643"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280244"
 ---
 # <a name="options-atl-active-server-page-component-wizard"></a>Seçenekler, ATL Active Server Page bileşeni Sihirbazı
 
@@ -53,8 +53,7 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL
    |**Bağlantı noktaları**|Nesneniz için bağlantı noktaları, nesnenin sınıfı türetilen yaparak sağlar [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md).|
    |**Ücretsiz iş parçacıklı Sıralayıcı**|Aynı işlemdeki iş parçacıkları arasında verimli bir şekilde arabirim işaretçilerini sıralama bir ücretsiz iş parçacıklı bir Sıralayıcı nesnesini oluşturur. Belirtme nesne için kullanılabilen **hem** veya **ücretsiz** iş parçacığı modeli olarak.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Active Server Page Bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)
-

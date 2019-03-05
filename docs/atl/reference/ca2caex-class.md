@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2CAEX class
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
-ms.openlocfilehash: 42115df5d70121d90631bf18c5d3fa83b130485b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88389d4fe913a31fce43e3c8cc95605f99701695
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487314"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326445"
 ---
 # <a name="ca2caex-class"></a>CA2CAEX sınıfı
 
@@ -42,7 +42,7 @@ class CA2CAEX
 |Ad|Açıklama|
 |----------|-----------------|
 |[CA2CAEX::CA2CAEX](#ca2caex)|Oluşturucu.|
-|[CA2CAEX:: ~ CA2CAEX](#dtor)|Yıkıcı.|
+|[CA2CAEX::~CA2CAEX](#dtor)|Yıkıcı.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -135,7 +135,7 @@ operator LPCSTR() const throw();
 
 Metin dizesi LPCSTR türü olarak döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CA2AEX Sınıfı](../../atl/reference/ca2aex-class.md)<br/>
 [CA2WEX Sınıfı](../../atl/reference/ca2wex-class.md)<br/>

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-ms.openlocfilehash: efa8a7bf9e14bd93682fcc2d5802a84f1bdb1e96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a75ce23cf55f26505c2584c3a021b654602a6a2b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629937"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288954"
 ---
 # <a name="cconnectionpoint-class"></a>CConnectionPoint sınıfı
 
@@ -258,8 +258,7 @@ Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *pUnkSink
 
 Standart bir HRESULT değerini.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

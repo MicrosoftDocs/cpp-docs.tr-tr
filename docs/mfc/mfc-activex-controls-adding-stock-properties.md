@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Stok Özellikler Ekleme'
+title: 'MFC ActiveX denetimleri: Stok Özellikler ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - BackColor property [MFC]
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - foreground colors, ActiveX controls
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-ms.openlocfilehash: b27979b5492ed03b93aa0d8990c9c0b699242c86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 940f61c9ce6ccb57843333582455e61c1f7ac73b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607837"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289695"
 ---
-# <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
+# <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX denetimleri: Stok Özellikler ekleme
 
 Stok özellikleri içeren sınıfı tarafından zaten uygulanmış özel özelliklerinden farklı `COleControl`. `COleControl` Denetim için yaygın olarak kullanılan özellikleri desteklemek önceden tanımlanmış üye işlevleri içerir. Bazı ortak özellikler, denetimin açıklamalı alt yazı ve ön ve arka plan renkleri içerir. Diğer stok özellikleri hakkında daha fazla bilgi için bkz: [stok özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen](#_core_stock_properties_supported_by_classwizard) bu makalenin ilerleyen bölümlerinde. Gönderme eşleme girişleri için stok özellikleri her zaman DISP_STOCKPROP tarafından öneki.
 
@@ -75,12 +75,12 @@ Bu resim yazısı özelliğini denetiminiz kullanıcıları için kullanılabilm
 
 |Özellik|Gönderme eşleme girişi|Değere erişmek nasıl|
 |--------------|------------------------|-------------------------|
-|`Appearance`|DISP_STOCKPROP_APPEARANCE)|Değer olarak erişilebilir `m_sAppearance`.|
-|`BackColor`|DISP_STOCKPROP_BACKCOLOR)|Değer çağırarak erişilebilir `GetBackColor`.|
-|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE)|Değer olarak erişilebilir `m_sBorderStyle`.|
+|`Appearance`|DISP_STOCKPROP_APPEARANCE( )|Değer olarak erişilebilir `m_sAppearance`.|
+|`BackColor`|DISP_STOCKPROP_BACKCOLOR( )|Değer çağırarak erişilebilir `GetBackColor`.|
+|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE( )|Değer olarak erişilebilir `m_sBorderStyle`.|
 |`Caption`|DISP_STOCKPROP_CAPTION)|Değer çağırarak erişilebilir `InternalGetText`.|
 |`Enabled`|DISP_STOCKPROP_ENABLED)|Değer olarak erişilebilir `m_bEnabled`.|
-|`Font`|DISP_STOCKPROP_FONT)|Makaleye göz atın [MFC ActiveX denetimleri: yazı tiplerini kullanarak](../mfc/mfc-activex-controls-using-fonts.md) kullanım için.|
+|`Font`|DISP_STOCKPROP_FONT( )|Makaleye göz atın [MFC ActiveX denetimleri: Yazı tiplerini kullanma](../mfc/mfc-activex-controls-using-fonts.md) kullanım için.|
 |`ForeColor`|DISP_STOCKPROP_FORECOLOR)|Değer çağırarak erişilebilir `GetForeColor`.|
 |`hWnd`|DISP_STOCKPROP_HWND)|Değer olarak erişilebilir `m_hWnd`.|
 |`Text`|DISP_STOCKPROP_TEXT)|Değer çağırarak erişilebilir `InternalGetText`. Bu özellik aynı olan `Caption`, özellik adı dışında.|
@@ -100,9 +100,9 @@ Aşağıdaki örnek, bir denetim boyama, bu iki color özelliklerini kullanmayı
 
 [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_3.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Özellikleri](../mfc/mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

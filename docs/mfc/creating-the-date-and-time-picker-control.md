@@ -5,12 +5,12 @@ helpviewer_keywords:
 - DateTimePicker control [MFC], creating
 - CDateTimeCtrl class [MFC], creating
 ms.assetid: 764ec2fb-98cd-478b-a5f2-d63f0bb12279
-ms.openlocfilehash: 27a3a654a73300b7dd667d422fe84c73de524f3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3dd04d917667ff04001a455263d2a2f4af9bf9c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456136"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282077"
 ---
 # <a name="creating-the-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetimini Oluşturma
 
@@ -34,8 +34,7 @@ Tarih ve Saat Seçici denetiminin nasıl oluşturulduğunu denetimi bir iletişi
 
 1. Denetimin çağrı [Oluştur](../mfc/reference/ctabctrl-class.md#create) üye işlev, büyük olasılıkla buna [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), büyük olasılıkla, ana pencerenin olabildiğince erken [OnCreate](../mfc/reference/cwnd-class.md#oncreate) (kullanıcısıysanız işleyici işlevi denetimini alt sınıf yapma). Denetimi için stiller ayarlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDateTimeCtrl Kullanma](../mfc/using-cdatetimectrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

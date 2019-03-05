@@ -1,5 +1,5 @@
 ---
-title: CMFCAcceleratorKeyAssignCtrl sınıfı
+title: CMFCAcceleratorKeyAssignCtrl Class
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCAcceleratorKeyAssignCtrl
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage
 - CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
-ms.openlocfilehash: bd096657de56c0b6daa07004a927b92f1293ddf3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6ce8c75b1b764d1d2b66b86147035f069805d25
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454425"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298249"
 ---
-# <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl sınıfı
+# <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl Class
 
 `CMFCAcceleratorKeyAssignCtrl` Sınıfını genişleten [CEdit sınıfı](../../mfc/reference/cedit-class.md) ALT, CONTROL ve SHIFT gibi ek sistem düğmelerini desteklemek için.
 
@@ -161,7 +161,7 @@ void ResetKey();
 
 İşlev düzenleme denetimi metni temizler. Bu kullanıcı basılan tüm kısayol tuşları içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

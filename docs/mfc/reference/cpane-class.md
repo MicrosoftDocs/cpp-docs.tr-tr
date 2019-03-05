@@ -133,12 +133,12 @@ helpviewer_keywords:
 - CPane [MFC], m_bHandleMinSize
 - CPane [MFC], m_recentDockInfo
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-ms.openlocfilehash: 1c485d1b6f2b0557243973774bf9dfb382c2595b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b660d181aada8abeb61b397fb30b097897e74f65
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550442"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326783"
 ---
 # <a name="cpane-class"></a>CPane sınıfı
 
@@ -1308,7 +1308,7 @@ Menüde görüntülenen TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü bölmedeki davranışı, yani belirtmenizi sağlayan çeşitli öğeleri içerir: **kayan**, **Docking**, **AutoHide**, ve **Gizle**. Çağırarak tüm bölmeler için bu menüyü etkinleştirebilirsiniz [CDockingManager::EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu).
+Menü bölmedeki davranışı, yani belirtmenizi sağlayan çeşitli öğeleri içerir: **Kayan**, **yerleştirme**, **AutoHide**, ve **Gizle**. Çağırarak tüm bölmeler için bu menüyü etkinleştirebilirsiniz [CDockingManager::EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu).
 
 ##  <a name="recalclayout"></a>  CPane::RecalcLayout
 
@@ -1604,7 +1604,7 @@ void UpdateVirtualRect(CPoint ptOffset);
 
 Geçerli konumunu bölmesinde ve tarafından belirtilen boyutu kullanarak sanal bir dikdörtgen üçüncü aşırı yükleme ayarlar *sizeNew*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

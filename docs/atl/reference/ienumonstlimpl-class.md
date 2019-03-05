@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumOnSTLImpl class
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
-ms.openlocfilehash: 0ec505871f057d90f6580e547c23a0879af4c3f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8ff29522351b542d0b674bc173040d4468d00f1c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638756"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277455"
 ---
 # <a name="ienumonstlimpl-class"></a>Ienumonstlımpl sınıfı
 
@@ -224,6 +224,6 @@ STDMETHOD(Skip)(ULONG celt);
 
 Standart bir HRESULT değerini.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)
