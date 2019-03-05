@@ -1,5 +1,5 @@
 ---
-title: 'OLE Arka Planı: Kapsayıcılar ve Sunucular'
+title: 'OLE arka planı: Kapsayıcılar ve sunucular'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE full-server applications [MFC]
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - server applications [MFC]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
-ms.openlocfilehash: 3c696f1e99a73cbce6f1ff749de937297b28d88b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c154562e58cf8f37d77df61556fe25b19ca54c70
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616931"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304827"
 ---
-# <a name="ole-background-containers-and-servers"></a>OLE Arka Planı: Kapsayıcılar ve Sunucular
+# <a name="ole-background-containers-and-servers"></a>OLE arka planı: Kapsayıcılar ve sunucular
 
-Bir kapsayıcı uygulaması kendi belgelerine gömülü veya bağlantılı öğeleri içeren bir uygulamadır. Yönetilen bir kapsayıcı uygulama tarafından belgeleri depolamak ve OLE belge bileşenlerinin yanı sıra uygulama tarafından oluşturulan verileri görüntülemek kurabilmesi gerekir. Kapsayıcılı bir uygulama kullanıcıların yeni öğeler eklemek veya mevcut öğeleri sunucu uygulamaları gerektiğinde etkinleştirerek düzenlemek de izin vermeniz gerekir. Bir kapsayıcı uygulaması kullanıcı arabirimi gereksinimlerini makalesinde listelenen [kapsayıcılar: kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md).
+Bir kapsayıcı uygulaması kendi belgelerine gömülü veya bağlantılı öğeleri içeren bir uygulamadır. Yönetilen bir kapsayıcı uygulama tarafından belgeleri depolamak ve OLE belge bileşenlerinin yanı sıra uygulama tarafından oluşturulan verileri görüntülemek kurabilmesi gerekir. Kapsayıcılı bir uygulama kullanıcıların yeni öğeler eklemek veya mevcut öğeleri sunucu uygulamaları gerektiğinde etkinleştirerek düzenlemek de izin vermeniz gerekir. Bir kapsayıcı uygulaması kullanıcı arabirimi gereksinimlerini makalesinde listelenen [kapsayıcıları: Kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md).
 
 Sunucu uygulama veya bileşen uygulama kapsayıcı uygulamalar tarafından kullanılmak OLE belge bileşenleri oluşturan bir uygulamadır. Sunucu uygulamaları, genellikle sürükleyin ve bırakın veya bir kapsayıcı uygulaması verileri gömülü veya bağlantılı bir öğe olarak ekleyebilirsiniz. böylece kendi verilerini panoya kopyalanırken destekler. Bir uygulama bir kapsayıcı hem bir sunucu olabilir.
 
@@ -33,12 +33,11 @@ Kapsayıcılar ve sunucular doğrudan iletişim kurmaz. Bunun yerine, OLE Sistem
 
 Bunun anlamı iletişimi kullanarak, bir kapsayıcı sunucu uygulamasının uygulama ayrıntıları bilmeniz gerekmez. Sunucu ile çalışabilir türlerini tanımlamak zorunda kalmadan herhangi bir sunucu tarafından oluşturulan öğeler kabul etmek bir kapsayıcı sağlar. Sonuç olarak, bir kapsayıcı uygulamasının kullanıcı gelecekteki uygulamalar ve veri biçimleri yararlanabilirsiniz. Bu yeni uygulamalar OLE bileşenleri, bileşik bir belgeye bu uygulamaları tarafından oluşturulan öğeleri dahil etmek mümkün olacaktır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE Arka Planı](../mfc/ole-background.md)<br/>
-[OLE Arka Planı: MFC Uygulaması](../mfc/ole-background-mfc-implementation.md)<br/>
+[OLE arka planı: MFC uygulaması](../mfc/ole-background-mfc-implementation.md)<br/>
 [Kapsayıcılar](../mfc/containers.md)<br/>
 [Sunucular](../mfc/servers.md)<br/>
-[Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)<br/>
-[Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
-
+[Kapsayıcılar: İstemci öğeleri](../mfc/containers-client-items.md)<br/>
+[Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)

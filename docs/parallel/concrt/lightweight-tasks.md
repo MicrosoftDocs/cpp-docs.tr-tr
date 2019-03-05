@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - lightweight tasks
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-ms.openlocfilehash: 7e155b82e963e7bf3f19fa44c66e4c22b8c602e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19918cf73c2b5b03db895c4751b22b1666ce01de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481438"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326692"
 ---
 # <a name="lightweight-tasks"></a>Basit Görevler
 
@@ -26,10 +26,9 @@ Basit bir görev oluşturmak için arama [concurrency::ScheduleGroup::ScheduleTa
 
 ## <a name="example"></a>Örnek
 
-Basit bir görev kullanmak için mevcut kodu uyum yapmayı gösteren bir örnek için bkz: [izlenecek yol: uyarlama mevcut kodu hafif görevleri kullanmak için](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md).
+Basit bir görev kullanmak için mevcut kodu uyum yapmayı gösteren bir örnek için bkz: [izlenecek yol: Mevcut kodu hafif görevleri kullanmaya uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-[İzlenecek Yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
-
+[İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)

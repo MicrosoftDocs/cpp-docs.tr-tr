@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma'
+title: 'MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma'
 ms.date: 09/12/2018
 f1_keywords:
 - CLSID_CPicturePropPage
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - CLSID_CPicturePropPage [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
-ms.openlocfilehash: f31bf245e35231b6cc62497e7bbc57ff7f0e6af1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b73a027422cfe9cbf03afece400c1b513cace151
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304710"
 ---
-# <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma
+# <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma
 
 Bu makalede, stok özellik sayfalarını ActiveX denetimleri ve bunların nasıl kullanılacağı açıklanmaktadır.
 
@@ -31,9 +31,9 @@ Bu makalede, stok özellik sayfalarını ActiveX denetimleri ve bunların nasıl
 
 ActiveX denetiminde özellik sayfalarını kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [MFC ActiveX Denetimleri: Özellik Sayfaları](../mfc/mfc-activex-controls-property-pages.md)
+- [MFC ActiveX denetimleri: Özellik sayfaları](../mfc/mfc-activex-controls-property-pages.md)
 
-- [MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
+- [MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
 
 MFC ActiveX denetimleri ile kullanmak için üç stok özellik sayfalarını sağlar: `CLSID_CColorPropPage`, `CLSID_CFontPropPage`, ve `CLSID_CPicturePropPage`. Bu sayfalar, sırasıyla stok renk, yazı tipi ve resim özellikleri için bir kullanıcı arabirimi görüntüler.
 
@@ -51,8 +51,7 @@ Bu değişiklikleri yaptıktan sonra projenizi yeniden derleyin. Denetiminiz art
 > [!TIP]
 >  Değilse, stok özellik sayfalarını görünür (Önceki nota bakın), DLL Dosyasının tam yol adı ile komut satırından RegSvr32.exe DLL'ye çalıştırarak kaydedin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Stok Özellikler Ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md)
-
+[MFC ActiveX denetimleri: Stok Özellikler ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md)

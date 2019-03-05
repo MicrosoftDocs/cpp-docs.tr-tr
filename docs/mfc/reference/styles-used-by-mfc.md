@@ -196,12 +196,12 @@ helpviewer_keywords:
 - WS_EX_TRANSPARENT constant [MFC]
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-ms.openlocfilehash: b47fa90fff6753b805d7fd0495050e45bc915d5d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: eb5123c347fdb847cade54f15764f175ee0ab799
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694783"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304905"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller
 
@@ -360,10 +360,10 @@ Aşağıdaki ileti kutusu stilleri kullanılabilir.
 
 |Stil|Açıklama|
 |-----------|-----------------|
-|MB_ABORTRETRYIGNORE|İleti kutusunda üç pushbuttons içerir: durdurmak, yeniden deneyin ve yoksay.|
+|MB_ABORTRETRYIGNORE|İleti kutusunda üç pushbuttons içerir: Durdurma, yeniden deneyin ve yoksay.|
 |MB_OK|İleti kutusunda bir basma düğmesi içerir: Tamam.|
-|MB_OKCANCEL|İleti kutusunda iki pushbuttons içerir: Tamam ve iptal edin.|
-|MB_RETRYCANCEL|İleti kutusunda iki pushbuttons içerir: iptal edin ve yeniden deneyin.|
+|MB_OKCANCEL|İleti kutusunda iki pushbuttons içerir: Tamam, iptal edin.|
+|MB_RETRYCANCEL|İleti kutusunda iki pushbuttons içerir: Yeniden deneme ve iptal edin.|
 |MB_YESNO|İleti kutusunda iki pushbuttons içerir: Evet ve Hayır|
 |MB_YESNOCANCEL|İleti kutusunda üç pushbuttons içerir: Evet, Hayır, iptal etmek.|
 
@@ -506,7 +506,7 @@ Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/refe
 |WS_EX_TRANSPARENT|Bu stil ile oluşturulan pencerenin saydam olarak olduğunu belirtir. Diğer bir deyişle, pencerenin tüm pencereleri pencere tarafından yapılabileceği değil. Bu stil ile oluşturulan bir pencere, yalnızca altındaki tüm eşdüzey pencerelerin güncelleştirildikten sonra WM_PAINT iletileri alır.|
 |WS_EX_WINDOWEDGE|Bir pencere bir kenarlık yükseltilmiş bir kenarlığa sahip olduğunu belirtir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC sınıfı genel bakış](../../mfc/class-library-overview.md)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)<br/>
@@ -517,9 +517,9 @@ Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/refe
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)<br/>
 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)<br/>
-[Düğme stilleri (Windows)](/windows/desktop/Controls/button-styles)<br/>
+[Button Styles (Windows)](/windows/desktop/Controls/button-styles)<br/>
 [Birleşik giriş kutusu stilleri (Windows)](/windows/desktop/Controls/combo-box-styles)<br/>
-[Düzenleme denetim stilleri (Windows)](/windows/desktop/Controls/edit-control-styles)<br/>
+[Edit Control Styles (Windows)](/windows/desktop/Controls/edit-control-styles)<br/>
 [Liste kutusu stilleri (Windows)](/windows/desktop/Controls/list-box-styles)<br/>
 [MessageBox işlevi (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)<br/>
 [Kaydırma çubuğu denetim stilleri (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)<br/>
