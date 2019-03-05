@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCDesktopAlertWndInfo [MFC], m_strText
 - CMFCDesktopAlertWndInfo [MFC], m_strURL
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-ms.openlocfilehash: d815abbd48e1744900853fcf81dc05b6af62788c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c40424a1aba81a7048ba89781fe6c4324f86ccd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509076"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301642"
 ---
 # <a name="cmfcdesktopalertwndinfo-class"></a>Cmfcdesktopalertwndınfo sınıfı
 
@@ -43,7 +43,7 @@ class CMFCDesktopAlertWndInfo
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCDesktopAlertWndInfo::operator =](#operator_eq)||
+|[CMFCDesktopAlertWndInfo::operator=](#operator_eq)||
 
 ### <a name="data-members"></a>Veri üyeleri
 
@@ -74,7 +74,7 @@ Aşağıdaki örnek, çeşitli üyeleri kullanılacak gösterilmiştir `CMFCDesk
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cmfcdesktopalertwndınfo](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)
+[CMFCDesktopAlertWndInfo](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -140,7 +140,7 @@ CString m_strURL;
 
 Kullanıcı bağlantıyı tıklattığında, olan komut [CMFCDesktopAlertWndInfo::m_nURLCmdID](#m_nurlcmdid) komut kimliği açılır pencerede sahibine gönderilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

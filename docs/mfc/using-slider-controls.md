@@ -6,12 +6,12 @@ helpviewer_keywords:
 - slider controls
 - slider controls [MFC], using
 ms.assetid: 2b1a8ac8-2b17-41e1-aa24-83c1fd737049
-ms.openlocfilehash: 7bb5bda4a7b85ea8bb852649b20f10f0c4693188
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b358b4e92c7d9f214291b047a080f71b48183519
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533576"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284144"
 ---
 # <a name="using-slider-controls"></a>Kaydırıcı Denetimlerini Kullanma
 
@@ -25,8 +25,7 @@ Bir kaydırıcı denetimi tipik kullanımını aşağıdaki deseni izler:
 
 - Denetim ile işiniz bittiğinde, düzgün bir şekilde imha emin olmanız gerekir. Kaydırıcı denetimi bir iletişim kutusunda, varsa onu ve `CSliderCtrl` nesne otomatik olarak silinecektir. Her iki denetim sağlamak ihtiyacınız değil, varsa ve `CSliderCtrl` nesne düzgün bir şekilde yok.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSliderCtrl Kullanma](../mfc/using-csliderctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

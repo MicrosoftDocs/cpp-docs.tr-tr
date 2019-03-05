@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CMFCImageEditorPaletteBar [MFC], GetRowHeight
 - CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-ms.openlocfilehash: 71fe8824e7a7d250d9e939afea99f73fcb4943dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6812f3f425186484ef892d7f5c626c0dfce0f863
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498032"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302994"
 ---
 # <a name="cmfcimageeditorpalettebar-class"></a>Cmfcımageeditorpalettebar sınıfı
 
@@ -59,7 +59,7 @@ Framework, bir Resim Düzenleyicisi iletişim kutusunda bir palet çubuğunu gö
 
 [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)
 
-[Cmfcımageeditorpalettebar](../../mfc/reference/cmfcimageeditorpalettebar-class.md)
+[CMFCImageEditorPaletteBar](../../mfc/reference/cmfcimageeditorpalettebar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -89,7 +89,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 
 Bu yöntem FALSE döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - MFC, messages
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-ms.openlocfilehash: dda989318d6c6915ef8bc4e668fd238e8167de08
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91b7f21d92b2f899895b008b3fab8b541aec9963
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599192"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300108"
 ---
 # <a name="message-maps-mfc"></a>İleti Eşlemeleri (MFC)
 
@@ -64,7 +64,6 @@ Microsoft Foundation Class Kitaplığı, ileti tabanlı programlama için en iyi
 
 Microsoft Foundation Class Kitaplığı, ileti eşlemeleri ancak önemli bir parçasıdır. Yaptıkları anlamanız gerekir ve belgeleri için sağlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

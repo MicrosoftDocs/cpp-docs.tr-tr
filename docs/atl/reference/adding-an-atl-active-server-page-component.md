@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL, ASP components
 - ATL ASP components
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-ms.openlocfilehash: 7cbe52d4f6bcc82d17880d6eaa6a38f76809952d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f7ad08cb514e33224c877bcbf1c5e8128e26185
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630600"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269844"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>Bir ATL Active Server Page bileşeni ekleme
 
@@ -34,7 +34,7 @@ Active Server Pages bileşenleri aşağıdaki gelişmiş Web geliştirme özelli
 
 1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusundaki **şablonları** bölmesinde tıklayın **ATL Active Server Page bileşeni**ve ardından **açık** görüntülemek için [ATL Active Server Page bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL Projesine Yeni Arabirim Ekleme](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>

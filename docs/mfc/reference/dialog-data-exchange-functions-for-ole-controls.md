@@ -18,12 +18,12 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-ms.openlocfilehash: 5d330d8dd423927a3f4abbe6475a8d6219fa9af2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df96d44cefeb15d89653538c3006d109a97a21a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531254"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298262"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -40,7 +40,7 @@ Bu konuda, bir iletişim kutusu, form görünümü veya denetim view nesnesinin 
 |[DDX_OCFloat](#ddx_ocfloat)|Aktarımını yöneten **float** (veya **çift**) arasında bir OLE denetimin bir özelliğine veri ve **float** (veya **çift**) veri üyesi.|
 |[DDX_OCFloatRO](#ddx_ocfloatro)|Aktarımını yöneten **float** (veya **çift**) bir OLE denetimi salt okunur bir özellik arasında verileri ve **float** (veya **çift**) veri üye.|
 |[Ddx_ocınt](#ddx_ocint)|Aktarımını yöneten **int** (veya **uzun**) arasında bir OLE denetimin bir özelliğine veri ve **int** (veya **uzun**) veri üyesi.|
-|[Ddx_ocıntro](#ddx_ocintro)|Aktarımını yöneten **int** (veya **uzun**) bir OLE denetimi salt okunur bir özellik arasında verileri ve bir **int** (veya **uzun**) veri üyesi.|
+|[DDX_OCIntRO](#ddx_ocintro)|Aktarımını yöneten **int** (veya **uzun**) bir OLE denetimi salt okunur bir özellik arasında verileri ve bir **int** (veya **uzun**) veri üyesi.|
 |[DDX_OCShort](#ddx_ocshort)|Aktarımını yöneten **kısa** OLE denetimin bir özelliğine arasında veri ve **kısa** veri üyesi.|
 |[DDX_OCShortRO](#ddx_ocshortro)|Aktarımını yöneten **kısa** salt okunur bir özellik bir OLE denetim arasında verileri ve **kısa** veri üyesi.|
 |[DDX_OCText](#ddx_octext)|Aktarımını yöneten **CString** OLE denetimin bir özelliğine arasında veri ve **CString** veri üyesi.|
@@ -302,7 +302,7 @@ DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdisp.h
 
-##  <a name="ddx_ocintro"></a>  Ddx_ocıntro
+##  <a name="ddx_ocintro"></a>  DDX_OCIntRO
 
 `DDX_OCIntRO` İşlevi aktarımını yöneten **int** (veya **uzun**) iletişim kutusundaki bir OLE denetimi salt okunur bir özellik arasında verileri form görünümü veya denetim görünüm nesnesi ve bir **int** (veya **uzun**) iletişim kutusu, form görünümü veya denetim view nesnesinin veri üyesi.
 
@@ -478,6 +478,6 @@ DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdisp.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

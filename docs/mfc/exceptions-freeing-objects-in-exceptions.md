@@ -1,5 +1,5 @@
 ---
-title: 'Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma'
+title: 'Özel durumlar: Özel durumlarda nesneleri serbest bırakma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - throwing exceptions [MFC], freeing objects in exceptions
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-ms.openlocfilehash: 6e03d46a2600458f3107efa6e0b6b0d643c9b160
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 23fe85018d1bc2c41371afec2ad6931755e4e682
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442477"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298143"
 ---
-# <a name="exceptions-freeing-objects-in-exceptions"></a>Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma
+# <a name="exceptions-freeing-objects-in-exceptions"></a>Özel durumlar: Özel durumlarda nesneleri serbest bırakma
 
 Bu makalede, gereksinim ve bir özel durum oluştuğunda nesneleri serbest bırakma yöntemi açıklanmaktadır. Konular şunlardır:
 
@@ -62,9 +62,8 @@ Aşağıdaki örnekte gösterildiği nasıl yerel olarak ayrılmış nesnelerin 
 
 Özel durumlar oluşturabilecek bir işlev çağırırsanız, kullanabileceğiniz **try/catch** bloğunun özel durumları yakalama ve oluşturduğunuz herhangi bir nesne yok etme olanağına sahip olduğundan emin olun. Özellikle, birçok MFC işlevi özel durumlar oluşturabilecek dikkat edin.
 
-Daha fazla bilgi için [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+Daha fazla bilgi için [özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
-

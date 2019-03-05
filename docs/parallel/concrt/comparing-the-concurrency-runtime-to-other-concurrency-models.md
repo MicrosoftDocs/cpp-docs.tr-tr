@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-ms.openlocfilehash: 82e1dca1345b909919320b911c4c107e965c9850
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 885cce09707e1c067efdeb0bdc8b7d8a40841c02
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332679"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285106"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>Eşzamanlılık Çalışma Zamanını Diğer Eşzamanlılık Modelleriyle Karşılaştırma
 
@@ -57,7 +57,7 @@ Genellikle Windows API olarak adlandırılır (ve eski Win32 bilinir), Microsoft
 
 Eşzamanlılık Çalışma Zamanı paralel çalışmayı gerçekleştirmek için Windows API iş parçacığı modeli oluşturur. Ayrıca, Windows API bellek yönetimi ve iş parçacığı-yerel depolamayı mekanizmalarını kullanır. Windows 7 ve Windows Server 2008 R2 üzerinde kullanıcı zamanlanabilen iş parçacıklarını ve 64'ten fazla donanım iş parçacıklarının olan bilgisayarlar için Windows API desteği kullanır. Eşzamanlılık Çalışma zamanı Windows API modelini, işbirlikçi Görev Zamanlayıcısı'nı ve işi kaplayan bir algoritma bilgi işlem kaynaklarının kullanımını en üst düzeye çıkarmak için sağlayarak ve birden çok eş zamanlı Zamanlayıcı örnekleri sağlayarak genişletir.
 
-### <a name="programming-languages"></a>Programlama dilleri
+### <a name="programming-languages"></a>Programlama Dilleri
 
 Windows API, programlama modeli kullanıma sunmak için C programlama dilini kullanır. Eşzamanlılık Çalışma zamanı C++ dilinde en yeni özelliklerinden yararlanır bir C++ programlama arabirimi sağlar. Örneğin, lambda işlevleri paralel iş işlevlerini tanımlama için birleştiren, tür kullanımı uyumlu bir mekanizma sağlar. Eşzamanlılık Çalışma zamanı kullanan en yeni C++ özellikleri hakkında daha fazla bilgi için bkz. [genel bakış](../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -95,7 +95,7 @@ Eşzamanlılık Çalışma zamanı karşılaştırır OpenMP ve Eşzamanlılık 
 
 [[Üst](#top)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)<br/>
 [Genel bakış](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

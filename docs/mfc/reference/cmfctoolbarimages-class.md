@@ -140,12 +140,12 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-ms.openlocfilehash: 21a8e6ed28498756130e6ddb418e93b0e9ad86cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bbd2a2d301646b4d3897d9fe4990bdfd1e48325b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662780"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303354"
 ---
 # <a name="cmfctoolbarimages-class"></a>Cmfctoolbarımages sınıfı
 
@@ -893,7 +893,7 @@ BOOL Load(
 *hinstRes*<br/>
 [in] Kaynak DLL'si örneği.
 
-*Bekle*<br/>
+*bAdd*<br/>
 [in] Var olan bit eşlem değiştirmek için yüklenen bit eşlem var olan bit eşlem ya da FALSE eklemek için TRUE.
 
 *lpszBmpFileName*<br/>
@@ -1381,7 +1381,7 @@ Yeniden boyutlandırma işlemi başarılı olursa TRUE; Aksi durumda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

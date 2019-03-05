@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma'
+title: 'Nasıl yapılır: Paralel sıralama rutini yazmak için parallel_invoke kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - task_handle class, example
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-ms.openlocfilehash: e72d99cb1b9168e3de1e109d93c163e21cb7fad7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 329cf275f283ba7b57276d06e909905c9a900697
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440163"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284183"
 ---
-# <a name="how-to-use-parallelinvoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma
+# <a name="how-to-use-parallelinvoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel sıralama rutini yazmak için parallel_invoke kullanma
 
 Bu belgenin nasıl kullanılacağını açıklar [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke) bitonic sıralama algoritmasının performansını artırmak için algoritma. Bitonic sıralama algoritmasını yinelemeli olarak Giriş dizisinin küçük sıralanmış bölümlere böler. Her bölüm işlemi tüm diğer işlemlerden bağımsız olduğundan paralel olarak bitonic sıralama algoritmasının çalıştırabilirsiniz.
 
@@ -89,7 +89,7 @@ parallel time: 1248
 
 Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `parallel-bitonic-sort.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc paralel-bitonic-sort.cpp**
+**cl.exe /EHsc parallel-bitonic-sort.cpp**
 
 ## <a name="robust-programming"></a>Güçlü Programlama
 
@@ -101,8 +101,7 @@ Yalnızca yapmak için yeterli iş olduğunda bazı algoritmalar paralel sürüm
 
 Tüm paralel algoritma olarak ile profil ve uygun şekilde kodunuzu ayarlamaya öneririz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)
-

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CComMultiThreadModel class
 - threading [ATL]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-ms.openlocfilehash: ae341763ef40125057b815d2071abbebdcf08f2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b77efffca127c79c665cb8dedb916b0874de038
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508907"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290735"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel sınıfı
 
@@ -52,12 +52,12 @@ class CComMultiThreadModel
 
 Genellikle, kullandığınız `CComMultiThreadModel` iki biri aracılığıyla **typedef** ad [CComObjectThreadModel] (atl-typedefs.md #ccomobjectthreadmodel veya [CComGlobalsThreadModel] (atl-typedefs.md #ccomglobalsthreadmodel. Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-|typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
+| typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
+S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 `CComMultiThreadModel` kendisini tanımlayan üç **typedef** adları. `AutoCriticalSection` ve `CriticalSection` başvuru edinme ve kritik bölüm sahipliğini serbest yöntemleri sağlayan sınıflar. `ThreadModelNoCS` başvurular [CComMultiThreadModelNoCS(ccommultithreadmodelnocs-class.md). sınıfı
 
@@ -117,7 +117,7 @@ private:
 
 Aşağıdaki tablolarda sonuçlarını göster `InternalAddRef` ve `Lock` yöntemleri bağlı olarak, `ThreadModel` şablon parametresi ve uygulama tarafından kullanılan iş parçacığı modeli:
 
-### <a name="threadmodel--ccomobjectthreadmodel"></a>ThreadModel CComObjectThreadModel =
+### <a name="threadmodel--ccomobjectthreadmodel"></a>ThreadModel = CComObjectThreadModel
 
 |Yöntem|Tek veya grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |------------|-----------------------------------|--------------------|
@@ -221,7 +221,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 
 Bkz: [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComSingleThreadModel Sınıfı](ccomsinglethreadmodel-class.md)<br/>
 [CComAutoCriticalSection Sınıfı](ccomautocriticalsection-class.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma'
+title: 'Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - type-safe collections [MFC]
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: 12ecec7562a9241fab30b859727a22e467e6eeb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4241a77184458f5253b6d8987c310604310683c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581798"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295194"
 ---
-# <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
+# <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür kullanımı uyumlu koleksiyon yapma
 
 Bu makalede, kendi veri türleri için tür kullanımı uyumlu koleksiyon yapma açıklanmaktadır. Konular şunlardır:
 
@@ -97,7 +97,6 @@ MFC, MFC sürüm 1.0 ile tanıtılan koleksiyon sınıfları da destekler. Bu s�
 
    Yalnızca tür kullanımı uyumlu sarmalayıcılar var olan işlevselliği sarmalama yerine koleksiyon özelliklerini genişleten yeni işlevlerini tanımlama, yeni işlevsellik de ekleyebilirsiniz. Örneğin, makaleyi [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md) bir listede yer alan nesneleri silmek için bir işlev açıklar. Bu işlev için türetilmiş sınıf üyesi işlevi olarak eklenemedi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Koleksiyonlar](../mfc/collections.md)
-

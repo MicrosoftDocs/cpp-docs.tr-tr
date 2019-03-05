@@ -10,12 +10,12 @@ helpviewer_keywords:
 - casting types [MFC]
 - macros [MFC], casting pointers
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-ms.openlocfilehash: 42b668287905fc5f6e05a09949d53acc51c79026
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3107b860747bc2434ae9afca39b517d8dcc9eb01
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584151"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299367"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>MFC Sınıf Nesnelerine İlişkin Tür Atama
 
@@ -80,6 +80,6 @@ Belirtilen sınıf *$class_name* parametresi türetilen gerekir `CObject` DECLAR
 
 Varsa `pMyDoc` doğrudan veya dolaylı olarak türetilmiş bir nesneye işaret etmiyor `CDocument`, makro ASSERT.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

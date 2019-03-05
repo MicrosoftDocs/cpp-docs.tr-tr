@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - Context class
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-ms.openlocfilehash: c6b219eabd008114f40401c64465e44607c2ee9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9074dad572a3a74a5b456e9790dc359ddf8b7c60
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555083"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293959"
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 
@@ -43,7 +43,7 @@ class Context;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[~ Context yok Edicisi](#dtor)||
+|[~Context Destructor](#dtor)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -54,7 +54,7 @@ class Context;
 |[GetId](#getid)|Bağlamın ait olduğu zamanlayıcıda benzersiz olan bağlam için bir tanımlayıcı döndürür.|
 |[GetScheduleGroupId](#getschedulegroupid)|Bağlamın üzerinde çalışmakta olduğu zamanlama grubu için bir tanımlayıcı döndürür.|
 |[GetVirtualProcessorId](#getvirtualprocessorid)|Bağlamın üzerinde yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.|
-|[Kimliği](#id)|Geçerli bağlamın ait olduğu zamanlayıcıda benzersiz olan geçerli bağlam için bir tanımlayıcı döndürür.|
+|[Kimlik](#id)|Geçerli bağlamın ait olduğu zamanlayıcıda benzersiz olan geçerli bağlam için bir tanımlayıcı döndürür.|
 |[Iscurrenttaskcollectioncanceling](#iscurrenttaskcollectioncanceling)|Döndürür bir işaret olup geçerli bağlamda satır içi şu anda yürütülmekte olan görev koleksiyonunun etkin bir iptalin ortasında (veya kısa süre içinde olacaktır).|
 |[Issynchronouslyblocked](#issynchronouslyblocked)|Bağlamın eş zamanlı olarak engellenip olup olmadığını belirler. Bir bağlam açıkça engellemeyle eylem gerçekleştirilen, zaman uyumlu olarak engellendiği kabul edilir.|
 |[Oversubscribe](#oversubscribe)|Bağlam, Zamanlayıcı içindeki sanal işlemcilerin birinde yürütülürken çağrıldığında kod bloğunun süresi için bir zamanlayıcıya ek bir sanal işlemci ekler.|
@@ -303,9 +303,8 @@ Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Za
 
 Bu işlev, Visual Studio 2015'te yenidir ve aynıdır [Yield](#yield) çalışır ancak Windows.h Yield makroda ile çakışmaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
 [Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

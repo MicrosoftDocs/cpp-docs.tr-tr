@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-ms.openlocfilehash: e4a399ffb4c0d2161479ed7c84e66eb58a9260ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 11be0eba080085c507ed718ea23219ca1c93aeba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552847"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294752"
 ---
 # <a name="cmemoryexception-class"></a>CMemoryException sınıfı
 
@@ -65,8 +65,7 @@ CMemoryException();
 
 Bu oluşturucu doğrudan kullanmaz, bunun yerine genel işlev çağrısı [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Bu genel işlev, önceden ayrılmış bellek içinde özel durum nesnesi oluşturur çünkü bir bellek yetersiz duruma başarılı olabilir. özel durum işleme hakkında daha fazla bilgi için bkz [özel durumları](../exception-handling-in-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CException Sınıfı](cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../hierarchy-chart.md)
-

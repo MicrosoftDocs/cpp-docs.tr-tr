@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing controls
 - DHTML controls, testing
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
-ms.openlocfilehash: 99f55807a7da647af0961f73c600ae0e31166cdc
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 55cdaba64ccb95ee5695c082a5e146b1e7dc2cf3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330976"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277244"
 ---
 # <a name="testing-the-modified-atl-dhtml-control"></a>Değiştirilen ATL DHTML denetimini test etme
 
@@ -23,7 +23,7 @@ ms.locfileid: "51330976"
 
    Tüm eklediğiniz düğmeleri göstermek için denetimin boyutunu ayarlayın.
 
-1. HTML değiştirerek eklediğiniz iki düğme inceleyin. Her düğme içinde tanımlanan etiketi taşıyan [ATL DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md): **Yenile** ve **HelloHTML**.
+1. HTML değiştirerek eklediğiniz iki düğme inceleyin. Her düğme içinde tanımlanan etiketi taşıyan [ATL DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md): **Yenileme** ve **HelloHTML**.
 
 1. Nasıl çalıştıklarını görmeniz için iki yeni düğme test edin.
 
@@ -41,6 +41,6 @@ Artık kullanıcı Arabirimi parçası olmayan yöntemleri test edin.
 
 Çeşitli öğeler ve bir ATL DHTML denetimini oluşturan dosyaları hakkında daha fazla bilgi için bkz: [DHTML denetim projesinin öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)

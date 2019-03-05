@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma'
+title: 'Nasıl yapılır: Kümeleri birleştirmek için combinable kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - combinable class, example
 - combining sets with combinable [Concurrency Runtime]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
-ms.openlocfilehash: c4d245688dd000ea61b538c4f3957246b9852ec5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf8a5bee65ea0ba1718c1d4d436b6af3e0b95961
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571814"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296104"
 ---
-# <a name="how-to-use-combinable-to-combine-sets"></a>Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma
+# <a name="how-to-use-combinable-to-combine-sets"></a>Nasıl yapılır: Kümeleri birleştirmek için combinable kullanma
 
 Bu konu nasıl kullanılacağını gösterir [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) kümesindeki asal sayıları hesaplamak için sınıf.
 
@@ -38,9 +38,8 @@ parallel time: 78 ms
 
 **cl.exe/ehsc paralel-birleştirme-primes.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable Sınıfı](../../parallel/concrt/reference/combinable-class.md)<br/>
 [combinable::combine_each yöntemi](reference/combinable-class.md#combine_each)
-

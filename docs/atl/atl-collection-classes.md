@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CTraits classes
 - collection classes
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
-ms.openlocfilehash: f24e5f7dd2ffa4eb5992362aee18a78fb0000aa9
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 11da1dd7d72951d421d2600e3825e7cafe189240
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176711"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272106"
 ---
 # <a name="atl-collection-classes"></a>ATL Koleksiyon Sınıfları
 
@@ -86,7 +86,7 @@ Aşağıdaki tabloda gösterildiği gibi mevcut koleksiyon sınıflarının her 
 |-----------|--------------|--------------|---------------------------|--------------------------------------|-----------------------------|
 |List|Evet|Hayır|Hızlı (sabit zaman)|Yavaş O(n)|Evet|
 |Dizi|Evet|İnt tarafından (sabit zaman)|Sonunda, büyük/küçük harf hangi Sabit sürede ekleme, dışında O(n) yavaş|Yavaş O(n)|Evet|
-|Harita|Hayır|Anahtara göre (sabit zaman)|Hızlı (sabit zaman)|Hızlı (sabit zaman)|Evet (değerler) (anahtar)|
+|Eşleme|Hayır|Anahtara göre (sabit zaman)|Hızlı (sabit zaman)|Hızlı (sabit zaman)|Evet (değerler) (anahtar)|
 |Kırmızı-siyah eşleme|Evet (anahtar)|Anahtara göre O (log n)|Hızlı O (log n)|Hızlı O (log n)|Hayır|
 |Kırmızı-siyah Multimap|Evet (anahtar)|Anahtara göre O(log n) (birden çok değer anahtarı başına)|Hızlı O (log n)|Hızlı O (log n)|Evet (birden çok değer anahtarı başına)|
 
@@ -124,7 +124,7 @@ Aşağıdaki örnekler, koleksiyon sınıfları göstermektedir:
 
 - [Kayan örnek](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
 [Koleksiyon Sınıfları](../atl/collection-classes.md)

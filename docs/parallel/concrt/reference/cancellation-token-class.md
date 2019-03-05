@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
-ms.openlocfilehash: 60028ce439dc344696bb3814efb74e0daa21f6ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 23821c91cd4158f6ec3989cdf537a5d8067e8225
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522206"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282298"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token Sınıfı
 
@@ -197,6 +197,6 @@ template<typename _Function>
 
 A `cancellation_token_registration` kullanılabilen nesne `deregister` önceden kaydedilmiş bir geri arama kaydını kaldırmak ve yapılmasını önlemek için yöntem. Yöntemi bir [invalid_operation](invalid-operation-class.md) üzerinde çağrılırsa bir özel durum bir `cancellation_token` kullanılarak oluşturulmuş nesne [cancellation_token::none](#none) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

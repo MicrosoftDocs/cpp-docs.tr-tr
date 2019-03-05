@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - IMAGE_EDIT_MODE Enumeration method [MFC]
 ms.assetid: e51db66a-fa1c-4766-9dac-a25b595f871a
-ms.openlocfilehash: 6460a83d63a0dd08d8607061bf1deca471fad3c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 372a1df6500f4d7219c89d8f82425246c2236514
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658048"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272145"
 ---
 # <a name="cmfcimagepaintareaimageeditmode-enumeration"></a>CMFCImagePaintArea::IMAGE_EDIT_MODE Numaralandırması
 
@@ -53,7 +53,7 @@ IMAGE_EDIT_MODE_COLOR çizim modu kullanarak görüntüden bir renk seçtiğiniz
 
 **Başlık:** afximagepaintarea.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

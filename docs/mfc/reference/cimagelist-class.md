@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 5bcf815fce4123ca1014e1679fd810c1ce321be4
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 3e8c524a95730282d0e35e5f791ebf229725e282
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178596"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298927"
 ---
 # <a name="cimagelist-class"></a>Cımagelist sınıfı
 
@@ -348,7 +348,7 @@ BOOL Create(CImageList* pImageList);
 
 ### <a name="parameters"></a>Parametreler
 
-*CX*<br/>
+*cx*<br/>
 Piksel cinsinden her görüntü boyutları.
 
 *CY*<br/>
@@ -633,7 +633,7 @@ Görüntünün çizmek için sıfır tabanlı dizini.
 *PT*<br/>
 Belirtilen cihaz bağlamında çizmek konumu.
 
-*SZ*<br/>
+*sz*<br/>
 Görüntünün görüntü sol üst köşesine göre çizmek için bölümünü boyutu. Bkz: *dx* ve *GN* içinde [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK.
 
 *clrBk*<br/>
@@ -693,7 +693,7 @@ Hedef cihaz bağlamının bir işaretçi. Bu silmelisiniz [CDC](../../mfc/refere
 *PT*<br/>
 A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.
 
-*SZ*<br/>
+*sz*<br/>
 A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) çizilecek görüntü boyutunu belirten yapısı.
 
 *ptOrigin*<br/>
@@ -1191,7 +1191,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 [!code-cpp[NVC_MFC_CImageList#17](../../mfc/reference/codesnippet/cpp/cimagelist-class_23.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - ISpecifyPropertyPages
 - ISpecifyPropertyPagesImpl class
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
-ms.openlocfilehash: fcabbcd2d5977a28f46b3d8ebfc47e8fd978f3cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f5db65d1c318677a630307f44533e51d63ec44d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272015"
 ---
 # <a name="ispecifypropertypagesimpl-class"></a>Ispecifypropertypagesımpl sınıfı
 
@@ -78,7 +78,7 @@ ATL nesnenin özellik eşlemesi her CLSID almak için kullanır.
 
 Bkz: [ISpecifyPropertyPages::GetPages](/windows/desktop/api/ocidl/nf-ocidl-ispecifypropertypages-getpages) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IPropertyPageImpl Sınıfı](../../atl/reference/ipropertypageimpl-class.md)<br/>
 [IPerPropertyBrowsingImpl Sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>

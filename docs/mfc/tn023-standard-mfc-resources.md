@@ -1,5 +1,5 @@
 ---
-title: 'TN023: Standart MFC Kaynakları'
+title: 'TN023: Standart MFC kaynakları'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.resources
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - TN023
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-ms.openlocfilehash: 04789ba85a9f7c193a88ba1a0d097b3671808e9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4edc00f77152b8d677f3113e0ed6386569b0988
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559919"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277687"
 ---
-# <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC Kaynakları
+# <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC kaynakları
 
 Bu not ile sağlanan ve MFC kitaplık için gereken standart kaynakları açıklar.
 
@@ -35,17 +35,17 @@ Küçük resim, framework, bağlı değildir, ancak, uygulamanızın kullanıcı
 
    - Commdlg.dll tarafından kullanılan bit eşlem ve simge kaynaklar.
 
-- Indicate.rc: durum çubuğu anahtar durumu göstergeleri Caps Lock "sınır" gibi için dize kaynakları içerir.
+- Indicate.rc: Durum çubuğu anahtar durumu göstergeleri Caps Lock "sınır" gibi için dize kaynakları içerir.
 
-- Prompts.rc: ıd_fıle_new için "Yeni belge oluştur" gibi önceden tanımlanmış her komut istemi menü dize kaynakları içerir.
+- Prompts.rc: Id_fıle_new için "Yeni belge oluştur" gibi önceden tanımlanmış her komut istemi menü dize kaynakları içerir.
 
-- COMMDLG.rc: standart COMMDLG iletişim kutusu şablonları içeren bir Visual C++ uyumlu bir .rc dosyası.
+- COMMDLG.rc: Standart COMMDLG iletişim kutusu şablonları içeren bir Visual C++ uyumlu bir .rc dosyası.
 
 Standart framework kaynakları ve iç uygulamaları framework bağımlı AFX tanımlı kimlikleri kaynaklardır. Nadiren bu AFX tarafından tanımlanan kaynakları değiştirmeniz de gerekecektir. Bunu yaparsanız, bu konunun ilerleyen bölümlerinde açıklanan yordamı izlemelisiniz.
 
 Aşağıdaki framework kaynakları MFC\INCLUDE dizinde bulunur:
 
-- Afxres.rc: framework tarafından kullanılan ortak kaynaklar.
+- Afxres.rc: Framework tarafından kullanılan ortak kaynaklar.
 
 - Afxprınt.rc: Yazdırmaya özel kaynaklar.
 
@@ -99,8 +99,7 @@ Standart framework kaynakları ve belirli uygulamanızın içeriğini özelleşt
 > [!NOTE]
 >  Doğrudan standart .rc dosyalarındaki kaynaklar değiştirmeyin. Bunun yapılması her uygulamada, yalnızca üzerinde çalıştığınız bir kullanılabilir kaynakları değiştirir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

@@ -94,12 +94,12 @@ helpviewer_keywords:
 - COleIPFrameWndEx [MFC], WinHelpA
 - COleIPFrameWndEx [MFC], InitUserToobars
 ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
-ms.openlocfilehash: c30ced2f19602dca17badeec6e1b27ad1e90bf5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8ebf63e6cf31f3852434926c3559774e7b4b46d3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612738"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285353"
 ---
 # <a name="coleipframewndex-class"></a>Coleıpframewndex sınıfı
 
@@ -975,7 +975,7 @@ virtual void WinHelp(
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

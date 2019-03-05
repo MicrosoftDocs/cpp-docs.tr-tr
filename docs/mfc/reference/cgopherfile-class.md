@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CGopherFile [MFC], CGopherFile
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
-ms.openlocfilehash: 9e5fbdcd14c0f988e894718f357d40e4b238c7c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bb242cb53593862cb51e0c193eb739625127adc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658204"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285197"
 ---
 # <a name="cgopherfile-class"></a>CGopherFile sınıfı
 
@@ -105,7 +105,7 @@ Gereksinim duyduğunuz bir `CGopherFile` bir gopher Internet oturumu sırasında
 
 Asla oluşturma bir `CGopherFile` doğrudan nesne. Bunun yerine çağrı [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) bir gopher sunucusunda bir dosyayı açmak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CInternetFile Sınıfı](../../mfc/reference/cinternetfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

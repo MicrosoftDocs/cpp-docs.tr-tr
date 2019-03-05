@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrList class
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-ms.openlocfilehash: a7e5c2db31100da8901deaae61527c65655faa7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2558c522f7903e8d59363cd77d1a86027f6a7511
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551417"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285418"
 ---
 # <a name="cautoptrlist-class"></a>CAutoPtrList sınıfı
 
@@ -76,7 +76,7 @@ Varsayılan değer 10 blok boyutu.
 
 Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarını ölçüsüdür. Büyük blok boyutları için bellek ayırma yordamlarını aramalarını azaltır, ancak daha fazla kaynağı kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CAtlList Sınıfı](../../atl/reference/catllist-class.md)<br/>
 [CAutoPtrElementTraits Sınıfı](../../atl/reference/cautoptrelementtraits-class.md)<br/>

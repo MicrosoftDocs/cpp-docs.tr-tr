@@ -1,5 +1,5 @@
 ---
-title: 'TN002: Kalıcı Nesne Veri Biçimi'
+title: 'TN002: Kalıcı nesne veri biçimi'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.data
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - persistent C++ objects [MFC]
 - TN002
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
-ms.openlocfilehash: 5f5bde68d9fd4175ed97a7b61d807887d07e9e12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6d64799dc17b4b3ddc5c455333b10282e4748b09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474392"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282018"
 ---
-# <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı Nesne Veri Biçimi
+# <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı nesne veri biçimi
 
 Bu Not, bir dosyada depolandığında, kalıcı C++ nesneleri ve nesne veri biçimi destekleyen MFC yordamları açıklar. Bu yalnızca sınıflarıyla geçerlidir [declare_serıal](../mfc/reference/run-time-object-model-services.md#declare_serial) ve [ımplement_serıal](../mfc/reference/run-time-object-model-services.md#implement_serial) makroları.
 
@@ -107,8 +107,7 @@ Kullanabileceğiniz `VERSIONABLE_SCHEMA` birlikte (bit düzeyinde **veya**) öğ
 
 Daha önce belirtildiği gibi sürüm kodlama ve çağırdığınızda bilgileri kendiniz sınıfı `Serialize` doğrudan, daha sonra hala eski dosyaları ile geriye dönük uyumluluğu koruyarak biçimini imkan tanır. `CArchive::SerializeClass` İşlevi çağrılabilir açıkça önce doğrudan bir nesneyi serileştirmek veya bir temel sınıfı çağırmadan önce.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

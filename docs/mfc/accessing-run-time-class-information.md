@@ -16,12 +16,12 @@ helpviewer_keywords:
 - run-time class [MFC]
 - RUNTIME_CLASS macro, using
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
-ms.openlocfilehash: 061cc04857b0d1763fb4ee975912bcca1b9d014f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e4f8685033fc7a8a2f49dafa7ef4e4e019d8989
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455282"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298834"
 ---
 # <a name="accessing-run-time-class-information"></a>Çalışma Süresi Sınıf Bilgilerine Erişme
 
@@ -61,7 +61,6 @@ Bir çalışma süresi sınıf bilgilerine nesnelerin dinamik oluşturmada kulla
 
 Daha ayrıntılı çalışma zamanı sınıf bilgileri ve seri hale getirme hakkında bilgi için makalelerine bakın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [serileştirme](../mfc/serialization-in-mfc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Kullanma](../mfc/using-cobject.md)
-

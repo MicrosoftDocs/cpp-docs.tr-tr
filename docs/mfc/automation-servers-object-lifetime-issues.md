@@ -1,5 +1,5 @@
 ---
-title: 'Otomasyon Sunucuları: Nesne Ömrü Sorunları'
+title: 'Otomasyon sunucuları: Nesne ömrü sorunları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - objects [MFC], lifetime
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - Automation servers, object lifetime
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-ms.openlocfilehash: 904c3023d7f27bd144c306d9d92810a91a48ecfa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f9dbc6e4f321ba10fdffa013c158d53b84331e30
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637651"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293587"
 ---
-# <a name="automation-servers-object-lifetime-issues"></a>Otomasyon Sunucuları: Nesne Ömrü Sorunları
+# <a name="automation-servers-object-lifetime-issues"></a>Otomasyon sunucuları: Nesne ömrü sorunları
 
 Bir otomasyon istemci oluşturur veya OLE öğesini etkinleştirir, sunucunun istemci o nesneye bir işaretçi geçirir. İstemci OLE işlevi yapılan bir çağrıyla nesnesine bir başvuru oluşturur [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref). Bu başvuru istemci çağrıları kadar etkili olduğu [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release). (Microsoft Foundation Class Kitaplığı'nın OLE sınıfları ile yazılmış istemci uygulamaları bu çağrılar yapmamanız; çerçeve bunu yapar.) OLE sistemi ve sunucu nesne başvurular oluşturabilir. Bir sunucu, nesnenin yok nesne dış başvuruları geçerli kaldığı sürece.
 
@@ -28,8 +28,7 @@ Bazen bir istemci yine de bir nesneye bir başvuru sahipken sonlandırmak için 
 
 Bkz: Windows SDK'da `IUnknown::AddRef` ve `IUnknown::Release`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Otomasyon Sunucuları](../mfc/automation-servers.md)<br/>
 [AfxOleCanExitApp](../mfc/reference/application-control.md#afxolecanexitapp)
-

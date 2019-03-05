@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
-ms.openlocfilehash: 486829b7d990aab7860059feed78b26207d0074d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 27610539ab500a113ea41021744c55425fe9cd9b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600677"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299302"
 ---
 # <a name="structuredtaskgroup-class"></a>structured_task_group Sınıfı
 
@@ -45,7 +45,7 @@ class structured_task_group;
 |----------|-----------------|
 |[İptal](#cancel)|Alt ağaç bu görev grubu kökü çalışmanın iptal edilmesi girişimi bir en iyi hale getirir. Her görev, görev grubuna zamanlanmış geçişli mümkünse iptal.|
 |[is_canceling](#is_canceling)|Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da **true**). Bu durum olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `structured_task_group` nesnesi **true** da döndürülür.|
-|[Çalıştırma](#run)|Fazla Yüklendi. Üzerinde bir görevi zamanlar `structured_task_group` nesne. Çağıranın ömrünü yönetir `task_handle` geçirilen nesne `_Task_handle` parametresi. Parametre sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
+|[run](#run)|Fazla Yüklendi. Üzerinde bir görevi zamanlar `structured_task_group` nesne. Çağıranın ömrünü yönetir `task_handle` geçirilen nesne `_Task_handle` parametresi. Parametre sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
 |[run_and_wait](#run_and_wait)|Fazla Yüklendi. Satır içi arama bağlamda Yardımı ile çalışması için bir görevi zamanlar `structured_task_group` tam iptal desteği için nesne. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run_and_wait`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne. İşlevi, ardından tüm çalıştığı bekler `structured_task_group` nesne tamamlandı veya iptal edildi.|
 |[bekleme](#wait)|Tüm çalıştığı bekler `structured_task_group` tamamlandıktan veya iptal edildi.|
 
@@ -225,8 +225,8 @@ Bu işlev döndürdükten sonra `structured_task_group` nesne son bir durumu ola
 
 Yürütme özel durumlu olmayan yolunda ya da bu yöntemi çağırmak için olan uyumluluğunu doğrulamıştır olması veya `run_and_wait` yöntemi yok edicisinde önce `structured_task_group` yürütür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[task_group sınıfı](task-group-class.md)<br/>
+[task_group Sınıfı](task-group-class.md)<br/>
 [task_handle Sınıfı](task-handle-class.md)

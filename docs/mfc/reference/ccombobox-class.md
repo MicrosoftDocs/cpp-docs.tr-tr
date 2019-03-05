@@ -108,12 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: e7472b808d8b5d743d884d9e3806df7ffe499836
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 847927a36bac8540dd95307ae3c0259d0adba12a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178785"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304476"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 
@@ -214,7 +214,7 @@ Burada `id` bildirimi gönderilmesi birleşik giriş kutusu denetimi alt pencere
 
 Üst öğenin işlev prototipi aşağıdaki gibidir:
 
-**afx_msg** `void` `memberFxn` **();**
+**afx_msg** `void` `memberFxn` **( );**
 
 Belirli bildirimleri gönderilecek sırası tahmin edilemez. Özellikle, CBN_SELCHANGE bildirim önce veya sonra CBN_CLOSEUP bildirim ortaya çıkabilir.
 
@@ -1555,7 +1555,7 @@ Bu üye işlevi ile oluşturulan bir birleşik giriş kutusu üzerinde hiçbir e
 
   Örneğin bakın [CComboBox::GetDroppedState](#getdroppedstate).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLBARS](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>

@@ -7,12 +7,12 @@ f1_keywords:
 - PPL/concurrency::task_group::task_group
 helpviewer_keywords:
 - task_group class
-ms.openlocfilehash: 1ba7251afca80c561bd8861968c35e3242c1507a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 545b368b3042da74a42db5a6ea30e97054d5fd03
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588857"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294141"
 ---
 # <a name="taskgroup-class"></a>task_group Sınıfı
 
@@ -39,7 +39,7 @@ class task_group;
 |----------|-----------------|
 |[İptal](#cancel)|Alt ağaç bu görev grubu kökü çalışmanın iptal edilmesi girişimi bir en iyi hale getirir. Her görev, görev grubuna zamanlanmış geçişli mümkünse iptal.|
 |[is_canceling](#is_canceling)|Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da `true`). Bu durum olabilir, `task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `task_group` nesnesi `true` da döndürülür.|
-|[Çalıştırma](#run)|Fazla Yüklendi. Üzerinde bir görevi zamanlar `task_group` nesne. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne. Yığın ayırma olabilen çalışma zamanı içinde bir parametre içerir yönteminin bir işlev nesnesine bir başvuru alan sürümünü gerçekleştirmek için bir başvuru alan sürümü kullanmaktan daha az iyi bir `task_handle` nesne. Parametre alan sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
+|[run](#run)|Fazla Yüklendi. Üzerinde bir görevi zamanlar `task_group` nesne. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne. Yığın ayırma olabilen çalışma zamanı içinde bir parametre içerir yönteminin bir işlev nesnesine bir başvuru alan sürümünü gerçekleştirmek için bir başvuru alan sürümü kullanmaktan daha az iyi bir `task_handle` nesne. Parametre alan sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
 |[run_and_wait](#run_and_wait)|Fazla Yüklendi. Satır içi arama bağlamda Yardımı ile çalışması için bir görevi zamanlar `task_group` tam iptal desteği için nesne. İşlevi, ardından tüm çalıştığı bekler `task_group` nesne tamamlandı veya iptal edildi. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run_and_wait`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne.|
 |[bekleme](#wait)|Tüm çalıştığı bekler `task_group` nesne tamamlandı veya iptal edildi.|
 
@@ -245,7 +245,7 @@ Bir veya daha fazlası için zamanlanmış görevlerin `task_group` nesnesi, bir
 
 Yürütme özel durumlu olmayan yolunda ya da bu yöntemi çağırmak için olan uyumluluğunu doğrulamıştır olması veya `run_and_wait` yöntemi yok edicisinde önce `task_group` yürütür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [structured_task_group Sınıfı](structured-task-group-class.md)<br/>

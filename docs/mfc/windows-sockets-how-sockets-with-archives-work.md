@@ -1,5 +1,5 @@
 ---
-title: 'Windows Yuvaları: Yuvaların Arşivlerle Çalışması'
+title: 'Windows Yuvaları: Yuvaların arşivlerle çalışması'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows Sockets [MFC], synchronous
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Windows Sockets [MFC], with archives
 - two-state socket object
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
-ms.openlocfilehash: f6101193c85e41fbf82681b0b2ae1e09e4162f87
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3af94bc881276238f1a8d2dbeeee4dca1f173a4b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174918"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300693"
 ---
-# <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows Yuvaları: Yuvaların Arşivlerle Çalışması
+# <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows Yuvaları: Yuvaların arşivlerle çalışması
 
 Bu makalede açıklanır nasıl bir [CSocket](../mfc/reference/csocket-class.md) nesnesi bir [CSocketFile](../mfc/reference/csocketfile-class.md) nesnesi ve bir [CArchive](../mfc/reference/carchive-class.md) nesnesi, bir Windows aracılığıyla veri gönderme ve alma basitleştirmek için birleştirilir Yuva.
 
-Makaleyi [Windows Yuvaları: örnek, yuva kullanarak arşivleri](../mfc/windows-sockets-example-of-sockets-using-archives.md) sunan `PacketSerialize` işlevi. Arşiv nesnesinde `PacketSerialize` örnek bir MFC için geçirilen bir arşiv nesnesi gibi çalışır [serileştirme](../mfc/reference/cobject-class.md#serialize) işlevi. Temel fark yuva için standart olmayan arşiv bağlı [CFile](../mfc/reference/cfile-class.md) (genellikle bir disk dosya ile ilişkilendirilmiş) nesne ancak çok bir `CSocketFile` nesne. Bir disk dosyasına bağlanmak yerine `CSocketFile` nesne bağlandığı bir `CSocket` nesne.
+Makaleyi [Windows Yuvaları: Yuva kullanarak arşivleri örneği](../mfc/windows-sockets-example-of-sockets-using-archives.md) sunan `PacketSerialize` işlevi. Arşiv nesnesinde `PacketSerialize` örnek bir MFC için geçirilen bir arşiv nesnesi gibi çalışır [serileştirme](../mfc/reference/cobject-class.md#serialize) işlevi. Temel fark yuva için standart olmayan arşiv bağlı [CFile](../mfc/reference/cfile-class.md) (genellikle bir disk dosya ile ilişkilendirilmiş) nesne ancak çok bir `CSocketFile` nesne. Bir disk dosyasına bağlanmak yerine `CSocketFile` nesne bağlandığı bir `CSocket` nesne.
 
 A `CArchive` nesnesi bir arabellek yönetir. Depolama (gönderen) arşiv arabelleğinin dolduğunda, ilişkili bir `CFile` arabellek içeriği nesneyi yazar. Bir yuva için bağlı bir arşiv arabelleğinin düzenleniyor bir ileti göndermeye eşdeğerdir. Bir yükleme (alma) arşiv arabelleğinin dolduğunda `CFile` nesne Okuma arabelleği yeniden kullanılabilir olana kadar durdurur.
 
@@ -46,9 +46,9 @@ Varsa `CSocket` uygulanmamış iki durumlu nesnesi olarak, önceki bildirim işl
 
 "Arşiv uyumlu" modunda bir `CSocketFile` nesne "kilitlenme." tehlikesi azaltır ve daha iyi performans sağlar Gönderme ve alma yuvalarına birbirleri üzerinde bekliyor veya ortak bir kaynağı bekleyen bir kilitlenme oluşur. Bu durum meydana gelebilir `CArchive` nesne çalıştığınız `CSocketFile` , sahip olduğu gibi bir `CFile` nesne. İle `CFile`, Arşiv, istenenden daha az bayt alırsa, dosya sonuna ulaşıldı varsayabilirsiniz. İle `CSocketFile`ancak, veri tabanlı ileti; arabellek birden fazla ileti içerebilir, bu nedenle, istenen bayt sayısından daha az alan değil yaptığından dosya sonu. Uygulama ile olabileceği gibi bu durumda engellemez `CFile`, arabellek boş olana kadar iletilerini arabellekteki okuma devam edebilir. [IsBufferEmpty](../mfc/reference/carchive-class.md#isbufferempty) işlevi `CArchive` arşivin arabellek böyle bir durumda durumunu izlemek için yararlıdır.
 
-Daha fazla bilgi için [Windows Yuvaları: yuvaların arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
 [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)

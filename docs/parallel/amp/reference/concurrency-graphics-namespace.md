@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - AMP_GRAPHICS/Concurrency
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
-ms.openlocfilehash: 5bff3bbba3c2ba9e6c51ee20c8701c80a557707f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef61c93e062b375377a0afe62aa7f622f6c0d4ac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500496"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326547"
 ---
 # <a name="concurrencygraphics-namespace"></a>Concurrency::graphics Ad Alanı
 
@@ -82,8 +82,8 @@ namespace graphics;
 
 **Başlık:** amp_graphics.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

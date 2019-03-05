@@ -307,12 +307,12 @@ helpviewer_keywords:
 - CMenuImages class [MFC]
 - CleanUp method [MFC]
 ms.assetid: 3e2276aa-b02a-4781-97ba-ea074045e9e2
-ms.openlocfilehash: 706ba4cdd1a8f9d77857c52898058aa62fcca8c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae35aefefe548990eeb7fbe637839e475036c2bc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435496"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300095"
 ---
 # <a name="internal-classes"></a>İç Sınıflar
 
@@ -325,7 +325,7 @@ Aşağıdaki sınıflar MFC'de dahili olarak kullanılır. Bütünlük için bu 
 |`CCommandManager Class`|`CCommandManager` Sınıfı, komutlar ve bunların görüntülerle yönetir.|
 |`CDialogImpl Class (MFC)`|İletişim kutusu tabanlı sınıflar için uygulama ayrıntıları gibi sağlar `CDialogEx`.|
 |`CDocumentAdapter Class`|Implements Idocument arabirimi işleyicileri arama ve düzenleme için gereklidir.|
-|`CFrameImpl Class`|`CFrameImpl` Sınıfı aşağıdaki çerçeve penceresi sınıfları için araç çubuğu özelleştirme işler: [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md), [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md), ve [Coleıpframewndexsınıfı](../../mfc/reference/coleipframewndex-class.md).|
+|`CFrameImpl Class`|`CFrameImpl` Sınıfı aşağıdaki çerçeve penceresi sınıfları için araç çubuğu özelleştirme işler: [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md), [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md), ve [Coleıpframewndex sınıfı](../../mfc/reference/coleipframewndex-class.md).|
 |`CFullScreenImpl Class`|SDI ve MDI uygulamaları için ortak uygulayan tam ekran işlevselliği.|
 |`CMDIClientAreaWnd Class`|`CMDIClientAreaWnd` Uygulaması MDI sekmeleri ve MDI sekmeli grupları basitleştiren bir yardımcı sınıfı.|
 |`CMemDC Class`|Bir bellek cihaz bağlamı için bir yardımcı sınıfı. Bellek cihaz bağlamı ekran dışında çizim destekler.|
@@ -409,7 +409,6 @@ Aşağıdaki sınıflar MFC'de dahili olarak kullanılır. Bütünlük için bu 
 |`CVSListBoxEditCtrl Class`|Bir iletişim kutusu açılır küçük bir düğme görüntüleyerek standart liste kutusu düzenleme denetimini genişletir.|
 |`CVSToolsListBox Class`|Ek düğmeler, ekleme, silme ve liste kutusunda öğeleri Taşı sağlayarak standart liste kutusu denetimini genişletir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Masaüstü Uygulamaları](../../mfc/mfc-desktop-applications.md)
-

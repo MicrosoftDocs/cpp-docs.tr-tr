@@ -1,5 +1,5 @@
 ---
-title: Kayıt defteri makroları
+title: Registry Macros
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::_ATL_STATIC_REGISTRY
@@ -12,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: bced900cd7bac666daf415d91a4540828c769025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e05d6a47ea67138e8d1d456077526dd3178cc44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660388"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292928"
 ---
-# <a name="registry-macros"></a>Kayıt defteri makroları
+# <a name="registry-macros"></a>Registry Macros
 
 Bu makrolar, kullanışlı bir tür kitaplığı ve kayıt defteri özellikleri tanımlar.
 
@@ -192,6 +192,6 @@ ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DE
 
 Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)

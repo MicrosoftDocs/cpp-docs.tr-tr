@@ -1,21 +1,21 @@
 ---
-title: 'Seri hale getirme: Bir Nesneyi Seri Hale Getirme'
+title: 'Seri hale getirme: Bir nesneyi seri hale getirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - serializing objects [MFC]
 - serialization [MFC], objects
 - objects [MFC], serializing
 ms.assetid: 1db772b1-ad55-4fcf-b133-126cca082510
-ms.openlocfilehash: 10a7c52e6187f4db8345e1eadb88faeefa50b419
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c1106f180c587894283575a82a88e9e18b5c01a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588532"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290501"
 ---
-# <a name="serialization-serializing-an-object"></a>Seri hale getirme: Bir Nesneyi Seri Hale Getirme
+# <a name="serialization-serializing-an-object"></a>Seri hale getirme: Bir nesneyi seri hale getirme
 
-Makaleyi [seri hale getirme: seri hale getirilebilir bir sınıf yapma](../mfc/serialization-making-a-serializable-class.md) bir sınıf serileştirilebilir yapmak nasıl gösterir. Seri hale getirilebilir bir sınıf aldıktan sonra bir dosya gelen ve bu sınıfın nesneleri serileştirebilen bir [CArchive](../mfc/reference/carchive-class.md) nesne. Bu makalede açıklanmıştır:
+Makaleyi [seri hale getirme: Seri hale getirilebilir bir sınıf yapma](../mfc/serialization-making-a-serializable-class.md) bir sınıf serileştirilebilir yapmak nasıl gösterir. Seri hale getirilebilir bir sınıf aldıktan sonra bir dosya gelen ve bu sınıfın nesneleri serileştirebilen bir [CArchive](../mfc/reference/carchive-class.md) nesne. Bu makalede açıklanmıştır:
 
 - [CArchive nesnesi hangi](../mfc/what-is-a-carchive-object.md).
 
@@ -27,7 +27,6 @@ Makaleyi [seri hale getirme: seri hale getirilebilir bir sınıf yapma](../mfc/s
 
 Seri hale getirilebilir belgeniz için arşiv veya açıkça oluşturmak framework sağlayabilirsiniz `CArchive` kendiniz nesne. Kullanarak bir dosya ile seri hale getirilebilir nesnenizin arasında veri aktarabilir <\< ve >> işleçleri `CArchive` veya çağırarak bağlı olarak, bazı durumlarda `Serialize` işlevi bir `CObject`-türetilmiş sınıf.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Serileştirme](../mfc/serialization-in-mfc.md)
-

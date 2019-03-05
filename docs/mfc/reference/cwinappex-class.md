@@ -1,5 +1,5 @@
 ---
-title: CWinAppEx sınıfı
+title: CWinAppEx Class
 ms.date: 11/04/2016
 f1_keywords:
 - CWinAppEx
@@ -118,14 +118,14 @@ helpviewer_keywords:
 - CWinAppEx [MFC], StoreWindowPlacement
 - CWinAppEx [MFC], m_bForceImageReset
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-ms.openlocfilehash: 57c18ff00cd9e3a1d3156d8214ac78b49ca00c1f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c222567703d0e57480c00f6f2bf9e78f16979150
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544423"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288837"
 ---
-# <a name="cwinappex-class"></a>CWinAppEx sınıfı
+# <a name="cwinappex-class"></a>CWinAppEx Class
 
 `CWinAppEx` Uygulama durumu işler, durumu kayıt defterine kaydeder, kayıt defterinden durumu yükler, uygulama yöneticilerini başlatır ve aynı uygulama yöneticileri için bağlantılar sağlar.
 
@@ -222,7 +222,7 @@ MFC framework tarafından sağlanan işlevlerinin çoğunu bağımlı `CWinAppEx
 
 - Ana uygulama türetin `CWinAppEx`.
 
-Eklediğiniz sonra `CWinAppEx` uygulamanıza, uygulama yöneticilerini herhangi birini başlatabilirsiniz. Bir uygulama Yöneticisi kullanmadan önce uygun Initialize yöntemi çağırarak başlatmanız gerekir. Belirli bir yöneticinin bir işaretçi alma için ilişkili get yöntemini çağırın. `CWinAppEx` Sınıfı aşağıdaki uygulama yöneticileri yönetir: [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md), [ CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md), ve [CMenuTearOffManager sınıfı](../../mfc/reference/cmenutearoffmanager-class.md).
+Eklediğiniz sonra `CWinAppEx` uygulamanıza, uygulama yöneticilerini herhangi birini başlatabilirsiniz. Bir uygulama Yöneticisi kullanmadan önce uygun Initialize yöntemi çağırarak başlatmanız gerekir. Belirli bir yöneticinin bir işaretçi alma için ilişkili get yöntemini çağırın. `CWinAppEx` Sınıfı aşağıdaki uygulama yöneticileri yönetir: [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md), [CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md), ve [ CMenuTearOffManager sınıfı](../../mfc/reference/cmenutearoffmanager-class.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -1526,7 +1526,7 @@ Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.
 
 Belirtilen anahtar *lspzEntry* yok, bu yöntem oluşturun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

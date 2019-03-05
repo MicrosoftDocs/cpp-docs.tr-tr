@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-ms.openlocfilehash: 5a619eef33a60dc1a34d31c3d51614de20fc8f28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b2c07bc9c0b1e96f34798b20207dc0eb0362e534
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451162"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277732"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency sınıfı
 
@@ -140,7 +140,7 @@ Para birimi türünde bir değişken.
 *nInteger*, *nFraction*<br/>
 İlk parasal değerinin kesirli bileşenlerin ve tamsayı. Bkz: [CComCurrency](../../atl/reference/ccomcurrency-class.md) daha fazla bilgi için.
 
-*pdispsrc &*<br/>
+*pDispSrc*<br/>
 Bir `IDispatch` işaretçi.
 
 *varSrc*<br/>
@@ -462,7 +462,7 @@ A `CComCurrency` nesne.
 *cysrc &*<br/>
 Para birimi türünde bir değişken.
 
-*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc* , *ulSrc*, *dSrc*<br/>
+*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc*, *ulSrc*, *dSrc*<br/>
 Sayısal bir değer atamak için `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -639,7 +639,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/cpp/ccomcurrency-class_21.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COleCurrency Sınıfı](../../mfc/reference/colecurrency-class.md)<br/>
 [PARA BİRİMİ](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>

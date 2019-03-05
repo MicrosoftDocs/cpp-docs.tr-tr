@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], closing
 - dialog boxes [MFC], closing
 ms.assetid: 946f5675-c482-46a4-a5dd-34fe138ffae5
-ms.openlocfilehash: fe57c5603f1b0e9ea0b6fb9e6ea8d80bec961f6e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07e4159eccde1fab89d4a5ffadee4e6d11fc20f0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448119"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302591"
 ---
 # <a name="closing-the-dialog-box"></a>İletişim Kutusunu Kapatma
 
@@ -18,7 +18,6 @@ Kullanıcı düğmeleri, genellikle Tamam düğmesine veya İptal düğmesini se
 
 Kapatma ve modsuz iletişim kutusu silme için düzenlemek için geçersiz kılma `PostNcDestroy` ve çağırma **Sil** işlecinin **bu** işaretçi. [İletişim kutusunu yok etme](../mfc/destroying-the-dialog-box.md) ne olacağını açıklar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
-

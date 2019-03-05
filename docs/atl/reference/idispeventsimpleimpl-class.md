@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventSimpleImpl class
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-ms.openlocfilehash: b78edf44a200f31a6455c0783e90fb65f5d9af38
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1578518b8918f59b1da54f474e82cf899f3c76f6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525333"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285548"
 ---
 # <a name="idispeventsimpleimpl-class"></a>Idispeventsimpleımpl sınıfı
 
@@ -56,9 +56,9 @@ Bu sınıf tarafından uygulanan olay görüntüleme arabirimi Laboratuvardaki i
 |[IDispEventSimpleImpl::Advise](#advise)|Varsayılan olay kaynağı ile bağlantı kurar.|
 |[IDispEventSimpleImpl::DispEventAdvise](#dispeventadvise)|Olay kaynağı ile bağlantı kurar.|
 |[IDispEventSimpleImpl::DispEventUnadvise](#dispeventunadvise)|Olay kaynağı ile bağlantıyı keser.|
-|[IDispEventSimpleImpl::GetIDsOfNames](#getidsofnames)|E_NOTIMPL döndürür.|
-|[IDispEventSimpleImpl::GetTypeInfo](#gettypeinfo)|E_NOTIMPL döndürür.|
-|[IDispEventSimpleImpl::GetTypeInfoCount](#gettypeinfocount)|E_NOTIMPL döndürür.|
+|[IDispEventSimpleImpl::GetIDsOfNames](#getidsofnames)|Returns E_NOTIMPL.|
+|[IDispEventSimpleImpl::GetTypeInfo](#gettypeinfo)|Returns E_NOTIMPL.|
+|[IDispEventSimpleImpl::GetTypeInfoCount](#gettypeinfocount)|Returns E_NOTIMPL.|
 |[IDispEventSimpleImpl::Invoke](#invoke)|Olay işleyicileri çağrıları olay havuzu harita listelenir.|
 |[IDispEventSimpleImpl::Unadvise](#unadvise)|Varsayılan olay kaynağı ile bağlantıyı keser.|
 
@@ -275,7 +275,7 @@ Bağlantı kesildiğinde sonra olayları olay havuzu haritada listelenen işleyi
 
 `Unavise` sonu bir varsayılan olay kaynağı ile bağlantı tarafından belirlendiği şekilde, nesnenin varsayılan olay kaynağının IID alır [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_ATL_FUNC_INFO Yapısı](../../atl/reference/atl-func-info-structure.md)<br/>
 [IDispatchImpl Sınıfı](../../atl/reference/idispatchimpl-class.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CBitmapButton sınıfı
+title: CBitmapButton Class
 ms.date: 11/04/2016
 f1_keywords:
 - CBitmapButton
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: 6bff87cd7648e1e5f4e0391a0a7fc1a1455a51f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c800b40fcf2bb3008b35614390e4aafcb43a54f5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599660"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296767"
 ---
-# <a name="cbitmapbutton-class"></a>CBitmapButton sınıfı
+# <a name="cbitmapbutton-class"></a>CBitmapButton Class
 
 Metin yerine bit eşlemli görüntülerle etiketlenmiş pushbutton denetimleri oluşturur.
 
@@ -222,9 +222,8 @@ void SizeToContent();
 
 [!code-cpp[NVC_MFCControlLadenDialog#59](../../mfc/codesnippet/cpp/cbitmapbutton-class_4.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLTEST](../../visual-cpp-samples.md)<br/>
 [CButton Sınıfı](../../mfc/reference/cbutton-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM modules classes
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
-ms.openlocfilehash: dc18d35c52d99877ed493e61040547a983117ecf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6836215714e979f33f39549a61cbfc99b12bd3d7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428060"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265047"
 ---
 # <a name="com-modules-classes"></a>COM modülü sınıfları
 
@@ -40,8 +40,7 @@ Aşağıdaki sınıflar, bir COM modülü için destek sağlar:
 
 [ATL Modül Sınıfları](../atl/atl-module-classes.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../atl/atl-module-classes.md)
-

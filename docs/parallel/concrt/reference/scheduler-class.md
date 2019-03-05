@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-ms.openlocfilehash: 1b2b4de2a0aa844f9450af9d853b11ea6f485274
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f27dace61b0764962a78695c2a4c6b180b09d7a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638275"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287912"
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 
@@ -56,7 +56,7 @@ class Scheduler;
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametre sürüm `_Placement` görevleri bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle için yeni oluşturulan aynı zamanlama grubundaki neden olur.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Geçerli sanal işlemci sayısı için Zamanlayıcıyı döndürür.|
 |[GetPolicy](#getpolicy)|Zamanlayıcı ile oluşturulan ilkeyi bir kopyasını döndürür.|
-|[Kimliği](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
+|[Kimlik](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
 |[Isavailablelocation](#isavailablelocation)|Belirli bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|
 |[Başvuru](#reference)|Zamanlayıcı başvuru sayısını artırır.|
 |[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenleri `_Event` Zamanlayıcı kapanır ve kendisini yok eder, sinyal parametresi. Olay sinyalini zaman, Zamanlayıcı için zamanlanan tüm iş tamamlanmıştır. Birden fazla kapatma olayları, bu yöntem kullanılarak kaydedilebilir.|
@@ -307,7 +307,7 @@ virtual void ScheduleTask(
 *_Proc*<br/>
 İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.
 
-*_Veri*<br/>
+*_Data*<br/>
 Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.
 
 *Y_erleştirme*<br/>
@@ -330,10 +330,9 @@ Varsayılan Zamanlayıcı ilke olarak ayarlanması için ilke.
 
 Varsa `SetDefaultSchedulerPolicy` yöntemi çağrıldığında bir varsayılan Zamanlayıcı işlem içinde zaten mevcut olduğunda, çalışma zamanı bir [default_scheduler_exists](default-scheduler-exists-class.md) özel durum.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [Görev Zamanlayıcısı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

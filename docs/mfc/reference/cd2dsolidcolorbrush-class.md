@@ -1,5 +1,5 @@
 ---
-title: CD2DSolidColorBrush sınıfı
+title: CD2DSolidColorBrush Class
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DSolidColorBrush
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], m_colorSolid
 - CD2DSolidColorBrush [MFC], m_pSolidColorBrush
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
-ms.openlocfilehash: fa2114df914af07dd9baa140cc96cc94eaea6a91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41d1d1b8c28335ae6207e41d696359295a83e646
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521777"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291242"
 ---
-# <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush sınıfı
+# <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush Class
 
 ID2D1SolidColorBrush için sarmalayıcı.
 
@@ -50,7 +50,7 @@ class CD2DSolidColorBrush : public CD2DBrush;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CD2DSolidColorBrush::CD2DSolidColorBrush](#cd2dsolidcolorbrush)|Fazla Yüklendi. CD2DSolidColorBrush bir nesne oluşturur.|
-|[CD2DSolidColorBrush:: ~ CD2DSolidColorBrush](#cd2dsolidcolorbrush__~cd2dsolidcolorbrush)|Yıkıcı. D2D düz fırça nesnesi yok ediliyorken çağırılır.|
+|[CD2DSolidColorBrush::~CD2DSolidColorBrush](#cd2dsolidcolorbrush__~cd2dsolidcolorbrush)|Yıkıcı. D2D düz fırça nesnesi yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -59,8 +59,8 @@ class CD2DSolidColorBrush : public CD2DBrush;
 |[CD2DSolidColorBrush::Attach](#attach)|Var olan kaynak arabirimi nesnesine ekler|
 |[CD2DSolidColorBrush::Create](#create)|Bir CD2DSolidColorBrush oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
 |[CD2DSolidColorBrush::Destroy](#destroy)|CD2DSolidColorBrush nesnesini yok eder. (Geçersiz kılmaları [CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|
-|[CD2DSolidColorBrush::detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
-|[CD2DSolidColorBrush::get](#get)|Döndürür ID2D1SolidColorBrush arabirimi|
+|[CD2DSolidColorBrush::Detach](#detach)|Kaynak arabirimi nesnesinden ayırır|
+|[CD2DSolidColorBrush::Get](#get)|Döndürür ID2D1SolidColorBrush arabirimi|
 |[CD2DSolidColorBrush::GetColor](#getcolor)|Tek renk Fırçası rengini alır.|
 |[CD2DSolidColorBrush::SetColor](#setcolor)|Bu tek renk Fırçası rengini belirtir.|
 
@@ -68,7 +68,7 @@ class CD2DSolidColorBrush : public CD2DBrush;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CD2DSolidColorBrush::operator ID2D1SolidColorBrush *](#operator_id2d1solidcolorbrush_star)|Döndürür ID2D1SolidColorBrush arabirimi|
+|[CD2DSolidColorBrush::operator ID2D1SolidColorBrush*](#operator_id2d1solidcolorbrush_star)|Döndürür ID2D1SolidColorBrush arabirimi|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
@@ -91,7 +91,7 @@ class CD2DSolidColorBrush : public CD2DBrush;
 
 **Başlık:** afxrendertarget.h
 
-##  <a name="_dtorcd2dsolidcolorbrush"></a>  CD2DSolidColorBrush:: ~ CD2DSolidColorBrush
+##  <a name="_dtorcd2dsolidcolorbrush"></a>  CD2DSolidColorBrush::~CD2DSolidColorBrush
 
 Yıkıcı. D2D düz fırça nesnesi yok ediliyorken çağırılır.
 
@@ -173,7 +173,7 @@ CD2DSolidColorBrush nesnesini yok eder.
 virtual void Destroy();
 ```
 
-##  <a name="detach"></a>  CD2DSolidColorBrush::detach
+##  <a name="detach"></a>  CD2DSolidColorBrush::Detach
 
 Kaynak arabirimi nesnesinden ayırır
 
@@ -185,7 +185,7 @@ ID2D1SolidColorBrush* Detach();
 
 Ayrılmış kaynak arabirim işaretçisi.
 
-##  <a name="get"></a>  CD2DSolidColorBrush::get
+##  <a name="get"></a>  CD2DSolidColorBrush::Get
 
 Döndürür ID2D1SolidColorBrush arabirimi
 
@@ -225,7 +225,7 @@ ID2D1SolidColorBrush nesneye bir işaretçi depolar.
 ID2D1SolidColorBrush* m_pSolidColorBrush;
 ```
 
-##  <a name="operator_id2d1solidcolorbrush_star"></a>  CD2DSolidColorBrush::operator ID2D1SolidColorBrush *
+##  <a name="operator_id2d1solidcolorbrush_star"></a>  CD2DSolidColorBrush::operator ID2D1SolidColorBrush*
 
 Döndürür ID2D1SolidColorBrush arabirimi
 
@@ -250,6 +250,6 @@ void SetColor(D2D1_COLOR_F color);
 *Renk*<br/>
 Bu tek renk Fırçası rengi
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

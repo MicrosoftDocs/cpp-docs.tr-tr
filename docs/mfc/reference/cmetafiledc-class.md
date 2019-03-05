@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMetaFileDC [MFC], Create
 - CMetaFileDC [MFC], CreateEnhanced
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-ms.openlocfilehash: bfbe03c5c81b2c7d6517dff7ce4e5f88b7c076bc
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 95f54f50d7a87e9a2ad4689c14f3b7f8d42ff71e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178310"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276795"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 
@@ -213,8 +213,7 @@ Win32 uygulamaları kullanmalıdır `GetWinMetaFileBits` bir Gelişmiş Meta dos
 
 Gelişmiş Meta dosyası için dosya adı kullanmanız gerekir. EMF uzantısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CDC Sınıfı](../../mfc/reference/cdc-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - classes [C++], ATL
 - ATL, class reference
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
-ms.openlocfilehash: df5ae8da3bb8e192737a06396ab71ba138562b98
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d0e74a02a114392a3fc686142f84a9a807d1537
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529693"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288057"
 ---
 # <a name="atl-class-overview"></a>ATL sınıfına genel bakış
 
@@ -40,7 +40,7 @@ Etkin Şablon kitaplığı (ATL) içinde sınıflar gibi kategorilere ayrılabil
 
 ATL projelerinde kullanılabilir ek sınıfları için bkz: [paylaşılan sınıflar](../atl-mfc-shared/atl-mfc-shared-classes.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve yapılar](../atl/reference/atl-classes.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)<br/>
@@ -48,4 +48,3 @@ ATL projelerinde kullanılabilir ek sınıfları için bkz: [paylaşılan sını
 [Global Değişkenler](../atl/reference/atl-global-variables.md)<br/>
 [Makroları](../atl/reference/atl-macros.md)<br/>
 [Tür tanımları](../atl/reference/atl-typedefs.md)
-

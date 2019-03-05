@@ -5,12 +5,12 @@ helpviewer_keywords:
 - common controls (MFC), build requirements
 - common controls (MFC)
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-ms.openlocfilehash: c9a01665339c28b58a5d528cbb9dfaa235e7f1ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a2e79d91a41ea178eeb6f74ec7fa7b22588b277
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637079"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276903"
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
 
@@ -54,9 +54,8 @@ Windows ortak denetimleri sürüm 6.1 kullanan yeni bir MFC uygulaması oluştur
 #endif
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
 [Hiyerarşi Grafiği](../mfc/hierarchy-chart.md)<br/>
 [Kullanım Dışı ANSI API'leri](../mfc/deprecated-ansi-apis.md)
-

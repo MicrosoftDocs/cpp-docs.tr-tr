@@ -9,12 +9,12 @@ helpviewer_keywords:
 - U_RECT class
 - _U_RECT class
 ms.assetid: 5f880a2d-09cf-4327-bf32-a3519c4dcd63
-ms.openlocfilehash: a4f3139498c9954026bd0247316eee1155f1b737
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 306092a00a1e119263f4563eea181d7d3ee2b4b2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642084"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326380"
 ---
 # <a name="urect-class"></a>_U_RECT sınıfı
 
@@ -80,6 +80,6 @@ A `RECT` işaretçi.
 
 İşaretçi oluşturucusu için bağımsız değişken doğrudan dönüştürme depolanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

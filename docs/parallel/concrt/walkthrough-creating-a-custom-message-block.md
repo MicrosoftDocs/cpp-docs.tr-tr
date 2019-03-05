@@ -1,18 +1,18 @@
 ---
-title: 'İzlenecek Yol: Özel bir İleti Bloğu Oluşturma'
+title: 'İzlenecek yol: Özel ileti bloğu oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - creating custom message blocks Concurrency Runtime]
 - custom message blocks, creating [Concurrency Runtime]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-ms.openlocfilehash: de44a2d01364070318f4d800fc6316c628177178
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e897163a1d394228ac1d8f566e4b0d761fbeeb42
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607135"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272743"
 ---
-# <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek Yol: Özel bir İleti Bloğu Oluşturma
+# <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek yol: Özel ileti bloğu oluşturma
 
 Bu belge, gelen iletileri öncelik sırasına göre sıralayan bir özel ileti bloğu türünün nasıl oluşturulacağını açıklar.
 
@@ -206,7 +206,7 @@ Bu örnek, aşağıdaki örnek çıktısı üretir.
 
 **cl.exe/ehsc priority_buffer.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: CComFakeCriticalSection sınıfı
+title: CComFakeCriticalSection Class
 ms.date: 11/04/2016
 f1_keywords:
 - CComFakeCriticalSection
@@ -11,14 +11,14 @@ f1_keywords:
 helpviewer_keywords:
 - CComFakeCriticalSection class
 ms.assetid: a4811b97-96bb-493b-ab9f-62822aeddb10
-ms.openlocfilehash: cf2408afb70dd6e2be27e22605f46b51b75ad602
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39a9859380eba1b72768234eb8f43d80fca0143f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302149"
 ---
-# <a name="ccomfakecriticalsection-class"></a>CComFakeCriticalSection sınıfı
+# <a name="ccomfakecriticalsection-class"></a>CComFakeCriticalSection Class
 
 Bu sınıf olarak aynı yöntemler sağlar [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) ancak kritik bölüm sağlamaz.
 
@@ -97,6 +97,6 @@ HRESULT Unlock() throw();
 
 Başarılıysa S_OK döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

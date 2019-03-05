@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: 520537f5d562450dc4ea2a5e5a0c68af513da509
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 4d94396ef8839516d9bfee15a2611cce66baa6bd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175062"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297833"
 ---
 # <a name="atl-connection-points"></a>ATL Bağlantı Noktaları
 
@@ -37,7 +37,6 @@ Bir bağlantı noktası bildirme bir örnek sağlar.
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../atl/active-template-library-atl-concepts.md)
-

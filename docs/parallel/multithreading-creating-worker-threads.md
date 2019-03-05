@@ -1,5 +1,5 @@
 ---
-title: "Çoklu iş parçacığı kullanımı: MFC'yi çalışan iş parçacıkları oluşturma"
+title: 'Çoklu iş parçacığı kullanımı: MFC içinde çalışan iş parçacıkları oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multithreading [C++], worker threads
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - threading [MFC], worker threads
 - threading [C++], user input not required
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-ms.openlocfilehash: 54bea7b42018637bf868dfdd923b94dd75aa2307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f36e02d1ba6074a7ec8203bea761b3528a120162
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559490"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293244"
 ---
-# <a name="multithreading-creating-worker-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC'yi çalışan iş parçacıkları oluşturma
+# <a name="multithreading-creating-worker-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC içinde çalışan iş parçacıkları oluşturma
 
 İş parçacığı, kullanıcının uygulamanızı kullanmaya devam etmek için beklenecek olmaması gereken arka plan görevlerinin işlenmesi için yaygın olarak kullanılır. Yeniden hesaplama ve arka plan yazdırma gibi görevler, çalışan iş parçacıkları, iyi örneklerdir. Bu konu bir iş parçacığı oluşturmak gerekli adımları ayrıntılı olarak açıklanmaktadır. Konular şunlardır:
 
@@ -55,11 +55,11 @@ Denetleme işlevi iş parçacığını tanımlar. Bu işlev girildiğinde, iş p
 UINT MyControllingFunction( LPVOID pParam );
 ```
 
-Parametre tek bir değerdir. Bu parametrede işlevin aldığı değer, iş parçacığı nesnesi oluşturulduğunda oluşturucuya geçirilen değerdir. Denetleme işlevi bu değeri seçtiği herhangi bir şekilde yorumlayabilir. Skaler değer ya da birden çok parametre içeren bir yapıya bir işaretçi olarak kabul ya da sayılabilir. Parametre bir yapıya başvurursa, yapı yalnızca arayandan iş parçacığına veri geçirmek, aynı zamanda veri iş parçacığından arayana iletmek için kullanılabilir. Böyle bir yapı çağırana geri veri aktarmak için kullanırsanız, iş parçacığı sonuçlar hazır olduğunda çağrıyı yapana bunu bildirmesi gerekir. Çalışan iş parçacığından arayana iletişim hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md).
+Parametre tek bir değerdir. Bu parametrede işlevin aldığı değer, iş parçacığı nesnesi oluşturulduğunda oluşturucuya geçirilen değerdir. Denetleme işlevi bu değeri seçtiği herhangi bir şekilde yorumlayabilir. Skaler değer ya da birden çok parametre içeren bir yapıya bir işaretçi olarak kabul ya da sayılabilir. Parametre bir yapıya başvurursa, yapı yalnızca arayandan iş parçacığına veri geçirmek, aynı zamanda veri iş parçacığından arayana iletmek için kullanılabilir. Böyle bir yapı çağırana geri veri aktarmak için kullanırsanız, iş parçacığı sonuçlar hazır olduğunda çağrıyı yapana bunu bildirmesi gerekir. Çalışan iş parçacığından arayana iletişim hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md).
 
-İşlev sonlandığında, sonlandırma nedenini belirten bir UINT değeri döndürmesi gerekir. Genellikle bu çıkış kodu farklı hatalar gösteren diğer değerler ile başarıyı belirtmek için 0'dır. Tamamen uygulamaya bağlıdır budur. Bazı iş parçacıkları nesnelerin kullanım sayısını korumak ve o nesnenin kullanan geçerli sayısını döndürür. Uygulamalar bu değeri nasıl alabildiğini görmek için bkz: [çoklu iş parçacığı kullanımı: iş parçacıklarını sonlandırma](multithreading-terminating-threads.md).
+İşlev sonlandığında, sonlandırma nedenini belirten bir UINT değeri döndürmesi gerekir. Genellikle bu çıkış kodu farklı hatalar gösteren diğer değerler ile başarıyı belirtmek için 0'dır. Tamamen uygulamaya bağlıdır budur. Bazı iş parçacıkları nesnelerin kullanım sayısını korumak ve o nesnenin kullanan geçerli sayısını döndürür. Uygulamalar bu değeri nasıl alabildiğini görmek için bkz: [çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma](multithreading-terminating-threads.md).
 
-MFC kitaplığı ile yazılan çoklu iş parçacığı kullanan programda yapabilecekleriniz bazı kısıtlamalar vardır. Bu kısıtlamalar ve iş parçacığı kullanma hakkında diğer ipuçları açıklamaları için bkz. [çoklu iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md).
+MFC kitaplığı ile yazılan çoklu iş parçacığı kullanan programda yapabilecekleriniz bazı kısıtlamalar vardır. Bu kısıtlamalar ve iş parçacığı kullanma hakkında diğer ipuçları açıklamaları için bkz. [çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md).
 
 ##  <a name="_core_controlling_function_example"></a> Denetleme işlevi örneği
 
@@ -92,8 +92,8 @@ AfxBeginThread(MyThreadProc, pNewObject);
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma](multithreading-creating-user-interface-threads.md)
+- [Çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](multithreading-creating-user-interface-threads.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)

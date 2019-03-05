@@ -10,12 +10,12 @@ helpviewer_keywords:
 - handlers, OnCmdMessage [MFC]
 - OnCmdMessage method [MFC]
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
-ms.openlocfilehash: 37b3d5ffa3e6492c8c00b8b22eba58d09fad51f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ed2e4c09e2fe413d29ad9953dbb8a03c106e86c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643176"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274602"
 ---
 # <a name="oncmdmsg-handler"></a>OnCmdMsg İşleyicisi
 
@@ -25,7 +25,6 @@ Her komut hedefi sınıfı geçersiz kılabilir `OnCmdMsg` üye işlevi. Geçers
 
 Varsayılan `CCmdTarget` uygulaması `OnCmdMsg` aldığı her komut iletisi için bir işleyici işlevi aramak için komut hedef sınıfın ileti eşlemesi kullanır; aynı şekilde standart iletileri aranır. Bu bir eşleşme bulunursa, işleyici çağırır. İleti eşleme arama bölümünde açıklanmıştır [nasıl Framework arar ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
-

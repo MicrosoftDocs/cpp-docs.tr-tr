@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CProgressCtrl class [MFC], settings
 - progress controls [MFC], settings
 ms.assetid: f4616e91-74fa-4000-ba0d-d3ddc0ee075b
-ms.openlocfilehash: 444dc45c816e0dfc2fd45bad999ad90c2acacc01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1960b15c2f76d7cbfc9f249a77481b795e6a27ea
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481789"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290770"
 ---
 # <a name="settings-for-the-progress-control"></a>İlerleme Denetimi Ayarları
 
@@ -22,8 +22,7 @@ Konumu ayarlamak için kullanın [SetPos](../mfc/reference/cprogressctrl-class.m
 
 İlerleme denetimi geçerli konumu adım kullanın [StepIt](../mfc/reference/cprogressctrl-class.md#stepit). Her adım miktarı ayarlamak için kullanın [SetStep](../mfc/reference/cprogressctrl-class.md#setstep)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CProgressCtrl Kullanma](../mfc/using-cprogressctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

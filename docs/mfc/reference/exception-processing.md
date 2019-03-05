@@ -13,12 +13,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: 8b40afbfcc453a4908b434dc53b7b86959673453
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 3db919f40caf4e5dbf42b4e10c549b165c0a9fe4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851688"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293751"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
@@ -579,7 +579,7 @@ void  AfxAbort();
 
   **Üst bilgi** afx.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [CException Sınıfı](cexception-class.md)<br/>

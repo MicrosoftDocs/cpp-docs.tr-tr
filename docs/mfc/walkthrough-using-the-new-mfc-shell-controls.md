@@ -1,17 +1,17 @@
 ---
-title: 'İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma'
+title: 'İzlenecek yol: Yeni MFC Kabuk denetimlerini kullanma'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - shell controls (MFC)
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-ms.openlocfilehash: 4ff585123fb30a4fc31460c95f8960f5cfd7b7bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9314eec7c02ed0286a7ae3fcf14bae6572dd710c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507575"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288798"
 ---
-# <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma
+# <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk denetimlerini kullanma
 
 Bu kılavuzda, dosya Gezgini'ne benzeyen bir uygulama oluşturacaksınız. İki bölme içeren bir pencere oluşturacaksınız. Sol bölmede tutacak bir [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) Masaüstü hiyerarşik bir görünümde görüntüleyen bir nesne. Sağ bölmede tutacak bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) sol bölmede seçtiğiniz klasördeki dosyaların gösterir.
 
@@ -168,6 +168,6 @@ Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılma
 
 - `CMFCShellListCtrl` Dosyaları gibi farklı modlarda görüntülemeyi destekler **büyük simgeler**, **küçük simgeleri**, **listesi**, ve **ayrıntıları**. Bu işlevselliği uygulamak için uygulamanızı güncelleştirin. İpucu: bkz [Visual C++ örnekleri](../visual-cpp-samples.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)

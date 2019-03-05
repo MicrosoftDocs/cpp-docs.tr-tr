@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC Add Class Wizard
 - wizards [MFC]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
-ms.openlocfilehash: 245963d4222188f16fd334d6950e04584ac1e978
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fa9b947ae6fc0e48aaecde61e35a5f4152c85f27
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520848"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304099"
 ---
 # <a name="mfc-add-class-wizard"></a>MFC Sınıf Ekleme Sihirbazı
 
@@ -79,7 +79,7 @@ Bu sayfada, sınıf adı, temel sınıf ve yeni bir sınıf için dosya adların
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**Yok**|Sınıf Otomasyonu destek sahip olduğunu gösterir.|
+  |**Yok.**|Sınıf Otomasyonu destek sahip olduğunu gösterir.|
   |**Otomatikleştirme**|Sınıf Otomasyonu desteklediğini belirtir. Bu seçeneği belirlerseniz, yeni oluşturulan sınıf, programlanabilir bir otomasyon istemci uygulamaları, Microsoft Visual Basic ve Microsoft Excel gibi nesnesiyle olarak kullanılabilir. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılabilir değildir.|
   |**Tarafından türü kimliği**|Diğer uygulamaları otomasyonu kullanarak bu sınıfın nesneleri oluşturma sınıf ve proje desteklediğini gösterir. Bu seçenek belirtilmişse, Otomasyon istemcileri doğrudan bir Automation nesnesi oluşturabilirsiniz. Tür kimliği metin kutusunda, istemci uygulaması tarafından oluşturulacak nesne belirtmek için kullanılır; Bu sistem çapında ve benzersiz olmalıdır. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılabilir değildir.|
 
@@ -117,7 +117,7 @@ Bu sayfada, sınıf adı, temel sınıf ve yeni bir sınıf için dosya adların
 
   Bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md) daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)

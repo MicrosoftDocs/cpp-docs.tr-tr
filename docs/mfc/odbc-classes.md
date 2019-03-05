@@ -7,12 +7,12 @@ helpviewer_keywords:
 - database classes [MFC], ODBC
 - ODBC classes [MFC]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-ms.openlocfilehash: f0ff337a7193093456ab4f5de2f6087d88ca12df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75e022ea3e5de4a57f0ef2b1e3f312654c2889ec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518527"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267140"
 ---
 # <a name="odbc-classes"></a>ODBC Sınıfları
 
@@ -43,7 +43,6 @@ Hangi veri alan veri üyeleri ve ilgili tablo sütunları veri kaynağında bir 
 [CDBVariant](../mfc/reference/cdbvariant-class.md)<br/>
 bir değeri, değerin veri türü hakkında endişelenmeden depolamanıza olanak tanır. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değer izler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

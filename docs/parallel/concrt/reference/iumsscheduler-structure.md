@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSScheduler structure
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-ms.openlocfilehash: 0fd1ed90ca30c9c9e6815bb05b516f24b4f9a164
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f377d6079017266630434ce71602a7e70e58ae21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513795"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282311"
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler Yapısı
 
@@ -70,7 +70,7 @@ Tamamlanma listesi Zamanlayıcı için arabirim. Zamanlayıcı başına tek bir 
 
 Resource Manager kaynakların ilk Ayırma Zamanlayıcı istedi sonra UMS iş parçacıkları, istediği belirten bir zamanlayıcı üzerinde bu yöntemi çağırır. Zamanlayıcı'yı kullanabilirsiniz `IUMSCompletionList` zaman UMS iş parçacığı proxy engeli kaldırılmış belirlemek için arabirim. Yalnızca bu arabirim için UMS Zamanlayıcısını atanmış bir sanal işlemci kökünde çalışan iş parçacığı proxy erişmek için geçerli değil.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - message types and user interface objects [MFC]
 ms.assetid: 681ee1a7-f6e6-4ea0-9fc6-1fb53a35516e
-ms.openlocfilehash: 42584a6514a48e7c02d98e1b619c06a11a8f277b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1676edf487d536d75ccd7901c5bdfa827cc143fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641694"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326328"
 ---
 # <a name="message-types-associated-with-user-interface-objects"></a>Kullanıcı Arabirimi Nesneleri ile İlişkili İleti Türleri
 
@@ -25,7 +25,7 @@ Aşağıdaki tabloda, birlikte çalıştığınız nesne türlerini ve bunlarla 
 |Menü veya Hızlandırıcı tanımlayıcısı|-KOMUT iletisi (program işlevi çalıştırılır).<br />-UPDATE_COMMAND_UI iletisi (dinamik olarak güncelleştirir. menü öğesi).|
 |Denetim Kimliği|Seçili denetim türü için denetimi bildirim iletileri.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

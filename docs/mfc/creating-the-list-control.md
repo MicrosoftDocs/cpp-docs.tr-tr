@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CListCtrl class [MFC], creating control
 - list controls [MFC]
 ms.assetid: a4cb1729-31b6-4d2b-a44b-367474848a39
-ms.openlocfilehash: b21fb8a7721df571dbe4d65c28053af3610d9bf7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b2cb47699339dd413dc1bfae7623069da56e7a4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495273"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303659"
 ---
 # <a name="creating-the-list-control"></a>Liste Denetimi Oluşturma
 
@@ -32,8 +32,7 @@ Listenin nasıl kontrol ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluş
 
 1. Denetimin çağrı [Oluştur](../mfc/reference/clistctrl-class.md#create) üye işlev, büyük olasılıkla buna [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), büyük olasılıkla, ana pencerenin olabildiğince erken [OnCreate](../mfc/reference/cwnd-class.md#oncreate) (kullanıcısıysanız işleyici işlevi denetimini alt sınıf yapma). Denetimi için stiller ayarlayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

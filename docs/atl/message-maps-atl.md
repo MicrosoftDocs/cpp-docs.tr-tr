@@ -6,12 +6,12 @@ helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
-ms.openlocfilehash: 92d0b4887127e1803d1d3209a6a1dd51e9a98d15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b8b3fcb2f10f975ebdf68a285c7d5e364b9e1b4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496115"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292581"
 ---
 # <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
 
@@ -31,7 +31,6 @@ Bu sınıfın türetildiği sağlanan bildiren bir ileti eşlemesi herhangi bir 
 
 Son olarak, diğer ileti eşlemeleri ile bildirilen, ATL destekler [ALT_MSG_MAP](reference/message-map-macros-atl.md#alt_msg_map) makrosu. Her alternatif ileti eşlemesi için ALT_MSG_MAP geçirdiğiniz benzersiz bir numara tarafından tanımlanır. Alternatif bir iletiyi kullanarak eşler, bir eşlem içindeki birden çok windows iletileri işleyebilir. Varsayılan olarak, dikkat `CWindowImpl` diğer ileti eşlemeleri kullanmaz. Bu desteği eklemek için geçersiz kılma `WindowProc` yönteminde, `CWindowImpl`-türetilmiş sınıf ve çağrı `ProcessWindowMessage` ileti eşlemesi tanımlayıcısına sahip.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Uygulama](../atl/implementing-a-window.md)
-

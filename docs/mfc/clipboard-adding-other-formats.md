@@ -1,5 +1,5 @@
 ---
-title: 'Pano: Diğer Biçimleri Ekleme'
+title: 'Pano: Diğer biçimleri ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - formats [MFC], Clipboard
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-ms.openlocfilehash: 991736714d52b4b5fb1a001fb17f1daefed5ddb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16e949973ff621b1e4e36475d95763ac47b4a00d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560569"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280224"
 ---
-# <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
+# <a name="clipboard-adding-other-formats"></a>Pano: Diğer biçimleri ekleme
 
-Bu konuda özellikle OLE desteği için desteklenen biçimler listesini genişletin açıklanmaktadır. Konu [Pano: veri kopyalama ve yapıştırmayı](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamasını açıklar. Bu tüm uygulamanız ise, panoya yerleştirilen yalnızca biçimler **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve büyük olasılıkla **CF_LINKSOURCE**. Çoğu uygulama, bu üç Pano üzerinde daha fazla biçiminden gerekir.
+Bu konuda özellikle OLE desteği için desteklenen biçimler listesini genişletin açıklanmaktadır. Konu [Pano: Kopyalama ve yapıştırma veri](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamasını açıklar. Bu tüm uygulamanız ise, panoya yerleştirilen yalnızca biçimler **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve büyük olasılıkla **CF_LINKSOURCE**. Çoğu uygulama, bu üç Pano üzerinde daha fazla biçiminden gerekir.
 
 ##  <a name="_core_registering_custom_formats"></a> Özel kayıt biçimleri
 
@@ -46,7 +46,6 @@ MFC OLE örnek program bu yöntem kullanılır [HIERSVR](../visual-cpp-samples.m
 
 - [OLE](../mfc/ole-background.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Pano: OLE Pano Mekanizmasını Kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
-
+[Pano: OLE Pano mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)

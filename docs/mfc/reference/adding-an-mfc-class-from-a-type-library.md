@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, adding classes from type libraries
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-ms.openlocfilehash: 5cd94ad6d400cf2db60131e822f430f87a129cbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8264de2c717c874da157cb29ad5e336e3ecbd0f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548024"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301599"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>Tür Kitaplığından Bir MFC Sınıfı Ekleme
 
@@ -20,7 +20,7 @@ Kullanılabilen tür kitaplığında bir arabirimden bir MFC sınıfı oluşturm
 > [!NOTE]
 >  Tür kitaplığından bir sınıf eklemek için etkin Otomasyonu ile MFC projenizi oluşturmak gerekmez.
 
-Bir tür kitaplığı ikili yöntemlerin parametreleri ve dönüş türleri birlikte tanımlama, bir bileşen tarafından kullanıma sunulan arabirimler açıklamasını içerir. Tür kitaplığı içinde görünmesi için kaydedilmelidir **kullanılabilir tür kitaplıklarını** Typelib sihirbazından Sınıf Ekle listesinde. "İçinde dağıtılmış COM: tür kitaplıklarını ve dil tümleştirme" daha fazla bilgi için MSDN Kitaplığı'nda bkz.
+Bir tür kitaplığı ikili yöntemlerin parametreleri ve dönüş türleri birlikte tanımlama, bir bileşen tarafından kullanıma sunulan arabirimler açıklamasını içerir. Tür kitaplığı içinde görünmesi için kaydedilmelidir **kullanılabilir tür kitaplıklarını** Typelib sihirbazından Sınıf Ekle listesinde. Bkz: "içinde dağıtılmış COM: Kitaplıkları ve dil tümleştirme daha fazla bilgi için MSDN Kitaplığı'nda tür".
 
 ### <a name="to-add-an-mfc-class-from-a-type-library"></a>Tür kitaplığından bir MFC sınıfı ekleme
 
@@ -34,8 +34,7 @@ Sihirbazda bir tür kitaplığında birden fazla sınıf ekleyebilirsiniz. Benze
 
 MFC sınıfından türetilen bir sihirbaz [COleDispatchDriver](../../mfc/reference/coledispatchdriver-class.md), seçilen tür kitaplığından eklediğiniz her arabirim için. `COleDispatchDriver` OLE Otomasyonu nesnesi etkin tarafını uygular.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Otomasyon İstemcileri](../../mfc/automation-clients.md)<br/>
-[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../../mfc/automation-clients-using-type-libraries.md)
-
+[Otomasyon istemcileri: Tür kitaplıklarını kullanma](../../mfc/automation-clients-using-type-libraries.md)

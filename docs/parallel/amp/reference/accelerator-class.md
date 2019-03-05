@@ -40,12 +40,12 @@ f1_keywords:
 helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-ms.openlocfilehash: 2045d2d1c6a848378ac55114b61177d386b14fab
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 31008b398d17ac0c226f9359745067c4fefc08a9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523929"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326640"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 
@@ -131,7 +131,7 @@ Oluşturulabilir bir `accelerator` kullanılabilir cihazları listeleniyor taraf
 
 **Başlık:** amprt.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 
 ##  <a name="dtor"></a> </a> ~ accelerator
 
@@ -505,7 +505,7 @@ static inline bool set_default(std::wstring _Path);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Yolu*<br/>
+*_Path*<br/>
 Hızlandırıcının yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -771,6 +771,6 @@ void wait();
 
 Döndürür `void`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

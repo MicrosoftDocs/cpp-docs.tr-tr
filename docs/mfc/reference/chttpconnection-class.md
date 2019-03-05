@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CHttpConnection [MFC], CHttpConnection
 - CHttpConnection [MFC], OpenRequest
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
-ms.openlocfilehash: 7d11420ca48bfcecbd2534123a36364314b9651c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f7a91454b9a8619cda155f33391e5d02ae7653b5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611009"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273614"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 
@@ -209,7 +209,7 @@ Geçersiz kılma `dwContext` varsayılan bağlamı tanımlayıcısını bir değ
 
 Bu işlev ile özel durumlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CInternetConnection Sınıfı](../../mfc/reference/cinternetconnection-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

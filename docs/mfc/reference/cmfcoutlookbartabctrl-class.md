@@ -1,5 +1,5 @@
 ---
-title: CMFCOutlookBarTabCtrl sınıfı
+title: CMFCOutlookBarTabCtrl Class
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCOutlookBarTabCtrl
@@ -44,14 +44,14 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-ms.openlocfilehash: e858d5a481add0f3c6e61175a96a5b27133bf125
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01effb8cb1142db0bcae6f9c456e4a3b3abd69e8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559724"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269948"
 ---
-# <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl sınıfı
+# <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Class
 
 Öğesinin görsel görünümüne sahip sekme denetimi **Gezinti bölmesinde** Microsoft Outlook.
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
@@ -476,7 +476,7 @@ BOOL SetToolbarImageList(
 *uiID*<br/>
 [in] Yüklenecek görüntünün kaynak Kimliğini belirtir.
 
-*CX*<br/>
+*cx*<br/>
 [in] Piksel cinsinden görüntü listesinden görüntü genişliğini belirtir.
 
 *clrTransp*<br/>
@@ -504,7 +504,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

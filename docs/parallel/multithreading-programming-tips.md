@@ -16,12 +16,12 @@ helpviewer_keywords:
 - troubleshooting [C++], multithreading
 - Windows handle maps [C++]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
-ms.openlocfilehash: 0fbee2e836c2e898488da348e4dec9ea00ac4370
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e89d0d534638f7216f142bc3f86633a59b8b0ff7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494284"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290812"
 ---
 # <a name="multithreading-mfc-programming-tips"></a>Çoklu iş parçacığı kullanımı: MFC programlama ipuçları
 
@@ -43,7 +43,7 @@ Sınıf kitaplığı hata ayıklama bellek ayırma tarafından kullanılanlar gi
 
 ##  <a name="_core_accessing_mfc_objects_from_non.2d.mfc_threads"></a> MFC dışı iş parçacıklarından MFC nesnelere erişme
 
-Kullanarak başka bir şekilde bir iş parçacığı oluşturan bir çok iş parçacıklı uygulamanız varsa bir [CWinThread](../mfc/reference/cwinthread-class.md) nesnesi, bu iş parçacığından diğer MFC nesneleri erişemiyor. Diğer bir deyişle, her MFC nesnesinin ikincil bir iş parçacığından erişmek istiyorsanız, açıklanan yöntemlerden biri ile bu iş parçacığı oluşturmalısınız [çoklu iş parçacığı kullanımı: kullanıcı arabirimi iş parçacıkları oluşturma](multithreading-creating-user-interface-threads.md) veya [çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](multithreading-creating-worker-threads.md). Bu yöntemler izin veren sınıf kitaplığının çok iş parçacıklı uygulamalar işlemek için gerekli iç değişkenlerini başlatmak yalnızca olanlardır.
+Kullanarak başka bir şekilde bir iş parçacığı oluşturan bir çok iş parçacıklı uygulamanız varsa bir [CWinThread](../mfc/reference/cwinthread-class.md) nesnesi, bu iş parçacığından diğer MFC nesneleri erişemiyor. Diğer bir deyişle, her MFC nesnesinin ikincil bir iş parçacığından erişmek istiyorsanız, açıklanan yöntemlerden biri ile bu iş parçacığı oluşturmalısınız [çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](multithreading-creating-user-interface-threads.md) veya [çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](multithreading-creating-worker-threads.md). Bu yöntemler izin veren sınıf kitaplığının çok iş parçacıklı uygulamalar işlemek için gerekli iç değişkenlerini başlatmak yalnızca olanlardır.
 
 ##  <a name="_core_windows_handle_maps"></a> Windows tanıtıcı eşlemeleri
 
@@ -57,8 +57,8 @@ Tanıtıcı eşlemeleri hakkında daha fazla bilgi için bkz. [Teknik Not 3](../
 
 ##  <a name="_core_communicating_between_threads"></a> İş parçacıkları arasında iletişim kurma
 
-MFC, birkaç iş parçacığı güvenliği sağlamak için nesnelere erişimi eşitlemek için iş parçacığı izin sınıflar sağlar. Bu sınıfların kullanımı, açıklanan [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](multithreading-how-to-use-the-synchronization-classes.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](multithreading-when-to-use-the-synchronization-classes.md). Bu nesneler hakkında daha fazla bilgi için bkz: [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK.
+MFC, birkaç iş parçacığı güvenliği sağlamak için nesnelere erişimi eşitlemek için iş parçacığı izin sınıflar sağlar. Bu sınıfların kullanımı, açıklanan [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](multithreading-how-to-use-the-synchronization-classes.md) ve [çoklu iş parçacığı kullanımı: Zaman eşitleme sınıflarını kullanma](multithreading-when-to-use-the-synchronization-classes.md). Bu nesneler hakkında daha fazla bilgi için bkz: [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)

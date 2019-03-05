@@ -5,12 +5,12 @@ helpviewer_keywords:
 - status bars
 - control bars [MFC], status bar
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
-ms.openlocfilehash: 67a06f3c447d620999973ef42aff6122d01273f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 399beaf16eed2a3b488abfc14e255759e8dea779
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583241"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300030"
 ---
 # <a name="status-bars"></a>Durum Çubukları
 
@@ -30,6 +30,6 @@ Durum çubuğu seçerek programınıza oluşturma **ilk durum çubuğu** MFC Uyg
 
 - [Durum çubuğunda komut bilgilerini görüntüleme](../mfc/how-to-display-command-information-in-the-status-bar.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

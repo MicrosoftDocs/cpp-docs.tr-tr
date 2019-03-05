@@ -8,12 +8,12 @@ helpviewer_keywords:
 - threading [ATL], models
 - _ATL_SINGLE_THREADED macro
 ms.assetid: 6b571078-521c-4f3e-9f08-482aa235a822
-ms.openlocfilehash: 419c9880573c2058b3bb60b9c77e4f3ca065fab7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69c1c80bba0b09ce69e0b9b9b27296ef2508e60b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569890"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326068"
 ---
 # <a name="specifying-the-threading-model-for-a-project-atl"></a>Proje İçin İş Parçacıklı Model Belirtme (ATL)
 
@@ -37,7 +37,6 @@ Makrolar gibi çalışma zamanı performansını etkiler:
 
 Bkz: [ATL Basit Nesne Sihirbazı, seçenekleri](../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller bir ATL nesnesi için kullanılabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../atl/active-template-library-atl-concepts.md)
-

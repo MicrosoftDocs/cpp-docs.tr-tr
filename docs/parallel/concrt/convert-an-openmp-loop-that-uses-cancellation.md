@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme'
+title: 'Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için İptali kullanan bir OpenMP döngüsünü dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, cancellation
 - cancellation, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
-ms.openlocfilehash: f3a53113952a12b6b25839deb20548c56a9b7e1c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 618e93c18173bfe3e5f5b5f3058a8bb3d61e98ec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569578"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300681"
 ---
-# <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme
+# <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için İptali kullanan bir OpenMP döngüsünü dönüştürme
 
 Tüm yinelemeler yürütülüp bazı paralel döngüler gerek yoktur. Örneğin, değer bulunduktan sonra bir değeri arar bir algoritma sonlandırabilirsiniz. OpenMP paralel bir döngüden mekanizması sağlamaz. Ancak, çözüm bulundu göstermek için döngü yinelemesi etkinleştirmek için bir Boole değeri ya da bayrağını kullanabilirsiniz. Eşzamanlılık Çalışma zamanı henüz başlamamış diğer görevleri iptal etmek bir görev sağlayan işlevselliği sağlar.
 
@@ -47,9 +47,8 @@ Hakkında daha fazla bilgi için `parallel_for_each` ve diğer paralel algoritma
 
 **cl.exe/ehsc/OpenMP concrt-omp-paralel-any-of.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
 [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)
-

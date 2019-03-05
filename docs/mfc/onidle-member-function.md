@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], OnIdle method [MFC]
 - message handling [MFC], OnIdle method [MFC]
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
-ms.openlocfilehash: 7b3f2fbeac6ae356003abf12b5df4c54c8bb327a
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: c7cdd5cd2327be1b90e7fdb3694353acf8adcafe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175139"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304459"
 ---
 # <a name="onidle-member-function"></a>OnIdle Üye İşlevi
 
@@ -28,6 +28,6 @@ Geçersiz kılma `OnIdle` arka plan görevleri gerçekleştirmek için. Varsayı
 
 Boşta döngü içinde neler yapabileceğiniz hakkında daha fazla bilgi için bkz. [boşta döngü işleme](../mfc/idle-loop-processing.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)

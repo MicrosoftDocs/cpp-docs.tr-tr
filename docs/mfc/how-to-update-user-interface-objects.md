@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme'
+title: 'Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - menus [MFC], updating as context changes
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - commands [MFC], updating UI
 - enabling menus [MFC]
 ms.assetid: 82f09773-c978-427b-b321-05a6143b7369
-ms.openlocfilehash: 2e16d912d0fb9ac195df80846d5bd740d86e30ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0dee9bb48c11cf061af60ebaf9a80c0123d339be
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566068"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289708"
 ---
-# <a name="how-to-update-user-interface-objects"></a>Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme
+# <a name="how-to-update-user-interface-objects"></a>Nasıl yapılır: Kullanıcı arabirimi nesnelerini güncelleştirme
 
 Genellikle, menü öğeleri ve araç çubuğu düğmeleri birden fazla durum sahiptir. Örneğin, mevcut bağlamda kullanılamaz durumdaysa bir menü öğesi (gri) renkte gösterilir. Menü öğeleri de işaretli veya işaretsiz olabilir. Araç çubuğu düğmesi de mümkün değilse devre dışı bırakılabilir veya iade.
 
@@ -38,7 +38,6 @@ Aşağıdaki konular, güncelleştirme işleyicileri kullanımını açıklar:
 
 - [Ccmduı sınıfı](../mfc/the-ccmdui-class.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler](../mfc/menus-mfc.md)
-

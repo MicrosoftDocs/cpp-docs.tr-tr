@@ -80,12 +80,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-ms.openlocfilehash: 67d2be23aa6209c36b1a72eca3322efd1e977447
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 698912100244189bdec99fa3726a063eb2e907a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894438"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298223"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase Class
 
@@ -1566,7 +1566,7 @@ Veri üyesinin değerini [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 `SetDirty(TRUE)` denetimi son kez kaydedildiğinden beri değiştirildi bayrağı için çağrılmalıdır. Değerini `m_bRequiresSave` alınan [CComControlBase::GetDirty](#getdirty).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

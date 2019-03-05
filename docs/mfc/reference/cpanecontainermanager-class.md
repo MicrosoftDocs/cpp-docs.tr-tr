@@ -1,5 +1,5 @@
 ---
-title: CPaneContainerManager sınıfı
+title: CPaneContainerManager Class
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneContainerManager
@@ -106,14 +106,14 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], SetResizeMode
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
-ms.openlocfilehash: 598ad7fd3573928d1915d01d889910c13d9cb00c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e0c55981b895540d490e2e38f43eb68abf48e32
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530019"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294661"
 ---
-# <a name="cpanecontainermanager-class"></a>CPaneContainerManager sınıfı
+# <a name="cpanecontainermanager-class"></a>CPaneContainerManager Class
 
 `CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görünümünü yönetir.
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
@@ -876,7 +876,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

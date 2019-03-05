@@ -41,12 +41,12 @@ f1_keywords:
 - ATLPATH/ATL::ATLPath::StripToRoot
 - ATLPATH/ATL::ATLPath::UnquoteSpaces
 ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
-ms.openlocfilehash: 86ddb3c6916675a92070684a04c7a6a6ecd8a134
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 683fd9c6464187e416ea032840507b2062de1fa3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586075"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295818"
 ---
 # <a name="atl-path-functions"></a>ATL yol işlevleri
 
@@ -690,4 +690,3 @@ inline void UnquoteSpaces(wchar_t* pszPath);
 ### <a name="remarks"></a>Açıklamalar
 
 Bkz: [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa) Ayrıntılar için.
-

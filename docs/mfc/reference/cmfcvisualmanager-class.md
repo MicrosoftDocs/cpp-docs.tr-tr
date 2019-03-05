@@ -344,12 +344,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: 000f5229c14699c80e2ce18e4125d0c2ac6e382b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 594e727a091cbb7b2999e540ae8da7ddec2a7a14
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653056"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294338"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 
@@ -5092,10 +5092,9 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 
 Varsayılan olarak, bu özellik devre dışıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCVisualManager::GetInstance](#getinstance)<br/>
 [Seri Hale Getirme Yöneticisi](../../mfc/visualization-manager.md)
-

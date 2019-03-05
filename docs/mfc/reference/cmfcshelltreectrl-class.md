@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCShellTreeCtrl [MFC], SetFlags
 - CMFCShellTreeCtrl [MFC], SetRelatedList
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-ms.openlocfilehash: cf7e5f9c9b44524491737b27098bc91bb472cb32
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 3fa829c5333a87d908d36438fe8ffcd253f9fb5a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694292"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279997"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
 
@@ -290,7 +290,7 @@ Bu yöntem ilişkilendirir bir `CMFCShellListCtrl` ile bir `CMFCShellTreeCtrl`. 
 
 Bu yöntemi kullanmak [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) alınacak `CMFCShellListCtrl` ile ilişkili bir `CMFCShellTreeCtrl`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

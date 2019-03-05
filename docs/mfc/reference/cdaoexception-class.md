@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CDaoException [MFC], m_pErrorInfo
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
-ms.openlocfilehash: 224ce79094b174d0bd011bd89afbcfe6fb7735d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d49291c51f66ee837f9b31a2ade390cec48c51a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585925"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289006"
 ---
 # <a name="cdaoexception-class"></a>CDaoException sınıfı
 
@@ -71,7 +71,7 @@ MFC içinde DAO ile ilgili tüm hataların tür özel durumlar olarak ifade edil
 
 DAO hata kodları için ' % s'dosyasına DAOERR bakın. H İlgili bilgiler için "Yakalanabilir veri erişimi hatası" DAO Yardım konusuna bakın.
 
-Özel durum genel veya hakkında işleme hakkında daha fazla bilgi için `CDaoException` nesneleri makalelere bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md). İkinci makale DAO özel durum işlemesini gösteren kod örneği içerir.
+Özel durum genel veya hakkında işleme hakkında daha fazla bilgi için `CDaoException` nesneleri makalelere bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md). İkinci makale DAO özel durum işlemesini gösteren kod örneği içerir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -113,7 +113,7 @@ Ancak, MFC sınıfları kapsülleyen DAO arabirim işaretçilerini aracılığı
 
 1. Yığın üzerinde özel durum nesnesi oluşturulur, kendisiyle silin **Sil** bitirdiğinizde işleci.
 
-MFC DAO sınıflarına hataları işleme hakkında daha fazla bilgi için bkz [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
+MFC DAO sınıflarına hataları işleme hakkında daha fazla bilgi için bkz [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
 
 ##  <a name="geterrorcount"></a>  CDaoException::GetErrorCount
 
@@ -163,7 +163,7 @@ Aşağıdaki türde özel durum hakkında bilgi edinmek için bu üye işlevini 
 
 `GetErrorInfo` özel durum nesnesine ait bilgileri depolar `m_pErrorInfo` veri üyesi. Döndürülen bilgileri kısa bir açıklaması için bkz. [m_pErrorInfo](#m_perrorinfo). Türünde bir özel durum yakalarsanız `CDaoException` MFC tarafından oluşturulan `m_pErrorInfo` üye önceden doldurulur. DAO doğrudan çağırmak tercih ederseniz özel durum nesnenin çağırmalıdır `GetErrorInfo` üye işlevi doldurmak için kendiniz `m_pErrorInfo`. Daha ayrıntılı bir açıklama için bkz. [Cdaoerrorınfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısı.
 
-DAO özel durumlar ve örnek kod hakkında daha fazla bilgi için bkz [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
+DAO özel durumlar ve örnek kod hakkında daha fazla bilgi için bkz [özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
 
 ##  <a name="m_nafxdaoerror"></a>  CDaoException::m_nAfxDaoError
 
@@ -211,7 +211,7 @@ Bu bir OLE koddur. Nadiren hemen hemen tüm durumlarda daha belirli MFC DAO ya d
 
 SCODE hakkında daha fazla bilgi için Ek Yardım konusuna [yapısı, OLE hata kodları](/windows/desktop/com/structure-of-com-error-codes) Windows SDK. SCODE veri türü için HRESULT veri türü eşlemeleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

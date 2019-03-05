@@ -7,12 +7,12 @@ f1_keywords:
 - atlcom/ATL::SERVICE_ENTRY
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-ms.openlocfilehash: 14e543946be50c39020d46ab00e702a4f2b7a815
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab130b2401dc9885f82fd5668a2d722a96dd289b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618185"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290540"
 ---
 # <a name="service-map-macros"></a>Hizmet eşleme makroları
 
@@ -150,6 +150,6 @@ Arabirimini uygulayan nesnenin ayrıca diğer hizmetleri arabirimleri uygulayabi
 
 Hiçbir şey iki hizmet arasında ortak arabiriminin uygulamasını sahip olsanız bile SID_SMyService ve SID_SYourService, gibi iki farklı hizmet her ikisi de aynı arabirimi kullanımını belirtebilirsiniz. Bu, çalışır çünkü bir çağrı `QueryService` (SID_SMyService, IID_IDispatch) değerinden farklı bir nesne döndürebilir `QueryService` (SID_SYourService, IID_IDispatch). Farklı hizmet tanımlayıcısı belirttiğinizde nesne kimliğini kabul değil.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Makroları](../../atl/reference/atl-macros.md)

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: c723d76f17ad1c74ab98e7348450cea3f03c4d78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3db32e85ea9cba1e946db6259c00c621650e969
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429321"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290566"
 ---
 # <a name="atl-typedefs"></a>ATL tür tanımları
 
@@ -170,12 +170,12 @@ Kullanarak `CComGlobalsThreadModel` belirli bir iş parçacığı model sınıf�
 
 Ek olarak `CComGlobalsThreadModel`, ATL sağlar **typedef** adı [CComObjectThreadModel](#ccomobjectthreadmodel). Her tarafından başvurulan sınıfın `typedef` iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-|typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
+| typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
+S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 Kullanım `CComObjectThreadModel` içinde tek bir nesne sınıfı. Kullanım `CComGlobalsThreadModel` programınıza genel olarak kullanılabilen veya birden çok iş parçacığı arasında modülü kaynakları korumak istiyorsanız, bir nesnedeki.
 
@@ -210,12 +210,12 @@ Kullanarak `CComObjectThreadModel` belirli bir iş parçacığı model sınıfı
 
 Ek olarak `CComObjectThreadModel`, ATL sağlar **typedef** adı [CComGlobalsThreadModel](#ccomglobalsthreadmodel). Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-|typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
+| typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
+S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 Kullanım `CComObjectThreadModel` içinde tek bir nesne sınıfı. Kullanım `CComGlobalsThreadModel` ya da bir nesnedeki programınızı veya birden çok iş parçacığı arasında modülü kaynakları korumak istediğinizde genel olarak kullanılabilir.
 
@@ -337,7 +337,7 @@ typedef CUrl* LPURL;
 
 **Başlık:** atlutil.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [İşlevler](../../atl/reference/atl-functions.md)<br/>

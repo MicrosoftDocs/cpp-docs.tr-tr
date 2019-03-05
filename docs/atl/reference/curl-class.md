@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
-ms.openlocfilehash: ed42461af50fa83ca142127587d334cc7e75d914
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 913365e2b20015b22480dfd364d75b2be3c6355b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471519"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295662"
 ---
 # <a name="curl-class"></a>CUrl sınıfı
 
@@ -147,17 +147,17 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 *CertOpenStore*<br/>
 Standartlaştırma denetleyen bayraklar. Bayrak belirtilmezse (*CertOpenStore* = 0), tüm güvenli olmayan karakterleri ve meta dizileri yöntemi dönüştürür (gibi \\., \.., ve \\...) kaçış dizileri. *CertOpenStore* aşağıdaki değerlerden biri olabilir:
 
-- ATL_URL_BROWSER_MODE: Kodlama etmez veya karakter kodunu çözme sonra: "#" veya "" ve boşluk sonra kaldırmaz "". Bu değer belirtilmezse, URL'nin tamamını kodlanır ve boşluk kaldırılır.
+- ATL_URL_BROWSER_MODE: Değil kodlayın veya karakter kodunu çözme "# sonra" veya "" ve boşluk sonra kaldırmaz "". Bu değer belirtilmezse, URL'nin tamamını kodlanır ve boşluk kaldırılır.
 
-- ATL_URL _DECODE: tüm % XX dizileri URL ayrıştırılmadan önce kaçış dizileri içeren karaktere dönüştürür.
+- ATL_URL _DECODE: Tüm % XX dizileri URL ayrıştırılmadan önce kaçış dizileri içeren karaktere dönüştürür.
 
-- ATL_URL _ENCODE_PERCENT: karşılaştı herhangi bir yüzde işaretleri kodlar. Varsayılan olarak, yüzde işaretleri kodlanmaz.
+- ATL_URL _ENCODE_PERCENT: Karşılaşılan herhangi bir yüzde işaretleri kodlar. Varsayılan olarak, yüzde işaretleri kodlanmaz.
 
-- ATL_URL _ENCODE_SPACES_ONLY: yalnızca boşluk kodlar.
+- ATL_URL _ENCODE_SPACES_ONLY: Yalnızca boşluk kodlar.
 
 - ATL_URL _NO_ENCODE: Güvenli olmayan karakterleri kaçış sıralarına dönüştürmez.
 
-- ATL_URL _NO_META: meta dizileri kaldırmaz (gibi "."ve"...") URL'sinden.
+- ATL_URL _NO_META: Meta dizileri kaldırmaz (gibi "."ve"...") URL'sinden.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -598,6 +598,6 @@ Kullanıcı adı.
 
 Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../atl/reference/atl-classes.md)

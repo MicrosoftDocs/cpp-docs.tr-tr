@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CD2DMesh [MFC], Open
 - CD2DMesh [MFC], m_pMesh
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-ms.openlocfilehash: 1cc1769f66b54f2a9a23ef9ad94298687fe4d925
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4ad6fd054eeb8576c2fdb2dc924f70034b3abad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445649"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275134"
 ---
 # <a name="cd2dmesh-class"></a>CD2DMesh sınıfı
 
@@ -218,6 +218,6 @@ operator ID2D1Mesh*();
 
 Bir ID2D1Mesh arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

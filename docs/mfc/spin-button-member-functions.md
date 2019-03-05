@@ -5,12 +5,12 @@ helpviewer_keywords:
 - spin button control, methods
 - CSpinButtonCtrl class [MFC], methods
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-ms.openlocfilehash: ffd07377d54fcfff93ab4ab3771515a90ccf2785
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ad6f529762e77e1cf1c00f41eea0add5d196fbb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542603"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298405"
 ---
 # <a name="spin-button-member-functions"></a>Döndür Düğmesi Üye İşlevleri
 
@@ -26,8 +26,7 @@ Döndürme denetimi için kullanılabilen çeşitli üye işlevleri vardır ([CS
 
 - **Aralık** değer değiştirme düğmesi için maksimum ve minimum konumları değiştirebilirsiniz. Varsayılan olarak, en fazla 0 olarak ayarlanır ve en az 100'e ayarlayın. Varsayılan üst sınır varsayılan en düşük değer daha az olduğundan, ok düğmelerini eylemlerini counter-intuitive değerindedir. Genellikle, aralığı kullanarak ayarlayacak [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) üye işlevi. Sorgu aralığı kullanımı [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CSpinButtonCtrl Kullanma](../mfc/using-cspinbuttonctrl.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)
-

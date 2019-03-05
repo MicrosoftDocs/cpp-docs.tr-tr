@@ -9,12 +9,12 @@ helpviewer_keywords:
 - controls [ATL], interfaces
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-ms.openlocfilehash: 1724dd3eb73b82e34c5cc2b0c1965d73e099a708
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29b8fc3caf2d769fcc60772be7fdf1c25f13d100
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440059"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285392"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL projesine yeni arabirim ekleme
 
@@ -40,7 +40,7 @@ Yeni bir arabirim iki yoldan biriyle denetiminizi ekleyebilirsiniz: el ile veya 
 
 1. Arabirimdeki yöntemleri uygulayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)<br/>

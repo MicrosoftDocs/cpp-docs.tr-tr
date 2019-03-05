@@ -5,12 +5,12 @@ helpviewer_keywords:
 - aggregation [C++], creating aggregated objects
 - aggregate objects [C++], creating
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
-ms.openlocfilehash: 5c655b8ced7738b30bf13d088cfadf11b5c65ef0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4be8d0e852da91b58125dc01d44eed4560b2b8d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449861"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277527"
 ---
 # <a name="creating-an-aggregated-object"></a>Toplanan nesne oluşturma
 
@@ -29,7 +29,6 @@ Toplama Temsilciler `IUnknown` çağrıları, dış nesnenin bir işaretçi sağ
 > [!NOTE]
 > Kullanın ve yayın sırasında toplanan nesne bir arabirimden `FinalConstruct`, eklemeniz gerekir [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) Makro tanımında sınıfı nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
-

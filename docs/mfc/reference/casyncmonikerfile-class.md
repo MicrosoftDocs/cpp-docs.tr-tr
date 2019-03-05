@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 107f791505bc41b8dbf9c0374c5e3821abbc0fe3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48d7c3b5dd1b43c7a1639c6d5c56979b422d7017
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669072"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262629"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 
@@ -218,7 +218,7 @@ virtual LONG GetPriority() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öncelik, zaman uyumsuz aktarımı yerini alacak. Standart iş parçacığı önceliği bayrakları birini: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL ve THREAD_PRIORITY_TIME_CRITICAL. Windows işlevi görmek [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) bu değerleri bir açıklaması.
+Öncelik, zaman uyumsuz aktarımı yerini alacak. Standart iş parçacığı önceliği bayrakları biri: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL ve THREAD_PRIORITY_TIME_CRITICAL. Windows işlevi görmek [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) bu değerleri bir açıklaması.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -422,7 +422,7 @@ Bir URL veya dosya adı için kullanabileceğiniz *lpszURL* parametresi. Örneğ
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CMonikerFile Sınıfı](../../mfc/reference/cmonikerfile-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

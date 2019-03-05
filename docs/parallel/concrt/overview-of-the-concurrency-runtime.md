@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-ms.openlocfilehash: ffaf560361da2fd54febb5e38af121ad5149f012
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 810d77abd37ff2c6f29e980b84645d16526744d8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176672"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305243"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanına Genel Bakış
 
@@ -28,7 +28,7 @@ Bu belgede aşağıdaki bölümler yer alır:
 
 - [Mimari](#architecture)
 
-- [C++ Lambda ifadeleri](#lambda)
+- [C++ Lambda Expressions](#lambda)
 
 - [Gereksinimler](#requirements)
 
@@ -143,4 +143,3 @@ Eşzamanlılık Çalışma zamanı içinde bildirildiği [eşzamanlılık](../..
 Eşzamanlılık Çalışma zamanı, C çalışma zamanı kitaplığı (CRT) bir parçası olarak sağlanır. CRT kullanan bir uygulama oluşturma hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
 [[Üst](#top)]
-

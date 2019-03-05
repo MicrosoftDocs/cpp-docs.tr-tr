@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-ms.openlocfilehash: ed96d0a88755827bff27255326db8262698fcfb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 275119b2343c4d13b6a32f939fc8c3b2b5d5890c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544319"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300417"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 
@@ -77,7 +77,7 @@ Bağlanma, `COleTemplateServer` nesnenin çağırarak belge şablonlarınızı n
 
 Bir örnek için `CWinApp`-türetilmiş sınıf tanımı ve `InitInstance` işlev, OCLIENT bakın. H ve OCLIENT. MFC örnekteki CPP [OCLIENT](../../visual-cpp-samples.md).
 
-Kullanma hakkında daha fazla bilgi için `COleLinkingDoc`, makalelere göz atın [kapsayıcıları: bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [kapsayıcılar: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).
+Kullanma hakkında daha fazla bilgi için `COleLinkingDoc`, makalelere göz atın [kapsayıcıları: Bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md) ve [kapsayıcıları: Gelişmiş Özellikler](../../mfc/containers-advanced-features.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -191,7 +191,7 @@ OLE sistem DLL'lerini belgenin kaydı iptal etmek için bu işlevi çağırın.
 
 Adlandırılmış dosya kapatıldığında bu işlevi çağırmanız gerekir, ancak genellikle doğrudan çağırmanız gerekmez. `Revoke` sizin tarafınızdan için adlı `COleLinkingDoc`'s uygulaması `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, ve `OnSaveDocument`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDocument Sınıfı](../../mfc/reference/coledocument-class.md)<br/>
