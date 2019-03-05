@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-ms.openlocfilehash: 5dc03964e8ddef0cd1aab785316eabd98c39e59e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1c431364aee0f1d1e75059abdb023ae52cf92155
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544540"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279352"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object Sınıfı
 
@@ -45,7 +45,7 @@ class uninitialized_object : public runtime_exception;
 
 **Başlık:** amprt.h
 
-**Namespace:** eşzamanlılık
+**Namespace:** Eşzamanlılık
 ## <a name="uninitialized_object__ctor"></a> unsupported_feature
 
 Unsupported_feature özel durumunun yeni bir örneğini oluşturur.
@@ -68,6 +68,6 @@ Hatanın açıklaması.
 
 `unsupported_feature` Nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CMFCToolBarButton [MFC], m_nStyle
 - CMFCToolBarButton [MFC], m_strText
 ms.assetid: 8a6ecffb-86b0-4f5c-8211-a9146b463efd
-ms.openlocfilehash: ec5b6692197dc224f503be050a537e6fa265f6d5
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 94d7ba14e01b2965a0fe788162726d1019e847de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694666"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275239"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton sınıfı
 
@@ -1201,7 +1201,7 @@ Bu yöntem FALSE döndürür.
 
 Bu yöntemin varsayılan uygulama, hiçbir şey yapmaz ve false değerini döndürür. Düğme yardım iletisini işlerse sıfır olmayan bir değer döndürmek için bu yöntemi yok sayın.
 
-WM_HELPHITTEST ileti hakkında daha fazla bilgi için bkz. [TN028: Context-Sensitive Yardım desteği](../../mfc/tn028-context-sensitive-help-support.md).
+WM_HELPHITTEST ileti hakkında daha fazla bilgi için bkz. [TN028: Bağlama duyarlı Yardım desteği](../../mfc/tn028-context-sensitive-help-support.md).
 
 ##  <a name="onctlcolor"></a>  CMFCToolBarButton::OnCtlColor
 
@@ -1582,7 +1582,7 @@ virtual void Serialize(CArchive& ar);
 
 Bu yöntem, Pano veya sürükle ve bırak işlemleri gibi veri aktarımı işlemlerini destekler. Okur veya gelen veya sağlanan kimlik, metin etiketi ve görüntü kimliği gibi düğmesi özelliklerini Yazar `CArchive` nesne.
 
-Serileştirme örnekler için bkz [seri hale getirme: bir nesneyi serileştirmek](../../mfc/serialization-serializing-an-object.md).
+Serileştirme örnekler için bkz [seri hale getirme: Bir nesneyi serileştirmek](../../mfc/serialization-serializing-an-object.md).
 
 ##  <a name="setaccdata"></a>  CMFCToolBarButton::SetACCData
 
@@ -1751,7 +1751,7 @@ Kullanım [CMFCToolBarButton::SetVisible](#setvisible) genel düğmesinin görü
 
 Bu yöntemin çağırdığı [CMFCToolBarButton::OnShow](#onshow) düğmesinin görünürlük durumu güncelleştirildikten sonra yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

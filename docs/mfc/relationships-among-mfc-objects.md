@@ -7,12 +7,12 @@ helpviewer_keywords:
 - relationships, MFC objects
 - MFC object relationships
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
-ms.openlocfilehash: c02cf723ee7711ec1bfe00841c90bbde8c260ac1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb8d1fcd9737b33d52038746a26f4e1bd1043e95
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585516"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276982"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
 
@@ -46,10 +46,9 @@ Genellikle, tek bir görünümde bir çerçeve penceresi sahiptir, ancak bazı d
 > [!NOTE]
 >  Ana çerçeve penceresine bir işaretçi depolanan [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeni uygulama nesnesi. Bir çağrı `OnFileNew` kılacağınızı içinde `InitInstance` üye işlevinin `CWinApp` ayarlar *m_pMainWnd* sizin için. Değil çağırırsanız `OnFileNew`, değişkenin değeri ayarlamanız gerekir `InitInstance` kendiniz. (Komut satırında/Embedding ise SDI COM bileşeni (sunucu) uygulamaları değişkeni ayarlanmamış.) Unutmayın *m_pMainWnd* artık sınıfın bir üyesidir `CWinThread` yerine `CWinApp`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
 [Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
 [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
-

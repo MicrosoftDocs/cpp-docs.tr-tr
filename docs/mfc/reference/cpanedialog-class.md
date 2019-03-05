@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-ms.openlocfilehash: 95fc66ba55734c415cb41151cdc9b83d1b154898
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16aa707792cc1289ced380e54abef3f15289e7cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431935"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274563"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog sınıfı
 
@@ -202,10 +202,9 @@ Her zaman TRUE.
 
 Bu yöntem destekler [COccManager](../../mfc/reference/coccmanager-class.md) OLE denetim siteleri ve ActiveX denetimleri yöneten sınıfı. _AFX_OCC_DIALOG_INFO yapısı afxocc.h üstbilgi dosyasında tanımlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
 [Pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles)
-

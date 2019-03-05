@@ -1,5 +1,5 @@
 ---
-title: "TN035: Visual C++'da Birden Fazla Kaynak Dosya ve Üstbilgi Dosyası Kullanma"
+title: 'TN035: Visual C++ birden çok kaynak dosya ve üstbilgi dosyası kullanma'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.resources
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - resource files, multiple
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-ms.openlocfilehash: 6f89e10c2a05d1352dc2347af0aa0215079ea56c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d97e4536c2a43e7e224e9056aa39df5480daeca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567667"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279934"
 ---
-# <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++'da Birden Fazla Kaynak Dosya ve Üstbilgi Dosyası Kullanma
+# <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++ birden çok kaynak dosya ve üstbilgi dosyası kullanma
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -111,7 +111,7 @@ AFXRES. H standart sembolleri gibi tanımlar `ID_FILE_NEW`framework tarafından 
 
 ## <a name="_mfcnotes_tn035_including"></a> Ek üstbilgi dosyaları dahil
 
-AppWizard ile oluşturulan uygulama yalnızca iki başlık dosyası içerir: kaynak. H ve AFXRES. H Yalnızca kaynak. Uygulamaya özgü S. Aşağıdaki durumlarda ek salt okunur başlık dosyaları dahil gerekebilir:
+AppWizard ile oluşturulan uygulama yalnızca iki başlık dosyası içerir: KAYNAK. H ve AFXRES. H Yalnızca kaynak. Uygulamaya özgü S. Aşağıdaki durumlarda ek salt okunur başlık dosyaları dahil gerekebilir:
 
 Üst bilgi dosyası bir dış kaynak tarafından sağlanıyor veya başlık dosyasını birden çok proje veya aynı projenin birden fazla bölümü arasında paylaşmak istiyorsunuz.
 
@@ -379,8 +379,7 @@ BEGIN
 END
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

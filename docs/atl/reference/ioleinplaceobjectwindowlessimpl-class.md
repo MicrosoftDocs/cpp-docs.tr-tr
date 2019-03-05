@@ -1,5 +1,5 @@
 ---
-title: Ioleınplaceobjectwindowlessımpl sınıfı
+title: IOleInPlaceObjectWindowlessImpl Class
 ms.date: 11/04/2016
 f1_keywords:
 - IOleInPlaceObjectWindowlessImpl
@@ -20,14 +20,14 @@ helpviewer_keywords:
 - controls [ATL], windowless
 - deactivating ATL
 ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
-ms.openlocfilehash: a83fbed524c55c6bc98aa25caa17b80c1e5f89f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df14c22f5cf4828b51bf03f6d0f0c4c20cf5a009
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592133"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267182"
 ---
-# <a name="ioleinplaceobjectwindowlessimpl-class"></a>Ioleınplaceobjectwindowlessımpl sınıfı
+# <a name="ioleinplaceobjectwindowlessimpl-class"></a>IOleInPlaceObjectWindowlessImpl Class
 
 Bu sınıfın uyguladığı `IUnknown` ve pencere iletileri almak ve sürükle ve bırak işlemleri katılmak için penceresiz denetime olanak tanıyan yöntemler sağlar.
 
@@ -79,7 +79,7 @@ Sınıfınız, türetilen `IOleInPlaceObjectWindowlessImpl`.
 
 ##  <a name="contextsensitivehelp"></a>  IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ```
 HRESULT ContextSensitiveHelp(BOOL fEnterMode);
@@ -91,7 +91,7 @@ Bkz: [IOleWindow::ContextSensitiveHelp](/windows/desktop/api/oleidl/nf-oleidl-io
 
 ##  <a name="getdroptarget"></a>  IOleInPlaceObjectWindowlessImpl::GetDropTarget
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ```
 HRESULT GetDropTarget(IDropTarget** ppDropTarget);
@@ -147,7 +147,7 @@ Bkz: [IOleInPlaceObjectWindowless::OnWindowMessage](/windows/desktop/api/ocidl/n
 
 ##  <a name="reactivateandundo"></a>  IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo
 
-E_NOTIMPL döndürür.
+Returns E_NOTIMPL.
 
 ```
 HRESULT ReactivateAndUndo();
@@ -185,7 +185,7 @@ Denetim sınıfın veri üyesi ayarlar `m_bUIActive` false. Bu işlev ATL uygula
 
 Bkz: [IOleInPlaceObject::UIDeactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-uideactivate) Windows SDK içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

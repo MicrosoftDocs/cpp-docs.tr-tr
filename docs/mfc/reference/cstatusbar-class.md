@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-ms.openlocfilehash: 70d700197e3d249812e8b09a2cba744a0fbc9803
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e7aa577d237c1800ca9df3f0af4c44acdaae9ae2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649286"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279503"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 
@@ -108,7 +108,7 @@ Durum çubuğu oluşturmak için aşağıdaki adımları izleyin:
 
 Çağrı [SetPaneStyle](#setpanestyle) bir durum çubuğu bölmesinin stilini güncelleştirilecek.
 
-Kullanma hakkında daha fazla bilgi için `CStatusBar`, makaleye göz atın [MFC'de durum çubuğu uygulaması](../../mfc/status-bar-implementation-in-mfc.md) ve [Teknik Not 31: denetim çubukları](../../mfc/tn031-control-bars.md).
+Kullanma hakkında daha fazla bilgi için `CStatusBar`, makaleye göz atın [MFC'de durum çubuğu uygulaması](../../mfc/status-bar-implementation-in-mfc.md) ve [Teknik Not 31: Denetim çubukları](../../mfc/tn031-control-bars.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -504,7 +504,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CTRLBARS](../../visual-cpp-samples.md)<br/>
 [MFC örnek DLGCBR32](../../visual-cpp-samples.md)<br/>

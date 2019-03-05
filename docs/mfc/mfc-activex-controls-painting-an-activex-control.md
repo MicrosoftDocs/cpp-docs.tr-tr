@@ -1,18 +1,18 @@
 ---
-title: 'MFC ActiveX Denetimleri: ActiveX Denetimini Boyama'
+title: 'MFC ActiveX denetimleri: ActiveX denetimini boyama'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], painting
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
-ms.openlocfilehash: 4a7cff57213cf9ba234ead9880207fd93592614f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b90aa331c289caf827785af2eeba037e70f686ab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549532"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281936"
 ---
-# <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
+# <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX denetimleri: ActiveX denetimini boyama
 
 Bu makalede, ActiveX denetimini boyama işleminin ve süreçlerini optimize etmek için Boya kod nasıl alter açıklanmaktadır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri üzerinde çizim denetimleri ayrı ayrı zorunluluğunu ortadan kaldırarak en iyi duruma getirme, daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimleri çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)
 
@@ -31,7 +31,7 @@ Aşağıdaki konular ele alınmaktadır:
 
 ##  <a name="_core_the_painting_process_of_an_activex_control"></a> Bir ActiveX denetimini boyama işlemi
 
-ActiveX denetimleri, ilk olarak görüntülenen veya yeniden düzenlenmiş, MFC, ile önemli bir ayrım kullanılarak geliştirilen diğer uygulamalara benzer bir boyama işlem izlerler: ActiveX denetimleri, etkin veya etkin olmayan bir durumda olabilir.
+ActiveX denetimleri, ilk olarak görüntülenen veya yeniden düzenlenmiş, bunlar, MFC ile önemli bir ayrım kullanılarak geliştirilen diğer uygulamalara yönelik benzer bir boyama işlem izleyin: ActiveX denetimleri, etkin veya etkin olmayan bir durumda olabilir.
 
 Etkin bir denetim, bir ActiveX denetim kapsayıcısındaki bir alt pencere tarafından temsil edilir. Diğer windows gibi bir WM_PAINT iletisini aldığınızda kendisini boyama için sorumludur. Denetimin temel sınıf [COleControl](../mfc/reference/colecontrol-class.md), bu iletiyi işleyen kendi `OnPaint` işlevi. Bu varsayılan uygulama çağrıları `OnDraw` denetiminizin işlevi.
 
@@ -90,7 +90,7 @@ Denetimin ekranda hem meta dosyası cihaz bağlamlarında kurulabilir emin olmak
 
 Ek olarak `CDC` üye işlevleri, meta dosyası DC uyumlu olan diğer birçok işlev vardır. Bunlar [CPalette::AnimatePalette](../mfc/reference/cpalette-class.md#animatepalette), [CFont::CreateFontIndirect](../mfc/reference/cfont-class.md#createfontindirect), üç üye işlevleri `CBrush`: [CreateBrushIndirect](../mfc/reference/cbrush-class.md#createbrushindirect), [CreateDIBPatternBrush](../mfc/reference/cbrush-class.md#createdibpatternbrush), ve [CreatePatternBrush](../mfc/reference/cbrush-class.md#createpatternbrush).
 
-Bir meta dosyası içinde kayıtlı olmayan işlevler: [DrawFocusRect](../mfc/reference/cdc-class.md#drawfocusrect), [DrawIcon](../mfc/reference/cdc-class.md#drawicon), [DrawText](../mfc/reference/cdc-class.md#drawtext), [ExcludeUpdateRgn](../mfc/reference/cdc-class.md#excludeupdatergn), [FillRect](../mfc/reference/cdc-class.md#fillrect), [FrameRect](../mfc/reference/cdc-class.md#framerect), [GrayString](../mfc/reference/cdc-class.md#graystring), [InvertRect](../mfc/reference/cdc-class.md#invertrect), [ScrollDC](../mfc/reference/cdc-class.md#scrolldc)ve [TabbedTextOut](../mfc/reference/cdc-class.md#tabbedtextout). Bir meta dosyası DC aslında bir cihazla ilişkili olmadığı için bir meta dosyası DC SetDIBits GetDIBits ve CreateDIBitmap kullanamazsınız. Hedef olarak bir meta dosyası DC SetDIBitsToDevice ve StretchDIBits kullanabilirsiniz. [CreateCompatibleDC](../mfc/reference/cdc-class.md#createcompatibledc), [CreateCompatibleBitmap](../mfc/reference/cbitmap-class.md#createcompatiblebitmap), ve [CreateDiscardableBitmap](../mfc/reference/cbitmap-class.md#creatediscardablebitmap) bir meta dosyası DC anlamlı değildir.
+Bir meta dosyası içinde kaydedilen değil işlevler şunlardır: [DrawFocusRect](../mfc/reference/cdc-class.md#drawfocusrect), [DrawIcon](../mfc/reference/cdc-class.md#drawicon), [DrawText](../mfc/reference/cdc-class.md#drawtext), [ExcludeUpdateRgn](../mfc/reference/cdc-class.md#excludeupdatergn), [FillRect](../mfc/reference/cdc-class.md#fillrect), [FrameRect ](../mfc/reference/cdc-class.md#framerect), [GrayString](../mfc/reference/cdc-class.md#graystring), [InvertRect](../mfc/reference/cdc-class.md#invertrect), [ScrollDC](../mfc/reference/cdc-class.md#scrolldc), ve [TabbedTextOut](../mfc/reference/cdc-class.md#tabbedtextout). Bir meta dosyası DC aslında bir cihazla ilişkili olmadığı için bir meta dosyası DC SetDIBits GetDIBits ve CreateDIBitmap kullanamazsınız. Hedef olarak bir meta dosyası DC SetDIBitsToDevice ve StretchDIBits kullanabilirsiniz. [CreateCompatibleDC](../mfc/reference/cdc-class.md#createcompatibledc), [CreateCompatibleBitmap](../mfc/reference/cbitmap-class.md#createcompatiblebitmap), ve [CreateDiscardableBitmap](../mfc/reference/cbitmap-class.md#creatediscardablebitmap) bir meta dosyası DC anlamlı değildir.
 
 Bir meta dosyası DC kullanırken dikkate alınması gereken başka bir koordinat sistemini piksel cinsinden mi ölçüleceğini değil, noktasıdır. Bu nedenle, tüm çizim kodunuz dikdörtgenine için belirlenebilir geçirilen `OnDraw` içinde *rcBounds* parametresi. Bu denetimin dışında kalan yanlışlıkla boyama çünkü engeller *rcBounds* denetimin pencere boyutunu temsil eder.
 
@@ -108,7 +108,6 @@ Denetimin meta dosyası işleme uyguladıysanız sonra Test kapsayıcı meta dos
 
    Meta dosyası görüntülendiği ayrı bir pencerede görüntülenir. Ölçeklendirme denetimin meta nasıl etkilediğini görmek için bu pencere boyutunu değiştirebilirsiniz. Herhangi bir zamanda bu pencereyi kapatabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

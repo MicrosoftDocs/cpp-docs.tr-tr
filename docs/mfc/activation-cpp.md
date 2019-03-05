@@ -18,12 +18,12 @@ helpviewer_keywords:
 - activation [MFC], embedded OLE items
 - OLE activation [MFC]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-ms.openlocfilehash: ba3c705227e6ca189527d29d4f3ae0f21c71eb72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6009e5209ce71c6eed28faff2f55792a64de408
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493515"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276955"
 ---
 # <a name="activation-c"></a>Etkinleştirme (C++)
 
@@ -40,11 +40,10 @@ Yerinde etkinleştirme belge oluşturma için belge merkezli bir yaklaşım yük
 
 MFC, iç içe geçmiş yerinde etkinleştirme desteklemez. Kapsayıcı/sunucu uygulaması'oluşturma ve kapsayıcı/sunucu başka bir kapsayıcı ve yerinde etkinleştirilmiş eklenir, bunu yerinde olamaz katıştırılmış nesneleri etkinleştirin.
 
-Kullanıcı tıkladığında gömülü bir öğe için ne öğesi için tanımlanan fiilleri bağlıdır. Bilgi için [etkinleştirme: fiiller](../mfc/activation-verbs.md).
+Kullanıcı tıkladığında gömülü bir öğe için ne öğesi için tanımlanan fiilleri bağlıdır. Bilgi için [etkinleştirme: Fiiller](../mfc/activation-verbs.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Kapsayıcılar](../mfc/containers.md)<br/>
 [Sunucular](../mfc/servers.md)
-

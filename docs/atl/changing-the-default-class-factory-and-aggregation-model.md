@@ -12,12 +12,12 @@ helpviewer_keywords:
 - default class factory, ATL
 - defaults [C++], class factory
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
-ms.openlocfilehash: 34e838eea201f96acd7dcc647c4410fb244c8424
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94f9ecd85e09cb3916b518d71b904961042142e8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485559"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277384"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>Varsayılan sınıf üreteci ve toplama modelini değiştirme
 
@@ -35,8 +35,7 @@ Bir sınıf üreteci tanımlayan iki diğer makroların [DECLARE_CLASSFACTORY_AU
 
 ATL ayrıca kullanan **typedef** varsayılan davranışı uygulamak mekanizması. Örneğin, DECLARE_AGGREGATABLE makro kullanır **typedef** adlı bir tür tanımlamak için `_CreatorClass`, hangi ardından başvuruluyor ATL Türetilen bir sınıfta unutmayın bir **typedef** temel sınıfın aynı adı kullanarak **typedef** tanımınızı kullanan ve varsayılan davranışı geçersiz kılma ATL sonuçlanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Toplama ve Sınıf Üreticisi Makroları](../atl/reference/aggregation-and-class-factory-macros.md)
-

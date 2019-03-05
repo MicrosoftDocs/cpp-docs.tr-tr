@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC, messages
 - messages [MFC], sending
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-ms.openlocfilehash: 95a54f3a518be19c7ae6f001e3096b825e64c0c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bda261f4141a7ceb4e678535d9012650818fabce
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447404"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274914"
 ---
 # <a name="message-sending-and-receiving"></a>İleti Gönderme ve Alma
 
@@ -32,7 +32,6 @@ Alma işleminin parçası göz önünde bulundurun.
 
 Komut-hedef nesne ileti veya komutunu aldığında, kendi ileti eşlemesi için bir eşleşme arar. İleti için bir işleyici bulursa, işleyici çağırır. İleti eşlemeleri nasıl aranır hakkında daha fazla bilgi için bkz. [nasıl Framework arar ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md). Yeniden şekle başvuruda [Framework komutlarında](../mfc/user-interface-objects-and-command-ids.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
-

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-ms.openlocfilehash: ea7291a63fe9864f7254d4db8b68e4c9abf732c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b0a8696e25054099cdbf208dd5a1f713bfbe6d3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508006"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277839"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
 
@@ -46,8 +46,7 @@ Başlamanıza yardımcı olmak ayrıntılı bilgi için aşağıdaki konulara ba
 
 - [Internet güvenliği](../mfc/internet-security-cpp.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
 [Göreve Göre Internet Bilgileri](../mfc/internet-information-by-task.md)
-

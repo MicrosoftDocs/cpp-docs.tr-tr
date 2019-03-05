@@ -1,5 +1,5 @@
 ---
-title: CPaneContainer sınıfı
+title: CPaneContainer Class
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneContainer
@@ -120,14 +120,14 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-ms.openlocfilehash: bd0e238dd936dfff0677e41831c72229171cb656
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 099f1cccd178068f9b96bda6193b5ee9df3b66c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504383"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274966"
 ---
-# <a name="cpanecontainer-class"></a>CPaneContainer sınıfı
+# <a name="cpanecontainer-class"></a>CPaneContainer Class
 
 `CPaneContainer` Sınıfı, temel bir MFC tarafından uygulanan yerleştirme modelinin ana bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleştirme bölmesine veya iki örneğini depolar `CPaneContainer.` ayrıca bölmeleri (veya kapsayıcıları) ayıran ayırıcıya bir işaretçi depolar. Kapsayıcıları iç içe geçirerek kapsayıcılar, karmaşık yerleştirme düzenlerini temsil eden bir ikili ağacı framework oluşturabilirsiniz. İkili ağacın kökünde depolanan bir [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) nesne.
 
@@ -962,7 +962,7 @@ virtual int StretchPaneContainer(
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>

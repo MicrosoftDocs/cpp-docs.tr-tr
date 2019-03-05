@@ -12,12 +12,12 @@ helpviewer_keywords:
 - COleDBRecordView [MFC], OnGetRowset
 - COleDBRecordView [MFC], OnMove
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-ms.openlocfilehash: fbbaaae72c7b58f898735d768c019a02cdb7d7e5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1b09599479010f87e396e6f576c9524651923f9f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518586"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280383"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView sınıfı
 
@@ -51,7 +51,7 @@ Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne. Gör
 DDX işlevleri ile kullanabileceğiniz `COleDbRecordView` doğrudan veritabanı kayıt kümesinden veri almak ve bir iletişim kutusu denetiminde görüntüleme. Kullanmanız gereken `DDX_*` yöntemleri (gibi `DDX_Text`) değil `DDX_Field*` işlevleri (gibi `DDX_FieldText`) ile `COleDbRecordView`. `DDX_FieldText` ile çalışmaz `COleDbRecordView` çünkü `DDX_FieldText` ek bağımsız değişken türü `CRecordset*` (için `CRecordView`) veya `CDaoRecordset*` (için `CDaoRecordView`).
 
 > [!NOTE]
->  OLE DB tüketici şablonu sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
+>  OLE DB tüketici şablonu sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
 `COleDBRecordView` kullanıcının konumunu satır kümesindeki kayıt görünümü kullanıcı arabirimi güncelleştirebilmeniz izler. Kullanıcı her iki satır sonuna hareket ettirdiğinde kayıt görünümü kullanıcı arabirimi nesneleri devre dışı bırakır; menü öğeleri ya da araç çubuğu düğmeleri gibi — taşımak için aynı yönde başka.
 
@@ -124,7 +124,7 @@ Oluşturmak veya bir satır kümesi nesnesi edinip bir tanıtıcı döndürmek i
 
 [!code-cpp[NVC_MFCDatabase#38](../../mfc/codesnippet/cpp/coledbrecordview-class_1.cpp)]
 
-Daha fazla bilgi ve örnekler için bkz [kayıt görünümleri: kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).
+Daha fazla bilgi ve örnekler için bkz [kayıt görünümleri: Kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md).
 
 ##  <a name="onmove"></a>  COleDBRecordView::OnMove
 
@@ -161,7 +161,6 @@ Uygulama Sihirbazı, bir menü kaynağı ile ilk kaydı son kayda sonraki kayıt
 
 Kümesinde son kaydını geçmiş taşırsanız, kayıt görünümü en son kaydını görüntülemek devam eder. Kayıt görünümü ilk kaydı geriye taşırsanız, ilk kaydı görüntülemek devam eder.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

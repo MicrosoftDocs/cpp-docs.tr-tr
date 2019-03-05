@@ -8,12 +8,12 @@ helpviewer_keywords:
 - derived classes [MFC], functions often overridden
 - document classes [MFC], functions often overridden
 ms.assetid: e6a198e0-9799-43c0-83c5-04174d8b532c
-ms.openlocfilehash: 042ba7adc8d36e57a714e03ec67c1c0f22b4da78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5998d5707eb741be0e8ac270f6ac5ce77a9ff8d8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496128"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272067"
 ---
 # <a name="deriving-a-document-class-from-cdocument"></a>CDocument'ten Belge Sınıfı Türetme
 
@@ -29,7 +29,6 @@ Belgeler, içerir ve uygulamanızın verilerini yönetin. MFC Uygulama Sihirbaz�
 
 Diğer geçersiz kılmak isteyebilirsiniz `CDocument` üye işlevleri. Özellikle, genellikle geçersiz kılmak ihtiyacınız olacak [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) ve [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) belgenin veri üyeleri başlatılamadı ve [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) yok etmek için dinamik olarak ayrılan verileri. Geçersiz kılınabilir üyeleri hakkında daha fazla bilgi için bkz. [CDocument](../mfc/reference/cdocument-class.md) içinde *MFC başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belgeleri Kullanma](../mfc/using-documents.md)
-

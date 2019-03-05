@@ -32,12 +32,12 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-ms.openlocfilehash: 105e438a9ed3e8f7de7edc813fec516c0e99700a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 7893b446c224dd84514ab63dc97cae467792750c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694692"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280010"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 
@@ -73,7 +73,6 @@ Böyle bir durumda, kullandığınız bir [CClientDC](../mfc/reference/cclientdc
 
 - [Koordinat ve dönüştürmeler](/windows/desktop/gdi/coordinate-spaces-and-transformations)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Nesneleri](../mfc/window-objects.md)
-

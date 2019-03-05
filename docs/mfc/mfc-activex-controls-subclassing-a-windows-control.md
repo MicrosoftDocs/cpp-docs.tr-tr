@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma'
+title: 'MFC ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma'
 ms.date: 09/12/2018
 f1_keywords:
 - precreatewindow
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - IsSubclassed method [MFC]
 ms.assetid: 3236d4de-401f-49b7-918d-c84559ecc426
-ms.openlocfilehash: 24284af7766f0fd968ca08724440509bc171fba6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08cdb90537dd50855a5bf223fbe54d58dfd6c365
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576650"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277059"
 ---
-# <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma
+# <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma
 
 Bu makalede, bir ActiveX denetimi oluşturmak için ortak bir Windows denetimini alt sınıf yapma işlemi açıklanır. Mevcut bir Windows sınıflara denetim ActiveX denetimini geliştirmek için bir hızlı yoldur. Yeni Denetim boyama ve fare tıklamalarına yanıt verme gibi alt sınıflanan Windows denetimin yeteneklerini sahip olur. MFC ActiveX denetimleri örnek [düğmesi](../visual-cpp-samples.md) bir Windows denetimini alt sınıf yapma, bir örnek verilmiştir.
 
@@ -95,7 +95,6 @@ Eklenecek ileti işleyicisi yansımış pencere iletisi için el ile aşağıdak
 
 MFC ActiveX denetimleri örneğe ilişkin bir örnek iletileri işlenme yansıtılan için başvurmak [düğmesi](../visual-cpp-samples.md). Bunu gösterir bir `OnOcmCommand` BN_CLICKED bildirim kod algılayan ve tetikleme (gönderen) ile yanıtlar işleyicisi bir `Click` olay.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
-

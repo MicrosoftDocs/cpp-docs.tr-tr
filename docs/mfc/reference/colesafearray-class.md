@@ -60,12 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-ms.openlocfilehash: 07e507f0546849a64625ccd67a0f7463cd510841
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 0833dca9311689063c2ebeadd3942d9f5ce376e2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525411"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267166"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 
@@ -750,7 +750,7 @@ void Unlock();
 
 Bir dizideki verilere erişim tamamlandıktan sonra bu işlev çağrılır. Bu hata, oluşturur bir [COleException](../../mfc/reference/coleexception-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [COleVariant Sınıfı](../../mfc/reference/colevariant-class.md)<br/>

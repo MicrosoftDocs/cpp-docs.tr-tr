@@ -25,12 +25,12 @@ helpviewer_keywords:
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-ms.openlocfilehash: ea79a5624937b27fe69be2c15bac3a0c40592252
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4e363f7de46de6f875a28a62d4ecdf929decdc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575753"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272184"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>Csnapınpropertypageımpl sınıfı
 
@@ -347,6 +347,6 @@ void SetModified(BOOL bChanged = TRUE);
 
 Özellik sayfası tutar izleme hangi sayfaların "kirli" diğer bir deyişle, kendisi için aradığınız özellik sayfaları `SetModified( TRUE )`. **Şimdi Uygula** düğmesi her zaman etkindir çağırırsanız `SetModified( TRUE )` birinin sayfaların. **Şimdi Uygula** düğmesini devre dışı bırakılacak çağırdığınızda `SetModified( FALSE )` yalnızca diğer sayfalardan hiçbiri "." kirli, ancak sayfalardan biri için
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

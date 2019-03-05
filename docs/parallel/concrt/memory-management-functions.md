@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - memory management functions [Concurrency Runtime]
 ms.assetid: d303dd2a-dfa4-4d90-a508-f6aa290bb9ea
-ms.openlocfilehash: d8dfc8bbb200258818c38e931e978cc3be292525
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a7810267c3eaa11ad7592774440365620e7e8f4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454088"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276942"
 ---
 # <a name="memory-management-functions"></a>Bellek Yönetimi İşlevleri
 
@@ -30,10 +30,9 @@ Kullanım `Alloc` ve `Free` ayırmak ve ayırma boyutları farklı iş parçacı
 
 ## <a name="example"></a>Örnek
 
-Kullanan bir örnek için `Alloc` ve `Free` bellek performansını artırmak için işlevleri [nasıl yapılır: kullanım ayırma ve serbest bellek performansını artırmak için](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
+Kullanan bir örnek için `Alloc` ve `Free` bellek performansını artırmak için işlevleri [nasıl yapılır: Ayırma kullanın ve bellek performansını artırmak ücretsiz](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
-

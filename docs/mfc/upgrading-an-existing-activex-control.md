@@ -12,12 +12,12 @@ helpviewer_keywords:
 - upgrading ActiveX controls
 - licensing ActiveX controls
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-ms.openlocfilehash: 18641c6e25aaccd6b5d0bcbbddbf8fc73b2a3c52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc7313c862d3536326894c947fa371d833e8fab8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525807"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276994"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 
@@ -42,7 +42,7 @@ Bu makalede, aşağıdaki konular ele alınmaktadır:
 
 - [Internet Explorer tarayıcı güvenlik düzeylerini ve denetimi davranışı](#_core_internet_explorer_browser_safety_levels_and_control_behavior)
 
-En iyi duruma getirme, açıklandığı ekleyebilirsiniz [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md). Adlar, Özellikler'i indirmek için kullanılabilir ve büyük Blobları açıklandığı gibi zaman uyumsuz [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md).
+En iyi duruma getirme, açıklandığı ekleyebilirsiniz [ActiveX denetimleri: En iyi duruma getirme](../mfc/mfc-activex-controls-optimization.md). Adlar, Özellikler'i indirmek için kullanılabilir ve büyük Blobları açıklandığı gibi zaman uyumsuz [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md).
 
 ##  <a name="_core_packaging_code_for_downloading"></a> İndirme için kodu paketleme
 
@@ -270,9 +270,8 @@ Bir tarayıcı için güvenlik düzeyi, kullanıcı tarafından yapılandırıla
 
 - Komut dosyası ve Kalıcılık uyarı vermeden oluşur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
-[MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
-
+[MFC ActiveX denetimleri: ActiveX denetimini lisanslama](../mfc/mfc-activex-controls-licensing-an-activex-control.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Fields collection
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-ms.openlocfilehash: 80a541028a6ba7daf60a8d1afbd6cf7ba3557202
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5c4013a323c85ad19a3fade20f76852e053362a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629430"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275148"
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo Yapısı
 
@@ -83,7 +83,7 @@ Metin veya metin veya sayı değerlerini içeren bir alan nesne sabit boyutu iç
 |`dbBoolean`|1 bayt|Evet/Hayır (True/False ile aynı)|
 |`dbByte`|1.|Bayt|
 |`dbInteger`|2|Tamsayı|
-|`dbLong`|4|uzun|
+|`dbLong`|4|Uzun|
 |`dbCurrency`|8|Para birimi ([COleCurrency](../../mfc/reference/colecurrency-class.md))|
 |`dbSingle`|4|Tek|
 |`dbDouble`|8|Çift|
@@ -144,7 +144,7 @@ DAO alan nesnenin varsayılan değeri. Yeni bir kayıt oluşturulduğunda Defaul
 
 Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek `GetFieldInfo` sınıflarındaki üye işlev [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo), ve [ CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo).
 
-Alan nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, alan nesne koleksiyonları aşağıdaki sınıflar, MFC nesneleri temel alınan DAO nesneleri içeren: [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), ve [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Bu sınıfların alan bilgilerin bazı tek tek öğelere erişmek için üye işlevleri, veya bunları tamamını tek seferde erişim bir `CDaoFieldInfo` çağırarak `GetFieldInfo` kapsayan nesnenin üye işlevi.
+Alan nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, aşağıdaki sınıflar, MFC nesneleri temel alınan DAO nesneleri alan nesne koleksiyonları içerir: [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), ve [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Bu sınıfların alan bilgilerin bazı tek tek öğelere erişmek için üye işlevleri, veya bunları tamamını tek seferde erişim bir `CDaoFieldInfo` çağırarak `GetFieldInfo` kapsayan nesnenin üye işlevi.
 
 Nesne özellikleri incelemek için kullanımı yanı sıra, ayrıca kullanabilirsiniz `CDaoFieldInfo` değer özelliği yeni alanlar oluşturmak için bir giriş parametresi oluşturmak için. Bu görev için daha basit seçenekleri kullanılabilir, ancak daha hassas bir denetim istiyorsanız sürümünü kullanabilirsiniz [CDaoTableDef::CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) almayan bir `CDaoFieldInfo` parametresi.
 
@@ -154,10 +154,9 @@ Tarafından alınan bilgileri `GetFieldInfo` sınıfının üye işlevinde (alan
 
 **Başlık:** afxdao.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoTableDef::GetFieldInfo](../../mfc/reference/cdaotabledef-class.md#getfieldinfo)<br/>
 [CDaoRecordset::GetFieldInfo](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)<br/>
 [CDaoQueryDef::GetFieldInfo](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)
-

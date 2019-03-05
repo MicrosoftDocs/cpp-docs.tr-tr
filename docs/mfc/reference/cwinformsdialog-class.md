@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsDialog [MFC], GetControlHandle
 - CWinFormsDialog [MFC], OnInitDialog
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
-ms.openlocfilehash: 3baa9f99a5a1ecefc0ad9bc9f0c56f0f67dc2e80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d0731e40a622f0d360cabc03b68b0fe74c1ebc9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573504"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277124"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog sınıfı
 
@@ -152,7 +152,7 @@ inline operator TManagedControl^() const throw();
 
 Bu işleç, bir Windows Forms denetimini bir başvuru olarak bir tür çevirir. İletmek için kullanılan bir `CWinFormsDialog<TManagedControl>` iletişim kutusu bir Windows Forms kullanıcı denetimi nesneye bir işaretçi kabul eden işlevlere.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [CWinFormsView Sınıfı](../../mfc/reference/cwinformsview-class.md)<br/>

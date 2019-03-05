@@ -1,5 +1,5 @@
 ---
-title: CEditView sınıfı
+title: CEditView Class
 ms.date: 11/04/2016
 f1_keywords:
 - CEditView
@@ -40,14 +40,14 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-ms.openlocfilehash: e853a770dd1f98b1e7f06afd814962f3b3805ceb
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: a2ce38dcd8879378f7d0e4ea3f074e461c51db75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177881"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269858"
 ---
-# <a name="ceditview-class"></a>CEditView sınıfı
+# <a name="ceditview-class"></a>CEditView Class
 
 Düzenleme denetimi ve basit metin düzenleyici işlevselliği uygulamak için kullanılan bir Windows işlevlerini sağlar sınıfını görüntüle türü.
 
@@ -490,7 +490,7 @@ void UnlockBuffer() const;
 
 Çağrı `UnlockBuffer` tarafından döndürülen işaretçi'ı kullanmayı bitirdikten sonra [LockBuffer](#lockbuffer).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek SUPERPAD](../../visual-cpp-samples.md)<br/>
 [CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>

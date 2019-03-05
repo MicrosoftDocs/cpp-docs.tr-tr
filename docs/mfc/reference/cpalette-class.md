@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CPalette [MFC], ResizePalette
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-ms.openlocfilehash: 1022d05265fc7c2b349dec22e41984e7d41820b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8abd03ff2b133eb6040799eff6879a19a64783ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586062"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274667"
 ---
 # <a name="cpalette-class"></a>CPalette sınıfı
 
@@ -324,11 +324,10 @@ Mantıksal paletini uygulaması çağırdığında bir cihaz bağlamına seçili
 
 Windows yapısı hakkında daha fazla bilgi için `PALETTEENTRY`, bkz: [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) Windows SDK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek DIBLOOK](../../visual-cpp-samples.md)<br/>
 [CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>
 [CPalette::SetPaletteEntries](#setpaletteentries)
-

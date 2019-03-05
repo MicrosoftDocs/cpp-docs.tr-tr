@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-ms.openlocfilehash: 7b4da7df691837b47daa35c4b474711062d4e5c7
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 98bb4de2f6d1a43fc1958a0fcbaafa1ac0af82a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523175"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282558"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 
@@ -62,9 +62,8 @@ Sihirbaz doğru bir MFC mimarisi gönderilmesini sağladığından MFC Uygulama 
 
 - Belge ve görünüm hiç oluşturma ortadan kaldırmak için oluşturduğunuz MFC çerçevesi bölümlerini geçersiz kılar. Bir çağrı ile belge oluşturma işlemi başlar `CWinApp::AddDocTemplate`. Uygulama sınıfınızın o çağrıdan ortadan `InitInstance` üye işlev ve bunun yerine, bir çerçeve penceresinde oluşturma `InitInstance` kendiniz. Veri Yönetimi kodunuzu, çerçeve penceresi sınıfında yerleştirin. Belge/görünüm oluşturma işlemi gösterilmiştir [belge/görünüm oluşturma](../mfc/document-view-creation.md). Bu daha fazla iş ve framework'ün derin bir anlayış gerektirir, ancak tamamen belge/görünüm yükü serbest bırakır.
 
-Makaleyi [MFC: olmadan veritabanı sınıflarını belgeleri kullanarak ve görünümleri](../data/mfc-using-database-classes-without-documents-and-views.md) veritabanı uygulamaları bağlamında belge/görünüm alternatifleri daha somut örnekleri sağlar.
+Makaleyi [MFC: Olmadan veritabanı sınıflarını belgeleri ve görünümleri kullanarak](../data/mfc-using-database-classes-without-documents-and-views.md) veritabanı uygulamaları bağlamında belge/görünüm alternatifleri daha somut örnekleri sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
-

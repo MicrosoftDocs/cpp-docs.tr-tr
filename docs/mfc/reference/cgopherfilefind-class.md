@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-ms.openlocfilehash: dafa313d9d2c7aae13e83a891c79d437ac276e08
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: c1157b3583e266a09840f710b46766ffc4f31b5e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894503"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269701"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind sınıfı
 
@@ -326,7 +326,7 @@ Sıfır dışında bulunan dosya adı varsa "."veya"...", bulunan dosyanın asl�
 
 Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `IsDots`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CFileFind Sınıfı](../../mfc/reference/cfilefind-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

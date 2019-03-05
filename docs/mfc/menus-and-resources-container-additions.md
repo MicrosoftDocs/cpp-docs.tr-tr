@@ -1,5 +1,5 @@
 ---
-title: 'Menüler ve Kaynaklar: Kapsayıcı Ekleme'
+title: 'Menüler ve kaynaklar: Kapsayıcı ekleme'
 ms.date: 11/04/2016
 f1_keywords:
 - IDP_OLE_INIT_FAILED
@@ -16,14 +16,14 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: ea4159f8eb60f43f60eacd5831ce148c81aeb572
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad3431f78d3637bcdfdb0266c8abdb43047ca28d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546620"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279364"
 ---
-# <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
+# <a name="menus-and-resources-container-additions"></a>Menüler ve kaynaklar: Kapsayıcı ekleme
 
 Bu makalede, menüler ve görsel düzenleme kapsayıcısı uygulamasında diğer kaynaklar için yapılması gereken değişiklikleri açıklar.
 
@@ -52,7 +52,7 @@ Aşağıdaki öğeler için düzenleme menüsünü eklemeniz gerekir:
 
 Bu makalede listelenen değişiklikleri ek olarak, kaynak dosyanız AFXOLECL içermelidir. RC için Microsoft Foundation Class Kitaplığı uygulaması gereklidir. Yeni nesne eklemeyi, yalnızca gerekli menü ektir. Diğer öğeler eklenebilir, ancak burada listelenen yaygın olanlardır.
 
-İçerilen öğelerin yerinde etkinleştirmeyi desteklemek istiyorsanız, kapsayıcı uygulamanız için yeni menü oluşturmanız gerekir. Bu menü aynı dosya menüsü ve dosya açıksa, ancak iki ayırıcılar aralarına yerleştirilmiş sahip kullanılan penceresi açılır menüler oluşur. Bu ayırıcı (uygulama) sunucu (Bileşen) öğesi menülerini yerinde etkinleştirildiğinde nereye belirtmek için kullanılır. Bu menü birleştirme teknik hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+İçerilen öğelerin yerinde etkinleştirmeyi desteklemek istiyorsanız, kapsayıcı uygulamanız için yeni menü oluşturmanız gerekir. Bu menü aynı dosya menüsü ve dosya açıksa, ancak iki ayırıcılar aralarına yerleştirilmiş sahip kullanılan penceresi açılır menüler oluşur. Bu ayırıcı (uygulama) sunucu (Bileşen) öğesi menülerini yerinde etkinleştirildiğinde nereye belirtmek için kullanılır. Bu menü birleştirme teknik hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 ##  <a name="_core_container_application_accelerator_table_additions"></a> Kapsayıcı uygulama Hızlandırıcı tablosu ekleme
 
@@ -66,12 +66,12 @@ Yerinde etkinleştirme destekleniyorsa, bir kapsayıcı uygulama Hızlandırıc�
 
 |Kimlik|Anahtar|Tür|
 |--------|---------|----------|
-|ID_FILE_NEW|CTRL + N|**VIRTKEY'E**|
+|ID_FILE_NEW|CTRL+N|**VIRTKEY'E**|
 |ID_FILE_OPEN|CTRL+O|**VIRTKEY'E**|
 |ID_FILE_SAVE|CTRL+S|**VIRTKEY'E**|
-|ID_FILE_PRINT|CTRL + P|**VIRTKEY'E**|
+|ID_FILE_PRINT|CTRL+P|**VIRTKEY'E**|
 |ID_NEXT_PANE|VK_F6|**VIRTKEY'E**|
-|ID_PREV_PANE|SHIFT + VK_F6|**VIRTKEY'E**|
+|ID_PREV_PANE|SHIFT+VK_F6|**VIRTKEY'E**|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY'E**|
 
 ##  <a name="_core_string_table_additions_for_container_applications"></a> Kapsayıcı uygulamaları için dize tablosu ekleme
@@ -83,8 +83,7 @@ Dize tabloları kapsayıcı uygulamaları için yapılan çoğu karşılık gele
 |IDP_OLE_INIT_FAILED|OLE başlatma başarısız oldu. OLE kitaplıklarının doğru sürümde olduğundan emin olun.|
 |IDP_FAILED_TO_CREATE|Nesne oluşturulamadı. Nesnenin sistem kayıt defterine girildiğinden emin olun.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)
-
+[Menüler ve kaynaklar: Sunucu ekleme](../mfc/menus-and-resources-server-additions.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: 9d0ffba2e8b682a33dc435b0968c59844a858c72
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 22ba71bc0abaefd20cb68d82d4fefe06ab7fa929
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524943"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274589"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 
@@ -288,10 +288,10 @@ Olası değerler için *vtRet* bağımsız değişken VARENUM sabit listesinden 
 |VT_CY|**CY**|
 |VT_DATE|**TARİH**|
 |VT_BSTR|BSTR|
-|GT; VT_DISPATCH &AMP;|LPDISPATCH|
+|VT_DISPATCH|LPDISPATCH|
 |VT_ERROR|SCODE|
 |VT_BOOL|**BOOL**|
-|VT_VARIANT BEKLENİYORDU|**DEĞİŞKEN**|
+|VT_VARIANT|**DEĞİŞKEN**|
 |VT_UNKNOWN|LPUNKNOWN|
 
 *PbParamInfo* bağımsız değişkeni, boşlukla ayrılmış bir listesi **VTS_** sabitler. Bir veya daha fazla (değil virgüller), boşluk ile ayırarak, bu değerleri işlevin parametre listesi belirtir. Olası değerler ile listelenen [EVENT_CUSTOM](event-maps.md#event_custom) makrosu.
@@ -406,7 +406,7 @@ Tek bir parametre tarafından belirtilen türde *vtProp*.
 
 [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek CALCDRIV](../../visual-cpp-samples.md)<br/>
 [ACDUAL örneği](../../visual-cpp-samples.md)<br/>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COleUpdateDialog [MFC], COleUpdateDialog
 - COleUpdateDialog [MFC], DoModal
 ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
-ms.openlocfilehash: 454d6686a389b1578bb777e8573e9281b2a5e6c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74607a2a145025533c660ae68f20ffb8e59d3fad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642968"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281739"
 ---
 # <a name="coleupdatedialog-class"></a>COleUpdateDialog sınıfı
 
@@ -119,7 +119,7 @@ Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:
 
 İptal düğmesi kullanıcının seçtiği sürece tüm bağlantılar ve/veya Gömmeleri güncelleştirilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleLinksDialog Sınıfı](../../mfc/reference/colelinksdialog-class.md)<br/>

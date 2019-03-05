@@ -11,12 +11,12 @@ helpviewer_keywords:
 - servers [MFC], installing
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-ms.openlocfilehash: 1c8c0d32db202b8ba26afec708bcc8bab8e3282c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bc606acfba26d27d0ab36045e4772593e760e98
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461964"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272180"
 ---
 # <a name="registration"></a>Kayıt
 
@@ -46,7 +46,7 @@ RegEdit kayıt veritabanına .reg metin dosyasının içeriğini birleştirir. V
 
 Uygulama Sihirbazı'nı sunucu uygulaması oluşturduğunuzda, sihirbaz tüm başlatma görevlerini sizin için otomatik olarak tamamlar. El ile bir sunucu uygulaması yazıyorsanız yapmanız gerekir, bu bölümde açıklanmaktadır.
 
-Bir kapsayıcı uygulama tarafından bir sunucu uygulaması başlatıldığında, OLE sistem DLL'lerini "/ ekleme" seçeneği sunucunun komut satırına ekleyin. Bir sunucu uygulamanın davranışını onay için bir uygulama yapılmalı mı yürütme başladığında ilk şey, bu nedenle olup, bir kapsayıcı tarafından başlatıldı bağlı olarak farklılık gösterir. "/ ekleme" veya "-katıştırma" komut satırı seçeneği. Bu anahtarı varsa, sunucu ya da yerinde etkin olarak gösteren kaynakları farklı bir kümesini yüklemek veya tam olarak açın. Daha fazla bilgi için [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
+Bir kapsayıcı uygulama tarafından bir sunucu uygulaması başlatıldığında, OLE sistem DLL'lerini "/ ekleme" seçeneği sunucunun komut satırına ekleyin. Bir sunucu uygulamanın davranışını onay için bir uygulama yapılmalı mı yürütme başladığında ilk şey, bu nedenle olup, bir kapsayıcı tarafından başlatıldı bağlı olarak farklılık gösterir. "/ ekleme" veya "-katıştırma" komut satırı seçeneği. Bu anahtarı varsa, sunucu ya da yerinde etkin olarak gösteren kaynakları farklı bir kümesini yüklemek veya tam olarak açın. Daha fazla bilgi için [menüler ve kaynaklar: Sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
 
 Sunucu uygulamasının de çağırmalı, `CWinApp::RunEmbedded` komut satırını Ayrıştır için işlevi. Sıfır olmayan bir değer döndürürse, tek başına bir uygulama olarak değil, bir kapsayıcı uygulamasından çalıştırıldığından uygulama penceresi göstermelidir değil. Bu işlev çağrıları ve sistem kayıt veritabanı sunucusunun girişini güncelleştirir `RegisterAll` , örnek kayıt gerçekleştirmek için üye işlevi.
 
@@ -56,7 +56,7 @@ Sunucu uygulamanız başlatılırken örneği kaydı gerçekleştirebilirsiniz e
 
 Her zaman bir kapsayıcı tarafından başlatılan tanımına göre bir miniserver yazıyorsanız. "/ Ekleme" seçeneğini denetlemek için komut satırı hala çözümlenmelidir. Bu seçeneğin komut satırında olmaması, kullanıcı tek başına bir uygulama olarak miniserver başlatmaya çalıştı anlamına gelir. Bu meydana gelirse, sistem kayıt veritabanı ile sunucu kaydedin ve ardından bir kapsayıcı uygulamasından miniserver başlatmak için kullanıcı bildiren bir ileti kutusu görüntüler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Sunucular](../mfc/servers.md)<br/>

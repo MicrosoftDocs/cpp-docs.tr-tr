@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Help [MFC], menus
 - programmer-defined IDs [MFC]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-ms.openlocfilehash: fa98a250e6f9de3005cf4978fe66689363865879
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 987023322e38584d10901c1ab1fe20ac46926bd2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272093"
 ---
 # <a name="standard-commands"></a>Standart Komutlar
 
@@ -54,7 +54,6 @@ Framework, bu komutları için farklı düzeylerde destek sağlar. Başkaların�
 
 Desteklenen komutlar hakkında daha fazla bilgi ve sağlanan uygulama düzeyi için bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md). Standart komutlar AFXRES dosyasında tanımlanır. H
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX Denetimleri: Olaylar'
+title: 'MFC ActiveX denetimleri: Olaylar'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], events
@@ -13,20 +13,20 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - OLE events [MFC]
 ms.assetid: e1e57e0c-206b-4923-a0b5-682c26564f74
-ms.openlocfilehash: 76557e64b5b53c32a7d7f63134085e86bf0138df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d8a881d07a3e48673c6dc3298816d165273be0d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540679"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276773"
 ---
-# <a name="mfc-activex-controls-events"></a>MFC ActiveX Denetimleri: Olaylar
+# <a name="mfc-activex-controls-events"></a>MFC ActiveX denetimleri: Olaylar
 
 ActiveX denetimleri, olayları bir denetime gerçekleşen bir kapsayıcı bildirmek için kullanın. Genel olaylar denetim, klavye ve değişiklikleri denetimin durumda kullanarak girilen veriler tıklar örneklerindendir. Bu eylemler olduğunda denetim kapsayıcı uyaran bir olay tetikler.
 
 Olaylar, iletiler olarak da adlandırılır.
 
-MFC, iki tür olay destekler: stok ve özel. Stok olaylardır sınıfı bu olayları [COleControl](../mfc/reference/colecontrol-class.md) otomatik olarak işler. Stok olayları tam listesi için bkz [MFC ActiveX denetimleri: stok olaylar ekleme](../mfc/mfc-activex-controls-adding-stock-events-to-an-activex-control.md). Özel olaylar bir denetim kapsayıcı ilgili denetimin belirli bir eylem meydana geldiğinde bildirim olanağı sağlar. Bazı örnekler bir denetimin iç durumunu veya belirli bir pencere ileti bir değişiklik olur.
+MFC, iki tür olay destekler: stok ve özel. Stok olaylardır sınıfı bu olayları [COleControl](../mfc/reference/colecontrol-class.md) otomatik olarak işler. Stok olayları tam listesi için bkz [MFC ActiveX denetimleri: Stok olaylar ekleme](../mfc/mfc-activex-controls-adding-stock-events-to-an-activex-control.md). Özel olaylar bir denetim kapsayıcı ilgili denetimin belirli bir eylem meydana geldiğinde bildirim olanağı sağlar. Bazı örnekler bir denetimin iç durumunu veya belirli bir pencere ileti bir değişiklik olur.
 
 Denetiminiz olaylarını düzgün bir şekilde başlatmak, ilişkili olay gerçekleştiğinde çağrılması gereken bir üye işlev için her bir olay denetimi denetim sınıfınıza eşlemeniz gerekir. Bu eşleme mekanizması (bir olay eşlemesi olarak bilinir), olay hakkında bilgiler merkezileştirir ve kolay erişim ve denetim olaylarını işlemek Visual Studio sağlar. Bu olay eşlemesi üstbilgisinde bulunan aşağıdaki makro tarafından bildirilen (. H) denetim sınıf bildiriminin dosya:
 
@@ -45,10 +45,10 @@ Sınıf Görünümü ile sınıfı tarafından desteklenen stok olaylar ekleme `
 
 - [MFC ActiveX denetimleri: Stok olaylar ekleme](../mfc/mfc-activex-controls-adding-stock-events-to-an-activex-control.md)
 
-- [MFC ActiveX Denetimleri: Özel Olaylar Ekleme](../mfc/mfc-activex-controls-adding-custom-events.md)
+- [MFC ActiveX denetimleri: Özel olaylar ekleme](../mfc/mfc-activex-controls-adding-custom-events.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](../mfc/mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Yöntemleri](../mfc/mfc-activex-controls-methods.md)<br/>
 [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
-ms.openlocfilehash: 594c09ebedd2be55b288a7f31d55930244d80959
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b971a12ff83753546cfea7b90288d1bc43400c0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473976"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279697"
 ---
 # <a name="invalidoperation-class"></a>invalid_operation Sınıfı
 
@@ -64,6 +64,6 @@ invalid_operation() throw();
 *İl_eti*<br/>
 Hatanın açıklayıcı bir iletisi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

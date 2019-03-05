@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 74ee046e81e0f55e5550220166c957317c2bf6cd
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 54018c3d59fe3d7e3d7a5062cda9b40da4f5d586
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178557"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279384"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 
@@ -229,7 +229,7 @@ BOOL CreateEllipticRgn(
 *x1*<br/>
 Mantıksal x koordinatını elipsin sınırlayıcı dikdörtgenin sol üst köşesinin belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Mantıksal y koordinatını elipsin sınırlayıcı dikdörtgenin sol üst köşesinin belirtir.
 
 *x2*<br/>
@@ -451,7 +451,7 @@ BOOL CreateRectRgn(
 *x1*<br/>
 Mantıksal x koordinatını bölge sol üst köşesinde belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Mantıksal y koordinatını bölge sol üst köşesinde belirtir.
 
 *x2*<br/>
@@ -531,7 +531,7 @@ BOOL CreateRoundRectRgn(
 *x1*<br/>
 Mantıksal x koordinatını bölge sol üst köşesinde belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Mantıksal y koordinatını bölge sol üst köşesinde belirtir.
 
 *x2*<br/>
@@ -820,7 +820,7 @@ void SetRectRgn(LPCRECT lpRect);
 *x1*<br/>
 Dikdörtgen bölge sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Dikdörtgen bölge sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -838,8 +838,7 @@ Farklı [CreateRectRgn](#createrectrgn), ancak bunu herhangi bir ek bellek yerel
 
 Bu işlevi yerine kullanın `CreateRectRgn` yerel bellek yöneticisi çağrıları önlemek için üye işlevi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-

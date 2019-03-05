@@ -15,12 +15,12 @@ helpviewer_keywords:
 - tear-off interfaces
 - CComTearOffObject class
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-ms.openlocfilehash: 78e9bda9c21ce53fa5b775b83be5c978c3fa1431
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd35b1e9e69c97402dd1ec357fd25fa1dcd5dd49
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555265"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274615"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject sınıfı
 
@@ -197,7 +197,7 @@ STDMETHOD_ULONG Release();
 
 Hata ayıklama olmayan yapılarında, her zaman sıfır döndürür. Hata ayıklama yapılarında, tanılama için kullanışlı veya test olabilecek bir değer döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CComCachedTearOffObject Sınıfı](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

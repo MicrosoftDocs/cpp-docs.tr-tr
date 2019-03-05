@@ -18,12 +18,12 @@ helpviewer_keywords:
 - sequenced data flow
 - stream sockets [MFC]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
-ms.openlocfilehash: 93342f734d1e475cbae1b7e3025c59e6e6f73284
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ab866609d0b75aaf9d06a01c204433d80e7e3d8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468035"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274936"
 ---
 # <a name="windows-sockets-background"></a>Windows Yuvaları: Arka Plan
 
@@ -44,7 +44,7 @@ Birçok ağ yazılım satıcısı Windows Sockets altında İletim Denetimi Prot
 
 Microsoft Foundation Class Kitaplığı'nı (MFC), iki sınıf sağlanarak Windows Sockets API'si ile programlama destekler. Bu sınıflardan birine `CSocket`, yüksek düzeyde soyutlama, ağ iletişimi programlama basitleştirmek için sağlar.
 
-Windows Yuvaları belirtimi, Windows Yuvaları: ağ bilgi işlem altında Microsoft Windows, sürüm 1.1, artık, bir açık arabirimi çok sayıda kişiler ve TCP/IP'yi topluluğundaki şirketler tarafından açık bir ağ standart geliştirilmiştir ve olduğu ücretsiz olarak kullanılabilir. Yuva modelini destekleyen bir "iletişimi etki alanı" şu anda programlama, Internet Protokolü paketi kullanma. Belirtimi Windows SDK içinde kullanılabilir.
+Windows Yuvaları belirtimi, Windows Yuvaları: Açık arabirim ağ bilgi işlem altında Microsoft Windows, artık sürüm 1.1, en çok sayıda kişiler ve TCP/IP'yi topluluğundaki şirketler tarafından açık bir ağ standart geliştirilmiştir ve kullanılmak üzere özgürce kullanılabilir. Yuva modelini destekleyen bir "iletişimi etki alanı" şu anda programlama, Internet Protokolü paketi kullanma. Belirtimi Windows SDK içinde kullanılabilir.
 
 > [!TIP]
 >  Yuva Internet Protokolü paketi kullandığından, "bilgi Otoyol." Internet iletişimini destekleyen uygulamalar için tercih edilen yol oldukları.
@@ -70,7 +70,7 @@ Bir iletişim uç noktası yuvası olup — bir nesne üzerinden Windows Sockets
 > [!NOTE]
 >  XNS gibi bazı ağ protokolleri altında akışları bayt akışlarında yerine kayıt akışları olarak yönelik kayıt olabilir. Daha yaygın TCP/IP protokolünün altında ancak bayt akışları akışlarıdır. Windows Yuvaları temel alınan protokolünden bağımsız bir özet düzeyi sağlar.
 
-Bu türleri hakkında daha fazla bilgi için ve hangi durumlarda kullanmak üzere yuva hangi tür [Windows Yuvaları: Yuva Stream](../mfc/windows-sockets-stream-sockets.md) ve [Windows Yuvaları: veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md).
+Bu türleri hakkında daha fazla bilgi ve hangi durumlarda kullanmak üzere yuva hangi tür [Windows Yuvaları: Stream yuva](../mfc/windows-sockets-stream-sockets.md) ve [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md).
 
 ##  <a name="_core_the_socket_data_type"></a> YUVA veri türü
 
@@ -89,17 +89,16 @@ Yuva en az üç iletişimleri bağlamlarda oldukça kullanışlıdır:
 - Uzaktan yordam çağrısı (RPC), bir iletiyi bir işlev çağrısı olarak yorumlamak alıcı uygulamanın sağlayarak yapılıyor.
 
 > [!TIP]
->  Her iki ucunda da iletişim yazarken MFC Yuvaları kullanma için ideal bir durumdur: MFC her iki uçta kullanma. MFC olmayan uygulamalar ile kurarken durum yönetme de dahil olmak üzere, bu konu hakkında daha fazla bilgi için bkz. [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
+>  Her iki ucunda da iletişim yazarken MFC Yuvaları kullanma için ideal bir durumdur: MFC her iki uçta kullanma. MFC olmayan uygulamalar ile kurarken durum yönetme de dahil olmak üzere, bu konu hakkında daha fazla bilgi için bkz. [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
 
 Daha fazla bilgi için Windows Sockets belirtime bakın: **ntohs**, **ntohl**, **htons**, **htonl**. Ayrıca, aşağıdaki konulara bakın:
 
-- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md)
+- [Windows Yuvaları: Arşivlerle kullanılan yuvalara örnek](../mfc/windows-sockets-example-of-sockets-using-archives.md)
 
-- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
-

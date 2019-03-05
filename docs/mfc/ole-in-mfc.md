@@ -10,12 +10,12 @@ helpviewer_keywords:
 - applications [OLE], about OLE
 - OLE component object model (COM)
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-ms.openlocfilehash: 992715c545f90176ab750890c4be3e05dfe950d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 09d80e7c45875ad2e6ed8b599d4e01d2110d562f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520490"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267231"
 ---
 # <a name="ole-in-mfc"></a>MFC'de OLE
 
@@ -76,7 +76,6 @@ Mevcut kapsayıcı uygulamalarınızı isteğe bağlı gelişmiş özellikler ek
 [Bileşen Nesne modeli](/windows/desktop/com/the-component-object-model)<br/>
 OLE MFC olmadan kullanmayı açıklar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../mfc/mfc-concepts.md)
-

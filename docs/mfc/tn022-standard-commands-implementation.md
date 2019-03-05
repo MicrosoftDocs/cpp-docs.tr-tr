@@ -1,5 +1,5 @@
 ---
-title: 'TN022: Standart Komutları Uygulama'
+title: 'TN022: Standart komutları uygulama'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.commands
@@ -59,14 +59,14 @@ helpviewer_keywords:
 - ID_FILE_NEW command [MFC]
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-ms.openlocfilehash: 0f79aaaf59f12e226220e51681f64d0bf1131303
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c066521ba2b5be9ac24a8abaece42e57b8ad85f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504344"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279378"
 ---
-# <a name="tn022-standard-commands-implementation"></a>TN022: Standart Komutları Uygulama
+# <a name="tn022-standard-commands-implementation"></a>TN022: Standart komutları uygulama
 
 > [!NOTE]
 >  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
@@ -468,30 +468,29 @@ Her komut kimliği için dosya İSTEMLERİ bulunabilir standart ileti satır ist
 
 Birçok standart komut kimlikleri, durum çubukları göstergeleri olarak kullanılır. Bunlar aynı işleme mekanizması komut güncelleştirme kullanıcı Arabirimi uygulama boşta kalma süresi sırasında visual bunların geçerli durumunu görüntülemek için kullanın. Kullanıcı tarafından seçilemez bu yana (diğer bir deyişle, bir durum çubuğu bölmesinin gönderemezsiniz), sonra da ON_COMMAND işleyici bu komut kimlikleri için hiçbir mantıklı.
 
-- Id_ındıcator_caps: Büyük harf kilit göstergesi.
+- ID_INDICATOR_CAPS: CAP kilit göstergesi.
 
-- Id_ındıcator_num: NUM lock göstergesi.
+- ID_INDICATOR_NUM: NUM lock göstergesi.
 
-- Id_ındıcator_scrl: SCRL kilit göstergesi.
+- ID_INDICATOR_SCRL: SCRL kilit göstergesi.
 
-- Id_ındıcator_kana: KANA kilit göstergesi (yalnızca Japonca sistemleri için geçerlidir).
+- ID_INDICATOR_KANA: KANA göstergesi (yalnızca Japonca sistemleri için geçerlidir) kilitleyin.
 
 Bu üç uygulanan `CFrameWnd::OnUpdateKeyIndicator`, uygun sanal anahtara eşlemek için komut kimliği kullanan bir uygulama Yardımcısı. Sık kullanılan bir uygulamasını etkinleştirir veya devre dışı bırakır (devre dışı durum bölmeleri için metin =) `CCmdUI` bağlı olarak uygun sanal anahtarı şu anda kilitli nesne.
 
 Bu komut işleyici özelleştirmesini önerilmez.
 
-- Id_ındıcator_ext: Genişletilmiş select göstergesi.
+- ID_INDICATOR_EXT: Genişletilmiş göstergesi seçin.
 
-- Id_ındıcator_ovr: Üzerine yerleştirme göstergesi.
+- ID_INDICATOR_OVR: Üzerine yerleştirme göstergesi.
 
-- Id_ındıcator_rec: Kayıt göstergesi.
+- ID_INDICATOR_REC: Kayıt göstergesi.
 
 Şu anda bu göstergeleri standart uygulaması yoktur.
 
-Bu göstergeler uygulamak seçerseniz, bu göstergesi kimlikleri ve göstergeleri, durum çubuğundaki sırayı korumanın kullanmanız önerilir (diğer bir deyişle, bu sırada: EXT, büyük harf, sayı, SCRL, OVR, REC).
+Bu göstergeler uygulamak seçerseniz, bu göstergesi kimlikleri ve göstergeleri, durum çubuğundaki sırayı korumanın kullanmanız önerilir (diğer bir deyişle, bu sırada: EXT, CAP, NUM, SCRL, OVR, REC).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
 [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
-

@@ -1,5 +1,5 @@
 ---
-title: CPtrArray sınıfı
+title: CPtrArray Class
 ms.date: 11/04/2016
 f1_keywords:
 - CPtrArray
@@ -42,14 +42,14 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
-ms.openlocfilehash: b83620dd7ee41e72997a2c08fb124395c065d5b4
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 59ecf01b81c4150e2bdae3b6d2862c1b3e91152b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657402"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281726"
 ---
-# <a name="cptrarray-class"></a>CPtrArray sınıfı
+# <a name="cptrarray-class"></a>CPtrArray Class
 
 Void işaretçileri dizilerini destekler.
 
@@ -126,7 +126,7 @@ Kullanma hakkında daha fazla bilgi için `CPtrArray`, makaleye göz atın [kole
 
 **Başlık:** afxcoll.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>

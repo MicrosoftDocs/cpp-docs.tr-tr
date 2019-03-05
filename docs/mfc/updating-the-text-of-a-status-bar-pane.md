@@ -11,12 +11,12 @@ helpviewer_keywords:
 - panes, status bar
 - status bars [MFC], updating
 ms.assetid: 4984a3f4-9905-4d8c-a927-dca19781053b
-ms.openlocfilehash: 0c6691f37a1b0754835aba5c09d251c4986c4fb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baf5013e34f262dd3bfed82941697ab9ca21e637
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592549"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280205"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 
@@ -73,7 +73,7 @@ Değerini tanımladıktan sonra *m_nPage* üye değişkeni (sınıf `CMainFrame`
 
 - [(Program koşullar değiştikçe araç çubuğu düğmeleri ve menü öğeleri güncelleştirmek nasıl) kullanıcı arabirimi nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC'de Durum Çubuğu Uygulaması](../mfc/status-bar-implementation-in-mfc.md)<br/>
 [CStatusBar Sınıfı](../mfc/reference/cstatusbar-class.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - classes [MFC], MFC
 - application architecture classes [MFC]
 ms.assetid: 71b2de54-b44d-407e-9c71-9baf954e18d9
-ms.openlocfilehash: 3287ac31744506720f1c5c1080a6225311f0e3a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 47feeb056d02b81bb88ccf3c5fd49bc983583ee7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512768"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277605"
 ---
 # <a name="mfc-application-architecture-classes"></a>MFC Uygulama Mimarisi Sınıfları
 
@@ -38,7 +38,6 @@ Belge/görünüm mimarisini kullanan uygulamalar, ek nesneler içerir. Asıl nes
 
 Belge/görünüm uygulamaları da içeren çerçeve pencereleri (türetilen [CFrameWnd](../mfc/reference/cframewnd-class.md)) ve belge şablonları (türetilen [CDocTemplate](../mfc/reference/cdoctemplate-class.md)).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

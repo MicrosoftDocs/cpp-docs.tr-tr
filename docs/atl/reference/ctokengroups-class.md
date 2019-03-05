@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenGroups class
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-ms.openlocfilehash: 9bd5b5dd8f8c233ac324e4c50a6291347bb954e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 842ceab1630fc7bc08b5c27dc769a25d029886f3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496346"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274524"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups sınıfı
 
@@ -271,7 +271,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 Bir işaretçi değerine çevirir [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) yapısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Güvenliği örneği](../../visual-cpp-samples.md)<br/>
 [CSid Sınıfı](../../atl/reference/csid-class.md)<br/>

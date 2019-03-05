@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma'
+title: 'Nasıl yapılır: Bir gecikmeden sonra tamamlanan bir görev oluşturun'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - task_completion_event class, example
 - create a task that completes after a delay, example [C++]
 ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
-ms.openlocfilehash: 89564a00dbfde078ef98cd53110853e30e33ad6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3292043d7900d5dc2bfba0afa5fdc237853a5be0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616379"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272268"
 ---
-# <a name="how-to-create-a-task-that-completes-after-a-delay"></a>Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma
+# <a name="how-to-create-a-task-that-completes-after-a-delay"></a>Nasıl yapılır: Bir gecikmeden sonra tamamlanan bir görev oluşturun
 
 Bu örnek nasıl kullanılacağını gösterir [concurrency::task](../../parallel/concrt/reference/task-class.md), [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [ CONCURRENCY::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), [concurrency::timer](../../parallel/concrt/reference/timer-class.md), ve [concurrency::call](../../parallel/concrt/reference/call-class.md) bir gecikmeden sonra tamamlanan bir görev oluşturmak için sınıf. Bazen verileri yoklayan, zaman aşımlarını tanıtan, kullanıcı girişini işleme bir süre için erteleme ve benzeri döngüler oluşturmak için bu yöntemi kullanabilirsiniz.
 
@@ -47,7 +47,7 @@ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın ve
 
 **cl.exe/ehsc görev delay.cpp**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [task Sınıfı (Eşzamanlılık Çalışma Zamanı)](../../parallel/concrt/reference/task-class.md)<br/>
@@ -58,4 +58,3 @@ Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın ve
 [call Sınıfı](../../parallel/concrt/reference/call-class.md)<br/>
 [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)
-

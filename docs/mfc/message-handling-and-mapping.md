@@ -6,12 +6,12 @@ helpviewer_keywords:
 - message handling [MFC]
 - message maps [MFC]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-ms.openlocfilehash: f76e9b2ef25c8a6c046cb6c47f0f5761854453c9
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 41f3432b3741019a787ee24b0f508fe8e65e0470
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694718"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279672"
 ---
 # <a name="message-handling-and-mapping"></a>İleti İşleme ve Eşleme
 
@@ -41,9 +41,9 @@ WM_COMMAND iletileri — genellikle menüler, düğmeler veya Hızlandırıcıla
 
 - [Dinamik kullanıcı arabirimi nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
 
-- [Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma](../mfc/how-to-create-a-message-map-for-a-template-class.md)
+- [Nasıl yapılır: Bir şablon sınıfı için ileti eşlemesi oluşturma](../mfc/how-to-create-a-message-map-for-a-template-class.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kavramları](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
