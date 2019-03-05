@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: 8341061ba6365beb97f4413aab8bfbbfdc25e035
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: ed2b8445a0f13b82338d2904d43fd17688d05b9e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693926"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276383"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları
 
@@ -397,4 +397,3 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 Bu makro, belirli bir durumda kullanılan bir arabirim önlemek için kullanabilirsiniz. Örneğin, COM haritanıza arabirimi için bir sorgu için toplam'ın iç bilinmeyen iletilmelerini önleyebilirsiniz COM_INTERFACE_ENTRY_AGGREGATE_BLIND hemen önce bu makroyu ekleyebilirsiniz.
 
 IID oluşturulmasını ekleyerek arabirime *x* için `IID_`. Örneğin, varsa *x* olduğu `IPersistStorage`, IID olacaktır `IID_IPersistStorage`.
-

@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModule class
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
-ms.openlocfilehash: 4d1c8dbfc7606efda50637ba17790ecafc80a976
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f01734d4ec9de323325dc793756f421388542ef2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456829"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302019"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
 
@@ -352,7 +352,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 Benzer şekilde [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced) dışında `CAtlModule::UpdateRegistryFromResourceS` ATL kayıt defteri bileşeni (Kaydedici) statik bir bağlantı oluşturur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>

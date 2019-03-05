@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme'
+title: 'Nasıl yapılır: Varolan bir MFC şeridini Şerit kaynağına dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon resource, converting from an MFC ribbon
 - MFC ribbon, converting to a ribbon resource
 ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
-ms.openlocfilehash: 627c50758b10ad18e45fc1432340c0eb2dad7b19
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: b4265a7bf3ebe2c4926f21572d802b75bd525990
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524371"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295495"
 ---
-# <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme
+# <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan bir MFC şeridini Şerit kaynağına dönüştürme
 
 Şerit kaynaklarını görselleştirin, değiştirebilir ve bakımını el ile kodlanmış bir Şerit kolaydır. Bu konu, el ile kodlanmış bir Şerit MFC projesinde bir Şerit kaynağına dönüştürme açıklar.
 
@@ -44,7 +44,6 @@ ms.locfileid: "51524371"
 
 1. Projeyi oluşturmak ve programı çalıştırın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
-

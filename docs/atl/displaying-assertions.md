@@ -7,12 +7,12 @@ helpviewer_keywords:
 - debugging assertions
 - assertions, debugging
 ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
-ms.openlocfilehash: e183f782d488c2e5b92f61cfd63627f056e1f588
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb06b8f124180ed566ecf2c761deb359444fb019
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616480"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289996"
 ---
 # <a name="displaying-assertions"></a>Onaylamaları görüntüleme
 
@@ -20,7 +20,6 @@ Hizmetinize bağlı istemci yanıt vermemesine görünüyorsa, hizmet onaylanan 
 
 Hizmetinizi göremiyorsanız bir ileti kutusu görüntüleme olduğunu belirlerseniz, ayarlamak isteyebilirsiniz **masaüstü ile etkileşimde bulunma hizmetine izin ver** hizmet yeniden kullanmadan önce seçeneği. Bu seçenek masaüstünde görünmesine hizmeti tarafından görüntülenen ileti kutusu izin veren bir başlangıç parametredir. Bu seçeneği belirlemek için Hizmetleri Denetim Masası uygulamasını açın, hizmeti seçin, tıklayın **başlangıç**ve ardından **masaüstü ile etkileşimde bulunma hizmetine izin ver** seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata Ayıklama İpuçları](../atl/debugging-tips.md)
-

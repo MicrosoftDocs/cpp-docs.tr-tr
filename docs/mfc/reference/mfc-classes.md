@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-ms.openlocfilehash: ee64ca259f2466bb02f7dd650a10dc18f8d8f8a1
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: e31e7d68676a40da51f214496a13072d0d4d2b28
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288660"
 ---
 # <a name="mfc-classes"></a>MFC Sınıfları
 
@@ -24,7 +24,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[CAccelerateDecelerateTransition sınıfı](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
+[CAccelerateDecelerateTransition Sınıfı](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
 Uygular-hızlandırma yavaşlatma geçişi.
 
 [CAnimateCtrl Sınıfı](../../mfc/reference/canimatectrl-class.md)<br/>
@@ -1306,4 +1306,3 @@ Microsoft Foundation Class Kitaplığı'ndaki tüm pencere sınıflarının teme
 
 [MFC Masaüstü Uygulamaları](../../mfc/mfc-desktop-applications.md)<br/>
 Sınıfları, genel işlevleri, genel değişkenler ve MFC kitaplığını oluşturan makrolar hakkındaki konulara bağlantılar içerir.
-

@@ -48,7 +48,7 @@ ms.locfileid: "56152761"
 
 *Seçimi deyimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**varsa (** *ifade* **)** *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**varsa (** *ifade* **)***deyimi* **başka** *deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**varsa (** *ifade* **)** *deyimi* **başka** *deyimi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*
 
 *Etiketli deyim*:<br/>

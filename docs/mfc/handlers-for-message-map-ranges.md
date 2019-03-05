@@ -22,12 +22,12 @@ helpviewer_keywords:
 - handler functions [MFC], declaring
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-ms.openlocfilehash: d94f0391c1aebc95b51a1bc94bea28168c445086
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: b587064625178c520338e4253e812e8f84275257
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519392"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266373"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 
@@ -145,6 +145,6 @@ Yazdığınızda `ON_CONTROL_RANGE` makro, ileti eşlemesi içinde belirttiğini
 
 Örnekte gösterilen kod tipik: geçirilen değeri dönüştürme bir `int` ileti aralığı ve sunduğundan bu durum geçerlidir. Ardından hangi düğmeye tıkladı bazı farklı bir eylem sürebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İleti İşleyici İşlevlerini Bildirme](../mfc/declaring-message-handler-functions.md)

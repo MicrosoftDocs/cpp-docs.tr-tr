@@ -9,12 +9,12 @@ helpviewer_keywords:
 - handlers [MFC], command
 - handlers [MFC], message
 ms.assetid: 51bc4e76-dbe3-4cc2-b026-3199d56b2fa9
-ms.openlocfilehash: 1d775fc98fc97236cd63caf1e4422d32a9245410
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d3ed6239b638a0e161cd7e3580f4fe6e1b4a7e7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588662"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304877"
 ---
 # <a name="message-handlers"></a>İleti İşleyicileri
 
@@ -26,7 +26,6 @@ Bunu bir ileti işleyicisini yaptığı bu iletiye yanıt olarak yapılan istedi
 
 Microsoft Visual C++ ve MFC akreditasyonlu tümünün İşleyicileriniz yazmak için kullanabilirsiniz. Tüm sınıflar listesi için bkz. [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) içinde *MFC başvurusu*.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
-

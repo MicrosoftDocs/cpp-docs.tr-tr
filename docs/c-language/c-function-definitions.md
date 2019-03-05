@@ -64,7 +64,7 @@ Bir tanım parametre listesinde bu söz dizimini kullanır:
 
 *parametre listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,***parametre bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,** *parametre bildirimi*
 
 *parametre bildirimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimcisi*<br/>

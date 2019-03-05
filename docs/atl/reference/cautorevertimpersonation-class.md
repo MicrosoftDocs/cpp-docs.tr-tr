@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoRevertImpersonation class
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
-ms.openlocfilehash: 799ec11fd8542a8b30ef3aa95f1a20700c5c9796
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8ab7fed8f1560054eb023cbd4e47c43c4c6f0cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444922"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299109"
 ---
 # <a name="cautorevertimpersonation-class"></a>Cautorevertımpersonation sınıfı
 
@@ -135,7 +135,7 @@ Daha önce ilişkili adresini [CAccessToken](../../atl/reference/caccesstoken-cl
 
 Geri Al bir kimliğe bürünme eklemek amacıyla bu yöntemi çağrılırsa `CAccessToken` nesnesi [ayırma](#detach) yöntemi bunun yerine kullanılmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATLSecurity örnek](../../visual-cpp-samples.md)<br/>
 [Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)<br/>

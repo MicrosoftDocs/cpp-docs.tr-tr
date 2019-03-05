@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-ms.openlocfilehash: 850ce46f524d9069609c1e5809c091c18bd58ee4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d36c924d30bd728fcd54b6cdf6805ade25e20b5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618250"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296611"
 ---
 # <a name="cbasekeyframe-class"></a>CBaseKeyFrame sınıfı
 
@@ -184,6 +184,6 @@ Bir Windows animasyon API'sı ana karesini temsil eder. Bir anahtar kare başlat
 UI_ANIMATION_KEYFRAME m_keyframe;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)

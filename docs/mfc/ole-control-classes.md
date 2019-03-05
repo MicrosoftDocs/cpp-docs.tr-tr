@@ -12,12 +12,12 @@ helpviewer_keywords:
 - OLE control classes [MFC]
 - reusable component classes [MFC]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
-ms.openlocfilehash: 909da3dc7b4f0298e6e5476ed7716257cc4d101d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86470c3e3e66d6aee2ce532570cea096641d2c1d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509576"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304567"
 ---
 # <a name="ole-control-classes"></a>OLE Denetim Sınıfları
 
@@ -64,7 +64,6 @@ Kapsayıcısının kullanıcı arabiriminde (örneğin, dosya yeni, açık, yazd
 [COleSafeArray](../mfc/reference/colesafearray-class.md)<br/>
 Rastgele tür ve boyut dizileri ile çalışır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfına genel bakış](../mfc/class-library-overview.md)
-

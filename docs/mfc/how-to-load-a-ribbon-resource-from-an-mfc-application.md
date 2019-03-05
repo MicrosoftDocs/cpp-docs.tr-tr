@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Bir MFC Uygulamasından Şerit Kaynağı Yükleme'
+title: 'Nasıl yapılır: Bir MFC uygulamasından Şerit kaynağı yükleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon resource [MFC], loading
 ms.assetid: 1c76bb8f-6345-414a-9f3f-128815ceadc5
-ms.openlocfilehash: 14ba37952d6f8849c51b36901a6bc17404f938e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b7691d4168101209b0e2d2500012a2b4a8e47788
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515160"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289565"
 ---
-# <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>Nasıl yapılır: Bir MFC Uygulamasından Şerit Kaynağı Yükleme
+# <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>Nasıl yapılır: Bir MFC uygulamasından Şerit kaynağı yükleme
 
 Şerit kaynağını kullanmak için Şerit kaynağı yükleme için değiştirin.
 
@@ -37,7 +37,6 @@ ms.locfileid: "50515160"
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
-

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: add047984f5a32e505e8a739922daa137b5e671d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae9741a66e944b60dc38c1366353e43977e1ee7a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541706"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278410"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 
@@ -43,7 +43,6 @@ Yönlendirme maliyeti, pahalı bir komutuna yanıt olarak işleyicinizi yaptığ
 
 Önceki tablonun ikinci sütunda numaralı girişleri bahsetmek burada ilk sütununda karşılık gelen öğe bir belge gibi diğer nesneler bakın. Örneğin, ikinci sütun, görünüm, belge için bir komut iletir okurken, daha fazla yönlendirme izlemek için ilk sütunda "Belge" girdisine bakın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
-

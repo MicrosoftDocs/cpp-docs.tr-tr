@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - customizations, MFC Extensions
 ms.assetid: 3b1b7532-8cc9-48dc-9bbe-7fd4060530b5
-ms.openlocfilehash: ea72d24cccf64f54a16efb05c541e781cf00e469
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42f4b21fb257646d4d505427760a8fe1c7056e77
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494555"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265855"
 ---
 # <a name="customization-for-mfc"></a>MFC için Özelleştirme
 
@@ -37,8 +37,7 @@ Ek özelleştirme ipuçları aşağıdaki konularda bulunabilir:
 
 [Kullanıcı Tanımlı Araçlar](../mfc/user-defined-tools.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)<br/>
 [Özelleştirmenin Güvenlikle İlgili Etkileri](../mfc/security-implications-of-customization.md)
-
