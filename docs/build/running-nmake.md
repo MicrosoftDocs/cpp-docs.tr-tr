@@ -10,12 +10,12 @@ helpviewer_keywords:
 - NMAKE program, running
 - command files, NMAKE
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
-ms.openlocfilehash: 81f38792893955b476dfc7eda91ed00603924a8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d3555dc66ba9939ce346a692df9d0151fcf87d2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646218"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423085"
 ---
 # <a name="running-nmake"></a>NMAKE Çalıştırma
 
@@ -37,6 +37,6 @@ NMAKE derleme yalnızca belirtilen *hedefleri* veya belirtilmezse, derleme göre
 
 [NMAKE çıkış kodları](../build/exit-codes-from-nmake.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [NMAKE Başvurusu](../build/nmake-reference.md)

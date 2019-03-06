@@ -6,12 +6,12 @@ helpviewer_keywords:
 - linker command line [C++]
 - LINK tool [C++], command-line syntax
 ms.assetid: e2a31e17-77bd-4e74-9305-75b105b26539
-ms.openlocfilehash: 844d2fe4c02e274cda02fe71303f0b6dd092b431
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55171c1f16b43e08b5c4a6b078c82f4ed08855d5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464122"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422734"
 ---
 # <a name="linker-command-line-syntax"></a>Bağlayıcı Komut Satırı Sözdizimi
 
@@ -32,7 +32,7 @@ Bağlayıcı için bir dosya geçirmek için dosya adı bağlantı komutundan so
 
 Link.exe başarı durumunda (hatasız) sıfır döndürür.  Aksi takdirde bağlayıcı bağlantı durduruldu hata numarasını döndürür.  Örneğin, bağlayıcı LNK1104 oluşturursa, bağlayıcı 1104 döndürür.  Buna göre bir hatada bağlayıcı tarafından döndürülen en düşük hata sayısı 1000'dir.  128 dönüş değeri bir yapılandırma sorunu işletim sisteminde veya .config dosyasını temsil eder; Yükleyici link.exe ya da c2.dll yüklenmedi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

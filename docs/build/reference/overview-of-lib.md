@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-ms.openlocfilehash: 03209bc409453cab1769606cb972f4572d3617bd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a66f78d225a5899b53a931c7eb6a0564de689ca1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548505"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423293"
 ---
 # <a name="overview-of-lib"></a>LIB'e Genel Bakış
 
@@ -33,7 +33,7 @@ Daha fazla bilgi bağlantısını içeren bir lib.exe seçenekleri aşağıdaki 
 
 |Seçenek|Açıklama|
 |-|-|
-|**/ DEF**|Bir içeri aktarma kitaplığını ve dışarı aktarma dosyası oluşturun.<br/><br/>Daha fazla bilgi için [bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme](../../build/reference/building-an-import-library-and-export-file.md).|
+|**/DEF**|Bir içeri aktarma kitaplığını ve dışarı aktarma dosyası oluşturun.<br/><br/>Daha fazla bilgi için [bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme](../../build/reference/building-an-import-library-and-export-file.md).|
 |**/ ERRORREPORT**|   Lib.exe iç hatalarla ilgili bilgi göndermek.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](../../build/reference/running-lib.md).|
 |**/ DIŞARI AKTARMA**|   İşlevi, programınızı dışarı aktarır.<br/><br/>Daha fazla bilgi için [bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme](../../build/reference/building-an-import-library-and-export-file.md).|
 |**/ EXTRACT**|   Var olan bir kitaplık üyesi bir kopyasını içeren bir nesne (.obj) dosyası oluşturun.<br/><br/>Daha fazla bilgi için [kitaplık üyesini ayıklama](../../build/reference/extracting-a-library-member.md).|
@@ -51,7 +51,7 @@ Daha fazla bilgi bağlantısını içeren bir lib.exe seçenekleri aşağıdaki 
 |**/ VERBOSE**|   Eklenen .obj dosya adlarını dahil olmak üzere, oturumunun ilerleme durumu hakkında ayrıntıları görüntüler.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](../../build/reference/running-lib.md).|
 |**/WX**|   Uyarıları hata olarak değerlendir.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](../../build/reference/running-lib.md).|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [LIB Başvurusu](../../build/reference/lib-reference.md)<br/>
 [LIB Giriş Dosyaları](../../build/reference/lib-input-files.md)<br/>
