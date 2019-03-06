@@ -6,12 +6,12 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: c7821fc9fca1c9a965ea83584415b9baf17ec683
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9d3db9a3db1943581e5fd603ba85777cb49b863
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579120"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423319"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 
@@ -92,7 +92,7 @@ Undecoration of :- "?func1@a@@AAEXH@Z"
 is :- "private: void __thiscall a::func1(int)"
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
 [Bağlantıyı Belirtmek için extern Kullanma](../../cpp/using-extern-to-specify-linkage.md)

@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: b27d6bb01b9e94ebe38be5455ffcc870806ac33b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2767770e354c81e5a34a0d6e9105a27ecb361ddc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298354"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425074"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -536,7 +536,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
 
 Bkz: [ClientToScreen](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) Windows SDK içinde.
 
-Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağlar bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağlar bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 ##  <a name="create"></a>  CWindow::Create
 
@@ -1789,7 +1789,7 @@ int MapWindowPoints(
 
 Bkz: [MapWindowPoints](/windows/desktop/api/winuser/nf-winuser-mapwindowpoints) Windows SDK içinde.
 
-Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağlar bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağlar bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 ##  <a name="messagebox"></a>  CWindow::MessageBox
 
@@ -1923,7 +1923,7 @@ BOOL MoveWindow(
 
 Üst düzey bir pencere için nesne, x ve y göre ekranın sol üst köşesinde parametrelerdir. Bir alt pencere nesnesi için ana penceresinin istemci alanına göre sol üst köşesinin değildirler.
 
-Bu yöntem ikinci sürümünü kullanan bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin yeni konumunu, genişliğini ve yüksekliğini belirlemek için.
+Bu yöntem ikinci sürümünü kullanan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı pencerenin yeni konumunu, genişliğini ve yüksekliğini belirlemek için.
 
 ##  <a name="nextdlgctrl"></a>  CWindow::NextDlgCtrl
 
@@ -2134,7 +2134,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
 
 Bkz: [ScreenToClient](/windows/desktop/api/winuser/nf-winuser-screentoclient) Windows SDK içinde.
 
-Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağlar bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.
+Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağlar bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 ##  <a name="scrollwindow"></a>  CWindow::ScrollWindow
 
@@ -2605,7 +2605,7 @@ BOOL SetWindowPos(
 
 Bkz: [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK içinde.
 
-Bu yöntem ikinci sürümünü kullanan bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin yeni konumunu, genişliğini ve yüksekliğini ayarlanacak yapısı.
+Bu yöntem ikinci sürümünü kullanan bir [RECT](/previous-versions/dd162897\(v=vs.85\)) pencerenin yeni konumunu, genişliğini ve yüksekliğini ayarlanacak yapısı.
 
 ##  <a name="setwindowrgn"></a>  CWindow::SetWindowRgn
 

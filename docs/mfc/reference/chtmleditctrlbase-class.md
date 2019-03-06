@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: ebc296c66ee818e5c72207e0ca7b436f386fb68d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 09d4c4f1fde563d82fa007a96723f078eb31dc1b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293946"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423242"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 
@@ -418,9 +418,9 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametreler hakkında daha fazla bilgi için bkz: "Karakteri tablo dize biçimi" [düzenleme karakterleri kullanarak](https://msdn.microsoft.com/library/aa969614.aspx).
+Parametreler hakkında daha fazla bilgi için bkz: "Karakteri tablo dize biçimi" [düzenleme karakterleri kullanarak](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa969614\(v=vs.85\)).
 
-Bu yöntem gönderir [IDM_ADDTOGLYPHTABLE komut kimliği](https://msdn.microsoft.com/library/aa769891.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_ADDTOGLYPHTABLE komut kimliği](/previous-versions/aa769891\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="bold"></a>  CHtmlEditCtrlBase::Bold
 
@@ -436,7 +436,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BOLD komut kimliği](https://msdn.microsoft.com/library/aa769861.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BOLD komut kimliği](/previous-versions/aa769861\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="button"></a>  CHtmlEditCtrlBase::Button
 
@@ -457,7 +457,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BUTTON komut kimliği](https://msdn.microsoft.com/library/aa769966.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BUTTON komut kimliği](/previous-versions/aa769966\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="checkbox"></a>  CHtmlEditCtrlBase::CheckBox
 
@@ -478,7 +478,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_CHECKBOX komut kimliği](https://msdn.microsoft.com/library/aa769972.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_CHECKBOX komut kimliği](/previous-versions/aa769972\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="clearselection"></a>  CHtmlEditCtrlBase::ClearSelection
 
@@ -494,7 +494,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_CLEARSELECTION komut kimliği](https://msdn.microsoft.com/library/aa770038.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_CLEARSELECTION komut kimliği](/previous-versions/aa770038\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="copy"></a>  CHtmlEditCtrlBase::Copy
 
@@ -510,7 +510,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_COPY komut kimliği](https://msdn.microsoft.com/library/aa769872.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_COPY komut kimliği](/previous-versions/aa769872\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="cut"></a>  CHtmlEditCtrlBase::Cut
 
@@ -526,7 +526,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_CUT komut kimliği](https://msdn.microsoft.com/library/aa769875.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_CUT komut kimliği](/previous-versions/aa769875\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="delete"></a>  CHtmlEditCtrlBase::Delete
 
@@ -542,7 +542,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_DELETE komut kimliği](https://msdn.microsoft.com/library/aa769876.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_DELETE komut kimliği](/previous-versions/aa769876\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="dropdownbox"></a>  CHtmlEditCtrlBase::DropDownBox
 
@@ -563,7 +563,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_DROPDOWNBOX komut kimliği](https://msdn.microsoft.com/library/aa769984.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_DROPDOWNBOX komut kimliği](/previous-versions/aa769984\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="emptyglyphtable"></a>  CHtmlEditCtrlBase::EmptyGlyphTable
 
@@ -579,7 +579,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_EMPTYGLYPHTABLE komut kimliği](https://msdn.microsoft.com/library/aa769907.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_EMPTYGLYPHTABLE komut kimliği](/previous-versions/aa769907\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="execcommand"></a>  CHtmlEditCtrlBase::ExecCommand
 
@@ -603,7 +603,7 @@ HRESULT ExecCommand(
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Yürütülecek komut kimliği. Bir liste için bkz. [MSHTML komut tanımlayıcıları](https://msdn.microsoft.com/library/aa741315.aspx).
+Yürütülecek komut kimliği. Bir liste için bkz. [MSHTML komut tanımlayıcıları](/previous-versions/aa741315\(v=vs.85\)).
 
 *cmdExecOpt*<br/>
 Alınan değerleri [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) nesne komutu nasıl yürütülecek açıklayan sabit listesi.
@@ -639,7 +639,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_FONT komut kimliği](https://msdn.microsoft.com/library/aa769913.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_FONT komut kimliği](/previous-versions/aa769913\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getabsoluteposition"></a>  CHtmlEditCtrlBase::GetAbsolutePosition
 
@@ -660,7 +660,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_ABSOLUTE_POSITION komut kimliği](https://msdn.microsoft.com/library/aa769889.aspx).
+Daha fazla bilgi için [IDM_ABSOLUTE_POSITION komut kimliği](/previous-versions/aa769889\(v=vs.85\)).
 
 ##  <a name="getbackcolor"></a>  CHtmlEditCtrlBase::GetBackColor
 
@@ -681,7 +681,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BACKCOLOR komut kimliği](/previous-versions/aa769858\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getblockformat"></a>  CHtmlEditCtrlBase::GetBlockFormat
 
@@ -702,7 +702,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BLOCKFMT komut kimliği](https://msdn.microsoft.com/library/aa769883.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BLOCKFMT komut kimliği](/previous-versions/aa769883\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getblockformatnames"></a>  CHtmlEditCtrlBase::GetBlockFormatNames
 
@@ -723,7 +723,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_GETBLOCKFMTS komut kimliği](https://msdn.microsoft.com/library/aa769884.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_GETBLOCKFMTS komut kimliği](/previous-versions/aa769884\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getbookmark"></a>  CHtmlEditCtrlBase::GetBookMark
 
@@ -744,7 +744,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_BOOKMARK komut kimliği](https://msdn.microsoft.com/library/aa769873.aspx).
+Daha fazla bilgi için [IDM_BOOKMARK komut kimliği](/previous-versions/aa769873\(v=vs.85\)).
 
 ##  <a name="getdocument"></a>  CHtmlEditCtrlBase::GetDocument
 
@@ -852,7 +852,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 Geçerli seçimi birden fazla yazı tipi kullanıyorsa *strFace* boş bir dize olur.
 
-Bu yöntem gönderir [IDM_FONTNAME komut kimliği](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_FONTNAME komut kimliği](/previous-versions/aa769880\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getfontsize"></a>  CHtmlEditCtrlBase::GetFontSize
 
@@ -873,7 +873,7 @@ HTML yazı tipi boyutu (1-7) döndürür. Seçim birden çok yazı tipi boyutlar
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_FONTSIZE komut kimliği](https://msdn.microsoft.com/library/aa769881.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_FONTSIZE komut kimliği](/previous-versions/aa769881\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getforecolor"></a>  CHtmlEditCtrlBase::GetForeColor
 
@@ -894,7 +894,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_FORECOLOR komut kimliği](https://msdn.microsoft.com/library/aa769882.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_FORECOLOR komut kimliği](/previous-versions/aa769882\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getframezone"></a>  CHtmlEditCtrlBase::GetFrameZone
 
@@ -915,7 +915,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_GETFRAMEZONE komut kimliği](https://msdn.microsoft.com/library/aa769916.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_GETFRAMEZONE komut kimliği](/previous-versions/aa769916\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="getisdirty"></a>  CHtmlEditCtrlBase::GetIsDirty
 
@@ -948,7 +948,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWALIGNEDSITETAGS komut kimliği](https://msdn.microsoft.com/library/aa769947.aspx).
+Daha fazla bilgi için [IDM_SHOWALIGNEDSITETAGS komut kimliği](/previous-versions/aa769947\(v=vs.85\)).
 
 ##  <a name="getshowalltags"></a>  CHtmlEditCtrlBase::GetShowAllTags
 
@@ -969,7 +969,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWALLTAGS komut kimliği](https://msdn.microsoft.com/library/aa769948.aspx).
+Daha fazla bilgi için [IDM_SHOWALLTAGS komut kimliği](/previous-versions/aa769948\(v=vs.85\)).
 
 ##  <a name="getshowareatags"></a>  CHtmlEditCtrlBase::GetShowAreaTags
 
@@ -990,7 +990,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWAREATAGS komut kimliği](https://msdn.microsoft.com/library/aa769949.aspx).
+Daha fazla bilgi için [IDM_SHOWAREATAGS komut kimliği](/previous-versions/aa769949\(v=vs.85\)).
 
 ##  <a name="getshowbrtags"></a>  CHtmlEditCtrlBase::GetShowBRTags
 
@@ -1011,7 +1011,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWWBRTAGS komut kimliği](https://msdn.microsoft.com/library/aa769956.aspx).
+Daha fazla bilgi için [IDM_SHOWWBRTAGS komut kimliği](/previous-versions/aa769956\(v=vs.85\)).
 
 ##  <a name="getshowcommenttags"></a>  CHtmlEditCtrlBase::GetShowCommentTags
 
@@ -1032,7 +1032,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWCOMMENTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769950.aspx).
+Daha fazla bilgi için [IDM_SHOWCOMMENTTAGS komut kimliği](/previous-versions/aa769950\(v=vs.85\)).
 
 ##  <a name="getshowmisctags"></a>  CHtmlEditCtrlBase::GetShowMiscTags
 
@@ -1053,7 +1053,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWMISCTAGS komut kimliği](https://msdn.microsoft.com/library/aa769952.aspx).
+Daha fazla bilgi için [IDM_SHOWMISCTAGS komut kimliği](/previous-versions/aa769952\(v=vs.85\)).
 
 ##  <a name="getshowscripttags"></a>  CHtmlEditCtrlBase::GetShowScriptTags
 
@@ -1074,7 +1074,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWSCRIPTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769953.aspx).
+Daha fazla bilgi için [IDM_SHOWSCRIPTTAGS komut kimliği](/previous-versions/aa769953\(v=vs.85\)).
 
 ##  <a name="getshowstyletags"></a>  CHtmlEditCtrlBase::GetShowStyleTags
 
@@ -1095,7 +1095,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWSTYLETAGS komut kimliği](https://msdn.microsoft.com/library/aa769954.aspx).
+Daha fazla bilgi için [IDM_SHOWSTYLETAGS komut kimliği](/previous-versions/aa769954\(v=vs.85\)).
 
 ##  <a name="getshowunknowntags"></a>  CHtmlEditCtrlBase::GetShowUnknownTags
 
@@ -1116,7 +1116,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [IDM_SHOWUNKNOWNTAGS komut kimliği](https://msdn.microsoft.com/library/aa769955.aspx).
+Daha fazla bilgi için [IDM_SHOWUNKNOWNTAGS komut kimliği](/previous-versions/aa769955\(v=vs.85\)).
 
 ##  <a name="horizontalline"></a>  CHtmlEditCtrlBase::HorizontalLine
 
@@ -1137,7 +1137,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_HORIZONTALLINE komut kimliği](https://msdn.microsoft.com/library/aa769968.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_HORIZONTALLINE komut kimliği](/previous-versions/aa769968\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="hyperlink"></a>  CHtmlEditCtrlBase::HyperLink
 
@@ -1158,7 +1158,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_HYPERLINK komut kimliği](https://msdn.microsoft.com/library/aa769874.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_HYPERLINK komut kimliği](/previous-versions/aa769874\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="ie50paste"></a>  CHtmlEditCtrlBase::IE50Paste
 
@@ -1179,7 +1179,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_IE50_PASTE komut kimliği](https://msdn.microsoft.com/library/aa769922.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_IE50_PASTE komut kimliği](/previous-versions/aa769922\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="iframe"></a>  CHtmlEditCtrlBase::Iframe
 
@@ -1200,7 +1200,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_IFRAME komut kimliği](https://msdn.microsoft.com/library/aa769969.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_IFRAME komut kimliği](/previous-versions/aa769969\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="image"></a>  CHtmlEditCtrlBase::Image
 
@@ -1221,7 +1221,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_IMAGE komut kimliği](https://msdn.microsoft.com/library/aa769970.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_IMAGE komut kimliği](/previous-versions/aa769970\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="indent"></a>  CHtmlEditCtrlBase::Indent
 
@@ -1237,7 +1237,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INDENT komut kimliği](https://msdn.microsoft.com/library/aa769963.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INDENT komut kimliği](/previous-versions/aa769963\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insfieldset"></a>  CHtmlEditCtrlBase::InsFieldSet
 
@@ -1258,7 +1258,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSFIELDSET komut kimliği](https://msdn.microsoft.com/library/aa769967.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSFIELDSET komut kimliği](/previous-versions/aa769967\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputbutton"></a>  CHtmlEditCtrlBase::InsInputButton
 
@@ -1279,7 +1279,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTBUTTON komut kimliği](https://msdn.microsoft.com/library/aa769971.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTBUTTON komut kimliği](/previous-versions/aa769971\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputhidden"></a>  CHtmlEditCtrlBase::InsInputHidden
 
@@ -1300,7 +1300,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTHIDDEN komut kimliği](https://msdn.microsoft.com/library/aa769974.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTHIDDEN komut kimliği](/previous-versions/aa769974\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputimage"></a>  CHtmlEditCtrlBase::InsInputImage
 
@@ -1321,7 +1321,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTIMAGE komut kimliği](https://msdn.microsoft.com/library/aa769975.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTIMAGE komut kimliği](/previous-versions/aa769975\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputpassword"></a>  CHtmlEditCtrlBase::InsInputPassword
 
@@ -1342,7 +1342,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTPASSWORD komut kimliği](https://msdn.microsoft.com/library/aa769976.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTPASSWORD komut kimliği](/previous-versions/aa769976\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputreset"></a>  CHtmlEditCtrlBase::InsInputReset
 
@@ -1363,7 +1363,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTRESET komut kimliği](https://msdn.microsoft.com/library/aa769978.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTRESET komut kimliği](/previous-versions/aa769978\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputsubmit"></a>  CHtmlEditCtrlBase::InsInputSubmit
 
@@ -1384,7 +1384,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTSUBMIT komut kimliği](https://msdn.microsoft.com/library/aa769979.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTSUBMIT komut kimliği](/previous-versions/aa769979\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="insinputupload"></a>  CHtmlEditCtrlBase::InsInputUpload
 
@@ -1405,7 +1405,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_INSINPUTUPLOAD komut kimliği](https://msdn.microsoft.com/library/aa769973.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_INSINPUTUPLOAD komut kimliği](/previous-versions/aa769973\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="is1delement"></a>  CHtmlEditCtrlBase::Is1DElement
 
@@ -1426,7 +1426,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_1D_ELEMENT komut kimliği](https://msdn.microsoft.com/library/aa769885.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_1D_ELEMENT komut kimliği](/previous-versions/aa769885\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="is2delement"></a>  CHtmlEditCtrlBase::Is2DElement
 
@@ -1447,7 +1447,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_2D_ELEMENT komut kimliği](https://msdn.microsoft.com/library/aa769886.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_2D_ELEMENT komut kimliği](/previous-versions/aa769886\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="italic"></a>  CHtmlEditCtrlBase::Italic
 
@@ -1463,7 +1463,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_ITALIC komut kimliği](https://msdn.microsoft.com/library/aa769988.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_ITALIC komut kimliği](/previous-versions/aa769988\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="justifycenter"></a>  CHtmlEditCtrlBase::JustifyCenter
 
@@ -1479,7 +1479,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_JUSTIFYCENTER komut kimliği](https://msdn.microsoft.com/library/aa769989.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_JUSTIFYCENTER komut kimliği](/previous-versions/aa769989\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="justifyleft"></a>  CHtmlEditCtrlBase::JustifyLeft
 
@@ -1495,7 +1495,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_JUSTIFYLEFT komut kimliği](https://msdn.microsoft.com/library/aa770011.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_JUSTIFYLEFT komut kimliği](/previous-versions/aa770011\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="justifyright"></a>  CHtmlEditCtrlBase::JustifyRight
 
@@ -1511,7 +1511,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_JUSTIFYRIGHT komut kimliği](https://msdn.microsoft.com/library/aa770013.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_JUSTIFYRIGHT komut kimliği](/previous-versions/aa770013\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="listbox"></a>  CHtmlEditCtrlBase::ListBox
 
@@ -1532,7 +1532,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_LISTBOX komut kimliği](https://msdn.microsoft.com/library/aa769985.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_LISTBOX komut kimliği](/previous-versions/aa769985\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="marquee"></a>  CHtmlEditCtrlBase::Marquee
 
@@ -1553,7 +1553,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_MARQUEE komut kimliği](https://msdn.microsoft.com/library/aa769981.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_MARQUEE komut kimliği](/previous-versions/aa769981\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="newdocument"></a>  CHtmlEditCtrlBase::NewDocument
 
@@ -1586,7 +1586,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_ORDERLIST komut kimliği](https://msdn.microsoft.com/library/aa769982.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_ORDERLIST komut kimliği](/previous-versions/aa769982\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="outdent"></a>  CHtmlEditCtrlBase::Outdent
 
@@ -1602,7 +1602,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_OUTDENT komut kimliği](https://msdn.microsoft.com/library/aa770015.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_OUTDENT komut kimliği](/previous-versions/aa770015\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="paragraph"></a>  CHtmlEditCtrlBase::Paragraph
 
@@ -1623,7 +1623,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_PARAGRAPH komut kimliği](https://msdn.microsoft.com/library/aa769983.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_PARAGRAPH komut kimliği](/previous-versions/aa769983\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="paste"></a>  CHtmlEditCtrlBase::Paste
 
@@ -1639,7 +1639,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_PASTE komut kimliği](https://msdn.microsoft.com/library/aa770017.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_PASTE komut kimliği](/previous-versions/aa770017\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="printdocument"></a>  CHtmlEditCtrlBase::PrintDocument
 
@@ -1665,7 +1665,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_PRINT komut kimliği](https://msdn.microsoft.com/library/aa769937.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_PRINT komut kimliği](/previous-versions/aa769937\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="printpreview"></a>  CHtmlEditCtrlBase::PrintPreview
 
@@ -1687,7 +1687,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_PRINTPREVIEW komut kimliği](https://msdn.microsoft.com/library/aa769938.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_PRINTPREVIEW komut kimliği](/previous-versions/aa769938\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="querystatus"></a>  CHtmlEditCtrlBase::QueryStatus
 
@@ -1725,7 +1725,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_RADIOBUTTON komut kimliği](https://msdn.microsoft.com/library/aa769977.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_RADIOBUTTON komut kimliği](/previous-versions/aa769977\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="refreshdocument"></a>  CHtmlEditCtrlBase::RefreshDocument
 
@@ -1741,7 +1741,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_REFRESH komut kimliği](https://msdn.microsoft.com/library/aa770020.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_REFRESH komut kimliği](/previous-versions/aa770020\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="removeformat"></a>  CHtmlEditCtrlBase::RemoveFormat
 
@@ -1757,7 +1757,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_REMOVEFORMAT komut kimliği](https://msdn.microsoft.com/library/aa770021.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_REMOVEFORMAT komut kimliği](/previous-versions/aa770021\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="saveas"></a>  CHtmlEditCtrlBase::SaveAs
 
@@ -1778,7 +1778,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_SAVEAS komut kimliği](https://msdn.microsoft.com/library/aa770024.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_SAVEAS komut kimliği](/previous-versions/aa770024\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="selectall"></a>  CHtmlEditCtrlBase::SelectAll
 
@@ -1794,7 +1794,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_SELECTALL komut kimliği](https://msdn.microsoft.com/library/aa770025.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_SELECTALL komut kimliği](/previous-versions/aa770025\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="set2dposition"></a>  CHtmlEditCtrlBase::Set2DPosition
 
@@ -1815,7 +1815,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_2D_POSITION komut kimliği](https://msdn.microsoft.com/library/aa769887.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_2D_POSITION komut kimliği](/previous-versions/aa769887\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setabsoluteposition"></a>  CHtmlEditCtrlBase::SetAbsolutePosition
 
@@ -1836,7 +1836,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_ABSOLUTE_POSITION komut kimliği](https://msdn.microsoft.com/library/aa769889.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_ABSOLUTE_POSITION komut kimliği](/previous-versions/aa769889\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setatomicselection"></a>  CHtmlEditCtrlBase::SetAtomicSelection
 
@@ -1857,7 +1857,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_ATOMICSELECTION komut kimliği](https://msdn.microsoft.com/library/aa769892.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_ATOMICSELECTION komut kimliği](/previous-versions/aa769892\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setautourldetectmode"></a>  CHtmlEditCtrlBase::SetAutoURLDetectMode
 
@@ -1878,7 +1878,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_AUTOURLDETECT_MODE komut kimliği](https://msdn.microsoft.com/library/aa769893.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_AUTOURLDETECT_MODE komut kimliği](/previous-versions/aa769893\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setbackcolor"></a>  CHtmlEditCtrlBase::SetBackColor
 
@@ -1892,10 +1892,10 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ### <a name="parameters"></a>Parametreler
 
 *nColor*<br/>
-Rengi. Bkz: *pvaIn* içinde [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx).
+Rengi. Bkz: *pvaIn* içinde [IDM_BACKCOLOR komut kimliği](/previous-versions/aa769858\(v=vs.85\)).
 
 *szColor*<br/>
-Rengi. Bkz: *pvaIn* içinde [IDM_BACKCOLOR komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx).
+Rengi. Bkz: *pvaIn* içinde [IDM_BACKCOLOR komut kimliği](/previous-versions/aa769858\(v=vs.85\)).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1903,7 +1903,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BACKCOLOR_ komut kimliği](https://msdn.microsoft.com/library/aa769858.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BACKCOLOR_ komut kimliği](/previous-versions/aa769858\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setblockformat"></a>  CHtmlEditCtrlBase::SetBlockFormat
 
@@ -1924,7 +1924,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BLOCKFMT_command kimliği](https://msdn.microsoft.com/library/aa769883.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BLOCKFMT_command kimliği](/previous-versions/aa769883\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setbookmark"></a>  CHtmlEditCtrlBase::SetBookMark
 
@@ -1945,7 +1945,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_BOOKMARK komut kimliği](https://msdn.microsoft.com/library/aa769873.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_BOOKMARK komut kimliği](/previous-versions/aa769873\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setcsseditinglevel"></a>  CHtmlEditCtrlBase::SetCSSEditingLevel
 
@@ -1966,7 +1966,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_CSSEDITING_LEVEL komut kimliği](https://msdn.microsoft.com/library/aa769903.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_CSSEDITING_LEVEL komut kimliği](/previous-versions/aa769903\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setdefaultcomposesettings"></a>  CHtmlEditCtrlBase::SetDefaultComposeSettings
 
@@ -2012,7 +2012,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_COMPOSESETTINGS komut kimliği](https://msdn.microsoft.com/library/aa769901.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_COMPOSESETTINGS komut kimliği](/previous-versions/aa769901\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setdesignmode"></a>  CHtmlEditCtrlBase::SetDesignMode
 
@@ -2050,7 +2050,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM_DISABLE_EDITFOCUS_UI komut kimliği](https://msdn.microsoft.com/library/aa769905.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM_DISABLE_EDITFOCUS_UI komut kimliği](/previous-versions/aa769905\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setdocumenthtml"></a>  CHtmlEditCtrlBase::SetDocumentHTML
 
@@ -2088,7 +2088,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM FONTNAME komut kimliği](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM FONTNAME komut kimliği](/previous-versions/aa769880\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setfontsize"></a>  CHtmlEditCtrlBase::SetFontSize
 
@@ -2109,7 +2109,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM FONTSIZE komut kimliği](https://msdn.microsoft.com/library/aa769881.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM FONTSIZE komut kimliği](/previous-versions/aa769881\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setforecolor"></a>  CHtmlEditCtrlBase::SetForeColor
 
@@ -2134,7 +2134,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM FORECOLOR komut kimliği](https://msdn.microsoft.com/library/aa769882.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM FORECOLOR komut kimliği](/previous-versions/aa769882\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setie5pastemode"></a>  CHtmlEditCtrlBase::SetIE5PasteMode
 
@@ -2155,7 +2155,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM IE50_PASTE_MODE komut kimliği](https://msdn.microsoft.com/library/aa769923.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM IE50_PASTE_MODE komut kimliği](/previous-versions/aa769923\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setliveresize"></a>  CHtmlEditCtrlBase::SetLiveResize
 
@@ -2176,7 +2176,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM LIVERESIZE komut kimliği](https://msdn.microsoft.com/library/aa769928.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM LIVERESIZE komut kimliği](/previous-versions/aa769928\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setmultiselect"></a>  CHtmlEditCtrlBase::SetMultiSelect
 
@@ -2197,7 +2197,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM MULTIPLESELECTION komut kimliği](https://msdn.microsoft.com/library/aa769929.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM MULTIPLESELECTION komut kimliği](/previous-versions/aa769929\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setoverridecursor"></a>  CHtmlEditCtrlBase::SetOverrideCursor
 
@@ -2218,7 +2218,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM OVERRIDE_CURSOR komut kimliği](https://msdn.microsoft.com/library/aa769932.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM OVERRIDE_CURSOR komut kimliği](/previous-versions/aa769932\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setoverwritemode"></a>  CHtmlEditCtrlBase::SetOverwriteMode
 
@@ -2239,7 +2239,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM üzerine komut kimliği](https://msdn.microsoft.com/library/aa770016.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM üzerine komut kimliği](/previous-versions/aa770016\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setrespectvisindesign"></a>  CHtmlEditCtrlBase::SetRespectVisInDesign
 
@@ -2260,7 +2260,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM RESPECTVISIBILITY_INDESIGN komut kimliği](https://msdn.microsoft.com/library/aa770023.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM RESPECTVISIBILITY_INDESIGN komut kimliği](/previous-versions/aa770023\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags
 
@@ -2281,7 +2281,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWALIGNEDSITETAGS komut kimliği](https://msdn.microsoft.com/library/aa769947.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWALIGNEDSITETAGS komut kimliği](/previous-versions/aa769947\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowalltags"></a>  CHtmlEditCtrlBase::SetShowAllTags
 
@@ -2302,7 +2302,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWALLTAGS komut kimliği](https://msdn.microsoft.com/library/aa769948.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWALLTAGS komut kimliği](/previous-versions/aa769948\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowareatags"></a>  CHtmlEditCtrlBase::SetShowAreaTags
 
@@ -2323,7 +2323,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWAREATAGS komut kimliği](https://msdn.microsoft.com/library/aa769949.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWAREATAGS komut kimliği](/previous-versions/aa769949\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowbrtags"></a>  CHtmlEditCtrlBase::SetShowBRTags
 
@@ -2344,7 +2344,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWWBRTAGS komut kimliği](https://msdn.microsoft.com/library/aa769956.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWWBRTAGS komut kimliği](/previous-versions/aa769956\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowcommenttags"></a>  CHtmlEditCtrlBase::SetShowCommentTags
 
@@ -2365,7 +2365,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWCOMMENTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769950.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWCOMMENTTAGS komut kimliği](/previous-versions/aa769950\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowmisctags"></a>  CHtmlEditCtrlBase::SetShowMiscTags
 
@@ -2386,7 +2386,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWMISCTAGS komut kimliği](https://msdn.microsoft.com/library/aa769952.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWMISCTAGS komut kimliği](/previous-versions/aa769952\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowscripttags"></a>  CHtmlEditCtrlBase::SetShowScriptTags
 
@@ -2407,7 +2407,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWSCRIPTTAGS komut kimliği](https://msdn.microsoft.com/library/aa769953.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWSCRIPTTAGS komut kimliği](/previous-versions/aa769953\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowstyletags"></a>  CHtmlEditCtrlBase::SetShowStyleTags
 
@@ -2428,7 +2428,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWSTYLETAGS komut kimliği](https://msdn.microsoft.com/library/aa769954.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWSTYLETAGS komut kimliği](/previous-versions/aa769954\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="setshowunknowntags"></a>  CHtmlEditCtrlBase::SetShowUnknownTags
 
@@ -2449,7 +2449,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM SHOWUNKNOWNTAGS komut kimliği](https://msdn.microsoft.com/library/aa769955.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM SHOWUNKNOWNTAGS komut kimliği](/previous-versions/aa769955\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="textarea"></a>  CHtmlEditCtrlBase::TextArea
 
@@ -2470,7 +2470,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM TEXTAREA komut kimliği](https://msdn.microsoft.com/library/aa769986.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM TEXTAREA komut kimliği](/previous-versions/aa769986\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="textbox"></a>  CHtmlEditCtrlBase::TextBox
 
@@ -2491,7 +2491,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM metin kutusu komut kimliği](https://msdn.microsoft.com/library/aa769980.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM metin kutusu komut kimliği](/previous-versions/aa769980\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="unbookmark"></a>  CHtmlEditCtrlBase::UnBookmark
 
@@ -2507,7 +2507,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM UNBOOKMARK komut kimliği](https://msdn.microsoft.com/library/aa770034.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM UNBOOKMARK komut kimliği](/previous-versions/aa770034\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="underline"></a>  CHtmlEditCtrlBase::Underline
 
@@ -2523,7 +2523,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM UNDERLINE komut kimliği](https://msdn.microsoft.com/library/aa770035.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM UNDERLINE komut kimliği](/previous-versions/aa770035\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="unlink"></a>  CHtmlEditCtrlBase::Unlink
 
@@ -2539,7 +2539,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM Kes komut kimliği](https://msdn.microsoft.com/library/aa770037.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM Kes komut kimliği](/previous-versions/aa770037\(v=vs.85\)) WebBrowser denetimi.
 
 ##  <a name="unorderlist"></a>  CHtmlEditCtrlBase::UnorderList
 
@@ -2560,7 +2560,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [IDM UNORDERLIST komut kimliği](https://msdn.microsoft.com/library/aa769987.aspx) WebBrowser denetimi.
+Bu yöntem gönderir [IDM UNORDERLIST komut kimliği](/previous-versions/aa769987\(v=vs.85\)) WebBrowser denetimi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

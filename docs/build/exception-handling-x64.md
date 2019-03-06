@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ exception handling, x64
 - exception handling, x64
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
-ms.openlocfilehash: 33206dfb885239839c3a64436b6b540fc7d4e6e5
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 7dab7f3b6593bf4eaed1b8c804deb915677ccf5b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627546"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422981"
 ---
 # <a name="x64-exception-handling"></a>x64 özel durum işleme
 
@@ -182,7 +182,7 @@ Geriye doğru izlemeyi işlem kodu şu değerlerden biri:
 
   |||
   |-|-|
-  |RSP + 32|SS|
+  |RSP+32|SS|
   |RSP + 24|Eski RSP|
   |RSP + 16|EFLAGS|
   |RSP + 8|CS|
@@ -193,7 +193,7 @@ Geriye doğru izlemeyi işlem kodu şu değerlerden biri:
   |||
   |-|-|
   |RSP + 40|SS|
-  |RSP + 32|Eski RSP|
+  |RSP+32|Eski RSP|
   |RSP + 24|EFLAGS|
   |RSP + 16|CS|
   |RSP + 8|KOPYALAMA|
@@ -223,7 +223,7 @@ Geriye doğru izlemeyi işlem kodu şu değerlerden biri:
 
 |||
 |-|-|
-|0|RAX'DAKİ|
+|0|RAX|
 |1.|RCX|
 |2|RDX|
 |3|RBX|
@@ -334,7 +334,7 @@ Uygun derleme yordamları yazmak için bir dizi gerçek derleme yönergeleri ile
 |. SETFRAME *kaydetme*, *uzaklığı*|Çerçeve doldurur, alan ve uzaklık uzaklığı ve belirtilen kaydı kullanarak geriye doğru izleme bilgileri kaydedin. Uzaklık 16 olmalıdır ve 240 küçüktür veya eşittir. Bu yönerge ayrıca UWOP_SET_FPREG bırakma kod girdisi geçerli başlangıç uzaklığını kullanarak belirtilen kayıt oluşturur.|
 |. ALLOCSTACK *boyutu*|UWOP_ALLOC_SMALL veya geçerli uzaklık için belirtilen boyut UWOP_ALLOC_LARGE oluşturur.<br /><br /> *Boyutu* işlenen 8'in katı olmalıdır.|
 |. SAVEREG *kaydetme*, *uzaklığı*|UWOP_SAVE_NONVOL ya da belirtilen ve geçerli prolog sapmasını kullanarak UWOP_SAVE_NONVOL_FAR geriye doğru izleme kod girişini oluşturur. En verimli kodlama MASM seçer.<br /><br /> *uzaklık* pozitif ve 8'in katı olmalıdır. *uzaklık* genellikle RSP içinde olan, yordam çerçevesinin tabanıdır göre veya bir çerçeve işaretçisi ölçeklendirilmemiş çerçeve işaretçisini kullanıyorsanız.|
-|. SAVEXMM128 *kaydetme*, *uzaklığı*|UWOP_SAVE_XMM128 ya da belirtilen XMM kaydı ve geçerli prolog sapmasını kullanarak UWOP_SAVE_XMM128_FAR geriye doğru izleme kod girişini oluşturur. En verimli kodlama MASM seçer.<br /><br /> *uzaklık* pozitif ve 16 katı olmalıdır.  *uzaklık* genellikle RSP içinde olan, yordam çerçevesinin tabanıdır göre veya bir çerçeve işaretçisi ölçeklendirilmemiş çerçeve işaretçisini kullanıyorsanız.|
+|.SAVEXMM128 *register*, *offset*|UWOP_SAVE_XMM128 ya da belirtilen XMM kaydı ve geçerli prolog sapmasını kullanarak UWOP_SAVE_XMM128_FAR geriye doğru izleme kod girişini oluşturur. En verimli kodlama MASM seçer.<br /><br /> *uzaklık* pozitif ve 16 katı olmalıdır.  *uzaklık* genellikle RSP içinde olan, yordam çerçevesinin tabanıdır göre veya bir çerçeve işaretçisi ölçeklendirilmemiş çerçeve işaretçisini kullanıyorsanız.|
 |. PUSHFRAME \[ *kod*]|UWOP_PUSH_MACHFRAME geriye doğru izleme kodu girişi oluşturur. İsteğe bağlı *kod* belirtilirse, geriye doğru izleme kodu giriş 1 değiştiricisi verilmiştir. Aksi takdirde değiştirici 0'dır.|
 |.ENDPROLOG|Giriş bildirimlerinin sonuna işaret eder.  İşlevin ilk 255 bayt cinsinden olmalıdır.|
 
@@ -502,6 +502,6 @@ typedef struct _RUNTIME_FUNCTION {
     ((PVOID)((PULONG)GetLanguageSpecificData(info) + 1)
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [x64 yazılım kuralları](../build/x64-software-conventions.md)

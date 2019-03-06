@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: 00f2b57bdf63f9f8bcfd9e544bebab2805ff7f65
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 8267d42e67ddf703b4a3a681509b92978e7de8bb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850097"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422795"
 ---
 # <a name="platformobject-class"></a>Platform::Object sınıfı
 
@@ -116,7 +116,7 @@ A [Platform::Type](../cppcx/platform-type-class.md) nesnenin çalışma zamanı 
 
 Statik [Type::GetTypeCode](../cppcx/platform-type-class.md#gettypecode) almak için kullanılan bir [Platform::TypeCode numaralandırması](../cppcx/platform-typecode-enumeration.md) geçerli türü gösteren bir değer. Bu genellikle yerleşik türler için yararlı olur. Yanı sıra herhangi bir başvuru sınıfı türü kodunu [Platform::String](../cppcx/platform-string-class.md) (1) bir nesnedir.
 
-[Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) sınıfı Windows API tür bilgileri Windows bileşenleri ve uygulamalar arasında geçirme dil bağımsız bir yol olarak kullanılır. T[Platform::Type sınıfı](../cppcx/platform-type-class.md) arasında dönüştürme işleçleri olan `Type` ve `TypeName`.
+[Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) sınıfı Windows API tür bilgileri Windows bileşenleri ve uygulamalar arasında geçirme dil bağımsız bir yol olarak kullanılır. T[Platform::Type sınıfı](../cppcx/platform-type-class.md) arasında dönüştürme işleçleri olan `Type` ve `TypeName`.
 
 Kullanım [TypeID](../windows/typeid-cpp-component-extensions.md) döndürülecek işleci bir `Platform::Type` nesne için XAML sayfalar arasında gezinirken örneğin bir sınıf adı:
 

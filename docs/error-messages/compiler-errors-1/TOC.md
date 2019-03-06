@@ -232,6 +232,7 @@
 ## [Derleyici Hatası C2128](compiler-error-c2128.md)
 ## [Derleyici Hatası C2129](compiler-error-c2129.md)
 ## [Derleyici Hatası C2130](compiler-error-c2130.md)
+## [Derleyici Hatası C2131](compiler-error-c2131.md)
 ## [Derleyici Hatası C2132](compiler-error-c2132.md)
 ## [Derleyici Hatası C2133](compiler-error-c2133.md)
 ## [Derleyici Hatası C2134](compiler-error-c2134.md)

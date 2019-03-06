@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: bf8ced746b70f64b83733152d845aa0291f07310
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a68f3570f0e8c3315e8b0716cddcd37563894e76
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302522"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422500"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
@@ -158,7 +158,7 @@ virtual BOOL Create(
 Tarih Saat Denetim stilleri bileşimini belirtir. Bkz: [tarih ve Saat Seçici denetim stilleri](/windows/desktop/Controls/date-and-time-picker-control-styles) tarih ve Saat Seçici stilleri hakkında daha fazla bilgi için Windows SDK.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) tarih ve Saat Seçici denetiminin boyutunu ve konumunu olan yapısı.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) tarih ve Saat Seçici denetiminin boyutunu ve konumunu olan yapısı.
 
 *pParentWnd*<br/>
 Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) tarih ve Saat Seçici denetiminin üst penceresine olan nesne. NULL olmamalıdır.

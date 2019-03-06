@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 14440e625ffdb28b4b8daf6a78563ba839834213
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c86d99b365994870b991967b6cab6e6ee5c5088
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647765"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422994"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
 
@@ -43,6 +43,6 @@ Ayrıca, yanlış BITS grAttrs alanında ayarlarsanız, özel durum ERROR_INVALI
 
 Bkz: [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md) daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)

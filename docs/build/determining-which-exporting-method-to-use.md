@@ -1,5 +1,5 @@
 ---
-title: Hangi Dışarı Aktarma Metodunu Kullanacağınızı Belirleme
+title: Hangi Dışarı Aktarma Yöntemini Kullanacağınızı Belirleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __declspec(dllexport) keyword [C++]
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
-ms.openlocfilehash: 75cd03e2ebb8dab4069024469b2b8b5c45665704
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 38006acfae90c3b216677684e9776f3ed5d7c1b1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615143"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422775"
 ---
-# <a name="determining-which-exporting-method-to-use"></a>Hangi Dışarı Aktarma Metodunu Kullanacağınızı Belirleme
+# <a name="determining-which-exporting-method-to-use"></a>Hangi Dışarı Aktarma Yöntemini Kullanacağınızı Belirleme
 
 İki yöntemden biriyle işlevleri dışa aktarabilirsiniz — bir .def dosyası veya `__declspec(dllexport)` anahtar sözcüğü. Hangi DLL dosyanız için daha iyi bir yoludur karar vermenize yardımcı olmak için aşağıdaki soruları göz önünde bulundurun:
 
@@ -60,6 +60,6 @@ Kullanarak `__declspec(dllexport)` koruma .def dosyası ve düzenlenmiş adlar d
 
 - [Düzenlenmiş adlar](../build/reference/decorated-names.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
