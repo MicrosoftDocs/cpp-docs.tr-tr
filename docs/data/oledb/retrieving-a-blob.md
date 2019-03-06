@@ -6,16 +6,16 @@ helpviewer_keywords:
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-ms.openlocfilehash: 30551af0e74759d21cecae54714ca6eca1a37768
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 42b7b95f2da4313bdfcb1d9d8a064ca5be563e40
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556549"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423254"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
 
-Çeşitli şekillerde ikili büyük nesne (BLOB) alabilir. Kullanabileceğiniz `DBTYPE_BYTES` bayt dizisi olarak BLOB alınamıyor veya bir arabirim `ISequentialStream`. Daha fazla bilgi için [BLOB'ları ve OLE nesneleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms711511(v=vs.85)) içinde **OLE DB Programcının Başvurusu**.
+Çeşitli şekillerde ikili büyük nesne (BLOB) alabilir. Kullanabileceğiniz `DBTYPE_BYTES` bayt dizisi olarak BLOB alınamıyor veya bir arabirim `ISequentialStream`. Daha fazla bilgi için [BLOB'ları ve OLE nesneleri](/previous-versions/windows/desktop/ms711511(v=vs.85)) içinde **OLE DB Programcının Başvurusu**.
 
 Aşağıdaki kodu kullanarak bir BLOB alma işlemi gösterilmektedir `ISequentialStream`. Makro [BLOB_ENTRY](../../data/oledb/blob-entry.md) arabirimi ve arabirim için kullanılan bayraklar belirtmenizi sağlar. Tablo açtıktan sonra kodu çağıran `Read` üzerinde sürekli `ISequentialStream` BLOBUNDAN bayt okunamadı. Kod çağrıları `Release` çağırmadan önce arabirim işaretçisi elden çıkarmak `MoveNext` sonraki kayda alınamıyor.
 
