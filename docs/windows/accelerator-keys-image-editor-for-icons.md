@@ -8,19 +8,19 @@ helpviewer_keywords:
 - accelerator keys
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
-ms.openlocfilehash: 604f97edc8e4e49bad477d76e0e46334b8cf726b
-ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
+ms.openlocfilehash: 0b29f435ab91b10e010e956d26fb8d2d116edc6e
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336546"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563127"
 ---
 # <a name="accelerator-keys-c-image-editor-for-icons"></a>Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++)
 
-Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları için hızlandırma tuşları aşağıdadır. Hızlandırıcı tuşları değiştirmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünde ve ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları için hızlandırma tuşları aşağıdadır. Hızlandırıcı tuşları değiştirmek için menüsüne gidin **Araçları** > **seçenekleri** ve **klavye** altında **ortam** klasör. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
 
 > [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için menüsüne gidin **Araçları** > **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 |Komut|anahtarları|Açıklama|
 |-------------|----------|-----------------|
@@ -68,4 +68,8 @@ Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Görüntü Kopyalama](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Çizim Aracı Kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>

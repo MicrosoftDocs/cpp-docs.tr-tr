@@ -14,48 +14,37 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: c757c82978a5107374e6de2f8cff24319ed64f9c
-ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
+ms.openlocfilehash: 51ff52aefb5586b4e301831dbdebeb783ec3c4c5
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336481"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563217"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Oluştur iletişim kutusu (C++)
 
 Boyutu ve bir C++ iletişim kutusunda, konumu ve denetimleri içindeki boyutunu ve konumunu iletişim birimleriyle ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerleri tek tek denetimler ve iletişim kutusu görünür.
 
-Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınızı derlemeden çalışma zamanı davranışını sınama. Bu modda şunları yapabilirsiniz:
+> [!NOTE]
+> Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
-- Bir metin yazın, birleşik giriş kutusu listelerinden seçin, seçeneklerini açıp kapatabilir ve komutları seçin.
+## <a name="how-to"></a>Nasıl Yapılır
 
-- Sekme sırasını test edin.
+**İletişim kutusu Düzenleyicisi** sağlar:
 
-- Radyo düğmeleri ve onay kutuları gibi gruplandırmalarını test edin.
+### <a name="to-create-a-new-dialog-box"></a>Yeni iletişim kutusu oluşturmak için
 
-- İletişim kutusundaki denetimlerin klavye kısayollarını test.
-
-   > [!NOTE]
-   > Sihirbazları kullanarak yapılan iletişim kutusu kodu bağlantıları benzetime dahil edilmez.
-
-Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresiyle ilişkili bir konumda görüntüler. İletişim kutusunun ayarladıysanız **mutlak hizalama** özelliğini **True**, ekranın sol üst köşesine göre olan konumda iletişim kutusunu görüntüler.
-
-## <a name="to-create-a-new-dialog-box"></a>Yeni iletişim kutusu oluşturmak için
-
-1. İçinde [kaynak görünümü](../windows/resource-view-window.md), .rc dosyasına sağ tıklayın ve ardından seçin **kaynak Ekle** kısayol menüsünden.
-
-   > [!NOTE]
-   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+1. İçinde [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources), sağ tıklayın, *.rc* seçin ve dosya **kaynak Ekle**.
 
 1. İçinde **kaynak Ekle** iletişim kutusunda **iletişim** içinde **kaynak türü** listeleyin ve ardından **yeni**.
 
    Bir artı işareti (**+**) yanında görünen **iletişim** kaynak türü geldiğini iletişim kutusu şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
 
-   Yeni iletişim kutusu açılır **iletişim** Düzenleyici.
+   Yeni iletişim kutusu açılır **iletişim kutusu Düzenleyicisi**.
 
-   Ayrıca [mevcut iletişim kutuları iletişim kutusu düzenleyicisinde düzenlemek üzere açın](../windows/viewing-and-editing-resources-in-a-resource-editor.md).
+Düzenleme için iletişim kutusu Düzenleyicisi'nde mevcut iletişim kutuları da açabilirsiniz.
 
-## <a name="to-create-a-dialog-box-that-a-user-cant-exit"></a>Bir kullanıcı çıkamayacağı iletişim kutusu oluşturmak için
+### <a name="to-create-a-dialog-box-that-a-user-cant-exit"></a>Bir kullanıcı çıkamayacağı iletişim kutusu oluşturmak için
 
 Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluşturabilirsiniz. Bu tür bir iletişim kutusu, oturum açma ve uygulama veya belge kilit için kullanışlıdır.
 
@@ -67,18 +56,45 @@ Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluştu
 
    Çalışma zamanında, bir kullanıcı bu özelliklere sahip bir modal iletişim kutusu çıkamayacağı.
 
-İletişim kutusunun bu tür bir testi etkinleştirmek için test iletişim kutusu işlevi zaman algılar **Esc** basıldığında. (**Esc** de VK_ESCAPE sanal anahtar denir.) Nasıl iletişim kutusunda çalışma zamanında davranacak şekilde tasarlanmış ne olursa olsun, test modu tuşlarına basarak sona erdirebilirsiniz **Esc**.
+İletişim kutusunun bu tür bir testi etkinleştirmek için test iletişim kutusu işlevi zaman algılar **Esc** basıldığında. **ESC** de VK_ESCAPE sanal anahtar denir. Nasıl iletişim kutusunda çalışma zamanında davranacak şekilde tasarlanmış ne olursa olsun, test modu tuşlarına basarak sona erdirebilirsiniz **Esc**.
 
 > [!NOTE]
 > MFC uygulamaları için kullanıcıların çıkamayacağı, bir iletişim kutusu oluşturmak için varsayılan davranışı geçersiz kılmanız gerekir `OnOK` ve `OnCancel` ilişkili düğmeleri silseniz bile iletişim kutusunun hala tuşlarına basarak kapatılabilir çünkü  **Girin** veya **Esc**.
 
-## <a name="to-specify-the-location-and-size-of-a-dialog-box"></a>İletişim kutusunun boyutunu ve konumunu belirtmek için
+### <a name="to-specify-the-location-and-size-of-a-dialog-box"></a>İletişim kutusunun boyutunu ve konumunu belirtmek için
 
-İçinde ayarlayabilirsiniz üç özellik [Özellikler penceresi](/visualstudio/ide/reference/properties-window) bir iletişim kutusu ekran görüneceği yeri belirtmek için. **Merkezi** özelliğidir; Boole değeri ayarlamanız **True**, iletişim kutusunda her zaman ekranın ortasında görünür. Ayarlarsanız **False**, ardından ayarlayabilirsiniz **XPos** ve **YPos** ekranda olduğunda iletişim kutusu görünür açıkça tanımlamak için özellikleri. Sol üst köşesinde olarak tanımlanan görüntüleme alanının sapma değerlerini konumu özelliklerdir `{X=0, Y=0}`. Konumu de bağlıdır **mutlak hizalama** özelliği: varsa **True**, ekrana göreli; koordinatları, **False**, iletişim göreli koordinatları Sahibin penceresi.
+İçinde ayarlanan özellikler vardır [Özellikler penceresi](/visualstudio/ide/reference/properties-window) bir iletişim kutusu ekran görüneceği yeri belirtmek için.
 
-## <a name="to-test-a-dialog-box"></a>Bir iletişim kutusu test etmek için
+- Boolean **Merkezi** özelliği.
 
-1. Zaman **iletişim** Düzenleyicisi etkin pencere menü çubuğunda, seçin **biçimi** > **Test iletişim**.
+   Değeri ayarlamanız **True**, iletişim kutusunda her zaman ekranın ortasında görünür. Bu özelliği ayarlamak, **False**, ardından ayarlayabilirsiniz **XPos** ve **YPos** özellikleri.
+
+- **XPos** ve **YPos** ekran burada açıkça tanımlamak için kullanılan özellikleri iletişim kutusu görüntülenir.
+
+   Bu konumu sol üst köşesinde olarak tanımlanan görüntüleme alanının sapma değerlerini özelliklerdir `{X=0, Y=0}`.
+
+- **Mutlak hizalama** konumunu etkileyen özelliği.
+
+   Varsa **True**, ekrana göreli koordinatları. Varsa **False**, iletişim sahibinin penceresiyle ilişkili koordinatlar belirlenir.
+
+### <a name="to-test-a-dialog-box"></a>Bir iletişim kutusu test etmek için
+
+Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınızı derlemeden çalışma zamanı davranışını sınama. Bu modda şunları yapabilirsiniz:
+
+- Bir metin yazın, birleşik giriş kutusu listelerinden seçin, seçeneklerini açıp kapatabilir ve komutları seçin.
+
+- Sekme sırasını test edin.
+
+- Radyo düğmeleri ve onay kutuları gibi gruplandırmalarını test edin.
+
+- İletişim kutusundaki denetimlerin klavye kısayollarını test.
+
+> [!NOTE]
+> Sihirbazları kullanarak yapılan iletişim kutusu kodu bağlantıları benzetime dahil edilmez.
+
+Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresiyle ilişkili bir konumda görüntüler. İletişim kutusu ayarladıysanız **mutlak hizalama** özelliğini **True**, ekranın sol üst köşesine göre olan konumda iletişim kutusunu görüntüler.
+
+1. Zaman **iletişim kutusu Düzenleyicisi** menüsüne gidin etkin pencere **biçimi** > **Test iletişim**.
 
 1. Benzetimi bitirmek için basın **Esc** veya **Kapat** test iletişim kutusu düğmesi.
 
@@ -86,9 +102,7 @@ Bir kullanıcı çıkamayacağı bir çalışma zamanı iletişim kutusu oluştu
 
 Win32
 
-## <a name="see-also"></a>Ayrıca bkz.
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)<br/>
-[Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
+[Nasıl yapılır: İletişim kutusu denetimleri yönetme](../windows/controls-in-dialog-boxes.md)<br/>

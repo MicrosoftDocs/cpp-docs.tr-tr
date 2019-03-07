@@ -2,12 +2,12 @@
 title: /arch (x86)
 ms.date: 11/04/2016
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
-ms.openlocfilehash: fb115d564ca24ff29e120e0d8c25e0dbe28024cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2aba6dc18db621710b5293f9f970fa5f453b8a9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549714"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421813"
 ---
 # <a name="arch-x86"></a>/arch (x86)
 
@@ -78,7 +78,7 @@ r = t + d;     // This should produce the same overall result
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [/arch (En Düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>

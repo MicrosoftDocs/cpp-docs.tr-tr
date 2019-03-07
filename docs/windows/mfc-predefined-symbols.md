@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 329d56f4a8e0e9992cb78987c559f74c7349f681
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: c60c75275ca565b332c33848d27c134deb90a5c6
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954958"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563218"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 
@@ -236,7 +236,7 @@ Veritabanı destek eklendiğinde bu tablodaki semboller yalnızca bir MFC projes
 
 Bu sembolleri de MFC destek dosyaları'nın bir parçasıdır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler menülerle kullanılır.
 
-Çalışırken menülerde ile **Menü Düzenleyici**, bu simgeler görünür **özellik penceresi** ortak menü komutları ile ilişkili. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+Çalışırken menülerde ile **Menü Düzenleyici**, bu simgeler görünür **özelliği** ortak menü komutları ile ilişkili penceresi. Örneği için uygulamanızın varsa bir **dosya** menüsüyle bir **çıkış** komutu komut ıd_app_exıt sembolü ile ilişkilendirilecek içinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 
 ||||
 |-|-|-|

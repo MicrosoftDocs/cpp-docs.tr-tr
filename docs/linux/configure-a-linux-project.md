@@ -1,17 +1,17 @@
 ---
 title: Visual Studio'da C++ Linux projesi yapılandırma
-ms.date: 09/18/2018
+ms.date: 11/12/2018
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: fd87b3d60e6625fb86ad1b494fd878b9b5ca031b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0323ae57de1e03811b12fec7fea79b6bab954e44
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622501"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563348"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
-Bu konuda, Visual Studio'da C++ Linux projesi yapılandırma açıklar. Visual Studio'da CMake Linux projeleri hakkında daha fazla bilgi için bkz: [Linux CMake projesi yapılandırma ](cmake-linux-project.md).
+Bu konuda, Visual Studio'da Linux proje şablonu temel alan bir C++ Linux projesi yapılandırma açıklar. Visual Studio'da CMake Linux projeleri hakkında daha fazla bilgi için bkz: [Linux CMake projesi yapılandırma ](cmake-linux-project.md).
 
 ## <a name="general-settings"></a>Genel ayarlar
 
@@ -85,12 +85,12 @@ apt install zip
 
 Üst bilgi önbelleği yönetmek için gidin **Araçlar > Seçenekler, Çoklu Platform > Bağlantı Yöneticisi > Uzak üst bilgiler IntelliSense Yöneticisi**. Linux makinenizde değişiklikleri yaptıktan sonra üst bilgi önbelleği güncelleştirmek için Uzak bağlantıyı seçin ve ardından **güncelleştirme**. Seçin **Sil** bağlantı silmeden üstbilgileri kaldırmak için. Seçin **Araştır** yerel dizinde açmak için **dosya Gezgini**. Bu klasör, salt okunur olarak kabul eder. 15.3 sürümü önce oluşturulmuş mevcut bir bağlantı için üst bilgileri indirmek için Bağlan'ı seçin ve ardından **indirme**.
 
-![Uzak üst bilgi IntelliSense](media/remote-header-intellisense.png)
+![Remote Header IntelliSense](media/remote-header-intellisense.png)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)<br/>
-[C++ genel özellikleri (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
-[VC ++ dizinleri (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
-[Kopyalama kaynakları proje özellikleri (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
-[Derleme olay özellikleri (Linux C++)](../linux/prop-pages/build-events-linux.md)
+[C++ genel özellikleri (Linux C++)](prop-pages/general-linux.md)<br/>
+[VC ++ dizinleri (Linux C++)](prop-pages/directories-linux.md)<br/>
+[Kopyalama kaynakları proje özellikleri (Linux C++)](prop-pages/copy-sources-project.md)<br/>
+[Derleme olay özellikleri (Linux C++)](prop-pages/build-events-linux.md)

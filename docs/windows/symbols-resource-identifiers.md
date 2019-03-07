@@ -10,16 +10,16 @@ helpviewer_keywords:
 - symbols [C++], editing
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
-ms.openlocfilehash: c76b870ad1fdfeda7370af03c6396bedba9530ab
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: 63971ba381394bcaf905d614496511b7aa0d01f3
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954867"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563322"
 ---
 # <a name="resource-identifiers-symbols-c"></a>Kaynak Tanımlayıcıları (simge) (C++)
 
-İki bölümden oluşan bir kaynak tanımlayıcısı (ID) bir semboldür: tamsayı değerine (sembol değeri) eşlenmiş bir metin dizesi (sembol adı). Örneğin:
+Bir semboldür iki bölümden oluşan bir kaynak tanımlayıcısı (ID) bir sembol değer (tamsayı), örneğin eşlenmiş bir sembol adını (metin dizesi):
 
 ```
 IDC_EDITNAME = 5100
@@ -29,11 +29,6 @@ Sembol adları, en sık tanımlayıcı olarak da adlandırılır.
 
 Semboller kaynaklara ve kullanıcı arabirimi nesneleri, kaynak kodunuzu hem de kendileriyle kaynak düzenleyicilerde çalışırken başvuran açıklayıcı bir yol sağlar. Görüntüleyebilir ve tek bir yerde kullanarak simgeleri düzenleme [kaynak sembolleri iletişim kutusu](../windows/viewing-resource-symbols.md).
 
-Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda [kaynak düzenleyicileri](../windows/resource-editors.md) Örneğin, kaynak için varsayılan bir ad sağlamanız `IDC_RADIO1`ve bir değer atayın. Name değeri plus tanımı depolanan `Resource.h` dosya.
-
-> [!NOTE]
-> Kaynaklar veya kaynak nesneleri bir .rc dosyasından diğerine Kopyalamakta olduğunuz, Visual C++ aktarılan kaynak sembol değeri veya sembol adını ve sembol adlarını veya var olan dosyayı değerleri ile çakışmalarını önlemek için değeri değiştirilebilir.
-
 Bu nedenle boyut ve karmaşıklık bakımından uygulamanız büyüdükçe, kaynakları ve semboller sayısı yapar. Semboller birkaç dosya dağılmış çok sayıda izlemek zor olabilir. **Kaynak sembolleri** iletişim kutusunda sembol Yönetim için merkezi bir aracı sunarak basitleştirir:
 
 - [Semboller oluşturma](../windows/creating-new-symbols.md)
@@ -41,6 +36,11 @@ Bu nedenle boyut ve karmaşıklık bakımından uygulamanız büyüdükçe, kayn
 - [Semboller yönetme](../windows/changing-a-symbol-or-symbol-name-id.md)
 
 - [Önceden tanımlanmış sembol kimlikleri görüntüleyin](../windows/predefined-symbol-ids.md)
+
+Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda [kaynak düzenleyicileri](../windows/resource-editors.md) Örneğin, kaynak için varsayılan bir ad sağlamanız `IDC_RADIO1`ve bir değer atayın. Name değeri plus tanımı depolanan `Resource.h` dosya.
+
+> [!NOTE]
+> Kaynaklar veya kaynak nesneleri bir .rc dosyasından diğerine Kopyalamakta olduğunuz, Visual C++ aktarılan kaynak sembol değeri veya sembol adını ve sembol adlarını veya var olan dosyayı değerleri ile çakışmalarını önlemek için değeri değiştirilebilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - input files [C++]
 - object/library modules
 ms.assetid: e08fb487-0f2e-4f24-87db-232dbc8bd2e2
-ms.openlocfilehash: 5b885ad5c86bc59029fc6a3a60ccee385703ab2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61f4ee8d02cda5b2cd270d7ef789bf58060e7fdf
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508946"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423176"
 ---
 # <a name="setting-linker-options"></a>Bağlayıcı Seçeneklerini Ayarlama
 
@@ -32,7 +32,7 @@ Geliştirme ortamının dışında bağlantı çalıştırdığınızda, bir vey
 
 Seçenekler, tüm derleme için geçerlidir; belirli bir giriş dosyaları için seçenekleri uygulanabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

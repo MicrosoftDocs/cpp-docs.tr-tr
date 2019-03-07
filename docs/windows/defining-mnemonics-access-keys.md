@@ -1,5 +1,5 @@
 ---
-title: Erişimi denetlemek ve değerleri tanımlama
+title: 'Nasıl yapılır: Erişimi denetlemek ve değerleri (C++) tanımlayın'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.combo
@@ -22,61 +22,42 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 20319cd08d6d1e77faef1275e63bf3ffd354356b
-ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
+ms.openlocfilehash: 32c7b121d8c9309d2286158645ee4b6586f1df3b
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336494"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563374"
 ---
-# <a name="defining-control-access-and-values"></a>Erişimi denetlemek ve değerleri tanımlama
+# <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: Erişimi denetlemek ve değerleri (C++) tanımlayın
 
-## <a name="change-the-tab-order-of-controls"></a>Denetimlerin sekme sırasını değiştirme
+## <a name="tab-order"></a>Sekme sırası
 
 Sekme sırasını sırayı olan **sekmesini** anahtarı bir iletişim kutusu içindeki bir denetimden giriş odağını taşır. Genellikle sekme sırası, soldan sağa ve yukarıdan bir iletişim kutusunda devam eder. Her denetimin bir **sekme durağı** özelliği bir denetimin Girintiyi alıp almayacağını belirler.
 
-### <a name="to-set-input-focus-for-a-control"></a>Bir denetim için giriş odağı ayarlamak için
+- Bir denetim için giriş odağı ayarlamak için [Özellikler penceresi](/visualstudio/ide/reference/properties-window)seçin **True** veya **False** içinde **sekme durağı** özelliği.
 
-İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window)seçin **True** veya **False** içinde **sekme durağı** özelliği.
-
-Yoksa bile denetimleri **sekme durağı** özelliğini **True** sekme sırasını bir parçası olmanız gerekir. Sekme sırası önemlidir, örneğin, size [erişim tuşları (anımsatıcıları) tanımlamak](../windows/defining-mnemonics-access-keys.md) açıklamalı alt yazılar olmayan denetimler için. İlişkili bir denetim için bir erişim anahtarı içeren statik metin ilgili denetimin sekme sırasında hemen önce gelmelidir.
+Yoksa bile denetimleri **sekme durağı** özelliğini **True** özellikle açıklamalı alt yazılar yoksa denetimlerin sekme sırasını bir parçası olmanız gerekir. İlişkili bir denetim için bir erişim anahtarı içeren statik metin ilgili denetimin sekme sırasında hemen önce gelmelidir.
 
 > [!NOTE]
 > Sekme sırasını değiştirme, iletişim kutusu örtüşen denetimler içeriyorsa, denetimleri görüntülenme şeklini değiştirebilir. Daha sonra sekme sırasının gelen denetimler, her zaman sekme sırasının kendilerinden herhangi bir çakışan denetim üzerinde görüntülenir.
 
-### <a name="to-view-the-current-tab-order-for-all-controls-in-a-dialog-box"></a>Geçerli sekme sırasını tüm denetimleri için iletişim kutusunda görüntülemek için
-
-Git **biçimi** menü ve select **sekme sırasını**, veya basın **Ctrl** + **D**.
-
-### <a name="to-change-the-tab-order-for-all-controls-in-a-dialog-box"></a>İletişim kutusundaki tüm denetimlerin sekme sırasını değiştirmek için
-
-1. Üzerinde **biçimi** menüsünde **sekme sırasını**.
+- Tüm denetimler için geçerli sekme sırasını görüntülemek için menüsüne gidin **biçimi** > **sekme sırasını**, veya basın **Ctrl** + **D**.
 
    Her denetimin sol üst köşedeki birkaç onun yerine geçerli sekme sırasının gösterir.
 
-1. İstediğiniz sırayla her denetimi seçerek sekme sırasını ayarlama **sekmesini** izlemek için anahtar.
+- Tüm denetimler için sekmesinde sırasını değiştirmek için menüsüne gidin **biçimi** > **sekme sırasını** ve istediğiniz sırayla her denetimi seçerek sekme sırasını ayarlama **sekmesini** anahtarı izlemek için.
 
-1. Tuşuna **Enter** çıkmak için **sekme sırasını** modu.
-
-   > [!TIP]
-   > Girdiğiniz sonra **sekme sırasını** modu basabilirsiniz **Esc** veya **Enter** sekme sırasını değiştirme özelliği devre dışı bırakmak için.
-
-### <a name="to-change-the-tab-order-for-two-or-more-controls"></a>İki veya daha fazla denetim için sekmesinde sırasını değiştirmek için
-
-1. Gelen **biçimi** menüsünde seçin **sekme sırasını**.
-
-1. Sırayla değişikliğin nerede başlayacağını belirtin. İlk basılı **Ctrl** anahtar ve Denetim seçin ve ardından başlamak için değiştirilen sırasını istediğiniz yeri seçin.
+- İki veya daha fazla denetim için sekmesinde sırasını değiştirmek için menüsüne gidin **biçimi** > **sekme sırasını**. Basılı **Ctrl** nerede sırayla değişiklik başlayabilir ve ardından sürüm denetimini seçin ve anahtar **Ctrl** istediğiniz sırayla denetimleri seçin ve anahtar **sekmesini** için anahtar Bu noktadan itibaren izleyin.
 
    Örneğin, denetimlerin sırasını değiştirmek istiyorsanız `7` aracılığıyla `9`, basılı **Ctrl**, sonra kumanda `6` ilk.
 
-   > [!NOTE]
-   > Belirli bir denetim numarası için ayarlamak için `1` (ilk sekme sırasında), denetimi çift tıklatın.
+- Belirli bir denetim numarası için ayarlamak için `1`, veya önce sekme sırasının denetimi çift tıklatın.
 
-1. Yayın **Ctrl** anahtar ve ardından istediğiniz sırayla denetimleri seçin **sekmesini** o noktadan itibaren izlemek için anahtar.
+> [!TIP]
+> Girdiğiniz sonra **sekme sırasını** modu, tuşuna **Esc** veya **Enter** çıkmak için **sekme sırasını** modu ve sekme sırasını değiştirme özelliği devre dışı bırak.
 
-1. Tuşuna **Enter** çıkmak için **sekme sırasını** modu.
-
-## <a name="define-mnemonics-access-keys"></a>Anımsatıcıları (erişim tuşları) tanımlayın
+## <a name="mnemonics-access-keys"></a>Anımsatıcıları (erişim tuşları)
 
 Normalde, klavye kullanıcıları içeren bir iletişim kutusu alanındaki başka bir denetimden giriş odağı Taşı **sekmesini** ve **ok** anahtarları. Ancak, tek bir tuşa basarak bir denetim seçmelerini sağlar bir erişim anahtarı (bir anımsatıcı ya da unutmayacağınızdan kolay ad) tanımlayabilirsiniz.
 
@@ -99,14 +80,14 @@ Normalde, klavye kullanıcıları içeren bir iletişim kutusu alanındaki başk
 1. Statik metin denetimi sekme sırasının etiket denetimi karaktere emin olun.
 
 > [!NOTE]
-> Bir iletişim kutusu içindeki tüm erişim anahtarları benzersiz olmalıdır. Yinelenen erişim tuşları denetlemek için Git **biçimi** menü ve select **anımsatıcıları kontrol**.
+> Tüm erişim anahtarlarını bir iletişim kutusu içinde benzersiz olmalıdır. Yinelenen erişim tuşları denetlemek için menüsüne gidin **biçimi** > **anımsatıcıları kontrol**.
 
 ## <a name="combo-box-values"></a>Birleşik giriş kutusu değerleri
 
-Sahip olduğunuz sürece bir birleşik giriş kutusu denetimine değer ekleyebilirsiniz **iletişim** Düzenleyicisi'ni açın.
+Sahip olduğunuz sürece bir birleşik giriş kutusu denetimine değer ekleyebilirsiniz **iletişim kutusu Düzenleyicisi** açın.
 
 > [!TIP]
-> Açılan kutu tüm değerler eklemek için iyi bir fikirdir *önce* kutuya boyut **iletişim** Düzenleyicisi veya birleşik giriş denetiminde görüntülenecek metin kesin.
+> Açılan kutu tüm değerler eklemek için iyi bir fikirdir *önce* kutuya boyut **iletişim kutusu Düzenleyicisi**, veya birleşik giriş denetiminde görüntülenecek metin kesin.
 
 ### <a name="to-enter-values-into-a-combo-box-control"></a>Bir birleşik giriş kutusu denetimine değer girmek için
 
@@ -131,14 +112,11 @@ Bir açılan kutunun açılır bölümünü genişleterek hakkında daha fazla b
 
 ### <a name="to-test-the-appearance-of-values-in-a-combo-box"></a>Açılan kutuda değerleri görünümünü test etmek için
 
-Değerleri girdikten sonra **veri** özelliği, select **Test** düğmesini [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+1. Değerleri girdikten sonra **veri** özelliği, select **Test** düğmesini [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
-   Tüm değer listede aşağı kaydırma deneyin. Değerlerin göründüğü içinde tam olarak yazdığınız şekilde **veri** özelliğinde **özellikleri** penceresi. Yazım denetimi veya büyük/küçük harf denetimi yoktur.
+1. Tüm değer listede aşağı kaydırma deneyin. Değerlerin göründüğü içinde tam olarak yazdığınız şekilde **veri** özelliğinde **özellikleri** penceresi. Yazım denetimi veya büyük/küçük harf denetimi yoktur.
 
-   Tuşuna **Esc** dönmek için **iletişim kutusu** Düzenleyici.
-
-   Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
-Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
+1. Tuşuna **Esc** dönmek için **iletişim kutusu** Düzenleyici.
 
 ## <a name="radio-button-values"></a>Radyo düğmesi değerleri
 
@@ -157,17 +135,17 @@ Radyo düğmeleri iletişim kutusuna eklediğinizde, bunları bir grup olarak ay
    Değiştirme **grubu** özelliğini **True** WS_GROUP stili kaynak betiği iletişim nesnesinin düğmenin girişi ekler ve birden fazla radyo düğmesini seçerek bir zamanında kullanıcı engeller (kullanıcı seçer bir radyo düğmesi grubundaki diğer temizlendiğinde) düğmesi grubunda.
 
    > [!NOTE]
-   > Yalnızca ilk radyo düğmesi grubunda olmalıdır **grubu** özelliğini **True**. Düğmesi grubunun parçası olmayan ek denetimleri varsa Ayarla **grubu** ilk denetiminin özelliği *grubun dışına olan* için **True** de. İlk denetim grubu dışında kullanarak hızlıca tanımlayabilirsiniz **Ctrl**+**D** sekme sırasını görüntülemek için.
+   > Yalnızca ilk radyo düğmesi grubunda olmalıdır **grubu** özelliğini **True**. Düğmesi grubunun parçası olmayan ek denetimler varsa Ayarla **grubu** ilk denetiminin özelliği *grubun dışına olan* için **True** de. İlk denetim grubu dışında kullanarak hızlıca tanımlayabilirsiniz **Ctrl**+**D** sekme sırasını görüntülemek için.
 
 ### <a name="to-add-a-member-variable-for-the-radio-button-group"></a>Radyo düğmesi grubunda için üye değişkeni eklemek için
 
-1. Sekme sırasında ilk radyo düğmesi denetimini sağ tıklayın (baskın denetimi ve bir **grubu** özelliğini **True**) seçip **değişken Ekle** gelen kısayol menüsü.
+1. Sekme sırasında ilk radyo düğmesi denetimini sağ tıklayın (baskın denetimi ve bir **grubu** özelliğini **True**) seçip **değişken Ekle**.
 
 1. İçinde [üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md)seçin **denetim değişkeni** onay kutusunu işaretleyin ve ardından **değer** radyo düğmesi.
 
-1. İçinde **değişken adı** yeni bir üye değişkeni için bir ad yazın.
+   - İçinde **değişken adı** yeni bir üye değişkeni için bir ad yazın.
 
-1. İçinde **değişken türü** liste kutusu, select **int** veya türü *int*.
+   - İçinde **değişken türü** liste kutusu, select **int** veya türü *int*.
 
    Şimdi, kodunuzun hangi radyo düğmesini seçili görünmesi gerektiğini belirten değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
 
@@ -177,5 +155,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
-[Denetimler](../mfc/controls-mfc.md)
+[İletişim kutusu denetimleri yönetme](controls-in-dialog-boxes.md)<br/>
+[Nasıl yapılır: Denetimleri Ekleme, Düzenleme veya Silme](adding-editing-or-deleting-controls.md)<br/>
+[Nasıl yapılır: Düzen denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>

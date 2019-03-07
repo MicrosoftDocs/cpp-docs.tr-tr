@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-ms.openlocfilehash: de8b648c6bca02c71a9cfedd92bfbe7e6ca56b70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0b581dfc116e25228a9aa9133c4de027e194799
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463654"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422045"
 ---
 # <a name="rebase"></a>/REBASE
 
@@ -36,6 +36,6 @@ Programın yürütülebilir dosyaları ve dll belirtin *dosyaları* oldukları a
 |**BASEFILE**|COFFBASE adlı bir dosya oluşturur. Bir metin dosyasıdır bağlantının tarafından beklenen biçimde/temel seçeneği, TXT.|
 |**AŞAĞI**|Bitiş adresi temel adresleri aşağı doğru atamak EDITBIN söyler. Dosyalar, en yüksek olası adresi adres aralığının sonunu aşağıda bulunan ilk dosyasını belirtilen sırada atanır. Dosyaları alma için yeterli adres alanına emin olmak için temel aşağı ile kullanılması gerekir. Tarafından belirtilen dosyalarını gereken adres alanını belirlemek için EDITBIN /REBASE ile dosyalarda çalıştırmak ve için görüntülenen toplam boyutu 64 KB ekleyin.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

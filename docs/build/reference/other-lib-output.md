@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - output files, LIB
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
-ms.openlocfilehash: 877450eac85044e187e27ce4acacff33ff9dba32
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef4df8441cfcb2adadc07758712971aee870a8bf
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642397"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422090"
 ---
 # <a name="other-lib-output"></a>Diğer LIB Çıktısı
 
@@ -23,6 +23,6 @@ Yazdığınızda `lib` diğer herhangi bir giriş ile LIB seçeneklerini özetle
 
 Hata ve uyarı iletileri LIB tarafından verilen formun LNK*nnnn*. BAĞLANTI, DUMPBIN ve EDITBIN araçları ayrıca hatalar bu aralığı kullanın. Çıkış penceresinde hata'ı seçip F1 tuşuna basarak Yardım kullanılabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)

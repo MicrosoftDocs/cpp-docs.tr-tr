@@ -30,12 +30,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: db0976ecd3e3af76640a56ebc1e07e9ade2e3815
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 1c45e28e0e74d7216023f06ad22896c53c9226b8
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556783"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423059"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
@@ -121,7 +121,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
 Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.
 
 *pDBProp*<br/>
-Özellik kimliği ve yeni değer bir [DBPROP](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısı.
+Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -183,7 +183,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
 Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.
 
 *pDBProp*<br/>
-Özellik kimliği ve yeni değer bir [DBPROP](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısı.
+Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

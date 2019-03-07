@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-ms.openlocfilehash: d040c09b36c2b46036744c8a263802da48cd8e60
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: bea53c33ef723cf8c98d0c542d24389e730c092a
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210802"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563309"
 ---
 # <a name="string-editor-c"></a>Dize Düzenleyicisi'ni (C++)
 
@@ -56,7 +56,7 @@ Dize tabloları uygulamanızın farklı dillere yerelleştirilmesi kolaylaştır
 
 ### <a name="to-find-a-string-resource-in-the-string-table"></a>Dize tablosunda bir dize kaynağı bulunamadı
 
-1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Menü Git **Düzenle** > **Bul ve Değiştir** ve **Bul**.
 
@@ -77,9 +77,9 @@ Hızlı ekleme veya silme kullanarak dize tablo girişleri **Dize Düzenleyicisi
 
 **Dize Düzenleyicisi** zaten kullanımda bir kimliği kullanmayın emin olur. Bir kimliği kullanımda, zaten seçerseniz **Dize Düzenleyicisi** bunu size bildirir ve ardından genel benzersiz kimliği örneğin Ata `IDS_STRING58113`.
 
-Dize tablo girdisi eklemek için:
+#### <a name="to-add-a-string-table-entry"></a>Dize tablo girdisi eklemek için
 
-1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Dize tablosu içinde sağ tıklatın ve seçin **yeni dize**.
 
@@ -92,7 +92,7 @@ Dize tablo girdisi eklemek için:
    > [!NOTE]
    > Null dizeler Windows dize tablolarında izin verilmez. Boş bir dize olan dize tablosunda bir giriş oluşturmak, isteyen bir ileti alırsınız **Lütfen bu tablo girişi için bir dize girin**.
 
-Dize tablosu girişi silmek için:
+#### <a name="to-delete-a-string-table-entry"></a>Dize tablosu girişi silmek için
 
 Aşağıdakilerden birini yapın ve silmek istediğiniz girişini seçin:
 
@@ -110,7 +110,7 @@ Aşağıdakilerden birini yapın ve silmek istediğiniz girişini seçin:
 
 1. Hedef imleci **Dize Düzenleyicisi** penceresi.
 
-1. Dize taşımak istediğiniz .rc dosyasına sağ tıklayın ve seçin **Yapıştır**.
+1. İçinde *.rc* dize taşımak, sağ tıklayın ve istediğiniz dosyayı **Yapıştır**.
 
 > [!NOTE]
 > Varsa **kimliği** veya **değer** ile varolan taşınan dize çakışmalar **kimliği** veya **değer** hedef dosyasında ya da bu **Kimliği** veya **değer** taşınan dize değişiklikleri.
@@ -122,9 +122,9 @@ Yerinde düzenleme değiştirmek için kullanabileceğiniz **kimliği**, **değe
 > [!NOTE]
 >  Bir dizenin özelliklerini de düzenleyebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
 
-Bir dize veya tanımlayıcısını değiştirmek için:
+#### <a name="to-change-a-string-or-its-identifier"></a>Bir dize veya tanımlayıcısını değiştirmek için
 
-1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Çift tıklayın ve düzenlemek istediğiniz dizeyi seçin **kimliği**, **değer**, veya **açıklamalı alt yazı** sütun sonra kullanabilirsiniz:
 
@@ -134,9 +134,9 @@ Bir dize veya tanımlayıcısını değiştirmek için:
 
    - Tür düzenlemeleri **açıklamalı alt yazı** sütun.
 
-Birden çok dize kaynakları resim yazısı özelliğini değiştirmek için:
+#### <a name="to-change-the-caption-property-of-multiple-string-resources"></a>Birden çok dize kaynakları resim yazısı özelliğini değiştirmek için
 
-1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Basılı tutarak değiştirmek istediğiniz dizeleri seçin **Ctrl** anahtar her birini seçin.
 
@@ -146,7 +146,7 @@ Birden çok dize kaynakları resim yazısı özelliğini değiştirmek için:
 
 ### <a name="to-add-formatting-or-special-characters-to-a-string-resource"></a>Biçimlendirme veya özel karakterler için bir dize kaynağı eklemek için
 
-1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Değiştirmek istediğiniz dizeyi seçin.
 

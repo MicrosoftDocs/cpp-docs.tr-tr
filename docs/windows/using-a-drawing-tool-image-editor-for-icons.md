@@ -16,25 +16,23 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-ms.openlocfilehash: 135509626e20044b0d4ec8e63d8916f4c537388e
-ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
+ms.openlocfilehash: bde951a2915bf980e09d94c16edc1a9b462c662e
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336559"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563335"
 ---
 # <a name="how-to-use-a-drawing-tool"></a>Nasıl yapılır: Çizim aracı kullanma
 
-**Görüntü** Düzenleyicisi çizim ve aynı şekilde tüm iş araçları silme serbest: Aracı'nı seçin ve gerekirse [ön plan ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından görüntüyü işaretçiyi ve tıklar veya çizmek ve silmek için sürükleyin.
+**Resim Düzenleyicisi** serbest çizim ve tümünü aynı şekilde çalıştığını silme araçlara sahiptir. Aracı'nı seçin ve gerekirse [ön plan ve arka plan renklerini seçin](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) , boyutu ve şekli seçenekleri. Ardından görüntüyü işaretçiyi ve tıklar veya çizmek ve silmek için sürükleyin.
 
 ## <a name="drawing-tools"></a>Çizim Araçları
 
-Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçenek belirleyici, Aracı'nın seçenekleri görüntüler.
+Çizim araçlarından herhangi birinden seçebilirsiniz **Resim Düzenleyicisi** araç veya **görüntü** menüsü. Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçenek belirleyici, Aracı'nın seçenekleri görüntüler.
 
 > [!TIP]
-> Yerine **Silgi** aracı bulduğunuz, çizim araçlarından birini arka plan rengiyle çizme daha kolay.
-
-Çizim araçlarından herhangi birinden seçebilirsiniz **Resim Düzenleyicisi** araç veya **görüntü** menüsü.
+>  Araç ipuçları, üzerinde düğmelerin üzerine imleci fareyle geldiğinizde görünür [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md). Bu ipuçlarını burada bahsedilen belirli düğmelerin belirlemenize yardımcı olur.
 
 ### <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>Seçin ve Resim Düzenleyicisi araç çubuğundan bir çizim aracı kullanma
 
@@ -42,14 +40,14 @@ Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçe
 
    - **Silgi** aracı paints geçerli arka plan rengiyle görüntü üzerinden farenin sol düğmesine bastığınızda.
 
+      > [!TIP]
+      > Yerine **Silgi** aracı bulduğunuz, çizim araçlarından birini arka plan rengiyle çizme daha kolay.
+
    - **Kalem** aracı bir piksel cinsinden bir sabit genişliği freehand çizer.
 
-   - **Seçenek belirleyici belirler Fırça Aracı'nın şekil ve boyut**.
+   - **Fırça** çeşitli şekillerdeki ve boyutlardaki araç vardır.
 
    - **Kabı** aracı fırçanın merkezi etrafındaki renk piksel rastgele dağıtır.
-
-        > [!TIP]
-        >  Araç ipuçları, üzerinde düğmelerin üzerine imleci fareyle geldiğinizde görünür [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md). Bu ipuçlarını burada bahsedilen belirli düğmelerin belirlemenize yardımcı olur.
 
 1. Gerekirse, renk ve fırça seçin:
 
@@ -63,19 +61,19 @@ Seçtiğinizde, **Silgi** aracı **fırça** aracı veya **kabı** aracı, seçe
 
 ### <a name="to-select-and-use-a-drawing-tool-from-the-image-menu"></a>Seçin ve Görüntü menüsü'nden bir çizim aracı kullanma
 
-1. Seçin **görüntü** menü ve select **Araçları** komutu.
+1. Menü Git **görüntü** > **Araçları**.
 
 1. Basamaklı alt menüsünde kullanmak istediğiniz aracı seçin.
 
 ## <a name="lines-or-closed-figures"></a>Çizgi veya kapalı şekiller
 
-Resim Düzenleyicisi araçları için satırlar çizme ve tüm kapalı şekiller aynı şekilde çalışır: bir noktada ekleme noktasını yerleştirin ve diğerine sürükleyin. Satırlar için bu uç noktalardır. Kapalı şekiller için bu, Şekil sınırlayıcı bir dikdörtgen zıt köşe noktalarıdır.
+**Resim Düzenleyicisi** tüm satırları ve kapalı şekiller çizmek için Araçlar aynı şekilde çalışır: bir noktada ekleme noktasını yerleştirin ve diğerine sürükleyin. Satırlar için bu uç noktalardır. Kapalı şekiller için bu, Şekil sınırlayıcı bir dikdörtgen zıt köşe noktalarıdır.
 
 Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizilir ve Çerçeveli rakamları genişliği seçilen tarafından belirlenen bir genişliği çizilir. Sağ fare düğmesine basarsanız satırları ve Çerçeveli hem doludur ve tüm şekilleri, farenin sol düğmesine basarsanız geçerli ön plan rengini veya arka plan rengi geçerli çizilir.
 
 ### <a name="to-draw-a-line"></a>Bir çizgi çizmek için
 
-1. Üzerinde [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md) (veya **görüntü** menüsünde **Araçları** komut), seçin **satırı** aracı.
+1. Kullanım [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md) veya menüsüne gidin **görüntü**> **Araçları** ve **satırı** aracı.
 
 1. Gerekirse, renk ve fırça seçin:
 
@@ -89,7 +87,7 @@ Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizil
 
 ### <a name="to-draw-a-closed-figure"></a>Kapalı şekle çizmek için
 
-1. Üzerinde **Resim Düzenleyicisi** araç çubuğu (veya **görüntü** menüsünde **Araçları** komutu) seçin bir **kapalı şekil çizme** aracı.
+1. Kullanım **Resim Düzenleyicisi** araç ya da menü **görüntü** > **Araçları** seçip bir **kapalı şekil çizme** aracı.
 
    **Kapalı şekil çizme** araçları ilgili kendi düğmelerini belirtildiği gibi şekiller oluşturun.
 
@@ -101,13 +99,13 @@ Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizil
 
 ## <a name="custom-brushes"></a>Özel Fırçalar
 
-Özel fırça almak ve biri gibi kullanabileceğiniz görüntünün dikdörtgen kısmıdır **görüntü** düzenleyicinin hazır Fırçalar. Seçime göre gerçekleştirebileceğiniz tüm işlemler bir özel fırça üzerinde gerçekleştirebilirsiniz.
+Özel fırça almak ve biri gibi kullanabileceğiniz görüntünün dikdörtgen kısmıdır **Resim Düzenleyicisi**'s hazır Fırçalar. Seçime göre gerçekleştirebileceğiniz tüm işlemler bir özel fırça üzerinde gerçekleştirebilirsiniz.
 
 ### <a name="to-create-a-custom-brush-from-a-portion-of-an-image"></a>Bir görüntüyü bölümünden özel Fırça oluşturma
 
-1. [Görüntünün seçin](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) fırça için kullanmak istediğiniz.
+1. Fırça için kullanmak istediğiniz görüntüyü bölümünü seçin.
 
-1. Basılı **Shift** aşağı anahtar, seçimdeki seçin ve görüntünün arasında sürükleyin. Veya **görüntü** menüsünde seçin **fırça olarak kullanma seçimi**.
+1. Basılı **Shift** aşağı anahtar, seçimdeki seçin ve görüntünün arasında sürükleyin veya menüsüne gidin **görüntü** > **fırça olarak kullanma seçimi**.
 
    Seçimdeki renkleri arasında görüntüyü dağıtır özel bir fırça seçiminizi olur. Seçimin bir kopyasını sürükleyerek yol boyunca bırakılır. Daha yavaş sürükleyin, kopya yapılmaz.
 
@@ -120,9 +118,9 @@ Geçerli fırça seçim tarafından belirlenen bir genişliği çizgileri çizil
 
 ### <a name="to-draw-custom-brush-shapes-in-the-background-color"></a>Arka plan rengi özel fırça şekiller çizmek için
 
-1. [Donuk veya saydam bir arka plan seçme](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).
+1. Donuk veya saydam bir arka plan seçin.
 
-1. [Arka plan rengini ayarlamak](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) çizmek istediğiniz rengi.
+1. Arka plan rengi, çizmek istediğiniz renge ayarlayın.
 
 1. Özel fırça çizmek istediğiniz yere getirin.
 
@@ -142,7 +140,8 @@ Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)
+[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Görüntü Kopyalama](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: Renklerle Çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>
+[Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
