@@ -10,12 +10,12 @@ helpviewer_keywords:
 - setlocale function
 - locale routines
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-ms.openlocfilehash: b5096d0b0f0990a89789993a12f383d060b91b3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89ff4b694137c7002ecb5f6a844c75ab403e6e2f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571489"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744385"
 ---
 # <a name="locale"></a>Yerel Ayar
 
@@ -69,7 +69,7 @@ Aşağıdaki tabloda işlevlerin daha güvenli sürümleri mevcuttur, belirttiğ
 > [!NOTE]
 > Çok baytlı rutinleri için çok baytlı kod sayfası ile yerel ayarlarını eşdeğer olmalıdır [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md). [_setmbcp](../c-runtime-library/reference/setmbcp.md), bağımsız **_MB_CP_LOCALE** aynı sayfa çok baytlı kod yapar **setlocale** kod sayfası.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

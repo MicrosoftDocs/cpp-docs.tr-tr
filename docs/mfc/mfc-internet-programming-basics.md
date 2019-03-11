@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 37fe5486d6d41ad182779a3a15b0aca3af51d04b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 814e63272058200850424e9d5355637111527e1c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288447"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750291"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 
@@ -79,5 +79,3 @@ Bu Web sitesi geliştiricileri için Microsoft geliştirme araçları ve teknolo
 ##  <a name="_core_more_internet_help"></a> Daha fazla Internet Yardımı
 
 Windows SDK'sı OLE bölümünü OLE programlama hakkında ek bilgiler içerir. Bu bilgiler, Win32 WinINet işlevleri doğrudan kullanmak yerine MFC sınıflarını kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca Internet teknolojileri hakkında genel bilgiler içerir.
-
-## <a name="see-also"></a>Ayrıca bkz.

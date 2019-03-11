@@ -10,12 +10,12 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-ms.openlocfilehash: 45244ace414fc073956684088ac43eb9b92f1e5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b063abd4186523d27cab7a766f57aadfeaf765d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588246"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746051"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar
 
@@ -29,7 +29,7 @@ Bu konuda, özel durum işleme yönetilen uygulamalarda anlatılmaktadır. Diğe
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme yaparsanız **/CLR** seçeneği, standart yanı sıra, CLR özel durumları işleyebilir [C++ özel durum işleme](../cpp/cpp-exception-handling.md) ve [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md) (SEH). Bir CLR özel bir yönetilen türü tarafından oluşturulan tüm özel durumudur. [System::yönetilen](https://msdn.microsoft.com/library/system.exception.aspx) sınıfı CLR özel durumları işlemek için çok sayıda kullanışlı yöntem sağlar ve kullanıcı tanımlı özel durum sınıfları için temel sınıf olarak önerilir.
+Derleme yaparsanız **/CLR** seçeneği, standart yanı sıra, CLR özel durumları işleyebilir <xref:System.Exception> sınıfı CLR özel durumları işlemek için çok sayıda kullanışlı yöntem sağlar ve kullanıcı tanımlı özel durum için bir temel sınıf olarak önerilir sınıflar.
 
 Bir arabirimden türetilmiş bir özel durum türlerini yakalamak desteklenmiyor altında **/CLR**. Ayrıca, ortak dil çalışma zamanı, yığın taşması özel durumları yakalamak için izin vermez; yığın taşması özel işlemini sonlandırır.
 
@@ -140,7 +140,7 @@ Oluşturulan özel durum için olayların sırası aşağıdaki gibidir:
 
 ### <a name="catching-unmanaged-types"></a>Yönetilmeyen türler yakalama
 
-Yönetilmeyen bir nesne oluşturulduğunda türünde bir özel durum ile sarmalandıktan [System::Runtime.InteropServices::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx). Uygun ararken **catch** yan tümcesi, iki olasılık vardır.
+Yönetilmeyen bir nesne oluşturulduğunda türünde bir özel durum ile sarmalandıktan <xref:System.Runtime.InteropServices.SEHException>. Uygun ararken **catch** yan tümcesi, iki olasılık vardır.
 
 - Yerel C++ tür karşılaşılırsa özel durum sarmalanmamış ve karşılaştırma türü ile karşılaşıldı. Bu karşılaştırma, normal bir şekilde Yakalanacak yerel C++ tür sağlar.
 
@@ -164,7 +164,7 @@ Bir yönetilmeyen türe catch(Object^) tarafından yakalandığında oluşturula
 
 Özel durumları atma veya yakalama yönetilmeyen kullanmanızı öneririz [/ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği yerine **EHS** veya **/eha**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../windows/safe-cast-cpp-component-extensions.md)<br/>

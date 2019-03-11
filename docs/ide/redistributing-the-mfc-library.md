@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, redistributing
 - redistributing MFC library
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
-ms.openlocfilehash: 891a11e02b60bf5337b02956e9562b2f4b45a6e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e7352306627722ff2921c2a46cb49b6318f10b6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659946"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746962"
 ---
 # <a name="redistributing-the-mfc-library"></a>MFC Kitaplığını Yeniden Dağıtma
 
@@ -25,7 +25,7 @@ Uygulamanız MFC Kitaplığı'nın önceki bir sürümü kullanılarak oluşturu
 
 MFC uygulamanıza statik olarak bağlarsanız (diğer bir deyişle, belirtirseniz **MFC'yi statik kitaplıkta** üzerinde **genel** sekmesinde **özellik sayfaları** iletişim kutusu), erişiminiz yok bir MFC DLL'sini yeniden için. Ancak, statik bağlama test etmek için işe yarasa da ve iç dağıtım uygulamaların, bunu MFC'yi yeniden kullanmanız önerilir değil. Visual C++ kitaplarının dağıtımı için önerilen stratejiler hakkında daha fazla bilgi için bkz: [dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md).
 
-Uygulamanız WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, [CHtmlView sınıfı](../mfc/reference/chtmlview-class.md) veya [CHtmlEditView sınıfı](../mfc/reference/chtmleditview-class.md)), ayrıca en son sürümünü yüklemenizi öneririz Microsoft Internet Explorer böylece hedef bilgisayarın en güncel ortak denetim dosyalarına sahip olur. (En azından, Internet Explorer 4.0 gereklidir.) Microsoft Support Web sitesinde "Makale 185375: nasıl için oluşturma bir tek EXE yükleme Internet Explorer'ın" Internet Explorer bileşenlerini yükleme hakkında bilgi kullanılabilir.
+Uygulamanız WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, [CHtmlView sınıfı](../mfc/reference/chtmlview-class.md) veya [CHtmlEditView sınıfı](../mfc/reference/chtmleditview-class.md)), ayrıca en son sürümünü yüklemenizi öneririz Microsoft Internet Explorer böylece hedef bilgisayarın en güncel ortak denetim dosyalarına sahip olur. (En azından, Internet Explorer 4.0 gereklidir.) Internet Explorer bileşenlerini yükleme hakkında bilgi sağlanmıştır "makale 185375: Nasıl oluşturmak için tek bir EXE yükle Internet Explorer'ın "Microsoft Support Web sitesinde.
 
 Uygulamanız MFC veritabanı sınıflarını kullanıyorsa (örneğin, [CRecordset sınıfı](../mfc/reference/crecordset-class.md) ve [CRecordView sınıfı](../mfc/reference/crecordview-class.md)), ODBC ve uygulamanızın kullandığı ODBC sürücülerini yeniden dağıtmanız gerekir.
 
@@ -45,6 +45,6 @@ MFC uygulamalarının yerelleştirilmesi hakkında daha fazla bilgi için bkz. [
 
 Uygulama yerel klasörünüzdeki MFC DLL'yi dağıtarak MFC yerelleştirme DLL'lerini yeniden dağıtabilirsiniz. Visual C++ kütüphanelerini yeniden dağıtma hakkında daha fazla bilgi için bkz. [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

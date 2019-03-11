@@ -12,12 +12,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: 59df523cc553881186921a878d131a109ae3cf27
-ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
+ms.openlocfilehash: 7197b5cdf551020f4bd964558b5b332b7022ffe6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53978302"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750526"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de genel metin eşlemeleri
 
@@ -91,7 +91,7 @@ RetVal = strrev(szString);
 
 Bu nedenle, yazma, korumak ve herhangi bir karakter kümesi üç tür için özel yordamlar çalıştırmak için tek kaynak kod dosyasını derleyin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
 [_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma](../text/using-tchar-h-data-types-with-mbcs-code.md)

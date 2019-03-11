@@ -22,12 +22,12 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-ms.openlocfilehash: 3c4e4de7dc7161c033f07cfb02ef90ad5db559c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 173c1bbae3009ffb4ee10b7b32ec7751f47c56c8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492163"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749236"
 ---
 # <a name="setoutputformat"></a>_set_output_format
 
@@ -119,7 +119,7 @@ int main()
 1.211E-005  2.306E-112
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
 [_get_output_format](../c-runtime-library/get-output-format.md)

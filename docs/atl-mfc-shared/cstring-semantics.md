@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CString objects, assignment semantics
 - assignment statements, assigning CString objects
 ms.assetid: d4023480-526f-499a-85f6-324b4de5b85f
-ms.openlocfilehash: f563b24a9df61a91711433a4e4987f8f800545ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5398f8a0f17ffcc93c7f5f6158ecc56606e9279
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657801"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750187"
 ---
 # <a name="cstring-semantics"></a>CString semantiği
 
@@ -23,7 +23,6 @@ Atayabilirsiniz `CString` başka bir nesne. Ancak, değiştirdiğinizde bir iki 
 
 Not örnekte, iki `CString` aynı karakter dizesini temsil ettikleri çünkü nesneleri "equal" değerlendirilir. `CString` Sınıfı eşitlik işlecini aşırı yüklemeler (`==`) karşılaştırmak için `CString` kimliklerini (adres) yerine nesneleri temel değerlerine (içeriği).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - equal_to function
 - equal_to struct
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
-ms.openlocfilehash: d441d171db518352289a76ca50e807e4042ad23f
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.openlocfilehash: 9dc388c5e4248b6d0cd6ad4842be7252601dec13
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006597"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740340"
 ---
 # <a name="equalto-struct"></a>equal_to Yapısı
 
@@ -114,4 +114,3 @@ The vector v2 = ( -0 1 -4 5 -8 9 )
 The result of the element-wise equal_to comparison
 between v1 & v2 is: ( 1 1 0 1 0 1 )
 ```
-

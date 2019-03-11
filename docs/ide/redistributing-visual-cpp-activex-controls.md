@@ -5,12 +5,12 @@ helpviewer_keywords:
 - controls [C++], redistributing
 - controls [C++], distributing
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
-ms.openlocfilehash: 6c1f75665d43d927e21a1fd7d365e1bde46c57a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb4ef7b58f5ef596ac6484761ab891ceb8bb85ad
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551404"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744645"
 ---
 # <a name="redistributing-visual-c-activex-controls"></a>Visual C++ ActiveX Denetimlerini Yeniden Dağıtma
 
@@ -39,6 +39,6 @@ Bir veritabanına bağlanan bir ActiveX denetimini kullanırken aynı zamanda ve
 
 Yeniden dağıtılabilir bazı ActiveX denetimleri, ek bağımlılıklara sahip. Her .ocx dosya için Os\System klasöründe Visual C++ 6.0 ürün CD'sinin de bir.DEP dosyası mevcuttur. Yeniden dağıtmak istediğiniz her .ocx dosya için karşılık gelen .dep dosyasındaki bir veya daha fazla KULLANIMLAR girdileri arayın. Bir dosya listeleniyorsa, dosyanın hedef bilgisayarda olduğundan emin olmanız gerekir. DLL'lerin doğrudan destekleyen bir .ocx dosyasının kaydedilmesi gerekir. (Başarılı olması Regsvr32.exe için hedef bilgisayarı ilk tüm denetim statik olarak DLL'leri içermelidir.) Ayrıca, bir bağımlılık olarak listelenen bir DLL de bir.DEP dosyası Visual C++ 6.0 CD Os\System klasöründe varsa, bu .dep dosyasında kullandığı girişler için de araştırmanız gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

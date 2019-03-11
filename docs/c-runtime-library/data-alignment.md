@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - data alignment [C++]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
-ms.openlocfilehash: 7d835545bdc1f94de56846f35d510927c06c2560
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92b8df81751e01e655e348d5f090705e5194312b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520295"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738817"
 ---
 # <a name="data-alignment"></a>Veri Hizalama
 
@@ -38,6 +38,6 @@ Veri hizalama aşağıdaki C çalışma zamanı işlevleri destekler.
 |[_aligned_recalloc](../c-runtime-library/reference/aligned-recalloc.md)|İle ayrılan bir bellek bloğunu boyutunu değiştirir [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) veya [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md) ve 0 belleği başlatır.|
 |[_aligned_recalloc_dbg](../c-runtime-library/reference/aligned-recalloc-dbg.md)|İle ayrılan bir bellek bloğunu boyutunu değiştirir [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) veya [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md) ve belleği 0 (yalnızca hata ayıklama sürümü) başlatır.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

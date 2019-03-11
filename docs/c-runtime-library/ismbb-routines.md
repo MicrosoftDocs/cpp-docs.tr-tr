@@ -17,12 +17,12 @@ helpviewer_keywords:
 - ismbb routines
 - _ismbb routines
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b
-ms.openlocfilehash: 6e1dd62f45eed4ec1d8e89a746d01ca1984022ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d70604ce71d74bd73a3fea1b99beaf93f052e344
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481412"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750513"
 ---
 # <a name="ismbb-routines"></a>_ismbb Rutinleri
 
@@ -76,7 +76,7 @@ Aşağıdaki tabloda bu yordamlar için test koşullarını oluşturan ORed değ
 
 `_ismbb` Yordamları işlev gerekse makro olarak uygulanır. Uygulamayı seçme hakkında daha fazla bilgi için bkz. [seçme arasında işlevlerle makrolar için öneriler](../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bayt Sınıflandırması](../c-runtime-library/byte-classification.md)<br/>
 [is, isw Yordamları](../c-runtime-library/is-isw-routines.md)<br/>

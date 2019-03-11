@@ -2,12 +2,12 @@
 title: Başvuru sınıfları ve yapıları (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-ms.openlocfilehash: a817529f24f1df3a3258b4596cd4d14533356a02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9ac14762dba580967fbecd245a81a4ff4356b64
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456231"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741836"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Başvuru sınıfları ve yapıları (C + +/ CX)
 
@@ -45,7 +45,7 @@ Sonraki kod örneği, istemci kodu nasıl kullandığını gösterir `Person` ba
 
 [!code-cpp[cx_classes#05](../cppcx/codesnippet/CPP/classesstructs/class1.cpp#05)]
 
-Yığın anlamları, yerel başvuru sınıfı değişkenini bildirmek için de kullanabilirsiniz. Bellek hala dinamik olarak ayrılır olsa bile, böyle bir nesnenin yığın tabanlı bir değişken gibi davranır. Yığın anlamları kullanılarak bildirilen bir değişken için bir izleme başvurusu (%) atanamaz önemli bir fark olduğunu; bu başvuru sayısı işlev sıfır olarak indirildiği olmasını sağlar. Bu örnek, bir temel başvuru sınıfı gösterir `Uri`ve yığın anlamları ile kullanan bir işlev:
+Yığın anlamları, yerel başvuru sınıfı değişkenini bildirmek için de kullanabilirsiniz. Bellek hala dinamik olarak ayrılır olsa bile, böyle bir nesnenin yığın tabanlı bir değişken gibi davranır. İzleme başvurusu (%) atanamaz bir önemli fark vardır bir değişkene, yığın anlamları kullanarak bildirilir; Bu işlev, başvuru sayısı sıfıra indirildiği güvence altına alır. Bu örnek, bir temel başvuru sınıfı gösterir `Uri`ve yığın anlamları ile kullanan bir işlev:
 
 [!code-cpp[cx_classes#06](../cppcx/codesnippet/CPP/classesstructs/class1.cpp#06)]
 
@@ -127,7 +127,7 @@ Aşağıdaki örnek, bir devralma hiyerarşisindeki diğer başvuru sınıfları
 
 [!code-cpp[cx_classes#09](../cppcx/codesnippet/CPP/classesstructs/class1.h#09)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Değer sınıfları ve yapıları](../cppcx/value-classes-and-structs-c-cx.md)<br/>

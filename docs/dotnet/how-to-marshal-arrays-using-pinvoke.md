@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama'
+title: 'Nasıl yapılır: PInvoke kullanarak dizileri sıralama hazırlama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - interop [C++], arrays
 - data marshaling [C++], arrays
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-ms.openlocfilehash: bd349fb1eca63fc336a30f4f23ae337d1191bb26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60b49135928e3dadffc2a3c7a422646d2f3a768d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628520"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752317"
 ---
-# <a name="how-to-marshal-arrays-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama
+# <a name="how-to-marshal-arrays-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak dizileri sıralama hazırlama
 
 Bu konuda, C stili dizeler, CLR dize türü kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. <xref:System.String> desteği .NET Framework Platform çağırma kullanma. Visual C++ programcıları (uygun olduğunda) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir, çünkü çok az derleme zamanı hata raporlama, tür açısından güvenli değildir ve uygulamak can sıkıcı olabilir, P/Invoke sağlar. Yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu yok, P/Invoke tek seçenektir (Aksi takdirde bkz [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
 
@@ -79,6 +79,6 @@ int main() {
 
 Geleneksel aracılığıyla yönetilen koda hiçbir kısmı DLL kullanıma sunulduğunu unutmayın #include yönergesi. DLL yalnızca çalışma zamanında erişilir, aslında, İşlevler ile ilgili sorunlar ile içeri aktarılan <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

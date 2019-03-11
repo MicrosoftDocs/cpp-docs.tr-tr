@@ -8,12 +8,12 @@ helpviewer_keywords:
 - heap allocation, control flags
 - debug heap, control flags
 ms.assetid: 8dbd24a5-0633-42d1-9771-776db338465f
-ms.openlocfilehash: 45349099ed5c607468430d2f0a901c6374d88fc7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ac5f239ea4d242618fb23ba617a3a6539492053
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475744"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750120"
 ---
 # <a name="control-flags"></a>Denetim Bayrakları
 
@@ -27,6 +27,6 @@ Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümünü aşağı
 
 Bu bayraklar veya /D komut satırı seçeneği ile tanımlanan bir `#define` yönergesi. Ne zaman bayrağı ile tanımlanan `#define`, üstbilgi dosyasını dahil etmeden önce düzenli bildirimleri deyimi yönergesi yer almalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler ve Standart Türler](../c-runtime-library/global-variables-and-standard-types.md)

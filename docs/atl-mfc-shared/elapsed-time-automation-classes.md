@@ -1,5 +1,5 @@
 ---
-title: 'Geçen zaman: Otomasyon sınıfları'
+title: 'Geçen süre: Otomasyon sınıfları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - adding dates
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - intervals, date and time
 - calculations, date and time
 ms.assetid: 26b34b37-c10e-4b91-82c3-1dc5ffb5361f
-ms.openlocfilehash: fbd01a4e7268456af342293d77ef74d372d2e639
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d6a77d57a88166354fcb222c0da09690426108e9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583917"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750055"
 ---
-# <a name="elapsed-time-automation-classes"></a>Geçen zaman: Otomasyon sınıfları
+# <a name="elapsed-time-automation-classes"></a>Geçen süre: Otomasyon sınıfları
 
 Bu yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneleri ve get bir `CTimeSpan` sonucu.
 
@@ -36,6 +36,6 @@ Bu yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneler
 
    [!code-cpp[NVC_ATLMFC_Utilities#178](../atl-mfc-shared/codesnippet/cpp/elapsed-time-automation-classes_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Tarih ve Saat: Otomasyon Desteği](../atl-mfc-shared/date-and-time-automation-support.md)
+[Tarih ve saat: Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)

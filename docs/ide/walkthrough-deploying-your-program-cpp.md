@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 7170fe3ae058f832e452089021d9f863f1791f14
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: c202d4eae5e9115f847caefce18a8974a4388a04
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657519"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740455"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek yol: Programınızı dağıtma (C++)
 
@@ -72,9 +72,9 @@ Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [İzlenecek yol: Bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**Önceki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>

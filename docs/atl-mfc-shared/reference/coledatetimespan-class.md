@@ -1,5 +1,5 @@
 ---
-title: COleDateTimeSpan sınıfı
+title: COleDateTimeSpan Class
 ms.date: 11/04/2016
 f1_keywords:
 - COleDateTimeSpan
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 7bcf4c50577cf7211f90415143edac9fd0df1d5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: feef238be96d9a04c2c41e6955efec8b23cf6a89
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509337"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748495"
 ---
-# <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
+# <a name="coledatetimespan-class"></a>COleDateTimeSpan Class
 
 Göreli bir zaman, bir zaman aralığını temsil eder.
 
@@ -97,7 +97,7 @@ Daha fazla bilgi için `COleDateTime` ve `COleDateTimeSpan` sınıfları, başl�
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ATLComTime.h
+**Üst bilgi:** ATLComTime.h
 
 ##  <a name="coledatetimespan_relational_operators"></a>  COleDateTimeSpan ilişkisel işleçleri
 
@@ -751,11 +751,10 @@ Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
 
 [!code-cpp[NVC_ATLMFC_Utilities#22](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_13.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [COleDateTime Sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md)<br/>
 [CTime Sınıfı](../../atl-mfc-shared/reference/ctime-class.md)<br/>
 [CTimeSpan Sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

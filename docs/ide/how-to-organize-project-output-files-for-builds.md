@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme'
+title: 'Nasıl yapılır: Derlemeler için proje çıktı dosyalarını düzenleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Visual C++, output files
 - output files, organizing
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
-ms.openlocfilehash: 9dd70f52c79d00282122f935b19770b973901103
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7fc3f3aeffd40c1b455b743765d40f50abc03ecc
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575974"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742551"
 ---
-# <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme
+# <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl yapılır: Derlemeler için proje çıktı dosyalarını düzenleme
 
 Bu konuda, proje çıktı dosyalarını düzenlemek için en iyi uygulamalar açıklanmaktadır. Derleme proje çıktı dosyalarını yanlış ayarladığınızda hatalar meydana gelebilir. Bu konuda, avantajları ve dezavantajları proje çıktı dosyalarınızı düzenlemek için her bir alternatif de açıklanmaktadır.
 
@@ -68,6 +68,6 @@ Bir üretim ortamına dağıtma yaparken, çıktı dosyalarının konumu önemli
 
 1. Proje konumunu ayarlar projesinin bulunabilir çıkış **özellik sayfaları**. Yanındaki düğümü genişletin **yapılandırma özellikleri** seçip **genel**. Çıkış konumu yanında belirtilir **çıkış dizinine**. Daha fazla bilgi için [genel özellik sayfası (Proje)](../ide/general-property-page-project.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)

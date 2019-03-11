@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme'
+title: 'Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - handlers, global
 ms.assetid: dd88a812-3bc7-4ce8-8283-4b674c246534
-ms.openlocfilehash: 9c6f355bc43fc53d2b8d27a1ee69c059d0f50692
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6b46de22ad962f6ef7653db0c38447d14ca0b54
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534543"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739262"
 ---
-# <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme
+# <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel özel durum işleyicisi tanımlama ve yükleme
 
 Aşağıdaki kod örneğinde nasıl işlenmeyen özel durumları gösterir yakalanabilir. Bir düğme içeren örnek formunu, bir özel durum oluşturulmasına neden olan bir null başvuru basıldığında gerçekleştirir. Bu işlev, tipik bir kod hatası temsil eder. Main işlevi tarafından yüklenen birçok farklı uygulama özel durum işleyicisi tarafından oluşturulan özel durum yakalandı.
 
@@ -71,6 +71,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)

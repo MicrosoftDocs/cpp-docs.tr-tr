@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: b1070a330e40c0bf73f3713783b3f126d0848cbc
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: dcae15ade3bd155e16149cc56981f79abb245e16
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525528"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740380"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -139,13 +139,13 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Önceki sürümlerde, sonsuz ve NaN'ler MSVC özgü sentinel dizeler kümesi kullanılarak biçimlendirilir.
 
-  - Sonsuz: 1. #INF
+  - Sonsuz: 1.#INF
 
-  - Sessiz bir NaN: 1. #QNAN
+  - Quiet NaN: 1.#QNAN
 
-  - Sinyal NaN: 1. #SNAN
+  - NaN sinyal: 1.#SNAN
 
-  - Belirsiz NaN: 1. #IND
+  - Belirsiz NaN: 1.#IND
 
   Bunlardan birine bir işaretiyle önekli ve biraz daha farklı alan genişliğini ve duyarlık bağlı olarak biçimlendirilmiş olabilir (bazı durumlarda alışılmadık etkileri ile örn `printf("%.2f\n", INFINITY)` 1 yazdırır. #J #INF "2 basamaklı kesinliği için yuvarlanmasını çünkü"). C99 yeni gereksinimleri nasıl biçimlendirilmesi sonsuz ve NaN'ler olduğunuza kullanıma sunuldu. MSVC uygulama artık bu gereksinimlere uygun. Yeni dizeler aşağıdaki gibidir:
 
@@ -207,7 +207,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **Biçimlendirme üs**
 
-   %E ve nokta numarası bir ondalık Mantis ve üs olarak kayan %E biçim belirticileri biçimi. %G ve %G biçim belirticileri ayrıca bazı durumlarda bu formda sayıları biçimlendirmek. Önceki sürümlerde, CRT her zaman üç basamaklı üsler dizelerle oluşturur. Örneğin, `printf("%e\n", 1.0)` 1.000000e + 000 yazdırır. Bu yanlış: C üs yalnızca bir veya iki basamak kullanarak gösterilebilir ise, ardından yalnızca iki basamağı yazdırılması olduğunu gerektirir.
+   %E ve nokta numarası bir ondalık Mantis ve üs olarak kayan %E biçim belirticileri biçimi. %G ve %G biçim belirticileri ayrıca bazı durumlarda bu formda sayıları biçimlendirmek. Önceki sürümlerde, CRT her zaman üç basamaklı üsler dizelerle oluşturur. Örneğin, `printf("%e\n", 1.0)` 1.000000e + 000 yazdırır. Bu, yanlış: C üs yalnızca bir veya iki basamak kullanarak gösterilebilir ise, ardından yalnızca iki basamağı yazdırılması olmasını gerektirir.
 
    Visual Studio 2005'te genel uyumluluğu anahtarı eklendi: [_set_output_format](../c-runtime-library/set-output-format.md). Bir program uyumlu üs yazdırmayı etkinleştirmek için bağımsız değişken _two_dıgıt_exponent ile bu işlevi çağırabilirsiniz. Standartlara uyan üs yazdırma modu için varsayılan davranışı değiştirildi.
 
@@ -289,7 +289,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **asctime**
 
-   Önceki sürümlerde, [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi paneli tek basamaklı gün önünde sıfır ile örneğin: Cuma Haz 06 08:00:00 2014. Böyle gün önde gelen bir boşluk ile örn Haz Cuma 6 azsa gerektiğini belirtilmesini gerektiriyor 08:00:00 2014. Bu düzeltilmiştir.
+   Önceki sürümlerde, [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi paneli tek basamaklı gün önünde sıfır ile örneğin: Cum Haz 06 08:00:00 2014. Böyle gün önde gelen bir boşluk ile örn Haz Cuma 6 azsa gerektiğini belirtilmesini gerektiriyor 08:00:00 2014. Bu düzeltilmiştir.
 
 - **strftime ve wcsftime**
 
@@ -334,7 +334,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
    C++ Standart const öğelerin kapsayıcıları her zaman Yasak (vektör gibi\<const T > veya\<const T >). Visual Studio 2013 veya önceki gibi kapsayıcılar kabul edildi. Geçerli sürümde bu tür kapsayıcıları derleme başarısız.
 
-- **Std::Allocator:: serbest bırak**
+- **std::allocator::deallocate**
 
    Visual Studio 2013 ve önceki sürümlerinde, `std::allocator::deallocate(p, n)` geçirilen bağımsız değişken yok sayıldı *n*.  C++ Standart her zaman zorunlu *n* çağırmayı ilk bağımsız değişkeni ayırmak gibi döndürülen geçirilen değere eşit olması *p*. Ancak, geçerli sürümde, değerini *n* Denetlenmekte. Bağımsız değişkenler için geçen kod *n* ne standart çalışma zamanında kilitlenebilir gerektirir öğesinden farklı.
 
@@ -384,7 +384,8 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **Launch::ANY ve launch::sync ilkeleri**
 
-   Standart olmayan `launch::any` ve `launch::sync` ilkeleri kaldırıldı. Bunun yerine, için `launch::any`, kullanın `launch:async | launch:deferred`. `launch::sync` için `launch::deferred`'i kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).
+   Standart olmayan `launch::any` ve `launch::sync` ilkeleri kaldırıldı. Bunun yerine, için `launch::any`, kullanın `launch:async | launch:deferred`. 
+  `launch::sync` için `launch::deferred`'i kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).
 
 ####  <a name="BK_MFC"></a> MFC ve ATL
 
@@ -424,7 +425,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 ###  <a name="VS_RTM"></a> Visual Studio 2015'te uyumluluk geliştirmeleri
 
-- /ZC:forScope-seçeneği
+- /Zc:forScope- option
 
    Derleyici seçeneği `/Zc:forScope-` kullanım dışıdır ve gelecek sürümde kaldırılacak.
 
@@ -1047,7 +1048,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Aşırı yüklenmiş işlevler belirsiz çağrı**
 
-   Aşağıdaki kod artık C266 üretir: 'N::bind': aşırı yüklenmiş işleve belirsiz çağrı
+   Aşağıdaki kod, şimdi C266 üretir: 'N::bind': aşırı yüklenmiş işleve belirsiz çağrı
 
     ```cpp
     template<typename R, typename T, typename T1, typename A1>
@@ -1190,7 +1191,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Kopyalanabilir olmadıklarından MFC özel durumları değere göre yakalanamaz**
 
-   Artık bir MFC uygulaması aşağıdaki kodda hatası C2316 neden olur: 'D ': yok edici ve/veya kopya oluşturucusu, erişilemez veya silinmiş olarak yakalanamıyor
+   Aşağıdaki kodda bir MFC uygulaması artık hatası C2316 neden olur: 'D ': yok edici ve/veya kopya oluşturucusu, erişilemez veya silinmiş olarak yakalanamıyor
 
     ```cpp
     struct B {
@@ -1336,7 +1337,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Statik olmayan veri üyesi başlatma (NSDMI) geçersiz kopya başlatma Düzelt**
 
-   Aşağıdaki kod artık hatası C2664 oluşturur: 'S1::S1(S1 &&)': 'bool' dönüştürülemiyor bağımsız değişkeni 1 ' const S1 &':
+   Aşağıdaki kod, şimdi hata C2664 oluşturur: 'S1::S1(S1 &&)': 'bool' dönüştürülemiyor bağımsız değişkeni 1 ' const S1 &':
 
     ```cpp
     struct S1 {
@@ -1358,7 +1359,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Decltype deyimleri içinde oluşturucular erişme**
 
-   Aşağıdaki kod artık C2248 üretir: 'S::S': özel üye erişimi bildirilen sınıfın içinde olamaz ':
+   Aşağıdaki kod, şimdi C2248 üretir: 'S::S': özel üye erişimi bildirilen sınıfın içinde olamaz ':
 
     ```cpp
     class S {
@@ -1480,7 +1481,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Korumalı bir temel ctor türetilmiş ctor gövdesinde çağrılamıyor.**
 
-   Aşağıdaki kod hatası C2248 artık oluşturur: 'S1::S1': 'S1' sınıfta bildirilen korumalı üye erişemiyor
+   Aşağıdaki kod, şimdi hatası C2248 üretir: 'S1::S1': 'S1' sınıfta bildirilen korumalı üye erişemiyor
 
     ```cpp
     struct S1 {
@@ -2899,7 +2900,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
     ```
 
-   Visual Studio 2013'ten önce bu kod şu ileti çıktısını verir: "C4370 Uyarı: 'S2': sınıfın düzeni önceki bir sürümünden daha iyi paketleme nedeniyle derleyici değişti".
+   Visual Studio 2013'ten önce bu kod şu ileti çıktısını verir: "C4370 Uyarı: 'S2': sınıfın düzeni önceki bir sürümünden daha iyi paketleme nedeniyle derleyici değişti ".
 
    X86 derleyici tüm derleyici sürümlerinde aynı optimum altında Düzen sorunu vardır. Örneğin, bu kod x86 için derlenirse:
 
@@ -2963,7 +2964,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="mfc-and-atl"></a>MFC ve ATL
 
-- **Yalnızca Visual Studio 2013**: MFC MBCS kitaplığı dahil değildir Visual Studio'da Unicode çok popüler olduğundan ve MBCS kullanımı önemli ölçüde azaldığından. Yeni denetimlerin ve iletilerin çoğu salt Unicode olduğundan, bu değişiklik aynı zamanda MFC'yi Windows SDK ile daha paralel halde tutar. MFC MBCS kitaplığını kullanmaya devam etmeniz gerekiyorsa, Bununla birlikte, MSDN İndirme Merkezi'nden indirebilirsiniz [Visual Studio 2013 için çok baytlı MFC Kitaplığı](https://www.microsoft.com/download/details.aspx?id=40770). Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  (Not: MBCS DLL Visual Studio 2015 ve sonraki sürümlerde C++ Kurulum bileşenlerini dahil).
+- **Yalnızca Visual Studio 2013**: Unicode çok popüler olduğundan ve MBCS kullanımı önemli ölçüde azaldığından MFC MBCS Kitaplığı Visual Studio'da bulunmaz. Yeni denetimlerin ve iletilerin çoğu salt Unicode olduğundan, bu değişiklik aynı zamanda MFC'yi Windows SDK ile daha paralel halde tutar. MFC MBCS kitaplığını kullanmaya devam etmeniz gerekiyorsa, Bununla birlikte, MSDN İndirme Merkezi'nden indirebilirsiniz [Visual Studio 2013 için çok baytlı MFC Kitaplığı](https://www.microsoft.com/download/details.aspx?id=40770). Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  (Not: MBCS DLL Visual Studio 2015 ve sonraki sürümlerde C++ Kurulum bileşenlerini bulunur).
 
 - MFC Şeridi için erişilebilirlik değişti.  Bir tek düzeyli mimari yerine artık hiyerarşik bir mimari yoktur. Çağırarak eski davranışı hala kullanabilirsiniz `CRibbonBar::EnableSingleLevelAccessibilityMode()`.
 
@@ -3043,7 +3044,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - C ++ 98/03 ve C ++ 11 standartları arasında bozucu değişiklik çağırmak için açık şablon bağımsız değişkenleri kullanarak `make_pair()` — olarak `make_pair<int, int>(x, y)` — genellikle Visual Studio 2012'de Visual c++ derleme yapmaz. Çözümü her zaman çağırmaktır `make_pair() `açık şablon bağımsız değişkenler olmadan — olarak `make_pair(x, y)`. Açık şablon bağımsız değişkenleri defeats işlevin amacı sağlama. Sonuçta elde edilen tür üzerinde kesin denetim gerektiren kullanırsanız `pair` yerine `make_pair` — olarak `pair<short, short>(int1, int2)`.
 
-- C ++ 98/03 ve C ++ 11 standartları arasında başka bir değişiklik: A örtük olarak dönüştürülebilir olduğunda B de C için örtük olarak dönüştürülebilir, ancak A, C, C ++ 98/03 ve Visual C++ 2010 izin örtük olarak dönüştürülebilir değil `pair<A, X>` (örtük olarak dönüştürülmesine veya açıkça) için `pair<C, X>`. (Bir tür, X, burada faiz ve bu çift ilk türüne özgü değildir değil.) C ++ 11 ve Visual Studio 2012 C++ derleyicisindeki bir C için örtük olarak dönüştürülebilir değil algılamak için bunlar aşırı yükleme çözünürlüğü çifti dönüştürme kaldırın. Bu, birçok senaryo için pozitif bir değişikliktir. Örneğin, aşırı yükleme `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`ve çağırma `func()` ile `pair<const char *, const char *>` bu değişiklik ile derlenir. Ancak, bu değişiklik agresif çifti dönüştürmeleri yararlandı kod keser. Bu tür kod genellikle açıkça bir parçasını dönüştürme gerçekleştirerek düzeltilebilir — geçirerek gibi `make_pair(static_cast<B>(a), x)` bekleyen bir işleve `pair<C, X>`.
+- Başka bir değişiklik C ++ 98/03 ve C ++ 11 standartları arasında: A B ve B için örtük olarak dönüştürülebilir olduğunda C için örtük olarak dönüştürülebilir, ancak A, C, C ++ 98/03 ve Visual C++ 2010 izin örtük olarak dönüştürülebilir değil `pair<A, X>` (örtük veya açık) için dönüştürülecek `pair<C, X>`. (Bir tür, X, burada faiz ve bu çift ilk türüne özgü değildir değil.) C ++ 11 ve Visual Studio 2012 C++ derleyicisindeki bir C için örtük olarak dönüştürülebilir değil algılamak için bunlar aşırı yükleme çözünürlüğü çifti dönüştürme kaldırın. Bu, birçok senaryo için pozitif bir değişikliktir. Örneğin, aşırı yükleme `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`ve çağırma `func()` ile `pair<const char *, const char *>` bu değişiklik ile derlenir. Ancak, bu değişiklik agresif çifti dönüştürmeleri yararlandı kod keser. Bu tür kod genellikle açıkça bir parçasını dönüştürme gerçekleştirerek düzeltilebilir — geçirerek gibi `make_pair(static_cast<B>(a), x)` bekleyen bir işleve `pair<C, X>`.
 
 - Visual C++ 2010 benzetimli variadic şablonları — Örneğin, `make_shared<T>(arg1, arg2, argN)`— bağımsız değişkenleri, aşırı yüklemeler ve uzmanlıkları out ile önişlemci makineler damgası tarafından 10, bir sınıra kadar. Visual Studio 2012'de, derleme sürelerini ve kullanıcıların çoğu için derleyicinin bellek tüketimini geliştirmek için 5 bağımsız değişkenler için bu sınır azaltılır. Ancak, _varıadıc_max açıkça proje genelinde 10 tanımlayarak önceki sınırı ayarlayabilirsiniz.
 
@@ -3091,7 +3092,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Bir parametre eklendi `CFolderPickerDialog` Oluşturucusu. (Varsayılan parametredir ve bu nedenle kaynakta önemli değildir.)
 
-- `CFileStatus` Yapı boyutu değişti: `m_attribute` üyesi için DWORD BAYTTAN değiştirildi (öğesinden döndürülen değerle eşleşecek şekilde `GetFileAttributes`).
+- `CFileStatus` Yapı boyutu değiştirildi: `m_attribute` Üyesi için DWORD BAYTTAN değiştirildi (öğesinden döndürülen değerle eşleşecek şekilde `GetFileAttributes`).
 
 - `CRichEditCtrl` ve `CRichEditView` Unicode yapılarında RICHEDIT_CLASS (3.0 RichEdit Denetimi) yerine MSFTEDIT_CLASS (4.1 RichEdit Denetimi) kullanın.
 
@@ -3405,21 +3406,21 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="mfc"></a>MFC
 
-- `CTime` Sınıf: `CTime` sınıfı artık C.E. 1/1/1900 ' itibaren tarihleri kabul eder 1/1/1970 C.E. yerine
+- `CTime` Sınıf: `CTime` Sınıfı artık C.E. 1/1/1900 ' itibaren tarihleri kabul eder 1/1/1970 C.E. yerine
 
-- MFC iletişim kutularındaki denetimlerin sırasını sekmesi: bir MFC iletişim kutusunda birden çok denetim doğru sekme sırası sekme sırasının MFC ActiveX denetimi eklediyseniz rahatsız edilmiş. Bu değişiklik, bu sorunu düzeltir.
+- MFC iletişim kutularındaki denetimlerin sekme sırasını: MFC ActiveX denetimi sekme sırasının eklediyseniz bir MFC iletişim kutusunda birden çok denetim doğru sekme sırasını dağıtılmış. Bu değişiklik, bu sorunu düzeltir.
 
    Örneğin, bir ActiveX denetimini ve birkaç düzenleme denetimleri olan bir MFC iletişim uygulama oluşturun. Konumu Düzenle denetimlerin sekme sırasını ortasında ActiveX denetimi. Uygulamayı başlatmak, sekme sırasını ActiveX denetimi ve sekme sonra olan bir düzenleme denetimi tıklayın. Bu değişiklik öncesinde, odak sonraki sekme sırasını düzenleme denetiminde yerine ActiveX denetimi aşağıdaki düzenleme denetimine bir sorun oluştu.
 
-- `CFileDialog` Sınıf: Özel şablonları için `CFileDialog` sınıfı olamaz otomatik olarak unity'nin Windows Vista için. Bunlar hala kullanılabilir, ancak ek işlevsellik olmaz veya Windows Vista stili iletişimleri arar.
+- `CFileDialog` Sınıf: İçin özel şablonlar `CFileDialog` sınıfı olamaz otomatik olarak unity'nin Windows Vista için. Bunlar hala kullanılabilir, ancak ek işlevsellik olmaz veya Windows Vista stili iletişimleri arar.
 
-- `CWnd` Sınıf ve `CFrameWnd` sınıfı: `CWnd::GetMenuBarInfo` yöntemi kaldırıldı.
+- `CWnd` Sınıf ve `CFrameWnd` sınıfı: `CWnd::GetMenuBarInfo` Yöntemi kaldırıldı.
 
    `CFrameWnd::GetMenuBarInfo` Yöntemi sanal olmayan bir yöntem sunuldu. Daha fazla bilgi için **GetMenuBarInfo işlevi** Windows SDK.
 
-- MFC ISAPI desteği: MFC artık uygulamalar oluşturma ile Internet sunucusu uygulama programı arabirimi (ISAPI) destekler. ISAPI uzantıları, ISAPI uygulama oluşturmak istiyorsanız, doğrudan çağırabilir.
+- MFC ISAPI desteği: MFC, artık uygulamaları oluşturma ile Internet sunucusu uygulama programı arabirimi (ISAPI) destekler. ISAPI uzantıları, ISAPI uygulama oluşturmak istiyorsanız, doğrudan çağırabilir.
 
-- Kullanım dışı ANSI API'leri: Çeşitli MFC yöntemler ANSI sürümleri kullanım dışı bırakılmıştır. Gelecekteki uygulamalarınızın bu yöntemleri Unicode sürümlerini kullanın. Daha fazla bilgi için **yapı gereksinimleri için Windows Vista ortak denetimleri**.
+- Kullanım dışı ANSI API'ları: Çeşitli MFC yöntemler ANSI sürümleri kullanım dışı bırakılmıştır. Gelecekteki uygulamalarınızın bu yöntemleri Unicode sürümlerini kullanın. Daha fazla bilgi için **yapı gereksinimleri için Windows Vista ortak denetimleri**.
 
 ## <a name="visual-c-2005-breaking-changes"></a>Visual C++ 2005 bozucu değişiklikler
 
@@ -3471,7 +3472,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Çağrılırken `valarray::resize()`, içeriğini `valarray` kaybolacak ve varsayılan değerlerle değiştirilir. `resize()` Yöntemi yeniden tasarlanmıştır `valarray` yerine dinamik olarak gibi bir vektör büyütün.
 
-- Hata ayıklama yineleyiciler: Uygulamaların hata ayıklama sürümü C çalışma zamanı kitaplığı ile oluşturulan ve çalışma zamanında hangi kullanım yineleyiciler görmek yanlış başlayabilir onaylar. Bunlar devre dışı bırakmak için onaylar, _HAS_ITERATOR_DEBUGGING tanımlaması gerekir (yerini [_ıterator_debug_level](../standard-library/iterator-debug-level.md) sonra Visual Studio 2010) 0. Daha fazla bilgi için [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)
+- Yineleyiciler hata ayıklama: C çalışma zamanı kitaplığı ve hangi kullanım yineleyiciler yanlış başlayabilir görmek hata ayıklama sürümü ile oluşturulan uygulamalar, çalışma zamanında onaylar. Bunlar devre dışı bırakmak için onaylar, _HAS_ITERATOR_DEBUGGING tanımlaması gerekir (yerini [_ıterator_debug_level](../standard-library/iterator-debug-level.md) sonra Visual Studio 2010) 0. Daha fazla bilgi için [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)
 
 ## <a name="visual-c-net-2003-breaking-changes"></a>Visual C++ .NET 2003 bozucu değişiklikler
 
@@ -3523,6 +3524,6 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Derleyici artık erişilemeyen kod (C4702) bildirir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'da Visual C++ yenilikleri](../what-s-new-for-visual-cpp-in-visual-studio.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ObjectDisposedException
 ms.assetid: 68506fe4-d09c-4407-999f-1e3edb261d41
-ms.openlocfilehash: 41afe11efa23a3418ec9629a3c6f5a45015e2aa2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 566f8a05a6b81adb78113dd4ba0fb1c47fc65a2f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612959"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749847"
 ---
 # <a name="platformobjectdisposedexception-class"></a>Platform::ObjectDisposedException sınıfı
 
@@ -31,14 +31,14 @@ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

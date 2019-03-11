@@ -7,12 +7,12 @@ helpviewer_keywords:
 - template libraries
 - libraries, Standard C++
 ms.assetid: a37d3ba3-58af-47c7-9ee2-441ccd7b77ee
-ms.openlocfilehash: b6886f87aefdf57706a1850595986b779c1f2357
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea8bae08def17093a2e663bb21dfe617ae851651
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575961"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752304"
 ---
 # <a name="c-standard-library-reference"></a>C++ Standart Kitaplığı Başvurusu
 
@@ -30,4 +30,3 @@ C++ Standart Kitaplığı'nın Microsoft uygulaması için genel bir bakış sa�
 
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
 C++ Standart Kitaplığı üst bilgi dosyaları, kod örnekleri ile açıklayan başvuru konulara bağlantılar sağlar.
-

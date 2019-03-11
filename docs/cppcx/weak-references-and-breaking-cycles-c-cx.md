@@ -2,12 +2,12 @@
 title: Zayıf başvurular ve döngüleri kesme (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e
-ms.openlocfilehash: e035f298100408bd16b1087439d3ce5ac057fd2c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 252c9c1d2af0bc6911beca094d97f46e681ba2f6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572906"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747079"
 ---
 # <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve döngüleri kesme (C + +/ CX)
 
@@ -53,5 +53,4 @@ Class1::Class1()
 
 Ne zaman bir olay işleyicisi oluşturur `DisconnectedException`, olay işleyicisi abone listeden kaldırmak neden olur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
+## <a name="see-also"></a>Ayrıca bkz.

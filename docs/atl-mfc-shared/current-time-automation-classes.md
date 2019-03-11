@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Automation classes, current time
 - time, getting current
 ms.assetid: cc967f17-1189-4cf3-85f9-1969462d5f72
-ms.openlocfilehash: 97984376057462daaebbf949e96131e91928a1ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1183bc5fd42a59c73556d6fdecfd45c781e8cd7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596579"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739723"
 ---
 # <a name="current-time-automation-classes"></a>Geçerli zaman: Otomasyon sınıfları
 
@@ -27,6 +27,6 @@ Aşağıdaki yordam nasıl oluşturulacağını gösterir. bir `COleDateTime` ne
 
    [!code-cpp[NVC_ATLMFC_Utilities#177](../atl-mfc-shared/codesnippet/cpp/current-time-automation-classes_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Tarih ve Saat: Otomasyon Desteği](../atl-mfc-shared/date-and-time-automation-support.md)
+[Tarih ve saat: Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)

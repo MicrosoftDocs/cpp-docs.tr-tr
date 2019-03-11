@@ -13,12 +13,12 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - runtime [C++], language portability
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
-ms.openlocfilehash: 3296b5204faec393d3d503dc106733f97b32b248
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5883dcce5c290b197dcaa61296eb2f44f3bb882c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582604"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741820"
 ---
 # <a name="unicode-and-mbcs"></a>Unicode ve MBCS
 
@@ -41,7 +41,7 @@ Microsoft Foundation sınıfları (MFC) kitaplığı, Visual c++ C çalışma za
 
 Tanımı gereği, ASCII karakter kümesi tüm çok baytlı karakter kümeleri bir alt kümesidir. Çok baytlı karakter kümelerinin her karakter aralığı 0x00 - 0x7F aynı değere sahip ASCII karakter kümesinden karakter aynıdır. Örneğin, ASCII ve MBCS karakter dizeleri, 1-bayt NULL karakteri ('\0') 0x00 değerine sahiptir ve sondaki boş karakter gösterir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
 [Uluslararası Etkinleştirme](../text/international-enabling.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MBCS [C++], byte indices
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-ms.openlocfilehash: 4e19868e5297e1c1615efabde2aee418bc53c51e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5305a977c23d7a978a89c84809cc6fab8c5731eb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448821"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751602"
 ---
 # <a name="byte-indices"></a>Bayt Endeksleri
 
@@ -34,7 +34,7 @@ Aşağıdaki ipuçlarını kullanın:
 
    Bu ön bayt için bu nedenle doğru dizinler için bir `character`. `_mbclen` İşlevi, bir karakter (1 veya 2 bayt) boyutunu belirler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)<br/>
 [Dizedeki Son Karakter](../text/last-character-in-a-string.md)

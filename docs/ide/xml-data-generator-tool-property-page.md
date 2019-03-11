@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - XML Data Generator Tool property page
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb
-ms.openlocfilehash: a5df028a809fa9dae623ec8023b7c107c5ff095b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e194b73d11a4ca57030e86ec009db3bd31403ad9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554109"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751967"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML Verileri Oluşturma Aracı Özellik Sayfası
 
@@ -37,6 +37,6 @@ Erişim hakkında daha fazla bilgi için **XML verileri oluşturma aracı** öze
 
 Bu nesnenin üyeleri programlamayla erişme hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

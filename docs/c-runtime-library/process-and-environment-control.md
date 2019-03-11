@@ -11,12 +11,12 @@ helpviewer_keywords:
 - environment control routines
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-ms.openlocfilehash: df080d1ed8c5a00711468a159acb07159ad31930
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c837739d4954c65d45a590bd5c7f904e2375102e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329416"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742100"
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 
@@ -28,7 +28,7 @@ Başlatma, durdurma ve bir programın işlemlerini yönetmek için işlem deneti
 |-------------|---------|
 |[abort](../c-runtime-library/reference/abort.md)|Arabellekler temizlemeye veya kaydettirilmiş işlevlerini çağırma olmadan işlem iptal **atexit** ve **_onexit**|
 |[Assert](../c-runtime-library/reference/assert-macro-assert-wassert.md)|Test için mantık hatası|
-|[_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makroları|Benzer şekilde **assert**, ancak yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümleri kullanılabilir|
+|[_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macros|Benzer şekilde **assert**, ancak yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümleri kullanılabilir|
 |[atexit](../c-runtime-library/reference/atexit.md)|Program sonlandırma yürütmeyi için zamanlama rutinleri|
 |[_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)|Bir Windows işletim sistemi işlemi yeni bir iş parçacığı oluşturma|
 |[_cexit](../c-runtime-library/reference/cexit-c-exit.md)|Gerçekleştirmek **çıkmak** sonlandırma yordamları (örneğin, arabellekler temizleme), ardından dönün denetim çağırma program işlemi sonlandırmaz|
@@ -86,6 +86,6 @@ Arasındaki fark **_exec** ve **_spawn** ailesinden olan bir **_spawn** işlevi 
 |**_execve**, **_spawnve**|Hayır|Dizi|Yeni işlem son bağımsız değişken olarak geçirilen ortam tablosuna bir işaretçi|
 |**_execvp**, **_spawnvp**|Evet|Dizi|Devralınan işlem çağırma|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

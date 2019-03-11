@@ -1,5 +1,5 @@
 ---
-title: 'Unicode: Joker Karakter Kümesi'
+title: 'Unicode: Joker karakter kümesi'
 ms.date: 11/04/2016
 f1_keywords:
 - c.international
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - Unicode [C++], wide character set
 - wide characters [C++], Unicode
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
-ms.openlocfilehash: 0432de1203d595947eb958a032870a929f00aeb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc9028be85870766af0274ede091d74a9b4d5130
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618302"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745431"
 ---
-# <a name="unicode-the-wide-character-set"></a>Unicode: Joker Karakter Kümesi
+# <a name="unicode-the-wide-character-set"></a>Unicode: Joker karakter kümesi
 
 Bir geniş karakter 2 baytlık çok dilli karakter kodudur. Modern tüm dünyada teknik simgeleri ve yayımlama özel karakterler dahil olmak üzere bilgi işlem kullanımı herhangi bir karakter olarak geniş bir karakter Unicode belirtimine göre temsil edilebilir. Microsoft içeren büyük bir consortium tarafından geliştirilen ve korunan, Unicode standardı artık yaygın olarak kabul edilir.
 
@@ -22,7 +22,7 @@ Bir geniş karakter türüdür **wchar_t**. Geniş karakterli dize olarak temsil
 
 Genellikle, geniş karakterler çok baytlı karakterden daha fazla bellek alan alır ancak işlemine daha hızlıdır. Ayrıca, yalnızca bir yerel ayar çok baytlı kodlama anında temsil edilebilir, dünyanın tüm karakter kümeleri ise aynı anda Unicode gösterimi tarafından temsil edilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

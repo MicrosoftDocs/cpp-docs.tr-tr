@@ -12,12 +12,12 @@ helpviewer_keywords:
 - _pgmptr function
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-ms.openlocfilehash: c59134afc3b4d0f6360984c67dede28c27010bae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6991dfe90e58352b26d7c914e1601a68674b8a5b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597541"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749873"
 ---
 # <a name="pgmptr-wpgmptr"></a>_pgmptr, _wpgmptr
 
@@ -75,6 +75,6 @@ int main( void )
 
 Kullanabileceğinizi `_wpgmptr` değiştirerek `%Fs` için `%S` ve `main` için `wmain`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler](../c-runtime-library/global-variables.md)

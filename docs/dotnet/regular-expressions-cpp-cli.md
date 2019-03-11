@@ -28,12 +28,12 @@ helpviewer_keywords:
 - data [C++], formatting
 - regular expressions [C++], validating data formatting
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
-ms.openlocfilehash: ace05ffc0c9b0357e40f7a2520921c672014b9ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 24a278e4d5b208c5d8e3b95b9f5a0bd0306dbab3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604340"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741900"
 ---
 # <a name="regular-expressions-ccli"></a>Normal İfadeler (C++/CLI)
 
@@ -316,6 +316,6 @@ int main()
 
 [.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

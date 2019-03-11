@@ -1,5 +1,5 @@
 ---
-title: 'Özel Derleme Adımı Özellik Sayfası: Genel'
+title: 'Özel derleme adımı özellik sayfası: Genel'
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCustomBuildStep.AdditionalInputs
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - project properties, custom build step
 - custom build step (general)
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
-ms.openlocfilehash: dc6765c9519c6cdb4245afa2f07079548a07e1fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c144648308fa91b8da98c0f2992174203c2e5ae7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621760"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746181"
 ---
-# <a name="custom-build-step-property-page-general"></a>Özel Derleme Adımı Özellik Sayfası: Genel
+# <a name="custom-build-step-property-page-general"></a>Özel derleme adımı özellik sayfası: Genel
 
 Projenizdeki her bir proje yapılandırması ve hedef platform bileşimi için, proje oluşturulduğunda gerçekleştirilecek özel bir adım belirtebilirsiniz.
 
@@ -35,7 +35,7 @@ Bu sayfa Linux sürümü için bkz: [özel derleme adımı özellikleri (Linux C
 
    Özel derleme adımı çalıştırıldığında görüntülenen ileti.
 
-- **çıkışlar**
+- **Çıkışlar**
 
    Özel derleme adımının oluşturduğu çıkış dosyası. Artımlı derlemelerin doğru çalışması için bu ayar gereklidir.
 
@@ -59,6 +59,6 @@ Bu sayfa Linux sürümü için bkz: [özel derleme adımı özellikleri (Linux C
 
 1. Ayarları değiştirin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

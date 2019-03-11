@@ -5,12 +5,12 @@ helpviewer_keywords:
 - binary streams
 - text streams
 ms.assetid: 57035e4a-955d-4e04-a560-fcf67ce68b4e
-ms.openlocfilehash: a47c0b79b10f685c1f43ae4bfbfc6e1b9ea2b508
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3754a62fa02bc532eb71eba6b0a8837791b179ea
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664912"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747715"
 ---
 # <a name="text-and-binary-streams"></a>Metin ve İkili Akışlar
 
@@ -36,6 +36,6 @@ Bu nedenle, ikili bir akış içinde konumlandırma akışın sonuna göreli kon
 
 Bir bayt akışı, bir dosya bir bayt dizisi olarak değerlendirir. Bir program içindeki aynı yukarıda açıklanan olası değişiklikleri dışında bir bayt dizisini akış benzer.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)

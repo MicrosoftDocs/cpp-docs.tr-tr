@@ -5,12 +5,12 @@ helpviewer_keywords:
 - last character in string
 - MBCS [C++], last character in string
 ms.assetid: 0a180376-4e55-41e8-9c64-539c7b6d8047
-ms.openlocfilehash: 535c2e58edab49e0e2a9dbc3fce9821d5909f1c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c99628cd12738fabb877a94cfd04a4033ee45aa
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456270"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740290"
 ---
 # <a name="last-character-in-a-string"></a>Dizedeki Son Karakter
 
@@ -38,7 +38,7 @@ Aşağıdaki ipuçlarını kullanın:
 
    Bu kod MBCS işlevlerini kullanır `_mbsrchr` ve `_mbsinc`. Bu işlevler MBCS kullanan olduğundan, bunlar arasında ayrım yapabilme kolaylığı bir '\\'karakteri ve sondaki baytı'\\'. Dizedeki son karakter ('\0') null ise kod bazı eylemleri gerçekleştirir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)<br/>
 [Karakter Atama](../text/character-assignment.md)

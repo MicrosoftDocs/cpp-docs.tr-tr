@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controlling streams
 - streams
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
-ms.openlocfilehash: ac584e36154d0035ce3408b1302513dd7e960bf8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85c7e1b22519287fbd03d89487d6639f197a8b63
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525933"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743319"
 ---
 # <a name="controlling-streams"></a>Akışları Denetleme
 
@@ -37,6 +37,6 @@ A `FILE` nesneyi bir akışa durumunu depolar da dahil olmak üzere:
 
 Herhangi bir değeri depolanan değiştirmeyin bir `FILE` nesne veya o nesne ile kullanmak için belirttiğiniz dosya arabelleği. Kopyalanamıyor bir `FILE` nesne ve temelinizi kopya olarak adresini kullanan bir `stream` kitaplığı işlevi bağımsız değişken.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)

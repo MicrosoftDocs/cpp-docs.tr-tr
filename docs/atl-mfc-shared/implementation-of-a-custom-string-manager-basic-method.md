@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - IAtlStringMgr class, using
 ms.assetid: eac5d13e-cbb4-4e82-b01e-f5f2dbcb962a
-ms.openlocfilehash: 4e3ffcdcd034fea81734aaeb87e4c33d81647f66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c30c08217a09f600f8801bec9f50c4341e983a6b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537822"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752356"
 ---
 # <a name="implementation-of-a-custom-string-manager-basic-method"></a>Uygulama özel dize Yöneticisi (temel yöntem)
 
@@ -19,9 +19,9 @@ Dize verileri ATL tarafından sağlanan kullanmak için bellek ayırma düzeni �
 
 - [CWin32Heap](../atl/reference/cwin32heap-class.md) kullanılarak bir Win32 yığınının tutamacını sarar [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc), [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree), ve [HeapRealloc](/windows/desktop/api/heapapi/nf-heapapi-heaprealloc)
 
-- [CLocalHeap](../atl/reference/clocalheap-class.md) Win32 API'ları sarmalar: [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc), [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree), ve [LocalRealloc](/windows/desktop/api/winbase/nf-winbase-localrealloc)
+- [CLocalHeap](../atl/reference/clocalheap-class.md) sarmalar Win32 API'ları: [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc), [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree), ve [LocalRealloc](/windows/desktop/api/winbase/nf-winbase-localrealloc)
 
-- [CGlobalHeap](../atl/reference/cglobalheap-class.md) Win32 API'ları sarmalar: [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc), [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree), ve [GlobalRealloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
+- [CGlobalHeap](../atl/reference/cglobalheap-class.md) sarmalar Win32 API'ları: [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc), [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree), ve [GlobalRealloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
 
 - [CComHeap](../atl/reference/ccomheap-class.md) COM görev ayırıcısı API'leri sarmalar: [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree), ve [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)
 
@@ -33,7 +33,6 @@ Dize bellek yönetimi amacıyla en kullanışlı sınıftır `CWin32Heap` çünk
 
 [!code-cpp[NVC_ATLMFC_Utilities#181](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_2.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
-

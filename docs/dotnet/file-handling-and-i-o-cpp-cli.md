@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], text
 - text files, writing in C++
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-ms.openlocfilehash: 8f60ece05443393456693aba3bc674f52822432a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 7009c0b017c403c3f0108aa84b8ddb25a1d1564f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693483"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749379"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 
@@ -136,7 +136,7 @@ int main()
 
 Aşağıdaki kod örneğinde nasıl iki sınıflarını kullanarak ikili verileri bir dosyadan okunur gösterir <xref:System.IO?displayProperty=fullName> ad alanı: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryReader>. <xref:System.IO.FileStream> gerçek dosyayı temsil eder. <xref:System.IO.BinaryReader> ikili erişime izin veren akış için bir arabirim sağlar.
 
-Kod örneği, data.bin adlı ve ikili biçimde tamsayılar içeren bir dosyayı okur. Bu türdeki dosyalar hakkında daha fazla bilgi için bkz. [nasıl yapılır: ikili dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md).
+Kod örneği, data.bin adlı ve ikili biçimde tamsayılar içeren bir dosyayı okur. For information about this kind of file, see [How to: İkili dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md).
 
 ### <a name="example"></a>Örnek
 
@@ -177,7 +177,7 @@ int main()
 
 Aşağıdaki kod örneği, açın ve kullanarak bir kerede bir metin dosyası bir satırı okumak gösterilmiştir <xref:System.IO.StreamReader> tanımlanan sınıfı <xref:System.IO?displayProperty=fullName> ad alanı. Bu sınıf örneği metin dosyası açmak için kullanılır ve ardından <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> yöntemi her satırı almak için kullanılır.
 
-Bu kod örneği, textfile.txt adlı ve metin içeren bir dosyayı okur. Bu türdeki dosyalar hakkında daha fazla bilgi için bkz. [nasıl yapılır: metin dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md).
+Bu kod örneği, textfile.txt adlı ve metin içeren bir dosyayı okur. For information about this kind of file, see [How to: Metin dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md).
 
 ### <a name="example"></a>Örnek
 
@@ -261,7 +261,7 @@ int main()
 
 Aşağıdaki kod örneği, ikili verileri bir dosyaya yazmak gösterir. İki sınıf <xref:System.IO> ad alanı kullanılır: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryWriter>. <xref:System.IO.FileStream> gerçek dosyayı temsil ederken <xref:System.IO.BinaryWriter> ikili erişime izin veren akış için bir arabirim sağlar.
 
-Aşağıdaki kod örneği, ikili biçimde tamsayılar içeren bir dosyasına yazar. Kod ile bu dosyayı okuma [nasıl yapılır: ikili dosyaları okuma (C + +/ CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md).
+Aşağıdaki kod örneği, ikili biçimde tamsayılar içeren bir dosyasına yazar. This file can be read with the code in [How to: İkili dosyaları okuma (C + +/ CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md).
 
 ### <a name="example"></a>Örnek
 
@@ -332,10 +332,8 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-
-[Dosya ve Stream g / Ç](/dotnet/standard/io/index)
-
-[System.IO ad alanı](https://msdn.microsoft.com/library/system.io.aspx)
+[C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[Dosya ve Akış G/Ç'si](/dotnet/standard/io/index)<br/>
+[System.IO ad alanı](/dotnet/api/system.io)

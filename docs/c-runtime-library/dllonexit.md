@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-ms.openlocfilehash: 70e69952e350f96179298e2d64ec6ddf7b9167bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6c077ac010c0b5d94ba21ba823441ea6ac932b9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625426"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739380"
 ---
 # <a name="dllonexit"></a>__dllonexit
 
@@ -67,6 +67,6 @@ Başarılı olursa, kullanıcının işlevi işaretçisi. Aksi takdirde, bir **N
 |-------------|-------------------|
 |__dllonexit|OnExit.c|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)

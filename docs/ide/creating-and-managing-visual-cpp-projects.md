@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: 2c3722fe9da764a578c255e50120fa2770555665
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e511ef597e64a3782ce7a3ce650db065e9299cdd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553185"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744329"
 ---
 # <a name="creating-and-managing-msbuild-based-visual-c-projects"></a>Visual C++ MSBuild tabanlı projeler oluşturma ve yönetme
 
@@ -53,7 +53,7 @@ Visual C++ projeleri oluşturmak için sihirbaz kullanma
 [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
 Sınıfları, yöntemleri, değişkenler ve diğer öğeleri işlevselliği eklemek için projenize eklemeyi açıklar.
 
-[Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme](../ide/how-to-organize-project-output-files-for-builds.md)<br>
+[Nasıl yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme](../ide/how-to-organize-project-output-files-for-builds.md)<br>
 Proje çıktı dosyalarını düzenleme açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
@@ -61,6 +61,6 @@ Proje çıktı dosyalarını düzenleme açıklar.
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br>
 Programınızın komut satırından veya Visual Studio'nun tümleşik geliştirme ortamından oluşturmayı açıklayan konulara bağlantılar sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)

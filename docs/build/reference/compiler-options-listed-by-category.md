@@ -4,12 +4,12 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 63b621bf99a1aeada10706badfe19cde417d7233
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 128b477a2c4252c841990e2a2462029abe5a3bbb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676506"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746975"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -118,9 +118,9 @@ Bu makale derleyici seçeneklerinin Kategorik bir listesini içerir. Alfabetik l
 |[/ VMs](vmm-vms-vmv-general-purpose-representation.md)|Tek devralma bildirir.|
 |[/vmv](vmm-vms-vmv-general-purpose-representation.md)|Sanal devralma bildirir.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|C 7.0 uyumlu hata ayıklama bilgileri oluşturur.|
-|[/Za](za-ze-disable-language-extensions.md)|Dil uzantılarını devre dışı bırakır.|
+|[/Za](za-ze-disable-language-extensions.md)|C89 dil uzantılarını devre dışı bırakır.|
 |[/Zc](zc-conformance.md)|Uyarınca standart davranışı belirtir [/Ze](za-ze-disable-language-extensions.md).|
-|[/Ze](za-ze-disable-language-extensions.md)|Kullanım dışı. Dil uzantılarını etkinleştirir.|
+|[/Ze](za-ze-disable-language-extensions.md)|Kullanım dışı. C89 dil uzantılarını etkinleştirir.|
 |[/ZF](zf.md)|PDB oluşturma zamanında paralel yapılar artırır.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Düzenle ve devam et ile uyumlu bir program veritabanı'nda hata ayıklama bilgilerini içerir. (yalnızca x86)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Tam hata ayıklama bilgisi üretir.|

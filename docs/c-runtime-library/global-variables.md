@@ -8,12 +8,12 @@ helpviewer_keywords:
 - variables, global
 - global variables, Microsoft run-time library
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-ms.openlocfilehash: b66d77285cb601b30a89a313fa21b815f42775b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dfa78bd2c7aae7cc6059443066cbef58512755ce
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522547"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744372"
 ---
 # <a name="global-variables"></a>Global Değişkenler
 
@@ -30,7 +30,7 @@ Microsoft C çalışma zamanı kitaplığı aşağıdaki genel değişkenleri ve
 |[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)|Karakter-sınıflandırma işlevleri tarafından kullanılan bilgileri içerir.|
 |[_pgmptr, _wpgmptr](../c-runtime-library/pgmptr-wpgmptr.md)|Kullanım dışı. Bunun yerine, `_get_pgmptr` veya `_get_wpgmptr`.<br /><br /> Program, tam adını veya programın nasıl çağrıldığı bağlı olarak, dosya adı uzantısı olmadan program adı tam veya göreli yoluna program başlangıcında başlatıldı.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [Global Sabitler](../c-runtime-library/global-constants.md)<br/>

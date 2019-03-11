@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - finally keyword [C++]
 ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
-ms.openlocfilehash: 5849a24d7b5d3d4f4a6d24d8cab3dd32f9d1de14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb2bbdb36a102c7ef8974a9ac210473f2306f5d6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490772"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746779"
 ---
 # <a name="finally"></a>finally
 
@@ -56,6 +56,6 @@ MyException
 in finally
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)

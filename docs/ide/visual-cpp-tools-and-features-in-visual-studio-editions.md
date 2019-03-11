@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, versions
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: 7f40e59ae3e5e883827a212a16d1dd19822dc136
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3d3c6e25594eb3bb01ad3fc995a24cdc723d5726
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463758"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751901"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve özellikleri Visual Studio sürümleri
 
@@ -172,7 +172,7 @@ Aşağıdaki tablolarda, Visual Studio'da bulunan Visual C++ özellikleri göste
 |Kod Haritası ve bağımlılık grafikleri|||salt okunur|X|
 |Kod Haritası hata ayıklama||||X|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio)<br/>
 [Visual Studio'daki yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>

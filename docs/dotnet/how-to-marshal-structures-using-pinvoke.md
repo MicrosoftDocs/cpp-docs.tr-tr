@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama'
+title: 'Nasıl yapılır: PInvoke kullanarak yapıları sıralama hazırlama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - interop [C++], structures
 - marshaling [C++], structures
 ms.assetid: 35997e6f-9251-4af3-8c6e-0712d64d6a5d
-ms.openlocfilehash: e79eb343f81cf2d66e394be7561d2c9727c4c9ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d5c64a3e93cd85d7e38bac7c0ea3fa3c3301abc9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429118"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748001"
 ---
-# <a name="how-to-marshal-structures-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama
+# <a name="how-to-marshal-structures-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak yapıları sıralama hazırlama
 
 Bu belgede, C stili yapıları tarafından yönetilen işlevlerden P/Invoke kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. C++ birlikte çalışabilirlik özellikleri yerine kullanmanızı öneririz ancak P/Invoke küçük derleme zamanı hata raporlama, P/Invoke sağladığı için tür açısından güvenli değildir ve yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu değilse, uygulama can sıkıcı olabilir P/Invoke tek seçenek kullanılabilir. Aksi takdirde, aşağıdaki belgelere bakın:
 
 - [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
 
-- [Nasıl yapılır: PInvoke Kullanarak Dizeleri Sıralama](../dotnet/how-to-marshal-strings-using-pinvoke.md)
+- [Nasıl yapılır: PInvoke Kullanarak Dizeleri Hazırlama](../dotnet/how-to-marshal-strings-using-pinvoke.md)
 
 Varsayılan olarak, yerel ve yönetilen yapıları farklı bellekte, bu nedenle başarıyla veri bütünlüğünü korumak için ek adımlar gerektirir yönetilen veya yönetilmeyen sınırında yapıları geçirme düzenlenmiştir.
 
@@ -131,6 +131,6 @@ int main() {
 [managed] x=50 y=50
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

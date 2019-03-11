@@ -19,12 +19,12 @@ helpviewer_keywords:
 - CStringData class
 - shared classes, CStringData
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
-ms.openlocfilehash: 24d1321c66fb6cebbd2e86da3e85fdb8e1a3d33d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5977d26cade89f2e70453d5184323958e99e54c4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589533"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748521"
 ---
 # <a name="cstringdata-class"></a>CStringData sınıfı
 
@@ -249,8 +249,7 @@ Dize veri nesnesinin karakter arabelleği kilidini açmak için bu işlevi çağ
 
 Geliştirici dize Paylaşılmaması gerektiğini emin olmanız gerekir, kilitleme ve kilidini açma kullanılır. Kilitleme iyi bir örnek tarafından gösterilen [LockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [UnlockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) yöntemlerinin `CSimpleStringT`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

@@ -2,12 +2,12 @@
 title: Varsayılan ad alanı
 ms.date: 12/30/2016
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
-ms.openlocfilehash: ffea9e1132b4c66f38661392cbafb94635b318e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60a47c9549ee40b419eb5f4aa84720f8dcd1c366
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558732"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739195"
 ---
 # <a name="default-namespace"></a>Varsayılan ad alanı
 
@@ -50,6 +50,6 @@ Tüm yerleşik türler aşağıdaki üyelerini devralır.
 
 **Başlık:** vccorlib.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)

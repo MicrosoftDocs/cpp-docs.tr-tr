@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::MTAThreadAttribute Class
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-ms.openlocfilehash: 07a20457df1bb9124b965cfae27d30e9f31d7531
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4564def412834ae0586292e8aa533d3b2bd0d679
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528082"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745268"
 ---
 # <a name="platformmtathreadattribute-class"></a>Platform::MTAThreadAttribute sınıfı
 
@@ -52,7 +52,7 @@ MTAThreadAttribute özniteliğini devraldığı [Platform::Object sınıfı](../
 
 **Meta veri:** platform.winmd
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 ## <a name="ctor"></a> MTAThreadAttribute Oluşturucusu
 
@@ -111,6 +111,6 @@ public:String^ ToString();
 
 Geçerli nesneyi temsil eden bir dize.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

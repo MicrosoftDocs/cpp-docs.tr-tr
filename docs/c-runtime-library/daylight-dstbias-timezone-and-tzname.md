@@ -21,12 +21,12 @@ helpviewer_keywords:
 - tzname function
 - time-zone variables
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
-ms.openlocfilehash: ad28ce701a4c6aa60208ed0cefe8f7dc06ef55a7
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 3f9f78d0798140399960cade7ead408f958450ba
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325925"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748261"
 ---
 # <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone ve _tzname
 
@@ -62,7 +62,7 @@ extern char *_tzname[2];
 |`_tzname[0]`|Saat dilimi adının türetilen `TZ` ortam değişkeni. "PST" varsayılan değerdir.|
 |`_tzname[1]`|DST bölgesi adı türetilen `TZ` ortam değişkeni. "Pasifik Yaz SAATİ'ne" (Pasifik Yaz Saati) varsayılan değerdir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
 [_get_daylight](../c-runtime-library/reference/get-daylight.md)<br/>

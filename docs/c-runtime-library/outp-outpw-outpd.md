@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-ms.openlocfilehash: cb3e0c9fefd62b1af3c7dd6dda01278206d1bf49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a507f4115a48372706590eb61f9e3e77a0e3548
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595526"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752070"
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
 
@@ -99,7 +99,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compati
 
 Tüm sürümleri [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)

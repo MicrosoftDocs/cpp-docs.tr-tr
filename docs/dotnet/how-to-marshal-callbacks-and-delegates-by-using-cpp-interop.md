@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama'
+title: 'Nasıl yapılır: C++ birlikte çalışmayı kullanarak geri çağrıları ve temsilcileri sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 - callbacks [C++], marshaling
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
-ms.openlocfilehash: b72b99798a2c719f1ba919478132c7133fd71ca1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3814ffbcd23168a9727b1b1d73e2c825639a9c5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615728"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739224"
 ---
-# <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama
+# <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışmayı kullanarak geri çağrıları ve temsilcileri sıralama
 
 Bu konu geri çağırmaları sıralanabileceği gösterilmektedir ve (bir geri çağırma yönetilen sürümü) Visual C++ kullanarak yönetilen ve yönetilmeyen kod arasında atar.
 
@@ -139,6 +139,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

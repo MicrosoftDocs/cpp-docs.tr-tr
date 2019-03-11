@@ -2,12 +2,12 @@
 title: Visual Studio'da C++ Linux projesi yapılandırma
 ms.date: 11/12/2018
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 0323ae57de1e03811b12fec7fea79b6bab954e44
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 0d0825a3aca8ca03759d7f7b42db90ce9700c10b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563348"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745190"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -87,7 +87,7 @@ apt install zip
 
 ![Remote Header IntelliSense](media/remote-header-intellisense.png)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)<br/>
 [C++ genel özellikleri (Linux C++)](prop-pages/general-linux.md)<br/>

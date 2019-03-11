@@ -4,14 +4,14 @@ ms.date: 09/17/2018
 helpviewer_keywords:
 - deployment for Visual C++
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
-ms.openlocfilehash: 3dc607ea082e31ba73f34ce1ca8acd3ebc78292a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2d83d45f1369e250b24708edd17f4004e030a17
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565600"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749132"
 ---
-# <a name="walkthrough-deploying-a-visual-c-application-by-using-a-setup-project"></a>İzlenecek Yol: Kurulum Projesi Kullanarak Visual C++ Uygulamasını Dağıtma
+# <a name="walkthrough-deploying-a-visual-c-application-by-using-a-setup-project"></a>İzlenecek yol: Bir kurulum projesi kullanarak Visual C++ uygulamasını dağıtma
 
 Visual C++ uygulaması dağıtmak için bir kurulum projesi kullanmayı açıklar.
 
@@ -31,7 +31,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
    > [!NOTE]
    > Varsa **MFC uygulaması** türü eksik:<br/>
-   > **Visual Studio 2017**: seçin **açık Visual Studio yükleyicisi** sol bölmesinde **yeni proje** iletişim kutusu. Yükle seçeneği altında bulunan **C++ ile masaüstü geliştirme** içinde **isteğe bağlı** adlı bileşenleri bölümünde **x86 ve x64 için Visual C++ MFC**.<br/>
+   > **Visual Studio 2017**: Seçin **açık Visual Studio yükleyicisi** sol bölmesinde **yeni proje** iletişim kutusu. Yükle seçeneği altında bulunan **C++ ile masaüstü geliştirme** içinde **isteğe bağlı** adlı bileşenleri bölümünde **x86 ve x64 için Visual C++ MFC**.<br/>
    > **Visual Studio 2015**: Windows Başlat düğmesini ve türü **Program Ekle/Kaldır**. Sonuç listesinden programını açın ve Microsoft Visual Studio 2015 yüklemenizi yüklü programlar listesinde bulun. Çift tıklayın ve ardından **Değiştir** seçip **Microsoft Foundation sınıfları** altındaki bileşen **Visual C++**.
 
 1. İçin etkin çözüm yapılandırmasını değiştirme **yayın**. Gelen **derleme** menüsünde **Yapılandırma Yöneticisi'ni**. Gelen **Configuration Manager** iletişim kutusunda **yayın** gelen **etkin çözüm yapılandırması** açılan kutusu. **Kapat**'ı tıklatın.
@@ -58,6 +58,6 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 1. Çözüm klasöründe dağıtım tarafından oluşturulan setup.exe programını bulun. Uygulama ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosyayı (ve .msi dosyasını) kopyalayabilirsiniz. Kurulum programı, Visual C++ kitaplıkları sahip ikinci bir bilgisayarda çalıştırın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dağıtım Örnekleri](deployment-examples.md)<br/>

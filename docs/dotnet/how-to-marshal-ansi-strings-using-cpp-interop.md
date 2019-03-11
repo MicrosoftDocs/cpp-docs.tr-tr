@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama'
+title: 'Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - C++ Interop, strings
 - data marshaling [C++], strings
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
-ms.openlocfilehash: 272e64a5dd8faf103daf3ab7fa17449bf3dbb7ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b73d8ed403ab0bbad7703f66f0d8d4ac23bb7766
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570513"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748040"
 ---
-# <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama
+# <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama
 
 Bu konu, ANSI dizelerini nasıl olabileceğini gösterir C++ birlikte çalışması ancak .NET Framework kullanarak geçirilen <xref:System.String> ANSI dönüştürme fazladan bir adım, bu nedenle Unicode biçiminde dizeleri temsil eder. Diğer dize türlerine ile çalışmak için aşağıdaki konulara bakın:
 
-- [Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Unicode Dizelerini Hazırlama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Hazırlama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
 Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergeleri uygulamak için yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak bu işlevler ayrı dosyalarında tanımlandıysa aynı şekilde birlikte çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesine gerek yoktur çünkü [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), kendi performans özellikleri korurlar.
 
@@ -96,6 +96,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

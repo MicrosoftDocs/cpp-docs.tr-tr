@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _TEXT type
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-ms.openlocfilehash: 3d6e43d8d39cb208efbb6010ef2591a2880fd584
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60dc4329ae4c908b9bd168584c71c42c12634bb2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647908"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749106"
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
 
@@ -56,7 +56,7 @@ Bu veri türü eşlemeleri TCHAR içinde tanımlanır. H ve olup olmadığına g
 |`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|
 |`_T` veya `_TEXT`|Herhangi bir etkisi (önişlemci tarafından kaldırıldı)|Herhangi bir etkisi (önişlemci tarafından kaldırıldı)|`L` (aşağıdaki karakter veya Unicode çözümlemesiyle dizeye dönüştürür)|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
 [Sabit ve Global Değişken Eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>

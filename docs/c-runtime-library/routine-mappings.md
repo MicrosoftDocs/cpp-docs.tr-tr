@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TCHAR.H data types, list of routine mappings
 - generic-text mappings
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-ms.openlocfilehash: d07e759c67aa1a38f64272a6a974c8980d7ba71a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60a05b8102df1ecb9bb6f66eda15ff10cb12b32a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466306"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746897"
 ---
 # <a name="routine-mappings"></a>Rutin Eşlemeler
 
@@ -262,7 +262,7 @@ Aşağıdaki tabloda sol sütunda listelenen tek yordamları hakkında daha ayr�
 |`_vtprintf`|`vprintf`|`vprintf`|`vwprintf`|
 |`_vtprintf_s`|`vprintf_s`|`vprintf_s`|`vwprintf_s`|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
 [Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>

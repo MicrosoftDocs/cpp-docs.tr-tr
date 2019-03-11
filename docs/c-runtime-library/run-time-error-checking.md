@@ -7,16 +7,16 @@ helpviewer_keywords:
 - run-time error checking
 - run-time errors, checking
 ms.assetid: c965dd01-57ad-4a3c-b1d6-5aa04f920501
-ms.openlocfilehash: 348698faa1f91e4d98acc762538fc1cbdb798e0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec07b9b0c6aa52187c3c24bff4cc51712dbf9fc8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435653"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746467"
 ---
 # <a name="run-time-error-checking"></a>Çalışma Zamanı Hata Denetimi
 
-C çalışma zamanı kitaplığı, çalışma zamanı hata denetimleri (RTC) destekleyen işlevler içerir. Çalışma zamanı hata denetimi, programınızın çalışma zamanı hataları belirli bir türde bildirilen şekilde oluşturmanıza olanak tanır. Hataları nasıl raporlandığını ve hataları hangi türde rapor belirt Daha fazla bilgi için [nasıl yapılır: yerel çalışma zamanı denetimleri kullanın](/visualstudio/debugger/how-to-use-native-run-time-checks).
+C çalışma zamanı kitaplığı, çalışma zamanı hata denetimleri (RTC) destekleyen işlevler içerir. Çalışma zamanı hata denetimi, programınızın çalışma zamanı hataları belirli bir türde bildirilen şekilde oluşturmanıza olanak tanır. Hataları nasıl raporlandığını ve hataları hangi türde rapor belirt Daha fazla bilgi için [nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks).
 
 Programınızın çalışma zamanı hata denetimini olduğu gibi özelleştirmek için aşağıdaki işlevleri kullanın.
 
@@ -29,7 +29,7 @@ Programınızın çalışma zamanı hata denetimini olduğu gibi özelleştirmek
 |[_RTC_SetErrorFunc](../c-runtime-library/reference/rtc-seterrorfunc.md)|Çalışma zamanı hata denetimleri raporlama için işleyici olarak bir işlevi belirtir.|
 |[_RTC_SetErrorType](../c-runtime-library/reference/rtc-seterrortype.md)|Çalışma zamanı hata denetimleri ile bir tür tarafından algılanan bir hata ilişkilendirir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [/RTC (Çalışma Zamanı Hata Denetimleri)](../build/reference/rtc-run-time-error-checks.md)<br/>

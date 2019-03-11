@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: c6edd8cdd089e24011df41db09f3c1bb5d6465f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cbe0b5e422c05cee46bff85e816ecc726c667749
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481464"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745168"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections:: Map sınıfı
 
@@ -160,7 +160,7 @@ bool HasKey(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Harita öğesini bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -179,7 +179,7 @@ virtual bool Insert(K key, V value);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
 *value*<br/>
@@ -201,7 +201,7 @@ V Lookup(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Haritada bir öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -258,7 +258,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olay ve gerçekleşen değişiklik türünü oluşturan nesneye hakkında bilgiler içerir. Ayrıca bkz: [IMapChangedEventArgs\<K >](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) ve [CollectionChange numaralandırma](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) olay ve gerçekleşen değişiklik türünü oluşturan nesneye hakkında bilgiler içerir. Ayrıca bkz: [IMapChangedEventArgs\<K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [CollectionChange numaralandırma](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
@@ -276,12 +276,12 @@ virtual void Remove(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
 ## <a name="size"></a>  Map::size yöntemi
 
-Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) eşlemedeki öğeler.
+Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) eşlemedeki öğeler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -293,7 +293,7 @@ virtual property unsigned int Size;
 
 Eşlem içindeki öğelerin sayısı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

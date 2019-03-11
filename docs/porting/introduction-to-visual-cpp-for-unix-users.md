@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: e930702862149de4dae65aab2f880f35850e0687
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6522461cf1f08eee9187a8f739cb21fe01e755f5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597554"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747014"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
@@ -19,7 +19,7 @@ Bu konuda, C++ ve Visual Studio tümleşik geliştirme ortamı (IDE) ile üretke
 
 C++ derleyicisi komut satırından UNIX komut satırı ortamını kullanacağınız benzer şekilde kullanabilirsiniz. Komut satırı C ve C++ derleyicisi (CL. kullanarak komut satırından derleme EXE), bağlayıcı (bağlantı. EXE) ve diğer NMAKE,. EXE UNIX Microsoft sürümünü yardımcı olun.
 
-UNIX, komutları, / usr/bin gibi bir ortak klasöre yüklenir. Visual Studio komut satırı araçları, Visual Studio yükleme dizininde VC\bin alt ve alt dizinlerinde yüklenir. UNIX, bu araçlar düz bir komut istemi penceresinde kullanılamaz. Komut satırı araçları, bir geliştirici komut istemi kısayolunun kullanın veya çalışma kullanmak için bir geliştirici komut dosyası vcvarsall.bat gibi. Bu yolu ve C++ programları komut satırından derleme için gerekli olan diğer ortam değişkenlerini ayarlar. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).
+UNIX, komutları, / usr/bin gibi bir ortak klasöre yüklenir. Visual Studio komut satırı araçları, Visual Studio yükleme dizininde VC\bin alt ve alt dizinlerinde yüklenir. UNIX, bu araçlar düz bir komut istemi penceresinde kullanılamaz. Komut satırı araçları, bir geliştirici komut istemi kısayolunun kullanın veya çalışma kullanmak için bir geliştirici komut dosyası vcvarsall.bat gibi. Bu yolu ve C++ programları komut satırından derleme için gerekli olan diğer ortam değişkenlerini ayarlar. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [izlenecek yol: Komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).
 
 Bir geliştirici komut istemi kısayolunun açmak için girin *Geliştirici komut istemi* Desktop denetimini arayın ve seçin **Geliştirici komut istemi** Visual Studio sürümünüz için sonuç. Belirli konak ve hedef mimari için önceden yapılandırılmış bir geliştirici Komut İstemi'ni seçmek için açık **Başlat** menü (Windows simge Masaüstü üst köşesinde) ve Visual Studio sürümünüz için klasörüne kaydırma yapın , aşağıdaki gibi **Visual Studio 2017**. Klasörü açmak ve tercih edilen konak ve hedef mimari için komut istemi kısayolunun seçin.
 
@@ -63,6 +63,6 @@ Varsayılan olarak, tüm önceden derlenmiş kod dosyaları stdafx.h ve stdafx.c
 
 Daha fazla bilgi için [UNIX'ten Win32'ye taşıma](../porting/porting-from-unix-to-win32.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)

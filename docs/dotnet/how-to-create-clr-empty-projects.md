@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Boş CLR Projeleri Oluşturma'
+title: 'Nasıl yapılır: Boş CLR projeleri oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR empty projects
 - CLR empty projects, creating
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
-ms.openlocfilehash: 0acfa073d0aa11dec63ad26f1fac4ec206cda6c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3779887a91b69848d767c15af4a53ff2e87b760c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612140"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740485"
 ---
-# <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR Projeleri Oluşturma
+# <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR projeleri oluşturma
 
 CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir şablon **yeni proje** iletişim kutusu.
 
@@ -23,7 +23,7 @@ CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir ş
 
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
 
-   **Yeni proje** iletişim kutusu görüntülenir.
+   **Yeni Proje** iletişim kutusu görünür.
 
 1. Altında **yüklü şablonlar**, tıklayın **Visual C++** düğüm; ardından **CLR** düğümü. Seçin **CLR boş proje** simgesi.
 
@@ -34,7 +34,7 @@ CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir ş
 
 1. **Tamam**'ı tıklatın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br/>
 [Visual C++ Proje Türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)

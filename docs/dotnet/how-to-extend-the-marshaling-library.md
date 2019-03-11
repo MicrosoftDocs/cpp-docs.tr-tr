@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Hazırlama Kitaplığını Genişletme'
+title: 'Nasıl yapılır: Hazırlama kitaplığını genişletme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-ms.openlocfilehash: 697a246012544e6be1189b6cc40d6185e5ec26d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f289539807b1e9499cef51427d3f6a494545cc60
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569860"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750369"
 ---
-# <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Hazırlama Kitaplığını Genişletme
+# <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Hazırlama kitaplığını genişletme
 
 Bu konuda, veri türleri arasında daha fazla dönüştürme sağlamak için hazırlama kitaplığını genişletme açıklanmaktadır. Kullanıcılar şu anda kitaplığı tarafından desteklenen herhangi bir veri dönüştürmesi için sıralama kitaplığı genişletebilirsiniz.
 
@@ -266,6 +266,6 @@ Native address: 123 Main Street
 Native zip code: 98111
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)

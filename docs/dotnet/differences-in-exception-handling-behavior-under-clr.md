@@ -5,12 +5,12 @@ helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION macro
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-ms.openlocfilehash: 4898ff7893ec327495e757f2ffa0eb37ae051875
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e7c91e0f369a4e6fe24e656f1b9e8504d7cb434a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551339"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750435"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR Altında Özel Durum İşleme Farkları
 
@@ -97,7 +97,7 @@ We should execute this handler if compiled to native
 
 ##  <a name="vccondisassociatedrethrows"></a> İlişkisi kaldırılan beklerseniz
 
-**/ CLR** dışında (rethrow ilişkilendirilmemiş bilinir) bir catch işleyicisi bir özel durum yeniden atma desteklemez. Bu tür özel durumları kabul edilir standart bir C++ rethrow olarak. Etkin bir yönetilen özel durum olduğunda ilişkilendirilmemiş rethrow karşılaşılırsa, özel durumu bir C++ özel durum kaydırılır ve döndükten sonra. Bu tür özel durumlar yalnızca yakalanan bir özel durum türü [System::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx).
+**/ CLR** dışında (rethrow ilişkilendirilmemiş bilinir) bir catch işleyicisi bir özel durum yeniden atma desteklemez. Bu tür özel durumları kabul edilir standart bir C++ rethrow olarak. Etkin bir yönetilen özel durum olduğunda ilişkilendirilmemiş rethrow karşılaşılırsa, özel durumu bir C++ özel durum kaydırılır ve döndükten sonra. Bu tür özel durumlar yalnızca yakalanan bir özel durum türü <xref:System.Runtime.InteropServices.SEHException>.
 
 Aşağıdaki örnek, bir C++ özel durum işlenemezse yönetilen bir özel durum gösterir:
 
@@ -275,7 +275,7 @@ In my_trans_func.
 Caught an SEH exception with exception code: e0000101
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../windows/safe-cast-cpp-component-extensions.md)<br/>

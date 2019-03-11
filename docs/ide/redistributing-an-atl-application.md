@@ -7,12 +7,12 @@ helpviewer_keywords:
 - redistributing OLE DB templates
 - OLE DB templates, redistributing
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
-ms.openlocfilehash: 183363f7e69fc6d14ce3f9e681992e774b198928
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6db81064db5e83ed4ba58fd5d800215dd93eb6c9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517110"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745048"
 ---
 # <a name="redistributing-an-atl-application"></a>ATL uygulamasını yeniden dağıtma
 
@@ -42,6 +42,6 @@ filename /regserver
 
 Burada `filename` yürütülebilir dosya adıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

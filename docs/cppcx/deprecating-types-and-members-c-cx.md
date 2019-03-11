@@ -2,12 +2,12 @@
 title: Türleri ve üyeleri geçersiz kılma (C + +/ CX)
 ms.date: 12/30/2016
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-ms.openlocfilehash: 1e29f2ff73d6fb6fd499052d9f9255f8b1a659c7
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 7f488dfa522c0b48c75150d40584b0946baae806
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325854"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748456"
 ---
 # <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri geçersiz kılma (C + +/ CX)
 
@@ -54,7 +54,7 @@ Aşağıdaki tablo, kullanım dışı özniteliğin uygulanabileceği yapıları
 |Yapı alanı|
 |Parametreli Oluşturucusu|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>

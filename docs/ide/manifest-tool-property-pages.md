@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Manifest Tool property pages
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: 734a34be11ec9ede78a9d5d3f434a949e438d5fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 27612c93da6ad77ae7a787cbc0f4d9b18119bd4c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587921"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750016"
 ---
 # <a name="manifest-tool-property-pages"></a>Bildirim Aracı Özellik Sayfaları
 
@@ -25,6 +25,6 @@ Bildirim aracı hakkında daha fazla bilgi için bkz. [Mt.exe](https://msdn.micr
 
 [Gelişmiş, bildirim aracı, yapılandırma özellikleri, \<Projectname > özellik sayfaları iletişim kutusu](../ide/advanced-manifest-tool.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

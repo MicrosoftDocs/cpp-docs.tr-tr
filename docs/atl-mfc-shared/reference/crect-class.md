@@ -34,12 +34,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: 5e9d4b5c28adceb52078c13dbf18170e7a2b19e5
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: fadb430d570e516d915d520f06e4c247b131c3db
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178759"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739431"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
@@ -97,7 +97,7 @@ class CRect : public tagRECT
 |[CRect::operator! =](#operator_neq)|Belirler olmadığını `CRect` dikdörtgen eşit değil.|
 |[CRect::operator &amp;](#operator_amp)|Kesişimi oluşturur `CRect` ve bir dikdörtgen ve sonuç döndüren `CRect`.|
 |[CRect::operator &amp;=](#operator_amp_eq)|Kümeleri `CRect` kesişimi eşit `CRect` ve bir dikdörtgen.|
-|[CRect::operator&#124;](#operator_or)|Birleşimini oluşturur `CRect` ve bir dikdörtgen ve sonuç döndüren `CRect`.|
+|[CRect::operator &#124;](#operator_or)|Birleşimini oluşturur `CRect` ve bir dikdörtgen ve sonuç döndüren `CRect`.|
 |[CRect::operator &#124;=](#operator_or_eq)|Kümeleri `CRect` birleşimi eşit `CRect` ve bir dikdörtgen.|
 |[CRect::operator +](#operator_add)|İçin belirtilen uzaklık ekler `CRect` veya Şişir `CRect` ve sonuç döndüren `CRect`.|
 |[CRect::operator +=](#operator_add_eq)|İçin belirtilen uzaklık ekler `CRect` veya Şişir `CRect`.|
@@ -1280,7 +1280,7 @@ void SetRect(int x1, int y1, int x2, int y2) throw();
 *x1*<br/>
 Sol üst köşesinin x koordinatını belirtir.
 
-*Y1*<br/>
+*y1*<br/>
 Sol üst köşesinin y koordinatını belirtir.
 
 *x2*<br/>
@@ -1499,9 +1499,8 @@ Genişliği negatif olabilir.
    ASSERT(nWid == 60);
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CPoint Sınıfı](cpoint-class.md)<br/>
 [CSize Sınıfı](csize-class.md)<br/>
 [RECT](/windows/desktop/api/windef/ns-windef-tagrect)
-

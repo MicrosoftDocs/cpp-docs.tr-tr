@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MIDL, property pages
 - property pages, MIDL
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
-ms.openlocfilehash: e15706825144e84cb86625fce306af9dfc42c3a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc0b0d2b103d1f56d2e2bd3a34e31215b0a1c051
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599699"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744831"
 ---
 # <a name="midl-property-pages"></a>MIDL Özellik Sayfaları
 
@@ -19,12 +19,12 @@ ms.locfileid: "50599699"
 
 - [MIDL Özellik Sayfaları: Genel](../ide/midl-property-pages-general.md)
 
-- [MIDL Özellik Sayfaları: Çıktı](../ide/midl-property-pages-output.md)
+- [MIDL Özellik Sayfaları: Çıkış](../ide/midl-property-pages-output.md)
 
 - [MIDL Özellik Sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md)
 
 MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

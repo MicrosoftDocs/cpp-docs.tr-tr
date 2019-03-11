@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - shared classes, classes
 ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
-ms.openlocfilehash: 9943a9b56b660165f8ecfd46f0a69107ecaa632c
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 5376a87aac2b82615cd48f80e0e95208b8132bf0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177921"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750487"
 ---
 # <a name="classes-shared-by-mfc-and-atl"></a>MFC ve ATL tarafından paylaşılan sınıflar
 
@@ -34,7 +34,6 @@ MFC ve ATL arasında paylaşılan sınıfları aşağıdaki tabloda listelenmekt
 |[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|Bir zaman aralığı saniye sayısı olarak dahili olarak depolanan bir zaman miktarı.|atltime.h|
 |[Iatlstringmgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|İçin bir arabirimi temsil eder bir `CStringT` bellek yöneticisi.|atlsimpstr.h|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

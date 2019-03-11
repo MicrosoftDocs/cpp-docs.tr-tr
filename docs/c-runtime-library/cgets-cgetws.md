@@ -27,12 +27,12 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-ms.openlocfilehash: 1ebb0979e432d7f68d94a01932674fdc30f85972
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea4d7be7631f22eecbea7c6727295c17d86dba06
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434274"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750343"
 ---
 # <a name="cgets-cgetws"></a>_cgets, _cgetws
 
@@ -139,7 +139,7 @@ Line Length = 16
 Text = A line of input.
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](../c-runtime-library/reference/getch-getwch.md)

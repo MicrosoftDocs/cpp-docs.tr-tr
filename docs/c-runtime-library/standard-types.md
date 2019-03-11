@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: dd508095508cf9d0d04778b06d6296296649f710
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85ebe9052d9e8bd18dfc9b3b123871e2e5acda4e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565327"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740467"
 ---
 # <a name="standard-types"></a>Standart Türler
 
@@ -253,6 +253,6 @@ Microsoft çalışma zamanı kitaplığı aşağıdaki standart türleri ve tür
 |`wctype_t` tamsayı|Herhangi bir dil karakter kümesinin tüm karakterlerini temsil edebilir.|WCHAR.H,<br /><br /> CRTDEFS.H|
 |`wint_t` tamsayı|Herhangi bir geniş karakter veya geniş dosya sonu değerini tutabilen veri nesnesinin türü.|WCHAR.H,<br /><br /> CRTDEFS.H|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)
