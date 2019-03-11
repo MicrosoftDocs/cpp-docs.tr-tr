@@ -36,12 +36,12 @@ helpviewer_keywords:
 - strings [C++], ATL class
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
-ms.openlocfilehash: 93cb3ae0b2f358f64f0d6de26899d1b08f275b7b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ec28ed5b2f5428cabcf7570c7ac53904e9a64f0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579289"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748235"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 
@@ -1189,7 +1189,7 @@ Yok eder bir `CSimpleStringT` nesne.
 
 Yok etmek için bu yöntemi çağırın `CSimpleStringT` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

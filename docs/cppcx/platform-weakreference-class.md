@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-ms.openlocfilehash: 706877843602861d0dcf7f04a18999f30d3b77de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cadafcc227347bc2f55c8600ae63a5c0996aefae
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500450"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742090"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference sınıfı
 
@@ -130,6 +130,6 @@ WeakReference wr(mc);
 MyClass^ copy2 = wr.Resolve<MyClass>();
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

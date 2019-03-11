@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CStringT class, using
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
-ms.openlocfilehash: 60c741ec71e8637650a75d03322e98dc7c361c90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49b21d8a267eb2e8cf8c806ef21b4dd8ab36a1ff
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554299"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740855"
 ---
 # <a name="using-cstringt"></a>CStringT kullanma
 
@@ -28,7 +28,6 @@ CStringT <> Şablon sınıfı kullanarak DLL'den dışa aktarma kendi dize sın�
 [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md).<br/>
 Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

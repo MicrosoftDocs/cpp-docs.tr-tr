@@ -7,18 +7,18 @@ helpviewer_keywords:
 - .NET applications [C++]
 - Visual C++, .NET programming
 ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
-ms.openlocfilehash: 40978bff010fbb1640398c3248c595b3ae04289f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21a45dbff2b02ccce5444706c158e5bdcc6e6cc2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470154"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749821"
 ---
 # <a name="net-programming-with-ccli-visual-c"></a>.NET programlama ile C + +/ CLI (Visual C++)
 
-**Visual Studio 2015**: varsayılan olarak, Visual Studio 2015 ile oluşturulan CLR projeleri .NET Framework 4.5.2'yi hedefler. Hedef, yeni bir proje oluşturduğunuzda, .NET Framework 4.6 **yeni proje** iletişim kutusunda, açılır iletişim kutusunun üst orta hedef Framework'ü değiştirin. Var olan bir proje için hedef Framework'ü değiştirmek için projeyi kapatın, proje (.vcxproj) dosyasını düzenleyin ve hedef Framework sürümünü 4.6 için değiştirin. Proje, sonraki açışınızda ayarlarının geçerlilik kazanmasından.
+**Visual Studio 2015**: Varsayılan olarak, Visual Studio 2015 ile oluşturulan CLR projeleri .NET Framework 4.5.2'yi hedefler. Hedef, yeni bir proje oluşturduğunuzda, .NET Framework 4.6 **yeni proje** iletişim kutusunda, açılır iletişim kutusunun üst orta hedef Framework'ü değiştirin. Var olan bir proje için hedef Framework'ü değiştirmek için projeyi kapatın, proje (.vcxproj) dosyasını düzenleyin ve hedef Framework sürümünü 4.6 için değiştirin. Proje, sonraki açışınızda ayarlarının geçerlilik kazanmasından.
 
-**Visual Studio 2017**: içinde Visual Studio 2017 varsayılan framework 4.6.1 ve Framework sürümü Seçici alt kısmında **yeni proje iletişim kutusu**. C + +/ CLI kendini varsayılan olarak yüklü değil. Bileşen yüklemek için Visual Studio Yükleyicisi'ni açın ve seçin C + +/ CLI bileşen Visual C++ altında.
+**Visual Studio 2017**: Visual Studio 2017'de varsayılan çerçeve 4.6.1 ve Framework sürümü Seçici alt kısmında **yeni proje iletişim kutusu**. C + +/ CLI kendini varsayılan olarak yüklü değil. Bileşen yüklemek için Visual Studio Yükleyicisi'ni açın ve seçin C + +/ CLI bileşen Visual C++ altında.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -60,6 +60,6 @@ ms.locfileid: "50470154"
 
 [Kutulama (C++/CLI)](../dotnet/boxing-cpp-cli.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

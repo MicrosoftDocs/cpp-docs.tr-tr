@@ -20,12 +20,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: 8a6a1a69147c135ce539393e535f0e1f2d03ccfa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17d80507462b3eb0fdfb5d9e41da6162947bd3de
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580788"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742540"
 ---
 # <a name="to-functions"></a>to İşlevleri
 
@@ -45,10 +45,10 @@ Her biri **için** işlevleri ve onun ilişkili makrosu varsa, tek bir karakteri
 |`__toascii`|`__toascii`|Dönüştürür `c` ASCII karakteri|
 |`tolower`|`tolower`|Dönüştürür `c` uygunsa küçük|
 |`_tolower`|`_tolower`|Dönüştürür `c` küçük|
-|`towlower`|Yok.|Dönüştürür `c` için karşılık gelen geniş karakter küçük harf|
+|`towlower`|Hiçbiri|Dönüştürür `c` için karşılık gelen geniş karakter küçük harf|
 |`toupper`|`toupper`|Dönüştürür `c` uygun ise|
 |`_toupper`|`_toupper`|Dönüştürür `c` büyük harf|
-|`towupper`|Yok.|C karşılık gelen geniş karakter büyük harfe dönüştürür.|
+|`towupper`|Hiçbiri|C karşılık gelen geniş karakter büyük harfe dönüştürür.|
 
 İşlev sürümleri kullanılacak **için** de makro olarak tanımlanan yordamları ile makro tanımları kaldırın `#undef` yönergeleri veya CTYPE içermez. H /Za derleyici seçeneğini kullanırsanız, derleyici işlev sürümü kullanan `toupper` veya `tolower`. Bildirimleri `toupper` ve `tolower` içinde STDLIB işlevlerdir. H
 
@@ -112,7 +112,7 @@ Some of THESE letters are Capitals.
 sOME OF these LETTERS ARE cAPITALS.
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../c-runtime-library/data-conversion.md)<br/>
 [locale](../c-runtime-library/locale.md)<br/>

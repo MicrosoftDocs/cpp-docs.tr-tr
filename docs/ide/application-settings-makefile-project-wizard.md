@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - Makefile Project Wizard, application settings
 ms.assetid: e0cbce59-5984-4f68-8a1d-f7fb2007c9b4
-ms.openlocfilehash: a57b3343064494c16b140e4bd4a9127350e022ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b34ca8b36390f6a18935a2da5c2a7924a737f711
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540042"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752408"
 ---
 # <a name="application-settings-makefile-project-wizard"></a>Uygulama Ayarları, Derleme Görevleri Dosyası Proje Sihirbazı
 
@@ -33,7 +33,7 @@ Proje için bilgileri sağlayın. Belirttiğiniz seçeneklerden projesinin yans�
 
    Kullanıcının seçtiği tetiklendiğinde çalıştırılacak komut satırını belirtir **yeniden** gelen **derleme** menüsü. Görüntülenen **Rebuild all komut satırı** alanını **Nmake** sayfası proje özellik sayfası.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleme Görevleri Dosyası Projesi Sihirbazı](../ide/makefile-project-wizard.md)<br>
 [Derleme Görevleri Dosyası Projesi Oluşturma](../ide/creating-a-makefile-project.md)<br>

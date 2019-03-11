@@ -7,12 +7,12 @@ helpviewer_keywords:
 - controls [C++], directory
 - directory control routines
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-ms.openlocfilehash: b7a6eb9a74467932dcb8743d31e934d551de4246
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 327647ee2eee7e149ec0e9ebfc71883a8a3643d5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546456"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748586"
 ---
 # <a name="directory-control"></a>Dizin Denetimi
 
@@ -33,7 +33,7 @@ Bu yordamların erişmek, değiştirmek ve dizin yapısı hakkında bilgi edinin
 |[_rmdir, _wrmdir](../c-runtime-library/reference/rmdir-wrmdir.md)|Dizini Kaldır|
 |[_searchenv, _wsearchenv](../c-runtime-library/reference/searchenv-wsearchenv.md), [_searchenv_s, _wsearchenv_s](../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)|Belirtilen yol bir dosyada verilen arayın|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [Dosya İşleme](../c-runtime-library/file-handling.md)<br/>

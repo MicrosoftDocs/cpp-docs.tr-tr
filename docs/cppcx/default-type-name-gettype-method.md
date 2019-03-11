@@ -4,12 +4,12 @@ ms.date: 12/30/2016
 f1_keywords:
 - VCCORLIB/Platform::Object::GetType
 ms.assetid: 21d0bf92-fac4-48cd-9108-c6f57ba1196a
-ms.openlocfilehash: 0688e3a36c93b9c708f4836f14df4c33b218f5e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f1e856c367520a5f2945f76a5aae6b65e0f2e45
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533386"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748899"
 ---
 # <a name="defaulttypenamegettype-method"></a>Varsayılan:: (type_name):: GetType metodu
 
@@ -27,7 +27,7 @@ A [Platform::Type](../cppcx/platform-type-class.md)^ geçerli nesneyi temsil ede
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
@@ -35,6 +35,6 @@ A [Platform::Type](../cppcx/platform-type-class.md)^ geçerli nesneyi temsil ede
 
 **Başlık:** vccorlib.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Varsayılan Ad Alanı](../cppcx/default-namespace.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - SIG_IGN constant
 - SIG_DFL constant
 ms.assetid: c3cb4f15-d39e-4d9d-84f9-0d33e3eb5993
-ms.openlocfilehash: 71c2eb796680e90cd16b1798fd478506ce7aa2c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ff79626d576a05744336d36f99caf95d9b9902d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444661"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743878"
 ---
 # <a name="signal-action-constants"></a>sinyal Eylemi Sabitleri
 
@@ -38,7 +38,7 @@ Gerçekleştirilecek eylemi Kesme sinyali alındığında değerine bağlıdır 
 | `SIG_ACK`  | Bir bildirim alındı gösterir.  |
 | `SIG_ERR`  | Bir dönüş türü sinyalinden belirten bir hata oluştu.  |
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [signal](../c-runtime-library/reference/signal.md)<br/>
 [Global Sabitler](../c-runtime-library/global-constants.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointers [C++], multibyte characters
 - decrementing pointers
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
-ms.openlocfilehash: 1899e3153300bbfbfce068d29351de601f336b6d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdaee3d13a8ceab47f62100953a0eb6e51bfc255
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567095"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746805"
 ---
 # <a name="incrementing-and-decrementing-pointers"></a>İşaretçileri Artırma ve Azaltma
 
@@ -56,7 +56,7 @@ Aşağıdaki ipuçlarını kullanın:
 
 - Daha hızlı çağrılar için önceki karaktere bir işaretçi korumak isteyebileceğiniz `_mbsdec`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)<br/>
 [Bayt Endeksleri](../text/byte-indices.md)

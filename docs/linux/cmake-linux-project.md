@@ -3,12 +3,12 @@ title: Visual Studio'da bir Linux CMake projesi yapılandırma
 description: Visual Studio'da bir Linux CMake projesi yapılandırma
 ms.date: 11/01/2018
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 6f38cd3688281c0afa4d50f4bdc915b35ce24f16
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: f2186c14fbe2eb1273fceb4a378b359564eae327
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563101"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750604"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -136,12 +136,12 @@ Kendi Linux distro CMake daha eski bir sürümü olabilir. Visual Studio'da CMak
 **Visual Studio 2019**<br/>
 Geçerli bir CMake uzak makinede bulunmazsa bir bilgi çubuğu görünür ve önceden oluşturulmuş CMake ikili dosyaları otomatik olarak dağıtmak için bir seçenek sağlar. İkili dosyaların şekilde yüklenecek `~/.vs/cmake`. İkili dosyaları dağıttıktan sonra projeniz otomatik olarak yeniden neden. Tarafından belirtilen CMake unutmayın `cmakeExecutable` alanındaki `CMakeSettings.json` geçersiz (mevcut değil veya desteklenmeyen bir sürüm) ve önceden oluşturulmuş ikili dosyalar mevcut Visual Studio yoksayar `cmakeExecutable` ve önceden oluşturulmuş ikili dosyaları kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)<br/>
 [Visual C++ için CMake araçları](../ide/cmake-tools-for-visual-cpp.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md)<br/>
 [CMake ayarlarını özelleştirme](../ide/customize-cmake-settings.md)<br/>
-[Hata ayıklama oturumları CMake yapılandırma](../ide/configure-cmake-debugging-sessions.md)<br/>
-[Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama](deploy-run-and-debug-your-linux-project.md)<br/>
+[CMake hata ayıklama oturumlarını yapılandırma](../ide/configure-cmake-debugging-sessions.md)<br/>
+[Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](deploy-run-and-debug-your-linux-project.md)<br/>
 [Önceden tanımlanmış CMake yapılandırma başvurusu](../ide/cmake-predefined-configuration-reference.md)<br/>

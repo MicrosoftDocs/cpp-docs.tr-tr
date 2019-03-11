@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Visual C++, interoperability
 - native code [C++], .NET interoperatibility
 ms.assetid: f3ec6c99-c745-4256-b95b-f1d12ba17a5a
-ms.openlocfilehash: 23824cb28347bc17d7ac26bb09c9f6f55b1eb175
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae5a4583d5f074b98e346ba090246f533b80803d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666082"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742146"
 ---
 # <a name="native-and-net-interoperability"></a>Yerel ve.NET Birlikte Çalışabilirliği
 
@@ -36,5 +36,4 @@ MFC uygulamalarınız içinde ana bilgisayar Windows Forms denetimleri için MFC
 [Yönetilen Koddan Yerel İşlevleri Çağırma](../dotnet/calling-native-functions-from-managed-code.md)<br/>
 CLR olmayan DLL'leri .NET uygulamaları nasıl kullanılabileceğini anlatmaktadır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
-
+## <a name="see-also"></a>Ayrıca bkz.

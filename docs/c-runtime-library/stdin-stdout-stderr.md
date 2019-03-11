@@ -13,12 +13,12 @@ helpviewer_keywords:
 - standard input stream
 - stderr function
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
-ms.openlocfilehash: f9ed1f842bd174c2b926572856152cd69ade5a56
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 5de1ff01282f30ad133f909cb87f5d7c8d521ae5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328025"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741954"
 ---
 # <a name="stdin-stdout-stderr"></a>stdin, stdout, stderr
 
@@ -49,7 +49,7 @@ Bu işaretçiler, işlev bağımsız değişkenleri olarak kullanılabilir. Gibi
 
 Bu işaretçileri sabittir ve yeni değerler atanamaz. [Freopen](../c-runtime-library/reference/freopen-wfreopen.md) işlevi, disk dosyaları veya diğer cihazlar için akışları yönlendirmek için kullanılabilir. İşletim sistemi, bir programın standart giriş ve çıkış komut düzeyinde yönlendirmenizi sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Stream g/ç](../c-runtime-library/stream-i-o.md)<br/>
 [Global Sabitler](../c-runtime-library/global-constants.md)

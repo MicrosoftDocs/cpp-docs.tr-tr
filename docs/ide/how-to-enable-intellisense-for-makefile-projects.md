@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme"
+title: "Nasıl yapılır: Derleme görevleri dosyası projeleri için IntelliSense'i etkinleştirme"
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCNMakeTool.IntelliSense
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - Makefile projects, IntelliSense
 - IntelliSense, Makefile projects
 ms.assetid: 9443f453-f18f-4f12-a9a1-ef9dbf8b188f
-ms.openlocfilehash: 80a4696856fea46c7749cfeb120535dcdab86282
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42f4799df0dff70c65cee77ca1db58bd8fd8edc0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434677"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748625"
 ---
-# <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme
+# <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl yapılır: Derleme görevleri dosyası projeleri için IntelliSense'i etkinleştirme
 
 Visual C++ derleme görevleri dosyası projeleri için IDE içindeki bazı ayarları ya da derleyici seçenekleri, projenizin çalışılacak IntelliSense başarısız yanlış ayarlanır. Derleme görevleri dosyası projeleri Visual Studio geliştirme ortamında açıkken IntelliSense çalışır, böylece Visual C++ derleme görevleri dosyası projeleri yapılandırmak için bu yordamı kullanın.
 
@@ -46,8 +46,8 @@ Visual C++ derleme görevleri dosyası projeleri için IDE içindeki bazı ayarl
 
 Sonraki açışınızda, derleme görevleri dosyası projesi çalıştırma Visual Studio geliştirme ortamında **çözümü Temizle** komutunu ve ardından **Çözümü Derle** derleme görevleri dosyası projenize komutu. IntelliSense, IDE'de düzgün çalışması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [IntelliSense Kullanma](/visualstudio/ide/using-intellisense)<br>
 [NMAKE Başvurusu](../build/nmake-reference.md)<br>
-[Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)
+[Nasıl yapılır: Mevcut Koddan C++ Projesi Oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)

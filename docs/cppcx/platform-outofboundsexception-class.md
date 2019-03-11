@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::OutOfBoundsException
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
-ms.openlocfilehash: f3bc2e45cdb205a70128f976674ef7794a02eabf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f5165c0394726e0f6606f5261ba6306d8408948
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544499"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747222"
 ---
 # <a name="platformoutofboundsexception-class"></a>Platform::OutOfBoundsException sınıfı
 
@@ -31,14 +31,14 @@ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) s
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

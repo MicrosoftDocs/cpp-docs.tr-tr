@@ -9,12 +9,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.VerboseOutput
 - VC.Project.VCManifestTool.AssemblyIdentity
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
-ms.openlocfilehash: 5706a67ac3f6be7a916d6f4f0ee8ccfafdfb9475
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bd2f0bb67e06fbf462ea6a7779de07b2cc54592
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565223"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745119"
 ---
 # <a name="general-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Genel, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -40,7 +40,7 @@ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sa
 
    `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br>
 [Bildirim Aracı özellik sayfaları](../ide/manifest-tool-property-pages.md)<br>

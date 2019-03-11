@@ -41,12 +41,12 @@ helpviewer_keywords:
 - EXDEV constant
 - EILSEQ constant
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
-ms.openlocfilehash: 2d092f9c1626f48dcdb006e18ece2a45bfeed36e
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 0e11c11b468ff6e058ccf5c75b000396e0473bfa
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220614"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747650"
 ---
 # <a name="errno-constants"></a>errno Sabitleri
 
@@ -171,6 +171,6 @@ Aşağıdaki değerleri, POSIX ile uyumluluk için desteklenir. Bunlar POSIX olm
 #define EXDEV /* cross device link */
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Sabitler](../c-runtime-library/global-constants.md)

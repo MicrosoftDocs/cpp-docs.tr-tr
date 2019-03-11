@@ -1,5 +1,5 @@
 ---
-title: 'MIDL Özellik Sayfaları: Çıktı'
+title: 'MIDL özellik sayfaları: Çıkış'
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCMidlTool.ProxyFileName
@@ -12,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
-ms.openlocfilehash: e31f20989a40b58b0e9d49bf6102029d2efdbaf2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 392a4e7e28dce3ee4a42fe098daa48c9465f4fe2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590330"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740940"
 ---
-# <a name="midl-property-pages-output"></a>MIDL Özellik Sayfaları: Çıktı
+# <a name="midl-property-pages-output"></a>MIDL özellik sayfaları: Çıkış
 
 **Çıkış** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:
 
@@ -41,6 +41,6 @@ Erişim hakkında daha fazla bilgi için **çıkış** özellik sayfasında **MI
 
 MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MIDL Özellik Sayfaları](../ide/midl-property-pages.md)

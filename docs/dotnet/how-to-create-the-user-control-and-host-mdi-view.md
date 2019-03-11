@@ -1,28 +1,28 @@
 ---
-title: 'Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma'
+title: 'Nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], Windows Forms Controls
 - Windows Forms [C++], MFC support
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
-ms.openlocfilehash: c2705ef1938684d8521316436fccaae367629584
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d535fce47be5504f6f521cda1267344206287da
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509128"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738765"
 ---
-# <a name="how-to-create-the-user-control-and-host-mdi-view"></a>Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma
+# <a name="how-to-create-the-user-control-and-host-mdi-view"></a>Nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma
 
 Aşağıdaki adımlarda, .NET Framework kullanıcı denetimi oluşturma, denetim sınıf kitaplığında (özellikle, bir Windows Denetim Kitaplığı projesi) kullanıcı denetiminde yazar ve ardından projenin bir derlemeye derlemek gösterilmektedir. Denetimin ardından öğelerinden türetilen sınıfları kullanan MFC uygulamasından tüketilebilir [CView sınıfı](../mfc/reference/cview-class.md) ve [CWinFormsView sınıfı](../mfc/reference/cwinformsview-class.md).
 
-Bir Windows Forms kullanıcı denetimi oluşturun ve denetim sınıf kitaplığı yazma hakkında daha fazla bilgi için bkz: [nasıl yapılır: kullanıcı denetimleri yazma](/dotnet/framework/winforms/controls/how-to-author-composite-controls).
+Bir Windows Forms kullanıcı denetimi oluşturun ve denetim sınıf kitaplığı yazma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Kullanıcı denetimleri yazma](/dotnet/framework/winforms/controls/how-to-author-composite-controls).
 
 > [!NOTE]
 >  Bazı durumlarda, Windows Forms denetimleri, bir üçüncü taraf kılavuz denetimi gibi güvenilir bir şekilde bir MFC uygulamasında barındırıldığında çalışmayabilir. MFC uygulamasında bir Windows Forms kullanıcı denetimi yerleştirin ve üçüncü taraf kılavuz denetimi yerleştirmektir yerleştirmek için önerilen bir çözüm var.
 
-Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir Windows Forms Denetim Kitaplığı projesi yarattığınızı varsayar [nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
+Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir Windows Forms Denetim Kitaplığı projesi yarattığınızı varsayar [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
 
@@ -101,6 +101,6 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
 
    Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

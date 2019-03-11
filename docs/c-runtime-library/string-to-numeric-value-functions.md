@@ -16,12 +16,12 @@ helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-ms.openlocfilehash: d3e53c665378efdd63a373027f4edd6b7fb90ad3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f24b75c2fdb3aa0d84b16874d2d01f1cb96d4b9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544579"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743892"
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 
@@ -57,13 +57,13 @@ Kullanıcı tarafından sağlanan işaretçi dönüştürme son karakter olarak 
 
 `strtod` Aşağıdaki formun dizesi bekliyor:
 
-[*boşluk*] [*oturum*] [`digits`] [**.** `digits`] [{**d** &#124; **D** &#124; **e** &#124; **E**} [*oturum*] `digits`]
+[*whitespace*] [*sign*] [`digits`] [**.**`digits`] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]`digits`]
 
 A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşabilir *oturum* ya da artı (**+**) veya eksidir (**-**); ve `digits` bir veya daha fazla ondalık basamaktır. Herhangi bir basamak taban karakterden önce görünüyorsa, en az bir taban karakterden sonra yer almalıdır. Ondalık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**d**, **D**, **e**, veya **E**) ve isteğe bağlı olarak işaretli tamsayı. Üstel bir parça ya da bir taban karakter görünürse, taban karakterin dizedeki son basamağı izlediği varsayılır. Bu forma uymayan ilk karakter taramayı durdurur.
 
 `strtol`, `strtoul`, `_strtoi64`, Ve `_strtoui64` işlevleri beklediğiniz aşağıdaki formun dizesi:
 
-[*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [`digits`]
+[*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [`digits`]
 
 Temel bağımsız değişkenini 2 ile 36 arasında varsa sayının tabanı kullanılır. 0 ise, ilk karakterleri için dönüştürme son işaretçi tarafından başvurulan tabanı belirlemek için kullanılır. İlk karakter 0 ise ve ikinci karakter 'x' veya 'X' değilse, dize sekizlik bir tamsayı olarak yorumlanır; Aksi takdirde, bir ondalık sayı olarak yorumlanır. İlk karakter '0' ise ve ikinci karakter 'x' veya 'X' dize onaltılık bir tamsayı olarak yorumlanır. İlk karakter ' 1'-' 9' ise, dize ondalık bir tamsayı olarak yorumlanır. Harfler 'bir'-'z' (ya da 'A'-'Z'), 10-35 arasında değerler atanır; yalnızca atanan değerleri olan harf küçüktür *temel* izin verilir. `strtoul` ve `_strtoui64` artı izin ver (**+**) veya eksidir (**-**) oturum önekinin; baştaki eksi işareti dönüş değerine değilleme uygulandığını gösterir.
 
@@ -88,7 +88,7 @@ Bu işlevler tarafından döndürülen değer, bir taşma veya yetersiz gelme ne
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, ve `_wcstoui64` geniş karakterli sürümleridir `strtod`, `strtol`, `strtoul`, `_strtoi64`, ve `_strtoui64`sırasıyla; bir end-ın-dönüştürme işaretçisi Bu geniş karakter işlevlerin her biri bağımsız değişken geniş karakterli bir dizedir. Aksi takdirde, kendisine tek baytlık karakterlerdir karşılık gelen geniş karakter bu işlevlerin her biri aynı şekilde davranır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../c-runtime-library/data-conversion.md)<br/>
 [locale](../c-runtime-library/locale.md)<br/>

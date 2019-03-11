@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: 6ba387b8d3be0e3f91a844bb7633bedfdb7ee9d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a74184a8cbc4126988da2ba0be61d9f5b2bb71c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607811"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745218"
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException sınıfı
 
@@ -73,11 +73,11 @@ Aşağıdaki önceden tanımlanmış özel durumlar COMException türetilmiştir
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
@@ -129,6 +129,6 @@ public:property String^ Message {    String^ get();}
 
 Özel durumun açıklaması.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

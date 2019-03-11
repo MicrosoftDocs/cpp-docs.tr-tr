@@ -8,12 +8,12 @@ helpviewer_keywords:
 - list C++ XML tag
 - <list> C++ XML tag
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
-ms.openlocfilehash: 08751e5fcdf246dd5ad285fc0cda5114d99cce15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 015647cd381ba4dc0c099b322e3c5870246c9fc2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646675"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751352"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;Liste&gt; (Visual C++)
 
@@ -69,6 +69,6 @@ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) i
 class MyClass {};
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

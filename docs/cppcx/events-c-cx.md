@@ -2,12 +2,12 @@
 title: Olaylar (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: 68b9e70b13f0996c43c24e6670c4d0a052c194cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e7e8616831e66a7f59ed849fc92ef2553aadb5b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579133"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745088"
 ---
 # <a name="events-ccx"></a>Olaylar (C + +/ CX)
 
@@ -58,7 +58,7 @@ Birden çok işleyicisi aynı olay ile ilişkili olabilir. Olay kaynağı, aynı
 
 Olay alıcıları olay işleyicileri, olay kaynağı çağırır sırasını garanti edilmez ve çağrıdan diğerine farklılık gösterebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Temsilciler](../cppcx/delegates-c-cx.md)<br/>

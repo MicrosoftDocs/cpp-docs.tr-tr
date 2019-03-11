@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Runtime::CompilerServices Namespace
 ms.assetid: 8613b6b3-b193-45d1-b956-881a4a700788
-ms.openlocfilehash: a953d3d8d8c28ac7741d0bd8dd11477cf5174eea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88eac06eeb97fce26f321e8beb494b6b9e66be41
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459988"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746025"
 ---
 # <a name="platformruntimecompilerservices-namespace"></a>Platform::Runtime:: CompilerServices Namespace
 
@@ -60,6 +60,6 @@ Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri 
 
 **Namespace:** Platform::CompilerServices
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

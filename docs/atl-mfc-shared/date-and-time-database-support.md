@@ -1,5 +1,5 @@
 ---
-title: 'Tarih ve saat: veritabanı desteği'
+title: 'Tarih ve saat: Veritabanı desteği'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tables [C++]
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - databases [C++], date/time data
 - COleDateTimeSpan class, database programming
 ms.assetid: 4a57a1bb-fad5-4b70-b32c-42ad75c710c8
-ms.openlocfilehash: be827455d79f6a6a8d7576b6deade2ffd7b45e20
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e15770558e011fd41b29135f7efbefc2ad8c434
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676765"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750226"
 ---
-# <a name="date-and-time-database-support"></a>Tarih ve saat: veritabanı desteği
+# <a name="date-and-time-database-support"></a>Tarih ve saat: Veritabanı desteği
 
 Sürüm 4.0 itibariyle MFC veritabanı programlama kullandığı [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) ve [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) tarih ve saat verilerini temsil eden sınıf. Otomasyon'da de kullanılır, bu sınıflar sınıfından türetilmiş [COleVariant](../mfc/reference/colevariant-class.md). Bunlar farklı tarih ve saat verilerini yönetmek için daha iyi destek sağlamak [CTime](../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md).
 
@@ -26,7 +26,6 @@ Sürüm 4.0 itibariyle MFC veritabanı programlama kullandığı [COleDateTime](
 
 - [Tarih ve saat programlama Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)
-

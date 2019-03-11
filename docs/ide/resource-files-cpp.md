@@ -6,12 +6,12 @@ helpviewer_keywords:
 - resources [C++]
 - file types [C++], resource files
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-ms.openlocfilehash: f9ead50c1c8761968ebad65f6a5289cfeea8fdaf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e19ad88a52467cd7ad2d5fa17dd964fd1bb38429
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623008"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747053"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
@@ -30,6 +30,6 @@ Bkz: [kaynaklarıyla çalışmaya](../windows/working-with-resource-files.md) da
 |ToolBar.bmp|*PROJNAME*\res|Kaynak Dosyalar|Uygulamanın veya denetimin bir araç veya palet temsil eden bir bit eşlem dosyası. Bu bit eşlem projenin kaynak dosyasına dahil edilir. İlk araç çubuğu ve durum çubuğu içinde yapılandırılan **CMainFrame** sınıfı.|
 |Ribbon.mfcribbon ms|*PROJNAME*\res|Kaynak Dosyalar|Şerit düğmeleri, denetimleri ve özniteliklerini tanımlayan XML kodunu içeren kaynak dosya. Daha fazla bilgi için [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md).|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)

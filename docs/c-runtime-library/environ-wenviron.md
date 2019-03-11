@@ -13,12 +13,12 @@ helpviewer_keywords:
 - process environment
 - wenviron function
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-ms.openlocfilehash: 5982aa367aa043dbe7a5c41128c3646f520d3b4a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56f6f1d06d834ccab68daf859fac065cf215582c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666914"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748929"
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
 
@@ -74,7 +74,7 @@ Bu örnek için kullanılan gösteriminde oluşturan karakter dizelerine C dize 
 
 Bu nedenle, ortamda çok baytlı değerini "`env_var_z`" ilk örtük çağrısından sonra `putenv` olacaktır "`string1`", ancak bu değer, ikinci örtük çağrısında belirttikleri `putenv`, değeri "`env_var_z`" olan ayarlamak "`string2`". Unicode ortam (içinde `_wenviron`) ve çok baytlı ortamı (içinde `_environ`) bu nedenle bu dizi çağrıları izleyerek farklı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
 [getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)<br/>

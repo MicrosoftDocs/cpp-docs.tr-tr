@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: c90303db63724bbcf584340147555814d9a92f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31f9d9aceba167b516c9d37724e240f1bc4586e1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562779"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749912"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
 
@@ -19,7 +19,7 @@ Bellek ayırma ilgili bir sorun meydana gelebilir (açıkça ile `new` veya `mal
 
 Bu sorunun başka bir belirti gibi hata ayıklama sırasında çıktı penceresinde bir hata olabilir:
 
-YIĞIN []: RtlValidateHeap(#,#) için belirtilen geçersiz adresi
+YIĞIN []: Geçersiz adres için RtlValidateHeap(#,#) belirtildi
 
 ## <a name="causes"></a>Nedenler
 
@@ -122,6 +122,6 @@ CRT yalnızca bir kopyasını kullanılmasını sağlamak amacıyla DLL ve .exe 
 New MYLIB variable is: c:\mylib;c:\yourlib
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

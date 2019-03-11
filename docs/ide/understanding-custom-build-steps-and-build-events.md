@@ -11,12 +11,12 @@ helpviewer_keywords:
 - build steps [C++], build events
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-ms.openlocfilehash: fbc29831a11f20e8363f1e01afcbace4896d7491
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6968f209379c4df88d717cb595042d96eec2c59c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608201"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745106"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
 
@@ -28,7 +28,7 @@ Gelen Visual C++ geliştirme ortamında, yapı işleminizi özelleştirmek için
 
 - **Özel derleme araçları**
 
-   Özel derleme aracı, bir veya daha fazla dosya ile ilişkilendirilmiş bir derleme kuralıdır. Özel derleme adımı birinde sonuçları bir özel derleme aracı için giriş dosyaları geçirebilir veya daha fazla çıkış dosyaları. Örneğin, bir MFC uygulamasında Yardım dosyaları, özel derleme aracı ile oluşturulur. Daha fazla bilgi için [nasıl yapılır: özel derleme araçları ekleme'MSBuild projelerine](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) ve [belirterek özel derleme Araçları](../ide/specifying-custom-build-tools.md).
+   Özel derleme aracı, bir veya daha fazla dosya ile ilişkilendirilmiş bir derleme kuralıdır. Özel derleme adımı birinde sonuçları bir özel derleme aracı için giriş dosyaları geçirebilir veya daha fazla çıkış dosyaları. Örneğin, bir MFC uygulamasında Yardım dosyaları, özel derleme aracı ile oluşturulur. Daha fazla bilgi için [nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) ve [derleme araçlarını belirtme özel](../ide/specifying-custom-build-tools.md).
 
 - **Derleme olayları**
 
@@ -64,7 +64,7 @@ Derleme olayları ve özel derleme adımları birlikte başka yapılandırma ad�
 
 `custom build step on the project` Ve `post-build event` sırayla diğer tüm derledikten sonra çalışma bitiş işler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'da C++ Projeleri Derleme](../ide/building-cpp-projects-in-visual-studio.md)<br>
 [Genel Derleme Komutları ve Özellikler Makroları](../ide/common-macros-for-build-commands-and-properties.md)

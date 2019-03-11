@@ -11,12 +11,12 @@ helpviewer_keywords:
 - browsing database file, .sdf
 - file types [C++], project files
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
-ms.openlocfilehash: ea7fc0fa7ea57de9f12f30804ace2cecccaa4bff
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: f09c9912fa3c7de96f18458bc9823e6302ebe418
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330898"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743737"
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları
 
@@ -32,8 +32,8 @@ Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur
 |*PROJNAME*. vcxproj.filters|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Filtreleri* dosya. Bu, çözüme bir dosyasının nereye yerleştirileceğini belirtir. Örneğin, bir .h dosyası yerleştirin **üst bilgi dosyaları** düğümü.|
 |*PROJNAME*. vcxproj.user|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Geçiş kullanıcı* dosya. Bir projeyi Visual Studio 2008'den geçirildikten sonra bu dosya tüm .vsprops dosyasından dönüştürülen bilgileri içerir.|
 |*PROJNAME*.idl|*PROJNAME*|Kaynak|(Projeye özgü) Bir denetimi tür kitaplığına arabirimi tanım dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimini kullanıma sunar. Daha fazla bilgi için [arabirim tanımı (IDL) dosya](/windows/desktop/Rpc/the-interface-definition-language-idl-file) Windows SDK.|
-|Readme.txt|*PROJNAME*|Proje|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|
+|Readme.txt|*PROJNAME*|Project|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)

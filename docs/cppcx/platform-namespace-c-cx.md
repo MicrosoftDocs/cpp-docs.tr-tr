@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform Namespace (C++/CX)
 ms.assetid: b160e822-d424-43d2-ba60-57b0e81f259c
-ms.openlocfilehash: e5d2caa4e784d7d8f7589bca0ef5210c03cb0d77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ffbfdde1a9c610f6bcb2356a26acb2b85ed9624a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523879"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740367"
 ---
 # <a name="platform-namespace-ccx"></a>Platform ad alanı (C + +/ CX)
 
@@ -105,7 +105,7 @@ Platform ad alanı, aşağıdaki yapılar vardır.
 |[Platform::SizeT değer sınıfı](../cppcx/platform-sizet-value-class.md)|Bir nesnenin boyutunu temsil etmek için kullanılan bir imzasız veri türü.|
 |[Platform::UIntPtr değer Sınıfı](../cppcx/platform-uintptr-value-class.md)|Boyutu (32 bit veya 64-bit) platform için uygun olan bir işaretsiz işaretçi.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)<br/>
 [Platform::Runtime::CompilerServices Ad Alanı](../cppcx/platform-runtime-compilerservices-namespace.md)<br/>

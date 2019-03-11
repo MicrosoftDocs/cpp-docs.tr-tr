@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: fa608af9406dc03047ff9f113ac648e215b0d117
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 5d51e8e542ffb14a77001d045903dccb1a091d53
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703291"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751351"
 ---
 # <a name="ciexp"></a>_CIexp
 
@@ -47,7 +47,7 @@ Sonuç değerini yığın üstüne itilir.
 
 **Platform:** x86
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [exp, expf, expl](../c-runtime-library/reference/exp-expf.md)

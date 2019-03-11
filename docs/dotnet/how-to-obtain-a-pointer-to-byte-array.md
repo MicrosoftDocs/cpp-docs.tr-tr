@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Bayt Dizisine Bir İşaretçi Alma'
+title: 'Nasıl yapılır: Bayt dizisine bir işaretçi alma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - pointers, to Byte array
 - Byte arrays
 ms.assetid: aea18073-3341-47f4-9f0e-04e03327037e
-ms.openlocfilehash: ad17dd0049f83fd753af0f9d7a565f28c6681a59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28feb039cf7b91bbf12d94b1abebe0e5b9501d7f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638908"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738869"
 ---
-# <a name="how-to-obtain-a-pointer-to-byte-array"></a>Nasıl yapılır: Bayt Dizisine Bir İşaretçi Alma
+# <a name="how-to-obtain-a-pointer-to-byte-array"></a>Nasıl yapılır: Bayt dizisine bir işaretçi alma
 
 İşaretçisi dizi bloğunda edinebilirsiniz bir <xref:System.Byte> ilk öğenin adresini almak ve bir işaretçiye atayarak dizisi.
 
@@ -32,6 +32,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

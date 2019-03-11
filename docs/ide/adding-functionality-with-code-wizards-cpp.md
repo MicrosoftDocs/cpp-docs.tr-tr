@@ -10,12 +10,12 @@ helpviewer_keywords:
 - projects [C++], adding functionality
 - class wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: d96b02317f88abd426ceaca4a239e59b2c88b585
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 028434d7404cc02121e9fd961d6566c28f458a0c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629872"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739809"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 
@@ -69,7 +69,7 @@ Visual C++ kod sihirbazları erişebileceğiniz üç konum vardır:
    |Çözüm Gezgini|Çözüm Gezgini'nden kod sihirbazları, bir öğeyi sağ tıklattığınızda Burada, imleç odağı olmasına göre değişir. Varsa **Ekle** seçeneği, bir öğeyi sağ tıklattığınızda görünmez ardından imleci Yukarı Taşı geliştirme ağacında bir düzey ve yeniden deneyin. Kod sihirbazları her zaman ek kod geliştirme ağacında uygun bir yerden olursa olsun, imlecin bulunduğu yerleştirmeniz gerekir. Çözüm Gezgini'nden kod sihirbazları içerir:<br /><br />-Sınıf ekleme (açılır **sınıfı Ekle** yeni kod sihirbazları içeren iletişim kutusu).<br />-Kaynak ekleme (yeni, içeri aktarma veya özel).<br />-Web referansı ekleyin.|
    |Sınıf Görünümü|Sınıf Görünümü'ndeki kullanılabilir kod sihirbazları, bir öğeyi sağ tıklattığınızda nerede imleç odağınızı olmasına göre değişir. Varsa **Ekle** seçeneği, bir öğeyi sağ tıklattığınızda görünmez ardından imleci Yukarı Taşı sınıfı ağacında bir düzey ve yeniden deneyin. Kod sihirbazları her zaman ek kod geliştirme ağacında uygun bir yerden olursa olsun, imlecin bulunduğu yerleştirmeniz gerekir. Kod sihirbazları, sınıf görünümünden kullanılabilir şunlardır:<br /><br />- [Üye işlevi Ekle](../ide/adding-a-member-function-visual-cpp.md).<br />- [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md).<br />- [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br />- [Arabirimini uygulayan](../ide/implement-interface-wizard.md) (bir sınıftan denetimi yalnızca)<br />- [Bağlantı Noktası Ekle](../ide/implement-connection-point-wizard.md) (sadece ATL sınıfı)<br />- [Add yöntemi](../ide/add-method-wizard.md) (bir arabirimden yalnızca)<br />- [Özellik Ekle](../ide/names-add-property-wizard.md) (bir arabirimden yalnızca)<br />- [Olay ekleme](../ide/add-event-wizard.md) (bir sınıftan denetimi yalnızca)<br /><br />Sınıf Ekle'seçimini açılır **sınıfı Ekle** iletişim kutusunda, tüm yeni sınıf Ekle kod sihirbazları için erişmenizi sağlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
 [Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)<br>

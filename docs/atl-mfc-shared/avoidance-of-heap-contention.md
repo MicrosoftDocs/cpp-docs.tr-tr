@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - heap contention
 ms.assetid: 797129d7-5f8c-4b0e-8974-bb93217e9ab5
-ms.openlocfilehash: c28e5ba01cc2bb1e3cae19087a67cf97e6ac415f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 45510607a63759aad9444959716bef164eda1492
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536792"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743272"
 ---
 # <a name="avoidance-of-heap-contention"></a>Yığın çekişmesini engelleme
 
@@ -31,7 +31,6 @@ Bu iş parçacığı yordamı kullanarak birden çok iş parçacığı çalış�
 
 Daha karmaşık bir iş parçacığı yordamı için iş parçacığının dize Yöneticisi için bir işaretçi bir iş parçacığı yerel depolama (TLS) yuvasında depolamak kullanışlı olabilir. Bu iş parçacığının dize Yöneticisi'ne erişmek için iş parçacığı yordamı tarafından çağrılan diğer işlevler sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
-

@@ -2,12 +2,12 @@
 title: Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
-ms.openlocfilehash: 2165d802e6ff4bd530acac7c1ba6185c732a6499
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cc1964c57d6700995bb283c245e4c63c8e9e313b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577298"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750916"
 ---
 # <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 
@@ -30,10 +30,10 @@ Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenek
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|/ APPCONTAINER [: NO]|Çalıştırılabilir çalıştırılabilir (yalnızca) appcontainer içinde olarak işaretler.|
-|/ WINMD [: {HAYIR&AMP;#124;YALNIZCA}]|Bir .winmd dosyası ve ilişkili bir ikili dosya yayar. Bu seçenek derleyicisindeki bir .winmd için bağlayıcı için geçirilmelidir.<br /><br /> **Hayır**— bir .winmd dosyası vermez, ancak bir ikili dosya gösterin.<br /><br /> **YALNIZCA**— bir .winmd dosyası yayar, ancak bir ikili dosya vermez.|
+|/APPCONTAINER[:NO]|Çalıştırılabilir çalıştırılabilir (yalnızca) appcontainer içinde olarak işaretler.|
+|/WINMD[:{NO&#124;ONLY}]|Bir .winmd dosyası ve ilişkili bir ikili dosya yayar. Bu seçenek derleyicisindeki bir .winmd için bağlayıcı için geçirilmelidir.<br /><br /> **Hayır**— bir .winmd dosyası vermez, ancak bir ikili dosya gösterin.<br /><br /> **YALNIZCA**— bir .winmd dosyası yayar, ancak bir ikili dosya vermez.|
 |/ WINMDFILE:*dosya adı*|Varsayılan .winmd dosyası adı yerine yaymak için .winmd dosyasının adı. Komut satırında birden çok dosya adı belirtilmişse Soyadı kullanılır.|
-|/ WINMDDELAYSIGN DOSYASINI [: NO]|Kısmen .winmd dosyası imzalar ve ortak anahtar ikili yerleştirir.<br /><br /> **Hayır**—(Default) oturum .winmd dosyası değil.<br /><br /> / /WINMDKEYFILE veya /WINMDKEYCONTAINER de belirtilmezse wınmddelaysıgn dosyasını bir etkisi yoktur.|
+|/WINMDDELAYSIGN[:NO]|Kısmen .winmd dosyası imzalar ve ortak anahtar ikili yerleştirir.<br /><br /> **Hayır**—(Default) oturum .winmd dosyası değil.<br /><br /> / /WINMDKEYFILE veya /WINMDKEYCONTAINER de belirtilmezse wınmddelaysıgn dosyasını bir etkisi yoktur.|
 |/ WINMDKEYCONTAINER:*adı*|Bir derlemeyi imzalamak için bir anahtar kapsayıcı belirtir. *Adı* parametresi metadata dosyasını imzalamak için kullanılan anahtar kapsayıcısı karşılık gelir.|
 |/ WINMDKEYFILE:*dosya adı*|Bir anahtar veya derlemeyi imzalamak için bir anahtar çiftini belirtir. *Filename* parametresi metadata dosyasını imzalamak için kullanılan anahtarına karşılık gelir.|
 
@@ -41,6 +41,6 @@ Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenek
 
 Kullanırken **/ZW**, derleyici, DLL sürümü C çalışma zamanı'nın (CRT) otomatik olarak bağlar. Statik kitaplık sürümüne bağlama verilmez ve bir evrensel Windows platformu uygulaması içinde izin verilmiyor CRT işlevleri kullanımı bir derleme zamanı hatasına neden olur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uygulamaları oluşturma ve kitaplıkları](../cppcx/building-apps-and-libraries-c-cx.md)

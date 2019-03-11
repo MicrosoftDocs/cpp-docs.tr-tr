@@ -5,12 +5,12 @@ helpviewer_keywords:
 - files [C++]
 - streams
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
-ms.openlocfilehash: 329a3209f09d2a4cebde067f38e702684ac9e404
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea11ea76ade8a68c2d8a92e08d3652035c996d3d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503409"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750799"
 ---
 # <a name="files-and-streams"></a>Dosyalar ve Akışlar
 
@@ -40,7 +40,7 @@ Dosya başarıyla açıldıktan sonra ardından akış odaklı bayt (bayt akış
 
 © 2001 1989 tarafından hazırlanan Plauger ve Jim Brodie. Tüm hakları saklıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Metin ve İkili Akışlar](../c-runtime-library/text-and-binary-streams.md)<br/>
 [Bayt ve Geniş Akışlar](../c-runtime-library/byte-and-wide-streams.md)<br/>

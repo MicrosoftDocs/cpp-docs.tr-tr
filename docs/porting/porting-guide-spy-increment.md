@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 5bd69853b13d58ff79910eafcc601b0507d5a9ad
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: b28de2396ba94578a8d06038a1191be42dce49ea
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177010"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751380"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -292,7 +292,7 @@ Değişiklikten sonra aşağıdaki kodu sunuyoruz:
 afx_msg LRESULT OnNcHitTest(CPoint point);
 ```
 
-Bu işlev CWnd'den türetilen tüm farklı sınıflardaki yaklaşık on oluşumlarını olduğundan, kullanmanız yararlı **Tanıma Git** (klavye: **F12**) ve **bildiriminegidin** (Klavye: **Ctrl**+**F12**) imleç olduğunda bu bulun ve gitmek için düzenleyicide bir işlevde gelen onlara **sembol Bul'u** araç penceresi. **Tanımı Git** genellikle daha iki yararlıdır. **Bildirim Git** tanımlama dışında Bul bildirimleri sınıf bildiriminin, arkadaş sınıf bildirimleri gibi veya ileri başvuru.
+Bu işlev CWnd'den türetilen tüm farklı sınıflardaki yaklaşık on oluşumlarını olduğundan, kullanmanız yararlı **Tanıma Git** (klavye: **F12**) ve **bildirimine gidin** (klavye: **CTRL**+**F12**) imleç olduğunda bu bulun ve gitmek için düzenleyicide bir işlevde gelen onlara **sembol Bul'u** araç penceresi. **Tanımı Git** genellikle daha iki yararlıdır. **Bildirim Git** tanımlama dışında Bul bildirimleri sınıf bildiriminin, arkadaş sınıf bildirimleri gibi veya ileri başvuru.
 
 ##  <a name="mfc_changes"></a> 9. adım. MFC değişiklikleri
 
@@ -542,7 +542,7 @@ Buraya \_hata kaldırılacağı dize sabit değeri etrafında T.
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-\_T makrosu etkisi olarak bir dize sabit değeri derleme yapma bir **char** dize veya bir **wchar_t** UNICODE ve MBCS ayara bağlı olarak bir dize. Tüm dizeleri ile değiştirilecek \_T Visual Studio'da ilk kez açın **hızlı Değiştir** (klavye: **Ctrl**+**F**) kutusunu veya  **Dosyalarda Değiştir** (klavye: **Ctrl**+**Shift**+**H**), ardından **kullanın Normal ifadeler** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` yerine konacak metin olarak. Zaten varsa \_bazı dizeler T makrosu, bu yordamı, yeniden ekleyecek ve istediğiniz durumlarda bulabilirsiniz \_kullandığınızda gibi T, `#include`, kullanmak en iyisidir **sonraki değiştirin**yerine **Tümünü Değiştir**.
+\_T makrosu etkisi olarak bir dize sabit değeri derleme yapma bir **char** dize veya bir **wchar_t** UNICODE ve MBCS ayara bağlı olarak bir dize. Tüm dizeleri ile değiştirilecek \_T Visual Studio'da ilk kez açın **hızlı Değiştir** (klavye: **CTRL**+**F**) kutusunu veya **dosyalarda Değiştir** (klavye: **CTRL**+**Shift**+**H**), ardından **normal ifadeler kullanmanız** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` yerine konacak metin olarak. Zaten varsa \_bazı dizeler T makrosu, bu yordamı, yeniden ekleyecek ve istediğiniz durumlarda bulabilirsiniz \_kullandığınızda gibi T, `#include`, kullanmak en iyisidir **sonraki değiştirin**yerine **Tümünü Değiştir**.
 
 Bu belirli işlev [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), bu, olası arabellek taşması nedeniyle kullanılmaması önerir için gerçekten Windows üstbilgiler ve belgeleri tanımlanır. Boyut için verilen `szTmp` arabellek vardır, bu nedenle arabellek için yazılmış veri tutabilen denetlenecek işlevine yönelik bir yolu yoktur. Güvenliğini size benzer diğer sorunları gidermek CRT'ye, taşıma hakkında sonraki bölüme bakın. İle değiştirerek sona [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
 
@@ -671,7 +671,7 @@ int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
 
 Spy ++ son derleyicinin özgün Visual C++ 6.0 kod taşıma zamanı çalıştıysa hakkında bir hafta içinde kodlama yaklaşık 20 saat sürdü. Sekiz sürümlerden ürünün Visual Studio 6.0 Visual Studio 2015 ile doğrudan yükseltildi. Artık tüm yükseltmelerde küçük ve büyük ölçekli projelerde önerilen yaklaşım budur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Önceki örnek olay incelemesi: COM Spy](../porting/porting-guide-com-spy.md)

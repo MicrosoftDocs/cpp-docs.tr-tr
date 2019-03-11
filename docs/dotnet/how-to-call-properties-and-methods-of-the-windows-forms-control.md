@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri'
+title: 'Nasıl yapılır: Denetiminin çağrı özellikleri ve yöntemleri Windows Forms'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - calling properties
 - Windows Forms controls [C++], properties
 ms.assetid: 6e647d8a-fdaa-4aa1-b3fe-04f15cff8eb3
-ms.openlocfilehash: 809fa428172dffb5f53e7339e04882b451c8562f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61b565839b3f3c24670819fdcf2dde558e3461ac
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561492"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743773"
 ---
-# <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri
+# <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>Nasıl yapılır: Denetiminin çağrı özellikleri ve yöntemleri Windows Forms
 
 Çünkü [CWinFormsView::GetControl](../mfc/reference/cwinformsview-class.md#getcontrol) bir işaretçi döndürür <xref:System.Windows.Forms.Control?displayProperty=fullName>ve işaretçisi değil `WindowsControlLibrary1::UserControl1`, kullanıcı denetimi türünün üyesi ekleyip bunu başlatabilir önerilir [IView::OnInitialUpdate ](../mfc/reference/iview-interface.md#oninitialupdate). Yöntemleri ve özellikleri kullanarak çağırabilirsiniz artık `m_ViewControl`.
 
-Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: kullanıcı Denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+Bu konuda daha önce bitirdiğinizi [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
 
-1. Oluşturduğunuz MFC uygulamasını açınız [nasıl yapılır: kullanıcı Denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+1. Oluşturduğunuz MFC uygulamasını açınız [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
 
 1. Genel geçersiz kılmaları kısmına aşağıdaki satırı ekleyin `CMFC02View` MFC02View.h bildiriminde sınıfı.
 
@@ -49,6 +49,6 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
 
    Metin kutusu başlatıldığına dikkat edin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

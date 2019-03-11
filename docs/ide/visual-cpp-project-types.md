@@ -10,12 +10,12 @@ helpviewer_keywords:
 - applications [C++], projects
 - Visual C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: 456fdb5ec2025b3085332eced3a0c7f33e117918
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a81d73100ef52b61f834f7bffe4467bd296c079
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658022"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744546"
 ---
 # <a name="visual-c-project-types"></a>Visual C++ Proje Türleri
 
@@ -92,6 +92,6 @@ C++'ta Windows Evrensel uygulamaları genel bakış için bkz. [Evrensel Windows
 
 Birçok proje şablonu tarafından oluşturulan dosyalar, kendi kaynak kodunuz nerede sağlayabilirsiniz tanımlamanıza yardımcı olması için TODO açıklamaları içerir. Kodun nasıl ekleneceği hakkında daha fazla bilgi için bkz. [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md) ve [kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)

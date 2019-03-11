@@ -20,12 +20,12 @@ helpviewer_keywords:
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-ms.openlocfilehash: a78ffb1c7fd32db3092bcf1d2297a0be6fa9f47b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60e209f6f8b723bfae1a4b434750b6237dc6479d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518801"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751433"
 ---
 # <a name="getoutputformat"></a>_get_output_format
 
@@ -46,7 +46,7 @@ unsigned int _get_output_format();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çıkış biçimi bayrağı biçimlendirilmiş g/ç özelliklerini denetler. Şu anda iki olası değerler bayrak vardır: 0 ve `_TWO_DIGIT_EXPONENT`. Varsa `_TWO_DIGIT_EXPONENT` ayarlandığında, kayan nokta numaralarını yazdırılıp yalnızca iki basamak ile üçüncü basamak üs boyutu tarafından gerekmedikçe. Kayan nokta bayrağı sıfırsa çıktısını görüntüler üç basamak sıfır üç basamak değerine doldurulacak gerekirse kullanarak üs.
+Çıkış biçimi bayrağı biçimlendirilmiş g/ç özelliklerini denetler. Şu anda bayrağı iki olası değer vardır: 0 ve `_TWO_DIGIT_EXPONENT`. Varsa `_TWO_DIGIT_EXPONENT` ayarlandığında, kayan nokta numaralarını yazdırılıp yalnızca iki basamak ile üçüncü basamak üs boyutu tarafından gerekmedikçe. Kayan nokta bayrağı sıfırsa çıktısını görüntüler üç basamak sıfır üç basamak değerine doldurulacak gerekirse kullanarak üs.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -56,7 +56,7 @@ unsigned int _get_output_format();
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>

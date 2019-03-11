@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-ms.openlocfilehash: 95633a9b6b04be7e551934744868e10f60d51fb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ae5e0007105cfda233f808bf52d2d81068524be
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509115"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744865"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
 
@@ -20,7 +20,7 @@ Visual C++ ile oluşturulan bir uygulamanın hata ayıklama sürümü test etmek
 
 Bir uygulamanın hata ayıklama sürümü ile birlikte Visual C++ Kitaplık DLL'lerin hata ayıklama sürümleri dağıtmanın üç yolu vardır.
 
-- Merkezi dağıtım, birleştirme modülleri için doğru kitaplık sürümünü ve uygulamanızın mimarisini içeren bir kurulum projesi kullanarak belirli bir Visual C++ DLL'ye hata ayıklama sürümü %windir%\system32\ dizinine yüklemek için kullanın. Birleştirme modülleri, Program dosyaları veya Program dosyaları (x86) \Common modülleri dizinde bulunur\\. Birleştirme modülü hata ayıklama sürümünü hata ayıklama namefor örnekte, Microsoft_VC110_DebugCRT_x86.msm vardır. Bu dağıtım örneği bulunabilir [izlenecek yol: Kurulum projesi dağıtma bir Visual C++ Application By Using](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
+- Merkezi dağıtım, birleştirme modülleri için doğru kitaplık sürümünü ve uygulamanızın mimarisini içeren bir kurulum projesi kullanarak belirli bir Visual C++ DLL'ye hata ayıklama sürümü %windir%\system32\ dizinine yüklemek için kullanın. Birleştirme modülleri, Program dosyaları veya Program dosyaları (x86) \Common modülleri dizinde bulunur\\. Birleştirme modülü hata ayıklama sürümünü hata ayıklama namefor örnekte, Microsoft_VC110_DebugCRT_x86.msm vardır. Bu dağıtım örneği bulunabilir [izlenecek yol: Bir kurulum projesi kullanarak Visual C++ uygulamasını dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
 
 - Program dosyaları veya Program dosyaları (x86) \Microsoft Visual Studio dizininde sağlanan dosyalarını kullanarak uygulama yükleme dizininde belirli bir Visual C++ DLL'ye hata ayıklama sürümünü yüklemek için yerel dağıtım kullanan \<sürüm > \VC\redist\Debug_NonRedist\\.
 
@@ -31,7 +31,7 @@ Bir uygulamanın hata ayıklama sürümü ile birlikte Visual C++ Kitaplık DLL'
 
 Visual C++ DLL'leri yüklendikten sonra uzaktan hata ayıklayıcı bir ağ paylaşımı üzerinde çalıştırabilirsiniz. Uzaktan hata ayıklama hakkında daha fazla bilgi için bkz. [uzaktan hata ayıklama](/visualstudio/debugger/remote-debugging.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ üzerinde Dağıtım](../ide/deployment-in-visual-cpp.md)<br>
 [Windows Installer komut satırı seçenekleri](/windows/desktop/Msi/command-line-options)<br>

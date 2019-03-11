@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details Namespace
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
-ms.openlocfilehash: 5374fb48427ea836c81fdd6731dee19c15dbc618
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05677a08b7c63ddbe2196da946d62c00004d8942
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466695"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750565"
 ---
 # <a name="platformdetails-namespace"></a>Platform::details Namespace
 
@@ -53,8 +53,8 @@ Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri 
 
 **Meta veri:** platform.winmd
 
-**Namespace:** Platform::Details
+**Namespace:** Platform::details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

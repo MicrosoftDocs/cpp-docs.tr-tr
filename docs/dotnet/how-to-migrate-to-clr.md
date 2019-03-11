@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: - CLR'ye geçiş"
+title: "Nasıl yapılır: -CLR'ye geçiş"
 ms.custom: get-started-article
 ms.date: 09/18/2018
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: d293b6c3795b9abe57da0c6bcb92dd3f1de810ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02e678f98773f9ae7bb4f611210329a7a1116f17
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454450"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749120"
 ---
-# <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
+# <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: / CLR'ye geçiş
 
 Bu konuda, yerel kod ile derleme yaparken ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** yerel C++ kodunu çağırır ve diğer yerel C++ kod yanı sıra .NET derlemelerinden çağrılmasına olanak sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [Native ve .NET ile birlikte çalışabilirlik](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.
 
@@ -164,6 +164,6 @@ Visual c++'ta .NET hakkında bilgi için bkz:
 
 - [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

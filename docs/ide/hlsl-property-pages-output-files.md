@@ -1,5 +1,5 @@
 ---
-title: 'HLSL Özellik Sayfaları: Çıktı Dosyaları'
+title: 'HLSL özellik sayfaları: Çıktı dosyaları'
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.FXCompilerTool.AssemblerOutput
@@ -8,14 +8,14 @@ f1_keywords:
 - VC.Project.FXCompilerTool.VariableName
 - VC.Project.FXCompilerTool.AssemblerOutputFile
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
-ms.openlocfilehash: 96736b58eed280a0b4e91b9cb47cb53dc2e91cd4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 746781142d9989910f526c85b38516e8d5302ada
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513717"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739498"
 ---
-# <a name="hlsl-property-pages-output-files"></a>HLSL Özellik Sayfaları: Çıktı Dosyaları
+# <a name="hlsl-property-pages-output-files"></a>HLSL özellik sayfaları: Çıktı dosyaları
 
 HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Çıkış dosyalarını** özelliği. Nasıl erişileceği hakkında daha fazla bilgi için **Çıkış dosyalarını** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).
 
@@ -49,7 +49,7 @@ Bu özellik için karşılık gelen **/Fo [ad]** komut satırı bağımsız değ
 
    Bu özellik için karşılık gelen **/Fc [name]** ve **/Fx [name]** komut satırı bağımsız değişkenleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [HLSL Özellik Sayfaları](../ide/hlsl-property-pages.md)<br>
 [HLSL Özellik Sayfaları: Genel](../ide/hlsl-property-pages-general.md)<br>

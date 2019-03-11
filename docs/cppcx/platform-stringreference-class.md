@@ -9,12 +9,12 @@ f1_keywords:
 - VCCORLIB/Platform::StringReference::GetHSTRING
 - VCCORLIB/Platform::StringReference::GetString
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-ms.openlocfilehash: 09b15a1530661ce537c9d2aab333a1a17fa52ff9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b6ab42dc630ce7e0014534064e8f1ce6da00857
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498390"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750929"
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference sınıfı
 
@@ -54,11 +54,11 @@ class StringReference
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Başlık:** vccorlib.h
 
@@ -193,6 +193,6 @@ Yeni örnek başlatmak için kullanılan bir dizi char16 değere işaretçi.
 
 Bu oluşturucu ilk sürümü varsayılan oluşturucudur. Dosyanın ikinci sürümü yeni bir başlatır `StringReference` örneği tarafından belirtilen nesneyi bir sınıftan `__fstrArg` parametresi. Üçüncü ve dördüncü aşırı yeni bir başlatma `StringReference` char16 değerleri bir diziden örneği. char16 bir 16 bitlik UNICODE metin karakteri temsil eder.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::StringReference Sınıfı](../cppcx/platform-stringreference-class.md)

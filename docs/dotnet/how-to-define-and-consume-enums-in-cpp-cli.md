@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: C++/CLI üzerinde numaralandırmaları tanımlama ve kullanma'
+title: 'Nasıl yapılır: Tanımlama ve kullanma numaralandırmalar C + +/ CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - enum class, specifying underlying types
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
-ms.openlocfilehash: 6dc70da0e3888ffee11a6378da5ea82efe58112b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0252c4b64690f6a2fb0fd97b97841fe45fcce244
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539665"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751459"
 ---
-# <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: C++/CLI üzerinde numaralandırmaları tanımlama ve kullanma
+# <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: Tanımlama ve kullanma numaralandırmalar C + +/ CLI
 
 Bu konuda ele alınmıştır numaralandırmalar C + +/ CLI.
 
@@ -135,6 +135,6 @@ int main() {
 True
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md)

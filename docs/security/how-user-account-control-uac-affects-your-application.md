@@ -7,12 +7,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-ms.openlocfilehash: 04bfc16f2d82863faca806d4cb8d5295104a0cc9
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3702462ec892025cfb4f24d9c91e6db705b1b9a5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177049"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751416"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
 
@@ -36,6 +36,6 @@ Aşağıdaki akış çizelgesi, uygulamanızın nasıl çalışacağını tanım
 
 ![Windows Yükleyici davranışı](media/uacflowchart.png "Windows Yükleyici davranışı")
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [En iyi güvenlik uygulamaları](security-best-practices-for-cpp.md)

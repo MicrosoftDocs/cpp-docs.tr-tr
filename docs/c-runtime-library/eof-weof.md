@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WEOF function
 - end of file
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
-ms.openlocfilehash: c4c35518130fc233afd055133704bcb0abaccca8
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: f00c4003afebad580bd2ea5d6853edc3ca6e8c73
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220731"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740043"
 ---
 # <a name="eof-weof"></a>EOF, WEOF
 
@@ -29,7 +29,7 @@ EOF bir g/ç yordam tarafından döndürülen zaman son dosya (veya bazı duruml
 
 WEOF türünün dönüş değerini verir **wint_t**geniş bir akışın sonuna sinyali veya bir hata durumu bildirmek için kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [putc, putwc](../c-runtime-library/reference/putc-putwc.md)<br/>
 [ungetc, ungetwc](../c-runtime-library/reference/ungetc-ungetwc.md)<br/>

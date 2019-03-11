@@ -1,18 +1,22 @@
 ---
 title: Visual Studio'da C++ Linux iş yükünü yükleyin
 description: İndirme, yükleme ve Linux iş yükünü Visual Studio'da C++ için Kurulum açıklar.
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: c01c8ddeeb8439a7610c0f6c7c11b608ab3675d8
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 74155724abb3a0e02cc27dd8a8d144f142ee4b6f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763898"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747728"
 ---
-# <a name="download-install-and-setup-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükünü Kurulumu
+# <a name="download-install-and-set-up-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükü ayarlayın
 
-Visual Studio IDE içinde Windows oluşturmak, düzenlemek ve bir Linux fiziksel, sanal makine yürütülmesine C++ projelerinde hata ayıklama için kullanabileceğiniz veya [Linux için Windows alt sistemi](/windows/wsl/about). Bu senaryolardan herhangi biri için önce yükleme **C++ ile Linux geliştirme** iş yükü.
+Visual Studio 2017 IDE içinde Windows oluşturmak, düzenlemek ve bir Linux fiziksel, sanal makine yürütülmesine C++ projelerinde hata ayıklama için kullanabileceğiniz veya [Linux için Windows alt sistemi](/windows/wsl/about). 
+
+Visual Studio projesine dönüştürmek zorunda kalmadan CMake veya başka bir derleme sistemini kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, hem Windows hem de Visual Studio içinden Linux'u hedefleyebilirsiniz. Örneğin, düzenleme, hata ayıklama ve profil kodunuzu Visual Studio kullanarak Windows üzerinde sonra hızlı bir şekilde yapmak Linux için projeyi yeniden hedefle başka testler yapmak. Linux üst bilgi dosyaları burada Visual Studio kullanan bunları tam IntelliSense sağlamak için yerel makinenize otomatik olarak kopyalanır desteği (deyim tamamlama, Git tanımı vb.).
+ 
+Bu senaryolardan herhangi biri için **C++ ile Linux geliştirme** iş yükü gereklidir. 
 
 ## <a name="visual-studio-setup"></a>Visual Studio Kurulumu
 
@@ -22,6 +26,8 @@ Visual Studio IDE içinde Windows oluşturmak, düzenlemek ve bir Linux fiziksel
    ![Linux geliştirme iş yükü için Visual C++](media/linuxworkload.png)
 
 1. CMake kullanın veya IOT veya katıştırılmış platformları hedefleyen, Git **Yükleme ayrıntıları** sağ bölmede altında **C++ ile Linux geliştirme**, genişletme **isteğebağlıbileşenler** ve gereksinim duyduğunuz bileşenleri seçin.
+
+    **Visual Studio 2017 sürüm 15.4 ve üzeri**<br/>: Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğinizde varsayılan olarak seçilidir.
 
 1. Tıklayın **Değiştir** yüklemeye devam etmek için.
 
@@ -63,3 +69,6 @@ Fedora çalıştıran hedef makine **dnf** Yükleyici paketi. İndirmek için **
 
    Bu hizmeti başlatılır ve arka planda, bağlantıları kabul etmeye hazır çalıştırır.
 
+## <a name="ensure-you-have-cmake-38-on-the-remote-linux-machine"></a>Uzak Linux makinesinde CMake 3.8 sahip olduğunuzdan emin olun
+
+Kendi Linux distro CMake daha eski bir sürümü olabilir. Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için Linux makinenize en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).

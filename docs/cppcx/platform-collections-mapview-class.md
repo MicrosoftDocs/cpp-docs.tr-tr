@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: cd1865320d56d71481cdaf7055f796bfab26eeab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e38865f1d43edac4fc895052f1ea1b5a54a34ab
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496391"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749262"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections:: mapview sınıfı
 
@@ -108,7 +108,7 @@ bool HasKey(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 MapView öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -127,7 +127,7 @@ V Lookup(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğe içinde MapView bulmak için kullanılan anahtar. Türünü `key` TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -217,6 +217,6 @@ void Split(
 
 Bu yöntem, işlemsel değildir; hiçbir şey yapmaz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

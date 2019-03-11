@@ -23,12 +23,12 @@ helpviewer_keywords:
 - _HEAPBADPTR constants
 - heap constants
 ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
-ms.openlocfilehash: b8783a5826376a65cb71444e2d64c61b6938eab8
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 44c7a280ebffd0073f1dfb3a0a3cbdbd2efee0fb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220224"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745368"
 ---
 # <a name="heap-constants"></a>Yığın Sabitleri
 
@@ -51,7 +51,7 @@ Bu sabitler yığının durumunu gösteren dönüş değeri verir.
 |`_HEAPEND`|Yığının sonuna başarıyla ulaşıldı (`_heapwalk` yalnızca yordam).|
 |`_HEAPOK`|Yığın tutarlıdır (`_heapset` ve `_heapchk` yordamlar yalnızca). Kadar hiç hata; **_Heapınfo** yapısı sonraki giriş hakkında bilgiler içerir (`_heapwalk` yalnızca yordam).|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
 [_heapset](../c-runtime-library/heapset.md)<br/>

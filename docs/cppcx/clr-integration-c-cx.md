@@ -2,12 +2,12 @@
 title: CLR tümleştirme (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-ms.openlocfilehash: 7b14d8067625719b337e2c830b739269ef96dccd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df0c5e9cfaf9a4148c8d16b68ee04b4e9ce82e6a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461821"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749029"
 ---
 # <a name="clr-integration-ccx"></a>CLR tümleştirme (C + +/ CX)
 
@@ -51,7 +51,7 @@ Aşağıdaki listelerde, yeni oluşturucular ve yardımcı yöntemler destekleye
 
 **Windows::UI::Xaml::Media**
 
-- Matris
+- Matrix
 
 **Windows::UI::Xaml::Media::Animation**
 
@@ -69,6 +69,6 @@ Visual C++ ya da C# Derleyicileri bir .winmd dosyası okunamıyor, bunlar otomat
 
 IReference\<T > Windows çalışma zamanı'nda eşler için Nullable\<T > .NET içinde.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Diğer dillerle birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)

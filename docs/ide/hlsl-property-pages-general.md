@@ -1,5 +1,5 @@
 ---
-title: 'HLSL Özellik Sayfaları: Genel'
+title: 'HLSL özellik sayfaları: Genel'
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.FXCompilerTool.ShaderModel
@@ -10,14 +10,14 @@ f1_keywords:
 - VC.Project.FXCompilerTool.DisableOptimizations
 - VC.Project.FXCompilerTool.EntryPointName
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
-ms.openlocfilehash: 255cf2fb0879ca7a6af0a9bdb340f6a4d2434cb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cc7c0837def7628414d017a660453915a472318e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494529"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751446"
 ---
-# <a name="hlsl-property-pages-general"></a>HLSL Özellik Sayfaları: Genel
+# <a name="hlsl-property-pages-general"></a>HLSL özellik sayfaları: Genel
 
 HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **genel** özellik sayfası. Nasıl erişileceği hakkında daha fazla bilgi için **genel** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).
 
@@ -63,8 +63,8 @@ Bu özellik için karşılık gelen **/E [name]** komut satırı bağımsız de�
 
    Bu özellik için karşılık gelen **/D \[tanımları]** HLSL derleyici komut satırı bağımsız değişkeni.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [HLSL Özellik Sayfaları](../ide/hlsl-property-pages.md)<br>
 [HLSL Özellik Sayfaları: Gelişmiş](../ide/hlsl-property-pages-advanced.md)<br>
-[HLSL Özellik Sayfaları: Çıktı Dosyaları](../ide/hlsl-property-pages-output-files.md)
+[HLSL Özellik Sayfaları: Çıkış Dosyaları](../ide/hlsl-property-pages-output-files.md)

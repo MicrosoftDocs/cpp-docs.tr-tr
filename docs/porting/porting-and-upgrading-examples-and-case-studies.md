@@ -1,15 +1,15 @@
 ---
-title: 'Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri'
+title: 'Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri'
 ms.date: 11/04/2016
 ms.assetid: d48bbff9-1ea7-467f-8c8b-758601f01573
-ms.openlocfilehash: 1f49b72b8d390d5631687f67640f4ddd38bec3b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50e22c9eac39927c4456eeff1ed05c46a239bd30
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568225"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747196"
 ---
-# <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri
+# <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri
 
 Tür süresi karşılaşabileceğiniz sorunları hakkında bir fikir edinmek başarılı bir geçişin hikayeleri inceleyerek geçerli bir Visual C++'ın önceki bir sürümünden geçiş.
 
@@ -23,6 +23,6 @@ Burada, hangi bazı büyüklükteki örnekleri ve Araçlar, Visual C++'ın en so
 
 - [Spy ++](../porting/porting-guide-spy-increment.md) inceler ve çalışan uygulamalar, kullanıcı Arabirimi öğeleri hakkında bilgi sağlayan bir uygulamadır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)

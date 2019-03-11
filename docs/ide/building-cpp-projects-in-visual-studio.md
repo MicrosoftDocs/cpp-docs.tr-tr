@@ -6,12 +6,12 @@ helpviewer_keywords:
 - projects [C++], building
 - builds [C++], about building in Visual Studio
 ms.assetid: 9e8bc1a2-bb17-4951-937a-c757ed88d2d1
-ms.openlocfilehash: 83f79e922a66622611f3f6e493ca8d498435033f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5565b582b9b80daef88ed37982f3e23bf44bf8c8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569704"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740014"
 ---
 # <a name="building-c-projects-in-visual-studio"></a>Visual Studio'da C++ Projeleri Derleme
 
@@ -41,7 +41,7 @@ Seçili bir projeyi derlemek için **Çözüm Gezgini**, şunları yapabilirsini
 
 Visual Studio'da Visual C++ uygulaması derlerken, birçok yapı ayarları projenin özellik sayfaları iletişim kutusunda değiştirebilirsiniz. Proje özelliklerini ayarlama hakkında daha fazla bilgi için bkz: [Working with Project Properties](../ide/working-with-project-properties.md).
 
-IDE'yi oluşturmak, derlemek ve C++ proje hata ayıklama için nasıl kullanılacağı hakkında bir örnek için bkz. [izlenecek yol: C++ ile Visual Studio IDE'yi keşfedin](/visualstudio/ide/getting-started-with-cpp-in-visual-studio). C + oluşturmak için IDE'yi kullanma hakkında bir örnek +/ CLR proje bkz [izlenecek yol: Visual Studio'da CLR'yi hedefleyen C++ programını derleme](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). Bir Windows çalışma zamanı uygulaması oluşturmak için IDE'yi kullanma hakkında bir örnek için bkz. [C++ kullanarak ilk Windows çalışma zamanı uygulamasını oluşturma](https://msdn.microsoft.com/library/windows/apps/hh974580.aspx).
+IDE'yi oluşturmak, derlemek ve C++ proje hata ayıklama için nasıl kullanılacağı hakkında bir örnek için bkz [izlenecek yol: Visual Studio C++ ile IDE'yi keşfedin](/visualstudio/ide/getting-started-with-cpp-in-visual-studio). C + oluşturmak için IDE'yi kullanma hakkında bir örnek +/ CLR proje bkz [izlenecek yol: Visual Studio'da CLR'yi hedefleyen C++ programını derleme](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). Bir Windows çalışma zamanı uygulaması oluşturmak için IDE'yi kullanma hakkında bir örnek için bkz. [C++ kullanarak ilk Windows çalışma zamanı uygulamasını oluşturma](https://msdn.microsoft.com/library/windows/apps/hh974580.aspx).
 
 Derleme, derleme ayarlarını değiştirebilir ve özel belirleme hakkında daha fazla derleme adımları okumak için aşağıdaki makalelere bakın.
 
@@ -78,6 +78,6 @@ C++ projenize derleyici araç setini daha yeni sürümlerine yükseltme konular�
 
 [Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md) Visual Studio'nun önceki sürümlerinde oluşturulan C++ uygulamalarını yükseltme ve ayrıca Visual Studio dışındaki araçlarla oluşturulmuş uygulamaları geçirme hakkında ayrıntılı bilgi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Evrensel Windows Uygulamaları (C++)](../windows/universal-windows-apps-cpp.md)

@@ -1,19 +1,19 @@
 ---
-title: "Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme"
+title: 'Nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - command routing [C++], adding to Windows Forms controls
 - Windows Forms controls [C++], command routing
 ms.assetid: bf138ece-b463-442a-b0a0-de7063a760c0
-ms.openlocfilehash: b3f93574e007fdb1b7d4009d85c573223091adf9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f633cf744314833409a3ffeacf8c850429e099c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447118"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750304"
 ---
-# <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme
+# <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi
 
 [CWinFormsView](../mfc/reference/cwinformsview-class.md) komutları yönlendirir ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi.
 
@@ -21,11 +21,11 @@ Kullanıcı denetimini kullanan [ICommandTarget::Initialize'ı](../mfc/reference
 
 `CWinFormsView` birkaç genel MFC görünüm bildirimlerini, bunları yönetilen kullanıcı denetimine ileterek işler. Bu bildirimler [OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate), [OnUpdate](../mfc/reference/iview-interface.md#onupdate) ve [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) yöntemleri.
 
-Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: kullanıcı Denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+Bu konuda daha önce bitirdiğinizi [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
 
-1. Oluşturduğunuz Windows Forms Denetim Kitaplığı açın [nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
+1. Oluşturduğunuz Windows Forms Denetim Kitaplığı açın [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
 
 1. ' Nde proje düğümüne sağ tıklayarak bunu yapabilirsiniz, mfcmifc80.dll'ye bir başvuru ekleyin **Çözüm Gezgini**u seçerek **Ekle**, **başvuru**, öğesine göz atarak Microsoft Visual Studio 10.0\VC\atlmfc\lib.
 
@@ -70,7 +70,7 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
     }
     ```
 
-1. Oluşturduğunuz MFC uygulamasını açınız [nasıl yapılır: kullanıcı Denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+1. Oluşturduğunuz MFC uygulamasını açınız [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
 
 1. Açacak bir menü seçeneği ekleyin `singleMenuHandler`.
 
@@ -88,7 +88,7 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
 
    Eklediğiniz menü seçeneğini belirleyin. . Ddl'deki yöntemin çağrıldığına dikkat edin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)<br/>
 [ICommandSource Arabirimi](../mfc/reference/icommandsource-interface.md)<br/>

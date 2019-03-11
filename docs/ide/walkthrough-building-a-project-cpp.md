@@ -1,19 +1,19 @@
 ---
-title: 'İzlenecek Yol: Proje Derleme (C++)'
+title: 'İzlenecek yol: Proje derleme (C++)'
 ms.date: 09/14/2018
 helpviewer_keywords:
 - building projects [C++]
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-ms.openlocfilehash: c12cd50dd92e728c88945cd83029f7e5e62816da
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1d5dbd8f83f501c3b68bad771089eab8acc6f8aa
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524163"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742490"
 ---
-# <a name="walkthrough-building-a-project-c"></a>İzlenecek Yol: Proje Derleme (C++)
+# <a name="walkthrough-building-a-project-c"></a>İzlenecek yol: Proje derleme (C++)
 
 Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl düzeltileceğini öğrenmek için kodunuzda bir Visual C++ sözdizimi hatası tanıtır. Projeyi derlediğinizde, bir hata iletisi sorunun ne olduğunu ve oluştuğu yeri gösterir.
 
@@ -54,10 +54,10 @@ Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl 
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [izlenecek yol: projelerle ve çözümlerle (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)<br/>
-**Sonraki:** [izlenecek yol: projeyi (C++) test etme](../ide/walkthrough-testing-a-project-cpp.md)<br/>
+**Önceki:** [İzlenecek yol: Projelerle ve Çözümlerle Çalışma (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)<br/>
+**Sonraki:** [İzlenecek yol: Projeyi Test Etme (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>

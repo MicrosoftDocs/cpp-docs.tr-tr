@@ -21,12 +21,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-ms.openlocfilehash: 50b44c659aac66dbaddad711cceef635f277d2c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57d04fe5867c6a969b6aeca40f26b18b5dcd7a61
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487735"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750786"
 ---
 # <a name="errno-doserrno-syserrlist-and-sysnerr"></a>errno, _doserrno, _sys_errlist, and _sys_nerr
 
@@ -107,11 +107,11 @@ Tüm `errno` değerler aşağıdaki tabloda önceden tanımlanmış sabitleri de
 |Genel makrosu|Gerekli başlık|İsteğe bağlı başlık|
 |------------------|---------------------|---------------------|
 |`errno`|\<errno.h > veya \<stdlib.h >, \<cerrno > veya \<cstdlib > (C++)||
-|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h >, \<cstdlib > (C++)|\<errno.h >, \<cerrno > (C++)|
+|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
 
 `_doserrno`, `_sys_errlist`, Ve `_sys_nerr` Microsoft uzantıları makrolardır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
 [errno sabitleri](../c-runtime-library/errno-constants.md)<br/>

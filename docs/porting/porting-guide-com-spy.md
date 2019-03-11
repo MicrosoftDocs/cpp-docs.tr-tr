@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-ms.openlocfilehash: 67dbcc815404c26535763239eddb176fcecf03f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca81b240a102195109c0ad6ef05bfaed10306704
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441799"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751693"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
 
@@ -164,8 +164,8 @@ private void button1_Click(object sender, EventArgs e)
 
 Bu sorunları olmadan ve COM Spy çalışmaya çalıştı ve izlemek için yapılandırılır `Dog` bileşeni çok fazla veri görünür etkinliğini gösteren.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
-[Sonraki örnek: Spy ++](../porting/porting-guide-spy-increment.md)<br/>
-[Önceki örnek: MFC Scribble](../porting/porting-guide-mfc-scribble.md)
+[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Sonraki örnekte: Spy++](../porting/porting-guide-spy-increment.md)<br/>
+[Önceki örnekte: MFC Scribble](../porting/porting-guide-mfc-scribble.md)

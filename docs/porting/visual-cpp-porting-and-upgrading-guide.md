@@ -2,12 +2,12 @@
 title: Visual C++ taşıma ve yükseltme Kılavuzu
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: 39b0e716ae6dbc1210130908b27cfa1d06f86ec6
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 1b3f7142b5240d8b4a94040d5cda7d033e50e39d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556874"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752434"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 
@@ -81,11 +81,11 @@ Alternatif olarak, artık belki de yeni gereksinimler ortaya veya Windows Masaü
 |[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Visual C++ kitaplıkları ve kodunuzda değişiklikler gerektirebilir bir 2015 derleme araçları Visual Studio 2003'ten tüm değişikliklerin listesi.|
 |[Visual C++ 2003 ile 2015 Arasındaki Farklar](visual-cpp-what-s-new-2003-through-2015.md)|Tüm "yenilikler" bilgileri için Visual Studio 2003 Visual Studio 2015 Visual C++.|
 |[Üçüncü Taraf Kitaplıklarını Taşıma](porting-third-party-libraries.md)|Nasıl kullanılacağını **vcpkg** bağlantı noktası eski açık kaynak kitaplıkları daha yeni Visual C++ araç takımları ile derlenmiş sürümleri için komut satırı aracı.|
-|[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](porting-and-upgrading-examples-and-case-studies.md)|Bu bölüm için biz unity'nin ve çeşitli örnekleri ve uygulamalar yükseltir ve sonuçları ve deneyimler ele alınan. Bu size okuma size bir fikir ne olduğunu taşıma ve yükseltme işlemi bulabilirsiniz. İşlemi boyunca size ipuçları ve püf noktaları yükseltme için tartışmanıza ve belirli hataları göster düzeltilmiştir.|
+|[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](porting-and-upgrading-examples-and-case-studies.md)|Bu bölüm için biz unity'nin ve çeşitli örnekleri ve uygulamalar yükseltir ve sonuçları ve deneyimler ele alınan. Bu size okuma size bir fikir ne olduğunu taşıma ve yükseltme işlemi bulabilirsiniz. İşlemi boyunca size ipuçları ve püf noktaları yükseltme için tartışmanıza ve belirli hataları göster düzeltilmiştir.|
 |[Evrensel Windows Platformu'na bağlantı noktası](porting-to-the-universal-windows-platform-cpp.md)|Windows 10 için kod bağlantı noktası oluşturma hakkında bilgi içerir.|
 |[UNIX Kullanıcıları için Visual C++'a Giriş](introduction-to-visual-cpp-for-unix-users.md)|Visual C++'da yenidir ve onunla üretken isteyen UNIX kullanıcıları için bilgiler sağlar.|
 |[UNIX'ten Win32'ye Taşıma](porting-from-unix-to-win32.md)|Windows UNIX uygulamalarını geçirme için seçenekleri açıklar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++](../visual-cpp-in-visual-studio.md)

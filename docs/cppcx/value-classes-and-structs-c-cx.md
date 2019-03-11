@@ -5,12 +5,12 @@ helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-ms.openlocfilehash: 7f716e5ebdc3cf8c832442295897ba44509ff4e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b9b50ba7200439e9ce648c53d52ce37226f61d3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435639"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747442"
 ---
 # <a name="value-classes-and-structs-ccx"></a>Değer sınıfları ve yapıları (C + +/ CX)
 
@@ -147,7 +147,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>

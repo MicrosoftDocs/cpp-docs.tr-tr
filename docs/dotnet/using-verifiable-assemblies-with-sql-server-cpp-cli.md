@@ -4,12 +4,12 @@ ms.date: 10/17/2018
 helpviewer_keywords:
 - verifiable assemblies [C++], with SQL Server
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
-ms.openlocfilehash: a977aa81a598e1698dfbc1c5679b85378b7ba6fc
-ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
+ms.openlocfilehash: 27dec67cc0932a784cdd041ba346bb8c635b280d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389935"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747702"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
 
@@ -19,9 +19,9 @@ Bir istemci bir genişletilmiş saklı yordamı yürütüldüğünde, SQL Server
 
 SQL Server Transact-SQL (SQL Server ile doğrulanabilen derlemeler yüklemek, izin vermek için T-SQL) uzantıları sağlar. SQL Server izin kümesi, aşağıdaki güvenlik düzeyleri ile güvenlik bağlamını belirtir:
 
-- Kısıtlanmamış modu: kendi sorumluluğunuzdadır; kod çalıştırma kod doğrulanabilir şekilde tür kullanımı uyumlu olması gerekmez.
+- Kısıtlanmamış modu: Kod, kendi risk altında çalıştırın; kod doğrulanabilir şekilde tür kullanımı uyumlu olması gerekmez.
 
-- Güvenli mod: doğrulanabilir şekilde typesafe kodunu çalıştırın / CLR: safe ile derlenmiş.
+- Güvenli mod: Uyumlu kod doğrulanabilir şekilde çalıştırın / CLR: safe ile derlenmiş.
 
 > [!IMPORTANT]
 > Visual Studio 2015 kullanım dışı ve Visual Studio 2017'yi desteklemez **/CLR: pure** ve **/CLR: safe** doğrulanabilir projeleri oluşturma. Doğrulanabilen kod gerekiyorsa, C# kodunuzda Çevir öneririz.
@@ -76,6 +76,6 @@ SQL betikleri SQL Query Analyzer veya sqlcmd.exe yardımcı programını komut s
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

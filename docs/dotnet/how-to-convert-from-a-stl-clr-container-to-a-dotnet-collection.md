@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme'
+title: 'Nasıl yapılır: Bir STL/CLR kapsayıcısından .NET koleksiyonuna dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, converting to .NET collections
 ms.assetid: 70b2dfd9-869c-4e0f-9a29-b1ee0cb0d107
-ms.openlocfilehash: 3444339f43f8000d8a9c9b8a6577adb286245dbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf67e362751dd164916cc94cd644d55110d88a5f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621630"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751589"
 ---
-# <a name="how-to-convert-from-a-stlclr-container-to-a-net-collection"></a>Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme
+# <a name="how-to-convert-from-a-stlclr-container-to-a-net-collection"></a>Nasıl yapılır: Bir STL/CLR kapsayıcısından .NET koleksiyonuna dönüştürme
 
 Bu konuda, STL/CLR kapsayıcıları, eşdeğer bir .NET koleksiyonlarına dönüştürme gösterilmektedir. Örnek olarak, STL/CLR nasıl dönüştürme yapılacağını göstereceğiz [vektör](../dotnet/vector-stl-clr.md) kullanarak bir .NET <xref:System.Collections.Generic.ICollection%601> ve STL/CLR dönüştürme [harita](../dotnet/map-stl-clr.md) kullanarak bir .NET <xref:System.Collections.Generic.IDictionary%602>, ancak tüm koleksiyonlar için benzer bir yordamı ve kapsayıcıları.
 
@@ -111,8 +111,8 @@ Key: 42.00 Value: 42
 Key: 74.00 Value: 74
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
-[Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
+[Nasıl yapılır: .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
 [range_adapter (STL/CLR)](../dotnet/range-adapter-stl-clr.md)

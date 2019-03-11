@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CFileTime class
 - shared classes, CFileTime
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
-ms.openlocfilehash: 42c89bcfa064bbb151f9d110cbd25763dbd44185
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 07b888b031a38dc2f09404a14e729e26b3eaa019
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893944"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746103"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
 
@@ -473,7 +473,7 @@ static const ULONGLONG Week = Day* 7;
 
 Örneğin bakın [CFileTime::Millisecond](#millisecond).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan Sınıfı](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>

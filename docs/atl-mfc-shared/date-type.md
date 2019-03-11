@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC, date and time
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-ms.openlocfilehash: b8460d50a0c6cbd4b213e45c62d8d6cadae68544
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd63b400cad6efc3b3899c17a3bf835596b4008c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548193"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750396"
 ---
 # <a name="date-type"></a>Tarih türü
 
@@ -64,8 +64,7 @@ Bu tarih ve saat biçimleri otomasyon ile çalışırken aşağıdaki noktaları
 
 Sorunları hakkında daha fazla bilgi için tarih ilgili ve `COleDateTime` türleri altında bulunabilir [COleDateTime sınıfı](../atl-mfc-shared/reference/coledatetime-class.md) ve [tarih ve saat: Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)<br/>
 [COleDateTime Sınıfı](../atl-mfc-shared/reference/coledatetime-class.md)
-
