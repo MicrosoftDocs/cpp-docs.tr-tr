@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)'
+title: 'Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 028e8622c034920e993444458c52536d2e3ec6de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c43234ca05c661d8f3d920b1129256a7550a5e2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436172"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751836"
 ---
-# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)
+# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)
 
 Bu makalede, kullanıcı tarafından tanımlanan başvuru türleri ve değer türleri C + tanımlama ve kullanma işlemi gösterilmektedir +/ CLI.
 
@@ -912,7 +912,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
 [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

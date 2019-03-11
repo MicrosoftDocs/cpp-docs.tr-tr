@@ -7,14 +7,14 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: 51e8b234792dea8dd7d61e4ac4b97a55bd5ea4e9
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 72a1a015b97c446a5f81d987c339d31467af9b3f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524637"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752135"
 ---
-# <a name="walkthrough-compiling-a-c-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek Yol: Visual Studio'da CLR'yi Hedefleyen C++ Programını Derleme
+# <a name="walkthrough-compiling-a-c-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Visual Studio'da CLR'yi hedefleyen C++ programını derleme
 
 .NET sınıflarını kullanın ve bunları Visual Studio geliştirme ortamını kullanarak derlemek için Visual C++ programlar oluşturabilirsiniz.
 
@@ -51,7 +51,7 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
 
 1. Visual Studio'da yeni oluşturulan sekmesine tıklayın ve geçerli bir Visual C++ programı yazın veya kopyalayın ve örnek programlardan birini yapıştırın.
 
-   Örneğin kullanabilirsiniz [nasıl yapılır: metin dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md) örnek program (içinde **dosya işleme ve g/ç** düğümünün Programlama Kılavuzu).
+   Örneğin, kullanabileceğiniz [nasıl yapılır: Metin dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md) örnek program (içinde **dosya işleme ve g/ç** düğümünün Programlama Kılavuzu).
 
    Örnek programı kullanırsanız, kullandığına dikkat edin `gcnew` anahtar sözcüğü yerine `new` bir .NET nesnesini ve oluştururken `gcnew` bir tanıtıcı döndürür (`^`) yerine bir işaretçi (`*`):
 
@@ -76,10 +76,10 @@ Bu konular, C++ dili temellerini anladığınızı varsayar.
 
 ## <a name="whats-next"></a>Yenilikler
 
-**Önceki:** [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
-**Sonraki:** [izlenecek yol: komut satırında C programı derleme](../build/walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
+**Önceki:** [İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+**Sonraki:** [İzlenecek yol: Komut satırında C programı derleme](../build/walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>

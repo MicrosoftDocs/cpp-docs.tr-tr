@@ -7,12 +7,12 @@ helpviewer_keywords:
 - STL/CLR, redistribution
 - cliext directory
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
-ms.openlocfilehash: d5a2f3f9ceb62cf127d63c15131bf99646ebae4a
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: b3c25a40fdb5bade02e112b13d16420b248a177f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809626"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750955"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR Kitaplık Başvurusu
 
@@ -61,6 +61,6 @@ Ayrıca, bu bölümde, STL/CLR öğesinin aşağıdaki bileşenlerini de açıkl
 |[set (STL/CLR)](../dotnet/set-stl-clr.md)|[stack (STL/CLR)](../dotnet/stack-stl-clr.md)|
 |[utility (STL/CLR)](../dotnet/utility-stl-clr.md)|[vector (STL/CLR)](../dotnet/vector-stl-clr.md)|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

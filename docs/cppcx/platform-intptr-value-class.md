@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-ms.openlocfilehash: eda65255aa76d6a801bdc0f80c437a9dc975d8f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8101fa2c82a0ac3e3b573384d14d9a7eff6ecf61
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449146"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747118"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
 
@@ -33,16 +33,16 @@ IntPtr aşağıdaki üyeleri içerir:
 |Üye|Açıklama|
 |------------|-----------------|
 |[IntPtr::IntPtr](#ctor)|IntPtr yeni bir örneğini başlatır.|
-|[IntPtr::op_Explicit işleci](#op-explicit)|Belirtilen parametre bir IntPtr ya da bir işaretçi bir IntPtr değerine dönüştürür.|
+|[IntPtr::op_explicit Operator](#op-explicit)|Belirtilen parametre bir IntPtr ya da bir işaretçi bir IntPtr değerine dönüştürür.|
 |[IntPtr::ToInt32](#toint32)|Geçerli IntPtr bir 32-bit tamsayıya dönüştürür.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
@@ -61,7 +61,7 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
 *value*<br/>
 Bir 64-bit tanıtıcı veya işaretçi veya 64-bit bir değer ya da bir 64-bit değere dönüştürülebilir 32-bit bir değer için bir işaretçi.
 
-## <a name="op-explicit"> </a> IntPtr::op_Explicit işleci
+## <a name="op-explicit"> </a> IntPtr::op_explicit Operator
 
 Belirtilen parametre bir IntPtr ya da bir işaretçi bir IntPtr değerine dönüştürür.
 
@@ -100,6 +100,6 @@ int32 IntPtr::ToInt32();
 
 Bir 32 bit tamsayı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

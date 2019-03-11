@@ -43,12 +43,12 @@ helpviewer_keywords:
 - registry, writing to
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-ms.openlocfilehash: d23eef1d48674751a725e076d1b652b304ad40a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 413ccc3b66d76f8779861d4d65eb262ee8640725
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508400"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750903"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
 
@@ -503,12 +503,12 @@ int main()
 
 ### <a name="remarks"></a>Açıklamalar
 
-.NET Framework ile kayıt defterine erişmek için kullanabileceğiniz <xref:Microsoft.Win32.Registry> ve [RegistryKey](https://msdn.microsoft.com/library/microsoft.win32.registrykey.aspx) her ikisi de sınıfları tanımlanan <xref:Microsoft.Win32> ad alanı. **Kayıt defteri** sınıfı statik örnekleri için bir kapsayıcıdır <xref:Microsoft.Win32.RegistryKey> sınıfı. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.
+.NET Framework ile kayıt defterine erişmek için kullanabileceğiniz <xref:Microsoft.Win32.Registry> ve <xref:Microsoft.Win32.RegistryKey> her ikisi de sınıfları tanımlanan <xref:Microsoft.Win32> ad alanı. **Kayıt defteri** sınıfı statik örnekleri için bir kapsayıcıdır <xref:Microsoft.Win32.RegistryKey> sınıfı. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 <xref:System.Environment>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

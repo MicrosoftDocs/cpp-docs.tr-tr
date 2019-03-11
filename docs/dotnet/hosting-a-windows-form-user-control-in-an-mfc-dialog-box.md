@@ -6,12 +6,12 @@ helpviewer_keywords:
 - hosting Windows Forms control [C++]
 - Windows Forms [C++], MFC support
 ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
-ms.openlocfilehash: 921e6fac32d37f8976d53d49adab72fb27ab5e99
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56cf00da71fe6c47e39de2a8fc06df572a301a61
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632225"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748573"
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma
 
@@ -26,15 +26,15 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
 
 [Nasıl yapılır: İletişim Kutusunda Kullanıcı Denetimi Ve Konak Oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)
 
-[Nasıl yapılır: Windows Forms ile DDX/DDV veri bağlaması yapma](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)
+[Nasıl yapılır: DDX/DDV veri ile Windows Forms bağlama yapın](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)
 
-[Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+[Nasıl yapılır: Yerel C++ Sınıflarından Havuz Windows Forms Olayları](../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
 ## <a name="reference"></a>Başvuru
 
 [CWinFormsControl sınıfı](../mfc/reference/cwinformscontrol-class.md) &#124; [CDialog sınıfı](../mfc/reference/cdialog-class.md) &#124; [CWnd sınıfı](../mfc/reference/cwnd-class.md)&#124; <xref:System.Windows.Forms.Control>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)<br/>
 [Windows Forms/MFC programlama farkları](../dotnet/windows-forms-mfc-programming-differences.md)<br/>

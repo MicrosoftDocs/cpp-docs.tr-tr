@@ -7,12 +7,12 @@ helpviewer_keywords:
 - comments, C++ source code files
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-ms.openlocfilehash: 380fe73bba71d08bb9315e218f5946a7cf935108
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bddcd09b892950e547c01a77845e679009bbd213
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523892"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747560"
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)
 
@@ -42,6 +42,6 @@ Belge açıklamaları bir .xml dosyası oluşturma hakkında daha fazla bilgi ed
 
 Özel karakterler XML belgeleri açıklama metninde koymak gerekiyorsa, XML varlıklar veya CDATA bölümü kullanmanız gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

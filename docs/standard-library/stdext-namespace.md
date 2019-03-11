@@ -7,12 +7,12 @@ helpviewer_keywords:
 - _DEFINE_DEPRECATED_HASH_CLASSES symbol
 - stdext namespace
 ms.assetid: 3e94fc89-0584-424f-bc09-081b73379545
-ms.openlocfilehash: aeba486393e6b45481108f967f3de8eb73a0adea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d40f3f7a99db72784cc9a32a9c37064228597d34
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468490"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750539"
 ---
 # <a name="stdext-namespace"></a>stdext Ad Alanı
 
@@ -28,7 +28,6 @@ Derleyicinin kullanımıyla ilgili bir hata oluşturmak için `std` üyelerinin 
 
 İle derlerken **/Za**, derleyici bir hata oluşturur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
-

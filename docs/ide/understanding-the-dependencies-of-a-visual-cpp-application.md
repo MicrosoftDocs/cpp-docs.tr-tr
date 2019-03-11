@@ -11,12 +11,12 @@ helpviewer_keywords:
 - depends.exe
 - libraries [C++], application deployment issues
 ms.assetid: 62a44c95-c389-4c5f-82fd-07d7ef09dbf9
-ms.openlocfilehash: 8ed340bed62d3b2cfcf32e0b98f032c9146b6bb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed510e0d289349b1d7a0129a1c586b0bf1715b7e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629274"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751485"
 ---
 # <a name="understanding-the-dependencies-of-a-visual-c-application"></a>Visual C++ Uygulaması Bağımlılıklarını Anlama
 
@@ -32,6 +32,6 @@ Depends.exe kullanırken, bir DLL'nin başka bir DLL'ye veya belirli bir DLL sü
 
 Uygulamanızın hangi DLL'lere bağlı olduğunu bildiğinizde, başka bir bilgisayara dağıtım yaparken uygulamanızla birlikte yeniden dağıtmanız gereken DLL'leri belirleyebilirsiniz. Çoğu durumda, sistem DLL'lerini yeniden dağıtmanız gerekmez, ancak Visual C++ kitaplıklarını DLL'leri dağıtmanız gerekebilir. Daha fazla bilgi için [belirleme hangi DLL'lerin yeniden dağıtılacağını](../ide/determining-which-dlls-to-redistribute.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)

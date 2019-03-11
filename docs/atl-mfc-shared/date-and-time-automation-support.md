@@ -14,12 +14,12 @@ helpviewer_keywords:
 - calculations, date and time
 - time [Visual Studio], Automation support
 ms.assetid: 6eee94c4-943d-4ffc-bf7c-bdda89337ab0
-ms.openlocfilehash: 5aeefe2594fcb71e8b399e017fc10f8c1c5650a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c26534189c7b6f904611e78c5d2d6d0b1d6d7382
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552691"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750213"
 ---
 # <a name="date-and-time-automation-support"></a>Tarih ve saat: Otomasyon desteği
 
@@ -49,6 +49,6 @@ CRT doğru bir 23 saat farkı hesaplar. `COleDateTimeSpan` 24 saatlik bir farkı
 
 [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)

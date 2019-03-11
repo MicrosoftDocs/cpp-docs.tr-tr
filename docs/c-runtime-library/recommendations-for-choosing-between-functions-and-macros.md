@@ -7,12 +7,12 @@ helpviewer_keywords:
 - functions [CRT], vs. macros
 - macros, vs. functions
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-ms.openlocfilehash: ab3ac2e59e61e15ae1f309ac26fe30d1557185c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 234fcd8a0439240bc7585414254c5687dcb8f21b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637703"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749314"
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>İşlevlerle Makrolar Arasında Seçim Önerileri
 
@@ -42,6 +42,6 @@ Bir yordamı makrosu uygulamasıdır ve bir işlev arasında seçim yapmanız ge
 
 - **Tür denetleme** bir işlev bildirdiğinizde, derleyici bağımsız değişken türlerini kontrol edebilirsiniz. Derleyici, makro bağımsız değişken türleri iade edilemedi, bir makro bildiremezsiniz çünkü değil; bağımsız değişken sayısı kontrol edebilirsiniz ancak bir makro geçirin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT
 - secure template overloads
 ms.assetid: 562741d0-39c0-485e-8529-73d740f29f8f
-ms.openlocfilehash: a1747102b53febfe20b76d6de05e71d5b19aad19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dfb13d5a48376efb72a845e2f5e2380407937f5b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603547"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744558"
 ---
 # <a name="secure-template-overloads"></a>Güvenli Şablon Aşırı Yüklemeleri
 
@@ -91,7 +91,7 @@ strcpy_s(szBuf, "test"); // doesn't compile; you have to change it to
                          // strcpy_s(szBuf, 10, "test");
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT'deki Güvenlik Özellikleri](../c-runtime-library/security-features-in-the-crt.md)<br/>
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

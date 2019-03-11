@@ -8,12 +8,12 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: faf541a0705de3e0e3d1b795d1abbdc2e9707974
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582643"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751706"
 ---
 # <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve sıralama (C + +/ CX)
 
@@ -61,7 +61,7 @@ Verilen uyarı şu şekildedir:
 
 > `Warning 1 warning C4451: 'Platform::Agile<T>::_object' : Usage of ref class 'Windows::Security::Credentials::UI::CredentialPickerOptions' inside this context can lead to invalid marshaling of object across contexts. Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead`
 
-Bir başvuru eklediğinizde — üye kapsamı veya genel kapsamlı — bir hazırlama davranışı "Standart" olan bir nesne için derleyici türüne sarın başlatmanızı öneren bir uyarı verir. `Platform::Agile<T>`: `Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead` kullanırsanız `Agile<T>`, sınıfın tüketebilir. Çevik herhangi bir sınıf gibi kullanabilirsiniz. Kullanım `Platform::Agile<T>` bu durumlarda:
+Bir başvuru eklediğinizde — üye kapsamı veya genel kapsamlı — bir hazırlama davranışı "Standart" olan bir nesne için derleyici türüne sarın başlatmanızı öneren bir uyarı verir. `Platform::Agile<T>`: `Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead` Kullanırsanız `Agile<T>`, Çevik herhangi bir sınıf gibi sınıfın tüketebilir. Kullanım `Platform::Agile<T>` bu durumlarda:
 
 - Çevik olmayan değişken genel kapsamda bildirilir.
 
@@ -122,7 +122,7 @@ Derleyici türetilen sınıfların bu öznitelikler için aynı değere sahip ol
 
 İş parçacığı oluşturma ve bir üçüncü taraf Windows çalışma zamanı bileşeni tarafından gerekli olan bilgileri hazırlama bileşeni için uygulama bildirim kayıt bilgileri belirtildi. Uygulamanızı Windows çalışma zamanı bileşenlerinin tümünü Çevik yapmanızı öneririz. Bu, istemci kodu bileşeniniz uygulamadaki herhangi bir iş parçacığı çağrı yapabilir ve herhangi bir sıralama sahip doğrudan çağrıları olduklarından bu çağrıları performansını artırır sağlar. Bu şekilde sınıfınızda Yazar sonra kullanmak istemci kodu yoksa `Platform::Agile<T>` sınıfınıza kullanma.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[ThreadingModel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)<br/>
-[MarshallingBehavior](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)
+[ThreadingModel](/uwp/api/Windows.Foundation.Metadata.ThreadingModel)<br/>
+[MarshallingBehavior](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Unicode, string objects
 ms.assetid: 0b53a542-eeb1-4108-9ada-6700645b6f8f
-ms.openlocfilehash: cbc48008cd7b30f1630fc4ec2c30214e3c448c27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b247e97f5aa6b5e85a6a6b6f57a64224a9e0f435
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595071"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747183"
 ---
 # <a name="string-data-management"></a>Dize veri yönetimi
 
@@ -83,7 +83,6 @@ Her kopyası yok olarak özgün nesneye başvuru sayısı azaltılır. Özgün `
 
 Kullanabileceğiniz `CString` üye işlevleri [CSimpleStringT::LockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [CSimpleStringT::UnlockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) başvuru sayımı etkinleştir veya devre dışı bırakmak.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)
-

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-ms.openlocfilehash: da4f2c8586085e57925d277c452d6ed28db467d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c45197c9008c2d0b6a0519d947ca75f55a7960fd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573244"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747852"
 ---
 # <a name="vprintf-functions"></a>vprintf İşlevleri
 
@@ -46,22 +46,22 @@ Bu işlevler hedefleri için çıktı verilerini aşağıdaki gibi biçimlendiri
 |`_vcprintf`|[_cprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|konsolu|Null denetimi.|Yok|
 |`_vcwprintf`|[_cwprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|konsolu|Null denetimi.|Yok|
 |`vfprintf`|[fprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Akış*|Null denetimi.|Yok|
-|**vfprintf_p**|[fprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Akış*|İçin null ve geçerli biçimini denetleyin.|Evet|
+|**vfprintf_p**|[fprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Akış*|İçin null ve geçerli biçimini denetleyin.|evet|
 |`vfprintf_s`|[fprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Akış*|İçin null ve geçerli biçimini denetleyin.|Yok|
 |`vfwprintf`|[fwprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Akış*|Null denetimi.|Yok|
-|**vfwprintf_p**|[fwprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Akış*|İçin null ve geçerli biçimini denetleyin.|Evet|
+|**vfwprintf_p**|[fwprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Akış*|İçin null ve geçerli biçimini denetleyin.|evet|
 |`vfwprintf_s`|[fwprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Akış*|İçin null ve geçerli biçimini denetleyin.|Yok|
 |`vprintf`|[Printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null denetimi.|Yok|
-|**vprintf_p**|[printf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|İçin null ve geçerli biçimini denetleyin.|Evet|
+|**vprintf_p**|[printf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|İçin null ve geçerli biçimini denetleyin.|evet|
 |`vprintf_s`|[printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|İçin null ve geçerli biçimini denetleyin.|Yok|
 |`vwprintf`|[wprintf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null denetimi.|Yok|
-|**vwprintf_p**|[wprintf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|İçin null ve geçerli biçimini denetleyin.|Evet|
+|**vwprintf_p**|[wprintf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|İçin null ve geçerli biçimini denetleyin.|evet|
 |`vwprintf_s`|[wprintf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|İçin null ve geçerli biçimini denetleyin.|Yok|
 |**vsprintf**|[sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|bellek tarafından işaret edilen *arabelleği*|Null denetimi.|Yok|
-|**vsprintf_p**|[sprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|bellek tarafından işaret edilen *arabelleği*|İçin null ve geçerli biçimini denetleyin.|Evet|
+|**vsprintf_p**|[sprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|bellek tarafından işaret edilen *arabelleği*|İçin null ve geçerli biçimini denetleyin.|evet|
 |`vsprintf_s`|[sprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|bellek tarafından işaret edilen *arabelleği*|İçin null ve geçerli biçimini denetleyin.|Yok|
 |`vswprintf`|[swprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|bellek tarafından işaret edilen *arabelleği*|Null denetimi.|Yok|
-|**vswprintf_p**|[swprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|bellek tarafından işaret edilen *arabelleği*|İçin null ve geçerli biçimini denetleyin.|Evet|
+|**vswprintf_p**|[swprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|bellek tarafından işaret edilen *arabelleği*|İçin null ve geçerli biçimini denetleyin.|evet|
 |`vswprintf_s`|[swprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|bellek tarafından işaret edilen *arabelleği*|İçin null ve geçerli biçimini denetleyin.|Yok|
 |`_vscprintf`|[_vscprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|bellek tarafından işaret edilen *arabelleği*|Null denetimi.|Yok|
 |`_vscwprintf`|[_vscwprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|bellek tarafından işaret edilen *arabelleği*|Null denetimi.|Yok|
@@ -83,7 +83,7 @@ Sahip bu işlevlerin sürümleri **_p** soneki Biçim dizesinde sağlanan bağı
 > [!IMPORTANT]
 >  Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns). Bu işlevlerin güvenli sürümleri kullanıyorsanız (ya da **_Yanları** veya **_p** sonekleri), kullanıcı tarafından sağlanan dize içeriyorsa, bir kullanıcı tarafından sağlanan biçim dizesi geçersiz parametre özel durum tetikleyebilir geçersiz biçim karakterleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Stream g/ç](../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

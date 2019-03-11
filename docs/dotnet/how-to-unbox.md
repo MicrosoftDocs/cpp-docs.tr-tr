@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Açma'
+title: 'Nasıl yapılır: unbox'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - unboxing
 ms.assetid: 75794696-9275-47bf-9a7d-5abe6585ab91
-ms.openlocfilehash: b2919ecce254a81d6a140fc7906d28646b50ab8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae80497a24b090bc5866b3cfb22748b20adda223
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618536"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747949"
 ---
-# <a name="how-to-unbox"></a>Nasıl yapılır: Açma
+# <a name="how-to-unbox"></a>Nasıl yapılır: unbox
 
 Açma ve bir değer değiştirme işlemi gösterilmektedir.
 
@@ -39,6 +39,6 @@ int main() {
 14
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kutulama](../windows/boxing-cpp-component-extensions.md)

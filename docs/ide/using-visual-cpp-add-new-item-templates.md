@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add New Item command
 - templates, Add New Item
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
-ms.openlocfilehash: 0e63a1e9b2ab5c479d5a85cd24e92ad41fb286ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f9b3b3dbfe3802326539346a22de11b545577252
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549324"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746322"
 ---
 # <a name="using-visual-c-add-new-item-templates"></a>Visual C++ Yeni Öğe Ekle Şablonlarını Kullanma
 
@@ -35,7 +35,7 @@ Aşağıdaki tabloda, Visual C++ Yeni Öğe Ekle şablonları, alfabetik bir lis
 |Üst bilgi dosyası (.h)|Bir C++ üstbilgi dosyası oluşturur.|
 |HTML sayfası (.htm)|Boş bir HTML dosyası oluşturur.|
 |Simge dosyası (.ico)|Bir Win32 simgesi dosyası oluşturur.|
-|Yükleyici sınıfı|Öğesinden devralınan bir sınıf ekler [Yükleyici sınıfı](https://msdn.microsoft.com/library/system.configuration.install.installer.aspx) CLR özelliklerini kullanma.|
+|Yükleyici sınıfı|Öğesinden devralınan bir sınıf ekler <xref:System.Configuration.Install.Installer> CLR özelliklerini kullanma.|
 |MIDL dosyası (.idl)|Bir arabirim tanımlama dili dosyası oluşturur.|
 |Modül tanım dosyasını (.def)|DLL dışarı aktarma tanım dosyası oluşturur.|
 |Özellik sayfası (.props)|Visual C++ özellik sayfası dosyası oluşturur.|
@@ -45,7 +45,7 @@ Aşağıdaki tabloda, Visual C++ Yeni Öğe Ekle şablonları, alfabetik bir lis
 |Kaynak şablon dosyası (.rct)|Kaynak şablon dosyası oluşturur.|
 |Şerit (.mfcribbon ms)|Bir Şerit dosyası oluşturur.|
 |Sunucu yanıt dosyası (.srf)|ATL sunucusuyla kullanılan sunucu yanıt dosyası oluşturur.|
-|SQL betiği (.sql)|SQL komut dosyası oluşturur. **Not:** bu şablonu Professional Edition özellik değil.|
+|SQL betiği (.sql)|SQL komut dosyası oluşturur. **Not:**  Bu şablon bir Professional Edition özellik değil.|
 |Stil sayfası (.css)|Zengin HTML stil tanımları için kullanılan bir geçişli stil sayfası ekler.|
 |Metin dosyası (.txt)|Boş metin dosyası ekler.|
 |Kullanıcı denetimi|CLR özellikleri kullanarak bir kullanıcı denetimi ekler.|
@@ -54,6 +54,6 @@ Aşağıdaki tabloda, Visual C++ Yeni Öğe Ekle şablonları, alfabetik bir lis
 |XML şema dosyası (.xsd)|XML belgeleri için şema tanımlamak için kullanılan bir dosya oluşturur.|
 |XSLT dosyası (.xslt)|XML belgelerini dönüştürmek için kullanılan bir dosya oluşturur.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)

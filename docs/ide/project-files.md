@@ -5,12 +5,12 @@ helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-ms.openlocfilehash: cb1369515db91187d182cd6c6ea49b938ebdee77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ad6a2835eb0b885d0761d027fcd6bf3d8c799ba
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459169"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746323"
 ---
 # <a name="project-files"></a>Proje Dosyaları
 
@@ -118,7 +118,7 @@ Aşağıdaki örnek .vcxproj dosyası belirterek üretilmiş bir **Win32 konsol 
 </Project>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'da C++ Projeleri Derleme](../ide/building-cpp-projects-in-visual-studio.md)<br>
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)
