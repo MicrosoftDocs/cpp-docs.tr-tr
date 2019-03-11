@@ -4,14 +4,14 @@ ms.date: 09/17/2018
 helpviewer_keywords:
 - walkthrough, deploying a Visual C++ application by using the redistributable package
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
-ms.openlocfilehash: 6de94ac300c5d50be67ede24cfcc3d03bc966fed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ccf6b74096894c2e48258e6e0a60b807c7c6c5b4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436434"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743802"
 ---
-# <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>İzlenecek Yol: Visual C++ Yeniden Dağıtılabilir Paketini Kullanarak Visual C++ Uygulaması Dağıtmak
+# <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>İzlenecek yol: Visual C++ yeniden dağıtılabilir paketini kullanarak bir Visual C++ uygulamasını dağıtma
 
 Bu makalede, Visual C++ uygulaması dağıtmak için Visual C++ yeniden dağıtılabilir paketi kullanmayı açıklar.
 
@@ -25,7 +25,7 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
 
 ### <a name="to-use-the-visual-c-redistributable-package-to-deploy-an-application"></a>Bir uygulamayı dağıtmak için Visual C++ yeniden dağıtılabilir paketi kullanmak için
 
-1.  İçindeki adımları izleyerek bir MFC uygulaması oluşturmayı ve [izlenecek yol: Kurulum projesi dağıtma bir Visual C++ Application By Using](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
+1.  İçindeki adımları izleyerek bir MFC uygulaması oluşturmayı ve [izlenecek yol: Bir kurulum projesi kullanarak Visual C++ uygulamasını dağıtma](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
 
 1. Bir dosya oluşturun, setup.bat adlandırın ve aşağıdakileri ekleyin. Değişiklik `MyMFCApplication` projenizin adı.
 
@@ -54,7 +54,7 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
 
       - MFC uygulamanızı (.exe dosyası).
 
-      - VCRedist_x86.exe. Bu dosya \Program dosyaları (x86) \Microsoft Visual Studio bulunur \<sürüm > \SDK\Bootstrapper\Packages\. Ayrıca bu dosyayı indirebileceğiniz [Microsoft](https://www.microsoft.com/download/confirmation.aspx?id=5555).
+      - vcredist_x86.exe. Bu dosya \Program dosyaları (x86) \Microsoft Visual Studio bulunur \<sürüm > \SDK\Bootstrapper\Packages\. Ayrıca bu dosyayı indirebileceğiniz [Microsoft](https://www.microsoft.com/download/confirmation.aspx?id=5555).
 
       - Önceki adımda oluşturduğunuz setup.bat dosya.
 
@@ -85,6 +85,6 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
       > [!IMPORTANT]
       > Yükleyici çalışma zamanının hangi sürümünün yüklü olduğunu belirlemek için kayıt defteri anahtarı \HKLM\SOFTWARE\Microsoft\VisualStudio denetler\\\<sürüm > \VC\Runtimes\\<platform>. Şu anda yüklü olan sürümü yükleyici yüklemeye çalıştığı sürümden daha yeniyse, yükleyici eski sürümü yüklemeden başarı döndürür ve ek bir giriş Denetim Masası'ndaki yüklü programlar sayfasında bırakır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dağıtım Örnekleri](deployment-examples.md)<br/>

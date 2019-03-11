@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-ms.openlocfilehash: b0ccc589809fc5204659ad5af28ece0096855d30
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c7b2ae50fdcbf59cd23cc309a4ddc4c0803e24e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677597"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748430"
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
 
@@ -25,7 +25,7 @@ Geçersiz parametre işleyicisi dağıtma işlevinin sırayla şu anda atanmış
 
 İşlevleri kullanarak bu davranışı değiştirilebilir [_set_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) veya [_set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) kendi işlevi için geçersiz parametre işleyicisi ayarlamak için. Belirttiğiniz işlevi uygulamayı sonlandırmak değil, geçersiz parametreler alınan işleve döndürülür. CRT bu İşlevler normalde işlevi yürütme sona erecek ayarlamak `errno` bir hata kodu ve bir hata kodu döndürür. Çoğu durumda, `errno` değeri ve dönüş değeri olan hem de `EINVAL`, geçersiz bir parametre belirten. Bazı durumlarda, daha belirgin bir hata kodu, gibi döndürülen `EBADF` bir hatalı dosya işaretçisiyse için geçirilen parametre olarak. Daha fazla bilgi için `errno`, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT'deki Güvenlik Özellikleri](../c-runtime-library/security-features-in-the-crt.md)<br/>
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

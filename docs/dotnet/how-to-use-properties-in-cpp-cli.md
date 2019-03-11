@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma'
+title: 'Nasıl yapılır: Özellikleri kullanmak C + +/ CLI'
 ms.date: 07/21/2017
 helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-ms.openlocfilehash: 546c729245fb0c941f07e9222b71670278c44fde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f29bf419ca19ce1bbe45e36adb08d7f4e5629f5a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617496"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739287"
 ---
-# <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma
+# <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: Özellikleri kullanmak C + +/ CLI
 
 Bu makale özelliklerini kullanma C + +/ CLI.
 
@@ -88,7 +88,7 @@ Dizinlenmiş bir özelliği, genellikle bir alt simge işleci kullanılarak eri�
 
 Kullanırsanız, varsayılan bir özelliğin dizini, sınıf adına bakarak veri yapısı erişebilir, ancak kullanıcı tanımlı bir dizinlenmiş özellik kullanırsanız, veri yapısı erişmek için özellik adını belirtmek için gerekir.
 
-C# dilinde yazılmış bir dizin oluşturucusunu kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: C# dizin oluşturucusunu kullanma (C + +/ CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
+Yazılmış olduğu bir dizin oluşturucusunu kullanma hakkında bilgi için C#, bkz: [nasıl yapılır: Tüketen bir C# dizin oluşturucu (C + +/ CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
 
 Bu kod örneği, varsayılan ve kullanıcı tarafından tanımlanan dizinli özellikleri nasıl kullanacağınızı gösterir:
 
@@ -407,6 +407,6 @@ int main() {
 6.8
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [property](../windows/property-cpp-component-extensions.md)

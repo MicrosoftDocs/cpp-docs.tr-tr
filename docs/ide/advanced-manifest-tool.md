@@ -8,12 +8,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.ValidateSignature
 - VC.Project.VCManifestTool.KeyContainer
 ms.assetid: 3d587366-05ea-4956-a978-313069660735
-ms.openlocfilehash: 10da66c690106255d34c82b066f3450c5cc8a37a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 183b4613362acde9f48c98ee00a76b1fb8a2c4d3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530565"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742269"
 ---
 # <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Gelişmiş, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -31,7 +31,7 @@ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sa
 
    İçinde başvurulan dosyaları için arama yolunu belirtir `<file>` öğeleri. Bu seçenek ayrıca /hashupdate seçeneğini kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [\<Dosya > öğesi](/visualstudio/deployment/file-element-clickonce-application)<br>
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Unicode, stream I/O routines
 - Unicode stream I/O
 ms.assetid: 68be0c3e-a9e6-4fd5-b34a-1b5207f0e7d6
-ms.openlocfilehash: e54f29292ae9e202cf27c354374132dda267aff8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c16d2f74856bb42dfd6ffc4e1af7306f6edd97fb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469793"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746023"
 ---
 # <a name="unicode-stream-io-in-text-and-binary-modes"></a>Metin ve İkili Modlarda Unicode Akışı G/Ç
 
@@ -26,7 +26,7 @@ Ne zaman bir Unicode akışı g/ç yordamına (gibi **fwprintf**, **fwscanf**, *
 
 Ancak, bir Unicode akışı g/Ç işlevi İkili modda çalışırken, dosya Unicode olarak kabul edilir ve CR-LF çeviri veya karakter dönüştürme giriş veya çıkış sırasında oluşur. _Setmode (_fileno (stdin), _o_bınary) kullanın wcin UNICODE metin dosyası üzerinde doğru şekilde kullanmak için yönerge.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - performance, multithreading
 - multithreaded libraries
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-ms.openlocfilehash: f73aa99d1800fc81408b739e556bc7845b348a80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48f491b6d82acb566669302e4d607e85faf9012a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587570"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748374"
 ---
 # <a name="multithreaded-libraries-performance"></a>Çok İş Parçacıklı Kitaplık Performansı
 
@@ -24,7 +24,7 @@ Tek iş parçacıklı CRT artık kullanılamıyor. Bu konuda, çok iş parçacı
 
 - Bağımsız stream kilitleme sayesinde bir akış kilitleyin ve ardından [_nolock işlevleri](../c-runtime-library/nolock-functions.md) doğrudan akış erişim. Bu, kritik döngüler dışında hoisted kilit kullanımına izin verir.
 
-- İş parçacığı başına yerel ayar çok iş parçacıklı senaryoları için yerel ayar erişim maliyetini azaltır (bkz [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)).
+- Per-thread locale reduces the cost of locale access for multithreaded scenarios (see [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)).
 
 - Yerel ayara bağlı işlevler (adlarla _l içinde biten), yerel ayar önemli ölçüde kaldırarak bir parametre olarak alır (örneğin, [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)).
 
@@ -34,6 +34,6 @@ Tek iş parçacıklı CRT artık kullanılamıyor. Bu konuda, çok iş parçacı
 
 - CRT yığın tanıtıcısı riskini Windows Düşük Parçalanma Yığın (LFH) için yüksek oranda ölçeklendirilmiş senaryolarda performansı önemli ölçüde iyileştirebilen CRT yığın etkinleştirmenize olanak sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

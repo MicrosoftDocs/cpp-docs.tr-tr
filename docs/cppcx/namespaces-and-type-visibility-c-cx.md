@@ -2,12 +2,12 @@
 title: Ad alanları ve tür görünürlüğü (C + +/ CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: 02a73f84314d4406c5fb8e9b8635a307c30e4c3d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 54bac3492991d0bd849f7476cc87a1336108bd52
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693900"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739300"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C + +/ CX)
 
@@ -54,6 +54,6 @@ C + +/ CX Windows çalışma zamanı tür sistemi projeksiyon bir parçası olar
 |Platform::Collections|Windows çalışma zamanı koleksiyon arabirimleri uygulayan somut koleksiyon sınıfları içeren `IVector`, `IMap`ve benzeri. Bu tür collection.h, platform.winmd değil, bir üstbilgi dosyasında tanımlanır.|
 |Platform::details|Ortak tüketim için tasarlanmamıştır ve derleyici tarafından kullanılan türler içerir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)

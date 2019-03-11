@@ -21,14 +21,14 @@ helpviewer_keywords:
 - strings [C++], class CString
 - literal strings [C++], class CStringT
 ms.assetid: 3b33125b-1684-4542-a3a7-b00de7d0419e
-ms.openlocfilehash: 1f0764dd7231492a2addef6359318aa436869a31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4d300bccb6387c510dc16d55eda17de20b4b134
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626687"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742577"
 ---
-# <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
+# <a name="strings-atlmfc"></a>Strings (ATL/MFC)
 
 Neredeyse tüm programlar dize verileri ile çalışma. Visual C++ Bu dize verileri yönetmek için birçok yol sağlar.
 
@@ -48,7 +48,6 @@ Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
 [MFC Kavramları](../mfc/mfc-concepts.md)<br/>
 Yardımcı olacak kavramsal ve görev tabanlı konular sunar MFC Kitaplığı kullanarak programlama.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL/MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)
-

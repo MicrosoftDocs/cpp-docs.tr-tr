@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Arabirim Statik Oluşturucusunu Tanımlama (C++/CLI)'
+title: 'Nasıl yapılır: Arabirim statik oluşturucusunu tanımlama (C + +/ CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - constructors [C++]
 - static constructors, interface
 - interface static constructor
 ms.assetid: 1f031cb2-e94f-43dc-819b-44cf2faaaa49
-ms.openlocfilehash: 0617454e0957dccc7e28a5172a40273b5d93bede
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc1ef81bdefa5ed5d6418325bb250b7954d87268
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566393"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748621"
 ---
-# <a name="how-to-define-an-interface-static-constructor-ccli"></a>Nasıl yapılır: Arabirim Statik Oluşturucusunu Tanımlama (C++/CLI)
+# <a name="how-to-define-an-interface-static-constructor-ccli"></a>Nasıl yapılır: Arabirim statik oluşturucusunu tanımlama (C + +/ CLI)
 
 Bir arabirim statik veri üyeleri başlatmak için kullanılan bir statik Oluşturucu olabilir.  Statik Oluşturucu en fazla bir kez çağrılır ve bir statik arabirim üyesini erişilen ilk önce çağrılır.
 
@@ -54,6 +54,6 @@ in MyInterface static constructor
 99
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md)

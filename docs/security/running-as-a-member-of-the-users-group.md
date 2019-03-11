@@ -12,12 +12,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - administrator (not running as) [C++]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-ms.openlocfilehash: bb67c4cf2f166a8dd67d14b9f61b23241fe442fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc06e2dc58d28c34a646ccffc0be90368b3297f5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607890"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747040"
 ---
 # <a name="running-as-a-member-of-the-users-group"></a>Kullanıcı Grubu Üyesi Olarak Çalıştırma
 
@@ -51,6 +51,6 @@ Genellikle, bu eylemleri uygulama yükleme programları için sınırlı olmalı
 
 Hata ayıklama grubunun parçası olma tarafından yönetici olmayan Visual Studio içinden (yerel ve yönetilmeyen) başlatma uygulamalarda hata ayıklama yapabilirsiniz. Bu işlem komut işleme İliştir çalışan bir uygulamayı ekleme özelliği içerir. Ancak, farklı bir kullanıcı tarafından başlatılan yerel veya yönetilen uygulamalarda hata ayıklamak için yönetici grubunun bir parçası olması gereklidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [En iyi güvenlik uygulamaları](security-best-practices-for-cpp.md)

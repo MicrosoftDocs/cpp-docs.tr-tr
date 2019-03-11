@@ -6,12 +6,12 @@ helpviewer_keywords:
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-ms.openlocfilehash: 546b23b939078c723084bdfc659ff4fd3216b479
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 367ee5183498453b9ce647c8e91ad1194f90fbd2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176231"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740278"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 
@@ -187,7 +187,8 @@ int Derived2::ShowCount()
 }
 ```
 
-Önceki kodda; erişim denetimi, bir `Derived2` işaretçisinden `Base` işaretçisine dönüşümü yasaklar. **Bu** işaretçi örtük olarak türüdür `Derived2 *`. Seçilecek `CountOf` işlevi **bu** türüne dönüştürülmesi gerekir `Base *`. `Base`, `Derived2` öğesinin özel dolaylı bir temel sınıfı olduğundan bu tür bir dönüştürmeye izin verilmez. Özel bir temel sınıf türüne dönüştürme yalnızca hemen türetilmiş sınıfların işaretçileri için kabul edilebilir. Bu nedenle, `Derived1 *` türünde işaretçiler `Base *` türüne dönüştürülebilir.
+Önceki kodda; erişim denetimi, bir `Derived2` işaretçisinden `Base` işaretçisine dönüşümü yasaklar. **Bu** işaretçi örtük olarak türüdür `Derived2 *`. Seçilecek `CountOf` işlevi **bu** türüne dönüştürülmesi gerekir `Base *`. 
+  `Base`, `Derived2` öğesinin özel dolaylı bir temel sınıfı olduğundan bu tür bir dönüştürmeye izin verilmez. Özel bir temel sınıf türüne dönüştürme yalnızca hemen türetilmiş sınıfların işaretçileri için kabul edilebilir. Bu nedenle, `Derived1 *` türünde işaretçiler `Base *` türüne dönüştürülebilir.
 
 Kendisini seçmek üzere bir işaretçi, başvuru veya nesne kullanmadan `CountOf` işlevine açık şekilde çağrı yapmanın, herhangi bir dönüştürme yapılacağı anlamına gelmediğine dikkat edin. Bu nedenle, çağrıya izin verilir.
 
@@ -228,7 +229,8 @@ int main()
 Yukarıdaki örnekte, `GetState` türünün işaretçisi kullanılarak `VFuncBase` sanal işlevinin çağrılması, `VFuncDerived::GetState` öğesini çağırır ve `GetState` genel olarak kabul edilir. Bununla birlikte, `GetState` türünün işaretçisi kullanılarak `VFuncDerived` çağrılması, `GetState``VFuncDerived` sınıfında özel olarak bildirildiği için bir erişim denetimi ihlali oluşturur.
 
 > [!CAUTION]
->  `GetState` sanal işlevi, `VFuncBase` temel sınıfının işaretçisi kullanılarak çağrılabilir. Bu, çağrılan işlevin bu işlevin temel sınıfı olduğu anlamına gelmez.
+>  
+  `GetState` sanal işlevi, `VFuncBase` temel sınıfının işaretçisi kullanılarak çağrılabilir. Bu, çağrılan işlevin bu işlevin temel sınıfı olduğu anlamına gelmez.
 
 ## <a name="access-control-with-multiple-inheritance"></a>Erişim denetimi ile birden çok devralma
 
@@ -237,8 +239,10 @@ Sanal temel sınıflar içeren birden çok devralma kafeslerinde, belirli bir ad
 ![Devralma grafiğinin yolları üzerinde erişim](../cpp/media/vc38v91.gif "devralma grafiğinin yolları üzerinde erişim") <br/>
 Devralma grafiğinin yolları üzerinde erişim
 
-Şekilde `VBase` sınıfında bildirilen bir ada her zaman `RightPath` sınıfıyla ulaşılır. `RightPath``VBase`'i özel olarak bildirirken, `LeftPath``VBase`'i genel bir temel sınıf olarak bildirdiği için sağdaki yol daha fazla erişilebilirdir.
+Şekilde `VBase` sınıfında bildirilen bir ada her zaman `RightPath` sınıfıyla ulaşılır. 
+  `RightPath`
+  `VBase`'i özel olarak bildirirken, `LeftPath``VBase`'i genel bir temel sınıf olarak bildirdiği için sağdaki yol daha fazla erişilebilirdir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

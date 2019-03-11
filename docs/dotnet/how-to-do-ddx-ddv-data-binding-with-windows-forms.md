@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Windows Forms ile DDX / DDV veri bağlaması yapma'
+title: 'Nasıl yapılır: DDX / DDV veri ile Windows Forms bağlama yapın'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
-ms.openlocfilehash: 793d6728c7726028c02b885784f122792d84dd2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 558c763fd18cd1569ff23435bf6156b3117f117d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456448"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740955"
 ---
-# <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>Nasıl yapılır: Windows Forms ile DDX/DDV Veri Bağlaması Yapma
+# <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>Nasıl yapılır: DDX/DDV veri ile Windows Forms bağlama yapın
 
 [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol) çağrıları [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) kaynak denetimi kimlikle eşleşen bir denetim oluşturmak için Kullanırsanız `DDX_ManagedControl` için bir `CWinFormsControl` denetimi (Sihirbaz tarafından oluşturulan kodda) değil, çağırmalıdır `CreateManagedControl` açıkça için aynı denetimi.
 
@@ -27,7 +27,7 @@ DDX/DDV veri bağlaması MFC dizesi örneği verilmiştir `m_str` ile kullanıc�
 
 Denetim oluşturulur [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) çağrıları `CMyDlg::DoDataExchange` ilk kez, bu nedenle herhangi bir kod öğesine başvuran `m_UserControl` sonra gelmelidir `DDX_ManagedControl` çağırın.
 
-Bu kod, oluşturduğunuz MFC01 uygulamada uygulayabileceğiniz [nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
+Bu kod, oluşturduğunuz MFC01 uygulamada uygulayabileceğiniz [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md).
 
 Aşağıdaki kod CMFC01Dlg bildiriminde yerleştirin:
 
@@ -82,7 +82,7 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
 
 Artık, derleme ve uygulamayı çalıştırın. Uygulama kapandığında herhangi bir metin metin kutusundaki bir açılır ileti kutusunda görüntülenir dikkat edin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CWinFormsControl Sınıfı](../mfc/reference/cwinformscontrol-class.md)<br/>
 [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)<br/>

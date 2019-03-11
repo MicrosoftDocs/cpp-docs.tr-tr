@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: d01519870d52a51a18e25f73d5caa853d90a8792
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5cd6afa591ba2a03fbfe492e566b0fc938ae396
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455243"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745791"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections:: ınputıterator sınıfı
 
@@ -52,10 +52,10 @@ Typename Inputıterator Şablon sınıfı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[InputIterator::operator! = işleci](#operator-inequality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
+|[InputIterator::operator!= Operator](#operator-inequality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
 |[InputIterator::operator * işleci](#operator-decrement)|Geçerli Inputıterator tarafından belirtilen öğeye bir başvuru alır.|
 |[InputIterator::operator ++ işleci](#operator-increment)|Geçerli Inputıterator artırır.|
-|[InputIterator::operator == işleci](#operator-equality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
+|[InputIterator::operator== Operator](#operator-equality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
 |[InputIterator::operator -> işleci](#operator-arrow)|Geçerli Inputıterator tarafından başvurulan bir öğenin adresi alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -112,7 +112,7 @@ reference operator*() const;
 
 Geçerli Inputıterator tarafından belirtilen öğe.
 
-## <a name="operator-equality"></a>  InputIterator::operator == işleci
+## <a name="operator-equality"></a>  InputIterator::operator== Operator
 
 Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.
 
@@ -152,7 +152,7 @@ InputIterator operator++(int);
 
 İkinci sözdizimi geçerli Inputıterator sonrası artırır. `int` İkinci söz diziminde türü sonrası artırma işlemi, gerçek tamsayı işlenen gösterir.
 
-## <a name="operator-inequality"></a>  InputIterator::operator! = işleci
+## <a name="operator-inequality"></a>  InputIterator::operator!= Operator
 
 Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.
 
@@ -171,6 +171,6 @@ Başka bir Inputıterator.
 
 **doğru** geçerli Inputıterator eşit değilse *diğer*; Aksi takdirde **false**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

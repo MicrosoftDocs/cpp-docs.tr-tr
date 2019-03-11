@@ -22,12 +22,12 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-ms.openlocfilehash: 896cad4d3a679cd1832b073f4b1f355a70a608d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b258e574b912b1c32e5ffae7ba29cfc5f9903685
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638483"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749353"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 
@@ -43,7 +43,7 @@ Yerel bir dize ekleneceği gösterilmektedir (`char *`) bir veritabanı ve nası
 
 Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bakın [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).
+Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
 
 Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Yerel C++ dizelerinin StringCol veritabanı sütun değerleri olarak geçirilen unutmayın. Yönetilen dizelere bulunan hazırlama işlevi kullanılarak sıralanmış DatabaseClass, bu dizeler <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> hazırlamak için kullanılan bir `char *` için bir <xref:System.String>ve yöntem <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> hazırlamak için kullanılan bir <xref:System.String> için bir `char *`.
 
@@ -169,7 +169,7 @@ Bir COM dize ekleneceği gösterilmektedir (`BSTR`) bir veritabanı ve nasıl ha
 
 Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bakın [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).
+Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
 
 Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. COM dizelerini StringCol veritabanı sütun değerleri olarak geçirilen unutmayın. Yönetilen dizelere bulunan hazırlama işlevi kullanılarak sıralanmış DatabaseClass, bu dizeler <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> hazırlamak için kullanılan bir `BSTR` için bir <xref:System.String>ve yöntem <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> hazırlamak için kullanılan bir <xref:System.String> için bir `BSTR`.
 
@@ -303,7 +303,7 @@ Yerel bir Unicode dize ekleneceği gösterilmektedir (`wchar_t *`) bir veritaban
 
 Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bakın [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).
+Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
 
 Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Unicode C++ dizelerinin StringCol veritabanı sütun değerleri olarak geçirilen unutmayın. Yönetilen dizelere bulunan hazırlama işlevi kullanılarak sıralanmış DatabaseClass, bu dizeler <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> hazırlamak için kullanılan bir `wchar_t *` için bir <xref:System.String>ve yöntem <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A> hazırlamak için kullanılan bir <xref:System.String> için bir `wchar_t *`.
 
@@ -429,7 +429,7 @@ Yerel ekleneceği gösterilmektedir `VARIANT` bir veritabanı ve nasıl hazırla
 
 Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bakın [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).
+Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
 
 Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Unutmayın, yerel `VARIANT` türleri geçirilir ObjectCol veritabanı sütun için değerler olarak. DatabaseClass, bunlar `VARIANT` bulunan hazırlama işlevi kullanılarak yönetilen nesneler için türleri hazırlanır <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntemin <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%2A> hazırlamak için kullanılan bir `VARIANT` için bir <xref:System.Object>ve yöntem <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%2A> hazırlamak için kullanılan bir <xref:System.Object> için bir `VARIANT`.
 
@@ -570,7 +570,7 @@ Yerel ekleneceği gösterilmektedir `SAFEARRAY` bir veritabanı ve nasıl hazır
 
 Bu örnekte, bir ADO.NET ile etkileşim kurmak için DatabaseClass sınıf oluşturulur <xref:System.Data.DataTable> nesne. Bu sınıf, bir yerel C++ olduğuna dikkat edin `class` (kıyasla bir `ref class` veya `value class`). Yerel koddan Bu sınıf kullanmak istiyoruz ve yerel kodda yönetilen türler kullanamazsınız çünkü bu işlem gereklidir. Bu sınıf, CLR tarafından belirtildiği şekilde hedeflemek için derlenmiş `#pragma managed` sınıf bildiriminden önceki yönergesi. Bu yönerge hakkında daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md).
 
-Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bakın [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).
+Özel üye DatabaseClass sınıfının unutmayın: `gcroot<DataTable ^> table`. Yönetilen türler, yerel türler içeremeyeceği `gcroot` anahtar sözcüğü gereklidir. Daha fazla bilgi için `gcroot`, bkz: [nasıl yapılır: Yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
 
 Bu örnekte kodun geri kalanını belirtildiği gibi yerel C++ kod olduğundan `#pragma unmanaged` yönerge önceki `main`. Bu örnekte biz DatabaseClass yeni bir örneğini oluşturmaktan ve bir tablo oluşturun ve bazı satırları tabloda doldurmak için onun yöntemlerini çağırır. Unutmayın, yerel `SAFEARRAY` türleri geçirilir ArrayIntsCol veritabanı sütun için değerler olarak. DatabaseClass, bunlar `SAFEARRAY` bulunan hazırlama işlevi kullanılarak yönetilen nesneler için türleri hazırlanır <xref:System.Runtime.InteropServices?displayProperty=fullName> ad alanı. Özellikle, yöntem <xref:System.Runtime.InteropServices.Marshal.Copy%2A> hazırlamak için kullanılan bir `SAFEARRAY` tamsayılar yöntemi ve yönetilen bir diziye <xref:System.Runtime.InteropServices.Marshal.Copy%2A> tamsayılar için yönetilen bir diziyi sıralamak için kullanılan bir `SAFEARRAY`.
 
@@ -725,7 +725,7 @@ ADO.NET ile ilgili güvenlik sorunları hakkında daha fazla bilgi için bkz: [A
 |-------------|-----------------|
 |[ADO.NET](/dotnet/framework/data/adonet/index)|ADO.NET, .NET programcısı için veri erişim hizmetlerini gösteren sınıf kümesi genel bir bakış sağlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

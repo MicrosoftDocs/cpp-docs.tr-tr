@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <example> C++ XML tag
 - example C++ XML tag
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
-ms.openlocfilehash: 6fb6a83a170cfcf3e394ac8b0b15af869d6e59fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1511bb77b35b054d83a64c1a832843e62a8daa9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641642"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744015"
 ---
 # <a name="ltexamplegt-visual-c"></a>&lt;örnek&gt; (Visual C++)
 
@@ -61,6 +61,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

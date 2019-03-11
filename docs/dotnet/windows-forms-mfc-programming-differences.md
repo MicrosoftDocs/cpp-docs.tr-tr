@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: a284a74fe0b8cac0df43803951e3a5b5655f8189
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 998485a3384512f57cf35fc264e2321fa0996728
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593186"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742523"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 
@@ -54,6 +54,6 @@ Aşağıdaki MFC görünümü veya belge ve yönlendirme özelliklerinin komutu 
 
    MFC, bir komut güncelleştirme mekanizması vardır. Bu nedenle, etkin görünüm veya belge (örneğin, etkinleştirme veya bir menü öğesi veya araç düğmesi devre dışı bırakma ve denetlendi) Arabirim öğelerinin durumu sorumludur. Windows Forms hiçbir denk bir komut güncelleştirme mekanizması vardır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)

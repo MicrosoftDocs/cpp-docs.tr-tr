@@ -1,19 +1,19 @@
 ---
-title: 'İzlenecek Yol: Projeyi Test Etme (C++)'
+title: 'İzlenecek yol: (C++) projeyi test etme'
 ms.date: 09/14/2018
 helpviewer_keywords:
 - project testing [C++]
 - testing projects
 - projects [C++], testing
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
-ms.openlocfilehash: a604d8ef0b44db04d9a6da8fdc959d08384f1bf3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e93236f9bd08741bb757e43309cd59281f828da1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437316"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744597"
 ---
-# <a name="walkthrough-testing-a-project-c"></a>İzlenecek Yol: Projeyi Test Etme (C++)
+# <a name="walkthrough-testing-a-project-c"></a>İzlenecek yol: (C++) projeyi test etme
 
 Bir programı hata ayıklama modunda çalıştırdığınızda, değişkenlerin ve nesnelerin durumunu incelemek için programı duraklatmak üzere kesme noktaları kullanabilirsiniz.
 
@@ -51,16 +51,16 @@ Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve
 
 1. Kısayol menüsünü açın `return 0;` deyimi seçip **imlece kadar Çalıştır**. Kodun sol tarafındaki sarı ok yürütülecek sonraki deyimi işaret eder.
 
-1. `Cardgame::totalParticipants` Sayısı ne zaman azalmalıdır bir `Cardgame` sona erer. Bu noktada, `Cardgame::totalParticipants` 0 olduğundan eşit olmalı tüm `Cardgame` örnekleri silinmiş, ancak **Watch 1** penceresini gösterir `Cardgame::totalparticipants` eşittir **18**. Algılama ve düzeltme sonraki izlenecek yolu tamamlayarak, kodda bir hata olduğunu fark gösteren [izlenecek yol: bir proje (C++) hata ayıklama](../ide/walkthrough-debugging-a-project-cpp.md).
+1. `Cardgame::totalParticipants` Sayısı ne zaman azalmalıdır bir `Cardgame` sona erer. Bu noktada, `Cardgame::totalParticipants` 0 olduğundan eşit olmalı tüm `Cardgame` örnekleri silinmiş, ancak **Watch 1** penceresini gösterir `Cardgame::totalparticipants` eşittir **18**. Algılama ve düzeltme sonraki izlenecek yolu tamamlayarak, kodda bir hata olduğunu fark gösteren [izlenecek yol: Bir proje (C++) hata ayıklama](../ide/walkthrough-debugging-a-project-cpp.md).
 
 1. Menü çubuğunda, programı durdurmak için seçin **hata ayıklama** > **hata ayıklamayı Durdur**, ya da seçin **Shift**+**F5**klavye kısayol.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [izlenecek yol: Proje derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
-**Sonraki:** [izlenecek yol: bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**Önceki:** [İzlenecek yol: Proje Derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
+**Sonraki:** [İzlenecek yol: Proje Hatalarını Ayıklama (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>

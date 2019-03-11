@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 0042fffb0eaa383909edd6647bcdb4375341d8dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c954955ad52197316da0952dc6dd415a91782444
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605861"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739443"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 
@@ -258,7 +258,7 @@ Tüm kaynak bit eşlem kullanılacak bir saydam alfa değeri. ' % S'varsayılan 
 Alfa karıştırma işlev için kaynak ve hedef bit eşlemler, tüm kaynak bit eşlem ve kaynak bit eşlemi için biçim bilgilerini uygulanması için genel bir alfa değeri. Kaynak ve hedef blend işlevleri şu an için AC_SRC_OVER sınırlıdır.
 
 *pointDest*<br/>
-Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
+Bir başvuru bir [noktası](/previous-versions/dd162805\(v=vs.85\)) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
 
 *nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
@@ -279,7 +279,7 @@ Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
 *rectDest*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı, hedef belirleme.
 
 *rectSrc*<br/>
 Bir başvuru bir `RECT` yapısını tanımlayan kaynak.
@@ -368,7 +368,7 @@ Mantıksal y koordinatını hedef dikdörtgenin sol üst köşesinde.
 Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.
 
 *pointDest*<br/>
-A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) hedef dikdörtgenin sol üst köşesinde belirten yapısı.
+A [noktası](/previous-versions/dd162805\(v=vs.85\)) hedef dikdörtgenin sol üst köşesinde belirten yapısı.
 
 *nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
@@ -383,7 +383,7 @@ Mantıksal x koordinatını kaynak dikdörtgenin sol üst köşesinde.
 Mantıksal y koordinatını kaynak dikdörtgenin sol üst köşesinde.
 
 *rectDest*<br/>
-A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) hedef dikdörtgenin belirten yapısı.
+A [RECT](/previous-versions/dd162897\(v=vs.85\)) hedef dikdörtgenin belirten yapısı.
 
 *pointSrc*<br/>
 A `POINT` kaynak dikdörtgenin sol üst köşesinde belirten yapısı.
@@ -595,13 +595,13 @@ Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
 *rectDest*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı, hedef belirleme.
 
 *rectSrc*<br/>
 Bir başvuru bir `RECT` yapısını tanımlayan kaynak.
 
 *pointDest*<br/>
-Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
+Bir başvuru bir [noktası](/previous-versions/dd162805\(v=vs.85\)) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1259,10 +1259,10 @@ Bit eşlemi renkliye dönüştürmesi gerekirse sol üst köşesinin x-koordinat
 Bit eşlemi renkliye dönüştürmesi gerekirse sol üst köşesinin y-koordinatı.
 
 *rectSrc*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı koordinatları kaynak dikdörtgenin belirtme.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı koordinatları kaynak dikdörtgenin belirtme.
 
 *pointMask*<br/>
-A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) maskesi bit eşlem sol üst köşesinde belirten yapısı.
+A [noktası](/previous-versions/dd162805\(v=vs.85\)) maskesi bit eşlem sol üst köşesinde belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1519,7 +1519,7 @@ Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.
 
 *rectDest*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı, hedef belirleme.
 
 *Tanımlar*<br/>
 X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
@@ -1602,7 +1602,7 @@ Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 Saydam olarak değerlendirilecek kaynak bit eşlemi rengi. Varsayılan olarak, clr_ınvalıd, renk resminin saydam rengi ayarlanmış olduğunu belirten kullanılmalıdır.
 
 *rectDest*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı, hedef belirleme.
 
 *Tanımlar*<br/>
 X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
@@ -1656,7 +1656,7 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MMXSwarm örnek](../../visual-cpp-samples.md)<br/>
 [SimpleImage örnek](../../visual-cpp-samples.md)<br/>

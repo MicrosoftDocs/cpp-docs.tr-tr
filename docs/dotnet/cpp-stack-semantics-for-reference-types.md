@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: b2d2d5991f7b52727b366214b8ca9ed4d8e14956
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ba17a56c5274295c44cdc5aa651380d1e6c83d3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607872"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740930"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 
@@ -27,7 +27,7 @@ Derleyici, bir başvuru türü için bir kopya Oluşturucu oluşturmaz. Bu neden
 
 Derleyicinin bir varsayılan atama işleci bir başvuru türü için oluşturmaz. Atama işleci, yığın anlamları kullanarak bir nesne oluşturun ve yığın anlamları kullanarak oluşturduğunuz var olan bir nesne ile başlatmak sağlar. Bir atama işleci bir başvuru türü için bir imza aşağıdaki biçime sahiptir: `void operator=( R% ){}`.
 
-Türün yok Edicisi kritik kaynakları serbest bırakır ve başvuru türleri için yığın anlamları kullanırsanız yok ediciyi açıkça çağırmak gerekmez (veya çağrı `delete`). Başvuru türlerindeki Yıkıcılar hakkında daha fazla bilgi için bkz. [yok ediciler ve sonlandırıcılar, nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+Türün yok Edicisi kritik kaynakları serbest bırakır ve başvuru türleri için yığın anlamları kullanırsanız yok ediciyi açıkça çağırmak gerekmez (veya çağrı `delete`). Başvuru türlerindeki Yıkıcılar hakkında daha fazla bilgi için bkz. [yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
 Derleyici tarafından üretilen atama işleci aşağıdaki eklemelerle normal standart C++ kurallarını izler:
 
@@ -111,6 +111,6 @@ int main() {
 13
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

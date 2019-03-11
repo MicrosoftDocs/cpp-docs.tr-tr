@@ -16,12 +16,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 65dc5bbfbaeab59e91cdca23c4f0f01b5ef7ebbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 961ad52070928ba755625747546c8dc7b1c215ba
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620180"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750826"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 
@@ -127,13 +127,13 @@ Karakteri tarafından belirtilen özelliğe sahip `desc` bağımsız değişken.
 |Değeri *desc* bağımsız değişken|iswctype ( *c, desc* ) eşdeğer|
 |------------------------------|----------------------------------------|
 |**_ALPHA**|**iswalpha (** `c` **)**|
-|**_ALPHA** &AMP;#124; **_DIGIT**|**iswalnum (** `c` **)**|
+|**_ALPHA** &#124; **_DIGIT**|**iswalnum (** `c` **)**|
 |**_BLANK**|**iswblank (** `c` **)**|
-|**_DENETİM**|**iswcntrl (** `c` **)**|
+|**_CONTROL**|**iswcntrl (** `c` **)**|
 |**_DIGIT**|**iswdigit (** `c` **)**|
-|**_ALPHA** &AMP;#124; **_DIGIT** &AMP;#124; **_PUNCT**|**iswgraph (** `c` **)**|
+|**_ALPHA** &#124; **_DIGIT** &#124; **_PUNCT**|**iswgraph (** `c` **)**|
 |**_LOWER**|**iswlower (** `c` **)**|
-|**_ALPHA** &AMP;#124; **_BLANK** &AMP;#124; **_DIGIT** &AMP;#124; **_PUNCT**|**iswprint (** `c` **)**|
+|**_ALPHA** &#124; **_BLANK** &#124; **_DIGIT** &#124; **_PUNCT**|**iswprint(** `c` **)**|
 |**_PUNCT**|**iswpunct (** `c` **)**|
 |**_BLANK**|**iswblank (** `c` **)**|
 |**_SPACE**|**iswspace (** `c` **)**|
@@ -335,7 +335,7 @@ int main( void )
 7f            AS  C                              .
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Karakter Sınıflaması](../c-runtime-library/character-classification.md)<br/>
 [locale](../c-runtime-library/locale.md)<br/>

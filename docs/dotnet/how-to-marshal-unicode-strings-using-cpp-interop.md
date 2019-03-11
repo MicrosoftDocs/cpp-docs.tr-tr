@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama'
+title: 'Nasıl yapılır: C++ Çalışabilirliği kullanarak Unicode dizelerini sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 - Unicode, marshaling strings
 ms.assetid: 96c2141d-6c5d-43ef-a1aa-5785afb9a9aa
-ms.openlocfilehash: f08ea9d6eb879aa3b07ac0ff983637236368a11a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 920f06bd2197315b11f239827de76eba9591bad5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507789"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742670"
 ---
-# <a name="how-to-marshal-unicode-strings-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama
+# <a name="how-to-marshal-unicode-strings-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği kullanarak Unicode dizelerini sıralama
 
 Bu konuda, Visual C++ birlikte çalışabilirliği bir modeli gösterilmektedir. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
@@ -24,9 +24,9 @@ Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/m
 
 Bu konu, Unicode dizelerini nasıl olabileceğini gösterir yönetilen bir işlevden geçirilen yönetilmeyen bir işleve ve bunun tersi de geçerlidir. Diğer dizeleri türleriyle çalışmak için aşağıdaki konulara bakın:
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Hazırlama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Hazırlama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
 ## <a name="example"></a>Örnek
 
@@ -95,6 +95,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

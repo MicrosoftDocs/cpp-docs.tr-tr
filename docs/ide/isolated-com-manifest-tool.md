@@ -7,12 +7,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.TypeLibraryFile
 - VC.Project.VCManifestTool.ReplacementsFile
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
-ms.openlocfilehash: 9eea3b2765bad6bd08cc9ee91a801e2b891511e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6188eeb53b4ffcd3eee754e88a8891310fb2d51
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546538"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738849"
 ---
 # <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Yalıtılmış COM, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -22,7 +22,7 @@ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sa
 
 ## <a name="task-list"></a>Görev Listesi
 
-- [Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+- [Nasıl yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
@@ -42,7 +42,7 @@ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sa
 
    /Replacements seçenek .rgs dosyasındaki değiştirilebilir dizeleri için değerler içeren dosyanın tam yolunu belirtmek için kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications)<br>
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br>

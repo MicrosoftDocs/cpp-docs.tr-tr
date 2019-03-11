@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-ms.openlocfilehash: 4431f21fe71bd7b6376f2f530b844077bc1fda6e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d91974cb1c98561ba61927b84d06ad45cffc1291
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469621"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745153"
 ---
 # <a name="platformenum-class"></a>Platform::Enum sınıfı
 
@@ -34,14 +34,14 @@ Kullanım [genel sabit listesi sınıfı](../windows/enum-class-cpp-component-ex
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

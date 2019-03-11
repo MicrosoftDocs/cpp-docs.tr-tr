@@ -9,12 +9,12 @@ helpviewer_keywords:
 - compatibility, C run-time libraries
 - backward compatibility
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
-ms.openlocfilehash: d418a3450f22e53c8cb320f0a1a27c9f2e434c54
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f672f0601a9d20a726f90963265d08ec212dedce
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460560"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744475"
 ---
 # <a name="backward-compatibility"></a>Geriye Dönük Uyumluluk
 
@@ -26,6 +26,6 @@ Kitaplık OLDNAMES ürün sürümleri arasında uyumluluk için. LIB eski adlar�
 
 Derleyici komut satırı seçenekleri hakkında daha fazla bilgi için bkz. [derleyici başvurusu](../build/reference/compiler-options.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uyumluluk](../c-runtime-library/compatibility.md)

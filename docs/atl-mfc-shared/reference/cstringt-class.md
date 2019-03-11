@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: bd8fefd3424ab5ec422adb352972ba846e45139d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 9566830de4d3af8f34e8efa5e5ef468acae1fba5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525502"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750877"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -126,7 +126,7 @@ Dize sınıfı C çalışma zamanı (CRT) kitaplığı desteğiyle ve dize kayna
 
    Sınıfı, CRT desteği ve kaynak dizeleri standart MFC arama algoritması kullanarak arar gerektirir.
 
-- **StrTraitMFC < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; **char** &#124;  **TCHAR >>**
+- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    Sınıfı, CRT desteği ve kaynak dizeleri standart MFC arama algoritması kullanarak arar gerektirmez.
 
@@ -570,7 +570,7 @@ Oluşturucular girdi verilerini yeni ayrılan depolama alanına kopyalayın çü
 
 - `CStringT`( `LPCSTR` `lpsz` ): Bir Unicode yapıları `CStringT` ANSI dizesinden. Bu oluşturucu, aşağıdaki örnekte gösterildiği gibi bir dize kaynağı yüklemek için de kullanabilirsiniz.
 
-- `CStringT(` `LPCWSTR` `lpsz` ): Oluşturan bir `CStringT` bir Unicode dize değerinden.
+- `CStringT(` `LPCWSTR` `lpsz` ): Oluşturur bir `CStringT` bir Unicode dize değerinden.
 
 - `CStringT`( `const unsigned char*` `psz` ): Oluşturulacağını sağlar bir `CStringT` işaretçisine **imzasız char**.
 
@@ -1428,7 +1428,7 @@ Dize değişmez karakter veya alt ya da sıfır değiştirilen örnek sayısın�
 |_UNICODE|Geniş karakterler|
 |_MBCS|Çok baytlı karakter|
 |Ne|Tek baytlı karakter|
-|Her ikisi de|Tanımsız|
+|Her ikisi de|Tanımlanmadı|
 
 ### <a name="example"></a>Örnek
 
@@ -1728,9 +1728,8 @@ Sondaki aşağıdakilerden birini oluşumlarını kaldırır:
 
 [!code-cpp[NVC_ATLMFC_Utilities#138](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_42.cpp)]
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 [CSimpleStringT Sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md)
-

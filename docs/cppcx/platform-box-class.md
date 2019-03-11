@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Box
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
-ms.openlocfilehash: 29cbe852dcd606ea5cf2953c709fc8e47b89e1f1
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: ca8c9229d0ef5fa654f462282f257b1684984102
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327037"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742933"
 ---
 # <a name="platformbox-class"></a>Platform::Box sınıfı
 
@@ -26,13 +26,13 @@ ref class Box abstract;
 
 **Başlık:** vccorlib.h
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 ### <a name="members"></a>Üyeler
 
 |Üye|Açıklama|
 |------------|-----------------|
-|[Kutusu](#ctor) | Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen. |
+|[Box](#ctor) | Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen. |
 |[işleci kutusunda&lt;const T&gt;^](#box-const-t) | Kutulama dönüşümlerse sağlayan bir `const` değer sınıfının `T` veya `enum` sınıfı `T` için `Box<T>`. |
 |[işleci kutusunda&lt;const volatile T&gt;^](#box-const-volatile-t) | Kutulama dönüşümlerse sağlayan bir `const volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`. |
 |[işleci kutusunda&lt;T&gt;^](#box-t) | Değer sınıfından kutulama dönüştürmeler sağlar `T` için `Box<T>`. |
@@ -166,7 +166,7 @@ virtual property T Value{
 
 Bu kutu önce ilk olarak olduğu gibi aynı türde kutulanmış değer döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)<br/>
 [Kutulama](../cppcx/boxing-c-cx.md)

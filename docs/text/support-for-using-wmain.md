@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wWinMain function
 - wmain function
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-ms.openlocfilehash: 4ef970174a56361fdbd2102f363b4849ad4af9f3
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: f4705e65551b57e3e52c0c8f060032a93280f67d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894191"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745137"
 ---
 # <a name="support-for-using-wmain"></a>wmain Kullanma Desteği
 
@@ -30,7 +30,7 @@ Programınızı kullanıyorsa bir **ana** işlevi çok baytlı karakterli ortam 
 
 Benzer şekilde, programınız kullanıyorsa bir **wmain** işlevi, bir geniş karakter ortamında program başlangıcında oluşturulur ve tarafından işaret edilen `_wenviron` genel değişkeni. İlk çağrıda bir MBCS (ASCII) ortamı oluşturulur `_putenv` veya `getenv` ve tarafından işaret edilen `_environ` genel değişkeni.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Unicode Desteği](../text/support-for-unicode.md)<br/>
 [Unicode Programlama Özeti](../text/unicode-programming-summary.md)<br/>

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::WrongThreadException
 ms.assetid: c193f97e-0392-4535-a4c4-0711e4e4a836
-ms.openlocfilehash: b59191eb739a94f305b656425ee2f3725815c7b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dde8c9afff6be083580042a958f59e057bc44350
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640004"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743948"
 ---
 # <a name="platformwrongthreadexception-class"></a>Platform::WrongThreadException sınıfı
 
@@ -31,14 +31,14 @@ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

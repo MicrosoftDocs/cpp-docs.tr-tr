@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Makefile projects, creating
 - project files [C++], Makefile projects
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-ms.openlocfilehash: 0c64f6df342e82e3ea5409e2b07af1e591747d7c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b205aa4c97e78dbb8c5bec28c0f4db638a36c8e5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494854"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750994"
 ---
 # <a name="creating-a-c-makefile-project"></a>Bir C++ derleme görevleri dosyası projesi oluşturma
 
@@ -22,7 +22,7 @@ Mevcut bir derleme görevleri dosyası projesi varsa, kod ve/veya Visual Studio 
 
 - Visual Studio'da IDE, kodunuzu derlemek için mevcut derleme görevleri dosyası kullanan bir derleme görevleri dosyası projesi oluşturun. (, Yerel bir MSBuild projesi ile aldığınız tüm IDE özelliklerini yoktur.) Bkz: [makefile projesi oluşturmak için](#create_a_makefile_project) aşağıda.
 - Kullanım **varolan kod dosyalarından yeni proje oluştur** kaynak kodunuzu yerel bir MSBuild projesi oluşturmak için Sihirbazı. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 ve üzeri**: kullanım **klasörünü Aç** özelliğini MSBuild'e dönüştürme olmadan bir derleme görevleri dosyası projesi açın. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](non-msbuild-projects.md).
+- **Visual Studio 2017 ve üzeri**: Kullanım **klasörünü Aç** özelliğini MSBuild'e dönüştürme olmadan bir derleme görevleri dosyası projesi açın. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](non-msbuild-projects.md).
 
 ## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> Derleme görevleri dosyası proje şablonuyla bir derleme görevleri dosyası projesi oluşturmak için
 
@@ -42,7 +42,7 @@ Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluştu
 
 Özellik sayfasında projenin özelliklerini görüntüleyebilir ve düzenleyebilirsiniz. Bkz: [Visual C++ proje özelliklerini ayarlama](../ide/working-with-project-properties.md) özellik sayfasını görüntüleme hakkında bilgi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleme Görevleri Dosyası Projesi Sihirbazı](../ide/makefile-project-wizard.md)<br/>
 [Derleme Görevleri Dosyasındaki Özel Karakterler](../build/special-characters-in-a-makefile.md)<br/>

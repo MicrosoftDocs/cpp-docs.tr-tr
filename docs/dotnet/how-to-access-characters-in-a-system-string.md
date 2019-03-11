@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: Bir System::String'deki Karakterlere Erişme"
+title: "Nasıl yapılır: String'deki karakterlere erişim"
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-ms.openlocfilehash: 6ecd3ed09e31e99898143e30ffe70c1c14aea9f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 68444b337710515ccf8ecb98157d144493978ecd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667057"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738454"
 ---
-# <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
+# <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: String'deki karakterlere erişim
 
 Karakter erişebileceğiniz bir <xref:System.String> yönetilmeyen yüksek performanslı çağrıları için nesne işlevlere `wchar_t*` dizeleri. Yöntemin ilk karakteri iç işaretçiye verir <xref:System.String> nesne. This işaretçisi kullanılabilir doğrudan değiştirilebilir veya sabitlenmiş ve sıradan bekleyen bir işleve geçirilen `wchar_t` dize.
 
@@ -99,6 +99,6 @@ void deleteNode( ListNode ^ list, Int32 e ) {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

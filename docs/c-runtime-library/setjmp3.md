@@ -19,12 +19,12 @@ helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-ms.openlocfilehash: 4509738f8e0128e2f9277e744a5965f557f65439
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2c89acf1de88b831d70a0f438cdf14148a48632
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564017"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741811"
 ---
 # <a name="setjmp3"></a>_setjmp3
 
@@ -42,7 +42,7 @@ int _setjmp3(
 
 #### <a name="parameters"></a>Parametreler
 
-*Env*<br/>
+*env*<br/>
 [out] Durum bilgilerini depolamak için arabellek adresi.
 
 *Sayısı*<br/>
@@ -61,7 +61,7 @@ Bu işlev, bir C++ programında kullanmayın. C++ desteklemez iç bir işlevdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [setjmp](../c-runtime-library/reference/setjmp.md)

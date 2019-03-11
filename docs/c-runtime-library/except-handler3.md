@@ -19,12 +19,12 @@ helpviewer_keywords:
 - _except_handler3 function
 - except_handler3 function
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
-ms.openlocfilehash: 144bf25495d803a4db42ab45fcb0b101b09fe7cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0dfe007d7b444401accbf547674f96f7f7d54ac1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613869"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741309"
 ---
 # <a name="excepthandler3"></a>_except_handler3
 
@@ -63,6 +63,6 @@ Bir özel durum oluşturmayabilir, döndürür `DISPOSITION_DISMISS`. Özel duru
 
 Bu yöntemin uygun özel durum işleyicisi bulunursa, özel durum işleyicisine geçirir. Bu durumda, bu yöntemi çağıran koda döndürmüyor ve dönüş değeri önemli değildir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

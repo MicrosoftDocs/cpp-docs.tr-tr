@@ -21,12 +21,12 @@ helpviewer_keywords:
 - format specification fields for scanf function
 - type fields
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
-ms.openlocfilehash: 83c380adc1a8985bb232d70c6d7c4cb4a885e789
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b45de9af3642825f1fddf3a1560b2fc1dbc4ffc
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625946"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748469"
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri
 
@@ -58,7 +58,7 @@ Bir yıldız işareti (`*`) yüzde işareti aşağıdaki belirtilen türde bir a
 
 Güvenli sürümler (olanlar `_s` soneki), `scanf` işlevler ailesini gerektiren bir arabellek büyüklüğü parametresi hemen her parametre türü geçirilmesi `c`, `C`, `s`, `S`veya `[`. Güvenli sürümleri hakkında daha fazla bilgi için `scanf` işlevler ailesini görmek [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [scanf Genişlik Belirtimi](../c-runtime-library/scanf-width-specification.md)<br/>
 [scanf Türü Alan Karakterleri](../c-runtime-library/scanf-type-field-characters.md)<br/>

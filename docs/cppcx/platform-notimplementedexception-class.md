@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::NotImplementedException
 ms.assetid: 6da26cc2-dde8-4aea-aa85-67aac55cf97b
-ms.openlocfilehash: 26e8900a10b25507f5091d9cc1f724c73ece7dfd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5262aaf85c73e2ff09259fe350e8b5600c68be95
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467593"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749366"
 ---
 # <a name="platformnotimplementedexception-class"></a>Platform::NotImplementedException sınıfı
 
@@ -31,14 +31,14 @@ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) s
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

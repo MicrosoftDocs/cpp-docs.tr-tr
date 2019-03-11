@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-ms.openlocfilehash: a4bb059b13f2001c6691e8d051106aa5e11eccbd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57f7450537f7609cbc66f8adf0bc868631e15f3a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429173"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740824"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 
@@ -52,7 +52,7 @@ Ardından, Visual Studio 2008 çözümünüzü ve projelerinizi Visual Studio'nu
 
 Yükseltme tamamlandığında günlük rapor tüm projeleriniz için hataları veya uyarıları içeriyorsa dikkatle gözden geçirin. Dönüştürme **VCBuild** için **MSBuild** sorunlara neden olabilir. Anlama ve raporu listelenen herhangi bir eylem öğeleri uygulamak emin olun. Yükseltme günlüğünü rapor ve dönüştürme sırasında meydana gelebilecek sorunları hakkında daha fazla bilgi için **VCBuild** için **MSBuild**, bkz. Bu [yerel C++ çoklu sürüm desteğinin](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) blog gönderisi.
 
-Proje yükseltme tamamlandıktan ve günlük dosyasında sorunları düzelttikten sonra çözümünüzün en son araç takımı gerçekten hedefler. Son adım olarak, Visual Studio 2008 araç kümesi kullanmak için çözümde her proje özelliklerini değiştirin. Visual Studio'nun geçerli sürümünde çözümde her proje için yüklenen çözümüyle projeyi açın **özellik sayfaları** iletişim kutusu: projeye sağ **Çözüm Gezgini** ve ardından seçin **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda, değişiklik **yapılandırma** için aşağı açılan değer **yapılandırmalarında**. İçinde **yapılandırma özellikleri**seçin **genel**ve ardından değiştirmek **Platform araç takımını** için **Visual Studio 2008 (v90)**.
+Proje yükseltme tamamlandıktan ve günlük dosyasında sorunları düzelttikten sonra çözümünüzün en son araç takımı gerçekten hedefler. Son adım olarak, Visual Studio 2008 araç kümesi kullanmak için çözümde her proje özelliklerini değiştirin. Visual Studio'nun geçerli sürümünde çözümde her proje için yüklenen çözümüyle projeyi açın **özellik sayfaları** iletişim kutusunda: Projeye sağ tıklayarak **Çözüm Gezgini** seçip **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda, değişiklik **yapılandırma** için aşağı açılan değer **yapılandırmalarında**. İçinde **yapılandırma özellikleri**seçin **genel**ve ardından değiştirmek **Platform araç takımını** için **Visual Studio 2008 (v90)**.
 
 Bu değişiklikten sonra Visual Studio 2008 derleyici ve kitaplıkları, Visual Studio'nun geçerli sürümünde bir çözüm oluşturduğunuzda, proje ikililerini oluşturmak için kullanılır.
 
@@ -64,7 +64,7 @@ Olamaz ya da yükseltmek istemediğiniz eski bir Visual C++ projesi, ancak proje
 
 Bu ürünler yüklü olduğunda **Platform araç takımını** özellik açılan menü **özellik sayfaları** iletişim kutusu kullanılabilir takımları gösterecek şekilde otomatik olarak güncelleştirilir. Şimdi, dönüştürme veya yükseltilirken araç bu eski sürümler için projeleri derlemek için Visual Studio'nun en son sürümünü kullanabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)

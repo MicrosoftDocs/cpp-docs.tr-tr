@@ -1,5 +1,5 @@
 ---
-title: 'MIDL Özellik Sayfaları: Gelişmiş'
+title: 'MIDL özellik sayfaları: Gelişmiş'
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCMidlTool.ErrorCheckBounds
@@ -16,14 +16,14 @@ f1_keywords:
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: d1c92e01-f403-4ed6-ab45-4043a3c9c6bb
-ms.openlocfilehash: 86152dd1ac0bb079a841efa2d27109ee92d48ea7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c94f6974a5b7cec4c50a900e790134b1b4b86d79
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440878"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744826"
 ---
-# <a name="midl-property-pages-advanced"></a>MIDL Özellik Sayfaları: Gelişmiş
+# <a name="midl-property-pages-advanced"></a>MIDL özellik sayfaları: Gelişmiş
 
 **Gelişmiş** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:
 
@@ -61,6 +61,6 @@ Erişim hakkında daha fazla bilgi için **Gelişmiş** özellik sayfasında **M
 
 MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MIDL Özellik Sayfaları](../ide/midl-property-pages.md)

@@ -2,12 +2,12 @@
 title: Tür sistemi (C + +/ CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-ms.openlocfilehash: 9c8e09dded3743d5928fd1a4db797c6e647ec465
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fbc7a178621624e396c80509703ce1b5b4c19162
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445995"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745960"
 ---
 # <a name="type-system-ccx"></a>Tür sistemi (C + +/ CX)
 
@@ -19,13 +19,13 @@ Ayrıntılı bir irdelemesi ve C + +/ CX dil öngörü ve, perde şekli şu blog
 
 1. [C + +/ CX parçası 0 \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)
 
-1. [C + +/ CX bölüm 1 / \[n\]: basit bir sınıfı](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
+1. [C + +/ CX bölüm 1 / \[n\]: Basit bir sınıfı](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
 
-1. [C + +/ CX parçası 2 \[n\]: Hats Wear türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
+1. [C + +/ CX parçası 2 \[n\]: Wear Hats türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
 
-1. [C + +/ CX parçası 3 \[n\]: aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
+1. [C + +/ CX parçası 3 \[n\]: Yapım aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
 
-1. [C + +/ CX parçası 4 \[n\]: statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
+1. [C + +/ CX parçası 4 \[n\]: Statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
 
 ## <a name="windows-metadata-winmd-files"></a>Windows meta veri (.winmd) dosyaları
 
@@ -179,6 +179,6 @@ Genel API'leri Windows çalışma zamanı sistemi türleri tarafından kullanıl
 
 Daha fazla bilgi için [türleri ve üyeleri geçersiz kılma](../cppcx/deprecating-types-and-members-c-cx.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)

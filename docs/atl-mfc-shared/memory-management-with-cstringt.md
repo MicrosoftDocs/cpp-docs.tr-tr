@@ -14,12 +14,12 @@ helpviewer_keywords:
 - strings [C++], memory management
 - CStringT class, memory management
 ms.assetid: 88b8342d-19b5-48c4-9cf6-e4c44cece21e
-ms.openlocfilehash: f45aac11f0c42aecf8c72cf6f7d1630d50b780f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 189d15df17ac28528ebbcc41879871e3426f48fb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598031"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748638"
 ---
 # <a name="memory-management-with-cstringt"></a>CStringT ile bellek yönetimi
 
@@ -31,9 +31,8 @@ Sınıf [CStringT](../atl-mfc-shared/reference/cstringt-class.md) değişken uzu
 
 - [Özel Dize Yöneticisi’ni Uygulama (Gelişmiş Yöntem)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md)
 
-- [CFixedStringT: Örnek özel dize Yöneticisi](../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md)
+- [CFixedStringT: Bir örnek özel dize Yöneticisi](../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CustomString örnek](../visual-cpp-samples.md)
-

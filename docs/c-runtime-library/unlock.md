@@ -20,12 +20,12 @@ helpviewer_keywords:
 - unlock function
 - _unlock function
 ms.assetid: 2eda2507-a134-4997-aa12-f2f8cb319e14
-ms.openlocfilehash: 6fc9287df16ef2310121ced64622f6aadea5926b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aceac01608a3d62fc4ac9c3aaf1f530584e1a3fa
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533593"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740408"
 ---
 # <a name="unlock"></a>_unlock
 
@@ -51,7 +51,7 @@ void __cdecl _unlock(
 
 **Kaynak:** mlock.c
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [_lock](../c-runtime-library/lock.md)

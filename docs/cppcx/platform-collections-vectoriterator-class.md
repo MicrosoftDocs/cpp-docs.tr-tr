@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-ms.openlocfilehash: 8e776e0f5d479ee8633efa647ac41e6b1b5f9c0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 448ce9e9c6c937d5f95640dca8fa2d2ed20bb4b8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595604"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743228"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections:: vectorıterator sınıfı
 
@@ -61,14 +61,14 @@ Typename VectorIterator Şablon sınıfı.
 |[VectorIterator::operator\[\]](#operator-at)|Geçerli VectorIterator öğesinden belirtilen bir yer olan öğeye bir başvuru alır.|
 |[VectorIterator::operator + işleci](#operator-plus)|Belirtilen VectorIterator belirtilen öteleme öğeye başvuran bir VectorIterator döndürür.|
 |[VectorIterator::operator++ Operator](#operator-increment)|Geçerli VectorIterator artırır.|
-|[VectorIterator::operator += işleci](#operator-plus-assign)|Geçerli VectorIterator tarafından belirtilen öteleme artırır.|
+|[VectorIterator::operator+= Operator](#operator-plus-assign)|Geçerli VectorIterator tarafından belirtilen öteleme artırır.|
 |[VectorIterator::operator < işleci](#operator-less-than)|Geçerli VectorIterator belirtilen VectorIterator küçük olup olmadığını belirtir.|
-|[VectorIterator::operator\<= işleci](#operator-less-than-or-equals)|Geçerli VectorIterator ya da belirtilen VectorIterator eşit olup olmadığını belirtir.|
-|[VectorIterator::operator-= işleci](#operator-subtract-assign)|Belirtilen öteleme tarafından geçerli VectorIterator azaltır.|
-|[VectorIterator::operator == işleci](#operator-equality)|Geçerli VectorIterator için belirtilen bir VectorIterator eşit olup olmadığını gösterir.|
+|[VectorIterator::operator\<= Operator](#operator-less-than-or-equals)|Geçerli VectorIterator ya da belirtilen VectorIterator eşit olup olmadığını belirtir.|
+|[VectorIterator::operator-= Operator](#operator-subtract-assign)|Belirtilen öteleme tarafından geçerli VectorIterator azaltır.|
+|[VectorIterator::operator== Operator](#operator-equality)|Geçerli VectorIterator için belirtilen bir VectorIterator eşit olup olmadığını gösterir.|
 |[VectorIterator::operator > işleci](#operator-greater-than)|Geçerli VectorIterator belirtilen bir VectorIterator büyük olup olmadığını gösterir.|
 |[VectorIterator::operator -> işleci](#operator-arrow)|Geçerli VectorIterator tarafından başvurulan bir öğenin adresi alır.|
-|[VectorIterator::operator > = işleci](#operator-greater-than-or-equal)|Geçerli VectorIterator büyüktür veya belirtilen VectorIterator eşit olup olmadığını belirtir.|
+|[VectorIterator::operator>= Operator](#operator-greater-than-or-equal)|Geçerli VectorIterator büyüktür veya belirtilen VectorIterator eşit olup olmadığını belirtir.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -132,7 +132,7 @@ reference operator*() const;
 
 Geçerli VectorIterator tarafından belirtilen öğe.
 
-## <a name="operator-equality"></a>  VectorIterator::operator == işleci
+## <a name="operator-equality"></a>  VectorIterator::operator== Operator
 
 Geçerli VectorIterator için belirtilen bir VectorIterator eşit olup olmadığını gösterir.
 
@@ -170,7 +170,7 @@ Başka bir VectorIterator.
 
 **doğru** geçerli VectorIterator büyükse *diğer*; Aksi takdirde **false**.
 
-## <a name="operator-greater-than-or-equals"></a>  VectorIterator::operator&gt;= işleci
+## <a name="operator-greater-than-or-equals"></a>  VectorIterator::operator&gt;= Operator
 
 Geçerli VectorIterator büyüktür veya belirtilen VectorIterator eşit olup olmadığını belirtir.
 
@@ -210,7 +210,7 @@ VectorIterator operator++(int);
 
 İkinci sözdizimi geçerli VectorIterator sonrası artırır. `int` İkinci söz diziminde türü sonrası artırma işlemi, gerçek tamsayı işlenen gösterir.
 
-## <a name="operator-inequality"></a>  VectorIterator::operator! = işleci
+## <a name="operator-inequality"></a>  VectorIterator::operator!= Operator
 
 Geçerli VectorIterator için belirtilen bir VectorIterator eşit olup olmadığını gösterir.
 
@@ -248,7 +248,7 @@ Başka bir VectorIterator.
 
 **doğru** geçerli VectorIterator ise kısa *diğer*; Aksi takdirde **false**.
 
-## <a name="operator-less-than-or-equals"></a>  VectorIterator::operator&lt;= işleci
+## <a name="operator-less-than-or-equals"></a>  VectorIterator::operator&lt;= Operator
 
 Geçerli VectorIterator ya da belirtilen VectorIterator eşit olup olmadığını belirtir.
 
@@ -292,7 +292,7 @@ Başka bir VectorIterator.
 
 İlk işleç sözdizimi bir VectorIterator nesnesini döndürür `n` öğeleri geçerli VectorIterator küçüktür. İkinci işleç sözdizimi arasında geçerli öğe sayısını döndürür ve `other` VectorIterator.
 
-## <a name="operator-plus-assign"></a>  VectorIterator::operator += işleci
+## <a name="operator-plus-assign"></a>  VectorIterator::operator+= Operator
 
 Geçerli VectorIterator tarafından belirtilen öteleme artırır.
 
@@ -348,7 +348,7 @@ Bir tamsayı yer değiştirme.
 
 İlk sözdizimi örneği
 
-## <a name="operator-minus-equals"></a>  VectorIterator::operator-= işleci
+## <a name="operator-minus-equals"></a>  VectorIterator::operator-= Operator
 
 Belirtilen öteleme tarafından geçerli VectorIterator azaltır.
 
@@ -408,6 +408,6 @@ Bir Ivector\<T > nesne.
 
 İlk söz dizimi varsayılan oluşturucu örnektir. İkinci sözdizimi bir Ivector gelen bir VectorIterator oluşturmak için kullanılan açık bir oluşturucu örnektir\<T > nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

@@ -2,12 +2,12 @@
 title: Temel türler (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
-ms.openlocfilehash: a6c068d58f0d7c173bff34726873b7a0f4f1d74c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bd5be01b868fd3086c2064edfd4ca343db425be
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529135"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752369"
 ---
 # <a name="fundamental-types-ccx"></a>Temel türler (C + +/ CX)
 
@@ -20,7 +20,7 @@ Aşağıdaki tabloda, yerleşik Boolean ve karakter türleri ve standart C++ eş
 |Ad Alanı|C + +/ CX adı|Tanım|Standart C++ adı|Değer aralıkları|
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
 |Platform|Boole değeri|Bir 8 bit Boole değeri.|bool|**doğru** (sıfırdan farklı) ve **false** (sıfır)|
-|default|char16|Bir Unicode (UTF-16) kod noktasını temsil eden bir 16-bit sayısal olmayan değer.|wchar_t<br /><br /> veya<br /><br /> L'c'|(Unicode standardı tarafından belirtilen)|
+|default|char16|Bir Unicode (UTF-16) kod noktasını temsil eden bir 16-bit sayısal olmayan değer.|wchar_t<br /><br /> -veya-<br /><br /> L'c'|(Unicode standardı tarafından belirtilen)|
 
 ## <a name="numeric-types"></a>Sayısal türler
 
@@ -54,6 +54,6 @@ Bir Windows çalışma zamanı mimari tarafından tanımlanır ve C + içinde ye
 |UIntPtr|(Yalnızca iç kullanım için.) Bir işaretçi olarak kullanılan bir işaretsiz 64-bit değeri.|
 |IntPtr|(Yalnızca iç kullanım için.)  Bir işaretçi olarak kullanılan 64-bit imzalı bir değer.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)

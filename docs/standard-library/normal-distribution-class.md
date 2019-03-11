@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: e0df3359a27a216692f0127ab7f17e1e1fce469a
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d0de31a20e06d9b8ff3789cc7ae1928c9a7b6b7d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519860"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743072"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution Sınıfı
 
@@ -209,7 +209,7 @@ Dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 ≤ stddev`
+**Önkoşul:** `0.0 < stddev`
 
 İlk Oluşturucu bir nesne oluşturur, saklı `mean` değerine değeri *ortalama* ve saklı `stddev` değerine değeri *stddev*.
 
@@ -244,7 +244,7 @@ struct param_type {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 ≤ stddev`
+**Önkoşul:** `0.0 < stddev`
 
 Bu yapı dağıtım'ın sınıf oluşturucusu oluşturmada, en çok geçirilebilir `param()` depolanan parametre var olan bir dağıtım için ve ayarlamak için üye işlevi `operator()` depolanan parametrelerin yerine kullanılacak.
 

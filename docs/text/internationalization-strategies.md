@@ -11,12 +11,12 @@ helpviewer_keywords:
 - character sets [C++], international programming strategies
 - localization [C++], character sets
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-ms.openlocfilehash: 91f4805152944202b7d3f7f45fce494f7e9d81af
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: f8c5cec680072ffa34b1ee0bef9e09231de5f1ac
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626688"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745452"
 ---
 # <a name="internationalization-strategies"></a>Uluslararası Duruma Getirme Stratejileri
 
@@ -36,7 +36,7 @@ Hedef işletim sistemleri ve pazarlara bağlı olarak birkaç uluslararası duru
 
 Bu konu başlıkları geri kalanında Unicode veya MBCS olarak oluşturabileceğiniz tamamen taşınabilir kod yazmaya odaklanmasına.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Unicode ve MBCS](../text/unicode-and-mbcs.md)<br/>
 [Yerel Ayarlar ve Kod Sayfaları](../text/locales-and-code-pages.md)

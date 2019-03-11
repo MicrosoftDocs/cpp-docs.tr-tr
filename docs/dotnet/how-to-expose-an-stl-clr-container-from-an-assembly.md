@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Bir Derlemeden STL/CLR Kapsayıcısı Sunma'
+title: 'Nasıl yapılır: Bir derlemeden STL/CLR kapsayıcısı sunma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, cross-assembly issues
 ms.assetid: 87efb41b-3db3-4498-a2e7-f3ef8a99f04d
-ms.openlocfilehash: ba881210f7ee48acd0e92dce3432cae92f3072ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 206a95cbaa808f54d7ae0e500b5a2bea272d974b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590092"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748443"
 ---
-# <a name="how-to-expose-an-stlclr-container-from-an-assembly"></a>Nasıl yapılır: Bir Derlemeden STL/CLR Kapsayıcısı Sunma
+# <a name="how-to-expose-an-stlclr-container-from-an-assembly"></a>Nasıl yapılır: Bir derlemeden STL/CLR kapsayıcısı sunma
 
 STL/CLR kapsayıcıları gibi `list` ve `map` şablon başvuru sınıfları uygulanır. C++ şablonları, derleme zamanında örneği oluşturulur çünkü tam olarak aynı imzaya sahip, ancak farklı derlemelerde farklı olan iki şablon sınıfları aslında farklı türleridir. Bu şablonu sınıfları bütünleştirilmiş kod sınırları arasında kullanılamaz anlamına gelir.
 
@@ -384,6 +384,6 @@ cliext::vector contents:
 20
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)

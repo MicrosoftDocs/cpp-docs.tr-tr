@@ -9,12 +9,12 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - MBCS [C++]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-ms.openlocfilehash: 9f309f6d7147b37691564d3d72c151da90055c6a
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: a642fd136c104b621b83ab6db5a3704ea94fdae1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627351"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741979"
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)
 
@@ -67,7 +67,7 @@ Uluslararası taşınabilirlik için birlikte kodlayın [Unicode](../text/suppor
 
 - [Bayt genişlikli taşınabilirlik için genel metin eşlemeleri hakkında bilgi edinin](../text/generic-text-mappings-in-tchar-h.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Metin ve Dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
 [Visual C++'ta MBCS Desteği](../text/mbcs-support-in-visual-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: MFC ve ATL kodu kullanıldığında artık - clr kullanarak derleme'
+title: 'Nasıl yapılır: -Clr kullanarak MFC ve ATL kodu derleme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - interop [C++], /clr compiler option
 - extension DLLs [C++], /clr compiler option
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
-ms.openlocfilehash: e5e9f800d6316e3b4f1209ec62440ae42233fc13
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a24e82787eb0fce8ff668843e73de9f2d05e1ad
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638080"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751615"
 ---
-# <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>Nasıl yapılır: /clr Kullanarak MFC ve ATL Kodu Derleme
+# <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>Nasıl yapılır: MFC ve ATL kodu kullanarak/CLR ile derleyin
 
 Bu konu, ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL programlarının nasıl yapılandırılabileceğini açıklar.
 
@@ -78,6 +78,6 @@ Bu konu, ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL prog
 
 1. DllMain ve her şeyi içeren bir dosya için buna çağrı **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

@@ -1,5 +1,5 @@
 ---
-title: 'MIDL Özellik Sayfaları: Genel'
+title: 'MIDL özellik sayfaları: Genel'
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCMidlTool.PreprocessorDefinitions
@@ -15,14 +15,14 @@ f1_keywords:
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: 0692484c-a7e6-4270-8df7-981589368399
-ms.openlocfilehash: 9be01911ec52c62450b64273776a611ad5542db3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ba8e5db5884adf467ba588aa3f00365b3a1a6e6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512689"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742137"
 ---
-# <a name="midl-property-pages-general"></a>MIDL Özellik Sayfaları: Genel
+# <a name="midl-property-pages-general"></a>MIDL özellik sayfaları: Genel
 
 **Genel** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:
 
@@ -50,6 +50,6 @@ Erişim hakkında daha fazla bilgi için **genel** özellik sayfasında **MIDL**
 
 MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MIDL Özellik Sayfaları](../ide/midl-property-pages.md)

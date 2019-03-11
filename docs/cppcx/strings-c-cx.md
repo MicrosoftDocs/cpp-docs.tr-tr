@@ -1,15 +1,15 @@
 ---
-title: Dizeler (C + +/ CX)
+title: Strings (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 5b34e1df-7c2b-4269-aba8-b767d36c49d9
-ms.openlocfilehash: 350c6133b9f910a067f760681832b81bac24f4e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f7cbdd02cb1d38231c476ba939009a95533a046
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556461"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744319"
 ---
-# <a name="strings-ccx"></a>Dizeler (C + +/ CX)
+# <a name="strings-ccx"></a>Strings (C++/CX)
 
 Windows çalışma zamanı içinde metin temsil C + +/ CX tarafından [Platform::String sınıfı](../cppcx/platform-string-class.md). Kullanım `Platform::String Class` dizeleri ve geriye Windows çalışma zamanı sınıflar yöntemlere geçirdiğinizde veya uygulama ikili arabiriminde (ABI) sınırında diğer Windows çalışma zamanı bileşenleri ile etkileşim kurarken. `Platform::String Class` Dize tam özellikli bir sınıf olması için tasarlanmamış birkaç yaygın dize işlemleri ancak onun için yöntemler sağlar. C++ modülünüzde standart C++ dize türleri gibi kullanın [wstring](../standard-library/basic-string-class.md) tüm önemli metin işleme ve son sonucu için sonra dönüştürme [Platform::String ^](../cppcx/platform-string-class.md) için veya genel geçirmeden önce arabirim. Kolay ve verimli arasında dönüştürmek için `wstring` veya `wchar_t*` ve `Platform::String`.
 
@@ -73,4 +73,3 @@ void GetDecodedStrings(std::vector<std::wstring> strings)
     }
 }
 ```
-

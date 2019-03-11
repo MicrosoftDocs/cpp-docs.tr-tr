@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - NMake property page
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
-ms.openlocfilehash: 7d890794d706a687b9cf945022aa4c230684131d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18d32dd85c39586576686942968a3f6e1735337d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473547"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749910"
 ---
 # <a name="nmake-property-page"></a>NMake Özellik Sayfaları
 
@@ -70,7 +70,7 @@ Nasıl erişileceği hakkında daha fazla bilgi için **NMake** özellik sayfas�
 
 Bu nesne program aracılığıyla üyelerine erişim hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)<br>
-[Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme](../ide/how-to-enable-intellisense-for-makefile-projects.md)
+[Nasıl yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense’i Etkinleştirme](../ide/how-to-enable-intellisense-for-makefile-projects.md)

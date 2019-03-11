@@ -14,12 +14,12 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 78ba4afd8a7fad87f09c2a403d25d3c6d52cc0c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 30a1b57a12d5a238c80f9bb8f0a069385911a8e1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573478"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746910"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ Projeleri için Oluşturulan Dosya Türleri
 
@@ -35,7 +35,7 @@ Bu konuda, Klasik Masaüstü uygulamaları için Visual C++ projeleri ile ilişk
 
 - [Önceden Derlenmiş Üst Bilgi Dosyaları](../ide/precompiled-header-files.md)
 
-- [Kaynak dosyaları](../ide/resource-files-cpp.md)
+- [Kaynak Dosyalar](../ide/resource-files-cpp.md)
 
 - [Yardım Dosyaları (WinHelp)](../ide/help-files-winhelp.md)
 
@@ -51,39 +51,39 @@ Aşağıdaki tabloda, bir Visual C++ projesinde ortak dosyaları gösterir ve bu
 |--------------------|----------|--------------|
 |.asmx|Kaynak|Dağıtım dosyası.|
 |.asp|Kaynak|Active Server Page dosyası.|
-|.ATP|Proje|Uygulama Şablonu proje dosyası.|
+|.ATP|Project|Uygulama Şablonu proje dosyası.|
 |.bmp, .dib, .gif, .jpg, .jpe, .png|Kaynak|Genel görüntü dosyaları.|
-|.BSC|Derleme|Tarayıcı kod dosyası.|
+|.bsc|Derleme|Tarayıcı kod dosyası.|
 |.cpp; .c|Kaynak|Uygulamanız için ana kaynak kodu dosyaları.|
 |.cur|Kaynak|Grafik bit eşlem dosyası imleç.|
-|.dbp|Proje|Veritabanı Proje dosyası.|
+|.dbp|Project|Veritabanı Proje dosyası.|
 |.disco|Kaynak|Devingen keşif belgesi dosyası. XML Web hizmeti bulma işler.|
-|.exe, .dll|Proje|Yürütülebilir dosya veya dinamik bağlantı kitaplığı dosyaları.|
+|.exe, .dll|Project|Yürütülebilir dosya veya dinamik bağlantı kitaplığı dosyaları.|
 |.h|Kaynak|Bir üst bilgisi (dahil) dosyası.|
 |.htm, .html, .xsp, .asp, .htc, .hta, .xml|Kaynak|Ortak Web dosyaları.|
-|. HxC|Proje|Proje dosyası yardımcı olur.|
+|.HxC|Project|Proje dosyası yardımcı olur.|
 |.ico|Kaynak|Simge bit eşlem grafik dosyası.|
 |.idb|Derleme|En az yeniden derleme ve artımlı derleme sırasında derleyici tarafından kullanılabilecek sınıf tanımları ve kaynak dosyaları arasındaki bağımlılık bilgilerini içeren durum dosyası. Kullanım [/Fd](../build/reference/fd-program-database-file-name.md) derleyici seçeneğini .idb dosyasının adını belirtin. Bkz: [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../build/reference/gm-enable-minimal-rebuild.md) daha fazla bilgi için.|
 |.idl|Derleme|Arabirim tanımı dili dosyası. Bkz: [arabirim tanımı (IDL) dosya](/windows/desktop/Rpc/the-interface-definition-language-idl-file) daha fazla bilgi için Windows SDK.|
 |.ilk|Bağlama|Artımlı bağlantı dosyası. Bkz: [/INCREMENTAL](../build/reference/incremental-link-incrementally.md) daha fazla bilgi için.|
 |.map|Bağlama|Bağlayıcı bilgilerini içeren bir metin dosyası. Kullanım [/Fm](../build/reference/fm-name-mapfile.md) eşleme dosyasını adlandırmak için derleyici seçeneği. Bkz: [/MAP](../build/reference/map-generate-mapfile.md) daha fazla bilgi için.|
-|.mfcribbon ms|Kaynak|Şerit düğmeleri, denetimleri ve özniteliklerini tanımlayan XML kodunu içeren bir kaynak dosyası. Daha fazla bilgi için [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md).|
+|.mfcribbon-ms|Kaynak|Şerit düğmeleri, denetimleri ve özniteliklerini tanımlayan XML kodunu içeren bir kaynak dosyası. Daha fazla bilgi için [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md).|
 |.obj, .o||Bağlı değil ancak derlenmiş nesne dosyaları.|
-|.PCH|Hata ayıklama|Önceden derlenmiş üst bilgi dosyası.|
+|.pch|Hata ayıklama|Önceden derlenmiş üst bilgi dosyası.|
 |.RC, .rc2|Kaynak|[Kaynak betik dosyalarına](../windows/working-with-resource-files.md) kaynakları oluşturmak için.|
-|.SBR|Derleme|Kaynak tarayıcı ara dosyası. Giriş dosyası için [BSCMAKE](../build/reference/bscmake-options.md).|
+|.sbr|Derleme|Kaynak tarayıcı ara dosyası. Giriş dosyası için [BSCMAKE](../build/reference/bscmake-options.md).|
 |.sln|Çözüm|[Çözüm](/visualstudio/ide/solutions-and-projects-in-visual-studio) dosya.|
 |.suo|Çözüm|Çözüm seçenekleri dosyası.|
 |.txt|Kaynak|Bir metin dosyası, genellikle "Benioku".|
-|.vap|Proje|Visual Studio Analyzer proje dosyası.|
+|.vap|Project|Visual Studio Analyzer proje dosyası.|
 |.vbg|Çözüm|Uyumlu proje grubu dosyası.|
-|.vbp .vip, .vbproj|Proje|Visual Basic proje dosyası.|
-|.vcxitems|Proje|Paylaşılan öğeler projesi'birden çok C++ projeleri arasında kod dosya paylaşımı. Bkz: [proje dosyalarını ve derleme görevleri dosyalarını](../ide/project-and-solution-files.md) daha fazla bilgi için.|
-|.vcxproj|Proje|Visual C++ proje dosyası. Bkz: [proje dosyalarını ve derleme görevleri dosyalarını](../ide/project-and-solution-files.md) daha fazla bilgi için.|
-|. vcxproj.filters|Proje|Çözüm Gezgini, bir dosyayı bir projeye eklemek için kullanıldığında, filtreler dosyası burada Çözüm Gezgini ağaç görünümünde dosya eklendiğinde, kendi dosya adı uzantısına göre tanımlar.|
-|.vdproj|Proje|Visual Studio dağıtım proje dosyası.|
-|.vmx|Proje|Makrosu proje dosyası.|
-|.vup|Proje|Yardımcı programı proje dosyası.|
+|.vbp, .vip, .vbproj|Project|Visual Basic proje dosyası.|
+|.vcxitems|Project|Paylaşılan öğeler projesi'birden çok C++ projeleri arasında kod dosya paylaşımı. Bkz: [proje dosyalarını ve derleme görevleri dosyalarını](../ide/project-and-solution-files.md) daha fazla bilgi için.|
+|.vcxproj|Project|Visual C++ proje dosyası. Bkz: [proje dosyalarını ve derleme görevleri dosyalarını](../ide/project-and-solution-files.md) daha fazla bilgi için.|
+|.vcxproj.filters|Project|Çözüm Gezgini, bir dosyayı bir projeye eklemek için kullanıldığında, filtreler dosyası burada Çözüm Gezgini ağaç görünümünde dosya eklendiğinde, kendi dosya adı uzantısına göre tanımlar.|
+|.vdproj|Project|Visual Studio dağıtım proje dosyası.|
+|.vmx|Project|Makrosu proje dosyası.|
+|.vup|Project|Yardımcı programı proje dosyası.|
 
 Visual Studio ile ilişkili diğer dosyalar hakkında daha fazla bilgi için bkz. [dosya türleri ve dosya uzantıları Visual Studio. NET'te](/visualstudio/ide/reference/project-and-solution-file-types).
 
@@ -91,7 +91,7 @@ Proje dosyaları Çözüm Gezgini'nde klasörler halinde düzenlenir. Visual C++
 
 Bir projeye bir öğe eklediğinizde, öğe derlenebilir olup olmadığına bakılmaksızın bu proje için tüm yapılandırmalar için öğeyi ekleyin. MyProject adlı bir proje varsa, örneğin, bir öğe ekleme, hata ayıklama ve yayın proje yapılandırmaları için ekler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ proje oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)<br>
 [Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br>

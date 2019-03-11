@@ -18,12 +18,12 @@ helpviewer_keywords:
 - GDI+ [C++], converting image file formats
 - graphics [C++], converting image file formats
 ms.assetid: bba27228-b9b3-4c9c-b31c-a04b76702a95
-ms.openlocfilehash: dd27fc603454d18f30fb367399e0ee18be74015e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c7c6d62eb4059069e6e266544ce6323c63dd15c0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505436"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746285"
 ---
 # <a name="graphics-operations-ccli"></a>Grafik İşlemleri (C++/CLI)
 
@@ -141,7 +141,7 @@ int main()
 
 [GDI+ Yönetilen Kodu Hakkında](/dotnet/framework/winforms/advanced/about-gdi-managed-code)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

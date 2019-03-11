@@ -2,12 +2,12 @@
 title: Kodunuzu Evrensel CRT'ye yükseltme
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: 41b33698c1617cef02f1b98a654d3403843215d8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: ba987c6c88a3b559b8fe6224fd27dfbfe8c9d821
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331756"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741339"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Kodunuzu Evrensel CRT'ye yükseltme
 
@@ -43,7 +43,7 @@ Hem performans hem de güvenlik nedeniyle önerilmez olsa UCRT uygulaması yerel
 
 Birçok işlev eklendi veya ISO C99 uyumluluğu artırmak için UCRT ve kod kalitesi ve güvenlik sorunlarını gidermek için güncelleştirildi. Bazı durumlarda, bu kitaplığa önemli değişiklikler gereklidir. CRT ancak UCRT kullanılarak derlendiğinde sonları daha eski bir sürümünü kullanırken kodunuzun düzgün bir şekilde derlenir, bu güncelleştirmeler ve özelliklerle yararlanmak için kodunuzu değiştirmeniz gerekir. CRT Evrensel CRT içinde bulunan güncelleştirmeleri ve önemli değişiklikler ayrıntılı listesi için bkz: [C çalışma zamanı kitaplığı (CRT)](visual-cpp-change-history-2003-2015.md#BK_CRT) bölümü Visual C++ değişiklik geçmişi. Bu, etkilenen üst bilgiler ve kodunuzda gereken değişiklikleri belirlemek için kullanabileceğiniz işlevlerin listesini içerir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)<br/>
 [Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>

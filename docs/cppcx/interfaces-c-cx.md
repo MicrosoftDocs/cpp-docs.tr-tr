@@ -2,12 +2,12 @@
 title: Arabirimler (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-ms.openlocfilehash: 33fe0df457a4f1bab3a7cffab585501364d5750c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04aaf25817cade47e89f0a06c423b68538d947b4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626635"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740745"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C + +/ CX)
 
@@ -95,7 +95,7 @@ Windows çalışma zamanı türleri bir genel arabirim yazmak için nasıl kulla
 
 - Şablonlu başvuru sınıfları özel olması gerekir. Genel arabirimler uygulayabilirsiniz ve şablon parametresi geçirebilirsiniz *T* genel bağımsız değişkene *T*. Şablonlu başvuru sınıfı her örneğinin kendisine bir başvuru sınıftır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>

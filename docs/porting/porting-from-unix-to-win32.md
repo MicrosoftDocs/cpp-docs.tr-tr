@@ -10,12 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: 70cbff207931ada378a89b978acf13fadb3a8744
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 1cf5660d1ad2f0fdde02837eeffb642c4a74e5ea
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694094"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744493"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 
@@ -77,7 +77,7 @@ Visual c++ Windows üzerinde çalışan çok CGI uygulaması gibi temel UNIX uyg
 
 Başka bir seçenek UNIX programcılar göz Windows POSIX alt sistemi ' dir. Ancak, yalnızca Windows NT oluşturulduğunda standartlaştırılmış yalnızca POSIX sürümün POSIX 1003.1 destekler. O zamandan bu yana var. Bu alt genişletmek için çok az talep nedeniyle çoğu uygulama için Win32 dönüştürüldü Çok sayıda özellik içermediğinden 1003.1 tam özellikli uygulamalar için sınırlı ilgi sistemidir (1003.2 penceresindekilerle gibi ağ desteği vb.). Windows POSIX altında çalışan tam özellikli uygulamaların Windows özelliklerine bellek eşlemeli dosyalar, ağ ve grafikler gibi Win32 uygulamalarına erişiminiz yok. VI ve LS GREP gibi Windows POSIX alt ana hedeflerini gösterilebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-change-history-2003-2015.md)<br/>
 [UNIX](../c-runtime-library/unix.md)<br/>

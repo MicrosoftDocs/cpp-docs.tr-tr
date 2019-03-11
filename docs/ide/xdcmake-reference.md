@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - xdcmake program
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
-ms.openlocfilehash: 85c7ef351e6e91bfd51a7f1e87ecec4186986505
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: adbb06b5100850aac0cfd191a530d5c98b380738
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450277"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740439"
 ---
 # <a name="xdcmake-reference"></a>XDCMake Başvurusu
 
@@ -53,6 +53,6 @@ Visual Studio xdcmake.exe'yi otomatik olarak bir proje derlenirken çağıracakt
 
 Bkz: [belge açıklamaları için önerilen etiketler](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) belge açıklamaları için kaynak kodu dosyaları ekleme hakkında daha fazla bilgi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

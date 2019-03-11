@@ -9,12 +9,12 @@ helpviewer_keywords:
 - CFixedStringT class
 - shared classes, CFixedStringT
 ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
-ms.openlocfilehash: 25556b45f93898acbb8b8b4f9263231b5b3ce2e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a84afc50fb17c5e2ee21d136cd4697dec8fb97de
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473794"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739754"
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
 
@@ -129,9 +129,8 @@ Mevcut bir `CFixedStringT` bu kopyalanacak `CFixedStringT` nesne.
 
 Bilmeniz gereken yeni depolama genellikle sonuç tutmak için ayrılmış olduğundan, atama işleci kullandığınızda, özel durumlar oluşabilir belleğin `CFixedStringT` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CStringT Sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

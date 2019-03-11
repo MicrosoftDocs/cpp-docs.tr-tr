@@ -53,12 +53,12 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: 4974571764c22b26e84e93c68d679afc8a1cea73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 72300f754015e54daf14863ca2ae677bde8f7d1a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573374"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746207"
 ---
 # <a name="exec-wexec-functions"></a>_exec, _wexec İşlevleri
 
@@ -233,7 +233,7 @@ int main( int ac, char* av[] )
 
 **Başlık:** process.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Süreç ve Ortam Denetimi](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

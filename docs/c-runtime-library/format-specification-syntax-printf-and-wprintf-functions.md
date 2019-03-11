@@ -9,12 +9,12 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: cb7d99077a082323a6662d29c0386cd1d416297c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bccbe435d926a75990a4ca35b98c9b352dd40e8b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665341"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740309"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
 
@@ -22,7 +22,7 @@ ms.locfileid: "50665341"
 
 İsteğe bağlı ve gerekli alanlara bu formu dönüştürme belirtimi oluşur:
 
-**%**[[*bayrakları*](#flags)] [[*genişliği*](#width)] [.[ *duyarlık*](#precision)] [[*boyutu*](#size)][*türü*](#type)
+**%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
 
 Her alanı dönüştürme belirtimi, bir karakter veya seçeneği veya dönüştürme bir özel biçim belirticisi belirten bir sayı alır. Gerekli *türü* alanı bağımsız değişkeni uygulanacak dönüştürme türünü belirtir. İsteğe bağlı *bayrakları*, *genişliği*, ve *duyarlık* alanlarını başında boşluk veya sıfır ve gerekçe görüntülenen duyarlık gibi ek biçimi özelliklerini denetleyin. *Boyutu* alanı bağımsız değişkeni kullanılan ve dönüştürülen boyutunu belirtir.
 
@@ -74,7 +74,7 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**p**|İşaretçi türü|Bağımsız değişkenin adresi onaltılık basamak olarak görüntüler.|
 |**s**|Dize|İle kullanıldığında `printf` İşlevler, bir tek baytlı veya çok baytlı karakter dizesi; ile kullanıldığında belirtir `wprintf` İşlevler, bir geniş karakter dizesini belirtir. İlk boş karaktere kadar veya kadar karakter görüntülenmezse *duyarlık* değerine ulaşılmadan.|
 |**S**|Dize|İle kullanıldığında `printf` İşlevler, geniş karakterli bir dizedir; ile kullanıldığında belirtir `wprintf` İşlevler, bir tek baytlı veya çok baytlı karakter dizesi belirtir. İlk boş karaktere kadar veya kadar karakter görüntülenmezse *duyarlık* değerine ulaşılmadan.|
-|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) veya [UNICODE_STRING](https://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) yapısı bağımsız değişkeni geçirilir, işaret ettiği arabellek içindeki dize görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişken — Örneğin, `%wZ`. `Length` Yapısının alanı dize uzunluğu için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanı uzunluğu arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakter yalnızca bir dönüştürme belirtimi gibi kullandığınız işlevlerinde hata ayıklama sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
+|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) veya [UNICODE_STRING](/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) yapısı bağımsız değişkeni geçirilir, işaret ettiği arabellek içindeki dize görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişken — Örneğin, `%wZ`. `Length` Yapısının alanı dize uzunluğu için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanı uzunluğu arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakter yalnızca bir dönüştürme belirtimi gibi kullandığınız işlevlerinde hata ayıklama sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
 
 Visual Studio 2015'te başlatılmasının bir kayan nokta dönüştürme belirleyicisine karşılık gelen bağımsız değişken (**bir**, **A**, **e**, **E**, **f**, **F**, **g**, **G**) belirsiz sonsuz veya NaN, biçimlendirilmiş çıktı C99 standartlarına uyar. Bu tabloda biçimlendirilmiş çıktı:
 
@@ -203,7 +203,7 @@ Bir **hc** veya **hC** tür tanımlayıcısı ile eşanlamlıdır **c** içinde 
 > [!NOTE]
 > **Microsoft Specific** **miyim** (büyük harf i), **I32**, **I64**, ve **w** bağımsız değişkeni boyut değiştirici önekleri Microsoft olan Uzantılar ve olan ISO C uyumlu değil. **h** önek veri türü ile kullanıldığında `char` ve **l** (Küçük Harf L) veri türü ile kullanıldığında önek `double` Microsoft uzantılarıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - ___setlc_active_func
 - ___unguarded_readlc_active_add_func
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702
-ms.openlocfilehash: 23095bb13108ec9fde2b168035009f440e9d96f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 244bb5b0bd6a15dab2de1ad2d6b71c2ae2f850bb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525790"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743984"
 ---
 # <a name="setlcactivefunc-unguardedreadlcactiveaddfunc"></a>___setlc_active_func, ___unguarded_readlc_active_add_func
 
@@ -52,6 +52,6 @@ Ancak iç CRT işlevleri `___setlc_active_func` ve `___unguarded_readlc_active_a
 |-------------|---------------------|
 |`___setlc_active_func`, `___unguarded_readlc_active_add_func`|yok|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)

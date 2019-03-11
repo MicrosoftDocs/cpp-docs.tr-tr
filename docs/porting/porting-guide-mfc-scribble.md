@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 353dc8fb42b73ec7e0ee748ef9fefd030c073703
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 436dd27d8c2669e21ddc8a9e453f369cdd14f70c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175658"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741301"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
@@ -85,7 +85,7 @@ Visual Studio 2017'ye geçiş yaptıktan sonra yeni C++ özellikleri yararlanmak
 
 Karalama küçük ve basit Windows masaüstü uygulaması olduğundan ve dönüştürmek sabit değildi. Birçok küçük, basit uygulamaları kolayca yeni sürüme dönüştürün.  Daha fazla kod satır sayısını, modern mühendislik standartları kadar olmayabilir eski eski kod ile daha karmaşık uygulamalar için birden çok projeye ve kitaplıkları, özel derleme adımları veya karmaşık betikleştirilmiş otomatik derlemeler için yükseltmek için daha uzun sürer. Devam [sonraki örnekte](../porting/porting-guide-com-spy.md), COM Spy adlı ATL/COM uygulama.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
-[Sonraki örnek: COM Spy](../porting/porting-guide-com-spy.md)
+[Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Sonraki örnekte: COM Spy](../porting/porting-guide-com-spy.md)

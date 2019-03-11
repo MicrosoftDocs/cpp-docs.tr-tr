@@ -1,15 +1,15 @@
 ---
-title: 'Nasıl yapılır: Mevcut C++ Kodunu Evrensel Windows Platformu Uygulamasında Kullanma'
+title: 'Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma'
 ms.date: 08/21/2018
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 55fb1f3fa89f192c83effb755966158394d2fbcf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a4633b74591e16f22def44ff5875557f2909043
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528719"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745516"
 ---
-# <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ Kodunu Evrensel Windows Platformu Uygulamasında Kullanma
+# <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma
 
 Belki de en kolay yolu UWP ortamında çalışan masaüstü programınızın Masaüstü köprüsü teknolojileri kullanmaktır. Mevcut uygulamanızı olmadan bir UWP uygulaması olarak paketleme masaüstü uygulaması dönüştürücü bunlar kod değişikliği gerekir. Daha fazla bilgi için [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
@@ -229,6 +229,6 @@ Statik kitaplıkta bir UWP uygulamasında yerel API'lerin kullanmasını istedi�
 
 9. UWP uygulama projesinden buna bir başvuru ekleyerek bileşeni test etmek ve oluşturduğunuz genel API'leri çağırmak için kod ekleyin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Evrensel Windows Platformu'na bağlantı noktası](../porting/porting-to-the-universal-windows-platform-cpp.md)

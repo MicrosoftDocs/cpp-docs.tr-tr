@@ -12,12 +12,12 @@ helpviewer_keywords:
 - code pages [C++], types of
 - locale code pages [C++]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-ms.openlocfilehash: 707aec51b0a244fe305205b9b098f3f67a90de1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 83c54a3d624ddad4de6c359c44c3b4be80c95a6e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521071"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738575"
 ---
 # <a name="code-pages"></a>Kod Sayfaları
 
@@ -41,7 +41,7 @@ Microsoft çalışma zamanı kitaplığı aşağıdaki kod sayfaları türlerini
 
 - "C" yerel ANSI C programları geleneksel yürüttünüz yerel ayarına karşılık gelecek şekilde tanımlanır. "C" yerel ("C" kod sayfası) için kod sayfası, ASCII karakter kümesi karşılık gelir. Örneğin, "C" yerel olarak **islower** değerlerini 0x61 - yalnızca 0x7A true değerini döndürür. Başka bir yerel ayarında, **islower** bu yerel ayar tarafından tanımlandığı şekilde bu yanı sıra diğer değerleri true döndürebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

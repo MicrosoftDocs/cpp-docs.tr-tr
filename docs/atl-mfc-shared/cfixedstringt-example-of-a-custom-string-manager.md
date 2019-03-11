@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CFixedStringT class, using a custom string manager
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
-ms.openlocfilehash: d35c4c998a6e5913cd972312c511b2a102480c81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b6da5d4166b220ef63500d0154ab32dc72b40f4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663170"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740710"
 ---
 # <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: Örnek özel dize Yöneticisi
 
@@ -17,11 +17,11 @@ ATL kitaplığı uygulayan bir sınıf tarafından kullanılan bir özel dize Y�
 
 Oluşturucusu `CFixedStringMgr` üç parametreleri alır:
 
-- *pData:* sabit bir işaretçi `CStringData` kullanılacak yapısı.
+- *pData:* Sabit bir işaretçi `CStringData` kullanılacak yapısı.
 
-- *nChars:* maksimum karakter sayısını `CStringData` yapısı tutabilir.
+- *nChars:* En fazla karakter sayısını `CStringData` yapısı tutabilir.
 
-- *pMgr:* işaretçisi `IAtlStringMgr` arabirimi manager'ın bir"Yedekleme dize."
+- *pMgr:* Bir işaretçi `IAtlStringMgr` arabirimi manager'ın bir"Yedekleme dize."
 
 Oluşturucu değerlerini depolar *pData* ve *pMgr* , ilgili üye değişkenlerine (`m_pData` ve `m_pMgr`). Ardından, sıfır olarak sabit arabellek başvuru sayısı-1 ve en büyük boyutuna eşit kullanılabilir uzunluğu arabellek uzunluğunu ayarlar. Başvuru sayısı değeri arabellek kilitli gösterir ve bu örneği kullanmak için `CFixedStringMgr` dize Yöneticisi olarak.
 
@@ -61,7 +61,6 @@ Sabit Arabellek kullanımda değil her `CFixedStringMgr` sıfır uzunlukta başl
 
 **Başlık:** cstringt.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
-

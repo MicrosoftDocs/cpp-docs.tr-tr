@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma'
+title: 'Nasıl yapılır: Yönetilmeyen bellekte nesne başvurusunu tutun'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-ms.openlocfilehash: 50afaa16f2e0976cf6a90bef09e652b4dc54582a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d8dc341d1fe2c61eba098abec9258a2c6dade79
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478084"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747988"
 ---
-# <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma
+# <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen bellekte nesne başvurusunu tutun
 
 Saran gcroot.h kullanabileceğiniz <xref:System.Runtime.InteropServices.GCHandle>, yönetilmeyen bellekte bir CLR nesne başvurusu tutacak. Alternatif olarak, `GCHandle` doğrudan.
 
@@ -94,6 +94,6 @@ int main() {
 StringWrapper::m_handle == ManagedString
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

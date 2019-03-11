@@ -2,12 +2,12 @@
 title: Temsilciler (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-ms.openlocfilehash: 8153ac6ffc48b43fc218ee786cdb3f64504d825e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2158adad288045c9a98889dbe97e834dc93ea71
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635246"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745592"
 ---
 # <a name="delegates-ccx"></a>Temsilciler (C + +/ CX)
 
@@ -23,7 +23,7 @@ Temsilciler, olay ile birlikte en yaygın olarak kullanılır. Bir olay bir tems
 event PrimeFoundHandler^ primeFoundEvent;
 ```
 
-Windows çalışma zamanı uygulama ikili arabiriminde kullanıma sunulacak temsilciler istemcilere bildirirken kullanın [typedeventhandler\<TSender, TResult >](https://msdn.microsoft.com/library/windows/apps/br225997.aspx). Bu temsilci etkinleştirmediğiniz Javascript istemciler tarafından kullanılacak proxy ve saplama ikili dosyaları önceden tanımlanmış.
+Windows çalışma zamanı uygulama ikili arabiriminde kullanıma sunulacak temsilciler istemcilere bildirirken kullanın [typedeventhandler\<TSender, TResult >](/uwp/api/windows.foundation.typedeventhandler). Bu temsilci etkinleştirmediğiniz Javascript istemciler tarafından kullanılacak proxy ve saplama ikili dosyaları önceden tanımlanmış.
 
 ## <a name="consuming-delegates"></a>Temsilcileri kullanma
 
@@ -130,7 +130,7 @@ Oluşturulan temsilciniz oluşturulmuş olan aynı iş parçacığında aranmak 
 
 . NET'te olay işleyicileri varsa, bir olay harekete, önce yerel bir kopyasını oluşturmak için önerilen uygulama olduğunu biliyorsunuz. Bu yalnızca olay çağrılmadan önce bir olay işleyicisi kaldırılabilir yarış durumları ortadan kaldırır. C +'da bunun gerekli değildir +/ CX olay işleyicileri zaman eklendiğinde veya kaldırıldığında olduğundan yeni bir işleyici listesi oluşturulur. Bir olay çağırmadan önce bir C++ nesnesi işleyicisi başvuru sayısını artırır çünkü tüm işleyiciler geçerli olacağı garanti edilir. Ancak, bu da tüketim iş parçacığı üzerinde bir olay işleyicisi kaldırırsanız, yayımlama nesnesi, artık güncel olmayan listenin kopyası üzerinde çalışıyorsa bu işleyici hala çağrılan, anlamına gelir. Yayımlama nesne, sonraki açışınızda kadar olayı tetikler güncelleştirilmiş listesini almazsınız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>

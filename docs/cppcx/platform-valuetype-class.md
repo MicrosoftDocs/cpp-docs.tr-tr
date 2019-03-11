@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-ms.openlocfilehash: 57fb089f0d9dc53ba8a65cef41e3341168ffea45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 889cf3a53468491517d37978ca09472756ad9b7e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596410"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747157"
 ---
 # <a name="platformvaluetype-class"></a>Platform::ValueType sınıfı
 
@@ -36,11 +36,11 @@ ValueType sınıfı, değer türleri oluşturmak için kullanılır. ValueType t
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Meta veri:** platform.winmd
 
@@ -58,6 +58,6 @@ Platform::String ToString();
 
 Değeri temsil eden Platform::String.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

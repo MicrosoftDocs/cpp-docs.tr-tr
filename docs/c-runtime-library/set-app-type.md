@@ -10,12 +10,12 @@ f1_keywords:
 - _set_app_type
 - corecrt_startup/_set_app_type
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-ms.openlocfilehash: f12e409355fcd10ece474103109286925b1f3a8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a29fd94cca7fdbf6bbb24699b7f510bf1465f15
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569825"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749197"
 ---
 # <a name="setapptype"></a>_set_app_type
 
@@ -56,4 +56,3 @@ Normalde, bu işlevi çağırın gerekmez. Önce yürütülen C çalışma zaman
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
 |_set_app_type|Process.h|
-

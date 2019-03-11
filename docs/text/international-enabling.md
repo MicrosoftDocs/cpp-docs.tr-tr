@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MBCS [C++], enabling
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-ms.openlocfilehash: 51d85991fdab273d1cdad4e99400d1ad8ed6324c
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 22f2dba49e894e93cb6791d76a65730f3269199e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627471"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748014"
 ---
 # <a name="international-enabling"></a>Uluslararası Etkinleştirme
 
@@ -38,7 +38,7 @@ Uluslararası uygulamalar için düzgün çalışmayan karakter ve dize hakkınd
 > [!NOTE]
 >  Bazı karakterler, aksanlı harfler, 0x80'den büyük olan karakter kodlarını gibi Avrupa ve MBCS karakter kümesi vardır. Çoğu kod imzalı karakterler kullandığından, 0x80'den büyük bu karakterler için dönüştürüldüğünde işaret Genişletilmiş **int**. Negatif olan işaret Genişletilmiş karakter dizinini oluşturan dizinin dışında dizi dizini oluşturma için bir sorun olmasıdır. Japonca gibi bir MBCS kullanan diller de benzersizdir. Bir karakter, 1 veya 2 bayt oluşabilir olduğundan her zaman aynı anda iki bayt değiştirmelisiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Unicode ve MBCS](../text/unicode-and-mbcs.md)<br/>
 [Uluslararası Duruma Getirme Stratejileri](../text/internationalization-strategies.md)

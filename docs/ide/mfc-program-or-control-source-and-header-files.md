@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], MFC source and header
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
-ms.openlocfilehash: c60c00772005efc0402cdeba9d710548c6412b15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c49a17802e0c7c43cae58153a6df6c4f70f69980
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639159"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743847"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları
 
@@ -32,7 +32,7 @@ Bu dosyaların tümünün bulunan *Projname* dizin ve üst bilgi dosyaları (.h)
 |Mainfrm.cpp, Mainfrm.h|Türetilen **CMainFrame** ya da bir sınıftan [CFrameWnd](../mfc/reference/cframewnd-class.md) (için SDI uygulamaları) veya [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) (için MDI uygulamaları). **CMainFrame** sınıfı işler araç çubuğu düğmeleri ve durum çubuğu oluşturma Uygulama Sihirbazı'nda kişinin ilgili seçenekleri seçtiyseniz **uygulama seçenekleri** sayfa (adım 4 / 6). Kullanma hakkında bilgi için **CMainFrame**, bkz: [çerçeve pencere sınıfları tarafından oluşturulan Uygulama Sihirbazı'nı](../mfc/frame-window-classes-created-by-the-application-wizard.md).|
 |Childfrm.cpp, Childfrm.h|Türetilen **CChildFrame** gelen sınıfı [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md). **CChildFrame** sınıfı MDI belge çerçeve pencereleri için kullanılır. MDI seçeneğini belirlerseniz bu dosyaları her zaman oluşturulur.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)<br>
 [ATL Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/atl-program-or-control-source-and-header-files.md)<br>

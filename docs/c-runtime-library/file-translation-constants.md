@@ -11,12 +11,12 @@ helpviewer_keywords:
 - constants [C++], file translation mode
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-ms.openlocfilehash: d98a74c820023ac8684f54413c0e81c58eba7b0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef9b986753de05c45b3071e55f9b163fa5a6a7da
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443296"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743325"
 ---
 # <a name="file-translation-constants"></a>Dosya Çeviri Sabitleri
 
@@ -45,7 +45,7 @@ ms.locfileid: "50443296"
 
 Varsa **t** veya **b** verilmez *modu*, çeviri modu varsayılan modlu değişkeni tarafından tanımlanan [_fmode](../c-runtime-library/fmode.md). Metin ve ikili modlarda kullanma hakkında daha fazla bilgi için bkz. [metin ve ikili mod dosyası g/ç](../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>

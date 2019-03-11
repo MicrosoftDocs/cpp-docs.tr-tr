@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TCHAR type
 - TCHAR.H data types, mapping
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
-ms.openlocfilehash: 768d0ef2ac3dc2b407ea3725ebeaede307c98302
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc339bb11d0910eea2ef115a8f9013fa5c0270a7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490473"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738111"
 ---
 # <a name="a-sample-generic-text-program"></a>Örnek Genel Metin Programı
 
@@ -174,7 +174,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
 [Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>

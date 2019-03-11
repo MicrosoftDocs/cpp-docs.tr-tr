@@ -8,12 +8,12 @@ helpviewer_keywords:
 - application deployment [C++], DLL redistribution
 - deploying applications [C++], DLL redistribution
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
-ms.openlocfilehash: fdca832810312d2f36697da8fbaac539c5ce951c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee81fb1560133b2777a33e80d32c0e2e55c01bf4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452604"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749093"
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme
 
@@ -45,10 +45,10 @@ Aşağıdaki tablo uygulamanızın bağımlı olabileceği Visual C++ DLL'lerini
 |concrt*sürüm*.dll|Yerel kod için eşzamanlılık çalışma zamanı kitaplığı.|Kullanan uygulamalar [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).|
 |MFC*sürüm*.dll|(MFC) kitaplığı Microsoft Foundation sınıfları.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md).|
 |MFC*sürüm* *dil*.dll|Kitaplık kaynakları (MFC) Microsoft Foundation sınıfları.|MFC için belirli bir dil kaynakları kullanan uygulamalar.|
-|MFC*sürüm*u.dll|Unicode desteği olan MFC Kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ve Unicode desteği gerektirir.|
+|mfc*version*u.dll|Unicode desteği olan MFC Kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ve Unicode desteği gerektirir.|
 |mfcmifc80.dll|MFC yönetilen arabirimler kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
 |mfcm*sürüm*.dll|MFC yönetilen kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
-|mfcm*sürüm*u.dll|MFC yönetilen kitaplığı Unicode desteği olan.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index) ve Unicode desteği gerektirir.|
+|mfcm*version*u.dll|MFC yönetilen kitaplığı Unicode desteği olan.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index) ve Unicode desteği gerektirir.|
 |vcamp*sürüm*.dll|Yerel kod için AMP kitaplığı.|Kullanan uygulamalar [C++ AMP Kitaplığı](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md) kod.|
 |vcomp*sürüm*.dll|OpenMP kitaplık yerel kod.|Kullanan uygulamalar [C++ OpenMP kitaplık](../parallel/openmp/openmp-in-visual-cpp.md) kod.|
 
@@ -59,7 +59,7 @@ Bu DLL'leri uygulamanızla birlikte yeniden dağıtma hakkında daha fazla bilgi
 
 Genellikle, işletim sisteminin bir parçası olduklarından, sistem DLL'lerini yeniden dağıtmanız gerekmez. Ancak, özel durumlar olabilir, örneğin, uygulamanızın Microsoft işletim sistemlerinin bazı sürümlerinde çalışacağı. Bu durumda, ilgili lisans koşullarını mutlaka okuyun. Ayrıca, sistem DLL'lerini hizmet paketleri, Windows Update aracılığıyla ya da Microsoft'un sunduğu yeniden dağıtılabilir paketleri kullanarak almayı deneyin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dağıtım Yöntemi Seçme](../ide/choosing-a-deployment-method.md)
 

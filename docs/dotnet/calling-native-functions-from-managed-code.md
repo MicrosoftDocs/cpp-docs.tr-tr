@@ -9,12 +9,12 @@ helpviewer_keywords:
 - calling native functions from managed code
 - interop [C++], calling native functions from managed code
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-ms.openlocfilehash: 97b0221a4ec73be41bb5ba052607dfb5ced233c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 285bfabbd5935df303a39ada11c388713ae24f34
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462044"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743254"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 
@@ -196,7 +196,7 @@ Sıralayıcı otomatik olarak adresini yönetilmeyen bir işleve geçirilirse, �
 
 Bu konunun önceki bölümlerinde gösterilen örnekte, DllImport öğesinin CharSet parametresi yönetilen dizelerini belirtir. sıralanmalıdır; Bu durumda, bunlar yerel taraf için ANSI dizelerine sıralanmalıdır.
 
-MarshalAs özniteliğini kullanılarak bir yerel işlevin tek tek bağımsız değişkenleri için sıralama bilgilerini belirtebilirsiniz. Bir dize için birkaç seçenek vardır \* bağımsız değişken: BStr, ANSIBStr, TBStr, LPStr, LPWStr ve LPTStr. Varsayılan, LPStr'dir.
+MarshalAs özniteliğini kullanılarak bir yerel işlevin tek tek bağımsız değişkenleri için sıralama bilgilerini belirtebilirsiniz. Bir dize için birkaç seçenek vardır \* bağımsız değişkeni: BStr, ANSIBStr, TBStr, LPStr, LPWStr ve LPTStr. Varsayılan, LPStr'dir.
 
 Bu örnekte, dize bir çift baytlık Unicode karakter dizesi, LPWStr olarak sıralanır. Çıktı Hello World ilk harfidir! sıralanmış dizenin ikinci baytı NULL'dur ve puts bunu dize sonu işareti olarak yorumlar.
 
@@ -225,6 +225,6 @@ PInvoke 10 ila 30 yüküne sahiptir x86 çağrı başına yönergeleri. Bu sabit
 
 Daha iyi performans için çağrı başına daha az veri hazırlama daha fazla çağrı yerine, mümkün olduğunca kadar veri hazırlama daha az PInvoke çağrısına sahip olun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - ANSI [C++], C standard
 - Microsoft extensions naming conventions
 ms.assetid: 6be271bf-eecf-491a-a928-0ee2dd60e3b9
-ms.openlocfilehash: c84485fdd06bc9264241cb37aa3c6b2fb29d9322
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a4462e84ec01bd236849c6aed024b636b315243
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620759"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742816"
 ---
 # <a name="ansi-c-compliance"></a>ANSI C Uyumluluğu
 
@@ -28,6 +28,6 @@ Microsoft'a özgü işlevleri ve genel değişkenler adları tek bir alt çizgi 
 
 Microsoft'a özgü makrolar ve bildirim sabitleri adları, bir büyük harf tarafından hemen ardından tek bir öncesinde alt çizgi veya iki alt çizgi ile başlar. Bu tanımlayıcılar kapsamını mutlaktır. Örneğin, Microsoft'a özgü tanımlayıcıyı kullanamazsınız **_UPPER** bu nedenle.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uyumluluk](../c-runtime-library/compatibility.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - byte streams
 - wide streams
 ms.assetid: 61ef0587-4cbc-4eb8-aae5-4c298dbbc6f9
-ms.openlocfilehash: bb14cbd5caed413425810bfe017e068f4b4b4257
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67de6b609b3e0546d539ef9c37f12db1067546ad
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590441"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739359"
 ---
 # <a name="byte-and-wide-streams"></a>Bayt ve Geniş Akışlar
 
@@ -22,7 +22,7 @@ Aksine, geniş bir akış geniş bir kodlama kuralları olabilir genelleştirilm
 
 Geniş bir akış içinde konumlandırma metin steams olduğu gibi aynı sınırlamalar düşer. Ayrıca, dosya konumu göstergesi iyi bir duruma bağlı kodlamayı ile uğraşmak zorunda kalabilirsiniz. Genellikle, akış ve türünde bir nesne içinde uzaklığı bir iki bayt içerir `mbstate_t`. Bu nedenle, geniş bir akış içinde bir dosya konumu almak için yalnızca güvenilir çağırarak yoludur [fgetpos](../c-runtime-library/reference/fgetpos.md), ve bu şekilde elde edilen bir konuma geri yüklemek için yalnızca güvenilir bir şekilde çağrılarak [fsetpos](../c-runtime-library/reference/fsetpos.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)

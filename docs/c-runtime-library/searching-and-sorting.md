@@ -9,12 +9,12 @@ helpviewer_keywords:
 - searching [C++], CRT search functions
 - searching [C++]
 ms.assetid: 15e984f0-e155-46f5-8542-51c458792f54
-ms.openlocfilehash: 7bdef8712d729195a948f616b2bde07c6be975c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a58526f65be4951b57804c08359c349e78d622fc
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497099"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741764"
 ---
 # <a name="searching-and-sorting"></a>Arama ve Sıralama
 
@@ -33,6 +33,6 @@ Aşağıdaki işlevleri, arama ve sıralama için kullanın.
 |[qsort](../c-runtime-library/reference/qsort.md)|Hızlı sıralama|
 |[qsort_s](../c-runtime-library/reference/qsort-s.md)|Daha güvenli bir sürümü **qsort**|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

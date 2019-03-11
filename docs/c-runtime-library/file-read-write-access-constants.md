@@ -10,12 +10,12 @@ helpviewer_keywords:
 - constants [C++], file attributes
 - file read/write access constants
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
-ms.openlocfilehash: 7bf16271c0d58e3d87e4c24795ec0bd1ee1ccb89
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0dfbc925c5252724cbb1caad58470849915242a9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666198"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746077"
 ---
 # <a name="file-readwrite-access-constants"></a>Dosya Okuma/Yazma Erişimi Sabitleri
 
@@ -38,11 +38,11 @@ Erişim türleri bu tabloda açıklanmıştır:
 |**"a"**|(Ekleme); dosyanın sonunda yazma için açar henüz yoksa, dosyayı ilk oluşturur. Tüm işlemleri dosyanın sonunda gerçekleşmesi yazın. Dosya işaretçisi kullanılarak konumlandırılabilir rağmen `fseek` veya `rewind`, herhangi bir işlemi yazma önce her zaman geri dosyanın sonuna kadar taşınır. |
 |**"r +"**|Hem okuma ve yazma için açar. Dosya yok veya nebyla nalezena dosyayı açmak için bir çağrı başarısız olur.|
 |**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.|
-|**"a +"**|Aynı **"a"** ancak okuma de sağlar.|
+|**"a+"**|Aynı **"a"** ancak okuma de sağlar.|
 
 "R +", "w +" veya "a +" türü belirtildiğinde, hem okumaya hem yazmaya izin verilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma ve okuma arasında geçiş yaptığınızda, olmalıdır bir araya giren `fflush`, `fsetpos`, `fseek`, veya `rewind` işlemi. Geçerli konum için belirtilen `fsetpos` veya `fseek` işlemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>

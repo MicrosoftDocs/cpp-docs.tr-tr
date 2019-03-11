@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-ms.openlocfilehash: 97094c6773ee6b67655dacc557335ed222fed311
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: dd187be93b5df0160686fe765f65c25e14800b75
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326738"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748690"
 ---
 # <a name="ismbc-routines"></a>_ismbc Rutinleri
 
@@ -41,13 +41,13 @@ Her test sonucu **_ismbc** yordamı çok baytlı kod sayfasına yürürlükte ba
 
 |Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
-|[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfasayısal|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcdigit` ve `_ismbcalpha`.|
-|[_ismbcalpha, _ismbcalpha_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcupper` ve `_ismbclower`; veya katakana harf: 0xA6 < =`c`< 0xDF =.|
+|[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfasayısal|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: Örnekler için bkz: `_ismbcdigit` ve `_ismbcalpha`.|
+|[_ismbcalpha, _ismbcalpha_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: Örnekler için bkz: `_ismbcupper` ve `_ismbclower`; veya katakana harf: 0xA6<=`c`<=0xDF.|
 |[_ismbcdigit, _ismbcdigit_l](../c-runtime-library/reference/ismbcalnum-functions.md)|basamak|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII basamak ise: 0x30 < =`c`< 0x39 =.|
 |[_ismbcgraph, _ismbcgraph_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Grafiği|Yalnız ve yalnızca döndürür `c` boşluk () dışında bir ASCII veya katakana yazdırılabilir karakter tek bayt gösterimidir. Örnekler için bkz: `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|
 |[_ismbclegal, _ismbclegal_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Geçerli çok baytlı karakter|Yalnız ve yalnızca ilk baytı döndürür `c` ikinci baytı aralıklar 0x40-0x7E veya 0x80 - FC ederken aralıklar 0x81-0x9F veya 0xE0 - 0xfc aralığında olan.|
 |[_ismbclower, _ismbclower_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Küçük harf alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII küçük harfli İngilizce harfin ise: 0x61 < =`c`< 0x7A =.|
-|[_ismbcprint, _ismbcprint_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Yazdırılabilir|Yalnız ve yalnızca döndürür `c` herhangi bir karakterin boşluk () dahil olmak üzere ASCII veya katakana yazdırılabilir tek baytlık bir gösterimiyse: örnekler için bkz: `_ismbcspace`, `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|
+|[_ismbcprint, _ismbcprint_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Yazdırılabilir|Yalnız ve yalnızca döndürür `c` herhangi bir karakterin boşluk () dahil olmak üzere ASCII veya katakana yazdırılabilir tek baytlık bir gösterimiyse: Örnekler için bkz: `_ismbcspace`, `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|
 |[_ismbcpunct, _ismbcpunct_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Noktalama işaretleri|Yalnız ve yalnızca döndürür `c` herhangi bir ASCII veya katakana noktalama karakterinin tek baytlık gösterimidir.|
 |[_ismbcblank, _ismbcblank_l,](../c-runtime-library/reference/ismbcgraph-functions.md)|Boşluk veya yatay sekme|Yalnız ve yalnızca döndürür `c` bir boşluk karakteri veya bir yatay sekme karakterinin tek baytlık bir gösterimiyse olduğu: `c`= 0x20 veya `c`= 0x09.|
 |[_ismbcspace, _ismbcspace_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Boşluk|Yalnız ve yalnızca döndürür `c` bir boşluk karakteri: `c`= 0x20 veya 0x09 < =`c`< = 0x0D.|
@@ -60,17 +60,17 @@ Aşağıdaki yordamlar kod sayfası 932'ye özeldir.
 
 |Yordam|Test koşulu (yalnızca kod sayfası 932)|
 |-------------|-------------------------------------------|
-|[_ismbchira, _ismbchira_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Çift baytlık Hiragana: 0x829F < =`c`< 0x82F1 =.|
-|[_ismbckata, _ismbckata_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Çift baytlık katakana: 0x8340 < =`c`< 0x8396 =.|
-|[_ismbcl0, _ismbcl0_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS olmayan Kanji: 0x8140 < =`c`< 0x889E =.|
+|[_ismbchira, _ismbchira_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Double-byte Hiragana: 0x829F < =`c`< 0x82F1 =.|
+|[_ismbckata, _ismbckata_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Double-byte katakana: 0x8340 < =`c`< 0x8396 =.|
+|[_ismbcl0, _ismbcl0_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS non-Kanji: 0x8140 < =`c`< 0x889E =.|
 |[_ismbcl1, _ismbcl1_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Düzey JIS-1: 0x889F < =`c`< 0x9872 =.|
-|[_ismbcl2, _ismbcl2_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS düzey 2: 0x989F < =`c`< 0xEA9E =.|
+|[_ismbcl2, _ismbcl2_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|2-JIS düzeyi: 0x989F < =`c`< 0xEA9E =.|
 
 `_ismbcl0`, `_ismbcl1`, ve `_ismbcl2` kontrol belirtilen değere `c` önceki açıklanan test koşullarıyla eşleşen tablo, ancak denetlemez `c` geçersiz bir çok baytlı karakter. Düşük bayt 0x00-0x3F, 0x7F veya 0xFD - aralıklardaki 0xFF aralıklarındaysa, bu işlevler, karakterin sınama koşulunu karşıladığını belirterek sıfır dışında bir değeri döndürür. Kullanım [_ismbbtrail, _ismbbtrail_l](../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md) çok baytlı karakterin tanımlanıp tanımlanmadığını sınamak için.
 
 **END kod sayfası 932 özel**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Karakter Sınıflaması](../c-runtime-library/character-classification.md)<br/>
 [is, isw Yordamları](../c-runtime-library/is-isw-routines.md)<br/>

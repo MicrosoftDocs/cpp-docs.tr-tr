@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - marshal_as template [C++]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
-ms.openlocfilehash: a30f86a41917419474f93a915b92d125112ec7ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2294d8fe94a32f281332c963b21a542366ae3207
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492202"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751518"
 ---
 # <a name="marshalas"></a>marshal_as
 
@@ -73,7 +73,7 @@ int main() {
 
 **Namespace:** msclr::interop
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)<br/>
 [marshal_context Class](../dotnet/marshal-context-class.md)

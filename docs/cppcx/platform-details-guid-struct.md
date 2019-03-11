@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::__GUID Struct
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
-ms.openlocfilehash: 4ff10bc17d7eee246bbb0e2fd39787e10e44df02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39b661dcc658ffb01b636f659a5e77fbaa2bd2b9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677649"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738469"
 ---
 # <a name="platformdetailsguid-struct"></a>Platform::details:: __guıd yapısı
 
@@ -36,8 +36,8 @@ Tarayıcılarla inceledi çünkü bu yapının yalnızca bütünlük açısında
 
 **Meta veri:** platform.winmd
 
-**Namespace:** Platform::Details
+**Namespace:** Platform::details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - TZNAME_MAX constant
 ms.assetid: e2286cb8-751d-4557-9650-5c4b98a8f7be
-ms.openlocfilehash: 1d55f88717613b735cbfd04c5790f05544e1d4c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71e5becd39f49d86573483c5451a9a2415d84181
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547920"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750942"
 ---
 # <a name="tznamemax"></a>TZNAME_MAX
 
@@ -23,7 +23,7 @@ ms.locfileid: "50547920"
 #include <limits.h>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Ortam Sabitleri](../c-runtime-library/environmental-constants.md)<br/>
 [Global Sabitler](../c-runtime-library/global-constants.md)<br/>

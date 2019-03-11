@@ -9,12 +9,12 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: 67b993325c7f9c649d1509ce2c1ecf09a2404bc8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: b763361d2cdd732025e492a25ac63fc01f06c2b8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328935"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739736"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
@@ -49,6 +49,6 @@ Geçerli saati Al ve Dönüştür, ayarlamak ve gerektiği şekilde depolamak i�
 > [!NOTE]
 > Visual C++ ve Visual C++ 2005 önce Microsoft C/C++ sürümlerinde **time_t** olduğu bir **uzun** **int** (32 bit) ve bu nedenle tarihlerini kullanılamadı 3:14:07 19 Ocak 2038 geçmiş , UTC. **time_t** artık değerine eşdeğer olan **__time64_t** varsayılan, ancak tanımlama **_use_32bıt_tıme_t** değişiklikleri **time_t** için **__time32_t** alan 32-bit sürümleri çağırmak için birçok saat işlevleri zorlar **time_t**. Daha fazla bilgi için [standart türler](../c-runtime-library/standard-types.md) ve bireysel saat işlevleri belgelerindeki açıklamalar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

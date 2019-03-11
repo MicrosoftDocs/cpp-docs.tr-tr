@@ -10,12 +10,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.OutputResourceManifest
 - VC.Project.VCManifestTool.GenerateCatalogFiles
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
-ms.openlocfilehash: 8aa007e41cdabe0bf548f1184b801c1f81655596
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b9af50e6dca2dafa4dabd356a868405dfacc958
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624711"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741179"
 ---
 # <a name="input-and-output-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Girdi ve çıktı, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 
@@ -61,7 +61,7 @@ Yönetilen derlemeden bir bildirim oluşturur. (**- managedassemblyname:**<em>do
 **DPI tanıma etkinleştir**<br/>
 Uygulamanın DPI kullanan olup olmadığını belirtir. Varsayılan ayardır **Evet** MFC projeleri için ve **Hayır** yalnızca MFC projeleri DPI tanıma geliştirdim çünkü aksi takdirde. Ayarı geçersiz kılabilirsiniz **Evet** farklı DPI ayarları işlemek için kod ekler. Uygulamanız belirsiz veya olmadığında DPI kullanan ayarlarsanız küçük görünebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [ClickOnce Uygulama Bildirimi](/visualstudio/deployment/clickonce-application-manifest)<br/>
 [Bildirim Aracı özellik sayfaları](../ide/manifest-tool-property-pages.md)<br/>

@@ -27,18 +27,18 @@ helpviewer_keywords:
 - UNICODE constant
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-ms.openlocfilehash: b39e8563797ca0b57b54d2c85f851c8c45b29905
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa6827607430bf8f0db37997bac0223833fcd171
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471454"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747936"
 ---
 # <a name="using-generic-text-mappings"></a>Genel Metin Eşlemelerini Kullanma
 
 **Microsoft'a özgü**
 
-Çeşitli uluslararası pazarlar için kod geliştirmeyi basitleştirmek için çok sayıda veri türleri, yordamlar ve diğer nesneler için Microsoft çalışma zamanı kitaplığı Microsoft'a özgü "genel metin" eşlemeleri sağlar. Bu eşlemeler TCHAR içinde tanımlanır. H Herhangi bir karakter kümesi üç tür için derlenebilir genel kod yazmak için bu adı eşlemeleri kullanabilirsiniz: ASCII (SBCS), MBCS ve Unicode olarak kullanarak tanımladığınız bir bildirim sabiti bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri ANSI uyumlu olmayan Microsoft uzantılarıdır.
+Çeşitli uluslararası pazarlar için kod geliştirmeyi basitleştirmek için çok sayıda veri türleri, yordamlar ve diğer nesneler için Microsoft çalışma zamanı kitaplığı Microsoft'a özgü "genel metin" eşlemeleri sağlar. Bu eşlemeler TCHAR içinde tanımlanır. H Bu ad eşlemeler, herhangi bir karakter kümesi üç tür için derlenebilir genel kod yazmak için kullanabilirsiniz: ASCII (SBCS), MBCS ve Unicode olarak kullanarak tanımladığınız bir bildirim sabiti bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri ANSI uyumlu olmayan Microsoft uzantılarıdır.
 
 ### <a name="preprocessor-directives-for-generic-text-mappings"></a>Genel metin eşlemeleri için ön işlemci yönergeleri
 
@@ -97,7 +97,7 @@ Bu nedenle yazma, korumak ve herhangi bir karakter kümesi üç tür için özel
 
 **END Microsoft özgü**
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
 [Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>

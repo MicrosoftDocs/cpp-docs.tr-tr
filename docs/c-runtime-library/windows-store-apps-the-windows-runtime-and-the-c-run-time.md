@@ -2,12 +2,12 @@
 title: UWP uygulamaları, Windows çalışma zamanı ve C çalışma zamanı
 ms.date: 02/02/2019
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
-ms.openlocfilehash: ae57390dc916116b8d799b9f937ff882abaef970
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 932b5388f2d1bf87f0d77ae1330fa3e613c9dca7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763901"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738669"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>UWP uygulamaları, Windows çalışma zamanı ve C çalışma zamanı
 
@@ -39,7 +39,7 @@ Windows çalışma zamanı, aşağıdaki CRT özellikleri desteklemez:
 
 Kullanılamayan bir UWP uygulaması ve diğer işlevler için öneriler, CRT işlevleri tam bir listesi için bkz. [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Uyumluluk](../c-runtime-library/compatibility.md)<br/>
 [Windows Çalışma Zamanı Desteklenmeyen CRT İşlevleri](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>

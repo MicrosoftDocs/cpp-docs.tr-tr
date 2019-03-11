@@ -13,12 +13,12 @@ helpviewer_keywords:
 - enable memory allocation tracking flag
 - memory, tracking on the debug heap
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
-ms.openlocfilehash: 5abb0418b5ffb1f95bf7b362f621f99f411094d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a967b436d53acab6d76fa36fdf9b13c7c24d49c3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435301"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746988"
 ---
 # <a name="crtdbgflag"></a>_crtDbgFlag
 
@@ -26,6 +26,6 @@ ms.locfileid: "50435301"
 
 Bu bayrak diğer hata ayıklama işlevleri ile birlikte kullanma hakkında daha fazla bilgi için bkz. [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Denetim Bayrakları](../c-runtime-library/control-flags.md)

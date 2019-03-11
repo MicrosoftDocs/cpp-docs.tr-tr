@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: e4608d46664dad3e04d37a82368cc6e7173106f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1431002a7e7d0054ac20c05c76b05cabc96177c5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445168"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743266"
 ---
 # <a name="scanf-width-specification"></a>sacnf Genişlik Belirtimi
 
@@ -79,9 +79,9 @@ Güvenli olmayan bir işlevde kullanıyorsanız `scanf` ailesi, önceki bağıms
 
 ## <a name="reading-undelimited-strings"></a>Okuma sınırlandırılmamış dizeler
 
-Boşluk tarafından ayrılmış olmayan dizeler okumak için karakter, köşeli ayraçlar içindeki karakter kümesi (**[]**) için yerine **s** tür karakteri (dize). Köşeli ayraçlar içindeki karakter kümesini denetim dize olarak adlandırılır. Karşılık gelen giriş alanını denetim dizesinde görünmez ilk karaktere okuyun. Kümedeki ilk karakteri bir şapka olup olmadığını (**^**), etkisini tersine: karakter kümesini geri kalanında görünür ilk karakter için giriş alanı okuyun.
+Boşluk tarafından ayrılmış olmayan dizeler okumak için karakter, köşeli ayraçlar içindeki karakter kümesi (**[]**) için yerine **s** tür karakteri (dize). Köşeli ayraçlar içindeki karakter kümesini denetim dize olarak adlandırılır. Karşılık gelen giriş alanını denetim dizesinde görünmez ilk karaktere okuyun. Kümedeki ilk karakteri bir şapka olup olmadığını (**^**), ters bir etkisi: Giriş alanı karakter kümesini geri kalanında görünen ilk karaktere okuyun.
 
-Unutmayın **% [a-z]** ve **[z-a] %** eşdeğer olarak yorumlanır **%[abcde...z]**. Bu, bir ortak `scanf` işlevi uzantısı, ancak ANSI standardı, gerekmediğini unutmayın.
+Unutmayın **% [a-z]** ve **[z-a] %** eşdeğer olarak yorumlanır **% [abcde... z]**. Bu, bir ortak `scanf` işlevi uzantısı, ancak ANSI standardı, gerekmediğini unutmayın.
 
 ## <a name="reading-unterminated-strings"></a>Okuma Sonlandırılmamış dizeleri
 
@@ -101,7 +101,7 @@ Bir sonlandırıcı null karakteri ('\0') depolamadan bir dize depolamak için b
 
 Herhangi bir nedenle zaman `scanf` işlevi, giriş alanını okuma durdurur, sonraki giriş alanı okunmamış ilk karakterde başlamak için değerlendirilir. Çakışan bir karakter varsa, kabul okunmamış ve sonraki giriş alanı ilk karakteri veya giriş akışında sonraki okuma işlemleri ilk karakteri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>

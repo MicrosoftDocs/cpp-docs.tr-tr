@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: Bir out Parametresini Belirleme'
+title: 'Nasıl yapılır: Belirttiğiniz bir parametre'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function parameters
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
-ms.openlocfilehash: 8c3499a2916eda7ab96f7958df190c803206741e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 901257b92aaa5e13e6e79d612ca590b734e15881
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437096"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747491"
 ---
-# <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Bir out Parametresini Belirleme
+# <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Belirttiğiniz bir parametre
 
 Bu örnek, bir işlev parametresinin bir out parametresi olduğunu belirtmek nasıl ve bir C# programı bu işlevi çağırmak nasıl gösterir.
 
@@ -55,6 +55,6 @@ class TestClass {
 a string
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

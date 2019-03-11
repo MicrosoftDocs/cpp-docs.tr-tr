@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme'
+title: 'Nasıl yapılır: Yerel türlerde işleyicileri bildirme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - gcroot keyword [C++]
 - types [C++], declaring handles in
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-ms.openlocfilehash: 4b5cd212589be04f5f9f3a5dd6d4496a8f5add2c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5d6d31be9f3c10e1a56639ccf20663ce59d7941
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464936"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746016"
 ---
-# <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme
+# <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel türlerde işleyicileri bildirme
 
 Bir yerel tür içinde tanıtıcı türüne bildiremezsiniz. tür kullanımı uyumlu sarmalayıcı şablon Vcclr.h sağlar `gcroot` C++ yığınından bir CLR nesnesine başvurmak için. Bu şablon, sanal bir tanıtıcı yerel bir tür ekleme ve temel alınan türü değilmiş gibi ele almanız sağlar. Çoğu durumda, kullandığınız `gcroot` herhangi bir atama olmadan katıştırılmış tür olarak nesnesi. Bununla birlikte, [her, içinde](../dotnet/for-each-in.md), kullanmak zorunda `static_cast` temel yönetilen başvuru alınamıyor.
 
@@ -113,6 +113,6 @@ int main() {
 String in V: Hello
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

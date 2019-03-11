@@ -9,12 +9,12 @@ helpviewer_keywords:
 - .NET Framework [C++], serialization
 - serialization [C++], about serialization
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
-ms.openlocfilehash: 74810328d654787be46794a31d857eb3fd0731ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 794a71ae9a146b691ba6a4377a7fdf2c3ddd3501
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478149"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741396"
 ---
 # <a name="serialization-ccli"></a>Seri Hale Getirme (C++/CLI)
 
@@ -51,6 +51,6 @@ private:
 
 Her iki öznitelik, "kısa" adıyla başvurulabilir unutmayın (**Serializable** ve **getirilmemiş**). Bu daha ayrıntılı olarak açıklanmıştır [öznitelikleri uygulama](/dotnet/standard/attributes/applying-attributes).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .MODEL directive
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-ms.openlocfilehash: e72101d2d9cdea90b3304ccdb82e7b81fe2975d3
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c3917fea0f13e54d5f8f73599a2d28482bb6d259
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328558"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743941"
 ---
 # <a name="model"></a>.MODEL
 
@@ -89,4 +89,3 @@ end
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
-

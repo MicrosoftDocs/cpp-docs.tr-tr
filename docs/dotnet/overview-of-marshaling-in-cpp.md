@@ -1,5 +1,5 @@
 ---
-title: C++'da Hazırlamaya Genel Bakış
+title: C++'da Sıralamaya Genel Bakış
 ms.date: 06/28/2018
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - C++ Support Library, marshaling
 - marshaling, about marshaling
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
-ms.openlocfilehash: 9b4bdcb8a6e691d8f9f0f0f0c2e7d852b4885ea6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e3b8f561ce6609eb2afedb527a16c4803f69c53
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486287"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746831"
 ---
-# <a name="overview-of-marshaling-in-c"></a>C++'da Hazırlamaya Genel Bakış
+# <a name="overview-of-marshaling-in-c"></a>C++'da Sıralamaya Genel Bakış
 
 Karma modda bazen verilerinizi yerel ve yönetilen türleri sıralamanız gerekir. Visual Studio 2008 ile sunulan *sıralama kitaplığı* yardımcı olmak için yönlendirmeyi ve basit bir şekilde veri dönüştürme.  Sıralama Kitaplığı işlevler bir dizi oluşur ve `marshal_context` hazırlama gerçekleştirmek için genel türleri sınıf. Kitaplık bu üstbilgisinde tanımlanır **dahil msclr** dizin, Visual Studio sürümü için:
 
@@ -56,8 +56,8 @@ Sıralama kitaplığı ile veya olmadan kullanabilirsiniz bir [; marshal_context
 |Std::wstring|System::String ^|marshal_as|marshal_cppstd.h|
 |System::String ^|CStringT\<char >|marshal_as|marshal_atl.h|
 |CStringT\<char >|System::String ^|marshal_as|marshal_atl.h|
-|System::String ^|CStringT < wchar_t >|marshal_as|marshal_atl.h|
-|CStringT < wchar_t >|System::String ^|marshal_as|marshal_atl.h|
+|System::String ^|CStringT<wchar_t>|marshal_as|marshal_atl.h|
+|CStringT<wchar_t>|System::String ^|marshal_as|marshal_atl.h|
 |System::String ^|CComBSTR|marshal_as|marshal_atl.h|
 |CComBSTR|System::String ^|marshal_as|marshal_atl.h|
 
@@ -70,11 +70,11 @@ Bu örnek, bir dahil etme üstbilgi bildiriminde msclr dizin içerecek şekilde 
 
 `#include "msclr\marshal_cppstd.h"`
 
-Sıralama Kitaplığı genişletilebilir, böylelikle kendi sıralama türlerini ekleyebilirsiniz. Hazırlama kitaplığını genişletme hakkında daha fazla bilgi için bkz. [nasıl yapılır: hazırlama kitaplığını genişletme](../dotnet/how-to-extend-the-marshaling-library.md).
+Sıralama Kitaplığı genişletilebilir, böylelikle kendi sıralama türlerini ekleyebilirsiniz. Hazırlama kitaplığını genişletme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Hazırlama kitaplığını genişletme](../dotnet/how-to-extend-the-marshaling-library.md).
 
 Önceki sürümlerde, verileri kullanarak sıralama [Platform Çağırma](/dotnet/framework/interop/consuming-unmanaged-dll-functions). Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../dotnet/calling-native-functions-from-managed-code.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Support Library](../dotnet/cpp-support-library.md)<br/>
 [Nasıl yapılır: Hazırlama Kitaplığını Genişletme](../dotnet/how-to-extend-the-marshaling-library.md)

@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-ms.openlocfilehash: 9564904fa77ae6a7355119e83bdfa3ac65a4050c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebda6f179c365aaa009eb45425a36058105def10
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560842"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743439"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView Sınıfı
 
@@ -71,7 +71,7 @@ UnorderedMapView olan somut bir C++ uygulaması [Windows::Foundation::Collection
 
 ## <a name="first"></a>  UnorderedMapView::First yöntemi
 
-İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) sıralanmamış eşleme öğesi.
+İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) sıralanmamış eşleme öğesi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -101,7 +101,7 @@ bool HasKey(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Öğeyi bulmak için kullanılan anahtar. Türünü `key` TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -120,7 +120,7 @@ V Lookup(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*<br/>
+*anahtar*<br/>
 Bir öğe içinde UnorderedMapView bulmak için kullanılan anahtar. Türünü `key` TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,7 +129,7 @@ Bir öğe içinde UnorderedMapView bulmak için kullanılan anahtar. Türünü `
 
 ## <a name="size"></a>  UnorderedMapView::Size yöntemi
 
-Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView öğeleri.
+Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) UnorderedMapView öğeleri.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -239,7 +239,7 @@ UnorderedMapView başlatmak için kullanılan öğelerin bir aralıktaki ilk ö�
 *Son*<br/>
 İlk öğenin UnorderedMapView başlatmak için kullanılan öğelerin bir aralığını sonra bir giriş yineleyici.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)<br/>
 [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)

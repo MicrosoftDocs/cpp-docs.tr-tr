@@ -5,12 +5,12 @@ helpviewer_keywords:
 - _nolock functions
 - nolock functions
 ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
-ms.openlocfilehash: 149c93c2488ae2b113af397c9e216aa1aeb4c6ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7bd0592fb8dc43307a902714723d1b1e43207d1c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551254"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746415"
 ---
 # <a name="nolock-functions"></a>_nolock İşlevleri
 
@@ -54,7 +54,7 @@ _Nolock işlevleri, yalnızca programınız gerçekten tek iş parçacıklı olu
 
 [_ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

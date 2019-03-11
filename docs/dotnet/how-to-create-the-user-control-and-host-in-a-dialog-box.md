@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl yapılır: İletişim Kutusunda Kullanıcı Denetimi Ve Konak Oluşturma'
+title: 'Nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: 03a53032-2f03-4fa2-b567-031615a26011
-ms.openlocfilehash: ccb7219b9c7b3a64da61a77097b147424a92a701
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdf7e2f4961a16e6538c7bbcc690ef44ba87fcaf
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650001"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751498"
 ---
-# <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>Nasıl yapılır: İletişim Kutusunda Kullanıcı Denetimi Ve Konak Oluşturma
+# <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>Nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma
 
 Bu makaledeki adımlar iletişime dayalı oluşturduğunuzu varsayar ([CDialog sınıfı](../mfc/reference/cdialog-class.md)) Microsoft Foundation Classes (MFC) projesi, ancak aynı zamanda desteği ekleyebilirsiniz bir Windows Forms denetimi varolan bir MFC iletişim kutusu.
 
@@ -115,6 +115,6 @@ Bu makaledeki adımlar iletişime dayalı oluşturduğunuzu varsayar ([CDialog s
 
    Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**. MFC iletişim kutusu Windows Forms denetimlerini görüntülemelidir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)

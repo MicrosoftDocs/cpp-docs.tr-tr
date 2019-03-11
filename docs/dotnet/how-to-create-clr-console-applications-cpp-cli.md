@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)'
+title: 'Nasıl yapılır: CLR konsol uygulamaları oluşturma (C + +/ CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - console applications, templates
 - CLR console applications, project template
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-ms.openlocfilehash: fa45578b1e773e954fe692bd1c49e311626c35de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d325bdc4122d85383ecaa49ca41c7709be869463
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525686"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747910"
 ---
-# <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)
+# <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR konsol uygulamaları oluşturma (C + +/ CLI)
 
 Konsol uygulaması şablonu, temel proje başvuruları ve dosyalarını zaten bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.
 
@@ -22,7 +22,7 @@ Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, o
 
 - Bu .NET Framework ad alanlarına başvurular:
 
-   - [Sistem](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)— temel sınıfları içerir ve yaygın olarak tanımladığınız temel sınıflar kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işleme özel durumlar.
+   - <xref:System.AppDomainManager>— Temel sınıfları ve yaygın olarak kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işleme özel durum tanımlayan temel sınıfları içerir.
 
    - mscorlib — derleme DLL, .NET Framework için geliştirmeyi destekler.
 
@@ -60,7 +60,6 @@ Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, o
 
 1. Seçin **Tamam** düğmesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CLR projeleri](../ide/files-created-for-clr-projects.md)
-

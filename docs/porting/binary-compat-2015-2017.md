@@ -4,12 +4,12 @@ ms.date: 09/24/2018
 helpviewer_keywords:
 - binary compatibility, Visual C++
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
-ms.openlocfilehash: e526002bdca0eee122531f39c195aef3474cc61c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: d0291ef75bda2e4da994e40ad55d94ae1042e57e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329832"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740512"
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015 ve Visual Studio 2017 arasındaki C++ ikili uyumluluğu
 
@@ -21,6 +21,6 @@ Bu kural için iki istisna mevcuttur. Bu gibi durumlarda ikili uyumluluğu garan
 
 2. Sürümü derlemek ve uygulamayı bağlamak için kullanılan araç kümesini büyük bir araç takımı ile oluşturulmuş kitaplıkları tüketildiğinde. Örneğin, derlenmiş ve 19.12 derleyici sürümü ile ilişkili olan bir program ile 19.0 yukarı 19.12 ile derlenen kitaplıkları kullanabilir. Ayrıca, Visual Studio 2015 ve Visual Studio 2017 arasında ikili uyumluluğu yalnızca var; Visual Studio 2013 veya önceki üretilen kitaplıklarıyla 19.x programları bağlama desteklenmiyor.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)

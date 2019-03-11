@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma'
+title: 'Nasıl yapılır: Diziler kullanmak C + +/ CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
-ms.openlocfilehash: e38e15cffbf623f629f57243923ddae273801bfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3043a277ddca41bc6519d6f127f8a98c07c418d2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596254"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747546"
 ---
-# <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma
+# <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: Diziler kullanmak C + +/ CLI
 
 Bu makalede dizileri kullanma C + +/ CLI.
 
@@ -503,7 +503,7 @@ int main() {
 
 Standart C++ dizilerden farklı olarak yönetilen diziler dolaylı olarak, ortak davranışını devralan bir dizi temel sınıfından türetilir. Bir örnek `Sort` herhangi bir dizideki öğeleri sıralamak için kullanılan yöntem.
 
-Temel gerçek türler içeren diziler için çağırabilirsiniz `Sort` yöntemi. Sıralama ölçütü geçersiz kılabilir ve için karmaşık tür dizilerini sıralama yapmak istediğinizde bunu yaparsanız bu nedenle gereklidir. Bu durumda, dizi öğe türü uygulamalıdır [IComparable::CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) yöntemi.
+Temel gerçek türler içeren diziler için çağırabilirsiniz `Sort` yöntemi. Sıralama ölçütü geçersiz kılabilir ve için karmaşık tür dizilerini sıralama yapmak istediğinizde bunu yaparsanız bu nedenle gereklidir. Bu durumda, dizi öğe türü uygulamalıdır <xref:System.IComparable.CompareTo%2A> yöntemi.
 
 ```cpp
 // array_sort.cpp
@@ -520,7 +520,7 @@ int main() {
 
 ## <a name="sorting-arrays-by-using-custom-criteria"></a>Özel ölçütler kullanarak dizileri sıralama
 
-Temel gerçek türler içeren dizileri sıralamak için çağrı `Array::Sort` yöntemi. Ancak, karmaşık türler içeren veya varsayılan sıralama ölçütleri geçersiz kılmak için geçersiz sıralama dizilerine [IComparable::CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) yöntemi.
+Temel gerçek türler içeren dizileri sıralamak için çağrı `Array::Sort` yöntemi. Ancak, karmaşık türler içeren veya varsayılan sıralama ölçütleri geçersiz kılmak için geçersiz sıralama dizilerine <xref:System.IComparable.CompareTo%2A> yöntemi.
 
 Aşağıdaki örnekte, bir yapı adlı `Element` türetilir <xref:System.IComparable>ve sağlamak yazılan bir <xref:System.IComparable.CompareTo%2A> iki tamsayı ortalama sıralama ölçütü kullanan yöntemi.
 
@@ -618,6 +618,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Diziler](../windows/arrays-cpp-component-extensions.md)

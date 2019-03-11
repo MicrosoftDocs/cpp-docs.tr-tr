@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - for each keyword [C++]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
-ms.openlocfilehash: 61ddf4f8dd4042f7be0b892b4fe239caa932a85e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5ee72e557c62e3db2eeb5dac4811133719183f6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532766"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746330"
 ---
 # <a name="for-each-in"></a>for each, in
 
@@ -31,7 +31,7 @@ Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*<br/>
+*type*<br/>
 Türünü `identifier`.
 
 *tanımlayıcı*<br/>
@@ -55,11 +55,11 @@ Daha fazla bilgi için:
 
 - [foreach Kullanarak Bir C++ Standart Kitaplığı Koleksiyonu Üzerinden Yineleme Yapma](../dotnet/iterating-over-stl-collection-by-using-for-each.md)
 
-- [Nasıl yapılır: foreach ile Diziler Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-arrays-with-for-each.md)
+- [Nasıl yapılır: İle diziler üzerinden foreach yineleme yapma](../dotnet/how-to-iterate-over-arrays-with-for-each.md)
 
-- [Nasıl yapılır: foreach ile Bir Genel Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)
+- [Nasıl yapılır: İle bir genel koleksiyon üzerinden foreach yineleme yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)
 
-- [Nasıl yapılır: foreach ile Kullanıcı Tanımlı Bir Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)
+- [Nasıl yapılır: İle kullanıcı tanımlı bir koleksiyon üzerinden foreach yineleme yapma](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -157,6 +157,6 @@ abcd
 Testing
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -4,12 +4,12 @@ ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 7758905f6db537260ec9e8b6e516bfa409e97ad2
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 4b64f79ea5a9566d2ad28216fbc5e736b622fe00
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809743"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740252"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımı veya belgeleri ile ilgili bir sorun bildirme
 
@@ -398,4 +398,3 @@ Gizliliğinizi korumak ve hassas bilgilerinizi genel görünümü dışında tut
 GitHub sorunları belgelerimizde bildirilen sorunları izlemek için kullanırız. Şimdi GitHub sorunları doğrudan bu sayede bir içerik sayfasından Yazıcılar ve ürün ekipleri ile çok daha zengin bir şekilde etkileşim oluşturabilirsiniz. Bir belge, hatalı kod örneği, karmaşık bir açıklama, kritik bir atlama veya bile yalnızca bir yazım yanlışı ile ilgili bir sorun görürseniz, kolayca bize bildirin. Seçin ve sayfayı kaydırın **belgeler hakkında geri bildirimde bulunmak için oturum açın**. Zaten yoksa, ancak bunu yaptığınızda, tüm bizim belgeleri sorunları, bunların durumunu görmek ve bildirdiğiniz sorun için değişiklik yapıldığında bildirim alma bir GitHub hesabı oluşturmanız gerekir. Daha fazla bilgi için [A yeni geri bildirim sistemi geliyor docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 Belge geri bildirim düğmesini kullanarak bir belge sorunu Github'da oluşturduğunuzda, sorunun nerede olduğunu biliyoruz. Bu nedenle sorun sorunu, oluşturulan sayfaya hakkında bazı bilgiler ile otomatik olarak doldurulur. Lütfen bu bilgileri düzenlemeyin. Yalnızca bir önerilen düzeltme yanlış ve isterseniz nedir hakkında ayrıntılı bilgi ekleyin. [Belgelerimizi açık kaynaklıdır](https://github.com/MicrosoftDocs/cpp-docs/), aslında bir düzeltme yapıp kendiniz önermek isterseniz, bunu yapabilirsiniz. Belgelerimize nasıl katkıda bulunabileceğinizi hakkında daha fazla bilgi için bkz. bizim [katkıda Kılavuzu](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) GitHub üzerinde.
-

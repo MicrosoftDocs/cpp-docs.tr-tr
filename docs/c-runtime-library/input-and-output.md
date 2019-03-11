@@ -10,12 +10,12 @@ helpviewer_keywords:
 - I/O [CRT], routines
 - output routines
 ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
-ms.openlocfilehash: 26d527f7afad544b051a2ad765af09c430782083
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2669ed3437fe0eea7dd648367feabe66ae6ed6d4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590391"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738522"
 ---
 # <a name="input-and-output"></a>Girdi ve Çıktı
 
@@ -30,6 +30,6 @@ G/ç işlevleri okuyup veri için dosyaları ve cihazlardan yazma. Dosya g/ç i�
    > [!NOTE]
    > Bu iki tür işlev, genellikle akışı işlevleri arabelleğe ve düşük düzeyli işlevleri değildir çünkü uyumsuzdur. Belirli bir dosya işlenmeden için akış ya da düşük düzeyli işlevleri özel olarak kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

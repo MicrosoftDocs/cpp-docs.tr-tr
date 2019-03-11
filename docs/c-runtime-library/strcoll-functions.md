@@ -17,12 +17,12 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-ms.openlocfilehash: c6b4b45184ea4cc3320f3de069884ac084c7cfcd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2acfaafbe15f065dbac924ce72a5ca3a5275537b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450238"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751394"
 ---
 # <a name="strcoll-functions"></a>strcoll İşlevleri
 
@@ -47,7 +47,7 @@ Bazı kod sayfaları ve ilgili karakter kümeleri için karakter kümesindeki ka
 
 Çünkü `coll` işlevleri ise dizeleri karşılaştırma için sözlüksel olarak collate `cmp` işlevleri yalnızca dize eşitliği test `coll` işlevleri karşılık gelen daha yavaş `cmp` sürümleri. Bu nedenle, `coll` yalnızca mevcut kod sayfasında karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda ve bu fark dize karşılaştırması için ilgilendirir İşlevler'in kullanılması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [locale](../c-runtime-library/locale.md)<br/>
 [Dize düzenlemesi](../c-runtime-library/string-manipulation-crt.md)<br/>

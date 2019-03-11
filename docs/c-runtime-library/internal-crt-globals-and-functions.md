@@ -848,12 +848,12 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 291d509315a6825cd6b4e56c8bfe095f0149be4e
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 462b9d80b61b8bda3afc5aec4d819e355adbbbd7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211075"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746818"
 ---
 # <a name="internal-crt-globals-and-functions"></a>İç CRT genel değişkenleri ve işlevleri
 
@@ -1188,6 +1188,6 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_Xbad_alloc|
 |_Xlength_error|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

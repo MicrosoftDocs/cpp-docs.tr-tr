@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IBoxArray
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-ms.openlocfilehash: a35a8b7d9f23bcb624755353e27e52de4b873c5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea2517ad64cfd6742ef072d24e94a9b3899cea2d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497050"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747105"
 ---
 # <a name="platformiboxarray-interface"></a>Platform::ıboxarray arabirimi
 
@@ -66,6 +66,6 @@ Bu nesnesinde depolanan değeri döndürür.
 
 Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

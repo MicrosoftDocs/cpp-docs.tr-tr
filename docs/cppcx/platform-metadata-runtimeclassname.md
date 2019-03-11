@@ -8,12 +8,12 @@ helpviewer_keywords:
 - RuntimeClassName
 - Platform::Metadata::RuntimeClassName
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
-ms.openlocfilehash: 09641f55e27ab00fc941d85d4d09d6a7784e2d8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3de753c3a8897058333e02ce4294a0780d5b818
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668279"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738563"
 ---
 # <a name="platformmetadataruntimeclassname"></a>Platform::Metadata::RuntimeClassName
 
@@ -66,6 +66,6 @@ namespace Test
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform::Metadata Ad Alanı](../cppcx/platform-metadata-namespace.md)

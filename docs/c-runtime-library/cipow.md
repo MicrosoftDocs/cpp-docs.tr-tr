@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CIpow intrinsic
 - _CIpow intrinsic
 ms.assetid: 477aaf0c-ac58-4252-89dd-9f3e35d47536
-ms.openlocfilehash: 2fa3fd415ac76f42e4c01153783d0d1e3adb586a
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 0131a813f43f2d18b5d66313cd368a911fd1fbbe
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703252"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741998"
 ---
 # <a name="cipow"></a>_CIpow
 
@@ -47,7 +47,7 @@ Sonuç değerini yığın üstüne itilir.
 
 **Platform:** x86
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)

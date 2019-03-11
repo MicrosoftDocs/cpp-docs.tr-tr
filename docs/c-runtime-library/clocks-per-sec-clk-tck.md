@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CLOCKS_PER_SEC
 - CLK_TCK constant
 ms.assetid: bc285106-383d-44cb-91bf-276ad7de57bf
-ms.openlocfilehash: a604425809f43be238cbcc7b9148782bb937e00f
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: eef065ac4fcedf13f3a5d54d4df0563fd04ef965
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220367"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750682"
 ---
 # <a name="clockspersec-clktck"></a>CLOCKS_PER_SEC, CLK_TCK
 
@@ -27,7 +27,7 @@ ms.locfileid: "54220367"
 
 Tarafından döndürülen değeri saniye cinsinden süredir `clock` işlevi, bölü `CLOCKS_PER_SEC`. `CLK_TCK` ancak eski olarak kabul, eşdeğerdir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [clock](../c-runtime-library/reference/clock.md)<br/>
 [Global Sabitler](../c-runtime-library/global-constants.md)

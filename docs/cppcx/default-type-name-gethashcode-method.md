@@ -4,12 +4,12 @@ ms.date: 12/30/2016
 f1_keywords:
 - VCCORLIB/Platform::Object::GetHashCode
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5
-ms.openlocfilehash: 4d70140091779904965ac8c3a55973c41d69e780
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 427756e8e87162738bd2297f1f6edc5af8d7b194
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650859"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739320"
 ---
 # <a name="defaulttypenamegethashcode-method"></a>Varsayılan:: (type_name):: GetHashCode metodu
 
@@ -27,7 +27,7 @@ Bu örneğin karma kodu.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
@@ -35,6 +35,6 @@ Bu örneğin karma kodu.
 
 **Başlık:** vccorlib.h
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Varsayılan Ad Alanı](../cppcx/default-namespace.md)

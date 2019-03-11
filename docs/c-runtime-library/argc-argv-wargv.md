@@ -17,12 +17,12 @@ helpviewer_keywords:
 - __wargv
 - __argc
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
-ms.openlocfilehash: de0c4783b30764350eea35007583c1481ab01024
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f428d81215193361a409473a411eb5c4d91fa997
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575324"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743304"
 ---
 # <a name="argc-argv-wargv"></a>__argc, __argv, __wargv
 
@@ -52,12 +52,12 @@ Kullanmak için geçirilen bağımsız değişkenler tavsiye ederiz taşınabili
 
 |Genel değişkeni|Gerekli başlık|
 |---------------------|---------------------|
-|`__argc`, `__argv`, `__wargv`|\<stdlib.h >, \<cstdlib > (C++)|
+|`__argc`, `__argv`, `__wargv`|\<stdlib.h>, \<cstdlib> (C++)|
 
 `__argc`, `__argv`, ve `__wargv` Microsoft uzantılarıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
-[main: Program Başlatma](../cpp/main-program-startup.md)<br/>
+[Ana: Program başlatma](../cpp/main-program-startup.md)<br/>
 [main Yerine wmain Kullanma](../cpp/using-wmain-instead-of-main.md)

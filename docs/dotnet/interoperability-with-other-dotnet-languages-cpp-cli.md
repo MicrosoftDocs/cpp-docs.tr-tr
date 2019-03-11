@@ -9,12 +9,12 @@ helpviewer_keywords:
 - lock statement
 - lock C# keyword [C++]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
-ms.openlocfilehash: bfc220852563d8c8f96108e05344c507b63875ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ffdf9a8b11912bde38e15408228670c8cff9a503
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581406"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741734"
 ---
 # <a name="interoperability-with-other-net-languages-ccli"></a>Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)
 
@@ -184,6 +184,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

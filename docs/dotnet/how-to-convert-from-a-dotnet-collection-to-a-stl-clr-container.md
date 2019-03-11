@@ -1,18 +1,18 @@
 ---
-title: 'Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme'
+title: 'Nasıl yapılır: Bir .NET koleksiyonundan STL/CLR kapsayıcısına dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR, converting from .NET collections
 - STL/CLR Containers [STL/CLR]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-ms.openlocfilehash: 39c2beda6ae95783a2a29134013d6f01288a29b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 836623f6d539b7b28765763a3dc36d477f8c1499
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431154"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741689"
 ---
-# <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
+# <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET koleksiyonundan STL/CLR kapsayıcısına dönüştürme
 
 Bu konuda, .NET koleksiyonlar, eşdeğer bir STL/CLR kapsayıcıları için dönüştürme gösterilmektedir. Örneğin bir .NET nasıl dönüştürme yapılacağını göstereceğiz <xref:System.Collections.Generic.List%601> bir STL/CLR için [vektör](../dotnet/vector-stl-clr.md) ve bir .NET dönüştürme <xref:System.Collections.Generic.Dictionary%602> bir STL/CLR için [harita](../dotnet/map-stl-clr.md), ancak tüm koleksiyonlar ve kapsayıcılar için benzer bir yordamdır .
 
@@ -128,8 +128,8 @@ Key: 42.00 Value: 42
 Key: 74.00 Value: 74
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
 [bağdaştırıcı (STL/CLR)](../dotnet/adapter-stl-clr.md)<br/>
-[Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme](../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md)
+[Nasıl yapılır: STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme](../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md)

@@ -2,12 +2,12 @@
 title: Dizi ve WriteOnlyArray (C + +/ CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: b957e7d34486aced4796a029ebfdfa710dc71fcc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd616487bd3c11544f12e84a7dc64f41e63d501a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530201"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739420"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C + +/ CX)
 
@@ -79,15 +79,15 @@ Windows çalışma zamanı tür sistemi, düzensiz diziler kavramını desteklem
 
 Burada veri geçirilen ABI arasında bazı senaryolarda bir [Platform::Array](../cppcx/platform-array-class.md)ve sonuçta bu verimlilik için bir C tarzı dizi verilerini işlemek istiyorsanız, kullanabileceğiniz [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) Ek kopyalama işlemi önlemek için. Gönderdiğinizde bir [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) bağımsız değişken alan bir parametre olarak bir `Platform::Array`, `ArrayReference` verilerin belirttiğiniz doğrudan bir C tarzı dizi içine depolar. Yalnızca unutmayın, `ArrayReference` kilit kaynak veri serileştirilmesini, verileri değiştiren veya çağrı tamamlanmadan önce başka bir iş parçacığında silindi, sonuçlar tanımsız olup olmayacağını.
 
-Aşağıdaki kod parçacığı, sonuçları kopyalamak gösterilmiştir bir [DataReader](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) işlemi bir `Platform::Array` (normal desenin) ve ardından yerine nasıl `ArrayReference` verileri doğrudan C stili diziye kopyalamak için:
+Aşağıdaki kod parçacığı, sonuçları kopyalamak gösterilmiştir bir [DataReader](/uwp/api/Windows.Storage.Streams.DataReader) işlemi bir `Platform::Array` (normal desenin) ve ardından yerine nasıl `ArrayReference` verileri doğrudan C stili diziye kopyalamak için:
 
 [!code-cpp[cx_arrays#07](../cppcx/codesnippet/CPP/js-array/class1.h#07)]
 
 ## <a name="avoid-exposing-an-array-as-a-property"></a>Bir dizi özellik olarak kullanıma sunma kaçının
 
-Genel olarak kullanıma sunma kaçınmalısınız bir `Platform::Array` türü bir başvuru sınıfının bir özellik olarak bile istemci kodunu yalnızca tek bir öğeye erişmeye çalıştığı sırada tüm dizi döndürdüğünden. Sıralı kapsayıcı ortak başvuru sınıfı, bir özellik olarak kullanıma sunmak ihtiyaç duyduğunuzda [Windows::Foundation::IVector](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) daha iyi bir seçimdir. (Bu meta verileri yayımlanmayan) API'leri, özel veya iç gibi standart bir C++ kapsayıcı kullanmayı düşünün [std::vector](../standard-library/vector-class.md).
+Genel olarak kullanıma sunma kaçınmalısınız bir `Platform::Array` türü bir başvuru sınıfının bir özellik olarak bile istemci kodunu yalnızca tek bir öğeye erişmeye çalıştığı sırada tüm dizi döndürdüğünden. Sıralı kapsayıcı ortak başvuru sınıfı, bir özellik olarak kullanıma sunmak ihtiyaç duyduğunuzda [Windows::Foundation::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) daha iyi bir seçimdir. (Bu meta verileri yayımlanmayan) API'leri, özel veya iç gibi standart bir C++ kapsayıcı kullanmayı düşünün [std::vector](../standard-library/vector-class.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>

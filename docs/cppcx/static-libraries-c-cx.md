@@ -2,12 +2,12 @@
 title: Statik kitaplıklar (C + +/ CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: 4c423f9e59b7597782acfa4c98db3c9bff747098
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 242ba10b29a8efe0c3e9580f1d0d0c3be529a7d2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437976"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738939"
 ---
 # <a name="static-libraries-ccx"></a>Statik kitaplıklar (C + +/ CX)
 
@@ -31,6 +31,6 @@ Genel oluşturan bir statik kitaplık kazanabilirsiniz `ref` sınıfları, ortak
 
 Yalnızca statik kitaplık kitaplık dışında kullanılan Windows çalışma zamanı bileşenleri vermiyor, uyarıyı güvenle yoksayabilirsiniz. Kitaplık tanımlayan bir bileşen kullanmaz, tür bilgilerini ortak meta veriler içeriyor olsa bile ardından bağlayıcı hemen uygulama en iyi duruma getirebilirsiniz. Başka bir deyişle, statik kitaplıkta ortak bileşenler derleyeceği fakat çalışma zamanında etkinleştirmez. Bu nedenle, bir dinamik bağlantı kitaplığı (DLL) tüketim için hazırlanmış herhangi bir Windows çalışma zamanı bileşeni tarafından diğer bileşenler veya uygulamaları uygulanmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [İş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md)

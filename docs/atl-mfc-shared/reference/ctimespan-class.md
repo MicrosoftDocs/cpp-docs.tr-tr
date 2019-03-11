@@ -1,5 +1,5 @@
 ---
-title: CTimeSpan sınıfı
+title: CTimeSpan Class
 ms.date: 10/18/2018
 f1_keywords:
 - CTimeSpan
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-ms.openlocfilehash: 6ab22b9a093a1aa9c8ae0249c036ea2bf89065f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c80260c1f57e49a34b4e9f3331f4d0d69ab30ce
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641878"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752330"
 ---
-# <a name="ctimespan-class"></a>CTimeSpan sınıfı
+# <a name="ctimespan-class"></a>CTimeSpan Class
 
 Bir zaman aralığı saniye sayısı olarak dahili olarak depolanan bir zaman miktarı.
 
@@ -104,7 +104,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -345,7 +345,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 Eklenecek değer `CTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -371,7 +371,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*<br/>
+*span*<br/>
 Eklenecek değer `CTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -406,7 +406,7 @@ CArchive& Serialize64(CArchive& ar);
 
 Güncelleştirilmiş `CArchive` nesne.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
 [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
@@ -416,4 +416,3 @@ Güncelleştirilmiş `CArchive` nesne.
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

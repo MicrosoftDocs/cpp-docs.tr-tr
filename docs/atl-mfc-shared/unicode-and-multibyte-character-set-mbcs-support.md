@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: 8a7f79f9a75c2be4ee855d89b47b6b8e59a67d15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59e8759ffbe61b80c74d8b5aba5bc50886d6b23d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596657"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743915"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 
@@ -35,7 +35,7 @@ Bu kitaplık, hata ayıklayıcı ve DLL dosyaları MFC'de Unicode desteklemek i�
 
 |||||
 |-|-|-|-|
-|UAFXCW.LIB|UAFXCW. PDB|UAFXCWD.LIB|UAFXCWD. PDB|
+|UAFXCW.LIB|UAFXCW.PDB|UAFXCWD.LIB|UAFXCWD.PDB|
 |MFC*sürüm*U.LIB|MFC*sürüm*U.PDB|MFC*sürüm*U.DLL|MFC*sürüm*UD. LIB|
 |MFC*sürüm*UD. PDB|MFC*sürüm*UD. DLL|MFCS*sürüm*U.LIB|MFCS*sürüm*U.PDB|
 |MFCS*sürüm*UD. LIB|MFCS*sürüm*UD. PDB|MFCM*sürüm*U.LIB|MFCM*sürüm*U.PDB|
@@ -93,7 +93,7 @@ Genel metin işlevini eşlemeleri tüm çalışma zamanı dize işleme rutinleri
 
 Benzer şekilde, `CString` yöntemleri, genel veri türü eşlemeleri kullanılarak uygulanır. MFC MBCS ve Unicode hem etkinleştirmek için TCHAR için kullandığı **char** veya `wchar_t`, LPTSTR için **char** <strong>\*</strong> veya `wchar_t*`ve LPCTSTR için**const char** <strong>\*</strong> veya `const wchar_t*`. Bunlar MBCS veya Unicode için doğru eşlemeleri emin olun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [Dize düzenlemesi](../c-runtime-library/string-manipulation-crt.md)
