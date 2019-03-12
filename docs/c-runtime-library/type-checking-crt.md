@@ -8,12 +8,12 @@ helpviewer_keywords:
 - variable argument functions
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-ms.openlocfilehash: fd892426bb7301acad7ce2a93430e52f25e7c9b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb5aecc2b47aa8e88666f42d8022395bf99fd85e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626120"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747689"
 ---
 # <a name="type-checking-crt"></a>Tür Denetleme (CRT)
 
@@ -31,6 +31,6 @@ Derleyici, sınırlı tür, değişken sayıda bağımsız değişken şu şekil
 
 Derleyici, bu işlevlerin geniş karakter karşılıkları üzerinde aynı sınırlı tür gerçekleştirir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
