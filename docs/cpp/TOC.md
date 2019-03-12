@@ -17,7 +17,7 @@
 ### [Dize ve G-Ç Biçimlendirme (Modern C++)](string-and-i-o-formatting-modern-cpp.md)
 ### [Hatalar ve Özel Durum İşleme (Modern C++)](errors-and-exception-handling-modern-cpp.md)
 #### [Nasıl yapılır: Özel Durum Güvenliği Tasarımı](how-to-design-for-exception-safety.md)
-#### [Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](how-to-interface-between-exceptional-and-non-exceptional-code.md)
+#### [Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasındaki Arabirim](how-to-interface-between-exceptional-and-non-exceptional-code.md)
 ### [ABI Sınırlarında Taşınabilirlik (Modern C++)](portability-at-abi-boundaries-modern-cpp.md)
 ## [Sözcük Temelli Kurallar](lexical-conventions.md)
 ### [Dosya Çevirisine Genel Bakış](overview-of-file-translation.md)
@@ -416,4 +416,3 @@
 ## [Microsoft Uzantıları](microsoft-extensions.md)
 ## [Standart Olmayan Davranış](nonstandard-behavior.md)
 ### [Derleyici Sınırları](compiler-limits.md)
-
