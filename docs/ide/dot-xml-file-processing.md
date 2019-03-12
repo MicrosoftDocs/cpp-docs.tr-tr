@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-ms.openlocfilehash: bc9aa57ffd68630d0a4209f8f8611882f8f36fc3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 75b58b7ce2b5c96e853c99f0827ee4de605a6f3d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524176"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748482"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 
@@ -27,7 +27,7 @@ Kimlik dizeleri oluşturduğunda, derleyici aşağıdaki kurallar gözlemler:
   |---------------|-----------------|
   | N | ad alanı<br /><br /> Belge açıklamaları için bir ad alanı ekleyemezsiniz, bir ad alanı başvurularını cref mümkündür. |
   | T | Tür: sınıf, arabirim, yapı, enum, temsilci |
-  | D | typedef |
+  | D |  typedef |
   | F | alan |
   | P | özellik (dizin oluşturucular veya diğer dizin oluşturulmuş özellikleri dahil) |
   | M | (tür özel yöntemler olarak Oluşturucular, işleçler ve diğerleri dahil) yöntemi |
@@ -178,6 +178,6 @@ namespace N {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)
