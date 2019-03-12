@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme'
+title: 'Nasıl yapılır: Görüntüyü yerel veya CLR olup olmadığını belirler'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - /clr compiler option [C++], detecting use in compilation
 - common language runtime, /clr compiler option
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
-ms.openlocfilehash: ad8603827f5d1c951411403a62f8ffff58bfca88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 541581e0f172c8ce2601e2e476ccd03a49757f80
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637404"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747235"
 ---
-# <a name="how-to-determine-if-an-image-is-native-or-clr"></a>Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme
+# <a name="how-to-determine-if-an-image-is-native-or-clr"></a>Nasıl yapılır: Görüntüyü yerel veya CLR olup olmadığını belirler
 
 Ortak dil çalışma zamanı kullanmak için görüntünün yapılıp yapılmadığını belirlemek için tek yönlü **dumpbin**[/CLRHEADER](../build/reference/clrheader.md).
 
@@ -81,6 +81,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: 9350d94fdff615056fca193d654b2bb001d78d72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86a535bc106e17b276dc5f42a59773aa0de8c361
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471207"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749287"
 ---
 # <a name="platformagile-class"></a>Platform::Agile sınıfı
 
@@ -74,11 +74,11 @@ Windows çalışma zamanı sınıflar Çevik çoğu. Çevik bir nesne çağırab
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Desteklenen en düşük istemci:** Windows 8
+**En düşük desteklenen istemci:** Windows 8
 
 **Sunucu desteklenen en düşük:** Windows Server 2012
 
-**Namespace:** platformu
+**Namespace:** Platform
 
 **Başlık:** agile.h
 
@@ -247,6 +247,6 @@ Atama işleci ilk sürümü geçerli Çevik nesnesine bir başvuru türü bir ta
 
 Atama işlemi, geçerli Çevik nesne bağlamı otomatik olarak devam ettirir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Platform Namespace](platform-namespace-c-cx.md)
