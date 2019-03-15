@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -IMPLIB linker option
 - import libraries, overriding default name
 ms.assetid: fe8f71ab-7055-41b5-8ef8-2b97cfa4a432
-ms.openlocfilehash: 268a091d3e0bc825acae96dafc5d92ffa11c7bc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc9a9220d55f7831a00f70ec155cc5b57a695818
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589587"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821319"
 ---
 # <a name="implib-name-import-library"></a>/IMPLIB (İçeri Aktarma Kitaplığını Adlandır)
 
@@ -32,15 +32,15 @@ ms.locfileid: "50589587"
 
 - [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak koddaki anahtar sözcüğü
 
-- [Dışarı aktarmalar](../../build/reference/exports.md) .def dosyası deyimi
+- [Dışarı aktarmalar](exports.md) .def dosyası deyimi
 
-- Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+- Bir [/dışarı aktarma](export-exports-a-function.md) bağlantı komut belirtimi
 
-İçeri aktarma kitaplığı değil oluşturulurken bağlantı /IMPLIB yok sayar. Hiçbir dışarı aktarma belirtilmezse, içeri aktarma kitaplığı bağlantı oluşturmaz. Bir dışarı aktarma dosyası derleme kullanılırsa, içeri aktarma kitaplığı zaten var ve bir oluşturmaz bağlantı varsayar. İçeri aktarma kitaplıkları ve dışarı aktarma dosyaları hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md).
+İçeri aktarma kitaplığı değil oluşturulurken bağlantı /IMPLIB yok sayar. Hiçbir dışarı aktarma belirtilmezse, içeri aktarma kitaplığı bağlantı oluşturmaz. Bir dışarı aktarma dosyası derleme kullanılırsa, içeri aktarma kitaplığı zaten var ve bir oluşturmaz bağlantı varsayar. İçeri aktarma kitaplıkları ve dışarı aktarma dosyaları hakkında daha fazla bilgi için bkz: [LIB başvurusu](lib-reference.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -52,7 +52,7 @@ ms.locfileid: "50589587"
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ImportLibrary%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

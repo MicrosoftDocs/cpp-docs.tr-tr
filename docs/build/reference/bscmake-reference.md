@@ -10,12 +10,12 @@ helpviewer_keywords:
 - bsc files, building
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-ms.openlocfilehash: 1f321d51d1b880ea634c835567767c528aca041b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4303e48e3d02f0f69b177e8a888157a6f90aaa89
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509480"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822359"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE Başvurusu
 
@@ -33,18 +33,18 @@ Programınızı geliştirme ortamı dışında oluşturuyorsanız, geçirebilece
 
 Bu bölüm şu konuları içerir:
 
-- [Gözatma Bilgileri Dosyası Derleme: Genel Bakış](../../build/reference/building-browse-information-files-overview.md)
+- [Göz Atma Bilgileri Dosyası Derleme: Genel Bakış](building-browse-information-files-overview.md)
 
-- [.Bsc dosyası derleme](../../build/reference/building-a-dot-bsc-file.md)
+- [.Bsc dosyası derleme](building-a-dot-bsc-file.md)
 
-- [BSCMAKE komut satırı](../../build/reference/bscmake-command-line.md)
+- [BSCMAKE komut satırı](bscmake-command-line.md)
 
-- [BSCMAKE komut dosyası](../../build/reference/bscmake-command-file-response-file.md)
+- [BSCMAKE komut dosyası](bscmake-command-file-response-file.md)
 
-- [BSCMAKE seçenekleri](../../build/reference/bscmake-options.md)
+- [BSCMAKE seçenekleri](bscmake-options.md)
 
-- [BSCMAKE çıkış kodları](../../build/reference/bscmake-exit-codes.md)
+- [BSCMAKE çıkış kodları](bscmake-exit-codes.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)

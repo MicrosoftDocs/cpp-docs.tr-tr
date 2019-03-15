@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - EXPORTS .def file statement
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
-ms.openlocfilehash: b12548bafa9a0c580c5976cd7c4c54d8726e5ace
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33b70c680bfc3db24f5326a2027fa9ec4740e3f2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435682"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814143"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -28,7 +28,7 @@ EXPORTS
 
 Bir dışarı aktarma için söz dizimi *tanımı* olan:
 
-> *GirişAdı*\[__=__*internal_name*|*other_module.exported_name*] \[ **\@** _sıralı_ \[ **NONAME**]] \[ \[ **özel**] | \[ **Veri**]]
+> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[**\@**_ordinal_ \[**NONAME**] ] \[ \[**PRIVATE**] | \[**DATA**] ]
 
 *GirişAdı* dışarı aktarmak istediğiniz işlev veya değişken adı. Bu gereklidir. Dll adı vermek istediğiniz adı farklıysa, dışarı aktarma'nın adı DLL'deki kullanarak belirtin *internal_name*. Örneğin, bir işlev, DLL dışarı aktarmaları `func1` ve çağrı yapanların olarak kullanmak istediğiniz `func2`, şunu belirtmeniz gerekir:
 
@@ -51,9 +51,9 @@ EXPORTS
    func2=other_module.#42
 ```
 
-Visual C++ derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, ya da düzenlenmiş adı kullanmalıdır *internal_name* veya dışarı aktarılan işlevleri kullanarak tanımladığınız `extern "C"` kaynak kodunda. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
+MSVC derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, ya da düzenlenmiş adı kullanmalıdır *internal_name* veya dışarı aktarılan işlevleri kullanarak tanımladığınız `extern "C"` kaynak kodunda. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
 
-Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [DUMPBIN](../../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../../build/reference/map-generate-mapfile.md) seçeneği. Düzenlenmiş adlar derleyici özgüdür. Düzenlenmiş adları dışa aktarmak istemiyorsanız. DEF dosyası için DLL'e yürütülebilir dosyalar derleyici aynı sürümünü kullanarak da oluşturulmalıdır. Bu çağrıyı düzenlenmiş adları dışarı aktarılan adlarının eşleştiğini sağlar. DEF dosyası.
+Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [DUMPBIN](dumpbin-reference.md) aracını veya bağlayıcı [/MAP](map-generate-mapfile.md) seçeneği. Düzenlenmiş adlar derleyici özgüdür. Düzenlenmiş adları dışa aktarmak istemiyorsanız. DEF dosyası için DLL'e yürütülebilir dosyalar derleyici aynı sürümünü kullanarak da oluşturulmalıdır. Bu çağrıyı düzenlenmiş adları dışarı aktarılan adlarının eşleştiğini sağlar. DEF dosyası.
 
 Kullanabileceğiniz \@ *sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna giden belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.
 
@@ -74,7 +74,7 @@ EXPORTS
 
 1. Bir `EXPORTS` deyiminde bir. DEF dosyası
 
-1. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+1. Bir [/dışarı aktarma](export-exports-a-function.md) bağlantı komut belirtimi
 
 1. A [yorum](../../preprocessor/comment-c-cpp.md) yönergesi, kaynak kodda, formun `#pragma comment(linker, "/export: definition ")`. Aşağıdaki örnek, bir işlev bildiriminden önce #pragma comment yönergesi gösterir. burada `PlainFuncName` ve adıdır ve `_PlainFuncName@4` işlev düzenlenmiş adı:
 
@@ -102,4 +102,4 @@ Dışarı aktardığınızda bir değişken DLL'den kullanarak bir. DEF dosyası
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)

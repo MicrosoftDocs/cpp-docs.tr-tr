@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -Oi compiler option [C++]
 - generate intrinsic functions compiler option [C++]
 ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
-ms.openlocfilehash: 1dc7f5f183e7dffb65c31ebb9bc47b30776b81e3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f3afedade6f99129c21069e5117daa4ceb616cc2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422123"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811894"
 ---
 # <a name="oi-generate-intrinsic-functions"></a>/Oi (İç İşlevler Üret)
 
@@ -41,7 +41,7 @@ Bkz: [iç](../../preprocessor/intrinsic.md) işlevleri üzerinde iç biçimlere 
 
 İç kayan nokta işlevleri değil giriş değerleri üzerinde herhangi bir özel denetimleri gerçekleştirmek ve bu nedenle kısıtlı giriş aralığındaki çalışma ve farklı bir özel durum işleme ve sınır koşullarından kitaplık yordamları aynı ada sahip. Gerçek iç biçimleri kullanarak gelir kaybı IEEE özel durum işleme ve kaybı `_matherr` ve `errno` işlevselliği; ikincisi ANSI uyumluluğu kaybı anlamına gelir. Ancak, iç biçimleri kayan noktaya yoğun programları hızlandırılabilir ve birçok programları için az pratik değerini uyumluluk sorunlarıdır.
 
-Kullanabileceğiniz [Za](../../build/reference/za-ze-disable-language-extensions.md) gerçek iç kayan nokta seçeneklerinin oluşturulmasını geçersiz kılmak için derleyici seçeneği. Bu durumda işlevler, bağımsız değişkenleri program yığınına döndürmek yerine doğrudan kayan nokta yongasına geçiren kitaplık yordamları olarak oluşturulur.
+Kullanabileceğiniz [Za](za-ze-disable-language-extensions.md) gerçek iç kayan nokta seçeneklerinin oluşturulmasını geçersiz kılmak için derleyici seçeneği. Bu durumda işlevler, bağımsız değişkenleri program yığınına döndürmek yerine doğrudan kayan nokta yongasına geçiren kitaplık yordamları olarak oluşturulur.
 
 **Son x86 belirli**
 
@@ -49,7 +49,7 @@ Ayrıca [iç](../../preprocessor/intrinsic.md) iç işlevler oluşturma veya [i�
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -63,7 +63,7 @@ Ayrıca [iç](../../preprocessor/intrinsic.md) iç işlevler oluşturma veya [i�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
 [Derleyici İç Bilgileri](../../intrinsics/compiler-intrinsics.md)

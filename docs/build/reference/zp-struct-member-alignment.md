@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: d1821d8dc5eab202a918893a1e7895151629b551
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: d30e61137fc5ff8f6a5501ac7815edafc18f7680
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627533"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807695"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Yapı Üyesi Hizalama)
 
@@ -24,7 +24,7 @@ Bir yapının üyelerine belleğe nasıl paketlenir denetler ve tüm yapıları 
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ZP**[**1**|**2**|**4**|**8** | **16**]
+> **/Zp**[**1**|**2**|**4**|**8**|**16**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -53,11 +53,11 @@ Ayrıca [paketi](../../preprocessor/pack.md) denetim yapısı paketleme için. H
 
 - [__unaligned](../../cpp/unaligned.md)
 
-- [Yapı hizalama örnekleri](../../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 belirli)
+- [/ALIGN (Bölüm Hizalama)](align-section-alignment.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **C/C++** > **kod oluşturma** özellik sayfası.
 
@@ -69,5 +69,5 @@ Ayrıca [paketi](../../preprocessor/pack.md) denetim yapısı paketleme için. H
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
-- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+- [MSVC derleyici seçenekleri](compiler-options.md)
+- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

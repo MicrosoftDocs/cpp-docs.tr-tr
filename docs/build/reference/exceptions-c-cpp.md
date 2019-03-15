@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 9c86d99b365994870b991967b6cab6e6ee5c5088
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f80b99943b103dcf90c05d59df3169e0e05d79f4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422994"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811673"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
 
@@ -41,8 +41,8 @@ Oluşturulan özel durum kodları şunlardır: standart VcppException (error_sev
 
 Ayrıca, yanlış BITS grAttrs alanında ayarlarsanız, özel durum ERROR_INVALID_PARAMETER oluşturulur. Bu, için tüm intents ve purposes, önemli istisnadır.
 
-Bkz: [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md) daha fazla bilgi için.
+Bkz: [yapı ve sabit tanımları](structure-and-constant-definitions.md) daha fazla bilgi için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)
+[Hata İşleme ve Bildirme](error-handling-and-notification.md)

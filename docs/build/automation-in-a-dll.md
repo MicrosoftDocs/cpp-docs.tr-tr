@@ -5,12 +5,12 @@ helpviewer_keywords:
 - DLLs [C++], Automation
 - Automation [C++], DLLs
 ms.assetid: 2728ecd1-14e2-4ae0-a946-e749e11dbb74
-ms.openlocfilehash: b9d4f7a71ceb384069fcbef6bf791f0c5fd1b933
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ac60c44348ea21f490cb312285ae88ac682cf7d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536545"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821254"
 ---
 # <a name="automation-in-a-dll"></a>DLL'de Otomasyon
 
@@ -30,6 +30,6 @@ MFC DLL Sihirbazı'nda Otomasyon seçeneğinin seçtiğinizde, sihirbaz, aşağ�
 
 - [Otomasyon Sunucuları](../mfc/automation-servers.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

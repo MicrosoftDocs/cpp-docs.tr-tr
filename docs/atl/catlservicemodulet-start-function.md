@@ -1,18 +1,15 @@
 ---
 title: CAtlServiceModuleT::Start işlevi
 ms.date: 11/04/2016
-f1_keywords:
-- CServiceModule.Start
-- CServiceModule::Start
 helpviewer_keywords:
 - Start method
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
-ms.openlocfilehash: 806cd8ec353e2111d249472fb9aa885e7548baab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 204d02a1122ee78b38850bedae5f98b1f338ab1d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265164"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816288"
 ---
 # <a name="catlservicemoduletstart-function"></a>CAtlServiceModuleT::Start işlevi
 

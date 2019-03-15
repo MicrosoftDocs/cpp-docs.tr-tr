@@ -21,12 +21,12 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-ms.openlocfilehash: 8eba665e34fc3b949283557461e33348106fd532
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c4f7e6edb020f5c8d2abf80f14df33e18a915c5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451525"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817471"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 
@@ -36,7 +36,7 @@ Bu seçenekler çağıran işlevin veya çağrılan işlevin çağrının sonund
 
 > **/Gd**<br/>
 > **Gr**<br/>
-> **/GV**<br/>
+> **/Gv**<br/>
 > **/GZ**<br/>
 
 ## <a name="remarks"></a>Açıklamalar
@@ -51,14 +51,14 @@ Bu seçenekler çağıran işlevin veya çağrılan işlevin çağrının sonund
 
 Değişken sayıda bağımsız değişkenler almayan işlevleri işaretlenmelidir `__cdecl`.
 
-**/Gd**, **GR**, **GV** ve **/Gz** ile uyumlu [/CLR: safe](../../build/reference/clr-common-language-runtime-compilation.md) veya   **/CLR: pure**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Gd**, **GR**, **GV** ve **/Gz** ile uyumlu [/CLR: safe](clr-common-language-runtime-compilation.md) veya   **/CLR: pure**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 > [!NOTE]
 > X86 için varsayılan olarak C++ üye işlevleri işlemci kullanan [__thiscall](../../cpp/thiscall.md).
 
 Tüm işlemciler için açıkça olarak işaretlenen bir üye işlev `__cdecl`, `__fastcall`, `__vectorcall`, veya `__stdcall` o mimaride yok sayılmıyorsa belirli çağrı kuralını kullanır. Değişken sayıda bağımsız değişken kullanan her zaman alan bir üye işlev `__cdecl` çağırma kuralı.
 
-Bu derleyici seçeneklerinin, C++ yöntemleri ve işlevlerinin ad düzenlemesi üzerine hiçbir etkisi. Olarak bildirilmedikleri sürece `extern "C"`, C++ yöntemleri ve işlevleri farklı bir ad dekorasyon düzeni kullanın. Daha fazla bilgi için [düzenlenmiş adlar](../../build/reference/decorated-names.md).
+Bu derleyici seçeneklerinin, C++ yöntemleri ve işlevlerinin ad düzenlemesi üzerine hiçbir etkisi. Olarak bildirilmedikleri sürece `extern "C"`, C++ yöntemleri ve işlevleri farklı bir ad dekorasyon düzeni kullanın. Daha fazla bilgi için [düzenlenmiş adlar](decorated-names.md).
 
 Çağırma kuralları hakkında daha fazla bilgi için bkz. [çağırma kuralları](../../cpp/calling-conventions.md).
 
@@ -66,7 +66,7 @@ Bu derleyici seçeneklerinin, C++ yöntemleri ve işlevlerinin ad düzenlemesi �
 
 X86 işlemcilerde, tüm işlev bağımsız değişkenleri Kalanlar yığın üzerinde sağdan sola. ARM ve x64 mimarilerinde, bazı bağımsız değişkenler kayıt tarafından geçirilir ve geri Kalanlar yığın üzerinde sağdan sola. Çağıran yordam, yığından bağımsız değişkenleri yığından açar.
 
-C'de, `__cdecl` kuralı kullanan bir işlev adı adlandırma öncesinde bir alt çizgi ( `_` ); durum çevirisi yapılmaz. Olarak bildirilmedikleri sürece `extern "C"`, C++ işlevleri farklı bir ad dekorasyon düzeni kullanır. Daha fazla bilgi için [düzenlenmiş adlar](../../build/reference/decorated-names.md).
+C'de, `__cdecl` kuralı kullanan bir işlev adı adlandırma öncesinde bir alt çizgi ( `_` ); durum çevirisi yapılmaz. Olarak bildirilmedikleri sürece `extern "C"`, C++ işlevleri farklı bir ad dekorasyon düzeni kullanır. Daha fazla bilgi için [düzenlenmiş adlar](decorated-names.md).
 
 ## <a name="fastcall-specifics"></a>__fastcall özellikleri
 
@@ -99,7 +99,7 @@ C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullan
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **C/C++** > **Gelişmiş** özellik sayfası.
 
@@ -111,5 +111,5 @@ C'de, `__vectorcall` adlandırma kuralı iki et işareti işlevi adından kullan
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
-- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+- [MSVC derleyici seçenekleri](compiler-options.md)
+- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

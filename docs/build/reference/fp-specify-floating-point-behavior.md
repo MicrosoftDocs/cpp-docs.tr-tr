@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: c571bf104fd7e8f6a287c3dd35c444d904b4b7e8
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 616efc0980c6ddadfee078dbe7a382372c5636ec
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894100"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818173"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/FP (kayan nokta davranışını belirt)
 
@@ -51,7 +51,7 @@ Altında **/FP: strict**, derleyici veren programın güvenli bir şekilde kayan
 
 #### <a name="fast"></a>Hızlı
 
-**Fast** yeniden sıralama, birleştirme veya kayan nokta kodunun hızını ve alanı iyileştirmek için kayan nokta işlemleri basitleştirmek derleyici seçeneği sağlar. Derleyici, atama deyimleri yuvarlama atlasa, yuvarlamasını veya işlev çağrıları. İşlemlerini yeniden sıralayabilir veya cebirsel dönüşümleri tür dönüştürmeleri garantileyebilirsiniz farklı yuvarlama davranışlara neden olsa bile, örneğin, ilişkilendirilebilir ve dağıtılabilir yasaları kullanarak gerçekleştirin olabilir. Bu gelişmiş iyileştirmesi nedeniyle, kayan nokta bazı hesaplamalar sonucunu diğer tarafından üretilen farklı **/FP** seçenekleri. Özel değerler (NaN, + sonsuz, - sonsuz,-0.0) yayılmayacak ya da kesinlikle IEEE 754 standardına göre davranır. Kayan nokta kısaltmalar altında oluşturulabilir **Fast**. Temel alınan mimarisinde altında tarafından derleyici hala bağlı **Fast**, ve ek iyileştirmeler aracılığıyla kullanılabilir [/arch](../../build/reference/arch-minimum-cpu-architecture.md) seçeneği.
+**Fast** yeniden sıralama, birleştirme veya kayan nokta kodunun hızını ve alanı iyileştirmek için kayan nokta işlemleri basitleştirmek derleyici seçeneği sağlar. Derleyici, atama deyimleri yuvarlama atlasa, yuvarlamasını veya işlev çağrıları. İşlemlerini yeniden sıralayabilir veya cebirsel dönüşümleri tür dönüştürmeleri garantileyebilirsiniz farklı yuvarlama davranışlara neden olsa bile, örneğin, ilişkilendirilebilir ve dağıtılabilir yasaları kullanarak gerçekleştirin olabilir. Bu gelişmiş iyileştirmesi nedeniyle, kayan nokta bazı hesaplamalar sonucunu diğer tarafından üretilen farklı **/FP** seçenekleri. Özel değerler (NaN, + sonsuz, - sonsuz,-0.0) yayılmayacak ya da kesinlikle IEEE 754 standardına göre davranır. Kayan nokta kısaltmalar altında oluşturulabilir **Fast**. Temel alınan mimarisinde altında tarafından derleyici hala bağlı **Fast**, ve ek iyileştirmeler aracılığıyla kullanılabilir [/arch](arch-minimum-cpu-architecture.md) seçeneği.
 
 Altında **Fast**, derleyici varsayılan kayan nokta ortamda çalıştırmak istediğiniz kodu oluşturur ve kayan nokta ortam erişilebilir değil veya çalışma zamanında değiştirilmiş varsayar. Diğer bir deyişle, kodu değil kayan nokta özel durum maskesini kaldırmak, okuma veya kayan nokta durumu kayıtları yazmak veya yuvarlama modu değiştirme olduğunu varsayar.
 
@@ -67,7 +67,7 @@ Unutmayın **/FP: dışında** kayan nokta özel durumların kendisi tarafından
 
 Birden çok **/FP** seçenekleri aynı derleyici komut satırında belirtilebilir. Yalnızca biri **/FP: strict**, **Fast**, ve **/FP: precise** seçenekleri aynı anda etkin olabilir. Komut satırında birden çok seçenek belirtilirse, sonraki seçeneğini önceliklidir ve derleyici bir uyarı oluşturur. **/FP: strict** ve **/FP: except** seçenekleri ile uyumlu değildir **/CLR**.
 
-[/Za](../../build/reference/za-ze-disable-language-extensions.md) (ANSI uyumluluğu) seçeneği ile uyumlu değil **/FP**.
+[/Za](za-ze-disable-language-extensions.md) (ANSI uyumluluğu) seçeneği ile uyumlu değil **/FP**.
 
 ### <a name="using-pragmas-to-control-floating-point-behavior"></a>Pragmalar denetimi kayan nokta davranışı için kullanma
 
@@ -256,7 +256,7 @@ Altında **/O2** **Fast** tüm tür atamaları attığından oluşturulan kodun 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **kod oluşturma** özellik sayfası.
 
@@ -268,6 +268,6 @@ Altında **/O2** **Fast** tüm tür atamaları attığından oluşturulan kodun 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](setting-compiler-options.md)<br/>
-[Microsoft Visual C++ kayan nokta iyileştirme](floating-point-optimization.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC kayan nokta iyileştirme](floating-point-optimization.md)<br/>

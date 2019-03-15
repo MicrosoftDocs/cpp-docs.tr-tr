@@ -1,8 +1,6 @@
 ---
 title: Idispeventımpl destekleme
 ms.date: 11/04/2016
-f1_keywords:
-- IDispEventImpl
 helpviewer_keywords:
 - event sink maps, declaring
 - IDispEventImpl class, advising and unadvising
@@ -12,12 +10,12 @@ helpviewer_keywords:
 - BEGIN_SINK_MAP macro
 - IDispEventImpl class, declaring
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
-ms.openlocfilehash: fcc3be5d905bf3f5680902e2f480472c6251aa7f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3652aae2a6c84833ed32e52599d3834d6e66a5ee
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273822"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812336"
 ---
 # <a name="supporting-idispeventimpl"></a>Idispeventımpl destekleme
 

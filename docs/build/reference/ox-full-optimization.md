@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Ox compiler option [C++]
 - -Ox compiler option [C++]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
-ms.openlocfilehash: 5be751bda13e3bfe62508e4d70206b5f9f989df5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e39905608087425fe5a445f4ef88434d73bb2ded
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619095"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811283"
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (en fazla hız iyileştirmelerini etkinleştir)
 
@@ -28,35 +28,35 @@ ms.locfileid: "50619095"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Ox** derleyici seçeneğini etkinleştirir **/O** hıza öncelik o derleyici seçenekleri. **/Ox** derleyici seçeneği ek içermez [/GF (yinelenen dizeleri ortadan)](../../build/reference/gf-eliminate-duplicate-strings.md) ve [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md) tarafındanetkinseçenekleri[/O1 veya/O2 (boyutu en aza indir, hızı en)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). Tarafından uygulanan ek seçenekler **/O1** ve **/O2** işaretçileri dizeler ya da bir hedef adresi, hata ayıklama etkileyebilir ve katı olan dili uyumluluğu paylaşmak için işlevleri neden olabilir. **/Ox** seçenektir olmadan dahil olmak üzere, en iyileştirmelerini Etkinleştir için kolay bir yol **/GF** ve **/Gy**. Daha fazla bilgi için bkz: açıklamalarını [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) ve [/Gy](../../build/reference/gy-enable-function-level-linking.md) seçenekleri.
+**/Ox** derleyici seçeneğini etkinleştirir **/O** hıza öncelik o derleyici seçenekleri. **/Ox** derleyici seçeneği ek içermez [/GF (yinelenen dizeleri ortadan)](gf-eliminate-duplicate-strings.md) ve [/Gy (işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md) tarafındanetkinseçenekleri[/O1 veya/O2 (boyutu en aza indir, hızı en)](o1-o2-minimize-size-maximize-speed.md). Tarafından uygulanan ek seçenekler **/O1** ve **/O2** işaretçileri dizeler ya da bir hedef adresi, hata ayıklama etkileyebilir ve katı olan dili uyumluluğu paylaşmak için işlevleri neden olabilir. **/Ox** seçenektir olmadan dahil olmak üzere, en iyileştirmelerini Etkinleştir için kolay bir yol **/GF** ve **/Gy**. Daha fazla bilgi için bkz: açıklamalarını [/GF](gf-eliminate-duplicate-strings.md) ve [/Gy](gy-enable-function-level-linking.md) seçenekleri.
 
 **/Ox** derleyici seçeneği ile aynıdır birlikte aşağıdaki seçenekleri kullanarak:
 
-- [/OB (satır içi işlev genişletmesi)](../../build/reference/ob-inline-function-expansion.md), seçenek parametresinin 2 olduğu (**/ob2**)
+- [/OB (satır içi işlev genişletmesi)](ob-inline-function-expansion.md), seçenek parametresinin 2 olduğu (**/ob2**)
 
-- [/Og (Global İyileştirmeler)](../../build/reference/og-global-optimizations.md)
+- [/Og (Global İyileştirmeler)](og-global-optimizations.md)
 
-- [/Oi (İç İşlevler Üret)](../../build/reference/oi-generate-intrinsic-functions.md)
+- [/Oi (İç İşlevler Üret)](oi-generate-intrinsic-functions.md)
 
-- [/Ot (hızlı koda ayrıcalık)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md)
+- [/Ot (hızlı koda ayrıcalık)](os-ot-favor-small-code-favor-fast-code.md)
 
-- [/Oy (Çerçeve işaretçisini atlama)](../../build/reference/oy-frame-pointer-omission.md)
+- [/Oy (Çerçeve işaretçisini atlama)](oy-frame-pointer-omission.md)
 
 **/Ox** gelen birbirini dışlar:
 
-- [/ O1 (boyutu en aza indir)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
+- [/ O1 (boyutu en aza indir)](o1-o2-minimize-size-maximize-speed.md)
 
-- [/ O2 (hızını en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
+- [/ O2 (hızını en üst düzeye)](o1-o2-minimize-size-maximize-speed.md)
 
-- [/Od (Devre Dışı Bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md)
+- [/Od (Devre Dışı Bırak (Hata Ayıkla))](od-disable-debug.md)
 
-Sapma hızına yönelik iptal edebilirsiniz **/Ox** belirtirseniz derleyici seçeneği **/Oxs**, hangi birleştirir **/Ox** derleyici seçeneğiyle [/Os (ayrıcalık küçük Kod)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). Birleşik seçenekler ayrıcalık tanı daha küçük kod boyutu.  **/Oxs** seçenek, tam olarak belirterek aynı **/Ox** **/Os** seçenekler, sırasıyla görüntülenirken.
+Sapma hızına yönelik iptal edebilirsiniz **/Ox** belirtirseniz derleyici seçeneği **/Oxs**, hangi birleştirir **/Ox** derleyici seçeneğiyle [/Os (ayrıcalık küçük Kod)](os-ot-favor-small-code-favor-fast-code.md). Birleşik seçenekler ayrıcalık tanı daha küçük kod boyutu.  **/Oxs** seçenek, tam olarak belirterek aynı **/Ox** **/Os** seçenekler, sırasıyla görüntülenirken.
 
-Yayın derlemeleri için tüm kullanılabilir dosya düzeyinde iyileştirme uygulamak için belirttiğiniz öneririz [/O2 (hız en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) yerine **/Ox**, ve [/O1 (boyutu en aza)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) yerine ' ın **/Oxs**. Daha da fazla iyileştirme sürüm yapıları için de göz önünde bulundurmanız [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği ve [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md) bağlayıcı seçeneği.
+Yayın derlemeleri için tüm kullanılabilir dosya düzeyinde iyileştirme uygulamak için belirttiğiniz öneririz [/O2 (hız en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) yerine **/Ox**, ve [/O1 (boyutu en aza)](o1-o2-minimize-size-maximize-speed.md) yerine ' ın **/Oxs**. Daha da fazla iyileştirme sürüm yapıları için de göz önünde bulundurmanız [/GL (bütün Program iyileştirmesi)](gl-whole-program-optimization.md) derleyici seçeneği ve [/LTCG (bağlama zamanı kodu oluşturma)](ltcg-link-time-code-generation.md) bağlayıcı seçeneği.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Altında **yapılandırma özellikleri**açın **C/C++** seçip **iyileştirme** özellik sayfası.
 
@@ -66,8 +66,8 @@ Yayın derlemeleri için tüm kullanılabilir dosya düzeyinde iyileştirme uygu
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

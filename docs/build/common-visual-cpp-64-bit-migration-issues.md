@@ -12,12 +12,12 @@ helpviewer_keywords:
 - 64-bit compiler [C++], porting 32-bit code
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
-ms.openlocfilehash: 1eb5a7f8d708d16241f1637269f31563378f084d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 937c00b7d3c40d9a5b92d53582ab1ebf4418ebc7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468776"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816119"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>Genel Visual C++ 64 Bit Geçiş Sorunları
 
@@ -41,11 +41,11 @@ Bir 64 bit Windows işletim sisteminde çalıştırılacak uygulamalar oluşturm
 
 Daha fazla bilgi için bkz.:
 
-- [Derleyici Seçenekleri](../build/reference/compiler-options.md)
+- [MSVC derleyici seçenekleri](reference/compiler-options.md)
 
 - [Geçiş ipuçları](/windows/desktop/WinProg64/migration-tips)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++’ı 64 bit, x64 hedefler için yapılandırma](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[C++ projeleri için 64 bit x64 yapılandırma hedefleri](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)

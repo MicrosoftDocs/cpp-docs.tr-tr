@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, versions
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: 3d3c6e25594eb3bb01ad3fc995a24cdc723d5726
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 3e5b173741700ed6cccf95b479eb5693a62ed02e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751901"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810490"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve özellikleri Visual Studio sürümleri
 
@@ -176,5 +176,5 @@ Aşağıdaki tablolarda, Visual Studio'da bulunan Visual C++ özellikleri göste
 
 [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio)<br/>
 [Visual Studio'daki yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br/>
+[Visual C++ Proje Türleri](../build/reference/visual-cpp-project-types.md)<br/>
 [SQL Server Veri Araçları](https://msdn.microsoft.com/library/hh272686)<br/>

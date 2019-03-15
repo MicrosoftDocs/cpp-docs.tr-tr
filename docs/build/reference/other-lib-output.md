@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - output files, LIB
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
-ms.openlocfilehash: ef4df8441cfcb2adadc07758712971aee870a8bf
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 1f0140d33a06a1bdb95df4a8c52aea1f84b3aca1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422090"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811062"
 ---
 # <a name="other-lib-output"></a>Diğer LIB Çıktısı
 
@@ -25,4 +25,4 @@ Hata ve uyarı iletileri LIB tarafından verilen formun LNK*nnnn*. BAĞLANTI, DU
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)
+[LIB'e Genel Bakış](overview-of-lib.md)

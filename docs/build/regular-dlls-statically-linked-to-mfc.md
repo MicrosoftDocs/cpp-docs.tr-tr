@@ -9,12 +9,12 @@ helpviewer_keywords:
 - statically linked DLLs [C++]
 - regular MFC DLLs [C++], statically linked to MFC
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-ms.openlocfilehash: fee2d3b84949241cda421d6ea587e1ab9c6e58e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f05b5e3c268935cf3161fb7184e04b3e3ea1446
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565548"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815807"
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>Statik olarak MFC'ye bağlı normal MFC DLL'leri
 
@@ -66,20 +66,20 @@ Standart MFC statik bağlantı kitaplıklarında açıklanan kurallara göre adl
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Normal MFC DLL'leri Başlat](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [Normal MFC DLL'leri Başlat](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
 - [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [MFC DLL oluşturma](../mfc/reference/mfc-dll-wizard.md)
 
-- [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantısı DLL’leri](../build/extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri](extension-dlls-overview.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL Türleri](../build/kinds-of-dlls.md)
+[DLL Türleri](kinds-of-dlls.md)

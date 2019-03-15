@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ERRORREPORT linker option
 - -ERRORREPORT linker option
 ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
-ms.openlocfilehash: 97d36e9db342e5873fc76a156b879e03af880dbf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26cc157cb7247a3a2ea7c10b415df1160540c9ad
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447257"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818030"
 ---
 # <a name="errorreport-report-internal-linker-errors"></a>/ERRORREPORT (Dahili Bağlayıcı Hatalarını Raporla)
 
@@ -42,7 +42,7 @@ Seçenek **okunmalı** Windows hata bildirimi hizmeti ayarları tarafından etki
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Açık **yapılandırma özellikleri** > **bağlayıcı** > **Gelişmiş** özellik sayfası.
 
@@ -54,6 +54,6 @@ Seçenek **okunmalı** Windows hata bildirimi hizmeti ayarları tarafından etki
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/errorReport (Dahili Derleme Hatalarını Raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)<br/>
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[/errorReport (Dahili Derleme Hatalarını Raporla)](errorreport-report-internal-compiler-errors.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

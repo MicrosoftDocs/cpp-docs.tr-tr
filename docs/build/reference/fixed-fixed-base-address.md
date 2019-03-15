@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -FIXED linker option
 - FIXED linker option
 ms.assetid: 929bba5e-b7d8-40ed-943e-056aa3710fc5
-ms.openlocfilehash: ccb89b7dfed78ddebf73aaf6e2a1a8529b065042
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 6cc89df76e48ee258a7c6608aab12573ab11729b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423046"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811530"
 ---
 # <a name="fixed-fixed-base-address"></a>/FIXED (Sabit Temel Adres)
 
@@ -25,7 +25,7 @@ ms.locfileid: "57423046"
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşletim sistemine programı yalnızca tercih edilen temel adresini yük için söyler. Tercih edilen taban adresi kullanılamıyorsa, işletim sistemi dosyayı yüklemez. Daha fazla bilgi için [/Base (Temel adres)](../../build/reference/base-base-address.md).
+İşletim sistemine programı yalnızca tercih edilen temel adresini yük için söyler. Tercih edilen taban adresi kullanılamıyorsa, işletim sistemi dosyayı yüklemez. Daha fazla bilgi için [/Base (Temel adres)](base-base-address.md).
 
 Bir DLL ve/FIXED için herhangi bir proje türü için varsayılan/FIXED: No varsayılan ayardır.
 
@@ -35,7 +35,7 @@ Programda bir yeniden konumlandırma bölümü oluşturmak için/FIXED: No belir
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **bağlayıcı** klasör.
 
@@ -49,5 +49,5 @@ Programda bir yeniden konumlandırma bölümü oluşturmak için/FIXED: No belir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

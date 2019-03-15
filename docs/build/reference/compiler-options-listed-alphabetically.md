@@ -3,12 +3,12 @@ title: Alfabetik Listelenmiş Derleyici Seçenekleri
 ms.date: 08/20/2018
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: fa5ae089e112c147fb5e18b13af2ef5b95a7fda3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6175d62938534e790fb60b300ff55ad031da5801
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646738"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811946"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
 
@@ -67,8 +67,8 @@ Derleyici Seçenekleri kapsamlı bir alfabetik listesi verilmiştir. Kategorisel
 |[/GS](gs-control-stack-checking-calls.md)|Yığın araştırmalarını denetler.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|İş parçacığı-yerel statik depolama alanı kullanılarak yer ayrılmış veri için Fiber güvenliğini destekler.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|Denetim akışı koruyucusu güvenlik denetimleri ekler.|
-|[/GV](gd-gr-gv-gz-calling-convention.md)|Kullanan `__vectorcall` çağırma kuralı. (x86 ve yalnızca x64)|
-|[/GW](gw-optimize-global-data.md)|Tüm program Genel veri en iyi duruma getirme sağlar.|
+|[/Gv](gd-gr-gv-gz-calling-convention.md)|Kullanan `__vectorcall` çağırma kuralı. (x86 ve yalnızca x64)|
+|[/Gw](gw-optimize-global-data.md)|Tüm program Genel veri en iyi duruma getirme sağlar.|
 |[/GX](gx-enable-exception-handling.md)|Kullanım dışı. Zaman uyumlu özel durum işleme sağlar. Kullanım [/EH](eh-exception-handling-model.md) yerine.|
 |[/Gy](gy-enable-function-level-linking.md)|Etkinleştirir işlev seviyesinde bağlamayı.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Kullanım dışı. Aynı [rtc1](rtc-run-time-error-checks.md).|
@@ -111,7 +111,7 @@ Derleyici Seçenekleri kapsamlı bir alfabetik listesi verilmiştir. Kategorisel
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Kayan nokta yükleme iyileştirmelerini kayan nokta değerleri ve devre dışı bırakır belirli için tamsayı taşıma yönergelerini kullanır.|
 |[/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](qvec-report-auto-vectorizer-reporting-level.md)|Otomatik vektörleştirme için raporlama seviyelerini etkinleştirir.|
 |[/ RTC](rtc-run-time-error-checks.md)|Çalışma zamanı hata denetimini etkinleştirir.|
-|[/ SDL](sdl-enable-additional-security-checks.md)|Ek güvenlik özelliklerini ve uyarılarını etkinleştirir.|
+|[/sdl](sdl-enable-additional-security-checks.md)|Ek güvenlik özelliklerini ve uyarılarını etkinleştirir.|
 |[/ showıncludes](showincludes-list-include-files.md)|Derleme sırasında ekleme kodu dosyalarının bir listesini görüntüler.|
 |[/ Source-Charset](source-charset-set-source-character-set.md)|Kaynak karakter kümesini Ayarla.|
 |[/ Std](std-specify-language-standard-version.md)|C++ Standart sürüm uyumluluğu Seçici.|
@@ -162,8 +162,7 @@ Derleyici Seçenekleri kapsamlı bir alfabetik listesi verilmiştir. Kategorisel
 |[/ZS](zs-syntax-check-only.md)|Yalnızca söz dizimini denetler.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows çalışma zamanında çalışacak bir çıktı dosyası üretir.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](c-cpp-building-reference.md)<br/>
-[Derleyici Seçenekleri](compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

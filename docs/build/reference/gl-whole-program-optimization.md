@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -GL compiler option [C++]
 - GL compiler option [C++]
 ms.assetid: 09d51e2d-9728-4bd0-b5dc-3b8284aca1d1
-ms.openlocfilehash: 7e9300c6c851eb013d8304bd90e3ca9aa4b2c022
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6251209dac74a504bb0635f0c544c39935090a42
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640835"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812388"
 ---
 # <a name="gl-whole-program-optimization"></a>/GL (Bütün Program İyileştirmesi)
 
@@ -43,27 +43,27 @@ Tüm modüller hakkında daha fazla bilgi ile derleyici yapabilirsiniz:
 
 - Satır içi işlevi başka bir modül tanımlandığında bile bir modüldeki bir işlev.
 
-.obj dosyalarını üretilen ile **/GL** böyle bağlayıcı ölçeklendirebilirlik kullanılabilir olmayacak [EDITBIN](../../build/reference/editbin-reference.md) ve [DUMPBIN](../../build/reference/dumpbin-reference.md).
+.obj dosyalarını üretilen ile **/GL** böyle bağlayıcı ölçeklendirebilirlik kullanılabilir olmayacak [EDITBIN](editbin-reference.md) ve [DUMPBIN](dumpbin-reference.md).
 
-Programınızı ile derleme yaparsanız **/GL** ve [/c](../../build/reference/c-compile-without-linking.md), çıktı dosyasını oluşturmak için/LTCG bağlayıcı seçeneği kullanmanız gerekir.
+Programınızı ile derleme yaparsanız **/GL** ve [/c](c-compile-without-linking.md), çıktı dosyasını oluşturmak için/LTCG bağlayıcı seçeneği kullanmanız gerekir.
 
-[/Zı](../../build/reference/z7-zi-zi-debug-information-format.md) kullanılamaz **/GL**
+[/Zı](z7-zi-zi-debug-information-format.md) kullanılamaz **/GL**
 
 Dosya biçimi ile üretilen **/GL** ' ın geçerli sürümünde Visual C++'ın sonraki sürümleri tarafından okunabilir olmayabilir. İle üretilmiş .obj dosyaları oluşan bir .lib dosyasına sevk etmesi değil **/GL** Visual C++'ın tüm sürümleri için .lib dosyası kopyalarını göndermeye hazır olduğunuz sürece, şimdi ve gelecekte kullanmak üzere kullanıcılarınızın beklediği.
 
 .obj dosyalarını üretilen ile **/GL** ve .lib dosyası üretilen aynı makineye bağlanacak sürece bir .lib dosyası oluşturmak için önceden derlenmiş üst bilgi dosyaları kullanılmamalıdır **/GL** .obj dosyası. Bağlantı zamanında bilgileri .obj dosya önceden derlenmiş üst bilgi dosyası gereklidir.
 
-En iyi duruma getirme ile kullanılabilir ve bütün program iyileştirmesi sınırlamaları hakkında daha fazla bilgi için bkz. [/LTCG](../../build/reference/ltcg-link-time-code-generation.md).  **/GL** yapar ayrıca profil destekli iyileştirme kullanılabilir; / LTCG bakın.  En iyi duruma getirme ve sıralama, profil temelli en iyileştirmeler işlevi istiyorsanız profil temelli için derleme yaparken ile derleme [/Gy](../../build/reference/gy-enable-function-level-linking.md) veya gelir /Gy derleyici seçeneği.
+En iyi duruma getirme ile kullanılabilir ve bütün program iyileştirmesi sınırlamaları hakkında daha fazla bilgi için bkz. [/LTCG](ltcg-link-time-code-generation.md).  **/GL** yapar ayrıca profil destekli iyileştirme kullanılabilir; / LTCG bakın.  En iyi duruma getirme ve sıralama, profil temelli en iyileştirmeler işlevi istiyorsanız profil temelli için derleme yaparken ile derleme [/Gy](gy-enable-function-level-linking.md) veya gelir /Gy derleyici seçeneği.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Bkz: [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md) belirtme hakkında daha fazla bilgi için **/GL** geliştirme ortamında.
+1. Bkz: [/LTCG (bağlama zamanı kodu oluşturma)](ltcg-link-time-code-generation.md) belirtme hakkında daha fazla bilgi için **/GL** geliştirme ortamında.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WholeProgramOptimization%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

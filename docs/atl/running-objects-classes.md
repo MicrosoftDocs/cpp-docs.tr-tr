@@ -2,18 +2,16 @@
 title: (ATL) nesne sınıflarını çalıştırma
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.objects.running
 helpviewer_keywords:
 - object classes, running
 - objects [C++], running objects classes
 ms.assetid: b4d63c41-81fd-4000-96c5-ea0a011f4308
-ms.openlocfilehash: b18264aa3e89ca3ad45d32a9af3000e949a86f1e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0bead33f5439fa90d376fdb64f98dfdbab52ec82
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290189"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818017"
 ---
 # <a name="running-objects-classes"></a>Nesne sınıflarını çalıştırma
 

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - LIST library manager option
 - /CONVERT library manager option
 ms.assetid: f56a8b85-fbdc-4c09-8d8e-00f0ffe1da53
-ms.openlocfilehash: 69cd03e029d014b9b74a8688f155dfb1f023b55c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74b8cf198d46f83de327c68ac5f883bd75e5db80
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477070"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812050"
 ---
 # <a name="managing-a-library"></a>Kitaplığı Yönetme
 
@@ -64,7 +64,7 @@ Varsayılan olarak, LIB temel ilk nesneye veya kitaplık dosyasının adını ve
 Aşağıdaki seçenekler, oluşturmak ve bir kitaplık değiştirmek için geçerlidir:
 
 **/ LIBPATH:** *dizini*<br/>
-Kullanıcının ortam kitaplık yolunu geçersiz kılar. Ayrıntılar için bağlantı açıklamasına bakın [/Libpath](../../build/reference/libpath-additional-libpath.md) seçeneği.
+Kullanıcının ortam kitaplık yolunu geçersiz kılar. Ayrıntılar için bağlantı açıklamasına bakın [/Libpath](libpath-additional-libpath.md) seçeneği.
 
 **/ LİSTELEME**<br/>
 Standart çıktıya çıkış Kitaplığı hakkında bilgileri görüntüler. Çıktıyı bir dosyaya yönlendirilebilir. / List, varolan kitaplığın içeriğini değiştirmeden belirlemek için kullanabilirsiniz.
@@ -73,7 +73,7 @@ Standart çıktıya çıkış Kitaplığı hakkında bilgileri görüntüler. Ç
 İçeri aktarma kitaplığı derlerken, içeri aktarma kitaplığını oluşturulmakta olan DLL'in adını belirtir.
 
 **/ NODEFAULTLIB**<br/>
-Bir veya daha fazla varsayılan kitaplığı dış başvuruların çözümlenmesi sırasında aradığı kitaplık listesinden kaldırır. Bkz: [/nodefaultlıb](../../build/reference/nodefaultlib-ignore-libraries.md) daha fazla bilgi için.
+Bir veya daha fazla varsayılan kitaplığı dış başvuruların çözümlenmesi sırasında aradığı kitaplık listesinden kaldırır. Bkz: [/nodefaultlıb](nodefaultlib-ignore-libraries.md) daha fazla bilgi için.
 
 **/ OUT:** *dosya adı*<br/>
 Varsayılan çıktı dosyası adını geçersiz kılar. Varsayılan olarak, çıkış kitaplığı ile komut satırını ve uzantıyı ilk kitaplığı veya nesne dosyasının temel adı geçerli bir dizin oluşturulur. LIB.
@@ -82,7 +82,7 @@ Varsayılan çıktı dosyası adını geçersiz kılar. Varsayılan olarak, çı
 Belirtilen atlar *nesne* çıkış kitaplığı. LIB tüm nesneleri (elinizin altında nesne dosyalarında veya kitaplıklarındaki) birleştirerek ve ardından/Remove ile belirtilen nesneleri silerek bir çıkış kitaplığı oluşturur.
 
 **/ SUBSYSTEM:**{**KONSOL** &AMP;#124; **EFI_APPLICATION** &AMP;#124; **EFI_BOOT_SERVICE_DRIVER** &AMP;#124; **EFI_ROM** &AMP;#124; **EFI_RUNTIME_DRIVER** &AMP;#124; **YEREL** &AMP;#124; **POSIX** &AMP;#124; **WINDOWS** &AMP;#124; **WINDOWSCE**} [, #[. ##]]<br/>
-İşletim sistemi, çıkış Kitaplığı'na bağlama tarafından oluşturulan bir programı çalıştırmak üzere anlatır. Daha fazla bilgi için bağlantı açıklamasına bakın [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) seçeneği.
+İşletim sistemi, çıkış Kitaplığı'na bağlama tarafından oluşturulan bir programı çalıştırmak üzere anlatır. Daha fazla bilgi için bağlantı açıklamasına bakın [/Subsystem](subsystem-specify-subsystem.md) seçeneği.
 
 LIB seçenekleri komut satırında belirtilen büyük/küçük harfe duyarlı değildir.
 
@@ -99,6 +99,6 @@ LIB, şu kitaplık yönetim görevlerini gerçekleştirmek için kullanabilirsin
 > [!NOTE]
 >  Bir üyeyi sil olamaz hem bir dosyaya aynı adımda ayıklayın. Önce/extract kullanarak üye nesnesi ayıklamak ardından/Remove'ı yeniden kullanmaya LIB çalıştırma gerekir. Bu davranış, diğer Microsoft ürünlerinde sağlanan 16-bit LIB (için OMF kitaplıkları) farklıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB Başvurusu](../../build/reference/lib-reference.md)
+[LIB Başvurusu](lib-reference.md)

@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 07/11/2018
-ms.openlocfilehash: c5c928dcb77729f5b79433d3be1b552664a0d211
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 537f8cf5bb8db61854bea7f4624e3dd3176c6a59
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599790"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816548"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -58,11 +58,11 @@ Aşağıda özetlenen 32 tamsayı kayıtları AArch64 mimarisi destekler:
 |Yazmaç|Geçici?|Rol|
 |-|-|-|
 x0|Volatile|Parametre/baştan 1, sonuç kaydı kaydetme
-x1 x7|Volatile|Parametre/baştan kayıt 2-8
-x8 x15|Volatile|Karalama kayıtları
+x1-x7|Volatile|Parametre/baştan kayıt 2-8
+x8-x15|Volatile|Karalama kayıtları
 x16 x17|Volatile|İçi yordam çağrısı karalama kayıtları
 x18|Geçici olmayan|Platform kaydı: çekirdek modunda KPCR için geçerli bir işlemci için; gösterir. kullanıcı modunda TEB için işaret eder.
-x19 x28|Geçici olmayan|Karalama kayıtları
+x19-x28|Geçici olmayan|Karalama kayıtları
 x29/fp|Geçici olmayan|Çerçeve işaretçisi
 x30/lr|Geçici olmayan|Bağlantı kaydeder
 
@@ -81,9 +81,9 @@ AArch64 mimarisi de aşağıda özetlenmiştir 32 kayan noktaya/SIMD kayıtları
 Yazmaç|Geçici?|Rol
 |-|-|-|
 v0|Volatile|Parametre/baştan 1, sonuç kaydı kaydetme
-V1-v7|Volatile|2-8 parametre/baştan kaydeder
-v8 v15|Geçici olmayan|Karalama kayıtları (yalnızca düşük 64 bit geçici olmayan unutmayın)
-V16 v31|Volatile|Karalama kayıtları
+v1-v7|Volatile|2-8 parametre/baştan kaydeder
+v8-v15|Geçici olmayan|Karalama kayıtları (yalnızca düşük 64 bit geçici olmayan unutmayın)
+v16-v31|Volatile|Karalama kayıtları
 
 Her kasa 16-bit bir değer (aracılığıyla h0 h31), veya 8-bit bir değer (aracılığıyla b0 b31) olarak (aracılığıyla s0-s31), 32-bit bir değer olarak (aracılığıyla d0-d31), 64-bit bir değer olarak tam 128-bit değeri (v0-v31 veya q0 q31) üzerinden erişilebilir. Erişimlerinin 128 bit daha küçük, yalnızca tam 128-bit kayıt daha düşük bit erişmek ve kalan bitleri aksi belirtilmediği sürece dokunmayın. (Burada daha küçük olan kayıtları üzerinde daha büyük olan kayıtları paketlenmiş AArch32, önemli ölçüde farklı olduğunu unutmayın.)
 
@@ -203,7 +203,7 @@ Windows varsayılan çekirdek modu yığınında altı sayfaları (24 k) olur. E
 
 ## <a name="stack-walking"></a>Yığın
 
-Etkin çerçeve işaretçilerini ile derlenmiş kod içinde Windows ([/Oy-](../build/reference/oy-frame-pointer-omission.md)) hızlı yığın walking etkinleştirmek için. Bu upshot x29 (dp) genel bir {fp, lr} olan zincirdeki sonraki bağlantısını işaret emin olan yığın ve dönüş adresi önceki çerçeve işaretçisi belirten çifti. Üçüncü taraf kodu çerçeve işaretçilerini yanı iyileştirilmiş profil oluşturma ve izleme için izin vermek için etkinleştirmeniz önerilir.
+Etkin çerçeve işaretçilerini ile derlenmiş kod içinde Windows ([/Oy-](reference/oy-frame-pointer-omission.md)) hızlı yığın walking etkinleştirmek için. Bu upshot x29 (dp) genel bir {fp, lr} olan zincirdeki sonraki bağlantısını işaret emin olan yığın ve dönüş adresi önceki çerçeve işaretçisi belirten çifti. Üçüncü taraf kodu çerçeve işaretçilerini yanı iyileştirilmiş profil oluşturma ve izleme için izin vermek için etkinleştirmeniz önerilir.
 
 ## <a name="exception-unwinding"></a>Özel durumu geriye doğru izleme
 
@@ -221,5 +221,5 @@ Döngü sayacı burada gerçek bir döngü sayacı, duvar saati ve böylece say�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM64 özel durum işleme](../build/arm64-exception-handling.md)
+[Genel Visual C++ ARM Geçiş Sorunları](common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM64 özel durum işleme](arm64-exception-handling.md)

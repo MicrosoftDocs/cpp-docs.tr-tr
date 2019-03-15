@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-ms.openlocfilehash: dba197be71fc77af6d95c2ec62053928ac1627cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 824fa9108e6322b1bcf77d6c28c7fb843b743833
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631666"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808111"
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 
@@ -47,7 +47,7 @@ Bir işlev içinde bildirilen bir değişken kullanmayı deneyerek bu hataya ned
 
 CRT başlatma kodunu gerekli olduğunu belirten bir ileti üretme sürümü bir ATL projesi oluşturduğunuzda, bu hata oluşabilir. Bu sorunu düzeltmek için aşağıdakilerden birini yapın
 
-- Kaldırma `_ATL_MIN_CRT` önişlemci listesinden dahil edilecek CRT başlatma kodunu izin verecek şekilde tanımlar. Bkz: [genel özellik sayfası (Proje)](../../ide/general-property-page-project.md) daha fazla bilgi için.
+- Kaldırma `_ATL_MIN_CRT` önişlemci listesinden dahil edilecek CRT başlatma kodunu izin verecek şekilde tanımlar. Bkz: [genel özellik sayfası (Proje)](../../build/reference/general-property-page-project.md) daha fazla bilgi için.
 
 - Mümkünse, CRT başlatma kodunu gerektiren bir CRT işlevleri çağrıları kaldırın. Bunun yerine, bunların Win32 eşdeğerlerini kullanın. Örneğin, `lstrcmp` yerine `strcmp`. CRT başlatma kodunu gerektiren bilinen bazı dize ve kayan nokta işlevleri işlevlerdir.
 

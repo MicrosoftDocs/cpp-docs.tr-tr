@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COFF files, displaying information about
 - binary file dumper
 ms.assetid: 4bc06822-5330-44b4-8a3f-6180dfd41dfb
-ms.openlocfilehash: d13ec31de79e15cf4fefce7bb954f488ff8fccb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 45f6b9c71eaea93597e90de93c704d2ea260235e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451213"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821395"
 ---
 # <a name="dumpbin-reference"></a>DUMPBIN Başvurusu
 
@@ -24,12 +24,12 @@ Microsoft COFF ikili dosya Dumper (DUMPBIN. Exe dosyası) ikili dosyaları ortak
 > [!NOTE]
 >  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-- [DUMPBIN komut satırı](../../build/reference/dumpbin-command-line.md)
+- [DUMPBIN komut satırı](dumpbin-command-line.md)
 
-- [DUMPBIN seçenekleri](../../build/reference/dumpbin-options.md)
+- [DUMPBIN seçenekleri](dumpbin-options.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)

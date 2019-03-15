@@ -14,12 +14,12 @@ helpviewer_keywords:
 - set include directories
 - include directories, compiler option [C++]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
-ms.openlocfilehash: 0dc1769924880d8cb1b5dc173dd614e87584cac9
-ms.sourcegitcommit: 45835842604602a011813d0cd70abc5df91b89ed
+ms.openlocfilehash: 6ec8b15e77fec5214013c484e617904ed29e8197
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750398"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807643"
 ---
 # <a name="i-additional-include-directories"></a>/I (ek içeren dizinler)
 
@@ -38,7 +38,7 @@ Dizinleri listesine eklenecek dizine dahil etme dosyaları için Aranan.
 
 Birden fazla dizin eklemek için bu seçeneği birden çok kez kullanın. Yalnızca belirlenen içerme dosyasına bulunana kadar dizinlerde arama yapılır.
 
-Bu seçeneği ile kullanabilirsiniz ([/X (Ignore Standard INCLUDE Paths)](../../build/reference/x-ignore-standard-include-paths.md)) seçeneği.
+Bu seçeneği ile kullanabilirsiniz ([/X (Ignore Standard INCLUDE Paths)](x-ignore-standard-include-paths.md)) seçeneği.
 
 Derleyici, dizinleri şu sırayla arar:
 
@@ -50,7 +50,7 @@ Derleyici, dizinleri şu sırayla arar:
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **genel** özellik sayfası.
 
@@ -62,13 +62,13 @@ Derleyici, dizinleri şu sırayla arar:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komutu şu sırayla MAIN.c tarafından talep edilen dahil edilme dosyalarını arar: ilk olarak, çift tırnak kullanılarak belirtilen, yerel dosyaları aranır. Ardından, arama içinde \INCLUDE dizini sonra \MY\INCLUDE dizinde devam eder ve son dizinler için Include ortam değişkeni atanmış.
+Aşağıdaki komutu şu sırayla MAIN.c tarafından talep edilen dahil edilme dosyalarını arar: İlk olarak, çift tırnak kullanılarak belirtilen, yerel dosyaları aranır. Ardından, arama içinde \INCLUDE dizini sonra \MY\INCLUDE dizinde devam eder ve son dizinler için Include ortam değişkeni atanmış.
 
 ```
 CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

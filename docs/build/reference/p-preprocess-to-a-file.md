@@ -12,12 +12,12 @@ helpviewer_keywords:
 - output files, preprocessor
 - preprocessing output files
 ms.assetid: 123ee54f-8219-4a6f-9876-4227023d83fc
-ms.openlocfilehash: 9b3d84d94ed75acd68011b895afbc4f190019673
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e6302d90647bce7e37c47a619e814cab300aaee
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622254"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813766"
 ---
 # <a name="p-preprocess-to-a-file"></a>/P (Dosyaya Önişle)
 
@@ -31,15 +31,15 @@ C ve C++ kaynak dosyalarını önceden işler ve önceden işlenen çıkışı b
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosya kaynak dosyasını ve .i uzantı aynı temel ada sahip. İşleminde, tüm önişlemci yönergeleri gerçekleştirilir, makro genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıktı açıklamalarda korumak için kullanın [/C (korumak açıklamaları sırasındaki)](../../build/reference/c-preserve-comments-during-preprocessing.md) seçeneği ile birlikte **/P**.
+Dosya kaynak dosyasını ve .i uzantı aynı temel ada sahip. İşleminde, tüm önişlemci yönergeleri gerçekleştirilir, makro genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıktı açıklamalarda korumak için kullanın [/C (korumak açıklamaları sırasındaki)](c-preserve-comments-during-preprocessing.md) seçeneği ile birlikte **/P**.
 
-**/P** ekler `#line` başlangıcına ve son eklenen her dosyanın ve koşullu derleme için ön işlemci yönergeleri tarafından kaldırılan satırları etrafında çıkış yönergeleri. Bu yönergeler, önceden işlenmiş dosyayı satırlarını numaralandırmak. Sonuç olarak, işleme sonraki aşamaları sırasında oluşturulan hatalar satır numaralarını önceden işlenmiş dosyayı satırlar yerine orijinal kaynak dosyasına bakın. Oluşturulmasını engellemek için `#line` yönergeleri kullanan [/EP (#line yönergeleri olmadan stdout'ta önişle ön işleme)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) yanı **/P**.
+**/P** ekler `#line` başlangıcına ve son eklenen her dosyanın ve koşullu derleme için ön işlemci yönergeleri tarafından kaldırılan satırları etrafında çıkış yönergeleri. Bu yönergeler, önceden işlenmiş dosyayı satırlarını numaralandırmak. Sonuç olarak, işleme sonraki aşamaları sırasında oluşturulan hatalar satır numaralarını önceden işlenmiş dosyayı satırlar yerine orijinal kaynak dosyasına bakın. Oluşturulmasını engellemek için `#line` yönergeleri kullanan [/EP (#line yönergeleri olmadan stdout'ta önişle ön işleme)](ep-preprocess-to-stdout-without-hash-line-directives.md) yanı **/P**.
 
-**/P** seçeneği derleme bastırır. Kullansanız bile bir .obj dosyası oluşturmaz [/Fo (nesne dosya adı)](../../build/reference/fo-object-file-name.md). Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/P** çıktı dosyalarından da bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için [/FA, /Fa (listeleme dosyası)](../../build/reference/fa-fa-listing-file.md) ve [/Fm (eşlem dosyasını Adlandır)](../../build/reference/fm-name-mapfile.md).
+**/P** seçeneği derleme bastırır. Kullansanız bile bir .obj dosyası oluşturmaz [/Fo (nesne dosya adı)](fo-object-file-name.md). Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/P** çıktı dosyalarından da bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için [/FA, /Fa (listeleme dosyası)](fa-fa-listing-file.md) ve [/Fm (eşlem dosyasını Adlandır)](fm-name-mapfile.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -59,8 +59,8 @@ Aşağıdaki komut satırını önceden işler `ADD.C`, yorumları korur, ekler 
 CL /P /C ADD.C
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/Fi (Çıktı Dosyası Adını Önişle)](../../build/reference/fi-preprocess-output-file-name.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[/Fi (Çıktı Dosyası Adını Önişle)](fi-preprocess-output-file-name.md)

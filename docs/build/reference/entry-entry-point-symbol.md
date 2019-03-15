@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /ENTRY linker option
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
-ms.openlocfilehash: 21e17d9ec9c4b145af8909730e5f799de9b72ce2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f3604ef75ce10928463c088e423615886555eda
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615533"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807864"
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY (Giriş Noktası Simgesi)
 
@@ -42,17 +42,17 @@ Varsayılan olarak, başlangıç adresi, C Çalışma Zamanı Kitaplığı'ndan 
 |**WinMainCRTStartup** (veya **wWinMainCRTStartup**)|/ Subsystem kullanan bir uygulamayı:**WINDOWS**; çağrıları `WinMain` (veya `wWinMain`), hangi tanımlanmalıdır kullanmak için `__stdcall`|
 |**_DllMainCRTStartup**|BİR DLL; çağrıları `DllMain` varsa, hangi tanımlanmalıdır kullanmak için `__stdcall`|
 
-Varsa [/dll](../../build/reference/dll-build-a-dll.md) veya [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) seçeneği belirtilmezse, bağlayıcı bağlı olarak bir alt sistemi ve giriş noktası seçer `main` veya `WinMain` tanımlanır.
+Varsa [/dll](dll-build-a-dll.md) veya [/Subsystem](subsystem-specify-subsystem.md) seçeneği belirtilmezse, bağlayıcı bağlı olarak bir alt sistemi ve giriş noktası seçer `main` veya `WinMain` tanımlanır.
 
 İşlevleri `main`, `WinMain`, ve `DllMain` üç formlar kullanıcı tarafından tanımlanan giriş noktası.
 
 Yönetilen bir görüntü oluşturulurken/Entry için belirtilen işlev imzası olmalıdır (LPVOID *var1*, DWORD *var2*, LPVOID *var3*).
 
-Kendi ölçümünüzü tanımlayın hakkında bilgi için `DllMain` giriş noktası bkz [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) .
+Kendi ölçümünüzü tanımlayın hakkında bilgi için `DllMain` giriş noktası bkz [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../run-time-library-behavior.md) .
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -64,7 +64,7 @@ Kendi ölçümünüzü tanımlayın hakkında bilgi için `DllMain` giriş nokta
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EntryPointSymbol%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

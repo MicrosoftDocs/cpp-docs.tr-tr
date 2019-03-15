@@ -8,12 +8,12 @@ f1_keywords:
 - VC.Project.VCXDCMakeTool.UseUnicodeResponseFiles
 helpviewer_keywords:
 - Unicode, Visual C++
-ms.openlocfilehash: cb21165e51960c0ca2f728381413c1a7260c9f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71458ab345670c0a5715576a7da80c4e6ff2955b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494984"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807536"
 ---
 # <a name="unicode-support-in-the-compiler-and-linker"></a>Derleyicide ve Bağlayıcıda Unicode Desteği
 
@@ -45,8 +45,8 @@ Yanıt dosyaları ve DEF dosyaları ya da UTF-16 BOM ya da ANSI olabilir.
 
 ## <a name="asm-and-cod-dumps"></a>.asm ve .cod dökümleri
 
-.asm ve .cod dökümleri, varsayılan olarak MASM ile uyumluluk için ANSI olan. Kullanım [/fau](../../build/reference/fa-fa-listing-file.md) UTF-8 çıktısını almak için. Belirttiğiniz gerçekleştiriyorsanız **/Fas**, karıştırılmış kaynak yalnızca doğrudan yazdırılır ve, örneğin kaynak kodu UTF-8. ve belirtmediğiniz görünebileceğini **fasu**.
+.asm ve .cod dökümleri, varsayılan olarak MASM ile uyumluluk için ANSI olan. Kullanım [/fau](fa-fa-listing-file.md) UTF-8 çıktısını almak için. Belirttiğiniz gerçekleştiriyorsanız **/Fas**, karıştırılmış kaynak yalnızca doğrudan yazdırılır ve, örneğin kaynak kodu UTF-8. ve belirtmediğiniz görünebileceğini **fasu**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Komut satırında C/C++ kodu derleme](../../build/building-on-the-command-line.md)
+[Komut satırından MSVC araç takımı kullanın](../building-on-the-command-line.md)

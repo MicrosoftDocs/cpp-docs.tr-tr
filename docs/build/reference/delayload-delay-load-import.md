@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /DELAYLOAD linker option
 - delayed loading of DLLs, /DELAYLOAD option
 ms.assetid: 39ea0f1e-5c01-450f-9c75-2d9761ff9b28
-ms.openlocfilehash: 3833c2006a93ee73d2ed68ab7be5e869935143ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e92b470b7b5e76b39371f333cbbda150e7f6e8c7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525014"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817653"
 ---
 # <a name="delayload-delay-load-import"></a>/DELAYLOAD (Yükü İçe Aktarmayı Geciktir)
 
@@ -28,13 +28,13 @@ Yüklenmesinin ertelenmesini istediğiniz bir DLL'nin adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Delayload seçeneği tarafından belirtilen DLL'yi `dllname` yalnızca ilk çağrıda bir işlev DLL içindeki program tarafından yüklenecek. Daha fazla bilgi için [Delay-Loaded DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md). İstediğiniz sayıda DLL'yi belirtmek için gerekli sayıda bu seçeneği kullanabilirsiniz. Programınızın ya da kendi gecikme yük yardımcı işlevinizi uygulayabilirsiniz, Delayimp.lib kullanmanız gerekir.
+/ Delayload seçeneği tarafından belirtilen DLL'yi `dllname` yalnızca ilk çağrıda bir işlev DLL içindeki program tarafından yüklenecek. Daha fazla bilgi için [Delay-Loaded DLL'ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md). İstediğiniz sayıda DLL'yi belirtmek için gerekli sayıda bu seçeneği kullanabilirsiniz. Programınızın ya da kendi gecikme yük yardımcı işlevinizi uygulayabilirsiniz, Delayimp.lib kullanmanız gerekir.
 
-[/DELAY](../../build/reference/delay-delay-load-import-settings.md) seçeneği, bağlama ve yükleme seçenekleri Gecikmeli yüklenen her DLL için belirtir.
+[/DELAY](delay-delay-load-import-settings.md) seçeneği, bağlama ve yükleme seçenekleri Gecikmeli yüklenen her DLL için belirtir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. İçinde **bağlayıcı** klasörüne **giriş** özellik sayfası.
 
@@ -44,7 +44,7 @@ Yüklenmesinin ertelenmesini istediğiniz bir DLL'nin adı.
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

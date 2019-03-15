@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-ms.openlocfilehash: 7c0b63d80a8b4b03b55d6e50af6c08a8de0937de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96b8c0ce1116dbb08260573f25f941ca54169127
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596560"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822424"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 
@@ -30,22 +30,22 @@ MFC uzantı DLL'leri yükleyen MFC uygulamaları için biz kullanmanızı öneri
 Windows, DLL'yi yükleyemezse işlem hatadan kurtarmayı dener. Örneğin, işlem hatası kullanıcıyı uyarır ve kullanıcıdan başka bir DLL yolu belirtin.
 
 > [!IMPORTANT]
-> DLL'lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde geçerli dizin ilk aranır. Dosya yolunu nitelendirmezseniz, hedeflenen bir olmayan bir dosya yüklenebilir. Bunu önlemek için başka bir yolu kullanmaktır [/DEPENDENTLOADFLAG](../build/reference/dependentloadflag.md) bağlayıcı seçeneği.
+> DLL'lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde geçerli dizin ilk aranır. Dosya yolunu nitelendirmezseniz, hedeflenen bir olmayan bir dosya yüklenebilir. Bunu önlemek için başka bir yolu kullanmaktır [/DEPENDENTLOADFLAG](reference/dependentloadflag.md) bağlayıcı seçeneği.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [DLL'ye örtük olarak bağlama](../build/linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Bir yürütülebilir dosyayı DLL’ye bağlama](linking-an-executable-to-a-dll.md#linking-implicitly)
 
-- [Hangi bağlama yönteminin kullanılacağını belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Bir yürütülebilir dosyayı DLL’ye bağlama](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
 - [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-- [FreeLibrary ve AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
+- [FreeLibrary ve AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)
 
-- [GetProcAddress](../build/getprocaddress.md)
+- [GetProcAddress](getprocaddress.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+- [Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

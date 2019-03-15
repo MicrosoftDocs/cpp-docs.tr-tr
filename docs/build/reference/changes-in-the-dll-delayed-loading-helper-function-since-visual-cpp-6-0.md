@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __delayLoadHelper2 function
 - helper functions, what's changed
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
-ms.openlocfilehash: 8d50962bf66e07d6238be4a1a973c9d9ff06a556
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cd6e842fd6d35e05f2d5a9f906713f0d85d3b80d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613778"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808007"
 ---
 # <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri
 
@@ -33,7 +33,7 @@ Bilgisayarınızda Visual C++ birden fazla sürümü varsa veya kendi yardımcı
 
 Bilgisayarınızda Visual C++ birden fazla sürümü varsa, bağlayıcı delayimp.lib eşleştiğinden emin olun. Yoksa uyuşmazlık ya da raporlama bir bağlayıcı hatası alırsınız `___delayLoadHelper2@8` veya `___delayLoadHelper@8` bir çözümlenmemiş dış sembol olarak. Eski bir eski delayimp.lib ile yeni bir bağlayıcı anlamına gelir ve eski bir bağlayıcı ile yeni bir delayimp.lib ikinci anlamına gelir.
 
-Çözümlenmemiş bağlayıcı hata alırsanız, çalıştırma [dumpbin /linkermember](../../build/reference/linkermember.md): hangi yardımcı işlevini yerine tanımlanan görmek için yardımcı işlevini içerecek şekilde beklediğiniz delayimp.lib 1. Yardımcı işlevini de bir nesne dosyasında tanımlanmış olması; çalıştırma [dumpbin /symbols](../../build/reference/symbols.md) ve Ara `delayLoadHelper(2)`.
+Çözümlenmemiş bağlayıcı hata alırsanız, çalıştırma [dumpbin /linkermember](linkermember.md): hangi yardımcı işlevini yerine tanımlanan görmek için yardımcı işlevini içerecek şekilde beklediğiniz delayimp.lib 1. Yardımcı işlevini de bir nesne dosyasında tanımlanmış olması; çalıştırma [dumpbin /symbols](symbols.md) ve Ara `delayLoadHelper(2)`.
 
 Biliyorsanız, Visual C++ 6.0 bağlayıcı ardından vardır:
 
@@ -47,12 +47,12 @@ Kendi yardımcı işlevinizi tanımlanan ve Visual C++'ın geçerli sürümü ku
 
 - Yeniden adlandırmak için yardımcı işlevini **__delayLoadHelper2**.
 
-- İşaretçiler (ImgDelayDescr delayimp.h içinde) gecikme tanımlayıcısındaki göreli adreslerine (RVA) hem 32 ve 64 bit programlarında beklendiği şekilde çalışması için mutlak adreslerden (VAs) değiştirilmiş olduğundan, bu geri Dönüştür işlemi işaretçileri gerekir. Yeni bir işlev sunulan: PFromRva, delayhlp.cpp içinde bulunamadı. Bunları ya da 32 veya 64 bit işaretçiler için geri dönüştürmek için her tanımlayıcı alan bu işlevi kullanabilirsiniz. Varsayılan gecikme yük yardımcı işlevinizi örnek olarak kullanmak iyi bir şablon olmaya devam eder.
+- İşaretçiler (ImgDelayDescr delayimp.h içinde) gecikme tanımlayıcısındaki göreli adreslerine (RVA) hem 32 ve 64 bit programlarında beklendiği şekilde çalışması için mutlak adreslerden (VAs) değiştirilmiş olduğundan, bu geri Dönüştür işlemi işaretçileri gerekir. Yeni bir işlev eklendi: PFromRva delayhlp.cpp içinde bulunamadı. Bunları ya da 32 veya 64 bit işaretçiler için geri dönüştürmek için her tanımlayıcı alan bu işlevi kullanabilirsiniz. Varsayılan gecikme yük yardımcı işlevinizi örnek olarak kullanmak iyi bir şablon olmaya devam eder.
 
 ## <a name="load-all-imports-for-a-delay-loaded-dll"></a>Gecikmeli yüklenen DLL için tüm içe aktarmaları yükleme
 
-Bağlayıcı Gecikmeli yüklendi olarak belirtilen bir DLL'den tüm içe aktarmaları yükleyebilirsiniz. Bkz: [yükleniyor tüm içe aktarmaları Delay-Loaded DLL için](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md) daha fazla bilgi için.
+Bağlayıcı Gecikmeli yüklendi olarak belirtilen bir DLL'den tüm içe aktarmaları yükleyebilirsiniz. Bkz: [yükleniyor tüm içe aktarmaları Delay-Loaded DLL için](loading-all-imports-for-a-delay-loaded-dll.md) daha fazla bilgi için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)

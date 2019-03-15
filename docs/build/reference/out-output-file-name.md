@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /OUT C++ linker option
 - linker [C++], output files
 ms.assetid: 976210a4-e51f-4cfb-af5e-c16344455834
-ms.openlocfilehash: f5ba323b830b9d06956d88d957206e3f73c15418
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be5fe929bdcf52be19955a5bc2d7aa093e194f45
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497195"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812427"
 ---
 # <a name="out-output-file-name"></a>/OUT (Çıktı Dosyası Adı)
 
@@ -35,11 +35,11 @@ Bir kullanıcı tarafından belirtilen çıkış dosyasının adı. Varsayılan 
 
 Varsayılan olarak, bağlayıcı ilk .obj dosyası belirtilmedi ve uygun bir uzantı (.exe veya .dll) temel adını kullanarak dosya adı oluşturur.
 
-Bu .mapfile veya içeri aktarma kitaplığı için varsayılan taban adı seçeneği. Ayrıntılar için bkz [eşlem dosyası oluştur](../../build/reference/map-generate-mapfile.md) (/ MAP) ve [/IMPLIB](../../build/reference/implib-name-import-library.md).
+Bu .mapfile veya içeri aktarma kitaplığı için varsayılan taban adı seçeneği. Ayrıntılar için bkz [eşlem dosyası oluştur](map-generate-mapfile.md) (/ MAP) ve [/IMPLIB](implib-name-import-library.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -51,7 +51,7 @@ Bu .mapfile veya içeri aktarma kitaplığı için varsayılan taban adı seçen
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, notification hooks
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
-ms.openlocfilehash: 9205791995bc113e4f560ab6085fc3acf47c8182
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 884d8e8479b7cad28d99e19adfac4d05dbeec5f5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549839"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818316"
 ---
 # <a name="notification-hooks"></a>Bildirim Kancaları
 
@@ -77,8 +77,8 @@ ExternC
 PfnDliHook   __pfnDliFailureHook2;
 ```
 
-Bildirimleri geçirin bir **DelayLoadInfo** bildirim değerin yanı sıra kanca işlevini yapısına. Bu veriler, gecikme yük yardımcı yordamı tarafından kullanılmak için aynıdır. Bildirim değeri içinde tanımlanan değerlerden olacaktır [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).
+Bildirimleri geçirin bir **DelayLoadInfo** bildirim değerin yanı sıra kanca işlevini yapısına. Bu veriler, gecikme yük yardımcı yordamı tarafından kullanılmak için aynıdır. Bildirim değeri içinde tanımlanan değerlerden olacaktır [yapı ve sabit tanımları](structure-and-constant-definitions.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)
+[Hata İşleme ve Bildirme](error-handling-and-notification.md)

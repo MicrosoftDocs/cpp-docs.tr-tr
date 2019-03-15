@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: 0c5c0b84ad66fb44dad171710ff8915ca22b8ccf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eadeeb7ac19e3975a37a1364502b33400018cb05
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462796"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818277"
 ---
 # <a name="linker-tools-error-lnk1104"></a>Bağlayıcı Araçları Hatası LNK1104
 
@@ -35,11 +35,11 @@ Açılamıyor dosya bu kernel32.lib gibi Microsoft tarafından sağlanan standar
 
 Visual Studio'nun daha eski bir sürümü kullanılarak oluşturulmuş bir proje oluşturuyorsanız, platform araç takımı ve kitaplıklar bu sürümü yüklü olmayabilir. Hata iletisi msvcr100.lib gibi bir tutulan kitaplık adı için oluşursa bunun neden olabilir. Bu sorunu çözmek için iki seçeneğiniz vardır: projeyi yüklediğiniz geçerli platform araç takımını kullanacak şekilde yükseltebilir veya eski Araç Takımı'nı yükleyebilir ve değişmeden projeyi derleyin. Daha fazla bilgi için [önceki sürümleri, Visual C++ projeleri yükseltme](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) ve [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../../porting/use-native-multi-targeting.md).
 
-Yeni Hedef platform veya yapılandırma için oluştururken bu hatayı görürseniz, bu proje yapılandırmasını veya platform araç takımını kitaplıkları yüklü olmayabilir. Doğrulayın **Platform araç takımını** ve **Windows SDK sürümü** belirtilen [genel özellik sayfası](../../ide/general-property-page-project.md) projeniz için yüklü olduğunu ve doğrulayın gerekli kitaplıkları kullanılabilir **kitaplık dizinleri** belirtilen [VC ++ Directories Property Page](../../ide/vcpp-directories-property-page.md) yapılandırma ayarlarınızı için. Hata ayıklama için ayrı ayarlar vardır ve perakende yapılandırmaları yanı sıra 32 bit ve 64-bit yapılandırmaları, bu nedenle bir derleme çalışır, ancak başka bir hataya neden ayarlarının doğru olduğundan emin olun ve için gerekli araçları ve kitaplıkları yüklü her oluşturduğunuz yapılandırma.
+Yeni Hedef platform veya yapılandırma için oluştururken bu hatayı görürseniz, bu proje yapılandırmasını veya platform araç takımını kitaplıkları yüklü olmayabilir. Doğrulayın **Platform araç takımını** ve **Windows SDK sürümü** belirtilen [genel özellik sayfası](../../build/reference/general-property-page-project.md) projeniz için yüklü olduğunu ve doğrulayın gerekli kitaplıkları kullanılabilir **kitaplık dizinleri** belirtilen [VC ++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md) yapılandırma ayarlarınızı için. Hata ayıklama için ayrı ayarlar vardır ve perakende yapılandırmaları yanı sıra 32 bit ve 64-bit yapılandırmaları, bu nedenle bir derleme çalışır, ancak başka bir hataya neden ayarlarının doğru olduğundan emin olun ve için gerekli araçları ve kitaplıkları yüklü her oluşturduğunuz yapılandırma.
 
-Başka bir bilgisayardan kopyalanan bir projeyi derlemek için Visual Studio IDE kullanıyorsanız, kitaplıkları için yükleme konumlarını farklı olabilir. Denetleme **kitaplık dizinleri** özelliği [VC ++ Directories Property Page](../../ide/vcpp-directories-property-page.md) projenin ve gerekirse güncelleştirin. Aşağı açılan denetim için bakın ve IDE içinde ayarlamak geçerli kitaplık yollarını düzenlemek için seçin **kitaplık dizinleri** özelliği ve **Düzenle**. **Değeri Hesaplandı** bölümünü **kitaplık dizinleri** iletişim kitaplığı dosyaları için Aranan geçerli yollarını listeler.
+Başka bir bilgisayardan kopyalanan bir projeyi derlemek için Visual Studio IDE kullanıyorsanız, kitaplıkları için yükleme konumlarını farklı olabilir. Denetleme **kitaplık dizinleri** özelliği [VC ++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md) projenin ve gerekirse güncelleştirin. Aşağı açılan denetim için bakın ve IDE içinde ayarlamak geçerli kitaplık yollarını düzenlemek için seçin **kitaplık dizinleri** özelliği ve **Düzenle**. **Değeri Hesaplandı** bölümünü **kitaplık dizinleri** iletişim kitaplığı dosyaları için Aranan geçerli yollarını listeler.
 
-Bu hata, Windows SDK yolunu güncel olduğunda da meydana gelebilir. Visual Studio sürümünden daha yeni olan Windows SDK'sı sürümünü yüklediyseniz, yolları olarak belirttiğinizden emin olun. [VC ++ Directories Property Page](../../ide/vcpp-directories-property-page.md) yeni SDK'sı eşleşecek şekilde güncelleştirilir. Geliştirici Komut İstemi'ni kullanırsanız, ortam değişkenleri başlatır toplu iş dosyasını yeni SDK yollarını güncelleştirildiğinden emin olun. Bu sorun, güncelleştirilmiş bir SDK'larını yüklemek için Visual Studio yükleyicisi kullanılarak önlenebilir.
+Bu hata, Windows SDK yolunu güncel olduğunda da meydana gelebilir. Visual Studio sürümünden daha yeni olan Windows SDK'sı sürümünü yüklediyseniz, yolları olarak belirttiğinizden emin olun. [VC ++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md) yeni SDK'sı eşleşecek şekilde güncelleştirilir. Geliştirici Komut İstemi'ni kullanırsanız, ortam değişkenleri başlatır toplu iş dosyasını yeni SDK yollarını güncelleştirildiğinden emin olun. Bu sorun, güncelleştirilmiş bir SDK'larını yüklemek için Visual Studio yükleyicisi kullanılarak önlenebilir.
 
 ### <a name="cannot-open-a-third-party-library-file"></a>Bir üçüncü taraf kitaplık dosyası açılamıyor
 
@@ -51,7 +51,7 @@ Bu sorunu bazı yaygın nedenleri şunlardır:
 
 - Kitaplık bağımlılıkları yüklü olmayan diğer kitaplıkları olabilir.
 
-Bir yol sorunu düzeltmek için LIB ortam değişkeni ayarlanır ve oluşturduğunuz her yapılandırma için kullanmak kitaplıkları için tüm dizinleri içeren doğrulayın. IDE içinde LIB değişkeni ayarlamak **kitaplık dizinleri** özelliği [VC ++ Directories Property Page](../../ide/vcpp-directories-property-page.md). İhtiyacınız olan kitaplıkları içeren tüm dizinleri oluşturduğunuz her yapılandırma için burada listelenen emin olun.
+Bir yol sorunu düzeltmek için LIB ortam değişkeni ayarlanır ve oluşturduğunuz her yapılandırma için kullanmak kitaplıkları için tüm dizinleri içeren doğrulayın. IDE içinde LIB değişkeni ayarlamak **kitaplık dizinleri** özelliği [VC ++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md). İhtiyacınız olan kitaplıkları içeren tüm dizinleri oluşturduğunuz her yapılandırma için burada listelenen emin olun.
 
 Kitaplık dizinine sağlamanız gerekiyorsa, standart kitaplık dizinini geçersiz kılar, kullanabileceğiniz [/Libpath](../../build/reference/libpath-additional-libpath.md) seçeneği komut satırında veya IDE'de kullanabileceğiniz **ek kitaplık dizinleri** bir özellik **yapılandırma özellikleri > bağlayıcı > Genel** projeniz için özellik sayfası.
 
@@ -59,7 +59,7 @@ Derleme yapılandırmaları için gereksinim duyduğunuz kitaplığının her s�
 
 ### <a name="cannot-open-a-file-built-by-your-project"></a>Projeniz tarafından oluşturulmuş bir dosya açılamıyor
 
-Bu hatayı görebilirsiniz dosya *filename* çözümünüz tarafından oluşturulmuş, ancak bağlayıcı bunu erişmeyi denediğinde henüz mevcut değil. Başka bir projeye bir proje bağlıdır, ancak projelerin doğru sırada yerleşik olarak bulunmaz, bu durum ortaya çıkabilir. Bu sorunu gidermek için projenizin başvurularına geçmesi gereken, eksik dosyayı oluşturulmuştur, dosyayı kullanan projede ayarlandığından emin olun. Daha fazla bilgi için [Visual C++ projelerine başvuru ekleme](../../ide/adding-references-in-visual-cpp-projects.md) ve [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
+Bu hatayı görebilirsiniz dosya *filename* çözümünüz tarafından oluşturulmuş, ancak bağlayıcı bunu erişmeyi denediğinde henüz mevcut değil. Başka bir projeye bir proje bağlıdır, ancak projelerin doğru sırada yerleşik olarak bulunmaz, bu durum ortaya çıkabilir. Bu sorunu gidermek için projenizin başvurularına geçmesi gereken, eksik dosyayı oluşturulmuştur, dosyayı kullanan projede ayarlandığından emin olun. Daha fazla bilgi için [Visual C++ projelerine başvuru ekleme](../../build/adding-references-in-visual-cpp-projects.md) ve [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
 
 ### <a name="cannot-open-file-cprogramobj"></a>Dosya açılamıyor ' C:\\Program.obj'
 
@@ -67,7 +67,7 @@ Bu hata ya da bir beklenmeyen .obj dosyası, sürücünün kökünde içeren ben
 
 Komut satırı derlemeleri için bu sorunu gidermek için denetleme [/Libpath](../../build/reference/libpath-additional-libpath.md) seçenek parametreleri, kitaplığı ortam değişkeni içinde belirtilen yolların ve komut satırında belirtilen yolların ve çift-tüm yolları tırnak kullandığınızdan emin olun boşluk içeren.
 
-IDE içinde bu sorunu gidermek için işaretleyin **kitaplık dizinleri** özelliği [yapılandırma özellikleri > VC ++ dizinleri](../../ide/vcpp-directories-property-page.md) özellik sayfası **ek kitaplık dizinleri** özelliğinde **yapılandırma özellikleri > bağlayıcı > Genel** özellik sayfası ve **ek bağımlılıklar** özelliğinde **yapılandırma Özellikler > bağlayıcı > giriş** projeniz için özellik sayfası. İhtiyacınız olan kitaplıkları içeren dizin yolları, gerekirse çift tırnak içine sarmalanır ve emin olun.
+IDE içinde bu sorunu gidermek için işaretleyin **kitaplık dizinleri** özelliği [yapılandırma özellikleri > VC ++ dizinleri](../../build/reference/vcpp-directories-property-page.md) özellik sayfası **ek kitaplık dizinleri** özelliğinde **yapılandırma özellikleri > bağlayıcı > Genel** özellik sayfası ve **ek bağımlılıklar** özelliğinde **yapılandırma Özellikler > bağlayıcı > giriş** projeniz için özellik sayfası. İhtiyacınız olan kitaplıkları içeren dizin yolları, gerekirse çift tırnak içine sarmalanır ve emin olun.
 
 ### <a name="other-common-issues"></a>Diğer ortak sorunları
 
@@ -81,7 +81,7 @@ Tek tek kitaplıklarda belirttiğinizde **ek bağımlılıklar** özelliği doğ
 
 Bu hatayı görebilirsiniz, yolunu *filename* için 260 karakterden genişletir. Adlarını değiştirme veya gerekli dosyalara olan yolları kısaltmak için gerekirse dizin yapınızı yeniden düzenleyin.
 
-Dosya çok büyük olduğundan, bu hata oluşabilir. Daha fazla bir gigabayt boyutunda 32-bit bağlayıcı için sorunlara neden olabilir, kitaplıkları veya nesne dosyaları. Bu sorunun olası bir düzeltme 64-bit araç takımı kullanmaktır. Komut satırında nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md). IDE içinde bunun hakkında daha fazla bilgi için bkz: [64 bit derleyici ve araçlarla MSBuild kullanma](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) ve Stack Overflow yazıya: [Visual Studio yerel amd64 araç zincirini kullanın yapma](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055).
+Dosya çok büyük olduğundan, bu hata oluşabilir. Daha fazla bir gigabayt boyutunda 32-bit bağlayıcı için sorunlara neden olabilir, kitaplıkları veya nesne dosyaları. Bu sorunun olası bir düzeltme 64-bit araç takımı kullanmaktır. Komut satırında nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md). IDE içinde bunun hakkında daha fazla bilgi için bkz: [64 bit derleyici ve araçlarla MSBuild kullanma](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) ve Stack Overflow yazıya: [Visual Studio yerel amd64 araç zincirini kullanın yapma](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055).
 
 Yeterli dosya erişim iznine sahip değilse bu hata oluşabilir *filename*. Bu kitaplık dosyaları korumalı sistem dizinlerde erişmek için bir normal bir kullanıcı hesabı ve girişim kullanın veya kendi özgün izinleri olan diğer kullanıcıların kopyalanan dosya halinde gerçekleşebilir ayarlayın. Bu sorunu gidermek için dosyayı bir yazılabilir proje dizinine taşıyın. Dosya yazılabilir bir dizinde ancak erişilemez izinleri varsa bir yönetici komut istemi kullanın ve dosya sahipliğini takeown.exe komutu çalıştırın.
 

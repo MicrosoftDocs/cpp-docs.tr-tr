@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OUT dumpbin option
 - -OUT dumpbin option
 ms.assetid: 984f9ab6-685f-480b-a515-69abe9d83a65
-ms.openlocfilehash: be88bfe232d3c4cb0aa296f9180cfd8ff8e7e6ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f102a6bd43424f3d0e0f607bc9038d9ab351768
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556383"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819252"
 ---
 # <a name="out-dumpbin"></a>/OUT (DUMPBIN)
 
@@ -25,8 +25,8 @@ ms.locfileid: "50556383"
 
 Bu seçenek belirtir bir *filename* çıktı. Varsayılan olarak, standart çıktıya DUMPBIN bilgileri görüntüler.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

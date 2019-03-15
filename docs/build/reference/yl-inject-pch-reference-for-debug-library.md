@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Yl compiler option [C++]
 - /Yl compiler option [C++]
 ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
-ms.openlocfilehash: c6828fb602c7c1c0aaa7732292604706ffd45230
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92e47836e0fdae077defa0fe35b515ab4ca20a66
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587046"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810295"
 ---
 # <a name="yl-inject-pch-reference-for-debug-library"></a>/Yl (Hata Ayıklama Kitaplığı için PCH Başvurusu Ekle)
 
@@ -35,7 +35,7 @@ Bir tire (-) açıkça devre dışı bırakır **/Yl** derleyici seçeneği.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Yl** derleyici seçeneği kullanılarak oluşturulan bir ön derlenmiş üstbilgi dosyası içinde benzersiz bir simge tanımı oluşturur [/Yc](../../build/reference/yc-create-precompiled-header-file.md) seçeneği. Bu sembol başvuruları oluşturdukça otomatik önceden derlenmiş üst bilgi kullanarak dahil tüm dosyalarında [/Yu](../../build/reference/yu-use-precompiled-header-file.md) derleyici seçeneği. **/Yl** seçeneği varsayılan olarak etkin olduğunda **/Yc** Ön derlenmiş üstbilgi dosyası oluşturmak için kullanılır.
+**/Yl** derleyici seçeneği kullanılarak oluşturulan bir ön derlenmiş üstbilgi dosyası içinde benzersiz bir simge tanımı oluşturur [/Yc](yc-create-precompiled-header-file.md) seçeneği. Bu sembol başvuruları oluşturdukça otomatik önceden derlenmiş üst bilgi kullanarak dahil tüm dosyalarında [/Yu](yu-use-precompiled-header-file.md) derleyici seçeneği. **/Yl** seçeneği varsayılan olarak etkin olduğunda **/Yc** Ön derlenmiş üstbilgi dosyası oluşturmak için kullanılır.
 
 **/Yl**_adı_ seçeneği önceden derlenmiş üst bilgi dosyasında tanımlanabilir bir simge oluşturmak için kullanılır. Derleyicinin kullandığı *adı* oluşturur, benzer bağımsız değişken olarak düzenlenmiş sembol adının bir kısmını `__@@_PchSym_@00@...@name`, burada dize benzersiz bir derleyici tarafından oluşturulan üç nokta (...) temsil karakter. Varsa *adı* bağımsız değişken atlanırsa, derleyici bir sembol adı otomatik olarak oluşturur. Normalde, sembol adını bilmeniz gerekmez. Ancak, projenizi kullandığında birden fazla önceden derlenmiş üst bilgi dosyası **/Yl**_adı_ seçeneği ön derlenmiş üstbilgi kullanımı hangi nesne dosyaları belirlemek yararlı olabilir. Kullanabileceğiniz *adı* sembol başvurusu bir döküm dosyası içinde bulunacak bir arama dizesi olarak.
 
@@ -43,17 +43,17 @@ Bir tire (-) açıkça devre dışı bırakır **/Yl** derleyici seçeneği.
 
 Zaman **/Yc** belirtilmezse, tüm **/Yl** seçeneği, eşleşmelidir herhangi belirttiyseniz, ancak hiçbir etkisi **/Yl** seçeneği geçirilen **/Yc** olduğu Belirtilen.
 
-Kullanırsanız **/Yl-**, **/Yc** ve [/z7](../../build/reference/z7-zi-zi-debug-information-format.md) seçenekleri, hata ayıklama bilgileri bir ön derlenmiş üstbilgi dosyası oluşturmak için nesne dosyası oluşturmak için kullanılan kaynak dosyası için depolanır önceden derlenmiş üst bilgi yerine ayrı bir .pdb dosyası. Bu nesne dosyası bir kitaplık parçası sonra denenirse [LNK1211](../../error-messages/tool-errors/linker-tools-error-lnk1211.md) hataları veya [LNK4206](../../error-messages/tool-errors/linker-tools-warning-lnk4206.md) uyarıları kaynak dosyası oluşturmak için kullanılıyorsa bu kitaplığı ve Ön derlenmiş üstbilgi dosyası kullanan derlemeler meydana gelebilir önceden derlenmiş üstbilgi dosyasının kendisini simgeleri tanımlamıyor. Hiçbir nesne dosyası kitaplığı istemcisinde başvurulduğunda bağlantıdan ilişkili hata ayıklama bilgilerinin yanı sıra bağlayıcı nesne dosya dışarıda bırakılabilir. Bu sorunu çözmek için belirtin **/Yl** (veya kaldırma **/Yl-** seçeneği) kullandığınızda, **/Yc** önceden derlenmiş üstbilgi dosyası oluşturmak için. Bu nesne dosyası hata ayıklama bilgilerini içeren kitaplıktan yapınızda bağlı sağlar.
+Kullanırsanız **/Yl-**, **/Yc** ve [/z7](z7-zi-zi-debug-information-format.md) seçenekleri, hata ayıklama bilgileri bir ön derlenmiş üstbilgi dosyası oluşturmak için nesne dosyası oluşturmak için kullanılan kaynak dosyası için depolanır önceden derlenmiş üst bilgi yerine ayrı bir .pdb dosyası. Bu nesne dosyası bir kitaplık parçası sonra denenirse [LNK1211](../../error-messages/tool-errors/linker-tools-error-lnk1211.md) hataları veya [LNK4206](../../error-messages/tool-errors/linker-tools-warning-lnk4206.md) uyarıları kaynak dosyası oluşturmak için kullanılıyorsa bu kitaplığı ve Ön derlenmiş üstbilgi dosyası kullanan derlemeler meydana gelebilir önceden derlenmiş üstbilgi dosyasının kendisini simgeleri tanımlamıyor. Hiçbir nesne dosyası kitaplığı istemcisinde başvurulduğunda bağlantıdan ilişkili hata ayıklama bilgilerinin yanı sıra bağlayıcı nesne dosya dışarıda bırakılabilir. Bu sorunu çözmek için belirtin **/Yl** (veya kaldırma **/Yl-** seçeneği) kullandığınızda, **/Yc** önceden derlenmiş üstbilgi dosyası oluşturmak için. Bu nesne dosyası hata ayıklama bilgilerini içeren kitaplıktan yapınızda bağlı sağlar.
 
 Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz:
 
-- [/Y (Önceden Derlenmiş Üst Bilgiler)](../../build/reference/y-precompiled-headers.md)
+- [/Y (Önceden Derlenmiş Üst Bilgiler)](y-precompiled-headers.md)
 
-- [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)
+- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -65,5 +65,5 @@ Kullanırsanız **/Yl-**, **/Yc** ve [/z7](../../build/reference/z7-zi-zi-debug-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

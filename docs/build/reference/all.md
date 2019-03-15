@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -ALL dumpbin option
 - ALL dumpbin option
 ms.assetid: aa7eb74a-33ba-4d77-8620-3d7ea8b19952
-ms.openlocfilehash: 7a68f5b53745bba63539fbd7d5ccc8d36c2e01d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b02a13be70963d8c2dcf934cf2c750daf8052a9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656904"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818095"
 ---
 # <a name="all"></a>/ALL
 
@@ -23,10 +23,10 @@ ms.locfileid: "50656904"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, kod ayrıştırılmış kodu dışında tüm mevcut bilgileri görüntüler. Kullanım [/DISASM](../../build/reference/disasm.md) ayrıştırma görüntülenemiyor. Kullanabileceğiniz [/RAWDATA](../../build/reference/rawdata.md): NONE ile/tümünü ham ikili dosya ayrıntılarını atlayın.
+Bu seçenek, kod ayrıştırılmış kodu dışında tüm mevcut bilgileri görüntüler. Kullanım [/DISASM](disasm.md) ayrıştırma görüntülenemiyor. Kullanabileceğiniz [/RAWDATA](rawdata.md): NONE ile/tümünü ham ikili dosya ayrıntılarını atlayın.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

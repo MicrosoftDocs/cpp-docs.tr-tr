@@ -12,12 +12,12 @@ helpviewer_keywords:
 - symbols, add to symbol table
 - -INCLUDE linker option
 ms.assetid: 4a039677-360a-480f-bd0b-448e239b449c
-ms.openlocfilehash: 418b66cb16954f23036eaa65e07a4abf80fdba79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f7a443e32ed20550e3017c7e6ce70f4adf5137d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439344"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810997"
 ---
 # <a name="include-force-symbol-references"></a>/INCLUDE (Simge Başvurularını Zorla)
 
@@ -38,11 +38,11 @@ Birden çok sembolleri belirtmek için virgül (,), noktalı virgül (;) veya se
 
 Bağlayıcı çözümler `symbol` programa sembol tanımını içeren nesneye ekleyerek. Bu özellik, aksi takdirde program bağlanmamış kitaplık nesnesini dahil etmek için kullanışlıdır.
 
-Bu seçenekle bir simge belirtme tarafından sembolün kaldırılmasını geçersiz kılmalar [/OPT: ref](../../build/reference/opt-optimizations.md).
+Bu seçenekle bir simge belirtme tarafından sembolün kaldırılmasını geçersiz kılmalar [/OPT: ref](opt-optimizations.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -54,7 +54,7 @@ Bu seçenekle bir simge belirtme tarafından sembolün kaldırılmasını geçer
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ForceSymbolReferences%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

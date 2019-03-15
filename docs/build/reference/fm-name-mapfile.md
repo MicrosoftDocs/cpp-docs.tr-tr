@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Fm compiler option [C++]
 - /Fm compiler option [C++]
 ms.assetid: 8154448a-93a7-4546-8e4c-5c44d0aff45d
-ms.openlocfilehash: 49a3d20aee54b06bae2670be139d748fd2aaca6d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eebb1bc0c553dba1934aea75e2e63edc0f222fff
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469864"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815422"
 ---
 # <a name="fm-name-mapfile"></a>/Fm (Eşlem Dosyasını Adlandır)
 
@@ -31,15 +31,15 @@ Karşılık gelen bir .exe dosyası veya DLL göründükleri sırayla kesimlerin
 
 Varsayılan olarak, bir eşlem dosyası ile ilgili C veya C++ kaynak dosyasının temel adı verilen bir. Uzantı EŞLEYİN.
 
-Belirtme **/Fm** sizin belirlemiş olsaydık gibi aynı etkiye sahip [Map (eşlem dosyası oluştur)](../../build/reference/map-generate-mapfile.md) bağlayıcı seçeneği.
+Belirtme **/Fm** sizin belirlemiş olsaydık gibi aynı etkiye sahip [Map (eşlem dosyası oluştur)](map-generate-mapfile.md) bağlayıcı seçeneği.
 
-Belirtirseniz [/c (derleme olmadan bağlamayı)](../../build/reference/c-compile-without-linking.md) bağlama, gizlemek için **/Fm** hiçbir etkisi olmaz.
+Belirtirseniz [/c (derleme olmadan bağlamayı)](c-compile-without-linking.md) bağlama, gizlemek için **/Fm** hiçbir etkisi olmaz.
 
 Derleyici bir alt çizgi değişken adlarına eklediğinden bir eşlem içindeki genel simgeler, genellikle bir veya daha fazla önde gelen altçizgilere sahip. Mapfile içinde görünen birçok genel simgeler, derleyici ve standart kitaplıkları tarafından dahili olarak kullanılır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -51,9 +51,9 @@ Derleyici bir alt çizgi değişken adlarına eklediğinden bir eşlem içindeki
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Yol Adını Belirtme](specifying-the-pathname.md)

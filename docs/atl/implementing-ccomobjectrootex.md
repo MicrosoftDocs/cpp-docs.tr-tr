@@ -1,18 +1,16 @@
 ---
 title: CComObjectRootEx uygulama
 ms.date: 11/04/2016
-f1_keywords:
-- CComObjectRootEx
 helpviewer_keywords:
 - CComObjectRoot class, implementing
 - CComObjectRootEx class
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
-ms.openlocfilehash: e533f8809238bc94bc95a689197d56f3c616f736
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 80ce9936546b936770d8dedd0ba55f8c05617d37
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273835"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809762"
 ---
 # <a name="implementing-ccomobjectrootex"></a>CComObjectRootEx uygulama
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ErrLook tool
 - Error lookup tool
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
-ms.openlocfilehash: 598e3d938645e3d024b2409d97b4b8f082ee2d85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8afcafa7d1b8cd666eb5b02f09a14782f8621ca
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621474"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813376"
 ---
 # <a name="errlook-reference"></a>ERRLOOK Başvurusu
 
@@ -20,19 +20,19 @@ Hızlandırıcı tuşları kopyala (CTRL + C), Kes (CTRL + X) ve Yapıştır (CT
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)<br/>
+[Değer Düzenleme Denetimi](value-edit-control.md)<br/>
 ERRLOOK değer düzenleme denetimi açıklar.
 
-[Hata İletisi Düzenleme Denetimi](../../build/reference/error-message-edit-control.md)<br/>
+[Hata İletisi Düzenleme Denetimi](error-message-edit-control.md)<br/>
 ERRLOOK hata iletisi düzenleme denetimi açıklar.
 
-[Modüller Düğmesi](../../build/reference/modules-button.md)<br/>
+[Modüller Düğmesi](modules-button.md)<br/>
 Modüller düğmesi ERRLOOK açıklar.
 
-[Ara Düğmesi](../../build/reference/look-up-button.md)<br/>
+[Ara Düğmesi](look-up-button.md)<br/>
 ERRLOOK Ara düğmesine açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
 Derleme araçları Visual C++'da sağlanan C/C++ açıklayan konulara bağlantılar sağlar.

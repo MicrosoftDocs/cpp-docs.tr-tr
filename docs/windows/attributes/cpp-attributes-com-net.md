@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: 4a37542bd69926572e44322c406862117560affe
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: f9d339860e9d2bdb8d66f6b7f8f49d3993b2d5cf
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175779"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820747"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM ve .NET için C++ öznitelikleri
 
@@ -49,7 +49,7 @@ Ardından ayarlayabilirsiniz `CMyReceiver` yöntemleri `handler1` ve `handler2` 
 
 ## <a name="basic-mechanics-of-attributes"></a>Özniteliklerin Temel Mekanikleri
 
-Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, projenizde bir nesnenin özellik kılavuzu kullanarak bunları ekleyebilirsiniz. Son olarak, bunları çeşitli sihirbazlar kullanarak ekleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **özellikleri** penceresi ve çeşitli sihirbazlar [oluşturma ve yönetme, Visual C++ projeleri](../../ide/creating-and-managing-visual-cpp-projects.md).
+Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, projenizde bir nesnenin özellik kılavuzu kullanarak bunları ekleyebilirsiniz. Son olarak, bunları çeşitli sihirbazlar kullanarak ekleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **özellikleri** penceresi ve çeşitli sihirbazlar [oluşturma ve yönetme, Visual C++ projeleri](../../build/creating-and-managing-visual-cpp-projects.md).
 
 Proje derlenirken olarak önce derleyici bir nesne dosyası üretmek her C++ kaynak dosyası ayrıştırır. Ancak, derleyici bir öznitelik karşılaştığında, ayrıştırılır ve sözdizimsel olarak doğrulandı. Derleyici daha sonra kod ekleyin veya derleme zamanında başka değişiklikler yapmak için bir öznitelik sağlayıcısı dinamik olarak çağırır. Sağlayıcının uygulama özniteliği türüne bağlı olarak farklılık gösterir. Örneğin, ATL ilgili öznitelikleri Atlprov.dll tarafından uygulanır.
 
@@ -62,7 +62,7 @@ Aşağıdaki şekil, derleyici ve öznitelik sağlayıcısı arasındaki ilişki
 
 Çoğu C++ yapılarına uygun kullanımlarını tanımlayan bir dizi özellikleri özniteliklere sahiptir. Bu öznitelik bağlamı olarak adlandırılır ve öznitelik bağlamı tablosunda her öznitelik başvuru konusu ele. Örneğin, [coclass'ı](coclass.md) özniteliği yalnızca uygulanabilir bir varolan bir sınıf veya yapı, başlangıcı yerine sonundan [cpp_quote](cpp-quote.md) C++ kaynak dosyası içinde istenen yere eklenebileceğini özniteliği.
 
-## <a name="building-an-attributed-program"></a>Öznitelikli Program Derleme
+## <a name="building-an-attributed-program"></a>Öznitelikli Program Oluşturma
 
 Kaynak kodunuza Visual C++ öznitelikleri geçirdikten sonra sizin için bir tür kitaplığı ve .idl dosyası oluşturmak için Visual C++ derleyicisi isteyebilirsiniz. Aşağıdaki bağlayıcı Yardım .tlb ve .idl dosyalarını derleme seçenekleri:
 
@@ -82,7 +82,7 @@ Ayrıca, Visual C++ bağlayıcı tüm öznitelik IDL ile ilgili bilgileri tek bi
 
 C++ öznitelikleri, dört temel alan kullanarak tanımlanabilen: Bunlar uygulanabilir hedef (**uygulanacağı**), tekrarlanabilir olsalar da (**Repeatable**), diğer öznitelikleri (varlığınıgerekli **Gerekli öznitelik**) ve diğer özniteliklerini uyumsuzluklar (**geçersiz öznitelikler**). Bu alanlar, her özniteliğin başvuru konusu eşlik eden bir tabloda listelenir. Bu alanların her biri aşağıda açıklanmıştır.
 
-### <a name="applies-to"></a>Uygulandığı öğe:
+### <a name="applies-to"></a>Uygulanan Öğe
 
 Bu alan, belirtilen öznitelik için yasal hedefleri olan farklı C++ dil öğeleri açıklar. Örneğin, "class" bir öznitelik belirtir, **uygulanacağı** alan, bu gösterir öznitelik yalnızca geçerli bir C++ sınıfı için uygulanabilir. Öznitelik bir sınıfın bir üye işlevine uygulandığında sözdizimi hatası neden olur.
 

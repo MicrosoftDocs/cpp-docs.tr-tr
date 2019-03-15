@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 85439598ae4c3e0f9ef923f21e701e0399aefa70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5590996c7598016365bb122977084835830f95ab
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619303"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820799"
 ---
 # <a name="permissive--standards-conformance"></a>/ permissive-(standartlara uyumluluk)
 
@@ -29,21 +29,21 @@ Derleyici standartlara uyumluluk modu belirtin. Tanımlamak ve kodunuza daha do�
 
 Bu seçenek, Visual Studio 2017 ve sonraki sürümlerde desteklenir.
 
-Kullanabileceğiniz **/ permissive-** standartlara uyan derleyici davranışını belirtmek için derleyici seçeneği. Bu seçenek, İhtiyari davranışları devre dışı bırakır ve ayarlar [/Zc](../../build/reference/zc-conformance.md) katı uyumluluk derleyici seçenekleri. IDE'de, bu seçenek ayrıca IntelliSense altyapısı altı çizili DSCP kod yapar.
+Kullanabileceğiniz **/ permissive-** standartlara uyan derleyici davranışını belirtmek için derleyici seçeneği. Bu seçenek, İhtiyari davranışları devre dışı bırakır ve ayarlar [/Zc](zc-conformance.md) katı uyumluluk derleyici seçenekleri. IDE'de, bu seçenek ayrıca IntelliSense altyapısı altı çizili DSCP kod yapar.
 
 Varsayılan olarak, **/ permissive-** seçeneği, Visual Studio 2017 sürüm 15.5 ve sonraki sürümler tarafından oluşturulan yeni projeler ayarlanır. Önceki sürümlerde varsayılan olarak ayarlanmadı. Seçeneğini ayarlamak, derleyici tanılama hatası veriyorsa ya da standart olmayan dil yapılandırdığında uyarıları kodunuzda algılandı bazı yaygın hatalar öncesi dahil olmak üzere-C ++ 11 kod.
 
 **/ Permissive-** seçeneği, neredeyse tüm son Windows Setleri, Yazılım Geliştirme Seti (SDK) veya Windows Sürücü Seti'nin (WDK), Windows Fall Creators SDK (10.0.16299.0) başlatma gibi üstbilgi dosyalarından ile uyumludur. Altında derlemek SDK'sının daha eski sürümleri kaydedemeyebilir **/ permissive-** çeşitli kod uyumluluk nedeniyle kaynağı için. Derleyici ve SDK'ları sevk üzerinde farklı yayın zaman çizelgelerini, bu nedenle kalan bazı sorunlar vardır. Özel üst bilgi dosyası sorunları için bkz: [Windows üst bilgi sorunları](#windows-header-issues) aşağıda.
 
-**/ Permissive-** seçenek kümeleri [/ZC: strictstrings](../../build/reference/zc-conformance.md) ve [/ZC: rvaluecast](../../build/reference/zc-conformance.md) uyumlu davranışı seçenekleri. Bunlar varsayılan DSCP davranışı için. Belirli geçirebilirsiniz **/Zc** sonra seçenekleri **/ permissive-** bu davranışı geçersiz kılmak için komut satırında.
+**/ Permissive-** seçenek kümeleri [/ZC: strictstrings](zc-conformance.md) ve [/ZC: rvaluecast](zc-conformance.md) uyumlu davranışı seçenekleri. Bunlar varsayılan DSCP davranışı için. Belirli geçirebilirsiniz **/Zc** sonra seçenekleri **/ permissive-** bu davranışı geçersiz kılmak için komut satırında.
 
-Visual Studio 2017 sürüm 15.3, derleyici başlangıçta sürümlerinde **/ permissive-** seçenek kümeleri [/ZC: ternary](../../build/reference/zc-ternary.md) seçeneği. Derleyici daha iki aşamalı ad arama gereksinimlerini uygular. Zaman **/ permissive-** seçeneği ayarlanır, derleme şablonlarında kullanılan bağımlı ve bağımlı olmayan adları tanımlama, işlevi ve sınıf şablonu tanımlarını ayrıştırır. Bu sürümde, yalnızca ad bağımlılık analizi gerçekleştirilir.
+Visual Studio 2017 sürüm 15.3, derleyici başlangıçta sürümlerinde **/ permissive-** seçenek kümeleri [/ZC: ternary](zc-ternary.md) seçeneği. Derleyici daha iki aşamalı ad arama gereksinimlerini uygular. Zaman **/ permissive-** seçeneği ayarlanır, derleme şablonlarında kullanılan bağımlı ve bağımlı olmayan adları tanımlama, işlevi ve sınıf şablonu tanımlarını ayrıştırır. Bu sürümde, yalnızca ad bağımlılık analizi gerçekleştirilir.
 
 Ortama özgü Uzantılar ve standart uygulama en fazla bırakır dil alanları etkilenmez **/ permissive-**. Örneğin, Microsoft'a özgü `__declspec`, çağırma kuralı ve yapılandırılmış özel durum işleme anahtar sözcükler ve derleyiciye özgü pragma yönergeleri veya öznitelikleri değil işaretlenir derleyici tarafından **/ permissive-** modu.
 
-**/ Permissive-** seçeneği DSCP hangi dil yapıları belirlemek üzere geçerli derleyici sürümünde uyumluluk desteği kullanır. Seçeneği, kodu belirli bir C++ standart sürümü için uygun olup olmadığı. En son taslak standardı için tüm uygulanan derleyici desteği etkinleştirmek için [/std:latest](../../build/reference/std-specify-language-standard-version.md) seçeneği. Şu anda uygulanan C ++ 17'ye standart derleyici desteği kısıtlamak için [/Std: c ++ 17](../../build/reference/std-specify-language-standard-version.md) seçeneği. Derleyici desteği, C ++ 14 standardı daha yakından eşleşecek şekilde kısıtlamak için [/Std: c ++ 14](../../build/reference/std-specify-language-standard-version.md) seçeneği, varsayılan değerdir.
+**/ Permissive-** seçeneği DSCP hangi dil yapıları belirlemek üzere geçerli derleyici sürümünde uyumluluk desteği kullanır. Seçeneği, kodu belirli bir C++ standart sürümü için uygun olup olmadığı. En son taslak standardı için tüm uygulanan derleyici desteği etkinleştirmek için [/std:latest](std-specify-language-standard-version.md) seçeneği. Şu anda uygulanan C ++ 17'ye standart derleyici desteği kısıtlamak için [/Std: c ++ 17](std-specify-language-standard-version.md) seçeneği. Derleyici desteği, C ++ 14 standardı daha yakından eşleşecek şekilde kısıtlamak için [/Std: c ++ 14](std-specify-language-standard-version.md) seçeneği, varsayılan değerdir.
 
-Değil tüm C ++ 11, C ++ 14 ve C ++ 17 standartlarına uygun kod, Visual Studio 2017 için Visual C++ derleyicisi tarafından desteklenir. Visual Studio sürümüne bağlı olarak **/ permissive-** seçeneği ile ilgili bazı yönleri iki aşamalı ad aramayı, geçici bir const olmayan başvuruya bağlanıyor, kopya başlatma doğrudan init davranılması, izin sorunları algılama birden çok kullanıcı tanımlı dönüşümler başlatma veya alternatif belirteçler için mantıksal işleçler ve diğer desteklenmeyen uygunluk alanları. Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md). En iyi şekilde faydalanmaya yönelik **/ permissive-**, Visual Studio'nun en son sürüme güncelleştirin.
+Değil tüm C ++ 11, C ++ 14 ve C ++ 17 standartlarına uygun kod, Visual Studio 2017'de MSVC derleyici tarafından desteklenir. Visual Studio sürümüne bağlı olarak **/ permissive-** seçeneği ile ilgili bazı yönleri iki aşamalı ad aramayı, geçici bir const olmayan başvuruya bağlanıyor, kopya başlatma doğrudan init davranılması, izin sorunları algılama birden çok kullanıcı tanımlı dönüşümler başlatma veya alternatif belirteçler için mantıksal işleçler ve diğer desteklenmeyen uygunluk alanları. Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md). En iyi şekilde faydalanmaya yönelik **/ permissive-**, Visual Studio'nun en son sürüme güncelleştirin.
 
 ### <a name="how-to-fix-your-code"></a>Kodunuzu düzeltmenin nasıl
 
@@ -425,7 +425,7 @@ Bu sorunlar, Windows Fall Creators Update SDK (10.0.16299.0) kullanıcı modu ü
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   Kapsamsız bir Enum İleri dönük bildirimi bir Microsoft uzantısıdır. Bu sorunu gidermek için olmadan cellularapi_oem.h içeren dosyaların derleme **/ permissive-** seçeneğini veya kullanın [/wd](../../build/reference/compiler-option-warning-level.md) uyarı C4471 sessiz için seçeneği.
+   Kapsamsız bir Enum İleri dönük bildirimi bir Microsoft uzantısıdır. Bu sorunu gidermek için olmadan cellularapi_oem.h içeren dosyaların derleme **/ permissive-** seçeneğini veya kullanın [/wd](compiler-option-warning-level.md) uyarı C4471 sessiz için seçeneği.
 
 - İçinde um/omscript.h sorunu
 
@@ -464,5 +464,5 @@ Visual Studio 2017 sürüm 15.5 önce sürümlerinde, bu yordamı kullanın:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
-- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+- [MSVC derleyici seçenekleri](compiler-options.md)
+- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-ms.openlocfilehash: 38f2e08139566ce6c70755cd367edf93677ef9af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f01e69138a6ca1744645a1c2fa8525b7088e260d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614415"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814559"
 ---
 # <a name="mutual-imports"></a>Karşılıklı İçeri Aktarmalar
 
@@ -41,7 +41,7 @@ Karşılıklı içeri aktarmalar işleme için genel bir çözüm şöyledir:
 
 Aşağıdaki çizimde, iki karşılıklı içe aktarma DLL'leri, DLL1 ve DLL2 için bir çözüm gösterilmektedir. Adım 1/DEF seçeneği kümesinde DLL1 ile LIB, çalıştırmaktır. 1. adım DLL1.lib, bir içeri aktarma kitaplığını ve DLL1.exp'yi üretir. 2. adımda içeri aktarma kitaplığını sırayla DLL2'ın sembolleri için bir içeri aktarma kitaplığını oluşturan DLL2 oluşturmak için kullanılır. 3. adım, giriş olarak DLL1.exp'yi ve DLL2.lib'ı kullanarak, DLL1 oluşturur. LIB DLL2'ın içeri aktarma kitaplığı oluşturmak için kullanılamaz olduğundan DLL2 .exp dosyasının gerekli olmadığını unutmayın.
 
-![Karşılıklı içeri aktarmalar iki DLL bağlamak için kullanarak](../build/media/vc37yj1.gif "iki DLL bağlamak için karşılıklı içeri aktarmalar'ı kullanma")<br/>
+![Karşılıklı içeri aktarmalar iki DLL bağlamak için kullanarak](media/vc37yj1.gif "iki DLL bağlamak için karşılıklı içeri aktarmalar'ı kullanma")<br/>
 Karşılıklı içeri aktarmalar ile iki DLL'leri bağlama
 
 ## <a name="limitations-of-afxext"></a>_AFXEXT Sınırlamaları
@@ -109,24 +109,24 @@ class CExampleA : public CObject
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)
+- [DLL'den dışarı aktarma](exporting-from-a-dll.md)
 
-- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](../build/exporting-from-a-dll-using-def-files.md)
+- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [/ DEF seçeneği ve LIB yardımcı programı](../build/reference/lib-reference.md)
+- [/ DEF seçeneği ve LIB yardımcı programı](reference/lib-reference.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)
+[İçeri ve Dışarı Aktarma](importing-and-exporting.md)

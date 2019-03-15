@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MP compiler option (C++)
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
-ms.openlocfilehash: d0a3e50ca75535d505e46c0e454a8e0902b1ffb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a66f6f6f1f4ce77e33df992b915be9ca5dcce70
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562090"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808462"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
 
@@ -50,10 +50,10 @@ Aşağıdaki tablo, derleyici seçenekleri ve ile uyumsuz dil özelliklerini lis
 |Seçeneği veya dil özelliği|Açıklama|
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) önişlemci yönergesi|Bir tür kitaplığındaki tür C++ sınıflarına dönüştürür ve ardından söz konusu sınıfın bir üst bilgi dosyasına yazar.|
-|[/E](../../build/reference/e-preprocess-to-stdout.md), [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısını standart çıktıya kopyalar (**stdout**).|
-|[/Gm](../../build/reference/gm-enable-minimal-rebuild.md)|Bir artımlı yeniden etkinleştirir.|
-|[/ showıncludes](../../build/reference/showincludes-list-include-files.md)|Standart hatayı ekleme kodu dosyalarının bir listesini yazar (**stderr**).|
-|[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|Önceden derlenmiş üst bilgi dosyasına yazar.|
+|[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısını standart çıktıya kopyalar (**stdout**).|
+|[/Gm](gm-enable-minimal-rebuild.md)|Bir artımlı yeniden etkinleştirir.|
+|[/ showıncludes](showincludes-list-include-files.md)|Standart hatayı ekleme kodu dosyalarının bir listesini yazar (**stderr**).|
+|[/Yc](yc-create-precompiled-header-file.md)|Önceden derlenmiş üst bilgi dosyasına yazar.|
 
 ## <a name="diagnostic-messages"></a>Tanılama iletileri
 
@@ -61,7 +61,7 @@ Uyumlu olmayan bir seçenek veya dil özelliği belirtirseniz **/MP** seçeneği
 
 |Tanılama iletisi|Açıklama|Derleyici davranışı|
 |------------------------|-----------------|-----------------------|
-|**C2813**|**#İmport** yönergesi ile uyumlu değil **/MP** seçeneği.|Derleme sürece biten bir [derleyici uyarı düzeyini](../../build/reference/compiler-option-warning-level.md) seçeneği, aksi takdirde belirtir.|
+|**C2813**|**#İmport** yönergesi ile uyumlu değil **/MP** seçeneği.|Derleme sürece biten bir [derleyici uyarı düzeyini](compiler-option-warning-level.md) seçeneği, aksi takdirde belirtir.|
 |**D9014**|Geçersiz bir değer için belirtilen *processMax* bağımsız değişken.|Derleyici, geçersiz bir değer yok sayar ve 1 değeri kabul eder.|
 |**D9030**|Belirtilen seçeneği ile uyumlu **/MP**.|Derleyicinin yoksaydığı **/MP** seçeneği.|
 
@@ -99,7 +99,7 @@ Kaynak dosyaları, komut satırında göründükleri sırayla derlenmeyebilir. D
 
 Bir işlem bu derleme kullanılabilir olduğunda, bir kaynak dosyası derlenir. Daha fazla dosyalardan işlemler varsa, ilk dosya kümesini kullanılabilir işlemler tarafından derlenir. Bir işlem önceki dosya işleme tamamlandıktan ve kalan dosyaları biri üzerinde çalışmak için uygun olduğunda kalan dosyaları işlenir.
 
-Aynı kaynak dosyası birden çok kez bir komut satırında belirtmeyin. Bir aracı otomatik olarak oluşturursa Bu, örneğin, durum ortaya çıkabilir bir [derleme görevleri dosyası](../../build/contents-of-a-makefile.md) bağımlılık bilgileri projesinde dayanır. Siz belirtmezseniz **/MP** seçeneği, derleyicinin dosyaların listesini sıralı olarak işlediğinden ve her oluşumu dosyanın yeniden derler. Ancak, belirtirseniz **/MP** seçeneği, farklı derleyiciler aynı anda aynı dosyanın derleme. Sonuç olarak, farklı derleyiciler aynı anda aynı çıktı dosyasına yazma dener. Bir derleyici özel çıkış dosyası yazma erişim kazanmak ve başarılı ve diğer derleyiciler bir dosya erişim hatası ile başarısız olur.
+Aynı kaynak dosyası birden çok kez bir komut satırında belirtmeyin. Bir aracı otomatik olarak oluşturursa Bu, örneğin, durum ortaya çıkabilir bir [derleme görevleri dosyası](contents-of-a-makefile.md) bağımlılık bilgileri projesinde dayanır. Siz belirtmezseniz **/MP** seçeneği, derleyicinin dosyaların listesini sıralı olarak işlediğinden ve her oluşumu dosyanın yeniden derler. Ancak, belirtirseniz **/MP** seçeneği, farklı derleyiciler aynı anda aynı dosyanın derleme. Sonuç olarak, farklı derleyiciler aynı anda aynı çıktı dosyasına yazma dener. Bir derleyici özel çıkış dosyası yazma erişim kazanmak ve başarılı ve diğer derleyiciler bir dosya erişim hatası ile başarısız olur.
 
 ### <a name="using-type-libraries-import"></a>Tür kitaplıklarını (#import) kullanma
 

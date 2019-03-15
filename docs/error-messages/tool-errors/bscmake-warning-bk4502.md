@@ -3,17 +3,15 @@ title: BSCMAKE Uyarısı BK4502
 ms.date: 11/04/2016
 f1_keywords:
 - BK4502
-- BK1513
 helpviewer_keywords:
-- BK1513
 - BK4502
 ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
-ms.openlocfilehash: 34b0204744b390ac32371ff2611e43b215dc0f40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 47bb81827bb6ae1f580ff907be6c0acf7139a29a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596358"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821462"
 ---
 # <a name="bscmake-warning-bk4502"></a>BSCMAKE Uyarısı BK4502
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DEBUGTYPE linker option
 - -DEBUGTYPE linker option
 ms.assetid: 1ddcb718-7fec-4f92-a319-3f70f04fe742
-ms.openlocfilehash: f730e485b7dc29cb8fe98bdcc7ea50f5e8c622d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 00e3cb61f8ec9aa707bb72aa9ff05a64f98d4e47
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676999"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820058"
 ---
 # <a name="debugtype-debug-info-options"></a>/DEBUGTYPE (Hata Ayıklama Bilgisi Seçenekleri)
 
@@ -40,11 +40,11 @@ Bağımsız değişkenleri **/DEBUGTYPE** herhangi bir sırada virgül ile ayır
 
 Kullanım **/DEBUGTYPE** konum değiştirme tablosu veri veya .pdata ve .xdata başlık bilgilerini dahil edilmesi hata ayıklama akışında belirtmek için seçeneği. Bu, çekirdek modu kodu bozucu bir çekirdek hata ayıklayıcısı içinde görülebilir kullanıcı modu kodu hakkında bilgi dahil etmesini bağlayıcıya neden olur. Hata ayıklama simgeleri ne zaman kullanılabilir hale getirmek **düzeltme** olduğundan belirtilen dahil **CV** bağımsız değişken.
 
-Uygulamalar için tipik olan kullanıcı modu kodunda hata ayıklamak için **/DEBUGTYPE** seçeneği gerekli olmayan. Varsayılan olarak, hata ayıklama belirten derleyici anahtarları çıktı ([/z7, / zi, /zı](../../build/reference/z7-zi-zi-debug-information-format.md)) tüm bilgileri Visual Studio hata ayıklayıcı gösterin. Kullanım **/DEBUGTYPE:PDATA** veya **/DEBUGTYPE:CV, PDATA, düzeltme** bir aygıt sürücüsü için bir yapılandırma uygulaması gibi kullanıcı modu hem de çekirdek modu bileşenlerini bir araya getiren kod hatalarını ayıklamak için. Çekirdek modu hata ayıklayıcıları hakkında daha fazla bilgi için bkz: [hata ayıklama araçları için Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
+Uygulamalar için tipik olan kullanıcı modu kodunda hata ayıklamak için **/DEBUGTYPE** seçeneği gerekli olmayan. Varsayılan olarak, hata ayıklama belirten derleyici anahtarları çıktı ([/z7, / zi, /zı](z7-zi-zi-debug-information-format.md)) tüm bilgileri Visual Studio hata ayıklayıcı gösterin. Kullanım **/DEBUGTYPE:PDATA** veya **/DEBUGTYPE:CV, PDATA, düzeltme** bir aygıt sürücüsü için bir yapılandırma uygulaması gibi kullanıcı modu hem de çekirdek modu bileşenlerini bir araya getiren kod hatalarını ayıklamak için. Çekirdek modu hata ayıklayıcıları hakkında daha fazla bilgi için bkz: [hata ayıklama araçları için Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/DEBUG (Hata Ayıklama Bilgileri Üret)](../../build/reference/debug-generate-debug-info.md)<br/>
-[/DRIVER (Windows NT Çekirdek Modu Sürücüsü)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)<br/>
-[/PROFILE (Performans Araçları Profil Oluşturucusu)](../../build/reference/profile-performance-tools-profiler.md)<br/>
+[/DEBUG (Hata Ayıklama Bilgileri Üret)](debug-generate-debug-info.md)<br/>
+[/DRIVER (Windows NT Çekirdek Modu Sürücüsü)](driver-windows-nt-kernel-mode-driver.md)<br/>
+[/PROFILE (Performans Araçları Profil Oluşturucusu)](profile-performance-tools-profiler.md)<br/>
 [(WinDbg, KD, CDB, NTSD) Windows için hata ayıklama araçları](/windows-hardware/drivers/debugger/index)

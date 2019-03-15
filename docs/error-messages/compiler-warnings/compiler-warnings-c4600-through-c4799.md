@@ -57,14 +57,13 @@ f1_keywords:
 - C4767
 - C4770
 - C4792
-- C4794
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
-ms.openlocfilehash: 02b679e3cfb91b09db381b014ba2f3d3d0e5b02a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4acc36fcf7508bdcfcc1bd936110df4c32c47ae2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553165"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810087"
 ---
 # <a name="compiler-warnings-c4600-through-c4799"></a>Derleyici uyarılarını C4600 ile c4799 arasındaki
 
@@ -147,7 +146,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 4) C4681|'class': coclass olay kaynağı olan varsayılan bir arabirim belirtmiyor|
 |Derleyici Uyarısı (düzey 4) C4682|'parameter': [in] varsayarak, hiçbir parametre özniteliği belirtilmedi|
 |[Derleyici Uyarısı (düzey 1) C4683](../../error-messages/compiler-warnings/compiler-warning-level-1-c4683.md)|'function': olay kaynağı olan bir 'out'-parametre; birden çok olay işleyicisi yakalarken dikkatli olun|
-|[Derleyici Uyarısı (düzey 1) C4684](../../error-messages/compiler-warnings/compiler-warning-level-1-c4684.md)|'attribute': uyarı!! öznitelik geçersiz kod oluşturmaya neden olabilir: dikkatli kullanın|
+|[Derleyici Uyarısı (düzey 1) C4684](../../error-messages/compiler-warnings/compiler-warning-level-1-c4684.md)|'attribute': UYARI!! öznitelik geçersiz kod oluşturmaya neden olabilir: dikkatli kullanın|
 |Derleyici Uyarısı (düzey 1) C4685|bekleniyor ' >> ' bulundu ' >> ' şablon parametreleri ayrıştırılırken|
 |[Derleyici Uyarısı (düzey 3) C4686](../../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)|'user-defined type': davranışta olası bir değişiklik var, UDT'de değişiklik çağırma kuralı döndürüyor|
 |[Derleyici Uyarısı (hata) C4687](../../error-messages/compiler-warnings/compiler-warning-c4687.md)|'class': kapalı bir soyut sınıf 'interface' bir arabirim uygulayamaz|
@@ -194,7 +193,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (Düzey 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type', 'dosya1' ve 'dosya2' başka bir boyutu vardır: sayı ve bayt sayısı|
 |[Derleyici Uyarısı (Düzey 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var', 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'|
 |[Derleyici Uyarısı C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|Geçici Erişim '*ifade*' / volatile tabi olduğu:\<ISO&#124;ms > ayarı; iç işlevleri __iso_volatile_load depolama kullanmayı düşünün|
-|[Derleyici Uyarısı (düzey 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Çağırma yönetilen 'giriş noktası': yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir|
+|[Derleyici Uyarısı (düzey 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Yönetilen çağırma 'giriş noktası': Yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir|
 |Derleyici Uyarısı (düzey 4) C4749|koşullu olarak desteklenir: olmayan Düzen standart türe uygulanan'offsetof '*türü*'|
 |Derleyici Uyarısı (düzey 1) C4750|'identifier': işlev bir döngünün satır içine _alloca() değerine sahip|
 |Derleyici Uyarısı (düzey 4) C4751|/ arch: satır içi ASM'de olan Intel(r) Streaming SIMD Extensions için geçerli değildir|

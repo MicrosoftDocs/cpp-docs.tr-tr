@@ -10,12 +10,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
-ms.openlocfilehash: 6be3b15efb56e97d658edb5890c3bdce4f64fbd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfe351daf43b913f10df74b1059ba98f7d5d657b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625166"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815170"
 ---
 # <a name="c-compile-without-linking"></a>/c (Bağlamadan Derle)
 
@@ -55,7 +55,7 @@ Yürütülebilir bir dosya oluşturmak için bağlantı çağırmanız gerekir:
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

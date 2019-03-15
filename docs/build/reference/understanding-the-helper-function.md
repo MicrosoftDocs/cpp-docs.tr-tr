@@ -10,12 +10,12 @@ helpviewer_keywords:
 - delayimp.h
 - helper functions
 ms.assetid: 6279c12c-d908-4967-b0b3-cabfc3e91d3d
-ms.openlocfilehash: ee2a8b66eaf4a8ba29ba3de7e63407bea738d626
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ad193d0101507f43145c6af9f8e6200ab6fcdb5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440150"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818001"
 ---
 # <a name="understanding-the-helper-function"></a>Yardımcı İşlevini Anlama
 
@@ -53,16 +53,16 @@ Varsayılan yardımcı kod Delayhlp.cpp ve Delayimp.h (vc\include içinde) bulun
 
 Aşağıdaki konularda yardımcı işlevini açıklanmaktadır:
 
-- [Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
+- [Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri](changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
 
-- [Çağırma Kuralları, Parametreler ve Dönüş Türü](../../build/reference/calling-conventions-parameters-and-return-type.md)
+- [Çağırma Kuralları, Parametreler ve Dönüş Türü](calling-conventions-parameters-and-return-type.md)
 
-- [Yapı ve Sabit Tanımları](../../build/reference/structure-and-constant-definitions.md)
+- [Yapı ve Sabit Tanımları](structure-and-constant-definitions.md)
 
-- [Gereken Değerleri Hesaplama](../../build/reference/calculating-necessary-values.md)
+- [Gereken Değerleri Hesaplama](calculating-necessary-values.md)
 
-- [Gecikmeli Yüklenen DLL'i Kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)
+- [Gecikmeli Yüklenen DLL'i Kaldırma](explicitly-unloading-a-delay-loaded-dll.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)

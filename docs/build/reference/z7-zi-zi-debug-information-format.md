@@ -23,12 +23,12 @@ helpviewer_keywords:
 - line numbers only compiler option [C++]
 - cl.exe compiler, debugging options
 - -Z7 compiler option [C++]
-ms.openlocfilehash: 43ffbe76092b9675be1610e58c65c0034955634f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1beab7cb1e8e654d25620eb59a9326f5628ce047
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479055"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816327"
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)
 
@@ -42,7 +42,7 @@ Programınız ve bu bilgileri nesne dosyalarında veya program veritabanı (PDB)
 
 Derleyici, kod derlenir ve hata ayıklama modunda yerleşik işlevleri ve değişkenler, tür bilgilerini ve satır numarası konumları hata ayıklayıcı tarafından kullanılmak için Sembol adlarını üretir. Bu sembolik hata ayıklama bilgileri, derleyici tarafından üretilen nesne dosyalarında (.obj dosyaları) veya yürütülebilir dosya için ayrı bir PDB dosyası (.pdb dosyası) eklenebilir.  Hata ayıklama bilgi biçimi seçenekleri aşağıdaki bölümlerde açıklanmıştır.
 
-### <a name="none"></a>Yok.
+### <a name="none"></a>Hiçbiri
 
 Hata ayıklama bilgi biçimi seçeneği belirtilmezse, varsayılan olarak, derleyici derleme daha hızlı, bu nedenle, hata ayıklama bilgisi üretir.
 
@@ -50,15 +50,15 @@ Hata ayıklama bilgi biçimi seçeneği belirtilmezse, varsayılan olarak, derle
 
 **/Z7** seçeneği de kullanmak için hata ayıklayıcısı ile tam sembolik hata ayıklama bilgilerini içeren bir nesne dosyaları üretir. Bu nesne dosyaları ve yerleşik yürütülebilir dosya hata ayıklama bilgisi dosyalardan önemli ölçüde daha büyük olabilir. Sembolik hata ayıklama bilgileri, adlarını ve türlerini değişkenlerin, hem de işlevler ve satır numaralarını içerir. Hiç PDB dosyası oluşturulur.
 
-Hata ayıklama sürümleri, üçüncü taraf kitaplıkların dağıtıcıları için bir PDB dosyası olmaması bir avantajı yoktur. Ancak, önceden derlenmiş üst bilgileri için nesne dosyaları kitaplığı bağlantı aşaması sırasında ve hata ayıklama için gereklidir. Varsa yalnızca .pch nesne dosyasında bilgi (ve kod) yazın, ayrıca kullanmalısınız [/Yl (ekleme PCH başvurusu hata ayıklama kitaplığı için)](../../build/reference/yl-inject-pch-reference-for-debug-library.md) seçeneği kitaplığı derlerken, varsayılan olarak etkindir.
+Hata ayıklama sürümleri, üçüncü taraf kitaplıkların dağıtıcıları için bir PDB dosyası olmaması bir avantajı yoktur. Ancak, önceden derlenmiş üst bilgileri için nesne dosyaları kitaplığı bağlantı aşaması sırasında ve hata ayıklama için gereklidir. Varsa yalnızca .pch nesne dosyasında bilgi (ve kod) yazın, ayrıca kullanmalısınız [/Yl (ekleme PCH başvurusu hata ayıklama kitaplığı için)](yl-inject-pch-reference-for-debug-library.md) seçeneği kitaplığı derlerken, varsayılan olarak etkindir.
 
-[/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../../build/reference/gm-enable-minimal-rebuild.md) seçeneği kullanılamaz olduğunda **/z7** belirtilir.
+[/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](gm-enable-minimal-rebuild.md) seçeneği kullanılamaz olduğunda **/z7** belirtilir.
 
 ### <a name="zi"></a>/Zi
 
 **/Zi** seçenek sembolik hata ayıklama bilgilerini kullanmak için hata ayıklayıcısı ile içeren ayrı bir PDB dosyası oluşturur. Hata ayıklama bilgilerini nesne dosyalarında bulunmayan veya yürütülebilir dosyası, hangi bunları çok daha küçük yapar.
 
-Kullanım **/zi** iyileştirmeleri etkilemez. Ancak, **/zi** gelmez **/debug**; bkz [/Debug (hata ayıklama bilgisi Oluştur)](../../build/reference/debug-generate-debug-info.md) daha fazla bilgi için.
+Kullanım **/zi** iyileştirmeleri etkilemez. Ancak, **/zi** gelmez **/debug**; bkz [/Debug (hata ayıklama bilgisi Oluştur)](debug-generate-debug-info.md) daha fazla bilgi için.
 
 Belirtirseniz her ikisi de **/zi** ve **/CLR**, <xref:System.Diagnostics.DebuggableAttribute> özniteliği derleme metaverisine yerleştirilmez değil yerleştirilir. İsterseniz, kaynak kodda belirtmeniz gerekir. Bu öznitelik, uygulamanın çalışma zamanı performansını etkileyebilir. Nasıl hakkında daha fazla bilgi için **Debuggable** özniteliği performansını etkiler ve performans etkisini değiştirebileceğiniz edinmek bkz [bir görüntü için hata ayıklama kolaylaştıracak](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug).
 
@@ -70,16 +70,16 @@ Kullanılarak derlenmiş nesnelerden bir kitaplık oluşturursanız **/zi**, kit
 
 **/Zi** seçeneği benzer **/zi**, ancak destekleyen biçimde bir PDB dosyası oluşturan [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue-visual-cpp) özelliği. Düzenle ve devam et hata ayıklama özellikleri kullanmak için bu seçeneği kullanmanız gerekir. Düzenle ve devam et özelliğini Geliştirici üretkenliğini için yararlıdır, ancak kod boyutuna, performans ve derleyici uyumluluğu sorunlarına neden olabilir. Çoğu iyileştirme Düzenle ve devam et ile uyumlu olmadığından kullanarak **/zi** herhangi `#pragma optimize` kodunuzda deyimleri. **/Zi** seçeneği kullanımıyla uyumlu ayrıca [ &#95; &#95;satırı&#95; &#95; önceden tanımlanmış makro](../../preprocessor/predefined-macros.md); derlenmiş kodu **/zi** kullanamazsınız **&#95; &#95;Satırı&#95; &#95;** bir tür olmayan şablon bağımsız değişkeni olarak rağmen **&#95; &#95;satırı&#95; &#95;** makro genişletme içinde kullanılabilir.
 
-**/Zi** seçeneği hem de zorlar [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md) ve [/FC (tam yol, kaynak kodu dosyasında tanılama)](../../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md) öğelerinin derlemenizde kullanılacak Seçenekler.
+**/Zi** seçeneği hem de zorlar [/Gy (işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md) ve [/FC (tam yol, kaynak kodu dosyasında tanılama)](fc-full-path-of-source-code-file-in-diagnostics.md) öğelerinin derlemenizde kullanılacak Seçenekler.
 
-**/Zı** ile uyumlu olmayan [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+**/Zı** ile uyumlu olmayan [/CLR (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md).
 
 > [!NOTE]
 > **/Zi** seçeneği, yalnızca x86 ve x64 işlemcileri hedefleyen derleyicilerde kullanılabilir; Bu derleyici seçeneğini ARM işlemcileri hedefleyen derleyicilerde kullanılabilir değil.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Açık **yapılandırma özellikleri** > **C/C++** > **genel** özellik sayfası.
 
@@ -91,6 +91,6 @@ Kullanılarak derlenmiş nesnelerden bir kitaplık oluşturursanız **/zi**, kit
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
 

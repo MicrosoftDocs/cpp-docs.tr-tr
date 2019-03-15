@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -SECTION linker option
 - section attributes
 - /SECTION linker option
-ms.openlocfilehash: d86dca297940da4978fe42270f444acc5f11fd82
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fb73043c9c185adee0859bb81098eab022430c2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543708"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816561"
 ---
 # <a name="section-specify-section-attributes"></a>/SECTION (Bölüm Özniteliklerini Belirt)
 
@@ -31,9 +31,9 @@ Bunlar standart adlarla çakışıp olarak aşağıdaki adları kullanmayın. Ö
 
 - .arch
 
-- .BSS
+- .bss
 
-- .Data
+- .data
 
 - .edata
 
@@ -71,15 +71,15 @@ Bir öznitelik negatif yapılacak, ünlem işareti (!) karakteriyle koyun. Özni
 |K|Önbelleğe alınabilir|Bölüm önbelleğe alınabilir değil olarak işaretler.|
 |P|Alınabilir|Bölüm alınabilir değil olarak işaretler.|
 
-K P kendisine karşılık gelen bölüm bayrakları negatif anlamda kullanılır, olağan değildir. Bunlardan biri .text bölümünü kullanarak belirtirseniz **/SECTION:.text, K** seçeneği, bölüm bayrakları fark çalıştırdığınızda [DUMPBIN](../../build/reference/dumpbin-options.md) ile [OPTIONAL](../../build/reference/headers.md)seçeneği; Bölümü örtük olarak zaten önbelleğe. Varsayılan kaldırmak için bu seçeneği belirtin **/SECTION:.text,! K** yerine. DUMPBIN "Önbelleğe alınmaz." dahil olmak üzere, bölüm özellikleri gösterir.
+K P kendisine karşılık gelen bölüm bayrakları negatif anlamda kullanılır, olağan değildir. Bunlardan biri .text bölümünü kullanarak belirtirseniz **/SECTION:.text, K** seçeneği, bölüm bayrakları fark çalıştırdığınızda [DUMPBIN](dumpbin-options.md) ile [OPTIONAL](headers.md)seçeneği; Bölümü örtük olarak zaten önbelleğe. Varsayılan kaldırmak için bu seçeneği belirtin **/SECTION:.text,! K** yerine. DUMPBIN "Önbelleğe alınmaz." dahil olmak üzere, bölüm özellikleri gösterir.
 
 Büyük olasılıkla E, R ya da ayarlanmış W yok PE dosyasının bir bölümünde geçersiz.
 
-**HİZALA =**_numarası_ bağımsız değişkeni bir hizalama değeri belirli bir bölümü için belirtmenize olanak sağlar. _Numarası_ bağımsız değişkeni bayt ve ikinin üssü olmalıdır. Bkz: [/hizalama](../../build/reference/align-section-alignment.md) daha fazla bilgi için.
+**HİZALA =**_numarası_ bağımsız değişkeni bir hizalama değeri belirli bir bölümü için belirtmenize olanak sağlar. _Numarası_ bağımsız değişkeni bayt ve ikinin üssü olmalıdır. Bkz: [/hizalama](align-section-alignment.md) daha fazla bilgi için.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
@@ -91,5 +91,5 @@ Büyük olasılıkla E, R ya da ayarlanmış W yok PE dosyasının bir bölümü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

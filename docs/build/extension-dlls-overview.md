@@ -8,12 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
-ms.openlocfilehash: 0ad5c82d72a3cd9b4801274aefd40d96afdbcdd1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ab9b980cbb3e89eebee945e90c54f23d6717a1a4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425061"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816483"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC uzantı DLL'leri: Genel Bakış
 
@@ -27,22 +27,22 @@ AFXDLL terimi artık Visual C++ belgelerinde kullanılan unutmayın. Bir MFC uza
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Bir MFC uzantılı DLL başlatma](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [Bir MFC uzantılı DLL başlatma](run-time-library-behavior.md#initializing-extension-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC uzantısı DLL’leri](../build/extension-dlls.md)
+- [MFC uzantısı DLL’leri](extension-dlls.md)
 
-- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-- [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)
+- [MFC Dışı DLL'ler: Genel Bakış](non-mfc-dlls-overview.md)
 
-- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
 - [MFC DLL oluşturma](../mfc/reference/mfc-dll-wizard.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL Türleri](../build/kinds-of-dlls.md)
+[DLL Türleri](kinds-of-dlls.md)

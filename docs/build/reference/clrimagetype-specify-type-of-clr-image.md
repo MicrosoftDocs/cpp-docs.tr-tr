@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /CLRIMAGETYPE linker option
 - -CLRIMAGETYPE linker option
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
-ms.openlocfilehash: c4cdb9a9ac3376762d6aa40fd4c13abbdc7b5487
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b2a6df0f778ba079bffefeeacdad22cb398a529a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461639"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820682"
 ---
 # <a name="clrimagetype-specify-type-of-clr-image"></a>/CLRIMAGETYPE (CLR Görüntü Türünü Belirt)
 
@@ -25,15 +25,15 @@ CLR imaj türü bağlantılı resim ayarlayın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlayıcı yerel nesneleri kabul eder ve ayrıca kullanılarak derlenen MSIL nesnelerini [/CLR](../../build/reference/clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'te kullanım dışı bırakıldı ve Visual Studio 2017'de desteklenmez. Aynı yapı içinde karışık nesneler geçirildiğinde, sonuçta gelen çıktı dosyasının doğrulanabilirliği, varsayılan olarak, giriş modülleri doğrulanabilirliğinin en düşük düzeyine eşit olur. Örneğin, bir doğal görüntü ve karma mod bir görüntü geçirirseniz (kullanılarak derlenmiş **/CLR**), elde edilen görüntü karma modda görüntü olacaktır.
+Bağlayıcı yerel nesneleri kabul eder ve ayrıca kullanılarak derlenen MSIL nesnelerini [/CLR](clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'te kullanım dışı bırakıldı ve Visual Studio 2017'de desteklenmez. Aynı yapı içinde karışık nesneler geçirildiğinde, sonuçta gelen çıktı dosyasının doğrulanabilirliği, varsayılan olarak, giriş modülleri doğrulanabilirliğinin en düşük düzeyine eşit olur. Örneğin, bir doğal görüntü ve karma mod bir görüntü geçirirseniz (kullanılarak derlenmiş **/CLR**), elde edilen görüntü karma modda görüntü olacaktır.
 
 Kullanabileceğiniz **/CLRIMAGETYPE** doğrulanabilirliğini denetler, daha düşük bir düzeyde ihtiyacınız olup olmadığını belirtmek için.
 
-Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz: [/CLRHEADER](../../build/reference/clrheader.md).
+Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz: [/CLRHEADER](clrheader.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -49,5 +49,5 @@ Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi içi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
-- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+- [MSVC bağlayıcı başvurusu](linking.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

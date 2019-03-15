@@ -30,7 +30,6 @@ f1_keywords:
 - C4455
 - C4456
 - C4457
-- C4458
 - C4459
 - C4472
 - C4474
@@ -99,7 +98,6 @@ helpviewer_keywords:
 - C4455
 - C4456
 - C4457
-- C4458
 - C4459
 - C4472
 - C4474
@@ -140,12 +138,12 @@ helpviewer_keywords:
 - C4594
 - C4595
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
-ms.openlocfilehash: 14195271fa0e5e399b801fd36803db4731e690f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 990560e2c05f66a010382f736735c19c17d4dc28
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491305"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816626"
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>Derleyici uyarılarını C4400 ile c4599 arasındaki
 
@@ -189,7 +187,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (hata) C4430](../../error-messages/compiler-warnings/compiler-warning-c4430.md)|tür belirticisi eksik - int varsayıldı. Not: C++ varsayılan int desteklemez|
 |[Derleyici Uyarısı (düzey 4) C4431](../../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md)|tür belirticisi eksik - int varsayıldı. Not: C artık varsayılan int desteği içermiyor|
 |[Derleyici Uyarısı (düzey 4) C4434](../../error-messages/compiler-warnings/compiler-warning-level-4-c4434.md)|bir statik oluşturucunun özel erişilebilirliği olmalıdır; özel erişim olarak değiştiriliyor|
-|[Derleyici Uyarısı (düzey 4) C4435](../../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md)|'*derived_class*': / vd2 altındaki Nesne düzeni sanal tabanı nedeniyle değişecek '*$base_class*'|
+|[Derleyici Uyarısı (düzey 4) C4435](../../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md)|'*derived_class*': / Vd2 altındaki Nesne düzeni sanal tabanı nedeniyle değişecek '*$base_class*'|
 |[Derleyici Uyarısı (düzey 1) C4436](../../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)|dinamik\_sanal temelden cast '*$base_class*'to'*derived_class*' oluşturucu veya yıkıcı içinde oluşturulmuş bir nesne ile başarısız olabilir|
 |[Derleyici Uyarısı (düzey 4) C4437](../../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md)|dinamik\_sanal temelden cast '*$base_class*'to'*derived_class*' bazı bağlamlarda başarısız olabilirdi|
 |Derleyici Uyarısı C4438|'*işlevi*': güvenli olarak çağrılamaz / await: clrcompat modunda. Varsa '*işlevi*' CLR çağrılar, CLR kafa Bozulması neden olabilir|
@@ -205,7 +203,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı C4448|'*türü*1' meta verilerinde belirtilmiş bir varsayılan arabirim yok. Gerçekleştiriliyor: '*type2*', hangi çalışma zamanında başarısız olabilir.|
 |Derleyici Uyarısı C4449|'*türü*' bir tür '[WebHostHidden]' olarak işaretlenmelidir|
 |Derleyici Uyarısı C4450|'*type1*'öğesinden türetildiği için '[WebHostHidden]' olarak işaretlenmelidir'*type2*'|
-|Derleyici Uyarısı (düzey 4) C4451|'classname1::member': başvuru sınıfının bu bağlamın içinde ' classname2::member' yol açabilir. geçersiz nesne bağlamlarında hazırlama|
+|Derleyici Uyarısı (düzey 4) C4451|'classname1::member': Geçersiz nesne bağlamlarında sıralama başvuru sınıfının bu bağlamın içinde ' classname2::member' neden olabilir|
 |Derleyici Uyarısı (düzey 1) C4452|'*tanımlayıcı*': Ortak tür genel kapsamda olamaz. Bu, çıkış .winmd dosyasının adının bir alt ad alanında olmalıdır.|
 |Derleyici Uyarısı (düzey 1) C4453|'*türü*': '[WebHostHidden]' türü olmayan genel bir türün yayımlanmış yüzeyinde kullanılmamalıdır '[WebHostHidden]'|
 |Derleyici Uyarısı (düzey 1) C4454|'*işlevi*' [DefaultOverload] belirtilen zorunda kalmadan aşırı giriş parametrelerinin sayısından fazla. Çekme '*bildirimi*' olarak varsayılan aşırı yükleme|
@@ -242,7 +240,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 1) C4491|'*adı*': geçersiz bir IDL sürümü biçimine sahip|
 |Derleyici Uyarısı (düzey 1, hata) C4492|'*işlev1*': taban başvuru sınıfı yöntemiyle eşleşiyor '*function2*', ancak 'override' işaretli değil|
 |Derleyici Uyarısı (Düzey 3, hata) C4493|Delete ifadenin etkisi yok edicisinde '*türü*' 'public' erişilebilirlik yok|
-|Derleyici Uyarısı (düzey 1) C4494|'*işlevi*': __declspec(allocator) işlev dönüş çünkü tür yoksayılıyor değil bir işaretçi veya başvuru|
+|Derleyici Uyarısı (düzey 1) C4494|'*işlevi*': İşlev türü döndürdüğünden __declspec(allocator) yoksayarak bir işaretçi veya başvuru değil|
 |Derleyici Uyarısı C4495|Standart olmayan uzantı '__super' kullanıldı: açık taban sınıfı adıyla değiştirin|
 |Derleyici Uyarısı C4496|kullanılan standart olmayan uzantı 'for each' kullanıldı: ranged-for deyimiyle değiştirin|
 |Derleyici Uyarısı C4497|Standart olmayan uzantı 'sealed' kullanıldı: 'final' ile değiştirin|
@@ -273,7 +271,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4532](../../error-messages/compiler-warnings/compiler-warning-level-1-c4532.md)|'continue': ' __finally/finally' bloğunun dışına atlama sonlandırma işleme sırasında davranışı tanımsız|
 |[Derleyici Uyarısı (düzey 1) C4533](../../error-messages/compiler-warnings/compiler-warning-level-1-c4533.md)|öğesinin başlatılması '*değişkeni*'tarafından atlandığını'*Git etiketi*'|
 |[Derleyici Uyarısı (düzey 3) C4534](../../error-messages/compiler-warnings/compiler-warning-level-3-c4534.md)|'*Oluşturucusu*'' sınıf/yapı' için bir varsayılan oluşturucu olmayacaktır'*tanımlayıcı*' nedeniyle varsayılan bağımsız değişken|
-|[Derleyici Uyarısı (düzey 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|çağıran _set_se_translator() çağrısı/eha gerektirir|
+|[Derleyici Uyarısı (düzey 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|calling _set_se_translator() requires /EHa|
 |[Derleyici Uyarısı (düzey 4) C4536](../../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md)|'*typename*': tür adı, meta veri sınırını aşıyor '*character_limit*' karakter|
 |[Derleyici Uyarısı (düzey 1) C4537](../../error-messages/compiler-warnings/compiler-warning-level-1-c4537.md)|'*nesne*': '.'UDT olmayan türe uygulandı|
 |[Derleyici Uyarısı (düzey 3) C4538](../../error-messages/compiler-warnings/compiler-warning-level-3-c4538.md)|'*türü*': Bu tür üzerindeki const/volatile niteleyicileri desteklenmiyor|
@@ -306,7 +304,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (Düzey 3) C4569|'*işlevi*': hiçbir üye açık geçersiz kılma imzayla eşleşmiyor|
 |[Derleyici Uyarısı (düzey 3) C4570](../../error-messages/compiler-warnings/compiler-warning-level-3-c4570.md)|'*türü*': soyut ancak soyut işlevler içeriyor olarak açıkça bildirilmedi|
 |[Derleyici Uyarısı (düzey 4) C4571](../../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md)|Bilgi amaçlı: Visual C++ 7.1 sürümünden sonra değişti catch(...) semantiği; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor|
-|[Derleyici Uyarısı (düzey 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|[ParamArray] özniteliği/CLR altında kullanım dışı bırakılmıştır, '...' kullanmak yerine|
+|[Derleyici Uyarısı (düzey 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|[ParamArray] özniteliği/CLR altında kullanım dışı bırakılmıştır '...' Bunun yerine|
 |Derleyici Uyarısı (düzey 1) C4573|kullanımı '*lambda işlevi*' gerektirir derleyicinin 'this' ancak yakalamak için geçerli varsayılan yakalama modu izin vermediğinden|
 |Derleyici Uyarısı (düzey 4) C4574|'*Tanımlayıcı*'' 0'olacak şekilde tanımlanır': '#if identifier' kullanmayı mı amaçlamıştınız?|
 |Derleyici Uyarısı (düzey 1) C4575|'__vectorcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' için dönüştürme|
@@ -318,8 +316,8 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 4) C4582|'*türü*': Oluşturucu örtük olarak çağırılmamış|
 |Derleyici Uyarısı (düzey 4) C4583|'*türü*': yıkıcı örtük olarak çağırılmamış|
 |[Derleyici Uyarısı (düzey 1) C4584](../../error-messages/compiler-warnings/compiler-warning-level-1-c4584.md)|'*class1*': taban sınıfı*class2*'temel sınıfının zaten'*Ders3 alanları*'|
-|Derleyici Uyarısı (düzey 1, hata) C4585|'*sınıfı*': bir 'public ref class' korumalı olmalı veya varolan bir türetilen WinRT korumasız sınıfı|
-|Derleyici Uyarısı (düzey 1, hata) C4586|'*türü*': 'Windows' adlı bir üst düzey ad alanında ortak bir tür olarak bildirilemez|
+|Derleyici Uyarısı (düzey 1, hata) C4585|'*sınıfı*': Bir WinRT 'public ref class' korumalı olmalı veya varolan bir korumasız sınıftan türetilen|
+|Derleyici Uyarısı (düzey 1, hata) C4586|'*türü*': Genel bir türü 'Windows' adlı bir üst düzey ad alanında bildirilemez|
 |Derleyici Uyarısı (düzey 1) C4587|'*anonymous_structure*': davranış değişikliği: Oluşturucu artık örtük olarak çağırılamaz|
 |Derleyici Uyarısı (düzey 1) C4588|'*anonymous_structure*': davranış değişikliği: yıkıcı artık örtük olarak çağırılamaz|
 |Derleyici Uyarısı (düzey 1) C4591|'constexpr' çağrı derinliği sınırı *numarası* aşıldı (/ Depth\<NUMBER >)|

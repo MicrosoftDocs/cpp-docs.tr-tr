@@ -11,12 +11,12 @@ helpviewer_keywords:
 - enable exception handling compiler option [C++]
 - GX compiler option [C++]
 ms.assetid: 933b43ba-de77-4ff8-a48b-7074de90bc1c
-ms.openlocfilehash: 3e820791b651a029f048423daacf50ddc8b74a1d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43be8f6d0f080f0d85568ce5b089751fc68f0e8e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620629"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815469"
 ---
 # <a name="gx-enable-exception-handling"></a>/GX (Özel Durum İşlemeyi Etkinleştir)
 
@@ -30,7 +30,7 @@ Kullanım dışı. Zaman uyumlu özel durum işleme işlevleri varsayımına kul
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/GX** kullanım dışı bırakılmıştır. Eşdeğer kullanın [/ehsc](../../build/reference/eh-exception-handling-model.md) bunun yerine seçeneği. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** konusundaki [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/GX** kullanım dışı bırakılmıştır. Eşdeğer kullanın [/ehsc](eh-exception-handling-model.md) bunun yerine seçeneği. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** konusundaki [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
 Varsayılan olarak, **/ehsc**, denk olan **/GX**, Visual Studio geliştirme ortamını kullanarak derleme yaptığınızda yürürlükte olur. Komut satırı araçlarını kullanarak, hiçbir özel durum işleme belirtilir. Bu eşdeğerdir **/GX-**.
 
@@ -38,7 +38,7 @@ Daha fazla bilgi için [C++ özel durum işleme](../../cpp/cpp-exception-handlin
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Gezinti bölmesinde **yapılandırma özellikleri**, **C/C++**, **komut satırı**.
 
@@ -48,8 +48,8 @@ Daha fazla bilgi için [C++ özel durum işleme](../../cpp/cpp-exception-handlin
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/EH (Özel Durum İşleme Modeli)](../../build/reference/eh-exception-handling-model.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[/EH (Özel Durum İşleme Modeli)](eh-exception-handling-model.md)

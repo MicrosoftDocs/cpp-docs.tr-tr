@@ -25,12 +25,12 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-ms.openlocfilehash: 77dc97ee07499b7df37a115dafafddd71acb7bb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a830ff5b8ba4b7fcd95eb462f899f2eadce6de11
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655008"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815898"
 ---
 # <a name="rtc-run-time-error-checks"></a>/RTC (Çalışma Zamanı Hata Denetimleri)
 
@@ -75,7 +75,7 @@ Etkinleştirir çerçevesi çalışma zamanı hata, şu şekilde denetlemesi sı
 
 - Sıfır olmayan bir değer yerel değişkenlere başlatma. Bu, hata ayıklama modunda çalışırken görünmez hataların belirlenmesine yardımcı olur. Yığın değişkenleri sıfır yayın derlemesi için derleme yığın değişkenlerin derleyici iyileştirmeleri nedeniyle karşılaştırıldığında hata ayıklama derlemesinde hala olacak büyük bir olasılık yoktur. Bir program yığınını bir bölümünü kullanmıştır sonra derleyici tarafından hiçbir zaman 0 olarak sıfırlanır. Bu nedenle, aynı yığın alanı kullanmak için sonraki, başlatılmamış yığın değişkenleri önceki Bu yığın bellek kullanımından kaynaklanan kalan değerleri döndürebilir.
 
-- Taşmalarını ve diziler gibi yerel değişkenlerin underruns algılanması. **/ RTC** `s` taşmaları derleyici doldurma bir yapı içinde oluşur bellek erişirken algılamaz. Doldurma kullanarak olabilir [hizalama](../../cpp/align-cpp.md), [/Zp (yapı üyesi hizalama)](../../build/reference/zp-struct-member-alignment.md), veya [paketi](../../preprocessor/pack.md), veya yapı öğeleri doldurma eklemek için derleyicinin gerektiren için farklı şekilde sıralayabilir.
+- Taşmalarını ve diziler gibi yerel değişkenlerin underruns algılanması. **/ RTC** `s` taşmaları derleyici doldurma bir yapı içinde oluşur bellek erişirken algılamaz. Doldurma kullanarak olabilir [hizalama](../../cpp/align-cpp.md), [/Zp (yapı üyesi hizalama)](zp-struct-member-alignment.md), veya [paketi](../../preprocessor/pack.md), veya yapı öğeleri doldurma eklemek için derleyicinin gerektiren için farklı şekilde sıralayabilir.
 
 - Yığın işaretçisi bozukluğunu algılar yığın işaretçisi doğrulama. Bir çağırma kuralı uyumsuzluğundan yığın işaretçisi bozulmasına neden olabilir. Örneğin, bir işlev işaretçisi kullanılarak, bir işlev olarak verilen bir DLL'de çağırmanızı [__stdcall](../../cpp/stdcall.md) işlevi işaretçisi tanımlayamazsınız ancak [__cdecl](../../cpp/cdecl.md).
 
@@ -95,30 +95,30 @@ Değişken başlatılmamış, bu çalışma zamanında raporlanmayacaktır **/RT
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı hata denetimleri çalışan kodunuzdaki sorunları kolay bir yoludur; Daha fazla bilgi için [nasıl yapılır: yerel çalışma zamanı denetimleri kullanın](/visualstudio/debugger/how-to-use-native-run-time-checks).
+Çalışma zamanı hata denetimleri çalışan kodunuzdaki sorunları kolay bir yoludur; Daha fazla bilgi için [nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks).
 
 Programınızın herhangi birini kullanarak komut satırında derleme yaparsanız **/RTC** derleyici seçenekleri, herhangi bir pragma [en iyi duruma getirme](../../preprocessor/optimize.md) kodunuzda yönergeleri sessizce başarısız olur. Çalışma zamanı hata denetimleri (en iyi duruma getirilmiş) yayın yapılandırması geçerli olmayan olmasıdır.
 
-Kullanmanız gereken **/RTC** geliştirme derlemeler için; **/RTC** perakende derleme için kullanılmamalıdır. **/ RTC** derleyici iyileştirmeleri ile birlikte kullanılamaz ([/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)). Bir program görüntüsü ile oluşturulmuş **/RTC** biraz daha büyük ve ile oluşturulmuş bir görüntüden biraz daha yavaş olacaktır **/Od** (yüzde 5 daha yavaş bir **/Od** oluşturun).
+Kullanmanız gereken **/RTC** geliştirme derlemeler için; **/RTC** perakende derleme için kullanılmamalıdır. **/ RTC** derleyici iyileştirmeleri ile birlikte kullanılamaz ([/O seçenekler (kodu İyileştir)](o-options-optimize-code.md)). Bir program görüntüsü ile oluşturulmuş **/RTC** biraz daha büyük ve ile oluşturulmuş bir görüntüden biraz daha yavaş olacaktır **/Od** (yüzde 5 daha yavaş bir **/Od** oluşturun).
 
-__Msvc_runtıme_checks önişlemci yönergesi kullandığınızda tanımlanır **/RTC** seçeneği veya [/GZ](../../build/reference/gz-enable-stack-frame-run-time-error-checking.md).
+__Msvc_runtıme_checks önişlemci yönergesi kullandığınızda tanımlanır **/RTC** seçeneği veya [/GZ](gz-enable-stack-frame-run-time-error-checking.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
 1. Tıklayın **kod oluşturma** özellik sayfası.
 
-1. Birini veya ikisini de aşağıdaki özellikleri değiştirin: **temel çalışma zamanı denetimleri** veya **daha küçük tür denetimi**.
+1. Birini veya ikisini de aşağıdaki özellikleri değiştirin: **Temel çalışma zamanı denetimleri** veya **daha küçük, onay türü**.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
 - Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> özellikleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Nasıl Yapılır: Yerel Çalışma Zamanı Denetimlerini Kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Nasıl yapılır: Yerel Çalışma Zamanı Denetimlerini Kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks)

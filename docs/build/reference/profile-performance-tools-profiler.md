@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -PROFILE linker option
 - /PROFILE linker option
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-ms.openlocfilehash: 26f4ba4efc20f5fee70b2937cdb943689c948888
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca68ae090c6e4e6e3e10f37ac0d225faee96746a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519928"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810009"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE (Performans Araçları Profil Oluşturucusu)
 
@@ -28,13 +28,13 @@ Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası ü
 
 / PROFILE bağlayıcı şunlardan anlamına gelir:
 
-- [/ OPT: REF](../../build/reference/opt-optimizations.md)
+- [/ OPT: REF](opt-optimizations.md)
 
 - / OPT: NOICF
 
-- [/ INCREMENTAL: NO](../../build/reference/incremental-link-incrementally.md)
+- [/ INCREMENTAL: NO](incremental-link-incrementally.md)
 
-- [/ FIXED: NO](../../build/reference/fixed-fixed-base-address.md)
+- [/FIXED:NO](fixed-fixed-base-address.md)
 
 / PROFILE bağlayıcı program görüntüyü bir yeniden konumlandırma bölümü oluşturmak neden olur.  Bir yeniden konumlandırma bölümü profil verilerini almak için program görüntüyü dönüştürmek profil oluşturucu sağlar.
 
@@ -42,7 +42,7 @@ Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası ü
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -56,7 +56,7 @@ Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası ü
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

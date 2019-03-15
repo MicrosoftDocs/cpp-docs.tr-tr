@@ -1,5 +1,5 @@
 ---
-title: Visual C++ 64 bit x64 için yapılandırma hedefleri
+title: C++ projeleri için 64 bit x64 yapılandırma hedefleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 64-bit compiler [C++], options
@@ -8,26 +8,26 @@ helpviewer_keywords:
 - programming [C++], 64-bit
 - Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: 85bfa6cb82b4b1825ae9b9a9a0f3a9f06e579499
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: c56cd34ecbc6615b0acebde6c40c658ca0c436a4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626714"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818121"
 ---
-# <a name="configure-visual-c-for-64-bit-x64-targets"></a>Visual C++ 64 bit x64 için yapılandırma hedefleri
+# <a name="configure-c-projects-for-64-bit-x64-targets"></a>C++ projeleri için 64 bit x64 yapılandırma hedefleri
 
 Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım Visual c++ derleme araçları.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-- [Nasıl yapılır: 64-Bit, hedeflemek için Visual C++ projeleri x64 yapılandırma platformları](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [Nasıl yapılır: Visual C++ Projelerini 64 Bit, x64 Platformlarını Hedefleyecek Şekilde Yapılandırma](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [Nasıl yapılır: Bir 64 Bit Visual C++ araç takımını komut satırında etkinleştirme](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [Nasıl yapılır: Komut Satırında 64 Bit Visual C++ Araç Takımını Etkinleştirme](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
-- [Genel Visual C++ 64 Bit Geçiş Sorunları](../build/common-visual-cpp-64-bit-migration-issues.md)
+- [Genel Visual C++ 64 Bit Geçiş Sorunları](common-visual-cpp-64-bit-migration-issues.md)
 
-- [x64 yazılım kuralları](../build/x64-software-conventions.md)
+- [x64 Yazılım Kuralları](x64-software-conventions.md)
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
@@ -35,9 +35,9 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım Visual c+
 
 [align](../cpp/align-cpp.md)
 
-[/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)
+[/clr (Ortak Dil Çalışma Zamanı Derlemesi)](reference/clr-common-language-runtime-compilation.md)
 
-[/favor (Mimari Özellikleri için İyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)
+[/favor (Mimari Özellikleri için İyileştirme)](reference/favor-optimize-for-architecture-specifics.md)
 
 [64 bit Windows için Programlama Kılavuzu](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
 
@@ -45,6 +45,6 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım Visual c+
 
 [x64 (amd64) İç Bilgi Listesi](../intrinsics/x64-amd64-intrinsics-list.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Programları Oluşturma](building-c-cpp-programs.md)
+[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)

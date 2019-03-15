@@ -6,12 +6,12 @@ helpviewer_keywords:
 - cl.exe compiler, output files
 - output files, specifying pathnames
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
-ms.openlocfilehash: f83adcb87994d13edd1c1579183377a365e2051e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dcff3610255c40f4e06201e52a53eb5dd965a4be
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638366"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821358"
 ---
 # <a name="specifying-the-pathname"></a>Yol Adını Belirtme
 
@@ -23,7 +23,7 @@ Alternatif olarak, *pathname* bağımsız değişkeni, bir cihaz adı (AUX, CON,
 
 |Cihaz adı|Temsil eder|
 |-----------------|----------------|
-|YEDEK|Yardımcı cihaz|
+|AUX|Yardımcı cihaz|
 |ONAYLA|Konsol|
 |PRN|Yazıcı|
 |NUL|Null cihazı (dosyası oluşturuldu)|
@@ -36,8 +36,8 @@ Aşağıdaki komut satırını bir eşlem yazıcıya gönderir:
 CL /FmPRN HELLO.CPP
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

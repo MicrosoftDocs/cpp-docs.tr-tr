@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _pexit function
 - -Gh compiler option [C++]
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6
-ms.openlocfilehash: 9be8573f5f9c344d2675bd7c9fc7d8beb3c8cffd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 077096cc296f2aa2128127493a84a91da9a067c5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527653"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822177"
 ---
 # <a name="gh-enable-pexit-hook-function"></a>/GH (_pexit Kanca İşlevini Etkinleştir)
 
@@ -36,11 +36,11 @@ Açıkça çağırmak planlamıyorsanız `_pexit`, bir prototip sağlamanız ger
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit` benzer `_penter`; bkz [/Gh (_penter kanca işlevini etkinleştir)](../../build/reference/gh-enable-penter-hook-function.md) nasıl yazılacağını gösteren bir örnek bir `_pexit` işlevi.
+`_pexit` benzer `_penter`; bkz [/Gh (_penter kanca işlevini etkinleştir)](gh-enable-penter-hook-function.md) nasıl yazılacağını gösteren bir örnek bir `_pexit` işlevi.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -52,7 +52,7 @@ void __declspec(naked) __cdecl _pexit( void );
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

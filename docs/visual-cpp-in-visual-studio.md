@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da Visual C++
+title: Visual Studio’da C++
 description: Visual C++ için Microsoft C++ Derleyici, Kod Düzenleyicisi ve ilgili araçlar Visual Studio IDE'de addır. Programları Windows, Linux, Android ve iOS geliştirme için Visual C++ kullanın.
 ms.date: 09/26/2018
 ms.technology: cpp-ide
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 0dd7cc2aebb9ff0f95d11c839a104b94b3d37db6
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 475f9394d9a12d05c95bc73ec451fbfe6fc4b052
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809658"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814416"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
@@ -71,11 +71,14 @@ C++ öğrenmeye başlayın.
 
 ## <a name="c-development-tools"></a>C++ geliştirme araçları
 
-[IDE ve geliştirme araçları](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+[Visual Studio'da C++ geliştirme genel bakış](overview-of-cpp-development.md)<br/>
 Visual Studio IDE kullanmak projeler oluşturun, kod düzenleme, kitaplıklarına bağlanması, derleme, hata ayıklama, birim testleri oluşturma, statik analiz yapmak için dağıtma ve daha.
 
-[Derleyicileri ve Derleme Araçları](build/building-c-cpp-programs.md)<br/>
-Microsoft C++ Derleyici ve bağlayıcı seçenekleri, hata iletileri, komut satırı örnekleri, farklı platformlar ve derleme başvuru konuları için Yapılandır.
+[Projeler ve yapı sistemi](build/projects-and-build-systems-cpp.md)<br/>
+Nasıl oluşturun ve Visual Studio C++ projeleri, CMake projelerini ve diğer tür projelere MSVC derleyici ve bağlayıcı seçeneklerini yapılandırın.
+
+[Yazma ve C++ kodu yeniden düzenleme](ide/writing-and-refactoring-code-cpp.md)<br/>
+Yeniden düzenleme C++ düzenleyicide üretkenlik kullanılacak özellikleri nasıl gidin ve kod yazın.
 
 [Yerel Kodda Hata Ayıklama](/visualstudio/debugger/debugging-native-code)<br/>
 C++ projeleri Visual Studio hata ayıklayıcısını kullanın.

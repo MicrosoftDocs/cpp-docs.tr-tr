@@ -2,19 +2,17 @@
 title: Arabirim işaretçisi sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.pointers.interface
 helpviewer_keywords:
 - pointers, to interfaces
 - interfaces, pointers classes
 - interface pointers classes
 ms.assetid: 712617a1-17ae-4b5c-a32c-a48b758df7a6
-ms.openlocfilehash: 1b94a4a97bf3bc2c16703b51f52ea5f5664b500e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 992d4c7d882cd8837c3dbacbfde4855c9c94817f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299173"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818586"
 ---
 # <a name="interface-pointers-classes"></a>Arabirim işaretçisi sınıfları
 

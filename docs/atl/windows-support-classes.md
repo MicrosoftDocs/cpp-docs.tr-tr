@@ -2,18 +2,16 @@
 title: Windows desteği sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.windows
 helpviewer_keywords:
 - ATL, windows
 - windows [C++], ATL
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
-ms.openlocfilehash: e7e9e1f4fb94537cdd131e58ef3fc481ee1c012e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5880fd970d885da84edd94f9f2c7a47ec326ebe1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281037"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814182"
 ---
 # <a name="windows-support-classes"></a>Windows desteği sınıfları
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - blank projects
 - files [C++], adding to projects
 ms.assetid: 070098e8-0396-49fe-a697-3daa2f1be6de
-ms.openlocfilehash: d5347a0693619e5db44b1087fc249c68b9227fb2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8facd371ad2dddbb8ce239af5ca536b21a606807
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568664"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818212"
 ---
 # <a name="adding-files-to-an-empty-win32-applications"></a>Boş Win32 Uygulamalarına Dosya Ekleme
 
@@ -29,7 +29,7 @@ ms.locfileid: "50568664"
 Kaynak, üst bilgi veya kaynak dosyaları projenize ne dosyaları eklemek için sağ **çözüm** düğümünde **Çözüm Gezgini** ve dosyaları aynı şekilde projeye ekleyin. A **çeşitli** projenizdeki diğer dosyaları tutmak için klasör oluşturulur.
 
 > [!NOTE]
-> Projenizi oluşturmadan önce böylece doğru şekilde tamamlanmış uygulamanıza dahil, bu dosyaları derleme seçeneklerini belirtmek gerekir. Daha fazla bilgi için [özellik sayfalarıyla proje ayarlarını belirtme](../ide/property-pages-visual-cpp.md) ve [C/C++ programı oluşturma](../build/building-c-cpp-programs.md).
+> Projenizi oluşturmadan önce böylece doğru şekilde tamamlanmış uygulamanıza dahil, bu dosyaları derleme seçeneklerini belirtmek gerekir. Daha fazla bilgi için [özellik sayfalarıyla proje ayarlarını belirtme](../build/reference/property-pages-visual-cpp.md) ve [C/C++ programı oluşturma](../build/building-c-cpp-programs.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

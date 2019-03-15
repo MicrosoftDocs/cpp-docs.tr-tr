@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /SECTION dumpbin option
 - SECTION dumpbin option
 ms.assetid: c223d1c6-88ef-411c-9607-c610726b8d66
-ms.openlocfilehash: f4e36c9c651c3d89982e9145d107cc0813465dfa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3bd0ed68f88df9c5b57b0e7a3a5df64d33a8a6fc
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676252"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813356"
 ---
 # <a name="section-dumpbin"></a>/SECTION (DUMPBIN)
 
@@ -24,10 +24,10 @@ ms.locfileid: "50676252"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, belirtilen hakkında bilgi için çıkış kısıtlar *bölümü*. Kullanım [OPTIONAL](../../build/reference/headers.md) dosyasındaki bölümlerinin listesini almak için seçeneği.
+Bu seçenek, belirtilen hakkında bilgi için çıkış kısıtlar *bölümü*. Kullanım [OPTIONAL](headers.md) dosyasındaki bölümlerinin listesini almak için seçeneği.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

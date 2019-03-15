@@ -2,19 +2,17 @@
 title: Veri aktarımı sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- _U_STRINGorID
 helpviewer_keywords:
 - data transfer [C++]
 - data transfer [C++], classes
 - data transfer classes [C++]
 ms.assetid: c10bcdc8-b90c-4c2a-9179-fd3de80461da
-ms.openlocfilehash: 67561d95e7823861fd594b2c47d7537d76163616
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 037125648a121883c43009ce59ee9ef05371f167
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261849"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808033"
 ---
 # <a name="data-transfer-classes"></a>Veri aktarımı sınıfları
 

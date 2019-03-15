@@ -13,16 +13,16 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-ms.openlocfilehash: d6913be5bc02755730ffb6205e9f34811c9a5dbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e45273b6b609f1bf78504a519c1fb98e2147f76
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431947"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818537"
 ---
 # <a name="og-global-optimizations"></a>/Og (Global İyileştirmeler)
 
-Kullanım dışı. Yerel ve genel iyileştirmelerini sağlayıp otomatik kaydını ayırma ve döngü en iyi duruma getirme. Ya da kullanmanızı öneririz [/O1 (boyutu en aza)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) veya [/O2 (hız en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) yerine.
+Kullanım dışı. Yerel ve genel iyileştirmelerini sağlayıp otomatik kaydını ayırma ve döngü en iyi duruma getirme. Ya da kullanmanızı öneririz [/O1 (boyutu en aza)](o1-o2-minimize-size-maximize-speed.md) veya [/O2 (hız en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) yerine.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,7 +30,7 @@ Kullanım dışı. Yerel ve genel iyileştirmelerini sağlayıp otomatik kaydın
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Og** kullanım dışı bırakılmıştır. Bu iyileştirmeleri artık genel olarak varsayılan olarak etkindir. En iyi duruma getirme hakkında daha fazla bilgi için bkz. [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) veya [/Ox (etkinleştirme en hız iyileştirmelerini)](../../build/reference/ox-full-optimization.md).
+**/Og** kullanım dışı bırakılmıştır. Bu iyileştirmeleri artık genel olarak varsayılan olarak etkindir. En iyi duruma getirme hakkında daha fazla bilgi için bkz. [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) veya [/Ox (etkinleştirme en hız iyileştirmelerini)](ox-full-optimization.md).
 
 Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
 
@@ -76,11 +76,11 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
    > [!NOTE]
    > Etkinleştirebilir veya bir işlev tarafından işlevi olarak kullanarak genel iyileştirmeyi devre dışı `optimize` pragma ile birlikte `g` seçeneği.
 
-İlgili bilgiler için bkz. [(iç işlevler Oluştur) /Oi](../../build/reference/oi-generate-intrinsic-functions.md) ve [/Ox (etkinleştirme en hız iyileştirmelerini)](../../build/reference/ox-full-optimization.md).
+İlgili bilgiler için bkz. [(iç işlevler Oluştur) /Oi](oi-generate-intrinsic-functions.md) ve [/Ox (etkinleştirme en hız iyileştirmelerini)](ox-full-optimization.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -92,10 +92,6 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)
-
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)
-
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

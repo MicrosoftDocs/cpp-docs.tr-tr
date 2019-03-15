@@ -20,12 +20,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-ms.openlocfilehash: 49467b9c59d8f8861011f0f36009f4e3951871f9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: dc6380903af0be2e6696ca3589813c249f71dd05
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329858"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812284"
 ---
 # <a name="base-base-address"></a>/BASE (Temel Adres)
 
@@ -38,9 +38,9 @@ Bir program için temel adresini belirtir.
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Güvenlik nedenleriyle, Microsoft, kullanmanızı önerir [dynamıcbase](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) , yürütülebilir dosyalar için temel adresler belirtmek yerine seçeneği. Bu rastgele yükleme zamanında Windows'ın adres alanı düzenini (ASLR) rastgele özelliği temellendirilebilen bir yürütülebilir görüntü oluşturur. Dynamıcbase seçeneği varsayılan olarak açıktır.
+> Güvenlik nedenleriyle, Microsoft, kullanmanızı önerir [dynamıcbase](dynamicbase-use-address-space-layout-randomization.md) , yürütülebilir dosyalar için temel adresler belirtmek yerine seçeneği. Bu rastgele yükleme zamanında Windows'ın adres alanı düzenini (ASLR) rastgele özelliği temellendirilebilen bir yürütülebilir görüntü oluşturur. Dynamıcbase seçeneği varsayılan olarak açıktır.
 
-/ Temel seçeneği, .exe veya DLL dosyasının varsayılan konumunu geçersiz kılma program için temel adres ayarlar. Bir .exe dosyası için varsayılan taban adresi 32-bit görüntüleri 0x400000 veya 64-bit görüntüleri 0x140000000 ' dir. Bir DLL için varsayılan taban 0x10000000 32-bit görüntüleri veya 64-bit görüntüleri 0x180000000 adresidir. İşletim rastgele adres alanı düzenini (ASLR) desteklemez veya taban seçeneği ayarlandığında sistemlerinde işletim sistemi programı, belirtilen veya varsayılan taban adresi yüklemek önce çalışır. Sistem, yeterli alan yok kullanılabilir değilse, programın yeniden yerleştirir. Yeniden konumlandırma önlemek için [/FIXED](../../build/reference/fixed-fixed-base-address.md) seçeneği.
+/ Temel seçeneği, .exe veya DLL dosyasının varsayılan konumunu geçersiz kılma program için temel adres ayarlar. Bir .exe dosyası için varsayılan taban adresi 32-bit görüntüleri 0x400000 veya 64-bit görüntüleri 0x140000000 ' dir. Bir DLL için varsayılan taban 0x10000000 32-bit görüntüleri veya 64-bit görüntüleri 0x180000000 adresidir. İşletim rastgele adres alanı düzenini (ASLR) desteklemez veya taban seçeneği ayarlandığında sistemlerinde işletim sistemi programı, belirtilen veya varsayılan taban adresi yüklemek önce çalışır. Sistem, yeterli alan yok kullanılabilir değilse, programın yeniden yerleştirir. Yeniden konumlandırma önlemek için [/FIXED](fixed-fixed-base-address.md) seçeneği.
 
 Bağlayıcı hata durumunda sorunları *adresi* 64 k katı değil. İsteğe bağlı olarak, program boyutunu belirtebilirsiniz; program, belirtilen boyutta sığdıramazsanız bağlayıcı bir uyarı verir.
 
@@ -62,11 +62,11 @@ Bu satırlar içeren dosyanın DLLS.txt çağrılırsa, bu bilgiler aşağıdaki
 link dlltwo.obj /dll /base:@dlls.txt,two
 ```
 
-Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız değişkeni olarak bir [adı](../../build/reference/name-c-cpp.md) veya [Kitaplığı](../../build/reference/library.md) deyimi. / Base ve [/dll](../../build/reference/dll-build-a-dll.md) seçenekler birbirine eşit **Kitaplığı** deyimi.
+Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız değişkeni olarak bir [adı](name-c-cpp.md) veya [Kitaplığı](library.md) deyimi. / Base ve [/dll](dll-build-a-dll.md) seçenekler birbirine eşit **Kitaplığı** deyimi.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **Gelişmiş** özellik sayfası.
 
@@ -76,7 +76,7 @@ Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız d
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: 58d8453cc50c28527c1f777db1b47ea23299d38f
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: d23662d6dd6d2f241c48e0c83f2fa5ed9532c3f7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693951"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807955"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 
@@ -100,7 +100,7 @@ Ancak, derleme yüklü uygulama klasöründe özel bir yan yana derleme olarak d
 
 Yükleyici bağımlı derlemeleri nasıl arama hakkında daha fazla bilgi için bkz. [derleme arama sırası](/windows/desktop/SbsCs/assembly-searching-sequence). Bağımlı bir derleme özel bir derleme olarak bulmak yükleyici başarısız olursa, yükleme başarısız olur ve "Sistem belirtilen program yürütülemiyor" iletisi görüntülenir. Bu hatayı gidermek için emin bağımlı derlemeleri — ve bunları bir parçası olan DLL'ler — bilgisayarda özel veya paylaşılan derlemeler yüklenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
-[C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
+[C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

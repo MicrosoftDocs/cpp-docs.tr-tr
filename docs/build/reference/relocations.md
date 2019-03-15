@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /RELOCATIONS dumpbin option
 - -RELOCATIONS dumpbin option
 ms.assetid: 535eba3a-781a-4809-bf33-f67d3060b02c
-ms.openlocfilehash: 5ec53f4651d4aa1b140dd984d5ca62590a569d38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8671d61d1157be2d126fc71c46e76d6a4ba94b7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493788"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818004"
 ---
 # <a name="relocations"></a>/RELOCATIONS
 
@@ -25,8 +25,8 @@ ms.locfileid: "50493788"
 
 Bu seçenek, nesne veya görüntü herhangi bir konum değiştirmeler görüntüler.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

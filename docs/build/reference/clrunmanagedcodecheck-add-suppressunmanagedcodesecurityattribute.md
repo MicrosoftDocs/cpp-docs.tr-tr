@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 3cefe34eef1a30274ba2e9e362e2f61458f10e38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb23106648e3325755a857d0b962112e9bdcfac4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565925"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822606"
 ---
 # <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/ CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Kaldır)
 
@@ -39,7 +39,7 @@ Bkz: [güvenli kodlama kılavuzları yönetilmeyen kod için](/dotnet/framework/
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -55,5 +55,5 @@ Bkz: [güvenli kodlama kılavuzları yönetilmeyen kod için](/dotnet/framework/
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
-- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+- [MSVC bağlayıcı başvurusu](linking.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -1,16 +1,16 @@
 ---
 title: ARM64 özel durum işleme
 ms.date: 11/19/2018
-ms.openlocfilehash: a4d4adcc365c1e9caf7faa0e225fabe133d0a6eb
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 921029704e4bf5adabfbe0a82387dadc911b9036
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176685"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816158"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
-ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel durumları ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme mekanizmasını kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulur. Bu belgede, özel durum işleme Windows Microsoft ARM derleyicisi ve Visual C++ Derleyici tarafından oluşturulan kodu tarafından kullanılan dil yardımcıları ve ARM64 de açıklanmaktadır.
+ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel durumları ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme mekanizmasını kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulur. Bu belgede, özel durum işleme Windows Microsoft ARM derleyicisi ve MSVC derleyici tarafından oluşturulan kodu tarafından kullanılan dil yardımcıları ve ARM64 de açıklanmaktadır.
 
 ## <a name="goals-and-motivation"></a>Hedefleri ve motivasyon
 
@@ -44,7 +44,7 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 1. Sonuç koşullu kodu yok.
 
-1. Ayrılmış çerçeve işaretçisi kaydı: sp giriş olarak başka bir kayıttaki (r29) kaydedilmişse, kayıt işlevi dokunulmadan kalır ve böylece özgün sp herhangi bir zamanda kurtarılabilir.
+1. Adanmış çerçeve işaretçisi kaydı: Sp kaydı giriş başka bir kayıt (r29) kaydedilir, böylece özgün sp herhangi bir zamanda kurtarılabilir işlevi değişmeden kalır.
 
 1. Sp başka bir kayıttaki kaydedilmezse tüm yığın işaretçisi işlenmesini kesinlikle giriş ve bitiş içinde gerçekleşir.
 
@@ -52,7 +52,7 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 ## <a name="arm64-stack-frame-layout"></a>ARM64 yığın çerçevesi düzeni
 
-![yığın çerçevesi düzeni](../build/media/arm64-exception-handling-stack-frame.png "yığın çerçevesi düzeni")
+![yığın çerçevesi düzeni](media/arm64-exception-handling-stack-frame.png "yığın çerçevesi düzeni")
 
 Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getirme konuları bağlı olarak herhangi bir konumda fp ve lr çifti kaydedilebilir. Çerçeve işaretçisini (r29) veya yığın işaretçisi (sp) temel alan bir tek yönerge tarafından erişilebilen Yereller sayısı en üst düzeye çıkarmak için kullanılan hedeftir. Ancak için `alloca` İşlevler, zincirleme gerekir ve r29 yığının sonuna işaret etmelidir. Kalıcı daha iyi register çifti-adresleme-modu kapsamı için izin vermek için yerel yığın üstüne alanları konumlandırılır aave kaydedin. En verimli giriş dizilerini bazılarını gösteren örnekleri aşağıda verilmiştir. Açıklık ve daha iyi önbellek yerleşim yeri için tüm canonical açıklanabilmeleri içinde Çağrılan Kaydedilmiş Yazmaçlar depolamanın "yukarı büyüyen" sırayla sırasıdır. `#framesz` Aşağıda (alloca alanı dışında) tüm yığın boyutunu temsil eder. `#localsz` ve `#outsz` yerel boyutu belirtmek (kaydetme dahil olmak üzere alanı \<r29, lr > çifti) ve parametre boyutu sırasıyla giden.
 
@@ -187,7 +187,7 @@ Her bir PE ikili yığın düzenleme işlevi tanımlayan sabit uzunluklu öğele
 
 ARM64 için her .pdata kayıt 8 bayt uzunluğundadır. İlk sözcük, ikinci ile ardından işlevin 32-bit RVA başlangıç her kayıt yerleri genel biçimi değişken uzunluklu sanal işlem bulunur bloğu için bir işaretçi ya da bir canonical işlevi geriye doğru izleme sırası açıklayan paketlenmiş bir sözcük içeriyor.
 
-![.pdata kayıt düzeni](../build/media/arm64-exception-handling-pdata-record.png ".pdata kayıt düzeni")
+![.pdata kayıt düzeni](media/arm64-exception-handling-pdata-record.png ".pdata kayıt düzeni")
 
 Alanları aşağıdaki gibidir:
 
@@ -203,7 +203,7 @@ Alanları aşağıdaki gibidir:
 
 Paketlenmiş geriye doğru izleme biçimi işlevi geriye doğru izleme açıklamak için yetersiz olduğunda, bir değişken uzunluklu sanal işlem bulunur kaydı oluşturulmalıdır. Bu kaydın adresini .pdata kaydın ikinci Word'de depolanır. Sanal işlem bulunur paketlenmiş değişken uzunluklu bir kelimelerin biçimdedir:
 
-![Sanal işlem bulunur kayıt düzeni](../build/media/arm64-exception-handling-xdata-record.png "sanal işlem bulunur kayıt düzeni")
+![Sanal işlem bulunur kayıt düzeni](media/arm64-exception-handling-xdata-record.png "sanal işlem bulunur kayıt düzeni")
 
 Bu veriler, dört bölüme ayrılır:
 
@@ -313,9 +313,9 @@ Geriye doğru izleme kodları aşağıdaki tabloya göre kodlanır. Tüm geriye 
 |`arithmetic(ror)`|    11100111' 100zxxxx: ror lr tanımlama bilgisi reg(z) ile (0 = x28, 1 = sp); RoR lr, lr, reg(z) |
 | |            11100111: xxxz---:---ayrılmış |
 | |              11101xxx: aşağıdaki yalnızca asm rutinleri için oluşturulan özel yığının çalışmaları için ayrılmış |
-| |              11101001: özel yığının MSFT_OP_TRAP_FRAME için |
-| |              11101010: özel yığının MSFT_OP_MACHINE_FRAME için |
-| |              11101011: özel yığının MSFT_OP_CONTEXT için |
+| |              11101001: Özel yığının MSFT_OP_TRAP_FRAME için |
+| |              11101010: Özel yığının MSFT_OP_MACHINE_FRAME için |
+| |              11101011: Özel yığının MSFT_OP_CONTEXT için |
 | |              1111xxxx: ayrılmış |
 
 Birden fazla bayt kapsayan büyük değerlerle yönergelerde en önemli bitleri ilk depolanır. Yukarıdaki geriye doğru izleme kodları yalnızca kod ilk baytı bakarak geriye doğru izleme kodu bayt cinsinden toplam boyut bilmek mümkündür şekilde tasarlanmıştır. Her geriye doğru izleme kodu tam olarak bir giriş ve bitiş yönergesinde eşlenen düşünüldüğünde, giriş veya çıkış, boyutunu hesaplamak için yapmanız gereken tek şey dizinin başından sonuna kadar belirlemek için arama tablosu veya benzer bir cihaz kullanarak yürütmek için ne kadar süreyle düzeltme yanıt veren işlem kodu var.
@@ -334,7 +334,7 @@ Kurallı biçimi aşağıda olan açıklanabilmeleri ve sonuç izleyin paketlenm
 
 Paketlenmiş bir .pdata kayıt biçimi geriye doğru veri şunun gibi görünür:
 
-![Paketlenmiş .pdata kayıtla veri bırakma](../build/media/arm64-exception-handling-packed-unwind-data.png "paketlenmiş .pdata kaydıyla, veriler geriye doğru izleme")
+![Paketlenmiş .pdata kayıtla veri bırakma](media/arm64-exception-handling-packed-unwind-data.png "paketlenmiş .pdata kaydıyla, veriler geriye doğru izleme")
 
 Alanları aşağıdaki gibidir:
 
@@ -357,27 +357,27 @@ Alanları aşağıdaki gibidir:
 
 Yukarıdaki bölümde 1, 2 (olmadan Giden parametre alanı), 3 ve 4 kategorilere giren kurallı açıklanabilmeleri paketlenmiş geriye doğru izleme biçimi tarafından temsil edilebilir.  Kurallı işlevler çok benzer bir form izleyin başlangıçları dışındaki **H** hiçbir etkisi `set_fp` yönerge atlanırsa ve adımları ve bunun yanı sıra her bir adımın yönergeleri sırasını bölümünde tersine çevrilir. Paketlenmiş xdata algoritması, aşağıdaki tabloda ayrıntılı adımları izler:
 
-0. adım: her alanı boyutunu hesaplama gerçekleştirin.
+0. adım: Her alanın boyutu öncesi hesaplama gerçekleştirin.
 
-1. adım: Int ve Çağrılan Kaydedilmiş Yazmaçlar kaydedin.
+1. Adım: Int ve Çağrılan Kaydedilmiş Yazmaçlar kaydedin.
 
-2. adım: Bu adım türü erken bölümlerde 4 için özeldir. LR Int alan sonunda kaydedilir.
+2. Adım: Bu adım, önceki bölümlerde 4 türü için özeldir. LR Int alan sonunda kaydedilir.
 
-3. adım: FP Çağrılan Kaydedilmiş Yazmaçlar kaydedin.
+3. Adım: FP Çağrılan Kaydedilmiş Yazmaçlar kaydedin.
 
-4. adım: Giriş bağımsız değişkeni giriş parametre alanında kaydedin.
+4. Adım: Giriş bağımsız değişkeni giriş parametre alanında kaydedin.
 
-5. adım: yerel ağ dahil olmak üzere, kalan yığın ayırma \<r29, lr > eşleştirme ve parametre alanı giden. 5a 1 kurallı türüne karşılık gelir. 5b ve 5c kurallı tür 2 ' dir. 5d ve 5e her iki tür için 3 ve 4 yazın.
+5. Adım: Yerel ağ dahil olmak üzere, kalan yığın ayırma \<r29, lr > eşleştirme ve parametre alanı giden. 5a 1 kurallı türüne karşılık gelir. 5b ve 5c kurallı tür 2 ' dir. 5d ve 5e her iki tür için 3 ve 4 yazın.
 
 Adım #|Bayrak değerleri|yönerge sayısı|Opcode|Kod geriye doğru izleme
 -|-|-|-|-
 0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
 1.|0 < **regI** < 10 =|RegI / 2 + **RegI** % 2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
-2|**CR**01 == *|1.|`str lr,[sp, #intsz-8]`\*|`save_reg`
+2|**CR**==01*|1.|`str lr,[sp, #intsz-8]`\*|`save_reg`
 3|0 < **RegF** < = 7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2).|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
 4|**H** 1 ==|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
-5a|**CR** 11 == & & #locsz<br/> < = 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
-5b|**CR** 11 == &AMP; &AMP;<br/>512 < #locsz < 4088 =|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5a|**CR** 11 == & & #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
+5b|**CR** 11 == &AMP; &AMP;<br/>512 < #locsz <= 4088|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
 5c|**CR** 11 == & & #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
 5d|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz < 4088 =|1.|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
 5e|(**CR** 00 == \| \| **CR**01 ==) &AMP; &AMP;<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
@@ -531,7 +531,7 @@ Bir parça, hiçbir giriş ve hiçbir sonuç varsa, yine de kendi .pdata (ve muh
 
 ## <a name="examples"></a>Örnekler
 
-### <a name="example-1-frame-chained-compact-form"></a>Örnek 1: Zincirleme çerçeve, CD-formu
+### <a name="example-1-frame-chained-compact-form"></a>Örnek 1: Çerçeve zincirleme, CD-formu
 
 ```asm
 |Foo|     PROC
@@ -549,7 +549,7 @@ Bir parça, hiçbir giriş ve hiçbir sonuç varsa, yine de kendi .pdata (ve muh
     ;Flags[SingleProEpi] functionLength[492] RegF[0] RegI[1] H[0] frameChainReturn[Chained] frameSize[2080]
 ```
 
-### <a name="example-2-frame-chained-full-form-with-mirror-prolog--epilog"></a>Örnek 2: Zincirleme çerçeve, tam biçimli yansıtma Prolog ve Epilog ile
+### <a name="example-2-frame-chained-full-form-with-mirror-prolog--epilog"></a>Örnek 2: Çerçeve zincirleme, tam biçimli yansıtma Prolog ve Epilog ile
 
 ```asm
 |Bar|     PROC
@@ -583,7 +583,7 @@ Bir parça, hiçbir giriş ve hiçbir sonuç varsa, yine de kendi .pdata (ve muh
 
 EpilogStart dizini [0] giriş geriye doğru izleme kodu aynı dizi için işaret ettiğini unutmayın.
 
-### <a name="example-3-variadic-unchained-function"></a>Örnek 3: Bağımsız değişken içeren işlevi unchained.
+### <a name="example-3-variadic-unchained-function"></a>Örnek 3: Değişen sayıda bağımsız değişken unchained işlevi
 
 ```asm
 |Delegate| PROC
@@ -627,4 +627,4 @@ Not: EpilogStart dizini [4], giriş geriye doğru izleme kodu (kısmen yeniden g
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ARM64 ABI kurallarına genel bakış](arm64-windows-abi-conventions.md)<br/>
-[ARM Özel Durum İşleme](../build/arm-exception-handling.md)
+[ARM Özel Durum İşleme](arm-exception-handling.md)

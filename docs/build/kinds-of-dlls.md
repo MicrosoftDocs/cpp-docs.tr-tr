@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DLLs [C++], types
 - DLLs [C++], MFC
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
-ms.openlocfilehash: daf042f742a9c4b7757813fc73eeb4b6d1a87413
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4aa8b1be7cd9ad32b10f12c5d1dfd3ae86adc1d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441125"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820292"
 ---
 # <a name="kinds-of-dlls"></a>DLL Türleri
 
@@ -31,13 +31,13 @@ MFC Kitaplığı hem statik bağlantı kitaplıklarında veya bir bazı DLL'lerd
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)
+- [MFC Dışı DLL'ler: Genel Bakış](non-mfc-dlls-overview.md)
 
-- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri: Genel Bakış](extension-dlls-overview.md)
 
 - [Hangi tür DLL kullanılacak?](#_core_which_kind_of_dll_to_use)
 
@@ -55,18 +55,18 @@ DLL'niz yalnızca MFC yürütülebilir dosyaları tarafından kullanılacaksa, N
 
 DLL'nizi MFC'ye, MFC DLL'leri DLL'niz ile yeniden dağıtılabilir. Bu mimari, disk alanından tasarruf etmek ve bellek kullanımını en aza indirmek için birden fazla yürütülebilir dosya arasında sınıf kitaplığının paylaşımı için özellikle yararlıdır.
 
-MFC kullanılan dll türleri yalnızca desteklenen iki Visual C++, 4.0 sürümünden önce: USRDLL ve AFXDLL kullanan. Statik olarak MFC'ye bağlı normal MFC DLL'lerin önceki USRDLL ile aynı özelliklere sahip. MFC uzantı DLL'leri önceki AFXDLL'ler aynı özelliklere sahip.
+Sürüm 4.0 önce Visual C++, yalnızca iki MFC kullanılan dll türleri desteklenir: USRDLL ve AFXDLL kullanan. Statik olarak MFC'ye bağlı normal MFC DLL'lerin önceki USRDLL ile aynı özelliklere sahip. MFC uzantı DLL'leri önceki AFXDLL'ler aynı özelliklere sahip.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)
+- [MFC Dışı DLL'ler: Genel Bakış](non-mfc-dlls-overview.md)
 
-- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri: Genel Bakış](extension-dlls-overview.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

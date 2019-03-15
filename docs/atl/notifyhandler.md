@@ -2,17 +2,15 @@
 title: NotifyHandler
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- NotifyHandler
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: 204309c334a8f5cd5be702bba016678537d66211
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 292a1c6606585dc0694ee678ba8bc9b5fbc42681
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275707"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808228"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 

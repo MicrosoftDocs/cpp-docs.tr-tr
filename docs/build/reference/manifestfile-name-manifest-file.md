@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -MANIFESTFILE linker option
 - /MANIFESTFILE linker option
 ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
-ms.openlocfilehash: 9839665c3d74fd9d60afd21a825ffbdb752c7b00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e75c6d8171aae22312ba6aaa2d4304d831ec6d0f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656176"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813844"
 ---
 # <a name="manifestfile-name-manifest-file"></a>/MANIFESTFILE (Bildirim Dosyasını Adlandır)
 
@@ -25,11 +25,11 @@ ms.locfileid: "50656176"
 
 / MANIFESTFILE, bildirim dosyasının varsayılan adını değiştirmenizi sağlar.  Dosya adına .manifest bildirim dosyasının varsayılan addır.
 
-/ MANIFESTFILE, herhangi bir etkisi olacaktır, siz de ile bağlamazsanız [/MANIFEST](../../build/reference/manifest-create-side-by-side-assembly-manifest.md).
+/ MANIFESTFILE, herhangi bir etkisi olacaktır, siz de ile bağlamazsanız [/MANIFEST](manifest-create-side-by-side-assembly-manifest.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -43,7 +43,7 @@ ms.locfileid: "50656176"
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

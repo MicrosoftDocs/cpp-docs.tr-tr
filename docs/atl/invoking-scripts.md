@@ -1,18 +1,16 @@
 ---
 title: (ATL) betikleri çağırma
 ms.date: 11/04/2016
-f1_keywords:
-- StringRegister
 helpviewer_keywords:
 - StringRegister method
 - scripts, invoking registry in ATL
 ms.assetid: eabd41ee-586b-4266-9e92-5aaad04b73a4
-ms.openlocfilehash: 6a604b6105612ad89a12026121c464028535d7df
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6ca744ced53677550e7b77f44d4f6550da744372
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287823"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820566"
 ---
 # <a name="invoking-scripts"></a>Betikleri çağırma
 

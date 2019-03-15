@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [C++], building
 - DLL linker option [C++]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609
-ms.openlocfilehash: 71696e4ffae91ed1fa8a13e69e75523ce66e8361
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f7907d659ee3bedc590b88320df03edce005b06
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546350"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820513"
 ---
 # <a name="dll-build-a-dll"></a>/DLL (DLL Derleme)
 
@@ -29,9 +29,9 @@ ms.locfileid: "50546350"
 
 1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodunda
 
-1. Bir [dışarı AKTARMALARI](../../build/reference/exports.md) .def dosyası deyimi
+1. Bir [dışarı AKTARMALARI](exports.md) .def dosyası deyimi
 
-1. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+1. Bir [/dışarı aktarma](export-exports-a-function.md) bağlantı komut belirtimi
 
 Bir program, birden fazla yöntemi kullanabilirsiniz.
 
@@ -43,7 +43,7 @@ Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığın�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **yapılandırma özellikleri** klasör.
 
@@ -55,7 +55,7 @@ Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığın�
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

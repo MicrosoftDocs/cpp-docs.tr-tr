@@ -6,12 +6,12 @@ ms.date: 12/12/2017
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 5722dcc06f5141818910e44a6160d12bcd4eaecd
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.openlocfilehash: 3bbbd40534e3e429d68dbb6205134c57db40c851
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977764"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817732"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
@@ -19,7 +19,7 @@ Her zamanki başlangıç noktası C++ programcısı için bir "Hello, world!" ko
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio ile masaüstü geliştirme, yüklü ve bilgisayarınızda çalışan C++ iş yükünde sahip. Henüz yüklü değilse, bkz. [Visual Studio 2017'de C++ yükleme desteği](../build/vscpp-step-0-installation.md).
+- Visual Studio ile masaüstü geliştirme, yüklü ve bilgisayarınızda çalışan C++ iş yükünde sahip. Henüz yüklü değilse, bkz. [Visual Studio 2017'de C++ yükleme desteği](vscpp-step-0-installation.md).
 
 ## <a name="create-your-app-project"></a>Uygulama projenizi oluşturun
 
@@ -27,11 +27,11 @@ Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözü
 
 1. Visual Studio'da açın **dosya** menüsünü seçip **yeni > Proje** açmak için **yeni proje** iletişim.
 
-   ![Yeni Proje iletişim kutusu açmak](../build/media/vscpp-file-new-project.gif "yeni proje iletişim kutusunu aç")
+   ![Yeni Proje iletişim kutusu açmak](media/vscpp-file-new-project.gif "yeni proje iletişim kutusunu aç")
 
 1. İçinde **yeni proje** iletişim kutusunda **yüklü**, **Visual C++** zaten seçili değilse ve ardından **boş proje** şablonu. İçinde **adı** alanına *HelloWorld*. Seçin **Tamam** projeyi oluşturmak için.
 
-   ![Ad ve yeni proje oluşturma](../build/media/vscpp-concierge-project-name-callouts.png "adı ve yeni proje oluşturma")
+   ![Ad ve yeni proje oluşturma](media/vscpp-concierge-project-name-callouts.png "adı ve yeni proje oluşturma")
 
 Visual Studio, yeni ve boş proje oluşturmak için ve kaynak kod dosyalarınızı eklemek istediğiniz uygulama türü için özelleştirmek üzere hazır oluşturur. Şimdi yaparsınız.
 
@@ -45,7 +45,7 @@ Visual Studio, uygulamaları ve bileşenleri her türlü Windows ve diğer platf
 
 1. İçinde **özellik sayfaları** iletişim altında **yapılandırma özellikleri**seçin **bağlayıcı**, **sistem**ve ardından düzenleme kutusuna yanındaki seçin **alt** özelliği. Görünen açılır menüde seçin **konsol (/ SUBSYSTEM: CONSOLE)**. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 
-   ![Özellik sayfaları iletişim kutusu açmak](../build/media/vscpp-properties-linker-subsystem.gif "özellik sayfaları iletişim kutusunu aç")
+   ![Özellik sayfaları iletişim kutusu açmak](media/vscpp-properties-linker-subsystem.gif "özellik sayfaları iletişim kutusunu aç")
 
 Konsol penceresinde çalıştırmak üzere projenizi oluşturmak için Visual Studio artık biliyor. Ardından, bir kaynak kodu dosyası ekleyin ve uygulamanız için kodu girin.
 
@@ -57,7 +57,7 @@ Konsol penceresinde çalıştırmak üzere projenizi oluşturmak için Visual St
 
 1. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Visual C++** altında **yüklü** zaten seçili değilse. Orta bölmede seçin **C++ dosyası (.cpp)**. Değişiklik **adı** için *HelloWorld.cpp*. Seçin **Ekle** iletişim kutusunu kapatın ve dosyayı oluşturun.
 
-   ![Kaynak dosya eklemek için HelloWorld.cpp](../build/media/vscpp-add-new-item.gif "HelloWorld.cpp için bir kaynak dosyası ekleme")
+   ![Kaynak dosya eklemek için HelloWorld.cpp](media/vscpp-add-new-item.gif "HelloWorld.cpp için bir kaynak dosyası ekleme")
 
 Visual studio, yeni ve boş bir kaynak kodu dosyası oluşturur ve bir düzenleyici penceresinde, kaynak kodunuzu girmek için hazır açar.
 
@@ -79,7 +79,7 @@ Visual studio, yeni ve boş bir kaynak kodu dosyası oluşturur ve bir düzenley
 
    Kod Düzenleyici penceresinde şu şekilde görünmelidir:
 
-   ![Hello World Kod Düzenleyicisi'nde](../build/media/vscpp-hello-world-editor.png "Hello World Kod Düzenleyicisi'nde")
+   ![Hello World Kod Düzenleyicisi'nde](media/vscpp-hello-world-editor.png "Hello World Kod Düzenleyicisi'nde")
 
 Kod Düzenleyicisi'nde şuna benzer, sonraki adıma gidin ve uygulamanızı oluşturmaya hazırsınız.
 

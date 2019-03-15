@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)'
+title: 'İzlenecek yol: Projeler ve çözümler (C++) ile çalışma'
 ms.date: 09/14/2018
 helpviewer_keywords:
 - solutions [C++]
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 968e4981a28d646b75335ee380635fd8f8e863e3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 9408938b670d8130305f2e1c1258fc6fcb9875bb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519237"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820071"
 ---
-# <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)
+# <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek yol: Projeler ve çözümler (C++) ile çalışma
 
 Visual Studio'da nasıl C++ projesi oluşturulduğu, nasıl kod eklendiği ve ardından projenin nasıl oluşturulup çalıştırıldığını burada bulabilirsiniz. Bu adım adım öğreticideki proje, kaç oyuncunun farklı kart oyunları oynadığını izleyen bir programdır.
 
@@ -22,7 +22,7 @@ Visual Studio'da iş, projeler ve çözümler halinde düzenlenmiştir. Bir çö
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
-Bu izlenecek yolu tamamlamak için Visual Studio 2017 sürüm 15.3 veya üzeri gerekir. Bir kopyası gerekirse, kısa bir kılavuz şöyledir: [Visual Studio'da C++ yükleme desteği](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımları aracılığıyla Visual C++'ın doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve yüklemeden sonra tüm works izleyin.
+Bu izlenecek yolu tamamlamak için Visual Studio 2017 sürüm 15.3 veya üzeri gerekir. Bir kopyası gerekirse, kısa bir kılavuz aşağıda verilmiştir: [Visual Studio'da C++ desteği yükleme](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımları aracılığıyla Visual C++'ın doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve yüklemeden sonra tüm works izleyin.
 
 C++ dilinin temellerini anlamanız ve bildiğiniz ne derleyici, bağlayıcı ve hata ayıklayıcı için kullanılan yardımcı olur. Öğreticide ayrıca Windows ve menüler, iletişim kutuları kullanma ile ilgili bilgi sahibi olduğunuz varsayılır,
 
@@ -83,11 +83,13 @@ Kılavuzun bu bölümü, projeye bir sınıf eklemek gösterilmektedir. Sınıf�
 
       Türünden bir parametre için bir oluşturucuyu değiştirin `int`, adlandırılmış *oyuncuların*.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->`Cardgame(int players);`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
+      `Cardgame(int players);`
 
    - Varsayılan yıkıcıdan sonra eklemek için bir satır içi bildirim bir `static int` adlı üye işlevi *GetParticipants* , herhangi bir parametre alır ve döndürür `totalParticipants` değeri.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->`static int GetParticipants() { return totalParticipants; }`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->
+      `static int GetParticipants() { return totalParticipants; }`
 
    Cardgame.h dosyası, siz değiştirdikten sonra aşağıdaki kodu benzemelidir:
 
@@ -215,10 +217,10 @@ Tebrikler, bir uygulama projesi ve çözümü başarıyla derlediyseniz. İzlene
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
-**Sonraki:** [izlenecek yol: Proje derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
+**Önceki:** [C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
+**Sonraki:** [İzlenecek yol: Proje Derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>
+[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>

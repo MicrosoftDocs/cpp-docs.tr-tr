@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CLR empty projects
 - CLR empty projects, creating
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
-ms.openlocfilehash: 3779887a91b69848d767c15af4a53ff2e87b760c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 068b1328925c2e5040316d197b80076549aea321
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740485"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818225"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR projeleri oluşturma
 
@@ -36,5 +36,5 @@ CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir ş
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br/>
-[Visual C++ Proje Türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+[Visual C++ Proje Türleri](../build/reference/visual-cpp-project-types.md)<br/>
+[C++ projelerinde hata ayıklama](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)

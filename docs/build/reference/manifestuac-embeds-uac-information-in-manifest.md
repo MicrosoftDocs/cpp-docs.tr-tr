@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-ms.openlocfilehash: 702dae41f873218dab0d3fb24e46dacd710bc20f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ecc30baabdcb60a030418e9643e2fcffe5ba8281
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625101"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813272"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 
@@ -48,11 +48,11 @@ Komut satırında birden çok /MANIFESTUAC seçeneği belirtirseniz, girilen son
 
 /MANIFESTUAC:level seçenekleri aşağıdaki gibidir:
 
-- `asInvoker`: Uygulama başlatıldığından işlem olarak aynı izinlere sahip çalışacaktır. Uygulama için daha yüksek bir izin düzeyi seçerek yükseltilebilir **yönetici olarak çalıştır**.
+- `asInvoker`: Uygulama, başlatılan işlem olarak aynı izinlere sahip çalışacaktır. Uygulama için daha yüksek bir izin düzeyi seçerek yükseltilebilir **yönetici olarak çalıştır**.
 
-- highestAvailable: uygulama ile alabilir ve en yüksek bir izin düzeyi çalışır. Uygulamayı başlatan kullanıcının Yöneticiler grubunun bir üyesi ise, bu seçenek requireAdministrator'a ile aynıdır. Yüksek kullanılabilir bir izin düzeyi açılışı düzeyinden daha yüksek ise, sistem için kimlik bilgilerini ister.
+- highestAvailable: Uygulama ile alabilir ve en yüksek bir izin düzeyi çalışacaktır. Uygulamayı başlatan kullanıcının Yöneticiler grubunun bir üyesi ise, bu seçenek requireAdministrator'a ile aynıdır. Yüksek kullanılabilir bir izin düzeyi açılışı düzeyinden daha yüksek ise, sistem için kimlik bilgilerini ister.
 
-- requireAdministrator'a: uygulama yönetici izinleriyle çalışacak. Uygulamayı başlatan kullanıcının Yöneticiler grubunun bir üyesi olmalıdır. Açma işlemi yönetim izinleriyle çalışmıyorsa, sistem için kimlik bilgilerini ister.
+- requireAdministrator'a: Uygulama yönetici izinleriyle çalıştırın. Uygulamayı başlatan kullanıcının Yöneticiler grubunun bir üyesi olmalıdır. Açma işlemi yönetim izinleriyle çalışmıyorsa, sistem için kimlik bilgilerini ister.
 
 /MANIFESTUAC:fragment seçeneğini kullanarak tek bir adımda düzeyi ve UIAccess değerleri belirtebilirsiniz. Parça, aşağıdaki biçimde olmalıdır:
 
@@ -62,7 +62,7 @@ Komut satırında birden çok /MANIFESTUAC seçeneği belirtirseniz, girilen son
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -76,7 +76,7 @@ Komut satırında birden çok /MANIFESTUAC seçeneği belirtirseniz, girilen son
 
 1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableUAC%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACExecutionLevel%2A>, ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACUIAccess%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

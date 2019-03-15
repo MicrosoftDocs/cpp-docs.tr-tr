@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -EXPORTS dumpbin option
 - /EXPORTS dumpbin option
 ms.assetid: 2971ab7e-4ee6-478b-9c85-cda42a4ce1bf
-ms.openlocfilehash: 55740991b48a95727805f4eb60a3156ceb448280
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f464a53486fdd5132bceb91d134b908c2aa0ff11
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595513"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815287"
 ---
 # <a name="exports"></a>/EXPORTS
 
@@ -25,8 +25,8 @@ ms.locfileid: "50595513"
 
 Bu seçenek, bir yürütülebilir dosya veya DLL dışarı aktarılan tüm tanımları görüntüler.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

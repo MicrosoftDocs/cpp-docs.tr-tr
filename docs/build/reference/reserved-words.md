@@ -17,16 +17,16 @@ helpviewer_keywords:
 - linker [C++], reserved words
 - reserved words [C++]
 ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
-ms.openlocfilehash: 360baf479f9100483fe694ca8860dfc1d7ebfe11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d51f599dfb81dfa860e1bdba86c4372e80379fb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502472"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822450"
 ---
 # <a name="reserved-words"></a>Ayrılmış sözcükler
 
-Bağlayıcı tarafından aşağıdaki sözcükler ayrılmıştır. Bu adlar, bağımsız değişkenleri olarak kullanılabilir [modül tanımlama deyimleri](../../build/reference/module-definition-dot-def-files.md) yalnızca adı çift tırnak işaretleri arasına alınmışsa ("").
+Bağlayıcı tarafından aşağıdaki sözcükler ayrılmıştır. Bu adlar, bağımsız değişkenleri olarak kullanılabilir [modül tanımlama deyimleri](module-definition-dot-def-files.md) yalnızca adı çift tırnak işaretleri arasına alınmışsa ("").
 
 ||||
 |-|-|-|
@@ -39,7 +39,7 @@ Bağlayıcı tarafından aşağıdaki sözcükler ayrılmıştır. Bu adlar, ba�
 |**DEV386**|**TAŞINABİLİR**<sup>1</sup>|**REALMODE**<sup>1</sup>|
 |**DISCARDABLE**|**BİRDEN ÇOK**|**YERLEŞİK**|
 |**DİNAMİK**|**ADI**|**RESIDENTNAME**<sup>1</sup>|
-|**YALNIZCA YÜRÜTME**|**NEWFILES**<sup>2</sup>|**BÖLÜMLERİ**|
+|**EXECUTE-ONLY**|**NEWFILES**<sup>2</sup>|**BÖLÜMLERİ**|
 |**EXECUTEONLY**|**NODATA**<sup>1</sup>|**PARÇALARI**|
 |**EXECUTEREAD**|**NOIOPL**<sup>1</sup>|**PAYLAŞILAN**|
 |**EXETYPE**|**NONAME**|**TEK**|
@@ -57,5 +57,5 @@ Bağlayıcı tarafından aşağıdaki sözcükler ayrılmıştır. Bu adlar, ba�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
-- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+- [MSVC bağlayıcı başvurusu](linking.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

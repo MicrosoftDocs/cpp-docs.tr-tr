@@ -8,12 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-ms.openlocfilehash: 550391d51560ff0beca8252ffb6193dd1e4d89b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3bfed5f75dab4c501708950fdb99f53c40ec142c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632394"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821306"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
 
@@ -33,7 +33,7 @@ Dinamik olarak MFC'ye bağlı normal MFC DLL, aşağıdaki özelliklere sahiptir
 
 - Statik olarak bağlı normal MFC DLL'SİNİN, bu tür bir DLL, MFC DLL (paylaşılan MFC DLL olarak da bilinir) için dinamik olarak bağlıdır.
 
-- MFC uzantı DLL'leri ya da MFC DLL kullanan uygulamalar için kullanılan hizmet örneğiyle aynı MFC içeri aktarma kitaplığının DLL bu tür bağlı olduğu: .lib MFCxx (D).
+- Bu tür bir DLL bağlı MFC içeri aktarma kitaplığını MFC uzantısı dll veya MFC DLL kullanan uygulamalar için kullanılan hizmet örneğiyle aynı şöyledir: MFCxx(D).lib.
 
 Dinamik olarak MFC'ye bağlı normal MFC DLL, aşağıdaki gereksinimlere sahiptir:
 
@@ -83,18 +83,18 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Normal MFC DLL'leri Başlat](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [Normal MFC DLL'leri Başlat](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
+- [MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
 
 - [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 
-- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL Türleri](../build/kinds-of-dlls.md)
+[DLL Türleri](kinds-of-dlls.md)

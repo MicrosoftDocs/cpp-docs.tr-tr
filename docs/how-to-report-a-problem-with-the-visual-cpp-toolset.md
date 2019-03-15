@@ -4,12 +4,12 @@ ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 4b64f79ea5a9566d2ad28216fbc5e736b622fe00
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 50b1005c7734b62941cbda087161d5ec41a0d026
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740252"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808046"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımı veya belgeleri ile ilgili bir sorun bildirme
 
@@ -43,7 +43,7 @@ Tam sürüm bilgilerini ve sorun neden olur ve böylece müşterilerimize makine
 
 #### <a name="to-report-the-full-version-of-the-compiler-youre-using"></a>Kullanmakta olduğunuz Derleyici tam sürümünü bildirmek için
 
-1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümünüz ve yapılandırmanız mimarisi ile eşleşir. Örneğin, üzerinde x64 x64 için Visual Studio 2017 kullanarak yapı hedefleri seçin **x64 VS 2017 için yerel Araçlar komut istemi**. Daha fazla bilgi için [Geliştirici komut istemi kısayolları](build/building-on-the-command-line.md#developer-command-prompt-shortcuts).
+1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümünüz ve yapılandırmanız mimarisi ile eşleşir. Örneğin, üzerinde x64 x64 için Visual Studio 2017 kullanarak yapı hedefleri seçin **x64 VS 2017 için yerel Araçlar komut istemi**. Daha fazla bilgi için [Geliştirici komut istemi kısayolları](build/building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
 1. Geliştirici komut istemi konsol penceresinde komutu girin **cl /Bv**.
 

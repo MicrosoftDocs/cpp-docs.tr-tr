@@ -14,22 +14,22 @@ helpviewer_keywords:
 - defaults [C++], libraries
 - .lib files
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
-ms.openlocfilehash: 0bf791d682b66d9d0da968fb0bfd5229e912e84c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02f719b3101b04ad6b219bf882a50a994061af0c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505361"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822619"
 ---
 # <a name="lib-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Lib Dosyaları
 
-BAĞLANTIYI kabul eden COFF standart kitaplıkları ve COFF içeri aktarma kitaplıkları, ikisi için de genellikle uzantılıdır. LIB. Standart kitaplıkları nesneleri içerir ve LIB araç tarafından oluşturulur. İçeri aktarma kitaplıkları diğer programlarda dışarı aktarmalar hakkında bilgiler içerir ve bağlantı tarafından dışarı aktarmaları içeren bir program oluşturduğunda veya LIB aracı tarafından oluşturulur. LIB standart oluşturmak veya kitaplıkları içeri aktarma için kullanma hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md). İçeri aktarma kitaplığı oluşturmak için bağlantıyı kullanarak hakkında daha fazla bilgi için bkz [/dll](../../build/reference/dll-build-a-dll.md) seçeneği.
+BAĞLANTIYI kabul eden COFF standart kitaplıkları ve COFF içeri aktarma kitaplıkları, ikisi için de genellikle uzantılıdır. LIB. Standart kitaplıkları nesneleri içerir ve LIB araç tarafından oluşturulur. İçeri aktarma kitaplıkları diğer programlarda dışarı aktarmalar hakkında bilgiler içerir ve bağlantı tarafından dışarı aktarmaları içeren bir program oluşturduğunda veya LIB aracı tarafından oluşturulur. LIB standart oluşturmak veya kitaplıkları içeri aktarma için kullanma hakkında daha fazla bilgi için bkz: [LIB başvurusu](lib-reference.md). İçeri aktarma kitaplığı oluşturmak için bağlantıyı kullanarak hakkında daha fazla bilgi için bkz [/dll](dll-build-a-dll.md) seçeneği.
 
-Kitaplığa bağlantı bir dosya adı bağımsız değişkeni ya da varsayılan kitaplık olarak belirtilir. İlk komut satırında belirtilen kitaplıklarda arama yaparak bağlantı dış başvuruları çözümleniyor ve kitaplıkları varsayılan belirtilen [/DEFAULTLIB](../../build/reference/defaultlib-specify-default-library.md) seçeneğini ve ardından varsayılan kitaplıkları adlı .obj dosyalarında. Kitaplık adı ile bir yol belirtilmezse, bağlantıyı bu dizine kitaplıkta arar. Hiçbir yol belirtilmezse, bağlantı ilk bağlantı çalıştıran dizinde ve LIB ortam değişkeninde belirtilen dizinde arar.
+Kitaplığa bağlantı bir dosya adı bağımsız değişkeni ya da varsayılan kitaplık olarak belirtilir. İlk komut satırında belirtilen kitaplıklarda arama yaparak bağlantı dış başvuruları çözümleniyor ve kitaplıkları varsayılan belirtilen [/DEFAULTLIB](defaultlib-specify-default-library.md) seçeneğini ve ardından varsayılan kitaplıkları adlı .obj dosyalarında. Kitaplık adı ile bir yol belirtilmezse, bağlantıyı bu dizine kitaplıkta arar. Hiçbir yol belirtilmezse, bağlantı ilk bağlantı çalıştıran dizinde ve LIB ortam değişkeninde belirtilen dizinde arar.
 
 ## <a name="to-add-lib-files-as-linker-input-in-the-development-environment"></a>Geliştirme ortamındaki bağlayıcı girişi olarak .lib dosyaları eklemek için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **giriş** özellik sayfasında **bağlayıcı** klasör.
 
@@ -37,7 +37,7 @@ Kitaplığa bağlantı bir dosya adı bağımsız değişkeni ya da varsayılan 
 
 ## <a name="to-programmatically-add-lib-files-as-linker-input"></a>Program aracılığıyla bağlayıcı girişi .lib dosyaları eklemek için
 
-- Bkz: [AdditionalDependencies](https://msdn.microsoft.com/library/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies.aspx).
+- Bkz: [AdditionalDependencies](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies).
 
 ## <a name="example"></a>Örnek
 
@@ -67,7 +67,7 @@ int main() {
 213
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[LINK Giriş Dosyaları](../../build/reference/link-input-files.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[LINK Giriş Dosyaları](link-input-files.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

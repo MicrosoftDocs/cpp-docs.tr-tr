@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - EDITBIN program, command line
 ms.assetid: 28ff7f92-6c4e-4e7f-86d8-80d5b2f91662
-ms.openlocfilehash: c19b2f2018caf380c7ac3a09c65955c924fed3e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4065cf2175b69e6aa87b70f7e00c4170f5b0d924
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665835"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807942"
 ---
 # <a name="editbin-command-line"></a>EDITBIN Komut Satırı
 
@@ -25,7 +25,7 @@ Nesneler veya değiştirilecek görüntüleri için bir veya daha fazla dosya ve
 
 Komut yazdığınızda `editbin` herhangi diğer komut satırı girişi olmadan, EDITBIN seçenekleri özetleyen bir kullanım deyimi görüntüler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
-[EDITBIN Başvurusu](../../build/reference/editbin-reference.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
+[EDITBIN Başvurusu](editbin-reference.md)

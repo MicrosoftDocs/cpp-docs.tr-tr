@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /Zc:ternary
 - Zc:ternary
 - -Zc:ternary
-ms.openlocfilehash: 2bc9e924656b9e1cb914255780adc4ae50220275
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb9a4f8468a9cb57af711cdca36ee343e5092493
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618198"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816496"
 ---
 # <a name="zcternary-enforce-conditional-operator-rules"></a>/ ZC: ternary (koşullu işleç kurallarını zorla)
 
@@ -20,7 +20,7 @@ Uygulama türleri için C++ Standart kuralları ve koşullu işleç bir ifadede 
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ ZC: ternary**[**-**]
+> **/Zc:ternary**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -151,7 +151,7 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -159,4 +159,4 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)
+[/Zc (Uyumluluk)](zc-conformance.md)

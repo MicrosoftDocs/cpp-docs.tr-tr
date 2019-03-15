@@ -1,5 +1,5 @@
 ---
-title: 'Gözatma Bilgileri Dosyası Derleme: Genel Bakış'
+title: 'Gözatma bilgileri dosyası derleme: Genel Bakış'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - .bsc files, about .bsc files
@@ -7,31 +7,31 @@ helpviewer_keywords:
 - browse information files (.bsc)
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-ms.openlocfilehash: d620c7170ef5e84a05496af6e74d3a22f594749b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f12bd25ca3ab718a845dbb04aba3169cc6d4b19
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469984"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820638"
 ---
-# <a name="building-browse-information-files-overview"></a>Gözatma Bilgileri Dosyası Derleme: Genel Bakış
+# <a name="building-browse-information-files-overview"></a>Gözatma bilgileri dosyası derleme: Genel Bakış
 
 Sembol tarama için gözatma bilgisi oluşturmak için derleyicinin .sbr dosyası her kaynak dosyası için projenizde ardından BSCMAKE oluşturur. EXE .bsc dosyasına .sbr dosyaları art arda ekler.
 
 Varsayılan olarak Visual C++ bu işlevler devre dışı bırakır, böylece .sbr ve .bsc dosyaları oluşturmak zaman alır. Geçerli bilgilerine göz atmak istiyorsanız, göz atma Seçenekleri'ni açın ve projenizi yeniden derleyin.
 
-Kullanım [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) veya [/Fr](../../build/reference/fr-fr-create-dot-sbr-file.md) .sbr dosyaları oluşturmak için derleyicinin söylemek için. .BSC dosyaları oluşturmak için çağırabilirsiniz [BSCMAKE](../../build/reference/bscmake-command-line.md) komut satırından. BSCMAKE komut satırından kullanarak gözatma bilgisi dosyalarının işlenmesini üzerinde daha kesin denetim verir. Bkz: [BSCMAKE başvurusu](../../build/reference/bscmake-reference.md) daha fazla bilgi için.
+Kullanım [/FR](fr-fr-create-dot-sbr-file.md) veya [/Fr](fr-fr-create-dot-sbr-file.md) .sbr dosyaları oluşturmak için derleyicinin söylemek için. .BSC dosyaları oluşturmak için çağırabilirsiniz [BSCMAKE](bscmake-command-line.md) komut satırından. BSCMAKE komut satırından kullanarak gözatma bilgisi dosyalarının işlenmesini üzerinde daha kesin denetim verir. Bkz: [BSCMAKE başvurusu](bscmake-reference.md) daha fazla bilgi için.
 
 > [!TIP]
 >  .Sbr dosyası oluşturma hakkında kapatma ancak .bsc dosyası oluşturma devre dışı bırakın. Bu hızlı oluşturulur, ancak ayrıca yeni .bsc dosyası .bsc dosyası nesil kapatma ve projeyi derlemek hızla oluşturmanızı sağlayan sağlar.
 
 İstediğiniz zaman, bellek ve .bsc dosyası boyutunu azaltarak .bsc dosyasını oluşturmak için gerekli disk alanını azaltabilirsiniz.
 
-Bkz: [genel özellik sayfası (Proje)](../../ide/general-property-page-project.md) geliştirme ortamında bir tarayıcı dosyasının nasıl oluşturulacağı hakkında bilgi için.
+Bkz: [genel özellik sayfası (Proje)](general-property-page-project.md) geliştirme ortamında bir tarayıcı dosyasının nasıl oluşturulacağı hakkında bilgi için.
 
 ### <a name="to-create-a-smaller-bsc-file"></a>Daha küçük .bsc dosyasını oluşturmak için
 
-1. Kullanım [BSCMAKE komut satırı seçenekleri](../../build/reference/bscmake-options.md) gözatma bilgileri dosyasından bilgi dışlanacak.
+1. Kullanım [BSCMAKE komut satırı seçenekleri](bscmake-options.md) gözatma bilgileri dosyasından bilgi dışlanacak.
 
 1. Derleme veya derleyerek, bir veya daha fazla .sbr dosyaları yerel semboller yok sayın.
 
@@ -43,7 +43,7 @@ Bkz: [genel özellik sayfası (Proje)](../../ide/general-property-page-project.m
 
 1. Tüm projeler oluşturulur sonra BSCMAKE tüm .sbr dosyaları ile giriş olarak çalıştırın. Joker karakterler kabul edilir. Örneğin, bunları ve bunların tümünü bir .bsc dosyada birleştirmek istediğinizi .sbr dosyaları ile proje dizinleri C:\X C:\Y ve C:\Z olsaydı, ardından BSCMAKE C:\X kullanın\\\*.sbr C:\Y\\\*.sbr C:\Z\\ \*.sbr /o c:\whatever_directory\combined.bsc birleşik .bsc dosyasını oluşturmak için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
-[BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
+[BSCMAKE Başvurusu](bscmake-reference.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /F compiler option [C++]
 - stack, setting size
 ms.assetid: 17320b6f-8305-445b-9ec2-75833f4b29e0
-ms.openlocfilehash: 69d26a4e4634ea60457d75bc97d2266036d11e10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9db595daa7de7820b594a8515ece7481b4382c98
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525534"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820422"
 ---
 # <a name="f-set-stack-size"></a>/F (Yığın Boyutunu Ayarla)
 
@@ -38,13 +38,13 @@ Programınızı yığın taşması iletileri alırsa yığın boyutunu artırabi
 
 Ayrıca yığın boyutu ayarlayabileceğiniz:
 
-- Kullanarak **/STACK** bağlayıcı seçeneği. Daha fazla bilgi için [/STACK](../../build/reference/stack.md).
+- Kullanarak **/STACK** bağlayıcı seçeneği. Daha fazla bilgi için [/STACK](stack.md).
 
-- EDITBIN .exe dosyası kullanma. Daha fazla bilgi için [EDITBIN başvurusu](../../build/reference/editbin-reference.md).
+- EDITBIN .exe dosyası kullanma. Daha fazla bilgi için [EDITBIN başvurusu](editbin-reference.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -54,7 +54,7 @@ Ayrıca yığın boyutu ayarlayabileceğiniz:
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

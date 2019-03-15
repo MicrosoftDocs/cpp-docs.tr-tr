@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme'
+title: 'Nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme'
 ms.custom: conceptual
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-ms.openlocfilehash: 7759cf13e95fab97ee5a7b77e22c690a69fde41a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf2078432f629a353e0c325b407db59681ffd9d3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523129"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820084"
 ---
-# <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme
+# <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme
 
 Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedeflemek için ve farklı platform araç takımları kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, proje sistemi .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç kümesi sürümünü kullanır. Proje özelliklerini değiştirerek hedef platform araç takımını değiştirebilirsiniz. Proje (.vcxproj) dosyasını değiştirerek hedef Framework'ü değiştirebilirsiniz. Ayrı bir kod tabanı her derleme hedefi korumak zorunda değildir.
 
@@ -59,6 +59,6 @@ Ayrıca, hedef Framework'ü değiştirdiğinizde, platform araç takımını, Fr
 
 1. Seçin **Tamam** düğmesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+[MSBuild komut satırında - C++](msbuild-visual-cpp.md)

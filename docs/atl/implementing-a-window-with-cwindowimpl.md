@@ -1,8 +1,6 @@
 ---
 title: Cwindowımpl ile pencere uygulama
 ms.date: 11/04/2016
-f1_keywords:
-- CWindowImpl
 helpviewer_keywords:
 - ATL, windows
 - windows [C++], subclassing
@@ -11,12 +9,12 @@ helpviewer_keywords:
 - subclassing ATL window classes
 - superclassing, ATL
 ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
-ms.openlocfilehash: 7b1528e331a1431decb3916a06e67f0095615c2d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 265c3145d8ceacae540286f72939dc046e7c8b35
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295857"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818082"
 ---
 # <a name="implementing-a-window-with-cwindowimpl"></a>Cwindowımpl ile pencere uygulama
 

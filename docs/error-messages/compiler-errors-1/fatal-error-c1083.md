@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-ms.openlocfilehash: ae4c6a9f6c41d94aa1e36ba4a79226b49df08b49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 522bc4a36be59d4e2c9425e50b1238eb9f4aba61
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628013"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822203"
 ---
 # <a name="fatal-error-c1083"></a>Önemli hata C1083
 
@@ -71,11 +71,11 @@ Bile, üst bilgi dosyaları içinde listelenen **Çözüm Gezgini** tarafından 
 
 Bu sorunu gidermek için, eklenen veya içeri aktarılan dosyayı aramak üzere derleyici tarafından kullanılan yolu düzeltin. Yeni bir proje kullanan varsayılan arama yollarını içerir. Projeniz için bir dizin eklemek için ekleme kodu arama yolunu değiştirmeniz gerekebilir. Komut satırında derleme yapıyorsanız yola ekleyin **INCLUDE** ortam değişkeni veya **/I** derleyici seçeneğini dosya yolunu belirtin.
 
-Visual Studio'da ekleme dizini yolunu ayarlamak için projenin açın **özellik sayfaları** iletişim kutusu. Seçin **VC ++ dizinleri** altında **yapılandırma özellikleri** düzenleyin ve sol bölmedeki **ekleme dizinleri** özelliği. Visual Studio'da derleyici tarafından aranan kullanıcı başına ve her proje dizinleri hakkında daha fazla bilgi için bkz: [VC ++ Directories Property Page](../../ide/vcpp-directories-property-page.md). Hakkında daha fazla bilgi için **/I** derleyici seçeneği bkz [/ı (ek içeren dizinler)](../../build/reference/i-additional-include-directories.md).
+Visual Studio'da ekleme dizini yolunu ayarlamak için projenin açın **özellik sayfaları** iletişim kutusu. Seçin **VC ++ dizinleri** altında **yapılandırma özellikleri** düzenleyin ve sol bölmedeki **ekleme dizinleri** özelliği. Visual Studio'da derleyici tarafından aranan kullanıcı başına ve her proje dizinleri hakkında daha fazla bilgi için bkz: [VC ++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md). Hakkında daha fazla bilgi için **/I** derleyici seçeneği bkz [/ı (ek içeren dizinler)](../../build/reference/i-additional-include-directories.md).
 
 ## <a name="the-command-line-include-or-lib-environment-is-not-set"></a>Komut satırı dahil etme veya LIB ortam ayarlanmadı
 
-Derleyici komut satırı üzerinde çağrıldığında, ortam değişkenleri genellikle arama yollarını belirtmek için kullanılır. Tarafından açıklanan arama yolu varsa **INCLUDE** veya **LIB** ortam değişkeninin doğru şekilde ayarlanmamışsa, C1083 hatası oluşturulur. Komut satırı için temel ortamı için geliştirici komut istemi kısayolunun derlemeleri kesinlikle öneririz. Daha fazla bilgi için [derleme C/C++ komut satırında](../../build/building-on-the-command-line.md). Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Use Environment Variables'bir derlemedeki](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
+Derleyici komut satırı üzerinde çağrıldığında, ortam değişkenleri genellikle arama yollarını belirtmek için kullanılır. Tarafından açıklanan arama yolu varsa **INCLUDE** veya **LIB** ortam değişkeninin doğru şekilde ayarlanmamışsa, C1083 hatası oluşturulur. Komut satırı için temel ortamı için geliştirici komut istemi kısayolunun derlemeleri kesinlikle öneririz. Daha fazla bilgi için [derleme C/C++ komut satırında](../../build/building-on-the-command-line.md). Ortam değişkenlerini kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Derlemede ortam değişkenlerini kullanma](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
 
 ## <a name="the-file-may-be-locked-or-in-use"></a>Dosya kilitli olabilir veya kullanımda
 
@@ -87,7 +87,7 @@ C1083 hatası, dosyanın yanlış versiyonunun eklendiğini de belirtebilir. Ör
 
 ## <a name="the-precompiled-headers-are-not-yet-precompiled"></a>Önceden derlenmiş üstbilgiler henüz önceden derlenmiş değil
 
-Bir proje, önceden derlenmiş üstbilgileri kullanmak üzere yapılandırıldığında, üstbilgi içeriğini kullanan dosyaların derlenebilmesi için ilgili .pch dosyalarının oluşturulması gerekir. Örneğin, stdafx.cpp dosyası, yeni projeler için proje dizininde otomatik olarak oluşturulur. Önceden derlenmiş üstbilgi dosyalarını oluşturmak için öncelikle bu dosyayı derleyin. Tipik yapı işlemi tasarımında, bu otomatik olarak gerçekleştirilir. Daha fazla bilgi için [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md).
+Bir proje, önceden derlenmiş üstbilgileri kullanmak üzere yapılandırıldığında, üstbilgi içeriğini kullanan dosyaların derlenebilmesi için ilgili .pch dosyalarının oluşturulması gerekir. Örneğin, stdafx.cpp dosyası, yeni projeler için proje dizininde otomatik olarak oluşturulur. Önceden derlenmiş üstbilgi dosyalarını oluşturmak için öncelikle bu dosyayı derleyin. Tipik yapı işlemi tasarımında, bu otomatik olarak gerçekleştirilir. Daha fazla bilgi için [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/creating-precompiled-header-files.md).
 
 ## <a name="additional-causes"></a>Ek nedenler
 
@@ -116,7 +116,7 @@ Aşağıdaki örnek C1083 hatasını oluşturur, üst bilgi dosyası `"test.h"` 
 #include "stdio.h"  // OK
 ```
 
-IDE veya komut satırında C/C++ projeleri oluşturma hakkında daha fazla bilgi ve ortam değişkenlerini ayarlama hakkında bilgi için bkz. [C/C++ programları oluşturma](../../build/building-c-cpp-programs.md).
+IDE veya komut satırında C/C++ projeleri oluşturma hakkında daha fazla bilgi ve ortam değişkenlerini ayarlama hakkında daha fazla bilgi için bkz. [projeler ve yapı sistemi](../../build/projects-and-build-systems-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - LINK tool [C++], options for full linking
 - incremental linking
 ms.assetid: 135656ff-94fa-4ad4-a613-22e1a2a5d16b
-ms.openlocfilehash: 0ef6e8c7fed2c58e8fc2949a84483015bbc9d6bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 189affe57694a8369e9cf7ac98815cc5888b69aa
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642035"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816145"
 ---
 # <a name="incremental-link-incrementally"></a>/INCREMENTAL (Artımlı Bağla)
 
@@ -54,7 +54,7 @@ Varsayılandan bağımsız ve artırımlı olarak bağlamak için /INCREMENTAL b
 
 - /ORDER seçili
 
-/ INCREMENTAL, örtük [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilir.
+/ INCREMENTAL, örtük [/DEBUG](debug-generate-debug-info.md) belirtilir.
 
 Ayrıca, aşağıdaki durumlardan herhangi biri söz konusu olursa LINK tam bağlantı gerçekleştirir:
 
@@ -72,7 +72,7 @@ Ayrıca, aşağıdaki durumlardan herhangi biri söz konusu olursa LINK tam bağ
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **bağlayıcı** klasör.
 
@@ -84,7 +84,7 @@ Ayrıca, aşağıdaki durumlardan herhangi biri söz konusu olursa LINK tam bağ
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkIncremental%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

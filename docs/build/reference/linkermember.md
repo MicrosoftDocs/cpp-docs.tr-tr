@@ -8,12 +8,12 @@ helpviewer_keywords:
 - LINKERMEMBER dumpbin option
 - -LINKERMEMBER dumpbin option
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406
-ms.openlocfilehash: e55f613566b5c3bd7709fe7f30cd0ae985cd369f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0456fd9ed1729b4a6cfa200a54ba211a64e94ea
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494450"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813285"
 ---
 # <a name="linkermember"></a>/LINKERMEMBER
 
@@ -25,8 +25,8 @@ ms.locfileid: "50494450"
 
 Bu seçenek, kitaplıkta tanımlanan ortak simgeleri görüntüler. Kendi farkların yanı sıra nesnesi sırayla simgelerini görüntülemek için 1 bağımsız değişkenini belirtin. Kaydırmalar ve dizin numaralarını nesne görüntülenecek 2 bağımsız değişkeni belirtmeniz ve ardından simgeleri alfabetik her nesne dizini ile birlikte listeler. Her iki çıkışları almak için /LINKERMEMBER sayı bağımsız değişken olmadan belirtin.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

@@ -2,12 +2,12 @@
 title: Yapı ve Sabit Tanımları
 ms.date: 11/04/2016
 ms.assetid: 1df7cf46-b853-4788-a257-100d5c37997f
-ms.openlocfilehash: c4cc5f08c8cbd0e7baea0f612063a6ebdbb56c1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea7aa1ec25bcd0e8531ef63848de26da164da668
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474314"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813363"
 ---
 # <a name="structure-and-constant-definitions"></a>Yapı ve Sabit Tanımları
 
@@ -69,6 +69,6 @@ typedef struct ImgDelayDescr {
     } ImgDelayDescr, * PImgDelayDescr;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı İşlevini Anlama](../../build/reference/understanding-the-helper-function.md)
+[Yardımcı İşlevini Anlama](understanding-the-helper-function.md)

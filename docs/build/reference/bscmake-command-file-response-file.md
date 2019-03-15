@@ -9,12 +9,12 @@ helpviewer_keywords:
 - response files
 - command files
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
-ms.openlocfilehash: 6be6dae2ef3dd729819a5eccba5e86df479ab5ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: beb3d5696957f6b1af8168e3194e3943a1574be8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587319"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820318"
 ---
 # <a name="bscmake-command-file-response-file"></a>BSCMAKE Komut Dosyası (Yanıt Dosyası)
 
@@ -43,6 +43,6 @@ verdate.h c:\src\inc\screen.h
 file1.sbr file2.sbr file3.sbr file4.sbr
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)
+[BSCMAKE Başvurusu](bscmake-reference.md)

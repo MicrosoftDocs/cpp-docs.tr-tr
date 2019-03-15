@@ -4,8 +4,6 @@ items:
   items:
   - name: Genel Bakış
     items:
-    - name: Visual Studio 2017 Hakkında
-      href: visual-studio-ide-cpp.md
     - name: Kod düzenleyicisi hakkında
       href: /visualstudio/get-started/tutorial-editor
     - name: Projeler ve çözümler hakkında
@@ -33,9 +31,9 @@ items:
       href: /visualstudio/debugger/getting-started-with-the-debugger-cpp
     - name: Projenizi dağıtma
       href: /visualstudio/deployment/index
-ms.openlocfilehash: 98c2cd9f86825506fcc8ef44c22188026fda9bea
-ms.sourcegitcommit: 235d974c14ad3ffa7a3b29dec3e320a52fb291b2
+ms.openlocfilehash: fd03cd392d732b7dd5f68846362cfefadb7eb2f7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53440315"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816249"

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - /Gy compiler option [C++]
 - packaged functions
 ms.assetid: 0d3cf14c-ed7d-4ad3-b4b6-104e56f61046
-ms.openlocfilehash: 1fd06b17ca0cfb1583b3014fb2c8f02b5e5a5437
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9643b8b4b4b26b3f7a8a59ed0085601b1a53094d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629924"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817978"
 ---
 # <a name="gy-enable-function-level-linking"></a>/Gy (İşlev Düzeyi Bağlamayı Etkinleştir)
 
@@ -34,18 +34,18 @@ Derleyicinin ayrı ayrı işlevleri paketlenmiş işlevler (Comdat'lar) biçimin
 
 Bağlayıcı işlevleri hariç tutmak veya ayrı ayrı işlevleri bir DLL veya .exe dosyasını düzenlemek için comdat'ları olarak ayrı ayrı paketlenmesi gerekir.
 
-Bağlayıcı seçeneği kullanabileceğiniz [OPT (iyileştirmeler)](../../build/reference/opt-optimizations.md) .exe dosyasından başvurulmayan paketlenmiş işlevleri hariç tutmak için.
+Bağlayıcı seçeneği kullanabileceğiniz [OPT (iyileştirmeler)](opt-optimizations.md) .exe dosyasından başvurulmayan paketlenmiş işlevleri hariç tutmak için.
 
-Bağlayıcı seçeneği kullanabileceğiniz [/order (Put işlevleri Sırala)](../../build/reference/order-put-functions-in-order.md) .exe dosyasının belirli bir sırada paketlenmiş işlevler dahil edilecek.
+Bağlayıcı seçeneği kullanabileceğiniz [/order (Put işlevleri Sırala)](order-put-functions-in-order.md) .exe dosyasının belirli bir sırada paketlenmiş işlevler dahil edilecek.
 
 Satır içi işlevleri her zaman çağrıları olarak örneği oluşturulur, paketlenmiş (hangi oluşursa, örneğin, satır içi kullanım kapalı veya bir işlevin adresi alın). Ayrıca, bir sınıf bildiriminde tanımlanan C++ üye işlevleri otomatik olarak paketlenir; diğer işlevler değildir ve onları paketlenmiş işlevler derlemek için bu seçeneği gereklidir.
 
 > [!NOTE]
->  [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği, Düzenle ve devam et için kullanılan otomatik olarak ayarlar **/Gy** seçeneği.
+>  [/Zi](z7-zi-zi-debug-information-format.md) seçeneği, Düzenle ve devam et için kullanılan otomatik olarak ayarlar **/Gy** seçeneği.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -57,7 +57,7 @@ Satır içi işlevleri her zaman çağrıları olarak örneği oluşturulur, pak
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFunctionLevelLinking%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

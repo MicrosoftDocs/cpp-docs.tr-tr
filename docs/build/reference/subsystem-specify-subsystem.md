@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -SUBSYSTEM linker option
 - subsystem specifications
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-ms.openlocfilehash: 3d808f86a9ea3b34da0dccae18ecc000ca364f0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ecda3443d0422af4d5ceec9282d86590c53af2f5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518397"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821271"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM (Alt Sistemi Belirt)
 
@@ -42,7 +42,7 @@ Win32 karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bi
 Genişletilebilir Bellenim Arabirimi alt sistemler. EFI belirtimi daha fazla bilgi için bkz. Örnekler için Intel Web sitesine bakın. En düşük sürümü ve varsayılan sürüm 1.0 ' dir.
 
 **YEREL**<br/>
-Windows NT Çekirdek modu sürücüleri. Bu seçenek genelde Windows sistem bileşenleri için ayrılmıştır. Varsa [/DRIVER: WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) belirtilirse, yerel varsayılandır.
+Windows NT Çekirdek modu sürücüleri. Bu seçenek genelde Windows sistem bileşenleri için ayrılmıştır. Varsa [/DRIVER: WDM](driver-windows-nt-kernel-mode-driver.md) belirtilirse, yerel varsayılandır.
 
 **POSIX**<br/>
 Windows NT'de POSIX alt sistemi ile çalışan uygulama.
@@ -64,8 +64,8 @@ Varsayılan ve isteğe bağlı en az *ana* ve *küçük* alt sistemler için sü
 |Alt sistem|Minimum|Varsayılan|
 |---------------|-------------|-------------|
 |BOOT_APPLICATION|1.0|1.0|
-|KONSOLU|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|(x86, x64) 6.00 6.02 (ARM)|
-|WINDOWS|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|(x86, x64) 6.00 6.02 (ARM)|
+|KONSOLU|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|6.00 (x86, x64) 6.02 (ARM)|
+|WINDOWS|(x 86) 5.01 (x 64) 5.02 6.02 (ARM)|6.00 (x86, x64) 6.02 (ARM)|
 |Yerel (ile sürücü: WDM)|(x 86) 1,00 1.10 (x64, ARM)|(x 86) 1,00 1.10 (x64, ARM)|
 |Yerel (olmadan/DRIVER: WDM)|(x 86) 4.00 (x 64) 5.02 6.02 (ARM)|(x 86) 4.00 (x 64) 5.02 6.02 (ARM)|
 |POSIX|1.0|19.90|
@@ -73,7 +73,7 @@ Varsayılan ve isteğe bağlı en az *ana* ve *küçük* alt sistemler için sü
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Bağlayıcı klasörü seçin.
 
@@ -85,7 +85,7 @@ Varsayılan ve isteğe bağlı en az *ana* ve *küçük* alt sistemler için sü
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SubSystem%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -2,17 +2,15 @@
 title: Bilinmeyen uygulama sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.Iunknown
 helpviewer_keywords:
 - IUnknown implementation classes
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-ms.openlocfilehash: 97ca30c90cb8fa85685e30aa61d954008cf7cc54
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 26751c013d65142393377394006a9833e6c8f7bb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297573"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814078"
 ---
 # <a name="iunknown-implementation-classes"></a>Bilinmeyen uygulama sınıfları
 

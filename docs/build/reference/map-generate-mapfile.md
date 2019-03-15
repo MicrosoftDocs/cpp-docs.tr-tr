@@ -15,12 +15,12 @@ helpviewer_keywords:
 - mapfiles, specifying file name
 - /MAP linker option
 ms.assetid: 9ccce53d-4e36-43da-87b0-7603ddfdea63
-ms.openlocfilehash: 8ff2a8f54caa54247050c607004ed328c0d1b11d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a45fd5ea44b8908e77f847275bde42b86385cdb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436460"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817952"
 ---
 # <a name="map-generate-mapfile"></a>/MAP (Eşlem Dosyası Oluştur)
 
@@ -51,11 +51,11 @@ Bir eşlem bağlantılandırılan program hakkında aşağıdaki bilgileri içer
 
 - Giriş noktası (olarak *bölümü*:*uzaklığı*)
 
-[Mapınfo](../../build/reference/mapinfo-include-information-in-mapfile.md) seçeneği mapfile içinde dahil edilecek ek bilgiler belirtir.
+[Mapınfo](mapinfo-include-information-in-mapfile.md) seçeneği mapfile içinde dahil edilecek ek bilgiler belirtir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -67,7 +67,7 @@ Bir eşlem bağlantılandırılan program hakkında aşağıdaki bilgileri içer
 
 1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - EDITBIN program
 - COFF files, editing
 ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914
-ms.openlocfilehash: c2c0ee66ed1811755edc33b24737e057554fd01f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 45c2967a55e85ae31bb77bb2e8d50415eafbea46
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542915"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807926"
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
 
@@ -23,12 +23,12 @@ Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. Exe dosyası) ikili dosya
 > [!NOTE]
 >  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
 
-EDITBIN ile üretilen dosyaları kullanmak için erişilebilir değil [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği. /GL ile üretilen ikili dosyalara yapılan tüm değişiklikler, yeniden derlemeden ve bağlama elde gerekecektir.
+EDITBIN ile üretilen dosyaları kullanmak için erişilebilir değil [/GL](gl-whole-program-optimization.md) derleyici seçeneği. /GL ile üretilen ikili dosyalara yapılan tüm değişiklikler, yeniden derlemeden ve bağlama elde gerekecektir.
 
-- [EDITBIN komut satırı](../../build/reference/editbin-command-line.md)
+- [EDITBIN komut satırı](editbin-command-line.md)
 
-- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+- [EDITBIN seçenekleri](editbin-options.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)

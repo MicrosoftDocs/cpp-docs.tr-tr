@@ -13,12 +13,12 @@ helpviewer_keywords:
 - suppress frame pointer creation
 - /Oy compiler option [C++]
 ms.assetid: c451da86-5297-4c5a-92bc-561d41379853
-ms.openlocfilehash: 343b0e026c2932e97d4a8d4472ba2035d6302661
-ms.sourcegitcommit: 3da2cb3ec85e77ddfd4d2a55edb133d580ce4f18
+ms.openlocfilehash: 7884f52cc22766c6b1a864fc01abcd73f92cfabb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330396"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817965"
 ---
 # <a name="oy-frame-pointer-omission"></a>/Oy (Çerçeve İşaretçisini Atlama)
 
@@ -36,13 +36,13 @@ Bu seçenek, hiçbir çerçeve işaretçisinin ayarlanması ve kaldırılması g
 
 Belirtebileceğiniz kodunuzu çerçeve tabanlı adresleme gerektiriyorsa **/Oy-** sonra seçeneği **/Ox** seçeneğini veya kullanın [en iyi duruma getirme](../../preprocessor/optimize.md) ile "**y**"ve **kapalı** çerçeve tabanlı adresleme ile en fazla iyileştirme elde etmek için bağımsız değişkenler. Derleyici burada çerçeve tabanlı adresleme gerekli olduğu çoğu durumu algılar (örneğin, ile `_alloca` ve `setjmp` işlevleri ve yapılandırılmış özel durum işleme ile).
 
-[/Ox (etkinleştirme en hız iyileştirmelerini)](../../build/reference/ox-full-optimization.md) ve [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) seçenekleri yaptığından **/Oy**. Belirtme **/Oy-** sonra **/Ox**, **/O1**, veya **/O2** seçeneği devre dışı bırakır **/Oy**, olduğunu açık veya zımni.
+[/Ox (etkinleştirme en hız iyileştirmelerini)](ox-full-optimization.md) ve [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](o1-o2-minimize-size-maximize-speed.md) seçenekleri yaptığından **/Oy**. Belirtme **/Oy-** sonra **/Ox**, **/O1**, veya **/O2** seçeneği devre dışı bırakır **/Oy**, olduğunu açık veya zımni.
 
-**/Oy** derleyicinin çerçeve işaretçisi bilgilerini engellemesidir çünkü daha zor hata ayıklayıcıyı kullanma derleyici seçeneği sağlar. Debug derleyici seçeneği belirtirseniz ([/z7, / zi, /zı](../../build/reference/z7-zi-zi-debug-information-format.md)), belirttiğiniz öneririz **/Oy-** seçeneğinden sonra başka bir iyileştirme derleyici seçenekleri.
+**/Oy** derleyicinin çerçeve işaretçisi bilgilerini engellemesidir çünkü daha zor hata ayıklayıcıyı kullanma derleyici seçeneği sağlar. Debug derleyici seçeneği belirtirseniz ([/z7, / zi, /zı](z7-zi-zi-debug-information-format.md)), belirttiğiniz öneririz **/Oy-** seçeneğinden sonra başka bir iyileştirme derleyici seçenekleri.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **iyileştirme** özellik sayfası.
 
@@ -52,8 +52,8 @@ Belirtebileceğiniz kodunuzu çerçeve tabanlı adresleme gerektiriyorsa **/Oy-*
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>

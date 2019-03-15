@@ -2,18 +2,16 @@
 title: 'ATL denetimleri: Genel destek sınıfları'
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.controls
 helpviewer_keywords:
 - controls [ATL]
 - general support classes
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
-ms.openlocfilehash: bf5c1b9e2f4fb7414cc34d457bc0d8b1e27dcd91
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c3d6f7588e333a27a8bc766d982660aaa4d984c9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263006"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818615"
 ---
 # <a name="controls-general-support-classes"></a>Denetimler: Genel destek sınıfları
 

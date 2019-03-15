@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Win32 Application Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-ms.openlocfilehash: 1b89ae1c91536956924090f4a5eafa883053ed7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 639834c8d723b65b894e6d216cbeb3b7f4dc37ec
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526175"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822697"
 ---
 # <a name="win32-application-wizard"></a>Win32 Uygulama Sihirbazı
 
@@ -47,9 +47,9 @@ Windows masaüstü uygulaması oluşturduğunuzca genel C++ sınıflarını kull
 > [!NOTE]
 > ATL sınıfları ekleyemezsiniz ve MFC desteği yalnızca bu Windows Masaüstü uygulama türleri için MFC sınıfları ekleyebilirsiniz (önceki tabloya bakın).
 
-Projeniz için sihirbazın oluşturduğu dosyaları görüntüleyebilirsiniz **Çözüm Gezgini**. Projeniz için sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz: Proje tarafından oluşturulan dosya `ReadMe.txt`. Dosya türleri hakkında daha fazla bilgi için [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md).
+Projeniz için sihirbazın oluşturduğu dosyaları görüntüleyebilirsiniz **Çözüm Gezgini**. Projeniz için sihirbazın oluşturduğu dosyaları hakkında daha fazla bilgi için bkz: Proje tarafından oluşturulan dosya `ReadMe.txt`. Dosya türleri hakkında daha fazla bilgi için [Visual C++ projeleri için oluşturulan dosya türleri](../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Boş Windows Masaüstü Uygulaması Oluşturma](../windows/creating-an-empty-windows-desktop-application.md)<br/>
-[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)
+[Visual C++ Proje Türleri](../build/reference/visual-cpp-project-types.md)

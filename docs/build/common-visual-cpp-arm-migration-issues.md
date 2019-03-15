@@ -2,12 +2,12 @@
 title: Genel Visual C++ ARM Geçiş Sorunları
 ms.date: 11/04/2016
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
-ms.openlocfilehash: 6aea623bc9f096265decbe91ccdc5d5f1f6ecef1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a39e1d5e26a62cafa093067bb42f33178a1af6af
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618523"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816262"
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>Genel Visual C++ ARM Geçiş Sorunları
 
@@ -92,7 +92,7 @@ Ve arasında bir bağımlılık ise `operator->(memory_handle)` ve `operator*(p)
 
 ### <a name="volatile-keyword-default-behavior"></a>volatile anahtar sözcüğü varsayılan davranışı
 
-MSVC derleyicisi, iki farklı ınterpretations destekler `volatile` depolama niteleyicisi, derleyici anahtarlarını kullanarak belirtebilirsiniz. [/Volatile:ms](../build/reference/volatile-volatile-keyword-interpretation.md) anahtar, Microsoft geleneksel durum x86 hem x64 nedeniyle bu mimarilerde güçlü bellek modeli olduğu güçlü sıralama, garanti geçici semantiği genişletilmiş seçer. [/Volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) anahtar, güçlü sıralama garanti etmez katı C++ Standart geçici semantiklerini seçer.
+MSVC derleyicisi, iki farklı ınterpretations destekler `volatile` depolama niteleyicisi, derleyici anahtarlarını kullanarak belirtebilirsiniz. [/Volatile:ms](reference/volatile-volatile-keyword-interpretation.md) anahtar, Microsoft geleneksel durum x86 hem x64 nedeniyle bu mimarilerde güçlü bellek modeli olduğu güçlü sıralama, garanti geçici semantiği genişletilmiş seçer. [/Volatile:iso](reference/volatile-volatile-keyword-interpretation.md) anahtar, güçlü sıralama garanti etmez katı C++ Standart geçici semantiklerini seçer.
 
 ARM mimarisini temel varsayılandır **/volatile:iso** bellek modeli sıralı ARM işlemcileri sahipli sahip olduğundan ve ARM yazılım üzerinde Genişletilmiş semantiği bağlı olan, eski olmadığından **/volatile:ms**  ve genellikle yok mu yazılım ile arabirim oluşturmak için. Ancak, yine de bazı durumlarda kullanışlı ya da bir ARM programın genişletilmiş semantiğini kullanmasına derlemek için bile gerekli değildir. Örneğin, ISO C++ semantiği kullanılacak bir program bağlantı noktasına pahalı olabilir veya yazılımı düzgün çalışması için geleneksel semantiği kullanan gerekebilir. Bu gibi durumlarda, kullandığınız **/volatile:ms** ancak ARM hedefleri geleneksel geçici semantiği yeniden oluşturmak için derleyici her bir okuma veya yazma etrafında belleği engelleri eklemeniz gerekir; anahtar bir `volatile` zorlamak için değişkeni Güçlü sıralama, tera negatif bir etkiye performans.
 
@@ -100,4 +100,4 @@ X86 ve x64 mimarilerde varsayılandır **/volatile:ms** MSVC kullanarak bu mimar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++’ı ARM işlemciler için yapılandırma](../build/configuring-programs-for-arm-processors-visual-cpp.md)
+[Visual C++’ı ARM işlemciler için yapılandırma](configuring-programs-for-arm-processors-visual-cpp.md)

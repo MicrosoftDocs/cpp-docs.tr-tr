@@ -2,16 +2,16 @@
 title: ARM özel durum işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: f6df8afd453f7e71d1ecc2ebb188c079a3aad02a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: cbbec3f40df2765fa76399ce667ae30f4533b018
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694354"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814546"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
-ARM üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel durumları ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme mekanizmasını kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulur. Bu belgede, özel durum işleme Windows ARM ve Microsoft ARM derleyicisi ve Visual C++ Derleyici tarafından oluşturulan kodu tarafından kullanılan dil Yardımcıları içinde açıklanmıştır.
+ARM üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel durumları ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme mekanizmasını kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulur. Bu belgede, özel durum işleme Windows ARM ve Microsoft ARM derleyicisi ve MSVC derleyici tarafından oluşturulan kodu tarafından kullanılan dil Yardımcıları içinde açıklanmıştır.
 
 ## <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -108,7 +108,7 @@ Bu kısıtlamalar ihlal desteklenmeyen dizisi neden olur.
 |2|*C*1 == veya *L*1 == veya *R*0 veya PF == 1 ==|16/32|`push {registers}`|80-BF/D0-SD/EC-ED|
 |3a|*C*1 == ve (*L*== 0 ve *R*1 ve PF == 0 ==)|16|`mov r11,sp`|C0-CF/FB|
 |3B|*C*1 == ve (*L*1 == veya *R*0 veya PF == 1 ==)|32|`add r11,sp,#xx`|FC|
-|4|*R*1 == ve *Reg* ! = 7|32|`vpush {d8-dE}`|E0 E7|
+|4|*R*1 == ve *Reg* ! = 7|32|`vpush {d8-dE}`|E0-E7|
 |5|*Yığın ayarlamak* ! = 0 ve PF == 0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
 
 Yönerge 1 varsa her zaman, *H* biti 1 olarak ayarlanır.
@@ -127,15 +127,15 @@ Katlanmış olmayan bir ayarı belirtilirse, 5 açık yığın ayarlama yönerge
 |0|0|1.|1.|r*S*-r3|D8-d*E*|
 |0|1.|0|0|r R4*N*, LR|yok|
 |0|1.|0|1.|r*S*- r*N*, LR|yok|
-|0|1.|1.|0|LR|D8-d*E*|
+|0|1.|1|0|LR|D8-d*E*|
 |0|1.|1.|1.|r*S*-r3, LR|D8-d*E*|
 |1.|0|0|0|r R4*N*, r11|yok|
 |1.|0|0|1.|r*S*- r*N*, r11|yok|
 |1.|0|1.|0|R11|D8-d*E*|
 |1.|0|1.|1.|r*S*-r3, r11|D8-d*E*|
-|1.|1.|0|0|r R4*N*, r11, LR|yok|
-|1.|1.|0|1.|r*S*- r*N*, r11, LR|yok|
-|1.|1.|1.|0|R11, LR|D8-d*E*|
+|1.|1|0|0|r R4*N*, r11, LR|yok|
+|1.|1|0|1.|r*S*- r*N*, r11, LR|yok|
+|1.|1.|1|0|R11, LR|D8-d*E*|
 |1.|1.|1.|1.|r*S*-r3, r11, LR|D8-d*E*|
 
 Sonuçları kurallı işlevler izleyin benzer bir form ancak tersine ve bazı ek seçeneklere sahip. Kapanış en fazla 5 yönergeleri uzun olabilir ve kendi form prolog form tarafından kesin olarak belirlenmiştir.
@@ -241,10 +241,10 @@ Aşağıdaki tabloda, geriye doğru izleme kodları eşleme işlem kodlarını g
 |00-7F||||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x7F) \* 4|
 |80 BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> Kod & 0x2000 ve r0-r12 karşılık gelen bit kod & 0x1FFF ayarlanırsa, POP, LR burada POP|
 |C0 CF||||16|`mov   sp,rX`<br /><br /> Kod & 0x0F X olduğu|
-|D0 D7 HÜCRESİNİ||||16|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 4 ve LR, kaldırılmaz kod & 0x04|
+|D0-D7||||16|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 4 ve LR, kaldırılmaz kod & 0x04|
 |DF D8||||32|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 8 ve LR, kaldırılmaz kod & 0x04|
-|E0 E7||||32|`vpop  {d8-dX}`<br /><br /> X (kod & 0x07) burada + 8|
-|E8 EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> burada X, (kod & 0x03FF) \* 4|
+|E0-E7||||32|`vpop  {d8-dX}`<br /><br /> X (kod & 0x07) burada + 8|
+|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> burada X, (kod & 0x03FF) \* 4|
 |EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> Kod & 0x0100 ve r0-r7 karşılık gelen bit kod & 0x00FF ayarlanırsa, POP, LR burada POP|
 |EE|00-0F|||16|Microsoft'a özgü|
 |EE|10-FF|||16|Kullanılabilir|
@@ -444,7 +444,7 @@ Epilogue:
 
    - *Ayarla yığın* hiçbir yığın ayarlama belirten, 0 =
 
-### <a name="example-2-nested-function-with-local-allocation"></a>Örnek 2: İç içe geçmiş işlev ile yerel ayırma
+### <a name="example-2-nested-function-with-local-allocation"></a>Örnek 2: Yerel ayırma ile iç içe geçmiş işlevi
 
 ```asm
 Prologue:
@@ -514,7 +514,7 @@ Epilogue:
 
    - *Ayarla yığın* hiçbir yığın ayarlama belirten, 0 =
 
-### <a name="example-4-function-with-multiple-epilogues"></a>Örnek 4: Birden çok sonuçları işlevi
+### <a name="example-4-function-with-multiple-epilogues"></a>Örnek 4: Birden çok sonuçları ile işlevi
 
 ```asm
 Prologue:
@@ -576,7 +576,7 @@ Epilogues:
 
    - Bırakma kodu 2 = 0xFF: son
 
-### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>Örnek 5: İşleviyle dinamik yığınını ve iç kapanış
+### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>Örnek 5: Dinamik yığınını ve iç kapanış işlevi
 
 ```asm
 Prologue:
@@ -626,7 +626,7 @@ Epilogue:
 
    - *Kod sözcük* 0x01, geriye doğru izleme kodları bir 32-bit sözcük belirten =
 
-- Word 1: 0x00 ve 0x0E (her zaman), bir koşul ile geriye doğru izleme kodu dizininden başlayarak kapanış kapsam uzaklığında 0xC6, (0x18C/2 =)
+- Word 1: Kapanış kapsamda 0x00 ve 0x0E (her zaman), bir koşul ile geriye doğru izleme kodu dizininden başlayarak uzaklığı 0xC6, (0x18C/2 =)
 
 - Geriye doğru izleme kodları, Word 2 konumunda başlayarak: (prolog/kapanış arasında paylaşılan)
 
@@ -638,7 +638,7 @@ Epilogue:
 
    - Kod 3 = 0xFD bırakma: son, kapanış 16-bit yönergesi olarak sayar
 
-### <a name="example-6-function-with-exception-handler"></a>Örnek 6: İşlev özel durum işleyicisi
+### <a name="example-6-function-with-exception-handler"></a>Örnek 6: Özel durum işleyicisi işlevi
 
 ```asm
 Prologue:
@@ -739,5 +739,5 @@ Function:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)<br/>
-[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)
+[ARM ABI Kurallarına Genel Bakış](overview-of-arm-abi-conventions.md)<br/>
+[Genel Visual C++ ARM Geçiş Sorunları](common-visual-cpp-arm-migration-issues.md)

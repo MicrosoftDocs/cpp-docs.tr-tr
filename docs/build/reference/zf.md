@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - /Zf
 - -Zf
-ms.openlocfilehash: 2c3f8d08f59c3a6803eda67126ef8a8f9ba6b1fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bed37a189e3eb1eb7b55dbdee1f81f360eafa721
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595748"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814052"
 ---
 # <a name="zf-faster-pdb-generation"></a>/ZF (daha hızlı PDB oluşturma)
 
@@ -23,7 +23,7 @@ RPC çağrıları mspdbsrv.exe en aza indirerek paralel yapılar, daha hızlı P
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Zf** seçeneği kullanılırken daha hızlı oluşturulmasını PDB dosyaları için derleyici desteği sağlar [/MP (birden çok süreçle derleme)](mp-build-with-multiple-processes.md) seçeneği veya derleme sistemini (örneğin, [MSBuild ](/visualstudio/msbuild/msbuild-reference) veya [CMake](../../ide/cmake-tools-for-visual-cpp.md)) birden çok cl.exe derleyicisi işlemler aynı anda çalışabilir. Bu seçenek derleyici ön ucu oluşturma türü dizinleri her türü kayıt PDB dosyası için derleme sonuna kadar gecikme neden olur ve ardından bunları her kayıt için bir RPC isteği yapan yerine mspdbsrv.exe, tek bir RPC çağrısı içindeki tüm istekleri. Birden çok cl.exe derleyicisi işlemler aynı anda çalıştırdığı bir ortamda mspdbsrv.exe işlemi RPC yükünü azaltarak bu üretilen derleme işi önemli ölçüde artırabilir.
+**/Zf** seçeneği kullanılırken daha hızlı oluşturulmasını PDB dosyaları için derleyici desteği sağlar [/MP (birden çok süreçle derleme)](mp-build-with-multiple-processes.md) seçeneği veya derleme sistemini (örneğin, [MSBuild ](/visualstudio/msbuild/msbuild-reference) veya [CMake](../cmake-projects-in-visual-studio.md)) birden çok cl.exe derleyicisi işlemler aynı anda çalışabilir. Bu seçenek derleyici ön ucu oluşturma türü dizinleri her türü kayıt PDB dosyası için derleme sonuna kadar gecikme neden olur ve ardından bunları her kayıt için bir RPC isteği yapan yerine mspdbsrv.exe, tek bir RPC çağrısı içindeki tüm istekleri. Birden çok cl.exe derleyicisi işlemler aynı anda çalıştırdığı bir ortamda mspdbsrv.exe işlemi RPC yükünü azaltarak bu üretilen derleme işi önemli ölçüde artırabilir.
 
 Çünkü **/Zf** seçeneği yalnızca PDB oluşturma için geçerlidir, gerektirir [/zi](z7-zi-zi-debug-information-format.md) veya [/zi](z7-zi-zi-debug-information-format.md) seçeneği.
 
@@ -31,7 +31,7 @@ RPC çağrıları mspdbsrv.exe en aza indirerek paralel yapılar, daha hızlı P
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 

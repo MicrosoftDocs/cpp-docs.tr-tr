@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - VERSION .def file statement
 ms.assetid: 3533b97c-5183-45f9-9ca8-4e63462b5d26
-ms.openlocfilehash: 98758da627390ba4c7e852905457527a343baccc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: abc0b751440d09dcaad7e449d7b151b479c51911
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667382"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815157"
 ---
 # <a name="version-cc"></a>VERSION (C/C++)
 
@@ -25,8 +25,8 @@ VERSION major[.minor]
 
 *Ana* ve *küçük* bağımsız değişkenler 0 ile 65.535 aralığındaki ondalık sayı. Varsayılan değer 0,0 sürümüdür.
 
-Bir sürüm numarası belirtmek için eşdeğer bir yöntem, [sürüm bilgisi](../../build/reference/version-version-information.md) (/ sürüm) seçeneği.
+Bir sürüm numarası belirtmek için eşdeğer bir yöntem, [sürüm bilgisi](version-version-information.md) (/ sürüm) seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)

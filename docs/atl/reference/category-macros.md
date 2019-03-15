@@ -2,35 +2,17 @@
 title: Kategori makroları
 ms.date: 11/04/2016
 f1_keywords:
-- atlbase/ATL::AtlGetHexValue
-- atlbase/ATL::AtlGetVersion
-- atlenc/ATL::AtlHexDecode
-- atlenc/ATL::AtlHexDecodeGetRequiredLength
-- atlenc/ATL::AtlHexEncode
-- atlenc/ATL::AtlHexEncodeGetRequiredLength
-- atlenc/ATL::AtlHexValue
-- atlenc/ATL::BEncode
-- atlenc/ATL::BEncodeGetRequiredLength
-- atlenc/ATL::EscapeXML
-- atlenc/ATL::GetExtendedChars
-- atlenc/ATL::IsExtendedChar
-- atlenc/ATL::QEncode
-- atlenc/ATL::QEncodeGetRequiredLength
-- atlenc/ATL::QPDecode
-- atlenc/ATL::QPDecodeGetRequiredLength
-- atlenc/ATL::QPEncode
-- atlenc/ATL::QPEncodeGetRequiredLength
-- atlenc/ATL::UUDecode
-- atlenc/ATL::UUDecodeGetRequiredLength
-- atlenc/ATL::UUEncode
-- atlenc/ATL::UUEncodeGetRequiredLength
+- atlcom/ATL::BEGIN_CATEGORY_MAP
+- atlcom/ATL::END_CATEGORY_MAP
+- atlcom/ATL::IMPLEMENTED_CATEGORY
+- atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-ms.openlocfilehash: 1ee6ab07ee72155acae552da933167b56af72a17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9c74b1e8e9fc101ed9b3acd842d38dcdb9eb48f3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263851"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818498"
 ---
 # <a name="category-macros"></a>Kategori makroları
 

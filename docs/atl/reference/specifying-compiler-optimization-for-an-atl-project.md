@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ATL projects, compiler optimization
 - ATL_NO_VTABLE macro
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
-ms.openlocfilehash: 6e6fe09aaa0726a39aae8b85cb6581c5d0cd24e1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5b6620b73713886301e4efc29754cf407d9576f4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280023"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812349"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL projesinde derleyici iyileştirmesi belirtme
 
@@ -54,8 +54,7 @@ Stdafx.h öğesinde önce diğer tüm ATL üstbilgi dosyalarını dahil edilir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)<br/>
-[Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Visual C++ Proje Türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [novtable](../../cpp/novtable.md)<br/>

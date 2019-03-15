@@ -2,17 +2,15 @@
 title: CommandHandler
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- CommandHandler
 helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-ms.openlocfilehash: c8ae2ae3b68b01c00ce1c6441fa9a3150d4c334b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 743be3e0bc9cc96fc6b22d0806d399ab5e160a3f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285067"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807617"
 ---
 # <a name="commandhandler"></a>CommandHandler
 

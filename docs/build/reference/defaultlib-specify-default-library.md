@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /DEFAULTLIB linker option
 - libraries, adding to list of
 ms.assetid: 6af7ff49-c170-4a13-97e2-2b9ae2de20c9
-ms.openlocfilehash: 59a4b48e412cee6b2a90608747aa6fb3e1b79ca7
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 0b7d4569c7be70bd97094ebbe09a7ae462331983
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326392"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815963"
 ---
 # <a name="defaultlib-specify-default-library"></a>/DEFAULTLIB (Varsayılan Kitaplığı Belirt)
 
@@ -34,11 +34,11 @@ Dış başvurular çözümlediğinde aramak için bir kitaplık adı.
 
 **/DEFAULTLIB** seçeneği bir ekler *Kitaplığı* listesine bağlantı başvuruların çözümlenmesi sırasında aradığı kitaplık. Belirtilen kitaplık **/DEFAULTLIB** açıkça belirtilen komut satırında ve adlı .obj dosyalarında varsayılan kitaplık önce kitaplıkları sonra aranır.
 
-Bağımsız değişkenler olmadan kullanıldığında [/nodefaultlıb (tüm varsayılan kitaplıkları yoksay)](../../build/reference/nodefaultlib-ignore-libraries.md) seçeneği tüm geçersiz kılmaları **/DEFAULTLIB**:*Kitaplığı* seçenekleri. **/Nodefaultlıb**:*Kitaplığı* seçeneği geçersiz kılmaları **/DEFAULTLIB**:*Kitaplığı* olduğunda aynı *Kitaplığı*adı hem de belirtilir.
+Bağımsız değişkenler olmadan kullanıldığında [/nodefaultlıb (tüm varsayılan kitaplıkları yoksay)](nodefaultlib-ignore-libraries.md) seçeneği tüm geçersiz kılmaları **/DEFAULTLIB**:*Kitaplığı* seçenekleri. **/Nodefaultlıb**:*Kitaplığı* seçeneği geçersiz kılmaları **/DEFAULTLIB**:*Kitaplığı* olduğunda aynı *Kitaplığı*adı hem de belirtilir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
@@ -50,5 +50,5 @@ Bağımsız değişkenler olmadan kullanıldığında [/nodefaultlıb (tüm vars
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
-- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+- [MSVC bağlayıcı başvurusu](linking.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

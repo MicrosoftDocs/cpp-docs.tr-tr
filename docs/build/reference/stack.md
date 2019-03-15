@@ -9,12 +9,12 @@ helpviewer_keywords:
 - stack, setting size
 - /STACK editbin option
 ms.assetid: a39bcff0-c945-4355-80cc-8e4f24a5f142
-ms.openlocfilehash: 89591a9d0a7f19422275b6bce6f4c5a7a723e800
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f30877800d4597054601f7459df88c78193fd3c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647713"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820656"
 ---
 # <a name="stack"></a>/STACK
 
@@ -30,6 +30,6 @@ Bu seçenek, yığın boyunu bayt cinsinden ayarlar ve ondalık ya da C dili gö
 
 İsteğe bağlı `commit` bağımsız değişkeni, işletim sistemi tarafından yorumu tabidir. Windows NT, Windows 95 ve Windows 98 `commit` teker teker ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Daha yüksek bir `commit` değeri kaydeder süre olduğunda, uygulama daha fazla yığın alanı gerekiyor ancak bellek gereksinimleri ve büyük olasılıkla başlatma süresini artırır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

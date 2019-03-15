@@ -6,12 +6,12 @@ helpviewer_keywords:
 - importing DLLs [C++], applications
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
-ms.openlocfilehash: 96016a12b5164bcaca3f2c562671f5bf09a187f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fd15212a1ca5e31198c50ac2626755ac0171ae7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442711"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818472"
 ---
 # <a name="importing-into-an-application"></a>Bir Uygulamaya Aktarma
 
@@ -23,14 +23,14 @@ ms.locfileid: "50442711"
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [__Declspec(dllimport) kullanarak bir uygulamaya'na aktarma](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak bir uygulamaya'na aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](../build/importing-function-calls-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](importing-function-calls-using-declspec-dllimport.md)
 
-- [__Declspec(dllimport) kullanarak veriyi içeri aktarma](../build/importing-data-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak veriyi içeri aktarma](importing-data-using-declspec-dllimport.md)
 
-- [DEF dosyalarını kullanarak içeri aktarma](../build/importing-using-def-files.md)
+- [DEF dosyalarını kullanarak içeri aktarma](importing-using-def-files.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)
+[İçeri ve Dışarı Aktarma](importing-and-exporting.md)

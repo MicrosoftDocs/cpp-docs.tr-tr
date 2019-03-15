@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -SAFESEH linker option
 - SAFESEH linker option
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
-ms.openlocfilehash: 85c59d99a17c4e13750f5e51fd85d348346ff922
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 62784933cbecd4f312c52ae98cab7d232b893f35
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450225"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822346"
 ---
 # <a name="safeseh-image-has-safe-exception-handlers"></a>/SAFESEH (Görüntüde Güvenli Özel Durum İşleyicileri Var)
 
@@ -25,7 +25,7 @@ Zaman **SAFESEH** belirtildiğinde, bağlayıcı yalnızca ilişkilendiren bir g
 
 **/ SAFESEH** x86 için bağlanırken yalnızca geçerli olan hedefler. **/ SAFESEH** zaten belirtilen özel durum işleyicileri var platformlar için desteklenmiyor. Örneğin, x64 ve ARM, tüm özel durum işleyicileri PDATA içinde belirtilmiştir. ML64.exe ml64 işlevleri aracılığıyla geriye doğru izleme olanak tanıyan, görüntüye (XDATA ve PDATA) SEH bilgileri yayma ek açıklamaları ekleme desteği vardır. Bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md) daha fazla bilgi için.
 
-Varsa **SAFESEH** belirtilmezse, tüm modüller güvenli özel durum işleme özelliği ile uyumlu değilse, bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretir. Modüllerin özellik Güvenli özel durum işleme ile uyumlu değilse, elde edilen görüntü güvenli özel durum işleyicileri tablosu içermez. Varsa [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE veya EFI_ * seçeneklerden birini belirtir bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretmek yazılmayacak söz konusu alt sistemlerde hiçbirine değişiklik bilgilerini kullanın.
+Varsa **SAFESEH** belirtilmezse, tüm modüller güvenli özel durum işleme özelliği ile uyumlu değilse, bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretir. Modüllerin özellik Güvenli özel durum işleme ile uyumlu değilse, elde edilen görüntü güvenli özel durum işleyicileri tablosu içermez. Varsa [/Subsystem](subsystem-specify-subsystem.md) WINDOWSCE veya EFI_ * seçeneklerden birini belirtir bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretmek yazılmayacak söz konusu alt sistemlerde hiçbirine değişiklik bilgilerini kullanın.
 
 Varsa **/SAFESEH:NO** belirtildiğinde, bağlayıcı olmayan ilişkilendiren görüntünün güvenli özel durum işleyicileri tablosu ile özellik Güvenli özel durum işleme ile uyumlu olan tüm modülleri olsa bile.
 
@@ -35,7 +35,7 @@ Kullanarak bir yapılandırılmış özel durum işleyici bir işlev kaydedebili
 
 Mevcut bir işaretlemek mümkün değildir ikili olarak güvenli özel durum işleyicileri (veya hiçbir özel durum işleyicileri); oluşturma zamanında güvenli özel durum işleme hakkında bilgi eklenmesi gerekir.
 
-Bağlayıcı'nın Güvenli özel durum işleyicileri tablosu oluşturma olanağı, C çalışma zamanı kitaplığı kullanarak uygulamaya bağlıdır. İle bağlarsanız [/nodefaultlıb](../../build/reference/nodefaultlib-ignore-libraries.md) ve, güvenli özel durum işleyicileri tablosu istiyorsanız, bir yük yapılandırma yapısı (loadcfg.c CRT kaynak dosyasında bulunan gibi) sağlamak gereken Visual C++ için tanımlanmış olan tüm girişleri içerir. Örneğin:
+Bağlayıcı'nın Güvenli özel durum işleyicileri tablosu oluşturma olanağı, C çalışma zamanı kitaplığı kullanarak uygulamaya bağlıdır. İle bağlarsanız [/nodefaultlıb](nodefaultlib-ignore-libraries.md) ve, güvenli özel durum işleyicileri tablosu istiyorsanız, bir yük yapılandırma yapısı (loadcfg.c CRT kaynak dosyasında bulunan gibi) sağlamak gereken Visual C++ için tanımlanmış olan tüm girişleri içerir. Örneğin:
 
 ```
 #include <windows.h>
@@ -98,7 +98,7 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **bağlayıcı** klasör.
 
@@ -110,7 +110,7 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

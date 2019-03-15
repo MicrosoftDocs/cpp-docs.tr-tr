@@ -1,5 +1,5 @@
 ---
-title: C/C++ Derleme Araçları
+title: Ek MSVC derleme araçları
 ms.date: 11/04/2016
 f1_keywords:
 - c.build
@@ -7,32 +7,35 @@ helpviewer_keywords:
 - builds [C++], C/C++ tools
 - tools [C++], build
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
-ms.openlocfilehash: dd698aafca3c9bc489405e0ab9cb4dcec98a26ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e41a6dcb8de4a8608d065cce5bce2595cd96a84f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510090"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808072"
 ---
-# <a name="cc-build-tools"></a>C/C++ Derleme Araçları
+# <a name="additional-msvc-build-tools"></a>Ek MSVC derleme araçları
 
-Visual C++, görüntüleme ya da yapı çıkış işleme için aşağıdaki komut satırı araçları sağlar:
+Visual C++, görüntüleme ya da yapı çıkış işleme için aşağıdaki komut satırı yardımcı programlarını sağlar:
 
-- [BSCMAKE. EXE](../../build/reference/bscmake-reference.md) programınızdaki simgeler (sınıflar, İşlevler, veri, makroları ve türleri) hakkında bilgi içeren bir gözatma bilgisi dosyası (.bsc) oluşturur. Göz atma Windows geliştirme ortamında bu bilgileri görüntüleyin. (.Bsc dosyasını geliştirme ortamında da oluşturulabilir.)
 
-- [LIB. EXE](../../build/reference/lib-reference.md) oluşturmak ve ortak nesne dosyası biçimi (COFF) nesne dosyalarına kitaplığını yönetmek için kullanılır. Ayrıca, dışarı aktarma dosyaları oluşturma ve dışarı aktarılan başvuru tanımları kitaplıkları içeri aktarma için de kullanılabilir.
+- [LIB. EXE](lib-reference.md) oluşturmak ve ortak nesne dosyası biçimi (COFF) nesne dosyalarına kitaplığını yönetmek için kullanılır. Ayrıca, dışarı aktarma dosyaları oluşturma ve dışarı aktarılan başvuru tanımları kitaplıkları içeri aktarma için de kullanılabilir.
 
-- [EDITBIN. EXE](../../build/reference/editbin-reference.md) COFF ikili dosyaları değiştirmek için kullanılır.
+- [EDITBIN. EXE](editbin-reference.md) COFF ikili dosyaları değiştirmek için kullanılır.
 
-- [DUMPBIN. EXE](../../build/reference/dumpbin-reference.md) COFF ikili dosyaları (örneğin, bir sembol tablosu) bilgilerini görüntüler.
+- [DUMPBIN. EXE](dumpbin-reference.md) COFF ikili dosyaları (örneğin, bir sembol tablosu) bilgilerini görüntüler.
 
-- [NMAKE](../../build/nmake-reference.md) okur ve derleme görevleri dosyalarını yürütür.
+- [NMAKE](nmake-reference.md) okur ve derleme görevleri dosyalarını yürütür.
 
-- [ERRLOOK](../../build/reference/value-edit-control.md), hata arama yardımcı programı, sistem hatası iletisi veya girilen değere göre modülü hata iletisi alır.
+- [ERRLOOK](value-edit-control.md), hata arama yardımcı programı, sistem hatası iletisi veya girilen değere göre modülü hata iletisi alır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+- [XDCMake](xdcmake-reference.md). Belge açıklamaları içeren kaynak kodu dosyaları işleme bir toolfor XML etiketleri ile işaretlenmiş.
 
-[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)<br/>
-[Düzenlenmiş Adlar](../../build/reference/decorated-names.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+- [BSCMAKE. EXE](bscmake-reference.md) (yalnızca geriye dönük uyumluluk için sağlanır), programınızdaki simgeler (sınıflar, İşlevler, veri, makroları ve türleri) hakkında bilgi içeren bir gözatma bilgisi dosyası (.bsc) oluşturur. Göz atma Windows geliştirme ortamında bu bilgileri görüntüleyin. (.Bsc dosyasını geliştirme ortamında da oluşturulabilir.)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C/C++ Derleme Başvurusu](c-cpp-building-reference.md)<br/>
+[Düzenlenmiş Adlar](decorated-names.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

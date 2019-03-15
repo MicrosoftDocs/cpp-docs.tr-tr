@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _ATL_MIN_CRT macro
 - distributing files with ATL components
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
-ms.openlocfilehash: f83e56e3e9b8468b71534d225080ff5874731b74
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d44434a36c8d757fb8f79d36a672c4c77de64ade
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268895"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820331"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
 
@@ -22,7 +22,7 @@ Bir ATL projesi oluşturmak için en kolay yolu bulunan ATL projesi Sihirbazı, 
 
 ## <a name="to-create-an-atl-project-using-the-atl-project-wizard"></a>ATL projesi Sihirbazı'nı kullanarak bir ATL projesi oluşturmak için
 
-1. Konu başlığı altındaki yönergeleri [Visual C++ uygulama sihirbazıyla proje oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Visual Studio'da **Dosya > Yeni > Proje** ana menüden.
 
 1. Seçin **ATL projesi** simgesini **şablonları** bölmesini açmak için **ATL projesi Sihirbazı**.
 
@@ -33,9 +33,9 @@ Bir ATL projesi oluşturmak için en kolay yolu bulunan ATL projesi Sihirbazı, 
 
 1. Tıklayın **son** sihirbazı kapatın ve geliştirme ortamında yeni projenizi açın.
 
-Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md). Yapılandırmalar yeni ATL projesi ve ayarların nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).
+Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md). Yapılandırmalar yeni ATL projesi ve ayarların nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [varsayılan ATL projesi yapılandırmaları](../../atl/reference/default-atl-project-configurations.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)
+[Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)

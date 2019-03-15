@@ -6,12 +6,12 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 0f485353d344b17dabbf0f56a4c7ded2cbccce76
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 35f55ea525bd03c5b0b1b1750d25c1223bc608fc
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220718"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817003"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 
@@ -21,7 +21,7 @@ Bir minimal DEF dosyası aşağıdaki modül tanımlama deyimlerini içermelidir
 
 - Dosyadaki ilk deyim LIBRARY deyimi olmalıdır. Bu bildirimi DEF dosyanın DLL'ye ait olarak tanımlar. LIBRARY deyimini DLL'in adı tarafından izlenir. Bağlayıcı, bu adı DLL'in içe aktarma kitaplığına yerleştirir.
 
-- EXPORTS deyimi, ad ve isteğe bağlı olarak DLL tarafından dışarı aktarılan işlevlerin sıralı değerlerini listeler. İşlev adının takip ederek sıralı bir değer atadığınız işlevi bir at işareti (@) ve bir sayı. Sıralı değerleri belirttiğinizde, burada N DLL'in dışarı aktardığı işlev sayısı olan N-1 aralığında olmalıdır. Sıralı olarak işlevleri dışarı aktarmak istiyorsanız, bkz. [DLL'den işlevleri yerine ada göre bir DLL](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) bu konuda yanı sıra.
+- EXPORTS deyimi, ad ve isteğe bağlı olarak DLL tarafından dışarı aktarılan işlevlerin sıralı değerlerini listeler. İşlev adının takip ederek sıralı bir değer atadığınız işlevi bir at işareti (@) ve bir sayı. Sıralı değerleri belirttiğinizde, burada N DLL'in dışarı aktardığı işlev sayısı olan N-1 aralığında olmalıdır. Sıralı olarak işlevleri dışarı aktarmak istiyorsanız, bkz. [DLL'den işlevleri yerine ada göre bir DLL](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) bu konuda yanı sıra.
 
 Örneğin, ikili arama ağacını uygulayan bir kod içeren DLL aşağıdakine benzeyebilir:
 
@@ -56,32 +56,32 @@ MFC'nin MFCx0.DLL'den işlevleri ve sınıfları dışarı aktarmak için DEF do
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [.def dosyaları](../build/reference/module-definition-dot-def-files.md)
+- [.def dosyaları](reference/module-definition-dot-def-files.md)
 
-- [Modül tanımlama deyimleri kuralları](../build/reference/rules-for-module-definition-statements.md)
+- [Modül tanımlama deyimleri kuralları](reference/rules-for-module-definition-statements.md)
 
-- [Düzenlenmiş adlar](../build/reference/decorated-names.md)
+- [Düzenlenmiş adlar](reference/decorated-names.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](../build/importing-and-exporting-inline-functions.md)
+- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
 
-- [Karşılıklı içeri aktarmalar](../build/mutual-imports.md)
+- [Karşılıklı içeri aktarmalar](mutual-imports.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+[DLL'den Dışarı Aktarma](exporting-from-a-dll.md)

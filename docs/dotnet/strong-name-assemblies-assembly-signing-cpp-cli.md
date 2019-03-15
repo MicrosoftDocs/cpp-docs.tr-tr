@@ -9,12 +9,12 @@ helpviewer_keywords:
 - linker [C++], assembly signing
 - strong-named assemblies [C++]
 ms.assetid: c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc
-ms.openlocfilehash: 762c95c3ecc60995e8d0e6f9e4f7bc95d179c26f
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: ac46d069ece3c75af93f93497169d054b45267d0
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747507"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813935"
 ---
 # <a name="strong-name-assemblies-assembly-signing-ccli"></a>Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)
 
@@ -34,7 +34,7 @@ Anahtar adı, dosya adı, gizli bilgileri içeriyorsa, bir güvenlik riski olabi
 
 Komut satırında derleme, bağlayıcı seçenekleri, derlemeyi imzalamak için kullanın ve ardından bir işlem sonrası Aracı (mt.exe gibi) çalıştırın, derleme sn.exe ile yeniden imzalamanız gerekecektir. Alternatif olarak, derleyebilir ve derleme oturum gecikme ve işlem sonrası araçları çalıştırdıktan sonra imzalama tamamlayın.
 
-Geliştirme ortamında oluştururken imzalama öznitelikler kullanıyorsa, başarıyla derleme açıkça sn.exe çağırarak oturum ([Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool)) derleme sonrası olay. Daha fazla bilgi için [derleme olayları belirtme](../ide/specifying-build-events.md). Öznitelikler ve bağlayıcı seçenekleri kullanmaya kıyasla bir derleme sonrası olay kullanıyorsanız derleme zamanlarını daha az olabilir.
+Geliştirme ortamında oluştururken imzalama öznitelikler kullanıyorsa, başarıyla derleme açıkça sn.exe çağırarak oturum ([Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool)) derleme sonrası olay. Daha fazla bilgi için [derleme olayları belirtme](../build/specifying-build-events.md). Öznitelikler ve bağlayıcı seçenekleri kullanmaya kıyasla bir derleme sonrası olay kullanıyorsanız derleme zamanlarını daha az olabilir.
 
 Derleme imzalama aşağıdaki bağlayıcı seçenekleri destekler:
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - import libraries, using
 - export files
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
-ms.openlocfilehash: e23b729bdca102ec24c4426e9784e3aab267bff2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 030b792d4bbebecef9d9303238657a564a142ecf
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484974"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810958"
 ---
 # <a name="using-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığını ve Dışarı Aktarma Dosyasını Kullanma
 
@@ -27,6 +27,6 @@ Başlamak için LIB çalıştırılacağı programlardan birini seçin. LIB komu
 
 Son olarak, programın başlamış bağlayın. Bağlantı komut içinde nesneleri ve kitaplıkları LIB program ve içeri aktarma kitaplığı için oluşturulan .exp dosyası program veya program tarafından kullanılan dışarı aktarmaları için kitaplıkları belirtin. Örnek devam etmek için ONE.dll için bağlantı komut ONE.exp ve TWO.lib, yanı sıra nesneleri ve ONE.dll Git kitaplıkları içerir. .Def dosyası ya da/Export belirtimleri bağlantı komutta belirtmeyin; .exp dosyası dışarı aktarma tanımları içerdiğinden bu, gerekli değildir. .Exp dosyası kullanılıyor bağladığınızda, bağlantı içeri aktarma kitaplığı oluşturmaz, bunun varsayar çünkü .exp dosyası oluşturulurken oluşturulmuştur.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](../../build/reference/working-with-import-libraries-and-export-files.md)
+[İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](working-with-import-libraries-and-export-files.md)

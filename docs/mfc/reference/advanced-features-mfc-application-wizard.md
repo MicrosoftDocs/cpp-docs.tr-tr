@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-ms.openlocfilehash: 5643e1e9f4f558163c1c2a3b65070f90afdc7dba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 44d85e7614f6a82af2e58f03a6d65d5d7740ab9b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278229"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816444"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>Gelişmiş Özellikler, MFC Uygulama Sihirbazı
 
@@ -21,7 +21,7 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
    Bağlama duyarlı Yardım için F1 ve Yardım menüsünü kullanarak veya tıklayarak kullanılabilir Yardım dosyaları kümesi üretir bir **yardımcı** bir iletişim kutusu düğmesine. Yardım desteği yardım derleyicisi gerektirir. Yardım derleyicisini yüklemediyseniz, Kur'u yeniden çalıştırarak yükleyebilirsiniz.
 
-   Bkz: [HTML Yardımı: Programlarınızı için bağlama duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../ide/help-files-html-help.md) daha fazla bilgi için.
+   Bkz: [HTML Yardımı: Programlarınızı için bağlama duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../build/reference/help-files-html-help.md) daha fazla bilgi için.
 
 - **Yazdırmayı ve Baskı Önizleme**
 

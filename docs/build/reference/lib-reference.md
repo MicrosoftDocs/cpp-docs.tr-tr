@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LIB [C++]
 - 32-Bit Library Manager
 ms.assetid: ecc7f643-bbd4-47a3-8dc6-b360f880db91
-ms.openlocfilehash: 1b3982e29d1bbf919e326e39f62ddb361d4c12ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e0c2815fdc3ab9ab171d3ebb94480393c8815ed
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543279"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813818"
 ---
 # <a name="lib-reference"></a>LIB Başvurusu
 
@@ -24,18 +24,18 @@ Microsoft Kitaplığı Yöneticisi'ni (LIB.exe) oluşturur ve ortak nesne dosyas
 > [!NOTE]
 >  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
 
-- [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)
+- [LIB'e Genel Bakış](overview-of-lib.md)
 
-- [Nasıl Yapılır: Visual Studio Geliştirme Ortamında LIB.EXE Seçeneklerini Ayarlama](../../build/reference/how-to-set-lib-exe-options-in-the-visual-studio-development-environment.md)
+- [Nasıl yapılır: Visual Studio Geliştirme Ortamında LIB.EXE Seçeneklerini Ayarlama](how-to-set-lib-exe-options-in-the-visual-studio-development-environment.md)
 
-- [LIB Çalıştırma](../../build/reference/running-lib.md)
+- [LIB Çalıştırma](running-lib.md)
 
-- [Kitaplığı Yönetme](../../build/reference/managing-a-library.md)
+- [Kitaplığı Yönetme](managing-a-library.md)
 
-- [Kitaplık Üyesini Ayıklama](../../build/reference/extracting-a-library-member.md)
+- [Kitaplık Üyesini Ayıklama](extracting-a-library-member.md)
 
-- [İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](../../build/reference/working-with-import-libraries-and-export-files.md)
+- [İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](working-with-import-libraries-and-export-files.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)

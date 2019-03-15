@@ -15,12 +15,12 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-ms.openlocfilehash: 8293e2e05193b34802aba0af722dd06155fdcd81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea970f010e86d655963485339c48b8f7d36d6270
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429061"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811445"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı
 
@@ -32,10 +32,10 @@ Windows tüm DLL'leri genellikle adlı bir isteğe bağlı bir giriş noktası i
 
 VCRuntime kitaplığı adlı bir giriş noktası işlevi sağlar `_DllMainCRTStartup` varsayılan başlatma ve sonlandırma işlemleri işlemek için. İşlemi eklemek, `_DllMainCRTStartup` işlevi arabellek güvenlik denetimi ayarlar, CRT ve diğer kitaplıkları başlatır, çalışma zamanı türü bilgileri başlatır, başlatır ve statik ve yerel olmayan veriler için oluşturucuları çağırır, iş parçacığı-yerel depolamayı başlatır , her ek için bir iç statik sayacını artırır ve daha sonra bir kullanıcı tarafından veya kitaplığı-sağlanan çağırır `DllMain`. Ayırma işlemi, işlev bu adımları tersten geçer. Çağrı `DllMain`, azaltır, iç sayaç yok ediciler çağırır, çağrıları CRT sonlandırma işlevleri ve kayıtlı `atexit` işlevleri ve diğer tüm kitaplıkları sonlandırma bildirir. Ek Sayaç sıfıra gittiğinde işlevi döndürür `FALSE` Windows için DLL kaldırılabilip kaldırılamayacağını belirtmek için. `_DllMainCRTStartup` İşlevi olarak da adlandırılır sırasında iş parçacığı ekleme ve iş parçacığı ayırma. Bu gibi durumlarda, VCRuntime kod hiçbir ek başlatma veya sonlandırma kendi yapar ve yalnızca çağıran `DllMain` boyunca iletinin geçirilecek. Varsa `DllMain` döndürür `FALSE` işlemden ekleme, hata, sinyal `_DllMainCRTStartup` çağrıları `DllMain` yeniden ve geçirir `DLL_PROCESS_DETACH` olarak *neden* bağımsız değişken, daha sonra rest üzerinden gider sonlandırma işlemi.
 
-Varsayılan giriş noktası olan Visual C++ ' ta DLL'ler oluştururken `_DllMainCRTStartup` tarafından sağlanan VCRuntime bağlı olarak otomatik olarak. Kullanarak DLL dosyanız için bir giriş noktası işlevi belirtmek gerekmez [/Entry (giriş noktası simgesi)](../build/reference/entry-entry-point-symbol.md) bağlayıcı seçeneği.
+Varsayılan giriş noktası olan Visual C++ ' ta DLL'ler oluştururken `_DllMainCRTStartup` tarafından sağlanan VCRuntime bağlı olarak otomatik olarak. Kullanarak DLL dosyanız için bir giriş noktası işlevi belirtmek gerekmez [/Entry (giriş noktası simgesi)](reference/entry-entry-point-symbol.md) bağlayıcı seçeneği.
 
 > [!NOTE]
-> / Entry kullanarak DLL için başka bir giriş noktası işlevi belirlemek mümkün olmakla birlikte: bağlayıcı seçeneği değil öneririz, giriş noktası işlevinizi her şeyi çoğaltmak yeterli olacağından, `_DllMainCRTStartup` , aynı sırada yapar. VCRuntime davranışını yinelenen olanak tanıyan işlevler sağlar. Örneğin, çağırabilirsiniz [__security_init_cookie](../c-runtime-library/reference/security-init-cookie.md) hemen desteklemek için üzerinde bir sürece iliştirilip [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md) denetleme seçeneği arabellek. Çağırabilirsiniz `_CRT_INIT` işlevi, kalan DLL başlatma veya sonlandırma işlevleri gerçekleştirmek için giriş noktası işlevi aynı parametre geçirme.
+> / Entry kullanarak DLL için başka bir giriş noktası işlevi belirlemek mümkün olmakla birlikte: bağlayıcı seçeneği değil öneririz, giriş noktası işlevinizi her şeyi çoğaltmak yeterli olacağından, `_DllMainCRTStartup` , aynı sırada yapar. VCRuntime davranışını yinelenen olanak tanıyan işlevler sağlar. Örneğin, çağırabilirsiniz [__security_init_cookie](../c-runtime-library/reference/security-init-cookie.md) hemen desteklemek için üzerinde bir sürece iliştirilip [/GS (arabellek güvenlik denetimi)](reference/gs-buffer-security-check.md) denetleme seçeneği arabellek. Çağırabilirsiniz `_CRT_INIT` işlevi, kalan DLL başlatma veya sonlandırma işlevleri gerçekleştirmek için giriş noktası işlevi aynı parametre geçirme.
 
 <a name="initializing-a-dll"></a>
 
@@ -178,8 +178,8 @@ Uzantı DLL'leri halletmeniz işleme çoklu iş parçacığı `DLL_THREAD_ATTACH
 
 Çoklu iş parçacığı kullanımı tanıtıcıları dahil bir örnek başlatma işlevi [kullanarak iş parçacığı yerel depolama dinamik bağlantı kitaplığı](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) Windows SDK. Örnek adlı bir giriş noktası işlevi içeren Not `LibMain`, ancak bu işlev adlandırmalısınız. `DllMain` böylece MFC ve C çalışma zamanı kitaplıkları ile çalışır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)<br/>
 [DllMain giriş noktası](/windows/desktop/Dlls/dllmain)<br/>
 [Dinamik bağlantı kitaplığı en iyi uygulamalar](/windows/desktop/Dlls/dynamic-link-library-best-practices)

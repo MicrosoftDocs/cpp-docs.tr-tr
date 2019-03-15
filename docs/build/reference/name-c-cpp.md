@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - NAME .def file statement
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26
-ms.openlocfilehash: c05e82409d6b6e48390d54160e8ff23ada788d41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0813befc622db72e095c449794405fc5d58465b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646205"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812193"
 ---
 # <a name="name-cc"></a>NAME (C/C++)
 
@@ -23,10 +23,10 @@ NAME [application][BASE=address]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çıkış dosyası adı belirtmek için eşdeğer bir yöntem, [/OUT](../../build/reference/out-output-file-name.md) bağlayıcı seçeneği ve temel adresi ayarlamak için eşdeğer bir yolu olan [/BASE](../../build/reference/base-base-address.md) bağlayıcı seçeneği. Her ikisi de belirtilirse, / OUT geçersiz kılar, **adı**.
+Çıkış dosyası adı belirtmek için eşdeğer bir yöntem, [/OUT](out-output-file-name.md) bağlayıcı seçeneği ve temel adresi ayarlamak için eşdeğer bir yolu olan [/BASE](base-base-address.md) bağlayıcı seçeneği. Her ikisi de belirtilirse, / OUT geçersiz kılar, **adı**.
 
 Bir DLL yapılandırdıysanız, adı yalnızca DLL adı etkiler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)

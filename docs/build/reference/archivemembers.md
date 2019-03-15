@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /ARCHIVEMEMBERS dumpbin option
 - -ARCHIVEMEMBERS dumpbin option
 ms.assetid: 47056a7a-a1ba-42bc-9f2e-0599195ef79a
-ms.openlocfilehash: 3032e2f386ae40b8205823274cc83f70c08b71f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 880e36219b45367ff96e0d292b9728bf797c308a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457635"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818966"
 ---
 # <a name="archivemembers"></a>/ARCHIVEMEMBERS
 
@@ -25,8 +25,8 @@ ms.locfileid: "50457635"
 
 Bu seçenek en düşük miktarda bilgiyi üye nesneleri hakkında bir kitaplıkta görüntüler.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

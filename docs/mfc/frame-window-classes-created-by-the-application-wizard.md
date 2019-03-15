@@ -14,16 +14,16 @@ helpviewer_keywords:
 - frame window classes [MFC], created by application wizards
 - CMainFrame class [MFC]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
-ms.openlocfilehash: a0610ae901b817a1c8f7707d9ba87c15d634e134
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 46da8fc0cb98406bdf97285d7c6f824afd61c4bb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298067"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808358"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
 
-Kullanırken [Uygulama Sihirbazı](../ide/creating-desktop-projects-by-using-application-wizards.md) uygulama, belge ve görünüm sınıfları, ek bir çatı uygulaması oluşturmak için bir türetilen çerçeve-pencere sınıf, uygulamanızın ana çerçeve penceresi için Uygulama Sihirbazı oluşturur. Sınıf `CMainFrame` varsayılan ve içerdiği dosyalar MAINFRM adlandırılır. H ve MAINFRM. CPP.
+Yeni bir MFC oluşturmak için proje zaman **yeni proje** iletişim kutusunda, uygulama, belge ve görünüm sınıfları ek olarak, uygulamanızın ana çerçeve penceresi için bir türetilen çerçeve-pencere sınıf Uygulama Sihirbazı oluşturur. Sınıf `CMainFrame` varsayılan ve içerdiği dosyalar MAINFRM adlandırılır. H ve MAINFRM. CPP.
 
 Uygulamanız, SDI ise, `CMainFrame` sınıfından türetilmiş sınıf [CFrameWnd](../mfc/reference/cframewnd-class.md).
 
@@ -36,4 +36,5 @@ Bu çerçeve penceresi sınıfları oluşturulduğu şekilde çalışır ancak b
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Çerçeve Penceresi Sınıfları](../mfc/frame-window-classes.md)<br/>
-[MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)
+[MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../build/reference/mfc-program-or-control-source-and-header-files.md)
+

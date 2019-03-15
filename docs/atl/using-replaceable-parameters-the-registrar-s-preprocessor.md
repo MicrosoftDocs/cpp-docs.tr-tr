@@ -1,18 +1,15 @@
 ---
 title: Değiştirilebilir parametreler (ATL Kaydedicisi) kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- AddReplacement
-- ClearReplacements
 helpviewer_keywords:
 - '%MODULE%'
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
-ms.openlocfilehash: b45799c6be20c318d7a411e9e5a79c0df860f8b9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1c772c0493b351d8452400a4fb1e3949ab6f28f2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287197"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814039"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>Değiştirilebilir parametreler kullanma (kayıt şirketi&#39;s önişlemci)
 

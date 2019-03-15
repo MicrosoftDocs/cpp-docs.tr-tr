@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -EH compiler option [C++]
 - /EH compiler option [C++]
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
-ms.openlocfilehash: e8707ac716a010ea1d3dc0fa51740e76a5822462
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 9f5eed60ecb51abc1d8fbd3c38773bbf782b23a5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329306"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808267"
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 
@@ -25,7 +25,7 @@ Dışarıda özel durumu iyileştirmek için denetlediğinde derleyici ve bir ö
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/EH**{**s**|**bir**} [**c**] [**r**] [**-**]
+> **/EH**{**s**|**a**}[**c**][**r**][**-**]
 
 ## <a name="arguments"></a>Arguments
 
@@ -43,7 +43,7 @@ Her zaman tüm çalışma zamanı sonlandırma denetimleri oluştur derleyiciye 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Eha** derleyici seçeneği ile yerel C++ zaman uyumsuz yapılandırılmış özel durum işleme (SEH) desteklemek için kullanılan `catch(...)` yan tümcesi. Belirtmeden SEH uygulamak için **/eha**, kullanmanızı **__try**, **__except**, ve **__finally** söz dizimi. Windows ve Visual C++ SEH uygulamasını desteklese de, ISO standardı C++ özel durum işleme kullanmanızı öneririz (**EHS** veya **/ehsc**), kod daha taşınabilir ve esnek yapan. Bununla birlikte, varolan kodda ya da belirli program türleri için — örneğin, ortak dil çalışma zamanı desteği için derlenmiş kodda ([/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)) — SEH kullanmaya devam olabilir. Daha fazla bilgi için [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
+**/Eha** derleyici seçeneği ile yerel C++ zaman uyumsuz yapılandırılmış özel durum işleme (SEH) desteklemek için kullanılan `catch(...)` yan tümcesi. Belirtmeden SEH uygulamak için **/eha**, kullanmanızı **__try**, **__except**, ve **__finally** söz dizimi. Windows ve Visual C++ SEH uygulamasını desteklese de, ISO standardı C++ özel durum işleme kullanmanızı öneririz (**EHS** veya **/ehsc**), kod daha taşınabilir ve esnek yapan. Bununla birlikte, varolan kodda ya da belirli program türleri için — örneğin, ortak dil çalışma zamanı desteği için derlenmiş kodda ([/CLR (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md)) — SEH kullanmaya devam olabilir. Daha fazla bilgi için [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
 
 Belirtme **/eha** ve kullanarak, tüm özel durumları işlemeye çalışırken `catch(...)` tehlikeli olabilir. Çoğu durumda, zaman uyumsuz özel durumlar kurtarılamaz olarak kabul edilir ve önemli olarak düşünülmelidir. Onları yakalamak ve devam etmek, işlemin bozulmasına neden olarak bulunması ve giderilmesi zor olan hatalara yol açabilir.
 
@@ -94,11 +94,11 @@ Seçeneği, sembolü kullanılarak silinebilir **-**. Örneğin, **/EHsc-** olar
 
 **/EHr** derleyici seçeneği, çalışma zamanı sonlandırma denetimleri sahip tüm işlevlerde zorlar bir **noexcept** özniteliği. Bir işlev yalnızca çağırır derleyici arka uç belirlerse, varsayılan olarak, çalışma zamanı denetimleri iyileştirmede *oluşturmayan* işlevleri. Olmayan atma işlevleri hiçbir özel durum oluşturulabilir belirten bir özniteliği olan tüm işlevlerdir. Bu olarak işaretlenmiş işlevler içerir **noexcept**, `throw()`, `__declspec(nothrow)`ve ne zaman **/ehc** belirtilen **extern "C"** işlevleri. Tüm derleyici tarafından İnceleme oluşturmayan olduğunu belirledi de olmayan atma işlevleri içerir. Varsayılan kullanarak açıkça ayarlayabilirsiniz **/EHr-**.
 
-Ancak, oluşturmayan özniteliği işlev tarafından oluşturulan özel durum garantisi değil. Farklı bir **noexcept** işlevi, Visual C++ derleyicisi kullanılarak bildirilen bir işlevi tarafından oluşturulan bir özel göz önünde bulundurur `throw()`, `__declspec(nothrow)`, veya **extern "C"** olarak tanımlanmamış davranış. Bu üç bildirimi öznitelikleri işlevleri, özel durumlar için çalışma zamanı sonlandırma denetimleri uygulamaz. Kullanabileceğiniz **/EHr** bu tanımlamanıza yardımcı olması için seçeneği tanımsız davranış, çalışma zamanı denetimleri kaçış işlenmeyen özel durumlar için derleyicinin zorlayarak bir **noexcept** işlevi.
+Ancak, oluşturmayan özniteliği işlev tarafından oluşturulan özel durum garantisi değil. Farklı bir **noexcept** işlevi MSVC derleyicisi kullanılarak bildirilen bir işlevi tarafından oluşturulan bir özel göz önünde bulundurur `throw()`, `__declspec(nothrow)`, veya **extern "C"** tanımsız davranış olarak. Bu üç bildirimi öznitelikleri işlevleri, özel durumlar için çalışma zamanı sonlandırma denetimleri uygulamaz. Kullanabileceğiniz **/EHr** bu tanımlamanıza yardımcı olması için seçeneği tanımsız davranış, çalışma zamanı denetimleri kaçış işlenmeyen özel durumlar için derleyicinin zorlayarak bir **noexcept** işlevi.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **kod oluşturma**.
 
@@ -112,8 +112,8 @@ Ancak, oluşturmayan özniteliği işlev tarafından oluşturulan özel durum ga
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
 [Hatalar ve özel durum işleme](../../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [Özel Durum Belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)

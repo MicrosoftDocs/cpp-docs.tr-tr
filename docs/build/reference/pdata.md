@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /PDATA dumpbin option
 - -PDATA dumpbin option
 ms.assetid: 5d41d629-6576-4733-b103-0d61e6b77b50
-ms.openlocfilehash: ce9fae2065101be6e418a10365c4ba4cd158ec94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd763abf7b2a08e6aa54ba37cb451f1ec0f6cef7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594291"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819837"
 ---
 # <a name="pdata"></a>/PDATA
 
@@ -27,8 +27,8 @@ Yalnızca RISC işlemci.
 
 Bu seçenek, bir resim veya nesne özel durum tablodan (.pdata) dökümünü alır.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

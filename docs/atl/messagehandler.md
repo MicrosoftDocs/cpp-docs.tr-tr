@@ -2,17 +2,15 @@
 title: MessageHandler
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- MessageHandler
 helpviewer_keywords:
 - MessageHandler function
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
-ms.openlocfilehash: deb217e2f889d30ab5c4caa7d9812d5e612dcb62
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1acd56357f9ce234e3c479fd8fa88c1ed8407878
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299354"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818241"
 ---
 # <a name="messagehandler"></a>MessageHandler
 

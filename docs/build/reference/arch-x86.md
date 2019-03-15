@@ -2,16 +2,16 @@
 title: /arch (x86)
 ms.date: 11/04/2016
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
-ms.openlocfilehash: e2aba6dc18db621710b5293f9f970fa5f453b8a9
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a429824a7c22aa9aba460481394785d31b92a5ef
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421813"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812258"
 ---
 # <a name="arch-x86"></a>/arch (x86)
 
-X86 kod oluşturma mimarisini belirtir. Ayrıca bkz: [/arch (x64)](../../build/reference/arch-x64.md) ve [/arch (ARM)](../../build/reference/arch-arm.md).
+X86 kod oluşturma mimarisini belirtir. Ayrıca bkz: [/arch (x64)](arch-x64.md) ve [/arch (ARM)](arch-arm.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,9 +48,9 @@ SSE ve SSE2 yönergelerini kullanmaya ek olarak, derleyici, SSE ve SSE2 desteği
 
 Derleyici oluşturur x86 varsayılan olarak SSE2 yönergeleri kullanan kod olduğundan, belirtmelisiniz **/arch:IA32** x86 için SSE ve SSE2 yönergelerine nesil devre dışı bırakmak için işlemci.
 
-**/ arch** yalnızca kod oluşturma için yerel işlevleri etkiler. Kullanırken [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) derlemek için **/arch** kod oluşturma için yönetilen işlevler üzerinde etkisi yoktur.
+**/ arch** yalnızca kod oluşturma için yerel işlevleri etkiler. Kullanırken [/CLR](clr-common-language-runtime-compilation.md) derlemek için **/arch** kod oluşturma için yönetilen işlevler üzerinde etkisi yoktur.
 
-**/ arch** ve [/QIfist](../../build/reference/qifist-suppress-ftol.md) aynı derlenecek üzerinde kullanılamaz. Kullanmıyorsanız, özellikle `_controlfp` FP denetim sözcüğünü ve ardından 53-bit çalışma zamanı başlatma kümeleri x87 FPU denetimi kod word duyarlık denetimi alanı değiştirmek için. Bu nedenle, her bir float ve bir ifadede çift işlemi 53-bit anlam ve 15-bit üs kullanır. Ancak, her SSE tek duyarlıklı işlemi 24 bit anlam ve 8-bit üs kullanır ve SSE2 çift duyarlıklı işlemleri 53-bit anlam ve 11 bit üs kullanır. Daha fazla bilgi için [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md). Bu farklılıklar, bir ifade ağacı, ancak burada bir kullanıcı atama sonra her bir alt ifade söz konusu değil durumlarda mümkündür. Aşağıdakileri göz önünde bulundurun:
+**/ arch** ve [/QIfist](qifist-suppress-ftol.md) aynı derlenecek üzerinde kullanılamaz. Kullanmıyorsanız, özellikle `_controlfp` FP denetim sözcüğünü ve ardından 53-bit çalışma zamanı başlatma kümeleri x87 FPU denetimi kod word duyarlık denetimi alanı değiştirmek için. Bu nedenle, her bir float ve bir ifadede çift işlemi 53-bit anlam ve 15-bit üs kullanır. Ancak, her SSE tek duyarlıklı işlemi 24 bit anlam ve 8-bit üs kullanır ve SSE2 çift duyarlıklı işlemleri 53-bit anlam ve 11 bit üs kullanır. Daha fazla bilgi için [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md). Bu farklılıklar, bir ifade ağacı, ancak burada bir kullanıcı atama sonra her bir alt ifade söz konusu değil durumlarda mümkündür. Aşağıdakileri göz önünde bulundurun:
 
 ```cpp
 r = f1 * f2 + d;  // Different results are possible on SSE/SSE2.
@@ -66,7 +66,7 @@ r = t + d;     // This should produce the same overall result
 
 ### <a name="to-set-this-compiler-option-for-avx-avx2-ia32-sse-or-sse2-in-visual-studio"></a>Visual Studio'da AVX, AVX2, IA32, SSE veya SSE2 için bu derleyici seçeneğini ayarlamak için
 
-1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri**, **C/C++** klasör.
 
@@ -80,6 +80,6 @@ r = t + d;     // This should produce the same overall result
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/arch (En Düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/arch (En Düşük CPU Mimarisi)](arch-minimum-cpu-architecture.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

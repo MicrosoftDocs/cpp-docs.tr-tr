@@ -1,18 +1,18 @@
 ---
-title: "MFC Dışı DLL'ler: Genel Bakış"
+title: "MFC dışı DLL'ler: Genel Bakış"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - non-MFC DLLs [C++]
 - DLLs [C++], non-MFC
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
-ms.openlocfilehash: 15cceb80b0f771c0c304572e2263b1479d6b0db7
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 14cbdadd8c66d6fdf282f644102a6d4a783893b5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693031"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809296"
 ---
-# <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
+# <a name="non-mfc-dlls-overview"></a>MFC dışı DLL'ler: Genel Bakış
 
 MFC olmayan DLL, MFC dahili olarak kullanmayan bir DLL modülüdür ve DLL'deki dışarı aktarılan işlevleri MFC veya MFC olmayan yürütülebilir dosyaları tarafından çağrılabilir. İşlevleri, genellikle standart C arabirimi kullanan MFC olmayan DLL'den dışarı aktarılır.
 
@@ -20,22 +20,22 @@ MFC olmayan DLL'leri hakkında daha fazla bilgi için [dinamik bağlantı kitapl
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [İzlenecek yol: Oluşturma ve bir dinamik bağlantı kitaplığı kullanma](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
+- [İzlenecek yol: Bir dinamik bağlantı kitaplığı oluşturma ve kullanma](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
 
-- [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)
+- [DLL'den dışarı aktarma](exporting-from-a-dll.md)
 
-- [Bir yürütülebilir dosyayı DLL’ye bağlama](../build/linking-an-executable-to-a-dll.md)
+- [Bir yürütülebilir dosyayı DLL’ye bağlama](linking-an-executable-to-a-dll.md)
 
-- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri: Genel Bakış](extension-dlls-overview.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL Türleri](../build/kinds-of-dlls.md)
+[DLL Türleri](kinds-of-dlls.md)
