@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -diagnostics compiler diagnostic options [C++]
 - diagnostics compiler diagnostic options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: d9b485f749f4d4d9fce4e07d9bcd6d6de564fb58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b7d043e00204fa191530f03bbed069d71a25fc5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531807"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822318"
 ---
 # <a name="diagnostics-compiler-diagnostic-options"></a>/ Diagnostics (derleyici tanılama seçenekleri)
 
@@ -50,7 +50,7 @@ Bazı durumlarda, derleyicinin bir sorun oluştuğu algılamaz unutmayın. Örne
 
 1. Dropdown denetimi kullanın **tanılama biçimi** bir tanılama seçmek için alan görüntü seçeneği. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

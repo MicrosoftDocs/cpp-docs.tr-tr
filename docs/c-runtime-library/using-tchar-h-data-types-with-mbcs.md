@@ -1,19 +1,17 @@
 ---
 title: MBCS ile TCHAR.H Veri Türlerini Kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- _mbcs
 helpviewer_keywords:
 - TCHAR.H data types
 - MBCS data type
 - _MBCS data type
 ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
-ms.openlocfilehash: e2c5031f0f1114bb7706dd8816729f661b78144d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b86cbc6d99cbc6969536934c1583ba5207a53629
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743932"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814442"
 ---
 # <a name="using-tcharh-data-types-with-mbcs"></a>MBCS ile TCHAR.H Veri Türlerini Kullanma
 

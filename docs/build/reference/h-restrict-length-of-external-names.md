@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: 194f8d2c87eb6aa307f417ff022e7975edf2ccc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdd3da8d3a5165262c00bc3475122e31f5770726
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489836"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811270"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H (Dış Adların Uzunluğunu Kısıtla)
 
@@ -68,13 +68,13 @@ void func2(void) {}
 
 Ayrıca kullanırken dikkatli olmanız gerekir **/H** seçeneği önceden tanımlanmış derleyici tanımlayıcı nedeniyle. En fazla tanımlayıcı uzunluğu çok küçükse, önceden tanımlanmış belirli tanımlayıcıları çözümlenmemiş yanı sıra belirli bir kitaplığı işlev çağrıları olacaktır. Örneğin, varsa `printf` işlevi kullanılır ve seçeneği **/H5** derleme zamanında sembolü belirtilen **_prin** başvurmak için oluşturulacak `printf`, ve bu bulunamayacaktır Kitaplıkta.
 
-Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).
+Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](gl-whole-program-optimization.md).
 
-**/H** Visual Studio 2005 seçeneği kullanım dışı; en fazla uzunluk sınırları yükseltildi ve **/H** artık gerekli değildir. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/H** Visual Studio 2005 seçeneği kullanım dışı; en fazla uzunluk sınırları yükseltildi ve **/H** artık gerekli değildir. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -84,7 +84,7 @@ Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](../../build/
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

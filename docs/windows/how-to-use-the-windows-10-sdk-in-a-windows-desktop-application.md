@@ -3,12 +3,12 @@ title: "Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK's�
 ms.custom: get-started-article
 ms.date: 07/12/2018
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
-ms.openlocfilehash: ed860a229866991b01266093058b71cc2ae84986
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25ef3674a7ab741f20a07d6e65d1b5524fb88d5f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669124"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809931"
 ---
 # <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı
 
@@ -38,7 +38,7 @@ Visual Studio 2015 ve Windows 10 SDK'sı ile başlayarak, CRT kitaplığı (ucrt
 
    `Retargeting End: 1 completed, 0 failed, 0 skipped`
 
-4. Proje özelliklerini açın ve **yapılandırma özellikleri, genel** bölümünde, değerlerini **Windows hedef Platform sürümü**. Buradaki değer değiştirme, aşağıdaki yordamı aynı etkiye sahiptir. Bkz: [genel özellik sayfası (Proje)](../ide/general-property-page-project.md).
+4. Proje özelliklerini açın ve **yapılandırma özellikleri, genel** bölümünde, değerlerini **Windows hedef Platform sürümü**. Buradaki değer değiştirme, aşağıdaki yordamı aynı etkiye sahiptir. Bkz: [genel özellik sayfası (Proje)](../build/reference/general-property-page-project.md).
 
    ![Hedef Platform sürümü](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - Disable Language Extensions compiler option
 - Ze compiler option [C++]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2
-ms.openlocfilehash: d24affdf92222ac50ffe72b3a1606d3f7030de60
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 1db1dbdba4829ccf939cdc4f07ccfefe2474a35d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676480"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812310"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
 
@@ -51,7 +51,7 @@ Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [stand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Gezinti bölmesinde **yapılandırma özellikleri** > **C/C++** > **dil**.
 
@@ -61,10 +61,9 @@ Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [stand
 
 Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguageExtensions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici Seçenekleri](compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](setting-compiler-options.md)<br/>
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>
 [/permissive- (Standartlara uyumluluk)](permissive-standards-conformance.md)<br/>
 [/std (Dil Standart Sürümünü Belirt)](std-specify-language-standard-version.md)<br/>

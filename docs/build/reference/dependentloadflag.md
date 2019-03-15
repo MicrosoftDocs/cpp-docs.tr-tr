@@ -10,12 +10,12 @@ helpviewer_keywords:
 - linker [C++], DEPENDENTLOADFLAG
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
-ms.openlocfilehash: 0bdf2542d641f751f40757079eb576f2c97540dc
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 94998e06f23a7e70524221d3cb75166b5d3f2c44
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326166"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815976"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (kümesi varsayılan bağımlı yük bayrakları)
 
@@ -42,7 +42,7 @@ Bağlantı seçeneğini belirtirseniz `/DEPENDENTLOADFLAG:0xA00` (Birleşik bayr
 
 ### <a name="to-set-the-dependentloadflag-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında DEPENDENTLOADFLAG bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
@@ -54,9 +54,9 @@ Bağlantı seçeneğini belirtirseniz `/DEPENDENTLOADFLAG:0xA00` (Birleşik bayr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağlayıcı Seçeneklerini Ayarlama](setting-linker-options.md)
-- [Bağlayıcı Seçenekleri](linker-options.md)
-- [DLL'ye örtük olarak bağlama](../linking-an-executable-to-a-dll.md#linking-implicitly)
-- [Hangi bağlama yönteminin kullanılacağını belirleme](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [MSVC bağlayıcı başvurusu](linking.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)
+- [Bir yürütülebilir dosyayı DLL’ye bağlama](../linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Bir yürütülebilir dosyayı DLL’ye bağlama](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 - [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa)
 - [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)

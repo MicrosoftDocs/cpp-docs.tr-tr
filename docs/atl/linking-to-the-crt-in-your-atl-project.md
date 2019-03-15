@@ -1,10 +1,6 @@
 ---
 title: ATL projenizde CRT bağlanma
 ms.date: 11/04/2016
-f1_keywords:
-- DllMainCRTStartup
-- wWinMainCRTStartup
-- WinMainCRTStartup
 helpviewer_keywords:
 - CRT, linking with ATL
 - WinMainCRTStartup method
@@ -12,12 +8,12 @@ helpviewer_keywords:
 - wWinMainCRTStartup method
 - ATL, C Run-Time library (CRT)
 ms.assetid: 650957ae-362c-4ecf-8b03-5d49138e8b5b
-ms.openlocfilehash: b117165c82e51a59fe691b90f8ef92d0ba802cbc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e247897f42eea5b4ced5bc40b556137a1a5cd228
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287953"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820188"
 ---
 # <a name="linking-to-the-crt-in-your-atl-project"></a>ATL projenizde CRT bağlanma
 

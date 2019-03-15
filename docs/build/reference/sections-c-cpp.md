@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - SECTIONS .def file statement
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
-ms.openlocfilehash: 7b6708e760a85a137a01718d07a5f167de849220
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5125b09675969c784aafe375faf1fdbc36d8c5d9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485872"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815118"
 ---
 # <a name="sections-cc"></a>SECTIONS (C/C++)
 
@@ -58,8 +58,8 @@ section [CLASS 'classname'] specifier
 
 `CLASS` Anahtar sözcüğü, uyumluluk için desteklenir, ancak göz ardı edilir.
 
-Bölüm özniteliklerini belirt eşdeğer bir yolu [/SECTION](../../build/reference/section-specify-section-attributes.md) seçeneği.
+Bölüm özniteliklerini belirt eşdeğer bir yolu [/SECTION](section-specify-section-attributes.md) seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)

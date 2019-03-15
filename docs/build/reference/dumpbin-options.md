@@ -6,68 +6,68 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPBIN program, options
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-ms.openlocfilehash: 5c57c49a39ae135f88f1f1eca25e59a68c7ad1aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 655087236e3e4644c6215da2adccd9755c767b77
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434313"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816038"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN Seçenekleri
 
-İsteğe bağlı bir tire (-) ya da seçenek adından önce gelen bir eğik çizgi (/), bir seçenek belirticisi oluşur. Seçenek adları kısaltılmış olamaz. Bazı seçenekler, iki nokta (:) sonra belirtilen bir bağımsız değişken, almaz. Boşluk veya sekme içinde bir seçenek belirtimine izin verilir. Komut satırı seçeneği belirtimlerine ayırmak için bir veya daha fazla boşluk veya sekme kullanın. Seçenek adları ve bunların anahtar sözcük veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir. Çoğu seçenekler tüm ikili dosyalar için geçerlidir; birkaç yalnızca için belirli türden dosyalar uygulayın. Varsayılan olarak, standart çıktıya DUMPBIN bilgi gönderir. Kullanım [/OUT](../../build/reference/out-dumpbin.md) çıkışı bir dosyaya göndermek için seçeneği.
+İsteğe bağlı bir tire (-) ya da seçenek adından önce gelen bir eğik çizgi (/), bir seçenek belirticisi oluşur. Seçenek adları kısaltılmış olamaz. Bazı seçenekler, iki nokta (:) sonra belirtilen bir bağımsız değişken, almaz. Boşluk veya sekme içinde bir seçenek belirtimine izin verilir. Komut satırı seçeneği belirtimlerine ayırmak için bir veya daha fazla boşluk veya sekme kullanın. Seçenek adları ve bunların anahtar sözcük veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir. Çoğu seçenekler tüm ikili dosyalar için geçerlidir; birkaç yalnızca için belirli türden dosyalar uygulayın. Varsayılan olarak, standart çıktıya DUMPBIN bilgi gönderir. Kullanım [/OUT](out-dumpbin.md) çıkışı bir dosyaya göndermek için seçeneği.
 
 DUMPBIN şu seçeneklere sahiptir:
 
-- [/ALL](../../build/reference/all.md)
+- [/ALL](all.md)
 
-- [/ARCHIVEMEMBERS](../../build/reference/archivemembers.md)
+- [/ARCHIVEMEMBERS](archivemembers.md)
 
-- [/CLRHEADER](../../build/reference/clrheader.md)
+- [/CLRHEADER](clrheader.md)
 
-- [/DEPENDENTS](../../build/reference/dependents.md)
+- [/DEPENDENTS](dependents.md)
 
-- [/DIRECTIVES](../../build/reference/directives.md)
+- [/DIRECTIVES](directives.md)
 
-- [/DISASM](../../build/reference/disasm.md)
+- [/DISASM](disasm.md)
 
-- [/ERRORREPORT (dumpbin.exe)](../../build/reference/errorreport-dumpbin-exe.md)
+- [/ERRORREPORT (dumpbin.exe)](errorreport-dumpbin-exe.md)
 
-- [/EXPORTS](../../build/reference/dash-exports.md)
+- [/EXPORTS](dash-exports.md)
 
-- [/FPO](../../build/reference/fpo.md)
+- [/FPO](fpo.md)
 
-- [/HEADERS](../../build/reference/headers.md)
+- [/HEADERS](headers.md)
 
-- [/ IMPORTS](../../build/reference/imports-dumpbin.md)
+- [/ IMPORTS](imports-dumpbin.md)
 
-- [/LINENUMBERS](../../build/reference/linenumbers.md)
+- [/LINENUMBERS](linenumbers.md)
 
-- [/LINKERMEMBER](../../build/reference/linkermember.md)
+- [/LINKERMEMBER](linkermember.md)
 
-- [/LOADCONFIG](../../build/reference/loadconfig.md)
+- [/LOADCONFIG](loadconfig.md)
 
-- [/ OUT](../../build/reference/out-dumpbin.md)
+- [/ OUT](out-dumpbin.md)
 
-- [/PDATA](../../build/reference/pdata.md)
+- [/PDATA](pdata.md)
 
-- [/PDBPATH](../../build/reference/pdbpath.md)
+- [/PDBPATH](pdbpath.md)
 
-- [/RANGE](../../build/reference/range.md)
+- [/RANGE](range.md)
 
-- [/RAWDATA](../../build/reference/rawdata.md)
+- [/RAWDATA](rawdata.md)
 
-- [/RELOCATIONS](../../build/reference/relocations.md)
+- [/RELOCATIONS](relocations.md)
 
-- [/ SECTION](../../build/reference/section-dumpbin.md)
+- [/ SECTION](section-dumpbin.md)
 
-- [/SUMMARY](../../build/reference/summary.md)
+- [/SUMMARY](summary.md)
 
-- [/SYMBOLS](../../build/reference/symbols.md)
+- [/SYMBOLS](symbols.md)
 
-- [/TLS](../../build/reference/tls.md)
+- [/TLS](tls.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
-[DUMPBIN Başvurusu](../../build/reference/dumpbin-reference.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
+[DUMPBIN Başvurusu](dumpbin-reference.md)

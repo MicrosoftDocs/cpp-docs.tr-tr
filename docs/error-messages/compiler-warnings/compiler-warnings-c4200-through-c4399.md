@@ -31,14 +31,13 @@ f1_keywords:
 - C4380
 - C4387
 - C4388
-- C4396
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
-ms.openlocfilehash: 02340234fc504773a29b3d83ae606cd1eb4e09f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cca32973ead1d7d88e37c4745491c8d5f181e0b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456006"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810516"
 ---
 # <a name="compiler-warnings-c4200-through-c4399"></a>C4200 ile c4399 arasındaki derleyici uyarıları
 
@@ -175,7 +174,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 2) C4356](../../error-messages/compiler-warnings/compiler-warning-level-2-c4356.md)|'*üye*': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz|
 |[Derleyici Uyarısı (düzey 3) C4357](../../error-messages/compiler-warnings/compiler-warning-level-3-c4357.md)|Temsilci biçimsel bağımsız değişken listesinde param dizisi bağımsız değişkeni bulundu '*temsilci*'üretilirken yoksayıldı'*işlevi*'|
 |[Derleyici Uyarısı (düzey 1) C4358](../../error-messages/compiler-warnings/compiler-warning-level-1-c4358.md)|'*işleci*': birleştirilmiş temsilcilerin dönüş türü 'void' değil; döndürülen değer tanımsız|
-|[Derleyici Uyarısı (düzey 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'*türü*': hizalama belirleyici asıl hizalamadan küçük olduğundan ('*hizalama*') ve yoksayılacak.|
+|[Derleyici Uyarısı (düzey 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'*türü*': Hizalama belirleyici asıl hizalamadan küçük olduğundan ('*hizalama*') ve yoksayılacak.|
 |Derleyici Uyarısı (Düzey 2) C4362|'*türü*': 8 bayttan büyük hizalama CLR tarafından desteklenmiyor|
 |[Derleyici Uyarısı (düzey 1) C4364](../../error-messages/compiler-warnings/compiler-warning-level-1-c4364.md)|# derleme için using '*derleme*'daha önce görülme'*konumu*' ('*line_number*') olmadan olarak\_arkadaş özniteliği;\_arkadaş değil uygulandı|
 |[Derleyici Uyarısı (düzey 4) C4365](../../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md)|'*ifade*': dönüştürme '*type1*'to'*type2*', imzalı/imzasız uyuşmazlığı|
@@ -192,7 +191,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4377](../../error-messages/compiler-warnings/compiler-warning-level-1-c4377.md)|Yerel türler varsayılan olarak özeldir; -d1PrivateNativeTypes kullanım dışıdır|
 |[Derleyici Uyarısı (düzey 1) C4378](../../error-messages/compiler-warnings/compiler-warning-level-1-c4378.md)|Başlatıcıları çalıştırmak için işlev işaretçilerinin edinmeniz gerekir; :: resolvemethodhandle kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 1) C4379](../../error-messages/compiler-warnings/compiler-warning-level-1-c4379.md)|Sürüm '*version_number*' ortak dil çalışma zamanı Bu derleyici tarafından desteklenmiyor. Bu sürümün kullanılması beklenmeyen sonuçlara neden|
-|Derleyici Uyarısı (düzey 1, hata) C4380|'*sınıfı*': varsayılan oluşturucu kullanım dışı olamaz|
+|Derleyici Uyarısı (düzey 1, hata) C4380|'*sınıfı*': Varsayılan Oluşturucu kullanım dışı olamaz|
 |[Derleyici Uyarısı (düzey 1) C4381](../../error-messages/compiler-warnings/compiler-warning-level-1-c4381.md)|'*işlev1*': arabirim yöntemi ortak olmayan yöntemi tarafından uygulanmayacak '*function2*'|
 |[Derleyici Uyarısı (düzey 1) C4382](../../error-messages/compiler-warnings/compiler-warning-level-1-c4382.md)|özel durum atma '*türü*': __clrcall yok Edicisi veya kopya Oluşturucusu olan bir tür yalnızca/CLR yakalanabilir: pure modülünde|
 |[Derleyici Uyarısı (düzey 1) C4383](../../error-messages/compiler-warnings/compiler-warning-level-1-c4383.md)|'*instance_dereference_operator*': başvurusunu değiştirmenin anlamı kullanıcı tanımlı olduğunda değişebilir, '*instance_dereference_operator*' işleci var; işleci bir statik olarak yazma işlenen hakkında açık olmaya işlevi|

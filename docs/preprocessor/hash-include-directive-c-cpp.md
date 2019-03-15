@@ -8,12 +8,12 @@ helpviewer_keywords:
 - '#include directive'
 - include directive (#include)
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
-ms.openlocfilehash: da68f71d2a3830cdd86870d8ef072c3fb04933db
-ms.sourcegitcommit: 45835842604602a011813d0cd70abc5df91b89ed
+ms.openlocfilehash: 67a44574a5a72a7b7addc0ed3d7b51cd3eb5b984
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750411"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821405"
 ---
 # <a name="include-directive-cc"></a>#include Yönergesi (C/C++)
 
@@ -49,7 +49,7 @@ Belirtilen ada sahip bir dosya bulduktan hemen sonra aramayı önişlemci durdur
 
 Ne zaman dahil dosyaları iç içe ve komut satırında derleme gerçekleştiğinde, dizin arama ana dosyanın ile başlayıp ardından üst dosyaların dizinleriyle devam eder. Diğer bir deyişle, arama, işlenmekte olan kaynağı içeren dizine göre başlar. Dosya bulunamazsa arama tarafından belirtilen dizinlere taşır [/ı (ek içeren dizinler)](../build/reference/i-additional-include-directories.md) derleyici seçeneği. Son olarak, INCLUDE ortam değişkeni tarafından belirtilen dizinlerde arama yapılır.
 
-Visual Studio geliştirme ortamından INCLUDE ortam değişkeni yoksayıldı. Dahil etme dosyaları için Aranan dizinleri ayarlama hakkında daha fazla bilgi için — bu ayrıca LIB ortamı değişkeni için geçerlidir — bkz [VC ++ Directories Property Page](../ide/vcpp-directories-property-page.md).
+Visual Studio geliştirme ortamından INCLUDE ortam değişkeni yoksayıldı. Dahil etme dosyaları için Aranan dizinleri ayarlama hakkında daha fazla bilgi için — bu ayrıca LIB ortamı değişkeni için geçerlidir — bkz [VC ++ Directories Property Page](../build/reference/vcpp-directories-property-page.md).
 
 Bu örnek, açılı ayraçlar kullanarak dosya eklemeyi gösterir:
 

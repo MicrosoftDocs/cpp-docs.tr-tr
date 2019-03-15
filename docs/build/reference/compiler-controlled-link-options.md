@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], features that affect linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0
-ms.openlocfilehash: 21d0baccaf74fc08bb110b0ae9f8b7dc108abd6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc7a6cc596f138daa373042abca51642c24cf737
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561583"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822333"
 ---
 # <a name="compiler-controlled-link-options"></a>Derleyici Denetimindeki LINK Seçenekleri
 
@@ -31,18 +31,18 @@ ms.locfileid: "50561583"
 |/FM*dosya adı*|Geçişleri/Map:*dosya adı*|
 |/Gy|Paketlenmiş işlevler (Comdat'lar); oluşturur etkinleştirir işlev düzeyi bağlamayı|
 |/LD|/ DLL geçirir|
-|/ LDd|/ DLL geçirir|
+|/LDd|/ DLL geçirir|
 |/link|Komut satırı geri kalanında LINK'e geçirir.|
 |/MD veya/MT|Varsayılan kitaplık adını .obj dosyasına yerleştirir.|
 |/ MDd veya/mtd|Varsayılan kitaplık adını .obj dosyasına yerleştirir. Simgenin tanımlar **_DEBUG**|
 |/nologo|/ Nologo geçirir|
-|/ ZD|/ Debug geçişleri|
-|/Zı veya/z7|/ Debug geçişleri|
+|/Zd|Passes /DEBUG|
+|/Zı veya/z7|Passes /DEBUG|
 |/Zl|Varsayılan kitaplık adını .obj dosyasından atlar|
 
-Daha fazla bilgi için [derleyici seçenekleri](../../build/reference/compiler-options.md).
+Daha fazla bilgi için [MSVC derleyici seçenekleri](compiler-options.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

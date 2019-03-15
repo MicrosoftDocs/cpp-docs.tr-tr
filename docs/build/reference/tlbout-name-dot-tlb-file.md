@@ -11,12 +11,12 @@ helpviewer_keywords:
 - .tlb files, renaming
 - -TLBOUT linker option
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
-ms.openlocfilehash: 97659341d4566cd34fe705b89758929f0c1e995d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e04514933a521bbf9d927fa6b47bacb87896353
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613817"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822268"
 ---
 # <a name="tlbout-name-tlb-file"></a>/TLBOUT (.TLB Dosyası Adlandır)
 
@@ -36,13 +36,13 @@ MIDL derleyicisi tarafından oluşturulan .tlb dosyasının adını belirtir. Do
 
 / Tlbout seçeneği .tlb dosyasının uzantısı ve adını belirtir.
 
-MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.
+MIDL derleyicisi olan projelerin bağlarken MSVC bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.
 
-/ Tlbout belirtilmezse, .tlb dosyasının adını alırsınız [/ıdlout](../../build/reference/idlout-name-midl-output-files.md) *filename*. / Idlout belirtilmezse, .tlb dosyasının vc70.tlb çağrılmaz.
+/ Tlbout belirtilmezse, .tlb dosyasının adını alırsınız [/ıdlout](idlout-name-midl-output-files.md) *filename*. / Idlout belirtilmezse, .tlb dosyasının vc70.tlb çağrılmaz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -54,10 +54,10 @@ MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafınd
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryFile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](midl-specify-midl-command-line-options.md)<br/>
 [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-ms.openlocfilehash: 1d5dbd8f83f501c3b68bad771089eab8acc6f8aa
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 8aadb6983cc096ff75785c6bab7ace6bd5f0c632
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742490"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809021"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek yol: Proje derleme (C++)
 
@@ -60,4 +60,4 @@ Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>
+[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>

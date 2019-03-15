@@ -12,12 +12,12 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: 8029adfd5b4f27e097df693c85ee0d711a13dc4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7dc30d3e5869e9b0f534a4769d4517a0514c144
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612374"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822632"
 ---
 # <a name="import-directive-c"></a>#import Yönergesi (C++)
 
@@ -121,14 +121,14 @@ Aşağıdaki derleyici iyileştirmeleri gelir **#import** yönergesi:
 
 - Zaman **#import** olan işlendiğinde derleyici ilk olarak başlığın mevcut ve güncel olmadığını denetler. Yanıt Evet ise, yeniden oluşturulması gerekmez.
 
-**#İmport** yönergesi ayrıca en az yeniden katıldığı ve bir ön derlenmiş üstbilgi dosyasına yerleştirilebilir. Bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/reference/creating-precompiled-header-files.md) daha fazla bilgi için.
+**#İmport** yönergesi ayrıca en az yeniden katıldığı ve bir ön derlenmiş üstbilgi dosyasına yerleştirilebilir. Bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/creating-precompiled-header-files.md) daha fazla bilgi için.
 
 ###  <a name="_predir_the_primary_type_library_header_file"></a> Birincil tür kitaplığı üstbilgi dosyası
 Birincil tür kitaplığı üstbilgi dosyası yedi bölümden oluşur:
 
-- Demirbaş: açıklamalardan oluşur `#include` COMDEF bildirimi. (Bu üst bilgisinde kullanılan bazı standart makroları tanımlar) H ve diğer çeşitli Kurulum bilgilerinden.
+- Başlık Demirbaş: Açıklamalar, içeren `#include` COMDEF bildirimi. (Bu üst bilgisinde kullanılan bazı standart makroları tanımlar) H ve diğer çeşitli Kurulum bilgilerinden.
 
-- İleri başvurular ve tür tanımları: gibi yapı bildirimlerinden oluşur `struct IMyInterface` ve tür tanımları.
+- İleri başvurular ve tür tanımları: Gibi yapı bildirimlerinden oluşur `struct IMyInterface` ve tür tanımları.
 
 - Akıllı işaretçi bildirimleri: Şablon sınıfı `_com_ptr_t` , arabirim işaretçilerini kapsayan ve çağırma ihtiyacını ortadan kaldıran bir akıllı işaretçi uygulamasıdır `AddRef`, `Release`, `QueryInterface` işlevleri. Ayrıca, onu gizliyor `CoCreateInstance` yeni bir COM nesnesi oluşturulurken çağırın. Bu bölümde makro deyimini kullanan `_COM_SMARTPTR_TYPEDEF` şablon özelleştirmeleri için COM arabirimlerinin TypeDef kurmaya [_com_ptr_t](../cpp/com-ptr-t-class.md) Şablon sınıfı. Örneğin, arabirimin `IMyInterface`,. TLH dosyasını içerecek:
 
@@ -144,13 +144,13 @@ Birincil tür kitaplığı üstbilgi dosyası yedi bölümden oluşur:
 
    Tür `IMyInterfacePtr` yerine ham arabirim işaretçisi kullanılabilir `IMyInterface*`. Sonuç olarak, çeşitli çağırmaya gerek yoktur `IUnknown` üye işlevleri
 
-- Typeinfo bildirimleri: sınıf tanımlarını ve diğer öğeleri tarafından döndürülen bireysel typeinfo öğelerini ifşa eden, öncelikle oluşur `ITypeLib:GetTypeInfo`. Bu bölümde tür kitaplığındaki her typeinfo üst bilgisinde üstbilgiye yansıtılır `TYPEKIND` bilgileri.
+- Typeinfo bildirimleri: Sınıf tanımlarını ve diğer öğeleri tarafından döndürülen bireysel typeinfo öğelerini ifşa eden, öncelikle oluşur `ITypeLib:GetTypeInfo`. Bu bölümde tür kitaplığındaki her typeinfo üst bilgisinde üstbilgiye yansıtılır `TYPEKIND` bilgileri.
 
-- İsteğe bağlı eski tip GUID tanımı: adlandırılmış GUID sabitlerinin başlatmalarını içerir. Formun adları bunlar `CLSID_CoClass` ve `IID_Interface`, MIDL derleyici tarafından oluşturulan benzer.
+- İsteğe bağlı eski tip GUID tanımı: Adlandırılmış GUID sabitlerinin başlatmalarını içerir. Formun adları bunlar `CLSID_CoClass` ve `IID_Interface`, MIDL derleyici tarafından oluşturulan benzer.
 
 - `#include` İkinci tür kitaplık üstbilgisi için bildirimi.
 
-- Altbilgi Demirbaş: şu anda içerir `#pragma pack(pop)`.
+- Altbilgi Demirbaş: Şu anda içerir `#pragma pack(pop)`.
 
 Başlık Demirbaş ve altbilgi Demirbaş, hariç tüm bölümleri tarafından belirlenen adıyla bir ad alanı içine alınan `library` özgün IDL dosyasındaki deyimi. Ad alanı adı ile açık bir nitelik olarak ya da aşağıdaki bildirimi dahil olmak üzere tür kitaplığı başlığındaki adları kullanabilirsiniz:
 

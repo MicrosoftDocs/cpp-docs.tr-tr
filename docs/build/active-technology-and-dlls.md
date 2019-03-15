@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Active technology [C++]
 - MFC DLLs [C++], Active Technology
 ms.assetid: 3ed27f8d-164a-4562-ad61-9f2333404cc7
-ms.openlocfilehash: 270c64df9af792a73acf1ad408aca02e7fadc30f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9633d60520a2a634ffe78d0fb9d48f6dd2ca7333
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535817"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817461"
 ---
 # <a name="active-technology-and-dlls"></a>Etkin Teknoloji ve DLL'ler
 
@@ -25,6 +25,6 @@ Otomasyon sunucusu yazıyorsanız ve kullanıcı arabirimi olmadan sunucunuz var
 
 - [Otomasyon Sunucuları](../mfc/automation-servers.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

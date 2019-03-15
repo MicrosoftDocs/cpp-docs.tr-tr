@@ -2,12 +2,12 @@
 title: x64 giriş ve bitiş
 ms.date: 12/17/2018
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-ms.openlocfilehash: b808703e9c89b8e455e9df2b5959a2f0dd10b939
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: a225786853fcc2eb7b6a21de29f1ccf4901e4377
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627234"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809996"
 ---
 # <a name="x64-prolog-and-epilog"></a>x64 giriş ve bitiş
 
@@ -93,6 +93,6 @@ Bu form için bir sonuç yalnızca yasal olanlardır. Aşağıdakilerden birini 
 
 Bu kurallara bir sonuç şu anda yürütülmekte olan belirler ve çağıran işlevin bağlamı yeniden izin vermek için sonuç geri kalanında yürütülmesini benzetimini yapmak için geriye doğru izleme kodu sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[x64 yazılım kuralları](../build/x64-software-conventions.md)
+[x64 Yazılım Kuralları](x64-software-conventions.md)

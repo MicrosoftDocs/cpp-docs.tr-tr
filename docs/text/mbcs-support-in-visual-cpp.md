@@ -1,8 +1,6 @@
 ---
 title: Visual C++'ta MBCS Desteği
 ms.date: 11/04/2016
-f1_keywords:
-- _mbcs
 helpviewer_keywords:
 - tools [C++], MBCS support
 - Asian languages [C++]
@@ -22,12 +20,12 @@ helpviewer_keywords:
 - Input Method Editor [C++]
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-ms.openlocfilehash: b292bb12888ce0c08f96d3c46e27297f61bc428d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 3f57e9feac7f129b3fb8653c7b1a2eacb021bf29
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750500"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818251"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
 

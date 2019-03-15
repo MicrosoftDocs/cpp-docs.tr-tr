@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: 6522461cf1f08eee9187a8f739cb21fe01e755f5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0cffdc2be00b4af9badbbbc80bcfef48b3f76e19
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747014"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818381"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
@@ -37,7 +37,7 @@ Birden çok kitaplıkları ve her olabilecek birtakım farklı derleyici seçene
 
 ## <a name="importing-your-existing-code"></a>Mevcut kod alma
 
-C++ derleyicisi ile veya bir derleme görevleri dosyası olmadan derleyin ve Visual Studio projesi yerleştirmek için ayarlanmış mevcut bir kod oluşturmak için kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md).
+C++ derleyicisi ile veya bir derleme görevleri dosyası olmadan derleyin ve Visual Studio projesi yerleştirmek için ayarlanmış mevcut bir kod oluşturmak için kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../build/how-to-create-a-cpp-project-from-existing-code.md).
 
 ## <a name="creating-a-new-project"></a>Yeni proje oluşturma
 
@@ -57,7 +57,7 @@ Kullanarak tüm Microsoft özel C++ uzantılarını devre dışı bırakabilirsi
 
 Microsoft C and C++ Derleyicileri, satır içi kod dahil olmak üzere tüm C veya C++ kodu önceden derlemek için seçenekler sağlar. Bu performans özelliği kullanarak, kod kararlı gövdesi, kodun derlenmiş hali bir dosyada depolar ve, sonraki derleme sırasında önceden derlenmiş kod hala geliştirilmekte olan kod ile birleştirin. Tutarlı kodun derlenmesi gerekmez çünkü her sonraki derleme daha hızlıdır.
 
-Varsayılan olarak, tüm önceden derlenmiş kod dosyaları stdafx.h ve stdafx.cpp belirtilir. **Yeni proje** Sihirbazı otomatik olarak oluşturur bu dosyaları sizin için kaldırmadıysanız **önceden derlenmiş üst bilgi** seçeneği. Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/reference/creating-precompiled-header-files.md).
+Varsayılan olarak, tüm önceden derlenmiş kod dosyaları stdafx.h ve stdafx.cpp belirtilir. **Yeni proje** Sihirbazı otomatik olarak oluşturur bu dosyaları sizin için kaldırmadıysanız **önceden derlenmiş üst bilgi** seçeneği. Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/creating-precompiled-header-files.md).
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
@@ -65,4 +65,4 @@ Daha fazla bilgi için [UNIX'ten Win32'ye taşıma](../porting/porting-from-unix
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)
+[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)

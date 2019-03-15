@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /BIND editbin option
 - import address table
 ms.assetid: 3772b330-1868-4c90-857d-c31faa867982
-ms.openlocfilehash: 671a26268ab07db4a38ae241ae1e0867dd0eb43c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8ba0a5f0235c8771567e4e43172bdf8c81c99a2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470856"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818485"
 ---
 # <a name="bind"></a>/BIND
 
@@ -32,6 +32,6 @@ Programın yürütülebilir dosyayı ve DLL'ler belirtin *dosyaları* EDITBIN ko
 
 Bir program yüklendiğinde varsayılan olarak, giriş noktası adreslerini program yükleyicisi ayarlar. Bu işlem gereken süreyi DLL'leri sayısı ve programda başvurulan giriş noktası sayısını bağlı olarak değişir. Program/Bind ile değiştirdiyseniz ve yürütülebilir dosyasını temel giderir ve önceden yüklenen DLL dosyaları, DLL'ler çakışmadığından varsa, işletim sistemi bu adresleri kümesi gerekmez. Burada dosyaların yanlış dayalı bir durumda işletim sistemi programın DLL'leri yeniden yerleştirir ve giriş noktası adreslerini programın yükleme zamanını kabul ekleyen yeniden hesaplar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

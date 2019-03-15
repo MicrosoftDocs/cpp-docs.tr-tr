@@ -7,16 +7,16 @@ helpviewer_keywords:
 - -Qimprecise_fwaits compiler option (C++)
 - /Qimprecise_fwaits compiler option (C++)
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
-ms.openlocfilehash: 3f2a0e6bc28fb812e087a689716be6119640ffca
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 40683382686ea64a80563f3f29b7d3523f4144a8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422149"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819720"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
 
-Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/FP: except](../../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği.
+Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/FP: except](fp-specify-floating-point-behavior.md) derleyici seçeneği.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,7 +30,7 @@ Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. B
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -44,6 +44,6 @@ Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. B
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

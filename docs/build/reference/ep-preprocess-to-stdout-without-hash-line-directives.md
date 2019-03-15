@@ -11,12 +11,12 @@ helpviewer_keywords:
 - EP compiler option [C++]
 - /EP compiler option [C++]
 ms.assetid: 6ec411ae-e33d-4ef5-956e-0054635eabea
-ms.openlocfilehash: 6da6bb80bcf6c5b6f130cbdec0be6a885fc5feb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49745b644234c0e5ce92661f14304531aaca5c69
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503044"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807344"
 ---
 # <a name="ep-preprocess-to-stdout-without-line-directives"></a>/EP (#line Yönergeleri Olmadan stdout'ta Önişle)
 
@@ -30,13 +30,13 @@ C ve C++ kaynak dosyalarını önceden işler ve standart çıktı cihazına ön
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşleminde, tüm önişlemci yönergeleri gerçekleştirilir, makro genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıktı açıklamalarda korumak için kullanın [/C (korumak açıklamaları sırasındaki)](../../build/reference/c-preserve-comments-during-preprocessing.md) seçeneğini **/EP**.
+İşleminde, tüm önişlemci yönergeleri gerçekleştirilir, makro genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıktı açıklamalarda korumak için kullanın [/C (korumak açıklamaları sırasındaki)](c-preserve-comments-during-preprocessing.md) seçeneğini **/EP**.
 
-**/EP** seçeneği derleme bastırır. Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/EP** çıktı dosyalarından da bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için [/FA, /Fa (listeleme dosyası)](../../build/reference/fa-fa-listing-file.md) ve [/Fm (eşlem dosyasını Adlandır)](../../build/reference/fm-name-mapfile.md).
+**/EP** seçeneği derleme bastırır. Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/EP** çıktı dosyalarından da bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için [/FA, /Fa (listeleme dosyası)](fa-fa-listing-file.md) ve [/Fm (eşlem dosyasını Adlandır)](fm-name-mapfile.md).
 
-İşleme sonraki aşamaları sırasında oluşturulan hatalar için satır numaralarını önceden işlenmiş dosyayı yerine orijinal kaynak dosyasına bakın. Özgün kaynak dosyasına başvurmak için satır numaralarını istiyorsanız kullanın [/E (Stdout'a önişle)](../../build/reference/e-preprocess-to-stdout.md) yerine. **/E** seçeneği ekler `#line` yönergeleri bu amaç için çıktı.
+İşleme sonraki aşamaları sırasında oluşturulan hatalar için satır numaralarını önceden işlenmiş dosyayı yerine orijinal kaynak dosyasına bakın. Özgün kaynak dosyasına başvurmak için satır numaralarını istiyorsanız kullanın [/E (Stdout'a önişle)](e-preprocess-to-stdout.md) yerine. **/E** seçeneği ekler `#line` yönergeleri bu amaç için çıktı.
 
-İle önceden işlenmiş çıkış göndermek için `#line` yönergelerini, bir dosyaya, kullanmak [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) bunun yerine seçeneği.
+İle önceden işlenmiş çıkış göndermek için `#line` yönergelerini, bir dosyaya, kullanmak [/P (dosyaya ön işleme)](p-preprocess-to-a-file.md) bunun yerine seçeneği.
 
 İle stdout için önceden işlenmiş çıkış göndermek için `#line` yönergeleri kullanan **/P** ve **/EP** birlikte.
 
@@ -44,7 +44,7 @@ C ve C++ kaynak dosyalarını önceden işler ve standart çıktı cihazına ön
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -64,7 +64,7 @@ Aşağıdaki komut satırını dosyasını ön işlemden geçirir `ADD.C`yorumla
 CL /EP /C ADD.C
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

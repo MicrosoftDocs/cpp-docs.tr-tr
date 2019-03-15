@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -LARGEADDRESSAWARE linker option
 - /LARGEADDRESSAWARE linker option
 ms.assetid: a29756c8-e893-47a9-9750-1f0d25359385
-ms.openlocfilehash: 6a83ac89c6ddf14885107193b32d9b7fe7853659
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81a560ebf083e2f93d9bb514fc401186291d7f41
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543061"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808124"
 ---
 # <a name="largeaddressaware-handle-large-addresses"></a>/LARGEADDRESSAWARE (Büyük Adresleri İşle)
 
@@ -26,11 +26,11 @@ ms.locfileid: "50543061"
 
 / Largeaddressaware seçeneği, bağlayıcıya uygulamanın 2 gigabayttan büyük adresleri işleyebileceğini bildirir. 64-bit derleyiciler bu seçenek varsayılan olarak etkindir. / Largeaddressaware bağlayıcı satırında aksi belirtilmediği takdirde, 32-bit derleyicilerde: No etkinleştirilir.
 
-/ Largeaddressaware ile DUMPBIN uygulamanın bağlı olduğu [OPTIONAL](../../build/reference/headers.md) belirlememişse bu bağlamda bilgileri görüntüler.
+/ Largeaddressaware ile DUMPBIN uygulamanın bağlı olduğu [OPTIONAL](headers.md) belirlememişse bu bağlamda bilgileri görüntüler.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -42,7 +42,7 @@ ms.locfileid: "50543061"
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LargeAddressAware%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

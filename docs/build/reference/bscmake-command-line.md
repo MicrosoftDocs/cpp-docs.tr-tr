@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - BSCMAKE, command line
 ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
-ms.openlocfilehash: a5a1e8f8e1d022fab9dc1bf4f67713302c11f758
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7724069a401aadcdb2e3e8487dc85273dac357fc
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446728"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818654"
 ---
 # <a name="bscmake-command-line"></a>BSCMAKE Komut Satırı
 
@@ -33,8 +33,8 @@ BSCMAKE üç .sbr dosyaları MAIN.bsc adlı bir dosya oluşturmak için şu komu
 BSCMAKE main.sbr file1.sbr file2.sbr
 ```
 
-İlgili bilgiler için bkz. [BSCMAKE komut dosyası](../../build/reference/bscmake-command-file-response-file.md) ve [BSCMAKE seçenekleri](../../build/reference/bscmake-options.md).
+İlgili bilgiler için bkz. [BSCMAKE komut dosyası](bscmake-command-file-response-file.md) ve [BSCMAKE seçenekleri](bscmake-options.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)
+[BSCMAKE Başvurusu](bscmake-reference.md)

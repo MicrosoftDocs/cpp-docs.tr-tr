@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - function calls [C++], importing
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
-ms.openlocfilehash: 513e6bd7b1120dd710852ab61aa7603bba74907e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8635cf5d389f72972f471a4fd53ed56c3497bfe9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498234"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811738"
 ---
 # <a name="importing-function-calls-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak İşlev Çağrılarını İçeri Aktarma
 
@@ -72,6 +72,6 @@ Dönüştürücü ve yoktur `jmp` yönergesi, böylece kod daha küçük ve daha
 
 Öte yandan, bir DLL içinde işlev çağrıları için bir dolaylı çağrı kullanmak zorunda istediğiniz değil. Bir işlevin adresi biliyorsunuzdur. Yükleme ve bir dolaylı çağrı önce bir işlevin adresini depolamak için zaman ve alan gerekli olduğundan, doğrudan arama her zaman daha hızlı ve daha küçük. Yalnızca kullanmak istediğiniz **__declspec(dllimport)** DLL dışında DLL işlevlerini çağırırken. Kullanmayın **__declspec(dllimport)** bu DLL'yi oluştururken bir DLL içinde işlevleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)
+[Bir Uygulamaya Aktarma](importing-into-an-application.md)

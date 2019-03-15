@@ -7,12 +7,12 @@ helpviewer_keywords:
 - noncreatable ATL objects
 - ATL projects, noncreatable objects
 ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
-ms.openlocfilehash: da1d5c43d86d95d7eff9b6830b83b61737d3030f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 966c7c1e42cd707726a8ca65bb80914c29ad582e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267075"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814507"
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL nesnesini oluşturulamaz yapma
 
@@ -37,8 +37,7 @@ Bir istemci doğrudan nesne oluşturulamıyor bir ATL tabanlı COM nesnesi özni
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)<br/>
-[Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Visual C++ Proje Türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)

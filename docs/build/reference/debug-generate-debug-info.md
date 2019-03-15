@@ -16,12 +16,12 @@ helpviewer_keywords:
 - debugging [C++], linker option
 - program databases [C++]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
-ms.openlocfilehash: 579f83298fb272182cf6f1904af38c323bae2751
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca7ef5d1935ddea0441f49e387e35184c6fd1fc6
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625296"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810204"
 ---
 # <a name="debug-generate-debug-info"></a>/DEBUG (Hata Ayıklama Bilgileri Üret)
 
@@ -35,7 +35,7 @@ ms.locfileid: "50625296"
 
 Bağlayıcı hata ayıklama bilgileri bir program veritabanı (PDB) dosyasına yerleştirir. Bu programın ardışık derlemeler sırasında PDB güncelleştirir.
 
-Hata ayıklama için oluşturulan yürütülebilir (.exe dosyası veya DLL) karşılık gelen PDB yolunu ve adını içerir. Hata ayıklayıcı, katıştırılmış adını okur ve programın hata ayıklama PDB kullanır. Bağlayıcı program veritabanı adı için temel programının adını ve .pdb uzantısına kullanır ve yolun oluşturulduğu yere katıştırır. Bu varsayılanı geçersiz kılmak üzere ayarla [/pdb](../../build/reference/pdb-use-program-database.md) ve farklı bir dosya adı belirtin.
+Hata ayıklama için oluşturulan yürütülebilir (.exe dosyası veya DLL) karşılık gelen PDB yolunu ve adını içerir. Hata ayıklayıcı, katıştırılmış adını okur ve programın hata ayıklama PDB kullanır. Bağlayıcı program veritabanı adı için temel programının adını ve .pdb uzantısına kullanır ve yolun oluşturulduğu yere katıştırır. Bu varsayılanı geçersiz kılmak üzere ayarla [/pdb](pdb-use-program-database.md) ve farklı bir dosya adı belirtin.
 
 **/Debug: fastlink** seçenektir ve sonrasında Visual Studio 2017'de kullanılabilir. Bu seçenek, yürütülebilir dosyayı oluşturmak için kullanılan tek bir derleme ürünleri özel sembol bilgilerini bırakır. Bu, hata ayıklama bilgilerini nesne dosyaları ve yürütülebilir dosyanın tam kopya oluşturmak yerine oluşturmak için kullanılan kitaplıklar içine dizinler sınırlı bir PDB oluşturur. Bu seçenek, dört kez tam PDB oluşturma Hızlı için ikisinden bağlayabilirsiniz ve yerel olarak hata ayıklama ve derleme ürünleri olması önerilir. Bu sınırlı PDB gerekli derleme ürünleri yürütülebilir dosyayı başka bir bilgisayara dağıtıldığında gibi mevcut olmadığı durumlarda hata ayıklama için kullanılamaz. Bir geliştirici Komut İstemi'nde bu sınırlı PDB'den tam PDB oluşturulacak mspdbcmf.exe Aracı'nı kullanabilirsiniz. Visual Studio'da proje veya çözüm için tam PDB oluşturmak için tam bir PDB dosyası oluşturmak için proje veya derleme menü öğelerini kullanın.
 
@@ -45,17 +45,17 @@ Hata ayıklama için oluşturulan yürütülebilir (.exe dosyası veya DLL) kar�
 
 Belirttiğinizde **/DEBUG** ile ek seçenekler, bağlayıcı varsayılan olarak **/Debug: Full** komut satırı ve derleme görevleri dosyası derlemeler için sürüm için yapılar Visual Studio IDE ve hem hata ayıklama ve yayın Visual Studio 2015 veya önceki sürümlerinde oluşturur. Visual Studio 2017'de başlayarak, derleme sistemi IDE içindeki varsayılan olarak **/Debug: fastlink** belirttiğinizde **/DEBUG** hata ayıklama yapıları için seçenek. Diğer Varsayılanları, geriye dönük uyumluluğu korumak için aynıdır.
 
-Derleyicinin [C7 uyumlu](../../build/reference/z7-zi-zi-debug-information-format.md) (/ Z7) seçeneği hata ayıklama bilgileri .obj dosyalarında bırakmak derleyicinin neden olur. Ayrıca [Program veritabanı](../../build/reference/z7-zi-zi-debug-information-format.md) (/zı) derleyici seçeneği hata ayıklama bilgileri .obj dosyası için bir PDB depolamak için. Bağlayıcı için nesnenin PDB önce .obj dosyasında yazılan mutlak yolunda arar ve ardından .obj dosyasına içeren dizin. Bir nesnenin PDB dosya adı veya konumu bağlayıcıya belirtemezsiniz.
+Derleyicinin [C7 uyumlu](z7-zi-zi-debug-information-format.md) (/ Z7) seçeneği hata ayıklama bilgileri .obj dosyalarında bırakmak derleyicinin neden olur. Ayrıca [Program veritabanı](z7-zi-zi-debug-information-format.md) (/zı) derleyici seçeneği hata ayıklama bilgileri .obj dosyası için bir PDB depolamak için. Bağlayıcı için nesnenin PDB önce .obj dosyasında yazılan mutlak yolunda arar ve ardından .obj dosyasına içeren dizin. Bir nesnenin PDB dosya adı veya konumu bağlayıcıya belirtemezsiniz.
 
-[/ INCREMENTAL ](../../build/reference/incremental-link-incrementally.md) /Debug belirlendiğinde kapsanır.
+[/ INCREMENTAL ](incremental-link-incrementally.md) /Debug belirlendiğinde kapsanır.
 
-/ DEBUG için varsayılanları değiştirir [/OPT](../../build/reference/opt-optimizations.md) seçeneğinden REF NOREF ve ICF için NOICF, böylece özgün Varsayılanları istiyorsanız açıkça/OPT: ref veya/OPT: ICF belirtmeniz gerekir.
+/ DEBUG için varsayılanları değiştirir [/OPT](opt-optimizations.md) seçeneğinden REF NOREF ve ICF için NOICF, böylece özgün Varsayılanları istiyorsanız açıkça/OPT: ref veya/OPT: ICF belirtmeniz gerekir.
 
 Bir .exe veya .dll hata ayıklama bilgilerini içeren oluşturmak mümkün değildir. Hata ayıklama bilgileri .obj veya .pdb dosyasında her zaman yerleştirilir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -69,7 +69,7 @@ Bir .exe veya .dll hata ayıklama bilgilerini içeren oluşturmak mümkün deği
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateDebugInformation%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

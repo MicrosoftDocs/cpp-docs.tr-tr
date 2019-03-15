@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, creating
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-ms.openlocfilehash: c9d69b6ca8cf1cff45098f0d63b452238db7ddfe
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4059961d70e6486f7417a5eff034b194d9860558
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259769"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807799"
 ---
 # <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
 
@@ -44,13 +44,12 @@ Ayrıca, bu görevleri oluştururken ve ATL projesi geliştirmek göz önünde b
 
 - [ATL projesinde derleyici en iyi duruma getirme](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
-Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla statik bağlantılar oluşturabilir verilip verilmeyeceğini](../../atl/programming-with-atl-and-c-run-time-code.md)) içinde [proje özellikleri](../../ide/general-property-page-project.md) sayfası ve ayarlayabilirsiniz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations) için bir ATL projesi.
+Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla statik bağlantılar oluşturabilir verilip verilmeyeceğini](../../atl/programming-with-atl-and-c-run-time-code.md)) içinde [proje özellikleri](../../build/reference/general-property-page-project.md) sayfası ve ayarlayabilirsiniz [derleme yapılandırmaları](/visualstudio/ide/understanding-build-configurations) için bir ATL projesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ proje oluşturma ve yönetme](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)<br/>
-[Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Visual C++ proje oluşturma ve yönetme](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual C++ Proje Türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Öğretici](../../atl/active-template-library-atl-tutorial.md)

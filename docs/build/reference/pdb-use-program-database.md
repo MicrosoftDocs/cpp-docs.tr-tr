@@ -11,12 +11,12 @@ helpviewer_keywords:
 - PDB files, creating
 - .pdb files, creating
 ms.assetid: d23db0ce-10cb-427a-bc60-d6b2a852723d
-ms.openlocfilehash: c7d3b571a429d780c0c5eea0ad498499c615245f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ddcf83cafd5f499158f3116f04e40397b7f8d0a8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589555"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821514"
 ---
 # <a name="pdb-use-program-database"></a>/PDB (Program Veritabanını Kullan)
 
@@ -31,17 +31,17 @@ Bir kullanıcı tarafından belirtilen ad bağlayıcının oluşturduğu program
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, zaman [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtildiğinde, bağlayıcı, hata ayıklama bilgilerini tutan bir program veritabanı (PDB) oluşturur. Varsayılan dosya adı PDB için temel programının adını ve .pdb uzantısına sahiptir.
+Varsayılan olarak, zaman [/DEBUG](debug-generate-debug-info.md) belirtildiğinde, bağlayıcı, hata ayıklama bilgilerini tutan bir program veritabanı (PDB) oluşturur. Varsayılan dosya adı PDB için temel programının adını ve .pdb uzantısına sahiptir.
 
 / Pdb kullanın:*filename* PDB dosyasının adını belirtmek için. / Pdb seçeneği/Debug belirtilmezse, yoksayılır.
 
 Bir PDB dosyası 2 GB'a kadar olabilir.
 
-Daha fazla bilgi için [bağlayıcı girişi olarak .pdb dosyaları](../../build/reference/dot-pdb-files-as-linker-input.md).
+Daha fazla bilgi için [bağlayıcı girişi olarak .pdb dosyaları](dot-pdb-files-as-linker-input.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -53,7 +53,7 @@ Daha fazla bilgi için [bağlayıcı girişi olarak .pdb dosyaları](../../build
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

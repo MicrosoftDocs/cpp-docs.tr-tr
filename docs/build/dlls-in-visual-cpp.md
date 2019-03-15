@@ -1,6 +1,6 @@
 ---
-title: Visual C++'da DLL'ler
-ms.date: 11/04/2016
+title: Visual Studio'da C/C++ DLL'leri oluşturma
+ms.date: 12/10/2018
 helpviewer_keywords:
 - executable files [C++]
 - dynamic linking [C++]
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-ms.openlocfilehash: be653be42b1905f1edbcf8d50f7aef2b343c2691
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bd30c84ba202c3f772ad4451368efde10285e6c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667200"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815820"
 ---
-# <a name="dlls-in-visual-c"></a>Visual C++'da DLL'ler
+# <a name="create-cc-dlls-in-visual-studio"></a>Visual Studio'da C/C++ DLL'leri oluşturma
 
 Windows bir dinamik bağlantı kitaplığı (DLL) paylaşılan bir kitaplık işlevleri ve kaynak davranır yürütülebilir dosya türüdür. Dinamik bağlama işlevlerini veya ayrı bir dosyada depolanan kaynakları kullanmak bir yürütülebilir dosya sağlayan bir işletim sistemi özelliğidir. Bu işlevler ve kaynakları derlenmiş ve bunları yürütülebilir dosyaları ayrı ayrı dağıtılsa. Bir DLL tek başına yürütülebilir dosya değil; Bu işlem, onu çağıran bir uygulama bağlamında çalışır. Uygulama yüklendiğinde işletim sisteminin bir uygulamanın bellek alanına DLL yükleyebilirsiniz (*örtük bağlama*), ya da isteğe bağlı çalışma zamanında (*açık bağlama*). DLL'leri da işlevleri ve kaynakları yürütülebilir dosyalar arasında paylaşmak kolaylaştırır. Birden çok uygulama içeriğini DLL bellek içinde tek bir kopyasını aynı anda erişebilir.
 
@@ -61,61 +61,61 @@ DLL'leri kullanmanın olası bir dezavantajı, uygulama kendi içinde değil old
 
 Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi sağlar.
 
-[İzlenecek yol: Dinamik Bağlantı Kitaplığı Oluşturma ve Kullanma (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
+[İzlenecek yol: Dinamik Bağlantı Kitaplığı Oluşturma ve Kullanma (C++)](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 Visual Studio kullanarak bir DLL'nin nasıl oluşturulacağı ve kullanılacağı açıklanmıştır.
 
-[DLL Türleri](../build/kinds-of-dlls.md)<br/>
+[DLL Türleri](kinds-of-dlls.md)<br/>
 Yapılandırılabilecek farklı DLL türleri hakkında bilgi sağlar.
 
-[Sıkça Sorulan DLL soruları](../build/dll-frequently-asked-questions.md)<br/>
+[Sıkça Sorulan DLL soruları](dll-frequently-asked-questions.md)<br/>
 DLL'ler hakkında sık sorulan soruların yanıtlarını sağlar.
 
-[Bir yürütülebilir dosyayı DLL’ye bağlama](../build/linking-an-executable-to-a-dll.md)<br/>
+[Bir yürütülebilir dosyayı DLL’ye bağlama](linking-an-executable-to-a-dll.md)<br/>
 DLL'ye olan açık ve örtük bağlantıları açıklar.
 
-[DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)<br/>
+[DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)<br/>
 DLL dosyanız yüklendiğinde yürütülmesi gereken DLL başlatma kodunu açıklanır.
 
-[DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)<br/>
+[DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](run-time-library-behavior.md)<br/>
 Çalışma zamanı kitaplığının DLL başlangıç dizisini nasıl gerçekleştirdiğini açıklar.
 
-[LoadLibrary ve AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)<br/>
+[LoadLibrary ve AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)<br/>
 Kullanımını açıklar **LoadLibrary** ve `AfxLoadLibrary` çalışma zamanında bir DLL'ye açıkça bağlanmak için.
 
-[GetProcAddress](../build/getprocaddress.md)<br/>
+[GetProcAddress](getprocaddress.md)<br/>
 Kullanımını açıklar **GetProcAddress** DLL'de dışa aktarılan bir işlevin adresini almak için.
 
-[FreeLibrary ve AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)<br/>
+[FreeLibrary ve AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)<br/>
 Kullanımını açıklar **FreeLibrary** ve `AfxFreeLibrary` zaman DLL Modulü artık gerekli.
 
 [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)<br/>
 Windows işletim sisteminin sistemde DLL bulmak için kullandığı arama yolunu açıklar.
 
-[MFC'ye Dinamik Olarak Bağlı Normal MFC DLL'sinin Modül Durumları](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>
+[MFC'ye Dinamik Olarak Bağlı Normal MFC DLL'sinin Modül Durumları](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>
 MFC DLL dinamik olarak MFC'ye bağlı normal modül durumunu açıklar.
 
-[MFC uzantısı DLL’leri](../build/extension-dlls-overview.md)<br/>
+[MFC uzantısı DLL’leri](extension-dlls-overview.md)<br/>
 Genel olarak varolan Microsoft Foundation Sınıf Kitaplığı sınıflarından türetilen yeniden kullanılabilir sınıfları uygulayan DLL'leri açıklar.
 
-[Yalnızca Kaynak DLL Oluşturma](../build/creating-a-resource-only-dll.md)<br/>
+[Yalnızca Kaynak DLL Oluşturma](creating-a-resource-only-dll.md)<br/>
 Simgeler, bit eşlemler, dizeler ve iletişim kutuları gibi kaynakları içeren yalnızca kaynak DLL'sini açıklar.
 
-[MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri](../build/localized-resources-in-mfc-applications-satellite-dlls.md)<br/>
+[MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri](localized-resources-in-mfc-applications-satellite-dlls.md)<br/>
 Uydu DLL'lere gelişmiş destek, çoklu dillerde yerelleşmiş uygulamalar oluşturmaya yardım eden bir özellik sağlar.
 
-[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)<br/>
+[İçeri ve Dışarı Aktarma](importing-and-exporting.md)<br/>
 Bir uygulamaya genel simgelerin nasıl içe aktarılacağını veya işlevlerin DLL'den nasıl dışa aktarılacağını açıklar
 
-[Etkin Teknoloji ve DLL'ler](../build/active-technology-and-dlls.md)<br/>
+[Etkin Teknoloji ve DLL'ler](active-technology-and-dlls.md)<br/>
 Nesne sunucularının DLL içinde uygulanacak şekilde sağlar.
 
-[DLL'de Otomasyon](../build/automation-in-a-dll.md)<br/>
+[DLL'de Otomasyon](automation-in-a-dll.md)<br/>
 MFC DLL Sihirbazı'ndaki Otomasyon seçeneğinin ne sağladığını açıklar.
 
 [MFC DLL'leri İçin Adlandırma Kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)<br/>
 MFC'de bulunan DLL dosyalarının ve kitaplıkların nasıl bir yapılandırılmış adlandırma kuralı izlediğini açıklar.
 
-[Visual Basic uygulamalarından DLL işlevleri çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)<br/>
+[Visual Basic uygulamalarından DLL işlevleri çağırma](calling-dll-functions-from-visual-basic-applications.md)<br/>
 Visual Basic uygulamalarından DLL işlevlerinin nasıl çağrılacağını açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler

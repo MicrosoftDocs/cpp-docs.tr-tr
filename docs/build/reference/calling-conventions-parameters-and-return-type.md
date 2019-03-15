@@ -6,12 +6,12 @@ helpviewer_keywords:
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 15631b305246cbfd7dcd8081cb1ee488bf225fec
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: a85825eb49b1f8faab7862e902b226c1c1fb6d58
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264809"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812973"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>Çağırma Kuralları, Parametreler ve Dönüş Türü
 
@@ -29,7 +29,7 @@ FARPROC WINAPI __delayLoadHelper2(
 *pidd*<br/>
 A `const` işaretçi bir `ImgDelayDescr` uzaklıklarını içeri aktarma ile ilgili çeşitli veri bağlama bilgileri için bir zaman damgası ve tanımlayıcı içerik hakkında daha fazla bilgi sağlayan öznitelikler kümesi içerir. Şu anda yalnızca bir öznitelik yoktur `dlattrRva`, adresleri tanımlayıcısındaki göreli sanal adreslerine olduğunu gösterir. Daha fazla bilgi için bkz: bildirimlerinde *delayimp.h*.
 
-Tanımını `PCImgDelayDescr` yapısı için bkz: [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).
+Tanımını `PCImgDelayDescr` yapısı için bkz: [yapı ve sabit tanımları](structure-and-constant-definitions.md).
 
 *ppfnIATEntry*<br/>
 İçeri aktarılan bir işlevin adresini ile güncelleştirilen gecikme yük içeri aktarma adres tablosunda (IAT) yuva için bir işaretçi. Bu konuma döndürdüğü değerin depolanacağı Yardımcısı yordamı gerekir.
@@ -137,4 +137,4 @@ const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı İşlevini Anlama](../../build/reference/understanding-the-helper-function.md)
+[Yardımcı İşlevini Anlama](understanding-the-helper-function.md)

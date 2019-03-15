@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl yapılır: Doğrulanabilir C++ Projeleri Oluşturma (C++/CLI)'
+title: 'Nasıl yapılır: Doğrulanabilir C++ projeleri oluşturma (C + +/ CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - verifiable assemblies [C++], creating
 - conversions, C++ projects
 - Visual C++ projects
 ms.assetid: 4ef2cc1a-e3e5-4d67-8d8d-9c614f8ec5d3
-ms.openlocfilehash: acd37469f0702b73cdb1386fcf43091c8d27aebb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de3742717bf55c53ab4007aaed18b6ce687fbede
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630444"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817390"
 ---
 # <a name="how-to-create-verifiable-c-projects-ccli"></a>Nasıl yapılır: doğrulanabilir C++ projeleri oluşturma (C + +/ CLI)
 
@@ -28,7 +28,7 @@ Varsayılan olarak, .NET projeleri, / CLR derleyici bayrağını kullanın ve he
 
 ### <a name="to-change-the-compiler-and-linker-settings"></a>Derleyici ve bağlayıcı ayarları değiştirmek için
 
-1. ' % S'proje özelliği sayfasında görüntüler. Daha fazla bilgi için [Working with Project Properties](../ide/working-with-project-properties.md).
+1. ' % S'proje özelliği sayfasında görüntüler. Daha fazla bilgi için [derleyici ayarlayın ve derleme özellikleri](../build/working-with-project-properties.md).
 
 1. Üzerinde **genel** altındaki **yapılandırma özellikleri** , düğüm kümesi **ortak dil çalışma zamanı desteği** özelliğini **Güvenli MSIL Ortak dil Çalışma zamanı desteği (/ CLR: safe)**.
 
@@ -56,7 +56,7 @@ C çalışma zamanı kitaplıkları (CRT) doğrulanabilir uygulamaları kullanam
 
 1. _Tmain() Main() projenin ana .cpp dosyası ile değiştirin.
 
-1. ' % S'proje özelliği sayfasında görüntüler. Daha fazla bilgi için [Working with Project Properties](../ide/working-with-project-properties.md).
+1. ' % S'proje özelliği sayfasında görüntüler. Daha fazla bilgi için [derleyici ayarlayın ve derleme özellikleri](../build/working-with-project-properties.md).
 
 1. Üzerinde **Gelişmiş** altındaki **bağlayıcı** düğümünü girin `Main` olarak **giriş noktası** özellik değeri.
 

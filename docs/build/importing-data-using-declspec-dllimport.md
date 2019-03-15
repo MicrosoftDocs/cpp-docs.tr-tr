@@ -9,12 +9,12 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
-ms.openlocfilehash: bc1b21bad1f7d4515774dbe76c2567280cdbf1f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74ad93e640a4e961f7670077227bb5c35a42c20f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620577"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818433"
 ---
 # <a name="importing-data-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
 
@@ -56,6 +56,6 @@ Verileri otomatik olarak DLL'den dışarı aktarmak için bu bildirimi kullanın
 __declspec(dllexport) ULONG ulDataInDLL;
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)
+[Bir Uygulamaya Aktarma](importing-into-an-application.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - module states [C++], regular MFC DLLs dynamically linked to
 - DLLs [C++], module states
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
-ms.openlocfilehash: bd485e484287a17b1f016acc7012178a2c74343d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ab51ca8097bd5ec27e8e7cfd8b8f19d76195664
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462887"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822151"
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>MFC'ye dinamik olarak bağlı normal MFC DLL'SİNİN modül durumları
 
@@ -37,10 +37,10 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 - [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 
-- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantısı DLL’leri](../build/extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri](extension-dlls-overview.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

@@ -1,17 +1,15 @@
 ---
 title: Idispeventımpl (ATL) kullanma
 ms.date: 11/04/2016
-f1_keywords:
-- IDispEventImpl
 helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-ms.openlocfilehash: 5175ffd615837fb10ba1bbced5da7f7733b6e193
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 59f8e7d095f3d514ab41b28dc37f5d3c707bbd08
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301564"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820305"
 ---
 # <a name="using-idispeventimpl"></a>Using IDispEventImpl
 

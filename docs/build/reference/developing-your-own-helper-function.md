@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - helper functions
 ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
-ms.openlocfilehash: 0bd0066cee875408056bd88895b0b5f449802c5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73b4a8180345dd6f7dc26f4243f6e63eda80e4af
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492021"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820149"
 ---
 # <a name="developing-your-own-helper-function"></a>Kendi Yardımcı İşlevinizi Geliştirme
 
@@ -23,6 +23,6 @@ Temelde girilen kod bir kılavuz olarak yeni bir tane için kullanabileceğiniz 
 
 Büyük olasılıkla yalnızca yeni bir bildirim dliStartProcessing üzerinde varsayılan yardımcı olarak aynı değerleri alır bildirim kullanıcı tarafından sağlanan bir kanca işlevini işaretçiye sağlamak kolay olacaktır. Bu noktada, başarılı bir geri döndürme varsayılan Yardımcısı için diğer tüm varsayılan yardımcı işleme atlama gibi kanca işlevini temelde yeni yardımcı işlevini dönüşebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)

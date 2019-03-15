@@ -2,18 +2,16 @@
 title: Bölünmüş arabirim sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.interfaces.tear-off
 helpviewer_keywords:
 - interfaces, tear-off
 - tear-off interfaces classes
 ms.assetid: 14e4ab01-9213-43e5-bef5-78af1e6206ff
-ms.openlocfilehash: 964e4f10cb70fc239bcefb8009e3ecfc9bca22dc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7ed6d6d68ee5d05b7bec2c8545eab34cf82e38a8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297482"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810269"
 ---
 # <a name="tear-off-interfaces-classes"></a>Bölünmüş arabirim sınıfları
 

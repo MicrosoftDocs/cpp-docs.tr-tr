@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -SUBSYSTEM editbin option
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-ms.openlocfilehash: ec771efcd8fffd1aa1825f2c500404dc0b2a4965
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b13313d57226719086cb73584543488f842057c1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638743"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820500"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 
@@ -65,10 +65,10 @@ WINDOWSCE alt sistemi, uygulamanın Windows CE çekirdeği sürümüne sahip bir
 
 - Değerlerini `major` ve `minor` 0 ile 65.535 arasında olmalıdır.
 
-Başlangıç adresi program için varsayılan alt sistem seçimi etkiler. Daha fazla bilgi için [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md), bağlayıcı/Entry:*işlevi* seçeneği.
+Başlangıç adresi program için varsayılan alt sistem seçimi etkiler. Daha fazla bilgi için [/Entry (giriş noktası simgesi)](entry-entry-point-symbol.md), bağlayıcı/Entry:*işlevi* seçeneği.
 
-Her alt sistemin büyük ve küçük sürüm numaraları için minimum ve varsayılan değerler dahil olmak üzere daha fazla bilgi için bkz. [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneği.
+Her alt sistemin büyük ve küçük sürüm numaraları için minimum ve varsayılan değerler dahil olmak üzere daha fazla bilgi için bkz. [/Subsystem](subsystem-specify-subsystem.md) bağlayıcı seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

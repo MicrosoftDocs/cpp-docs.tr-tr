@@ -1,19 +1,15 @@
 ---
 title: CAtlServiceModuleT::Run işlevi
 ms.date: 11/04/2016
-f1_keywords:
-- CServiceModule::Run
-- CServiceModule.Run
-- CSecurityDescriptor
 helpviewer_keywords:
 - ATL services, security
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-ms.openlocfilehash: 448a955f2e72e8c523bbf74d6ee7e122828915ad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0f50c13912bbfef861e8650ee7589daea1e45725
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264423"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810386"
 ---
 # <a name="catlservicemoduletrun-function"></a>CAtlServiceModuleT::Run işlevi
 

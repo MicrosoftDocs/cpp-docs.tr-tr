@@ -160,14 +160,13 @@ helpviewer_keywords:
 - C1852
 - C1901
 - C1903
-- C1904
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: edf2227bd0a542ce9ca5e8a6a3f908347bd816e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1159a635f0c7a61e591b4d96c4e55bd2baf44782
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677337"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814455"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>Derleyici Önemli Hataları C999 - C1999
 
@@ -224,7 +223,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Önemli hata C1063|Derleyici sınırı: derleyicide yığın taşması|
 |[Önemli Hata C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)|Derleyici sınırı: belirteç iç arabelleği taşırdı|
 |[Önemli Hata C1065](../../error-messages/compiler-errors-1/fatal-error-c1065.md)|Derleyici sınırı: Etiket kalmadı|
-|[Önemli Hata C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|Derleyici sınırı: bir tür kaydının boyutu 64K sınırı aşıldı|
+|[Önemli Hata C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|Derleyici sınırı: Bir tür kaydının boyutu 64K sınırı aşıldı|
 |Önemli hata C1068|Dosya açılamıyor '*dosya*'|
 |Önemli hata C1069|derleyici komut satırı okunamıyor|
 |Önemli hata C1070|eşleşmeyen #if / #endif pair dosyasında '*dosya*'|
@@ -311,7 +310,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Önemli Hata C1506](../../error-messages/compiler-errors-1/fatal-error-c1506.md)|Kurtarılamayan blok kapsamı hatası|
 |Önemli hata C1508|Derleyici sınırı: '*işlevi*': 65535'ten fazla bağımsız değişken baytı|
 |[Önemli Hata C1509](../../error-messages/compiler-errors-1/fatal-error-c1509.md)|Derleyici sınırı: çok fazla özel durum işleyici durumlarını işlevindeki '*işlevi*'; işlevi basitleştirin|
-|[Önemli Hata C1510](../../error-messages/compiler-errors-1/fatal-error-c1510.md)|Clui.dll dil kaynağı açılamıyor|
+|[Önemli Hata C1510](../../error-messages/compiler-errors-1/fatal-error-c1510.md)|Cannot open language resource clui.dll|
 |[Önemli Hata C1601](../../error-messages/compiler-errors-1/fatal-error-c1601.md)|Desteklenmeyen satır içi derleme işlem kodu|
 |[Önemli Hata C1602](../../error-messages/compiler-errors-1/fatal-error-c1602.md)|desteklenmeyen iç öğe|
 |[Önemli Hata C1603](../../error-messages/compiler-errors-1/fatal-error-c1603.md)|Satır içi derleme dallanma hedefi je mimo rozsah tarafından *numarası* bayt|

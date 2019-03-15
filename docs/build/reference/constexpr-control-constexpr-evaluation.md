@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -constexpr control constexpr evaluation [C++]
 - constexpr control constexpr evaluation [C++]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-ms.openlocfilehash: ea55a2686c2cdd7f4e0a6b558d3cd456fe87cb9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 178acc548fb9c89dcfde104d2a12d85637440e28
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544254"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810191"
 ---
 # <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (constexpr değerlendirmesini Denetle)
 
@@ -22,9 +22,9 @@ Kullanım **/constexpr** denetim parametreleri için derleyici seçenekleri **co
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ constexpr: Depth**<em>N</em>
->  **/constexpr: backtrace**<em>N</em>
-> **Steps** <em>N</em>
+> **/constexpr:depth**<em>N</em>
+>  **/constexpr:backtrace**<em>N</em>
+>  **/constexpr:steps**<em>N</em>
 
 ## <a name="arguments"></a>Arguments
 
@@ -52,7 +52,7 @@ Kullanım **/constexpr** denetim parametreleri için derleyici seçenekleri **co
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

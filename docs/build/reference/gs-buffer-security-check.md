@@ -14,12 +14,12 @@ helpviewer_keywords:
 - -GS compiler option [C++]
 - buffers [C++], avoiding overruns
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-ms.openlocfilehash: 30fd602bb1c094694a9ebb6095349e971842d5f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 10afa874092eb563903ba5f49c6add136afc869c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557553"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820240"
 ---
 # <a name="gs-buffer-security-check"></a>/GS (Arabellek Güvenlik Denetimi)
 
@@ -96,7 +96,7 @@ Derleyici, aşağıdaki durumlarda savunmasız parametreleri kopyalarını yapma
 
 - GS arabellek içermeyen işlevleri.
 
-- En iyi duruma getirme ([/O seçenekler](../../build/reference/o-options-optimize-code.md)) etkin değil.
+- En iyi duruma getirme ([/O seçenekler](o-options-optimize-code.md)) etkin değil.
 
 - Değişken bağımsız değişken listesi (...) işlevleri.
 
@@ -116,7 +116,7 @@ Kullansanız bile **/GS**, hiçbir arabellek taşmalarına sahip güvenli kod ya
 
 1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
 
-   Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+   Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. İçinde **özellik sayfaları** iletişim kutusu, tıklayın **C/C++** klasör.
 
@@ -155,7 +155,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

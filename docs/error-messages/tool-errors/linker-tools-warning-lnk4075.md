@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4075
 ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
-ms.openlocfilehash: bba0fa85a3f2590c84cbb6f78fac7e49386d35a9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf22e7c78dce6949c357d7ad4a0c76209c88eef3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548258"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809905"
 ---
 # <a name="linker-tools-warning-lnk4075"></a>Bağlayıcı Araçları Uyarısı LNK4075
 
@@ -21,7 +21,7 @@ ms.locfileid: "50548258"
 
 Birbirini dışlayan bağlayıcı seçenekleri belirtilir.  Bağlayıcı seçenekleri inceleyin.  Bağlayıcı seçenekleri Burada belirtilen nasıl projenizi oluşturma bağlıdır.
 
-- Geliştirme ortamında geliştiriyorsanız, projeniz için bağlayıcı özellik sayfaları bakın ve hem bağlayıcı seçenekleri Burada belirtilen bakın.  Bkz: [Working with Project Properties](../../ide/working-with-project-properties.md) daha fazla bilgi için.
+- Geliştirme ortamında geliştiriyorsanız, projeniz için bağlayıcı özellik sayfaları bakın ve hem bağlayıcı seçenekleri Burada belirtilen bakın.  Bkz: [derleyici ayarlayın ve derleme özellikleri](../../build/working-with-project-properties.md) daha fazla bilgi için.
 
 - Komut satırında derleme yaparsanız, var. belirtilen bağlayıcı seçeneklerine bakın.
 

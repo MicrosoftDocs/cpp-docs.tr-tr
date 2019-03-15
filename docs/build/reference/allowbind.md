@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /ALLOWBIND editbin option
 - -ALLOWBIND editbin option
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
-ms.openlocfilehash: 3d38b2a70fc3510b2c26942dc3e5e6fdd76a28e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4cb7e5a3627d865e2f2193dee096c72cced75f5f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550533"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819824"
 ---
 # <a name="allowbind"></a>/ALLOWBIND
 
@@ -30,8 +30,8 @@ DLL'in bağlı olamayacağını belirtir.
 
 Kullanım **/ALLOWBIND:NO** DLL bağlama gelen Bind.exe'yi önlemek için.
 
-Daha fazla bilgi için [/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) bağlayıcı seçeneği.
+Daha fazla bilgi için [/ALLOWBIND](allowbind-prevent-dll-binding.md) bağlayıcı seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

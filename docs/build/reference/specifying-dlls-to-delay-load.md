@@ -7,16 +7,16 @@ helpviewer_keywords:
 - delayed loading of DLLs, specifying
 - /DELAYLOAD linker option
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-ms.openlocfilehash: 986dab0621127c90097808025825930bf9974a7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b6737abd76c03186881e83bbd2bf286be6ffe2f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549870"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813233"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>Gecikme Yükü DLL'lerini Belirtme
 
-Geciktirilecek dll ile yük belirtebilirsiniz [/delayload](../../build/reference/delayload-delay-load-import.md):`dllname` bağlayıcı seçeneği. Kendi yardımcı işlevi sürümünüzü kullanmayı planlamıyorsanız, programınızı delayimp.lib (için Masaüstü uygulamalar için) veya dloadhelper.lib (mağaza uygulamaları için) ile de bağlamanız gerekir.
+Geciktirilecek dll ile yük belirtebilirsiniz [/delayload](delayload-delay-load-import.md):`dllname` bağlayıcı seçeneği. Kendi yardımcı işlevi sürümünüzü kullanmayı planlamıyorsanız, programınızı delayimp.lib (için Masaüstü uygulamalar için) veya dloadhelper.lib (mağaza uygulamaları için) ile de bağlamanız gerekir.
 
 Gecikmeli DLL yükleme basit bir örneği verilmiştir:
 
@@ -35,6 +35,6 @@ int main() {
 
 Proje hata ayıklama sürümünü oluşturun. Hata ayıklayıcı ve fark edersiniz, user32.dll çağrısı yaptığınızda yüklendiği kullanarak kod aracılığıyla adım `MessageBox`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)

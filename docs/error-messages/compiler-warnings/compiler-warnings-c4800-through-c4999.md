@@ -97,13 +97,12 @@ f1_keywords:
 - C5043
 - C5044
 - C5045
-- C5046
-ms.openlocfilehash: 672aa1b0e298be3b6754b1706e721ad6798230ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70a0eee4e0a7774c1c92a44ad1e8eaa480ce84d3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642864"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816353"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarılarını C4800 C5999 ile
 
@@ -144,7 +143,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 4) C4840](compiler-warning-level-4-c4840.md)|sınıfının taşınabilir olmayan kullanımı*türü*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak|
 |Derleyici Uyarısı (düzey 4) C4841|Standart olmayan uzantı kullanıldı: kullanılan offsetof içinde bileşik üye göstergesi|
 |Derleyici Uyarısı (düzey 4) C4842|birden fazla devralma kullanılarak bir türe uygulanan'offsetof ' sonucunun derleyici yayınları arasında tutarlı olması garanti edilmez|
-|Derleyici Uyarısı C4843|'*type1*': dizi veya işlev türüne yapılan başvurunun özel durum işleyicisi erişilemiyor, kullanın '*type2*' yerine|
+|Derleyici Uyarısı C4843|'*type1*': Dizi veya işlev türüne yapılan başvurunun özel durum işleyicisi erişilemiyor, kullanın '*type2*' yerine|
 |Derleyici Uyarısı C4844|' export module *module_name*;' artık bir modül arabirimi bildirmek için tercih edilen sözdizimi şöyledir|
 |[Derleyici Uyarısı (düzey 4) C4866](c4866.md)| Derleyici, soldan sağa Değerlendirme sırasını çağrısı değil zorlayabileceği *operator_name*|
 |[Derleyici Uyarısı (hata) C4867](compiler-warning-c4867.md)|'*işlevi*': işlev çağrısında bağımsız değişken listesi eksik; bu değer '*çağrı*' bir üyeye işaretçi oluşturmak için|
@@ -176,7 +175,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 1) C4935|derleme erişim belirticisi değiştiren gelen '*erişim*'|
 |Derleyici Uyarısı (düzey 1, hata) C4936|Bu __declspec yalnızca/CLR veya/CLR ile derlendiğinde desteklenir: Saf|
 |Derleyici Uyarısı (düzey 4) C4937|'*text1*'ve'*text2*'için bağımsız değişkenler olarak ayırt edilemiyor'*yönergesi*'|
-|Derleyici Uyarısı (düzey 4) C4938|'*var*': kayan nokta azaltma değişkeni, / FP altında tutarsız sonuçlara neden olabilir: strict veya #pragma fenv_access|
+|Derleyici Uyarısı (düzey 4) C4938|'*var*': Kayan nokta azaltma değişkeni, / FP altında tutarsız sonuçlara neden olabilir: strict veya #pragma fenv_access|
 |Derleyici Uyarısı C4939|#pragma vtordisp kullanım dışı ve Visual C++'ın gelecek sürümde kaldırılacak.|
 |Derleyici Uyarısı (düzey 1) C4944|'*sembol*': değerinden simge alınamıyor '*assembly1*': farklı*sembol*' geçerli kapsamda zaten var.|
 |[Derleyici Uyarısı (düzey 1) C4945](compiler-warning-level-1-c4945.md)|'*sembol*': değerinden simge alınamıyor '*assembly1*': farklı*sembol*'başka bir derleme zaten alınmış'*assembly2* '|
@@ -196,7 +195,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 1, hata) C4959|yönetilmeyen tür tanımlanamaz '*türü*' / CLR: safe, üyelerine erişilmesi doğrulanamayan bir koda neden olduğu|
 |Derleyici Uyarısı (düzey 4) C4960|'*işlevi*' profili çok büyük|
 |Derleyici Uyarısı (düzey 1) C4961|Hiç profil verisi birleştirilmiş '.pgd dosyası ', profil temelli iyileştirmeler devre dışı bırakıldı|
-|Derleyici Uyarısı (düzey 4) C4962|'*işlevi*': iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı profil temelli iyileştirmeler|
+|Derleyici Uyarısı (düzey 4) C4962|'*işlevi*': Profil temelli iyileştirmeler iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı bırakıldı|
 |Derleyici Uyarısı (düzey 1) C4963|'*açıklama*': Profil verileri bulunamadı; işaretlenmiş yapımda farklı derleyici seçenekleri kullanılmış|
 |[Derleyici Uyarısı (düzey 1) C4964](compiler-warning-level-1-c4964.md)|İyileştirme seçeneği belirtilmedi; profil bilgileri toplanmayacak değil|
 |[Derleyici Uyarısı (düzey 1) C4965](compiler-warning-level-1-c4965.md)|örtük 0 tamsayı kutusunu; nullptr veya açık tür dönüştürme kullanın|
@@ -226,7 +225,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 4) C5025|'*türü*': taşıma atama işleci örtük bir şekilde silindi olarak tanımlandı|
 |Derleyici Uyarısı (düzey 1 ve düzey 4) C5026|'*türü*': taşıma Oluşturucusu örtük bir şekilde silindi olarak tanımlandı|
 |Derleyici Uyarısı (düzey 1 ve düzey 4) C5027|'*türü*': taşıma atama işleci örtük bir şekilde silindi olarak tanımlandı|
-|Derleyici Uyarısı (düzey 1) C5028|'*adı*': hizalama önceki bildirimde belirtilen (*numarası*) belirtilmemiş|
+|Derleyici Uyarısı (düzey 1) C5028|'*adı*': Önceki bildirimde belirtilen hizalama (*numarası*) belirtilmemiş|
 |Derleyici Uyarısı (düzey 4) C5029|Standart olmayan uzantı kullanıldı: C++ hizalama öznitelikleri değişkenlere, veri üyelerine ve etiket türlerine uygulanır|
 |Derleyici Uyarısı (Düzey 3) C5030|öznitelik '*özniteliği*' tanınmıyor|
 |Derleyici Uyarısı (düzey 4) C5031|#pragma warning(pop): olası uyuşmazlık, farklı bir dosyada atılan uyarı durumu geri çağrılıyor|
@@ -244,4 +243,4 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (Düzey 2) C5043|'*belirtimi*': özel durum belirtimi, önceki bildirimle eşleşmiyor|
 |Derleyici Uyarısı (düzey 4) C5044|Komut satırı seçeneği bir bağımsız değişken *seçeneği* yolunu işaret '*yolu*' mevcut olmayan|
 |[C5045 uyarı derleyici](c5045.md)|Derleyici/qspectre anahtarı Bellek Yükü belirtilen için Spectre risk azaltma ekler|
-|[Derleyici Uyarısı (Düzey 2) C5046](c5046.md)|'*işlevi*': simge türü tanımlı değil iç bağlantı ile ilgili|
+|[Derleyici Uyarısı (Düzey 2) C5046](c5046.md)|'*işlevi*': İlgili türü iç bağlantı ile tanımlanmamış sembol|

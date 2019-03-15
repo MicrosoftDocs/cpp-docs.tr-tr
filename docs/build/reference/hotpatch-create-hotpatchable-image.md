@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /hotpatch compiler option [C++]
 - hotpatching
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
-ms.openlocfilehash: 8c3431067f04ff36c63143f7d0e7483efa5376ba
-ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
+ms.openlocfilehash: 8830b26b8fdfc3db2aa5fe31a52e6226fd554946
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51598801"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807487"
 ---
 # <a name="hotpatch-create-hotpatchable-image"></a>/hotpatch (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 
@@ -31,13 +31,13 @@ Görüntüyü Yeniden başlatmasız düzeltme için hazırlar.
 
 Zaman **/hotpatch** kullanılan bir derleme içinde derleyici Yeniden başlatmasız düzeltme için gerekli olan her işlevin ilk yönergesinin en az iki bayt olmasını sağlar.
 
-Kullandıktan sonra için bir resmi düzeltme eki eklenebilir hale getirme hazırlığını tamamlamak için **/hotpatch** derlemek için kullanmanız gerekir [/FUNCTIONPADMIN (düzeltme eki eklenebilen görüntü oluşturma)](../../build/reference/functionpadmin-create-hotpatchable-image.md) bağlamak için. Derleme ve görüntü cl.exe, bir çağrı kullanılarak bağlantı **/hotpatch** gelir **/functionpadmin**.
+Kullandıktan sonra için bir resmi düzeltme eki eklenebilir hale getirme hazırlığını tamamlamak için **/hotpatch** derlemek için kullanmanız gerekir [/FUNCTIONPADMIN (düzeltme eki eklenebilen görüntü oluşturma)](functionpadmin-create-hotpatchable-image.md) bağlamak için. Derleme ve görüntü cl.exe, bir çağrı kullanılarak bağlantı **/hotpatch** gelir **/functionpadmin**.
 
 Yönergeleri her zaman iki bayt olduğundan ARM mimarisi, daha büyük ve çünkü derleme her zaman kabul x64 gibi **/hotpatch** belirtilmiş belirtmek zorunda değilsiniz **/hotpatch** olduğunda Bu hedefler için derleme; Bununla birlikte, yine de kullanarak bağlamanız gerekir **/functionpadmin** kendileri için düzeltme eki eklenebilen görüntü oluşturma. **/Hotpatch** derleyici seçeneği yalnızca etkiler x86 derleme.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **C/C++** klasör.
 
@@ -49,7 +49,7 @@ Yönergeleri her zaman iki bayt olduğundan ARM mimarisi, daha büyük ve çünk
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

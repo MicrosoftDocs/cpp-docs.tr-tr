@@ -13,12 +13,12 @@ helpviewer_keywords:
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-ms.openlocfilehash: 1eeca5d5ddbb40e0439a1774392f3c3b53c3c90e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a75a9d143012dee7946591d708921d6734b2acda
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656241"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811881"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
 
@@ -41,14 +41,14 @@ Derleme işlemi sırasında Microsoft Gözat bilgi dosya Bakımı yardımcı pro
 
 Siz belirtmezseniz `filename`, kaynak dosyası olarak aynı temel adlı .sbr dosyası alır.
 
-**/FR** kullanım dışıdır; kullanın **/FR** yerine. Daha fazla bilgi için bkz: kullanım dışı ve kaldırıldı derleyici seçeneklerinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/FR** kullanım dışıdır; kullanın **/FR** yerine. Daha fazla bilgi için bkz: kullanım dışı ve kaldırıldı derleyici seçeneklerinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
 > [!NOTE]
 >  .Sbr uzantısı değiştirmeyin. BSCMAKE Ara dosyaları uzantıya sahip olmasını gerektirir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Gezinti bölmesinde **C/C++**, **göz atma bilgisi** özellik sayfası.
 
@@ -58,9 +58,9 @@ Siz belirtmezseniz `filename`, kaynak dosyası olarak aynı temel adlı .sbr dos
 
 - Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Yol Adını Belirtme](specifying-the-pathname.md)

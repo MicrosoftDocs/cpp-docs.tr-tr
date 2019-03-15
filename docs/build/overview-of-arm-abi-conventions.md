@@ -2,12 +2,12 @@
 title: ARM ABI kurallarına genel bakış
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-ms.openlocfilehash: d25cba2800348ca1ae45c5bb59163816a4eefa02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17f2598912879d0eb54fd189e1fae541ba2f874f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436029"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810464"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI kurallarına genel bakış
 
@@ -23,7 +23,7 @@ Tamsayı bölme desteği (UDIV/SDIV) önerilir ancak gerekli değildir. Yakalana
 
 ## <a name="endianness"></a>Endianness
 
-ARM üzerinde Windows endian modunda yürütülür. Visual C++ derleyicisi hem de Windows çalışma zamanı endian verileri her zaman bekler. ARM yönerge SETEND yönergesinde ayarlayın ancak geçerli endianness değiştirmek için bile kullanıcı modu kod mimari (ISA) sayesinde, bunun yapılması, bir uygulama için tehlikeli olduğundan bu nedenle önerilmez. Bir özel durum ise büyük endian modunda oluşturulan davranışı tahmin edilemez ve bir uygulama hatası kullanıcı modunda veya çekirdek modunda hata denetimi neden olabilir.
+ARM üzerinde Windows endian modunda yürütülür. MSVC derleyicisi hem de Windows çalışma zamanı endian verileri her zaman bekler. ARM yönerge SETEND yönergesinde ayarlayın ancak geçerli endianness değiştirmek için bile kullanıcı modu kod mimari (ISA) sayesinde, bunun yapılması, bir uygulama için tehlikeli olduğundan bu nedenle önerilmez. Bir özel durum ise büyük endian modunda oluşturulan davranışı tahmin edilemez ve bir uygulama hatası kullanıcı modunda veya çekirdek modunda hata denetimi neden olabilir.
 
 ## <a name="alignment"></a>Hizalama
 
@@ -55,10 +55,10 @@ Thumb-2 kodda BT yönergelerinin kullanımını etkinleştir, bu özel durumlar 
 
    |16-bit işlem kodları|örneği|Kısıtlamalar|
    |---------------------|-----------|------------------|
-   |MOV, MVN|Taşıma|RM! bilgisayarı, Rd =! = PC|
-   |LDR LDR [S] B, LDR [S] H|Bellekten yükleme|Ancak LDR değişmez değer formlar|
+   |MOV, MVN|Taşı|RM! bilgisayarı, Rd =! = PC|
+   |LDR, LDR[S]B, LDR[S]H|Bellekten yükleme|Ancak LDR değişmez değer formlar|
    |STR, STRB, STRH|Bellek Store||
-   |ADC, RSB, SBC, ALT EKLEYİN|Eklemek veya çıkartmak|Ancak değil Ekle/SUB SP, SP, imm7 formlar<br /><br /> RM! = PC, Rdn! = PC, Rdm! = PC|
+   |ADD, ADC, RSB, SBC, SUB|Eklemek veya çıkartmak|Ancak değil Ekle/SUB SP, SP, imm7 formlar<br /><br /> RM! = PC, Rdn! = PC, Rdm! = PC|
    |CMP, CMN|{1&gt;Karşılaştır&lt;1}|RM! = PC, Rn! = PC|
    |MUL|Çarp||
    |ASR, LSL, LSR, ROR|Bit kaydırma||
@@ -105,14 +105,14 @@ Windows Destek VFPv3 D32 eşişlemcisi olan ARM çeşitleri yalnızca destekler.
 |Tekler|Double değerleri|Quads|Geçici?|Rol|
 |-------------|-------------|-----------|---------------|----------|
 |S0-s3|D0 d1|q0|Volatile|Kayıt parametreleri, sonuç karalama|
-|s7 S4|d3 D2|S1|Volatile|Parametreler, karalama kaydetme|
-|S8 s11|D4 d5|S2|Volatile|Parametreler, karalama kaydetme|
+|s7 S4|d3 D2|q1|Volatile|Parametreler, karalama kaydetme|
+|S8 s11|D4 d5|q2|Volatile|Parametreler, karalama kaydetme|
 |s12 s15|D6 D7 hücresini|q3|Volatile|Parametreler, karalama kaydetme|
-|S16 s19|D8 d9|S4|Geçici olmayan||
-|S20 s23|D10 d11|S5|Geçici olmayan||
-|s24 s27|d12 d13|S6|Geçici olmayan||
-|s28 s31|d15 D14|S7|Geçici olmayan||
-||d16 d31|S8 S15|Volatile||
+|S16 s19|D8 d9|q4|Geçici olmayan||
+|S20 s23|D10 d11|q5|Geçici olmayan||
+|s24 s27|d12 d13|q6|Geçici olmayan||
+|s28 s31|d15 D14|q7|Geçici olmayan||
+||d16 d31|q8-q15|Volatile||
 
 Sonraki tabloda kayan nokta durumunu gösterir ve denetim (FPSCR) bit alanları kaydedin:
 
@@ -137,7 +137,7 @@ Sonraki tabloda kayan nokta durumunu gösterir ve denetim (FPSCR) bit alanları 
 
 Variadic olmayan işlevler için ARM ABI üzerinde Windows ARM parametre geçirme için kurallara — bu VFP ve Gelişmiş SIMD uzantıları içerir. Bu kuralları izleyin [ARM mimarisi için yordam çağrısı standart](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042c/IHI0042C_aapcs.pdf)VFP uzantısı olan birleştirilmiş. Göre varsayılan, ilk dört tamsayı bağımsız değişken ve sekiz kayan nokta veya vektör bağımsız değişkenleri yazmaçlara geçirilir ve ek bağımsız değişkenler yığına geçirilir. Bağımsız değişkenler kayıtları veya yığın için bu yordamı kullanarak atanır:
 
-### <a name="stage-a-initialization"></a>Y: başlatma aşaması
+### <a name="stage-a-initialization"></a>Aşama y: Başlatma
 
 Bağımsız değişken işleme başlamadan önce başlatılması tam bir kez gerçekleştirilir:
 
@@ -149,7 +149,7 @@ Bağımsız değişken işleme başlamadan önce başlatılması tam bir kez ger
 
 1. Bellekte bir sonuç döndüren bir işlev çağrılırsa r0 sonucu adresini yerleştirilir ve NCRN r1 için ayarlanır.
 
-### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>Aşama B: öncesi doldurma ve bağımsız değişkenlerin uzantısı
+### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>Aşama B: Önceden doldurma ve bağımsız değişkenlerin uzantısı
 
 Listedeki her bağımsız değişken için aşağıdaki listeden eşleşen ilk kural uygulanır:
 
@@ -159,7 +159,7 @@ Listedeki her bağımsız değişken için aşağıdaki listeden eşleşen ilk k
 
 1. Bağımsız değişken türünün ise, boyutu 4'ün en yakın katına yuvarlanır.
 
-### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>Aşama C: atama kaydeder ve yığın bağımsız değişken
+### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>Aşama C: Yazmaçlar ve yığın bağımsız değişken ataması
 
 Bağımsız değişken ayrılan kadar listedeki her bağımsız değişken için aşağıdaki kurallar sırayla uygulanır:
 
@@ -205,13 +205,13 @@ Listedeki en az bir değer 64-bit çift sözcük depolama gerektirmedikçe numar
 
 ## <a name="stack-walking"></a>Yığın
 
-Windows kod etkin çerçeve işaretçilerini ile derlenmiş ([/Oy (Çerçeve işaretçisini atlama)](../build/reference/oy-frame-pointer-omission.md)) hızlı yığın walking etkinleştirmek için. Genellikle, r11 kaydetme sonraki bağlantı noktalarını zincirini bir {r11, lr} önceki çerçeve işaretçisi yığını ve dönüş adresi belirtir çifti. Kodunuzu çerçeve işaretçilerini profil oluşturma ve izleme geliştirilmiş ayrıca etkinleştirmenizi öneririz.
+Windows kod etkin çerçeve işaretçilerini ile derlenmiş ([/Oy (Çerçeve işaretçisini atlama)](reference/oy-frame-pointer-omission.md)) hızlı yığın walking etkinleştirmek için. Genellikle, r11 kaydetme sonraki bağlantı noktalarını zincirini bir {r11, lr} önceki çerçeve işaretçisi yığını ve dönüş adresi belirtir çifti. Kodunuzu çerçeve işaretçilerini profil oluşturma ve izleme geliştirilmiş ayrıca etkinleştirmenizi öneririz.
 
 ## <a name="exception-unwinding"></a>Özel durumu geriye doğru izleme
 
 Sırasında özel durum işleme geriye doğru izleme yığın geriye doğru izleme kodları kullandığı etkinleştirilir. Geriye doğru izleme kodları şunlardır: yürütülebilir resmin sanal işlem bulunur bölümde depolanan bayt dizisi. Arayanın yığın çerçevesi için geriye doğru izleme hazırlanırken bir işlevin prolog etkilerini alınabilir, soyut bir şekilde işlev prolog ve Epilog kodu işlemi açıklanmaktadır.
 
-ARM EABI kullanan bir özel durumu geriye doğru izleme modeli geriye doğru izleme kodları belirtir. Ancak, bu belirtimi, işlemci işlevinin epilog ve prolog ortasında olduğu durumlarda işlemelidir Windows, geriye doğru izleme için yeterli değil. ARM özel durum verileri ve geriye doğru izleme Windows hakkında daha fazla bilgi için bkz [ARM özel durum işleme](../build/arm-exception-handling.md).
+ARM EABI kullanan bir özel durumu geriye doğru izleme modeli geriye doğru izleme kodları belirtir. Ancak, bu belirtimi, işlemci işlevinin epilog ve prolog ortasında olduğu durumlarda işlemelidir Windows, geriye doğru izleme için yeterli değil. ARM özel durum verileri ve geriye doğru izleme Windows hakkında daha fazla bilgi için bkz [ARM özel durum işleme](arm-exception-handling.md).
 
 Dinamik olarak üretilen kod yapılan çağrıda belirtilen dinamik işlevi tablolar'ı kullanarak açıklanan öneririz `RtlAddFunctionTable` ve İşlevler, oluşturulan kod içinde özel durum işleme katılabilmesi ilişkili.
 
@@ -223,5 +223,5 @@ Bir saat gibi doğru döngü sayacı sayacıdır; Bu nedenle, sayım sıklığı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM Özel Durum İşleme](../build/arm-exception-handling.md)
+[Genel Visual C++ ARM Geçiş Sorunları](common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM Özel Durum İşleme](arm-exception-handling.md)

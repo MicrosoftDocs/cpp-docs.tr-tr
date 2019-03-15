@@ -2,17 +2,16 @@
 title: Derleyici Uyarısı (düzey 1) C4556
 ms.date: 08/27/2018
 f1_keywords:
-- xml
 - C4556
 helpviewer_keywords:
 - C4556
 ms.assetid: e4c0e296-b747-4db1-9608-30b8b74feac2
-ms.openlocfilehash: 53261b97249340ce56ce6ae0f5cc0eab7e97a107
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c31602766261a8d6d0c4f0bb0a880ee34ee1ed45
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538495"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815412"
 ---
 # <a name="compiler-warning-level-1-c4556"></a>Derleyici Uyarısı (düzey 1) C4556
 

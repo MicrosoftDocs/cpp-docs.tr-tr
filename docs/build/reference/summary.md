@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /SUMMARY dumpbin option
 - SUMMARY dumpbin option
 ms.assetid: f33f244c-1f23-4e94-bd85-b26c97a19e6a
-ms.openlocfilehash: 2e4be42cda198f84fec46bd65d913236a2887577
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd9923e22b5cb11981a3037ae3f30ef541445e98
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593589"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812180"
 ---
 # <a name="summary"></a>/SUMMARY
 
@@ -25,8 +25,8 @@ ms.locfileid: "50593589"
 
 Bu seçenek, bölümlerin toplam boyutu da dahil olmak üzere, en az bilgi görüntüler. Diğer bir seçenek belirtilirse bu seçenek varsayılandır.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

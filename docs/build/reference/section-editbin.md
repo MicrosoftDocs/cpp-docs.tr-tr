@@ -9,12 +9,12 @@ helpviewer_keywords:
 - alignment characters in sections
 - /SECTION editbin option
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615
-ms.openlocfilehash: 23a7ab9efc96ec10f4ad14547b0c0a20f13ac014
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8bcc925b34118630c872a0147b93291626b7c19b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523311"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822437"
 ---
 # <a name="section-editbin"></a>/SECTION (EDITBIN)
 
@@ -60,6 +60,6 @@ Denetime *hizalama*, bir karakter belirtmek **A** hizalama boyutu bayt cinsinden
 
 Belirtin `attributes` ve *hizalama* hiçbir boşluk içeren bir dize olarak karakter. Karakterler büyük/küçük harfe duyarlı değildir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

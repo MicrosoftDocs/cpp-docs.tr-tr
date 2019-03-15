@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme'
+title: 'Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme'
 ms.date: 04/27/2016
 f1_keywords:
 - msbuild.cpp.howto.integratecustomtools
 helpviewer_keywords:
 - 'msbuild (c++), howto: integrate custom tools'
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-ms.openlocfilehash: 7041e6583ba1e2c7f035edcc72617ccdb8d5aa02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a959eddb36a2de90ebd5b5b1b9eb5e2f4e67c03a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633018"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810165"
 ---
-# <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme
+# <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl yapılır: Özel araçlarla proje özelliklerini tümleştirme
 
 Visual Studio için özel araç seçenekleri ekleyebilirsiniz **özellik sayfaları** arka plandaki XML şema dosyası oluşturarak penceresi.
 
@@ -37,6 +37,6 @@ Bu belgede, özel aracınızı özellikleri içerir ve böylece Visual Studio ba
 
 1. İçinde **Çözüm Gezgini**, bir projeye sağ tıklayın ve ardından **özellikleri**. İçinde **özellik sayfaları** pencerede sol bölmede, kural adıyla yeni bir düğüm olduğunu doğrulayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+[MSBuild komut satırında - C++](msbuild-visual-cpp.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-ms.openlocfilehash: d4de722ad33a9c9e5e7c37176bbe5d7031b68a39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 990c48a72c3f6017d893ddf9b46bcbb737bfb634
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450186"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820201"
 ---
 # <a name="fi-preprocess-output-file-name"></a>/Fi (Çıktı Dosyası Adını Önişle)
 
-Hangi çıkış dosyasının adını belirtir [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) derleyici seçeneği önceden işlenmiş çıktı yazar.
+Hangi çıkış dosyasının adını belirtir [/P (dosyaya ön işleme)](p-preprocess-to-a-file.md) derleyici seçeneği önceden işlenmiş çıktı yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,8 +46,8 @@ Aşağıdaki komut satırını PROGRAM.cpp önceden işler, yorumları korur, ek
 CL /P /FiMYPROCESS.I PROGRAM.CPP
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[/P (Dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md)<br/>
-[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[/P (Dosyaya Önişle)](p-preprocess-to-a-file.md)<br/>
+[Yol Adını Belirtme](specifying-the-pathname.md)

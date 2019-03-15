@@ -14,12 +14,12 @@ helpviewer_keywords:
 - GF compiler option [C++]
 - strings [C++], pooling
 ms.assetid: bb7b5d1c-8e1f-453b-9298-8fcebf37d16c
-ms.openlocfilehash: 7504c12584d931b0f39062f393765ad8124fc0dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f2bec446fcec522857b4c05a34311e6c26c9b75
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561568"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812323"
 ---
 # <a name="gf-eliminate-duplicate-strings"></a>/GF (Yinelenen Dizeleri Ele)
 
@@ -45,16 +45,16 @@ char *t = "This is a character buffer";
 ```
 
 > [!NOTE]
->  [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği, Düzenle ve devam et için kullanılan otomatik olarak ayarlar **/GF** seçeneği.
+>  [/Zi](z7-zi-zi-debug-information-format.md) seçeneği, Düzenle ve devam et için kullanılan otomatik olarak ayarlar **/GF** seçeneği.
 
 > [!NOTE]
->  **/GF** derleyici seçeneği her benzersiz dize için adreslenebilir bir bölüm oluşturur. Ve varsayılan olarak, bir nesne dosyası en çok 65.536 adreslenebilir bölüm içerebilir. Programınızı birden fazla 65.536 dizelerini içeriyorsa, [/bigobj](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md) derleyici seçeneği, daha fazla bölüm oluşturmak için.
+>  **/GF** derleyici seçeneği her benzersiz dize için adreslenebilir bir bölüm oluşturur. Ve varsayılan olarak, bir nesne dosyası en çok 65.536 adreslenebilir bölüm içerebilir. Programınızı birden fazla 65.536 dizelerini içeriyorsa, [/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md) derleyici seçeneği, daha fazla bölüm oluşturmak için.
 
-**/GF** içinde etkisi yoktur olan [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md) veya **/O2** kullanılır.
+**/GF** içinde etkisi yoktur olan [/O1](o1-o2-minimize-size-maximize-speed.md) veya **/O2** kullanılır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -66,7 +66,7 @@ char *t = "This is a character buffer";
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StringPooling%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

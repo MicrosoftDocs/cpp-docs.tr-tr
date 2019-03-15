@@ -3,12 +3,12 @@ title: / POGOSAFEMODE (iş parçacığı güvenli modda PGO çalıştırın)
 ms.date: 03/14/2018
 f1_keywords:
 - POGOSAFEMODE
-ms.openlocfilehash: f210884d693ef0d778943580b9c5a7b2ec2ea336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bbb328bf67d7823305a43f1d61252747cf5ea29e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544436"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821293"
 ---
 # <a name="pogosafemode-run-pgo-in-thread-safe-mode"></a>/ POGOSAFEMODE (iş parçacığı güvenli modda PGO çalıştırın)
 
@@ -26,11 +26,11 @@ Profil temelli iyileştirme (PGO) profil oluşturma aşamasında olası iki modu
 
 Varsayılan olarak, PGO profil oluşturma Hızlı modda çalışır. **/ POGOSAFEMODE** olduğundan yalnızca güvenli mod kullanmak isterseniz gereklidir.
 
-PGO profil oluşturmayı güvenli modda çalıştırmak için ya da kullanmalısınız **/genprofıle: tam** (tercih edilir), veya ortam değişkenini kullanmak [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md) veya bağlayıcı anahtarını **/POGOSAFEMODE**sistem bağlı olarak. X x64 profil oluşturma işlemi yapıyorsanız bilgisayarı bağlayıcı anahtarını kullanmanız gerekir. X x86 profil oluşturma işlemi yapıyorsanız bilgisayar, bağlayıcı anahtarını kullanarak olabilir veya PGO izleme işlemine başlamadan önce herhangi bir değere ortam değişkenini tanımlar.
+PGO profil oluşturmayı güvenli modda çalıştırmak için ya da kullanmalısınız **/genprofıle: tam** (tercih edilir), veya ortam değişkenini kullanmak [PogoSafeMode](../environment-variables-for-profile-guided-optimizations.md) veya bağlayıcı anahtarını **/POGOSAFEMODE**sistem bağlı olarak. X x64 profil oluşturma işlemi yapıyorsanız bilgisayarı bağlayıcı anahtarını kullanmanız gerekir. X x86 profil oluşturma işlemi yapıyorsanız bilgisayar, bağlayıcı anahtarını kullanarak olabilir veya PGO izleme işlemine başlamadan önce herhangi bir değere ortam değişkenini tanımlar.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
 
@@ -48,5 +48,5 @@ PGO profil oluşturmayı güvenli modda çalıştırmak için ya da kullanmalıs
 
 [/ GENPROFILE ve fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profil Temelli İyileştirmeler](../../build/reference/profile-guided-optimizations.md)<br/>
-[Profil Temelli İyileştirmeler için Ortam Değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profil Temelli İyileştirmeler](../profile-guided-optimizations.md)<br/>
+[Profil Temelli İyileştirmeler için Ortam Değişkenleri](../environment-variables-for-profile-guided-optimizations.md)<br/>

@@ -1,19 +1,15 @@
 ---
 title: CAtlServiceModuleT::ServiceMain işlevi
 ms.date: 11/04/2016
-f1_keywords:
-- ServiceMain
-- CServiceModule::ServiceMain
-- CServiceModule.ServiceMain
 helpviewer_keywords:
 - ServiceMain method
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
-ms.openlocfilehash: 32bdea1eb39c91ddb58def72bd16acc2f16ab936
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 81cd8fcbdf275063b243e215301eff504a2b5cc6
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295433"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811907"
 ---
 # <a name="catlservicemoduletservicemain-function"></a>CAtlServiceModuleT::ServiceMain işlevi
 

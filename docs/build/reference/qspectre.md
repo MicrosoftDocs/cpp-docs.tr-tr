@@ -5,12 +5,12 @@ f1_keywords:
 - /Qspectre
 helpviewer_keywords:
 - /Qspectre
-ms.openlocfilehash: af04a905fdb3b509a90249c6d55a28ccdaa39318
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42adff6564dc1c2ef47abffe9f9e6e630279ea7d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507321"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812466"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -28,7 +28,7 @@ Derleyici belirli Spectre değişkeni 1 güvenlik açıklarını gidermek için 
 
 İlk sürümde, **/qspectre** seçeneği yalnızca üzerinde çalıştığınız en iyi duruma getirilmiş kod. Visual Studio 2017 sürüm 15.7 ve üzeri, **/qspectre** seçeneği, tüm iyileştirme düzeylerinde desteklenir.
 
-Microsoft Visual C++ kitaplıkları da Spectre riskini azaltma sürümlerle kullanılabilir. Visual Studio 2017 için Spectre azaltılabilir kitaplıkları Visual Studio Yükleyicisi'nde indirilebilir. İçinde bulundukları **tek tek bileşenler** sekmesinde altında **derleyiciler, derleme araçları ve çalışma zamanları**, ve "Spectre için kitaplıklar" adı. DLL hem statik çalışma zamanı kitaplıkları ile etkinleştirilen risk azaltma Visual C++ çalışma zamanı bir alt kümesi için kullanılabilir: VC ++ başlatma kodu, vcruntime140 msvcp140 concrt140 ve vcamp140. DLL'leri yalnızca yerel uygulama dağıtımı için desteklenir; Visual C++ 2017 çalışma zamanı kitaplıklarının yeniden dağıtılabilir içeriğini değiştirilmemiş. MFC ve ATL, bulunan için Spectre azaltılabilir kitaplıkları da yükleyebilirsiniz **tek tek bileşenler** sekmesinde altında **SDK'lar, kitaplıklar ve çerçeveler**.
+Microsoft Visual C++ kitaplıkları da Spectre riskini azaltma sürümlerle kullanılabilir. Visual Studio 2017 için Spectre azaltılabilir kitaplıkları Visual Studio Yükleyicisi'nde indirilebilir. İçinde bulundukları **tek tek bileşenler** sekmesinde altında **derleyiciler, derleme araçları ve çalışma zamanları**, ve "Spectre için kitaplıklar" adı. DLL hem statik çalışma zamanı kitaplıkları ile etkinleştirilen risk azaltma Visual C++ çalışma zamanı bir alt kümesi için kullanılabilir: VC ++ başlatma kodu, vcruntime140, msvcp140, concrt140 ve vcamp140. DLL'leri yalnızca yerel uygulama dağıtımı için desteklenir; Visual C++ 2017 çalışma zamanı kitaplıklarının yeniden dağıtılabilir içeriğini değiştirilmemiş. MFC ve ATL, bulunan için Spectre azaltılabilir kitaplıkları da yükleyebilirsiniz **tek tek bileşenler** sekmesinde altında **SDK'lar, kitaplıklar ve çerçeveler**.
 
 ### <a name="applicability"></a>Uygulanabilirlik
 
@@ -36,7 +36,7 @@ Kodunuzu bir güven sınırı aştığında veri çalışır sonra kullanmanız�
 
 ### <a name="availability"></a>Kullanılabilirlik
 
-**/Qspectre** seçenek, Visual Studio 2017 sürüm 15.5.5 ve ya da 23 Ocak 2018'den sonra yapılan tüm güncelleştirmelerin Microsoft Visual C++ Derleyicileri (MSVC) için kullanılabilir. Visual Studio yükleyicisi, derleyici güncelleştirilecek ve tek tek bileşenleri olarak Spectre azaltılabilir kitaplıklarını yüklemek için kullanın. **/Qspectre** seçenek, ayrıca bir düzeltme eki Visual Studio 2015 güncelleştirme 3'te kullanılabilir. Daha fazla bilgi için [KB 4338871](https://support.microsoft.com/help/4338871).
+**/Qspectre** seçenek, Visual Studio 2017 sürüm 15.5.5 ve ya da 23 Ocak 2018'den sonra yapılan tüm güncelleştirmelerin Microsoft MSVC derleyicileri (MSVC) için kullanılabilir. Visual Studio yükleyicisi, derleyici güncelleştirilecek ve tek tek bileşenleri olarak Spectre azaltılabilir kitaplıklarını yüklemek için kullanın. **/Qspectre** seçenek, ayrıca bir düzeltme eki Visual Studio 2015 güncelleştirme 3'te kullanılabilir. Daha fazla bilgi için [KB 4338871](https://support.microsoft.com/help/4338871).
 
 Visual Studio 2017 sürüm 15.5 ve tüm önizlemeleri, Visual Studio 2017 sürüm 15.6 belgelenmemiş bir seçenek dahil tüm sürümlerini **/d2guardspecload**, yani ilk davranışını eşdeğer   **/qspectre**. Kullanabileceğiniz **/d2guardspecload** derleyicisinin bu sürümü kodunuzda aynı risk azaltma işlemleri uygulamak için. Yapınızı kullanmak için lütfen güncelleştirme **/qspectre** seçeneği; destekleyen kapsayıcılar içinde **/qspectre** seçeneği derleyicinin sonraki sürümlerde yeni risk azaltma işlemleri de destekleyebilir.
 
@@ -58,7 +58,7 @@ Performans etkisini **/qspectre** birkaç çok büyük kod tabanlarında göz ar
 - İçin Visual C++ ATL \[(x86/x64) | ARM | ARM64] Spectre azaltmaları ile
 - İçin Visual C++ MFC \[x86/x64 | ARM | ARM64] Spectre azaltmaları ile
 
-Kullanarak, kodunuzu derlemek, **/qspectre** ve bu kitaplıklar değildir yüklü, yapı sistemi raporları **uyarı MSB8038: Spectre riskini azaltma etkinleştirildi, ancak Spectre azaltılabilir kitaplıklar bulunamadı**. MFC veya ATL kodunuzu derlemek başarısız olur ve bağlayıcı gibi bir hata bildiriyor **LNK1104 önemli hatası: 'oldnames.lib' dosyası açılamıyor**, bu eksik kitaplıklar neden olabilir.
+Kodunuzu kullanarak derleme yaparsanız **/qspectre** ve bu kitaplıklar yüklüyse, yapı sistemi raporları **MSB8038 Uyarı: Spectre riskini azaltma etkinleştirildi, ancak Spectre azaltılabilir kitaplıklar bulunamadı**. MFC veya ATL kodunuzu derlemek başarısız olur ve bağlayıcı gibi bir hata bildiriyor **LNK1104 önemli hatası: 'oldnames.lib' dosyası açılamıyor**, bu eksik kitaplıklar neden olabilir.
 
 ### <a name="additional-information"></a>Ek bilgiler
 
@@ -66,7 +66,7 @@ Daha fazla ayrıntı için lütfen resmi bakın [kurgusal yürütme yan kanal g�
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -78,6 +78,6 @@ Daha fazla ayrıntı için lütfen resmi bakın [kurgusal yürütme yan kanal g�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

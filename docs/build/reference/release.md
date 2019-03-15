@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /RELEASE editbin option
 - checksum setting
 ms.assetid: 183422eb-6b3c-474e-9589-04a0e69dec5d
-ms.openlocfilehash: 1fe3688de14b61ed840c29a868897a6f97ddc485
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0437e67a977512cb0ba6f327ad3d1bda0c147485
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677259"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822385"
 ---
 # <a name="release"></a>/RELEASE
 
@@ -28,6 +28,6 @@ Bu seçenek, bir yürütülebilir dosya üst bilgisinde sağlama toplamını aya
 
 İşletim sistemi sağlama toplamı için cihaz sürücüleri gerektirir. Yayın sürümleri, aygıt sürücülerinin, gelecekteki işletim sistemleriyle uyumluluğu sağlamak için sağlama toplamını Ayarla önerilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

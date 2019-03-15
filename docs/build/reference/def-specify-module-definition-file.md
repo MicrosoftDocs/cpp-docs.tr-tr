@@ -11,12 +11,12 @@ helpviewer_keywords:
 - module definition files
 - /DEF linker option
 ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
-ms.openlocfilehash: 607af17a60612f69bb24708179bb453409098bde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c08412fb50835485e7941b2bb1db088943387b71
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654759"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807448"
 ---
 # <a name="def-specify-module-definition-file"></a>/DEF (Modül Tanım Dosyasını Belirt)
 
@@ -31,11 +31,11 @@ Modül tanım dosyasını (.def) bağlayıcıya geçirilecek adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ DEF seçeneği modül tanım dosyasını (.def) bağlayıcıya iletir. BAĞLANTI için yalnızca bir .def dosyası belirtilebilir. .Def dosyaları hakkında daha fazla ayrıntı için bkz: [modül-tanımlama dosyaları](../../build/reference/module-definition-dot-def-files.md).
+/ DEF seçeneği modül tanım dosyasını (.def) bağlayıcıya iletir. BAĞLANTI için yalnızca bir .def dosyası belirtilebilir. .Def dosyaları hakkında daha fazla ayrıntı için bkz: [modül-tanımlama dosyaları](module-definition-dot-def-files.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -49,7 +49,7 @@ Geliştirme ortamında bir .def dosyası belirtmek için birlikte diğer dosyala
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ModuleDefinitionFile%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

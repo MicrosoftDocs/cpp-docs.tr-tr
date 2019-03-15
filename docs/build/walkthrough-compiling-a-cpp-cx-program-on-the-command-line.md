@@ -1,15 +1,15 @@
 ---
-title: 'İzlenecek Yol: Komut Satırında C++/CX Programı Derleme'
+title: 'İzlenecek yol: Derleme C + +/ CX programı komut satırında'
 ms.date: 09/24/2018
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 6acfa707ac64a647e838fd1dbcd5564c79faa1a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad718a2eb876430d7721d0cd20cfd5b952750f8b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515147"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809515"
 ---
-# <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
+# <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek yol: Derleme C + +/ CX programı komut satırında
 
 Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C + +/ CX için evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü uygulamaları oluşturmak için. Daha fazla bilgi için [bir tur, c + +/ CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).
 
@@ -24,11 +24,11 @@ C++ dilinin temellerini anlamanız.
 
 ## <a name="compiling-a-ccx-program"></a>Derleme C + +/ CX programı
 
-Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](../build/reference/zw-windows-runtime-compilation.md) derleyici seçeneği. Visual C++ derleyicisi, Windows çalışma zamanını hedefleyen ve gerekli kitaplıklara bağlantılar bir .exe dosyası oluşturur.
+Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](reference/zw-windows-runtime-compilation.md) derleyici seçeneği. MSVC derleyicisi, Windows çalışma zamanını hedefleyen ve gerekli kitaplıklara bağlantılar bir .exe dosyası oluşturur.
 
 #### <a name="to-compile-a-ccx-application-on-the-command-line"></a>Derlenecek C + +/ CX uygulama komut satırında
 
-1. Açık bir **Geliştirici komut istemi** penceresi. (Üzerinde **Başlat** penceresini açık **uygulamaları**. Açık **Visual Studio Araçları** klasörü altında Visual Studio sürümünüz ve ardından **Geliştirici komut istemi** kısayol.) Bir geliştirici komut istemi penceresi açmak hakkında daha fazla bilgi için bkz. [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md).
+1. Açık bir **Geliştirici komut istemi** penceresi. (Üzerinde **Başlat** penceresini açık **uygulamaları**. Açık **Visual Studio Araçları** klasörü altında Visual Studio sürümünüz ve ardından **Geliştirici komut istemi** kısayol.) Bir geliştirici komut istemi penceresi açmak hakkında daha fazla bilgi için bkz. [komut satırından MSVC araç takımı kullanın](building-on-the-command-line.md).
 
    Yönetici kimlik bilgileri başarıyla bilgisayarın işletim sistemi ve yapılandırmasına bağlı olarak Kodu derlemek için gerekebilir. Komut İstemi penceresini yönetici olarak çalıştırmak için kısayol menüsünü açın **Geliştirici komut istemi** seçip **yönetici olarak çalıştır**.
 
@@ -51,7 +51,7 @@ Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](../build/reference
 
    Windows çalışma zamanı kullanan bir Visual C++ kaynak dosyasını, oluşturduğunuz [Platform ad alanı](../cppcx/platform-namespace-c-cx.md) ad alanı.
 
-1. Komut isteminde girin **cl/ehsc /ZW basiccx.cpp/Link/Subsystem: Console**. Cl.exe derleyicisi, kaynak kodunu bir .obj dosyasına derler ve basiccx.exe adlı yürütülebilir bir program oluşturmak için bağlayıcı çalıştırır. ( [/Ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/link](../build/reference/link-pass-options-to-linker.md) bayrağı, bir konsol uygulaması belirtir.)
+1. Komut isteminde girin **cl/ehsc /ZW basiccx.cpp/Link/Subsystem: Console**. Cl.exe derleyicisi, kaynak kodunu bir .obj dosyasına derler ve basiccx.exe adlı yürütülebilir bir program oluşturmak için bağlayıcı çalıştırır. ( [/Ehsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/link](reference/link-pass-options-to-linker.md) bayrağı, bir konsol uygulaması belirtir.)
 
 1. Komut isteminde basiccx.exe programı çalıştırmak için girin **basiccx**.
 
@@ -61,8 +61,7 @@ Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](../build/reference
     This is a C++/CX program.
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>
-[Derleyici Seçenekleri](../build/reference/compiler-options.md)
+[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)<br/>
+[MSVC derleyici seçenekleri](reference/compiler-options.md)

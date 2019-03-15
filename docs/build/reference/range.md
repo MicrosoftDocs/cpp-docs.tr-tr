@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /RANGE dumpbin option
 - -RANGE dumpbin option
 ms.assetid: 7eeba266-32be-49cc-a350-96bdf541f98a
-ms.openlocfilehash: d664e9d08a21427f2e849638e39b01450b8b301c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c631057e47e1a52a58d2b1304133dfdfc008ae14
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642015"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810971"
 ---
 # <a name="range"></a>/RANGE
 
@@ -44,6 +44,6 @@ Bu örnekte, **/aralığı** görüntülenme durumunu değiştirmek için kullan
 dumpbin /disasm /range:4219334,0x004061CD t.exe
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

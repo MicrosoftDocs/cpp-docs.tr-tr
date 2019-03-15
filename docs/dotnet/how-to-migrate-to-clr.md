@@ -10,12 +10,12 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 02e678f98773f9ae7bb4f611210329a7a1116f17
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 8c4827891799d2c76a344e4c6da8f3d96333826e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749120"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816041"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: / CLR'ye geçiş
 
@@ -98,7 +98,7 @@ Bu adım, derleme görevleri dosyalarını kullanan projeler için farklı etkil
 **/ CLR** yönergelerini takip ederek geliştirme ortamında seçilebilir [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md). Daha önce belirtildiği gibi bu adımı çakışan proje ayarları devre dışı bırakır.
 
 > [!NOTE]
->  Yönetilen kitaplık veya web hizmeti projesi Visual C++ 2003'ten yükseltme yaparken **/Zl** eklenen derleyici seçeneği olacak **komut satırı** özellik sayfası. Bu, LNK2001 neden olur. Kaldırma **/Zl** gelen **komut satırı** çözmek için özellik sayfası. Bkz: [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) ve [Working with Project Properties](../ide/working-with-project-properties.md) daha fazla bilgi için. Veya, msvcrt.lib ve msvcmrt.lib bağlayıcıya ait ekleme **ek bağımlılıklar** özelliği.
+>  Yönetilen kitaplık veya web hizmeti projesi Visual C++ 2003'ten yükseltme yaparken **/Zl** eklenen derleyici seçeneği olacak **komut satırı** özellik sayfası. Bu, LNK2001 neden olur. Kaldırma **/Zl** gelen **komut satırı** çözmek için özellik sayfası. Bkz: [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) ve [derleyici ayarlayın ve derleme özellikleri](../build/working-with-project-properties.md) daha fazla bilgi için. Veya, msvcrt.lib ve msvcmrt.lib bağlayıcıya ait ekleme **ek bağımlılıklar** özelliği.
 
 Derleme görevleri dosyası ile oluşturulan projeleri için uyumlu derleyici seçenekleri el ile bir kez devre dışı bırakılmalıdır **/CLR** eklenir. Bkz: /[/CLR kısıtlamalar](../build/reference/clr-restrictions.md) ile uyumlu derleyici seçenekleri hakkında bilgi için **/CLR**.
 

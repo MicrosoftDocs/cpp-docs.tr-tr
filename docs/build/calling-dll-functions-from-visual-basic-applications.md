@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __stdcall keyword [C++]
 - DLL functions [C++], calling
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-ms.openlocfilehash: 504bb2fbb6dcdf624f7e6b380cd895e20580824b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e4f1a538da2394c6cead6ea011faf126b022a3f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521222"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814975"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic Uygulamasından DLL İşlevi Çağırma
 
@@ -33,7 +33,7 @@ int __stdcall func (int a, double b)
 
 C çağırma kuralı (`__cdecl`) adı olarak düzenler `_func`.
 
-Düzenlenmiş adı almak için kullanın [/MAP](../build/reference/map-generate-mapfile.md). Kullanım **__declspec(dllexport)** şunları yapar:
+Düzenlenmiş adı almak için kullanın [/MAP](reference/map-generate-mapfile.md). Kullanım **__declspec(dllexport)** şunları yapar:
 
 - İşlev C çağırma kuralı ile dışarı aktarılıyorsa (`__cdecl`), başındaki altçizgiyi kaldırır ( **\_** ) adı ne zaman aktarılır.
 
@@ -58,18 +58,18 @@ Visual Basic'te yazılan programlar tarafından çağrılacak dll dosyaları iç
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+- [DLL'den Dışarı Aktarma](exporting-from-a-dll.md)
 
-- [Kullanarak bir DLL'nin dışa aktarma. DEF dosyaları](../build/exporting-from-a-dll-using-def-files.md)
+- [Kullanarak bir DLL'nin dışa aktarma. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışarı aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışarı aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [Düzenlenmiş adlar](../build/reference/decorated-names.md)
+- [Düzenlenmiş adlar](reference/decorated-names.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

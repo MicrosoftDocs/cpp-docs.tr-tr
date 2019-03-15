@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -RAWDATA dumpbin option
 - /RAWDATA dumpbin option
 ms.assetid: 41cba845-5e1f-415e-9fe4-604a52235983
-ms.openlocfilehash: 91fa1e26ca159f23c848efc6bf46afdea2a8bc52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02af8df04d80c20c5d7629b51abab6295a21f5e5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621487"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816470"
 ---
 # <a name="rawdata"></a>/RAWDATA
 
@@ -35,8 +35,8 @@ Bu seçenek, dosyada her bölümün ham içeriği görüntüler. Bağımsız de�
 |YOK|Ham verileri bastırılır. Bu bağımsız değişken çıktısını denetlemek yararlıdır/ALL.|
 |*Sayı*|Görüntülenen satır tutan bir genişliğe ayarlanır `number` satır başına değeri.|
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

@@ -1,22 +1,18 @@
 ---
 title: CComObject, CComAggObject ve CComPolyObject uygulama
 ms.date: 11/04/2016
-f1_keywords:
-- CComPolyObject
-- CComAggObject
-- CComObject
 helpviewer_keywords:
 - CComPolyObject class, implementing
 - CreateInstance method
 - CComAggObject class
 - CComObject class, implementing
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
-ms.openlocfilehash: b9aa3cc489260aecfa529dff5f7ed7eb19cf3151
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e2413c8fb9f5722f0245883c947067387838e57f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295220"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808319"
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject ve CComPolyObject uygulama
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-ms.openlocfilehash: 03bbe3d9da0530d4fe3c540d46d1a597fbe9dd2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea977020286d720ed3a6b1b13bf8ff8f5c85e5b2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549311"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822567"
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 
@@ -22,7 +22,7 @@ ms.locfileid: "50549311"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ZC:Auto**[**-**]
+> **/Zc:auto**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -32,7 +32,7 @@ Derleyici, uygun bir tanılama iletisi sorunları kullanımınız `auto` anahtar
 
 ### <a name="to-set-this-compiler-option-in-visual-studio"></a>Bu derleyici seçeneğini Visual Studio'da ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -40,5 +40,5 @@ Derleyici, uygun bir tanılama iletisi sorunları kullanımınız `auto` anahtar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>
 [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

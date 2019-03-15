@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -LOADCONFIG dumpbin option
 - /LOADCONFIG dumpbin option
 ms.assetid: 24667afe-9bee-4f6e-ae72-f534c0050428
-ms.openlocfilehash: 602336f96df4802e8a5928e5d506d26db103cfe6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 689fd64e3d13cd609f709a3e4d3e9035ca711274
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556527"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813857"
 ---
 # <a name="loadconfig"></a>/LOADCONFIG
 
@@ -25,8 +25,8 @@ ms.locfileid: "50556527"
 
 Bu seçenek, Windows NT yükleyicisi tarafından kullanıldığı ve WINNT içinde tanımlanan bir isteğe bağlı yapısı IMAGE_LOAD_CONFIG_DIRECTORY yapısı dökümünü yapar. H
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

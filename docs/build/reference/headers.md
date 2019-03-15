@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -HEADERS dumpbin option
 - /HEADERS dumpbin option
 ms.assetid: 24d9a770-d44e-48b6-b744-143e4fff7748
-ms.openlocfilehash: 627dbd5f8467bd76871c82f41b28f0f597c0068a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a80044b96a0e0d73e0e25435a292a786de81531
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645009"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817939"
 ---
 # <a name="headers"></a>/HEADERS
 
@@ -25,8 +25,8 @@ ms.locfileid: "50645009"
 
 Bu seçenek, dosya üst bilgisi ve her bölüm için bir başlık görüntüler. Bir kitaplığıyla kullanılırsa, her üye nesne için üst bilgi görüntüler.
 
-Yalnızca **OPTIONAL** DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca **OPTIONAL** DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

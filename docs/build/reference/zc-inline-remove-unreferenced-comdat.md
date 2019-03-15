@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 - /Zc:inline
 ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
-ms.openlocfilehash: 6855773c6ec807a7488fa5604ddee7fd43983135
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06bdb3300aae88c6c4c8f7e66af658f47548ac5a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441242"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820526"
 ---
 # <a name="zcinline-remove-unreferenced-comdat"></a>/Zc:inline (Başvurulmayan COMDAT'ı kaldırma)
 
@@ -23,11 +23,11 @@ Başvurulmayan işlevleri kaldırır veya comdat'ları veya yalnızca iç bağla
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ ZC: inline**[**-**]
+> **/Zc:inline**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **/ZC: inline** belirtilirse, derleyici sembol bilgilerini başvurulmayan COMDAT işlevleri veya veri veya işlevler veya yalnızca iç bağlantıya sahip veri ktıları. Bu iyileştirme, sürüm yapılarında bağlayıcı tarafından gerçekleştirilen işin bir kısmını basitleştirir veya bağlayıcı seçeneği [/OPT: ref](../../build/reference/opt-optimizations.md) belirtilir. Derleyici bu en iyi duruma getirme gerçekleştirdiğinde, önemli ölçüde .obj dosya boyutunu küçültmek ve bağlayıcı hızını artırın. İyileştirmeleri devre dışı bırakıldığında Bu derleyici seçeneğini etkin değil ([/Od](../../build/reference/od-disable-debug.md)) veya [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) belirtilir.
+Zaman **/ZC: inline** belirtilirse, derleyici sembol bilgilerini başvurulmayan COMDAT işlevleri veya veri veya işlevler veya yalnızca iç bağlantıya sahip veri ktıları. Bu iyileştirme, sürüm yapılarında bağlayıcı tarafından gerçekleştirilen işin bir kısmını basitleştirir veya bağlayıcı seçeneği [/OPT: ref](opt-optimizations.md) belirtilir. Derleyici bu en iyi duruma getirme gerçekleştirdiğinde, önemli ölçüde .obj dosya boyutunu küçültmek ve bağlayıcı hızını artırın. İyileştirmeleri devre dışı bırakıldığında Bu derleyici seçeneğini etkin değil ([/Od](od-disable-debug.md)) veya [/GL (bütün Program iyileştirmesi)](gl-whole-program-optimization.md) belirtilir.
 
 Varsayılan olarak, bu seçenek kapalıdır (**/Zc:inline-**). [/ Permissive-](permissive-standards-conformance.md) seçeneği sağlamaz **/ZC: inline**.
 
@@ -123,7 +123,7 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **dil** özellik sayfası.
 
@@ -131,4 +131,4 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>

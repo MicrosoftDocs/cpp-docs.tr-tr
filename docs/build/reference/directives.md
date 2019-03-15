@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DIRECTIVES dumpbin option
 - -DIRECTIVES dumpbin option
 ms.assetid: cb85d679-6d20-4244-ba0b-6f495228e970
-ms.openlocfilehash: cb87e04e1732f1603ed4dc606ffb33cabc587a28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df25ca2c57cd15883b8ba1a9e2254b57a2c24a5d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610671"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817575"
 ---
 # <a name="directives"></a>/DIRECTIVES
 
@@ -25,8 +25,8 @@ ms.locfileid: "50610671"
 
 Bu seçenek, bir görüntü derleyicinin ürettiği .drective bölümünü dökümünü yapar.
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

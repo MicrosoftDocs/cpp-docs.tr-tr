@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme'
+title: 'Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme'
 ms.date: 11/04/2016
 f1_keywords:
 - msbuild.cpp.howto.addcustombuildtools
 helpviewer_keywords:
 - 'msbuild (c++), howto: add custom build tools'
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
-ms.openlocfilehash: 48923c997c881e8786a8c20b00077161cf470195
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05f160e650c0dd717d7ce0f29259f866d751fdba
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543474"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815274"
 ---
-# <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme
+# <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme
 
 Özel derleme aracı belirli bir dosya ile ilişkili kullanıcı tanımlı, komut satırı bir araçtır.
 
@@ -48,8 +48,8 @@ Ne zaman özel derleme aracı yürütür belirtmek için aşağıdakilerden biri
     </PropertyGroup>
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
-[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>
-[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)
+[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[Nasıl yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](how-to-use-build-events-in-msbuild-projects.md)<br/>
+[Nasıl yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](how-to-add-a-custom-build-step-to-msbuild-projects.md)
