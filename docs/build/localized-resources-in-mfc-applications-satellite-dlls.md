@@ -1,5 +1,5 @@
 ---
-title: "MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri"
+title: "MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multiple language support [C++]
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - resource-only DLLs [C++], MFC applications
 - satellite DLLs [C++]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-ms.openlocfilehash: e9f9b751da6339cbe8f352bdb7eee4b7af2c359b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c593d0bae6fc23cfd765116c44b07caa2a6d8ccf
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658009"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821332"
 ---
-# <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri
+# <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri
 
-MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, çoklu dillerde yerelleşmiş uygulamalar oluşturmaya yardım eden bir özellik için gelişmiş destek sağlar. Bir uydu DLL bir [yalnızca kaynak DLL](../build/creating-a-resource-only-dll.md) uygulama için belirli bir dil için yerelleştirilmiş kaynaklar içerir. Uygulama çalışmaya başladığında, MFC, ortamınız için en uygun yerelleştirilmiş kaynak otomatik olarak yükler. Örneğin, iki Uydu DLL'leri, Fransız bir çeviri kaynaklarınızı ve Almanca çevirisini içeren diğer içeren ile İngilizce dil kaynakları ile bir uygulama olabilir. Uygulamayı bir İngilizce sistemde çalıştırdığınızda, İngilizce kaynak kullanır. Fransız bir sistemde, Fransızca kaynakları kullanır; Almanca bir sistemde, Alman kaynakları kullanır.
+MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, çoklu dillerde yerelleşmiş uygulamalar oluşturmaya yardım eden bir özellik için gelişmiş destek sağlar. Bir uydu DLL bir [yalnızca kaynak DLL](creating-a-resource-only-dll.md) uygulama için belirli bir dil için yerelleştirilmiş kaynaklar içerir. Uygulama çalışmaya başladığında, MFC, ortamınız için en uygun yerelleştirilmiş kaynak otomatik olarak yükler. Örneğin, iki Uydu DLL'leri, Fransız bir çeviri kaynaklarınızı ve Almanca çevirisini içeren diğer içeren ile İngilizce dil kaynakları ile bir uygulama olabilir. Uygulamayı bir İngilizce sistemde çalıştırdığınızda, İngilizce kaynak kullanır. Fransız bir sistemde, Fransızca kaynakları kullanır; Almanca bir sistemde, Alman kaynakları kullanır.
 
 Bir MFC uygulamasında, bir uydu DLL yüklemeyi dener yerelleştirilmiş kaynakları desteklemek için kaynakları içeren belirli bir dil için yerelleştirilmiş. Uydu DLL'leri adlı *ApplicationNameXXX*.dll, burada *ApplicationName* .exe veya .dll, MFC kullanarak adıdır ve *XXX* üç harfli dil kodu Kaynakları (örneğin, 'Trk' veya 'DEU').
 
@@ -51,7 +51,7 @@ MFC herhangi bir Uydu DLL'leri bulamazsa, hangi kaynak uygulama içinde yer alan
 
 Bu DLL'leri hiçbiri bulunursa, MFC LangExample.exe'deki kaynakları kullanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
-[TN057: MFC Bileşenlerini Yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)<br/>
+[TN057: MFC bileşenlerini yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)
