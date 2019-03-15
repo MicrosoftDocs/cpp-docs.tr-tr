@@ -4,12 +4,12 @@ ms.date: 11/26/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-ms.openlocfilehash: 49ac57f81ef07eb2a9c1e11280e160f0c48fce73
-ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
+ms.openlocfilehash: 0618b796d492395c3e0e5413047ac0260082baff
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389948"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814208"
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/sdl (Ek Güvenlik Denetimlerini Etkinleştir)
 
@@ -23,7 +23,7 @@ ms.locfileid: "52389948"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ SDL** şunun tarafından sağlanan temel güvenlik denetimleri üst kümesi sağlayan [/GS](../../build/reference/gs-buffer-security-check.md) ve geçersiz kılmaları **/GS-**. Varsayılan olarak, **/SDL** kapalıdır. **Değerlendirme** ek güvenlik denetimlerini devre dışı bırakır.
+**/ SDL** şunun tarafından sağlanan temel güvenlik denetimleri üst kümesi sağlayan [/GS](gs-buffer-security-check.md) ve geçersiz kılmaları **/GS-**. Varsayılan olarak, **/SDL** kapalıdır. **Değerlendirme** ek güvenlik denetimlerini devre dışı bırakır.
 
 ## <a name="compile-time-checks"></a>Derleme zamanı denetimleri
 
@@ -67,13 +67,13 @@ Daha fazla bilgi için [uyarıları, / SDL ve değişken başlatılmamış algı
 
 #### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **C/C++** klasör.
 
 1. Üzerinde **genel** sayfasında, ilgili seçeneği seçin **SDL denetimleri** aşağı açılan listesi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

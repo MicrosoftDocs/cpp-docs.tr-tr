@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Single Inheritance compiler option
 - -vmv compiler option [C++]
 ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae
-ms.openlocfilehash: 4dd7b47245e3359bbc938578f2bcd07b8b295909
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a46cecdbf96ad891ce218df4769a60590e562a9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578444"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810048"
 ---
 # <a name="vmm-vms-vmv-general-purpose-representation"></a>/vmm, /vms, /vmv (Genel Amaçlı Temsil)
 
-Kullanılabilir [/vmb, / vmg (temsil yöntemi)](../../build/reference/vmb-vmg-representation-method.md) olarak seçilen [temsil yöntemi](../../build/reference/vmb-vmg-representation-method.md). Bu seçenekler, henüz karşılaştı sınıf tanımının devralma modeli belirtin.
+Kullanılabilir [/vmb, / vmg (temsil yöntemi)](vmb-vmg-representation-method.md) olarak seçilen [temsil yöntemi](vmb-vmg-representation-method.md). Bu seçenekler, henüz karşılaştı sınıf tanımının devralma modeli belirtin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,7 +52,7 @@ Bu devralma modeli seçeneklerden birini belirttiğinizde, bu modelin tüm işar
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -64,8 +64,8 @@ Bu devralma modeli seçeneklerden birini belirttiğinizde, bu modelin tüm işar
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/vmb, /vmg (Temsil Yöntemi)](../../build/reference/vmb-vmg-representation-method.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/vmb, /vmg (Temsil Yöntemi)](vmb-vmg-representation-method.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

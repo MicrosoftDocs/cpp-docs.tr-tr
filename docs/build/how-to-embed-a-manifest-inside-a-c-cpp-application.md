@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma'
+title: 'Nasıl yapılır: C/C++ uygulamasına bildirim katıştırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: c3557d22f51207687c6c0adde80b4cd5b3293afd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 332d6d75080be3fdde6b8238ab79b8e5b1d1121e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624881"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809788"
 ---
-# <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma
+# <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl yapılır: C/C++ uygulamasına bildirim katıştırma
 
-C/C++ uygulamasına (veya kitaplık) sahip olduğundan bu doğru çalışma zamanı davranışı Çoğu senaryoda garanti eder içinde son ikili dosyada gömülü bildirimi önerilir. Varsayılan olarak, Visual Studio kaynak dosyalarından bir proje oluştururken bildirimi katıştırmak çalışır; bkz: [Visual Studio'da bildirim oluşturma](../build/manifest-generation-in-visual-studio.md) daha fazla bilgi için. Nmake kullanarak bir uygulama oluşturulursa, ancak bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölüm, nasıl otomatik olarak son ikili bildirim katıştırma için mevcut derleme görevleri dosyalarını değiştirileceğini gösterir.
+C/C++ uygulamasına (veya kitaplık) sahip olduğundan bu doğru çalışma zamanı davranışı Çoğu senaryoda garanti eder içinde son ikili dosyada gömülü bildirimi önerilir. Varsayılan olarak, Visual Studio kaynak dosyalarından bir proje oluştururken bildirimi katıştırmak çalışır; bkz: [Visual Studio'da bildirim oluşturma](manifest-generation-in-visual-studio.md) daha fazla bilgi için. Nmake kullanarak bir uygulama oluşturulursa, ancak bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölüm, nasıl otomatik olarak son ikili bildirim katıştırma için mevcut derleme görevleri dosyalarını değiştirileceğini gösterir.
 
 ## <a name="two-approaches"></a>İki yaklaşım
 
@@ -27,7 +27,7 @@ Bir uygulama veya kitaplık bildirim katıştırma iki yolu vardır.
 
    veya
 
-   **MT.exe-MyLibrary.dll.manifest bildirim-outputresource:MyLibrary.dll;2**
+   **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**
 
    (1 için bir EXE, DLL için 2.)
 
@@ -253,6 +253,6 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 # end of makefile.targ.inc
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+[C/C++ Programları Bildirim Üretimini Anlama](understanding-manifest-generation-for-c-cpp-programs.md)

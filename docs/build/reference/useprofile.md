@@ -3,12 +3,12 @@ title: / USEPROFILE (LTCG ile kullanım PGO veriler)
 ms.date: 03/14/2018
 f1_keywords:
 - USEPROFILE
-ms.openlocfilehash: 4b780bed3b92b874f2bf18fb0235e8e2baf95ae9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7bc0033ae5ef512cbd2e2063c5cb9bd9b061c180
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550637"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816535"
 ---
 # <a name="useprofile-run-pgo-in-thread-safe-mode"></a>/ USEPROFILE (iş parçacığı güvenli modda PGO çalıştırın)
 
@@ -38,7 +38,7 @@ Bu isteğe bağlı bağımsız değişken agresif hız iyileştirmelerini en iyi
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
 
@@ -56,5 +56,5 @@ Bu isteğe bağlı bağımsız değişken agresif hız iyileştirmelerini en iyi
 
 [/ GENPROFILE ve fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profil Temelli İyileştirmeler](../../build/reference/profile-guided-optimizations.md)<br/>
-[Profil Temelli İyileştirmeler için Ortam Değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profil Temelli İyileştirmeler](../profile-guided-optimizations.md)<br/>
+[Profil Temelli İyileştirmeler için Ortam Değişkenleri](../environment-variables-for-profile-guided-optimizations.md)<br/>

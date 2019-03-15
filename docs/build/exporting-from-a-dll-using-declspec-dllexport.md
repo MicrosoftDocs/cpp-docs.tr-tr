@@ -10,12 +10,12 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: effefa2c370634c450b03ed18187769e12e40adf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b6b9733776f30fc8dcbfeee709b7d24e0f0187b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500392"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810243"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 
@@ -49,7 +49,7 @@ DLL'nizi oluştururken genellikle işlev prototiplerini ve/veya veriyorsunuz ve 
 #define DllExport   __declspec( dllexport )
 ```
 
-**__declspec(dllexport)** işlev adlarını DLL'nin dışa aktarma tablosunda depolar. Tablonun boyutunu en iyi duruma getirmek istiyorsanız, bkz. [yerine sıra adına göre bir DLL işlevlerini dışa aktarma](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+**__declspec(dllexport)** işlev adlarını DLL'nin dışa aktarma tablosunda depolar. Tablonun boyutunu en iyi duruma getirmek istiyorsanız, bkz. [yerine sıra adına göre bir DLL işlevlerini dışa aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
 > [!NOTE]
 >  Win32 DLL kaynak kodunu Win16 taşırken her örneğini değiştirin **__export** ile **__declspec(dllexport)**.
@@ -58,28 +58,28 @@ Bir başvuru, Win32 Winbase.h üstbilgi dosyasında arayın. Örnekler içeren *
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)
+- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
 - [__Declspec anahtar sözcüğü](../cpp/declspec.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](../build/importing-and-exporting-inline-functions.md)
+- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
 
-- [Karşılıklı içeri aktarmalar](../build/mutual-imports.md)
+- [Karşılıklı içeri aktarmalar](mutual-imports.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+[DLL'den Dışarı Aktarma](exporting-from-a-dll.md)

@@ -1,18 +1,16 @@
 ---
 title: Özellik sayfaları (ATL) belirtme
 ms.date: 11/04/2016
-f1_keywords:
-- ISpecifyPropertyPages
 helpviewer_keywords:
 - ISpecifyPropertyPages method
 - property pages, specifying
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
-ms.openlocfilehash: d738759dfba50f26b788ee1b0761baf8bc4b00ab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3e1dd623ef6dc49e0d48e7ff91b18041e1c46916
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287156"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811764"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 

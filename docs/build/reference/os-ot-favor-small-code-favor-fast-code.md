@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Os compiler option [C++]
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-ms.openlocfilehash: aa404641a42b0209e8436ca206e59a3b5f425133
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4e8d062685a543c428f0c86a22c17c8faf017ad
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565964"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814264"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /Ot (Küçük Koda Ayrıcalık Tanı, Hızlı Koda Ayrıcalık Tanı)
 
@@ -39,12 +39,12 @@ Simge durumuna küçültür veya ve exe ve dll boyutunu en üst düzeye çıkar�
 
 **/OS** (küçük koda ayrıcalık tanı) derleyicinin boyut hız yerine boyuta ayrıcalık tanımasını sağlar ve exe ve dll boyutunu azaltır. Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. **/Os** ve **/Ot** seçeneklerden biri diğerine bir tercihini belirtmenize olanak tanır:
 
-**/Ot** (hızlı koda ayrıcalık tanı) derleyicinin boyutu hızlı yönlendirerek ve exe ve dll hızına büyütür. (Varsayılan değer budur.) Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. /Ot seçeneği en üst düzeye hızını kapsanıyor ([/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md)) seçeneği. **/O2** seçeneği çok hızlı kod üretmek için çeşitli seçenekler birleştirir.
+**/Ot** (hızlı koda ayrıcalık tanı) derleyicinin boyutu hızlı yönlendirerek ve exe ve dll hızına büyütür. (Varsayılan değer budur.) Derleyici, makine kodu işlevsel olarak benzer dizileri için birçok C ve C++ yapıları azaltabilir. Bazen bu farklılıkları avantajsız yönleri hızı karşı boyutu sunar. /Ot seçeneği en üst düzeye hızını kapsanıyor ([/O2](o1-o2-minimize-size-maximize-speed.md)) seçeneği. **/O2** seçeneği çok hızlı kod üretmek için çeşitli seçenekler birleştirir.
 
-Kullanırsanız **/Os** veya **/Ot**, sonra da belirtmeniz gerekir [/Og](../../build/reference/og-global-optimizations.md) kodu en iyi duruma getirme.
+Kullanırsanız **/Os** veya **/Ot**, sonra da belirtmeniz gerekir [/Og](og-global-optimizations.md) kodu en iyi duruma getirme.
 
 > [!NOTE]
->  Test çalıştırmalarını profil oluşturmadan toplanan bilgileri geçersiz kılma belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../../build/reference/profile-guided-optimizations.md).
+>  Test çalıştırmalarını profil oluşturmadan toplanan bilgileri geçersiz kılma belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md).
 
 **x86 belirli**
 
@@ -86,7 +86,7 @@ sub    eax, ecx
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -98,8 +98,8 @@ sub    eax, ecx
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.FavorSizeOrSpeed%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

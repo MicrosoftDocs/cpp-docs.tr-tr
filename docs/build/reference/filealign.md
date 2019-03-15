@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -FILEALIGN linker option
 - FILEALIGN linker option
 ms.assetid: c1017a35-8d71-4ad9-934b-a3e3ea037fa0
-ms.openlocfilehash: d218ce4793e68fe3b700a0776fa5db665568f736
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43cfdd6efb163013d05877e91c8375eb592295a9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494593"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814481"
 ---
 # <a name="filealign-align-sections-in-files"></a>/ FILEALIGN (dosyalardaki bölümleri Hizala)
 
@@ -39,7 +39,7 @@ Kullanım [DUMPBIN](dumpbin-reference.md) , çıkış dosyası bölümleri hakk�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **komut satırı** özellik sayfasında **bağlayıcı** klasör.
 
@@ -49,7 +49,7 @@ Kullanım [DUMPBIN](dumpbin-reference.md) , çıkış dosyası bölümleri hakk�
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

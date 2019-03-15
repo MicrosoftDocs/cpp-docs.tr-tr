@@ -5,12 +5,12 @@ ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 062052faf85b342629506a41c39b99a1b59502b9
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: b75a1903b3e0767f8aa009134a2b37a7d1a8e0d0
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809795"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810477"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -315,7 +315,7 @@ C++ artık CTRL tuşuna basıp tıklayarak destekliyor **tanıma**, fare gezinme
 
 ## <a name="non-msbuild-projects-with-open-folder"></a>MSBuild dışındaki projeleriyle klasörü aç
 
-Visual Studio 2017'yi tanıtır **Klasör Aç** kodlayın, oluşturun ve bir klasördeki tüm çözümlerin veya projelerin oluşturmaya gerek olmadan kaynak kodu içeren hata ayıklama olanak tanıyan özellik. Projenize bir MSBuild tabanlı proje olmasa bile Visual Studio ile başlamak çok daha kolay getirir. İle **Klasör Aç** anlama, düzenleme, derleme ve hata ayıklama özelliklerini Visual Studio MSBuild projeleri için zaten sağlayan güçlü kod erişim elde edersiniz. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](ide/non-msbuild-projects.md).
+Visual Studio 2017'yi tanıtır **Klasör Aç** kodlayın, oluşturun ve bir klasördeki tüm çözümlerin veya projelerin oluşturmaya gerek olmadan kaynak kodu içeren hata ayıklama olanak tanıyan özellik. Projenize bir MSBuild tabanlı proje olmasa bile Visual Studio ile başlamak çok daha kolay getirir. İle **Klasör Aç** anlama, düzenleme, derleme ve hata ayıklama özelliklerini Visual Studio MSBuild projeleri için zaten sağlayan güçlü kod erişim elde edersiniz. Daha fazla bilgi için [C++ açık klasörü projelerde](build/open-folder-projects-cpp.md).
 
 - Klasör Aç deneyimi geliştirmeleri. Bu .json dosyaları deneyimi özelleştirebilirsiniz:
   - IntelliSense ve göz atma deneyimini özelleştirmek için CppProperties.json.
@@ -330,7 +330,7 @@ Visual Studio 2017'yi tanıtır **Klasör Aç** kodlayın, oluşturun ve bir kla
 
 ## <a name="cmake-support-via-open-folder"></a>Klasör Aç üzerinden CMake desteği
 
-Visual Studio 2017 CMake projeleri için MSBuild proje dosyaları (.vcxproj) dönüştürme olmadan kullanma için destek sunuyor. Daha fazla bilgi için [Visual C++'da CMake projeleri](ide/cmake-tools-for-visual-cpp.md). CMake projeleri ile açma **Klasör Aç** ortamı için düzenleme, derleme ve hata ayıklama C++ otomatik olarak yapılandırır.
+Visual Studio 2017 CMake projeleri için MSBuild proje dosyaları (.vcxproj) dönüştürme olmadan kullanma için destek sunuyor. Daha fazla bilgi için [Visual C++'da CMake projeleri](build/cmake-projects-in-visual-studio.md). CMake projeleri ile açma **Klasör Aç** ortamı için düzenleme, derleme ve hata ayıklama C++ otomatik olarak yapılandırır.
 
 - C++ IntelliSense, kök klasörde CppProperties.json dosyası oluşturmaya gerek kalmadan çalışır. Bunun yanı sıra kullanıcıların CMake ve CppProperties.json dosyalarıyla sağlanan yapılandırmalar arasında kolayca geçiş yapması için yeni bir açılır menü ekledik.
 
@@ -342,7 +342,7 @@ Visual Studio 2017 CMake projeleri için MSBuild proje dosyaları (.vcxproj) dö
 
 **Visual Studio 2017 sürüm 15.5**: Mevcut CMake önbellekleri almak için eklenen destek.
 
-**Visual Studio 2017 sürüm 15.7**: Önbellek oluşturma ve tek dosyalı derleme için CMake 3.11, CMake projelerini kod analizi, Çözüm Gezgini, seçenekleri hedefleri görünümü için destek eklendi. Daha fazla bilgi için [Visual Studio'da CMake desteği](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual C++'da CMake projeleri](ide/cmake-tools-for-visual-cpp.md).
+**Visual Studio 2017 sürüm 15.7**: Önbellek oluşturma ve tek dosyalı derleme için CMake 3.11, CMake projelerini kod analizi, Çözüm Gezgini, seçenekleri hedefleri görünümü için destek eklendi. Daha fazla bilgi için [Visual Studio'da CMake desteği](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual C++'da CMake projeleri](build/cmake-projects-in-visual-studio.md).
 
 ## <a name="windows-desktop-development-with-c"></a>C++ ile Windows Masaüstü geliştirme
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-ms.openlocfilehash: d0fe7a7aa956ebc7662754b039389983d75ff590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 954088955a3f1530bb298aadbc35c7dd74150b7a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668721"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822320"
 ---
 # <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>/Zc:strictStrings (Değişmez değer dize türü dönüşümünü devre dışı bırakma)
 
@@ -24,7 +24,7 @@ Bu seçenek belirtildiğinde, derleyici katı gerektirir `const`-dize değişmez
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ ZC: strictstrings**[**-**]
+> **/Zc:strictStrings**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -64,7 +64,7 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -72,4 +72,4 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>

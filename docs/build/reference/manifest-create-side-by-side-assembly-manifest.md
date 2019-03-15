@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MANIFEST linker option
 - MANIFEST linker option
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
-ms.openlocfilehash: 226deb9e8f7273e122e1b9074d2afca8970fc366
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a3ca3980a9cdff4e67885b2ad47ffa2385b0774
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508066"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807825"
 ---
 # <a name="manifest-create-side-by-side-assembly-manifest"></a>/MANIFEST (Yan Yana Derleme Bildirimi Oluşturma)
 
@@ -29,7 +29,7 @@ ms.locfileid: "50508066"
 
 /MANIFEST: ekleme seçeneği, bağlayıcı bildirim dosyası görüntüde bir rt_manıfest türü kaynağı olarak gömülü belirtir. İsteğe bağlı `ID` parametredir bildirim için kullanılacak kaynak kimliği. Yürütülebilir dosya için 1 değerini kullanın. Özel bağımlılıklarını belirtmek etkinleştirmek için bir DLL için 2 değeri kullanın. Varsa `ID` parametresi belirtilmezse, varsayılan değer olan 2/dll seçenek ayarlanırsa; Aksi takdirde, varsayılan değer 1'dir.
 
-Yürütülebilir dosyalar için bildirim dosyalarını, Visual Studio 2008'den itibaren kullanıcı hesabı denetimi (UAC) bilgisinin belirten bir bölümü içermelidir. /MANIFEST belirtir, ancak bunların hiçbiri belirtin [/MANIFESTUAC](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md) ya da [/dll](../../build/reference/dll-build-a-dll.md), UAC düzeyinde ayarlanmış bir varsayılan UAC parça *asInvoker* bildirimine eklenir. UAC düzeyleri hakkında daha fazla bilgi için bkz. [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md).
+Yürütülebilir dosyalar için bildirim dosyalarını, Visual Studio 2008'den itibaren kullanıcı hesabı denetimi (UAC) bilgisinin belirten bir bölümü içermelidir. /MANIFEST belirtir, ancak bunların hiçbiri belirtin [/MANIFESTUAC](manifestuac-embeds-uac-information-in-manifest.md) ya da [/dll](dll-build-a-dll.md), UAC düzeyinde ayarlanmış bir varsayılan UAC parça *asInvoker* bildirimine eklenir. UAC düzeyleri hakkında daha fazla bilgi için bkz. [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](manifestuac-embeds-uac-information-in-manifest.md).
 
 UAC için varsayılan davranışı değiştirmek için aşağıdakilerden birini yapın:
 
@@ -37,13 +37,13 @@ UAC için varsayılan davranışı değiştirmek için aşağıdakilerden birini
 
 - Veya bildiriminde UAC parçası oluşturmak istemiyorsanız: No seçeneğini belirtin.
 
-/MANIFEST belirtmeyin ancak belirtin [/MANIFESTDEPENDENCY](../../build/reference/manifestdependency-specify-manifest-dependencies.md) yorumları, bir bildirim dosyası oluşturulur. /MANIFEST:NO belirtirseniz bir bildirim dosyası oluşturulmaz.
+/MANIFEST belirtmeyin ancak belirtin [/MANIFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md) yorumları, bir bildirim dosyası oluşturulur. /MANIFEST:NO belirtirseniz bir bildirim dosyası oluşturulmaz.
 
 /MANIFEST belirtirseniz, bildirim dosyasının adı, çıkış dosyasının, ancak dosya adına .manifest adı ile aynıdır. Örneğin, çıktı dosyanızın adı MyFile.exe ise, bildirim dosyası adı MyFile.exe.manifest ' dir.  /MANIFESTFILE belirtirseniz:*adı*, içinde belirttiğiniz addır bildirimin *adı*.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -57,7 +57,7 @@ UAC için varsayılan davranışı değiştirmek için aşağıdakilerden birini
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateManifest%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

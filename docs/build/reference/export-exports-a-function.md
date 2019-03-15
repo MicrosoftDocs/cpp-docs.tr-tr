@@ -9,12 +9,12 @@ helpviewer_keywords:
 - EXPORT linker option
 - -EXPORT linker option
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-ms.openlocfilehash: a26df26849302ae1cce449f92cdeb5ee6dfd9baa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c4f4621bbccd4285bcf4eca07d2544d53d14f6c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456140"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819863"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT (İşlevi Dışarı Aktarır)
 
@@ -36,7 +36,7 @@ Bir işlev adı veya sıra veya veri, programınızı dışarı aktarır.
 
 1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodunda
 
-1. Bir [dışarı AKTARMALARI](../../build/reference/exports.md) .def dosyası deyimi
+1. Bir [dışarı AKTARMALARI](exports.md) .def dosyası deyimi
 
 1. Bir LINK komutunu/Export belirtiminde
 
@@ -44,7 +44,7 @@ Bir işlev adı veya sıra veya veri, programınızı dışarı aktarır.
 
 Bu yöntemlerin tümü, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, yapı .exp dosyasının kullanılmadığı sürece ayrıca bir içeri aktarma kitaplığı oluşturur.
 
-BAĞLANTI kullanan tanımlayıcıların forms düzenlenmiş. .Obj dosyası oluşturduğunda, derleyici tanımlayıcı düzenler. Varsa *GirişAdı* bağlayıcıda ve onun için belirttiğiniz (kaynak kodunda göründüğü gibi) oluşturmak, bağlantı denemeleri adıyla eşleşecek şekilde. Benzersiz bir eşleşme bulamazsa, bağlantı bir hata iletisi verir. Kullanım [DUMPBIN](../../build/reference/dumpbin-reference.md) almak için aracı [ile düzenlenmiş adın](../../build/reference/decorated-names.md) bağlayıcıya belirtmek gerektiğinde bir tanımlayıcının formu.
+BAĞLANTI kullanan tanımlayıcıların forms düzenlenmiş. .Obj dosyası oluşturduğunda, derleyici tanımlayıcı düzenler. Varsa *GirişAdı* bağlayıcıda ve onun için belirttiğiniz (kaynak kodunda göründüğü gibi) oluşturmak, bağlantı denemeleri adıyla eşleşecek şekilde. Benzersiz bir eşleşme bulamazsa, bağlantı bir hata iletisi verir. Kullanım [DUMPBIN](dumpbin-reference.md) almak için aracı [ile düzenlenmiş adın](decorated-names.md) bağlayıcıya belirtmek gerektiğinde bir tanımlayıcının formu.
 
 > [!NOTE]
 > C tanımlayıcıları, bildirilen düzenlenmiş biçiminde belirtmeyin `__cdecl` veya `__stdcall`.
@@ -58,7 +58,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
@@ -68,7 +68,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

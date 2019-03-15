@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /openmp compiler option [C++]
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-ms.openlocfilehash: 03992a0e8eef3ba9b2683ecb87809b53cb551636
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1edcc6d29a5b84106b3a5fd91d2446c34e0f7b9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518072"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807474"
 ---
 # <a name="openmp-enable-openmp-20-support"></a>/openmp (OpenMP 2.0 Desteğini Etkinleştir)
 
@@ -29,7 +29,7 @@ ms.locfileid: "50518072"
 
 `#pragma omp` belirtmek için kullanılan [yönergeleri](../../parallel/openmp/reference/openmp-directives.md) ve [yan tümceleri](../../parallel/openmp/reference/openmp-clauses.md). Varsa **/OpenMP** belirtilmemiş bir derlemede derleyicinin yoksaydığı OpenMP yan tümceleri ve yönergeleri. [OpenMP işlevi](../../parallel/openmp/reference/openmp-functions.md) çağrılar derleyici bile tarafından işlenen **/OpenMP** belirtilmedi.
 
-İle derlenmiş uygulamaları **/OpenMP** ve **/CLR** yalnızca tek bir uygulama etki alanı işlemi içinde çalıştırılabilir; birden çok uygulama etki alanları desteklenmez. Jeden konstruktor (.cctor) çalıştırdığınızda, diğer bir deyişle, bu işlem ile derlendiğinde algılar **/OpenMP** ve uygulamanın varsayılan olmayan çalışma zamanına yüklüyse. Daha fazla bilgi için [appdomain](../../cpp/appdomain.md), [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md), ve [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md).
+İle derlenmiş uygulamaları **/OpenMP** ve **/CLR** yalnızca tek bir uygulama etki alanı işlemi içinde çalıştırılabilir; birden çok uygulama etki alanları desteklenmez. Jeden konstruktor (.cctor) çalıştırdığınızda, diğer bir deyişle, bu işlem ile derlendiğinde algılar **/OpenMP** ve uygulamanın varsayılan olmayan çalışma zamanına yüklüyse. Daha fazla bilgi için [appdomain](../../cpp/appdomain.md), [/CLR (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md), ve [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md).
 
 İle derlenmiş bir uygulamanın yüklemeye çalışırsanız **/OpenMP** ve **/CLR** varsayılan olmayan uygulama etki alanına bir <xref:System.TypeInitializationException> dışında hata ayıklayıcı özel durum oluşturulur ve Hata ayıklayıcıda OpenMPWithMultipleAppdomainsException özel durum oluşturulur.
 
@@ -45,7 +45,7 @@ Microsoft, siz değil yazma arşivlemenin **/OpenMP** kısmen sağlayan uygulama
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -111,7 +111,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -Zg compiler option [C++]
 - generate function prototypes compiler option
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
-ms.openlocfilehash: 2ab2b11e2d657e2bce87f750dff79a616ccec55b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 684174cf46e644c22e072e3fa60f75f9434c7e54
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471008"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816171"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg (İşlev Prototipleri Üret)
 
@@ -44,11 +44,11 @@ typedef struct MyStruct { int i; } T2;
 void f2(T2 * t) {}
 ```
 
-**/Zg** seçeneği, Visual Studio 2005'te kullanım dışı bırakıldı ve Visual Studio 2015'te kaldırılmıştır. Visual C++ derleyicisi, eski C stili kod desteğini kaldırmıştır. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/Zg** seçeneği, Visual Studio 2005'te kullanım dışı bırakıldı ve Visual Studio 2015'te kaldırılmıştır. MSVC derleyicisi, eski C stili kod desteğini kaldırmıştır. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -60,7 +60,7 @@ void f2(T2 * t) {}
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

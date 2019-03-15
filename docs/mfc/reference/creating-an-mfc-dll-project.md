@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [MFC], creating
 - DLLs [MFC], creating
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
-ms.openlocfilehash: 21173582f68b1d50fefbe22250546fcce63730b4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6ddc32ac3a2de5993e6755df0cd9fc7d3546094e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278840"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814156"
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL Projesi Oluşturma
 
@@ -25,7 +25,7 @@ MFC DLL aynı anda birden çok uygulama tarafından kullanılabilecek işlevleri
 
 ### <a name="to-create-an-mfc-dll-project-using-the-mfc-dll-wizard"></a>MFC DLL Sihirbazı'nı kullanarak bir MFC DLL projesi oluşturma
 
-1. Yardım konusundaki yönergeleri izleyerek [Visual C++ uygulama sihirbazıyla proje oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Yardım konusundaki yönergeleri izleyerek [C++ konsol uygulama projesi oluşturma](../../get-started/tutorial-console-cpp.md).
 
 **Not** içinde **yeni proje** iletişim kutusunda `MFC DLL` MFC DLL Sihirbazı'nı açmak için şablonlar bölmesindeki simgesi.
 
@@ -36,10 +36,11 @@ MFC DLL aynı anda birden çok uygulama tarafından kullanılabilecek işlevleri
 
 1. Tıklayın **son** sihirbazı kapatın ve yeni projenizi açın **Çözüm Gezgini**.
 
-Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md).
+Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Proje Türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)
+[Özellik Sayfaları](../../build/reference/property-pages-visual-cpp.md)
+

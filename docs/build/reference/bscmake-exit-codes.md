@@ -5,12 +5,12 @@ helpviewer_keywords:
 - exit codes
 - BSCMAKE, exit codes
 ms.assetid: 1a5ca9d8-a217-43c8-9780-2a41d458b8c0
-ms.openlocfilehash: 3be28721be20c7067737a421afa57c97275a040d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7c7c34f5944198b1594b2f580d5cc73e3c20706
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552080"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808293"
 ---
 # <a name="bscmake-exit-codes"></a>BSCMAKE Çıkış Kodları
 
@@ -22,6 +22,6 @@ BSCMAKE, işletim sistemi veya çağıran program (bir dönüş kodu veya hata k
 |1.|Komut satırı hatası|
 |4|Derleme sırasında önemli hata|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)
+[BSCMAKE Başvurusu](bscmake-reference.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - executable files [C++], importing classes
 - exporting DLLs [C++], AFX_EXT_CLASS macro
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
-ms.openlocfilehash: 521fa0e0f786111e4e273685d2db6f6d011c72c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcfdc94e8db80daec227d77c20ecec6b14d5af11
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482582"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821228"
 ---
 # <a name="exporting-and-importing-using-afxextclass"></a>AFX_EXT_CLASS Kullanarak İçeri ve Dışarı Aktarma
 
-[MFC uzantı DLL'leri](../build/extension-dlls-overview.md) makroyu kullanın **AFX_EXT_CLASS** sınıfları dışarı aktarmak için; sınıflarını içeri aktarmak için makro MFC uzantısı DLL için bağlama yürütülebilir dosyaları kullanın. İle **AFX_EXT_CLASS** makrosu, MFC uzantısı DLL için DLL'e yürütülebilir dosyaları ile kullanılabilir oluşturmak için kullanılan aynı üst bilgi dosyaları.
+[MFC uzantı DLL'leri](extension-dlls-overview.md) makroyu kullanın **AFX_EXT_CLASS** sınıfları dışarı aktarmak için; sınıflarını içeri aktarmak için makro MFC uzantısı DLL için bağlama yürütülebilir dosyaları kullanın. İle **AFX_EXT_CLASS** makrosu, MFC uzantısı DLL için DLL'e yürütülebilir dosyaları ile kullanılabilir oluşturmak için kullanılan aynı üst bilgi dosyaları.
 
 DLL'niz üstbilgi dosyasına ekleyin **AFX_EXT_CLASS** sınıfının bildirimi aşağıdaki gibi anahtar:
 
@@ -104,28 +104,28 @@ MFC her zaman kullandığından `AFX_DATA` sembol tüm senaryolar için bu tekni
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)
+- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL'yi Başlat](run-time-library-behavior.md#initializing-a-dll)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Düzenlenmiş adlar](../build/reference/decorated-names.md)
+- [Düzenlenmiş adlar](reference/decorated-names.md)
 
-- [İçeri ve dışarı aktarma satır içi işlevler](../build/importing-and-exporting-inline-functions.md)
+- [İçeri ve dışarı aktarma satır içi işlevler](importing-and-exporting-inline-functions.md)
 
-- [Karşılıklı içeri aktarmalar](../build/mutual-imports.md)
+- [Karşılıklı içeri aktarmalar](mutual-imports.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+[DLL'den Dışarı Aktarma](exporting-from-a-dll.md)

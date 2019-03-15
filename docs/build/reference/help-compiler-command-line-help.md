@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -? compiler option [C++]
 - cl.exe compiler, command-line syntax
 ms.assetid: 192533e7-86f2-48e0-a08f-b5e4e3a4e784
-ms.openlocfilehash: f12b7d35bb5621837c6eda3857f4e51eb2685ba3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6cd015211a7a8039c5a1a2db696bf2160e282cd1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435470"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814005"
 ---
 # <a name="help-compiler-command-line-help"></a>/HELP (Derleyici Komut Satırı Yardımı)
 
@@ -41,7 +41,7 @@ Derleyici seçeneklerinin bir listesi için standart çıktı görüntüler.
 
 - Bu derleyici seçeneğini program aracılığıyla değiştirilemez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++], exporting from
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-ms.openlocfilehash: c7328f0e5f5d408ec93f31fa4cbea987594264ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 882010cd28c291e9f49ca0f7dd9d646c70130184
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492781"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815833"
 ---
 # <a name="importing-and-exporting"></a>İçeri ve Dışarı Aktarma
 
@@ -27,7 +27,7 @@ Ortak semboller bir uygulamayı içeri aktarın veya İşlevler iki yöntemi kul
 
 Bir modül-tanımlama (.def) dosyası, bir DLL'nin çeşitli özniteliklerini tanımlayan bir veya daha fazla modül deyimi içeren bir metin dosyasıdır. Kullanmıyorsanız, **__declspec(dllimport)** veya **__declspec(dllexport)** DLL DLL işlevlerini dışa aktarmak için bir .def dosyası gerekir.
 
-.Def dosyaları için kullanabileceğiniz [bir uygulamayı içeri aktarma](../build/importing-using-def-files.md) veya [DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md).
+.Def dosyaları için kullanabileceğiniz [bir uygulamayı içeri aktarma](importing-using-def-files.md) veya [DLL'den dışarı aktarma](exporting-from-a-dll-using-def-files.md).
 
 ## <a name="using-declspec"></a>__Declspec kullanma
 
@@ -41,10 +41,10 @@ Win32 taşınabilir yürütülebilir dosya biçimi, içeri aktarmalar düzeltmek
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Bir uygulamaya içeri aktarma](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Bir uygulamaya içeri aktarma](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)
+- [DLL'den dışarı aktarma](exporting-from-a-dll.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

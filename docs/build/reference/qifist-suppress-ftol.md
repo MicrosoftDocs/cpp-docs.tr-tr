@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -QIfist compiler option [C++]
 - /QIfist compiler option [C++]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd
-ms.openlocfilehash: e01ee0b7af68127f3a78b4cfda1d110f6187fa74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7af88c91793688d23cf35177ae7a5250b04832a8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528126"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816600"
 ---
 # <a name="qifist-suppress-ftol"></a>/QIfist (Suppress _ftol)
 
@@ -42,16 +42,16 @@ Kayan nokta türünden integral türüne dönüştürme yanı sıra `_ftol` işl
 
 Kullanabileceğiniz [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) FPU yuvarlama davranışını değiştirmek için C çalışma zamanı işlevi. Yuvarlama modu FPU, varsayılan olan "Hepsini doğru en yakın." Kullanarak **/QIfist** riski olmadan değil ancak uygulamanızın performansını iyileştirebilir. Bağlı olan kod ile oluşturulmuş önce modları yuvarlama duyarlıdır kod bölümlerini sınamanız **/QIfist** üretim ortamlarında.
 
-[/ arch (x86)](../../build/reference/arch-x86.md) ve **/QIfist** aynı derlenecek üzerinde kullanılamaz.
+[/ arch (x86)](arch-x86.md) ve **/QIfist** aynı derlenecek üzerinde kullanılamaz.
 
 > [!NOTE]
 >  **/ Qıfist** olan uygulamada varsayılan olarak yuvarlama da bit kayan nokta integralden etkiler çünkü göstermiyor yuvarlama (sonra her hesaplama oluştuğu), C stili (sıfır doğru) yuvarlama bayrakları ayarladığınızda, kayan noktası için hesaplamaları farklı olabilir. **/ Qıfist** kodunuzu kayan noktalı sayının kesirli kısmını kesilmesi, beklenen davranışı bağlıysa kullanılmamalıdır. Emin değilseniz, kullanmayın **/QIfist**.
 
-**/QIfist** seçeneği Visual Studio 2005'ten başlayarak kullanım dışı. Derleyici, float int dönüştürme hızını önemli geliştirmeler yapılmıştır. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/QIfist** seçeneği Visual Studio 2005'ten başlayarak kullanım dışı. Derleyici, float int dönüştürme hızını önemli geliştirmeler yapılmıştır. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -63,8 +63,8 @@ Kullanabileceğiniz [_control87, _controlfp, \__control87_2](../../c-runtime-lib
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

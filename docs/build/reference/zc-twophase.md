@@ -9,12 +9,12 @@ helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: d5a53db5a5c0ae9c4cfec76e57f628499c8955c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebd577bc25a2789e3a6b328a4c9cd2e1596d04da
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648768"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821410"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/ZC:twoPhase-(iki aşamalı ad aramayı devre dışı bırak)
 
@@ -22,7 +22,7 @@ Zaman **/Zc:twoPhase-** seçeneği belirtildiğinde, derleyici ayrıştırır ve
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ZC:twoPhase-**
+> **/Zc:twoPhase-**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -162,7 +162,7 @@ Uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Visual Studio'da C++
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -170,4 +170,4 @@ Uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Visual Studio'da C++
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>

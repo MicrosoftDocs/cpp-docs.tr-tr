@@ -5,18 +5,18 @@ helpviewer_keywords:
 - executable files, as linker output
 - .exe files
 ms.assetid: 73714c30-6f03-4e72-881e-090e5240ba93
-ms.openlocfilehash: 6f80c3b44a3639c14571e282aa264ef0e1fd9d5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 855847067fb726816a1b23ac8e54afc0b9d7927f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454892"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808436"
 ---
 # <a name="exe-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Exe Dosyaları
 
-[MS-DOS saplama dosyası adı](../../build/reference/stub-ms-dos-stub-file-name.md) (/ SAPLAMA) seçeneği, MS-DOS ile çalışan bir .exe dosyasının adını belirtir. Belirtilen dosya geçerli bir MS-DOS programı olduğundan emin olmak için bağlantı inceler.
+[MS-DOS saplama dosyası adı](stub-ms-dos-stub-file-name.md) (/ SAPLAMA) seçeneği, MS-DOS ile çalışan bir .exe dosyasının adını belirtir. Belirtilen dosya geçerli bir MS-DOS programı olduğundan emin olmak için bağlantı inceler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[LINK Giriş Dosyaları](../../build/reference/link-input-files.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[LINK Giriş Dosyaları](link-input-files.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

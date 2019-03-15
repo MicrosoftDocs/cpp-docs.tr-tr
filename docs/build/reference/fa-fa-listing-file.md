@@ -16,12 +16,12 @@ helpviewer_keywords:
 - listing file type
 - assembly-only listing
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402
-ms.openlocfilehash: 6bb5e18c5a174c9e48b253031daad195e6132375
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b78704ea12365d9e10222d75c6807517f7cdb893
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507308"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812518"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa (Listeleme Dosyası)
 
@@ -75,7 +75,7 @@ Adlı bir listeleme dosyası *gt;filename.Extension* yerleştirilir belirtilen *
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
 
@@ -95,9 +95,9 @@ Aşağıdaki komut satırını birleştirilmiş bir kaynak oluşturur ve makine 
 CL /FAcs HELLO.CPP
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Yol Adını Belirtme](specifying-the-pathname.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - XML documentation, comments in source files
 - -doc compiler option [C++]
 ms.assetid: b54f7e2c-f28f-4f46-9ed6-0db09be2cc63
-ms.openlocfilehash: 39b614b1ab21a654a35e30b0d3acffa15d244fb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90f63a972245114424b64d4131420dcb4e1e925a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530045"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809801"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc (İşlem Belgeleri Açıklamaları) (C/C++)
 
@@ -33,15 +33,15 @@ Derleyici oluşturacak .xdc dosyasının adı. Yalnızca bir .cpp dosyası derle
 
 ## <a name="remarks"></a>Açıklamalar
 
-.Xdc dosyalarının bir .xml dosyasına xdcmake.exe'yi ile işlenir. Daha fazla bilgi için [XDCMake başvurusu](../../ide/xdcmake-reference.md).
+.Xdc dosyalarının bir .xml dosyasına xdcmake.exe'yi ile işlenir. Daha fazla bilgi için [XDCMake başvurusu](xdcmake-reference.md).
 
-Belge açıklamaları için kaynak kod dosyalarınızı ekleyebilirsiniz. Daha fazla bilgi için [belge açıklamaları için önerilen etiketler](../../ide/recommended-tags-for-documentation-comments-visual-cpp.md).
+Belge açıklamaları için kaynak kod dosyalarınızı ekleyebilirsiniz. Daha fazla bilgi için [belge açıklamaları için önerilen etiketler](recommended-tags-for-documentation-comments-visual-cpp.md).
 
 IntelliSense ile oluşturulan .xml dosyasını kullanmak için destek ve .xml dosyasını yerleştirmek istediğiniz derleme ile aynı derleme olarak aynı dizinde olduğu .xml dosyasının dosya adını olun. Visual Studio projesinde derlemeye başvurulduğundan, .xml dosyasını da bulunur. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense) ve [XML kodu açıklamalarını sağlama](/visualstudio/ide/supplying-xml-code-comments).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
 
@@ -51,7 +51,7 @@ IntelliSense ile oluşturulan .xml dosyasını kullanmak için destek ve .xml do
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GenerateXMLDocumentationFiles%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

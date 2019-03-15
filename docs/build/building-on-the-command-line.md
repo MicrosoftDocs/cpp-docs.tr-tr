@@ -1,7 +1,8 @@
 ---
-title: Komut satırında C/C++ kodu derleme
+title: Komut satırından - Visual Studio MSVC araç takımı kullanın
+description: Visual Studio IDE dışında komut satırından Microsoft C++ Derleyici araç zincirini (MSVC) kullanın.
 ms.custom: conceptual
-ms.date: 06/21/2018
+ms.date: 12/10/2018
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -9,28 +10,30 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: bc5080ff14cf8629c98077bf1e3e39e4b824b48b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21d1c9063a1d6dd154de8d2caca913ea3fd0ce37
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452045"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812128"
 ---
-# <a name="build-cc-code-on-the-command-line"></a>Komut satırında C/C++ kodu derleme
+# <a name="use-the-msvc-toolset-from-the-command-line"></a>Komut satırından MSVC araç takımı kullanın
 
-Visual Studio'da bulunan araçları kullanarak, komut satırında C ve C++ uygulamaları oluşturabilirsiniz.
+Visual Studio'da bulunan araçları kullanarak, komut satırında C ve C++ uygulamaları oluşturabilirsiniz. Tek başına paket olarak derleyici araç takımı indirebilirsiniz [Visual Studio 2017 için derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=875721).
 
-## <a name="how-to-get-the-command-line-tools"></a>Komut satırı araçları edinme
+## <a name="how-to-use-the-command-line-tools"></a>Komut satırı araçlarını kullanma
 
 Visual Studio Yükleyicisi'nde C++ iş yükleri birini seçtiğinizde, Visual Studio yüklendikten *platform araç takımını*. Bir platform araç takımı C/C++ Derleyicileri, linkers, birleştiricileri ve diğer oluşturma araçlarının yanı sıra eşleşen kitaplıkları dahil olmak üzere belirli bir Visual Studio sürümü C ve C++ araçlarına sahiptir. Tüm bu araçlar komut satırında kullanabilir ve ayrıca Visual Studio IDE tarafından dahili olarak kullanılırlar. Ayrı x86 barındırılan ve x64 barındırılan derleyiciler ve x86, x 64, ARM için kod oluşturmak için Araçlar ve ARM64 hedefleri vardır. Belirli bir ana bilgisayar ve hedef yapı mimarisi için Araçlar'ın her bir kümesi, kendi dizininde depolanır.
 
-Doğru çalışması için birkaç belirli ortam değişkenlerini ayarlamak için Araçlar gerektirir. Bunlar yoluna eklenecek ve ayarlamak için kullanılan dosya, kitaplık dosyası ve SDK konumları içerir. Bu ortam değişkenlerini ayarlamak kolaylaştırmak için yükleyici özelleştirilmiş oluşturur *komut dosyaları*, toplu iş dosyaları, yükleme sırasında. Bu komut dosyalarından birini belirli bir ana bilgisayarı ve hedef yapı mimarisi, Windows SDK sürümü, hedef platform ve platform araç kümesini ayarlamak için bir komut istemi penceresinde çalıştırabilirsiniz. Kolaylık olması için yükleyici da kısayol, Başlat menüsünde oluşturur (veya başlangıç sayfasında, Windows 8.x) tüm gerekli ortam değişkenlerini ayarlayın ve kullanıma hazır olacak şekilde, bu komut dosyaları kullanarak Geliştirici komut istemi pencerelerini başlar.
+Yüklü bir derleyici araç takımları, bilgisayarı işlemcisini ve yükleme sırasında seçilen seçeneklere bağlıdır. En az 32-bit x86-native kodu derleyin ve 64-bit x64 yerel kod yapı araçları çapraz 32-bit x86 barındırılan Araçlar yüklenir. 64 bit Windows varsa, 64-bit yerel kod derleme ve 32 bit yerel kod yapı araçları çapraz 64-bit x64 barındırılan araçları da yüklenir. İsteğe bağlı C++ Evrensel Windows platformu araçları yüklemeyi seçerseniz, ARM kodu derleyin 32-bit ve 64-bit yerel araçlar da yüklenir. Diğer iş yükleri, ek araçlar yükleyebilir.
 
-Gerekli ortam değişkenlerini, yüklemenizi ve seçin ve ürün güncelleştirmeleri veya yükseltmeleri tarafından değiştirilebilir yapı mimarisi için özeldir. Bu nedenle, ortam değişkenleri Windows kendiniz ayarlamak yerine yüklü bir komut istemi kısayolları ya da komut dosyaları birini kullanmanız önerilir. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlamak](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+## <a name="environment-variables-and-developer-command-prompts"></a>Ortam değişkenlerini ve geliştirici komut istemleri
 
-Komut satırı araç takımları, komut dosyaları ve yüklenen komut istemi kısayolları, bilgisayarı işlemcisini ve yükleme sırasında seçilen seçeneklere bağlıdır. En az 32-bit x86-native kodu derleyin ve 64-bit x64 yerel kod yapı araçları çapraz 32-bit x86 barındırılan Araçlar yüklenir. 64 bit Windows varsa, 64-bit yerel kod derleme ve 32 bit yerel kod yapı araçları çapraz 64-bit x64 barındırılan araçları da yüklenir. İsteğe bağlı C++ Evrensel Windows platformu araçları yüklemeyi seçerseniz, ARM kodu derleyin 32-bit ve 64-bit yerel araçlar da yüklenir. Diğer iş yükleri, ek araçlar yükleyebilir.
+Doğru çalışması için birkaç belirli ortam değişkenlerini ayarlamak için Araçlar gerektirir. Bunlar yoluna eklenecek ve ayarlamak için kullanılan dosya, kitaplık dosyası ve SDK konumları içerir. Bu ortam değişkenlerini ayarlamak kolaylaştırmak için yükleyici özelleştirilmiş oluşturur *komut dosyaları*, toplu iş dosyaları, yükleme sırasında. Bu komut dosyalarından birini belirli bir ana bilgisayarı ve hedef yapı mimarisi, Windows SDK sürümü, hedef platform ve platform araç kümesini ayarlamak için bir komut istemi penceresinde çalıştırabilirsiniz. Kolaylık olması için yükleyici kısayolları tüm gerekli ortam değişkenlerini ayarlayın ve kullanıma hazır olacak şekilde, bu komut dosyaları kullanarak Geliştirici komut istemi windows Başlat, Başlat menüsünde de oluşturur.
 
-## <a name="developer-command-prompt-shortcuts"></a>Geliştirici komut istemi kısayolları
+Gerekli ortam değişkenlerini, yüklemenizi ve seçin ve ürün güncelleştirmeleri veya yükseltmeleri tarafından değiştirilebilir yapı mimarisi için özeldir. Bu nedenle, ortam değişkenleri Windows kendiniz ayarlamak yerine yüklü bir komut istemi kısayolları ya da komut dosyaları birini kullanmanız önerilir. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlamak](setting-the-path-and-environment-variables-for-command-line-builds.md).
+
+## <a name="developer_command_prompt_shortcuts"></a> Geliştirici komut istemi kısayolları
 
 Komut istemi kısayolları, Başlat menüsü bir sürüme özgü Visual Studio klasöre yüklenir. Temel bir komut istemi kısayolları ve destekledikleri derleme mimarileri listesini şu şekildedir:
 
@@ -44,8 +47,7 @@ Ayarladıysanız gerçek başlangıç menüsünde klasörü ve kısayol adları,
 
 Uygulamasını yüklediyseniz [Visual Studio 2017 için derleme Araçları](https://go.microsoft.com/fwlink/p/?linkid=875721) (da içeren Visual Studio 2015 güncelleştirme 3'ü derleyici araç takımı), yalnızca mimariye özgü yerel ve çapraz Araçlar seçenekleri yüklü Geliştirici komut istemi ve genel **Geliştirici komut istemi** kısayol.
 
-<a name="developer_command_prompt"></a>
-### <a name="to-open-a-developer-command-prompt-window"></a>Bir geliştirici komut istemi penceresi açmak için
+## <a name="developer_command_prompt"></a> Bir geliştirici komut istemi penceresi açmak için
 
 1. Windows masaüstünde, açık **Başlat** menü ve örneğin, Visual Studio sürümünüz için klasörü açın, sonra kaydırma **Visual Studio 2017**. Visual Studio bazı eski sürümlerinde adlı alt klasörde kısayollarıdır **Visual Studio Araçları**.
 
@@ -53,7 +55,7 @@ Uygulamasını yüklediyseniz [Visual Studio 2017 için derleme Araçları](http
 
 Bir geliştirici komut istemi penceresi açmak için daha hızlı bir şekilde girmektir *Geliştirici komut istemi* masaüstü arama kutusuna, istenen sonucu seçin.
 
-## <a name="developer-command-files-and-locations"></a>Geliştirici komut dosyaları ve konumları
+## <a name="developer_command_file_locations"></a> Geliştirici komut dosyası konumları
 
 Var olan bir komut istemi penceresinde yapı mimarisi ortamı ayarlamak isterseniz, bu komut dosyalarından birine (toplu iş dosyaları) yükleyici tarafından oluşturulan gerekli ortam ayarlamak için kullanabilirsiniz. Yalnızca önerilir bunun yeni bir komut istemi penceresinde ve, daha sonra anahtar ortamları aynı komut penceresinde önermiyoruz. Bu dosyaların konumunu, yüklediğiniz Visual Studio sürümünü ve konumunu ve yükleme sırasında yapılan adlandırma seçenekleri bağlıdır. Visual Studio 2017 için normal yükleme bir 64 bit bilgisayarda \Program dosyaları (x86) \Microsoft Visual Studio\2017 içinde konumdur\\*edition*burada *edition* topluluk olabilir Professional, Enterprise, BuildTools veya belirttiğiniz başka bir ad. Visual Studio 2015 için \Program dosyaları (x86) \Microsoft Visual Studio 14.0 Normal Yükleme konumdur.
 
@@ -69,7 +71,7 @@ Birincil geliştirici komut istemi komut dosyası VsDevCmd.bat, Common7\Tools al
 |**vcvarsamd64_x86.bat**| 32-bit x86 oluşturmak için 64-bit x64 yerel çapraz araçları kullanmak kod.|
 |**vcvarsx86_arm.bat**| ARM Kodu derlemek için 32-bit x86 yerel çapraz araçları kullanın.|
 |**vcvarsamd64_arm.bat**| ARM Kodu derlemek için 64-bit x64 yerel çapraz araçları kullanın.|
-|**Vcvarsall.bat**| Konak ve hedef mimariler, hem de SDK'sı ve platform seçeneklerini belirtmek için parametreleri kullanın. Çağrıda tarafından desteklenen seçeneklerin bir listesi için bir **/help** parametresi.|
+|**vcvarsall.bat**| Konak ve hedef mimariler, hem de SDK'sı ve platform seçeneklerini belirtmek için parametreleri kullanın. Çağrıda tarafından desteklenen seçeneklerin bir listesi için bir **/help** parametresi.|
 
 > [!CAUTION]
 > Vcvarsall.bat dosyasının ve diğer Visual Studio komut dosyalarının bilgisayardan diğerine farklılık gösterebilir. Vcvarsall.bat dosyasının eksik veya hasarlı bir dosyayı başka bir bilgisayardan kullanarak değiştirmeyin. Eksik dosyayı değiştirmek için Visual Studio yükleyiciyi yeniden çalıştırın.
@@ -82,7 +84,7 @@ Var olan bir komut penceresinde belirli bir yapı mimarisi belirtmek için en ba
 
 ### <a name="vcvarsall-syntax"></a>Vcvarsall söz dizimi
 
-> **Vcvarsall.bat** [*mimarisi*] [*platform_type*] [*winsdk_version*] [**-vcvars_ver =** _vcversion_]
+> **vcvarsall.bat** [*architecture*] [*platform_type*] [*winsdk_version*] [**-vcvars_ver=**_vcversion_]
 
 *Mimarisi*<br/>
 Bu isteğe bağlı bağımsız değişken kullanmak için ana bilgisayarı ve hedef mimari belirtir. Varsa *mimarisi* belirtilmezse, varsayılan yapı ortamı kullanılır. Bu bağımsız değişkenler desteklenir:
@@ -132,20 +134,20 @@ Yol, Visual Studio yükleme dizini yansıtacak şekilde ayarlamanız gerekir.
 
 Komut satırında C/C++ projesi oluşturmak için Visual Studio bu komut satırı araçları sağlar:
 
-[CL](../build/reference/compiling-a-c-cpp-program.md)<br/>
+[CL](reference/compiling-a-c-cpp-program.md)<br/>
 Derleme ve bağlantı uygulamaları, kitaplıkları ve DLL'leri kaynak kodu dosyaları için derleyici (cl.exe) kullanın.
 
-[Bağlantı](../build/reference/linking.md)<br/>
+[Bağlantı](reference/linking.md)<br/>
 Uygulamalar ve DLL'ler derlenmiş nesne dosyaları ve kitaplıkları bağlamak için bağlayıcı (link.exe) kullanın.
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
-Visual C++ projeleri ve Visual Studio çözümleri oluşturmak için MSBuild (msbuild.exe) kullanın. Bu çalıştırma için eşdeğerdir **derleme** proje veya **Çözümü Derle** Visual Studio IDE'de komutu.
+[MSBuild](msbuild-visual-cpp.md)<br/>
+MSBuild (msbuild.exe) ve bir proje dosyası (.vcxproj), bir derleme yapılandırmak ve araç takımı dolaylı olarak çağırmak için kullanın. Bu çalıştırma için eşdeğerdir **derleme** proje veya **Çözümü Derle** Visual Studio IDE'de komutu. MSBuild komut satırından çalıştırma, Gelişmiş bir senaryodur ve genel olarak önerilmez.
 
 [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
-Kullanın (devenv.exe) DEVENV komut satırı anahtarıyla birlikte — Örneğin, **/Build** veya **/Clean**— gerçekleştirmek için belirli komutları Visual Studio IDE görüntülemeden oluşturun.
+Kullanın (devenv.exe) DEVENV komut satırı anahtarıyla birlikte — Örneğin, **/Build** veya **/Clean**— gerçekleştirmek için belirli komutları Visual Studio IDE görüntülemeden oluşturun. Genel olarak bu MSBuild izin verebilir çünkü Visual Studio işlemek doğrudan MSBuild karmaşıklığını yerine tercih edilir.
 
-[NMAKE](../build/nmake-reference.md)<br/>
-NMAKE (nmake.exe), geleneksel bir derleme görevleri dosyası kullanarak Visual C++ projeleri derleme görevleri otomatikleştirmek için kullanın.
+[NMAKE](reference/nmake-reference.md)<br/>
+NMAKE (nmake.exe) üzerinde Windows üzerinde geleneksel bir derleme görevleri dosyası tabanlı C++ projeleri derlemek için kullanın.
 
 Komut satırında oluşturduğunuzda F1 komut anında yardım için kullanılamaz. Bunun yerine, uyarılar, hatalar ve iletiler hakkında bilgi almak için bir arama motoru kullanın veya çevrimdışı Yardım dosyalarını kullanabilirsiniz. Aramada kullanılacak [docs.microsoft.com](https://docs.microsoft.com/cpp/), sayfanın üst kısmındaki arama kutusuna arama dizenizi girin.
 
@@ -153,41 +155,41 @@ Komut satırında oluşturduğunuzda F1 komut anında yardım için kullanılama
 
 Belgelerin bu bölümdeki makaleleri komut satırında uygulamalar oluşturmak için komut satırı derleme nasıl kazandırabileceğinizi 64-bit araç takımları ve hedef x86, x64, kullanın ve ARM platformları için komut satırı derleme ortamı özelleştirmek nasıl açıklar nasıl Göster MSBuild ve NMAKE araçları.
 
-[İzlenecek Yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 Oluşturma ve basit bir C++ programını komut satırında derleme gösteren bir örnek sağlar.
 
-[İzlenecek yol: komut satırında C programı derleme](../build/walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut satırında C programı derleme](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
 C programlama dilinde yazılmış bir program derleyin açıklar.
 
-[İzlenecek Yol: Komut Satırında C++/CLI Programını Derleme](../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut Satırında C++/CLI Programı Derleme](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
 Açıklar oluşturma ve derleme C + +/ CLI programını, .NET Framework'ü kullanır.
 
-[İzlenecek Yol: Komut Satırında C++/CX Programı Derleme](../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut Satırında C++/CX Programı Derleme](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
 Açıklar oluşturma ve derleme C + +/ CX programı, Windows çalışma zamanı kullanır.
 
-[Komut Satırı Derlemeleri için Yolu ve Ortam Değişkenlerini Ayarlama](../build/setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
+[Komut Satırı Derlemeleri için Yolu ve Ortam Değişkenlerini Ayarlama](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 Gerekli ortam değişkenlerini hedefleyen x86, x64, komut satırı derlemeleri için ayarlayabilir ve platformları 32 bit veya 64-bit araç setini kullanarak ARM sahip bir komut istemi penceresi başlangıç açıklar.
 
-[NMAKE Başvurusu](../build/nmake-reference.md)<br/>
+[NMAKE Başvurusu](reference/nmake-reference.md)<br/>
 Microsoft Program Bakımı yardımcı programı (NMAKE. açıklayan makalelerin bağlantıları sağlar EXE).
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
-MSBuild.EXE kullanmayı açıklayan makalelerin bağlantıları sağlar.
+[MSBuild komut satırında - C++](msbuild-visual-cpp.md)<br/>
+Komut satırında msbuild.exe kullanmayı açıklayan makalelerin bağlantıları sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)](../build/reference/md-mt-ld-use-run-time-library.md)<br/>
+[/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)](reference/md-mt-ld-use-run-time-library.md)<br/>
 Bu derleyici seçeneklerinin bir hata ayıklama veya sürüm çalışma zamanı kitaplığı kullanmayı açıklar.
 
-[C/C++ Derleyici Seçenekleri](../build/reference/compiler-options.md)<br/>
+[C/C++ Derleyici Seçenekleri](reference/compiler-options.md)<br/>
 C ve C++ derleyici seçenekleri ve CL.exe açıklayan makalelerin bağlantıları sağlar.
 
-[Bağlayıcı Seçenekleri](../build/reference/linker-options.md)<br/>
+[MSVC bağlayıcı seçenekleri](reference/linker-options.md)<br/>
 Bağlayıcı seçenekleri ve LINK.exe açıklayan makalelerin bağlantıları sağlar.
 
-[C/C++ Derleme Araçları](../build/reference/c-cpp-build-tools.md)<br/>
+[Ek MSVC derleme araçları](reference/c-cpp-build-tools.md)<br/>
 C/C++ bağlantılar derleme Visual Studio'ya dahil olan araçları sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)
+[Projeler ve yapı sistemi](projects-and-build-systems-cpp.md)

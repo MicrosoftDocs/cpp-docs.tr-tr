@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - error handling, and notification
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-ms.openlocfilehash: 845a79e035943dbbde0d498702f70ec7dd6b4d3b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29fe46e15712609ec0c4f268749aaefed103117e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432410"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812947"
 ---
 # <a name="error-handling-and-notification"></a>Hata İşleme ve Bildirme
 
 Hata işleme ve bildirme hakkında daha fazla bilgi için bkz. [yardımcı işlevini anlama](understanding-the-helper-function.md).
 
-Kanca işlevlerini raporlama hakkında daha fazla bilgi için bkz. [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).
+Kanca işlevlerini raporlama hakkında daha fazla bilgi için bkz. [yapı ve sabit tanımları](structure-and-constant-definitions.md).
 
 Programınızı Gecikmeli yüklenen DLL'ler kullanıyorsa, program çalışırken oluşan hata işlenmeyen özel durumları sonuçlanır olduğundan, hataları yerine işlemesi gerekir. Hata işleme iki bölümünü oluşur:
 
@@ -27,12 +27,12 @@ Tüm hata işleme için gerekli olan ise yordamı iptal etmek için kullanıcı 
 
 Hata işleme ve bildirme aşağıdaki konular açıklanmaktadır:
 
-- [Bildirim Kancaları](../../build/reference/notification-hooks.md)
+- [Bildirim Kancaları](notification-hooks.md)
 
-- [Hata Kancaları](../../build/reference/failure-hooks.md)
+- [Hata Kancaları](failure-hooks.md)
 
-- [Özel Durumlar](../../build/reference/exceptions-c-cpp.md)
+- [Özel Durumlar](exceptions-c-cpp.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)

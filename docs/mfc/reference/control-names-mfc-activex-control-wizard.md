@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control names
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-ms.openlocfilehash: a143c8b08c73676af0d37cd2b67667e8270dc2b1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a1b310de8cd8fcab1d880738faa7bd8b5b7cef32
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259869"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814104"
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>Denetim Adları, MFC ActiveX Denetim Sihirbazı
 
@@ -86,4 +86,5 @@ ms.locfileid: "57259869"
 [MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [Denetim Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)<br/>
-[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../../ide/file-types-created-for-visual-cpp-projects.md)
+[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)
+

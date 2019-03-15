@@ -4,22 +4,22 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, linker support
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
-ms.openlocfilehash: 2ff5143b8c3850386f73ff713e7986fdc3b59fd1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b6e514a6b13aced4fcd765df091810504f948588
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301395"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809580"
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği
 
-Visual C++ bağlayıcı artık DLL'lerin Gecikmeli yüklemeyi destekler. Bu Windows SDK'sı işlevleri gerek kalmamasını **LoadLibrary** ve **GetProcAddress** Gecikmeli yükleme DLL uygulamak için.
+MSVC bağlayıcı artık DLL'lerin Gecikmeli yüklemeyi destekler. Bu Windows SDK'sı işlevleri gerek kalmamasını **LoadLibrary** ve **GetProcAddress** Gecikmeli yükleme DLL uygulamak için.
 
 Visual C++ 6.0 önce çalışma zamanında bir DLL'yi tek yolu kullanmaktı **LoadLibrary** ve **GetProcAddress**; işletim sistemi DLL'yi yüklemeye, yürütülebilir veya onu yüklenen DLL kullanarak.
 
 Örtük olarak bir DLL ile bağlanırken Visual C++ 6.0 ile başlayarak, programın bu DLL içinde bir işlevi çağırır kadar gecikme seçenekleri DLL'yi sağlar.
 
-Bir uygulama geciktirip kullanarak bir DLL yükleme [/delayload (gecikme yükleme içeri aktarma)](../../build/reference/delayload-delay-load-import.md) yardımcı işlevini (Visual C++ tarafından sağlanan varsayılan uygulaması) ile bağlayıcı seçeneği. Yardımcısı işlevi DLL çalışma zamanında çağırarak yükleyecek **LoadLibrary** ve **GetProcAddress** sizin için.
+Bir uygulama geciktirip kullanarak bir DLL yükleme [/delayload (gecikme yükleme içeri aktarma)](delayload-delay-load-import.md) yardımcı işlevini (Visual C++ tarafından sağlanan varsayılan uygulaması) ile bağlayıcı seçeneği. Yardımcısı işlevi DLL çalışma zamanında çağırarak yükleyecek **LoadLibrary** ve **GetProcAddress** sizin için.
 
 Gecikmeli DLL, yükleme dikkate almanız gerekir:
 
@@ -31,25 +31,25 @@ Bir DLL için Gecikmeli yüklemeye veya derleme sırasında belirtilebilir bir. 
 
 Aşağıdaki konular, DLL'leri yüklemede gecikme açıklar:
 
-- [Gecikme Yükü DLL'lerini Belirtme](../../build/reference/specifying-dlls-to-delay-load.md)
+- [Gecikme Yükü DLL'lerini Belirtme](specifying-dlls-to-delay-load.md)
 
-- [Gecikmeli Yüklenen DLL'i Açıkça Kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)
+- [Gecikmeli Yüklenen DLL'i Açıkça Kaldırma](explicitly-unloading-a-delay-loaded-dll.md)
 
-- [Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md)
+- [Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme](loading-all-imports-for-a-delay-loaded-dll.md)
 
-- [İçeri Aktarılanları Bağlama](../../build/reference/binding-imports.md)
+- [İçeri Aktarılanları Bağlama](binding-imports.md)
 
-- [Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)
+- [Hata İşleme ve Bildirme](error-handling-and-notification.md)
 
-- [Gecikmeli Yükleme İçe Aktarmalarını Dökme](../../build/reference/dumping-delay-loaded-imports.md)
+- [Gecikmeli Yükleme İçe Aktarmalarını Dökme](dumping-delay-loaded-imports.md)
 
-- [DLL'leri Yüklemede Gecikme Kısıtlamaları](../../build/reference/constraints-of-delay-loading-dlls.md)
+- [DLL'leri Yüklemede Gecikme Kısıtlamaları](constraints-of-delay-loading-dlls.md)
 
 - [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)
 
-- [Kendi Yardımcı İşlevinizi Geliştirme](../../build/reference/developing-your-own-helper-function.md)
+- [Kendi Yardımcı İşlevinizi Geliştirme](developing-your-own-helper-function.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../../build/dlls-in-visual-cpp.md)<br/>
-[Bağlama](../../build/reference/linking.md)
+[Visual C++'ta DLL'ler](../dlls-in-visual-cpp.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)

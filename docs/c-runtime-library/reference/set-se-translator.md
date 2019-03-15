@@ -23,12 +23,12 @@ helpviewer_keywords:
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-ms.openlocfilehash: 6435b5bfa2f1f238ae608e68d97d356af7fb03dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18ee500d7b884d1934c29dc91d9bcb03d507680d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521160"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808384"
 ---
 # <a name="setsetranslator"></a>_set_se_translator
 
@@ -89,8 +89,9 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 #include <stdio.h>
 #include <windows.h>
 #include <eh.h>
+#include <exception>
 
-class SE_Exception
+class SE_Exception : public std::exception
 {
 private:
     unsigned int nSE;
@@ -153,6 +154,7 @@ Caught a __try exception, error c0000094.
 #include <eh.h>
 #include <assert.h>
 #include <stdio.h>
+#include <exception>
 
 int thrower_func(int i) {
    int y = 0;
@@ -161,19 +163,19 @@ int thrower_func(int i) {
    return 0;
 }
 
-class CMyException{
+class SE_Exception : public std::exception {
 private:
     unsigned int nSE;
 public:
-    CMyException() : nSE{ 0 } {}
-    CMyException(unsigned int n) : nSE{ n } {}
+    SE_Exception() : nSE{ 0 } {}
+    SE_Exception(unsigned int n) : nSE{ n } {}
     unsigned int getSeNumber() { return nSE; }
 };
 
 #pragma unmanaged
 void my_trans_func(unsigned int u, PEXCEPTION_POINTERS)
 {
-    throw CMyException(u);
+    throw SE_Exception(u);
 }
 
 void DoTest()
@@ -182,9 +184,9 @@ void DoTest()
     {
         thrower_func(10);
     }
-    catch(CMyException e)
+    catch(SE_Exception& e)
     {
-        printf("Caught CMyException.\n");
+        printf("Caught SE_Exception, error %8.8x\n", e.getSeNumber());
     }
     catch(...)
     {
@@ -201,7 +203,7 @@ int main() {
 ```
 
 ```Output
-Caught CMyException, error c0000094
+Caught SE_Exception, error c0000094
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

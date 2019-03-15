@@ -2,17 +2,15 @@
 title: COM modülü sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.COM
 helpviewer_keywords:
 - COM modules classes
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
-ms.openlocfilehash: 6836215714e979f33f39549a61cbfc99b12bd3d7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b4123fc6bc29b6bd657cf972575d52f2c1f10cd4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265047"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807838"
 ---
 # <a name="com-modules-classes"></a>COM modülü sınıfları
 

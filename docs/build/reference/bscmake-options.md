@@ -29,24 +29,24 @@ helpviewer_keywords:
 - /Es BSCMAKE option
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
-ms.openlocfilehash: 669f1fc3ef151ee76ab6b057798f33f5b3cc1287
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf4c3648079dff16481dbdd56b9a70093fd22d8d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464915"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812063"
 ---
 # <a name="bscmake-options"></a>BSCMAKE Seçenekleri
 
 Bu bölümde, BSCMAKE denetlemek için kullanılabilen seçenekler açıklanmaktadır. Çeşitli seçenekler gözatma bilgisi dosyası içeriğini hariç veya belirli bilgiler dahil olmak üzere denetler. Dışlama seçenekleri BSCMAKE daha hızlı çalışmasına izin verebilir ve daha küçük bir .bsc dosyasına neden olabilir. Seçenek adlarını büyük küçük harfe duyarlı (dışında **/HELP** ve **/nologo**).
 
-Yalnızca **/nologo** ve **/o** Visual Studio geliştirme ortamında kullanılabilir.  Bkz: [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md) hakkında bilgi için bir projenin özellik sayfalarındaki erişim.
+Yalnızca **/nologo** ve **/o** Visual Studio geliştirme ortamında kullanılabilir.  Bkz: [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md) hakkında bilgi için bir projenin özellik sayfalarındaki erişim.
 
 **/Ei (** *filename*... **)**<br/>
 Belirlenen içerme dosyalarının içeriğini gözatma bilgileri dosyasını hariç tutar. Birden çok dosyayı belirtmek için adlarının boşlukla ayırın ve liste parantez içine. Parantezler yalnızca birini belirtirseniz gerekli olmayan *filename*. Kullanım **/Ei** ile birlikte **/Es** dosyaları tarafından dışarıda tutma seçeneği **/Es**.
 
 **/El**<br/>
-Yerel semboller dışlar. Yerel simgeler dahil etmek için varsayılandır. Yerel simgeler hakkında daha fazla bilgi için bkz. [bir .sbr dosyası oluşturma](../../build/reference/creating-an-dot-sbr-file.md).
+Yerel semboller dışlar. Yerel simgeler dahil etmek için varsayılandır. Yerel simgeler hakkında daha fazla bilgi için bkz. [bir .sbr dosyası oluşturma](creating-an-dot-sbr-file.md).
 
 **/Em**<br/>
 Semboller makroları gövdesinde dışlar. Kullanım **/Em** makro adları yalnızca gözatma bilgileri dosyasına eklenecek. Makro adları hem de makro genişletmeleri sonucu eklemek için varsayılandır.
@@ -57,10 +57,10 @@ Belirtilen simgeler gözatma bilgileri dosyasını hariç tutar. Birden fazla se
 **/ES**<br/>
 Gözatma bilgileri dosyasından INCLUDE ortam değişkeninde belirtilen mutlak bir yol bulunamadı veya mutlak bir yol ile belirtilen her dahil etme dosyasını hariç tutar. (Sistem genellikle bunlar birçok göz atma bilgisi dosyanıza gerekmeyebilir bilgi içeren dosyaları içerir.) Bu seçenek, belirtilen bir yol olmadan veya göreli yolları ya da dahil etme göreli bir yolunda bulunan dosyaları ile dosyaları dışarıda değil. Kullanabileceğiniz **/Ei** seçeneği ile birlikte **/Es** dışlanacak dosyalar **/Es** hariç tutmaz. Yalnızca bazı dosyaları dışarıda bırakmak istiyorsanız, **/Es** hariç kullanın **/Ei** yerine **/Es** ve hariç tutmak istediğiniz dosyaları listeleyebilirsiniz.
 
-**/ errorreport:**[**hiçbiri** &#124; **istemi** &#124; **kuyruk** &#124; **Gönder**]<br/>
+**/errorreport:**[**none** &#124; **prompt** &#124; **queue** &#124; **send**]<br/>
 Bscmake.exe iç hatalara ilişkin bilgileri Microsoft'a sağlar.
 
-Daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+Daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](errorreport-report-internal-compiler-errors.md).
 
 **/HELP**<br/>
 BSCMAKE komut satırı sözdizimi özetini görüntüler.
@@ -69,7 +69,7 @@ BSCMAKE komut satırı sözdizimi özetini görüntüler.
 Başvurulmayan semboller içerir. Varsayılan olarak tanımlandı ancak başvurulmayan semboller BSCMAKE kaydetmez. .Sbr dosyası paketlenmiş, derleyici başvurulmayan semboller zaten kaldırıldığından bu seçeneği, giriş dosyası için etkisi yoktur.
 
 **/n**<br/>
-Artımlı olmayan bir derleme zorlar. Kullanım **/n** .bsc dosyası olup olmadığı mevcut gözatma bilgisi dosyası tam bir derlemesini zorlamak için ve .sbr dosyaları kesildi gelen önlemek için. Bkz: [BSCMAKE .bsc dosyasını nasıl derler](../../build/reference/how-bscmake-builds-a-dot-bsc-file.md).
+Artımlı olmayan bir derleme zorlar. Kullanım **/n** .bsc dosyası olup olmadığı mevcut gözatma bilgisi dosyası tam bir derlemesini zorlamak için ve .sbr dosyaları kesildi gelen önlemek için. Bkz: [BSCMAKE .bsc dosyasını nasıl derler](how-bscmake-builds-a-dot-bsc-file.md).
 
 **/ NOLOGO**<br/>
 BSCMAKE telif hakkı iletisini görüntüler.
@@ -92,6 +92,6 @@ BSCMAKE üç .sbr dosyaları MAIN.bsc tam bir derlemesini yapmak için şu komut
 BSCMAKE /n /S toolbox.h /o main.bsc file1.sbr file2.sbr file3.sbr
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)
+[BSCMAKE Başvurusu](bscmake-reference.md)

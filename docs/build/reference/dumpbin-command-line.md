@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPBIN program, command line
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
-ms.openlocfilehash: 72b907abbbb52a881feb415e47a768e61a9819ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f94b26ca3bdc2778c2f9ed41103b456f5194fe3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539288"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807396"
 ---
 # <a name="dumpbin-command-line"></a>DUMPBIN Komut Satırı
 
@@ -27,7 +27,7 @@ Bir seçenek belirtmeden bir dosya DUMPBIN çalıştırdığınızda, / Summary 
 
 Komut yazdığınızda `dumpbin` herhangi diğer komut satırı girişi olmadan, buna ilişkin seçenekler özetlenmektedir bir kullanım deyimi DUMPBIN görüntüler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
-[DUMPBIN Başvurusu](../../build/reference/dumpbin-reference.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
+[DUMPBIN Başvurusu](dumpbin-reference.md)

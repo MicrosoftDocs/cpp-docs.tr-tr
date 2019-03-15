@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -GA compiler option [C++]
 - Optimize for Windows compiler options
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-ms.openlocfilehash: 04f8e9e19e5224c1a03ab1c7679d37b7bb8d1389
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5eb6a10f3c4833ecc3e9d9c8451894788ebd938
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503344"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817393"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA (Windows Uygulaması için İyileştir)
 
@@ -35,7 +35,7 @@ Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -47,7 +47,7 @@ Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
-ms.openlocfilehash: 75f8fcae2a51e4e8296f6f3c252888b6ca55ad20
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eabd488e581357ec1386b20597c1987e4c8b2c19
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520360"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809736"
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio'da Bildirim Oluşturma
 
@@ -27,11 +27,8 @@ Visual Studio'da derleme sistemi son ikili uygulama dosyasında katıştırılm�
 
 1. İkili dosyada gömülü bildirimle bildirim aracı tarafından oluşturulan bildirim ile aynı olduğunda, derleme yapı adımlarda devam eder.
 
-Metin kaynak olarak son ikili içinde bildirim katıştırılır ve son ikili açarak Visual Studio'da bir dosya olarak görüntülenebilir. Bildirim doğru kitaplıklara işaret ettiğinden emin olmak için açıklanan adımları izleyin. [Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md) veya açıklanan önerileri uygulayın [sorungiderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) bölümü.
+Metin kaynak olarak son ikili içinde bildirim katıştırılır ve son ikili açarak Visual Studio'da bir dosya olarak görüntülenebilir. Bildirim doğru kitaplıklara işaret ettiğinden emin olmak için açıklanan adımları izleyin. [Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md) veya açıklanan önerileri uygulayın [sorungiderme](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) bölümü.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md)<br/>
-[Özel derlemeler hakkında](/windows/desktop/SbsCs/about-private-assemblies-)<br/>
-[Bildirim aracı](/windows/desktop/SbsCs/mt-exe)<br/>
-[C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+[C/C++ Programları Bildirim Üretimini Anlama](understanding-manifest-generation-for-c-cpp-programs.md)

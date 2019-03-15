@@ -8,12 +8,12 @@ helpviewer_keywords:
 - export files
 - import libraries, creating
 ms.assetid: d8175596-9773-4c2f-959d-b05b065a5161
-ms.openlocfilehash: 71162d896ee76d99f5d47dfa670b62d456243837
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f6f2d5c48c63ba6d8a8a7f67a98b949b32a8afa
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445688"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810120"
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
 
@@ -25,6 +25,6 @@ Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığın�
 
 Ayrıca alır bir programa bir DLL'nin dışa aktardığında, ancak olup doğrudan veya dolaylı olarak, LIB içeri aktarma kitaplıkları birini kullanmanız gerekir. LIB içeri aktarma kitaplığı oluşturduğunda, dışarı aktarma dosyası da oluşturur. Dışarı aktarma dosyası Ddl'lerden biri bağlanırken kullanmanız gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB Başvurusu](../../build/reference/lib-reference.md)
+[LIB Başvurusu](lib-reference.md)

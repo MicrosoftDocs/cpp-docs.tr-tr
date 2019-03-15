@@ -1,17 +1,17 @@
 ---
-title: 'Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme'
+title: 'Nasıl yapılır: Kayıt gerektirmeyen COM bileşenlerini derleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - COM components, registration-free
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
-ms.openlocfilehash: 4f4ebf121b761c37969fa3f9788bda52d913f340
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 783677c97835acc98751fc4a19f9405af752b71a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463537"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809606"
 ---
-# <a name="how-to-build-registration-free-com-components"></a>Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme
+# <a name="how-to-build-registration-free-com-components"></a>Nasıl yapılır: Kayıt gerektirmeyen COM bileşenlerini derleme
 
 Kayıt gerektirmeyen COM bileşenlerini DLL'lere oluşturulan bildirimleri sahip bir COM bileşenlerdir.
 
@@ -27,8 +27,6 @@ Kayıt gerektirmeyen COM bileşenlerini DLL'lere oluşturulan bildirimleri sahip
 
 1. Çözümü oluşturun.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications)<br/>
-[Yan yana derlemeler hakkında](/windows/desktop/SbsCs/about-side-by-side-assemblies-)<br/>
-[Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+[Nasıl yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](how-to-build-isolated-applications-to-consume-com-components.md)

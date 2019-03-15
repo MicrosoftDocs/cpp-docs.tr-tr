@@ -14,16 +14,16 @@ helpviewer_keywords:
 - .pdb files, creating
 - FD compiler option [C++]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
-ms.openlocfilehash: 449b0a2be44f438c35feeb446df6d7c47f270c35
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c686de7dc9c9c20c404240db558d2ff66078ceb7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494323"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808995"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd (Program Veritabanı Dosya Adı)
 
-Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı belirtir [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md).
+Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı belirtir [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,7 +43,7 @@ Bu seçenek ayrıca en az yeniden derleme ve artımlı derleme için kullanılan
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -63,9 +63,9 @@ Bu komut satırı PROG.pdb ve PROG.idb adlı .idb dosyası adlı bir .pdb dosyas
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Yol Adını Belirtme](specifying-the-pathname.md)

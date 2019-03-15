@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DELAYSIGN linker option
 - -DELAYSIGN linker option
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20
-ms.openlocfilehash: 233a41a3e55ff2726712541b0af9db1f5e55eb56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 65585b856627ad9fda5a8f8bfad6ad81fef0f81c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435626"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807656"
 ---
 # <a name="delaysign-partially-sign-an-assembly"></a>/DELAYSIGN (Derlemeyi Kısmen İmzala)
 
@@ -31,7 +31,7 @@ Derleme olmayan kısmen imzalanması gerektiğini belirtir.
 
 Kullanım **/delaysign** yalnızca derleme içinde ortak anahtar yerleştirmek istiyorsanız. Varsayılan değer **delaysıgn: No**.
 
-**/Delaysign** seçeneği ile birlikte kullanılmadığı sürece hiçbir etkiye sahiptir [/keyfile](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) veya [/keycontainer](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md).
+**/Delaysign** seçeneği ile birlikte kullanılmadığı sürece hiçbir etkiye sahiptir [/keyfile](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) veya [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md).
 
 Tam imzalı bir derleme istediğinizde; derleyici bildirimi (derleme meta verileri) içeren ve karmayı özel anahtarla imzalar dosyayı karma hale getirir. Elde edilen dijital imza, bildirimi içeren dosyada depolanır. Bir derlemeyi gecikmeli imzalanmış olduğunda, bağlayıcı işlem değil ve daha sonra imzanın eklenmesi için dosyada depolamak imzaya ancak ayırır.
 
@@ -41,19 +41,19 @@ Bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../../dotne
 
 Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekleri şunlardır:
 
-- [/ ASSEMBLYDEBUG](../../build/reference/assemblydebug-add-debuggableattribute.md)
+- [/ ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)
 
-- [/ ASSEMBLYLINKRESOURCE](../../build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md)
+- [/ ASSEMBLYLINKRESOURCE](assemblylinkresource-link-to-dotnet-framework-resource.md)
 
-- [/ ASSEMBLYMODULE](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md)
+- [/ ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)
 
-- [/ ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md)
+- [/ ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md)
 
-- [/ NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)
+- [/ NOASSEMBLY](noassembly-create-a-msil-module.md)
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -65,7 +65,7 @@ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekler
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

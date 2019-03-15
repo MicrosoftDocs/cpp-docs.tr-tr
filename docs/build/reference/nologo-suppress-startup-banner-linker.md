@@ -13,12 +13,12 @@ helpviewer_keywords:
 - banners, suppressing startup
 - NOLOGO linker option
 ms.assetid: 3b20dddd-eca6-4545-a331-9f70bf720197
-ms.openlocfilehash: d246da2e10f7c16f7c194962841e2e44d1fd1758
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ef0c6f8e0073e7450daa8d0433ce4d6e82ceab8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515550"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812505"
 ---
 # <a name="nologo-suppress-startup-banner-linker"></a>/NOLOGO (Başlangıç Başlığını Gösterme) (Bağlayıcı)
 
@@ -30,7 +30,7 @@ ms.locfileid: "50515550"
 
 / Nologo seçeneği telif hakkı iletisi ve sürüm numarasını görüntülenmesini önler.
 
-Bu seçenek, ayrıca komut dosyaları Yankı bastırır. Ayrıntılar için bkz [LINK komut dosyaları](../../build/reference/link-command-files.md).
+Bu seçenek, ayrıca komut dosyaları Yankı bastırır. Ayrıntılar için bkz [LINK komut dosyaları](linking.md).
 
 Varsayılan olarak, bu bilgiler, çıkış penceresine bağlayıcı tarafından gönderilir. Komut satırında, bunu standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.
 
@@ -42,7 +42,7 @@ Varsayılan olarak, bu bilgiler, çıkış penceresine bağlayıcı tarafından 
 
 1. Bu bağlayıcı seçeneğini program aracılığıyla değiştirilemez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

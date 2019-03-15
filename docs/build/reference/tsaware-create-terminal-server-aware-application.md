@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -TSAWARE linker option
 - TSAWARE linker option
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-ms.openlocfilehash: 4b6cebfd30c6572c2ea7d9a0e59625ac8fd66de1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6ed6184f8ae4b3a0f9db3c1f962a2918a185138
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566601"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816951"
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 
@@ -34,15 +34,15 @@ Terminal sunucusu kullanan bir uygulama ise, gerekir INI dosyalarına dayanan ne
 
 / TSAWARE kullandığınız ve uygulamanızı INİ dosyaları yine de kullanıyorsa, dosya sisteminin tüm kullanıcılar tarafından paylaşılır. Kabul edilebilir ise, / TSAWARE uygulamanızla hala bağlantı oluşturabilirsiniz; Aksi takdirde: No kullanmanız gerekir.
 
-/ TSAWARE seçeneği, Windows ve konsol uygulamaları için varsayılan olarak etkindir. Bkz: [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) ve [/VERSION](../../build/reference/version-version-information.md) bilgi.
+/ TSAWARE seçeneği, Windows ve konsol uygulamaları için varsayılan olarak etkindir. Bkz: [/Subsystem](subsystem-specify-subsystem.md) ve [/VERSION](version-version-information.md) bilgi.
 
 / TSAWARE, sürücüleri, VxD veya dll için geçerli değil.
 
-/ TSAWARE ile DUMPBIN uygulamanın bağlı olduğu [OPTIONAL](../../build/reference/headers.md) belirlememişse bu bağlamda bilgileri görüntüler.
+/ TSAWARE ile DUMPBIN uygulamanın bağlı olduğu [OPTIONAL](headers.md) belirlememişse bu bağlamda bilgileri görüntüler.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -54,9 +54,9 @@ Terminal sunucusu kullanan bir uygulama ise, gerekir INI dosyalarına dayanan ne
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TerminalServerAware%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
 [Kullanıcıya özgü bilgileri depolayan](/windows/desktop/TermServ/storing-user-specific-information)<br/>
 [Terminal Hizmetleri ortamında eski uygulamaları](https://msdn.microsoft.com/library/aa382957.aspx)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -D compiler option [C++]
 - D compiler option [C++]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-ms.openlocfilehash: 21836d2842427581cc5019a42c563a78356d1ec2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18bbdb980c63b3c04b432602afb2402c5e2c42e7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620512"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812089"
 ---
 # <a name="d-preprocessor-definitions"></a>/D (Önişlemci Tanımları)
 
@@ -54,7 +54,7 @@ Bu komut tüm anahtar sözcüğü kaldırır `__far` TEST.c içinde:
 SET CL=/DTEST#0
 ```
 
-Komut isteminde önceden işleme simgesi tanımladığınızda, hem derleyici ayrıştırma kurallarını hem de kabuk ayrıştırma kurallarını göz önünde bulundurun. Örneğin, programınızda yüzde işareti önceden işleme simgesini (%) tanımlamak için, komut isteminde iki tane yüzde işareti karakteri (%%) belirtin, bir tane belirtmeniz durumunda ayrıştırma hatası yayılır.
+Komut isteminde önceden işleme simgesi tanımladığınızda, hem derleyici ayrıştırma kurallarını hem de kabuk ayrıştırma kurallarını göz önünde bulundurun. Örneğin, bir yüzde işareti önceden işleme simgesini (%) tanımlamak için programınızda, iki tane yüzde işareti karakteri (%%) belirtin. komut isteminde: Yalnızca bir tane belirtmeniz durumunda ayrıştırma hatası yayılır.
 
 ```
 CL /DTEST=%% TEST.C
@@ -62,7 +62,7 @@ CL /DTEST=%% TEST.C
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Sol bölmede seçin **yapılandırma özellikleri**, **C/C++**, **önişlemci**.
 
@@ -95,10 +95,10 @@ int main( )
 TEST defined 1
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/U, /u (Simge Tanımlarını Kaldır)](../../build/reference/u-u-undefine-symbols.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[/U, /u (Simge Tanımlarını Kaldır)](u-u-undefine-symbols.md)<br/>
 [#undef Yönergesi (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br/>
 [#define Yönergesi (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

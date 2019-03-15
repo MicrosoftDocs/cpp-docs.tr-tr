@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-ms.openlocfilehash: cac4dc0908c86574ef5b57c4436f734f94c0bb49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5901ef1997cfea84c97b6d91b30335ff7dbc1d9f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473417"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818056"
 ---
 # <a name="fe-name-exe-file"></a>/Fe (EXE Dosyasını Adlandır)
 
@@ -40,7 +40,7 @@ Belirtirseniz [/c (derleme olmadan bağlamayı)](c-compile-without-linking.md) s
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Açık **yapılandırma özellikleri** > **bağlayıcı** > **genel** özellik sayfası.
 
@@ -68,7 +68,7 @@ CL /FeC:\BIN\ *.C
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)<br/>
+[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[Yol Adını Belirtme](specifying-the-pathname.md)<br/>

@@ -2,18 +2,16 @@
 title: IUnknown
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- IUnknown
 helpviewer_keywords:
 - COM interfaces, base interface
 - IUnknown interface
 ms.assetid: e6b85472-e54b-4b8c-b19f-4454d6c05a8f
-ms.openlocfilehash: 047e109e8098ed89ac89c05e434b54c91fda189a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 17561092c6cccbad264bb82d68dbef9c0e078f76
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270587"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809840"
 ---
 # <a name="iunknown"></a>IUnknown
 

@@ -33,12 +33,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: cb11a74932e44f94f481a2fdc48b8d6ee359f9e8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: afa49a4d54397cf79a3bd0af28e4a0f0a4c7639e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260549"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818641"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 
@@ -55,7 +55,7 @@ C++ özel durumlarını yerine MFC özel durum makroları kullanmak için mevcut
 MFC özel durum makroları kullanarak uygulama geliştirdiyseniz Bu makrolar, yeni kodunuzda C++ özel durumlarını kullanırken mevcut kodunuzu kullanmaya devam edebilirsiniz. Makaleyi [özel durumlar: Sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) Bunu yapmak için yönergeler sağlar.
 
 > [!NOTE]
->  C++ özel durum işleme kodunuzda etkinleştirmek için C/C++ klasörü projeye ait kod oluşturma sayfasında C++ özel durumlarını etkinleştir seçin [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu veya kullanım [/ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.
+>  C++ özel durum işleme kodunuzda etkinleştirmek için C/C++ klasörü projeye ait kod oluşturma sayfasında C++ özel durumlarını etkinleştir seçin [özellik sayfaları](../build/reference/property-pages-visual-cpp.md) iletişim kutusu veya kullanım [/ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.
 
 Bu makalede, aşağıdaki konular ele alınmaktadır:
 
