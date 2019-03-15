@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], linking to DLLs
 - loading DLLs [C++]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-ms.openlocfilehash: 24912c13d3528377ab849a4205ef072eb26490d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc7a676059af17e7a42189c7c15ca157a081e08a
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648779"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57818368"
 ---
 # <a name="link-an-executable-to-a-dll"></a>Bir DLL'ye bağlandığı bir yürütülebilir dosya
 
@@ -30,7 +30,7 @@ Bir yürütülebilir dosya için aynı DLL'yi bağlamak için ya da bağlama yö
 
 <a name="determining-which-linking-method-to-use"></a>
 
-## <a name="determine-which-linking-method-to-use"></a>Hangi bağlama yönteminin kullanılacağını belirleme
+## <a name="link-an-executable-to-a-dll"></a>Bir DLL'ye bağlandığı bir yürütülebilir dosya
 
 Örtük bağlama veya açık bağlama kullanmak için uygulamanız için yapmanız gereken, mimari bir karardır. Avantajlar ve dezavantajlar her yöntem için vardır.
 
@@ -70,13 +70,13 @@ Dikkat edilmesi gereken açık bağlama iki riskleri şunlardır:
 
 <a name="linking-implicitly"></a>
 
-## <a name="how-to-link-implicitly-to-a-dll"></a>DLL'ye örtük olarak bağlama
+## <a name="link-an-executable-to-a-dll"></a>Bir DLL'ye bağlandığı bir yürütülebilir dosya
 
 Örtük bağlama bir DLL kullanmak için İstemci yürütülebilir dosyaları, DLL sağlayıcısından bu dosyaları edinmeniz gerekir:
 
 - Dışarı aktarılan verileri, işlevleri ve/veya C++ sınıfları dll bildirimlerini içeren bir veya daha fazla üst bilgi dosyaları (.h). Sınıflar, İşlevler ve DLL tarafından dışarı aktarılan verileri tüm işaretlenmelidir `__declspec(dllimport)` üstbilgi dosyasında. Daha fazla bilgi için [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
-- Yürütülebilir dosyanın içine bağlamak için içeri aktarma kitaplığı. Bağlayıcı, DLL derlenirken içeri aktarma kitaplığı oluşturur. Daha fazla bilgi için [. LIB dosyaları](../build/reference/dot-lib-files-as-linker-input.md).
+- Yürütülebilir dosyanın içine bağlamak için içeri aktarma kitaplığı. Bağlayıcı, DLL derlenirken içeri aktarma kitaplığı oluşturur. Daha fazla bilgi için [. LIB dosyaları](reference/dot-lib-files-as-linker-input.md).
 
 - Gerçek DLL dosyası.
 
@@ -139,10 +139,10 @@ Farklı olarak bu örnekte, çoğu durumda çağırmalısınız `LoadLibrary` ve
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](../build/reference/working-with-import-libraries-and-export-files.md)
+- [İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](reference/working-with-import-libraries-and-export-files.md)
 
 - [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

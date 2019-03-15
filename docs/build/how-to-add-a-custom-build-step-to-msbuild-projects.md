@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme'
+title: 'Nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme'
 ms.date: 11/04/2016
 f1_keywords:
 - msbuild.cpp.howto.addcustombuildstep
 helpviewer_keywords:
 - 'msbuild (c++), howto: add a custom build step'
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
-ms.openlocfilehash: 7b169bfc6668fc284b45554d08d68880967a7de1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c64c6875d82000d6a0ac880b103b5e220015cb3
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610983"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57814013"
 ---
-# <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme
+# <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme
 
 Özel derleme adımı bir derleme kullanıcı tanımlı bir adımdır. Özel derleme adımı diğer gibi davranır *komut aracını* gibi standart derleme veya bağlantı aracı adım adım.
 
@@ -27,7 +27,7 @@ Belirtin `CustomBuildBeforeTargets` belirli bir hedefe çalışmadan önce özel
 
 ### <a name="to-define-what-is-executed-by-the-custom-build-step"></a>Özel derleme adımı tarafından yürütülen tanımlamak için
 
-1. Proje dosyasına bir özellik grubuna ekleyin. Bu özellik grubunda, aşağıdaki örnekte gösterildiği gibi komutu, girişleri ve çıkışları ve bir ileti belirtin. Bu örnek, oluşturduğunuz Main.cpp öğesi dosyasından bir .cab dosyası oluşturur. [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md).
+1. Proje dosyasına bir özellik grubuna ekleyin. Bu özellik grubunda, aşağıdaki örnekte gösterildiği gibi komutu, girişleri ve çıkışları ve bir ileti belirtin. Bu örnek, oluşturduğunuz Main.cpp öğesi dosyasından bir .cab dosyası oluşturur. [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md).
 
     ```
     <ItemDefinitionGroup>
@@ -50,8 +50,8 @@ Belirtin `CustomBuildBeforeTargets` belirli bir hedefe çalışmadan önce özel
     </PropertyGroup>
     ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
-[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>
-[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)
+[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[Nasıl yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](how-to-use-build-events-in-msbuild-projects.md)<br/>
+[Nasıl yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](how-to-add-custom-build-tools-to-msbuild-projects.md)

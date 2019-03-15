@@ -2,18 +2,16 @@
 title: " ATL sınıf üreteci sınıfları"
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.classes.factories
 helpviewer_keywords:
 - class factories
 - class factories, ATL classes
 ms.assetid: 1d8c2ae2-2c37-452c-a02d-1ecbdd309f84
-ms.openlocfilehash: ebabb8c58c4ac1c2e7203cdd7e554e75cc937df6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dd39f8428669686910a1c83b3925727b2bd8edbe
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271846"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57817705"
 ---
 # <a name="class-factories-classes"></a>Sınıf üreteci sınıfları
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-ms.openlocfilehash: a43cce2633fc2f54374bee6b5ef7196dbb87ad55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63cfd2bd206a361301c75110a684e1d2c642a1f2
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663781"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57819512"
 ---
 # <a name="analyze-code-analysis"></a>/analyze (Kod Çözümleme)
 
@@ -32,7 +32,7 @@ Kod analizini ve denetim seçeneklerini etkinleştirir.
 
 / Varsayılan modda analizi açar analiz edin. Analiz çıktısı gider **çıkış** penceresi gibi diğer hata iletileri. Kullanım **/ analyze-** analizi açıkça etkinleştirmek için.
 
-/ analyze: WX-belirtme **/ analyze: WX -** kullanarak derleme yaptığınızda Kod Analizi uyarılarının anlamına gelir hata olarak işlenmeyeceği **wx**. Daha fazla bilgi için [/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md).
+/ analyze: WX-belirtme **/ analyze: WX -** kullanarak derleme yaptığınızda Kod Analizi uyarılarının anlamına gelir hata olarak işlenmeyeceği **wx**. Daha fazla bilgi için [/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)](compiler-option-warning-level.md).
 
 / analyze: log `filename` ayrıntılı çözümleyici sonuçları tarafından belirtilen dosyaya XML olarak yazılır `filename`.
 
@@ -79,7 +79,7 @@ Daha fazla bilgi için [C/C++ genel bakış için Kod Analizi](/visualstudio/cod
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri** düğümü.
 
@@ -93,7 +93,7 @@ Daha fazla bilgi için [C/C++ genel bakış için Kod Analizi](/visualstudio/cod
 
 1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnablePREfast%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
-- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+- [MSVC derleyici seçenekleri](compiler-options.md)
+- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

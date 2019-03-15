@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
-ms.openlocfilehash: 13d25a73a0c70789e8b860607e9f222e69ae6d36
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b2563ba0ae2a07bc9f9d81128745ed4b9651fb6c
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537936"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57815183"
 ---
 # <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
@@ -47,7 +47,7 @@ Kodunuzu olduğundan Derleyici COM genel işlevlerini kullanıyorsa **/ZC: wchar
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **dil** sayfası.
 
@@ -59,4 +59,4 @@ Kodunuzu olduğundan Derleyici COM genel işlevlerini kullanıyorsa **/ZC: wchar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>

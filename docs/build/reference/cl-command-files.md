@@ -8,18 +8,18 @@ helpviewer_keywords:
 - command files
 - command files, CL compiler
 ms.assetid: ec3cea06-2af0-4fe9-a94c-119c9d31b3a9
-ms.openlocfilehash: 43bac2c1bd5cc3588c52e6ff7af234df56a0b25d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9810f7b4308eab2b47a068072039335e59e19f5f
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642487"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57816080"
 ---
 # <a name="cl-command-files"></a>CL Komut Dosyaları
 
-Bir komut dosyası seçenekleri ve aksi takdirde yazarsınız üzerinde dosya adlarını içeren bir metin dosyasıdır [komut satırı](../../build/reference/compiler-command-line-syntax.md) veya belirtmeyi [CL ortam değişkeninde](../../build/reference/cl-environment-variables.md). CL derleyici komut dosyası CL ortam değişkeninde veya komut satırında bir bağımsız değişken olarak kabul eder. Komut satırında veya CL ortam değişkeninde olanın aksine, komut dosyası birden fazla satırı seçeneği ve dosya adı kullanmanıza izin verir.
+Bir komut dosyası seçenekleri ve aksi takdirde yazarsınız üzerinde dosya adlarını içeren bir metin dosyasıdır [komut satırı](compiler-command-line-syntax.md) veya belirtmeyi [CL ortam değişkeninde](cl-environment-variables.md). CL derleyici komut dosyası CL ortam değişkeninde veya komut satırında bir bağımsız değişken olarak kabul eder. Komut satırında veya CL ortam değişkeninde olanın aksine, komut dosyası birden fazla satırı seçeneği ve dosya adı kullanmanıza izin verir.
 
-Seçenekler ve dosya adları, komut dosyası CL ortam değişkeninde veya komut satırında bir komut dosya konumuna göre işlenir. Bununla birlikte, / Link seçeneği komut dosyasında görünüyorsa, satırın geri kalanını tüm seçenekleri bağlayıcıya geçirilir. Yine de sonraki satırlarında komut dosyası ve sonra komut dosyasını çağırma seçeneklerini komut satırında derleyici seçeneği olarak kabul edilir. Seçenekleri sırası yorumları nasıl etkilediği hakkında daha fazla bilgi için bkz. [CL seçenekleri sırası](../../build/reference/order-of-cl-options.md).
+Seçenekler ve dosya adları, komut dosyası CL ortam değişkeninde veya komut satırında bir komut dosya konumuna göre işlenir. Bununla birlikte, / Link seçeneği komut dosyasında görünüyorsa, satırın geri kalanını tüm seçenekleri bağlayıcıya geçirilir. Yine de sonraki satırlarında komut dosyası ve sonra komut dosyasını çağırma seçeneklerini komut satırında derleyici seçeneği olarak kabul edilir. Seçenekleri sırası yorumları nasıl etkilediği hakkında daha fazla bilgi için bkz. [CL seçenekleri sırası](order-of-cl-options.md).
 
 Bir komut dosyası CL komut içermemelidir. Her seçeneği başlamalı ve bitmelidir aynı satırda; ters eğik çizgi kullanılamaz (**\\**) iki satırı seçeneği birleştirmek için.
 
@@ -45,7 +45,7 @@ CL /Ob2 /Og MYAPP.C /link LIBC.LIB
 
 Komut satırını ve komut dosyalı komutlar etkili bir şekilde birleştirilir unutmayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)

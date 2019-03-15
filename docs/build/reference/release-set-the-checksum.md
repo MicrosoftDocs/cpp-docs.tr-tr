@@ -10,12 +10,12 @@ helpviewer_keywords:
 - checksum setting
 - RELEASE linker option
 ms.assetid: 93bcadf4-29ac-4824-914b-6997e3751d22
-ms.openlocfilehash: 6a45e6caa94054d4d485476786ecc5149545ed8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1dc09b38beeb763733f8fa6a8ffa972059b30e03
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478815"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57819474"
 ---
 # <a name="release-set-the-checksum"></a>/RELEASE (Sağlama Toplamını Ayarla)
 
@@ -29,11 +29,11 @@ ms.locfileid: "50478815"
 
 İşletim sistemi sağlama toplamı için cihaz sürücüleri gerektirir. Gelecekteki işletim sistemleriyle uyumluluğu sağlamak için yayın sürümleri, aygıt sürücüsü için sağlama toplamı ayarlayın.
 
-/ Release seçeneği varsayılan olarak ayarlanır, [natıve](../../build/reference/subsystem-specify-subsystem.md) seçeneği belirtildi.
+/ Release seçeneği varsayılan olarak ayarlanır, [natıve](subsystem-specify-subsystem.md) seçeneği belirtildi.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -45,7 +45,7 @@ ms.locfileid: "50478815"
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SetChecksum%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

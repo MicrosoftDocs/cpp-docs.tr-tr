@@ -1,18 +1,16 @@
 ---
 title: ATL sınıfına genel bakış
 ms.date: 11/04/2016
-f1_keywords:
-- vc.atl.classes
 helpviewer_keywords:
 - classes [C++], ATL
 - ATL, class reference
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
-ms.openlocfilehash: 9d0e74a02a114392a3fc686142f84a9a807d1537
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fbb9e2454aadd33db61c722704e17ce95f3df4c4
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288057"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57808332"
 ---
 # <a name="atl-class-overview"></a>ATL sınıfına genel bakış
 

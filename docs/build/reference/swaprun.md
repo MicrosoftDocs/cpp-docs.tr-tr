@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -SWAPRUN editbin option
 - SWAPRUN editbin option
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7
-ms.openlocfilehash: 0440d268a807e6f3f43beb9f38bd1950dee55ffd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff11e64ae8ec0eb5236369e8322e051ee40b26bd
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550728"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57820123"
 ---
 # <a name="swaprun"></a>/SWAPRUN
 
@@ -33,6 +33,6 @@ NET ya da CD niteleyicileri kaldırın ya da ekleyin:
 
 - Kullanım! NET ve! NET ve CD etkilerini tersine çevirmek için CD'ı tıklatın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+[EDITBIN Seçenekleri](editbin-options.md)

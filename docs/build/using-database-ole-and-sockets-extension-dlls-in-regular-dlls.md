@@ -6,18 +6,18 @@ helpviewer_keywords:
 - DLLs [C++], extension
 - DLLs [C++], regular
 ms.assetid: 9f1d14a7-9e2a-4760-b3b6-db014fcdb7ff
-ms.openlocfilehash: 74945f712fed68548e3853d231a586ec0c70d84b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d08822a04abe5a01883ad8aa1bd6d94269e810cc
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587531"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57807981"
 ---
 # <a name="using-database-ole-and-sockets-mfc-extension-dlls-in-regular-mfc-dlls"></a>Normal MFC DLL'lerinde veritabanı, OLE ve yuva MFC uzantısı DLL'leri kullanma
 
 MFC uzantısı DLL içine bağlı değilse, bir MFC uzantılı DLL dosyasından Normal MFC DLL'SİNİN kullanırken **CDynLinkLibrary** nesne zinciri Normal MFC DLL'SİNİN, bir veya daha fazla ilgili sorunlarını bir dizi çalışabilir. MFC veritabanı, OLE ve yuva hata ayıklama sürümleri desteklediğinden DLL'leri MFC uzantısı DLL'leri olarak uygulanır, açıkça herhangi birini kendi MFC uzantısı DLL'leri kullanmadığınız olsa bile bu MFC kullanıyorsanız benzer sorunlara özelliklerini görebilirsiniz. Bazı Belirtiler şunlardır:
 
-- Ne zaman sınıf türünde bir nesnenin serisini kaldırma girişimi izin ver tanımlanan MFC uzantısı DLL, ileti "Uyarı: arşivden CYourClass yüklenemiyor. Sınıf tanımlı değil." İzleme hata ayıklama penceresine ve nesneyi serileştirmek için başarısız görünür.
+- Ne zaman sınıf türünde bir nesnenin serisini kaldırma girişimi izin ver tanımlanan MFC uzantısı DLL, ileti "Uyarı: Arşivden CYourClass yüklenemiyor. Sınıf tanımlı değil." İzleme hata ayıklama penceresine ve nesneyi serileştirmek için başarısız görünür.
 
 - Hatalı sınıfı gösteren bir özel durum.
 
@@ -55,7 +55,7 @@ Bir MFC uzantılı DLL yalnızca bir MFC uygulaması (.exe) ve hiçbir zaman Nor
 
 Birden çok sağlamak için kötü bir fikir olduğunu unutmayın **CDynLinkLibrary** nesnenin bir MFC uzantısı DLL, herhangi bir zincirde MFC uzantısı DLL özellikle dinamik olarak bellekten olacaksa. Başlatma işlevinin herhangi bir modülden birden çok kez çağırmanız gerekmez.
 
-## <a name="sample-code"></a>Örnek kod
+## <a name="sample-code"></a>Örnek Kod
 
 Bu örnek kod, Normal MFC DLL, MFC uzantısı DLL örtük olarak bağlama varsayar. Bu, Normal MFC DLL'yi oluştururken MFC uzantısı DLL içeri aktarma kitaplığına (.lib) bağlantı kurularak gerçekleştirilir.
 
@@ -132,22 +132,22 @@ BOOL CYourRegularDLL::InitInstance()
 
 ### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [Bir MFC uzantılı DLL başlatma](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [Bir MFC uzantılı DLL başlatma](run-time-library-behavior.md#initializing-extension-dlls)
 
-- [Normal MFC DLL'leri Başlat](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [Normal MFC DLL'leri Başlat](run-time-library-behavior.md#initializing-regular-dlls)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC uzantısı DLL’leri](../build/extension-dlls.md)
+- [MFC uzantısı DLL’leri](extension-dlls.md)
 
-- [Statik Olarak MFC'ye Bağlı Normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Statik Olarak MFC'ye Bağlı Normal MFC DLL'leri](regular-dlls-statically-linked-to-mfc.md)
 
-- [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
 - [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
 - [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC uzantısı DLL’leri](../build/extension-dlls.md)
+[MFC uzantısı DLL’leri](extension-dlls.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - semicolon, command files
 - / command files
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-ms.openlocfilehash: 73a259faa57d74fbe535bfa329dfc2a39cb6bbad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e95427b571cd14ad39a7ba4f368b90e806f13862
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656982"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57820370"
 ---
 # <a name="running-lib"></a>LIB Çalıştırma
 
@@ -62,11 +62,11 @@ Bir seçenek ya da tire olan bir seçenek belirleyicisinden oluşur (**-**) veya
 
 Aşağıdaki seçenekler, LIB tüm modları için geçerlidir:
 
-> **/ ERRORREPORT** [**NONE** &AMP;#124; **İSTEMİ** &AMP;#124; **KUYRUK** &AMP;#124; **GÖNDER**]
+> **/ERRORREPORT** [**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
 
 Lib.exe çalışma zamanında başarısız olursa, kullanabileceğiniz **/errorreport** iç bu hataları hakkında Microsoft'a bilgi göndermek.
 
-Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](errorreport-report-internal-compiler-errors.md).
 
 > **/LTCG**
 
@@ -88,12 +88,12 @@ LIB telif hakkı iletisi ve sürüm numarasını görüntülenmesini engeller ve
 
 Eklenen .obj dosya adlarını dahil olmak üzere, oturumunun ilerleme durumu hakkında ayrıntıları görüntüler. Bilgiler Standart çıkışa gönderilir ve bir dosyaya yönlendirilebilir.
 
-> **/WX**[**: NO**]
+> **/WX**[**:NO**]
 
-Uyarıları hata olarak değerlendir. Bkz: [/WX (Bağlayıcı uyarıları hata olarak değerlendir)](../../build/reference/wx-treat-linker-warnings-as-errors.md) daha fazla bilgi için.
+Uyarıları hata olarak değerlendir. Bkz: [/WX (Bağlayıcı uyarıları hata olarak değerlendir)](wx-treat-linker-warnings-as-errors.md) daha fazla bilgi için.
 
 Diğer seçenekler, yalnızca belirli modları LIB için geçerlidir. Bu seçeneklerden her modu açıklayan bölümlerde ele alınmıştır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB Başvurusu](../../build/reference/lib-reference.md)
+[LIB Başvurusu](lib-reference.md)

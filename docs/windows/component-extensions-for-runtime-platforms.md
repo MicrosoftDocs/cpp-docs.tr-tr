@@ -9,12 +9,12 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-ms.openlocfilehash: 3b29b2e8b00aa436d1687cdbbd5f299f4787c71b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9586244c9e2293ba6b484efb158fc3a2529c0ea
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432371"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57814494"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için bileşen uzantıları
 
@@ -49,7 +49,7 @@ Aşağıdaki tabloda, C++ dil uzantısı anahtar sözcükleri listeler.
 
 ## <a name="override-specifiers"></a>Geçersiz Kılma Tanımlayıcıları
 
-Geçersiz kılma davranışını türetme nitelemek için aşağıdaki anahtar sözcükler kullanabilirsiniz. Ancak **yeni** anahtar sözcüğü C++'ın bir uzantısı değil, çünkü başka bir bağlamda kullanılabilir burada listelenir. Bazı tanımlayıcıları da yerel programlama için geçerlidir. Daha fazla bilgi için [nasıl yapılır: yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme (C + +/ CLI)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+Geçersiz kılma davranışını türetme nitelemek için aşağıdaki anahtar sözcükler kullanabilirsiniz. Ancak **yeni** anahtar sözcüğü C++'ın bir uzantısı değil, çünkü başka bir bağlamda kullanılabilir burada listelenir. Bazı tanımlayıcıları da yerel programlama için geçerlidir. Daha fazla bilgi için [nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme (C + +/ CLI)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
 |Anahtar sözcüğü|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
@@ -88,7 +88,7 @@ Aşağıdaki dil yapıları olarak anahtar sözcükler yerine şablon olarak uyg
 |Anahtar sözcüğü|Amaç|Başvuru|
 |-------------|-------------|---------------|
 |**Dizi**|Bir diziyi bildirir.|[Diziler](../windows/arrays-cpp-component-extensions.md)|
-|**interior_ptr anahtar**|(Yalnızca CLR) Bir başvuru türü verilerinde işaret eder.|[interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)|
+|**interior_ptr**|(Yalnızca CLR) Bir başvuru türü verilerinde işaret eder.|[interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)|
 |**pin_ptr**|(Yalnızca CLR) Çöp toplama sistemin geçici olarak engellemek için CLR başvuru türleri işaret eder.|[pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)|
 |**safe_cast**|Belirler ve bir çalışma zamanı türü için en iyi atama yöntemini yürütür.|[safe_cast](../windows/safe-cast-cpp-component-extensions.md)|
 |**typeid**|(Yalnızca CLR) Alır bir <xref:System.Type?displayProperty=fullName> belirtilen türün veya nesneyi tanımlayan nesne.|[typeid](../windows/typeid-cpp-component-extensions.md)|
@@ -128,7 +128,7 @@ Bu bölümde ek programlama yapıları ve CLR ile ilgili konuları listeler.
 |[Tür İletme (C++/CLI)](../windows/type-forwarding-cpp-cli.md)|İstemci kodunun derlenmesi gerekmez. böylece başka bir derleme için bir Kargo derlemedeki bir türe hareketini sağlar.|
 |[Kullanıcı tanımlı öznitelikler](../windows/user-defined-attributes-cpp-component-extensions.md)|Kullanıcı tanımlı öznitelikler gösterir.|
 |[#using yönergesi](../preprocessor/hash-using-directive-cpp.md)|Dış derlemeler içeri aktarır.|
-|[XML Belgeleri](../ide/xml-documentation-visual-cpp.md)|Kullanarak XML-tabanlı kod belgelerinde açıklanır  [ /doc (işlem belgeleri açıklamaları) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
+|[XML Belgeleri](../build/reference/xml-documentation-visual-cpp.md)|Kullanarak XML-tabanlı kod belgelerinde açıklanır  [ /doc (işlem belgeleri açıklamaları) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

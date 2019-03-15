@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 6bdcf97c921dc45939ab9ddf18f1d624c2fd83b8
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 78b9ae467d3504f3922c540a3e4cd100322d8f4e
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850304"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57808397"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 
@@ -711,7 +711,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 
 Windows Vista, genellikle kullanılan kayıt defteri erişilen uygulamalar önce **HKEY_CLASSES_ROOT** düğümü. Ancak, Windows Vista veya sonraki işletim sistemleri ile bir uygulama için HKCR yazmak için yükseltilmiş modda çalıştırmanız gerekir.
 
-Bu yöntem, okumak ve HKCU HKCR kayıt defteri erişim yönlendirerek yükseltilmiş modda çalıştırmadan kayıt defterine yazmak uygulamanızın sağlar. Daha fazla bilgi için [bağlayıcı özellik sayfaları](../../ide/linker-property-pages.md).
+Bu yöntem, okumak ve HKCU HKCR kayıt defteri erişim yönlendirerek yükseltilmiş modda çalıştırmadan kayıt defterine yazmak uygulamanızın sağlar. Daha fazla bilgi için [bağlayıcı özellik sayfaları](../../build/reference/linker-property-pages.md).
 
 Kayıt defteri yeniden yönlendirme etkinleştirirseniz, framework için HKCR erişimden yönlendiren **HKEY_CURRENT_USER\Software\Classes**. Yalnızca MFC ve ATL çerçeveleri yönlendirme tarafından etkilenir.
 

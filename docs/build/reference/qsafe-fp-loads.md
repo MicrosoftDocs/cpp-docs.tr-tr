@@ -1,12 +1,12 @@
 ---
 title: /Qsafe_fp_loads
 ms.date: 01/24/2018
-ms.openlocfilehash: e1ef4237fe3af39e76777609a06f90bd585ca422
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57aece79dfab617121371e0489aa80f18e143372
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504445"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57819700"
 ---
 # <a name="qsafefploads"></a>/Qsafe_fp_loads
 
@@ -22,13 +22,13 @@ Kayan nokta değerleri için tamsayı taşıma yönergelerini gerektirir ve beli
 
 **/ Qsafe_fp_loads** zorlar, derleyicinin bellek ile MMX arasında veri taşımak için kayan nokta taşıma yönergeler yerine tamsayı taşıma yönergelerini kullanmasını kaydeder. Bu seçenek ayrıca kayıt yük iyileştirme değeri bir özel durum yüküne neden olabilir, birden çok denetim yollarında yüklenebilir kayan nokta değerleri için devre dışı bırakır; Örneğin, bir NaN değerini.
 
-Bu seçeneği tarafından geçersiz kılınır [/FP: except](../../build/reference/fp-specify-floating-point-behavior.md). **/ Qsafe_fp_loads** tarafından belirtilen derleyici davranışı kümesini belirtir **/FP: except**.
+Bu seçeneği tarafından geçersiz kılınır [/FP: except](fp-specify-floating-point-behavior.md). **/ Qsafe_fp_loads** tarafından belirtilen derleyici davranışı kümesini belirtir **/FP: except**.
 
-**/ Qsafe_fp_loads** ile uyumsuz [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) ve [Fast](../../build/reference/fp-specify-floating-point-behavior.md). Kayan nokta derleyici seçenekleri hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md).
+**/ Qsafe_fp_loads** ile uyumsuz [/CLR](clr-common-language-runtime-compilation.md) ve [Fast](fp-specify-floating-point-behavior.md). Kayan nokta derleyici seçenekleri hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](fp-specify-floating-point-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -40,6 +40,6 @@ Bu seçeneği tarafından geçersiz kılınır [/FP: except](../../build/referen
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DLLs [C++], frequently asked questions
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-ms.openlocfilehash: 4d6490691583162fc95042601bd85566f693d049
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33a0c9dd1abbfb9375ce1aef53fd152a521ac97d
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629144"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57821943"
 ---
 # <a name="dll-frequently-asked-questions"></a>Sıkça Sorulan DLL Soruları
 
@@ -59,14 +59,14 @@ Dikkat edin çünkü `CWinApp::Run` mekanizması, bir DLL için geçerli değild
 
 DLL'niz MFC normal değiştirilmesi, statik olarak bağlı normal MFC DLL'SİNİN ise dinamik olarak MFC'ye bağlı bir MFC DLL dosyasının boyutunu azaltır.
 
-DLL'de dışa aktarılan işlevleri çok sayıda varsa işlevleri dışarı aktarmak için bir .def dosyası kullanmanıza (kullanmak yerine **__declspec(dllexport)**) ve .def dosyası kullanmanıza [NONAME özniteliği](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) her işlevi dışa. NONAME özniteliği yalnızca sıralı değerlerine ve dosya boyutunu azaltır DLL'nin dışa aktarma tablosunda, depolanacak işlevi adı değil neden olur.
+DLL'de dışa aktarılan işlevleri çok sayıda varsa işlevleri dışarı aktarmak için bir .def dosyası kullanmanıza (kullanmak yerine **__declspec(dllexport)**) ve .def dosyası kullanmanıza [NONAME özniteliği](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) her işlevi dışa. NONAME özniteliği yalnızca sıralı değerlerine ve dosya boyutunu azaltır DLL'nin dışa aktarma tablosunda, depolanacak işlevi adı değil neden olur.
 
-Uygulama yüklendiğinde uygulama dolaylı olarak bağlantılı DLL'ler yüklenir. Yüklenirken performansını artırmak için farklı DLL'lere DLL bölmeyi deneyin. Bir DLL'e hemen sonra çağıran uygulamanız için gereken tüm işlevleri koyun ve bu DLL'ye örtük olarak bağlama çağıran uygulamanızı oluşturdunuz. Çağıran uygulama hemen gerekmeyen diğer işlevleri başka bir DLL içine yerleştirin ve sahip uygulamayı açıkça bağlanmak için bu DLL. Daha fazla bilgi için [hangi bağlama yönteminin kullanılacağını belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
+Uygulama yüklendiğinde uygulama dolaylı olarak bağlantılı DLL'ler yüklenir. Yüklenirken performansını artırmak için farklı DLL'lere DLL bölmeyi deneyin. Bir DLL'e hemen sonra çağıran uygulamanız için gereken tüm işlevleri koyun ve bu DLL'ye örtük olarak bağlama çağıran uygulamanızı oluşturdunuz. Çağıran uygulama hemen gerekmeyen diğer işlevleri başka bir DLL içine yerleştirin ve sahip uygulamayı açıkça bağlanmak için bu DLL. Daha fazla bilgi için [çalıştırılabilir bir DLL'ye bağlandığı](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
 
 ## <a name="memory_leak"></a> Orada&#39;s my Normal MFC DLL'SİNİN ancak kodum bir bellek sızıntısı iyi görünüyor. Bellek sızıntısının yerini nasıl bulabilirim?
 
 Olası bir nedeni de bellek sızıntısı MFC ileti işleyicisi işlevler içinde kullanılan geçici nesneler oluşturmasıdır. MFC uygulamalarında, bu geçici nesneler otomatik olarak temizlenir `CWinApp::OnIdle()` iletilerini işleme arasında çağrılan işlev. Ancak, MFC dinamik bağlantı kitaplıklarını (DLL'ler) içinde `OnIdle()` işlevi otomatik olarak çağrılmaz. Sonuç olarak, geçici nesneler otomatik olarak temizlenir değil. Geçici nesneleri temizlemek için DLL'i açıkça çağırmalıdır `OnIdle(1)` düzenli aralıklarla.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+[Visual C++'ta DLL'ler](dlls-in-visual-cpp.md)

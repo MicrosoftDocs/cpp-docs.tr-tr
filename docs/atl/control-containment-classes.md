@@ -2,17 +2,15 @@
 title: Denetim kapsamı sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.controls.containment
 helpviewer_keywords:
 - control containment classes
 ms.assetid: e0812aee-c078-4ced-b967-247976552b9a
-ms.openlocfilehash: b08bf2ea4c0098a723e5864a59ed22855207208b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d70f6b6a432626e7b73989d8f34ecee094560b42
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290124"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57809993"
 ---
 # <a name="control-containment-classes"></a>Denetim kapsamı sınıfları
 

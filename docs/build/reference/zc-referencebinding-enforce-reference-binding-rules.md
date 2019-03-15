@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
-ms.openlocfilehash: baf2106f015a4e8557cb8469d300709694e06d84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9dfe8f5b4713d9567f6e98af6685c552fb51160e
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428333"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57822164"
 ---
 # <a name="zcreferencebinding-enforce-reference-binding-rules"></a>/ ZC: referencebinding (başvuru bağlama kurallarını zorla)
 
@@ -59,7 +59,7 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -67,6 +67,6 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>

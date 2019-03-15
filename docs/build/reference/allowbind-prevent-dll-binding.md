@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -ALLOWBIND linker option
 - DLLs [C++], preventing binding
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
-ms.openlocfilehash: ffe32a1df1fb85c7ae47b07c1ada6c53b269f5f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd9976e434441d2480386ee6fa3d0315fd8d2ef5
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667304"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57818849"
 ---
 # <a name="allowbind-prevent-dll-binding"></a>/ALLOWBIND (DLL Bağlamayı Önle)
 
@@ -29,11 +29,11 @@ ms.locfileid: "50667304"
 
 /ALLOWBIND:No görüntü bağlanması için izin verilmiyor Bind.exe'yi gösteren DLL üst bilgisinde bir bit ayarlar. Bir DLL dijital olarak imzalanmışsa bağlı olmasını istemeyebilirsiniz (bağlama imzayı).
 
-Mevcut bir DLL ile /ALLOWBIND işlevselliği için düzenleyebilirsiniz [/ALLOWBIND](../../build/reference/allowbind.md) yardımcı programının EDITBIN seçeneği.
+Mevcut bir DLL ile /ALLOWBIND işlevselliği için düzenleyebilirsiniz [/ALLOWBIND](allowbind.md) yardımcı programının EDITBIN seçeneği.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Genişletin **yapılandırma özellikleri**, **bağlayıcı**seçip **komut satırı**.
 
@@ -43,9 +43,9 @@ Mevcut bir DLL ile /ALLOWBIND işlevselliği için düzenleyebilirsiniz [/ALLOWB
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
 [BindImage işlevi](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)<br/>
 [BindImageEx işlevi](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

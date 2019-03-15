@@ -1,17 +1,15 @@
 ---
 title: Using IDispEventSimpleImpl (ATL)
 ms.date: 11/04/2016
-f1_keywords:
-- IDispEventSimpleImpl
 helpviewer_keywords:
 - IDispEventSimpleImpl class, using
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
-ms.openlocfilehash: a0af775e8b6c6c5c7bad547971c08ab1b3175988
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2da4c017f686f35f721dd2bff45436e95fb33630
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259015"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57811198"
 ---
 # <a name="using-idispeventsimpleimpl"></a>Using IDispEventSimpleImpl
 

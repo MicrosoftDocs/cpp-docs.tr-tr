@@ -2,17 +2,15 @@
 title: Numaralandırıcı ve koleksiyon sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.enum
 helpviewer_keywords:
 - enumerators, ATL classes
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
-ms.openlocfilehash: 537dd14a02de6686a8db1e3a0d88983b8bb3cc34
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6de81a7b0ddd77471669b19c4be1145c776d2902
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263511"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57809814"
 ---
 # <a name="enumerators-and-collections-classes"></a>Numaralandırıcı ve koleksiyon sınıfları
 

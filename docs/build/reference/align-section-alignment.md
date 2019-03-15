@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -ALIGN linker option
 - section alignment
 - sections
-ms.openlocfilehash: b68ec42db9c927fe8f56dad8f5670059359a1843
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8d2e6a859c68af473d49dc04b76f0a15056aa56
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665796"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57809476"
 ---
 # <a name="align-section-alignment"></a>/ALIGN (Bölüm Hizalama)
 
@@ -35,13 +35,13 @@ Bayt hizalama değeri.
 
 Bir uygulama bir aygıt sürücüsü gibi yazmakta olduğunuz sürece, hizalama değişiklik gerekmez.
 
-Hizalama parametresi ile belirli bir bölümün hizalamasını değiştirmek mümkündür [/SECTION](../../build/reference/section-specify-section-attributes.md) seçeneği.
+Hizalama parametresi ile belirli bir bölümün hizalamasını değiştirmek mümkündür [/SECTION](section-specify-section-attributes.md) seçeneği.
 
 Belirttiğiniz hizalama değeri en büyük bölümü hizalama küçük olamaz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
@@ -53,5 +53,5 @@ Belirttiğiniz hizalama değeri en büyük bölümü hizalama küçük olamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
-ms.openlocfilehash: cbb93bdba5853ed47bc3326d47bbb3c65ad7ce41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef1bc46b64ccbe1374fd795a9b5d56e091b47f48
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472182"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57816431"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (Düzey 3) C4996
 
@@ -45,7 +45,7 @@ Uyarı genel komut satırı derlemelerinde kullanarak kapatabilirsiniz **/wd4996
 
 Visual Studio IDE'deki tüm proje için bir uyarı kapatmak için:
 
-- Açık **özellik sayfaları** projeniz için iletişim. Özellik sayfaları iletişim kutusu kullanma hakkında daha fazla bilgi için bkz: [özellik sayfaları](../../ide/property-pages-visual-cpp.md).
+- Açık **özellik sayfaları** projeniz için iletişim. Özellik sayfaları iletişim kutusu kullanma hakkında daha fazla bilgi için bkz: [özellik sayfaları](../../build/reference/property-pages-visual-cpp.md).
 - Seçin **yapılandırma özellikleri**, **C/C++**, **Gelişmiş** sayfası.
 - Düzen **belirli uyarıları devre dışı** eklemek üzere özellik `4996`. Seçin **Tamam** yaptığınız değişiklikleri uygulamak için.
 
@@ -53,7 +53,7 @@ Visual Studio IDE'deki tüm proje için bir uyarı kapatmak için:
 
 Visual Studio'da önişlemci makrosu tanımlamak için:
 
-- Açık **özellik sayfaları** projeniz için iletişim. Özellik sayfaları iletişim kutusu kullanma hakkında daha fazla bilgi için bkz: [özellik sayfaları](../../ide/property-pages-visual-cpp.md).
+- Açık **özellik sayfaları** projeniz için iletişim. Özellik sayfaları iletişim kutusu kullanma hakkında daha fazla bilgi için bkz: [özellik sayfaları](../../build/reference/property-pages-visual-cpp.md).
 - Genişletin **yapılandırma özellikleri > C/C++ > önişlemci**.
 - İçinde **önişlemci tanımları** özelliği, makro adını ekleyin. Seçin **Tamam** kaydedin ve projenizi yeniden derleyin.
 
@@ -279,7 +279,7 @@ int main() {
 }
 ```
 
-## <a name="example-user-defined-deprecated-function"></a>Örnek: Kullanıcı tanımlı kullanım dışı işlev
+## <a name="example-user-defined-deprecated-function"></a>Örnek:  Kullanıcı tanımlı kullanım dışı işlev
 
 Artık belirli işlevlerin kullanılmasını önerdiğiniz çağıranlar uyar için kendi kodunuzda kullanım dışı özniteliği kullanabilirsiniz. Bu örnekte, C4996 şirket kullanım dışı işlev bildirildiği satır ve işlevin üzerinde kullanıldığı satır için oluşturulur.
 

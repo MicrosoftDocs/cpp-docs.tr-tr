@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -LINENUMBERS dumpbin option
 - /LINENUMBERS dumpbin option
 ms.assetid: 1681d582-2c2f-484e-9920-109959549055
-ms.openlocfilehash: af6e3c7c3693bd95924a86640399b15eb3378ed7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea4c3ac2ad582e0fe364f2da26511a66e9dc376c
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663755"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57811959"
 ---
 # <a name="linenumbers"></a>/LINENUMBERS
 
@@ -26,8 +26,8 @@ ms.locfileid: "50663755"
 
 Bu seçenek COFF satır numaraları görüntüler. Satır numaraları mevcut bir nesne dosyasında Program veritabanı (/Zi) C7 uyumlu derlenmişse (/ Z7), veya satır numaraları yalnızca (/ ZD). İle hata ayıklama bilgisi Oluştur bağlanmışsa COFF satır numaralarını içeren bir yürütülebilir dosya veya DLL (/ DEBUG).
 
-Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)

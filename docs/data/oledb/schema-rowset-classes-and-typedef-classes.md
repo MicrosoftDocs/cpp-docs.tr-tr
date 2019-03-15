@@ -3,1081 +3,564 @@ title: Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
 - vc.templates.ole
-- CAssertions
-- m_szCatalog
-- m_bInitiallyDeferred
-- CONSTRAINT_NAME
-- m_szSchema
-- INITIALLY_DEFERRED
-- m_bIsDeferrable
-- m_szName
 - CAssertionInfo
-- CONSTRAINT_CATALOG
-- CONSTRAINT_SCHEMA
-- IS_DEFERRABLE
-- CCatalogs
-- m_szName
+- CAssertions
 - CCatalogInfo
-- m_szCollateName
-- m_szCatalog
-- DEFAULT_COLLATE_NAME
-- m_szCollateSchema
-- FORM_OF_USE
-- DEFAULT_COLLATE_SCHEMA
-- m_szCollateCatalog
-- CCharacterSets
-- CHARACTER_SET_NAME
-- DEFAULT_COLLATE_CATALOG
-- CHARACTER_SET_SCHEMA
-- m_szFormOfUse
-- NUMBER_OF_CHARACTERS
-- m_szSchema
-- CHARACTER_SET_CATALOG
+- CCatalogs
 - CCharacterSetInfo
-- m_nNumCharacters
-- m_szName
+- CCharacterSets
 - CCheckConstraintInfo
-- CHECK_CONSTRAINTS
-- m_szCatalog
 - CCheckConstraints
-- CONSTRAINT_NAME
-- m_szSchema
-- CHECK_CLAUSE
-- m_szCheckClause
-- m_szName
-- CONSTRAINT_CATALOG
-- CONSTRAINT_SCHEMA
-- COLLATION_CATALOG
-- m_szCatalog
 - CCollationInfo
 - CCollations
-- CHARACTER_SET_NAME
-- CHARACTER_SET_SCHEMA
-- m_szCharSetName
-- m_szSchema
-- CHARACTER_SET_CATALOG
-- m_szCharSetSchema
-- m_szCharSetCatalog
-- m_szPadAttribute
-- COLLATION_NAME
-- COLLATION_SCHEMA
-- m_szName
-- COLLATIONS
-- m_szTableSchema
-- m_szCatalog
-- m_nColumnPropID
-- CColumnDomainUsageInfo
-- COLUMN_GUID
-- DOMAIN_NAME
-- m_szColumnName
-- DOMAIN_SCHEMA
-- DOMAIN_CATALOG
-- m_szTableCatalog
-- m_szSchema
-- COLUMN_PROPID
-- m_guidColumn
 - CColumnDomainUsage
-- m_szTableName
-- m_szName
-- COLUMN_DOMAIN_USAGE
-- m_szTableSchema
-- CColumnPrivileges
-- m_bIsGrantable
-- m_nColumnPropID
-- m_szPrivilegeType
-- COLUMN_GUID
-- IS_GRANTABLE
-- m_szColumnName
-- m_szTableCatalog
-- m_szGrantor
-- GRANTOR
-- GRANTEE
-- COLUMN_PROPID
-- m_guidColumn
-- COLUMN_PRIVILEGES
-- m_szTableName
+- CColumnDomainUsageInfo
 - CColumnPrivilegeInfo
-- m_szGrantee
-- m_szDomainSchema
+- CColumnPrivileges
 - CColumns
-- m_guidType
-- COLLATION_CATALOG
-- m_szTableSchema
-- COLUMN_DEFAULT
-- IS_NULLABLE
-- m_nColumnPropID
-- ORDINAL_POSITION
-- m_szColumnDefault
-- m_szCollationCatalog
-- m_nDateTimePrecision
-- m_szDomainCatalog
-- m_nOrdinalPosition
-- m_szDomainName
-- COLUMN_GUID
-- CHARACTER_SET_NAME
-- m_nColumnFlags
-- DOMAIN_NAME
-- m_szCollationName
-- m_szColumnName
-- CHARACTER_SET_SCHEMA
-- COLUMN_FLAGS
-- m_szCharSetName
-- NUMERIC_PRECISION
-- DOMAIN_SCHEMA
-- DOMAIN_CATALOG
-- m_nDataType
-- m_szTableCatalog
-- CHARACTER_SET_CATALOG
-- m_szCharSetSchema
-- CHARACTER_OCTET_LENGTH
-- NUMERIC_SCALE
-- m_nNumericScale
-- COLUMN_PROPID
-- m_guidColumn
-- m_szCharSetCatalog
-- m_nMaxLength
+- CColumnsInfo
+- CConstraintColumnUsage
+- CConstraintColumnUsageInfo
+- CConstraintTableUsage
+- CConstraintTableUsageInfo
+- CForeignKeys
+- CForeignKeysInfo
 - CHARACTER_MAXIMUM_LENGTH
+- CHARACTER_OCTET_LENGTH
+- CHARACTER_SET_CATALOG
+- CHARACTER_SET_NAME
+- CHARACTER_SET_SCHEMA
+- CHECK_CLAUSE
+- CHECK_CONSTRAINTS
+- CHECK_OPTION
+- CIndexes
+- CIndexInfo
+- CKeyColumnInfo
+- CKeyColumns
+- CLUSTERED
+- COLLATION
+- COLLATION_CATALOG
 - COLLATION_NAME
 - COLLATION_SCHEMA
-- m_bColumnHasDefault
-- m_szTableName
-- m_nNumericPrecision
-- DATA_TYPE
-- m_nOctetLength
-- CColumnsInfo
-- m_szCollationSchema
-- m_bIsNullable
+- COLLATIONS
+- COLUMN_DEFAULT
+- COLUMN_DOMAIN_USAGE
+- COLUMN_FLAGS
+- COLUMN_GUID
 - COLUMN_HASDEFAULT
-- DATETIME_PRECISION
-- m_szTableSchema
-- m_szConstraintCatalog
-- CConstraintColumnUsage
-- m_nColumnPropID
-- COLUMN_GUID
-- CONSTRAINT_NAME
-- m_szColumnName
-- m_szTableCatalog
-- m_szConstraintSchema
+- COLUMN_PRIVILEGES
 - COLUMN_PROPID
-- m_guidColumn
-- CONSTRAINT_COLUMN_USAGE
-- m_szTableName
-- CONSTRAINT_CATALOG
-- CONSTRAINT_SCHEMA
-- CConstraintColumnUsageInfo
-- m_szConstraintName
-- CConstraintTableUsageInfo
-- CONSTRAINT_TABLE_USAGE
-- m_szTableSchema
-- m_szConstraintCatalog
-- CONSTRAINT_NAME
-- m_szTableCatalog
-- m_szConstraintSchema
-- m_szTableName
-- CONSTRAINT_CATALOG
-- CONSTRAINT_SCHEMA
-- CConstraintTableUsage
-- m_szConstraintName
-- m_nOrdinal
-- m_szPKColumnName
-- FK_TABLE_NAME
-- m_guidFKColumn
-- FK_COLUMN_NAME
-- m_guidPKColumn
-- DELETE_RULE
-- m_szPKTableSchema
-- FK_COLUMN_PROPID
-- m_nFKColumnPropID
-- m_szFKTableCatalog
-- CForeignKeysInfo
-- FK_TABLE_SCHEMA
-- m_szPKTableCatalog
-- m_szDeleteRule
-- m_szUpdateRule
-- m_szPKTableName
-- m_szFKTableSchema
-- ORDINAL
-- m_nPKColumnPropID
-- m_szFKColumnName
-- FK_TABLE_CATALOG
-- FK_COLUMN_GUID
-- m_szFKTableName
-- CForeignKeys
-- INITIAL_SIZE
-- NULL_COLLATION
-- m_szFilterCondition
-- m_bPrimaryKey
-- m_szTableSchema
-- m_bSortBookmarks
-- m_szIndexSchema
-- m_nColumnPropID
-- ORDINAL_POSITION
-- INDEX_CATALOG
-- m_nOrdinalPosition
-- COLUMN_GUID
-- m_bAutoUpdate
-- m_nNullCollation
-- CLUSTERED
-- NULLS
-- m_szColumnName
-- m_nFillFactor
-- m_nPages
-- INDEX_NAME
-- m_szTableCatalog
-- m_szIndexName
-- m_szIndexCatalog
-- m_nCardinality
-- m_nInitialSize
-- m_bUnique
-- COLUMN_PROPID
-- m_guidColumn
-- m_nNulls
-- m_szTableName
-- FILL_FACTOR
-- m_nType
-- m_bClustered
-- COLLATION
-- FILTER_CONDITION
-- m_nCollation
-- CIndexes
-- INDEX_SCHEMA
-- CIndexInfo
-- m_szTableSchema
-- m_szConstraintCatalog
-- m_nColumnPropID
-- ORDINAL_POSITION
-- m_nOrdinalPosition
-- COLUMN_GUID
-- CKeyColumnInfo
-- CONSTRAINT_NAME
-- m_szColumnName
-- m_szTableCatalog
-- m_szConstraintSchema
-- COLUMN_PROPID
-- m_guidColumn
-- CKeyColumns
-- m_szTableName
-- CONSTRAINT_CATALOG
-- CONSTRAINT_SCHEMA
-- m_szConstraintName
-- m_nOrdinal
-- m_szTableSchema
-- m_nColumnPropID
-- CPrimaryKeys
-- COLUMN_GUID
-- CPrimaryKeyInfo
-- m_szColumnName
-- m_szTableCatalog
-- COLUMN_PROPID
-- m_guidColumn
-- ORDINAL
-- m_szTableName
-- m_guidType
-- CProcedureColumnInfo
-- IS_NULLABLE
-- m_szCatalog
-- m_nRowsetNumber
-- m_nColumnPropID
-- ORDINAL_POSITION
-- m_nOrdinalPosition
-- COLUMN_GUID
-- m_szColumnName
-- NUMERIC_PRECISION
-- m_nDataType
-- m_szSchema
-- CHARACTER_OCTET_LENGTH
-- NUMERIC_SCALE
-- COLUMN_PROPID
-- m_guidColumn
-- m_nMaxLength
-- CHARACTER_MAXIMUM_LENGTH
-- m_nPrecision
-- m_szName
-- CProcedureColumns
-- DATA_TYPE
-- m_nOctetLength
-- m_bIsNullable
-- m_nScale
-- m_szDefault
-- CProcedureParameters
-- m_bHasDefault
-- CProcedureParamInfo
-- IS_NULLABLE
-- m_szCatalog
-- ORDINAL_POSITION
-- m_nOrdinalPosition
-- NUMERIC_PRECISION
-- m_nDataType
-- m_szSchema
-- CHARACTER_OCTET_LENGTH
-- NUMERIC_SCALE
-- m_szParameterName
-- m_nMaxLength
-- CHARACTER_MAXIMUM_LENGTH
-- m_nPrecision
-- m_szName
-- DATA_TYPE
-- m_nOctetLength
-- m_nType
-- m_bIsNullable
-- m_nScale
-- CProcedures
-- m_szCatalog
-- CProcedureInfo
-- m_szSchema
-- m_szDefinition
-- m_szName
-- m_nType
-- m_bIsLong
-- m_szLocalTypeName
-- m_guidType
-- m_bCaseSensitive
-- m_szVersion
-- m_szCreateParams
-- IS_NULLABLE
-- m_bAutoUniqueValue
-- LITERAL_SUFFIX
 - COLUMN_SIZE
-- CProviderTypes
-- LOCAL_TYPE_NAME
-- MINIMUM_SCALE
-- m_nMinScale
-- m_nColumnSize
-- m_szLiteralSuffix
-- m_bFixedPrecScale
-- m_szLiteralPrefix
-- m_nMaxScale
-- m_szTypeLib
-- m_nDataType
-- m_bUnsignedAttribute
-- m_nSearchable
-- m_bBestMatch
-- m_szTypeName
-- DATA_TYPE
-- MAXIMUM_SCALE
-- CProviderInfo
-- FIXED_PREC_SCALE
-- m_bIsNullable
-- IS_LONG
-- m_szUniqueName
-- m_szCatalog
-- DELETE_RULE
-- m_szUniqueCatalog
-- CONSTRAINT_NAME
-- CReferentialConstraintInfo
-- MATCH_OPTION
-- m_szSchema
-- m_szDeleteRule
-- m_szUpdateRule
-- m_szUniqueSchema
-- CReferentialConstraints
-- m_szName
 - CONSTRAINT_CATALOG
-- m_szMatchOption
+- CONSTRAINT_COLUMN_USAGE
+- CONSTRAINT_NAME
 - CONSTRAINT_SCHEMA
-- DEFAULT_CHARACTER_SET_CATALOG
-- DEFAULT_CHARACTER_SET_SCHEMA
-- m_szCharName
-- CSchemataInfo
-- m_szCatalog
-- m_szCharCatalog
-- m_szOwner
-- m_szCharSchema
-- CSchemata
-- m_szName
-- DEFAULT_CHARACTER_SET_NAME
-- CSQLLanguageInfo
-- m_szProgrammingLanguage
-- m_szImplementation
-- m_szIntegrity
-- m_szBindingStyle
-- m_szConformance
-- m_szSource
-- m_szYear
-- CSQLLanguages
-- CStatistics
-- m_szTableSchema
-- CStatisticInfo
-- m_szTableCatalog
-- m_nCardinality
-- m_szTableName
-- m_szTableSchema
+- CONSTRAINT_TABLE_USAGE
 - CONSTRAINT_TYPE
-- m_szCatalog
-- CTableConstraints
-- m_bInitiallyDeferred
-- CONSTRAINT_NAME
-- m_szTableCatalog
-- m_szType
-- m_szSchema
-- INITIALLY_DEFERRED
+- CPrimaryKeyInfo
+- CPrimaryKeys
+- CProcedureColumnInfo
+- CProcedureColumns
+- CProcedureInfo
+- CProcedureParameters
+- CProcedureParamInfo
+- CProcedures
+- CProviderInfo
+- CProviderTypes
+- CReferentialConstraintInfo
+- CReferentialConstraints
+- CSchemata
+- CSchemataInfo
+- CSQLLanguageInfo
+- CSQLLanguages
+- CStatisticInfo
+- CStatistics
 - CTableConstraintInfo
-- m_szTableName
-- m_bIsDeferrable
-- m_szName
-- CONSTRAINT_CATALOG
-- CONSTRAINT_SCHEMA
-- IS_DEFERRABLE
-- m_szCatalog
-- m_bIsGrantable
-- IS_GRANTABLE
-- m_szType
-- m_szSchema
-- m_szGrantor
-- GRANTOR
-- GRANTEE
-- CTablePrivileges
-- CTablePrivilegeInfo
-- m_szName
-- m_szGrantee
-- m_szCatalog
-- TABLE_SCHEMA
-- CTables
-- TABLE_NAME
-- TABLE_CATALOG
+- CTableConstraints
 - CTableInfo
-- m_guidTable
-- m_szType
-- m_szSchema
-- m_szName
-- TABLE_GUID
-- m_szCatalog
-- m_szSourceCatalog
-- m_szTargetSchema
-- m_szTargetCatalog
-- m_szTargetName
+- CTablePrivilegeInfo
+- CTablePrivileges
+- CTables
 - CTranslationInfo
-- m_szSourceName
-- m_szSchema
 - CTranslations
-- m_szName
-- m_szSourceSchema
-- m_szObjectCatalog
 - CUsagePrivilegeInfo
-- m_bIsGrantable
-- OBJECT_NAME
-- m_szPrivilegeType
-- OBJECT_SCHEMA
-- IS_GRANTABLE
 - CUsagePrivileges
-- m_szGrantor
-- GRANTOR
-- GRANTEE
-- m_szObjectSchema
-- OBJECT_CATALOG
-- m_szObjectType
-- m_szObjectName
-- m_szGrantee
-- OBJECT_TYPE
-- m_szTableSchema
-- m_szCatalog
-- m_nColumnPropID
-- COLUMN_GUID
-- m_szColumnName
-- m_szTableCatalog
 - CViewColumnInfo
-- m_szSchema
 - CViewColumnUsage
-- COLUMN_PROPID
-- m_guidColumn
-- m_szTableName
-- m_szName
-- m_szTableSchema
-- m_bCheckOption
-- CViews
-- CHECK_OPTION
 - CViewInfo
-- m_szTableCatalog
-- IS_UPDATABLE
-- m_szDefinition
-- m_szTableName
-- m_bIsUpdatable
-- m_szTableSchema
-- m_szCatalog
+- CViews
 - CViewTableInfo
-- m_szTableCatalog
-- m_szSchema
-- m_szTableName
-- m_szName
 - CViewTableUsage
-helpviewer_keywords:
-- schema rowsets, classes
-- CAssertionInfo parameter class
-- DESCRIPTION class data member
-- CAssertions typedef class
-- IS_DEFERRABLE
-- m_szSchema
-- m_bInitiallyDeferred
-- CONSTRAINT_CATALOG
-- m_szCatalog
-- CONSTRAINT_NAME
-- CONSTRAINT_SCHEMA
-- m_szName
-- m_szDescription
-- INITIALLY_DEFERRED
-- m_bIsDeferrable
-- DESCRIPTION class data member
-- CCatalogInfo parameter class
-- CCatalogs typedef class
-- m_szName
-- m_szDescription
-- DEFAULT_COLLATE_SCHEMA
-- m_nNumCharacters
-- m_szSchema
-- NUMBER_OF_CHARACTERS
-- m_szCollateCatalog
-- CCharacterSetInfo parameter class
-- m_szCatalog
-- CCharacterSets typedef class
-- m_szCollateName
-- m_szName
-- m_szCollateSchema
-- FORM_OF_USE OLE DB column
-- CHARACTER_SET_NAME
+- DATA_TYPE
+- DATETIME_PRECISION
+- DEFAULT_CHARACTER_SET_CATALOG
+- DEFAULT_CHARACTER_SET_NAME
+- DEFAULT_CHARACTER_SET_SCHEMA
 - DEFAULT_COLLATE_CATALOG
 - DEFAULT_COLLATE_NAME
-- m_szFormOfUse
-- CHARACTER_SET_SCHEMA
-- CHARACTER_SET_CATALOG
-- DESCRIPTION class data member
-- m_szSchema
-- CONSTRAINT_CATALOG
-- m_szCatalog
-- CONSTRAINT_NAME
-- CONSTRAINT_SCHEMA
-- CCheckConstraints typedef class
-- CHECK_CLAUSE
-- m_szName
-- m_szDescription
-- CCheckConstraintInfo parameter class
-- m_szCheckClause
-- CHECK_CONSTRAINTS
-- m_szSchema
-- COLLATION_SCHEMA
-- m_szCharSetCatalog
-- m_szCatalog
-- COLLATIONS recordset
-- COLLATION_CATALOG
-- CCollationInfo parameter class
-- m_szName
-- COLLATION_NAME
-- m_szPadAttribute
-- CHARACTER_SET_NAME
-- m_szCharSetName
-- CHARACTER_SET_SCHEMA
-- CHARACTER_SET_CATALOG
-- m_szCharSetSchema
-- CCollations typedef class
-- COLUMN_PROPID
-- m_szSchema
-- DOMAIN_NAME
-- DOMAIN_SCHEMA
-- m_szTableSchema
-- TABLE_CATALOG
-- m_szCatalog
-- TABLE_NAME
-- m_nColumnPropID
-- CColumnDomainUsageInfo parameter class
-- TABLE_SCHEMA
-- m_szColumnName
-- COLUMN_NAME
-- m_szName
-- m_szTableCatalog
-- m_szTableName
-- COLUMN_DOMAIN_USAGE
-- COLUMN_GUID
-- CColumnDomainUsage typedef class
-- m_guidColumn
-- DOMAIN_CATALOG
-- COLUMN_PROPID
-- GRANTOR
-- m_szPrivilegeType
-- m_szTableSchema
-- TABLE_CATALOG
-- TABLE_NAME
-- COLUMN_PRIVILEGES
-- IS_GRANTABLE
-- m_nColumnPropID
-- TABLE_SCHEMA
-- m_szColumnName
-- COLUMN_NAME
-- m_szTableCatalog
-- m_szGrantee
-- m_szGrantor
-- m_szTableName
-- CColumnPrivileges typedef class
-- COLUMN_GUID
-- GRANTEE
-- m_guidColumn
-- CColumnPrivilegeInfo parameter class
-- m_bIsGrantable
-- NUMERIC_PRECISION
-- COLUMN_PROPID
-- DATA_TYPE
-- ORDINAL_POSITION
-- m_nMaxLength
-- DESCRIPTION class data member
-- m_nDateTimePrecision
-- m_bColumnHasDefault
-- m_szCollationName
-- m_guidType
-- CColumnsInfo parameter class
-- COLLATION_SCHEMA
-- m_szDomainSchema
-- COLUMN_HASDEFAULT
-- CHARACTER_OCTET_LENGTH
-- m_szDomainName
-- DOMAIN_NAME
-- DOMAIN_SCHEMA
-- m_szTableSchema
-- TABLE_CATALOG
-- m_szCharSetCatalog
-- m_szColumnDefault
-- TABLE_NAME
-- COLUMN_FLAGS
-- m_szDomainCatalog
-- m_nOrdinalPosition
-- m_nColumnPropID
-- NUMERIC_SCALE
-- COLLATION_CATALOG
-- DATETIME_PRECISION
-- TABLE_SCHEMA
-- m_nNumericPrecision
-- m_szColumnName
-- COLUMN_NAME
-- m_nOctetLength
-- IS_NULLABLE
-- m_bIsNullable
-- m_szTableCatalog
-- COLLATION_NAME
-- m_szDescription
-- m_szTableName
-- CColumns typedef class
-- m_nDataType
-- m_nNumericScale
-- m_szCollationCatalog
-- m_szCollationSchema
-- CHARACTER_SET_NAME
-- m_nColumnFlags
-- COLUMN_GUID
-- CHARACTER_MAXIMUM_LENGTH
-- m_szCharSetName
-- m_guidColumn
-- CHARACTER_SET_SCHEMA
-- CHARACTER_SET_CATALOG
-- DOMAIN_CATALOG
-- m_szCharSetSchema
-- COLUMN_DEFAULT
-- COLUMN_PROPID
-- m_szConstraintCatalog
-- CONSTRAINT_COLUMN_USAGE
-- CONSTRAINT_CATALOG
-- CConstraintColumnUsageInfo parameter class
-- m_szTableSchema
-- TABLE_CATALOG
-- TABLE_NAME
-- CONSTRAINT_NAME
-- CConstraintColumnUsage typedef class
-- m_nColumnPropID
-- CONSTRAINT_SCHEMA
-- TABLE_SCHEMA
-- m_szColumnName
-- COLUMN_NAME
-- m_szTableCatalog
-- m_szConstraintName
-- m_szTableName
-- m_szConstraintSchema
-- COLUMN_GUID
-- m_guidColumn
-- CConstraintTableUsage typedef class
-- m_szConstraintCatalog
-- CONSTRAINT_CATALOG
-- m_szTableSchema
-- CConstraintTableUsageInfo parameter class
-- TABLE_CATALOG
-- CONSTRAINT_TABLE_USAGE
-- TABLE_NAME
-- CONSTRAINT_NAME
-- CONSTRAINT_SCHEMA
-- TABLE_SCHEMA
-- m_szTableCatalog
-- m_szConstraintName
-- m_szTableName
-- m_szConstraintSchema
-- m_szPKTableCatalog
-- FK_COLUMN_GUID
-- m_szPKColumnName
-- m_szFKTableName
-- ORDINAL data member
-- m_nPKColumnPropID
-- m_szDeleteRule
+- DEFAULT_COLLATE_SCHEMA
 - DELETE_RULE
-- m_guidFKColumn
-- FK_COLUMN_PROPID
-- m_szPKTableSchema
-- m_szFKTableCatalog
-- CForeignKeysInfo parameter class
-- m_szFKTableSchema
-- FK_TABLE_SCHEMA
-- FK_COLUMN_NAME
-- m_szUpdateRule
-- m_szFKColumnName
-- FK_TABLE_CATALOG
-- m_nOrdinal
-- m_szPKTableName
-- CForeignKeys typedef class
-- m_nFKColumnPropID
-- m_guidPKColumn
-- FK_TABLE_NAME
-- COLUMN_PROPID
-- ORDINAL_POSITION
-- INDEX_CATALOG
-- NULLS
-- CIndexInfo parameter class
-- m_szFilterCondition
-- m_szIndexCatalog
-- CLUSTERED
-- m_nType
+- DELETE_RULE
+- DOMAIN_CATALOG
+- DOMAIN_NAME
+- DOMAIN_SCHEMA
 - FILL_FACTOR
-- m_nPages
-- m_nCardinality
-- m_szTableSchema
-- TABLE_CATALOG
-- TABLE_NAME
-- INDEX_SCHEMA
-- m_nInitialSize
-- m_nOrdinalPosition
-- m_nColumnPropID
 - FILTER_CONDITION
-- TABLE_SCHEMA
-- m_szColumnName
+- FIXED_PREC_SCALE
+- FK_COLUMN_GUID
+- FK_COLUMN_NAME
+- FK_COLUMN_PROPID
+- FK_TABLE_CATALOG
+- FK_TABLE_NAME
+- FK_TABLE_SCHEMA
+- FORM_OF_USE
+- GRANTEE
+- GRANTOR
+- INDEX_CATALOG
 - INDEX_NAME
-- NULL_COLLATION
-- m_bUnique
-- m_bSortBookmarks
-- m_bAutoUpdate
-- COLUMN_NAME
+- INDEX_SCHEMA
 - INITIAL_SIZE
-- m_szTableCatalog
-- m_nNullCollation
-- m_bClustered
-- m_szTableName
-- CIndexes typedef class
-- m_nCollation
-- COLUMN_GUID
-- m_guidColumn
-- m_nNulls
-- m_bPrimaryKey
-- m_szIndexName
-- m_nFillFactor
-- m_szIndexSchema
-- COLUMN_PROPID
-- ORDINAL_POSITION
-- m_szConstraintCatalog
-- CONSTRAINT_CATALOG
-- m_szTableSchema
-- TABLE_CATALOG
-- CKeyColumnInfo parameter class
-- TABLE_NAME
-- CONSTRAINT_NAME
-- m_nOrdinalPosition
-- m_nColumnPropID
-- CONSTRAINT_SCHEMA
-- TABLE_SCHEMA
-- m_szColumnName
-- COLUMN_NAME
-- m_szTableCatalog
-- m_szConstraintName
-- CKeyColumns typedef class
-- m_szTableName
-- m_szConstraintSchema
-- COLUMN_GUID
-- m_guidColumn
-- COLUMN_PROPID
-- m_szTableSchema
-- TABLE_CATALOG
-- ORDINAL data member
-- CPrimaryKeys typedef class
-- TABLE_NAME
-- m_nColumnPropID
-- TABLE_SCHEMA
-- m_szColumnName
-- COLUMN_NAME
-- m_szTableCatalog
-- m_szTableName
-- m_nOrdinal
-- CPrimaryKeyInfo parameter class
-- COLUMN_GUID
-- m_guidColumn
-- NUMERIC_PRECISION
-- COLUMN_PROPID
-- DATA_TYPE
-- ORDINAL_POSITION
-- m_nMaxLength
-- DESCRIPTION class data member
-- m_guidType
-- m_szSchema
-- CHARACTER_OCTET_LENGTH
-- m_szCatalog
-- CProcedureColumns typedef class
-- m_nPrecision
-- m_nOrdinalPosition
-- m_nColumnPropID
-- NUMERIC_SCALE
-- m_nRowsetNumber
-- m_szColumnName
-- COLUMN_NAME
-- m_nOctetLength
+- INITIALLY_DEFERRED
+- IS_DEFERRABLE
+- IS_GRANTABLE
+- IS_LONG
 - IS_NULLABLE
-- m_szName
-- m_bIsNullable
-- m_szDescription
-- m_nDataType
-- m_nScale
-- COLUMN_GUID
-- CHARACTER_MAXIMUM_LENGTH
-- m_guidColumn
-- CProcedureColumnInfo parameter class
-- NUMERIC_PRECISION
-- DATA_TYPE
-- ORDINAL_POSITION
-- m_nMaxLength
-- DESCRIPTION class data member
-- m_szParameterName
-- m_szSchema
-- m_nType
-- m_bHasDefault
-- CHARACTER_OCTET_LENGTH
-- CProcedureParameters typedef class
-- m_szCatalog
-- m_nPrecision
-- m_nOrdinalPosition
-- NUMERIC_SCALE
-- m_nOctetLength
-- IS_NULLABLE
-- m_szName
-- m_bIsNullable
-- CProcedureParamInfo parameter class
-- m_szDescription
-- m_szDefault
-- m_nDataType
-- m_nScale
-- CHARACTER_MAXIMUM_LENGTH
-- DESCRIPTION class data member
-- m_szSchema
-- m_nType
-- m_szCatalog
-- CProcedureInfo parameter class
-- m_szName
-- m_szDescription
-- m_szDefinition
-- CProcedures typedef class
-- DATA_TYPE
-- MAXIMUM_SCALE
-- m_nMinScale
-- m_guidType
+- IS_UPDATABLE
+- LITERAL_SUFFIX
 - LOCAL_TYPE_NAME
 - m_bAutoUniqueValue
+- m_bAutoUpdate
 - m_bBestMatch
-- m_bIsLong
-- m_bUnsignedAttribute
-- CProviderInfo parameter class
-- FIXED_PREC_SCALE
-- m_nColumnSize
-- m_szVersion
-- CProviderTypes typedef class
-- m_szCreateParams
-- IS_NULLABLE
-- m_bIsNullable
-- m_szTypeLib
-- m_szLiteralPrefix
-- m_nMaxScale
-- m_nDataType
 - m_bCaseSensitive
+- m_bCheckOption
+- m_bClustered
+- m_bColumnHasDefault
 - m_bFixedPrecScale
-- m_nSearchable
-- MINIMUM_SCALE
-- m_szTypeName
-- m_szLocalTypeName
-- IS_LONG
-- LITERAL_SUFFIX
-- COLUMN_SIZE
-- m_szLiteralSuffix
-- m_szUniqueSchema
-- DESCRIPTION class data member
-- m_szSchema
-- CONSTRAINT_CATALOG
-- CReferentialConstraints typedef class
-- m_szUniqueName
-- m_szCatalog
-- CONSTRAINT_NAME
-- m_szDeleteRule
-- DELETE_RULE
-- MATCH_OPTION
-- CONSTRAINT_SCHEMA
-- m_szName
-- m_szDescription
-- m_szMatchOption
-- m_szUniqueCatalog
-- m_szUpdateRule
-- CReferentialConstraintInfo parameter class
-- m_szCharName
-- CSchemata typedef class
-- DEFAULT_CHARACTER_SET_NAME
-- m_szOwner
-- CSchemataInfo parameter class
-- DEFAULT_CHARACTER_SET_CATALOG
-- m_szCharSchema
-- m_szCatalog
-- m_szName
-- m_szCharCatalog
-- DEFAULT_CHARACTER_SET_SCHEMA
-- m_szBindingStyle
-- m_szProgrammingLanguage
-- m_szYear
-- m_szImplementation
-- m_szSource
-- m_szConformance
-- CSQLLanguages typedef class
-- CSQLLanguageInfo parameter class
-- m_szIntegrity
-- m_nCardinality
-- m_szTableSchema
-- TABLE_CATALOG
-- TABLE_NAME
-- TABLE_SCHEMA
-- CStatistics typedef class
-- m_szTableCatalog
-- m_szTableName
-- CStatisticInfo parameter class
-- DESCRIPTION class data member
-- CTableConstraints typedef class
-- IS_DEFERRABLE
-- m_szSchema
+- m_bHasDefault
 - m_bInitiallyDeferred
-- CONSTRAINT_CATALOG
-- m_szTableSchema
-- TABLE_CATALOG
-- m_szType
-- m_szCatalog
-- TABLE_NAME
-- CONSTRAINT_NAME
-- CONSTRAINT_TYPE
-- CONSTRAINT_SCHEMA
-- TABLE_SCHEMA
-- m_szName
-- m_szTableCatalog
-- m_szDescription
-- CTableConstraintInfo parameter class
-- m_szTableName
-- INITIALLY_DEFERRED
+- m_bInitiallyDeferred
 - m_bIsDeferrable
-- GRANTOR
-- CTablePrivilegeInfo parameter class
-- m_szSchema
-- TABLE_CATALOG
-- m_szType
-- m_szCatalog
-- TABLE_NAME
-- IS_GRANTABLE
-- TABLE_SCHEMA
-- m_szName
-- m_szGrantee
-- CTablePrivileges typedef class
-- m_szGrantor
-- GRANTEE
 - m_bIsGrantable
-- DESCRIPTION class data member
-- m_szSchema
-- TABLE_CATALOG
-- m_szType
-- m_szCatalog
-- TABLE_NAME
-- TABLE_SCHEMA
-- TABLE_GUID
-- m_szName
-- m_szDescription
-- CTables typedef class
+- m_bIsLong
+- m_bIsNullable
+- m_bIsUpdatable
+- m_bPrimaryKey
+- m_bSortBookmarks
+- m_bUnique
+- m_bUnsignedAttribute
+- m_guidColumn
+- m_guidFKColumn
+- m_guidPKColumn
 - m_guidTable
-- CTableInfo parameter class
-- m_szSourceSchema
-- m_szSourceCatalog
-- m_szSchema
-- m_szTargetName
-- m_szSourceName
-- CTranslations typedef class
+- m_guidType
+- m_nCardinality
+- m_nCardinality
+- m_nCollation
+- m_nColumnFlags
+- m_nColumnPropID
+- m_nColumnSize
+- m_nDataType
+- m_nDateTimePrecision
+- m_nFillFactor
+- m_nFKColumnPropID
+- m_nInitialSize
+- m_nMaxLength
+- m_nMaxScale
+- m_nNullCollation
+- m_nNulls
+- m_nNumCharacters
+- m_nNumericPrecision
+- m_nNumericScale
+- m_nOctetLength
+- m_nOrdinal
+- m_nOrdinalPosition
+- m_nPages
+- m_nPKColumnPropID
+- m_nPrecision
+- m_nRowsetNumber
+- m_nScale
+- m_nSearchable
+- m_nType
+- m_szBindingStyle
 - m_szCatalog
-- m_szTargetCatalog
+- m_szCharCatalog
+- m_szCharName
+- m_szCharSchema
+- m_szCharSetCatalog
+- m_szCharSetName
+- m_szCharSetSchema
+- m_szCheckClause
+- m_szCollateCatalog
+- m_szCollateName
+- m_szCollateSchema
+- m_szCollationCatalog
+- m_szCollationName
+- m_szCollationSchema
+- m_szColumnDefault
+- m_szColumnName
+- m_szConformance
+- m_szConstraintCatalog
+- m_szConstraintName
+- m_szConstraintSchema
+- m_szCreateParams
+- m_szDefault
+- m_szDefinition
+- m_szDeleteRule
+- m_szDomainCatalog
+- m_szDomainName
+- m_szDomainSchema
+- m_szFilterCondition
+- m_szFKColumnName
+- m_szFKTableCatalog
+- m_szFKTableName
+- m_szFKTableSchema
+- m_szFormOfUse
+- m_szGrantee
+- m_szGrantor
+- m_szImplementation
+- m_szIndexCatalog
+- m_szIndexName
+- m_szIndexSchema
+- m_szIntegrity
+- m_szLiter alSuffix
+- m_szLiteralPrefix
+- m_szLocalTypeName
+- m_szMatchOption
 - m_szName
-- CTranslationInfo parameter class
-- m_szTargetSchema
-- OBJECT_NAME
-- GRANTOR
-- OBJECT_CATALOG
-- CUsagePrivileges typedef class
-- m_szPrivilegeType
-- OBJECT_SCHEMA
+- m_szName
+- m_szObjectCatalog
+- m_szObjectName
 - m_szObjectSchema
 - m_szObjectType
-- IS_GRANTABLE
-- OBJECT_TYPE
-- CUsagePrivilegeInfo parameter class
-- m_szGrantee
-- m_szObjectCatalog
-- m_szGrantor
-- GRANTEE
-- m_bIsGrantable
-- m_szObjectName
-- COLUMN_PROPID
+- m_szOwner
+- m_szPadAttribute
+- m_szParameterName
+- m_szPKColumnName
+- m_szPKTableCatalog
+- m_szPKTableName
+- m_szPKTableSchema
+- m_szPrivilegeType
+- m_szProgrammingLanguage
 - m_szSchema
-- m_szTableSchema
-- TABLE_CATALOG
-- m_szCatalog
-- TABLE_NAME
-- m_nColumnPropID
-- CViewColumnInfo parameter class
-- TABLE_SCHEMA
-- m_szColumnName
-- COLUMN_NAME
-- m_szName
+- m_szSource
+- m_szSourceCatalog
+- m_szSourceName
+- m_szSourceSchema
 - m_szTableCatalog
-- CViewColumnUsage typedef class
 - m_szTableName
-- COLUMN_GUID
-- m_guidColumn
-- DESCRIPTION class data member
+- m_szTableSchema
+- m_szTargetCatalog
+- m_szTargetName
+- m_szTargetSchema
+- m_szType
+- m_szTypeLib
+- m_szTypeName
+- m_szUniqueCatalog
+- m_szUniqueName
+- m_szUniqueSchema
+- m_szUpdateRule
+- m_szVersion
+- m_szYear
+- MATCH_OPTION
+- MAXIMUM_SCALE
+- MINIMUM_SCALE
+- NULL_COLLATION
+- NULLS
+- NUMBER_OF_CHARACTERS
+- NUMERIC_PRECISION
+- NUMERIC_SCALE
+- OBJECT_CATALOG
+- OBJECT_NAME
+- OBJECT_SCHEMA
+- OBJECT_TYPE
+- ORDINAL
+- ORDINAL_POSITION
+- TABLE_CATALOG
+- TABLE_GUID
+- TABLE_NAME
+- TABLE_SCHEMA
+helpviewer_keywords:
+- schema rowsets
+- CAssertionInfo parameter class
+- CAssertions typedef class
+- CCatalogInfo parameter class
+- CCatalogs typedef class
+- CCharacterSetInfo parameter class
+- CCharacterSets typedef class
+- CCheckConstraintInfo parameter class
+- CCheckConstraints typedef class
+- CCollationInfo parameter class
+- CCollations typedef class
+- CColumnDomainUsage typedef class
+- CColumnDomainUsageInfo parameter class
+- CColumnPrivilegeInfo parameter class
+- CColumnPrivileges typedef class
+- CColumns typedef class
+- CColumnsInfo parameter class
+- CConstraintColumnUsage typedef class
+- CConstraintColumnUsageInfo parameter class
+- CConstraintTableUsage typedef class
+- CConstraintTableUsageInfo parameter class
+- CForeignKeys typedef class
+- CForeignKeysInfo parameter class
+- CHARACTER_MAXIMUM_LENGTH
+- CHARACTER_OCTET_LENGTH
+- CHARACTER_SET_CATALOG
+- CHARACTER_SET_NAME
+- CHARACTER_SET_SCHEMA
+- CHECK_CLAUSE
+- CHECK_CONSTRAINTS
 - CHECK_OPTION
-- m_szTableSchema
-- TABLE_CATALOG
-- TABLE_NAME
-- m_bCheckOption
-- TABLE_SCHEMA
-- m_szTableCatalog
-- m_szDescription
-- m_szDefinition
-- m_szTableName
+- CIndexes typedef class
+- CIndexInfo parameter class
+- CKeyColumnInfo parameter class
+- CKeyColumns typedef class
+- CLUSTERED
+- COLLATION_CATALOG
+- COLLATION_NAME
+- COLLATION_SCHEMA
+- COLLATIONS recordset
+- COLUMN_DEFAULT
+- COLUMN_DOMAIN_USAGE
+- COLUMN_FLAGS
+- COLUMN_GUID
+- COLUMN_HASDEFAULT
+- COLUMN_NAME
+- COLUMN_PRIVILEGES
+- COLUMN_PROPID
+- CONSTRAINT_CATALOG
+- CONSTRAINT_COLUMN_USAGE
+- CONSTRAINT_NAME
+- CONSTRAINT_SCHEMA
+- CONSTRAINT_TABLE_USAGE
+- CONSTRAINT_TYPE
+- CPrimaryKeyInfo parameter class
+- CPrimaryKeys typedef class
+- CProcedureColumnInfo parameter class
+- CProcedureColumns typedef class
+- CProcedureInfo parameter class
+- CProcedureParameters typedef class
+- CProcedureParamInfo parameter class
+- CProcedures typedef class
+- CProviderInfo parameter class
+- CProviderTypes typedef class
+- CReferentialConstraintInfo parameter class
+- CReferentialConstraints typedef class
+- CSchemata typedef class
+- CSchemataInfo parameter class
+- CSQLLanguageInfo parameter class
+- CSQLLanguages typedef class
+- CStatisticInfo parameter class
+- CStatistics typedef class
+- CTableConstraintInfo parameter class
+- CTableConstraints typedef class
+- CTableInfo parameter class
+- CTablePrivilegeInfo parameter class
+- CTablePrivileges typedef class
+- CTables typedef class
+- CTranslationInfo parameter class
+- CTranslations typedef class
+- CUsagePrivilegeInfo parameter class
+- CUsagePrivileges typedef class
+- CViewColumnInfo parameter class
+- CViewColumnUsage typedef class
 - CViewInfo parameter class
-- m_bIsUpdatable
-- IS_UPDATABLE
 - CViews typedef class
 - CViewTableInfo parameter class
 - CViewTableUsage typedef class
-- m_szSchema
-- m_szTableSchema
-- TABLE_CATALOG
+- DATA_TYPE
+- DATETIME_PRECISION
+- DEFAULT_CHARACTER_SET_CATALOG
+- DEFAULT_CHARACTER_SET_NAME
+- DEFAULT_CHARACTER_SET_SCHEMA
+- DEFAULT_COLLATE_CATALOG
+- DEFAULT_COLLATE_NAME
+- DEFAULT_COLLATE_SCHEMA
+- DELETE_RULE
+- DESCRIPTION class data member
+- DOMAIN_CATALOG
+- DOMAIN_NAME
+- DOMAIN_SCHEMA
+- FILL_FACTOR
+- FILTER_CONDITION
+- FIXED_PREC_SCALE
+- FK_COLUMN_GUID
+- FK_COLUMN_NAME
+- FK_COLUMN_PROPID
+- FK_TABLE_CATALOG
+- FK_TABLE_NAME
+- FK_TABLE_SCHEMA
+- FORM_OF_USE OLE DB column
+- GRANTEE
+- GRANTOR
+- INDEX_CATALOG
+- INDEX_NAME
+- INDEX_SCHEMA
+- INITIAL_SIZE
+- INITIALLY_DEFERRED
+- IS_DEFERRABLE
+- IS_GRANTABLE
+- IS_LONG
+- IS_NULLABLE
+- IS_UPDATABLE
+- LITERAL_SUFFIX
+- LOCAL_TYPE_NAME
+- m_bAutoUniqueValue
+- m_bAutoUpdate
+- m_bBestMatch
+- m_bCaseSensitive
+- m_bCheckOption
+- m_bClustered
+- m_bColumnHasDefault
+- m_bFixedPrecScale
+- m_bHasDefault
+- m_bInitiallyDeferred
+- m_bIsDeferrable
+- m_bIsGrantable
+- m_bIsLong
+- m_bIsNullable
+- m_bIsUpdatable
+- m_bPrimaryKey
+- m_bSortBookmarks
+- m_bUnique
+- m_bUnsignedAttribute
+- m_guidColumn
+- m_guidFKColumn
+- m_guidTable
+- m_guidType
+- m_nCardinality
+- m_nCollation
+- m_nColumnFlags
+- m_nColumnPropID
+- m_nColumnSize
+- m_nDataType
+- m_nDateTimePrecision
+- m_nFillFactor
+- m_nFKColumnPropID
+- m_nInitialSize
+- m_nMaxLength
+- m_nMinScale
+- m_nNullCollation
+- m_nNulls
+- m_nNumCharacters
+- m_nNumericPrecision
+- m_nNumericScale
+- m_nOctetLength
+- m_nOrdinal
+- m_nOrdinalPosition
+- m_nPages
+- m_nPKColumnPropID
+- m_nPrecision
+- m_nRowsetNumber
+- m_nScale
+- m_nSearchable
+- m_nType
+- m_szBindingStyle
 - m_szCatalog
-- TABLE_NAME
-- TABLE_SCHEMA
+- m_szCharCatalog
+- m_szCharName
+- m_szCharSchema
+- m_szCharSetCatalog
+- m_szCharSetName
+- m_szCharSetSchema
+- m_szCheckClause
+- m_szCollateCatalog
+- m_szCollateName
+- m_szCollateSchema
+- m_szCollationCatalog
+- m_szCollationName
+- m_szCollationSchema
+- m_szColumnDefault
+- m_szColumnName
+- m_szConformance
+- m_szConstraintCatalog
+- m_szConstraintName
+- m_szConstraintSchema
+- m_szCreateParams
+- m_szDefault
+- m_szDefinition
+- m_szDeleteRule
+- m_szDescription
+- m_szDomainCatalog
+- m_szDomainName
+- m_szDomainSchema
+- m_szFilterCondition
+- m_szFKColumnName
+- m_szFKTableCatalog
+- m_szFKTableName
+- m_szFKTableSchema
+- m_szFormOfUse
+- m_szGrantee
+- m_szGrantor
+- m_szImplementation
+- m_szIndexCatalog
+- m_szIndexName
+- m_szIndexSchema
+- m_szIntegrity
+- m_szLiteralPrefix
+- m_szLocalTypeName
+- m_szMatchOption
 - m_szName
+- m_szObjectCatalog
+- m_szObjectName
+- m_szObjectSchema
+- m_szObjectType
+- m_szOwner
+- m_szPadAttribute
+- m_szParameterName
+- m_szPKColumnName
+- m_szPKTableCatalog
+- m_szPKTableName
+- m_szPKTableSchema
+- m_szPrivilegeType
+- m_szPrivilegeType
+- m_szProgrammingLanguage
+- m_szSchema
+- m_szSource
+- m_szSourceCatalog
+- m_szSourceName
+- m_szSourceSchema
 - m_szTableCatalog
 - m_szTableName
+- m_szTableSchema
+- m_szTargetCatalog
+- m_szTargetName
+- m_szTargetSchema
+- m_szType
+- m_szTypeLib
+- m_szTypeName
+- m_szUniqueCatalog
+- m_szUniqueName
+- m_szUniqueSchema
+- m_szUpdateRule
+- m_szUpdateRule
+- m_szVersion
+- m_szYear
+- MATCH_OPTION
+- MAXIMUM_SCALE
+- MINIMUM_SCALE
+- NULL_COLLATION
+- NULLS
+- NUMBER_OF_CHARACTERS
+- NUMERIC_PRECISION
+- NUMERIC_SCALE
+- OBJECT_CATALOG
+- OBJECT_NAME
+- OBJECT_SCHEMA
+- OBJECT_TYPE
+- ORDINAL data member
+- ORDINAL_POSITION
+- TABLE_CATALOG
+- TABLE_GUID
+- TABLE_NAME
+- TABLE_SCHEMA
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: f6899f6edf87f2d81f31fac40ac78ba5798d8d8c
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 6f1017e4227ba966c722bf37e85d90b8ad27fa67
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557108"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57988173"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 
@@ -1085,42 +568,42 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 
 Şema satır kümeleri meta verileri temsil eden önceden tanımlanmış satır var. Şema satır kümeleri, burada veritabanı yapısı derleme zamanında bilinmeyen dinamik programlama, genel olarak kullanılır. Çalışma zamanında bir veritabanı hakkında bilgi edinmek için bu şema satır kümeleri'ni kullanabilirsiniz.
 
-Şema satır kümeleri oluşturmak için bir typedef sınıfları kullanın. Şema satır kümesi sınıfları ve typedef karşılık gelen aşağıda listelenmiştir. Çağırmalısınız [CRestrictions::Open](../../data/oledb/crestrictions-open.md) şeması satır kümesi örneğini oluşturduktan sonra. Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür. Bkz: [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) her şeması satır kümesi ile ilişkili kısıtlama sütunlar hakkında bilgi için.
+Şema satır kümeleri oluşturmak için bir typedef sınıfları kullanın. Şema satır kümesi sınıfları ve typedef karşılık gelen aşağıda listelenmiştir. Çağırmalısınız [CRestrictions::Open](../../data/oledb/crestrictions-open.md) şeması satır kümesi örneğini oluşturduktan sonra. Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) her şeması satır kümesi ile ilişkili kısıtlama sütunlar hakkında bilgi için.
 
 Aşağıdaki tabloda her OLE DB şeması satır kümesi ve kendi ilişkili görüntüler OLE DB Şablonları typedef sınıfı ve Info sınıfı.
 
 |OLE DB şeması satır kümesi|TypeDef sınıfı|Info sınıfı|
 |--------------------------|-------------------|----------------|
-|[ONAYLAR](https://docs.microsoft.com/previous-versions/windows/desktop/ms719776(v=vs.85))|[CAssertions](#assertion)|[Cassertionınfo](#assertion)|
-|[KATALOGLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms721241(v=vs.85))|[CCatalogs](#catalog)|[Ccatalogınfo](#catalog)|
-|[CHARACTER_SETS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722638(v=vs.85))|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|
-|[HARMANLAMALAR](https://docs.microsoft.com/previous-versions/windows/desktop/ms715783(v=vs.85))|[CCollations](#collation)|[Ccollationınfo](#collation)|
-|[COLUMN_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms715800(v=vs.85))|[CColumnPrivileges](#columnprivilege)|[Ccolumnprivilegeınfo](#columnprivilege)|
-|[SÜTUNLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85))|[CColumns](#columns)|[Ccolumnsınfo](#columns)|
-|[CONSTRAINT_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85))|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|
-|[CONSTRAINT_TABLE_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms713710(v=vs.85))|[CConstraintTableUsage](#constrainttableusage)|[Cconstrainttableusageınfo](#constrainttableusage)|
-|[CHECK_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms712845(v=vs.85))|[CCheckConstraints](#checkconstraint)|[Ccheckconstraintınfo](#checkconstraint)|
-|[COLUMN_DOMAIN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms711240(v=vs.85))|[CColumnDomainUsage](#columndomainusage)|[Ccolumndomainusageınfo](#columndomainusage)|
-|[FOREIGN_KEYS](https://docs.microsoft.com/previous-versions/windows/desktop/ms711276(v=vs.85))|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|
-|[DİZİNLERİ](https://docs.microsoft.com/previous-versions/windows/desktop/ms709712(v=vs.85))|[Cındexes](#index)|[Cındexınfo](#index)|
-|[KEY_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms712990(v=vs.85))|[CKeyColumn](#keycolumn)|[Ckeycolumnınfo](#keycolumn)|
-|[PRIMARY_KEYS](https://docs.microsoft.com/previous-versions/windows/desktop/ms714362(v=vs.85))|[CPrimaryKeys](#primarykey)|[Cprimarykeyınfo](#primarykey)|
-|[YORDAMLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms724021(v=vs.85))|[CProcedures](#procedure)|[Cprocedureınfo](#procedure)|
-|[PROCEDURE_COLUMNS](https://docs.microsoft.com/previous-versions/windows/desktop/ms723092(v=vs.85))|[CProcedureColumns](#procedurecolumn)|[Cprocedurecolumnınfo](#procedurecolumn)|
-|[PROCEDURE_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/desktop/ms713623(v=vs.85))|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|
-|[PROVIDER_TYPES](https://docs.microsoft.com/previous-versions/windows/desktop/ms709785(v=vs.85))|[CProviderTypes](#provider)|[Cproviderınfo](#provider)|
-|[REFERENTIAL_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms719737(v=vs.85))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
-|[ŞEMALARIN](https://docs.microsoft.com/previous-versions/windows/desktop/ms716887(v=vs.85))|[CSchemata](#schemata)|[Cschemataınfo](#schemata)|
-|[SQL_LANGUAGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms714374(v=vs.85))|[CSQLLanguages](#sqllanguage)|[Csqllanguageınfo](#sqllanguage)|
-|[İSTATİSTİKLERİ](https://docs.microsoft.com/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[Cstatisticınfo](#statistic)|
-|[TABLE_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms715921(v=vs.85))|[CTableConstraints](#tableconstraint)|[Ctableconstraintınfo](#tableconstraint)|
-|[TABLOLARI](https://docs.microsoft.com/previous-versions/windows/desktop/ms716980(v=vs.85))|[CTables](#table)|[Ctableınfo](#table)|
-|[TABLE_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms725428(v=vs.85))|[CTablePrivileges](#tableprivilege)|[Ctableprivilegeınfo](#tableprivilege)|
-|[ÇEVİRİLERİ](https://docs.microsoft.com/previous-versions/windows/desktop/ms725365(v=vs.85))|[CTranslations](#translation)|[CTranslationInfo](#translation)|
-|[USAGE_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms722743(v=vs.85))|[CUsagePrivileges](#usageprivilege)|[Cusageprivilegeınfo](#usageprivilege)|
-|[VIEW_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms714896(v=vs.85))|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|
-|[GÖRÜNÜMLER](https://docs.microsoft.com/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[Cviewınfo](#view)|
-|[VIEW_TABLE_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[Cviewtableınfo](#viewtable)|
+|[ONAYLAR](/previous-versions/windows/desktop/ms719776(v=vs.85))|[CAssertions](#assertion)|[Cassertionınfo](#assertion)|
+|[KATALOGLARI](/previous-versions/windows/desktop/ms721241(v=vs.85))|[CCatalogs](#catalog)|[Ccatalogınfo](#catalog)|
+|[CHARACTER_SETS](/previous-versions/windows/desktop/ms722638(v=vs.85))|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|
+|[HARMANLAMALAR](/previous-versions/windows/desktop/ms715783(v=vs.85))|[CCollations](#collation)|[Ccollationınfo](#collation)|
+|[COLUMN_PRIVILEGES](/previous-versions/windows/desktop/ms715800(v=vs.85))|[CColumnPrivileges](#columnprivilege)|[Ccolumnprivilegeınfo](#columnprivilege)|
+|[SÜTUNLARI](/previous-versions/windows/desktop/ms723052(v=vs.85))|[CColumns](#columns)|[Ccolumnsınfo](#columns)|
+|[CONSTRAINT_COLUMN_USAGE](/previous-versions/windows/desktop/ms724522(v=vs.85))|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|
+|[CONSTRAINT_TABLE_USAGE](/previous-versions/windows/desktop/ms713710(v=vs.85))|[CConstraintTableUsage](#constrainttableusage)|[Cconstrainttableusageınfo](#constrainttableusage)|
+|[CHECK_CONSTRAINTS](/previous-versions/windows/desktop/ms712845(v=vs.85))|[CCheckConstraints](#checkconstraint)|[Ccheckconstraintınfo](#checkconstraint)|
+|[COLUMN_DOMAIN_USAGE](/previous-versions/windows/desktop/ms711240(v=vs.85))|[CColumnDomainUsage](#columndomainusage)|[CColumnDomainUsageInfo](#columndomainusage)|
+|[FOREIGN_KEYS](/previous-versions/windows/desktop/ms711276(v=vs.85))|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|
+|[DİZİNLERİ](/previous-versions/windows/desktop/ms709712(v=vs.85))|[Cındexes](#index)|[Cındexınfo](#index)|
+|[KEY_COLUMN_USAGE](/previous-versions/windows/desktop/ms712990(v=vs.85))|[CKeyColumn](#keycolumn)|[Ckeycolumnınfo](#keycolumn)|
+|[PRIMARY_KEYS](/previous-versions/windows/desktop/ms714362(v=vs.85))|[CPrimaryKeys](#primarykey)|[Cprimarykeyınfo](#primarykey)|
+|[YORDAMLARI](/previous-versions/windows/desktop/ms724021(v=vs.85))|[CProcedures](#procedure)|[Cprocedureınfo](#procedure)|
+|[PROCEDURE_COLUMNS](/previous-versions/windows/desktop/ms723092(v=vs.85))|[CProcedureColumns](#procedurecolumn)|[Cprocedurecolumnınfo](#procedurecolumn)|
+|[PROCEDURE_PARAMETERS](/previous-versions/windows/desktop/ms713623(v=vs.85))|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|
+|[PROVIDER_TYPES](/previous-versions/windows/desktop/ms709785(v=vs.85))|[CProviderTypes](#provider)|[Cproviderınfo](#provider)|
+|[REFERENTIAL_CONSTRAINTS](/previous-versions/windows/desktop/ms719737(v=vs.85))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
+|[ŞEMALARIN](/previous-versions/windows/desktop/ms716887(v=vs.85))|[CSchemata](#schemata)|[Cschemataınfo](#schemata)|
+|[SQL_LANGUAGES](/previous-versions/windows/desktop/ms714374(v=vs.85))|[CSQLLanguages](#sqllanguage)|[Csqllanguageınfo](#sqllanguage)|
+|[İSTATİSTİKLERİ](/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[Cstatisticınfo](#statistic)|
+|[TABLE_CONSTRAINTS](/previous-versions/windows/desktop/ms715921(v=vs.85))|[CTableConstraints](#tableconstraint)|[Ctableconstraintınfo](#tableconstraint)|
+|[TABLOLARI](/previous-versions/windows/desktop/ms716980(v=vs.85))|[CTables](#table)|[Ctableınfo](#table)|
+|[TABLE_PRIVILEGES](/previous-versions/windows/desktop/ms725428(v=vs.85))|[CTablePrivileges](#tableprivilege)|[Ctableprivilegeınfo](#tableprivilege)|
+|[ÇEVİRİLERİ](/previous-versions/windows/desktop/ms725365(v=vs.85))|[CTranslations](#translation)|[CTranslationInfo](#translation)|
+|[USAGE_PRIVILEGES](/previous-versions/windows/desktop/ms722743(v=vs.85))|[CUsagePrivileges](#usageprivilege)|[Cusageprivilegeınfo](#usageprivilege)|
+|[VIEW_COLUMN_USAGE](/previous-versions/windows/desktop/ms714896(v=vs.85))|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|
+|[GÖRÜNÜMLER](/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[Cviewınfo](#view)|
+|[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[Cviewtableınfo](#viewtable)|
 
 ## <a name="assertion"></a> CAssertions, Cassertionınfo
 
@@ -1132,7 +615,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait onaylar Kataloğu'nda tanımlanan tanımlar.
 
-Aşağıdaki tablo için sınıf veri üyeleri listeler `CAssertionInfo` ve bunların karşılık gelen OLE DB sütunlarını. Bkz: [ONAYLAR satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms719776(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tablo için sınıf veri üyeleri listeler `CAssertionInfo` ve bunların karşılık gelen OLE DB sütunlarını. Bkz: [ONAYLAR satır kümesi](/previous-versions/windows/desktop/ms719776(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1153,7 +636,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf DBMS erişilebilir kataloglar ile ilişkilendirilmiş fiziksel öznitelikleri tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KATALOGLARI satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms721241(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KATALOGLARI satır kümesi](/previous-versions/windows/desktop/ms721241(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1170,7 +653,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan karakter kümesini tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHARACTER_SETS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms722638(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHARACTER_SETS satır kümesi](/previous-versions/windows/desktop/ms722638(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1193,7 +676,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan denetim kısıtlamalarında, tanımlar. Bir denetim kısıtlaması, bir tablodaki bir veya daha fazla sütun olarak kabul edilen biçimler ve veri değerleri belirtir.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHECK_CONSTRAINTS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms712845(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHECK_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms712845(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1213,7 +696,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter harmanlamalara, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [HARMANLAMALARI satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715783(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [HARMANLAMALARI satır kümesi](/previous-versions/windows/desktop/ms715783(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1235,7 +718,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait bir etki alanı bağımlı Kataloğu'nda tanımlanan sütunları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_DOMAIN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms711240(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_DOMAIN_USAGE satır kümesi](/previous-versions/windows/desktop/ms711240(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1259,7 +742,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, ayrıcalıkların kullanımına veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tabloları, sütunları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_PRIVILEGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715800(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms715800(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1284,7 +767,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcının erişebildiği tablo sütunlarını tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SÜTUNLARIN satır](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1327,7 +810,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait sütunlarını tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_COLUMN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1351,7 +834,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait tabloları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_TABLE_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1372,7 +855,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan yabancı anahtar sütunları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [FOREIGN_KEYS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms711276(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [FOREIGN_KEYS satır kümesi](/previous-versions/windows/desktop/ms711276(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1402,7 +885,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan dizin, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [DİZİNLERİ satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms709712(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [DİZİNLERİ satır kümesi](/previous-versions/windows/desktop/ms709712(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1441,7 +924,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf anahtarı olarak belirli bir kullanıcı tarafından kısıtlanmıştır Kataloğu'nda tanımlanan sütunları, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KEY_COLUMN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms712990(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KEY_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms712990(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1466,7 +949,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan birincil anahtar sütunlarını tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PRIMARY_KEYS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms714362(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PRIMARY_KEYS satır kümesi](/previous-versions/windows/desktop/ms714362(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1488,7 +971,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, sütunları yordamları tarafından döndürülen satır kümeleri hakkında bilgi döndürür.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_COLUMNS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms723092(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_COLUMNS satır kümesi](/previous-versions/windows/desktop/ms723092(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1519,7 +1002,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, parametreleri ve dönüş kodları yordamlar hakkında bilgi döndürür.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_PARAMETERS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms713623(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_PARAMETERS satır kümesi](/previous-versions/windows/desktop/ms713623(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1549,7 +1032,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait yordamlar, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [YORDAMLARI satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms724021(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [YORDAMLARI satır kümesi](/previous-versions/windows/desktop/ms724021(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1570,7 +1053,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, veri sağlayıcısı tarafından desteklenen (Temel) veri türlerini tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [provıder_types satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms709785(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [provıder_types satır kümesi](/previous-versions/windows/desktop/ms709785(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1605,7 +1088,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan başvuru kısıtlamalarını, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [REFERENTIAL_CONSTRAINTS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms719737(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [REFERENTIAL_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms719737(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1630,7 +1113,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait şemalar tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ŞEMALARIN satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms716887(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ŞEMALARIN satır kümesi](/previous-versions/windows/desktop/ms716887(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1651,7 +1134,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, uyumluluk düzeyleri, seçeneklerini ve SQL uygulama işleme veri Kataloğu'nda tanımlanan tarafından desteklenen diyalektleri tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SQL_LANGUAGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms714374(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SQL_LANGUAGES satır kümesi](/previous-versions/windows/desktop/ms714374(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1673,7 +1156,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan istatistikleri, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [İSTATİSTİKLERİ satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715957(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [İSTATİSTİKLERİ satır kümesi](/previous-versions/windows/desktop/ms715957(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1692,7 +1175,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan tablo kısıtlamaları, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_CONSTRAINTS satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms715921(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms715921(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1717,7 +1200,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, Kataloğu'nda tanımlanan belirli bir kullanıcının erişebildiği tabloları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_PRIVILEGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms725428(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms725428(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1739,7 +1222,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf, kullanılabilir ya da belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tablolarda ayrıcalıkları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [tablolar satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms716980(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [tablolar satır kümesi](/previous-versions/windows/desktop/ms716980(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1760,7 +1243,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter çevirilerini tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ÇEVİRİLERİ satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms725365(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ÇEVİRİLERİ satır kümesi](/previous-versions/windows/desktop/ms725365(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1784,7 +1267,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf için kullanılabilir veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan nesneler üzerinde kullanım ayrıcalıkları tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [USAGE_PRIVILEGES satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms722743(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [USAGE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms722743(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1807,7 +1290,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf sütunlar üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_COLUMN_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms714896(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms714896(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1831,7 +1314,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf tabloları üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [görünümleri satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms723122(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [görünümleri satır kümesi](/previous-versions/windows/desktop/ms723122(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|
@@ -1853,7 +1336,7 @@ Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/o
 
 Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan görüntülenen tabloları, tanımlar.
 
-Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_TABLE_USAGE satır kümesi](https://docs.microsoft.com/previous-versions/windows/desktop/ms719727(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms719727(v=vs.85)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.
 
 |Veri üyeleri|OLE DB sütunları|
 |------------------|--------------------|

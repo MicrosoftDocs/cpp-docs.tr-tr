@@ -2,19 +2,17 @@
 title: Özellikler ve özellik sayfası sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.properties
 helpviewer_keywords:
 - property pages, classes
 - properties [ATL], classes
 - properties [ATL]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
-ms.openlocfilehash: f5d318cecc527d0c41124ccf14326ea308007b1d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 05c3a67e278389bb2ab1b07e9d6cf63cbe347c63
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290475"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57807551"
 ---
 # <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfası sınıfları
 
