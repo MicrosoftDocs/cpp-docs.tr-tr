@@ -1,5 +1,5 @@
 ---
-title: Satır İçi İşlevleri İçeri ve Dışarı Aktarma
+title: İçeri ve dışarı aktarma satır içi işlevler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exporting functions [C++], inline functions
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - functions [C++], importing
 - functions [C++], exporting
 ms.assetid: 89f488f8-b078-40fe-afd7-80bd7840057b
-ms.openlocfilehash: 407ca39aa53cf622b531fa0ca7818682c82c561f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed523d84228124d4a8d99e443c0c744f362f1c56
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439110"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822047"
 ---
-# <a name="importing-and-exporting-inline-functions"></a>Satır İçi İşlevleri İçeri ve Dışarı Aktarma
+# <a name="importing-and-exporting-inline-functions"></a>İçeri ve dışarı aktarma satır içi işlevler
 
 İçeri aktarılan işlevler, satır içi olarak tanımlanabilir. Etkisi kabaca bir standart bir işlevi satır içi tanımlama aynıdır; işlev çağrıları, bir makro benzer bir satır içi kod içine genişletilir. Bu, temelde C++ destekleyen bir yol DLL'de verimlilik için bazı üye işlevleri, sınıflarını kullanışlıdır.
 
@@ -30,20 +30,20 @@ Bir içeri aktarılan satır içi işlev c++'ta adresini alabilir özelliğidir.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)
+- [DLL'den dışarı aktarma](exporting-from-a-dll.md)
 
-- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](../build/exporting-from-a-dll-using-def-files.md)
+- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](exporting-and-importing-using-afx-ext-class.md)
 
-- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](determining-which-exporting-method-to-use.md)
 
-- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](importing-into-an-application-using-declspec-dllimport.md)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)
+[İçeri ve Dışarı Aktarma](importing-and-exporting.md)

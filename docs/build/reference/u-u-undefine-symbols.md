@@ -13,12 +13,12 @@ helpviewer_keywords:
 - /U compiler option [C++]
 - U compiler option [C++]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
-ms.openlocfilehash: 1ccda218a2bccc261653016ad6a47d419ddacfd9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfc03ebd5c900bf8bf81b4a50eed02111baf85ee
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624451"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822499"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u (Simge Tanımlarını Kaldır)
 
@@ -46,18 +46,18 @@ Varsayılan olarak, derleyici aşağıdaki Microsoft'a özgü simgeleri tanımla
 
 |Sembol|İşlev|
 |------------|--------------|
-|_CHAR_UNSIGNED|Varsayılan karakter türü imzalanmamış. Tanımlanır [/J](../../build/reference/j-default-char-type-is-unsigned.md) seçeneği belirtildi.|
-|_CPPRTTI|İle derlenen kod için tanımlanan [GR](../../build/reference/gr-enable-run-time-type-information.md) seçeneği.|
-|_CPPUNWIND|İle derlenen kod için tanımlanan [/ehsc](../../build/reference/eh-exception-handling-model.md) seçeneği.|
-|_DLL|Tanımlanır [/MD](../../build/reference/md-mt-ld-use-run-time-library.md) seçeneği belirtildi.|
+|_CHAR_UNSIGNED|Varsayılan karakter türü imzalanmamış. Tanımlanır [/J](j-default-char-type-is-unsigned.md) seçeneği belirtildi.|
+|_CPPRTTI|İle derlenen kod için tanımlanan [GR](gr-enable-run-time-type-information.md) seçeneği.|
+|_CPPUNWIND|İle derlenen kod için tanımlanan [/ehsc](eh-exception-handling-model.md) seçeneği.|
+|_DLL|Tanımlanır [/MD](md-mt-ld-use-run-time-library.md) seçeneği belirtildi.|
 |_M_IX86|600 x86 için tanımlanan varsayılan hedefler.|
 |_MSC_VER|Daha fazla bilgi için [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).|
 |_WIN32|WIN32 uygulamaları için tanımlanır. Her zaman tanımlı.|
-|_MT|Tanımlanır [/MD veya/MT](../../build/reference/md-mt-ld-use-run-time-library.md) seçeneği belirtildi.|
+|_MT|Tanımlanır [/MD veya/MT](md-mt-ld-use-run-time-library.md) seçeneği belirtildi.|
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -69,11 +69,11 @@ Varsayılan olarak, derleyici aşağıdaki Microsoft'a özgü simgeleri tanımla
 
 - Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions%2A> veya <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/J (Varsayılan Karakter Türü İmzasız)](../../build/reference/j-default-char-type-is-unsigned.md)<br/>
-[/GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)](../../build/reference/gr-enable-run-time-type-information.md)<br/>
-[/EH (Özel Durum İşleme Modeli)](../../build/reference/eh-exception-handling-model.md)<br/>
-[/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)](../../build/reference/md-mt-ld-use-run-time-library.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[/J (Varsayılan Karakter Türü İmzasız)](j-default-char-type-is-unsigned.md)<br/>
+[/GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)](gr-enable-run-time-type-information.md)<br/>
+[/EH (Özel Durum İşleme Modeli)](eh-exception-handling-model.md)<br/>
+[/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)](md-mt-ld-use-run-time-library.md)

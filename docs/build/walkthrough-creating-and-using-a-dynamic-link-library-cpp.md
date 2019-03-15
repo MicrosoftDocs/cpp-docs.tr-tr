@@ -1,19 +1,19 @@
 ---
-title: 'İzlenecek yol: Oluşturup kendi dinamik bağlantı kitaplığı (C++)'
+title: 'İzlenecek yol: Oluşturma ve kullanma kendi dinamik bağlantı kitaplığı (C++)'
 ms.custom: conceptual
 ms.date: 09/24/2018
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: c09fa369cd4e0b726d809fa709518574d4fdbc6e
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c1f59c704e96ade82295f4ae88265f549987e981
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330547"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813974"
 ---
-# <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturup kendi dinamik bağlantı kitaplığı (C++)
+# <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturma ve kullanma kendi dinamik bağlantı kitaplığı (C++)
 
 Bu adım adım izlenecek yol, C++ ile yazılmış kendi dinamik bağlantı kitaplığı (DLL) oluşturmak için Visual Studio IDE kullanın ve ardından başka bir C++ uygulamasından kullanma işlemi gösterilmektedir. DLL'leri Windows bileşenleri en kullanışlı türlerini biridir. Bunları bir şekilde kod ve kaynakları paylaşmak için uygulamalarınızı boyutunu küçültmek ve hizmet ve uygulamalarınızı genişletin daha kolay hale getirmek için kullanabilirsiniz. Bu kılavuzda, bazı matematik işlevleri uygulayan bir DLL'yi oluşturmak ve ardından DLL işlevlerini kullanan bir konsol uygulaması oluşturacaksınız. Bu doğrultuda, bazı programlama teknikleri ve Windows DLL'leri kullanılan kuralları giriş yapın.
 
@@ -29,11 +29,11 @@ Bu izlenecek yol bu görevleri kapsar:
 
 - Tamamlanmış uygulamayı çalıştırın.
 
-Gibi statik olarak bağlı bir kitaplığı, bir DLL _aktarır_ değişkenler, İşlevler ve kaynak adı ve uygulamanız tarafından _aktarır_ bu adları bu değişkenler, İşlevler ve kaynakları kullanın. Statik olarak bağlı bir kitaplığı, Windows uygulamanızı Imports dışarı aktarmaları DLL'de yükleme zamanında ya da bunları bağlantı zamanında bağlanmak yerine çalışma zamanında bağlanır. Windows, bu bağlantılar kurmak için standart C++ derleme modelinin bir parçası olmayan ek bilgi gerektirir. Visual C++ derleyicisi, bu ek bilgi sağlamak için C++ bazı Microsoft'a özel uzantıları uygular. Biz kullandıkça Biz bu uzantıları açıklar.
+Gibi statik olarak bağlı bir kitaplığı, bir DLL _aktarır_ değişkenler, İşlevler ve kaynak adı ve uygulamanız tarafından _aktarır_ bu adları bu değişkenler, İşlevler ve kaynakları kullanın. Statik olarak bağlı bir kitaplığı, Windows uygulamanızı Imports dışarı aktarmaları DLL'de yükleme zamanında ya da bunları bağlantı zamanında bağlanmak yerine çalışma zamanında bağlanır. Windows, bu bağlantılar kurmak için standart C++ derleme modelinin bir parçası olmayan ek bilgi gerektirir. MSVC derleyicisi, bu ek bilgi sağlamak için C++ bazı Microsoft'a özel uzantıları uygular. Biz kullandıkça Biz bu uzantıları açıklar.
 
 Bu kılavuz iki Visual Studio çözümü oluşturur. bir DDL oluşturur ve bir istemci uygulaması oluşturur. Platform çağırma ve kuralları bağlama eşleştiği sürece diğer diller kullanılarak oluşturulan uygulamalardan çağrılabilen bir DLL C çağırma kuralı kullanır. İstemci uygulama kullandığı _örtük bağlama_, burada Windows uygulama DLL yükleme zamanında bağlar. Bu bağlama, DLL tarafından sağlanan işlevleri gibi statik olarak bağlı bir kitaplıkta işlevlerini uygulamanın sağlar.
 
-Bu izlenecek yol, bazı yaygın durumlar ele alınmamıştır. Bu, diğer programlama dilleri tarafından C++ DLL'leri kullanımını göstermez. Bu, yalnızca kaynak DLL oluşturma göstermez. Ayrıca, çalışma zamanında yerine yükleme zamanı dll yüklenecek açık bağlama kullanımını da göstermez. Visual C++ tüm bunları yapmak için kullanabileceğiniz içiniz rahat olsun. DLL'ler hakkında daha fazla bilgi için bağlantılar için bkz: [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md). Örtük bağlama ve açık bağlama hakkında daha fazla bilgi için bkz. [belirleme hangi bağlama yöntemini kullanacağınızı](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). C dili bağlantı kurallarının kullanan programlama ile kullanmak için C++ DLL'leri oluşturma hakkında daha fazla bilgi için bkz: [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). .NET dilleri ile kullanılmak üzere DLL'leri oluşturma hakkında daha fazla bilgi için bkz: [Visual Basic uygulamalarından DLL işlevleri çağırma](../build/calling-dll-functions-from-visual-basic-applications.md).
+Bu izlenecek yol, bazı yaygın durumlar ele alınmamıştır. Bu, diğer programlama dilleri tarafından C++ DLL'leri kullanımını göstermez. Bu, yalnızca kaynak DLL oluşturma göstermez. Ayrıca, çalışma zamanında yerine yükleme zamanı dll yüklenecek açık bağlama kullanımını da göstermez. Visual C++ tüm bunları yapmak için kullanabileceğiniz içiniz rahat olsun. DLL'ler hakkında daha fazla bilgi için bağlantılar için bkz: [Visual C++'ta DLL'ler](dlls-in-visual-cpp.md). Örtük bağlama ve açık bağlama hakkında daha fazla bilgi için bkz. [belirleme hangi bağlama yöntemini kullanacağınızı](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). C dili bağlantı kurallarının kullanan programlama ile kullanmak için C++ DLL'leri oluşturma hakkında daha fazla bilgi için bkz: [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md). .NET dilleri ile kullanılmak üzere DLL'leri oluşturma hakkında daha fazla bilgi için bkz: [Visual Basic uygulamalarından DLL işlevleri çağırma](calling-dll-functions-from-visual-basic-applications.md).
 
 Bu kılavuzda Visual Studio 2017 kullanılır, ancak kodu ve yönergeleri çoğu önceki sürümleri için geçerlidir. Visual Studio 2017 sürüm 15.3 başlayarak yeni projeler oluşturma adımlarını değiştirildi. Bu izlenecek yol için eski ve yeni sürümlerini proje nasıl oluşturulacağını açıklar. Visual Studio sürümünüze uygun adımları arayın.
 
@@ -398,9 +398,6 @@ Bir DLL ve istemci uygulaması oluşturduktan sonra denemeler yapabilirsiniz. İ
 
 Uygulamanızı dağıtırken de kullandığı DLL'leri dağıtmanız gerekir. Oluşturduğunuz veya size içeren dll Üçüncü taraflardan uygulamanıza kullanılabilmesi için en basit yolu bunları, uygulamanız ile aynı dizinde olarak da bilinen eklemektir *uygulaması yerel dağıtım*. Dağıtım hakkında daha fazla bilgi için bkz: [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
-[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
-[İzlenecek Yol: Programınızı Dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
-[Visual Basic Uygulamalarından DLL İşlevleri Çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)
+[Visual Basic Uygulamalarından DLL İşlevleri Çağırma](calling-dll-functions-from-visual-basic-applications.md)

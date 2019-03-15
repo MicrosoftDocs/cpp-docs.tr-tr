@@ -7,12 +7,12 @@ helpviewer_keywords:
 - application settings [C++]
 - Win32 Project Wizard, application settings
 ms.assetid: d6b818f0-9b23-4793-a6c5-df1c8c594bad
-ms.openlocfilehash: b9d9e8c0919429a961b4ef47507270534afacf75
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 160c0a11408705f261feee41bcae0a72a1760a7d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592679"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821969"
 ---
 # <a name="application-settings-win-32-project-wizard"></a>Uygulama Ayarları, Win 32 Proje Sihirbazı
 
@@ -27,7 +27,7 @@ Belirtilen uygulama türünü oluşturur.
 |**Konsol uygulaması**|Bir konsol uygulaması oluşturur. Konsol programları ile geliştirilen [Konsolu işlevleri](https://msdn.microsoft.com/library/ms813137.aspx), konsolu windows karakter modu desteği sağlar. Visual C++ [çalışma zamanı kitaplıkları](../c-runtime-library/c-run-time-library-reference.md) ayrıca çıktısını sağlayın ve standart g/ç işlevleri ile Windows konsolu gibi giriş `printf_s()` ve `scanf_s()`. Bir konsol uygulaması grafik kullanıcı arabirimi var. Bir .exe dosyasının içine derleyen ve komut satırından bağımsız bir uygulama olarak çalıştırılabilir.<br /><br /> MFC ve ATL bir konsol uygulaması için destek ekleyebilirsiniz.|
 |**Windows uygulama**|Bir Win32 programına oluşturur. Bir Win32 programına C veya C++, bir grafik kullanıcı arabirimi oluşturmak için Win32 API çağrıları kullanarak yazılmış bir yürütülebilir (EXE) uygulamasıdır.<br /><br /> MFC eklenemiyor veya bir Windows uygulaması için ATL desteği.|
 |**DLL**|Bir Win32 dinamik bağlantı kitaplığı (DLL) oluşturur. Bir Win32 DLL C veya C++, MFC sınıfları yerine Win32 API çağrılarını kullanır ve, paylaşılan bir kitaplık aynı anda birden çok uygulama tarafından kullanılabilecek işlevleri gibi davranır, ikili bir dosyadır.<br /><br /> MFC eklenemiyor veya bir DLL uygulaması için ATL desteği. DLL sembolleri dışa aktarır belirtebilirsiniz.|
-|**Statik kitaplık**|Statik kitaplık oluşturur. Statik kitaplık nesneleri ve işlevleri ve yürütülebilir dosya oluşturulduğunda, programınız bağlanan veri içeren bir dosyadır. Bu konu başlangıç dosyalarının nasıl oluşturulacağını açıklar ve [proje özellikleri](../ide/property-pages-visual-cpp.md) statik kitaplığı. Statik kitaplık dosyası aşağıdaki avantajları sağlar:<br /><br />-Bir Win32 statik kitaplık, üzerinde çalıştığınız uygulama Win32 API yerine MFC sınıfları çağrılar yaparsa yararlıdır.<br />-Windows uygulamanızı geri kalanını c veya C++ yazılmış bağlama işlemi aynıdır.<br />MFC tabanlı bir program veya MFC olmayan programı-statik kitaplık bağlayabilirsiniz.|
+|**Statik kitaplık**|Statik kitaplık oluşturur. Statik kitaplık nesneleri ve işlevleri ve yürütülebilir dosya oluşturulduğunda, programınız bağlanan veri içeren bir dosyadır. Bu konu başlangıç dosyalarının nasıl oluşturulacağını açıklar ve [proje özellikleri](../build/reference/property-pages-visual-cpp.md) statik kitaplığı. Statik kitaplık dosyası aşağıdaki avantajları sağlar:<br /><br />-Bir Win32 statik kitaplık, üzerinde çalıştığınız uygulama Win32 API yerine MFC sınıfları çağrılar yaparsa yararlıdır.<br />-Windows uygulamanızı geri kalanını c veya C++ yazılmış bağlama işlemi aynıdır.<br />MFC tabanlı bir program veya MFC olmayan programı-statik kitaplık bağlayabilirsiniz.|
 
 ## <a name="additional-options"></a>Ek Seçenekler
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing projects
 - projects [C++], testing
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
-ms.openlocfilehash: e93236f9bd08741bb757e43309cd59281f828da1
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: aa1af9cd355265214827527b986b8602a25e93f3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744597"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808280"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>İzlenecek yol: (C++) projeyi test etme
 
@@ -63,4 +63,4 @@ Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>
+[Projeler ve yapı sistemi](../build/projects-and-build-systems-cpp.md)<br/>

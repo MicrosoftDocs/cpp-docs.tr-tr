@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -IGNOREIDL linker option
 - /IGNOREIDL linker option
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
-ms.openlocfilehash: f6c5fcbae52ed695f2d0c389607ac4231f069788
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 210778adecd87ffdd5f2702c10106f12bd5a1b79
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534361"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820435"
 ---
 # <a name="ignoreidl-don39t-process-attributes-into-midl"></a>/ IGNOREIDL (Don&#39;MIDL t işlem öznitelikler)
 
@@ -28,7 +28,7 @@ ms.locfileid: "50534361"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -40,11 +40,11 @@ ms.locfileid: "50534361"
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreEmbeddedIDL%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
-[/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)](../../build/reference/idlout-name-midl-output-files.md)<br/>
-[/TLBOUT (.TLB Dosyası Adlandır)](../../build/reference/tlbout-name-dot-tlb-file.md)<br/>
-[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)](idlout-name-midl-output-files.md)<br/>
+[/TLBOUT (.TLB Dosyası Adlandır)](tlbout-name-dot-tlb-file.md)<br/>
+[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](midl-specify-midl-command-line-options.md)<br/>
 [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

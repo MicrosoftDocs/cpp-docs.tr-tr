@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - browse information files (.bsc), building
 ms.assetid: 8512b33e-c856-44a2-87bd-01ab10b52a95
-ms.openlocfilehash: 053bc7565accce5db8998ae8efec256ef37d37b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f721641e021396f112bfe4c075ca0f524100d1f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442594"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821241"
 ---
 # <a name="how-bscmake-builds-a-bsc-file"></a>BSCMAKE .Bsc Dosyasını Nasıl Derler
 
@@ -23,6 +23,6 @@ BSCMAKE .bsc dosyasını /o seçeneği ile belirtilen ada sahip arar. /O belirti
 
 - .Bsc dosyası başarılı olması Artımlı derleme için mevcut olması gerekir. Katkıda bulunan tüm .sbr dosyaları boş dosyalar bile bulunmalı ve BSCMAKE komut satırında belirtilmelidir. Komut satırından .sbr dosyası atlarsanız, BSCMAKE katkıyı dosyasından kaldırır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[.Bsc Dosyası Derleme](../../build/reference/building-a-dot-bsc-file.md)
+[.Bsc Dosyası Derleme](building-a-dot-bsc-file.md)

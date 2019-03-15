@@ -6,12 +6,12 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: ac8439e1709b6bbce6f32580bafee50c9ff30e3f
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.openlocfilehash: 6c5adac9bb31287693b7d53c1fa8ff10263f4367
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977751"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815859"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteği yükleme
 
@@ -45,15 +45,15 @@ Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ih
 
 1. Yükleyici dosyasını indirdiğiniz ve uygulamayı bulun. Tarayıcınızda görüntülenebilir veya indirilenler klasörünüze fark edebilirsiniz. Yükleyiciyi çalıştırmak için yönetici ayrıcalıkları gerekir. Görebileceğiniz bir **kullanıcı hesabı denetimi** seçin; sisteminize değişiklik kurucusunun izni vermek isteyen bir iletişim **Evet**. Sorun yaşıyorsanız, dosya Gezgini'nde indirilen dosyayı bulmak, yükleyici simgesini sağ tıklatın ve seçin **yönetici olarak çalıştır** bağlam menüsünden.
 
-   ![Visual Studio Yükleyicisi'nin karşıdan yükleyip](../build/media/vscpp-concierge-run-installer.gif "indirip Visual Studio Yükleyicisi'ni yükleyin")
+   ![Visual Studio Yükleyicisi'nin karşıdan yükleyip](media/vscpp-concierge-run-installer.gif "indirip Visual Studio Yükleyicisi'ni yükleyin")
 
 1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. Podporu iOS Pro C++ artık varsayılan olarak yüklü değildir isteğe bağlı iş yüklerinin parçasıdır.
 
-   ![C++ iş yükünde ile masaüstü geliştirme](../build/media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
+   ![C++ iş yükünde ile masaüstü geliştirme](media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
 
    C++ için seçin **C++ ile masaüstü geliştirme** iş yükü ve ardından **yükleme**.
 
-   ![Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin](../build/media/vscpp-concierge-choose-workload.gif "Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin.")
+   ![Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin](media/vscpp-concierge-choose-workload.gif "Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin.")
 
 1. Yükleme tamamlandığında seçin **başlatma** Visual Studio'yu başlatmak için düğme.
 
@@ -61,13 +61,13 @@ Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ih
 
    Birçok Visual Studio sürebilir hazır hale getirmek için dakika, onu çalıştırdığınız ilk kez kullanın. İşte bu şekilde bir hızlı atlamalı görünür:
 
-   ![Visual Studio 2017 oturum](../build/media/vscpp-quickstart-first-run.gif "Visual Studio 2017 oturum açın")
+   ![Visual Studio 2017 oturum](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 oturum açın")
 
    Yeniden çalıştırdığınızda visual Studio çok daha hızlı başlatılır.
 
 1. Visual Studio açıldığında başlık çubuğunda bayrak simgesine vurgulanır denetleyin:
 
-   ![Visual Studio 2017 bildirim bayrağı](../build/media/vscpp-first-start-page-flag.png "Visual Studio 2017 bildirim bayrağı")
+   ![Visual Studio 2017 bildirim bayrağı](media/vscpp-first-start-page-flag.png "Visual Studio 2017 bildirim bayrağı")
 
    Vurgulanır, açmak için seçmeniz **bildirimleri** penceresi. Visual Studio için kullanılabilen herhangi bir güncelleştirme varsa, artık yüklemeniz kesinlikle önerilir. Yükleme tamamlandıktan sonra Visual Studio'yu yeniden başlatın.
 

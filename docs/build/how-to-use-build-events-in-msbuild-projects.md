@@ -1,19 +1,19 @@
 ---
-title: 'Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma'
+title: 'Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma'
 ms.date: 11/04/2016
 f1_keywords:
 - msbuild.cpp.howto.usebuildevents
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-ms.openlocfilehash: 60e26b5cab77bb56f0574a91ad69a7df4d73fa1e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7678b975558b245fb730bff35fb156bf21d7f895
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570280"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814129"
 ---
-# <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
+# <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma
 
 Bir derleme olay MSBuild yapı işleminde belirli bir aşamada gerçekleştirir bir komuttur. *Derleme öncesi* olayı oluşturma başlamadan önce oluşur; *bağlama öncesi* olaylarının bağlantı adım başlatılmadan önce; ve *derleme sonrası* olay yapıdan sonra gerçekleşir başarılı bir şekilde sona erer. İlişkili derleme adımı oluşursa bir derleme olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.
 
@@ -39,7 +39,7 @@ Aşağıdaki tabloda her listeler *yapı içinde kullanımı* öğesi:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi içinde eklenebilir [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *derleme öncesi* olay yaptığı bir kopyasını Main.cpp olarak; bir *bağlama öncesi* bir kopyasını main.obj; ve bir olay yapar *derleme sonrası* olay myproject.exe bir kopyasını getirir. Proje yayın yapılandırma kullanılarak oluşturulmuşsa, derleme olayları yürütülür. Proje hata ayıklama Yapılandırması kullanılarak oluşturulmuşsa, derleme olayları yürütülmedi.
+Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi içinde eklenebilir [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *derleme öncesi* olay yaptığı bir kopyasını Main.cpp olarak; bir *bağlama öncesi* bir kopyasını main.obj; ve bir olay yapar *derleme sonrası* olay myproject.exe bir kopyasını getirir. Proje yayın yapılandırma kullanılarak oluşturulmuşsa, derleme olayları yürütülür. Proje hata ayıklama Yapılandırması kullanılarak oluşturulmuşsa, derleme olayları yürütülmedi.
 
 ```
 <ItemDefinitionGroup>
@@ -70,7 +70,7 @@ Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi 
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
-[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+[MSBuild komut satırında - C++](msbuild-visual-cpp.md)<br/>
+[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

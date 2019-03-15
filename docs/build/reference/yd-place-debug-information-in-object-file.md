@@ -9,16 +9,16 @@ helpviewer_keywords:
 - debugging [C++], debug information files
 - Yd compiler option [C++]
 ms.assetid: c5a699fe-65ce-461e-964c-7f5eb2a8320a
-ms.openlocfilehash: eda3dd38449f89d9b8d767b460970d659f6c9dc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e6719226d28088d10da6c4f0e6caf3bdb78bea27
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430023"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820162"
 ---
 # <a name="yd-place-debug-information-in-object-file"></a>/Yd (Hata Ayıklama Bilgilerini Nesne Dosyasına Yerleştir)
 
-Hata ayıklama bilgileri tüm nesne dosyalarına tam oşluklar oluşturulan önceden derlenmiş üst bilgi (.pch) dosyasından ile kullanıldığında [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/z7](../../build/reference/z7-zi-zi-debug-information-format.md) seçenekleri. Kullanım dışı.
+Hata ayıklama bilgileri tüm nesne dosyalarına tam oşluklar oluşturulan önceden derlenmiş üst bilgi (.pch) dosyasından ile kullanıldığında [/Yc](yc-create-precompiled-header-file.md) ve [/z7](z7-zi-zi-debug-information-format.md) seçenekleri. Kullanım dışı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,9 +28,9 @@ Hata ayıklama bilgileri tüm nesne dosyalarına tam oşluklar oluşturulan önc
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/YD** kullanım dışı; Visual C++ artık birden çok nesne tek .pdb dosyasına yazılırken destekler, kullanın **/zi** yerine. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/YD** kullanım dışı; Visual C++ artık birden çok nesne tek .pdb dosyasına yazılırken destekler, kullanın **/zi** yerine. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
-Bir kitaplığı içeren hata ayıklama bilgileri dağıtmak gerekli olmadıkça kullanın [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği yerine **/z7** ve **/Yd**.
+Bir kitaplığı içeren hata ayıklama bilgileri dağıtmak gerekli olmadıkça kullanın [/zi](z7-zi-zi-debug-information-format.md) seçeneği yerine **/z7** ve **/Yd**.
 
 Her .obj dosyasında tam hata ayıklama bilgilerinin depolanması, yalnızca hata ayıklama bilgilerini içeren kitaplıkları dağıtmak gereklidir. Bu derleme yavaşlatır ve önemli ölçüde disk alanı gerektirir. Zaman **/Yc** ve **/z7** olmadan kullanılan **/Yd**, derleyici, .pch dosyasından oluşturulan ilk .obj dosyasındaki ortak hata ayıklama bilgilerini depolar. Derleyici, bu bilgileri .obj dosyaları daha sonra .pch dosyasından oluşturulan içine eklemez; Bu bilgilere çapraz başvurular ekler. .Pch dosyası Adlandır kaç .obj dosyaları kullanımı ne olursa olsun, yalnızca bir .obj dosyası genel hata ayıklama bilgileri içerir.
 
@@ -38,13 +38,13 @@ Bu varsayılan davranışı sonuçları daha hızlı derleme sürelerini ve disk
 
 Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz:
 
-- [/Y (Önceden Derlenmiş Üst Bilgiler)](../../build/reference/y-precompiled-headers.md)
+- [/Y (Önceden Derlenmiş Üst Bilgiler)](y-precompiled-headers.md)
 
-- [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)
+- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -81,7 +81,7 @@ G.obj nesne dosyası önceden derlenmiş üst bilgi için hata ayıklama bilgisi
 
 Varsa, önceden derlenmiş üst bilgi ile derlenmemiş **/z7**, onu kullanarak sonraki derlemelerde kullanmaya devam edebilirsiniz **/z7**. Ancak, hata ayıklama bilgileri geçerli nesne dosyasında yerleştirilir ve işlevleri ve derlenmiş üstbilgide tanımlanan türleri için yerel semboller hata ayıklayıcısı için kullanılabilir değil.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

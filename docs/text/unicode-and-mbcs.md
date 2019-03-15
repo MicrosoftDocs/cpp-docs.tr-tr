@@ -1,8 +1,6 @@
 ---
 title: Unicode ve MBCS
 ms.date: 11/04/2016
-f1_keywords:
-- _mbcs
 helpviewer_keywords:
 - MBCS [C++], Unicode
 - MFC [C++], character sets
@@ -13,12 +11,12 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - runtime [C++], language portability
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
-ms.openlocfilehash: 5883dcce5c290b197dcaa61296eb2f44f3bb882c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: e884dcfaa22bf720e9579bf2d5d866d595501887
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741820"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820786"
 ---
 # <a name="unicode-and-mbcs"></a>Unicode ve MBCS
 

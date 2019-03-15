@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -IDLOUT linker option
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
-ms.openlocfilehash: b21e8eb266de9a0baa0512a82acb0ae8a9f650a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3816bb85cb3c711075e3fefeec2d706c2f8cc2ff
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500431"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821475"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 
@@ -38,7 +38,7 @@ MIDL derleyicisi tarafından oluşturulan .idl dosyasının adını belirtir. Do
 
 / Idlout seçeneği, .idl dosyasının uzantısını ve adını belirtir.
 
-MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.
+MIDL derleyicisi olan projelerin bağlarken MSVC bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.
 
 / IDLOUT ayrıca MIDL derleyicisi ile ilişkili diğer çıktı dosyalarının dosya adlarını belirtir:
 
@@ -50,13 +50,13 @@ MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafınd
 
 - *filename*.h
 
-*filename*  /ıdlout için geçirdiğiniz parametredir. Varsa [/tlbout](../../build/reference/tlbout-name-dot-tlb-file.md) belirtilirse, .tlb dosyasının adını / tlbout alacak *filename*.
+*filename*  /ıdlout için geçirdiğiniz parametredir. Varsa [/tlbout](tlbout-name-dot-tlb-file.md) belirtilirse, .tlb dosyasının adını / tlbout alacak *filename*.
 
 / Idlout ne/tlbout belirtirseniz, bağlayıcı vc70.tlb, vc70.idl vc70_p.c vc70_i.c ve vc70.h oluşturun.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **bağlayıcı** klasör.
 
@@ -68,10 +68,10 @@ MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafınd
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](midl-specify-midl-command-line-options.md)<br/>
 [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

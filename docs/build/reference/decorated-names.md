@@ -6,12 +6,12 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: d9d3db9a3db1943581e5fd603ba85777cb49b863
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3fae232e6ca886195315002f4e65063d8a23ddc8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423319"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815430"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 
@@ -67,7 +67,7 @@ Verileri, nesne veya işlev tanımı veya prototip içeren kaynak dosyayı derle
 
 #### <a name="to-use-a-listing-to-view-decorated-names"></a>Düzenlenmiş adları görüntülemek için liste kullanma
 
-1. Verileri, nesne veya işlev tanımı veya Prototiple içeren kaynak dosyanın derleme tarafından listesini oluşturmak [listeleme dosya türü](../../build/reference/fa-fa-listing-file.md) kaynak kodlu bütünleştirilmiş kod olarak derleyici seçeneği (**/Fas**).
+1. Verileri, nesne veya işlev tanımı veya Prototiple içeren kaynak dosyanın derleme tarafından listesini oluşturmak [listeleme dosya türü](fa-fa-listing-file.md) kaynak kodlu bütünleştirilmiş kod olarak derleyici seçeneği (**/Fas**).
 
    Örneğin, `cl /c /FAs example.cpp` bir listeleme dosyası oluşturmak için geliştirici komut isteminde example.asm.
 
@@ -94,5 +94,5 @@ is :- "private: void __thiscall a::func1(int)"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
 [Bağlantıyı Belirtmek için extern Kullanma](../../cpp/using-extern-to-specify-linkage.md)

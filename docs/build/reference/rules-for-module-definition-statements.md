@@ -7,12 +7,12 @@ helpviewer_keywords:
 - module definition files, statement syntax
 - module definition files
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
-ms.openlocfilehash: 6921043bd4618692be788ec5a61978f1178c64ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6269ad2d5bf3952e485f2ca5e5d1f411c5f1e0c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442776"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821280"
 ---
 # <a name="rules-for-module-definition-statements"></a>Modül Tanımlama Deyimleri Kuralları
 
@@ -34,8 +34,8 @@ ms.locfileid: "50442776"
 
 - Belirtilen taban 10 ya da onaltılık sayısal bağımsız değişkenler.
 
-- Bir dize bağımsız değişkeni eşleşmesi durumunda bir [ayrılmış sözcük](../../build/reference/reserved-words.md), çift tırnak işaretleri (") içine alınması gerekir.
+- Bir dize bağımsız değişkeni eşleşmesi durumunda bir [ayrılmış sözcük](reserved-words.md), çift tırnak işaretleri (") içine alınması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül-Tanımlama (.Def) Dosyaları](../../build/reference/module-definition-dot-def-files.md)
+[Modül-Tanımlama (.Def) Dosyaları](module-definition-dot-def-files.md)

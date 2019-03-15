@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0023
 ms.assetid: ed55a320-e7c8-489f-886e-825feee0d576
-ms.openlocfilehash: 75a5669b0f0b12fcc2f4311950ef98e53623a7f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73ac5e7d4675dd9ec724a8f4c7118fe6abd663a1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636442"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817562"
 ---
 # <a name="project-build-error-prj0023"></a>Proje Derleme Hatası PRJ0023
 
@@ -21,4 +21,4 @@ Dosya adı *dosya* araç için belirtilen *aracı* geçersizdi.
 
 Bilinmeyen veya geçersiz bir makro kullanmış olabilirsiniz.
 
-Bkz: [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md) projenizin özelliklerine erişim hakkında bilgi için.
+Bkz: [Visual C++ proje özelliklerini ayarlama](../../build/working-with-project-properties.md) projenizin özelliklerine erişim hakkında bilgi için.

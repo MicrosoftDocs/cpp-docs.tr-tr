@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Tc compiler option [C++]
 - /Tp compiler option [C++]
 - -Tp compiler option [C++]
-ms.openlocfilehash: e435b48359a708408ff8659e53c9e7c4f7e80261
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f7ee51c858c9f90440cf0c2b21799ef7473cf6da
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619121"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813870"
 ---
 # <a name="tc-tp-tc-tp-specify-source-file-type"></a>/Tc, /Tp, /TC, /TP (Kaynak Dosya Türünü Belirtin)
 
@@ -43,11 +43,11 @@ Bir C veya C++ kaynak dosyası.
 
 Varsayılan olarak, **CL** .c uzantılı dosyaları C kaynak dosyalarında olduğu ve dosyalar .cpp veya .cxx uzantısını ile C++ kaynak dosyaları varsayar.
 
-Zaman ya da **TC** veya **Tc** seçeneği belirtildiğinde, tüm belirtimi [/ZC: wchar_t (wchar_t yerel türü olduğu)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) seçeneği yoksayılır.
+Zaman ya da **TC** veya **Tc** seçeneği belirtildiğinde, tüm belirtimi [/ZC: wchar_t (wchar_t yerel türü olduğu)](zc-wchar-t-wchar-t-is-native-type.md) seçeneği yoksayılır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **Gelişmiş** özellik sayfası.
 
@@ -65,9 +65,9 @@ Bu CL komut satırı MAIN.c TEST.prg ve COLLATE.prg C kaynak dosyalarının tüm
 
 C++ dosyaları olarak TEST1.c, TEST2.cxx TEST3.huh ve TEST4.o derlenir ve TEST5.z C dosyası olarak derlenmiş olan bu CL komut satırı belirtir.
 
-> CL TEST1. C TEST2. CXX TEST3. HUH TEST4. /Tc TEST5 O. Z /TP
+> CL TEST1.C TEST2.CXX TEST3.HUH TEST4.O /Tc TEST5.Z /TP
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

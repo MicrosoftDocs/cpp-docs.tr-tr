@@ -5,12 +5,12 @@ f1_keywords:
 - /kernel
 - /kernel-
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
-ms.openlocfilehash: 0df133922af90a91d5c1ae1ad3caebe11d854b8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d065364cf6d3ae824098634c070f3651324aa52a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509663"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816457"
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel (Çekirdek Modu İkilisi Oluştur)
 
@@ -46,7 +46,7 @@ Aşağıdaki tabloda derleyici davranışında değişiklik olduğunda **/Kernel
 |RTTI|Devre dışı. Tüm örneklerini `dynamic_cast` ve `typeid` anahtar sözcükler, bir derleyici hatası sürece yayma `dynamic_cast` statik olarak kullanılır.|
 |`new` ve `delete`|Açıkça tanımlamanız gerekir `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan bir tanım sağlamanız.|
 
-Çağırma kuralları, özel [/GS](../../build/reference/gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından kabul aynı semantiğe sahip. Emin olmak istiyorsanız `__forceinline` inlining'i niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman öğrenmek için etkin `__forceinline` işlevi satır içine alınmış değil.
+Çağırma kuralları, özel [/GS](gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından kabul aynı semantiğe sahip. Emin olmak istiyorsanız `__forceinline` inlining'i niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman öğrenmek için etkin `__forceinline` işlevi satır içine alınmış değil.
 
 Derleyici geçirilen zaman **/Kernel** anahtarı, bunu önceden belirler adlı önişlemci makrosu `_KERNEL_MODE` ve değere sahip **1**. Kod yürütme ortamı kullanıcı modunda veya çekirdek modunda olduğuna göre koşullu olarak derlemek için bunu kullanabilirsiniz. Örneğin, aşağıdaki kodu, çekirdek modu yürütme için derlendiğinde sınıfı alınamayan bellek segmentinde olması gerektiğini belirtir.
 
@@ -88,7 +88,7 @@ Bazı hedef mimarisinin aşağıdaki birleşimler ve **/arch** seçeneği ile ku
 
 ### <a name="to-set-the-kernel-compiler-option-in-visual-studio"></a>/ Kernel derleyici seçeneğini Visual Studio'da ayarlamak için
 
-1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **C/C++** klasör.
 
@@ -96,7 +96,7 @@ Bazı hedef mimarisinin aşağıdaki birleşimler ve **/arch** seçeneği ile ku
 
 1. İçinde **ek seçenekler** kutusunda `/kernel` veya `/kernel-`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

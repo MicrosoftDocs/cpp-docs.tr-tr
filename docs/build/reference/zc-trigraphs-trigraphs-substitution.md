@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options (C++)
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
-ms.openlocfilehash: 24f5ba7666e6b4a39787b9edac53142cdd1cd149
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a20123603030dfe719cd8990018f795df137981
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587050"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814273"
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs (Trigrafları Değiştirme)
 
@@ -22,7 +22,7 @@ Zaman **/ZC: trigraphs** belirtilirse, derleyici, karşılık gelen bir noktalam
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ ZC: trigraphs**[**-**]
+> **/Zc:trigraphs**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -34,7 +34,7 @@ C/C++ trigrafları ve trigrafları kullanmayı gösteren bir örnek listesi içi
 
 ## <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
@@ -42,5 +42,5 @@ C/C++ trigrafları ve trigrafları kullanmayı gösteren bir örnek listesi içi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>
 [Trigraflar](../../c-language/trigraphs.md)<br/>

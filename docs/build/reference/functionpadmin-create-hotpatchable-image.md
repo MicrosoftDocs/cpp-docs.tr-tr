@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -FUNCTIONPADMIN linker option
 - /FUNCTIONPADMIN linker option
 ms.assetid: 25b02c13-1add-4fbd-add9-fcb30eb2cae7
-ms.openlocfilehash: c1e84f308796eabcaea61518e3731f633c2f67e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 699da3cea9914b5a10bdf769015d41c33936a902
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474899"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818628"
 ---
 # <a name="functionpadmin-create-hotpatchable-image"></a>/FUNCTIONPADMIN (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 
@@ -29,13 +29,13 @@ Bayt cinsinden her işlevin başlangıcına eklemek için doldurma miktarı. X86
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir hotpatchable görüntü üretmek bağlayıcı için sırada .obj dosyaları ile derlenmiş olmalıdır [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](../../build/reference/hotpatch-create-hotpatchable-image.md).
+Bir hotpatchable görüntü üretmek bağlayıcı için sırada .obj dosyaları ile derlenmiş olmalıdır [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](hotpatch-create-hotpatchable-image.md).
 
 Derleme ve görüntü cl.exe, tek bir çağrı ile bağlantı **/hotpatch** gelir **/functionpadmin**.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
@@ -47,5 +47,5 @@ Derleme ve görüntü cl.exe, tek bir çağrı ile bağlantı **/hotpatch** geli
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+[MSVC bağlayıcı başvurusu](linking.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)

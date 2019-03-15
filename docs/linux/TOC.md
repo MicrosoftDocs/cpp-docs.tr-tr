@@ -4,7 +4,7 @@
 # [Yeni Linux projesi oluşturma](create-a-new-linux-project.md)
 # [Uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md)
 # [Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](deploy-run-and-debug-your-linux-project.md)
-# [Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma](../ide/get-started-linux-cmake.md)
+# [Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma](../build/get-started-linux-cmake.md)
 # [Linux Projesi Özellik Sayfa Başvurusu](prop-pages-linux.md)
 ## [Genel Özellikler (Linux)](prop-pages/general-linux.md)
 ## [Hata Ayıklama Özellikleri (Linux)](prop-pages/debugging-linux.md)
