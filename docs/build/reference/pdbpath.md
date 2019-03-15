@@ -10,12 +10,12 @@ helpviewer_keywords:
 - PDBPATH dumpbin option
 - PDB files, path
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
-ms.openlocfilehash: d77ab2eb056326ba372a60cc79688d26b252ac44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f29b8e61fbfbdb0f373e3e7510cb3f1fe0b9cc2a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527224"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809216"
 ---
 # <a name="pdbpath"></a>/PDBPATH
 
@@ -49,7 +49,7 @@ Hata ayıklayıcı bir .pdb dosyası ayıkladığınız dosyayı farklı bir sü
 
 - Windows dizinde denetleyin.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)<br/>
-[/PDBALTPATH (Diğer PDB Yolunu Kullan)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)
+[DUMPBIN Seçenekleri](dumpbin-options.md)<br/>
+[/PDBALTPATH (Diğer PDB Yolunu Kullan)](pdbaltpath-use-alternate-pdb-path.md)

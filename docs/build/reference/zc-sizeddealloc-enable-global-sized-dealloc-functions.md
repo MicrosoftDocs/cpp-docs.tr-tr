@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 3a73ace0-4d36-420a-b699-0ca6fc0dd134
-ms.openlocfilehash: 160e90f0b068da6fe8330ac97dfd8bda52f05a38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc381058c6a2ef84542be1d3cdd00c410aa51c2f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536610"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809307"
 ---
 # <a name="zcsizeddealloc-enable-global-sized-deallocation-functions"></a>/ ZC: sizeddealloc (Global boyutlu ayırmayı kaldırma işlevlerini etkinleştir)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50536610"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ ZC: sizeddealloc**[**-**]
+> **/Zc:sizedDealloc**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -40,7 +40,7 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Gelen **yapılandırmaları** açılır menü öğesini **yapılandırmalarında**.
 
@@ -50,6 +50,6 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[/Zc (Uyumluluk)](zc-conformance.md)<br/>

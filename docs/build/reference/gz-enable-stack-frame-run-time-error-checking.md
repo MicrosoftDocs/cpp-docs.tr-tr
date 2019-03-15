@@ -10,16 +10,16 @@ helpviewer_keywords:
 - GZ compiler option [C++]
 - debug builds, catch release-build errors
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
-ms.openlocfilehash: 86d9b2cb7da3c21ce46331d9f817911b65c4ba2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e6ffce487cc8183e45f3a911e7060ea22b28216
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562905"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810503"
 ---
 # <a name="gz-enable-stack-frame-run-time-error-checking"></a>/GZ (Yığın Çerçevesi Çalışma Zamanı Hata Denetimini Etkinleştir)
 
-Aynı işlemleri gerçekleştirir [/RTC (çalışma zamanı hata denetimleri)](../../build/reference/rtc-run-time-error-checks.md) seçeneği. Kullanım dışı.
+Aynı işlemleri gerçekleştirir [/RTC (çalışma zamanı hata denetimleri)](rtc-run-time-error-checks.md) seçeneği. Kullanım dışı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,13 +29,13 @@ Aynı işlemleri gerçekleştirir [/RTC (çalışma zamanı hata denetimleri)](.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/GZ** yalnızca bir nonoptimized kullanmak içindir ([/Od (devre dışı bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md)) oluşturun.
+**/GZ** yalnızca bir nonoptimized kullanmak içindir ([/Od (devre dışı bırak (Hata Ayıkla))](od-disable-debug.md)) oluşturun.
 
-**/GZ** itibaren Visual Studio 2005; kullanım dışı kullanın [/RTC (çalışma zamanı hata denetimleri)](../../build/reference/rtc-run-time-error-checks.md) yerine. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+**/GZ** itibaren Visual Studio 2005; kullanım dışı kullanın [/RTC (çalışma zamanı hata denetimleri)](rtc-run-time-error-checks.md) yerine. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Tıklayın **C/C++** klasör.
 
@@ -47,7 +47,7 @@ Aynı işlemleri gerçekleştirir [/RTC (çalışma zamanı hata denetimleri)](.
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

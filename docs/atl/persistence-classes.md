@@ -2,18 +2,16 @@
 title: Kalıcılık sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- vc.atl.persistence
 helpviewer_keywords:
 - persistence classes
 - persistence, classes
 ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
-ms.openlocfilehash: c4dfc33d14fe11ec24bb22edf5d5d987bf507c7f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 37747604b7c03c9cd8abb993c8d0e232ec80aaaa
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261485"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811972"
 ---
 # <a name="persistence-classes"></a>Kalıcılık sınıfları
 
