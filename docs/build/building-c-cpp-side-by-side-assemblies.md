@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - side-by-side applications [C++]
 ms.assetid: 7fa20b16-3737-4f76-a0b5-1dacea19a1e8
-ms.openlocfilehash: b904dd3e9c10470151bdb8e01435aaf6359179b8
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 037fde58366ea4548ce3c7ff56c38cfc1a58aa17
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693673"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815196"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ Yan Yana Derlemeleri Oluşturma
 
@@ -29,8 +29,7 @@ Bir veya birkaç ilgili dll paketlenmiş ilgili bir yan yana derleme içine [der
 
 Bu değişiklik dağıtım karşılık gelen dll izin verebileceği bir [özel derleme](/windows/desktop/Msi/private-assemblies) uygulama yerel klasöründe veya olarak bir [derleme paylaşılan](/windows/desktop/Msi/shared-assemblies) WinSxS derleme önbelleğinde. Bu yeni bir derleme doğru çalışma zamanı davranışını elde etmek için izlenmesi gereken birkaç adım vardır; içinde açıklanan [yan yana derlemeleri oluşturma için yönergeler](/windows/desktop/SbsCs/guidelines-for-creating-side-by-side-assemblies). Bir derleme doğru yazılmasını sonra dağıtılmış olarak herhangi bir paylaşılan veya özel bir derleme bağımlı bir uygulama ile birlikte. Yan yana derlemeler paylaşılan bir derleme yüklerken yönergeleri ana hatlarıyla belirtilen ya da izleme olabilir [yan yana paylaşım Windows XP için Win32 derlemeleri yükleme](/windows/desktop/Msi/installing-win32-assemblies-for-side-by-side-sharing-on-windows-xp) veya [birleştirme modülleri](/windows/desktop/msi/merge-modules). Yan yana derlemeler özel bir derleme yüklerken, yalnızca yükleme işleminin bir parçası olarak karşılık gelen DLL, kaynaklar ve derleme bildirimi hedef bilgisayarda yerel uygulama klasörü bu derleme olabilir sağlama kopyaladığınız Çalışma zamanında yükleyicisi tarafından bulundu (bkz [derleme arama sırası](/windows/desktop/SbsCs/assembly-searching-sequence)). Başka bir yolu [Windows Installer](/windows/desktop/Msi/windows-installer-portal) ve içinde açıklanan yönergeleri izlemeniz [bir uygulamanın Windows XP özel kullanım için Win32 derlemeleri yükleme](/windows/desktop/Msi/installing-win32-assemblies-for-the-private-use-of-an-application-on-windows-xp).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Dağıtım Örnekleri](../ide/deployment-examples.md)<br/>
-[C/C++ Yalıtılmış Uygulamaları Derleme](../build/building-c-cpp-isolated-applications.md)<br/>
-[C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[C/C++ Yalıtılmış Uygulamaları Derleme](building-c-cpp-isolated-applications.md)<br/>
+[C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

@@ -1,20 +1,18 @@
 ---
 title: ATL Hizmetleri
 ms.date: 11/04/2016
-f1_keywords:
-- CServiceModule
 helpviewer_keywords:
 - CServiceModule class
 - COM objects, ATL
 - services, ATL
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-ms.openlocfilehash: 3308e7fb38dfaab13c2570f216772e2af459a7f2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 052169154a62cbd07a82f08087fc2c2db8ae46c5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273666"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819070"
 ---
 # <a name="atl-services"></a>ATL Hizmetleri
 

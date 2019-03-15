@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - /IGNORE linker option
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124
-ms.openlocfilehash: 4826ecae1f16cd3834cb6d47850fc686b3682614
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b374e0e73f9fc14fa32ea4f63fa71039a5cf3c7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479702"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815846"
 ---
 # <a name="ignore-ignore-specific-warnings"></a>/IGNORE (Belirli Uyarıları Atla)
 
@@ -54,7 +54,7 @@ Genel olarak, göz ardı edilemez bağlayıcı uyarılarını derleme hataların
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. İçinde **bağlayıcı** klasörüne **komut satırı** özellik sayfası.
 
