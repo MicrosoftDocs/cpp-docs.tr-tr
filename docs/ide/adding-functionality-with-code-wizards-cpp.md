@@ -10,12 +10,12 @@ helpviewer_keywords:
 - projects [C++], adding functionality
 - class wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 028434d7404cc02121e9fd961d6566c28f458a0c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 87c46be17c20bf9d592dd2b5c537897fa629e9c2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739809"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822580"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 
@@ -73,6 +73,5 @@ Visual C++ kod sihirbazları erişebileceğiniz üç konum vardır:
 
 [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
 [Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)<br>
-[Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)<br>
-[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br>
-[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)
+[Visual C++ Proje Türleri](../build/reference/visual-cpp-project-types.md)<br>
+[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../build/reference/file-types-created-for-visual-cpp-projects.md)
