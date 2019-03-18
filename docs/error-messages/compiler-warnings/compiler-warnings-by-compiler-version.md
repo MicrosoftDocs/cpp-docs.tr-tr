@@ -4,16 +4,16 @@ ms.date: 10/24/2018
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: ae5d1957694abe09d1e04fba5ccfd2cd87d36940
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79cf78de865f480530df89c778e9fe432b0bbf33
+ms.sourcegitcommit: a901c4acbfc80ca10663d37c09921f04c5b6dd17
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530188"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58142531"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
-Derleyici bir sürümünü kullanarak belirttiğiniz sonra sunulan uyarıları gözardı edebileceğini [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırmak istediğiniz yapı işleminizin yönetimi için avantajlıdır. Bu seçenek, yeni hata iletileri engellemez. Tüm yeni uyarıları bastır önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derle öneririz __/W4__, kaldırıp __/Wv__ olabildiğince çabuk derleme seçeneği.
+Derleyici bir sürümünü kullanarak belirttiğiniz sonra sunulan uyarıları gözardı edebileceğini [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu seçenek, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırmak istediğiniz yapı işleminizin yönetimi için avantajlıdır. Bu seçenek, yeni hata iletileri engellemez. Tüm yeni uyarıları bastır önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derle öneririz __/W4__, kaldırıp __/Wv__ olabildiğince çabuk derleme seçeneği.
 
 Derleyicisinin bu sürümü, yeni uyarılar eklendi:
 
@@ -36,10 +36,26 @@ Derleyicisinin bu sürümü, yeni uyarılar eklendi:
 | Visual C++ 2017 sürüm 15.6 | 19.13.26128.0 |
 | Visual C++ 2017 sürüm 15.7 | 19.14.26428.0 |
 | Visual C++ 2017 sürüm 15,8 | 19.15.26726.0 |
+| Visual C++ 2017 sürüm 15.9 | 19.16.26926.0 |
+| Visual C++ 2019 RTM | 19.20.27004.0 |
 
 Yalnızca birincil numara, büyük ve küçük sayılar veya ana, alt, belirtin ve yapı numaralarına __/Wv__ seçeneği. Derleyici, belirtilen sayı ile başlayan sürümleri eşleşen tüm uyarıları raporlar ve belirtilen sayıdan büyük sürümlerine yönelik tüm uyarıları bastırır. Örneğin, __/Wv:17__ içinde veya herhangi bir Visual Studio 2012 sürümünü tüm uyarıları raporları ve Visual Studio 2013 (sürüm 18) veya üzeri tüm derleyici tarafından kullanıma sunulan tüm uyarıları bastırır. Bastırmak için Visual Studio 2015'te xx.yy.zzzz güncelleştirme 2 ve daha sonra kullanabileceğiniz __/Wv:19.00.23506__. Kullanım __/Wv:19.11__ tüm uyarıları herhangi bir sürümü Visual Studio'yu daha önce Visual Studio 2017 sürüm 15.5 sürümünde, ancak Visual Studio 2017 sürüm 15.5 ve üzeri uyarıları bastırır bildirmek için.
 
 Aşağıdaki bölümlerde her kullanarak bastırma Visual C++ sürümü xx.yy.zzzz listesinde __/Wv__ derleyici seçeneği. __/Wv__ seçeneği, belirtilen derleyici sürümleri geçerler listelenmez, uyarıları bastır olamaz.
+
+::: moniker range=">= vs-2019"
+
+## <a name="warnings-introduced-in-visual-c-2019-rc-compiler-version-1920270040"></a>Visual C++ 2019 RC (Derleyici sürümü 19.20.27004.0) uyarıları
+
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.15__.
+
+|||
+|-|-|
+C4848 | Destek için standart öznitelik ' hiçbir\_benzersiz\_'C ++ 17 ve daha önce adresidir satıcı uzantısı
+
+::: moniker-end
+::: moniker range=">= vs-2017"
+
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-158-compiler-version-1915267260"></a>Visual C++ 2017 sürüm 15,8 (Derleyici sürümü 19.15.26726.0) uyarıları
 
@@ -47,7 +63,25 @@ Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uya
 
 |||
 |-|-|
-C5046|'*işlevi*': simge türü tanımlı değil iç bağlantı ile ilgili|
+C4643 | İleri bildirme '*tanımlayıcı*' ad alanında std C++ standardına göre izin verilmez.
+C4644 | offsetof makrosu tabanlı düzeni sabit ifadelerde kullanımını standart değildir; Bunun yerine C++ Standart Kitaplığı'nda tanımlanan offsetof kullanın
+C4845 | \_\_declspec (Hayır\_init\_all)' yoksayılır ' / d1initall\[0\|1\|2\|3]' komut satırında belirtilmemiş
+C4846 | '*değer*' için geçerli bir bağımsız değişken değil ' / d1initall': komut satırı bayrağı yoksayıldı
+C4847 | '\_\_declspec (Hayır\_init\_all)' yalnızca bir işlev, bir sınıf türü veya bir yerel değişkene uygulanabilir: yoksayıldı
+C4866 | Derleyici, soldan sağa Değerlendirme sırasını çağrısı değil zorlayabileceği '*işlevi*'
+C5046 | '*işlevi*': İlgili türü iç bağlantı ile tanımlanmamış sembol
+C5047 | Standart olmayan, kullanın \_ \_varsa\_modülleriyle var desteklenmiyor
+C5048 | Makro kullanımını '*makroadı*' belirleyici bir sonuca neden olabilir
+C5049 | '*dize*': Tam yol ekleme makine bağımlı bir sonuca neden olabilir
+C5050 | Modülün içeri aktarılması sırasında olası uyumlu ortam '*module_name*': *sorunu*
+C5100 | \_\_VA\_ARGS\_ \_ variadic makrolar kullanım için ayrılmıştır
+C5101 | Tanımsız davranış önişlemci yönergesi işleve benzer bir makro bağımsız değişken listesinde kullanılır
+C5102 | Geçersiz komut satırı Makro tanımında yoksayılıyor '*değer*'
+C5103 | yapıştırma '*token1*'ve'*token2*' geçerli bir ön işleme belirteci sonuç vermez
+C5104 | bulundu '*Dize1*#*dize2*'Makro değişikliği listesinde kastettiniz'*Dize1*"" #*dize2*'?
+C5105 | 'defined' üretme makro genişletme davranışı tanımlı değil
+C5106 | ile farklı parametre adları tanımlandı makrosu
+C5107 | sonlandırma eksik '*char*' karakteri
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-157-compiler-version-1914264280"></a>Visual C++ 2017 sürüm 15.7 (Derleyici sürümü 19.14.26428.0) uyarıları
 
@@ -72,7 +106,7 @@ Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uya
 
 |||
 |-|-|
-C4843|'*type1*': dizi veya işlev türüne yapılan başvurunun özel durum işleyicisi erişilemiyor, kullanın '*type2*' yerine
+C4843|'*type1*': Dizi veya işlev türüne yapılan başvurunun özel durum işleyicisi erişilemiyor, kullanın '*type2*' yerine
 C4844|' export module *module_name*;' artık bir modül arabirimi bildirmek için tercih edilen sözdizimi şöyledir
 C5039|'*işlevi*': - EHc altında extern C işlevine işaretçi veya başvuru için büyük olasılıkla işlev özel durum atma geçirildi. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir.
 C5040|dinamik özel durum belirtimleri yalnızca C ++ 14 ve daha önceki sürümlerde geçerlidir; noexcept(FALSE) değerlendirme
@@ -111,6 +145,8 @@ C4468|'fallthrough': özniteliği bir case etiketi veya varsayılan etiket gelme
 C4698|'*özellik*' yalnızca değerlendirme amaçlıdır ve değişikliğe tabidir veya gelecekte kaldırılması güncelleştirir.
 C4839|sınıfının standart dışı kullanımı*sınıfı*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
 C4840|sınıfının taşınabilir olmayan kullanımı*sınıfı*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
+
+::: moniker-end
 
 ## <a name="warnings-introduced-in-visual-c-2015-update-3-compiler-version-1900242151"></a>Visual C++ 2015 güncelleştirme 3'te (Derleyici sürümü 19.00.24215.1) uyarıları
 
@@ -166,7 +202,7 @@ C4475|'*işlevi*': uzunluk değiştiricisi '*değiştiricisi*'tür alanı karakt
 C4476|'*işlevi*': bilinmeyen tür alanı karakteri '*karakter*' biçim tanımlayıcıda
 C4477|'*işlevi*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*türü*', ancak değişen sayıda bağımsız değişkeni *numarası* türüne sahip '*türü*'
 C4478|'*işlevi*': konumsal ve konumsal olmayan yer tutucular aynı Biçim dizesinde karıştırılamaz
-C4494|'*türü*': __declspec(allocator) işlev dönüş çünkü tür yoksayılıyor değil bir işaretçi veya başvuru
+C4494|'*türü*': İşlev türü döndürdüğünden __declspec(allocator) yoksayarak bir işaretçi veya başvuru değil
 C4495|Standart olmayan uzantı '__super' kullanıldı: açık taban sınıfı adıyla değiştirin
 C4496|kullanılan standart olmayan uzantı 'for each' kullanıldı: ranged-for deyimiyle değiştirin
 C4497|Standart olmayan uzantı 'sealed' kullanıldı: 'final' ile değiştirin
@@ -200,7 +236,7 @@ C5024|'*bildirimi*': taşıma Oluşturucusu örtük bir şekilde silindi olarak 
 C5025|'*bildirimi*': taşıma atama işleci örtük bir şekilde silindi olarak tanımlandı
 C5026|'*türü*': taşıma Oluşturucusu örtük bir şekilde silindi olarak tanımlandı
 C5027|'*türü*': taşıma atama işleci örtük bir şekilde silindi olarak tanımlandı
-C5028|'*adı*': hizalama önceki bildirimde belirtilen (*numarası*) belirtilmemiş
+C5028|'*adı*': Önceki bildirimde belirtilen hizalama (*numarası*) belirtilmemiş
 C5029|Standart olmayan uzantı kullanıldı: C++ hizalama öznitelikleri değişkenlere, veri üyelerine ve etiket türlerine uygulanır
 C5030|öznitelik '*özniteliği*' tanınmıyor
 
@@ -212,7 +248,7 @@ Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uya
 |-|-|
 C4301|'*türü*': geçersiz kılan sanal işlev'ı yalnızca farklıdır '*bildirimi*' const/volatile niteleyicisi tarafından
 C4316|'*türü*': yığın üzerinde ayrılan nesne değil hizalanmayacak *numarası*
-C4380|'*türü*': varsayılan oluşturucu kullanım dışı olamaz
+C4380|'*türü*': Varsayılan Oluşturucu kullanım dışı olamaz
 C4388|'*belirteci*': imzalı/imzasız uyuşmazlığı
 C4423|'std::bad_alloc': sınıf tarafından yakalandı ('*türü*') satırındaki *numarası*
 C4424|için catch '*türü*'öncesinde'*türü*' satırındaki *numarası*; beklenmeyen davranış 'std::bad_alloc' oluşursa neden olabilir
@@ -245,7 +281,7 @@ C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı
 C4417|bir açık şablon örneği oluşturma işlevinde __declspec(code_seg(...)) bulunamaz: yoksayıldı
 C4418|bir üzerindeki __declspec(code_seg(...)) yoksayıldı
 C4419|'*adı*'özel başvuru sınıfına uygulandığında etkisizdir'*türü*'.
-C4435|'*türü*': / vd2 altındaki Nesne düzeni sanal tabanı nedeniyle değişecek '*türü*'
+C4435|'*türü*': / Vd2 altındaki Nesne düzeni sanal tabanı nedeniyle değişecek '*türü*'
 C4436|dynamic_cast'sanal tabanından '*türü*'to'*türü*' oluşturucu veya yıkıcı içinde oluşturulmuş bir nesne ile başarısız olabilir
 C4437|dynamic_cast'sanal tabanından '*türü*'to'*türü*' bazı bağlamlarda başarısız olabilirdi
 C4443|Beklenen pragma parametresinin '0', '1' veya '2'
@@ -254,7 +290,7 @@ C4447|bulunan iş parçacığı modeli olmadan 'main' imzası. Kullanmayı ' int
 C4448|'*türü*' meta verilerinde belirtilmiş bir varsayılan arabirim yok. Gerçekleştiriliyor: '*türü*', hangi çalışma zamanında başarısız olabilir.
 C4449|'*türü*' bir tür '[WebHostHidden]' olarak işaretlenmelidir
 C4450|'*türü*'öğesinden türetildiği için '[WebHostHidden]' olarak işaretlenmelidir'*türü*'
-C4451|'*türü*': başvuru sınıfının kullanımı*türü*' Bu bağlamda geçersiz nesne bağlamlarında hazırlama açabilir iç
+C4451|'*türü*': Başvuru sınıfı kullanımını*türü*' Bu bağlamda geçersiz nesne bağlamlarında hazırlama açabilir iç
 C4452|'*türü*': Ortak tür genel kapsamda olamaz. Bu, çıkış .winmd dosyasının adının bir alt ad alanında olmalıdır.
 C4453|'*türü*': '[WebHostHidden]' türü olmayan genel bir türün yayımlanmış yüzeyinde kullanılmamalıdır '[WebHostHidden]'
 C4454|'*türü*' [DefaultOverload] belirtilen zorunda kalmadan aşırı giriş parametrelerinin sayısından fazla. Çekme '*bildirimi*' olarak varsayılan aşırı yükleme
@@ -262,8 +298,8 @@ C4471|'*adı*': kapsamsız bir numaralandırmanın İleri dönük bildiriminin b
 C4472|'*adı*' yerel bir numaralandırma: bir yönetilen/WinRT numaralandırma bildirmek için bir erişim belirticisi (private/public) Ekle
 C4492|'*türü*': taban başvuru sınıfı yöntemiyle eşleşiyor '*türü*', ancak 'override' işaretli değil
 C4493|Delete ifadenin etkisi yok edicisinde '*türü*' 'public' erişilebilirlik yok
-C4585|'*türü*': bir 'public ref class' korumalı olmalı veya varolan bir türetilen WinRT korumasız sınıfı
-C4586|'*türü*': 'Windows' adlı bir üst düzey ad alanında ortak bir tür olarak bildirilemez
+C4585|'*türü*': Bir WinRT 'public ref class' korumalı olmalı veya varolan bir korumasız sınıftan türetilen
+C4586|'*türü*': Genel bir türü 'Windows' adlı bir üst düzey ad alanında bildirilemez
 C4695|#pragma execution_character_set: '*bağımsız değişken*' desteklenen bir bağımsız değişken değil: şu anda yalnızca 'UTF-8' destekleniyor
 C4703|başlatılmayabilecek yerel işaretleyici değişken '*adı*' kullanılır
 C4728|/ Yl-PCH başvurusu gerekli olduğu için seçeneği yoksayıldı
@@ -322,7 +358,7 @@ C4342|davranış değişikliği: '*türü*' çağrıldı, ancak önceki sürüml
 C4350|davranış değişikliği: '*bildirimi*'yerine adlandırılan'*bildirimi*'
 C4357|Temsilci biçimsel bağımsız değişken listesinde param dizisi bağımsız değişkeni bulundu '*bildirimi*'üretilirken yoksayıldı'*türü*'
 C4358|'*ifade*': birleştirilmiş temsilcilerin dönüş türü 'void' değil; döndürülen değer tanımsız
-C4359|'*türü*': hizalama belirleyici asıl hizalamadan küçük olduğundan (*numarası*) ve yoksayılacak.
+C4359|'*türü*': Hizalama belirleyici asıl hizalamadan küçük olduğundan (*numarası*) ve yoksayılacak.
 C4362|'*türü*': 8 bayttan büyük hizalama CLR tarafından desteklenmiyor
 C4364|# derleme için using '*adı*' daha önce görülme *açıklama*(*numarası*) as_friend özniteliği; as_friend uygulanmadı
 C4365|'*ifade*': dönüştürme '*türü*'to'*türü*', imzalı/imzasız uyuşmazlığı
@@ -377,18 +413,18 @@ C4568|'*türü*': hiçbir üye açık geçersiz kılma imzayla eşleşmiyor
 C4569|'*türü*': hiçbir üye açık geçersiz kılma imzayla eşleşmiyor
 C4570|'*türü*': soyut ancak soyut işlevler içeriyor olarak açıkça bildirilmedi
 C4571|Bilgi amaçlı: Visual C++ 7.1 sürümünden sonra değişti catch(...) semantiği; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor
-C4572|[ParamArray] özniteliği/CLR altında kullanım dışı bırakılmıştır, '...' kullanmak yerine
+C4572|[ParamArray] özniteliği/CLR altında kullanım dışı bırakılmıştır '...' Bunun yerine
 C4580|[attribute] Kullanımdan kalktı; Bunun yerine belirtin *belirtilen*bir temel sınıf olarak özniteliği
 C4581|kullanımdan kalkan davranış: ' "*adı*"' yerine '*adı*' özniteliği işlemek için
 C4606|#pragma uyarısı: '*sayı*' yoksayıldı; Kod çözümleme uyarıları, uyarı düzeyleriyle ilişkili değil.
 C4631|MSXML veya XPath kullanılamıyor, XML belgesi açıklamaları işlenmeyecek. *Açıklaması*
 C4632|XML belgesi açıklaması: *açıklama* -erişim reddedildi: *açıklaması*
-C4633|XML belgesi açıklaması*açıklama*: hata: *açıklaması*
-C4634|XML belgesi açıklaması*açıklama*: uygulanamaz: *açıklaması*
-C4635|XML belgesi açıklaması*açıklama*: hatalı oluşturulmuş XML: *açıklaması*
-C4636|XML belgesi açıklaması*açıklama*: etiketi boş gerekli '*açıklama*' özniteliği.
-C4637|XML belgesi açıklaması*açıklama*: \<dahil > Etiket atıldı. *Açıklaması*
-C4638|XML belgesi açıklaması*açıklama*: Bilinmeyen sembole başvuru '*açıklama*'.
+C4633|XML belgesi açıklaması *açıklama*: hata: *açıklaması*
+C4634|XML belgesi açıklaması *açıklama*: uygulanamaz: *açıklaması*
+C4635|XML belgesi açıklaması *açıklama*: hatalı oluşturulmuş XML: *açıklaması*
+C4636|XML belgesi açıklaması *açıklama*: etiketi boş gerekli '*açıklama*' özniteliği.
+C4637|XML belgesi açıklaması *açıklama*: \<dahil > Etiket atıldı. *Açıklaması*
+C4638|XML belgesi açıklaması *açıklama*: Bilinmeyen sembole başvuru '*açıklama*'.
 C4639|MSXML hatası, XML belgesi açıklamaları işlenmeyecek. *Açıklaması*
 C4641|XML belgesi açıklamasında belirsiz bir çapraz başvuru var:
 C4678|temel sınıfı*bildirimi*'den daha az erişilebilir olan'*adı*'
@@ -417,7 +453,7 @@ C4740|veya satır içi asm kodunda dışarı akma, genel iyileştirmeyi bastır�
 C4742|'*değişkeni*'farklı hizalamaya sahip'*konumu*'ve'*konumu*': *numarası* ve *numarası*
 C4743|'*adı*'başka bir boyutu vardır'*konumu*'ve'*konumu*': *numarası* ve *numarası* bayt
 C4744|'*adı*'farklı türüne sahip '*konumu*'ve'*konumu*': '*türü*'ve'*türü*'
-C4747|Yönetilen çağırma '*türü*': yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir
+C4747|Yönetilen çağırma '*türü*': Yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir
 C4761|bağımsız değişkende integral boyutu uyuşmazlığı; dönüştürme sağlandı
 C4764|Yakalama nesneleri 16 baytın üzerinde hizalanamaz
 C4788|'*tanımlayıcı*': tanımlayıcı kesildi '*sayı*' karakter
@@ -430,7 +466,7 @@ C4835|'*türü*': dışarı aktarılan veriler için Başlatıcı, önce yöneti
 C4867|'*türü*': standart olmayan söz dizimi; Kullan '&' bir üyeye işaretçi oluşturmak için
 C4936|Bu __declspec yalnızca/CLR veya/CLR ile derlendiğinde desteklenir: Saf
 C4937|'*adı*'ve'*adı*'için bağımsız değişkenler olarak ayırt edilemiyor'*seçeneği*'
-C4938|'*türü*': kayan nokta azaltma değişkeni, / FP altında tutarsız sonuçlara neden olabilir: strict veya #pragma fenv_access
+C4938|'*türü*': Kayan nokta azaltma değişkeni, / FP altında tutarsız sonuçlara neden olabilir: strict veya #pragma fenv_access
 C4939|#pragma vtordisp kullanım dışı ve Visual C++'ın gelecek sürümde kaldırılacak.
 C4947|'*türü*': eski olarak işaretlendi
 C4949|'managed' ve 'unmanaged' pragmaları yalnızca ile derlendikleri zaman anlamlıdır ' / clr [: option]'
@@ -442,7 +478,7 @@ C4958|'*ifade*': işaretçi aritmetik doğrulanabilir değil
 C4959|Yönetilmeyen tanımlanamaz *sınıfı* '*türü*' / CLR: safe, üyelerine erişilmesi doğrulanamayan bir koda neden olduğu
 C4960|'*açıklama*' profili çok büyük
 C4961|Hiç profil verisi içine birleştirildiği '*konumu*', profil temelli iyileştirmeler devre dışı bırakıldı
-C4962|'*açıklama*': iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı profil temelli iyileştirmeler
+C4962|'*açıklama*': Profil temelli iyileştirmeler iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı bırakıldı
 C4963|'*açıklama*': Profil verileri bulunamadı; işaretlenmiş yapımda farklı derleyici seçenekleri kullanılmış
 C4964|İyileştirme seçeneği belirtilmedi; profil bilgileri toplanmayacak değil
 C4965|örtük 0 tamsayı kutusunu; nullptr veya açık tür dönüştürme kullanın
@@ -555,7 +591,7 @@ C4531|C++ özel durum işleme Windows CE üzerinde kullanılamaz. Yapılandırı
 C4532|'*açıklama*': / atlama *son* blok sonlandırma işleme sırasında davranışı tanımsız
 C4533|öğesinin başlatılması '*bildirimi*' tarafından atlandığını ' goto *bildirimi*'
 C4534|'*bildirimi*' için varsayılan oluşturucu olmayacaktır *sınıfı* '*türü*' nedeniyle varsayılan bağımsız değişken
-C4535|çağıran _set_se_translator() çağrısı/eha gerektirir
+C4535|calling _set_se_translator() requires /EHa
 C4536|'*açıklama*': tür adı, meta veri sınırını aşıyor '*sayı*' karakter
 C4537|'*bildirimi*': '.'UDT olmayan türe uygulandı
 C4542|Nesil birleştirilen eklenmiş dosyanın üretilmesi atlanıyor yazamıyor *türü* dosya: '*filename*': *hata*
@@ -584,7 +620,7 @@ C4680|'*türü*': coclass varsayılan bir arabirim belirtmiyor
 C4681|'*türü*': coclass olay kaynağı olan varsayılan bir arabirim belirtmiyor
 C4682|'*türü*': [in] varsayarak, hiçbir parametre özniteliği belirtilmedi
 C4683|'*bildirimi*': olay kaynağı olan bir 'out'-parametre; birden çok olay işleyicisi yakalarken dikkatli olun
-C4684|'*açıklama*': uyarı!! öznitelik geçersiz kod oluşturmaya neden olabilir: dikkatli kullanın
+C4684|'*açıklama*': UYARI!! öznitelik geçersiz kod oluşturmaya neden olabilir: dikkatli kullanın
 C4685|bekleniyor ' >> ' bulundu ' >> ' şablon parametreleri ayrıştırılırken
 C4700|başlatılmamış yerel değişken '*adı*' kullanılır
 C4701|başlatılmayabilecek yerel değişken '*adı*' kullanılır
