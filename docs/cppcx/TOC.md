@@ -1,4 +1,4 @@
-# [Visual C++ Dil Başvurusu (C++/ CX)](visual-c-language-reference-c-cx.md)
+# [C++/CX Dil Başvurusu](visual-c-language-reference-c-cx.md)
 ## [Hızlı Başvuru (C++/CX)](quick-reference-c-cx.md)
 ## [Tür Sistemi (C++/CX)](type-system-c-cx.md)
 ### [Ad Alanları ve Tür Görünürlüğü (C++/CX)](namespaces-and-type-visibility-c-cx.md)
