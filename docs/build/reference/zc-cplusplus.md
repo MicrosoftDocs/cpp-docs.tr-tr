@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - -Zc:__cplusplus compiler option (C++)
 - __cplusplus macro (C++)
-ms.openlocfilehash: 8e73d93ae0618a04bdcc8476fadb6cc2aab595b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89545f541f32374a47dce7f87958e61873c1b47c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623996"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810100"
 ---
 # <a name="zccplusplus-enable-updated-cplusplus-macro"></a>/ ZC: __cplusplus (güncelleştirilmiş __cplusplus makrosu etkinleştir)
 
@@ -19,19 +19,19 @@ ms.locfileid: "50623996"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ ZC: __cplusplus**[**-**]
+> **/Zc:__cplusplus**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**\_ \_Cplusplus** önişlemci makrosu belirli bir C++ standart sürümü için rapor desteklemek için yaygın olarak kullanılır. Varolan kodu çok sayıda göründüğünden "199711 L" eşleşen bu makronun değeri bağımlı, açıkça kullanarak katılımı sürece derleyici makrosunun değeri değişmez **/ZC: __cplusplus** derleyici seçeneği. **/ZC: __cplusplus** seçeneği, Visual Studio 2017 sürüm 15.7'den itibaren kullanılabilmektedir ve varsayılan olarak kapalıdır. Visual Studio ve varsayılan olarak, önceki sürümlerde veya **/Zc:__cplusplus-** belirtilirse, Visual Studio döndürür "199711 L" değeri için  **\_ \_cplusplus** Önişlemci makrosu. [/ Permissive-](permissive-standards-conformance.md) seçeneği sağlamaz **/ZC: __cplusplus**.
+ **\_ \_Cplusplus** önişlemci makrosu belirli bir C++ standart sürümü için rapor desteklemek için yaygın olarak kullanılır. Varolan kodu çok sayıda göründüğünden "199711 L" eşleşen bu makronun değeri bağımlı, açıkça kullanarak katılımı sürece derleyici makrosunun değeri değişmez **/ZC: __cplusplus** derleyici seçeneği. **/ZC: __cplusplus** seçeneği, Visual Studio 2017 sürüm 15.7'den itibaren kullanılabilmektedir ve varsayılan olarak kapalıdır. Visual Studio ve varsayılan olarak, önceki sürümlerde veya **/Zc:__cplusplus-** belirtilirse, Visual Studio döndürür "199711 L" değeri için  **\_ \_cplusplus** Önişlemci makrosu. [/ Permissive-](permissive-standards-conformance.md) seçeneği sağlamaz **/ZC: __cplusplus**.
 
 Zaman **/ZC: __cplusplus** seçeneği etkin olduğunda, bildirilen değer  **\_ \_cplusplus** makrosu bağlıdır [/Std](std-specify-language-standard-version.md) sürüm anahtarı ayar. Bu tabloda, makro için olası değerler gösterilir:
 
-|/ ZC: __cplusplus anahtarı|/Std:c++ anahtarı|__cplusplus değeri|
+|/ ZC: __cplusplus anahtarı|/Std:c++ anahtarı|__cplusplus value|
 |-|-|-|
-ZC:__cplusplus|/ Std: c ++ 14 (varsayılan)|201402 M
-ZC:__cplusplus|/ Std: c ++ 17|201703 M
-ZC:__cplusplus|/ Std: c ++ son|201704 M
+Zc:__cplusplus|/ Std: c ++ 14 (varsayılan)|201402 M
+Zc:__cplusplus|/std:c++17|201703 M
+Zc:__cplusplus|/std:c++latest|201704 M
 Zc:__cplusplus-(devre dışı)|Herhangi bir değer|199711 M
 Belirtilmemiş.|Herhangi bir değer|199711 M
 
@@ -41,7 +41,7 @@ Daha ayrıntılı için algılama derleyici araç takımı yapılan değişiklik
 
 ### <a name="to-set-this-compiler-option-in-visual-studio"></a>Bu derleyici seçeneğini Visual Studio'da ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 

@@ -1,13 +1,13 @@
 ---
-title: Microsoft Visual C++ kayan nokta iyileştirme
+title: MSVC kayan nokta iyileştirme
 ms.date: 03/09/2018
 ms.topic: conceptual
-ms.openlocfilehash: 6e297cebb4982b293e86885815436c4120d903cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78c5c310f2f348b5cfa5a92feb65e265d28560d9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504305"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814377"
 ---
 # <a name="microsoft-visual-c-floating-point-optimization"></a>Microsoft Visual C++ kayan nokta iyileştirme
 
@@ -36,11 +36,11 @@ Bu işlev n ekler **float** dizi vektördeki değerler `A`. Döngü gövdesi iç
 
 Naïve C++ derleyicisi, kayan nokta aritmetiği gerçek sayı aritmetik cebirsel aynı kuralları izler varsayabilirsiniz. Böyle bir derleyici ardından deneyebileceğinizi, duymanıza neden olabilir
 
-> C T - Toplam - Y = == > (Toplam + Y) - Toplam - Y == > 0;
+> C = T - sum - Y ==> (sum+Y)-sum-Y ==> 0;
 
 Diğer bir deyişle, C algılanan değeri her zaman sabit sıfır olduğunu. Bu sabit değer ardından sonraki ifadelere yayılır, döngü gövdesi için basit bir toplama azaltılır. Kesin olarak için
 
-> Y = C bir [i] - == > Y = [i]<br/>T = Toplam + Y == > T = toplam + [i]<br/>Sum T = == > toplam = toplam + [i]
+> Y = A[i] - C ==> Y = A[i]<br/>T = Toplam + Y == > T = toplam + [i]<br/>Sum T = == > toplam = toplam + [i]
 
 Bu nedenle, mantıksal bir dönüştürme naïve derleyici için `KahanSum` işlevi olur:
 
@@ -181,7 +181,7 @@ Daha yüksek duyarlılık Ara sonuçların hesaplanırken, nihai sonucu önemli 
 
 Kayan nokta özel durum anlamsalları bağımsız olarak bir komut satırı anahtarı veya derleyici pragması tarafından denetlenebilir; Varsayılan olarak, kayan nokta özel durum anlamsalları fp altında devre dışı bırakılır: kesin ve etkin altında fp: strict. Derleyici ayrıca FPU ortam duyarlılık ve kısaltmalar gibi belirli kayan nokta belirli iyileştirmelerde üzerinde denetim sağlar. Bu rahatça model geliştiricilere önemli miktarda yük çok fazla derleyici anahtarlarının veya Aday müşteri, istenmeyen yan etkileri olmadan kayan nokta kodu derlemesi üzerinde denetim sağlar.
 
-## <a name="the-fpprecise-mode-for-floating-point-semantics"></a>Fp: precise modu için kayan nokta semantiklerini
+## <a name="the-fpprecise-mode-for-floating-point-semantics"></a>The fp:precise mode for floating-point semantics
 
 Varsayılan kayan nokta semantiklerini moddur fp: precise. Bu modu seçildiğinde, derleyicinin kayan nokta işlemlerini iyileştirmek, kesin olarak güvenlik kural kümesine uyar. Bu kurallar, derleyicinin kayan nokta hesaplamalar doğruluğunu koruyarak verimli makine kodu oluşturmasına izin verir. Hızlı üretim kolaylaştırmak için programlar, fp: precise modeli devre dışı bırakır kayan nokta özel durum anlamsalları (bunlar açıkça etkin hale getirilebilir rağmen). Microsoft fp seçilen: hızlı ve doğru programlar oluşturduğundan kesin olarak varsayılan kayan nokta modu.
 
@@ -193,7 +193,7 @@ Bu dp kullanılacağını derleyiciye: source.cpp dosyası için kodu oluşturul
 
 Altında fp: precise modu, derleyici hiçbir zaman kayan nokta hesaplamalar doğruluğunu perturb tüm iyileştirmeler gerçekleştirir. Derleyici atamaları her zaman doğru yuvarlar, yuvarlamasını ve işlev çağrıları ve FPU kaydeder gibi ara yuvarlama tutarlı bir şekilde aynı duyarlık gerçekleştirilir. Kısaltmalardan gibi güvenli iyileştirmeleri, varsayılan olarak etkindir. Özel durum anlamsalları ve FPU ortam duyarlılık varsayılan olarak devre dışıdır.
 
-|FP: precise semantiği|Açıklama|
+|fp:precise semantics|Açıklama|
 |-|-|
 |Semantik yuvarlama|Açık atamaları yuvarlama yuvarlamasını ve işlevini çağırır. Ara ifadelerin kayıt duyarlık olarak değerlendirilir.|
 |Cebirsel dönüşümleri|Katı kayan nokta Cebir ilişkilendirilemez, dağılma olmayan kıldığı bir dönüştürme her zaman kesin olan sürece, aynı sonuçları üretir.|
@@ -202,7 +202,7 @@ Altında fp: precise modu, derleyici hiçbir zaman kayan nokta hesaplamalar doğ
 |FPU ortam erişimi|Varsayılan olarak devre dışıdır. Daha fazla bilgi için bkz. [fenv_access pragma](#the-fenv-access-pragma). Varsayılan duyarlık ve yuvarlama modu olduğu varsayılır.|
 |Kayan nokta özel durum anlamsalları|Varsayılan olarak devre dışıdır. Daha fazla bilgi için [/FP: except](fp-specify-floating-point-behavior.md).|
 
-### <a name="rounding-semantics-for-floating-point-expressions-under-fpprecise"></a>Fp altında kayan nokta ifadeleri için semantiği yuvarlama: kesin
+### <a name="rounding-semantics-for-floating-point-expressions-under-fpprecise"></a>Rounding semantics for floating-point expressions under fp:precise
 
 Fp: precise modeli her zaman açıkça ifade değerlendirmesindeki belirli noktalarda yalnızca yuvarlama yüksek pratik duyarlık sırasında Ara hesaplamalar gerçekleştirir. Yuvarlama için kullanıcı tarafından belirtilen duyarlığını her zaman içinde dört basamak gerçekleşir: (a) bir türü atayarak (b) gerçekleştirildiğinde atama ortaya çıktığında, (c) bir kayan nokta değeri geçirilir bağımsız değişken olarak bir işlev ve (d) bir kayan nokta değeri öğesinden döndürülen bir işlev. Ara hesaplamalar kayıt duyarlık her zaman gerçekleştirilir, Ara sonuçlar doğruluğunu platform bağımlı olduğundan (duyarlık her zaman en az belirtilen kullanıcı olarak doğru olur ancak duyarlık).
 
@@ -629,7 +629,7 @@ Altında fp: precise, ifade değerlendirmesi yeniden sıralama iyileştirmeleri 
 
 Daha fazla bilgi için bkz. [fenv_access pragma](#the-fenv-access-pragma).
 
-### <a name="floating-point-exception-semantics-under-fpprecise"></a>Kayan nokta özel durum anlamsalları altında fp: precise
+### <a name="floating-point-exception-semantics-under-fpprecise"></a>Floating-point exception semantics under fp:precise
 
 Varsayılan olarak, kayan nokta özel durum anlamsalları fp altında devre dışı bırakılır: kesin. Çoğu C++ programcıları, sistem veya C++ özel durumlarını kullanmadan kayan nokta özel durumları işlemek tercih eder. Ayrıca, daha önce belirtildiği gibi kayan nokta özel durum anlamsalları devre dışı bırakma derleyici esneklik kayan nokta işlemleri iyileştirirken sağlar. Kullanın **/FP: dışında** geçiş veya `float_control` pragma fp kullanırken kayan nokta özel durum anlamsalları etkinleştirmek için: tam modeli.
 
@@ -649,7 +649,7 @@ Daha fazla bilgi için bkz. [float_control pragması](#the-float-control-pragma)
 
 FP: Fast modu altında derleyicinin kayan nokta hesaplamalar doğruluğunu etkileyen en iyi duruma getirme gerçekleştirebilir. Derleyici, doğru atamaları yuvarlak değil, yuvarlamasını veya işlev çağrıları ve Ara yuvarlama işlemi her zaman gerçekleştirilmez. Kısaltmalardan gibi belirli kayan nokta iyileştirmelerinin her zaman etkindir. Kayan nokta özel durum anlamsalları ve FPU ortam duyarlılık devre dışı bırakılmış ve kullanılamaz.
 
-|FP: Fast semantiği|Açıklama
+|fp:fast semantics|Açıklama
 |-|-|
 |Semantik yuvarlama|Açık atamaları yuvarlama yuvarlamasını ve işlev çağrıları yoksayılabilir.<br/>Daha az duyarlılık performans gereksinimlerine göre kayıt sırasında Ara ifadelerin yuvarlatılmış.|
 |Cebirsel dönüşümleri|Derleyici, gerçek sayı ilişkilendirilebilir, dağılma Cebir göre ifadeler dönüştürme; Bu dönüştürmeler doğru ya da doğru olması garanti edilmez.|
@@ -658,7 +658,7 @@ FP: Fast modu altında derleyicinin kayan nokta hesaplamalar doğruluğunu etkil
 |FPU ortam erişimi|Devre dışı. Yok|
 |Kayan nokta özel durum anlamsalları|Devre dışı. Yok|
 
-### <a name="rounding-semantics-for-floating-point-expressions-under-fpfast"></a>FP: Fast altında kayan nokta ifadeleri için semantiği yuvarlama
+### <a name="rounding-semantics-for-floating-point-expressions-under-fpfast"></a>Rounding semantics for floating-point expressions under fp:fast
 
 Farklı fp: precise modelinde, FP: Fast modelinde en kullanışlı duyarlık Ara hesaplamalar gerçekleştirir. Atamalar yuvarlama yuvarlamasını ve işlev çağrıları değil her zaman ortaya çıkabilir. Örneğin, üç tek duyarlıklı değişkenleri ilk işlev tanıtır (`C`, `Y` ve `T`). Derleyici, geçerli yükseltme türü, bu değişkenler için yere seçebilirsiniz `C`, `Y` ve `T` çift duyarlıklı için.
 
@@ -833,10 +833,10 @@ Daha fazla bilgi için bkz. [float_control pragması](#the-float-control-pragma)
 
 Fp altında: katı mod, derleyici hiçbir zaman kayan nokta hesaplamalar doğruluğunu perturb tüm iyileştirmeler gerçekleştirir. Derleyici atamaları her zaman doğru yuvarlar, yuvarlamasını ve işlev çağrıları ve FPU kaydeder gibi ara yuvarlama tutarlı bir şekilde aynı duyarlık gerçekleştirilir. Kayan nokta özel durum anlamsalları ve FPU ortam duyarlılık varsayılan olarak etkindir. Derleyici her durumda doğruluğu garanti edemediğinden, kısaltmalar gibi bazı iyileştirmeler devre dışı bırakıldı.
 
-|FP: strict semantiği|Açıklama|
+|fp:strict semantics|Açıklama|
 |-|-|
-|Semantik yuvarlama|Açık atamaları yuvarlama yuvarlamasını ve işlev çağrıları<br/>Ara ifadelerin kayıt duyarlık olarak değerlendirilir.<br/>Aynı fp: precise|
-|Cebirsel dönüşümleri|Katı kayan nokta Cebir ilişkilendirilemez, dağılma olmayan kıldığı bir dönüştürme her zaman kesin olan sürece, aynı sonuçları üretir.<br/>Aynı fp: precise|
+|Semantik yuvarlama|Açık atamaları yuvarlama yuvarlamasını ve işlev çağrıları<br/>Ara ifadelerin kayıt duyarlık olarak değerlendirilir.<br/>Same as fp:precise|
+|Cebirsel dönüşümleri|Katı kayan nokta Cebir ilişkilendirilemez, dağılma olmayan kıldığı bir dönüştürme her zaman kesin olan sürece, aynı sonuçları üretir.<br/>Same as fp:precise|
 |Kısaltmalar|Her zaman devre dışı|
 |Kayan nokta değerlendirme sırası|Derleyici, kayan nokta ifadelerinin değerlendirme düzenlemez|
 |FPU ortam erişimi|Her zaman etkindir.|
@@ -891,7 +891,7 @@ etc...
 
 Zaman `fenv_access` olduğundan devre dışı, derleyicinin yürütme sırasında bu nedenle büyük olasılıkla FPU durumu denetimleri subverting kayan nokta ifadelerinin düzenleyebilir. Etkinleştirme `fenv_access` gibi iyileştirmeler engeller.
 
-## <a name="the-fpcontract-pragma"></a>Fp_contract pragması
+## <a name="the-fpcontract-pragma"></a>The fp_contract pragma
 
 Kullanım:
 
@@ -952,11 +952,11 @@ Komut satırı anahtarları aslında dört farklı kayan nokta pragmaları ayarl
 ||||||
 |-|-|-|-|-|
 ||float_control(Precise)|float_control(except)|fp_contract|fenv_access|
-|/ FP: strict|on|on|Kapalı|on|
-|/ FP: strict/FP: except-|on|Kapalı|Kapalı|on|
-|/ FP: precise|on|Kapalı|on|Kapalı|
-|/ FP: precise/FP: except|on|on|on|Kapalı|
-|Fast|Kapalı|Kapalı|on|Kapalı|
+|/ FP: strict|on|on|kapalı|on|
+|/fp:strict /fp:except-|on|kapalı|kapalı|on|
+|/fp:precise|on|kapalı|on|kapalı|
+|/ FP: precise/FP: except|on|on|on|kapalı|
+|/fp:fast|kapalı|kapalı|on|kapalı|
 
 Örneğin, aşağıdaki açıkça FP: Fast semantiği sağlar.
 
@@ -1088,4 +1088,4 @@ catch(float_exception)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodunuzu İyileştirme](optimizing-your-code.md)<br/>
+[Kodunuzu İyileştirme](../optimizing-your-code.md)<br/>
