@@ -405,7 +405,6 @@
 #### [<system_error> işlevleri](system-error-functions.md)
 #### [<system_error> işleçleri](system-error-operators.md)
 #### [<system_error> sabit listeleri](system-error-enums.md)
-#### [<system_error> tür tanımları](system-error-typedefs.md)
 #### [error_category Sınıfı](error-category-class.md)
 #### [error_code Sınıfı](error-code-class.md)
 #### [error_condition Sınıfı](error-condition-class.md)
