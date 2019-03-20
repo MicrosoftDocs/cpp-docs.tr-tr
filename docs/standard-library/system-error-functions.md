@@ -1,6 +1,6 @@
 ---
 title: '&lt;system_error&gt; işlevleri'
-ms.date: 11/04/2016
+ms.date: 03/15/2019
 f1_keywords:
 - system_error/std::generic_category
 - system_error/std::make_error_code
@@ -12,26 +12,26 @@ helpviewer_keywords:
 - std::make_error_code
 - std::make_error_condition
 - std::system_category
-ms.openlocfilehash: 24890830456e3c1026b02960aa650a43da3b6067
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78be83af678b553babbf1cde3d96c1507940b611
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554406"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172913"
 ---
 # <a name="ltsystemerrorgt-functions"></a>&lt;system_error&gt; işlevleri
 
 ||||
 |-|-|-|
 |[generic_category](#generic_category)|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|
-|[system_category](#system_category)|
+|[system_category](#system_category)|||
 
-## <a name="generic_category"></a>  generic_category
+## <a name="generic_category"></a> generic_category
 
 Genel hataları kategorisini temsil eder.
 
 ```cpp
-extern const error_category& generic_category();
+const error_category& generic_category() noexcept;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -43,14 +43,13 @@ extern const error_category& generic_category();
 Bir hata kodu nesnesi oluşturur.
 
 ```cpp
-error_code make_error_code(generic_errno _Errno);
+error_code make_error_code(std::errc error) noexcept;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Gt; _errno &*|Hata kodu nesnesi içinde saklamak için numaralandırma değeri.|
+*Hata*\
+`std::errc` Hata kodu nesnesi içinde saklamak için numaralandırma değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -63,14 +62,13 @@ Hata kodu nesnesi.
 Bir hata koşulu nesnesi oluşturur.
 
 ```cpp
-error_condition make_error_condition(generic_errno _Errno);
+error_condition make_error_condition(std::errc error) noexcept;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Gt; _errno &*|Hata koşulu nesnesi içinde saklamak için numaralandırma değeri.|
+*Hata*\
+`std::errc` Hata kodu nesnesi içinde saklamak için numaralandırma değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -83,7 +81,7 @@ Hata koşulu nesnesi.
 Alt düzey sistemi taşıyor tarafından neden olduğu hata kategorisini temsil eder.
 
 ```cpp
-extern const error_category& system_category();
+const error_category& system_category() noexcept;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -92,4 +90,4 @@ extern const error_category& system_category();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[<system_error>](../standard-library/system-error.md)<br/>
+[\<system_error>](../standard-library/system-error.md)<br/>

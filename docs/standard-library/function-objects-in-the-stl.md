@@ -1,18 +1,18 @@
 ---
 title: C++ Standart kitaplığındaki işlev nesneleri
-ms.date: 11/04/2016
+ms.date: 03/15/2019
 helpviewer_keywords:
 - functors
 - C++ Standard Library, functors
 - C++ Standard Library, function objects
 - function objects
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
-ms.openlocfilehash: 7af56f52b59b03dfed9e1233473239274a0dcbd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 310d846285612ad94ec9d66672fcb996557b07e2
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437133"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172965"
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ Standart kitaplığındaki işlev nesneleri
 
@@ -33,9 +33,17 @@ public:
         return a < b;
     }
 };
+
+int main()
+{
+    Functor f;
+    int a = 5;
+    int b = 7;
+    int ans = f(a, b);
+}
 ```
 
-Son satırının `main` işlevi, işlev nesnesi çağırmanızı nasıl gösterir. Bu çağrı bir işleve bir çağrı şuna benzer, ancak gerçekte Functor türü operator() çağırma. Bir işlev nesnesi ve bir işlev çağırma arasında bu benzerlik terimi işlev nesnesi nasıl çıktığını ' dir.
+Son satırının `main` işlevi, işlev nesnesi çağırmanızı nasıl gösterir. Bu çağrı bir işlev, ancak onun gerçekten çağıran operator() Functor türü için bir çağrı şuna benzer. Bir işlev nesnesi ve bir işlev çağırma arasında bu benzerlik terimi işlev nesnesi nasıl çıktığını ' dir.
 
 ## <a name="function-objects-and-containers"></a>İşlev nesneleri ve kapsayıcıları
 
@@ -48,7 +56,7 @@ template <class Key,
 class set
 ```
 
-İkinci şablon bağımsız değişkeni işlev nesnesidir `less`. Bu işlev nesnesi döndürür **true** ilk parametre geçirilmiş küçük olup ikinci parametresi geçirildi. Bazı kapsayıcıları öğeleri sıralama olduğundan, kapsayıcıyı iki öğeyi karşılaştıran bir yol gerekir ve bu işlev nesnesi kullanılarak gerçekleştirilir. Kendi sıralama ölçütü kapsayıcılar için bir işlev nesnesi oluşturma ve bu kapsayıcı için şablon listesinde belirterek tanımlayabilirsiniz.
+İkinci şablon bağımsız değişkeni işlev nesnesidir `less`. Bu işlev nesnesi döndürür **true** ilk parametre küçükse değerinden ikinci parametre. Bazı kapsayıcıları öğeleri sıralama olduğundan, kapsayıcıyı iki öğeyi karşılaştıran bir yol gerekir. Karşılaştırma işlevi nesnesini kullanarak gerçekleştirilir. Kendi sıralama ölçütü kapsayıcılar için bir işlev nesnesi oluşturma ve bu kapsayıcı için şablon listesinde belirterek tanımlayabilirsiniz.
 
 ## <a name="function-objects-and-algorithms"></a>İşlev nesneleri ve algoritmaları
 

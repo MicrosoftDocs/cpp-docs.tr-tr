@@ -1,18 +1,18 @@
 ---
 title: '&lt;system_error&gt;'
-ms.date: 11/04/2016
+ms.date: 03/15/2019
 f1_keywords:
 - <system_error>
 - system_error
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: cb4870a22fd06039751f87f26dfa40e8ddcf2500
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bba893f63ca935e0feeb891faa4e141e1958306
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662767"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172991"
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 
@@ -30,12 +30,6 @@ ms.locfileid: "50662767"
 |-|-|
 |[generic_category](../standard-library/system-error-functions.md#generic_category)|Genel hataları kategorisini temsil eder.|
 |[system_category](../standard-library/system-error-functions.md#system_category)|Alt düzey sistemi taşıyor tarafından neden olduğu hata kategorisini temsil eder.|
-
-### <a name="typedefs"></a>Tür tanımları
-
-|Tür adı|Açıklama|
-|-|-|
-|[generic_errno](../standard-library/system-error-typedefs.md#generic_errno)|Posıx'te tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar numaralandırma temsil eden bir tür `<errno.h>`.|
 
 ### <a name="functions"></a>İşlevler
 

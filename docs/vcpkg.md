@@ -3,15 +3,15 @@ title: vcpkg--bir C++ için Paket Yöneticisi Windows, Linux ve MacOS
 description: vcpkg edinme ve yükleme, açık kaynaklı C++ kitaplıklarının Windows üzerinde büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir.
 author: mikeblome
 ms.author: mblome
-ms.date: 02/22/2019
+ms.date: 03/18/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: dc07086f271c9789629b335b58758b88e8e3d4e8
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 2ca1b88f492d96f8a08d296cab7f35f3b72409c9
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809717"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172887"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve MacOS için C++ Paket Yöneticisi
 
@@ -19,7 +19,7 @@ vcpkg edinme ve yükleme Windows, Linux ve Macos'ta üçüncü taraf kitaplıkla
 
 ## <a name="simple-yet-flexible"></a>Basit ancak esnek
 
-Tek bir komutla kaynakları indirmek ve bir kitaplık oluşturun. vcpkg kendisini Github'da bulunan bir açık kaynak projesi olan. Kendi özel clone(s) istediğiniz herhangi bir şekilde özelleştirebilirsiniz. Örneğin, farklı kitaplıkları veya genel kataloğunda bulduğu daha kitaplıkların farklı sürümleri belirtebilirsiniz. Tek bir makinede birden fazla klonlarını vcpkg olabilir, kitaplıkları ve/veya derleme anahtarları, vb. her biri özel üretme ayarlar. Her kopya bir bağımsız, x kopyalanabilir kendi kopya, yalnızca kendi hiyerarşisini çalışır vcpkg.exe ortamıdır. vcpkg herhangi bir ortam değişkenini eklenmez ve Windows kayıt defteri veya Visual Studio bağımlılığı yoktur.
+Tek bir komutla kaynakları indirmek ve bir kitaplık oluşturun. vcpkg kendisini Github'da bulunan bir açık kaynak projesi olan. Kendi özel clone(s) istediğiniz herhangi bir şekilde özelleştirebilirsiniz. Örneğin, farklı kitaplıkları veya genel kataloğunda bulduğu daha kitaplıkların farklı sürümleri belirtebilirsiniz. Tek bir makinede birden fazla klonlarını vcpkg olabilir, kitaplıkları ve/veya derleme anahtarları, vb. her biri özel üretme ayarlar. Her kopya yalnızca kendi hiyerarşisini çalışır vcpkg.exe kendi kopyalama ile kendi içinde bir ortam büyüktür. vcpkg herhangi bir ortam değişkenini eklenmez ve Windows kayıt defteri veya Visual Studio bağımlılığı yoktur.
 
 ## <a name="sources-not-binaries"></a>Kaynakları değil ikili dosyaları
 
