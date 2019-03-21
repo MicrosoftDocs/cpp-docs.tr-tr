@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: dcae15ade3bd155e16149cc56981f79abb245e16
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: bd0aae1c968135da445595d48823e4840f084a2d
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740380"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278586"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -22,11 +22,11 @@ Visual Studio 2017 hakkında daha fazla bilgi için bkz: [Visual Studio 2017'dek
 
 Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden derlenmiş ve düzgün çalışan kod çalışma zamanı hatalarıyla karşılaşabilirsiniz. Değişiklikleri yeni sürümde bu tür sorunlara neden olarak bilinir *bozucu değişiklikler*, ve bunlar tarafından C++ dil standardı, işlev imzaları veya bellekteki nesnelerin düzeni değişikliklerini genellikle gerekmesinden.
 
-Algılanması ve tanılanması zor çalışma zamanı hatalarından kaçınmak için, derleyicinin farklı sürümleri kullanılarak derlenmiş ikili dosyalara hiçbir zaman statik bağlantı vermemenizi öneriyoruz. Ayrıca, bir EXE veya DLL projesini yükseltirken, bağlantı verdiği kitaplıkları da yükselttiğinizden emin olun. CRT (C çalışma zamanı) veya C++ Standart Kitaplığı (Standart C++ Kitaplığı) türleri kullanıyorsanız, bunları derleyicinin farklı sürümleri kullanılarak derlenmiş ikili (DLL'ler dahil) arasında geçirmeyin. Daha fazla bilgi için [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
+Algılanması ve tanılanması zor çalışma zamanı hataları önlemek için hiçbir zaman statik farklı bir derleyici sürümü kullanılarak derlenmiş ikili dosyalara bağlamanızı öneririz. Ayrıca, bir EXE veya DLL projesini yükseltirken, bağlantı verdiği kitaplıkları da yükselttiğinizden emin olun. CRT (C çalışma zamanı) veya C++ Standart Kitaplığı (Standart C++ Kitaplığı) türleri ikili dosyaları, DLL'ler, derleyicinin farklı sürümleri kullanılarak derlenmiş dahil arasında geçirmeyin. Daha fazla bilgi için [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
 
-Ayrıca, COM arabirimi ya da POD projesi olmayan bir nesne için belirli bir düzeni temel alan kodları da asla yazmamanızı öneriyoruz. Bu tür bir kod yazarsanız, yükseltme sonrasında çalışmasını sağlamalısınız. Daha fazla bilgi için [ABI sınırlarında taşınabilirlik adresindeki](../cpp/portability-at-abi-boundaries-modern-cpp.md).
+Hiçbir zaman bir COM arabirimi değil bir nesne veya bir POD nesne için belirli bir düzeni bağımlı kod yazmanız gerekir. Bu tür bir kod yazarsanız, yükseltme sonrasında çalışmasını sağlamalısınız. Daha fazla bilgi için [ABI sınırlarında taşınabilirlik adresindeki](../cpp/portability-at-abi-boundaries-modern-cpp.md).
 
-Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl derleyici mevcut kaynak kodunuzu anlar değiştirebilirsiniz. Bu durumda, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hata karşılaşabilirsiniz. Bunlar bu belgede ele alınan olanlar gibi önemli değişiklikler değil olsa da, bu sorunları çözmek için kaynak kodu değişiklikleri gerekebilir:
+Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl derleyici mevcut kaynak kodunuzu anlar değiştirebilirsiniz. Örneğin, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hataları bulabilirsiniz. Bu geliştirmeler bu belgede ele alınan olanlar gibi değişiklikler olmayan olsa da, bu sorunları çözmek için kaynak kodunuzda değişiklik gerekebilir:
 
 - [C çalışma zamanı (CRT) kitaplığı için bozucu değişiklikler](#BK_CRT)
 
@@ -44,43 +44,41 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **İşlenmiş ikili dosyaları**
 
-   CRT kitaplık içine bir evrensel standart işlevselliğinin büyük kısmını içeren CRT (ucrtbase) ve bir VC Çalışma zamanı özel durum işleme gibi derleyici ile ilgili işlevler içeren kitaplık (vcruntime), bir iki farklı ikilileri yeniden düzenlendi ve iç bilgileri. Varsayılan proje ayarlarını kullanıyorsanız, bağlayıcının yeni varsayılan kitaplıkları otomatik olarak kullanır bu yana sonra bu değişiklik, etkilemez. Projenin ayarlarsanız **bağlayıcı** özelliği **tüm varsayılan kitaplıkları Yoksay** için **Evet** veya kullanmakta olduğunuz `/NODEFAULTLIB` sonra komut satırında bağlayıcı seçeneği kitaplıkları listesini güncelleştirmeniz gerekir (içinde **ek bağımlılıklar** özelliği) yeni, işlenmiş kitaplıklarını eklemek. Eski CRT kitaplığı (LIBCMT.lib, lıbcmtd.lib, msvcrt.lib, msvcrtd.lib) eşdeğer UIMap'e yeniden işlenmiş kitaplıkları ile değiştirin. Her iki UIMap'e yeniden işlenmiş kitaplıklarının vardır (.lib) statik ve dinamik (.dll) ve sürümle (sonek) ve hata ayıklama sürümleri ("d" sonekiyle). Dinamik içeri aktarma kitaplığı ile bağlantı sürümlerde. İki UIMap'e yeniden işlenmiş kitaplıkları vardır ve evrensel CRT, özellikle ucrtbase.dll veya .lib, ucrtbased.dll dosyasını veya .lib ve VC Çalışma zamanı kitaplığı, libvcruntime.lib, vcruntime*sürüm*.dll ve libvcruntimed.lib vcruntimed*sürüm*.dll. *Sürüm* Visual Studio 2015 ve Visual Studio 2017 ', 140 değeri. Bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
+   CRT kitaplık iki farklı ikili dosyaları yeniden düzenlendi: bir evrensel standart işlevini ve bir VC Çalışma zamanı kitaplığı (vcruntime) çoğunu içeren CRT (ucrtbase). Vcruntime kitaplık özel durum işleme ve yapı içleri gibi derleyici ilgili işlevleri içerir. Varsayılan proje ayarlarını kullanıyorsanız, bağlayıcının yeni varsayılan kitaplıkları otomatik olarak kullanır bu yana sonra bu değişiklik, etkisi yoktur. Projenin ayarladıysanız **bağlayıcı** özelliği **tüm varsayılan kitaplıkları Yoksay** için **Evet** veya kullanmakta olduğunuz `/NODEFAULTLIB` sonra komut satırında bağlayıcı seçeneği kitaplıkları listesini güncelleştirmeniz gerekir (içinde **ek bağımlılıklar** özelliği) yeni, işlenmiş kitaplıklarını eklemek. Eski CRT kitaplığı (LIBCMT.lib, lıbcmtd.lib, msvcrt.lib, msvcrtd.lib) eşdeğer UIMap'e yeniden işlenmiş kitaplıkları ile değiştirin. Her iki UIMap'e yeniden işlenmiş kitaplıklarının vardır (.lib) statik ve dinamik (.dll) ve sürümle (sonek) ve hata ayıklama sürümleri ("d" sonekiyle). Dinamik içeri aktarma kitaplığı ile bağlantı sürümlerde. İki UIMap'e yeniden işlenmiş kitaplıkları vardır ve evrensel CRT, özellikle ucrtbase.dll veya ucrtbase.lib, ucrtbased.dll dosyasını veya ucrtbased.lib ve VC Çalışma zamanı kitaplığı, libvcruntime.lib, vcruntime*sürüm*.dll, libvcruntimed.lib, ve vcruntimed*sürüm*.dll. *Sürüm* Visual Studio 2015 ve Visual Studio 2017 ', 140 değeri. Bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
 #### <a name="localeh"></a>\<Locale.h >
 
 - **localeconv**
 
-   [Localeconv](../c-runtime-library/reference/localeconv.md) bildirilen işlev locale.h şimdi çalışır doğru zaman [iş parçacığı başına yerel ayar](../parallel/multithreading-and-locales.md) etkinleştirilir. Kitaplığı önceki sürümlerinde, lconv verileri değil iş parçacığı yerel ayarı genel yerel ayar için bu işlevi döndürür.
+   [Localeconv](../c-runtime-library/reference/localeconv.md) bildirilen işlev locale.h şimdi çalışır doğru zaman [iş parçacığı başına yerel ayar](../parallel/multithreading-and-locales.md) etkinleştirilir. Kitaplığı önceki sürümlerinde, bu işlev döndürecekti `lconv` değil iş parçacığı yerel ayarı genel yerel ayar için verileri.
 
-   İş parçacığı yerel ayarı kullanıyorsanız, kodunuzun lconv veri genel yerel ayar için döndürülen varsayar, görmek için localeconv kullanımını denetlemek ve uygun şekilde değiştirmek gerekir.
+   İş parçacığı başına yerel kullanırsanız, kullanımınız denetlemelisiniz `localeconv`. Kodunuzu varsayar, `lconv` döndürülen veriler için genel yerel ayar, düzeltmeniz gerekir.
 
 #### <a name="mathh"></a>\<Math.h >
 
 - **C++ aşırı matematik kitaplığı işlevi**
 
-   Önceki sürümlerde, \<math.h > bazı, tümü değil, C++ aşırı yüklemeleri matematik kitaplığı işlevi için tanımlı. \<cmath > overloads biri dahil etmek için gereken şekilde almak için diğer aşırı yüklemeler, tanımlanan \<cmath > Üstbilgi. Bu işlev aşırı yükleme çözümü yalnızca dahil kod ile ilgili sorunların LED'i \<math.h >. Şimdi tüm C++ aşırı yüklemeler kaldırılmış olan \<math.h > yalnızca artık mevcutsa \<cmath >.
+   Önceki sürümlerde, \<math.h > bazı, tümü değil, C++ aşırı yüklemeleri matematik kitaplığı işlevi için tanımlı. Aşırı geri kalanını olan içinde \<cmath > Üstbilgi. Kodu yalnızca dahil edilen \<math.h > işlev aşırı yükleme çözümü ile ilgili sorunlar olabilir. C++ aşırı kaldırılmış olan artık \<math.h > ve yalnızca bulunan \<cmath >.
 
-   Hataları gidermek için dahil \<cmath > öğesinden kaldırılan işlevlerin bildirimleri almak için \<math.h >. Aşağıdaki tabloda, taşınan işlevleri listeler.
+   Hataları gidermek için dahil \<cmath > öğesinden kaldırılan işlevlerin bildirimleri almak için \<math.h >. Bu işlevler taşındı:
 
-   Taşınan İşlevler:
+  - `double abs(double)` ve `float abs(float)`
 
-  - çift abs(double) ve kayan nokta abs(float)
+  - `double pow(double, int)`, `float pow(float, float)`, `float pow(float, int)`, `long double pow(long double, long double)`, `long double pow(long double, int)`
 
-  - çift pow (double, int), float pow (float, float) pow (float, int), float pow (long double, long double)'uzun çift, pow (uzun çift int)'uzun çift
+  - `float` ve `long double` kayan sürümleri, İşlevler'in üzerine `acos`, `acosh`, `asin`, `asinh`, `atan`, `atanh`, `atan2`, `cbrt`, `ceil`, `copysign`, `cos`, `cosh`, `erf`, `erfc`, `exp`, `exp2`, `expm1`, `fabs`, `fdim`, `floor`, `fma`, `fmax`, `fmin` , `fmod`, `frexp`, `hypot`, `ilogb`, `ldexp`, `lgamma`, `llrint`, `llround`, `log`, `log10`, `log1p`, `log2`, `lrint`, `lround`, `modf`, `nearbyint`, `nextafter`, `nexttoward`, `remainder`, `remquo`, `rint`, `round`, `scalbln`, `scalbn`, `sin`, `sinh`, `sqrt`, `tan`, `tanh`, `tgamma`, ve `trunc`
 
-  - Kayan ve noktası işlevleri acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, copysign, cos, ceil kayan uzun çift sürümlerini cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, günlük , log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, kalan, remquo, azdır, hepsini, scalbln, scalbn, sin, sinh, sqrt, Bronz, tanh, tgamma, trunc
-
-  Sahip kodu kullanan abs ile bir kayan nokta, yalnızca math.h üstbilgi türüne, kayan nokta sürümleri Hayır bile kayan ile çağrı işaret edecek şekilde bağımsız değişkeni artık kullanılabilir durumda, artık abs(int) için çözümler. Bu hata oluşturur:
+  Kullanan kodu varsa `abs` ile kayan noktası, yalnızca tür \<math.h > üst bilgi, kayan nokta sürümleri artık kullanıma sunulacaktır. Çağrı artık çözümler `abs(int)`olsa bile bir kayan ile noktası bağımsız değişken hatası oluşturur:
 
     ```Output
     warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
     ```
 
-  Bu uyarıyı düzeltme çağrısı değiştirmektir `abs` ile bir kayan noktası sürümünü `abs`, gibi `fabs` çift bir bağımsız değişkeni veya `fabsf` bir float bağımsız değişkeni veya cmath üstbilgisi içerir ve kullanmaya devam `abs`.
+  Bu uyarıyı düzeltme çağrısı değiştirmektir `abs` kayan ile noktası sürümünü `abs`, gibi `fabs` çift bir bağımsız değişkeni veya `fabsf` bir float bağımsız değişkeni ya da dahil \<cmath > üst bilgi ve kullanmaya devam edebilirsiniz `abs`.
 
 - **Kayan nokta uyumluluğu**
 
-   IEEE 754 uyumluluk ve C11 Annex F belirtimleri NaN'ler ve sonsuz gibi özel büyük girişlerdeki göre iyileştirmek için matematik kitaplığı çok fazla değişiklik yapıldı. Örneğin, genellikle kitaplığının önceki sürümlerinde hata olarak kabul, sessiz NaN girişleri artık hata olarak kabul edilir. Bkz: [IEEE 754 standart](http://grouper.ieee.org/groups/754) ve Annex F, [C11 standart](http://www.iso-9899.info/wiki/The_Standard).
+   IEEE 754 uyumluluk ve C11 Annex F belirtimleri NaN'ler ve sonsuz gibi özel büyük girişlerdeki göre iyileştirmek için matematik kitaplığı çok fazla değişiklik yapıldı. Örneğin, genellikle kitaplığının önceki sürümlerinde hata olarak kabul, sessiz NaN girişleri artık hata olarak kabul edilir. Bkz: [IEEE 754 standart](https://standards.ieee.org/standard/754-2008.html) ve Annex F, [C11 standart](http://www.iso-9899.info/wiki/The_Standard).
 
    Bu değişiklikler, derleme zamanı hatalarına neden olmaz, ancak programların standardına göre farklı şekilde ve daha doğru bir şekilde davranmasına neden olabilir.
 
@@ -94,13 +92,13 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Kitaplığı önceki sürümlerinde, uygulama tanımlı new işleci ve delete işlevleri Çalışma Zamanı Kitaplığı'ndan (örneğin, msvcr120.dll) DLL dışarı aktarıldı. Bu işleç işlevleri artık statik olarak her zaman ikili dosyalarınıza, çalışma zamanı kitaplığı DLL'leri kullanırken bile bağlanır.
 
-   Bu yerel veya karma kod için bir değişiklik değil (`/clr`), ancak olarak derlenmiş kod [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), bu, kodunuzu derlemek başarısız olmasına neden olabilir. Kod olarak derlerseniz `/clr:pure`, eklemeniz gerekebilir `#include <new>` veya `#include <new.h>` bu değişiklikten dolayı derleme hataları gidermek için. Unutmayın `/clr:pure` Visual Studio 2015'te kullanım dışıdır ve Visual Studio 2017'de desteklenmiyor. "Saf" olması gereken kod C# için unity'nin.
+   Bu bir yerel veya karma kod için değişiklik değildir (`/clr`), ancak olarak derlenmiş kod [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), bu değişiklik, kodunuzu derlemek başarısız olmasına neden olabilir. Kod olarak derlerseniz `/clr:pure`, eklemeniz gerekebilir `#include <new>` veya `#include <new.h>` bu değişiklikten dolayı derleme hataları gidermek için. `/clr:pure` Seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. "Saf" olması gereken kod C# için unity'nin.
 
 #### <a name="processh"></a>\<Process.h >
 
 - **_beginthread ve _beginthreadex**
 
-   [_Beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) ve [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) işlevleri artık süresi boyunca, iş parçacığının iş parçacığı yordamı tanımlanır modülüne bir başvuru tutun. Bu bir iş parçacığı çalıştırılıp tamamlandıktan kadar modülleri kaldırılmış olmadığını sağlamaya yardımcı olur.
+   [_Beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) ve [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) işlevleri artık süresi boyunca, iş parçacığının iş parçacığı yordamı tanımlanır modülüne bir başvuru tutun. Bu, bir iş parçacığı çalıştırılıp tamamlandıktan kadar modülleri yüklenmemiş olmamasını yardımcı olur.
 
 #### <a name="stdargh"></a>\<stdarg.h >
 
@@ -112,11 +110,11 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **Printf ve scanf ailesindeki işlevlerin artık tanımlanan satır içi.**
 
-   Printf ve scanf işlevlerin tümü tanımlarını içine taşınan satır içi silinmiş \<stdio.h >, \<conio.h > ve diğer CRT üstbilgileri. Bu, bir bağlayıcı hatası (LNK2019, çözümlenmemiş dış sembol) götüren bir değişiklik uygun CRT üst bilgiler dahil olmak üzere bu işlevleri yerel olarak bildirilen tüm programları içindir. Mümkünse, CRT üstbilgileri dahil etmek için kodu güncelleştirmeniz gerekir (diğer bir deyişle, ekleme `#include <stdio.h>`) ve satır içi işlevler, ancak bu başlık dosyaları dahil etmek için kodunuzu değiştirmek istemiyorsanız, alternatif bir çözüm, bağlayıcı için bir ek kitaplık eklemek için Giriş, legacy_stdio_definitions.lib.
+   Tüm tanımları `printf` ve `scanf` içine taşınan satır içi işlevleri olmuştur \<stdio.h >, \<conio.h > ve diğer CRT üstbilgileri. Bu değişiklik, bu işlevler uygun CRT üst bilgiler dahil olmak üzere yerel olarak bildirilen tüm programları için bir bağlayıcı hatası (LNK2019, çözümlenmemiş dış sembol) yol açar. Mümkünse, CRT üstbilgileri dahil etmek için kodu güncelleştirmeniz gerekir (diğer bir deyişle, ekleme `#include <stdio.h>`) ve satır içi işlevler, ancak bu başlık dosyaları dahil etmek için kodunuzu değiştirmek istemiyorsanız, alternatif bir çözüm, bağlayıcı için bir ek kitaplık eklemek için Giriş, legacy_stdio_definitions.lib.
 
    Bu kitaplık IDE'de bağlayıcı giriş eklemek için proje düğümü için bağlam menüsünü açın, **özellikleri**, ardından **proje özellikleri** iletişim kutusunda **bağlayıcı**ve düzenleme **bağlayıcı girişi** eklemek için `legacy_stdio_definitions.lib` ayırmanın-noktalı virgülle ayrılmış listesi.
 
-   Bağlayıcı, projenizi Visual Studio 2015'den önceki bir sürümü ile derlenmiş olan statik kitaplıklar ile bağlanıyorsa, bir çözümlenmemiş dış sembol bildirebilir. Bu hatalar için iç stdio tanımları başvurabileceğiniz `_iob`, `_iob_func`, veya ilgili biçiminde belirli stdio işlevleri için içeri aktarmalar _Imp_\*. Microsoft, bir projeyi yükselttiğinizde, tüm statik kitaplıklar ile C++ Derleyici en son sürümünü ve kitaplıkları derlemeniz önerir. Bir üçüncü taraf kitaplığı kitaplığıysa hangi kaynak kullanılamıyor için güncelleştirilmiş bir ikili üçüncü taraftan istek veya eski sürümü derleyici ve kitaplıkları ile derlemek için ayrı bir DLL içine bu kitaplığı kullanımını yalıtma .
+   Bağlayıcı, projenizi Visual Studio 2015'den önceki bir sürümü ile derlenmiş olan statik kitaplıklar ile bağlanıyorsa, bir çözümlenmemiş dış sembol bildirebilir. Bu hatalar için iç tanımları başvurabileceğiniz `_iob`, `_iob_func`, veya bazı içeri aktarmaları ilgili \<stdio.h > biçiminde işlevleri _Imp_\*. Microsoft, bir projeyi yükselttiğinizde, tüm statik kitaplıklar ile C++ Derleyici en son sürümünü ve kitaplıkları derlemeniz önerir. Bir üçüncü taraf kitaplığı kitaplığıysa hangi kaynak kullanılabilir olmadığından için güncelleştirilmiş bir ikili üçüncü taraftan istek veya eski sürümü derleyici ve kitaplıkları ile derlemek için ayrı bir DLL içine bu kitaplığı kullanımını yalıtma .
 
     > [!WARNING]
     > Windows 8.1 SDK'sı veya önceki bağlanıyorsanız, bu çözümlenmemiş dış sembol hatalarla karşılaşabilirsiniz. Bu durumda, daha önce açıklandığı gibi giriş bağlayıcıya legacy_stdio_definitions.lib ekleyerek hata çözümlenmelidir.
@@ -147,7 +145,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
   - Belirsiz NaN: 1.#IND
 
-  Bunlardan birine bir işaretiyle önekli ve biraz daha farklı alan genişliğini ve duyarlık bağlı olarak biçimlendirilmiş olabilir (bazı durumlarda alışılmadık etkileri ile örn `printf("%.2f\n", INFINITY)` 1 yazdırır. #J #INF "2 basamaklı kesinliği için yuvarlanmasını çünkü"). C99 yeni gereksinimleri nasıl biçimlendirilmesi sonsuz ve NaN'ler olduğunuza kullanıma sunuldu. MSVC uygulama artık bu gereksinimlere uygun. Yeni dizeler aşağıdaki gibidir:
+  Şu biçimlerden herhangi birindeki bir işaretiyle önekli ve biraz daha farklı alan genişliğini ve duyarlık bağlı olarak biçimlendirilmiş olabilir (örneğin olağan dışı efektlerle bazen `printf("%.2f\n", INFINITY)` 1 yazdırır. #J #INF "2 basamaklı yuvarlanmasını çünkü" duyarlık). C99 yeni gereksinimleri nasıl biçimlendirilmesi sonsuz ve NaN'ler olduğunuza kullanıma sunuldu. MSVC uygulama artık bu gereksinimlere uygun. Yeni dizeler aşağıdaki gibidir:
 
   - Sonsuz: INF
 
@@ -155,17 +153,17 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
   - NaN sinyal: nan(snan)
 
-  - Belirsiz NaN:nan(ind)
+  - Belirsiz NaN: nan(ind)
 
-  Bunlardan birine bir işaretiyle önekli. Sermaye biçim belirticisi ise dizeleri büyük harf (INF) yerine inf yazdırılır sonra (%f yerine %F) kullanılan olarak gereklidir.
+  Bunlardan birine bir işaretiyle önekli. Büyük harfli biçim belirticisi ise dizeleri büyük harf yazdırılır sonra (%F yerine %f), kullanılan (`INF` yerine `inf`) gibi gerekli değildir.
 
-  [Scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) işlevleri gidiş dönüş printf ve scanf aracılığıyla bu dizeler olacak şekilde bu yeni dizelerini ayrıştırmak için değiştirilmiş olabilir.
+  [Scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) işlevleri, bu yeni dizeler, bu nedenle bu dizeler aracılığıyla artık gidiş dönüş ayrıştırmak için değiştirilmiş `printf` ve `scanf`.
 
 - **Kayan nokta biçimlendirme ve ayrıştırma**
 
    Yeni kayan biçimlendirme ve ayrıştırma algoritmaları nokta kullanıma sunulmuştur doğruluğunu artırmak için. Bu değişiklik [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) ve [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) aileleri işlevleri yanı sıra, İşlevler, ister [strtod](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).
 
-   Eski biçimlendirme algoritmalar yalnızca sınırlı sayıda basamak oluşturur, ardından kalan ondalık basamak sıfır ile doldurmanız. Gidiş dönüş geri özgün kayan noktalı değeri olacak dizeleri oluşturmak genellikle yeterince iyi budur ancak tam değeri (veya yapanın en yakın ondalık gösterim) istiyorsanız harika böyle değildir. Değeri temsil etmek için (veya belirtilen duyarlık doldurmak için) gibi çok sayıda basamak gerektiği gibi yeni biçimlendirme algoritmaları oluşturur. Geliştirme örnek olarak; sonuçları büyük ikinin yazdırırken göz önünde bulundurun:
+   Eski biçimlendirme algoritmalar yalnızca sınırlı sayıda basamak oluşturur, ardından kalan ondalık basamak sıfır ile doldurmanız. Özgün kayan noktalı değeri gidiş dönüş geri misiniz dizeler genellikle oluşturabilir ancak tam değeri (veya yapanın en yakın ondalık gösterim) istediyseniz harika olmayan. Değeri temsil etmek için (veya belirtilen duyarlık doldurmak için) gibi çok sayıda basamak gerektiği gibi yeni biçimlendirme algoritmaları oluşturur. Geliştirme örnek olarak; sonuçları büyük ikinin yazdırırken göz önünde bulundurun:
 
     ```cpp
     printf("%.0f\n", pow(2.0, 80))
@@ -183,15 +181,15 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
     1208925819614629174706176
     ```
 
-   Eski ayrıştırma algoritmaları, Giriş dizesinin en çok 17 önemli rakamları dikkate alır ve kalan rakamları atar. Bu dize tarafından temsil edilen değeri çok yakın bir yaklaşığını oluşturmak yeterli ve genellikle çok yakın doğru yuvarlatılmış sonucu sonucudur. Yeni uygulama, tüm mevcut basamak göz önünde bulundurur ve doğru yuvarlak bir sonuç tüm girişlerin (uzunluğu en fazla 768 basamak). Ayrıca, bu işlevler, artık (fesetround denetlenebilir) yuvarlama modu uyar.  Bu potansiyel olarak yeni, bu işlevler, farklı sonuçlar çıkış çünkü davranışını değiştirin. Yeni sonucu her zaman daha fazla olan eski sonuçları daha doğru.
+   Eski ayrıştırma algoritmaları, Giriş dizesinin en çok 17 önemli rakamları dikkate alır ve kalan rakamları atar. Bu yaklaşım dizesi tarafından temsil edilen değeri Kapat bir yaklaşığını oluşturmak yeterli olur ve sonucu genellikle çok yakın doğru yuvarlatılmış sonuç olur. Yeni uygulama, tüm mevcut basamak göz önünde bulundurur ve doğru yuvarlak bir sonuç tüm girişlerin (uzunluğu en fazla 768 basamak). Ayrıca, bu işlevler, artık (fesetround denetlenebilir) yuvarlama modu uyar.  Bu işlevler, farklı sonuçlar çıkış olabilecek bir davranış değişiklik olmasıdır. Yeni sonucu her zaman daha fazla olan eski sonuçları daha doğru.
 
 - **Onaltılık ve sonsuzluk/NaN kayan nokta ayrıştırma**
 
-   Algoritmalar ayrıştırma kayan nokta artık ayrıştırma onaltılık kayan dizeleri (örneğin %a ve %A printf biçim belirticisi tarafından üretilen) ve tüm sonsuzluk ve NaN dizeleri tarafından oluşturulan işaret edeceği `printf` , yukarıda açıklanan şekilde çalışır.
+   Algoritmalar ayrıştırma kayan nokta artık ayrıştırma onaltılık kayan dizeleri (örneğin, %a ve %A printf biçim belirticisi tarafından üretilen olanlara) ve tüm sonsuzluk ve tarafından oluşturulan NaN dizeleri işaret edeceği `printf` , yukarıda açıklanan şekilde çalışır.
 
 - **%A ve %a sıfır doldurma**
 
-   %A ve bir onaltılık Mantis ve ikili nokta sayısı kayan %A biçim belirticileri biçimi. Önceki sürümlerde, `printf` işlevleri yanlış sıfır paneli dizeleri gerekir. Örneğin, `printf("%07.0a\n", 1.0)` nerede bunu yazdırılacağını 0x01p + 0 00x1p + 0, yazdırır. Bu düzeltilmiştir.
+   %A ve bir onaltılık Mantis ve ikili nokta sayısı kayan %A biçim belirticileri biçimi. Önceki sürümlerde, `printf` işlevleri yanlış sıfır paneli dizeleri gerekir. Örneğin, `printf("%07.0a\n", 1.0)` nerede bunu yazdırılacağını 0x01p + 0 00x1p + 0, yazdırır. Bu hata düzeltildi.
 
 - **%A ve %a duyarlık**
 
@@ -207,17 +205,17 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **Biçimlendirme üs**
 
-   %E ve nokta numarası bir ondalık Mantis ve üs olarak kayan %E biçim belirticileri biçimi. %G ve %G biçim belirticileri ayrıca bazı durumlarda bu formda sayıları biçimlendirmek. Önceki sürümlerde, CRT her zaman üç basamaklı üsler dizelerle oluşturur. Örneğin, `printf("%e\n", 1.0)` 1.000000e + 000 yazdırır. Bu, yanlış: C üs yalnızca bir veya iki basamak kullanarak gösterilebilir ise, ardından yalnızca iki basamağı yazdırılması olmasını gerektirir.
+   %E ve nokta numarası bir ondalık Mantis ve üs olarak kayan %E biçim belirticileri biçimi. %G ve %G biçim belirticileri ayrıca bazı durumlarda bu formda sayıları biçimlendirmek. Önceki sürümlerde, CRT her zaman üç basamaklı üsler dizelerle oluşturur. Örneğin, `printf("%e\n", 1.0)` yanlış olduğu 1.000000e + 000 yazdırır. C üs yalnızca bir veya iki basamak kullanarak gösterilebilir ise, ardından yalnızca iki basamağı yazdırılması olmasını gerektirir.
 
    Visual Studio 2005'te genel uyumluluğu anahtarı eklendi: [_set_output_format](../c-runtime-library/set-output-format.md). Bir program uyumlu üs yazdırmayı etkinleştirmek için bağımsız değişken _two_dıgıt_exponent ile bu işlevi çağırabilirsiniz. Standartlara uyan üs yazdırma modu için varsayılan davranışı değiştirildi.
 
 - **Biçim dizesi doğrulama**
 
-   Önceki sürümlerde printf ve scanf işlevleri sessizce bazen olağan dışı etkileri olan birçok geçersiz biçim dizesi kabul eder. Örneğin, % hlhlhld %d kabul edilir. Tüm geçersiz biçim dizeleri, artık geçersiz parametre olarak kabul edilir.
+   Önceki sürümlerde, `printf` ve `scanf` işlevler bazen olağan dışı etkileri olan birçok geçersiz biçim dizesi sessizce kabul. Örneğin, % hlhlhld %d kabul edilir. Tüm geçersiz biçim dizeleri, artık geçersiz parametre olarak kabul edilir.
 
 - **fopen modu dize doğrulama**
 
-   Önceki sürümlerde, işlevlerin fopen ailesi sessizce bazı geçersiz mod dizeleri (ör r + b +) kabul edildi. Geçersiz mod dizeleri artık algılandı ve geçersiz parametre olarak kabul edilir.
+   Önceki sürümlerde, `fopen` işlevler ailesini sessizce kabul bazı geçersiz mod dizeleri gibi `r+b+`. Geçersiz mod dizeleri artık algılandı ve geçersiz parametre olarak kabul edilir.
 
 - **_O_U8TEXT modu**
 
@@ -227,7 +225,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **snprintf ve vsnprintf**
 
-   [Snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) ve [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) işlevleri artık uygulanır. Eski kod genellikle tanımları makrosu bu işlevlerin sürümleri, CRT kitaplığı tarafından uygulanan değil, ancak bunlar artık daha yeni sürümlerde gereklidir çünkü sağlanır. Varsa [snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) veya [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) eklemeden önce bir makro tanımlanan \<stdio.h >, artık derleme makro tanımlandığı belirten bir hata ile başarısız olur.
+   [Snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) ve [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) işlevleri artık uygulanır. Eski kod genellikle tanımları makrosu bu işlevlerin sürümleri, CRT kitaplığı tarafından uygulanan değil, ancak daha yeni sürümlerde artık ihtiyaç duyulan sağlanır. Varsa [snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) veya [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) eklemeden önce bir makro tanımlanan \<stdio.h >, artık derleme makro tanımlandığı belirten bir hata ile başarısız olur.
 
    Normalde, bu sorun için düzeltme tüm bildirimleri silmektir `snprintf` veya `vsnprintf` kullanıcı kodunda.
 
@@ -237,7 +235,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **Dosya kapsülleme**
 
-   Önceki sürümlerde, dosya türü tamamen tanımlandığı \<stdio.h >, bir dosyaya erişmek ve kendi iç yapıları değiştirmek, kullanıcı kodu mümkündü. Stdio kitaplığı, uygulama ayrıntılarını gizlemek için değiştirildi. Bunun bir parçası olarak tanımlanan dosya \<stdio.h > şimdi donuk bir türdür ve üyelerini CRT dışında erişilemez.
+   Önceki sürümlerde, tam dosya türü genel içinde tanımlandı \<stdio.h >, bir dosyaya erişmek ve kendi iç yapıları değiştirmek, kullanıcı kodu mümkündü. Kitaplığı, uygulama ayrıntılarını gizlemek için değiştirildi. Bu değişikliğin bir parçası olarak, tanımlandığı dosya \<stdio.h > şimdi donuk bir türdür ve üyelerini CRT dışında erişilemez.
 
 - **_outp ve _inp**
 
@@ -247,11 +245,11 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **strtof ve wcstof**
 
-   `strtof` Ve `wcstof` işlevleri başarısız değeri gösterilebilir bir kayan noktalı olarak bulunmadığında errno ERANGE için ayarlanacak. Bu düzeltilmiştir. (Bu hata, bu iki işlev için; özel Not `strtod`, `wcstod`, `strtold`, ve `wcstold` işlevleri etkilenmez.) Yeni değişiklik bir çalışma zamanı budur.
+   `strtof` Ve `wcstof` işlevleri ayarlayamadı `errno` değeri gösterilebilir bir kayan noktalı olarak değildi, ERANGE için. Bu hata, bu iki işlev için belirli; `strtod`, `wcstod`, `strtold`, ve `wcstold` işlevleri etkilenmez. Bu sorun düzeltilmiştir ve çalışma zamanı bölünmesi farklıdır.
 
 - **Ayırma işlevleri**
 
-   Önceki sürümlerde, hizalanmış ayırma işlevleri (`_aligned_malloc`, `_aligned_offset_malloc`, vs.) sessiz bir hizalama 0 olan bir blok isteklerini kabul eder. İstenen hizalama ikinin hangi sıfıra eşit olmalıdır. Bu sabit ve istenen bir hizalama 0 artık geçersiz bir parametre kabul edilir. Yeni değişiklik bir çalışma zamanı budur.
+   Önceki sürümlerde, hizalanmış ayırma işlevleri (`_aligned_malloc`, `_aligned_offset_malloc`, vs.) sessiz bir hizalama 0 olan bir blok isteklerini kabul eder. İstenen hizalama ikinin, hangi sıfır true değil olmalıdır. İstenen bir hizalama 0 artık geçersiz bir parametre kabul edilir. Bu sorun düzeltilmiştir ve çalışma zamanı bölünmesi farklıdır.
 
 - **Yığın işlevleri**
 
@@ -259,7 +257,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **smallheap**
 
-   `smalheap` Bağlantı seçeneği kaldırılmıştır. Bkz: [bağlantı seçenekleri](../c-runtime-library/link-options.md).
+   `smallheap` Bağlantı seçeneği kaldırılmıştır. Bkz: [bağlantı seçenekleri](../c-runtime-library/link-options.md).
 
 #### <a name="stringh"></a>\<String.h >
 
@@ -285,27 +283,28 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
    Önceki sürümlerde, [_stat](../c-runtime-library/reference/stat-functions.md), [fstat](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md), ve [_utime](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) işlevleri işlemek gün ışığından yararlanma saatine yanlış. Gün ışığından yararlanma saat içinde değilmiş gibi Visual Studio 2013'ten önce bu işlevlerin tümü yanlış Standart Saati kez ayarlanmış.
 
-   Visual Studio 2013'te, sorun giderilmiştir **_stat** ailesi işlevleri, ancak benzer sorunlar **fstat** ve **_utime** işlev aileleri düzeltilemedi. Bu sorunların tutarsızlık nedeniyle işlevler arasında gerektiriyordu. **Fstat** ve **_utime** aileleri işlevlerin artık düzeltilmiştir bu işlevlerin tümü artık gün ışığından yararlanma saatine doğru ve tutarlı bir şekilde işlemek için.
+   Visual Studio 2013'te, sorun giderilmiştir **_stat** ailesi işlevleri, ancak benzer sorunlar **fstat** ve **_utime** işlev aileleri düzeltilemedi. Bu kısmi düzeltme işlevler arasında tutarsızlık nedeniyle sorunlara yol açmıştır. **Fstat** ve **_utime** aileleri işlevlerin artık düzeltilmiştir bu işlevlerin tümü artık gün ışığından yararlanma saatine doğru ve tutarlı bir şekilde işlemek için.
 
 - **asctime**
 
-   Önceki sürümlerde, [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi paneli tek basamaklı gün önünde sıfır ile örneğin: Cum Haz 06 08:00:00 2014. Böyle gün önde gelen bir boşluk ile örn Haz Cuma 6 azsa gerektiğini belirtilmesini gerektiriyor 08:00:00 2014. Bu düzeltilmiştir.
+   Önceki sürümlerde, [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi paneli tek basamaklı gün önünde sıfır ile örneğin: `Fri Jun 06 08:00:00 2014`. Gibi böyle gün önünde bir boşluk ile sıfır belirtilmesini gerektiriyor `Fri Jun  6 08:00:00 2014`. Bu sorun düzeltilmiştir.
 
 - **strftime ve wcsftime**
 
    `strftime` Ve `wcsftime` işlevleri artık %C desteği, %D, %e, %F, g %, %G, %s, %n, %r, %R, %t, %T, %u ve %V biçim belirleyiciler. Ayrıca, E ve O değiştiriciler yoksayıldı ancak bu ayrıştırılır.
 
-   %C biçim belirticisi, geçerli yerel ayarı için bir "uygun tarih ve Saat Gösterimi" üretme olarak belirtilir. C yerel ayarında, bu gösterim %a %b %e %Y %T ile aynı olması gerekir. Bu aynı asctime tarafından oluşturulduğundan biçimidir. Önceki sürümlerde, DD/MM/YY ss gösterimi kullanarak %c biçim tanımlayıcısı yanlış biçimlendirilmiş. Bu düzeltilmiştir.
+   %C biçim belirticisi, geçerli yerel ayarı için bir "uygun tarih ve Saat Gösterimi" üretme olarak belirtilir. C yerel ayarda aynı olması için bu gösterim gereklidir `%a %b %e %T %Y`, aynı form tarafından oluşturulduğundan `asctime`. Önceki sürümlerde, %c biçim tanımlayıcısı yanlış biçimlendirilmiş kullanarak bir `MM/DD/YY HH:MM:SS` gösterimi. Bu sorun düzeltilmiştir.
 
 - **timespec ve TIME_UTC**
 
-   \<TIME.h > Üstbilgi artık tanımlar `timespec` türü ve `timespec_get` işlevden C11 standart. Ayrıca, ile kullanılmak üzere TIME_UTC makrosu `timespec_get` işlev, artık tanımlanır. Çakışan bir tanım aşağıdakilerden herhangi biri için olan kod için bir değişiklik budur.
+   \<TIME.h > Üstbilgi artık tanımlar `timespec` türü ve `timespec_get` işlevden C11 standart. Ayrıca, ile kullanılmak üzere TIME_UTC makrosu `timespec_get` işlev, artık tanımlanır. Bu güncelleştirmenin herhangi birinin Bu tanımlayıcılar çakışan bir tanıma sahip kod için bölünmesi farklıdır.
 
 - **CLOCKS_PER_SEC**
 
    CLOCKS_PER_SEC makrosu artık türü bir tam sayıya genişletilir `clock_t`gerektirdiği gibi C dili tarafından.
 
 ####  <a name="BK_STL"></a> C++ Standart Kitaplığı
+
 Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++ Standart Kitaplığı'nın Visual Studio uygulaması bir sürümden sonraki bir sürüme ikili uyumluluğu kasıtlı olarak bozar. Bu nedenle, C++ Standart Kitaplığı kullanıldığında, farklı sürümlerin kullanımıyla derlenmiş nesne dosyaları ve statik kitaplıklar tek bir ikili dosya (EXE veya DLL) halinde karma yapılabilir ve C++ Standart Kitaplığı nesneleri, farklı sürümler kullanılarak derlenmiş ikili dosyalar arasında geçirilemez. Bu tür karmalar, _MSC_VER uyuşmazlıklarıyla ilgili bağlayıcı hataları verir. (_MSC_VER, derleyicinin ana sürümünü içeren makrodur olan — Örneğin, Visual Studio 2013 için 1800.) Bu denetim DLL karmasını algılayamaz ve Visual Studio 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
 
 - **C++ Standart Kitaplığı dosyaları Ekle**
@@ -314,17 +313,17 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **steady_clock**
 
-   \<Chrono > uygulaması [steady_clock](../standard-library/steady-clock-struct.md) steadiness ve monotonicity C++ Standart gereksinimlerini karşılayacak şekilde değişti. `steady_clock` artık üzerinde temel [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Visual Studio'da `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak bu zorunlu diğer uygulamaları için geçerli değildir.
+   \<Chrono > uygulaması [steady_clock](../standard-library/steady-clock-struct.md) steadiness ve monotonicity C++ Standart gereksinimlerini karşılayacak şekilde değişti. `steady_clock` artık üzerinde temel [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Visual Studio'da `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak, bu durum diğer uygulamaları için mutlaka geçerli değildir.
 
 - **ayırıcılar ve const**
 
-   Artık ayırıcı eşitlik/eşitsizlik karşılaştırma her iki tarafında const bağımsız değişken kabul etmeleri zorunlu kılarız.  Ayırıcılar, bu işleçler gibi tanımlarsanız:
+   Artık ayırıcı eşitlik/eşitsizlik karşılaştırma her iki tarafında const bağımsız değişken kabul etmeleri zorunlu kılarız. Bu gibi bu işleçler, ayırıcılar tanımlarsanız,
 
     ```cpp
     bool operator==(const MyAlloc& other)
     ```
 
-   Bunlar bunları const üye olarak bildirmek için güncelleştirmeniz gerekir.
+   Daha sonra bunları güncelleştirin ve bunları const üye olarak bildirmek:
 
     ```cpp
     bool operator==(const MyAlloc& other) const
@@ -336,11 +335,11 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **std::allocator::deallocate**
 
-   Visual Studio 2013 ve önceki sürümlerinde, `std::allocator::deallocate(p, n)` geçirilen bağımsız değişken yok sayıldı *n*.  C++ Standart her zaman zorunlu *n* çağırmayı ilk bağımsız değişkeni ayırmak gibi döndürülen geçirilen değere eşit olması *p*. Ancak, geçerli sürümde, değerini *n* Denetlenmekte. Bağımsız değişkenler için geçen kod *n* ne standart çalışma zamanında kilitlenebilir gerektirir öğesinden farklı.
+   Visual Studio 2013 ve önceki sürümlerinde, `std::allocator::deallocate(p, n)` geçirilen bağımsız değişken yok sayıldı *n*.  C++ Standart her zaman zorunlu *n* çalıştırılışı için ilk bağımsız değişken olarak geçirilen değere eşit olmalıdır `allocate` verilmesi *p*. Ancak, geçerli sürümde, değerini *n* Denetlenmekte. Bağımsız değişkenler için geçen kod *n* ne standart çalışma zamanında kilitlenebilir gerektirir öğesinden farklı.
 
 - **hash_map ve hash_set**
 
-   Standart üst bilgi dosyaları hash_map hash_set Visual Studio 2015'te kullanım dışıdır ve gelecek sürümde kaldırılacak. Unordered_map ve unordered_set kullanın.
+   Standart üst bilgi dosyaları \<hash_map > ve \<hash_set > Visual Studio 2015'te kullanım dışıdır ve gelecek sürümde kaldırılacak. Kullanım \<unordered_map > ve \<unordered_set > bunun yerine.
 
 - **karşılaştırıcıların ve operator()**
 
@@ -391,7 +390,7 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 - **Microsoft Foundation Sınıfları (MFC)**
 
-   Artık Visual Studio'nun "Tipik" bir yüklemede nedeniyle büyük boyutuna dahildir. MFC yüklemek için seçin **özel** seçeneği Visual Studio 2015 kurulumunda yüklediniz. Visual Studio 2015'i zaten varsa, MFC yeniden çalıştırarak yükleyebilirsiniz **Visual Studio** seçerek, Kurulum **özel** seçeneğini yüklemek ve seçerek **Microsoft Foundation Sınıflar**. Yeniden çalıştırabileceğiniz **Visual Studio** Kurulumu'nu **Denetim Masası**, **programlar ve Özellikler**, veya yükleme medyasından.
+   Artık Visual Studio'nun "Tipik" bir yüklemede nedeniyle büyük boyutuna dahildir. MFC yüklemek için seçin **özel** seçeneği Visual Studio 2015 kurulumunda yüklediniz. Visual Studio 2015'i zaten varsa, MFC çalıştırarak yükleyebilirsiniz **Visual Studio** Kurulum'u yeniden çalıştırın. Seçin **özel** seçeneği yükleyin ve ardından **Microsoft Foundation sınıfları**. Çalıştırabileceğiniz **Visual Studio** Kurulumu'nu **Denetim Masası** denetimi **programlar ve Özellikler**, veya yükleme medyasından.
 
    Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.
 
@@ -409,11 +408,11 @@ Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++
 
 Kod, önceki sürümlerinden yükselttiğinizde, Visual Studio 2015'te yapılan uyumluluk geliştirmeleri nedeniyle derleyici hataları da karşılaşabilirsiniz. Bu geliştirmeler, Visual Studio'nun önceki sürümlerinden ikili uyumluluğu bölmediğinizden, ancak burada Hiçbiri önce yayılan derleyici hataları oluşturabilir. Daha fazla bilgi için [Visual C++ neler yeni 2003 ile 2015 arasındaki](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
-Visual Studio 2015'te nasıl derleyici mevcut kaynak kodunuzu anlar derleyici uyumluluğu yapılan sürekli geliştirmeler bazen değiştirebilirsiniz. Bu durumda, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hata karşılaşabilirsiniz.
+Visual Studio 2015'te nasıl derleyici mevcut kaynak kodunuzu anlar derleyici uyumluluğu yapılan sürekli geliştirmeler bazen değiştirebilirsiniz. Sonuç olarak, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hatalarla karşılaşabilirsiniz.
 
-Neyse ki, bu farklılıkları çok az kayıpla veya hiç kaynak kodunuzun çoğunu etkisi ve bu farklar ele almak için kaynak kodu veya başka değişiklikler gerektiğinde, düzeltmeleri genellikle küçük ve rahatça. Daha önce kabul edilebilir kaynak kodunun değiştirilmesi gerekebilir birçok örnekler ekledik *(önce)* ve bunları düzeltmeye yönelik düzeltmeler *(sonra)*.
+Neyse ki, bu farklılıkları, kaynak kodunuzu çoğunu üzerinde çok az kayıpla veya hiç etkisi olur. Bu farklar ele almak için kaynak kodu veya başka değişiklikler gerektiğinde, düzeltmeler küçük ve rahatça olma eğilimindedir. Daha önce kabul edilebilir kaynak kodunun değiştirilmesi gerekebilir birçok örnekler ekledik *(önce)* ve bunları düzeltmeye yönelik düzeltmeler *(sonra)*.
 
-Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir olsa da, bunların güncelleştirmelerini Visual Studio sürümleri arasında ikili uyumluluğu etkilemez. Değişiklik, daha ciddi bir tür *değişiklik* ikili uyumluluğu etkileyebilir, ancak ikili uyumluluğu sonları bu tür yalnızca temel Visual Studio sürümleri arasında oluşur. Örneğin, Visual Studio 2013 ve Visual Studio 2015 arasında. Visual Studio 2015 ve Visual Studio 2013 arasında gerçekleşen bozucu değişiklikler hakkında daha fazla bilgi için bkz: [Visual Studio 2015 uyumluluk değişiklikleri](#VC_2015).
+Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir olsa da, bunların güncelleştirmelerini Visual Studio sürümleri arasında ikili uyumluluğu etkilemez. A *değişiklik* daha ciddi ve ikili uyumluluk, ancak bu tür yalnızca sonlarının Visual Studio sürümleri gibi önemli arasında Visual Studio 2013 ve Visual Studio arasında ikili uyumluluğu etkileyebilir 2015. Visual Studio 2015 ve Visual Studio 2013 arasında gerçekleşen bozucu değişiklikler hakkında daha fazla bilgi için bkz: [Visual Studio 2015 uyumluluk değişiklikleri](#VC_2015).
 
 - [Visual Studio 2015'te uyumluluk geliştirmeleri](#VS_RTM)
 
@@ -433,7 +432,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     Command line warning  D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
     ```
 
-   Seçeneği, genellikle, standardına göre kapsam dışına sahiplikten noktadan sonra değişkenleri kullanır döngü standart olmayan koda izin ver için kullanıldı. İle derlerken yalnızca gerekli `/Za` beri seçeneği olmadan `/Za`kullanarak bir döngünün sonunu her zaman izin verilir sonra Döngü değişkeninin. (Örneğin, kodunuz için taşınabilir diğer derleyicileri için tasarlanmamıştır) standartları uyumluluğu hakkında İlgilenmiyor, devre dışı `/Za` seçeneği (veya **dil uzantılarını devre dışı** özelliğini **yok** ). Taşınabilir, standartlara uyumlu kod yazma hakkında dikkatli olun, böylece bir noktaya döngü dışında bir tür değişken bildirimi taşıyarak standardına uygun kodunuzu yeniden yazmalıdır.
+   Genellikle, bu seçenek, standardına göre kapsam dışına sahiplikten noktadan sonra değişkenleri kullanır döngü standart olmayan koda izin ver için kullanıldı. İle derlendiğinde yalnızca gerekli `/Za` beri seçeneği olmadan `/Za`, kullanım bir döngünün sonunu her zaman izin verilir sonra Döngü değişkeninin. (Örneğin, kodunuz için taşınabilir diğer derleyicileri için tasarlanmamıştır) standartları uyumluluğu hakkında İlgilenmiyor, devre dışı `/Za` seçeneği (veya **dil uzantılarını devre dışı** özelliğini **yok** ). Taşınabilir, standartlara uyumlu kod yazma hakkında dikkatli olun, böylece bir noktaya döngü dışında bir tür değişken bildirimi taşıyarak standardına uygun kodunuzu yeniden yazmalıdır.
 
     ```cpp
     // C2065 expected
@@ -449,7 +448,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    `/Zg` Derleyici seçeneği (işlev prototipleri oluşturma) kullanılabilir artık. Bu derleyici seçeneği önceden kullanım dışı bırakıldı.
 
-- Artık birim testleri C + ile çalıştırabileceğiniz +/ CLI ile mstest.exe komut satırı üzerinden. Bunun yerine, vstest.console.exe kullanın. Bkz: [VSTest.Console.exe komut satırı seçenekleri](/devops-test-docs/test/vstest-console-exe-command-line-options).
+- Artık birim testleri C + ile çalıştırabileceğiniz +/ CLI komut satırından mstest.exe. Bunun yerine, vstest.console.exe kullanın. Bkz: [VSTest.Console.exe komut satırı seçenekleri](/devops-test-docs/test/vstest-console-exe-command-line-options).
 
 - **mutable anahtar sözcüğü**
 
@@ -470,7 +469,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     error C2071: 'S::r': illegal storage class
     ```
 
-   Hatayı düzeltmek için yedekli kaldırmanız **değişebilir** anahtar sözcüğü.
+   Hatayı düzeltmek için yedekli kaldırmak **değişebilir** anahtar sözcüğü.
 
 - **char_16_t ve char32_t**
 
@@ -526,17 +525,17 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **__declspec(align)**
 
-   Derleyici artık kabul `__declspec(align)` işlevleri. Bu her zaman yoksayıldı, ancak artık, bir derleyici hatası oluşturur.
+   Derleyici artık kabul `__declspec(align)` işlevleri. Bu yapıyı her zaman yoksayıldı, ancak artık, bir derleyici hatası oluşturur.
 
     ```cpp
     error C3323: 'alignas' and '__declspec(align)' are not allowed on function declarations
     ```
 
-   Bu sorunu gidermek için kaldırın `__declspec(align)` gelen işlev bildirimi. Etkiye sahip olduğundan, kaldırarak her şeyi değiştirmez.
+   Bu sorunu gidermek için kaldırın `__declspec(align)` gelen işlev bildirimi. Etkiye sahip olduğundan, kaldırarak herhangi bir değişiklik yapmaz.
 
 - **Özel durum işleme**
 
-   Birkaç özel durum işleme için değişiklik vardır. İlk olarak, özel durum nesneleri kopyalanabilir ya da taşınabilir olması gerekir. Aşağıdaki kod, Visual Studio 2013'te derlenmiş, ancak Visual Studio 2015'te derleme yapmaz:
+   Birkaç özel durum işleme için değişiklik vardır. İlk olarak, özel durum nesneleri kopyalanabilir ya da taşınabilir olması gerekir. Aşağıdaki kod, Visual Studio 2013'te derlenmiş, ancak Visual Studio 2015'te derlemek değil:
 
     ```cpp
     struct S
@@ -570,7 +569,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Kodunuzu güncelleştirmek için özel durum nesnesi için kopya Oluşturucu olduğundan emin olun **genel** ve işaretlenmemiş **açık**.
 
-   Değere göre bir özel durum yakalama, özel durum nesnesi kopyalanabilir olmasını gerektirir. Aşağıdaki kod, Visual Studio 2013'te derlenmiş, ancak Visual Studio 2015'te derleme yapmaz:
+   Değere göre bir özel durum yakalama, özel durum nesnesi kopyalanabilir olmasını gerektirir. Aşağıdaki kod, Visual Studio 2013'te derlenmiş, ancak Visual Studio 2015'te derlemek değil:
 
     ```cpp
     struct B
@@ -618,7 +617,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Derleyici bunun bir dize olarak değişmez değer olarak "hello"var"genişletilir, bir makro tarafından izlenen" yorumlanan ve ardından iki dize değişmez değerleri birine art arda eklenmiş. Visual Studio 2015'te derleyici kullanıcı tanımlı değişmez değer olarak, bu yorumlar, ancak tanımlı hiçbir eşleşen kullanıcı tanımlı değişmez değer _x olduğundan, bir hata verir.
+   Derleyici bu kod bir dize sabit değeri "hello" ve ardından "burada" genişletilir, bir makro tarafından yorumlanan ve ardından iki dize değişmez değerleri birine art arda eklenmiş. Visual Studio 2015'te derleyici, bir kullanıcı tanımlı sabit değer olarak, ancak hiçbir eşleşen kullanıcı tanımlı sabit olduğundan bu dizisi yorumlar `_x` tanımlanan, bir hata verir.
 
     ```Output
     error C3688: invalid literal suffix '_x'; literal operator or literal operator template 'operator ""_x' not found
@@ -635,7 +634,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     char * str = "abc""def";
     ```
 
-   İki dizenin aralığındaki bir alan eklemeniz yeterlidir.
+   Bu sorunu çözmek için iki dizeyi arasında bir boşluk ekleyin:
 
     ```cpp
     char * str = "abc" "def";
@@ -654,7 +653,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     void operator delete(void*, std::size_t) noexcept;
     ```
 
-   Sorun, işlev imzaları arasında değiştirme dizininde eşleşmenin nedeniyle oluşur. bir **yerleştirme silme** tanımladığınız işleci ve yeni genel boyutta **Sil** işleci. Farklı bir tür dışında kullanıp kullanmayacağınızı düşünmeniz `size_t` herhangi **yerleştirme yeni** ve **Sil** işleçleri.  Unutmayın türü `size_t` **typedef** derleyici bağımlıdır; bu bir **typedef** için **işaretsiz int** MSVC içinde. Bunun gibi bir listeden seçimli türü kullanmak iyi bir çözümdür:
+   Sorun, işlev imzaları arasında değiştirme dizininde eşleşmenin nedeniyle oluşur. bir **yerleştirme silme** tanımladığınız işleci ve yeni genel boyutta **Sil** işleci. Farklı bir tür dışında kullanıp kullanmayacağınızı düşünmeniz `size_t` herhangi **yerleştirme yeni** ve **Sil** işleçleri. Türünü `size_t` **typedef** derleyici bağımlıdır; bu bir **typedef** için **işaretsiz int** MSVC içinde. Bunun gibi bir listeden seçimli türü kullanmak iyi bir çözümdür:
 
     ```cpp
     enum class my_type : size_t {};
@@ -694,7 +693,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Bu sorunu gidermek için başvuru türleri bir işaretçi veya bir değeri değiştirin. Bir işaretçi türü değiştirme birlik alanı kullanan kod değişiklikleri gerektirir. Kod bir değerle değiştirmeyi birleşim türleri alanları aynı bellek paylaşmak için bu durum diğer alanları etkiler birleşimde depolanan verileri değiştirin. Değer boyutuna bağlı olarak, bu Birleşimdeki boyutu değişebilir.
 
-- Anonim birleşimler, standart için daha fazla uyumluluğunu sunulmuştur. Önceki derleyici sürümleri, bir açık oluşturucu ve yıkıcı anonim birleşimler için oluşturulur. Bu, Visual Studio 2015'te silinir.
+- Anonim birleşimler, standart için daha fazla uyumluluğunu sunulmuştur. Önceki derleyici sürümleri, bir açık oluşturucu ve yıkıcı anonim birleşimler için oluşturulur. Bu derleyici tarafından oluşturulan İşlevler, Visual Studio 2015'te silinir.
 
     ```cpp
     struct S
@@ -738,7 +737,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Anonim yapılar ile birleşimler**
 
-   Standart uymak için anonim yapılar Birleşimlerdeki üye için çalışma zamanı davranışı değişti. Böyle bir birleşim oluşturulduğunda bir birleşim içindeki anonim Yapı üyeleri Oluşturucusu artık örtük olarak çağrılır. Ayrıca, bir birleşim içindeki anonim Yapı üyeleri için yok edici birleşim kapsam dışına çıktığında, artık örtük olarak çağrılır. Aşağıdaki kod, bir birleşim U bir yok Edicisi olan bir adlandırılmış yapısı S olan bir üyeyi içeren anonim bir yapı içeren göz önünde bulundurun.
+   Standart uymak için anonim yapılar Birleşimlerdeki üye için çalışma zamanı davranışı değişti. Böyle bir birleşim oluşturulduğunda bir birleşim içindeki anonim Yapı üyeleri Oluşturucusu artık örtük olarak çağrılır. Ayrıca, bir birleşim içindeki anonim Yapı üyeleri için yok edici birleşim kapsam dışına çıktığında, artık örtük olarak çağrılır. Aşağıdaki kod, bir birleşim U bir yok Edicisi olan bir adlandırılmış üyesinin yapısının S anonim bir yapı içeren göz önünde bulundurun.
 
     ```cpp
     #include <stdio.h>
@@ -773,7 +772,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Birleşim oluşturulur ve işlev f için yığın temizlendiği S yok Edicisi çağrılır Visual Studio 2013'te S için oluşturucu çağrılır. Ancak Visual Studio 2015'te oluşturucu ve yıkıcı değil çağrılır. Derleyici, bu davranış değişikliği hakkında bir uyarı verir.
+   Birleşim oluşturulur ve işlev f için yığın temizlendiği S yok Edicisi çağrılır Visual Studio 2013'te S için oluşturucu çağrılır. Ancak, Visual Studio 2015'te, oluşturucu ve yıkıcı çağrılır değil. Derleyici, bu davranış değişikliği hakkında bir uyarı verir.
 
     ```Output
     warning C4587: 'U::s': behavior change: constructor is no longer implicitly calledwarning C4588: 'U::s': behavior change: destructor is no longer implicitly called
@@ -853,7 +852,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Şablonu çözünürlüğü**
 
-   Şablonlar için ad çözümlemesi için değişiklikler yapıldı. Bir ad çözümlemesi için aday değerlendirirken C++'da, bu durum dikkate alınarak olası eşleşme olarak bir veya daha fazla adları geçersiz şablon örneklemesi oluşturur olabilir. Bu geçersiz örneklemeleri normalde SFINAE (değiştirme hatası olduğundan olmayan bir hata) bilinen bir ilkeye derleyici hataları neden olmaz.
+   Şablonlar için ad çözümlemesi için değişiklikler yapıldı. Bir ad çözümlemesi için aday değerlendirirken C++'da, bu durum dikkate alınarak olası eşleşme olarak bir veya daha fazla adları geçersiz şablon örneklemesi oluşturur olabilir. Bu geçersiz örneklemeleri normalde derleyici hataları SFINAE (değiştirme hatası olduğundan olmayan bir hata) bilinen bir ilkeye neden olmaz.
 
    Artık, bir sınıf şablonunun alt uzmanlaşması örneği oluşturmak için derleyicinin SFINAE gerektirir, bu işlem sırasında oluşan hataları derleyici hataları demektir. Önceki sürümlerde, derleyici bu tür hataları yoksayma. Örneğin, aşağıdaki kodu düşünün:
 
@@ -907,7 +906,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     ]
     ```
 
-   Bunun nedeni, ilk çağrısıysa is_base_of sınıfı noktasında `D` henüz tanımlanmadı.
+   Bunun nedeni, ilk çağrısıysa is_base_of sınıfı noktasında `D` henüz tanımlamamış.
 
    Bu durumda, sınıfın tanımlı kadar bu tür nitelikler kullanmayacak şekilde açıklanmıştır. Tanımlarını taşırsanız `B` ve `D` kod dosyasının başına hata çözümlenir. Tanımları üstbilgi dosyalarında, sorunlu şablonları kullanılmadan önce herhangi bir sınıf tanımı derlenir emin olmak üst bilgi dosyaları dahil etme deyimlerini sırasını denetleyin.
 
@@ -989,7 +988,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     //other partial specializations here
     ```
 
-   Bu sorunu çözmek için değer kaydırma bir **yapı**:
+   Bu sorunu çözmek için değeri kaydırma bir **yapı**:
 
     ```cpp
     template <size_t some_value>
@@ -1018,7 +1017,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     typedef int(*PFNTERM)(PTOKEN, BOOL, INT); // C2065: 'PTOKEN' : undeclared identifier
     ```
 
-   Sorunu gidermek için uygun iletme bildirimleri ekleyin:
+   Bu sorunu gidermek için uygun iletme bildirimleri ekleyin:
 
     ```cpp
     struct token_s;
@@ -1120,7 +1119,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Hatayı düzeltmek için işlevi parametre türüne değiştirme `const void*`, veya başka gövdesini değiştirin `h` şuna benzeyecektir:
+   Hatayı düzeltmek için işlevi parametre türüne değiştirme `const void*`, veya başka gövdesini değiştirin `h` şu örnekteki gibi aramak için:
 
     ```cpp
     void h(void)
@@ -1149,13 +1148,13 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Hatayı düzeltmek için kodu değiştirin:
+   Hatayı düzeltmek için bir alan eklemek için kodu değiştirin:
 
     ```cpp
     #define MACRO
 
     // Remove ##. Strings are automatically
-    // concatenated so they are not needed
+    // concatenated so they aren't needed
     #define STRCAT(x, y) x y
 
     int main(){
@@ -1167,7 +1166,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Yukarıdaki örnekte `MACRO` artık iki belirteçleri (makro tarafından izlenen bir dize) olarak ayrıştırılır.  Artık, tek bir belirteç UDL ayrıştırılır.  Aynı daha önce L ' ayrıştırıldı L "" L"" geçerlidir"" ve L "" ve artık L ayrıştırılır "" L ve "".
+   Yukarıdaki örnekte `MACRO` artık iki belirteçleri (makro tarafından izlenen bir dize) olarak ayrıştırılır. Artık, tek bir belirteç UDL ayrıştırılır. Aynı daha önce L ' ayrıştırıldı L "" L"" geçerlidir"" ve L "" ve artık L ayrıştırılır "" L ve "".
 
    Dize birleştirme kurallarını da uyumlu anlamına gelir L "a", "b", "ab" L için eşdeğer standart hale getirilmiştir. Visual Studio'nun önceki sürümlerinde, farklı karakter genişliği ile dize birleştirme kabul etmedi.
 
@@ -1181,7 +1180,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Hatayı düzeltmek için kodu değiştirin:
+   Hatayı düzeltmek için null açık hale getirmek için kodu değiştirin:
 
     ```cpp
     bool check(wchar_t c){
@@ -1189,7 +1188,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-- **Kopyalanabilir olmadıklarından MFC özel durumları değere göre yakalanamaz**
+- **Kopyalanabilir olmadığından MFC özel durumları değere göre yakalanamaz**
 
    Aşağıdaki kodda bir MFC uygulaması artık hatası C2316 neden olur: 'D ': yok edici ve/veya kopya oluşturucusu, erişilemez veya silinmiş olarak yakalanamıyor
 
@@ -1219,7 +1218,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **alignof artık bir anahtar sözcüktür**
 
-   Aşağıdaki kod hatası C2332 artık oluşturur: 'class': Etiket adı eksik. Kodu düzeltmek için sınıfı yeniden adlandırmak veya gerekir, yalnızca sınıf olarak alignof, aynı iş gerçekleştiriyorsa sınıfı new anahtar sözcüğü ile değiştirin.
+   Aşağıdaki kod hatası C2332 artık oluşturur: 'class': Etiket adı eksik. Kodu düzeltmek için sınıfı yeniden adlandırmanız gerekir veya sınıf olarak aynı iş gerçekleştiriyorsa **alignof**, yalnızca sınıf new anahtar sözcüğü ile değiştirin.
 
     ```cpp
     class alignof{}
@@ -1396,7 +1395,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Hatayı düzeltmek için çağrılacak varsayılan oluşturucu gereksinimini kaldırın. Ardından lambda herhangi bir şey yakalamaz, işlev işaretçisi dönüştürülebilen.
+   Hatayı düzeltmek için çağrılacak varsayılan oluşturucu gereksinimini kaldırın. Lambda, herhangi bir şey yakalamaz, ardından, bir işlev işaretçisine başvurusuna yayınlanabilir.
 
 - **Silinen atama işleci ile lambda ifadeleri**
 
@@ -1530,7 +1529,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
     ```
 
-   Sorunu gidermek için en üst satırına değiştirin `#define A();`
+   Sorunu gidermek için en üst satırına değiştirin. `#define A();`
 
    Aşağıdaki kod hatası C2059 oluşturur: söz dizimi hatası: ')'
 
@@ -1543,7 +1542,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
     ```
 
-   Kod Kaldır arasındaki boşluk düzeltmek için bir ve ().
+   Bu kodu düzeltmek için arasındaki boşluğu kaldırma A ve ().
 
    Aşağıdaki kod hatası C2091 oluşturur: işlev işlevi döndürür:
 
@@ -1584,7 +1583,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
     ```
 
-   Hatayı düzeltmek için kaldırma gelen parens `j`. Varsa parens daha anlaşılır olması için gerekli olan, ardından kullanmak bir **typedef**.
+   Hatayı düzeltmek için etrafındaki parantezleri kaldırın `j`. Parantezler açıklık için gerekirse, ardından kullanmak bir **typedef**.
 
 - **Derleyici tarafından oluşturulan oluşturucular ve __declspec(novtable)**
 
@@ -1635,9 +1634,9 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     static_assert(std::is_convertible<D*, B2*>::value, "fail");
     ```
 
-- **declspec(novtable) bildirimleri tutarlı olmalıdır.**
+- **__declspec(novtable) bildirimleri tutarlı olmalıdır.**
 
-   **declspec** bildirimleri tutarlı olmalıdır tüm kitaplıkları. Aşağıdaki kod, artık bir tek Tanım Kuralı (ODR) ihlaline neden olur:
+   `__declspec` bildirimleri tüm kitaplıkları arasında tutarlı olması gerekir. Aşağıdaki kod, artık bir tek Tanım Kuralı (ODR) ihlaline neden olur:
 
     ```cpp
     //a.cpp
@@ -1703,7 +1702,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Özel sanal temel sınıflar ve dolaylı devralma**
 
-   Önceki derleyici sürümleri izin türetilmiş bir sınıf üyesi işlevleri çağırmak kendi *dolaylı olarak türetilmiş* `private virtual` temel sınıflar. Bu eski davranışı yanlış ve C++ standartlarına uygun değil. Derleyici artık bu şekilde yazılmış kod kabul eder ve sonuç olarak derleyici hatası C2280 sorunlar.
+   Derleyicinin önceki sürümlerinde bir türetilmiş sınıf üye işlevleri kendi dolaylı olarak türetilmiş çağırmak izin `private virtual` temel sınıflar. Bu eski davranışı yanlış ve C++ standartlarına uygun değil. Derleyici artık bu şekilde yazılmış kod kabul eder ve sonuç olarak derleyici hatası C2280 verir.
 
     ```Output
     error C2280: 'void *S3::__delDtor(unsigned int)': attempting to reference a deleted function
@@ -1809,7 +1808,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Ayrıntılandırılmış tür tanımlayıcıları, yedekli typename**
 
-   İzin verilen Derleyici önceki sürümlerini **typename** ayrıntılandırılmış tür tanımlayıcıları; bu şekilde yazılmış kod anlamsal olarak yanlıştır. Derleyici artık bu şekilde yazılmış kod kabul eder ve bunun yerine derleyici hatası C3406 sorunlar.
+   İzin verilen Derleyici önceki sürümlerini **typename** içinde ayrıntılı bir tür tanımlayıcısı, ancak bu şekilde yazılmış kod anlamsal olarak yanlış. Derleyici artık bu şekilde yazılmış kod kabul eder ve bunun yerine derleyici hatası C3406 sorunlar.
 
     ```Output
     error C3406: 'typename' cannot be used in an elaborated type specifier
@@ -1872,7 +1871,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   Bu yeni davranış geçmiş aday daha iyi bir eşleşme arama için yeni aday, kesin bir şekilde çözümler olan ek bir aday dikkate alınması gereken aşırı yükleme çözünürlüğü neden olduğunda, programın davranışını bir değişiklik neden büyük olasılıkla farklıdır Programcı yöneliktir.
+   Bu yeni davranış geçmiş aday daha iyi bir eşleşme olan ek bir aday dikkate alınması gereken aşırı yükleme çözünürlüğü neden olduğunda, çağrı dönüştürmelerle büyük olasılıkla farklı program davranışında değişiklik neden yeni bir aday çözümler Programcı yöneliktir.
 
    Örnek 2: (önce) aşırı yükleme çözünürlüğü Değiştir
 
@@ -1917,7 +1916,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Switch deyimi uyarıların geri yükleme**
 
-   Derleyicinin önceki bir sürümünü önceden varolan uyarıları ilgili kaldırıldı **geçiş** deyimleri; bunlar uyarı şimdi geri yüklendi. Derleyici artık geri yüklenen uyarı verir ve belirli durumlarda (varsayılan durumda dahil) için ilgili uyarıların artık sorunlu durum içeren satırı yerine switch ifadesinin Son satırda verilir. Sonuç olarak bu uyarılar farklı satırlara geçmişte artık verme, uyarıları önceden gizlenen kullanarak `#pragma warning(disable:####)` artık beklendiği gibi bastırılabilir. Beklendiği gibi bu uyarıları bastırmak için taşımak gerekli olabilir `#pragma warning(disable:####)` ilk harfi büyük olasılıkla sorunlu üzerine bir satır için yönerge. Geri yüklenen uyarılar verilmiştir.
+   Önceki bir derleyici sürümü ile ilgili bazı uyarılar oluştu kaldırıldı **geçiş** deyimleri; bunlar uyarı şimdi geri yüklendi. Derleyici artık geri yüklenen uyarı verir ve belirli durumlarda (varsayılan durumda dahil) için ilgili uyarıların artık sorunlu durum içeren satırı yerine switch ifadesinin Son satırda verilir. Sonuç olarak bu uyarılar farklı satırlara geçmişte artık verme, uyarıları önceden gizlenen kullanarak `#pragma warning(disable:####)` artık beklendiği gibi bastırılabilir. Beklendiği gibi bu uyarıları bastırmak için taşımak gerekli olabilir `#pragma warning(disable:####)` ilk sorunlu durum üzerine bir satır için yönerge. Geri yüklenen uyarıları şunlardır:
 
     ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels
@@ -2031,7 +2030,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     #include "C4426.h"  // add absolute path to 'headers\' to your project's include directories
     ```
 
-   Derleyici belirli tanılama sağlamazsa ancak Ayrıca, ayrıca, üst dizini belirticisi öneririz "..." Not proje ekleme dizinleri belirtmek için kullanılmalıdır.
+   Derleyici belirli tanılama getirmezse olsa da, ayrıca, aynı zamanda üst dizini belirticisi öneririz "..." proje ekleme dizinleri belirtmek için kullanılmamalıdır.
 
 - **#pragma optimize() genişletir üstbilgi dosya sonunun** (yalnızca etkiler `/Wall` `/WX`)
 
@@ -2163,7 +2162,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Geliştirilmiş #pragma uyarı durumu izleme sonucunda ek uyarılar verilebilir**
 
-   Önceki derleyici sürümleri de sorun için yeterince uyarı tüm uyarıları yönelik durum değişikliklerini #pragma izlenir. Bu davranış, uyarıları etkili bir şekilde kullanılmaya Programcı farklı durumlarda atlanması, belirli bir risk oluşturuldu. Derleyici artık izler `#pragma warning` durumu daha yerine--özellikle ilgili `#pragma warning` durumu şablonları içinde--değiştirir ve isteğe bağlı olarak istenmeyenkullanımlarıbulunProgramcıyardımcıolmaamacınıtaşımaktadıryeniuyarılarC5031veC5032sorunları`#pragma warning(push)` ve `#pragma warning(pop)`.
+   Önceki derleyici sürümleri de sorun için yeterince uyarı tüm uyarıları yönelik durum değişikliklerini #pragma izlenir. Bu davranış, uyarıları etkili bir şekilde kullanılmaya Programcı farklı durumlarda atlanması, belirli bir risk oluşturuldu. Derleyici artık izler `#pragma warning` durumu daha yerine--özellikle ilgili `#pragma warning` durumu şablonları içinde--değiştirir ve isteğe bağlı olarak yeni uyarılar istenmeyenkullanımlarıbulunProgramcıyardımcıolmaamacınıtaşımaktadırC5031veC5032,sorunları`#pragma warning(push)` ve `#pragma warning(pop)`.
 
    Sonucu olarak geliştirilmiş `#pragma warning` durumunda değişiklik izleme, eski adıyla yanlış gizlenen uyarılar veya önceden misdiagnosed sorunlarıyla ilgili uyarıları artık verilmiş.
 
@@ -2209,7 +2208,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Önceki derleyici sürümleri ifadelerinin içinde belirli bir türde değil ayrıştırma **decltype** tanımlayıcıları ifade SFINAE desteği eksikliği nedeniyle. Bu eski davranışı yanlış ve C++ standartlarına uygun değil. Derleyici artık bu deyimler ayrıştırır ve kısmi ifade SFINAE sürekli uyumluluk geliştirmeleri nedeniyle desteği vardır. Sonuç olarak, derleyici artık uyarı verir ve derleyicinin önceki sürümlerini değil ayrıştırma ifadelerinde hatalar bulundu.
 
-   Bu yeni davranış ayrıştırmak için ne zaman bir **decltype** sorunları derleyici hatası C2039 sonucunda henüz bildirilmedi, derleyici bir türü içeren bir ifade.
+   Bu yeni davranış ayrıştırmak için ne zaman bir **decltype** eşi benzeri görülmemiş bir türü içeren ifade bildirilen henüz derleyici sorunları derleyici hatası C2039 sonucunda.
 
     ```Output
     error C2039: 'type': is not a member of '`global namespace''
@@ -2296,7 +2295,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - `volatile` **üye değişkenleri örtük olarak tanımlı oluşturucular ve atama işleçleri engelle**
 
-   Önceki derleyici sürümleri sahip bir sınıfı izin **geçici** varsayılan üye değişkenleri kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri otomatik olarak oluşturulan varsayılan. Bu eski davranışı yanlış ve C++ standartlarına uygun değil. Derleyici artık sahip bir sınıf göz önünde bulundurur **geçici** Önemsiz yapım ve otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerin önleyen atama işleçleri için üye değişkenleri. Bu tür bir sınıfının bir birleşim (veya bir sınıf içinde anonim birleşim) üyesi olduğunda, kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri union (veya unonymous union içeren sınıfın) örtük olarak silindi olarak tanımlanır. Oluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim birleşim içeren sınıf) kopyalama girişimi hatayla ve derleyici sorunları derleyici hatası C2280 sonuç olarak.
+   Önceki derleyici sürümleri sahip bir sınıfı izin **geçici** varsayılan üye değişkenleri kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri otomatik olarak oluşturulan varsayılan. Bu eski davranışı yanlış ve C++ standartlarına uygun değil. Derleyici artık sahip bir sınıf göz önünde bulundurur **geçici** Önemsiz yapım ve otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerin önleyen atama işleçleri için üye değişkenleri. Bu tür bir sınıfının bir birleşim (veya bir sınıf içinde anonim birleşim) üyesi olduğunda, kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri union (veya anonim birleşim içeren sınıfın) örtük olarak silindi olarak tanımlanır. Oluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim birleşim içeren sınıf) kopyalama girişimi hatayla ve derleyici sorunları derleyici hatası C2280 sonuç olarak.
 
     ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -2352,7 +2351,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Statik üye işlevleri cv niteleyicileri desteklemez.**
 
-   Visual Studio 2015'ın önceki sürümlerini cv niteleyicileri sağlamak statik üye işlevlerinde izin. Bu Visual Studio 2015 ve Visual Studio 2015 güncelleştirme 1'teki bir gerileme nedeniyle, davranıştır; Visual Studio 2013 ve derleyicinin önceki sürümleri bu şekilde yazılmış kod reddeder. Visual Studio 2015 ve Visual Studio 2015 güncelleştirme 1 davranışını yanlış ve C++ standardı için uygun değil.  Visual Studio 2015 güncelleştirme 2, bu şekilde yazılmış kod reddeder ve bunun yerine derleyici hatası C2511 verir.
+   Visual Studio 2015'ın önceki sürümlerini cv niteleyicileri sağlamak statik üye işlevlerinde izin. Bu Visual Studio 2015 ve Visual Studio 2015 güncelleştirme 1'teki bir gerileme nedeniyle, davranıştır; Visual Studio 2013 ve derleyicinin önceki sürümleri bu şekilde yazılmış kod reddeder. Visual Studio 2015 ve Visual Studio 2015 güncelleştirme 1 davranışını yanlış ve C++ standartlarına uygun değil.  Visual Studio 2015 güncelleştirme 2, bu şekilde yazılmış kod reddeder ve bunun yerine derleyici hatası C2511 verir.
 
     ```Output
     error C2511: 'void A::func(void) const': overloaded member function not found in 'A'
@@ -2380,9 +2379,9 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     void A::func() {}  // removed const
     ```
 
-- **Enum İleri dönük bildirimi WinRT kodunda izin verilmiyor** (etkiler `/ZW` yalnızca)
+- **Enum İleri dönük bildirimi WinRT kodunda izin verilmiyor** (yalnızca etkiler `/ZW`)
 
-   Windows çalışma zamanı (WinRT) izin vermeyen için derlenmiş kod **enum** türleri için .net yönetilen C++ kodu derlendiğinde İleri, benzer şekilde bildirilmesi için Framework kullanarak `/clr` derleyici anahtarı. Bu, davranıştır boyutu bir numaralandırmanın her zaman bilinen ve doğru şekilde WinRT türü sisteme öngörülen sağlar. Derleyici, bu şekilde yazılmış kod reddeder ve derleyici hatası c2599 arasındaki derleyici hatası C3197 birlikte verir.
+   Windows çalışma zamanı (WinRT) izin vermeyen için derlenmiş kod **enum** türleri için .net yönetilen C++ kodu derlendiğinde İleri, benzer şekilde bildirilmesi için Framework kullanarak `/clr` derleyici anahtarı. Bu davranış boyutu bir numaralandırmanın her zaman bilinen ve doğru şekilde WinRT türü sisteme öngörülen sağlar. Derleyici, bu şekilde yazılmış kod reddeder ve derleyici hatası c2599 arasındaki derleyici hatası C3197 birlikte verir.
 
     ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -2684,7 +2683,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Önceden derlenmiş üst bilgi (PCH) dosyaları ve eşleşmeyen ekleme kodu dizinleri** (yalnızca etkiler `/Wall` `/WX`)
 
-   Kabul edilen derleyicinin önceki sürümlerini eşleşmeyen içeren dizin (`-I`) arasındaki derleyici komut satırı bağımsız değişkenleri `-Yc` ve `-Yu` kullanırken derlemeleri önceden derlenmiş üst bilgi (PCH) dosyaları. Bu şekilde yazılmış kod artık derleyici tarafından kabul edilir.   Derleyicinin CC4599 belirlemenize yardımcı olması için uyarı sorunları derleyici eşleşmeyen artık içeren dizin (`-I`) PCH dosyalarını kullanırken komut satırı bağımsız değişkenleri.
+   Kabul edilen derleyicinin önceki sürümlerini eşleşmeyen içeren dizin (`-I`) arasındaki derleyici komut satırı bağımsız değişkenleri `-Yc` ve `-Yu` kullanırken derlemeleri önceden derlenmiş üst bilgi (PCH) dosyaları. Bu şekilde yazılmış kod artık derleyici tarafından kabul edilir. Derleyicinin CC4599 belirlemenize yardımcı olması için uyarı sorunları derleyici eşleşmeyen artık içeren dizin (`-I`) PCH dosyalarını kullanırken komut satırı bağımsız değişkenleri.
 
     ```Output
     warning C4599: '-I..' : specified for Ycc.h at position 1 does not match Yuc.h at that position
@@ -2727,7 +2726,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Önceki sürümlerde, çağrı olduğundan hata verilmiyordu bir **sanal** çağırın; Bununla birlikte, program çalışma zamanında kilitlenme. Artık, sınıfın son olduğu bilindiğinden bir bağlayıcı hatası verilmektedir. Bu örnekte, hatayı düzeltmek için tanımını içeren nesneye karşı bağlamanız `S2::f`.
 
-- Ad alanlarında arkadaş işlevlerini kullandığınızda, arkadaş ona başvuran veya derleyici artık ISO C++ standardı ile uyumlu olduğundan bir hata alırsınız. önce işlevini yeniden bildirmeniz gerekir. Örneğin, bu artık derlenmemektedir:
+- Ad alanlarında arkadaş işlevlerini kullandığınızda, ona başvuran veya derleyici artık ISO C++ standardı ile uyumlu olduğundan bir hata alırsınız. önce arkadaş işlevini içeriyorsa gerekir. Örneğin, bu örnek artık şunu derlemez:
 
     ```cpp
     namespace NS {
@@ -2813,7 +2812,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     int y = x;
     ```
 
-- Sağ taraftaki değer türü Başlatılmakta olan soldaki değerin türünü eşleşmediğinde toplu başlatmaya artık izin verilmez ve C ++ 11 ISO standart olmadan çalışmaya Tekdüzen başlatma gerektirdiğinden bir hata verilir daraltma dönüştürmeleri. Daha önce bir daraltma dönüşümü kullanılabilir, biri ise bir [Derleyici Uyarısı (düzey 4) C4242](../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md) uyarı hata yerine verilen.
+- Sağ taraftaki değer türü Başlatılmakta olan soldaki değerin türüyle eşleşmeyen zaman toplu başlatmaya artık izin verilmez ve C ++ 11 ISO standart olmadan çalışmaya Tekdüzen başlatma gerektirdiğinden bir hata verilir daraltma dönüştürmeleri. Daha önce bir daraltma dönüşümü kullanılabilir, biri ise bir [Derleyici Uyarısı (düzey 4) C4242](../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md) uyarı hata yerine verilen.
 
     ```cpp
     int i = 0;
@@ -2869,7 +2868,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
     ```
 
-- Visual Studio 2013, sonucunu `sizeof(S2)` x64 üzerinde 48'dir, ancak isteğe bağlı olarak önceki sürümlerde 32 olarak değerlendirir. Bunu 32 x64 için Visual Studio 2013'teki C++ derleyicisinde değerlendirmek için sahip işlevsiz bir temel sınıf ekleyin. bir **sanal** işlevi:
+- Visual Studio 2013, sonucunu `sizeof(S2)` x64 üzerinde 48'dir, ancak isteğe bağlı olarak önceki sürümlerde 32 olarak değerlendirir. Bunu 32 x64 için Visual Studio 2013 C++ derleyicisinde değerlendirmek için sahip işlevsiz bir temel sınıf ekleyin. bir **sanal** işlevi:
 
     ```cpp
     __declspec(align(16)) struct S1 {
@@ -2902,7 +2901,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Visual Studio 2013'ten önce bu kod şu ileti çıktısını verir: "C4370 Uyarı: 'S2': sınıfın düzeni önceki bir sürümünden daha iyi paketleme nedeniyle derleyici değişti ".
 
-   X86 derleyici tüm derleyici sürümlerinde aynı optimum altında Düzen sorunu vardır. Örneğin, bu kod x86 için derlenirse:
+   X86 derleyici tüm derleyici sürümlerinde aynı yetersiz Düzen sorunu vardır. Örneğin, bu kod x86 için derlenirse:
 
     ```cpp
     struct S {
@@ -2912,7 +2911,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     };
     ```
 
-   Sonucu `sizeof(S)` 24'tür. Bununla birlikte, az önce x64 için sözü edilen geçici çözümü kullanırsanız bu sonuç 16'ya indirilebilir:
+   Sonucu `sizeof(S)` 24'tür. Ancak, x64 için sözü edilen geçici çözümü kullanırsanız 16 azaltılabilir:
 
     ```cpp
     struct dummy {
@@ -2928,7 +2927,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 ### <a name="standard-library"></a>Standart Kitaplık
 
-Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygulanmıştır, _ıterator_debug_level uyuşmazlıklarını ve RuntimeLibrary uyuşmazlıklarını algılar. Bu durum, derleyici seçenekleri `/MT` (statik sürüm) `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
+Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygulanmıştır, _ıterator_debug_level uyuşmazlıklarını ve RuntimeLibrary uyuşmazlıklarını algılar. Bu uyuşmazlıkları oluşur, derleyici seçenekleri `/MT` (statik sürüm) `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
 
 - Kodunuzu önceki yayındaki benzetilmiş diğer ad şablonlarını kabul ederse, bunu değiştirmeniz gerekir. Örneğin, yerine, `allocator_traits<A>::rebind_alloc<U>::other`başvurduysanız, artık `allocator_traits<A>::rebind_alloc<U>`. Ancak `ratio_add<R1, R2>::type` artık gerekli ve biz öneriyor olmamıza sunulmuştur `ratio_add<R1, R2>`, eski hala çünkü derleyeceği `ratio<N, D>` , zaten azaltılmışsa aynı türde olacak bir oran, bir "tür" typedef olması gereklidir.
 
@@ -2938,21 +2937,21 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - `explicit operator bool()` işleç unspecified-bool-type() katı olur. `explicit operator bool()` Açık dönüştürmeler bool değerine izin verir — Örneğin, verilen `shared_ptr<X> sp`hem `static_cast<bool>(sp)` ve `bool b(sp)` geçerlidir — ve Boolean test edilebilir "bağlamsal dönüştürmeleri" bool — Örneğin, `if (sp)`, `!sp`, `sp &&` ne olursa olsun. Ancak, `explicit operator bool()` yüzden bool, örtük dönüşümlerini yasaklayabilir `bool b = sp;` ve bool dönüş türü düşünüldüğünde, diyemeyiz `return sp`.
 
-- Gerçek bağımsız değişken içeren şablonlar uygulanır, _varıadıc_max ve ilgili makroların bir etkisi yoktur. Halen _VARIADIC_MAX öğesini tanımlıyorsanız, sadece yok sayılır. Benzetilmiş değişen sayıda bağımsız değişken içeren şablonları farklı bir şekilde desteklemeye yönelik makro makinemizi kabul ettiyseniz, kodunuzu değiştirmeniz gerekir.
+- Gerçek bağımsız değişken içeren şablonlar uygulanır, _varıadıc_max ve ilgili makroların bir etkisi yoktur. Halen _varıadıc_max öğesini tanımlıyorsanız, göz ardı edilir. Benzetilmiş değişen sayıda bağımsız değişken içeren şablonları farklı bir şekilde desteklemeye yönelik makro makinemizi kabul ettiyseniz, kodunuzu değiştirmeniz gerekir.
 
-- Sıradan anahtar sözcüklere ek olarak, C++ Standart Kitaplığı üst bilgileri artık makro oluşturulmasını engellemektedir bağlama duyarlı anahtar sözcükler yasaklayabilme **geçersiz kılma** ve **son**.
+- Sıradan anahtar sözcüklere ek olarak, C++ Standart Kitaplığı üst bilgileri artık bağlama duyarlı anahtar sözcüklerin Makro değişikliği yasaklayabilme **geçersiz kılma** ve **son**.
 
-- reference_wrapper/ref()/cref() şimdi geçici nesnelere bağlanmayı yasaklar.
+- `reference_wrapper`, `ref()`, ve `cref()` şimdi geçici nesnelere bağlanmayı yasaklar.
 
 - \<rastgele > artık, derleme zamanı önkoşulları kesinlikle zorlar.
 
-- Çeşitli C++ Standart Kitaplığı türü nitelikler "T tam bir tür olacaktır" önkoşuluna sahiptir. Derleyici artık bunu daha katı şekilde zorladığı halde, her durumda zorla kabul ettiremeyebilir. (C++ Standart Kitaplığı önkoşulu ihlalleri tanımlanmamış davranışı tetiklediğinden, standart, zorlamayı garanti etmez.)
+- Çeşitli C++ Standart Kitaplığı türü nitelikler "T tam bir tür olacaktır" önkoşuluna sahiptir. Derleyici artık bu önkoşulu daha kesinlikle zorlar, ancak bu, her durumda zorla. (C++ Standart Kitaplığı önkoşulu ihlalleri tanımlanmamış davranışı tetiklediğinden, standart, zorlamayı garanti etmez.)
 
-- C++ Standart Kitaplığı desteklemediği `/clr:oldSyntax`.
+- C++ Standart Kitaplığı desteklemiyor `/clr:oldSyntax`.
 
 - C ++ 11 belirtimi common_type <> sahip beklenmedik ve istenmeyen sonuçlara; common_type özellikle kolaylaştırır\<int, int >:: dönüş int türüne & &. Bu nedenle, derleyici common_type getiren için önerilen çözümü kitaplık çalışma grubu sorunu 2141, uygulayan\<int, int = "" >:: dönüş tamsayı türü
 
-   Bir yan etkisi bu değişiklik, kimlik durumu artık çalışmaz (common_type\<T > türü T her zaman sonuç vermez). Bu Önerilen Çözünürlük ile uyumludur, ancak önceki çalışma biçimine dayalı kodları keser.
+   Bir yan etkisi bu değişiklik, kimlik durumu artık çalışmaz (common_type\<T > türünde T her zaman sonuç vermez). Bu davranış Önerilen çözünürlük ile uyumludur, ancak, önceki çalışma biçimine dayalı kodları keser.
 
    Bir kimlik türü niteliğine gereksinim duyarsanız standart dışı kullanmayın `std::identity` içinde tanımlanan \<type_traits > için çalışmaz çünkü \<void >. Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Örnek buradadır:
 
@@ -2964,7 +2963,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="mfc-and-atl"></a>MFC ve ATL
 
-- **Yalnızca Visual Studio 2013**: Unicode çok popüler olduğundan ve MBCS kullanımı önemli ölçüde azaldığından MFC MBCS Kitaplığı Visual Studio'da bulunmaz. Yeni denetimlerin ve iletilerin çoğu salt Unicode olduğundan, bu değişiklik aynı zamanda MFC'yi Windows SDK ile daha paralel halde tutar. MFC MBCS kitaplığını kullanmaya devam etmeniz gerekiyorsa, Bununla birlikte, MSDN İndirme Merkezi'nden indirebilirsiniz [Visual Studio 2013 için çok baytlı MFC Kitaplığı](https://www.microsoft.com/download/details.aspx?id=40770). Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  (Not: MBCS DLL Visual Studio 2015 ve sonraki sürümlerde C++ Kurulum bileşenlerini bulunur).
+- **Yalnızca Visual Studio 2013**: MFC MBCS kitaplığı, Unicode çok popüler olduğundan ve MBCS kullanımı önemli ölçüde reddedildi çünkü Visual Studio'da yer almıyor. Yeni denetimlerin ve iletilerin çoğu salt Unicode olduğundan, bu değişiklik aynı zamanda MFC'yi Windows SDK ile daha paralel halde tutar. MFC MBCS kitaplığını kullanmaya devam etmeniz gerekiyorsa, Bununla birlikte, MSDN İndirme Merkezi'nden indirebilirsiniz [Visual Studio 2013 için çok baytlı MFC Kitaplığı](https://www.microsoft.com/download/details.aspx?id=40770). Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  (Not: MBCS DLL Visual Studio 2015 ve sonraki sürümlerde C++ Kurulum bileşenlerini bulunur).
 
 - MFC Şeridi için erişilebilirlik değişti.  Bir tek düzeyli mimari yerine artık hiyerarşik bir mimari yoktur. Çağırarak eski davranışı hala kullanabilirsiniz `CRibbonBar::EnableSingleLevelAccessibilityMode()`.
 
@@ -2988,7 +2987,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
    - `CMFCMaskedEdit::OnPaste` böylece yeni ON_WM_PASTE makrosu ileti eşlemede kullanılabilir parametre yok (WPARAM, LPARAM) yerine değiştirildi.
 
-- \#MFC üstbilgi dosyalarındaki ifdefs kaldırılır. Çok sayıda #ifdefs MFC başlık dosyaları ilgili desteklenmeyen Windows sürümleri (WINVER &lt; 0x0501) kaldırılır.
+- `#ifdef` MFC üstbilgi dosyalarındaki yönergelerinde kaldırılır. Çok sayıda `#ifdef` yönergeleri MFC üstbilgi dosyalarındaki ilgili desteklenmeyen Windows sürümleri için (WINVER &lt; 0x0501) kaldırılır.
 
 - ATL DLL (atl120.dll) kaldırıldı. ATL artık, üst bilgiler ve statik kitaplık (atls.lib) olarak sağlanmaktadır.
 
@@ -3028,7 +3027,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Derleyici uyarılarını verebileceği [Derleyici Uyarısı (düzey 4) C4703](../error-messages/compiler-warnings/compiler-warning-level-4-c4703.md) ve C4701 burada daha önce bu belirtmiyor. Derleyici, daha güçlü denetimler başlatılmamış yerel değişkenler işaretçi türü kullanımı için geçerlidir.
 
-- Ne zaman yeni bir bağlayıcı bayrağı `/HIGHENTROPYVA` belirtilirse, Windows 8 64-bit adresini döndürmek bellek ayırmaları genellikle neden olur. (Windows 8 önce böyle ayırmaları daha sık 2 GB'tan daha az olan adresler döndürdü.) Bu, varolan kodda işaretçi kesilmesi hatalar ortaya çıkarabilir. Varsayılan olarak, bu anahtar açıktır. Bu davranışı devre dışı bırakmak için bu seçeneği belirtin `/HIGHENTROPYVA:NO`.
+- Ne zaman yeni bir bağlayıcı bayrağı `/HIGHENTROPYVA` belirtilirse, Windows 8 64-bit adresini döndürmek bellek ayırmaları genellikle neden olur. (Windows 8 önce böyle ayırmaları daha sık 2 GB'tan daha az olan adresler döndürdü.) Bu değişiklik, mevcut koddaki işaretçi kesilmesi hatalar ortaya çıkarabilir. Varsayılan olarak, bu anahtar açıktır. Bu davranışı devre dışı bırakmak için bu seçeneği belirtin `/HIGHENTROPYVA:NO`.
 
 - Yönetilen derleme (Visual Basic / C#) da destekler `/HIGHENTROPYVA` Yönetilen derlemeler için.  Ancak, bu durumda, `/HIGHENTROPYVAswitch` varsayılan olarak kapalıdır.
 
@@ -3042,25 +3041,25 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="standard-library"></a>Standart Kitaplık
 
-- C ++ 98/03 ve C ++ 11 standartları arasında bozucu değişiklik çağırmak için açık şablon bağımsız değişkenleri kullanarak `make_pair()` — olarak `make_pair<int, int>(x, y)` — genellikle Visual Studio 2012'de Visual c++ derleme yapmaz. Çözümü her zaman çağırmaktır `make_pair() `açık şablon bağımsız değişkenler olmadan — olarak `make_pair(x, y)`. Açık şablon bağımsız değişkenleri defeats işlevin amacı sağlama. Sonuçta elde edilen tür üzerinde kesin denetim gerektiren kullanırsanız `pair` yerine `make_pair` — olarak `pair<short, short>(int1, int2)`.
+- C ++ 98/03 ve C ++ 11 standartları arasında bozucu değişiklik çağırmak için açık şablon bağımsız değişkenleri kullanarak `make_pair()` — olarak `make_pair<int, int>(x, y)` — genellikle Visual Studio 2012'de Visual c++ derleme değil. Çözümü her zaman çağırmaktır `make_pair() `açık şablon bağımsız değişkenler olmadan — olarak `make_pair(x, y)`. Açık şablon bağımsız değişkenleri defeats işlevin amacı sağlama. Sonuçta elde edilen tür üzerinde kesin denetim gerektiren kullanırsanız `pair` yerine `make_pair` — olarak `pair<short, short>(int1, int2)`.
 
-- Başka bir değişiklik C ++ 98/03 ve C ++ 11 standartları arasında: A B ve B için örtük olarak dönüştürülebilir olduğunda C için örtük olarak dönüştürülebilir, ancak A, C, C ++ 98/03 ve Visual C++ 2010 izin örtük olarak dönüştürülebilir değil `pair<A, X>` (örtük veya açık) için dönüştürülecek `pair<C, X>`. (Bir tür, X, burada faiz ve bu çift ilk türüne özgü değildir değil.) C ++ 11 ve Visual Studio 2012 C++ derleyicisindeki bir C için örtük olarak dönüştürülebilir değil algılamak için bunlar aşırı yükleme çözünürlüğü çifti dönüştürme kaldırın. Bu, birçok senaryo için pozitif bir değişikliktir. Örneğin, aşırı yükleme `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`ve çağırma `func()` ile `pair<const char *, const char *>` bu değişiklik ile derlenir. Ancak, bu değişiklik agresif çifti dönüştürmeleri yararlandı kod keser. Bu tür kod genellikle açıkça bir parçasını dönüştürme gerçekleştirerek düzeltilebilir — geçirerek gibi `make_pair(static_cast<B>(a), x)` bekleyen bir işleve `pair<C, X>`.
+- Başka bir değişiklik C ++ 98/03 ve C ++ 11 standartları arasında: A B ve B için örtük olarak dönüştürülebilir olduğunda C için örtük olarak dönüştürülebilir, ancak bir C, C ++ 98/03 ve Visual C++ 2010 izin örtük olarak dönüştürülebilir değil `pair<A, X>` (örtük veya açık) için dönüştürülecek `pair<C, X>`. (Başka bir tür X, burada ilgi değildir ve ilk çift türüne özgü değildir.) Visual Studio 2012'de C++ derleyicisi, bir C için örtük olarak dönüştürülebilir değil ve aşırı yükleme çözünürlüğü çifti dönüştürme kaldırır algılar. Bu değişiklik, birçok senaryo için pozitiftir. Örneğin, aşırı yükleme `func(const pair<int, int>&)` ve `func(const pair<string, string>&)`ve çağırma `func()` ile `pair<const char *, const char *>` bu değişiklik ile derlenir. Ancak, bu değişiklik agresif çifti dönüştürmeleri yararlandı kod keser. Bu tür kod genellikle açıkça bir parçasını dönüştürme gerçekleştirerek düzeltilebilir — geçirerek gibi `make_pair(static_cast<B>(a), x)` bekleyen bir işleve `pair<C, X>`.
 
-- Visual C++ 2010 benzetimli variadic şablonları — Örneğin, `make_shared<T>(arg1, arg2, argN)`— bağımsız değişkenleri, aşırı yüklemeler ve uzmanlıkları out ile önişlemci makineler damgası tarafından 10, bir sınıra kadar. Visual Studio 2012'de, derleme sürelerini ve kullanıcıların çoğu için derleyicinin bellek tüketimini geliştirmek için 5 bağımsız değişkenler için bu sınır azaltılır. Ancak, _varıadıc_max açıkça proje genelinde 10 tanımlayarak önceki sınırı ayarlayabilirsiniz.
+- Visual C++ 2010 benzetimli variadic şablonları — Örneğin, `make_shared<T>(arg1, arg2, argN)`— bağımsız değişkenleri, aşırı yüklemeler ve uzmanlıkları out ile önişlemci makineler damgası tarafından 10, bir sınıra kadar. Visual Studio 2012'de, derleme sürelerini ve kullanıcıların çoğu için derleyicinin bellek tüketimini geliştirmek için beş bağımsız değişkenler için bu sınır azaltılır. Ancak, _varıadıc_max açıkça proje genelinde 10 tanımlayarak önceki sınırı ayarlayabilirsiniz.
 
-- C ++ 11 17.6.4.3.1 [macro.names]/2 yasaklıyor makrosu engellemektedir anahtar sözcükler, C++ Standart Kitaplığı üst bilgiler dahil edilir. Bunlar makrosu ized anahtar sözcükleri algılayın, üst bilgileri artık derleyici hataları gösterin. (Bu kodu derlemek _ALLOW_KEYWORD_MACROS tanımlama verir, ancak biz kesinlikle bu kullanımı önerilmemektedir.) Üstbilgileri aygıtlarınızı kendilerini #pragma push_macro("new") / #undef yeni / #pragma pop_macro("new") kullanarak korumak için bir özel durum, varsayılan olarak, ized yeni makrosu izin verilir. Tam olarak bu ne adından da anlaşılacağı _ENFORCE_BAN_OF_MACRO_NEW tanımlama yapar.
+- C ++ 11 17.6.4.3.1 [macro.names]/2 yasaklıyor Makro değişikliği anahtar sözcüklerin, C++ Standart Kitaplığı üst bilgiler dahil edilir. Bunlar anahtar sözcükleri makrosu yerini tespit ederse üstbilgileri derleyici hataları artık gösterin. (Bu kodu derlemek _ALLOW_KEYWORD_MACROS tanımlama verir, ancak biz kesinlikle bu kullanımı önerilmemektedir.) Özel durum, makro biçiminde olarak `new` üstbilgileri aygıtlarınızı kendilerini kullanarak savunmak varsayılan olarak, izin `#pragma push_macro("new")` / `#undef new` / `#pragma pop_macro("new")`. Tam olarak bu ne adından da anlaşılacağı _ENFORCE_BAN_OF_MACRO_NEW tanımlama yapar.
 
-- Çeşitli iyileştirmeler ve hata ayıklama denetimlerini uygulamak için C++ Standart Kitaplığı uygulaması kasıtlı olarak Visual Studio sürümleri arasında ikili uyumluluğu keser (2005, 2008, 2010, 2012). C++ Standart Kitaplığı kullanıldığında, bu nesne dosyaları ve statik kitaplıklar bir ikili olarak (EXE veya DLL) farklı sürümler kullanılarak derlenmiş ve C++ Standart Kitaplığı nesneleri geçirme tarafından derlenmiş ikili dosyaları arasında engelliyor karıştırma engelliyor farklı sürümleri kullanılarak. Nesne dosyaları ve statik kitaplıklar karıştırma (C++ kullanılarak derlenmiş değerlerle Visual C++ 2010 kullanılarak derlenmiş C++ Standart Kitaplığı'nı kullanarak Visual Studio 2012'de derleyici _MSC_VER uyuşmazlığı, _MSC_VER olduğu ilgili bağlayıcı hataları yayar Derleyicinin ana sürümünü (Visual Studio 2012'deki Visual c++ 1700) içeren makrosu. Bu denetim DLL karmasını algılayamaz ve Visual C++ 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
+- Çeşitli iyileştirmeler ve hata ayıklama denetimlerini uygulamak için C++ Standart Kitaplığı uygulaması kasıtlı olarak Visual Studio sürümleri arasında ikili uyumluluğu keser (2005, 2008, 2010, 2012). C++ Standart Kitaplığı kullanıldığında, nesne dosyaları ve statik kitaplıklar bir ikili olarak (EXE veya DLL) farklı sürümler kullanılarak derlenmiş ve C++ Standart Kitaplığı nesneleri geçirme tarafından derlenmiş ikili dosyaları arasında engelliyor karıştırma engelliyor farklı sürümleri kullanılarak. Nesne dosyaları ve statik kitaplıklar karıştırma (C++ kullanılarak derlenmiş bulunanlarla Visual C++ 2010 kullanılarak derlenmiş C++ Standart Kitaplığı'nı kullanarak Visual Studio 2012'de derleyici _MSC_VER uyuşmazlığı, _MSC_VER olduğu ilgili bağlayıcı hataları yayar Derleyicinin ana sürümünü (Visual Studio 2012'deki Visual c++ 1700) içeren makrosu. Bu denetim DLL karmasını algılayamaz ve Visual C++ 2008 veya önceki bir sürümü içeren karmasını algılayamaz.
 
-- Visual Studio 2012'de C++ derleyicisi, _ıterator_debug_level uyuşmazlıkları Visual C++ 2010 içinde olan algılama ek olarak, çalışma zamanı kitaplığı uyuşmazlıkları algılar. Bu durum, derleyici seçeneklerinin `/MT` (statik sürüm) `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
+- Visual Studio 2012'de C++ derleyicisi, _ıterator_debug_level uyuşmazlıkları Visual C++ 2010 içinde olan algılama ek olarak, çalışma zamanı kitaplığı uyuşmazlıkları algılar. Bu uyuşmazlıkları oluşur, derleyici seçeneklerinin `/MT` (statik sürüm), `/MTd` (statik hata ayıklama), `/MD` (dinamik sürüm) ve `/MDd` (dinamik hata ayıklama) karıştırılır.
 
-- `operator<()`, `operator>()`, `operator<=()`, ve `operator>=()` için daha önce sağlanan `std::unordered_map` ve `stdext::hash_map` aileleri kapsayıcıların, ancak kendi uygulamalarında gerçekten kullanışlı değildir. Bu standart işleçler, Visual Studio 2012'de Visual C++'da kaldırılmıştır. Ayrıca, uygulanması `operator==()` ve `operator!=()` için `std::unordered_map` ailesi karşılamak için genişletilmişse `stdext::hash_map` ailesi. (Kullanımını kaçınmanızı öneririz `stdext::hash_map` yeni kod ailesi.)
+- `operator<()`, `operator>()`, `operator<=()`, ve `operator>=()` için daha önce sağlanan `std::unordered_map` ve `stdext::hash_map` aileleri kapsayıcıların, ancak kendi uygulamalarını kullanışlı değildir. Bu standart işleçler, Visual Studio 2012'de Visual C++'da kaldırılmıştır. Ayrıca, uygulanması `operator==()` ve `operator!=()` için `std::unordered_map` ailesi karşılamak için genişletilmişse `stdext::hash_map` ailesi. (Kullanımını kaçınmanızı öneririz `stdext::hash_map` yeni kod ailesi.)
 
 - C ++ 11 22.4.1.4 [locale.codecvt] belirtir `codecvt::length()` ve `codecvt::do_length()` değiştirilebilir zamanınızı `stateT&` parametreleri, ancak Visual C++ 2010 sürdü `const stateT&`. Visual Studio 2012'de C++ derleyici alan `stateT&` standart tarafından zorunlu olarak. Bu sanal işlevi geçersiz kılma girişiminde herkes için önemli bir fark `do_length()`.
 
 ### <a name="crt"></a>CRT
 
-- C çalışma zamanı (CRT) yığın, yeni kullanılır ve malloc(), özel artık. CRT, şimdi ise işlem yığınını kullanır. Bunun anlamı bir DLL kaldırıldığında yığın yok edilmez, CRT için kitaplıklarla statik bağlantılar oluşturabilir DLL tarafından ayrılan bellek emin olmak için onu kaldırıldı önce DLL kod temizlenir.
+- C çalışma zamanı (CRT) yığın, yeni kullanılır ve malloc(), özel artık. CRT, şimdi ise işlem yığınını kullanır. Bunun anlamı bir DLL kaldırıldığında yığın yok değil, CRT için kitaplıklarla statik bağlantılar oluşturabilir DLL tarafından ayrılan bellek emin olmak için onu kaldırıldı önce DLL kod temizlenir.
 
 - `iscsymf()` İşlevi negatif değerleri ile onaylar.
 
@@ -3070,7 +3069,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="mfc-and-atl"></a>MFC ve ATL
 
-- Fusion desteği (afxcomctl32.h); kaldırıldı Bu nedenle, afxcomctl32.h içinde tanımlanan tüm yöntemleri kaldırıldı. Üst bilgi dosyaları afxcomctl32.h ve afxcomctl32.inl silindi.
+- Fusion desteği (afxcomctl32.h); kaldırıldı Bu nedenle, şurada tanımlanan tüm yöntemleri \<afxcomctl32.h > kaldırıldı. Üst bilgi dosyaları \<afxcomctl32.h > ve \<afxcomctl32.inl > silinmiş.
 
 - Adının değişip `CDockablePane::RemoveFromDefaultPaneDividier` için `CDockablePane::RemoveFromDefaultPaneDivider`.
 
@@ -3242,11 +3241,11 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - .NET Framework 4 işlem kurtarılamaz bir bozuk durumda bırakın özel durumlar bozuk durum özel durumları kavramını sunar. Varsayılan olarak, hatta diğer özel durumların tamamını yakalar / eha derleyici seçeneği ile bir bozuk durumda özel durumu yakalayamaz.                 Açıkça bir bozuk durum özel durumu yakalamak için __try - kullanın\__except deyimleri. Ya da bozuk durum özel durumları yakalamak bir işlev etkinleştirmek için [HandledProcessCorruptedStateExceptions] özniteliğini uygulayın.  Bu değişiklik, öncelikli olarak bozuk durumda özel durumu yakalamak gerekebilir sistem programcılar etkiler. Sekiz istisnaları STATUS_ACCESS_VIOLATION, STATUS_STACK_OVERFLOW, EXCEPTION_ILLEGAL_INSTRUCTION, EXCEPTION_IN_PAGE_ERROR, EXCEPTION_INVALID_DISPOSITION, EXCEPTION_NONCONTINUABLE_EXCEPTION, EXCEPTION_PRIV_INSTRUCTION, STATUS_ UNWIND_CONSOLIDATE.                 Bu özel durumları hakkında daha fazla bilgi için bkz. [GetExceptionCode](/windows/desktop/Debug/getexceptioncode) makrosu.
 
-- Düzenlenen `/GS` derleyici seçeneği korur arabellek taşmalarına karşı kıyasla daha kapsamlı önceki sürümleri. Bu sürüm, ek güvenlik denetimlerini performansı düşebilir yığınında ekleyebilirsiniz. Yeni **__declspec(safebuffers)** anahtar sözcüğünü kullanarak derleyicinin güvenlik Ekle değil, belirli bir işlev için denetler.
+- Düzenlenen `/GS` derleyici seçeneği korur arabellek taşmalarına karşı kıyasla daha kapsamlı önceki sürümleri. Bu sürüm, ek güvenlik denetimlerini performansı düşebilir yığınında ekleyebilirsiniz. Yeni `__declspec(safebuffers)` anahtar sözcüğünü kullanarak derleyicinin güvenlik Ekle değil, belirli bir işlev için denetler.
 
 - Her ikisi de derlerseniz `/GL` (bütün Program iyileştirmesi) ve `/clr` (ortak dil çalışma zamanı derlemesi) derleyici seçenekleri, `/GL` seçeneği yoksayılır. Derleyici Seçenekleri birleşimini az avantaj sağlamadığı bu değişiklik yapılmıştır. Bu değişikliğe bağlı olarak, derleme performansı geliştirildi.
 
-- Varsayılan olarak, trigrafları devre dışı için Visual C++ 2010'da destekler. Kullanım `/Zc:trigraphs` trigrafları desteğini etkinleştirmek için derleyici seçeneği. Bir trigraf oluşur birbirini izleyen iki soru işareti ("??") üçüncü bir benzersiz karakter. Derleyici bir trigraf karşılık gelen bir noktalama karakteri ile değiştirir. Örneğin, derleyici değiştirir "?? = "trigraf '#' karakteri ile. Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesini kullandırır kullanın.
+- Varsayılan olarak, trigrafları devre dışı için Visual C++ 2010'da destekler. Kullanım `/Zc:trigraphs` trigrafları desteğini etkinleştirmek için derleyici seçeneği. Bir trigraf oluşur birbirini izleyen iki soru işareti ("??") üçüncü bir benzersiz karakter. Derleyici bir trigraf karşılık gelen bir noktalama karakteri ile değiştirir. Örneğin, derleyici değiştirir `??=` trigraf '#' karakteri ile. Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesini kullandırır kullanın.
 
 - Bağlayıcı artık Windows 98 için en iyi duruma getirme destekler. `/OPT` (İyileştirmeler) seçeneğini belirtirseniz bir derleme zamanı hatası oluşturur `/OPT:WIN98` veya `/OPT:NOWIN98`.
 
@@ -3266,13 +3265,13 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="ide"></a>IDE
 
-- Uygulama sonlandırma iletişim kutusu artık bir uygulama sona erer. Önceki sürümlerde, zaman `abort()` veya `terminate()` işlevi, bir uygulamanın perakende derleme kapalı, C çalışma zamanı kitaplığı, bir konsol penceresi ya da iletişim kutusunda bir uygulama sonlandırma iletisi görüntülenir. İleti parçası olarak, "Bu uygulama çalışma zamanı bir biçimde sonlandırmasını istedi. Bununla birlikte "Lütfen uygulamanın Destek ekibine daha fazla bilgi için başvurun." Windows, Windows hata bildirimi (Dr. genellikle geçerli sonlandırma işleyicisi ardından görüntülenen uygulama sonlandırma iletisi olarak yedekli Watson) iletişim kutusunu veya Visual Studio hata ayıklayıcısını. Visual Studio 2010'da başlıyor, C çalışma zamanı kitaplığı ileti görüntülemez. Ayrıca, çalışma zamanı hata ayıklayıcı başlamadan önce uygulamanın bitiş engeller. Yalnızca uygulama sonlandırma iletisi üzerinde önceki davranışına dayanıyorsa bir değişiklik budur.
+- Uygulama sonlandırma iletişim kutusu artık bir uygulama sona erer. Önceki sürümlerde, zaman `abort()` veya `terminate()` işlevi, bir uygulamanın perakende derleme kapalı, C çalışma zamanı kitaplığı, bir konsol penceresi ya da iletişim kutusunda bir uygulama sonlandırma iletisi görüntülenir. İleti parçası olarak, "Bu uygulama çalışma zamanı bir biçimde sonlandırmasını istedi. Bununla birlikte "Lütfen uygulamanın Destek ekibine daha fazla bilgi için başvurun." Windows, Windows hata bildirimi (Dr. genellikle geçerli sonlandırma işleyicisi ardından görüntülenen uygulama sonlandırma iletisi olarak yedekli Watson) iletişim kutusunu veya Visual Studio hata ayıklayıcısını. Visual Studio 2010'da başlıyor, C çalışma zamanı kitaplığı, bir ileti görüntülemez. Ayrıca, çalışma zamanı hata ayıklayıcı başlamadan önce uygulamanın bitiş engeller. Yalnızca uygulama sonlandırma iletisi üzerinde önceki davranışına dayanıyorsa bir değişiklik budur.
 
-- Özellikle Visual Studio 2010 için IntelliSense için C + çalışmaz +/ CLI kodu veya öznitelikleri **tüm başvuruları Bul** çalışmıyor yerel değişkenleri ve kod modeli için alınan derlemeleri tür adları alma veya çözün mu tam adlarıyla türleri.
+- Özellikle Visual Studio 2010 için IntelliSense C +'da işe yaramazsa +/ CLI kodu veya öznitelikleri **tüm başvuruları Bul** yerel değişkenler için çalışmaz ve kod modeli değil veya içeri aktarılan derlemelerden tür adları alma çözün tam adlarıyla türleri.
 
 ### <a name="libraries"></a>Kitaplıklar
 
-- SafeInt sınıfı Visual C++'de bulunan ve artık ayrı bir indirme değil. Ayrıca "SafeInt" adlı bir sınıf yalnızca geliştirdiyseniz, bir değişiklik budur.
+- SafeInt sınıfı Visual C++'de bulunan ve artık ayrı bir indirme değil. Ayrıca "SafeInt" adlı bir sınıf geliştirdiyseniz bir değişiklik budur.
 
 - Kitaplıkları dağıtım modeli, bildirimler artık belirli bir dinamik bağlantı kitaplığı sürümü bulmak için kullanır. Bunun yerine, sürüm numarasının her dinamik bağlantı kitaplığının adı içerir ve kitaplığını bulmak için bu adı kullanın.
 
@@ -3280,7 +3279,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="standard-library"></a>Standart Kitaplık
 
-- \<Yineleyici > Üstbilgi artık dahil otomatik olarak tarafından diğer pek çok üst bilgi dosyaları. Önceki derleme aracını, VCBUILD.exe veya proje dosya soneki bağlıysa An varolan projede tanımlanan tek başına yineleyiciler için destek etkilenen gerekiyorsa bunun yerine, bu açıkça üstbilgisini. vcproj.interator > Üstbilgi.
+- \<Yineleyici > Üstbilgi artık dahil otomatik olarak tarafından diğer pek çok üst bilgi dosyaları. Bunun yerine, bu başlığı üstbilgisinde tanımlanan tek başına yineleyicileri için destek gerekiyorsa açıkça içerir. Mevcut bir projeyi önceki derleme aracını, VCBUILD.exe veya proje dosya soneki bağlıysa etkilenir. vcproj.iterator.
 
 - İçinde \<algoritma > üst bilgi, checked_ * ve unchecked_\* işlevleri kaldırılır. Ve \<yineleyici >> başlık `checked_iterator` sınıfı kaldırılır ve `unchecked_array_iterator` sınıfı eklendi.
 
@@ -3292,7 +3291,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="crt-mfc-and-atl-libraries"></a>CRT, MFC ve ATL kitaplığı
 
-- CRT, MFC ve ATL kitaplıkları oluşturmak, kullanıcılar için destek kaldırılmıştır. Örneğin, bir uygun nmake dosyası sağlanmadı. Ancak, kullanıcılar yine de kaynak kodu bu kitaplıklara ilişkin erişebilir. Ve Microsoft bu kitaplıkları oluşturmak için kullandığı MSBuild seçeneklerini açıklayan bir belge içinde Visual C++ Team Blog büyük olasılıkla yayımlanacak.
+- CRT, MFC ve ATL kitaplıkları oluşturmak, kullanıcılar için destek kaldırılmıştır. Örneğin, herhangi bir uygun NMAKE dosyası sağlanır. Ancak, kullanıcılar yine de kaynak kodu bu kitaplıklara ilişkin erişebilir. Ve Microsoft bu kitaplıkları oluşturmak için kullandığı MSBuild seçeneklerini açıklayan bir belge içinde Visual C++ Team Blog büyük olasılıkla yayımlanacak.
 
 - IA64 için MFC Desteği kaldırılmıştır. Ancak, CRT ve IA64 üzerinde ATL desteği yine de sağlanır.
 
@@ -3306,7 +3305,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
 
-- Birkaç yönergeleri Microsoft Macro Assembler başvurusu derleyicisinden kaldırıldı. .186, kaldırılan yönergeleridir.286, .286P.287,.8086,.8087, ve. NO87.
+- Birkaç yönergeleri Microsoft Macro Assembler başvurusu derleyicisinden kaldırıldı. Kaldırılan yönergeleridir `.186`, `.286`, `.286P`, `.287`, `.8086`, `.8087`, ve `.NO87`.
 
 ## <a name="visual-c-2008-breaking-changes"></a>Visual C++ 2008 bozucu değişiklikler
 
@@ -3336,7 +3335,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Projeleri Visual Studio'nun önceki sürümlerinden yükseltme yaparken, büyüktür veya eşittir 0x0500 olmalı ve böylelikle WINVER ve _WIN32_WINNT'de makroları değiştirmek gerekebilir.
 
-- Visual Studio 2008'den itibaren Yeni Proje Sihirbazı'nı bir SQL Server C++ projesi oluşturmak için bir seçenek yok. Visual Studio'nun önceki bir sürümü kullanılarak oluşturulmuş SQL Server projeleri hala derleyin ve düzgün çalışır.
+- Visual Studio 2008'den itibaren Yeni Proje Sihirbazı'nı bir SQL Server C++ projesi oluşturmak için bir seçenek yoktur. Visual Studio'nun önceki bir sürümü kullanılarak oluşturulmuş SQL Server projeleri hala derleyin ve düzgün çalışır.
 
 - Windows API üst bilgi dosyası Winable.h kaldırıldı. Bunun yerine Winuser.h içerir.
 
@@ -3390,7 +3389,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi #define atl_mın_crt ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Visual C++ 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlıdır.
 
-- ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değil. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
+- ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değildir. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
 
 - Bazı işlevler, artık DLL'de bulunur. Bunlar yine de içeri aktarma kitaplığı'nda bulunur. Bu işlevleri statik olarak kullanan kodu etkilemez. Bu, bu işlevler dinamik olarak kullanan kod etkiler.
 
@@ -3400,7 +3399,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - ATL CRT üzerinde bir bağımlılık oluşturulamıyor. Visual Studio'nun önceki sürümlerinde kullanabileceğinizi `#define ATL_MIN_CRT` ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale getirmek için. Visual C++ 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en düşük düzeyde bağımlıdır.
 
-- ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değil. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
+- ATL Sunucu codebase Codeplex'te bir paylaşılan kaynak proje olarak yayımlanmıştır ve Visual Studio'nun bir parçası yüklü değildir. Kodlama ve sınıflardan atlenc.h ve yardımcı işlevleri ve sınıfları atlutil.h ve atlpath.h kod çözme veri tutulmuştur ve artık ATL Kitaplığı'nın bir parçasıdır. ATL Sunucu ile ilişkilendirilen çeşitli dosyalar artık, Visual Studio'nun bir parçası değildir.
 
 - Bazı işlevler, artık DLL'de bulunur. Bunlar yine de içeri aktarma kitaplığı'nda bulunur. Bu işlevleri statik olarak kullanan kodu etkilemez. Bu, bu işlevler dinamik olarak kullanan kod etkiler.
 
@@ -3428,15 +3427,15 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Birçok işlev kullanım dışı bırakıldı. Bkz: **CRT işlevleri kullanım dışı**.
 
-- Birçok İşlevler, artık geçersiz parametreler verildiyse yürütmeyi durdurma, kendi parametrelerini doğrular. Geçersiz parametreler geçirir ve bunları yoksayılıyor veya yalnızca bir hata kodunu döndürerek işlevi kullanır kodu kesilmesine neden olabilir. Bkz: **parametre doğrulaması**.
+- Birçok İşlevler, artık geçersiz parametreler verildiyse yürütmeyi durdurma, kendi parametrelerini doğrular. Bu doğrulama geçersiz parametrelerini geçirir ve bunları yoksayılıyor veya yalnızca bir hata kodunu döndürerek işlevi kullanır kodu kesilebilir. Bkz: **parametre doğrulaması**.
 
-- Dosya tanımlayıcısı değeri -2, artık stdout ve stderr hiçbir konsol penceresine sahip bir Windows uygulaması örnekte olduğu gibi bir çıktı kullanılamaz olduğunu belirtmek için kullanılır. Kullanılan önceki değer -1 belirtildi. Daha fazla bilgi için [_fileno](../c-runtime-library/reference/fileno.md).
+- Dosya tanımlayıcısı değeri -2 şimdi göstermek için kullanılan `stdout` ve `stderr` hiçbir konsol penceresine sahip bir Windows uygulaması için çıkış, örneğin, kullanılabilir değildir. Kullanılan önceki değer -1 belirtildi. Daha fazla bilgi için [_fileno](../c-runtime-library/reference/fileno.md).
 
-- Tek iş parçacıklı CRT kitaplığı /ML ve libcd.lib, kaldırıldı. Çok iş parçacıklı CRT kitaplıkları kullanın. `/ML` Derleyici bayrağı artık desteklenmiyor. Çok iş parçacıklı kod ve tek iş parçacıklı kod arasındaki performans farkının potansiyel olarak önemli olduğu durumlarda bazı işlevlerin olmayan kilitleme sürümleri eklendi.
+- Tek iş parçacıklı CRT kitaplık (/ML ve libcd.lib) kaldırılmıştır. Çok iş parçacıklı CRT kitaplıkları kullanın. `/ML` Derleyici bayrağı artık desteklenmiyor. Çok iş parçacıklı kod ve tek iş parçacıklı kod arasındaki performans farkının potansiyel olarak önemli olduğu durumlarda bazı işlevlerin olmayan kilitleme sürümleri eklendi.
 
 - Pow, çift pow (int, int), aşırı yüklemesini standarda daha iyi uyacak şekilde kaldırıldı.
 
-- Kendiliğinden olmaması nedeniyle varsayılan olarak tüm işlevleri printf ailesinin %n Biçim belirticisi artık desteklenmiyor. %N karşılaşılırsa varsayılan davranışı geçersiz parametre işleyicisini çağırır sağlamaktır. %N desteğini etkinleştirmek için _set_printf_count_output (Ayrıca see_get_printf_count_output) kullanın.
+- Kendiliğinden olmaması nedeniyle varsayılan olarak tüm işlevleri printf ailesinin %n Biçim belirticisi artık desteklenmiyor. %N karşılaşılırsa, varsayılan davranışı geçersiz parametre işleyicisini çağırır sağlamaktır. %N desteğini etkinleştirmek için kullanın `_set_printf_count_output` (Ayrıca bkz: `_get_printf_count_output`).
 
 - `sprintf` Şimdi imzalanmış bir sıfır eksi işareti yazdırır.
 
@@ -3446,11 +3445,11 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - `time_t` (_use_32bıt_tıme_t tanımlı olmadığı sürece) 64 bitlik bir değer sunulmuştur.
 
-- `_spawn`, `_wspawn` İşlevleri artık bırakın errno dokunulmadan C Standart tarafından belirtilen başarılı olma durumunda.
+- `_spawn`, `_wspawn` İşlevleri şimdi bırakın `errno` C Standart tarafından belirtilen başarılı olma durumunda olduğu.
 
 - RTC, geniş karakterler artık varsayılan olarak kullanır.
 
-- Kayan nokta denetim sözcüğünü desteği işlevleri, / CLR veya/CLR ile derlenmiş uygulamalar için kaldırılmıştır: PURE. Etkilenen işlevleri `_clear87`, `_clearfp`, `_control87`, `_controlfp`, `_fpreset`, `_status87`, `_statusfp`. _CRT_MANAGED_FP_NO_DEPRECATE tanımlayarak kullanımdan kaldırılma uyarısı devre dışı bırakabilirsiniz, ancak bu işlevler yönetilen kodda beklenmedik ve desteklenmeyen kullanılır.
+- Kayan nokta denetim sözcüğünü desteği işlevleri için uygulamalar ile derlenmiş kaldırılmıştır `/CLR` veya `/CLR:PURE`. Etkilenen işlevleri `_clear87`, `_clearfp`, `_control87`, `_controlfp`, `_fpreset`, `_status87`, `_statusfp`. _CRT_MANAGED_FP_NO_DEPRECATE tanımlayarak kullanımdan kaldırılma uyarısı devre dışı bırakabilirsiniz, ancak bu işlevler yönetilen kodda beklenmedik ve desteklenmeyen kullanılır.
 
 - Bazı işlevler, artık const işaretçiler döndürür. Eski, sabit olmayan davranış _CONST_RETURN tanımlayarak sağlanmaya başlanır. Etkilenen işlevleri
 
@@ -3468,7 +3467,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="standard-library-2005"></a>Standart Kitaplığı (2005)
 
-- Özel durum sınıfı (bulunan \<özel durum > üst bilgi) taşındı `std` ad alanı. Önceki sürümlerde, bu sınıfın genel ad alanında oluştu. Özel durum sınıfı bulunamadığını belirten hataları gidermek için aşağıdakileri ekleyin, kodunuzun deyimi kullanarak:                 `using namespace std;`
+- Özel durum sınıfı (bulunan \<özel durum > üst bilgi) taşındı `std` ad alanı. Önceki sürümlerde, bu sınıfın genel ad alanında oluştu. Özel durum sınıfı bulunamadığını belirten hataları gidermek için aşağıdakileri ekleyin, kodunuzun deyimi kullanarak: `using namespace std;`
 
 - Çağrılırken `valarray::resize()`, içeriğini `valarray` kaybolacak ve varsayılan değerlerle değiştirilir. `resize()` Yöntemi yeniden tasarlanmıştır `valarray` yerine dinamik olarak gibi bir vektör büyütün.
 
@@ -3502,7 +3501,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Şablon <> yerde nerede derleyici daha önce yaptığından, artık gerekli ([derleyici hatası C2768](../error-messages/compiler-errors-2/compiler-error-c2768.md)).
 
-- Bir üye işlev ourside expilicit uzmanlaşması sınıf işlev zaten açıkça Şablon sınıfı bir özelleştirmeye özelleştirilmiş geçerli değil ([derleyici hatası C2910](../error-messages/compiler-errors-2/compiler-error-c2910.md)).
+- Sınıf dışındaki üye işlevi açık alt uzmanlaşması işlev zaten açıkça Şablon sınıfı bir özelleştirmeye özelleştirilmiş, geçerli değil ([derleyici hatası C2910](../error-messages/compiler-errors-2/compiler-error-c2910.md)).
 
 - Kayan nokta tür olmayan şablon parametreleri artık izin verilir ([derleyici hatası C2993](../error-messages/compiler-errors-2/compiler-error-c2993.md)).
 
@@ -3520,7 +3519,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 - Statik veri üyeleri (C4356) türetilmiş sınıf aracılığıyla başlatılamaz.
 
-- Bir sınıf şablonu uzmanlığı, dönüş türü içinde kullanılan önce tanımlanması gerekir ([Derleyici Uyarısı (Düzey 3) C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)).
+- Bir sınıf şablonu uzmanlığı, dönüş türü kullanılmadan önce tanımlanması gerekir ([Derleyici Uyarısı (Düzey 3) C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)).
 
 - Derleyici artık erişilemeyen kod (C4702) bildirir.
 

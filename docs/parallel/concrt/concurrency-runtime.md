@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: 245984d9702c997f16601bf5e2a9bd049ae5fed9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6f7b70dcbee639bdd44a195709bddde9e06dee21
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258339"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278560"
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 
@@ -99,7 +99,6 @@ Referans belgeleri için bkz. [başvuru](../../parallel/concrt/reference/referen
 |||
 |-|-|
 |[Zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanan Windows Store apps) içinde ipuçları](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Nasıl eşzamanlılık çalışma zamanı zaman uyumsuz işlemler Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullandığımız öğrenin.|
-|[Eşzamanlılık Çalışma zamanı ve paralel desen Kitaplığı'nda Visual Studio 2010 için kod örnekleri](http://go.microsoft.com/fwlink/p/?linkid=183875)|Örnek uygulamalar ve Eşzamanlılık Çalışma zamanı gösteren yardımcı programları sağlar.|
 |[Yerel kod blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=183873)|Eşzamanlılık Çalışma zamanı içinde paralel programlama hakkında ek ayrıntılı blog makaleler sağlar.|
 |[C++ ve yerel kod forumdaki paralel bilgi işlem](http://go.microsoft.com/fwlink/p/?linkid=183874)|Eşzamanlılık Çalışma zamanı hakkında topluluk tartışmaları katılmasını sağlar.|
 |[Paralel Programlama](/dotnet/standard/parallel-programming/index)|.NET Framework'teki kullanılabilir paralel programlama modeli hakkında size öğretir.|

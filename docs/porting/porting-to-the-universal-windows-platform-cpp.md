@@ -2,12 +2,12 @@
 title: Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 ms.date: 11/04/2016
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-ms.openlocfilehash: 06543ce27fe4fed839a6f6b885259e8cc1b180c6
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 6bda600abfea04e1158f6ff993e04e5076e4c24b
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518547"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278469"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 
@@ -21,7 +21,7 @@ Bu konu, UWP için kod taşımak için aşağıdaki yordamları içerir.
 
 - [UWP için Windows 8.1 bir çalışma zamanı bileşeni taşıma](#BK_81Component)
 
-Klasik Masaüstü bir Win32 DLL varsa ve bir UWP uygulamasında aramak istediğiniz bunu da yapabilirsiniz. Bu yordamları kullanarak, varolan Klasik Windows Masaüstü C++ uygulaması için bir UWP kullanıcı arabirimi katman veya platformlar arası standart C++ kod oluşturabilirsiniz. Bkz: [nasıl yapılır: mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
+Klasik Masaüstü bir Win32 DLL varsa ve bir UWP uygulamasında aramak istediğiniz bunu da yapabilirsiniz. Bu yordamları kullanarak, varolan Klasik Windows Masaüstü C++ uygulaması için bir UWP kullanıcı arabirimi katman veya platformlar arası standart C++ kod oluşturabilirsiniz. Bkz: [nasıl yapılır: Mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
 
 ## <a name="BK_81StoreApp"></a> UWP için Windows 8.1 bir Store uygulaması taşıma
 
@@ -74,7 +74,7 @@ Bir DLL veya Windows 8.1 Store uygulamaları ile zaten çalışan bir Windows ç
 
 ### <a name="to-port-a-windows-81-runtime-component-to-the-uwp"></a>Bağlantı noktası bir UWP için Windows 8.1 çalışma zamanı bileşeni
 
-1. İçinde **yeni proje** iletişim Visual Studio 2017'de bulun **Windows Evrensel** düğümü. Bu düğüm görmüyorsanız, yüklemek [Windows 10 için Araçları](http://go.microsoft.com/fwlink/p/?LinkID=617903) ilk. Seçin **Windows çalışma zamanı bileşeni** şablon bileşeniniz için bir ad verin ve seçin **Tamam** düğmesi. Aynı adı kullanın, eski projelerinizi ad alanı isteyebilirsiniz, bileşen adı ad alanı adı olarak kullanılacaktır. Bu, eski hesaptan farklı bir klasörde proje oluşturmanız gerekir. Farklı bir ad seçerseniz, oluşturulan kodda ad alanı adı güncelleştirebilirsiniz.
+1. İçinde **yeni proje** iletişim Visual Studio 2017'de bulun **Windows Evrensel** düğümü. Bu düğüm görmüyorsanız, yüklemek [Windows 10 SDK'sı](https://developer.microsoft.com/windows/downloads/windows-10-sdk) ilk. Seçin **Windows çalışma zamanı bileşeni** şablon bileşeniniz için bir ad verin ve seçin **Tamam** düğmesi. Aynı adı kullanın, eski projelerinizi ad alanı isteyebilirsiniz, bileşen adı ad alanı adı olarak kullanılacaktır. Bu, eski hesaptan farklı bir klasörde proje oluşturmanız gerekir. Farklı bir ad seçerseniz, oluşturulan kodda ad alanı adı güncelleştirebilirsiniz.
 
 1. Projeyi kapatın.
 

@@ -4,12 +4,12 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 67bf20248933b28e9c7c0d87c598c0449d6bed0b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b055a1e3ca1d43cc0a1633401c1a08a3d54c1a31
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823975"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278456"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio'da CMake projeleri
 
@@ -80,7 +80,7 @@ Her şey önbelleğinde aktarılır.  Oluşturucu ve derleyiciler konumu gibi ö
 
 CMake projesi oluşturmak için bu seçeneğiniz vardır:
 
-1. Hedef seçin **hata ayıklama** açılan basın **F5**, veya **çalıştırmak** (yeşil üçgeni) düğmesini. Projeyi ilk olarak, yalnızca Visual Studio çözümü gibi otomatik olarak oluşturur.
+1. Genel araç çubuğunda Bul **yapılandırmaları** açılır; bu büyük olasılıkla "Linux-hata ayıklama" veya "x64-Debug" varsayılan olarak göstermez. İstenen yapılandırma seçip ENTER tuşuna **F5**, veya **çalıştırmak** araç çubuğunda (yeşil üçgeni). Projeyi ilk olarak, yalnızca Visual Studio çözümü gibi otomatik olarak oluşturur.
 
 1. Sağ tıklayın CMakeLists.txt ve select **derleme** bağlam menüsünden. Birden çok hedef klasör yapınız varsa, tüm veya tek bir belirli hedef oluşturmayı seçebilirsiniz.
 

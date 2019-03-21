@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-ms.openlocfilehash: c1dc146f03b4ed5c0d9d82736959df3097f41199
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 99676ac0fff9584cd8453562f8918f6cadd66666
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289305"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278549"
 ---
 # <a name="task-class-concurrency-runtime"></a>task Sınıfı (Eşzamanlılık Çalışma Zamanı)
 
@@ -112,7 +112,7 @@ Görev sonucu.
 Görev iptal edilirse bir çağrı `get` oluşturmaz bir [task_canceled](task-canceled-class.md) özel durum. Görev farklı bir özel durum karşılaştıysa veya öncül bir görevden buna özel durum yayıldığı, görev, bir çağrı `get` o özel durum oluşturur.
 
 > [!IMPORTANT]
->  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın [CONCURRENCY::Task:: wait](#wait) veya `get` ( `wait` çağrıları `get`) STA'da çalışan kod Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz `get` sonuç hemen kullanılabilir olduğundan, bir görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
+>  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın [CONCURRENCY::Task:: wait](#wait) veya `get` ( `wait` çağrıları `get`) kodda kullanıcı arabirimi iş parçacığında çalışır. Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz `get` sonuç hemen kullanılabilir olduğundan, bir görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
 
 ##  <a name="is_apartment_aware"></a> is_apartment_aware
 
@@ -344,7 +344,7 @@ A `task_status` olabilecek değeri `completed` veya `canceled`. Görev yürütme
 ### <a name="remarks"></a>Açıklamalar
 
 > [!IMPORTANT]
->  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait` STA'da çalışan kod Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task:: get](#get) görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
+>  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait` kodda kullanıcı arabirimi iş parçacığında çalışır. Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task:: get](#get) görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

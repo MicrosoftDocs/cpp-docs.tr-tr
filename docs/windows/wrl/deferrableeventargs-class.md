@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Microsoft::WRL::DeferrableEventArgs::GetDeferral method
 - Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
-ms.openlocfilehash: 509686556bd06a6ec9d059593be46d0fc6a3876d
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: 4a3786e65873d6837389ad4fa5e7d06a14d66460
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54335201"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278370"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 
@@ -43,14 +43,14 @@ Uygulayan sınıfa *TEventArgsInterface*.
 
 Ad                                                         | Açıklama
 ------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------
-[DeferrableEventArgs::GetDeferral](#getdeferral)             | Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) ertelenmiş bir olayı temsil eden nesne.
+[DeferrableEventArgs::GetDeferral](#getdeferral)             | Bir başvuru edinir [erteleme](/uwp/api/windows.foundation.deferral) ertelenmiş bir olayı temsil eden nesne.
 [Deferrableeventargs::ınvokeallfinished](#invokeallfinished) | Ertelenmiş olayı işlemek için tüm işleme tamamlandığını göstermek için çağrılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu sınıfın örnekleri, ertelenmiş olayları için olay işleyicileri geçirilir. Şablon parametreleri, belirli türde bir ertelenmiş olayı için olay bağımsız değişkenlerinin ayrıntıları tanımlayan bir arabirim ve arabirimi uygulayan bir sınıfı temsil eder.
 
-Sınıfı, ertelenmiş bir olay için bir olay işleyicisi için ilk bağımsız değişken olarak görünür. Çağırabilirsiniz [GetDeferral](#getdeferral) almak için yöntemi [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) nesne içinden alabilirsiniz ertelenmiş olayla ilgili tüm bilgileri. Olay işleme tamamlandıktan sonra erteleme nesne üzerinde tam çağırmanız gerekir. Ardından çağırmalıdır [InvokeAllFinished](#invokeallfinished) olay işleyicisi yönteminin sonunda, hangi sağlar tamamlandığında tüm ertelenmiş olayları, düzgün bir şekilde bildiriliyor.
+Sınıfı, ertelenmiş bir olay için bir olay işleyicisi için ilk bağımsız değişken olarak görünür. Çağırabilirsiniz [GetDeferral](#getdeferral) almak için yöntemi [erteleme](/uwp/api/windows.foundation.deferral) nesne içinden alabilirsiniz ertelenmiş olayla ilgili tüm bilgileri. Olay işleme tamamlandıktan sonra erteleme nesne üzerinde tam çağırmanız gerekir. Ardından çağırmalıdır [InvokeAllFinished](#invokeallfinished) olay işleyicisi yönteminin sonunda, hangi sağlar tamamlandığında tüm ertelenmiş olayları, düzgün bir şekilde bildiriliyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -60,7 +60,7 @@ Sınıfı, ertelenmiş bir olay için bir olay işleyicisi için ilk bağımsız
 
 ## <a name="getdeferral"></a>DeferrableEventArgs::GetDeferral
 
-Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) ertelenmiş bir olayı temsil eden nesne.
+Bir başvuru edinir [erteleme](/uwp/api/windows.foundation.deferral) ertelenmiş bir olayı temsil eden nesne.
 
 ```cpp
 HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
@@ -69,7 +69,7 @@ HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ### <a name="parameters"></a>Parametreler
 
 *Sonuç*<br/>
-Bakacağınız bir işaretçi [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) çağrısı tamamlandığında nesne.
+Bakacağınız bir işaretçi [erteleme](/uwp/api/windows.foundation.deferral) çağrısı tamamlandığında nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: a729c8d32c851c4401a0af7dd7323912a476530f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f14b21c97e5a36d5107e7db526e4153446ae2a01
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293452"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278545"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 
@@ -617,7 +617,7 @@ Sağlanan HLS renk RGB gösterimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).
+Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](/windows/desktop/uxguide/vis-color).
 
 Bu yöntem ve `CDrawingManager::HLStoRGB_TWO` yöntem aynı işlemi gerçekleştirmek, ancak için farklı değerler gerektiren *H* parametresi. Bu yöntemde, *H* dairenin bir yüzde değeri. İçinde `CDrawingManager::HLStoRGB_TWO` yöntemi *H* 0 ve hem de kırmızı temsil eden 360 arasında bir ölçüde değerdir. Örneğin, `HLStoRGB_ONE`, 0,25 için değeri *H* 90 değerine eşdeğerdir `HLStoRGB_TWO`.
 
@@ -649,7 +649,7 @@ Sağlanan HLS renk RGB gösterimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).
+Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](/windows/desktop/uxguide/vis-color).
 
 Bu yöntem ve [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) yöntem aynı işlemi gerçekleştirmek, ancak için farklı değerler gerektiren *H* parametresi. Bu yöntemde, *H* 0 ve hem de kırmızı temsil eden 360 arasında bir ölçüde değerdir. İçinde [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) yöntemi *H* dairenin bir yüzde değeri. Örneğin, `HLStoRGB_ONE`, 0,25 için değeri *H* 90 değerine eşdeğerdir `HLStoRGB_TWO`.
 
@@ -679,7 +679,7 @@ Sağlanan HSV renk RGB gösterimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).
+Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](/windows/desktop/uxguide/vis-color).
 
 ##  <a name="huetorgb"></a>  CDrawingManager::HuetoRGB
 
@@ -864,7 +864,7 @@ static void __stdcall RGBtoHSL(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).
+Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](/windows/desktop/uxguide/vis-color).
 
 İçin döndürülen değer *H* 0 ile 1 nerede hem 0 ve 1 temsil eden kırmızı arasında bir kesir olarak temsil edilir. Döndürülen değerleri *S* ve *L* numaraları 0 ile 1 arasında.
 
@@ -896,7 +896,7 @@ static void __stdcall RGBtoHSV(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).
+Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) gösterilebilir. Farklı renk gösterimleri hakkında daha fazla bilgi için bkz. [renk](/windows/desktop/uxguide/vis-color).
 
 İçin döndürülen değer *H* burada 0 hem 360 gösteren kırmızı 0-360 arasında bir sayı olan. Dönüş değerleri için *S* ve *V* numaraları 0 ile 1 arasında.
 

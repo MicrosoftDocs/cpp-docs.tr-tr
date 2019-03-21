@@ -10,12 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: 325cdb86f61f658776c69057022c005c389492d3
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 3146c94879532a5c58208369bb6d131a3a027c33
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813909"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278495"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 
@@ -38,12 +38,6 @@ Aşağıdaki listede, Microsoft ve üçüncü taraf kaynakları taşıma ve UNIX
 [UNIX özel uygulama Geçiş Kılavuzu](https://technet.microsoft.com/library/bb656290.aspx) Teknik Yardım kod geçiş UNIX'ten Win32 ortamı sağlar.
 
 [UNIX geçiş Proje Kılavuzu](https://technet.microsoft.com/library/bb656287.aspx) üst düzey Yardım geçirme önemli projeleri UNIX'ten Win32'ye sağlayarak UNIX özel uygulama geçiş kılavuzunu tamamlar. Kılavuz, her proje geçişi aşamasında göz önüne almanız gereken sorunlar hakkında öneriler sağlar.
-
-### <a name="microsoft-windows-services-for-unix-sfu"></a>Microsoft Windows Services for UNIX (SFU)
-
-Microsoft Windows Services for UNIX (SFU), çeşitli Windows, UNIX tabanlı mevcut ortamlardan tümleştirmeye yönelik platformlar arası hizmetleri sağlar. UNIX için Hizmetleri, dosya paylaşımı, uzaktan erişim ve yönetim, parola eşitleme, ortak dizin yönetimi, ortak bir araçlar kümesi ve bir kabuk sağlar.
-
-[UNIX için Windows Hizmetleri](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)
 
 ### <a name="interopsystemscom"></a>InteropSystems.com
 

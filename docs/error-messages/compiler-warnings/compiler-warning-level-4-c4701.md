@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4701
 ms.assetid: d7c76c66-1f3f-4d3c-abe4-5d94c84a5a1f
-ms.openlocfilehash: d2f95b9b2f4357d9719785880706c41f68fdfea0
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 7d9b0041428af62c4b9d7a9a170547ab75222e94
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519793"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278430"
 ---
 # <a name="compiler-warning-level-4-c4701"></a>Derleyici Uyarısı (düzey 4) C4701
 
@@ -73,4 +73,4 @@ void main()
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici Uyarısı (düzey 4) C4703](../../error-messages/compiler-warnings/compiler-warning-level-4-c4703.md)<br/>
-[Uyarılar, / SDL ve değişken başlatılmamış algılama geliştirme](http://blogs.msdn.com/b/sdl/archive/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection.aspx)
+[Uyarılar, / SDL ve değişken başlatılmamış algılama geliştirme](https://www.microsoft.com/security/blog/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/)

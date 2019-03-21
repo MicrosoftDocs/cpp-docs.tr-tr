@@ -1,6 +1,6 @@
 ---
 title: locale Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/19/2019
 f1_keywords:
 - xlocale/std::locale
 - xlocale/std::locale::category
@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 888aeff3e8661338d1a017c06325108a4240ace3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a1f5ace58af427645a0ad4eb8706506cc52ab08c
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677922"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278521"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -403,8 +403,14 @@ The previous locale was: C
 
 Üye sınıfı özellikleri, bir yerel ayardaki arama modelleri için bir dizin olarak kullanılan benzersiz bir kimlik sağlar.
 
-sınıf kimliği {korumalı: id(); özel: id(const id&) / / void işleç tanımlanmamış =(const id&) / / tanımlanmamış};
-
+```cpp
+class id 
+{
+   protected:    id();
+   private:      id(const id&)
+   void operator=(const id&)  // not defined    
+};
+```
 ### <a name="remarks"></a>Açıklamalar
 
 Üye sınıfı, her benzersiz yerel ayar modeli gerekli statik üye nesnesi tanımlar. Kopyalayamaz veya sınıfın bir nesnesi atama, Not `id`.

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /FI compiler option [C++]
 - preprocess header file compiler option [C++]
 ms.assetid: 07e79577-8152-4df9-a64c-aae08c603397
-ms.openlocfilehash: 2e85706a0266696b83fe1a1a6cdc45ba3399fc21
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: e047ecc5266a898f2c6dc24be3c204f8ddf94386
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809229"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278378"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI (Zorla Dahil Edilen Dosyayı Adlandır)
 
@@ -41,7 +41,7 @@ Bu seçenek dosyayı çift tırnak işaretleri ile belirtmekle aynı etkiye sahi
 
 1. Tıklayın **Gelişmiş** özellik sayfası.
 
-1. Değiştirme **zorla içerir** özelliği.
+1. Değiştirme **zorla dahil etme dosyası** özelliği.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -50,6 +50,6 @@ Bu seçenek dosyayı çift tırnak işaretleri ile belirtmekle aynı etkiye sahi
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [Yol Adını Belirtme](specifying-the-pathname.md)
