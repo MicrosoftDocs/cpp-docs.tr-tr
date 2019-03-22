@@ -91,8 +91,8 @@ items:
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
       - name: Kodu düzenleme, yeniden düzenleme ve kodda gezinme
-        tocHref: /cpp/ide/
-        topicHref: /cpp/ide/ide-and-tools-for-visual-cpp-development
+        tocHref: /cpp/ide
+        topicHref: /cpp/overview-of-cpp-development
         items:
         - name: IDE
           tocHref: /cpp/ide/
@@ -125,9 +125,9 @@ items:
       - name: Bulut ve Web
         tocHref: /cpp/cloud
         topicHref: /cpp/cloud/cloud-and-web-programming-in-visual-cpp
-ms.openlocfilehash: 4c353d1f7e1d4e03a9dc86f24c95251e5dc12eac
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 5a39a8b1a86657acb9e1f61bde45ab0e4a1e7bdd
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816418"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328331"
