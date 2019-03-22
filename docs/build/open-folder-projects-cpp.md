@@ -1,15 +1,15 @@
 ---
 title: Visual Studio'da C++ yapı sistemler için açık klasör desteği
-ms.date: 01/21/2019
+ms.date: 03/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: a7e352d7978ba5c973d779224639006fa984e4f0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 2dedd56759b6bb49260221e22218da6f4300a970
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823981"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356094"
 ---
 # <a name="open-folder-projects-for-c"></a>C++ için klasör Proje Aç
 
@@ -49,7 +49,7 @@ IntelliSense ve göz atma davranışlarına kısmen bağlıdır tanımlayan etki
       "includePath": [ "include" ],
       "defines": [ "_DEBUG" ],
       "compilerSwitches": "/std:c++17",
-      "intelliSenseMode": "msvc-x64",
+      "intelliSenseMode": "windows-msvc-x64",
       "forcedInclude": [ "pch.h" ],
       "undefines": []
     }
@@ -64,7 +64,7 @@ Derleme betikleri veya geçerli çalışma alanınızda doğrudan IDE'de görev 
 
 ![Klasör Aç yapılandırma görevleri](media/open-folder-config-tasks.png)
 
-Oluşturur (veya açılır) `tasks.vs.json` Visual Studio kök proje klasörünüzdeki oluşturan .vs klasöründeki dosya. Bu dosyayı herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görevi tanımlayan bir tasks.vs.json dosyası gösterir. `taskName` bağlam menüsünde görünen adını tanımlar. `appliesTo` hangi dosyaların komutu gerçekleştirilebilir tanımlar. `command` Özelliği başvurur (Windows cmd.exe'de) konsol yolunu tanımlar COMSPEC ortam değişkenine. CppProperties.json veya CMakeSettings.json bildirilen ortam değişkenlerini de başvurabilirsiniz. `args` Özellik çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
+Oluşturur (veya açılır) **tasks.vs.json** Visual Studio kök proje klasörünüzdeki oluşturan .vs klasöründeki dosya. Bu dosyayı herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görevi tanımlayan bir tasks.vs.json dosyası gösterir. `taskName` bağlam menüsünde görünen adını tanımlar. `appliesTo` hangi dosyaların komutu gerçekleştirilebilir tanımlar. `command` Özelliği başvurur (Windows cmd.exe'de) konsol yolunu tanımlar COMSPEC ortam değişkenine. CppProperties.json veya CMakeSettings.json bildirilen ortam değişkenlerini de başvurabilirsiniz. `args` Özellik çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
 
 ```json
 {
@@ -87,7 +87,7 @@ Daha fazla bilgi için [Tasks.vs.json şema başvurusu](tasks-vs-json-schema-ref
 
 ### <a name="configure-debugging-parameters-with-launchvsjson"></a>Launch.vs.json ile hata ayıklama parametreleri Yapılandır
 
-Program komut satırı bağımsız değişkenleri özelleştirmek için yürütülebilir dosya çubuğunda sağ **Çözüm Gezgini** seçip **hata ayıklama ve başlatma ayarları**. Bu varolan açar `launch.vs.json` dosyası veya yoksa, seçtiğiniz program hakkında bilgileri önceden doldurulmuş yeni bir dosya oluşturur.
+Program komut satırı bağımsız değişkenleri özelleştirmek için yürütülebilir dosya çubuğunda sağ **Çözüm Gezgini** seçip **hata ayıklama ve başlatma ayarları**. Bu varolan açar **launch.vs.json** dosyası veya yoksa, seçtiğiniz program hakkında bilgileri önceden doldurulmuş yeni bir dosya oluşturur.
 
 Ek bağımsız değişkenlerini belirtmek için bunları eklemeniz yeterlidir `args` aşağıdaki örnekte gösterildiği gibi JSON dizisi:
 

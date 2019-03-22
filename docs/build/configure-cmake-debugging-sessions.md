@@ -1,14 +1,14 @@
 ---
 title: Hata ayıklama oturumları Visual Studio'da CMake yapılandırma
-ms.date: 03/05/2019
+ms.date: 03/21/2019
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: 9a4dd009544a4590c336697ba2162eec45718869
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 712728247c439c38d5e640118fc153cf89647c80
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824123"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356172"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>Hata ayıklama oturumları CMake yapılandırma
 
@@ -20,7 +20,7 @@ CMake menülerden bir hata ayıklama oturumu da başlatabilirsiniz.
 
 ## <a name="customize-debugger-settings"></a>Hata ayıklayıcı ayarları özelleştirme
 
-Herhangi bir yürütülebilir CMake hedef projesinde hata ayıklayıcısı ayarlarını özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. CMake hedef alt menüde seçtiğinizde, bir dosya olarak adlandırılan `launch.vs.json` oluşturulur. Bu dosya seçtiğiniz CMake hedef ilgili bilgilerle önceden doldurulur ve program bağımsız değişkenleri veya hata ayıklayıcı türü gibi ek parametreleri belirtmenizi sağlar. Herhangi bir tuşa başvurmak için bir `CMakeSettings.json` dosya, kendisiyle yazdığınızdan `cmake.` içinde `launch.vs.json`. Aşağıdaki örnek, basit bir gösterir `launch.vs.json` değerinde çeker dosya `remoteCopySources` anahtarını `CMakeSettings.json` şu anda seçili yapılandırma dosyası:
+Herhangi bir yürütülebilir CMake hedef projesinde hata ayıklayıcısı ayarlarını özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. (Veya bir hedef seçin **hedefleri görünümü** içinde **Çözüm Gezgini**.) CMake hedef alt menüde seçtiğinizde, bir dosya olarak adlandırılan **launch.vs.json** oluşturulur. Bu dosya seçtiğiniz CMake hedef ilgili bilgilerle önceden doldurulur ve program bağımsız değişkenleri veya hata ayıklayıcı türü gibi ek parametreleri belirtmenizi sağlar. Herhangi bir tuşa başvurmak için bir **CMakeSettings.json** dosya, kendisiyle yazdığınızdan `cmake.` içinde **launch.vs.json**. Aşağıdaki örnek, basit bir gösterir **launch.vs.json** değerinde çeker dosya `remoteCopySources` anahtarını **CMakeSettings.json** şu anda seçili yapılandırma dosyası:
 
 ```json
 {
@@ -38,11 +38,11 @@ Herhangi bir yürütülebilir CMake hedef projesinde hata ayıklayıcısı ayarl
 }
 ```
 
-Kaydettiğiniz hemen sonra `launch.vs.json` dosyasının, bir giriş oluşturulduğunu **başlangıç öğesi** Yeni adla açılır. Düzenleyerek `launch.vs.json` dosya, CMake hedefleri herhangi bir sayıda için istediğiniz sayıda hata ayıklama yapılandırması gibi oluşturabilirsiniz.
+Kaydettiğiniz hemen sonra **launch.vs.json** dosyasının, bir giriş oluşturulduğunu **başlangıç öğesi** Yeni adla açılır. Düzenleyerek **launch.vs.json** dosya, CMake hedefleri herhangi bir sayıda için istediğiniz sayıda hata ayıklama yapılandırması gibi oluşturabilirsiniz.
 
 ## <a name="support-for-cmakesettings-variables"></a>CMakeSettings değişkenleri için destek
 
- `Launch.vs.json` bildirilen değişkenleri destekleyen `CMakeSettings.json` (aşağıya bakın) ve şu anda seçili yapılandırma için geçerli. Ayrıca adlı bir anahtar sahip `currentDir`, geçerli dizin başlatan uygulamanın ayarlar:
+ **Launch.vs.JSON** bildirilen değişkenleri destekleyen **CMakeSettings.json** (aşağıya bakın) ve şu anda seçili yapılandırma için geçerli. Ayrıca adlı bir anahtar sahip `currentDir`, geçerli dizin başlatan uygulamanın ayarlar:
 
 ```json
 {

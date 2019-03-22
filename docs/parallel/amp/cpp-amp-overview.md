@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: a4bd8546ba551ee37b9c03b5965a4079a3bd9f98
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 258266768d3f456fb761a9d5a403a92c502dbe32
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328889"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356250"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -447,7 +447,7 @@ void MathExample() {
     parallel_for_each(
         logs.extent,
         [=] (index<1> idx) restrict(amp) {
-            logs[idx] = concurrency::fast_math::log10(logs[idx]);
+            logs[idx] = concurrency::fast_math::log10(numbers[idx]);
         }
     );
 

@@ -52,12 +52,12 @@ helpviewer_keywords:
 - C1505
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: 6809ef1640c324e247bd20c83d4622fe27987ae6
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 17c456f6ab248964cbd19cd9695da290254ccf1b
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328252"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356224"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>Derleyici Önemli Hataları C999 - C1999
 
@@ -70,7 +70,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Hata|İleti|
 |-----------|-------------|
 |[Önemli Hata C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|Bilinmeyen ileti Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
-|[Önemli Hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|Derleyicide bir iç hata oluştu.<br /><br /> (derleyici dosyası '*dosya*', satır *numarası*)<br /><br /> Basitleştirmeyi veya yukarıda listelenen konumların yakınındaki programı değiştirmeyi deneyin. Bu sorunu geçici olarak çözmek için. Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
+|[Önemli Hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|Derleyicide bir iç hata oluştu.<br /> (derleyici dosyası '*dosya*', satır *numarası*)<br /> Basitleştirmeyi veya yukarıda listelenen konumların yakınındaki programı değiştirmeyi deneyin. Bu sorunu geçici olarak çözmek için. Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
 |[Önemli Hata C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|2. geçiş yığın tükendi derleyicisidir|
 |[Önemli Hata C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|hata sayısı *numarası*; derleme durduruluyor|
 |[Önemli Hata C1004](../../error-messages/compiler-errors-1/fatal-error-c1004.md)|Beklenmeyen bitiş-dosya bulundu|
@@ -78,7 +78,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Önemli Hata C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|Tanınmayan bayrak '*dize*'in'*seçeneği*'|
 |[Önemli Hata C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|Giriş dosyası belirtilmedi|
 |[Önemli Hata C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|Derleyici sınırı: makrolar çok derin iç içe|
-|[Önemli Hata C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|Beklenmeyen için önceden derlenmiş üst bilgi arayan sırasında dosya sonu. Eklemeyi mi unuttunuz ' #include <*dosya*>', kaynak için?|
+|[Önemli Hata C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|Beklenmeyen için önceden derlenmiş üst bilgi arayan sırasında dosya sonu. Eklemeyi mi unuttunuz ' #include \< *dosya*>', kaynak için?|
 |[Önemli Hata C1012](fatal-error-c1012.md)|eşleşmeyen parantez: eksik '*karakter*"|
 |[Önemli Hata C1013](fatal-error-c1013.md)|Derleyici sınırı: çok fazla açık parantez var|
 |[Önemli Hata C1014](fatal-error-c1014.md)|çok fazla sayıda ekleme dosyası: derinlik = *numarası*|

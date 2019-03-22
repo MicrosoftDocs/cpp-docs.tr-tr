@@ -1,14 +1,14 @@
 ---
 title: CppProperties.json schema reference
-ms.date: 03/05/2019
+ms.date: 03/21/2019
 helpviewer_keywords:
 - CMake in Visual C++
-ms.openlocfilehash: fd655de3313dd95eb3fcefaeba21e703d32e860a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 43ffa0e92649fe233c6a743d4b64a2749cb28f5a
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823686"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356107"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json schema reference
 
@@ -115,7 +115,9 @@ Bir yapılandırma aşağıdaki özelliklerinden herhangi birini içerebilir:
 |`compilerSwitches`|IntelliSense davranışını etkileyen bir veya daha fazla ek anahtarlar|
 |`forcedInclude`|Her derleme biriminde otomatik olarak eklenecek üstbilgi (/FI için MSVC için eşler veya - clang için dahil)|
 |`undefines`|Tanımsız (maps) MSVC için /U için olmasını makroları listesi|
-|`intelliSenseMode`|kullanılacak IntelliSense altyapısı. Mimari belirli çeşitleri MSVC, gcc veya Clang belirtebilirsiniz:<br/><br/>-msvc-x86 (varsayılan)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>-Linux-arm<br/>-gccarm|
+|`intelliSenseMode`|kullanılacak IntelliSense altyapısı. Mimari belirli çeşitleri MSVC, gcc veya Clang belirtebilirsiniz:<br/><br/>-windows msvc x86 (varsayılan)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>-Linux-arm<br/>-gccarm|
+
+Not: Değerleri `msvc-x86` ve `msvc-x64` yalnızca eski nedenlerle desteklenir. Lütfen kullanın `windows-msvc*` çeşitleri.
 
 ## <a name="custom-configurations"></a>Özel yapılandırmalar
 
@@ -186,7 +188,7 @@ Tanımlayabileceğiniz özel ortam değişkenleri `CppProperties.json` ya da gen
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x86"
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "inheritEnvironments": [
@@ -199,7 +201,7 @@ Tanımlayabileceğiniz özel ortam değişkenleri `CppProperties.json` ya da gen
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x64"
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }
@@ -227,7 +229,7 @@ Ayrıca tanımlayabilirsiniz bir **ortamları** özelliği içinde bir yapıland
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x86"
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "environments": [
@@ -246,7 +248,7 @@ Ayrıca tanımlayabilirsiniz bir **ortamları** özelliği içinde bir yapıland
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x64"
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }

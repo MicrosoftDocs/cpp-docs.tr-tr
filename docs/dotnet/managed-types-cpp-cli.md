@@ -17,12 +17,12 @@ helpviewer_keywords:
 - exceptions, diagnosing odd behavior
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-ms.openlocfilehash: c61f3fdd434a1b746c024b1a98d1d71f04df7e5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b91918d526d83d4cf47436d02b7c67038576bafb
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746923"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356185"
 ---
 # <a name="managed-types-ccli"></a>Yönetilen Türler (C++/CLI)
 
@@ -46,19 +46,21 @@ Aşağıdaki tabloda diğer adlar önceden tanımlanmış türler yerleşik Visu
 
 |Visual C++ tür|.NET Framework türü|
 |-----------------------|-------------------------|
-|**bool**|**System.Boolean**|
-|**signed char** (bkz [/J](../build/reference/j-default-char-type-is-unsigned.md) daha fazla bilgi için)|**System.SByte**|
-|**İmzasız char**|**System.Byte**|
-|**wchar_t**|**System.Char**|
-|**çift** ve **uzun çift**|**System.Double**|
-|**float**|**System.Single**|
-|**int**, **signed int**, **uzun**, ve **signed long**|**System.Int32**|
-|**işaretsiz int** ve **işaretsiz uzun**|**System.UInt32**|
-|**__int64** ve **__int64 imzalı**|**System.Int64**|
-|**imzalanmamış __int64**|**System.UInt64**|
-|**kısa** ve **kısa imzalı**|**System.Int16**|
-|**İmzasız short**|**System.UInt16**|
-|**void**|**System.Void**|
+|**void**|<xref:System.Void?displayProperty=nameWithType>|
+|**bool**|<xref:System.Boolean?displayProperty=nameWithType>|
+|**İmzalı char** |<xref:System.SByte?displayProperty=nameWithType>|
+|**İmzasız char**|<xref:System.Byte?displayProperty=nameWithType>|
+|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|
+|**kısa** ve **kısa imzalı**|<xref:System.Int16?displayProperty=nameWithType>|
+|**İmzasız short**|<xref:System.UInt16?displayProperty=nameWithType>|
+|**int**, **signed int**, **uzun**, ve **signed long**|<xref:System.Int32?displayProperty=nameWithType>|
+|**işaretsiz int** ve **işaretsiz uzun**|<xref:System.UInt32?displayProperty=nameWithType>|
+|**__int64** ve **__int64 imzalı**|<xref:System.Int64?displayProperty=nameWithType>|
+|**imzalanmamış __int64**|<xref:System.UInt64?displayProperty=nameWithType>|
+|**float**|<xref:System.Single?displayProperty=nameWithType>|
+|**çift** ve **uzun çift**|<xref:System.Double?displayProperty=nameWithType>|
+
+İmzalı veya imzasız varsayılan olarak derleyici seçeneği hakkında daha fazla bilgi için **char**, bkz: [/J (varsayılan karakter türü imzasız)](../build/reference/j-default-char-type-is-unsigned.md).
 
 ## <a name="version_issues"></a> Yerel türlerin içinde bulunan değer türleri için sürüm sorunları
 

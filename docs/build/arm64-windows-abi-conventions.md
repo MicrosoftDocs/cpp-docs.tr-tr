@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI kurallarına genel bakış
-ms.date: 07/11/2018
-ms.openlocfilehash: 537f8cf5bb8db61854bea7f4624e3dd3176c6a59
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.date: 03/22/2019
+ms.openlocfilehash: 5dddc26285606b771a3939be19dff5b9ad53f3c7
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816548"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356198"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -191,7 +191,7 @@ Return kayıtları geçirilen değere göre için çağırana bir blok boyutu ve
 
 İleri tarafından ARM put ABI 16 bayt yığın her zaman hizalı kalmalıdır. AArch64 SP göreli yük ya da depolama gerçekleştirilir ve 16 baytlık SP hataları hizalı yığın hizalamasını oluşturan bir donanım özelliği içerir. Bu özellik her zaman Windows çalışır.
 
-4 k ya da daha fazla değer yığın ayırma işlevleri son sayfa önce her bir sayfasında, sırayla dokunulan, böylece kod sağlama "üzerinden yığın genişletmek için Windows kullanan koruyucu sayfa leap" emin olmalısınız. Genelde bu yapılır `__chkstk` x8 16 bölü toplam yığın ayırma geçirir özel bir çağırma kuralı olan Yardımcısı.
+4 k ya da daha fazla değer yığın ayırma işlevleri son sayfa önce her bir sayfasında, sırayla dokunulan, böylece kod sağlama "üzerinden yığın genişletmek için Windows kullanan koruyucu sayfa leap" emin olmalısınız. Genelde bu yapılır `__chkstk` x15 16 bölü toplam yığın ayırma geçirir özel bir çağırma kuralı olan Yardımcısı.
 
 ## <a name="red-zone"></a>Kırmızı bölge
 
