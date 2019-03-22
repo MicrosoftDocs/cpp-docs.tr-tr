@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CDBVariant [MFC], m_pstringA
 - CDBVariant [MFC], m_pstringW
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-ms.openlocfilehash: 41ea20bcddc53142773d474af41021e9c71af1aa
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 48a2e08d056e3bfef8a06b80ae6607947923cbcb
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289879"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328954"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant sınıfı
 
@@ -69,7 +69,7 @@ class CDBVariant
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir.  `DWORD`yazın.|
+|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir. `DWORD`yazın.|
 
 ### <a name="public-union-members"></a>Genel birleşim üyeleri
 
@@ -216,7 +216,7 @@ TIMESTAMP_STRUCT türünde bir nesne için bir işaretçi depolar.
 
 `m_pdate` Veri üyesine ait bir birleşime. Erişmeden önce `m_pdate`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_DATE için sonra ayarlanır `m_pdate` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pdate` güvenilir olmayan sonuçlar oluşturabilir.
 
-TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](/previous-versions/windows/desktop/ms714556) ek d *ODBC Programcının Başvurusu* Windows SDK.
+TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](/sql/odbc/reference/appendixes/c-data-types) ek d *ODBC Programcının Başvurusu* Windows SDK.
 
 ##  <a name="m_pstring"></a>  CDBVariant::m_pstring
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CComMultiThreadModel class
 - threading [ATL]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-ms.openlocfilehash: 6b77efffca127c79c665cb8dedb916b0874de038
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2ec83fc320d65f5f51c14f9523544972cd69c66c
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290735"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328694"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel sınıfı
 
@@ -52,7 +52,7 @@ class CComMultiThreadModel
 
 Genellikle, kullandığınız `CComMultiThreadModel` iki biri aracılığıyla **typedef** ad [CComObjectThreadModel] (atl-typedefs.md #ccomobjectthreadmodel veya [CComGlobalsThreadModel] (atl-typedefs.md #ccomglobalsthreadmodel. Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
-| typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
+|typedef|Çoklu iş parçacığı oluşturma|Grup iş parçacığı oluşturma|Ücretsiz iş parçacığı oluşturma|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
@@ -157,7 +157,7 @@ Bkz: [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
 ##  <a name="decrement"></a>  CComMultiThreadModel::Decrement
 
-Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.
+Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw ();
@@ -178,7 +178,7 @@ Azaltma sonucu 0, ardından ise `Decrement` 0 döndürür. Azaltma sonucunu sıf
 
 ##  <a name="increment"></a>  CComMultiThreadModel::Increment
 
-Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), işaret ettiği değişken değerini artırır *p*.
+Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement), işaret ettiği değişken değerini artırır *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw ();
