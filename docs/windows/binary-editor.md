@@ -21,23 +21,23 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 420c5ecf44f8e8b264d9eafd93de58c0db3bedf4
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 0adcefe2af9d17a1c42f64f25636e220f53706fc
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210724"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328759"
 ---
 # <a name="binary-editor-c"></a>Binary Editor (C++)
 
 > [!CAUTION]
 > İletişim kutuları, resimler veya menülerde gibi kaynakları düzenleme **ikili düzenleyici** tehlikelidir. Yanlış düzenleme, kendi yerel düzenleyicisinde okunmaz hale gelir bir kaynak bozuk olabilir.
 
-**İkili düzenleyici** onaltılık veya ASCII biçiminde ikili düzeyde herhangi bir kaynağa düzenlemenizi sağlar. Ayrıca [Bul komut](/visualstudio/ide/reference/find-command) ASCII dizelerinde veya onaltılık baytlar için aranacak. Kullanım **ikili düzenleyici** yalnızca özel kaynaklar veya kaynak türleri Visual Studio ortamı tarafından desteklenmeyen görüntülemek veya küçük gerektiğinde değiştirir.
+**İkili düzenleyici** onaltılık veya ASCII biçiminde ikili düzeyde herhangi bir kaynağa düzenlemenizi sağlar. Ayrıca [Bul komut](/visualstudio/ide/reference/find-command) ASCII dizelerinde veya onaltılık baytlar için aranacak. Kullanım **ikili düzenleyici** yalnızca özel kaynaklar veya kaynak türleri Visual Studio ortamı tarafından desteklenmeyen görüntülemek veya küçük gerektiğinde değiştirir. **İkili düzenleyici** Express sürümlerinde kullanılamaz.
 
-Açmak için **ikili düzenleyici** yeni bir dosya menüsüne gidin **dosya** > **yeni** > **dosya**, türünü seçin Dosya düzenleme ardından yanındaki açılan oku seçerek **açık** düğmesini ve ardından **birlikte Aç** > **ikili düzenleyici**.
+- Açmak için **ikili düzenleyici** yeni bir dosya menüsüne gidin **dosya** > **yeni** > **dosya**, türünü seçin Dosya düzenleme ardından yanındaki açılan oku seçerek **açık** düğmesini ve ardından **birlikte Aç** > **ikili düzenleyici**.
 
-Açmak için **ikili düzenleyici** varolan bir dosyanın, menüsüne gidin **dosya** > **açın** > **dosya**seçin Dosya düzenleme ardından yanındaki açılan oku seçerek **açık** düğmesini ve ardından **birlikte Aç** > **ikili düzenleyici**.
+- Açmak için **ikili düzenleyici** varolan bir dosyanın, menüsüne gidin **dosya** > **açın** > **dosya**seçin Dosya düzenleme ardından yanındaki açılan oku seçerek **açık** düğmesini ve ardından **birlikte Aç** > **ikili düzenleyici**.
 
    ![İkili Düzenleyici](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    Görüntülenen iletişim kutusu için ikili verileri **İkili Düzenleyici**
@@ -45,9 +45,7 @@ Açmak için **ikili düzenleyici** varolan bir dosyanın, menüsüne gidin **do
 Yalnızca belirli ASCII değerleri temsil edildiğini **ikili düzenleyici** (0x20 0x7E aracılığıyla). Genişletilmiş karakterler, nokta sağ panelde ASCII değeri bölümünde görüntülenir **ikili düzenleyici**. Yazdırılabilir karakter ASCII 32 126-değerlerdir.
 
 > [!TIP]
-> Kullanırken **ikili düzenleyici**, çoğu durumda bir kaynağa özgü komutların kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Kullanılabilir komutlar ne imlecinizi işaret ettiği üzerinde bağlıdır. Örneğin işaret ederken tıklarsanız **ikili düzenleyici** ile seçilen onaltılı değerler, kısayol menüsünü gösterir **Kes**, **kopyalama**, ve **Yapıştır**  komutları.
-
-**İkili düzenleyici** Express sürümlerinde kullanılamaz.
+> Kullanırken **ikili düzenleyici**, çoğu durumda bir kaynağa özgü komutların kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Kullanılabilir komutlar ne imlecinizi işaret ettiği üzerinde bağlıdır. Örneğin işaret ederken sağ tıklayın, **ikili düzenleyici** ile seçilen onaltılı değerler, kısayol menüsünü gösterir **Kes**, **kopyalama**ve **Yapıştır** komutları.
 
 ## <a name="how-to"></a>Nasıl Yapılır
 
@@ -55,12 +53,12 @@ Yalnızca belirli ASCII değerleri temsil edildiğini **ikili düzenleyici** (0x
 
 ### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>İkili düzenleme için bir Windows Masaüstü kaynağını açmak için
 
-1. İçinde [kaynak görünümü](../windows/resource-view-window.md), düzenlemek istediğiniz belirli bir kaynak dosyasını seçin.
+1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), düzenlemek istediğiniz belirli bir kaynak dosyasını seçin.
 
 1. Kaynak sağ tıklayıp **açık ikili veri**.
 
 > [!NOTE]
-> Kullanırsanız [kaynak görünümü](../windows/resource-view-window.md) tanımadığı Visual Studio, bir biçime bir kaynak penceresini RCDATA veya özel bir kaynak gibi kaynak otomatik olarak açılır **ikili düzenleyici**.
+> Kullanırsanız **kaynak görünümü** tanımadığı Visual Studio, bir biçime bir kaynak penceresini RCDATA veya özel bir kaynak gibi kaynak otomatik olarak açılır **ikili düzenleyici**.
 
 ### <a name="to-open-a-managed-resource-for-binary-editing"></a>İkili düzenleme için bir yönetilen kaynak açmak için
 
@@ -75,8 +73,7 @@ Yalnızca belirli ASCII değerleri temsil edildiğini **ikili düzenleyici** (0x
 
 ### <a name="to-edit-a-resource"></a>Bir kaynak düzenlemek için
 
-> [!NOTE]
-> Kullanmak istiyorsanız **ikili düzenleyici** zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta önce diğer düzenleyici penceresini kapatın.
+Kullanmak istiyorsanız **ikili düzenleyici** zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta önce diğer düzenleyici penceresini kapatın.
 
 1. Düzenlemek istediğiniz bayt seçin.
 
@@ -93,7 +90,7 @@ Yalnızca belirli ASCII değerleri temsil edildiğini **ikili düzenleyici** (0x
 
 ASCII dizelerinde veya onaltılık baytlar için arama yapabilirsiniz. Örneğin, bulma için *Hello*, için ya da dize arama yapabilirsiniz *Hello* ya da onaltılık değerini *48 65 6C 6 C 6F*.
 
-1. Gelen **Düzenle** menüsünde seçin [Bul](/visualstudio/ide/reference/find-command).
+1. Menü Git **Düzenle** > [Bul](/visualstudio/ide/reference/find-command).
 
 1. İçinde **Aranan** kutusunda aşağı açılan listeden önceki bir arama dizesi seçin veya bulmak istediğiniz veri türü.
 
@@ -126,7 +123,7 @@ Kaynak normal kaynak betiği (.rc) dosyası sözdizimi kullanılarak ayrı bir d
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

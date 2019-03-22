@@ -3,7 +3,6 @@ title: C4200 ile c4399 arasındaki derleyici uyarıları
 ms.date: 11/17/2017
 f1_keywords:
 - C4203
-- C4274
 - C4277
 - C4279
 - C4298
@@ -12,7 +11,6 @@ f1_keywords:
 - C4303
 - C4314
 - C4315
-- C4316
 - C4317
 - C4318
 - C4321
@@ -22,22 +20,20 @@ f1_keywords:
 - C4328
 - C4330
 - C4338
-- C4343
 - C4352
 - C4362
 - C4367
 - C4370
-- C4373
 - C4380
 - C4387
 - C4388
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
-ms.openlocfilehash: 9cca32973ead1d7d88e37c4745491c8d5f181e0b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d79c9c12664f9920f03490b8cb53ec671d3d78a3
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810516"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328271"
 ---
 # <a name="compiler-warnings-c4200-through-c4399"></a>C4200 ile c4399 arasındaki derleyici uyarıları
 
@@ -103,7 +99,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4269](../../error-messages/compiler-warnings/compiler-warning-level-1-c4269.md)|'*tanımlayıcı*': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan 'const' otomatik verileri güvenilmez sonuçlar üretiyor|
 |[Derleyici Uyarısı (düzey 1) C4272](../../error-messages/compiler-warnings/compiler-warning-level-1-c4272.md)|'*işlevi*': __declspec(dllimport) olarak işaretlenmiş; bir işlev alırken yerel çağrı kuralı belirtmeniz gerekir.|
 |[Derleyici Uyarısı (düzey 1) C4273](../../error-messages/compiler-warnings/compiler-warning-level-1-c4273.md)|'*işlevi*': tutarsız dll bağlaması|
-|Derleyici Uyarısı (düzey 1) C4274|#ident yoksayıldı; #pragma comment (exestr, 'string') için belgelere bakın|
+|[Derleyici Uyarısı (düzey 1) C4274](compiler-warning-level-1-c4274.md)|#ident yoksayıldı; #pragma comment (exestr, 'string') için belgelere bakın|
 |[Derleyici Uyarısı (düzey 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|dll arabirimi olmayan '*classkey*' '*ıdentifier1*'dll arabirimi için temel olarak kullanıldı'*classkey*' '*identifier2*'|
 |[Derleyici Uyarısı (düzey 1) C4276](../../error-messages/compiler-warnings/compiler-warning-level-1-c4276.md)|'*işlevi*': hiçbir prototip sağlanmadı; hiç parametre olmadığı varsayıldı|
 |Derleyici Uyarısı (düzey 1) C4277|içeri aktarılan öğe '*classname*::*üye*' hem veri üyesi hem de işlev üyesi; olarak mevcut veri üyesi yoksayıldı|
@@ -140,7 +136,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4313](../../error-messages/compiler-warnings/compiler-warning-level-1-c4313.md)|'*işlevi*': '*format_specifier*'dize bağımsız değişkeni ile çakışıyor biçiminde'*argument_number*'türündeki'*türü*'|
 |Derleyici Uyarısı C4314|Beklenen pragma parametresinin '32' veya '64' olması|
 |Derleyici Uyarısı (düzey 4) C4315|'*classname*': üye 'this' işaretçisi '*üye*'değil hizalı olmayabilir'*hizalama*' Oluşturucu tarafından beklendiği gibi|
-|Derleyici Uyarısı (Düzey 3) C4316|'*tanımlayıcı*': yığın üzerinde ayrılan nesne değil hizalanmayacak '*hizalama*'|
+|[Derleyici Uyarısı (Düzey 3) C4316](compiler-warning-level-3-c4316.md)|'*tanımlayıcı*': yığın üzerinde ayrılan nesne değil hizalanmayacak '*hizalama*'|
 |Derleyici Uyarısı (düzey 1) C4317|'*printf_family*': biçim dizesi için yeterli bağımsız değişken geçirildi|
 |Derleyici Uyarısı C4318|memset'e uzunluk olarak sıfır sabiti geçirme|
 |[Derleyici Uyarısı (düzey 1) C4319](../../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md)|'*işleci*': sıfır genişletme '*type1*'to'*type2*' daha büyük boyutlu|
@@ -163,7 +159,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 4) C4339](../../error-messages/compiler-warnings/compiler-warning-level-4-c4339.md)|'*türü*': Tanımsız Tür algılandı Kullan ' WinRT&#124;CLR' meta-data - bu türün kullanımı bir çalışma zamanı özel durumuna neden olabilir|
 |[Derleyici Uyarısı (düzey 1) C4340](../../error-messages/compiler-warnings/compiler-warning-level-1-c4340.md)|'*değer*': değer pozitifken negatif değer olarak sarmalandı|
 |[Derleyici Uyarısı (düzey 1) C4342](../../error-messages/compiler-warnings/compiler-warning-level-1-c4342.md)|davranış değişikliği: '*işlevi*' çağrıldı, ancak önceki sürümlerde bir üye işleç çağrılıyordu|
-|Derleyici Uyarısı (düzey 4) C4343|#pragma optimize("g",off) /Og seçeneğini geçersiz kılar.|
+|[Derleyici Uyarısı (düzey 4) C4343](compiler-warning-level-4-c4343.md)|#pragma optimize("g",off) /Og seçeneğini geçersiz kılar.|
 |[Derleyici Uyarısı (düzey 1) C4344](../../error-messages/compiler-warnings/compiler-warning-level-1-c4344.md)|davranış değişikliği: açık şablon bağımsız değişkenleri çağrısıyla sonuçlandı kullanımını '*işlevi*'|
 |[Derleyici Uyarısı (düzey 1) C4346](../../error-messages/compiler-warnings/compiler-warning-level-1-c4346.md)|'*adı*': bağımlı öğe adı bir tür değil|
 |[Derleyici Uyarısı (düzey 1) C4348](../../error-messages/compiler-warnings/compiler-warning-level-1-c4348.md)|'*türü*': Varsayılan parametrenin yeniden tanımlanması: parametre '*parameter_number*'|
@@ -184,7 +180,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4369](../../error-messages/compiler-warnings/compiler-warning-level-1-c4369.md)|'*Numaralandırıcı*': Numaralandırıcı değeri '*değer*'olarak gösterilemez'*türü*', değer'*yeni_değer*'|
 |Derleyici Uyarısı C4370|'*classname*': sınıfın düzeni önceki bir sürümünden daha iyi paketleme nedeniyle derleyici değişti|
 |[Derleyici Uyarısı (Düzey 3) C4371](../../error-messages/compiler-warnings/c4371.md)|'*classname*': sınıfın düzeni önceki bir üyesinin daha iyi paketleme nedeniyle derleyici sürümünden değişmiş olabilir '*üye*'|
-|Derleyici Uyarısı (Düzey 3) C4373|'*derived_class*::*işlevi*': sanal işlev geçersiz *$base_class*::*işlevi*', derleyicinin önceki sürümleri Parametreler yalnızca const/volatile niteleyicileri farklıydı olduğunda geçersiz|
+|[Derleyici Uyarısı (Düzey 3) C4373](compiler-warning-level-3-c4373.md)|'*derived_class*::*işlevi*': sanal işlev geçersiz *$base_class*::*işlevi*', derleyicinin önceki sürümleri Parametreler yalnızca const/volatile niteleyicileri farklıydı olduğunda geçersiz|
 |[Derleyici Uyarısı (düzey 1) C4374](../../error-messages/compiler-warnings/compiler-warning-level-1-c4374.md)|'*işlev1*': arabirim yöntemi sanal olmayan yöntemi tarafından uygulanmayacak '*function2*'|
 |[Derleyici Uyarısı (düzey 1) C4375](../../error-messages/compiler-warnings/compiler-warning-level-1-c4375.md)|Genel olmayan yöntemin '*method2*'geçersiz '*method2*'|
 |[Derleyici Uyarısı (düzey 1) C4376](../../error-messages/compiler-warnings/compiler-warning-level-1-c4376.md)|erişim belirticisi '*old_specifier*:' artık desteklenmiyor: Lütfen '*new_specifier*:' yerine|
@@ -205,7 +201,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Uyarısı (düzey 1) C4393](../../error-messages/compiler-warnings/compiler-warning-level-1-c4393.md)|'*değişkeni*': const hiçbir etkisi olmaz '*değişmez değer*' veri üyesi; yoksayıldı|
 |[Derleyici Uyarısı C4394](../../error-messages/compiler-warnings/compiler-warning-c4394.md)|'*işlevi*': per-appdomain simgesi __declspec('dllexport') ile işaretlenmemelidir|
 |[Derleyici Uyarısı (düzey 1) C4395](../../error-messages/compiler-warnings/compiler-warning-level-1-c4395.md)|'*işlevi*': üye işlev, initonly veri üyesinin bir kopyası üzerinde çağrılacak '*üye*'|
-|Derleyici Uyarısı (Düzey 2) C4396|'*işlevi*': işlev şablonunun bir özelleştirmesi için bir friend bildirimi başvurduğunda, satır içi belirtici kullanılamaz|
+|[Derleyici Uyarısı (Düzey 2) C4396](compiler-warning-level-2-c4396.md)|'*işlevi*': işlev şablonunun bir özelleştirmesi için bir friend bildirimi başvurduğunda, satır içi belirtici kullanılamaz|
 |[Derleyici Uyarısı (düzey 1) C4397](../../error-messages/compiler-warnings/compiler-warning-level-1-c4397.md)|DefaultCharSetAttribute yoksayıldı|
 |[Derleyici Uyarısı (düzey 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'*değişkeni*': başına-process genel nesnesi birden fazla AppDomain ile doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 1) C4399](../../error-messages/compiler-warnings/compiler-warning-level-1-c4399.md)|'*sembol*': işlem içi simge/CLR ile derlendiğinde __declspec('dllimport') ile işaretlenmemelidir: Saf|

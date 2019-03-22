@@ -3,12 +3,12 @@ title: 'Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak i�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 4be8ba11-c223-44ad-9256-7e1edae9a7bc
-ms.openlocfilehash: b81f6901e60f27ada27f14d7dbc7c10fa3faec34
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: b9016f05b82e3eb04474d370bd069e8008de5278
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334975"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328726"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe kullanın
 
@@ -18,7 +18,7 @@ Yerel C++ kodunu ve Windows çalışma zamanı bileşenleri arasındaki etkileş
 
 - Windows çalışma zamanı Şablon kitaplığı (WRL) kullanılarak yazılan bir C++ uygulamasına özel bir Windows çalışma zamanı bileşeni kullanabilir, böylece özel IDL ve üst bilgi dosyaları oluşturma.
 
-- Kullanıcı tanımlı olay türleri için Ara sunucu ve saplama dosyaları bir Windows çalışma zamanı bileşeni oluşturma. Daha fazla bilgi için [özel olayları ve olay erişimcileri Windows çalışma zamanı bileşenlerinde](/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components).
+- Kullanıcı tanımlı olay türleri için Ara sunucu ve saplama dosyaları bir Windows çalışma zamanı bileşeni oluşturma. Daha fazla bilgi için [özel olayları ve olay erişimcileri Windows çalışma zamanı bileşenlerinde](/windows/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components).
 
 Bu araçlar, yalnızca özel .winmd dosyalarını ayrıştırmak için gereklidir. Windows işletim sistemi bileşenlerinin .idl ve .h dosyaları zaten sizin için oluşturulur. Windows 8.1, varsayılan olarak \Program dosyaları (x86) \Windows Kits\8.1\Include\winrt içinde bulunan\\.
 
@@ -75,4 +75,4 @@ Ardından, midlrt oluşturulan IDL dosyası üzerinde çalıştırılır. Dikkat
 
 Giriş dosyası ancak .idl dosya adı uzantısına sahip olduğundan winmdidl işlemi çıkış dosyasından aynı ada sahip.
 
-WRL erişilecek bir Windows çalışma zamanı bileşeni geliştiriyorsanız winmdidl.exe ve midlrt.exe .idl ve .h dosyaları her derleme üzerinde oluşturulan derleme sonrası adımları çalıştırılacak belirtebilirsiniz. Bir örnek için bkz. [Raising Events Windows çalışma zamanı bileşenlerinde](/uwp/winrt-components/raising-events-in-windows-runtime-components).
+WRL erişilecek bir Windows çalışma zamanı bileşeni geliştiriyorsanız winmdidl.exe ve midlrt.exe .idl ve .h dosyaları her derleme üzerinde oluşturulan derleme sonrası adımları çalıştırılacak belirtebilirsiniz. Bir örnek için bkz. [Raising Events Windows çalışma zamanı bileşenlerinde](/windows/uwp/winrt-components/raising-events-in-windows-runtime-components).

@@ -3,12 +3,12 @@ title: Visual Studio'da CMake derleme ayarlarını özelleştirme
 ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: aa840dd41ee6843afae80343e42ba62741bbcd80
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: dd34fbefcbc89c7c4aa93105ae5bad31ae4d5f01
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823505"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328304"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake derleme ayarlarını özelleştirme
 
@@ -53,19 +53,19 @@ Doğrudan düzenleyebilirsiniz `CMakeSettings.json` aşağıdaki örnekte özel 
 
 - **Oluşturucu**: eşler için CMake **- G** geçin ve kullanılacak Oluşturucu belirtir. Bu özellik, bir makro ayrıca kullanılabilir `${generator}`, diğer özellik değerlerini oluştururken. Visual Studio şu anda aşağıdaki CMake oluşturucuları destekler:
 
-    - "Ninja"
-    - "Visual Studio 14 2015"
-    - "Visual Studio 14 2015 ARM"
-    - "Visual Studio 14 2015 Win64"
-    - "Visual Studio 15 2017"
-    - "Visual Studio 15 2017 ARM"
-    - "Visual Studio 15 2017 Win64"
+  - "Ninja"
+  - "Visual Studio 14 2015"
+  - "Visual Studio 14 2015 ARM"
+  - "Visual Studio 14 2015 Win64"
+  - "Visual Studio 15 2017"
+  - "Visual Studio 15 2017 ARM"
+  - "Visual Studio 15 2017 Win64"
 
-    Ninja, esneklik ve işlevi yerine hızlı derleme hızı için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projelerini Ninja kullanarak doğru şekilde derlenmesi olabilir. Bu meydana gelirse, bunun yerine Visual Studio projesi oluşturmak için CMake bildirebilirsiniz.
+  Ninja, esneklik ve işlevi yerine hızlı derleme hızı için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projelerini Ninja kullanarak doğru şekilde derlenmesi olabilir. Bu meydana gelirse, bunun yerine Visual Studio projesi oluşturmak için CMake bildirebilirsiniz.
 
-    Visual Studio Oluşturucu belirtmek için açık `CMakeSettings.json` seçerek ana menüden **CMake | CMake ayarlarını değiştir**. "Ninja" silin ve "V" yazın. Bu, istediğiniz Oluşturucu seçmenize olanak sağlayan IntelliSense etkinleştirir.
+  Visual Studio Oluşturucu belirtmek için açık `CMakeSettings.json` seçerek ana menüden **CMake | CMake ayarlarını değiştir**. "Ninja" silin ve "V" yazın. Bu, istediğiniz Oluşturucu seçmenize olanak sağlayan IntelliSense etkinleştirir.
 
-    Etkin yapılandırma bir Visual Studio oluşturucuyu belirttiğinde, varsayılan olarak MSBuild.exe ile çağrılan `-m -v:minimal` bağımsız değişkenler. Derleme içinde özelleştirmek için `CMakeSettings.json` , belirtebileceğiniz ek dosya [MSBuild komut satırı bağımsız değişkenleri](../build/msbuild-visual-cpp-overview.md) yapı sistemi geçirilecek `buildCommandArgs` özelliği:
+  Etkin yapılandırma bir Visual Studio oluşturucuyu belirttiğinde, varsayılan olarak MSBuild.exe ile çağrılan `-m -v:minimal` bağımsız değişkenler. Derleme içinde özelleştirmek için `CMakeSettings.json` , belirtebileceğiniz ek dosya [MSBuild komut satırı bağımsız değişkenleri](../build/reference/msbuild-visual-cpp-overview.md) yapı sistemi geçirilecek `buildCommandArgs` özelliği:
     
     ```json
     "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
@@ -132,7 +132,7 @@ usage: ninja [options] [targets...]
 |   -n       | kuru çalıştırın (ancak bunlar başarılı gibi davranmasına komutlarını çalıştırma)|
 |   -v       | yapı sırasında tüm komut satırları göster|
 |   -d modu  | (-d listesini modları kullanın) hata ayıklamayı etkinleştir|
-|   -t aracı  | bir subtool (kullanın -t listesini alt araçları) çalıştırın. TopLevel seçenekleri sonlandırır; Daha fazla bayrakları araç geçirilir|
+|   -t aracı  | bir subtool (kullanın -t listesini alt araçları) çalıştırın. üst düzey seçenekleri sonlandırır; Daha fazla bayrakları araç geçirilir|
 |   -w BAYRAĞI  | Uyarılar (kullanın -w listesini uyarılar) ayarlama|
 
 ## <a name="inherited-environments"></a>Devralınan ortamlar

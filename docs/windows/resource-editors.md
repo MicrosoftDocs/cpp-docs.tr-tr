@@ -21,21 +21,21 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 118744f70242b511930399c5786035493e9b7cf0
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: a0b5e3905daf72307702dbe4f05c2871cf768ac0
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210750"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328811"
 ---
 # <a name="resource-editors-c"></a>Kaynak Düzenleyicileri (C++)
 
-A **Kaynak Düzenleyicisi** oluştururken veya değiştirirken bir Visual Studio projesinde bulunan kaynaklar için özel bir ortamdır. Visual Studio kaynak düzenleyicileri teknikleri ve arabirimleri oluşturma ve uygulama kaynaklarını hızla ve kolayca değiştirme yardımcı olacak paylaşın. Kaynak düzenleyicileri görüntülemek ve kaynakları için uygun düzenleyici ve önizleme kaynakları düzenlemek etkinleştirin.
+Kaynak Düzenleyicisi oluştururken veya değiştirirken bir Visual Studio projesinde bulunan kaynaklar için özel bir ortamdır. Visual Studio kaynak düzenleyicileri teknikleri ve arabirimleri oluşturma ve uygulama kaynaklarını hızla ve kolayca değiştirme yardımcı olacak paylaşın. Kaynak düzenleyicileri görüntülemek ve kaynakları için uygun düzenleyici ve önizleme kaynakları düzenlemek etkinleştirin.
 
 Bir kaynak oluşturduğunuzda veya açtığınızda uygun Düzenleyicisi'ni otomatik olarak açılır.
 
 > [!NOTE]
-> Yönetilen projelere kaynak betik dosyalarına kullanmadığından kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanabileceğiniz [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
+> Yönetilen projelere kaynak betik dosyalarına kullanmadığından kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanabileceğiniz [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyici](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
 
 |Kullan...|Düzenlemek için...|
 |----------------|----------------|
@@ -46,7 +46,7 @@ Bir kaynak oluşturduğunuzda veya açtığınızda uygun Düzenleyicisi'ni otom
 |[Menü Düzenleyicisi](../windows/menu-editor.md)|Visual C++ projelerinde menüsü kaynaklarını.|
 |[Ribbon Düzenleyicisi](../mfc/ribbon-designer-mfc.md)|MFC projeleri Şerit kaynakları.|
 |[Dize Düzenleyicisi](../windows/string-editor.md)|Visual C++ projeleri tablolarında dize.|
-|[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)|Visual C++ projelerinde araç çubuğu kaynakları. Araç çubuğu Düzenleyicisi Resim Düzenleyicisi'nin parçasıdır.|
+|[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)|Visual C++ projelerinde araç çubuğu kaynakları. **Araç çubuğu Düzenleyicisi** parçasıdır **Resim Düzenleyicisi**.|
 |[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)|Visual C++ projelerinde sürüm bilgisi.|
 
 > [!NOTE]
@@ -54,7 +54,7 @@ Bir kaynak oluşturduğunuzda veya açtığınızda uygun Düzenleyicisi'ni otom
 
 ## <a name="view-and-edit-resources"></a>Görünümü ve düzenleme kaynakları
 
-Her kaynak türüne sahip bir **Kaynak Düzenleyicisi** bu kaynak türüne özgü. Yeniden düzenleme, yeniden boyutlandırma, denetimleri ve Özellik Ekle veya aksi ilişkili Düzenleyicisi'ni kullanarak bir kaynak özelliklerini değiştirin. Bir kaynak olarak da düzenleyebilirsiniz [metin biçimi](../windows/how-to-open-a-resource-script-file-in-text-format.md) ve [ikili biçimi](../windows/opening-a-resource-for-binary-editing.md).
+Her kaynak türü bu kaynak türü için belirli bir kaynak Düzenleyicisi sahiptir. Yeniden düzenleme, yeniden boyutlandırma, denetimleri ve Özellik Ekle veya aksi ilişkili Düzenleyicisi'ni kullanarak bir kaynak özelliklerini değiştirin. Bir kaynak olarak da düzenleyebilirsiniz [metin biçimi](../windows/how-to-open-a-resource-script-file-in-text-format.md) ve [ikili biçimi](../windows/opening-a-resource-for-binary-editing.md).
 
 Bazı kaynak türleri içeri aktarıldı ve çeşitli şekillerde kullanılan tek dosyalardır; Bunlar, bit eşlemler, simgeler, işaretçiler, araç çubukları ve html dosyaları içerir. Böyle kaynaklar dosya adlarına sahip ve [kaynak tanımlayıcıları](../windows/symbols-resource-identifiers.md). Diğer iletişim kutuları, menüler ve Win32 projeleri, dize tablolarında gibi yalnızca bir kaynak betiği (.rc) veya kaynak şablonu (.rct) dosyasının parçası olarak mevcut.
 
@@ -63,17 +63,17 @@ Kaynakları da olabilir proje açmak zorunda kalmadan projenin dışında düzen
 > [!NOTE]
 > Kaynağın özelliklerini kullanarak değiştirilebilir **özellikleri** penceresi.
 
-- Bir kaynağın özelliklerini düzenlemek için [kaynak görünümü](../windows/resource-view-window.md), seçin ve düzenlemek istediğiniz kaynağa sağ **özellikleri**.  Ardından [Özellikler penceresi](/visualstudio/ide/reference/properties-window), kaynak özelliklerini değiştirin.
+- Bir kaynağın özelliklerini düzenlemek için [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), seçin ve düzenlemek istediğiniz kaynağa sağ **özellikleri**.  Ardından [Özellikler penceresi](/visualstudio/ide/reference/properties-window), kaynak özelliklerini değiştirin.
 
 - Bir kaynak özelliklerine yapılan bir değişikliği geri almak için kaynak odak sahip olduğundan emin olun **kaynak görünümü** ve **geri** gelen **Düzenle** menüsü.
 
 ### <a name="win32-resources"></a>Win32 kaynakları
 
-Win32 kaynaklarında erişebileceğiniz [kaynak görünümü](../windows/resource-view-window.md) bölmesi.
+Win32 kaynaklarında erişebileceğiniz [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) bölmesi.
 
-Bir Win32 kaynağı kaynak düzenleyicide görüntülemek için:
+#### <a name="to-view-a-win32-resource-in-a-resource-editor"></a>Bir Win32 kaynağı kaynak düzenleyicide görüntülemek için
 
-1. Seçin **kaynak görünümü** gelen **görünümü** menüsü.
+1. Menü Git **görünümü** > **kaynak görünümü**.
 
 1. Varsa **kaynak görünümü** penceresi seçin en üst penceresine değil **kaynak görünümü** dön getirmek için sekmesinde.
 
@@ -81,22 +81,22 @@ Bir Win32 kaynağı kaynak düzenleyicide görüntülemek için:
 
 1. Örneğin, kaynağa çift tıklatın **IDD_ABOUTBOX**.
 
-   Kaynak uygun Düzenleyicisi'nde açılır. Örneğin, iç kaynak iletişim kutusu kaynakları için açılır **iletişim** Düzenleyici.
+   Kaynak uygun Düzenleyicisi'nde açılır. Örneğin, iç kaynak iletişim kutusu kaynakları için açılır **iletişim kutusu Düzenleyicisi**.
 
-Mevcut bir Win32 kaynağı silmek için:
+#### <a name="to-delete-an-existing-win32-resource"></a>Mevcut bir Win32 kaynağı silmek için
 
 1. İçinde **kaynak görünümü**, bir kaynak türü için düğümü genişletin.
 
 1. Sağ tıklayın ve silmek istediğiniz kaynak **Sil**.
 
-   > [!TIP]
-   > Bir belge penceresi dışında bir proje açın .rc dosyası varsa, bu yöntemi kullanabilirsiniz.
+> [!TIP]
+> Bir belge penceresi dışında bir proje açın .rc dosyası varsa, bu yöntemi kullanabilirsiniz.
 
 ### <a name="managed-project-resources"></a>Yönetilen proje kaynakları
 
-Yönetilen projelere kaynak betik dosyalarına kullanmayın çünkü kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanım [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar bağlı kaynaklar olmalıdır ve Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
+Yönetilen projelere kaynak betik dosyalarına kullanmayın çünkü kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanım [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyici](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar bağlı kaynaklar olmalıdır ve Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
 
-- Yönetilen kaynağı kaynak düzenleyicide görüntülemek için **Çözüm Gezgini**, kaynak, örneğin, çift *Bitmap1.bmp*. Kaynak uygun Düzenleyicisi'nde açılır.
+- Yönetilen kaynağı kaynak düzenleyicide görüntülemek için **Çözüm Gezgini**, kaynak, örneğin, çift *Bitmap1.bmp*, ve kaynak uygun Düzenleyicisi'nde açılır.
 
 - Mevcut bir yönetilen kaynak silmek için **Çözüm Gezgini**, seçin ve silmek istediğiniz kaynağa sağ **Sil**.
 
@@ -111,20 +111,20 @@ Aşağıdaki kaynaklar, görüntü önizlemesini sağlaması gerekmez: Hızland�
 > [!NOTE]
 > Kaynakları Önizleme için Win32 gerektirir.
 
-Kaynakları Önizleme için:
+### <a name="to-preview-resources"></a>Kaynakları Önizleme
 
-1. İçinde [kaynak görünümü](../windows/resource-view-window.md) veya seçin, kaynak, örneğin, bir belge penceresi **IDD_ABOUTBOX**.
+1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) veya seçin, kaynak, örneğin, bir belge penceresi **IDD_ABOUTBOX**.
 
 1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window)seçin **özellik sayfaları** düğmesi.
 
    > [!TIP]
    > Bir kısayolu, menüsüne gidin **görünümü** > **özellik sayfaları**.
 
-   **Özellik sayfası** kaynak açar, kaynak önizlemesi görüntüleniyor. Kullanabileceğiniz **yukarı** ve **aşağı** ağaç gezinmek için ok tuşlarını denetlemek de **kaynak görünümü** ya da belge penceresini. **Özellik sayfası** açık kalır ve odaklı ve önizlenebilir herhangi bir kaynağa göster.
+   **Özelliği** kaynak sayfasını açar, kaynak önizlemesi görüntüleniyor. Kullanabileceğiniz **yukarı** ve **aşağı** ağaç gezinmek için ok tuşlarını denetlemek de **kaynak görünümü** ya da belge penceresini. **Özelliği** sayfası açık kalır ve odaklı ve önizlenebilir herhangi bir kaynağa göster.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

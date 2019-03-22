@@ -12,16 +12,16 @@ helpviewer_keywords:
 - dialog box controls, variable types
 - variables, dialog box control member variables
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
-ms.openlocfilehash: 2a519c0606a7df6e0ce55997a055d78865afafbf
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 0f10b4867b443f0db69743d7ff23bb059290b0a5
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694419"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328967"
 ---
 # <a name="add-a-member-variable"></a>Üye değişkeni ekleme
 
-Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı ilgili bilgileri alın ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak üzere tasarlanmıştır. Bir üye değişkeninin ekleyebilir [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/resource-view-window.md), veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).
+Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı ilgili bilgileri alın ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak üzere tasarlanmıştır. Bir üye değişkeninin ekleyebilir [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/how-to-create-a-resource-script-file.md#create-resources), veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).
 
 > [!NOTE]
 > Tasarladığınız ve iletişim kutusu uygulama, onu daha verimli bir iletişim kutusunda kullanılacak Düzenleyicisi iletişim kutusu denetimleri eklemek için bulabilirsiniz ve ardından Denetim üyesi değişkenleri uygulamak için.
@@ -162,7 +162,7 @@ MFC'de desteklenen tüm iletişim kutusu denetim türleri aşağıdaki tabloda a
 |İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|None; yalnızca denetim|Yok|
 |Zengin düzenleme 2 denetimi|RichEdit20A|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|`CString`|En fazla karakter|
 |Zengin düzenleme denetimi|RICHEDIT|`CRichEditCtrl`|`CString`|En fazla karakter|
-|(Dikey veya yatay kaydırma çubuğu|KAYDIRMA ÇUBUĞU|[CScrollBar](../mfc/reference/cscrollbar-class.md)|`int`|En düşük değer/en yüksek değeri|
+|(Dikey veya yatay kaydırma çubuğu|SCROLLBAR|[CScrollBar](../mfc/reference/cscrollbar-class.md)|`int`|En düşük değer/en yüksek değeri|
 |Kaydırıcı denetimi|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|`int`|En düşük değer/en yüksek değeri|
 |Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|None; yalnızca denetim|Yok|
 |Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|None; yalnızca denetim|Yok|

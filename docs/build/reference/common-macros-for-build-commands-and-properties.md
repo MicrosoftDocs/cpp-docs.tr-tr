@@ -1,6 +1,6 @@
 ---
-title: Genel derleme komutları ve Özellikler makroları
-ms.date: 05/29/2018
+title: Yaygın MSBuild komutları ve Özellikler makroları
+ms.date: 03/20/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles
 - VC.Project.VCCLCompilerTool.XMLDocumentationFileName
@@ -90,26 +90,29 @@ helpviewer_keywords:
 - builds [C++], macros
 - $(FrameworkDir) macro
 - $(PlatformName) macro
+- $(PlatformShortName) macro
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-ms.openlocfilehash: 669114691bc89c1e8136e07a949be57cda3d71b9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 46fdd5e356ded96388a154ff459ef4cc3c02267f
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57823557"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327685"
 ---
-# <a name="common-macros-for-build-commands-and-properties"></a>Genel derleme komutları ve Özellikler makroları
+# <a name="common-macros-for-msbuild-commands-and-properties"></a>Yaygın MSBuild komutları ve Özellikler makroları
 
-Yükleme seçenekleri bağlı olarak, Visual Studio Makroları yüzlerce kullanılabilir hale. Bunlar varsayılan olarak veya .props veya .targets dosyalarında veya proje ayarlarınızda ayarlanır MSBuild özellikleri karşılık gelir. Bu makrolar bir projesinin her yerde kullanabilirsiniz **özellik sayfaları** iletişim kutusu burada dizeleri kabul edilir. Bu makrolar, büyük/küçük harfe duyarlı değildir.
+Yükleme seçenekleri bağlı olarak, Visual Studio Makroları yüzlerce kullanılabilir size (Msbuild'i temel alan) Visual Studio projesi içinde yapabilirsiniz. Bunlar varsayılan olarak veya .props veya .targets dosyalarında veya proje ayarlarınızda ayarlanır MSBuild özellikleri karşılık gelir. Bu makrolar bir projesinin her yerde kullanabilirsiniz **özellik sayfaları** iletişim kutusu burada dizeleri kabul edilir. Bu makrolar, büyük/küçük harfe duyarlı değildir.
 
 ## <a name="view-the-current-properties-and-macros"></a>Makroları ve geçerli özelliklerini görüntüleyin
 
-Şu anda kullanılabilir makrolar, herhangi bir özellik sayfasında görüntülenecek **özellik sayfaları** iletişim kutusunda özelliği satırın sonundaki aşağı açılır oku seçin. Varsa **Düzenle** kullanılabilir seçin ve ardından Düzenle iletişim kutusunda **makroları** düğmesi. Özellikler ve makrolar Visual Studio'da görünür geçerli kümesini geçerli değerin yanı sıra her biri için listelenir. Daha fazla bilgi için **Specifying User-Defined değerleri** bölümünü [C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md).
+Tüm kullanılabilir makroları görüntülemek için **özellik sayfaları** iletişim altında **VC ++ dizinleri**, özellik satırın sonundaki aşağı açılır oku seçin. Tıklayarak **Düzenle** Düzenle iletişim kutusunda seçin **makroları** düğmesi. Özellikler ve makrolar Visual Studio'da görünür geçerli kümesini geçerli değerin yanı sıra her biri için listelenir. Daha fazla bilgi için **Specifying User-Defined değerleri** bölümünü [C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md).
+
+![VC ++ makroları düğmesi](../media/vcppdir_libdir_macros.png "makroları menüsü")
 
 ## <a name="list-of-common-macros"></a>Genel makro listesi
 
-Bu tablo, uygun makroları yaygın olarak kullanılan bir alt kümesi açıklar. Bu liste kapsamlı gölgeden uzak olan. MSBuild özellik tanımları nasıl oluşturulduğunu ve .props ve .targets .vcxproj dosyaları içindeki makrolar olarak kullanılan hakkında daha fazla bilgi için bkz [MSBuild özellikleri](/visualstudio/msbuild/msbuild-properties).
+Bu tablo, uygun makroları yaygın olarak kullanılan bir alt kümesi açıklar; Çoğu burada listelenmeyen daha vardır. Git **makroları** tüm özelliklerini ve geçerli değerlerini, projenizdeki görmek için iletişim. MSBuild özellik tanımları nasıl oluşturulduğunu ve .props ve .targets .vcxproj dosyaları içindeki makrolar olarak kullanılan hakkında daha fazla bilgi için bkz [MSBuild özellikleri](/visualstudio/msbuild/msbuild-properties).
 
 |Makrosu|Açıklama|
 |-----------|-----------------|
@@ -122,6 +125,7 @@ Bu tablo, uygun makroları yaygın olarak kullanılan bir alt kümesi açıklar.
 |**$(Intdir)**|Ara dosyaları için belirtilen dizin yolu. Bu göreli bir yol ise, Ara dosyaları proje dizinine eklenen bu yoluna gidin. Bu yolu bir eğik çizgiyle olması gerekir. Bu değeri çözümler **Ara dizin** özelliği. Kullanmayın **$(OutDir)** bu özelliği tanımlamak için.|
 |**$(OutDir)**|Çıkış dosyası dizinine yolu. Bu göreli bir yol ise, çıktı dosyalarının proje dizinine eklenir bu yoluna gidin. Bu yolu bir eğik çizgiyle olması gerekir. Bu değeri çözümler **çıkış dizinine** özelliği. Kullanmayın **$(ıntdir)** bu özelliği tanımlamak için.|
 |**$(Platform)**|Geçerli proje platformu, örneğin, "Win32" adı.|
+|**$(PlatformShortName)**|Örneğin, "x86" veya "x64" geçerli mimariye kısa adı.|
 |**$(ProjectDir)**|(Sürücü + yolu tanımlanan); proje dizini sondaki ters eğik çizgi içerir '\\'.|
 |**$(ProjectExt)**|Projenin dosya uzantısı. İçerdiğinden '.' dosya uzantısı önce.|
 |**$(ProjectFileName)**|(Temel adı + dosya uzantısı tanımlanan) proje dosya adı.|
@@ -162,6 +166,6 @@ C++ için derleme sistemi, Visual Studio 2010 ve Visual Studio 2008 arasında ö
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio projeleri - C++](../creating-and-managing-visual-cpp-projects.md)
+- [Visual Studio Projeleri - C++](../creating-and-managing-visual-cpp-projects.md)
 - [Visual C++ taşıma ve yükseltme Kılavuzu](../../porting/visual-cpp-porting-and-upgrading-guide.md)
 - [Olası yükseltme sorunlarına genel bakış](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

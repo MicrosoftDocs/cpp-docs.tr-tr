@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-ms.openlocfilehash: 31f9ba4e16fa1216db4fb66c7b7faeca333f2c43
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e50e5da5ea24d59131f123bb0c772897f9a30218
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520334"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329032"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)
 
@@ -24,7 +24,7 @@ A *depolama sınıfı* C++ bağlamında değişken bildirimleri olan nesnelerin 
 
 1. [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcüğü bir depolama sınıfı tanımlayıcısı olarak değerlendirilebilir. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.
 
-1. **Visual C++ 2010 ve sonraki sürümlerine:** **otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü C++ dili kaldırılır.
+1. **Visual C++ 2010 ve sonraki sürümleri:** **Otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **Kaydetme** anahtar sözcüğü C++ dili kaldırılır.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -167,7 +167,7 @@ Nesneler ve değişkenler olarak bildirilen **extern** dış bağlantıya sahip 
 
 Deklarace **const** değişkenlerle **extern** depolama sınıfı değişkeni dış bağlantıya sahip olmasına zorlar. Bir başlatma bir **extern const** değişken tanımlayan bir çeviri birimindeki izin verilir. Çeviri birimleri tanımlama çeviri birimi dışında başlatmalarının tanımsız sonuçlar. Daha fazla bilgi için [belirtmek için extern kullanma](../cpp/using-extern-to-specify-linkage.md)
 
-[/ZC: externconstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği, derleyicinin uygulamak neden [dış bağlantısı]() kullanılarak bildirilen değişkenlere `extern constexpr`. Varsayılan olarak ve Visual Studio'nun önceki sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio iç bağlantı için geçerli **constexpr** değişkenleri bile **extern** anahtar sözcüğü kullanılır. **/ZC: externconstexpr** Visual Studio 2017 güncelleştirme 15.6 sürümünde başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. / ZC: externconstexpr /permissive-option etkinleştirmez.
+[/ZC: externconstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği, derleyicinin uygulamak neden [dış bağlantısı](../c-language/external-linkage.md) kullanılarak bildirilen değişkenlere `extern constexpr`. Varsayılan olarak ve Visual Studio'nun önceki sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio iç bağlantı için geçerli **constexpr** değişkenleri bile **extern** anahtar sözcüğü kullanılır. **/ZC: externconstexpr** Visual Studio 2017 güncelleştirme 15.6 sürümünde başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. / ZC: externconstexpr /permissive-option etkinleştirmez.
 
 Aşağıdaki kod iki gösterir **extern** bildirimleri, `DefinedElsewhere` (hangi başvurduğu farklı çeviri biriminde tanımlanan bir ad) ve `DefinedHere` (hangi başvurduğu bir kapsayan kapsam içinde tanımlanan bir ad):
 
@@ -221,7 +221,7 @@ Windows, şirket `thread_local` işlevsel olarak eşdeğerdir [gt;__declspec(thr
 
 ##  <a name="register"></a>  Kaydolun
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü, artık desteklenen bir depolama sınıfı. Anahtar sözcüğü hala standart gelecekte kullanım için ayrılmıştır.
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **Kaydetme** anahtar sözcüğü, artık desteklenen bir depolama sınıfı. Anahtar sözcüğü hala standart gelecekte kullanım için ayrılmıştır.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class

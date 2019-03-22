@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CComMultiThreadModelNoCS class
 - threading [ATL]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
-ms.openlocfilehash: 9b1622525635a4ea852dec9095fcd479b21044c4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ef2038a203b6cbfb2564bbe11d508ee43df0fd1b
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261563"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328668"
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS sınıfı
 
@@ -117,7 +117,7 @@ Bkz: [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultith
 
 ##  <a name="decrement"></a>  CComMultiThreadModelNoCS::Decrement
 
-Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.
+Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -138,7 +138,7 @@ Azaltma sonucu 0, ardından ise `Decrement` 0 döndürür. Azaltma sonucunu sıf
 
 ##  <a name="increment"></a>  CComMultiThreadModelNoCS::Increment
 
-Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), işaret ettiği değişken değerini artırır *p*.
+Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement), işaret ettiği değişken değerini artırır *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();

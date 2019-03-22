@@ -32,16 +32,16 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: dacf9de0835108ae946e7523472a0adf12e7e222
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 452bd28e3ea061ecc30ef802290242e4cb830792
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556731"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328603"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
 
-OLE DB Şablonları uygulamasının [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) arabirimi OLE DB belirtimi.
+OLE DB Şablonları uygulamasının [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) arabirimi OLE DB belirtimi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -90,7 +90,7 @@ Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birim
 
 |||
 |-|-|
-|[FlushData](#flushdata)|Veri, depolama alanına kaydetmeye sağlayıcısı tarafından Overidden.|
+|[FlushData](#flushdata)|Veri, depolama alanına kaydetmeye sağlayıcısı tarafından geçersiz kılındı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -124,7 +124,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetChange::DeleteRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::ınsertrow
 
@@ -141,7 +141,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetChange::InsertRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms716921(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="setdata"></a> IRowsetChangeImpl::SetData
 
@@ -157,11 +157,11 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetChange::SetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms721232(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::flushdata
 
-Veri, depolama alanına kaydetmeye sağlayıcısı tarafından Overidden.
+Veri, depolama alanına kaydetmeye sağlayıcısı tarafından geçersiz kılındı.
 
 ### <a name="syntax"></a>Sözdizimi
 

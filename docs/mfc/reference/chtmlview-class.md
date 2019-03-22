@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 69a04b49cf82c2b30ece3a32f76fbb2bc9a65f01
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 07f942e6582eb9fabe6001c4823ec9e2b1a83bf6
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296000"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328980"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 
@@ -390,7 +390,7 @@ Pencere adının temsil eden bir boş sonlandırılmış karakter dizesi işaret
 Pencere stili özniteliklerini belirtir. Ws_vısıble ve WS_CHILD Windows stilleri varsayılan olarak ayarlanır.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.
+Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.
 
 *pParentWnd*<br/>
 Denetiminin üst penceresine bir işaretçi.
@@ -1045,7 +1045,7 @@ void Navigate(
 Arayana ayrılan gidilecek URL'yi içeren bir dize veya görüntülemek için dosyanın tam yolu.
 
 *CertOpenStore*<br/>
-Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) sabit listesi.
+Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) sabit listesi.
 
 *lpszTargetFrameName*<br/>
 Kaynak görüntülenecek çerçevede adını içeren bir dize işaretçisi.
@@ -1095,7 +1095,7 @@ void Navigate2(
 Bir işaretçi bir [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) yapısı.
 
 *CertOpenStore*<br/>
-Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) sabit listesi.
+Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) sabit listesi.
 
 *lpszTargetFrameName*<br/>
 Kaynak görüntülenecek çerçevede adını içeren bir dize işaretçisi.
@@ -1215,7 +1215,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnDocWindowActivate` tepki için `OnDocWindowActivate` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnDocWindowActivate` tepki için `OnDocWindowActivate` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin
 
@@ -1256,7 +1256,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkinleştirir veya kapsayıcı oluşturduğunda veya kalıcı bir iletişim kutusu yok eder kalıcı olmayan iletişim kutuları devre dışı bırakır. Geçersiz kılma `OnEnableModeless` tepki için `EnableModeless` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) daha fazla bilgi için Windows SDK.
+Etkinleştirir veya kapsayıcı oluşturduğunda veya kalıcı bir iletişim kutusu yok eder kalıcı olmayan iletişim kutuları devre dışı bırakır. Geçersiz kılma `OnEnableModeless` tepki için `EnableModeless` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject
 
@@ -1282,7 +1282,7 @@ Veri nesnesi değiştirilirse S_OK, veri nesnesi değil yerine S_FALSE veya bir 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnFilterDataObject` tepki için `FilterDataObject` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnFilterDataObject` tepki için `FilterDataObject` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate
 
@@ -1303,7 +1303,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnFrameWindowActivate` tepki için `OnFrameWindowActivate` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnFrameWindowActivate` tepki için `OnFrameWindowActivate` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
@@ -1338,11 +1338,11 @@ Adresi `IDropTarget` alımların `IDropTarget` konak sağlamak isteyen arabirim 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) dönüş kodlarının bir listesi için Windows SDK.
+Bkz: [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) dönüş kodlarının bir listesi için Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnGetDropTarget` tepki için `GetDropTarget` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnGetDropTarget` tepki için `GetDropTarget` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="ongetexternal"></a>  CHtmlView::OnGetExternal
 
@@ -1363,7 +1363,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnGetExternal` tepki için `GetExternal` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnGetExternal` tepki için `GetExternal` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo
 
@@ -1376,7 +1376,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ### <a name="parameters"></a>Parametreler
 
 *pInfo*<br/>
-Adresi bir [DOCHOSTUIINFO](https://msdn.microsoft.com/library/aa770044.aspx) ana bilgisayarın kullanıcı Arabirimi özellikleri alan yapısı.
+Adresi bir [DOCHOSTUIINFO](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa770044\(v=vs.85\)) ana bilgisayarın kullanıcı Arabirimi özellikleri alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1384,7 +1384,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnGetHostInfo` tepki için `GetHostInfo` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnGetHostInfo` tepki için `GetHostInfo` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath
 
@@ -1410,7 +1410,7 @@ Başarılıysa S_OK veya S_FALSE Aksi takdirde. S_FALSE veya Internet Explorer M
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnGetOptionKeyPath` tepki için `GetOptionKeyPath` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnGetOptionKeyPath` tepki için `GetOptionKeyPath` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onhideui"></a>  CHtmlView::OnHideUI
 
@@ -1426,7 +1426,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnHideUI` tepki için `HideUI` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnHideUI` tepki için `HideUI` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
@@ -1585,7 +1585,7 @@ Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnResizeBorder` tepki için `ResizeBorder` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnResizeBorder` tepki için `ResizeBorder` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu
 
@@ -1615,11 +1615,11 @@ IDispatch arabirimi ekranında nesnenin koordinatları. Bu, daha belirli bir ba�
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) değerlerin listesi için Windows SDK.
+Bkz: [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) değerlerin listesi için Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnShowContextMenu` tepki için `ShowContextMenu` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnShowContextMenu` tepki için `ShowContextMenu` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onshowui"></a>  CHtmlView::OnShowUI
 
@@ -1653,11 +1653,11 @@ Daha sonraki kullanımlar için ayrılmıştır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) değerlerin listesi için Windows SDK.
+Bkz: [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) değerlerin listesi için Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnShowUI` tepki için `ShowUI` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnShowUI` tepki için `ShowUI` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
@@ -1756,7 +1756,7 @@ Başarılıysa S_OK veya S_FALSE Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnTranslateAccelerator` tepki için `TranslateAccelerator` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnTranslateAccelerator` tepki için `TranslateAccelerator` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl
 
@@ -1786,7 +1786,7 @@ Internet Explorer veya çevrilmesi için URL'yi temsil eden MSHTML tarafından s
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma `OnTranslateUrl` tepki için `TranslateUrl` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) daha fazla bilgi için Windows SDK.
+Geçersiz kılma `OnTranslateUrl` tepki için `TranslateUrl` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) daha fazla bilgi için Windows SDK.
 
 ##  <a name="onupdateui"></a>  CHtmlView::OnUpdateUI
 
@@ -2236,4 +2236,4 @@ Internet Explorer ve WebBrowser için geçerlidir.
 [MFC örnek MFCIE](../../visual-cpp-samples.md)<br/>
 [CFormView Sınıfı](../../mfc/reference/cformview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Iwebbrowser2](https://msdn.microsoft.com/library/aa752127.aspx)
+[Iwebbrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)

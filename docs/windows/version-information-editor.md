@@ -23,12 +23,12 @@ helpviewer_keywords:
 - GetFileVersionInfo
 - version information
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-ms.openlocfilehash: 8382371acfd423f8c6864e816b0357e3ef11718e
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 7cfb2b5426a65298c01c61541020a0f30b673f9c
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210984"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328824"
 ---
 # <a name="version-information-editor-c"></a>Sürüm bilgileri Düzenleyicisi (C++)
 
@@ -60,7 +60,7 @@ Bilgi dizesi blok bir dizi ya da seçerek sıralayabilirsiniz **anahtarı** veya
 
 ### <a name="to-add-version-information-for-another-language-new-version-info-block"></a>(Yeni sürüm bilgi bloğu) başka bir dil için sürüm bilgileri ekleme
 
-1. Sürüm bilgileri kaynağında çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Sürüm bilgileri kaynağında çift tıklayarak açın [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources).
 
 1. İçinde sürüm bilgileri tabloya sağ tıklayıp seçin **yeni sürüm bilgi bloğu**.
 
@@ -70,7 +70,7 @@ Bilgi dizesi blok bir dizi ya da seçerek sıralayabilirsiniz **anahtarı** veya
 
 ### <a name="to-delete-a-version-information-block"></a>Sürüm bilgi bloğu silmek için
 
-1. Sürüm bilgileri kaynağında simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Sürüm bilgileri kaynağında simgeye çift tıklayarak açın [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Seçin ve silmek istediğiniz blok başlığına sağ tıklayarak **sürüm bilgi bloğunu silme**.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: 2bb15597be5ac4e1bb5f37fb2f12b74631e5a354
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a171e6a7eea5e10b47bf680545bc14618893b155
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592723"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328993"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -26,7 +26,7 @@ Bir veri kaynağı için bir bağlantı oluşturur.
 ### <a name="parameters"></a>Parametreler
 
 *db_source*<br/>
-Veri kaynağına bağlanmak için kullanılan bağlantı dizesi. Bağlantı dizesinin biçimi için bkz: [bağlantı dizelerini ve veri bağlantıları](/previous-versions/windows/desktop/ms718376) içinde SDK Microsoft Data Access Components (MDAC).
+Veri kaynağına bağlanmak için kullanılan bağlantı dizesi. Bağlantı dizesinin biçimi için bkz: [bağlantı dizelerini ve veri bağlantıları](/previous-versions/windows/desktop/ms718376(v=vs.85)) içinde SDK Microsoft Data Access Components (MDAC).
 
 *Adı*<br/>
 (İsteğe bağlı) Kullanırken **db_source** bir sınıfta *adı* sahip bir veri kaynağı nesnesinin bir örneğini **db_source** (bkz. örnek 1) uygulanan bir öznitelik. Kullanırken **db_source** satır bir yöntem uygulaması içinde *adı* verilere erişmek için kullanılan bir değişken (yöntemi yerel) (2 örneğe bakın) kaynak. Bu geçirdiğiniz *adı* için *source_name* parametresinin `db_command` veri kaynağı bir komut ile ilişkilendirilecek.

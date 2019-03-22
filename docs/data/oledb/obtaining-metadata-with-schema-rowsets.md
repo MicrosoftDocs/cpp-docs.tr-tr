@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-ms.openlocfilehash: 64502c19b55d42ab0ed7f6c2b8b1cf503e7795c8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 9e61507a187f7625e7e90e2a0e3a1ce404573e29
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422682"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328876"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 
@@ -52,7 +52,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 [CRestrictions](../../data/oledb/crestrictions-class.md) sınıf kısıtlama desteği sağlar. Şema satır kümesi örneğini oluşturduktan sonra çağrı [CRestrictions::Open](../../data/oledb/crestrictions-open.md). Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür.
 
-Kısıtlamaları belirtmek için başvurmak [ek B: Şema satır kümeleri](/previous-versions/windows/desktop/ms712921(v=vs.85)) ve kullanmakta olduğunuz satır kümesini bakın. Örneğin, `CColumns` karşılık gelen [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052(v=vs.85)\(v%3dvs.85\)); Bu konu SÜTUNLARIN satır kısıtlama sütunları listeler: COLUMN_NAME TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME. Bu sipariş kısıtlamalarınız belirtilirken izlemeniz gerekir.
+Kısıtlamaları belirtmek için başvurmak [ek B: Şema satır kümeleri](/previous-versions/windows/desktop/ms712921(v=vs.85)) ve kullanmakta olduğunuz satır kümesini bakın. Örneğin, `CColumns` karşılık gelen [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052(v=vs.85)); Bu konu SÜTUNLARIN satır kısıtlama sütunları listeler: COLUMN_NAME TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME. Bu sipariş kısıtlamalarınız belirtilirken izlemeniz gerekir.
 
 Tablo adı ile kısıtlamak istiyorsanız, bu nedenle, örneğin, TABLE_NAME üçüncü kısıtlama sütunu ve ardından bir çağrı olduğundan `Open`, aşağıdaki örnekte gösterildiği gibi üçüncü kısıtlama parametresi olarak istenen tablo adını belirtme.
 

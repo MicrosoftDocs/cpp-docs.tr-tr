@@ -14,18 +14,18 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: c05dd9da5dd17b0e06ace750d34f2c5abcf94380
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 7ef8127b829b60d84af72874292c33ae1c7c4636
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824043"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327587"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio C++ projeleri için oluşturulan dosya türleri
 
 Bu konuda, Klasik Masaüstü uygulamaları için Visual Studio projeleri ile ilişkili olan dosyaların tüm türleri açıklanmaktadır. Projenize dahil gerçek dosyaları proje türü ve bir Sihirbazı kullanarak belirttiğiniz seçeneklere bağlıdır.
 
-- [Proje ve Çözüm Dosyaları]()
+- [Proje ve Çözüm Dosyaları](project-and-solution-files.md)
 
 - [CLR projeleri](files-created-for-clr-projects.md)
 
@@ -54,7 +54,7 @@ Aşağıdaki tabloda, Visual Studio projesinde ortak dosyaları gösterir ve bun
 |.ATP|Project|Uygulama Şablonu proje dosyası.|
 |.bmp, .dib, .gif, .jpg, .jpe, .png|Kaynak|Genel görüntü dosyaları.|
 |.bsc|Derleme|Tarayıcı kod dosyası.|
-|.cpp; .c|Kaynak|Uygulamanız için ana kaynak kodu dosyaları.|
+|.cpp, .c|Kaynak|Uygulamanız için ana kaynak kodu dosyaları.|
 |.cur|Kaynak|Grafik bit eşlem dosyası imleç.|
 |.dbp|Project|Veritabanı Proje dosyası.|
 |.disco|Kaynak|Devingen keşif belgesi dosyası. XML Web hizmeti bulma işler.|
@@ -78,8 +78,8 @@ Aşağıdaki tabloda, Visual Studio projesinde ortak dosyaları gösterir ve bun
 |.vap|Project|Visual Studio Analyzer proje dosyası.|
 |.vbg|Çözüm|Uyumlu proje grubu dosyası.|
 |.vbp, .vip, .vbproj|Project|Visual Basic proje dosyası.|
-|.vcxitems|Project|Paylaşılan öğeler projesi'birden çok C++ projeleri arasında kod dosya paylaşımı. Bkz: [proje dosyalarını ve derleme görevleri dosyalarını]() daha fazla bilgi için.|
-|.vcxproj|Project|Visual Studio Proje dosyası. Bkz: [proje dosyalarını ve derleme görevleri dosyalarını]() daha fazla bilgi için.|
+|.vcxitems|Project|Paylaşılan öğeler projesi'birden çok C++ projeleri arasında kod dosya paylaşımı. Bkz: [proje ve çözüm dosyaları](project-and-solution-files.md) daha fazla bilgi için.|
+|.vcxproj|Project|Visual Studio Proje dosyası. Bkz: [proje ve çözüm dosyaları](project-and-solution-files.md) daha fazla bilgi için.|
 |.vcxproj.filters|Project|Çözüm Gezgini, bir dosyayı bir projeye eklemek için kullanıldığında, filtreler dosyası burada Çözüm Gezgini ağaç görünümünde dosya eklendiğinde, kendi dosya adı uzantısına göre tanımlar.|
 |.vdproj|Project|Visual Studio dağıtım proje dosyası.|
 |.vmx|Project|Makrosu proje dosyası.|

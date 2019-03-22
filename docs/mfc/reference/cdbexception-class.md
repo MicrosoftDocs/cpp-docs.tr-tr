@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CDBException [MFC], m_strError
 - CDBException [MFC], m_strStateNativeOrigin
 ms.assetid: eb9e1119-89f5-49a7-b9d4-b91cee1ccc82
-ms.openlocfilehash: e8a5195d4d2a3662d79d515c28dc66d1b0a27b24
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 755b89635eedd7808f900dc63cd3039845db1dd3
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295025"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328538"
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
 
@@ -132,7 +132,7 @@ Dize, alfasayısal koşullarında hata açıklar. Daha ayrıntılı bilgi ve ör
 
 Dize biçimi kodları sırayla açıklayan değerler tarafından değiştirildiği desene form "durumu: % s, yerel: % ld kaynağı: % s'ın" şöyledir:
 
-- Beş karakterli hata kodu içeren null ile sonlandırılmış bir dize döndürdü SQLSTATE *szSqlState* ODBC işlevinin parametresi `SQLError`. SQLSTATE değerleri Ek A'da listelenen [ODBC hata kodları](/previous-versions/windows/desktop/ms714687), *ODBC Programcının Başvurusu*. Örnek: "S0022".
+- Beş karakterli hata kodu içeren null ile sonlandırılmış bir dize döndürdü SQLSTATE *szSqlState* ODBC işlevinin parametresi `SQLError`. SQLSTATE değerleri Ek A'da listelenen [ODBC hata kodları](/previous-versions/windows/desktop/ms714687(v=vs.85)), *ODBC Programcının Başvurusu*. Örnek: "S0022".
 
 - Veri kaynağı için özel yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207.
 
@@ -140,13 +140,13 @@ Dize biçimi kodları sırayla açıklayan değerler tarafından değiştirildi�
 
 Framework hata dizesi yorumlar ve bileşenlerine koyar `m_strStateNativeOrigin`if `m_strStateNativeOrigin` bilgilerini içeren karakterleriyle ayrılan birden fazla hata için hataları. Framework alfasayısal hata metne koyar `m_strError`.
 
-Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz. [SQLError](/previous-versions/windows/desktop/ms716312) işlevi *ODBC Programcının Başvurusu*.
+Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz. [SQLError](/previous-versions/windows/desktop/ms716312(v=vs.85)) işlevi *ODBC Programcının Başvurusu*.
 
 ### <a name="example"></a>Örnek
 
-  ODBC'den: "Durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server] Geçersiz sütun adı 'ColName'"
+  ODBC'den: "Durumu: S0022, yerel: 207'de, kaynak:\[Microsoft]\[ODBC SQL Server sürücüsünü]\[SQL Server] Geçersiz sütun adı 'ColName'"
 
-İçinde `m_strStateNativeOrigin`: "Durumu: S0022, yerel: 207'de, kaynağı: [Microsoft] [ODBC SQL Server sürücüsünü] [SQL Server]"
+İçinde `m_strStateNativeOrigin`: "Durumu: S0022, yerel: 207'de, kaynak:\[Microsoft]\[ODBC SQL Server sürücüsünü]\[SQL Server]"
 
 İçinde `m_strError`: "Geçersiz sütun adı 'ColName'"
 

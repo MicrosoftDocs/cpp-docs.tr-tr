@@ -44,18 +44,18 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-ms.openlocfilehash: 3054a9eab21f6f7ec149f7f1c23c3c40fca3b9e1
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 91e9c6dac1b6f13997bb7e4f2727a743a9177083
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626939"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328616"
 ---
 # <a name="interlockedincrement-intrinsic-functions"></a>_Interlockedıncrement iç işlevleri
 
 **Microsoft'a özgü**
 
-Win32 Windows SDK'sı derleyici iç desteği [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement) işlevi.
+Win32 Windows SDK'sı derleyici iç desteği [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement) işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 

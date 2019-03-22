@@ -48,12 +48,12 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 545bbeec545b37324ff9c15512b27073f5ffc1c7
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 840a7e63bb9b98cfb46ea36e30b3439168688c87
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627307"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328318"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_Interlockedcompareexchange iç işlevleri
 
@@ -204,7 +204,7 @@ Dönüş değeri ilk değeri `Destination` işaretçi.
 
 `_InterlockedCompareExchange` atomik bir karşılaştırma gerçekleştirir `Destination` değerini `Comparand` değeri. Varsa `Destination` değeri eşittir `Comparand` değeri `Exchange` değeri tarafından belirtilen adresi depolanan `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.
 
-`_InterlockedCompareExchange` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedCompareExchange](/windows/desktop/api/winbase/nf-winbase-interlockedcompareexchange) işlevi.
+`_InterlockedCompareExchange` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) işlevi.
 
 Bazı farklılıklar vardır `_InterlockedCompareExchange` , bunlar içeren veri türleri ve olup işlemciye özgü alma göre farklılık veya release semantikleri kullanılır.
 

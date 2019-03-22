@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-ms.openlocfilehash: 0e523b2a145254cd9b7adf2b066605a679349f6c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ebc36d82af9bfe12ab30a86214e58610b5eaab95
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273458"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329006"
 ---
 # <a name="cdatabase-class"></a>CDatabase sınıfı
 
@@ -192,7 +192,7 @@ void Cancel();
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC ODBC sınıfları artık zaman uyumsuz işleme kullandığını unutmayın. bir Aracıdan işlemi gerçekleştirmek için doğrudan ODBC API işlevini çağırmanız gerekir [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564). Daha fazla bilgi için [zaman uyumsuz yürütme](/previous-versions/windows/desktop/ms713563) Windows SDK.
+MFC ODBC sınıfları artık zaman uyumsuz işleme kullandığını unutmayın. zaman uyumsuz bir işlemi gerçekleştirmek için doğrudan ODBC API işlevini çağırmanız gerekir [SQLSetConnectOption](/sql/odbc/reference/syntax/sqlsetconnectoption-function). Daha fazla bilgi için [zaman uyumsuz yürütme](/sql/odbc/reference/develop-app/asynchronous-execution).
 
 ##  <a name="cantransact"></a>  CDatabase::CanTransact
 

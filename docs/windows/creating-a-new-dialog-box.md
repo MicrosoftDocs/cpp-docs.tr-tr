@@ -14,12 +14,12 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 51ff52aefb5586b4e301831dbdebeb783ec3c4c5
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 7e7cfcc206ce58ab401bcdb9c9ac6103c50e997f
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563217"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328642"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Oluştur iletişim kutusu (C++)
 
@@ -34,7 +34,7 @@ Boyutu ve bir C++ iletişim kutusunda, konumu ve denetimleri içindeki boyutunu 
 
 ### <a name="to-create-a-new-dialog-box"></a>Yeni iletişim kutusu oluşturmak için
 
-1. İçinde [kaynak görünümü](/windows/how-to-create-a-resource-script-file#create-resources), sağ tıklayın, *.rc* seçin ve dosya **kaynak Ekle**.
+1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), sağ tıklayın, *.rc* seçin ve dosya **kaynak Ekle**.
 
 1. İçinde **kaynak Ekle** iletişim kutusunda **iletişim** içinde **kaynak türü** listeleyin ve ardından **yeni**.
 

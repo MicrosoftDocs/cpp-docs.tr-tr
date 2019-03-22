@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++]
 - databases [C++], consumers
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-ms.openlocfilehash: 6bda050efd7d2d4ac6df196e42ffe6be43ab1a65
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: a93b0a48bc5996cbb96194762b9c03ea143556e2
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556614"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328733"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB Tüketici Şablonları (C++)
 
@@ -24,7 +24,7 @@ OLE DB Tüketici Şablonları, OLE DB sürüm 2.6 belirtimini destekler. (OLE DB
 
 - OLE DB programlama için yerel C/C++ veri türleri.
 
-OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](https://docs.microsoft.com/previous-versions/windows/desktop/ms718124(v=vs.85)).
+OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [SQL Server için Microsoft OLE DB sürücüsü](/sql/connect/oledb/oledb-driver-for-sql-server).
 
 OLE DB Şablonları, yeni bir nesne modeli eklemek yerine var olan OLE DB Nesne modeli destekler. OLE DB Tüketici Şablonları üst düzey sınıflar, OLE DB belirtiminde tanımlanan bileşenleri paralel. OLE DB Tüketici Şablonları tasarımını üzerinde bir satır kümesinde çoklu erişimci gibi gelişmiş özellikleri içerir. Şablonları ve birden çok devralma kitaplığı, küçük ve esnek hale getirir.
 
@@ -60,5 +60,5 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
 [Veri Erişimi](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Belgeleri](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
-[OLE DB Programcının Başvurusu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)
+[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
+[SQL Server için Microsoft OLE DB sürücüsü](/sql/connect/oledb/oledb-driver-for-sql-server)

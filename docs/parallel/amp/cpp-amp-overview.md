@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: da77e2ba93554cb65d4cc92353d05d54467b50d4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a4bd8546ba551ee37b9c03b5965a4079a3bd9f98
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269649"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328889"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -21,11 +21,15 @@ C++ Accelerated Massive Parallelism (C++ AMP) ayrı ekran kartı üzerindeki gra
 
 ## <a name="system-requirements"></a>Sistem Gereksinimleri
 
-- Windows 7, Windows 8, Windows Server 2008 R2 veya Windows Server 2012
+- Windows 7 veya üzeri
+
+- Windows Server 2008 R2 veya üzeri
 
 - DirectX 11 özelliği düzey 11.0 veya daha sonraki bir donanım
 
 - Yazılım benzetmesi üzerinde hata ayıklama için Windows 8 veya Windows Server 2012 gereklidir. Donanım üzerinde hata ayıklamak için ekran kartınızın sürücülerini yüklemeniz gerekir. Daha fazla bilgi için [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).
+
+- Not: AMP ARM64'te şu anda desteklenmiyor.
 
 ## <a name="introduction"></a>Giriş
 

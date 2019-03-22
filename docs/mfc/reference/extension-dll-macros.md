@@ -4,12 +4,12 @@ ms.date: 04/03/2017
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 1d0cbd1f702a1d26dd2eaafd88efcfd61f52ff78
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 863350067c39fbc9cdb3d9d3a6c4448348d977de
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850222"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328772"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -21,9 +21,9 @@ ms.locfileid: "55850222"
 |[AfxNetInitModule](#afxnetinitmodule)|Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN gelen MFC yuva desteği sağlar.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|Modül başına durum bayrağı geçerli durumunu alır.|
 |[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Başlatmadan önce ve/veya sonra temizleme önceki modül durumunu geri yüklemek için modül durumunu ayarlar.|
-|[AfxInitExtensionModule]()#afxinitextensionmodule|DLL başlatır.|
+|[AfxInitExtensionModule](#afxinitextensionmodule)|DLL başlatır.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|MFC WinSxS davranışını etkileyen modül başına durum bayrağını ayarlayın.|
-|[AfxTermExtensionModule]()#afxtermextensionmodule)|Her işlem DLL'den ayırdığında MFC MFC uzantısı DLL yapılmasını sağlar.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|Her işlem DLL'den ayırdığında MFC MFC uzantısı DLL yapılmasını sağlar.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 

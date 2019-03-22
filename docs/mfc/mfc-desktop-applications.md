@@ -9,12 +9,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-ms.openlocfilehash: 364f29406b2c00d26ecc4cc69060ed8ec21b743b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 60c50eb25132a38c72be762ab96d8ee262f5b349
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291292"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328837"
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 
@@ -85,7 +85,7 @@ MFC'nin nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.
 [Visual C++ kitaplıkları başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>
 Visual C++ ile ATL, MFC, OLE DB Şablonları, C çalışma zamanı kitaplığı ve standart C++ Kitaplığı dahil olmak üzere sağlanan çeşitli kitaplıklara bağlantılar sağlar.
 
-[Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio.md)<br/>
+[Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 Uygulamanızdaki veya saklı yordamları mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcı kullanımına ilişkin bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.

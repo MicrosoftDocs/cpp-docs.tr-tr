@@ -7,12 +7,12 @@ helpviewer_keywords:
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-ms.openlocfilehash: 46a12e6204113b00c209696bbdfd1093232d7521
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93eff646fb582e25ad70549afc714c5321e56079
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559685"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328590"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf Ara dile dönüştürme
 
@@ -80,7 +80,7 @@ Destekleyen Visual C++ Derleyici Araç Takımı'nın önceki bir sürümünü ku
    |[Boole değeri](/dotnet/api/system.boolean)|Bir Boolean değeri temsil eder.|
    |[Bayt](/dotnet/api/system.byte)|Bir 8 bit işaretsiz tamsayıyı temsil eder.|
    |[Char](/dotnet/api/system.char)|Bir Unicode karakteri temsil eder.|
-   |[Tarih/saat](/dotnet/api/system.datetime.datetime.aspx)|Anlık, genellikle bir tarih ve saat olarak ifade edilen zaman içinde temsil eder.|
+   |[Tarih/saat](/dotnet/api/system.datetime)|Anlık, genellikle bir tarih ve saat olarak ifade edilen zaman içinde temsil eder.|
    |[Ondalık](/dotnet/api/system.decimal)|Ondalık sayıyı temsil eder.|
    |[çift](/dotnet/api/system.double)|Çift duyarlıklı kayan nokta numarasını temsil eder.|
    |[GUID](/dotnet/api/system.guid)|Bir genel benzersiz tanıtıcısı (GUID) temsil eder.|
@@ -88,9 +88,9 @@ Destekleyen Visual C++ Derleyici Araç Takımı'nın önceki bir sürümünü ku
    |[Int32](/dotnet/api/system.int32)|32-bit imzalı bir tamsayı temsil eder.|
    |[Int64](/dotnet/api/system.int64)|64-bit imzalı bir tamsayı temsil eder.|
    |[IntPtr](/dotnet/api/system.intptr)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
-   |[SByte](/dotnet/api/system.byte.aspx)|Bir 8 bit işaretli tamsayıyı temsil eder.|
-   |[Tek](/dotnet/api/system.single.aspx)|Tek duyarlıklı kayan nokta numarasını temsil eder.|
-   |[Zaman aralığı](/dotnet/api/system.timespan)|Bir zaman aralığını temsil eder.|
+   |[SByte](/dotnet/api/system.byte)|Bir 8 bit işaretli tamsayıyı temsil eder.|
+   |[Tek](/dotnet/api/system.single)|Tek duyarlıklı kayan nokta numarasını temsil eder.|
+   |[TimeSpan](/dotnet/api/system.timespan)|Bir zaman aralığını temsil eder.|
    |[UInt16](/dotnet/api/system.uint16)|Bir 16 bit işaretsiz tamsayıyı temsil eder.|
    |[UInt32](/dotnet/api/system.uint32)|Bir 32-bit işaretsiz tamsayıyı temsil eder.|
    |[UInt64](/dotnet/api/system.uint64)|Bir 64-bit işaretsiz tamsayıyı temsil eder.|

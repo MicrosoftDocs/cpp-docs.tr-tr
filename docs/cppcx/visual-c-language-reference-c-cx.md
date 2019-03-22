@@ -2,12 +2,12 @@
 title: Visual C++ Dil Başvurusu (C + +/ CX)
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: 319374447ba08dbf18fba91e4c24c0874d3b6ce2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ce0272499b653b9077a891e39e9b29797e7e051d
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422968"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328421"
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ Dil Başvurusu (C + +/ CX)
 
@@ -24,7 +24,7 @@ Kullanarak C + +/ CX, oluşturabilirsiniz:
 
 - JavaScript tabanlı Windows uygulamaları tarafından tüketilebilecek bir C++ Windows çalışma zamanı bileşenleri. Daha fazla bilgi için [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-- Windows DirectX oyunlar ve grafik kullanımı yoğun uygulamalar. Daha fazla bilgi için [DirectX ile basit bir UWP oyunu oluşturma](/windows/uwp/gaming/tutorial--create-your-first-metro-style-directx-game).
+- Windows DirectX oyunlar ve grafik kullanımı yoğun uygulamalar. Daha fazla bilgi için [DirectX ile basit bir UWP oyunu oluşturma](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game).
 
 ## <a name="related-articles"></a>İlgili makaleler
 
@@ -32,7 +32,7 @@ Kullanarak C + +/ CX, oluşturabilirsiniz:
 |-|-|
 |[Hızlı Başvuru](../cppcx/quick-reference-c-cx.md)|Tablo anahtar sözcükleri ve işleçler için C + +/ CX.|
 |[Tür Sistemi](../cppcx/type-system-c-cx.md)|Açıklar temel C + +/ CX türleri ve programlama yapıları ve nasıl kullanmak C + +/ CX kullanma ve Windows çalışma zamanı türleri oluşturmak için.|
-|[Uygulamaları oluşturma ve kitaplıkları](../cppcx/building-apps-and-libraries-c-cx.md)|IDE uygulamaları ve statik kitaplıklar aned DLL'leri bağlantı oluşturmak için nasıl kullanılacağını açıklar.|
+|[Uygulamaları oluşturma ve kitaplıkları](../cppcx/building-apps-and-libraries-c-cx.md)|IDE uygulamalar oluşturun ve statik kitaplıklar ve DLL'leri bağlama için nasıl kullanılacağını açıklar.|
 |[Diğer dillerle birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)|Açıklar nasıl C + kullanılarak yazılan bileşenleri +/ CX kullanılabilir JavaScript'te yazılmış bileşenler ile tüm yönetilen dil ya da Windows çalışma zamanı C++ Şablon kitaplığı.|
 |[İş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md)|Oluşturduğunuz bileşenlerin iş parçacığı oluşturma ve hazırlama davranışını belirtmek nasıl ele alınmaktadır.|
 |[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)|Varsayılan ad alanı, Platform ad alanı, Platform::Collections ve ilgili ad alanları için başvuru belgeleri.|

@@ -8,18 +8,18 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-ms.openlocfilehash: 3f1597ab4947329d6103b417a0f4b5bd6664b110
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 7a222100cc7e13ee78f01cf4bb9c376af15f9b0e
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692768"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328785"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
 Neredeyse tüm veritabanı ürünler, SQL ve NoSQL, yerel C++ uygulamaları için bir arabirim sağlar. Sektörde standart büyük SQL veritabanı ürün ve birçok NoSQL ürünleri tarafından desteklenen ODBC arabirimidir. Microsoft olmayan ürünler için daha fazla bilgi için satıcıya başvurun. Üçüncü taraf kitaplıklar çeşitli lisans koşullarıyla birlikte de kullanılabilir.
 
-2011'den beri Microsoft, Microsoft SQL Server veritabanlarını, hem şirket içinde ve bulutta bağlama için yerel uygulamalar için standart olarak ODBC hizalı. Daha fazla bilgi için [veri erişim programlama \(MFC-ATL\)](data-access-programming-mfc-atl.md). C + +/ CLI kitaplıklar, yerel ODBC sürücüleri ya da ADO.NET kullanabilirsiniz. Daha fazla bilgi için bkz. [veri erişim ADO.NET kullanma (C + +/ CLI)](/dotnet/data-access-using-adonet-cpp-cli.md) ve [Visual Studio'da verilere erişme](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
+2011'den beri Microsoft, Microsoft SQL Server veritabanlarını, hem şirket içinde ve bulutta bağlama için yerel uygulamalar için standart olarak ODBC hizalı. Daha fazla bilgi için [veri erişim programlama \(MFC-ATL\)](data-access-programming-mfc-atl.md). C + +/ CLI kitaplıklar, yerel ODBC sürücüleri ya da ADO.NET kullanabilirsiniz. Daha fazla bilgi için bkz. [veri erişim ADO.NET kullanma (C + +/ CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) ve [Visual Studio'da verilere erişme](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -53,7 +53,7 @@ Azure ile daha fazla esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz 
 Azure Blob Depolama, yapılandırılmamış verileri nesne/BLOB olarak bulutta depolayan bir hizmettir. BLOB Depolama, herhangi bir türde metin veya belge, medya dosyası veya uygulama Yükleyici gibi ikili veri depolayabilir. BLOB storage ayrıca nesne depolama olarak adlandırılır.
 
 [ ODBC Programcının Başvurusu](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
-ODBC arabirimi C programlama dilini ile kullanılmak üzere tasarlanmıştır. ODBC arabirimi kullanımını yayılmış üç alandan: SQL deyimleri, ODBC işlev çağrıları ve C programlama.
+ODBC arabirimi C programlama dilini ile kullanılmak üzere tasarlanmıştır. ODBC arabirimi kullanımını üç alandan yayılır: SQL deyimleri, ODBC işlev çağrıları ve C programlama.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -4,16 +4,16 @@ description: Visual Studio IDE Windows, Linux, Android ve iOS bir kod Düzenleyi
 ms.date: 03/08/2019
 helpviewer_keywords:
 - Visual C++, development tools
-ms.openlocfilehash: cb64891b18fcf309fd217240012e4ad35c644902
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: dfbe98cdbae6df7dacdc2f3076891971ba86927e
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824163"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328122"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio'da C++ geliştirme genel bakış
 
-Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft C++ (MSVC) birçok windows ve diğer diller ortak Araçlar paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, Kod Düzenleyicisi ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudbuild/visual-studio-ide). Genellikle, paylaşılan bir aracı veya pencere biraz farklı bir özellik kümesi için C++ JavaScript veya .NET dilleri için vardır. Bazı windows veya araçları yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerinde kullanılabilir.
+Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft C++ (MSVC) birçok windows ve diğer diller ortak Araçlar paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, Kod Düzenleyicisi ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide). Genellikle, paylaşılan bir aracı veya pencere biraz farklı bir özellik kümesi için C++ JavaScript veya .NET dilleri için vardır. Bazı windows veya araçları yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerinde kullanılabilir.
 
 Visual Studio IDE'de paylaşılan araçlara ek olarak, MSVC yerel kod geliştirme için özel olarak çeşitli araçları vardır. Bu araçlar, bu makalede de listelenir. Hangi Araçlar Visual Studio'nun her sürümünde bir listesi için bkz [C++ Araçları ve özellikleri Visual Studio sürümlerinde](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 

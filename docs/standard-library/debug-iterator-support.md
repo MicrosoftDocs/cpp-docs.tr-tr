@@ -11,12 +11,12 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-ms.openlocfilehash: 09a509f650dee76ea1cb10fea8e4019f6d7f5e2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9042093bb073807e9bb1476ab514c82010aeab70
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428425"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328746"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 
@@ -165,11 +165,12 @@ struct derived : base {
    ~derived() {}
 };
 
-int main() {
-  auto vect = std::vector<int>(10);
-  auto sink = new auto(std::begin(vect));
-  ::operator delete(sink); // frees the memory without calling ~iterator()
-} // access violation
+ int main() {
+   std::vector<int> vect( 10 );
+   base * pb = new derived( vect.begin() );
+   delete pb;  // doesn't call ~derived()
+   // access violation
+}
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
