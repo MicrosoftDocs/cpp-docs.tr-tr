@@ -4,16 +4,16 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: d80829b1475e8718e1c4188ff4fb7d42a1d4b3b9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 893bc5c8efe3fdae80a4a0de8204d391baa63d07
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824079"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356120"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json şema başvurusu
 
-`cmakesettings.json` Dosya Visual Studio'nun belirli bir platform için bir proje oluşturmak için CMake ile nasıl etkileşim kuracağını belirten bilgileri içerir. Ortam değişkenleri ya da cmake.exe ortam için bağımsız değişkenler gibi bilgileri depolamak için bu dosyayı kullanın.
+**Cmakesettings.json**' dosyası Visual Studio belirtilen platform için bir proje oluşturmak için CMake ile nasıl etkileşim kuracağını belirten bilgileri içerir. Ortam değişkenleri ya da cmake.exe ortam için bağımsız değişkenler gibi bilgileri depolamak için bu dosyayı kullanın.
 
 ## <a name="environments"></a>Ortamlar
 
