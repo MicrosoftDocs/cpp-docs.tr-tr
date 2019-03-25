@@ -1,18 +1,18 @@
 ---
 title: __declspec
-ms.date: 10/09/2018
+ms.date: 03/21/2019
 f1_keywords:
 - __declspec_cpp
 - __declspec
 - _declspec
 helpviewer_keywords:
 - __declspec keyword [C++]
-ms.openlocfilehash: 3ee83203cc992ba8c5d05b7bb6974d3576baf59c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e924f3e4a038f900e084dbf84d85430d815c8e8f
+ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645100"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416955"
 ---
 # <a name="declspec"></a>__declspec
 
@@ -27,11 +27,12 @@ Depolama sınıfı bilgilerini kullanan belirtmek için genişletilmiş öznitel
 
 *extended-decl-modifier-seq*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici* *genişletilmiş-decl-değiştirici-seq*
+&nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier* *extended-decl-modifier-seq*
 
 *Genişletilmiş-decl-değiştirici*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Hizalama (** *#* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**ayırın ("** *segname* **")**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Ayırıcı**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**AppDomain**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**code_seg ("** *segname* **")**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**kullanım dışı**<br/>
@@ -45,17 +46,17 @@ Depolama sınıfı bilgilerini kullanan belirtmek için genişletilmiş öznitel
 &nbsp;&nbsp;&nbsp;&nbsp;**nothrow**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**novtable**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**İşlem**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**özellik (** { **alma =**_get_func_name_ &#124; **, put =**_put_func_name_ } **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**property(** { **get=**_get_func_name_ &#124; **,put=**_put_func_name_ } **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**kısıtlama**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**safebuffers**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**selectany**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**spectre(nomitigation)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**uuid ("** *ComObjectGUID* **")**
+&nbsp;&nbsp;&nbsp;&nbsp;**uuid("** *ComObjectGUID* **")**
 
 Beyaz boşluk, bildirim değiştirici sırasını ayırır. Örnekler sonraki bölümlerde gösterilir.
 
-Genişletilmiş öznitelik dilbilgisi bu Microsoft'a özgü depolama sınıfı öznitelikler destekler: [hizalama](../cpp/align-cpp.md), [tahsis](../cpp/allocate.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [kullanım dışı](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md) , [işlem](../cpp/process.md), [kısıtlama](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), ve [iş parçacığı](../cpp/thread.md). Ayrıca bu COM nesnesi özniteliklerini de destekler: [özelliği](../cpp/property-cpp.md) ve [UUID](../cpp/uuid-cpp.md).
+Genişletilmiş öznitelik dilbilgisi bu Microsoft'a özgü depolama sınıfı öznitelikler destekler: [hizalama](../cpp/align-cpp.md), [tahsis](../cpp/allocate.md), [ayırıcı](../cpp/allocator.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [kullanım dışı](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md), [işlem](../cpp/process.md), [kısıtlama](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), ve [iş parçacığı](../cpp/thread.md). Ayrıca bu COM nesnesi özniteliklerini de destekler: [özelliği](../cpp/property-cpp.md) ve [UUID](../cpp/uuid-cpp.md).
 
 **Code_seg**, **dllexport**, **dllimport**, **naked**, **noalias**, **nothrow** , **özelliği**, **kısıtlama**, **selectany**, **iş parçacığı**, ve **UUID**depolama sınıfı öznitelikleri yalnızca nesne veya işlev için bunlar uygulandığı bildirimin özellikleridir. **İş parçacığı** özniteliği yalnızca nesneleri ve verileri etkiler. **Naked** ve **spectre** öznitelikleri yalnızca işlevleri etkiler. **Dllimport** ve **dllexport** öznitelikleri işlevleri, verileri ve nesneleri etkiler. **Özelliği**, **selectany**, ve **UUID** öznitelikleri COM nesnelerini etkiler.
 
@@ -79,7 +80,7 @@ class __declspec(dllimport) X {};
 
 Kullanmaya yönelik genel yönerge **__declspec** basit bildirimler için öznitelik şu şekildedir:
 
-*Decl-specifier-seq* *init-declarator-list*;
+*decl-specifier-seq* *init-declarator-list*;
 
 *Decl-specifier-seq* , diğerlerinin yanı sıra bir taban türü içermelidir (örneğin **int**, **float**, **typedef**, veya bir sınıf adı), depolama sınıfı (örn **statik**, **extern**), veya **__declspec** uzantısı. *İnit-declarator-list* , diğerlerinin yanında bildirimlerin işaretçi bölümünü de içermelidir. Örneğin:
 

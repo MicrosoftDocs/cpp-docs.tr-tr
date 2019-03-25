@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 6af054ea27233de2cc3b551bbec69c0ab3b4be9e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e1ca69382591dc7d3afe9b5871dfdebd64aedce4
+ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289968"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58417007"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 
@@ -570,11 +570,11 @@ UINT GetLimitText() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli metin sınırını bayt cinsinden bu `CEdit` nesne.
+Geçerli metin sınırı TCHARs, bu `CEdit` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin, metin düzenleme denetiminin kabul edebilen bayt cinsinden en uzun süreyi sınırdır.
+Metin, metin düzenleme denetiminin kabul edebilen TCHARs en uzun süreyi sınırdır.
 
 > [!NOTE]
 >  Bu üye işlevi, Windows 95 ve Windows NT 4.0 sürümlerinde kullanılabilir olan.
@@ -606,14 +606,14 @@ int GetLine(
 Birden çok satırından almak için satır numarası düzenleme denetimi belirtir. Satır numaraları, sıfır tabanlı olduklarını; 0 değeri, ilk satırı belirtir. Bu parametre, tek satırlı düzenleme denetimi tarafından göz ardı edilir.
 
 *lpszBuffer*<br/>
-Satır bir kopyasını alır arabellek işaret eder. İlk sözcük arabellek arabelleğe kopyalanan karakter sayısı belirtmelisiniz.
+Satır bir kopyasını alır arabellek işaret eder. İlk sözcük arabellek sayısı arabelleğe kopyalanabilir TCHARs belirtmeniz gerekir.
 
 *nMaxLength*<br/>
-En büyük arabellek için kopyalanan bayt sayısını belirtir. `GetLine` Bu değer ilk Word'de yerleştirir *lpszBuffer* Windows çağrısını yapmadan önce.
+En fazla bir arabelleğe kopyalanmış TCHAR karakter sayısını belirtir. `GetLine` Bu değer ilk Word'de yerleştirir *lpszBuffer* Windows çağrısını yapmadan önce.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aslında kopyalanan bayt sayısı. Dönüş değeri tarafından belirtilen satır numarası 0 ise *nIndex* düzenleme denetiminde satır sayısı değerinden büyük.
+Aslında kopyalanan karakter sayısı. Dönüş değeri tarafından belirtilen satır numarası 0 ise *nIndex* düzenleme denetiminde satır sayısı değerinden büyük.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -800,7 +800,7 @@ void LimitText(int nChars = 0);
 ### <a name="parameters"></a>Parametreler
 
 *nChars*<br/>
-Kullanıcının girebileceği metin uzunluğu (bayt cinsinden) belirtir. Bu parametre 0 ise, metin uzunluğu uınt_max bayt olarak ayarlanır. Bu varsayılan davranıştır.
+Kullanıcının girebileceği metin (TCHARs) uzunluğunu belirtir. Bu parametre 0 ise, metin uzunluğu uınt_max bayt olarak ayarlanır. Bu varsayılan davranıştır.
 
 ### <a name="remarks"></a>Açıklamalar
 

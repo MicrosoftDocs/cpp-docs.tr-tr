@@ -48,12 +48,12 @@ helpviewer_keywords:
 - _mbstok_s function
 - strtok_s function
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
-ms.openlocfilehash: 24a945742f3db82e41f662a337eef1f79ef13bd6
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 0020d4944ffb379584a044023bc34169b4a5c983
+ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210594"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416981"
 ---
 # <a name="strtoks-strtoksl-wcstoks-wcstoksl-mbstoks-mbstoksl"></a>strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 
@@ -97,7 +97,7 @@ unsigned char* _mbstok_s(
    char** context
 );
 
-unsigned char* _mbstok_s(
+unsigned char* _mbstok_s_l(
    unsigned char* str,
    const unsigned char* delimiters,
    char** context,
