@@ -3,12 +3,12 @@ title: C++ Tür Sistemi (Modern C++)
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: ea4d8da9af10df2fb930daaad8374d70b6704d28
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 4dfbf408654ccc92c92d6855c15238cb07c01b58
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220679"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476909"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 
@@ -102,9 +102,7 @@ Tanımladığınızda bir **sınıfı**, **yapı**, **birleşim**, veya **enum**
 
 - Derleyici kullanıcı tanımlı türde yerleşik bilgi içermez. Derleme işlemi sırasında tanımla ilk karşılaştığında türü öğrenir.
 
-- Türünüz üzerinde gerçekleştirilebilecek işlemleri ve diğer türlere nasıl dönüştürülebileceğini, ilgili operatörleri sınıf üyeleri veya üye harici işlevler olarak tanımlayarak (aşırı yükleme ile) siz belirtirsiniz. Daha fazla bilgi için [işlev aşırı yüklemesi](function-overloading.md).
-
-- Bunların statik türlü olması gerekmez (bir nesne türünün asla değişmeme kuralı). Sistemleri aracılığıyla *devralma* ve *çok biçimlilik*, kullanıcı tanımlı türü (sınıfın nesne örneği olarak adlandırılır) olarak bildirilen bir değişken, çalışma zamanında farklı bir tür olabilir derleme zamanı. Daha fazla bilgi için [devralma](../cpp/inheritance-cpp.md).
+- Türünüz üzerinde gerçekleştirilebilecek işlemleri ve diğer türlere nasıl dönüştürülebileceğini, ilgili operatörleri sınıf üyeleri veya üye harici işlevler olarak tanımlayarak (aşırı yükleme ile) siz belirtirsiniz. Daha fazla bilgi için [işlev aşırı yüklemesi](function-overloading.md)
 
 ## <a name="pointer-types"></a>İşaretçi türleri
 

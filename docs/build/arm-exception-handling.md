@@ -2,12 +2,12 @@
 title: ARM özel durum işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: cbbec3f40df2765fa76399ce667ae30f4533b018
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 8a2bae8e42ac6a624bebe7c185ac7e0ade8d5491
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814546"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476948"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -220,7 +220,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 }
 ```
 
-Athough prolog ve her kapanış geriye doğru izleme kodları bir dizine sahip, tablo, bunlar arasında paylaşılır. Bunların tümü aynı geriye doğru izleme kodları paylaşabilirsiniz seyrek değil. Derleyici yazıcıları belirtilebilecek en büyük dizinden 255'tir ve bu belirli bir işlev için olası geriye doğru izleme kodları toplam sayısını sınırlar çünkü bu durumda, iyileştirme öneririz.
+Prolog ve epilog her bir dizine geriye doğru izleme kodları olsa tablo bunlar arasında paylaşılır. Bunların tümü aynı geriye doğru izleme kodları paylaşabilirsiniz seyrek değil. Derleyici yazıcıları belirtilebilecek en büyük dizinden 255'tir ve bu belirli bir işlev için olası geriye doğru izleme kodları toplam sayısını sınırlar çünkü bu durumda, iyileştirme öneririz.
 
 ### <a name="unwind-codes"></a>Geriye doğru izleme kodları
 

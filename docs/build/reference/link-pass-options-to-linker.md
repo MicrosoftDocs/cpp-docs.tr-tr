@@ -1,6 +1,6 @@
 ---
 title: /link (Seçenekleri Bağlayıcıya Geçir)
-ms.date: 11/04/2016
+ms.date: 03/25/2019
 f1_keywords:
 - /link
 helpviewer_keywords:
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C++]
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
-ms.openlocfilehash: 7f40841b82db9f46019ce2a96a61a1a0f622b6d5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: ef81a6617df811660506c08434f3b65e29155794
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813443"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476844"
 ---
 # <a name="link-pass-options-to-linker"></a>/link (Seçenekleri Bağlayıcıya Geçir)
 
@@ -24,28 +24,32 @@ Bir veya daha fazla bağlayıcı seçenekleri bağlayıcıya iletir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/link linkeroptions
-```
+> **/ link** *bağlayıcı seçenekleri*
 
 ## <a name="arguments"></a>Arguments
 
-*linkeroptions*<br/>
+*bağlayıcı seçenekleri*<br/>
 Seçenekleri bağlayıcıya geçirilemez ve bağlayıcı seçeneği.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **/Link** seçeneği ve bağlayıcı seçenekleri herhangi bir dosya adlarını ve CL seçenekleri sonra görünmelidir. Bir arasında gerekli bir alandır **/link** ve `linkeroptions`. Daha fazla bilgi için [MSVC bağlayıcı başvurusu](linking.md).
 
+## <a name="example"></a>Örnek
+
+Bu örnek komut satırı derleme *hello.cpp* ve varolan nesne dosyasına bağlantılar *there.obj*. Daha sonra ek bir geçirir **/VERSION** bağlayıcı komutu:
+
+`cl /W4 /EHsc hello.cpp there.obj /link /VERSION:3.14`
+
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+IDE, normalde derlemek ve kodunuzu bağlamak için ayrı komutlar gönderir. Bağlayıcı seçenekleri, proje özelliği sayfalarından ayarlayabilirsiniz.
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. Seçin **yapılandırma özellikleri** > **bağlayıcı** klasör.
 
-1. Bağlayıcı özellik sayfasını tıklatın.
-
-1. Bir veya daha fazla özelliklerini değiştirin.
+1. Bir veya daha fazla özelliklerini değiştirin. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -53,5 +57,5 @@ Seçenekleri bağlayıcıya geçirilemez ve bağlayıcı seçeneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

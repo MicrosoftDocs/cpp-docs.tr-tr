@@ -6,12 +6,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: c1f59c704e96ade82295f4ae88265f549987e981
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 44a2f1da6a02444c79247178c34281e39731f0f3
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813974"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476935"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturma ve kullanma kendi dinamik bağlantı kitaplığı (C++)
 
@@ -296,9 +296,11 @@ Ardından, kaynak kodunuzu MathLibrary işlevleri çağırmak için projenizi Ma
 
 1. Üst bölmede çift **ek içerik dizinleri** bir düzenleme denetimi etkinleştirmek için iletişim kutusu.
 
-1. Düzenleme denetiminde konumunun yolunu belirtin **MathLibrary.h** üst bilgi dosyası. Bu durumda, göreli bir yol kullanabilirsiniz:
+1. Düzenleme denetiminde konumunun yolunu belirtin **MathLibrary.h** üst bilgi dosyası. Bu durumda, .cpp dosyalarınızdan DLL projesinde .h dosyasını içeren klasöre istemci projesindeki içeren klasöründen göreli bir yol kullanabilirsiniz. DLL çözümle aynı klasörde ayrı bir çözümde istemci projeniz ise göreli yol şöyle görünmelidir:
 
    `..\..\MathLibrary\MathLibrary`
+
+   Ardından, DLL ve istemci projeleri aynı çözüm içinde ya da devre dışı çözümlerini farklı klasörlerde bulunan, göreli yolunu uygun şekilde ayarlamanız gerekir.
 
    ![Başlık konumu ek içerik dizinleri özellik ekleyin](media/mathclient-additional-include-directories.png "üstbilgi konumunu ek içerik dizinleri özelliğini ekleyin")
 

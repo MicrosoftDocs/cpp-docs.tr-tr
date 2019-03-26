@@ -1,6 +1,6 @@
 ---
 title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
-ms.date: 11/04/2016
+ms.date: 03/25/2019
 apiname:
 - _mbstok_l
 - _mbstok
@@ -45,12 +45,12 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-ms.openlocfilehash: bb791c7049379f62b99804fa8f1cf3a57fe0b749
-ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
+ms.openlocfilehash: 22dd01a0b2558c83ca1e25875a2ace7dd4ee15c0
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416968"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476922"
 ---
 # <a name="strtok-strtokl-wcstok-wcstokl-mbstok-mbstokl"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
@@ -81,11 +81,11 @@ wchar_t *wcstok_l(
    _locale_t locale
 );
 unsigned char *_mbstok(
-   unsigned char*strToken,
+   unsigned char *strToken,
    const unsigned char *strDelimit
 );
 unsigned char *_mbstok_l(
-   unsigned char*strToken,
+   unsigned char *strToken,
    const unsigned char *strDelimit,
    _locale_t locale
 );
@@ -104,7 +104,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bulunan sonraki belirteç için bir işaretçi döndürür *strToken*. Döndürmeleri **NULL** zaman başka belirteç bulundu. Her çağrının değiştirir *strToken* sonra döndürülen belirteci oluşan ilk sınırlayıcısı için bir null karakter koyarak tarafından.
+Bulunan sonraki belirteç için bir işaretçi döndürür *strToken*. İşlevler dönüş **NULL** zaman başka belirteç bulundu. Her çağrının değiştirir *strToken* sonra döndürülen belirteci oluşan ilk sınırlayıcısı için bir null karakter koyarak tarafından.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -115,7 +115,9 @@ Bulunan sonraki belirteç için bir işaretçi döndürür *strToken*. Döndürm
 
 Yapılan ilk çağrıda **strtok**, işlev önde gelen sınırlayıcılar atlar ve ilk belirteci için bir işaretçi döndürür *strToken*, sonlandırıcı null karakteri ile belirteç. Daha fazla belirteçleri dışında kalan bölünebilir *strToken* bir dizi çağrıda tarafından **strtok**. Her çağrı **strtok** değiştirir *strToken* null karakterden sonra ekleyerek **belirteci** çağrı tarafından döndürülen. Sonraki belirteçten okunacak *strToken*, çağrı **strtok** ile bir **NULL** değerini *strToken* bağımsız değişken. **NULL** *strToken* bağımsız değişken nedenleri **strtok** sonraki belirtece değiştirilmiş aranacak *strToken*. *StrDelimit* bağımsız değişkeni, bir çağrısından sonraki herhangi bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına. Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md).
+
+Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. Sürümlerle **_l** sonekine, bunun yerine iletilmiş yerel ayar parametresini kullanmalarıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 > [!NOTE]
 > Her işlev, dizeyi belirteçlere ayrıştırmak için bir iş parçacığına yerel statik değişken kullanır. Bu nedenle, birden çok iş parçacığı aynı anda istenmeyen etkileri olmadan bu işlevleri çağırabilir. Ancak, tek bir iş parçacığı içinde Bu işlevlerden biri çağrısına Interleaving veri bozulması ve tutarsız sonuçlar üretmesi olasılığı yüksektir. Farklı dizeleri ayrıştırma, sonraki ayrıştırılacak başlatmadan önce bir dizeyi ayrıştırma tamamlayın. Ayrıca bir döngü içinde Bu işlevlerden biri burada başka bir işlev olarak da adlandırılır çağrılırken tehlike potansiyeli farkında olun. Bu işlevlerden birini kullanarak diğer işlev sona erer, veri bozulması tetikleyen bir araya eklemeli dizisi çağrılarının sonuçlanır.

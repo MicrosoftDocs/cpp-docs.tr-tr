@@ -1,6 +1,6 @@
 ---
 title: strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
-ms.date: 11/04/2016
+ms.date: 03/25/2019
 apiname:
 - _wcstok_s_l
 - _mbstok_s_l
@@ -48,12 +48,12 @@ helpviewer_keywords:
 - _mbstok_s function
 - strtok_s function
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
-ms.openlocfilehash: 0020d4944ffb379584a044023bc34169b4a5c983
-ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
+ms.openlocfilehash: e2c237927aa133d33085be40b88789c1024d6b34
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416981"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476896"
 ---
 # <a name="strtoks-strtoksl-wcstoks-wcstoksl-mbstoks-mbstoksl"></a>strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 
@@ -137,13 +137,15 @@ Varsa *str* olduğu **NULL** ancak *bağlam* bir işaretçi geçerli bağlam iş
 
 **Strtok_s** işlevler ailesini bulur sonraki belirteç *str*. Karakter kümesi *sınırlayıcılar* belirteç bulunamıyor olası ayırıcısını belirtir *str* geçerli çağrıda. **wcstok_s** ve **_mbstok_s** geniş karakter ve çok baytlı karakter sürümleridir **strtok_s**. Bağımsız değişkenler ve dönüş değerleri **wcstok_s** ve **_wcstok_s_l** geniş karakterli dizelerdir; **_mbstok_s** ve **_mbstok_s_l**çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. Bir hata durumu oluşursa hata koşulları tabloda olduğu gibi geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve dönüş **NULL**.
+Bu işlev, parametrelerini doğrular. Bir hata durumu oluştuğunda hata koşullarını tabloda olduğu gibi geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve dönüş **NULL**.
 
-Yapılan ilk çağrıda **strtok_s** işlev önde gelen sınırlayıcılar atlar ve ilk belirteci için bir işaretçi döndürür *str*, sonlandırıcı null karakteri ile belirteç. Daha fazla belirteçleri dışında kalan bölünebilir *str* bir dizi çağrıda tarafından **strtok_s**. Her çağrı **strtok_s** değiştirir *str* sonra o çağrı tarafından döndürülen belirteci null karakteri ekleyerek. *Bağlam* hangi dize okuyun ve dizesinde sonraki belirtece okunacak olduğu işaretçi izler. Sonraki belirteçten okunacak *str*, çağrı **strtok_s** ile bir **NULL** değerini *str* bağımsız değişken ve aynı  *bağlam* parametresi. **NULL** *str* bağımsız değişken nedenleri **strtok_s** sonraki belirtece değiştirilmiş aranacak *str*. *Sınırlayıcılar* bağımsız değişkeni, bir çağrısından sonraki herhangi bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
+Yapılan ilk çağrıda **strtok_s**, işlev önde gelen sınırlayıcılar atlar ve ilk belirteci için bir işaretçi döndürür *str*, sonlandırıcı null karakteri ile belirteç. Daha fazla belirteçleri dışında kalan bölünebilir *str* bir dizi çağrıda tarafından **strtok_s**. Her çağrı **strtok_s** değiştirir *str* sonra o çağrı tarafından döndürülen belirteci null karakteri ekleyerek. *Bağlam* hangi dize okuyun ve dizesinde sonraki belirtece okunacak olduğu işaretçi izler. Sonraki belirteçten okunacak *str*, çağrı **strtok_s** ile bir **NULL** değerini *str* bağımsız değişken ve aynı  *bağlam* parametresi. **NULL** *str* bağımsız değişken nedenleri **strtok_s** sonraki belirtece değiştirilmiş aranacak *str*. *Sınırlayıcılar* bağımsız değişkeni, bir çağrısından sonraki herhangi bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
 
 Bu yana *bağlam* parametresi olarak kullanılan statik arabellek yerini **strtok** ve **_strtok_l**, aynı anda aynı iş parçacığı, iki dizeyi ayrıştırmak mümkündür.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli iş parçacığı yerel ayarı kullanın. Sürümlerle **_l** sonekine yerine kullandıkları dışında *yerel ayar* parametresi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına. Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md).
+
+Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli iş parçacığı yerel ayarı kullanın. Sürümlerle **_l** soneki, bunun yerine tarafından belirtilen yerel ayarı kullanmaları dışında aynıdır *yerel ayar* parametresi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

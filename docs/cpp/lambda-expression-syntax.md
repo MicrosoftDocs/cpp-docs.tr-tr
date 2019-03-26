@@ -1,15 +1,15 @@
 ---
 title: Lambda İfadesi Sözdizimi
-ms.date: 11/04/2016
+ms.date: 03/25/2019
 helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
-ms.openlocfilehash: 030960cf8a301575396231cec1a37ff7bed2667f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2df2c203024e1b50cffdcb15af834fe09effaae2
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577482"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476870"
 ---
 # <a name="lambda-expression-syntax"></a>Lambda İfadesi Sözdizimi
 
@@ -23,7 +23,7 @@ Bir lambda, işlev işaretçilerinin ve işlev nesnelerinin avantajlarını bir 
 
 Aşağıdaki örnekler, lambda kullanımını işlevi nesnesi kullanımıyla karşılaştırır. İlk örnek konsola yazdırmak için bir lambda kullanır olup olmadığını her öğe bir `vector` çift veya tek nesne. İkinci örnek aynı görevi başarmak için bir işlev nesnesi kullanır.
 
-## <a name="example-1-using-a-lambda"></a>Örnek 1: Bir Lambda Kullanma
+## <a name="example-1-using-a-lambda"></a>Örnek 1: Bir Lambda kullanma
 
 Bu örnek için bir lambda geçirir **for_each** işlevi. Lambda bildiren bir sonucu yazdırmaya olup olmadığını her öğe bir `vector` çift veya tek nesne.
 
@@ -39,7 +39,7 @@ using namespace std;
 
 int main()
 {
-   // Create a vector object that contains 10 elements.
+   // Create a vector object that contains 9 elements.
    vector<int> v;
    for (int i = 1; i < 10; ++i) {
       v.push_back(i);
@@ -64,8 +64,6 @@ int main()
 }
 ```
 
-### <a name="output"></a>Çıkış
-
 ```Output
 1 is odd
 2 is even
@@ -83,7 +81,7 @@ There are 4 even numbers in the vector.
 
 Örnekte, üçüncü bağımsız değişkeni **for_each** işlevi bir lambdadır. `[&evenCount]` Kısmı belirtir ifadesinin yakalama yan tümcesi `(int n)` parametre listesi ve kalan bölümü ifadesinin gövdesi belirtir.
 
-## <a name="example-2-using-a-function-object"></a>Örnek 2: Bir İşlev Nesnesi Kullanma
+## <a name="example-2-using-a-function-object"></a>Örnek 2: Bir işlev nesnesi kullanma
 
 Bazen bir lambda önceki örnekten daha fazla genişletmek için çok kullanışsız olur. Sonraki örnek ile birlikte bir işlev nesnesi bir lambda yerine kullanır **for_each** örnek 1'dekiyle aynı sonucu elde etmek. Örneklerin her ikisi de çift sayıların sayısını depolar bir `vector` nesne. İşlemin durumunu korumak üzere `FunctorClass` sınıfı depoları `m_evenCount` bir üye değişkeni başvurusuna göre. İşlemi gerçekleştirmek için `FunctorClass` işlev çağrısı işlecini uygular **operator()**. Visual C++ derleyicisi, Örnek 1'deki lambda koduyla boyut ve performans açısından karşılaştırılabilir kodu oluşturur. Bu makaledeki gibi temel bir sorun için, daha basit bir lambda tasarımı işlev nesnesi tasarımından genellikle daha iyi bir tasarımdır. Ancak ilerde işlevsellik için önemli bir genişletme gerekeceğini düşünüyorsanız, kodu korumayı kolaylaştıracak işlev nesnesi tasarımını kullanabilirsiniz.
 
@@ -129,7 +127,7 @@ private:
 
 int main()
 {
-    // Create a vector object that contains 10 elements.
+    // Create a vector object that contains 9 elements.
     vector<int> v;
     for (int i = 1; i < 10; ++i) {
         v.push_back(i);
@@ -145,8 +143,6 @@ int main()
         << " even numbers in the vector." << endl;
 }
 ```
-
-## <a name="output"></a>Çıkış
 
 ```Output
 1 is odd
