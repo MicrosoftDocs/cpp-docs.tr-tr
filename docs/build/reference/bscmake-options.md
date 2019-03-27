@@ -29,14 +29,17 @@ helpviewer_keywords:
 - /Es BSCMAKE option
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
-ms.openlocfilehash: bf4c3648079dff16481dbdd56b9a70093fd22d8d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b1d62e8d122cb4f08feef60d6936359b3e246749
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812063"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508795"
 ---
 # <a name="bscmake-options"></a>BSCMAKE Seçenekleri
+
+> [!WARNING]
+> BSCMAKE hala Visual Studio ile yüklenir ancak artık IDE tarafından kullanılır. Visual Studio 2008'den itibaren göz atma ve sembol bilgilerini otomatik olarak bir SQL Server .sdf dosyası çözüm klasöründe depolanır.
 
 Bu bölümde, BSCMAKE denetlemek için kullanılabilen seçenekler açıklanmaktadır. Çeşitli seçenekler gözatma bilgisi dosyası içeriğini hariç veya belirli bilgiler dahil olmak üzere denetler. Dışlama seçenekleri BSCMAKE daha hızlı çalışmasına izin verebilir ve daha küçük bir .bsc dosyasına neden olabilir. Seçenek adlarını büyük küçük harfe duyarlı (dışında **/HELP** ve **/nologo**).
 

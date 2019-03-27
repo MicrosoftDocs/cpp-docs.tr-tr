@@ -1,18 +1,18 @@
 ---
 title: C++ uyumluluk geliştirmeleri
-ms.date: 10/31/2018
+ms.date: 03/26/2019
 ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 855322f09c9c8f5292c6e299f946c3cec5d9949a
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: b2c014534ce24b9796510195d6ae5a922fb484d8
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809756"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508877"
 ---
-# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#update_159)
+# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159improvements159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#improvements_159)
 
 İçin genelleştirilmiş constexpr ve NSDMI ile Microsoft Visual C++ Derleyici C ++ 14 standardına eklenen özelliklerin tamamlanmıştır. Yine de derleyicide C++11 ve C++98 Standartlarındaki bazı özellikler eksiktir. Bkz: [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md) derleyici geçerli durumunu gösteren bir tablo için.
 
@@ -335,6 +335,45 @@ void bar(A<0> *p)
 ### <a name="c17-constexpr-for-chartraits-partial"></a>C ++ 17 constexpr char_traits (kısmi) için
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) değişikliklerini `std::traits_type` üye işlevleri `length`, `compare`, ve `find` yapmak için `std::string_view` sabit ifadelerde kullanılabilir. (Visual Studio 2017 sürüm 15.6, Clang/LLVM yalnızca desteklenir. Sürüm 15.7 Önizleme 2, destek neredeyse olduğu için ClXX de tamamlayın.)
+
+## <a name="improvements_159"></a> Visual Studio 2017 sürüm 15.9 geliştirmeleri
+
+### <a name="left-to-right-evaluation-order-for-operators-----and-"></a>Soldan sağa Değerlendirme sırasını işleçleri için -> *, [], >>, ve <<
+
+C ++ 17'de başlayarak, işlenenler işleç -> *, [], >>, ve \< \< soldan sağa doğru sırayla değerlendirilir. Derleyici bu düzeni olmasını garanti etmek mümkün olduğu iki durum vardır:
+- işlenen ifadelerden biri bir nesne değer olarak geçilemez veya değere göre geçirilen nesneyi içerdiğinde veya
+- kullanılarak derlendiğinde **/CLR**, ve işlenenleri biri bir alan bir nesne veya dizi öğesi.
+
+Derleyici Uyarısı gösterir [C4866](https://docs.microsoft.com/cpp/error-messages/compiler-warnings/c4866?view=vs-2017) zaman bunu garanti etmez soldan sağa değerlendirme. Bu uyarı, yalnızca oluşturulan **/Std: c ++ 17** veya bu işleçler soldan sağa sıralı gereksinimi C ++ 17'de kullanılmaya başlanan olarak daha sonra belirtilir.
+
+Bu uyarıyı çözmek için önce işlenenlerin soldan sağa Değerlendirme sırasını bağımlı yan etkileri işlenenlerin zaman üretebilir gibi gerekli olup olmadığını göz önünde bulundurun. Çoğu durumda, işlenenleri değerlendirilme sırasını gözlemlenebilir bir etkisi yok. Soldan sağa Değerlendirme sırasını olması gerekiyorsa, işlenenleri sabit başvuruya göre bunun yerine geçirebilirsiniz olup olmadığını göz önünde bulundurun. Bu değişiklik, aşağıdaki kod örneği'nde uyarı ortadan kaldırır.
+
+```cpp
+// C4866.cpp
+// compile with: /w14866 /std:c++17
+
+class HasCopyConstructor
+{
+public:
+    int x;
+
+    HasCopyConstructor(int x) : x(x) {}
+    HasCopyConstructor(const HasCopyConstructor& h) : x(h.x) { }
+};
+
+int operator>>(HasCopyConstructor a, HasCopyConstructor b) { return a.x >> b.x; }
+
+// This version of operator>> does not trigger the warning:
+// int operator>>(const HasCopyConstructor& a, const HasCopyConstructor& b) { return a.x >> b.x; }
+
+int main()
+{
+    HasCopyConstructor a{ 1 };
+    HasCopyConstructor b{ 2 };
+
+    a>>b;        // C4866 for call to operator>>
+};
+```
 
 ## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-158update158-and-159update159"></a>Visual Studio sürümlerinde 15.0, hata düzeltmeleri [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15,8](#update_158), ve [15.9](#update_159)
 

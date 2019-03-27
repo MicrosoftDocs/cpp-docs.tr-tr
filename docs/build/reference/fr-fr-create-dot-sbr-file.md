@@ -13,12 +13,12 @@ helpviewer_keywords:
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-ms.openlocfilehash: a75a9d143012dee7946591d708921d6734b2acda
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 73642baba77a62cac531ae7b2842ec9953b338ec
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811881"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508708"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
 
@@ -32,6 +32,9 @@ ms.locfileid: "57811881"
 ```
 
 ## <a name="remarks"></a>Açıklamalar
+
+> [!WARNING]
+> BSCMAKE hala Visual Studio ile yüklenir ancak artık IDE tarafından kullanılır. Visual Studio 2008'den itibaren göz atma ve sembol bilgilerini otomatik olarak bir SQL Server .sdf dosyası çözüm klasöründe depolanır.
 
 Derleme işlemi sırasında Microsoft Gözat bilgi dosya Bakımı yardımcı programı (BSCMAKE) oluşturmak için bu dosyaları kullanan bir. BSC dosyası, gözatma bilgilerini görüntülemek için kullanılır.
 
@@ -61,6 +64,6 @@ Siz belirtmezseniz `filename`, kaynak dosyası olarak aynı temel adlı .sbr dos
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
 [Yol Adını Belirtme](specifying-the-pathname.md)

@@ -1,6 +1,6 @@
 ---
 title: /bigobj (.Obj Dosyasında Bölüm Sayısını Arttırma)
-ms.date: 11/04/2016
+ms.date: 03/26/2019
 f1_keywords:
 - /bigobj
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /bigobj compiler option [C++]
 - bigobj compiler option [C++]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12
-ms.openlocfilehash: a9685834fc3e1de246c9d9d60d206538b744ce3e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 46399dc0c1ff552b4fc963b686ac6aa6df8b6f71
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809866"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508721"
 ---
 # <a name="bigobj-increase-number-of-sections-in-obj-file"></a>/bigobj (.Obj Dosyasında Bölüm Sayısını Arttırma)
 
@@ -21,27 +21,23 @@ ms.locfileid: "57809866"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/bigobj
-```
+> **/bigobj**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bir nesne dosyası en çok 65.536 (2 ^ 16) adreslenebilir bölüm. Hangi hedef platform belirtilirse durum budur. **/ bigobj** artırır bu adres kapasitesini 4,294,967,296 (2 ^ 32).
+Varsayılan olarak, bir nesne dosyası en çok 65,279 içerebilir (yaklaşık 2 ^ 16) adreslenebilir bölüm. Ne olursa olsun hangi hedef platform belirtilirse, bu sınır geçerlidir. **/ bigobj** artırır bu adres kapasitesini 4,294,967,296 (2 ^ 32).
 
-Modüllerinin çoğu hiçbir zaman birden fazla 65.536 bir .obj dosyası oluşturur. Ancak, makinede oluşturulan kod veya şablon kitaplıklarını ağır olarak kullanan yapan kod daha fazla bölüm tutan .obj dosyaları gerekebilir. **/ bigobj** makine tarafından oluşturulan XAML kodu çok sayıda üstbilgi içerdiğinden, Evrensel Windows Platformu (UWP) projeler üzerinde varsayılan olarak etkindir. Bir UWP uygulaması projesi bu seçeneği devre dışı bırakırsanız C1128 derleyici hatasıyla karşılaşabilirsiniz.
+Modüllerinin çoğu hiçbir zaman birden fazla 65,279 bölümleri içeren bir .obj dosyası oluşturur. Ancak, makine tarafından oluşturulan kod veya şablon kitaplıklarını ağır olarak kullanan yapan kod daha fazla bölüm tutan .obj dosyaları gerektirebilir. **/ bigobj** makine tarafından oluşturulan XAML kodu çok sayıda üstbilgi içerdiğinden, Evrensel Windows Platformu (UWP) projeler üzerinde varsayılan olarak etkindir. Bir UWP uygulaması projesi bu seçeneği devre dışı bırakırsanız C1128 derleyici hatasıyla kodunuzu oluşturabilir.
 
-Visual C++ 2005'ten önce sevk okuyamaz ile üretilmiş .obj dosyalarını **/bigobj**.
+PE COFF nesne dosyası biçimi hakkında daha fazla bilgi için bkz: [PE biçimi](/windows/desktop/debug/pe-format) Windows belgelerinde.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
-1. Tıklayın **komut satırı** özellik sayfası.
-
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. Girin **/bigobj** derleyici seçeneğini **ek seçenekler** kutusu.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -49,5 +45,5 @@ Visual C++ 2005'ten önce sevk okuyamaz ile üretilmiş .obj dosyalarını **/bi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
