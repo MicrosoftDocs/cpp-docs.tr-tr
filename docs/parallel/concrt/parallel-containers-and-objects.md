@@ -1,17 +1,17 @@
 ---
 title: Paralel Kapsayıcılar ve Nesneler
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 helpviewer_keywords:
 - parallel objects
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-ms.openlocfilehash: b406bc194735a2796f03f1e9d6cf0cf2ae2e6f86
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: bcf3ead9fe945ecb2246fdb28b7f67cd51b1238b
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333299"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565954"
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 
@@ -27,13 +27,13 @@ Bu konuda aşağıdaki paralel kapsayıcılar ve nesneler ayrıntılı açıklan
 
 Eş zamanlı kapsayıcılar:
 
-- [concurrent_vector Sınıfı](#ctor)
+- [concurrent_vector Sınıfı](#vector)
 
-   - [Concurrent_vector arasındaki farklar ve vektör](#ctor)
+   - [Concurrent_vector arasındaki farklar ve vektör](#vector-differences)
 
-   - [Eşzamanlılık açısından güvenli işlemler](#ctor)
+   - [Eşzamanlılık açısından güvenli işlemler](#vector-safety)
 
-   - [Özel durum güvenliği](#ctor)
+   - [Özel durum güvenliği](#vector-exceptions)
 
 - [concurrent_queue Sınıfı](#queue)
 
@@ -189,7 +189,7 @@ Aşağıdaki örnek kullanmak için temel yapısını gösterir `concurrent_unor
 
 [!code-cpp[concrt-unordered-map-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_2.cpp)]
 
-Kullanan bir örnek için `concurrent_unordered_map` bir eşleme gerçekleştirme ve paralel işlem azaltmak için bkz: [nasıl yapılır: eşleme gerçekleştirme ve işlemleri paralel azaltma](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).
+Kullanan bir örnek için `concurrent_unordered_map` bir eşleme gerçekleştirme ve paralel işlem azaltmak için bkz: [nasıl yapılır: Eşleme gerçekleştirme ve işlemleri paralel olarak azaltma](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md).
 
 ###  <a name="map-differences"></a> Concurrent_unordered_map arasındaki farklar ve unordered_map
 
@@ -214,7 +214,7 @@ Kilitlenme, hiçbir yöntemi önlemeye yardımcı olmak için `concurrent_unorde
 |[konumunda](reference/concurrent-unordered-map-class.md#at)|`count`|`find`|[key_eq](reference/concurrent-unordered-map-class.md#key_eq)|
 |`begin`|`empty`|`get_allocator`|`max_size`|
 |`cbegin`|`end`|`hash_function`|[işleci&#91;&#93;](reference/concurrent-unordered-map-class.md#operator_at)|
-|`cend`|`equal_range`|[Ekle](reference/concurrent-unordered-map-class.md#insert)|`size`|
+|`cend`|`equal_range`|[insert](reference/concurrent-unordered-map-class.md#insert)|`size`|
 
 Ancak `count` yöntemi çağrıldığında güvenli iş parçacığı eşzamanlı olarak çalışan, yeni bir değer kapsayıcıya aynı anda eklenirse, farklı iş parçacıkları farklı sonuçlar alabilir.
 
@@ -291,7 +291,7 @@ Ek veri depolayabilir bir `combinable` çağırdıktan sonra nesne [birleştirme
 
 Nasıl kullanılacağına dair örnekler `combinable` sınıfında, aşağıdaki konulara bakın:
 
-- [Nasıl yapılır: Performansı arttırmak için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)
+- [Nasıl yapılır: Performansı Geliştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)
 
 - [Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)
 
@@ -299,10 +299,10 @@ Nasıl kullanılacağına dair örnekler `combinable` sınıfında, aşağıdaki
 
 ## <a name="related-topics"></a>İlgili Konular
 
-[Nasıl yapılır: Etkinliği Arttırmak için Paralel Kapsayıcılar Kullanma](../../parallel/concrt/how-to-use-parallel-containers-to-increase-efficiency.md)<br/>
+[Nasıl yapılır: Etkinliği Artırmak için Paralel Kapsayıcılar Kullanma](../../parallel/concrt/how-to-use-parallel-containers-to-increase-efficiency.md)<br/>
 Verimli bir şekilde depolamak ve paralel verilere erişmek için paralel kapsayıcılar kullanma işlemi gösterilmektedir.
 
-[Nasıl yapılır: Performansı arttırmak için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
+[Nasıl yapılır: Performansı Geliştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
 Nasıl kullanılacağını gösterir `combinable` paylaşılan durumu ortadan kaldırmak için sınıf ve böylece performansı.
 
 [Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)<br/>

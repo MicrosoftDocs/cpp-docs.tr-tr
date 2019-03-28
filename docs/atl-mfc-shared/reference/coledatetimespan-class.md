@@ -1,6 +1,6 @@
 ---
 title: COleDateTimeSpan Class
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - COleDateTimeSpan
 - ATLCOMTIME/ATL::COleDateTimeSpan
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: feef238be96d9a04c2c41e6955efec8b23cf6a89
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b68a984488f37326f3b0c1249a5f17a3eb76548b
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748495"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565655"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan Class
 
@@ -745,7 +745,7 @@ Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
 - `COleDateTimeSpan::null` Belirten bu `COleDateTimeSpan` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)
 
    > [!CAUTION]
-   > Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Durumu ayarlamak için en sık kullanılacak **null** veya **geçersiz**. Unutmayın atama işleci ( [işleç =](#eq)) ve [SetDateTimeSpan](#setdatetimespan) kaynak değerleri üzerinde temel bir nesnenin durumu ayarlayın.
+   > Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Durumu ayarlamak için en sık kullanılacak **null** veya **geçersiz**. Unutmayın atama işleci ([işleç =](#operator_eq)) ve [SetDateTimeSpan](#setdatetimespan) kaynak değerleri üzerinde temel bir nesnenin durumu ayarlayın.
 
 ### <a name="example"></a>Örnek
 

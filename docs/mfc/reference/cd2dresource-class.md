@@ -1,6 +1,6 @@
 ---
 title: CD2DResource sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CD2DResource
 - AFXRENDERTARGET/CD2DResource
@@ -22,16 +22,16 @@ helpviewer_keywords:
 - CD2DResource [MFC], m_bIsAutoDestroy
 - CD2DResource [MFC], m_pParentTarget
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
-ms.openlocfilehash: 04d1fa57e34528f96f505fa20abb9b1131f80689
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e2cc6be7119a2df193aa2af415a9c8d4054f537c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284872"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564781"
 ---
 # <a name="cd2dresource-class"></a>CD2DResource sınıfı
 
-Oluşturma ve Fırçalar, Katmanlar ve metinler gibi D2D kaynakları yönetmek için bir arabirim sunan bir soyut sınıf.
+Bir soyut sınıf oluşturmak ve Fırçalar, Katmanlar ve metinler gibi D2D kaynakları yönetmek için bir arabirim sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,7 +46,7 @@ class CD2DResource : public CObject;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CD2DResource::CD2DResource](#cd2dresource)|CD2DResource bir nesne oluşturur.|
-|[CD2DResource:: ~ CD2DResource](#cd2dresource__~cd2dresource)|Yıkıcı. D2D kaynak nesnesi yok ediliyorken çağırılır.|
+|[CD2DResource:: ~ CD2DResource](#_dtorcd2dresource)|Yıkıcı. D2D kaynak nesnesi yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -67,7 +67,7 @@ class CD2DResource : public CObject;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Kaynak sahibi (CRenderTarget) tarafından destoyed olacaktır|
+|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Kaynak sahibi tarafından (CRenderTarget) edileceği|
 |[CD2DResource::m_pParentTarget](#m_pparenttarget)|CRenderTarget üst işaretçisi)|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -157,7 +157,7 @@ Kaynak geçerli ise TRUE; Aksi durumda FALSE.
 
 ##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy
 
-Kaynak sahibi (CRenderTarget) tarafından destoyed olacaktır
+Kaynak sahibi tarafından (CRenderTarget) edileceği
 
 ```
 BOOL m_bIsAutoDestroy;

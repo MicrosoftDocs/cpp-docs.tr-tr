@@ -1,6 +1,6 @@
 ---
 title: İmzasız Tam Sayı Türlerinden Dönüştürmeler
-ms.date: 01/29/2018
+ms.date: 03/27/2019
 helpviewer_keywords:
 - integers, converting
 - type casts, involving integers
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-ms.openlocfilehash: d7653c545601d10b159f10a8a3c8f60f9128f944
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f6136a721f84332451184baa648ebc7c909d5d7
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579695"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565028"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız Tam Sayı Türlerinden Dönüştürmeler
 
-İşaretsiz bir tamsayı yüksek sıra bitleri kesiliyor tarafından daha kısa bir imzalanmamış veya imzalı tamsayı veya sıfır genişletme tarafından artık imzalanmamış veya imzalı tamsayı dönüştürülür (bkz [işaretsiz tam sayı türlerinden dönüştürmeler](#_clang_table_4..3) tablo).
+İşaretsiz bir tamsayı ile daha kısa bir işaretsiz veya imzalı tamsayı yüksek sıra bitleri kesilmesi veya bir artık imzalanmamış veya imzalı tamsayı-sıfır genişleterek dönüştürülür. Daha fazla bilgi için [işaretsiz tam sayı türleri tablosu Dönüşümlerse](#conversions-from-unsigned-integral-types-table).
 
 Yeni türü içinde gösterilebilir, değerin tam sayı türü ile işaretli bir tamsayıya daha küçük boyutlu indirgenir veya işaretsiz bir tamsayı, karşılık gelen bir işaretli tamsayıya dönüştürülen değer değiştirilmez. Ancak, değişiklikleri temsil ettiği imza biti ayarlanmışsa, aşağıdaki örnekte olduğu gibi değeri.
 
@@ -35,7 +35,7 @@ Temsil edilemeyen, sonucu uygulama tarafından tanımlanır. Bkz: [tür atama d�
 
 İmzasız tam sayı türlerinden dönüştürmeler aşağıdaki tabloda özetlenmiştir.
 
-## <a name="conversions-from-unsigned-integral-types"></a>İmzasız tam sayı türlerinden dönüştürmeler
+## <a name="conversions-from-unsigned-integral-types-table"></a>İmzasız tam sayı türleri tablosu dönüşümlerse
 
 |Başlangıç|Bitiş|Yöntem|
 |----------|--------|------------|

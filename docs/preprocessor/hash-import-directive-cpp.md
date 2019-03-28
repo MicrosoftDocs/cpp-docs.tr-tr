@@ -1,6 +1,6 @@
 ---
 title: '#içeri aktarma yönergesi (C++)'
-ms.date: 10/18/2018
+ms.date: 03/27/2019
 f1_keywords:
 - '#import'
 helpviewer_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: a7dc30d3e5869e9b0f534a4769d4517a0514c144
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 72fd1d025ab19b7db9521e08655d00936b77581e
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822632"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564972"
 ---
 # <a name="import-directive-c"></a>#import Yönergesi (C++)
 
@@ -160,7 +160,7 @@ using namespace MyLib;
 
 hemen sonra **#import** kaynak kodunda deyimi.
 
-Ad alanı kullanılarak gizlenebilir [no_namespace](#_predir_no_namespace) özniteliği **#import** yönergesi. Ancak, ad alanının gizlenmesi ad çakışmalarına neden. Ad alanı olarak da adlandırılabilir [rename_namespace](#_predir_rename_namespace) özniteliği.
+Ad alanı kullanılarak gizlenebilir [no_namespace](no-namespace.md)) özniteliğinin **#import** yönergesi. Ancak, ad alanının gizlenmesi ad çakışmalarına neden. Ad alanı olarak da adlandırılabilir [rename_namespace](rename-namespace.md) özniteliği.
 
 Derleyici o anda işlediği tür kitaplığının gerektirdiği her tür kitaplığı bağımlılığının tam yolunu sağlar. Yol, yorumlar, biçiminde tür kitaplığı üstbilgisine yazılır (. TLH) derleyicinin işlenen her tür kitaplığı için oluşturur.
 

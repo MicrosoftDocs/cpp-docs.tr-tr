@@ -1,6 +1,6 @@
 ---
 title: valarray Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - valarray/std::valarray
 - valarray/std::valarray::value_type
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-ms.openlocfilehash: f38d431248c524a65b4a7a7126ba73b767a64173
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: efb186753de0e04bd01f9cc6e81c487084b88ac2
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525320"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565746"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -88,7 +88,7 @@ Sınıfın bir nesnesi `Type`:
 |-|-|
 |[işleci!](#op_not)|Mantıksal alan birli işleç `NOT` her öğe değerlerini bir `valarray`.|
 |[operator%=](#op_mod_eq)|Bir dizinin öğeleri element-wise bölme kalanı tarafından belirtilen alır `valarray` veya öğe türü değeri.|
-|[işleç & =](#op_amp_eq)|Bit düzeyinde alır `AND` bir dizideki öğelerin karşılık gelen öğelerle belirtilen bir ya da `valarray` veya öğe türü değeri.|
+|[işleç & =](#op_and_eq)|Bit düzeyinde alır `AND` bir dizideki öğelerin karşılık gelen öğelerle belirtilen bir ya da `valarray` veya öğe türü değeri.|
 |[İşleç >> =](#op_gt_gt_eq)|Sağ-kaydırmalar her öğe için BITS, bir `valarray` işlenen belirtilen sayıda konumları veya ikincisine belirtilen aralığın öğe düzeyinde çarpımının bir miktar `valarray`.|
 |[işleç << =](#op_lt_lt_eq)|Sol-kaydırmalar her öğe için BITS, bir `valarray` işlenen belirtilen sayıda konumları veya ikincisine belirtilen aralığın öğe düzeyinde çarpımının bir miktar `valarray`.|
 |[operator*=](#op_star_eq)|Öğelerinin belirtilen değerle çarpar `valarray` veya işleneni aralığın öğe düzeyinde çarpımının, öğe türü değeri `valarray`.|
@@ -508,7 +508,7 @@ valarray: ( 0 -3 4 -7 1 -3 ).
 */
 ```
 
-## <a name="and_eq"></a>  valarray::operator&amp;=
+## <a name="op_and_eq"></a>  valarray::operator&amp;=
 
 Bit düzeyinde alır **ve** bir dizideki öğelerin belirtilen valarray karşılık gelen öğelerle veya öğe türü değeri.
 
@@ -906,7 +906,7 @@ valarray: ( 2 0 4 2 6 4 8 6 ).
 */
 ```
 
-## <a name="valarray__operator-"></a>  valarray::operator-
+## <a name="operator-"></a>  valarray::operator-
 
 Birli işleç eksi bir valarray her öğe için geçerlidir.
 
@@ -958,7 +958,7 @@ valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
 */
 ```
 
-## <a name="valarray__operator-_eq"></a>  valarray::operator-=
+## <a name="operator-_eq"></a>  valarray::operator-=
 
 Belirtilen valarray öğelerini veya öğe türünde bir değer element-wise, bir işlenen valarray çıkarır.
 
@@ -1276,7 +1276,7 @@ Valarray veya bir öğe türü, birleştirilecek olan işlenen valarray aynı, a
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal veya, olarak adlandırılan özel **XOR**, semantiği aşağıdaki: öğe belirtildiğinde *e*1 ve *e*2 *e*1  **XOR** *e*2 **true** öğelerden tam olarak birine true; değilse **false** iki öğeyi yanlışsa veya her iki öğeleri true ise.
+Mantıksal veya, olarak adlandırılan özel **XOR**, aşağıdaki semantiği vardır: Öğeleri verilen *e*1 ve *e*2 *e*1 **XOR** *e*2 **true** varsa Bu öğelerden tam olarak birine geçerlidir; **false** iki öğeyi yanlışsa veya her iki öğeleri true ise.
 
 ### <a name="example"></a>Örnek
 

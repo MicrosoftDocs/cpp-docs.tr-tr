@@ -1,6 +1,6 @@
 ---
 title: basic_ostream Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - ostream/std::basic_ostream
 - ostream/std::basic_ostream::flush
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::basic_ostream [C++], tellp
 - std::basic_ostream [C++], write
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
-ms.openlocfilehash: dce4911bd4b7abe6c73551d6a0b178d9b2700dbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 64a32513e9dc151e64fccdb0ef678a75588f0a41
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543643"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565733"
 ---
 # <a name="basicostream-class"></a>basic_ostream Sınıfı
 
@@ -48,7 +48,7 @@ Karakter `traits_type`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birçok üye işlevleri aşırı yükleyen [işleci <<](#op_lt_lt) biçimlendirilmiş çıktı işlevlerdir. Bunlar desenini izler:
+Birçok üye işlevleri aşırı yükleyen [işleci <<](#basic_ostream_operator_lt_lt) biçimlendirilmiş çıktı işlevlerdir. Bunlar desenini izler:
 
 ```cpp
 iostate state = goodbit;
@@ -122,7 +122,7 @@ Basic_istream sınıfı bir nesnenin\< **Elem**, **Tr**> yalnızca sanal genel t
 |[yerleştirme](#put)|Bir akışa bir karakter koyar.|
 |[seekp](#seekp)|Çıkış akışına konuma sıfırlar.|
 |[sentry](#sentry)|İç içe geçmiş sınıf, biçimlendirilmiş çıkış işlevleri ve biçimlendirilmemiş çıkış işlevleri, bildirimi yapıları bir nesneyi tanımlar.|
-|[değiştirme](#op_eq)|Bu değeri birbiriyle değiştirir `basic_ostream` sağlanan olanlar için nesne `basic_ostream` nesne.|
+|[değiştirme](#swap)|Bu değeri birbiriyle değiştirir `basic_ostream` sağlanan olanlar için nesne `basic_ostream` nesne.|
 |[tellp](#tellp)|Çıkış akışına raporları konumu.|
 |[write](#write)|Karakter, bir akışa koyar.|
 
@@ -130,7 +130,7 @@ Basic_istream sınıfı bir nesnenin\< **Elem**, **Tr**> yalnızca sanal genel t
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#basic_ostream_operator_eq)|Sağlanan değeri atar `basic_ostream` parametresi bu nesne için nesne.|
+|[operator=](#op_eq)|Sağlanan değeri atar `basic_ostream` parametresi bu nesne için nesne.|
 |[işleç <<](#basic_ostream_operator_lt_lt)|Akışa yazar.|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -470,7 +470,7 @@ int main()
 
 İç içe geçmiş sınıf, biçimlendirilmiş çıkış işlevleri ve biçimlendirilmemiş çıkış işlevleri, bildirimi yapıları bir nesneyi tanımlar.
 
-sınıf sentry {public: açık sentry (basic_ostream\<Elem, Tr > & _Ostr); operator bool() const; ~ sentry();};
+class sentry { public: explicit sentry(basic_ostream\<Elem, Tr>& _Ostr); operator bool() const; ~sentry(); };
 
 ### <a name="remarks"></a>Açıklamalar
 

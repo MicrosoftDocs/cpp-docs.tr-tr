@@ -1,6 +1,6 @@
 ---
 title: Atama İşleçleri
-ms.date: 03/05/2018
+ms.date: 03/27/2019
 f1_keywords:
 - =
 - '*='
@@ -31,12 +31,12 @@ helpviewer_keywords:
 - /= operator
 - <<= operator
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
-ms.openlocfilehash: 44211e43a0449c8a50ff03cac31eeed1fcc49a28
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 758c82f02d2b113f6c750f7f0ede662c97b646b0
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328480"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565486"
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 
@@ -57,7 +57,7 @@ Atama işleçleri, sol işlenen tarafından belirlenen nesnede bir değer depola
 
 Aşağıdaki tabloda, = işleci hariç tüm atama işleçleri birleşik atama işleçleridir.
 
-### <a name="assignment-operators"></a>Atama İşleçleri
+### <a name="assignment-operators-table"></a>Atama İşleçleri tablosu
 
 |İşleç|Açıklama|
 |--------------|-------------|
@@ -73,7 +73,7 @@ Aşağıdaki tabloda, = işleci hariç tüm atama işleçleri birleşik atama i�
 |**^=**|Birinci ve ikinci işlenenden bit seviyesinde dışlamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
 |**\|=**|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
 
-**İşleç Anahtar Sözcükleri**
+### <a name="operator-keywords"></a>İşleç anahtar sözcükleri
 
 Bileşik atama işleçlerinden üçünün metin eşdeğerleri vardır. Bunlar:
 
@@ -180,7 +180,7 @@ Aşağıdaki etkileri biri olabilir:
 
 ## <a name="compound-assignment"></a>Bileşik atama
 
-Tablosunda gösterilen bileşik atama işleçleri [atama işleçleri](#assignment-operators), biçiminde belirtilen *e1* *op*= *e2*burada *e1* olmayan değiştirilebilir bir l-değeri olan **const** türü ve *e2* aşağıdakilerden biridir:
+Gösterilen bileşik atama işleçleri [atama işleçleri tablosu](#assignment-operators-table), biçiminde belirtilen *e1* *op*= *e2*burada *e1* olmayan değiştirilebilir bir l-değeri olan **const** türü ve *e2* aşağıdakilerden biridir:
 
 - Bir aritmetik tür
 

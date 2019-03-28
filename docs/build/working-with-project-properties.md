@@ -1,19 +1,19 @@
 ---
 title: C++ derleyicisi ayarlayın ve derleme Visual Studio özellikleri
 description: Visual Studio IDE, C++ Derleyici ve bağlayıcı seçenekleri ve diğer derleme ayarlarını değiştirmek için kullanın.
-ms.date: 12/10/2018
+ms.date: 03/27/2019
 helpviewer_keywords:
 - project properties [C++], modifying
 - properties [C++]
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 55adb6dc91919bda9c2827a89e5de536667085c1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: ab5456bfc8a1b8305813f4ee4a4399091de15aee
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57824115"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564924"
 ---
 # <a name="set-compiler-and-build-properties"></a>Derleyici ayarlayın ve derleme özellikleri
 
@@ -65,7 +65,7 @@ Bir Visual C++ projesinin özellik sayfaları aşağıdaki resimde gösterilmekt
 
 ![Proje özellik sayfaları](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
-Tüm kullanılabilir makroların değerlerini görüntülemek için özellik Düzenleyicisi'ni kullanabilirsiniz. Makrolar açıklanmıştır [özellik sayfası makroları](#bkmkPropertiesVersusMacros) bu makalenin devamındaki bölümüne.)
+Tüm kullanılabilir makroların değerlerini görüntülemek için özellik Düzenleyicisi'ni kullanabilirsiniz.
 
 ### <a name="predefined-macros"></a>Önceden tanımlanmış makrolar
 
@@ -79,7 +79,7 @@ Söz dizimine sahip `%(name)`. Bir dosya için öğe makrosu yalnızca o dosya i
 
 Oluşturabileceğiniz *kullanıcı tanımlı makrolar* proje yapılarında değişkenler olarak kullanılacak. Örneğin, bir özel yapı adımına veya özel yapı aracına değer sağlayan kullanıcı tanımlı bir makro oluşturabilirsiniz. Kullanıcı tanımlı makro bir ad/değer çiftidir. Bir proje dosyasında kullanmak **$(**<em>adı</em>**)** değere erişmek için bir gösterimi.
 
-Kullanıcı tanımlı makrolar bir özellik sayfasında depolanır. Projenize bir özellik sayfası içermiyorsa altındaki adımları izleyerek bir tane oluşturabilirsiniz [paylaşımı veya resuse Visual Studio C++ proje ayarlarını](#bkmkPropertySheets).
+Kullanıcı tanımlı makrolar bir özellik sayfasında depolanır. Projenize bir özellik sayfası içermiyorsa altındaki adımları izleyerek bir tane oluşturabilirsiniz [paylaşımını veya yeniden Visual Studio Proje ayarları](create-reusable-property-configurations.md).
 
 #### <a name="to-create-a-user-defined-macro"></a>Kullanıcı tanımlı makro oluşturmak için
 
@@ -128,17 +128,17 @@ Sağ bölmede değişiklik **ortam** veya **ortamı Birleştir** proje ayarları
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Paylaşımı veya resuse Visual Studio Proje ayarları](create-reusable-property-configurations.md)<br/>
+[Visual Studio projelerinin ayarlarını paylaşma veya yeniden kullanma](create-reusable-property-configurations.md)<br/>
 Nasıl paylaşılabilir özel yapı ayarları veya resused .props dosyası oluşturun.
 
-[Proje özellik devralma](project-property-inheritance.md)<br/>
+[Proje özelliği devralma](project-property-inheritance.md)<br/>
 .Props .targets, .vcxproj dosyaları ve yapı işleminde ortam değişkenlerini Değerlendirme sırasını tanımlar.
 
-[Özellikler ve hedefler proje dosyası değiştirmeden](modify-project-properties-without-changing-project-file.md)<br/>
+[Proje dosyasını değiştirmeden özellikleri ve hedefleri değiştirme](modify-project-properties-without-changing-project-file.md)<br/>
 Bir proje dosyasını değiştirmek zorunda kalmadan geçici derleme ayarlarının nasılş oluşturulacağı. 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio projeleri - C++](creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual Studio Projeleri - C++](creating-and-managing-visual-cpp-projects.md)<br/>
 [.vcxproj ve .props dosya yapısı](reference/vcxproj-file-structure.md)<br/>
 [Özellik sayfası XML dosyaları](reference/property-page-xml-files.md)<br/>

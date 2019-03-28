@@ -1,6 +1,6 @@
 ---
 title: move_iterator Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - iterator/std::move_iterator
 - iterator/std::move_iterator::iterator_type
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-ms.openlocfilehash: c9ff9385d43ac1c53f91a548ea01c04c1c67dc18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e2e62946325c082e761b6997ae584419175f8fe
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656167"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565074"
 ---
 # <a name="moveiterator-class"></a>move_iterator Sınıfı
 
@@ -175,7 +175,7 @@ Yeni geçerli öğeyi döndürür.
 
 İşleç ekler *_Off* depolanmış yineleyiciyi için. Ardından döndürür `*this`.
 
-## <a name="move_iterator__operator-_eq"></a>  move_iterator::operator-=
+## <a name="operator-_eq"></a>  move_iterator::operator-=
 
 Belirtilen sayıda önceki öğeler arasında taşır. Bu işleç, depolanmış yineleyiciyi bir uzaklık çıkarır.
 
@@ -234,7 +234,7 @@ reference operator[](difference_type _Off) const;
 
 İşleç döndürür `(reference)*(*this + _Off)`.
 
-## <a name="move_iterator__operator--"></a>  move_iterator::operator--
+## <a name="operator--"></a>  move_iterator::operator--
 
 Öncesi ve postdecrement üye işleçleri bir azaltma depolanmış yineleyiciyi üzerinde gerçekleştirin.
 
@@ -251,7 +251,7 @@ move_iterator operator--();
 
 İkinci işleç (azaltma sonrası) bir kopyasını oluşturur `*this`, değerlendirir `--*this`. Daha sonra kopyayı döndürür.
 
-## <a name="move_iterator__operator-"></a>  move_iterator::operator-
+## <a name="operator-"></a>  move_iterator::operator-
 
 Azaltır depolanmış yineleyiciyi ve belirtilen değeri döndürür.
 
@@ -328,6 +328,6 @@ Türü yineleyici nitelik eşanlamlıdır `typename iterator_traits<RandomIterat
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<Yineleyici >](../standard-library/iterator.md)<br/>
-[Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
+[Lvalue ve Rvalue’lar](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
 [Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

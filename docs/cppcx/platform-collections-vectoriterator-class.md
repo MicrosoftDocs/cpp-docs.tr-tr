@@ -1,18 +1,18 @@
 ---
 title: 'Platform::Collections:: vectorıterator sınıfı'
-ms.date: 12/30/2016
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorIterator::VectorIterator
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-ms.openlocfilehash: 448ce9e9c6c937d5f95640dca8fa2d2ed20bb4b8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 55f4e7f1d9367779d131796fdf29e6098eb6aa0f
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743228"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565792"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections:: vectorıterator sınıfı
 
@@ -64,11 +64,11 @@ Typename VectorIterator Şablon sınıfı.
 |[VectorIterator::operator+= Operator](#operator-plus-assign)|Geçerli VectorIterator tarafından belirtilen öteleme artırır.|
 |[VectorIterator::operator < işleci](#operator-less-than)|Geçerli VectorIterator belirtilen VectorIterator küçük olup olmadığını belirtir.|
 |[VectorIterator::operator\<= Operator](#operator-less-than-or-equals)|Geçerli VectorIterator ya da belirtilen VectorIterator eşit olup olmadığını belirtir.|
-|[VectorIterator::operator-= Operator](#operator-subtract-assign)|Belirtilen öteleme tarafından geçerli VectorIterator azaltır.|
+|[VectorIterator::operator-= Operator](#operator-minus-equals)|Belirtilen öteleme tarafından geçerli VectorIterator azaltır.|
 |[VectorIterator::operator== Operator](#operator-equality)|Geçerli VectorIterator için belirtilen bir VectorIterator eşit olup olmadığını gösterir.|
 |[VectorIterator::operator > işleci](#operator-greater-than)|Geçerli VectorIterator belirtilen bir VectorIterator büyük olup olmadığını gösterir.|
 |[VectorIterator::operator -> işleci](#operator-arrow)|Geçerli VectorIterator tarafından başvurulan bir öğenin adresi alır.|
-|[VectorIterator::operator>= Operator](#operator-greater-than-or-equal)|Geçerli VectorIterator büyüktür veya belirtilen VectorIterator eşit olup olmadığını belirtir.|
+|[VectorIterator::operator>= Operator](#operator-greater-than-or-equals)|Geçerli VectorIterator büyüktür veya belirtilen VectorIterator eşit olup olmadığını belirtir.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

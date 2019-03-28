@@ -1,6 +1,6 @@
 ---
 title: duration Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2016
 f1_keywords:
 - chrono/std::chrono::duration
 - chrono/std::chrono::duration::duration
@@ -11,12 +11,12 @@ f1_keywords:
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.openlocfilehash: 2b710de6275933b5dc05814664caef92cf251da4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49c68b1650ced36ebcf949ae2594508480e15136
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568901"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565577"
 ---
 # <a name="duration-class"></a>duration Sınıfı
 
@@ -159,7 +159,7 @@ static constexpr duration min();
 
 Aslında döndürür `duration(duration_values<rep>::min())`.
 
-## <a name="duration__operator-"></a>  Duration::operator-
+## <a name="operator-"></a>  Duration::operator-
 
 Bir kopyasını döndürür `duration` bir tık sayısıyla birlikte nesne.
 
@@ -167,7 +167,7 @@ Bir kopyasını döndürür `duration` bir tık sayısıyla birlikte nesne.
 constexpr duration operator-() const;
 ```
 
-## <a name="duration__operator--"></a>  Duration::operator--
+## <a name="operator--"></a>  Duration::operator--
 
 Depolanan işaret sayısını azaltır.
 
@@ -277,7 +277,7 @@ A `duration` nesne.
 
 `duration` Toplama işlemi gerçekleştirildikten sonra nesne.
 
-## <a name="duration__operator-_eq"></a>  Duration::operator-=
+## <a name="operator-_eq"></a>  Duration::operator-=
 
 İşaret sayısını belirtilen çıkarır `duration` depolanan işaret sayısını nesne.
 

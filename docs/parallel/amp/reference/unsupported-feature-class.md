@@ -1,6 +1,6 @@
 ---
 title: unsupported_feature Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - unsupported_feature
 - AMPRT/unsupported_feature
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-ms.openlocfilehash: 6a742c3fd1965882c3fa72cb1fab985cd4d981d1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7635f999b227d02ec7fd56296fef1b0b047abd29
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272548"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564976"
 ---
 # <a name="unsupportedfeature-class"></a>unsupported_feature Sınıfı
 
@@ -31,7 +31,7 @@ class unsupported_feature : public runtime_exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unsupported_feature Oluşturucusu](#ctor)|Yeni bir örneğini oluşturur `unsupported_feature` özel durum.|
+|[unsupported_feature Oluşturucusu](#unsupported_feature)|Yeni bir örneğini oluşturur `unsupported_feature` özel durum.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,9 +41,9 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## <a name="unsupported_feature__ctor"></a> unsupported_feature
+## <a name="unsupportedfeature"></a>unsupported_feature
 
-  Unsupported_feature özel durumunun yeni bir örneğini oluşturur.
+  Yeni bir örneğini oluşturur `unsupported_feature` özel durum.
 
 ### <a name="syntax"></a>Sözdizimi
 

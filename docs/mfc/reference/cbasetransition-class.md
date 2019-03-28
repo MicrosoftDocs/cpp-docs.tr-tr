@@ -1,6 +1,6 @@
 ---
 title: CBaseTransition sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CBaseTransition
 - AFXANIMATIONCONTROLLER/CBaseTransition
@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CBaseTransition [MFC], m_transition
 - CBaseTransition [MFC], m_type
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-ms.openlocfilehash: 1f9bc3708974511506741a35c11676df2b0be592
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 37bf536403d0edfc16b098929a4758a6c6958cf1
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258378"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565915"
 ---
 # <a name="cbasetransition-class"></a>CBaseTransition sınıfı
 
@@ -73,8 +73,8 @@ class CBaseTransition : public CObject;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CBaseTransition::CBaseTransition](#cbasetransition)|Temel transtion bir nesne oluşturur.|
-|[CBaseTransition:: ~ CBaseTransition](#cbasetransition__~cbasetransition)|Yıkıcı. Bir geçiş nesnesi yok ediliyorken çağırılır.|
+|[CBaseTransition::CBaseTransition](#cbasetransition)|Temel bir geçişi bir nesne oluşturur.|
+|[CBaseTransition:: ~ CBaseTransition](#_dtorcbasetransition)|Yıkıcı. Bir geçiş nesnesi yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -170,7 +170,7 @@ Görsel taslak ilgili değişkeninde geçişi uygular. Başlangıç ana kare bel
 
 ##  <a name="cbasetransition"></a>  CBaseTransition::CBaseTransition
 
-Temel transtion bir nesne oluşturur.
+Temel bir geçişi bir nesne oluşturur.
 
 ```
 CBaseTransition();
@@ -228,7 +228,7 @@ Geçerli bir işaretçi bir ana kare veya bir geçiş ana kareler arasında ekle
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Görsel taslağa dönüştürme geçişleri eklenirken, üst düzey kod tarafından çağrılır.
+Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Film şeridi için geçiş ekleniyor, en üst düzey kod tarafından çağrılır.
 
 ##  <a name="getrelatedvariable"></a>  CBaseTransition::GetRelatedVariable
 
@@ -260,7 +260,7 @@ Geçerli bir işaretçi bir ana kare veya bir geçiş bir anahtar kare başlamam
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Görsel taslağa dönüştürme geçişleri eklenirken, üst düzey kod tarafından çağrılır.
+Bu yöntem tarafından SetKeyframes önceden ayarlanmış bir ana kare nesneye erişmek için kullanılabilir. Film şeridi için geçiş ekleniyor, en üst düzey kod tarafından çağrılır.
 
 ##  <a name="gettransition"></a>  CBaseTransition::GetTransition
 

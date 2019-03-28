@@ -1,6 +1,6 @@
 ---
 title: CWinFormsDialog sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CWinFormsDialog
 - AFXWINFORMS/CWinFormsDialog
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsDialog [MFC], GetControlHandle
 - CWinFormsDialog [MFC], OnInitDialog
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
-ms.openlocfilehash: 4d0731e40a622f0d360cabc03b68b0fe74c1ebc9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1542f852a8fe3f05d81ae59efb8a522caae671fd
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277124"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565353"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog sınıfı
 
@@ -59,7 +59,7 @@ MFC uygulamasında görüntülenecek .NET Framework kullanıcı denetimi.
 |Ad||
 |----------|-|
 |[CWinFormsDialog::operator-&gt;](#operator_-_gt)|Değiştirir [CWinFormsDialog::GetControl](#getcontrol) ifadelerde.|
-|[CWinFormsDialog::operator TManagedControl ^](#operator_tmanagedcontrol)|Bir Windows Forms kullanıcı denetimi başvuru olarak bir tür çevirir.|
+|[CWinFormsDialog::operator TManagedControl ^](#operator-tmanagedcontrol-hat)|Bir Windows Forms kullanıcı denetimi başvuru olarak bir tür çevirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -140,7 +140,7 @@ Bu işleç yerini alan bir kullanışlı bir söz dizimi sağlar `GetControl` if
 
 Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="operator_tmanagedcontrol_xor"></a>  CWinFormsDialog::operator TManagedControl ^
+##  <a name="operator-tmanagedcontrol-hat"></a>  CWinFormsDialog::operator TManagedControl ^
 
 Bir Windows Forms kullanıcı denetimi başvuru olarak bir tür çevirir.
 

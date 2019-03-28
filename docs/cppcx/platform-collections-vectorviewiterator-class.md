@@ -1,18 +1,18 @@
 ---
 title: 'Platform::Collections:: vectorviewıterator sınıfı'
-ms.date: 12/30/2016
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator
 helpviewer_keywords:
 - VectorViewIterator Class
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
-ms.openlocfilehash: 4d4a591c6febdf6e34757251c4de5d01a9e2fa87
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0de4ffb8e72c21490f07ae164aa23ffcd524c2b8
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743748"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565668"
 ---
 # <a name="platformcollectionsvectorviewiterator-class"></a>Platform::Collections:: vectorviewıterator sınıfı
 
@@ -61,7 +61,7 @@ Typename VectorViewIterator Şablon sınıfı.
 |[VectorViewIterator::operator\[\]](#operator-at)|Geçerli VectorViewIterator öğesinden belirtilen bir yer olan öğeye bir başvuru alır.|
 |[VectorViewIterator::operator+ Operator](#operator-plus)|Belirtilen VectorViewIterator belirtilen öteleme öğeye başvuran bir VectorViewIterator döndürür.|
 |[VectorViewIterator::operator++ Operator](#operator-increment)|Geçerli VectorViewIterator artırır.|
-|[VectorViewIterator::operator+= Operator](#operator-plus-assign)|Geçerli VectorViewIterator tarafından belirtilen öteleme artırır.|
+|[VectorViewIterator::operator+= Operator](#operator-plus-equals)|Geçerli VectorViewIterator tarafından belirtilen öteleme artırır.|
 |[VectorViewIterator::operator < işleci](#operator-less-than)|Geçerli VectorViewIterator belirtilen VectorViewIterator küçük olup olmadığını belirtir.|
 |[VectorViewIterator::operator\<= Operator](#operator-less-than-or-equals)|Geçerli VectorViewIterator ya da belirtilen VectorViewIterator eşit olup olmadığını belirtir.|
 |[VectorViewIterator::operator-= Operator](#operator-minus-assign)|Belirtilen öteleme tarafından geçerli VectorViewIterator azaltır.|

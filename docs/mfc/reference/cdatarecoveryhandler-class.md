@@ -1,6 +1,6 @@
 ---
 title: CDataRecoveryHandler sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CDataRecoveryHandler
 - AFXDATARECOVERY/CDataRecoveryHandler
@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 88cc4a433c774dc7767efaaa62edc71ce8b904d9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5c5836a11dbf9e05db5b56e0bc5c062dd1617b2f
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273042"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565863"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
 
@@ -168,7 +168,7 @@ TRUE ise `CDataRecoveryHandler` tüm belgeler için; kaydedildi Varsa FALSE Belg
 
 Bu yöntem, kaydedilmesi gereken belge varsa TRUE döndürür. Tüm belgeleri almak, kaydetmeden de TRUE döndürür `CWinApp` veya `CDocManager` uygulama bir hata üretir.
 
-Bu yöntemi kullanmak için AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART ya da AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ayarlanmalıdır `m_dwRestartManagerSupportFlags`. Bkz: [m_dwRestartManagerSupportFlags](#m_dwrestartmanagersupportflags) daha fazla bilgi için.
+Bu yöntemi kullanmak için AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART ya da AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL ayarlanmalıdır `m_dwRestartManagerSupportFlags`. Daha fazla bilgi için [nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../../mfc/how-to-add-restart-manager-support.md).
 
 ##  <a name="autosavedocumentinfo"></a>  CDataRecoveryHandler::AutosaveDocumentInfo
 

@@ -1,17 +1,17 @@
 ---
 title: basic_regex Sınıfı
-ms.date: 09/10/2018
+ms.date: 03/27/2019
 f1_keywords:
 - regex/std::basic_regex
 helpviewer_keywords:
 - basic_regex class
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-ms.openlocfilehash: 0799bbcbfb7cdbc1ee1755cf387de2aee46db027
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3a38dc186a52c8431442d58bb10e56837396b07
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633418"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565457"
 ---
 # <a name="basicregex-class"></a>basic_regex Sınıfı
 
@@ -88,7 +88,7 @@ Bu üye işlevleri bağımsız değişken da göz önüne `flags` tarafından ta
 |-|-|
 |[Ata](#assign)|Bir değeri normal ifade nesnesine atar.|
 |[bayrakları](#flags)|Söz dizimi seçeneği bayrakları döndürür.|
-|[get_loc](#get_loc)|Depolanan yerel ayar nesnesi döndürür.|
+|[getloc](#getloc)|Depolanan yerel ayar nesnesi döndürür.|
 |[imbue](#imbue)|Depolanan yerel ayar nesnesini değiştirir.|
 |[mark_count](#mark_count)|Eşleşen alt ifadeler sayısını döndürür.|
 |[değiştirme](#swap)|İki normal ifade nesneleri değiştirir.|
@@ -488,6 +488,6 @@ typedef Elem value_type;
 [regex_match](../standard-library/regex-functions.md#regex_match)<br/>
 [regex_search](../standard-library/regex-functions.md#regex_search)<br/>
 [regex_replace](../standard-library/regex-functions.md#regex_replace)<br/>
-[Normal ifade](../standard-library/regex-typedefs.md#regex)<br/>
+[regex](../standard-library/regex-typedefs.md#regex)<br/>
 [wchar_t](../standard-library/regex-typedefs.md#wregex)<br/>
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)<br/>

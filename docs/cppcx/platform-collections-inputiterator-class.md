@@ -1,18 +1,18 @@
 ---
 title: 'Platform::Collections:: ınputıterator sınıfı'
-ms.date: 12/30/2016
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::InputIterator::InputIterator
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: f5cd6afa591ba2a03fbfe492e566b0fc938ae396
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 49b131b01fe3d9cad5f8366fd4cc0c110b5d060c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745791"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565145"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections:: ınputıterator sınıfı
 
@@ -53,7 +53,7 @@ Typename Inputıterator Şablon sınıfı.
 |Ad|Açıklama|
 |----------|-----------------|
 |[InputIterator::operator!= Operator](#operator-inequality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
-|[InputIterator::operator * işleci](#operator-decrement)|Geçerli Inputıterator tarafından belirtilen öğeye bir başvuru alır.|
+|[InputIterator::operator * işleci](#operator-dereference)|Geçerli Inputıterator tarafından belirtilen öğeye bir başvuru alır.|
 |[InputIterator::operator ++ işleci](#operator-increment)|Geçerli Inputıterator artırır.|
 |[InputIterator::operator== Operator](#operator-equality)|Geçerli Inputıterator için belirtilen bir Inputıterator eşit olup olmadığını gösterir.|
 |[InputIterator::operator -> işleci](#operator-arrow)|Geçerli Inputıterator tarafından başvurulan bir öğenin adresi alır.|
@@ -76,12 +76,12 @@ Inputıterator sınıfının yeni bir örneğini başlatır.
 
 ```
 InputIterator();
-explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
+explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Iter*<br/>
+*Yineleyici*<br/>
 Bir yineleyici nesnesi.
 
 ## <a name="operator-arrow"></a>  InputIterator::operator -&gt; işleci

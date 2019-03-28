@@ -1,6 +1,6 @@
 ---
 title: ICommandSource arabirimi
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - ICommandSource
 - AFXWINFORMS/ICommandSource
@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandSource interface [MFC]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-ms.openlocfilehash: 21c4f4544a6ccf2342580bc5859739fc1f50d0c2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: eed7abbbb40c532ad596f683b6ed2c98a0cadf9b
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296026"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565616"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
 
@@ -179,7 +179,7 @@ Komut kimliği.
 
 Bu yöntem komut kaynak nesneden cmdID için eşlenmiş komut işleyici kaldırır.
 
-## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler
+## <a name="removecommandrangehandler"></a> ICommandSource::RemoveCommandRangeHandler
 
 Bir grup komut işleyicileri komut kaynak nesnesinden kaldırır.
 ```
@@ -196,7 +196,7 @@ Komut Kimliği aralığın başlangıç dizini.
 Komut Kimliği aralığı bitiş dizini.
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir grup için komut kimlikleri belirtilen komut kaynak nesneden cmdIDMax, cmdIDMin ile eşlenmiş ileti işleyicilerini kaldırır.
+Bu yöntem, ileti işleyicilerini cmdIDMin ve cmdIDMax, komut kaynak nesnesi tarafından belirtilen komut kimlikleri eşlenmiş bir grup kaldırır.
 
 ## <a name="removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler
 
@@ -215,7 +215,7 @@ Komut Kimliği aralığın başlangıç dizini.
 Komut Kimliği aralığı bitiş dizini.
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir grup için komut kimlikleri belirtilen komut kaynak nesneden cmdIDMin ve cmdIDMax, eşlenen kullanıcı arabirimi komut ileti işleyicilerini kaldırır.
+Bu yöntem, bir grup cmdIDMin ve cmdIDMax, komut kaynak nesnesi tarafından belirtilen komut kimlikleri eşlenen kullanıcı arabirimi komut ileti işleyicilerini kaldırır.
 
 ## <a name="removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler
 

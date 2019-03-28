@@ -1,25 +1,27 @@
 ---
 title: Cdocobjectserverıtem sınıfı
-ms.date: 09/12/2018
+ms.date: 03/27/2019
 f1_keywords:
 - CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem::GetDocument
+- AFXDOCOB/CDocObjectServerItem::OnDoVerb
 - AFXDOCOB/CDocObjectServerItem::OnHide
 - AFXDOCOB/CDocObjectServerItem::OnShow
 helpviewer_keywords:
 - CDocObjectServerItem [MFC], CDocObjectServerItem
 - CDocObjectServerItem [MFC], GetDocument
+- CDocObjectServerItem [MFC], OnDoVerb
 - CDocObjectServerItem [MFC], OnHide
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-ms.openlocfilehash: f11c202e85453897f6ebf04d8dc165d2b733a406
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 66ff2326cd3d08b3f6c8399d7e948d6aab5074c3
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275293"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565629"
 ---
 # <a name="cdocobjectserveritem-class"></a>Cdocobjectserverıtem sınıfı
 
@@ -49,7 +51,7 @@ class CDocObjectServerItem : public COleServerItem
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDocObjectServerItem::OnDoVerb](#ondoverb)|DocObject öğesini gizlemek framework çalışırsa, bir özel durum oluşturur.|
+|[CDocObjectServerItem::OnDoVerb](#ondoverb)|Bir fiili yürütmek için çağrılır.|
 |[CDocObjectServerItem::OnHide](#onhide)|DocObject öğesini gizlemek framework çalışırsa, bir özel durum oluşturur.|
 |[CDocObjectServerItem::OnShow](#onshow)|DocObject öğesi yerleşik hale getirmek için framework tarafından çağırılır etkin. Öğe bir DocObject değil, çağıran [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow).|
 
@@ -108,6 +110,23 @@ COleServerDoc* GetDocument() const;
 ### <a name="remarks"></a>Açıklamalar
 
 Bu bağımsız değişken olarak geçirilen sunucu belgeye erişimi verir [Cdocobjectserverıtem](#cdocobjectserveritem) Oluşturucusu.
+
+##  <a name="ondoverb"></a>  CDocObjectServerItem::OnDoVerb
+
+Belirtilen fiili yürütmek için framework tarafından çağırılır.
+
+```
+virtual void OnDoVerb(LONG iVerb);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*iVerb*<br/>
+Yürütmek için fiili belirtir. Olası değerler için bkz. [Rpc_e_serverfault](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.
+
+### <a name="remarks"></a>Açıklamalar
+
+Varsayılan Uygulama çağrıları [OnShow](#onshow) DocObject öğe ise ve OLEIVERB_INPLACEACTIVATE veya OLEIVERB_SHOW belirtilen üye işlevi. Öğe bir DocObject değil ya da farklı bir fiil belirtilen varsayılan uygulama çağrıları [COleServerItem::OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb).
 
 ##  <a name="onhide"></a>  CDocObjectServerItem::OnHide
 

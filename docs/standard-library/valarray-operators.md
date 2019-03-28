@@ -1,6 +1,6 @@
 ---
 title: '&lt;valarray&gt; işleçleri'
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - valarray/std::operator!=
 - valarray/std::operator%
@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: daaddf6de79411aea58b79feb0fbfd0f8ff56f5c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 6de4b4ad75f9240fb86ff5e363f4a7d9062925d9
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332614"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565928"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 
@@ -268,7 +268,7 @@ operator&(
 
 Bit düzeyinde işlem yalnızca bit işlemek için kullanılabilir **char** ve **int** veri türleri ve çeşitleri değil **float**, **çift**, **longdouble**, **void**, **bool** veya diğer, daha karmaşık veri türleri.
 
-Bit düzeyinde `AND` mantıksal olarak aynı gerçekte tablo `AND` ancak tek bit düzeyinde veri türü için geçerlidir. [İşleci & &](../standard-library/valarray-operators.md#amp) geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım olduğu bir valarray Boolean değeri. Bit düzeyinde **ANDoperator &**, aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
+Bit düzeyinde `AND` mantıksal olarak aynı gerçekte tablo `AND` ancak tek bit düzeyinde veri türü için geçerlidir. [İşleci & &](#op_amp_amp) geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım olduğu bir valarray Boolean değeri. Bit düzeyinde `AND` [işleci &](#op_amp), aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -356,7 +356,7 @@ operator&&(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal `ANDoperator&&` geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım olduğu bir valarray Boolean değeri. Bit düzeyinde sürümünü `AND`, [işleci &,](../standard-library/valarray-operators.md#op_amp), aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
+Mantıksal `ANDoperator&&` geçerli bir öğe düzeyi, tüm sıfır olmayan değerler true ve sonuç sayım olduğu bir valarray Boolean değeri. Bit düzeyinde sürümünü `AND`, [işleci &,](#op_amp), aksine, değerleri 0 veya 1, bit düzeyinde işlemin sonucunu bağlı olarak başka bir valarray neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1430,7 +1430,7 @@ operator^(
 
 Bit düzeyinde işlem yalnızca bit işlemek için kullanılabilir **char** ve **int** veri türleri ve çeşitleri değil **float**, **çift**, **uzun çift**, **void**, **bool** veya diğer, daha karmaşık veri türleri.
 
-Bit düzeyinde özel `OR` ( **XOR**) semantiği aşağıdaki: BITS verilen *b*1 ve *b*2 *b*1  **XOR** *b*2 **true** bitleri tam olarak biri true; değilse **false** bitlerin her ikisi de false olduğunda veya bitlerin her ikisi de doğruysa.
+Bit düzeyinde özel `OR` ( **XOR**) aşağıdaki semantiği vardır: BITS verilen *b*1 ve *b*2 *b*1 **XOR** *b*2 **true** varsa BITS tam olarak biri doğruysa; **false** bitlerin her ikisi de false olduğunda veya bitlerin her ikisi de doğruysa.
 
 ### <a name="example"></a>Örnek
 

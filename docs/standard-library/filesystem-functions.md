@@ -1,6 +1,6 @@
 ---
 title: '&lt;dosya sistemi&gt; işlevleri'
-ms.date: 09/10/2018
+ms.date: 03/27/2019
 f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::absolute
 - FILESYSTEM/std::experimental::filesystem::canonical
@@ -84,12 +84,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.openlocfilehash: 49a5b59234d92d2587abceff80382e477f66e762
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 11a1857052dd7c242993e8a19afe26aae3c97c06
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333317"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565703"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 
@@ -106,7 +106,7 @@ Bu işlevleri ücretsiz [ \<filesystem >](../standard-library/filesystem.md) üs
 |[is_block_file](#is_block_file)|[is_character_file](#is_character_file)|[is_directory](#is_directory)|
 |[is_empty](#is_empty)|[is_fifo](#is_fifo)|[is_other](#is_other)|
 |[is_regular_file](#is_regular_file)|[is_socket](#is_socket)|[is_symlink](#is_symlink)|
-|[last_write_time](#last_write_time)|[İzinleri](#permissions)|[read_symlink](#read_symlink)|
+|[last_write_time](#last_write_time)|[izinleri](#permissions)|[read_symlink](#read_symlink)|
 |[remove](#remove)|[remove_all](#remove_all)|[Yeniden adlandırma](#rename)|
 |[resize_file](#resize_file)|[alanı](#space)|[Durumu](#status)|
 |[status_known](#status_known)|[değiştirme](#swap)|[symlink_status](#symlink_status)|
@@ -236,7 +236,7 @@ Aksi takdirde `!exists(to) || opts & copy_options::overwrite_existing || opts & 
 
 İşlevler dönüş **true** kopyalama denenir ve başarılı olur, aksi takdirde **false**.
 
-## <a name="copy_symlink "></a>  copy_symlink
+## <a name="copy_symlink"></a>  copy_symlink
 
 ```cpp
 void copy_symlink(const path& from, const path& to);
@@ -266,7 +266,7 @@ bool create_directory(const path& pval, const path& attr, error_code& ec) noexce
 
 İşlev dizini *pval* gerektiğinde. Yalnızca gerçekten dizini oluşturur, true döndürür *pval*, bu durumda varolan dosyanın izinlerini kopyalar *attr*, ya da kullanıyorsa `perms::all` olmadan aşırı yüklemeler için *attr*  parametresi.
 
-## <a name="create_directory_symlink "></a>  create_directory_symlink
+## <a name="create_directory_symlink"></a>  create_directory_symlink
 
 ```cpp
 void create_directory_symlink(const path& to, const path& link);
@@ -284,7 +284,7 @@ void create_hard_link(const path& to, const path& link, error_code& ec) noexcept
 
 İşlevi, dizin veya dosya için sabit bir bağlantı olarak bağlantısını oluşturur. *için*.
 
-## <a name="create_symlink "></a>  create_symlink
+## <a name="create_symlink"></a>  create_symlink
 
 ```cpp
 void create_symlink(const path& to,  const path& link);
@@ -379,7 +379,7 @@ bool is_character_file(const path& pval, error_code& ec) noexcept;
 
 İşlev `stat.type() == file_type::character`. Döndürülecek kalan işlevleri `is_character_file(status(pval))`.
 
-## <a name="is_directory "></a>  is_directory
+## <a name="is_directory"></a>  is_directory
 
 ```cpp
 bool is_directory(file_status stat) noexcept;
@@ -419,7 +419,7 @@ bool is_other(const path& pval, error_code& ec) noexcept;
 
 İşlev `stat.type() == file_type::other`. Döndürülecek kalan işlevleri `is_other(status(pval))`.
 
-## <a name="s_regular_file"></a>  is_regular_file
+## <a name="is_regular_file"></a>  is_regular_file
 
 ```cpp
 bool is_regular_file(file_status stat) noexcept;

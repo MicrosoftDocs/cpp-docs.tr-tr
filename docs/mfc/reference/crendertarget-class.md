@@ -1,6 +1,6 @@
 ---
 title: CRenderTarget sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CRenderTarget
 - AFXRENDERTARGET/CRenderTarget
@@ -114,12 +114,12 @@ helpviewer_keywords:
 - CRenderTarget [MFC], m_pRenderTarget
 - CRenderTarget [MFC], m_pTextFormatDefault
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
-ms.openlocfilehash: 112bd4422a1fa6b9b97239228dc586a0555ddc96
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a14a1fba25c8c38c4bcf441dda566f14dc790f76
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259886"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565780"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget sınıfı
 
@@ -138,7 +138,7 @@ class CRenderTarget : public CObject;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CRenderTarget::CRenderTarget](#crendertarget)|CRenderTarget bir nesne oluşturur.|
-|[CRenderTarget:: ~ CRenderTarget](#crendertarget__~crendertarget)|Yıkıcı. İşleme hedef nesne yok ediliyorken çağırılır.|
+|[CRenderTarget:: ~ CRenderTarget](#_dtorcrendertarget)|Yıkıcı. İşleme hedef nesne yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -502,7 +502,7 @@ Fırça darbesi paint veya düz bir çizgi boyamak için NULL stili.
 
 ```
 void DrawRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush,
     FLOAT fStrokeWidth = 1.0,
     ID2D1StrokeStyle* strokeStyle = NULL);
@@ -510,7 +510,7 @@ void DrawRectangle(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
+*Dikdörtgen*<br/>
 CİHAZDAN bağımsız piksel cinsinden çizilecek dikdörtgenin boyutları
 
 *pBrush*<br/>
@@ -555,7 +555,7 @@ Belirtilen metni IDWriteTextFormat nesne tarafından sağlanan biçim bilgilerin
 ```
 void DrawText(
     const CString& strText,
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pForegroundBrush,
     CD2DTextFormat* textFormat = NULL,
     D2D1_DRAW_TEXT_OPTIONS options = D2D1_DRAW_TEXT_OPTIONS_NONE,
@@ -567,7 +567,7 @@ void DrawText(
 *strText*<br/>
 Çizmek için Unicode karakter işaretçisi.
 
-*Rect*<br/>
+*Dikdörtgen*<br/>
 Metin çizilen alanın konumu ve boyutu.
 
 *pForegroundBrush*<br/>
@@ -714,13 +714,13 @@ Belirtilen dikdörtgenin iç boyar.
 
 ```
 void FillRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
+*Dikdörtgen*<br/>
 Dikdörtgenin boyanacak CİHAZDAN bağımsız piksel cinsinden boyutu.
 
 *pBrush*<br/>
@@ -999,7 +999,7 @@ void PushAxisAlignedClip(
 Boyutu ve CİHAZDAN bağımsız piksel cinsinden kırpma alanının konumu.
 
 *Modu*<br/>
-Piksel sınırları olan küçük dikdörtgenleri kenarlarına çizmek için ve küçük Sahne içeriğini karıştırmak için kullanılan düzgünleştirme modu. Ne zaman PopAxisAlignedClip yöntemi çağrılır ve her bir temel katman içinde uygulanmaz karıştırma gerçekleştirilir.
+Kenarları piksel sınırları olan küçük dikdörtgenler çizme ve küçük Sahne içeriğini karıştırmak için kullanılan düzgünleştirme modu. Ne zaman PopAxisAlignedClip yöntemi çağrılır ve her bir temel katman içinde uygulanmaz karıştırma gerçekleştirilir.
 
 ##  <a name="pushlayer"></a>  CRenderTarget::PushLayer
 

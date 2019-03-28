@@ -1,6 +1,6 @@
 ---
 title: CFixedStringT sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CFixedStringT
 - CSTRINGT/ATL::CFixedStringT
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - CFixedStringT class
 - shared classes, CFixedStringT
 ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
-ms.openlocfilehash: a84afc50fb17c5e2ee21d136cd4697dec8fb97de
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 6c7649b7131e3b1620112acf89867d0731d7265d
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739754"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564872"
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
 
@@ -47,17 +47,17 @@ Arabellekteki depolanan karakterlerin sayısı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFixedStringT::operator =](#eq)|Yeni bir değer atar bir `CFixedStringT` nesne.|
+|[CFixedStringT::operator =](#operator_eq)|Yeni bir değer atar bir `CFixedStringT` nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf temel bir özel dize sınıfının bir örneğidir `CStringT`. Oldukça benzer olsa da, iki sınıf uygulamasında farklı. Arasındaki temel farklar `CFixedStringT` ve `CStringT` şunlardır:
+Bu sınıf temel bir özel dize sınıfının bir örneğidir `CStringT`. Benzer olsa da, iki sınıf uygulamasında farklı. Arasındaki temel farklar `CFixedStringT` ve `CStringT` şunlardır:
 
 - İlk karakter arabelleği nesnesinin bir parçası ayrılır ve boyuta sahip *t_nChars*. Böylece `CFixedString` Performans nedeniyle bir bitişik bellek öbeği kaplaması için nesne. Ancak, içeriğini bir `CFixedStringT` nesne büyüdükçe ötesinde *t_nChars*, arabellek dinamik olarak ayrılır.
 
 - Karakter arabelleği için bir `CFixedStringT` nesnesi, her zaman aynı uzunlukta ( *t_nChars*). Arabellek boyutu için ilgili bir sınırlama yoktur `CStringT` nesneleri.
 
-- Bellek Yöneticisi için `CFixedStringT` paylaşımını şekilde özelleştirilmiş bir [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) arasında iki veya daha fazla nesne `CFixedStringT` objectsis izin verilmiyor. `CStringT` nesneleri bu sınırlama yoktur.
+- Bellek Yöneticisi için `CFixedStringT` paylaşımını şekilde özelleştirilmiş bir [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) arasında iki veya daha fazla nesne `CFixedStringT` nesneleri izin verilmiyor. `CStringT` nesneleri bu sınırlama yoktur.
 
 Özelleştirme hakkında daha fazla bilgi için `CFixedStringT` ve dize nesneler için bellek yönetimi genel olarak, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
@@ -82,19 +82,19 @@ Oluşturur bir `CFixedStringT` nesne.
 ```
 CFixedStringT() throw();
 explicit CFixedStringT(IAtlStringMgr* pStringMgr) throw();
-CFixedStringT(const CFixedStringT<StringType, t_nChars>& str);
-CFixedStringT(const StringType& str);
-CFixedStringT(const StringType::XCHAR* psz);
-explicit CFixedStringT(const StringType::YCHAR* psz);
-explicit CFixedStringT(const unsigned char* psz);
+CFixedStringT(const CFixedStringT<StringType, t_nChars>& strSrc);
+CFixedStringT(const StringType& strSrc);
+CFixedStringT(const StringType::XCHAR* pszSrc);
+explicit CFixedStringT(const StringType::YCHAR* pszSrc);
+explicit CFixedStringT(const unsigned char* pszSrc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*<br/>
+*pszSrc*<br/>
 Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.
 
-*str*<br/>
+*strSrc*<br/>
 Mevcut bir `CFixedStringT` bu kopyalanacak nesne `CFixedStringT` nesne.
 
 *pStringMgr*<br/>
@@ -102,27 +102,27 @@ Bellek Yöneticisi için bir işaretçi `CFixedStringT` nesne. Daha fazla bilgi 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucular girdi verilerini yeni ayrılan depolama alanına kopyalayın çünkü farkında olmalıdır, bellek, özel durumlar neden olabilir. Bu oluşturucular bazıları dönüştürme işlevleri davranan unutmayın.
+Oluşturucular girdi verilerini yeni ayrılan depolama alanına kopyalayın çünkü farkında olmalıdır, bellek, özel durumlar neden olabilir. Bu oluşturucular bazıları, dönüştürme işlevleri davranır.
 
-##  <a name="operator__eq"></a>  CFixedStringT::operator =
+##  <a name="operator_eq"></a>  CFixedStringT::operator =
 
 Mevcut bir yeniden başlatır `CFixedStringT` yeni verilerle nesne.
 
 ```
 CFixedStringT<StringType, t_nChars>& operator=(
-    const CFixedStringT<StringType, t_nChars>& str);
-CFixedStringT<StringType, t_nChars>& operator=(const char* psz);
-CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* psz);
-CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* psz);
-CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
+    const CFixedStringT<StringType, t_nChars>& strSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const char* pszSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* pszSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* pszSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const StringType& strSrc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*pszSrc*<br/>
 Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.
 
-*psz*<br/>
+*strSrc*<br/>
 Mevcut bir `CFixedStringT` bu kopyalanacak `CFixedStringT` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

@@ -1,15 +1,15 @@
 ---
 title: Visual Studio'da CMake projeleri
-ms.date: 03/05/2019
+ms.date: 03/27/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 84511c0712fffcacc1f90d4bde808620e0a0ab0f
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 479179d94a0534f5f0c790fea18e281053b686e2
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356147"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565301"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio'da CMake projeleri
 
@@ -58,7 +58,7 @@ Hata ayıklama zaman bir yürütülebilir dosya için bağımsız değişkenleri
 
 ## <a name="import-an-existing-cache"></a>Mevcut bir önbelleğe alma
 
-Mevcut bir CMakeCache.txt dosyasını içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve önceden doldurulmuş oluşturur [ **CMakeSettings.json** ](#cmake_settings) dosya tabanlı bunlar üzerinde. Özgün önbellek herhangi bir şekilde değiştirilmez ve hala komut satırından veya oluşturmak için kullanılan herhangi bir aracı veya IDE ile kullanılabilir. Yeni **CMakeSettings.json** dosyası, projenin kök CMakeLists.txt yanı sıra yerleştirilir. Visual Studio oluşturur, yeni bir önbellek temel ayarları dosyası. Otomatik önbellek oluşturma işleminde geçersiz kılabilirsiniz **araçları | Seçenekleri | CMake | Genel** iletişim.
+Mevcut bir CMakeCache.txt dosyasını içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve önceden doldurulmuş oluşturur **CMakeSettings.json** dosya tabanlı bunlar üzerinde. Özgün önbellek herhangi bir şekilde değiştirilmez ve hala komut satırından veya oluşturmak için kullanılan herhangi bir aracı veya IDE ile kullanılabilir. Yeni **CMakeSettings.json** dosyası, projenin kök CMakeLists.txt yanı sıra yerleştirilir. Visual Studio oluşturur, yeni bir önbellek temel ayarları dosyası. Otomatik önbellek oluşturma işleminde geçersiz kılabilirsiniz **araçları | Seçenekleri | CMake | Genel** iletişim.
 
 Her şey önbelleğinde aktarılır.  Oluşturucu ve derleyiciler konumu gibi özellikleri de IDE ile çalışacak şekilde bilinen varsayılan değerleri ile değiştirilir.
 
@@ -132,7 +132,7 @@ Yapıları sınırlamak ve projelerin çalışma alanında bir alt kümesini otu
 
 Bir sorunu tanılamak için CMake önbelleğini durumu hakkında daha fazla bilgiye ihtiyacınız varsa, açık **CMake** ana menü veya **CMakeLists.txt** bağlam menüsünde **Çözüm Gezgini**şu komutları çalıştırmak için:
 
-- **Önbellek görüntülemek** CMakeCache.txt dosyasını derleme kök klasörden Düzenleyicisi'nde açılır. (Önbelleğini temizlemek, CMakeCache.txt için burada yaptığınız tüm düzenlemeleri temizlendiğinde. Önbelleği temizledikten sonra kalıcı değişiklikler yapmak için bkz: [CMake ayarları ve özel yapılandırmalar](#cmake_settings) bu makalenin üst kısmındaki.)
+- **Önbellek görüntülemek** CMakeCache.txt dosyasını derleme kök klasörden Düzenleyicisi'nde açılır. (Önbelleğini temizlemek, CMakeCache.txt için burada yaptığınız tüm düzenlemeleri temizlendiğinde. Önbelleği temizledikten sonra kalıcı değişiklikler yapmak için bkz: [CMake özelleştirme ayarları](customize-cmake-settings.md).)
 
 - **Önbellek klasörü açın** derleme kök klasörü için bir Gezgin penceresi açılır.
 

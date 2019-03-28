@@ -34,12 +34,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: fadb430d570e516d915d520f06e4c247b131c3db
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 6e87d77eec526cbfcfe5c1e6e78b0287226f0613
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739431"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565707"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
@@ -950,7 +950,7 @@ A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](
 
 Parametrenin *x* ve *y* (veya `cx` ve `cy`) değerleri eklenir `CRect`.
 
-Üçüncü aşırı yükleme Şişir `CRect` birimleri belirtilen her üyesi, parametre sayısı.
+Üçüncü aşırı yükleme Şişir `CRect` parametresi içindeki her üyenin belirtilen birim sayısı.
 
 ### <a name="example"></a>Örnek
 
@@ -988,7 +988,7 @@ A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](
 
 Parametrenin *x* ve *y* (veya `cx` ve `cy`) değerleri, gelen çıkartılır `CRect`.
 
-Üçüncü aşırı yükleme Söndür `CRect` birimleri belirtilen her üyesi, parametre sayısı. Bu aşırı yükleme gibi işlevleri Not [DeflateRect](#deflaterect).
+Üçüncü aşırı yükleme Söndür `CRect` parametresi içindeki her üyenin belirtilen birim sayısı. Bu aşırı yükleme gibi işlevleri Not [DeflateRect](#deflaterect).
 
 ### <a name="example"></a>Örnek
 
@@ -1085,7 +1085,7 @@ A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](
 
 Parametrenin *x* ve *y* (veya `cx` ve `cy`) parametreleri eklenir `CRect`kullanıcının getirin.
 
-Üçüncü aşırı yükleme yeni döndürür `CRect` eşit olan `CRect` birimleri belirtilen her üyesi, parametre sayısına göre şişirileceğini.
+Üçüncü aşırı yükleme yeni döndürür `CRect` eşit olan `CRect` parametresi içindeki her üyenin belirtilen birim sayısına göre şişirileceğini.
 
 ### <a name="example"></a>Örnek
 
@@ -1128,7 +1128,7 @@ A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya `CSize` 
 
 Parametrenin *x* ve *y* (veya `cx` ve `cy`) parametreleri çıkartılır `CRect`kullanıcının getirin.
 
-Üçüncü aşırı yükleme yeni döndürür `CRect` eşit olan `CRect` birimleri belirtilen her üyesi, parametre sayısına göre çarpanını. Bu aşırı yükleme gibi işlevleri Not [DeflateRect](#deflaterect)değil [SubtractRect](#subtractrect).
+Üçüncü aşırı yükleme yeni döndürür `CRect` eşit olan `CRect` parametresi içindeki her üyenin belirtilen birim sayısına göre çarpanını. Bu aşırı yükleme gibi işlevleri Not [DeflateRect](#deflaterect)değil [SubtractRect](#subtractrect).
 
 ### <a name="example"></a>Örnek
 

@@ -1,6 +1,6 @@
 ---
 title: İleti Eşleme Makroları (MFC)
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - AFXWIN/DECLARE_MESSAGE_MAP
 - AFXWIN/BEGIN_MESSAGE_MAP
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 09c023f6dcbf1fd33a0caac17af75f449d80c509
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: b1cc721ed994ae1c6704011199ac635ee462ded8
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850278"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565549"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -45,7 +45,7 @@ ms.locfileid: "55850278"
 |-|-|
 |[DECLARE_MESSAGE_MAP](#declare_message_map)|İleti eşlemesi bir sınıfta (sınıf bildirimi içinde kullanılmalıdır) işlevleri için ileti eşlemesi için kullanılacak bildirir.|
 |[BEGIN_MESSAGE_MAP](#begin_message_map)|(Sınıfı uygulamasında kullanılmalıdır) ileti eşlemesi tanımını başlar.|
-|[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_interface_map)|Tek bir şablon bağımsız değişken içeren sınıf türünde bir ileti eşlemesi tanımını başlar. |
+|[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_message_map)|Tek bir şablon bağımsız değişken içeren sınıf türünde bir ileti eşlemesi tanımını başlar. |
 |[END_MESSAGE_MAP](#end_message_map)|(Sınıfı uygulamasında kullanılmalıdır) ileti eşlemesi tanımını sonlandırır.|
 
 ### <a name="message-mapping-macros"></a>İleti eşleme makroları
@@ -67,7 +67,7 @@ ms.locfileid: "55850278"
 |||
 |-|-|
 |[ON_COMMAND_RANGE](#on_command_range)|Hangi işlevin ilk iki parametresi için makro belirtilen komut kimlikleri aralığını işleyecek gösterir.|
-|[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|Hangi güncelleştirme işleyicisi ilk iki pa belirtilen komut kimlikleri aralığını işleyecek gösterir] makro için parametreler.|
+|[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|Aralığın ilk iki parametresi için makro belirtilen komut kimliklerinin hangi güncelleştirme işleyici işleyecek gösterir.|
 |[ON_CONTROL_RANGE](#on_control_range)|Hangi işlev bildirimleri denetim makro için ikinci ve üçüncü parametre olarak belirtilen bir aralıktan işleyecek gösterir. İlk parametre BN_CLICKED gibi bir denetim bildirimi iletisidir.|
 
 İleti eşlemeleri, ileti eşleme bildirim ve düzenleme makroları ve ileti eşleme makroları hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../mfc/reference/message-maps-mfc.md) ve [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md). İleti eşleme aralıkları hakkında daha fazla bilgi için bkz. [ileti eşleme aralıkları için işleyiciler](../../mfc/handlers-for-message-map-ranges.md).
@@ -108,7 +108,7 @@ END_MESSAGE_MAP()
 
 **Başlık:** afxwin.h
 
-##  <a name="begin_template_message_map"></a>BEGIN_TEMPLATE_MESSAGE_MAP
+## <a name="begintemplatemessagemap"></a>BEGIN_TEMPLATE_MESSAGE_MAP
 
 Tek bir şablon bağımsız değişken içeren sınıf türünde bir ileti eşlemesi tanımını başlar.
 
@@ -199,12 +199,12 @@ Bu makro, bir üye işlevine bir komut iletisi eşler.
 ### <a name="syntax"></a>Sözdizimi
 
 ```
-ON_COMMAND( id, memberFxn )
+ON_COMMAND( commandId, memberFxn )
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*id*<br/>
+*Commandıd*<br/>
 Komut kimliği.
 
 *memberFxn*<br/>
@@ -216,7 +216,7 @@ Bu, hangi işlevi bir menü öğesi veya araç çubuğu düğmesi gibi bir komut
 
 ON_COMMAND komut-hedef nesne belirtilen Kimliğe sahip bir Windows WM_COMMAND ileti aldığında, üye işlevi çağıracaktır `memberFxn` iletisini işlemek için.
 
-Tek bir komutu bir üye işleve eşlemenizi ON_COMMAND kullanın. Kullanım [ON_COMMAND_RANGE](#on_command_range) bir üye işlevine bir dizi komut kimlikleri eşleştirmek için. Belirtilen komut kimliği yalnızca bir ileti eşleme girişi eşleşebilir. Diğer bir deyişle, bir komut için birden fazla işleyici eşlenemiyor. Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md).
+Tek bir komutu bir üye işleve eşlemenizi ON_COMMAND kullanın. Kullanım [ON_COMMAND_RANGE](#on_command_range) bir üye işlevine bir dizi komut kimlikleri eşleştirmek için. Belirtilen komut kimliği. yalnızca bir ileti eşleme girişi eşleşebilir Diğer bir deyişle, bir komut için birden fazla işleyici eşlenemiyor. Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md).
 
 ### <a name="example"></a>Örnek
 
@@ -237,12 +237,12 @@ Komut işleyici üye işlevi genişletilmiş.
 ### <a name="syntax"></a>Sözdizimi
 
 ```
-ON_COMMAND_EX(id, memberFxn);
+ON_COMMAND_EX(commandId, memberFxn);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*id*<br/>
+*Commandıd*<br/>
 Komut kimliği.
 
 *memberFxn*<br/>
@@ -265,7 +265,7 @@ Hangi işlev bir özel denetim bildirim iletisini işleyecek gösterir.
 ### <a name="syntax"></a>Sözdizimi
 
 ```
-ON_CONTROL( wNotifyCode, id, memberFxn )
+ON_CONTROL( wNotifyCode, commandId, memberFxn )
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -273,7 +273,7 @@ ON_CONTROL( wNotifyCode, id, memberFxn )
 *wNotifyCode*<br/>
 Denetim bildirimi kodu.
 
-*id*<br/>
+*Commandıd*<br/>
 Komut kimliği.
 
 *memberFxn*<br/>
@@ -356,7 +356,7 @@ Komutlar komut gönderme arabirimi aracılığıyla yönlendiren `IOleCommandTar
 ### <a name="syntax"></a>Sözdizimi
 
 ```
-ON_OLECMD( pguid, olecmdid, id )
+ON_OLECMD( pguid, olecmdid, commandId )
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -367,7 +367,7 @@ Ait olduğu komutun komut grubu tanımlayıcısı. NULL standart bir grup için 
 *olecmdid*<br/>
 OLE komut tanımlayıcısı.
 
-*id*<br/>
+*Commandıd*<br/>
 Menü kimliği, araç kimliği, düğme kodu veya diğer kaynak veya komutu veren nesne kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -575,12 +575,12 @@ Bu makro, hangi işlevi bir kullanıcı arabirimi güncelleştirme komut iletisi
 ### <a name="syntax"></a>Sözdizimi
 
 ```
-ON_UPDATE_COMMAND_UI( id, memberFxn )
+ON_UPDATE_COMMAND_UI( messageId, memberFxn )
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*id*<br/>
+*messageId*<br/>
 İleti kimliği.
 
 *memberFxn*<br/>

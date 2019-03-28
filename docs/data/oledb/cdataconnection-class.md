@@ -1,6 +1,6 @@
 ---
 title: CDataConnection Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - ATL::CDataConnection
 - ATL.CDataConnection
@@ -65,12 +65,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: 8a419a19c04b579c72df9938151f9ada657178f2
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 769dfc99f431cb5ba803075e28176713f9bd7092
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326548"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565512"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 
@@ -119,7 +119,7 @@ Olmadan `CDataConnection`, oluşturmak zorunda bir `CDataSource` nesne, çağrı
 > [!NOTE]
 >  Birden çok oturumu işlemek için gereken bir veritabanı uygulaması oluşturuyorsanız, kullanmanız gerekecektir [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md).
 
-## <a name="#cdataconnection"></a> CDataConnection::CDataConnection
+## <a name="cdataconnection"></a> CDataConnection::CDataConnection
 
 Oluşturur ve başlatır bir `CDataConnection` nesne.
 
@@ -141,7 +141,7 @@ CDataConnection(const CDataConnection &ds);
 
 İkinci geçersiz kılma yeni bir oluşturur `CDataConnection` ayarları, belirttiğiniz veri bağlantı nesnesi eşdeğer olan nesne.
 
-## <a name="#copy"></a> CDataConnection::Copy
+## <a name="copy"></a> CDataConnection::Copy
 
 Mevcut bir veri bağlantısı bir kopyasını oluşturur.
 
@@ -156,7 +156,7 @@ CDataConnection& Copy(const CDataConnection & ds) throw();
 *DS*<br/>
 [in] Mevcut bir veri bağlantısı kopyalamak için bir başvuru.
 
-## <a name="#open"></a> CDataConnection::Open
+## <a name="open"></a> CDataConnection::Open
 
 Başlatma dizesi kullanarak bir veri kaynağı bir bağlantı açar.
 
@@ -175,7 +175,7 @@ HRESULT Open(LPCOLESTR szInitString) throw();
 
 Standart bir HRESULT.
 
-## <a name="#opennewsession"></a> CDataConnection::OpenNewSession
+## <a name="opennewsession"></a> CDataConnection::OpenNewSession
 
 Geçerli bağlantı nesnesinin veri kaynağı kullanarak yeni bir oturum açar.
 

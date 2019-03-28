@@ -1,6 +1,6 @@
 ---
 title: '&lt;shared_mutex&gt;'
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - <shared_mutex>
 - shared_mutex/std::swap
@@ -45,12 +45,12 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_until
 - shared_mutex/std::shared_timed_mutex::unlock_shared
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
-ms.openlocfilehash: 9823b01048eece557a4d29904f223841b626bc9a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 97d77399357030feaa90228a1b0cdeb80d48034c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751823"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565392"
 ---
 # <a name="ltsharedmutex"></a>&lt;shared_mutex >
 
@@ -60,13 +60,13 @@ ms.locfileid: "57751823"
 
 |Sınıflar|Açıklama|
 |-------------|-----------------|
-|[shared_mutex sınıfı](../standard-library/shared-mutex.md#class_shared_mutex)|Bir aracı tarafından özel olarak kilitlenmiş veya özel olmayan birden çok aracı tarafından paylaşılan bir paylaşılan mutex türü.|
-|[shared_timed_mutex sınıfı](../standard-library/shared-mutex.md#class_shared_timed_mutex)|Paylaşılan bir aracı tarafından özel olarak kilitlenmiş veya özel olmayan birden çok aracı tarafından paylaşılan mutex türünü zaman aşımına uğradı.|
-|[shared_lock sınıfı](../standard-library/shared-mutex.md#class_shared_lock)|Zamanlanmış kilitleme işlemler ve birden çok aracı tarafından münhasır olmayan paylaşımı desteklemek için paylaşılan bir mutex sarmalayan bir şablon sınıfı.|
+|[shared_mutex sınıfı](#class_shared_mutex)|Bir aracı tarafından özel olarak kilitlenmiş veya özel olmayan birden çok aracı tarafından paylaşılan bir paylaşılan mutex türü.|
+|[shared_timed_mutex sınıfı](#class_shared_timed_mutex)|Paylaşılan bir aracı tarafından özel olarak kilitlenmiş veya özel olmayan birden çok aracı tarafından paylaşılan mutex türünü zaman aşımına uğradı.|
+|[shared_lock sınıfı](#class_shared_lock)|Zamanlanmış kilitleme işlemler ve birden çok aracı tarafından münhasır olmayan paylaşımı desteklemek için paylaşılan bir mutex sarmalayan bir şablon sınıfı.|
 
 |İşlevler|Açıklama|
 |---------------|-----------------|
-|[değiştirme](../standard-library/shared-mutex.md#function_swap)|İşlev parametreleri tarafından başvurulan paylaşılan mutex nesnelerinin içeriğini değiştirir.|
+|[değiştirme](#function_swap)|İşlev parametreleri tarafından başvurulan paylaşılan mutex nesnelerinin içeriğini değiştirir.|
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -167,7 +167,7 @@ public:
    };
 ```
 
-###  <a name="&lt;shared"></a> shared_lock sınıfı
+###  <a name="class_shared_lock"></a> shared_lock sınıfı
 
 Şablon sınıfı `shared_lock` paylaşılan mutex nesnesi bir kapsam içindeki paylaşılan sahipliğini denetler. Şablon parametresi paylaşılan mutex türünde olmalıdır.
 

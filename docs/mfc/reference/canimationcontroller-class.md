@@ -1,6 +1,6 @@
 ---
 title: CAnimationController sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CAnimationController
 - AFXANIMATIONCONTROLLER/CAnimationController
@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: 114b6bffdc63ecadc951965f8f199b229f0f7672
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a3a533b876b9ca245c0553c4c24a815ef3cabca1
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270286"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565967"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 
@@ -127,7 +127,7 @@ class CAnimationController : public CObject;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CAnimationController::CAnimationController](#canimationcontroller)|Bir animasyon denetleyicisi oluşturur.|
-|[CAnimationController::~CAnimationController](#canimationcontroller__~canimationcontroller)|Yıkıcı. Animasyon denetleyicisini nesne yok ediliyorken çağırılır.|
+|[CAnimationController::~CAnimationController](#_dtorcanimationcontroller)|Yıkıcı. Animasyon denetleyicisini nesne yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 

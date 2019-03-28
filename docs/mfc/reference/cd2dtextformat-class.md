@@ -1,6 +1,6 @@
 ---
 title: CD2DTextFormat sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CD2DTextFormat
 - AFXRENDERTARGET/CD2DTextFormat
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CD2DTextFormat [MFC], ReCreate
 - CD2DTextFormat [MFC], m_pTextFormat
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
-ms.openlocfilehash: 9d796ac39ba29e6d286926f4975f8f6d2054e7ac
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fa2f3b663cb5258c64ec0405abacf2e4eedeb987
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297898"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565327"
 ---
 # <a name="cd2dtextformat-class"></a>CD2DTextFormat sınıfı
 
@@ -48,7 +48,7 @@ class CD2DTextFormat : public CD2DResource;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CD2DTextFormat::CD2DTextFormat](#cd2dtextformat)|CD2DTextFormat bir nesne oluşturur.|
-|[CD2DTextFormat::~CD2DTextFormat](#cd2dtextformat__~cd2dtextformat)|Yıkıcı. D2D metin biçimi nesnesi yok ediliyorken çağırılır.|
+|[CD2DTextFormat::~CD2DTextFormat](#_dtorcd2dtextformat)|Yıkıcı. D2D metin biçimi nesnesi yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 

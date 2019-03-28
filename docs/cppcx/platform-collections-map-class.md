@@ -1,6 +1,6 @@
 ---
 title: 'Platform::Collections:: Map sınıfı'
-ms.date: 01/18/2018
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Map::Map
@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: cbe0b5e422c05cee46bff85e816ecc726c667749
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: ce50290217c7c06e26f26fc50564d3e37c873157
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745168"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565288"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections:: Map sınıfı
 
@@ -47,7 +47,7 @@ Anahtar-değer çiftindeki değer türü.
 *C*<br/>
 İki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Varsayılan olarak, [std::less\<K >](../standard-library/less-struct.md).
 
-*__is_valid_winrt_type()* türünü doğrulayan bir derleyicinin ürettiği işlevi *K* ve *V* ve kolay hata iletisi türü haritada depolanırsa sağlar.
+*__is_valid_winrt_type()* türünü doğrular derleyici tarafından oluşturulan bir işlev *K* ve *V* ve kolay hata iletisi türü haritada depolanırsa sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -93,7 +93,7 @@ Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md).
 |||
 |-|-|
 |Ad|Açıklama|
-|[Map::MapChanged](#mapchanged-event.md) `event`|Harita değiştiğinde gerçekleşir.|
+|[Map::MapChanged](#mapchanged) olay|Harita değiştiğinde gerçekleşir.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -238,7 +238,7 @@ Geçerli eşlemesi tür adı.
 İki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür.
 
 *m*<br/>
-Bir başvuru veya [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir `map Class` geçerli eşlemesi başlatmak için kullanılır.
+Bir başvuru veya [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir `map Class` geçerli eşlemesi başlatmak için kullanılır.
 
 *ilk*<br/>
 Geçerli eşlemesi başlatmak için kullanılan öğelerin bir aralıktaki ilk öğenin bir giriş yineleyici.

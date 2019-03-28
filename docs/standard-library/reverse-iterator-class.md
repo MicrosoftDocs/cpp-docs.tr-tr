@@ -1,6 +1,6 @@
 ---
 title: reverse_iterator Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - xutility/std::reverse_iterator
 - iterator/std::reverse_iterator::difference_type
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::reverse_iterator [C++], base
 - std::reverse_iterator [C++], operator_star
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
-ms.openlocfilehash: c865caa6d47d68462740fb4e9b2f6b712d9b6df9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae4a3da8f15f838900cb5a4324fbaeda01d918a2
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640225"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565642"
 ---
 # <a name="reverseiterator-class"></a>reverse_iterator Sınıfı
 
@@ -48,7 +48,7 @@ Var olan C++ Standart Kitaplığı kapsayıcıları da tanımlamanız `reverse_i
 
 Bir yineleyicinin aralığı [*ilk*, *son*), burada sol köşeli ayraç eklenmesi, gösteren *ilk* ve sağdaki parantezler gösterir en fazla ancak hariç öğelerin eklenmesi *son* kendisi. Tersine çevrilmiş sırada dahil aynı öğeleri [ **rev** - *ilk*, **rev** - *son*) için olması durumunda *son* bir-past--end öğesi bir dizideki ilk öğe ise **rev** - *ilk* ters dizide işaret \*(*son* - 1). Tüm ters yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
 
-&\*( **reverse_iterator** ( *miyim* )) == &\*( *miyim* - 1).
+&\*( **reverse_iterator** ( *i* ) ) == &\*( *i* - 1 ).
 
 Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicinin özgün dizinde başvurduğu öğenin bir ötesindeki (sağındaki) konuma başvuracağıdır. Böyle bir yineleyici 6 öğesini dizideki (2, 4, 6, 8), ele sonra `reverse_iterator` ters dizide (8, 6, 4, 2) 4 öğesine adresi olur.
 
@@ -84,7 +84,7 @@ Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicin
 |[operator-](#operator-)|Öğesinden bir uzaklık çıkarı bir `reverse_iterator` ve döndüren bir `reverse_iterator` uzaklık konumunda öğeyi ele alan.|
 |[--işleci](#operator--)|Azaltır `reverse_iterator` öğesini önceki öğeye.|
 |[-= işleci](#operator-_eq)|Öğesinden belirtilen bir uzaklık çıkarır bir `reverse_iterator`.|
-|[-> işleci](#operator-_gt)|Yineleyicisinin adreslediği öğeye bir işaretçi döndürür `reverse_iterator`.|
+|[-> işleci](#op-arrow)|Yineleyicisinin adreslediği öğeye bir işaretçi döndürür `reverse_iterator`.|
 |[işleci&#91;&#93;](#op_at)|Yineleyicisinin adreslediği öğeye bir öğe uzaklığı için bir başvuru döndürür bir `reverse_iterator` belirli sayıdaki uzaklığına göre.|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -109,7 +109,7 @@ Alttaki yineleyiciyi `reverse_iterator`.
 
 Tüm ters Yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
 
-&\*( `reverse_iterator` ( *miyim* )) == &\*( *miyim* - 1).
+&\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).
 
 Uygulamada, ters sırada buna `reverse_iterator` öğenin bir ötesindeki (sağındaki) başvuracaktır yineleyici özgün dizisinde başvurulan öğe. Böyle bir yineleyici 6 öğesini dizideki (2, 4, 6, 8), ele sonra `reverse_iterator` ters dizide (8, 6, 4, 2) 4 öğesine adresi olur.
 
@@ -477,7 +477,7 @@ After the +2 offset, the iterator rVPOS1 now points
 to the third element in the reversed sequence: 6.
 ```
 
-## <a name="reverse_iterator__operator-"></a>  reverse_iterator::operator-
+## <a name="operator-"></a>  reverse_iterator::operator-
 
 Öğesinden bir uzaklık çıkarı bir `reverse_iterator` ve döndüren bir `reverse_iterator` uzaklık konumunda öğeyi ele alan.
 
@@ -554,7 +554,7 @@ After the -2 offset, the iterator rVPOS2 points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iterator__operator--"></a>  reverse_iterator::operator--
+## <a name="operator--"></a>  reverse_iterator::operator--
 
 Azaltır öğesini önceki öğeye reverse_iterator.
 
@@ -627,7 +627,7 @@ After the decrement, the iterator rVPOS1 points
 to the next-to-last element in the reversed sequence: 3.
 ```
 
-## <a name="reverse_iterator__operator-_eq"></a>  reverse_iterator::operator-=
+## <a name="operator-_eq"></a>  reverse_iterator::operator-=
 
 Öğesinden belirtilen bir uzaklık çıkarır bir `reverse_iterator`.
 
@@ -702,7 +702,7 @@ After the -2 offset, the iterator rVPOS1 now points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="op_arrow"></a>  reverse_iterator::operator-&gt;
+## <a name="op-arrow"></a>  reverse_iterator::operator-&gt;
 
 Yineleyicisinin adreslediği öğeye bir işaretçi döndürür `reverse_iterator`.
 
@@ -972,7 +972,7 @@ Varsayılan `reverse_iterator` veya `reverse_iterator` temel bir yineleyici uyar
 
 Tüm ters yineleyicilerin kendi temel yineleyicileriyle ilişkili kimliği aşağıdaki gibidir:
 
-&\*( `reverse_iterator` ( *miyim* )) == &\*( *miyim* - 1).
+&\*( `reverse_iterator` ( *i* ) ) == &\*( *i* - 1 ).
 
 Uygulamada, bunun anlamı ters dizideki reverse_iterator öğesinin, yineleyicinin özgün dizinde başvurduğu öğenin bir ötesindeki (sağındaki) konuma başvuracağıdır. Böyle bir yineleyici 6 öğesini dizideki (2, 4, 6, 8), ele sonra `reverse_iterator` ters dizide (8, 6, 4, 2) 4 öğesine adresi olur.
 

@@ -1,15 +1,15 @@
 ---
 title: Makrolar ve İşlevler DLL'leri yönetmek için
-ms.date: 04/03/2017
+ms.date: 03/27/2019
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 863350067c39fbc9cdb3d9d3a6c4448348d977de
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: b27f8763b60dc7ce3ee074cad1365e7e1de3a7e6
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328772"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565431"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -20,10 +20,10 @@ ms.locfileid: "58328772"
 |[AfxOleInitModule](#afxoleinitmodule)|Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN OLE desteği sağlar.|
 |[AfxNetInitModule](#afxnetinitmodule)|Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN gelen MFC yuva desteği sağlar.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|Modül başına durum bayrağı geçerli durumunu alır.|
-|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Başlatmadan önce ve/veya sonra temizleme önceki modül durumunu geri yüklemek için modül durumunu ayarlar.|
+|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Başlatmadan önce ve/veya temizleme sonra önceki modül durumunu geri yüklemek için modül durumunu ayarlar.|
 |[AfxInitExtensionModule](#afxinitextensionmodule)|DLL başlatır.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|MFC WinSxS davranışını etkileyen modül başına durum bayrağını ayarlayın.|
-|[AfxTermExtensionModule](#afxtermextensionmodule)|Her işlem DLL'den ayırdığında MFC MFC uzantısı DLL yapılmasını sağlar.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|Her işlem DLL'den ayırdığında MFC uzantısı DLL temizlemek MFC sağlar.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 
@@ -79,7 +79,7 @@ Bu geçerli bir modül durumunu döndürüldüğü durumu ile değiştirir [AfxG
 Modül durumları ve MFC ile ilgili daha fazla bilgi için bkz: "Yönetme durumu verileri, MFC modülleri" [yeni belgeler oluşturma, Windows ve görünümler](../creating-new-documents-windows-and-views.md) ve [Teknik Not 58](../tn058-mfc-module-state-implementation.md).
 
 > [!NOTE]
->  MFC etkinleştirme bağlamı için bir derleme oluşturur, bunu kullanan [Afxwinınit](#afxwininit) bağlamı oluşturur ve `AFX_MANAGE_STATE` etkinleştirmesine ve devre dışı. Ayrıca `AFX_MANAGE_STATE` statik MFC kitaplıkları, yanı sıra MFC DLL'leri kullanıcı DLL tarafından seçilen uygun etkinleştirme bağlamı yürütmek için MFC kodu izin vermek üzere etkinleştirilir. Daha fazla bilgi için [MFC modül durumunda etkinleştirme bağlamları desteği](../support-for-activation-contexts-in-the-mfc-module-state.md).
+>  MFC etkinleştirme bağlamı için bir derleme oluşturur, bunu kullanan [Afxwinınit](application-information-and-management.md#afxwininit) bağlamı oluşturur ve `AFX_MANAGE_STATE` etkinleştirmesine ve devre dışı. Ayrıca `AFX_MANAGE_STATE` statik MFC kitaplıkları, yanı sıra MFC DLL'leri kullanıcı DLL tarafından seçilen uygun etkinleştirme bağlamı yürütmek için MFC kodu izin vermek üzere etkinleştirilir. Daha fazla bilgi için [MFC modül durumunda etkinleştirme bağlamları desteği](../support-for-activation-contexts-in-the-mfc-module-state.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -151,7 +151,7 @@ Bir modül bağlamında, bildirimindeki modülü kaynaklar genellikle katıştı
 
 ## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
 
-Başlatmadan önce Modül durumu ayarlamak için ve/veya sonra temizleme önceki modül durumunu geri yüklemek için bu işlevi çağırın.
+Başlatmadan önce Modül durumu ayarlamak için ve/veya temizleme sonra önceki modül durumunu geri yüklemek için bu işlevi çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -181,7 +181,7 @@ Modül durumları ve MFC ile ilgili daha fazla bilgi için bkz: "Yönetme durumu
 
 **Başlık:** afxstat_.h
 
-## <a name="afxinitextensionmodule"></a> AfxInitExtensionModule
+## <a name="afxinitextensionmodule"></a>AfxInitExtensionModule
 
 Bir MFC uzantı DLL'in bu işlevi çağırın `DllMain` DLL başlatılamadı.
 
@@ -228,7 +228,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 `AfxInitExtensionModule` DLL'nin hModule'ü bir kopyasını oluşturur ve DLL'nin çalışma zamanı sınıflar yakalar (`CRuntimeClass` yapıları), nesne fabrikaları yanı sıra (`COleObjectFactory` nesneleri) kullanmak için sonraki olduğunda `CDynLinkLibrary` nesnesi oluşturulur.
 MFC uzantısı DLL'leri iki şeyler gerek kendi `DllMain` işlevi:
 
-- Çağrı [AfxInitExtensionModule](#_mfc_afxinitextensionmodule) ve dönüş değeri denetleyin.
+- Çağrı [AfxInitExtensionModule](#afxinitextensionmodule) ve dönüş değeri denetleyin.
 
 - Oluşturma bir `CDynLinkLibrary` DLL dışa, nesne [CRuntimeClass yapısı](cruntimeclass-structure.md) nesneleri veya kendi özel kaynaklara sahip.
 
@@ -275,7 +275,7 @@ BOOL CMFCListViewApp::InitInstance()
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
-Her işlem DLL'den ayırdığında MFC MFC uzantısı DLL temizleme işlemine izin vermek için bu işlevi çağırın (işlem çıktığında veya DLL sonucu olarak kaldırıldığında gerçekleşir bir `AfxFreeLibrary` arayın).
+MFC her işlem DLL'den ayırdığında MFC uzantısı DLL temizlemeye izin vermek için bu işlevi çağırın (işlem çıktığında veya DLL sonucu olarak kaldırıldığında gerçekleşir bir `AfxFreeLibrary` arayın).
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -289,7 +289,7 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
 Bir başvuru [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) MFC uzantısı DLL modülü durumunu içeren yapısı.
 
 *Top*<br/>
-TRUE, temizlenecek tüm MFC uzantısı DLL modülleri. Aksi takdirde temizleme yalnızca geçerli DLL modülü.
+TRUE ise tüm MFC uzantısı DLL modülleri temizleyin. Aksi takdirde, yalnızca geçerli DLL modülü temizleyin.
 
 ### <a name="remarks"></a>Açıklamalar
 

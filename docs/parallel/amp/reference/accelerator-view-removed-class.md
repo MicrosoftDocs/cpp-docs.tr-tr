@@ -1,20 +1,20 @@
 ---
 title: accelerator_view_removed Sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - accelerator_view_removed
 - AMPRT/accelerator_view_removed
-- AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed
-- AMPRT/Concurrency::accelerator_view_removed:get_view_removed_reason
+- AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed
+- AMPRT/Concurrency::accelerator_view_removed::get_view_removed_reason
 helpviewer_keywords:
-- AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class
+- AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed Class
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
-ms.openlocfilehash: 9b803b205ea925ed8cc07e36342a1646d576d7d4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 09f534a90f3191025c3ce99d07a462908387c676
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263760"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564959"
 ---
 # <a name="acceleratorviewremoved-class"></a>accelerator_view_removed Sınıfı
 
@@ -62,26 +62,26 @@ Yeni bir örneğini başlatır [accelerator_view_removed](accelerator-view-remov
 
 ```
 explicit accelerator_view_removed(
-    const char * _Message,
-    HRESULT _View_removed_reason ) throw();
+    const char * message,
+    HRESULT view_removed_reason ) throw();
 
 explicit accelerator_view_removed(
-    HRESULT _View_removed_reason ) throw();
+    HRESULT view_removed_reason ) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*İl_eti*<br/>
+*message*<br/>
 Hatanın açıklaması.
 
-*_View_removed_reason*<br/>
+*view_removed_reason*<br/>
 Kaldırma nedenini belirten bir HRESULT hata kodu `accelerator_view` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Accelerator_view_removed sınıfı, yeni bir örneği.
+Yeni bir örneğini `accelerator_view_removed` sınıfı.
 
-## <a name="get_view_removed_reason_method"></a> get_view_removed_reason
+## <a name="getviewremovedreason"></a>get_view_removed_reason
 
 Nedenini belirten bir HRESULT hata kodu döndürür `accelerator_view` nesnenin kaldırma.
 

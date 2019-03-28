@@ -1,6 +1,6 @@
 ---
 title: CPathT sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CPathT
 - ATLPATH/ATL::CPathT
@@ -49,19 +49,19 @@ f1_keywords:
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-ms.openlocfilehash: 36d8710bd7bb055d8629dec57ec4d8c3602c8f79
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 109f9baefd0e6775db05eeba8cb78542bf60a9ac
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273029"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565798"
 ---
 # <a name="cpatht-class"></a>CPathT sınıfı
 
 Bu sınıf, bir yol gösterir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -139,7 +139,7 @@ ATL/MFC string sınıfı yolu kullanmak için (bkz [CStringT](../../atl-mfc-shar
 |----------|-----------------|
 |[CPathT::operator const StringType &](#operator_const_stringtype_amp)|Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.|
 |[CPathT::operator CPathT::PCXSTR](#operator_cpatht__pcxstr)|Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.|
-|[CPathT::operator StringType &](#operator_stringtype)|Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.|
+|[CPathT::operator StringType &](#operator_stringtype_amp)|Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.|
 |[CPathT::operator +=](#operator_add_eq)|Bu işleç, yolu bir dize ekler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
@@ -653,7 +653,7 @@ Güncelleştirilmiş yolunu döndürür.
 Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.
 
 ```
-operatorconst StringType&() const throw();
+operator const StringType&() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -665,19 +665,19 @@ Bu nesne tarafından yönetilen geçerli yolu temsil eden bir dize döndürür.
 Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.
 
 ```
-operatorPCXSTR() const throw();
+operator PCXSTR() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bu nesne tarafından yönetilen geçerli yolu temsil eden bir dize döndürür.
 
-##  <a name="operator_stringtype__amp"></a>  CPathT::operator StringType &amp;
+##  <a name="operator_stringtype_amp"></a>  CPathT::operator StringType &amp;
 
 Bu işleç, bir dize gibi kabul edilmesi nesne sağlar.
 
 ```
-operatorStringType&() throw();
+operator StringType&() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
