@@ -1,6 +1,6 @@
 ---
 title: CAnimationGroup sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CAnimationGroup
 - AFXANIMATIONCONTROLLER/CAnimationGroup
@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-ms.openlocfilehash: 9be0a5b76f91ddf4dc3d1c4ff2816b7ffd5a1986
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 32b2adfee2a36139a11caa12fa98bd240b0732dd
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304385"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565993"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
 
@@ -70,7 +70,7 @@ class CAnimationGroup;
 |Ad|Açıklama|
 |----------|-----------------|
 |[CAnimationGroup::CAnimationGroup](#canimationgroup)|Bir animasyon grubu oluşturur.|
-|[CAnimationGroup:: ~ CAnimationGroup](#canimationgroup__~canimationgroup)|Yıkıcı. Bir animasyon grubu yok ediliyorken çağırılır.|
+|[CAnimationGroup:: ~ CAnimationGroup](#_dtorcanimationgroup)|Yıkıcı. Bir animasyon grubu yok ediliyorken çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 

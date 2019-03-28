@@ -1,6 +1,6 @@
 ---
 title: CStringT sınıfı
-ms.date: 10/18/2018
+ms.date: 03/27/2019
 f1_keywords:
 - CStringT
 - ATLSTR/ATL::CStringT
@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: 9566830de4d3af8f34e8efa5e5ef468acae1fba5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 327ffc40a9b7e41004bc5aac7ecc320076de537f
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750877"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565824"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -182,7 +182,7 @@ Dize sınıfı C çalışma zamanı (CRT) kitaplığı desteğiyle ve dize kayna
 
 |||
 |-|-|
-|[işleç =](#operator_eq)|Yeni bir değer atar bir `CStringT` nesne.|
+|[CStringT::operator =](#operator_eq)|Yeni bir değer atar bir `CStringT` nesne.|
 |[CStringT::operator +](#operator_add)|İki dizeyi veya bir karakter ve dize art arda ekler.|
 |[CStringT::operator +=](#operator_add_eq)|Yeni bir dize sonuna kadar varolan bir dizeyi art arda ekler.|
 |[CStringT::operator ==](#operator_eq_eq)|İki dizeyi mantıksal olarak eşit olup olmadığını belirler.|
@@ -1023,6 +1023,56 @@ _UNICODE tanımlanmış olması durumunda, bu işlev kullanılamıyor.
 ### <a name="example"></a>Örnek
 
 Örneğin bakın [CStringT::AnsiToOem](#ansitooem).
+
+##  <a name="operator_eq"></a>  CStringT::operator =
+
+Yeni bir değer dizesi olarak atar.
+
+```
+CStringT& operator=(const CStringT& strSrc);
+
+template<bool bMFCDLL>
+CStringT& operator=(const CSimpleStringT<BaseType, bMFCDLL>& str);
+
+CStringT& operator=(PCXSTR pszSrc);
+CStringT& operator=(PCYSTR pszSrc);
+CStringT& operator=(const unsigned char* pszSrc);
+CStringT& operator=(XCHAR ch);
+CStringT& operator=(YCHAR ch);
+CStringT& operator=(const VARIANT& var);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*strSrc*<br/>
+A `CStringT` Bu dizeye atamak için.
+
+*str*<br/>
+Bir başvuru bir `CThisSimpleString` nesne.
+
+*bMFCDLL*<br/>
+Proje MFC DLL olup olmadığını belirten bir Boole değeri.
+
+*BaseType*<br/>
+Dize temel türü.
+
+*var*<br/>
+Bu dizeye atamak için bir VARIANT nesnesi.
+
+*ch*<br/>
+Dize olarak atamak için ANSI veya Unicode karakteri.
+
+*pszSrc*<br/>
+Atanan özgün dizeye yönelik işaretçi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Başka bir atama işleci kabul `CStringT` nesnesi, bir karakter işaretçisi veya tek bir karakter. Bilmeniz gereken, bellek, yeni depolama ayrılmış olduğundan, bu işleci kullandığınızda, özel durumlar oluşabilir.
+
+Hakkında bilgi için `CThisSimpleString`, Açıklamalar bölümüne bakın [CStringT::CStringT](#cstringt).
+
+> [!NOTE]
+> Oluşturmak mümkün olsa da `CStringT` gömülü null karakterleri içeren örnekleri, karşı öneririz. Yöntemleri ve işleçleri çağırma `CStringT` gömülü null karakterleri içeren nesneleri, istenmeyen sonuçlar üretebilir.
 
 ##  <a name="operator_add"></a>  CStringT::operator +
 

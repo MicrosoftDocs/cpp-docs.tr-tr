@@ -1,6 +1,6 @@
 ---
 title: Kayıt defteri ve TypeLib genel işlevleri
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - atlbase/ATL::AtlGetPerUserRegistration
 - afxpriv/ATL::AfxRegCreateKey
@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: f94dd1770ff194e47e2e38cc3a9b5cf0cbaebe58
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c5fdaceb47b6cd09dd9d66f26af1337a8dc6bbae
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301837"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58566019"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevleri
 
@@ -33,8 +33,8 @@ Bu işlevler, yükleme ve bir tür kitaplığı kaydı desteği.
 
 |||
 |-|-|
-|[AfxRegCreateKey](#afxrefcreatekey)|Belirtilen kayıt defteri anahtarı oluşturur.|
-|[AfxRegDeleteKey](#afxrefdeletekey)|Belirtilen kayıt defteri anahtarını siler.|
+|[AfxRegCreateKey](#afxregcreatekey)|Belirtilen kayıt defteri anahtarı oluşturur.|
+|[AfxRegDeleteKey](#afxregdeletekey)|Belirtilen kayıt defteri anahtarını siler.|
 |[AfxRegisterPreviewHandler](#afxregisterpreviewhandler)|Önizleme işleyicisi kaydetmek için yardımcıyı.|
 |[AfxUnregisterPreviewHandler](#afxunregisterpreviewhandler)| Bir önizleme işleyici kaydı Yardımcısı. |
 |[AtlRegisterTypeLib](#atlregistertypelib)|Tür kitaplığını kaydetmek için bu işlev çağrılır.|
@@ -343,7 +343,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı işlevi tarafından kullanılan [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) ve [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).
+Bu yardımcı işlevi tarafından kullanılan [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) ve [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).
 
 ### <a name="requirements"></a>Gereksinimler
 

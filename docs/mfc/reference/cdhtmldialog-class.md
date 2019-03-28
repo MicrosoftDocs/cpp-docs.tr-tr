@@ -1,6 +1,6 @@
 ---
 title: CDHtmlDialog sınıfı
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CDHtmlDialog
 - AFXDHTML/CDHtmlDialog
@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 9cf01f16fe21d0c5bea34bf168c6ea6bff04c195
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bda980c26f9791e1d4f03026f7e118e69a4ab881
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263617"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565811"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 
@@ -140,7 +140,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |Ad|Açıklama|
 |----------|-----------------|
 |[CDHtmlDialog::CDHtmlDialog](#cdhtmldialog)|CDHtmlDialog bir nesne oluşturur.|
-|[CDHtmlDialog:: ~ CDHtmlDialog](#cdhtmldialog__~cdhtmldialog)|CDHtmlDialog nesnesini yok eder.|
+|[CDHtmlDialog:: ~ CDHtmlDialog](#_dtorcdhtmldialog)|CDHtmlDialog nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -352,7 +352,7 @@ Bir üye değişkenine ActiveX denetiminin bir HTML sayfasında özellik değeri
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT& var);
 
 void DDX_DHtml_AxControl(
@@ -370,7 +370,7 @@ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) n
 *szId*<br/>
 ActiveX denetimi için HTML kaynak nesne etiketin kimliği parametrenin değeri.
 
-*DISPID*<br/>
+*dispId*<br/>
 Veri değişimi istediğiniz özellik gönderme kimliği.
 
 *szPropName*<br/>
@@ -417,43 +417,43 @@ Bir HTML sayfasında herhangi bir HTML öğesi özelliği ile bir üye değişke
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     CString& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     short& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     int& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     long& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     DWORD& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     float& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     double& value);
 ```
 
@@ -465,7 +465,7 @@ Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) n
 *szId*<br/>
 HTML denetiminin kimliği parametresi için belirtilen değer.
 
-*DISPID*<br/>
+*dispId*<br/>
 Dağıtım kimliği ile veri değişimi istediğiniz HTML öğesi.
 
 *value*<br/>
@@ -510,7 +510,7 @@ void DDX_DHtml_SelectIndex(
 Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
 
 *szId*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+HTML denetim için belirttiğiniz değeri `id` parametresi.
 
 *value*<br/>
 Değiştirilen değer.
@@ -582,7 +582,7 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
 ### <a name="parameters"></a>Parametreler
 
 *fEnable*<br/>
-Bkz: *fEnable* içinde [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) Windows SDK.
+Bkz: *fEnable* içinde [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -590,7 +590,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="filterdataobject"></a>  CDHtmlDialog::FilterDataObject
 
@@ -605,7 +605,7 @@ STDMETHOD(FilterDataObject)(
 ### <a name="parameters"></a>Parametreler
 
 *pDO*<br/>
-Bkz: *pDO* içinde [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) Windows SDK.
+Bkz: *pDO* içinde [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) Windows SDK.
 
 *ppDORet*<br/>
 Bkz: *ppDORet* içinde `IDocHostUIHandler::FilterDataObject` Windows SDK.
@@ -616,7 +616,7 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getcontroldispatch"></a>  CDHtmlDialog::GetControlDispatch
 
@@ -651,11 +651,11 @@ VARIANT GetControlProperty(
 
 VARIANT GetControlProperty(
     LPCTSTR szId,
-    DISPID dispid);
+    DISPID dispId);
 
 VARIANT GetControlProperty(
     IDispatch* pdispControl,
-    DISPID dispid);
+    DISPID dispId);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -669,7 +669,7 @@ Bir özelliğin varsayılan yerel ayar geçerli kullanıcının adı.
 *pdispControl*<br/>
 `IDispatch` ActiveX denetimi işaretçisi.
 
-*DISPID*<br/>
+*dispId*<br/>
 Bir özellik gönderme kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -695,7 +695,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) alınacak URL'sini
 
 ##  <a name="getdhtmldocument"></a>  CDHtmlDialog::GetDHtmlDocument
 
-Alır [Ihtmldocument2](https://msdn.microsoft.com/library/aa752574.aspx) yüklü HTML belgesinde arabirimi.
+Alır [Ihtmldocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) yüklü HTML belgesinde arabirimi.
 
 ```
 HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
@@ -722,7 +722,7 @@ STDMETHOD(GetDropTarget)(
 ### <a name="parameters"></a>Parametreler
 
 *pDropTarget*<br/>
-Bkz: *pDropTarget* içinde [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) Windows SDK.
+Bkz: *pDropTarget* içinde [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) Windows SDK.
 
 *ppDropTarget*<br/>
 Bkz: *ppDropTarget* içinde `IDocHostUIHandler::GetDropTarget` Windows SDK.
@@ -733,7 +733,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getelement"></a>  CDHtmlDialog::GetElement
 
@@ -802,7 +802,7 @@ template <class Q> HRESULT GetElementInterface(
 
 HRESULT GetElementInterface(
     LPCTSTR szElementId,
-    REFIID riid,
+    REFIID refiid,
     void** ppvObj);
 ```
 
@@ -814,7 +814,7 @@ HTML öğesi kimliği.
 *ppvObj*<br/>
 Adresi öğe bulunmazsa, istenen arabirim işaretçisi ile doldurulmuş bir işaretçi ve sorgu başarılı olur.
 
-*riid*<br/>
+*refiid*<br/>
 Arabirim Kimliğini (IID), istenen arabirim.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -832,7 +832,7 @@ Tarafından belirtilen özelliğin değerini alır. *DISPID* tarafından tanıml
 ```
 VARIANT GetElementProperty(
     LPCTSTR szElementId,
-    DISPID dispid);
+    DISPID dispId);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -840,7 +840,7 @@ VARIANT GetElementProperty(
 *szElementId*<br/>
 HTML öğesi kimliği.
 
-*DISPID*<br/>
+*dispId*<br/>
 Bir özellik gönderme kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -896,7 +896,7 @@ STDMETHOD(GetExternal)(IDispatch** ppDispatch);
 ### <a name="parameters"></a>Parametreler
 
 *ppDispatch*<br/>
-Bkz: *ppDispatch* içinde [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) Windows SDK.
+Bkz: *ppDispatch* içinde [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -904,7 +904,7 @@ Başarılıysa S_OK döndürür başarı veya E_NOTIMPL başarısız.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="gethostinfo"></a>  CDHtmlDialog::GetHostInfo
 
@@ -917,7 +917,7 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
 ### <a name="parameters"></a>Parametreler
 
 *pInfo*<br/>
-Bkz: *pInfo* içinde [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) Windows SDK.
+Bkz: *pInfo* içinde [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -925,7 +925,7 @@ Başarılıysa S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getoptionkeypath"></a>  CDHtmlDialog::GetOptionKeyPath
 
@@ -940,7 +940,7 @@ STDMETHOD(GetOptionKeyPath)(
 ### <a name="parameters"></a>Parametreler
 
 *pchKey*<br/>
-Bkz: *pchKey* içinde [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) Windows SDK.
+Bkz: *pchKey* içinde [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) Windows SDK.
 
 *dw*<br/>
 Bkz: *dw* içinde `IDocHostUIHandler::GetOptionKeyPath` Windows SDK içinde.
@@ -951,7 +951,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="hideui"></a>  CDHtmlDialog::HideUI
 
@@ -967,7 +967,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="isexternaldispatchsafe"></a>  CDHtmlDialog::IsExternalDispatchSafe
 
@@ -1082,7 +1082,7 @@ void Navigate(
 Hedeflenecek URL'sini içeren bir dize işaretçisi.
 
 *CertOpenStore*<br/>
-Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma önbelleğe veya önbellekten yazma ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) sabit listesi.
+Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma önbelleğe veya önbellekten yazma ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) sabit listesi.
 
 *lpszTargetFrameName*<br/>
 Kaynak görüntülenecek çerçevede adını içeren bir dize işaretçisi.
@@ -1143,7 +1143,7 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
 ### <a name="parameters"></a>Parametreler
 
 *fActivate*<br/>
-Bkz: *fActivate* içinde [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) Windows SDK.
+Bkz: *fActivate* içinde [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1151,7 +1151,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CDHtmlDialog'ın düzeyi bu üye işlevi olan [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="onframewindowactivate"></a>  CDHtmlDialog::OnFrameWindowActivate
 
@@ -1164,7 +1164,7 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
 ### <a name="parameters"></a>Parametreler
 
 *fActivate*<br/>
-Bkz: *fActivate* içinde [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) Windows SDK.
+Bkz: *fActivate* içinde [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1172,7 +1172,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="oninitdialog"></a>  CDHtmlDialog::OnInitDialog
 
@@ -1226,7 +1226,7 @@ STDMETHOD(ResizeBorder)(
 ### <a name="parameters"></a>Parametreler
 
 *prcBorder*<br/>
-Bkz: *prcBorder* içinde [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) Windows SDK.
+Bkz: *prcBorder* içinde [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) Windows SDK.
 
 *pUIWindow*<br/>
 Bkz: *pUIWindow* içinde `IDocHostUIHandler::ResizeBorder` Windows SDK.
@@ -1245,12 +1245,12 @@ ActiveX denetimi özelliği, yeni değere ayarlar.
 ```
 void SetControlProperty(
     LPCTSTR szElementId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 
 void SetControlProperty(
     IDispatch* pdispControl,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 
 void SetControlProperty(
@@ -1264,7 +1264,7 @@ void SetControlProperty(
 *szElementId*<br/>
 ActiveX denetimi HTML kimliği.
 
-*DISPID*<br/>
+*dispId*<br/>
 Ayarlanacak özellik gönderme kimliği.
 
 *pVar*<br/>
@@ -1308,7 +1308,7 @@ HTML öğesi bir özelliğini ayarlar.
 ```
 void SetElementProperty(
     LPCTSTR szElementId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 ```
 
@@ -1317,7 +1317,7 @@ void SetElementProperty(
 *szElementId*<br/>
 HTML öğesi kimliği.
 
-*DISPID*<br/>
+*dispId*<br/>
 Ayarlanacak özellik gönderme kimliği.
 
 *pVar*<br/>
@@ -1372,7 +1372,7 @@ void SetHostFlags(DWORD dwFlags);
 ### <a name="parameters"></a>Parametreler
 
 *CertOpenStore*<br/>
-Olası değerler için bkz. [DOCHOSTUIFLAG](https://msdn.microsoft.com/library/aa753277.aspx) Windows SDK.
+Olası değerler için bkz. [DOCHOSTUIFLAG](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753277\(v=vs.85\)) Windows SDK.
 
 ##  <a name="showcontextmenu"></a>  CDHtmlDialog::ShowContextMenu
 
@@ -1389,7 +1389,7 @@ STDMETHOD(ShowContextMenu)(
 ### <a name="parameters"></a>Parametreler
 
 *dwID*<br/>
-Bkz: *dwID* içinde [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) Windows SDK.
+Bkz: *dwID* içinde [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) Windows SDK.
 
 *ppt*<br/>
 Bkz: *ppt* içinde `IDocHostUIHandler::ShowContextMenu` Windows SDK içinde.
@@ -1406,7 +1406,7 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="showui"></a>  CDHtmlDialog::ShowUI
 
@@ -1424,7 +1424,7 @@ STDMETHOD(ShowUI)(
 ### <a name="parameters"></a>Parametreler
 
 *dwID*<br/>
-Bkz: *dwID* içinde [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) Windows SDK.
+Bkz: *dwID* içinde [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) Windows SDK.
 
 *pActiveObject*<br/>
 Bkz: *d pActiveObject* içinde `IDocHostUIHandler::ShowUI` Windows SDK.
@@ -1444,7 +1444,7 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="translateaccelerator"></a>  CDHtmlDialog::TranslateAccelerator
 
@@ -1460,7 +1460,7 @@ STDMETHOD(TranslateAccelerator)(
 ### <a name="parameters"></a>Parametreler
 
 *lpMsg*<br/>
-Bkz: *lpMsg* içinde [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) Windows SDK.
+Bkz: *lpMsg* içinde [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) Windows SDK.
 
 *pguidCmdGroup*<br/>
 Bkz: *pguidCmdGroup* içinde `IDocHostUIHandler::TranslateAccelerator` Windows SDK.
@@ -1474,7 +1474,7 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="translateurl"></a>  CDHtmlDialog::TranslateUrl
 
@@ -1490,7 +1490,7 @@ STDMETHOD(TranslateUrl)(
 ### <a name="parameters"></a>Parametreler
 
 *dwTranslate*<br/>
-Bkz: *dwTranslate* içinde [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) Windows SDK.
+Bkz: *dwTranslate* içinde [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) Windows SDK.
 
 *pchURLIn*<br/>
 Bkz: *pchURLIn* içinde `IDocHostUIHandler::TranslateUrl` Windows SDK.
@@ -1504,7 +1504,7 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="updateui"></a>  CDHtmlDialog::UpdateUI
 
@@ -1520,7 +1520,7 @@ Returns E_NOTIMPL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
