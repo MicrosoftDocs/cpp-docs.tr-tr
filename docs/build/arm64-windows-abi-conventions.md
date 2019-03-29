@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
-ms.openlocfilehash: 2695ba69c642b2100ec041d1f85debb4ad7041c8
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.openlocfilehash: 4c0f89f97529d4cd70e1449c90b131d25d30f9ee
+ms.sourcegitcommit: ac5c04b347e817eeece6e2c98e60236fc0e307a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508864"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639452"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -187,27 +187,21 @@ Tamsayı değerleri x0 döndürülür.
 
 Kayan nokta değerleri d0/s0/v0 uygun olarak döndürülür.
 
-Değeri tarafından döndürülen türleri belirli özellikleri olup olmamasına bağlı olarak farklı şekilde ele alınır.
+Değeri tarafından döndürülen türleri belirli özellikleri olup olmamasına bağlı olarak farklı şekilde ele alınır. Tüm bu özelliklerin türleri
 
-Toplama olmaları durumunda türleri "C" dönüş stil C ++ 14 standart tanım tarafından verilir. Yani
+- Bunlar *toplama* C ++ 14 standart tanımına göre diğer bir deyişle, hiçbir kullanıcı tarafından sağlanan bir oluşturucu, hiçbir özel veya korumalı statik olmayan veri üyesi, temel olmayan sınıflar ve sanal işlev yok, sahip oldukları ve
+- bir basit kopya atama işleci, sahip oldukları ve
+- Önemsiz bir yok edici sahip oldukları
 
-- sahip oldukları hiçbir kullanıcı tarafından sağlanan bir oluşturucu, özel veya korumalı statik olmayan veri üye, temel olmayan sınıflar ve sanal işlev yok,
-- Önemsiz bir kopya Oluşturucu, sahip oldukları ve
-- Önemsiz bir yok edici sahiptirler.
+Aşağıdaki dönüş stili kullanın:
 
-Diğer tüm türleri "C++" dönüş stil verilir.
+- Türleri 8 bayt veya daha az x0 döndürülür.
+- Türleri 16 bayt veya daha az x0 ve x1, x0 içeren alt sıra 8 bayt ile döndürülür.
+- 16 bayttan büyük türleri için çağırana bir blok boyutu ve hizalama sonucu tutmak için yeterli bellek ayırmak. Bellek bloğu adresini, x8 işlevi için ek bağımsız değişken olarak geçirilen. Çağrılan alt yordam yürütme sırasında herhangi bir noktada sonucu bellek bloğu değiştirebilir. Aranan x8 içinde depolanan değeri korumak için gerekli değildir.
 
-### <a name="c-return-style"></a>Dönüş C stili
+Diğer tüm türleri bu kuralı kullanın:
 
-Türleri 8 bayt veya daha az x0 döndürülür.
-
-Türleri 16 bayt veya daha az x0 ve x1, x0 içeren alt sıra 8 bayt ile döndürülür.
-
-16 bayttan büyük türleri için çağırana bir blok boyutu ve hizalama sonucu tutmak için yeterli bellek ayırmak. Bellek bloğu adresini, x8 işlevi için ek bağımsız değişken olarak geçirilen. Çağrılan alt yordam yürütme sırasında herhangi bir noktada sonucu bellek bloğu değiştirebilir. Aranan x8 içinde depolanan değeri korumak için gerekli değildir.
-
-### <a name="c-return-style"></a>C++ dönüş stili
-
-Arayan, bir blok boyutu ve hizalama sonucu tutmak için yeterli bellek ayırmak. $Bu içinde x0 geçirilirse bellek bloğu adresini x0 ya da x1 işlevi için ek bağımsız değişken olarak geçirilen. Çağrılan alt yordam yürütme sırasında herhangi bir noktada sonucu bellek bloğu değiştirebilir. Çağrılan içinde x0 bellek bloğu adresini döndürür.
+- Arayan, bir blok boyutu ve hizalama sonucu tutmak için yeterli bellek ayırmak. $Bu içinde x0 geçirilirse bellek bloğu adresini x0 ya da x1 işlevi için ek bağımsız değişken olarak geçirilen. Çağrılan alt yordam yürütme sırasında herhangi bir noktada sonucu bellek bloğu değiştirebilir. Çağrılan içinde x0 bellek bloğu adresini döndürür.
 
 ## <a name="stack"></a>Yığın
 
