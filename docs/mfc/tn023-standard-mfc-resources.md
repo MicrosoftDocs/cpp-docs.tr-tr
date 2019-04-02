@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TN023
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-ms.openlocfilehash: b4edc00f77152b8d677f3113e0ed6386569b0988
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d29f0ab2254a52e01f2016f64a37ddfce47955bb
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277687"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780320"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC kaynakları
 
@@ -23,7 +23,7 @@ Bu not ile sağlanan ve MFC kitaplık için gereken standart kaynakları açıkl
 
 MFC uygulamanızda kullanabileceğiniz önceden tanımlanmış kaynakları iki kategoriye sağlar: küçük resim kaynakları ve standart framework kaynakları.
 
-Küçük resim, framework, bağlı değildir, ancak, uygulamanızın kullanıcı arabirimi eklemek isteyebileceğiniz ek kaynaklar kaynaklardır. Aşağıdaki küçük resim kaynakları MFC genel örnekte bulunan [küçük](../visual-cpp-samples.md):
+Küçük resim, framework, bağlı değildir, ancak, uygulamanızın kullanıcı arabirimi eklemek isteyebileceğiniz ek kaynaklar kaynaklardır. Aşağıdaki küçük resim kaynakları MFC genel örnekte bulunan [küçük](../overview/visual-cpp-samples.md):
 
 - Common.rc: Tek bir içeren dosyayı kaynak:
 
